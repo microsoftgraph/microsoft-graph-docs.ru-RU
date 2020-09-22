@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: c71ef053941b82b436bd453f8c3927af4222caf7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cbef8b345db23f1b396d1667bd0acb17cbdcf7a6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43366628"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996621"
 ---
 # <a name="list-bookingbusinesses"></a>Список Букингбусинессес
 
@@ -40,7 +40,7 @@ ms.locfileid: "43366628"
 GET /bookingBusinesses
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
 Этот метод также поддерживает `query` параметр, который принимает строковое значение. Этот параметр позволяет ограничить результаты получения для предприятий, которые совпадают с указанной строкой. Вы можете увидеть [Пример](#request-2) ниже.
 
@@ -52,7 +52,7 @@ GET /bookingBusinesses
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [букингбусинесс](../resources/bookingbusiness.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request-1"></a>Запрос 1
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses
 ---
 
 ##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -109,7 +109,7 @@ Content-type: application/json
 
 
 ##### <a name="request-2"></a>Запрос 2
-В приведенном ниже примере показано, как `query` использовать этот параметр для получения одного или нескольких подходящих подходящих корпоративных подходящих подходящих подходящих подходящих корпоративных сотрудников.
+В приведенном ниже примере показано, как использовать этот `query` параметр для получения одного или нескольких подходящих подходящих корпоративных подходящих подходящих подходящих подходящих корпоративных сотрудников.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -169,3 +169,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

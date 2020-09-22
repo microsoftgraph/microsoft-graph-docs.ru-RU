@@ -1,16 +1,16 @@
 ---
 title: Удаление вложения
-description: Удаление вложения из данных календаря, сообщений, задачи Outlook или записи.
+description: Удаление вложения из события календаря, сообщения, задачи Outlook или POST.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: outlook
 author: svpsiva
-ms.openlocfilehash: 6af7e877c56b953de6c350f9c8c202df47ad1cde
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: f096d8004347220a29b36dbac82dfb8104bd90d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849190"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996644"
 ---
 # <a name="delete-attachment"></a>Удаление вложения
 
@@ -20,16 +20,16 @@ ms.locfileid: "46849190"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-Удаление вложения из события [message](../resources/message.md)календаря [пользователя, сообщения,](../resources/event.md) [задачи Outlook](../resources/outlooktask.md)или [записи.](../resources/post.md)
+Удаление вложения из [события](../resources/event.md)календаря пользователя, [сообщения](../resources/message.md), [задачи Outlook](../resources/outlooktask.md)или [POST](../resources/post.md).
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-* При доступе к вложениям в сообщениях: Mail.ReadWrite
-* При доступе к вложениям в событиях: Calendars.ReadWrite
-* При доступе к вложениям в задачах Outlook: Tasks.ReadWrite
-* При доступе к вложениям в записях групп: Group.ReadWrite.All
+* При доступе к вложениям в сообщениях: mail. ReadWrite
+* При доступе к вложениям в событиях: Calendars. ReadWrite
+* При доступе к вложениям в задачах Outlook: Tasks. ReadWrite
+* При доступе к вложениям в записях групп: Group. ReadWrite. ALL
 
 <!--
 * If accessing attachments in Group Events or Posts: Group.ReadWrite.All
@@ -47,7 +47,7 @@ DELETE /me/calendar/events/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/calendar/events/{id}/attachments/{id}
 ```
 
-Вложения события [в указанном](../resources/event.md) [календаре,](../resources/calendar.md) принадлежащем пользователю.
+Вложения для [события](../resources/event.md) в указанном [календаре](../resources/calendar.md) , принадлежащее пользователю.
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/calendars/{id}/events/{id}/attachments/{id}
@@ -97,7 +97,7 @@ DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-Вложения для [задачи Outlook.](../resources/outlooktask.md)
+Вложения для [задачи Outlook](../resources/outlooktask.md).
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -119,7 +119,7 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -182,3 +182,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

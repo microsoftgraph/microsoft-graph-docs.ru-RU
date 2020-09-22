@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4e7a1eed267d98381250fbf3d3bf581e195700b9
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: b9f0773ebb4359c4946de151402d7648cef39476
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289336"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996911"
 ---
 # <a name="list-extensionproperties"></a>Список Екстенсионпропертиес
 
@@ -26,9 +26,9 @@ ms.locfileid: "44289336"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. Read. ALL, Directory. Read. ALL, Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application. Read. ALL, Application. ReadWrite. Овнедби, Application. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+|Для приложений | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ GET /applications/{id}/extensionProperties
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -127,3 +127,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 64d3a74ff0397a35b1cefa7943186918ecc0c23f
-ms.sourcegitcommit: 2c8a12389b82ee5101b2bd17eae11b42e65e52c0
+ms.openlocfilehash: bb1999c23f16802f71ff7f823b31d352068c1b8f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45142275"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996971"
 ---
 # <a name="remove-tokenissuancepolicy"></a>Убрать tokenIssuancePolicy
 
@@ -28,7 +28,7 @@ ms.locfileid: "45142275"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Application. ReadWrite. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy. Read. ALL и Application. ReadWrite. Овнедби, Policy. Read. ALL и Application. ReadWrite. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. Овнедби, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. ALL |
+| Для приложений                            | Policy. Read. ALL и Application. ReadWrite. Овнедби, Policy. Read. ALL и Application. ReadWrite. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. Овнедби, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ DELETE /applications/{id}/tokenIssuancePolicies/{id}/$ref
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -107,3 +107,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

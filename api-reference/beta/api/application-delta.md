@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 68e0e36a23ad389fd9bc695f860d25591b833b3c
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 68c71daa7dbffd07f43d0cca2bed5ed626ecd063
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289350"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996936"
 ---
 # <a name="application-delta"></a>Приложение: Delta
 
@@ -27,7 +27,7 @@ ms.locfileid: "44289350"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. Read. ALL, Directory. Read. ALL, Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Application. Read. ALL, Directory. Read. ALL, Application. ReadWrite. Овнедби, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
@@ -56,7 +56,7 @@ GET /applications/delta
 - Вы можете использовать параметр запроса `$select` так же, как в любом другом запросе GET, чтобы задать только те свойства, которые необходимы для эффективной работы. Свойство _id_ возвращается всегда. 
 
 - Имеется ограниченная поддержка параметра `$filter`:
-  * Единственное поддерживаемое `$filter` выражение предназначено для отслеживания изменений для определенных ресурсов по их идентификаторам: `$filter=id+eq+{value}` или `$filter=id+eq+{value1}+or+id+eq+{value2}` . Количество идентификаторов, которые можно указать, ограничено максимальной длиной URL-адреса.
+  * Единственное поддерживаемое `$filter` выражение предназначено для отслеживания изменений для определенных ресурсов по их идентификаторам:  `$filter=id+eq+{value}` или `$filter=id+eq+{value1}+or+id+eq+{value2}` . Количество идентификаторов, которые можно указать, ограничено максимальной длиной URL-адреса.
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -166,3 +166,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e182ce24be3b85332f6318c7b7096228c60951be
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7bd26ef368129329ce581dd28fd27376287af8c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386978"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996306"
 ---
 # <a name="get-device"></a>Вывод устройства
 
@@ -20,7 +20,7 @@ ms.locfileid: "43386978"
 
 Получение свойств и связей объекта устройства.
 
-Так как ресурс **Device** поддерживает [расширения](/graph/extensibility-overview), с помощью `GET` операции можно также получить настраиваемые свойства и данные расширения в экземпляре **устройства** .
+Так как ресурс **Device** поддерживает [расширения](/graph/extensibility-overview), с помощью операции можно также `GET` получить настраиваемые свойства и данные расширения в экземпляре **устройства** .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -47,7 +47,7 @@ GET /devices/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [device](../resources/device.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/devices/{id}
 
 > Примечание. Параметр id в запросе — это свойство id объекта device, а не свойство deviceId.
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -120,3 +120,5 @@ Content-length: 322
   ]
 }
 -->
+
+

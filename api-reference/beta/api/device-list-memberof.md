@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 473535d84bfa45cc5f58ad5ce2ca86319aa0ddfa
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: ed46472b12169e71ef1ae5c4e8f3355091822624
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872728"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996250"
 ---
 # <a name="list-device-groups"></a>Список групп устройств
 
@@ -39,13 +39,13 @@ GET /devices/{id}/memberOf
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Приведение OData также включено, например, можно выполнить приведение, чтобы получить только перечисление directoryrole, членом которых является пользователь. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
+Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Кроме того, включено также приведение к OData, например, вы можете получить только directoryRoles, участником которых является пользователь. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| ConsistencyLevel | необязательный. Этот заголовок и `$count` при использовании `$search` `$filter` `$orderby` параметров запроса на приведение,, или OData. Он использует индекс, который может не быть актуальным с последними изменениями объекта. |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`, `$filter`, `$orderby` или с параметрами запросов OData cast. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -115,7 +115,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-all-memberships"></a>Пример 2: получение только количества всех членств
+### <a name="example-2-get-only-a-count-of-all-memberships"></a>Пример 2: Получение только количества участников
 
 #### <a name="request"></a>Запрос
 
@@ -295,3 +295,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

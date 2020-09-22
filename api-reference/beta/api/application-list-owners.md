@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: da9944bf44e7b5352c22a2e69e4e54da9a2aeb7c
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 10a722762b3691f7b495f0b315ee8e4533f00772
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289329"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996915"
 ---
 # <a name="list-owners"></a>Список владельцев
 
@@ -25,9 +25,9 @@ ms.locfileid: "44289329"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. Read. ALL, Directory. Read. ALL, Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application. Read. ALL, Application. ReadWrite. Овнедби, Application. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+|Для приложений | Application.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -111,3 +111,5 @@ Content-length: 55
   ]
 }
 -->
+
+

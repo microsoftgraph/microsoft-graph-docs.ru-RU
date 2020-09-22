@@ -3,14 +3,14 @@ title: Список Иосеасемаилпрофилеконфигуратио
 description: Список свойств и связей объектов iosEasEmailProfileConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e49beb9b815db61d352a873c9f750170e5e4ed0f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bb70316da8ea00d73f344e1216a9c0dc4c85f21f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43432686"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995641"
 ---
 # <a name="list-ioseasemailprofileconfigurations"></a>Список Иосеасемаилпрофилеконфигуратионс
 
@@ -44,13 +44,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2568
+Content-Length: 2628
 
 {
   "value": [
@@ -128,11 +128,15 @@ Content-Length: 2568
       "requireSsl": true,
       "useOAuth": true,
       "signingCertificateType": "certificate",
-      "encryptionCertificateType": "certificate"
+      "encryptionCertificateType": "certificate",
+      "perAppVPNProfileId": "Per App VPNProfile Id value"
     }
   ]
 }
 ```
+
+
+
 
 
 

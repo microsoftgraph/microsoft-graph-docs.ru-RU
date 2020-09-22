@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7a99dc0daf5c4f46bd0c4667d0833d2cadb7c24e
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 54fb11c521784cc4f91054df2358c7a663fae5ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810170"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996523"
 ---
 # <a name="list-internalsponsors"></a>Список Интерналспонсорс
 
@@ -45,7 +45,7 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}/intern
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/co
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -117,3 +117,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 52c7395dcc714bf32c5dbaebeab856885b8e021e
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d8be5e20c4a528febe7fa127be309b6be9108588
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217997"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997118"
 ---
 # <a name="create-agreement"></a>Создание соглашения
 
@@ -47,12 +47,12 @@ POST /agreements
 |:-------------|:------------|:------------|
 |displayName|String|Отображаемое имя соглашения.|
 |исвиевингбефореакцептанцерекуиред|Boolean|Указывает, должно ли пользователь развернуть и просмотреть Соглашение перед принятием.|
-|Files/fileName|String|Имя файла соглашения (например, Тау. PDF).|
+|Files/fileName|String|Имя файла соглашения (например, TOU.pdf).|
 |файлы и IsDefault|Boolean|Указывает, является ли этот файл соглашением по умолчанию, если ни одна из культур не соответствует параметрам клиента. Если ни один из файлов не помечен как используемый по умолчанию, первый из них будет рассматриваться как используемый по умолчанию.|
 |файлы/язык|String|Язык и региональные параметры файла соглашения в формате languagecode2-Country/regioncode2. languagecode2 это код из двух букв в нижнем регистре, производный от стандарта ISO 639-1. страна или regioncode2 является производной от стандарта ISO 3166 и обычно состоит из двух прописных букв или тега языка BCP-47 (например, EN-US).|
 |Files/fileData/Data|Binary|Данные, представляющие условия использования PDF-документа.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201, Created` код отклика и объект [Agreement](../resources/agreement.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -130,3 +130,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

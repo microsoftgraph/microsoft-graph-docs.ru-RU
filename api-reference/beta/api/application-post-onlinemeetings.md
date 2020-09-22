@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1450e7784394c175209ef1c5524871d029a49981
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: a3d0b530648c7ad1bbe9e41750525c8f4b572695
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47842787"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996810"
 ---
 # <a name="create-onlinemeeting"></a>Создание объекта onlineMeeting
 
@@ -32,7 +32,7 @@ ms.locfileid: "47842787"
 | Для приложений                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
-> \* Администраторам следует создать [политику доступа приложений](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) и предоставить ее пользователю, разрешив приложению, указанному в политике, создавать виртуальные собрания от имени этого пользователя (ИД пользователя указан в пути запроса).
+> \* Администраторам следует создать [политику доступа приложений](/graph/cloud-communication-online-meeting-application-access-policy) и предоставить ее пользователю, разрешив приложению, указанному в политике, создавать виртуальные собрания от имени этого пользователя (ИД пользователя указан в пути запроса).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,7 @@ POST /me/onlineMeetings
 POST /users/{userId}/onlineMeetings
 ```
 
-> **Примечание.** `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в статье [Политики доступа для приложений](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md).
+> **Примечание.** `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в статье [Политики доступа для приложений](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -238,3 +238,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d428f313732064fe486a876c500cee1cb51cd932
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 1960f7394e2c1482d334812d390b1b60b07dafd9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681360"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996477"
 ---
 # <a name="list-members"></a>Список участников
 
@@ -40,7 +40,7 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/members
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательное|
+| Authorization  | Носителя. Обязательно|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
@@ -113,3 +113,5 @@ Content-length: 169
   "suppressions": []
 }
 -->
+
+

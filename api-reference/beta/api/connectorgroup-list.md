@@ -1,18 +1,18 @@
 ---
-title: Список Коннекторграупс
+title: Перечисление connectorGroups
 description: Получение списка объектов коннекторграуп.
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bdbf86c846bfc3277b3ce96198239d86e0c90408
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: e3008627590553f44fb2ad9ca89ea99a0997a330
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681332"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996460"
 ---
-# <a name="list-connectorgroups"></a>Список Коннекторграупс
+# <a name="list-connectorgroups"></a>Перечисление connectorGroups
 
 Пространство имен: microsoft.graph
 
@@ -41,7 +41,7 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательное|
+| Authorization  | Носителя. Обязательно|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
@@ -116,3 +116,5 @@ Content-length: 164
   "suppressions": []
 }
 -->
+
+

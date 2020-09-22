@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 909e0d8e3b0e3e811035db29c071c476b562487a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6de9884d2a00c290acb2efadb24d4fcb91fe0407
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382086"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996404"
 ---
 # <a name="delete-contact"></a>Удаление контакта
 
@@ -53,7 +53,7 @@ DELETE /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/con
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -106,3 +106,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

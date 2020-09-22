@@ -3,14 +3,14 @@ title: действие Енаблеунлиценседадминстратор
 description: После включения пользователи, которым назначена роль "Администраторы" через членство в назначениях ролей, больше не требуют назначенной лицензии Intune. У вас может быть до 350 нелицензированных нелицензированных участников для каждой группы безопасности AAD в назначении ролей, но для одной роли можно назначить несколько групп безопасности AAD, если вам требуется поддержка более 350 нелицензированных администраторов. Лицензированные администраторы продолжат действовать без ограничений, так как в этом случае применяются эти транзитивные членства, и они не подчиняются ограничению члена 350.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 882a5d1cafa8e25d4a69a0c525c0bb8d3b971cd1
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: e6179929eec88b79a44b09c46dcd0049d7716c3b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792809"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995781"
 ---
 # <a name="enableunlicensedadminstrators-action"></a>действие Енаблеунлиценседадминстраторс
 
@@ -43,7 +43,7 @@ POST /deviceManagement/enableUnlicensedAdminstrators
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -65,6 +65,9 @@ POST https://graph.microsoft.com/beta/deviceManagement/enableUnlicensedAdminstra
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

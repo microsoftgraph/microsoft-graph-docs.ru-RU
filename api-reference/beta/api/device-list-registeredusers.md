@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 75410a900201110d04b52c9b1d2b65f5a9e0d4de
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7417f48b38bb45f5967da9df443ae15c5383e725
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386853"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996210"
 ---
 # <a name="list-registeredusers"></a>Список registeredUsers
 
@@ -41,7 +41,7 @@ GET /devices/{id}/registeredUsers
 
 > Примечание. Параметр id в запросе — это свойство id объекта device, а не свойство deviceId.
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -51,7 +51,7 @@ GET /devices/{id}/registeredUsers
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/devices/{id}/registeredUsers
 
 ---
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -115,3 +115,5 @@ Content-length: 55
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: fb3fb7bfe26cf0c81b001012a0e8664e17e4eb67
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 69187e27949e66606c26012e0ea10dc2742eeb0f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43366500"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996612"
 ---
 # <a name="create-bookingcustomer"></a>Создание Букингкустомер
 
@@ -43,8 +43,8 @@ POST /bookingBusinesses/{id}/customers
 В тексте запроса добавьте представление объекта [букингкустомер](../resources/bookingcustomer.md) в формате JSON.
 
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод `201, Created` возвращает код отклика и объект [букингкустомер](../resources/bookingcustomer.md) в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает `201, Created` код отклика и объект [букингкустомер](../resources/bookingcustomer.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -79,7 +79,7 @@ Content-type: application/json
 ---
 
 В тексте запроса добавьте представление объекта [букингкустомер](../resources/bookingcustomer.md) в формате JSON.
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -111,3 +111,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: cloudhandler
-ms.openlocfilehash: c4c514e1b838c8146841b3eb1c42988d9e709f9f
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: b29d08a520c57530cebaadb76ccd3ef27268c308
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311488"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997020"
 ---
 # <a name="get-anonymousipriskevent-deprecated"></a>Получение Анонимаусиприскевент (не рекомендуется)
 
@@ -43,7 +43,7 @@ GET /anonymousIpRiskEvents/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -99,3 +99,5 @@ Content-length: 237
   "suppressions": []
 }
 -->
+
+

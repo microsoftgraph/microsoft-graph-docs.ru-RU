@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fc7fc2a69726d08d48e313a8cd03e4e7fde2c687
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ba68ad7f72ac1ac6025372a458aaf4c31e9d8cba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375971"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996318"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 
@@ -55,7 +55,7 @@ GET /users/{id}/contactFolders/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type  | string  | application/json. Обязательный. |
 | Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
 
@@ -143,3 +143,5 @@ Content-length: 254
   ]
 }
 -->
+
+

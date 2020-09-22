@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 05c39a802ad320c56a7a910f3dfac67196e04f43
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4d15a3c34031b717014cb17fd728acae638f4ceb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43366521"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996614"
 ---
 # <a name="create-bookingbusiness"></a>Создание Букингбусинесс
 
@@ -26,7 +26,7 @@ ms.locfileid: "43366521"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Резервирования. Manage. ALL  |
+|Делегированные (рабочая или учебная учетная запись) |  Bookings.Manage.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается. |
 
@@ -45,8 +45,8 @@ POST /bookingBusinesses
 В тексте запроса добавьте представление объекта [букингбусинесс](../resources/bookingbusiness.md) в формате JSON.
 
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод `201, Created` возвращает код отклика и объект [букингбусинесс](../resources/bookingbusiness.md) в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает `201, Created` код отклика и объект [букингбусинесс](../resources/bookingbusiness.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -93,7 +93,7 @@ Content-type: application/json
 ---
 
 В тексте запроса добавьте представление объекта [букингбусинесс](../resources/bookingbusiness.md) в формате JSON.
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -206,3 +206,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

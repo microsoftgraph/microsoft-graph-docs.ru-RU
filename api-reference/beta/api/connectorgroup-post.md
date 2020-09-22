@@ -1,18 +1,18 @@
 ---
-title: Создание Коннекторграуп
+title: Создание connectorGroup
 description: Создание объекта Коннекторграуп.
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7978a526884d6d1c1c8c286a9ea9caa4f01f4302
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
-ms.translationtype: Auto
+ms.openlocfilehash: 1d19993f8015f175c15de0de42bbfb13940c7873
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006876"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996389"
 ---
-# <a name="create-connectorgroup"></a>Создание Коннекторграуп
+# <a name="create-connectorgroup"></a>Создание connectorGroup
 
 Пространство имен: microsoft.graph
 
@@ -25,8 +25,8 @@ ms.locfileid: "45006876"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается.  |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,7 +48,7 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectorGroups
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |коннекторграуптипе|string| Указывает тип гибридного агента. Это свойство предустановлено системой.|
-|id|строка| Уникальный идентификатор для этого Коннекторграуп. Только для чтения. |
+|id|string| Уникальный идентификатор для этого Коннекторграуп. Только для чтения. |
 |isDefault|boolean| Указывает, является ли Коннекторграуп значением по умолчанию. Только одна группа соединителей может быть Коннекторграуп по умолчанию, и она предустановлена системой. |
 |name|string| Имя, связанное с Коннекторграуп. |
 |региональных|string| Регион, которому назначена Коннекторграуп, и который оптимизирует трафик для. Эту область можно задать только в том случае, если Коннекторграуп **не назначен ни один** из соединителей или приложений. Доступны следующие регионы: Северная Америка, Европа, Австралия, Азия и Индии. Возможные значения: `nam`, `eur`, `aus`, `asia`, `ind`.|
@@ -124,3 +124,5 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3bdb7c214a60e80088dd60ff6c7a913e2ea9acd7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: aae3584c5df29938e78ff3bdf127cf0b6dd44790
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382001"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996341"
 ---
 # <a name="update-contact"></a>Обновление контакта
 
@@ -61,8 +61,8 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |categories|String|Категории, связанные с контактом.|
 |children|String||
 |companyName|String|Название компании контакта.|
-|отделу;|String|Отдел контакта.|
-|displayName|Строка|Отображаемое имя контакта. Обратите внимание, что последующие обновления других свойств могут привести к тому, что автоматически созданное значение перезапишет указанное значение displayName. Чтобы сохранить существующее значение, всегда добавляйте его как displayName в операцию обновления.|
+|department|String|Отдел контакта.|
+|displayName|String|Отображаемое имя контакта. Обратите внимание, что последующие обновления других свойств могут привести к тому, что автоматически созданное значение перезапишет указанное значение displayName. Чтобы сохранить существующее значение, всегда добавляйте его как displayName в операцию обновления.|
 |emailAddresses|Коллекция [типедемаиладдресс](../resources/typedemailaddress.md)|Электронные адреса контакта.|
 |fileAs|String|Имя, под которым хранится контакт.|
 |gender |String |Пол контакта. |
@@ -75,7 +75,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |middleName|String|Отчество контакта.|
 |nickName|String|Псевдоним контакта.|
 |officeLocation|String|Расположение офиса контакта.|
-|parentFolderId|Строка|Идентификатор родительской папки контакта.|
+|parentFolderId|String|Идентификатор родительской папки контакта.|
 |personalNotes|String|Заметки пользователя о контакте.|
 |phones |Коллекция [phone](../resources/phone.md) |Номера телефонов, связанные с контактом, например домашний телефон, мобильный телефон и служебный телефон. |
 |postalAddresses |Коллекция [physicalAddress](../resources/physicaladdress.md) |Адреса, связанные с контактом, например домашний адрес и служебный адрес. |
@@ -89,9 +89,9 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |yomiGivenName|String|Имя контакта, записанное так, как оно звучит по-японски. Это необязательное свойство.|
 |yomiSurname|String|Фамилия контакта, записанная так, как она звучит по-японски. Это необязательное свойство.|
 
-Так как **контактный** ресурс поддерживает [расширения](/graph/extensibility-overview), с помощью `PATCH` операции можно добавлять, обновлять или удалять собственные данные, относящиеся к приложению, в пользовательских свойствах расширения в существующем экземпляре **контакта** .
+Так как **контактный** ресурс поддерживает [расширения](/graph/extensibility-overview), с помощью операции можно `PATCH` добавлять, обновлять или удалять собственные данные, относящиеся к приложению, в пользовательских свойствах расширения в существующем экземпляре **контакта** .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [Contact](../resources/contact.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -242,3 +242,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

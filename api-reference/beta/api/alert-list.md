@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 926a0ab60f32affc502a9890407e953e33d97b0a
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 393071be1196c6f235df9628678ab499409eaa0a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556156"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47997104"
 ---
 # <a name="list-alerts"></a>Перечисление оповещений
 
@@ -50,7 +50,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top`— Возвращает Объединенные основные результаты каждого поставщика API безопасности.
+- `$top` — Возвращает Объединенные основные результаты каждого поставщика API безопасности.
 - `$filter`
 
 В приведенной ниже таблице перечислены `$filter` Ключевые слова по имени каждого поставщика.
@@ -75,7 +75,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 |:----------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода. Текст запроса будет игнорироваться.
 
@@ -156,3 +156,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

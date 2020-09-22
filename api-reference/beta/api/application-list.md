@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c8a837e3290ad273c58e5d407e9c6d26a1c53b74
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
-ms.translationtype: MT
+ms.openlocfilehash: 2517a88aa136851c33595697c5b67548ffc836a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333245"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996852"
 ---
 # <a name="list-applications"></a>Список приложений
 
@@ -26,9 +26,9 @@ ms.locfileid: "44333245"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись) | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+| Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL |
+| Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -38,16 +38,16 @@ GET /applications
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа, включая `$search` , `$count` и `$filter` . Можно использовать `$search` свойство **DisplayName** . При добавлении или обновлении элементов для этого ресурса они могут индексироваться для использования с `$count` `$search` параметрами запроса. Между добавлением или обновлением элемента может быть небольшая задержка, а когда он доступен в индексе.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя | Описание |
 |:---- |:----------- |
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| консистенцилевел | закончить. Этот заголовок и `$count` обязательные при использовании `$search` `$filter` с `$orderby` параметром Query. Он использует индекс, который может быть не последним в актуальном изменении объекта. |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`или применении `$filter` с параметром запроса `$orderby`. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -163,7 +163,7 @@ Content-type: text/plain
 893
 
 
-### <a name="example-3-use-filter-and-top-to-get-one-application-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 3: используйте $filter и $top, чтобы получить одно приложение с отображаемым именем, начинающимся с "a", включая количество возвращаемых объектов.
+### <a name="example-3-use-filter-and-top-to-get-one-application-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 3: использование параметров $filter и $top для получения одного приложения с отображаемым именем, которое начинается с "а", включая количество возвращаемых объектов
 
 #### <a name="request"></a>Запрос
 
@@ -178,7 +178,7 @@ GET https://graph.microsoft.com/beta/applications?$filter=startswith(displayName
 ConsistencyLevel: eventual
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -208,7 +208,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-use-search-to-get-applications-with-display-names-that-contain-the-letters-web-including-a-count-of-returned-objects"></a>Пример 4: использование $search для получения приложений с отображаемыми именами, содержащими "Web", включая количество возвращаемых объектов
+### <a name="example-4-use-search-to-get-applications-with-display-names-that-contain-the-letters-web-including-a-count-of-returned-objects"></a>Пример 4: использование параметра $search для получения приложений с отображаемыми именами, содержащими буквы "Web", включая количество возвращаемых объектов
 
 #### <a name="request"></a>Запрос
 
@@ -281,3 +281,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

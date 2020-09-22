@@ -3,14 +3,14 @@ title: Update managedAndroidStoreApp
 description: Обновление свойств объекта managedAndroidStoreApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b5f130a94d057e11b84ff341b2e8957c71cc28e9
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 5416e0a45b0e605ed4bc722f9cd9435a270ed760
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791948"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996138"
 ---
 # <a name="update-managedandroidstoreapp"></a>Update managedAndroidStoreApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "46791948"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,10 +45,10 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [managedAndroidStoreApp](../resources/intune-apps-managedandroidstoreapp.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [managedAndroidStoreApp](../resources/intune-apps-managedandroidstoreapp.md).
@@ -73,6 +73,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседингаппкаунт|Int32|Общее количество приложений, которые напрямую или косвенно заменяют данное приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседедаппкаунт|Int32|Общее число приложений, для которых это приложение напрямую или косвенно заменяется. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |appAvailability|[манажедаппаваилабилити](../resources/intune-apps-managedappavailability.md)|Доступность приложения. Наследуется от [managedApp](../resources/intune-apps-managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
 |version|String|Версия приложения. Наследуется от [managedApp](../resources/intune-apps-managedapp.md).|
 |packageId|String|ИД пакета приложения.|
@@ -91,7 +93,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1264
+Content-length: 1321
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidStoreApp",
@@ -116,6 +118,8 @@ Content-length: 1264
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "packageId": "Package Id value",
@@ -145,7 +149,7 @@ Content-length: 1264
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1436
+Content-Length: 1493
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidStoreApp",
@@ -173,6 +177,8 @@ Content-Length: 1436
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "packageId": "Package Id value",
@@ -196,6 +202,9 @@ Content-Length: 1436
   }
 }
 ```
+
+
+
 
 
 

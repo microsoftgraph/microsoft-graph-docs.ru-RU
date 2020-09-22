@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 12928d7917ea0a274c69454d82943d72a7587c67
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: a06ace04fd87b91e56834fe874c8f6de141d7020
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050717"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996665"
 ---
 # <a name="applicationtemplate-instantiate"></a>Аппликатионтемплате: создание экземпляра
 
@@ -28,7 +28,7 @@ ms.locfileid: "45050717"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
+| Для приложений                            | Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -98,7 +98,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -172,3 +172,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

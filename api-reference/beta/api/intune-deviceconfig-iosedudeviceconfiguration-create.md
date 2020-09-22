@@ -3,14 +3,14 @@ title: Создание Иоседудевицеконфигуратион
 description: Создание нового объекта Иоседудевицеконфигуратион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1d2edfb2fbf16cc4822d386cadca26df6d99a429
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4ba06c33a4c36664ac01e49a350ab6fd4bb5fbff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439251"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995585"
 ---
 # <a name="create-iosedudeviceconfiguration"></a>Создание Иоседудевицеконфигуратион
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -56,14 +56,14 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |теачерцертификатесеттингс|[iosEduCertificateSettings](../resources/intune-deviceconfig-ioseducertificatesettings.md);|Доверенные корневые сертификаты и сертификаты PFX для преподавателя|
 |студентцертификатесеттингс|[iosEduCertificateSettings](../resources/intune-deviceconfig-ioseducertificatesettings.md);|Доверенные корневые сертификаты и сертификаты PFX для учащегося|
@@ -71,7 +71,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [иоседудевицеконфигуратион](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -224,6 +224,9 @@ Content-Length: 2855
   }
 }
 ```
+
+
+
 
 
 

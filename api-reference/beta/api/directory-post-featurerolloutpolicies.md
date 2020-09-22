@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0f6cd81e6a2299e3bfcb7c318d17b5f28fb01049
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: db0ebe7f7dead702696daf8f9503dcbbf85a49de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180995"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996173"
 ---
 # <a name="create-featurerolloutpolicy"></a>Создание Феатурероллаутполици
 
@@ -56,7 +56,7 @@ POST /directory/featureRolloutPolicies
 |состав |стажедфеатуренаме |Компонент, который будет выполнен с помощью этой политики.|
 |isEnabled |string |Указывает, включен ли выпуск компонентов.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [феатурероллаутполици](../resources/featurerolloutpolicy.md) в тексте отклика.
 
@@ -134,3 +134,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

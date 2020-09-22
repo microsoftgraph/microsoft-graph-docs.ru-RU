@@ -3,14 +3,14 @@ title: Обновление iosEasEmailProfileConfiguration
 description: Обновление свойств объекта iosEasEmailProfileConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a2a8d3ca3a8a61bdcb957f2ea7be867906bb4275
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7e95abfe93be6d4899b7c56aff4d0daf45e80803
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439333"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995620"
 ---
 # <a name="update-ioseasemailprofileconfiguration"></a>Обновление iosEasEmailProfileConfiguration
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -57,27 +57,27 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |usernameSource|[усеремаилсаурце](../resources/intune-deviceconfig-useremailsource.md)|Атрибут username, который выбирается из AAD и вставляется в этот профиль перед установкой на устройстве. Наследуется от [еасемаилпрофилеконфигуратионбасе](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md). Возможные значения: `userPrincipalName`, `primarySmtpAddress`.|
 |усернамеаадсаурце|[usernameSource](../resources/intune-deviceconfig-usernamesource.md);|Имя поля AAD, которое будет использоваться для извлечения имени пользователя для профиля электронной почты. Наследуется от [еасемаилпрофилеконфигуратионбасе](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md). Возможные значения: `userPrincipalName`, `primarySmtpAddress`, `samAccountName`.|
 |усердомаиннамесаурце|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md);|Атрибут Усердомаиннаме, который выбирается из AAD и вставляется в этот профиль перед установкой на устройстве. Наследуется от [еасемаилпрофилеконфигуратионбасе](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md). Возможные значения: `fullDomainName`, `netBiosDomainName`.|
 |кустомдомаиннаме|String|Значение имени пользовательского домена, используемое при создании профиля электронной почты, перед установкой на устройстве. Наследуется от [еасемаилпрофилеконфигуратионбасе](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
-|имя_учетной_записи|String|Имя учетной записи.|
+|accountName|String|Имя учетной записи.|
 |Параметр authenticationmethod|[еасаусентикатионмесод](../resources/intune-deviceconfig-easauthenticationmethod.md)|Способ проверки подлинности для этого профиля электронной почты. Возможные значения: `usernameAndPassword`, `certificate`, `derivedCredential`.|
 |блоккмовингмессажестусеремаилаккаунтс|Boolean|Указывает, следует ли запретить перемещение сообщений в другие учетные записи электронной почты.|
 |блокксендинжемаилфромсирдпартяппс|Boolean|Указывает, следует ли запретить отправку сообщений электронной почты от сторонних приложений.|
 |блокксинЦингрецентлюседемаиладдрессес|Boolean|Указывает, следует ли заблокировать синхронизацию недавно использовавшихся адресов электронной почты (например, при создании нового сообщения электронной почты).|
 |дуратионофемаилтосинк|[емаилсинкдуратион](../resources/intune-deviceconfig-emailsyncduration.md)|Длительность времени, в течение которого будет синхронизироваться электронная почта. . Возможные значения: `userDefined`, `oneDay`, `threeDays`, `oneWeek`, `twoWeeks`, `oneMonth`, `unlimited`.|
 |емаиладдресссаурце|[усеремаилсаурце](../resources/intune-deviceconfig-useremailsource.md)|Атрибут электронной почты, выбранный из AAD и добавленный в этот профиль перед установкой на устройстве. Возможные значения: `userPrincipalName`, `primarySmtpAddress`.|
-|easServices|[easServices](../resources/intune-deviceconfig-easservices.md)|Синхронизация данных Exchange. Возможные `none`значения:, `calendars`, `contacts`, `email`, `notes`,. `reminders`|
+|easServices|[easServices](../resources/intune-deviceconfig-easservices.md)|Синхронизация данных Exchange. Возможные значения: `none` ,, `calendars` , `contacts` , `email` `notes` , `reminders` .|
 |еассервицесусероверридинаблед|Boolean|Разрешить пользователям изменять параметры синхронизации.|
 |hostName|String|Расположение Exchange (URL-адрес), к которому подключается собственное почтовое приложение.|
 |рекуиресмиме|Boolean|Указывает, следует ли использовать сертификат S/MIME.|
@@ -92,6 +92,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |усеоаус|Boolean|Указывает, должно ли подключение использовать OAuth для проверки подлинности.|
 |сигнингцертификатетипе|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Тип сертификата подписи для этого профиля электронной почты. Возможные значения: `none`, `certificate`, `derivedCredential`.|
 |енкриптионцертификатетипе|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Тип сертификата шифрования для этого профиля электронной почты. Возможные значения: `none`, `certificate`, `derivedCredential`.|
+|пераппвпнпрофилеид|String|Идентификатор профиля для политики VPN на уровне приложения, который будет использоваться для доступа к сообщениям электронной почты из собственного почтового клиента|
 
 
 
@@ -105,7 +106,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2131
+Content-length: 2187
 
 {
   "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
@@ -162,7 +163,8 @@ Content-length: 2131
   "requireSsl": true,
   "useOAuth": true,
   "signingCertificateType": "certificate",
-  "encryptionCertificateType": "certificate"
+  "encryptionCertificateType": "certificate",
+  "perAppVPNProfileId": "Per App VPNProfile Id value"
 }
 ```
 
@@ -171,7 +173,7 @@ Content-length: 2131
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2303
+Content-Length: 2359
 
 {
   "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
@@ -231,9 +233,13 @@ Content-Length: 2303
   "requireSsl": true,
   "useOAuth": true,
   "signingCertificateType": "certificate",
-  "encryptionCertificateType": "certificate"
+  "encryptionCertificateType": "certificate",
+  "perAppVPNProfileId": "Per App VPNProfile Id value"
 }
 ```
+
+
+
 
 
 

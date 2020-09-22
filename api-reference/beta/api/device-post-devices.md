@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 61570106a40d1635b036673d61e660cb64c2f40b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c019e092c102facc19bcf0503d983cd4fb257e77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381807"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996194"
 ---
 # <a name="create-device"></a>Создание устройства
 
@@ -93,7 +93,7 @@ Content-length: 364
 ---
 
 Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -141,3 +141,5 @@ Content-length: 364
   ]
 }
 -->
+
+

@@ -1,18 +1,18 @@
 ---
-title: Создание Коннекторграуп
+title: Создание connectorGroup
 description: Используйте этот API для создания нового Коннекторграуп.
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 77d37dc53c963b2e5e1227d29cac49c0642768bd
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 5aa92cbb94b17d269fe0d140f37b5687a12f0f15
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681248"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996432"
 ---
-# <a name="create-connectorgroup"></a>Создание Коннекторграуп
+# <a name="create-connectorgroup"></a>Создание connectorGroup
 
 Пространство имен: microsoft.graph
 
@@ -114,3 +114,5 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
+

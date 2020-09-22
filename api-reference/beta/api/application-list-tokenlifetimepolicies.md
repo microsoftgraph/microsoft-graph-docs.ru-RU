@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7c0523d501dd6b77bc5808b0f936f6692b12951b
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 08fc0e785b31b806c86dd2fd02cfae3e2d6bdec7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43107236"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996859"
 ---
 # <a name="list-assigned-tokenlifetimepolicy"></a>Список назначенных Токенлифетимеполици
 
@@ -45,11 +45,11 @@ GET /servicePrincipals/{id}/tokenLifetimePolicies
 |:--------------|:--------------|
 | Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [токенлифетимеполици](../resources/tokenLifetimePolicy.md) в тексте отклика.
 
@@ -123,3 +123,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

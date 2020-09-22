@@ -1,18 +1,18 @@
 ---
-title: Добавление соединителя в Коннекторграуп
+title: Добавление соединителя для connectorGroup
 description: Используйте этот API, чтобы добавить соединитель в Коннекторграуп.
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4df3f5a1b721528e1a72a0b5970f5577d6cf5696
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 6b50461281a5568b50463964d6b8c292fd63928f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006879"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996430"
 ---
-# <a name="add-connector-to-connectorgroup"></a>Добавление соединителя в Коннекторграуп
+# <a name="add-connector-to-connectorgroup"></a>Добавление соединителя для connectorGroup
 
 Пространство имен: microsoft.graph
 
@@ -24,8 +24,8 @@ ms.locfileid: "45006879"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается.  |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -103,3 +103,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

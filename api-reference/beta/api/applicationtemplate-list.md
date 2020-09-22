@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2baa42a7bc985aec6deae580cfd5a4db59e0818d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5df0ee457464e766fd2581bcb9440039029fc58a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441372"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47996656"
 ---
 # <a name="list-applicationtemplates"></a>Список Аппликатионтемплатес
 
@@ -42,12 +42,12 @@ GET /applicationTemplates
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. 
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. 
 
 - Вы можете использовать этот `$filter` параметр ограниченное количеством способов. Фильтровать можно только по **DisplayName** или **категориям**. Пример:  `$filter=contains(displayName, 'salesf')` или `$filter=categories/any(c:contains(c, 'myCategory'))`.
 - Вы можете использовать `$orderby` `$top,` и `$skip` запрос параметров в любом запросе GET.
 
-Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -59,7 +59,7 @@ GET /applicationTemplates
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [аппликатионтемплате](../resources/applicationtemplate.md) в тексте отклика.
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -136,3 +136,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
