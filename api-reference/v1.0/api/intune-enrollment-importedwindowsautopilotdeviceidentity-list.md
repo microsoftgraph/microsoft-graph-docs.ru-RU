@@ -3,14 +3,14 @@ title: Список importedWindowsAutopilotDeviceIdentities
 description: Список свойств и связей между объектамиimportedWindowsAutopilotDeviceIdentity.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c5afa4c597b939a2c830beb7aba2da41393b8925
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6d3a91bcac93fe9d754d86db735793467b995315
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471409"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094626"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentities"></a>Список importedWindowsAutopilotDeviceIdentities
 
@@ -45,10 +45,10 @@ GET /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWin
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию объектов [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -86,6 +86,9 @@ Content-Length: 675
   ]
 }
 ```
+
+
+
 
 
 

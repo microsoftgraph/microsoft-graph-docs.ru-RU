@@ -3,14 +3,14 @@ title: Тип ресурса deviceCompliancePolicySettingState
 description: Состояние параметров политики соответствия требованиям для определенного устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5f4eb50b7cbae1eccb2f5797de2186c5d51f48ea
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3817f3835ce82e15204d07adc1d7bfe85233d955
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448864"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094262"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>Тип ресурса deviceCompliancePolicySettingState
 
@@ -32,7 +32,7 @@ ms.locfileid: "43448864"
 |userId|String|ИД пользователя|
 |userName|String|Имя пользователя|
 |userEmail|String|Электронный адрес пользователя|
-|userPrincipalName|Строка|Имя участника-пользователя.|
+|userPrincipalName|String|Имя участника-пользователя.|
 |sources|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Соответствующие политики|
 |currentValue|String|Текущее значение параметра на устройстве|
 
@@ -69,6 +69,8 @@ ms.locfileid: "43448864"
   "currentValue": "String"
 }
 ```
+
+
 
 
 

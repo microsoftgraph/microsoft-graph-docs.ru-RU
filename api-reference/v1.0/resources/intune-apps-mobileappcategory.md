@@ -3,14 +3,14 @@ title: Тип ресурса mobileAppCategory
 description: Содержит свойства для одной категории приложений Intune.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1546fb4811d651906ee68936a63d7670bf7784b2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2a894f978b412c2916b9d036a1d4f708e231066b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457857"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094395"
 ---
 # <a name="mobileappcategory-resource-type"></a>Тип ресурса mobileAppCategory
 
@@ -24,15 +24,15 @@ ms.locfileid: "43457857"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список объектов mobileAppCategory](../api/intune-apps-mobileappcategory-list.md)|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список свойств и связей объектов [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).|
-|[Получение объекта mobileAppCategory](../api/intune-apps-mobileappcategory-get.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md);|Чтение свойств и связей объекта [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).|
-|[Создание объекта mobileAppCategory](../api/intune-apps-mobileappcategory-create.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md);|Создание объекта [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).|
+|[Получение объекта mobileAppCategory](../api/intune-apps-mobileappcategory-get.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Чтение свойств и связей объекта [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).|
+|[Создание объекта mobileAppCategory](../api/intune-apps-mobileappcategory-create.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Создание объекта [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).|
 |[Удаление объекта mobileAppCategory](../api/intune-apps-mobileappcategory-delete.md)|Нет|Удаляет объект [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).|
 |[Обновление объекта mobileAppCategory](../api/intune-apps-mobileappcategory-update.md)|[mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Обновление свойств объекта [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |displayName|Строка|Имя категории приложений.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения mobileAppCategory.|
 
@@ -55,6 +55,8 @@ ms.locfileid: "43457857"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
 
 
 

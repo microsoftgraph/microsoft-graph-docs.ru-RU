@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 627d8528216f678ec1f7d5eabc1e8126e7451f41
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c1da59fa3644b8ca1ab3d06f71cfba3f61f5abcf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43316749"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094696"
 ---
 # <a name="group-getmemberobjects"></a>group: getMemberObjects
 
@@ -38,7 +38,7 @@ POST /groups/{id}/getMemberObjects
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -85,7 +85,7 @@ Content-length: 33
 ---
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 >**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -117,3 +117,4 @@ Content-length: 39
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 56841b358f181eb7202f79e3517dd1f0003c08ef
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 8abcc0f6ed8a16c423f4bd018c22211b057bef80
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43361958"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094570"
 ---
 # <a name="message-createreply"></a>message: createReply
 
@@ -43,7 +43,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `201 Created` и объект [Message](../resources/message.md) в тексте отклика.
 
@@ -115,3 +115,4 @@ Content-length: 248
   "suppressions": [
   ]
 }-->
+

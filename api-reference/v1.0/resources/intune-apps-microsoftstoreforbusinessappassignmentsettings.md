@@ -3,14 +3,14 @@ title: Тип ресурса microsoftStoreForBusinessAppAssignmentSettings
 description: Содержит свойства, используемые при назначении мобильного приложения Microsoft Store для бизнеса группе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dbfb271e8cfb0d019a0e127d1ad81ee033544a17
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 32186cd4c5b4321d668e350b5f03ec6e127399cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43457892"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094458"
 ---
 # <a name="microsoftstoreforbusinessappassignmentsettings-resource-type"></a>Тип ресурса microsoftStoreForBusinessAppAssignmentSettings
 
@@ -28,7 +28,7 @@ ms.locfileid: "43457892"
 |:---|:---|:---|
 |useDeviceContext|Boolean|Указывает, следует ли использовать контекст работы устройства для мобильного приложения Microsoft Store для бизнеса.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,6 +44,8 @@ ms.locfileid: "43457892"
   "useDeviceContext": true
 }
 ```
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Тип ресурса webApp
 description: Содержит свойства, в том числе унаследованные, для веб-приложений.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ddba65d631bf300f1d6090ece7d0829296562543
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ff4647d2c511400b057876e0f136d654d9ca4234
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439608"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094290"
 ---
 # <a name="webapp-resource-type"></a>Тип ресурса webApp
 
@@ -27,8 +27,8 @@ ms.locfileid: "43439608"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Перечисление webApps](../api/intune-apps-webapp-list.md)|Коллекция [webApp](../resources/intune-apps-webapp.md)|Список свойств и связей объектов [webApp](../resources/intune-apps-webapp.md).|
-|[Получение webApp](../api/intune-apps-webapp-get.md)|[webApp](../resources/intune-apps-webapp.md);|Считывание свойств и связей объекта [webApp](../resources/intune-apps-webapp.md).|
-|[Создание webApp](../api/intune-apps-webapp-create.md)|[webApp](../resources/intune-apps-webapp.md);|Создание объекта [webApp](../resources/intune-apps-webapp.md).|
+|[Получение webApp](../api/intune-apps-webapp-get.md)|[webApp](../resources/intune-apps-webapp.md)|Считывание свойств и связей объекта [webApp](../resources/intune-apps-webapp.md).|
+|[Создание webApp](../api/intune-apps-webapp-create.md)|[webApp](../resources/intune-apps-webapp.md)|Создание объекта [webApp](../resources/intune-apps-webapp.md).|
 |[Удаление webApp](../api/intune-apps-webapp-delete.md)|None|Удаление экземпляра [webApp](../resources/intune-apps-webapp.md).|
 |[Обновление webApp](../api/intune-apps-webapp-update.md)|[webApp](../resources/intune-apps-webapp.md)|Обновление свойств объекта [webApp](../resources/intune-apps-webapp.md).|
 
@@ -47,7 +47,7 @@ ms.locfileid: "43439608"
 |informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md)|
+|notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |appUrl|String|URL-адрес веб-приложения.|
 |useManagedBrowser|Boolean|Указывает, следует ли использовать управляемый браузер. Это свойство применимо только к Android и iOS.|
@@ -91,6 +91,8 @@ ms.locfileid: "43439608"
   "useManagedBrowser": true
 }
 ```
+
+
 
 
 

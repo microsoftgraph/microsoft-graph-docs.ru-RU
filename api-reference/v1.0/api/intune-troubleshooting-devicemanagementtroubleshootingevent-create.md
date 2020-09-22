@@ -3,14 +3,14 @@ title: Создание объекта deviceManagementTroubleshootingEvent
 description: Создание объекта deviceManagementTroubleshootingEvent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c135b669428b763568306aea7187b718f88ac32
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cdc73c027bdaf8cefabc738620331c8102a63830
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450455"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094591"
 ---
 # <a name="create-devicemanagementtroubleshootingevent"></a>Создание объекта deviceManagementTroubleshootingEvent
 
@@ -44,7 +44,7 @@ POST /deviceManagement/troubleshootingEvents
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта deviceManagementTroubleshootingEvent в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта deviceManagementTroubleshootingEvent.
@@ -90,6 +90,9 @@ Content-Length: 228
   "correlationId": "Correlation Id value"
 }
 ```
+
+
+
 
 
 

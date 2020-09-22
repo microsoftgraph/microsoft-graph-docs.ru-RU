@@ -3,14 +3,14 @@ title: Тип ресурса mobileLobApp
 description: Абстрактный базовый класс, содержащий свойства для всех мобильных бизнес-приложений.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1003d8e7e2ef0295f7635b478a0e5de32cf3414a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3814ac40f52ff65e4e884923539b14f24f3fb4d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439654"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094311"
 ---
 # <a name="mobilelobapp-resource-type"></a>Тип ресурса mobileLobApp
 
@@ -44,7 +44,7 @@ ms.locfileid: "43439654"
 |informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md)|
+|notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого.|
 |fileName|String|Имя основного файла бизнес-приложения.|
@@ -91,6 +91,8 @@ ms.locfileid: "43439654"
   "size": 1024
 }
 ```
+
+
 
 
 

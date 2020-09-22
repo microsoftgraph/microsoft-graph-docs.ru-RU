@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e12dda3b2f2370cf7491809ca0554f341f17fa4d
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 33f5aa2c5953bc9e143d08d91047919cf73599b6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811877"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094213"
 ---
 # <a name="pagelinks-resource-type"></a>Тип ресурса Пажелинкс
 
@@ -18,7 +18,7 @@ ms.locfileid: "46811877"
 
 Ссылки для открытия страницы OneNote.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -52,3 +52,4 @@ ms.locfileid: "46811877"
   "section": "documentation",
   "tocPath": ""
 }-->
+

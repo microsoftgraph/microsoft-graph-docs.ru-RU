@@ -3,14 +3,14 @@ title: Тип ресурса mobileAppAssignment
 description: Класс, содержащий свойства, которые используются для назначения групп в мобильном приложении.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 27642a474b8dea97317d8da51c6ca426ef44f1da
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 07a982ddac5fb1f7910f6ae5a6a4fc735a8da60b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457871"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094423"
 ---
 # <a name="mobileappassignment-resource-type"></a>Тип ресурса mobileAppAssignment
 
@@ -32,7 +32,7 @@ ms.locfileid: "43457871"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки, определенная администратором. Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевое назначение группы, определенное администратором.|
 |settings|[mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)|Параметры целевого назначения, определенные администратором.|
@@ -61,6 +61,8 @@ ms.locfileid: "43457871"
   }
 }
 ```
+
+
 
 
 

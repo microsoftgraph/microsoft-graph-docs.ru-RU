@@ -3,14 +3,14 @@ title: Обновление importedWindowsAutopilotDeviceIdentity
 description: Обновляет свойства объекта importedWindowsAutopilotDeviceIdentity.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3616df6dc8b8ffdd7fe100d221a9cf18fcee2f51
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1556f1152866988ef31e6e579eff8b14c77ed7ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471402"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094605"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentity"></a>Обновление importedWindowsAutopilotDeviceIdentity
 
@@ -45,16 +45,16 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedW
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID объекта|
-|orderIdentifier|String|Номер заказа устройства Windows Autopilot.|
-|serialNumber|String|Серийный номер устройства Windows Autopilot.|
+|id|Строка|GUID объекта|
+|orderIdentifier|Строка|Номер заказа устройства Windows Autopilot.|
+|serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
 |hardwareIdentifier|Двоичный|Аппаратный большой двоичный объект (BLOB) устройства Windows Autopilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Текущее состояние импортированного устройства.|
@@ -112,6 +112,9 @@ Content-Length: 590
   }
 }
 ```
+
+
+
 
 
 
