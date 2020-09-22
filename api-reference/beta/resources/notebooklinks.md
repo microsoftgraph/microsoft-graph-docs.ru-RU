@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: e33e7d3457a72089e7f01972838fb07d9c9747cb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b0050463ec3b88bd32e69efa6cfde5189fdce8d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522556"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033673"
 ---
 # <a name="notebooklinks-resource-type"></a>Тип ресурса Нотебуклинкс
 
@@ -57,3 +57,5 @@ ms.locfileid: "42522556"
   "suppressions": []
 }
 -->
+
+

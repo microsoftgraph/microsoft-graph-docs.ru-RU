@@ -5,18 +5,18 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 1680109fff35b4a30d88cabffcae81fc7a776f31
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 98266f8796bb90b494424fd68e3cbddd064a3b4c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44384010"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032868"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>servicePrincipal: getMemberGroups
 
 Пространство имен: microsoft.graph
 
-Получение списка групп, участником которых является данный [servicePrincipal](../resources/serviceprincipal.md) .  Это транзитивная проверка.
+Получение списка групп, участником которых является [servicePrincipal](../resources/serviceprincipal.md).  Это транзитивная проверка.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -49,7 +49,7 @@ POST /servicePrincipals/{id}/getMemberGroups
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции String в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции строк в тексте отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -124,3 +124,4 @@ Content-length: 39
   ]
 }
 -->
+

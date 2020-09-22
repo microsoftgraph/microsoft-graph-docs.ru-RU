@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: de1c8723e7a4d1606eba2abf876c85ecf76e67a5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 529e6750784436ef5db00de0c89c2fc0d9e04a6c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457970"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033015"
 ---
 # <a name="create-mailfolder"></a>Создание объекта MailFolder
 
@@ -56,7 +56,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод `201 Created` возвращает код отклика и ресурс [mailFolder](../resources/mailfolder.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и ресурс [mailFolder](../resources/mailfolder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -134,3 +134,4 @@ Content-length: 179
   "suppressions": [
   ]
 }-->
+

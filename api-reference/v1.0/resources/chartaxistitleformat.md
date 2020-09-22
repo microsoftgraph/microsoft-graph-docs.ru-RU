@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 62522cee67684141911511de26731879936b4f2b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e3f830edcd28781a2be64a51c48497976d38c17c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531884"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032763"
 ---
 # <a name="chartaxistitleformat-resource-type"></a>Тип ресурса ChartAxisTitleFormat
 
@@ -19,7 +19,7 @@ ms.locfileid: "42531884"
 Представляет форматирование для названий осей диаграммы.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 Нет
 
 ## <a name="properties"></a>Свойства
@@ -56,3 +56,4 @@ ms.locfileid: "42531884"
   "section": "documentation",
   "tocPath": ""
 }-->
+

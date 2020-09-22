@@ -3,14 +3,14 @@ title: Тип ресурса win32LobAppFileSystemDetection
 description: Содержит путь к файлу или папке для обнаружения приложения Win32
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4095aab16a35c574fbe73e1d2b899443f50225b9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d70d24440931c2c5f5ff624856cbdadd0ff097c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460156"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033792"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>Тип ресурса win32LobAppFileSystemDetection
 
@@ -35,7 +35,7 @@ ms.locfileid: "43460156"
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор для обнаружения файлов или папок. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |детектионвалуе|String|Значение обнаружения файлов или папок|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -56,6 +56,9 @@ ms.locfileid: "43460156"
   "detectionValue": "String"
 }
 ```
+
+
+
 
 
 

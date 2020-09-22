@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a6f11cad32e48b259f3754ed08e4bad769f9a4c6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2aedb1869a0dee1cc9e0d13fa85ca3c06bcc1d1c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531924"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032826"
 ---
 # <a name="chart-resource-type"></a>Тип ресурса Chart
 
@@ -39,7 +39,7 @@ ms.locfileid: "42531924"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |height|double|Обозначает высоту объекта диаграммы (в пунктах).|
-|id|строка|Возвращает диаграмму с учетом ее положения в коллекции. Только для чтения.|
+|id|string|Возвращает диаграмму с учетом ее положения в коллекции. Только для чтения.|
 |left|double|Расстояние в пунктах от левого края диаграммы до начала листа.|
 |name|string|Обозначает имя объекта диаграммы.|
 |top|double|Представляет расстояние в пунктах от верхнего края объекта до верхнего края первой строки (на листе) или до верхнего края области диаграммы (на диаграмме).|
@@ -89,3 +89,4 @@ ms.locfileid: "42531924"
   "section": "documentation",
   "tocPath": ""
 }-->
+

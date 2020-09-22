@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e77a783cd4c4ddaa630c4170a12deeb35ed59cc9
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: f95c91a3f900a21345a2ae6b37c4c2e0ef526131
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567223"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033503"
 ---
 # <a name="list-policies"></a>Список политик
 
@@ -26,7 +26,7 @@ ms.locfileid: "46567223"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy.Read.All |
+| Для приложений                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,7 +46,7 @@ GET /identity/conditionalAccess/policies
 |:----------|:----------|
 | Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -205,3 +205,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

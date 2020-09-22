@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: bcdafd649cfc313bfbb8d019c6bb3a6e9080051b
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: b7ec45f4f329b6e201c60f48e3c7e509f964e635
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408108"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032881"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipal: Delta
 
@@ -52,7 +52,7 @@ GET /servicePrincipals/delta
 - Вы можете использовать параметр запроса `$select` так же, как в любом другом запросе GET, чтобы задать только те свойства, которые необходимы для эффективной работы. Свойство _id_ возвращается всегда. 
 
 - Имеется ограниченная поддержка параметра `$filter`:
-  * Единственное поддерживаемое `$filter` выражение предназначено для отслеживания изменений для определенных ресурсов по их идентификаторам: `$filter=id+eq+{value}` или `$filter=id+eq+{value1}+or+id+eq+{value2}` . Количество идентификаторов, которые можно указать, ограничено максимальной длиной URL-адреса.
+  * Единственное поддерживаемое `$filter` выражение предназначено для отслеживания изменений для определенных ресурсов по их идентификаторам:  `$filter=id+eq+{value}` или `$filter=id+eq+{value1}+or+id+eq+{value2}` . Количество идентификаторов, которые можно указать, ограничено максимальной длиной URL-адреса.
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -60,7 +60,7 @@ GET /servicePrincipals/delta
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ### <a name="response"></a>Отклик
@@ -158,3 +158,4 @@ Content-type: application/json
   ]
 }
 -->
+

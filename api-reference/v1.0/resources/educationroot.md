@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 3792f0c867538c77522566110be36ac15d952396
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5f93b35dc48087b8d40db0cc3eabc2ba3ba10c8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531546"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032686"
 ---
 # <a name="educationroot-resource-type"></a>Тип ресурса educationRoot
 
@@ -35,8 +35,8 @@ ms.locfileid: "42531546"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|classes|Коллекция [educationClass](educationclass.md)| Только для чтения. Допускается значение null.|
-|me|[educationUser](educationuser.md)| Только для чтения. Допускается значение null.|
+|classes|Коллекция [educationClass](educationclass.md)| Только для чтения. Допускается значение NULL.|
+|me|[educationUser](educationuser.md)| Только для чтения. Допускается значение NULL.|
 |schools|Коллекция [educationSchool](educationschool.md)| Только для чтения. Допускается значение NULL.|
 |users|Коллекция [educationUser](educationuser.md)| Только для чтения. Допускается значение null.|
 
@@ -107,3 +107,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

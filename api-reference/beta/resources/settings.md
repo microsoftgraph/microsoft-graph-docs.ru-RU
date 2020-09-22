@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: abd68f3623f78d57b2db5812038223dc6137027f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 822ac02be4f3dc5d507aa5d9dbbb2fa22b194b64
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520768"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033547"
 ---
 # <a name="settings-resource-type"></a>Тип ресурса settings
 
@@ -66,3 +66,4 @@ ms.locfileid: "42520768"
   "section": "documentation",
   "tocPath": ""
 }-->
+

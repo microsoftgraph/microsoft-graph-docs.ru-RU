@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 78280017d71fe0cbcaa84ec22905da6848f45f98
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 57e3204e15755e9ec7ce0150f46c6f0409ca3120
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897885"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032693"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
 
@@ -33,14 +33,14 @@ ms.locfileid: "44897885"
 |[Удаление преподавателя](../api/educationclass-delete-teachers.md) |[educationUser](educationuser.md)| Удаление **educationUser** для курса с использованием свойства навигации teachers.|
 |[Получение группы](../api/educationclass-get-group.md) |[group](group.md)| Получите **группу** Microsoft 365, соответствующую этой **educationClass**.|
 |[Обновление](../api/educationclass-update.md) | [educationClass](educationclass.md)    |Обновление объекта **educationClass**. |
-|[Delete](../api/educationclass-delete.md) | Нет |Удаление объекта **educationClass**. |
+|[удаление](../api/educationclass-delete.md); | Нет |Удаление объекта **educationClass**. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id| Строка| Уникальный идентификатор для курса.|
+|id| String| Уникальный идентификатор для курса.|
 |description|String| Описание курса.|
-|displayName|Строка| Название курса.|
+|displayName|String| Название курса.|
 |mailNickname|String| Почтовое имя для отправки почты всем участникам, если это возможно. |
 |createdBy|[identitySet](identityset.md)| Объект, который создал курс. |
 |classCode|String| Код курса, используемый учебным заведением для идентификации курса.|
@@ -52,12 +52,12 @@ ms.locfileid: "44897885"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|members|Коллекция [educationUser](../resources/educationuser.md)| Все пользователи для этого курса. Допускается значение null.|
+|members|Коллекция [educationUser](../resources/educationuser.md)| Все пользователи для этого курса. Допускается значение NULL.|
 |schools|Коллекция [educationSchool](../resources/educationschool.md)| Все учебные заведения, с которыми сопоставлен этот курс. Допускается значение NULL.|
 |teachers|Коллекция [educationUser](../resources/educationuser.md)|  Все преподаватели для этого курса. Допускается значение NULL.|
 |group|[group](../resources/group.md)| Группа каталогов, соответствующая этому классу.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -94,3 +94,4 @@ ms.locfileid: "44897885"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: Тип ресурса officeSuiteApp
 description: Содержит свойства и наследуемые свойства для приложения набора Office365.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2de6bce56b9f2b4cca9f707edea1d495e7396f48
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 83ba35accd25a421875f52f7d249aeea42abe179
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790247"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033819"
 ---
 # <a name="officesuiteapp-resource-type"></a>Тип ресурса officeSuiteApp
 
@@ -55,20 +55,22 @@ ms.locfileid: "46790247"
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|аутоакцептеула|Логический|Значение, которое будет автоматически принимать условия лицензионного соглашения на устройстве ендусер.|
+|суперседингаппкаунт|Int32|Общее количество приложений, которые напрямую или косвенно заменяют данное приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседедаппкаунт|Int32|Общее число приложений, для которых это приложение напрямую или косвенно заменяется. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|аутоакцептеула|Boolean|Значение, которое будет автоматически принимать условия лицензионного соглашения на устройстве ендусер.|
 |productIds|Коллекция [оффицепродуктид](../resources/intune-apps-officeproductid.md)|Идентификаторы продуктов, представляющие SKU набора Office365.|
 |excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md);|Свойство для представления приложений, исключаемых из выбранного идентификатора продукта Office365.|
-|Свойства usesharedcomputeractivation|Логический|Свойство для представления того, используется ли активация на общем компьютере не для приложений Office365.|
+|Свойства usesharedcomputeractivation|Boolean|Свойство для представления того, используется ли активация на общем компьютере не для приложений Office365.|
 |updateChannel|[оффицеупдатечаннел](../resources/intune-apps-officeupdatechannel.md)|Свойство для представления канала обновления Office365. Возможные значения: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`, `monthlyEnterprise`.|
 |officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Свойство для представления версии набора приложений Office365. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |localesToInstall|Коллекция String|Свойство для представления языковых стандартов, устанавливаемых при установке приложений из Office365. В нем используется стандартная спецификация RFC 6033. Словом https://technet.microsoft.com/library/cc179219(v=office.16).aspx|
 |инсталлпрогрессдисплайлевел|[оффицесуитеинсталлпрогрессдисплайлевел](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|Для указания уровня отображения пользовательского интерфейса установки хода установки на устройстве. Возможные значения: `none`, `full`.|
-|шаулдунинсталлолдерверсионсофоффице|Логический|Свойство, определяющее, следует ли удалить существующий MSI Office, если на устройстве развернут набор приложений Office365.|
+|шаулдунинсталлолдерверсионсофоффице|Boolean|Свойство, определяющее, следует ли удалить существующий MSI Office, если на устройстве развернут набор приложений Office365.|
 |Атрибута targetversion|String|Свойство, представляющее определенную целевую версию для набора приложений Office365, который должен быть развернут на устройствах.|
 |упдатеверсион|String|Свойство для представления версии обновления, в которой определенная Целевая версия доступна для набора приложений Office365.|
 |оффицеконфигуратионксмл|Binary|Свойство, представляющее XML-файл конфигурации, который можно указать для приложений Office профессиональный плюс. Имеет приоритет над всеми другими свойствами. Если этот параметр указан, для создания приложения будет использоваться XML-файл конфигурации.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -76,7 +78,7 @@ ms.locfileid: "46790247"
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Общие сведения по установке мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |userStatuses|Коллекция [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|Таблица|Коллекция [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|Список отношений для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|Таблица|Коллекция [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|Набор прямых отношений для этого приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -113,6 +115,8 @@ ms.locfileid: "46790247"
     "String"
   ],
   "dependentAppCount": 1024,
+  "supersedingAppCount": 1024,
+  "supersededAppCount": 1024,
   "autoAcceptEula": true,
   "productIds": [
     "String"
@@ -148,6 +152,9 @@ ms.locfileid: "46790247"
   "officeConfigurationXml": "binary"
 }
 ```
+
+
+
 
 
 

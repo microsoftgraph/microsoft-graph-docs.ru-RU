@@ -3,14 +3,14 @@ title: Список Комплианцеманажементпартнерс
 description: Список свойств и связей объектов Комплианцеманажементпартнер.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 91f43342fa21cad981663578ab0c98c3a2e1aefb
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
-ms.translationtype: Auto
+ms.openlocfilehash: 271b09b62c10587e0d7bed13f4670c35db436994
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744163"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033204"
 ---
 # <a name="list-compliancemanagementpartners"></a>Список Комплианцеманажементпартнерс
 
@@ -41,7 +41,7 @@ GET /deviceManagement/complianceManagementPartners
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -104,6 +104,9 @@ Content-Length: 1192
   ]
 }
 ```
+
+
+
 
 
 

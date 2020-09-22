@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fd1b265a1f4d4169dfb16ec8265ae2152cfd5b83
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 71b6dc24bb4eb6426e5b15ca7c4147ae77ff1457
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "44345774"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032938"
 ---
 # <a name="update-openshift"></a>Обновление Опеншифт
 
@@ -180,3 +180,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

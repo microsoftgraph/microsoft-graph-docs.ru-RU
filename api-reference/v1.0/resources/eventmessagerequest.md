@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: b0a7b8d087ea7ba1bea7ce8a743d101fa05722d8
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: fe2426f9261a98796877567812f8a0a580a1de0f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427462"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032588"
 ---
 # <a name="eventmessagerequest-resource-type"></a>Тип ресурса eventMessageRequest
 
@@ -96,37 +96,37 @@ ms.locfileid: "45427462"
 |bodyPreview|String|Первые 255 символов в тексте сообщения.|
 |categories|Коллекция String|Категории, сопоставленные с сообщением.|
 |ccRecipients|Коллекция [recipient](recipient.md)|Получатели копии сообщения.|
-|changeKey|Строка|Версия сообщения.|
-|conversationId|Строка|Идентификатор беседы, к которой принадлежит электронное сообщение.|
+|changeKey|String|Версия сообщения.|
+|conversationId|String|Идентификатор беседы, к которой принадлежит электронное сообщение.|
 |conversationIndex|Edm.Binary|Индекс беседы, к которой относится электронная почта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сообщения.|
 |endDateTime|[DateTimeTimeZone](datetimetimezone.md)|Время окончания запрошенного собрания.|
 |from|[recipient](recipient.md)|Владелец почтового ящика, из которого отправлено сообщение. В большинстве случаев это значение совпадает со свойством **sender**, кроме сценариев предоставления общего доступа или делегирования. Значение должно соответствовать фактически используемому почтовому ящику. Дополнительные сведения о [задании свойств from и sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
 |hasAttachments|Boolean|Указывает на наличие вложений в сообщении.|
-|id|Строка|Только для чтения.|
+|id|String|Только для чтения.|
 |importance|String| Важность сообщения: `Low`, `Normal`, `High`.|
-|inferenceClassification|Строка| Возможные значения: `Focused`, `Other`.|
-|Isdelegated для|Логический|Значение true, если ответ на приглашение на собрание доступен представителю, в противном случае — значение false. Значение по умолчанию: false.|
-|isDeliveryReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|inferenceClassification|String| Возможные значения: `Focused`, `Other`.|
+|Isdelegated для|Boolean|Значение true, если ответ на приглашение на собрание доступен представителю, в противном случае — значение false. Значение по умолчанию: false.|
+|isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |isDraft|Логическое|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
-|isOutOfDate|Логический|Указывает, было ли это приглашение на собрание отменено в последний запрос.|
-|isRead|Логический|Указывает, прочитано ли сообщение.|
-|isReadReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isOutOfDate|Boolean|Указывает, было ли это приглашение на собрание отменено в последний запрос.|
+|isRead|Boolean|Указывает, прочитано ли сообщение.|
+|isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сообщения.|
 |location|[Location](location.md)|Расположение запрошенного собрания.|
 |meetingMessageType|String| Тип сообщения о событии: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
-|parentFolderId|Строка|Уникальный идентификатор родительского ресурса mailFolder для сообщения.|
+|parentFolderId|String|Уникальный идентификатор родительского ресурса mailFolder для сообщения.|
 |превиаусенддатетиме|[DateTimeTimeZone](datetimetimezone.md)| Если в обновлении собрания изменяется время окончания собрания, это свойство указывает время окончания предыдущего собрания.|
 |превиауслокатион|[Location](location.md)| Если в процессе обновления собрания изменяется место проведения собрания, это свойство указывает предыдущее место проведения собрания.|
 |превиаусстартдатетиме|[DateTimeTimeZone](datetimetimezone.md)| Если при обновлении собрания изменяется время начала собрания, это свойство указывает время начала предыдущего собрания.|
 |receivedDateTime|DateTimeOffset|Дата и время получения сообщения.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|Шаблон повторения запрошенного собрания.|
 |replyTo|Коллекция [recipient](recipient.md)|Электронные адреса, которые необходимо использовать при ответе.|
-|responseRequested|Логический|Задайте значение true, если отправитель хочет отправить ответ на запрошенное собрание.|
+|responseRequested|Boolean|Задайте значение true, если отправитель хочет отправить ответ на запрошенное собрание.|
 |sender|[recipient](recipient.md)|Учетная запись, которая фактически используется для создания сообщения. В большинстве случаев это значение совпадает со значением свойства **from**. Этому свойству можно присвоить другое значение при отправке сообщения из [общего почтового ящика](/exchange/collaboration/shared-mailboxes/shared-mailboxes), [для общего календаря или в качестве делегата](/graph/outlook-share-delegate-calendar.md). В любом случае значение должно соответствовать фактически используемому почтовому ящику. Дополнительные сведения о [задании свойств from и sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
 |sentDateTime|DateTimeOffset|Дата и время отправки сообщения.|
 |startDateTime|[DateTimeTimeZone](datetimetimezone.md)|Время начала запрошенного собрания.|
-|subject|Строка|Тема сообщения.|
+|subject|String|Тема сообщения.|
 |toRecipients|Коллекция [recipient](recipient.md)|Получатели сообщения, указанные в поле "Кому".|
 |type|String|Тип запрошенного собрания: `singleInstance` ,, `occurence` `exception` , `seriesMaster` .|
 |uniqueBody|[itemBody](itembody.md)|Часть текста сообщения, которая является уникальной для текущего сообщения.|
@@ -135,9 +135,9 @@ ms.locfileid: "45427462"
 ## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attachments|Коллекция [attachment](attachment.md)|Коллекция вложений [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md)и [referenceAttachment](referenceattachment.md) для сообщения. Только для чтения. Допускается значение null.|
+|attachments|Коллекция [attachment](attachment.md) |Коллекция вложений [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md)и [referenceAttachment](referenceattachment.md) для сообщения. Только для чтения. Допускается значение null.|
 |event|[event](event.md)| Событие, связанное с сообщением о событии. Для участников или ресурсов помещений предполагается, что помощник по ведению календаря настроен для автоматического обновления события в календаре, если поступают сообщения с приглашением на собрание. Свойство навигации.  Только для чтения.|
-|extensions|Коллекция объектов [extension](extension.md)| Коллекция открытых расширений, определенных для сообщения о событии. Только для чтения. Допускается значение null.|
+|extensions|Коллекция [extension](extension.md)| Коллекция открытых расширений, определенных для сообщения о событии. Только для чтения. Допускается значение null.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для eventMessage. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для eventMessage. Только для чтения. Допускается значение null.|
 
@@ -148,7 +148,7 @@ ms.locfileid: "45427462"
 |:---------------|:--------|:----------|
 |[Получение объекта eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Считывание свойств и отношений объекта eventMessage.|
 |[Обновление](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Обновление объекта eventMessage.|
-|[удаление](../api/eventmessage-delete.md); | Нет. |Удаление объекта eventMessage.|
+|[удаление](../api/eventmessage-delete.md); | Нет |Удаление объекта eventMessage.|
 |[copy](../api/message-copy.md)|[message](message.md)|Копирование сообщения в папку.|
 |[createForward](../api/message-createforward.md)|[message](message.md)|Создание черновика пересылаемого сообщения. После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.|
 |[createReply](../api/message-createreply.md)|[message](message.md)|Создание черновика ответного сообщения. После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.|
@@ -183,3 +183,4 @@ ms.locfileid: "45427462"
   "suppressions": []
 }
 -->
+

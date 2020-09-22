@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: afcda6aee90a6d50741c82b4b37869c97fbfb555
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 780abea12cf61655f8d529dadf2f8c4414401dc2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463756"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032903"
 ---
 # <a name="list-transitivememberof"></a>Список Транситивемембероф
 
@@ -51,7 +51,7 @@ GET /contacts/{id}/transitiveMemberOf
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/v1.0/me/transitiveMemberOf
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 >**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
@@ -131,3 +131,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

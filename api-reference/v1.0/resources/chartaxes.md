@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a5a33108de8225e3222ecea74afa3c0d9f1caa4b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5f647e40c2d4d5f3ab3b5206a4b172f70463c2ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531911"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032798"
 ---
 # <a name="chartaxes-resource-type"></a>Тип ресурса ChartAxes
 
@@ -19,7 +19,7 @@ ms.locfileid: "42531911"
 Представляет оси диаграммы.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 Нет
 
 ## <a name="properties"></a>Свойства
@@ -61,3 +61,4 @@ ms.locfileid: "42531911"
   "section": "documentation",
   "tocPath": ""
 }-->
+

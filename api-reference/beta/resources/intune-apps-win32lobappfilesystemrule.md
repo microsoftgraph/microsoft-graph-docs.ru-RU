@@ -3,14 +3,14 @@ title: Тип ресурса win32LobAppFileSystemRule
 description: Сложный тип для хранения данных правила для файлов или папок для бизнес-приложения Win32.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa01642dd36cd8dc79f713446df05a9559294f56
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: c83fa4bf5f3d24a4b171a8492f4212720242acdf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790833"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033785"
 ---
 # <a name="win32lobappfilesystemrule-resource-type"></a>Тип ресурса win32LobAppFileSystemRule
 
@@ -36,7 +36,7 @@ ms.locfileid: "44790833"
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|Оператор для обнаружения файлов или папок. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |компарисонвалуе|String|Значение сравнения файлов или папок.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -58,6 +58,9 @@ ms.locfileid: "44790833"
   "comparisonValue": "String"
 }
 ```
+
+
+
 
 
 

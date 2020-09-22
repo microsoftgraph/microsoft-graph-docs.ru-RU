@@ -3,14 +3,14 @@ title: Тип ресурса win32LobAppMsiInformation
 description: Содержит свойства приложения MSI для приложения Win32.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 151b0d756258b3c1b5911ab8719c3f72a6e7b263
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8553fb6b2efafd7ede072456ef99271e3df0ea09
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43422968"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033708"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>Тип ресурса win32LobAppMsiInformation
 
@@ -33,7 +33,7 @@ ms.locfileid: "43422968"
 |productName|String|Имя продукта MSI.|
 |publisher|String|Издатель MSI.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -55,6 +55,9 @@ ms.locfileid: "43422968"
   "publisher": "String"
 }
 ```
+
+
+
 
 
 

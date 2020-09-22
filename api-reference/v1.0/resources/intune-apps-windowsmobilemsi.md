@@ -3,14 +3,14 @@ title: Тип ресурса windowsMobileMSI
 description: Содержит свойства, в том числе унаследованные, для бизнес-приложений, к которым применяется MSI Windows Mobile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: da633df1ade7005cbebd5db0b50d5bd5e197932e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ab7ae64bfde764bfb6c57859d0bc457100e9ef9d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439548"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032497"
 ---
 # <a name="windowsmobilemsi-resource-type"></a>Тип ресурса windowsMobileMSI
 
@@ -27,17 +27,17 @@ ms.locfileid: "43439548"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Перечисление windowsMobileMSIs](../api/intune-apps-windowsmobilemsi-list.md)|Коллекция [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)|Список свойств и связей объектов [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|
-|[Получение windowsMobileMSI](../api/intune-apps-windowsmobilemsi-get.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|Считывание свойств и связей объекта [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|
-|[Создание windowsMobileMSI](../api/intune-apps-windowsmobilemsi-create.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|Создание объекта [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|
+|[Получение windowsMobileMSI](../api/intune-apps-windowsmobilemsi-get.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)|Считывание свойств и связей объекта [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|
+|[Создание windowsMobileMSI](../api/intune-apps-windowsmobilemsi-create.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)|Создание объекта [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|
 |[Удаление windowsMobileMSI](../api/intune-apps-windowsmobilemsi-delete.md)|None|Удаление экземпляра [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|
 |[Обновление windowsMobileMSI](../api/intune-apps-windowsmobilemsi-update.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)|Обновление свойств объекта [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -47,7 +47,7 @@ ms.locfileid: "43439548"
 |informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md)|
+|notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
@@ -102,6 +102,8 @@ ms.locfileid: "43439548"
   "ignoreVersionDetection": true
 }
 ```
+
+
 
 
 

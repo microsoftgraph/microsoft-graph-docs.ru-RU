@@ -6,12 +6,12 @@ description: Объект EditAction предоставляет сведения
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 53998155929289314ad8b222bb5eb790f0350add
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e2a597821e97457ace6c1caa5582eef26599506
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531519"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032714"
 ---
 # <a name="editaction-resource-type"></a>Тип ресурса editAction
 
@@ -27,7 +27,7 @@ ms.locfileid: "42531519"
 
 ## <a name="properties"></a>Свойства
 
-Нет. Этот аспект принимает нулевое или ненулевое значение и не содержит свойств.
+Нет Этот аспект принимает нулевое или ненулевое значение и не содержит свойств.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -52,3 +52,4 @@ ms.locfileid: "42531519"
   "suppressions": []
 }
 -->
+

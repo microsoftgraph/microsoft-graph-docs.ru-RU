@@ -3,14 +3,14 @@ title: тип перечисления Виндовсарчитектуре
 description: Содержит свойства для архитектуры Windows.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1ae392a259ba5b95d985a46cf52796e8bc4c26d2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d7e2339af550ed193894f1eb457216fc1c64c6a2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439601"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032511"
 ---
 # <a name="windowsarchitecture-enum-type"></a>тип перечисления Виндовсарчитектуре
 
@@ -24,10 +24,12 @@ ms.locfileid: "43439601"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|нуль|Флаги не заданы.|
-|платформы|1,1|Поддерживается ли тип архитектуры x86 Windows.|
-|x|2|Поддерживается ли тип архитектуры Windows x64.|
+|платформы|1 |Поддерживается ли тип архитектуры x86 Windows.|
+|x|2 |Поддерживается ли тип архитектуры Windows x64.|
 |руки|4 |Поддерживается ли тип архитектуры Windows ARM.|
 |определенно|8 |Поддерживается ли тип архитектуры нейтральной архитектуры Windows.|
+
+
 
 
 

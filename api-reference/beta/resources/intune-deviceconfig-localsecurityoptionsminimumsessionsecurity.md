@@ -3,14 +3,14 @@ title: тип перечисления Локалсекуритйоптионс�
 description: Возможные значения для Локалсекуритйоптионсминимумсессионсекурити
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f5d7e052d5b814bb10d3c0851683deccdf9f9f5f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e00c78f571d7425d1e957b8df22d0a1fbfa80f11
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439975"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033715"
 ---
 # <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a>тип перечисления Локалсекуритйоптионсминимумсессионсекурити
 
@@ -26,9 +26,12 @@ ms.locfileid: "43439975"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|нуль|Отправка ответов LM & NTLM|
-|requireNtmlV2SessionSecurity|1,1|Отправлять LM & NTLM — использовать сеансовую безопасность NTLMv2 при согласовании|
-|require128BitEncryption|2|Отправлять только LM & NTLM ответы|
+|requireNtmlV2SessionSecurity|1 |Отправлять LM & NTLM — использовать сеансовую безопасность NTLMv2 при согласовании|
+|require128BitEncryption|2 |Отправлять только LM & NTLM ответы|
 |ntlmV2And128BitEncryption|4|Отправлять только LM & только ответы NTLMv2.|
+
+
+
 
 
 

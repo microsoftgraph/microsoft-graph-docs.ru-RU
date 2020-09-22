@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6be514ab591ed355b4d6661255d0057255900db5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 77c9e786622b025e84780390fe64495fa98412bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473184"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033099"
 ---
 # <a name="mailfolder-delta"></a>mailFolder: delta
 
@@ -53,7 +53,7 @@ GET /users/{id}/mailFolders/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type  | string  | application/json. Обязательный. |
 | Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
 
@@ -144,3 +144,4 @@ Content-length: 254
   "suppressions": [
   ]
 }-->
+

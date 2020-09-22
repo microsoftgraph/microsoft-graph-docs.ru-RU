@@ -3,14 +3,14 @@ title: Тип ресурса androidLobApp
 description: Содержит свойства, в том числе унаследованные, для бизнес-приложений Android.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d77818d22a33d00800dabe701c7906daf0a919e0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7e755bd3c2906bd38a94a8c7de4ed953fadcd181
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43397424"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032567"
 ---
 # <a name="androidlobapp-resource-type"></a>Тип ресурса androidLobApp
 
@@ -27,17 +27,17 @@ ms.locfileid: "43397424"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Перечисление androidLobApps](../api/intune-apps-androidlobapp-list.md)|Коллекция [androidLobApp](../resources/intune-apps-androidlobapp.md)|Список свойств и связей объектов [androidLobApp](../resources/intune-apps-androidlobapp.md).|
-|[Получение androidLobApp](../api/intune-apps-androidlobapp-get.md)|[androidLobApp](../resources/intune-apps-androidlobapp.md);|Считывание свойств и связей объекта [androidLobApp](../resources/intune-apps-androidlobapp.md).|
-|[Создание androidLobApp](../api/intune-apps-androidlobapp-create.md)|[androidLobApp](../resources/intune-apps-androidlobapp.md);|Создание нового объекта [androidLobApp](../resources/intune-apps-androidlobapp.md).|
+|[Получение androidLobApp](../api/intune-apps-androidlobapp-get.md)|[androidLobApp](../resources/intune-apps-androidlobapp.md)|Считывание свойств и связей объекта [androidLobApp](../resources/intune-apps-androidlobapp.md).|
+|[Создание androidLobApp](../api/intune-apps-androidlobapp-create.md)|[androidLobApp](../resources/intune-apps-androidlobapp.md)|Создание нового объекта [androidLobApp](../resources/intune-apps-androidlobapp.md).|
 |[Удаление androidLobApp](../api/intune-apps-androidlobapp-delete.md)|None|Удаление экземпляра [androidLobApp](../resources/intune-apps-androidlobapp.md).|
 |[Обновление androidLobApp](../api/intune-apps-androidlobapp-update.md)|[androidLobApp](../resources/intune-apps-androidlobapp.md)|Обновление свойств объекта [androidLobApp](../resources/intune-apps-androidlobapp.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -47,10 +47,10 @@ ms.locfileid: "43397424"
 |informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md)|
+|notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
-|fileName|String|Имя основного файла бизнес-приложения. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
+|fileName|String|Имя основного файла бизнес-приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |packageId|String|Идентификатор пакета.|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune-apps-androidminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы.|
@@ -112,6 +112,8 @@ ms.locfileid: "43397424"
   "versionCode": "String"
 }
 ```
+
+
 
 
 

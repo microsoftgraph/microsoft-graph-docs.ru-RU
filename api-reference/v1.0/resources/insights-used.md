@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: aa5d5adc9b7716f26c1b05edb00122da57d625ab
-ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
+ms.openlocfilehash: f535b9e841c10e56935b65d3992e492479bbddc7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44227019"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032580"
 ---
 # <a name="usedinsight-resource-type"></a>Тип ресурса Усединсигхт
 
@@ -62,3 +62,4 @@ ms.locfileid: "44227019"
   "resourceReference": { "@odata.type": "microsoft.graph.resourceReference" }
 }
 ```
+

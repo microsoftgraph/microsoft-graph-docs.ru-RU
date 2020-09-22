@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a3fa66ec626db22d995f268de72ced8d2c15b3c2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7b7561b825e0449c51b7a0ce9c50bd13105c1ed6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43355233"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032980"
 ---
 # <a name="create-mailsearchfolder"></a>Создание Маилсеарчфолдер
 
@@ -54,11 +54,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 |:----------|:-----|:------------|
 | @odata.type | String | Тип создаваемой папки. Задано значение "Microsoft. Graph. Маилсеарчфолдер". |
 | displayName | String | Отображаемое имя новой папки.|
-| инклуденестедфолдерс | Boolean | Указывает, как должна проходить иерархия папок почтовых ящиков в поиске. `true`означает, что необходимо выполнить глубокий поиск, чтобы включить дочерние папки в иерархию каждой папки, явно указанной в **саурцефолдеридс**. `false`означает неглубокий Поиск только тех папок, которые явно указаны в **саурцефолдеридс**. |
-| саурцефолдеридс | Коллекция объектов string | Папки почтовых ящиков, которые должны быть mined. |
+| инклуденестедфолдерс | Boolean | Указывает, как должна проходить иерархия папок почтовых ящиков в поиске. `true` означает, что необходимо выполнить глубокий поиск, чтобы включить дочерние папки в иерархию каждой папки, явно указанной в **саурцефолдеридс**. `false` означает неглубокий Поиск только тех папок, которые явно указаны в **саурцефолдеридс**. |
+| саурцефолдеридс | Коллекция String | Папки почтовых ящиков, которые должны быть mined. |
 | филтеркуери | String | Запрос OData для фильтрации сообщений. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [маилсеарчфолдер](../resources/mailsearchfolder.md) в тексте отклика.
 
@@ -155,3 +155,4 @@ Content-type: application/json
   ]
 }
 -->
+

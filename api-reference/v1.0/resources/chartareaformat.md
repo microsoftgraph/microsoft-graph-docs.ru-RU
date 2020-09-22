@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 1a864dfb960a17ec4ea3d27dc114284d14f08789
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 82855d03a6dfdd23be9c1bd71a77ecee1af4f6e0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531919"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032819"
 ---
 # <a name="chartareaformat-resource-type"></a>Тип ресурса ChartAreaFormat
 
@@ -19,7 +19,7 @@ ms.locfileid: "42531919"
 Инкапсулирует свойства формата для всей области диаграммы.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 Нет
 
 ## <a name="properties"></a>Свойства
@@ -58,3 +58,4 @@ ms.locfileid: "42531919"
   "section": "documentation",
   "tocPath": ""
 }-->
+

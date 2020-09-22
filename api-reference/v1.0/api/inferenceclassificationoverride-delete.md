@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: dccd9fe08f62ecdff65f2f5d5437f9f8472f2ba2
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: f9a08903a7e96f7ab06bfea66b1058b7f393b696
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806165"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033358"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>Удаление объекта inferenceClassificationOverride
 
@@ -37,7 +37,7 @@ DELETE /users/{id}/inferenceClassification/overrides/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -96,3 +96,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

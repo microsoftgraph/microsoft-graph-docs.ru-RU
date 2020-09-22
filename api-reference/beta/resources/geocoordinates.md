@@ -6,12 +6,12 @@ title: GeoCoordinates
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 07b0a39155b8c9c4dc02d6cff1e0a93c1a9cd418
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d091858c4856ad133b72e757e837fb49b3c0594f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497638"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033843"
 ---
 # <a name="geocoordinates-resource-type"></a>Тип ресурса "геокоординаты"
 
@@ -63,3 +63,5 @@ ms.locfileid: "42497638"
   "suppressions": []
 }
 -->
+
+

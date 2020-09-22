@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 407f29c7d8f9468c5e9b1da1badad294cb655121
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2ed10fd9be0a49fbf25acac635cf29b1759c31eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531510"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032658"
 ---
 # <a name="educationschool-resource-type"></a>Тип ресурса educationSchool
 
@@ -37,8 +37,8 @@ ms.locfileid: "42531510"
 | Свойство            | Тип                                  | Описание                                                                        |
 | :------------------ | :------------------------------------ | :--------------------------------------------------------------------------------- |
 | id                  | String                                | GUID этого учебного заведения.                                                               |
-| displayName         | Строка                                | Отображаемое имя учебного заведения.                                                        |
-| description         | Строка                                | Описание учебного заведения.                                                         |
+| displayName         | String                                | Отображаемое имя учебного заведения.                                                        |
+| description         | String                                | Описание учебного заведения.                                                         |
 | status              | string                                | Только для чтения. Допустимые значения: `inactive`, `active`, `expired`, `deleteable`. |
 | externalSource      | едукатионекстерналсаурце               | Только для чтения.  Допустимые значения: `sis`, `manual`, `unknownFutureValue`.        |
 | principalEmail      | String                                | Адрес электронной почты директора.                                                    |
@@ -99,3 +99,4 @@ ms.locfileid: "42531510"
   "section": "documentation",
   "tocPath": ""
 }-->
+
