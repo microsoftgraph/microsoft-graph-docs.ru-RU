@@ -3,14 +3,14 @@ title: Тип ресурса deviceEnrollmentWindowsHelloForBusinessConfiguratio
 description: Параметры Windows Hello для бизнеса позволяют пользователям получать доступ к своим устройствам с помощью жестов, таких как биометрическая проверка подлинности или ПИН-код. Настройка параметров для зарегистрированных Windows 10, Windows 10 Mobile и более поздних версий.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2842ac3506351a47796a5b6a8ba9d8ed25226cd3
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 9322d343bbf5347e6017ee317d2ba6db9dd6baff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177767"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029710"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -38,13 +38,13 @@ ms.locfileid: "44177767"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для учетной записи, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|displayName|Строка|Отображаемое имя конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|displayName|String|Отображаемое имя конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |description|String|Описание конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |priority|Int32|Priority используется, когда пользователь существует в нескольких группах, которым назначена Настройка регистрации. Пользователи подчиняются только конфигурации с наименьшим значением приоритета. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|Созданная Дата и время в формате UTC для настройки регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |version|Int32|Версия конфигурации регистрации устройств, унаследованная от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|roleScopeTagIds|Коллекция объектов string|Необязательные теги области применения роли для ограничений регистрации. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|roleScopeTagIds|Коллекция String|Необязательные теги области применения роли для ограничений регистрации. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |pinMinimumLength|Int32|Определяет минимальное количество символов, необходимое для ПИН-кода Windows Hello для бизнеса.  Это значение должно находиться в диапазоне от 4 до 127 включительно, и меньше или равно значению, заданному для максимального ПИН-кода.|
 |pinMaximumLength|Int32|Управляет максимальным количеством символов для ПИН-кода Windows Hello для бизнеса. Это значение должно находиться в диапазоне от 4 до 127 включительно. Это значение должно быть больше или равно значению, заданному для минимального ПИН-кода.|
 |pinUppercaseCharactersUsage|[виндовшеллофорбусинесспинусаже](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Управляет возможностью использования прописных букв в ПИН-коде Windows Hello для бизнеса.  Allows разрешает использование прописных букв (s), в то время как это необходимо. Если задано значение "не разрешено", прописные буквы не будут разрешены. Возможные значения: `allowed`, `required`, `disallowed`.|
@@ -59,7 +59,7 @@ ms.locfileid: "44177767"
 |enhancedBiometricsState|[Включение](../resources/intune-shared-enablement.md)|Управляет возможностью использования функций защиты от спуфинга для распознавания лиц на поддерживающих его устройствах. Если задано значение Disabled, функции защиты от спуфинга не допускаются. Если задано значение не задано, пользователь может выбрать, следует ли использовать функцию защиты от спуфинга. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |секуритикэйфорсигнин|[Включение](../resources/intune-shared-enablement.md)|Ключ безопасности для входа предоставляет возможность удаленного включения и ВЫКЛЮЧЕНия функции Windows Hello Серкурити Кэйл, которые не настроены, будут поддерживать конфигурации, выполненные в Клинет. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|Список назначений групп для профиля конфигурации устройства, унаследованного от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
@@ -100,6 +100,9 @@ ms.locfileid: "44177767"
   "securityKeyForSignIn": "String"
 }
 ```
+
+
+
 
 
 

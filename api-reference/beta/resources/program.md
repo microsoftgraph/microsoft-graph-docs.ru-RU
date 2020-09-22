@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: cc2ce31742cd4a02efbefebc85283c8d784ad16e
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 31fb07478ab7f53e59cb93e9fd076a1271e998de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125038"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029080"
 ---
 # <a name="program-resource-type"></a>Тип ресурса Program
 
@@ -20,7 +20,7 @@ ms.locfileid: "43125038"
 
 В функции [рецензирования Access](accessreviews-root.md) в Azure AD программа — это контейнер, содержащий программные элементы управления. У клиента может быть одна или несколько программ.  Каждый элемент управления содержит ссылку на проверку доступа к программе, чтобы упростить обнаружение связанных проверок доступа.  
 
-У каждого клиента, у которого есть встроенные обзоры Azure AD, есть одна программа `Default program`.  Глобальный администратор может создавать дополнительные программы, например для представления инициатив по обеспечению соответствия требованиям. 
+У каждого клиента, у которого есть встроенные обзоры Azure AD, есть одна программа `Default program` .  Глобальный администратор может создавать дополнительные программы, например для представления инициатив по обеспечению соответствия требованиям. 
 
 
 ## <a name="methods"></a>Методы
@@ -40,7 +40,7 @@ ms.locfileid: "43125038"
 | `displayName`               |`String`                              |  Имя программы.  Требуется при создании.                  |
 | `description`               |`String`                              |  Описание программы.           |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 | `controls`                  |[програмконтрол](programcontrol.md) | Элементы управления, связанные с программой. |
@@ -77,3 +77,5 @@ ms.locfileid: "43125038"
   "suppressions": []
 }
 -->
+
+

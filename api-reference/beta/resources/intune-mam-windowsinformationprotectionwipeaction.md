@@ -3,14 +3,14 @@ title: Тип ресурса Виндовсинформатионпротект�
 description: Представляет запросы на очистку, выданные администратором клиента для устройств Windows "применяет собственные устройства" (BYOD).
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9b06dda234d0b4f92525367b0c7c0d218a763ed8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8f8e3d08dc8b05564c3be10f4bccf9b8a82740f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419193"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029899"
 ---
 # <a name="windowsinformationprotectionwipeaction-resource-type"></a>Тип ресурса Виндовсинформатионпротектионвипеактион
 
@@ -42,7 +42,7 @@ ms.locfileid: "43419193"
 |таржетеддевицемакаддресс|String|Mac-адрес целевого устройства.|
 |ластчеккиндатетиме|DateTimeOffset|Время последнего возврата устройства, которое было назначено для этого действия очистки.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -65,6 +65,9 @@ ms.locfileid: "43419193"
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

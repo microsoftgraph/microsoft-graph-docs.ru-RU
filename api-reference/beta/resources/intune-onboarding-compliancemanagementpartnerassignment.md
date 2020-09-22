@@ -3,14 +3,14 @@ title: Тип ресурса Комплианцеманажементпартн�
 description: Нацеленность для группы пользователей для партнера по управлению соответствием требованиям
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 04157461b1990403be4a60992876bb9a46317f1b
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: d44dc1107bdfd7ec05bc962b7f47b92a4ca84134
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793817"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029780"
 ---
 # <a name="compliancemanagementpartnerassignment-resource-type"></a>Тип ресурса Комплианцеманажементпартнерассигнмент
 
@@ -27,7 +27,7 @@ ms.locfileid: "44793817"
 |:---|:---|:---|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевой объект назначения группы.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,6 +47,9 @@ ms.locfileid: "44793817"
   }
 }
 ```
+
+
+
 
 
 

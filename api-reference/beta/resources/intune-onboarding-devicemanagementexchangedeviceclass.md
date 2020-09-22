@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементексчанжед�
 description: Класс устройства в Exchange.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4099009c67e2c5b0ce8cc5b3c52dd00b1fd32aec
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 79c1e7cf50bc0cc87f620ad0b875704005b90435
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448045"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029612"
 ---
 # <a name="devicemanagementexchangedeviceclass-resource-type"></a>Тип ресурса Девицеманажементексчанжедевицекласс
 
@@ -28,7 +28,7 @@ ms.locfileid: "43448045"
 |name|String|Имя класса устройств, на который влияет это правило.|
 |type|[девицеманажементексчанжеакцессрулетипе](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md)|Тип устройства, на которое влияет это правило, например Model, Family. Возможные значения: `family`, `model`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,6 +45,9 @@ ms.locfileid: "43448045"
   "type": "String"
 }
 ```
+
+
+
 
 
 

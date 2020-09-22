@@ -3,14 +3,14 @@ title: тип перечисления Девицеманажементексч�
 description: Критерий, определяющий тип устройства, к которому будет применяться это правило доступа
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3cf82f0ad99dd56194d32f0d902925cb617d50a0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b08d6ed9d135e6374200e70c8d27da84ca112b22
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459814"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029647"
 ---
 # <a name="devicemanagementexchangeaccessruletype-enum-type"></a>тип перечисления Девицеманажементексчанжеакцессрулетипе
 
@@ -26,7 +26,10 @@ ms.locfileid: "43459814"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |системами|нуль|Семейство устройств|
-|model|1,1|Определенная модель устройства|
+|model|1 |Определенная модель устройства|
+
+
+
 
 
 

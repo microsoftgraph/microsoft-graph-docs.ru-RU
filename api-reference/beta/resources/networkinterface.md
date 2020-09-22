@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 4f19c2fae729e437ec2d9e91a0c6be5694a85214
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d7b712c50d8cc19951f583cb8c9af7e185dba7ad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812788"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029164"
 ---
 # <a name="networkinterface-resource-type"></a>Тип ресурса Нетворкинтерфаце
 
@@ -28,7 +28,7 @@ ms.locfileid: "46812788"
 |localIpV6Address|String|IPv6-адрес последней локальной локальной связи или локального сайта, связанный с этим сетевым адаптером.|
 |macAddress|String|MAC-адрес сетевого адаптера на этом узле.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -60,3 +60,5 @@ ms.locfileid: "46812788"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

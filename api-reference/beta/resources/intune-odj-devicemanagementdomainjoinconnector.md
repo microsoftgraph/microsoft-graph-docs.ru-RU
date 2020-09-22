@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементдомаинжои�
 description: Соединитель присоединения к домену это соединитель, отвечающий за выделение и удаление больших двоичных объектов учетной записи компьютера.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 38c631b29378ec6246dd8c93754c253c06c792e3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c5f5cfd272e8f2adc5d2916f3783192be9a5a5ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419141"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029850"
 ---
 # <a name="devicemanagementdomainjoinconnector-resource-type"></a>Тип ресурса Девицеманажементдомаинжоинконнектор
 
@@ -35,12 +35,12 @@ ms.locfileid: "43419141"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор, представляющий соединитель.|
-|displayName|Строка|Отображаемое имя соединителя.|
+|displayName|String|Отображаемое имя соединителя.|
 |lastConnectionDateTime|DateTimeOffset|Последний соединитель времени с обращением к Intune.|
 |state|[deviceManagementDomainJoinConnectorState](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|Состояние соединителя. Возможные значения: `active`, `error`, `inactive`.|
 |version|String|Версия соединителя.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -61,6 +61,9 @@ ms.locfileid: "43419141"
   "version": "String"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 3cc26caaee20f1f274265061139671d00fa7cee0
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 18cfc7923fc71a0db8a54ed2dec4915022d29418
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125311"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029078"
 ---
 # <a name="programcontrol-resource-type"></a>Тип ресурса Програмконтрол
 
@@ -42,7 +42,7 @@ ms.locfileid: "43125311"
 | `owner`                  |[userIdentity](useridentity.md)   | Пользователь, создавший элемент управления программы.                                               |
 | `resource`               |`programResource`       | Ресурс, группа или приложение, предназначенные для проверки доступа этого элемента управления.                   |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 | `program`                |[Программа](program.md)               | Программа, частью которой является этот элемент управления.                                                |
@@ -85,7 +85,7 @@ ms.locfileid: "43125311"
 
 Ресурс Program, содержащийся в объекте Program Control, представляет собой ссылку на объект, который является целевым объектом проверки доступа.
 
-Этот тип наследуется `microsoft.graph.identity` от и обладает одним дополнительным свойством:
+Этот тип наследуется от `microsoft.graph.identity` и обладает одним дополнительным свойством:
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
@@ -119,3 +119,5 @@ ms.locfileid: "43125311"
   "suppressions": []
 }
 -->
+
+

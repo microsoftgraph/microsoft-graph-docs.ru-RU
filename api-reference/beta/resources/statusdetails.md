@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8f931d14a026a6809e70b4cc83e5b8e55e72e63a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 16f014ebc3a188644784434a69e13917f05beaae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411860"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029024"
 ---
 # <a name="statusdetails-resource-type"></a>Тип ресурса Статусдетаилс
 
@@ -64,3 +64,5 @@ ms.locfileid: "43411860"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

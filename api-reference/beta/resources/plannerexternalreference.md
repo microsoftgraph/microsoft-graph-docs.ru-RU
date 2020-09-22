@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 04ea5aa373cc0828386f56b8ec80b07faef40f06
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ce9cb16c73871289f7bd80058a80c8e61530a894
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521757"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029129"
 ---
 # <a name="plannerexternalreference-resource-type"></a>Тип ресурса Планнерекстерналреференце
 
@@ -29,7 +29,7 @@ ms.locfileid: "42521757"
 |lastModifiedBy|[identitySet](identityset.md)|Только для чтения. Идентификатор пользователя, на который последний раз изменился.|
 |lastModifiedDateTime|DateTimeOffset|Только для чтения. Дата и время последнего изменения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |превиевприорити|String|Используется для задания относительного порядка приоритетов, в соответствии с которым ссылка будет отображаться в качестве предварительной версии для задачи.|
-|type|String|Используется для описания типа ссылки. Типы включают: `PowerPoint`, `Word`, `Excel`, `Other`.|
+|type|String|Используется для описания типа ссылки. Типы включают: `PowerPoint` , `Word` , `Excel` , `Other` .|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -65,3 +65,5 @@ ms.locfileid: "42521757"
   "suppressions": []
 }
 -->
+
+

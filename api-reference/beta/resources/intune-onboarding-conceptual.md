@@ -4,12 +4,12 @@ description: Перечисление API Microsoft Graph для конечны�
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 4daf91153afd8d31551882d529f9741e6e55a6f3
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 59cde8330cfa1fb59cad49a8b17ea204e8077d40
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177403"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029773"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Регистрация устройств для управления в Intune
 
@@ -61,3 +61,5 @@ ms.locfileid: "44177403"
 - [Состояние синхронизации токена VPP](intune-onboarding-vpptokensyncstatus.md)
 - [Настройка страницы завершения регистрации в Windows 10](intune-onboarding-windows10enrollmentcompletionpageconfiguration.md)
 - [Использование ПИН-кода в Windows Hello для бизнеса](intune-onboarding-windowshelloforbusinesspinusage.md)
+
+
