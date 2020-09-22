@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b0db6dc2dc8d09b4a188ef2501f1b5d066f9dfc8
-ms.sourcegitcommit: d12bd5435c198bcd096e1f7f6a2716f4a04631cc
+ms.openlocfilehash: 623696838a975249d4f1df6770aa0d17cb66fbe0
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137066"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192408"
 ---
 # <a name="get-filesfolder"></a>Получение filesFolder
 
@@ -97,6 +97,7 @@ Content-length: 401
     "id": "01H7CFEKENJSSIUHGADZBKODARINQC5JMD",
     "createdDateTime": "0001-01-01T00:00:00Z",
     "lastModifiedDateTime": "2020-01-23T18:47:13Z",
+    "lastEditedDateTime": null,
     "name": "Documentation Planning",
     "webUrl": "https://microsoft.sharepoint.com/teams/ExtensibilityandFundamentals/Shared%20Documents/Documentation%20Planning",
     "size": 2374080,
@@ -106,7 +107,7 @@ Content-length: 401
     },
     "fileSystemInfo": {
         "createdDateTime": "2020-01-23T18:47:12Z",
-        "lastModifiedDateTime": "2020-01-23T18:47:13Z"
+        "lastModifiedDateTime": "2020-01-23T18:47:13Z",
     },
     "folder": {
         "childCount": 7
