@@ -6,30 +6,30 @@ author: JeremyKelley
 ms.date: 08/06/2019
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7862d8da186448d08d6dfd5691ae83e29bd57a5e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5e7291ac4591ba63bec96108dd46bf9561358bb4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521978"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47998096"
 ---
-# <a name="pendingcontentupdate-resource-type"></a><span data-ttu-id="5546f-103">Тип ресурса Пендингконтентупдате</span><span class="sxs-lookup"><span data-stu-id="5546f-103">pendingContentUpdate resource type</span></span>
+# <a name="pendingcontentupdate-resource-type"></a><span data-ttu-id="6a506-103">Тип ресурса Пендингконтентупдате</span><span class="sxs-lookup"><span data-stu-id="6a506-103">pendingContentUpdate resource type</span></span>
 
-<span data-ttu-id="5546f-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5546f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6a506-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6a506-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5546f-105">Указывает, что операция, которая может повлиять на двоичное содержимое **driveItem** , ожидает завершения.</span><span class="sxs-lookup"><span data-stu-id="5546f-105">Indicates that an operation that might affect the binary content of the **driveItem** is pending completion.</span></span>
+<span data-ttu-id="6a506-105">Указывает, что операция, которая может повлиять на двоичное содержимое **driveItem** , ожидает завершения.</span><span class="sxs-lookup"><span data-stu-id="6a506-105">Indicates that an operation that might affect the binary content of the **driveItem** is pending completion.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5546f-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="5546f-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="6a506-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="6a506-106">Properties</span></span>
 
-| <span data-ttu-id="5546f-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="5546f-107">Property</span></span>     | <span data-ttu-id="5546f-108">Тип</span><span class="sxs-lookup"><span data-stu-id="5546f-108">Type</span></span>         | <span data-ttu-id="5546f-109">Описание</span><span class="sxs-lookup"><span data-stu-id="5546f-109">Description</span></span> |
+| <span data-ttu-id="6a506-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="6a506-107">Property</span></span>     | <span data-ttu-id="6a506-108">Тип</span><span class="sxs-lookup"><span data-stu-id="6a506-108">Type</span></span>         | <span data-ttu-id="6a506-109">Описание</span><span class="sxs-lookup"><span data-stu-id="6a506-109">Description</span></span> |
 |:-------------|:-------------|:------------|
-|<span data-ttu-id="5546f-110">куеуеддатетиме</span><span class="sxs-lookup"><span data-stu-id="5546f-110">queuedDateTime</span></span>|<span data-ttu-id="5546f-111">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5546f-111">DateTimeOffset</span></span>|<span data-ttu-id="5546f-112">Дата и время, когда отложенная двоичная операция была поставлена в очередь в течение времени в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="5546f-112">Date and time the pending binary operation was queued in UTC time.</span></span> <span data-ttu-id="5546f-113">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="5546f-113">Read-only.</span></span>|
+|<span data-ttu-id="6a506-110">куеуеддатетиме</span><span class="sxs-lookup"><span data-stu-id="6a506-110">queuedDateTime</span></span>|<span data-ttu-id="6a506-111">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="6a506-111">DateTimeOffset</span></span>|<span data-ttu-id="6a506-112">Дата и время, когда отложенная двоичная операция была поставлена в очередь в течение времени в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="6a506-112">Date and time the pending binary operation was queued in UTC time.</span></span> <span data-ttu-id="6a506-113">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="6a506-113">Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="5546f-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="5546f-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6a506-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6a506-114">JSON representation</span></span>
 
-<span data-ttu-id="5546f-115">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5546f-115">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="6a506-115">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6a506-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -55,3 +55,5 @@ ms.locfileid: "42521978"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

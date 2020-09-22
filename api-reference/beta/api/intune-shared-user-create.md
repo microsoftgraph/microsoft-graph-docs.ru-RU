@@ -5,42 +5,42 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 19e8bb3d1074c8413ad0ad636d1eea22d45bd15d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1d72290f06626da4b2da6863f80b7af6e369fdba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457715"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47999750"
 ---
-# <a name="create-user"></a><span data-ttu-id="da007-103">Создание пользователя</span><span class="sxs-lookup"><span data-stu-id="da007-103">Create user</span></span>
+# <a name="create-user"></a><span data-ttu-id="1dc8b-103">Создание пользователя</span><span class="sxs-lookup"><span data-stu-id="1dc8b-103">Create user</span></span>
 
-<span data-ttu-id="da007-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="da007-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1dc8b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1dc8b-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="da007-105">**Важно!** API в версии/Beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="da007-105">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="da007-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="da007-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="1dc8b-105">**Важно!** API в версии/Beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="1dc8b-105">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="1dc8b-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1dc8b-106">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="da007-107">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="da007-107">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1dc8b-107">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="1dc8b-107">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="da007-108">Создание объекта [user](../resources/intune-shared-user.md).</span><span class="sxs-lookup"><span data-stu-id="da007-108">Create a new [user](../resources/intune-shared-user.md) object.</span></span>
+<span data-ttu-id="1dc8b-108">Создание объекта [user](../resources/intune-shared-user.md).</span><span class="sxs-lookup"><span data-stu-id="1dc8b-108">Create a new [user](../resources/intune-shared-user.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="da007-109">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="da007-109">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="1dc8b-109">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="1dc8b-109">Prerequisites</span></span>
 
-<span data-ttu-id="da007-110">Для вызова этого API требуется одно из следующих разрешений.</span><span class="sxs-lookup"><span data-stu-id="da007-110">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="da007-111">Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="da007-111">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>  <span data-ttu-id="da007-112">Конкретное требуемое разрешение зависит от контекста.</span><span class="sxs-lookup"><span data-stu-id="da007-112">The specific permission required depends on the context.</span></span>
+<span data-ttu-id="1dc8b-110">Для вызова этого API требуется одно из следующих разрешений.</span><span class="sxs-lookup"><span data-stu-id="1dc8b-110">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="1dc8b-111">Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1dc8b-111">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>  <span data-ttu-id="1dc8b-112">Конкретное требуемое разрешение зависит от контекста.</span><span class="sxs-lookup"><span data-stu-id="1dc8b-112">The specific permission required depends on the context.</span></span>
 
-|<span data-ttu-id="da007-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="da007-113">Permission type</span></span>|<span data-ttu-id="da007-114">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="da007-114">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="1dc8b-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1dc8b-113">Permission type</span></span>|<span data-ttu-id="1dc8b-114">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="1dc8b-114">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="da007-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="da007-115">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="da007-116">&nbsp; &nbsp; **Управление устройствами**</span><span class="sxs-lookup"><span data-stu-id="da007-116">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="da007-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da007-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-| <span data-ttu-id="da007-118">&nbsp;&nbsp; **MAM**</span><span class="sxs-lookup"><span data-stu-id="da007-118">&nbsp; &nbsp; **MAM**</span></span> | <span data-ttu-id="da007-119">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da007-119">DeviceManagementApps.ReadWrite.All</span></span>|
-| <span data-ttu-id="da007-120">&nbsp; &nbsp; **Адаптация**</span><span class="sxs-lookup"><span data-stu-id="da007-120">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="da007-121">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da007-121">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-| <span data-ttu-id="da007-122">&nbsp; &nbsp; **Устранение неполадок**</span><span class="sxs-lookup"><span data-stu-id="da007-122">&nbsp; &nbsp; **Troubleshooting**</span></span> | <span data-ttu-id="da007-123">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da007-123">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="da007-124">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="da007-124">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="da007-125">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="da007-125">Not supported.</span></span>|
-|<span data-ttu-id="da007-126">Для приложений</span><span class="sxs-lookup"><span data-stu-id="da007-126">Application</span></span>||
-| <span data-ttu-id="da007-127">&nbsp; &nbsp; **Управление устройствами**</span><span class="sxs-lookup"><span data-stu-id="da007-127">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="da007-128">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da007-128">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-| <span data-ttu-id="da007-129">&nbsp;&nbsp; **MAM**</span><span class="sxs-lookup"><span data-stu-id="da007-129">&nbsp; &nbsp; **MAM**</span></span> | <span data-ttu-id="da007-130">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da007-130">DeviceManagementApps.ReadWrite.All</span></span>|
-| <span data-ttu-id="da007-131">&nbsp; &nbsp; **Адаптация**</span><span class="sxs-lookup"><span data-stu-id="da007-131">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="da007-132">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da007-132">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-| <span data-ttu-id="da007-133">&nbsp; &nbsp; **Устранение неполадок**</span><span class="sxs-lookup"><span data-stu-id="da007-133">&nbsp; &nbsp; **Troubleshooting**</span></span> | <span data-ttu-id="da007-134">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da007-134">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="1dc8b-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1dc8b-115">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="1dc8b-116">&nbsp;&nbsp; **Управление устройствами**</span><span class="sxs-lookup"><span data-stu-id="1dc8b-116">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="1dc8b-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1dc8b-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+| <span data-ttu-id="1dc8b-118">&nbsp;&nbsp; **MAM**</span><span class="sxs-lookup"><span data-stu-id="1dc8b-118">&nbsp; &nbsp; **MAM**</span></span> | <span data-ttu-id="1dc8b-119">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1dc8b-119">DeviceManagementApps.ReadWrite.All</span></span>|
+| <span data-ttu-id="1dc8b-120">&nbsp; &nbsp; **Адаптация**</span><span class="sxs-lookup"><span data-stu-id="1dc8b-120">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="1dc8b-121">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1dc8b-121">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+| <span data-ttu-id="1dc8b-122">&nbsp; &nbsp; **Устранение неполадок**</span><span class="sxs-lookup"><span data-stu-id="1dc8b-122">&nbsp; &nbsp; **Troubleshooting**</span></span> | <span data-ttu-id="1dc8b-123">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1dc8b-123">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="1dc8b-124">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1dc8b-124">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1dc8b-125">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1dc8b-125">Not supported.</span></span>|
+|<span data-ttu-id="1dc8b-126">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1dc8b-126">Application</span></span>||
+| <span data-ttu-id="1dc8b-127">&nbsp;&nbsp; **Управление устройствами**</span><span class="sxs-lookup"><span data-stu-id="1dc8b-127">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="1dc8b-128">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1dc8b-128">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+| <span data-ttu-id="1dc8b-129">&nbsp;&nbsp; **MAM**</span><span class="sxs-lookup"><span data-stu-id="1dc8b-129">&nbsp; &nbsp; **MAM**</span></span> | <span data-ttu-id="1dc8b-130">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1dc8b-130">DeviceManagementApps.ReadWrite.All</span></span>|
+| <span data-ttu-id="1dc8b-131">&nbsp; &nbsp; **Адаптация**</span><span class="sxs-lookup"><span data-stu-id="1dc8b-131">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="1dc8b-132">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1dc8b-132">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+| <span data-ttu-id="1dc8b-133">&nbsp; &nbsp; **Устранение неполадок**</span><span class="sxs-lookup"><span data-stu-id="1dc8b-133">&nbsp; &nbsp; **Troubleshooting**</span></span> | <span data-ttu-id="1dc8b-134">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1dc8b-134">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="da007-135">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="da007-135">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1dc8b-135">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1dc8b-135">HTTP Request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -50,36 +50,36 @@ ms.locfileid: "43457715"
 POST /users
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="da007-136">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="da007-136">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="1dc8b-136">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="1dc8b-136">Request headers</span></span>
 
-|<span data-ttu-id="da007-137">Заголовок</span><span class="sxs-lookup"><span data-stu-id="da007-137">Header</span></span>|<span data-ttu-id="da007-138">Значение</span><span class="sxs-lookup"><span data-stu-id="da007-138">Value</span></span>|
+|<span data-ttu-id="1dc8b-137">Заголовок</span><span class="sxs-lookup"><span data-stu-id="1dc8b-137">Header</span></span>|<span data-ttu-id="1dc8b-138">Значение</span><span class="sxs-lookup"><span data-stu-id="1dc8b-138">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="da007-139">Авторизация</span><span class="sxs-lookup"><span data-stu-id="da007-139">Authorization</span></span>|<span data-ttu-id="da007-140">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="da007-140">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="da007-141">Accept</span><span class="sxs-lookup"><span data-stu-id="da007-141">Accept</span></span>|<span data-ttu-id="da007-142">application/json</span><span class="sxs-lookup"><span data-stu-id="da007-142">application/json</span></span>|
+|<span data-ttu-id="1dc8b-139">Authorization</span><span class="sxs-lookup"><span data-stu-id="1dc8b-139">Authorization</span></span>|<span data-ttu-id="1dc8b-140">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1dc8b-140">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="1dc8b-141">Accept</span><span class="sxs-lookup"><span data-stu-id="1dc8b-141">Accept</span></span>|<span data-ttu-id="1dc8b-142">application/json</span><span class="sxs-lookup"><span data-stu-id="1dc8b-142">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="da007-143">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="da007-143">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="1dc8b-143">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="1dc8b-143">Request body</span></span>
 
-<span data-ttu-id="da007-144">В теле запроса добавьте представление объекта user в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="da007-144">In the request body, supply a JSON representation for the user object.</span></span>
+<span data-ttu-id="1dc8b-144">В теле запроса добавьте представление объекта user в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1dc8b-144">In the request body, supply a JSON representation for the user object.</span></span>
 
-<span data-ttu-id="da007-145">В приведенной ниже таблице указаны свойства, необходимые при создании объекта user.</span><span class="sxs-lookup"><span data-stu-id="da007-145">The following table shows the properties that are required when you create the user.</span></span>
+<span data-ttu-id="1dc8b-145">В приведенной ниже таблице указаны свойства, необходимые при создании объекта user.</span><span class="sxs-lookup"><span data-stu-id="1dc8b-145">The following table shows the properties that are required when you create the user.</span></span>
 
-|<span data-ttu-id="da007-146">Свойство</span><span class="sxs-lookup"><span data-stu-id="da007-146">Property</span></span>|<span data-ttu-id="da007-147">Тип</span><span class="sxs-lookup"><span data-stu-id="da007-147">Type</span></span>|<span data-ttu-id="da007-148">Описание</span><span class="sxs-lookup"><span data-stu-id="da007-148">Description</span></span>|
+|<span data-ttu-id="1dc8b-146">Свойство</span><span class="sxs-lookup"><span data-stu-id="1dc8b-146">Property</span></span>|<span data-ttu-id="1dc8b-147">Тип</span><span class="sxs-lookup"><span data-stu-id="1dc8b-147">Type</span></span>|<span data-ttu-id="1dc8b-148">Описание</span><span class="sxs-lookup"><span data-stu-id="1dc8b-148">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="da007-149">id</span><span class="sxs-lookup"><span data-stu-id="da007-149">id</span></span>|<span data-ttu-id="da007-150">String</span><span class="sxs-lookup"><span data-stu-id="da007-150">String</span></span>|<span data-ttu-id="da007-151">Уникальный идентификатор пользователя.</span><span class="sxs-lookup"><span data-stu-id="da007-151">Unique identifier of the user.</span></span>|
-|<span data-ttu-id="da007-152">**Встроенное подключение**</span><span class="sxs-lookup"><span data-stu-id="da007-152">**On-boarding**</span></span>||
-|<span data-ttu-id="da007-153">deviceEnrollmentLimit</span><span class="sxs-lookup"><span data-stu-id="da007-153">deviceEnrollmentLimit</span></span>|<span data-ttu-id="da007-154">Int32</span><span class="sxs-lookup"><span data-stu-id="da007-154">Int32</span></span>|<span data-ttu-id="da007-155">Максимальное количество устройств, которые разрешено зарегистрировать пользователю.</span><span class="sxs-lookup"><span data-stu-id="da007-155">The limit on the maximum number of devices that the user is permitted to enroll.</span></span> <span data-ttu-id="da007-156">Допустимые значения: 5 или 1000.</span><span class="sxs-lookup"><span data-stu-id="da007-156">Allowed values are 5 or 1000.</span></span>|
+|<span data-ttu-id="1dc8b-149">id</span><span class="sxs-lookup"><span data-stu-id="1dc8b-149">id</span></span>|<span data-ttu-id="1dc8b-150">String</span><span class="sxs-lookup"><span data-stu-id="1dc8b-150">String</span></span>|<span data-ttu-id="1dc8b-151">Уникальный идентификатор пользователя.</span><span class="sxs-lookup"><span data-stu-id="1dc8b-151">Unique identifier of the user.</span></span>|
+|<span data-ttu-id="1dc8b-152">**Встроенное подключение**</span><span class="sxs-lookup"><span data-stu-id="1dc8b-152">**On-boarding**</span></span>||
+|<span data-ttu-id="1dc8b-153">deviceEnrollmentLimit</span><span class="sxs-lookup"><span data-stu-id="1dc8b-153">deviceEnrollmentLimit</span></span>|<span data-ttu-id="1dc8b-154">Int32</span><span class="sxs-lookup"><span data-stu-id="1dc8b-154">Int32</span></span>|<span data-ttu-id="1dc8b-155">Максимальное количество устройств, которые разрешено зарегистрировать пользователю.</span><span class="sxs-lookup"><span data-stu-id="1dc8b-155">The limit on the maximum number of devices that the user is permitted to enroll.</span></span> <span data-ttu-id="1dc8b-156">Допустимые значения: 5 или 1000.</span><span class="sxs-lookup"><span data-stu-id="1dc8b-156">Allowed values are 5 or 1000.</span></span>|
 
-<span data-ttu-id="da007-157">Поддержка свойств текста запроса зависит от контекста.</span><span class="sxs-lookup"><span data-stu-id="da007-157">Request body property support varies according to context.</span></span>
+<span data-ttu-id="1dc8b-157">Поддержка свойств текста запроса зависит от контекста.</span><span class="sxs-lookup"><span data-stu-id="1dc8b-157">Request body property support varies according to context.</span></span>
 
-## <a name="response"></a><span data-ttu-id="da007-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="da007-158">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1dc8b-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="1dc8b-158">Response</span></span>
 
-<span data-ttu-id="da007-159">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [user](../resources/intune-shared-user.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="da007-159">If successful, this method returns a `201 Created` response code and a [user](../resources/intune-shared-user.md) object in the response body.</span></span>
+<span data-ttu-id="1dc8b-159">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [user](../resources/intune-shared-user.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="1dc8b-159">If successful, this method returns a `201 Created` response code and a [user](../resources/intune-shared-user.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="da007-160">Пример</span><span class="sxs-lookup"><span data-stu-id="da007-160">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1dc8b-160">Пример</span><span class="sxs-lookup"><span data-stu-id="1dc8b-160">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="da007-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="da007-161">Request</span></span>
+### <a name="request"></a><span data-ttu-id="1dc8b-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="1dc8b-161">Request</span></span>
 
-<span data-ttu-id="da007-162">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="da007-162">Here is an example of the request.</span></span>
+<span data-ttu-id="1dc8b-162">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1dc8b-162">Here is an example of the request.</span></span>
 
 ``` http
 POST https://graph.microsoft.com/beta/users
@@ -91,9 +91,9 @@ Content-length: 46
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="da007-163">Отклик</span><span class="sxs-lookup"><span data-stu-id="da007-163">Response</span></span>
+### <a name="response"></a><span data-ttu-id="1dc8b-163">Отклик</span><span class="sxs-lookup"><span data-stu-id="1dc8b-163">Response</span></span>
 
-<span data-ttu-id="da007-164">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="da007-164">Here is an example of the response.</span></span> <span data-ttu-id="da007-165">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="da007-165">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="da007-166">Свойства, возвращаемые при фактическом вызове, меняются в зависимости от контекста.</span><span class="sxs-lookup"><span data-stu-id="da007-166">Properties returned from an actual call vary according to context.</span></span>
+<span data-ttu-id="1dc8b-164">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="1dc8b-164">Here is an example of the response.</span></span> <span data-ttu-id="1dc8b-165">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="1dc8b-165">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="1dc8b-166">Свойства, возвращаемые при фактическом вызове, меняются в зависимости от контекста.</span><span class="sxs-lookup"><span data-stu-id="1dc8b-166">Properties returned from an actual call vary according to context.</span></span>
 
 ``` http
 HTTP/1.1 201 Created
@@ -105,6 +105,9 @@ Content-Length: 95
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
 }
 ```
+
+
+
 
 
 
