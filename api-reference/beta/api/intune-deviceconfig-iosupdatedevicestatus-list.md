@@ -3,14 +3,14 @@ title: Перечисление объектов iosUpdateDeviceStatus
 description: Список свойств и связей объектов iosUpdateDeviceStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e31e88eec5cf2aa2b221e73d5527b1b9989ef171
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ed75b046cc60fa1e0fccce911c411e390efa1f85
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43438551"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994822"
 ---
 # <a name="list-iosupdatedevicestatuses"></a>Перечисление объектов iosUpdateDeviceStatus
 
@@ -43,13 +43,13 @@ GET /deviceManagement/iosUpdateStatuses
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -88,6 +88,9 @@ Content-Length: 708
   ]
 }
 ```
+
+
+
 
 
 

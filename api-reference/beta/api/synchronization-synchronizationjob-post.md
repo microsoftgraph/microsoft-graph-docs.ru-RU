@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7fac7eda83cb5caf4332110e38367acb876c8ef7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: baead22be8a0b6f9b8561e4cc44e4835d26603ad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437551"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994472"
 ---
 # <a name="create-synchronizationjob"></a>Создание Синчронизатионжоб
 
@@ -43,11 +43,11 @@ POST /servicePrincipals/{id}/synchronization/jobs/
 
 ## <a name="request-body"></a>Тело запроса
 
-В тексте запроса добавьте представление объекта [синчронизатионжоб](../resources/synchronization-synchronizationjob.md) в формате JSON. Единственное обязательное свойство — `templateId`. `templateId` Свойство должно быть соответствующим одному из шаблонов, созданных для этого приложения или субъекта-службы. Чтобы найти доступные шаблоны, используйте [шаблоны списков](synchronization-synchronizationtemplate-list.md).
+В тексте запроса добавьте представление объекта [синчронизатионжоб](../resources/synchronization-synchronizationjob.md) в формате JSON. Единственное обязательное свойство — `templateId` . `templateId`Свойство должно быть соответствующим одному из шаблонов, созданных для этого приложения или субъекта-службы. Чтобы найти доступные шаблоны, используйте [шаблоны списков](synchronization-synchronizationtemplate-list.md).
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха возвращает код `201 Created` отклика и объект [синчронизатионжоб](../resources/synchronization-synchronizationjob.md) в тексте отклика.
+В случае успеха возвращает `201 Created` код отклика и объект [синчронизатионжоб](../resources/synchronization-synchronizationjob.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -133,3 +133,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

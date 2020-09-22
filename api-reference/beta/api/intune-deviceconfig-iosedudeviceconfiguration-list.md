@@ -3,14 +3,14 @@ title: Список Иоседудевицеконфигуратионс
 description: Список свойств и связей объектов Иоседудевицеконфигуратион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ff82feac25a9113aaf1c903416ffae9c124cc1b0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f14a5efed5bdca7ff5b45498ea8cad2c017283bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439223"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995501"
 ---
 # <a name="list-iosedudeviceconfigurations"></a>Список Иоседудевицеконфигуратионс
 
@@ -44,13 +44,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [иоседудевицеконфигуратион](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -140,6 +140,9 @@ Content-Length: 3148
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Список Иосекспедитедчеккинконфигурати
 description: Список свойств и связей объектов Иосекспедитедчеккинконфигуратион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c36398236359d22806daa97e1d79b558ea54f9f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e9c1b0539dca7971043d778c2be0a771f9853e68
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439088"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995368"
 ---
 # <a name="list-iosexpeditedcheckinconfigurations"></a>Список Иосекспедитедчеккинконфигуратионс
 
@@ -44,13 +44,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [иосекспедитедчеккинконфигуратион](../resources/intune-deviceconfig-iosexpeditedcheckinconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -108,6 +108,9 @@ Content-Length: 1407
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9042744f4804f61560e14dbcaae499b310dcf540
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2d2e63082fe0949f4fb4c082321c7dbaec14c42a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452703"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994458"
 ---
 # <a name="list-tablerowcollection"></a>Список TableRowCollection
 
@@ -43,7 +43,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -111,3 +111,5 @@ Content-length: 82
   ]
 }
 -->
+
+

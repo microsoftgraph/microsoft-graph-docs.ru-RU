@@ -3,14 +3,14 @@ title: Обновление Девицеманажементскриптусер
 description: Обновление свойств объекта Девицеманажементскриптусерстате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 73fa035d8d7026097d191509cd3298caafcb085d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 180f39c2cab106e7fd83846c8f84786b13944a75
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43425702"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994668"
 ---
 # <a name="update-devicemanagementscriptuserstate"></a>Обновление Девицеманажементскриптусерстате
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -54,14 +54,14 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта состояния пользователя скрипта управления устройствами. Это свойство доступно только для чтения.|
+|id|String|Ключ объекта состояния пользователя скрипта управления устройствами. Это свойство доступно только для чтения.|
 |сукцессдевицекаунт|Int32|Число устройств для указанного пользователя.|
 |errorDeviceCount|Int32|Количество устройств с ошибками для определенного пользователя.|
 |userPrincipalName|String|Имя участника, указанного пользователем.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементскриптусерстате](../resources/intune-devices-devicemanagementscriptuserstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -96,6 +96,9 @@ Content-Length: 229
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 

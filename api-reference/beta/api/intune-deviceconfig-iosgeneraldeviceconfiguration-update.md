@@ -3,14 +3,14 @@ title: Обновление объекта iosGeneralDeviceConfiguration
 description: Обновление свойств объекта iosGeneralDeviceConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 386c6135ce28455fbeedd23c26eb26644a9047eb
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 6b8e49c9f67c5d3c1ba704844d4f5468061878ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792796"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47995305"
 ---
 # <a name="update-iosgeneraldeviceconfiguration"></a>Обновление объекта iosGeneralDeviceConfiguration
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -64,7 +64,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |accountBlockModification|Boolean|Указывает, можно ли изменять учетную запись, когда устройство находится в защищенном режиме.|
 |activationLockAllowWhenSupervised|Boolean|Указывает, следует ли запретить блокировку активации, когда устройство находится в защищенном режиме.|
@@ -189,7 +189,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |passcodeMinutesOfInactivityBeforeScreenTimeout|Int32|Время с момента последнего действия до отключения экрана (в минутах).|
 |passcodeMinimumCharacterSetCount|Int32|Количество наборов символов, которые должен содержать секретный код. Допустимые значения: от 0 до 4.|
 |passcodePreviousPasscodeBlockCount|Int32|Количество предыдущих секретных кодов, которые следует блокировать. Допустимые значения: от 1 до 24.|
-|passcodeSignInFailureCountBeforeWipe|Int32|Количество неудачных попыток входа до очистки устройства. Допустимые значения: от 4 до 11.|
+|passcodeSignInFailureCountBeforeWipe|Int32|Количество неудачных попыток входа до очистки устройства. Допустимые значения — от 2 до 11|
 |passcodeRequiredType|[рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Необходимый тип секретного кода. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passcodeRequired|Boolean|Указывает, обязательно ли использовать секретный код.|
 |podcastsBlocked|Boolean|Указывает, следует ли запретить использовать подкасты на защищенном устройстве (iOS 8.0 и более поздних версий).|
@@ -242,6 +242,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |финдмифриендсинфиндмяппблоккед|Boolean|Указывает, следует ли заблокировать "найти друзей", когда устройство защищено (iOS 13 или более поздней версии).|
 |итунесблоккед|Boolean|Указывает, следует ли заблокировать приложение iTunes. Для iOS 13 и более поздних версий требуется контролируемое устройство.|
 |шареддевицеблокктемпорарисессионс|Boolean|Указывает, следует ли заблокировать временные сеансы на общем iPad (iOS 13,4 или более поздней версии).|
+|аппклипсблоккед|Boolean|Запрещает пользователю добавлять какие бы то ни было клипы приложений и удалять существующие клипы приложений на устройстве.|
 |киоскмодеапптипе|[иоскиоскмодеапптипе](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Тип приложения, которое будет запускаться в режиме киоска. Возможные значения: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 
@@ -256,7 +257,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 10565
+Content-length: 10593
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -545,6 +546,7 @@ Content-length: 10565
   "findMyFriendsInFindMyAppBlocked": true,
   "iTunesBlocked": true,
   "sharedDeviceBlockTemporarySessions": true,
+  "appClipsBlocked": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
@@ -554,7 +556,7 @@ Content-length: 10565
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10737
+Content-Length: 10765
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -846,9 +848,13 @@ Content-Length: 10737
   "findMyFriendsInFindMyAppBlocked": true,
   "iTunesBlocked": true,
   "sharedDeviceBlockTemporarySessions": true,
+  "appClipsBlocked": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
+
+
+
 
 
 

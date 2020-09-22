@@ -3,14 +3,14 @@ title: Получение Девицеманажементскриптусерс
 description: Чтение свойств и связей объекта Девицеманажементскриптусерстате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6357f050c53340791e7fd5e1f5a57f6beec32e1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8a66c244dc3e5cb185c1cd096ed89eeaa7311856
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43425772"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994682"
 ---
 # <a name="get-devicemanagementscriptuserstate"></a>Получение Девицеманажементскриптусерстате
 
@@ -41,19 +41,19 @@ GET /deviceManagement/deviceShellScripts/{deviceShellScriptId}/userRunStates/{de
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates/{deviceManagementScriptUserStateId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [девицеманажементскриптусерстате](../resources/intune-devices-devicemanagementscriptuserstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -81,6 +81,9 @@ Content-Length: 258
   }
 }
 ```
+
+
+
 
 
 
