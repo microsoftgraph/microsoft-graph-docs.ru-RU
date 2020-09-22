@@ -5,44 +5,44 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 302ee25dd2856ef4ab8e275862c109d31d78f85a
-ms.sourcegitcommit: 4fa554d92a684d7720db1bd96befb9dea8d6ba5f
+ms.openlocfilehash: 1308b230a9c05345a434d5e8f0012eb8fb8f276b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429583"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010642"
 ---
-# <a name="delete-phoneauthenticationmethod"></a><span data-ttu-id="848bb-103">Удаление Фонеаусентикатионмесод</span><span class="sxs-lookup"><span data-stu-id="848bb-103">Delete phoneAuthenticationMethod</span></span>
+# <a name="delete-phoneauthenticationmethod"></a><span data-ttu-id="36867-103">Удаление Фонеаусентикатионмесод</span><span class="sxs-lookup"><span data-stu-id="36867-103">Delete phoneAuthenticationMethod</span></span>
 
-<span data-ttu-id="848bb-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="848bb-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="36867-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="36867-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="848bb-105">Удаление [метода проверки подлинности телефона](../resources/phoneauthenticationmethod.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="848bb-105">Delete a user's [phone authentication method](../resources/phoneauthenticationmethod.md).</span></span> 
+<span data-ttu-id="36867-105">Удаление [метода проверки подлинности телефона](../resources/phoneauthenticationmethod.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="36867-105">Delete a user's [phone authentication method](../resources/phoneauthenticationmethod.md).</span></span> 
 
-><span data-ttu-id="848bb-106">**Примечание:** При этом номер телефона будет удален от пользователя, и он больше не сможет использовать проверку подлинности с помощью SMS или голосовых вызовов.</span><span class="sxs-lookup"><span data-stu-id="848bb-106">**Note:** This removes the phone number from the user and they will no longer be able to use the number for authentication, whether via SMS or voice calls.</span></span>
+><span data-ttu-id="36867-106">**Примечание:** При этом номер телефона будет удален от пользователя, и он больше не сможет использовать проверку подлинности с помощью SMS или голосовых вызовов.</span><span class="sxs-lookup"><span data-stu-id="36867-106">**Note:** This removes the phone number from the user and they will no longer be able to use the number for authentication, whether via SMS or voice calls.</span></span>
 
-<span data-ttu-id="848bb-107">Помните, что у пользователя не может быть номера `alternateMobile` без `mobile` номера.</span><span class="sxs-lookup"><span data-stu-id="848bb-107">Remember that a user cannot have an `alternateMobile` number without a `mobile` number.</span></span> <span data-ttu-id="848bb-108">Если вы хотите удалить `mobile` номер из пользователя, который также имеет `alternateMobile` номер, сначала [Обновите](phoneauthenticationmethod-update.md) его `mobile` до нового номера, а затем удалите `alternateMobile` номер.</span><span class="sxs-lookup"><span data-stu-id="848bb-108">If you want to remove a `mobile` number from a user that also has an `alternateMobile` number, first [update](phoneauthenticationmethod-update.md) the `mobile` number to the new number, then delete the `alternateMobile` number.</span></span>
+<span data-ttu-id="36867-107">Помните, что у пользователя не может быть номера `alternateMobile` без `mobile` номера.</span><span class="sxs-lookup"><span data-stu-id="36867-107">Remember that a user cannot have an `alternateMobile` number without a `mobile` number.</span></span> <span data-ttu-id="36867-108">Если вы хотите удалить `mobile` номер из пользователя, который также имеет `alternateMobile` номер, сначала [Обновите](phoneauthenticationmethod-update.md) его `mobile` до нового номера, а затем удалите `alternateMobile` номер.</span><span class="sxs-lookup"><span data-stu-id="36867-108">If you want to remove a `mobile` number from a user that also has an `alternateMobile` number, first [update](phoneauthenticationmethod-update.md) the `mobile` number to the new number, then delete the `alternateMobile` number.</span></span>
 
-<span data-ttu-id="848bb-109">Если номер телефона является методом проверки подлинности с многофакторной проверкой подлинности (MFA) Azure по умолчанию, он не может быть удален.</span><span class="sxs-lookup"><span data-stu-id="848bb-109">If the phone number is the user's default Azure multi-factor authentication (MFA) authentication method, it cannot be deleted.</span></span> <span data-ttu-id="848bb-110">Попросите пользователя изменить метод проверки подлинности по умолчанию, а затем удалить этот номер.</span><span class="sxs-lookup"><span data-stu-id="848bb-110">Have the user change their default authentication method, and then delete the number.</span></span>
+<span data-ttu-id="36867-109">Если номер телефона является методом проверки подлинности с многофакторной проверкой подлинности (MFA) Azure по умолчанию, он не может быть удален.</span><span class="sxs-lookup"><span data-stu-id="36867-109">If the phone number is the user's default Azure multi-factor authentication (MFA) authentication method, it cannot be deleted.</span></span> <span data-ttu-id="36867-110">Попросите пользователя изменить метод проверки подлинности по умолчанию, а затем удалить этот номер.</span><span class="sxs-lookup"><span data-stu-id="36867-110">Have the user change their default authentication method, and then delete the number.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="848bb-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="848bb-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="36867-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="36867-111">Permissions</span></span>
 
-<span data-ttu-id="848bb-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="848bb-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="36867-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="36867-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="848bb-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="848bb-114">Permission type</span></span>                        | <span data-ttu-id="848bb-115">Разрешения, действующие на себя (по крайней мере для самых привилегированных)</span><span class="sxs-lookup"><span data-stu-id="848bb-115">Permissions acting on self (from least to most privileged)</span></span> | <span data-ttu-id="848bb-116">Разрешения, действующие на других (по крайней мере для самых привилегированных)</span><span class="sxs-lookup"><span data-stu-id="848bb-116">Permissions acting on others (from least to most privileged)</span></span>|
+| <span data-ttu-id="36867-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="36867-114">Permission type</span></span>                        | <span data-ttu-id="36867-115">Разрешения, действующие на себя (по крайней мере для самых привилегированных)</span><span class="sxs-lookup"><span data-stu-id="36867-115">Permissions acting on self (from least to most privileged)</span></span> | <span data-ttu-id="36867-116">Разрешения, действующие на других (по крайней мере для самых привилегированных)</span><span class="sxs-lookup"><span data-stu-id="36867-116">Permissions acting on others (from least to most privileged)</span></span>|
 |:---------------------------------------|:-------------------------|:-----------------|
-| <span data-ttu-id="848bb-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="848bb-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="848bb-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="848bb-118">Not supported.</span></span> | <span data-ttu-id="848bb-119">Усераусентикатионмесод. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="848bb-119">UserAuthenticationMethod.ReadWrite.All</span></span> |
-| <span data-ttu-id="848bb-120">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="848bb-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="848bb-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="848bb-121">Not supported.</span></span> | <span data-ttu-id="848bb-122">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="848bb-122">Not supported.</span></span> |
-| <span data-ttu-id="848bb-123">Для приложений</span><span class="sxs-lookup"><span data-stu-id="848bb-123">Application</span></span>                            | <span data-ttu-id="848bb-124">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="848bb-124">Not supported.</span></span> | <span data-ttu-id="848bb-125">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="848bb-125">Not supported.</span></span> |
+| <span data-ttu-id="36867-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="36867-117">Delegated (work or school account)</span></span>     | <span data-ttu-id="36867-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="36867-118">Not supported.</span></span> | <span data-ttu-id="36867-119">Усераусентикатионмесод. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="36867-119">UserAuthenticationMethod.ReadWrite.All</span></span> |
+| <span data-ttu-id="36867-120">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="36867-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="36867-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="36867-121">Not supported.</span></span> | <span data-ttu-id="36867-122">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="36867-122">Not supported.</span></span> |
+| <span data-ttu-id="36867-123">Для приложений</span><span class="sxs-lookup"><span data-stu-id="36867-123">Application</span></span>                            | <span data-ttu-id="36867-124">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="36867-124">Not supported.</span></span> | <span data-ttu-id="36867-125">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="36867-125">Not supported.</span></span> |
 
-<span data-ttu-id="848bb-126">Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span><span class="sxs-lookup"><span data-stu-id="848bb-126">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
+<span data-ttu-id="36867-126">Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span><span class="sxs-lookup"><span data-stu-id="36867-126">For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):</span></span>
 
-* <span data-ttu-id="848bb-127">Глобальный администратор</span><span class="sxs-lookup"><span data-stu-id="848bb-127">Global admin</span></span>
-* <span data-ttu-id="848bb-128">Привилегированный администратор проверки подлинности</span><span class="sxs-lookup"><span data-stu-id="848bb-128">Privileged authentication admin</span></span>
-* <span data-ttu-id="848bb-129">Администратор проверки подлинности</span><span class="sxs-lookup"><span data-stu-id="848bb-129">Authentication admin</span></span>
+* <span data-ttu-id="36867-127">Глобальный администратор</span><span class="sxs-lookup"><span data-stu-id="36867-127">Global admin</span></span>
+* <span data-ttu-id="36867-128">Привилегированный администратор проверки подлинности</span><span class="sxs-lookup"><span data-stu-id="36867-128">Privileged authentication admin</span></span>
+* <span data-ttu-id="36867-129">Администратор проверки подлинности</span><span class="sxs-lookup"><span data-stu-id="36867-129">Authentication admin</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="848bb-130">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="848bb-130">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="36867-130">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="36867-130">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -51,27 +51,27 @@ DELETE /me/authentication/phoneMethods/{id}
 DELETE /users/{id}/authentication/phoneMethods/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="848bb-131">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="848bb-131">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="36867-131">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="36867-131">Request headers</span></span>
 
-| <span data-ttu-id="848bb-132">Имя</span><span class="sxs-lookup"><span data-stu-id="848bb-132">Name</span></span>          | <span data-ttu-id="848bb-133">Описание</span><span class="sxs-lookup"><span data-stu-id="848bb-133">Description</span></span>   |
+| <span data-ttu-id="36867-132">Имя</span><span class="sxs-lookup"><span data-stu-id="36867-132">Name</span></span>          | <span data-ttu-id="36867-133">Описание</span><span class="sxs-lookup"><span data-stu-id="36867-133">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="848bb-134">Авторизация</span><span class="sxs-lookup"><span data-stu-id="848bb-134">Authorization</span></span> | <span data-ttu-id="848bb-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="848bb-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="36867-134">Авторизация</span><span class="sxs-lookup"><span data-stu-id="36867-134">Authorization</span></span> | <span data-ttu-id="36867-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="36867-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="848bb-137">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="848bb-137">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="36867-137">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="36867-137">Request body</span></span>
 
-<span data-ttu-id="848bb-138">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="848bb-138">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="36867-138">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="36867-138">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="848bb-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="848bb-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="36867-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="36867-139">Response</span></span>
 
-<span data-ttu-id="848bb-p105">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="848bb-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="36867-p105">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="36867-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="848bb-142">Примеры</span><span class="sxs-lookup"><span data-stu-id="848bb-142">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="36867-142">Примеры</span><span class="sxs-lookup"><span data-stu-id="36867-142">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="848bb-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="848bb-143">Request</span></span>
+### <a name="request"></a><span data-ttu-id="36867-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="36867-143">Request</span></span>
 
-<span data-ttu-id="848bb-144">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="848bb-144">The following is an example of the request.</span></span>
+<span data-ttu-id="36867-144">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="36867-144">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="848bb-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="848bb-145">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="36867-145">HTTP</span><span class="sxs-lookup"><span data-stu-id="36867-145">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_phoneauthenticationmethod"
@@ -80,24 +80,24 @@ DELETE /users/{id}/authentication/phoneMethods/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-750b-4051-897c-87b9720928f7
 ```
-# <a name="c"></a>[<span data-ttu-id="848bb-146">C#</span><span class="sxs-lookup"><span data-stu-id="848bb-146">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="36867-146">C#</span><span class="sxs-lookup"><span data-stu-id="36867-146">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-phoneauthenticationmethod-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="848bb-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="848bb-147">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="36867-147">JavaScript</span><span class="sxs-lookup"><span data-stu-id="36867-147">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-phoneauthenticationmethod-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="848bb-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="848bb-148">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="36867-148">Objective-C</span><span class="sxs-lookup"><span data-stu-id="36867-148">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-phoneauthenticationmethod-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="848bb-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="848bb-149">Response</span></span>
+### <a name="response"></a><span data-ttu-id="36867-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="36867-149">Response</span></span>
 
-<span data-ttu-id="848bb-150">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="848bb-150">The following is an example of the response.</span></span>
+<span data-ttu-id="36867-150">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="36867-150">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -117,3 +117,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
