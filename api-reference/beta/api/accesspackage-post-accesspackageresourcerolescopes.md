@@ -5,32 +5,32 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6dbe277f3f6b05bb7df55adf8523d7111f6f17cd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 39ed9ce31cd6a49e3ff1bbda81ff406a335353e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448517"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977945"
 ---
-# <a name="create-accesspackageresourcerolescope"></a><span data-ttu-id="60ca4-103">Создание Акцесспаккажересаурцеролескопе</span><span class="sxs-lookup"><span data-stu-id="60ca4-103">Create accessPackageResourceRoleScope</span></span>
+# <a name="create-accesspackageresourcerolescope"></a><span data-ttu-id="7fdb5-103">Создание Акцесспаккажересаурцеролескопе</span><span class="sxs-lookup"><span data-stu-id="7fdb5-103">Create accessPackageResourceRoleScope</span></span>
 
-<span data-ttu-id="60ca4-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="60ca4-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7fdb5-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7fdb5-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="60ca4-105">Создайте новый [акцесспаккажересаурцеролескопе](../resources/accesspackageresourcerolescope.md) для добавления роли ресурса в пакет Access.</span><span class="sxs-lookup"><span data-stu-id="60ca4-105">Create a new [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) for adding a resource role to an access package.</span></span>  <span data-ttu-id="60ca4-106">Ресурс пакета Access уже должен существовать в каталоге пакетов Access.</span><span class="sxs-lookup"><span data-stu-id="60ca4-106">The access package resource must already exist in the access package catalog.</span></span>  <span data-ttu-id="60ca4-107">Все последующие запросы на назначение пакетов доступа к этому пакету доступа будут включать эту роль ресурса.</span><span class="sxs-lookup"><span data-stu-id="60ca4-107">Any subsequent access package assignment requests to this access package will include this resource role.</span></span>  
+<span data-ttu-id="7fdb5-105">Создайте новый [акцесспаккажересаурцеролескопе](../resources/accesspackageresourcerolescope.md) для добавления роли ресурса в пакет Access.</span><span class="sxs-lookup"><span data-stu-id="7fdb5-105">Create a new [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) for adding a resource role to an access package.</span></span>  <span data-ttu-id="7fdb5-106">Ресурс пакета Access уже должен существовать в каталоге пакетов Access.</span><span class="sxs-lookup"><span data-stu-id="7fdb5-106">The access package resource must already exist in the access package catalog.</span></span>  <span data-ttu-id="7fdb5-107">Все последующие запросы на назначение пакетов доступа к этому пакету доступа будут включать эту роль ресурса.</span><span class="sxs-lookup"><span data-stu-id="7fdb5-107">Any subsequent access package assignment requests to this access package will include this resource role.</span></span>  
 
-## <a name="permissions"></a><span data-ttu-id="60ca4-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="60ca4-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7fdb5-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7fdb5-108">Permissions</span></span>
 
-<span data-ttu-id="60ca4-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="60ca4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7fdb5-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7fdb5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="60ca4-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="60ca4-111">Permission type</span></span>                        | <span data-ttu-id="60ca4-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="60ca4-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="7fdb5-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7fdb5-111">Permission type</span></span>                        | <span data-ttu-id="7fdb5-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7fdb5-112">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="60ca4-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="60ca4-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="60ca4-114">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="60ca4-114">EntitlementManagement.ReadWrite.All</span></span> |
-| <span data-ttu-id="60ca4-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="60ca4-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="60ca4-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="60ca4-116">Not supported.</span></span> |
-| <span data-ttu-id="60ca4-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="60ca4-117">Application</span></span>                            | <span data-ttu-id="60ca4-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="60ca4-118">Not supported.</span></span> |
+| <span data-ttu-id="7fdb5-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7fdb5-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="7fdb5-114">EntitlementManagement.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7fdb5-114">EntitlementManagement.ReadWrite.All</span></span> |
+| <span data-ttu-id="7fdb5-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7fdb5-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7fdb5-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7fdb5-116">Not supported.</span></span> |
+| <span data-ttu-id="7fdb5-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7fdb5-117">Application</span></span>                            | <span data-ttu-id="7fdb5-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7fdb5-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="60ca4-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="60ca4-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7fdb5-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7fdb5-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,28 +38,28 @@ ms.locfileid: "42448517"
 POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackageResourceRoleScopes
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="60ca4-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="60ca4-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7fdb5-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7fdb5-120">Request headers</span></span>
 
-| <span data-ttu-id="60ca4-121">Имя</span><span class="sxs-lookup"><span data-stu-id="60ca4-121">Name</span></span>          | <span data-ttu-id="60ca4-122">Описание</span><span class="sxs-lookup"><span data-stu-id="60ca4-122">Description</span></span>   |
+| <span data-ttu-id="7fdb5-121">Имя</span><span class="sxs-lookup"><span data-stu-id="7fdb5-121">Name</span></span>          | <span data-ttu-id="7fdb5-122">Описание</span><span class="sxs-lookup"><span data-stu-id="7fdb5-122">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="60ca4-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="60ca4-123">Authorization</span></span> | <span data-ttu-id="60ca4-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="60ca4-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="60ca4-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="60ca4-126">Content-Type</span></span>  | <span data-ttu-id="60ca4-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="60ca4-p104">application/json. Required.</span></span>  |
+| <span data-ttu-id="7fdb5-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7fdb5-123">Authorization</span></span> | <span data-ttu-id="7fdb5-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7fdb5-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7fdb5-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7fdb5-126">Content-Type</span></span>  | <span data-ttu-id="7fdb5-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7fdb5-p104">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="60ca4-129">Основной текст запроса</span><span class="sxs-lookup"><span data-stu-id="60ca4-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7fdb5-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7fdb5-129">Request body</span></span>
 
-<span data-ttu-id="60ca4-130">В тексте запроса добавьте представление объекта [акцесспаккажересаурцеролескопе](../resources/accesspackageresourcerolescope.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="60ca4-130">In the request body, supply a JSON representation of an [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) object.</span></span>  <span data-ttu-id="60ca4-131">Включите в объект связи для [акцесспаккажересаурцероле](../resources/accesspackageresourcerole.md) и [акцесспаккажересаурцескопе](../resources/accesspackageresourcescope.md).</span><span class="sxs-lookup"><span data-stu-id="60ca4-131">Include in the object the relationships to an [accessPackageResourceRole](../resources/accesspackageresourcerole.md) and [accessPackageResourceScope](../resources/accesspackageresourcescope.md).</span></span>  
+<span data-ttu-id="7fdb5-130">В тексте запроса добавьте представление объекта [акцесспаккажересаурцеролескопе](../resources/accesspackageresourcerolescope.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7fdb5-130">In the request body, supply a JSON representation of an [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) object.</span></span>  <span data-ttu-id="7fdb5-131">Включите в объект связи для [акцесспаккажересаурцероле](../resources/accesspackageresourcerole.md) и [акцесспаккажересаурцескопе](../resources/accesspackageresourcescope.md).</span><span class="sxs-lookup"><span data-stu-id="7fdb5-131">Include in the object the relationships to an [accessPackageResourceRole](../resources/accesspackageresourcerole.md) and [accessPackageResourceScope](../resources/accesspackageresourcescope.md).</span></span>  
 
-## <a name="response"></a><span data-ttu-id="60ca4-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="60ca4-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7fdb5-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="7fdb5-132">Response</span></span>
 
-<span data-ttu-id="60ca4-133">В случае успешного выполнения этот метод возвращает код ответа серии 200 и новый объект [акцесспаккажересаурцеролескопе](../resources/accesspackageresourcerolescope.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="60ca4-133">If successful, this method returns a 200-series response code and a new [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) object in the response body.</span></span>
+<span data-ttu-id="7fdb5-133">В случае успешного выполнения этот метод возвращает код ответа серии 200 и новый объект [акцесспаккажересаурцеролескопе](../resources/accesspackageresourcerolescope.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="7fdb5-133">If successful, this method returns a 200-series response code and a new [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="60ca4-134">Примеры</span><span class="sxs-lookup"><span data-stu-id="60ca4-134">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="7fdb5-134">Примеры</span><span class="sxs-lookup"><span data-stu-id="7fdb5-134">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="60ca4-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="60ca4-135">Request</span></span>
+### <a name="request"></a><span data-ttu-id="7fdb5-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="7fdb5-135">Request</span></span>
 
-<span data-ttu-id="60ca4-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="60ca4-136">The following is an example of the request.</span></span>
+<span data-ttu-id="7fdb5-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7fdb5-136">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="60ca4-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="60ca4-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7fdb5-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="7fdb5-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageresourcerolescope_from_accesspackage"
@@ -81,26 +81,26 @@ Content-type: application/json
  }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="60ca4-138">C#</span><span class="sxs-lookup"><span data-stu-id="60ca4-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7fdb5-138">C#</span><span class="sxs-lookup"><span data-stu-id="7fdb5-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageresourcerolescope-from-accesspackage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="60ca4-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="60ca4-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7fdb5-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7fdb5-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageresourcerolescope-from-accesspackage-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="60ca4-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="60ca4-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7fdb5-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7fdb5-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageresourcerolescope-from-accesspackage-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="60ca4-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="60ca4-141">Response</span></span>
+### <a name="response"></a><span data-ttu-id="7fdb5-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="7fdb5-141">Response</span></span>
 
-<span data-ttu-id="60ca4-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="60ca4-142">The following is an example of the response.</span></span>
+<span data-ttu-id="7fdb5-142">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="7fdb5-142">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="60ca4-143">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="60ca4-143">**Note:** The response object shown here might be shortened for readability.</span></span>
+> <span data-ttu-id="7fdb5-143">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="7fdb5-143">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -131,3 +131,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
