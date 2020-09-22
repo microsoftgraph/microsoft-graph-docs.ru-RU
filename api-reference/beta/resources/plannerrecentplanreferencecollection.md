@@ -5,30 +5,30 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: f63c49013ba9e8c194c1c831e8e78f87e9b8814c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 529552be4497729824ddfb9fa9e84ea82e8ccd0d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521659"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064019"
 ---
-# <a name="plannerrecentplanreferencecollection-resource-type"></a><span data-ttu-id="a2282-106">Тип ресурса Планнеррецентпланреференцеколлектион</span><span class="sxs-lookup"><span data-stu-id="a2282-106">plannerRecentPlanReferenceCollection resource type</span></span>
+# <a name="plannerrecentplanreferencecollection-resource-type"></a><span data-ttu-id="2828f-106">Тип ресурса Планнеррецентпланреференцеколлектион</span><span class="sxs-lookup"><span data-stu-id="2828f-106">plannerRecentPlanReferenceCollection resource type</span></span>
 
-<span data-ttu-id="a2282-107">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a2282-107">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2828f-107">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2828f-107">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a2282-108">Ресурс **планнеррецентпланреференцеколлектион** представляет коллекцию ссылок на планы, которые были недавно просмотрены пользователем.</span><span class="sxs-lookup"><span data-stu-id="a2282-108">The **plannerRecentPlanReferenceCollection** resource represents the collection of references to plans that were recently viewed by a user.</span></span> <span data-ttu-id="a2282-109">Этот ресурс является открытым типом и является частью объекта [plannerUser](planneruser.md) .</span><span class="sxs-lookup"><span data-stu-id="a2282-109">This resource is an open type and is part of the [plannerUser](planneruser.md) object.</span></span> <span data-ttu-id="a2282-110">Имя свойства — это идентификатор соответствующего плана.</span><span class="sxs-lookup"><span data-stu-id="a2282-110">The property name is the ID of the corresponding plan.</span></span> <span data-ttu-id="a2282-111">Значение в параметре "свойство-значение" является объектом [планнеррецентпланреференце](plannerrecentplanreference.md) .</span><span class="sxs-lookup"><span data-stu-id="a2282-111">The value in the property-value pair is the [plannerRecentPlanReference](plannerrecentplanreference.md) object.</span></span>
-<span data-ttu-id="a2282-112">При добавлении новых ссылок в эту коллекцию самые старые записи будут удаляться автоматически, когда размер коллекции превышает предварительно заданное максимальное значение.</span><span class="sxs-lookup"><span data-stu-id="a2282-112">Adding new references to this collection will automatically remove the oldest entries when the size of the collection exceeds a predetermined maximum value.</span></span>
+<span data-ttu-id="2828f-108">Ресурс **планнеррецентпланреференцеколлектион** представляет коллекцию ссылок на планы, которые были недавно просмотрены пользователем.</span><span class="sxs-lookup"><span data-stu-id="2828f-108">The **plannerRecentPlanReferenceCollection** resource represents the collection of references to plans that were recently viewed by a user.</span></span> <span data-ttu-id="2828f-109">Этот ресурс является открытым типом и является частью объекта [plannerUser](planneruser.md) .</span><span class="sxs-lookup"><span data-stu-id="2828f-109">This resource is an open type and is part of the [plannerUser](planneruser.md) object.</span></span> <span data-ttu-id="2828f-110">Имя свойства — это идентификатор соответствующего плана.</span><span class="sxs-lookup"><span data-stu-id="2828f-110">The property name is the ID of the corresponding plan.</span></span> <span data-ttu-id="2828f-111">Значение в параметре "свойство-значение" является объектом [планнеррецентпланреференце](plannerrecentplanreference.md) .</span><span class="sxs-lookup"><span data-stu-id="2828f-111">The value in the property-value pair is the [plannerRecentPlanReference](plannerrecentplanreference.md) object.</span></span>
+<span data-ttu-id="2828f-112">При добавлении новых ссылок в эту коллекцию самые старые записи будут удаляться автоматически, когда размер коллекции превышает предварительно заданное максимальное значение.</span><span class="sxs-lookup"><span data-stu-id="2828f-112">Adding new references to this collection will automatically remove the oldest entries when the size of the collection exceeds a predetermined maximum value.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="a2282-113">Свойства</span><span class="sxs-lookup"><span data-stu-id="a2282-113">Properties</span></span>
-<span data-ttu-id="a2282-114">Вы можете определить свойства этого открытого типа.</span><span class="sxs-lookup"><span data-stu-id="a2282-114">You can define the properties of this open type.</span></span> <span data-ttu-id="a2282-115">Имена свойств — это `id` значения ресурсов [plannerPlan](plannerplan.md) и их значения должны быть [планнеррецентпланреференце](plannerrecentplanreference.md) объектами.</span><span class="sxs-lookup"><span data-stu-id="a2282-115">The property names are `id` values of [plannerPlan](plannerplan.md) resources and their values must be [plannerRecentPlanReference](plannerrecentplanreference.md) objects.</span></span> <span data-ttu-id="a2282-116">Чтобы удалить элемент из списка "Избранное", присвойте свойству значение `null`.</span><span class="sxs-lookup"><span data-stu-id="a2282-116">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="2828f-113">Свойства</span><span class="sxs-lookup"><span data-stu-id="2828f-113">Properties</span></span>
+<span data-ttu-id="2828f-114">Вы можете определить свойства этого открытого типа.</span><span class="sxs-lookup"><span data-stu-id="2828f-114">You can define the properties of this open type.</span></span> <span data-ttu-id="2828f-115">Имена свойств — это `id` значения ресурсов [plannerPlan](plannerplan.md) и их значения должны быть [планнеррецентпланреференце](plannerrecentplanreference.md) объектами.</span><span class="sxs-lookup"><span data-stu-id="2828f-115">The property names are `id` values of [plannerPlan](plannerplan.md) resources and their values must be [plannerRecentPlanReference](plannerrecentplanreference.md) objects.</span></span> <span data-ttu-id="2828f-116">Чтобы удалить элемент из списка "Избранное", присвойте свойству значение `null` .</span><span class="sxs-lookup"><span data-stu-id="2828f-116">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="a2282-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a2282-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2828f-117">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="2828f-117">JSON representation</span></span>
 
-<span data-ttu-id="a2282-118">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a2282-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2828f-118">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2828f-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -67,3 +67,5 @@ ms.locfileid: "42521659"
   "suppressions": []
 }
 -->
+
+

@@ -1,48 +1,40 @@
 ---
 title: Тип ресурса Чанженотификатионенкриптедконтент
-description: Подписка с данными ресурсов позволяет клиентскому приложению получать уведомления об изменениях, внесенные в данные в Microsoft Graph. Зашифрованное содержимое уведомления об изменении представляет зашифрованные данные, связанные с уведомлением.
+description: Объект Чанженотификатионенкриптедконтент представляет зашифрованные данные, вложенные в уведомление об изменении.
 localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 4ca2230cf3735cb696136f3b3014e8545202ebfe
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: c3d5f576c5259ba69f6fa2194cf52d7834a1f717
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598495"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192163"
 ---
-# <a name="changenotificationencryptedcontent-resource-type"></a><span data-ttu-id="d3d51-104">Тип ресурса Чанженотификатионенкриптедконтент</span><span class="sxs-lookup"><span data-stu-id="d3d51-104">changeNotificationEncryptedContent resource type</span></span>
+# <a name="changenotificationencryptedcontent-resource-type"></a><span data-ttu-id="545f9-103">Тип ресурса Чанженотификатионенкриптедконтент</span><span class="sxs-lookup"><span data-stu-id="545f9-103">changeNotificationEncryptedContent resource type</span></span>
 
-<span data-ttu-id="d3d51-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d3d51-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="545f9-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="545f9-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d3d51-106">Представляет зашифрованные данные, вложенные в уведомление об изменении.</span><span class="sxs-lookup"><span data-stu-id="d3d51-106">Represents the encrypted data attached to a change notification.</span></span>
+<span data-ttu-id="545f9-105">Представляет зашифрованные данные, вложенные в уведомление об изменении.</span><span class="sxs-lookup"><span data-stu-id="545f9-105">Represents the encrypted data attached to a change notification.</span></span>
 
-<span data-ttu-id="d3d51-107">Дополнительные сведения см. в статье [Настройка уведомлений об изменениях, включающих данные ресурсов (Предварительная версия)](/graph/webhooks-with-resource-data.md).</span><span class="sxs-lookup"><span data-stu-id="d3d51-107">For details, see [Set up change notifications that include resource data (preview)](/graph/webhooks-with-resource-data.md).</span></span>
+<span data-ttu-id="545f9-106">Дополнительные сведения см. в статье [Настройка уведомлений об изменениях, включающих данные ресурсов (Предварительная версия)](/graph/webhooks-with-resource-data.md).</span><span class="sxs-lookup"><span data-stu-id="545f9-106">For details, see [Set up change notifications that include resource data (preview)](/graph/webhooks-with-resource-data.md).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="d3d51-108">Методы</span><span class="sxs-lookup"><span data-stu-id="d3d51-108">Methods</span></span>
+## <a name="properties"></a><span data-ttu-id="545f9-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="545f9-107">Properties</span></span>
 
-<span data-ttu-id="d3d51-109">Нет.</span><span class="sxs-lookup"><span data-stu-id="d3d51-109">None.</span></span>
-
-## <a name="properties"></a><span data-ttu-id="d3d51-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="d3d51-110">Properties</span></span>
-
-| <span data-ttu-id="d3d51-111">Свойство</span><span class="sxs-lookup"><span data-stu-id="d3d51-111">Property</span></span> | <span data-ttu-id="d3d51-112">Тип</span><span class="sxs-lookup"><span data-stu-id="d3d51-112">Type</span></span> | <span data-ttu-id="d3d51-113">Описание</span><span class="sxs-lookup"><span data-stu-id="d3d51-113">Description</span></span> |
+| <span data-ttu-id="545f9-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="545f9-108">Property</span></span> | <span data-ttu-id="545f9-109">Тип</span><span class="sxs-lookup"><span data-stu-id="545f9-109">Type</span></span> | <span data-ttu-id="545f9-110">Описание</span><span class="sxs-lookup"><span data-stu-id="545f9-110">Description</span></span> |
 |:---------|:-----|:------------|
-| <span data-ttu-id="d3d51-114">data</span><span class="sxs-lookup"><span data-stu-id="d3d51-114">data</span></span> | <span data-ttu-id="d3d51-115">string</span><span class="sxs-lookup"><span data-stu-id="d3d51-115">string</span></span> | <span data-ttu-id="d3d51-116">Зашифрованные данные в кодировке Base64, которые создают полный респресентед ресурсов как JSON.</span><span class="sxs-lookup"><span data-stu-id="d3d51-116">Base64-encoded encrypted data that produces a full resource respresented as JSON.</span></span> <span data-ttu-id="d3d51-117">Данные зашифрованы с `dataKey` помощью `AES/CBC/PKCS5PADDING` комплекта шифров.</span><span class="sxs-lookup"><span data-stu-id="d3d51-117">The data has been encrypted with the provided `dataKey` using an `AES/CBC/PKCS5PADDING` cipher suite.</span></span> |
-| <span data-ttu-id="d3d51-118">Подпись</span><span class="sxs-lookup"><span data-stu-id="d3d51-118">dataSignature</span></span> | <span data-ttu-id="d3d51-119">string</span><span class="sxs-lookup"><span data-stu-id="d3d51-119">string</span></span> | <span data-ttu-id="d3d51-120">Хэш-код HMAC-SHA256 данных для целей проверки в кодировке Base64.</span><span class="sxs-lookup"><span data-stu-id="d3d51-120">Base64-encoded HMAC-SHA256 hash of the data for validation purposes.</span></span> |
-| <span data-ttu-id="d3d51-121">датакэй</span><span class="sxs-lookup"><span data-stu-id="d3d51-121">dataKey</span></span> | <span data-ttu-id="d3d51-122">string</span><span class="sxs-lookup"><span data-stu-id="d3d51-122">string</span></span> | <span data-ttu-id="d3d51-123">Симметричный ключ в кодировке Base64, созданный Microsoft Graph для шифрования значения данных и создания подписи данных.</span><span class="sxs-lookup"><span data-stu-id="d3d51-123">Base64-encoded symmetric key generated by Microsoft Graph to encrypt the data value and to generate the data signature.</span></span> <span data-ttu-id="d3d51-124">Этот ключ шифруется с помощью открытого ключа сертификата, предоставленного во время подписки.</span><span class="sxs-lookup"><span data-stu-id="d3d51-124">This key is encrypted with the certificate public key that was provided during the subscription.</span></span> <span data-ttu-id="d3d51-125">Его необходимо расшифровать с помощью закрытого ключа сертификата, прежде чем его можно будет использовать для расшифровки данных или проверки подписи.</span><span class="sxs-lookup"><span data-stu-id="d3d51-125">It must be decrypted with the certificate private key before it can be used to decrypt the data or verify the signature.</span></span> <span data-ttu-id="d3d51-126">Этот ключ зашифрован с помощью следующего комплекта шифра: `RSA/ECB/OAEPWithSHA1AndMGF1Padding` .</span><span class="sxs-lookup"><span data-stu-id="d3d51-126">This key has been encrypted with the following cipher suite: `RSA/ECB/OAEPWithSHA1AndMGF1Padding`.</span></span> |
-| <span data-ttu-id="d3d51-127">енкриптионцертификатеид</span><span class="sxs-lookup"><span data-stu-id="d3d51-127">encryptionCertificateId</span></span> | <span data-ttu-id="d3d51-128">string</span><span class="sxs-lookup"><span data-stu-id="d3d51-128">string</span></span> | <span data-ttu-id="d3d51-129">Идентификатор сертификата, используемого для шифрования `dataKey` .</span><span class="sxs-lookup"><span data-stu-id="d3d51-129">ID of the certificate used to encrypt the `dataKey`.</span></span> |
-| <span data-ttu-id="d3d51-130">енкриптионцертификатесумбпринт</span><span class="sxs-lookup"><span data-stu-id="d3d51-130">encryptionCertificateThumbprint</span></span> | <span data-ttu-id="d3d51-131">string</span><span class="sxs-lookup"><span data-stu-id="d3d51-131">string</span></span> | <span data-ttu-id="d3d51-132">Шестнадцатеричное представление отпечатка сертификата, используемого для шифрования `dataKey` .</span><span class="sxs-lookup"><span data-stu-id="d3d51-132">Hexadecimal representation of the thumbprint of the certificate used to encrypt the `dataKey`.</span></span> |
+| <span data-ttu-id="545f9-111">data</span><span class="sxs-lookup"><span data-stu-id="545f9-111">data</span></span> | <span data-ttu-id="545f9-112">string</span><span class="sxs-lookup"><span data-stu-id="545f9-112">string</span></span> | <span data-ttu-id="545f9-113">Зашифрованные данные в кодировке Base64, которые создают полный респресентед ресурсов как JSON.</span><span class="sxs-lookup"><span data-stu-id="545f9-113">Base64-encoded encrypted data that produces a full resource respresented as JSON.</span></span> <span data-ttu-id="545f9-114">Данные зашифрованы с `dataKey` помощью `AES/CBC/PKCS5PADDING` комплекта шифров.</span><span class="sxs-lookup"><span data-stu-id="545f9-114">The data has been encrypted with the provided `dataKey` using an `AES/CBC/PKCS5PADDING` cipher suite.</span></span> |
+| <span data-ttu-id="545f9-115">Подпись</span><span class="sxs-lookup"><span data-stu-id="545f9-115">dataSignature</span></span> | <span data-ttu-id="545f9-116">string</span><span class="sxs-lookup"><span data-stu-id="545f9-116">string</span></span> | <span data-ttu-id="545f9-117">Хэш-код HMAC-SHA256 данных для целей проверки в кодировке Base64.</span><span class="sxs-lookup"><span data-stu-id="545f9-117">Base64-encoded HMAC-SHA256 hash of the data for validation purposes.</span></span> |
+| <span data-ttu-id="545f9-118">датакэй</span><span class="sxs-lookup"><span data-stu-id="545f9-118">dataKey</span></span> | <span data-ttu-id="545f9-119">string</span><span class="sxs-lookup"><span data-stu-id="545f9-119">string</span></span> | <span data-ttu-id="545f9-120">Симметричный ключ в кодировке Base64, созданный Microsoft Graph для шифрования значения данных и создания подписи данных.</span><span class="sxs-lookup"><span data-stu-id="545f9-120">Base64-encoded symmetric key generated by Microsoft Graph to encrypt the data value and to generate the data signature.</span></span> <span data-ttu-id="545f9-121">Этот ключ шифруется с помощью открытого ключа сертификата, предоставленного во время подписки.</span><span class="sxs-lookup"><span data-stu-id="545f9-121">This key is encrypted with the certificate public key that was provided during the subscription.</span></span> <span data-ttu-id="545f9-122">Его необходимо расшифровать с помощью закрытого ключа сертификата, прежде чем его можно будет использовать для расшифровки данных или проверки подписи.</span><span class="sxs-lookup"><span data-stu-id="545f9-122">It must be decrypted with the certificate private key before it can be used to decrypt the data or verify the signature.</span></span> <span data-ttu-id="545f9-123">Этот ключ зашифрован с помощью следующего комплекта шифра: `RSA/ECB/OAEPWithSHA1AndMGF1Padding` .</span><span class="sxs-lookup"><span data-stu-id="545f9-123">This key has been encrypted with the following cipher suite: `RSA/ECB/OAEPWithSHA1AndMGF1Padding`.</span></span> |
+| <span data-ttu-id="545f9-124">енкриптионцертификатеид</span><span class="sxs-lookup"><span data-stu-id="545f9-124">encryptionCertificateId</span></span> | <span data-ttu-id="545f9-125">string</span><span class="sxs-lookup"><span data-stu-id="545f9-125">string</span></span> | <span data-ttu-id="545f9-126">Идентификатор сертификата, используемого для шифрования `dataKey` .</span><span class="sxs-lookup"><span data-stu-id="545f9-126">ID of the certificate used to encrypt the `dataKey`.</span></span> |
+| <span data-ttu-id="545f9-127">енкриптионцертификатесумбпринт</span><span class="sxs-lookup"><span data-stu-id="545f9-127">encryptionCertificateThumbprint</span></span> | <span data-ttu-id="545f9-128">string</span><span class="sxs-lookup"><span data-stu-id="545f9-128">string</span></span> | <span data-ttu-id="545f9-129">Шестнадцатеричное представление отпечатка сертификата, используемого для шифрования `dataKey` .</span><span class="sxs-lookup"><span data-stu-id="545f9-129">Hexadecimal representation of the thumbprint of the certificate used to encrypt the `dataKey`.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="d3d51-133">Связи</span><span class="sxs-lookup"><span data-stu-id="d3d51-133">Relationships</span></span>
+## <a name="json-representation"></a><span data-ttu-id="545f9-130">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="545f9-130">JSON representation</span></span>
 
-<span data-ttu-id="d3d51-134">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="d3d51-134">None.</span></span>
-
-## <a name="json-representation"></a><span data-ttu-id="d3d51-135">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="d3d51-135">JSON representation</span></span>
-
-<span data-ttu-id="d3d51-136">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d3d51-136">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="545f9-131">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="545f9-131">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -74,3 +66,5 @@ ms.locfileid: "46598495"
   "suppressions": []
 }
 -->
+
+
