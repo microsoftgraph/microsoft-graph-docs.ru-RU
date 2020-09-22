@@ -5,19 +5,18 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 230b3179ebbe7a3e9c4d3c7fe647278990192cf5
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 45526c3da75cf148daae85d0b21c0f931f726af6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353786"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095053"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Использование REST API почты Outlook
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account.
-With the [appropriate delegated or application permissions](/graph/permissions-reference), your app can access the mail data of the signed-in user or any user in a tenant. 
+Microsoft Graph позволяет вашему приложению получать авторизованный доступ к данным почты Outlook в личной или корпоративной учетной записи. Имея [соответствующие делегированные разрешения или разрешения приложения](/graph/permissions-reference), приложение может получать доступ к данным почты вошедшего пользователя или любого пользователя в клиенте. 
 
 [!INCLUDE [outlook-mailbox-type-support](../../includes/outlook-mailbox-type-support.md)]
 
@@ -25,8 +24,7 @@ With the [appropriate delegated or application permissions](/graph/permissions-r
 
 Запросы API почты выполняются от имени [пользователя](../resources/user.md), который может определяться свойством пользователя **id** (уникальным GUID), адресом электронной почты или псевдонимом `me`, обозначающим вошедшего пользователя.
 
-Email messages are represented by the [message](../resources/message.md) resource and organized in a [mailFolder](../resources/mailfolder.md).
-Messages and mail folders are identified by their **id** property, obtainable from `GET` operations.
+Сообщения электронной почты представлены ресурсом [message](../resources/message.md) и упорядочены в почтовой папке [mailFolder](../resources/mailfolder.md). Сообщения и почтовые папки определяются свойством **id**, которое можно получить из операций `GET`.
 
 >[!IMPORTANT] 
 > Идентификаторы **message** и **mailfolder** не являются уникальными и неизменными в почтовом ящике. Они могут изменяться, например после копирования или перемещения. Вы можете использовать [неизменяемые идентификаторы](/graph/outlook-immutable-id), чтобы сохранять их, пока сообщение находится в том же почтовом ящике, _за исключением отправки черновика и нескольких других сценариев_. Подробные сведения см. в разделе [жизненный цикл неизменяемых идентификаторов](/graph/outlook-immutable-id#lifetime-of-immutable-ids).
@@ -85,4 +83,6 @@ API почты открывает новые способы взаимодейс
 - Узнайте больше о [методах](../resources/message.md#methods), [свойствах](../resources/message.md#properties) и [отношениях](../resources/message.md#relationships) ресурсов [message](../resources/message.md) и [mailFolder](../resources/mailfolder.md).
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 
-Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+
+

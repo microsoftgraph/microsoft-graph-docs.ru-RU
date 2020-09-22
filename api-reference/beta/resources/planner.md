@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 45dc3ee05f5cee36ac1eecc99aff03f71b93c515
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8acc6d4d7ce6e91912f9fe5cb940967def8e1078
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521830"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094955"
 ---
 # <a name="planner-resource-type"></a>Тип ресурса планировщика
 
@@ -34,14 +34,14 @@ ms.locfileid: "42521830"
 |:---------------|:--------|:----------|
 |id|String| Только для чтения. Идентификатор ресурса **планировщика** .|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |buckets|Коллекция объектов [plannerBucket](plannerbucket.md)| Только для чтения. Допускается значение null. Возвращает коллекцию указанных сегментов|
 |планирует|Коллекция объектов [plannerPlan](plannerplan.md)| Только для чтения. Допускается значение null. Возвращает коллекцию указанных планов|
 |tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускается значение null. Возвращает коллекцию указанных задач|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
@@ -73,3 +73,5 @@ ms.locfileid: "42521830"
   "suppressions": []
 }
 -->
+
+

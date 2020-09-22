@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: bacf2ed499d420006173af8b3616a14b7c487904
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1690eda1f8af30d388a3570d20aa28dd4cd28454
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521820"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094948"
 ---
 # <a name="plannerappliedcategories-resource-type"></a>Тип ресурса Планнерапплиедкатегориес
 
@@ -19,14 +19,14 @@ ms.locfileid: "42521820"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс **апплиедкатегориесколлектион** представляет коллекцию категорий (или меток), которые были применены к задаче. Он является частью объекта [plannerTask](plannertask.md) .
-К задаче может быть применено до 6 категорий. Описания категорий, например `category1`, `category2` и т. д., входят в состав объекта " [сведения о плане](plannerplandetails.md) ". Это открытый тип.
+К задаче может быть применено до 6 категорий. Описания категорий, например `category1` , и `category2` т. д., входят в состав объекта " [сведения о плане](plannerplandetails.md) ". Это открытый тип.
 
 ## <a name="properties"></a>Свойства
-Клиентская возможность может определять свойства открытого типа. `category1`В этом случае клиент должен предоставлять, `category2`, `category3` `category4`, `category5` и/или `category6` как свойства со своими значениями `true` Boolean при применении соответствующих категорий к задаче. Пример показан ниже. Если они не применяются, свойства автоматически удаляются путем присвоения их значений `false` логическому значению. 
+Клиентская возможность может определять свойства открытого типа. В этом случае клиент должен предоставлять `category1` , `category2` ,, `category3` `category4` `category5` и/или `category6` как свойства со своими значениями `true` Boolean при применении соответствующих категорий к задаче. Пример показан ниже. Если они не применяются, свойства автоматически удаляются путем присвоения их значений `false` логическому значению. 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
-Ниже показано представление JSON ресурса.
+Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -42,7 +42,7 @@ ms.locfileid: "42521820"
 }
 ```
 
-Пример. 
+Пример: 
 
 ```json
 {
@@ -64,3 +64,5 @@ ms.locfileid: "42521820"
   "suppressions": []
 }
 -->
+
+

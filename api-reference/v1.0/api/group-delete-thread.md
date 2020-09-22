@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7844c1131c5e0893c4c5806d6c80cb765099ba65
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6af194afb2d341869e622644fe428246599c77fe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461393"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094819"
 ---
 # <a name="delete-conversation-thread"></a>Удаление цепочки беседы
 
@@ -36,10 +36,10 @@ DELETE /groups/{id}/threads/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
@@ -96,3 +96,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

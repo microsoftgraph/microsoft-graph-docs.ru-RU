@@ -3,14 +3,14 @@ title: тип перечисления Манажементаженттипе
 description: Тип агента управления.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 34783f2c586e192d62cdeb0018b82e2df100c958
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 916e41c84b2c5ec740522c19b73f0c598f42184f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466245"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095102"
 ---
 # <a name="managementagenttype-enum-type"></a>тип перечисления Манажементаженттипе
 
@@ -25,8 +25,8 @@ ms.locfileid: "43466245"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|атрибутов|1,1|Управление устройством осуществляется с помощью Exchange Server.|
-|Корпоратив|2|Управление устройством осуществляется с помощью Intune MDM.|
+|атрибутов|1 |Управление устройством осуществляется с помощью Exchange Server.|
+|Корпоратив|2 |Управление устройством осуществляется с помощью Intune MDM.|
 |еасмдм|4|Устройство управляется как в Exchange Server, так и в Intune MDM.|
 |интунеклиент|4 |Управление клиентом Intune.|
 |еасинтунеклиент|5 |Устройство — это EAS и двойное управление клиентом Intune.|
@@ -38,6 +38,9 @@ ms.locfileid: "43466245"
 |гуглеклауддевицеполициконтроллер|64|Управление устройством осуществляется с помощью Клауддпк Google.|
 |microsoft365ManagedMdm|258|Это устройство управляется Microsoft 365 с помощью Intune.|
 |виндовсманажементклаудапи|512|Это устройство управляется Cloud API управления Windows.|
+
+
+
 
 
 

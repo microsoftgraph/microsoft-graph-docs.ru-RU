@@ -3,14 +3,14 @@ title: Тип ресурса iosStoreAppAssignmentSettings
 description: Содержит свойства, используемые при назначении мобильного приложения из магазина iOS группе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 41ebc66736b5a21dc052cd089e3abd05ae00b37b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4a42ce01463f90acac4fbb7130902aa781d1191c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460611"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48095193"
 ---
 # <a name="iosstoreappassignmentsettings-resource-type"></a>Тип ресурса iosStoreAppAssignmentSettings
 
@@ -49,6 +49,9 @@ ms.locfileid: "43460611"
   "uninstallOnDeviceRemoval": true
 }
 ```
+
+
+
 
 
 

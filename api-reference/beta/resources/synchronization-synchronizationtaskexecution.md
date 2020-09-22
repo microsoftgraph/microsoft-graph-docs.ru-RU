@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: befe67baa554cf80cd1e8f3788ca530baf5e9c5c
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 5d777a575290699c2a936902614aa8ef0e8b042d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217131"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094920"
 ---
 # <a name="synchronizationtaskexecution-resource-type"></a>Тип ресурса Синчронизатионтаскексекутион
 
@@ -23,7 +23,7 @@ ms.locfileid: "43217131"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|активитидентифиер           |String |Идентификатор запуска задания.|
+|активитидентифиер           |Строка |Идентификатор запуска задания.|
 |каунтентитлед                |Int64  |Количество обработанных элементов, которые были назначены для этого приложения.|
 |каунтентитледфорпровисионинг |Int64  |Количество обработанных записей, которые были назначены для подготовки.|
 |каунтескровед                |Int64  |Количество условных (ошибочных) записей.|
@@ -38,7 +38,7 @@ ms.locfileid: "43217131"
 |тимебеган                    |DateTimeOffset|Время начала выполнения задания. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |тиминдед                    |DateTimeOffset|Время окончания выполнения задания. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -82,3 +82,5 @@ ms.locfileid: "43217131"
   "suppressions": []
 }
 -->
+
+

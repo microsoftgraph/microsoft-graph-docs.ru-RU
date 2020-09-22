@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c4f1700bc8b6647139e95c5d2ded5bd9edaa5cf7
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: 45f0fffe4490a44a95bddaf2cd3864ca2817a18f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744038"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094773"
 ---
 # <a name="get-conversation"></a>Получение беседы
 
@@ -39,7 +39,7 @@ GET /groups/{id}/conversations/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -114,3 +114,4 @@ Content-length: 644
   "suppressions": [
   ]
 }-->
+

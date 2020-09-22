@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 86c4ec4e419fb9305c0a11ba4443e991ed062020
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 9c1ff7a6afc33cb9907533e33f02d275af79a04b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155112"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094794"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -320,3 +320,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
