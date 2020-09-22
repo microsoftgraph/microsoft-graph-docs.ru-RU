@@ -5,32 +5,32 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 62ce735d5719ef05c5f96de546adcd5518a72786
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 45d844329688e663c27ef5ecdf94282312baa53d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521231"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055178"
 ---
-# <a name="recordinginfo-resource-type"></a><span data-ttu-id="f7f17-103">Тип ресурса Рекордингинфо</span><span class="sxs-lookup"><span data-stu-id="f7f17-103">recordingInfo resource type</span></span>
+# <a name="recordinginfo-resource-type"></a><span data-ttu-id="f2956-103">Тип ресурса Рекордингинфо</span><span class="sxs-lookup"><span data-stu-id="f2956-103">recordingInfo resource type</span></span>
 
-<span data-ttu-id="f7f17-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f7f17-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f2956-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f2956-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f7f17-105">Сведения о записи для участника.</span><span class="sxs-lookup"><span data-stu-id="f7f17-105">Recording information for a participant.</span></span>
+<span data-ttu-id="f2956-105">Сведения о записи для участника.</span><span class="sxs-lookup"><span data-stu-id="f2956-105">Recording information for a participant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f7f17-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="f7f17-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f2956-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="f2956-106">Properties</span></span>
 
-| <span data-ttu-id="f7f17-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="f7f17-107">Property</span></span>        | <span data-ttu-id="f7f17-108">Тип</span><span class="sxs-lookup"><span data-stu-id="f7f17-108">Type</span></span>    | <span data-ttu-id="f7f17-109">Описание</span><span class="sxs-lookup"><span data-stu-id="f7f17-109">Description</span></span>|
+| <span data-ttu-id="f2956-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="f2956-107">Property</span></span>        | <span data-ttu-id="f2956-108">Тип</span><span class="sxs-lookup"><span data-stu-id="f2956-108">Type</span></span>    | <span data-ttu-id="f2956-109">Описание</span><span class="sxs-lookup"><span data-stu-id="f2956-109">Description</span></span>|
 |:----------------|:--------|:----------|
-| <span data-ttu-id="f7f17-110">initiatedBy</span><span class="sxs-lookup"><span data-stu-id="f7f17-110">initiatedBy</span></span>     | [<span data-ttu-id="f7f17-111">participantInfo</span><span class="sxs-lookup"><span data-stu-id="f7f17-111">participantInfo</span></span>](participantinfo.md) | <span data-ttu-id="f7f17-112">Участник, который инициировал запись.</span><span class="sxs-lookup"><span data-stu-id="f7f17-112">The participant who initiated the recording.</span></span> |
-| <span data-ttu-id="f7f17-113">рекордингстатус</span><span class="sxs-lookup"><span data-stu-id="f7f17-113">recordingStatus</span></span> | <span data-ttu-id="f7f17-114">String</span><span class="sxs-lookup"><span data-stu-id="f7f17-114">String</span></span> | <span data-ttu-id="f7f17-115">`unknown`Возможные значения: `notRecording`,, `recording`, или. `failed`</span><span class="sxs-lookup"><span data-stu-id="f7f17-115">Possible values are: `unknown`, `notRecording`, `recording`, or `failed`.</span></span> |
-| <span data-ttu-id="f7f17-116">initiator</span><span class="sxs-lookup"><span data-stu-id="f7f17-116">initiator</span></span> | [<span data-ttu-id="f7f17-117">identitySet</span><span class="sxs-lookup"><span data-stu-id="f7f17-117">identitySet</span></span>](identitySet.md) | <span data-ttu-id="f7f17-118">Идентификаторы инициатора записи.</span><span class="sxs-lookup"><span data-stu-id="f7f17-118">The identities of recording initiator.</span></span> |
+| <span data-ttu-id="f2956-110">initiatedBy</span><span class="sxs-lookup"><span data-stu-id="f2956-110">initiatedBy</span></span>     | [<span data-ttu-id="f2956-111">participantInfo</span><span class="sxs-lookup"><span data-stu-id="f2956-111">participantInfo</span></span>](participantinfo.md) | <span data-ttu-id="f2956-112">Участник, который инициировал запись.</span><span class="sxs-lookup"><span data-stu-id="f2956-112">The participant who initiated the recording.</span></span> |
+| <span data-ttu-id="f2956-113">рекордингстатус</span><span class="sxs-lookup"><span data-stu-id="f2956-113">recordingStatus</span></span> | <span data-ttu-id="f2956-114">String</span><span class="sxs-lookup"><span data-stu-id="f2956-114">String</span></span> | <span data-ttu-id="f2956-115">Возможные значения: `unknown` , `notRecording` , `recording` , или `failed` .</span><span class="sxs-lookup"><span data-stu-id="f2956-115">Possible values are: `unknown`, `notRecording`, `recording`, or `failed`.</span></span> |
+| <span data-ttu-id="f2956-116">initiator</span><span class="sxs-lookup"><span data-stu-id="f2956-116">initiator</span></span> | [<span data-ttu-id="f2956-117">identitySet</span><span class="sxs-lookup"><span data-stu-id="f2956-117">identitySet</span></span>](identitySet.md) | <span data-ttu-id="f2956-118">Идентификаторы инициатора записи.</span><span class="sxs-lookup"><span data-stu-id="f2956-118">The identities of recording initiator.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="f7f17-119">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f7f17-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f2956-119">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="f2956-119">JSON representation</span></span>
 
-<span data-ttu-id="f7f17-120">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f7f17-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f2956-120">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f2956-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -59,3 +59,5 @@ ms.locfileid: "42521231"
   "suppressions": []
 }
 -->
+
+
