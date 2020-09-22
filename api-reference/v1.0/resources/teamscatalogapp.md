@@ -5,15 +5,16 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e2dc3c0d6d5a77d354076e218e1bdcd4900bfe37
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 328e241462e6829975aa57cdcd609f43e9bbee9c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446844"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009095"
 ---
-# <a name="teamscatalogapp-resource-type"></a><span data-ttu-id="df21b-103">Тип ресурса Теамскаталогапп</span><span class="sxs-lookup"><span data-stu-id="df21b-103">teamsCatalogApp resource type</span></span>
+# <a name="teamscatalogapp-resource-type"></a><span data-ttu-id="23b8e-103">Тип ресурса Теамскаталогапп</span><span class="sxs-lookup"><span data-stu-id="23b8e-103">teamsCatalogApp resource type</span></span>
 
-<span data-ttu-id="df21b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="df21b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="23b8e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="23b8e-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="df21b-105">обратитесь к разделу [teamsApp](teamsapp.md).</span><span class="sxs-lookup"><span data-stu-id="df21b-105">see [teamsApp](teamsapp.md).</span></span>
+<span data-ttu-id="23b8e-105">обратитесь к разделу [teamsApp](teamsapp.md).</span><span class="sxs-lookup"><span data-stu-id="23b8e-105">see [teamsApp](teamsapp.md).</span></span>
+

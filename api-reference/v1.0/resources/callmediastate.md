@@ -5,29 +5,29 @@ author: ananmishr
 ms.prod: cloud-communications
 localization_priority: Normal
 doc_type: resourcePageType
-ms.openlocfilehash: 3bf6b0e2387ac658ad506e3b4ea226a9a8f66e6d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 24dde1de6248413a7fe7753492b40995f994e66d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531961"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009375"
 ---
-# <a name="callmediastate-resource-type"></a><span data-ttu-id="d83cc-103">Тип ресурса Каллмедиастате</span><span class="sxs-lookup"><span data-stu-id="d83cc-103">callMediaState resource type</span></span>
+# <a name="callmediastate-resource-type"></a><span data-ttu-id="d26fc-103">Тип ресурса Каллмедиастате</span><span class="sxs-lookup"><span data-stu-id="d26fc-103">callMediaState resource type</span></span>
 
-<span data-ttu-id="d83cc-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d83cc-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d26fc-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d26fc-104">Namespace: microsoft.graph</span></span>
 
 
-<span data-ttu-id="d83cc-105">Представляет состояние мультимедиа для [вызова](call.md).</span><span class="sxs-lookup"><span data-stu-id="d83cc-105">Represents the media state for a [call](call.md).</span></span>
+<span data-ttu-id="d26fc-105">Представляет состояние мультимедиа для [вызова](call.md).</span><span class="sxs-lookup"><span data-stu-id="d26fc-105">Represents the media state for a [call](call.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d83cc-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="d83cc-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d26fc-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="d26fc-106">Properties</span></span>
 
-| <span data-ttu-id="d83cc-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="d83cc-107">Property</span></span>            | <span data-ttu-id="d83cc-108">Тип</span><span class="sxs-lookup"><span data-stu-id="d83cc-108">Type</span></span>    | <span data-ttu-id="d83cc-109">Описание</span><span class="sxs-lookup"><span data-stu-id="d83cc-109">Description</span></span>                                                                    |
+| <span data-ttu-id="d26fc-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="d26fc-107">Property</span></span>            | <span data-ttu-id="d26fc-108">Тип</span><span class="sxs-lookup"><span data-stu-id="d26fc-108">Type</span></span>    | <span data-ttu-id="d26fc-109">Описание</span><span class="sxs-lookup"><span data-stu-id="d26fc-109">Description</span></span>                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| <span data-ttu-id="d83cc-110">audio</span><span class="sxs-lookup"><span data-stu-id="d83cc-110">audio</span></span>           | <span data-ttu-id="d83cc-111">String</span><span class="sxs-lookup"><span data-stu-id="d83cc-111">String</span></span>  | <span data-ttu-id="d83cc-112">Состояние звукового носителя.</span><span class="sxs-lookup"><span data-stu-id="d83cc-112">The audio media state.</span></span> <span data-ttu-id="d83cc-113">Возможные значения: `active`, `inactive`.</span><span class="sxs-lookup"><span data-stu-id="d83cc-113">Possible values are: `active`, `inactive`.</span></span> |
+| <span data-ttu-id="d26fc-110">audio</span><span class="sxs-lookup"><span data-stu-id="d26fc-110">audio</span></span>           | <span data-ttu-id="d26fc-111">String</span><span class="sxs-lookup"><span data-stu-id="d26fc-111">String</span></span>  | <span data-ttu-id="d26fc-112">Состояние звукового носителя.</span><span class="sxs-lookup"><span data-stu-id="d26fc-112">The audio media state.</span></span> <span data-ttu-id="d26fc-113">Возможные значения: `active`, `inactive`.</span><span class="sxs-lookup"><span data-stu-id="d26fc-113">Possible values are: `active`, `inactive`.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="d83cc-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d83cc-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d26fc-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d26fc-114">JSON representation</span></span>
 
-<span data-ttu-id="d83cc-115">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d83cc-115">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d26fc-115">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d26fc-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -51,3 +51,4 @@ ms.locfileid: "42531961"
   "section": "documentation",
   "tocPath": ""
 }-->
+

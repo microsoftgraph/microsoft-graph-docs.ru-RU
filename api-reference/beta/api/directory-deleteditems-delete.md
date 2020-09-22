@@ -5,73 +5,73 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2ef89074d46dc81eb8cf0ad7e9b9b6eb5ccb4895
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 23097624b40c9b36b9cea0ff18a1e00ab5eece78
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44287789"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009039"
 ---
-# <a name="permanently-delete-item"></a><span data-ttu-id="e6094-103">Удаление элемента без возможности восстановления</span><span class="sxs-lookup"><span data-stu-id="e6094-103">Permanently delete item</span></span>
+# <a name="permanently-delete-item"></a><span data-ttu-id="4e500-103">Удаление элемента без возможности восстановления</span><span class="sxs-lookup"><span data-stu-id="4e500-103">Permanently delete item</span></span>
 
-<span data-ttu-id="e6094-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e6094-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4e500-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4e500-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e6094-105">Окончательное удаление элемента из [удаленных элементов](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="e6094-105">Permanently delete an item from [deleted items](../resources/directory.md).</span></span>
+<span data-ttu-id="4e500-105">Окончательное удаление элемента из [удаленных элементов](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="4e500-105">Permanently delete an item from [deleted items](../resources/directory.md).</span></span>
 
-<span data-ttu-id="e6094-106">В настоящее время функции удаленных элементов поддерживаются только для ресурсов [приложения](../resources/application.md), [групп](../resources/group.md) и [пользователей](../resources/user.md) .</span><span class="sxs-lookup"><span data-stu-id="e6094-106">Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="e6094-107">Вы можете окончательно удалить элемент из папки "Удаленные".</span><span class="sxs-lookup"><span data-stu-id="e6094-107">You can permanently delete an item from deleted items.</span></span> <span data-ttu-id="e6094-108">После окончательного удаления элемент **невозможно** восстановить.</span><span class="sxs-lookup"><span data-stu-id="e6094-108">But, once an item is permanently deleted, it **cannot** be restored.</span></span>
+<span data-ttu-id="4e500-106">В настоящее время функции удаленных элементов поддерживаются только для ресурсов [приложения](../resources/application.md), [групп](../resources/group.md) и [пользователей](../resources/user.md) .</span><span class="sxs-lookup"><span data-stu-id="4e500-106">Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="4e500-107">Вы можете окончательно удалить элемент из папки "Удаленные".</span><span class="sxs-lookup"><span data-stu-id="4e500-107">You can permanently delete an item from deleted items.</span></span> <span data-ttu-id="4e500-108">После окончательного удаления элемент **невозможно** восстановить.</span><span class="sxs-lookup"><span data-stu-id="4e500-108">But, once an item is permanently deleted, it **cannot** be restored.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e6094-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e6094-109">Permissions</span></span>
-<span data-ttu-id="e6094-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e6094-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="4e500-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4e500-109">Permissions</span></span>
+<span data-ttu-id="4e500-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4e500-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="e6094-112">Для приложений:</span><span class="sxs-lookup"><span data-stu-id="e6094-112">For applications:</span></span>
+<span data-ttu-id="4e500-112">Для приложений:</span><span class="sxs-lookup"><span data-stu-id="4e500-112">For applications:</span></span>
 
-|<span data-ttu-id="e6094-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e6094-113">Permission type</span></span>      | <span data-ttu-id="e6094-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e6094-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4e500-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4e500-113">Permission type</span></span>      | <span data-ttu-id="4e500-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4e500-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e6094-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e6094-115">Delegated (work or school account)</span></span> | <span data-ttu-id="e6094-116">Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="e6094-116">Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="e6094-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e6094-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e6094-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e6094-118">Not supported.</span></span>    |
-|<span data-ttu-id="e6094-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e6094-119">Application</span></span> | <span data-ttu-id="e6094-120">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e6094-120">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
+|<span data-ttu-id="4e500-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4e500-115">Delegated (work or school account)</span></span> | <span data-ttu-id="4e500-116">Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="4e500-116">Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="4e500-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4e500-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4e500-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4e500-118">Not supported.</span></span>    |
+|<span data-ttu-id="4e500-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4e500-119">Application</span></span> | <span data-ttu-id="4e500-120">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4e500-120">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
 
-<span data-ttu-id="e6094-121">Для пользователей:</span><span class="sxs-lookup"><span data-stu-id="e6094-121">For users:</span></span>
+<span data-ttu-id="4e500-121">Для пользователей:</span><span class="sxs-lookup"><span data-stu-id="4e500-121">For users:</span></span>
 
-|<span data-ttu-id="e6094-122">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e6094-122">Permission type</span></span>      | <span data-ttu-id="e6094-123">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e6094-123">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4e500-122">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4e500-122">Permission type</span></span>      | <span data-ttu-id="4e500-123">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4e500-123">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e6094-124">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e6094-124">Delegated (work or school account)</span></span> | <span data-ttu-id="e6094-125">User.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="e6094-125">User.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="e6094-126">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e6094-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e6094-127">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e6094-127">Not supported.</span></span> |
-|<span data-ttu-id="e6094-128">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e6094-128">Application</span></span> | <span data-ttu-id="e6094-129">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e6094-129">User.ReadWrite.All</span></span> |
+|<span data-ttu-id="4e500-124">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4e500-124">Delegated (work or school account)</span></span> | <span data-ttu-id="4e500-125">User.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="4e500-125">User.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="4e500-126">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4e500-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4e500-127">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4e500-127">Not supported.</span></span> |
+|<span data-ttu-id="4e500-128">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4e500-128">Application</span></span> | <span data-ttu-id="4e500-129">User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4e500-129">User.ReadWrite.All</span></span> |
 
-<span data-ttu-id="e6094-130">Для групп:</span><span class="sxs-lookup"><span data-stu-id="e6094-130">For groups:</span></span>
+<span data-ttu-id="4e500-130">Для групп:</span><span class="sxs-lookup"><span data-stu-id="4e500-130">For groups:</span></span>
 
-|<span data-ttu-id="e6094-131">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e6094-131">Permission type</span></span>      | <span data-ttu-id="e6094-132">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e6094-132">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4e500-131">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4e500-131">Permission type</span></span>      | <span data-ttu-id="4e500-132">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4e500-132">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e6094-133">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e6094-133">Delegated (work or school account)</span></span> | <span data-ttu-id="e6094-134">Group.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="e6094-134">Group.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-|<span data-ttu-id="e6094-135">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e6094-135">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e6094-136">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e6094-136">Not supported.</span></span>    |
-|<span data-ttu-id="e6094-137">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e6094-137">Application</span></span> | <span data-ttu-id="e6094-138">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e6094-138">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="4e500-133">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4e500-133">Delegated (work or school account)</span></span> | <span data-ttu-id="4e500-134">Group.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="4e500-134">Group.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+|<span data-ttu-id="4e500-135">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4e500-135">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4e500-136">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4e500-136">Not supported.</span></span>    |
+|<span data-ttu-id="4e500-137">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4e500-137">Application</span></span> | <span data-ttu-id="4e500-138">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4e500-138">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e6094-139">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e6094-139">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4e500-139">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4e500-139">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /directory/deleteditems/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="e6094-140">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e6094-140">Request headers</span></span>
-| <span data-ttu-id="e6094-141">Имя</span><span class="sxs-lookup"><span data-stu-id="e6094-141">Name</span></span>       | <span data-ttu-id="e6094-142">Описание</span><span class="sxs-lookup"><span data-stu-id="e6094-142">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4e500-140">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4e500-140">Request headers</span></span>
+| <span data-ttu-id="4e500-141">Имя</span><span class="sxs-lookup"><span data-stu-id="4e500-141">Name</span></span>       | <span data-ttu-id="4e500-142">Описание</span><span class="sxs-lookup"><span data-stu-id="4e500-142">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="e6094-143">Authorization</span><span class="sxs-lookup"><span data-stu-id="e6094-143">Authorization</span></span>  | <span data-ttu-id="e6094-144">Bearer &lt;code&gt; *Обязательный*.</span><span class="sxs-lookup"><span data-stu-id="e6094-144">Bearer &lt;code&gt; *Required*</span></span>|
-| <span data-ttu-id="e6094-145">Accept</span><span class="sxs-lookup"><span data-stu-id="e6094-145">Accept</span></span>  | <span data-ttu-id="e6094-146">application/json</span><span class="sxs-lookup"><span data-stu-id="e6094-146">application/json</span></span> |
+| <span data-ttu-id="4e500-143">Authorization</span><span class="sxs-lookup"><span data-stu-id="4e500-143">Authorization</span></span>  | <span data-ttu-id="4e500-144">Bearer &lt;code&gt; *Обязательный*.</span><span class="sxs-lookup"><span data-stu-id="4e500-144">Bearer &lt;code&gt; *Required*</span></span>|
+| <span data-ttu-id="4e500-145">Accept</span><span class="sxs-lookup"><span data-stu-id="4e500-145">Accept</span></span>  | <span data-ttu-id="4e500-146">application/json</span><span class="sxs-lookup"><span data-stu-id="4e500-146">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e6094-147">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e6094-147">Request body</span></span>
-<span data-ttu-id="e6094-148">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e6094-148">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4e500-147">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="4e500-147">Request body</span></span>
+<span data-ttu-id="4e500-148">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="4e500-148">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e6094-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="e6094-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4e500-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="4e500-149">Response</span></span>
 
-<span data-ttu-id="e6094-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="e6094-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="4e500-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="4e500-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e6094-152">Пример</span><span class="sxs-lookup"><span data-stu-id="e6094-152">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e6094-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="e6094-153">Request</span></span>
+## <a name="example"></a><span data-ttu-id="4e500-152">Пример</span><span class="sxs-lookup"><span data-stu-id="4e500-152">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="4e500-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="4e500-153">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="e6094-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="e6094-154">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="4e500-154">HTTP</span><span class="sxs-lookup"><span data-stu-id="4e500-154">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_directory"
@@ -79,22 +79,22 @@ DELETE /directory/deleteditems/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
 ```
-# <a name="c"></a>[<span data-ttu-id="e6094-155">C#</span><span class="sxs-lookup"><span data-stu-id="e6094-155">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="4e500-155">C#</span><span class="sxs-lookup"><span data-stu-id="4e500-155">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e6094-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e6094-156">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="4e500-156">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4e500-156">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e6094-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e6094-157">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="4e500-157">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4e500-157">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-directory-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="e6094-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="e6094-158">Response</span></span>
-<span data-ttu-id="e6094-p104">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e6094-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="4e500-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="4e500-158">Response</span></span>
+<span data-ttu-id="4e500-p104">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="4e500-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -116,3 +116,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

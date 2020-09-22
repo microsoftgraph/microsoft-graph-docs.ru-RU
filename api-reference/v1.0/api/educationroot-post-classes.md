@@ -5,51 +5,51 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 56ca90f828d5b7b14c2761b5a73983268b12b5e7
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 9126f75050ad2b9f8554a0cebcf330ffada54de9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353534"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009753"
 ---
-# <a name="create-educationclass"></a><span data-ttu-id="cdb8a-105">Создание educationClass</span><span class="sxs-lookup"><span data-stu-id="cdb8a-105">Create educationClass</span></span>
+# <a name="create-educationclass"></a><span data-ttu-id="29ea3-105">Создание educationClass</span><span class="sxs-lookup"><span data-stu-id="29ea3-105">Create educationClass</span></span>
 
-<span data-ttu-id="cdb8a-106">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cdb8a-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="29ea3-106">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="29ea3-106">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="cdb8a-107">Создание курса.</span><span class="sxs-lookup"><span data-stu-id="cdb8a-107">Create a new class.</span></span> <span data-ttu-id="cdb8a-108">При этом будет также создана универсальная группа.</span><span class="sxs-lookup"><span data-stu-id="cdb8a-108">This will also create a universal group.</span></span> <span data-ttu-id="cdb8a-109">При использовании этого API для создания класса в группу добавляются специальные свойства, в результате чего в Microsoft Teams добавляются такие функции, как назначения и специальная обработка в Microsoft Teams при создании Teams с помощью группы.</span><span class="sxs-lookup"><span data-stu-id="cdb8a-109">When you use this API to create a class, it will add special properties to the group, which will add features such as assignments and special handling within Microsoft Teams when teams are created using the group.</span></span> <span data-ttu-id="cdb8a-110">Обратите внимание, что этот API создает только универсальную группу и не создает команду.</span><span class="sxs-lookup"><span data-stu-id="cdb8a-110">Please note that this API only creates the universal group and does not create a team.</span></span> <span data-ttu-id="cdb8a-111">Microsoft Teams предоставляет пользователям интерфейс для преподавателей, позволяющий создавать команды для собственных классов, используя группы, созданные этим API.</span><span class="sxs-lookup"><span data-stu-id="cdb8a-111">Microsoft Teams provides a user interface for teachers to create teams for their own classes using the groups created by this API.</span></span>
+<span data-ttu-id="29ea3-107">Создание курса.</span><span class="sxs-lookup"><span data-stu-id="29ea3-107">Create a new class.</span></span> <span data-ttu-id="29ea3-108">При этом будет также создана универсальная группа.</span><span class="sxs-lookup"><span data-stu-id="29ea3-108">This will also create a universal group.</span></span> <span data-ttu-id="29ea3-109">При использовании этого API для создания класса в группу добавляются специальные свойства, в результате чего в Microsoft Teams добавляются такие функции, как назначения и специальная обработка в Microsoft Teams при создании Teams с помощью группы.</span><span class="sxs-lookup"><span data-stu-id="29ea3-109">When you use this API to create a class, it will add special properties to the group, which will add features such as assignments and special handling within Microsoft Teams when teams are created using the group.</span></span> <span data-ttu-id="29ea3-110">Обратите внимание, что этот API создает только универсальную группу и не создает команду.</span><span class="sxs-lookup"><span data-stu-id="29ea3-110">Please note that this API only creates the universal group and does not create a team.</span></span> <span data-ttu-id="29ea3-111">Microsoft Teams предоставляет пользователям интерфейс для преподавателей, позволяющий создавать команды для собственных классов, используя группы, созданные этим API.</span><span class="sxs-lookup"><span data-stu-id="29ea3-111">Microsoft Teams provides a user interface for teachers to create teams for their own classes using the groups created by this API.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cdb8a-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cdb8a-112">Permissions</span></span>
-<span data-ttu-id="cdb8a-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cdb8a-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="29ea3-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="29ea3-112">Permissions</span></span>
+<span data-ttu-id="29ea3-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="29ea3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cdb8a-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cdb8a-115">Permission type</span></span>      | <span data-ttu-id="cdb8a-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cdb8a-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="29ea3-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="29ea3-115">Permission type</span></span>      | <span data-ttu-id="29ea3-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="29ea3-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cdb8a-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cdb8a-117">Delegated (work or school account)</span></span> |  <span data-ttu-id="cdb8a-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cdb8a-118">Not supported.</span></span>  |
-|<span data-ttu-id="cdb8a-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cdb8a-119">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="cdb8a-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cdb8a-120">Not supported.</span></span>  |
-|<span data-ttu-id="cdb8a-121">Сервер приложений</span><span class="sxs-lookup"><span data-stu-id="cdb8a-121">Application</span></span> | <span data-ttu-id="cdb8a-122">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cdb8a-122">EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="29ea3-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="29ea3-117">Delegated (work or school account)</span></span> |  <span data-ttu-id="29ea3-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="29ea3-118">Not supported.</span></span>  |
+|<span data-ttu-id="29ea3-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="29ea3-119">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="29ea3-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="29ea3-120">Not supported.</span></span>  |
+|<span data-ttu-id="29ea3-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="29ea3-121">Application</span></span> | <span data-ttu-id="29ea3-122">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29ea3-122">EduRoster.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="cdb8a-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cdb8a-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="29ea3-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="29ea3-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes
 ```
-## <a name="request-headers"></a><span data-ttu-id="cdb8a-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cdb8a-124">Request headers</span></span>
-| <span data-ttu-id="cdb8a-125">Заголовок</span><span class="sxs-lookup"><span data-stu-id="cdb8a-125">Header</span></span>       | <span data-ttu-id="cdb8a-126">Значение</span><span class="sxs-lookup"><span data-stu-id="cdb8a-126">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="29ea3-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="29ea3-124">Request headers</span></span>
+| <span data-ttu-id="29ea3-125">Заголовок</span><span class="sxs-lookup"><span data-stu-id="29ea3-125">Header</span></span>       | <span data-ttu-id="29ea3-126">Значение</span><span class="sxs-lookup"><span data-stu-id="29ea3-126">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="cdb8a-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cdb8a-127">Authorization</span></span>  | <span data-ttu-id="cdb8a-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cdb8a-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="cdb8a-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cdb8a-130">Content-Type</span></span>  | <span data-ttu-id="cdb8a-131">application/json</span><span class="sxs-lookup"><span data-stu-id="cdb8a-131">application/json</span></span>  |
+| <span data-ttu-id="29ea3-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="29ea3-127">Authorization</span></span>  | <span data-ttu-id="29ea3-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="29ea3-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="29ea3-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="29ea3-130">Content-Type</span></span>  | <span data-ttu-id="29ea3-131">application/json</span><span class="sxs-lookup"><span data-stu-id="29ea3-131">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="cdb8a-132">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="cdb8a-132">Request body</span></span>
-<span data-ttu-id="cdb8a-133">В теле запроса предоставьте описание объекта [educationClass](../resources/educationclass.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cdb8a-133">In the request body, supply a JSON representation of an [educationClass](../resources/educationclass.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="29ea3-132">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="29ea3-132">Request body</span></span>
+<span data-ttu-id="29ea3-133">В теле запроса предоставьте описание объекта [educationClass](../resources/educationclass.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="29ea3-133">In the request body, supply a JSON representation of an [educationClass](../resources/educationclass.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="cdb8a-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="cdb8a-134">Response</span></span>
-<span data-ttu-id="cdb8a-135">При успешном выполнении этот метод возвратит код отклика `201 Created` и объект [educationClass](../resources/educationclass.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="cdb8a-135">If successful, this method returns a `201 Created` response code and an [educationClass](../resources/educationclass.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="29ea3-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="29ea3-134">Response</span></span>
+<span data-ttu-id="29ea3-135">При успешном выполнении этот метод возвратит код отклика `201 Created` и объект [educationClass](../resources/educationclass.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="29ea3-135">If successful, this method returns a `201 Created` response code and an [educationClass](../resources/educationclass.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cdb8a-136">Пример</span><span class="sxs-lookup"><span data-stu-id="cdb8a-136">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="cdb8a-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="cdb8a-137">Request</span></span>
-<span data-ttu-id="cdb8a-138">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cdb8a-138">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="29ea3-136">Пример</span><span class="sxs-lookup"><span data-stu-id="29ea3-136">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="29ea3-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="29ea3-137">Request</span></span>
+<span data-ttu-id="29ea3-138">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="29ea3-138">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="cdb8a-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="cdb8a-139">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="29ea3-139">HTTP</span><span class="sxs-lookup"><span data-stu-id="29ea3-139">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_educationclass_from_educationroot"
@@ -69,29 +69,29 @@ Content-length: 224
   "mailNickname": "fineartschool.net"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="cdb8a-140">C#</span><span class="sxs-lookup"><span data-stu-id="cdb8a-140">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="29ea3-140">C#</span><span class="sxs-lookup"><span data-stu-id="29ea3-140">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationclass-from-educationroot-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="cdb8a-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cdb8a-141">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="29ea3-141">JavaScript</span><span class="sxs-lookup"><span data-stu-id="29ea3-141">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-educationclass-from-educationroot-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="cdb8a-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cdb8a-142">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="29ea3-142">Objective-C</span><span class="sxs-lookup"><span data-stu-id="29ea3-142">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-educationclass-from-educationroot-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="cdb8a-143">Java</span><span class="sxs-lookup"><span data-stu-id="cdb8a-143">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="29ea3-143">Java</span><span class="sxs-lookup"><span data-stu-id="29ea3-143">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-educationclass-from-educationroot-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="cdb8a-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="cdb8a-144">Response</span></span>
-<span data-ttu-id="cdb8a-145">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="cdb8a-145">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="29ea3-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="29ea3-144">Response</span></span>
+<span data-ttu-id="29ea3-145">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="29ea3-145">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="cdb8a-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="cdb8a-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="29ea3-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="29ea3-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -132,3 +132,4 @@ Content-length: 224
   "suppressions": [
   ]
 }-->
+
