@@ -3,14 +3,14 @@ title: Тип ресурса Девицеконфигуратионусерст�
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 14986bbfa19e8ccc4ae8853ac1c95233ba528727
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f2a8896fc5bedc570cf80944947c8ffafdf8bbbb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469323"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061961"
 ---
 # <a name="deviceconfigurationuserstatesummary-resource-type"></a>Тип ресурса Девицеконфигуратионусерстатесуммари
 
@@ -40,7 +40,7 @@ ms.locfileid: "43469323"
 |errorUserCount|Int32|Количество пользователей с ошибками|
 |conflictUserCount|Int32|Количество конфликтующих пользователей|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -64,6 +64,9 @@ ms.locfileid: "43469323"
   "conflictUserCount": 1024
 }
 ```
+
+
+
 
 
 

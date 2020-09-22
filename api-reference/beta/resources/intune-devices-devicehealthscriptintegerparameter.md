@@ -3,14 +3,14 @@ title: Тип ресурса Девицехеалсскриптинтежерп�
 description: Свойства целого параметра скрипта.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f88f027036c93b62610b9cd6d95821b5115a2334
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 8154284e74cb4563ef881071c2a40ed9ec57adcd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178565"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060323"
 ---
 # <a name="devicehealthscriptintegerparameter-resource-type"></a>Тип ресурса Девицехеалсскриптинтежерпараметер
 
@@ -54,6 +54,9 @@ ms.locfileid: "44178565"
   "defaultValue": 1024
 }
 ```
+
+
+
 
 
 

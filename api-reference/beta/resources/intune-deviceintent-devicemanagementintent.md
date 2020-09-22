@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементинтент
 description: Сущность, которая представляет цель применения параметров к устройству
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dc9eb5e07ab610db61af5287863bb8c394a40ad9
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: e71aa175aa2fbd0bdd88fd1b7b4474a2db22e6a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179371"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061429"
 ---
 # <a name="devicemanagementintent-resource-type"></a>Тип ресурса Девицеманажементинтент
 
@@ -34,17 +34,17 @@ ms.locfileid: "44179371"
 |[действие Мигратетотемплате](../api/intune-deviceintent-devicemanagementintent-migratetotemplate.md)|Нет|Н/Д|
 |[действие Креатекопи](../api/intune-deviceintent-devicemanagementintent-createcopy.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Н/Д|
 |[Действие assign](../api/intune-deviceintent-devicemanagementintent-assign.md)|Нет|Н/Д|
-|[Функция Compare](../api/intune-deviceintent-devicemanagementintent-compare.md)|Коллекция [девицеманажементсеттингкомпарисон](../resources/intune-deviceintent-devicemanagementsettingcomparison.md)|Пока не задокументировано|
+|[Функция Compare](../api/intune-deviceintent-devicemanagementintent-compare.md)|Коллекция [девицеманажементсеттингкомпарисон](../resources/intune-deviceintent-devicemanagementsettingcomparison.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор намерения|
-|displayName|Строка|Имя пользователя для данного отображаемого имени|
+|displayName|String|Имя пользователя для данного отображаемого имени|
 |description|String|Описание, заданное пользователем|
 |isAssigned|Boolean|Указывает, назначена ли пользователю задача|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения намерения|
-|templateId|Строка|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
+|templateId|String|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
 |roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности.|
 
 ## <a name="relationships"></a>Связи
@@ -81,6 +81,9 @@ ms.locfileid: "44179371"
   ]
 }
 ```
+
+
+
 
 
 

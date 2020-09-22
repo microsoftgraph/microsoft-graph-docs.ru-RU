@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементколлектио�
 description: Экземпляр параметра, представляющий коллекцию значений
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ad5fb0a197340c1d4c999efbfa2e3538f99bc31
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c2067ded26bf9cf3d9b85cb5714d3bb468eff403
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470756"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061555"
 ---
 # <a name="devicemanagementcollectionsettinginstance-resource-type"></a>Тип ресурса Девицеманажементколлектионсеттингинстанце
 
@@ -41,7 +41,7 @@ ms.locfileid: "43470756"
 |дефинитионид|String|Идентификатор определения параметра для этого экземпляра, унаследованного от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 |валуежсон|String|Представление JSON значения, наследуемого от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |значение|Коллекция [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Коллекция значений|
@@ -62,6 +62,9 @@ ms.locfileid: "43470756"
   "valueJson": "String"
 }
 ```
+
+
+
 
 
 

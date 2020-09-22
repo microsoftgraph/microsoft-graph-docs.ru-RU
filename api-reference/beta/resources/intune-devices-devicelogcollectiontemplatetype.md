@@ -3,14 +3,14 @@ title: тип перечисления Девицелогколлектионт�
 description: Enum для типа шаблона, используемого для сбора журналов
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9c6d1b827c0bcbee554f78ef62258196bcd4c9ac
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: d53de020f8f3309e256260c987a987c20fb90dba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124281"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060168"
 ---
 # <a name="devicelogcollectiontemplatetype-enum-type"></a>тип перечисления Девицелогколлектионтемплатетипе
 
@@ -26,6 +26,9 @@ Enum для типа шаблона, используемого для сбор�
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |готовы|нуль|Предварительно определенный шаблон для собираемых данных|
+
+
+
 
 
 

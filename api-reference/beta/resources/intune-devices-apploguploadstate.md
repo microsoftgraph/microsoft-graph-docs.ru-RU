@@ -3,14 +3,14 @@ title: тип перечисления Апплогуплоадстате
 description: апплогуплоадстатус
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0e3f03f988f03a2e9728d9ef705283cb4d28956b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f3a39e8155c6cb18291ee233574c592f3ce964ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465197"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060835"
 ---
 # <a name="apploguploadstate-enum-type"></a>тип перечисления Апплогуплоадстате
 
@@ -26,8 +26,11 @@ ms.locfileid: "43465197"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |закончен|нуль|Запрос ожидает обработки или обработки|
-|готовы|1,1|Запрос выполнен с помощью файла, отправленного в большой двоичный объект Azure для скачивания.|
-|сбоев|2|Запрос завершил обработку и находится в состоянии ошибки.|
+|готовы|1 |Запрос выполнен с помощью файла, отправленного в большой двоичный объект Azure для скачивания.|
+|сбоев|2 |Запрос завершил обработку и находится в состоянии ошибки.|
+
+
+
 
 
 

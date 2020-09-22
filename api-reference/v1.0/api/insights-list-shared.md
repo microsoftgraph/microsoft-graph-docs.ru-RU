@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: cf7acd348b9e23262624c47a123eb8b5f5dac439
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d1c815423993a93100e8feb3d90b644096122c85
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516719"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059637"
 ---
 # <a name="list-shared"></a>Список "Общие"
 
@@ -42,10 +42,10 @@ GET /users/{id | userPrincipalName}/insights/shared
 GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
-С помощью параметра `$filter` запроса можно фильтровать общие элементы. Например, на основе **типа**:
+`$filter`С помощью параметра запроса можно фильтровать общие элементы. Например, на основе **типа**:
 
 `https://graph.microsoft.com/v1.0/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и список [общих](../resources/insights-shared.md) элементов в теле отклика.
 ## <a name="example"></a>Пример
@@ -117,4 +117,5 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared
                 "type: "type-value" 
 }
 ```
+
 

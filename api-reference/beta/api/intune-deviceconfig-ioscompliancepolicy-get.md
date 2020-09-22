@@ -3,14 +3,14 @@ title: Get iosCompliancePolicy
 description: Чтение свойств и связей объекта iosCompliancePolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 398265886076befa31260184f6b235040fa31c22
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f1328033cb4765a5dd3f765d2d0dc0239d6cd381
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43432982"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059028"
 ---
 # <a name="get-ioscompliancepolicy"></a>Get iosCompliancePolicy
 
@@ -49,10 +49,10 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -111,6 +111,9 @@ Content-Length: 1504
   }
 }
 ```
+
+
+
 
 
 

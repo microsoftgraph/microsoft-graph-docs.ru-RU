@@ -3,14 +3,14 @@ title: Тип ресурса deviceGeoLocation
 description: Расположение устройства
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 896f463daadef157b9f8c10628dd9101508b88f0
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: c189b21570dcc218586f4cc74cd605aa6712f0c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44175646"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060484"
 ---
 # <a name="devicegeolocation-resource-type"></a>Тип ресурса deviceGeoLocation
 
@@ -27,12 +27,12 @@ ms.locfileid: "44175646"
 |:---|:---|:---|
 |ластколлектеддатетимеутк|DateTimeOffset|Время записи расположения относительно времени UTC|
 |lastCollectedDateTime|DateTimeOffset|Время записи расположения относительно времени UTC|
-|longitude|Двойное с плавающей точкой|Долгота расположения устройства|
-|latitude|Двойное с плавающей точкой|Широта расположения устройства|
-|altitude|Двойное с плавающей точкой|Высота (метров над уровнем моря)|
-|horizontalAccuracy|Двойное с плавающей точкой|Точность долготы и широты (м)|
-|verticalAccuracy|Двойное с плавающей точкой|Точность высоты (м)|
-|heading|Двойное с плавающей точкой|Направление от географического севера (градусов)|
+|longitude|Double|Долгота расположения устройства|
+|latitude|Double|Широта расположения устройства|
+|altitude|Double|Высота (метров над уровнем моря)|
+|horizontalAccuracy|Double|Точность долготы и широты (м)|
+|verticalAccuracy|Double|Точность высоты (м)|
+|heading|Double|Направление от географического севера (градусов)|
 |speed|Double|Скорость передвижения устройства (м/с)|
 
 ## <a name="relationships"></a>Связи
@@ -59,6 +59,9 @@ ms.locfileid: "44175646"
   "speed": "4.2"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Тип ресурса windowsPhone81CompliancePolicy
 description: Этот класс содержит параметры обеспечения соответствия требованиям для Windows 8.1 Mobile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3bdbbddfe754c4065eeb7ecc541cccc4e3f15ebf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3b16c247c52dfa7703265d43c174cacc3115a549
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459976"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061821"
 ---
 # <a name="windowsphone81compliancepolicy-resource-type"></a>Тип ресурса windowsPhone81CompliancePolicy
 
@@ -29,8 +29,8 @@ ms.locfileid: "43459976"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Перечисление windowsPhone81CompliancePolicies](../api/intune-deviceconfig-windowsphone81compliancepolicy-list.md)|Коллекция [windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md)|Список свойств и связей объектов [windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md).|
-|[Получение windowsPhone81CompliancePolicy](../api/intune-deviceconfig-windowsphone81compliancepolicy-get.md)|[windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md);|Считывание свойств и связей объекта [windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md).|
-|[Создание windowsPhone81CompliancePolicy](../api/intune-deviceconfig-windowsphone81compliancepolicy-create.md)|[windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md);|Создание объекта [windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md).|
+|[Получение windowsPhone81CompliancePolicy](../api/intune-deviceconfig-windowsphone81compliancepolicy-get.md)|[windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md)|Считывание свойств и связей объекта [windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md).|
+|[Создание windowsPhone81CompliancePolicy](../api/intune-deviceconfig-windowsphone81compliancepolicy-create.md)|[windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md)|Создание объекта [windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md).|
 |[Удаление windowsPhone81CompliancePolicy](../api/intune-deviceconfig-windowsphone81compliancepolicy-delete.md)|None|Удаление экземпляра [windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md).|
 |[Обновление windowsPhone81CompliancePolicy](../api/intune-deviceconfig-windowsphone81compliancepolicy-update.md)|[windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md)|Обновление свойств объекта [windowsPhone81CompliancePolicy](../resources/intune-deviceconfig-windowsphone81compliancepolicy.md).|
 
@@ -38,11 +38,11 @@ ms.locfileid: "43459976"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |passwordBlockSimple|Boolean|Определяет, нужно ли блокировать синхронизацию календаря.|
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля.|
@@ -51,7 +51,7 @@ ms.locfileid: "43459976"
 |passwordMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
 |passwordRequiredType|[рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые следует заблокировать. Допустимые значения: от 0 до 24.|
-|passwordRequired|Логический|Определяет, нужно ли запрашивать ввод пароля.|
+|passwordRequired|Boolean|Определяет, нужно ли запрашивать ввод пароля.|
 |osMinimumVersion|String|Минимальная версия Windows Phone.|
 |osMaximumVersion|String|Максимальная версия Windows Phone.|
 |storageRequireEncryption|Boolean|Указывает на то, что шифрование на устройствах с Windows Phone должно быть обязательным.|
@@ -100,6 +100,9 @@ ms.locfileid: "43459976"
   "storageRequireEncryption": true
 }
 ```
+
+
+
 
 
 

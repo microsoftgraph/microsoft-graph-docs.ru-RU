@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0aa67ac9dbe7be255ff1b27013f7e2eeecb7d185
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1a7f9d2e8566bf18546ede630405677e029c7019
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443634"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060057"
 ---
 # <a name="devicecategory-resource-type"></a>Тип ресурса deviceCategory
 
@@ -26,17 +26,17 @@ ms.locfileid: "43443634"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Перечисление объектов deviceCategory](../api/intune-shared-devicecategory-list.md)|Коллекция объектов [deviceCategory](../resources/intune-shared-devicecategory.md)|Список свойств и связей объектов [deviceCategory](../resources/intune-shared-devicecategory.md).|
-|[Получение объекта deviceCategory](../api/intune-shared-devicecategory-get.md)|[deviceCategory](../resources/intune-shared-devicecategory.md);|Чтение свойств и связей объекта [deviceCategory](../resources/intune-shared-devicecategory.md).|
+|[Получение объекта deviceCategory](../api/intune-shared-devicecategory-get.md)|[deviceCategory](../resources/intune-shared-devicecategory.md)|Чтение свойств и связей объекта [deviceCategory](../resources/intune-shared-devicecategory.md).|
 |[Создание объекта deviceCategory](../api/intune-shared-devicecategory-create.md)|[deviceCategory](../resources/intune-shared-devicecategory.md)|Создание объекта [deviceCategory](../resources/intune-shared-devicecategory.md).|
 |[Удаление объекта deviceCategory](../api/intune-shared-devicecategory-delete.md)|Нет|Удаление объекта [deviceCategory](../resources/intune-shared-devicecategory.md).|
-|[Обновление объекта deviceCategory](../api/intune-shared-devicecategory-update.md)|[deviceCategory](../resources/intune-shared-devicecategory.md);|Обновление свойств объекта [deviceCategory](../resources/intune-shared-devicecategory.md).|
+|[Обновление объекта deviceCategory](../api/intune-shared-devicecategory-update.md)|[deviceCategory](../resources/intune-shared-devicecategory.md)|Обновление свойств объекта [deviceCategory](../resources/intune-shared-devicecategory.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор категории устройства. Только для чтения.|
 |**Адаптация**|
-|displayName|Строка|Отображаемое имя категории устройств.|
+|displayName|String|Отображаемое имя категории устройств.|
 |description|String|Необязательное описание категории устройств.|
 
 ## <a name="relationships"></a>Связи
@@ -58,6 +58,9 @@ ms.locfileid: "43443634"
   "description": "String"
 }
 ```
+
+
+
 
 
 

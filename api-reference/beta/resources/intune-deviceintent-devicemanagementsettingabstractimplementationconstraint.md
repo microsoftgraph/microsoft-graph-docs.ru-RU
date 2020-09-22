@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементсеттингаб�
 description: Ограничение, которое применяет тип Абстракткомплекс, имеет значение или равно определенному значению
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e8fd314d2e71b95e446009e70a35166a9aa2e0ff
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 62b257e7d6199798d2a4f13a3210e98d53b82de6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443329"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061317"
 ---
 # <a name="devicemanagementsettingabstractimplementationconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингабстрактимплементатионконстраинт
 
@@ -48,6 +48,9 @@ ms.locfileid: "43443329"
   ]
 }
 ```
+
+
+
 
 
 

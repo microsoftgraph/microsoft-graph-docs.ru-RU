@@ -3,14 +3,14 @@ title: Создание объекта roleAssignment
 description: Создание объекта roleAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6019357dcea7e020022eb5def2d449c9a5be47cd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b87e760a34c43773546e9dec10258987c5b206aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456590"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059392"
 ---
 # <a name="create-roleassignment"></a>Создание объекта roleAssignment
 
@@ -41,7 +41,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -52,7 +52,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
-|displayName|Строка|Отображаемое или понятное имя назначения роли.|
+|displayName|String|Отображаемое или понятное имя назначения роли.|
 |description|String|Описание назначения роли.|
 |resourceScopes|Коллекция String|Список идентификаторов групп безопасности с элементами области применения ролей.  Эти идентификаторы берутся из Azure Active Directory.|
 
@@ -97,6 +97,9 @@ Content-Length: 242
   ]
 }
 ```
+
+
+
 
 
 

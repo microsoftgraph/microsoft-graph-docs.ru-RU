@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: f0853d4a215fcb554243a724b1d53d74f848a81d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d5f0dbfe0b27a44f48d0be947e15ef20a980e935
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42516712"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059616"
 ---
 # <a name="list-trending"></a>Список "Популярные"
 
@@ -43,10 +43,10 @@ GET /me/insights/trending/{id}/resource
 GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
-С помощью параметра `$filter` запроса можно фильтровать элементы тенденции. Например, на основе **типа**:
+`$filter`С помощью параметра запроса можно фильтровать элементы тенденции. Например, на основе **типа**:
 
 `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/type eq 'PowerPoint'`
 
@@ -66,7 +66,7 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и список элементов [тенденции](../resources/insights-trending.md) в тексте отклика. Каждый элемент содержит свойства зрительного образа для отображения элемента в интерфейсе пользователя.
 
@@ -107,5 +107,6 @@ Content-length: 801
     ]
 }
 ```
+
 
 

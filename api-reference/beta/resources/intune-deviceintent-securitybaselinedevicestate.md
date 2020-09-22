@@ -3,14 +3,14 @@ title: Тип ресурса Секуритибаселинедевицеста�
 description: Сводка по базовому состоянию соответствия требованиям безопасности для устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 412b2f715053abf8ec6ff54cb8be3e75f586209a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ae779d85027ff70424d05418c0cd24ae3560e1aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419721"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060953"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>Тип ресурса Секуритибаселинедевицестате
 
@@ -34,7 +34,7 @@ ms.locfileid: "43419721"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта|
+|id|String|Уникальный идентификатор объекта|
 |манажеддевицеид|String|Идентификатор устройства Intune|
 |deviceDisplayName|String|Отображаемое имя устройства|
 |userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
@@ -63,6 +63,9 @@ ms.locfileid: "43419721"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

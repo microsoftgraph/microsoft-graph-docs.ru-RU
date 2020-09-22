@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементенумконст�
 description: Ограничение, которое задает значение параметра, из разрешенного набора строк
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a118fd250788ba00baf50495f346485572f750aa
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 202365368c17d22cf33ea78320ac2a2604a59194
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448332"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061478"
 ---
 # <a name="devicemanagementenumconstraint-resource-type"></a>Тип ресурса Девицеманажементенумконстраинт
 
@@ -52,6 +52,9 @@ ms.locfileid: "43448332"
   ]
 }
 ```
+
+
+
 
 
 

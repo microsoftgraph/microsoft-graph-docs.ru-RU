@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементинтентсет�
 description: Сущность, представляющая категорию параметров намерения
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5241512e43c8a02af9445ece2310db83358e996b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4d167d794a1e9f0e4bcb78a6ccbd51ea50bfe72b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388511"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061394"
 ---
 # <a name="devicemanagementintentsettingcategory-resource-type"></a>Тип ресурса Девицеманажементинтентсеттингкатегори
 
@@ -38,7 +38,7 @@ ms.locfileid: "43388511"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор категории, наследуемый от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
-|displayName|Строка|Имя категории, унаследованное от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|displayName|String|Имя категории, унаследованное от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |хасрекуиредсеттинг|Boolean|Категория содержит обязательный параметр верхнего уровня, наследуемого от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 
 ## <a name="relationships"></a>Связи
@@ -63,6 +63,9 @@ ms.locfileid: "43388511"
   "hasRequiredSetting": true
 }
 ```
+
+
+
 
 
 

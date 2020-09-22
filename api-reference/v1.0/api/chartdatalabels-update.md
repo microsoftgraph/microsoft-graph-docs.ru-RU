@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 34d93a6d6b45b1ad1d86dd18f7d96af6b034b0db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb45ef827102cea2a43435af4d7f5b7925843729
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518478"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059877"
 ---
 # <a name="update-chartdatalabels"></a>Обновление объекта chartdatalabels
 
@@ -42,7 +42,7 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/dataLabels
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|position|string|Значение DataLabelPosition, которое представляет положение метки данных. `None`Возможные значения:, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`,. `Callout`|
+|position|string|Значение DataLabelPosition, которое представляет положение метки данных. Возможные значения: `None` , `Center` ,,, `InsideEnd` `InsideBase` `OutsideEnd` , `Left` , `Right` ,,, `Top` `Bottom` `BestFit` , `Callout` .|
 |separator|string|Строка, представляющая разделитель для меток данных на диаграмме.|
 |showBubbleSize|boolean|Логическое значение, которое указывает, отображается ли размер пузырьков с метками данных.|
 |showCategoryName|boolean|Логическое значение, которое указывает, отображается ли имя для категории меток данных.|
@@ -126,3 +126,4 @@ Content-length: 134
   "suppressions": [
   ]
 }-->
+

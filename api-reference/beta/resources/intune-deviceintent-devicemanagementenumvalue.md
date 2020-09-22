@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементенумвалуе
 description: Сведения об определении значения перечисления
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 70b8bc8b0760c0879ab5384620839d717ac7a41d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 27fd76045121ed37646eaa5d3cb93216781cb51b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455703"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061471"
 ---
 # <a name="devicemanagementenumvalue-resource-type"></a>Тип ресурса Девицеманажементенумвалуе
 
@@ -45,6 +45,9 @@ ms.locfileid: "43455703"
   "displayName": "String"
 }
 ```
+
+
+
 
 
 

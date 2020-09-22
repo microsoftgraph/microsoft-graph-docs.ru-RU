@@ -3,14 +3,14 @@ title: Тип ресурса Девицехеалсскриптдевицест�
 description: Содержит свойства состояния запуска для сценария работоспособности устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 15b88acaf91e82981e821d96f8456cc943965081
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 628e48ebd263e2f315ce3868730de91154780061
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448122"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060344"
 ---
 # <a name="devicehealthscriptdevicestate-resource-type"></a>Тип ресурса Девицехеалсскриптдевицестате
 
@@ -75,6 +75,9 @@ ms.locfileid: "43448122"
   "remediationState": "String"
 }
 ```
+
+
+
 
 
 

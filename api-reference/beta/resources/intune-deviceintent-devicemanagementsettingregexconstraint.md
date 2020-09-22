@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементсеттингре�
 description: Ограничение, в соответствии с которым параметр соответствует заданному шаблону регулярного выражения
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 82eb19727c839bf6c31f79d42fc9fbcf48b37f1d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 08734a71b179d55bc76e9cd82360773d7d17f3bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420102"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061135"
 ---
 # <a name="devicemanagementsettingregexconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингрежексконстраинт
 
@@ -46,6 +46,9 @@ ms.locfileid: "43420102"
   "regex": "String"
 }
 ```
+
+
+
 
 
 

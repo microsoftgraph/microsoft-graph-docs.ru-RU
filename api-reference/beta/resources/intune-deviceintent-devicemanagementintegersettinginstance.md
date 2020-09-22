@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементинтежерсе�
 description: Экземпляр параметра, представляющий значение целого числа
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 07eb76ad4de5318897bc5248a1cd78975da69d5e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 15918cec37458f10430da3e5ba095a800c77cc4a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455696"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061457"
 ---
 # <a name="devicemanagementintegersettinginstance-resource-type"></a>Тип ресурса Девицеманажементинтежерсеттингинстанце
 
@@ -62,6 +62,9 @@ ms.locfileid: "43455696"
   "value": 1024
 }
 ```
+
+
+
 
 
 

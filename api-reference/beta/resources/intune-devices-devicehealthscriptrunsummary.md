@@ -3,14 +3,14 @@ title: Тип ресурса Девицехеалсскриптрунсумма�
 description: Содержит свойства сводки по запуску сценария управления устройствами.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd5a96191780b113fea84ea6534e5a47ad8890c9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9697ff4bf2813d720e066f652302b9622fa206eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388410"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060225"
 ---
 # <a name="devicehealthscriptrunsummary-resource-type"></a>Тип ресурса Девицехеалсскриптрунсуммари
 
@@ -70,6 +70,9 @@ ms.locfileid: "43388410"
   "issueRemediatedCumulativeDeviceCount": 1024
 }
 ```
+
+
+
 
 
 

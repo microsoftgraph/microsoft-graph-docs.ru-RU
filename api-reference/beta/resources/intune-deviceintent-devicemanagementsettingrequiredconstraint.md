@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементсеттингре�
 description: Ограничение, которое применяет определенный обязательный параметр, отличный от NULL/undefine/пустая строка/не настроен
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fd70066465fcde31ba12ff1a7deb96a41a6786e9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d13ba79b411032a14c5426f247ab80f45baa9d21
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420087"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061114"
 ---
 # <a name="devicemanagementsettingrequiredconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингрекуиредконстраинт
 
@@ -46,6 +46,9 @@ ms.locfileid: "43420087"
   "notConfiguredValue": "String"
 }
 ```
+
+
+
 
 
 

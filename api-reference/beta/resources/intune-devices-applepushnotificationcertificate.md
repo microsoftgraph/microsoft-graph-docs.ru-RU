@@ -3,14 +3,14 @@ title: Тип ресурса applePushNotificationCertificate
 description: Сертификат push-уведомлений Apple
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c4a90b85dc79ff5261037e2f556b844691eeab2a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d079d3f6c0c53dc2fc7aa0c697604aa3968f2ac3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465273"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060890"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Тип ресурса applePushNotificationCertificate
 
@@ -68,6 +68,9 @@ ms.locfileid: "43465273"
   "certificate": "String"
 }
 ```
+
+
+
 
 
 

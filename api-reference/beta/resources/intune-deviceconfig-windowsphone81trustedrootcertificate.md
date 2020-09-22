@@ -3,14 +3,14 @@ title: Тип ресурса windowsPhone81TrustedRootCertificate
 description: Профиль конфигурации доверенного корневого сертификата Windows Phone 8.1
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8e32dbdfada88fad3283d45902767777527d2d84
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0260c256e1b5482dd80f4f6527f09ccf9d3ac71c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459919"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061745"
 ---
 # <a name="windowsphone81trustedrootcertificate-resource-type"></a>Тип ресурса windowsPhone81TrustedRootCertificate
 
@@ -46,8 +46,8 @@ ms.locfileid: "43459919"
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |trustedRootCertificate|Binary|Доверенный корневой сертификат|
 |цертфиленаме|String|Имя файла, отображаемое в пользовательском интерфейсе.|
 
@@ -108,6 +108,9 @@ ms.locfileid: "43459919"
   "certFileName": "String"
 }
 ```
+
+
+
 
 
 

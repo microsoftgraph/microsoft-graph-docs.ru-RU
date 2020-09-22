@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2b5c06b8b664c10483c8d4a6767a981f1a5551be
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 6803449c3fd44c736e1d52575b292164fad9923d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812346"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059154"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -47,7 +47,7 @@ ms.locfileid: "46812346"
 |importance| string | Важность сообщения чата. Допустимые значения: `normal`, `high`, `urgent`.|
 |языковые стандарты|string|Язык сообщения чата, заданное клиентом.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -99,3 +99,4 @@ ms.locfileid: "46812346"
   "suppressions": []
 }
 -->
+

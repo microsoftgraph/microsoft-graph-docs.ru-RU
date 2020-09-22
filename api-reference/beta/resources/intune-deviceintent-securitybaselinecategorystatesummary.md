@@ -3,14 +3,14 @@ title: Тип ресурса Секуритибаселинекатегорис�
 description: Базовый план безопасности для каждой категории Сводка по состоянию соответствия требованиям для учетной записи базового уровня безопасности учетной записи.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f8fe826131e55df171e8c782d31ffc195c4a8a6f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: eae04e36ed57148fcf225d6346adccf01c2ae13e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419863"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060967"
 ---
 # <a name="securitybaselinecategorystatesummary-resource-type"></a>Тип ресурса Секуритибаселинекатегористатесуммари
 
@@ -44,7 +44,7 @@ ms.locfileid: "43419863"
 |errorCount|Int32|Количество устройств с ошибками, наследуемых от [секуритибаселинестатесуммари](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
 |conflictCount|Int32|Количество устройств с конфликтами, наследуемых от [секуритибаселинестатесуммари](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
 |notApplicableCount|Int32|Количество неприменимых устройств, наследуемых от [секуритибаселинестатесуммари](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
-|displayName|Строка|Имя категории|
+|displayName|String|Имя категории|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -70,6 +70,9 @@ ms.locfileid: "43419863"
   "displayName": "String"
 }
 ```
+
+
+
 
 
 

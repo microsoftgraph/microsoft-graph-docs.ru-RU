@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементскриптдев�
 description: Содержит свойства для состояния запуска на устройстве скрипта управления устройствами.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b37cfbf01a53ccf0c76211a2cf40d1181c9cc836
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8c8ab58f2fddc0030da42c85dbc10a4d8248aed0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375024"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060127"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>Тип ресурса Девицеманажементскриптдевицестате
 
@@ -65,6 +65,9 @@ ms.locfileid: "43375024"
   "errorDescription": "String"
 }
 ```
+
+
+
 
 
 

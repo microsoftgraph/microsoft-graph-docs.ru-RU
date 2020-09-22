@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементтемплате
 description: Объект, представляющий определенную коллекцию параметров устройства
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67bc7414ec7f4546111e033f4b46b744cd9ed100
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: f898df5eb0208e3c7b12210708c76bc93f84cf53
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790415"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061057"
 ---
 # <a name="devicemanagementtemplate-resource-type"></a>Тип ресурса Девицеманажементтемплате
 
@@ -41,9 +41,9 @@ ms.locfileid: "46790415"
 |displayName|String|Отображаемое имя шаблона|
 |description|String|Описание шаблона|
 |versionInfo|String|Сведения о версии шаблона|
-|нерекомендуемый|Логический|Шаблон устарел или не является устаревшим. Не удается создать объект "удержания" из устаревшего шаблона.|
+|нерекомендуемый|Boolean|Шаблон устарел или не является устаревшим. Не удается создать объект "удержания" из устаревшего шаблона.|
 |интенткаунт|Int32|Количество целей, созданных на основе этого шаблона.|
-|TemplateType — тип|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|Тип шаблона. Возможные значения: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`, `securityTemplate`, `microsoftEdgeSecurityBaseline`, `microsoftOffice365ProPlusSecurityBaseline`, `deviceCompliance`, `deviceConfigurationForOffice365`.|
+|TemplateType — тип|[deviceManagementTemplateType](../resources/intune-deviceintent-devicemanagementtemplatetype.md)|Тип шаблона. Возможные значения: `securityBaseline`, `specializedDevices`, `advancedThreatProtectionSecurityBaseline`, `deviceConfiguration`, `custom`, `securityTemplate`, `microsoftEdgeSecurityBaseline`, `microsoftOffice365ProPlusSecurityBaseline`, `deviceCompliance`, `deviceConfigurationForOffice365`, `cloudPC`.|
 |platformType|[полициплатформтипе](../resources/intune-shared-policyplatformtype.md)|Платформа шаблона. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `all`.|
 |темплатесубтипе|[deviceManagementTemplateSubtype](../resources/intune-deviceintent-devicemanagementtemplatesubtype.md)|Подтип шаблона. Возможные значения: `none`, `firewall`, `diskEncryption`, `attackSurfaceReduction`, `endpointDetectionReponse`, `accountProtection`, `antivirus`.|
 |publishedDateTime|DateTimeOffset|При публикации шаблона|
@@ -78,6 +78,9 @@ ms.locfileid: "46790415"
   "publishedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

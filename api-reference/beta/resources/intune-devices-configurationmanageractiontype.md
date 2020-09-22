@@ -3,14 +3,14 @@ title: тип перечисления Конфигуратионманажер�
 description: Тип действия в клиенте Configuration Manager
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fd12ace8453740d0c89fc5393a660d05dac83ef4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0848488e0c4db3df29b16ddf0acd612242f88d17
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465077"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060687"
 ---
 # <a name="configurationmanageractiontype-enum-type"></a>тип перечисления Конфигуратионманажерактионтипе
 
@@ -26,9 +26,12 @@ ms.locfileid: "43465077"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |рефрешмачинеполици|нуль|Обновление политики компьютера в клиенте Configuration Manager|
-|рефрешусерполици|1,1|Обновление политики пользователя в клиенте Configuration Manager|
-|вакеупклиент|2|Пробуждение клиента Configuration Manager|
+|рефрешусерполици|1 |Обновление политики пользователя в клиенте Configuration Manager|
+|вакеупклиент|2 |Пробуждение клиента Configuration Manager|
 |аппевалуатион|4|Оценка политики применения в клиенте Configuration Manager|
+
+
+
 
 
 

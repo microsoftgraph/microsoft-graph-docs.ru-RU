@@ -3,14 +3,14 @@ title: Тип ресурса Девицекомплианцескриптдев�
 description: Содержит свойства состояния выполнения для сценария соответствия требованиям устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 587f896fa2e9a689f89e93557877f7de6e465933
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 0b1771c752b804aca270b6dc8f31687ca8007904
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44789567"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060547"
 ---
 # <a name="devicecompliancescriptdevicestate-resource-type"></a>Тип ресурса Девицекомплианцескриптдевицестате
 
@@ -26,10 +26,10 @@ ms.locfileid: "44789567"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Девицекомплианцескриптдевицестатес](../api/intune-devices-devicecompliancescriptdevicestate-list.md)|Коллекция [девицекомплианцескриптдевицестате](../resources/intune-devices-devicecompliancescriptdevicestate.md)|Список свойств и связей объектов [девицекомплианцескриптдевицестате](../resources/intune-devices-devicecompliancescriptdevicestate.md) .|
-|[Получение Девицекомплианцескриптдевицестате](../api/intune-devices-devicecompliancescriptdevicestate-get.md)|[девицекомплианцескриптдевицестате](../resources/intune-devices-devicecompliancescriptdevicestate.md)|Чтение свойств и связей объекта [девицекомплианцескриптдевицестате](../resources/intune-devices-devicecompliancescriptdevicestate.md) .|
-|[Создание Девицекомплианцескриптдевицестате](../api/intune-devices-devicecompliancescriptdevicestate-create.md)|[девицекомплианцескриптдевицестате](../resources/intune-devices-devicecompliancescriptdevicestate.md)|Создание нового объекта [девицекомплианцескриптдевицестате](../resources/intune-devices-devicecompliancescriptdevicestate.md) .|
+|[Получение Девицекомплианцескриптдевицестате](../api/intune-devices-devicecompliancescriptdevicestate-get.md)|[deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md)|Чтение свойств и связей объекта [девицекомплианцескриптдевицестате](../resources/intune-devices-devicecompliancescriptdevicestate.md) .|
+|[Создание Девицекомплианцескриптдевицестате](../api/intune-devices-devicecompliancescriptdevicestate-create.md)|[deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md)|Создание нового объекта [девицекомплианцескриптдевицестате](../resources/intune-devices-devicecompliancescriptdevicestate.md) .|
 |[Удаление Девицекомплианцескриптдевицестате](../api/intune-devices-devicecompliancescriptdevicestate-delete.md)|Нет|Удаляет объект [девицекомплианцескриптдевицестате](../resources/intune-devices-devicecompliancescriptdevicestate.md).|
-|[Обновление Девицекомплианцескриптдевицестате](../api/intune-devices-devicecompliancescriptdevicestate-update.md)|[девицекомплианцескриптдевицестате](../resources/intune-devices-devicecompliancescriptdevicestate.md)|Обновление свойств объекта [девицекомплианцескриптдевицестате](../resources/intune-devices-devicecompliancescriptdevicestate.md) .|
+|[Обновление Девицекомплианцескриптдевицестате](../api/intune-devices-devicecompliancescriptdevicestate-update.md)|[deviceComplianceScriptDeviceState](../resources/intune-devices-devicecompliancescriptdevicestate.md)|Обновление свойств объекта [девицекомплианцескриптдевицестате](../resources/intune-devices-devicecompliancescriptdevicestate.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -67,6 +67,9 @@ ms.locfileid: "44789567"
   "scriptError": "String"
 }
 ```
+
+
+
 
 
 

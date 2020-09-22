@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементинтентдев�
 description: Объект, представляющий состояние устройства для намерения
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5194cf31241a5b6e39e724861950de41722f4ac5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a62c3e1b9db38c822ada889162da33f12385511c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423650"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061408"
 ---
 # <a name="devicemanagementintentdevicestate-resource-type"></a>Тип ресурса Девицеманажементинтентдевицестате
 
@@ -34,7 +34,7 @@ ms.locfileid: "43423650"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор|
+|id|String|Идентификатор|
 |userPrincipalName|String|Имя участника-пользователя, сообщаемое на устройстве|
 |userName|String|Имя пользователя, сообщаемое на устройстве|
 |deviceDisplayName|String|Имя устройства, о котором сообщается|
@@ -65,6 +65,9 @@ ms.locfileid: "43423650"
   "deviceId": "String"
 }
 ```
+
+
+
 
 
 

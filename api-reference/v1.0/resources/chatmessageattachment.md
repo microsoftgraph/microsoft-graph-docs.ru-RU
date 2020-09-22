@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: nkramer
-ms.openlocfilehash: f1618356673cb164e3597212ab5767f52c236365
-ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
+ms.openlocfilehash: 0b6cf799de05a7e1e816fe002280d51beb18c9ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44272788"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059147"
 ---
 # <a name="chatmessageattachment-resource-type"></a>Тип ресурса Чатмессажеаттачмент
 
@@ -66,3 +66,4 @@ ms.locfileid: "44272788"
   "suppressions": []
 }
 -->
+

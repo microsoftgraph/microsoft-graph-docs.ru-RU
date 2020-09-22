@@ -3,14 +3,14 @@ title: Тип ресурса Секуритибаселинестатесумм�
 description: Сводка по состоянию соответствия нормативным требованиям безопасности для учетной записи базового уровня безопасности учетной записи.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d5d4fc9c256ca498e1a9e14136397847cf5c1953
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 94883b3cf9ece434a080f8896a06a81af81affc1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419674"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060925"
 ---
 # <a name="securitybaselinestatesummary-resource-type"></a>Тип ресурса Секуритибаселинестатесуммари
 
@@ -62,6 +62,9 @@ ms.locfileid: "43419674"
   "notApplicableCount": 1024
 }
 ```
+
+
+
 
 
 

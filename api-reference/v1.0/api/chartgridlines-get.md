@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ff32ecf8610a53ff7100f40f6d25aa7e1d512e55
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 902cf8721c84c225199ec11f87bb8cbe562ae8b3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518443"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059798"
 ---
 # <a name="get-chartgridlines"></a>Получение объекта ChartGridlines
 
@@ -45,7 +45,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorGridlines
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчартгридлинес](../resources/chartgridlines.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -106,3 +106,4 @@ Content-length: 21
   "suppressions": [
   ]
 }-->
+

@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементсеттингфи�
 description: Ограничение, обеспечивающее расширение файла, приемлемо для данного параметра
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6864d70c31096147a51ff4b3e67a7053d93ed27b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 79936cf26519329563d1216c8f2576faec3e4f77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443248"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061191"
 ---
 # <a name="devicemanagementsettingfileconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингфилеконстраинт
 
@@ -48,6 +48,9 @@ ms.locfileid: "43443248"
   ]
 }
 ```
+
+
+
 
 
 

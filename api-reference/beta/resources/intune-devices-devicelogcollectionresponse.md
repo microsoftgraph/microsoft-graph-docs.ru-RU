@@ -3,14 +3,14 @@ title: Тип ресурса Девицелогколлектионреспон�
 description: Сущность запроса для сбора журналов Windows.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4c3a7725f0f02c0ba2b8588c57179fa80316c595
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 3a4316655cc7ca10205165bac1b96579eb135713
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792977"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060163"
 ---
 # <a name="devicelogcollectionresponse-resource-type"></a>Тип ресурса Девицелогколлектионреспонсе
 
@@ -70,6 +70,9 @@ ms.locfileid: "46792977"
   "size": "4.2"
 }
 ```
+
+
+
 
 
 

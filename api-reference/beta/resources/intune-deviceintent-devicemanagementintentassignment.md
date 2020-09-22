@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементинтентасс�
 description: Объект назначения намерения
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a0aa4794953120fd1250c14638f4c6cfb0488dc1
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 531f010cf0764ce76bef3f6ee63ccfa9bd189c9b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793509"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061422"
 ---
 # <a name="devicemanagementintentassignment-resource-type"></a>Тип ресурса Девицеманажементинтентассигнмент
 
@@ -59,6 +59,9 @@ ms.locfileid: "44793509"
   }
 }
 ```
+
+
+
 
 
 

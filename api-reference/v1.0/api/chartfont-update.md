@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 80e5c650e6a0b16e5a4f40ba49cdeab4f17e6a69
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: db58149737efd5d6b5d30724f290e063ca9ce389
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518450"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059805"
 ---
 # <a name="update-chartfont"></a>Обновление объекта ChartFont
 
@@ -45,13 +45,13 @@ PATCH /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/font
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |bold|boolean|Указывает, является ли шрифт полужирным.|
-|color|строка|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
+|color|string|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
 |italic|boolean|Указывает, применяется ли курсив.|
 |name|string|Имя шрифта (например, Calibri)|
 |size|Double|Размер шрифта (например, 11)|
-|underline|string|Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`.|
+|underline|string|Тип подчеркивания, применяемый для шрифта. Возможные значения: `None` , `Single` .|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукчартфонт](../resources/chartfont.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -128,3 +128,4 @@ Content-length: 134
   "suppressions": [
   ]
 }-->
+

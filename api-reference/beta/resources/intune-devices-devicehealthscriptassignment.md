@@ -3,14 +3,14 @@ title: Тип ресурса Девицехеалсскриптассигнме�
 description: Содержит свойства, используемые для назначения скрипта управления устройствами группе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a73297492361460d5e4c4deca917753a0e26b98
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 3982844b3eca0d68bafc61127c5969b6d76782b8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793425"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060414"
 ---
 # <a name="devicehealthscriptassignment-resource-type"></a>Тип ресурса Девицехеалсскриптассигнмент
 
@@ -68,6 +68,9 @@ ms.locfileid: "44793425"
   }
 }
 ```
+
+
+
 
 
 

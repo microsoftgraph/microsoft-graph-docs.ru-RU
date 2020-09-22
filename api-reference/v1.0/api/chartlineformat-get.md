@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 36e8acb69c7defb2f0ba005dc22d5727ef0b551f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e03668bd825bb357ace65a7a81f04a789c65e9f0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518408"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059742"
 ---
 # <a name="get-chartlineformat"></a>Получение объекта ChartLineFormat
 
@@ -45,7 +45,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/majorgridlines/
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчартлинеформат](../resources/chartlineformat.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -106,3 +106,4 @@ Content-length: 28
   "suppressions": [
   ]
 }-->
+

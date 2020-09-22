@@ -3,14 +3,14 @@ title: Обновление объекта resourceOperation
 description: Обновляет свойства объекта resourceOperation.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 332f8bdd76cde5d0f3bfe3065f7b30e692aba2ad
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b5e05a8b9bd78d6aaa7f11ea8bbf58efb313a22c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461301"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059406"
 ---
 # <a name="update-resourceoperation"></a>Обновление объекта resourceOperation
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -51,7 +51,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
+|id|String|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально краткое (максимум несколько слов).|
 |description|String|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|
@@ -93,6 +93,9 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
+
+
+
 
 
 

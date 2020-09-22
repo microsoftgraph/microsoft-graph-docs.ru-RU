@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементинтентдев�
 description: Объект Entity, представляющий сводку состояний параметров устройства для намерения
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5d9c2db5a80e8a8f766d132997ef18c80c87fd6e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 422df3b15e4110e7ddf1323c79428b54fd3cb463
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423673"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061415"
 ---
 # <a name="devicemanagementintentdevicesettingstatesummary-resource-type"></a>Тип ресурса Девицеманажементинтентдевицесеттингстатесуммари
 
@@ -67,6 +67,9 @@ ms.locfileid: "43423673"
   "remediatedCount": 1024
 }
 ```
+
+
+
 
 
 

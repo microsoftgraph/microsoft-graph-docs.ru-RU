@@ -3,14 +3,14 @@ title: Тип ресурса appLogCollectionRequest
 description: Объект AppLogCollectionRequest.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b8b5acf4b7cc3a69e30d7b380c23e89d92ce9665
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2fac40719f01144917ad80bc272037c1f81c6b78
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465251"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060855"
 ---
 # <a name="applogcollectionrequest-resource-type"></a>Тип ресурса appLogCollectionRequest
 
@@ -64,6 +64,9 @@ ms.locfileid: "43465251"
   "completedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

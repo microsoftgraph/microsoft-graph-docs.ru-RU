@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 2e3d30d1796945c7d0217a83db966a203678f938
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b6325656dcf11a4b448506f829c3aaae88100ce6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533094"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059224"
 ---
 # <a name="charttitle-resource-type"></a>Тип ресурса ChartTitle
 
@@ -69,3 +69,4 @@ ms.locfileid: "42533094"
   "section": "documentation",
   "tocPath": ""
 }-->
+

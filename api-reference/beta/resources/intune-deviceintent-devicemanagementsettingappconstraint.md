@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементсеттингап�
 description: Ограничение, включающее параметр, содержит только доступные типы приложений.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 012f20e69f79018ffecbac0ff4558687ec407bdd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e76a89dec914441cf364cece404c979137c02d38
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443322"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061289"
 ---
 # <a name="devicemanagementsettingappconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингаппконстраинт
 
@@ -48,6 +48,9 @@ ms.locfileid: "43443322"
   ]
 }
 ```
+
+
+
 
 
 

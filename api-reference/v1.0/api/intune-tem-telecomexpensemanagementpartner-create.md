@@ -3,14 +3,14 @@ title: Создание telecomExpenseManagementPartner
 description: Создание объекта telecomExpenseManagementPartner.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 49d299fbcd44dbb4fd9a7fb2f1a7263054a8394a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ea8850c2c593b36d2254f177ec8380b58b683ec9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411152"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059385"
 ---
 # <a name="create-telecomexpensemanagementpartner"></a>Создание telecomExpenseManagementPartner
 
@@ -41,7 +41,7 @@ POST /deviceManagement/telecomExpenseManagementPartners
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -52,7 +52,7 @@ POST /deviceManagement/telecomExpenseManagementPartners
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор партнера TEM.|
-|displayName|Строка|Отображаемое имя партнера TEM.|
+|displayName|String|Отображаемое имя партнера TEM.|
 |url|String|URL-адрес административной панели управления партнера TEM, где администратор может настроить службу TEM.|
 |appAuthorized|Boolean|Определяет, разрешен ли доступ к Intune партнерскому приложению AAD.|
 |enabled|Boolean|Определяет, включено или отключено сейчас подключение Intune к службе TEM.|
@@ -99,6 +99,9 @@ Content-Length: 297
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
+
+
 
 
 

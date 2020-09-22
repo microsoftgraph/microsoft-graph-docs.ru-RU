@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 89c1e27af318fec0e8717f69676156b86e0f4316
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a64a79a9e00b5dd355f41c10fe66f43ad3a564fc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518485"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059882"
 ---
 # <a name="get-chartdatalabels"></a>Получение объекта ChartDataLabels
 
@@ -43,7 +43,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/dataLabels
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчартдаталабелс](../resources/chartdatalabels.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -108,3 +108,4 @@ Content-length: 134
   "suppressions": [
   ]
 }-->
+

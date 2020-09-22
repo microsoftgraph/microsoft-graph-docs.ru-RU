@@ -3,14 +3,14 @@ title: Тип ресурса Девицехеалсскриптбулеанпа�
 description: Свойства параметра скрипта Буолеан.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d57f4216f8b441b2e3bd1d4749c74e7df77ba89a
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 5474d5e9d61bf97da05ab7931694581349bad6d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178572"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060407"
 ---
 # <a name="devicehealthscriptbooleanparameter-resource-type"></a>Тип ресурса Девицехеалсскриптбулеанпараметер
 
@@ -54,6 +54,9 @@ ms.locfileid: "44178572"
   "defaultValue": true
 }
 ```
+
+
+
 
 
 

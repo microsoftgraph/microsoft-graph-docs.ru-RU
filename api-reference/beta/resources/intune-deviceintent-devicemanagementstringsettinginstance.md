@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементстрингсет�
 description: Экземпляр параметра, представляющий строковое значение
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0bdf26975143a922d71a3f63baa7032f6a469254
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 45f185a19db224362afac0b21872cd16371c3b70
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419979"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061055"
 ---
 # <a name="devicemanagementstringsettinginstance-resource-type"></a>Тип ресурса Девицеманажементстрингсеттингинстанце
 
@@ -62,6 +62,9 @@ ms.locfileid: "43419979"
   "value": "String"
 }
 ```
+
+
+
 
 
 

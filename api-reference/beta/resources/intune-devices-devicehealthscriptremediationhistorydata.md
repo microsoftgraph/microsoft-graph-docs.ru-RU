@@ -3,14 +3,14 @@ title: Тип ресурса Девицехеалсскриптремедиат�
 description: Количество устройств, исправленных сценарием работоспособности устройства на заданную дату.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3e038295204a71d61366f0f39dfeb13050432aab
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 7095dc821ccfaada8d1f83047895f54d823e1958
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178544"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060293"
 ---
 # <a name="devicehealthscriptremediationhistorydata-resource-type"></a>Тип ресурса Девицехеалсскриптремедиатионхисторидата
 
@@ -47,6 +47,9 @@ ms.locfileid: "44178544"
   "noIssueDeviceCount": 1024
 }
 ```
+
+
+
 
 
 

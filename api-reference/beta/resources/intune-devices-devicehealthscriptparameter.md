@@ -3,14 +3,14 @@ title: Тип ресурса Девицехеалсскриптпарамете�
 description: Базовые свойства параметра скрипта.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 524dbccd94370dbab4c4294b6fa4b6577c325886
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: ad82da1915702448a62c0c99f6933ddf1a51c5b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178558"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060302"
 ---
 # <a name="devicehealthscriptparameter-resource-type"></a>Тип ресурса Девицехеалсскриптпараметер
 
@@ -49,6 +49,9 @@ ms.locfileid: "44178558"
   "applyDefaultValueWhenNotAssigned": true
 }
 ```
+
+
+
 
 
 

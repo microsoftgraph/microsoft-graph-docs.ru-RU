@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементинтентусе�
 description: Сущность, представляющая сводную информацию о состоянии пользователя для намерения
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 77613d72f616fcaa3e179b56fcea1deed1053aef
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 70f92dd6ed78b67e6b23726fb7da3f8e1791bc0f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389300"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061324"
 ---
 # <a name="devicemanagementintentuserstatesummary-resource-type"></a>Тип ресурса Девицеманажементинтентусерстатесуммари
 
@@ -60,6 +60,9 @@ ms.locfileid: "43389300"
   "successCount": 1024
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4b3987f3f6ca012167717c49c0de032a9f672377
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: ec60e8c0f23fe882a719114dee6f720a8c4419eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42815929"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059693"
 ---
 # <a name="create-threatassessmentrequest"></a>Создание объекта threatAssessmentRequest
 
@@ -18,10 +18,10 @@ ms.locfileid: "42815929"
 
 Запрос на оценку угроз может иметь один из следующих типов:
 
-* [почта](../resources/mailAssessmentRequest.md);
+* [Почта](../resources/mailAssessmentRequest.md)
 * [Файл электронной почты](../resources/emailFileAssessmentRequest.md)
-* [Файл](../resources/fileAssessmentRequest.md)
-* [URL](../resources/urlAssessmentRequest.md)
+* [File](../resources/fileAssessmentRequest.md)
+* [URL-адрес](../resources/urlAssessmentRequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -51,7 +51,7 @@ POST /informationProtection/threatAssessmentRequests
 
 В тексте запроса добавьте представление объекта [среатассессментрекуест](../resources/threatassessmentrequest.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [среатассессментрекуест](../resources/threatassessmentrequest.md) в тексте отклика.
 
@@ -390,3 +390,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

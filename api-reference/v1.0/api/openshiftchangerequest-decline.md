@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b6a734f4f75c0d385f0df95d9b203332757bfdda
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: dcdc94950ace03452c3e1781b230b01ae0a4db5e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155063"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059357"
 ---
 # <a name="openshiftchangerequest-decline"></a>Опеншифтчанжерекуест: отклонить
 
@@ -100,3 +100,4 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+

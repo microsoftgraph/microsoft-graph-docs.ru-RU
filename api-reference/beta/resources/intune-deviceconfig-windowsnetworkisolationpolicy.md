@@ -3,14 +3,14 @@ title: Тип ресурса Виндовснетворкисолатионпо�
 description: Политика сетевой изоляции Windows
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ffee673d2887cc1cd5cc265c749bd58f8852a6ac
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 60ffe01d03c3c32ec9d051498905cca98e3cbd12
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179378"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061842"
 ---
 # <a name="windowsnetworkisolationpolicy-resource-type"></a>Тип ресурса Виндовснетворкисолатионполици
 
@@ -75,6 +75,9 @@ ms.locfileid: "44179378"
   ]
 }
 ```
+
+
+
 
 
 

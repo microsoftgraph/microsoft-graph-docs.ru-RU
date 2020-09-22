@@ -3,14 +3,14 @@ title: Создание объекта resourceOperation
 description: Создание объекта resourceOperation.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 38d3822bcc48312a8e7b5093b889cdd308dceedf
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: c3902678346e64d1dccea7d08f1e06fab8c1bcc4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43452619"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059490"
 ---
 # <a name="create-resourceoperation"></a>Создание объекта resourceOperation
 
@@ -44,14 +44,14 @@ POST /deviceManagement/resourceOperations
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта resourceOperation в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта resourceOperation.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
+|id|String|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально краткое (максимум несколько слов).|
 |description|String|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|
@@ -93,6 +93,9 @@ Content-Length: 227
   "description": "Description value"
 }
 ```
+
+
+
 
 
 

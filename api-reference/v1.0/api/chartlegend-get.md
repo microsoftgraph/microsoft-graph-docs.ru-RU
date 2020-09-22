@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bf25dd815ac9d4e7d9eb82e7b2dd2b58e45b07d0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e886fdd0a4771ccb3809418188a0c712746b93d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518429"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059763"
 ---
 # <a name="get-chartlegend"></a>Получение объекта ChartLegend
 
@@ -43,7 +43,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/legend
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчартлеженд](../resources/chartlegend.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -106,3 +106,4 @@ Content-length: 72
   "suppressions": [
   ]
 }-->
+

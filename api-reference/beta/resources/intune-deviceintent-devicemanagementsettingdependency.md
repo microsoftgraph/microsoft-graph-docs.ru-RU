@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементсеттингде�
 description: Сведения о зависимостях для параметра
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9014b3618562717c2cc9522c388034ad81213a4c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b96555b98f23206d9c85bb40cf567ed0938da5d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420124"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061205"
 ---
 # <a name="devicemanagementsettingdependency-resource-type"></a>Тип ресурса Девицеманажементсеттингдепенденци
 
@@ -52,6 +52,9 @@ ms.locfileid: "43420124"
   ]
 }
 ```
+
+
+
 
 
 

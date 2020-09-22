@@ -3,14 +3,14 @@ title: Тип ресурса Виндовскиоскувпапп
 description: Базовый класс для типа приложений
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb4faa95d3b58ac52b5eda134e3c6f958557e8ef
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cc64fb98877b5a369080cb002774e0505f0724da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462491"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061870"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>Тип ресурса Виндовскиоскувпапп
 
@@ -36,7 +36,7 @@ ms.locfileid: "43462491"
 |appId|String|Это указывает на приложение Intune, которое будет нацелено на те же назначения, что и настройка киоска|
 |контаинедаппид|String|Это указывает на автономное приложение из приложения Intune|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -58,6 +58,9 @@ ms.locfileid: "43462491"
   "containedAppId": "String"
 }
 ```
+
+
+
 
 
 

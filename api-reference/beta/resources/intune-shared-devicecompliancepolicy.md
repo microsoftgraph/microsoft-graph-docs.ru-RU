@@ -3,14 +3,14 @@ title: Тип ресурса deviceCompliancePolicy
 description: 'Это базовый класс для политик обеспечения соответствия требованиям. Такие политики предназначаются для определенной платформы. Отдельные политики обеспечения соответствия требованиям наследуются от этого класса. '
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c3ae4adc329d09002b0eeb6e8c9d4112fa22d6eb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d642ee7466df61376917ddca413deb47d7a8b8d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443619"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060064"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>Тип ресурса deviceCompliancePolicy
 
@@ -29,8 +29,8 @@ ms.locfileid: "43443619"
 |[Получение deviceCompliancePolicy](../api/intune-shared-devicecompliancepolicy-get.md)|[deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|Считывание свойств и связей объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |**Конфигурация устройств**|
 |[Действие assign](../api/intune-shared-devicecompliancepolicy-assign.md)|Коллекция [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md)|Н/Д|
-|Действие scheduleActionsForRules|Нет|Пока не задокументировано|
-|действие Рефрешдевицекомплианцерепортсуммаризатион] (.. /АПИ/интуне-Шаред-девицекомплианцеполици-рефрешдевицекомплианцерепортсуммаризатион.МД)|Нет|Пока не задокументировано|
+|Действие scheduleActionsForRules|Нет|Н/Д|
+|действие Рефрешдевицекомплианцерепортсуммаризатион] (.. /АПИ/интуне-Шаред-девицекомплианцеполици-рефрешдевицекомплианцерепортсуммаризатион.МД)|Нет|Н/Д|
 |**Набор политик**|
 |[действие Хаспайлоадлинкс](../api/intune-shared-devicecompliancepolicy-haspayloadlinks.md)|Коллекция [хаспайлоадлинкресултитем](../resources/intune-policyset-haspayloadlinkresultitem.md)|Н/Д|
 
@@ -42,7 +42,7 @@ ms.locfileid: "43443619"
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |description|String|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|Строка|Указанное администратором имя конфигурации устройства.|
+|displayName|String|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
 ## <a name="relationships"></a>Связи
@@ -55,7 +55,7 @@ ms.locfileid: "43443619"
 |deviceStatusOverview|[deviceComplianceDeviceOverview](../resources/intune-deviceconfig-devicecompliancedeviceoverview.md)|Обзор состояния соответствия требованиям устройств.|
 |userStatusOverview|[deviceComplianceUserOverview](../resources/intune-deviceconfig-devicecomplianceuseroverview.md)|Обзор состояния соответствия требованиям устройств для пользователей.|
 |deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Сводка по состоянию параметров обеспечения соответствия требованиям для устройств.|
-|assignments|Коллекция объектов [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md)|Коллекция назначений для этой политики обеспечения соответствия требованиям.|
+|assignments|Коллекция [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md)|Коллекция назначений для этой политики обеспечения соответствия требованиям.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -79,6 +79,9 @@ ms.locfileid: "43443619"
   "version": 1024
 }
 ```
+
+
+
 
 
 

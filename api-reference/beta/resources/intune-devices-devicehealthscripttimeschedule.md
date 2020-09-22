@@ -3,14 +3,14 @@ title: Тип ресурса Девицехеалсскрипттимесчед�
 description: Базовый тип расписания работоспособности устройства для сценария работоспособности.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 75767d71b56b848cc045c08544b0633633eb73ac
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 6152b9b2c0c6e5d7a3cb6928f4047f9f68c912b9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176223"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060197"
 ---
 # <a name="devicehealthscripttimeschedule-resource-type"></a>Тип ресурса Девицехеалсскрипттимесчедуле
 
@@ -32,7 +32,7 @@ ms.locfileid: "44176223"
 |усеутк|Boolean|Укажите время в формате UTC или местное время клиента.|
 |time|TimeOfDay|При планировании запуска сценария. Эта коллекция может содержать не более 20 элементов.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -50,6 +50,9 @@ ms.locfileid: "44176223"
   "time": "String (time of day)"
 }
 ```
+
+
+
 
 
 

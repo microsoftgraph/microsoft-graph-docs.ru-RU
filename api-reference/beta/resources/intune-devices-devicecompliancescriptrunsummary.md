@@ -3,14 +3,14 @@ title: Тип ресурса Девицекомплианцескриптрун�
 description: Содержит свойства сводки по запуску сценария управления устройствами.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c436261961be8938e8905bc9f19be1690c7f79c4
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: a53b536ed8958e82b487e2f244d53077e7c21112
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44789564"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060505"
 ---
 # <a name="devicecompliancescriptrunsummary-resource-type"></a>Тип ресурса Девицекомплианцескриптрунсуммари
 
@@ -25,8 +25,8 @@ ms.locfileid: "44789564"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение Девицекомплианцескриптрунсуммари](../api/intune-devices-devicecompliancescriptrunsummary-get.md)|[девицекомплианцескриптрунсуммари](../resources/intune-devices-devicecompliancescriptrunsummary.md)|Чтение свойств и связей объекта [девицекомплианцескриптрунсуммари](../resources/intune-devices-devicecompliancescriptrunsummary.md) .|
-|[Обновление Девицекомплианцескриптрунсуммари](../api/intune-devices-devicecompliancescriptrunsummary-update.md)|[девицекомплианцескриптрунсуммари](../resources/intune-devices-devicecompliancescriptrunsummary.md)|Обновление свойств объекта [девицекомплианцескриптрунсуммари](../resources/intune-devices-devicecompliancescriptrunsummary.md) .|
+|[Получение Девицекомплианцескриптрунсуммари](../api/intune-devices-devicecompliancescriptrunsummary-get.md)|[deviceComplianceScriptRunSummary](../resources/intune-devices-devicecompliancescriptrunsummary.md)|Чтение свойств и связей объекта [девицекомплианцескриптрунсуммари](../resources/intune-devices-devicecompliancescriptrunsummary.md) .|
+|[Обновление Девицекомплианцескриптрунсуммари](../api/intune-devices-devicecompliancescriptrunsummary-update.md)|[deviceComplianceScriptRunSummary](../resources/intune-devices-devicecompliancescriptrunsummary.md)|Обновление свойств объекта [девицекомплианцескриптрунсуммари](../resources/intune-devices-devicecompliancescriptrunsummary.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -60,6 +60,9 @@ ms.locfileid: "44789564"
   "lastScriptRunDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

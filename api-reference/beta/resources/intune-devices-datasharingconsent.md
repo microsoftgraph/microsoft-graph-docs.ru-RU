@@ -3,14 +3,14 @@ title: Тип ресурса Даташарингконсент
 description: Сведения о согласии общего доступа к данным.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 22247866b1f1a4c2a9ae391cd7c9564e67f20f3c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9a646bc7f618e67fe24f24ca3343fbf2cfa3c414
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456910"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060617"
 ---
 # <a name="datasharingconsent-resource-type"></a>Тип ресурса Даташарингконсент
 
@@ -66,6 +66,9 @@ ms.locfileid: "43456910"
   "grantedByUserId": "String"
 }
 ```
+
+
+
 
 
 

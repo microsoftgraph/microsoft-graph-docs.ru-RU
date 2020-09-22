@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс choiceColumn в ресурсе columnDefinition указывает, что значения столбца можно выбрать из списка вариантов.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a29a80bccd2afb76804b2e1a4d81b5a69d44adf1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 298eab65c77df57c6ec70715239dcc7f4e13d316
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533074"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48059161"
 ---
 # <a name="choicecolumn-resource-type"></a>Тип ресурса choiceColumn
 
@@ -53,3 +53,4 @@ ms.locfileid: "42533074"
   ],
   "tocPath": "Resources/ChoiceColumn"
 } -->
+

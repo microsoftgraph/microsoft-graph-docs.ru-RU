@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементабстрактк�
 description: Экземпляр параметра, представляющий сложное значение для абстрактного параметра
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b6106e8690cb25dac395f83ca17ca705d7c6ba92
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7b8a5e0481e291a77a066f7a1e089d43bed65f9a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470793"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061597"
 ---
 # <a name="devicemanagementabstractcomplexsettinginstance-resource-type"></a>Тип ресурса Девицеманажементабстракткомплекссеттингинстанце
 
@@ -64,6 +64,9 @@ ms.locfileid: "43470793"
   "implementationId": "String"
 }
 ```
+
+
+
 
 
 

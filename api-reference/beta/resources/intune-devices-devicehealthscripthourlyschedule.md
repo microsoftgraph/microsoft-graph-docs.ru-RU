@@ -3,14 +3,14 @@ title: Тип ресурса Девицехеалсскрипсаурлисче�
 description: Тип почасового расписания для сценария работоспособности устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d2276d95d09a1628b07d3b9bc87381b0d85d431f
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 8365e4897a75df8c4247183aea37e1415ac893a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176254"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060337"
 ---
 # <a name="devicehealthscripthourlyschedule-resource-type"></a>Тип ресурса Девицехеалсскрипсаурлисчедуле
 
@@ -46,6 +46,9 @@ ms.locfileid: "44176254"
   "interval": 1024
 }
 ```
+
+
+
 
 
 

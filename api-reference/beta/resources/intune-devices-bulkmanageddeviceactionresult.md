@@ -3,14 +3,14 @@ title: Тип ресурса Булкманажеддевицеактионре�
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b661577af3bcd1282a007555c25eb60b121ce539
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 97b56db5eb906d16b344e9e8c0a2bbb920cf5e46
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465190"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060842"
 ---
 # <a name="bulkmanageddeviceactionresult-resource-type"></a>Тип ресурса Булкманажеддевицеактионресулт
 
@@ -57,6 +57,9 @@ ms.locfileid: "43465190"
   ]
 }
 ```
+
+
+
 
 
 

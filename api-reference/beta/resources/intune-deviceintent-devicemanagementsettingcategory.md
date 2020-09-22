@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементсеттингка�
 description: Сущность, представляющая категорию параметров
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fe3e2d1877548232df5da92bdee85408d462e281
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: acf2e01ae003fa8e5ce4355ce42c6c049949dc98
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443284"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061275"
 ---
 # <a name="devicemanagementsettingcategory-resource-type"></a>Тип ресурса Девицеманажементсеттингкатегори
 
@@ -35,7 +35,7 @@ ms.locfileid: "43443284"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор категории|
-|displayName|Строка|Имя категории|
+|displayName|String|Имя категории|
 |хасрекуиредсеттинг|Boolean|Категория содержит параметры, необходимые для верхнего уровня|
 
 ## <a name="relationships"></a>Связи
@@ -59,6 +59,9 @@ ms.locfileid: "43443284"
   "hasRequiredSetting": true
 }
 ```
+
+
+
 
 
 

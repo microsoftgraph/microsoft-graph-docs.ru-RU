@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементскриптасс�
 description: Содержит свойства, используемые для назначения скрипта управления устройствами группе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c17e8db31e90ef6f741dec7799bbbbb14cb8f42a
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: d979b939134245bc95b1defbab0e818180e962c4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793409"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060141"
 ---
 # <a name="devicemanagementscriptassignment-resource-type"></a>Тип ресурса Девицеманажементскриптассигнмент
 
@@ -59,6 +59,9 @@ ms.locfileid: "44793409"
   }
 }
 ```
+
+
+
 
 
 

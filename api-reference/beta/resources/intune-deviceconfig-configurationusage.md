@@ -3,14 +3,14 @@ title: тип перечисления Конфигуратионусаже
 description: Возможные значения списка Конфигуратионусаже.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 44c9095efed42718f0f012d190943293f67368df
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 0faa1ae3bb38b861909e612f7eeb957df167033d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177529"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062031"
 ---
 # <a name="configurationusage-enum-type"></a>тип перечисления Конфигуратионусаже
 
@@ -26,9 +26,12 @@ ms.locfileid: "44177529"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |заблокированных|нуль|Разрешена.|
-|Обязательный|1,1|Обязательный.|
-|разрешенных|2|Необязательный параметр.|
+|Обязательный|1 |Обязательно.|
+|разрешенных|2 |Необязательное свойство.|
 |notConfigured|4|Не настроен.|
+
+
+
 
 
 

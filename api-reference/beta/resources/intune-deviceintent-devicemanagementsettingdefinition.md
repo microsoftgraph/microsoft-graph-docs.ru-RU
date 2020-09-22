@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементсеттингде�
 description: Сущность, представляющая определение определения для заданной настройки
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d09f1ed2129af06eb697522ccfa4ddd493d03025
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fa69157c22c7b04ec3d5afcee3c029b50354f122
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443270"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48061226"
 ---
 # <a name="devicemanagementsettingdefinition-resource-type"></a>Тип ресурса Девицеманажементсеттингдефинитион
 
@@ -36,7 +36,7 @@ ms.locfileid: "43443270"
 |:---|:---|:---|
 |id|String|Идентификатор определения параметра|
 |Типом|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|Тип данных значения. Возможные значения: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
-|displayName|Строка|Отображаемое имя параметра|
+|displayName|String|Отображаемое имя параметра|
 |истоплевел|Boolean|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
 |description|String|Описание параметра|
 |плацехолдертекст|String|Замещающий текст в качестве примера допустимых входных данных|
@@ -93,6 +93,9 @@ ms.locfileid: "43443270"
   ]
 }
 ```
+
+
+
 
 
 
