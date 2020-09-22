@@ -6,12 +6,12 @@ title: Получение файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e496682671eea4a7cebfca72789d5d85fe9f3366
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ee46dfde6ca18520dbafe949248ead4e899a1c38
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432581"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982033"
 ---
 # <a name="get-a-driveitem-resource"></a>Получение ресурса DriveItem
 
@@ -57,7 +57,7 @@ GET /users/{userId}/drive/root:/{item-path}
 
 С помощью [`$expand`параметра строки запроса](/graph/query-parameters) вы можете включить дочерние элементы запрос на получение метаданных элемента при наличии **дочерней** связи.
 
-Вы также можете использовать параметр `includeDeletedItems=true` запроса, чтобы вернуть удаленные элементы.
+Вы также можете использовать `includeDeletedItems=true` параметр запроса, чтобы вернуть удаленные элементы.
 Этот параметр запроса является допустимым только при нацеливании на [driveItem](../resources/driveitem.md) по идентификатору, и в противном случае он будет игнорироваться.
 В настоящее время поддерживается только в OneDrive персональный.
 
@@ -153,3 +153,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

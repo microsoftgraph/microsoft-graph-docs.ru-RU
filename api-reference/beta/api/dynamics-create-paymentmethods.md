@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 8c6512c6539dbc48fb3d35124370ec672a4759ab
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f4e23fd95c4550c43ce78aa0a1c15771afe7672a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431346"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981656"
 ---
 # <a name="create-paymentmethods"></a>Создание Пайментмесодс
 
@@ -48,8 +48,8 @@ POST /financials/companies/{id}/paymentMethods
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта **пайментмесодс** в формате JSON.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **пайментмесодс** в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **пайментмесодс** в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -85,4 +85,6 @@ Content-type: application/json
 }
 
 ```
+
+
 

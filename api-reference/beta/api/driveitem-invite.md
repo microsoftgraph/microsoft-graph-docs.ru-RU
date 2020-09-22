@@ -6,12 +6,12 @@ title: Отправка приглашения на доступ к элемен
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 594df009c38ff1d7384207e7486392f24d7a8dbd
-ms.sourcegitcommit: 6db0b7a473594653dda332ce7da45ea2ad90772b
+ms.openlocfilehash: fdcae44f4d9be14fee4d9da81a96cc9c063ab061
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43146403"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982031"
 ---
 # <a name="send-a-sharing-invitation"></a>Отправка приглашения к совместному использованию
 
@@ -242,3 +242,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

@@ -6,12 +6,12 @@ title: Поиск файлов
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: edd6a0f1c43b7aa27b4089a63902840ce7e2562d
-ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
+ms.openlocfilehash: 1f9beaf23be8d145f768b9ca49111e731d33a3cc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47287472"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981907"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Поиск элементов DriveItem на диске
 
@@ -189,3 +189,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

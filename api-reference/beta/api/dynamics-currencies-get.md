@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 6c8d3fdf8c6251e4764cfd61a484c287af58e53f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb96fceef882cd90def2746ea556bc9ea54581a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42430947"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981522"
 ---
 # <a name="get-currencies"></a>Получение валют
 
@@ -48,7 +48,7 @@ GET /financials/companies/{id}/currencies/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **валюты** в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -78,3 +78,5 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id}
   "lastModifiedDateTime": "2017-03-22T21:05:09.003Z"
 }
 ```
+
+

@@ -6,12 +6,12 @@ title: Создание списка файлов, к которым мне пр
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e06497071d78d02df93338ed7cdbe67e6c67cbfe
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: fde94804b521c161936fbc4ffafb206f6caf458b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524235"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982180"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>Создание списка элементов, к которым предоставлен доступ пользователю, выполнившему вход в систему
 
@@ -109,7 +109,7 @@ Content-Type: application/json
 ```http
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
-По умолчанию **шаредвисме** возвращает элементы, которые используются в вашем клиенте. Чтобы включить элементы, которые используются совместно с внешними клиентами, добавьте `?allowexternal=true` к запросу Get.
+По умолчанию **шаредвисме** возвращает элементы, которые используются в вашем клиенте. Чтобы включить общие элементы из внешних клиентов, добавьте `?allowexternal=true` в запрос GET.
 
 <!--
 {
@@ -122,3 +122,5 @@ GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
   ]
 }
 -->
+
+

@@ -6,12 +6,12 @@ title: Список последних файлов
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 40ea44221359d47f8290b34538b62763a2070e12
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 966e17f3e016ed644eb42cbf6d8c075bfe502f87
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42433141"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982187"
 ---
 # <a name="list-recent-files"></a>Список последних файлов
 
@@ -127,3 +127,5 @@ GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
   ]
 }
 -->
+
+

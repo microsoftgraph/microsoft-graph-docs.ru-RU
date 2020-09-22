@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: c3d2061a4e1c3d78f6ee305bfe87ca82f992ac8e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7f2da2cc9540b1dc3d884fffe3a89fc50dbf32c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431213"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981620"
 ---
 # <a name="create-taxareas"></a>Создание Таксареас
 
@@ -49,8 +49,8 @@ POST /financials/companies/{id}/taxAreas/{id}
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта **таксареас** в формате JSON.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **таксареас** в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **таксареас** в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -82,3 +82,5 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-05-17T11:30:01.313Z"
 }
 ```
+
+

@@ -5,12 +5,12 @@ title: 'driveItem: checkin'
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8cc008e18bd70acfed0bb6b951d3694f3cc9593d
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 92200c0e079a885192f2ad1709a1e45bb15370e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43227584"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982168"
 ---
 # <a name="driveitem-checkin"></a>driveItem: checkin
 
@@ -42,7 +42,7 @@ POST /sites/{siteId}/drive/items/{itemId}/checkin
 POST /users/{userId}/drive/items/{itemId}/checkin
 ```
 
-### <a name="request-body"></a>Текст запроса
+### <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -109,3 +109,5 @@ HTTP/1.1 204 No content
   ]
 }
 -->
+
+

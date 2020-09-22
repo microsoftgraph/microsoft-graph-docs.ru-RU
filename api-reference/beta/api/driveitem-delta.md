@@ -6,12 +6,12 @@ title: Синхронизация содержимого ресурса drive
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: a8cbbff6eaada0730ee5a70a982e053388ded817
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 729f3cac63e9fbb9c37db173983bc00d3da4688e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432784"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982108"
 ---
 # <a name="track-changes-for-a-drive"></a>Отслеживание изменений для Drive
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -166,7 +166,7 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta(token='1230919asd190410
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -294,3 +294,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

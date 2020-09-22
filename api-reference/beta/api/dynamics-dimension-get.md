@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: c89f99a32ba04012dcd33587dce01545f6c31cea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4bad317a0d0ff09e8e671427b6c58ca98ed7742a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42430338"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981385"
 ---
 # <a name="get-dimensions"></a>Получение измерений
 
@@ -48,7 +48,7 @@ GET /financials/companies/{id}/dimensions/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **dimensions** в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -74,4 +74,6 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/dimensions/{id}
   "lastModifiedDateTime": "2017-03-17T19:02:22.043Z"
 }
 ```
+
+
 

@@ -6,12 +6,12 @@ title: Загрузка предыдущей версии
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: d24688e5ecd5affa938dc2acc52112783d7f2181
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1c342a870cd8649489f4ceeb80d6afc2e729fbe5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432294"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981821"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>Скачивание содержимого ресурса DriveItemVersion (ознакомительная версия)
 
@@ -46,7 +46,7 @@ GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}/content
 GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Возвращает отклик `302 Found`, который выполняет перенаправление на URL-адрес, прошедший предварительную проверку подлинности и предназначенный для скачивания байтов файла.
 
@@ -111,3 +111,5 @@ OneDrive не сохраняет полные метаданные для пре
   ]
 }
 -->
+
+

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 50c80456ed2f61e75de0b822f69b4abee94b2a0d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb78fef62cb2d17e622c11cbd575905b60656f79
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431825"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981739"
 ---
 # <a name="create-currencies"></a>Создание валют
 
@@ -48,8 +48,8 @@ POST /financials/companies/{id}/currencies
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта **денежных единиц** в формате JSON.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **валюты** в теле отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **валюты** в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -91,3 +91,5 @@ Content-type: application/json
 }
 
 ```
+
+

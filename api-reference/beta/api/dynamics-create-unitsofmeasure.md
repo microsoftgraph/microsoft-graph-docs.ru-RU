@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: f0538fcaee242c0105200b191f9c3c9441fb2538
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 518e79afa8276c5ee94474dadb7b02e4eab4b1f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431143"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981578"
 ---
 # <a name="create-unitsofmeasure"></a>Создание Унитсофмеасуре
 
@@ -48,8 +48,8 @@ POST /financials/companies/{id}/unitsOfMeasure
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта **унитсофмеасуре** в формате JSON.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **унитсофмеасуре** в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **унитсофмеасуре** в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -87,4 +87,6 @@ Content-type: application/json
 }
 
 ```
+
+
 

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 3ecf5df6dbd03014ba026ba8673c9a4b2fffd5b5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 42ee1c369a1c19bab88edf6aa274d3675779b557
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431482"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981683"
 ---
 # <a name="create-itemcategories"></a>Создание Итемкатегориес
 
@@ -48,8 +48,8 @@ POST /financials/companies/{id}/itemCategories
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта **итемкатегориес** в формате JSON.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **итемкатегориес** в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **итемкатегориес** в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -85,6 +85,8 @@ Content-type: application/json
 }
 
 ```
+
+
 
 
 

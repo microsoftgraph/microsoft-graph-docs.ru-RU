@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 2350bb112b0585e822c4c4c92af5511705b3612c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cb188423bbbdcc90a71442f6a0e80ba70dcbc42d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431384"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981669"
 ---
 # <a name="create-journallines"></a>Создание Жаурналлинес
 
@@ -49,8 +49,8 @@ POST /financials/companies/{id}/journals/{id}/journalLines/{id}
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта **жаурналлинес** в формате JSON.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **жаурналлинес** в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **жаурналлинес** в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -95,5 +95,7 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-17T19:02:22.043Z"
 }
 ```
+
+
 
 

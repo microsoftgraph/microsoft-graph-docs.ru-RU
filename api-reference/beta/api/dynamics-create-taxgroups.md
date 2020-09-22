@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 8bc45dfbb7efe2d2f5fcc3ab33af38331621445b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fff1e6b1376669b8d5f226b14f2b3f647aec39d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431150"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981599"
 ---
 # <a name="create-taxgroups"></a>Создание Таксграупс
 
@@ -49,8 +49,8 @@ POST /financials/companies/{id}/taxGroups
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта **таксграупс** в формате JSON.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **таксграупс** в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **таксграупс** в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -88,3 +88,5 @@ Content-type: application/json
 }
 
 ```
+
+

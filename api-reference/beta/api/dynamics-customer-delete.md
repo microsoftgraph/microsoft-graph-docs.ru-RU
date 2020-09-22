@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 69a2ccdeeeefc01a5b089180e81936a8600706c7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9dd3dd0d1a1938b02a339836aa410966043ca77d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42430898"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981508"
 ---
 # <a name="delete-customers"></a>Удаление клиентов
 
@@ -43,12 +43,12 @@ DELETE /financials/companies/{id}/customers/{id}
 |Заголовок         |Значение                     |
 |---------------|--------------------------|
 |Авторизация  |Bearer {токен}. Обязательный. |
-|If-Match       |Обязательный. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу **клиентов**, **Клиенты** не будут обновлены. |
+|If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу **клиентов**, **Клиенты** не будут обновлены. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика ```204 No Content```. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
@@ -68,4 +68,6 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/customers/{id}
 ```json
 HTTP/1.1 204 No Content
 ```
+
+
 

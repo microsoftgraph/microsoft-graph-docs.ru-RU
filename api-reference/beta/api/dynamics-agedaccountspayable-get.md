@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 36f8c82fc832eafa538c8a913cfb5863d2a1606f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3bb688455e394b632402be6d71ba29be0eb9ba86
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432098"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981767"
 ---
 # <a name="get-agedaccountspayable"></a>Получение Ажедаккаунтспайабле
 
@@ -46,7 +46,7 @@ GET /financials/companies/{id}/agedAccountsPayable
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **ажедаккаунтспайабле** в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -79,3 +79,5 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsPayab
   "periodLengthFilter": "3M"  
 }
 ```
+
+

@@ -6,12 +6,12 @@ title: Копирование файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8a52a97b961daa5e21b398dc6dc3f00d182de77f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c4c95e90a81d5336914b3638119f4802f86aea1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432917"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982145"
 ---
 # <a name="copy-a-driveitem"></a>Копирование ресурса DriveItem
 
@@ -121,3 +121,5 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B
   ]
 }
 -->
+
+

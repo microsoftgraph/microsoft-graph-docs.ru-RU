@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: e58f0f3c44d9ed7e78ecdd8176d4710e89542f7b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bb1bc0754d921f6c979f78cec5a496c5ad52bd9b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431587"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981711"
 ---
 # <a name="create-employees"></a>Создание сотрудников
 
@@ -48,8 +48,8 @@ POST /financials/companies/{id}/employees
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта **Employees** в формате JSON.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **Employees** в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **Employees** в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -121,4 +121,6 @@ Content-type: application/json
 }
 
 ```
+
+
 

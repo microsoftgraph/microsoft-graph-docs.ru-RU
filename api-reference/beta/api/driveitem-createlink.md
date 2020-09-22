@@ -6,12 +6,12 @@ title: Предоставление доступа к файлу посредс�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8263c675fae86a664c12f7d49967eef50c3a11cb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8194f5919569e3207ceb3bd5d83d0b7dd1bd5af9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432805"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982131"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Создание ссылки совместного доступа для ресурса DriveItem
 
@@ -186,7 +186,7 @@ Content-Type: application/json
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -284,3 +284,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

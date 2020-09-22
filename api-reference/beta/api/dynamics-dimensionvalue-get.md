@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: f850a28963596a5818eee266ce1e081cd3b0a15f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2c23b9c3708aec209f4d2f504fe533a21dbbff39
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42430149"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981376"
 ---
 # <a name="get-dimensionvalues"></a>Получение Дименсионвалуес
 
@@ -48,7 +48,7 @@ GET /financials/companies/{id}/dimensions/{id}/dimensionValues/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **дименсионвалуес** в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -74,4 +74,6 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/dimensions/{id}/d
   "lastModifiedDateTime": "2017-03-17T19:02:22.043Z"
 }
 ```
+
+
 

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: eeeb6a2143963803dc9b6ba06a2e780d7c7fab02
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 25c56b0c2a65454d93b900706cb54977e912069f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431517"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981690"
 ---
 # <a name="create-items"></a>Создание элементов
 
@@ -48,8 +48,8 @@ POST /financials/companies/{id}/items
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта **Items** в формате JSON.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **Items** в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **Items** в тексте отклика.
 
 ## <a name="example"></a>Пример
 **Запрос**
@@ -94,4 +94,6 @@ Content-type: application/json
   "lastModifiedDateTime": "2015-11-09T02:14:32Z"
 }
 ```
+
+
 

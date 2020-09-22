@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 4b7d2507e28c7da3fd5be46921ccde1299c62722
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 82596b160bbf05dd7039e838835915905c8d076a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42430793"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981473"
 ---
 # <a name="update-customers"></a>Обновление клиентов
 
@@ -44,7 +44,7 @@ PATCH /financials/companies/{id}/customers/{id}
 |---------------|--------------------------|
 |Авторизация  |Bearer {токен}. Обязательный. |
 |Content-Type   |application/json.         |
-|If-Match       |Обязательный. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу **клиентов**, **Клиенты** не будут обновлены. |
+|If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу **клиентов**, **Клиенты** не будут обновлены. |
 
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
@@ -109,5 +109,7 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-07T00:35:28.983Z"
 }
 ```
+
+
 
 

@@ -6,12 +6,12 @@ title: Создание списка содержимого папки
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 889f5551368fb92f8ef830f0c255616c2d8d7176
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ef6d5db62d931077ffe4de635068cf51a9bdca29
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432567"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981998"
 ---
 # <a name="list-children-of-a-driveitem"></a>Создание списка дочерних элементов ресурса driveItem
 
@@ -166,3 +166,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

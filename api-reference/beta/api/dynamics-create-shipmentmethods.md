@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 8b33d044549a67ce27bb160db382e06bbcf73b9d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c59e690e33d847065c0e5c4a06ccbda0daeed2c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431255"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981608"
 ---
 # <a name="create-shipmentmethods"></a>Создание Шипментмесодс
 
@@ -49,8 +49,8 @@ POST /financials/companies/{id}/shipmentMethods
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта **шипментмесодс** в формате JSON.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **шипментмесодс** в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **шипментмесодс** в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -86,3 +86,5 @@ Content-type: application/json
 }
 
 ```
+
+

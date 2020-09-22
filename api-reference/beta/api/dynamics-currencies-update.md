@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: ccbd21cfa327865e2c7fc10aa98355bd3a68cde8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 611667d37ac9a1abe88a1b1921a968ab94060727
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42430905"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981520"
 ---
 # <a name="update-currencies"></a>Обновление валют
 
@@ -44,7 +44,7 @@ PATCH /financials/companies/{id}/currencies/{id}
 |-------------|-------------------------|
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type |application/json         |
-|If-Match     |Обязательный. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **валютах**, то **валюты** не будут обновлены. |
+|If-Match     |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **валютах**, то **валюты** не будут обновлены. |
 
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
@@ -86,3 +86,5 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-22T21:12:18.793Z"
 }
 ```
+
+

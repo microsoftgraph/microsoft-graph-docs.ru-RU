@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 2bf393a954078585cc89a073947c636a233a2a00
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b0a85dd1d177f5a6ac3caea8054e6bc0aa5aeb0d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431087"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981550"
 ---
 # <a name="create-vendors"></a>Создание поставщиков
 
@@ -48,8 +48,8 @@ POST /financials/companies/{id}/vendors
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта **вендоров** в формате JSON.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **вендоров** в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **вендоров** в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -100,4 +100,6 @@ Content-type: application/json
 }
 
 ```
+
+
 

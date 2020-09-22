@@ -8,12 +8,12 @@ localization_priority: Normal
 ms.author: solsen
 doc_type: apiPageType
 ms.prod: dynamics-365-business-central
-ms.openlocfilehash: 70b0e5824f29c356a1df3c74e33a3fed355bd166
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e4ce922a2e7880b868855f16cbe7b8bc2694bfbe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431979"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981753"
 ---
 # <a name="get-agedaccountsreceivable"></a>Получение Ажедаккаунтсрецеивабле
 
@@ -47,7 +47,7 @@ GET /financials/companies/{id}/agedAccountsReceivable
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **ажедаккаунтсрецеивабле** в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -81,3 +81,5 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/agedAccountsRecei
   "periodLengthFilter": "3M"   
 }
 ```
+
+

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 8ad066ad4eee33f8a5e73612fd401e030641d820
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2309889f58575f2e8b50a6fe3d31c98700d5fb9d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42429995"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981331"
 ---
 # <a name="get-employees"></a>Получение сотрудников
 
@@ -47,7 +47,7 @@ GET /financials/companies/{id}/employees/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **Employees** в тексте отклика.
 
 **Запрос**
@@ -92,5 +92,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/employees/{id}
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z"  
 }
 ```
+
+
 
 

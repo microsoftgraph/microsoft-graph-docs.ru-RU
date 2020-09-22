@@ -6,12 +6,12 @@ title: Отписаться от элемента Drive
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 29c07176a2d37f7e38deaa4c4020287d82495834
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 278840415b00270061e04a2aab71beb9f3cb6eb5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432329"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981844"
 ---
 # <a name="unfollow-drive-item"></a>Отписаться от элемента Drive
 
@@ -55,7 +55,7 @@ POST /users/{user-id}/drive/items/{item-id}/unfollow
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-В этом примере отменяется отслеживание элемента, `{item-id}`указанного в параметре.
+В этом примере отменяется отслеживание элемента, указанного в параметре `{item-id}` .
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -97,3 +97,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

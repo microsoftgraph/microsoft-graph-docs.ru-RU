@@ -6,12 +6,12 @@ title: Получение эскизов файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: be3c85dd72410b84b7fac49fe1e8794d56beab05
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0642df89f46574b2bc6136d50f0cb4ab113295e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432525"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981993"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Список эскизов для ресурса DriveItem
 
@@ -60,7 +60,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 Этот метод поддерживает [параметр запросов OData](/graph/query-parameters) `$select` для настройки отклика.
 
-Кроме того, этот метод поддерживает получение эскиза с исходным значением EXIF и без примененного вращения путем добавления параметра `originalOrientation=true` запроса.
+Кроме того, этот метод поддерживает получение эскиза с исходным значением EXIF и без примененного вращения путем добавления `originalOrientation=true` параметра запроса.
 В настоящее время поддерживается только в OneDrive персональный.
 
 ## <a name="response"></a>Отклик
@@ -238,7 +238,7 @@ GET /me/drive/items/{item-id}/children?$expand=thumbnails
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Служба возвращает список ресурсов DriveItem и их эскизов.
 
@@ -376,3 +376,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

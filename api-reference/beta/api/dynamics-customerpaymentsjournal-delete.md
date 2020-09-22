@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 7844d1caab27cb1cc5e4fd171a79d5c585a16a49
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2cdc8058b2a3069695ecc543d07d7fd543eab70a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42430576"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981410"
 ---
 # <a name="delete-customerpaymentjournals"></a>Удаление Кустомерпайментжаурналс
 
@@ -43,13 +43,13 @@ DELETE /financials/companies/{id}/customerPaymentJournals/{id}
 |Заголовок       |Значение                     |
 |-------------|--------------------------|
 |Авторизация|Bearer {токен}. Обязательный. |
-|If-Match     |Обязательный. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **кустомерпайментжаурналс**, **кустомерпайментжаурналс** не будет обновлен. |
+|If-Match     |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **кустомерпайментжаурналс**, **кустомерпайментжаурналс** не будет обновлен. |
 
 ## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика ```204 No Content```. В тексте отклика не возвращается никаких данных.
 
@@ -70,4 +70,6 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymen
 ```json
 HTTP/1.1 204 No Content
 ```
+
+
 

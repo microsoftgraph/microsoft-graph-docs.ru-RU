@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: ef94284b3c543868987a82a0f8422e9018060bdd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f98b395182a5b0acaf122bf0973c5904cc9e5d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431965"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981746"
 ---
 # <a name="get-companyinformation"></a>Получение Компанинформатион
 
@@ -46,7 +46,7 @@ GET /financials/companies/{id}/companyInformation/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **компанинформатион** в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -88,3 +88,5 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/companyInformatio
   "lastModifiedDateTime": "2017-03-16T14:57:19.497Z"
 }
 ```
+
+

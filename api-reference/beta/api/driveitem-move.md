@@ -6,12 +6,12 @@ title: Перемещение файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: fd7e67e613d7f08cb02b820c5e2d48be28a0da64
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c463f0f8b8d19ab4c1a8b64a4a04ceb9b42b5887
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432483"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981949"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>Перемещение ресурса DriveItem в новую папку
 
@@ -137,3 +137,5 @@ Content-type: application/json
   ]
 }
 -->
+
+
