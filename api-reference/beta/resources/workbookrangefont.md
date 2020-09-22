@@ -5,46 +5,46 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 9ddbb607a243f4571d53dcf887f80a171b230748
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 126bff335ff8f9345bbdcf54e08cff471fc064b3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519178"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48046211"
 ---
-# <a name="workbookrangefont-resource-type"></a><span data-ttu-id="24a2b-103">Тип ресурса Воркбукранжефонт</span><span class="sxs-lookup"><span data-stu-id="24a2b-103">workbookRangeFont resource type</span></span>
+# <a name="workbookrangefont-resource-type"></a><span data-ttu-id="c96ff-103">Тип ресурса Воркбукранжефонт</span><span class="sxs-lookup"><span data-stu-id="c96ff-103">workbookRangeFont resource type</span></span>
 
-<span data-ttu-id="24a2b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="24a2b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c96ff-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c96ff-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="24a2b-105">Этот объект представляет атрибуты шрифта (имя, размер, цвет и т. д.) для объекта.</span><span class="sxs-lookup"><span data-stu-id="24a2b-105">This object represents the font attributes (font name, font size, color, etc.) for an object.</span></span>
+<span data-ttu-id="c96ff-105">Этот объект представляет атрибуты шрифта (имя, размер, цвет и т. д.) для объекта.</span><span class="sxs-lookup"><span data-stu-id="c96ff-105">This object represents the font attributes (font name, font size, color, etc.) for an object.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="24a2b-106">Методы</span><span class="sxs-lookup"><span data-stu-id="24a2b-106">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="c96ff-106">Методы</span><span class="sxs-lookup"><span data-stu-id="c96ff-106">Methods</span></span>
 
-| <span data-ttu-id="24a2b-107">Метод</span><span class="sxs-lookup"><span data-stu-id="24a2b-107">Method</span></span>           | <span data-ttu-id="24a2b-108">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="24a2b-108">Return Type</span></span>    |<span data-ttu-id="24a2b-109">Описание</span><span class="sxs-lookup"><span data-stu-id="24a2b-109">Description</span></span>|
+| <span data-ttu-id="c96ff-107">Метод</span><span class="sxs-lookup"><span data-stu-id="c96ff-107">Method</span></span>           | <span data-ttu-id="c96ff-108">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="c96ff-108">Return Type</span></span>    |<span data-ttu-id="c96ff-109">Описание</span><span class="sxs-lookup"><span data-stu-id="c96ff-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="24a2b-110">Получение Воркбукранжефонт</span><span class="sxs-lookup"><span data-stu-id="24a2b-110">Get workbookRangeFont</span></span>](../api/rangefont-get.md) | [<span data-ttu-id="24a2b-111">воркбукранжефонт</span><span class="sxs-lookup"><span data-stu-id="24a2b-111">workbookRangeFont</span></span>](workbookrangefont.md) |<span data-ttu-id="24a2b-112">Чтение свойств и связей объекта rangeFont.</span><span class="sxs-lookup"><span data-stu-id="24a2b-112">Read properties and relationships of rangeFont object.</span></span>|
-|[<span data-ttu-id="24a2b-113">Обновление</span><span class="sxs-lookup"><span data-stu-id="24a2b-113">Update</span></span>](../api/rangefont-update.md) | [<span data-ttu-id="24a2b-114">воркбукранжефонт</span><span class="sxs-lookup"><span data-stu-id="24a2b-114">workbookRangeFont</span></span>](workbookrangefont.md)   |<span data-ttu-id="24a2b-115">Обновление объекта RangeFont.</span><span class="sxs-lookup"><span data-stu-id="24a2b-115">Update RangeFont object.</span></span> |
+|[<span data-ttu-id="c96ff-110">Получение Воркбукранжефонт</span><span class="sxs-lookup"><span data-stu-id="c96ff-110">Get workbookRangeFont</span></span>](../api/rangefont-get.md) | [<span data-ttu-id="c96ff-111">воркбукранжефонт</span><span class="sxs-lookup"><span data-stu-id="c96ff-111">workbookRangeFont</span></span>](workbookrangefont.md) |<span data-ttu-id="c96ff-112">Чтение свойств и связей объекта rangeFont.</span><span class="sxs-lookup"><span data-stu-id="c96ff-112">Read properties and relationships of rangeFont object.</span></span>|
+|[<span data-ttu-id="c96ff-113">Обновление</span><span class="sxs-lookup"><span data-stu-id="c96ff-113">Update</span></span>](../api/rangefont-update.md) | [<span data-ttu-id="c96ff-114">воркбукранжефонт</span><span class="sxs-lookup"><span data-stu-id="c96ff-114">workbookRangeFont</span></span>](workbookrangefont.md)   |<span data-ttu-id="c96ff-115">Обновление объекта RangeFont.</span><span class="sxs-lookup"><span data-stu-id="c96ff-115">Update RangeFont object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="24a2b-116">Свойства</span><span class="sxs-lookup"><span data-stu-id="24a2b-116">Properties</span></span>
-| <span data-ttu-id="24a2b-117">Свойство</span><span class="sxs-lookup"><span data-stu-id="24a2b-117">Property</span></span>     | <span data-ttu-id="24a2b-118">Тип</span><span class="sxs-lookup"><span data-stu-id="24a2b-118">Type</span></span>   |<span data-ttu-id="24a2b-119">Описание</span><span class="sxs-lookup"><span data-stu-id="24a2b-119">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="c96ff-116">Свойства</span><span class="sxs-lookup"><span data-stu-id="c96ff-116">Properties</span></span>
+| <span data-ttu-id="c96ff-117">Свойство</span><span class="sxs-lookup"><span data-stu-id="c96ff-117">Property</span></span>     | <span data-ttu-id="c96ff-118">Тип</span><span class="sxs-lookup"><span data-stu-id="c96ff-118">Type</span></span>   |<span data-ttu-id="c96ff-119">Описание</span><span class="sxs-lookup"><span data-stu-id="c96ff-119">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="24a2b-120">bold</span><span class="sxs-lookup"><span data-stu-id="24a2b-120">bold</span></span>|<span data-ttu-id="24a2b-121">boolean</span><span class="sxs-lookup"><span data-stu-id="24a2b-121">boolean</span></span>|<span data-ttu-id="24a2b-122">Указывает, является ли шрифт полужирным.</span><span class="sxs-lookup"><span data-stu-id="24a2b-122">Represents the bold status of font.</span></span>|
-|<span data-ttu-id="24a2b-123">color</span><span class="sxs-lookup"><span data-stu-id="24a2b-123">color</span></span>|<span data-ttu-id="24a2b-124">string</span><span class="sxs-lookup"><span data-stu-id="24a2b-124">string</span></span>|<span data-ttu-id="24a2b-p101">HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.</span><span class="sxs-lookup"><span data-stu-id="24a2b-p101">HTML color code representation of the text color. E.g. #FF0000 represents Red.</span></span>|
-|<span data-ttu-id="24a2b-128">italic</span><span class="sxs-lookup"><span data-stu-id="24a2b-128">italic</span></span>|<span data-ttu-id="24a2b-129">boolean</span><span class="sxs-lookup"><span data-stu-id="24a2b-129">boolean</span></span>|<span data-ttu-id="24a2b-130">Указывает, применяется ли курсив.</span><span class="sxs-lookup"><span data-stu-id="24a2b-130">Represents the italic status of the font.</span></span>|
-|<span data-ttu-id="24a2b-131">name</span><span class="sxs-lookup"><span data-stu-id="24a2b-131">name</span></span>|<span data-ttu-id="24a2b-132">string</span><span class="sxs-lookup"><span data-stu-id="24a2b-132">string</span></span>|<span data-ttu-id="24a2b-133">Имя шрифта (например, Calibri)</span><span class="sxs-lookup"><span data-stu-id="24a2b-133">Font name (e.g. "Calibri")</span></span>|
-|<span data-ttu-id="24a2b-134">size</span><span class="sxs-lookup"><span data-stu-id="24a2b-134">size</span></span>|<span data-ttu-id="24a2b-135">double</span><span class="sxs-lookup"><span data-stu-id="24a2b-135">double</span></span>|<span data-ttu-id="24a2b-136">размер шрифта</span><span class="sxs-lookup"><span data-stu-id="24a2b-136">Font size.</span></span>|
-|<span data-ttu-id="24a2b-137">underline</span><span class="sxs-lookup"><span data-stu-id="24a2b-137">underline</span></span>| <span data-ttu-id="24a2b-138">Строка</span><span class="sxs-lookup"><span data-stu-id="24a2b-138">String</span></span> |<span data-ttu-id="24a2b-139">Тип подчеркивания, применяемый для шрифта.</span><span class="sxs-lookup"><span data-stu-id="24a2b-139">Type of underline applied to the font.</span></span> <span data-ttu-id="24a2b-140">Возможные значения: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.</span><span class="sxs-lookup"><span data-stu-id="24a2b-140">Possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.</span></span>|
+|<span data-ttu-id="c96ff-120">bold</span><span class="sxs-lookup"><span data-stu-id="c96ff-120">bold</span></span>|<span data-ttu-id="c96ff-121">boolean</span><span class="sxs-lookup"><span data-stu-id="c96ff-121">boolean</span></span>|<span data-ttu-id="c96ff-122">Указывает, является ли шрифт полужирным.</span><span class="sxs-lookup"><span data-stu-id="c96ff-122">Represents the bold status of font.</span></span>|
+|<span data-ttu-id="c96ff-123">color</span><span class="sxs-lookup"><span data-stu-id="c96ff-123">color</span></span>|<span data-ttu-id="c96ff-124">string</span><span class="sxs-lookup"><span data-stu-id="c96ff-124">string</span></span>|<span data-ttu-id="c96ff-p101">HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.</span><span class="sxs-lookup"><span data-stu-id="c96ff-p101">HTML color code representation of the text color. E.g. #FF0000 represents Red.</span></span>|
+|<span data-ttu-id="c96ff-128">italic</span><span class="sxs-lookup"><span data-stu-id="c96ff-128">italic</span></span>|<span data-ttu-id="c96ff-129">boolean</span><span class="sxs-lookup"><span data-stu-id="c96ff-129">boolean</span></span>|<span data-ttu-id="c96ff-130">Указывает, применяется ли курсив.</span><span class="sxs-lookup"><span data-stu-id="c96ff-130">Represents the italic status of the font.</span></span>|
+|<span data-ttu-id="c96ff-131">name</span><span class="sxs-lookup"><span data-stu-id="c96ff-131">name</span></span>|<span data-ttu-id="c96ff-132">string</span><span class="sxs-lookup"><span data-stu-id="c96ff-132">string</span></span>|<span data-ttu-id="c96ff-133">Имя шрифта (например, Calibri)</span><span class="sxs-lookup"><span data-stu-id="c96ff-133">Font name (e.g. "Calibri")</span></span>|
+|<span data-ttu-id="c96ff-134">size</span><span class="sxs-lookup"><span data-stu-id="c96ff-134">size</span></span>|<span data-ttu-id="c96ff-135">double</span><span class="sxs-lookup"><span data-stu-id="c96ff-135">double</span></span>|<span data-ttu-id="c96ff-136">размер шрифта</span><span class="sxs-lookup"><span data-stu-id="c96ff-136">Font size.</span></span>|
+|<span data-ttu-id="c96ff-137">underline</span><span class="sxs-lookup"><span data-stu-id="c96ff-137">underline</span></span>| <span data-ttu-id="c96ff-138">Строка</span><span class="sxs-lookup"><span data-stu-id="c96ff-138">String</span></span> |<span data-ttu-id="c96ff-139">Тип подчеркивания, применяемый для шрифта.</span><span class="sxs-lookup"><span data-stu-id="c96ff-139">Type of underline applied to the font.</span></span> <span data-ttu-id="c96ff-140">Возможные значения: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.</span><span class="sxs-lookup"><span data-stu-id="c96ff-140">Possible values are: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="24a2b-141">Отношения</span><span class="sxs-lookup"><span data-stu-id="24a2b-141">Relationships</span></span>
-<span data-ttu-id="24a2b-142">Нет</span><span class="sxs-lookup"><span data-stu-id="24a2b-142">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="c96ff-141">Связи</span><span class="sxs-lookup"><span data-stu-id="c96ff-141">Relationships</span></span>
+<span data-ttu-id="c96ff-142">Нет</span><span class="sxs-lookup"><span data-stu-id="c96ff-142">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="24a2b-143">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="24a2b-143">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c96ff-143">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c96ff-143">JSON representation</span></span>
 
-<span data-ttu-id="24a2b-144">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="24a2b-144">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c96ff-144">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c96ff-144">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -78,3 +78,5 @@ ms.locfileid: "42519178"
   "suppressions": []
 }
 -->
+
+
