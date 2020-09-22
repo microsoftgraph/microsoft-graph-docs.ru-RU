@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс ThumbnailSet представляет собой коллекцию ресурсов thumbnail с ключами.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ffcd654534dc1ff38f4f708b135d29ab101e0878
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5aa7ca5646ea0555c0f6547e7171312537343345
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533461"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090860"
 ---
 # <a name="thumbnailset-resource-type"></a>Тип ресурса ThumbnailSet
 
@@ -52,7 +52,7 @@ ms.locfileid: "42533461"
 
 | Свойство | Тип                      | Описание                                                                       |
 |:---------|:--------------------------|:----------------------------------------------------------------------------------|
-| id       | String                    | Идентификатор в элементе. Только для чтения.                                                |
+| id       | Строка                    | Идентификатор в элементе. Только для чтения.                                                |
 | large    | [Thumbnail](thumbnail.md) | Эскиз размером 1920x1920.                                                     |
 | medium   | [Thumbnail](thumbnail.md) | Эскиз размером 176x176.                                                       |
 | small    | [Thumbnail](thumbnail.md) | Обрезанный эскиз размером 48x48.                                                        |
@@ -66,3 +66,4 @@ ms.locfileid: "42533461"
   "section": "documentation",
   "tocPath": "Resources/ThumbnailSet"
 } -->
+

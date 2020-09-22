@@ -6,12 +6,12 @@ title: Создание списка SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 880678b5c581af9c6d5e65282c1be547d1efdce3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5bdaefc4f3b45fc6dcfea8b5b7abedf78e44c610
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457172"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089989"
 ---
 # <a name="create-a-new-list"></a>Создание списка
 
@@ -39,7 +39,7 @@ ms.locfileid: "42457172"
 POST https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса укажите представление ресурса [списка][], который необходимо создать, в формате JSON.
 
@@ -124,7 +124,7 @@ Content-type: application/json
 **Примечание.** Ответ усечен для наглядности.
 При фактическом вызове будут возвращены свойства, используемые по умолчанию.
 
-[list]: ../resources/list.md
+[списке]: ../resources/list.md
 [site]: ../resources/site.md
 
 <!--
@@ -138,3 +138,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

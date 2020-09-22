@@ -3,14 +3,14 @@ title: Получение Азуреадвиндовсаутопилотдепл
 description: Чтение свойств и связей объекта Азуреадвиндовсаутопилотдеплойментпрофиле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bc6c8ca85066ceab57996ffc38f965c9d31206f5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ac1a68f9754d2f1385c4f8e7335038768d4f7b75
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43320234"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090468"
 ---
 # <a name="get-azureadwindowsautopilotdeploymentprofile"></a>Получение Азуреадвиндовсаутопилотдеплойментпрофиле
 
@@ -51,10 +51,10 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [азуреадвиндовсаутопилотдеплойментпрофиле](../resources/intune-enrollment-azureadwindowsautopilotdeploymentprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -110,6 +110,9 @@ Content-Length: 1416
   }
 }
 ```
+
+
+
 
 
 

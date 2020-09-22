@@ -3,14 +3,14 @@ title: Создание Апплеусеринитиатеденроллмент
 description: Создание нового объекта Апплеусеринитиатеденроллментпрофиле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1430877efcef692eeecfcd9e0a1aacfb2ae9c650
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f39e754c57a9401e6fcb17e76411900a83256571
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43320727"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090496"
 ---
 # <a name="create-appleuserinitiatedenrollmentprofile"></a>Создание Апплеусеринитиатеденроллментпрофиле
 
@@ -46,7 +46,7 @@ POST /deviceManagement/appleUserInitiatedEnrollmentProfiles
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Апплеусеринитиатеденроллментпрофиле в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Апплеусеринитиатеденроллментпрофиле.
@@ -57,15 +57,15 @@ POST /deviceManagement/appleUserInitiatedEnrollmentProfiles
 |аваилаблинроллменттипеоптионс|Коллекция [апплеовнертипинроллменттипе](../resources/intune-enrollment-appleownertypeenrollmenttype.md)|Список доступных параметров типа регистрации|
 |id|Строка|GUID объекта|
 |displayName|Строка|Имя профиля|
-|description|String|Описание профиля|
+|description|Строка|Описание профиля|
 |priority|Int32|Приоритет, 0 — самый высокий|
-|platform|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Платформа устройства. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|платформа|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Платформа устройства. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |createdDateTime|DateTimeOffset|Время создания профиля|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения профиля|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [апплеусеринитиатеденроллментпрофиле](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -120,6 +120,9 @@ Content-Length: 611
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 403b97dc335e57dfd2d4f2fe2aa75c4f6fd07682
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 8bf839d68db3f54df5a27601a4a05463e013fbef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319521"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089863"
 ---
 # <a name="accesspackageassignmentresourcerole-resource-type"></a>Тип ресурса Акцесспаккажеассигнментресаурцероле
 
@@ -32,11 +32,11 @@ ms.locfileid: "47319521"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String| Только для чтения.|
-|оригинид|String|Уникальный идентификатор, относящийся к исходной системе, соответствующий свойству Оригинид объекта [акцесспаккажересаурцероле](accesspackageresourcerole.md). |
-|оригинсистем|String|Система, в которой необходимо создать назначение роли или она была создана для назначения пакета Access, например `SharePointOnline` , `AadGroup` или `AadApplication` соответствующего свойству оригинсистем объекта [акцесспаккажересаурцероле](accesspackageresourcerole.md).|
+|оригинид|Строка|Уникальный идентификатор, относящийся к исходной системе, соответствующий свойству Оригинид объекта [акцесспаккажересаурцероле](accesspackageresourcerole.md). |
+|оригинсистем|Строка|Система, в которой необходимо создать назначение роли или она была создана для назначения пакета Access, например `SharePointOnline` , `AadGroup` или `AadApplication` соответствующего свойству оригинсистем объекта [акцесспаккажересаурцероле](accesspackageresourcerole.md).|
 |status|String|Это значение используется, `PendingFulfillment` когда назначение пакета Access еще не было доставлено в исходную систему, и `Fulfilled` когда назначение пакета Access было доставлено в исходную систему.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
@@ -78,3 +78,5 @@ ms.locfileid: "47319521"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,14 +3,14 @@ title: Тип ресурса Виндовсуниверсалаппксаппа�
 description: Содержит свойства, используемые при назначении мобильного приложения Windows Universal AppX группе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dc945c303d49a97aeb45bf72e4fb8b5ffb7ab377
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d83d7b17cb44f28b338fcd69eb0dc827f9e44e0e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447973"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089443"
 ---
 # <a name="windowsuniversalappxappassignmentsettings-resource-type"></a>Тип ресурса Виндовсуниверсалаппксаппассигнментсеттингс
 
@@ -46,6 +46,9 @@ ms.locfileid: "43447973"
   "useDeviceContext": true
 }
 ```
+
+
+
 
 
 

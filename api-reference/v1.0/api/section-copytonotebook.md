@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 729430f950003f49b18666a26047ddffcb72d0ec
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: f2dbd05ebca4f4aad45c40cb1b8b31ca73685144
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897507"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088960"
 ---
 # <a name="section-copytonotebook"></a>раздел: copyToNotebook
 
@@ -37,7 +37,7 @@ POST /groups/{id}/onenote/sections/{id}/copyToNotebook
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | строка | `application/json` |
+| Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите объект JSON, содержащий необходимые для операции параметры.
@@ -46,7 +46,7 @@ POST /groups/{id}/onenote/sections/{id}/copyToNotebook
 |:---------------|:--------|:----------|
 |groupId|String|Идентификатор группы, в которую будет копироваться. Используйте только при копировании в группу Microsoft 365.|
 |id|String|Обязательный. Идентификатор целевой записной книжки. |
-|ренамеас|String|Имя копии. По умолчанию используется имя существующего элемента. |
+|ренамеас|Строка|Имя копии. По умолчанию используется имя существующего элемента. |
 
 ## <a name="response"></a>Отклик
 
@@ -114,3 +114,4 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+

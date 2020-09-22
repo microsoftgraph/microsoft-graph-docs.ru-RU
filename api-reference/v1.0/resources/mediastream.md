@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 6751d00a89bb4ca024f069a69213ebd2d76b7ef7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d1158dfb01b9e92c5dc97f34bef3bb3661da51b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447432"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088491"
 ---
 # <a name="mediastream-resource-type"></a>Тип ресурса Медиастреам
 
@@ -22,11 +22,11 @@ ms.locfileid: "42447432"
 
 | Свойство    | Тип    | Описание                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
-| direction   | String  | Направление. `inactive`Возможные значения: `sendOnly`,, `receiveOnly`,. `sendReceive`                  |
-| label       | String  | Метка потока мультимедиа.                                                                                       |
-| mediaType   | String  | Тип мультимедиа. Возможные `unknown`значения:, `audio` `video`,, `videoBasedScreenSharing`,. `data`        |
+| direction   | String  | Направление. Возможные значения: `inactive` ,, `sendOnly` `receiveOnly` , `sendReceive` .                  |
+| label       | Строка  | Метка потока мультимедиа.                                                                                       |
+| MediaType   | Строка  | Тип мультимедиа. Возможные значения:,,, `unknown` `audio` `video` `videoBasedScreenSharing` , `data` .        |
 | сервермутед | Boolean | Если сервер отключен на носителе.                                                                          |
-| Идентификатор    | String  | Идентификатор источника.                                                                                                |
+| Идентификатор    | Строка  | Идентификатор источника.                                                                                                |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -62,3 +62,4 @@ ms.locfileid: "42447432"
   "suppressions": []
 }
 -->
+

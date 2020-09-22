@@ -3,14 +3,14 @@ title: Перечисление объектов managedAppProtection
 description: Список свойств и связей объектов managedAppProtection.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 44e8ea7078a4ee33c23c3f5e96bcfffdc8e00eff
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: d7b0f348974d8ec3c6cc7506358f2de55990436e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791926"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090087"
 ---
 # <a name="list-managedappprotections"></a>Перечисление объектов managedAppProtection
 
@@ -48,7 +48,7 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -131,6 +131,9 @@ Content-Length: 2637
   ]
 }
 ```
+
+
+
 
 
 

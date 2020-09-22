@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c32c8cfa770bd7633915e0e8f9b6d371458d4173
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: ba27dc19f1d6561784d26105bcf8e089c664bbf1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873452"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088442"
 ---
 # <a name="teamstemplate-resource-type"></a>Тип ресурса Теамстемплате
 
@@ -41,4 +41,5 @@ ms.locfileid: "46873452"
 ## <a name="see-also"></a>См. также
 
 - [team](team.md)
+
 

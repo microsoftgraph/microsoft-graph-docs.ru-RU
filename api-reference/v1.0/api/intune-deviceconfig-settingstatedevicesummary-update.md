@@ -3,14 +3,14 @@ title: Обновление объекта settingStateDeviceSummary
 description: Обновление свойств объекта settingStateDeviceSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 61810538addfc22f371077214e9960bda2014e9e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 81331f767403b40ebe07ad0676a568f82a844384
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458292"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089163"
 ---
 # <a name="update-settingstatedevicesummary"></a>Обновление объекта settingStateDeviceSummary
 
@@ -45,14 +45,14 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |settingName|String|Имя параметра.|
 |instancePath|String|Имя пути к экземпляру для параметра.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств для параметра.|
@@ -112,6 +112,9 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b18c34a316f9c1f0c91617d7170c5050630af235
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: ccafa9d6763339c32102ace1572c85148f793fc6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219146"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089296"
 ---
 # <a name="directorydefinition-resource-type"></a>Тип ресурса Директоридефинитион
 
@@ -42,7 +42,7 @@ ms.locfileid: "43219146"
 |дисковеридатетиме|DateTimeOffset| Представляет дату и время обнаружения с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |дисковерабилитиес|string| Значение только для чтения, указывающее тип обнаружения, поддерживаемый приложением. Возможные значения: `AttributeDataTypes`, `AttributeNames`, `AttributeReadOnly`, `None`, `ReferenceAttributes`, `UnknownFutureValue`.| 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -79,3 +79,5 @@ ms.locfileid: "43219146"
   "suppressions": []
 }
 -->
+
+

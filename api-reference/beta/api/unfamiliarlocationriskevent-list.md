@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: cloudhandler
-ms.openlocfilehash: cb4112e8d9cf8ef686b706b9f286c17e8078bfee
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: a7fc486e7bb8b23e4a13d16fe3d797107e27be63
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311383"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089940"
 ---
 # <a name="list-unfamiliarlocationriskevents-deprecated"></a>Список Унфамилиарлокатионрискевентс (не рекомендуется)
 
@@ -104,3 +104,5 @@ Content-length: 290
   "suppressions": []
 }
 -->
+
+

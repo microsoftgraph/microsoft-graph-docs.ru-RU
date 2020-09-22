@@ -3,14 +3,14 @@ title: Список Граупполиципресентатионлистбок
 description: Список свойств и связей объектов Граупполиципресентатионлистбокс.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 627b791b0087ed4d8d7d710213cf18e30c795f7d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e527383b517f3ef2f3223254f33a755af6432a54
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375296"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090150"
 ---
 # <a name="list-grouppolicypresentationlistboxes"></a>Список Граупполиципресентатионлистбоксес
 
@@ -46,10 +46,10 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [граупполиципресентатионлистбокс](../resources/intune-grouppolicy-grouppolicypresentationlistbox.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -80,6 +80,9 @@ Content-Length: 335
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 04abdc0f9a3d38681ef2d47c1fe6b7794d153f1f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 163cc02a43c1fb7af2ce22e9813696a48f1878ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509901"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088897"
 ---
 # <a name="get-sectiongroup"></a>Получение sectionGroup
 
@@ -35,9 +35,9 @@ GET /groups/{id}/onenote/sectionGroups/{id}
 GET /sites/{id}/onenote/sectionGroups/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
-Запрос по умолчанию `parentNotebook` разворачивает и выбирает `id`свойства `name`, и `self` . Допустимые `expand` значения для групп разделов `parentNotebook` — `parentSectionGroup`и.
+Запрос по умолчанию разворачивает `parentNotebook` и выбирает `id` `name` свойства, и `self` . Допустимые `expand` значения для групп разделов — `parentNotebook` и `parentSectionGroup` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -48,7 +48,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [sectionGroup](../resources/sectiongroup.md) в теле отклика.
 ## <a name="example"></a>Пример
@@ -123,3 +123,4 @@ Content-length: 305
   "suppressions": [
   ]
 }-->
+

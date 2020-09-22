@@ -3,14 +3,14 @@ title: Обновление Девицеманажементинтент
 description: Обновление свойств объекта Девицеманажементинтент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 30057c5ca95b305aa749b063b8601dc0ae120382
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5dc51dad56668b6e7d4073b79685ad5df69d2365
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43327821"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090594"
 ---
 # <a name="update-devicemanagementintent"></a>Обновление Девицеманажементинтент
 
@@ -46,24 +46,24 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор намерения|
+|id|Строка|Идентификатор намерения|
 |displayName|Строка|Имя пользователя для данного отображаемого имени|
-|description|String|Описание, заданное пользователем|
+|description|Строка|Описание, заданное пользователем|
 |isAssigned|Boolean|Указывает, назначена ли пользователю задача|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения намерения|
-|templateId|String|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности.|
+|templateId|Строка|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -107,6 +107,9 @@ Content-Length: 379
   ]
 }
 ```
+
+
+
 
 
 

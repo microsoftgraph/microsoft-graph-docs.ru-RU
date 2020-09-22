@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5e5066337ef88db6a036839ebcbfd454e7710f3a
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: 3d8c93defc8d76fbee1efbc162677f21b4e7f827
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757207"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089856"
 ---
 # <a name="accesspackagecatalog-resource-type"></a>Тип ресурса Акцесспаккажекаталог
 
@@ -41,7 +41,7 @@ ms.locfileid: "46757207"
 |каталогтипе|Строка|Один из `UserManaged` или `ServiceDefault` . |
 |createdBy|Строка|Имя участника-пользователя, создавшего этот ресурс. Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
-|description|String|Описание каталога пакетов Access.|
+|description|Строка|Описание каталога пакетов Access.|
 |displayName|Строка|Отображаемое имя каталога пакетов Access.|
 |id|String| Только для чтения.|
 |исекстерналливисибле|Boolean|Указывает, могут ли пользователи за пресети клиента запрашивать пакеты доступа в этом каталоге.|
@@ -49,7 +49,7 @@ ms.locfileid: "46757207"
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
@@ -94,3 +94,5 @@ ms.locfileid: "46757207"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

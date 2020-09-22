@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс UploadSession предоставляет сведения о том, как отправлять большие файлы в OneDrive, OneDrive для бизнеса или библиотеки документов SharePoint, а также в виде вложений файлов в события и объекты сообщений Outlook.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: b2540c1abdd5e40ea960dc3672ab7cc788e08ddd
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: ff7ed4278da4d04d1af5158ce8fc01011bcc8598
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42590015"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090615"
 ---
 # <a name="uploadsession-resource-type"></a>Тип ресурса uploadSession
 
@@ -49,7 +49,7 @@ ms.locfileid: "42590015"
 
 ## <a name="see-also"></a>См. также
 
-- [Присоединение больших файлов к сообщениям и событиям Outlook в качестве вложений](/graph/outlook-large-attachments)
+- [Присоединение больших файлов к сообщениям и событиям Outlook в качестве вложений ](/graph/outlook-large-attachments)
 - [Отправка больших файлов с помощью сеанса отправки](../api/driveitem-createuploadsession.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -60,3 +60,4 @@ ms.locfileid: "42590015"
   "section": "documentation",
   "tocPath": "Resources/UploadSession"
 } -->
+

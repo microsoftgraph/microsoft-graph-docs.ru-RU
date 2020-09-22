@@ -3,14 +3,14 @@ title: Тип ресурса Иосаваилаблеупдатеверсион
 description: сведения о доступных версиях обновлений iOS
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 91fa2d9d6c770d67b185d94c91200ce6fc5b23b7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9bd229d0a8d10bb9321ea1d051294f7bde87e212
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455032"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089401"
 ---
 # <a name="iosavailableupdateversion-resource-type"></a>Тип ресурса Иосаваилаблеупдатеверсион
 
@@ -28,7 +28,7 @@ ms.locfileid: "43455032"
 |productVersion|String|Версия обновления.|
 |постингдатетиме|DateTimeOffset|Дата разноски обновления.|
 |expirationDateTime|DateTimeOffset|Дата окончания срока действия обновления.|
-|суппортеддевицес|Коллекция объектов string|Список поддерживаемых устройств для обновления.|
+|суппортеддевицес|Коллекция String|Список поддерживаемых устройств для обновления.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -51,6 +51,9 @@ ms.locfileid: "43455032"
   ]
 }
 ```
+
+
+
 
 
 

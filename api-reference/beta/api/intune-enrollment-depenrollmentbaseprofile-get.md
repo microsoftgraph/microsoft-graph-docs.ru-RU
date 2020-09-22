@@ -3,14 +3,14 @@ title: Получение Депенроллментбасепрофиле
 description: Чтение свойств и связей объекта Депенроллментбасепрофиле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d9e6faafa2f80ad151ad75335f319296a49beee
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 46ba8596bba44eb6796e88bf2c037202b1a1aa98
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43319873"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090368"
 ---
 # <a name="get-depenrollmentbaseprofile"></a>Получение Депенроллментбасепрофиле
 
@@ -49,10 +49,10 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [депенроллментбасепрофиле](../resources/intune-enrollment-depenrollmentbaseprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -104,6 +104,9 @@ Content-Length: 1209
   }
 }
 ```
+
+
+
 
 
 

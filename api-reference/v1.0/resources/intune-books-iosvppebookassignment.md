@@ -3,14 +3,14 @@ title: Тип ресурса iosVppEBookAssignment
 description: Содержит свойства, используемые при назначении электронной книги в формате VPP для iOS группе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 761b4e0d0821346044e6b770bc0f478d12b8640e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a1c8280bdc54eaed6382d1cd2a6209b4c5c3e188
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468684"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088687"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>Тип ресурса iosVppEBookAssignment
 
@@ -35,7 +35,7 @@ ms.locfileid: "43468684"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения электронной книги. Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки электронной книги. Наследуется от [managedEBookAssignment](../resources/intune-books-managedebookassignment.md). Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
@@ -60,6 +60,8 @@ ms.locfileid: "43468684"
   "installIntent": "String"
 }
 ```
+
+
 
 
 

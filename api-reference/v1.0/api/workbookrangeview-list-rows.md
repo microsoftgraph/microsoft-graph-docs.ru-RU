@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 2006b8d46ba0ab204766679ed1a48f585b9fd51f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 364c9f6eb63f1c84f82a12f1c5a9ecaa7b543844
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508718"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088750"
 ---
 # <a name="list-rangeview-rows"></a>Получение списка строк rangeView
 
@@ -42,9 +42,9 @@ GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [workbookRangeView](../resources/workbookrangeview.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -113,3 +113,4 @@ Content-length: 247
   "suppressions": [
   ]
 }-->
+

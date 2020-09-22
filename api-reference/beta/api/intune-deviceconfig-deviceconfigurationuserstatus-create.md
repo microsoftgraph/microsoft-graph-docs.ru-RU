@@ -3,14 +3,14 @@ title: Создание объекта deviceConfigurationUserStatus
 description: Создание объекта deviceConfigurationUserStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 65da233436f75f4ed84d9957164a92a3038f5647
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 055ed547a5b0505cf7e1129986fa97af7a2561b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792872"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088365"
 ---
 # <a name="create-deviceconfigurationuserstatus"></a>Создание объекта deviceConfigurationUserStatus
 
@@ -46,7 +46,6 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSWiredNetworkConfiguration/rootCertificateForServerValidation/userStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.macOSWiredNetworkConfiguration/identityCertificateForClientAuthentication/userStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/identityCertificateForClientAuthentication/userStatuses
-POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.androidDeviceOwnerEnterpriseWiFiConfiguration/identityCertificateForClientAuthentication/userStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/rootCertificatesForServerValidation/{windows81TrustedRootCertificateId}/userStatuses
 ```
 
@@ -56,7 +55,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта deviceConfigurationUserStatus в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceConfigurationUserStatus.
@@ -111,6 +110,9 @@ Content-Length: 339
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 

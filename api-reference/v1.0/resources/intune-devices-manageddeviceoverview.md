@@ -3,14 +3,14 @@ title: Тип ресурса managedDeviceOverview
 description: Сводные данные для управляемых устройств
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2d0eb038d8bbc6291c7007184cdbde4e97656099
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 686482077d201f952d73af46519650122d60e8b9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43406920"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091126"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Тип ресурса managedDeviceOverview
 
@@ -23,13 +23,13 @@ ms.locfileid: "43406920"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение объекта managedDeviceOverview](../api/intune-devices-manageddeviceoverview-get.md)|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md);|Чтение свойств и связей объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).|
+|[Получение объекта managedDeviceOverview](../api/intune-devices-manageddeviceoverview-get.md)|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Чтение свойств и связей объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).|
 |[Обновление объекта managedDeviceOverview](../api/intune-devices-manageddeviceoverview-update.md)|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Обновление свойств объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сводки.|
+|id|Строка|Уникальный идентификатор сводки.|
 |enrolledDeviceCount|Int32|Общее количество зарегистрированных устройств. Не включает устройства ПК, которыми управляет агент Intune для ПК.|
 |mdmEnrolledCount|Int32|Количество устройств, зарегистрированных в MDM.|
 |dualEnrolledDeviceCount|Int32|Количество устройств, зарегистрированных как в MDM, так и в EAS.|
@@ -73,6 +73,8 @@ ms.locfileid: "43406920"
   }
 }
 ```
+
+
 
 
 

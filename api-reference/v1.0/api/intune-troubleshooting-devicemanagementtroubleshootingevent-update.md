@@ -3,14 +3,14 @@ title: Обновление объекта deviceManagementTroubleshootingEvent
 description: Обновление свойств объекта deviceManagementTroubleshootingEvent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d33b5060299208ab3c2c25b8c378f93d138b108f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e9768948b542a08901dcf43f728f90ab3c70535b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43397619"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089107"
 ---
 # <a name="update-devicemanagementtroubleshootingevent"></a>Обновление объекта deviceManagementTroubleshootingEvent
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEv
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).
@@ -90,6 +90,9 @@ Content-Length: 228
   "correlationId": "Correlation Id value"
 }
 ```
+
+
+
 
 
 

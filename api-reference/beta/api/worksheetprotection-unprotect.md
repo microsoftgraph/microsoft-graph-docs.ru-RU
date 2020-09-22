@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 89f6017fedb447fb500f51cf07097fc17b27938f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 71e00a1a3816ec43a252eb265e73efbc8941b3ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451156"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089870"
 ---
 # <a name="workbookworksheetprotection-unprotect"></a>Воркбукворкшитпротектион: Unprotect
 
@@ -40,7 +40,7 @@ POST /workbook/worksheets/{id|name}/protection/unprotect
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -109,3 +109,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

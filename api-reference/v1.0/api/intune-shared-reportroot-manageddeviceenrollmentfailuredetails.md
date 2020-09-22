@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b28adb643367b9bdc31b08e78bacceae48642422
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1539992ad475c2339a33aae809bc477d5da4e772
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411580"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089142"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>Функция Манажеддевицеенроллментфаилуредетаилс
 
@@ -26,7 +26,7 @@ ms.locfileid: "43411580"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp;&nbsp; Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp;Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -45,7 +45,7 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -54,7 +54,7 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 |skip|Int32|Пока не задокументировано.|
 |top|Int32|Пока не задокументировано.|
 |filter|String|Пока не задокументировано.|
-|skipToken|String|Н/Д|
+|skipToken|String|Пока не задокументировано.|
 
 
 
@@ -83,6 +83,9 @@ Content-Length: 123
   }
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 3aa89075b93f34ad565d210bee3dff2bfd1ffe81
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: d4563ef9fec149c219fe6eae25a4ba3344fbd90d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290569"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088484"
 ---
 # <a name="roomlist-resource-type"></a>Тип ресурса RoomList принимают одиночные
 
@@ -37,10 +37,10 @@ ms.locfileid: "44290569"
 | displayName    | Строка                                            | Имя, связанное со списком помещений. |
 | emailAddress   | String                                            | Адрес электронной почты списка помещений. |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Указывает расположение RoomList принимают одиночные в широте, долготе и (дополнительно) координатах высоты. |
-| id             | String                                            | Уникальный идентификатор для списка помещений. Только для чтения. |
+| id             | Строка                                            | Уникальный идентификатор для списка помещений. Только для чтения. |
 | phone          | String                                            | Номер телефона списка помещений. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип                         | Описание          |
 |:-------------|:-----------------------------|:---------------------|
@@ -79,3 +79,4 @@ ms.locfileid: "44290569"
   "section": "documentation",
   "tocPath": ""
 }-->
+

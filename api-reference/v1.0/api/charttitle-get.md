@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 09575b8d6b56f6cc532e7393f14c46dfaa45ecf2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 379ab6406c67cb7b58558e143f32e9a2bcda08b3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518331"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089212"
 ---
 # <a name="get-charttitle"></a>Получение объекта ChartTitle
 
@@ -40,10 +40,10 @@ GET /workbook/worksheets/{id|name}/charts/{name}/title
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчарттитле](../resources/charttitle.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -106,3 +106,4 @@ Content-length: 64
   "suppressions": [
   ]
 }-->
+

@@ -3,14 +3,14 @@ title: Тип ресурса windowsAutopilotDeploymentProfile
 description: Профиль развертывания Windows для автопилота
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1ec2ca148b66078f7da8b60fff82a829eba8ce34
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6b1be15b0639047f5662f972118a98c28a4eb58b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471961"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089457"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>Тип ресурса windowsAutopilotDeploymentProfile
 
@@ -35,17 +35,17 @@ ms.locfileid: "43471961"
 |:---|:---|:---|
 |id|Строка|Ключ профиля|
 |displayName|Строка|Имя профиля|
-|description|String|Описание профиля|
+|description|Строка|Описание профиля|
 |language|String|Язык, настроенный на устройстве|
 |createdDateTime|DateTimeOffset|Время создания профиля|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения профиля|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Настройка "нет на месте"|
 |енроллментстатусскринсеттингс|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Настройка экрана состояния регистрации|
 |екстраксардварехаш|Boolean|Извлечение Хардварехаш для профиля|
-|девиценаметемплате|String|Шаблон, используемый для именования автопилотного устройства. Это может быть настраиваемый текст, который также может содержать серийный номер устройства или случайное число. Общая длина текста, созданного шаблоном, не может превышать 15 символов.|
+|девиценаметемплате|Строка|Шаблон, используемый для именования автопилотного устройства. Это может быть настраиваемый текст, который также может содержать серийный номер устройства или случайное число. Общая длина текста, созданного шаблоном, не может превышать 15 символов.|
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|Тип устройства автопилота, к которому применяется этот профиль. Возможные значения: `windowsPc`, `surfaceHub2`.|
 |енаблевхитеглове|Boolean|Включите для профиля белый Глове для автопилотного развертывания.|
-|roleScopeTagIds|Коллекция объектов string|Теги областей для профиля.|
+|roleScopeTagIds|Коллекция String|Теги областей для профиля.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -99,6 +99,9 @@ ms.locfileid: "43471961"
   ]
 }
 ```
+
+
+
 
 
 

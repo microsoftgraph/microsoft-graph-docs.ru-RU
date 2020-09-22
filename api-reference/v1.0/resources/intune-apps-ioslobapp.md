@@ -3,14 +3,14 @@ title: Тип ресурса iosLobApp
 description: Содержит свойства, в том числе унаследованные, для бизнес-приложений iOS.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 432c0930d5d87f62d2ab9607362969c062b592c6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 021ff7f40476bbfa16966f728166814cf1ed2bc2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451630"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088729"
 ---
 # <a name="ioslobapp-resource-type"></a>Тип ресурса iosLobApp
 
@@ -27,8 +27,8 @@ ms.locfileid: "43451630"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список iosLobApps](../api/intune-apps-ioslobapp-list.md)|Коллекция [iosLobApp](../resources/intune-apps-ioslobapp.md)|Список свойств и связей объектов [iosLobApp](../resources/intune-apps-ioslobapp.md).|
-|[Получение iosLobApp](../api/intune-apps-ioslobapp-get.md)|[iosLobApp](../resources/intune-apps-ioslobapp.md);|Считывание свойств и связей объекта [iosLobApp](../resources/intune-apps-ioslobapp.md).|
-|[Создание iosLobApp](../api/intune-apps-ioslobapp-create.md)|[iosLobApp](../resources/intune-apps-ioslobapp.md);|Создание нового объекта [iosLobApp](../resources/intune-apps-ioslobapp.md).|
+|[Получение iosLobApp](../api/intune-apps-ioslobapp-get.md)|[iosLobApp](../resources/intune-apps-ioslobapp.md)|Считывание свойств и связей объекта [iosLobApp](../resources/intune-apps-ioslobapp.md).|
+|[Создание iosLobApp](../api/intune-apps-ioslobapp-create.md)|[iosLobApp](../resources/intune-apps-ioslobapp.md)|Создание нового объекта [iosLobApp](../resources/intune-apps-ioslobapp.md).|
 |[Удаление iosLobApp](../api/intune-apps-ioslobapp-delete.md)|None|Удаление экземпляра [iosLobApp](../resources/intune-apps-ioslobapp.md).|
 |[Обновление iosLobApp](../api/intune-apps-ioslobapp-update.md)|[iosLobApp](../resources/intune-apps-ioslobapp.md)|Обновление свойств объекта [iosLobApp](../resources/intune-apps-ioslobapp.md).|
 
@@ -47,10 +47,10 @@ ms.locfileid: "43451630"
 |informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md)|
+|notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
-|fileName|String|Имя основного файла бизнес-приложения. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
+|fileName|String|Имя основного файла бизнес-приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |bundleId|String|Имя удостоверения.|
 |applicableDeviceType|[iosDeviceType](../resources/intune-apps-iosdevicetype.md)|Архитектура iOS, которая поддерживается этим приложением.|
@@ -118,6 +118,8 @@ ms.locfileid: "43451630"
   "buildNumber": "String"
 }
 ```
+
+
 
 
 

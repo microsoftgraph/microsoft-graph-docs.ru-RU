@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: ef852fa92217b32812340fd17b14465a5f4cbba3
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 1630cf2c76ca98f8637af9c80900daf97bcc5660
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154908"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090790"
 ---
 # <a name="timeoffreason-resource-type"></a>Тип ресурса Тимеоффреасон
 
@@ -22,10 +22,10 @@ ms.locfileid: "44154908"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[List](../api/schedule-list-timeoffreasons.md) | Коллекция [тимеоффреасон](timeoffreason.md) | Получение списка **тимеоффреасон** по расписанию.|
-|[создание](../api/schedule-post-timeoffreasons.md); | [тимеоффреасон](timeoffreason.md) | Создание нового **тимеоффреасон**.|
-|[получение](../api/timeoffreason-get.md); | [тимеоффреасон](timeoffreason.md) | Получение **тимеоффреасон** по идентификатору.|
-|[Replace](../api/timeoffreason-put.md) | [тимеоффреасон](timeoffreason.md) | Замените **тимеоффреасон**.|
+|[Перечисление](../api/schedule-list-timeoffreasons.md) | Коллекция [тимеоффреасон](timeoffreason.md) | Получение списка **тимеоффреасон** по расписанию.|
+|[Создание](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Создание нового **тимеоффреасон**.|
+|[Получение](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | Получение **тимеоффреасон** по идентификатору.|
+|[Replace](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | Замените **тимеоффреасон**.|
 |[удаление](../api/timeoffreason-delete.md); | Нет | Пометка **тимеоффреасон** как неактивной.|
 
 ## <a name="properties"></a>Свойства
@@ -75,3 +75,4 @@ ms.locfileid: "44154908"
   "suppressions": []
 }
 -->
+

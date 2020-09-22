@@ -3,14 +3,14 @@ title: Тип ресурса Виндовсаппксаппассигнмент�
 description: Содержит свойства, используемые при назначении мобильного приложения Windows AppX группе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 54adb99d9821971a120995316920c8811e988c72
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 04dd288d24f46282245ba5352b3e0792a7081c0b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471976"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089478"
 ---
 # <a name="windowsappxappassignmentsettings-resource-type"></a>Тип ресурса Виндовсаппксаппассигнментсеттингс
 
@@ -46,6 +46,9 @@ ms.locfileid: "43471976"
   "useDeviceContext": true
 }
 ```
+
+
+
 
 
 

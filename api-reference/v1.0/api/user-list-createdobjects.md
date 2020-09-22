@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5a3cd9b64a944531edf92d8d4146939293a852ca
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 7bcdc2703c991d5132e03e51e450490bef0ba3c5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108867"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088806"
 ---
 # <a name="list-createdobjects"></a>Перечисление createdObjects
 
@@ -41,10 +41,10 @@ GET /users/{id | userPrincipalName}/createdObjects
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/me/createdObjects
 
 ---
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -110,3 +110,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

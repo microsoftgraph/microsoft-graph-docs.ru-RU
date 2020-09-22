@@ -3,14 +3,14 @@ title: тип перечисления Мдмаппконфигкэйтипе
 description: Типы ключей конфигурации приложений.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 814ab6e104bf565ed0effea154693cdd959dad75
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 76c2d2a7df0232ed6e08dae1b18b2dfe609e8d1a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458657"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089618"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>тип перечисления Мдмаппконфигкэйтипе
 
@@ -26,10 +26,13 @@ ms.locfileid: "43458657"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |стрингтипе|нуль|Пока не задокументировано.|
-|интежертипе|1,1|Пока не задокументировано.|
-|реалтипе|2|Пока не задокументировано.|
+|интежертипе|1 |Пока не задокументировано.|
+|реалтипе|2 |Пока не задокументировано.|
 |булеантипе|4|Пока не задокументировано.|
 |токентипе|4 |Пока не задокументировано.|
+
+
+
 
 
 

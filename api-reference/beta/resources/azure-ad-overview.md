@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: ''
 author: dkershaw10
-ms.openlocfilehash: 84df7868014f6a6cdc4f4c793e838aa3de1b0f82
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 6c0cb140ea20b96ed3ff6db17bd0d172dda79bbe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812522"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089800"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Работа с ресурсами Azure Active Directory в Microsoft Graph
 
@@ -72,4 +72,6 @@ Microsoft Graph предоставляет доступ к ресурсам [Azu
 - Опробуйте API в [песочнице Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+
+
 

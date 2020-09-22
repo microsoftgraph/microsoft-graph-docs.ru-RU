@@ -3,14 +3,14 @@ title: Получение Девицеманажементкомплекссет
 description: Чтение свойств и связей объекта Девицеманажементкомплекссеттингинстанце.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dcff39a75e09c74a304003c5ce9c9f12e5c1b327
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b8a7bdc1d9b3d02485c757928cddca26fede1d98
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43329162"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088232"
 ---
 # <a name="get-devicemanagementcomplexsettinginstance"></a>Получение Девицеманажементкомплекссеттингинстанце
 
@@ -52,10 +52,10 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceM
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -82,6 +82,9 @@ Content-Length: 234
   }
 }
 ```
+
+
+
 
 
 

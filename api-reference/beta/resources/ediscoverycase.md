@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: resourcePageType
-ms.openlocfilehash: 930d04449f24d05d8c9225869506bfc1ed2720aa
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 359a74cbf48e0db2b4c3e480b73dfed928232288
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46510324"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089723"
 ---
 # <a name="ediscoverycase-resource-type"></a>Тип ресурса Едисковерикасе
 
@@ -22,10 +22,10 @@ ms.locfileid: "46510324"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список](../api/ediscoverycase-list.md) | Коллекция [едисковерикасе](ediscoverycase.md) | Получение списка дел eDiscovery.|
-| [получение](../api/ediscoverycase-get.md); | [едисковерикасе](ediscoverycase.md) | Считывание свойств дел eDiscovery. |
-| [создание](../api/ediscoverycase-post.md); | [едисковерикасе](ediscoverycase.md) | Создание нового **едисковерикасе** путем публикации в коллекции вариантов. |
-| [обновление](../api/ediscoverycase-update.md). | [едисковерикасе](ediscoverycase.md) | Обновление случая обнаружения электронных данных. |
+| [Перечисление](../api/ediscoverycase-list.md) | Коллекция [едисковерикасе](ediscoverycase.md) | Получение списка дел eDiscovery.|
+| [Получение](../api/ediscoverycase-get.md) | [ediscoveryCase](ediscoverycase.md) | Считывание свойств дел eDiscovery. |
+| [Создание](../api/ediscoverycase-post.md) | [ediscoveryCase](ediscoverycase.md) | Создание нового **едисковерикасе** путем публикации в коллекции вариантов. |
+| [Обновление](../api/ediscoverycase-update.md) | [ediscoveryCase](ediscoverycase.md) | Обновление случая обнаружения электронных данных. |
 | [удаление](../api/ediscoverycase-delete.md); | Нет | Удаление случая обнаружения электронных данных. |
 
 ## <a name="properties"></a>Свойства
@@ -99,3 +99,5 @@ ms.locfileid: "46510324"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

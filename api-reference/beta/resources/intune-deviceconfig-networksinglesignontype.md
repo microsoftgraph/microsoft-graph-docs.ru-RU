@@ -3,14 +3,14 @@ title: тип перечисления Нетворксинглесигнонт�
 description: Параметры типа единого входа сети Wi – Fi.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a3c469e496626a2cbc31d741653971ae63df0458
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a93330b58595f5f9fc49c43815be7bbe1fa18b73
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413053"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089492"
 ---
 # <a name="networksinglesignontype-enum-type"></a>тип перечисления Нетворксинглесигнонтипе
 
@@ -26,8 +26,11 @@ ms.locfileid: "43413053"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |отключено|нуль|Отключено|
-|Предварительный вход|1,1|Предварительный вход|
-|Вход в систему|2|После входа|
+|Предварительный вход|1 |Предварительный вход|
+|Вход в систему|2 |После входа|
+
+
+
 
 
 

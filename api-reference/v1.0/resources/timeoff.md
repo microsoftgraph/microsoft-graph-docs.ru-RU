@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType_
-ms.openlocfilehash: 508ace24bc15eda6f722153d4e55f12699c461bb
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 1c33ed74b52983b9adc3ce0d1c729caaa35dce09
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44153867"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090832"
 ---
 # <a name="timeoff-resource-type"></a>Тип ресурса Тимеофф
 
@@ -22,10 +22,10 @@ ms.locfileid: "44153867"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[List](../api/schedule-list-timesoff.md) | Коллекция [тимеофф](timeoff.md) | Получение списка объектов **тимеофф** в этом расписании.|
-|[создание](../api/schedule-post-timesoff.md); | [тимеофф](timeoff.md) | Создание нового объекта **тимеофф** .|
-|[получение](../api/timeoff-get.md); | [тимеофф](timeoff.md) | Получение объекта **тимеофф** по идентификатору.|
-|[Replace](../api/timeoff-put.md) | [тимеофф](timeoff.md) | Замена объекта **тимеофф** .|
+|[Перечисление](../api/schedule-list-timesoff.md) | Коллекция [тимеофф](timeoff.md) | Получение списка объектов **тимеофф** в этом расписании.|
+|[Создание](../api/schedule-post-timesoff.md) | [timeOff](timeoff.md) | Создание нового объекта **тимеофф** .|
+|[Получение](../api/timeoff-get.md) | [timeOff](timeoff.md) | Получение объекта **тимеофф** по идентификатору.|
+|[Replace](../api/timeoff-put.md) | [timeOff](timeoff.md) | Замена объекта **тимеофф** .|
 |[удаление](../api/timeoff-delete.md); | Нет | Удаление объекта **тимеофф** из расписания.|
 
 ## <a name="properties"></a>Свойства
@@ -74,3 +74,4 @@ ms.locfileid: "44153867"
   "suppressions": []
 }
 -->
+

@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: fb92dc6e70682bf78af42e0bb2960dac1903d387
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 89712532983d8fd3dc34d3c69be451a5b43d5473
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567078"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090019"
 ---
 # <a name="update-iteminsightssettings"></a>Обновление Итеминсигхтссеттингс
 
@@ -54,8 +54,8 @@ PATCH /organization/{organizationId}/settings/itemInsights
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|isEnabledInOrganization|Логический| `true`, если аналитика элемента организации включена; `false`Если аналитика элемента Организации отключена для всех пользователей без исключений. Значение по умолчанию: `true`. Необязательно.|
-|disabledForGroup|String| Идентификатор группы Azure AD, для которой отключается аналитика элемента "участники". Значение по умолчанию: `empty`. Необязательный параметр.|
+|isEnabledInOrganization|Boolean| `true` , если аналитика элемента организации включена; `false` Если аналитика элемента Организации отключена для всех пользователей без исключений. Значение по умолчанию: `true`. Необязательное свойство.|
+|disabledForGroup|Строка| Идентификатор группы Azure AD, для которой отключается аналитика элемента "участники". Значение по умолчанию: `empty`. Необязательный параметр.|
 
 ## <a name="response"></a>Отклик
 
@@ -117,3 +117,5 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
+
+

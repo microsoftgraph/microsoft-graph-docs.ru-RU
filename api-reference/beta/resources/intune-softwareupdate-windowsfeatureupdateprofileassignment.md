@@ -3,14 +3,14 @@ title: Тип ресурса Виндовсфеатуреупдатепрофи�
 description: Эта сущность содержит свойства, используемые для назначения профиля обновления компонентов Windows группе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 241f44583c6e274bdc27cb0a2087e8324a4430e3
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 5ec0e03d3bbc96d94291672c2d3b88357e941c79
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44788152"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089380"
 ---
 # <a name="windowsfeatureupdateprofileassignment-resource-type"></a>Тип ресурса Виндовсфеатуреупдатепрофилеассигнмент
 
@@ -34,7 +34,7 @@ ms.locfileid: "44788152"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор объекта.|
+|id|Строка|Идентификатор объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения, которой назначен профиль обновления компонента.|
 
 ## <a name="relationships"></a>Связи
@@ -59,6 +59,9 @@ ms.locfileid: "44788152"
   }
 }
 ```
+
+
+
 
 
 

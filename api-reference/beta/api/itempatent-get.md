@@ -1,22 +1,22 @@
 ---
-title: Получение itemPatent
-description: Чтение свойств и связей объекта itemPatent.
+title: Получение Итемпатент
+description: Чтение свойств и связей объекта Итемпатент.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a30f62fdb622ffb732c9dc807d87577665297dd0
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: c287bcb4b77e6c997696006105f248e79c4b2dc7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819927"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090000"
 ---
-# <a name="get-itempatent"></a>Получение itemPatent
+# <a name="get-itempatent"></a>Получение Итемпатент
 
 Пространство имен: microsoft.graph
 
-Чтение свойств и связей объекта [itemPatent.](../resources/itempatent.md)
+Чтение свойств и связей объекта [итемпатент](../resources/itempatent.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "46819927"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Приложение                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
+| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
+| Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ GET /users/{id | userPrincipalName}/profile/patents/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` параметр запроса. Укажите список свойств, включаемых в ответ, разделяя их запятыми. Для оптимальной производительности выбирайте только необходимые свойства.
+Этот метод поддерживает `$select` параметр запроса. Укажите список свойств, которые необходимо включить в ответ, разделяя их запятыми. Для обеспечения оптимальной производительности следует выбирать только подмножество нужных свойств.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -53,7 +53,7 @@ GET /users/{id | userPrincipalName}/profile/patents/{id}
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код `200 OK` отклика [и объект itemPatent](../resources/itempatent.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [итемпатент](../resources/itempatent.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -126,3 +126,5 @@ Content-Type: application/json
   "webUrl": "https://patents.gov/3954432633"
 }
 ```
+
+

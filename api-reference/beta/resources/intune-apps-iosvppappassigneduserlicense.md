@@ -3,14 +3,14 @@ title: Тип ресурса Иосвппаппассигнедусерлице�
 description: Назначение лицензии пользователя "программа приобретения объема" для iOS. Этот класс не поддерживает операции создания, удаления и обновления.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b7688e3c9472c791abe36a7e85a903b2b3df1ade
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c644fc91545623ddc90ccbf7871366e11332e544
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458957"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089646"
 ---
 # <a name="iosvppappassigneduserlicense-resource-type"></a>Тип ресурса Иосвппаппассигнедусерлиценсе
 
@@ -38,10 +38,10 @@ ms.locfileid: "43458957"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
-|усеремаиладдресс|String|Адрес электронной почты пользователя. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
+|усеремаиладдресс|Строка|Адрес электронной почты пользователя. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userId|String|Идентификатор пользователя. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userName|String|Имя пользователя. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userPrincipalName|Строка|Имя участника-пользователя. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userPrincipalName|String|Имя участника-пользователя. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -64,6 +64,9 @@ ms.locfileid: "43458957"
   "userPrincipalName": "String"
 }
 ```
+
+
+
 
 
 

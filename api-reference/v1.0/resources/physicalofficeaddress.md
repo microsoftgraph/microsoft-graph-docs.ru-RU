@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 46674ad9be3e86fd36f5a5beb52829959bbd340b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a3c1bee1c8617fbe93ad28f821b1042901065400
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445548"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088477"
 ---
 # <a name="physicalofficeaddress-resource-type"></a>Тип ресурса Фисикалоффицеаддресс
 
@@ -62,3 +62,4 @@ ms.locfileid: "43445548"
   "section": "documentation",
   "tocPath": ""
 }-->
+

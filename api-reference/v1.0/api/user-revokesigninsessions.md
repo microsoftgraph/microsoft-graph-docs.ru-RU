@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 59bd8e4ac5d8e848120646630c0c6b0a66f005e0
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 6341d962d8e67aed4a69f7246d4e6265e3abc015
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108223"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088796"
 ---
 # <a name="user-revokesigninsessions"></a>Пользователь: Ревокесигнинсессионс
 
@@ -31,7 +31,7 @@ ms.locfileid: "43108223"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Для приложения                            | Directory.ReadWrite.All, Directory.AccessAsUser.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ POST /users/{id | userPrincipalName}/revokeSignInSessions
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В этой операции нет содержимого запроса.
 
 ## <a name="response"></a>Отклик
@@ -110,3 +110,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

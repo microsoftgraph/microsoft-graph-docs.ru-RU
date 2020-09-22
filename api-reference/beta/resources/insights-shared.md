@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: e6d0304ed73e9452126064ab72e66e6ce3fff0bb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cb44328551325134b163b33bf19aed5bbef67bf3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42495643"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089653"
 ---
 # <a name="sharedinsight-resource-type"></a>Тип ресурса Шарединсигхт
 
@@ -35,7 +35,7 @@ ms.locfileid: "42495643"
 
 | Свойство              | Тип                      | Описание  |
 | -------------         |---------------            | -------------|
-| id                    | String                    | Уникальный идентификатор связи. Только для чтения.        |
+| id                    | Строка                    | Уникальный идентификатор связи. Только для чтения.        |
 | ластшаред            | [sharingDetail](insights-sharingdetail.md)                | Сведения об общем элементе. Только для чтения.        |
 | Ресурсе resourcevisualization | [Ресурсе resourcevisualization](insights-resourcevisualization.md)                | Свойства, которые можно использовать для отображения документа в вашем интерфейсе. Только для чтения      |
 | ресаурцереференце     | [ресаурцереференце](insights-resourcereference.md)                      | Справочные свойства общего документа, например URL-адрес и тип документа. Только для чтения       |
@@ -46,7 +46,7 @@ ms.locfileid: "42495643"
 | ------------- |---------------| -------------|
 | resource      | Коллекция объектов | Используется для перехода к элементу, к которому предоставлен общий доступ. Для вложений в файл используется тип *fileAttachment*. Для связанных вложений используется тип *driveItem*. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 <!--{
   "blockType":"resource",
@@ -63,3 +63,5 @@ ms.locfileid: "42495643"
   "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
 }
 ```
+
+

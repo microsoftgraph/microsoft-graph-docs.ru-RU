@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: e5231f229435fbc5672cefc76950218a9a5d0c28
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5747b32506eda019904098c42fc36064089f8bb7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518338"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089205"
 ---
 # <a name="chartseriescollection-itemat"></a>ChartSeriesCollection: ItemAt
 
@@ -39,7 +39,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/series/itemAt
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -48,7 +48,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/series/itemAt
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [воркбукчартсериес](../resources/chartseries.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчартсериес](../resources/chartseries.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -111,3 +111,4 @@ Content-length: 26
   "suppressions": [
   ]
 }-->
+

@@ -3,14 +3,14 @@ title: Тип ресурса managedEBookAssignment
 description: Содержит свойства, используемые при назначении электронной книги группе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 53787a5ae68d6e1646c7146522f3017e4e5be610
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3a201472e394a08cf351e7eedc58489f305dda3a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468662"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088645"
 ---
 # <a name="managedebookassignment-resource-type"></a>Тип ресурса managedEBookAssignment
 
@@ -32,7 +32,7 @@ ms.locfileid: "43468662"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения электронной книги.|
 |installIntent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки электронной книги. Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
@@ -57,6 +57,8 @@ ms.locfileid: "43468662"
   "installIntent": "String"
 }
 ```
+
+
 
 
 

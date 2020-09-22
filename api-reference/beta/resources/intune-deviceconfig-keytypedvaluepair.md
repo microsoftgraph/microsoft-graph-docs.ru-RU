@@ -3,14 +3,14 @@ title: Тип ресурса Кэйтипедвалуепаир
 description: Значение типа "ключ — значение" со строковым ключом и типизированным значением.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 651ba697eb6c6464bef8da327aadfe8fd0938081
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 48fa3ce22dd19a95500d68ed47985f3d5a1c694f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439908"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089520"
 ---
 # <a name="keytypedvaluepair-resource-type"></a>Тип ресурса Кэйтипедвалуепаир
 
@@ -25,7 +25,7 @@ ms.locfileid: "43439908"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|key|String|Строковый ключ для типа "ключ — значение".|
+|key|Строка|Строковый ключ для типа "ключ — значение".|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -43,6 +43,9 @@ ms.locfileid: "43439908"
   "key": "String"
 }
 ```
+
+
+
 
 
 

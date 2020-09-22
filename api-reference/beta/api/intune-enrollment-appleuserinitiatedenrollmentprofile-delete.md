@@ -3,14 +3,14 @@ title: Удаление Апплеусеринитиатеденроллмент
 description: Удаляет объект Апплеусеринитиатеденроллментпрофиле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d7c22a2bdf6fb98cadd76841bf30f0d76baae587
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4cd1cd04e5625b45c579bdf66185a3be0467ef4b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43320698"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090482"
 ---
 # <a name="delete-appleuserinitiatedenrollmentprofile"></a>Удаление Апплеусеринитиатеденроллментпрофиле
 
@@ -46,10 +46,10 @@ DELETE /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiate
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -60,11 +60,14 @@ DELETE /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiate
 DELETE https://graph.microsoft.com/beta/deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedEnrollmentProfileId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

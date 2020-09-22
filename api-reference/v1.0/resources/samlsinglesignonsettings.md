@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: eb76d20ab03ca48413c3c1bf0dd1e94e7708b688
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: ccce89f6cb3e577eba526683f4d8eb25e68402cf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383485"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088435"
 ---
 # <a name="samlsinglesignonsettings-resource-type"></a>Тип ресурса Самлсинглесигнонсеттингс
 
@@ -20,7 +20,7 @@ ms.locfileid: "44383485"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|релайстате|String| Относительный URI, по которому поставщик услуг перенаправляется после завершения процесса единого входа. |
+|релайстате|Строка| Относительный URI, по которому поставщик услуг перенаправляется после завершения процесса единого входа. |
 
 
 ## <a name="json-representation"></a>Представление JSON

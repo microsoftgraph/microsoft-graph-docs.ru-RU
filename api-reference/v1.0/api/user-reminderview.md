@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5def572e5d3a76b6d919cf5b5c13edb72bb6d12d
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 57393b8573ca47f32af5ac756e0ad1d262e7d620
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108258"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088799"
 ---
 # <a name="user-reminderview"></a>user: reminderView
 
@@ -46,10 +46,10 @@ GET /users/{id | userPrincipalName}/reminderView(startDateTime=startDateTime-val
 | Content-Type   | application/json |
 | Prefer | {Часовой пояс}. Необязательный. Если параметр не указан, по умолчанию используется формат UTC.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции [reminder](../resources/reminder.md) в тексте отклика.
 
@@ -137,3 +137,4 @@ Content-length: 673
   "suppressions": [
   ]
 }-->
+

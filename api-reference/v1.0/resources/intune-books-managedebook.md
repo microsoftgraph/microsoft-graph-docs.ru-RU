@@ -3,14 +3,14 @@ title: Тип ресурса managedEBook
 description: Абстрактный класс, содержащий базовые свойства управляемой электронной книги.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a73da0f3f9fc6eb86f158ece8f9a8f8eecb663d9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9ee5bb486346e315ae00b0e54f44a9fd9b7613c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468669"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088673"
 ---
 # <a name="managedebook-resource-type"></a>Тип ресурса managedEBook
 
@@ -32,7 +32,7 @@ ms.locfileid: "43468669"
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |displayName|Строка|Имя электронной книги.|
-|description|String|Описание.|
+|description|Строка|Описание.|
 |publisher|String|Издатель.|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги.|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Обложка книги.|
@@ -76,6 +76,8 @@ ms.locfileid: "43468669"
   "privacyInformationUrl": "String"
 }
 ```
+
+
 
 
 

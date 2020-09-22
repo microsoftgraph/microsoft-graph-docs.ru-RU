@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: d0d39fd4ed4a905f66cc223b8832e42bbda676a4
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: c5194dd714be8da267b8eef1a28bd268e658cbcf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565929"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088736"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -259,3 +259,4 @@ ms.locfileid: "46565929"
   "section": "documentation",
   "tocPath": ""
 }-->
+

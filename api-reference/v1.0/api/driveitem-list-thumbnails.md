@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Получение коллекции ресурсов ThumbnailSet для ресурса DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 0431e228fd0f6c11eb2f4fa41208531330d06ca9
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 12a461764e48e0b17f2842bf6e725ed26edfa7f8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863392"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089240"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Список эскизов для ресурса DriveItem
 
@@ -252,7 +252,7 @@ GET /me/drive/items/{item-id}/children?$expand=thumbnails
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Служба возвращает список ресурсов DriveItem и их эскизов.
 
@@ -402,3 +402,4 @@ Content-Type: application/json
   ],
   "tocPath": "Items/Thumbnails"
 } -->
+

@@ -3,14 +3,14 @@ title: Тип ресурса microsoftStoreForBusinessApp
 description: Приложения из Microsoft Store для бизнеса. Этот класс не поддерживает операции создания, удаления и обновления.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4aa50a9da1be837810a852378cc26b785e4de1c8
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: d905aa651b5e2b78092030b49530222a9a80ed8a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792557"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089597"
 ---
 # <a name="microsoftstoreforbusinessapp-resource-type"></a>Тип ресурса microsoftStoreForBusinessApp
 
@@ -37,9 +37,9 @@ ms.locfileid: "46792557"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -55,6 +55,8 @@ ms.locfileid: "46792557"
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседингаппкаунт|Int32|Общее количество приложений, которые напрямую или косвенно заменяют данное приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседедаппкаунт|Int32|Общее число приложений, для которых это приложение напрямую или косвенно заменяется. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |usedLicenseCount|Int32|Количество используемых лицензий на Microsoft Store для бизнеса.|
 |totalLicenseCount|Int32|Общее количество лицензий на Microsoft Store для бизнеса.|
 |productKey|String|Ключ продукта для приложения.|
@@ -70,7 +72,7 @@ ms.locfileid: "46792557"
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Общие сведения по установке мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |userStatuses|Коллекция [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|Таблица|Коллекция [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|Список отношений для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|Таблица|Коллекция [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|Набор прямых отношений для этого приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |containedApps|Коллекция [мобилеконтаинедапп](../resources/intune-apps-mobilecontainedapp.md)|Коллекция вложенных приложений в mobileApp, действующая в виде пакета.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -108,6 +110,8 @@ ms.locfileid: "46792557"
     "String"
   ],
   "dependentAppCount": 1024,
+  "supersedingAppCount": 1024,
+  "supersededAppCount": 1024,
   "usedLicenseCount": 1024,
   "totalLicenseCount": 1024,
   "productKey": "String",
@@ -122,6 +126,9 @@ ms.locfileid: "46792557"
   }
 }
 ```
+
+
+
 
 
 

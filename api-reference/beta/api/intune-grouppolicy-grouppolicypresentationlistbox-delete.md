@@ -3,14 +3,14 @@ title: Удаление Граупполиципресентатионлистб
 description: Удаляет объект Граупполиципресентатионлистбокс.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c29b8b3f99573de6a25df9c72279e62459fe1a3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c76b35726f2544f40dcfd644f85339acbc7bc362
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375434"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090192"
 ---
 # <a name="delete-grouppolicypresentationlistbox"></a>Удаление Граупполиципресентатионлистбокс
 
@@ -47,10 +47,10 @@ DELETE /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -61,11 +61,14 @@ DELETE /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/
 DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: simonhult
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 3be5fa87fd6c2623126437fccb1ea43b7bc275f2
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: 5d05a9fdf3a901fcddd55207bec373a3a0736afa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427550"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089331"
 ---
 # <a name="iteminsightssettings-resource-type"></a>Тип ресурса Итеминсигхтссеттингс
 
@@ -22,17 +22,17 @@ ms.locfileid: "45427550"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
-| [получение](../api/iteminsightssettings-get.md);| [итеминсигхтссеттингс](iteminsightssettings.md) | Чтение свойств объекта **итеминсигхтссеттингс** . |
-| [обновление](../api/iteminsightssettings-update.md).| [итеминсигхтссеттингс](iteminsightssettings.md) | Обновление объекта **итеминсигхтссеттингс** .|
+| [Получение](../api/iteminsightssettings-get.md)| [итеминсигхтссеттингс](iteminsightssettings.md) | Чтение свойств объекта **итеминсигхтссеттингс** . |
+| [Обновление](../api/iteminsightssettings-update.md)| [итеминсигхтссеттингс](iteminsightssettings.md) | Обновление объекта **итеминсигхтссеттингс** .|
 
 
 ## <a name="properties"></a>Свойства
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|исенаблединорганизатион|Boolean| `true`, если аналитика элемента организации включена; `false`Если аналитика элемента Организации отключена для всех пользователей без исключений. Значение по умолчанию: `true`. Необязательное.|
-|дисабледфорграуп|String| Идентификатор группы Azure AD, для которой отключается аналитика элемента "участники". Значение по умолчанию: `empty`. Необязательное.|
+|isEnabledInOrganization|Boolean| `true` , если аналитика элемента организации включена; `false` Если аналитика элемента Организации отключена для всех пользователей без исключений. Значение по умолчанию: `true`. Необязательное свойство.|
+|disabledForGroup|Строка| Идентификатор группы Azure AD, для которой отключается аналитика элемента "участники". Значение по умолчанию: `empty`. Необязательное свойство.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -47,3 +47,5 @@ ms.locfileid: "45427550"
   "disabledForGroup": "String"
 }
 ```
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c76de8c2bea124d1c39f386ed5acf365352d2ecd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 58193704d8a119a0da07cfb157e8bf386adb8397
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461946"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089009"
 ---
 # <a name="create-outlook-category"></a>Создание категории Outlook
 
@@ -40,7 +40,7 @@ POST /users/{id|userPrincipalName}/outlook/masterCategories
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Включите в текст запроса описание объекта [outlookCategory](../resources/outlookcategory.md) в формате JSON.
 
 ## <a name="response"></a>Ответ
@@ -85,7 +85,7 @@ Content-Length: 70
 ---
 
 Включите в текст запроса описание объекта [outlookCategory](../resources/outlookcategory.md) в формате JSON.
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -116,3 +116,4 @@ Content-length: 250
   "suppressions": [
   ]
 }-->
+

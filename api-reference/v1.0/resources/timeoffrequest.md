@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ff230a1bda520fd588e3a382920e450b91f08142
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 6afbc9537bd56462253944d8df9542e46edbc6bd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154173"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090783"
 ---
 # <a name="timeoffrequest-resource-type"></a>Тип ресурса Тимеоффрекуест
 
@@ -22,8 +22,8 @@ ms.locfileid: "44154173"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [получение](../api/timeoffrequest-get.md); | [тимеоффрекуест](timeoffrequest.md) | Чтение свойств и связей объекта **тимеоффрекуест** . |
-| [List](../api/timeoffrequest-list.md) | Коллекция [тимеоффрекуест](timeoffrequest.md) | Получение списка объектов **тимеоффрекуест** в этом расписании.|
+| [Получение](../api/timeoffrequest-get.md) | [тимеоффрекуест](timeoffrequest.md) | Чтение свойств и связей объекта **тимеоффрекуест** . |
+| [Перечисление](../api/timeoffrequest-list.md) | Коллекция [тимеоффрекуест](timeoffrequest.md) | Получение списка объектов **тимеоффрекуест** в этом расписании.|
 | [удаление](../api/timeoffrequest-delete.md); | Нет | Удаление объекта **тимеоффрекуест** . |
 | [Утвердить](../api/timeoffrequest-approve.md)|Нет|Утверждение запроса на нерабочее время.|
 | [Отклоня](../api/timeoffrequest-decline.md)|Нет|Отклонить запрос времени ожидания.|
@@ -70,3 +70,4 @@ ms.locfileid: "44154173"
   "section": "documentation",
   "tocPath": ""
 }-->
+

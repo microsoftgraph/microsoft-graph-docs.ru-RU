@@ -3,14 +3,14 @@ title: Удаление depEnrollmentProfile
 description: Удаляет объект depEnrollmentProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 06a83cb95e5475d9a66251ad498d53be424182e4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5ced4abf5df00a4d0367b5a13cf7e742addcf083
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43319217"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090325"
 ---
 # <a name="delete-depenrollmentprofile"></a>Удаление depEnrollmentProfile
 
@@ -46,10 +46,10 @@ DELETE /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollme
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -60,11 +60,14 @@ DELETE /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollme
 DELETE https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles/{enrollmentProfileId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

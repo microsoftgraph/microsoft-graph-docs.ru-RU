@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 1a421f305b40b36411a72ff4a6ed4d7f270c5bf4
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: c83af322fb8460b4c0a77550213f3ea801f77333
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178208"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48089352"
 ---
 # <a name="telecom-expense-management-in-microsoft-intune"></a>Управление затратами на телекоммуникации в Microsoft Intune
 
@@ -24,3 +24,6 @@ ms.locfileid: "44178208"
 Для управления затратами на телекоммуникации в Intune используются перечисленные ниже ресурсы Graph.
 
 - [Партнер по управлению затратами на телекоммуникации](intune-tem-telecomexpensemanagementpartner.md)
+
+
+

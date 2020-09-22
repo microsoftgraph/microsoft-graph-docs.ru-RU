@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d1365ea90f2c6cd1d6670204d40da4ea1fd84591
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4a3a4428f1c7be9a840b18625b788b26751eca57
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533437"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48090636"
 ---
 # <a name="unmuteparticipantoperation-resource-type"></a>Тип ресурса УнмутепартиЦипантоператион
 
@@ -22,12 +22,12 @@ ms.locfileid: "42533437"
 
 | Свойство                       | Тип                        | Описание                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Контекст                  | String                      | Уникальная строка контекста клиента. Может содержать до 256 символов.                                                                               |
+| Контекст                  | Строка                      | Уникальная строка контекста клиента. Может содержать до 256 символов.                                                                               |
 | id                             | Строка                      | ИДЕНТИФИКАТОР операции сервера. Только для чтения.                                                                                            |
 | resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения.                                                                                            |
 | status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения.                                                 |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
@@ -59,3 +59,4 @@ ms.locfileid: "42533437"
   "section": "documentation",
   "tocPath": ""
 }-->
+
