@@ -3,14 +3,14 @@ title: Получение Манажедапппротектионполицис
 description: Чтение свойств и связей объекта Манажедапппротектионполицисетитем.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 404f01f982fce4a4e4ffc177f49b544cea4bb84f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f61c6b9360a6be8f912d389e2dff4f4ff7a965c2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440751"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093394"
 ---
 # <a name="get-managedappprotectionpolicysetitem"></a>Получение Манажедапппротектионполицисетитем
 
@@ -49,10 +49,10 @@ GET /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [манажедапппротектионполицисетитем](../resources/intune-policyset-managedappprotectionpolicysetitem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -88,6 +88,9 @@ Content-Length: 606
   }
 }
 ```
+
+
+
 
 
 

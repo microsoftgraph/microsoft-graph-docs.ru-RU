@@ -3,14 +3,14 @@ title: Создание Пфксрекриптионрекуест
 description: Создание нового объекта Пфксрекриптионрекуест.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8d671a41f482407f082f11c104b8346f50769fde
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0b961e11bf5ee6fc34e8e9d9fe9e70e5b0f3dd7b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437789"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093247"
 ---
 # <a name="create-pfxrecryptionrequest"></a>Создание Пфксрекриптионрекуест
 
@@ -46,24 +46,24 @@ POST /pfxRecryptionRequests
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Пфксрекриптионрекуест в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Пфксрекриптионрекуест.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|tenantId|GUID|Пока не задокументировано.|
-|userId|GUID|Пока не задокументировано.|
+|tenantId|Guid|Пока не задокументировано.|
+|userId|Guid|Пока не задокументировано.|
 |deviceId|Guid|Пока не задокументировано.|
-|профилеид|GUID|Пока не задокументировано.|
+|профилеид|Guid|Пока не задокументировано.|
 |отпечаток|String|Пока не задокументировано.|
 |девицекэйсумбпринт|String|Пока не задокументировано.|
-|status|Int32|Пока нет описания|
-|sourceType|Int32|Пока нет описания|
+|status|Int32|Пока не задокументировано.|
+|sourceType|Int32|Пока не задокументировано.|
 |createdTime|DateTimeOffset|Пока не задокументировано.|
 |lastModifiedTime|DateTimeOffset|Пока не задокументировано.|
-|isDeleted|Boolean|Пока не задокументировано|
+|isDeleted|Boolean|Н/Д|
 |eTag|String|Пока не задокументировано.|
 
 
@@ -120,6 +120,9 @@ Content-Length: 574
   "eTag": "ETag value"
 }
 ```
+
+
+
 
 
 

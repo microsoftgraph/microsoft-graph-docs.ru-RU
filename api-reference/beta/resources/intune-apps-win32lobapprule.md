@@ -3,14 +3,14 @@ title: Тип ресурса win32LobAppRule
 description: Базовый сложный тип для хранения данных правила обнаружения или требования для бизнес-приложения Win32.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ffde7ad4549d3807602e7d02f088107e56541a44
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 78873e384208a9825ae02432c22cd55e84921a9d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790294"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092736"
 ---
 # <a name="win32lobapprule-resource-type"></a>Тип ресурса win32LobAppRule
 
@@ -43,6 +43,9 @@ ms.locfileid: "44790294"
   "ruleType": "String"
 }
 ```
+
+
+
 
 
 

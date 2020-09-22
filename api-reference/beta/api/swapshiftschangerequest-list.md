@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1c8fce3ac07c0ffbdb70deb09adfcc77f0a66a70
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 1162868b7e5dac156a795a4e59c076083d9778c9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44154369"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093051"
 ---
 # <a name="list-swapshiftschangerequest"></a>Список Свапшифтсчанжерекуест
 
@@ -28,7 +28,7 @@ ms.locfileid: "44154369"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Сервер приложений | Schedule. Read. All *, Schedule. ReadWrite. ALL*  |
+| Для приложений | Schedule. Read. All *, Schedule. ReadWrite. ALL*  |
 
 >\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
 
@@ -42,7 +42,7 @@ GET /teams/{teamId}/schedule/swapShiftsChangeRequests
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -136,3 +136,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

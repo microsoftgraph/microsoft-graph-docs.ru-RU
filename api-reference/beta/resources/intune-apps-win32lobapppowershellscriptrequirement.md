@@ -3,14 +3,14 @@ title: Тип ресурса win32LobAppPowerShellScriptRequirement
 description: Содержит свойства скрипта PowerShell для обнаружения приложения Win32
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 97f9c8985ffac6dc6f3f736c3b089662d4f2d1ef
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b16f303f0a8ee4fd8855529a0908269e11c4d72d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43422771"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092841"
 ---
 # <a name="win32lobapppowershellscriptrequirement-resource-type"></a>Тип ресурса win32LobAppPowerShellScriptRequirement
 
@@ -29,12 +29,12 @@ ms.locfileid: "43422771"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор обнаружения наследуется от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md). Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|детектионвалуе|String|Значение обнаружения, унаследованное от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
-|displayName|String|Уникальное отображаемое имя для этого правила|
+|детектионвалуе|Строка|Значение обнаружения, унаследованное от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
+|displayName|Строка|Уникальное отображаемое имя для этого правила|
 |Свойства enforcesignaturecheck|Boolean|Значение, указывающее, применяется ли проверка подписи|
 |runAs32Bit|Boolean|Значение, указывающее, должен ли этот скрипт выполняться как 32 бит|
 |runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения, в котором выполняется скрипт. Возможные значения: `system`, `user`.|
-|скриптконтент|String|Содержимое скрипта в кодировке Base64 для обнаружения бизнес-приложения Win32|
+|скриптконтент|Строка|Содержимое скрипта в кодировке Base64 для обнаружения бизнес-приложения Win32|
 |детектионтипе|[win32LobAppPowerShellScriptDetectionType](../resources/intune-apps-win32lobapppowershellscriptdetectiontype.md)|Тип обнаружения для вывода сценария. Возможные значения: `notConfigured`, `string`, `dateTime`, `integer`, `float`, `version`, `boolean`.|
 
 ## <a name="relationships"></a>Связи
@@ -60,6 +60,9 @@ ms.locfileid: "43422771"
   "detectionType": "String"
 }
 ```
+
+
+
 
 
 

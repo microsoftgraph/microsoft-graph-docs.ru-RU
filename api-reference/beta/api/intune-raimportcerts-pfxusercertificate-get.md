@@ -3,14 +3,14 @@ title: Получение Пфксусерцертификате
 description: Чтение свойств и связей объекта Пфксусерцертификате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: af1306ddd8264fcfcf7167723353262c57c319fb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5b93e9a7d873e092199c4a5aa72b97db9baafa47
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437684"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093128"
 ---
 # <a name="get-pfxusercertificate"></a>Получение Пфксусерцертификате
 
@@ -49,10 +49,10 @@ GET /pfxUserCertificates/{pfxUserCertificatesId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [пфксусерцертификате](../resources/intune-raimportcerts-pfxusercertificate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -93,6 +93,9 @@ Content-Length: 844
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Тип ресурса win32LobAppProductCodeRule
 description: Сложный тип для хранения кода продукта и данных правила версий для бизнес-приложения Win32. Это правило не поддерживается в качестве правила для требования.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bd3dde2386c76b5ed7dee6174789667d44839c58
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 11990f4deddb7bf29b9b447ae65e1903f6ecbc2d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790819"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092806"
 ---
 # <a name="win32lobappproductcoderule-resource-type"></a>Тип ресурса win32LobAppProductCodeRule
 
@@ -52,6 +52,9 @@ ms.locfileid: "44790819"
   "productVersion": "String"
 }
 ```
+
+
+
 
 
 

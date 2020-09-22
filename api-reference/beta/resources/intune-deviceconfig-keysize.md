@@ -3,14 +3,14 @@ title: тип перечисления keySize
 description: Параметры размера ключа.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6181ef16b1e580504b528139b697d1c658b20661
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a7aaa3b7bb5c02a5baa0e693784fa98b18aa9bcb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439961"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092526"
 ---
 # <a name="keysize-enum-type"></a>тип перечисления keySize
 
@@ -26,7 +26,11 @@ ms.locfileid: "43439961"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |size1024|нуль|1024 бит.|
-|size2048|1,1|2048 бит.|
+|size2048|1 |2048 бит.|
+|size4096|2 |4096 бит.|
+
+
+
 
 
 

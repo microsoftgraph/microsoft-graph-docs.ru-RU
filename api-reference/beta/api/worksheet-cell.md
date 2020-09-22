@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d0cf070f9e6b4a7df176eb68e616f339ae36a125
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 577b7d4c2d92e8af60bf5ab26476915edc4c3cbc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451235"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092904"
 ---
 # <a name="worksheet-cell"></a>Worksheet: Cell
 
@@ -102,3 +102,5 @@ Content-length: 169
   "suppressions": []
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: Тип ресурса Иосвебконтентфилтербасе
 description: Представляет базовый тип параметра фильтра веб-содержимого iOS. Пустой и абстрактный базовый. Вызывающий абонент должен использовать один из производных типов для конфигураций.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 031c73c984d58598bcc2bbf85d5e0fe5abd61b64
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2b9269c7ffd5a5695049aafcd584195ef288907d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440065"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092596"
 ---
 # <a name="ioswebcontentfilterbase-resource-type"></a>Тип ресурса Иосвебконтентфилтербасе
 
@@ -41,6 +41,9 @@ ms.locfileid: "43440065"
   "@odata.type": "#microsoft.graph.iosWebContentFilterBase"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Создание Пфксусерцертификате
 description: Создание нового объекта Пфксусерцертификате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c564f89cb711981708684da2d8be943e8531e10
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 15ce1610e1b67782a347d8b85013a0faf544c19d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437698"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093177"
 ---
 # <a name="create-pfxusercertificate"></a>Создание Пфксусерцертификате
 
@@ -46,15 +46,15 @@ POST /pfxUserCertificates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Пфксусерцертификате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Пфксусерцертификате.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|tenantId|GUID|Пока не задокументировано.|
-|userId|GUID|Пока не задокументировано.|
+|tenantId|Guid|Пока не задокументировано.|
+|userId|Guid|Пока не задокументировано.|
 |отпечаток|String|Пока не задокументировано.|
 |усерупн|String|Пока не задокументировано.|
 |енкриптедпфксблоб|String|Пока не задокументировано.|
@@ -63,11 +63,11 @@ POST /pfxUserCertificates
 |цертекспиратиондате|DateTimeOffset|Пока не задокументировано.|
 |providerName|String|Пока не задокументировано.|
 |енкриптионкэйнаме|String|Пока не задокументировано.|
-|паддингсчеме|Int32|Пока нет описания|
-|status|Int32|Пока нет описания|
-|intendedPurpose|Int32|Пока нет описания|
+|паддингсчеме|Int32|Пока не задокументировано.|
+|status|Int32|Пока не задокументировано.|
+|intendedPurpose|Int32|Пока не задокументировано.|
 |createdTime|DateTimeOffset|Пока не задокументировано.|
-|isDeleted|Boolean|Пока не задокументировано|
+|isDeleted|Boolean|Н/Д|
 |lastModifiedTime|DateTimeOffset|Пока не задокументировано.|
 |eTag|String|Пока не задокументировано.|
 
@@ -135,6 +135,9 @@ Content-Length: 789
   "eTag": "ETag value"
 }
 ```
+
+
+
 
 
 

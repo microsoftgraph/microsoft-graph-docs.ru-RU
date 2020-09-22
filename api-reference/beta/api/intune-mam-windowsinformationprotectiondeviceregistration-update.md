@@ -3,14 +3,14 @@ title: Обновление Виндовсинформатионпротекти
 description: Обновление свойств объекта Виндовсинформатионпротектиондевицерегистратион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 94f2b9ca18045cb20b886e2bd0c3aa1e4246dc97
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 63c2215a392b583613cecb2aab47e4e09083df1f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465428"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093800"
 ---
 # <a name="update-windowsinformationprotectiondeviceregistration"></a>Обновление Виндовсинформатионпротектиондевицерегистратион
 
@@ -46,7 +46,7 @@ PATCH /deviceAppManagement/windowsInformationProtectionDeviceRegistrations/{wind
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [виндовсинформатионпротектиондевицерегистратион](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [виндовсинформатионпротектиондевицерегистратион](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md).
@@ -58,12 +58,12 @@ PATCH /deviceAppManagement/windowsInformationProtectionDeviceRegistrations/{wind
 |deviceRegistrationId|Строка|Идентификатор устройства для записи регистрации этого устройства.|
 |deviceName|String|Имя устройства.|
 |deviceType|String|Тип устройства, например Windows для портативного компьютера Windows и Windows Phone.|
-|девицемакаддресс|String|Mac-адрес устройства.|
+|девицемакаддресс|Строка|Mac-адрес устройства.|
 |ластчеккиндатетиме|DateTimeOffset|Время последнего возврата устройства.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовсинформатионпротектиондевицерегистратион](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -104,6 +104,9 @@ Content-Length: 415
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
+
+
+
 
 
 

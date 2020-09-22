@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 3772d0063fc19eb3a3c46953d5c85d8085f0a72a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0d06cbc518f421802a529c17046c1670bd16cd71
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533567"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094073"
 ---
 # <a name="tablesort-resource-type"></a>Тип ресурса TableSort
 
@@ -33,7 +33,7 @@ ms.locfileid: "42533567"
 |:---------------|:--------|:----------|
 |fields|Коллекция [воркбуксортфиелд](sortfield.md)|Указывает текущие условия, которые использовались при последней сортировке таблицы. Только для чтения.|
 |matchCase|boolean|Указывает, учитывался ли регистр при последней сортировке таблице. Только для чтения.|
-|method|string|Указывает метод сортировки китайских символов, который использовался при последней сортировке таблицы. Возможные значения: `PinYin`, `StrokeCount`. Только для чтения.|
+|method|string|Указывает метод сортировки китайских символов, который использовался при последней сортировке таблицы. Возможные значения: `PinYin` , `StrokeCount` . Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -66,3 +66,4 @@ ms.locfileid: "42533567"
   "section": "documentation",
   "tocPath": ""
 }-->
+

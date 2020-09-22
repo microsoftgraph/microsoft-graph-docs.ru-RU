@@ -3,14 +3,14 @@ title: Получение Виндовсаутопилотдеплойментп
 description: Чтение свойств и связей объекта Виндовсаутопилотдеплойментпрофилеполицисетитем.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 00bf132557ecff3b90068aba23ccc989f764b620
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ebe0b5de537e3b77e51acfd2e22ec113c0710c6d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375101"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093380"
 ---
 # <a name="get-windowsautopilotdeploymentprofilepolicysetitem"></a>Получение Виндовсаутопилотдеплойментпрофилеполицисетитем
 
@@ -49,10 +49,10 @@ GET /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [виндовсаутопилотдеплойментпрофилеполицисетитем](../resources/intune-policyset-windowsautopilotdeploymentprofilepolicysetitem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -87,6 +87,9 @@ Content-Length: 543
   }
 }
 ```
+
+
+
 
 
 

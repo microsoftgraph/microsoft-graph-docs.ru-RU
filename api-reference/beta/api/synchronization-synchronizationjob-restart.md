@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9a87f7d0e2a265a6a27f661fde188909ef38310a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 89dc205c2bf8eb869711043198995560260e776c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437528"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093037"
 ---
 # <a name="restart-synchronizationjob"></a>Перезапуск Синчронизатионжоб
 
@@ -41,7 +41,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите объект JSON со следующим параметром.
 
@@ -49,7 +49,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 |:--------------|:----------|:---------------|
 |criteria       |[синчронизатионжобрестарткритериа](../resources/synchronization-synchronizationjobrestartcriteria.md) |Условия перезапуска|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха возвращает `204 No Content` отклик. В тексте отклика не возвращается никаких данных.
 
@@ -114,3 +114,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

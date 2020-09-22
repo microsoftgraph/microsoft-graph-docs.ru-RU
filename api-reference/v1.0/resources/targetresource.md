@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: azure-ad
 doc_type: resourcePageType
-ms.openlocfilehash: 6c912a1ad9740148cd40429478a018c6af512fdf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 641097b6e8b4646d878182ba1763fd62ab75b080
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533578"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094059"
 ---
 # <a name="targetresource-resource-type"></a>Тип ресурса targetResource
 
@@ -22,11 +22,11 @@ ms.locfileid: "42533578"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String|Указывает уникальный идентификатор ресурса.|
+|id|Строка|Указывает уникальный идентификатор ресурса.|
 |displayName|Строка|Указывает отображаемое имя, заданное для ресурса. Обычно указывается при создании ресурса.|
-|type|String|Описывает тип ресурса.  Примеры значений: `Application`, `Group` `ServicePrincipal`, и `User`.|
-|userPrincipalName|String|Если **type** для `User`параметра Type задано значение, включается имя пользователя, инициировавшего действие; `null` для других типов.|
-|groupType|String|Если **type** для `Group`параметра Type задано значение, это указывает тип группы.|
+|type|Строка|Описывает тип ресурса.  Примеры значений: `Application` , `Group` , `ServicePrincipal` и `User` .|
+|userPrincipalName|String|Если для параметра **Type** задано значение `User` , это имя пользователя, инициировавшего действие, `null` для других типов.|
+|groupType|Строка|Если для параметра **Type** задано значение `Group` , это указывает тип группы.|
 |modifiedProperties|Коллекция [модифиедпроперти](modifiedproperty.md)|Указывает имя, старое значение и новое значение каждого атрибута, который изменился. Значения свойств зависят от **типа**операции.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -62,3 +62,4 @@ ms.locfileid: "42533578"
   "section": "documentation",
   "tocPath": ""
 }-->
+

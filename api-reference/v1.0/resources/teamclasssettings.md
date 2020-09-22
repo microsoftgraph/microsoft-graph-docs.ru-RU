@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 312acf937fdb90940a640d35c6a19c88981e842c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 40b1e21933adedaf8d1c4e16aa91d69c4af17668
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533551"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094045"
 ---
 # <a name="teamclasssettings-resource-type"></a>Тип ресурса Теамкласссеттингс
 
@@ -21,7 +21,7 @@ ms.locfileid: "42533551"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|нотифигуардиансабаутассигнментс|Boolean|Если задано `true`значение, разрешает отправку сообщений сводки по неделям в родительские и опекуны, если администратор клиента включил параметр глобально.|
+|нотифигуардиансабаутассигнментс|Boolean|Если задано значение `true` , разрешает отправку сообщений сводки по неделям в родительские и опекуны, если администратор клиента включил параметр глобально.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -50,3 +50,4 @@ ms.locfileid: "42533551"
   "suppressions": []
 }
 -->
+

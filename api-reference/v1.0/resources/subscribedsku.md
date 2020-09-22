@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SumitParikh
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: cb9933ddc93ca647bca1427d3401cb912662ab2c
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: b0dbb255bced328b6b3d40e675ee53e6cf3fbece
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43384942"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094157"
 ---
 # <a name="subscribedsku-resource-type"></a>Тип ресурса subscribedSku
 
@@ -32,13 +32,13 @@ ms.locfileid: "43384942"
 |Тег|String| Например, User или Company. |
 |капабилитистатус|String|  Возможные значения: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. |
 |consumedUnits|Int32| Количество лицензий, которые были назначены. |
-|id|String| Уникальный идентификатор объекта sku, подписка на который выполнена. Key, не допускающая значение null. |
+|id|Строка| Уникальный идентификатор объекта sku, подписка на который выполнена. Key, не допускающая значение null. |
 |препаидунитс|[licenseUnitsDetail](licenseunitsdetail.md)| Сведения о количестве и состоянии предварительно оплаченных лицензий. |
 |сервицепланс|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах обслуживания, доступных в отношении SKU. Не допускает значение null |
 |skuId|Guid| Уникальный идентификатор (GUID) для SKU службы. |
 |скупартнумбер|String| Артикул SKU, например: AAD_PREMIUM или RMSBASIC. Чтобы получить список коммерческих подписок, приобретенных в Организации, ознакомьтесь со статьей [List субскрибедскус](../api/subscribedsku-list.md).|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -88,3 +88,4 @@ ms.locfileid: "43384942"
   "section": "documentation",
   "tocPath": ""
 }-->
+

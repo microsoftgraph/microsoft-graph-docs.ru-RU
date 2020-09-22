@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: dff3266aa268f2d26ca15492c72fa25a5f562a29
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c887ecb526d9c4215c1d8586bcbcb799c9e2c476
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522444"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092407"
 ---
 # <a name="office365groupsactivityfilecounts-resource-type"></a>Тип ресурса office365GroupsActivityFileCounts
 
@@ -24,9 +24,9 @@ ms.locfileid: "42522444"
 | total             | Int64  | Общее количество файлов в библиотеке документов SharePoint группы. |
 | ASP            | Int64  | Количество файлов, которые были просмотрены, изменены, предоставлены в общий доступ или синхронизированы в библиотеке документов SharePoint группы. |
 | reportDate        | Дата   | Дата, когда число файлов было активно на сайте SharePoint группы. |
-| репортпериод      | String | Количество дней, охватываемых отчетом.    |
+| репортпериод      | Строка | Количество дней, охватываемых отчетом.    |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -45,3 +45,5 @@ ms.locfileid: "42522444"
   "reportPeriod": "String"
 }
 ```
+
+

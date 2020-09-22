@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: fc6b3cb3a2f05c160f37df4b9f1614dfbc6dde91
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 37270973f9715377691f67f36e1459cc19dda804
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456554"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093086"
 ---
 # <a name="list-pages"></a>Список страниц
 
@@ -37,11 +37,11 @@ GET /groups/{id}/onenote/pages
 GET /sites/{id}/onenote/pages
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
-Запрос по умолчанию для страниц возвращает 20 первых страниц, упорядоченных по `lastModifiedTime desc`. Если запрос по умолчанию возвращает более 20 страниц, ответ содержит элемент `@odata.nextLink` , который можно использовать для страницы в наборе результатов. Максимальное количество страниц, возвращаемых для `top` запроса — 100.
+Запрос по умолчанию для страниц возвращает 20 первых страниц, упорядоченных по `lastModifiedTime desc` . Если запрос по умолчанию возвращает более 20 страниц, ответ содержит элемент `@odata.nextLink` , который можно использовать для страницы в наборе результатов. Максимальное количество страниц, возвращаемых для `top` запроса — 100.
 
-`parentSection` Ответ по умолчанию разворачивается и выбирает свойства `id`раздела `displayName`, а `self` также свойства. Допустимые `expand` значения для страниц `parentNotebook` : `parentSection`и.
+Ответ по умолчанию разворачивается `parentSection` и выбирает `id` Свойства раздела, `displayName` а также `self` Свойства. Допустимые `expand` значения для страниц: `parentNotebook` и `parentSection` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -52,7 +52,7 @@ GET /sites/{id}/onenote/pages
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [оненотепаже](../resources/onenotepage.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -103,3 +103,5 @@ Content-length: 393
   "suppressions": []
 }
 -->
+
+

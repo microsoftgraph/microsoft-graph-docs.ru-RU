@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 4841377ba8b9aa5a94ca97b50847517be5b2f0cc
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 8d640bbb3f49c95902134893f1eba4b4064ccca5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898074"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092456"
 ---
 # <a name="office365activeusercounts-resource-type"></a>Тип ресурса office365ActiveUserCounts
 
@@ -29,7 +29,7 @@ ms.locfileid: "44898074"
 | Yammer            | Int64  | Количество активных пользователей в Yammer. Любой пользователь, который может отправлять, читать и аналогичные сообщения, считается активным пользователем. |
 | Teams             | Int64  | Количество активных пользователей в Microsoft Teams. Любой пользователь, который опубликовал сообщения в каналах группы, отправил сообщения в сеансах частного чата или участие в собраниях или вызовах считается активным пользователем. |
 | reportDate        | Дата   | Дата, когда число пользователей было активно. |
-| репортпериод      | String | Количество дней, охватываемых отчетом.    |
+| репортпериод      | Строка | Количество дней, охватываемых отчетом.    |
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -54,3 +54,5 @@ ms.locfileid: "44898074"
   "reportPeriod": "String"
 }
 ```
+
+

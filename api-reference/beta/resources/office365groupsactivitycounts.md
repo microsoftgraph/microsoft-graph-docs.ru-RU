@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: f07743a592753daff2670478c6f2fe18207f6013
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c67de6592d32c15e7d64112ce9ac31b6a5d4c41
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522458"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092428"
 ---
 # <a name="office365groupsactivitycounts-resource-type"></a>Тип ресурса office365GroupsActivityCounts
 
@@ -26,9 +26,9 @@ ms.locfileid: "42522458"
 | яммермессажесреад     | Int64  | Количество сообщений, прочитанных в группах Yammer. |
 | яммермессажесликед    | Int64  | Количество сообщений, которые понравилось в группах Yammer. |
 | reportDate             | Дата   | Дата, когда в группу Yammer было отправлено, прочитано или понравилось количество сообщений электронной почты для почтового ящика группы или сообщений. |
-| репортпериод           | String | Количество дней, охватываемых отчетом.    |
+| репортпериод           | Строка | Количество дней, охватываемых отчетом.    |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -48,3 +48,5 @@ ms.locfileid: "42522458"
   "reportPeriod": "String"
 }
 ```
+
+

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: f29d385060d93b8de54ee27f9f948f83e3ad2711
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a53405f58c568d17d040dd7368f39cef6838510c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533615"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094164"
 ---
 # <a name="subscribetotoneoperation-resource-type"></a>Тип ресурса Субскрибетотонеоператион
 
@@ -22,11 +22,11 @@ ms.locfileid: "42533615"
 
 | Свойство                       | Тип                        | Описание                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Контекст                  | String                      | Контекст клиента.                                                                                                                               |
+| Контекст                  | Строка                      | Контекст клиента.                                                                                                                               |
 | id                             | Строка                      | ИДЕНТИФИКАТОР операции сервера. Только для чтения.                                                                                             |
 | status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения.                                                 |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -57,3 +57,4 @@ ms.locfileid: "42533615"
   "section": "documentation",
   "tocPath": ""
 }-->
+

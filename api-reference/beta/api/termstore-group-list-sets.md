@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f4d35decdae3303576565e2844206c7bfe16cf23
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 951a1e0522695a81061142dc7f76639ed4bb353c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330296"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092968"
 ---
 # <a name="list-sets"></a>Наборы списков
 Пространство имен: Microsoft. Graph. банка
@@ -126,3 +126,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

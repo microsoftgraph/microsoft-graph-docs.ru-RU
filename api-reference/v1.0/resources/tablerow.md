@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a6b134cb91d0c59c8e89848bfb5397fc13f5b469
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3eca83aeea75300ed9165ac822b15212c866f152
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533584"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094094"
 ---
 # <a name="tablerow-resource-type"></a>Тип ресурса TableRow
 
@@ -69,3 +69,4 @@ ms.locfileid: "42533584"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Ресурс SharePointIds — это единая структура, объединяющая различные идентификаторы элемента, хранящегося на сайте SharePoint или в OneDrive для бизнеса.
 doc_type: resourcePageType
-ms.openlocfilehash: d619b4b82da7c4c1d80e59b969ce5edf727ffbb8
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 4289f2b4785ca06588722ee12c0e6620b092ddce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934894"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094171"
 ---
 # <a name="sharepointids-resource-type"></a>Тип ресурса SharePointIds
 
@@ -71,3 +71,4 @@ ms.locfileid: "43934894"
   "section": "documentation",
   "tocPath": "Facets/SharepointIds"
 } -->
+

@@ -3,14 +3,14 @@ title: Список Девицекомплианцеполициполицисе
 description: Список свойств и связей объектов Девицекомплианцеполициполицисетитем.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5964af1a59c7ec2d9729dcb1ede1994a8009785c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a89770c82006d4cfaec35200274d43bf155286d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467189"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093730"
 ---
 # <a name="list-devicecompliancepolicypolicysetitems"></a>Список Девицекомплианцеполициполицисетитемс
 
@@ -46,10 +46,10 @@ GET /deviceAppManagement/policySets/{policySetId}/items
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицекомплианцеполициполицисетитем](../resources/intune-policyset-devicecompliancepolicypolicysetitem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -86,6 +86,9 @@ Content-Length: 570
   ]
 }
 ```
+
+
+
 
 
 

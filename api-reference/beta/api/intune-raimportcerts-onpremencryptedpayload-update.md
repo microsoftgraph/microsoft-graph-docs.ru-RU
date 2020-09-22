@@ -3,14 +3,14 @@ title: Обновление Онпременкриптедпайлоад
 description: Обновление свойств объекта Онпременкриптедпайлоад.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e204241ddf6c6d0623cd042de7e6fabf3adbcab8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e1b17e73f773df8cf607789ea203efa1681382aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437796"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093268"
 ---
 # <a name="update-onpremencryptedpayload"></a>Обновление Онпременкриптедпайлоад
 
@@ -46,29 +46,29 @@ PATCH /onPremEncryptedPayloads/{onPremEncryptedPayloadsId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [онпременкриптедпайлоад](../resources/intune-raimportcerts-onpremencryptedpayload.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [онпременкриптедпайлоад](../resources/intune-raimportcerts-onpremencryptedpayload.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|tenantId|GUID|Пока не задокументировано.|
-|userId|GUID|Пока не задокументировано.|
+|tenantId|Guid|Пока не задокументировано.|
+|userId|Guid|Пока не задокументировано.|
 |deviceId|Guid|Пока не задокументировано.|
-|пайлоадид|GUID|Пока не задокументировано.|
+|пайлоадид|Guid|Пока не задокументировано.|
 |девицекэйсумбпринт|String|Пока не задокументировано.|
 |cert1PayloadUUID|String|Пока не задокументировано.|
 |cert2PayloadUUID|String|Пока не задокументировано.|
 |cert3PayloadUUID|String|Пока не задокументировано.|
 |плисттемплате|String|Пока не задокументировано.|
 |енкриптедблоб|Binary|Пока не задокументировано.|
-|пайлоадверсион|Int32|Пока нет описания|
-|status|Int32|Пока нет описания|
+|пайлоадверсион|Int32|Пока не задокументировано.|
+|status|Int32|Пока не задокументировано.|
 |createdTime|DateTimeOffset|Пока не задокументировано.|
 |lastModifiedTime|DateTimeOffset|Пока не задокументировано.|
 |eTag|String|Пока не задокументировано.|
-|isDeleted|Boolean|Пока не задокументировано.|
+|isDeleted|Boolean|Н/Д|
 
 
 
@@ -132,6 +132,9 @@ Content-Length: 781
   "isDeleted": true
 }
 ```
+
+
+
 
 
 

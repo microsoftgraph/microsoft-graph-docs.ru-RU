@@ -3,14 +3,14 @@ title: Тип ресурса Кэйинтежервалуепаир
 description: Значение типа "ключ — значение" с ключом строки и целым значением.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67a48f48f52c613c13552506d9cc76823bb042f7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: efba214d6cd6b4e8fb79ddb4df4c9df0e16974bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439982"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092547"
 ---
 # <a name="keyintegervaluepair-resource-type"></a>Тип ресурса Кэйинтежервалуепаир
 
@@ -28,7 +28,7 @@ ms.locfileid: "43439982"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|key|String|Строковый ключ для типа "ключ — значение". Наследуется от [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)|
+|key|Строка|Строковый ключ для типа "ключ — значение". Наследуется от [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)|
 |value|Int32|Целочисленное значение для параметра "ключ — значение".|
 
 ## <a name="relationships"></a>Связи
@@ -48,6 +48,9 @@ ms.locfileid: "43439982"
   "value": 1024
 }
 ```
+
+
+
 
 
 

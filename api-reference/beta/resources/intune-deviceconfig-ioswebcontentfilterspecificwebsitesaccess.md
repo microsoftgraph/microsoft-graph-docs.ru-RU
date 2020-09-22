@@ -3,14 +3,14 @@ title: Тип ресурса ИосвебконтентфилтерспеЦиф�
 description: Представляет тип параметра фильтра веб-содержимого iOS, который устанавливает закладки URL-адресов в встроенный браузер iOS. Пример сценария — это аудитория, в которой преподаватели хотели бы перемещаться по веб-сайтам с помощью закладок браузера, настроенных на устройствах iOS, и без доступа к другим сайтам.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f6e68fecd5bed0f51f89d15714ac3f2c95516396
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f5cadbc1ba359f53fadd46fb575465e33546ba61
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440042"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092582"
 ---
 # <a name="ioswebcontentfilterspecificwebsitesaccess-resource-type"></a>Тип ресурса ИосвебконтентфилтерспеЦификвебситесакцесс
 
@@ -62,6 +62,9 @@ ms.locfileid: "43440042"
   ]
 }
 ```
+
+
+
 
 
 

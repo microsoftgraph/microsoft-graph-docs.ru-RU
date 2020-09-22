@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b4d70f1d16f88ad516f4753011ec24277fca0424
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 64b71631ae69e0c4731369ef632855f8a3f85065
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451240"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092862"
 ---
 # <a name="list-charts"></a>Список диаграмм
 
@@ -42,10 +42,10 @@ GET /workbook/worksheets/{id|name}/charts
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбукчарт](../resources/workbookchart.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -111,3 +111,5 @@ Content-length: 93
   ]
 }
 -->
+
+

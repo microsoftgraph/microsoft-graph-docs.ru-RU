@@ -3,14 +3,14 @@ title: Тип ресурса ИосвпнсекуритяссоЦиатионп�
 description: Параметры сопоставления безопасности VPN
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 85f69b9cf8e19acf09ca0ca179df6cd7fee2fbd9
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: fc1bf75fffe3f4008171320a78d1a487cdd0771a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793901"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092666"
 ---
 # <a name="iosvpnsecurityassociationparameters-resource-type"></a>Тип ресурса ИосвпнсекуритяссоЦиатионпараметерс
 
@@ -49,6 +49,9 @@ ms.locfileid: "44793901"
   "lifetimeInMinutes": 1024
 }
 ```
+
+
+
 
 
 

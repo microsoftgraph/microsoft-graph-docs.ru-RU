@@ -3,14 +3,14 @@ title: Тип ресурса Кэйстрингвалуепаир
 description: Значение типа "ключ — значение" со строковым ключом и строковым значением.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c79775d4822476ab0922330581dd6b54639e4eb3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5b97ddd3a6b5a163455a1986fa7e15a774f6c79d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439923"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092463"
 ---
 # <a name="keystringvaluepair-resource-type"></a>Тип ресурса Кэйстрингвалуепаир
 
@@ -28,7 +28,7 @@ ms.locfileid: "43439923"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|key|String|Строковый ключ для типа "ключ — значение". Наследуется от [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)|
+|key|Строка|Строковый ключ для типа "ключ — значение". Наследуется от [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)|
 |value|String|Строковое значение для параметра "ключ — значение".|
 
 ## <a name="relationships"></a>Связи
@@ -48,6 +48,9 @@ ms.locfileid: "43439923"
   "value": "String"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 80b688d700dff94d1a746e651b83a4b0236d1a39
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 3249bf48ceab062b47f6f725f9d897fe96fd5667
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44154404"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092978"
 ---
 # <a name="update-workforceintegration"></a>Обновление воркфорцеинтегратион
 
@@ -42,7 +42,7 @@ PATCH /teamwork/workforceIntegrations
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -51,9 +51,9 @@ PATCH /teamwork/workforceIntegrations
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |апиверсион|Int32|Версия API для URL-адреса обратного вызова. Начните с 1.|
-|displayName|String|Имя интеграции трудовых ресурсов.|
+|displayName|Строка|Имя интеграции трудовых ресурсов.|
 |шифрования|воркфорцеинтегратионенкриптион|Ресурс для шифрования взаимодействия сотрудников. |
-|isActive|Логический|Указывает, активна ли эта интеграция сотрудников в настоящее время и доступна ли она.|
+|isActive|Boolean|Указывает, активна ли эта интеграция сотрудников в настоящее время и доступна ли она.|
 |имеется|string| Возможные значения:,,,, `none` `shift` `swapRequest` `openshift` `openShiftRequest` , `userShiftPreferences` . Если выбрано более одного значения, все значения должны начинаться с первой буквы в верхнем регистре.|
 |суппортедентитиес|string| Это свойство **будет заменено** в версии 1.0. Мы рекомендуем использовать это свойство вместо **поддерживаемых**. Свойство **Supports будет по-** прежнему поддерживаться в бета-версии в течение этого времени. Возможные значения:,,,, `none` `shift` `swapRequest` `openshift` `openShiftRequest` , `userShiftPreferences` . Если выбрано более одного значения, все значения должны начинаться с первой буквы в верхнем регистре.|
 |url|String| URL-адрес интеграции сотрудников для обратных вызовов из службы смены. |
@@ -166,7 +166,7 @@ Content-type: application/json
 ```
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 ```
 HTTP/1.1 200 OK
 {
@@ -239,3 +239,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

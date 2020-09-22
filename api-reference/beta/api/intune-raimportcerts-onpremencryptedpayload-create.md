@@ -3,14 +3,14 @@ title: Создание Онпременкриптедпайлоад
 description: Создание нового объекта Онпременкриптедпайлоад.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c9baa176521ef1fcc92fe72d18406f0551ebe07
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7fb1b75fa2194e223a9e35d4fa9d5ef67a0acf5c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437886"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093310"
 ---
 # <a name="create-onpremencryptedpayload"></a>Создание Онпременкриптедпайлоад
 
@@ -46,29 +46,29 @@ POST /onPremEncryptedPayloads
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Онпременкриптедпайлоад в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Онпременкриптедпайлоад.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|tenantId|GUID|Пока не задокументировано.|
-|userId|GUID|Пока не задокументировано.|
+|tenantId|Guid|Пока не задокументировано.|
+|userId|Guid|Пока не задокументировано.|
 |deviceId|Guid|Пока не задокументировано.|
-|пайлоадид|GUID|Пока не задокументировано.|
+|пайлоадид|Guid|Пока не задокументировано.|
 |девицекэйсумбпринт|String|Пока не задокументировано.|
 |cert1PayloadUUID|String|Пока не задокументировано.|
 |cert2PayloadUUID|String|Пока не задокументировано.|
 |cert3PayloadUUID|String|Пока не задокументировано.|
 |плисттемплате|String|Пока не задокументировано.|
 |енкриптедблоб|Binary|Пока не задокументировано.|
-|пайлоадверсион|Int32|Пока нет описания|
-|status|Int32|Пока нет описания|
+|пайлоадверсион|Int32|Пока не задокументировано.|
+|status|Int32|Пока не задокументировано.|
 |createdTime|DateTimeOffset|Пока не задокументировано.|
 |lastModifiedTime|DateTimeOffset|Пока не задокументировано.|
 |eTag|String|Пока не задокументировано.|
-|isDeleted|Boolean|Пока не задокументировано.|
+|isDeleted|Boolean|Н/Д|
 
 
 
@@ -132,6 +132,9 @@ Content-Length: 781
   "isDeleted": true
 }
 ```
+
+
+
 
 
 

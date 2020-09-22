@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 10713ab78b06fcde037a0b2b440585562b0c8282
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 91f7f03e21c4608f8245f56443cea13d6a1c369b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200105"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093047"
 ---
 # <a name="update-publishedresource"></a>Обновление Публишедресаурце
 
@@ -18,7 +18,7 @@ ms.locfileid: "43200105"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта публишедресаурце [публишедресаурце](../resources/publishedresource.md) .
+Обновление свойств объекта публишедресаурце  [публишедресаурце](../resources/publishedresource.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,15 +46,15 @@ PATCH ~/onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}
 
 ## <a name="request-body"></a>Тело запроса
 
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 В следующей таблице перечислены свойства, которые можно обновить.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Представляет локальное имя опубликованного ресурса.|
+|displayName|Строка|Представляет локальное имя опубликованного ресурса.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
@@ -117,3 +117,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

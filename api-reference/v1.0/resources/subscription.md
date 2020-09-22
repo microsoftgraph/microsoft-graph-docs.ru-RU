@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cbd4b1ea0244a9b5a88f5def52670c72d3ff2019
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 7f6c933b2cdc306941e391dc486fd607616b196a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598397"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48094136"
 ---
 # <a name="subscription-resource-type"></a>Тип ресурса subscription
 
@@ -132,3 +132,4 @@ ms.locfileid: "46598397"
   "section": "documentation",
   "tocPath": ""
 }-->
+

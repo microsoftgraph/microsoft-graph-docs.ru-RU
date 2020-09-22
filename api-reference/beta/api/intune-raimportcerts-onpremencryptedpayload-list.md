@@ -3,14 +3,14 @@ title: Список Онпременкриптедпайлоадс
 description: Список свойств и связей объектов Онпременкриптедпайлоад.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c74b93f29cdb1ac24a9d2dbf869e0536e2934d71
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: eb04091ab3cf90d3476a193bd54c80af43d82e33
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437803"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093254"
 ---
 # <a name="list-onpremencryptedpayloads"></a>Список Онпременкриптедпайлоадс
 
@@ -46,10 +46,10 @@ GET /onPremEncryptedPayloads
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [онпременкриптедпайлоад](../resources/intune-raimportcerts-onpremencryptedpayload.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -91,6 +91,9 @@ Content-Length: 882
   ]
 }
 ```
+
+
+
 
 
 
