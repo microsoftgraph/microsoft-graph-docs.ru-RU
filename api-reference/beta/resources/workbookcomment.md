@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: c2165f43c04ebbaf3274cc0ae912756bf250785a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 11e0b1538f6d2b41a8b211e1a7cc4ac45d2703a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519248"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079642"
 ---
 # <a name="workbookcomment-resource-type"></a>Тип ресурса Воркбуккоммент
 
@@ -32,7 +32,7 @@ ms.locfileid: "42519248"
 |:-------------|:------------|:------------|
 |content|String|Содержимое комментария.|
 |contentType|String|Указывает тип комментария.|
-|id|Строка| Представляет идентификатор примечания. Только для чтения.|
+|id|String| Представляет идентификатор примечания. Только для чтения.|
 
 ## <a name="relationships"></a>Отношения
 
@@ -71,3 +71,5 @@ ms.locfileid: "42519248"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

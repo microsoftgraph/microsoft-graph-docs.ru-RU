@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: 1be08355983c6a99e86a4b0b8a95c7e492abff61
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7307e0bc710fead998260e78d0b4f550cffa5b3e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459591"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079237"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Регистрация устройств для управления в Intune
 
@@ -47,6 +47,8 @@ ms.locfileid: "43459591"
 - [Состояние токена VPP](intune-onboarding-vpptokenstate.md)
 - [Состояние синхронизации токена VPP](intune-onboarding-vpptokensyncstatus.md)
 - [Использование ПИН-кода в Windows Hello для бизнеса](intune-onboarding-windowshelloforbusinesspinusage.md)
+
+
 
 
 

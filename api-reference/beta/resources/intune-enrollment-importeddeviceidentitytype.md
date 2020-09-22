@@ -3,14 +3,14 @@ title: тип перечисления Импортеддевицеиденти�
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3a0cd97598ad411aad8c63d0ccba9097889ef70a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fce266bdb09c1739550ce77931e069d5cf2858c9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460814"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080182"
 ---
 # <a name="importeddeviceidentitytype-enum-type"></a>тип перечисления Импортеддевицеидентититипе
 
@@ -26,8 +26,11 @@ ms.locfileid: "43460814"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестное значение Импортеддевицеидентититипе.|
-|imei|1,1|Удостоверение устройства имеет тип IMEI.|
-|serialNumber|2|Идентификатор устройства имеет тип "серийный номер".|
+|imei|1 |Удостоверение устройства имеет тип IMEI.|
+|serialNumber|2 |Идентификатор устройства имеет тип "серийный номер".|
+
+
+
 
 
 

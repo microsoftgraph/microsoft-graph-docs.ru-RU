@@ -3,14 +3,14 @@ title: Тип ресурса Виндовсманажементапфеалсс�
 description: Объект состояния работоспособности приложения управления Windows.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 85f8adbd44ddcea679f29aaa1e028384bb59aafb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 09ec6296d619952750b94c41df9a221ceb146872
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419629"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080469"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>Тип ресурса Виндовсманажементапфеалсстате
 
@@ -41,7 +41,7 @@ ms.locfileid: "43419629"
 |deviceName|String|Имя устройства, на котором установлено приложение "Управление Windows".|
 |девицеосверсион|String|Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -63,6 +63,9 @@ ms.locfileid: "43419629"
   "deviceOSVersion": "String"
 }
 ```
+
+
+
 
 
 

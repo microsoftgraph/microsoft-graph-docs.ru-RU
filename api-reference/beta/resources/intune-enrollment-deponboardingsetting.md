@@ -3,14 +3,14 @@ title: Тип ресурса depOnboardingSetting
 description: DepOnboardingSetting представляет экземпляр службы Apple DEP, входящей в Intune. Встроенный экземпляр службы управляет маркером Apple, используемым для синхронизации данных между Apple и Intune.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 06196156c45e9f2621a5edc8277d1c50d8cbd2d9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 85a5a75a3a6ae0a959cf8f363b67c438e17889bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460934"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080238"
 ---
 # <a name="deponboardingsetting-resource-type"></a>Тип ресурса depOnboardingSetting
 
@@ -34,8 +34,8 @@ DepOnboardingSetting представляет экземпляр службы Ap
 |[действие Женератинкриптионпубликкэй](../api/intune-enrollment-deponboardingsetting-generateencryptionpublickey.md)|String|Создание открытого ключа, используемого для шифрования маркера программы регистрации устройств Apple|
 |[Действие uploadDepToken](../api/intune-enrollment-deponboardingsetting-uploaddeptoken.md)|Нет|Отправка нового маркера программы регистрации устройств|
 |[Действие syncWithAppleDeviceEnrollmentProgram](../api/intune-enrollment-deponboardingsetting-syncwithappledeviceenrollmentprogram.md)|Нет|Синхронизация между программой регистрации устройств Apple и Intune|
-|[Действие shareForSchoolDataSyncService](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|Нет|Пока не задокументировано.|
-|[Действие unshareForSchoolDataSyncService](../api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice.md)|Нет|Пока не задокументировано.|
+|[Действие shareForSchoolDataSyncService](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|Нет|Н/Д|
+|[Действие unshareForSchoolDataSyncService](../api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice.md)|Нет|Н/Д|
 |[Функция Жетекспирингвпптокенкаунт](../api/intune-enrollment-deponboardingsetting-getexpiringvpptokencount.md)|Int32|Н/Д|
 
 ## <a name="properties"></a>Свойства
@@ -53,9 +53,9 @@ DepOnboardingSetting представляет экземпляр службы Ap
 |токеннаме|String|Понятное имя для токена DEP|
 |синцеддевицекаунт|Int32|Получает число синхронизированных устройств|
 |dataSharingConsentGranted|Boolean|Разрешение, предоставленное для предоставления общего доступа к данным с помощью службы Apple DEP|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности.|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |дефаултиосенроллментпрофиле|[depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md)|Профиль регистрации iOS по умолчанию|
@@ -91,6 +91,9 @@ DepOnboardingSetting представляет экземпляр службы Ap
   ]
 }
 ```
+
+
+
 
 
 

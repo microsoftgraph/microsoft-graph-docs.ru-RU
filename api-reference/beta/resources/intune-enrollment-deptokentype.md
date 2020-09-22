@@ -3,14 +3,14 @@ title: тип перечисления Дептокентипе
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c52d81f80c646387383f3d243c3746c03e4e33f8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9defb03d04987d68c5bb55806458869c2d37be50
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460895"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080231"
 ---
 # <a name="deptokentype-enum-type"></a>тип перечисления Дептокентипе
 
@@ -26,8 +26,11 @@ ms.locfileid: "43460895"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|нуль|Тип маркера — None|
-|DEP|1,1|Тип токена — DEP.|
-|апплесчулманажер|2|Тип маркера — Apple School Manager|
+|DEP|1 |Тип токена — DEP.|
+|апплесчулманажер|2 |Тип маркера — Apple School Manager|
+
+
+
 
 
 

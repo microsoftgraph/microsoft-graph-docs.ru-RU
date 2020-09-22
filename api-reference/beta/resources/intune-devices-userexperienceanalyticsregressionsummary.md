@@ -3,14 +3,14 @@ title: Тип ресурса Усерекспериенцеаналитикср�
 description: Сводка по регрессии аналитики взаимодействия с пользователем.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 68cef211ab0f37d2220a38ff3052583ccf84478e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d54a61e380c9bdb39d2f0e1ac9a5b41766380ee1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464965"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080784"
 ---
 # <a name="userexperienceanalyticsregressionsummary-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксрегрессионсуммари
 
@@ -32,7 +32,7 @@ ms.locfileid: "43464965"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сводки по регрессии аналитики взаимодействия с пользователем.|
+|id|Строка|Уникальный идентификатор сводки по регрессии аналитики взаимодействия с пользователем.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -55,6 +55,9 @@ ms.locfileid: "43464965"
   "id": "String (identifier)"
 }
 ```
+
+
+
 
 
 

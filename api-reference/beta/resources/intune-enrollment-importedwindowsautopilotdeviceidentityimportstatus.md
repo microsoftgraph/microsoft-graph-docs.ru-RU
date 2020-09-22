@@ -3,14 +3,14 @@ title: тип перечисления Импортедвиндовсаутоп�
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cd2f09c008c7c29e48e310a8d26443ee3ab1f6be
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ce914cc316d621629af2f18ad77a9d5f41f7bd62
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460800"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079944"
 ---
 # <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>тип перечисления Импортедвиндовсаутопилотдевицеидентитимпортстатус
 
@@ -26,10 +26,13 @@ ms.locfileid: "43460800"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестное состояние.|
-|закончен|1,1|Состояние ожидания.|
-|части|2|Частичное состояние.|
+|закончен|1 |Состояние ожидания.|
+|части|2 |Частичное состояние.|
 |complete|4|Состояние "завершено".|
 |error|4 |Состояние ошибки.|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Тип ресурса windowsManagementApp
 description: Сущность приложения управления Windows.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa5f2189d0e4273ca287e7cd5ac2a58db60a3f67
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 15a4b67bdbc1fe48d1c71e62df2e1db943f7ec9c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419652"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080476"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>Тип ресурса windowsManagementApp
 
@@ -31,8 +31,8 @@ ms.locfileid: "43419652"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для приложения управления Windows|
-|availableVersion|String|Доступная версия приложения управления Windows.|
+|id|Строка|Уникальный идентификатор для приложения управления Windows|
+|availableVersion|Строка|Доступная версия приложения управления Windows.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -54,6 +54,9 @@ ms.locfileid: "43419652"
   "availableVersion": "String"
 }
 ```
+
+
+
 
 
 

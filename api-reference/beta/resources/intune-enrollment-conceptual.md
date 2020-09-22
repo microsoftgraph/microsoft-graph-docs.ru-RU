@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: d5611e7819756803bceb079d9ef1d324ec39a7d0
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 250303d1aad682e3f77dfbdfdccb335802e72b51
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179202"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080357"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Регистрация корпоративных устройств с помощью Intune
 
@@ -50,6 +50,7 @@ ms.locfileid: "44179202"
 - [Сертификат управления с отпечатком](intune-enrollment-managementcertificatewiththumbprint.md)
 - [Параметры запуска при первом включении компьютера](intune-enrollment-outofboxexperiencesettings.md)
 - [Платформа](intune-enrollment-platform.md)
+- [Рекомендуемое предельное значение регистрации](intune-enrollment-suggestedenrollmentlimit.md)
 - [Назначение профиля Windows Autopilot Deployment](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Удостоверение устройства с Windows Autopilot](intune-enrollment-windowsautopilotdeviceidentity.md)
 - [Тип устройства с Windows Autopilot](intune-enrollment-windowsautopilotdevicetype.md)
@@ -60,3 +61,5 @@ ms.locfileid: "44179202"
 - [Тип использования устройства Windows](intune-enrollment-windowsdeviceusagetype.md)
 - [Параметры экрана состояния регистрации Windows](intune-enrollment-windowsenrollmentstatusscreensettings.md)
 - [Тип пользователя Windows](intune-enrollment-windowsusertype.md)
+
+

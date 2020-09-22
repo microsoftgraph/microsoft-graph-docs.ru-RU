@@ -3,14 +3,14 @@ title: Тип ресурса Апплеусеринитиатеденроллм�
 description: Ресурс объекта enrollmentprofile представляет коллекцию конфигураций, которым необходимо предоставить предварительную регистрацию, чтобы включить регистрацию определенных устройств, удостоверения которых были предварительно настроены. Для этого типа профиля назначаются идентификаторы предварительно подготовленных устройств, чтобы применить конфигурации профиля при регистрации соответствующего устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7f6f7d28d1c5684793891bc8bee08300f67ebeec
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fb8e521826d0dc5123f86ad6fe99c098dfff8969
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419482"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080364"
 ---
 # <a name="appleuserinitiatedenrollmentprofile-resource-type"></a>Тип ресурса Апплеусеринитиатеденроллментпрофиле
 
@@ -37,15 +37,15 @@ ms.locfileid: "43419482"
 |:---|:---|:---|
 |дефаултенроллменттипе|[appleUserInitiatedEnrollmentType](../resources/intune-enrollment-appleuserinitiatedenrollmenttype.md)|Тип регистрации профиля по умолчанию. Возможные значения: `unknown`, `device`, `user`.|
 |аваилаблинроллменттипеоптионс|Коллекция [апплеовнертипинроллменттипе](../resources/intune-enrollment-appleownertypeenrollmenttype.md)|Список доступных параметров типа регистрации|
-|id|Строка|GUID объекта|
-|displayName|Строка|Имя профиля|
+|id|String|GUID объекта|
+|displayName|String|Имя профиля|
 |description|String|Описание профиля|
 |priority|Int32|Приоритет, 0 — самый высокий|
-|platform|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Платформа устройства. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|платформа|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Платформа устройства. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |createdDateTime|DateTimeOffset|Время создания профиля|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения профиля|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [апплинроллментпрофилеассигнмент](../resources/intune-enrollment-appleenrollmentprofileassignment.md)|Список назначений для этого профиля.|
@@ -78,6 +78,9 @@ ms.locfileid: "43419482"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

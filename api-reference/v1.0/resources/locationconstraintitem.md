@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: dbfc43a96a06743ffb018f47882fb373638a45a3
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 81a53c734a1be8dd0d10f437c58746342f26d617
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807663"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079139"
 ---
 # <a name="locationconstraintitem-resource-type"></a>Тип ресурсов locationConstraintItem
 
@@ -20,7 +20,7 @@ ms.locfileid: "46807663"
 
 Тип, производный от [location](location.md).
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -44,7 +44,7 @@ ms.locfileid: "46807663"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | address | [physicalAddress](physicaladdress.md) |Почтовый адрес расположения. |
-| displayName  | String | Имя, связанное с расположением.                       |
+| displayName  | Строка | Имя, связанное с расположением.                       |
 | locationEmailAddress | String | Необязательный адрес электронной почты для расположения. |
 | ресолвеаваилабилити | Boolean | Если задано значение true и указанный ресурс занят, [findMeetingTimes](../api/user-findmeetingtimes.md) ищет свободный ресурс. Если задано значение false и указанный ресурс занят, **findMeetingTimes** возвращает ресурс с наиболее высоким приоритетом в кэше пользователя, не проверяя, свободен ли этот ресурс. Значение по умолчанию: true. |
 
@@ -57,3 +57,4 @@ ms.locfileid: "46807663"
   "section": "documentation",
   "tocPath": ""
 }-->
+

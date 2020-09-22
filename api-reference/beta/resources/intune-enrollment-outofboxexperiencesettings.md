@@ -3,14 +3,14 @@ title: Тип ресурса Outofboxexperiencesettings.
 description: Настройка "нет на месте"
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 82bfd9a7126298958d35ad121b22115bb1f71241
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a258adda7de3a44e33e980fd6e78f7065824ea91
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460709"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079908"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>Тип ресурса Outofboxexperiencesettings.
 
@@ -32,7 +32,7 @@ ms.locfileid: "43460709"
 |скипкэйбоардселектионпаже|Boolean|Если задано, пропускать страницу "Выбор клавиатуры", если задан язык и регион|
 |хидискапелинк|Boolean|Если задано значение true, пользователь не сможет начать с другой учетной записи, при входе в компанию|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,6 +53,9 @@ ms.locfileid: "43460709"
   "hideEscapeLink": true
 }
 ```
+
+
+
 
 
 

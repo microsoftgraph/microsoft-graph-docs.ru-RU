@@ -3,14 +3,14 @@ title: тип перечисления Девицеманажементрепо�
 description: Возможные состояния, связанные с созданным отчетом
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9f7ab2225d862dc14d1687e286cc71681988f0f8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fe2895f73857bb73262aaa9e90894da7e8028d22
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453196"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079783"
 ---
 # <a name="devicemanagementreportstatus-enum-type"></a>тип перечисления Девицеманажементрепортстатус
 
@@ -26,10 +26,13 @@ ms.locfileid: "43453196"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Состояние создания отчета неизвестно|
-|notStarted|1,1|Создание отчета не начато|
-|inProgress|2|Идет создание отчета|
+|notStarted|1 |Создание отчета не начато|
+|inProgress|2 |Идет создание отчета|
 |готовы|4|Создание отчета завершено|
 |сбоев|4 |Не удалось создать отчет|
+
+
+
 
 
 

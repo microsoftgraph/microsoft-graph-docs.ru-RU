@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2e80b80a7f37af8b86dfd3925fe268dba89cea17
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 694af6455cc7b2dbf1f6f6ae811713b5b9d61265
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217814"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079699"
 ---
 # <a name="filteroperatorschema-resource-type"></a>Тип ресурса Филтероператорсчема
 
@@ -24,10 +24,10 @@ ms.locfileid: "43217814"
 
 | Свойство                   | Тип                      | Описание    |
 |:---------------------------|:--------------------------|:---------------|
-|равн                       |String          |Арность оператора. Возможные значения: `Binary`, `Unary`. Значение по умолчанию: `Binary`.|
-|мултивалуедкомпарисонтипе   |скопеоператормултивалуедкомпарисонтипе          |Возможные значения: `All`, `Any`. Применяется только к многозначным атрибутам. `All`означает, что все значения должны удовлетворять условию. `Any`Указывает, что по крайней мере одно значение должно удовлетворять условию. Значение по умолчанию: `All`.|
+|равн                       |String          |Арность оператора. Возможные значения: `Binary`, `Unary`. Значение по умолчанию: `Binary` .|
+|мултивалуедкомпарисонтипе   |скопеоператормултивалуедкомпарисонтипе          |Возможные значения: `All`, `Any`. Применяется только к многозначным атрибутам. `All` означает, что все значения должны удовлетворять условию. `Any` Указывает, что по крайней мере одно значение должно удовлетворять условию. Значение по умолчанию: `All` .|
 |name                        |String                     |Имя оператора. |
-|суппортедаттрибутетипес     |Коллекция объектов string         |Типы атрибутов, поддерживаемые оператором. Возможные значения: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
+|суппортедаттрибутетипес     |Коллекция String         |Типы атрибутов, поддерживаемые оператором. Возможные значения: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -63,3 +63,5 @@ ms.locfileid: "43217814"
   "suppressions": []
 }
 -->
+
+

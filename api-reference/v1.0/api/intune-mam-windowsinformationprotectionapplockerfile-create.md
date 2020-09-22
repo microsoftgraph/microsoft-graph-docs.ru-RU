@@ -3,14 +3,14 @@ title: Создание объекта windowsInformationProtectionAppLockerFile
 description: Создание объекта windowsInformationProtectionAppLockerFile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d832fc4b562243a1d5c20b48b5df4f76c811071
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6057e2a9dd6f3993fdc256bb959f9c4cf645746e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450163"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079391"
 ---
 # <a name="create-windowsinformationprotectionapplockerfile"></a>Создание объекта windowsInformationProtectionAppLockerFile
 
@@ -47,7 +47,7 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта windowsInformationProtectionAppLockerFile в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта windowsInformationProtectionAppLockerFile.
@@ -57,8 +57,8 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 |displayName|Строка|Понятное имя|
 |fileHash|String|Хэш SHA256 для файла|
 |file|Binary|Файл в виде массива байтов|
-|id|String|Ключ объекта.|
-|version|Строка|Версия объекта.|
+|id|Строка|Ключ объекта.|
+|version|String|Версия объекта.|
 
 
 
@@ -99,6 +99,9 @@ Content-Length: 260
   "version": "Version value"
 }
 ```
+
+
+
 
 
 

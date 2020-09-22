@@ -3,14 +3,14 @@ title: Тип ресурса Манажементцертификатевисс�
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 45a8544f9c032c386f99caa2f8d174d495673c29
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fa78c594179edcd5a1cf4bc1b6e331d95155fc4e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460724"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079923"
 ---
 # <a name="managementcertificatewiththumbprint-resource-type"></a>Тип ресурса Манажементцертификатевиссумбпринт
 
@@ -28,7 +28,7 @@ ms.locfileid: "43460724"
 |отпечаток|String|Отпечаток сертификата управления|
 |certificate|String|Сертификат управления Base 64 с шифрованием|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,6 +45,9 @@ ms.locfileid: "43460724"
   "certificate": "String"
 }
 ```
+
+
+
 
 
 

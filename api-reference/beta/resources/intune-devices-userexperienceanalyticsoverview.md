@@ -3,14 +3,14 @@ title: Тип ресурса Усерекспериенцеаналитиксо�
 description: В объекте обзор анализа взаимодействия с пользователем содержатся общие показатели и оценки всех показателей всех категорий.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 152f5ef93db38ffced60bf93e3215d45cf822ba5
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 3f18a58b9e453e0d91a7de866d8b69b16a9ab073
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44175520"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080791"
 ---
 # <a name="userexperienceanalyticsoverview-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксовервиев
 
@@ -77,6 +77,9 @@ ms.locfileid: "44175520"
   "bestPracticesHealthState": "String"
 }
 ```
+
+
+
 
 
 

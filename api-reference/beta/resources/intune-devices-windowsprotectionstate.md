@@ -3,14 +3,14 @@ title: Тип ресурса windowsProtectionState
 description: Объект состояния защиты устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2f34c6b1a18d5de654409cedbb384f0390933ba9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 00a04fe2f20270cdd0892829406fdccb240989ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43419622"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080462"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>Тип ресурса windowsProtectionState
 
@@ -50,7 +50,7 @@ ms.locfileid: "43419622"
 |ластфуллскансигнатуреверсион|String|Версия последней полной проверки подписи|
 |lastReportedDateTime|DateTimeOffset|Последнее состояние работоспособности устройства в отчете о времени|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |детектедмалварестате|Коллекция [виндовсдевицемалварестате](../resources/intune-devices-windowsdevicemalwarestate.md)|Список вредоносных программ для устройств|
@@ -86,6 +86,9 @@ ms.locfileid: "43419622"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Тип ресурса Усерекспериенцеаналитикск�
 description: Сущность категории аналитики взаимодействия с пользователем содержит показатели и аналитические сведения о различных метриках категории.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8d80a287b736786a14eac1244b3e42e07b8e6dad
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: eff1c284140b0a4b6b119f073431c13e176b9196
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178103"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080938"
 ---
 # <a name="userexperienceanalyticscategory-resource-type"></a>Тип ресурса Усерекспериенцеаналитикскатегори
 
@@ -71,6 +71,9 @@ ms.locfileid: "44178103"
   "state": "String"
 }
 ```
+
+
+
 
 
 

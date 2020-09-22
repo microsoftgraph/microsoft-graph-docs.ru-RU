@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс lookupColumn в ресурсе columnDefinition указывает, что значения столбца подставляются из другого источника на сайте.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 752d60bbb1ac93b5a58eb326e7a6769921c47a66
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9bd1d9040316404c6f0b494914d0c1f1f016e016
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447523"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079118"
 ---
 # <a name="lookupcolumn-resource-type"></a>Тип ресурса lookupColumn
 
@@ -52,3 +52,4 @@ ms.locfileid: "42447523"
   "section": "documentation",
   "tocPath": "Resources/LookupColumn"
 } -->
+

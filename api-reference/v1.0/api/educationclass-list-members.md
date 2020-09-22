@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 2ff31d2c899a8406678a4bded7bd782e0d95803d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 17486eac47b925af72629fa5016e617a27a55e3a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517588"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079622"
 ---
 # <a name="list-members"></a>Список участников
 
@@ -25,7 +25,7 @@ ms.locfileid: "42517588"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduRoster.ReadBasic  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается  |
-|Для приложений | EduRoster. Read. ALL, EduRoster. ReadWrite. ALL плюс Member. Read. Hidden | 
+|Для приложения | EduRoster. Read. ALL, EduRoster. ReadWrite. ALL плюс Member. Read. Hidden | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,9 +40,9 @@ GET /education/classes/{id}/members
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationUser](../resources/educationuser.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -181,3 +181,4 @@ Content-length: 593
   "suppressions": [
   ]
 }-->
+

@@ -1,18 +1,18 @@
 ---
-title: Список Оргконтактс
+title: Перечисление orgContacts
 description: Получение списка контактов Организации для этой Организации.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1c6ce5caffdc24306b93e61fce70802a04a4267b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f7c356f2247e3d5a4b4c2939b6a97faf4ae2c2c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463749"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079405"
 ---
-# <a name="list-orgcontacts"></a>Список Оргконтактс
+# <a name="list-orgcontacts"></a>Перечисление orgContacts
 
 Пространство имен: microsoft.graph
 
@@ -25,7 +25,7 @@ ms.locfileid: "43463749"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | OrgContact. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | OrgContact. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+|Для приложения | OrgContact. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -33,17 +33,17 @@ ms.locfileid: "43463749"
 GET /contacts
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$expand` [параметры запросов](/graph/query-parameters) , `$select` `$filter`, и `$top` OData для настройки отклика.
+Этот метод поддерживает `$expand` `$filter` `$select` параметры запросов,, и `$top` [OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:-----------|:----------|
 | Авторизация  |Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [orgContact](../resources/orgcontact.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -132,3 +132,4 @@ Content-length: 222
   ]
 }
 -->
+

@@ -3,14 +3,14 @@ title: Тип ресурса Усерекспериенцеаналитиксм�
 description: Метрика аналитики взаимодействия с пользователем содержит показатель и единицы метрики категории взаимодействия с пользователем анлайтикс.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e8239ac7e4583841d3c8a095bc85d9c9eb9b9d78
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 021b0dcddc41aba6f297025cc451c8b292366870
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178397"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080812"
 ---
 # <a name="userexperienceanalyticsmetric-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксметрик
 
@@ -57,6 +57,9 @@ ms.locfileid: "44178397"
   "unit": "String"
 }
 ```
+
+
+
 
 
 

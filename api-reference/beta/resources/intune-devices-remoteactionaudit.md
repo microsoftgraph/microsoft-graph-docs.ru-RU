@@ -3,14 +3,14 @@ title: Тип ресурса remoteActionAudit
 description: Отчет о удаленных действиях, запущенных на устройствах, относящихся к определенному клиенту.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ab0ada68ca9d11b4c2a1c9ec7962a34f5cc665eb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c510dc40ac21e3990ee7771154c7b58268f332e6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446958"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081099"
 ---
 # <a name="remoteactionaudit-resource-type"></a>Тип ресурса remoteActionAudit
 
@@ -34,16 +34,16 @@ ms.locfileid: "43446958"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор отчета.|
+|id|Строка|Идентификатор отчета.|
 |deviceDisplayName|String|Имя устройства Intune.|
-|userName|String|\[\] рекомендуется вместо этого использовать свойства initiatedbyuserprincipalname.|
-|Свойства initiatedbyuserprincipalname|String|Пользователь, который инициировал действие с устройством, имеет формат UPN.|
-|action|[ремотеактион](../resources/intune-devices-remoteaction.md)|Имя действия. Возможные `unknown`значения:, `factoryReset`, `removeCompanyData`, `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `fullScan` `windowsDefenderUpdateSignatures` `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown` `rotateBitLockerKeys` `rotateFileVaultKey` `getFileVaultKey` `setDeviceName`,,,,,,, `quickScan`,,,,,,,,,,,,,,,,,,. `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`|
+|userName|String|\[рекомендуется \] вместо этого использовать свойства initiatedbyuserprincipalname.|
+|Свойства initiatedbyuserprincipalname|Строка|Пользователь, который инициировал действие с устройством, имеет формат UPN.|
+|action|[ремотеактион](../resources/intune-devices-remoteaction.md)|Имя действия. Возможные значения:,,,,,,,,,,, `unknown` `factoryReset` `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan` , `fullScan` , `windowsDefenderUpdateSignatures` , `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown` `rotateBitLockerKeys` `rotateFileVaultKey` `getFileVaultKey` `setDeviceName` ,,,,,,,,,,,,,,.|
 |рекуестдатетиме|DateTimeOffset|Время, когда действие было выдано, заданное в формате UTC.|
-|deviceOwnerUserPrincipalName|String|Имя участника-пользователя для владельца устройства.|
-|deviceIMEI|String|IMEI устройства.|
+|deviceOwnerUserPrincipalName|Строка|Имя участника-пользователя для владельца устройства.|
+|deviceIMEI|Строка|IMEI устройства.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|манажеддевицеид|String|Цель действия.|
+|манажеддевицеид|Строка|Цель действия.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -71,6 +71,9 @@ ms.locfileid: "43446958"
   "managedDeviceId": "String"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Получение windowsInformationProtection
 description: Чтение свойств и связей объекта windowsInformationProtection.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fa03ebdbef0adcce6b1784f3ce6cfc5e7eab933c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 16b0f7fcf9d3a41941a6aa89b892bf376beb6a46
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43418627"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079489"
 ---
 # <a name="get-windowsinformationprotection"></a>Получение windowsInformationProtection
 
@@ -49,10 +49,10 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -200,6 +200,9 @@ Content-Length: 4337
   }
 }
 ```
+
+
+
 
 
 

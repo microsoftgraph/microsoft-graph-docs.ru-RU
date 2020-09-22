@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bcf8b793c4543b895a895ef0582e4b017e127cbb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 35a886fa40beb85a636dcbbf0895d35e204e4675
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511469"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079356"
 ---
 # <a name="participant-invite"></a>участник: пригласить
 
@@ -29,7 +29,7 @@ ms.locfileid: "42511469"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Для приложений     | Calls. Инитиатеграупкаллс. ALL                               |
+| Для приложения     | Calls.IniТиатеграупкаллс. ALL                               |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,10 +49,10 @@ POST /communications/calls/{id}/participants/invite
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |participants|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Приглашенных участников.|
-|Контекст|String|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
+|Контекст|Строка|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
 
-## <a name="response"></a>Ответ
-Если сукксессфул, этот метод возвращает код `200 OK` отклика и заголовок Location с URI для [инвитепартиЦипантсоператион](../resources/inviteparticipantsoperation.md) , созданного для этого запроса. 
+## <a name="response"></a>Отклик
+Если сукксессфул, этот метод возвращает `200 OK` код отклика и заголовок Location с URI для [инвитепартиЦипантсоператион](../resources/inviteparticipantsoperation.md) , созданного для этого запроса. 
 
 Текст отклика содержит созданный [инвитепартиЦипантсоператион](../resources/inviteparticipantsoperation.md).
 
@@ -713,3 +713,4 @@ Content-Type: application/json
   ]
 }
 -->
+

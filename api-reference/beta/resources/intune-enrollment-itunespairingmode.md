@@ -3,14 +3,14 @@ title: тип перечисления Итунеспаирингмоде
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8902edc633de5084c57ee0bb7389f0eb21838ee5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 142b8713b14d2706b4a9d49fe0edb9f5c12f2a62
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460731"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079916"
 ---
 # <a name="itunespairingmode-enum-type"></a>тип перечисления Итунеспаирингмоде
 
@@ -26,8 +26,11 @@ ms.locfileid: "43460731"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Использование|нуль|Связывание запрещено|
-|разрешить|1,1|Связывание разрешено|
-|рекуиресцертификате|2|Сертификат, необходимый для связывания с iTunes|
+|разрешить|1 |Связывание разрешено|
+|рекуиресцертификате|2 |Сертификат, необходимый для связывания с iTunes|
+
+
+
 
 
 

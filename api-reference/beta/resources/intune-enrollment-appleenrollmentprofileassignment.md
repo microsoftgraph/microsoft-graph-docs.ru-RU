@@ -3,14 +3,14 @@ title: Тип ресурса Апплинроллментпрофилеасси�
 description: Назначение профиля Apple.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8b2bf13a320a1455773269aaebf0528cc4d7d62
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: ac3aea84438f7e8e1e47d288eea20251c8fc9420
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793551"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080371"
 ---
 # <a name="appleenrollmentprofileassignment-resource-type"></a>Тип ресурса Апплинроллментпрофилеассигнмент
 
@@ -37,7 +37,7 @@ ms.locfileid: "44793551"
 |id|String|Ключ назначения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для профиля развертывания, инициированного пользователем Apple.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -59,6 +59,9 @@ ms.locfileid: "44793551"
   }
 }
 ```
+
+
+
 
 
 

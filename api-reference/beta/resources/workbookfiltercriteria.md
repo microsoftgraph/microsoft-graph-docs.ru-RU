@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: ruoyingl
-ms.openlocfilehash: 6bd7906d458cf3573fe0d7d3f61cc5c8684e1c03
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 6ad0095b48f39937ab4e8d7d02f533bd9a140ff9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808489"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079657"
 ---
 # <a name="workbookfiltercriteria-resource-type"></a>Тип ресурса Воркбукфилтеркритериа
 
@@ -20,7 +20,7 @@ ms.locfileid: "46808489"
 
 Представляет условия фильтра, применяемые к столбцу.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -44,3 +44,5 @@ ms.locfileid: "46808489"
   "operator":"string"
 }
 ```
+
+

@@ -3,14 +3,14 @@ title: тип перечисления платформы
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4e523988f13aa94199882405d5ba0fa62c0ec043
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 34181ab9d7f2563af6718e3fc277248aaf0fb43d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460687"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079930"
 ---
 # <a name="platform-enum-type"></a>тип перечисления платформы
 
@@ -26,11 +26,14 @@ ms.locfileid: "43460687"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестная платформа устройства|
-|модуле|1,1|Платформа устройства IOS|
-|ОС|2|Платформа для устройств Android|
+|модуле|1 |Платформа устройства IOS|
+|ОС|2 |Платформа для устройств Android|
 |под|4|Платформа Windows для устройств|
 |Мобильные|4 |Платформа устройства мобильные|
 |macOS|5 |Платформа для устройств Mac|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Тип ресурса объекта enrollmentprofile
 description: Ресурс объекта enrollmentprofile представляет коллекцию конфигураций, которым необходимо предоставить предварительную регистрацию, чтобы включить регистрацию определенных устройств, удостоверения которых были предварительно настроены. Для этого типа профиля назначаются идентификаторы предварительно подготовленных устройств, чтобы применить конфигурации профиля при регистрации соответствующего устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 954f1d846b2af90598239d205970e3c2505f1fb1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8c8d132aca31abe7e90131509f73d9d7a15d0db7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460857"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080209"
 ---
 # <a name="enrollmentprofile-resource-type"></a>Тип ресурса объекта enrollmentprofile
 
@@ -37,15 +37,15 @@ ms.locfileid: "43460857"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта|
-|displayName|Строка|Имя профиля|
+|id|String|GUID объекта|
+|displayName|String|Имя профиля|
 |description|String|Описание профиля|
 |рекуиресусераусентикатион|Boolean|Указывает, требуется ли для профиля проверка подлинности пользователя|
 |конфигуратионендпоинтурл|String|URL-адрес конечной точки конфигурации, используемый для регистрации|
 |enableAuthenticationViaCompanyPortal|Boolean|Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала.|
 |рекуирекомпанипорталонсетупассистантенролледдевицес|Boolean|Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -68,6 +68,9 @@ ms.locfileid: "43460857"
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
+
+
+
 
 
 

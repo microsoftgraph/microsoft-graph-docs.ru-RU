@@ -3,14 +3,14 @@ title: Тип ресурса Усерекспериенцеаналитикси�
 description: Значение в средстве анализа пользовательского интерфейса.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb7e04517929d75a59a10489f989b92c9d63b522
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 90c0bffccda05d787d275d11cd561483f9fc8fe7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43389167"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080889"
 ---
 # <a name="userexperienceanalyticsinsightvalue-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксинсигхтвалуе
 
@@ -41,6 +41,9 @@ ms.locfileid: "43389167"
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsInsightValue"
 }
 ```
+
+
+
 
 
 

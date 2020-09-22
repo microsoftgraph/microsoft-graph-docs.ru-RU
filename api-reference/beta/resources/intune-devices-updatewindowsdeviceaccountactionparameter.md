@@ -3,14 +3,14 @@ title: Тип ресурса updateWindowsDeviceAccountActionParameter
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ed9545a16373ab8a61fb8b6243a6cc81be86c8e0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2fcd61fb9bda41c40cf96de8986f4a47f28da644
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382941"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081001"
 ---
 # <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a>Тип ресурса updateWindowsDeviceAccountActionParameter
 
@@ -20,17 +20,17 @@ ms.locfileid: "43382941"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Пока не задокументировано
+Н/Д
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|deviceAccount|[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|Пока не задокументировано.|
+|deviceAccount|[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|Н/Д|
 |passwordRotationEnabled|Boolean|Н/Д|
 |calendarSyncEnabled|Boolean|Н/Д|
-|deviceAccountEmail|String|Пока не задокументировано.|
-|exchangeServer|String|Пока не задокументировано.|
-|sessionInitiationProtocalAddress|String|Пока не задокументировано.|
+|deviceAccountEmail|String|Н/Д|
+|exchangeServer|String|Н/Д|
+|sessionInitiationProtocalAddress|String|Н/Д|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -56,6 +56,9 @@ ms.locfileid: "43382941"
   "sessionInitiationProtocalAddress": "String"
 }
 ```
+
+
+
 
 
 

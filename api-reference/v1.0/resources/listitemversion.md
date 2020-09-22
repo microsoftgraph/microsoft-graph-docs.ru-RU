@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 author: JeremyKelley
 doc_type: resourcePageType
-ms.openlocfilehash: 73b1c0e8f98a5f7ef321632e06619ba040cbd020
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 3d93917cab8e592a12385853d7c4051d37d3a3da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807754"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079153"
 ---
 # <a name="listitemversion-resource-type"></a>Тип ресурса listItemVersion
 
@@ -62,7 +62,7 @@ ms.locfileid: "46807754"
 | **published**            | [PublicationFacet](../resources/publicationfacet.md) | Указывает состояние публикации конкретной версии. Только для чтения. |
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 В таблице ниже определены связи между ресурсом **driveItemVersion** и другими ресурсами.
 
@@ -78,3 +78,4 @@ ms.locfileid: "46807754"
   "section": "documentation",
   "tocPath": "Facets/Version"
 } -->
+

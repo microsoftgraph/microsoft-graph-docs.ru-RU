@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 06fa04c528591e5a6353b73b13fbca302e95cca3
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: 75797fa96e28c20b5d9bbec3178b64ebfc75218d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991805"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079125"
 ---
 # <a name="localeinfo-resource-type"></a>Тип ресурса localeInfo
 
@@ -54,3 +54,4 @@ ms.locfileid: "43991805"
   "section": "documentation",
   "tocPath": ""
 }-->
+

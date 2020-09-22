@@ -3,14 +3,14 @@ title: Тип ресурса Усерекспериенцеаналитикси�
 description: Аналитика пользовательского интерфейса является рекомендацией для усовершенствования оценки анализа взаимодействия с пользователем.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 40e82f0c950328c0a6937a38762c6a26344fb943
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: d000afacb82365e06c5728dd8eedc2e6eb4217dd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178817"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080896"
 ---
 # <a name="userexperienceanalyticsinsight-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксинсигхт
 
@@ -54,6 +54,9 @@ ms.locfileid: "44178817"
   "severity": "String"
 }
 ```
+
+
+
 
 
 

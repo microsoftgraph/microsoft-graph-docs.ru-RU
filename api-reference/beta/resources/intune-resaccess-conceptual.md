@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: rolyon
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: d79e455db0b6112bbd44b12a1614750311d42ca7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b922fa15091d1fa5eec6a92438a02c7223bc7a85
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42527503"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079776"
 ---
 # <a name="manage-resource-access-certificates-in-intune"></a>Управление сертификатами доступа к ресурсам в Intune
 
@@ -26,3 +26,6 @@ ms.locfileid: "42527503"
 - [Сертификат PFX пользователя](intune-raimportcerts-userpfxcertificate.md)
 - [Предполагаемое назначение PFX пользователя](intune-raimportcerts-userpfxintendedpurpose.md)
 - [Схема заполнения пользователя PFX](intune-raimportcerts-userpfxpaddingscheme.md)
+
+
+
