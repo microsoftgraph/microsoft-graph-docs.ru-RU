@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 82bd2a49b95bfb8e880869c753556e9cde868236
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e7dabc312e0e8db58624651436e8c04f742d51d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42501299"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081710"
 ---
 # <a name="educationpowerpointresource-resource-type"></a>Тип ресурса Едукатионповерпоинтресаурце
 
@@ -24,9 +24,9 @@ ms.locfileid: "42501299"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fileUrl|String|Расположение файла на диске.|
+|fileUrl|Строка|Расположение файла на диске.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -57,3 +57,5 @@ ms.locfileid: "42501299"
   "suppressions": []
 }
 -->
+
+

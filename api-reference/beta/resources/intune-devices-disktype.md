@@ -3,14 +3,14 @@ title: тип перечисления Дисктипе
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f51fe5d26377295809d043c8df3308feface4e1a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dc8d6dbfd019748808c35f4f99322aff34f4dbe9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470658"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081407"
 ---
 # <a name="disktype-enum-type"></a>тип перечисления Дисктипе
 
@@ -26,8 +26,11 @@ ms.locfileid: "43470658"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |неизвестных|нуль|Пока не задокументировано.|
-|объединительной|1,1|Пока не задокументировано.|
-|ssd|2|Пока не задокументировано.|
+|объединительной|1 |Пока не задокументировано.|
+|ssd|2 |Пока не задокументировано.|
+
+
+
 
 
 

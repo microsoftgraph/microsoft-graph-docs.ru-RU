@@ -3,14 +3,14 @@ title: Тип ресурса Девицешеллскрипт
 description: Intune предоставит клиенту возможность выполнять сценарии оболочки на зарегистрированных устройствах Mac OS. Сценарий можно выполнить один раз или периодически.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ca4e2e2312a1caf3b61306aed3901834d0d25e5c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: de1bd720e244c1b63587a9d63b2dee66a67da0b8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470673"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081414"
 ---
 # <a name="deviceshellscript-resource-type"></a>Тип ресурса Девицешеллскрипт
 
@@ -40,13 +40,13 @@ Intune предоставит клиенту возможность выполн
 |блоккексекутионнотификатионс|Boolean|Не уведомляет пользователя о выполнении сценария|
 |id|Строка|Уникальный идентификатор для сценария управления устройствами.|
 |displayName|Строка|Имя скрипта управления устройствами.|
-|description|String|Необязательное описание скрипта управления устройствами.|
+|description|Строка|Необязательное описание скрипта управления устройствами.|
 |скриптконтент|Binary|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
 |fileName|String|Имя файла сценария.|
-|roleScopeTagIds|Коллекция объектов string|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -84,6 +84,9 @@ Intune предоставит клиенту возможность выполн
   ]
 }
 ```
+
+
+
 
 
 

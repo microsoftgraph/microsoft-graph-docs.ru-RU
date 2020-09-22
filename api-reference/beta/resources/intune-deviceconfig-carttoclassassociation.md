@@ -3,14 +3,14 @@ title: Тип ресурса КарттоклассассоЦиатион
 description: КарттоклассассоЦиатион для связывания корзин устройств с аудиториями.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a5fb237b94f746dc37aa7bfe63aa8d0925f1de8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5aaced5f6c5959b4113ae5d6ff3cbbfecb0a1ba1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453646"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081627"
 ---
 # <a name="carttoclassassociation-resource-type"></a>Тип ресурса КарттоклассассоЦиатион
 
@@ -34,14 +34,14 @@ ms.locfileid: "43453646"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |version|Int32|Версия КарттоклассассоЦиатион.|
 |displayName|Строка|Указанное администратором имя конфигурации устройства.|
-|description|String|Администратор предоставил описание КарттоклассассоЦиатион.|
-|девицекартидс|Коллекция объектов string|Идентификаторы корзин устройств, которые необходимо связать с классами.|
-|классрумидс|Коллекция объектов string|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
+|description|Строка|Администратор предоставил описание КарттоклассассоЦиатион.|
+|девицекартидс|Коллекция String|Идентификаторы корзин устройств, которые необходимо связать с классами.|
+|классрумидс|Коллекция String|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -71,6 +71,9 @@ ms.locfileid: "43453646"
   ]
 }
 ```
+
+
+
 
 
 

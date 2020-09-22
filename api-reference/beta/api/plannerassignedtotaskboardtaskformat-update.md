@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 7e862657e737e561ec934a46aeb6cef2d6e07c8b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 048936a5d1a4c2f311a8d7bea483e01486ed2afb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455776"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081918"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>Обновление объекта plannerAssignedToTaskBoardTaskFormat
 
@@ -39,7 +39,7 @@ PATCH /planner/tasks/{id}/assignedToTaskBoardFormat
 | Авторизация  | Bearer {токен}. Обязательный. |
 | If-Match  | Последнее известное значение ETag обновляемого объекта **plannerAssignedToTaskBoardTaskFormat**. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -123,3 +123,5 @@ Content-length: 225
   ]
 }
 -->
+
+

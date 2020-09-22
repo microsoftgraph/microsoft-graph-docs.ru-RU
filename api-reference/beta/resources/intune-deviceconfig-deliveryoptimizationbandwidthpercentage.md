@@ -3,14 +3,14 @@ title: Тип ресурса Деливерйоптимизатионбандв�
 description: Пределы пропускной способности, указанные в процентах.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 481e3f4c7b39d702302848424420902722021cdd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c4179dad06705f0ec1ba3f2dc9ea87ad44f4948c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420528"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081561"
 ---
 # <a name="deliveryoptimizationbandwidthpercentage-resource-type"></a>Тип ресурса Деливерйоптимизатионбандвидсперцентаже
 
@@ -50,6 +50,9 @@ ms.locfileid: "43420528"
   "maximumForegroundBandwidthPercentage": 1024
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: cd5d364988552a62324e1e84b5dbf5d67d562cb6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a4024f6805780fb3c972019c4957ad14cb404172
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454705"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081820"
 ---
 # <a name="update-range"></a>Обновление диапазона
 
@@ -119,3 +119,5 @@ Content-length: 169
   ]
 }
 -->
+
+

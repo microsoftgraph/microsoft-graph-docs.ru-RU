@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 1435e8326536aa1a8943e46799d6a5612485a425
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: b45a52734af115a872e7ff5f31c58ef5ed95b944
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845745"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081673"
 ---
 # <a name="governanceroledefinition-resource-type"></a>Тип ресурса Говернанцероледефинитион
 
@@ -26,8 +26,8 @@ ms.locfileid: "44845745"
 
 | Метод          | Возвращаемый тип |Описание|
 |:---------------|:--------|:--------|
-|[Список](../api/governanceroledefinition-list.md) | Коллекция [говернанцероледефинитион](../resources/governanceroledefinition.md) |Перечисление коллекции определений ролей для ресурса.|
-|[получение](../api/governanceroledefinition-get.md); | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Считывание свойств и связей объекта определения роли, указанного по идентификатору.|
+|[Перечисление](../api/governanceroledefinition-list.md) | Коллекция [говернанцероледефинитион](../resources/governanceroledefinition.md) |Перечисление коллекции определений ролей для ресурса.|
+|[Получение](../api/governanceroledefinition-get.md) | [governanceRoleDefinition](../resources/governanceroledefinition.md) |Считывание свойств и связей объекта определения роли, указанного по идентификатору.|
 
 Нет `POST` , `PUT` , `PATCH` , `DELETE` поддерживается в `roleDefinitions` наборе сущностей для Now.
 
@@ -38,15 +38,15 @@ ms.locfileid: "44845745"
 | resourceId  | String | Обязательный. Идентификатор ресурса, связанного с определением роли. |
 | externalId  | String | Внешний идентификатор определения роли.                               |
 | displayName | Строка | Отображаемое имя определения роли.                              |
-| templateId  | String |                                                                       |
+| templateId  | Строка |                                                                       |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |resource|[governanceResource](../resources/governanceresource.md)|Только для чтения. Связанный ресурс для определения роли.|
 |ролесеттинг|[governanceRoleSetting](../resources/governancerolesetting.md)|Связанный параметр роли для определения роли.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -82,3 +82,5 @@ ms.locfileid: "44845745"
   "suppressions": []
 }
 -->
+
+

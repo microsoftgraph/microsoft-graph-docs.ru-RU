@@ -3,14 +3,14 @@ title: Тип ресурса Девицепротектионовервиев
 description: Сведения об оборудовании для данного устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5f6d4c325d11ee5f02277ad86f7bb038a2ac3b0f
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: dfdfff4de506f2b15bab8bb3e86199ec8bc83d1c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123724"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081421"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>Тип ресурса Девицепротектионовервиев
 
@@ -63,6 +63,9 @@ ms.locfileid: "45123724"
   "pendingQuickScanDeviceCount": 1024
 }
 ```
+
+
+
 
 
 

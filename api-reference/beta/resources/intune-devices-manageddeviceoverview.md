@@ -3,14 +3,14 @@ title: Тип ресурса managedDeviceOverview
 description: Сводные данные для управляемых устройств
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 582d836ae2b9e701f640026d171046bf962eab92
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: e301344d2c3147ebf44d1afc440cbe5a3b305789
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124116"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081211"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Тип ресурса managedDeviceOverview
 
@@ -25,13 +25,13 @@ ms.locfileid: "45124116"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение объекта managedDeviceOverview](../api/intune-devices-manageddeviceoverview-get.md)|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md);|Чтение свойств и связей объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).|
+|[Получение объекта managedDeviceOverview](../api/intune-devices-manageddeviceoverview-get.md)|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Чтение свойств и связей объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).|
 |[Обновление объекта managedDeviceOverview](../api/intune-devices-manageddeviceoverview-update.md)|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Обновление свойств объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сводки.|
+|id|Строка|Уникальный идентификатор сводки.|
 |enrolledDeviceCount|Int32|Общее количество зарегистрированных устройств. Не включает устройства ПК, которыми управляет агент Intune для ПК.|
 |mdmEnrolledCount|Int32|Количество устройств, зарегистрированных в MDM.|
 |dualEnrolledDeviceCount|Int32|Количество устройств, зарегистрированных как в MDM, так и в EAS.|
@@ -71,7 +71,8 @@ ms.locfileid: "45124116"
     "androidFullyManagedCount": 1024,
     "androidWorkProfileCount": 1024,
     "androidCorporateWorkProfileCount": 1024,
-    "configMgrDeviceCount": 1024
+    "configMgrDeviceCount": 1024,
+    "aospUserlessCount": 1024
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -93,6 +94,9 @@ ms.locfileid: "45124116"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

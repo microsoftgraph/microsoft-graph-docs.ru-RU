@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: shauliu
-ms.openlocfilehash: a1031429d6288ec19a9f3791e24a35dc0d431588
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 9b0af5326bb9c819ded03ab9497e155cb0dab7c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809511"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081692"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>Тип ресурса Говернанцеролеассигнментрекуестстатус
 
@@ -25,7 +25,7 @@ ms.locfileid: "46809511"
 Свойство       | Тип |Описание|
 |:----|:-------------|:-----|
 |status |String| Состояние запроса на назначение роли. Значение может быть `InProgress` или `Closed` .|
-|подсостояние |String| Дочерний статус запроса на назначение роли. Возможные значения:,,,,,,,,,,, `Accepted` `PendingEvaluation` `Granted` `Denied` `PendingProvisioning` `Provisioned` `PendingRevocation` `Revoked` ,,,, `Canceled` `Failed` `PendingApprovalProvisioning` `PendingApproval` `FailedAsResourceIsLocked` `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` и `ProvisioningStarted` .|
+|подсостояние |Строка| Дочерний статус запроса на назначение роли. Возможные значения:,,,,,,,,,,, `Accepted` `PendingEvaluation` `Granted` `Denied` `PendingProvisioning` `Provisioned` `PendingRevocation` `Revoked` ,,,, `Canceled` `Failed` `PendingApprovalProvisioning` `PendingApproval` `FailedAsResourceIsLocked` `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` и `ProvisioningStarted` .|
 |статусдетаилс       |Коллекция [keyValue](../resources/keyvalue.md)| Сведения о состоянии запроса на назначение роли. Он представляет результаты оценки различных правил. |
 
 ## <a name="json-representation"></a>Представление в формате JSON
@@ -59,3 +59,5 @@ ms.locfileid: "46809511"
   "suppressions": []
 }
 -->
+
+

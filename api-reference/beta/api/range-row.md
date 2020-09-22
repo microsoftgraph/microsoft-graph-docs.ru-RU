@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ea93e07d6e6cd098ea0d5699be49d41d3077fb54
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 367e7a0642b9da493b0b83d20f368175c0ab7f9e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454664"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081855"
 ---
 # <a name="range-row"></a>Range: Row
 
@@ -42,7 +42,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/Row
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -106,3 +106,5 @@ Content-length: 169
   "suppressions": []
 }
 -->
+
+

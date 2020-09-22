@@ -5,12 +5,12 @@ localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 8d25f8ce307fb5572515ce12c347fdc2a7dbb726
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8365e856ee1b34b15b1aea3369b6cc22f99991e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440550"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081680"
 ---
 # <a name="emailappusageuserdetail-resource-type"></a>Тип ресурса Емаилаппусажеусердетаил
 
@@ -26,18 +26,18 @@ ms.locfileid: "43440550"
 | isDeleted         | Boolean           |
 | делетеддате       | Дата              |
 | ластактивитидате  | Дата              |
-| маилформак        | Коллекция объектов string |
-| аутлукформак     | Коллекция объектов string |
-| аутлукфорвиндовс | Коллекция объектов string |
-| аутлукформобиле  | Коллекция объектов string |
-| осерформобиле    | Коллекция объектов string |
-| аутлукфорвеб     | Коллекция объектов string |
-| pop3App           | Коллекция объектов string |
-| imap4App          | Коллекция объектов string |
-| смтпапп           | Коллекция объектов string |
-| репортпериод      | String            |
+| маилформак        | Коллекция String |
+| аутлукформак     | Коллекция String |
+| аутлукфорвиндовс | Коллекция String |
+| аутлукформобиле  | Коллекция String |
+| осерформобиле    | Коллекция String |
+| аутлукфорвеб     | Коллекция String |
+| pop3App           | Коллекция String |
+| imap4App          | Коллекция String |
+| смтпапп           | Коллекция String |
+| репортпериод      | Строка            |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -66,3 +66,5 @@ ms.locfileid: "43440550"
   "reportPeriod": "String"
 }
 ```
+
+

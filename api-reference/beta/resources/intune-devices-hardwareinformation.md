@@ -3,14 +3,14 @@ title: Тип ресурса Hardwareinformation.
 description: Сведения об оборудовании для данного устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 369631fc29203c54ef3c63c2cd32df67254c76bf
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 2875ea3a4f8ba7bd00b2a1095ecaf496c36e5ef6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791780"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081393"
 ---
 # <a name="hardwareinformation-resource-type"></a>Тип ресурса Hardwareinformation.
 
@@ -34,23 +34,23 @@ ms.locfileid: "46791780"
 |model|String|Модель устройства|
 |phoneNumber|String|Номер телефона устройства|
 |subscriberCarrier|String|Абонентская перевозчик устройства|
-|целлулартечнологи|String|Технология сотовой связи устройства|
-|вифимак|String|MAC-адрес устройства Wi-Fi|
-|оператингсистемлангуаже|String|Язык операционной системы устройства|
+|целлулартечнологи|Строка|Технология сотовой связи устройства|
+|вифимак|Строка|MAC-адрес устройства Wi-Fi|
+|оператингсистемлангуаже|Строка|Язык операционной системы устройства|
 |isSupervised|Boolean|Контролируемый режим устройства|
 |isEncrypted|Boolean|Состояние шифрования устройства|
-|баттерисериалнумбер|String|Серийный номер текущей батареи устройства|
+|баттерисериалнумбер|Строка|Серийный номер текущей батареи устройства|
 |баттерихеалсперцентаже|Int32|Процент работоспособности текущего аккумулятора устройства. Допустимые значения: от 0 до 100|
 |баттеричаржециклес|Int32|Количество циклов зарядки, прошедшей через текущий аккумулятор устройства. Допустимые значения — от 0 до 2147483647|
-|Свойства isshareddevice|Логический|Общие iPad|
+|Свойства isshareddevice|Boolean|Общие iPad|
 |шареддевицекачедусерс|Коллекция [шаредаппледевицеусер](../resources/intune-devices-sharedappledeviceuser.md)|Все пользователи на общем устройстве Apple|
-|тпмспеЦификатионверсион|String|Строка, указывающая версию спецификации.|
-|оператингсистемедитион|String|Строка, задающая выпуск операционной системы.|
-|девицефуллкуалифиеддомаиннаме|String|Возвращает полное доменное имя устройства (при наличии). Если устройство не присоединено к домену, возвращается пустая строка. |
+|тпмспеЦификатионверсион|Строка|Строка, указывающая версию спецификации.|
+|оператингсистемедитион|Строка|Строка, задающая выпуск операционной системы.|
+|девицефуллкуалифиеддомаиннаме|Строка|Возвращает полное доменное имя устройства (при наличии). Если устройство не присоединено к домену, возвращается пустая строка. |
 |девицегуардвиртуализатионбаседсекуритихардваререкуирементстате|[девицегуардвиртуализатионбаседсекуритихардваререкуирементстате](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|Состояние требования к оборудованию для обеспечения безопасности на основе виртуализации. Возможные значения: `meetHardwareRequirements`, `secureBootRequired`, `dmaProtectionRequired`, `hyperVNotSupportedForGuestVM`, `hyperVNotAvailable`.|
 |девицегуардвиртуализатионбаседсекуритистате|[девицегуардвиртуализатионбаседсекуритистате](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|Состояние безопасности на основе виртуализации. . Возможные значения: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements`, `other`.|
 |девицегуардлокалсистемаусоритикредентиалгуардстате|[девицегуардлокалсистемаусоритикредентиалгуардстате](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Состояние Credential Guard в администраторе локальной системы (LSA). . Возможные значения: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
-|осбуилднумбер|String|Номер сборки операционной системы на устройстве с Android|
+|осбуилднумбер|Строка|Номер сборки операционной системы на устройстве с Android|
 |оператингсистемпродукттипе|Int32|Int, указывающий операционную систему Windows Продукттипе. Дополнительные сведения https://go.microsoft.com/fwlink/?linkid=2126950 . Допустимые значения — от 0 до 2147483647|
 
 ## <a name="relationships"></a>Связи
@@ -103,6 +103,9 @@ ms.locfileid: "46791780"
   "operatingSystemProductType": 1024
 }
 ```
+
+
+
 
 
 

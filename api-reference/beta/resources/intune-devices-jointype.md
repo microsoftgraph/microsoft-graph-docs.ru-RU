@@ -3,14 +3,14 @@ title: тип перечисления joinType
 description: Тип присоединения для регистрации устройств.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e6961b2f71f7abbe273f77cc3d2a786635aadb3f
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 645aeebc12f4a684db3bc784a554d1ab95a72594
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178831"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081344"
 ---
 # <a name="jointype-enum-type"></a>тип перечисления joinType
 
@@ -26,9 +26,12 @@ ms.locfileid: "44178831"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестный тип присоединения регистрации.|
-|азуреаджоинед|1,1|Устройство присоединяется к Azure AD.|
-|azureADRegistered|2|Устройство зарегистрировано в Azure AD.|
+|азуреаджоинед|1 |Устройство присоединяется к Azure AD.|
+|azureADRegistered|2 |Устройство зарегистрировано в Azure AD.|
 |хибридазуреаджоинед|4|Устройство присоединено с помощью гибридной службы Azure AD.|
+
+
+
 
 
 

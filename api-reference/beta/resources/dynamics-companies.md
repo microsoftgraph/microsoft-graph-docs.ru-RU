@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 13bc765f873bc893925ffbddc82b2f0685376cf6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3fedbd9407a4124c38a6ff08a95dbf4cd22c9fe1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505142"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081766"
 ---
 # <a name="companies-resource-type"></a>Тип ресурса "компании"
 
@@ -31,14 +31,14 @@ ms.locfileid: "42505142"
 ## <a name="properties"></a>Свойства
 | Свойство        | Тип |Описание                             |
 |:----------------|:-----|:---------------------------------------|
-|id               |Идентификатор GUID  |Уникальный идентификатор компании. Только для чтения.|
+|id               |GUID  |Уникальный идентификатор компании. Только для чтения.|
 |name             |string|Указывает компанию.                  |
 |displayName      |string|Задает отображаемое имя компании.     |
 |системверсион    |string|Указывает внутреннюю версию компании.|
 |бусинесспрофилеид|string|Указывает идентификатор бизнес-профиля, связанный с компанией.|
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -55,5 +55,7 @@ ms.locfileid: "42505142"
 }
 
 ```
+
+
 
 

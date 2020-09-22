@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b955125367d11848a1d06860812906072abe0925
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 331ec80d8211f172ded17ff28e2983744edb58d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454726"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081897"
 ---
 # <a name="range-merge"></a>Range: merge
 
@@ -42,7 +42,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/merge
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -111,3 +111,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

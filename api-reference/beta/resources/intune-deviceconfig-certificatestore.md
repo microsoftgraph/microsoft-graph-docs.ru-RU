@@ -3,14 +3,14 @@ title: тип перечисления certificateStore
 description: Типы CertificateStore
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4dc148fa09a891cb132098917fbe11283be0e7ae
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a52c22baa9941c47eb2c26dd167a0623e4880d11
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453614"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081547"
 ---
 # <a name="certificatestore-enum-type"></a>тип перечисления certificateStore
 
@@ -25,8 +25,11 @@ ms.locfileid: "43453614"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|user|1,1|Пока не задокументировано.|
-|машинного|2|Пока не задокументировано.|
+|user|1 |Пока не задокументировано.|
+|машинного|2 |Пока не задокументировано.|
+
+
+
 
 
 

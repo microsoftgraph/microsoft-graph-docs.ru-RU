@@ -3,14 +3,14 @@ title: Тип ресурса locateDeviceActionResult
 description: Результат действия "Поиск устройства"
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 39ccb7a22109cf77f36505ed2c61f59af19c2994
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 3c45a2d2f84ba6b2c693c2b32550a4f8ae49d3d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178824"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081288"
 ---
 # <a name="locatedeviceactionresult-resource-type"></a>Тип ресурса locateDeviceActionResult
 
@@ -65,6 +65,9 @@ ms.locfileid: "44178824"
   }
 }
 ```
+
+
+
 
 
 

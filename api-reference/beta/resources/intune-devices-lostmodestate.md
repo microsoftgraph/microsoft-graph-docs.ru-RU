@@ -3,14 +3,14 @@ title: тип перечисления Лостмодестате
 description: Состояние режима потери данных, указывающий, включен ли режим потерянных или отключенных
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4641c835c176d2dfca6ebbbe00f3cbc2aa000bad
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1c6ff2f1c18e0381e339cc94cb4a530e80dd3b36
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470516"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081260"
 ---
 # <a name="lostmodestate-enum-type"></a>тип перечисления Лостмодестате
 
@@ -26,7 +26,10 @@ ms.locfileid: "43470516"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |отключено|нуль|Отключенный режим отключен.|
-|включено|1,1|Включен режим "потеряно".|
+|включено|1 |Включен режим "потеряно".|
+
+
+
 
 
 

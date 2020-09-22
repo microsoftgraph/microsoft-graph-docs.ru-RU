@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 7ad67435af93eff4464fa585fa5c54d5fa3f4511
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 129e48b5d1101aaf9ab6ab7eb8c89a92b41a6ac7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42501481"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081715"
 ---
 # <a name="educationoutcome-resource-type"></a>Тип ресурса Едукатионауткоме
 
@@ -61,3 +61,4 @@ ms.locfileid: "42501481"
   "section": "documentation",
   "tocPath": ""
 }-->
+

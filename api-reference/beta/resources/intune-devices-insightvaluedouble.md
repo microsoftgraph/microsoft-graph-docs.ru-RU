@@ -3,14 +3,14 @@ title: Тип ресурса Инсигхтвалуедаубле
 description: Значение в средстве анализа пользовательского интерфейса.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 07b415eb1fc7015be076861b5db654c80dd6de22
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: aaef91b47e0554c9f94bcd48aafe33434f4496ad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178838"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081358"
 ---
 # <a name="insightvaluedouble-resource-type"></a>Тип ресурса Инсигхтвалуедаубле
 
@@ -46,6 +46,9 @@ ms.locfileid: "44178838"
   "value": "4.2"
 }
 ```
+
+
+
 
 
 

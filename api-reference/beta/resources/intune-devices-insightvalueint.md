@@ -3,14 +3,14 @@ title: Тип ресурса Инсигхтвалуеинт
 description: Значение в средстве анализа пользовательского интерфейса.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 00678bde520f8f2a38ca52b3073826c342955fe5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a66c4f5bdc32bf9c62c79a3417cfd63df9559af4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470553"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081351"
 ---
 # <a name="insightvalueint-resource-type"></a>Тип ресурса Инсигхтвалуеинт
 
@@ -46,6 +46,9 @@ ms.locfileid: "43470553"
   "value": 1024
 }
 ```
+
+
+
 
 
 

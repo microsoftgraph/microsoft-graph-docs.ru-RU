@@ -3,14 +3,14 @@ title: тип перечисления Девицеманажементсубс�
 description: Подписки управления мобильными устройствами клиентов.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f1368780cf6e2cca446c65e4b701886b33a2c061
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4913ba07ca8df6e096762e581f09fe6332c9aa84
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459850"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081498"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>тип перечисления Девицеманажементсубскриптионс
 
@@ -25,12 +25,15 @@ ms.locfileid: "43459850"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Отсутствует|
-|корпоративного|1,1|Подписка на Microsoft Intune|
-|Office365|2|Подписка на Office365|
+|Нет|нуль|Нет|
+|корпоративного|1 |Подписка на Microsoft Intune|
+|Office365|2 |Подписка на Office365|
 |интунепремиум|4 |Подписка на Microsoft Intune Premium|
 |intune_EDU|8 |Microsoft Intune для образования подписки|
 |intune_SMB|16 |Подписка на Microsoft Intune для малого бизнеса|
+
+
+
 
 
 

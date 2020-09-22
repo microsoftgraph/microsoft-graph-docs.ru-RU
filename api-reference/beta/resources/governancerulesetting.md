@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: shauliu
-ms.openlocfilehash: 45ae44dccba67ee0b03f1941dd27795a002e810b
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b2a4b70eb7d8af5dde6e3741c3473683ca7e0586
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809532"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081638"
 ---
 # <a name="governancerulesetting-resource-type"></a>Тип ресурса Говернанцерулесеттинг
 
@@ -24,7 +24,7 @@ ms.locfileid: "46809532"
 ## <a name="properties"></a>Свойства
 |Свойство      | Тип         |Описание|
 |:-------------|:-------------|:----------|
-|рулеидентифиер|String        |Идентификатор правила. Например, ``ExpirationRule`` и ``MfaRule`` .|
+|рулеидентифиер|Строка        |Идентификатор правила. Например, ``ExpirationRule`` и ``MfaRule`` .|
 |setting       |String        |Параметры правила. Значением является строка JSON со списком пар в формате Parameter_Name: Parameter_Value. Пример: `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
 
 ## <a name="json-representation"></a>Представление в формате JSON
@@ -57,3 +57,5 @@ ms.locfileid: "46809532"
   "suppressions": []
 }
 -->
+
+

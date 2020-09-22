@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: ce982e7d03e4b2e5947381173d57706f6cf8f41e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 05a42bfb00cb56cd560151976bc8b7c7d6ed59ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42505128"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081778"
 ---
 # <a name="companyinformation-resource-type"></a>Тип ресурса Компанинформатион
 
@@ -74,4 +74,6 @@ ms.locfileid: "42505128"
 }
 
 ```
+
+
 

@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 95c657c69b059e9049378d67382237b4080bc717
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 80edcfc4af9e79b2c38fdf0b82084e3d450ee4f5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311954"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48081939"
 ---
 # <a name="create-outlooktaskfolder-deprecated"></a>Создание outlookTaskFolder (устаревшее)
 
@@ -107,3 +107,5 @@ Content-length: 151
   "suppressions": []
 }
 -->
+
+
