@@ -520,7 +520,19 @@ items:
           - name: Общие сведения о наборе средств
             href: toolkit/overview.md
           - name: Начало работы
-            href: toolkit/get-started.md
+            items:
+              - name: Обзор
+                href: toolkit/get-started/overview.md
+              - name: Создание веб-приложения (JavaScript)
+                href: toolkit/get-started/build-a-web-app.md
+              - name: Создание веб-части SharePoint
+                href: toolkit/get-started/build-a-sharepoint-web-part.md
+              - name: Создание вкладки Microsoft Teams
+                href: toolkit/get-started/build-a-microsoft-teams-tab.md
+              - name: Использование набора средств с помощью React
+                href: toolkit/get-started/use-toolkit-with-react.md
+              - name: Использование набора средств с помощью Angular
+                href: toolkit/get-started/use-toolkit-with-angular.md
           - name: Компоненты
             items:
               - name: Вход

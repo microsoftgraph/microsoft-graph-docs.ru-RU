@@ -3,14 +3,14 @@ title: Получение Виндовсидентитипротектионко
 description: Чтение свойств и связей объекта Виндовсидентитипротектионконфигуратион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0c0a2c7c169a141a46c894092cb8204648b1ef5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b6570a8f883203c6216f3f73b987120f5076c619
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43335576"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017761"
 ---
 # <a name="get-windowsidentityprotectionconfiguration"></a>Получение Виндовсидентитипротектионконфигуратион
 
@@ -48,13 +48,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [виндовсидентитипротектионконфигуратион](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -123,6 +123,9 @@ Content-Length: 1866
   }
 }
 ```
+
+
+
 
 
 

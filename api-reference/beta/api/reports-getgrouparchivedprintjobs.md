@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: b613cf9c12a48420acb1e3c8e936ccda9b119407
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 1eb5919a80bb3d2fb0eb389e6c5a9fbc284a7395
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845467"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017222"
 ---
 # <a name="reports-getgrouparchivedprintjobs"></a>отчеты: Жетграупарчиведпринтжобс
 
@@ -44,7 +44,7 @@ GET /reports/getGroupArchivedPrintJobs
 
 ## <a name="function-parameters"></a>Параметры функции
 
-| Параметр     | Тип                 | Обязательный? | Description                                                          |
+| Параметр     | Тип                 | Обязательный? | Описание                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
 | `groupId`     | `Edm.String`         | Да       | Идентификатор группы, для которой требуется возвратить данные.                              |
 | `periodStart` | `Edm.DateTimeOffset` | Нет        | Дата начала (включительно) периода времени, из которого требуется включить данные. |
@@ -101,3 +101,4 @@ Content-length: 236
   "section": "documentation",
   "tocPath": ""
 }-->
+

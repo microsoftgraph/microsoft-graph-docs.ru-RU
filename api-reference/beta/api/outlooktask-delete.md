@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 02f7835d968cbcfd87a39ac7cefd3a109feb0fc7
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 7b2dd31ee34a226e11a28c3b86ed144f84ea5900
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311622"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017444"
 ---
 # <a name="delete-outlooktask-deprecated"></a>Delete outlookTask (устаревшее)
 
@@ -111,3 +111,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

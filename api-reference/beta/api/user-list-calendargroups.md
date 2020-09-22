@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f53b92b5ee2c771910a6098374896b3b0808a3b9
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 6da9158bec099a1bcd0ba9146b3c9e8fe325eaaf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107780"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017075"
 ---
 # <a name="list-calendargroups"></a>Список объектов calendarGroup
 
@@ -42,10 +42,10 @@ GET /users/{id | userPrincipalName}/calendarGroups
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [CalendarGroup](../resources/calendargroup.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -112,3 +112,5 @@ Content-length: 155
   ]
 }
 -->
+
+

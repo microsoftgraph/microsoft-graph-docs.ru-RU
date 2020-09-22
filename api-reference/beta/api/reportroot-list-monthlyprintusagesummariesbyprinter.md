@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c0ba6e9778674c669ee78b5f12cf11c24dd6f830
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: 4e79046e023128546d438e7afae29882f98a1346
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42947317"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017278"
 ---
 # <a name="list-monthlyprintusagesummariesbyprinter"></a>Список monthlyPrintUsageSummariesByPrinter
 
@@ -43,9 +43,9 @@ GET /print/reports/monthlyPrintUsageSummariesByPrinter
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [принтусажесуммарибипринтер](../resources/printusagesummarybyprinter.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -110,3 +110,5 @@ Content-length: 268
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

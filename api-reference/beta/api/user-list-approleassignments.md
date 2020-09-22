@@ -1,24 +1,24 @@
 ---
-title: Список Аппролеассигнментс, назначенных пользователю
-description: Получение списка назначений ролей приложений, назначенных пользователю.
+title: Список объектов appRoleAssignment, предоставленных для пользователя
+description: Получение списка назначений ролей приложений, предоставленных для пользователя.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: a5f44993d8d01d2372a4bb2331c9ff1a47fd63fb
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 01426c2fb18fdd8c58b2f549d18ec58adb9cdb13
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383891"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017073"
 ---
-# <a name="list-approleassignments-granted-to-a-user"></a>Список Аппролеассигнментс, назначенных пользователю
+# <a name="list-approleassignments-granted-to-a-user"></a>Список объектов appRoleAssignment, предоставленных для пользователя
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [аппролеассигнмент](../resources/approleassignment.md) , предоставленных пользователю. Эта операция также возвращает роли приложения, назначенные группам, непосредственно участником которых является пользователь.
+Получение списка [appRoleAssignment](../resources/approleassignment.md), предоставленного пользователю. Эта операция также возвращает роли приложений, назначенные группам, участником которых является пользователь.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "44383891"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory. Read. ALL, Аппролеассигнмент. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL  |
+|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Directory. Read. ALL, Аппролеассигнмент. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Для приложений | Directory.Read.All, AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,13 +53,13 @@ GET /users/{id | userPrincipalName}/appRoleAssignments
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [аппролеассигнмент](../resources/approleassignment.md) в тексте отклика.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [appRoleAssignment](../resources/approleassignment.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса на получение ролей приложения, назначенных пользователю.
+В приведенном примере показано, как запросить извлечение ролей приложения, назначенных пользователю.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -131,3 +131,5 @@ Content-length: 306
   ]
 }
 -->
+
+

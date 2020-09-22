@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mashriv
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 83fd7935e03791e3695454ff99eac7d5397817d9
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: ba271ddb112769187a4944dbee0df324fe8ea1f5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311578"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017411"
 ---
 # <a name="outlooktask-complete-deprecated"></a>outlookTask: Complete (устарело)
 
@@ -53,7 +53,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательное свойство.|
+| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательный параметр.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -150,3 +150,5 @@ Content-length: 465
   "suppressions": []
 }
 -->
+
+

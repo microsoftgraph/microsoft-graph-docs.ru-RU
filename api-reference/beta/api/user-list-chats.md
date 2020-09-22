@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1dd4dee5f807f31cd9d8110be37abb14b792fdef
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a70eaaabfce231dc05d2b226414ab1767d4c48e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451891"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016977"
 ---
 # <a name="list-chats"></a>Список чатов
 
@@ -52,7 +52,7 @@ GET /users/{id}/chats
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [chat](../resources/chat.md) в тексте отклика.
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/users/{id}/chats
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -127,3 +127,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

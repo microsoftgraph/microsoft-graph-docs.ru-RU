@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 7f530832a3b256dacf094e59f1193b096e5782dc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 11a0e24baacc3b2ecd25a1e3814d8edb90507c0e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455710"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017295"
 ---
 # <a name="list-credentialuserregistrationdetails"></a>Список Кредентиалусеррегистратиондетаилс
 
@@ -44,26 +44,26 @@ GET /reports/credentialUserRegistrationDetails
 
 | Свойства | Описание и пример |
 | --------- | ----------------------- |
-| userDisplayName | Фильтрация по имени пользователя. Пример: `/reports/credentialUserRegistrationDetails?$filter=userDisplayName eq 'Contoso'`. Поддерживаемые операторы фильтра: `eq`и `startswith()`. Поддерживает не зависящий от регистра. |
-| userPrincipalName | Фильтрация по имени участника пользователя. Пример: `/reports/credentialUserRegistrationDetails?$filter=userPrincipalName eq 'Contoso'`. Поддерживаемые операторы фильтра: `eq` и `startswith()`. Поддерживает не зависящий от регистра. |
-| аусмесодс | Фильтрация по методам проверки подлинности, используемым во время регистрации. Пример: `/reports/credentialUserRegistrationDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`. Поддерживаемые операторы фильтра: `eq`. |
-| Регистрация | Фильтр для пользователей, зарегистрированных для самостоятельного сброса пароля (SSPR). Пример: `/reports/credentialUserRegistrationDetails?$filter=isRegistered eq true`. Поддерживаемые операторы фильтра: `eq`. |
-| isEnabled | Фильтрация для пользователей, которым был разрешен доступ к SSPR. Пример: `/reports/credentialUserRegistrationDetails?$filter=isEnabled eq true`. Поддерживаемые операторы филттер: `eq`. |
-| Поддержка | Фильтрация для пользователей, которые готовы к выполнению сброса пароля или многофакторной проверки подлинности (MFA). Пример: `/reports/credentialUserRegistrationDetails?$filter=isCapable eq true`. Поддерживаемые операторы фильтра:`eq` |
-| исмфарегистеред | Фильтрация для пользователей, зарегистрированных для MFA. Пример: `/reports/credentialUserRegistrationDetails?$filter=isMfaRegistered eq true`. Поддерживаемые операторы фильтра: `eq`. |
+| userDisplayName | Фильтрация по имени пользователя. Пример: `/reports/credentialUserRegistrationDetails?$filter=userDisplayName eq 'Contoso'`. Поддерживаемые операторы фильтра: `eq` и `startswith()` . Поддерживает не зависящий от регистра. |
+| userPrincipalName | Фильтрация по имени участника пользователя. Пример: `/reports/credentialUserRegistrationDetails?$filter=userPrincipalName eq 'Contoso'`. Поддерживаемые операторы фильтра: `eq` и `startswith()` . Поддерживает не зависящий от регистра. |
+| аусмесодс | Фильтрация по методам проверки подлинности, используемым во время регистрации. Пример: `/reports/credentialUserRegistrationDetails?$filter=authMethods/any(t:t eq microsoft.graph.registrationAuthMethod'email')`. Поддерживаемые операторы фильтра: `eq` . |
+| Регистрация | Фильтр для пользователей, зарегистрированных для самостоятельного сброса пароля (SSPR). Пример: `/reports/credentialUserRegistrationDetails?$filter=isRegistered eq true`. Поддерживаемые операторы фильтра: `eq` . |
+| isEnabled | Фильтрация для пользователей, которым был разрешен доступ к SSPR. Пример: `/reports/credentialUserRegistrationDetails?$filter=isEnabled eq true`. Поддерживаемые операторы филттер: `eq` . |
+| Поддержка | Фильтрация для пользователей, которые готовы к выполнению сброса пароля или многофакторной проверки подлинности (MFA). Пример: `/reports/credentialUserRegistrationDetails?$filter=isCapable eq true`. Поддерживаемые операторы фильтра: `eq` |
+| исмфарегистеред | Фильтрация для пользователей, зарегистрированных для MFA. Пример: `/reports/credentialUserRegistrationDetails?$filter=isMfaRegistered eq true`. Поддерживаемые операторы фильтра: `eq` . |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [кредентиалусеррегистратиондетаилс](../resources/credentialuserregistrationdetails.md) в тексте отклика.
 
@@ -142,3 +142,5 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

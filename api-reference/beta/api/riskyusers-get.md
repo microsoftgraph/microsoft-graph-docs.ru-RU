@@ -5,12 +5,12 @@ localization_priority: Normal
 author: cloudhandler
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8414de9fe809e26e4895be2fb0ebfddfa1306cc1
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: f20615692853ca662a5a2c9ccb5eb26cc80e2528
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863511"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017236"
 ---
 # <a name="get-riskyuser"></a>Получение Рискюсер
 
@@ -43,7 +43,7 @@ GET /identityProtection/riskyUsers/{id}
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Workbook-Session-Id  | Идентификатор сеанса книги, который определяет, сохраняются ли изменения. Необязательное свойство.|
+| Workbook-Session-Id  | Идентификатор сеанса книги, который определяет, сохраняются ли изменения. Необязательный параметр.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -164,4 +164,6 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+
 

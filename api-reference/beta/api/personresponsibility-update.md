@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 9c4696ae3c9f97a6f256c65844b062e0f7882c3e
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 38ca672825c49f0149dcf9b06b4c57d8df92c0e5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46813157"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017369"
 ---
 # <a name="update-personresponsibility"></a>Обновление Персонреспонсибилити
 Пространство имен: microsoft.graph
@@ -25,7 +25,7 @@ ms.locfileid: "46813157"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Приложение                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -60,7 +60,7 @@ PATCH /users/{id | userPrincipalName}/profile/responsibilities/{id}
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [персонреспонсибилити](../resources/personresponsibility.md) в тексте отклика.
 
@@ -142,3 +142,5 @@ Content-Type: application/json
   ]
 }
 ```
+
+
