@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 953c62e5747176c7eace8c8ee4baa82d0d48d6d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d8358f03c644b1b7436822f1a8a52a1a1e5264a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533673"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036949"
 ---
 # <a name="skype-for-business-activity-reports"></a>Отчеты о работе со Skype для бизнеса
 
@@ -18,7 +18,7 @@ ms.locfileid: "42533673"
 
 Эти отчеты позволяют получить подробные сведения о работе со Skype для бизнеса в организации. Эти данные могут пригодиться при проведении анализа, планировании и принятии других бизнес-решений.
 
-> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [этой статье](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424).
+> **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в статье [Отчеты в Microsoft 365: действия в Skype для бизнеса](https://support.office.com/client/Skype-for-Business-Online-activity-8cbe2eb2-1194-4fd7-b1ee-9f9287c82424).
 
 ## <a name="reports"></a>Отчеты
 
@@ -27,3 +27,4 @@ ms.locfileid: "42533673"
 | [Получение сведений о пользователях](../api/reportroot-getskypeforbusinessactivityuserdetail.md) | Поток      | Получите сведения о действиях пользователей в Skype для бизнеса. |
 | [Получение количества действий](../api/reportroot-getskypeforbusinessactivitycounts.md) | Поток      | Отслеживайте, как меняется количество организаторов и участников конференций, проводимых в вашей организации через Skype для бизнеса. Отчет также включает количество одноранговых сеансов. |
 | [Получение количества пользователей](../api/reportroot-getskypeforbusinessactivityusercounts.md) | Поток      | Отслеживайте, как меняется количество уникальных организаторов и участников конференций, проводимых в вашей организации через Skype для бизнеса. Отчет также включает количество одноранговых сеансов. |
+

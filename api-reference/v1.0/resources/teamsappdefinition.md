@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 33c16f396d1975b3ffd25de3cf0a8b9f9d7bbf50
-ms.sourcegitcommit: c4366ac71cf496242c8ff435bc8d8b3816bdc1aa
+ms.openlocfilehash: 08a652c5b4ad4b9555eb7c09e33398f140ed97b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47287486"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036935"
 ---
 # <a name="teamsappdefinition-resource-type"></a>Тип ресурса Теамсаппдефинитион
 
@@ -60,3 +60,4 @@ ms.locfileid: "47287486"
   "section": "documentation",
   "tocPath": ""
 }-->
+

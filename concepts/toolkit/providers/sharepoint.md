@@ -3,12 +3,12 @@ title: Поставщик SharePoint
 description: Используйте поставщика SharePoint в веб-частях SharePoint, чтобы включить в себя доступ к компонентам Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: d94d516aa458ccfbc4a3770ad5937828aa23b335
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 98694291203c6b55d72e22503897d9515960d054
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007075"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036816"
 ---
 # <a name="sharepoint-provider"></a>Поставщик SharePoint
 
@@ -62,4 +62,4 @@ public render(): void {
 
 Если вы планируете поддерживать IE11 в веб SPFx, необходимо использовать только.
 
-Чтобы узнать больше, ознакомьтесь со [статьей Get – starting](../get-started.md#sharepoint).
+Чтобы узнать больше, ознакомьтесь [со статьей начало работы с набором средств Microsoft Graph](../get-started/overview.md#polyfills).

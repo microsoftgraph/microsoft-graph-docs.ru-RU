@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1e3ed231c6bd741afe3dcd502d517006c402fc77
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: a10872d45a53c60af75179acfd2e1ece793b7c4a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44335336"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036928"
 ---
 # <a name="teamsappinstallation-resource-type"></a>Тип ресурса Теамсаппинсталлатион
 
@@ -33,7 +33,7 @@ ms.locfileid: "44335336"
 |:------------------- |:-------- |:----------- |
 | id                  | string   | Уникальный идентификатор (а не идентификаторы Teams). |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь   | Тип    | Описание |
 |:---------------|:--------|:----------|
@@ -69,3 +69,4 @@ ms.locfileid: "44335336"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -1,22 +1,22 @@
 ---
 title: Работа с Microsoft Teams при помощи API Microsoft Graph
-description: Microsoft Teams — это Рабочая область на основе чата в Microsoft 365, которая предоставляет встроенный доступ к календарям, файлам, заметкам OneNote, планам планировщика и т. д.
+description: Microsoft Teams — это рабочее пространство с чатами в Microsoft 365, обеспечивающее встроенный доступ к календарям команд, файлам, заметкам OneNote, планам Планировщика и многому другому.
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: b9b7954c234e1d76e8f9d27080488b932af515ce
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: 4ebeaa1224c359dacd4f6cbc4e4560a32ca402fd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896821"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036977"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Teams — это Рабочая область на основе чата в Microsoft 365, которая предоставляет встроенный доступ к календарям, файлам, заметкам OneNote, планам планирования, сдвигам и многому другому.
+Microsoft Teams — это рабочее пространство с чатами в Microsoft 365, обеспечивающее встроенный доступ к календарям команд, файлам, заметкам OneNote, планам Планировщика, расписаниям Смен и многому другому.
 
 ## <a name="key-resources-in-microsoft-teams"></a>Основные ресурсы в Microsoft Teams
 
@@ -29,12 +29,12 @@ Microsoft Teams — это Рабочая область на основе ча�
 |[teamsApp](../resources/teamsapp.md)|[Список](../api/teamsapp-list.md), [публикация](../api/teamsapp-publish.md), [обновление](../api/teamsapp-update.md), [удаление](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [Список](../api/teamsappinstallation-list.md), [установка](../api/teamsappinstallation-add.md), [обновление](../api/teamsappinstallation-delete.md), [удаление](../api/teamsappinstallation-delete.md) |
 |[chatMessage](../resources/chatmessage.md)| [send](../api/channel-post-messages.md) |
-|[call](../resources/call.md)| [Ответ](../api/call-answer.md), [отклонение](../api/call-reject.md), [Перенаправление](../api/call-redirect.md), [Отключение](../api/call-mute.md)и включение [звука](../api/call-unmute.md), [изменение роли общего доступа к экрану](../api/call-changescreensharingrole.md), [список участников](../api/call-list-participants.md), [приглашение участников](../api/participant-invite.md) |
+|[call](../resources/call.md)| [Ответ](../api/call-answer.md), [отклонение](../api/call-reject.md), [перенаправление](../api/call-redirect.md), [отключение звука](../api/call-mute.md), [включение звука](../api/call-unmute.md), [изменение роли при демонстрации экрана](../api/call-changescreensharingrole.md), [перечисление участников](../api/call-list-participants.md), [приглашение участников](../api/participant-invite.md) |
 |[schedule](../resources/schedule.md)| [Создание или замена](../api/team-put-schedule.md), [получение](../api/schedule-get.md), [предоставление общего доступа](../api/schedule-share.md) |
 |[schedulingGroup](../resources/schedulinggroup.md)| [Создание](../api/schedule-post-schedulinggroups.md), [список](../api/schedule-list-schedulinggroups.md), [получение](../api/schedulinggroup-get.md), [замена](../api/schedulinggroup-put.md), [удаление](../api/schedulinggroup-delete.md) |
 |[shift](../resources/shift.md)| [Создание](../api/schedule-post-shifts.md), [список](../api/schedule-list-shifts.md), [получение](../api/shift-get.md), [замена](../api/shift-put.md), [удаление](../api/shift-delete.md) |
-|[тимеофф](../resources/timeoff.md)| [Создание](../api/schedule-post-timesoff.md), [список](../api/schedule-list-timesoff.md), [получение](../api/timeoff-get.md), [замена](../api/timeoff-put.md), [удаление](../api/timeoff-delete.md) |
-|[тимеоффреасон](../resources/timeoffreason.md)| [Создание](../api/schedule-post-timeoffreasons.md), [список](../api/schedule-list-timeoffreasons.md), [получение](../api/timeoffreason-get.md), [замена](../api/timeoffreason-put.md), [удаление](../api/timeoffreason-delete.md) |
+|[timeOff](../resources/timeoff.md)| [Создание](../api/schedule-post-timesoff.md), [список](../api/schedule-list-timesoff.md), [получение](../api/timeoff-get.md), [замена](../api/timeoff-put.md), [удаление](../api/timeoff-delete.md) |
+|[timeOffReason](../resources/timeoffreason.md)| [Создание](../api/schedule-post-timeoffreasons.md), [список](../api/schedule-list-timeoffreasons.md), [получение](../api/timeoffreason-get.md), [замена](../api/timeoffreason-put.md), [удаление](../api/timeoffreason-delete.md) |
 
 ## <a name="microsoft-teams-limits"></a>Ограничения Microsoft Teams
 
@@ -48,7 +48,7 @@ Microsoft Teams — это Рабочая область на основе ча�
 
 ## <a name="teams-and-groups"></a>Команды и группы
 
-В Microsoft Graph приложение Microsoft Teams представлено ресурсом [group](../resources/group.md). Как Microsoft Teams, так и группы Microsoft 365 имеют различные требования к совместной работе групп. Практически все функции на основе групп применяются к Microsoft Teams и группам Microsoft 365, например календарю группы, файлам, заметкам, фотографиям, планам и т. д. Основное различие между [командой](team.md) и группой Microsoft 365 заключается в режиме взаимодействия между участниками. Участники команды общаются в сохраняемом чате в контексте определенной команды. Члены группы Microsoft 365 обмениваются сообщениями групповых бесед, которые представляют собой беседы по электронной почте, происходящие в контексте группы в Outlook.
+В Microsoft Graph приложение Microsoft Teams представлено ресурсом [group](../resources/group.md). Команды Microsoft Teams и группы Microsoft 365 предназначены для различных требований совместной работы в группе. Почти всех групповые функции применимы к командам Microsoft Teams и группам Microsoft 365, например календарь группы, файлы, заметки, фотографии, планы и т. д. Основное различие между [командой](team.md) и группой Microsoft 365 состоит в режиме общения участников. Участники команды общаются в сохраняемом чате в контексте определенной команды. Участники группы Microsoft 365 общаются с помощью групповых бесед, то есть бесед по электронной почте, которые осуществляются в контексте группы в Outlook.
 
 У любой группы, содержащей команду, есть свойство **resourceProvisioningOptions** со значением Team.
 
@@ -58,7 +58,7 @@ Microsoft Teams — это Рабочая область на основе ча�
 Ниже указаны различия на уровне API между командами и группами.
 
 - Сохраняемый чат доступен только в Microsoft Teams. Эта функция иерархически представлена ресурсами [channel](../resources/channel.md) и [chatMessage](../resources/chatmessage.md).
-- Групповые беседы доступны только для групп Microsoft 365. Эта функция иерархически представлена ресурсами [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md) и [post](../resources/post.md).
+- Групповые беседы доступны только в группах Microsoft 365. Эта функция иерархически представлена ресурсами [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md) и [post](../resources/post.md).
 - Метод [Перечисление команд, к которым присоединился пользователь](../api/user-list-joinedteams.md) применяется только к Microsoft Teams.
 - [API звонков и собраний по сети](./communications-api-overview.md) применяются только к Microsoft Teams.
 - См. также [известные проблемы](/graph/known-issues) для этих API.
@@ -116,9 +116,10 @@ Microsoft Teams — это Рабочая область на основе ча�
 Если приложения не удовлетворяют требованиям опроса, это будет рассматриваться как нарушение [условий использования API Майкрософт](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use). Такое нарушение может привести к дополнительному [регулированию](/graph/throttling), а также приостановке или прекращению использования API Майкрософт.
 
 ## <a name="whats-new"></a>Новые возможности
-Узнайте о [последних новых возможностях и обновлениях](/graph/whats-new-overview) для этого набора API.
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
 
 ## <a name="see-also"></a>См. также
 
 - [Обзор API Microsoft Teams](/graph/teams-concept-overview)
 - Примеры кода: [Авиакомпания Contoso](https://github.com/microsoftgraph/contoso-airlines-teams-sample), [мини-примеры C#](https://github.com/microsoftgraph/csharp-teams-sample-graph)
+
