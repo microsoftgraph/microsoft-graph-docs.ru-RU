@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
 author: JeremyKelley
-ms.openlocfilehash: 3f0edafded42cffb00769141c803ea20707dad38
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 8ff278672e6d56618b599cfc6efa68f080e2545d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807131"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973654"
 ---
 # <a name="sharepointactivitypages-resource-type"></a>Тип ресурса Шарепоинтактивитипажес
 
@@ -25,7 +25,7 @@ ms.locfileid: "46807131"
 | reportDate        | Дата   |
 | репортпериод      | String |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -42,3 +42,5 @@ ms.locfileid: "46807131"
   "reportPeriod": "String"
 }
 ```
+
+

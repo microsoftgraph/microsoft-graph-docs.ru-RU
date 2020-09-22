@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: AAmatino
-ms.openlocfilehash: 758d802a67979c4e43aefcdb4e8a3998be15b993
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 4c283d77119c0272aaafa964db62bb35ad747a10
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809301"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973479"
 ---
 # <a name="website-resource-type"></a>Тип ресурса веб-сайта
 
@@ -28,7 +28,7 @@ ms.locfileid: "46809301"
 |address|string|URL-адрес веб-сайта.|
 |displayName|string|Отображаемое имя веб-сайта.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -61,3 +61,5 @@ ms.locfileid: "46809301"
   "suppressions": []
 }
 -->
+
+

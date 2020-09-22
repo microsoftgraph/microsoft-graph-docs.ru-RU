@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 457009dc48fba07b7d66662aa1504395f5d906ef
-ms.sourcegitcommit: 093d89c7583bb6880c8395e9498a1f33cdd938b4
+ms.openlocfilehash: fac759f190f193fb2fe37e769feedc1164fc3f95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44568805"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973742"
 ---
 # <a name="searchrequest-resource-type"></a>Тип ресурса Сеарчрекуест
 
@@ -26,9 +26,9 @@ ms.locfileid: "44568805"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|stored_fields|Коллекция объектов string |Содержит поля, возвращаемые для объекта еарч _so урцес. Обратите внимание, что этот параметр применяется, только если `externalItem` в отклике указан тип EntityType =.|
-|contentSources|Коллекция объектов string|Содержит подключение, которое необходимо задать. <br>В соответствии со следующим форматом: `/external/connections/connectionid` где `connectionid` коннектионид был определен в администрировании соединителей <br> Note contentSource применяется только в том случае, если entityType = `externalItem` . |
-|enableTopResults|Логический|Это запускает гибридную сортировку для сообщений: первые 3 сообщения наиболее актуальны<br> Это относится только к типу entityType = `message` .|
+|stored_fields|Коллекция String |Содержит поля, возвращаемые для объекта еарч _so урцес. Обратите внимание, что этот параметр применяется, только если `externalItem` в отклике указан тип EntityType =.|
+|contentSources|Коллекция String|Содержит подключение, которое необходимо задать. <br>В соответствии со следующим форматом: `/external/connections/connectionid` где `connectionid` коннектионид был определен в администрировании соединителей <br> Note contentSource применяется только в том случае, если entityType = `externalItem` . |
+|enableTopResults|Boolean|Это запускает гибридную сортировку для сообщений: первые 3 сообщения наиболее актуальны<br> Это относится только к типу entityType = `message` .|
 |entityTypes|Коллекция `entityType`| Возможные значения: `event`, `message`, `driveItem`, `externalItem`.|
 |from|Int32|Задает смещение результатов поиска. Смещение 0 возвращает самый первый результат.|
 |Запрос|[searchQuery](searchquery.md)|Содержит термины запроса.|
@@ -68,3 +68,5 @@ ms.locfileid: "44568805"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

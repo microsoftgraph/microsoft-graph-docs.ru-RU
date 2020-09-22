@@ -6,12 +6,12 @@ title: Folder
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: b7950008a3bcd310e90f604becb865d130781b34
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 99bb3acc25b6bf09d755dbcf8d2ee916c3366074
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497897"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973957"
 ---
 # <a name="folder-resource-type"></a>Тип ресурса Folder
 
@@ -65,3 +65,5 @@ ms.locfileid: "42497897"
   "suppressions": []
 }
 -->
+
+

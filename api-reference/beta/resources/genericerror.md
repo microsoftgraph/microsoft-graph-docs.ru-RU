@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: d9c1245e89672fab3fa9cc22c87d677fd7ab9bf9
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ee4f6a09f3baec827d5ec2627edb7de89a878945
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809528"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973951"
 ---
 # <a name="genericerror-resource-type"></a>Тип ресурса Женерицеррор
 
@@ -27,7 +27,7 @@ ms.locfileid: "46809528"
 | message | String | Сообщение об ошибке. |
 | code | String | Код ошибки. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -44,3 +44,5 @@ ms.locfileid: "46809528"
   "code": "String"
 }
 ```
+
+

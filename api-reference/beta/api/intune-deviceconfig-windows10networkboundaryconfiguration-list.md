@@ -3,14 +3,14 @@ title: Список windows10NetworkBoundaryConfigurations
 description: Список свойств и связей объектов windows10NetworkBoundaryConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cc7c962b8f2d992986487c8a03f02e11909dfbd3
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 37edd55ac6a299f304d51b8e4d37746b3e1ebf8c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179034"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972464"
 ---
 # <a name="list-windows10networkboundaryconfigurations"></a>Список windows10NetworkBoundaryConfigurations
 
@@ -44,13 +44,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -136,6 +136,9 @@ Content-Length: 2368
   ]
 }
 ```
+
+
+
 
 
 

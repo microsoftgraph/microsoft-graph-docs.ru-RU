@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 122e7b0af66962eee04d549142291ae53d31ecc0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e6af670d0c48b6acd6f4e56dbe9e292f9d759ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451471"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974039"
 ---
 # <a name="create-table"></a>Создание таблицы
 
@@ -50,7 +50,7 @@ POST /workbook/tables/$/add
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [воркбуктабле](../resources/workbooktable.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [воркбуктабле](../resources/workbooktable.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -119,3 +119,5 @@ Content-length: 109
   ]
 }
 -->
+
+

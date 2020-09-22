@@ -1,31 +1,31 @@
 ---
-title: 'СервицепринЦипалс: List ownedObjects'
-description: Получение списка объектов, принадлежащих servicePrincipal.  Это могут быть приложения или группы.
+title: 'servicePrincipals: Перечисление ownedObjects'
+description: Извлечение списка объектов, принадлежащих servicePrincipal.  Это могут быть приложения или группы.
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: f1940652e581d44d457806968a65a70adec7e78b
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: d9788a22e1d72bd98503da742a0295e7ed404e3b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383961"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972772"
 ---
-# <a name="serviceprincipals-list-ownedobjects"></a>СервицепринЦипалс: List ownedObjects
+# <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals: Перечисление ownedObjects
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов, принадлежащих [servicePrincipal](../resources/serviceprincipal.md).  Это могут быть приложения или группы.
+Извлечение списка объектов, принадлежащих [servicePrincipal](../resources/serviceprincipal.md).  Это могут быть приложения или группы.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+|Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -117,3 +117,4 @@ Content-length: 55
   ]
 }
 -->
+

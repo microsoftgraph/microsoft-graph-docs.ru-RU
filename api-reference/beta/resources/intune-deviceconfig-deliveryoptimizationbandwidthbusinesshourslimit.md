@@ -3,14 +3,14 @@ title: Тип ресурса Деливерйоптимизатионбандв�
 description: Тип часов и процентного отношения для полосы пропускания
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4044b62a42c37abf030ff0a5d206093d4a2b8c80
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ac18bb904f8992e60b6949e86439db162a3f9a36
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420590"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973815"
 ---
 # <a name="deliveryoptimizationbandwidthbusinesshourslimit-resource-type"></a>Тип ресурса Деливерйоптимизатионбандвидсбусинесшаурслимит
 
@@ -49,6 +49,9 @@ ms.locfileid: "43420590"
   "bandwidthPercentageOutsideBusinessHours": 1024
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: c4e12069ff50362a667a94aec28b715096616917
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 2e8f4dc8b82c496909f5b150829d9fb4e114ba59
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539388"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973591"
 ---
 # <a name="relation-resource-type"></a>Тип ресурса связи
 
@@ -68,7 +68,7 @@ ms.locfileid: "46539388"
 [microsoft.graph.termStore.set]: termstore-set.md
 [microsoft.graph.termStore.relations]: termstore-relation.md
 [microsoft.graph.termStore.relation]: termstore-relation.md
-[восстановлен]: ../resources/termstore-store.md
+[store]: ../resources/termstore-store.md
 [банком]: ../resources/termstore-term.md
 [set]: ../resources/termstore-set.md
 
@@ -85,3 +85,5 @@ ms.locfileid: "46539388"
   "suppressions": []
 }
 -->
+
+

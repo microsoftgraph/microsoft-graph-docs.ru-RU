@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 6e4570a784226fcbb787d337f562284b8abb597e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ddebbdbf76719d144cfcac48a6cab50307e4fa62
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451464"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974053"
 ---
 # <a name="list-worksheets"></a>Перечисление листов
 
@@ -45,7 +45,7 @@ GET /workbook/worksheets
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбукворкшит](../resources/workbookworksheet.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -112,3 +112,5 @@ Content-length: 145
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Priority
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 14dce46dbfe85883a3e9cfbe6f25efa0a04dc31d
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 76dc89caeb0a39d9dd0f40c1bcf046ffe9fe3f9d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46850052"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973533"
 ---
 # <a name="use-the-microsoft-to-do-api"></a>Использование API Microsoft To Do
 
@@ -60,3 +60,4 @@ GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/linkedresources/{linkedRe
 
 ## <a name="whats-new"></a>Новые возможности
 Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
+

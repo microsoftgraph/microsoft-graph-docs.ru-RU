@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 5d4f87ecd07a42795a8287d6298f9902d6c35faa
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d92e35bff1d79cbfb9d31c545887a49e7b466f1d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806130"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973248"
 ---
 # <a name="get-icon"></a>Получение объекта Icon
 
@@ -41,7 +41,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -84,3 +84,4 @@ Content-length: 39
   "section": "documentation",
   "tocPath": ""
 }-->
+

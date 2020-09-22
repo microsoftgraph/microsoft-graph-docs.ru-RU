@@ -6,12 +6,12 @@ title: жеолокатионколумн
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 1bb749ebf38709fee04a0009fea2174297a173ad
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5a0fad3a3dfd91808c300431ce55335d9b9a5cf8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42497631"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973934"
 ---
 # <a name="geolocationcolumn-resource-type"></a>Тип ресурса Жеолокатионколумн
 
@@ -45,3 +45,5 @@ ms.locfileid: "42497631"
   "suppressions": []
 }
 -->
+
+

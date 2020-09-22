@@ -3,14 +3,14 @@ title: Тип ресурса Мобилеаппинсталлсуммари
 description: Содержит свойства для сводки установки мобильного приложения.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d6ee038510ce7891e2599dda2d101ed7d1aec6d1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ff53cb0d244a28924b00f2bb5b287e51db49ef24
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457011"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973892"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>Тип ресурса Мобилеаппинсталлсуммари
 
@@ -70,6 +70,9 @@ ms.locfileid: "43457011"
   "pendingInstallUserCount": 1024
 }
 ```
+
+
+
 
 
 

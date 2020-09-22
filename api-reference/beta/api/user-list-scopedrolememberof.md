@@ -1,24 +1,24 @@
 ---
-title: Перечисление scopedAdministratorOf
-description: Получение списка scopedRoleMembership для пользователя.
+title: Список Скопедадминистратороф
+description: Получение списка Scopedrolemembership изменен для пользователя.
 author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 31b06e1f49833241f6a6f50e610b9286e0418edf
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: c254a9213204e63fe028de299230376de8c31461
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46820276"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974091"
 ---
-# <a name="list-scopedadministratorof"></a>Перечисление scopedAdministratorOf
+# <a name="list-scopedadministratorof"></a>Список Скопедадминистратороф
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [scopedRoleMembership](../resources/scopedrolemembership.md) для пользователя.
+Получение списка [scopedrolemembership изменен](../resources/scopedrolemembership.md) для пользователя.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -44,12 +44,12 @@ GET /users/{id}/scopedRoleMemberOf
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код `200 OK` ответа и [коллекцию объектов scopedRoleMembership](../resources/scopedrolemembership.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [scopedrolemembership изменен](../resources/scopedrolemembership.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -118,3 +118,5 @@ Content-length: 307
   ]
 }
 -->
+
+

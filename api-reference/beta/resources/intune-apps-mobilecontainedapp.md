@@ -3,14 +3,14 @@ title: Тип ресурса Мобилеконтаинедапп
 description: Абстрактный класс, представляющий вложенное приложение в mobileApp, работающее в виде пакета.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c958ff514291b1cc6cbfeaf35ad13675cd81f02d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e60bd8b82847eca69999ea7a05abc0f098d3f5a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462570"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973885"
 ---
 # <a name="mobilecontainedapp-resource-type"></a>Тип ресурса Мобилеконтаинедапп
 
@@ -50,6 +50,9 @@ ms.locfileid: "43462570"
   "id": "String (identifier)"
 }
 ```
+
+
+
 
 
 

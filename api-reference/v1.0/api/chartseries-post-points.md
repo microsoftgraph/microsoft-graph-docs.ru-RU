@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: fa377fe309404d4a18be91a30e97cc5bec49cc8d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0239b912b81a536b2c63ffa138409c69dd01ada8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518352"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973463"
 ---
 # <a name="create-chartpoints"></a>Создание объекта ChartPoints
 
@@ -81,7 +81,7 @@ Content-length: 3
 ---
 
 Предоставьте в тексте запроса описание объекта [ChartPoints](../resources/chartpoint.md) в формате JSON.
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -108,3 +108,4 @@ Content-length: 3
   "suppressions": [
   ]
 }-->
+

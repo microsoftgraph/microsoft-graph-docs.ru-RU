@@ -3,14 +3,14 @@ title: Get iosStoreApp
 description: Чтение свойств и связей объекта iosStoreApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 791726fef69ee07692e376f294929ee69153d8d9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ef9cce14cafcb55572a91421a1f150173e1df253
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456173"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973192"
 ---
 # <a name="get-iosstoreapp"></a>Get iosStoreApp
 
@@ -38,19 +38,19 @@ ms.locfileid: "43456173"
 GET /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [iosStoreApp](../resources/intune-apps-iosstoreapp.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -108,6 +108,9 @@ Content-Length: 1287
   }
 }
 ```
+
+
+
 
 
 

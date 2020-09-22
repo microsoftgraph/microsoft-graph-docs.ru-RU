@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 973732dc92527dcf3795b8796e1c817ba880836c
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
-ms.translationtype: Auto
+ms.openlocfilehash: 57b6378c811727676f7b34c1812955639598054b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45051062"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973732"
 ---
 # <a name="profilecardannotation-resource-type"></a>Тип ресурса Профилекарданнотатион
 
@@ -25,7 +25,7 @@ ms.locfileid: "45051062"
 |displayName   |String                                                           | Если этот параметр задан, значение этого поля используется картой профиля в качестве метки свойства по умолчанию (например, "центр затрат"). |
 |Локализация |Коллекция [дисплайнамелокализатион](displaynamelocalization.md) | Каждый ресурс в этой коллекции представляет локализованное значение имени атрибута для определенного языка, используемого в качестве метки по умолчанию для этого языкового стандарта. Например, пользователь с `no-NB` клиентом получает значение "Костнадс Sent" в качестве метки атрибута, а не "центр затрат".|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -59,3 +59,5 @@ ms.locfileid: "45051062"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

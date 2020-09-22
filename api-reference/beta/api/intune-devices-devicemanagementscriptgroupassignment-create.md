@@ -3,14 +3,14 @@ title: Создание Девицеманажементскриптграупа
 description: Создание нового объекта Девицеманажементскриптграупассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d78dfba82625f21defc51fcbc0920e6509eef945
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9f5f5d1235750a2c27f871c7f1c10295ba426331
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380455"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47974375"
 ---
 # <a name="create-devicemanagementscriptgroupassignment"></a>Создание Девицеманажементскриптграупассигнмент
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupA
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -59,7 +59,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupA
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементскриптграупассигнмент](../resources/intune-devices-devicemanagementscriptgroupassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -90,6 +90,9 @@ Content-Length: 173
   "targetGroupId": "Target Group Id value"
 }
 ```
+
+
+
 
 
 

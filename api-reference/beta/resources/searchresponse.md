@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 011b027cfcf357dfe80b47067618219cb0067044
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a2bdd013cb755d37664c89aca81a8ae89c63b4f9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520894"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47973745"
 ---
 # <a name="searchresponse-resource-type"></a>Тип ресурса Сеарчреспонсе
 
@@ -27,7 +27,7 @@ ms.locfileid: "42520894"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |хитсконтаинерс|Коллекция [сеарчхитсконтаинер](searchhitscontainer.md)|Коллекция результатов поиска.|
-|searchTerms|Коллекция объектов string|Содержит условия поиска, отправленные в исходном поисковом запросе.|
+|searchTerms|Коллекция String|Содержит условия поиска, отправленные в исходном поисковом запросе.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -58,3 +58,4 @@ ms.locfileid: "42520894"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ace885385a5fe065556f4a5ed55ca5be9b51b95
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: df7e3331194f274ea1b6035d640e780e212a88b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411557"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972898"
 ---
 # <a name="manageddeviceenrollmenttopfailures-function"></a>Функция Манажеддевицеенроллменттопфаилурес
 
@@ -26,7 +26,7 @@ ms.locfileid: "43411557"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp;&nbsp; Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp;Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -42,7 +42,7 @@ GET /reports/managedDeviceEnrollmentTopFailures
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -51,7 +51,7 @@ GET /reports/managedDeviceEnrollmentTopFailures
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|period|String|Н/Д|
+|period|String|Пока не задокументировано.|
 
 
 
@@ -79,6 +79,9 @@ Content-Length: 123
   }
 }
 ```
+
+
+
 
 
 
