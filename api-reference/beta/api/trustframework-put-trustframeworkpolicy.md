@@ -5,34 +5,34 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: de1df6c258794165e37d3572d4bee5da84316c83
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 9807802d426fc5069a83014e52f0ed2210e05102
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215912"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027351"
 ---
-# <a name="update-or-create-trustframeworkpolicy"></a><span data-ttu-id="5c036-103">Обновление или создание Трустфрамеворкполици</span><span class="sxs-lookup"><span data-stu-id="5c036-103">Update or create trustFrameworkPolicy</span></span>
+# <a name="update-or-create-trustframeworkpolicy"></a><span data-ttu-id="246b6-103">Обновление или создание Трустфрамеворкполици</span><span class="sxs-lookup"><span data-stu-id="246b6-103">Update or create trustFrameworkPolicy</span></span>
 
-<span data-ttu-id="5c036-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5c036-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="246b6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="246b6-104">Namespace: microsoft.graph</span></span>
 
-><span data-ttu-id="5c036-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="5c036-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="5c036-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5c036-106">Use of these APIs in production applications is not supported.</span></span>
+><span data-ttu-id="246b6-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="246b6-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="246b6-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="246b6-106">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="5c036-107">Обновите существующий [трустфрамеворкполици](../resources/trustframeworkpolicy.md) или создайте его, если он не существует.</span><span class="sxs-lookup"><span data-stu-id="5c036-107">Update an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) or create one if it does not exist.</span></span>
+<span data-ttu-id="246b6-107">Обновите существующий [трустфрамеворкполици](../resources/trustframeworkpolicy.md) или создайте его, если он не существует.</span><span class="sxs-lookup"><span data-stu-id="246b6-107">Update an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) or create one if it does not exist.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5c036-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5c036-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="246b6-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="246b6-108">Permissions</span></span>
 
-<span data-ttu-id="5c036-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="5c036-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
+<span data-ttu-id="246b6-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="246b6-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="5c036-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5c036-111">Permission type</span></span>      | <span data-ttu-id="5c036-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5c036-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="246b6-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="246b6-111">Permission type</span></span>      | <span data-ttu-id="246b6-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="246b6-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5c036-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5c036-113">Delegated (work or school account)</span></span>|<span data-ttu-id="5c036-114">Policy.ReadWrite.TrustFramework</span><span class="sxs-lookup"><span data-stu-id="5c036-114">Policy.ReadWrite.TrustFramework</span></span>|
-|<span data-ttu-id="5c036-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5c036-115">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="5c036-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5c036-116">Not supported.</span></span>|
-|<span data-ttu-id="5c036-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5c036-117">Application</span></span>|<span data-ttu-id="5c036-118">Policy.ReadWrite.TrustFramework</span><span class="sxs-lookup"><span data-stu-id="5c036-118">Policy.ReadWrite.TrustFramework</span></span>|
+|<span data-ttu-id="246b6-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="246b6-113">Delegated (work or school account)</span></span>|<span data-ttu-id="246b6-114">Policy.ReadWrite.TrustFramework</span><span class="sxs-lookup"><span data-stu-id="246b6-114">Policy.ReadWrite.TrustFramework</span></span>|
+|<span data-ttu-id="246b6-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="246b6-115">Delegated (personal Microsoft account)</span></span>| <span data-ttu-id="246b6-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="246b6-116">Not supported.</span></span>|
+|<span data-ttu-id="246b6-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="246b6-117">Application</span></span>|<span data-ttu-id="246b6-118">Policy.ReadWrite.TrustFramework</span><span class="sxs-lookup"><span data-stu-id="246b6-118">Policy.ReadWrite.TrustFramework</span></span>|
 
-<span data-ttu-id="5c036-119">Рабочая или учебная учетная запись должна быть глобальным администратором клиента.</span><span class="sxs-lookup"><span data-stu-id="5c036-119">The work or school account must be a global administrator of the tenant.</span></span>
+<span data-ttu-id="246b6-119">Рабочая или учебная учетная запись должна быть глобальным администратором клиента.</span><span class="sxs-lookup"><span data-stu-id="246b6-119">The work or school account must be a global administrator of the tenant.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="5c036-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5c036-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="246b6-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="246b6-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,31 +40,31 @@ ms.locfileid: "43215912"
 PUT /trustFramework/policies/{id}/$value
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5c036-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5c036-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="246b6-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="246b6-121">Request headers</span></span>
 
-|<span data-ttu-id="5c036-122">Имя</span><span class="sxs-lookup"><span data-stu-id="5c036-122">Name</span></span>|<span data-ttu-id="5c036-123">Описание</span><span class="sxs-lookup"><span data-stu-id="5c036-123">Description</span></span>|
+|<span data-ttu-id="246b6-122">Имя</span><span class="sxs-lookup"><span data-stu-id="246b6-122">Name</span></span>|<span data-ttu-id="246b6-123">Описание</span><span class="sxs-lookup"><span data-stu-id="246b6-123">Description</span></span>|
 |:---------------|:----------|
-|<span data-ttu-id="5c036-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5c036-124">Authorization</span></span>|<span data-ttu-id="5c036-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5c036-p103">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="5c036-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5c036-127">Content-Type</span></span>|<span data-ttu-id="5c036-128">Application/XML.</span><span class="sxs-lookup"><span data-stu-id="5c036-128">application/xml.</span></span> <span data-ttu-id="5c036-129">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="5c036-129">Required.</span></span>|
+|<span data-ttu-id="246b6-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="246b6-124">Authorization</span></span>|<span data-ttu-id="246b6-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="246b6-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="246b6-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="246b6-127">Content-Type</span></span>|<span data-ttu-id="246b6-128">Application/XML.</span><span class="sxs-lookup"><span data-stu-id="246b6-128">application/xml.</span></span> <span data-ttu-id="246b6-129">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="246b6-129">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5c036-130">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="5c036-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="246b6-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="246b6-130">Request body</span></span>
 
-<span data-ttu-id="5c036-131">В тексте запроса предоставьте XML-представление объекта [трустфрамеворкполици](../resources/trustframeworkpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="5c036-131">In the request body, provide an XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object.</span></span> 
+<span data-ttu-id="246b6-131">В тексте запроса предоставьте XML-представление объекта [трустфрамеворкполици](../resources/trustframeworkpolicy.md) .</span><span class="sxs-lookup"><span data-stu-id="246b6-131">In the request body, provide an XML representation of the [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object.</span></span> 
 
-><span data-ttu-id="5c036-132">**Note:** тип контента должен быть `application/xml`.</span><span class="sxs-lookup"><span data-stu-id="5c036-132">**Note:** the content type must be `application/xml`.</span></span>
+><span data-ttu-id="246b6-132">**Note:** тип контента должен быть `application/xml` .</span><span class="sxs-lookup"><span data-stu-id="246b6-132">**Note:** the content type must be `application/xml`.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5c036-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="5c036-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="246b6-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="246b6-133">Response</span></span>
 
-<span data-ttu-id="5c036-134">Ответ будет одним из следующих вариантов:</span><span class="sxs-lookup"><span data-stu-id="5c036-134">The response will be one of the following:</span></span>
-- <span data-ttu-id="5c036-135">Если [трустфрамеворкполици](../resources/trustframeworkpolicy.md) существует, успешный запрос возвращает код `200 OK` отклика.</span><span class="sxs-lookup"><span data-stu-id="5c036-135">If a [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) exists, a successful request returns a `200 OK` response code.</span></span>
-- <span data-ttu-id="5c036-136">Если [трустфрамеворкполици](../resources/trustframeworkpolicy.md) не существует, успешный запрос возвращает код `201 Created` отклика.</span><span class="sxs-lookup"><span data-stu-id="5c036-136">If a [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) does not exist, a successful request returns a `201 Created` response code.</span></span>
-- <span data-ttu-id="5c036-137">В случае неудачи возвращается ошибка `4xx` с подробностями.</span><span class="sxs-lookup"><span data-stu-id="5c036-137">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>
+<span data-ttu-id="246b6-134">Ответ будет одним из следующих вариантов:</span><span class="sxs-lookup"><span data-stu-id="246b6-134">The response will be one of the following:</span></span>
+- <span data-ttu-id="246b6-135">Если [трустфрамеворкполици](../resources/trustframeworkpolicy.md) существует, успешный запрос возвращает `200 OK` код отклика.</span><span class="sxs-lookup"><span data-stu-id="246b6-135">If a [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) exists, a successful request returns a `200 OK` response code.</span></span>
+- <span data-ttu-id="246b6-136">Если [трустфрамеворкполици](../resources/trustframeworkpolicy.md) не существует, успешный запрос возвращает `201 Created` код отклика.</span><span class="sxs-lookup"><span data-stu-id="246b6-136">If a [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) does not exist, a successful request returns a `201 Created` response code.</span></span>
+- <span data-ttu-id="246b6-137">В случае неудачи возвращается ошибка `4xx` с подробностями.</span><span class="sxs-lookup"><span data-stu-id="246b6-137">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5c036-138">Пример</span><span class="sxs-lookup"><span data-stu-id="5c036-138">Example</span></span>
+## <a name="example"></a><span data-ttu-id="246b6-138">Пример</span><span class="sxs-lookup"><span data-stu-id="246b6-138">Example</span></span>
 
-<span data-ttu-id="5c036-139">В следующем примере показано, как обновить объект **трустфрамеворкполици**.</span><span class="sxs-lookup"><span data-stu-id="5c036-139">The following example updates a **trustFrameworkPolicy**.</span></span>
+<span data-ttu-id="246b6-139">В следующем примере показано, как обновить объект **трустфрамеворкполици**.</span><span class="sxs-lookup"><span data-stu-id="246b6-139">The following example updates a **trustFrameworkPolicy**.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="5c036-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="5c036-140">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="246b6-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="246b6-140">Request</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -79,7 +79,7 @@ Content-Type: application/xml
 </TrustFrameworkPolicy>
 ```
 
-##### <a name="response"></a><span data-ttu-id="5c036-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="5c036-141">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="246b6-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="246b6-141">Response</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -107,3 +107,5 @@ Content-Type: application/xml
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

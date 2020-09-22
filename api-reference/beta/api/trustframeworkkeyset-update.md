@@ -5,32 +5,32 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 956e05500dc47e5667ac63065480a84777414871
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: b6332882a72130e7088bf8934c79ae6e76f1aa4c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219020"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027281"
 ---
-# <a name="update-trustframeworkkeyset"></a><span data-ttu-id="68fdd-103">Обновление Трустфрамеворккэйсет</span><span class="sxs-lookup"><span data-stu-id="68fdd-103">Update trustFrameworkKeySet</span></span>
+# <a name="update-trustframeworkkeyset"></a><span data-ttu-id="5b90e-103">Обновление Трустфрамеворккэйсет</span><span class="sxs-lookup"><span data-stu-id="5b90e-103">Update trustFrameworkKeySet</span></span>
 
-<span data-ttu-id="68fdd-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="68fdd-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5b90e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5b90e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="68fdd-105">Обновление свойств объекта [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md).</span><span class="sxs-lookup"><span data-stu-id="68fdd-105">Update the properties of a [trustFrameworkKeyset](../resources/trustframeworkkeyset.md).</span></span> <span data-ttu-id="68fdd-106">Эта операция заменит содержимое существующего набора ключей.</span><span class="sxs-lookup"><span data-stu-id="68fdd-106">This operation will replace the content of an existing keyset.</span></span> <span data-ttu-id="68fdd-107">Указывать идентификатор в полезных данных запроса необязательно.</span><span class="sxs-lookup"><span data-stu-id="68fdd-107">Specifying the ID in the request payload is optional.</span></span>
+<span data-ttu-id="5b90e-105">Обновление свойств объекта [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md).</span><span class="sxs-lookup"><span data-stu-id="5b90e-105">Update the properties of a [trustFrameworkKeyset](../resources/trustframeworkkeyset.md).</span></span> <span data-ttu-id="5b90e-106">Эта операция заменит содержимое существующего набора ключей.</span><span class="sxs-lookup"><span data-stu-id="5b90e-106">This operation will replace the content of an existing keyset.</span></span> <span data-ttu-id="5b90e-107">Указывать идентификатор в полезных данных запроса необязательно.</span><span class="sxs-lookup"><span data-stu-id="5b90e-107">Specifying the ID in the request payload is optional.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="68fdd-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="68fdd-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="5b90e-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5b90e-108">Permissions</span></span>
 
-<span data-ttu-id="68fdd-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="68fdd-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5b90e-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5b90e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="68fdd-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="68fdd-111">Permission type</span></span>                        | <span data-ttu-id="68fdd-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="68fdd-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="5b90e-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5b90e-111">Permission type</span></span>                        | <span data-ttu-id="5b90e-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5b90e-112">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="68fdd-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="68fdd-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="68fdd-114">Трустфрамеворккэйсет. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="68fdd-114">TrustFrameworkKeySet.ReadWrite.All</span></span> |
-| <span data-ttu-id="68fdd-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="68fdd-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="68fdd-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="68fdd-116">Not supported.</span></span> |
-| <span data-ttu-id="68fdd-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="68fdd-117">Application</span></span>                            | <span data-ttu-id="68fdd-118">Трустфрамеворккэйсет. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="68fdd-118">TrustFrameworkKeySet.ReadWrite.All</span></span> |
+| <span data-ttu-id="5b90e-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5b90e-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="5b90e-114">Трустфрамеворккэйсет. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="5b90e-114">TrustFrameworkKeySet.ReadWrite.All</span></span> |
+| <span data-ttu-id="5b90e-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5b90e-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5b90e-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5b90e-116">Not supported.</span></span> |
+| <span data-ttu-id="5b90e-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5b90e-117">Application</span></span>                            | <span data-ttu-id="5b90e-118">Трустфрамеворккэйсет. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="5b90e-118">TrustFrameworkKeySet.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="68fdd-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="68fdd-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5b90e-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5b90e-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,31 +38,31 @@ ms.locfileid: "43219020"
 PUT /trustFramework/keySets/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="68fdd-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="68fdd-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5b90e-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5b90e-120">Request headers</span></span>
 
-| <span data-ttu-id="68fdd-121">Имя</span><span class="sxs-lookup"><span data-stu-id="68fdd-121">Name</span></span>       | <span data-ttu-id="68fdd-122">Описание</span><span class="sxs-lookup"><span data-stu-id="68fdd-122">Description</span></span>|
+| <span data-ttu-id="5b90e-121">Имя</span><span class="sxs-lookup"><span data-stu-id="5b90e-121">Name</span></span>       | <span data-ttu-id="5b90e-122">Описание</span><span class="sxs-lookup"><span data-stu-id="5b90e-122">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="68fdd-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="68fdd-123">Authorization</span></span> | <span data-ttu-id="68fdd-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="68fdd-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="68fdd-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="68fdd-126">Content-type</span></span>  | <span data-ttu-id="68fdd-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="68fdd-p104">application/json. Required.</span></span>|
+| <span data-ttu-id="5b90e-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5b90e-123">Authorization</span></span> | <span data-ttu-id="5b90e-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5b90e-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5b90e-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5b90e-126">Content-type</span></span>  | <span data-ttu-id="5b90e-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5b90e-p104">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="68fdd-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="68fdd-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="5b90e-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5b90e-129">Request body</span></span>
 
 
-| <span data-ttu-id="68fdd-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="68fdd-130">Property</span></span>     | <span data-ttu-id="68fdd-131">Тип</span><span class="sxs-lookup"><span data-stu-id="68fdd-131">Type</span></span>        | <span data-ttu-id="68fdd-132">Описание</span><span class="sxs-lookup"><span data-stu-id="68fdd-132">Description</span></span> |
+| <span data-ttu-id="5b90e-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="5b90e-130">Property</span></span>     | <span data-ttu-id="5b90e-131">Тип</span><span class="sxs-lookup"><span data-stu-id="5b90e-131">Type</span></span>        | <span data-ttu-id="5b90e-132">Описание</span><span class="sxs-lookup"><span data-stu-id="5b90e-132">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="68fdd-133">переключен</span><span class="sxs-lookup"><span data-stu-id="68fdd-133">keys</span></span>|<span data-ttu-id="68fdd-134">Коллекция [трустфрамеворккэй](../resources/trustframeworkkey.md)</span><span class="sxs-lookup"><span data-stu-id="68fdd-134">[trustFrameworkKey](../resources/trustframeworkkey.md) collection</span></span>| <span data-ttu-id="68fdd-135">Обновляет коллекцию Трустфрамеворккэйс</span><span class="sxs-lookup"><span data-stu-id="68fdd-135">updates a collection of Trustframeworkkeys</span></span>|
+|<span data-ttu-id="5b90e-133">переключен</span><span class="sxs-lookup"><span data-stu-id="5b90e-133">keys</span></span>|<span data-ttu-id="5b90e-134">Коллекция [трустфрамеворккэй](../resources/trustframeworkkey.md)</span><span class="sxs-lookup"><span data-stu-id="5b90e-134">[trustFrameworkKey](../resources/trustframeworkkey.md) collection</span></span>| <span data-ttu-id="5b90e-135">Обновляет коллекцию Трустфрамеворккэйс</span><span class="sxs-lookup"><span data-stu-id="5b90e-135">updates a collection of Trustframeworkkeys</span></span>|
 
-## <a name="response"></a><span data-ttu-id="68fdd-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="68fdd-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5b90e-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="5b90e-136">Response</span></span>
 
-<span data-ttu-id="68fdd-137">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="68fdd-137">If successful, this method returns a `200 OK` response code and an updated [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object in the response body.</span></span>
+<span data-ttu-id="5b90e-137">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="5b90e-137">If successful, this method returns a `200 OK` response code and an updated [trustFrameworkKeySet](../resources/trustframeworkkeyset.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="68fdd-138">Примеры</span><span class="sxs-lookup"><span data-stu-id="68fdd-138">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="5b90e-138">Примеры</span><span class="sxs-lookup"><span data-stu-id="5b90e-138">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="68fdd-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="68fdd-139">Request</span></span>
+### <a name="request"></a><span data-ttu-id="5b90e-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="5b90e-139">Request</span></span>
 
-<span data-ttu-id="68fdd-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="68fdd-140">The following is an example of the request.</span></span>
+<span data-ttu-id="5b90e-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5b90e-140">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="68fdd-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="68fdd-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5b90e-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="5b90e-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_trustframeworkkeyset"
@@ -97,26 +97,26 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="68fdd-142">C#</span><span class="sxs-lookup"><span data-stu-id="68fdd-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="5b90e-142">C#</span><span class="sxs-lookup"><span data-stu-id="5b90e-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-trustframeworkkeyset-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="68fdd-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="68fdd-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="5b90e-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5b90e-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-trustframeworkkeyset-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="68fdd-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="68fdd-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="5b90e-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5b90e-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-trustframeworkkeyset-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="68fdd-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="68fdd-145">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5b90e-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="5b90e-145">Response</span></span>
 
-<span data-ttu-id="68fdd-146">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="68fdd-146">The following is an example of the response.</span></span>
+<span data-ttu-id="5b90e-146">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="5b90e-146">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="68fdd-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="68fdd-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="5b90e-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5b90e-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -164,3 +164,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
