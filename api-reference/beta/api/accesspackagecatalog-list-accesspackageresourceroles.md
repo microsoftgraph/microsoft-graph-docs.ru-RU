@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a8df69dea8e1cad511272d2be2f4ba2bcc0226e2
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: b235a89b03af1d34e0540aa3a4f15c3baa0d24f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345474"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983741"
 ---
 # <a name="list-accesspackageresourceroles"></a>Список Акцесспаккажересаурцеролес
 
@@ -40,7 +40,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод использует параметры запроса OData для создания отклика. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод использует параметры запроса OData для создания отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -125,3 +125,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

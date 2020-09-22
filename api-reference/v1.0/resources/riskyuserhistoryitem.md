@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4bcf9e1834e8fff48a148095ffe7ddbd459ee23e
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: Auto
+ms.openlocfilehash: 551f008696b3c9507f1cae414c34de5a8779ab24
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896002"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984161"
 ---
 # <a name="riskyuserhistoryitem-resource-type"></a>Тип ресурса Рискюсерхисторитем
 
@@ -31,7 +31,7 @@ ms.locfileid: "44896002"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |activity|[рискусерактивити](../resources/riskuseractivity.md)|Действие, связанное с изменением уровня риска пользователя.|
-|id|Строка|Наследуется от [объекта](../resources/entity.md)|
+|id|String|Наследуется от [объекта](../resources/entity.md)|
 |initiatedBy|String|Идентификатор субъекта, который выполняет операцию.|
 |isDeleted|Boolean| Наследуется от [рискюсер](../resources/riskyuser.md)|
 |Процесс обработки|Boolean| Наследуется от [рискюсер](../resources/riskyuser.md)|
@@ -41,14 +41,14 @@ ms.locfileid: "44896002"
 |riskState|riskState|Наследуется от [рискюсер](../resources/riskyuser.md). Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |userDisplayName|String|Наследуется от [рискюсер](../resources/riskyuser.md)|
 |userId|String|Идентификатор пользователя.|
-|userPrincipalName|Строка|Опасное имя участника пользователя. Наследуется от [рискюсер](../resources/riskyuser.md)|
+|userPrincipalName|String|Опасное имя участника пользователя. Наследуется от [рискюсер](../resources/riskyuser.md)|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |лист|Коллекция [рискюсерхисторитем](../resources/riskyuserhistoryitem.md)| Наследуется от [рискюсер](../resources/riskyuser.md)|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
@@ -77,4 +77,5 @@ ms.locfileid: "44896002"
   }
 }
 ```
+
 

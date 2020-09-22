@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 4b37e9f6feeb5a175a6064219dcecbf2d9f108ea
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 04431a88c0a8a74d740d1be90012aca93232d81c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895988"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983979"
 ---
 # <a name="sharepoint-site-usage-reports"></a>Отчеты об использовании сайтов SharePoint
 
@@ -24,8 +24,9 @@ ms.locfileid: "44895988"
 
 | Функция                                 | Возвращаемый тип | Описание                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Получение сведений о сайтах](../api/reportroot-getsharepointsiteusagedetail.md) | Stream      | Получите сведения об использовании сайтов SharePoint. |
-| [Получение количества файлов](../api/reportroot-getsharepointsiteusagefilecounts.md) | Stream      | Узнайте, сколько всего файлов на всех сайтах и сколько из них активны. Файл (пользователь или система) считается активным, если он был сохранен, синхронизирован, изменен или отправлен в указанный период. |
-| [Получение количества сайтов](../api/reportroot-getsharepointsiteusagesitecounts.md) | Stream      | Узнайте, сколько всего файлов на всех сайтах и сколько из них активны. Файл (пользователь или система) считается активным, если он был сохранен, синхронизирован, изменен или отправлен в указанный период. |
+| [Получение сведений о сайтах](../api/reportroot-getsharepointsiteusagedetail.md) | Поток      | Получите сведения об использовании сайтов SharePoint. |
+| [Получение количества файлов](../api/reportroot-getsharepointsiteusagefilecounts.md) | Поток      | Узнайте, сколько всего файлов на всех сайтах и сколько из них активны. Файл (пользователь или система) считается активным, если он был сохранен, синхронизирован, изменен или отправлен в указанный период. |
+| [Получение количества сайтов](../api/reportroot-getsharepointsiteusagesitecounts.md) | Поток      | Узнайте, сколько всего файлов на всех сайтах и сколько из них активны. Файл (пользователь или система) считается активным, если он был сохранен, синхронизирован, изменен или отправлен в указанный период. |
 | [Получение занятого объема хранилища](../api/reportroot-getsharepointsiteusagestorage.md) | Поток      | Отслеживайте динамику выделенного и использованного объема хранилища за отчетный период. |
 | [Получение количества страниц](../api/reportroot-getsharepointsiteusagepages.md) | Поток      | Узнайте, сколько страниц было просмотрено на всех сайтах. |
+

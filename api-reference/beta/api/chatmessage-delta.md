@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: ee62c7caba73a9ab87b15c4a559f4376bcff7a2e
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
-ms.translationtype: MT
+ms.openlocfilehash: 402680161fd051935cdc2547ba00a24100086fbc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845367"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982672"
 ---
 # <a name="chatmessages-delta"></a>chatMessages: delta
 
@@ -43,9 +43,9 @@ ms.locfileid: "44845367"
 |---------------------------------------|---------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) |Не поддерживается                                |
-|Для приложений                            | Чаннелмессаже. Read. Group *, Чаннелмессаже. Read. ALL, Group. Read. ALL, Group. ReadWrite. ALL |
+|Для приложений                            | ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
-> **Note**: разрешения, помеченные как * использовать [согласие с определенным ресурсом]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
 > [!NOTE]
 > Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
@@ -461,3 +461,5 @@ Content-type: application/json
     ]
 }
 -->
+
+

@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Отмена доступа к ресурсу DriveItem.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: edaa9fe046bcde6bd235d3689bb0b0c0a1538c73
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 30920b677f3d88a5884b6ff5bf77ef0fa67eb82b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511056"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984819"
 ---
 # <a name="delete-a-sharing-permission-from-a-file-or-folder"></a>Удаление разрешения на общий доступ для файла или папки
 
@@ -108,3 +108,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 } -->
+

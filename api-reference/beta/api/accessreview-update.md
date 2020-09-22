@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b57dc72345785c343d6e321abfab8a757b90eaab
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: bc8deda62ae268031e6505e878af416f8d496dfd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123386"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983461"
 ---
 # <a name="update-accessreview"></a>Обновление Акцессревиев
 
@@ -56,7 +56,7 @@ PATCH /accessReviews/{reviewId}
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `204, Accepted` код отклика и объект [акцессревиев](../resources/accessreview.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -129,3 +129,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

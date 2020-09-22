@@ -1,18 +1,18 @@
 ---
-title: Список соединителей
+title: Перечисление соединителей
 description: Получение списка объектов Connector.
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9fd8438f4f28d39422497e787817af91a5130172
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 203934258154f24a8506bcf5c086c67c70b06d07
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681552"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982320"
 ---
-# <a name="list-connectors"></a>Список соединителей
+# <a name="list-connectors"></a>Перечисление соединителей
 
 Пространство имен: microsoft.graph
 
@@ -40,7 +40,7 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectors
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательное|
+| Authorization  | Носителя. Обязательно|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
@@ -113,3 +113,5 @@ Content-length: 169
   "suppressions": []
 }
 -->
+
+

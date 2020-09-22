@@ -6,12 +6,12 @@ title: Получение ресурса Drive
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: d7e205520e9dbabfb2888c3fe4e3553cf1a54ba3
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 579a0e59c3227056ade1587f83cbe69911ecd9fc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895757"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982278"
 ---
 # <a name="get-drive"></a>Получение ресурса Drive
 
@@ -97,7 +97,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 | Имя параметра | Значение  | Описание                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _idOrUserPrincipalName_     | string | Обязательный. Идентификатор объекта пользователя, которому принадлежит хранилище OneDrive. |
+| _idOrUserPrincipalName_     | строка | Обязательный. Идентификатор объекта пользователя, которому принадлежит хранилище OneDrive. |
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>Получение библиотеки документов, связанной с группой
 
@@ -131,7 +131,7 @@ GET /groups/{groupId}/drive
 
 | Имя параметра | Значение  | Описание                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _groupId_      | string | Обязательный. Идентификатор группы, которой принадлежит библиотека документов. |
+| _groupId_      | строка | Обязательный. Идентификатор группы, которой принадлежит библиотека документов. |
 
 ## <a name="get-the-document-library-for-a-site"></a>Получение библиотеки документов для сайта
 
@@ -251,3 +251,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

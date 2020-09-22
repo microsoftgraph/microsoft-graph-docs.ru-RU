@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 010df5d61d3275e7dd6b89494991a1bd432f51e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ad1d53b4c385dacff033b84c198c1e629ffec74c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438703"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982729"
 ---
 # <a name="update-charttitle"></a>Обновление объекта ChartTitle
 
@@ -117,3 +117,5 @@ Content-length: 64
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1d49306eec7e7643fe5f380950667f319c433523
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: b4ffb8b887daea27c3409db25471873e7efb47f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589738"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983874"
 ---
 # <a name="create-accesspackageassignmentpolicy"></a>Создание Акцесспаккажеассигнментполици
 
@@ -42,14 +42,14 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Носитель \{токен\}. Обязательно. |
+| Authorization | Носитель \{токен\}. Обязательно. |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [акцесспаккажеассигнментполици](../resources/accesspackageassignmentpolicy.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код ответа серии 200 и новый объект [акцесспаккажеассигнментполици](../resources/accesspackageassignmentpolicy.md) в тексте отклика.
 
@@ -281,3 +281,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

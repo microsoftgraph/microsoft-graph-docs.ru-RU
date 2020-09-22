@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6a2e974385602f3c4287f9d5214cb44a30ff9294
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6943331c260d4ac18718c46f39dfc870aded584f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43355570"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984903"
 ---
 # <a name="create-message"></a>Создание объекта Message
 
@@ -38,7 +38,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [Message](../resources/message.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
@@ -86,7 +86,7 @@ Content-length: 248
 ---
 
 Предоставьте в теле запроса описание объекта [message](../resources/message.md) в формате JSON.
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -122,3 +122,4 @@ Content-length: 248
   "suppressions": [
   ]
 }-->
+

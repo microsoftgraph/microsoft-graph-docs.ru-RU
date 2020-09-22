@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a93e5c4cbafc541136ea91204b4c279ff612caf1
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: ab6f3d2a659e800daada319de7fa5fe3519bf2e0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681573"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982334"
 ---
 # <a name="get-connector"></a>Получение соединителя
 
@@ -41,7 +41,7 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectors/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательное|
+| Authorization  | Носителя. Обязательно|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
@@ -110,3 +110,5 @@ Content-length: 124
   "suppressions": []
 }
 -->
+
+

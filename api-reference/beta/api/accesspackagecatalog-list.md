@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 729d7504fc7cfffcb80f763f7b6c428e90b4bf31
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: 6138a3a8b1ed2bb549087c4b0fa86ab90eff766d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345431"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983720"
 ---
 # <a name="list-accesspackagecatalogs"></a>Список Акцесспаккажекаталогс
 
@@ -40,13 +40,13 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа.  Например, чтобы получить пакеты доступа в каждом каталоге, включите `$expand=accessPackages` в запрос. Чтобы найти каталоги пакетов Access с определенным именем, добавьте фильтр, например `$filter=contains(tolower(displayName),'staff')` в запрос.  Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.  Например, чтобы получить пакеты доступа в каждом каталоге, включите `$expand=accessPackages` в запрос. Чтобы найти каталоги пакетов Access с определенным именем, добавьте фильтр, например `$filter=contains(tolower(displayName),'staff')` в запрос.  Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Носитель \{токен\}. Обязательный элемент. |
+| Authorization | Носитель \{токен\}. Обязательно. |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -130,3 +130,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dd5420aff55a058d464f87414b9b7aa8199c30ae
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: a4746616c12d8687a3734a52b0ab7d9195d5fe54
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556123"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982474"
 ---
 # <a name="delete-conditionalaccesspolicy"></a>Удаление Кондитионалакцессполици
 
@@ -28,7 +28,7 @@ ms.locfileid: "44556123"
 |:--------------------------------------|:---------------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Сервер приложений                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+|Для приложений                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ DELETE /identity/conditionalAccess/policies/{id}
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

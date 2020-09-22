@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0b8892f3c21b9b89634350593f8b8b6985651bab
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 5ae2701ed79f3c645bd64ae4da2c2dbdbca0ad23
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556116"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982460"
 ---
 # <a name="update-conditionalaccesspolicy"></a>Обновление Кондитионалакцессполици
 
@@ -28,7 +28,7 @@ ms.locfileid: "44556116"
 |:--------------------------------------|:---------------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL, Policy. ReadWrite. Кондитионалакцесс и Application. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Сервер приложений                            | Policy. Read. ALL, Policy. ReadWrite. Кондитионалакцесс и Application. Read. ALL |
+|Для приложений                            | Policy. Read. ALL, Policy. ReadWrite. Кондитионалакцесс и Application. Read. ALL |
 
 > [!NOTE]
 > У этого API есть [известная проблема](/graph/known-issues#permissions) , связанная с разрешениями.
@@ -121,3 +121,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

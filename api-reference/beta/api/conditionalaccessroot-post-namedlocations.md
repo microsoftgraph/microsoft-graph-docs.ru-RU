@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 24c7a947005932bebe590ef6735e5439cdd8c3e4
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: d47c3bbc9cce805d10fe54a10adf8474b2c64f0d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681564"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982418"
 ---
 # <a name="create-namedlocation"></a>Создание Намедлокатион
 
@@ -45,7 +45,7 @@ POST /identity/conditionalAccess/namedLocations
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [ипнамедлокатион](../resources/ipnamedlocation.md) или [КАУНТРИНАМЕДЛОКАТИОН](../resources/countrynamedlocation.md) в формате JSON.
 
@@ -203,3 +203,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3cb9632dfbf1f4058b266c8b6fb34929575a970f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c804ef236b6c29918ff58336cd17a99db07cefca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42439137"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982873"
 ---
 # <a name="get-chartpoint"></a>Получение объекта ChartPoint
 
@@ -45,7 +45,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points/{unde
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчартпоинт](../resources/workbookchartpoint.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -105,3 +105,5 @@ Content-length: 20
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 432e725c3d352f52774d8251c4a83964af5d816c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8abce6892ce981a9513570c1ba0d5a1a72c9724a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510909"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984711"
 ---
 # <a name="delete-plannerplan"></a>Удаление объекта plannerPlan
 
@@ -41,7 +41,7 @@ DELETE /planner/plans/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -99,3 +99,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

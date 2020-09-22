@@ -5,12 +5,12 @@ localization_priority: Normal
 author: AAmatino
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 81fabe954a104663cfcd228bfc182549355bc3db
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 11efd8331cf8fca844b912703fa927b627624611
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806753"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984140"
 ---
 # <a name="scoredemailaddress-resource-type"></a>тип ресурса scoredEmailAddress
 
@@ -25,7 +25,7 @@ ms.locfileid: "46806753"
 |address|string|Адрес электронной почты.|
 |relevanceScore|double|Оценка релевантности адреса электронной почты. Оценка релевантности выступает в роли ключа сортировки по отношению к другим возвращаемым результатам. Более высокий показатель релевантности говорит о высокой степени соответствия результата. Релевантность определяется шаблонами общения и совместной работы пользователя, а также его бизнес-связями. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -53,3 +53,4 @@ ms.locfileid: "46806753"
   "section": "documentation",
   "tocPath": ""
 }-->
+

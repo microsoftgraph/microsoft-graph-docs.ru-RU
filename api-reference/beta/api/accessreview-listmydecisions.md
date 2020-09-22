@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7722d6084399fc00b0f99932ac7173b2d83dfa08
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 413309d3cd406a27f585a25ce6b66851ef594d21
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123575"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983566"
 ---
 # <a name="list-my-accessreview-decisions"></a>Список моих решений Акцессревиев
 
@@ -43,7 +43,7 @@ GET /accessReviews/{reviewId}/myDecisions
 ## <a name="request-body"></a>Тело запроса
 Не следует предоставлять текст запроса.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200, OK` код отклика и массив объектов [акцессревиевдеЦисион](../resources/accessreviewdecision.md) в теле отклика, для которого вызывающий пользователь является назначенным рецензентом.
 
 ## <a name="example"></a>Пример
@@ -117,3 +117,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

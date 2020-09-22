@@ -3,14 +3,14 @@ title: Тип ресурса schemaExtension (расширения схемы)
 description: 'С помощью расширений схемы вы можете задать схему, которую необходимо расширить, и добавить строго типизированные пользовательские данные в тип ресурса. В расширенном ресурсе пользовательские данные имеют сложный тип. '
 localization_priority: Priority
 author: dkershaw10
-ms.prod: ''
+ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: 38bb2d34347f253d114d549b32d6db98c12aa831
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 71c4bd70fafe2ea652d2a0e31134196281aa161d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446956"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984154"
 ---
 # <a name="schemaextension-resource-type-schema-extensions"></a>Тип ресурса schemaExtension (расширения схемы)
 
@@ -22,8 +22,8 @@ ms.locfileid: "42446956"
 
 - [contact](contact.md)
 - [device](device.md)
-- [event](event.md) (для пользователя или календаря группы Office 365)
-- [post](post.md) (для группы Office 365)
+- [event](event.md) (для пользователя или календаря группы Microsoft 365)
+- [post](post.md) (для группы Microsoft 365)
 - [group](group.md)
 - [message](message.md) 
 - [organization](organization.md)
@@ -83,3 +83,4 @@ ms.locfileid: "42446956"
   "section": "documentation",
   "tocPath": ""
 }-->
+

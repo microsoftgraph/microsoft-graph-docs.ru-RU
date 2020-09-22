@@ -3,14 +3,14 @@ title: тип перечисления Аппликатионтипе
 description: Возможные типы приложений
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e27ae0a9ff946d76e24e75d51d7b9d370cec5bf3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4730ae54a0677bfb851b277b46d7ec4e0086b300
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468362"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984273"
 ---
 # <a name="applicationtype-enum-type"></a>тип перечисления Аппликатионтипе
 
@@ -23,8 +23,10 @@ ms.locfileid: "43468362"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Гринвич|1,1|Универсальное приложение Windows|
-|системной|2|Классическое приложение Windows|
+|Гринвич|1 |Универсальное приложение Windows|
+|системной|2 |Классическое приложение Windows|
+
+
 
 
 

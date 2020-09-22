@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4a4d34e94fc54cd47ed6773e91c2fb62f0b62ce4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2425f7ebd6ac516a9100605c9ebfe47f1b87a114
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447712"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984252"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>Тип ресурса ИнвитатионпартиЦипантинфо
 
@@ -55,3 +55,4 @@ ms.locfileid: "42447712"
   "suppressions": []
 }
 -->
+

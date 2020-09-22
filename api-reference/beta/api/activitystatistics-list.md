@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 0b6c499bf86041e3f071977370e898b1471c3755
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2f5c48110316eceaa51733676725381b9a8a37d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441790"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983412"
 ---
 # <a name="list-activitystatistics"></a>Список Активитистатистикс
 
@@ -47,13 +47,13 @@ GET /users/{id|userPrincipalName}/analytics/activitystatistics
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [активитистатистикс](../resources/activitystatistics.md) в тексте отклика.
 
@@ -177,3 +177,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

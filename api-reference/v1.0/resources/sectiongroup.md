@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: resourcePageType
-ms.openlocfilehash: 2e0d9b3b963e02bf017630ad898501518449a20f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1a3f31f4de8d3453003f87bd30ca0dcc61267af9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446942"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984119"
 ---
 # <a name="sectiongroup-resource-type"></a>Тип ресурса sectionGroup
 
@@ -56,9 +56,9 @@ ms.locfileid: "42446942"
 |id|String|Уникальный идентификатор группы разделов. Только для чтения.|
 |lastModifiedBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения группы разделов. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
-|displayName|Строка|Имя группы разделов.|
-|сектионграупсурл|String|URL-адрес для `sectionGroups` свойства навигации, который возвращает все группы разделов в группе разделов. Только для чтения.|
-|сектионсурл|String|URL-адрес для `sections` свойства навигации, который возвращает все разделы в группе разделов. Только для чтения.|
+|displayName|String|Имя группы разделов.|
+|сектионграупсурл|String|URL-адрес для `sectionGroups` Свойства навигации, который возвращает все группы разделов в группе разделов. Только для чтения.|
+|сектионсурл|String|URL-адрес для `sections` Свойства навигации, который возвращает все разделы в группе разделов. Только для чтения.|
 |Self|String|Конечная точка, где можно получить сведения о группе разделов. Только для чтения.|
 
 ## <a name="relationships"></a>Отношения
@@ -88,3 +88,4 @@ ms.locfileid: "42446942"
   "section": "documentation",
   "tocPath": ""
 }-->
+

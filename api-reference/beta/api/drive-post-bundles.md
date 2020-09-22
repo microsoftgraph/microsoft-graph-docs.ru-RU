@@ -6,12 +6,12 @@ description: Создание пакета элементов driveitem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 58ac2e4d0e6cc4a4f587aec082b59fe4ab633037
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 4f00311003bd6342ee4fba0f2560077cb8640d7f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107271"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982208"
 ---
 # <a name="create-bundle"></a>Создание пакета
 
@@ -45,13 +45,13 @@ POST /drive/bundles
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Авторизация | Носитель \{токен\}. Обязательно. |
+| Authorization | Носитель \{токен\}. Обязательно. |
 
 ## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление создаваемого набора в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Если запрос выполнен успешно, будет возвращен [driveItem](../resources/driveitem.md) , представляющий созданный пакет.
 
@@ -180,7 +180,7 @@ Content-Type: application/json
 Если для _@microsoft. Graph. conflictBehavior_ задано **Переименование** , а пакет с таким именем уже существует, то новое имя пакета будет обновляться как уникальное.
 OneDrive добавит номер в конец имени пакета.
 
-Например, `My Day at the Beach` будет переименован `My Day at the Beach 1`.
+Например, будет `My Day at the Beach` переименован `My Day at the Beach 1` .
 Если `My Day at the Beach 1` используется, то номер будет увеличен повторно до тех пор, пока не будет обнаружено уникальное имя пакета.
 
 
@@ -193,3 +193,5 @@ OneDrive добавит номер в конец имени пакета.
   "section": "documentation",
   "tocPath": "Bundles/Create"
 } -->
+
+

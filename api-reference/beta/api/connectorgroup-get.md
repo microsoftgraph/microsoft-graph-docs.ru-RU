@@ -1,18 +1,18 @@
 ---
-title: Получение Коннекторграуп
+title: Получение connectorGroup
 description: Получение свойств объекта Коннекторграуп.
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7f6a069bf1b3baafadf46bd3b1ef53abcc84fc79
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 996ed42380d6e6fd9ce301c5a622411281ebb15a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681441"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982306"
 ---
-# <a name="get-connectorgroup"></a>Получение Коннекторграуп
+# <a name="get-connectorgroup"></a>Получение connectorGroup
 
 Пространство имен: microsoft.graph
 
@@ -40,7 +40,7 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательное|
+| Authorization  | Носителя. Обязательно|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
@@ -109,3 +109,5 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
+

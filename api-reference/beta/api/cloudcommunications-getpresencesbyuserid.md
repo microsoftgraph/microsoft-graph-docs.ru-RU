@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: df74c29810898ac7d13e138836ba711d3b7d59e8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9480e85ad072d368b1afc768a859716865b78f75
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438045"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982509"
 ---
 # <a name="cloudcommunications-getpresencesbyuserid"></a>Клаудкоммуникатионс: Жетпресенцесбюсерид
 
@@ -42,7 +42,7 @@ POST /communications/getPresencesByUserId
 |Content-Type | application/json. Обязательный. |
 
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите объект JSON со следующим параметром.
 
@@ -50,7 +50,7 @@ POST /communications/getPresencesByUserId
 |:---------------|:--------|:----------|
 |ids|Коллекция String|Идентификаторы объектов пользователя.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [присутствия](../resources/presence.md) в тексте отклика.
 
@@ -90,7 +90,7 @@ Content-Type: application/json
 ---
 
 ### <a name="response"></a>Отклик
-Ниже показан пример отклика.
+Ниже приводится пример отклика.
 
 > **Примечание:** Объекты ответа могут быть сокращены для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -135,3 +135,5 @@ Content-Length: 1574
   ]
 }
 -->
+
+

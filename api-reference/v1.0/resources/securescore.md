@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1fc789a967f8fbba33e113dd55e7bfae7803940e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e4f798ae64b881c95ed4330901c0a34ba4073f0e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446935"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984098"
 ---
 # <a name="securescore-resource-type"></a>Тип ресурса Секурескоре
 
@@ -37,12 +37,12 @@ ms.locfileid: "42446935"
 |   активеусеркаунт |   Int32   |   Число активных пользователей для данного клиента.  |
 |   createdDateTime |   DateTimeOffset  |   Дата создания объекта.  |
 |   куррентскоре    |   Двойное с плавающей точкой  |   Текущий полученный рейтинг клиента на указанную дату.    |
-|   енабледсервицес |   Коллекция объектов string   |   Службы, предоставляемые корпорацией Майкрософт для клиента (например, Exchange Online, Skype, SharePoint).   |
+|   енабледсервицес |   Коллекция String   |   Службы, предоставляемые корпорацией Майкрософт для клиента (например, Exchange Online, Skype, SharePoint).   |
 |   лиценседусеркаунт   |   Int32   |   Число лицензированных пользователей для данного клиента.    |
 |   максскоре |  Двойное с плавающей точкой  |   Максимальная возможная Оценка клиента на указанную дату.    |
 |   аверажекомпаративескорес |  Коллекция [аверажекомпаративескоре](averagecomparativescore.md)    |Средняя оценка по различным областям (например, усреднение по отраслям, среднему на количество участников) и категории элементов управления (идентификация, данные, устройство, приложения, инфраструктура) в области. |
 |   контролскорес | Коллекция [контролскоре](controlscore.md)  |   Содержит результаты клиентов для набора элементов управления.   |
-|vendorInformation |[securityVendorInformation](securityvendorinformation.md)|Сложный тип, содержащий сведения о продукте, поставщике, поставщике и подобеспечении безопасности (например, Vendor = Microsoft; Provider = Секурескоре). Обязательный.|
+|vendorInformation |[securityVendorInformation](securityvendorinformation.md)|Сложный тип, содержащий сведения о продукте, поставщике, поставщике и подобеспечении безопасности (например, Vendor = Microsoft; Provider = Секурескоре). Обязательно.|
 
 
 ## <a name="relationships"></a>Связи
@@ -88,3 +88,4 @@ ms.locfileid: "42446935"
   "section": "documentation",
   "tocPath": ""
 }-->
+

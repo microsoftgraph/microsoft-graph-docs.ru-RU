@@ -3,14 +3,14 @@ title: тип перечисления Инсталлинтент
 description: Возможные значения для способа установки, выбранного администратором.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7e0152e45c365a66b5ded04e90aba02626d1f5ae
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: df30eb49f3e37dc3fc8f49661d8f15a6e88821d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445697"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984371"
 ---
 # <a name="installintent-enum-type"></a>тип перечисления Инсталлинтент
 
@@ -24,9 +24,11 @@ ms.locfileid: "43445697"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |доступен|нуль|Доступная цель установки.|
-|Обязательный|1,1|Обязательная цель установки.|
-|установить|2|Удаление намерения установки.|
+|Обязательный|1 |Обязательная цель установки.|
+|установить|2 |Удаление намерения установки.|
 |аваилаблевисаутенроллмент|4|Доступно без установки регистрации.|
+
+
 
 
 

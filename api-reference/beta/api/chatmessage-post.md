@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3dc2067284ee76c5d97216a933447b6675432b2e
-ms.sourcegitcommit: 7dcd32f9e959bea2dfd81d9e0d4092f93da43cb7
+ms.openlocfilehash: 77dd5ab4ee4830cf149b4a7b1bc74e15543fa395
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46657945"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982600"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Отправка chatMessage в канале или чате
 
@@ -208,7 +208,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -304,7 +304,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -391,7 +391,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -452,7 +452,7 @@ Content-type: application/json
 
 > **Примечание:** **Темпорарид** в коллекции **хостедконтентс** — это случайный идентификатор, который должен быть одинаковым для элементов **Body** и **хостедконтентс** . (Обратите внимание, что для **темпорарид** задано значение **1** , а ссылка в основном тексте как `../hostedContents/1/$value` .)
 
-для **contentBytes** должны быть заданы байты двоичных строк в кодировке Base64. Это можно сделать в C# с помощью`Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+для **contentBytes** должны быть заданы байты двоичных строк в кодировке Base64. Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
 <!-- {
   "blockType": "request",
@@ -479,7 +479,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -537,7 +537,7 @@ Content-length: 160
 
 > **Примечание:** **Темпорарид** в коллекции **хостедконтентс** — это случайный идентификатор, который должен быть одинаковым для элементов **содержимого** (в **вложениях**) и **хостедконтентс** . (Обратите внимание, что для **темпорарид** задано значение **1** , а ссылка в содержимом как `../hostedContents/1/$value` .)
 
-для **contentBytes** должны быть заданы байты двоичных строк в кодировке Base64. Это можно сделать в C# с помощью`Convert.ToBase64String(File.ReadAllBytes("image.png"));`
+для **contentBytes** должны быть заданы байты двоичных строк в кодировке Base64. Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
 <!-- {
   "blockType": "request",
@@ -648,3 +648,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

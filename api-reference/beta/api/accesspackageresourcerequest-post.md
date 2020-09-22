@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3f5087b313f21fdce39d67d93d814ac1e0a1ee61
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 21c6d92552e171de2a8f7a219e61d318d4f36ff8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441951"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983692"
 ---
 # <a name="create-accesspackageresourcerequest"></a>Создание Акцесспаккажересаурцерекуест
 
@@ -45,14 +45,14 @@ POST /identityGovernance/entitlementManagement/accessPackageResourceRequests
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [акцесспаккажересаурцерекуест](../resources/accesspackageresourcerequest.md) в формате JSON. Включение `accessPackageResource` связи с объектом [акцесспаккажересаурце](../resources/accesspackageresource.md) в составе запроса.
 
-Чтобы добавить группу Azure AD в качестве ресурса в каталог, значение свойства **оригинсистем** в `accessPackageResource` параметре должно иметь значение **аадграуп** , а значение **оригинид** — идентификатор группы.
+Чтобы добавить группу Azure AD в качестве ресурса в каталог, значение свойства **оригинсистем** в параметре `accessPackageResource` должно иметь значение **Аадграуп** , а значение **оригинид** — идентификатор группы.
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код ответа серии 200 и новый объект [акцесспаккажересаурцерекуест](../resources/accesspackageresourcerequest.md) в тексте отклика.
 
@@ -137,3 +137,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

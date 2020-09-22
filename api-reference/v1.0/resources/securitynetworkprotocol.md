@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: enumPageType
-ms.openlocfilehash: 368e623d4740f16cf6b419358e4cde377551ee19
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7b9578977e5855f7b6d4b2fcebbcdda37c95eb7c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446921"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984000"
 ---
 # <a name="securitynetworkprotocol-enum-type"></a>тип перечисления Секуритинетворкпротокол
 
@@ -24,8 +24,8 @@ ms.locfileid: "42446921"
 |:---|:---|:---|
 |unknown|–1|Неизвестный протокол.|
 |см|нуль|Протокол IP.|
-|полученных|1,1| Протокол управления сообщениями в Интернете.|
-|режимы|2| Протокол управления группами Интернет.|
+|полученных|1 | Протокол управления сообщениями в Интернете.|
+|режимы|2 | Протокол управления группами Интернет.|
 |ггп|4| Протокол шлюза для шлюза.|
 |IPv4|4 | Протокол Интернета версии 4.|
 |tcp|6 | Протокол управления передачей.|
@@ -45,3 +45,4 @@ ms.locfileid: "42446921"
 |x|1000| Протокол обмена пакетами в Интернете.|
 |возмож|1256| Последовательный протокол обмена пакетами.|
 |спксии|1257| Последовательный протокол обмена пакетами версии 2.|
+

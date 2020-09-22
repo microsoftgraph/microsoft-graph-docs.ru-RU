@@ -5,12 +5,12 @@ author: markwahl-msft
 ms.prod: microsoft-identity-platform
 localization_priority: Normal
 doc_type: apiPageType
-ms.openlocfilehash: 8df2a52ac4ad0c459c79d911bd2454f29b7bd15a
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: a67cadc4450636a125f56f1cd8d3ad8422f12e91
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566599"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982369"
 ---
 # <a name="get-connectedorganization"></a>Получение Коннектедорганизатион
 
@@ -50,7 +50,7 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -126,3 +126,5 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

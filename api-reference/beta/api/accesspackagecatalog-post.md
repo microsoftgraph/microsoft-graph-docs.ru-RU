@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 90a340de45fc0f31e1b5bd534151c449a2b315af
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 24fa5ddee6887ed30d626f2dc1fa861236b6f12e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441965"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983718"
 ---
 # <a name="create-accesspackagecatalog"></a>Создание Акцесспаккажекаталог
 
@@ -42,14 +42,14 @@ POST /identityGovernance/entitlementManagement/accessPackageCatalogs
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Носитель \{токен\}. Обязательно. |
+| Authorization | Носитель \{токен\}. Обязательно. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление объекта [акцесспаккажекаталог](../resources/accesspackagecatalog.md) в формате JSON.  Включите свойства **DisplayName**, **Description**и **исекстерналливисибле** .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код ответа серии 200 и новый объект [акцесспаккажекаталог](../resources/accesspackagecatalog.md) в тексте отклика.
 
@@ -125,3 +125,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

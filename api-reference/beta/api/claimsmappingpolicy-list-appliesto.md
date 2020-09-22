@@ -5,12 +5,12 @@ localization_priority: Normal
 author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 42a44da13ce5b986fe2830303f4dc9cb1fd67598
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: f749b040da90537ad362fe1d372ae6d090327039
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916622"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982530"
 ---
 # <a name="list-appliesto"></a>Список appliesTo
 
@@ -40,19 +40,19 @@ GET /policies/claimsMappingPolicies/{id}/appliesTo
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$expand`параметры запросов `$select` OData `$top` и OData для настройки отклика. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters). При использовании `$expand` убедитесь, что приложение запрашивает разрешения на чтение развернутых объектов.
+Этот метод поддерживает `$expand` `$select` `$top` параметры запросов OData и OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters). При использовании `$expand` Убедитесь, что приложение запрашивает разрешения на чтение развернутых объектов.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
@@ -70,7 +70,7 @@ GET /policies/claimsMappingPolicies/{id}/appliesTo
 GET https://graph.microsoft.com/beta/claimsMappingPolicies/{id}/appliesTo
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -106,3 +106,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

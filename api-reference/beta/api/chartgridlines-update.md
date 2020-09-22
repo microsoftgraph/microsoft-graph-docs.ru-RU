@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 03d4626b4f86a004bc708e4b324c3aba7d55f458
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1556b66782281db417527c4fe35f5c5c5cb36bd6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42439277"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982950"
 ---
 # <a name="update-chartgridlines"></a>Обновление объекта chartgridlines
 
@@ -113,3 +113,5 @@ Content-length: 21
   ]
 }
 -->
+
+

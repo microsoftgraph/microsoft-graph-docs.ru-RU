@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0bcb31df6f1b314ec0d8d23d1d97e264d5f458cb
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 303adc9bb54599a358cb318bfb98e84e7f4423bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810261"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982376"
 ---
 # <a name="remove-connected-organization-internal-sponsor"></a>Удаление внутреннего спонсора подключенной Организации
 
@@ -39,7 +39,7 @@ DELETE /identityGovernance/entitlementManagement/connectedOrganizations/{connect
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -103,3 +103,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

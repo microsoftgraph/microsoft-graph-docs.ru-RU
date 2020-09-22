@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 086bc79bf6462d569f85e4abf885a8c8538356ae
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 23b2d10a3c7c7222b697a487a8d461023069bc1e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806428"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983846"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>Обновление Акцесспаккажеассигнментполици
 
@@ -52,7 +52,7 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 |:---|:---|:---|
 |displayName|String|Отображаемое имя политики.|
 |description|String|Описание политики.|
-|canExtend|Логический|Указывает, может ли пользователь продлить продолжительность назначения пакета доступа после утверждения.|
+|canExtend|Boolean|Указывает, может ли пользователь продлить продолжительность назначения пакета доступа после утверждения.|
 |дуратиониндайс|Int32|Количество дней, в течение которых назначения из этой политики последний раз до истечения срока действия.|
 |expirationDateTime|DateTimeOffset|Срок действия для назначений, созданных в этой политике. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |рекуесторсеттингс|[рекуесторсеттингс](../resources/requestorsettings.md)|Кто может запрашивать этот пакет Access из этой политики.|
@@ -60,7 +60,7 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 |акцессревиевсеттингс|[ассигнментревиевсеттингс](../resources/assignmentreviewsettings.md)|Кто должен проверить и как часто назначений для пакета доступа из этой политики. Это свойство имеет значение null, если проверка не требуются.|
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [акцесспаккажеассигнментполици](../resources/accesspackageassignmentpolicy.md) в тексте отклика.
 
 
@@ -150,3 +150,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

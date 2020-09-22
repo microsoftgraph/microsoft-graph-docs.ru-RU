@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b363c2f3be60bd782e6b0524e99b846b2ace9752
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 3af27792d66328085eb0a48a38935a33ec2b2607
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123540"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983599"
 ---
 # <a name="get-accessreview"></a>Получение Акцессревиев
 
@@ -48,7 +48,7 @@ GET /accessReviews/{reviewId}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [акцессревиев](../resources/accessreview.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -141,3 +141,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

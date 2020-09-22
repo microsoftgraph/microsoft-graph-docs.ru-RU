@@ -1,18 +1,18 @@
 ---
-title: Создание Клаимсмаппингполици
+title: Создание claimsMappingPolicy
 description: Создание нового Клаимсмаппингполици.
 localization_priority: Normal
 author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8fa07178f6c485a98353c7b5718b0b0c9173f84f
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 24ac7bd004e22e080509c6ac594800efa4a8913c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916519"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982523"
 ---
-# <a name="create-claimsmappingpolicy"></a>Создание Клаимсмаппингполици
+# <a name="create-claimsmappingpolicy"></a>Создание claimsMappingPolicy
 
 Пространство имен: microsoft.graph
 
@@ -42,14 +42,14 @@ POST policies/claimsMappingPolicies
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление объекта [клаимсмаппингполици](../resources/claimsmappingpolicy.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [клаимсмаппингполици](../resources/claimsmappingpolicy.md) в тексте отклика.
 
@@ -92,7 +92,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -127,3 +127,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

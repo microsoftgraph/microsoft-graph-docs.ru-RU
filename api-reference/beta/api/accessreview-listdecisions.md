@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7042210e9a3e3b6686e5c1bc4529a06d210a34d8
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: cfb41a948264ef846638395732fe61c3e51f5008
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123526"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983580"
 ---
 # <a name="list-accessreview-decisions"></a>Список решений Акцессревиев
 
@@ -20,7 +20,7 @@ ms.locfileid: "43123526"
 
 В функции [проверок доступа](../resources/accessreviews-root.md) Azure AD извлекаются решения объекта [акцессревиев](../resources/accessreview.md) .
 
-Обратите внимание, что для повторяющейся проверки доступа `decisions` связь не будет.  Вместо этого вызывающий объект должен перейти `instance` по связи, чтобы `accessReview` найти объект для текущего или последнего экземпляра проверки доступа.
+Обратите внимание, что для повторяющейся проверки доступа связь не будет `decisions` .  Вместо этого вызывающий объект должен перейти по `instance` связи, чтобы найти `accessReview` объект для текущего или последнего экземпляра проверки доступа.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -46,7 +46,7 @@ GET /accessReviews/{reviewId}/decisions
 ## <a name="request-body"></a>Тело запроса
 Не следует предоставлять текст запроса.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200, OK` код отклика и массив объектов [акцессревиевдеЦисион](../resources/accessreviewdecision.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -124,3 +124,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

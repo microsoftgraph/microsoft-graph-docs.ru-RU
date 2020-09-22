@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 33536d67079d434f8b81501259e1864dd3b3cbf9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9adf7da26900c8b692dd02ac13b718b997921cd1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438935"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982810"
 ---
 # <a name="list-points"></a>Список точек
 
@@ -45,7 +45,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбукчартпоинт](../resources/workbookchartpoint.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -108,3 +108,5 @@ Content-length: 32
   ]
 }
 -->
+
+

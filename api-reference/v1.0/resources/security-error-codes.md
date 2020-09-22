@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: eb35fdb9fe52dc3769654e1018d4ff1098ca931b
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7eae631aaa7f48b471c2dc1273f0ea0841434a57
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812634"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984014"
 ---
 # <a name="microsoft-graph-security-api-error-responses"></a>Ответы на ошибки API безопасности Microsoft Graph
 
@@ -27,7 +27,7 @@ API безопасности Microsoft Graph — это Федеративная
 {Vendor}/{Provider}/{StatusCode}/{LatencyInMs}
 ```
 
-Этот заголовок предупреждения отправляется обратно только клиентам, когда один из поставщиков данных возвращает код ошибки, отличный от 2xx или 404. Пример:
+Этот заголовок предупреждения отправляется обратно только клиентам, когда один из поставщиков данных возвращает код ошибки, отличный от 2xx или 404. Например:
 
 - HttpStatusCode. запрещено (403) может быть возвращено, если доступ к ресурсу не предоставляется.
 - Если время ожидания поставщика истекло, в заголовке предупреждения возвращается HttpStatusCode. Гатевайтимеаут (504).
@@ -64,3 +64,4 @@ Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is s
 ## <a name="see-also"></a>См. также
 
 Если у вас возникли проблемы с авторизацией, обратитесь к разделу [авторизация и API безопасности Microsoft Graph](/graph/security-authorization).
+

@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0584a0c1c36428cac735f33eb690821e5d045ae3
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: Auto
+ms.openlocfilehash: 2810ffc35b1550ae75a21b5f8baebb91c444799f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896009"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984189"
 ---
 # <a name="riskyuser-resource-type"></a>Тип ресурса Рискюсер
 
@@ -36,8 +36,8 @@ ms.locfileid: "44896009"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор пользователя под угрозой.|
-|isDeleted|Boolean|Указывает, удален ли пользователь. Возможные значения: `true` ,`false`|
+|id|String|Уникальный идентификатор пользователя под угрозой.|
+|isDeleted|Boolean|Указывает, удален ли пользователь. Возможные значения: `true` , `false`|
 |Процесс обработки|Boolean|Указывает, вехсер ли опасное состояние пользователя при обработке внутренней|
 |riskDetail|riskDetail|Сведения об обнаруженном риске. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
 |рискластупдатеддатетиме|DateTimeOffset|Дата и время последнего обновления рискованного пользователя.|
@@ -51,7 +51,7 @@ ms.locfileid: "44896009"
 |:---|:---|:---|
 |лист|Коллекция [рискюсерхисторитем](../resources/riskyuserhistoryitem.md)|   Действие, связанное с изменением уровня риска пользователя|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
@@ -75,4 +75,5 @@ ms.locfileid: "44896009"
   "userPrincipalName": "String"
 }
 ```
+
 

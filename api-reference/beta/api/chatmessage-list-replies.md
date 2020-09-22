@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: d82d2fe3268cb95af19b39b6be192fe44f747a20
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 2086bf11b718f1637be210d510512e42324fe76d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44287106"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982640"
 ---
 # <a name="list-replies"></a>Список ответов
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/replies
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -145,3 +145,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

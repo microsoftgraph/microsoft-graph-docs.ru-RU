@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: db4d26ca0732fe8785313a6b126046f1e8a5d8da
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 9a7c69e13fecf4e446f43fb6b2554c1cfd5bdee2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290120"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984245"
 ---
 # <a name="permissionscope-resource-type"></a>Тип ресурса permissionScope
 
@@ -70,3 +70,4 @@ ms.locfileid: "44290120"
   "suppressions": []
 }
 -->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0eb63d30abe92025d9a6ce23e123bf3bd3d5164d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 02de5e5ac3f6b5caa96e6dcad77522d3b92dcce1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42442000"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983790"
 ---
 # <a name="delete-accesspackagecatalog"></a>Удаление Акцесспаккажекаталог
 
@@ -42,13 +42,13 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Носитель \{токен\}. Обязательно. |
+| Authorization | Носитель \{токен\}. Обязательно. |
 
 ## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код ответа серии 200. В тексте отклика не возвращается никаких данных.
 
@@ -104,3 +104,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

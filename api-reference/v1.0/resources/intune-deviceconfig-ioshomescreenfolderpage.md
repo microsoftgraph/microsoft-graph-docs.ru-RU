@@ -3,14 +3,14 @@ title: Тип ресурса iosHomeScreenFolderPage
 description: Папка, содержащая приложения с начального экрана
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb2ea3cb1a183af0f437a7a128331084634cca4b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4e60e0365656a9b1dee0bb78022edeaeef7e5e6f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43410639"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984434"
 ---
 # <a name="ioshomescreenfolderpage-resource-type"></a>Тип ресурса iosHomeScreenFolderPage
 
@@ -49,6 +49,8 @@ ms.locfileid: "43410639"
   ]
 }
 ```
+
+
 
 
 

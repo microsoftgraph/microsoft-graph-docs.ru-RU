@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ddda92a89f31035ec6900393018c77bd10c93ef1
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 32e2aa661879dd429a3dab2d4d579435d3622442
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123659"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983657"
 ---
 # <a name="add-accessreview-reviewer"></a>Добавление рецензента Акцессревиев
 
@@ -50,7 +50,7 @@ POST /accessReviews/{reviewId}/reviewers
 | `id`        | `String`   | Идентификатор пользователя.|
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201, Created` код отклика.
 
 ## <a name="example"></a>Пример
@@ -110,3 +110,5 @@ HTTP/1.1 201 Created
   ]
 }
 -->
+
+

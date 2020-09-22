@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4f218e01cf389668ea1f7b680c2c58af4afa9094
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: d935722cae0d6f0003f8fd2f793ad09f7ea3a160
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383499"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983858"
 ---
 # <a name="get-accesspackageassignmentrequest"></a>Получение Акцесспаккажеассигнментрекуест
 
@@ -18,7 +18,7 @@ ms.locfileid: "44383499"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В разделе [Управление обслуживанием Azure AD](../resources/entitlementmanagement-root.md)извлекаются свойства и связи объекта [акцесспаккажеассигнментрекуест](../resources/accesspackageassignmentrequest.md) .
+В разделе [Управление обслуживанием Azure AD](../resources/entitlementmanagement-root.md)извлекаются свойства и связи объекта  [акцесспаккажеассигнментрекуест](../resources/accesspackageassignmentrequest.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,15 +40,15 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{i
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Например, чтобы получить запрошенный пакет Access, включите его `$expand=accessPackage` в запрос. Чтобы получить результирующее назначение, включите `$expand=accessPackageAssignment` в запрос.  Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Например, чтобы получить запрошенный пакет Access, включите его `$expand=accessPackage` в запрос. Чтобы получить результирующее назначение, включите `$expand=accessPackageAssignment` в запрос.  Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Носитель \{токен\}. Обязательный элемент. |
+| Authorization | Носитель \{токен\}. Обязательно. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -121,3 +121,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

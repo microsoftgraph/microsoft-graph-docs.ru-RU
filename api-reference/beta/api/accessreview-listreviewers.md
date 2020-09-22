@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 268744f1e742cdfbbbb3a5be7727ff6c1ddceaa5
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: ff7b4eeb6cd7e4e71e5eb71ab19ebe3112e10c5b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123547"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983561"
 ---
 # <a name="list-accessreview-reviewers"></a>Список рецензентов Акцессревиев
 
@@ -44,7 +44,7 @@ GET /accessReviews/{reviewId}/reviewers
 ## <a name="request-body"></a>Тело запроса
 Не следует предоставлять текст запроса.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200, OK` код отклика и массив объектов [userIdentity](../resources/useridentity.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -116,3 +116,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

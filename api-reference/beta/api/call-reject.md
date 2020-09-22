@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 56261485f08d071c2f61ca11a7cbbe73d0a84629
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0c3e711273ab9ca903588a49e310338ca0f9a90d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440761"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983391"
 ---
 # <a name="call-reject"></a>вызов: отклонено
 
@@ -52,8 +52,8 @@ POST /communications/calls/{id}/reject
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|reason|String|Причина отклонения. Возможные значения: `None` `Busy` и`Forbidden` |
-|callbackUri|String|Это позволяет Боты предоставить определенный URI обратного вызова для текущего вызова, чтобы получать уведомления позже. Если это свойство не задано, вместо него будет использоваться глобальный URI обратного вызова Bot. Это должно быть `https`.|
+|reason|String|Причина отклонения. Возможные значения: `None` `Busy` и `Forbidden` |
+|callbackUri|String|Это позволяет Боты предоставить определенный URI обратного вызова для текущего вызова, чтобы получать уведомления позже. Если это свойство не задано, вместо него будет использоваться глобальный URI обратного вызова Bot. Это должно быть `https` .|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Метод не возвращает данные в теле отклика.
@@ -242,3 +242,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

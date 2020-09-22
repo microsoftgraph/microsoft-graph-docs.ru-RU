@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 35d5cd03ca2a5810fd0c352841e803e52aa4c056
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b64cee3fd80d3b9138ee91ad8b6522d4b0a8bd41
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42438836"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982782"
 ---
 # <a name="update-chartseries"></a>Обновление объекта ChartSeries
 
@@ -111,3 +111,5 @@ Content-length: 26
   ]
 }
 -->
+
+

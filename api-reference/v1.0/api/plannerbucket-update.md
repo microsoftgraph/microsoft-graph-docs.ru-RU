@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 9d59675329d9146aa9dd542788ef507bb49f8678
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5b49a3252d6043a5d8f687c8a4d3c31a175961eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510937"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984798"
 ---
 # <a name="update-plannerbucket"></a>Обновление объекта plannerbucket
 
@@ -42,7 +42,7 @@ PATCH /planner/buckets/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|name|Строка|Имя сегмента.|
+|name|String|Имя сегмента.|
 |orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](../resources/planner-order-hint-format.md).|
 |planId|Строка|Идентификатор плана, к которому относится сегмент.|
 
@@ -120,3 +120,4 @@ Content-length: 245
   "suppressions": [
   ]
 }-->
+

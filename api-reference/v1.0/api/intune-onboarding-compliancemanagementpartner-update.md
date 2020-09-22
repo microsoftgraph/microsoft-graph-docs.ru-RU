@@ -3,14 +3,14 @@ title: Обновление Комплианцеманажементпартне
 description: Обновление свойств объекта Комплианцеманажементпартнер.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9574c2ddaacb60f9c41ea73608445de93365cb6e
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
-ms.translationtype: Auto
+ms.openlocfilehash: d102ec54673f7d60d8b3f3127761722340783607
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744171"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984987"
 ---
 # <a name="update-compliancemanagementpartner"></a>Обновление Комплианцеманажементпартнер
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartne
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -54,7 +54,7 @@ PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartne
 |id|String|Идентификатор объекта|
 |lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пакета пульса после того, как администратор направил соответствие партнеру управления соответствием|
 |partnerState|[девицеманажементпартнертенантстате](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|displayName|Строка|Отображаемое имя партнера|
+|displayName|String|Отображаемое имя партнера|
 |макосонбоардед|Boolean|Партнер, подключенный к устройствам Mac.|
 |андроидонбоардед|Boolean|Партнер, направленный на устройства с Android.|
 |иосонбоардед|Boolean|Партнер, подключенный к устройствам iOS.|
@@ -153,6 +153,9 @@ Content-Length: 1031
   ]
 }
 ```
+
+
+
 
 
 
