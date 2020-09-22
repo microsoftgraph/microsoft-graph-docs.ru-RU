@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: cb1299084db728ed95f1e40399c031e7e8f086b3
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 61221581354c5742c85a6cc2bcf931afd67a5481
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809266"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051720"
 ---
 # <a name="get-user-activities"></a>Получение действий пользователей
 
@@ -60,7 +60,7 @@ GET /me/activities
 |:----|:-----|:-----------|
 |Authorization | string | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Текст запроса отсутствует.
 
@@ -152,3 +152,4 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
