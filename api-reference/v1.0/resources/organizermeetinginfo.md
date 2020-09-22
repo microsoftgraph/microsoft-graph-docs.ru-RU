@@ -5,30 +5,30 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 89f487b5edcf1b176a67d10b0ae45d8dd62c46d3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d3b1f37e6ac5f33d6d59988054d5abfedf5e68e7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447264"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48066287"
 ---
-# <a name="organizermeetinginfo-resource-type"></a><span data-ttu-id="03862-103">Тип ресурса Организермитингинфо</span><span class="sxs-lookup"><span data-stu-id="03862-103">organizerMeetingInfo resource type</span></span>
+# <a name="organizermeetinginfo-resource-type"></a><span data-ttu-id="5d6b1-103">Тип ресурса Организермитингинфо</span><span class="sxs-lookup"><span data-stu-id="5d6b1-103">organizerMeetingInfo resource type</span></span>
 
-<span data-ttu-id="03862-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="03862-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5d6b1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5d6b1-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="03862-105">Содержит сведения об организаторе собрания.</span><span class="sxs-lookup"><span data-stu-id="03862-105">Contains details about the meeting organizer.</span></span> 
+<span data-ttu-id="5d6b1-105">Содержит сведения об организаторе собрания.</span><span class="sxs-lookup"><span data-stu-id="5d6b1-105">Contains details about the meeting organizer.</span></span> 
 
-<span data-ttu-id="03862-106">Чтобы присоединиться к существующему собранию, необходимо либо указать сочетание типов ресурсов Организермитингинфо и [чатинфо](./chatinfo.md) , либо сам тип ресурса [токенмитингинфо](./tokenmeetinginfo.md) .</span><span class="sxs-lookup"><span data-stu-id="03862-106">To join an existing meeting, you must either provide a combination of the organizerMeetingInfo and the [chatInfo](./chatinfo.md) resource types, or the [tokenMeetingInfo](./tokenmeetinginfo.md) resource type by itself.</span></span>
+<span data-ttu-id="5d6b1-106">Чтобы присоединиться к существующему собранию, необходимо либо указать сочетание типов ресурсов Организермитингинфо и [чатинфо](./chatinfo.md) , либо сам тип ресурса [токенмитингинфо](./tokenmeetinginfo.md) .</span><span class="sxs-lookup"><span data-stu-id="5d6b1-106">To join an existing meeting, you must either provide a combination of the organizerMeetingInfo and the [chatInfo](./chatinfo.md) resource types, or the [tokenMeetingInfo](./tokenmeetinginfo.md) resource type by itself.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="03862-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="03862-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="5d6b1-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="5d6b1-107">Properties</span></span>
 
-| <span data-ttu-id="03862-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="03862-108">Property</span></span>                     | <span data-ttu-id="03862-109">Тип</span><span class="sxs-lookup"><span data-stu-id="03862-109">Type</span></span>                          | <span data-ttu-id="03862-110">Описание</span><span class="sxs-lookup"><span data-stu-id="03862-110">Description</span></span>                                     |
+| <span data-ttu-id="5d6b1-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="5d6b1-108">Property</span></span>                     | <span data-ttu-id="5d6b1-109">Тип</span><span class="sxs-lookup"><span data-stu-id="5d6b1-109">Type</span></span>                          | <span data-ttu-id="5d6b1-110">Описание</span><span class="sxs-lookup"><span data-stu-id="5d6b1-110">Description</span></span>                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| <span data-ttu-id="03862-111">organizer</span><span class="sxs-lookup"><span data-stu-id="03862-111">organizer</span></span>                    | [<span data-ttu-id="03862-112">identitySet</span><span class="sxs-lookup"><span data-stu-id="03862-112">identitySet</span></span>](identityset.md) | <span data-ttu-id="03862-113">Удостоверение Azure Active Directory для организатора.</span><span class="sxs-lookup"><span data-stu-id="03862-113">The organizer Azure Active Directory identity.</span></span>  |
+| <span data-ttu-id="5d6b1-111">organizer</span><span class="sxs-lookup"><span data-stu-id="5d6b1-111">organizer</span></span>                    | [<span data-ttu-id="5d6b1-112">identitySet</span><span class="sxs-lookup"><span data-stu-id="5d6b1-112">identitySet</span></span>](identityset.md) | <span data-ttu-id="5d6b1-113">Удостоверение Azure Active Directory для организатора.</span><span class="sxs-lookup"><span data-stu-id="5d6b1-113">The organizer Azure Active Directory identity.</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="03862-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="03862-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5d6b1-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="5d6b1-114">JSON representation</span></span>
 
-<span data-ttu-id="03862-115">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="03862-115">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5d6b1-115">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5d6b1-115">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -55,3 +55,4 @@ ms.locfileid: "42447264"
   "suppressions": []
 }
 -->
+

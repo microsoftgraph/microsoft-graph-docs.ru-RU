@@ -5,32 +5,32 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 28bfd51a403077ee4ab456f6ca17fb176addf58d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 594061ff17f80bb1ab462647562947b16965d9dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508340"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48067397"
 ---
-# <a name="alerttrigger-resource-type"></a><span data-ttu-id="32bab-104">Тип ресурса Алерттригжер</span><span class="sxs-lookup"><span data-stu-id="32bab-104">alertTrigger resource type</span></span>
+# <a name="alerttrigger-resource-type"></a><span data-ttu-id="abfea-104">Тип ресурса Алерттригжер</span><span class="sxs-lookup"><span data-stu-id="abfea-104">alertTrigger resource type</span></span>
 
-<span data-ttu-id="32bab-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="32bab-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="abfea-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="abfea-105">Namespace: microsoft.graph</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="32bab-106">Содержит сведения о свойствах, которые активируют обнаружение (свойства, существующие в объекте Alert).</span><span class="sxs-lookup"><span data-stu-id="32bab-106">Contains information about the properties that triggered a detection (properties exist in the alert entity).</span></span>
+<span data-ttu-id="abfea-106">Содержит сведения о свойствах, которые активируют обнаружение (свойства, существующие в объекте Alert).</span><span class="sxs-lookup"><span data-stu-id="abfea-106">Contains information about the properties that triggered a detection (properties exist in the alert entity).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="32bab-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="32bab-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="abfea-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="abfea-107">Properties</span></span>
 
-| <span data-ttu-id="32bab-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="32bab-108">Property</span></span>   | <span data-ttu-id="32bab-109">Тип</span><span class="sxs-lookup"><span data-stu-id="32bab-109">Type</span></span>|<span data-ttu-id="32bab-110">Описание</span><span class="sxs-lookup"><span data-stu-id="32bab-110">Description</span></span>|
+| <span data-ttu-id="abfea-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="abfea-108">Property</span></span>   | <span data-ttu-id="abfea-109">Тип</span><span class="sxs-lookup"><span data-stu-id="abfea-109">Type</span></span>|<span data-ttu-id="abfea-110">Описание</span><span class="sxs-lookup"><span data-stu-id="abfea-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="32bab-111">name</span><span class="sxs-lookup"><span data-stu-id="32bab-111">name</span></span>|<span data-ttu-id="32bab-112">Строка</span><span class="sxs-lookup"><span data-stu-id="32bab-112">String</span></span>|<span data-ttu-id="32bab-113">Имя свойства, служащего триггером обнаружения.</span><span class="sxs-lookup"><span data-stu-id="32bab-113">Name of the property serving as a detection trigger.</span></span>|
-|<span data-ttu-id="32bab-114">type</span><span class="sxs-lookup"><span data-stu-id="32bab-114">type</span></span>|<span data-ttu-id="32bab-115">String</span><span class="sxs-lookup"><span data-stu-id="32bab-115">String</span></span>|<span data-ttu-id="32bab-116">Тип свойства в соотношении "ключ: значение" для интерпретации.</span><span class="sxs-lookup"><span data-stu-id="32bab-116">Type of the property in the key:value pair for interpretation.</span></span> <span data-ttu-id="32bab-117">Например, String, Boolean и т. д.</span><span class="sxs-lookup"><span data-stu-id="32bab-117">For example, String, Boolean, etc.</span></span>|
-|<span data-ttu-id="32bab-118">value</span><span class="sxs-lookup"><span data-stu-id="32bab-118">value</span></span>|<span data-ttu-id="32bab-119">String</span><span class="sxs-lookup"><span data-stu-id="32bab-119">String</span></span>|<span data-ttu-id="32bab-120">Значение свойства, служащего триггером обнаружения.</span><span class="sxs-lookup"><span data-stu-id="32bab-120">Value of the property serving as a detection trigger.</span></span>|
+|<span data-ttu-id="abfea-111">name</span><span class="sxs-lookup"><span data-stu-id="abfea-111">name</span></span>|<span data-ttu-id="abfea-112">String</span><span class="sxs-lookup"><span data-stu-id="abfea-112">String</span></span>|<span data-ttu-id="abfea-113">Имя свойства, служащего триггером обнаружения.</span><span class="sxs-lookup"><span data-stu-id="abfea-113">Name of the property serving as a detection trigger.</span></span>|
+|<span data-ttu-id="abfea-114">type</span><span class="sxs-lookup"><span data-stu-id="abfea-114">type</span></span>|<span data-ttu-id="abfea-115">String</span><span class="sxs-lookup"><span data-stu-id="abfea-115">String</span></span>|<span data-ttu-id="abfea-116">Тип свойства в соотношении "ключ: значение" для интерпретации.</span><span class="sxs-lookup"><span data-stu-id="abfea-116">Type of the property in the key:value pair for interpretation.</span></span> <span data-ttu-id="abfea-117">Например, String, Boolean и т. д.</span><span class="sxs-lookup"><span data-stu-id="abfea-117">For example, String, Boolean, etc.</span></span>|
+|<span data-ttu-id="abfea-118">value</span><span class="sxs-lookup"><span data-stu-id="abfea-118">value</span></span>|<span data-ttu-id="abfea-119">String</span><span class="sxs-lookup"><span data-stu-id="abfea-119">String</span></span>|<span data-ttu-id="abfea-120">Значение свойства, служащего триггером обнаружения.</span><span class="sxs-lookup"><span data-stu-id="abfea-120">Value of the property serving as a detection trigger.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="32bab-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="32bab-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="abfea-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="abfea-121">JSON representation</span></span>
 
-<span data-ttu-id="32bab-122">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="32bab-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="abfea-122">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="abfea-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -49,7 +49,7 @@ ms.locfileid: "42508340"
 
 ```
 
-## <a name="example"></a><span data-ttu-id="32bab-123">Пример</span><span class="sxs-lookup"><span data-stu-id="32bab-123">Example</span></span>
+## <a name="example"></a><span data-ttu-id="abfea-123">Пример</span><span class="sxs-lookup"><span data-stu-id="abfea-123">Example</span></span>
 
 ```json
 {
@@ -72,3 +72,5 @@ ms.locfileid: "42508340"
   "suppressions": []
 }
 -->
+
+
