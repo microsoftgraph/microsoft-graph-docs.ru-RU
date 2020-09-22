@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: e5578cc2bc05aedd417230cc3e9d3b171e9ba577
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 89ccee3123fc3f0fc04b620e5b3528f4a253d1fa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42503903"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058454"
 ---
 # <a name="items-resource-type"></a>Тип ресурса Items
 
@@ -55,7 +55,7 @@ ms.locfileid: "42503903"
 ## <a name="relationships"></a>Связи
 Налоговая группа (Таксграупкоде) должна существовать в таблице налоговой группы.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -81,5 +81,7 @@ ms.locfileid: "42503903"
 }
 
 ```
+
+
 
 

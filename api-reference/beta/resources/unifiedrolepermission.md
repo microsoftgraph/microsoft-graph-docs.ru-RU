@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f456927289a285a81eb088dd622b79f120df188f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c7c105dbf895d41b2e986a8fa723e0df314dd90d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43401667"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057962"
 ---
 # <a name="unifiedrolepermission-resource-type"></a>Тип ресурса Унифиедролепермиссион
 
@@ -39,7 +39,7 @@ ms.locfileid: "43401667"
 - Namespace — службы, которые предоставляют задачу. Например, все задачи в Azure Active Directory используют пространство имен Microsoft. Directory.  
 - Объект Entity — логические функции или компоненты, предоставляемые службой в Microsoft Graph. Например, приложения, субъекты служб или группы.
 - Набор свойств — конкретные свойства или аспекты объекта, для которого предоставляется доступ. Например, `microsoft.directory/applications/authentication/read` предоставляет возможность чтения URL-адреса ответа, URL-адреса выхода и неявного свойства Flow для объекта **Application** в Azure AD. Ниже приведены зарезервированные имена для общих наборов свойств.  
-  - Аллпропертиес — задает все свойства объекта, включая привилегированные свойства. Примеры включают `microsoft.directory/applications/allProperties/read` и `microsoft.directory/applications/allProperties/update`.
+  - Аллпропертиес — задает все свойства объекта, включая привилегированные свойства. Примеры включают `microsoft.directory/applications/allProperties/read` и `microsoft.directory/applications/allProperties/update` .
   - Basic — назначает общие свойства чтения, но исключает привилегированных. Например, `microsoft.directory/applications/basic/update` позволяет обновлять стандартные свойства, такие как отображаемое имя.
   - Standard — назначает общие свойства обновления, но исключает привилегированных. Например, `microsoft.directory/applications/standard/read`.
 - Actions — операции, которые вы предоставляете. В большинстве случаев разрешения следует выражать в терминах CRUD или Аллтаскс. Сюда входят следующие действия:
@@ -70,7 +70,7 @@ ms.locfileid: "43401667"
 
 ```
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -103,3 +103,5 @@ ms.locfileid: "43401667"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

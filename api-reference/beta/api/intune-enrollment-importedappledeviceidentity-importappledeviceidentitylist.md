@@ -3,14 +3,14 @@ title: Действие importAppleDeviceIdentityList
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 444f895caa9d420fb6c1bad55faefc1dcd550d08
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2d2e529df65006a552edc5752565e8439a75f751
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451192"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058874"
 ---
 # <a name="importappledeviceidentitylist-action"></a>Действие importAppleDeviceIdentityList
 
@@ -46,7 +46,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedAp
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -121,6 +121,9 @@ Content-Length: 741
   ]
 }
 ```
+
+
+
 
 
 

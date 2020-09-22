@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 77e2e35d56e3aa4a6078b4deac543cb1079df9ef
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a0fc1e99a2ff1bea834736b50d6f5e26c0f9192e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43355190"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057222"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -49,7 +49,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `201 Created` и объект [Message](../resources/message.md) в тексте отклика.
 
@@ -127,3 +127,4 @@ Content-length: 248
   "suppressions": [
   ]
 }-->
+

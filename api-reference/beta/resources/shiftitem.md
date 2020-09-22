@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5b86f232d5d5c6c41c2eab873e992b2b9902c976
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: aa26da14476559bcba980ae84237369a6aefeb9c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154341"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058046"
 ---
 # <a name="shiftitem-resource-type"></a>Тип ресурса shiftItem
 
@@ -23,10 +23,10 @@ ms.locfileid: "44154341"
 ## <a name="properties"></a>Свойства
 | Свойство                         | Тип                    | Описание                                                                             |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| notes               | string                  | Сдвиг заметок для `shiftItem`.      |
-| displayName               | string                  | Метка сдвига `shiftItem`. |
-| startDateTime               | DateTimeOffset                  | Дата и время начала для ресурса `shiftItem`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". Обязательный. |
-| endDateTime               | DateTimeOffset                 | Дата и время окончания для ресурса `shiftItem`. Обязательный. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
+| notes               | string                  | Сдвиг заметок для `shiftItem` .      |
+| displayName               | string                  | Метка сдвига `shiftItem` . |
+| startDateTime               | DateTimeOffset                  | Дата и время начала для ресурса `shiftItem`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". Обязательный элемент. |
+| endDateTime               | DateTimeOffset                 | Дата и время окончания для ресурса `shiftItem`. Обязательный элемент. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
 | theme | scheduleEntityTheme   |  Поддерживаемые цвета: белый, синий, зеленый, фиолетовый, розовый, желтый, серый, темно-синий, темно-зеленый, темно-фиолетовый, темно-розовый, темно-желтый. |
 | activities    | Коллекция [shiftActivity](shiftactivity.md)   | Добавочная часть ресурса shift, содержащая сведения о том, где и когда находится сотрудник во время своей смены. Например, выполняет задание, на плановом перерыве или на обеде. Обязательный элемент. |
 
@@ -63,3 +63,5 @@ ms.locfileid: "44154341"
   "suppressions": []
 }
 -->
+
+

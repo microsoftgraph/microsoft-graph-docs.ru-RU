@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: ffe6830088bd60c4de9cea8def8e8202d1b33f13
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ac4024fff534bd89e369f1f8048ca274ccfd157a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519542"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057908"
 ---
 # <a name="useranalytics-resource-type"></a>Тип ресурса Усераналитикс
 
@@ -68,3 +68,5 @@ ms.locfileid: "42519542"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

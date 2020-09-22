@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8e06b64bc01be163149468c9090df2a8ea59497d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 86ad11ae32977ac07a7755ebe0a169686f6f605e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520627"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058055"
 ---
 # <a name="shiftavailability-resource-type"></a>Тип ресурса Шифтаваилабилити
 
@@ -28,7 +28,7 @@ ms.locfileid: "42520627"
 |тимеслотс|Коллекция [тимеранже](timerange.md)|Временные слоты, предпочитаемые пользователем.|
 |timeZone|String|Указывает часовой пояс для указанного времени. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -58,3 +58,5 @@ ms.locfileid: "42520627"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

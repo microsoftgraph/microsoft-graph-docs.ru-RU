@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0f4112cfc0a68b922f19f45eb24d9f391777eb91
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 846e364161e2ca48d6a7733939c146ea543b3a2b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843092"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058545"
 ---
 # <a name="update-todotask"></a>Обновление Тодотаск
 Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -144,4 +144,6 @@ Content-Type: application/json
 }
    
 ```
+
+
 

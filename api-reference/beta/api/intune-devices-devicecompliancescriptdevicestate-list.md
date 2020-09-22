@@ -3,14 +3,14 @@ title: Список Девицекомплианцескриптдевицест
 description: Список свойств и связей объектов Девицекомплианцескриптдевицестате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 59b6171279cb7581c8c08f339f0e857e1a51afbd
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 443c537cd56269d1ccaaaf3aebfd20ba5d3d86be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792452"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058881"
 ---
 # <a name="list-devicecompliancescriptdevicestates"></a>Список Девицекомплианцескриптдевицестатес
 
@@ -46,7 +46,7 @@ GET /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/deviceR
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -82,6 +82,9 @@ Content-Length: 501
   ]
 }
 ```
+
+
+
 
 
 

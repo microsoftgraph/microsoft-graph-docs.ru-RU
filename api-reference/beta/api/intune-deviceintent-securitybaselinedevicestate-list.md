@@ -3,14 +3,14 @@ title: Список Секуритибаселинедевицестатес
 description: Список свойств и связей объектов Секуритибаселинедевицестате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a2bcb63c19e29484264bd69b253a898a8975bff
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7bae038d7a2e9d14e60d11d330d29be78a3c19f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43427351"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058937"
 ---
 # <a name="list-securitybaselinedevicestates"></a>Список Секуритибаселинедевицестатес
 
@@ -46,10 +46,10 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.sec
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [секуритибаселинедевицестате](../resources/intune-deviceintent-securitybaselinedevicestate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -81,6 +81,9 @@ Content-Length: 420
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 051db73f098272bc97fe3477e6bd8dd3f49eddf5
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: b25330207d5785b5cb76d4d956fdff48afbf4753
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843270"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058762"
 ---
 # <a name="delete-onlinemeeting"></a>Удаление Онлинемитинг
 
@@ -29,7 +29,7 @@ ms.locfileid: "47843270"
 | Для приложений                            | OnlineMeetings.ReadWrite.All*                |
 
 > [!IMPORTANT]
-> \* Администраторы должны создать [политику доступа к приложениям](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) и предоставить ее пользователю, достигая имени приложения, настроенного в политике, чтобы удалить собрание по сети от имени этого пользователя (идентификатор пользователя, указанный в пути реукест).
+> \* Администраторы должны создать [политику доступа к приложениям](/graph/cloud-communication-online-meeting-application-access-policy) и предоставить ее пользователю, достигая имени приложения, настроенного в политике, чтобы удалить собрание по сети от имени этого пользователя (идентификатор пользователя, указанный в пути реукест).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId
 
 > **Примечание.**
 >
-> - `userId` — Это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в разделе [Политика доступа к приложениям](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md).
+> - `userId` — Это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в разделе [Политика доступа к приложениям](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` — **идентификатор** [объекта онлинемитинг](../resources/onlinemeeting.md).
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -55,7 +55,7 @@ DELETE https://graph.microsoft.com/beta/users/{userId}/onlineMeetings/{meetingId
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -114,3 +114,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

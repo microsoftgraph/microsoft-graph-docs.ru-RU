@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 6c06a7456a9c7a58103150f0417573dc056059de
-ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
+ms.openlocfilehash: 54e4fbb4c3a764d4b1933439783e59ab79bda23a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47296516"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058672"
 ---
 # <a name="delete-serviceprincipal"></a>Удалить servicePrincipal
 
@@ -97,3 +97,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

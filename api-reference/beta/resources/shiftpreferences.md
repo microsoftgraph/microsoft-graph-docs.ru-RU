@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 75084cba71946d8b14ab080ac5872359bf0ceb12
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d35f77e7d048adb0b0bb49604423bbe2ff53031c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520613"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058044"
 ---
 # <a name="shiftpreferences-resource-type"></a>Тип ресурса Шифтпреференцес
 
@@ -24,8 +24,8 @@ ms.locfileid: "42520613"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [получение](../api/shiftpreferences-get.md); | [шифтпреференцес](shiftpreferences.md) | Чтение свойств и связей объекта **шифтпреференцес** . |
-| [обновление](../api/shiftpreferences-put.md). | [шифтпреференцес](shiftpreferences.md) | Обновление объекта **шифтпреференцес** . |
+| [Получение](../api/shiftpreferences-get.md) | [шифтпреференцес](shiftpreferences.md) | Чтение свойств и связей объекта **шифтпреференцес** . |
+| [Обновление](../api/shiftpreferences-put.md) | [шифтпреференцес](shiftpreferences.md) | Обновление объекта **шифтпреференцес** . |
 
 ## <a name="properties"></a>Свойства
 
@@ -70,3 +70,5 @@ ms.locfileid: "42520613"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

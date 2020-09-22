@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b9dc39021e297882bf92b9a314f342297d86d9ed
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: a12711fbaeb8b613762f16a2a877cb1e2248369c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218417"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058048"
 ---
 # <a name="metadataentry-resource-type"></a>Тип ресурса Метадатаентри
 
@@ -26,7 +26,7 @@ ms.locfileid: "43218417"
 |key|String|Имя свойства метаданных.|
 |value|String|Значение свойства метаданных.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -57,3 +57,5 @@ ms.locfileid: "43218417"
   "suppressions": []
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: Получение Девицехеалсскриптдевицестат
 description: Чтение свойств и связей объекта Девицехеалсскриптдевицестате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9f91301822ff4f99499c79e1a66d3fa5871359ef
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6753bca88bb4fa46ef32c554fce4811312b0ca56
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380577"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058888"
 ---
 # <a name="get-devicehealthscriptdevicestate"></a>Получение Девицехеалсскриптдевицестате
 
@@ -49,10 +49,10 @@ GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [девицехеалсскриптдевицестате](../resources/intune-devices-devicehealthscriptdevicestate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -87,6 +87,9 @@ Content-Length: 854
   }
 }
 ```
+
+
+
 
 
 

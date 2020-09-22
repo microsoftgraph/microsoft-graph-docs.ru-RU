@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a3cebac6cf4e1ae3357e2ad7e0e3de3e11dc8f2d
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: b64df2cc2af979f783688bb8d83fa6e17fc1b834
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44217222"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057145"
 ---
 # <a name="delete-openshift"></a>Удаление Опеншифт
 
@@ -26,7 +26,7 @@ ms.locfileid: "44217222"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Сервер приложений                            | Schedule.ReadWrite.All |
+| Для приложений                            | Schedule.ReadWrite.All |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
 
@@ -44,7 +44,7 @@ DELETE /teams/{id}/schedule/openShifts/{openShiftId}
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -110,3 +110,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

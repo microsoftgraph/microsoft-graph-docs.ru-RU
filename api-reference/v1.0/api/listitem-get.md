@@ -6,12 +6,12 @@ description: Возвращает метаданные элемента в сп�
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0d581732ab7a1fea6e5519ef0db0c289cd276d8c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e2d441bb306a6614cdc27f5dff79bd55377b0459
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511707"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057292"
 ---
 # <a name="get-listitem"></a>Получение ресурса listItem
 
@@ -121,3 +121,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

@@ -3,14 +3,14 @@ title: Список объектов deviceManagementTroubleshootingEvent
 description: Список свойств и связей объектов deviceManagementTroubleshootingEvent.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3abdfb2f71297d4e0989f9a0ae1c0e70ac16c170
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 78ac4f5d2c5eb076745f90d45143b7b7a683cca5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43418510"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057355"
 ---
 # <a name="list-devicemanagementtroubleshootingevents"></a>Список объектов deviceManagementTroubleshootingEvent
 
@@ -41,13 +41,13 @@ GET /deviceManagement/troubleshootingEvents
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -76,6 +76,9 @@ Content-Length: 277
   ]
 }
 ```
+
+
+
 
 
 

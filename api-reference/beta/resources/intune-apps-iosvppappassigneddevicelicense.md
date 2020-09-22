@@ -3,14 +3,14 @@ title: Тип ресурса Иосвппаппассигнеддевицели�
 description: Назначение лицензии на устройство для корпоративного приобретения для iOS. Этот класс не поддерживает операции создания, удаления и обновления.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b5f44a974d1be64a44282251f3738137d7904457
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2ea934f388b9656fc2deebf4952eefbc7cdae183
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458971"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058370"
 ---
 # <a name="iosvppappassigneddevicelicense-resource-type"></a>Тип ресурса Иосвппаппассигнеддевицелиценсе
 
@@ -37,11 +37,11 @@ ms.locfileid: "43458971"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
+|id|String|Ключ объекта. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
 |усеремаиладдресс|String|Адрес электронной почты пользователя. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userId|String|Идентификатор пользователя. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userName|String|Имя пользователя. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userPrincipalName|Строка|Имя участника-пользователя. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userPrincipalName|String|Имя участника-пользователя. Наследуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
 |манажеддевицеид|String|Идентификатор управляемого устройства.|
 |deviceName|String|Имя устройства.|
 
@@ -68,6 +68,9 @@ ms.locfileid: "43458971"
   "deviceName": "String"
 }
 ```
+
+
+
 
 
 

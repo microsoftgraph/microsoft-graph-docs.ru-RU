@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 553463811f74a536cd3be5317718e00f91c95260
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: bad5d8cfa6d9b53c4023bb89eabd74436ab7dacd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218046"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057950"
 ---
 # <a name="trustframeworkpolicy-resource-type"></a>Тип ресурса Трустфрамеворкполици
 
@@ -43,7 +43,7 @@ ms.locfileid: "43218046"
 |:---------------|:--------|:----------|
 |id|String|Идентификатор политики.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 <!-- {
@@ -66,3 +66,5 @@ ms.locfileid: "43218046"
 
 - [схема трустфрамеворкполици](/azure/active-directory-b2c/trustframeworkpolicy) для получения сведений об элементах схемы.
 - [Трустфрамеворкполици. xsd](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack/blob/master/TrustFrameworkPolicy_0.3.0.0.xsd)
+
+

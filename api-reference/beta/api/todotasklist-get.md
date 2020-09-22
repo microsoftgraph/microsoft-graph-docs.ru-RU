@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 215f791f5a845df3de07166550055fca22f50735
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: fe43222eac877d467654a890a923533a8ba94824
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873219"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058538"
 ---
 # <a name="get-todotasklist"></a>Получение Тодотасклист
 Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -48,7 +48,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [тодотасклист](../resources/todotasklist.md) в тексте отклика.
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/me/todo/lists/AAMkADIyAAAAABrJAAA=
 
 
 ### <a name="response"></a>Отклик
-**Примечание:** Ниже приведен пример ответа. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+**Примечание:** Ниже приведен пример ответа. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -105,4 +105,6 @@ Content-Type: application/json
   }
 }
 ```
+
+
 

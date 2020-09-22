@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 374e576de5451459033ecc69d089473da37ff359
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: fed835f834b7bd65816613c2d37666294db6be62
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872599"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058528"
 ---
 # <a name="delete-todotasklist"></a>Удаление Тодотасклист
 Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -89,4 +89,6 @@ DELETE https://graph.microsoft.com/beta/me/todo/lists/AAMkADIyAAAhrbPXAAA=
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b7210c32b28c15b5eac0d3709f89c1c55127f6fb
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 267710b78fed5abfb83e7c9492c7bdff603b91d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154439"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058606"
 ---
 # <a name="get-timeoffrequest"></a>Получение Тимеоффрекуест
 
@@ -120,3 +120,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

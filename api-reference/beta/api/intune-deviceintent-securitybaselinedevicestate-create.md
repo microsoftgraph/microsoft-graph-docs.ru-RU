@@ -3,14 +3,14 @@ title: Создание Секуритибаселинедевицестате
 description: Создание нового объекта Секуритибаселинедевицестате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 66c1aaa521236c190c531840b351a5ec882dbc58
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bdd9637aae1b66f71077a4008e3bcc5b3d4cc0c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381144"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058944"
 ---
 # <a name="create-securitybaselinedevicestate"></a>Создание Секуритибаселинедевицестате
 
@@ -46,14 +46,14 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.se
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Секуритибаселинедевицестате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Секуритибаселинедевицестате.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта|
+|id|String|Уникальный идентификатор объекта|
 |манажеддевицеид|String|Идентификатор устройства Intune|
 |deviceDisplayName|String|Отображаемое имя устройства|
 |userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
@@ -62,7 +62,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.se
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [секуритибаселинедевицестате](../resources/intune-deviceintent-securitybaselinedevicestate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -101,6 +101,9 @@ Content-Length: 359
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
+
+
+
 
 
 

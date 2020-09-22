@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e556daf6fd8039b6783c6d08e595d0df1a6c3541
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 56ae53e1b55be0a56a4c021449b8c5f4eb1a7c05
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42495412"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058392"
 ---
 # <a name="internalsponsors-complex-type"></a>сложный тип Интерналспонсорс
 
@@ -26,7 +26,7 @@ ms.locfileid: "42495412"
 | :--------------------------- | :------------------------ | :---------- |
 | Создание резервной копии | Boolean | Указывает, является ли спонсор резервным утверждающим. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено представление типа в формате JSON.
 
@@ -56,3 +56,5 @@ ms.locfileid: "42495412"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 83ab9002c596e5d51a54b41b7e9635414c497c55
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 49bd48e8b70347acde1b21474dd9e4d34a12678c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44217187"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057140"
 ---
 # <a name="get-openshift"></a>Получение Опеншифт
 
@@ -44,11 +44,11 @@ GET /teams/{id}/schedule/openShifts/{openShiftId}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [опеншифт](../resources/openshift.md) в тексте отклика.
 
@@ -164,3 +164,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

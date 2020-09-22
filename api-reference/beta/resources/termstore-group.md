@@ -5,12 +5,12 @@ doc_type: resourcePageType
 description: Представляет группу, используемую в банке терминов.
 localization_priority: Normal
 ms.prod: Sharepoint
-ms.openlocfilehash: 91ad02722bcbddb1d21222381ced7cabc531f3fc
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 121eba9bfdde52372ce4c03a3fe594eb931f620f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539391"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057978"
 ---
 # <a name="group-resource-type"></a>Тип ресурса Group
 
@@ -38,7 +38,7 @@ ms.locfileid: "46539391"
 |:---------------------|:-------------------|:------------------------------------
 | createdDateTime      | DateTimeOffset     | Дата и время создания группы. Только для чтения.
 | description          | string             | Описание, содержащее сведения об использовании терминов.
-| id                   | строка             | Уникальный идентификатор группы. Только для чтения.
+| id                   | string             | Уникальный идентификатор группы. Только для чтения.
 | displayName          | string             | Имя группы.
 | scope                | string              | Возвращает тип группы. Возможные значения: "Global", "System" и "siteCollection".
 
@@ -47,7 +47,7 @@ ms.locfileid: "46539391"
 |:-------------------|:----------------------------|:--------------------------
 | предваритель           | Коллекция [Microsoft. Graph. Банк. Set для Microsoft. Graph.][] | Все наборы в группе в [банке]терминов.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено представление ресурса **Group** в формате JSON.
 <!-- {
@@ -91,3 +91,5 @@ ms.locfileid: "46539391"
   "suppressions": []
 }
 -->
+
+

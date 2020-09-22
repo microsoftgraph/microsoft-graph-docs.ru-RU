@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса fileAttachment
-description: Файл (например, текстовый файл или документ Word), вложенный в событие,
+description: Файл (например, текстовый файл или документ Word), присоединенный к событию,
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: svpsiva
-ms.openlocfilehash: 770cb2750df46243d6050832feeca301549b2c76
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: a850e05622b22bf05dfec1011cd4371cbc9e7cc4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849489"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058466"
 ---
 # <a name="fileattachment-resource-type"></a>Тип ресурса fileAttachment
 
@@ -20,7 +20,7 @@ ms.locfileid: "46849489"
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-Файл (например, текстовый файл или документ Word), вложенный в [событие](../resources/event.md)пользователя, [сообщение,](../resources/message.md) [задачу Outlook](../resources/outlooktask.md)или [запись.](../resources/post.md) 
+Файл (например, текстовый файл или документ Word), присоединенный к пользовательскому [событию](../resources/event.md), [сообщению](../resources/message.md), [задаче Outlook](../resources/outlooktask.md)или [POST](../resources/post.md). 
 
 При создании вложенного файла включите в текст запроса следующее:
 
@@ -37,7 +37,7 @@ ms.locfileid: "46849489"
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
 |[Получение](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Чтение свойств, связей или необработанного содержимого объекта fileAttachment.|
-|[удаление](../api/attachment-delete.md); | Нет |Удаление объекта fileAttachment. |
+|[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта fileAttachment. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -97,3 +97,5 @@ ms.locfileid: "46849489"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ecd776364fbdc3dcd0b4dbf59ff60c8e6624262b
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: f26ad245bfbbcc821753bddb9bdb346e399cd560
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917371"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057971"
 ---
 # <a name="tokenissuancepolicy-resource-type"></a>Тип ресурса Токениссуанцеполици
 
@@ -44,7 +44,7 @@ ms.locfileid: "43917371"
 |id|String| Уникальный идентификатор для этой политики. Только для чтения.|
 |RDLC|Коллекция объектов string| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики. Ниже приведены дополнительные сведения о схеме JSON для этого свойства. Обязательный.|
 |description|String| Описание для этой политики.|
-|displayName|Строка| Отображаемое имя для этой политики. Обязательный.|
+|displayName|String| Отображаемое имя для этой политики. Обязательно.|
 |исорганизатиондефаулт|Boolean|Игнорировать это свойство. Политика выдачи маркеров может применяться только к субъектам служб и не может быть настроена глобально для Организации.|
 
 
@@ -63,10 +63,10 @@ ms.locfileid: "43917371"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|токенреспонсесигнингполици|String|Представляет параметры подписи сертификатов, доступные в Azure AD. Поддерживаются следующие значения `ResponseOnly`: `TokenOnly`, `ResponseAndToken`,.  |
-|самлтокенверсион|String|Версия маркера SAML. Поддерживаются следующие значения `1.1`: `2.0`,. |
-|сигнингалгорисм|String|Использование алгоритма подписи для подписи маркера SAML в Azure AD. Поддерживаются следующие значения `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256`: `http://www.w3.org/2000/09/xmldsig#rsa-sha1`,.|
-|Версия|Целое число|Установите значение 1. Обязательный.|
+|токенреспонсесигнингполици|String|Представляет параметры подписи сертификатов, доступные в Azure AD. Поддерживаются следующие значения: `ResponseOnly` , `TokenOnly` , `ResponseAndToken` .  |
+|самлтокенверсион|String|Версия маркера SAML. Поддерживаются следующие значения: `1.1` , `2.0` . |
+|сигнингалгорисм|String|Использование алгоритма подписи для подписи маркера SAML в Azure AD. Поддерживаются следующие значения: `http://www.w3.org/2001/04/xmldsig-more#rsa-sha256` , `http://www.w3.org/2000/09/xmldsig#rsa-sha1` .|
+|Версия|Целое число|Установите значение 1. Обязательно.|
 
 
 ## <a name="relationships"></a>Связи
@@ -108,3 +108,5 @@ ms.locfileid: "43917371"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

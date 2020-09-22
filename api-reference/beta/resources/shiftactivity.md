@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: d03cf481ec0360aa6ef7c4ab544189b420b2081b
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 574df779de03100391d7b75c658f8d2495542459
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154348"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058083"
 ---
 # <a name="shiftactivity-resource-type"></a>Тип ресурса Шифтактивити
 
@@ -23,10 +23,10 @@ ms.locfileid: "44154348"
 ## <a name="properties"></a>Свойства
 | Свойство                         | Тип                    | Описание                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| Предопл               | `bool`                  | Указывает, следует `microsoft.graph.user` ли платить за действие в течение этого периода `shift`. Обязательный.    |
+| Предопл               | `bool`                  | Указывает, `microsoft.graph.user` следует ли платить за действие в течение этого периода `shift` . Обязательно.    |
 | startDateTime               | `DateTimeOffset`                  | Дата и время начала для ресурса `shiftActivity`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". Обязательный элемент. |
 | endDateTime               | `DateTimeOffset`                  | Дата и время окончания для ресурса `shiftActivity`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". Обязательный элемент.    |
-| code               | `string`                  | Определенный пользователем код для `shiftActivity`. Обязательный.    |
+| code               | `string`                  | Определенный пользователем код для `shiftActivity` . Обязательный.    |
 | displayName               | `string`                  | Имя ресурса `shiftActivity`. Обязательный элемент.    |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -61,3 +61,5 @@ ms.locfileid: "44154348"
   "suppressions": []
 }
 -->
+
+
