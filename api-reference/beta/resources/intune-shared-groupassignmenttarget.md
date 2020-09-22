@@ -3,40 +3,40 @@ title: Тип ресурса groupAssignmentTarget
 description: Представляет ресурс, назначенный группе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5800977f704b82ba83d82b7a0acdda8a2d6e6df2
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 8ede502c06ffcaef4f3d9be2f133ea6eb591d5de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793432"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084284"
 ---
-# <a name="groupassignmenttarget-resource-type"></a><span data-ttu-id="4614c-103">Тип ресурса groupAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="4614c-103">groupAssignmentTarget resource type</span></span>
+# <a name="groupassignmenttarget-resource-type"></a><span data-ttu-id="dc761-103">Тип ресурса groupAssignmentTarget</span><span class="sxs-lookup"><span data-stu-id="dc761-103">groupAssignmentTarget resource type</span></span>
 
-<span data-ttu-id="4614c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4614c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="dc761-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dc761-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="4614c-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4614c-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="dc761-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dc761-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="4614c-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="4614c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="dc761-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="dc761-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4614c-107">Представляет ресурс, назначенный группе.</span><span class="sxs-lookup"><span data-stu-id="4614c-107">Represents an assignment to a group.</span></span>
+<span data-ttu-id="dc761-107">Представляет ресурс, назначенный группе.</span><span class="sxs-lookup"><span data-stu-id="dc761-107">Represents an assignment to a group.</span></span>
 
 
-<span data-ttu-id="4614c-108">Наследуется от ресурса [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="4614c-108">Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span></span>
+<span data-ttu-id="dc761-108">Наследуется от ресурса [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="dc761-108">Inherits from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4614c-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="4614c-109">Properties</span></span>
-|<span data-ttu-id="4614c-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="4614c-110">Property</span></span>|<span data-ttu-id="4614c-111">Тип</span><span class="sxs-lookup"><span data-stu-id="4614c-111">Type</span></span>|<span data-ttu-id="4614c-112">Описание</span><span class="sxs-lookup"><span data-stu-id="4614c-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="dc761-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="dc761-109">Properties</span></span>
+|<span data-ttu-id="dc761-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="dc761-110">Property</span></span>|<span data-ttu-id="dc761-111">Тип</span><span class="sxs-lookup"><span data-stu-id="dc761-111">Type</span></span>|<span data-ttu-id="dc761-112">Описание</span><span class="sxs-lookup"><span data-stu-id="dc761-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4614c-113">девицеандаппманажементассигнментфилтерид</span><span class="sxs-lookup"><span data-stu-id="4614c-113">deviceAndAppManagementAssignmentFilterId</span></span>|<span data-ttu-id="4614c-114">String</span><span class="sxs-lookup"><span data-stu-id="4614c-114">String</span></span>|<span data-ttu-id="4614c-115">Идентификатор фильтра для назначения назначения.</span><span class="sxs-lookup"><span data-stu-id="4614c-115">The Id of the filter for the target assignment.</span></span> <span data-ttu-id="4614c-116">Наследуется от [девицеандаппманажементассигнменттаржет](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="4614c-116">Inherited from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span></span>|
-|<span data-ttu-id="4614c-117">девицеандаппманажементассигнментфилтертипе</span><span class="sxs-lookup"><span data-stu-id="4614c-117">deviceAndAppManagementAssignmentFilterType</span></span>|[<span data-ttu-id="4614c-118">девицеандаппманажементассигнментфилтертипе</span><span class="sxs-lookup"><span data-stu-id="4614c-118">deviceAndAppManagementAssignmentFilterType</span></span>](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|<span data-ttu-id="4614c-119">Тип фильтра целевого назначения, например, Exclude или include.</span><span class="sxs-lookup"><span data-stu-id="4614c-119">The type of filter of the target assignment i.e. Exclude or Include.</span></span> <span data-ttu-id="4614c-120">Наследуется от [девицеандаппманажементассигнменттаржет](../resources/intune-shared-deviceandappmanagementassignmenttarget.md).</span><span class="sxs-lookup"><span data-stu-id="4614c-120">Inherited from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md).</span></span> <span data-ttu-id="4614c-121">Возможные значения: `none`, `include`.</span><span class="sxs-lookup"><span data-stu-id="4614c-121">Possible values are: `none`, `include`.</span></span>|
-|<span data-ttu-id="4614c-122">groupId</span><span class="sxs-lookup"><span data-stu-id="4614c-122">groupId</span></span>|<span data-ttu-id="4614c-123">String</span><span class="sxs-lookup"><span data-stu-id="4614c-123">String</span></span>|<span data-ttu-id="4614c-124">Идентификатор группы-объекта назначения.</span><span class="sxs-lookup"><span data-stu-id="4614c-124">The group Id that is the target of the assignment.</span></span>|
+|<span data-ttu-id="dc761-113">девицеандаппманажементассигнментфилтерид</span><span class="sxs-lookup"><span data-stu-id="dc761-113">deviceAndAppManagementAssignmentFilterId</span></span>|<span data-ttu-id="dc761-114">Строка</span><span class="sxs-lookup"><span data-stu-id="dc761-114">String</span></span>|<span data-ttu-id="dc761-115">Идентификатор фильтра для назначения назначения.</span><span class="sxs-lookup"><span data-stu-id="dc761-115">The Id of the filter for the target assignment.</span></span> <span data-ttu-id="dc761-116">Наследуется от [девицеандаппманажементассигнменттаржет](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span><span class="sxs-lookup"><span data-stu-id="dc761-116">Inherited from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)</span></span>|
+|<span data-ttu-id="dc761-117">deviceAndAppManagementAssignmentFilterType</span><span class="sxs-lookup"><span data-stu-id="dc761-117">deviceAndAppManagementAssignmentFilterType</span></span>|[<span data-ttu-id="dc761-118">deviceAndAppManagementAssignmentFilterType</span><span class="sxs-lookup"><span data-stu-id="dc761-118">deviceAndAppManagementAssignmentFilterType</span></span>](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|<span data-ttu-id="dc761-119">Тип фильтра целевого назначения, например, Exclude или include.</span><span class="sxs-lookup"><span data-stu-id="dc761-119">The type of filter of the target assignment i.e. Exclude or Include.</span></span> <span data-ttu-id="dc761-120">Наследуется от [девицеандаппманажементассигнменттаржет](../resources/intune-shared-deviceandappmanagementassignmenttarget.md).</span><span class="sxs-lookup"><span data-stu-id="dc761-120">Inherited from [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md).</span></span> <span data-ttu-id="dc761-121">Возможные значения: `none`, `include`.</span><span class="sxs-lookup"><span data-stu-id="dc761-121">Possible values are: `none`, `include`.</span></span>|
+|<span data-ttu-id="dc761-122">groupId</span><span class="sxs-lookup"><span data-stu-id="dc761-122">groupId</span></span>|<span data-ttu-id="dc761-123">String</span><span class="sxs-lookup"><span data-stu-id="dc761-123">String</span></span>|<span data-ttu-id="dc761-124">Идентификатор группы-объекта назначения.</span><span class="sxs-lookup"><span data-stu-id="dc761-124">The group Id that is the target of the assignment.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="4614c-125">Связи</span><span class="sxs-lookup"><span data-stu-id="4614c-125">Relationships</span></span>
-<span data-ttu-id="4614c-126">Нет</span><span class="sxs-lookup"><span data-stu-id="4614c-126">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="dc761-125">Связи</span><span class="sxs-lookup"><span data-stu-id="dc761-125">Relationships</span></span>
+<span data-ttu-id="dc761-126">Нет</span><span class="sxs-lookup"><span data-stu-id="dc761-126">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="4614c-127">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="4614c-127">JSON Representation</span></span>
-<span data-ttu-id="4614c-128">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4614c-128">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="dc761-127">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="dc761-127">JSON Representation</span></span>
+<span data-ttu-id="dc761-128">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="dc761-128">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.groupAssignmentTarget"
@@ -50,6 +50,9 @@ ms.locfileid: "44793432"
   "groupId": "String"
 }
 ```
+
+
+
 
 
 
