@@ -3,14 +3,14 @@ title: Обновление Макосмдатпапп
 description: Обновление свойств объекта Макосмдатпапп.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c1283540e033c9ede5ec79bcb5cdb5180722dba6
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 8134d413d8a7cde15ddc77e37b4107522cd80781
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792081"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000989"
 ---
 # <a name="update-macosmdatpapp"></a>Обновление Макосмдатпапп
 
@@ -29,7 +29,7 @@ ms.locfileid: "46792081"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -45,10 +45,10 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [макосмдатпапп](../resources/intune-apps-macosmdatpapp.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [макосмдатпапп](../resources/intune-apps-macosmdatpapp.md).
@@ -73,10 +73,12 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседингаппкаунт|Int32|Общее количество приложений, которые напрямую или косвенно заменяют данное приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседедаппкаунт|Int32|Общее число приложений, для которых это приложение напрямую или косвенно заменяется. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [макосмдатпапп](../resources/intune-apps-macosmdatpapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -86,7 +88,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 712
+Content-length: 769
 
 {
   "@odata.type": "#microsoft.graph.macOSMdatpApp",
@@ -110,7 +112,9 @@ Content-length: 712
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "dependentAppCount": 1
+  "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2
 }
 ```
 
@@ -119,7 +123,7 @@ Content-length: 712
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 884
+Content-Length: 941
 
 {
   "@odata.type": "#microsoft.graph.macOSMdatpApp",
@@ -146,9 +150,14 @@ Content-Length: 884
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "dependentAppCount": 1
+  "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2
 }
 ```
+
+
+
 
 
 

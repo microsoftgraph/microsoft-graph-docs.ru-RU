@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ad1b8cc4c2792493e3ef511a9166c06c673482d6
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 22fb19a5d44ff9bed091c1cbd84183470a3490ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630272"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001481"
 ---
 # <a name="informationprotectionlabel-evaluateclassificationresults"></a>Информатионпротектионлабел: Евалуатеклассификатионресултс
 
@@ -44,9 +44,9 @@ ms.locfileid: "46630272"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированное (рабочая или учебная учетная запись)     | InformationProtectionPolicy.Read            |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | InformationProtectionPolicy.Read.All        |
+| Делегированные (рабочая или учебная учетная запись)     | InformationProtectionPolicy.Read            |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -62,9 +62,9 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Авторизация | Bearer {токен}. Обязательный.                                                                                                                                             |
 | Content-Type  | application/json. Обязательный.                                                                                                                                           |
-| User — Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательно. |
+| User — Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательный параметр. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -218,3 +218,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

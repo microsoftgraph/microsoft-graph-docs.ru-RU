@@ -3,14 +3,14 @@ title: Get androidForWorkAppConfigurationSchema
 description: Чтение свойств и связей объекта androidForWorkAppConfigurationSchema.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5b92c06c71171338fbe13e1d20f52d1f67f5804e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 803cd0ed7d6da10d3dd1b13985d14adf57928f28
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43418410"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001416"
 ---
 # <a name="get-androidforworkappconfigurationschema"></a>Get androidForWorkAppConfigurationSchema
 
@@ -40,19 +40,19 @@ ms.locfileid: "43418410"
 GET /deviceManagement/androidForWorkAppConfigurationSchemas/{androidForWorkAppConfigurationSchemaId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -100,6 +100,9 @@ Content-Length: 913
   }
 }
 ```
+
+
+
 
 
 

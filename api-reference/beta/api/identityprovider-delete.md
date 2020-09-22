@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f138dd61b8674151fd3ac2ec7ddd1f340570e994
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 08e6208cbd58a3101d995d77e7d90b47918fbce5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566825"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001689"
 ---
 # <a name="delete-identityprovider"></a>Удаление identityProvider
 
@@ -47,7 +47,7 @@ DELETE /identityProviders/{id}
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -90,7 +90,7 @@ DELETE https://graph.microsoft.com/beta/identityProviders/{id}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -103,3 +103,5 @@ DELETE https://graph.microsoft.com/beta/identityProviders/{id}
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6aada439df5839b0a6d4d91a2da962874beea5df
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: fd6534256e60b5fbc1e699eab2e6df787ab63864
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44287033"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002123"
 ---
 # <a name="list-owners"></a>Список владельцев
 
@@ -27,7 +27,7 @@ ms.locfileid: "44287033"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group. Read. ALL и User. ReadBasic. ALL, Group. Read. ALL и User. Read. ALL, Group. Read. ALL и User. ReadWrite. ALL, Group. Read. ALL и User. Read. ALL и User. Read. ALL  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group. Read. ALL и User. Read. ALL, Group. Read. ALL и User. ReadWrite. ALL, Group. Read. ALL и User. Read. ALL и Application. Read. ALL. |
+|Приложение | Group. Read. ALL и User. Read. ALL, Group. Read. ALL и User. ReadWrite. ALL, Group. Read. ALL и User. Read. ALL и Application. Read. ALL. |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -45,7 +45,7 @@ GET /groups/{id}/owners
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -114,3 +114,5 @@ Content-length: 55
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 30de1d25a8a407feb5fe4fbf2cf6c71d72e289ba
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b14ea3417fefa4c38f86313e27b55619446331bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446375"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001521"
 ---
 # <a name="informationprotectionlabel-evaluateapplication"></a>Информатионпротектионлабел: Евалуатеаппликатион
 
@@ -44,9 +44,9 @@ ms.locfileid: "42446375"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Информатионпротектионполици. Read            |
+| Делегированные (рабочая или учебная учетная запись)     | InformationProtectionPolicy.Read            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Информатионпротектионполици. Read. ALL        |
+| Для приложений                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -63,7 +63,7 @@ POST /users/{id}/informationProtection/policy/labels/evaluateApplication
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Авторизация | Bearer {токен}. Обязательный.                                                                                                                                             |
 | Content-Type  | application/json. Обязательный.                                                                                                                                           |
-| User — Agent    | Описывает имя вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
+| User — Agent    | Описывает имя вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательный параметр. |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -74,7 +74,7 @@ POST /users/{id}/informationProtection/policy/labels/evaluateApplication
 | контентинфо     | [контентинфо](../resources/contentinfo.md)         | Предоставляет подробные сведения о формате содержимого, состоянии контента и существующих [метаданных](../resources/keyvaluepair.md) в виде пар "ключ-значение". |
 | лабелингоптионс | [лабелингоптионс](../resources/labelingoptions.md) | Предоставляет сведения о желаемом состоянии контента.                                                                         |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект коллекции [информатионпротектионактион](../resources/informationprotectionaction.md) в тексте отклика.
 
@@ -250,3 +250,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

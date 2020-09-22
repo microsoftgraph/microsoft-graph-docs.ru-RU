@@ -3,14 +3,14 @@ title: Перечисление объектов iosStoreApp
 description: Список свойств и связей объектов iosStoreApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 64d4f0385847b98efbb2a74b791674cee0eb70a1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 33824f03e3b39b27eb6261522fbb1f2476a59118
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43394595"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001038"
 ---
 # <a name="list-iosstoreapps"></a>Перечисление объектов iosStoreApp
 
@@ -43,13 +43,13 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [iosStoreApp](../resources/intune-apps-iosstoreapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1529
+Content-Length: 1594
 
 {
   "value": [
@@ -95,6 +95,8 @@ Content-Length: 1529
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "bundleId": "Bundle Id value",
       "appStoreUrl": "https://example.com/appStoreUrl/",
       "applicableDeviceType": {
@@ -115,6 +117,9 @@ Content-Length: 1529
   ]
 }
 ```
+
+
+
 
 
 

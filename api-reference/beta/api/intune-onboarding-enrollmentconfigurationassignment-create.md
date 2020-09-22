@@ -3,14 +3,14 @@ title: Создание объекта enrollmentConfigurationAssignment
 description: Создание объекта enrollmentConfigurationAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0dca3b38d73dc8f3d2906630fdd4069d66c8e192
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 1f37ecd9ae837c0e2c6adb42d4f145fc22dcbbc5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791800"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000030"
 ---
 # <a name="create-enrollmentconfigurationassignment"></a>Создание объекта enrollmentConfigurationAssignment
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -103,6 +103,9 @@ Content-Length: 438
   "sourceId": "Source Id value"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Перечисление объектов androidStoreApp
 description: Список свойств и связей объектов androidStoreApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 32e157b37210953aafd9019eece16c37a7ed7349
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 32a963582e5ab8626458b6f34d21f0f3af179f02
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43421769"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001192"
 ---
 # <a name="list-androidstoreapps"></a>Перечисление объектов androidStoreApp
 
@@ -43,13 +43,13 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [androidStoreApp](../resources/intune-apps-androidstoreapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1615
+Content-Length: 1680
 
 {
   "value": [
@@ -95,6 +95,8 @@ Content-Length: 1615
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "packageId": "Package Id value",
       "appIdentifier": "App Identifier value",
       "appStoreUrl": "https://example.com/appStoreUrl/",
@@ -119,6 +121,9 @@ Content-Length: 1615
   ]
 }
 ```
+
+
+
 
 
 

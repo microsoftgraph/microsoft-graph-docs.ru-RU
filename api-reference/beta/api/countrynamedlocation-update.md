@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 797159a390de07cef167b9f49299d103615f35f2
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 08c702475388d55a4964d6eadd14a75e12394360
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681126"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002634"
 ---
 # <a name="update-countrynamedlocation"></a>Обновление Каунтринамедлокатион
 
@@ -51,9 +51,9 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|каунтриесандрегионс|Коллекция объектов string|Список стран и/или регионов в формате из двух букв, заданных в стандарте ISO 3166-2.|
+|каунтриесандрегионс|Коллекция String|Список стран и/или регионов в формате из двух букв, заданных в стандарте ISO 3166-2.|
 |displayName|String|Удобное для человека имя расположения.|
-|инклудеункновнкаунтриесандрегионс|Логический|Значение, `true` Если IP-адреса, которые не сопоставляются со страной или регионом, должны быть включены в именованное расположение.|
+|инклудеункновнкаунтриесандрегионс|Boolean|Значение, `true` Если IP-адреса, которые не сопоставляются со страной или регионом, должны быть включены в именованное расположение.|
 
 ## <a name="response"></a>Отклик
 
@@ -100,7 +100,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 
@@ -123,3 +123,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

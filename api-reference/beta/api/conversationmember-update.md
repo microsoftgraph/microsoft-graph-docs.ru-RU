@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cb67a3ec07a7f22d40beea9d9831ea486e338ebe
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: f190e16094d2c0c1ea383ae2ff982812654759ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091391"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002711"
 ---
 # <a name="update-conversationmember"></a>Обновление Конверсатионмембер
 
@@ -32,7 +32,7 @@ ms.locfileid: "45091391"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| В teams: Теаммембер. ReadWrite. ALL. В каналах: Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений| В teams: Теаммембер. ReadWrite. ALL. В каналах: Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL. |
+|Приложение| В teams: Теаммембер. ReadWrite. ALL. В каналах: Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -46,7 +46,7 @@ PATCH /teams/{id}/channels/{id}/members/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
@@ -119,3 +119,5 @@ Content-length: 475
   "email": null
 }
 ```
+
+

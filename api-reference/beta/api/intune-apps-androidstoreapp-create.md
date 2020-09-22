@@ -3,14 +3,14 @@ title: Создание объекта androidStoreApp
 description: Создание объекта androidStoreApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c3b3b48bd4180769ee3e0ce596ce71a178d6a868
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: de34925a6821394c1d2b0b525004190ed2f4b37d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791164"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001262"
 ---
 # <a name="create-androidstoreapp"></a>Создание объекта androidStoreApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "46791164"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,10 +43,10 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта androidStoreApp в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта androidStoreApp.
@@ -71,6 +71,8 @@ POST /deviceAppManagement/mobileApps
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседингаппкаунт|Int32|Общее количество приложений, которые напрямую или косвенно заменяют данное приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседедаппкаунт|Int32|Общее число приложений, для которых это приложение напрямую или косвенно заменяется. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |packageId|String|Идентификатор пакета.|
 |appIdentifier|String|Имя удостоверения.|
 |appStoreUrl|String|URL-адрес магазина приложений для Android.|
@@ -88,7 +90,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1230
+Content-length: 1287
 
 {
   "@odata.type": "#microsoft.graph.androidStoreApp",
@@ -113,6 +115,8 @@ Content-length: 1230
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "packageId": "Package Id value",
   "appIdentifier": "App Identifier value",
   "appStoreUrl": "https://example.com/appStoreUrl/",
@@ -141,7 +145,7 @@ Content-length: 1230
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1402
+Content-Length: 1459
 
 {
   "@odata.type": "#microsoft.graph.androidStoreApp",
@@ -169,6 +173,8 @@ Content-Length: 1402
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "packageId": "Package Id value",
   "appIdentifier": "App Identifier value",
   "appStoreUrl": "https://example.com/appStoreUrl/",
@@ -191,6 +197,9 @@ Content-Length: 1402
   }
 }
 ```
+
+
+
 
 
 

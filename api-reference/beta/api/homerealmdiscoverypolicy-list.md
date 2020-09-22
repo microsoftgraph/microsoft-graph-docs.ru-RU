@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 04d7d427da71a22aaf818249dee5035cc6f2655d
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 9db2a313c24cefbfbb44d4d3e27efacf70210781
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916525"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001759"
 ---
 # <a name="list-homerealmdiscoverypolicies"></a>Перечисление типов ресурсов homeRealmDiscoveryPolicy
 
@@ -40,7 +40,7 @@ GET policies/homeRealmDiscoveryPolicies
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры `$expand`запроса `$filter`, `$select` и `$top` OData для настройки отклика. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters). При использовании `$expand` убедитесь, что приложение запрашивает разрешения на чтение развернутых объектов.
+Этот метод поддерживает `$expand` `$filter` `$select` Параметры запроса, и `$top` OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters). При использовании `$expand` Убедитесь, что приложение запрашивает разрешения на чтение развернутых объектов.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,11 +48,11 @@ GET policies/homeRealmDiscoveryPolicies
 |:----------|:----------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [хомереалмдисковериполици](../resources/homerealmdiscoverypolicy.md) в тексте отклика.
 
@@ -126,3 +126,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

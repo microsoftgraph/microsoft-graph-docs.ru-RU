@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: cb210affa5d98bdbc9a5cd012adc20a5c4ac49ea
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 17b1b6353c02633fbecdb8d480cb6f1411b31f40
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427090"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002484"
 ---
 # <a name="update-educationassignmentresource"></a>Обновление Едукатионассигнментресаурце
 
@@ -48,7 +48,7 @@ PATCH /education/classes/{id}/assignments/{id}/resources/{id}
 |дистрибутефорстудентворк|Boolean| Указывает, следует ли копировать этот ресурс в объект ресурса каждого учащегося при публикации назначения.|
 |resource|едукатионресаурце| Объект Resource. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [едукатионассигнментресаурце](../resources/educationassignmentresource.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -67,7 +67,7 @@ Content-length: 822
 }
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -123,3 +123,5 @@ Content-length: 832
   "suppressions": []
 }
 -->
+
+

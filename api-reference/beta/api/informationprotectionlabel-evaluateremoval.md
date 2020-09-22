@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1554c3caa38a79d5638ae4e9c1fad56f5457508a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f8ebb93f02216f0db9d04130e8ba3b5ba07f5ea7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446357"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001486"
 ---
 # <a name="informationprotectionlabel-evaluateremoval"></a>Информатионпротектионлабел: Евалуатеремовал
 
@@ -35,9 +35,9 @@ ms.locfileid: "42446357"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Информатионпротектионполици. Read            |
+| Делегированные (рабочая или учебная учетная запись)     | InformationProtectionPolicy.Read            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Информатионпротектионполици. Read. ALL        |
+| Для приложений                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ POST /informationprotection/policy/labels/evaluateRemoval
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Авторизация | Bearer {токен}. Обязательный.                                                                                                                                                         |
 | Content-Type  | application/json. Обязательный.                                                                                                                                                       |
-| User — Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
+| User — Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательный параметр. |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -65,7 +65,7 @@ POST /informationprotection/policy/labels/evaluateRemoval
 | довнградежустификатион | [довнградежустификатион](../resources/downgradejustification.md) | Обоснование, которое должно быть предоставлено логикой пользователя или приложения.                                                               |
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект коллекции [информатионпротектионактион](../resources/informationprotectionaction.md) в тексте отклика. [Объект информатионпротектионактион](../resources/informationprotectionaction.md) будет содержать объект [метадатаактион](../resources/metadataaction.md) , который информирует приложение о том, какие метаданные необходимо удалить. 
 
@@ -202,3 +202,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,14 +3,14 @@ title: Get deviceEnrollmentPlatformRestrictionsConfiguration
 description: Чтение свойств и связей объекта deviceEnrollmentPlatformRestrictionsConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f1815dc3ba58a4fbed83ccd139e040589831474
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: b0fad92639f8ecc18fa04b78dac47c6e9d423b55
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178922"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000156"
 ---
 # <a name="get-deviceenrollmentplatformrestrictionsconfiguration"></a>Get deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -40,19 +40,19 @@ ms.locfileid: "44178922"
 GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3178
+Content-Length: 3570
 
 {
   "value": {
@@ -94,6 +94,16 @@ Content-Length: 3178
       ]
     },
     "windowsRestriction": {
+      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+      "platformBlocked": true,
+      "personalDeviceEnrollmentBlocked": true,
+      "osMinimumVersion": "Os Minimum Version value",
+      "osMaximumVersion": "Os Maximum Version value",
+      "blockedManufacturers": [
+        "Blocked Manufacturers value"
+      ]
+    },
+    "windowsHomeSkuRestriction": {
       "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
       "platformBlocked": true,
       "personalDeviceEnrollmentBlocked": true,
@@ -156,6 +166,9 @@ Content-Length: 3178
   }
 }
 ```
+
+
+
 
 
 

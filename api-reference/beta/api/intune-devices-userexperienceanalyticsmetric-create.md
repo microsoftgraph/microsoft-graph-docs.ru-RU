@@ -3,14 +3,14 @@ title: Создание Усерекспериенцеаналитиксметр
 description: Создание нового объекта Усерекспериенцеаналитиксметрик.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09e33fdf896dba3e58366ee594aa20d94de5aa12
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: b145e81613c167bd70745df77c4db976b393250b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176080"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000639"
 ---
 # <a name="create-userexperienceanalyticsmetric"></a>Создание Усерекспериенцеаналитиксметрик
 
@@ -46,23 +46,23 @@ POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytics
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Усерекспериенцеаналитиксметрик в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Усерекспериенцеаналитиксметрик.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор метрики аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор метрики аналитики взаимодействия с пользователем.|
 |значение|Двойное с плавающей точкой|Значение метрики аналитики взаимодействия с пользователем.|
-|устройств|Строка|Единица измерения показателя взаимодействия с пользователем.|
+|устройств|String|Единица измерения показателя взаимодействия с пользователем.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксметрик](../resources/intune-devices-userexperienceanalyticsmetric.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -95,6 +95,9 @@ Content-Length: 177
   "unit": "Unit value"
 }
 ```
+
+
+
 
 
 

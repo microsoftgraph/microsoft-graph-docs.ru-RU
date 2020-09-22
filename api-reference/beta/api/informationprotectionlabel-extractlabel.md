@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6836684144cd020e1d1d164f1d14a2b166dce067
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6ac5cd943f249e52f488819cd86b40854458ae6d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446347"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001483"
 ---
 # <a name="informationprotectionlabel-extractlabel"></a>Информатионпротектионлабел: Екстрактлабел
 
@@ -29,9 +29,9 @@ ms.locfileid: "42446347"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Информатионпротектионполици. Read            |
+| Делегированные (рабочая или учебная учетная запись)     | InformationProtectionPolicy.Read            |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Информатионпротектионполици. Read. ALL        |
+| Для приложений                            | InformationProtectionPolicy.Read.All        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,8 +46,8 @@ POST /informationprotection/policy/labels/extractLabel
 | Имя          | Описание                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Авторизация | Bearer {токен}. Обязательный.                                                                                                                                                         |
-| Content-Type  | Content-Type: Application/JSON. Обязательный.                                                                                                                                         |
-| User — Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательное свойство. |
+| Content-Type  | Content-Type: Application/JSON. Обязательно.                                                                                                                                         |
+| User — Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательный параметр. |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -57,7 +57,7 @@ POST /informationprotection/policy/labels/extractLabel
 | :---------- | :----------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
 | контентинфо | [контентинфо](../resources/contentinfo.md) | Предоставляет подробные сведения о формате содержимого, состоянии контента и существующих [метаданных](../resources/keyvaluepair.md) в виде пар "ключ-значение". |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект [информатионпротектионконтентлабел](../resources/informationprotectioncontentlabel.md) в тексте отклика.
 
@@ -185,3 +185,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

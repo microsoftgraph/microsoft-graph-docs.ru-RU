@@ -3,14 +3,14 @@ title: Создание Граупполиципресентатионтекст
 description: Создание нового объекта Граупполиципресентатионтекстбокс.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f14239e2bdb00f728e2d3df31f803c9f44402dd3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0a0acb73bdbab8cdb42d1f78af883407b9b18115
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43408543"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000632"
 ---
 # <a name="create-grouppolicypresentationtextbox"></a>Создание Граупполиципресентатионтекстбокс
 
@@ -43,7 +43,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -62,7 +62,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполиципресентатионтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -100,6 +100,9 @@ Content-Length: 294
   "maxLength": 9
 }
 ```
+
+
+
 
 
 

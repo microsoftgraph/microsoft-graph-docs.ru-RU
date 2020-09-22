@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0cc54c66b9c3df97c97b783f1ae3f8639e7bb71a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 69b052058f4b626646164e7162f8c3508171842f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375905"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002890"
 ---
 # <a name="update-contactfolder"></a>Обновление объекта contactFolder
 
@@ -47,9 +47,9 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 |:---------------|:--------|:----------|
 |displayName|String|Отображаемое имя папки.|
 |parentFolderId|String|Идентификатор родительской папки для папки.|
-|wellKnownName|string|Имя папки, если она является распознаваемой папкой. В `contacts` настоящее время это единственная распознанная папка контактов.|
+|wellKnownName|string|Имя папки, если она является распознаваемой папкой. В настоящее время `contacts` это единственная распознанная папка контактов.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [contactFolder](../resources/contactfolder.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -118,3 +118,5 @@ Content-length: 104
   ]
 }
 -->
+
+

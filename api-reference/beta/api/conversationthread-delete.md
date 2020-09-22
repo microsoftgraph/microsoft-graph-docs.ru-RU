@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0f2d5f157c712ed76ebce77c68ac163236a5fdec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e2692b17a0146826d38a033b4b04e6a1119248f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436414"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002706"
 ---
 # <a name="delete-conversationthread"></a>Удаление объекта conversationThread
 
@@ -40,10 +40,10 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -96,3 +96,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

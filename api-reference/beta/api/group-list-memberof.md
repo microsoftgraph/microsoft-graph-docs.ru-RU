@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 463e35eca28d0f5c52a0d01a9f57a23aa356ff43
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 762b7a5a3c4971d51f40171ed15f2ac9935730a3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872630"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002172"
 ---
 # <a name="list-group-memberof"></a>Перечисление group memberOf
 
@@ -48,7 +48,7 @@ GET /groups/{id}/memberOf
 | Имя | Описание |
 |:---- |:----------- |
 | Авторизация  | Bearer {токен}. Обязательный. |
-| ConsistencyLevel | необязательный. Этот заголовок и `$count` при использовании `$search` `$filter` `$orderby` параметров запроса на приведение,, или OData. Он использует индекс, который может не быть актуальным с последними изменениями объекта. |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`, `$filter`, `$orderby` или с параметрами запросов OData cast. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -116,7 +116,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-all-memberships"></a>Пример 2: получение только количества всех членств
+### <a name="example-2-get-only-a-count-of-all-memberships"></a>Пример 2: Получение только количества участников
 
 #### <a name="request"></a>Запрос
 
@@ -165,7 +165,7 @@ Content-type: text/plain
 394
 
 
-### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a>Пример 3: Использование приведения OData для получения только количества участников группы
+### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a>Пример 3. Использование OData cast для получения только количества участия в группах
 
 #### <a name="request"></a>Запрос
 
@@ -345,3 +345,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

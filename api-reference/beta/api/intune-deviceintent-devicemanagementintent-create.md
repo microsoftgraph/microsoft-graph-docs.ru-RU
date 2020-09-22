@@ -3,14 +3,14 @@ title: Создание Девицеманажементинтент
 description: Создание нового объекта Девицеманажементинтент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 56c68e53ad5e741a207272e223da54a0e2b4d8a6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e2a8e8847e57f9a79367ff848bb02be65ef5ee52
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43328281"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000730"
 ---
 # <a name="create-devicemanagementintent"></a>Создание Девицеманажементинтент
 
@@ -43,7 +43,7 @@ POST /deviceManagement/intents
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -54,16 +54,16 @@ POST /deviceManagement/intents
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор намерения|
-|displayName|Строка|Имя пользователя для данного отображаемого имени|
+|displayName|String|Имя пользователя для данного отображаемого имени|
 |description|String|Описание, заданное пользователем|
 |isAssigned|Boolean|Указывает, назначена ли пользователю задача|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения намерения|
 |templateId|String|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности.|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -107,6 +107,9 @@ Content-Length: 379
   ]
 }
 ```
+
+
+
 
 
 

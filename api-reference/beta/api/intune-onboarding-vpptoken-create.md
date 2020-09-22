@@ -3,14 +3,14 @@ title: Создать VPP токен
 description: Создайте новый объект vppToken.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d217e4b4b299236125027ff4673e871fe4436abe
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: fb9084e4191966b07cbc819ad0f73b9ce7102a13
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791772"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000009"
 ---
 # <a name="create-vpptoken"></a>Создать VPP токен
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/vppTokens
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -54,12 +54,12 @@ POST /deviceAppManagement/vppTokens
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Создается автоматически при создании appleVolumePurchaseProgramToken. Это ключ объекта.|
-|organizationName|String|Организация, связанная с токеном Apple Volume Purchase Program.|
+|organizationName|Строка|Организация, связанная с токеном Apple Volume Purchase Program.|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|Тип программы оптовых покупок, с которой связан заданный токен Apple Volume Purchase Program. Возможные значения: `business`, `education`. Возможные значения: `business`, `education`.|
-|appleId|String|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
+|appleId|Строка|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
 |expirationDateTime|DateTimeOffset|Дата и время завершения срока действия токена Apple Volume Purchase Program.|
 |lastSyncDateTime|DateTimeOffset|Последнее выполнение синхронизации приложения при помощи службы Apple Volume Purchase Program с использованием токена Apple Volume Purchase Program.|
-|токен|String|Строка токена Apple Volume Purchase Program; загрузка выполнена из Apple Volume Purchase Program.|
+|токен|Строка|Строка токена Apple Volume Purchase Program; загрузка выполнена из Apple Volume Purchase Program.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения, связанного с токеном Apple Volume Purchase Program.|
 |состояние|[впптокенстате](../resources/intune-onboarding-vpptokenstate.md)|Текущее состояние токена Apple Volume Purchase Program. Возможные значения: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`. Возможные значения: `unknown`, `valid`, `expired`, `invalid`, `assignedToExternalMDM`, `duplicateLocationId`.|
 |токенактионресултс|Коллекция [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|Коллекция состояний действий, выполняемых с помощью маркера Apple Volume Purchase Program.|
@@ -67,7 +67,7 @@ POST /deviceAppManagement/vppTokens
 |automaticallyUpdateApps|Логическое|Автоматически обновятся все приложения, не только для токена VPP.|
 |countryOrRegion|Строка|Автоматически обновятся все приложения, не только для токена VPP.|
 |dataSharingConsentGranted|Boolean|Разрешение, предоставленное для предоставления общего доступа к данным с помощью программы Apple Volume Purchase Program.|
-|displayName|Строка|Понятное имя маркера, указанного администратором.|
+|displayName|String|Понятное имя маркера, указанного администратором.|
 |локатионнаме|String|Расположение маркера возвращено от Apple VPP.|
 |клаимтокенманажементфромекстерналмдм|Boolean|Согласие администратора, чтобы разрешить управление маркерами из внешних MDM.|
 |roleScopeTagIds|Коллекция String|Идентификаторы тегов области ролей, назначенных этой сущности.|
@@ -156,6 +156,9 @@ Content-Length: 1115
   ]
 }
 ```
+
+
+
 
 
 

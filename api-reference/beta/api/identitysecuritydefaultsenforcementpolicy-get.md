@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9038d009465f685ae6722ce3785499ad21aaf070
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: ce5eb0ab5232540127762bbbc94002273eae0416
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384341"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001584"
 ---
 # <a name="get-identitysecuritydefaultsenforcementpolicy"></a>Получение Идентитисекуритидефаултсенфорцементполици
 
@@ -28,7 +28,7 @@ ms.locfileid: "45384341"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy.Read.All |
+| Для приложений                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,7 @@ GET /policies/identitySecurityDefaultsEnforcementPolicy
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -120,3 +120,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

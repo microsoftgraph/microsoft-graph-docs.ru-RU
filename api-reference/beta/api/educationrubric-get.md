@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e4825a0da4d03b42f85a5dd1582fa9bbe7521b97
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c5454d52d30b6174cfbb5a387fea0d115d4981a4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42425795"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002419"
 ---
 # <a name="get-educationrubric"></a>Получение Едукатионрубрик
 
@@ -20,7 +20,7 @@ ms.locfileid: "42425795"
 
 Получение свойств и связей объекта [едукатионрубрик](../resources/educationrubric.md) .
 
-Обратите внимание, что возвращаемое значение Rubric (`GET /education/me/assignments/{id}/rubric`) является неизменяемой копией исходного Rubric, который существует в разделе `/education/users/{id}/rubrics`. Копия связана с этим конкретным назначением.
+Обратите внимание, что возвращаемое значение Rubric ( `GET /education/me/assignments/{id}/rubric` ) является неизменяемой копией исходного Rubric, который существует в разделе `/education/users/{id}/rubrics` . Копия связана с этим конкретным назначением.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -44,13 +44,13 @@ GET /education/me/rubrics/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [едукатионрубрик](../resources/educationrubric.md) в тексте отклика.
 
@@ -200,3 +200,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 40ed8afa7700bc2fa1639986c336d15130b03a57
-ms.sourcegitcommit: 67433748b69541727185fc1f32ed356718bf6ff1
+ms.openlocfilehash: c3e6ac54c966ef924bf54d7b860b48cfc2e6a034
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45050759"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002777"
 ---
 # <a name="add-conversationmember"></a>Добавление Конверсатионмембер
 
@@ -31,7 +31,7 @@ ms.locfileid: "45050759"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Для приложения| Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -52,7 +52,7 @@ POST /teams/{id}/channels/{id}/members
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |roles|Коллекция строк|Роли этого пользователя.|
-|пользователь;|[user](../resources/user.md)|Пользователь, добавляемый в канал.|
+|user|[user](../resources/user.md)|Пользователь, добавляемый в канал.|
 
 ## <a name="response"></a>Отклик
 
@@ -121,3 +121,5 @@ Content-length: 468
   "email": null
 }
 ```
+
+

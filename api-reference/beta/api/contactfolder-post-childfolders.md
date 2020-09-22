@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 73360e3df950de638a265cbe7c759c2085adaced
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a627bafe2d801c106773b8e5c6e181a2cc1d64d6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375912"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002933"
 ---
 # <a name="create-contactfolder"></a>Создание объекта ContactFolder
 
@@ -42,7 +42,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [ContactFolder](../resources/contactfolder.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
@@ -82,7 +82,7 @@ Content-length: 84
 ---
 
 Предоставьте в тексте запроса описание объекта [contactFolder](../resources/contactfolder.md) в формате JSON.
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -114,3 +114,5 @@ Content-length: 104
   ]
 }
 -->
+
+

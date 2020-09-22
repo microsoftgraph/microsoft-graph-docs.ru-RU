@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 569ecd0c645f5472d52916cb787ffd1b82371b6a
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 23d4813dab54b26b3cb95ad8c833c935a1c59cfe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916536"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001766"
 ---
 # <a name="get-homerealmdiscoverypolicy"></a>Получение Хомереалмдисковериполици
 
@@ -40,19 +40,19 @@ GET /policies/homeRealmDiscoveryPolicies/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры `$expand` запросов `$select` OData и для настройки отклика. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters). При использовании `$expand` убедитесь, что приложение запрашивает разрешения на чтение развернутых объектов.
+Этот метод поддерживает `$expand` `$select` параметры запросов OData и для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters). При использовании `$expand` Убедитесь, что приложение запрашивает разрешения на чтение развернутых объектов.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [хомереалмдисковериполици](../resources/homerealmdiscoverypolicy.md) в тексте отклика.
 
@@ -121,3 +121,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

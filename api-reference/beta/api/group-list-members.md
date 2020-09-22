@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 302d0aa62f078e4209ca59b3fbfcfbb94d692bd9
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: a188f5f9ddbad07456235ccbe53ef9d0680867d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872642"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002167"
 ---
 # <a name="list-group-members"></a>Перечисление участников группы
 
@@ -28,7 +28,7 @@ ms.locfileid: "46872642"
 |:--------------- |:------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All, User.Read.All, Group.Read.All, Directory.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение | Group. Read. ALL, User. Read. ALL, Directory. Read. ALL |
+| Для приложений | Group. Read. ALL, User. Read. ALL, Directory. Read. ALL |
 
 > **Примечание:** Чтобы получить список членов скрытой группы членства, требуется разрешение Member. Read. Hidden.
 
@@ -50,7 +50,7 @@ GET /groups/{id}/members
 | Имя | Описание |
 |:---- |:----------- |
 | Авторизация | Bearer {токен}. Обязательный. |
-| ConsistencyLevel | необязательный. Этот заголовок и `$count` при использовании `$search` `$filter` `$orderby` параметров запроса на приведение,, или OData. Он использует индекс, который может не быть актуальным с последними изменениями объекта. |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`, `$filter`, `$orderby` или с параметрами запросов OData cast. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -350,3 +350,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

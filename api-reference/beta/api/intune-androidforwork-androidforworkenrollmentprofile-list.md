@@ -3,14 +3,14 @@ title: Перечисление объектов androidForWorkEnrollmentProfile
 description: Список свойств и связей объектов androidForWorkEnrollmentProfile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f1ea54fab0528f91a91431db813f3e87309f99a6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3a472316e50d3479b6b00dfeb813669d7ec1ba51
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43418168"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001321"
 ---
 # <a name="list-androidforworkenrollmentprofiles"></a>Перечисление объектов androidForWorkEnrollmentProfile
 
@@ -43,13 +43,13 @@ GET /deviceManagement/androidForWorkEnrollmentProfiles
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -90,6 +90,9 @@ Content-Length: 765
   ]
 }
 ```
+
+
+
 
 
 

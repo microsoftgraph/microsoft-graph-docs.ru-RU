@@ -3,14 +3,14 @@ title: Создание Девицеманажементколлектионсе
 description: Создание нового объекта Девицеманажементколлектионсеттингинстанце.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0ecb491c5a7ff0a11a00f72cfbcf9631e8312088
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 099c8b5da5664cb36447f073dec4e814c286249e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43428453"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000765"
 ---
 # <a name="create-devicemanagementcollectionsettinginstance"></a>Создание Девицеманажементколлектионсеттингинстанце
 
@@ -46,7 +46,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -62,7 +62,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементколлектионсеттингинстанце](../resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -95,6 +95,9 @@ Content-Length: 210
   "valueJson": "Value Json value"
 }
 ```
+
+
+
 
 
 

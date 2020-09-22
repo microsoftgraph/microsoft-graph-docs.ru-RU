@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: namkedia
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f019f35f8719c283038b9172757109b5e4419628
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 28c3f85999e6482d2a22cefb1491bfb4ff31dde0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566781"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001640"
 ---
 # <a name="list-availableprovidertypes"></a>Список Аваилаблепровидертипес
 
@@ -48,7 +48,7 @@ GET /identityProviders/availableProviderTypes
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -119,3 +119,5 @@ Content-Type: application/json
   ]
 }
 ```
+
+

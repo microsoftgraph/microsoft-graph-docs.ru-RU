@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fe33a3ada951a87ea82f6f4875ab11843e9971b8
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 46d86df82c5cf62f7b4be3022db499185c167745
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895806"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002025"
 ---
 # <a name="group-removefavorite"></a>group: removeFavorite
 
@@ -41,7 +41,7 @@ POST /groups/{id}/removeFavorite
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Prefer | return=minimal. Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`. Необязательный параметр.  | 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -98,3 +98,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

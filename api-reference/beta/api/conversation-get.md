@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 216ac565f4002c1a5949c873c98bf06d5d886905
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5839c54dea464e61cea282fef7ca0d8023ec7305
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436617"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002818"
 ---
 # <a name="get-conversation"></a>Получение беседы
 
@@ -44,7 +44,7 @@ GET /groups/{id}/conversations/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [conversation](../resources/conversation.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -110,3 +110,5 @@ Content-length: 201
   ]
 }
 -->
+
+

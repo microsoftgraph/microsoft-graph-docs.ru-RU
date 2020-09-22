@@ -3,14 +3,14 @@ title: Создание Ндесконнектор
 description: Создание нового объекта Ндесконнектор.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: df9dce7a6157ae652cc99d5ac57df34db2c8cce6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c9e5700c4637d9581bcf71ee18e9e8c82772ceee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43342937"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000856"
 ---
 # <a name="create-ndesconnector"></a>Создание Ндесконнектор
 
@@ -43,7 +43,7 @@ POST /deviceManagement/ndesConnectors
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -56,11 +56,11 @@ POST /deviceManagement/ndesConnectors
 |id|String|Ключ соединителя NDES Connector.|
 |lastConnectionDateTime|DateTimeOffset|Время последнего подключения для соединителя NDES Connector|
 |state|[ндесконнекторстате](../resources/intune-deviceconfig-ndesconnectorstate.md)|Состояние соединителя NDES Connector. Возможные значения: `none`, `active`, `inactive`.|
-|displayName|Строка|Понятное имя соединителя NDES Connector.|
+|displayName|String|Понятное имя соединителя NDES Connector.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [ндесконнектор](../resources/intune-deviceconfig-ndesconnector.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -95,6 +95,9 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 32d26a167f52ab57835a1c37acf6f2054c1ce91e
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 92c8d2c073e05539f313618c99590a772d14a8ae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123946"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001815"
 ---
 # <a name="update-grouplifecyclepolicy"></a>Update groupLifecyclePolicy
 
@@ -123,3 +123,5 @@ Content-length: 146
   ]
 }
 -->
+
+

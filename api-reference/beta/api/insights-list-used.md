@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 239a479bb8540ebfe7f6ffabf270d0c41ebc5b12
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: aa18bac40b4fe7cc7b509e2948c3134ccaa77386
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427125"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001441"
 ---
 # <a name="list-used"></a>Список "Использованные"
 
@@ -63,7 +63,7 @@ ms.locfileid: "45427125"
   ```
 
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика:
 
 - Используйте `$filter` параметр запроса для фильтрации используемых элементов. Например, на основе **типа**:
@@ -71,7 +71,7 @@ ms.locfileid: "45427125"
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-- Используется `$filter` для фильтрации используемых элементов на основе **контаинертипе**:
+- Используется `$filter` для фильтрации используемых элементов на основе  **контаинертипе**:
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
@@ -90,7 +90,7 @@ ms.locfileid: "45427125"
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Accept  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -112,7 +112,7 @@ ms.locfileid: "45427125"
   }
 }
 ```
-Более подробную информацию можно узнать в статье [Настройка конфиденциальности Insights](/graph/insights-customize-item-insights-privacy.md). 
+Дополнительные сведения см. в статье [Настройка конфиденциальности для аналитики](/graph/insights-customize-item-insights-privacy.md). 
 
 ## <a name="example"></a>Пример
 
@@ -336,3 +336,5 @@ Content-type: application/json
     ]
 }
 ```
+
+

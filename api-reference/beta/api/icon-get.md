@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: 4ffa039d326c243dbabc9673a15711cea775e26a
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b9250047be24afd5e4946d076e46338336fa1b84
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807313"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001710"
 ---
 # <a name="get-icon"></a>Получение объекта Icon
 
@@ -45,7 +45,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукикон](../resources/workbookicon.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -88,3 +88,5 @@ Content-length: 39
   "suppressions": []
 }
 -->
+
+

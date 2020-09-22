@@ -3,14 +3,14 @@ title: Действие completeSignup
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 053333834030c69358e80b4de9d05188f04d10b7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6c171331da0c1ff100bfbaedb0e904973f0e5e96
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43418138"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001311"
 ---
 # <a name="completesignup-action"></a>Действие completeSignup
 
@@ -43,7 +43,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/completeSign
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/completeSign
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|enterpriseToken|String|Н/Д|
+|enterpriseToken|String|Пока не задокументировано.|
 
 
 
@@ -80,6 +80,9 @@ Content-length: 51
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

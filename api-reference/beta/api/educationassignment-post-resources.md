@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 54ea709bea62269814a65138ae0cf1e665199a55
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e432d4521ffe871de75be4ae8764953d99a3abc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427370"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002557"
 ---
 # <a name="create-educationassignmentresource"></a>Создание Едукатионассигнментресаурце
 
@@ -40,11 +40,11 @@ POST /education/classes/{id}/assignments/{id}/resources
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [едукатионассигнментресаурце](../resources/educationassignmentresource.md) в формате JSON.
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [едукатионассигнментресаурце](../resources/educationassignmentresource.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -70,8 +70,8 @@ Content-length: 212
 
 ```
 В тексте запроса добавьте представление объекта [едукатионассигнментресаурце](../resources/educationassignmentresource.md) в формате JSON.
-##### <a name="response"></a>Ответ
-Ниже приведен пример отклика. 
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -109,3 +109,5 @@ Content-length: 229
   "suppressions": []
 }
 -->
+
+

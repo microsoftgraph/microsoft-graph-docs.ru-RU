@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d154f4c46eaeaa84807966b3f78947e09ba01be0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: edcc71fcacf96dacdd9200e48f2ddedbbcda381e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427342"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002536"
 ---
 # <a name="remove-educationcategory"></a>Удаление Едукатионкатегори
 
@@ -40,11 +40,11 @@ DELETE /education/classes/{id}/assignments/{id}/categories/{id}/$ref
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -59,7 +59,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/1900
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -84,3 +84,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

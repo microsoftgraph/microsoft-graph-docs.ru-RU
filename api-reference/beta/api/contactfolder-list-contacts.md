@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5d3013bef0b24e48c850af9b664d829d6ce792c4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fa660186ea9cdb34ba6586a1e932f740d51e5d26
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381926"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002935"
 ---
 # <a name="list-contacts"></a>Список контактов
 
@@ -45,10 +45,10 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Contact](../resources/contact.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/me/contactFolders/{id}/contacts
 
 ---
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -117,3 +117,5 @@ Content-length: 263
   ]
 }
 -->
+
+

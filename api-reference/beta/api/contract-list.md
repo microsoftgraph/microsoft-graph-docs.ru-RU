@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 275decd223bd160e05da013c29d8975baf1701b0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 62ea67c2117cc21348207d8e3f05bb9f85fa628f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375890"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002831"
 ---
 # <a name="list-contracts"></a>Список контрактов
 
@@ -40,7 +40,7 @@ GET /contracts
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика. 
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа. 
 
 > Фильтрация поддерживается для customerId, Дефаултдомаиннаме и displayName.
 
@@ -54,7 +54,7 @@ GET /contracts
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Contract](../resources/contract.md) в тексте отклика.
 
@@ -124,3 +124,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 0c88e8ae48aade64fb5f219008e277063dae46f1
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 8df7156e9833ba4e9b649749c20b6426cb930535
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810883"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002487"
 ---
 # <a name="get-educationcategory"></a>Получение Едукатионкатегори
 
@@ -46,11 +46,11 @@ GET /education/classes/{id}/assignmentCategories/{id}
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [едукатионкатегори](../resources/educationcategory.md) в тексте отклика.
 
@@ -104,3 +104,5 @@ Content-length: 85
   "suppressions": []
 }
 -->
+
+

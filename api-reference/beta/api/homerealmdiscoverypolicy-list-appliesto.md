@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hpsin
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6160a43a0d07e8c3da821898093e3531cb84bebe
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 18fb3db2a687445c8084b1f06f74b709c5a8d6b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916495"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001731"
 ---
 # <a name="list-appliesto"></a>Список appliesTo
 
@@ -40,7 +40,7 @@ GET /policies/homeRealmDiscoveryPolicies/{id}/appliesTo
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры `$select` запросов `$top` OData и для настройки отклика. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select` `$top` параметры запросов OData и для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,11 +48,11 @@ GET /policies/homeRealmDiscoveryPolicies/{id}/appliesTo
 |:----------|:----------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
@@ -70,7 +70,7 @@ GET /policies/homeRealmDiscoveryPolicies/{id}/appliesTo
 GET https://graph.microsoft.com/beta/homeRealmDiscoveryPolicies/{id}/appliesTo
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -106,3 +106,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

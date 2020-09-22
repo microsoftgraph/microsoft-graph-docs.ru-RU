@@ -3,14 +3,14 @@ title: Получение deviceEnrollmentLimitConfiguration
 description: Чтение свойств и связей объекта deviceEnrollmentLimitConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 77891153bf4e85089a48f6ccbd94932baaf4850e
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 1c2ff721f4a51fcc5629043e231fd7cb41ab94f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177753"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000205"
 ---
 # <a name="get-deviceenrollmentlimitconfiguration"></a>Получение deviceEnrollmentLimitConfiguration
 
@@ -40,19 +40,19 @@ ms.locfileid: "44177753"
 GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [deviceEnrollmentLimitConfiguration](../resources/intune-onboarding-deviceenrollmentlimitconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -87,6 +87,9 @@ Content-Length: 482
   }
 }
 ```
+
+
+
 
 
 

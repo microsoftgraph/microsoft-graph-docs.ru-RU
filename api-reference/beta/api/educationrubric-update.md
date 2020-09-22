@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fced432aba9e0127651e1af751baa86354464847
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4b574b730a636e451328db9dc5341345b103fc82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42425788"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002396"
 ---
 # <a name="update-educationrubric"></a>Обновление Едукатионрубрик
 
@@ -20,7 +20,7 @@ ms.locfileid: "42425788"
 
 Обновление свойств объекта [едукатионрубрик](../resources/educationrubric.md) .
 
-Обновление Rubric, присоединенного к назначению`PATCH /education/me/assignments/{id}/rubric`(), возможно только до публикации назначения, а то, что Обновлено, фактически является исходной Rubric, которая `/education/users/{id}/rubrics`существует в. После публикации назначения выполняется неизменяемая копия Rubric, которая присоединяется к определенному назначению. Этот Rubric можно получить с помощью [Get/едукатион/ме/ассигнментс/{ИД}/рубрик](educationrubric-get.md), но его невозможно обновить.
+Обновление Rubric, присоединенного к назначению ( `PATCH /education/me/assignments/{id}/rubric` ), возможно только до публикации назначения, а то, что Обновлено, фактически является исходной Rubric, которая существует в `/education/users/{id}/rubrics` . После публикации назначения выполняется неизменяемая копия Rubric, которая присоединяется к определенному назначению. Этот Rubric можно получить с помощью [Get/едукатион/ме/ассигнментс/{ИД}/рубрик](educationrubric-get.md), но его невозможно обновить.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -45,7 +45,7 @@ PATCH /education/me/assignments/{id}/rubric
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -53,13 +53,13 @@ PATCH /education/me/assignments/{id}/rubric
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|итембоди|Описание этого Rubric.|
+|description|itemBody|Описание этого Rubric.|
 |displayName|String|Имя этого Rubric.|
 |снижения|едукатионассигнментградетипе|Указывает, есть ли у этого Rubric баллы.|
 |тонов|Коллекция Рубриклевел|Коллекция уровней, составляющих данный Rubric.|
 |являются|Коллекция Рубриккуалити|Коллекция качеств, составляющих этот Rubric.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [едукатионрубрик](../resources/educationrubric.md) в тексте отклика.
 
@@ -199,3 +199,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

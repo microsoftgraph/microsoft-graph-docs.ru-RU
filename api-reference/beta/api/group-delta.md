@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 82f6f71283b9bac6b39957a4d35d9bbdc984d7d4
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 1232f190bc9a766b2c1cae23b0b851a0a3e59f8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123771"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002256"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -74,7 +74,7 @@ GET /groups/delta
 
 Не указывайте текст запроса для этого метода.
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект коллекции [group](../resources/group.md) в тексте отклика. Ответ также включает маркер состояния, который является `nextLink` URL-адресом или `deltaLink` URL-адресом.
 
@@ -312,3 +312,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: a900c16e96d4cc91846de86b757987032ba2fd18
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1d5686f90bf99593e3a4fb8fcfb514b1343b841b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42426999"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002428"
 ---
 # <a name="remove-teacher"></a>Удаление преподавателя
 
@@ -48,7 +48,7 @@ DELETE /education/classes/{id}/teachers/{userId}/$ref
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content` и пустое тело отклика.
 
@@ -109,3 +109,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

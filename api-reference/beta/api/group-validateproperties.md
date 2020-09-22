@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b08928e4eab4ae6feabebb66fa590c3505ae9112
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 50d5b4c7205611e6fb23bc46f6728b14000588b4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895771"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001893"
 ---
 # <a name="group-validateproperties"></a>Группа: Валидатепропертиес
 
@@ -53,7 +53,7 @@ POST /groups/{id}/validateProperties
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|Строка| Отображаемое имя группы, которую требуется проверить. Свойство не обязательно должно быть обязательным. Однако необходимо указать по крайней мере одно свойство (displayName или mailNickname). |
+|displayName|String| Отображаемое имя группы, которую требуется проверить. Свойство не обязательно должно быть обязательным. Однако необходимо указать по крайней мере одно свойство (displayName или mailNickname). |
 |mailNickname|String| Псевдоним почты для группы, которую требуется проверить. Свойство не обязательно должно быть обязательным. Однако необходимо указать по крайней мере одно свойство (displayName или mailNickname). |
 |онбехалфофусерид|Guid| Идентификатор объекта пользователя, который олицетворяет при вызове API. Результаты проверки предназначены для атрибутов и ролей Онбехалфофусерид. |
 
@@ -112,7 +112,7 @@ HTTP/1.1 204 No Content
 
 Это пример запроса с ошибками проверки.
 
-### <a name="request"></a>Запросить
+### <a name="request"></a>Запрос
 ``` http
 POST https://graph.microsoft.com/beta/groups/{id}/validateProperties
 Content-type: application/json
@@ -160,3 +160,5 @@ Content-length: 223
   "suppressions": [
   ]
 }-->
+
+

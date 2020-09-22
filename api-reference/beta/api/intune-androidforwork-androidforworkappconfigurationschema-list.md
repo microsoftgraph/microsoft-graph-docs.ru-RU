@@ -3,14 +3,14 @@ title: Перечисление объектов androidForWorkAppConfigurationS
 description: Список свойств и связей объектов androidForWorkAppConfigurationSchema.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a040aceb93e561cca26dc6bdb8eed4405612f2d4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cdc9aeb2ba6a17b1c58908383e2a4da18fa9c82b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43418371"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001402"
 ---
 # <a name="list-androidforworkappconfigurationschemas"></a>Перечисление объектов androidForWorkAppConfigurationSchema
 
@@ -43,13 +43,13 @@ GET /deviceManagement/androidForWorkAppConfigurationSchemas
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -99,6 +99,9 @@ Content-Length: 977
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6ad18eb72988318a8639c1d48120d2ba3320064f
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 47a372872e849437c2367a1de6744c9b1b15e173
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123729"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001906"
 ---
 # <a name="delete-grouplifecyclepolicy"></a>Удаление groupLifecyclePolicy
 
@@ -48,7 +48,7 @@ DELETE /groupLifecyclePolicies/{id}
 Не указывайте текст запроса для этого метода.
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -102,3 +102,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

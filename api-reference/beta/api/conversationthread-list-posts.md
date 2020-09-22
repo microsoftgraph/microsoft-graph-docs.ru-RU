@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b7df6ffb23e812dc9f950a976c66ce8a10a8a1b5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 697b1b77e5429f2a1f6f8d9117938c6fac3f3786
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436323"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002700"
 ---
 # <a name="list-posts"></a>Список публикаций
 
@@ -27,7 +27,7 @@ ms.locfileid: "42436323"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group. ReadWrite. ALL, Group. Read. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group. ReadWrite. ALL, Group. Read. ALL |
+|Приложение | Group. ReadWrite. ALL, Group. Read. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,10 +43,10 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Post](../resources/post.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -137,3 +137,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 754a45ece52db1a89c3bf0a1586d52eed332641e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 886c0f0e11032f758bf9004e2d42d7c46da5a830
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42436603"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002802"
 ---
 # <a name="create-thread"></a>Создание цепочки беседы
 
@@ -46,7 +46,7 @@ POST /groups/{id}/conversations/{id}/threads
 ## <a name="request-body"></a>Тело запроса
 В теле запроса укажите описание объекта [ConversationThread](../resources/conversationthread.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвратит код отклика `201 Created` и объект [ConversationThread](../resources/conversationthread.md) в теле отклика.
 
@@ -119,3 +119,5 @@ Content-length: 346
   ]
 }
 -->
+
+

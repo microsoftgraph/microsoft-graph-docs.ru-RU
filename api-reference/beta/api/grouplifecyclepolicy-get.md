@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b8f8283b88787de2b9a67555d78718753314449e
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 9572c7e86d022ba5532425673b11422d7d921a07
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124030"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001878"
 ---
 # <a name="get-grouplifecyclepolicy"></a>Получение groupLifecyclePolicy
 
@@ -46,7 +46,7 @@ GET /groupLifecyclePolicies/{id}
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) в теле отклика.
 ## <a name="example"></a>Пример
 
@@ -109,3 +109,5 @@ Content-length: 174
   ]
 }
 -->
+
+

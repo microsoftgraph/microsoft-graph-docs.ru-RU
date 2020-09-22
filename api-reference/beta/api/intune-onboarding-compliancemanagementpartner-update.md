@@ -3,14 +3,14 @@ title: Обновление Комплианцеманажементпартне
 description: Обновление свойств объекта Комплианцеманажементпартнер.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 349932132867d00708a400e82465c664db551f97
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: f3cec83fb4625dd9f4b0b26c23cb41207db7d25b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791835"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000240"
 ---
 # <a name="update-compliancemanagementpartner"></a>Обновление Комплианцеманажементпартнер
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartne
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -56,7 +56,7 @@ PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartne
 |id|String|Идентификатор объекта|
 |lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пакета пульса после того, как администратор направил соответствие партнеру управления соответствием|
 |partnerState|[девицеманажементпартнертенантстате](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|displayName|Строка|Отображаемое имя партнера|
+|displayName|String|Отображаемое имя партнера|
 |макосонбоардед|Boolean|Партнер, подключенный к устройствам Mac.|
 |виндовсонбоардед|Boolean|Партнер, направленный на устройства с Windows.|
 |андроидонбоардед|Boolean|Партнер, направленный на устройства с Android.|
@@ -191,6 +191,9 @@ Content-Length: 1993
   ]
 }
 ```
+
+
+
 
 
 

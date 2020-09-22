@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 780d7451a2321d361c28c82eb3b0cae535fa94e2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 95447991b0434528a266c807cff49978b847ec3e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42425690"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002340"
 ---
 # <a name="remove-educationuser-from-an-educationschool"></a>Удаление educationUser из educationSchool.
 
@@ -28,7 +28,7 @@ ms.locfileid: "42425690"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | EduRoster.ReadWrite.All                     |
+| Приложение                            | EduRoster.ReadWrite.All                     |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,11 +43,11 @@ DELETE /education/schools/{id}/users/{userId}/$ref
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content` и пустое тело отклика.
 
@@ -108,3 +108,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: Удаление Андроидманажедстореаппконфиг
 description: Удаляет объект Андроидманажедстореаппконфигуратионсчема.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 92d468ebf045f5948ad3f8154d46c4cf8c7d2d61
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 28e6dedfa1e173f0b0b88516cec8ab94c5da4a31
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43417890"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48001297"
 ---
 # <a name="delete-androidmanagedstoreappconfigurationschema"></a>Удаление Андроидманажедстореаппконфигуратионсчема
 
@@ -43,13 +43,13 @@ DELETE /deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidMana
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -60,11 +60,14 @@ DELETE /deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidMana
 DELETE https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidManagedStoreAppConfigurationSchemaId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

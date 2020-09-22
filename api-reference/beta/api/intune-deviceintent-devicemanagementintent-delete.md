@@ -3,14 +3,14 @@ title: Удаление Девицеманажементинтент
 description: Удаляет объект Девицеманажементинтент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3a95e275f320956279c3655791dcb9b331ca9b4b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fe79795dd4d11ce60ce34cb5fd1ff88701f867ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43328055"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000723"
 ---
 # <a name="delete-devicemanagementintent"></a>Удаление Девицеманажементинтент
 
@@ -43,13 +43,13 @@ DELETE /deviceManagement/intents/{deviceManagementIntentId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -60,11 +60,14 @@ DELETE /deviceManagement/intents/{deviceManagementIntentId}
 DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

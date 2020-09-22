@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: dee9dfbe5e77dba544517bbfdd277c25f85f4846
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 85fd03831620e338af4dc9ab363fcb9e34fbf971
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491277"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002769"
 ---
 # <a name="delete-conversationmember"></a>Удаление Конверсатионмембер
 
@@ -31,7 +31,7 @@ ms.locfileid: "44491277"
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Сервер приложений| Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Для приложений| Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -92,3 +92,5 @@ DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/members/{id}
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

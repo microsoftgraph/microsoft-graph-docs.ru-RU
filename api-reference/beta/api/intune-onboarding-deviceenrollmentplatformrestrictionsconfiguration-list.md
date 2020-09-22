@@ -3,14 +3,14 @@ title: Перечисление объектов deviceEnrollmentPlatformRestric
 description: Список свойств и связей объектов deviceEnrollmentPlatformRestrictionsConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 942953b8fcf90621348143b75d2f2d4e6ab023b9
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 15425a3f66fce54c28fa82c81cbe6a442f715444
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178915"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48000149"
 ---
 # <a name="list-deviceenrollmentplatformrestrictionsconfigurations"></a>Перечисление объектов deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -43,13 +43,13 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3354
+Content-Length: 3766
 
 {
   "value": [
@@ -92,6 +92,16 @@ Content-Length: 3354
         ]
       },
       "windowsRestriction": {
+        "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+        "platformBlocked": true,
+        "personalDeviceEnrollmentBlocked": true,
+        "osMinimumVersion": "Os Minimum Version value",
+        "osMaximumVersion": "Os Maximum Version value",
+        "blockedManufacturers": [
+          "Blocked Manufacturers value"
+        ]
+      },
+      "windowsHomeSkuRestriction": {
         "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
         "platformBlocked": true,
         "personalDeviceEnrollmentBlocked": true,
@@ -155,6 +165,9 @@ Content-Length: 3354
   ]
 }
 ```
+
+
+
 
 
 
