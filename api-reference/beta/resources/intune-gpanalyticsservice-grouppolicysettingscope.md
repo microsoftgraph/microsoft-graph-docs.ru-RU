@@ -3,14 +3,14 @@ title: тип перечисления Граупполицисеттингск�
 description: Область действия параметра групповой политики.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 76327b8326f7d037619a5c566c776a964651a979
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 311bb3db6a1a2b97e493582359882d6641cbea54
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473631"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031167"
 ---
 # <a name="grouppolicysettingscope-enum-type"></a>тип перечисления Граупполицисеттингскопе
 
@@ -26,8 +26,11 @@ ms.locfileid: "43473631"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Область устройства неизвестна|
-|device;|1,1|Область действия устройства|
-|user|2|Область пользователя|
+|device;|1 |Область действия устройства|
+|user|2 |Область пользователя|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Тип ресурса Бинариманажементкондитион�
 description: Выражение условия управления, вычисляемое с помощью бинарной операции.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2ce144a72d649709b54a9e9acd48107fee118040
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: a3ce5eb4f58d22224d881da3284639185a894e53
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44179195"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031426"
 ---
 # <a name="binarymanagementconditionexpression-resource-type"></a>Тип ресурса Бинариманажементкондитионекспрессион
 
@@ -32,7 +32,7 @@ ms.locfileid: "44179195"
 |фирстоперанд|[манажементкондитионекспрессионмодел](../resources/intune-fencing-managementconditionexpressionmodel.md)|Первый операнд бинарной операции.|
 |секондоперанд|[манажементкондитионекспрессионмодел](../resources/intune-fencing-managementconditionexpressionmodel.md)|Второй операнд бинарной операции.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -270,6 +270,9 @@ ms.locfileid: "44179195"
   }
 }
 ```
+
+
+
 
 
 

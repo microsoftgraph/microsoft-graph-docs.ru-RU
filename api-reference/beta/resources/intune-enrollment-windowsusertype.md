@@ -3,14 +3,14 @@ title: тип перечисления Виндовсусертипе
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b472f74ad1ea88398a19cda9101e93e4ec53cb66
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 674f37219a76be35c20547fa42655fe1fc1d4c23
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43358118"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031538"
 ---
 # <a name="windowsusertype-enum-type"></a>тип перечисления Виндовсусертипе
 
@@ -26,7 +26,10 @@ ms.locfileid: "43358118"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |имени|нуль|Пока не задокументировано.|
-|Стандартный|1,1|Пока не задокументировано.|
+|Стандартный|1 |Пока не задокументировано.|
+
+
+
 
 
 

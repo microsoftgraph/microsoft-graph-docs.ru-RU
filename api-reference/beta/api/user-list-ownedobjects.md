@@ -1,18 +1,18 @@
 ---
-title: Перечисление ownedObjects
+title: Список ownedObjects
 description: Получение списка объектов каталога, принадлежащих пользователю.
 author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c7d19ebaadd9f7046d6da25cfd1577ee4599d17d
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 8cf334224fa926eaf159b407e05c5b4d9a8a76e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107600"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031832"
 ---
-# <a name="list-ownedobjects"></a>Перечисление ownedObjects
+# <a name="list-ownedobjects"></a>Список ownedObjects
 
 Пространство имен: microsoft.graph
 
@@ -43,10 +43,10 @@ GET /users/{id | userPrincipalName}/ownedObjects
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/beta/me/ownedObjects
 
 ---
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -110,3 +110,5 @@ Content-length: 55
   ]
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: Тип ресурса Манажементкондитионекспре�
 description: Выражение условия управления — это выражение, которое при оценке возвращает логическое значение, которое указывает, что оператор условия управления активирован/деактивирован. Выражение условия управления может состоять из комбинации переменных Expression и операторов выражений с логическими значениями.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 40d0c372d5806866c63973c25f9bb6e39c504d7b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9d28a6e3b18d2a297f5dd2ae523a59b7de544ecb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382639"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031377"
 ---
 # <a name="managementconditionexpression-resource-type"></a>Тип ресурса Манажементкондитионекспрессион
 
@@ -26,7 +26,7 @@ ms.locfileid: "43382639"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,6 +41,9 @@ ms.locfileid: "43382639"
   "@odata.type": "#microsoft.graph.managementConditionExpression"
 }
 ```
+
+
+
 
 
 

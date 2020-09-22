@@ -3,14 +3,14 @@ title: тип перечисления Виндовсдевицеусажети�
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f738b6d5ecee750b9877ebec8858d8b221134f51
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cd2dadf33a69948c813373e9865b20c66903af30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43358154"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031552"
 ---
 # <a name="windowsdeviceusagetype-enum-type"></a>тип перечисления Виндовсдевицеусажетипе
 
@@ -26,7 +26,10 @@ ms.locfileid: "43358154"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |SingleUser.|нуль|Тип устройства "один пользователь"|
-|общие|1,1|Тип общего устройства|
+|общие|1 |Тип общего устройства|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Тип ресурса Иосбукмарк
 description: Закладка URL-адреса iOS
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3789d905d285561e56b7a21664214f777987524e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 769afaef5370cd55c8edc30a057a9bba15893d88
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444201"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031664"
 ---
 # <a name="iosbookmark-resource-type"></a>Тип ресурса Иосбукмарк
 
@@ -29,7 +29,7 @@ ms.locfileid: "43444201"
 |букмаркфолдер|String|Папка, в которую следует добавить закладку в Safari|
 |displayName|String|Отображаемое имя закладки|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,6 +47,9 @@ ms.locfileid: "43444201"
   "displayName": "String"
 }
 ```
+
+
+
 
 
 

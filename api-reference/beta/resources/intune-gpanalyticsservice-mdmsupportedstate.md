@@ -3,14 +3,14 @@ title: тип перечисления Мдмсуппортедстате
 description: Состояние поддержки MDM для параметра.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b0fac89400b0d1104f191e123a40077b26c60435
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 14b26f2b71d81680023ee3dad925515322ec2888
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43453374"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031132"
 ---
 # <a name="mdmsupportedstate-enum-type"></a>тип перечисления Мдмсуппортедстате
 
@@ -26,9 +26,12 @@ ms.locfileid: "43453374"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестный статус поддержки MDM для параметра.|
-|поддерживается|1,1|Параметр поддерживается.|
-|Неподдерживаемые|2|Параметр не поддерживается.|
+|поддерживается|1 |Параметр поддерживается.|
+|Неподдерживаемые|2 |Параметр не поддерживается.|
 |устаревшие|4|Параметр — депкрекатед.|
+
+
+
 
 
 

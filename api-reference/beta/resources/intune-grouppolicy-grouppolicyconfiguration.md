@@ -3,14 +3,14 @@ title: Тип ресурса Граупполициконфигуратион
 description: Объект конфигурации групповой политики содержит настроенные значения для одного или нескольких определений групповой политики.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6e2d017b7bbd8f76d59f7862fbb943c455c78fbe
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ae81d6df33be7473b982d5bf319446402d6ba946
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43377082"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031090"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>Тип ресурса Граупполициконфигуратион
 
@@ -37,13 +37,13 @@ ms.locfileid: "43377082"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|displayName|Строка|Предоставленное пользователем имя объекта ресурса.|
+|displayName|String|Предоставленное пользователем имя объекта ресурса.|
 |description|String|Предоставленное пользователем описание объекта ресурса.|
-|roleScopeTagIds|Коллекция объектов string|Список тегов области для конфигурации.|
+|roleScopeTagIds|Коллекция String|Список тегов области для конфигурации.|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |дефинитионвалуес|Коллекция [граупполицидефинитионвалуе](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|Список включенных или отключенных значений определений групповой политики для конфигурации.|
@@ -70,6 +70,9 @@ ms.locfileid: "43377082"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1cb32a36e40f419c42be8caa31d9081ac461d88f
-ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
+ms.openlocfilehash: c0849226ce4fc38070b544978e5d53f80c683dd5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47413291"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031762"
 ---
 # <a name="accesspackageassignment-resource-type"></a>Тип ресурса Акцесспаккажеассигнмент
 
@@ -68,15 +68,15 @@ ms.locfileid: "47413291"
 
 ```json
 {
-            "id": "9bdae7b4-6ece-487b-9eb8-9679dbd67aa2",
-            "catalogId": "cc30dc98-6d3c-4fa0-bed8-fd76d0efd993",
-            "accessPackageId": "e3f47362-993f-4fcb-8a38-532ffca16150",
-            "assignmentPolicyId": "63ebd106-8116-40e7-a0ab-01ae475d11bb",
-            "targetId": "ab4291f6-66b7-42bf-b597-a05b29414f5c",
-            "assignmentStatus": "ExpiredNotificationTriggered",
-            "assignmentState": "Expired",
-            "isExtended": false,
-            "expiredDateTime": "2019-04-25T23:45:40.42Z"
+   "id":"9bdae7b4-6ece-487b-9eb8-9679dbd67aa2",
+   "catalogId":"cc30dc98-6d3c-4fa0-bed8-fd76d0efd993",
+   "accessPackageId":"e3f47362-993f-4fcb-8a38-532ffca16150",
+   "assignmentPolicyId":"63ebd106-8116-40e7-a0ab-01ae475d11bb",
+   "targetId":"ab4291f6-66b7-42bf-b597-a05b29414f5c",
+   "assignmentStatus":"ExpiredNotificationTriggered",
+   "assignmentState":"Expired",
+   "isExtended":false,
+   "expiredDateTime":"2019-04-25T23:45:40.42Z"
 }
 ```
 
@@ -89,3 +89,5 @@ ms.locfileid: "47413291"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

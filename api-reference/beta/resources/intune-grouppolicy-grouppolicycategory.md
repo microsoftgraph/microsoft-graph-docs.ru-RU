@@ -3,14 +3,14 @@ title: Тип ресурса Граупполицикатегори
 description: Сущность Category сохраняет категорию определения групповой политики
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3b81a102bd5864d4f11f787e15bb2d709f0203cf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fc4eed4c7450c8e6803d4cd064a26c7b4919ea95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43377193"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031097"
 ---
 # <a name="grouppolicycategory-resource-type"></a>Тип ресурса Граупполицикатегори
 
@@ -31,15 +31,15 @@ ms.locfileid: "43377193"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Идентификатор строки отображаемого имени категории|
+|displayName|String|Идентификатор строки отображаемого имени категории|
 |Корень|Boolean|Определяет, является ли категория корневой категорией|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|верхнего|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|Родительская категория|
+|родитель|[groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|Родительская категория|
 |children|Коллекция [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|Категории дочерних элементов|
 |определения|Коллекция [граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|Непосредственный дочерний элемент Граупполицидефинитион в категории|
 |дефинитионфиле|[граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|Идентификатор файла определения, из которого получена Категория|
@@ -61,6 +61,9 @@ ms.locfileid: "43377193"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

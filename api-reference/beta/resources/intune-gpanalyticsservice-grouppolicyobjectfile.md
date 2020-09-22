@@ -3,14 +3,14 @@ title: Тип ресурса Граупполициобжектфиле
 description: Файл объекта групповой политики, переданный администратором.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4f1778e05f9c6f28966a92c46094d8e773b9de48
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 648b655d4fad1bf8397246884a023749da04c63b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458464"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031174"
 ---
 # <a name="grouppolicyobjectfile-resource-type"></a>Тип ресурса Граупполициобжектфиле
 
@@ -35,13 +35,13 @@ ms.locfileid: "43458464"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Пока не задокументировано.|
-|граупполициобжектид|GUID|GUID объекта групповой политики из XML-содержимого объекта групповой политики|
+|граупполициобжектид|Guid|GUID объекта групповой политики из XML-содержимого объекта групповой политики|
 |аудистингуишеднаме|String|Различающееся имя подразделения.|
 |createdDateTime|DateTimeOffset|Дата и время первой загрузки Граупполици.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения Граупполициобжектфиле.|
 |content|String|Содержимое файла объекта групповой политики.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -63,6 +63,9 @@ ms.locfileid: "43458464"
   "content": "String"
 }
 ```
+
+
+
 
 
 

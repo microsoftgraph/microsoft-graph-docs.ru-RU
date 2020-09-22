@@ -3,14 +3,14 @@ title: Тип ресурса Манажементкондитионекспре�
 description: Строка выражения условия управления — это строковое представление выражения условия управления.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f5a17a7057888d02decb20dc5f611e7d5e1ebd9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 65bb0bf3faca38775f00c256d5b23d9cf132d13f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43357848"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031314"
 ---
 # <a name="managementconditionexpressionstring-resource-type"></a>Тип ресурса Манажементкондитионекспрессионстринг
 
@@ -30,7 +30,7 @@ ms.locfileid: "43357848"
 |:---|:---|:---|
 |значение|String|Строковое значение выражения оператора условия управления.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,6 +46,9 @@ ms.locfileid: "43357848"
   "value": "String"
 }
 ```
+
+
+
 
 
 

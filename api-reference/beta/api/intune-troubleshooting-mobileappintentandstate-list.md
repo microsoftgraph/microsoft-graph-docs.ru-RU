@@ -3,14 +3,14 @@ title: Список Мобилеаппинтентандстатес
 description: Список свойств и связей объектов Мобилеаппинтентандстате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 220eb7728c80973a68855da6fdc5222e9c059af2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5ce16e8df84dc3f4fb73a79781c114a05100c53f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473964"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031828"
 ---
 # <a name="list-mobileappintentandstates"></a>Список Мобилеаппинтентандстатес
 
@@ -43,13 +43,13 @@ GET /users/{usersId}/mobileAppIntentAndStates
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [мобилеаппинтентандстате](../resources/intune-troubleshooting-mobileappintentandstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -96,6 +96,9 @@ Content-Length: 1001
   ]
 }
 ```
+
+
+
 
 
 

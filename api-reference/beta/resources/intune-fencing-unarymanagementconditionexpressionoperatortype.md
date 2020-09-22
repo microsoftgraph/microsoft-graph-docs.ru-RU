@@ -3,14 +3,14 @@ title: тип перечисления Унариманажементконди�
 description: Поддерживаемые операторы для выражений унарного условия управления
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 660d679265ce8739e882bf8ac066f8c7969e78c9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ef6ed9e6ae36d87113d338ef562d7e9744ceb02e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458516"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031258"
 ---
 # <a name="unarymanagementconditionexpressionoperatortype-enum-type"></a>тип перечисления Унариманажементкондитионекспрессионоператортипе
 
@@ -27,6 +27,9 @@ ms.locfileid: "43458516"
 |:---|:---|:---|
 |
 not|нуль|Инвертирует вычисление операнда.|
+
+
+
 
 
 

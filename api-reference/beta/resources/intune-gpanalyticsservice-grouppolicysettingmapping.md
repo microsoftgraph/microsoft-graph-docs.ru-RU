@@ -3,14 +3,14 @@ title: Тип ресурса Граупполицисеттингмаппинг
 description: Параметр групповой политики для сопоставления MDM/Intune.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d237484a36a12169a030d780db9431f9267d3582
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 68dc7f09470a972087c84c180df796aa650ec91c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458449"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031160"
 ---
 # <a name="grouppolicysettingmapping-resource-type"></a>Тип ресурса Граупполицисеттингмаппинг
 
@@ -36,7 +36,7 @@ ms.locfileid: "43458449"
 |:---|:---|:---|
 |id|String|Пока не задокументировано.|
 |parentId|String|Родительский идентификатор параметра групповой политики.|
-|чилдидлист|Коллекция объектов string|Список дочерних идентификаторов параметра групповой политики.|
+|чилдидлист|Коллекция String|Список дочерних идентификаторов параметра групповой политики.|
 |settingName|String|Имя этого параметра групповой политики.|
 |settingValue|String|Значение этого параметра групповой политики.|
 |сеттингвалуетипе|String|Тип значения этого параметра групповой политики.|
@@ -52,10 +52,11 @@ ms.locfileid: "43458449"
 |исмдмсуппортед|Boolean|Указывает, поддерживается ли Intune или нет|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Указывает, поддерживается ли параметр в MDM. Возможные значения: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |сеттингскопе|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Область применения параметра. Возможные значения: `unknown`, `device`, `user`.|
-|интунесеттингурилист|Коллекция объектов string|Список URI параметров Intune, которые сопоставлены параметру групповой политики|
+|интунесеттингурилист|Коллекция String|Список URI параметров Intune, которые сопоставлены параметру групповой политики|
 |интунесеттингдефинитионид|String|Идентификатор определения параметра Intune|
+|адмкссеттингдефинитионид|String|Идентификатор групповой политики ADMX|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -92,9 +93,13 @@ ms.locfileid: "43458449"
   "intuneSettingUriList": [
     "String"
   ],
-  "intuneSettingDefinitionId": "String"
+  "intuneSettingDefinitionId": "String",
+  "admxSettingDefinitionId": "String"
 }
 ```
+
+
+
 
 
 

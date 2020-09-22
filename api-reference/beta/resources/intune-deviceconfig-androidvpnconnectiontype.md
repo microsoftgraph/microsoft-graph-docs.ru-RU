@@ -3,14 +3,14 @@ title: тип перечисления Androidvpnconnectiontype.
 description: Тип VPN-подключения Android.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b522a356a13c44fc1205e03390a1c712e6b681b0
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 6343684a068d81486ebe8dcdca92e926762467a6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45122576"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031720"
 ---
 # <a name="androidvpnconnectiontype-enum-type"></a>тип перечисления Androidvpnconnectiontype.
 
@@ -28,10 +28,13 @@ ms.locfileid: "45122576"
 |Цискоаниконнект|нуль|Cisco Аниконнект.|
 |пулсесекуре|1 |Безопасный импульс.|
 |f5EdgeClient|2 |Пограничный клиент F5.|
-|деллсоникваллмобилеконнект|3 |Мобильное подключение Dell Сониквалл.|
+|деллсоникваллмобилеконнект|4|Мобильное подключение Dell Сониквалл.|
 |чеккпоинткапсулевпн|4 |Проверка покапсулы VPN.|
 |клиентов|5 |Клиентов|
 |микрософттуннел|7 |Туннель Microsoft.|
+
+
+
 
 
 

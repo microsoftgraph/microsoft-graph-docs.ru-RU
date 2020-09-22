@@ -3,14 +3,14 @@ title: тип перечисления Девицеманажементцерт�
 description: Типы центра сертификации для управления устройствами.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e16786a4a619ce646a3815af4b56011dd13dee7d
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: e1e0a0c5acc42d8ec5700e1bfd18fbf2fdc3e436
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44789571"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031692"
 ---
 # <a name="devicemanagementcertificationauthority-enum-type"></a>тип перечисления Девицеманажементцертификатионаусорити
 
@@ -27,7 +27,10 @@ ms.locfileid: "44789571"
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
 |корпораци|1 |Тип центра сертификации корпорации Майкрософт.|
-|digiCert|2|Тип центра сертификации DigiCert.|
+|digiCert|2 |Тип центра сертификации DigiCert.|
+
+
+
 
 
 

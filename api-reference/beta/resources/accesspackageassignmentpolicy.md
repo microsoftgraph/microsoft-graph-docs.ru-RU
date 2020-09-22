@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 259a8fef5d8efaae126cd722695be404ca964149
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: ccf3e1bb94bb1f6186e39cdaa91fa2dbe3a4344d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757211"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031739"
 ---
 # <a name="accesspackageassignmentpolicy-resource-type"></a>Тип ресурса Акцесспаккажеассигнментполици
 
@@ -37,13 +37,13 @@ ms.locfileid: "46757211"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|акцесспаккажеид|Строка|Идентификатор пакета Access.|
+|акцесспаккажеид|String|Идентификатор пакета Access.|
 |акцессревиевсеттингс|[ассигнментревиевсеттингс](assignmentreviewsettings.md)|Кто должен проверить и как часто назначений для пакета доступа из этой политики. Это свойство имеет значение null, если проверка не требуются.|
 |canExtend|Boolean|Указывает, может ли пользователь продлить продолжительность назначения пакета доступа после утверждения.|
 |createdBy|String|Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |description|String|Описание политики.|
-|displayName|Строка|Отображаемое имя политики.|
+|displayName|String|Отображаемое имя политики.|
 |дуратиониндайс|Int32|Количество дней, в течение которых назначения из этой политики последний раз до истечения срока действия.|
 |expirationDateTime|DateTimeOffset|Срок действия для назначений, созданных в этой политике. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |id|String| Только для чтения.|
@@ -53,7 +53,7 @@ ms.locfileid: "46757211"
 |рекуесторсеттингс|[рекуесторсеттингс](requestorsettings.md)|Кто может запрашивать этот пакет Access из этой политики.|
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
@@ -107,3 +107,5 @@ ms.locfileid: "46757211"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

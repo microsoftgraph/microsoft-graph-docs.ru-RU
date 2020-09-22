@@ -3,14 +3,14 @@ title: тип перечисления Виндовсаутопилотсинк�
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2e6b54afcf76f861f64f50ffbdb33fbdff0e2608
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3a98de1a17a5d0928cb506bdc54a33ec4393b10a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43358204"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031566"
 ---
 # <a name="windowsautopilotsyncstatus-enum-type"></a>тип перечисления Виндовсаутопилотсинкстатус
 
@@ -26,9 +26,12 @@ ms.locfileid: "43358204"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестное состояние синхронизации|
-|inProgress|1,1|Выполняется синхронизация|
-|готовы|2|Синхронизация завершена.|
+|inProgress|1 |Выполняется синхронизация|
+|готовы|2 |Синхронизация завершена.|
 |сбоев|4|Ошибка синхронизации.|
+
+
+
 
 
 

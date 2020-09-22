@@ -3,14 +3,14 @@ title: Тип ресурса Манажементкондитион
 description: Условия управления — это события, которые могут динамически запускаться, например, с географическими ограждениями, временными ограждениями и сетевыми ограждениями.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 24aca3452d6dcb6dd43290c8ce2359551db65331
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bb7f6ecb00072fb5280cb4033a39fb2041524b7a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382654"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031384"
 ---
 # <a name="managementcondition-resource-type"></a>Тип ресурса Манажементкондитион
 
@@ -34,14 +34,14 @@ ms.locfileid: "43382654"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для условия управления. Созданное системой значение, назначаемое при создании.|
 |uniqueName|String|Уникальное имя условия управления. Используется в выражениях условия управления.|
-|displayName|Строка|Имя условия управления, определенное администратором.|
+|displayName|String|Имя условия управления, определенное администратором.|
 |description|String|Описание условия управления, заданное администратором.|
 |createdDateTime|DateTimeOffset|Время создания условия управления. Созданная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условия управления. Обновленная сторона службы.|
 |eTag|String|Тег ETag условия управления. Обновленная сторона службы.|
 |аппликаблеплатформс|Коллекция [девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Соответствующие платформы для этого условия управления.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |манажементкондитионстатементс|Коллекция [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md)|Операторы условия управления, связанные с условием управления.|
@@ -69,6 +69,9 @@ ms.locfileid: "43382654"
   ]
 }
 ```
+
+
+
 
 
 

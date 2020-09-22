@@ -3,14 +3,14 @@ title: Тип ресурса Ембеддедсимдевицестате
 description: Описание встроенного состояния развертывания кода активации SIM-карты для устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b88fe5ada325e77b03bc83f2dcec5bb099c2f7d0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b32a2ffdb46dee11a3c0f7cdf37446ec6729979b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442788"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031454"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>Тип ресурса Ембеддедсимдевицестате
 
@@ -44,7 +44,7 @@ ms.locfileid: "43442788"
 |state|[ембеддедсимдевицестатевалуе](../resources/intune-esim-embeddedsimdevicestatevalue.md)|Состояние операции профиля, примененной к устройству. Возможные значения: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
 |статедетаилс|String|Строковое описание состояния подготовки.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -69,6 +69,9 @@ ms.locfileid: "43442788"
   "stateDetails": "String"
 }
 ```
+
+
+
 
 
 

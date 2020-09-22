@@ -4,12 +4,12 @@ description: Перечисление API Microsoft Graph для коечных 
 author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: 3b479617ce476492ca716db7742f1e10aab88b18
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: e1c93c38c1667d1681e280b69ff106060900b46c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45225055"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031118"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Работа с Intune в Microsoft Graph  
 
@@ -51,4 +51,7 @@ Microsoft Graph позволяет управлять доступом к рес
 
 - Узнайте, [как использовать Azure AD](https://docs.microsoft.com/intune/intune-graph-apis) для доступа к API Microsoft Graph для Intune.  
 - Изучите [примеры PowerShell для Intune](https://github.com/microsoftgraph/powershell-intune-samples), демонстрирующие способ использования API Microsoft Graph для Intune в рабочем контексте.
+
+
+
 
