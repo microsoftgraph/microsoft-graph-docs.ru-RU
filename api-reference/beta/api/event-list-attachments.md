@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 744ba1c0ab88afa2acf38f93b58cd01592504af4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: abdfc3353e5fee94bbcec3b219d2cb6890bab939
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43365448"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006974"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -45,9 +45,9 @@ GET /groups/{id}/events/{id}/attachments
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
-В частности, параметр `$expand` запроса можно использовать для включения всех вложений в события, встроенных в остальные свойства события. Например:
+В частности, параметр запроса можно использовать `$expand` для включения всех вложений в события, встроенных в остальные свойства события. Например:
 
 ```http
 GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Attachment](../resources/attachment.md) в тексте отклика.
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/me/events/{id}/attachments
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -145,3 +145,5 @@ Content-length: 215
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e1fb6c9bf074228c7cb30de2fa1f5ecd611f7f86
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 19ef275b81f5cdcb7e9dee3a4023fd50fa87a05a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43365063"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006966"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
@@ -100,7 +100,7 @@ Content-length: 151
 
 Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
@@ -168,7 +168,7 @@ Content-length: 600
 ```
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -280,3 +280,5 @@ HTTP 201 Created
   "tocPath": ""
 }
 -->
+
+

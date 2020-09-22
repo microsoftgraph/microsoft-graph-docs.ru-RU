@@ -3,14 +3,14 @@ title: Обновление ресурса androidmanagedstoreaccountenterprises
 description: Обновление свойств объекта ресурса androidmanagedstoreaccountenterprisesettings.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e5df0d4e008dce234858334c42d2841ab2c0332e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dcf4815a3bf4a5a157ddb2a8cc6259e9599bf4d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43417897"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006540"
 ---
 # <a name="update-androidmanagedstoreaccountenterprisesettings"></a>Обновление ресурса androidmanagedstoreaccountenterprisesettings
 
@@ -68,7 +68,7 @@ PATCH /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [ресурса androidmanagedstoreaccountenterprisesettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -144,6 +144,9 @@ Content-Length: 1010
   "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
+
+
+
 
 
 

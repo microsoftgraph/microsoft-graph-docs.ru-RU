@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0cd64b45d1a3a285eb4fd53908ff6e3d364bb502
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: d2718ade42805913af1e648c99e5799bb84a80f3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181110"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006723"
 ---
 # <a name="assign-appliesto"></a>Назначение appliesTo
 
@@ -48,7 +48,7 @@ POST /directory/featureRolloutPolicies/{id}/appliesTo/$ref
 
 В тексте запроса добавьте представление объекта [directoryObject](../resources/directoryobject.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
@@ -120,3 +120,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

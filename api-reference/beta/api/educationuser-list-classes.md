@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e00aa154ece87b8e1488559d98f98b88c8952581
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: b95a9ff9ebe724c442f2db6bdafeb21b7e8b5d1f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006789"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007058"
 ---
 # <a name="list-classes"></a>Перечисление курсов
 
@@ -26,9 +26,9 @@ ms.locfileid: "45006789"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированное (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 > [!NOTE]
 > При использовании делегированных разрешений возвращаются только те ресурсы educationClass, которые является членом пользователя проверки подлинности.
@@ -147,3 +147,5 @@ Content-length: 277
   ]
 }
 -->
+
+

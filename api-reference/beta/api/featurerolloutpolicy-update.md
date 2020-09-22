@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d1e454f08649b631a694194a585a623e9c819702
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 465c9f57faba02f38b10569ae3ba46c4022defd7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181100"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006694"
 ---
 # <a name="update-featurerolloutpolicy"></a>Обновление феатурероллаутполици
 
@@ -51,11 +51,11 @@ PATCH /directory/featureRolloutPolicies/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |description|String|Описание этой политики.|
-|displayName|Строка|Отображаемое имя для этой политики.|
-|исапплиедтурганизатион|Boolean|Указывает, следует ли применять эту политику развертывания функций ко всей Организации.|
+|displayName|String|Отображаемое имя для этой политики.|
+|исапплиедтурганизатион|Логическое|Указывает, следует ли применять эту политику развертывания функций ко всей Организации.|
 |isEnabled|Boolean|Указывает, включен ли выпуск компонентов.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [феатурероллаутполици](../resources/featurerolloutpolicy.md) в тексте отклика.
 
@@ -107,3 +107,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

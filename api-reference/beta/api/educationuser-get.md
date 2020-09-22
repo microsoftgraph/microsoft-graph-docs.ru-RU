@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c2def2d5df4f2ae8d3c2d0656a1149a050b6fbe6
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: 8049bdf706e17193581b72fa1f6f3bc39359d195
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006787"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007065"
 ---
 # <a name="get-educationuser"></a>Получение educationUser
 
@@ -29,9 +29,9 @@ ms.locfileid: "45006787"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированное (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 > [!IMPORTANT]
 > При использовании делегированных областей разрешений Graph будет возвращать только ограниченный набор свойств:,,,,,,,,, `id` `primaryRole` `accountEnabled` `displayName` `givenName` `surname` `userPrincipalName` `userType` `onPremisesInfo` `student/externalId` , `teacher/externalId` . Если для приложения требуются дополнительные свойства, необходимо использовать области разрешений приложения.
@@ -160,3 +160,5 @@ Content-length: 508
   ]
 }
 -->
+
+

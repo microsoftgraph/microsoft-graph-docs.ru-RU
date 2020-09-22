@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: 6210d9b6cbd127eb4de28f72ac41972de5059c1a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b2cb23f1f3acb56d8a9c11542b15717f45c217a2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422049"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006827"
 ---
 # <a name="update-connection"></a>Обновление подключения
 
@@ -53,11 +53,11 @@ PATCH /external/connections/{id}
 
 | Свойство      | Тип                                           | Описание |
 |:--------------|:-----------------------------------------------|:------------|
-| конфигурацион | [configuration](../resources/configuration.md) | Задает дополнительные идентификаторы приложений, которым разрешено управлять подключением и индексировать содержимое в подключении. |
+| configuration | [configuration](../resources/configuration.md) | Задает дополнительные идентификаторы приложений, которым разрешено управлять подключением и индексировать содержимое в подключении. |
 | description   | String                                         | Описание подключения, отображаемое в центре администрирования Microsoft 365. |
 | name          | String                                         | Отображаемое имя подключения, отображаемое в центре администрирования Microsoft 365. Максимальная длина 128 символов. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
@@ -121,3 +121,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

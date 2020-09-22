@@ -3,14 +3,14 @@ title: Получение Андроидфорворкмобилеаппконф
 description: Чтение свойств и связей объекта Андроидфорворкмобилеаппконфигуратион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd3cb3b43d6f03af1b31186077b0fb8be0cba098
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1082a2b8a41975de95a4790009e08aaa2920461e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43395297"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006442"
 ---
 # <a name="get-androidforworkmobileappconfiguration"></a>Получение Андроидфорворкмобилеаппконфигуратион
 
@@ -49,10 +49,10 @@ GET /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigur
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [андроидфорворкмобилеаппконфигуратион](../resources/intune-apps-androidforworkmobileappconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -98,6 +98,9 @@ Content-Length: 846
   }
 }
 ```
+
+
+
 
 
 

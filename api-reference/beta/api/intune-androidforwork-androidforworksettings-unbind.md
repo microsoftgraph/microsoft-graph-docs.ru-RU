@@ -3,14 +3,14 @@ title: Действие unbind
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c550e567a9aef34a6155d604baa29573d2546533
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 94ce9a4018556a9843f96f50fd85aff736c68b00
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43395624"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006547"
 ---
 # <a name="unbind-action"></a>Действие unbind
 
@@ -43,13 +43,13 @@ POST /deviceManagement/androidForWorkSettings/unbind
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -65,6 +65,9 @@ POST https://graph.microsoft.com/beta/deviceManagement/androidForWorkSettings/un
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

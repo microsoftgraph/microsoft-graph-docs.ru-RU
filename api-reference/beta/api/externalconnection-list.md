@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: c47d2e58bed88748e6b05e3099bc1d2d930bbb9f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3b01b6fc487a52a291bcc10f6732bfab649fe4cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42422259"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006855"
 ---
 # <a name="list-connections"></a>Список подключений
 
@@ -50,11 +50,11 @@ GET /external/connections
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [екстерналконнектион](../resources/externalconnection.md) в тексте отклика.
 
@@ -140,3 +140,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
