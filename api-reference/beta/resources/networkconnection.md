@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 9d25d78d51a39d3240d0d7566b7037f55e379fe1
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c111082fe0b9a2f2090de3fe3abb71a96fd4a80d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811114"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026588"
 ---
 # <a name="networkconnection-resource-type"></a>Тип ресурса networkConnection
 
@@ -51,8 +51,8 @@ ms.locfileid: "46811114"
 |:---|:---|:---|
 |unknown|–1|Неизвестный протокол.|
 |см|нуль|Протокол IP.|
-|полученных|1,1| Протокол управления сообщениями в Интернете.|
-|режимы|2| Протокол управления группами Интернет.|
+|полученных|1 | Протокол управления сообщениями в Интернете.|
+|режимы|2 | Протокол управления группами Интернет.|
 |ггп|4| Протокол шлюза для шлюза.|
 |IPv4|4 | Протокол Интернета версии 4.|
 |tcp|6 | Протокол управления передачей.|
@@ -73,7 +73,7 @@ ms.locfileid: "46811114"
 |возмож|1256| Последовательный протокол обмена пакетами.|
 |спксии|1257| Последовательный протокол обмена пакетами версии 2.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -123,3 +123,5 @@ ms.locfileid: "46811114"
   "suppressions": []
 }
 -->
+
+

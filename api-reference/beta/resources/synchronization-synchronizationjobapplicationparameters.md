@@ -5,12 +5,12 @@ author: ArvindHarinder1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c0f0b7cae5a3ce9c49ea64b603390ea65831144b
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
-ms.translationtype: Auto
+ms.openlocfilehash: eaa569faa7705baf95ef5843ad0ae1e66a0bf1ff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007214"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026112"
 ---
 # <a name="synchronizationjobapplicationparameters-resource-type"></a>Тип ресурса Синчронизатионжобаппликатионпараметерс
 
@@ -24,7 +24,7 @@ ms.locfileid: "45007214"
 |ruleId|String|Идентификатор Синчронизатионруле, который требуется применить; необязательно для Синчронизатионжоб с одним Синчронизатионруле.|
 |вопросов|Коллекция [синчронизатионжобсубжект](../resources/synchronization-synchronizationjobsubject.md)|Идентификаторы одного или нескольких объектов, к которым применяется Синчронизатионжоб.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
@@ -45,3 +45,5 @@ ms.locfileid: "45007214"
   ]
 }
 ```
+
+

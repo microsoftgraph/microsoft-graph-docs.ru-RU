@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f54a0c00c7a906e67d8c2861eae7c8437a28fad0
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: aee297f36538ca45183e0c3185f35c8f340d8631
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311839"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026315"
 ---
 # <a name="requestorsettings-resource-type"></a>Тип ресурса Рекуесторсеттингс
 
@@ -36,7 +36,7 @@ ms.locfileid: "47311839"
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
 | scopeType |String |Кто может запрашивать. Один из `NoSubjects` ,,,,, `SpecificDirectorySubjects` `SpecificConnectedOrganizationSubjects` `AllExistingConnectedOrganizationSubjects` `AllExistingDirectoryMemberUsers` `AllExistingDirectorySubjects` или `AllExternalSubjects` .  |
-| акцептрекуестс | Логический | Указывает, принимаются ли новые запросы для этой политики. |
+| акцептрекуестс | Boolean | Указывает, принимаются ли новые запросы для этой политики. |
 | алловедрекуесторс | Коллекция [User](userset.md) Collection| Пользователи, которым разрешено запрашивать эту политику, которая может быть [SingleUser.](singleuser.md), [граупмемберс](groupmembers.md)и [коннектедорганизатионмемберс](connectedorganizationmembers.md). |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -78,3 +78,5 @@ ms.locfileid: "47311839"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

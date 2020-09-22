@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 890da6054328da8619ede99de925b941bd41e20a
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: f9d8eecb7b7804af7296bda581eb9b9c9d58d1b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006963"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026124"
 ---
 # <a name="synchronizationjob-resource-type"></a>Тип ресурса Синчронизатионжоб
 
@@ -26,11 +26,11 @@ ms.locfileid: "45006963"
 |:--------------|:--------------------------|:-----------------------------|
 |[Список](../api/synchronization-synchronizationjob-list.md)             |Коллекция [синчронизатионжоб](synchronization-synchronizationjob.md)  |Перечисление существующих заданий для определенного экземпляра приложения (субъекта-службы).|
 |[Получение Синчронизатионжоб](../api/synchronization-synchronizationjob-get.md) | [синчронизатионжоб](synchronization-synchronizationjob.md) |Чтение свойств и связей объекта Синчронизатионжоб.|
-|[Создание](../api/synchronization-synchronizationjob-post.md);         |[синчронизатионжоб](synchronization-synchronizationjob.md)   |Создание нового задания для определенного приложения.|
+|[создание](../api/synchronization-synchronizationjob-post.md);         |[синчронизатионжоб](synchronization-synchronizationjob.md)   |Создание нового задания для определенного приложения.|
 |[Начало](../api/synchronization-synchronizationjob-start.md)          |Нет   |Запуск синхронизации. Если задание приостановлено, оно продолжается с того места, где было приостановлено задание. Если задание находится в карантине, статус карантина очищается.|
-|[Restart](../api/synchronization-synchronizationjob-restart.md)      |Нет   |Принудительно запустить задание и повторно обработать все объекты в каталоге.|
+|[Перезапуск](../api/synchronization-synchronizationjob-restart.md)      |Нет   |Принудительно запустить задание и повторно обработать все объекты в каталоге.|
 |[Pause](../api/synchronization-synchronizationjob-pause.md)          |Нет   |Временная остановка синхронизации. Все ход выполнения, включая состояние задания, хранятся, а задание продолжится с того места, где оно было отключено при выполнении [начального](../api/synchronization-synchronizationjob-start.md) вызова.|
-|[Delete](../api/synchronization-synchronizationjob-delete.md)        |Нет   |Остановите синхронизацию и окончательно удалите все состояния, связанные с заданием.|
+|[Удаление](../api/synchronization-synchronizationjob-delete.md)        |Нет   |Остановите синхронизацию и окончательно удалите все состояния, связанные с заданием.|
 |[Получение Синчронизатионсчема](../api/synchronization-synchronizationschema-get.md)    |[синчронизатионсчема](synchronization-synchronizationschema.md)   |Получение действующей схемы синхронизации задания.|
 |[Обновление Синчронизатионсчема](../api/synchronization-synchronizationschema-update.md)    |Нет   |Обновите схему синхронизации задания. |
 |[Проверка учетных данных](../api/synchronization-synchronizationjob-validatecredentials.md)|Нет|Проверка предоставленных учетных данных в целевом каталоге.|
@@ -45,12 +45,12 @@ ms.locfileid: "45006963"
 |синчронизатионжобсеттингс   |[keyValuePair](keyvaluepair.md);    |Параметры, связанные с заданием. Некоторые параметры наследуются от шаблона.|
 |templateId     |String    |Идентификатор [шаблона синхронизации](synchronization-synchronizationtemplate.md) , на котором основано это задание.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |схемы|[синчронизатионсчема](synchronization-synchronizationschema.md)| Схема синхронизации, настроенная для задания.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -86,3 +86,5 @@ ms.locfileid: "45006963"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 02311d5908237325e627e61706d25ee1b3d16c2f
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: a5855a454156509818951cf3e6b8d570b1b9d8bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181946"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026098"
 ---
 # <a name="delete-directoryobject"></a>Удаление объекта directoryObject
 
@@ -42,7 +42,7 @@ DELETE /directoryObjects/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -97,3 +97,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

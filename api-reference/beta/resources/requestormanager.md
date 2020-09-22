@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8b2e3062383dd1cc1c7d04342b2dcbd5be0afd67
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4fecc2cb7d637c00f0f3f1b63d0080514639ed07
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521126"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026364"
 ---
 # <a name="requestomanager-complex-type"></a>сложный тип Рекуестоманажер
 
@@ -18,7 +18,7 @@ ms.locfileid: "42521126"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется в [параметрах утверждения политики назначения пакетов Access](accesspackageassignmentpolicy.md). Это подтип набора [пользователей](userset.md), в котором `@odata.type` значение `#microsoft.graph.requestorManager` указывает на то, что руководитель запрашивающего пользователя должен быть утверждающим.  При создании этапа утверждения политики назначения пакетов Access с Рекуесторманажер также включает другой утверждающий, например одного пользователя или члена группы, если у запрашивающего пользователя нет руководителя.
+Используется в [параметрах утверждения политики назначения пакетов Access](accesspackageassignmentpolicy.md). Это подтип набора [пользователей](userset.md), в котором `@odata.type` значение указывает на то `#microsoft.graph.requestorManager` , что руководитель запрашивающего пользователя должен быть утверждающим.  При создании этапа утверждения политики назначения пакетов Access с Рекуесторманажер также включает другой утверждающий, например одного пользователя или члена группы, если у запрашивающего пользователя нет руководителя.
 
 
 ## <a name="properties"></a>Свойства
@@ -57,3 +57,5 @@ ms.locfileid: "42521126"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

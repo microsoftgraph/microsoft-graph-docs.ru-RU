@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 3e4c0b7764cefffc5f25689c84a960ec72eca733
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 468138dad6cac10939c76b6bd6689c99d8fc5fbd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383849"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026056"
 ---
 # <a name="delete-an-approleassignment-granted-to-a-group"></a>Удаление Аппролеассигнмент, назначенного группе
 
@@ -26,7 +26,7 @@ ms.locfileid: "44383849"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Аппролеассигнмент. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Аппролеассигнмент. ReadWrite. ALL |
+|Для приложений | AppRoleAssignment.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -114,3 +114,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

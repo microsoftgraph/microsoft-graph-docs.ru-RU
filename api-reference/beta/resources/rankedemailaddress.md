@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: AAmatino
-ms.openlocfilehash: f0311b379d2768a2dc704730b7547334e5a64c97
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 36215d545bb6d24fae4ef8cbca35a1c5210976bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811422"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026409"
 ---
 # <a name="rankedemailaddress-resource-type"></a>Тип ресурса Ранкедемаиладдресс
 
@@ -27,7 +27,7 @@ ms.locfileid: "46811422"
 |address|string|Адрес электронной почты.|
 |rank|double|Ранг адреса электронной почты. В качестве ключа сортировки используется ранг, связанный с другими возвращенными результатами. Более высокое значение соответствует более актуальному результату. Релевантность определяется сигналами связи, сотрудничества и рабочих отношений.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -58,3 +58,5 @@ ms.locfileid: "46811422"
   "suppressions": []
 }
 -->
+
+

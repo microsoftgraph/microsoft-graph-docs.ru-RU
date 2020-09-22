@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9a04df77ee010368b73abfe5a2d8d78cfe99b0b4
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d2b7c32a0048e3aafa3c0c56ff91f1ae51542914
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217565"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026154"
 ---
 # <a name="stringkeyobjectvaluepair-resource-type"></a>Тип ресурса Стрингкэйобжектвалуепаир
 
@@ -23,7 +23,7 @@ ms.locfileid: "43217565"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|ключа|String|Ключ.|
+|key|String|Ключ.|
 |значение|Json|Произвольный объект JSON.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -60,3 +60,5 @@ ms.locfileid: "43217565"
   "suppressions": []
 }
 -->
+
+

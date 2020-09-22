@@ -3,14 +3,14 @@ title: Тип ресурса macOSCompliancePolicy
 description: Этот класс содержит параметры обеспечения соответствия требованиям для Mac OS.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a586827ad988c18301347b2a2d1d2d57be2d735b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0e5f3571309c0cecc23d5279201ece9db1b22916
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464195"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026658"
 ---
 # <a name="macoscompliancepolicy-resource-type"></a>Тип ресурса macOSCompliancePolicy
 
@@ -29,22 +29,22 @@ ms.locfileid: "43464195"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Перечисление macOSCompliancePolicies](../api/intune-deviceconfig-macoscompliancepolicy-list.md)|Коллекция [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md)|Список свойств и связей объектов [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md).|
-|[Получение macOSCompliancePolicy](../api/intune-deviceconfig-macoscompliancepolicy-get.md)|[macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md);|Считывание свойств и связей объекта [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md).|
-|[Создание macOSCompliancePolicy](../api/intune-deviceconfig-macoscompliancepolicy-create.md)|[macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md);|Создание объекта [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md).|
+|[Получение macOSCompliancePolicy](../api/intune-deviceconfig-macoscompliancepolicy-get.md)|[macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md)|Считывание свойств и связей объекта [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md).|
+|[Создание macOSCompliancePolicy](../api/intune-deviceconfig-macoscompliancepolicy-create.md)|[macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md)|Создание объекта [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md).|
 |[Удаление macOSCompliancePolicy](../api/intune-deviceconfig-macoscompliancepolicy-delete.md)|None|Удаление экземпляра [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md).|
 |[Обновление macOSCompliancePolicy](../api/intune-deviceconfig-macoscompliancepolicy-update.md)|[macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md)|Обновление свойств объекта [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
-|passwordRequired|Логический|Определяет, нужно ли запрашивать ввод пароля.|
+|passwordRequired|Boolean|Определяет, нужно ли запрашивать ввод пароля.|
 |passwordBlockSimple|Boolean|Указывает, требуется ли блокировать простые пароли.|
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля. Допустимые значения: от 1 до 65 535.|
 |passwordMinimumLength|Int32|Минимальная длина пароля. Допустимые значения: от 4 до 14.|
@@ -65,7 +65,7 @@ ms.locfileid: "43464195"
 |firewallBlockAllIncoming|Boolean|Соответствует параметру "блокировать все входящие подключения".|
 |firewallEnableStealthMode|Boolean|Соответствует параметру "включить скрытый режим".|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |scheduledActionsForRule|Коллекция [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md)|Список запланированных действий для этого правила. Наследуется от [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
@@ -118,6 +118,9 @@ ms.locfileid: "43464195"
   "firewallEnableStealthMode": true
 }
 ```
+
+
+
 
 
 

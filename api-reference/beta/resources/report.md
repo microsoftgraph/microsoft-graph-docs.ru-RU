@@ -1,24 +1,24 @@
 ---
-title: Работа с отчетами об использовании Office 365 в Microsoft Graph
-description: Microsoft Graph позволяет получить доступ к отчетам Office 365 и узнать, как сотрудники компании используют службы Office 365. Например, вы можете определить, кто использует службу по максимуму, а кому вообще не нужна лицензия Office 365.
+title: Работа с отчетами об использовании Microsoft 365 в Microsoft Graph
+description: Microsoft Graph позволяет получить доступ к отчетам Microsoft 365 и узнать, как сотрудники компании используют службы Microsoft 365. Например, можно выяснить, кто слишком активно использует службы и практически выбрал квоты, а кому лицензия Microsoft 365, возможно, и вовсе не нужна.
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 1364ad0463a82d604ab374d073b3bc929804f302
-ms.sourcegitcommit: 2c62457e57467b8d50f21b255b553106a9a5d8d6
+ms.openlocfilehash: 0bb97d2682518950011f62824ae2be3cb7239100
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "36008700"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026376"
 ---
-# <a name="working-with-office-365-usage-reports-in-microsoft-graph"></a>Работа с отчетами об использовании Office 365 в Microsoft Graph
+# <a name="working-with-microsoft-365-usage-reports-in-microsoft-graph"></a>Работа с отчетами об использовании Microsoft 365 в Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph позволяет получить доступ к отчетам Office 365 и узнать, как сотрудники компании используют службы Office 365. Например, вы можете определить, кто использует службу по максимуму, а кому вообще не нужна лицензия Office 365.
+Microsoft Graph позволяет получить доступ к отчетам Microsoft 365 и узнать, как сотрудники компании используют службы Microsoft 365. Например, можно выяснить, кто слишком активно использует службы и практически выбрал квоты, а кому лицензия Microsoft 365, возможно, и вовсе не нужна.
 
-## <a name="authorization"></a>Авторизация
+## <a name="authorization"></a>Authorization
 
 Microsoft Graph позволяет управлять доступом к ресурсам, используя разрешения. Укажите разрешения, необходимые для доступа к отчетам, на портале Azure Active Directory (Azure AD). Дополнительные сведения см. в [справочнике по разрешениям Microsoft Graph](/graph/permissions-reference) и разделе [Разрешения для отчетов](/graph/permissions-reference#reports-permissions).
 
@@ -47,6 +47,9 @@ Microsoft Graph позволяет управлять доступом к рес
 | YammerDeviceUsage       | <ul><li>[getYammerDeviceUsageUserDetail](../api/reportroot-getyammerdeviceusageuserdetail.md);</li><li>[getYammerDeviceUsageDistributionUserCounts](../api/reportroot-getyammerdeviceusagedistributionusercounts.md);</li><li>[getYammerDeviceUsageUserCounts](../api/reportroot-getyammerdeviceusageusercounts.md).</li></ul> |
 | YammerGroupsActivity    | <ul><li>[getYammerGroupsActivityDetail](../api/reportroot-getyammergroupsactivitydetail.md);</li><li>[getYammerGroupsActivityGroupCounts](../api/reportroot-getyammergroupsactivitygroupcounts.md);</li><li>[getYammerGroupsActivityCounts](../api/reportroot-getyammergroupsactivitycounts.md).</li></ul> |
 
+## <a name="whats-new"></a>Новые возможности
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
+
 ## <a name="next-steps"></a>Дальнейшие действия
 
 Ресурсы и API Microsoft Graph открывают новые способы взаимодействия с пользователями и контроля их работы. Чтобы узнать больше:
@@ -55,3 +58,5 @@ Microsoft Graph позволяет управлять доступом к рес
 - Опробуйте API в [песочнице Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+
+

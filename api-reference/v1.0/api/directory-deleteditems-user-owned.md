@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d8ccd5e784886fc6822016d6bd9bd451458e3a1d
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: faf62e2926edc8e2931bdcd9405e0dffd627c678
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181967"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026084"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>Список удаленных элементов, принадлежащих пользователю
 
@@ -58,12 +58,12 @@ POST /directory/deletedItems/getUserOwnedObjects
 | Параметр    | Тип |Описание|
 |:---------------|:--------|:----------|
 |userId|String|Идентификатор владельца.|
-|type|String|Тип собственных объектов, которые требуется вернуть; `Group` в настоящее время является единственным поддерживаемым значением.|
+|type|String|Тип собственных объектов, которые требуется вернуть; в `Group` настоящее время является единственным поддерживаемым значением.|
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Успешные запросы `200 OK` возвращают коды ответа; объект Response содержит свойства [Directory (удаленные элементы)](../resources/directory.md) .
+Успешные запросы возвращают `200 OK` коды ответа; объект Response содержит свойства [Directory (удаленные элементы)](../resources/directory.md) .
 
 ## <a name="example"></a>Пример
 
@@ -123,5 +123,6 @@ Content-length: 1249
         ]
  }
 ```
+
 
 

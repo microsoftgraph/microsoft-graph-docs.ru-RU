@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементусерригхт�
 description: Представляет сведения для локального пользователя или группы, которые используются для настройки прав пользователя.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f17c22d8719f60ee28732727607db62422f1b74b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dd925db9eef2c03702ded5927408c6fc2d6ef399
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469248"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026749"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>Тип ресурса Девицеманажементусерригхтслокалусерорграуп
 
@@ -29,7 +29,7 @@ ms.locfileid: "43469248"
 |description|String|Описание локального пользователя или группы администратором.|
 |securityIdentifier|String|Идентификатор безопасности этого локального пользователя или группы (например, * S-1-5-32-544).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,6 +47,9 @@ ms.locfileid: "43469248"
   "securityIdentifier": "String"
 }
 ```
+
+
+
 
 
 

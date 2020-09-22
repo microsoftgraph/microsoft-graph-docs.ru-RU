@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9aa5462810304fc12e0f87286212d2b0bf57b2d1
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 299636d25e80224867d07661d652d7df972141e3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181953"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026094"
 ---
 # <a name="check-member-groups"></a>Проверка членства в группах
 
@@ -128,3 +128,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

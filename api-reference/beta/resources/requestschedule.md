@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d5a80db31b0499648c5f297b613a198ddec6d25d
-ms.sourcegitcommit: 01f73b4dce6f885da18d62fe800b387c286c7a8e
+ms.openlocfilehash: 9aa3215bacff95cfa03cc2ec050c8f2d2e4f7219
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47413397"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026308"
 ---
 # <a name="requestschedule-resource-type"></a>Тип ресурса Рекуестсчедуле
 
@@ -24,7 +24,7 @@ ms.locfileid: "47413397"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|startDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|startDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |срока действия|[експиратионпаттерн](expirationpattern.md)|По истечении срока действия доступа.|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|Для повторяющегося доступа. Не используется в данный момент.|
 
@@ -60,3 +60,5 @@ ms.locfileid: "47413397"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

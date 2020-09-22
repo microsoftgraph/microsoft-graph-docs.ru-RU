@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 6815209c4a87ee348cb3c37f5b318a5022e4c5b3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f90d90cd0b625c612b125ffc031fe6c3e252a253
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521785"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026537"
 ---
 # <a name="plannerbuckettaskboardtaskformat-resource-type"></a>Тип ресурса plannerBucketTaskBoardTaskFormat
 
@@ -26,7 +26,7 @@ ms.locfileid: "42521785"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat-get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md); |Чтение свойств и связей объекта **plannerBucketTaskBoardTaskFormat** .|
-|[обновление](../api/plannerbuckettaskboardtaskformat-update.md). | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md);  |Обновление объекта **plannerBucketTaskBoardTaskFormat** . |
+|[Обновление](../api/plannerbuckettaskboardtaskformat-update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md);  |Обновление объекта **plannerBucketTaskBoardTaskFormat** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -34,7 +34,7 @@ ms.locfileid: "42521785"
 |id|String| Только для чтения. Идентификатор ресурса. Содержит 28 знаков, учитывается регистр. [Проверка формата](tasks-identifiers-disclaimer.md) проводится для службы.|
 |orderHint|String|Указание, используемое для расположения задач в окне "Сегмент" доски задачи. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
@@ -69,3 +69,5 @@ ms.locfileid: "42521785"
   "suppressions": []
 }
 -->
+
+

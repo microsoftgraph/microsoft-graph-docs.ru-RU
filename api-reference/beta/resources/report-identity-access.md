@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: microsoft-identity-platform
 author: khotz
 doc_type: conceptualPageType
-ms.openlocfilehash: 140aa4598f643defe42364e99dd0c5a79eb4ab6d
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 731eed0f0610c19fde4289b067e03ca2a4533898
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673718"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026378"
 ---
 # <a name="identity-and-access-reports-api-overview"></a>Обзор API отчетов об удостоверениях и доступе
 
@@ -48,3 +48,5 @@ Microsoft Graph позволяет управлять доступом к рес
 
 - Изучите подробнее методы и свойства ресурсов, наиболее полезных для вашего сценария.
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
+
+

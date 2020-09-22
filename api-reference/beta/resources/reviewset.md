@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: resourcePageType
-ms.openlocfilehash: 374984f2d44050c1332ec016f83a1ccdea909ba0
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 76e63c5aece7f7254afa282469a1dc8ce664217f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46510168"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026238"
 ---
 # <a name="reviewset-resource-type"></a>Тип ресурса Review
 
@@ -23,16 +23,16 @@ ms.locfileid: "46510168"
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
 | [Список](../api/reviewset-list.md) | Коллекция [reviewing](reviewset.md) | Получение коллекции наборов проверки. |
-| [получение](../api/reviewset-get.md); | [проверяющий](reviewset.md) | Считывание свойств и связей объекта **reviewing** . |
-| [создание](../api/reviewset-post.md); | [проверяющий](reviewset.md) | Создайте новый набор рецензирования. |
+| [получение](../api/reviewset-get.md); | [reviewSet](reviewset.md) | Считывание свойств и связей объекта **reviewing** . |
+| [создание](../api/reviewset-post.md); | [reviewSet](reviewset.md) | Создайте новый набор рецензирования. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |createdBy| [identitySet](https://docs.microsoft.com/graph/api/resources/identityset) | Пользователь, создавший набор проверки. Только для чтения. |
-|createdDateTime|DateTimeOffset| Дата и время создания набора проверки. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
-|displayName|Строка| Имя набора проверки. Имя уникально с максимальным ограничением в 64 символов. |
+|createdDateTime|DateTimeOffset| Дата и время создания набора проверки. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
+|displayName|String| Имя набора проверки. Имя уникально с максимальным ограничением в 64 символов. |
 |id|String| Уникальный идентификатор набора проверки. Только для чтения. |
 
 ## <a name="relationships"></a>Отношения
@@ -73,3 +73,5 @@ ms.locfileid: "46510168"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
