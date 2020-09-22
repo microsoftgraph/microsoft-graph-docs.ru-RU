@@ -5,53 +5,53 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 161942b9af137071621cfeaf6705b909ce26861a
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: dca9e71d12810dc817bbb962338d2d5a0d34c283
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674507"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042984"
 ---
-# <a name="list-printservices"></a><span data-ttu-id="2f0c7-103">Список Принтсервицес</span><span class="sxs-lookup"><span data-stu-id="2f0c7-103">List printServices</span></span>
+# <a name="list-printservices"></a><span data-ttu-id="deed7-103">Список Принтсервицес</span><span class="sxs-lookup"><span data-stu-id="deed7-103">List printServices</span></span>
 
-<span data-ttu-id="2f0c7-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2f0c7-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="deed7-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="deed7-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2f0c7-105">Получение списка объектов [принтсервице](../resources/printservice.md) , представляющих **службы** , доступные в клиенте.</span><span class="sxs-lookup"><span data-stu-id="2f0c7-105">Retrieve a list of [printService](../resources/printservice.md) objects that represent the **services** available to your tenant.</span></span>
+<span data-ttu-id="deed7-105">Получение списка объектов [принтсервице](../resources/printservice.md) , представляющих **службы** , доступные в клиенте.</span><span class="sxs-lookup"><span data-stu-id="deed7-105">Retrieve a list of [printService](../resources/printservice.md) objects that represent the **services** available to your tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2f0c7-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2f0c7-106">Permissions</span></span>
-<span data-ttu-id="2f0c7-107">Для вызова этого API не требуется никаких разрешений, но чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать.</span><span class="sxs-lookup"><span data-stu-id="2f0c7-107">No permissions are needed to call this API, but to use the Universal Print service, the user or app's tenant must have an active Universal Print subscription.</span></span>
+## <a name="permissions"></a><span data-ttu-id="deed7-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="deed7-106">Permissions</span></span>
+<span data-ttu-id="deed7-107">Для вызова этого API не требуется никаких разрешений, но чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать.</span><span class="sxs-lookup"><span data-stu-id="deed7-107">No permissions are needed to call this API, but to use the Universal Print service, the user or app's tenant must have an active Universal Print subscription.</span></span>
 
-|<span data-ttu-id="2f0c7-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2f0c7-108">Permission type</span></span> | <span data-ttu-id="2f0c7-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2f0c7-109">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="deed7-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="deed7-108">Permission type</span></span> | <span data-ttu-id="deed7-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="deed7-109">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="2f0c7-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2f0c7-110">Delegated (work or school account)</span></span>|<span data-ttu-id="2f0c7-111">Нет.</span><span class="sxs-lookup"><span data-stu-id="2f0c7-111">None.</span></span>|
-|<span data-ttu-id="2f0c7-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2f0c7-112">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2f0c7-113">Нет.</span><span class="sxs-lookup"><span data-stu-id="2f0c7-113">None.</span></span>|
-|<span data-ttu-id="2f0c7-114">Приложение</span><span class="sxs-lookup"><span data-stu-id="2f0c7-114">Application</span></span>|<span data-ttu-id="2f0c7-115">Нет.</span><span class="sxs-lookup"><span data-stu-id="2f0c7-115">None.</span></span>|
+|<span data-ttu-id="deed7-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="deed7-110">Delegated (work or school account)</span></span>|<span data-ttu-id="deed7-111">Нет</span><span class="sxs-lookup"><span data-stu-id="deed7-111">None.</span></span>|
+|<span data-ttu-id="deed7-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="deed7-112">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="deed7-113">Нет.</span><span class="sxs-lookup"><span data-stu-id="deed7-113">None.</span></span>|
+|<span data-ttu-id="deed7-114">Приложение</span><span class="sxs-lookup"><span data-stu-id="deed7-114">Application</span></span>|<span data-ttu-id="deed7-115">Нет.</span><span class="sxs-lookup"><span data-stu-id="deed7-115">None.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2f0c7-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2f0c7-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="deed7-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="deed7-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /print/services
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="2f0c7-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="2f0c7-117">Optional query parameters</span></span>
-<span data-ttu-id="2f0c7-118">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="2f0c7-118">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="2f0c7-119">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="2f0c7-119">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="deed7-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="deed7-117">Optional query parameters</span></span>
+<span data-ttu-id="deed7-118">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="deed7-118">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="deed7-119">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="deed7-119">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="2f0c7-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2f0c7-120">Request headers</span></span>
-| <span data-ttu-id="2f0c7-121">Имя</span><span class="sxs-lookup"><span data-stu-id="2f0c7-121">Name</span></span>      |<span data-ttu-id="2f0c7-122">Описание</span><span class="sxs-lookup"><span data-stu-id="2f0c7-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="deed7-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="deed7-120">Request headers</span></span>
+| <span data-ttu-id="deed7-121">Имя</span><span class="sxs-lookup"><span data-stu-id="deed7-121">Name</span></span>      |<span data-ttu-id="deed7-122">Описание</span><span class="sxs-lookup"><span data-stu-id="deed7-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="2f0c7-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2f0c7-123">Authorization</span></span> | <span data-ttu-id="2f0c7-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2f0c7-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="deed7-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="deed7-123">Authorization</span></span> | <span data-ttu-id="deed7-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="deed7-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2f0c7-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2f0c7-126">Request body</span></span>
-<span data-ttu-id="2f0c7-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="2f0c7-127">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="2f0c7-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="2f0c7-128">Response</span></span>
-<span data-ttu-id="2f0c7-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [принтсервице](../resources/printservice.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2f0c7-129">If successful, this method returns a `200 OK` response code and a collection of [printService](../resources/printservice.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="2f0c7-130">Пример</span><span class="sxs-lookup"><span data-stu-id="2f0c7-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="2f0c7-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="2f0c7-131">Request</span></span>
-<span data-ttu-id="2f0c7-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2f0c7-132">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="deed7-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="deed7-126">Request body</span></span>
+<span data-ttu-id="deed7-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="deed7-127">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="deed7-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="deed7-128">Response</span></span>
+<span data-ttu-id="deed7-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [принтсервице](../resources/printservice.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="deed7-129">If successful, this method returns a `200 OK` response code and a collection of [printService](../resources/printservice.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="deed7-130">Пример</span><span class="sxs-lookup"><span data-stu-id="deed7-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="deed7-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="deed7-131">Request</span></span>
+<span data-ttu-id="deed7-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="deed7-132">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2f0c7-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="2f0c7-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="deed7-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="deed7-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_services"
@@ -59,23 +59,23 @@ GET /print/services
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/services
 ```
-# <a name="c"></a>[<span data-ttu-id="2f0c7-134">C#</span><span class="sxs-lookup"><span data-stu-id="2f0c7-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="deed7-134">C#</span><span class="sxs-lookup"><span data-stu-id="deed7-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-services-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2f0c7-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2f0c7-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="deed7-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="deed7-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-services-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2f0c7-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2f0c7-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="deed7-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="deed7-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-services-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="2f0c7-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="2f0c7-137">Response</span></span>
-<span data-ttu-id="2f0c7-138">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="2f0c7-138">The following is an example of the response.</span></span>
-><span data-ttu-id="2f0c7-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2f0c7-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="deed7-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="deed7-137">Response</span></span>
+<span data-ttu-id="deed7-138">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="deed7-138">The following is an example of the response.</span></span>
+><span data-ttu-id="deed7-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="deed7-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -113,3 +113,5 @@ Content-length: 389
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

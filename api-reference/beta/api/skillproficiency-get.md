@@ -5,32 +5,32 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: f50aea492aebbcd7e81404c042ab9746657573fe
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 2844d5de83ec3302a2503bd51e1ee42f3a5bd727
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807950"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044381"
 ---
-# <a name="get-skillproficiency"></a><span data-ttu-id="5aca3-103">Получение СкиллпрофиЦиенци</span><span class="sxs-lookup"><span data-stu-id="5aca3-103">Get skillProficiency</span></span>
+# <a name="get-skillproficiency"></a><span data-ttu-id="ad430-103">Получение СкиллпрофиЦиенци</span><span class="sxs-lookup"><span data-stu-id="ad430-103">Get skillProficiency</span></span>
 
-<span data-ttu-id="5aca3-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5aca3-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ad430-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ad430-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5aca3-105">Получение свойств и связей объекта [скиллпрофиЦиенци](../resources/skillproficiency.md) в [профиле](../resources/profile.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="5aca3-105">Retrieve the properties and relationships of a [skillproficiency](../resources/skillproficiency.md) object in a user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="ad430-105">Получение свойств и связей объекта [скиллпрофиЦиенци](../resources/skillproficiency.md) в [профиле](../resources/profile.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="ad430-105">Retrieve the properties and relationships of a [skillproficiency](../resources/skillproficiency.md) object in a user's [profile](../resources/profile.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5aca3-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5aca3-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ad430-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ad430-106">Permissions</span></span>
 
-<span data-ttu-id="5aca3-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5aca3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ad430-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ad430-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="5aca3-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5aca3-109">Permission type</span></span>                        | <span data-ttu-id="5aca3-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5aca3-110">Permissions (from least to most privileged)</span></span>                                      |
+| <span data-ttu-id="ad430-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ad430-109">Permission type</span></span>                        | <span data-ttu-id="ad430-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ad430-110">Permissions (from least to most privileged)</span></span>                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| <span data-ttu-id="5aca3-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5aca3-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="5aca3-112">User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="5aca3-112">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
-| <span data-ttu-id="5aca3-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5aca3-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5aca3-114">User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="5aca3-114">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
-| <span data-ttu-id="5aca3-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="5aca3-115">Application</span></span>                            | <span data-ttu-id="5aca3-116">User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="5aca3-116">User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span>                            |
+| <span data-ttu-id="ad430-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ad430-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ad430-112">User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="ad430-112">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
+| <span data-ttu-id="ad430-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ad430-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ad430-114">User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="ad430-114">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
+| <span data-ttu-id="ad430-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ad430-115">Application</span></span>                            | <span data-ttu-id="ad430-116">User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="ad430-116">User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span>                            |
 
-## <a name="http-request"></a><span data-ttu-id="5aca3-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5aca3-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ad430-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ad430-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,33 +39,33 @@ GET /me/profile/skills/{id}
 GET /users/{id | userPrincipalName}/profile/skills/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="5aca3-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="5aca3-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="ad430-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="ad430-118">Optional query parameters</span></span>
 
-<span data-ttu-id="5aca3-119">Этот метод поддерживает `$select` параметр запроса.</span><span class="sxs-lookup"><span data-stu-id="5aca3-119">This method supports the `$select` query parameter.</span></span> <span data-ttu-id="5aca3-120">Укажите список свойств, которые необходимо включить в ответ, разделяя их запятыми.</span><span class="sxs-lookup"><span data-stu-id="5aca3-120">Specify a list of properties to include in the response, separating them by commas.</span></span> <span data-ttu-id="5aca3-121">Для обеспечения оптимальной производительности следует выбирать только подмножество нужных свойств.</span><span class="sxs-lookup"><span data-stu-id="5aca3-121">For optimal performance, only select the subset of properties needed.</span></span>
+<span data-ttu-id="ad430-119">Этот метод поддерживает `$select` параметр запроса.</span><span class="sxs-lookup"><span data-stu-id="ad430-119">This method supports the `$select` query parameter.</span></span> <span data-ttu-id="ad430-120">Укажите список свойств, которые необходимо включить в ответ, разделяя их запятыми.</span><span class="sxs-lookup"><span data-stu-id="ad430-120">Specify a list of properties to include in the response, separating them by commas.</span></span> <span data-ttu-id="ad430-121">Для обеспечения оптимальной производительности следует выбирать только подмножество нужных свойств.</span><span class="sxs-lookup"><span data-stu-id="ad430-121">For optimal performance, only select the subset of properties needed.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="5aca3-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5aca3-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ad430-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ad430-122">Request headers</span></span>
 
-| <span data-ttu-id="5aca3-123">Имя</span><span class="sxs-lookup"><span data-stu-id="5aca3-123">Name</span></span>           | <span data-ttu-id="5aca3-124">Описание</span><span class="sxs-lookup"><span data-stu-id="5aca3-124">Description</span></span>                  |
+| <span data-ttu-id="ad430-123">Имя</span><span class="sxs-lookup"><span data-stu-id="ad430-123">Name</span></span>           | <span data-ttu-id="ad430-124">Описание</span><span class="sxs-lookup"><span data-stu-id="ad430-124">Description</span></span>                  |
 |:---------------|:-----------------------------|
-| <span data-ttu-id="5aca3-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5aca3-125">Authorization</span></span>  | <span data-ttu-id="5aca3-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5aca3-p103">Bearer {token}. Required.</span></span>    |
-| <span data-ttu-id="5aca3-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5aca3-128">Content-Type</span></span>   | <span data-ttu-id="5aca3-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5aca3-p104">application/json. Required.</span></span>  |
+| <span data-ttu-id="ad430-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ad430-125">Authorization</span></span>  | <span data-ttu-id="ad430-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ad430-p103">Bearer {token}. Required.</span></span>    |
+| <span data-ttu-id="ad430-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ad430-128">Content-Type</span></span>   | <span data-ttu-id="ad430-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ad430-p104">application/json. Required.</span></span>  |
 
 
-## <a name="request-body"></a><span data-ttu-id="5aca3-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5aca3-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ad430-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ad430-131">Request body</span></span>
 
-<span data-ttu-id="5aca3-132">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="5aca3-132">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="ad430-132">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ad430-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5aca3-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="5aca3-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ad430-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="ad430-133">Response</span></span>
 
-<span data-ttu-id="5aca3-134">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [скиллпрофиЦиенци](../resources/skillproficiency.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="5aca3-134">If successful, this method returns a `200 OK` response code and the requested [skillProficiency](../resources/skillproficiency.md) object in the response body.</span></span>
+<span data-ttu-id="ad430-134">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [скиллпрофиЦиенци](../resources/skillproficiency.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ad430-134">If successful, this method returns a `200 OK` response code and the requested [skillProficiency](../resources/skillproficiency.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="5aca3-135">Примеры</span><span class="sxs-lookup"><span data-stu-id="5aca3-135">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ad430-135">Примеры</span><span class="sxs-lookup"><span data-stu-id="ad430-135">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="5aca3-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="5aca3-136">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ad430-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="ad430-136">Request</span></span>
 
-<span data-ttu-id="5aca3-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5aca3-137">The following is an example of the request.</span></span>
+<span data-ttu-id="ad430-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ad430-137">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="5aca3-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="5aca3-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ad430-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="ad430-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_skillproficiency"
@@ -74,26 +74,26 @@ GET /users/{id | userPrincipalName}/profile/skills/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/skills/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="5aca3-139">C#</span><span class="sxs-lookup"><span data-stu-id="5aca3-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ad430-139">C#</span><span class="sxs-lookup"><span data-stu-id="ad430-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-skillproficiency-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5aca3-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5aca3-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ad430-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ad430-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-skillproficiency-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5aca3-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5aca3-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ad430-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ad430-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-skillproficiency-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="5aca3-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="5aca3-142">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ad430-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="ad430-142">Response</span></span>
 
-<span data-ttu-id="5aca3-143">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="5aca3-143">The following is an example of the response.</span></span>
+<span data-ttu-id="ad430-143">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ad430-143">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="5aca3-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5aca3-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="ad430-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ad430-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -139,3 +139,5 @@ Content-type: application/json
   ]
 }
 ```
+
+
