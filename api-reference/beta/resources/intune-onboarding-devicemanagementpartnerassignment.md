@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементпартнерас�
 description: Целевая группа пользователей для партнера по управлению устройствами
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 23094519b0271e60bdafb33e8c95eb103510451e
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: fdfa45e87091a1a98a7cbdb29b310e5fce4daea5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44788880"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029514"
 ---
 # <a name="devicemanagementpartnerassignment-resource-type"></a>Тип ресурса Девицеманажементпартнерассигнмент
 
@@ -27,7 +27,7 @@ ms.locfileid: "44788880"
 |:---|:---|:---|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Группы пользователей, предназначенные для регистрации устройств с помощью партнера.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,6 +47,9 @@ ms.locfileid: "44788880"
   }
 }
 ```
+
+
+
 
 
 
