@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9bd867642da41b2aa0644744655c94b1d842d977
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: d274c73cfcfb71bb86349dbe4cbbc7661e9e7a16
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154271"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078152"
 ---
 # <a name="swapshiftschangerequest-resource-type"></a>Тип ресурса Свапшифтсчанжерекуест
 
@@ -24,8 +24,8 @@ ms.locfileid: "44154271"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [List](../api/swapshiftschangerequest-list.md) | Коллекция [свапшифтсчанжерекуест](swapshiftschangerequest.md) | Перечисление свойств и связей объектов **свапшифтсчанжерекуест** в команде. |
-| [создание](../api/swapshiftschangerequest-post.md); | [свапшифтсчанжерекуест](swapshiftschangerequest.md) | Создайте экземпляр объекта свапшифтсчанжерекуест. |
+| [Список](../api/swapshiftschangerequest-list.md) | Коллекция [свапшифтсчанжерекуест](swapshiftschangerequest.md) | Перечисление свойств и связей объектов **свапшифтсчанжерекуест** в команде. |
+| [Создание](../api/swapshiftschangerequest-post.md) | [свапшифтсчанжерекуест](swapshiftschangerequest.md) | Создайте экземпляр объекта свапшифтсчанжерекуест. |
 | [получение](../api/swapshiftschangerequest-get.md); | [свапшифтсчанжерекуест](swapshiftschangerequest.md) | Чтение свойств и связей объекта **свапшифтсчанжерекуест** . |
 |[Утвердить](../api/swapshiftschangerequest-approve.md)|Нет|Утверждение **свапшифтсчанжерекуест**. |
 |[Отклоня](../api/swapshiftschangerequest-decline.md)|Нет|Отклонить **свапшифтсчанжерекуест**.|
@@ -34,9 +34,9 @@ ms.locfileid: "44154271"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|реЦипиентшифтид|Строка|Идентификатор смены для пользователя получателя, с которым отправляется запрос на переключение.|
+|реЦипиентшифтид|String|Идентификатор смены для пользователя получателя, с которым отправляется запрос на переключение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -68,3 +68,5 @@ ms.locfileid: "44154271"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 32ebcbb4b4d0c8721b5cd1d1a421edb37d836821
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 30c2ed5e6884fb73460847b61c1b32ba8ae0a692
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519129"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023769"
 ---
 # <a name="workbooktablecolumn-resource-type"></a>Тип ресурса Воркбуктаблеколумн
 
@@ -31,7 +31,7 @@ ms.locfileid: "42519129"
 |[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[workbookRange](workbookrange.md)|Получает объект диапазона, связанный со строкой заголовков столбца.|
 |[Range](../api/tablecolumn-range.md)|[workbookRange](workbookrange.md)|Получает объект диапазона, связанный со всем столбцом.|
 |[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[workbookRange](workbookrange.md)|Получает объект диапазона, связанный со строкой итогов столбца.|
-|[удаление](../api/tablecolumn-delete.md);|Нет|Удаляет столбец из таблицы.|
+|[Удаление](../api/tablecolumn-delete.md)|Нет|Удаляет столбец из таблицы.|
 |[Список](../api/tablecolumn-list.md) | Коллекция [воркбуктаблеколумн](workbooktablecolumn.md) |Получение коллекции объектов tableColumn. |
 |[Itemat](../api/tablecolumncollection-itemat.md)|[воркбуктаблеколумн](workbooktablecolumn.md)|Возвращает столбец на основании его позиции в коллекции.|
 |[Add](../api/tablecolumncollection-add.md)|[воркбуктаблеколумн](workbooktablecolumn.md)|Добавляет новый столбец в таблицу.|
@@ -85,3 +85,5 @@ ms.locfileid: "42519129"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f9e8dba8829e7f5340a3ba43d8d9a31df4f98049
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 82d671f411725a1e6537580205c7298cf887e3a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217523"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023844"
 ---
 # <a name="synchronizationjobrestartcriteria-resource-type"></a>Тип ресурса Синчронизатионжобрестарткритериа
 
@@ -23,7 +23,7 @@ ms.locfileid: "43217523"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|ресетскопе|String| Разделенная запятыми комбинация следующих значений: `Full`, `QuarantineState` `Watermark`,, `Escrows`, `ConnectorDataStore`. Используйте `Full` , если вы хотите использовать все параметры.|
+|ресетскопе|String| Разделенная запятыми комбинация следующих значений: `Full` ,,, `QuarantineState` `Watermark` `Escrows` , `ConnectorDataStore` . Используйте `Full` , если вы хотите использовать все параметры.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -39,8 +39,11 @@ ms.locfileid: "43217523"
 
 ```json
 {
-  "resetScope": "String"
+    "criteria": {
+        "resetScope": "String"
+    }
 }
+
 
 ```
 
@@ -56,3 +59,5 @@ ms.locfileid: "43217523"
   "suppressions": []
 }
 -->
+
+

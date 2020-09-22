@@ -3,14 +3,14 @@ title: Список Ремотеактионаудитс
 description: Список свойств и связей объектов remoteActionAudit.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b3f3ada26bdc666568ab6e1c7ad8312493d4cea
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4d63b3a97f94b95819159710b20a959b42540336
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43323584"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017614"
 ---
 # <a name="list-remoteactionaudits"></a>Список Ремотеактионаудитс
 
@@ -43,13 +43,13 @@ GET /deviceManagement/remoteActionAudits
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -85,6 +85,9 @@ Content-Length: 630
   ]
 }
 ```
+
+
+
 
 
 

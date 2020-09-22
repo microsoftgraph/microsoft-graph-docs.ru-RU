@@ -3,14 +3,14 @@ title: тип перечисления Виклисчедуле
 description: Возможные значения для еженедельного расписания.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ce3e6eb555171291763f0560cf980cad41455659
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b42190293167e324ebf4ba4a9d4b972a09aa3a00
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43383385"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058188"
 ---
 # <a name="weeklyschedule-enum-type"></a>тип перечисления Виклисчедуле
 
@@ -26,8 +26,8 @@ ms.locfileid: "43383385"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|решения|1,1|Решения.|
-|воскресеньям|2|Воскресеньям.|
+|решения|1 |Решения.|
+|воскресеньям|2 |Воскресеньям.|
 |Вторник|4|Вторник.|
 |во|4 |Во.|
 |Четверг|5 |Четверг.|
@@ -35,6 +35,9 @@ ms.locfileid: "43383385"
 |пятницам|7 |Пятницам.|
 |субботу|8 |Субботу.|
 |носчедуледскан|9 |Без запланированного сканирования|
+
+
+
 
 
 

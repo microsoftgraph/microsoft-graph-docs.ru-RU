@@ -3,14 +3,14 @@ title: тип перечисления win32LobAppRegistryRuleOperationType
 description: Содержит все поддерживаемые типы обнаружения данных в реестре.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b0aefbf5fd234bac0704c9c9f983e19ed11cbcfe
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: e8b40d1d56305d19258693755531310c5c88becc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790308"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071075"
 ---
 # <a name="win32lobappregistryruleoperationtype-enum-type"></a>тип перечисления win32LobAppRegistryRuleOperationType
 
@@ -27,10 +27,13 @@ ms.locfileid: "44790308"
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
 |Существует|1 |Указанный раздел или значение реестра существуют.|
-|доеснотексист|2|Указанный раздел реестра или значение не существует.|
+|доеснотексист|2 |Указанный раздел реестра или значение не существует.|
 |string|4|Тип строкового значения.|
 |целое|4 |Тип значения Integer.|
 |version|5 |Тип значения Version.|
+
+
+
 
 
 

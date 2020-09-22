@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ceb14a8ee5f1504a9e3bb0d0bc5ebef59f1eac06
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 4b07f3d474c221ec610152848f5240cd20114552
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44788726"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030495"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -28,6 +28,7 @@ ms.locfileid: "44788726"
 - [Регистрация управляемых приложений для Android](intune-mam-androidmanagedappregistration.md)
 - [Тип проверки приложений системы безопасности для управляемых приложений для Android](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
 - [Тип аттестации устройства системы безопасности для управляемых приложений для Android](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
+- [Тип оценки сети безопасности управляемого приложения Android](intune-mam-androidmanagedappsafetynetevaluationtype.md)
 - [Идентификатор мобильных приложений для Android](intune-mam-androidmobileappidentifier.md)
 - [Уровень управления приложениями](intune-mam-appmanagementlevel.md)
 - [Тип приложения](intune-wip-applicationtype.md)
@@ -79,3 +80,5 @@ ms.locfileid: "44788726"
 - [Коллекция ресурсов Windows Information Protection](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Приложение из магазина Windows Information Protection](intune-mam-windowsinformationprotectionstoreapp.md)
 - [Действие wipe для Windows Information Protection](intune-mam-windowsinformationprotectionwipeaction.md)
+
+

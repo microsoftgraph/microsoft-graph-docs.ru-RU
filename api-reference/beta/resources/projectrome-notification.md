@@ -5,16 +5,16 @@ localization_priority: Normal
 ms.prod: notifications
 doc_type: resourcePageType
 author: merzink
-ms.openlocfilehash: e665cb3e87360c85bb7ee3926e8395a1cbba4de6
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 97b3d5be5039baff9f73019dbdc54947614d3c1b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44290218"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078234"
 ---
 # <a name="notification-resource-type"></a>Тип ресурса Notification
 
-Пространство имен: Microsoft. Graph[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет уведомление, которое публикует сервер приложений, предназначенный для указанного пользователя. Уведомление хранится в Microsoft Graph и распространяется на другие конечные точки устройств, принадлежащие пользователю. 
 
@@ -84,3 +84,5 @@ ms.locfileid: "44290218"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

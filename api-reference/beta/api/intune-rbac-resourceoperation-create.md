@@ -3,14 +3,14 @@ title: Создание объекта resourceOperation
 description: Создание объекта resourceOperation.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a66d2ed153a18f62f449a352966f6bec07079d6
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: e652419b28bb1ab7703b12a75f651fb76b49d301
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43421151"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064796"
 ---
 # <a name="create-resourceoperation"></a>Создание объекта resourceOperation
 
@@ -43,7 +43,7 @@ POST /deviceManagement/resourceOperations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/resourceOperations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
+|id|String|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
 |resource|String|Категория ресурса, к которой относится данная операция.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально краткое (максимум несколько слов).|
@@ -101,6 +101,9 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
+
+
+
 
 
 

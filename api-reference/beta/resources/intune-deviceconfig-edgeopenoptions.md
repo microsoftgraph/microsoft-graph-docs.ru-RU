@@ -3,14 +3,14 @@ title: тип перечисления Еджеопеноптионс
 description: Возможные значения параметра Еджеопенсвис.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cafd35b91b998a60f0d6e1df81baca20633a059d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6cc693b1d8986cdbfeb6fc64eb5869a9ab44db2c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386255"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058195"
 ---
 # <a name="edgeopenoptions-enum-type"></a>тип перечисления Еджеопеноптионс
 
@@ -26,10 +26,13 @@ ms.locfileid: "43386255"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|startPage|1,1|StartPage.|
-|невтабпаже|2|Невтабпаже.|
+|startPage|1 |StartPage.|
+|невтабпаже|2 |Невтабпаже.|
 |превиауспажес|4|Превиауспажес.|
 |спеЦификпажес|4 |СпеЦификпажес.|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Тип ресурса win32LobAppRequirement
 description: Базовый класс для обнаружения приложения Win32
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b32be470753f62b725b0cd1f91177ab8f1826d66
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c8670fbff1bb4799d043ecce4e3a63dcb2343ece
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43422648"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071061"
 ---
 # <a name="win32lobapprequirement-resource-type"></a>Тип ресурса win32LobAppRequirement
 
@@ -28,7 +28,7 @@ ms.locfileid: "43422648"
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор для обнаружения. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |детектионвалуе|String|Значение обнаружения|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,6 +45,9 @@ ms.locfileid: "43422648"
   "detectionValue": "String"
 }
 ```
+
+
+
 
 
 

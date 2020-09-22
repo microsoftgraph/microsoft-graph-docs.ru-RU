@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ailae
-ms.openlocfilehash: 73f725dde241e5fc37ace2bc6b5ac92e5401a9fc
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d260891c2a0a178cfaa3d2992385dc260be515fc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812564"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044725"
 ---
 # <a name="send-device-command"></a>Отправка команд для устройства
 
@@ -47,7 +47,7 @@ POST me/devices/{id}/commands
 |Авторизация| Bearer {токен}. Обязательный. |
 |Accept | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление свойств команды в формате JSON.
 
@@ -61,7 +61,7 @@ POST me/devices/{id}/commands
 }
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ```http
 HTTP/1.1 201 OK
@@ -87,13 +87,13 @@ HTTP/1.1 201 OK
 |:----|:------|:------|
 |payload | microsoft.graph.jsна| Полезные данные для отправки в службу приложения или для запуска URI на устройстве. |
 |респонсепайлоад | microsoft.graph.jsна| Полезные данные, возвращенные с целевого устройства. |
-|постбаккури | String | Обратный адрес URI для отправки последующих уведомлений об обновлениях. |
-|паккажефамилинаме | String | Имя семейства пакетов Windows Application. |
-|аппсервиценаме | String | Имя службы приложений, определенной конечным приложением. Является обязательным при запуске службы приложений. |
-|type| String | Лаунчури или включающее. |
-|id| String | Идентификатор команды, отправленной на устройство. |
-|актионстатус | String | [Состояние](get-device-command-status.md) команды. |
-|error| String| Все ошибки, связанные с запросом от конечного приложения. |
+|постбаккури | Строка | Обратный адрес URI для отправки последующих уведомлений об обновлениях. |
+|паккажефамилинаме | Строка | Имя семейства пакетов Windows Application. |
+|аппсервиценаме | Строка | Имя службы приложений, определенной конечным приложением. Является обязательным при запуске службы приложений. |
+|type| Строка | Лаунчури или включающее. |
+|id| Строка | Идентификатор команды, отправленной на устройство. |
+|актионстатус | Строка | [Состояние](get-device-command-status.md) команды. |
+|error| Строка| Все ошибки, связанные с запросом от конечного приложения. |
 
 ## <a name="examples"></a>Примеры
 
@@ -117,7 +117,7 @@ Content-Type: application/json; charset=utf-8
 { "type" : "LaunchUri", "payload" : {"uri":"https://bing.com"}}
 
 ```
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "ignored",
@@ -202,3 +202,5 @@ HTTP/1.1 201 OK
   }
 }
 ```
+
+

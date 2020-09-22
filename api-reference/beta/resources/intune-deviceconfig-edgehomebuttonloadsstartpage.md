@@ -3,14 +3,14 @@ title: Тип ресурса Еджехомебуттонлоадсстартп�
 description: Отображение кнопки "домой"; При нажатии кнопки "домой" загружается Начальная страница — это также значение по умолчанию.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5cac7794a82df2d5abb209b94ef27d59a1b5161f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 79a588829b99bf195b50b896dcf70716bd501320
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386363"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058244"
 ---
 # <a name="edgehomebuttonloadsstartpage-resource-type"></a>Тип ресурса Еджехомебуттонлоадсстартпаже
 
@@ -44,6 +44,9 @@ ms.locfileid: "43386363"
   "@odata.type": "#microsoft.graph.edgeHomeButtonLoadsStartPage"
 }
 ```
+
+
+
 
 
 

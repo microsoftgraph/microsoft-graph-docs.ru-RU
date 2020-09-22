@@ -3,24 +3,23 @@ title: Тип ресурса Сеарчкуеристринг
 description: сеарчкуеристринг
 localization_priority: Normal
 author: nmoreau
-ms.prod: ''
+ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 67acb8c18e5a65d6462787299a5c9e57b0f2d485
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 70c029ccb7751287b090015467549169dde4bae9
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985736"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193257"
 ---
-# <a name="searchquerystring-resource-type"></a>Тип ресурса Сеарчкуеристринг
+# <a name="searchquerystring-resource-type-deprecated"></a>Тип ресурса Сеарчкуеристринг (не рекомендуется)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 Условия поиска для запроса.
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## <a name="properties"></a>Свойства
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: e35b3fe674c9f92b7dab723325d658facf13962f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 824270ba51de4360084f9f978cab31b92730edc1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520291"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078166"
 ---
 # <a name="subscribetotoneoperation-resource-type"></a>Тип ресурса Субскрибетотонеоператион
 
@@ -25,7 +25,7 @@ ms.locfileid: "42520291"
 | Свойство                       | Тип                        | Описание                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | Контекст                  | String                      | Контекст клиента.                                                                                                                               |
-| id                             | Строка                      | ИДЕНТИФИКАТОР операции сервера. Только для чтения.                                                                                             |
+| id                             | String                      | ИДЕНТИФИКАТОР операции сервера. Только для чтения.                                                                                             |
 | resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения.                                                                                             |
 | status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения.                                                 |
 
@@ -61,3 +61,5 @@ ms.locfileid: "42520291"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

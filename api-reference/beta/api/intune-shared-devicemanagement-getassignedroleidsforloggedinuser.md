@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6790d5121c8c3eced7ee0a5ea769469b8b9eaee5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5585dd25c1eff817be4c7fbc3cb420ac9d01e600
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43390177"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044804"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>Функция Жетассигнедролеидсфорлогжединусер
 
@@ -46,11 +46,11 @@ GET /deviceManagement/getAssignedRoleIdsForLoggedInUser
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
-В случае успеха эта функция возвращает код `200 OK` отклика и объект **девицеандаппманажементассигнедролеид** в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успеха эта функция возвращает `200 OK` код отклика и объект **девицеандаппманажементассигнедролеид** в тексте отклика.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -78,6 +78,9 @@ Content-Length: 263
   }
 }
 ```
+
+
+
 
 
 

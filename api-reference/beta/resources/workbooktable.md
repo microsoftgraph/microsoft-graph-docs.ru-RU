@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: d6a95756e59a8dc0040406b9fc678a312e14a499
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7110993ad38dd9673d36c2d6d1fb2eabc3872da2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519136"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023774"
 ---
 # <a name="workbooktable-resource-type"></a>Тип ресурса Воркбуктабле
 
@@ -36,15 +36,15 @@ ms.locfileid: "42519136"
 |[Totalrowrange](../api/table-totalrowrange.md)|[workbookRange](workbookrange.md)|Получает объект диапазона, связанный со строкой итогов таблицы.|
 |[Clearfilters](../api/table-clearfilters.md)|Нет|Удаляет все фильтры, примененные к таблице.|
 |[Converttorange](../api/table-converttorange.md)|[workbookRange](workbookrange.md)|Преобразовывает таблицу в обычный диапазон ячеек. Все данные сохраняются.|
-|[Delete](../api/table-delete.md)|Нет.|Удаляет таблицу.|
+|[Delete](../api/table-delete.md)|Нет|Удаляет таблицу.|
 |[Reapplyfilters](../api/table-reapplyfilters.md)|Нет|Повторно применяет все текущие фильтры к таблице.|
-|[List](../api/table-list.md) | Коллекция [воркбуктабле](workbooktable.md) |Получение коллекции объектов table. |
+|[List](../api/table-list.md) | Коллекция [workbookTable](workbooktable.md) |Получение коллекции объектов table. |
 |[Add](../api/tablecollection-add.md)|[воркбуктабле](workbooktable.md)|Создание таблицы. Исходный адрес диапазона определяет лист, на который будет добавлена таблица. Если не удается добавить таблицу (например, если адрес недействителен или одна таблица будет перекрываться другой), выводится сообщение об ошибке.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|строка|Возвращает значение, однозначно идентифицирующее таблицу в данной книге. Значение идентификатора остается прежним, даже если переименовать таблицу. Это свойство должно интерпретироваться как непрозрачное строковое значение и не должно преобразовываться в любой другой тип. Только для чтения.|
+|id|string|Возвращает значение, однозначно идентифицирующее таблицу в данной книге. Значение идентификатора остается прежним, даже если переименовать таблицу. Это свойство должно интерпретироваться как непрозрачное строковое значение и не должно преобразовываться в любой другой тип. Только для чтения.|
 |name|string|Имя таблицы.|
 |showHeaders|boolean|Указывает, отображается ли строка заголовков. Можно задать это значение, чтобы отобразить или скрыть строку заголовков.|
 |showTotals|boolean|Указывает, отображается ли строка итогов. Можно задать это значение, чтобы отобразить или скрыть строку итогов.|
@@ -107,3 +107,5 @@ ms.locfileid: "42519136"
   "suppressions": []
 }
 -->
+
+

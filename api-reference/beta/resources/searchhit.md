@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Сеарчхит
-description: УКАЖИТЕ ОПИСАНИЕ
+description: Описание объекта Сеарчхит
 localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 3d010f3731fa65e1ab2dc3abbf84ffdc5ebdb732
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c140a30d4e77840b1fd7c7ccceec16e0554cd855
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985778"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193612"
 ---
 # <a name="searchhit-resource-type"></a>Тип ресурса Сеарчхит
 
@@ -18,19 +18,24 @@ ms.locfileid: "47985778"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет один результат в списке результатов поиска.
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+Представляет один результат в списке результатов поиска.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|_id|String|Внутренний идентификатор элемента.|
-|_score|Int32|Оценка или порядок результатов.|
-|_sortField|String|Используемый порядок сортировки. Это может быть значение DateTime или релевантность.|
-|_summary|String|Сводка результатов (если доступна сводка).|
-|_source|[entity](entity.md)|Базовое представление результата поиска на диаграмме.|
+|хитид|String|Внутренний идентификатор элемента.|
+|rank|Int32|Ранг или порядок результатов.|
+|contentSource|String|Имя источника контента, частью которого является **екстерналитем** .|
+|summary|String|Сводка результатов, если доступна сводка.|
+|resource|[entity](entity.md)|Базовое представление результатов поиска в Microsoft Graph.|
+|_id (устаревшее)|String| Переименован в качестве **хитид**. Внутренний идентификатор элемента.|
+|_score (устаревшее)|Int32|Переименовано в качестве **ранга**. Оценка или порядок результатов.|
+|_summary (устаревшее)|String|Переименовано в качестве **сводки**. Сводка результатов (если доступна сводка).|
+|_sortField (устаревшее)|String|Это свойство было удалено.|
+|_source (устаревшее)|[entity](entity.md)|Переименовано в качестве **ресурса**. Базовое представление результата поиска на диаграмме.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -47,6 +52,11 @@ ms.locfileid: "47985778"
 
 ```json
 {
+  "hitId": "String",
+  "rank": 1,
+  "summary": "String",
+  "contentSource": "String",
+  "resource": { "@odata.type": "microsoft.graph.entity" },
   "_id": "String",
   "_score": 1024,
   "_sortField": "String",

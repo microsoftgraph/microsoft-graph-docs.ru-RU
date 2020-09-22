@@ -5,12 +5,12 @@ localization_priority: Normal
 author: psignoret
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 11aef94b611ee48f5401f38372117a7ef95aa8d4
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: f7775425ad31bba33cb31df296cc5985ea73ab70
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806193"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064768"
 ---
 # <a name="oauth2permissiongrant-delta"></a>oauth2permissiongrant: Delta
 
@@ -55,7 +55,7 @@ GET /oauth2permissiongrants/delta
 
 - Вы можете использовать параметр запроса `$select` так же, как в любом другом запросе GET, чтобы задать только те свойства, которые необходимы для эффективной работы. Свойство **id** возвращается всегда.
 - Имеется ограниченная поддержка параметра `$filter`:
-  * Единственное поддерживаемое `$filter` выражение предназначено для отслеживания изменений для определенных ресурсов по их идентификаторам: `$filter=id+eq+{value}` или `$filter=id+eq+{value1}+or+id+eq+{value2}`. Количество идентификаторов, которые можно указать, ограничено максимальной длиной URL-адреса.
+  * Единственное поддерживаемое `$filter` выражение предназначено для отслеживания изменений для определенных ресурсов по их идентификаторам:  `$filter=id+eq+{value}` или `$filter=id+eq+{value1}+or+id+eq+{value2}` . Количество идентификаторов, которые можно указать, ограничено максимальной длиной URL-адреса.
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -63,14 +63,14 @@ GET /oauth2permissiongrants/delta
 |:---------------|:----------|
 | Авторизация  | Носитель &lt;токен&gt;. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции [oauth2permissiongrant](../resources/oauth2permissiongrant.md) в тексте отклика. Оклик также содержит URL-адрес `nextLink` или `deltaLink`.
 
-- Если возвращается URL-адрес `nextLink`, это означает, что во время сеанса получены не все страницы данных. **Oauth2permissiongrant** продолжает совершать запросы, используя `nextLink` URL-адрес `deltaLink` , пока в ответ не будет включен URL-адрес.
+- Если возвращается URL-адрес `nextLink`, это означает, что во время сеанса получены не все страницы данных. **Oauth2permissiongrant** продолжает совершать запросы, используя `nextLink` URL-адрес, пока `deltaLink` в ответ не будет включен URL-адрес.
 - Если возвращается URL-адрес `deltaLink`, это означает, что больше нет данных о текущем состоянии ресурса. Следует оставить и использовать `deltaLink` URL-адрес для получения сведений об изменениях в ресурсе в будущем.
 
 Подробнее: [Использование запроса изменений](/graph/delta-query-overview). Примеры запросов приведены в статье [получение добавочных изменений для пользователей](/graph/delta-query-users).
@@ -144,3 +144,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

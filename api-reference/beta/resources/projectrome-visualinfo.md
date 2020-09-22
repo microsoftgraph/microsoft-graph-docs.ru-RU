@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: resourcePageType
 author: ailae
-ms.openlocfilehash: 928ec4c9d759674bc066c45a5f82e2e8cdd3ee3b
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: e6bc7bb02ccfc077f9461e5c2a4f15aac4ddf22d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807464"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078231"
 ---
 # <a name="visualinfo-resource-type"></a>Тип ресурса Висуалинфо
 
@@ -81,3 +81,5 @@ ms.locfileid: "46807464"
   "suppressions": []
 }
 -->
+
+

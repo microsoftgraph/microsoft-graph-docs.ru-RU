@@ -3,14 +3,14 @@ title: Удаление Усерекспериенцеаналитиксапфе
 description: Удаляет объект Усерекспериенцеаналитиксапфеалсаппликатионперформанце.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0a1685233e3b6990fcb6d77c8bbbd3eb2a2f9ed0
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 9ff10b4e85f19ee06b45b2174acfc287aaaf5fd9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790305"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48017621"
 ---
 # <a name="delete-userexperienceanalyticsapphealthapplicationperformance"></a>Удаление Усерекспериенцеаналитиксапфеалсаппликатионперформанце
 
@@ -29,7 +29,7 @@ ms.locfileid: "46790305"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ DELETE /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance/
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,6 +65,9 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalytics
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

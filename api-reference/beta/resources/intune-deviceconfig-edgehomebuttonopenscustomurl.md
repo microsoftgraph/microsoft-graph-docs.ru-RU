@@ -3,14 +3,14 @@ title: Тип ресурса Еджехомебуттонопенскустом�
 description: Отображение кнопки "домой"; Нажатие кнопки "домой" загружает определенный URL-адрес.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c3be48340552a9e3ba5a0bc8143363846465fbf1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4779de3f0a6e53b8056a42e1df511ea176dd6378
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386332"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058237"
 ---
 # <a name="edgehomebuttonopenscustomurl-resource-type"></a>Тип ресурса Еджехомебуттонопенскустомурл
 
@@ -46,6 +46,9 @@ ms.locfileid: "43386332"
   "homeButtonCustomURL": "String"
 }
 ```
+
+
+
 
 
 

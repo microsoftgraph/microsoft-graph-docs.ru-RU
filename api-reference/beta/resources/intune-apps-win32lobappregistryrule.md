@@ -3,14 +3,14 @@ title: Тип ресурса win32LobAppRegistryRule
 description: Сложный тип для хранения данных правила реестра для бизнес-приложения Win32.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8e4fcce49fde2f1eb8eb33bc320f1204369b09cf
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 61ebe9132b3c6e671208b455ef5ea06aaa2efc48
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790812"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071068"
 ---
 # <a name="win32lobappregistryrule-resource-type"></a>Тип ресурса win32LobAppRegistryRule
 
@@ -36,7 +36,7 @@ ms.locfileid: "44790812"
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|Оператор для обнаружения в реестре. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |компарисонвалуе|String|Значение сравнения в реестре.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -58,6 +58,9 @@ ms.locfileid: "44790812"
   "comparisonValue": "String"
 }
 ```
+
+
+
 
 
 

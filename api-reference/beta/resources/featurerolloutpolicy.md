@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 52034dd9d25c5decf8feb4cd3af28ea95224adcb
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 5c514d6a48ffafc13a118b9471fb94be9ffc0e11
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123829"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071217"
 ---
 # <a name="featurerolloutpolicy-resource-type"></a>Тип ресурса Феатурероллаутполици
 
@@ -55,22 +55,22 @@ ms.locfileid: "45123829"
 | [Получение Феатурероллаутполици](../api/featurerolloutpolicy-get.md)                 | [феатурероллаутполици](featurerolloutpolicy.md) | Получение свойств и связей объекта феатурероллаутполици. |
 | [Создание Феатурероллаутполици](../api/directory-post-featurerolloutpolicies.md) | [феатурероллаутполици](featurerolloutpolicy.md) | Создание нового объекта Феатурероллаутполици.                                 |
 | [Обновление Феатурероллаутполици](../api/featurerolloutpolicy-update.md)           | [феатурероллаутполици](featurerolloutpolicy.md) | Обновление свойств объекта феатурероллаутполици.                     |
-| [Удаление Феатурероллаутполици](../api/featurerolloutpolicy-delete.md)           | Отсутствует                                            | Удаление объекта Феатурероллаутполици.                                     |
+| [Удаление Феатурероллаутполици](../api/featurerolloutpolicy-delete.md)           | Нет                                            | Удаление объекта Феатурероллаутполици.                                     |
 | [Назначение appliesTo](../api/featurerolloutpolicy-post-appliesto.md)              | [directoryObject](directoryobject.md)           | Назначение directoryObject для развертывания компонентов.                              |
-| [Удаление appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | Отсутствует                                            | Удаление directoryObject из развертывания компонента.                            |
+| [Удаление appliesTo](../api/featurerolloutpolicy-delete-appliesto.md)            | Нет                                            | Удаление directoryObject из развертывания компонента.                            |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |description|String|Описание этой политики развертывания функций.|
-|displayName|Строка|Отображаемое имя для этой политики развертывания компонента.|
+|displayName|String|Отображаемое имя для этой политики развертывания компонента.|
 |состав|стажедфеатуренаме| Возможные значения: `passthroughAuthentication`, `seamlessSso`, `passwordHashSync`, `unknownFutureValue`.|
 |id|String| Только для чтения.|
-|исапплиедтурганизатион|Логический|Указывает, следует ли применять эту политику развертывания функций ко всей Организации.|
+|исапплиедтурганизатион|Boolean|Указывает, следует ли применять эту политику развертывания функций ко всей Организации.|
 |isEnabled|Boolean|Указывает, включен ли выпуск компонентов.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
@@ -110,3 +110,5 @@ ms.locfileid: "45123829"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,14 +3,14 @@ title: Тип ресурса Еджехомебуттонопенсневтаб
 description: Отображение кнопки "домой"; Нажатие кнопки "домой" загружает новую страницу вкладки.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e1b2835c9da9fac343390a6bf5040b93d2032063
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dda5fe6d945d67884ac415ab56b1349717ee69d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386285"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058223"
 ---
 # <a name="edgehomebuttonopensnewtab-resource-type"></a>Тип ресурса Еджехомебуттонопенсневтаб
 
@@ -44,6 +44,9 @@ ms.locfileid: "43386285"
   "@odata.type": "#microsoft.graph.edgeHomeButtonOpensNewTab"
 }
 ```
+
+
+
 
 
 

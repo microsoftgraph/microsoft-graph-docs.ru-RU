@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 291aa6cc327f6c01ec80c95e4da101d3e8f03aae
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 1725a50010f1e0f2c3a084839b04993cb1f8d89a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916504"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078173"
 ---
 # <a name="relyingpartydetailedsummary-resource-type"></a>Тип ресурса Релингпартидетаиледсуммари
 
@@ -24,7 +24,7 @@ ms.locfileid: "43916504"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [List](../api/relyingpartydetailedsummary-list.md) | [релингпартидетаиледсуммари](relyingpartydetailedsummary.md) | Получение списка объектов **релингпартидетаиледсуммари** . |
+| [Список](../api/relyingpartydetailedsummary-list.md) | [релингпартидетаиледсуммари](relyingpartydetailedsummary.md) | Получение списка объектов **релингпартидетаиледсуммари** . |
 
 
 ## <a name="properties"></a>Свойства
@@ -35,7 +35,7 @@ ms.locfileid: "43916504"
 |релингпартид|String|Этот идентификатор используется для идентификации проверяющей стороны в службе Федерации. Он используется при выдаче утверждений проверяющей стороне.|
 |serviceId|String|Уникальный идентификатор леса Active Directory.|
 |мигратионстатус|string| Указывает, можно ли переместить приложение в Azure AD или потребовать больше расследований. Возможные значения: `ready`, `needsReview`, `additionalStepsRequired`.|
-|мигратионвалидатиондетаилс|Коллекция [keyValuePair](keyvaluepair.md)|Указывает все проверки на правильность конфигурации приложений, которые позволяют оценить, готово ли приложение к перемещению в Azure AD. Возможные `AdditionalWSFedEndpointCheckResult`имена:, `AllowedAuthenticationClassReferencesCheckResult`, `AlwaysRequireAuthenticationCheckResult`, `AutoUpdateEnabledCheckResult`, `ClaimsProviderNameCheckResult`, `EncryptClaimsCheckResult`, `EncryptedNameIdRequiredCheckResult`, `MonitoringEnabledCheckResult`,`NotBeforeSkewCheckResult` `RequestMFAFromClaimsProvidersCheckResult` `SignedSamlRequestsRequiredCheckResult` `AdditionalAuthenticationRulesCheckResult`,,,, `TokenLifetimeCheckResult`, `DelegationAuthorizationRulesCheckResult`, `IssuanceAuthorizationRulesCheckResult`,. `IssuanceTransformRulesCheckResult` Возможные значения result: `0`, `1`, или `2`. `0`Когда проверка проверки пройдена, `1` при неудачной проверке и `2` при проверке на наличие предупреждения. |
+|мигратионвалидатиондетаилс|Коллекция [keyValuePair](keyvaluepair.md)|Указывает все проверки на правильность конфигурации приложений, которые позволяют оценить, готово ли приложение к перемещению в Azure AD. Возможные имена: `AdditionalWSFedEndpointCheckResult` ,,,,,,,,,,,,  `AllowedAuthenticationClassReferencesCheckResult` `AlwaysRequireAuthenticationCheckResult`   `AutoUpdateEnabledCheckResult` `ClaimsProviderNameCheckResult` `EncryptClaimsCheckResult`  `EncryptedNameIdRequiredCheckResult` `MonitoringEnabledCheckResult` `NotBeforeSkewCheckResult`  `RequestMFAFromClaimsProvidersCheckResult` `SignedSamlRequestsRequiredCheckResult` `AdditionalAuthenticationRulesCheckResult` `TokenLifetimeCheckResult` ,  `DelegationAuthorizationRulesCheckResult` , `IssuanceAuthorizationRulesCheckResult` , `IssuanceTransformRulesCheckResult` . Возможные значения result: `0` , `1` , или `2` . `0` Когда проверка проверки пройдена, `1` при неудачной проверке и `2` при проверке на наличие предупреждения. |
 |релингпартинаме|String|Имя приложения или другой сущности в Интернете, которая использует поставщика удостоверений для проверки подлинности пользователя, который хочет войти в систему.|
 |фаиледсигнинкаунт|Int64| Количество неудачных входов в службу федерации Active Directory в указанном периоде. |
 |replyUrls|Коллекция String|Указывает, где ожидается получение маркера проверяющей стороной.|
@@ -44,7 +44,7 @@ ms.locfileid: "43916504"
 |тоталсигнинкаунт|Int64|Количество успешных и неудачных входных входов в службу федерации Active Directory в указанном периоде.|
 |уникуеусеркаунт|Int64|Количество уникальных пользователей, выполнивших вход в приложение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -88,3 +88,5 @@ ms.locfileid: "43916504"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,14 +3,14 @@ title: тип перечисления windows10AppsUpdateRecurrence
 description: Возможные значения для обновления приложения при повторении Windows10.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b6e94684e6ec2533fc8045626975463c29248518
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3b378d0ae320dec6f54edf40061587c8fc6fdcf1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466295"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058181"
 ---
 # <a name="windows10appsupdaterecurrence-enum-type"></a>тип перечисления windows10AppsUpdateRecurrence
 
@@ -26,9 +26,12 @@ ms.locfileid: "43466295"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|нуль|Значение по умолчанию указывает один экземпляр.|
-|ежедневно|1,1|Daily (Ежедневный).|
-|Табель|2|Weekly (Еженедельный).|
+|ежедневно|1 |Daily (Ежедневный).|
+|Табель|2 |Weekly (Еженедельный).|
 |ежемесячно|4|Ежемесячно.|
+
+
+
 
 
 

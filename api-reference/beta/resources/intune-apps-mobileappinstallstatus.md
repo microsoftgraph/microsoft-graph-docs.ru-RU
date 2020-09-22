@@ -3,14 +3,14 @@ title: Тип ресурса mobileAppInstallStatus
 description: Содержит свойства состояния установки мобильного приложения для устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2a77d00cf466f391c12749acef5f2a87cb1f21ce
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 92e833def6b1b3c27a416039a56e1d818baad72f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792571"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071131"
 ---
 # <a name="mobileappinstallstatus-resource-type"></a>Тип ресурса mobileAppInstallStatus
 
@@ -48,7 +48,7 @@ ms.locfileid: "46792571"
 |userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
 |дисплайверсион|String|Доступная для человека версия приложения|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |программы|[mobileApp](../resources/intune-shared-mobileapp.md);|Ссылка навигации на мобильное приложение.|
@@ -79,6 +79,9 @@ ms.locfileid: "46792571"
   "displayVersion": "String"
 }
 ```
+
+
+
 
 
 

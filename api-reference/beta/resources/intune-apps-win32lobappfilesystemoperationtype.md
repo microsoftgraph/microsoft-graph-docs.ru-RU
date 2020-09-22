@@ -3,14 +3,14 @@ title: тип перечисления win32LobAppFileSystemOperationType
 description: Содержит все поддерживаемые типы обнаружения файловой системы.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8e1224388b988eb0bab7286f14a21111b75daa8a
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: b7043daf59ba9e68447b6ed98c25602c653eb841
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790840"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48071096"
 ---
 # <a name="win32lobappfilesystemoperationtype-enum-type"></a>тип перечисления win32LobAppFileSystemOperationType
 
@@ -27,11 +27,14 @@ ms.locfileid: "44790840"
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
 |Существует|1 |Существует ли указанный файл или папка.|
-|modifiedDate|2|Дата последнего изменения.|
+|modifiedDate|2 |Дата последнего изменения.|
 |createdDate|4|Дата создания.|
 |version|4 |Тип значения Version.|
 |сизеинмб|5 |Тип определения размера.|
 |доеснотексист|6 |Указанный файл или папка не существует.|
+
+
+
 
 
 

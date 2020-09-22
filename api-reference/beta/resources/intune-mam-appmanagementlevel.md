@@ -3,14 +3,14 @@ title: тип перечисления Аппманажементлевел
 description: Уровни управления для приложений
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3318e4e4c68c08eb24f0e3dd03a8efa8eba50469
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: deb688d0fa3b66d8a9097442de22b7f35c01395a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43374254"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030544"
 ---
 # <a name="appmanagementlevel-enum-type"></a>тип перечисления Аппманажементлевел
 
@@ -26,9 +26,12 @@ ms.locfileid: "43374254"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |неопределенные|нуль|Не определено.|
-|неуправляемые|1,1|Неуправляемые|
-|Корпоратив|2|КОРПОРАТИВ|
+|неуправляемые|1 |Неуправляемые|
+|Корпоратив|2 |КОРПОРАТИВ|
 |андроидентерприсе|4 |Android Enterprise|
+
+
+
 
 
 

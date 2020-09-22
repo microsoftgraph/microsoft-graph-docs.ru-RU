@@ -3,14 +3,14 @@ title: тип перечисления windows10VpnConnectionType
 description: Типы VPN-подключений.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d2a79f4a29d9f6ae6fa7ccbf6f616e925784bde8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8badac8419f2a3327ad608b334d2f6190f091d58
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43318208"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48084704"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>тип перечисления windows10VpnConnectionType
 
@@ -26,8 +26,8 @@ ms.locfileid: "43318208"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |пулсесекуре|нуль|Безопасный импульс.|
-|f5EdgeClient|1,1|Пограничный клиент F5.|
-|деллсоникваллмобилеконнект|2|Мобильное подключение Dell Сониквалл.|
+|f5EdgeClient|1 |Пограничный клиент F5.|
+|деллсоникваллмобилеконнект|2 |Мобильное подключение Dell Сониквалл.|
 |чеккпоинткапсулевпн|4|Проверка покапсулы VPN.|
 |Автоматически|4 |Автоматически.|
 |Клиентских|5 |Клиентских.|
@@ -35,6 +35,9 @@ ms.locfileid: "43318208"
 |PPTP|7 |PPTP.|
 |клиентов|8 |Клиентов.|
 |Элемент paloaltoglobalprotect|9 |Palo Alto сети Глобалпротект.|
+
+
+
 
 
 

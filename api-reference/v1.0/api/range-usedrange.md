@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 77ea975e615a527fa173870a45740a9d041b5715
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f5761a90cafafc00abb00ec40318a3fac176b5c4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510573"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051566"
 ---
 # <a name="range-usedrange"></a>Range: UsedRange
 
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/r
 ---
 
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
@@ -106,7 +106,7 @@ Content-length: 169
 }
 ```
 
-Ниже приведен пример, в котором указывается `valuesOnly` необязательный параметр.
+Ниже приведен пример, в котором указывается необязательный `valuesOnly` параметр.
 
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -173,3 +173,4 @@ Content-length: 169
   "suppressions": [
   ]
 }-->
+
