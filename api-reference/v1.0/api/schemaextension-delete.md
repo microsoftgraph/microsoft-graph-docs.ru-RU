@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: b8bbdd60e979a7102f7f73e224d654eb4f1e2c56
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 79fd5d4d2f71ea20018462ac4cb364f47b2d898c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863153"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015570"
 ---
 # <a name="delete-schemaextension"></a>Удаление schemaExtension
 
@@ -45,7 +45,7 @@ DELETE /schemaExtensions/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -108,3 +108,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

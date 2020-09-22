@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fb974b80b03edc36a0f974633c8f95ca384182e6
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 8888aafbe7b4f4cb116306a8e1fa086f513ba72a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154152"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015024"
 ---
 # <a name="workforceintegrationencryption-resource-type"></a>Тип ресурса Воркфорцеинтегратионенкриптион
 
@@ -23,7 +23,7 @@ ms.locfileid: "44154152"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |Protocol|String| Возможные значения: `sharedSecret`, `unknownFutureValue`.|
-|гадк|Строка|Шифрование общего секрета.|
+|гадк|String|Шифрование общего секрета.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -54,3 +54,4 @@ ms.locfileid: "44154152"
   "section": "documentation",
   "tocPath": ""
 }-->
+

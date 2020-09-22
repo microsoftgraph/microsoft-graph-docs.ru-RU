@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a216de96ba97e079efc1cfc034b00ddd027c9b1d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5e15249590d858fbb57470fbb64051a7609558e9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446718"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015122"
 ---
 # <a name="rangeview-resource-type"></a>Тип ресурсов rangeView
 
@@ -67,3 +67,4 @@ ms.locfileid: "42446718"
   "values": "Json"
 }
 ```
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: b3ec3c9237e246b2af10a867155bc7b6d360a67f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb67920598d883a126c18cdf8acdfb1b38d9014a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533379"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015136"
 ---
 # <a name="pivottable-resource-type"></a>Тип ресурсов pivotTable
 
@@ -29,7 +29,7 @@ ms.locfileid: "42533379"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Строка| Идентификатор сводной таблицы.   Только для чтения.|
+|id|String| Идентификатор сводной таблицы.   Только для чтения.|
 |name|String|Имя сводной таблицы.    |
 
 ## <a name="relationships"></a>Связи
@@ -56,3 +56,4 @@ ms.locfileid: "42533379"
 }
 
 ```
+

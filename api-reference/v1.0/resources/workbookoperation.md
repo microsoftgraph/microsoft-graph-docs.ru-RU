@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 4fa98cdfdfc013386f7d615c54c832d27c5f826e
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: 9f186fe1c6c5e7ac917508ed75f6fb8488cbdc94
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408164"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015150"
 ---
 # <a name="workbookoperation-resource-type"></a>Тип ресурса Воркбукоператион
 
@@ -29,9 +29,9 @@ ms.locfileid: "45408164"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |status|String| Текущее состояние операции. Возможные значения: `NotStarted`, `Running`, `Completed`, `Failed`.|
-|id|Строка| Идентификатор операции. Только для чтения.|
+|id|String| Идентификатор операции. только для чтения.|
 |error|[воркбукоператионеррор](workbookoperationerror.md)| Ошибка, возвращенная операцией.|
-|ресаурцелокатион|Строка| URI ресурса для результата.|
+|ресаурцелокатион|String| URI ресурса для результата.|
 
 ## <a name="relationships"></a>Связи
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: fb78761105138aead9a940db23305d7a0d41f92e
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 715c78e8cb412f11b7b336680e3c433369c9e608
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154159"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015101"
 ---
 # <a name="workforceintegration-resource-type"></a>Тип ресурса Воркфорцеинтегратион
 
@@ -33,10 +33,10 @@ ms.locfileid: "44154159"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |апиверсион|Int32|Версия API для URL-адреса обратного вызова. Начните с 1.|
-|displayName|Строка|Имя интеграции трудовых ресурсов.|
+|displayName|String|Имя интеграции трудовых ресурсов.|
 |шифрования|[воркфорцеинтегратионенкриптион](workforceintegrationencryption.md)|Ресурс для шифрования взаимодействия сотрудников.|
 |isActive|Boolean|Указывает, активна ли эта интеграция сотрудников в настоящее время и доступна ли она.|
-|суппортедентитиес|string| Сущности сдвигов, поддерживаемые для синхронных уведомлений об изменении. Смены потребуют обратного вызова на URL-адрес, указанный в изменениях клиентов для этих сущностей, добавленных здесь. По умолчанию для уведомлений об изменениях не поддерживаются никакие сущности. Возможные значения: `none`, `shift`, `swapRequest`, `openshift`,, `openShiftRequest``userShiftPreferences`|
+|суппортедентитиес|string| Сущности сдвигов, поддерживаемые для синхронных уведомлений об изменении. Смены потребуют обратного вызова на URL-адрес, указанный в изменениях клиентов для этих сущностей, добавленных здесь. По умолчанию для уведомлений об изменениях не поддерживаются никакие сущности. Возможные значения: `none` , `shift` ,, `swapRequest` , `openshift` `openShiftRequest` , `userShiftPreferences`|
 |url|String| URL-адрес интеграции сотрудников для обратных вызовов из службы смены.|
 
 ## <a name="relationships"></a>Связи
@@ -76,3 +76,4 @@ ms.locfileid: "44154159"
   "section": "documentation",
   "tocPath": ""
 }-->
+

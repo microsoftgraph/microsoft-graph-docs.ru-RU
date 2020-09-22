@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс Video — это единая структура, объединяющая элементы данных, связанные с видео.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 2982dbad8f1e06a2f1288bd499c88c77a4ef2fda
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 20e9a4672f1f77f2fa3f5e98479cb6190c9f9022
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446767"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015276"
 ---
 # <a name="video-resource-type"></a>Тип ресурса video
 
@@ -75,3 +75,4 @@ ms.locfileid: "42446767"
   "section": "documentation",
   "tocPath": "Facets/Video"
 } -->
+

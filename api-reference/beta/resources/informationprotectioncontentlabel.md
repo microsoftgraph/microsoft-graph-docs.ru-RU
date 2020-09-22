@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 454dd6dd3b095c01e476f52ae38d3a9caa552192
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8422f83db0c94eed74d5690343c51b70e2d87d82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496084"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016452"
 ---
 # <a name="informationprotectioncontentlabel-resource-type"></a>Тип ресурса Информатионпротектионконтентлабел
 
@@ -24,7 +24,7 @@ ms.locfileid: "42496084"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|assignmentMethod|Строка| Возможные значения: `standard`, `privileged`, `auto`.|
+|assignmentMethod|String| Возможные значения: `standard`, `privileged`, `auto`.|
 |креатиондатетиме|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |label|[лабелдетаилс](labeldetails.md)| Сведения о метке, которая в настоящее время применяется к файлу. |
 
@@ -57,3 +57,4 @@ ms.locfileid: "42496084"
   "section": "documentation",
   "tocPath": ""
 }-->
+

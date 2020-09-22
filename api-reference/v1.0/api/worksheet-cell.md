@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b447bed5bd6e77faa941a3c228f78b804d0204f6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4e97fcdde6d15a382a9e2b35c56d2c30ce4e045e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508697"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015521"
 ---
 # <a name="worksheet-cell"></a>Worksheet: Cell
 
@@ -50,7 +50,7 @@ GET /workbook/worksheets/{id|name}/cell(row={row},column={column})
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [Range](../resources/range.md) в теле отклика.
 
@@ -98,3 +98,4 @@ Content-length: 169
   "section": "documentation",
   "tocPath": ""
 }-->
+

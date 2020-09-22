@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a6192e5a549c646cc9b63117b111a0c5d167d75a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ae085791cb60aa6d5071332ead86033861a6305a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442336"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015374"
 ---
 # <a name="usersecuritystate-resource-type"></a>Тип ресурса Усерсекуритистате
 
@@ -23,7 +23,7 @@ ms.locfileid: "43442336"
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |аадусерид|String|Идентификатор объекта пользователя AAD (GUID) — представляет объект пользователя физической или многопользовательской учетной записи.|
-|имя_учетной_записи|String|Имя учетной записи пользователя (без домена Active Directory или DNS-домена) (также называется `mailNickName`).|
+|accountName|String|Имя учетной записи пользователя (без домена Active Directory или DNS-домена) (также называется `mailNickName` ).|
 |domainName|String|NetBIOS/Active Directory учетной записи пользователя (то есть формат домен \ пользователь).|
 |emailRole|emailRole|Для оповещений, связанных с электронной почтой: "роль" — Электронная почта учетной записи пользователя. Возможные значения: `unknown`, `sender`, `recipient`.|
 |исвпн|Boolean|Указывает, вошел ли пользователь в систему через VPN.|
@@ -78,3 +78,4 @@ ms.locfileid: "43442336"
   "section": "documentation",
   "tocPath": ""
 }-->
+

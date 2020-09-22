@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 304d5a27714d7e6e02183b372814c8cb16c4e0b9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 32bfb6d7a92ce566d10809277f19f82e45ffc1a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446795"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015388"
 ---
 # <a name="useridentity-resource-type"></a>Тип ресурса userIdentity
 
@@ -22,7 +22,7 @@ ms.locfileid: "42446795"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| displayName | Строка | Отображаемое имя удостоверения. Обратите внимание, что эта возможность не всегда доступна или не актуальна.    |
+| displayName | String | Отображаемое имя удостоверения. Обратите внимание, что эта возможность не всегда доступна или не актуальна.    |
 | id          | String | Уникальный идентификатор удостоверения.  |
 | ipAddress   | String| IP-адрес клиента, используемый пользователем для выполнения действия (только журнал аудита).|
 | userPrincipalName | String  | Атрибут userPrincipalName пользователя. |
@@ -63,3 +63,4 @@ ms.locfileid: "42446795"
   ]
 }
 -->
+

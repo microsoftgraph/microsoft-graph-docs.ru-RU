@@ -1,25 +1,25 @@
 ---
-title: Список Аппролеассигнментс, назначенных субъекту службы
-description: Получение списка назначений ролей приложений, назначенных участнику службы.
+title: Список объектов appRoleAssignment, предоставленных для субъект-службы
+description: Получение списка назначений ролей приложений, предоставленных для субъект-службы.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 27b896a8dde36aea3993fb098c22219e13be6b29
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 80530773ea80b8b18a04b85cd21ccdc42d7e2abd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383987"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015563"
 ---
-# <a name="list-approleassignments-granted-to-a-service-principal"></a>Список Аппролеассигнментс, назначенных субъекту службы
+# <a name="list-approleassignments-granted-to-a-service-principal"></a>Список объектов appRoleAssignment, предоставленных для субъект-службы
 
 Пространство имен: microsoft.graph
 
 
-Получение списка [аппролеассигнмент](../resources/approleassignment.md) , предоставленных участнику службы.
+Получение списка [appRoleAssignment](../resources/approleassignment.md), предоставленного субъект-службе.
 
-Роли приложений, назначенные субъектам служб, также называются [разрешениями приложений](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Разрешения на доступ к приложениям можно предоставить непосредственно путем создания назначений ролей приложений или с помощью [согласия пользователя](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
+Роли приложений, назначаемые субъект-службам, также называются [разрешениями приложений](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Разрешения приложений можно предоставлять с помощью создания назначений ролей приложений, а также с помощью [интерфейса согласия](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,9 +27,9 @@ ms.locfileid: "44383987"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. Read. ALL, Directory. Read. ALL, Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL  |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Application. Read. ALL, Directory. Read. ALL, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Для приложений | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,13 +54,13 @@ GET /servicePrincipals/{id}/appRoleAssignments
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [аппролеассигнмент](../resources/approleassignment.md) в тексте отклика.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [appRoleAssignment](../resources/approleassignment.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса на получение ролей приложения, назначенных участнику службы.
+В приведенном примере показано, как запросить извлечение ролей приложения, назначенных субъект-службе.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -136,3 +136,4 @@ Content-length: 306
   ]
 }
 -->
+

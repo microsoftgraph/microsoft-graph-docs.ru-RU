@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4f54ccc630979d8cbbe4064438c4608a445be7d7
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 3ec2f2629e7f64e2f7cf7ae703b88c5eb8fe43bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44218266"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015561"
 ---
 # <a name="create-workforceintegration"></a>Создание Воркфорцеинтегратион
 
@@ -50,7 +50,7 @@ POST /teamwork/workforceIntegrations
 
 В тексте запроса добавьте представление объекта [воркфорцеинтегратион](../resources/workforceintegration.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [воркфорцеинтегратион](../resources/workforceintegration.md) в тексте отклика.
 
@@ -157,9 +157,9 @@ POST https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/
 Authorization: Bearer {token}
 Content-type: application/json
 ```
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 ```
 HTTP/1.1 200 OK
 {
@@ -198,7 +198,7 @@ Accept-Language: en-us
    }]
 }
 ```
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа от службы интеграции сотрудников.
 ```
@@ -230,3 +230,4 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+

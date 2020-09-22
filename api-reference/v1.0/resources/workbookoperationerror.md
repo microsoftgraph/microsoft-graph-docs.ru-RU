@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: a04d26a7bdeb14f35859e7c1b02e781b64189201
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: ce65847d6ddbb0a8db0c1277e38753ecab7080e9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408161"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48015143"
 ---
 # <a name="workbookoperationerror-resource-type"></a>Тип ресурса Воркбукоператионеррор
 
@@ -20,7 +20,7 @@ ms.locfileid: "45408161"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|code|Строка| Код ошибки.|
+|code|String| Код ошибки.|
 |message|String| Сообщение об ошибке.|
 |innererror|error object| Необязательное. Дополнительные объекты ошибки, которые могут быть более информативны, чем сообщение об ошибке верхнего уровня.|
 
@@ -54,3 +54,4 @@ ms.locfileid: "45408161"
   "section": "documentation",
   "tocPath": ""
 }-->
+
