@@ -3,14 +3,14 @@ title: Действие consentToDataSharing
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e79ca3c273e5b7113e62e8cdf07184c319c898ba
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 36d2ea3857af48849a921a57a83c34b838132683
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426769"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085978"
 ---
 # <a name="consenttodatasharing-action"></a>Действие consentToDataSharing
 
@@ -46,10 +46,10 @@ POST /deviceManagement/dataSharingConsents/{dataSharingConsentId}/consentToDataS
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении это действие возвращает `200 OK` код отклика и объект [даташарингконсент](../resources/intune-devices-datasharingconsent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -80,6 +80,9 @@ Content-Length: 417
   }
 }
 ```
+
+
+
 
 
 

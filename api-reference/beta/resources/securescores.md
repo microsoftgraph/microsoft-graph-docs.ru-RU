@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 2deb3a4ab39b169778ad43f60170e51eaa32eda9
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 3db31203f9c5827459ab2149efbd3adb28030d0a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810414"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087546"
 ---
 # <a name="securescore-resource-type"></a>Тип ресурса Секурескоре
 
@@ -25,7 +25,7 @@ ms.locfileid: "46810414"
 
 | Метод   | Возвращаемый тип|Описание|
 |:---------------|:--------|:----------|
-|[Перечисление объектов secureScores](../api/securescores-list.md) | [secureScores](securescores.md) |Чтение свойств и метаданных объекта Секурескорес.|
+|[Список объектов secureScore](../api/securescores-list.md) | [secureScores](securescores.md) |Чтение свойств и метаданных объекта Секурескорес.|
 
 
 ## <a name="properties"></a>Свойства
@@ -35,7 +35,7 @@ ms.locfileid: "46810414"
 |:--|:--|:--|
 |   azureTenantId   |   String  |   Строка GUID для идентификатора клиента.  |
 |   createdDateTime |   DateTimeOffset  |   Дата создания объекта.  |
-|   id  |   String  |   Сочетание azureTenantId_createdDateTime.   |
+|   id  |   Строка  |   Сочетание azureTenantId_createdDateTime.   |
 |   лиценседусеркаунт   |   Int32   |   Число лицензированных пользователей для данного клиента.    |
 |   активеусеркаунт |   Int32   |   Число активных пользователей для данного клиента.  |
 |   куррентскоре    |   Двойное с плавающей точкой  |   Текущий полученный рейтинг клиента на указанную дату.    |
@@ -45,7 +45,7 @@ ms.locfileid: "46810414"
 |   контролскорес | Коллекция [контролскоре](controlscore.md)  |   Содержит результаты клиентов для набора элементов управления.   |
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -90,3 +90,5 @@ ms.locfileid: "46810414"
   "suppressions": []
 }
 -->
+
+

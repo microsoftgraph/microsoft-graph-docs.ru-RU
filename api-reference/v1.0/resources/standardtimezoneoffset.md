@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 23eed92e05605869ea156cdba47cf2a50e031154
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 49cebe5997aef16758396ece509c0c7a5b3788b4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811184"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086440"
 ---
 # <a name="standardtimezoneoffset-resource-type"></a>Тип ресурса standardTimeZoneOffset
 
@@ -34,7 +34,7 @@ ms.locfileid: "46811184"
 | time | Edm.TimeOfDay | Представляет время суток, когда происходит переход с летнего времени на стандартное. |
 | year | Edm.Int32 | Указывает периодичность перехода с летнего времени на стандартное (в годах). Например, значение "0" указывает, что переход осуществляется ежегодно.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -66,3 +66,4 @@ ms.locfileid: "46811184"
   "section": "documentation",
   "tocPath": ""
 }-->
+

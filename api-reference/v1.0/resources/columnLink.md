@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс columnLink для объекта contentType связывает ресурс columnDefinition сайта с соответствующим типом контента.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fe17c5baf13e24800f28af1895561d55f3bf66cd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4178184b1b9f2fb474783a3d017321c090c5410f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531809"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086790"
 ---
 # <a name="columnlink-resource-type"></a>Тип ресурса ColumnLink
 
@@ -41,7 +41,7 @@ ms.locfileid: "42531809"
 
 | Имя свойства | Тип   | Описание
 |:--------------|:-------|:----------------------------------------------------
-| **id**        | строка | Уникальный идентификатор столбца.
+| **id**        | string | Уникальный идентификатор столбца.
 | **name**      | string | Имя столбца в этом типе контента.
 
 <!-- {
@@ -51,3 +51,4 @@ ms.locfileid: "42531809"
   "section": "documentation",
   "tocPath": "Resources/ColumnLink"
 } -->
+

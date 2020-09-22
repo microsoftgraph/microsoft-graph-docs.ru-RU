@@ -3,14 +3,14 @@ title: Создание Рестриктедаппсвиолатион
 description: Создание нового объекта Рестриктедаппсвиолатион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b3556293fee01cbb89133dcf9e0e79717e4d0f2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 45a48662ed691763acbcb6c49a0cf2f9dc4667a3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43431827"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086237"
 ---
 # <a name="create-restrictedappsviolation"></a>Создание Рестриктедаппсвиолатион
 
@@ -46,7 +46,7 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Рестриктедаппсвиолатион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Рестриктедаппсвиолатион.
@@ -56,17 +56,17 @@ POST /deviceManagement/deviceConfigurationRestrictedAppsViolations
 |id|Строка|Уникальный идентификатор объекта. Состоит из accountId, deviceId, Полициид и userId|
 |userId|String|Уникальный идентификатор пользователя, должен быть GUID|
 |userName|String|Имя пользователя|
-|манажеддевицеид|String|Уникальный идентификатор управляемого устройства, должен быть GUID|
+|манажеддевицеид|Строка|Уникальный идентификатор управляемого устройства, должен быть GUID|
 |deviceName|String|Имя устройства|
-|девицеконфигуратионид|String|Уникальный идентификатор профиля конфигурации устройства, должен быть GUID|
-|девицеконфигуратионнаме|String|Имя профиля конфигурации устройства|
+|девицеконфигуратионид|Строка|Уникальный идентификатор профиля конфигурации устройства, должен быть GUID|
+|девицеконфигуратионнаме|Строка|Имя профиля конфигурации устройства|
 |platformType|[полициплатформтипе](../resources/intune-shared-policyplatformtype.md)|Тип платформы. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Состояние ограниченных приложений. Возможные значения: `prohibitedApps`, `notApprovedApps`.|
 |restrictedApps|Коллекция [манажеддевицерепортедапп](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Список нарушенных приложений с ограниченным доступом|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [рестриктедаппсвиолатион](../resources/intune-deviceconfig-restrictedappsviolation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -123,6 +123,9 @@ Content-Length: 613
   ]
 }
 ```
+
+
+
 
 
 

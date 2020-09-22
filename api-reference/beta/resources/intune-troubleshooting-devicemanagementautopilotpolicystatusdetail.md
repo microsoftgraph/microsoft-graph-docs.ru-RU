@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементаутопилот�
 description: Элемент сведений о состоянии политики, содержащийся в событии автопилота.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 54912018d69b33979cb14630ba6016b0999b03a2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d45ee08be1f7ea04e27f3fa002b58f4ebf7e6434
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462297"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087665"
 ---
 # <a name="devicemanagementautopilotpolicystatusdetail-resource-type"></a>Тип ресурса Девицеманажементаутопилотполицистатусдетаил
 
@@ -34,7 +34,7 @@ ms.locfileid: "43462297"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|UUID объекта.|
+|id|Строка|UUID объекта.|
 |displayName|Строка|Понятное имя политики.|
 |полицитипе|[deviceManagementAutopilotPolicyType](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|Тип политики. Возможные значения: `unknown`, `application`, `appModel`, `configurationPolicy`.|
 |комплианцестатус|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|Состояние соответствия политике. Возможные значения: `unknown`, `compliant`, `installed`, `notCompliant`, `notInstalled`, `error`.|
@@ -63,6 +63,9 @@ ms.locfileid: "43462297"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Получение windows10EnrollmentCompletionPageConfiguration
 description: Чтение свойств и связей объекта windows10EnrollmentCompletionPageConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 05ca80e8b76663f998c148baeffa2a40785db7ad
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 716fe35079ddc11088fdc57b4d950b070c2aefd4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178446"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085712"
 ---
 # <a name="get-windows10enrollmentcompletionpageconfiguration"></a>Получение windows10EnrollmentCompletionPageConfiguration
 
@@ -52,7 +52,7 @@ GET /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurat
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -98,6 +98,9 @@ Content-Length: 983
   }
 }
 ```
+
+
+
 
 
 

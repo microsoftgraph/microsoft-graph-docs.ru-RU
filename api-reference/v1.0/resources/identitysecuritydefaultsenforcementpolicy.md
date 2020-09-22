@@ -5,12 +5,12 @@ localization_priority: Normal
 author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e3275588e51cb48a0c72745812da0679ca971008
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 13c7fd24c7f7d96149821a8a4e506e32ae681c78
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384898"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086699"
 ---
 # <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a>Тип ресурса Идентитисекуритидефаултсенфорцементполици
 
@@ -24,16 +24,16 @@ ms.locfileid: "45384898"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [получение](../api/identitysecuritydefaultsenforcementpolicy-get.md); | [идентитисекуритидефаултсенфорцементполици](identitysecuritydefaultsenforcementpolicy.md) | Чтение свойств объекта **идентитисекуритидефаултсенфорцементполици** . |
-| [обновление](../api/identitysecuritydefaultsenforcementpolicy-update.md). | [идентитисекуритидефаултсенфорцементполици](identitysecuritydefaultsenforcementpolicy.md) | Обновление объекта **идентитисекуритидефаултсенфорцементполици** . |
+| [Получение](../api/identitysecuritydefaultsenforcementpolicy-get.md) | [идентитисекуритидефаултсенфорцементполици](identitysecuritydefaultsenforcementpolicy.md) | Чтение свойств объекта **идентитисекуритидефаултсенфорцементполици** . |
+| [Обновление](../api/identitysecuritydefaultsenforcementpolicy-update.md) | [идентитисекуритидефаултсенфорцементполици](identitysecuritydefaultsenforcementpolicy.md) | Обновление объекта **идентитисекуритидефаултсенфорцементполици** . |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|description|String|Описание для этой политики. Только для чтения.|
+|description|Строка|Описание для этой политики. Только для чтения.|
 |displayName|Строка|Отображаемое имя для этой политики. Только для чтения.|
-|id|String|Идентификатор для этой политики. Только для чтения.|
+|id|Строка|Идентификатор для этой политики. Только для чтения.|
 |isEnabled|Boolean|Если задано значение true, по умолчанию для клиента будет включен параметр безопасности Azure Active Directory.|
 
 ## <a name="relationships"></a>Связи
@@ -72,3 +72,4 @@ ms.locfileid: "45384898"
   "section": "documentation",
   "tocPath": ""
 }-->
+

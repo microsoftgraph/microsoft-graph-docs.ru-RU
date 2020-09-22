@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3b11bf2dd17efa227f8c73bcd54de8ea99fa2c42
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 0ee34bf4cf4a7f3f654dd86ce618fc4945a5b9c2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107446"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087742"
 ---
 # <a name="create-message"></a>Создание объекта Message
 
@@ -48,7 +48,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [Message](../resources/message.md) в формате JSON.
 
 Если вы хотите использовать **упоминание** , чтобы вызвонить другому пользователю в новом сообщении:
@@ -426,3 +426,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

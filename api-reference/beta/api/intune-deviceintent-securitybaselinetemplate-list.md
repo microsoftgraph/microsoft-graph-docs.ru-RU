@@ -3,14 +3,14 @@ title: Список Секуритибаселинетемплатес
 description: Список свойств и связей объектов Секуритибаселинетемплате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: da244d8a31974c8620aa6c6888543dbd10b84c20
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 98cadb7e37633758e636c71beb293d1e54509ab5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177144"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088113"
 ---
 # <a name="list-securitybaselinetemplates"></a>Список Секуритибаселинетемплатес
 
@@ -50,7 +50,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [секуритибаселинетемплате](../resources/intune-deviceintent-securitybaselinetemplate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -86,6 +86,9 @@ Content-Length: 531
   ]
 }
 ```
+
+
+
 
 
 

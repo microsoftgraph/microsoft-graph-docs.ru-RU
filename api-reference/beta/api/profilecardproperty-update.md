@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ecc539254a4d5b909b6a912a7b902c926d447c5d
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 6256b1f9c5e13f7a974d224b37f8479338e074bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565859"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088076"
 ---
 # <a name="update-profilecardproperty"></a>Обновление profileCardProperty
 
@@ -54,7 +54,7 @@ PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/pr
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |Комментарии|Коллекция Профилекарданнотатион| Содержит любые альтернативные или локализованные метки, которые указал Администратор.|
-|директорипропертинаме|String|Содержит имя свойства каталога, которое предназначено для отображения на карточке профиля. |
+|директорипропертинаме|Строка|Содержит имя свойства каталога, которое предназначено для отображения на карточке профиля. |
 
 ## <a name="response"></a>Отклик
 
@@ -149,3 +149,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

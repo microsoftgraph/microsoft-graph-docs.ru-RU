@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 33b55ddec6da5351d59c1c5cda32a156e8b0a3e2
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 003576935dd2f963879f2fa70e741c3d3f44a885
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123195"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087987"
 ---
 # <a name="create-program"></a>Создание программы
 
@@ -40,7 +40,7 @@ POST /programs
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [программы](../resources/program.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании программы.
@@ -51,7 +51,7 @@ POST /programs
 | `description`               |`String`                              |  Описание программы.           |
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201, Created` код отклика и объект [Program](../resources/program.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -126,3 +126,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

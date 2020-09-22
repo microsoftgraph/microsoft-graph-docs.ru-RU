@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ce08f432b980b110defdfa5a9a7816a71f3f7840
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 0f987f64960290c4104ed1c0746ce38591cb3ab6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808265"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086797"
 ---
 # <a name="cloudappsecuritystate-resource-type"></a>Тип ресурса Клаудаппсекуритистате
 
@@ -22,11 +22,11 @@ ms.locfileid: "46808265"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|дестинатионсервицеип|String|Конечный IP-адрес подключения к облачному приложению или службе.|
-|дестинатионсервиценаме|String|Имя облачного приложения или службы (например, "Salesforce", "DropBox" и т. д.).|
-|riskScore|String|Полученный поставщиком и вычисляемый показатель риска облачного приложения или службы. Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
+|дестинатионсервицеип|Строка|Конечный IP-адрес подключения к облачному приложению или службе.|
+|дестинатионсервиценаме|Строка|Имя облачного приложения или службы (например, "Salesforce", "DropBox" и т. д.).|
+|riskScore|Строка|Полученный поставщиком и вычисляемый показатель риска облачного приложения или службы. Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -56,3 +56,4 @@ ms.locfileid: "46808265"
   "section": "documentation",
   "tocPath": ""
 }-->
+

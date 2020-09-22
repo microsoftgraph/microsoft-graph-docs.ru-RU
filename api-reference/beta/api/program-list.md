@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: eab96053d43634cd4280e2e633b1de5da8ff5a17
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 21ffa09f51e0aa64a9b423c0c73f792d90ae1069
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123064"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087959"
 ---
 # <a name="list-programs"></a>Список программ
 
@@ -40,10 +40,10 @@ GET /programs
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не следует предоставлять текст запроса.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200, OK` код отклика и массив объектов [Program](../resources/program.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -120,3 +120,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

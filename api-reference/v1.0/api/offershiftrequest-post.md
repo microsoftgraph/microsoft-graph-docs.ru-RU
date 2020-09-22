@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8ef58e37eab376098a6aa2c7d77f7a009692f74b
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: c9ceee24fc8534e0599382bd0bc0782327fd097e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44217405"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087122"
 ---
 # <a name="create-offershiftrequest"></a>Создание Оффершифтрекуест
 
@@ -26,7 +26,7 @@ ms.locfileid: "44217405"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Schedule.ReadWrite.All |
+| Для приложения                            | Schedule.ReadWrite.All |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
 
@@ -48,7 +48,7 @@ POST /teams/{teamId}/schedule/offerShiftRequests
 ## <a name="request-body"></a>Текст запроса
 Укажите новый объект [оффершифтрекуест](../resources/offershiftrequest.md) в тексте запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [оффершифтрекуест](../resources/offershiftrequest.md) в тексте отклика.
 
@@ -151,3 +151,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

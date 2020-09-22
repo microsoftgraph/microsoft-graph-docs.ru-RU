@@ -3,14 +3,14 @@ title: Список Даташарингконсентс
 description: Список свойств и связей объектов Даташарингконсент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4278b00aa7f81f8140cb64857a66c95123b1cda3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 64e971dc5a9320192653c4b218077d7720a2c3a3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426661"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085894"
 ---
 # <a name="list-datasharingconsents"></a>Список Даташарингконсентс
 
@@ -46,10 +46,10 @@ GET /deviceManagement/dataSharingConsents
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [даташарингконсент](../resources/intune-devices-datasharingconsent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -82,6 +82,9 @@ Content-Length: 447
   ]
 }
 ```
+
+
+
 
 
 

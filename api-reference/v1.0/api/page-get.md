@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: c15d5d32b6102a3651fec24a99c3f9c185f963d1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3ab71087bcbed6b75c4f14f285c46ee56bf9f2ab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511091"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086993"
 ---
 # <a name="get-page"></a>Вывод страницы
 
@@ -35,7 +35,7 @@ GET /me/onenote/pages/{id}/content[?includeIDs=true]
 GET /me/onenote/pages/{id}/$value[?includeIDs=true]
 ```
 
-Параметр `includeIDs=true` запроса используется для [обновления страниц](../api/page-update.md).
+`includeIDs=true`Параметр запроса используется для [обновления страниц](../api/page-update.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -57,7 +57,7 @@ GET /sites/{id}/onenote/pages/{id}
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает `select` `expand` [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) и для настройки отклика.
 
-`parentSection` Ответ по умолчанию разворачивается и выбирает свойства `id`раздела `name`, а `self` также свойства. Допустимые `expand` значения для страниц `parentNotebook` : `parentSection`и.
+Ответ по умолчанию разворачивается `parentSection` и выбирает `id` Свойства раздела, `name` а также `self` Свойства. Допустимые `expand` значения для страниц: `parentNotebook` и `parentSection` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -68,7 +68,7 @@ GET /sites/{id}/onenote/pages/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Page](../resources/page.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -112,3 +112,4 @@ Content-length: 312
   "section": "documentation",
   "tocPath": ""
 }-->
+

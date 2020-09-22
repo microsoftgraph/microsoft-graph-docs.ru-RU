@@ -3,14 +3,14 @@ title: Удаление Секуритибаселинетемплате
 description: Удаляет объект Секуритибаселинетемплате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c928e19b93bd01fa6c3c9ba2f0ccecc3de20173
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 14fad0f3f2c6d3f605c23a314416ceaf753b285c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43427236"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088190"
 ---
 # <a name="delete-securitybaselinetemplate"></a>Удаление Секуритибаселинетемплате
 
@@ -47,10 +47,10 @@ DELETE /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{de
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -61,11 +61,14 @@ DELETE /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{de
 DELETE https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManagementTemplateId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 205384fea42dd1b6b5bb77f82320082c4d14ae29
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 88c1fc969c6acd8b3a470ea81be8f9274511cc69
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123176"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087980"
 ---
 # <a name="delete-program"></a>Удаление программы
 
@@ -20,7 +20,7 @@ ms.locfileid: "43123176"
 
 В функции [рецензирования Access](../resources/accessreviews-root.md) Azure AD удалите объект [Program](../resources/program.md) .
 
-Не удаляйте программу, с которой все `programControl` еще связаны, эти проверки доступа сначала необходимо удалить или удалить из программы, а затем связать с другой программой.  Кроме того, обратите внимание на то, что встроенная программа по умолчанию не может быть удалена.
+Не удаляйте программу, с которой все еще `programControl` связаны, эти проверки доступа сначала необходимо удалить или удалить из программы, а затем связать с другой программой.  Кроме того, обратите внимание на то, что встроенная программа по умолчанию не может быть удалена.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -44,11 +44,11 @@ DELETE /programs/{id}
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -99,3 +99,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

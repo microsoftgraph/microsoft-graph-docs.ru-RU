@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 79c95007bc87c6a54eb3fce16ea20510d832c530
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 3638ed32a5d6c3d9f4df8c9e028eb7a939cf6950
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123118"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087956"
 ---
 # <a name="update-program"></a>Программа обновления
 
@@ -40,7 +40,7 @@ PATCH /programs('{programId}')
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [программы](../resources/program.md) в формате JSON.
 
 В следующей таблице приведены свойства, которые можно указать при обновлении программы.
@@ -51,7 +51,7 @@ PATCH /programs('{programId}')
 | `description`               |`String`                              |  Описание программы.           |
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `204, Accepted` код отклика и объект [Program](../resources/program.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -123,3 +123,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

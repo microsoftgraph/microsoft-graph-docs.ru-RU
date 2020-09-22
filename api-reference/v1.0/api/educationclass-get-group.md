@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b246322db24ac1a6a82643bfc4c87562fb2b0328
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: d8854a4a9f72aacd8dd04297da45f2343efc0bc1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896856"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087518"
 ---
 # <a name="get-group"></a>Вывод группы
 
@@ -27,7 +27,7 @@ ms.locfileid: "44896856"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduRoster.ReadBasic, EduRoster.Read или EduRoster.Write плюс Directory.Read.All|
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | EduRoster.Read.All, EduRoster.ReadWrite.All и Directory.Read.All| 
+|Для приложения | EduRoster.Read.All, EduRoster.ReadWrite.All и Directory.Read.All| 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -121,3 +121,4 @@ Content-length: xxx
   "suppressions": [
   ]
 }-->
+

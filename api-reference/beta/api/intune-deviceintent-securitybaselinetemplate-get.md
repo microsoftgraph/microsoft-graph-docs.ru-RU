@@ -3,14 +3,14 @@ title: Получение Секуритибаселинетемплате
 description: Чтение свойств и связей объекта Секуритибаселинетемплате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3c484b78e17c92751c5ce8f0aa55006fe6e3145b
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: dde66c416bf3f500327340d6129e6cdb50cfb2ea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177172"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48088127"
 ---
 # <a name="get-securitybaselinetemplate"></a>Получение Секуритибаселинетемплате
 
@@ -53,7 +53,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devic
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [секуритибаселинетемплате](../resources/intune-deviceintent-securitybaselinetemplate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -87,6 +87,9 @@ Content-Length: 495
   }
 }
 ```
+
+
+
 
 
 

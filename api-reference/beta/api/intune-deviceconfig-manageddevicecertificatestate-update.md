@@ -3,14 +3,14 @@ title: Обновление Манажеддевицецертификатест
 description: Обновление свойств объекта Манажеддевицецертификатестате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b060137765444db66aaebce884fa30fe07830afa
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 6490692a9fb74d222d87642859da460ba29f8a08
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45122884"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086265"
 ---
 # <a name="update-manageddevicecertificatestate"></a>Обновление Манажеддевицецертификатестате
 
@@ -83,20 +83,20 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |цертификатесубжектнамеформат|[subjectNameFormat](../resources/intune-deviceconfig-subjectnameformat.md)|Формат имени субъекта. Возможные значения: `commonName`, `commonNameIncludingEmail`, `commonNameAsEmail`, `custom`, `commonNameAsIMEI`, `commonNameAsSerialNumber`, `commonNameAsAadDeviceId`, `commonNameAsIntuneDeviceId`, `commonNameAsDurableDeviceId`.|
 |цертификатесубжекталтернативенамеформат|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Формат альтернативного имени субъекта. Возможные значения: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
 |цертификатеревокестатус|[цертификатеревокатионстатус](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзыв состояния. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
-|цертификатепрофиледисплайнаме|String|Отображаемое имя профиля сертификата|
+|цертификатепрофиледисплайнаме|Строка|Отображаемое имя профиля сертификата|
 |deviceDisplayName|String|Отображаемое имя устройства|
 |userDisplayName|String|Отображаемое имя пользователя|
 |цертификатикспиратиондатетиме|DateTimeOffset|Дата окончания срока действия сертификата|
 |цертификателастиссуанцестатечанжеддатетиме|DateTimeOffset|Последнее изменение состояния выдачи сертификата|
 |ластцертификатестатечанжедатетиме|DateTimeOffset|Последнее изменение состояния выдачи сертификата|
-|цертификатеиссуер|String|Издатель|
-|certificateThumbprint|String|Отпечаток|
-|цертификатесериалнумбер|String|Серийный номер|
+|цертификатеиссуер|Строка|Издатель|
+|certificateThumbprint|Строка|Отпечаток|
+|цертификатесериалнумбер|Строка|Серийный номер|
 |цертификатекэйленгс|Int32|Длина ключа|
-|цертификатинханцедкэйусаже|String|Расширенное использование ключа|
+|цертификатинханцедкэйусаже|Строка|Расширенное использование ключа|
 |цертификатевалидитипериод|Int32|Срок действия|
-|цертификатесубжектнамеформатстринг|String|Строка формата имени субъекта для пользовательских форматов имен субъектов|
-|цертификатесубжекталтернативенамеформатстринг|String|Строка формата альтернативного имени субъекта для пользовательских форматов|
+|цертификатесубжектнамеформатстринг|Строка|Строка формата имени субъекта для пользовательских форматов имен субъектов|
+|цертификатесубжекталтернативенамеформатстринг|Строка|Строка формата альтернативного имени субъекта для пользовательских форматов|
 |цертификатеиссуанцедатетиме|DateTimeOffset|Дата выпуска|
 |цертификатирроркоде|Int32|Код ошибки|
 
@@ -179,6 +179,9 @@ Content-Length: 1566
   "certificateErrorCode": 4
 }
 ```
+
+
+
 
 
 

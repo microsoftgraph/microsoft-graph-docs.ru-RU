@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: eb49af67f2475bdaf88351edcbbaa36f67e3c3fe
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: fd9254deb969a860b14268057421e4e1547c7a08
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123084"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087938"
 ---
 # <a name="delete-programcontrol"></a>Удаление Програмконтрол
 
@@ -28,7 +28,7 @@ ms.locfileid: "43123084"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | ProgramControl.ReadWrite.All  |
 
-Пользователь, вошедшего в систему, также должен находиться в роли каталога, который разрешает им `programControl`удалять.
+Пользователь, вошедшего в систему, также должен находиться в роли каталога, который разрешает им удалять `programControl` .
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,11 +40,11 @@ DELETE /programControls/{id}
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -95,3 +95,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1bb1ae728498c79cfe06efabe27b3986f8cdee4c
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 0af6dfe76e64558e933899463d5bd18ae21cf1cb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567356"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087245"
 ---
 # <a name="update-ipnamedlocation"></a>Обновление Ипнамедлокатион
 
@@ -26,7 +26,7 @@ ms.locfileid: "46567356"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
+| Для приложения                            | Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,9 +49,9 @@ PATCH /identity/conditionalAccess/namedLocations/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|String|Удобное для человека имя расположения.|
+|displayName|Строка|Удобное для человека имя расположения.|
 |ипранжес|Коллекция объектов [ipRange](../resources/iprange.md)|Список диапазонов IP-адресов в формате IPv4 CIDR (1.2.3.4/32) или любом допустимом формате IPv6 из IETF RFC5962.|
-|Доверять|Логическое|Значение, `true` если это расположение явно доверенное.|
+|Доверять|Boolean|Значение, `true` если это расположение явно доверенное.|
 
 ## <a name="response"></a>Отклик
 
@@ -131,3 +131,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

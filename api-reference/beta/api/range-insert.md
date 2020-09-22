@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 0f5f31a0f8970c19ffe4e9837b75d9b643453b67
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 91733596bcf3f3b07234e3880ba0a9d84a5ace9f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454754"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087917"
 ---
 # <a name="range-insert"></a>Range: insert
 
@@ -42,7 +42,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -122,3 +122,5 @@ Content-length: 169
   ]
 }
 -->
+
+

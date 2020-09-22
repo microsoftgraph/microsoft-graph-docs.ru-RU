@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: f75d034c7f4e5a6e3c8463e21114fc6a6a429a65
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: e7b3846f33b1cd0985712d7ad9aad63c2fedfcf0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809280"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087231"
 ---
 # <a name="update-nameditem"></a>Обновление объекта NamedItem
 
@@ -121,3 +121,4 @@ Content-length: 87
   "suppressions": [
   ]
 }-->
+

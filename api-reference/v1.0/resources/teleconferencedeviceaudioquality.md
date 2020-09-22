@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 8c2d5cb6201f035065e5f46278dce60c70f876e4
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 898d552e8943da11e0d57b45630bf42848f01d04
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082764"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086342"
 ---
 # <a name="teleconferencedeviceaudioquality-resource-type"></a>Тип ресурса Телеконференцедевицеаудиокуалити
 
@@ -70,3 +70,4 @@ ms.locfileid: "43082764"
   "section": "documentation",
   "tocPath": ""
 }-->
+

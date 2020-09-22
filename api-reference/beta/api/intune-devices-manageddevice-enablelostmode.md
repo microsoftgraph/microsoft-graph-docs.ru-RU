@@ -3,14 +3,14 @@ title: Действие enableLostMode
 description: Включение режима потери
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c31de1f333ecf933d7e4ee8b81514c217fcdfe52
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 32a2b7a0d3c2de59fca79baf9c874c5b0eb09e82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792305"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085866"
 ---
 # <a name="enablelostmode-action"></a>Действие enableLostMode
 
@@ -52,7 +52,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -90,6 +90,9 @@ Content-length: 103
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

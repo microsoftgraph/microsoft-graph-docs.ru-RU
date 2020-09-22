@@ -6,12 +6,12 @@ description: Получение Итеманалитицистатс для де
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f39fdcb00b367bed4044bad521b658c897fdc016
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: a26892aac83aa28b7a4769f2ad678643a3c417ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345711"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087227"
 ---
 # <a name="get-item-activity-stats-by-interval"></a>Получение статистики по действиям элемента по интервалу
 
@@ -19,7 +19,7 @@ ms.locfileid: "44345711"
 
 Получение коллекции ресурсов [итемактивитистатс][] для действий, выполняемых с этим ресурсом в течение указанного интервала времени.
 
->**Примечание:** Ресурс **итеманалитикс** пока недоступен во всех [национальных развертываниях](/graph/deployments).
+>**Примечание:** Ресурс **итеманалитикс** пока недоступен во всех [национальных развертываниях](/graph/deployments). 
 
 Статистические функции аналитики могут быть недоступны для всех типов действий.
 
@@ -51,6 +51,8 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 | endDateTime    | строка (timestamp) | Время окончания агрегирования действий.
 | interval       | string             | Интервал объединения.
 
+>**Примечание:** Этот API поддерживает только диапазон времени 90 дней для ежедневных счетчиков. Значение `startDateTime` `endDateTime` параметра и должно представлять собой диапазон времени менее 90 дней.
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки отклика.
 
@@ -60,7 +62,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 |:----------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -147,3 +149,4 @@ Content-type: application/json
   "suppressions": []
 }
 -->
+

@@ -3,14 +3,14 @@ title: Список Девицеманажементскриптдевицест
 description: Список свойств и связей объектов Девицеманажементскриптдевицестате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dd32ab0b0621716c417a83b4ed9dd47c649e8311
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c041c6825c62b9a69e10d553b300b7106390cb84
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43425826"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085880"
 ---
 # <a name="list-devicemanagementscriptdevicestates"></a>Список Девицеманажементскриптдевицестатес
 
@@ -48,10 +48,10 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRun
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицеманажементскриптдевицестате](../resources/intune-devices-devicemanagementscriptdevicestate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -83,6 +83,9 @@ Content-Length: 391
   ]
 }
 ```
+
+
+
 
 
 

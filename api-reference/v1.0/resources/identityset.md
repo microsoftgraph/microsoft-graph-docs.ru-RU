@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс IdentitySet представляет собой коллекцию ресурсов identity с ключами.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 0a5d53769dc023e79ac9f50db2c085647775cab0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 09a0a48ca46f0d3a429705e5becf18f37832e5a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531332"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086671"
 ---
 # <a name="identityset-resource-type"></a>Тип ресурса IdentitySet
 
@@ -39,8 +39,8 @@ ms.locfileid: "42531332"
 
 | Свойство    | Тип                    | Описание                                            |
 |:------------|:------------------------|:-------------------------------------------------------|
-| application | [Идентификация](identity.md) | Необязательный. Приложение, связанное с данным действием. |
-| Устройство      | [Идентификация](identity.md) | Необязательный. Устройство, связанное с данным действием.      |
+| application | [Identity](identity.md) | Необязательный. Приложение, связанное с данным действием. |
+| Устройство      | [Identity](identity.md) | Необязательный. Устройство, связанное с данным действием.      |
 | user        | [Identity](identity.md) | Необязательный. Пользователь, связанный с данным действием.        |
 
 ## <a name="remarks"></a>Заметки 
@@ -56,3 +56,4 @@ ms.locfileid: "42531332"
   "section": "documentation",
   "tocPath": "Resources/IdentitySet"
 } -->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 61c6293840c544e397f6761149c9131c94d9f930
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bba954e428bbc81a6d83dd17471ca24b66133e95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517406"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087511"
 ---
 # <a name="update-educationuser-properties"></a>Обновление свойств educationUser
 
@@ -24,7 +24,7 @@ ms.locfileid: "42517406"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.ReadWrite.All |
+|Для приложения | EduRoster.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -159,3 +159,4 @@ Content-length: 508
   "suppressions": [
   ]
 }-->
+

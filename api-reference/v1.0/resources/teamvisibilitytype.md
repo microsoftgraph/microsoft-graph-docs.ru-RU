@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: enumPageType
-ms.openlocfilehash: b33fc01a0bb0ef14df8b764c1808eeb309ebb2bd
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: ffebe23a48eb0ad68e28103689535298c40d23a3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333537"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086370"
 ---
 # <a name="teamvisibilitytype-enum-type"></a>тип перечисления объекта teamvisibilitytype
 
@@ -24,3 +24,4 @@ ms.locfileid: "44333537"
 |:---------------|:--------|:----------|
 |закрытый|нуль|Любой пользователь может видеть команду, но только владелец может добавить в нее пользователя.|
 |public|1 |Любой пользователь может присоединиться к команде.|
+

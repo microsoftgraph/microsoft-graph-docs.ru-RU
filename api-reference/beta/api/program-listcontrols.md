@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: e24c41ea7e0f99af914bf396766ae2120d556eca
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 5299861843a6af0e3a41a8903d1d85af645672bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123086"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087953"
 ---
 # <a name="list-programcontrols-of-a-program"></a>Список Програмконтролс программы
 
@@ -40,10 +40,10 @@ GET /programs('{programId}')/controls
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не следует предоставлять текст запроса.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200, OK` код отклика и массив объектов [програмконтрол](../resources/programcontrol.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -114,3 +114,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

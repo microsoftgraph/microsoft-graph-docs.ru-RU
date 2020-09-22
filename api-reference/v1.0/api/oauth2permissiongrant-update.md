@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 9b1570ad83abdabf1c845f3ad574187274428f25
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 2737f9a983cbf7536d861244c8efdb64865eb579
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383786"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087203"
 ---
 # <a name="update-a-delegated-permission-grant-oauth2permissiongrant"></a>Обновление делегированного предоставления разрешений (oAuth2PermissionGrant)
 
@@ -29,7 +29,7 @@ ms.locfileid: "44383786"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Делегатедпермиссионгрант. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Directory.ReadWrite.All |
+|Для приложения | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -118,3 +118,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

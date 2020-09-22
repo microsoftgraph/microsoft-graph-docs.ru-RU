@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 5ea2380c53414e3ef4fe0845ee2638ba8ce86482
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: 94af6ae2c8ed1cfa9ec9c66502d48b5eabcb482f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598537"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087637"
 ---
 # <a name="resourcedata-resource-type"></a>Тип ресурса resourceData
 
@@ -24,7 +24,7 @@ ms.locfileid: "46598537"
 
 ## <a name="methods"></a>Методы
 
-Нет.
+Отсутствуют.
 
 ## <a name="properties"></a>Свойства
 
@@ -37,7 +37,7 @@ ms.locfileid: "46598537"
 | @odata.etag | строка | @odata.etag — HTTP-тег сущности, представляющий версию объекта. |
 | id | строка | Идентификатор объекта. |
 
-> **Примечание:** `id`Значение, указанное в **resourceData** , является допустимым во время создания уведомления об изменении. Некоторые действия, например перемещение сообщения в другую папку, могут привести к `id` недействительности при обработке уведомления об изменении.
+> **Примечание:** `id` Значение, указанное в **resourceData** , является допустимым во время создания уведомления об изменении. Некоторые действия, например перемещение сообщения в другую папку, могут привести к `id` недействительности при обработке уведомления об изменении.
 
 ## <a name="relationships"></a>Связи
 
@@ -75,3 +75,5 @@ ms.locfileid: "46598537"
   "suppressions": []
 }
 -->
+
+

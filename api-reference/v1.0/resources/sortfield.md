@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: debc1f860e2e24306d6261444a29e126037aa3ae
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 6bc2a983fe5b27759a0944975876c2c0a0b1ca41
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806746"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086411"
 ---
 # <a name="sortfield-resource-type"></a>Тип ресурса SortField
 
@@ -28,7 +28,7 @@ ms.locfileid: "46806746"
 |sortOn|string|Представляет тип сортировки этого условия. Допустимые значения: `Value`, `CellColor`, `FontColor`, `Icon`.|
 |значок|[воркбукикон](icon.md)|Представляет значок, определенный условием, при сортировке по значку ячейки.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -59,3 +59,4 @@ ms.locfileid: "46806746"
   "section": "documentation",
   "tocPath": ""
 }-->
+

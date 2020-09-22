@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ffef189622621322fee15cdfc651531bd6a6d0c0
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 82834e1605c0d8adb2c90fa14e094ecd72c13dd1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44218231"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087103"
 ---
 # <a name="get-offershiftrequest"></a>Получение Оффершифтрекуест
 
@@ -26,7 +26,7 @@ ms.locfileid: "44218231"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Schedule. Read. ALL, Group. Read. ALL, Schedule. ReadWrite. ALL, Group. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Schedule. Read. ALL, Schedule. ReadWrite. ALL |
+| Для приложения                            | Schedule. Read. ALL, Schedule. ReadWrite. ALL |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
 
@@ -52,7 +52,7 @@ GET /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [оффершифтрекуест](../resources/offershiftrequest.md) в тексте отклика.
 
@@ -126,3 +126,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

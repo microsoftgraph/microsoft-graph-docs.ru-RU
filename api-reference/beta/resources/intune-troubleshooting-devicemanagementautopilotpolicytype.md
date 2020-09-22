@@ -3,14 +3,14 @@ title: тип перечисления Девицеманажементауто�
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 565eb8a319e22b004acc9a4da2163598a82c6874
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9894eddfc17902c5c7e8b291e8ea348132800b2f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462290"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087658"
 ---
 # <a name="devicemanagementautopilotpolicytype-enum-type"></a>тип перечисления Девицеманажементаутопилотполицитипе
 
@@ -26,9 +26,12 @@ ms.locfileid: "43462290"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Пока не задокументировано.|
-|application|4|Пока не задокументировано.|
+|приложение|4|Пока не задокументировано.|
 |appModel|7 |Пока не задокументировано.|
 |конфигуратионполици|12 |Пока не задокументировано.|
+
+
+
 
 
 

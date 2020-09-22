@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 717acbd1f7b679095ad84e371891926bca139843
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 769eabc845f966b0ab692aeba2dc078e53086ca5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471147"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48087915"
 ---
 # <a name="list-existing-synchronization-templates"></a>Список существующих шаблонов синхронизации
 
@@ -42,13 +42,13 @@ GET applications/{id}/synchronization/templates
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и Аколлектион объектов [синчронизатионтемплате](../resources/synchronization-synchronizationtemplate.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и аколлектион объектов [синчронизатионтемплате](../resources/synchronization-synchronizationtemplate.md) в теле отклика.
 
 ### <a name="example"></a>Пример
 
@@ -117,3 +117,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e81813f408c561a09b89e4cb3fd490acb6988cff
-ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
+ms.openlocfilehash: e848fc07037dc536a116a30f1906fed3754eb05e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47439992"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48086406"
 ---
 # <a name="teamstabconfiguration-resource-type-open-type"></a>Тип ресурса Теамстабконфигуратион (Open Type)
 
@@ -26,7 +26,7 @@ ms.locfileid: "47439992"
 |Свойство|Тип|Описание|
 |-|-|-|
 |  entityId   |   string |  Идентификатор для сущности, размещенной у поставщика вкладок.     |
-|  contentUrl |   string |  URL-адрес, используемый для отображения содержимого вкладки в Teams. Обязательно.    |
+|  contentUrl |   string |  URL-адрес, используемый для отображения содержимого вкладки в Teams. Обязательный.    |
 |  removeUrl  |   строка |  URL-адрес, вызываемый клиентом Teams при удалении вкладки с помощью клиента Teams.     |
 |  websiteUrl |   string |  URL-адрес для отображения содержимого вкладки вне Teams.     |
 
@@ -55,3 +55,4 @@ ms.locfileid: "47439992"
   "section": "documentation",
   "tocPath": ""
 }-->
+
