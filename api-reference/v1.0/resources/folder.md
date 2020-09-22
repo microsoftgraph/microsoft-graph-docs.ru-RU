@@ -7,12 +7,12 @@ localization_priority: Normal
 description: 'Ресурс Folder — это единая структура, объединяющая данные элемента, связанные с папками. '
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1ee34252671477a1efb83daf056330b499d94966
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b883a263833380d415d3b3878b48423e5566e64
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531396"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018314"
 ---
 # <a name="folder-resource-type"></a>Тип ресурса Folder
 
@@ -60,3 +60,4 @@ ms.locfileid: "42531396"
   "section": "documentation",
   "tocPath": "Facets/Folder"
 } -->
+

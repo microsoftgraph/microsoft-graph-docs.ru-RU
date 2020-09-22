@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fefccfedc348a7cab23e093fdd7728f49029b52c
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d636350237c34464b557a970e3bbf121d50de88a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807796"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018370"
 ---
 # <a name="filesecuritystate-resource-type"></a>Тип ресурса объекта filesecuritystate
 
@@ -27,7 +27,7 @@ ms.locfileid: "46807796"
 |path|String|Полный путь к файлу или файлу imageFile.|
 |riskScore|String|Созданный поставщиком/вычисляемый показатель риска для файла оповещений. Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -58,3 +58,4 @@ ms.locfileid: "46807796"
   "section": "documentation",
   "tocPath": ""
 }-->
+

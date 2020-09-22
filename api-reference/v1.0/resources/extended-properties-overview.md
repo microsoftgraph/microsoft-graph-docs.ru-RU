@@ -5,12 +5,12 @@ localization_priority: Priority
 author: svpsiva
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: f7992e2edf1a9ce61b9ee4d7fd4afe99c985a9b2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 32e328a0d66a954d630213d5731c8e3601b7ce37
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459723"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018510"
 ---
 # <a name="outlook-extended-properties-overview"></a>Общие сведения о расширенных свойствах Outlook
 
@@ -23,9 +23,9 @@ ms.locfileid: "43459723"
 - [event](../resources/event.md);
 - [calendar](../resources/calendar.md);
 - [contact](../resources/contact.md);
-- [contactFolder](../resources/contactfolder.md).
+- [contactFolder](../resources/contactfolder.md)
 
-Или в следующих ресурсах группы Office 365:
+Или в следующих ресурсах группы Microsoft 365:
 
 - group [event](../resources/event.md);
 - [calendar](../resources/calendar.md) для групп;
@@ -92,4 +92,5 @@ ms.locfileid: "43459723"
 
 - [Создание расширенного свойства в новом или существующем экземпляре ресурса](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md)
 - [Получение экземпляра ресурса с расширенным свойством с помощью параметра `$expand`](../api/multivaluelegacyextendedproperty-get.md)
+
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 11f4c30150774998c41604112fc3b555a6c42efd
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: d458a61e0877e7eb367edb65afe4bf7daca422f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384660"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018804"
 ---
 # <a name="countrynamedlocation-resource-type"></a>Тип ресурса Каунтринамедлокатион
 
@@ -36,7 +36,7 @@ ms.locfileid: "45384660"
 |:-------------|:------------|:------------|
 |каунтриесандрегионс|Коллекция String|Список стран и/или регионов в формате из двух букв, заданных в стандарте ISO 3166-2.|
 |createdDateTime|DateTimeOffset|Тип timestamp представляет дату и время создания расположения с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
-|displayName|Строка|Удобное для человека имя расположения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
+|displayName|String|Удобное для человека имя расположения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
 |id|String|Идентификатор объекта Намедлокатион. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
 |инклудеункновнкаунтриесандрегионс|Boolean|Значение true, если IP-адреса, которые не сопоставляются со страной или регионом, должны быть включены в именованное расположение.|
 |modifiedDateTime|DateTimeOffset|Тип timestamp представляет дату и время последнего изменения расположения с использованием формата ISO 8601, которое всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
@@ -78,3 +78,4 @@ ms.locfileid: "45384660"
   "section": "documentation",
   "tocPath": ""
 }-->
+

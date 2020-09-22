@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс FileSystemInfo содержит свойства, которые отображаются в локальной файловой системе устройства для локальной версии элемента.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c53710ebdf2c14b405d69f883a125e4d14b6b7b7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cad6b441cc3ffa166bccb019e535513153789872
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532946"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018335"
 ---
 # <a name="filesysteminfo-facet"></a>Аспект FileSystemInfo
 
@@ -73,3 +73,4 @@ ms.locfileid: "42532946"
   "section": "documentation",
   "tocPath": "Facets/FileSystemInfo"
 } -->
+

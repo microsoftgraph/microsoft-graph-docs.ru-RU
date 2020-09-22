@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d034d586bad1da54e57490e300b34191034a1657
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 412308fc20c3baee63640451bb1a2c8059e71be0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807831"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018377"
 ---
 # <a name="filehash-resource-type"></a>Тип ресурса fileHash
 
@@ -25,7 +25,7 @@ ms.locfileid: "46807831"
 |хаштипе|fileHashType|Тип хэша файла. Возможные значения: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
 |хашвалуе|String|Значение хэша файла.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -54,3 +54,4 @@ ms.locfileid: "46807831"
   "section": "documentation",
   "tocPath": ""
 }-->
+

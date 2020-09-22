@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: cloud-communications
 author: gageames
-ms.openlocfilehash: 76a540a0c1a33a1ab1cb906888c5ee6c590c48ab
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 95007938f016ea01747efcf55472b42024458982
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808237"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018524"
 ---
 # <a name="call-records-enum-values"></a>Записи вызовов перечисление значений
 
@@ -18,7 +18,7 @@ ms.locfileid: "46808237"
 
 ### <a name="calltype-values"></a>значения callType
 
-| Элемент
+| Member
 |:--------------
 | unknown
 | граупкалл
@@ -27,7 +27,7 @@ ms.locfileid: "46808237"
 
 ### <a name="clientplatform-values"></a>значения Клиентплатформ
 
-| Элемент
+| Member
 |:--------------
 | unknown
 | под
@@ -43,7 +43,7 @@ ms.locfileid: "46808237"
 
 ### <a name="failurestage-values"></a>значения Фаилурестаже
 
-| Элемент
+| Member
 |:--------------
 | unknown
 | каллсетуп
@@ -52,14 +52,14 @@ ms.locfileid: "46808237"
 
 ### <a name="mediastreamdirection-values"></a>значения Медиастреамдиректион
 
-| Элемент
+| Member
 |:--------------
 | каллертокалли
 | каллитокаллер
 
 ### <a name="modality-values"></a>значения модальности
 
-| Элемент
+| Member
 |:--------------
 | unknown
 | audio
@@ -71,7 +71,7 @@ ms.locfileid: "46808237"
 
 ### <a name="networkconnectiontype-values"></a>значения Нетворкконнектионтипе
 
-| Элемент
+| Member
 |:--------------
 | unknown
 | политик
@@ -82,7 +82,7 @@ ms.locfileid: "46808237"
 
 ### <a name="productfamily-values"></a>значения Продуктфамили
 
-| Элемент
+| Member
 |:--------------
 | unknown
 | Teams
@@ -92,7 +92,7 @@ ms.locfileid: "46808237"
 
 ### <a name="servicerole-values"></a>значения Сервицероле
 
-| Элемент
+| Member
 |:--------------
 | unknown
 | кустомбот
@@ -119,7 +119,7 @@ ms.locfileid: "46808237"
 
 ### <a name="userfeedbackrating-values"></a>значения Усерфидбаккратинг
 
-| Элемент
+| Member
 |:--------------
 | нотратед
 | устойчивого
@@ -131,7 +131,7 @@ ms.locfileid: "46808237"
 
 ### <a name="wifiband-values"></a>значения Вифибанд
 
-| Элемент
+| Member
 |:--------------
 | unknown
 | frequency24GHz
@@ -141,7 +141,7 @@ ms.locfileid: "46808237"
 
 ### <a name="wifiradiotype-values"></a>значения Вифирадиотипе
 
-| Элемент
+| Member
 |:--------------
 | unknown
 | wifi80211a
@@ -158,3 +158,4 @@ ms.locfileid: "46808237"
   "namespace": "microsoft.graph.callRecords"
 }
 -->
+

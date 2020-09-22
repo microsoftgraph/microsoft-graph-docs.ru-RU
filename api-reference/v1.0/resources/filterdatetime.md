@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 616f6a67bf761d0346c6d232eb6392ee2dc5fd96
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: bd8d7c01b94306245708df8290a44ffb936ac4d6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807761"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018293"
 ---
 # <a name="filterdatetime-resource-type"></a>Тип ресурса FilterDatetime
 
@@ -24,7 +24,7 @@ ms.locfileid: "46807761"
 |дата|string|Дата в формате ISO8601, используемая для фильтрации данных.|
 |specificity|string|Точность, с которой производится фильтрация данных на основе даты. Например, если указана дата 2005-04-02, а для свойства specificity задано значение month, после фильтрации останутся все строки, датированные апрелем 2009 г. Допустимые значения: `Year`, `Monday`, `Day`, `Hour`, `Minute`, `Second`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 
@@ -57,3 +57,4 @@ ms.locfileid: "46807761"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 2c2689d6a0fa3163a8aa0b5ff2f52f1d2170f4af
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4aa2040c33d91a098c1c3783c0f427fefa7eb7b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531761"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018846"
 ---
 # <a name="conversation-resource-type"></a>Тип ресурса conversation
 
@@ -93,3 +93,4 @@ ms.locfileid: "42531761"
   "section": "documentation",
   "tocPath": ""
 }-->
+

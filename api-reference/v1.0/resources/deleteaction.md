@@ -6,12 +6,12 @@ description: Объект deleteAction предоставляет сведени
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 4d19b41d886c459822abc2ea1b04acebd94c7b68
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0bd96e02e822d1b2e1901667cbbea86ca91c8b3e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531690"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018734"
 ---
 # <a name="deleteaction-resource-type"></a>Тип ресурса deleteAction
 
@@ -28,7 +28,7 @@ ms.locfileid: "42531690"
 | Имя свойства | Тип   | Описание
 |:--------------|:-------|:----------------------------------------------------
 | name          | string | Имя элемента, который был удален.
-| objectType    | string | `File`или `Folder`, в зависимости от типа удаленного элемента.
+| objectType    | string | `File` или `Folder` , в зависимости от типа удаленного элемента.
 
 
 ## <a name="json-representation"></a>Представление JSON
@@ -56,3 +56,4 @@ ms.locfileid: "42531690"
   "suppressions": []
 }
 -->
+

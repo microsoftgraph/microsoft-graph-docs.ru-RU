@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 9b53ff3250720171a57fc33a8487d40766c9e532
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 38553e51abf8be80740e7eaeded1eb7b17705173
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807803"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018300"
 ---
 # <a name="filtercriteria-resource-type"></a>Тип ресурса FilterCriteria
 
@@ -18,7 +18,7 @@ ms.locfileid: "46807803"
 
 Представляет условия фильтра, применяемые к столбцу.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -62,3 +62,4 @@ ms.locfileid: "46807803"
       Property 'values' found in resource definition for 'microsoft.graph.workbookFilterCriteria', but not described in markdown table."
   ]
 } -->
+

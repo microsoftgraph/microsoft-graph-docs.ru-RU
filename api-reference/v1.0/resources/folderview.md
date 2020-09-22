@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс FolderView предоставляет или задает рекомендации для пользовательского интерфейса папки.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: a614f0a14f6dc12df412692c01b8005e62665143
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 749b66b50545b6bc7de66647c47153227cb54fa7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532939"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018279"
 ---
 # <a name="folderview-resource-type"></a>Тип ресурса FolderView
 
@@ -38,8 +38,8 @@ ms.locfileid: "42532939"
 
 | Имя свойства         | Тип   | Описание
 |:----------------------|:-------|:--------------------------------------------
-| **sortBy**            | string | Метод сортировки содержимого папки.
-| **sortOrder**         | string | Если значение равно true, то необходимо отсортировать элементы по убыванию. В противном случае необходимо отсортировать элементы по возрастанию.
+| **sortBy**            | строка | Метод сортировки содержимого папки.
+| **sortOrder**         | строка | Если значение равно true, то необходимо отсортировать элементы по убыванию. В противном случае необходимо отсортировать элементы по возрастанию.
 | **viewType**          | строка | Тип представления, который следует использовать для представления папки.
 
 Вы можете использовать свойство _sortBy_ для управления порядком сортировки элементов в приложениях, использующих аспект **viewType**.
@@ -99,3 +99,4 @@ ms.locfileid: "42532939"
   ],
   "tocPath": "Facets/FolderView"
 } -->
+

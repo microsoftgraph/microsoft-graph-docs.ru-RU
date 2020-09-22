@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8730c6fefebadbd2c64937366c7b7de41537b11c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3a756df15be02544f843e6176677f26ea7e95678
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531674"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018706"
 ---
 # <a name="devicedetail-resource-type"></a>Тип ресурса Девицедетаил
 
@@ -63,3 +63,4 @@ ms.locfileid: "42531674"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8a67d1833a56bb8e1fc1a7c5f5716d165c755f41
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: bacdcc3c2ec7368597a03d40e6835f09e02cd7f4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123170"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018783"
 ---
 # <a name="datapolicyoperation-resource-type"></a>Тип ресурса dataPolicyOperation
 
@@ -32,7 +32,7 @@ ms.locfileid: "43123170"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |completedDateTime|DateTimeOffset|Представляет время завершения запроса для этой операции политики данных в формате UTC с использованием формата ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Значение null до завершения операции.|
-|id|Строка| Уникальный ключ для этой операции. |
+|id|String| Уникальный ключ для этой операции. |
 |status|string| Возможные значения: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
 |сторажелокатион|String|URL-адрес, по которому выполняется экспорт данных для запросов на экспорт.|
 |userId|String|Идентификатор пользователя, для которого выполняется операция.|
@@ -77,3 +77,4 @@ ms.locfileid: "43123170"
   "section": "documentation",
   "tocPath": ""
 }-->
+

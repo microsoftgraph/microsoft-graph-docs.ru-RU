@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 623dd4fa92036a3c542bebf791dc802ce0d53520
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 0ba79f634432b6f481bb94be3b70b6821fb84e7d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812339"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018433"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Тип ресурса extensionSchemaProperty
 
@@ -36,7 +36,7 @@ ms.locfileid: "46812339"
 | Целое число | 32-разрядное значение. Не поддерживается для ресурсов contact, message, event и post. |
 | String | Не более 256 символов |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
@@ -64,3 +64,4 @@ ms.locfileid: "46812339"
   "section": "documentation",
   "tocPath": ""
 }-->
+
