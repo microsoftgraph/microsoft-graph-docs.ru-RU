@@ -3,35 +3,35 @@ title: Получение Виндовсаутопилотдеплойментп
 description: Чтение свойств и связей объекта Виндовсаутопилотдеплойментпрофилеассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0059c397fb907bd32456563ba5963ac14cd1665
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 825598339c0001120bf608d0465ac348f609dbf1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792052"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986478"
 ---
-# <a name="get-windowsautopilotdeploymentprofileassignment"></a><span data-ttu-id="06b61-103">Получение Виндовсаутопилотдеплойментпрофилеассигнмент</span><span class="sxs-lookup"><span data-stu-id="06b61-103">Get windowsAutopilotDeploymentProfileAssignment</span></span>
+# <a name="get-windowsautopilotdeploymentprofileassignment"></a><span data-ttu-id="22508-103">Получение Виндовсаутопилотдеплойментпрофилеассигнмент</span><span class="sxs-lookup"><span data-stu-id="22508-103">Get windowsAutopilotDeploymentProfileAssignment</span></span>
 
-<span data-ttu-id="06b61-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="06b61-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="22508-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="22508-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="06b61-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="06b61-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="22508-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="22508-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="06b61-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="06b61-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="22508-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="22508-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="06b61-107">Чтение свойств и связей объекта [виндовсаутопилотдеплойментпрофилеассигнмент](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="06b61-107">Read properties and relationships of the [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) object.</span></span>
+<span data-ttu-id="22508-107">Чтение свойств и связей объекта [виндовсаутопилотдеплойментпрофилеассигнмент](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="22508-107">Read properties and relationships of the [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="06b61-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="06b61-108">Prerequisites</span></span>
-<span data-ttu-id="06b61-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="06b61-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="22508-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="22508-108">Prerequisites</span></span>
+<span data-ttu-id="22508-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="22508-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="06b61-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="06b61-111">Permission type</span></span>|<span data-ttu-id="06b61-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="06b61-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="22508-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="22508-111">Permission type</span></span>|<span data-ttu-id="22508-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="22508-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="06b61-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="06b61-113">Delegated (work or school account)</span></span>|<span data-ttu-id="06b61-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="06b61-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
-|<span data-ttu-id="06b61-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="06b61-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="06b61-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="06b61-116">Not supported.</span></span>|
-|<span data-ttu-id="06b61-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="06b61-117">Application</span></span>|<span data-ttu-id="06b61-118">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="06b61-118">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="22508-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="22508-113">Delegated (work or school account)</span></span>|<span data-ttu-id="22508-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="22508-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="22508-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="22508-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="22508-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="22508-116">Not supported.</span></span>|
+|<span data-ttu-id="22508-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="22508-117">Application</span></span>|<span data-ttu-id="22508-118">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="22508-118">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="06b61-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="06b61-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="22508-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="22508-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,31 +40,31 @@ ms.locfileid: "44792052"
 GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignments/{windowsAutopilotDeploymentProfileAssignmentId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="06b61-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="06b61-120">Optional query parameters</span></span>
-<span data-ttu-id="06b61-121">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="06b61-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="22508-120">Необязательные параметры запроса</span><span class="sxs-lookup"><span data-stu-id="22508-120">Optional query parameters</span></span>
+<span data-ttu-id="22508-121">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="22508-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="06b61-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="06b61-122">Request headers</span></span>
-|<span data-ttu-id="06b61-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="06b61-123">Header</span></span>|<span data-ttu-id="06b61-124">Значение</span><span class="sxs-lookup"><span data-stu-id="06b61-124">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="22508-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="22508-122">Request headers</span></span>
+|<span data-ttu-id="22508-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="22508-123">Header</span></span>|<span data-ttu-id="22508-124">Значение</span><span class="sxs-lookup"><span data-stu-id="22508-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="06b61-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="06b61-125">Authorization</span></span>|<span data-ttu-id="06b61-126">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="06b61-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="06b61-127">Accept</span><span class="sxs-lookup"><span data-stu-id="06b61-127">Accept</span></span>|<span data-ttu-id="06b61-128">application/json</span><span class="sxs-lookup"><span data-stu-id="06b61-128">application/json</span></span>|
+|<span data-ttu-id="22508-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="22508-125">Authorization</span></span>|<span data-ttu-id="22508-126">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="22508-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="22508-127">Accept</span><span class="sxs-lookup"><span data-stu-id="22508-127">Accept</span></span>|<span data-ttu-id="22508-128">application/json</span><span class="sxs-lookup"><span data-stu-id="22508-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="06b61-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="06b61-129">Request body</span></span>
-<span data-ttu-id="06b61-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="06b61-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="22508-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="22508-129">Request body</span></span>
+<span data-ttu-id="22508-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="22508-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="06b61-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="06b61-131">Response</span></span>
-<span data-ttu-id="06b61-132">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [виндовсаутопилотдеплойментпрофилеассигнмент](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="06b61-132">If successful, this method returns a `200 OK` response code and [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="22508-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="22508-131">Response</span></span>
+<span data-ttu-id="22508-132">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [виндовсаутопилотдеплойментпрофилеассигнмент](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="22508-132">If successful, this method returns a `200 OK` response code and [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="06b61-133">Пример</span><span class="sxs-lookup"><span data-stu-id="06b61-133">Example</span></span>
+## <a name="example"></a><span data-ttu-id="22508-133">Пример</span><span class="sxs-lookup"><span data-stu-id="22508-133">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="06b61-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="06b61-134">Request</span></span>
-<span data-ttu-id="06b61-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="06b61-135">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="22508-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="22508-134">Request</span></span>
+<span data-ttu-id="22508-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="22508-135">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignments/{windowsAutopilotDeploymentProfileAssignmentId}
 ```
 
-### <a name="response"></a><span data-ttu-id="06b61-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="06b61-136">Response</span></span>
-<span data-ttu-id="06b61-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="06b61-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="22508-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="22508-136">Response</span></span>
+<span data-ttu-id="22508-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="22508-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -84,6 +84,9 @@ Content-Length: 497
   }
 }
 ```
+
+
+
 
 
 

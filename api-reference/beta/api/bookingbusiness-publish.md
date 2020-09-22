@@ -5,54 +5,54 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a1f2a9bf6e7617cf991a37acada452c6c19b05d4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a29904342e44a7642335333fa39f95866df1609d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43382415"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988011"
 ---
-# <a name="bookingbusiness-publish"></a><span data-ttu-id="90442-103">Букингбусинесс: публикация</span><span class="sxs-lookup"><span data-stu-id="90442-103">bookingBusiness: publish</span></span>
+# <a name="bookingbusiness-publish"></a><span data-ttu-id="ab534-103">Букингбусинесс: публикация</span><span class="sxs-lookup"><span data-stu-id="ab534-103">bookingBusiness: publish</span></span>
 
-<span data-ttu-id="90442-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="90442-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ab534-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ab534-104">Namespace: microsoft.graph</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="90442-105">Сделайте страницу планирования для этого бизнеса доступной внешним клиентам.</span><span class="sxs-lookup"><span data-stu-id="90442-105">Make the scheduling page of this business available to external customers.</span></span>
+<span data-ttu-id="ab534-105">Сделайте страницу планирования для этого бизнеса доступной внешним клиентам.</span><span class="sxs-lookup"><span data-stu-id="ab534-105">Make the scheduling page of this business available to external customers.</span></span>
 
-<span data-ttu-id="90442-106">Задайте для свойства **публикации** значение true, а свойству **публикурл** — URL-адрес страницы планирования.</span><span class="sxs-lookup"><span data-stu-id="90442-106">Set the **isPublished** property to true, and **publicUrl** property to the URL of the scheduling page.</span></span>
+<span data-ttu-id="ab534-106">Задайте для свойства **публикации** значение true, а свойству **публикурл** — URL-адрес страницы планирования.</span><span class="sxs-lookup"><span data-stu-id="ab534-106">Set the **isPublished** property to true, and **publicUrl** property to the URL of the scheduling page.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="90442-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="90442-107">Permissions</span></span>
-<span data-ttu-id="90442-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="90442-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ab534-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ab534-107">Permissions</span></span>
+<span data-ttu-id="ab534-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ab534-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="90442-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="90442-110">Permission type</span></span>      | <span data-ttu-id="90442-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="90442-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ab534-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ab534-110">Permission type</span></span>      | <span data-ttu-id="ab534-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ab534-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="90442-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="90442-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="90442-113">Резервирования. Manage. ALL</span><span class="sxs-lookup"><span data-stu-id="90442-113">Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="90442-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="90442-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="90442-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="90442-115">Not supported.</span></span>   |
-|<span data-ttu-id="90442-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="90442-116">Application</span></span> | <span data-ttu-id="90442-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="90442-117">Not supported.</span></span>  |
+|<span data-ttu-id="ab534-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ab534-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="ab534-113">Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="ab534-113">Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="ab534-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ab534-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ab534-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ab534-115">Not supported.</span></span>   |
+|<span data-ttu-id="ab534-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ab534-116">Application</span></span> | <span data-ttu-id="ab534-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ab534-117">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="90442-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="90442-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ab534-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ab534-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses/{id}/publish
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="90442-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="90442-119">Request headers</span></span>
-| <span data-ttu-id="90442-120">Имя</span><span class="sxs-lookup"><span data-stu-id="90442-120">Name</span></span>       | <span data-ttu-id="90442-121">Описание</span><span class="sxs-lookup"><span data-stu-id="90442-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ab534-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ab534-119">Request headers</span></span>
+| <span data-ttu-id="ab534-120">Имя</span><span class="sxs-lookup"><span data-stu-id="ab534-120">Name</span></span>       | <span data-ttu-id="ab534-121">Описание</span><span class="sxs-lookup"><span data-stu-id="ab534-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="90442-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="90442-122">Authorization</span></span>  | <span data-ttu-id="90442-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="90442-123">Bearer {code}</span></span>|
+| <span data-ttu-id="ab534-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ab534-122">Authorization</span></span>  | <span data-ttu-id="ab534-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="ab534-123">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="90442-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="90442-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ab534-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ab534-124">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="90442-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="90442-125">Response</span></span>
-<span data-ttu-id="90442-p102">В случае успешного выполнения этот метод возвращает код отклика `204 No content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="90442-p102">If successful, this method returns `204 No content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="ab534-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="ab534-125">Response</span></span>
+<span data-ttu-id="ab534-p102">В случае успешного выполнения этот метод возвращает код отклика `204 No content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="ab534-p102">If successful, this method returns `204 No content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="90442-128">Пример</span><span class="sxs-lookup"><span data-stu-id="90442-128">Example</span></span>
-<span data-ttu-id="90442-129">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="90442-129">The following is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="90442-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="90442-130">Request</span></span>
-<span data-ttu-id="90442-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="90442-131">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="ab534-128">Пример</span><span class="sxs-lookup"><span data-stu-id="ab534-128">Example</span></span>
+<span data-ttu-id="ab534-129">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="ab534-129">The following is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="ab534-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="ab534-130">Request</span></span>
+<span data-ttu-id="ab534-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ab534-131">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="90442-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="90442-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ab534-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="ab534-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bookingbusiness_publish"
@@ -60,23 +60,23 @@ POST /bookingBusinesses/{id}/publish
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/publish
 ```
-# <a name="c"></a>[<span data-ttu-id="90442-133">C#</span><span class="sxs-lookup"><span data-stu-id="90442-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ab534-133">C#</span><span class="sxs-lookup"><span data-stu-id="ab534-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/bookingbusiness-publish-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="90442-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="90442-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ab534-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ab534-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/bookingbusiness-publish-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="90442-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="90442-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ab534-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ab534-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/bookingbusiness-publish-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="90442-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="90442-136">Response</span></span>
-<span data-ttu-id="90442-137">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="90442-137">The following is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="ab534-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="ab534-136">Response</span></span>
+<span data-ttu-id="ab534-137">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ab534-137">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,3 +99,5 @@ HTTP/1.1 204 No content
   ]
 }
 -->
+
+

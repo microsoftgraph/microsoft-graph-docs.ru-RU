@@ -5,32 +5,32 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: b5c46353d0533fb2c032765527ed5ccf7107e1b3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: db647c47c528428820acc2ded9b079546b991be6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520916"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985743"
 ---
-# <a name="searchquery-resource-type"></a><span data-ttu-id="dfb9e-103">Тип ресурса searchQuery</span><span class="sxs-lookup"><span data-stu-id="dfb9e-103">searchQuery resource type</span></span>
+# <a name="searchquery-resource-type"></a><span data-ttu-id="8a7fa-103">Тип ресурса searchQuery</span><span class="sxs-lookup"><span data-stu-id="8a7fa-103">searchQuery resource type</span></span>
 
-<span data-ttu-id="dfb9e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dfb9e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8a7fa-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8a7fa-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dfb9e-105">Представляет поисковый запрос, содержащий поисковые термины и необязательные фильтры.</span><span class="sxs-lookup"><span data-stu-id="dfb9e-105">Represents a search query that contains search terms and optional filters.</span></span>
+<span data-ttu-id="8a7fa-105">Представляет поисковый запрос, содержащий поисковые термины и необязательные фильтры.</span><span class="sxs-lookup"><span data-stu-id="8a7fa-105">Represents a search query that contains search terms and optional filters.</span></span>
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
-## <a name="properties"></a><span data-ttu-id="dfb9e-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="dfb9e-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="8a7fa-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="8a7fa-106">Properties</span></span>
 
-| <span data-ttu-id="dfb9e-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="dfb9e-107">Property</span></span>     | <span data-ttu-id="dfb9e-108">Тип</span><span class="sxs-lookup"><span data-stu-id="dfb9e-108">Type</span></span>        | <span data-ttu-id="dfb9e-109">Описание</span><span class="sxs-lookup"><span data-stu-id="dfb9e-109">Description</span></span> |
+| <span data-ttu-id="8a7fa-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="8a7fa-107">Property</span></span>     | <span data-ttu-id="8a7fa-108">Тип</span><span class="sxs-lookup"><span data-stu-id="8a7fa-108">Type</span></span>        | <span data-ttu-id="8a7fa-109">Описание</span><span class="sxs-lookup"><span data-stu-id="8a7fa-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="dfb9e-110">query_string</span><span class="sxs-lookup"><span data-stu-id="dfb9e-110">query_string</span></span>|[<span data-ttu-id="dfb9e-111">сеарчкуеристринг</span><span class="sxs-lookup"><span data-stu-id="dfb9e-111">searchQueryString</span></span>](searchquerystring.md)|<span data-ttu-id="dfb9e-112">Поисковый запрос, содержащий условия поиска.</span><span class="sxs-lookup"><span data-stu-id="dfb9e-112">The search query containing the search terms.</span></span>|
+|<span data-ttu-id="8a7fa-110">query_string</span><span class="sxs-lookup"><span data-stu-id="8a7fa-110">query_string</span></span>|[<span data-ttu-id="8a7fa-111">сеарчкуеристринг</span><span class="sxs-lookup"><span data-stu-id="8a7fa-111">searchQueryString</span></span>](searchquerystring.md)|<span data-ttu-id="8a7fa-112">Поисковый запрос, содержащий условия поиска.</span><span class="sxs-lookup"><span data-stu-id="8a7fa-112">The search query containing the search terms.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="dfb9e-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="dfb9e-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8a7fa-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8a7fa-113">JSON representation</span></span>
 
-<span data-ttu-id="dfb9e-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="dfb9e-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="8a7fa-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8a7fa-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -56,3 +56,4 @@ ms.locfileid: "42520916"
   "section": "documentation",
   "tocPath": ""
 }-->
+

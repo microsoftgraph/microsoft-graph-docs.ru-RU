@@ -5,21 +5,21 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: SarahBar
-ms.openlocfilehash: 60d19d61cccb5bb5eaf8619f8de71f066593e063
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: a34e235cb89688b003691b5c50c5012e617c16a3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811975"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985645"
 ---
-# <a name="targetresourceapp-resource-type"></a><span data-ttu-id="e0a8a-104">Тип ресурса Таржетресаурцеапп</span><span class="sxs-lookup"><span data-stu-id="e0a8a-104">targetResourceApp resource type</span></span>
+# <a name="targetresourceapp-resource-type"></a><span data-ttu-id="97e57-104">Тип ресурса Таржетресаурцеапп</span><span class="sxs-lookup"><span data-stu-id="97e57-104">targetResourceApp resource type</span></span>
 
-<span data-ttu-id="e0a8a-105">Пространство имен: Microsoft. Graph указывает объект приложения, который был добавлен, обновлен или удален администраторами в рамках действия аудита.</span><span class="sxs-lookup"><span data-stu-id="e0a8a-105">Namespace: microsoft.graph Indicates the app object that was added, updated or deleted by admins as part of audit activity.</span></span> <span data-ttu-id="e0a8a-106">Является производным от ресурса [targetResource](targetresource.md) .</span><span class="sxs-lookup"><span data-stu-id="e0a8a-106">Derived from the [targetResource](targetresource.md) resource.</span></span>
+<span data-ttu-id="97e57-105">Пространство имен: Microsoft. Graph указывает объект приложения, который был добавлен, обновлен или удален администраторами в рамках действия аудита.</span><span class="sxs-lookup"><span data-stu-id="97e57-105">Namespace: microsoft.graph Indicates the app object that was added, updated or deleted by admins as part of audit activity.</span></span> <span data-ttu-id="97e57-106">Является производным от ресурса [targetResource](targetresource.md) .</span><span class="sxs-lookup"><span data-stu-id="97e57-106">Derived from the [targetResource](targetresource.md) resource.</span></span>
 
 
 
-## <a name="properties"></a><span data-ttu-id="e0a8a-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="e0a8a-107">Properties</span></span>
-<span data-ttu-id="e0a8a-108">Нет</span><span class="sxs-lookup"><span data-stu-id="e0a8a-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="97e57-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="97e57-107">Properties</span></span>
+<span data-ttu-id="97e57-108">Нет</span><span class="sxs-lookup"><span data-stu-id="97e57-108">None</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -30,3 +30,5 @@ ms.locfileid: "46811975"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

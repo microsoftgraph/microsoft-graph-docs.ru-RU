@@ -3,37 +3,37 @@ title: Тип ресурса windows10AppsForceUpdateSchedule
 description: Расписание принудительного обновления Windows 10 для приложений
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: eb590d65a6ae60eeede42b3ce6b5d422f306b8c8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7041f61bfe56a12c238426864e82563c88d23f98
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466314"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985932"
 ---
-# <a name="windows10appsforceupdateschedule-resource-type"></a><span data-ttu-id="0add0-103">Тип ресурса windows10AppsForceUpdateSchedule</span><span class="sxs-lookup"><span data-stu-id="0add0-103">windows10AppsForceUpdateSchedule resource type</span></span>
+# <a name="windows10appsforceupdateschedule-resource-type"></a><span data-ttu-id="b74c8-103">Тип ресурса windows10AppsForceUpdateSchedule</span><span class="sxs-lookup"><span data-stu-id="b74c8-103">windows10AppsForceUpdateSchedule resource type</span></span>
 
-<span data-ttu-id="0add0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0add0-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b74c8-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b74c8-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="0add0-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0add0-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="b74c8-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b74c8-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="0add0-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="0add0-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b74c8-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="b74c8-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="0add0-107">Расписание принудительного обновления Windows 10 для приложений</span><span class="sxs-lookup"><span data-stu-id="0add0-107">Windows 10 force update schedule for Apps</span></span>
+<span data-ttu-id="b74c8-107">Расписание принудительного обновления Windows 10 для приложений</span><span class="sxs-lookup"><span data-stu-id="b74c8-107">Windows 10 force update schedule for Apps</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0add0-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="0add0-108">Properties</span></span>
-|<span data-ttu-id="0add0-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="0add0-109">Property</span></span>|<span data-ttu-id="0add0-110">Тип</span><span class="sxs-lookup"><span data-stu-id="0add0-110">Type</span></span>|<span data-ttu-id="0add0-111">Описание</span><span class="sxs-lookup"><span data-stu-id="0add0-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="b74c8-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="b74c8-108">Properties</span></span>
+|<span data-ttu-id="b74c8-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="b74c8-109">Property</span></span>|<span data-ttu-id="b74c8-110">Тип</span><span class="sxs-lookup"><span data-stu-id="b74c8-110">Type</span></span>|<span data-ttu-id="b74c8-111">Описание</span><span class="sxs-lookup"><span data-stu-id="b74c8-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0add0-112">startDateTime</span><span class="sxs-lookup"><span data-stu-id="0add0-112">startDateTime</span></span>|<span data-ttu-id="0add0-113">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0add0-113">DateTimeOffset</span></span>|<span data-ttu-id="0add0-114">Время начала принудительного перезапуска.</span><span class="sxs-lookup"><span data-stu-id="0add0-114">The start time for the force restart.</span></span>|
-|<span data-ttu-id="0add0-115">recurrence</span><span class="sxs-lookup"><span data-stu-id="0add0-115">recurrence</span></span>|[<span data-ttu-id="0add0-116">windows10AppsUpdateRecurrence</span><span class="sxs-lookup"><span data-stu-id="0add0-116">windows10AppsUpdateRecurrence</span></span>](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|<span data-ttu-id="0add0-117">Расписание повторения.</span><span class="sxs-lookup"><span data-stu-id="0add0-117">Recurrence schedule.</span></span> <span data-ttu-id="0add0-118">Возможные значения: `none`, `daily`, `weekly`, `monthly`.</span><span class="sxs-lookup"><span data-stu-id="0add0-118">Possible values are: `none`, `daily`, `weekly`, `monthly`.</span></span>|
-|<span data-ttu-id="0add0-119">руниммедиателифафтерстартдатетиме</span><span class="sxs-lookup"><span data-stu-id="0add0-119">runImmediatelyIfAfterStartDateTime</span></span>|<span data-ttu-id="0add0-120">Boolean</span><span class="sxs-lookup"><span data-stu-id="0add0-120">Boolean</span></span>|<span data-ttu-id="0add0-121">Если этот параметр имеет значение true, задача выполняется немедленно, если StartDateTime находится в прошлое, иначе — выполняется при следующем повторении.</span><span class="sxs-lookup"><span data-stu-id="0add0-121">If true, runs the task immediately if StartDateTime is in the past, else, runs at the next recurrence.</span></span>|
+|<span data-ttu-id="b74c8-112">startDateTime</span><span class="sxs-lookup"><span data-stu-id="b74c8-112">startDateTime</span></span>|<span data-ttu-id="b74c8-113">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b74c8-113">DateTimeOffset</span></span>|<span data-ttu-id="b74c8-114">Время начала принудительного перезапуска.</span><span class="sxs-lookup"><span data-stu-id="b74c8-114">The start time for the force restart.</span></span>|
+|<span data-ttu-id="b74c8-115">recurrence</span><span class="sxs-lookup"><span data-stu-id="b74c8-115">recurrence</span></span>|[<span data-ttu-id="b74c8-116">windows10AppsUpdateRecurrence</span><span class="sxs-lookup"><span data-stu-id="b74c8-116">windows10AppsUpdateRecurrence</span></span>](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|<span data-ttu-id="b74c8-117">Расписание повторения.</span><span class="sxs-lookup"><span data-stu-id="b74c8-117">Recurrence schedule.</span></span> <span data-ttu-id="b74c8-118">Возможные значения: `none`, `daily`, `weekly`, `monthly`.</span><span class="sxs-lookup"><span data-stu-id="b74c8-118">Possible values are: `none`, `daily`, `weekly`, `monthly`.</span></span>|
+|<span data-ttu-id="b74c8-119">руниммедиателифафтерстартдатетиме</span><span class="sxs-lookup"><span data-stu-id="b74c8-119">runImmediatelyIfAfterStartDateTime</span></span>|<span data-ttu-id="b74c8-120">Boolean</span><span class="sxs-lookup"><span data-stu-id="b74c8-120">Boolean</span></span>|<span data-ttu-id="b74c8-121">Если этот параметр имеет значение true, задача выполняется немедленно, если StartDateTime находится в прошлое, иначе — выполняется при следующем повторении.</span><span class="sxs-lookup"><span data-stu-id="b74c8-121">If true, runs the task immediately if StartDateTime is in the past, else, runs at the next recurrence.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="0add0-122">Связи</span><span class="sxs-lookup"><span data-stu-id="0add0-122">Relationships</span></span>
-<span data-ttu-id="0add0-123">Нет</span><span class="sxs-lookup"><span data-stu-id="0add0-123">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="b74c8-122">Связи</span><span class="sxs-lookup"><span data-stu-id="b74c8-122">Relationships</span></span>
+<span data-ttu-id="b74c8-123">Нет</span><span class="sxs-lookup"><span data-stu-id="b74c8-123">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="0add0-124">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0add0-124">JSON Representation</span></span>
-<span data-ttu-id="0add0-125">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0add0-125">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b74c8-124">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b74c8-124">JSON Representation</span></span>
+<span data-ttu-id="b74c8-125">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b74c8-125">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule"
@@ -47,6 +47,9 @@ ms.locfileid: "43466314"
   "runImmediatelyIfAfterStartDateTime": true
 }
 ```
+
+
+
 
 
 

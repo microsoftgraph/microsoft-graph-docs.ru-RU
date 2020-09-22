@@ -5,29 +5,29 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 670addd8cc244ed5c97ceaca0b9544382d80ec92
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 06097280b54e065842db7aa53ff060ce2ce5d5e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806585"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986087"
 ---
-# <a name="filehash-resource-type"></a><span data-ttu-id="cdd47-103">Тип ресурса fileHash</span><span class="sxs-lookup"><span data-stu-id="cdd47-103">fileHash resource type</span></span>
+# <a name="filehash-resource-type"></a><span data-ttu-id="b5ca4-103">Тип ресурса fileHash</span><span class="sxs-lookup"><span data-stu-id="b5ca4-103">fileHash resource type</span></span>
 
-<span data-ttu-id="cdd47-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cdd47-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b5ca4-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b5ca4-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="cdd47-105">Содержит сведения о состоянии хэшей файлов (криптографии и зависящие от местонахождения).</span><span class="sxs-lookup"><span data-stu-id="cdd47-105">Contains stateful information about file hashes (cryptographic and location-sensitive).</span></span>
+<span data-ttu-id="b5ca4-105">Содержит сведения о состоянии хэшей файлов (криптографии и зависящие от местонахождения).</span><span class="sxs-lookup"><span data-stu-id="b5ca4-105">Contains stateful information about file hashes (cryptographic and location-sensitive).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="cdd47-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="cdd47-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="b5ca4-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="b5ca4-106">Properties</span></span>
 
-| <span data-ttu-id="cdd47-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="cdd47-107">Property</span></span>     | <span data-ttu-id="cdd47-108">Тип</span><span class="sxs-lookup"><span data-stu-id="cdd47-108">Type</span></span>        | <span data-ttu-id="cdd47-109">Описание</span><span class="sxs-lookup"><span data-stu-id="cdd47-109">Description</span></span> |
+| <span data-ttu-id="b5ca4-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="b5ca4-107">Property</span></span>     | <span data-ttu-id="b5ca4-108">Тип</span><span class="sxs-lookup"><span data-stu-id="b5ca4-108">Type</span></span>        | <span data-ttu-id="b5ca4-109">Описание</span><span class="sxs-lookup"><span data-stu-id="b5ca4-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="cdd47-110">хаштипе</span><span class="sxs-lookup"><span data-stu-id="cdd47-110">hashType</span></span>|<span data-ttu-id="cdd47-111">Перечисление [филехаштипе](filehashtypeenumtype.md)</span><span class="sxs-lookup"><span data-stu-id="cdd47-111">[fileHashType](filehashtypeenumtype.md) enum</span></span>|<span data-ttu-id="cdd47-112">Тип хэша файла.</span><span class="sxs-lookup"><span data-stu-id="cdd47-112">File hash type.</span></span> <span data-ttu-id="cdd47-113">Возможные значения: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.</span><span class="sxs-lookup"><span data-stu-id="cdd47-113">Possible values are: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.</span></span>|
-|<span data-ttu-id="cdd47-114">хашвалуе</span><span class="sxs-lookup"><span data-stu-id="cdd47-114">hashValue</span></span>|<span data-ttu-id="cdd47-115">String</span><span class="sxs-lookup"><span data-stu-id="cdd47-115">String</span></span>|<span data-ttu-id="cdd47-116">Значение хэша файла.</span><span class="sxs-lookup"><span data-stu-id="cdd47-116">Value of the file hash.</span></span>|
+|<span data-ttu-id="b5ca4-110">хаштипе</span><span class="sxs-lookup"><span data-stu-id="b5ca4-110">hashType</span></span>|<span data-ttu-id="b5ca4-111">Перечисление [филехаштипе](filehashtypeenumtype.md)</span><span class="sxs-lookup"><span data-stu-id="b5ca4-111">[fileHashType](filehashtypeenumtype.md) enum</span></span>|<span data-ttu-id="b5ca4-112">Тип хэша файла.</span><span class="sxs-lookup"><span data-stu-id="b5ca4-112">File hash type.</span></span> <span data-ttu-id="b5ca4-113">Возможные значения: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.</span><span class="sxs-lookup"><span data-stu-id="b5ca4-113">Possible values are: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.</span></span>|
+|<span data-ttu-id="b5ca4-114">хашвалуе</span><span class="sxs-lookup"><span data-stu-id="b5ca4-114">hashValue</span></span>|<span data-ttu-id="b5ca4-115">String</span><span class="sxs-lookup"><span data-stu-id="b5ca4-115">String</span></span>|<span data-ttu-id="b5ca4-116">Значение хэша файла.</span><span class="sxs-lookup"><span data-stu-id="b5ca4-116">Value of the file hash.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="cdd47-117">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="cdd47-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b5ca4-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b5ca4-117">JSON representation</span></span>
 
-<span data-ttu-id="cdd47-118">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cdd47-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="b5ca4-118">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b5ca4-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -54,3 +54,5 @@ ms.locfileid: "46806585"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

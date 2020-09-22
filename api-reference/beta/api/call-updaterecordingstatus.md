@@ -5,65 +5,65 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: dc9945ed4f2752e1d48454d589a1c1be170db957
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 4ed2e5019bf0ea7591f7658b0d81fda438f704ff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183878"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987227"
 ---
-# <a name="call-updaterecordingstatus"></a><span data-ttu-id="16e19-103">Call: Упдатерекордингстатус</span><span class="sxs-lookup"><span data-stu-id="16e19-103">call: updateRecordingStatus</span></span>
+# <a name="call-updaterecordingstatus"></a><span data-ttu-id="46b75-103">Call: Упдатерекордингстатус</span><span class="sxs-lookup"><span data-stu-id="46b75-103">call: updateRecordingStatus</span></span>
 
-<span data-ttu-id="16e19-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="16e19-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="46b75-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="46b75-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="16e19-105">Обновление состояния записи приложения, связанного с вызовом.</span><span class="sxs-lookup"><span data-stu-id="16e19-105">Update the application's recording status associated with a call.</span></span> <span data-ttu-id="16e19-106">Для этого необходимо использовать решение для [записи на основе политики Teams](https://docs.microsoft.com/MicrosoftTeams/teams-recording-policy) .</span><span class="sxs-lookup"><span data-stu-id="16e19-106">This requires the use of the [Teams policy-based recording](https://docs.microsoft.com/MicrosoftTeams/teams-recording-policy) solution.</span></span>
+<span data-ttu-id="46b75-105">Обновление состояния записи приложения, связанного с вызовом.</span><span class="sxs-lookup"><span data-stu-id="46b75-105">Update the application's recording status associated with a call.</span></span> <span data-ttu-id="46b75-106">Для этого необходимо использовать решение для [записи на основе политики Teams](https://docs.microsoft.com/MicrosoftTeams/teams-recording-policy) .</span><span class="sxs-lookup"><span data-stu-id="46b75-106">This requires the use of the [Teams policy-based recording](https://docs.microsoft.com/MicrosoftTeams/teams-recording-policy) solution.</span></span>
 
-> <span data-ttu-id="16e19-107">**Дополнительное ограничение**: вы не можете использовать API-интерфейс для записи или сохранения мультимедийного контента из вызовов или собраний, к которым обращается приложение, или данных, полученных из этого контента ("запись" или "запись"), без предварительного вызова API **упдатерекордингстатус** для указания того, что запись началась и получает ответ об успешной отправке от этого API.</span><span class="sxs-lookup"><span data-stu-id="16e19-107">**Additional Restriction**: You may NOT use the Media Access API to record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content ("record" or "recording"), without first calling the **updateRecordingStatus** API to indicate that recording has begun, and receiving a success reply from that API.</span></span> <span data-ttu-id="16e19-108">Если приложение начинает запись собрания, оно должно закончить запись перед вызовом API **упдатерекордингстатус** , чтобы указать, что запись закончена.</span><span class="sxs-lookup"><span data-stu-id="16e19-108">If your application begins recording any meeting, it must end the recording prior to calling the **updateRecordingStatus** API to indicate that the recording has ended.</span></span>
+> <span data-ttu-id="46b75-107">**Дополнительное ограничение**: вы не можете использовать API-интерфейс для записи или сохранения мультимедийного контента из вызовов или собраний, к которым обращается приложение, или данных, полученных из этого контента ("запись" или "запись"), без предварительного вызова API **упдатерекордингстатус** для указания того, что запись началась и получает ответ об успешной отправке от этого API.</span><span class="sxs-lookup"><span data-stu-id="46b75-107">**Additional Restriction**: You may NOT use the Media Access API to record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content ("record" or "recording"), without first calling the **updateRecordingStatus** API to indicate that recording has begun, and receiving a success reply from that API.</span></span> <span data-ttu-id="46b75-108">Если приложение начинает запись собрания, оно должно закончить запись перед вызовом API **упдатерекордингстатус** , чтобы указать, что запись закончена.</span><span class="sxs-lookup"><span data-stu-id="46b75-108">If your application begins recording any meeting, it must end the recording prior to calling the **updateRecordingStatus** API to indicate that the recording has ended.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="16e19-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="16e19-109">Permissions</span></span>
-<span data-ttu-id="16e19-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="16e19-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="46b75-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="46b75-109">Permissions</span></span>
+<span data-ttu-id="46b75-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="46b75-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="16e19-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="16e19-112">Permission type</span></span>                        | <span data-ttu-id="16e19-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="16e19-113">Permissions (from least to most privileged)</span></span>      |
+| <span data-ttu-id="46b75-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="46b75-112">Permission type</span></span>                        | <span data-ttu-id="46b75-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="46b75-113">Permissions (from least to most privileged)</span></span>      |
 |:---------------------------------------|:-------------------------------------------------|
-| <span data-ttu-id="16e19-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="16e19-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="16e19-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="16e19-115">Not Supported</span></span>                                    |
-| <span data-ttu-id="16e19-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="16e19-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="16e19-117">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="16e19-117">Not Supported</span></span>                                    |
-| <span data-ttu-id="16e19-118">Приложение</span><span class="sxs-lookup"><span data-stu-id="16e19-118">Application</span></span>                            | <span data-ttu-id="16e19-119">Calls. Жоинграупкаллс. ALL, Calls. Акцессмедиа. ALL</span><span class="sxs-lookup"><span data-stu-id="16e19-119">Calls.JoinGroupCalls.All, Calls.AccessMedia.All</span></span>  |
+| <span data-ttu-id="46b75-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="46b75-114">Delegated (work or school account)</span></span>     | <span data-ttu-id="46b75-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="46b75-115">Not Supported</span></span>                                    |
+| <span data-ttu-id="46b75-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="46b75-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="46b75-117">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="46b75-117">Not Supported</span></span>                                    |
+| <span data-ttu-id="46b75-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="46b75-118">Application</span></span>                            | <span data-ttu-id="46b75-119">Calls. Жоинграупкаллс. ALL, Calls. Акцессмедиа. ALL</span><span class="sxs-lookup"><span data-stu-id="46b75-119">Calls.JoinGroupCalls.All, Calls.AccessMedia.All</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="16e19-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="16e19-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="46b75-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="46b75-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/updateRecordingStatus
 POST /communications/calls/{id}/updateRecordingStatus
 ```
-> <span data-ttu-id="16e19-121">**Примечание.** Путь `/app` является устаревшим.</span><span class="sxs-lookup"><span data-stu-id="16e19-121">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="16e19-122">В дальнейшем используйте путь `/communications`.</span><span class="sxs-lookup"><span data-stu-id="16e19-122">Going forward, use the `/communications` path.</span></span>
+> <span data-ttu-id="46b75-121">**Примечание.** Путь `/app` является устаревшим.</span><span class="sxs-lookup"><span data-stu-id="46b75-121">**Note:** The `/app` path is deprecated.</span></span> <span data-ttu-id="46b75-122">В дальнейшем используйте путь `/communications`.</span><span class="sxs-lookup"><span data-stu-id="46b75-122">Going forward, use the `/communications` path.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="16e19-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="16e19-123">Request headers</span></span>
-| <span data-ttu-id="16e19-124">Имя</span><span class="sxs-lookup"><span data-stu-id="16e19-124">Name</span></span>          | <span data-ttu-id="16e19-125">Описание</span><span class="sxs-lookup"><span data-stu-id="16e19-125">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="46b75-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="46b75-123">Request headers</span></span>
+| <span data-ttu-id="46b75-124">Имя</span><span class="sxs-lookup"><span data-stu-id="46b75-124">Name</span></span>          | <span data-ttu-id="46b75-125">Описание</span><span class="sxs-lookup"><span data-stu-id="46b75-125">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="16e19-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="16e19-126">Authorization</span></span> | <span data-ttu-id="16e19-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="16e19-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="16e19-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="16e19-129">Content-type</span></span> | <span data-ttu-id="16e19-p106">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="16e19-p106">application/json. Required.</span></span> |
+| <span data-ttu-id="46b75-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="46b75-126">Authorization</span></span> | <span data-ttu-id="46b75-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="46b75-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="46b75-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="46b75-129">Content-type</span></span> | <span data-ttu-id="46b75-p106">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="46b75-p106">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="16e19-132">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="16e19-132">Request body</span></span>
-<span data-ttu-id="16e19-133">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="16e19-133">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="46b75-132">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="46b75-132">Request body</span></span>
+<span data-ttu-id="46b75-133">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="46b75-133">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="16e19-134">Параметр</span><span class="sxs-lookup"><span data-stu-id="16e19-134">Parameter</span></span>       | <span data-ttu-id="16e19-135">Тип</span><span class="sxs-lookup"><span data-stu-id="16e19-135">Type</span></span>    | <span data-ttu-id="16e19-136">Описание</span><span class="sxs-lookup"><span data-stu-id="16e19-136">Description</span></span>                                                                           |
+| <span data-ttu-id="46b75-134">Параметр</span><span class="sxs-lookup"><span data-stu-id="46b75-134">Parameter</span></span>       | <span data-ttu-id="46b75-135">Тип</span><span class="sxs-lookup"><span data-stu-id="46b75-135">Type</span></span>    | <span data-ttu-id="46b75-136">Описание</span><span class="sxs-lookup"><span data-stu-id="46b75-136">Description</span></span>                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
-| <span data-ttu-id="16e19-137">Контекст</span><span class="sxs-lookup"><span data-stu-id="16e19-137">clientContext</span></span>   | <span data-ttu-id="16e19-138">String</span><span class="sxs-lookup"><span data-stu-id="16e19-138">String</span></span>  | <span data-ttu-id="16e19-139">Уникальная строка контекста клиента.</span><span class="sxs-lookup"><span data-stu-id="16e19-139">Unique Client Context string.</span></span> <span data-ttu-id="16e19-140">Максимальный лимит — 256 символов.</span><span class="sxs-lookup"><span data-stu-id="16e19-140">Max limit is 256 chars.</span></span>                                 |
-| <span data-ttu-id="16e19-141">status</span><span class="sxs-lookup"><span data-stu-id="16e19-141">status</span></span>          | <span data-ttu-id="16e19-142">String</span><span class="sxs-lookup"><span data-stu-id="16e19-142">String</span></span>  | <span data-ttu-id="16e19-143">Состояние записи.</span><span class="sxs-lookup"><span data-stu-id="16e19-143">The recording status.</span></span> <span data-ttu-id="16e19-144">Возможные значения: `notRecording` , `recording` , или `failed` .</span><span class="sxs-lookup"><span data-stu-id="16e19-144">Possible values are: `notRecording`, `recording`, or `failed`.</span></span>  |
+| <span data-ttu-id="46b75-137">Контекст</span><span class="sxs-lookup"><span data-stu-id="46b75-137">clientContext</span></span>   | <span data-ttu-id="46b75-138">String</span><span class="sxs-lookup"><span data-stu-id="46b75-138">String</span></span>  | <span data-ttu-id="46b75-139">Уникальная строка контекста клиента.</span><span class="sxs-lookup"><span data-stu-id="46b75-139">Unique Client Context string.</span></span> <span data-ttu-id="46b75-140">Максимальный лимит — 256 символов.</span><span class="sxs-lookup"><span data-stu-id="46b75-140">Max limit is 256 chars.</span></span>                                 |
+| <span data-ttu-id="46b75-141">status</span><span class="sxs-lookup"><span data-stu-id="46b75-141">status</span></span>          | <span data-ttu-id="46b75-142">String</span><span class="sxs-lookup"><span data-stu-id="46b75-142">String</span></span>  | <span data-ttu-id="46b75-143">Состояние записи.</span><span class="sxs-lookup"><span data-stu-id="46b75-143">The recording status.</span></span> <span data-ttu-id="46b75-144">Возможные значения: `notRecording` , `recording` , или `failed` .</span><span class="sxs-lookup"><span data-stu-id="46b75-144">Possible values are: `notRecording`, `recording`, or `failed`.</span></span>  |
 
-## <a name="response"></a><span data-ttu-id="16e19-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="16e19-145">Response</span></span>
-<span data-ttu-id="16e19-146">Этот метод возвращает `200 OK` код отклика и заголовок Location с URI для объекта [упдатерекордингстатусоператион](../resources/updaterecordingstatusoperation.md) , созданного для этого запроса.</span><span class="sxs-lookup"><span data-stu-id="16e19-146">This method returns a `200 OK` response code and a Location header with a URI to the [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) object created for this request.</span></span>
+## <a name="response"></a><span data-ttu-id="46b75-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="46b75-145">Response</span></span>
+<span data-ttu-id="46b75-146">Этот метод возвращает `200 OK` код отклика и заголовок Location с URI для объекта [упдатерекордингстатусоператион](../resources/updaterecordingstatusoperation.md) , созданного для этого запроса.</span><span class="sxs-lookup"><span data-stu-id="46b75-146">This method returns a `200 OK` response code and a Location header with a URI to the [updateRecordingStatusOperation](../resources/updaterecordingstatusoperation.md) object created for this request.</span></span>
 
-## <a name="example"></a><span data-ttu-id="16e19-147">Пример</span><span class="sxs-lookup"><span data-stu-id="16e19-147">Example</span></span>
-<span data-ttu-id="16e19-148">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="16e19-148">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="46b75-147">Пример</span><span class="sxs-lookup"><span data-stu-id="46b75-147">Example</span></span>
+<span data-ttu-id="46b75-148">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="46b75-148">The following example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="16e19-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="16e19-149">Request</span></span>
-<span data-ttu-id="16e19-150">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="16e19-150">The following example shows the request.</span></span>
+### <a name="request"></a><span data-ttu-id="46b75-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="46b75-149">Request</span></span>
+<span data-ttu-id="46b75-150">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="46b75-150">The following example shows the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="16e19-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="16e19-151">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="46b75-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="46b75-151">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "call-updateRecordingStatus"
@@ -78,24 +78,24 @@ Content-Length: 79
   "status": "notRecording | recording | failed"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="16e19-152">C#</span><span class="sxs-lookup"><span data-stu-id="16e19-152">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="46b75-152">C#</span><span class="sxs-lookup"><span data-stu-id="46b75-152">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-updaterecordingstatus-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="16e19-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="16e19-153">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="46b75-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="46b75-153">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/call-updaterecordingstatus-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="16e19-154">Objective-C</span><span class="sxs-lookup"><span data-stu-id="16e19-154">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="46b75-154">Objective-C</span><span class="sxs-lookup"><span data-stu-id="46b75-154">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-updaterecordingstatus-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="16e19-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="16e19-155">Response</span></span>
+### <a name="response"></a><span data-ttu-id="46b75-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="46b75-155">Response</span></span>
 
-> <span data-ttu-id="16e19-p109">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="16e19-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="46b75-p109">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="46b75-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -129,3 +129,5 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
   ]
 }
 -->
+
+
