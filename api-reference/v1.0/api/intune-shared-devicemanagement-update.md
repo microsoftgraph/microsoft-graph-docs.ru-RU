@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 57fddece1d8059e46121f23596180636c5765913
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f265c4e8665d607b1bed87e7c61949131877fa99
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463823"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019119"
 ---
 # <a name="update-devicemanagement"></a>Обновление объекта deviceManagement
 
@@ -23,22 +23,22 @@ ms.locfileid: "43463823"
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип&nbsp;&nbsp;разрешения (по&nbsp;рабочим процессам) | Разрешения (в порядке убывания привилегий) |
+| &nbsp;Тип разрешения &nbsp; (по &nbsp; рабочим процессам) | Разрешения (в порядке убывания привилегий) |
 |:---|:---|
 | Делегированные (рабочая или учебная учетная запись) |
-| &nbsp;&nbsp; Аудит | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp; Условия компании | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Корпоративная регистрация | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp;&nbsp; Конфигурация устройства | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp;&nbsp; Управление устройствами | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; Endpoint Protection | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; Уведомление | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Входящая миграция | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Управление доступом на основе ролей | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp;&nbsp; Удаленная помощь | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Управление расходами по телекоммуникационной связи | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; Windows Information Protection | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp;Аудит | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp;Условия компании | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;Корпоративная регистрация | DeviceManagementServiceConfig.ReadWrite.All|
+| &nbsp;&nbsp;Конфигурация устройства | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp;Управление устройствами | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;Endpoint Protection | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;Уведомление | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;Входящая миграция &nbsp; | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;Управление доступом на основе ролей | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp;&nbsp;Удаленная помощь | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;Управление расходами по телекоммуникационной связи | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;Windows Information Protection | DeviceManagementApps.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
 | Для приложений | Не поддерживается. |
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -144,6 +144,9 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
+
+
+
 
 
 

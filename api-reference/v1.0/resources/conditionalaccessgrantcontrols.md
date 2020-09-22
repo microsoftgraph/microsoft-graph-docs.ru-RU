@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: aadf38ac5cff15e4c085f77df36aa6fd48fa272f
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: e48d179e53111cc69b72eb8aa61c52ae105764df
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384684"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018909"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>Тип ресурса Кондитионалакцессгрантконтролс
 
@@ -23,7 +23,7 @@ ms.locfileid: "45384684"
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
 | operator | String | Определяет связь элементов управления предоставлением. Возможные значения: `AND` , `OR` . |
-| буилтинконтролс | Коллекция String | Список значений встроенных элементов управления, необходимых для политики. Возможные значения: `Block` , `Mfa` , `CompliantDevice` , `DomainJoinedDevice` , `ApprovedApplication` ,`CompliantApplication` |
+| буилтинконтролс | Коллекция String | Список значений встроенных элементов управления, необходимых для политики. Возможные значения: `Block` , `Mfa` , `CompliantDevice` , `DomainJoinedDevice` , `ApprovedApplication` , `CompliantApplication` |
 | кустомаусентикатионфакторс | Коллекция String | Список идентификаторов настраиваемых элементов управления, необходимых для политики. Более подробную информацию можно узнать в статье [настраиваемые элементы управления](https://docs.microsoft.com/azure/active-directory/conditional-access/controls). |
 | термсофусе | Коллекция String | Список [условий использования](https://docs.microsoft.com/graph/api/resources/agreement) идентификаторов, необходимых для политики. |
 
@@ -65,3 +65,4 @@ ms.locfileid: "45384684"
   "section": "documentation",
   "tocPath": ""
 }-->
+

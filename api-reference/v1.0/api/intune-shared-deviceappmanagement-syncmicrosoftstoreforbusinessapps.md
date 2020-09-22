@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6dc04dc9148446da1f51f83fad688d1a9d2ee6b9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7a9deb0ab2e84a4debf11040010bc65fad01f65b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465833"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019252"
 ---
 # <a name="syncmicrosoftstoreforbusinessapps-action"></a>Действие syncMicrosoftStoreForBusinessApps
 
@@ -42,13 +42,13 @@ POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example-request"></a>Пример запроса
@@ -57,13 +57,16 @@ POST /deviceAppManagement/syncMicrosoftStoreForBusinessApps
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/syncMicrosoftStoreForBusinessApps
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Объект Response, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

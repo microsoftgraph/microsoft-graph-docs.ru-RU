@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce4fd7e165e22ea0402efe009545970f6e849eaf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d53af260054dad19f07aa80c0b062bd5da9061c9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463816"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019112"
 ---
 # <a name="verifywindowsenrollmentautodiscovery-function"></a>Функция verifyWindowsEnrollmentAutoDiscovery
 
@@ -26,7 +26,7 @@ ms.locfileid: "43463816"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp;&nbsp; Входящая миграция | DeviceManagementServiceConfig.ReadWrite.All|
+| &nbsp;Входящая миграция &nbsp; | DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -42,7 +42,7 @@ GET /deviceManagement/verifyWindowsEnrollmentAutoDiscovery
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -51,7 +51,7 @@ GET /deviceManagement/verifyWindowsEnrollmentAutoDiscovery
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|domainName|String|Н/Д|
+|domainName|String|Пока не задокументировано.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения эта функция возвращает код отклика `200 OK` и объект Boolean в теле отклика.
@@ -74,6 +74,9 @@ Content-Length: 21
   "value": true
 }
 ```
+
+
+
 
 
 

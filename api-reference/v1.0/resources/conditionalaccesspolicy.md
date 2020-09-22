@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b74360794ddad62a1cbda9b835f0490d447d8367
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 46d9e8499f0ec0529c7dbe2f459388b974c7d5fe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384663"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018866"
 ---
 # <a name="conditionalaccesspolicy-resource-type"></a>Тип ресурса Кондитионалакцессполици
 
@@ -32,9 +32,9 @@ ms.locfileid: "45384663"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| Задает правила, которые должны выполняться для применения политики. Обязательный. |
+|conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| Задает правила, которые должны выполняться для применения политики. Обязательный элемент. |
 |createdDateTime|DateTimeOffset| Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Статического. |
-|displayName|Строка| Задает отображаемое имя для объекта Кондитионалакцессполици. |
+|displayName|String| Задает отображаемое имя для объекта Кондитионалакцессполици. |
 |грантконтролс|[conditionalAccessGrantControls](conditionalaccessgrantcontrols.md)| Указывает элементы управления предоставлением, которые должны быть выполнены для передачи политики. |
 |id|String| Задает идентификатор объекта Кондитионалакцессполици. Только для чтения.|
 |modifiedDateTime| DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Статического. |
@@ -83,3 +83,4 @@ ms.locfileid: "45384663"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e128dd174e7b99a1d10060a1e9cfd6d70f2fc780
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 014cbcbeb9d7ac34fa4ab038377363e2c3e6286c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43361812"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019077"
 ---
 # <a name="delete-message"></a>Удаление сообщения
 
@@ -42,10 +42,10 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -99,3 +99,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

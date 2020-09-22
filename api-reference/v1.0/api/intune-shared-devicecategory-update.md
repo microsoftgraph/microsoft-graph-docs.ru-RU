@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 84dca5f142e526da4624ae62b5c8c229c8bd14da
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 818a23039bc761072801f83ee1991da25109fca6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463884"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019147"
 ---
 # <a name="update-devicecategory"></a>Обновление объекта deviceCategory
 
@@ -26,7 +26,7 @@ ms.locfileid: "43463884"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp;&nbsp; **Onboarding** Подключение и <br> &nbsp;&nbsp; **Управление устройствами**| DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;Подключение &nbsp; **Onboarding** и <br> &nbsp;&nbsp; **Управление устройствами**| DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -55,7 +55,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 |:---|:---|:---|
 |id|String|Уникальный идентификатор категории устройства. Только для чтения.|
 |**Адаптация**|
-|displayName|Строка|Отображаемое имя категории устройств.|
+|displayName|String|Отображаемое имя категории устройств.|
 |description|String|Необязательное описание категории устройств.|
 
 
@@ -79,7 +79,7 @@ Content-length: 82
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. Свойства ответа будут зависеть от контекста.
 ``` http
 HTTP/1.1 200 OK
@@ -93,6 +93,9 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
+
+
+
 
 
 

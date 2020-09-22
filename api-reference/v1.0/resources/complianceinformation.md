@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ef62f6df73c24f9e6b3884921865c28ea152a3dc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 00447f134b2c54bdda92857c6c84c05e8c52b3cc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533038"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018937"
 ---
 #  <a name="complianceinformation-resource-type"></a>Тип ресурса Комплианцеинформатион
 
@@ -53,3 +53,4 @@ ms.locfileid: "42533038"
   "section": "documentation",
   "tocPath": ""
 }-->
+

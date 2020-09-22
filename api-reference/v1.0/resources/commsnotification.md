@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d11bda4be798bb4a9d9c0e1048258020c5c2ca08
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2276547b99e297f1e015e12f9ed2254d3cb4632d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533050"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018979"
 ---
 # <a name="commsnotification-resource-type"></a>Тип ресурса Коммснотификатион
 
@@ -24,7 +24,7 @@ ms.locfileid: "42533050"
 | changeType     | String  | Возможные значения: `created`, `updated`, `deleted`.      |
 | Resourceurl экземпляром       | String  | URI ресурса, который был изменен.                      |
 
-> **Примечание:** `resourceData` доступно в виде дополнительных данных. Это либо сущность, либо коллекция сущностей в зависимости от количества изменений, упакованных в уведомление.
+> **Примечание:** `resourceData` доступна в виде дополнительных данных. Это либо сущность, либо коллекция сущностей в зависимости от количества изменений, упакованных в уведомление.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -59,3 +59,4 @@ ms.locfileid: "42533050"
   "suppressions": []
 }
 -->
+
