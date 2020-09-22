@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: f21b1f4a2a36a8c1e56195eb779166e0512106a1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f6f0f659d508616b90740d41906429858df2b68f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456711"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053484"
 ---
 # <a name="create-section"></a>Создание раздела
 
@@ -128,3 +128,5 @@ Content-length: 272
   ]
 }
 -->
+
+

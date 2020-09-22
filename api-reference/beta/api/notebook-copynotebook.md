@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 028b6b577e9a018be0cfc97264b6344b51dd8ed2
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: b4a9a1a6f7560f3369242cc8d8d4e140375a30a9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44894853"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053559"
 ---
 # <a name="notebook-copynotebook"></a>Записная книжка: Включеныcopynotebook
 
@@ -43,7 +43,7 @@ POST /sites/{id}/onenote/notebooks/{id}/copyNotebook
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | строка | `application/json` |
+| Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите объект JSON, содержащий необходимые для операции параметры. Вы можете отправить пустой текст, если он не нужен.
@@ -118,3 +118,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: Обновление Девицеманажементинтентусер
 description: Обновление свойств объекта Девицеманажементинтентусерстатесуммари.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f43e8499b341b30b475ed3ccc9a1954056c6bb21
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c64921af725c98bf5cc70a4687c14ecaa5a03c55
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43325612"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054394"
 ---
 # <a name="update-devicemanagementintentuserstatesummary"></a>Обновление Девицеманажементинтентусерстатесуммари
 
@@ -46,7 +46,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/userStateSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицеманажементинтентусерстатесуммари](../resources/intune-deviceintent-devicemanagementintentuserstatesummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементинтентусерстатесуммари](../resources/intune-deviceintent-devicemanagementintentuserstatesummary.md).
@@ -62,7 +62,7 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/userStateSummary
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементинтентусерстатесуммари](../resources/intune-deviceintent-devicemanagementintentuserstatesummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -101,6 +101,9 @@ Content-Length: 247
   "successCount": 12
 }
 ```
+
+
+
 
 
 

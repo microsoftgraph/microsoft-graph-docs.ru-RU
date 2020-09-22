@@ -3,14 +3,14 @@ title: Действие syncWithAppleDeviceEnrollmentProgram
 description: Синхронизация между программой регистрации устройств Apple и Intune
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a2ab61c00c62b3ef7f4bbc00cb181e74d3cf51fe
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6705d0063a220ab36d556b7084a0c94baef5606d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43391985"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054184"
 ---
 # <a name="syncwithappledeviceenrollmentprogram-action"></a>Действие syncWithAppleDeviceEnrollmentProgram
 
@@ -46,10 +46,10 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/syncWithAp
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -65,6 +65,9 @@ POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{de
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

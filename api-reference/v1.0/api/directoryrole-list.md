@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7f4a8f8838d77c9a947c304ee18898832c1d5428
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 73d6aabbcb46cfe613d432b7f9a9ee84e04e4eeb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181401"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052399"
 ---
 # <a name="list-directoryroles"></a>Перечисление объектов directoryRole
 
@@ -47,7 +47,7 @@ GET /directoryRoles
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [directoryRole](../resources/directoryrole.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -115,3 +115,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

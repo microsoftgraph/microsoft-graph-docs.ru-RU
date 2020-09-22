@@ -3,14 +3,14 @@ title: Получение Девицеманажементинтентусерс
 description: Чтение свойств и связей объекта Девицеманажементинтентусерстате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bf4e0c2a99b3b7e8eac3ff6f4de83c1fc6f6de41
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9473b8f577a4a10eee0fa3e04495354fb7700820
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43325990"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054408"
 ---
 # <a name="get-devicemanagementintentuserstate"></a>Получение Девицеманажементинтентусерстате
 
@@ -49,10 +49,10 @@ GET /deviceManagement/intents/{deviceManagementIntentId}/userStates/{deviceManag
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [девицеманажементинтентусерстате](../resources/intune-deviceintent-devicemanagementintentuserstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -82,6 +82,9 @@ Content-Length: 357
   }
 }
 ```
+
+
+
 
 
 

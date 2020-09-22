@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 861c17b55a50f35579eb820fbe76352077ded149
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 84f0236c2c2e52742a84f19eae8eb7693f1b559b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556256"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052609"
 ---
 # <a name="onpremisesagentgroup-resource-type"></a>Тип ресурса Онпремисесажентграуп
 
@@ -34,7 +34,7 @@ ms.locfileid: "44556256"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|Строка|Отображаемое имя **онпремисесажентграуп**.|
+|displayName|String|Отображаемое имя **онпремисесажентграуп**.|
 |id|String| Идентификатор объекта **онпремисесажентграуп**. Только для чтения.|
 |isDefault|Boolean|Указывает, является ли **онпремисесажентграуп** группой агентов по умолчанию. Только одна группа агентов может быть **онпремисесажентграуп** по умолчанию и задается системой.|
 |публишингтипе|string| Возможные значения: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
@@ -78,3 +78,5 @@ ms.locfileid: "44556256"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

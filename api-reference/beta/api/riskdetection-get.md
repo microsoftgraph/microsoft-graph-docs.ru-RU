@@ -5,12 +5,12 @@ localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f87245d2f07600afd612273fdf3a28a36db44b78
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 80b1099fa2641973bfe842311f0086fd09fffcd4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863539"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052945"
 ---
 # <a name="get-riskdetection"></a>Получение Рискдетектион
 
@@ -194,4 +194,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
 

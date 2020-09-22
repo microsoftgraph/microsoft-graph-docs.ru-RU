@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 88d9df973f7347a8ddd28311cfae8c0371d4491f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9fa10dca78b917bf5662dd280e9b9cb60d4bff85
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457126"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053617"
 ---
 # <a name="list-rules"></a>Перечисление правил
 
@@ -42,9 +42,9 @@ GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию объектов [messageRule](../resources/messagerule.md) в тексте ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -146,3 +146,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

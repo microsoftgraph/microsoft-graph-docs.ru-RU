@@ -3,14 +3,14 @@ title: Функция getTopMobileApps
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 025f44951193ae41c57d8fc9b546934fc2927cae
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fc5697df9862ce1b17361ba3ec6b5b9c0a573463
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441281"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053848"
 ---
 # <a name="gettopmobileapps-function"></a>Функция getTopMobileApps
 
@@ -48,19 +48,19 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |status|String|Пока не задокументировано.|
-|count|Int64|Н/Д|
+|count|Int64|Пока не задокументировано.|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успеха эта функция возвращает код `200 OK` отклика и коллекцию [mobileApp](../resources/intune-shared-mobileapp.md) в тексте отклика.
+В случае успеха эта функция возвращает `200 OK` код отклика и коллекцию [mobileApp](../resources/intune-shared-mobileapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -109,6 +109,9 @@ Content-Length: 1013
   ]
 }
 ```
+
+
+
 
 
 

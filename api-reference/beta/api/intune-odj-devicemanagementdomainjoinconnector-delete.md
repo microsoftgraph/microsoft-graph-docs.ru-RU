@@ -3,14 +3,14 @@ title: Удаление Девицеманажементдомаинжоинко
 description: Удаляет объект Девицеманажементдомаинжоинконнектор.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f84d0d38c7b52d3d9261468d87476b16c3596ba0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d92e70e55eea4d40659a2b44d736ea69786bfdf4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462640"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053981"
 ---
 # <a name="delete-devicemanagementdomainjoinconnector"></a>Удаление Девицеманажементдомаинжоинконнектор
 
@@ -46,10 +46,10 @@ DELETE /deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnect
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -60,11 +60,14 @@ DELETE /deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnect
 DELETE https://graph.microsoft.com/beta/deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnectorId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

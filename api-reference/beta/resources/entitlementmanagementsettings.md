@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b183466b102b480913c3841585ea3349e7ac2386
-ms.sourcegitcommit: 0545b031585e605dc3a0fde481015f51f79819c4
+ms.openlocfilehash: 84f34740bd5e16bb001cd3618edf4c4b669155f2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45225091"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052889"
 ---
 # <a name="entitlementmanagementsettings-resource-type"></a>Тип ресурса Ентитлементманажементсеттингс
 
@@ -24,8 +24,8 @@ ms.locfileid: "45225091"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [получение](../api/entitlementmanagementsettings-get.md); | [ентитлементманажементсеттингс](entitlementmanagementsettings.md) | Чтение свойств объекта **ентитлементманажементсеттингс** . |
-| [обновление](../api/entitlementmanagementsettings-update.md). | [ентитлементманажементсеттингс](entitlementmanagementsettings.md) | Обновление свойств объекта **ентитлементманажементсеттингс** . |
+| [Получение](../api/entitlementmanagementsettings-get.md) | [ентитлементманажементсеттингс](entitlementmanagementsettings.md) | Чтение свойств объекта **ентитлементманажементсеттингс** . |
+| [Обновление](../api/entitlementmanagementsettings-update.md) | [ентитлементманажементсеттингс](entitlementmanagementsettings.md) | Обновление свойств объекта **ентитлементманажементсеттингс** . |
 
 ## <a name="properties"></a>Свойства
 
@@ -68,3 +68,5 @@ ms.locfileid: "45225091"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

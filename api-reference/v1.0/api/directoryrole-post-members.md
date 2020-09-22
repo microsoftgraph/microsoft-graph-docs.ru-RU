@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6521438d82f02deef1334d2a7b710fa87ee9c8d6
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 04cf9a62fb4929a5f8df53a796374366cf6fd267
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312018"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052385"
 ---
 # <a name="add-directory-role-member"></a>Добавление участника роли каталога
 
@@ -38,7 +38,7 @@ POST /directoryRoles/{id}/members/$ref
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type  | string  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md) или [user](../resources/user.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
@@ -103,3 +103,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

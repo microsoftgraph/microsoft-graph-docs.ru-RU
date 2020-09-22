@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bfd98c1415381e4daf1e8a551dc9050df122ff49
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: a51381796ba3b88391ee159a37777605a4d06d4f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181422"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052427"
 ---
 # <a name="directoryrole-delta"></a>directoryRole: Delta
 
@@ -55,7 +55,7 @@ GET /directoryRoles/delta
 
 - Имеется ограниченная поддержка параметра `$filter`:
 
-  - Единственное поддерживаемое `$filter` выражение предназначено для отслеживания изменений для определенных ресурсов по их идентификаторам: `$filter=id+eq+{value}` или `$filter=id+eq+{value1}+or+id+eq+{value2}`. Количество идентификаторов, которые можно указать, ограничено максимальной длиной URL-адреса.
+  - Единственное поддерживаемое `$filter` выражение предназначено для отслеживания изменений для определенных ресурсов по их идентификаторам:  `$filter=id+eq+{value}` или `$filter=id+eq+{value1}+or+id+eq+{value2}` . Количество идентификаторов, которые можно указать, ограничено максимальной длиной URL-адреса.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -68,9 +68,9 @@ GET /directoryRoles/delta
 
 Не указывайте текст запроса для этого метода.
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект коллекции [directoryRole](../resources/directoryrole.md) в тексте отклика. Оклик также содержит URL-адрес `nextLink` или `deltaLink`.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции [directoryRole](../resources/directoryrole.md) в тексте отклика. Оклик также содержит URL-адрес `nextLink` или `deltaLink`.
 
 - Если возвращается URL-адрес `nextLink`, это означает, что во время сеанса получены не все страницы данных. Приложение продолжает отправлять запросы, используя URL-адрес `nextLink`, пока в ответ не будет включен URL-адрес `deltaLink`.
 
@@ -152,3 +152,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

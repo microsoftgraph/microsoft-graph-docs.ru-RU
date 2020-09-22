@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ananmishr
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8ac6c42f28ed1f2adccd54fcd3bd6667f4113b7a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb971295919f779c3faddb34ceeb96d531011b1f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522251"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052574"
 ---
 # <a name="onlinemeetinginfo-resource-type"></a>Тип ресурса Онлинемитингинфо
 
@@ -29,7 +29,7 @@ ms.locfileid: "42522251"
 |толлфринумберс|Коллекция объектов string| Бесплатных бесплатных номеров, которые можно использовать для присоединения к Конференции.|
 |толлнумбер|String| Платный номер, который можно использовать для присоединения к Конференции.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -58,3 +58,5 @@ ms.locfileid: "42522251"
   "section": "documentation",
   "tocPath": ""
 }-->s
+
+

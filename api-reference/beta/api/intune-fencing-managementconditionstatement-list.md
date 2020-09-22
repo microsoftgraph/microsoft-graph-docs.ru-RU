@@ -3,14 +3,14 @@ title: Список Манажементкондитионстатементс
 description: Список свойств и связей объектов Манажементкондитионстатемент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b7251b5c4bcac012a2d1ccbfbdb59028e9984d5
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: ba883fde482681f90236fe169537058911b74455
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178068"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054086"
 ---
 # <a name="list-managementconditionstatements"></a>Список Манажементкондитионстатементс
 
@@ -50,7 +50,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -89,6 +89,9 @@ Content-Length: 615
   ]
 }
 ```
+
+
+
 
 
 

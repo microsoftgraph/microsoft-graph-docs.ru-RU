@@ -3,14 +3,14 @@ title: Тип ресурса Мобилеаппдепенденци
 description: Описывает тип зависимости между двумя мобильными приложениями.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 723ea306b366612c7d91d839e00209372ad70944
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 9b55faee86852d8b7070850a4c14a2df8fe82631
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790875"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052742"
 ---
 # <a name="mobileappdependency-resource-type"></a>Тип ресурса Мобилеаппдепенденци
 
@@ -40,6 +40,7 @@ ms.locfileid: "44790875"
 |id|String|Идентификатор сущности отношения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
 |targetId|String|Идентификатор приложения целевого приложения для мобильных устройств. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
 |таржетдисплайнаме|String|Отображаемое имя целевого мобильного приложения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
+|targetType|[мобилеаппрелатионшиптипе](../resources/intune-apps-mobileapprelationshiptype.md)|Тип связи, указывающий, является ли целевой объект родительским или дочерним. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md). Возможные значения: `child`, `parent`.|
 |депенденцитипе|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|Тип отношения зависимости между родительским и дочерним приложениями. Возможные значения: `detect`, `autoInstall`.|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения.|
 
@@ -60,10 +61,14 @@ ms.locfileid: "44790875"
   "id": "String (identifier)",
   "targetId": "String",
   "targetDisplayName": "String",
+  "targetType": "String",
   "dependencyType": "String",
   "dependentAppCount": 1024
 }
 ```
+
+
+
 
 
 

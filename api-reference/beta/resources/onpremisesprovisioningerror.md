@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: japere
-ms.openlocfilehash: 6765f23f6d3a5cc5b31363506f63ed6949810646
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: ac6ae129374ab33e44a1f3274e8be378b90eb4e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200063"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052598"
 ---
 # <a name="onpremisesprovisioningerror-resource-type"></a>Тип ресурса onPremisesProvisioningError
 
@@ -29,7 +29,7 @@ ms.locfileid: "43200063"
 |пропертикаусинжеррор|String| Имя свойства каталога, вызвавшего ошибку. Текущие возможные значения: *userPrincipalName* или *proxyAddress* |
 |value|String| Значение свойства, вызвавшего ошибку. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
@@ -63,3 +63,5 @@ ms.locfileid: "43200063"
   "suppressions": []
 }
 -->
+
+

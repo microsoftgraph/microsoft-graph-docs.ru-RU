@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: fd8641f7fe9fd361e131f0978c8f677a6395e405
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 00ba50369f2396250df632c13ed3945e8c9d40d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42896071"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052545"
 ---
 # <a name="printservice-resource-type"></a>Тип ресурса Принтсервице
 
@@ -69,3 +69,4 @@ ms.locfileid: "42896071"
   "section": "documentation",
   "tocPath": ""
 }-->
+

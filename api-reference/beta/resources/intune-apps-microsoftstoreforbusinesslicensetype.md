@@ -3,14 +3,14 @@ title: тип перечисления Микрософтсторефорбус�
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0fd0fbfe14c8540721d08c7b6375e81b0b8ee86f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e84c6dc02b9559568d089380733d0caacbe53c71
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458606"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052812"
 ---
 # <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>тип перечисления Микрософтсторефорбусинесслиценсетипе
 
@@ -26,7 +26,10 @@ ms.locfileid: "43458606"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |содержание|нуль|Пока не задокументировано.|
-|Онлайн|1,1|Пока не задокументировано.|
+|Онлайн|1 |Пока не задокументировано.|
+
+
+
 
 
 

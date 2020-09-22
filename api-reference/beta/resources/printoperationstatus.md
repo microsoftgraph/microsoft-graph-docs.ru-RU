@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: a7400a3170b104646607c16852a796d01b64200e
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
-ms.translationtype: Auto
+ms.openlocfilehash: 14c66cf59dc1715a16bd786657202a554d7c1753
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45007241"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052553"
 ---
 # <a name="printoperationstatus-complex-type"></a>сложный тип Принтоператионстатус
 
@@ -33,7 +33,7 @@ ms.locfileid: "45007241"
 |notStarted|нуль|Операция еще не запущена.|
 |запускается|1 |Выполняется операция.|
 |закончил|2 |Операция успешно завершена.|
-|сбоев|3 |Сбой операции.|
+|сбоев|4|Сбой операции.|
 |unknownFutureValue|4 |Значение Sentinel для перечисления расширяемые. Не следует использовать.|
 
 ## <a name="json-representation"></a>Представление в формате JSON
@@ -64,3 +64,4 @@ ms.locfileid: "45007241"
   "section": "documentation",
   "tocPath": ""
 }-->
+

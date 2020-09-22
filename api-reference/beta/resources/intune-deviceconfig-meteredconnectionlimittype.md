@@ -3,14 +3,14 @@ title: тип перечисления Метередконнектионлим�
 description: Параметры ограничения лимитного подключения.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1e6c3cd36c5cf05a9458dc19458214d7228e64ce
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: db9c610a060a2ed8147646b20005d3f62f612bfd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437127"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052686"
 ---
 # <a name="meteredconnectionlimittype-enum-type"></a>тип перечисления Метередконнектионлимиттипе
 
@@ -26,8 +26,11 @@ ms.locfileid: "43437127"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unrestricted|нуль|Unrestricted|
-|стандарт|1,1|ИСПРАВЛЕНО|
-|переменная|2|Переменная|
+|стандарт|1 |ИСПРАВЛЕНО|
+|переменная|2 |Переменная|
+
+
+
 
 
 

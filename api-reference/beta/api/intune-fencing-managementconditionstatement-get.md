@@ -3,14 +3,14 @@ title: Получение Манажементкондитионстатемен
 description: Чтение свойств и связей объекта Манажементкондитионстатемент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2bfc7343ac466edaa4e674490930a916da43e825
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: cd82f42233866cc07df7fb31089b5fd97b42d9af
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178082"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054107"
 ---
 # <a name="get-managementconditionstatement"></a>Получение Манажементкондитионстатемент
 
@@ -53,7 +53,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -90,6 +90,9 @@ Content-Length: 573
   }
 }
 ```
+
+
+
 
 
 

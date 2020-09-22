@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5c65cb43839506c162bd424aa1df084b44964567
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 38d10be1ab316b373b88d0c504998563d67e0792
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311972"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053477"
 ---
 # <a name="update-outlooktask-deprecated"></a>Обновление outlooktask (не рекомендуется)
 
@@ -184,3 +184,5 @@ Content-length: 376
   ]
 }
 -->
+
+

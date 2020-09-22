@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3dfc4d3c8e6d2f379d717649c945aaa48e978916
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: a15c830465a4328a178fec497e4ad115b0b0459f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509509"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052469"
 ---
 # <a name="directoryobject-getavailableextensionproperties"></a>directoryObject: Жетаваилабликстенсионпропертиес
 Пространство имен: microsoft.graph
@@ -49,7 +49,7 @@ POST /directoryObjects/getAvailableExtensionProperties
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|иссинцедфромонпремисес|Логический|`true`чтобы указать, что необходимо вернуть только свойства расширения, синхронизированные из локального каталога; `false`чтобы указать, что необходимо вернуть только свойства расширения, которые не синхронизируются из локального каталога. Если параметр не задан, возвращаются все свойства расширения (синхронизированные и несинхронизированные).|
+|иссинцедфромонпремисес|Boolean|`true` чтобы указать, что необходимо вернуть только свойства расширения, синхронизированные из локального каталога; `false` чтобы указать, что необходимо вернуть только свойства расширения, которые не синхронизируются из локального каталога. Если параметр не задан, возвращаются все свойства расширения (синхронизированные и несинхронизированные).|
 
 
 ## <a name="response"></a>Отклик
@@ -113,4 +113,5 @@ Content-Type: application/json
   ]
 }
 ```
+
 

@@ -3,14 +3,14 @@ title: Удаление Девицеаппманажементтаск
 description: Удаляет объект Девицеаппманажементтаск.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b970d6ff5fd8b2c479a2b3d01f05355a54a1ba4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 88b90ac98b0e656d1e11ad448afd33315d51ee54
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445366"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053967"
 ---
 # <a name="delete-deviceappmanagementtask"></a>Удаление Девицеаппманажементтаск
 
@@ -46,10 +46,10 @@ DELETE /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -60,11 +60,14 @@ DELETE /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 DELETE https://graph.microsoft.com/beta/deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Функция Жетманажементкондитионстатеме
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 92a557fd31f68a41e6c5757059b1cae362fac164
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: c45382e5d2f7155be45c07c3846cd15fdec9b56f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178075"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054114"
 ---
 # <a name="getmanagementconditionstatementsforplatform-function"></a>Функция Жетманажементкондитионстатементсфорплатформ
 
@@ -53,12 +53,12 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|platform|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Н/Д|
+|платформа|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Пока не задокументировано.|
 
 
 
 ## <a name="response"></a>Ответ
-В случае успеха эта функция возвращает код `200 OK` отклика и коллекцию [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md) в тексте отклика.
+В случае успеха эта функция возвращает `200 OK` код отклика и коллекцию [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -96,6 +96,9 @@ Content-Length: 615
   ]
 }
 ```
+
+
+
 
 
 

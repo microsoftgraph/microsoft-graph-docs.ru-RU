@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 25839444990281a51ab99888fdd0b67d2331c8ee
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2d1e81b68d895dfb4edbe80a6d46fa59907d4489
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43470321"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053784"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>Функция Манажеддевицеенроллментфаилуредетаилс
 
@@ -47,7 +47,7 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
 |Свойство|Тип|Описание|
@@ -55,7 +55,7 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 |filter|String|Пока не задокументировано.|
 |skipToken|String|Пока не задокументировано.|
 |skip|Int32|Пока не задокументировано.|
-|top|Int32|Н/Д|
+|top|Int32|Пока не задокументировано.|
 
 
 
@@ -83,6 +83,9 @@ Content-Length: 123
   }
 }
 ```
+
+
+
 
 
 

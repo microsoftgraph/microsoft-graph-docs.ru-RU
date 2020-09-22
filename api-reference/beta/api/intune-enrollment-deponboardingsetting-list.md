@@ -3,14 +3,14 @@ title: Список depOnboardingSettings
 description: Список свойств и связей объектов depOnboardingSetting.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a2a20fc4f3403350535b7d3e14707d1290c12c8d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7d826dc36777d8f959bf8ed3a25b1ce4371af129
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444731"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054226"
 ---
 # <a name="list-deponboardingsettings"></a>Список depOnboardingSettings
 
@@ -46,10 +46,10 @@ GET /deviceManagement/depOnboardingSettings
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -90,6 +90,9 @@ Content-Length: 786
   ]
 }
 ```
+
+
+
 
 
 

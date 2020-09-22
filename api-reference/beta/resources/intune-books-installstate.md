@@ -3,14 +3,14 @@ title: тип перечисления Инсталлстате
 description: Возможные значения для состояния установки.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8542503a705e14630335b9a4f0498228faf264de
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a202d0206321096318a74b4959e9241699943744
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472081"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052714"
 ---
 # <a name="installstate-enum-type"></a>тип перечисления Инсталлстате
 
@@ -26,11 +26,14 @@ ms.locfileid: "43472081"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |нотаппликабле|нуль|Неприменимо.|
-|устанавлива|1,1|Устанавлива.|
-|сбоев|2|Сбоев.|
+|устанавлива|1 |Устанавлива.|
+|сбоев|2 |Сбоев.|
 |нотинсталлед|4|Не установлено.|
 |унинсталлфаилед|4 |Не удалось выполнить удаление.|
 |unknown|5 |Найден.|
+
+
+
 
 
 

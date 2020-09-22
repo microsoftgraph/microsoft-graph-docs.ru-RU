@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 41d6ccf79a7f32082b81d3b9088cc7598bef4cf8
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: 83be228cd6826c00af42e41fca31b5d60c919ba6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543403"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052476"
 ---
 # <a name="get-directoryaudit"></a>Получение directoryAudit
 
@@ -49,7 +49,7 @@ GET /auditLogs/directoryAudits/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [директоряудит](../resources/directoryaudit.md) в тексте отклика.
 
@@ -160,3 +160,4 @@ Content-length: 218
   "suppressions": [
   ]
 }-->
+

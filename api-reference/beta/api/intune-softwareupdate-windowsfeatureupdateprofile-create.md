@@ -3,14 +3,14 @@ title: Создание Виндовсфеатуреупдатепрофиле
 description: Создание нового объекта Виндовсфеатуреупдатепрофиле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b2f5b68a0cb3f2773b2ea6ab933cbf341515811e
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 68382c5b5dfdf38cb57f926b3aed7623e6180cb2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124011"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053701"
 ---
 # <a name="create-windowsfeatureupdateprofile"></a>Создание Виндовсфеатуреупдатепрофиле
 
@@ -54,12 +54,12 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор объекта.|
-|displayName|Строка|Отображаемое имя профиля.|
+|displayName|String|Отображаемое имя профиля.|
 |description|String|Описание профиля, указанного пользователем.|
 |феатуреупдатеверсион|String|Версия обновления компонентов, которая будет развернута на устройствах, предназначенных для этого профиля. Версией может быть любая поддерживаемая версия, например 1709, 1803 или 1809 и т. д.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля.|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого элемента обновления компонента.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого элемента обновления компонента.|
 
 
 
@@ -106,6 +106,9 @@ Content-Length: 441
   ]
 }
 ```
+
+
+
 
 
 

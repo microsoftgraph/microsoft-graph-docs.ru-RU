@@ -3,14 +3,14 @@ title: Получение Девицеманажементдомаинжоинк
 description: Чтение свойств и связей объекта Девицеманажементдомаинжоинконнектор.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 699b1ef03db1482859fb0485facfad47ed9c4cb1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c87b19ab8188fd787a9474c9549e7157f9b1801c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461068"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053974"
 ---
 # <a name="get-devicemanagementdomainjoinconnector"></a>Получение Девицеманажементдомаинжоинконнектор
 
@@ -49,10 +49,10 @@ GET /deviceManagement/domainJoinConnectors/{deviceManagementDomainJoinConnectorI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [девицеманажементдомаинжоинконнектор](../resources/intune-odj-devicemanagementdomainjoinconnector.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -81,6 +81,9 @@ Content-Length: 315
   }
 }
 ```
+
+
+
 
 
 

@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Используйте специальную коллекцию для доступа к специальной папке по имени.
 doc_type: apiPageType
-ms.openlocfilehash: 402e8c8876962ef657e22fb7dbf8f4ded5c0f923
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b915a39f61505adb01a20b3e08a08916c32a0938
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517834"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052322"
 ---
 # <a name="get-a-special-folder-by-name"></a>Получение доступа к специальной папке по ее имени
 
@@ -81,7 +81,7 @@ GET /me/drive/special/{name}
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$expand` и `$select` для настройки отклика.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Этот метод возвращает код ответа `200 OK` и объект [driveItem](../resources/driveitem.md) в теле ответа.
 
@@ -168,3 +168,4 @@ Content-Type: application/json
   "suppressions": [
   ]
 } -->
+

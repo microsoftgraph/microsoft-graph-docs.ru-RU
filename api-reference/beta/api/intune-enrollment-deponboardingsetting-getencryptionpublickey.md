@@ -3,14 +3,14 @@ title: Функция getEncryptionPublicKey
 description: Получение открытого ключа, используемого для шифрования маркера программы регистрации устройств Apple
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f17a797e4ec6b19ef9e95fc1d1b51004ef74a0c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 04b2f1bf0b0e97afd6000eb2c8a1285e44a32049
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444753"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054253"
 ---
 # <a name="getencryptionpublickey-function"></a>Функция getEncryptionPublicKey
 
@@ -46,11 +46,11 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/getEncrypti
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
-В случае успеха эта функция возвращает код `200 OK` отклика и строку в теле отклика.
+## <a name="response"></a>Отклик
+В случае успеха эта функция возвращает `200 OK` код отклика и строку в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -71,6 +71,9 @@ Content-Length: 50
   "value": "Get Encryption Public Key value"
 }
 ```
+
+
+
 
 
 

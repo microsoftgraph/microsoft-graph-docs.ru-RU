@@ -3,14 +3,14 @@ title: Удаление Виндовсфеатуреупдатепрофиле
 description: Удаляет объект Виндовсфеатуреупдатепрофиле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ed141ac0125738aa81cde3cfbd225d13ca81dd68
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 042cc91837a9f93522a27bc2270b0568b74a6ac5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471247"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48053669"
 ---
 # <a name="delete-windowsfeatureupdateprofile"></a>Удаление Виндовсфеатуреупдатепрофиле
 
@@ -46,10 +46,10 @@ DELETE /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -60,11 +60,14 @@ DELETE /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfi
 DELETE https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfileId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

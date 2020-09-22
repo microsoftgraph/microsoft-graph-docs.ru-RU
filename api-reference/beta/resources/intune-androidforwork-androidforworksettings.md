@@ -3,14 +3,14 @@ title: Тип ресурса androidForWorkSettings
 description: Параметры Android For Work.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 50153f0db801764aa22872468b87f5c7eaf1cbaf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ef0452ea29b6966f24778662a429bb1534c8068f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459202"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052857"
 ---
 # <a name="androidforworksettings-resource-type"></a>Тип ресурса androidForWorkSettings
 
@@ -25,17 +25,17 @@ ms.locfileid: "43459202"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение объекта androidForWorkSettings](../api/intune-androidforwork-androidforworksettings-get.md)|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md);|Чтение свойств и связей объекта [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md).|
+|[Получение объекта androidForWorkSettings](../api/intune-androidforwork-androidforworksettings-get.md)|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md)|Чтение свойств и связей объекта [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md).|
 |[Обновление объекта androidForWorkSettings](../api/intune-androidforwork-androidforworksettings-update.md)|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md)|Обновление свойств объекта [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md).|
 |[Действие requestSignupUrl](../api/intune-androidforwork-androidforworksettings-requestsignupurl.md)|String|Пока не задокументировано.|
-|[completeSignup action](../api/intune-androidforwork-androidforworksettings-completesignup.md)|Нет|Пока не задокументировано|
-|[Действие syncApps](../api/intune-androidforwork-androidforworksettings-syncapps.md)|Нет|Пока не задокументировано|
-|[Действие unbind](../api/intune-androidforwork-androidforworksettings-unbind.md)|Нет|Пока не задокументировано|
+|[completeSignup action](../api/intune-androidforwork-androidforworksettings-completesignup.md)|Нет|Н/Д|
+|[Действие syncApps](../api/intune-androidforwork-androidforworksettings-syncapps.md)|Нет|Н/Д|
+|[Действие unbind](../api/intune-androidforwork-androidforworksettings-unbind.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор параметров Android for Work|
+|id|Строка|Идентификатор параметров Android for Work|
 |bindStatus|[андроидфорворкбиндстатус](../resources/intune-androidforwork-androidforworkbindstatus.md)|Состояние связывания клиента с помощью API Google EMM. Возможные значения: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
 |lastAppSyncDateTime|DateTimeOffset|Время завершения последней синхронизации приложения|
 |lastAppSyncStatus|[андроидфорворксинкстатус](../resources/intune-androidforwork-androidforworksyncstatus.md)|Последний результат синхронизации приложений. Возможные значения: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
@@ -74,6 +74,9 @@ ms.locfileid: "43459202"
   "deviceOwnerManagementEnabled": true
 }
 ```
+
+
+
 
 
 

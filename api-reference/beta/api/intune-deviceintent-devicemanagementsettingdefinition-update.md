@@ -3,14 +3,14 @@ title: Обновление Девицеманажементсеттингдеф
 description: Обновление свойств объекта Девицеманажементсеттингдефинитион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 652ef71b63b6b4abe8516be0bcf065f08772f01f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 72e56572eff29477d9a2d0bf878207eb71ea005a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43427693"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054366"
 ---
 # <a name="update-devicemanagementsettingdefinition"></a>Обновление Девицеманажементсеттингдефинитион
 
@@ -49,7 +49,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md).
@@ -58,7 +58,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 |:---|:---|:---|
 |id|String|Идентификатор определения параметра|
 |Типом|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|Тип данных значения. Возможные значения: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
-|displayName|Строка|Отображаемое имя параметра|
+|displayName|String|Отображаемое имя параметра|
 |истоплевел|Boolean|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
 |description|String|Описание параметра|
 |плацехолдертекст|String|Замещающий текст в качестве примера допустимых входных данных|
@@ -69,7 +69,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devic
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -160,6 +160,9 @@ Content-Length: 977
   ]
 }
 ```
+
+
+
 
 
 

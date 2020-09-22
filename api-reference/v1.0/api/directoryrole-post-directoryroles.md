@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2a24db94a3b2344679e63a832000122ee83393a9
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: f48fb24b5f7c4889faf3ebba0b5147a8de14b877
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181394"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48052392"
 ---
 # <a name="activate-directoryrole"></a>Активация directoryRole
 
@@ -46,7 +46,7 @@ POST /directoryRoles
 
 |Параметр | Тип | Описание|
 |:---------|:---------|:---------|
-|roleTemplateId | строка | Обязательный. Идентификатор для объекта [directoryRoleTemplate](../resources/directoryroletemplate.md), который лежит в основе роли. Это единственное свойство, которое можно указать в запросе.|
+|roleTemplateId | string | Обязательное. Идентификатор для объекта [directoryRoleTemplate](../resources/directoryroletemplate.md), который лежит в основе роли. Это единственное свойство, которое можно указать в запросе.|
 
 ## <a name="response"></a>Отклик
 
@@ -118,3 +118,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
