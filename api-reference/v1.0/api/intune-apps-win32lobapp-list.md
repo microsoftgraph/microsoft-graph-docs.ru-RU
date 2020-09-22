@@ -1,0 +1,145 @@
+---
+title: Список win32LobApps
+description: Список свойств и связей объектов win32LobApp.
+author: dougeby
+localization_priority: Normal
+ms.prod: intune
+doc_type: apiPageType
+ms.openlocfilehash: b995951c28da322bb785a0f02171061fafff5c1f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48080088"
+---
+# <a name="list-win32lobapps"></a><span data-ttu-id="8d4af-103">Список win32LobApps</span><span class="sxs-lookup"><span data-stu-id="8d4af-103">List win32LobApps</span></span>
+
+<span data-ttu-id="8d4af-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8d4af-104">Namespace: microsoft.graph</span></span>
+
+> <span data-ttu-id="8d4af-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="8d4af-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="8d4af-106">Список свойств и связей объектов [win32LobApp](../resources/intune-apps-win32lobapp.md) .</span><span class="sxs-lookup"><span data-stu-id="8d4af-106">List properties and relationships of the [win32LobApp](../resources/intune-apps-win32lobapp.md) objects.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="8d4af-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="8d4af-107">Prerequisites</span></span>
+<span data-ttu-id="8d4af-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8d4af-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="8d4af-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8d4af-110">Permission type</span></span>|<span data-ttu-id="8d4af-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="8d4af-111">Permissions (from most to least privileged)</span></span>|
+|:---|:---|
+|<span data-ttu-id="8d4af-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8d4af-112">Delegated (work or school account)</span></span>|<span data-ttu-id="8d4af-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="8d4af-113">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+|<span data-ttu-id="8d4af-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8d4af-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8d4af-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8d4af-115">Not supported.</span></span>|
+|<span data-ttu-id="8d4af-116">Для приложения</span><span class="sxs-lookup"><span data-stu-id="8d4af-116">Application</span></span>|<span data-ttu-id="8d4af-117">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span><span class="sxs-lookup"><span data-stu-id="8d4af-117">DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All</span></span>|
+
+## <a name="http-request"></a><span data-ttu-id="8d4af-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8d4af-118">HTTP Request</span></span>
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /deviceAppManagement/mobileApps
+```
+
+## <a name="request-headers"></a><span data-ttu-id="8d4af-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="8d4af-119">Request headers</span></span>
+|<span data-ttu-id="8d4af-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="8d4af-120">Header</span></span>|<span data-ttu-id="8d4af-121">Значение</span><span class="sxs-lookup"><span data-stu-id="8d4af-121">Value</span></span>|
+|:---|:---|
+|<span data-ttu-id="8d4af-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8d4af-122">Authorization</span></span>|<span data-ttu-id="8d4af-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8d4af-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="8d4af-124">Accept</span><span class="sxs-lookup"><span data-stu-id="8d4af-124">Accept</span></span>|<span data-ttu-id="8d4af-125">application/json</span><span class="sxs-lookup"><span data-stu-id="8d4af-125">application/json</span></span>|
+
+## <a name="request-body"></a><span data-ttu-id="8d4af-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="8d4af-126">Request body</span></span>
+<span data-ttu-id="8d4af-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="8d4af-127">Do not supply a request body for this method.</span></span>
+
+## <a name="response"></a><span data-ttu-id="8d4af-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="8d4af-128">Response</span></span>
+<span data-ttu-id="8d4af-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [win32LobApp](../resources/intune-apps-win32lobapp.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="8d4af-129">If successful, this method returns a `200 OK` response code and a collection of [win32LobApp](../resources/intune-apps-win32lobapp.md) objects in the response body.</span></span>
+
+## <a name="example"></a><span data-ttu-id="8d4af-130">Пример</span><span class="sxs-lookup"><span data-stu-id="8d4af-130">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="8d4af-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="8d4af-131">Request</span></span>
+<span data-ttu-id="8d4af-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8d4af-132">Here is an example of the request.</span></span>
+``` http
+GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps
+```
+
+### <a name="response"></a><span data-ttu-id="8d4af-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="8d4af-133">Response</span></span>
+<span data-ttu-id="8d4af-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8d4af-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 2599
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.win32LobApp",
+      "id": "9607b530-b530-9607-30b5-079630b50796",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "publisher": "Publisher value",
+      "largeIcon": {
+        "@odata.type": "microsoft.graph.mimeContent",
+        "type": "Type value",
+        "value": "dmFsdWU="
+      },
+      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "isFeatured": true,
+      "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
+      "informationUrl": "https://example.com/informationUrl/",
+      "owner": "Owner value",
+      "developer": "Developer value",
+      "notes": "Notes value",
+      "publishingState": "processing",
+      "committedContentVersion": "Committed Content Version value",
+      "fileName": "File Name value",
+      "size": 4,
+      "installCommandLine": "Install Command Line value",
+      "uninstallCommandLine": "Uninstall Command Line value",
+      "applicableArchitectures": "x86",
+      "minimumFreeDiskSpaceInMB": 8,
+      "minimumMemoryInMB": 1,
+      "minimumNumberOfProcessors": 9,
+      "minimumCpuSpeedInMHz": 4,
+      "rules": [
+        {
+          "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+          "ruleType": "requirement",
+          "check32BitOn64System": true,
+          "keyPath": "Key Path value",
+          "valueName": "Value Name value",
+          "operationType": "exists",
+          "operator": "equal",
+          "comparisonValue": "Comparison Value value"
+        }
+      ],
+      "installExperience": {
+        "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
+        "runAsAccount": "user",
+        "deviceRestartBehavior": "allow"
+      },
+      "returnCodes": [
+        {
+          "@odata.type": "microsoft.graph.win32LobAppReturnCode",
+          "returnCode": 10,
+          "type": "success"
+        }
+      ],
+      "msiInformation": {
+        "@odata.type": "microsoft.graph.win32LobAppMsiInformation",
+        "productCode": "Product Code value",
+        "productVersion": "Product Version value",
+        "upgradeCode": "Upgrade Code value",
+        "requiresReboot": true,
+        "packageType": "perUser",
+        "productName": "Product Name value",
+        "publisher": "Publisher value"
+      },
+      "setupFilePath": "Setup File Path value",
+      "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
+    }
+  ]
+}
+```
+
+
+
+
+
+

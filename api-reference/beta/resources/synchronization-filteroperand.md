@@ -5,29 +5,29 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c66ebc2ef5033b57c46bef0ebb831b4f2087a0b3
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: bdb43108d327a727f6c5899d0ea097caf357f205
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218424"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48079769"
 ---
-# <a name="filteroperand-resource-type"></a><span data-ttu-id="7394d-103">Тип ресурса Филтероперанд</span><span class="sxs-lookup"><span data-stu-id="7394d-103">filterOperand resource type</span></span>
+# <a name="filteroperand-resource-type"></a><span data-ttu-id="4ef78-103">Тип ресурса Филтероперанд</span><span class="sxs-lookup"><span data-stu-id="4ef78-103">filterOperand resource type</span></span>
 
-<span data-ttu-id="7394d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7394d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4ef78-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4ef78-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7394d-105">Содержит коллекцию значений для операнда.</span><span class="sxs-lookup"><span data-stu-id="7394d-105">Contains a collection of values for the operand.</span></span>
+<span data-ttu-id="4ef78-105">Содержит коллекцию значений для операнда.</span><span class="sxs-lookup"><span data-stu-id="4ef78-105">Contains a collection of values for the operand.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="7394d-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="7394d-106">Properties</span></span>
-| <span data-ttu-id="7394d-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="7394d-107">Property</span></span>     | <span data-ttu-id="7394d-108">Тип</span><span class="sxs-lookup"><span data-stu-id="7394d-108">Type</span></span>   |<span data-ttu-id="7394d-109">Описание</span><span class="sxs-lookup"><span data-stu-id="7394d-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="4ef78-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="4ef78-106">Properties</span></span>
+| <span data-ttu-id="4ef78-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="4ef78-107">Property</span></span>     | <span data-ttu-id="4ef78-108">Тип</span><span class="sxs-lookup"><span data-stu-id="4ef78-108">Type</span></span>   |<span data-ttu-id="4ef78-109">Описание</span><span class="sxs-lookup"><span data-stu-id="4ef78-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7394d-110">values</span><span class="sxs-lookup"><span data-stu-id="7394d-110">values</span></span>|<span data-ttu-id="7394d-111">Коллекция объектов string</span><span class="sxs-lookup"><span data-stu-id="7394d-111">String collection</span></span>|<span data-ttu-id="7394d-112">Коллекция значений.</span><span class="sxs-lookup"><span data-stu-id="7394d-112">Collection of values.</span></span>|
+|<span data-ttu-id="4ef78-110">values</span><span class="sxs-lookup"><span data-stu-id="4ef78-110">values</span></span>|<span data-ttu-id="4ef78-111">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="4ef78-111">String collection</span></span>|<span data-ttu-id="4ef78-112">Коллекция значений.</span><span class="sxs-lookup"><span data-stu-id="4ef78-112">Collection of values.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="7394d-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7394d-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4ef78-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="4ef78-113">JSON representation</span></span>
 
-<span data-ttu-id="7394d-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7394d-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4ef78-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4ef78-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -56,3 +56,5 @@ ms.locfileid: "43218424"
   "suppressions": []
 }
 -->
+
+
