@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 343614306136f4962f6ac1955dbe2b1ad906279d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d5e3fe1d4b1b2dcf27de3915ffd49cd38ccb91d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411495"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028793"
 ---
 # <a name="create-user"></a>Создание пользователя
 
@@ -26,10 +26,10 @@ ms.locfileid: "43411495"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)| _зависит от контекста_ |
-| &nbsp;&nbsp; Управление устройствами | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp; Входящая миграция | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;Управление устройствами | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;MAM | DeviceManagementApps.ReadWrite.All |
+| &nbsp;Входящая миграция &nbsp; | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -45,7 +45,7 @@ POST /users
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -92,6 +92,9 @@ Content-Length: 95
   "id": "d36894ae-94ae-d368-ae94-68d3ae9468d3"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Удаление объекта windowsInformationProtectionAppLearningSu
 description: Удаляет объект windowsInformationProtectionAppLearningSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d42a064e1e750e7e174e66a0d2d35d53ce2735f8
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 945341148a1bc956495ec1611d8b3101f1c1afdd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43451718"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028674"
 ---
 # <a name="delete-windowsinformationprotectionapplearningsummary"></a>Удаление объекта windowsInformationProtectionAppLearningSummary
 
@@ -44,10 +44,10 @@ DELETE /deviceManagement/windowsInformationProtectionAppLearningSummaries/{windo
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -58,11 +58,14 @@ DELETE /deviceManagement/windowsInformationProtectionAppLearningSummaries/{windo
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsInformationProtectionAppLearningSummaryId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

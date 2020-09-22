@@ -5,12 +5,12 @@ localization_priority: Normal
 author: psignoret
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e2c4a4217a00dfa43f256c6896868909e4223f1d
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: 2fe66ab3259cc6850c75badaee9cf7ccba72e689
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509856"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028498"
 ---
 # <a name="oauth2permissiongrant-delta"></a>oauth2permissiongrant: Delta
 
@@ -59,7 +59,7 @@ GET /oauth2permissiongrants/delta
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -142,3 +142,4 @@ Content-type: application/json
   ]
 }
 -->
+

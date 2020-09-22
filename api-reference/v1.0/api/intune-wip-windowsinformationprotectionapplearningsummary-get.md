@@ -3,14 +3,14 @@ title: Получение объекта windowsInformationProtectionAppLearning
 description: Чтение свойств и связей объекта windowsInformationProtectionAppLearningSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6aae392b05bf727286ce7da72899ecd323efee0a
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 0141ce7a84553428971f5a12026d8227e8abbd56
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43439705"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028667"
 ---
 # <a name="get-windowsinformationprotectionapplearningsummary"></a>Получение объекта windowsInformationProtectionAppLearningSummary
 
@@ -38,7 +38,7 @@ ms.locfileid: "43439705"
 GET /deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsInformationProtectionAppLearningSummaryId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -47,10 +47,10 @@ GET /deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsI
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -78,6 +78,9 @@ Content-Length: 269
   }
 }
 ```
+
+
+
 
 
 

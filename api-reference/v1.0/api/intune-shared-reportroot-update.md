@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 39ff21b113e3962058a349afb2eed477f9638587
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5d67e334b0f9ff3329bfa3bdfbd5436527461d9f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411543"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028800"
 ---
 # <a name="update-reportroot"></a>Обновление объекта reportRoot
 
@@ -26,8 +26,8 @@ ms.locfileid: "43411543"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp;&nbsp; Конфигурация устройства | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp;&nbsp; Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp;Конфигурация устройства | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp;&nbsp;Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -43,7 +43,7 @@ PATCH /reports
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -83,6 +83,9 @@ Content-Length: 101
   "id": "9ab6b3dd-b3dd-9ab6-ddb3-b69addb3b69a"
 }
 ```
+
+
+
 
 
 

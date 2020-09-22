@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 90a75aff2873f0c9af577a0ccfa093de39d522c7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1f516c1386d828412e71fa35668b4c86a496f6af
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411424"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028807"
 ---
 # <a name="delete-user"></a>Удаление пользователя
 
@@ -26,10 +26,10 @@ ms.locfileid: "43411424"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)| _зависит от контекста_|
-| &nbsp;&nbsp; Devices (устройства) | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp; Входящая миграция | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;Devices (устройства) | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp;MAM | DeviceManagementApps.ReadWrite.All |
+| &nbsp;Входящая миграция &nbsp; | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp;Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -45,13 +45,13 @@ DELETE /users/{usersId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -63,12 +63,15 @@ DELETE /users/{usersId}
 DELETE https://graph.microsoft.com/v1.0/users/{usersId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 
