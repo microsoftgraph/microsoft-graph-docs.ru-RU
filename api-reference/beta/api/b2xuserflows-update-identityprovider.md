@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 792b3ccd9d8020af7139108efd93e0cb430385d7
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 0e65a9f0df3ad54526cda89ab72cce9566d22a48
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329536"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991371"
 ---
 # <a name="add-identityprovider-to-a-b2xuserflow"></a>Добавление identityProvider в b2xUserFlow
 
@@ -28,7 +28,7 @@ ms.locfileid: "47329536"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Идентитюсерфлов. ReadWrite. ALL|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение| Идентитюсерфлов. ReadWrite. ALL|
+|Для приложений| Идентитюсерфлов. ReadWrite. ALL|
 
 Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
 
@@ -108,3 +108,5 @@ Content-length: 30
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

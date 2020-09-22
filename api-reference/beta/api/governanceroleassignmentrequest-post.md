@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: b038ca74eb8046e4ae77a8a31715a473a3518ba1
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 7bff2d2ae8e6a122621e3d17de7f7acc3f4e24df
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218873"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991112"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Создание governanceRoleAssignmentRequest
 
@@ -63,15 +63,15 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | Свойство         | Тип                                                     | Описание |
 |:-----------------|:---------------------------------------------------------|:--|
-| resourceId       | String                                                   | Идентификатор ресурса. Обязательный. |
-| роледефинитионид | String                                                   | Идентификатор определения роли. Обязательный. |
-| субжектид        | String                                                   | ИДЕНТИФИКАТОР субъекта. Обязательный. |
-| ассигнментстате  | String                                                   | Состояние назначения. Значение может быть `Eligible` и `Active`. Обязательное. |
-| type             | String                                                   | Тип запроса. Возможные значения: `AdminAdd`, `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `AdminRenew` `AdminExtend`,,,,, и. `UserExtend` `UserRenew` Обязательный. |
+| resourceId       | String                                                   | Идентификатор ресурса. Обязательно. |
+| роледефинитионид | String                                                   | Идентификатор определения роли. Обязательно. |
+| субжектид        | String                                                   | ИДЕНТИФИКАТОР субъекта. Обязательно. |
+| ассигнментстате  | String                                                   | Состояние назначения. Значение может быть `Eligible` и `Active` . Обязательное. |
+| type             | String                                                   | Тип запроса. Возможные значения:,,,,,, `AdminAdd` `UserAdd` `AdminUpdate` `AdminRemove` `UserRemove` `UserExtend` `UserRenew` `AdminRenew` и `AdminExtend` . Обязательно. |
 | reason           | String                                                   | Необходимо указать причину для запроса на назначение роли для аудита и проверки. |
-| schedule         | [governanceSchedule](../resources/governanceschedule.md) | Расписание запроса на назначение роли. `UserAdd`Для типа запроса `AdminAdd`,, `AdminUpdate`, и `AdminExtend`, он необходим. |
+| schedule         | [governanceSchedule](../resources/governanceschedule.md) | Расписание запроса на назначение роли. Для типа запроса `UserAdd` ,, `AdminAdd` `AdminUpdate` , и `AdminExtend` , он необходим. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в тексте отклика.
 
@@ -81,9 +81,9 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | Код ошибки     | Сообщение об ошибке                               | Сведения       |
 |:---------------|:--------------------------------------------|:--------------|
-| 400 Бадрекуест | роленотфаунд                                | Не `roleDefinitionId` удается найти указанный в тексте запроса. |
+| 400 Бадрекуест | роленотфаунд                                | `roleDefinitionId`Не удается найти указанный в тексте запроса. |
 | 400 Бадрекуест | ресаурцеислоккед                            | Ресурс, указанный в теле запроса, находится в состоянии `Locked` и не может создавать запросы на назначение ролей. |
-| 400 Бадрекуест | субжектнотфаунд                             | Не `subjectId` удается найти указанный в тексте запроса. |
+| 400 Бадрекуест | субжектнотфаунд                             | `subjectId`Не удается найти указанный в тексте запроса. |
 | 400 Бадрекуест | пендингролеассигнментрекуест                | В системе уже существует ожидающий [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) . |
 | 400 Бадрекуест | ролеассигнментексистс                        | [GovernanceRoleAssignment](../resources/governanceroleassignment.md) , который требуется создать, уже существует в системе. |
 | 400 Бадрекуест | ролеассигнментдоеснотексист                  | [GovernanceRoleAssignment](../resources/governanceroleassignment.md) , запрошенный для обновления или расширения, не существует в системе. |
@@ -97,13 +97,13 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 В этом примере администратор назначает пользователю nawu@fimdev.net роль читателя выставления счетов.
 
- >**Примечание:** Кроме разрешения, в этом примере необходимо, чтобы у автора запроса было по крайней `Active` мере одно назначение роли`owner` администратора `user access administrator`(или) для ресурса.
+ >**Примечание:** Кроме разрешения, в этом примере необходимо, чтобы у автора запроса было по крайней мере одно `Active` назначение роли администратора ( `owner` или `user access administrator` ) для ресурса.
 
-| Свойство         | Тип                                                     | Обязательное                 | Значение |
+| Свойство         | Тип                                                     | Обязательный                 | Значение |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | String                                                   | Да                      | \<resourceId\> |
-| роледефинитионид | String                                                   | Да                      | \<роледефинитионид\> |
-| субжектид        | String                                                   | Да                      | \<субжектид\> |
+| роледефинитионид | String                                                   | Да                      | \<roleDefinitionId\> |
+| субжектид        | String                                                   | Да                      | \<subjectId\> |
 | ассигнментстате  | String                                                   | Да                      | Подходящие/активные |
 | type             | String                                                   | Да                      | админадд |
 | reason           | String                                                   | зависит от параметров роли |   |
@@ -207,17 +207,17 @@ Content-type: application/json
 
 В этом примере пользователь nawu@fimdev.net активирует соответствующую роль читателя выставления счетов.
 
-| Свойство         | Тип                                                     | Обязательное                 | Значение |
+| Свойство         | Тип                                                     | Обязательный                 | Значение |
 |:-----------------|:---------------------------------------------------------|:-------------------------|:--|
 | resourceId       | String                                                   | Да                      | \<resourceId\> |
-| роледефинитионид | String                                                   | Да                      | \<роледефинитионид\> |
-| субжектид        | String                                                   | Да                      | \<субжектид\> |
-| ассигнментстате  | String                                                   | Да                      | Активация |
+| роледефинитионид | String                                                   | Да                      | \<roleDefinitionId\> |
+| субжектид        | String                                                   | Да                      | \<subjectId\> |
+| ассигнментстате  | String                                                   | Да                      | Активное |
 | type             | String                                                   | Да                      | усерадд |
 | reason           | String                                                   | зависит от параметров роли |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Да                      |   |
 
-#### <a name="request"></a>Запросить
+#### <a name="request"></a>Запрос
 
 <!-- {
   "blockType": "request",
@@ -244,7 +244,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
@@ -310,12 +310,12 @@ Content-type: application/json
 
 В этом примере пользователь nawu@fimdev.net отключает активную роль читателя выставления счетов.
 
-| Свойство         | Тип                                                     | Обязательное | Значение |
+| Свойство         | Тип                                                     | Обязательный | Значение |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
 | resourceId       | String                                                   | Да      | \<resourceId\> |
-| роледефинитионид | String                                                   | Да      | \<роледефинитионид\> |
-| субжектид        | String                                                   | Да      | \<субжектид\> |
-| ассигнментстате  | String                                                   | Да      | Активация |
+| роледефинитионид | String                                                   | Да      | \<roleDefinitionId\> |
+| субжектид        | String                                                   | Да      | \<subjectId\> |
+| ассигнментстате  | String                                                   | Да      | Активное |
 | type             | String                                                   | Да      | усерремове |
 | reason           | String                                                   | Нет       |   |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Нет       |   |
@@ -342,7 +342,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
@@ -378,13 +378,13 @@ Content-type: application/json
 
 В этом примере администратор удаляет пользователя nawu@fimdev.net из роли читателя выставления счетов.
 
- >**Примечание:** Кроме разрешения, в этом примере необходимо, чтобы у автора запроса было по крайней `Active` мере одно назначение роли`owner` администратора `user access administrator`(или) для ресурса.
+ >**Примечание:** Кроме разрешения, в этом примере необходимо, чтобы у автора запроса было по крайней мере одно `Active` назначение роли администратора ( `owner` или `user access administrator` ) для ресурса.
 
-| Свойство         | Тип                                                     | Обязательное | Значение |
+| Свойство         | Тип                                                     | Обязательный | Значение |
 |:-----------------|:---------------------------------------------------------|:---------|:--|
 | resourceId       | String                                                   | Да      | \<resourceId\> |
-| роледефинитионид | String                                                   | Да      | \<роледефинитионид\> |
-| субжектид        | String                                                   | Да      | \<субжектид\> |
+| роледефинитионид | String                                                   | Да      | \<roleDefinitionId\> |
+| субжектид        | String                                                   | Да      | \<subjectId\> |
 | ассигнментстате  | String                                                   | Да      | Подходящие/активные |
 | type             | String                                                   | Да      | админремове |
 | reason           | String                                                   | Нет       |   |
@@ -410,7 +410,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
@@ -446,13 +446,13 @@ Content-type: application/json
 
 В этом примере администраторы обновляют назначение роли пользователя nawu@fimdev.net владельцу.
 
- >**Примечание:** Кроме разрешения, в этом примере необходимо, чтобы у автора запроса было по крайней `Active` мере одно назначение роли`owner` администратора `user access administrator`(или) для ресурса.
+ >**Примечание:** Кроме разрешения, в этом примере необходимо, чтобы у автора запроса было по крайней мере одно `Active` назначение роли администратора ( `owner` или `user access administrator` ) для ресурса.
 
-| Свойство         | Тип                                                     | Обязательное                | Значение |
+| Свойство         | Тип                                                     | Обязательный                | Значение |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
 | resourceId       | String                                                   | Да                     | \<resourceId\> |
-| роледефинитионид | String                                                   | Да                     | \<роледефинитионид\> |
-| субжектид        | String                                                   | Да                     | \<субжектид\> |
+| роледефинитионид | String                                                   | Да                     | \<roleDefinitionId\> |
+| субжектид        | String                                                   | Да                     | \<subjectId\> |
 | ассигнментстате  | String                                                   | Да                     | Подходящие/активные |
 | type             | String                                                   | Да                     | админупдате |
 | reason           | String                                                   | зависит от Ролесеттингс |   |
@@ -483,7 +483,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
@@ -537,13 +537,13 @@ Content-type: application/json
 
 В этом примере показано, как расширить назначение роли истечения срока действия для пользователя АНУЖКУСЕР участнику службы управления API.
 
- >**Примечание:** Кроме разрешения, в этом примере необходимо, чтобы у автора запроса было по крайней `Active` мере одно назначение роли`owner` администратора `user access administrator`(или) для ресурса.
+ >**Примечание:** Кроме разрешения, в этом примере необходимо, чтобы у автора запроса было по крайней мере одно `Active` назначение роли администратора ( `owner` или `user access administrator` ) для ресурса.
 
-| Свойство         | Тип                                                     | Обязательное                | Значение |
+| Свойство         | Тип                                                     | Обязательный                | Значение |
 |:-----------------|:---------------------------------------------------------|:------------------------|:--|
 | resourceId       | String                                                   | Да                     | \<resourceId\> |
-| роледефинитионид | String                                                   | Да                     | \<роледефинитионид\> |
-| субжектид        | String                                                   | Да                     | \<субжектид\> |
+| роледефинитионид | String                                                   | Да                     | \<roleDefinitionId\> |
+| субжектид        | String                                                   | Да                     | \<subjectId\> |
 | ассигнментстате  | String                                                   | Да                     | Подходящие/активные |
 | type             | String                                                   | Да                     | админекстенд |
 | reason           | String                                                   | зависит от Ролесеттингс |   |
@@ -638,3 +638,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

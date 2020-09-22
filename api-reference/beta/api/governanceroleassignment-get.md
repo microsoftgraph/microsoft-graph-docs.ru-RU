@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 74701c9e0567735dc4f34ec2f4044e8514a54d1d
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 77b188d37ebab092caba83cb0b4cc1cd639f6df4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218901"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991154"
 ---
 # <a name="get-governanceroleassignment"></a>Получение governanceRoleAssignment
 
@@ -43,8 +43,8 @@ GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=resourceId+eq+
 GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'{myId}'
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод **не** поддерживает [параметры запросов OData](/graph/query-parameters) `$filter` , не позволяющие настраивать ответ.
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+Этот метод **не** поддерживает [параметры запросов OData](/graph/query-parameters) , не позволяющие `$filter` настраивать ответ.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -53,7 +53,7 @@ GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [governanceRoleAssignment](../resources/governanceroleassignment.md) в тексте отклика.
 ## <a name="example"></a>Пример
 <!-- {
@@ -104,3 +104,5 @@ Content-length: 182
   "suppressions": []
 }
 -->
+
+

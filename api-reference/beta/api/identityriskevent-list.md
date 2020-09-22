@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 14dcac081d870a5a25ffa8afdb8dd7424e44cfd8
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 8056f15ca5345e8182567e0fb2e20bb21b0a6eed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311720"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990788"
 ---
 # <a name="list-identityriskevents-deprecated"></a>Список Идентитирискевентс (не рекомендуется)
 
@@ -43,7 +43,7 @@ GET /identityRiskEvents
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -138,3 +138,5 @@ Content-length: 304
   "suppressions": []
 }
 -->
+
+

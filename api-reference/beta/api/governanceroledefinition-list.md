@@ -5,16 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 1a3acbf3e48166e01cac64fec6cdc09803981561
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 64536ba9b9a607c1f485f922203e524ce5b07e77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218852"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991035"
 ---
 # <a name="list-governanceroledefinitions"></a>Список Говернанцероледефинитионс
 
-Пространство имен: Microsoft. Graph[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение коллекции [говернанцероледефинитионс](../resources/governanceroledefinition.md) для ресурса.
 
@@ -45,7 +45,7 @@ GET /privilegedAccess/azureResources/roleDefinitions?$filter=resourceId+eq+'{res
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [говернанцероледефинитион](../resources/governanceroledefinition.md) в тексте отклика.
 ## <a name="example"></a>Пример
 <!-- {
@@ -110,3 +110,5 @@ Content-Length: 21906
   "suppressions": []
 }
 -->
+
+

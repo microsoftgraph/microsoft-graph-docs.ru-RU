@@ -3,14 +3,14 @@ title: Действие createToken
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 635aac97d2b0b171b3a2b16a690b6c012b4fd994
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7881eddad5c351fc7cd703b2c510bee3b42fc474
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43395966"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990594"
 ---
 # <a name="createtoken-action"></a>Действие createToken
 
@@ -43,7 +43,7 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerE
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwnerE
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|tokenValidityInSeconds|Int32|Н/Д|
+|tokenValidityInSeconds|Int32|Пока не задокументировано.|
 
 
 
@@ -80,6 +80,9 @@ Content-length: 35
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

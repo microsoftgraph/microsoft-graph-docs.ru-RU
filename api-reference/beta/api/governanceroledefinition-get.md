@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 55dbc8933c9adeda1bcd2d40c5ed9c54de7dd55a
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d9cf9f091581678da3b22585c75c163537bfe163
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218859"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991042"
 ---
 # <a name="get-governanceroledefinition"></a>Получение Говернанцероледефинитион
 
@@ -48,7 +48,7 @@ GET /privilegedAccess/azureResources/roleDefinitions/{id}?$filter=resourceId+eq+
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [говернанцероледефинитион](../resources/governanceroledefinition.md) в тексте отклика.
 ## <a name="example"></a>Пример
 В этом примере показано, как получить сведения об участниках определения роли DNS в подписке Wingtip Toys-произ.
@@ -93,3 +93,5 @@ Content-length: 174
   "suppressions": []
 }
 -->
+
+

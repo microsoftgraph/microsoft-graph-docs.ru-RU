@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9235d8b30801c32d2428f4086ab8ce22ed021fa3
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: d85fd53a9639637c30646186c2cf8422272fe7d3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895876"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990944"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -20,7 +20,7 @@ ms.locfileid: "44895876"
 
 Проверка членства в указанном списке групп. Возвращает из списка те группы, в которых указанная группа состоит напрямую или транзитивно.
 
-Можно проверить не более 20 групп на каждый запрос. Эта функция поддерживает Microsoft 365 и другие типы групп, подготовленные в Azure AD. Обратите внимание, что группы Microsoft 365 не могут содержать групп. Поэтому членство в группе Microsoft 365 всегда является прямым.
+Можно проверить не более 20 групп на каждый запрос. Эта функция поддерживает Microsoft 365 и другие типы групп, подготовленные в Azure AD. Обратите внимание, что группы Майкрософт 365 не могут содержать групп. Поэтому членство в группе Microsoft 365 всегда является прямым.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,7 +46,7 @@ POST /groups/{id}/checkMemberGroups
 | :------------ | :----- | :------------------------ |
 | Authorization | string | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -136,3 +136,5 @@ Content-length: 39
   ]
 }
 -->
+
+

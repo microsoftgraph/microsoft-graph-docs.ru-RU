@@ -1,16 +1,16 @@
 ---
 title: Экспорт Говернанцеролеассигнментрекуестс
-description: Получение коллекции Говернанцеролеассигнментрекуестс в формате `application/octet-stream`, который можно проанализировать как CSV-файл в браузере.
+description: Получение коллекции Говернанцеролеассигнментрекуестс в формате `application/octet-stream` , который можно проанализировать как CSV-файл в браузере.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: b09eaa5cfe3c4530faedbfd52d2f9b52bd41f07d
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: a975205ffdfcca831bfd7e2a17c4ceeb51988fd3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218908"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991161"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>Экспорт Говернанцеролеассигнментрекуестс
 
@@ -18,7 +18,7 @@ ms.locfileid: "43218908"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение коллекции [говернанцеролеассигнментрекуестс](../resources/governanceroleassignmentrequest.md) в формате `application/octet-stream`, который можно проанализировать как CSV-файл в браузере.
+Получение коллекции [говернанцеролеассигнментрекуестс](../resources/governanceroleassignmentrequest.md) в формате `application/octet-stream` , который можно проанализировать как CSV-файл в браузере.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -55,8 +55,8 @@ GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и содержимое `application/octet-stream`типа.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и содержимое типа `application/octet-stream` .
 
 ## <a name="example"></a>Пример
 В этом примере все назначения ролей сохраняются в виде CSV-файла в подписке Wingtip Toys-произ. 
@@ -88,3 +88,5 @@ Content-Length:126
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 91c96ce05eefd558281382ac19b188ed0a1a4305
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: a8cd468506b28c6e9ea155a37141747056ea5db3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509691"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990622"
 ---
 # <a name="list-trending"></a>Список "Популярные"
 
@@ -47,7 +47,7 @@ GET /me/insights/trending/{id}/resource
 GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
 `$filter`С помощью параметра запроса можно фильтровать элементы тенденции. Например, на основе **типа**:
@@ -91,7 +91,7 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
   }
 }
 ```
-Более подробную информацию можно узнать в статье [Настройка конфиденциальности Insights](/graph/insights-customize-item-insights-privacy.md).
+Дополнительные сведения см. в статье [Настройка конфиденциальности для аналитики](/graph/insights-customize-item-insights-privacy.md).
 
 ## <a name="example"></a>Пример
 #### <a name="request"></a>Запрос
@@ -158,3 +158,5 @@ Content-length: 801
     ]
 }
 ```
+
+

@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2274d3f5e8dfab42b1df9d6da0510ae7d22de463
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: fe19bb8409d1780d47caaf308f68638d5846e833
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123897"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990916"
 ---
 # <a name="remove-acceptedsender"></a>Удаление объекта acceptedSender
 
@@ -43,7 +43,7 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id={id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="examples"></a>Примеры
@@ -59,7 +59,7 @@ DELETE https://graph/microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=htt
 ```
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 <!-- {
   "blockType": "response",
@@ -105,3 +105,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

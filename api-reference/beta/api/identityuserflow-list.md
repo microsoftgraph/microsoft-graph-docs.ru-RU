@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9943331d6230ad657c02d30f6d36cc17b4b64fbb
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: f35437e30768600277f505e43cc35517d2cf32af
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218831"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990727"
 ---
 # <a name="list-userflows"></a>Список Усерфловс
 
@@ -48,7 +48,7 @@ GET /identity/userFlows
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [усерфлов](../resources/identityuserflow.md) в тексте отклика.
 
@@ -122,3 +122,5 @@ Content-type: application/json
     "Error: get_userflows/container/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->
+
+

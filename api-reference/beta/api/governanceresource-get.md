@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: cc9eb38838ce4dbbd06888cb4b5d004e7ee6e150
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 2819405bd108c4475aa4a389b5ac859d0e9e24f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218929"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991203"
 ---
 # <a name="get-governanceresource"></a>Получение governanceResource
 
@@ -38,7 +38,7 @@ GET /privilegedAccess/azureResources/resources/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод **only** поддерживает `$select` `$expand` только [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+Этот метод **only** поддерживает только `$select` `$expand` [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -47,7 +47,7 @@ GET /privilegedAccess/azureResources/resources/{id}
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [governanceResource](../resources/governanceresource.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -95,3 +95,5 @@ Content-Length: 459
   "suppressions": []
 }
 -->
+
+

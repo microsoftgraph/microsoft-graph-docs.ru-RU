@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 6c6aad1bb501f9b596f95f39ae8fd79124fe2e87
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 619bc7e17d8f1d6501191a8d7f7fe4d50a60166e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215782"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991028"
 ---
 # <a name="get-governancerolesetting"></a>Получение Говернанцеролесеттинг
 
@@ -46,7 +46,7 @@ GET /privilegedAccess/azureResources/roleSettings/{id}
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [говернанцеролесеттинг](../resources/governancerolesetting.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -147,3 +147,5 @@ Content-length: 370
   ]
 }
 -->
+
+

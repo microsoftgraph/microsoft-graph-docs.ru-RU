@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 8179fa2d2bd1e8f52df9aa09bac5a965812e2122
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 942ff054ab3465077bf4ace0f267121e8b7ce8e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218887"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991140"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>Отмена governanceRoleAssignmentRequest
 
@@ -29,7 +29,7 @@ ms.locfileid: "43218887"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод **не** поддерживает [параметры запросов OData](/graph/query-parameters).
 
 ### <a name="http-request"></a>HTTP-запрос
@@ -47,7 +47,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 NoContent`. В тексте отклика не возвращается никаких данных. 
 
 ## <a name="error-codes"></a>Коды ошибок
@@ -55,7 +55,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 | Код ошибки | Сообщение об ошибке | Сведения |
 |:---------- |:------------- |:------- |
 | 400 Бадрекуест | ролеассигнментрекуестнотфаунд | GovernanceRoleAssignmentRequest не существует в системе. |
-| 400 Бадрекуест | рекуестканнотбеканцеллед | Только те запросы, которые `Granted`находятся `PendingApproval`в `PendingApprovalProvisioning` состоянии `PendingAdminDecision` , и могут быть отменены. |
+| 400 Бадрекуест | рекуестканнотбеканцеллед | Только те запросы, которые находятся в состоянии `Granted` , `PendingApproval` `PendingApprovalProvisioning` и `PendingAdminDecision` могут быть отменены. |
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -107,3 +107,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

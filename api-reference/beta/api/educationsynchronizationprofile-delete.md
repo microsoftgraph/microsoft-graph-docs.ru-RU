@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 89dd57e3188a63e87ed88f796b3f7259e7996661
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 39bc4909e63e6e7ff908481873f32324703bf549
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424535"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991259"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>Удаление Едукатионсинчронизатионпрофиле
 
@@ -42,7 +42,7 @@ DELETE /synchronizationProfiles/{id}
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и без текста отклика.
 
 ## <a name="example"></a>Пример
@@ -92,3 +92,5 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+
+

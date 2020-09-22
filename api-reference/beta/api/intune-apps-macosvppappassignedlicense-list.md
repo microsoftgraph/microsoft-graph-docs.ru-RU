@@ -3,14 +3,14 @@ title: Список Макосвппаппассигнедлиценсес
 description: Список свойств и связей объектов Макосвппаппассигнедлиценсе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 854a483b4690dcb7ebc32739e2d48786636cf627
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 43a4a5bb09f76c30747e76d34513bef136e9e92a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43406463"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990363"
 ---
 # <a name="list-macosvppappassignedlicenses"></a>Список Макосвппаппассигнедлиценсес
 
@@ -43,13 +43,13 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/as
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [макосвппаппассигнедлиценсе](../resources/intune-apps-macosvppappassignedlicense.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -80,6 +80,9 @@ Content-Length: 342
   ]
 }
 ```
+
+
+
 
 
 

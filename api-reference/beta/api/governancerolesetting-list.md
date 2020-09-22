@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 93a0154c2e847b5130da0ab603b566037190ed3f
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 779d1209d7aa41a5f4770fd07f793e2492086a95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215737"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991014"
 ---
 # <a name="list-governancerolesettings"></a>Список Говернанцеролесеттингс
 
@@ -47,7 +47,7 @@ GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resour
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [говернанцеролесеттинг](../resources/governancerolesetting.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -186,3 +186,5 @@ Content-length: 463
   "suppressions": []
 }
 -->
+
+

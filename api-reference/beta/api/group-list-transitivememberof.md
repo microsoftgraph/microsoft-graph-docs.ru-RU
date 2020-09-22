@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: c25e2c048e53b1010d4fc6315372397de1e26684
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: bf4e1365b392736a1856cb8c6284a7a4babc97dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872619"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990881"
 ---
 # <a name="list-group-transitive-memberof"></a>Перечисление group transitive memberOf
 
@@ -48,7 +48,7 @@ GET /groups/{id}/transitiveMemberOf
 | Имя | Описание |
 |:---- |:----------- |
 | Авторизация  | Bearer {токен}. Обязательный. |
-| ConsistencyLevel | необязательный. Этот заголовок и `$count` при использовании `$search` `$filter` `$orderby` параметров запроса на приведение,, или OData. Он использует индекс, который может не быть актуальным с последними изменениями объекта. |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`, `$filter`, `$orderby` или с параметрами запросов OData cast. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -117,7 +117,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-all-transitive-membership"></a>Пример 2: получение только количества всех транзитивных членств
+### <a name="example-2-get-only-a-count-of-all-transitive-membership"></a>Пример 2: Получение только количества транзитивных участников
 
 #### <a name="request"></a>Запрос
 
@@ -165,7 +165,7 @@ Content-type: text/plain
 
 294
 
-### <a name="example-3-use-odata-cast-to-get-only-a-count-of-transitive-membership-in-groups"></a>Пример 3: Использование приведения OData для получения только счетчика транзитивного членства в группах
+### <a name="example-3-use-odata-cast-to-get-only-a-count-of-transitive-membership-in-groups"></a>Пример 3. Использование OData cast для получения только количества транзитивных участников в группах
 
 #### <a name="request"></a>Запрос
 
@@ -346,3 +346,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

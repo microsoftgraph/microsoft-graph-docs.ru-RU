@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 777adf601bf71676c505d1a9340f87b7575fc0c7
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: fdc5266722b9dafd1067429a538be76d62493bf0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218824"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990713"
 ---
 # <a name="create-userflow"></a>Создание Усерфлов
 
@@ -45,11 +45,11 @@ POST /identity/userFlows
 | Авторизация | Bearer {токен}. Обязательный. |
 |Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [усерфлов](../resources/identityuserflow.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [усерфлов](../resources/identityuserflow.md) в тексте отклика.
 
@@ -124,3 +124,5 @@ Content-type: application/json
     "Error: create_identityuserflow_from_identitycontainer/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->
+
+

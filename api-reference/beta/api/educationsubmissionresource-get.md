@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7417d906c85e4ed50de6926ead29073614a6df0f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5968f189dd3eea8a976cdcb6c141742b19ef4618
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424689"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991308"
 ---
 # <a name="get-educationsubmissionresource"></a>Получение Едукатионсубмиссионресаурце
 
@@ -44,7 +44,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/resources/{id}
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [едукатионсубмиссионресаурце](../resources/educationsubmissionresource.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -112,3 +112,5 @@ Content-length: 1152
   "suppressions": []
 }
 -->
+
+

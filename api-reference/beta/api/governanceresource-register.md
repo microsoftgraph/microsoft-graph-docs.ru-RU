@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: d92b061dd726dcbcacf18213a303fac8f415c46e
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 207a733e72dcf7c05c6cdf81dddb3cecf37e3bdd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218915"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991175"
 ---
 # <a name="governanceresource-register"></a>governanceResource: Register
 
@@ -41,22 +41,22 @@ POST /privilegedAccess/azureResources/resources/register
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод **only** поддерживает `$select` `$expand` только [Параметры запроса OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает **только** `$select` `$expand` [Параметры запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя | Описание |
 |:---- |:----------- |
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Тело запроса
 
 | Свойства | Тип | Описание |
 |:---------- |:---- |:----------- |
-| externalId | String | Внешний идентификатор ресурса, регистрируемого в PIM. При регистрации подписки идентификатором является идентификатор подписки, добавленный в начале `/subscriptions/`. Например, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
+| externalId | String | Внешний идентификатор ресурса, регистрируемого в PIM. При регистрации подписки идентификатором является идентификатор подписки, добавленный в начале `/subscriptions/` . Например, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` отклик.
 
@@ -98,3 +98,5 @@ HTTP/1.1 200 OK
   "suppressions": []
 }
 -->
+
+
