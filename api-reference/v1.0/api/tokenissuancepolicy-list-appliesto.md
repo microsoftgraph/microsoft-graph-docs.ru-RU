@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a4e3193577061487b813506c868e18b9c6a8763c
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: d76026a13d1bae3f74cda5192691e2ef6c3d55ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917245"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043971"
 ---
 # <a name="list-appliesto"></a>Список appliesTo
 
@@ -40,7 +40,7 @@ GET /policies/tokenIssuancePolicies/{id}/appliesTo
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры `$expand`запроса `$select`, и `$top` OData для настройки отклика. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters). При использовании `$expand`убедитесь, что приложение запрашивает разрешения на чтение развернутых объектов.
+Этот метод поддерживает `$expand` `$select` Параметры запроса, и `$top` OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters). При использовании `$expand` Убедитесь, что приложение запрашивает разрешения на чтение развернутых объектов.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -52,7 +52,7 @@ GET /policies/tokenIssuancePolicies/{id}/appliesTo
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/v1.0/policies/tokenIssuancePolicies/{id}/applies
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -126,3 +126,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

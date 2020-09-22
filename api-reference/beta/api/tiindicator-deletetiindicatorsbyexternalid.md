@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 28c31d6545189728bdcf17cfadadd5b2aa2fc85d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 04d9e95bce724f354c7e1a39e49083dd3cc3c090
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452390"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042823"
 ---
 # <a name="tiindicator-deletetiindicatorsbyexternalid"></a>Тииндикатор: Делететииндикаторсбекстерналид
 
@@ -50,11 +50,11 @@ POST /security/tiIndicators/deleteTiIndicatorsByExternalId
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|значение|Коллекция объектов string| `externalIds` Коллекция объектов **тииндикатор** , которые необходимо удалить. |
+|значение|Коллекция String| Коллекция `externalIds` объектов **тииндикатор** , которые необходимо удалить. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `200, OK` возвращает код отклика и объект коллекции [ресултинфо](../resources/resultinfo.md) в тексте отклика. При возникновении ошибки этот метод возвращает код `206 Partial Content` отклика.  Дополнительные сведения см. в разделе [Errors](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) .
+В случае успешного выполнения этот метод возвращает `200, OK` код отклика и объект коллекции [ресултинфо](../resources/resultinfo.md) в тексте отклика. При возникновении ошибки этот метод возвращает `206 Partial Content` код отклика.  Дополнительные сведения см. в разделе [Errors](../resources/security-error-codes.md#threat-indicator-bulk-action-errors) .
 
 ## <a name="examples"></a>Примеры
 
@@ -99,7 +99,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -137,3 +137,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

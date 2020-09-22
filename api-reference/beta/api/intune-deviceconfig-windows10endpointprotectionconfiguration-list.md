@@ -3,14 +3,14 @@ title: Перечисление объектов windows10EndpointProtectionConf
 description: Перечисление свойств и связей объектов windows10EndpointProtectionConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 12875d7bb0e53b8601d03667c3cc51bcc7af6ff7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b69e32dbafb3a0c15e833bdbbdc289d14699f849
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43431281"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043698"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>Перечисление объектов windows10EndpointProtectionConfiguration
 
@@ -44,13 +44,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 34154
+Content-Length: 34198
 
 {
   "value": [
@@ -557,6 +557,7 @@ Content-Length: 34154
       "firewallBlockStatefulFTP": true,
       "firewallIdleTimeoutForSecurityAssociationInSeconds": 2,
       "firewallPreSharedKeyEncodingMethod": "none",
+      "firewallIPSecExemptionsNone": true,
       "firewallIPSecExemptionsAllowNeighborDiscovery": true,
       "firewallIPSecExemptionsAllowICMP": true,
       "firewallIPSecExemptionsAllowRouterDiscovery": true,
@@ -811,6 +812,9 @@ Content-Length: 34154
   ]
 }
 ```
+
+
+
 
 
 

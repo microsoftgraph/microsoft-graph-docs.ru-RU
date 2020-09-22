@@ -3,14 +3,14 @@ title: Создание Граупполицисеттингмаппинг
 description: Создание нового объекта Граупполицисеттингмаппинг.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d557a3fceabeeaf01a3c48e7719214f7b773e3c8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1f6efd504a281398b33df4cea5b93dc0fdfd995d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454874"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043383"
 ---
 # <a name="create-grouppolicysettingmapping"></a>Создание Граупполицисеттингмаппинг
 
@@ -46,37 +46,38 @@ POST /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Граупполицисеттингмаппинг в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Граупполицисеттингмаппинг.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
-|parentId|String|Родительский идентификатор параметра групповой политики.|
-|чилдидлист|Коллекция объектов string|Список дочерних идентификаторов параметра групповой политики.|
+|id|Строка|Пока не задокументировано.|
+|parentId|Строка|Родительский идентификатор параметра групповой политики.|
+|чилдидлист|Коллекция String|Список дочерних идентификаторов параметра групповой политики.|
 |settingName|String|Имя этого параметра групповой политики.|
-|settingValue|String|Значение этого параметра групповой политики.|
-|сеттингвалуетипе|String|Тип значения этого параметра групповой политики.|
-|сеттингдисплайнаме|String|Отображаемое имя этого параметра групповой политики.|
-|сеттингдисплайвалуе|String|Отображаемое значение этого параметра групповой политики.|
-|сеттингдисплайвалуетипе|String|Отображаемый тип значения этого параметра групповой политики.|
-|сеттингвалуедисплайунитс|String|Отображаемые единицы значения параметра групповой политики|
-|сеттингкатегори|String|Категория, в которой находится параметр групповой политики.|
-|мдмкспнаме|String|Имя CSP, которое сопоставляется параметру групповой политики.|
-|мдмсеттингури|String|Универсальный код ресурса (URI) MDM CSP, которому соответствует этот параметр групповой политики.|
+|settingValue|Строка|Значение этого параметра групповой политики.|
+|сеттингвалуетипе|Строка|Тип значения этого параметра групповой политики.|
+|сеттингдисплайнаме|Строка|Отображаемое имя этого параметра групповой политики.|
+|сеттингдисплайвалуе|Строка|Отображаемое значение этого параметра групповой политики.|
+|сеттингдисплайвалуетипе|Строка|Отображаемый тип значения этого параметра групповой политики.|
+|сеттингвалуедисплайунитс|Строка|Отображаемые единицы значения параметра групповой политики|
+|сеттингкатегори|Строка|Категория, в которой находится параметр групповой политики.|
+|мдмкспнаме|Строка|Имя CSP, которое сопоставляется параметру групповой политики.|
+|мдмсеттингури|Строка|Универсальный код ресурса (URI) MDM CSP, которому соответствует этот параметр групповой политики.|
 |мдмминимумосверсион|Int32|Минимальная версия ОС, поддерживаемая параметром MDM.|
 |сеттингтипе|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|Тип параметра (Security или ADMX) групповой политики. Возможные значения: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
 |исмдмсуппортед|Boolean|Указывает, поддерживается ли Intune или нет|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Указывает, поддерживается ли параметр в MDM. Возможные значения: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |сеттингскопе|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Область применения параметра. Возможные значения: `unknown`, `device`, `user`.|
-|интунесеттингурилист|Коллекция объектов string|Список URI параметров Intune, которые сопоставлены параметру групповой политики|
-|интунесеттингдефинитионид|String|Идентификатор определения параметра Intune|
+|интунесеттингурилист|Коллекция String|Список URI параметров Intune, которые сопоставлены параметру групповой политики|
+|интунесеттингдефинитионид|Строка|Идентификатор определения параметра Intune|
+|адмкссеттингдефинитионид|Строка|Идентификатор групповой политики ADMX|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -86,7 +87,7 @@ POST /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}/groupPolicySettingMappings
 Content-type: application/json
-Content-length: 957
+Content-length: 1023
 
 {
   "@odata.type": "#microsoft.graph.groupPolicySettingMapping",
@@ -112,7 +113,8 @@ Content-length: 957
   "intuneSettingUriList": [
     "Intune Setting Uri List value"
   ],
-  "intuneSettingDefinitionId": "Intune Setting Definition Id value"
+  "intuneSettingDefinitionId": "Intune Setting Definition Id value",
+  "admxSettingDefinitionId": "Admx Setting Definition Id value"
 }
 ```
 
@@ -121,7 +123,7 @@ Content-length: 957
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1006
+Content-Length: 1072
 
 {
   "@odata.type": "#microsoft.graph.groupPolicySettingMapping",
@@ -148,9 +150,13 @@ Content-Length: 1006
   "intuneSettingUriList": [
     "Intune Setting Uri List value"
   ],
-  "intuneSettingDefinitionId": "Intune Setting Definition Id value"
+  "intuneSettingDefinitionId": "Intune Setting Definition Id value",
+  "admxSettingDefinitionId": "Admx Setting Definition Id value"
 }
 ```
+
+
+
 
 
 

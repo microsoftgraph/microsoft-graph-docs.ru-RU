@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: fb17d6df2649db901ca80f6f8399b3a19b1d384d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 54677953cbad7be5e0f7221dc82e23f0593c31dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452759"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042963"
 ---
 # <a name="tablecolumn-delete"></a>TableColumn: delete
 
@@ -24,7 +24,7 @@ ms.locfileid: "42452759"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite    |
+|Делегированное (рабочая или учебная учетная запись) | Files.ReadWrite    |
 |Делегированные (личная учетная запись Майкрософт) | Files.ReadWrite    |
 |Для приложений | Не поддерживается. |
 
@@ -59,7 +59,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/delete
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/delete
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
@@ -82,3 +82,5 @@ HTTP/1.1 200 OK
   "suppressions": []
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: Создание Девицеманажементтемплатесетт
 description: Создание нового объекта Девицеманажементтемплатесеттингкатегори.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5550c696b9b8b039f913fcb4843f9858b8f21a74
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 74ae0fbca0b6f45e2b6a797d5c31682de11dda75
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43427475"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043432"
 ---
 # <a name="create-devicemanagementtemplatesettingcategory"></a>Создание Девицеманажементтемплатесеттингкатегори
 
@@ -43,7 +43,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,13 +53,13 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор категории, наследуемый от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
+|id|Строка|Идентификатор категории, наследуемый от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |displayName|Строка|Имя категории, унаследованное от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 |хасрекуиредсеттинг|Boolean|Категория содержит обязательный параметр верхнего уровня, наследуемого от [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементтемплатесеттингкатегори](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -92,6 +92,9 @@ Content-Length: 201
   "hasRequiredSetting": true
 }
 ```
+
+
+
 
 
 

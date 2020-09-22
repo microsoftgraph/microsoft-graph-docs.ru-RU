@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8b02445288e0aa1df3822cabf895af539f8445f8
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 35d873a4019719ceee0557e22cdf52f37267281d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44215936"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044041"
 ---
 # <a name="get-timeoffrequest"></a>Получение Тимеоффрекуест
 
@@ -48,11 +48,11 @@ GET /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [тимеоффрекуест](../resources/timeoffrequest.md) в тексте отклика.
 
@@ -125,3 +125,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

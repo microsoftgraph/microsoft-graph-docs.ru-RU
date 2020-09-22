@@ -3,14 +3,14 @@ title: Действие setPriority
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2359a15c48e089e0a26ea6584a44d4dd0b025090
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3145c030001ad2dbe8a166edcdd442ca076e471a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43320318"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043418"
 ---
 # <a name="setpriority-action"></a>Действие setPriority
 
@@ -43,7 +43,7 @@ POST /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedE
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedE
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|priority|Int32|Н/Д|
+|priority|Int32|Пока не задокументировано.|
 
 
 
@@ -80,6 +80,9 @@ Content-length: 21
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

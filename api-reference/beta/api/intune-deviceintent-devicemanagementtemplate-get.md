@@ -3,14 +3,14 @@ title: Получение Девицеманажементтемплате
 description: Чтение свойств и связей объекта Девицеманажементтемплате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 34dc094d6b14a2d0b95273d90f8e96bff74f8312
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: b10e6f9f685d2f77f0412dc4c846c32d2236367d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177207"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043516"
 ---
 # <a name="get-devicemanagementtemplate"></a>Получение Девицеманажементтемплате
 
@@ -53,7 +53,7 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devic
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -87,6 +87,9 @@ Content-Length: 495
   }
 }
 ```
+
+
+
 
 
 

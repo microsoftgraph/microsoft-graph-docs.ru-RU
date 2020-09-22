@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: dc1e1f8242072be9b0db8a03849d1fa9c5355411
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 2ba08b47fca02c67c3d55762747b010bf4b77ad6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674535"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043003"
 ---
 # <a name="list-printconnectors"></a>Список Принтконнекторс
 
@@ -48,7 +48,7 @@ GET /print/connectors
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [принтконнектор](../resources/printconnector.md) в тексте отклика.
@@ -147,3 +147,5 @@ Content-length: 1289
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

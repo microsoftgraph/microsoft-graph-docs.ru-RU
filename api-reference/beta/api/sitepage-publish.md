@@ -6,12 +6,12 @@ title: Страница публикации
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 90d08b3f8fae2ed186d1809b4318eec7ef9cf5dc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e40f864ce224916a2c60e5c82e0aecbfff213fbc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42453172"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044384"
 ---
 # <a name="sitepage-publish"></a>Ситепаже: публикация
 
@@ -41,7 +41,7 @@ ms.locfileid: "42453172"
 POST /sites/{siteId}/pages/{pageId}/publish
 ```
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 У этого сообщения нет текста запроса. Любой Отправленный текст запроса будет игнорироваться.
 
@@ -66,3 +66,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

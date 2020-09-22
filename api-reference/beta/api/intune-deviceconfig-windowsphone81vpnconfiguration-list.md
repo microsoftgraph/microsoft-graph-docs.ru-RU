@@ -3,14 +3,14 @@ title: Список windowsPhone81VpnConfigurations
 description: Список свойств и связей объектов windowsPhone81VpnConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3bff213dcea025d9a7162b3bdf97bc6bccc520be
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9f91239403e1a7523d0ebe30dad65d40d49fd512
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43429035"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043523"
 ---
 # <a name="list-windowsphone81vpnconfigurations"></a>Список windowsPhone81VpnConfigurations
 
@@ -44,13 +44,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [windowsPhone81VpnConfiguration](../resources/intune-deviceconfig-windowsphone81vpnconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -136,6 +136,9 @@ Content-Length: 2465
   ]
 }
 ```
+
+
+
 
 
 

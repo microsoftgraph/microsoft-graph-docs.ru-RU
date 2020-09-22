@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SumitParikh
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 57a4aade0a154fe08b5573cb814b5146aafee602
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1ad3e5c16de0462127589b99c14a498cb2bbc005
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43318576"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044356"
 ---
 # <a name="list-subscribedskus"></a>Список объектов SubscribedSku
 
@@ -37,7 +37,7 @@ GET /subscribedSkus
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает [параметры запросов OData](/graph//query-parameters) для настройки отклика (`$filter` не поддерживается).
+Этот метод не поддерживает [параметры запросов OData](/graph//query-parameters) для настройки отклика ( `$filter` не поддерживается).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -128,3 +128,5 @@ Content-length: 547
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: ed01bed30f1175836ac40be412a9621545360e9f
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 254e164234378eb59aa0add3cbbf73588883872e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872896"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042851"
 ---
 # <a name="list-user-transitive-memberof"></a>Перечисление user transitive memberOf
 
@@ -47,7 +47,7 @@ GET /users/{id | userPrincipalName}/transitiveMemberOf
 | Заголовок | Значение |
 |:------ |:----- |
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| ConsistencyLevel | необязательный. Этот заголовок и `$count` при использовании `$search` `$filter` `$orderby` параметров запроса на приведение,, или OData. Он использует индекс, который может не быть актуальным с последними изменениями объекта. |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`, `$filter`, `$orderby` или с параметрами запросов OData cast. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -175,7 +175,7 @@ Content-type: text/plain
 893
 
 
-### <a name="example-3-use-odata-cast-to-get-only-a-count-of-transitive-membership-in-groups"></a>Пример 3: Использование приведения OData для получения только счетчика транзитивного членства в группах
+### <a name="example-3-use-odata-cast-to-get-only-a-count-of-transitive-membership-in-groups"></a>Пример 3. Использование OData cast для получения только количества транзитивных участников в группах
 
 #### <a name="request"></a>Запрос
 
@@ -208,7 +208,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -356,3 +356,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

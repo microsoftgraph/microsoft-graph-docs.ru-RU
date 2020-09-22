@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 27e4708f52a0bbe0966de11fa83a26d5f2a011a9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b39a16ad13acb36759406b15ae4a8e922e936490
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452647"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042907"
 ---
 # <a name="tablesort-apply"></a>TableSort: apply
 
@@ -41,7 +41,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -126,3 +126,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: conceptualPageType
-ms.openlocfilehash: 62872c07dcf8072a9a5e471c53950a0b77b96814
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3b33a673218238f861e7122de8320d6c8a20e435
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507791"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042732"
 ---
 # <a name="ivr-scenarios-in-calls"></a>Сценарии IVR в вызовах
 
@@ -24,3 +24,5 @@ ms.locfileid: "42507791"
 - Запись ответа, например, для записи звука вызывающего абонента, как правило, после того, как он слышал приглашение с параметрами.
 - Подписываться на звуки, например, если вы хотите узнать, какие звуки DTMF выбрал абонент, обычно после проявления звукового приглашения.
 - Отмена обработки мультимедиа — например, если вы хотите отменить все операции Плайпромпт или Рекордреспонсе, которые могут быть в процессе выполнения.
+
+

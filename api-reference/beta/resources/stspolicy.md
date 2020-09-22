@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 56686d3e2e61a74acabd54218c30d27abb341748
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 911c790ab08487428ff04e93508f4f62ab657aa7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917476"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044209"
 ---
 # <a name="stspolicy-resource-type"></a>Тип ресурса Стсполици
 
@@ -22,7 +22,7 @@ ms.locfileid: "43917476"
 
 Наследуется от [основы](policyBase.md).
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 
 Нет
 
@@ -30,10 +30,10 @@ ms.locfileid: "43917476"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String| Уникальный идентификатор для этой политики. Только для чтения. Наследуется от [основы](policyBase.md).|
+|id|Строка| Уникальный идентификатор для этой политики. Только для чтения. Наследуется от [основы](policyBase.md).|
 |description|String| Описание для этой политики. Наследуется от [основы](policyBase.md).|
 |displayName|Строка| Отображаемое имя для этой политики. Наследуется от [основы](policyBase.md).|
-|RDLC|Коллекция объектов string| Коллекция String, содержащая строку JSON, определяющую правила и параметры политики. Синтаксис определения отличается для каждого производного типа политики. Обязательный.|
+|RDLC|Коллекция String| Коллекция String, содержащая строку JSON, определяющую правила и параметры политики. Синтаксис определения отличается для каждого производного типа политики. Обязательный.|
 |исорганизатиондефаулт|Boolean|Если задано значение true, активируется эта политика. Для одного и того же типа политики может быть задано несколько политик, но только одна из них может быть активирована в качестве организации по умолчанию. Необязательное значение по умолчанию — false.|
 
 ## <a name="relationships"></a>Связи
@@ -73,3 +73,5 @@ ms.locfileid: "43917476"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

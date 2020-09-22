@@ -5,18 +5,18 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0a216938f99d03bcc15e8b46ef64eee8a91cfd60
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4063dc980137a2959cce6cd8fc379bb6646c9f53
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471871"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044167"
 ---
 # <a name="get-calendar"></a>Вывод календаря
 
 Пространство имен: microsoft.graph
 
-Получение свойств и связей объекта [calendar](../resources/calendar.md). Это может быть календарь для ресурса [user](../resources/user.md) или стандартный календарь для ресурса [group](../resources/group.md), представляющего группу Office 365.
+Получение свойств и связей объекта [calendar](../resources/calendar.md). Это может быть календарь для [пользователя](../resources/user.md) или стандартный календарь для [группы](../resources/group.md) Microsoft 365.
 
 Существует два сценария, в которых приложение может получить календарь другого пользователя:
 
@@ -141,3 +141,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

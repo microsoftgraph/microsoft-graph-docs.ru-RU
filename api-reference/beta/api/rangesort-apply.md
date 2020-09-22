@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 47e9b8d00572edec1feb956686983cdf8972573b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9ed84d1224aa1096ff22cfe0230c9b441a1ef048
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42454558"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042982"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -42,7 +42,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -131,3 +131,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

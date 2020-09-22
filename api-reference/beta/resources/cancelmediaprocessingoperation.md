@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 700c63b2b620117f25df876544aeb6fb0e6d0230
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b1f74ba825bdd953803c3458882cbae051fae970
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507784"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042718"
 ---
 # <a name="cancelmediaprocessingoperation-resource-type"></a>Тип ресурса Канцелмедиапроцессингоператион
 
@@ -25,7 +25,7 @@ ms.locfileid: "42507784"
 | Свойство                       | Тип                        | Описание                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | ко                            | Boolean                     | Указывает, следует ли остановить все операции или текущие.                                                                                    |
-| Контекст                  | String                      | Контекст клиента.                                                                                                                               |
+| Контекст                  | Строка                      | Контекст клиента.                                                                                                                               |
 | id                             | Строка                      | ИДЕНТИФИКАТОР операции сервера. Только для чтения.                                                                                              |
 | resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения.                                                                                              |
 | status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения.                                                  |
@@ -63,3 +63,5 @@ ms.locfileid: "42507784"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

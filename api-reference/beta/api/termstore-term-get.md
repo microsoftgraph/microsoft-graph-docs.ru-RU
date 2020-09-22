@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 5d154606c4f3581f0c5136ebd04d863185cf1721
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 7c597716e16e3b0f303f487f7d116c2923b4ef58
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330164"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48044260"
 ---
 # <a name="get-term"></a>Получение термина
 Пространство имен: Microsoft. Graph. банка
@@ -48,7 +48,7 @@ GET /termStore/sets/{setId}/terms/{termId}
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -123,4 +123,6 @@ Content-Type: application/json
   ]
 }
 -->
+
+
 

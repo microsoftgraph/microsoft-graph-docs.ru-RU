@@ -3,14 +3,14 @@ title: Список Импортедаппледевицеидентитирес
 description: Список свойств и связей объектов Импортедаппледевицеидентитиресулт.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 631708e7b85bcc6a3e75f00582fe5ec91a1afca9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0046422fda96e75e7fdfb0a62dc2f5a68659654c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451142"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043390"
 ---
 # <a name="list-importedappledeviceidentityresults"></a>Список Импортедаппледевицеидентитиресултс
 
@@ -46,10 +46,10 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedApp
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [импортедаппледевицеидентитиресулт](../resources/intune-enrollment-importedappledeviceidentityresult.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -88,6 +88,9 @@ Content-Length: 741
   ]
 }
 ```
+
+
+
 
 
 

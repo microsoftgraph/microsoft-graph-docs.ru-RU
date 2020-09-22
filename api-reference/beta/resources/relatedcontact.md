@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 7eb8f39c30343412584e63fa1e8c3382db4fa9c6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 66c4329b6c81d3bad38583ccf963bb4c6bb08f50
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521189"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042410"
 ---
 # <a name="relatedcontact-resource-type"></a>Тип ресурса Релатедконтакт
 
@@ -28,7 +28,7 @@ ms.locfileid: "42521189"
 | displayName   | Строка                | Имя контакта. Обязательный.                                                                                      |
 | emailAddress  | String                | Основной адрес электронной почты контакта.                                                                               |
 | mobilePhone   | String                | Номер мобильного телефона контакта.                                                                                 |
-| Отношение  | `contactRelationship` | Отношение к пользователю. Возможные значения: `parent`, `relative`, `aide`, `doctor` `guardian`,, `child`, `other`. |
+| Отношение  | `contactRelationship` | Отношение к пользователю. Возможные значения: `parent` ,,,,, `relative` `aide` `doctor` `guardian` `child` , `other` . |
 | акцессконсент | Boolean               | Указывает, было ли пользователь отправлен для доступа к данным учащихся.                                               |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -67,3 +67,5 @@ ms.locfileid: "42521189"
   ]
 }
 -->
+
+
