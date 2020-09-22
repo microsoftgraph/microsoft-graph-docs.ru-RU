@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: b1643e442a657edcda924db4d10ebc0212425d48
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b9e702eb9926c22eee9c31e81084757e9df074fa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502755"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055672"
 ---
 # <a name="educationassignmentclassrecipient-resource-type"></a>Тип ресурса ЕдукатионассигнментклассреЦипиент
 
@@ -24,7 +24,7 @@ ms.locfileid: "42502755"
 
 ## <a name="properties"></a>Свойства
 
-Нет.
+Нет
 
 
 <!-- {
@@ -53,3 +53,5 @@ ms.locfileid: "42502755"
   "suppressions": []
 }
 -->
+
+

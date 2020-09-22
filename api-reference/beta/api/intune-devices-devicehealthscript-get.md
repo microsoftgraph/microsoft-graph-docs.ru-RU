@@ -3,14 +3,14 @@ title: Получение Девицехеалсскрипт
 description: Чтение свойств и связей объекта Девицехеалсскрипт.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0b4e764893d8944971c0ceff8b9fbc647bf8958a
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 14d1ddaa3916fc38445fa01d61cc1bcb7efbc0ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177039"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056165"
 ---
 # <a name="get-devicehealthscript"></a>Получение Девицехеалсскрипт
 
@@ -52,7 +52,7 @@ GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -113,6 +113,9 @@ Content-Length: 1488
   }
 }
 ```
+
+
+
 
 
 

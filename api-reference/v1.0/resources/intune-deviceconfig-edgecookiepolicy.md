@@ -3,14 +3,14 @@ title: тип перечисления Еджекукиеполици
 description: Возможные значения, указывающие, какие файлы cookie разрешено использовать в Microsoft Edge.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 10b79695d9604e91b2caf3146cb03d4ff9159e37
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 185cc64a49ba069c813730af571fccf76bac58d6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43465675"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056802"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>тип перечисления Еджекукиеполици
 
@@ -27,6 +27,8 @@ ms.locfileid: "43465675"
 |разрешить|1 |Разрешить.|
 |блокксирдпарти|2 |Блокировать только сторонние файлы cookie.|
 |блоккалл|4|Блокировать все файлы cookie.|
+
+
 
 
 

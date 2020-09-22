@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: fc3de6363784f62792d7c4e56906c79ed1be0c69
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9e4470d1ce22f5ffbf3c805adc5328398d57d9fe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531767"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056926"
 ---
 #  <a name="controlscore-resource-type"></a>Тип ресурса Контролскоре
 
@@ -57,3 +57,4 @@ ms.locfileid: "42531767"
   "section": "documentation",
   "tocPath": ""
 }-->
+

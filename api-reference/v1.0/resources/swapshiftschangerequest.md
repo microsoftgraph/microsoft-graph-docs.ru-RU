@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5a3902669028a26abdb8d88e09334ccefe414d42
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 3a18b3627aec777bf95ece65cd26a170d6f98ad7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154972"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056445"
 ---
 # <a name="swapshiftschangerequest-resource-type"></a>Тип ресурса Свапшифтсчанжерекуест
 
@@ -22,7 +22,7 @@ ms.locfileid: "44154972"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [List](../api/swapshiftschangerequest-list.md) | Коллекция [свапшифтсчанжерекуест](swapshiftschangerequest.md) | Перечисление свойств и связей объектов **свапшифтсчанжерекуест** в команде. |
+| [Список](../api/swapshiftschangerequest-list.md) | Коллекция [свапшифтсчанжерекуест](swapshiftschangerequest.md) | Перечисление свойств и связей объектов **свапшифтсчанжерекуест** в команде. |
 | [создание](../api/swapshiftschangerequest-post.md); | [свапшифтсчанжерекуест](swapshiftschangerequest.md) | Создайте экземпляр объекта **свапшифтсчанжерекуест** . |
 | [получение](../api/swapshiftschangerequest-get.md); | [свапшифтсчанжерекуест](swapshiftschangerequest.md) | Чтение свойств и связей объекта **свапшифтсчанжерекуест** . |
 |[Утвердить](../api/swapshiftschangerequest-approve.md)|Нет|Утверждение **свапшифтсчанжерекуест**. |
@@ -32,7 +32,7 @@ ms.locfileid: "44154972"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|реЦипиентшифтид|Строка|Шифтид для пользователя получателя, с которым отправляется запрос.|
+|реЦипиентшифтид|String|Шифтид для пользователя получателя, с которым отправляется запрос.|
 
 ## <a name="relationships"></a>Связи
 
@@ -66,3 +66,4 @@ ms.locfileid: "44154972"
   "section": "documentation",
   "tocPath": ""
 }-->
+

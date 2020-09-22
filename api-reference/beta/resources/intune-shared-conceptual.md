@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 06be7eefad204f0cef73d8c0d16d70159f9142db
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 60588a0c9a2714da80c0d5e24b4300146e3b1556
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793761"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055430"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
@@ -73,13 +73,14 @@ ms.locfileid: "44793761"
 - [Тип владельца](intune-shared-ownertype.md)
 - [Тип платформы политики](intune-shared-policyplatformtype.md)
 - [Проксируемый домен](intune-shared-proxieddomain.md)
-- [Report](intune-shared-report.md)
+- [Отчет](intune-shared-report.md)
 - [Корневая папка отчета](intune-shared-reportroot.md)
 - [Итоговое состояние приложения](intune-shared-resultantappstate.md)
 - [Цвет RGB](intune-shared-rgbcolor.md)
 - [Тип учетной записи, от имени которой запускается приложение](intune-shared-runasaccounttype.md)
 - [Состояние выполнения](intune-shared-runstate.md)
 - [Сохраненные параметры создания состояния пользовательского интерфейса](intune-shared-saveduistategenerationoptions.md)
+- [Настройка типа источника](intune-shared-settingsourcetype.md)
 - [Целевая конфигурация управляемых приложений](intune-shared-targetedmanagedappconfiguration.md)
 - [URI](intune-shared-uri.md)
 - [User](intune-shared-user.md)
@@ -94,3 +95,5 @@ ms.locfileid: "44793761"
 - [Конфигурация присоединения к домену Windows](intune-shared-windowsdomainjoinconfiguration.md)
 - [Настройки назначения универсального приложения Windows AppX](intune-shared-windowsuniversalappxappassignmentsettings.md)
 - [Состояние центра обновления Windows](intune-shared-windowsupdatestate.md)
+
+

@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 0dc276aa7c4b1e996f9c36cf5dcbf587964cc4d7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1815f00f4f402433c6854b32d1f4734c95a372de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449488"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056991"
 ---
 # <a name="contact-resource-type"></a>Тип ресурса contact
 
@@ -197,3 +197,4 @@ ms.locfileid: "43449488"
   "section": "documentation",
   "tocPath": ""
 }-->
+

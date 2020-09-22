@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 2d93bba585393b11cdb0adc573a8fed5b895ed6a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 46f68833487f6b542569a1b042daeed836c13053
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42500011"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055577"
 ---
 # <a name="educationterm-resource-type"></a>Тип ресурса educationTerm
 
@@ -25,10 +25,10 @@ ms.locfileid: "42500011"
 |:---------------|:--------|:----------|
 |displayName| String| Отображаемое имя срока.| 
 |externalId|String| Идентификатор срока в системе синхронизации.|
-|startDate|Дата|Начало срока.|
+|startDate|Date|Начало срока.|
 |endDate|Date|Конец срока.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -61,3 +61,5 @@ ms.locfileid: "42500011"
   "suppressions": []
 }
 -->
+
+

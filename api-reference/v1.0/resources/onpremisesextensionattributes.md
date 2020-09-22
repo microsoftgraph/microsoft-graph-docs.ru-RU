@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 84929229c18b905ff66b4a1bbbbf765771180a06
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 218bf0db4b615072ed3292311a26033279b1d803
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44864093"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056438"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>Тип ресурса onPremisesExtensionAttributes
 
@@ -23,7 +23,7 @@ ms.locfileid: "44864093"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|От extensionattribute1|String| Первый настраиваемый атрибут расширения. |
+|extensionAttribute1|String| Первый настраиваемый атрибут расширения. |
 |extensionAttribute2|String| Второй настраиваемый атрибут расширения. |
 |extensionAttribute3|String| Третий настраиваемый атрибут расширения. |
 |extensionAttribute4|String| Четвертый настраиваемый атрибут расширения. |
@@ -83,3 +83,4 @@ ms.locfileid: "44864093"
   "section": "documentation",
   "tocPath": ""
 }-->
+

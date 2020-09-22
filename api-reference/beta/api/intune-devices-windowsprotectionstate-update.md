@@ -3,14 +3,14 @@ title: Обновление windowsProtectionState
 description: Обновление свойств объекта windowsProtectionState.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 593ba645ef109742c295c3f45bb2c2e4d3af3be6
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 655a26c781dfa5badbd4c672579326e2a77079d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790555"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056088"
 ---
 # <a name="update-windowsprotectionstate"></a>Обновление windowsProtectionState
 
@@ -29,7 +29,7 @@ ms.locfileid: "46790555"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -54,15 +54,15 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для объекта состояния защиты устройства. Это идентификатор устройства для устройства.|
-|малварепротектионенаблед|Логический|Защита от вредоносных программ включена или нет|
+|малварепротектионенаблед|Boolean|Защита от вредоносных программ включена или нет|
 |девицестате|[виндовсдевицехеалсстате](../resources/intune-devices-windowsdevicehealthstate.md)|Состояние компьютера (например, очистка или ожидание полного сканирования или Ожидание перезагрузки и т. д.). Возможные значения: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
-|реалтимепротектионенаблед|Логический|Защита в режиме реального времени включена или нет?|
-|нетворкинспектионсистеменаблед|Логический|Система проверки сети включена или нет?|
-|куиккскановердуе|Логический|Быстрая проверка просрочена или нет?|
-|фуллскановердуе|Логический|Полная проверка просрочена или нет?|
-|сигнатуреупдатеовердуе|Логический|Подпись устарела или нет?|
-|ребутрекуиред|Логический|Требуется перезагрузка или нет?|
-|фуллсканрекуиред|Логический|Необходима полная проверка или нет?|
+|реалтимепротектионенаблед|Boolean|Защита в режиме реального времени включена или нет?|
+|нетворкинспектионсистеменаблед|Boolean|Система проверки сети включена или нет?|
+|куиккскановердуе|Boolean|Быстрая проверка просрочена или нет?|
+|фуллскановердуе|Boolean|Полная проверка просрочена или нет?|
+|сигнатуреупдатеовердуе|Boolean|Подпись устарела или нет?|
+|ребутрекуиред|Boolean|Требуется перезагрузка или нет?|
+|фуллсканрекуиред|Boolean|Необходима полная проверка или нет?|
 |енгиневерсион|String|Текущая версия модуля Endpoint Protection|
 |сигнатуреверсион|String|Текущая версия определений вредоносных программ|
 |антималвареверсион|String|Текущая версия защиты от вредоносных программ|
@@ -74,7 +74,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -137,6 +137,9 @@ Content-Length: 914
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
+
+
+
 
 
 

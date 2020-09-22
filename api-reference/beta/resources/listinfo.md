@@ -6,12 +6,12 @@ title: ListInfo
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 3a066505348b1a1014b27ca3c83e0ee2f97f41a5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5f36e7f08d8a5ce29316e97ff8f03f14063a4d36
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522955"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055290"
 ---
 # <a name="listinfo-resource"></a>Ресурс listInfo
 
@@ -23,7 +23,7 @@ ms.locfileid: "42522955"
 
 [списке]: list.md
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -68,3 +68,5 @@ ms.locfileid: "42522955"
   "suppressions": []
 }
 -->
+
+

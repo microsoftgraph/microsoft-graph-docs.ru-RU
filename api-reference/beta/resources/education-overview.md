@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: conceptualPageType
-ms.openlocfilehash: 2da92b666ee125b91bd2a3782e2dba3f213b593a
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: 6169037891c4f54a75e4cd1f6b07053a099d5766
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909697"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055719"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Работа с интерфейсами API для образования в Microsoft Graph
 
@@ -124,7 +124,7 @@ API управления для School Data Sync поддерживают сле
 
 ## <a name="whats-new"></a>Новые возможности
 
-Узнайте о [последних новых возможностях и обновлениях](/graph/whats-new-overview) для этого набора API.
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
@@ -132,3 +132,5 @@ API управления для School Data Sync поддерживают сле
 
 - Изучите ресурсы и методы, наиболее полезные для вашего сценария.
 - опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
+
+

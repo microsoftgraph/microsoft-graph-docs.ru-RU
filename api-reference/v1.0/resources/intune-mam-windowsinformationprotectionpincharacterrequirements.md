@@ -3,14 +3,14 @@ title: тип перечисления Виндовсинформатионпр�
 description: Требования к ПИН-символам
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cca3f672fd44ee3db0b94715f55e1f2c4c963e83
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a9a177501f3605fd53ee46d2a9166310d4afca07
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468392"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056564"
 ---
 # <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>тип перечисления Виндовсинформатионпротектионпинчарактеррекуирементс
 
@@ -24,8 +24,10 @@ ms.locfileid: "43468392"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notAllow|нуль|Не разрешать|
-|рекуиреатлеастоне|1,1|Требуется хотя бы один|
-|разрешить|2|Разрешить любой номер|
+|рекуиреатлеастоне|1 |Требуется хотя бы один|
+|разрешить|2 |Разрешить любой номер|
+
+
 
 
 

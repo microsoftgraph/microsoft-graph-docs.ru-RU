@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 62ce735d5719ef05c5f96de546adcd5518a72786
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 45d844329688e663c27ef5ecdf94282312baa53d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521231"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055178"
 ---
 # <a name="recordinginfo-resource-type"></a>Тип ресурса Рекордингинфо
 
@@ -25,10 +25,10 @@ ms.locfileid: "42521231"
 | Свойство        | Тип    | Описание|
 |:----------------|:--------|:----------|
 | initiatedBy     | [participantInfo](participantinfo.md) | Участник, который инициировал запись. |
-| рекордингстатус | String | `unknown`Возможные значения: `notRecording`,, `recording`, или. `failed` |
+| рекордингстатус | String | Возможные значения: `unknown` , `notRecording` , `recording` , или `failed` . |
 | initiator | [identitySet](identitySet.md) | Идентификаторы инициатора записи. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -59,3 +59,5 @@ ms.locfileid: "42521231"
   "suppressions": []
 }
 -->
+
+

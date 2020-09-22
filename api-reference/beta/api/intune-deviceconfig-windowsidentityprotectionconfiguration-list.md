@@ -3,14 +3,14 @@ title: Список Виндовсидентитипротектионконфи
 description: Список свойств и связей объектов Виндовсидентитипротектионконфигуратион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 31614275ef74bc5cb4a525034b8ea112354bc716
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 97eca31bf22fd70059c4053a6150ec6c2bb0bd07
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43335488"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056305"
 ---
 # <a name="list-windowsidentityprotectionconfigurations"></a>Список Виндовсидентитипротектионконфигуратионс
 
@@ -47,10 +47,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [виндовсидентитипротектионконфигуратион](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -121,6 +121,9 @@ Content-Length: 1972
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Тип ресурса deviceEnrollmentConfiguration
 description: Базовый класс конфигурации регистрации устройств
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 95d806f2fef3723f89f43cf6b8cf721c224439a6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d7e5c2a1eef152ba613be8909ca80f6040305720
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43356484"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055331"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentConfiguration
 
@@ -31,13 +31,13 @@ ms.locfileid: "43356484"
 |[Действие setPriority](../api/intune-shared-deviceenrollmentconfiguration-setpriority.md)|Нет|Н/Д|
 |[Действие assign](../api/intune-shared-deviceenrollmentconfiguration-assign.md)|Нет|Н/Д|
 |**Набор политик**|
-|[действие Хаспайлоадлинкс](../api/intune-shared-deviceenrollmentconfiguration-haspayloadlinks.md)|Коллекция [хаспайлоадлинкресултитем](../resources/intune-policyset-haspayloadlinkresultitem.md)|Пока не задокументировано|
+|[действие Хаспайлоадлинкс](../api/intune-shared-deviceenrollmentconfiguration-haspayloadlinks.md)|Коллекция [хаспайлоадлинкресултитем](../resources/intune-policyset-haspayloadlinkresultitem.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для учетной записи|
-|displayName|Строка|Отображаемое имя конфигурации регистрации устройств|
+|displayName|String|Отображаемое имя конфигурации регистрации устройств|
 |description|String|Описание конфигурации регистрации устройств|
 |priority|Int32|Priority используется, когда пользователь существует в нескольких группах, которым назначена Настройка регистрации. Пользователи подчиняются только конфигурации с наименьшим значением приоритета.|
 |createdDateTime|DateTimeOffset|Созданная Дата и время в формате UTC для конфигурации регистрации устройств|
@@ -70,6 +70,9 @@ ms.locfileid: "43356484"
   "version": 1024
 }
 ```
+
+
+
 
 
 

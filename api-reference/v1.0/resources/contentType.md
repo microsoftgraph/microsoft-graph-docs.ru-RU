@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс contentType представляет тип контента в SharePoint.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: c05ed39c0f92b209925fc9a722c5562999ae438c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 71652c2e314cd4f86a7bf0a957b1df937aa0d2e3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531780"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056970"
 ---
 # <a name="contenttype-resource-type"></a>Тип ресурса contentType
 
@@ -55,8 +55,8 @@ ms.locfileid: "42531780"
 |:------------------|:---------------------|:----------------------------------
 | **description**   | строка               | Текст с описанием элемента.
 | **group**         | string               | Имя группы, которой принадлежит этот тип контента. Позволяет упорядочить связанные типы контента.
-| **hidden**        | логический              | Указывает, является ли данный тип контента скрытым в меню "Создать" в списке.
-| **id**            | строка               | Уникальный идентификатор типа контента.
+| **hidden**        | boolean              | Указывает, является ли данный тип контента скрытым в меню "Создать" в списке.
+| **id**            | string               | Уникальный идентификатор типа контента.
 | **inheritedFrom** | [itemReference][]    | Если этот тип контента унаследован от другой области (например, сайта), он будет содержать ссылку на элемент, в котором определен тип контента.
 | **name**          | string               | Имя типа контента.
 | **order**         | [contentTypeOrder][] | Указывает порядок, в котором тип контента отображается в пользовательском интерфейсе выбора.
@@ -84,3 +84,4 @@ ms.locfileid: "42531780"
   "section": "documentation",
   "tocPath": "Resources/ContentType"
 } -->
+

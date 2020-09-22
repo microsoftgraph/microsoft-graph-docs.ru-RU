@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: d7e614ac3f706886d893cc3f9cbb61d81d5db3cb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6073a25b909dffb8fb9b5145c3d521d9b3ede955
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502818"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055675"
 ---
 # <a name="educationassignment-resource-type"></a>Тип ресурса educationAssignment
 
@@ -33,8 +33,8 @@ API назначения представлены в пространстве и
 |[Перечисление категорий](../api/educationassignment-list-categories.md) |Коллекция [едукатионкатегори](educationcategory.md)| Получение коллекции объектов **едукатионкатегори** .|
 |[Создание ресурса задания](../api/educationassignment-post-resources.md) |[едукатионассигнментресаурце](educationassignmentresource.md)| Создание нового **едукатионассигнментресаурце** путем публикации в коллекции ресурсов.|
 |[Получение задания](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Чтение свойств и связей объекта **educationAssignment** .|
-|[обновление](../api/educationassignment-update.md). | [educationAssignment](educationassignment.md) |Обновление объекта **educationAssignment** . |
-|[удаление](../api/educationassignment-delete.md); | Нет |Удаление объекта **educationAssignment** . |
+|[Обновление](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |Обновление объекта **educationAssignment** . |
+|[Удаление](../api/educationassignment-delete.md) | Нет |Удаление объекта **educationAssignment** . |
 |[Добавление категорий](../api/educationassignment-add-categories.md) |[едукатионкатегори](educationcategory.md) | Назначьте **едукатионкатегори** , принадлежащую классу, этому назначению.|
 |[Удаление категории](../api/educationassignment-remove-category.md) |Нет| Удаление **едукатионкатегори** , относящегося к классу, из этого назначения.|
 |[Присоединение Rubric](../api/educationassignment-put-rubric.md)|Нет|Присоединение существующего **едукатионрубрик** к этому назначению.|
@@ -55,7 +55,7 @@ API назначения представлены в пространстве и
 |клоседатетиме|DateTimeOffset| Дата, когда назначение будет закрыто для отправки. Это необязательное поле, которое может иметь значение null, если назначение не Алловлатесубмиссионс или Клоседатетиме совпадает с Дуедатетиме. Но если этот параметр указан, то значение Клоседатетиме должно быть больше или равно значению Дуедатетиме. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |createdBy|[identitySet](identityset.md)| Кто создал назначение. |
 |createdDateTime|DateTimeOffset|Время создания назначения.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|displayName|Строка|Имя назначения.|
+|displayName|String|Имя назначения.|
 |dueDateTime|DateTimeOffset|Дата, когда срок назначения студентов.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |снижения|[едукатионассигнментградетипе](educationassignmentgradetype.md)|Как будет выполняться оценка назначения. |
 |выполнен|[itemBody](itembody.md)| Инструкции для назначения.  Вместе с отображаемым именем сообщите слушателю, что нужно сделать. |
@@ -71,7 +71,7 @@ API назначения представлены в пространстве и
 |categories|Коллекция [едукатионкатегори](educationcategory.md)| Если задано, позволяет пользователям легко находить назначения определенного типа.  Только для чтения. Допускается значение null.|
 |Rubric|[едукатионрубрик](educationrubric.md)|Если этот параметр установлен, Rubric подключается к этому назначению.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -118,3 +118,5 @@ API назначения представлены в пространстве и
   "suppressions": []
 }
 -->
+
+

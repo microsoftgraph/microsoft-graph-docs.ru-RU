@@ -6,12 +6,12 @@ title: List
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 861e3c0b90c68ebf7a4a554e94097f790182727e
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 7eae3ca5530b04d004888edf1cfe75e67a83b310
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109049"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055318"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -105,7 +105,7 @@ ms.locfileid: "43109049"
 | Имя свойства            | Тип             | Описание
 |:-------------------------|:-----------------|:-------------------------------
 | **id**                   | string           | Уникальный идентификатор элемента. Только для чтения.
-| **name**                 | string           | Имя элемента.
+| **name**                 | строка           | Имя элемента.
 | **createdBy**            | [identitySet][]  | Удостоверение создателя данного элемента. Только для чтения.
 | **createdDateTime**      | DateTimeOffset   | Дата и время создания элемента. Только для чтения.
 | **description**          | строка           | Текст с описанием элемента.
@@ -150,3 +150,5 @@ ms.locfileid: "43109049"
   "suppressions": []
 }
 -->
+
+

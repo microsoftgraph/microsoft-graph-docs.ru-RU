@@ -3,14 +3,14 @@ title: Тип ресурса edgeSearchEngineCustom
 description: Позволяет ИТ-администраторам устанавливать поисковую систему по умолчанию для устройств под управлением MDM.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 954006e265d774295d593df199e325a4e9f65b4d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 75bce4536f3467452d148824e1383776bba740ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43465654"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056753"
 ---
 # <a name="edgesearchenginecustom-resource-type"></a>Тип ресурса edgeSearchEngineCustom
 
@@ -44,6 +44,8 @@ ms.locfileid: "43465654"
   "edgeSearchEngineOpenSearchXmlUrl": "String"
 }
 ```
+
+
 
 
 

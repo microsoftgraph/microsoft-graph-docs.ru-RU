@@ -1,16 +1,16 @@
 ---
 title: Создание открытого расширения
-description: Создание открытого расширения (объекта openTypeExtension) и добавление настраиваемых свойств
+description: Создание открытого расширения (объекта openTypeExtension) и Добавление настраиваемых свойств
 localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 4331ae8aa655ac0b250f809eeec682451a208026
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: f0449222e9d9694636653f23c0467f6e325d66d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849627"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055892"
 ---
 # <a name="create-open-extension"></a>Создание открытого расширения
 
@@ -18,7 +18,7 @@ ms.locfileid: "46849627"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание открытого расширения[(объекта openTypeExtension)](../resources/opentypeextension.md) и добавление настраиваемых свойств в новый или существующий экземпляр поддерживаемого ресурса.
+Создание открытого расширения (объекта[openTypeExtension](../resources/opentypeextension.md) ) и Добавление настраиваемых свойств в новый или существующий экземпляр поддерживаемого ресурса.
 
 > **Примечание.** Если вы создаете открытые расширения для ресурсов Outlook, см. раздел **Рекомендации, касающиеся Outlook** в статье [Тип ресурса openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).
 
@@ -37,8 +37,8 @@ ms.locfileid: "46849627"
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Не поддерживается | Organization.ReadWrite.All |
 | [contact](../resources/contact.md) (личный контакт) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks. ReadWrite. ALL |
+| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -100,7 +100,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
 
 ## <a name="request-body"></a>Текст запроса
 
-Предоставьте текст JSON [openTypeExtension](../resources/opentypeextension.md)со следующимобязательными парами имя-значение и любыми дополнительными пользовательскими данными. Полезные данные JSON могут относиться к простому типу или представлять собой массив элементов простого типа.
+Предоставьте основной текст JSON объекта [openTypeExtension](../resources/opentypeextension.md)со следующими обязательными парами имя — значение и любыми дополнительными пользовательскими данными. Полезные данные JSON могут относиться к простому типу или представлять собой массив элементов простого типа.
 
 | Имя       | Значение |
 |:---------------|:----------|
@@ -587,3 +587,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

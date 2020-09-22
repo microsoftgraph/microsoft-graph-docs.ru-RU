@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: a3b836eaf503315b4c47d71fce3f308c35dd8aed
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7a9c9cf9323aa24bd50c1f817a1293088e1a4373
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531281"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054772"
 ---
 # <a name="trending-resource-type"></a>Тип ресурса трендов
 
@@ -61,3 +61,4 @@ ms.locfileid: "42531281"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 9aac2e7c37ce33caaaa8d5a69207e451786421a5
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 25117aa82efcd914b588572f0d557139b59ec036
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336337"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056424"
 ---
 # <a name="place-resource-type"></a>размещение типа ресурса
 
@@ -47,12 +47,12 @@ ms.locfileid: "44336337"
 | Свойство       | Тип                                              | Описание |
 |:---------------|:--------------------------------------------------|:--------|
 | address        | [physicalAddress](physicaladdress.md)             | Адрес в почтовом ящике. |
-| displayName    | Строка                                            | Имя, связанное с местом. |
+| displayName    | String                                            | Имя, связанное с местом. |
 | geoCoordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Указывает положение места в широте, долготе и (дополнительно) координатах высоты. |
 | id             | String                                            | Уникальный идентификатор для места. Только для чтения. |
 | phone          | String                                            | Номер телефона для места. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -92,3 +92,4 @@ ms.locfileid: "44336337"
   "section": "documentation",
   "tocPath": ""
 }-->
+

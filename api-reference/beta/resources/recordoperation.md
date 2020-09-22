@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0f34d3367b104ca5c1645ce3d4c95b184dcb6009
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ccf7f4b196866ccc8f038047a29f4b3dabd96642
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521224"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055162"
 ---
 # <a name="recordoperation-resource-type"></a>Тип ресурса Рекордоператион
 
@@ -26,7 +26,7 @@ ms.locfileid: "42521224"
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | Контекст                  | String                      | Уникальная строка контекста клиента. Максимальный лимит — 256 символов.                                                                                                                               |
 | комплетионреасон               | String                      | Возможные значения: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError`, `none`. |
-| id                             | Строка                      | ИДЕНТИФИКАТОР операции сервера. Только для чтения.                                                                                              |
+| id                             | String                      | ИДЕНТИФИКАТОР операции сервера. Только для чтения.                                                                                              |
 | рекордингакцесстокен           | String                      | Маркер доступа, необходимый для получения записи.                                                                                              |
 | рекординглокатион              | String                      | Расположение, в котором находится запись.                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения.                                                                                              |
@@ -70,3 +70,5 @@ ms.locfileid: "42521224"
   "suppressions": []
 }
 -->
+
+

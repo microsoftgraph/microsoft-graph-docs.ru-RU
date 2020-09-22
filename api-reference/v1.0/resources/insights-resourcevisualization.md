@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 2480f55cf0e7ea12d9bfaf31941a943095f62c31
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 93adb5c8dcef2cb7472d2f58385f8c2a779566c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898039"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054821"
 ---
 # <a name="resourcevisualization-resource-type"></a>Тип ресурса ресурсе resourcevisualization
 
@@ -18,7 +18,7 @@ ms.locfileid: "44898039"
 
 Сложный тип, содержащий свойства [оффицеграфинсигхтс](officegraphinsights.md).
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -47,7 +47,7 @@ ms.locfileid: "44898039"
 | -------------         |---------------| -------------|
 | title                 | String        | Текст заголовка элемента.               |
 | type              | String        | Тип мультимедиа элемента. Можно использовать для фильтрации определенного файла на основе определенного типа. Ниже приведены поддерживаемые типы. |
-| mediaType             | String        | Тип мультимедиа элемента. Может использоваться для фильтрации файлов определенного типа на основе поддерживаемых типов MIME MIME для устройства IANA. Обратите внимание, что поддерживаются не все типы MIME мультимедиа. |
+| MediaType             | String        | Тип мультимедиа элемента. Может использоваться для фильтрации файлов определенного типа на основе поддерживаемых типов MIME MIME для устройства IANA. Обратите внимание, что поддерживаются не все типы MIME мультимедиа. |
 | превиевимажеурл       | String        | URL-адрес, ведущая к изображению для предварительного просмотра элемента. |
 | previewText           | String        | Предварительный текст для элемента. |
 | контаинервебурл       | String        | Путь, начинающийся с папки, в которой хранится элемент. |
@@ -82,7 +82,7 @@ ms.locfileid: "44898039"
 - SPSite
 -   Другое
 
-Пример запроса:`https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
+Пример запроса: `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 Примечания: для `spsite` получения допустимых результатов может потребоваться выполнить сортировку по `lastUsed/lastAccessedDateTime` возрастанию.
 
@@ -96,4 +96,5 @@ ms.locfileid: "44898039"
 -   Box
 -   гдриве
 
-Пример запроса:`https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+Пример запроса: `https://graph.microsoft.com/v1.0/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+

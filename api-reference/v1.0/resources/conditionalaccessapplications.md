@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8b09a3531d3734aed67e9ff91fee1d917f76054b
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 5a9794a274b876ba93cc3fdbe14ea7731776daa3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384687"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057047"
 ---
 # <a name="conditionalaccessapplications-resource-type"></a>Тип ресурса Кондитионалакцессаппликатионс
 
@@ -61,3 +61,4 @@ ms.locfileid: "45384687"
   "section": "documentation",
   "tocPath": ""
 }-->
+

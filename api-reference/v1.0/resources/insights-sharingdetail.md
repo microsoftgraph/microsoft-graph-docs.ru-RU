@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: c441dcdc3b743e5bf55786ad1b43bfe2010b01b8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0540ebae50cb766b25daaad6e80d8b3248e79e42
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531289"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054793"
 ---
 # <a name="sharingdetail-resource-type"></a>Тип ресурса Шарингдетаил
 
@@ -46,3 +46,4 @@ ms.locfileid: "42531289"
 | шарингтипе             | String        | Определяет способ предоставления общего доступа к документу, который может быть "ссылка", "вложение", "Группа", "сайт".     |
 | sharedBy                | [insightIdentity](insights-insightidentity.md)      | Пользователь, имеющий общий доступ к документу.  |
 | шарингреференце        | [ресаурцереференце](insights-resourcereference.md)      |  |
+

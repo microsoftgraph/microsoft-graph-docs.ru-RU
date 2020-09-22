@@ -6,12 +6,12 @@ description: Аспект Инкомплетедата указывает, чт�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 5fdf78b0fdb0a34e87296619c477d9f868d0756e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 424a857468473532dc6f2a39c4c13dc94b52406c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531321"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054891"
 ---
 # <a name="incompletedata-resource-type"></a>Тип ресурса Инкомплетедата
 
@@ -46,3 +46,4 @@ ms.locfileid: "42531321"
   "suppressions": []
 }
 -->
+

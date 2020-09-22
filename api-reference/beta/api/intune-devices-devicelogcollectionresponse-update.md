@@ -3,14 +3,14 @@ title: Обновление Девицелогколлектионреспонс
 description: Обновление свойств объекта Девицелогколлектионреспонсе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b24c904783e0ee3c06dc0bccd9670ab73ab432fd
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: de1cc5fefa8961638ad4aebe1517c1918299553f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124307"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056137"
 ---
 # <a name="update-devicelogcollectionresponse"></a>Обновление Девицелогколлектионреспонсе
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор в виде tenantId_deviceId_requestId|
+|id|String|Уникальный идентификатор в виде tenantId_deviceId_requestId|
 |status|String|Состояние запроса на сбор журналов|
 |манажеддевицеид|Guid|Идентификатор устройства|
 |errorCode|Int64|Код ошибки (при наличии). Допустимые значения — 9.22337203685478 E + 18 — 9.22337203685478 E + 18|
@@ -110,6 +110,9 @@ Content-Length: 528
   "size": 1.3333333333333333
 }
 ```
+
+
+
 
 
 

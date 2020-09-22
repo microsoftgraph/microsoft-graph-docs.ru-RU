@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 725cc8e44b47007a8f039f1855ef3cfdf0039d27
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: bba7bb62b863bbe63b4158fe2706985a4a9bb0d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330442"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055748"
 ---
 # <a name="delete-set"></a>Удаление набора
 Пространство имен: Microsoft. Graph. банка
@@ -105,3 +105,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -6,12 +6,12 @@ title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 03f3dae851cf9a23dbe300f834846046dce4de74
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e457840ee55206b47b035ae53127c5bf3e5130c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42522948"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055262"
 ---
 # <a name="listitem-resource"></a>Ресурс ListItem
 
@@ -94,11 +94,11 @@ ms.locfileid: "42522948"
 
 | Имя свойства        | Тип              | Описание
 |:---------------------|:------------------|:----------------------------------
-| id                   | строка            | Уникальный идентификатор элемента. Только для чтения.
+| id                   | string            | Уникальный идентификатор элемента. Только для чтения.
 | name                 | string            | Имя или название элемента.
 | createdBy            | [identitySet][]   | Удостоверение создателя данного элемента. Только для чтения.
 | createdDateTime      | DateTimeOffset    | Дата и время создания элемента. Только для чтения.
-| description          | string            | Текст с описанием элемента.
+| description          | строка            | Текст с описанием элемента.
 | eTag                 | string            | ETag для элемента. Только для чтения.                                                          |
 | lastModifiedBy       | [identitySet][]   | Удостоверение пользователя, который последним изменил данный элемент. Только для чтения.
 | lastModifiedDateTime | DateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.
@@ -143,3 +143,5 @@ ms.locfileid: "42522948"
   "suppressions": []
 }
 -->
+
+

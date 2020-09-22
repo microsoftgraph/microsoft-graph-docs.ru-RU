@@ -5,12 +5,12 @@ localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: reports
 doc_type: conceptualPageType
-ms.openlocfilehash: 5f26498a0837993fc052cb536acd8bcd08f77ee1
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: f3c1ccd2700bce7a054cfec8fed943c01a3f4a1c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896912"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055549"
 ---
 # <a name="email-activity-reports"></a>Отчеты о работе с электронной почтой
 
@@ -29,3 +29,5 @@ ms.locfileid: "44896912"
 | [Получение сведений о пользователях](../api/reportroot-getemailactivityuserdetail.md) | Stream          | [емаилактивитюсердетаил](../resources/emailactivityuserdetail.md) | Узнайте, какие действия пользователи выполняли с электронной почтой. |
 | [Получение количества действий](../api/reportroot-getemailactivitycounts.md) | Stream          | [емаилактивитисуммари](../resources/emailactivitysummary.md) | Позволяет понять динамику работы с электронной почтой (сколько писем было отправлено, прочитано и получено) в организации. |
 | [Получение количества пользователей](../api/reportroot-getemailactivityusercounts.md) | Stream          | [емаилактивитисуммари](../resources/emailactivitysummary.md) | Позволяет понять, как меняется количество уникальных пользователей, которые отправляют, читают и получают письма. |
+
+

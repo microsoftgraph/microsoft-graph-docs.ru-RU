@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Recipients
-description: Ниже показано представление JSON ресурса.
+description: Ниже представлено описание ресурса в формате JSON.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: MSGraphDocsVteam
-ms.openlocfilehash: 090a52d44976797d2c6ef9f95847da2a652c1bde
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 3a8879e677ccc59aee47f0ab7e4c6a0e92d5562b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811989"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055192"
 ---
 # <a name="recipients-resource-type"></a>Тип ресурса Recipients
 
@@ -59,3 +59,5 @@ ms.locfileid: "46811989"
   "suppressions": []
 }
 -->
+
+

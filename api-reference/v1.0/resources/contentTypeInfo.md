@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс contentTypeInfo указывает тип контента элемента в SharePoint.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: d39f6e797b084cd3b263cbf4f1ccda6778664914
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 7ad6cfebb54c2fbf9628847a7617f72704af14c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863819"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056949"
 ---
 # <a name="contenttypeinfo-resource-type"></a>Тип ресурса contentTypeInfo
 
@@ -36,7 +36,7 @@ ms.locfileid: "44863819"
 
 | Имя свойства     | Тип    | Описание
 |:------------------|:--------|:----------------------------------------------------
-| **id**            | строка  | Идентификатор типа контента.
+| **id**            | string  | Идентификатор типа контента.
 | **name**       | string  | Имя типа контента.
 
 <!-- {
@@ -46,3 +46,4 @@ ms.locfileid: "44863819"
   "section": "documentation",
   "tocPath": "Resources/ContentTypeInfo"
 } -->
+

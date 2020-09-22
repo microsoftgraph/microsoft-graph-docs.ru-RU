@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: ccacf02184bbf54e49949d7671d34dde93b3859f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2f19f5e02ae26281a5ac1b2b48498a426f976e8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502825"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055671"
 ---
 # <a name="educationalactivitydetail-resource-type"></a>Тип ресурса Едукатионалактивитидетаил
 
@@ -26,15 +26,15 @@ ms.locfileid: "42502825"
 |:-------------|:------------|:--------------------------------------------------------------|
 |Аббревиатура  |String       |Сокращенное название степени или программы (пример: "доктор", "МБА")    |
 |activities    |String       |Действия факультативных, выполняемые вместе с программой.   |
-|Награды        |String       |Любые награды или соблюдаются, связанные с программой.              |
-|description   |Строка       |Краткое описание программы, предоставленной пользователем.         |
-|displayName   |Строка       |Длинное имя программы, предоставленной пользователем.      |
+|awards        |String       |Любые награды или соблюдаются, связанные с программой.              |
+|description   |String       |Краткое описание программы, предоставленной пользователем.         |
+|displayName   |String       |Длинное имя программы, предоставленной пользователем.      |
 |фиелдсофстуди |String       |Основной и дополнительный номера, связанные с программой. (если это необходимо) |
 |оценка         |String       |Конечный уровень, класс, GPA или оценка.                          |
 |notes         |String       |Дополнительные примечания, предоставленные пользователем.                        |
 |webUrl        |String       |Ссылка на страницу "степень" или "программа".                            |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -70,3 +70,4 @@ ms.locfileid: "42502825"
   "section": "documentation",
   "tocPath": ""
 }-->
+

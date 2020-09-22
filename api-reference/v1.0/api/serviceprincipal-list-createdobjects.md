@@ -1,18 +1,18 @@
 ---
-title: 'servicePrincipal: List createdObjects'
+title: 'servicePrincipal: Перечисление createdObjects'
 description: Получение списка объектов directoryobject.
 localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: b3267b4234b6bf759458474e73bfc93027245b69
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: a82dd7c2d4e3c108c14f269645b67cbaa23984a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383989"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054982"
 ---
-# <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: List createdObjects
+# <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: Перечисление createdObjects
 
 Пространство имен: microsoft.graph
 
@@ -23,9 +23,9 @@ ms.locfileid: "44383989"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+|Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -117,3 +117,4 @@ Content-length: 55
   ]
 }
 -->
+

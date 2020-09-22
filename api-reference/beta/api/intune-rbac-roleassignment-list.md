@@ -3,14 +3,14 @@ title: Список объектов roleAssignment
 description: Список свойств и связей объектов roleAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 39b7c379c7c5c764732e2c5d24f62f0b236bded9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fd12b7aa8dd1c59766dba7557c4c1c6e4d29b0bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420930"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056018"
 ---
 # <a name="list-roleassignments"></a>Список объектов roleAssignment
 
@@ -46,10 +46,10 @@ GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [roleAssignment](../resources/intune-rbac-roleassignment.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -85,6 +85,9 @@ Content-Length: 403
   ]
 }
 ```
+
+
+
 
 
 

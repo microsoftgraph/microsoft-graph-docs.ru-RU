@@ -3,14 +3,14 @@ title: Тип ресурса deviceAndAppManagementAssignmentTarget
 description: Базовый тип для объектов назначения.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4194d5afb7f7c90f658c558d8609badef2d89cfc
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: ec22ad7ff3a7fe12ba77511ce7c9fc40c6bc49ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793495"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055381"
 ---
 # <a name="deviceandappmanagementassignmenttarget-resource-type"></a>Тип ресурса deviceAndAppManagementAssignmentTarget
 
@@ -26,7 +26,7 @@ ms.locfileid: "44793495"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |девицеандаппманажементассигнментфилтерид|String|Идентификатор фильтра для назначения назначения.|
-|девицеандаппманажементассигнментфилтертипе|[девицеандаппманажементассигнментфилтертипе](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|Тип фильтра целевого назначения, например, Exclude или include. Возможные значения: `none`, `include`.|
+|deviceAndAppManagementAssignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|Тип фильтра целевого назначения, например, Exclude или include. Возможные значения: `none`, `include`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -45,6 +45,9 @@ ms.locfileid: "44793495"
   "deviceAndAppManagementAssignmentFilterType": "String"
 }
 ```
+
+
+
 
 
 

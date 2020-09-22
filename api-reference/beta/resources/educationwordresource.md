@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 06b1f097199bbf188c0bc0a538fe471b07cdec91
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 69339b3192a37c286f430a4b65c1aee64a9cbab5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42499948"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055570"
 ---
 # <a name="educationwordresource-resource-type"></a>Тип ресурса Едукатионвордресаурце
 
@@ -26,7 +26,7 @@ ms.locfileid: "42499948"
 |:---------------|:--------|:----------|
 |fileUrl|String|Расположение файла на диске.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -57,3 +57,5 @@ ms.locfileid: "42499948"
   "suppressions": []
 }
 -->
+
+

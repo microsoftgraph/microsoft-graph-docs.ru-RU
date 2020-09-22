@@ -3,14 +3,14 @@ title: Тип ресурса windowsDeviceADAccount
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 15ca8cee40491e46242b2cd63b2839b7aa6ab8ee
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0438eca1de50426307a37f34dedf03b2ce5f7421
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445906"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056585"
 ---
 # <a name="windowsdeviceadaccount-resource-type"></a>Тип ресурса windowsDeviceADAccount
 
@@ -18,7 +18,7 @@ ms.locfileid: "43445906"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Пока не задокументировано.
+Н/Д
 
 
 Наследуется от ресурса [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)
@@ -28,7 +28,7 @@ ms.locfileid: "43445906"
 |:---|:---|:---|
 |password|Строка|Н/Д. Наследуется от [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
 |domainName|String|Н/Д|
-|userName|String|Пока не задокументировано.|
+|userName|String|Н/Д|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -48,6 +48,8 @@ ms.locfileid: "43445906"
   "userName": "String"
 }
 ```
+
+
 
 
 

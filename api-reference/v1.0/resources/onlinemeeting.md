@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 812f094667b217d167509be324843227e552e0a5
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 1b2a87d8494876ada8c45849d2cd93142f1dc570
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556228"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48056494"
 ---
 # <a name="onlinemeeting-resource-type"></a>Тип ресурса Онлинемитинг
 
@@ -36,7 +36,7 @@ ms.locfileid: "44556228"
 | креатиондатетиме          | DateTime                                               | Время создания собрания в формате UTC. Только для чтения. |
 | startDateTime             | DateTime                                               | Время начала собрания в формате UTC. |
 | endDateTime               | DateTime                                               | Время окончания собрания в формате UTC. |
-| id                        | Строка                                                 | ИДЕНТИФИКАТОР по умолчанию, связанный с собранием по сети. Только для чтения. |
+| id                        | String                                                 | ИДЕНТИФИКАТОР по умолчанию, связанный с собранием по сети. Только для чтения. |
 | жоинвебурл                | String                                                 | URL-адрес присоединения к собранию по сети. Только для чтения.|
 | participants              | [митингпартиЦипантс](meetingparticipants.md)          | Участники, связанные с собранием по сети.  Сюда входят Организатор и участники. |
 | subject                   | String                                                 | Тема собрания по сети. |
@@ -76,3 +76,4 @@ ms.locfileid: "44556228"
   "section": "documentation",
   "tocPath": ""
 }-->
+

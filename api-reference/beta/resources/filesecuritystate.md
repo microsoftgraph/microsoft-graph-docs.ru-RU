@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: e030ce95ef2b8c5f1af5424bfdd0e727f2d3e2f6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: bec30dec9f30186d3a8a5a0bcbd9be15874c8297
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806543"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48055479"
 ---
 # <a name="filesecuritystate-resource-type"></a>Тип ресурса объекта filesecuritystate
 
@@ -63,3 +63,5 @@ ms.locfileid: "46806543"
   "suppressions": []
 }
 -->
+
+
