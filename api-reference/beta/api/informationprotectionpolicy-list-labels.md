@@ -5,71 +5,71 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4aa7f61337b9dbe857354bbcf16abf3a881fa10f
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 9cd8fcd909c5c6e952763c6fa09e56c2f57fabe8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384313"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990629"
 ---
-# <a name="informationprotectionlabel-listlabels"></a><span data-ttu-id="ef094-103">Информатионпротектионлабел: Листлабелс</span><span class="sxs-lookup"><span data-stu-id="ef094-103">informationProtectionLabel: listLabels</span></span>
+# <a name="informationprotectionlabel-listlabels"></a><span data-ttu-id="282a2-103">Информатионпротектионлабел: Листлабелс</span><span class="sxs-lookup"><span data-stu-id="282a2-103">informationProtectionLabel: listLabels</span></span>
 
-<span data-ttu-id="ef094-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ef094-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="282a2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="282a2-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ef094-105">Получение набора [меток защиты информации](../resources/informationprotectionlabel.md) , доступных пользователю или организации.</span><span class="sxs-lookup"><span data-stu-id="ef094-105">Get a collection of [information protection labels](../resources/informationprotectionlabel.md) available to the user or to the organization.</span></span>
+<span data-ttu-id="282a2-105">Получение набора [меток защиты информации](../resources/informationprotectionlabel.md) , доступных пользователю или организации.</span><span class="sxs-lookup"><span data-stu-id="282a2-105">Get a collection of [information protection labels](../resources/informationprotectionlabel.md) available to the user or to the organization.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ef094-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ef094-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="282a2-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="282a2-106">Permissions</span></span>
 
-<span data-ttu-id="ef094-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ef094-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="282a2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="282a2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="ef094-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ef094-109">Permission type</span></span>                        | <span data-ttu-id="ef094-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ef094-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="282a2-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="282a2-109">Permission type</span></span>                        | <span data-ttu-id="282a2-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="282a2-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="ef094-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ef094-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ef094-112">Информатионпротектионполици. Read</span><span class="sxs-lookup"><span data-stu-id="ef094-112">InformationProtectionPolicy.Read</span></span>            |
-| <span data-ttu-id="ef094-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ef094-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ef094-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ef094-114">Not supported.</span></span>                              |
-| <span data-ttu-id="ef094-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="ef094-115">Application</span></span>                            | <span data-ttu-id="ef094-116">Информатионпротектионполици. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="ef094-116">InformationProtectionPolicy.Read.All</span></span>        |
+| <span data-ttu-id="282a2-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="282a2-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="282a2-112">InformationProtectionPolicy.Read</span><span class="sxs-lookup"><span data-stu-id="282a2-112">InformationProtectionPolicy.Read</span></span>            |
+| <span data-ttu-id="282a2-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="282a2-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="282a2-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="282a2-114">Not supported.</span></span>                              |
+| <span data-ttu-id="282a2-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="282a2-115">Application</span></span>                            | <span data-ttu-id="282a2-116">InformationProtectionPolicy.Read.All</span><span class="sxs-lookup"><span data-stu-id="282a2-116">InformationProtectionPolicy.Read.All</span></span>        |
 
-## <a name="http-request"></a><span data-ttu-id="ef094-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ef094-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="282a2-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="282a2-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
-<span data-ttu-id="ef094-118">Чтобы получить метки, доступные пользователю, вошедшего в систему, или указанному пользователю:</span><span class="sxs-lookup"><span data-stu-id="ef094-118">To get labels available to the signed-in user or specified user:</span></span>
+<span data-ttu-id="282a2-118">Чтобы получить метки, доступные пользователю, вошедшего в систему, или указанному пользователю:</span><span class="sxs-lookup"><span data-stu-id="282a2-118">To get labels available to the signed-in user or specified user:</span></span>
 ```http
 GET /me/informationProtection/policy/labels
 GET /users/{id | user-principal-name}/informationProtection/policy/labels
 ```
 
-<span data-ttu-id="ef094-119">Чтобы получить метки, доступные в Организации, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="ef094-119">To get labels available to the organization:</span></span>
+<span data-ttu-id="282a2-119">Чтобы получить метки, доступные в Организации, выполните указанные ниже действия.</span><span class="sxs-lookup"><span data-stu-id="282a2-119">To get labels available to the organization:</span></span>
 ```http
 GET /informationProtection/policy/labels
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="ef094-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="ef094-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="282a2-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="282a2-120">Optional query parameters</span></span>
 
-<span data-ttu-id="ef094-121">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="ef094-121">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="ef094-122">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="ef094-122">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="282a2-121">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="282a2-121">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="282a2-122">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="282a2-122">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="ef094-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ef094-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="282a2-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="282a2-123">Request headers</span></span>
 
-| <span data-ttu-id="ef094-124">Имя</span><span class="sxs-lookup"><span data-stu-id="ef094-124">Name</span></span>          | <span data-ttu-id="ef094-125">Описание</span><span class="sxs-lookup"><span data-stu-id="ef094-125">Description</span></span>                                                                                                                                                                       |
+| <span data-ttu-id="282a2-124">Имя</span><span class="sxs-lookup"><span data-stu-id="282a2-124">Name</span></span>          | <span data-ttu-id="282a2-125">Описание</span><span class="sxs-lookup"><span data-stu-id="282a2-125">Description</span></span>                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="ef094-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ef094-126">Authorization</span></span> | <span data-ttu-id="ef094-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ef094-p103">Bearer {token}. Required.</span></span>                                                                                                                                                         |
-| <span data-ttu-id="ef094-129">User — Agent</span><span class="sxs-lookup"><span data-stu-id="ef094-129">User-Agent</span></span>    | <span data-ttu-id="ef094-130">Описывает имя и версию вызывающего приложения.</span><span class="sxs-lookup"><span data-stu-id="ef094-130">Describes the name and version of the calling application.</span></span> <span data-ttu-id="ef094-131">Подробные сведения отображаются в Azure Information Protection Analytics.</span><span class="sxs-lookup"><span data-stu-id="ef094-131">Details will surface in Azure Information Protection Analytics.</span></span> <span data-ttu-id="ef094-132">Рекомендуемый формат — ApplicationName/Version.</span><span class="sxs-lookup"><span data-stu-id="ef094-132">Suggested format is ApplicationName/Version.</span></span> <span data-ttu-id="ef094-133">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="ef094-133">Optional.</span></span> |
+| <span data-ttu-id="282a2-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="282a2-126">Authorization</span></span> | <span data-ttu-id="282a2-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="282a2-p103">Bearer {token}. Required.</span></span>                                                                                                                                                         |
+| <span data-ttu-id="282a2-129">User — Agent</span><span class="sxs-lookup"><span data-stu-id="282a2-129">User-Agent</span></span>    | <span data-ttu-id="282a2-130">Описывает имя и версию вызывающего приложения.</span><span class="sxs-lookup"><span data-stu-id="282a2-130">Describes the name and version of the calling application.</span></span> <span data-ttu-id="282a2-131">Подробные сведения отображаются в Azure Information Protection Analytics.</span><span class="sxs-lookup"><span data-stu-id="282a2-131">Details will surface in Azure Information Protection Analytics.</span></span> <span data-ttu-id="282a2-132">Рекомендуемый формат — ApplicationName/Version.</span><span class="sxs-lookup"><span data-stu-id="282a2-132">Suggested format is ApplicationName/Version.</span></span> <span data-ttu-id="282a2-133">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="282a2-133">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ef094-134">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ef094-134">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="282a2-134">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="282a2-134">Request body</span></span>
 
-<span data-ttu-id="ef094-135">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ef094-135">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="282a2-135">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="282a2-135">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ef094-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="ef094-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="282a2-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="282a2-136">Response</span></span>
 
-<span data-ttu-id="ef094-137">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [информатионпротектионлабел](../resources/informationprotectionlabel.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ef094-137">If successful, this method returns a `200 OK` response code and a collection of [informationProtectionLabel](../resources/informationprotectionlabel.md) objects in the response body.</span></span>
+<span data-ttu-id="282a2-137">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [информатионпротектионлабел](../resources/informationprotectionlabel.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="282a2-137">If successful, this method returns a `200 OK` response code and a collection of [informationProtectionLabel](../resources/informationprotectionlabel.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="ef094-138">Примеры</span><span class="sxs-lookup"><span data-stu-id="ef094-138">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="282a2-138">Примеры</span><span class="sxs-lookup"><span data-stu-id="282a2-138">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="ef094-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="ef094-139">Request</span></span>
+### <a name="request"></a><span data-ttu-id="282a2-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="282a2-139">Request</span></span>
 
-<span data-ttu-id="ef094-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ef094-140">The following is an example of the request.</span></span>
+<span data-ttu-id="282a2-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="282a2-140">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ef094-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="ef094-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="282a2-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="282a2-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_labels"
@@ -78,26 +78,26 @@ GET /informationProtection/policy/labels
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/informationProtection/policy/labels
 ```
-# <a name="c"></a>[<span data-ttu-id="ef094-142">C#</span><span class="sxs-lookup"><span data-stu-id="ef094-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="282a2-142">C#</span><span class="sxs-lookup"><span data-stu-id="282a2-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-labels-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ef094-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ef094-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="282a2-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="282a2-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-labels-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ef094-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ef094-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="282a2-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="282a2-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-labels-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="ef094-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="ef094-145">Response</span></span>
+### <a name="response"></a><span data-ttu-id="282a2-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="282a2-145">Response</span></span>
 
-<span data-ttu-id="ef094-146">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ef094-146">The following is an example of the response.</span></span>
+<span data-ttu-id="282a2-146">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="282a2-146">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="ef094-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ef094-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="282a2-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="282a2-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -154,3 +154,5 @@ User-agent: ContosoLOBApp/1.0
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

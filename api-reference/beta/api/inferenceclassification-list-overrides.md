@@ -5,54 +5,54 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: ''
-ms.openlocfilehash: 5587ec6aa89f622a2433b4eb2889d1f2a4f6044c
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 515b15fa820cdd063b222ad383ee27cfba5fb934
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807257"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990671"
 ---
-# <a name="list-overrides"></a><span data-ttu-id="1a805-103">Список переопределений</span><span class="sxs-lookup"><span data-stu-id="1a805-103">List overrides</span></span>
+# <a name="list-overrides"></a><span data-ttu-id="cc6e7-103">Список переопределений</span><span class="sxs-lookup"><span data-stu-id="cc6e7-103">List overrides</span></span>
 
-<span data-ttu-id="1a805-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1a805-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cc6e7-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cc6e7-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1a805-105">Получение параметров [сортировки папки "Входящие"](../resources/manage-focused-inbox.md) , которые пользователь настроил для того, чтобы всегда классифицировать сообщения от определенных отправителей определенными способами.</span><span class="sxs-lookup"><span data-stu-id="1a805-105">Get the [Focused Inbox](../resources/manage-focused-inbox.md) overrides that a user has set up to always classify messages from certain senders in specific ways.</span></span>
+<span data-ttu-id="cc6e7-105">Получение параметров [сортировки папки "Входящие"](../resources/manage-focused-inbox.md) , которые пользователь настроил для того, чтобы всегда классифицировать сообщения от определенных отправителей определенными способами.</span><span class="sxs-lookup"><span data-stu-id="cc6e7-105">Get the [Focused Inbox](../resources/manage-focused-inbox.md) overrides that a user has set up to always classify messages from certain senders in specific ways.</span></span>
 
-<span data-ttu-id="1a805-106">Каждое переопределение соответствует SMTP-адресу отправителя.</span><span class="sxs-lookup"><span data-stu-id="1a805-106">Each override corresponds to an SMTP address of a sender.</span></span> <span data-ttu-id="1a805-107">Изначально у пользователя нет переопределений.</span><span class="sxs-lookup"><span data-stu-id="1a805-107">Initially, a user does not have any overrides.</span></span>
-## <a name="permissions"></a><span data-ttu-id="1a805-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1a805-108">Permissions</span></span>
-<span data-ttu-id="1a805-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1a805-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cc6e7-106">Каждое переопределение соответствует SMTP-адресу отправителя.</span><span class="sxs-lookup"><span data-stu-id="cc6e7-106">Each override corresponds to an SMTP address of a sender.</span></span> <span data-ttu-id="cc6e7-107">Изначально у пользователя нет переопределений.</span><span class="sxs-lookup"><span data-stu-id="cc6e7-107">Initially, a user does not have any overrides.</span></span>
+## <a name="permissions"></a><span data-ttu-id="cc6e7-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cc6e7-108">Permissions</span></span>
+<span data-ttu-id="cc6e7-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cc6e7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1a805-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1a805-111">Permission type</span></span>      | <span data-ttu-id="1a805-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1a805-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cc6e7-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cc6e7-111">Permission type</span></span>      | <span data-ttu-id="cc6e7-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cc6e7-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1a805-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1a805-113">Delegated (work or school account)</span></span> | <span data-ttu-id="1a805-114">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="1a805-114">Mail.Read</span></span>    |
-|<span data-ttu-id="1a805-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1a805-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1a805-116">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="1a805-116">Mail.Read</span></span>    |
-|<span data-ttu-id="1a805-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1a805-117">Application</span></span> | <span data-ttu-id="1a805-118">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="1a805-118">Mail.Read</span></span> |
+|<span data-ttu-id="cc6e7-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cc6e7-113">Delegated (work or school account)</span></span> | <span data-ttu-id="cc6e7-114">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="cc6e7-114">Mail.Read</span></span>    |
+|<span data-ttu-id="cc6e7-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cc6e7-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cc6e7-116">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="cc6e7-116">Mail.Read</span></span>    |
+|<span data-ttu-id="cc6e7-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cc6e7-117">Application</span></span> | <span data-ttu-id="cc6e7-118">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="cc6e7-118">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1a805-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1a805-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cc6e7-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cc6e7-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/inferenceClassification/overrides
 GET /users/{id}/inferenceClassification/overrides
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1a805-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1a805-120">Request headers</span></span>
-| <span data-ttu-id="1a805-121">Имя</span><span class="sxs-lookup"><span data-stu-id="1a805-121">Name</span></span>       | <span data-ttu-id="1a805-122">Тип</span><span class="sxs-lookup"><span data-stu-id="1a805-122">Type</span></span> | <span data-ttu-id="1a805-123">Описание</span><span class="sxs-lookup"><span data-stu-id="1a805-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cc6e7-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cc6e7-120">Request headers</span></span>
+| <span data-ttu-id="cc6e7-121">Имя</span><span class="sxs-lookup"><span data-stu-id="cc6e7-121">Name</span></span>       | <span data-ttu-id="cc6e7-122">Тип</span><span class="sxs-lookup"><span data-stu-id="cc6e7-122">Type</span></span> | <span data-ttu-id="cc6e7-123">Описание</span><span class="sxs-lookup"><span data-stu-id="cc6e7-123">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="1a805-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="1a805-124">Authorization</span></span>  | <span data-ttu-id="1a805-125">string</span><span class="sxs-lookup"><span data-stu-id="1a805-125">string</span></span>  | <span data-ttu-id="1a805-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1a805-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="cc6e7-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="cc6e7-124">Authorization</span></span>  | <span data-ttu-id="cc6e7-125">string</span><span class="sxs-lookup"><span data-stu-id="cc6e7-125">string</span></span>  | <span data-ttu-id="cc6e7-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cc6e7-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1a805-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1a805-128">Request body</span></span>
-<span data-ttu-id="1a805-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1a805-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cc6e7-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="cc6e7-128">Request body</span></span>
+<span data-ttu-id="cc6e7-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="cc6e7-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1a805-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="1a805-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cc6e7-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="cc6e7-130">Response</span></span>
 
-<span data-ttu-id="1a805-131">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1a805-131">If successful, this method returns a `200 OK` response code and a collection of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1a805-132">Пример</span><span class="sxs-lookup"><span data-stu-id="1a805-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1a805-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="1a805-133">Request</span></span>
-<span data-ttu-id="1a805-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1a805-134">Here is an example of the request.</span></span>
+<span data-ttu-id="cc6e7-131">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="cc6e7-131">If successful, this method returns a `200 OK` response code and a collection of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="cc6e7-132">Пример</span><span class="sxs-lookup"><span data-stu-id="cc6e7-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="cc6e7-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="cc6e7-133">Request</span></span>
+<span data-ttu-id="cc6e7-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cc6e7-134">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="1a805-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="1a805-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="cc6e7-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="cc6e7-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_overrides"
@@ -60,22 +60,22 @@ GET /users/{id}/inferenceClassification/overrides
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/inferenceClassification/overrides
 ```
-# <a name="c"></a>[<span data-ttu-id="1a805-136">C#</span><span class="sxs-lookup"><span data-stu-id="1a805-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="cc6e7-136">C#</span><span class="sxs-lookup"><span data-stu-id="cc6e7-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-overrides-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1a805-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1a805-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="cc6e7-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cc6e7-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-overrides-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1a805-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1a805-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="cc6e7-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cc6e7-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-overrides-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="1a805-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="1a805-139">Response</span></span>
-<span data-ttu-id="1a805-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1a805-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="cc6e7-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="cc6e7-139">Response</span></span>
+<span data-ttu-id="cc6e7-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="cc6e7-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -121,3 +121,5 @@ Content-type: application/json
   ]
 }
 -->
+
+
