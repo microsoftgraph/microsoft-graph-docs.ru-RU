@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 8f1392e8539f20c0480f9c4604119b5fdf4cbb16
-ms.sourcegitcommit: da4f3d03e98ee5fa13f8c7a263d931e68a20a12c
+ms.openlocfilehash: f7e0fb5076b9335bd18910c4898e24df8a70c157
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757302"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014007"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -204,3 +204,5 @@ Content-length: 252
   ]
 }
 -->
+
+

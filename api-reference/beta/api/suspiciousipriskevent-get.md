@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: cloudhandler
-ms.openlocfilehash: 456b038b9aaa71280ee00df336d3e12b6cd4c133
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: c1302d72a6ec8d55d694219a8fc9f27dc004ce85
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312007"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013883"
 ---
 # <a name="get-suspiciousipriskevent-deprecated"></a>Получение СуспиЦиаусиприскевент (не рекомендуется)
 
@@ -42,7 +42,7 @@ GET /suspiciousIpRiskEvents/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -98,3 +98,5 @@ Content-length: 237
   "suppressions": []
 }
 -->
+
+

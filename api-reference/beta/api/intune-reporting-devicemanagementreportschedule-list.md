@@ -3,14 +3,14 @@ title: Список Девицеманажементрепортсчедулес
 description: Список свойств и связей объектов Девицеманажементрепортсчедуле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 27ae185db4bca165dcaee9adecfb3a0b2dcdc1f9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3bb60882121d98f6d2a0b2ac2d168401fc54c9f2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43391511"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014275"
 ---
 # <a name="list-devicemanagementreportschedules"></a>Список Девицеманажементрепортсчедулес
 
@@ -43,13 +43,13 @@ GET /deviceManagement/reports/reportSchedules
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицеманажементрепортсчедуле](../resources/intune-reporting-devicemanagementreportschedule.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -94,6 +94,9 @@ Content-Length: 701
   ]
 }
 ```
+
+
+
 
 
 

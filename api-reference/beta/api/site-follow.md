@@ -5,12 +5,12 @@ description: Подпишитесь на сайт или сайты пользо
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 4daa8d114459b4b76c35e1c384d42bcf696433a6
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 218efae00703e452df1f9a8fd4f0ad73727b4c10
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108216"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014016"
 ---
 # <a name="follow-site"></a>Отслеживание сайта 
 
@@ -36,17 +36,17 @@ ms.locfileid: "43108216"
 POST /users/{user-id}/followedSites/add
 ```
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса добавьте массив объектов JSON с параметром ID, указанным в приведенной ниже таблице. 
 
 
 | Имя                 | Значение  | Описание                                                            |
 |:---------------------|:-------|:-----------------------------------------------------------------------|
-|   id                 | строка | [Уникальный идентификатор](../resources/site.md#id-property) элемента. |
+|   id                 | string | [Уникальный идентификатор](../resources/site.md#id-property) элемента. |
 
 
-## <a name="response"></a>Ответ 
+## <a name="response"></a>Отклик 
 
 * Если запрос выполнен успешно, этот метод возвращает массив сайтов, которые были выполнены.  
 * Если при выполнении какого-либо из указанных сайтов возникла ошибка, этот метод возвращает `207` код состояния, а текст отклика будет содержать массив записей, содержащих объекты [Error](/graph/errors) , и ситеидс, указывающие, какие сайты не могут быть выполнены.
@@ -183,3 +183,5 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+
+

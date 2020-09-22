@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: conceptualPageType
-ms.openlocfilehash: dde29750695026fa867e0d79859cea2f23afba25
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: 5566c19288029e0607e2da60cde49e6bb9bb5471
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353793"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013855"
 ---
 # <a name="working-with-the-dynamics-365-business-central-api-in-microsoft-graph"></a>Работа с API Dynamics 365 Business Central в Microsoft Graph
 
@@ -20,14 +20,14 @@ ms.locfileid: "44353793"
 
 Вы можете использовать Microsoft Graph для подключения и интеграции веб-службы или решения SaaS с Microsoft Dynamics 365 Business Central. С помощью Microsoft Graph вы можете создавать приложения, которые обеспечивают доступ к данным и тесно интегрируются с Microsoft Dynamics 365 Business Central.
 
-## <a name="authorization"></a>Авторизация
+## <a name="authorization"></a>Authorization
 Используйте конечную точку Azure AD версии 2.0 для проверки подлинности в Dynamics 365 Business Central API. Для всех API требуется `Authorization: Bearer {access-token}` заголовок запроса. Дополнительные сведения о проверке подлинности приведены [в разделе получение маркеров доступа для вызова Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).
 
 ## <a name="common-dynamics-365-business-central-scenarios"></a>Распространенные сценарии Dynamics 365 Business Central
 API Dynamics 365 Business Central позволяет считывать и изменять бизнес-данные через приложения, которые подключены и интегрируются через одну конечную точку. Используйте API, например, для получения доступа к сведениям о [клиентах](../resources/dynamics-customer.md) и [поставщиках](../resources/dynamics-vendor.md) или [просмотра просроченных платежей](../resources/dynamics-agedaccountspayable.md).
 
 ## <a name="whats-new"></a>Новые возможности
-Узнайте о [последних новых возможностях и обновлениях](/graph/whats-new-overview) для этого набора API.
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 API Dynamics 365 Business Central может открыть новые способы взаимодействия с пользователями. Дополнительные сведения см. в следующих источниках.
@@ -69,3 +69,5 @@ API Dynamics 365 Business Central может открыть новые спос�
 |unitsOfMeasure resource type|[unitsOfMeasure](../resources/dynamics-unitsofmeasure.md)|
 |vendor resource type|[vendor](../resources/dynamics-vendor.md)|
 -->
+
+

@@ -6,12 +6,12 @@ description: Использование этих API в производстве
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 067fc455a0a122761c45ac1078712ea04b68845c
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: c7502cf8cc72d5aabc4ab2fbe3c190bd388b724a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109192"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013939"
 ---
 # <a name="get-websocket-endpoint"></a>Получение конечной точки WebSocket
 
@@ -93,11 +93,11 @@ Content-type: application/json
 }
 ```
 
-`notificationUrl` Возвращаемый параметр является URL-адресом конечной точки Socket.IO.
+`notificationUrl`Возвращаемый параметр является URL-адресом конечной точки Socket.IO.
 Чтобы использовать его с клиентом socket.io, разделите строку на `/callback?` маркере.
 Часть строки Before `/callback?` является URL-адресом конечной точки Socket.IO, а часть строки After — непрозрачной строкой запроса, которую необходимо присвоить библиотеке.
 
-В приведенном ниже примере показано, `notificationUrl` как использовать with Socket.IO в JavaScript.
+В приведенном ниже примере показано, как использовать `notificationUrl` with Socket.IO в JavaScript.
 
 ```javascript
 // this is the notificationUrl returned from this API
@@ -126,3 +126,5 @@ socket.on("notification", (data)=>console.log("Notification!", data));
   "suppressions": [
   ]
 }-->
+
+

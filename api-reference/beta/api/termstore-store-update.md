@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e097cfcb0ae83346433cf9ec9a510174e31a1bc4
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 67876ecd80f10538f56323c6f712808c2900cb7e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330069"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013869"
 ---
 # <a name="update-store"></a>Обновление хранилища
 Пространство имен: Microsoft. Graph. банка
@@ -52,7 +52,7 @@ PATCH /termStore
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |дефаултлангуажетаг|String|Язык по умолчанию для [Microsoft. Graph. банка данных Microsoft. Graph.](../resources/termstore-store.md)|
-|лангуажетагс|Коллекция строк|Доступные языки в [Microsoft. Graph. банке. Store](../resources/termstore-store.md)|
+|лангуажетагс|Коллекция String|Доступные языки в [Microsoft. Graph. банке. Store](../resources/termstore-store.md)|
 
 
 
@@ -128,4 +128,6 @@ Content-Type: application/json
   ]
 }
 -->
+
+
 

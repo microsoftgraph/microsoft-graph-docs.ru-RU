@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: d0a751fe076c76fcb703c4d910ac35d3d0593b15
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 866fda60aa8b0a357e8e587d105a7fa00e116d3d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42503847"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013851"
 ---
 # <a name="itemcategories-resource-type"></a>Тип ресурса Итемкатегориес
 
@@ -55,4 +55,6 @@ ms.locfileid: "42503847"
   "lastModifiedDateTime": "datetime"
 }
 ```
+
+
 
