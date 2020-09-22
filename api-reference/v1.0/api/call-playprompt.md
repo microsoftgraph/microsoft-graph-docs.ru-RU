@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 527797215da0ef961c83679fcec313c183a1cd63
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 4759beaed98f5384deb41e982d5ce8a5ee1da396
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682194"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47979177"
 ---
 # <a name="call-playprompt"></a>Call: Плайпромпт
 
@@ -30,7 +30,7 @@ ms.locfileid: "44682194"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Для приложений                            | Отсутствуют.                                        |
+| Для приложений                            | Нет.                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -179,3 +179,4 @@ Content-Type: application/json
   ]
 }
 -->
+
