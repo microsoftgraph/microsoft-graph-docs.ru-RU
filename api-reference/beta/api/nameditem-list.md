@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: 1d1598c7b3a5ae7574a4c7f1d616c1fd67169fb3
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d107a94a5632d1b591cc8a0fad1d433946c87be8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810813"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062388"
 ---
 # <a name="list-nameditemcollection"></a>Список NamedItemCollection
 
@@ -45,7 +45,7 @@ GET /workbook/names
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбукнамедитем](../resources/workbooknameditem.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -113,3 +113,5 @@ Content-length: 136
   ]
 }
 -->
+
+

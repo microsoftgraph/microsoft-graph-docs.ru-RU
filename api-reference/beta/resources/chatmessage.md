@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса chatMessage
-description: Представляет отдельное сообщение чата в объекте channel или chat. Сообщение чата может быть корневым сообщением чата или частью потока, определенного свойством **реплитоид** в сообщении чата.
+description: Представляет отдельное сообщение чата в канале или в объекте Chat. Сообщение чата может быть корневым сообщением чата или частью потока, определенного свойством **реплитоид** в сообщении чата.
 doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3af846c2af807a19410a4671625ed47d637f35b3
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c9025ed27f9155773413cd00454be14f82d8b2e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808790"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064334"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -18,7 +18,9 @@ ms.locfileid: "46808790"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет отдельное сообщение чата в [канале](channel.md) или [чате](chat.md). Сообщение чата может быть корневым сообщением чата или частью ответа, которое определяется свойством **реплитоид** в сообщении чата.
+
+Представляет отдельное сообщение чата в [канале](channel.md) или [чате](chat.md). Сообщение может быть корневым или частью беседы, определяемой свойством **replyToId** в сообщении.
+
 
 ## <a name="methods"></a>Методы
 
@@ -30,15 +32,18 @@ ms.locfileid: "46808790"
 |[Создание подписки для сообщений о новых каналах](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Прослушивать новые и измененные сообщения каналов и реакции на них. |
 |[Получение chatMessage Channel](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | Получение одного из каналов сообщения с одним корневым сеансом.|
 |[Создание chatMessage в канале или чате](../api/chatmessage-post.md) | [chatMessage](chatmessage.md)| Создайте новое сообщение разговора верхнего уровня в канале.|
+|[Обновление chatMessage](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Обновление свойства **полицивиолатион** сообщения чата.|
 |**Ответы на сообщения канала**| | |
 |[Перечисление ответов на chatMessage](../api/channel-list-messagereplies.md) | Коллекция [chatMessage](chatmessage.md)| Список всех ответов на сообщение чата в канале.|
 |[Получение ответа на chatMessage](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Получение одного ответа на сообщение чата в канале.|
 |[Ответ на chatMessage в канале](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Ответ на существующее сообщение чата в канале.|
+|[Обновление chatMessage](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Обновление свойства **полицивиолатион** сообщения чата.|
 |**1:1 и сообщения группового чата**| | |
-|[Создание chatMessage в чате](../api/chat-post-message.md) | [chatMessage](chatmessage.md)| Отправка сообщения чата в существующей беседе 1:1 или группе чата.|
+|[Получение chatMessage в чате](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения чата в чате. |
 |[Перечисление chatMessages в чате](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | Перечисление сообщений чата в 1:1 или группе чата. |
 |[Создание подписки для новых сообщений чата](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Прослушивание новых и измененных сообщений чата и реакции на них. |
-|[Получение chatMessage в чате](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения чата в чате. |
+|[Создание chatMessage в чате](../api/chat-post-message.md) | [chatMessage](chatmessage.md)| Отправка сообщения чата в существующей беседе 1:1 или группе чата.|
+|[Обновление chatMessage](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Обновление свойства **полицивиолатион** сообщения чата.|
 |**Размещенный контент**| | |
 |[Перечисление всех размещенных контента](../api/chatmessage-list-chatmessagehostedcontents.md) | Коллекция [чатмессажехостедконтент](../resources/chatmessagehostedcontent.md)| Получение всего размещенного содержимого в сообщении чата.|
 |[Получение размещенного контента](../api/chatmessagehostedcontent-get.md) | [чатмессажехостедконтент](../resources/chatmessagehostedcontent.md) | Получение размещенного контента из сообщения чата.|
@@ -48,7 +53,7 @@ ms.locfileid: "46808790"
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |id|String| Только для чтения. Уникальный идентификатор сообщения.|
-|replyToId| string | Только для чтения. Идентификатор родительского сообщения чата или сообщения корневого сеанса беседы в цепочке. (Применяется только к сообщениям чата в каналах без чатов) |
+|replyToId| string | Только для чтения. Идентификатор родительского сообщения чата или сообщения корневого сеанса беседы в цепочке. (Это относится только к сообщениям разговора в каналах, а не к разговорам.) |
 |from|[identitySet](identityset.md)| Только для чтения. Сведения об отправителе сообщения чата.|
 |etag| string | Только для чтения. Номер версии сообщения чата. |
 |messageType|string|Тип сообщения чата. Возможные значения: `message` .|
@@ -63,6 +68,7 @@ ms.locfileid: "46808790"
 |importance|string | Важность сообщения чата. Допустимые значения: `normal`, `high`, `urgent`.|
 |reactions| Коллекция [chatMessageReaction](./chatmessagereaction.md) | Реакции на это сообщение чата (например, например).|
 |языковые стандарты|string|Язык сообщения чата, заданное клиентом.|
+| полицивиолатион | [чатмессажеполицивиолатион](../resources/chatmessagepolicyviolation.md) |Определяет свойства нарушения политики, заданные с помощью приложения предотвращения потери данных (DLP).|
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -100,9 +106,9 @@ ms.locfileid: "46808790"
   "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
   "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
   "importance": "string",
-  "policyViolation": "string",
-  "reactions":  "string",
+  "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
   "locale": "string",
+  "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
   "deleted": true
 }
 ```
@@ -119,3 +125,5 @@ ms.locfileid: "46808790"
   "suppressions": []
 }
 -->
+
+

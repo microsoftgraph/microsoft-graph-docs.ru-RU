@@ -3,14 +3,14 @@ title: Список Макосекстенсионсконфигуратионс
 description: Список свойств и связей объектов Макосекстенсионсконфигуратион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4a9e259f34f377d1ea9b5eb841542e85d5e517d1
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: f2f912894e58b9923118197f3d0e304e414bba38
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177886"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065874"
 ---
 # <a name="list-macosextensionsconfigurations"></a>Список Макосекстенсионсконфигуратионс
 
@@ -50,7 +50,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [макосекстенсионсконфигуратион](../resources/intune-deviceconfig-macosextensionsconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -136,6 +136,9 @@ Content-Length: 2414
   ]
 }
 ```
+
+
+
 
 
 

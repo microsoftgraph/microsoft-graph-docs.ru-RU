@@ -3,14 +3,14 @@ title: Список Манажедаллдевицецертификатеста
 description: Список свойств и связей объектов Манажедаллдевицецертификатестате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e255f849d447fb82f5b796cd5262652d0ac2526f
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 40ecaa24fe803b56fbf4fd94f45df77ed6c15e2b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45122947"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065846"
 ---
 # <a name="list-managedalldevicecertificatestates"></a>Список Манажедаллдевицецертификатестатес
 
@@ -88,6 +88,9 @@ Content-Length: 958
   ]
 }
 ```
+
+
+
 
 
 

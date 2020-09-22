@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: d0079ee5455d717dfec1bf32f23aa788991be1fc
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 4e54a58f3d7d2cfd6b7f410ebe4a1ea55f629efe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849573"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062409"
 ---
 # <a name="create-multi-value-extended-property"></a>Создание расширенного свойства с несколькими значениями
 
@@ -42,9 +42,9 @@ ms.locfileid: "46849573"
 Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md).
 
 ## <a name="permissions"></a>Разрешения
-В зависимости от ресурса, в который создается расширенное свойство, и типа разрешения (делегированное или приложение), для вызова этого API необходимо как минимум указать разрешение, указанное в приведенной ниже таблице. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от ресурса, в котором вы создаете расширенное свойство и запрашивается тип разрешения (делегированное или приложение), разрешение, указанное в следующей таблице, является минимальным необходимым условием для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Приложение |
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
@@ -62,7 +62,7 @@ ms.locfileid: "46849573"
 Вы можете создавать расширенные свойства в новом или существующем экземпляре ресурса.
 
 Чтобы создать одно или несколько расширенных свойств в _новом_ экземпляре ресурса, используйте тот же запрос REST, что и при создании этого экземпляра, включив в тело запроса свойства нового экземпляра ресурса _и расширенное свойство_.
-Обратите внимание, что некоторые ресурсы поддерживают несколько способов создания. Дополнительные сведения о создании таких экземпляров ресурсов см. в соответствующих [contact](../api/user-post-contacts.md) [статьях](../resources/message.md)о создании сообщений, [mailFolder,](../api/user-post-mailfolders.md) [event,](../api/user-post-events.md) [calendar,](../api/user-post-calendars.md) [contactFolder,](../api/user-post-contactfolders.md) [задачи Outlook,](../resources/outlooktask.md) [папки задач Outlook,](../resources/outlooktaskfolder.md) [события группы](../api/group-post-events.md)и [записи](../resources/post.md)группы.
+Обратите внимание, что некоторые ресурсы поддерживают несколько способов создания. Дополнительные сведения о создании этих экземпляров ресурсов можно найти в соответствующих разделах, посвященных созданию [сообщения](../resources/message.md), [mailFolder](../api/user-post-mailfolders.md), [события](../api/user-post-events.md), [календаря](../api/user-post-calendars.md), [контакта](../api/user-post-contacts.md), [contactFolder](../api/user-post-contactfolders.md), [задачи Outlook](../resources/outlooktask.md), [папки задач Outlook](../resources/outlooktaskfolder.md), [события группы](../api/group-post-events.md)и [отправки групп](../resources/post.md).
 
 Ниже приведен синтаксис запросов.
 
@@ -287,6 +287,8 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
+
+
 
 
 

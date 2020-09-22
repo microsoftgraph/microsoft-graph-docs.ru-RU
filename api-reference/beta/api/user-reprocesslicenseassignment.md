@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 95bed640289a6fae53b0d01e8ab3c351d3531d6b
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 80daaf6d31d9d7b1d3964f66c1bcbd46aa961862
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107376"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064474"
 ---
 # <a name="user-reprocesslicenseassignment"></a>Пользователь: Репроцесслиценсеассигнмент
 
@@ -41,12 +41,12 @@ POST /users/{id}/reprocessLicenseAssignment
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и обновленный объект [User](../resources/user.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [User](../resources/user.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как повторно обработать назначения лицензий для пользователя.
@@ -126,3 +126,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

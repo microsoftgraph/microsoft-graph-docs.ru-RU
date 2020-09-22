@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: e715d835551427f7452d22365a43a7f3abf821ab
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dc3f1f2855e060abeab7cb7bd30a4bccd292144c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517483"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063739"
 ---
 # <a name="get-educationschool"></a>Получение educationSchool
 
@@ -44,7 +44,7 @@ GET /education/users/schools
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвратит код отклика `200 OK` и объект [educationSchool](../resources/educationschool.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -111,3 +111,4 @@ Content-length: 292
   "suppressions": [
   ]
 }-->
+

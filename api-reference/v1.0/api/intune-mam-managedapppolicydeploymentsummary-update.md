@@ -3,14 +3,14 @@ title: Обновление объекта managedAppPolicyDeploymentSummary
 description: Обновление свойств объекта managedAppPolicyDeploymentSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 052539252315ea413c513e7198dcb2558b8132ef
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 532e882e2d47ce4692ac2f91d0d0ad17d1bf0854
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43398849"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063172"
 ---
 # <a name="update-managedapppolicydeploymentsummary"></a>Обновление объекта managedAppPolicyDeploymentSummary
 
@@ -44,7 +44,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -54,8 +54,8 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Пока не задокументировано.|
-|configurationDeployedUserCount|Int32|Пока нет описания|
+|displayName|String|Пока не задокументировано.|
+|configurationDeployedUserCount|Int32|Пока не задокументировано.|
 |lastRefreshTime|DateTimeOffset|Пока не задокументировано.|
 |configurationDeploymentSummaryPerApp|Коллекция [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md)|Пока не задокументировано.|
 |id|String|Ключ объекта.|
@@ -120,6 +120,9 @@ Content-Length: 637
   "version": "Version value"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Удаление Манажеддевицецертификатестат
 description: Удаляет объект Манажеддевицецертификатестате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c66af6b517cd68ff475ab04fbc6bf244b7988a53
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 58023468ba443d85ec08bc138ee900cc8c1910c0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45122891"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065776"
 ---
 # <a name="delete-manageddevicecertificatestate"></a>Удаление Манажеддевицецертификатестате
 
@@ -86,6 +86,9 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

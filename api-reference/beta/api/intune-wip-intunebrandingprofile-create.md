@@ -3,14 +3,14 @@ title: Создание Интунебрандингпрофиле
 description: Создание нового объекта Интунебрандингпрофиле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 92163b83201a539aa5d88d183ab454b60099d8e1
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 648264f4f92213fc0c00c32560ddad2bc7b4f181
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790527"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062507"
 ---
 # <a name="create-intunebrandingprofile"></a>Создание Интунебрандингпрофиле
 
@@ -29,7 +29,7 @@ ms.locfileid: "46790527"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -56,7 +56,7 @@ POST /deviceManagement/intuneBrandingProfiles
 |id|String|Ключ профиля|
 |имя_профиля|String|Имя профиля|
 |профиледескриптион|String|Описание профиля|
-|исдефаултпрофиле|Логический|Логическое значение, указывающее, используется ли профиль по умолчанию или нет|
+|исдефаултпрофиле|Boolean|Логическое значение, указывающее, используется ли профиль по умолчанию или нет|
 |createdDateTime|DateTimeOffset|Время создания Брандингпрофиле|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения Брандингпрофиле|
 |displayName|String|Название компании или организации, которое отображается для конечных пользователей|
@@ -76,18 +76,19 @@ POST /deviceManagement/intuneBrandingProfiles
 |кустомпривацимессаже|String|Текстовые комментарии относительно того, что у администратора нет доступа к устройству.|
 |кустомкансипривацимессаже|String|Текстовые комментарии относительно того, что у администратора есть доступ к устройству.|
 |кустомкантсипривацимессаже|String|Текстовые комментарии относительно того, что у администратора нет доступа к устройству.|
-|исремоведевицедисаблед|Логический|Логическое значение, указывающее, отключил ли админсистратор действие "Remove Device" на корпоративных устройствах.|
-|исфакториресетдисаблед|Логический|Логическое значение, указывающее, отключил ли админсистратор действие "Фабричная сброс" на корпоративных устройствах.|
+|исремоведевицедисаблед|Boolean|Логическое значение, указывающее, отключил ли админсистратор действие "Remove Device" на корпоративных устройствах.|
+|исфакториресетдисаблед|Boolean|Логическое значение, указывающее, отключил ли админсистратор действие "Фабричная сброс" на корпоративных устройствах.|
 |компанипорталблоккедактионс|Коллекция [компанипорталблоккедактион](../resources/intune-shared-companyportalblockedaction.md)|Коллекция заблокированных действий на портале компании в соответствии с типом владения платформой и устройствами.|
-|шовазуреадентерприсеаппс|Логический|Логическое значение, которое указывает, будут ли отображаться корпоративные приложения AzureAD на портале компании.|
-|шовоффицевебаппс|Логический|Логическое значение, указывающее, будут ли отображаться приложения Office на портале компании.|
-|сенддевицеовнершипчанжепушнотификатион|Логический|Логическое значение, указывающее, отправляются ли пользователям push-уведомления, если их тип собственности изменяется от персонального к корпоративному.|
+|шовазуреадентерприсеаппс|Boolean|Логическое значение, которое указывает, будут ли отображаться корпоративные приложения AzureAD на портале компании.|
+|шовоффицевебаппс|Boolean|Логическое значение, указывающее, будут ли отображаться приложения Office на портале компании.|
+|сенддевицеовнершипчанжепушнотификатион|Boolean|Логическое значение, указывающее, отправляются ли пользователям push-уведомления, если их тип собственности изменяется от персонального к корпоративному.|
 |енроллментаваилабилити|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Настраиваемый процесс регистрации устройства, отображаемый для конечного пользователя. Возможные значения: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
-|roleScopeTagIds|Коллекция String|Список тегов области, назначенных профилю фирменной символики|
+|дисаблеклиенттелеметри|Boolean|Применяется к телеметрии, отправляемой со всех клиентов в службу Intune. Если этот параметр отключен, все предупреждения об устранении неполадок и неполадки в клиенте отключаются, и параметры телеметрии отображаются как неактивные или скрытые для пользователя устройства.|
+|roleScopeTagIds|Коллекция объектов string|Список тегов области, назначенных профилю фирменной символики|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -97,7 +98,7 @@ POST /deviceManagement/intuneBrandingProfiles
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles
 Content-type: application/json
-Content-length: 1940
+Content-length: 1975
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -152,6 +153,7 @@ Content-length: 1940
   "showOfficeWebApps": true,
   "sendDeviceOwnershipChangePushNotification": true,
   "enrollmentAvailability": "availableWithoutPrompts",
+  "disableClientTelemetry": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ]
@@ -163,7 +165,7 @@ Content-length: 1940
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2112
+Content-Length: 2147
 
 {
   "@odata.type": "#microsoft.graph.intuneBrandingProfile",
@@ -221,11 +223,15 @@ Content-Length: 2112
   "showOfficeWebApps": true,
   "sendDeviceOwnershipChangePushNotification": true,
   "enrollmentAvailability": "availableWithoutPrompts",
+  "disableClientTelemetry": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ]
 }
 ```
+
+
+
 
 
 

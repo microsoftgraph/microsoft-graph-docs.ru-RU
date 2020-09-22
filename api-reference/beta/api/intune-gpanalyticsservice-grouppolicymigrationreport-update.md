@@ -3,14 +3,14 @@ title: Обновление Граупполицимигратионрепорт
 description: Обновление свойств объекта Граупполицимигратионрепорт.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ab7e6b7a68dbc725f5fc4a875fd153a5f683df1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 545d8eb89bbec12133264acb4826f1c064027557
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43383759"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065188"
 ---
 # <a name="update-grouppolicymigrationreport"></a>Обновление Граупполицимигратионрепорт
 
@@ -46,7 +46,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [граупполицимигратионрепорт](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [граупполицимигратионрепорт](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md).
@@ -54,8 +54,8 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Пока не задокументировано.|
-|граупполициобжектид|GUID|GUID объекта групповой политики из XML-содержимого объекта групповой политики|
-|displayName|Строка|Имя объекта групповой политики из XML-содержимого объекта групповой политики|
+|граупполициобжектид|Guid|GUID объекта групповой политики из XML-содержимого объекта групповой политики|
+|displayName|String|Имя объекта групповой политики из XML-содержимого объекта групповой политики|
 |аудистингуишеднаме|String|Различающееся имя подразделения.|
 |createdDateTime|DateTimeOffset|Дата и время создания Граупполицимигратионрепорт.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения Граупполицимигратионрепорт.|
@@ -69,7 +69,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [граупполицимигратионрепорт](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -120,6 +120,9 @@ Content-Length: 716
   "supportedSettingsPercent": 8
 }
 ```
+
+
+
 
 
 

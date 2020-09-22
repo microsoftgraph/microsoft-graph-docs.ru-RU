@@ -3,14 +3,14 @@ title: Тип ресурса Макосвппаппассигнедлиценс�
 description: Назначение лицензии на MacOS Volume Purchase Program. Этот класс не поддерживает операции создания, удаления и обновления.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: adec4b71d1ec221f0f6ebb9b3c3792f160b452f8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: aa621bcafd490590757e533862ad444fc6e0c72e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458830"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064264"
 ---
 # <a name="macosvppappassignedlicense-resource-type"></a>Тип ресурса Макосвппаппассигнедлиценсе
 
@@ -34,11 +34,11 @@ ms.locfileid: "43458830"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |усеремаиладдресс|String|Адрес электронной почты пользователя.|
 |userId|String|Идентификатор пользователя.|
 |userName|String|Имя пользователя.|
-|userPrincipalName|Строка|Имя участника-пользователя.|
+|userPrincipalName|String|Имя участника-пользователя.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -61,6 +61,9 @@ ms.locfileid: "43458830"
   "userPrincipalName": "String"
 }
 ```
+
+
+
 
 
 

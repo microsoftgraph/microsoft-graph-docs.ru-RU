@@ -3,14 +3,14 @@ title: Список windows10CertificateProfileBases
 description: Список свойств и связей объектов windows10CertificateProfileBase.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 31c0b8957193d4dc00be900370e8542cf9bf2d9c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ee8067fdc1fd5c054a61b929f3f753f98ffbd8b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43340944"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065699"
 ---
 # <a name="list-windows10certificateprofilebases"></a>Список windows10CertificateProfileBases
 
@@ -47,10 +47,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [windows10CertificateProfileBase](../resources/intune-deviceconfig-windows10certificateprofilebase.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -113,6 +113,9 @@ Content-Length: 1668
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Удаление Виндовсинформатионпротектион
 description: Удаляет объект Виндовсинформатионпротектионвипеактион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a507754c8688905485e646c24d1e3076bbf21559
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8f3f8f3f23e4677fa5a9e894eb2c1ca6ae9a9179
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440765"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064929"
 ---
 # <a name="delete-windowsinformationprotectionwipeaction"></a>Удаление Виндовсинформатионпротектионвипеактион
 
@@ -46,10 +46,10 @@ DELETE /deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInfo
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -60,11 +60,14 @@ DELETE /deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInfo
 DELETE https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInformationProtectionWipeActionId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

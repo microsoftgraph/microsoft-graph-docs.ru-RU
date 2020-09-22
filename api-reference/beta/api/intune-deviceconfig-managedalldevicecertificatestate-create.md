@@ -3,14 +3,14 @@ title: Создание Манажедаллдевицецертификатес
 description: Создание нового объекта Манажедаллдевицецертификатестате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 44c9b00511dc3bd8e4a1c9fb9226e6e62a80dc22
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 5da5f76b99a90410c5728be598843e7436601755
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45122975"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065853"
 ---
 # <a name="create-managedalldevicecertificatestate"></a>Создание Манажедаллдевицецертификатестате
 
@@ -53,7 +53,7 @@ POST /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |цертификатеревокестатус|[цертификатеревокатионстатус](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзыв состояния. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
 |цертификатеревокестатусластчанжедатетиме|DateTimeOffset|Время последнего изменения состояния отзыва|
 |манажеддевицедисплайнаме|String|Отображаемое имя устройства|
@@ -122,6 +122,9 @@ Content-Length: 869
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
+
+
+
 
 
 

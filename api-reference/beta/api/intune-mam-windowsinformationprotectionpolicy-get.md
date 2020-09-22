@@ -3,14 +3,14 @@ title: Получение объекта windowsInformationProtectionPolicy
 description: Чтение свойств и связей объекта windowsInformationProtectionPolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d32f9a6af0d654c56e9e2d1f26450fe8762b9e39
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 628c3517e707472f99b62cc0103f5e0c1cd8e6e6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178173"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064971"
 ---
 # <a name="get-windowsinformationprotectionpolicy"></a>Получение объекта windowsInformationProtectionPolicy
 
@@ -52,7 +52,7 @@ GET /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformatio
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -213,6 +213,9 @@ Content-Length: 4832
   }
 }
 ```
+
+
+
 
 
 

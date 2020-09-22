@@ -3,14 +3,14 @@ title: Список Апплогколлектионрекуестс
 description: Список свойств и связей объектов appLogCollectionRequest.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 287bb5d12b18498d79d2d59dbdbf4df929d2f905
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c22cc82f31e831887a8b04ce9ec394a7095b0fee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426824"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062661"
 ---
 # <a name="list-applogcollectionrequests"></a>Список Апплогколлектионрекуестс
 
@@ -46,10 +46,10 @@ GET /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEv
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -82,6 +82,9 @@ Content-Length: 371
   ]
 }
 ```
+
+
+
 
 
 

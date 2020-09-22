@@ -3,14 +3,14 @@ title: Тип ресурса bitLockerRemovableDrivePolicy
 description: Политика BitLocker в отношении съемных дисков.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 78ce6f77c90e3b9356ccc75a6a202a9983b11874
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 645884953efb3814e3b74d96c2577ed37d202199
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449105"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062815"
 ---
 # <a name="bitlockerremovabledrivepolicy-resource-type"></a>Тип ресурса bitLockerRemovableDrivePolicy
 
@@ -45,6 +45,8 @@ ms.locfileid: "43449105"
   "blockCrossOrganizationWriteAccess": true
 }
 ```
+
+
 
 
 

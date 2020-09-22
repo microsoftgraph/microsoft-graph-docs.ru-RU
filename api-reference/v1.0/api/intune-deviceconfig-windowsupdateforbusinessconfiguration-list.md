@@ -3,14 +3,14 @@ title: Перечисление объектов windowsUpdateForBusinessConfigu
 description: Перечисление свойств и связей объектов windowsUpdateForBusinessConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5bb0f6bc3e180ee02de9c1a860760f8f7d1c88c6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3c0772abf8a8500b1c1308130aaa2428027ca575
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388878"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063200"
 ---
 # <a name="list-windowsupdateforbusinessconfigurations"></a>Перечисление объектов windowsUpdateForBusinessConfiguration
 
@@ -41,13 +41,13 @@ GET /deviceManagement/deviceConfigurations
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -96,6 +96,9 @@ Content-Length: 1211
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4af7bb87f292ac309cb1837cff3772fcafddc767
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fb8cb0d3a6ac8e92550ebd7eb5e225194c9f84c5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43387351"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062990"
 ---
 # <a name="get-manager"></a>Получение имени руководителя
 
@@ -48,7 +48,7 @@ GET /contacts/{id}/manager
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -84,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/contacts/{id}/manager
 ---
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 >**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {
@@ -131,3 +131,4 @@ Content-length: 455
   ]
 }
 -->
+

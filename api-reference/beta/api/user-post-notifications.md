@@ -5,16 +5,16 @@ localization_priority: Normal
 ms.prod: notifications
 doc_type: apiPageType
 author: merzink
-ms.openlocfilehash: b66544406372c2eaa7be6f8f4261c75cbd7c6c5e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7296a136a4d2bab38eaf8ef25790019abc05bf6b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451668"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064523"
 ---
 # <a name="create-and-send-a-notification"></a>Создание и отправление уведомления
 
-Пространство имен: Microsoft. Graph[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создание и отправка уведомления, предназначенного для пользователя с помощью Microsoft Graph. Уведомление хранится в хранилище каналов уведомлений Microsoft Graph и отправляется всем клиентам приложений во всех конечных точках устройств, в которых пользователь вошел в систему.  
 
@@ -42,14 +42,14 @@ POST /me/notifications/
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя | Описание|
 |:----|:-----------|
-|Авторизация | Заголовок Authorization используется для передачи учетных данных вызывающей стороны. Bearer {Token}. Обязательный. |
+|Авторизация | Заголовок Authorization используется для передачи учетных данных вызывающей стороны. Bearer {Token}. Обязательно. |
 |X – УНС — ID | Усернотификатионсубскриптионид, возвращенный службой уведомлений Microsoft Graph после создания подписки, и используется для назначения определенного пользователя. Обязательный параметр. |
 |Content-Type | application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [уведомления](../resources/projectrome-notification.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика, указывающий, что уведомление было успешно создано и сохранено. В дальнейшем уведомление будет развертывание которого выполняется на все указанные конечные точки с действующей подпиской. 
 
 В следующей таблице перечислены возможные коды ошибок и ответов, которые могут быть возвращены.
@@ -61,7 +61,7 @@ POST /me/notifications/
 |HttpStatusCode. запрещено            | Абонент находится в списке заблокированных.                          |
 |HttpStatusCode. Месодноталловед     | Используемый метод HTTP не поддерживается.                     |
 |HttpStatusCode. Бадрекуест           | В запросе присутствуют Неподдерживаемые заголовки. Два заголовка не поддерживаются:<br/><br/>If — Modified — с<br/>Если — Range |                    
-|HttpStatusCode. Унсуппортедмедиатипе | Заголовок Content-Encoding присутствует и имеет значения алгоритма сжатия, отличные от `Deflate` or `Gzip`.  |
+|HttpStatusCode. Унсуппортедмедиатипе | Заголовок Content-Encoding присутствует и имеет значения алгоритма сжатия, отличные от `Deflate` OR `Gzip` .  |
 |HttpStatusCode. Бадрекуест           | Недопустимые полезные данные.                                           |
 |HttpStatusCode. запрещено            | Абонент не имеет прав на действия от имени пользователя или отправлять уведомление пользователю.                         |
 |HttpStatusCode. несанкционированный         |  Текст запроса содержит недопустимые типы данных о действиях.        |
@@ -126,3 +126,5 @@ request-id: 71e62feb-8d72-4912-8b2c-4cee9d89e781
     }
 }
 ```
+
+

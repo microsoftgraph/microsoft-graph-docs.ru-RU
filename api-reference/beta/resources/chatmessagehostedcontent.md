@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8f1577ab7ded60dfd3cad88641bfb11f83d6ad5b
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: aff1033a68f2e98b5ea5f1ca940a2be026ae18c0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630293"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064274"
 ---
 # <a name="chatmessagehostedcontent-resource-type"></a>Тип ресурса Чатмессажехостедконтент
 
@@ -45,7 +45,7 @@ ms.locfileid: "46630293"
 |:----------------------------------|:-------|:--------------------------------
 | @microsoft. Graph. Темпорарид      | string | Только для записи. Представляет Темпорарид для размещаемого контента при публикации сообщения для ссылки на размещенный контент в ресурсе **chatMessage** , который отправляется.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -68,7 +68,7 @@ ms.locfileid: "46630293"
   "@microsoft.graph.temporaryId": "String (identifier)",
   "id": "String (identifier)",
   "contentBytes": "String (binary)",
-  "contentType": "String",
+  "contentType": "String"
 }
 ```
 
@@ -81,3 +81,5 @@ ms.locfileid: "46630293"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ae26f5b5a5a109145daa132837890943a98c8c0d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d8f2cc7e08820c05a0f5ef0ead66107bfa0f357c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451632"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064425"
 ---
 # <a name="user-translateexchangeids"></a>Пользователь: Транслатиксчанжеидс
 
@@ -45,7 +45,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 |:-----|:------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
@@ -63,20 +63,20 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 | рестид | Формат идентификатора по умолчанию, используемый Microsoft Graph. |
 | рестиммутаблинтрид | Неизменяемый формат идентификатора, используемый Microsoft Graph. |
 
-Двоичные форматы (`entryId` и `immutableEntryId`) являются безопасными в URL-адресах в кодировке Base64. Безопасность URL реализована путем изменения кодировки base64 двоичных данных следующим образом:
+Двоичные форматы ( `entryId` и `immutableEntryId` ) являются безопасными в URL-адресах в кодировке Base64. Безопасность URL реализована путем изменения кодировки base64 двоичных данных следующим образом:
 
-- Замените `+` на`-`
-- Замените `/` на`_`
-- Удалите все замыкающие символы заполнения (`=`).
-- Добавьте целое число в конец строки, указывающую количество заполненных символов в исходной (`0`, `1`или `2`).
+- Замените `+` на `-`
+- Замените `/` на `_`
+- Удалите все замыкающие символы заполнения ( `=` ).
+- Добавьте целое число в конец строки, указывающую количество заполненных символов в исходной ( `0` , `1` или `2` ).
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и коллекцию [конвертидресулт](../resources/convertidresult.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию [конвертидресулт](../resources/convertidresult.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
-В приведенном ниже примере показано, как преобразовать несколько идентификаторов из стандартного формата REST API`restId`() в неизменяемый формат REST`restImmutableEntryId`().
+В приведенном ниже примере показано, как преобразовать несколько идентификаторов из стандартного формата REST API ( `restId` ) в неизменяемый формат REST ( `restImmutableEntryId` ).
 
 ### <a name="request"></a>Запрос
 
@@ -153,3 +153,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

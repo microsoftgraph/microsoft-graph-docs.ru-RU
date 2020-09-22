@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 48732e9d0b0e45405c3f9e167c05d5c5adef8426
-ms.sourcegitcommit: 3834b7b0287ee71668c52c42d3465ca19366e678
+ms.openlocfilehash: 1d11f91c57e8135dd4cfbfcc7960ae0334296afa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43082197"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48063018"
 ---
 # <a name="orgcontact-delta"></a>orgContact: Delta
 
@@ -62,13 +62,13 @@ GET /contacts/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Носитель &lt;токен&gt;. Обязательный.|
+| Authorization  | Носитель &lt;токен&gt;. Обязательный.|
 | Prefer | return=minimal <br><br>Указание этого заголовка с запросом, использующим параметр `deltaLink`, приведет к возвращению только свойств объекта, измененных с момента последнего цикла. Необязательно. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [orgContact](../resources/orgcontact.md) коллекции AB в теле отклика. Оклик также содержит URL-адрес `nextLink` или `deltaLink`.
 
@@ -315,3 +315,4 @@ Content-type: application/json
   ]
 }
 -->
+

@@ -3,14 +3,14 @@ title: Создание Виндовсинформатионпротектион
 description: Создание нового объекта Виндовсинформатионпротектионвипеактион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 18174f52cc5adec826ff497797f92ec7ce0516c6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 80e178a402b91c761d655dabc160aeb511127266
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440796"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064943"
 ---
 # <a name="create-windowsinformationprotectionwipeaction"></a>Создание Виндовсинформатионпротектионвипеактион
 
@@ -46,7 +46,7 @@ POST /deviceAppManagement/windowsInformationProtectionWipeActions
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Виндовсинформатионпротектионвипеактион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Виндовсинформатионпротектионвипеактион.
@@ -63,7 +63,7 @@ POST /deviceAppManagement/windowsInformationProtectionWipeActions
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсинформатионпротектионвипеактион](../resources/intune-mam-windowsinformationprotectionwipeaction.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -104,6 +104,9 @@ Content-Length: 461
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
+
+
+
 
 
 

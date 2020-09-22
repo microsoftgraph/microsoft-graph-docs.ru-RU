@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3e722ea2ee069f5ea18f27c26e658847dfdfabdd
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 5ecfb05e3808c18a7dad79cb8a1512598927857f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107355"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064455"
 ---
 # <a name="send-mail"></a>Отправка почты
 
@@ -47,7 +47,7 @@ POST /users/{id | userPrincipalName}/sendMail
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -334,3 +334,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

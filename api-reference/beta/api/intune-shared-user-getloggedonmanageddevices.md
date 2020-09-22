@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a39a8e352b0fdbd40b30de8bb2c442dee667e791
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1637d32922d538a24bc14df5a0850a3f4e6f0593
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447516"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062542"
 ---
 # <a name="getloggedonmanageddevices-function"></a>Функция Жетлогжедонманажеддевицес
 
@@ -29,10 +29,10 @@ ms.locfileid: "43447516"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений||
-| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -50,13 +50,13 @@ GET /users/{usersId}/getLoggedOnManagedDevices
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха эта функция возвращает код `200 OK` отклика и коллекцию [managedDevice](../resources/intune-devices-manageddevice.md) в тексте отклика.
+В случае успеха эта функция возвращает `200 OK` код отклика и коллекцию [managedDevice](../resources/intune-devices-manageddevice.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -234,6 +234,9 @@ Content-Length: 7485
   ]
 }
 ```
+
+
+
 
 
 

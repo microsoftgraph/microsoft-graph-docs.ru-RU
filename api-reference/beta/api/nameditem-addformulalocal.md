@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: ruoyingl
-ms.openlocfilehash: d1c10057cc73726074bfef17771824917215da99
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 02572edce528f12162d0b0a41b169fc8cc9065d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810794"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062383"
 ---
 # <a name="add-named-item-formulalocal"></a>Add Named Item FormulaLocal
 
@@ -23,7 +23,7 @@ ms.locfileid: "46810794"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Files.ReadWrite, Sites.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Sites.Read.All |
+|Для приложений | Sites.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -126,3 +126,5 @@ Content-length: 109
   "suppressions": [
   ]
 }-->
+
+

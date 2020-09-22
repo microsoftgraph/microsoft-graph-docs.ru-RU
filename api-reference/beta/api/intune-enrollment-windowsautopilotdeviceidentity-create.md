@@ -3,14 +3,14 @@ title: Создание windowsAutopilotDeviceIdentity
 description: Создание нового объекта windowsAutopilotDeviceIdentity.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 01f7f4f0216f11cc968cd147ca0b477add65eed9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1b10e378fa294d35d343487b96fa4627aba50ae8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452418"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062654"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Создание windowsAutopilotDeviceIdentity
 
@@ -47,7 +47,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта windowsAutopilotDeviceIdentity в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании windowsAutopilotDeviceIdentity.
@@ -58,10 +58,10 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |деплойментпрофилеассигнментстатус|[виндовсаутопилотпрофилеассигнментстатус](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Состояние назначения профиля устройства автопилота Windows. Возможные значения: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |деплойментпрофилеассигнментдетаиледстатус|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Подробное состояние назначения профиля для устройства автопилота Windows. Возможные значения: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`.|
 |деплойментпрофилеассигнеддатетиме|DateTimeOffset|Время настройки профиля для устройства автопилота Windows.|
-|orderIdentifier|String|Идентификатор заказа устройства с автопилотом Windows — не является устаревшим|
+|orderIdentifier|Строка|Идентификатор заказа устройства с автопилотом Windows — не является устаревшим|
 |грауптаг|String|Тег Group для устройства автопилота Windows.|
 |пурчасеордеридентифиер|String|Идентификатор заказа на покупку для устройства автопилота Windows.|
-|serialNumber|String|Серийный номер устройства Windows Autopilot.|
+|serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
 |manufacturer|String|OEM-производитель устройства автопилота Windows.|
 |model|String|Имя модели для устройства автопилота Windows.|
@@ -74,11 +74,11 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |системфамили|String|Семейство системы|
 |Свойства azureactivedirectorydeviceid|String|ИДЕНТИФИКАТОР устройства AAD|
 |манажеддевицеид|String|Управляемый идентификатор устройства|
-|displayName|Строка|"Display Name" (Отображаемое имя);|
+|displayName|String|"Display Name" (Отображаемое имя);|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -147,6 +147,9 @@ Content-Length: 1124
   "displayName": "Display Name value"
 }
 ```
+
+
+
 
 
 

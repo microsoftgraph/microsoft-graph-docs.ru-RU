@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 52d251346c5255b5943aeda6fde7c5ab10403b3a
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 63699612e0c8037d3d642931ef0d15f81ceef595
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46789904"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064411"
 ---
 # <a name="teamsappinstallation-upgrade"></a>Теамсаппинсталлатион: обновление
 
@@ -28,7 +28,7 @@ ms.locfileid: "46789904"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteForUser |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsAppInstallation.ReadWriteForUser.All |
+|Для приложений | TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -105,3 +105,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

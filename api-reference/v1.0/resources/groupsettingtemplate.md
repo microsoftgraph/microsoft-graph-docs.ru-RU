@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 0d1d1359a515d854b71fab5b01792d1e31843343
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: f103ae27065701951cb7a7881ebaa898d455243c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896926"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062934"
 ---
 # <a name="groupsettingtemplate-resource-type"></a>Тип ресурса groupSettingTemplate
 
@@ -30,7 +30,7 @@ ms.locfileid: "44896926"
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
 |description|String| Описание шаблона. |
-|displayName|Строка| Отображаемое имя шаблона. |
+|displayName|String| Отображаемое имя шаблона. |
 |id|String| Уникальный идентификатор шаблона. Только для чтения.|
 |values|Коллекция [сеттингтемплатевалуе](settingtemplatevalue.md)| Коллекция Settingtemplatevalue, в которой перечислены набор доступных параметров, значения по умолчанию и типы, которые составляют этот шаблон. |
 
@@ -72,3 +72,4 @@ ms.locfileid: "44896926"
   "section": "documentation",
   "tocPath": ""
 }-->
+

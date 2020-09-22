@@ -3,14 +3,14 @@ title: Список Интунебрандингпрофилес
 description: Список свойств и связей объектов Интунебрандингпрофиле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c31a0dde4e080e058a360371a31185678369614b
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 830a460a212ef428f95571441907f8cc7745ceff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46790709"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062458"
 ---
 # <a name="list-intunebrandingprofiles"></a>Список Интунебрандингпрофилес
 
@@ -29,7 +29,7 @@ ms.locfileid: "46790709"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,7 +49,7 @@ GET /deviceManagement/intuneBrandingProfiles
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2377
+Content-Length: 2416
 
 {
   "value": [
@@ -125,6 +125,7 @@ Content-Length: 2377
       "showOfficeWebApps": true,
       "sendDeviceOwnershipChangePushNotification": true,
       "enrollmentAvailability": "availableWithoutPrompts",
+      "disableClientTelemetry": true,
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ]
@@ -132,6 +133,9 @@ Content-Length: 2377
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2cf41a75f829b9b694b41d7fc0ea543ba6c39523
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 5edd2a501b3e1a5633f0bd01ac36815201eb927d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383632"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064376"
 ---
 # <a name="failureinfo-resource-type"></a>Тип ресурса Фаилуреинфо
 
@@ -34,7 +34,7 @@ ms.locfileid: "44383632"
 |reason|String|Классификация причин сбоя вызова или части вызова.|
 |разместить|Microsoft. Graph. Каллрекордс. Фаилурестаже|Рабочая область при возникновении ошибки. Возможные значения: `unknown`, `callSetup`, `midcall`, `unknownFutureValue`.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -63,3 +63,5 @@ ms.locfileid: "44383632"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

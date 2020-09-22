@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 65d5857f253f3d5a94d8043b843fb95cb00421f6
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 3ace6599bab823911dcd5704b7424e198daa4e30
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330410"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064589"
 ---
 # <a name="update-set"></a>Набор обновлений
 Пространство имен: Microsoft. Graph. банка
@@ -135,3 +135,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

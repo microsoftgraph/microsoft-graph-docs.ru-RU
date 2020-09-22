@@ -3,14 +3,14 @@ title: Удаление объекта managedMobileApp
 description: Удаляет объект managedMobileApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0963b69ee720f7bd4955623505a53e9f279ade18
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 421d740b1bd84c7b7f8a6f8d1ce61bc697dd972e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468272"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48065041"
 ---
 # <a name="delete-managedmobileapp"></a>Удаление объекта managedMobileApp
 
@@ -49,10 +49,10 @@ DELETE /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedApp
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -63,11 +63,14 @@ DELETE /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedApp
 DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps/{managedMobileAppId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

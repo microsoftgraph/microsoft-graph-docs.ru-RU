@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a2e7fdf3cbe3eabb575d256f405f565e1bec151e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 406564fa875541eb1d7fb8750172df5094bc482b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452815"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48062290"
 ---
 # <a name="create-tablerow"></a>Создание объекта TableRow
 
@@ -46,7 +46,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -54,9 +54,9 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 |index|number|Необязательный параметр. Определяет относительную позицию новой строки. Если параметру присвоено значение null, строка добавляется в конце. Все строки ниже вставляемой строки сдвигаются вниз. Используется нулевой индекс.|
 |values|(логическая или числовая) коллекция|Двухмерный массив неформатированных значений строк таблицы.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [воркбуктаблеров](../resources/workbooktablerow.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбуктаблеров](../resources/workbooktablerow.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 В этом примере две строки данных вставляются в конец таблицы. 
@@ -92,7 +92,7 @@ Content-length: 51
 ---
 
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -123,3 +123,5 @@ Content-length: 45
   ]
 }
 -->
+
+
