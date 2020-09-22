@@ -3,14 +3,14 @@ title: Список Андроиддевицеовнервификонфигур
 description: Список свойств и связей объектов Андроиддевицеовнервификонфигуратион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a3aaab638f2e70281591b52e8951601a3f5f4593
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 71e0008b2f525882f0e85c5116c6f5e0c099b6b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436010"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025146"
 ---
 # <a name="list-androiddeviceownerwificonfigurations"></a>Список Андроиддевицеовнервификонфигуратионс
 
@@ -44,13 +44,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [андроиддевицеовнервификонфигуратион](../resources/intune-deviceconfig-androiddeviceownerwificonfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -114,6 +114,9 @@ Content-Length: 1643
   ]
 }
 ```
+
+
+
 
 
 

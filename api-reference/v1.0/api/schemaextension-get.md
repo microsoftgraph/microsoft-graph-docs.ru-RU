@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 194b1ecbb31c6674ac8e285792d302fc2ee4ae76
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 61031c5b187d31dc5b81931f3d4ce41ed9005368
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863146"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025524"
 ---
 # <a name="get-schemaextension"></a>Получение schemaExtension
 
@@ -24,7 +24,7 @@ ms.locfileid: "44863146"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User. Read, Application. Read. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Application.Read.All |
+|Для приложений | Application.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /schemaExtensions/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type   | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -100,3 +100,4 @@ Content-length: 201
   "section": "documentation",
   "tocPath": ""
 }-->
+

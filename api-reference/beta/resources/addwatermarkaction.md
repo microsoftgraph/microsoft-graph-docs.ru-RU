@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 2a94f517fe9f5da207febf9e776643a7c17c18d2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 884553ce1181fd3d79fe0e953fe7703b386698b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508403"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024451"
 ---
 # <a name="addwatermarkaction-resource-type"></a>Тип ресурса Аддватермаркактион
 
@@ -24,12 +24,12 @@ ms.locfileid: "42508403"
 
 | Свойство      | Тип   | Описание                                                      |
 | :------------ | :----- | :--------------------------------------------------------------- |
-| фонтколор     | Строка | Цвет шрифта, который будет использоваться для водяного знака.                      |
-| fontName      | Строка | Имя шрифта, который будет использоваться для водяного знака.                       |
+| фонтколор     | String | Цвет шрифта, который будет использоваться для водяного знака.                      |
+| fontName      | String | Имя шрифта, который будет использоваться для водяного знака.                       |
 | fontSize      | Int32  | Размер шрифта, используемый для водяного знака.                              |
 | макет        | String | Возможные значения: `horizontal`, `diagonal`.                   |
-| текст          | Строка | Содержимое водяного знака.                            |
-| уиелементнаме | Строка | Имя элемента пользовательского интерфейса, в котором следует поместить водяной знак. |
+| текст          | String | Содержимое водяного знака.                            |
+| уиелементнаме | String | Имя элемента пользовательского интерфейса, в котором следует поместить водяной знак. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -64,3 +64,4 @@ ms.locfileid: "42508403"
   "section": "documentation",
   "tocPath": ""
 }-->
+

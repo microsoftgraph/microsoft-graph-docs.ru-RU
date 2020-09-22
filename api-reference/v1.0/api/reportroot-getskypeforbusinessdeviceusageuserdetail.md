@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 9f76f961093f91f2e058fe84321b2c1c62dcb40d
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 3aeb31835e43eff15c179a034a68e68a86d6f921
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44893650"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025538"
 ---
 # <a name="reportroot-getskypeforbusinessdeviceusageuserdetail"></a>reportRoot: getSkypeForBusinessDeviceUsageUserDetail
 
@@ -30,7 +30,7 @@ ms.locfileid: "44893650"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                           |
 | Для приложений                            | Reports.Read.All                         |
 
-**Примечание**. Чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю соответствующую роль ограниченного администратора Azure AD. Более подробную информацию [можно узнать в статье авторизация для API для чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
+**Примечание**. Чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю соответствующую роль ограниченного администратора Azure AD. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessDeviceUsageUserD
 ```
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -133,3 +133,4 @@ Report Refresh Date,User Principal Name,Last Activity Date,Used Windows,Used Win
   "suppressions": [
   ]
 }-->
+

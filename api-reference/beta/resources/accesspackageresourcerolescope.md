@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 719f2ac275a19c9e4cef4cb2403166933e2e5925
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c96d5a0499ae269c7ce67bae2252c6521d66eb7b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508508"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024649"
 ---
 # <a name="accesspackageresourcerolescope-resource-type"></a>Тип ресурса Акцесспаккажересаурцеролескопе
 
@@ -37,7 +37,7 @@ ms.locfileid: "42508508"
 |модифиедби|String|Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
@@ -91,3 +91,5 @@ ms.locfileid: "42508508"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

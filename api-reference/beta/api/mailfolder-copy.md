@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9ebaa9147fd909c46f55ce569cfe328167a3908f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 547386dd82ad00750b2c80800af1e622314c372b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457161"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024738"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
 
@@ -46,7 +46,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 | Авторизация | `Bearer {token}`. Обязательно. |
 | Content-Type | `application/json`. Обязательно. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -54,9 +54,9 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 |:----------|:-----|:------------|
 |destinationId|String|Идентификатор папки или имя известной папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и ресурс [mailFolder](../resources/mailfolder.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и ресурс [mailFolder](../resources/mailfolder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -136,3 +136,5 @@ Content-length: 179
   ]
 }
 -->
+
+

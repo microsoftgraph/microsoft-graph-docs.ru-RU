@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aaa5746274ada3f2109efa708aa331eafc6babc5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 067e7894cc5c5daa4cd73c5bb5ba88f66b283366
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43387314"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025272"
 ---
 # <a name="devicecategory-resource-type"></a>Тип ресурса deviceCategory
 
@@ -34,7 +34,7 @@ ms.locfileid: "43387314"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор категории устройства. Только для чтения.|
 |**Адаптация**|
-|displayName|Строка|Отображаемое имя категории устройств.|
+|displayName|String|Отображаемое имя категории устройств.|
 |description|String|Необязательное описание категории устройств.|
 
 ## <a name="relationships"></a>Связи
@@ -56,6 +56,8 @@ ms.locfileid: "43387314"
   "description": "String"
 }
 ```
+
+
 
 
 

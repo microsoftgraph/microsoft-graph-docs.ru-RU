@@ -3,14 +3,14 @@ title: Создание объекта roleAssignment
 description: Создание объекта roleAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: becb8ec776092e966bf4af24fc2c32dcad10a6a9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3b12bfbd0d1a9313f11bf1682ffdcef4aa62f8e6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43421019"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024796"
 ---
 # <a name="create-roleassignment"></a>Создание объекта roleAssignment
 
@@ -43,10 +43,10 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта roleAssignment в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта roleAssignment.
@@ -54,7 +54,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
-|displayName|Строка|Отображаемое или понятное имя назначения роли.|
+|displayName|String|Отображаемое или понятное имя назначения роли.|
 |description|String|Описание назначения роли.|
 |скопемемберс|Коллекция String|Список идентификаторов групп безопасности с элементами области применения ролей.  Эти идентификаторы берутся из Azure Active Directory.|
 |scopeType|[roleAssignmentScopeType](../resources/intune-rbac-roleassignmentscopetype.md);|Задает тип области для назначения роли. Тип по умолчанию "Ресаурцескопе" позволяет назначать Ресаурцескопес. Для "Аллдевицес", "Алллиценседусерс" и "Аллдевицесандлиценседусерс" свойство Ресаурцескопес должно оставаться пустым. Возможные значения: `resourceScope`, `allDevices`, `allLicensedUsers`, `allDevicesAndLicensedUsers`.|
@@ -109,6 +109,9 @@ Content-Length: 326
   ]
 }
 ```
+
+
+
 
 
 

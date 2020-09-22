@@ -3,14 +3,14 @@ title: Тип ресурса Термсандкондитионсграупас�
 description: Объект Термсандкондитионсграупассигнмент представляет назначение определенной политики условий (T&C) для данной группы. Чтобы зарегистрировать устройства в Intune, пользователям в группе необходимо принять условия.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f4d0faada84b0c8436399f4ebd7b1e07392edd4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 29cc8d853c9cb9bf426544681a9e69a0f4e4a5ea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43473860"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024376"
 ---
 # <a name="termsandconditionsgroupassignment-resource-type"></a>Тип ресурса Термсандкондитионсграупассигнмент
 
@@ -37,7 +37,7 @@ ms.locfileid: "43473860"
 |id|String|Уникальный идентификатор объекта.|
 |таржетграупид|String|Уникальный идентификатор группы, которой назначена политика T&C.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Ссылка для перехода к назначенным условиям.|
@@ -57,6 +57,9 @@ ms.locfileid: "43473860"
   "targetGroupId": "String"
 }
 ```
+
+
+
 
 
 

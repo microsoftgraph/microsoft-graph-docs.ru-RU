@@ -3,14 +3,14 @@ title: Список Виндовсаутопилотдеплойментпроф
 description: Список свойств и связей объектов Виндовсаутопилотдеплойментпрофилеассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7069764bc372ce1a7da396f099f478ed50244aae
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: e95c85c541f9cfbbbe691eea316ae69b426e551b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792045"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024817"
 ---
 # <a name="list-windowsautopilotdeploymentprofileassignments"></a>Список Виндовсаутопилотдеплойментпрофилеассигнментс
 
@@ -43,10 +43,10 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -83,6 +83,9 @@ Content-Length: 529
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: conceptualPageType
 author: ailae
-ms.openlocfilehash: 9f0a596670e879907ca780fa7f11189d6343bf3d
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 681465df2896d8c7ef9586b131b217676fec0683
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811555"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024551"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Использование REST API веб-канала активности
 
@@ -80,3 +80,5 @@ Each activity represents a unique...
 
 - Узнайте [, как Microsoft Office использует действия](https://channel9.msdn.com/events/Build/2017/B8108).
 - Сведения об [API веб-канала активности и возможностях, когда я остановились](https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011).
+
+

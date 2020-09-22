@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 7f4b9b7ac17b4afb2b24dca8fe2369bf66d4257f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 08c41531ec40b510813b9c324139fccc7948f018
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510972"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025623"
 ---
 # <a name="get-plannerassignedtotaskboardtaskformat"></a>Получение объекта plannerAssignedToTaskBoardTaskFormat
 
@@ -39,7 +39,7 @@ GET /planner/tasks/{id}/assignedToTaskBoardFormat
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код ответа `200 OK` и объект [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) в тексте ответа.
 
@@ -108,3 +108,4 @@ Content-length: 225
   "suppressions": [
   ]
 }-->
+

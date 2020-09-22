@@ -3,14 +3,14 @@ title: Тип ресурса Манажеддевицесуммаризедап�
 description: Событие, представляющее устройства пользователя с невыполненными или ожидающими приложениями.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 957d25e9b5dfe333529f228eecddb937b1752c2a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 566a2f4836f7f24143035b26336063d784e4b727
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43385717"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023970"
 ---
 # <a name="manageddevicesummarizedappstate-resource-type"></a>Тип ресурса Манажеддевицесуммаризедаппстате
 
@@ -28,7 +28,7 @@ ms.locfileid: "43385717"
 |суммаризедаппстате|[рунстате](../resources/intune-shared-runstate.md)|Рунстате для объекта. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |deviceId|String|DeviceId устройства, представленного этим объектом|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,6 +45,9 @@ ms.locfileid: "43385717"
   "deviceId": "String"
 }
 ```
+
+
+
 
 
 

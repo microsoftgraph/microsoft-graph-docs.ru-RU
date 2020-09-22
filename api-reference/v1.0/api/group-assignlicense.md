@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d12d45fcc913f340b29b77b85643ed1a9c55f7e2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a0772d0aca5a60bb4c5d9faa7d75efcd8d9ef385
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461496"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023704"
 ---
 # <a name="group-assignlicense"></a>Группа: Ассигнлиценсе
 
@@ -48,7 +48,7 @@ POST /groups/{id}/assignLicense
 |addLicenses|Коллекция [assignedLicense](../resources/assignedlicense.md)|Коллекция объектов [assignedLicense](../resources/assignedlicense.md), указывающих добавляемые лицензии. Вы можете отключить Сервицепланс, связанные с лицензией, задав свойство **дисабледпланс** для объекта [коллекция assignedlicense](../resources/assignedlicense.md) .|
 |removeLicenses|Коллекция GUID|Коллекция Скуидс, идентифицирующая лицензии, которые требуется удалить.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и целевой объект [Group](../resources/group.md) в тексте отклика.
 
@@ -205,3 +205,4 @@ location: https://graph.microsoft.com/v2/d056d009-17b3-4106-8173-cd3978ada898/di
   ]
 }
 -->
+

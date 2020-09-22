@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 271058e3ae56b2ded72c577f453d2af920d3ef0c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0b75a001e7673bbeb1513eaac82555d228d712f5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521140"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023963"
 ---
 # <a name="removewatermarkaction-resource-type"></a>Тип ресурса Ремовеватермаркактион
 
@@ -24,7 +24,7 @@ ms.locfileid: "42521140"
 
 | Свойство       | Тип              | Описание                           |
 | :------------- | :---------------- | :------------------------------------ |
-| уиелементнамес | Коллекция объектов string | Имя удаляемого элемента пользовательского интерфейса нижнего колонтитула. |
+| уиелементнамес | Коллекция String | Имя удаляемого элемента пользовательского интерфейса нижнего колонтитула. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -54,3 +54,4 @@ ms.locfileid: "42521140"
   "section": "documentation",
   "tocPath": ""
 }-->
+

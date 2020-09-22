@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d426252b6ab83557c3d3085ac4ffa7a530aae271
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e7a5675cdf150f03b283f664e248319d49c820d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508410"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024523"
 ---
 # <a name="addcontentheaderaction-resource-type"></a>Тип ресурса Аддконтенсеадерактион
 
@@ -28,7 +28,7 @@ ms.locfileid: "42508410"
 | фонтколор     | String | Цвет шрифта, который будет использоваться для заголовка.                      |
 | fontName      | String | Имя шрифта, используемого для заголовка.                       |
 | fontSize      | Int32  | Размер шрифта, используемый для заголовка.                              |
-| поля        | Int32  | Поле заголовка, начиная с верхнего края документа.        |
+| margin        | Int32  | Поле заголовка, начиная с верхнего края документа.        |
 | текст          | String | Содержимое самого верхнего колонтитула.                            |
 | уиелементнаме | String | Имя элемента пользовательского интерфейса, в котором следует поместить заголовок. |
 
@@ -66,3 +66,4 @@ ms.locfileid: "42508410"
   "section": "documentation",
   "tocPath": ""
 }-->
+

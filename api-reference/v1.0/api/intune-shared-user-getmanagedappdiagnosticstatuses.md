@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5a6d816da11ce25041d02523eeb647eb4ebd4aec
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b9d02243cad091753083cf2019fca501229e7d24
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411322"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023116"
 ---
 # <a name="getmanagedappdiagnosticstatuses-function"></a>Функция getManagedAppDiagnosticStatuses
 
@@ -26,7 +26,7 @@ ms.locfileid: "43411322"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)| _зависит от контекста_|
-| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
+| &nbsp;&nbsp;MAM | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -42,13 +42,13 @@ GET /users/{usersId}/getManagedAppDiagnosticStatuses
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении эта функция возвращает код отклика `200 OK` и коллекцию [managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -79,6 +79,9 @@ Content-Length: 249
   ]
 }
 ```
+
+
+
 
 
 

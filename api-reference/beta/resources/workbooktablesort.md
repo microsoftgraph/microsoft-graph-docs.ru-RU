@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 422c1836317d7299b2e485d578561dda6e1bab91
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 77f4fb1dcaed54c2b4cd992b7d6105e194812149
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519115"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023746"
 ---
 # <a name="workbooktablesort-resource-type"></a>Тип ресурса Воркбуктаблесорт
 
@@ -36,7 +36,7 @@ ms.locfileid: "42519115"
 |matchCase|boolean|Указывает, учитывался ли регистр при последней сортировке таблице. Только для чтения.|
 |method|string|Указывает метод сортировки китайских символов, который использовался при последней сортировке таблицы. Возможные значения: `PinYin`, `StrokeCount`. Только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |fields|[воркбуксортфиелд](workbooksortfield.md)|Указывает текущие условия, которые использовались при последней сортировке таблицы. Только для чтения.|
@@ -77,3 +77,5 @@ ms.locfileid: "42519115"
   "suppressions": []
 }
 -->
+
+

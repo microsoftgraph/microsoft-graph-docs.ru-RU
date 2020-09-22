@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 3941cd96dce048d7fe0e127a768b5bce09b42f8f
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: e27da6b9abc7e78a2740c7c0bff9afea8ea6fea1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898095"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025552"
 ---
 # <a name="reportroot-getskypeforbusinessparticipantactivitycounts"></a>reportRoot: getSkypeForBusinessParticipantActivityCounts
 
@@ -30,7 +30,7 @@ ms.locfileid: "44898095"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                           |
 | Для приложений                            | Reports.Read.All                         |
 
-**Примечание**. Чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю соответствующую роль ограниченного администратора Azure AD. Более подробную информацию [можно узнать в статье авторизация для API для чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
+**Примечание**. Чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю соответствующую роль ограниченного администратора Azure AD. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessParticipantActiv
 ```
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -128,3 +128,4 @@ Report Refresh Date,Report Date,Report Period,IM,Audio/Video,App Sharing,Web,Dia
   "suppressions": [
   ]
 }-->
+

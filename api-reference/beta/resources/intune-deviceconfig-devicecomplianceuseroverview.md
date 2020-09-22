@@ -3,14 +3,14 @@ title: Тип ресурса deviceComplianceUserOverview
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a1bf4da38dc307f60a8c58fffa7cca862a6271e2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c12f355332b40c374f35e04fea6acbf89a9a1e3f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469489"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024292"
 ---
 # <a name="devicecomplianceuseroverview-resource-type"></a>Тип ресурса deviceComplianceUserOverview
 
@@ -41,7 +41,7 @@ ms.locfileid: "43469489"
 |lastUpdateDateTime|DateTimeOffset|Время последнего обновления.|
 |configurationVersion|Int32|Версия политики для этого обзора|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -66,6 +66,9 @@ ms.locfileid: "43469489"
   "configurationVersion": 1024
 }
 ```
+
+
+
 
 
 

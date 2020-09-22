@@ -3,14 +3,14 @@ title: Тип ресурса onPremisesConditionalAccessSettings
 description: Одноэлементный объект, представляющий параметры условного доступа к локальной среде Exchange для клиента.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 44e0174ce6b7c8918e100c345189f79050038f9b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 354fa9af591e3c9837d24fe23d114480eea73e03
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441767"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025293"
 ---
 # <a name="onpremisesconditionalaccesssettings-resource-type"></a>Тип ресурса onPremisesConditionalAccessSettings
 
@@ -23,7 +23,7 @@ ms.locfileid: "43441767"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение объекта onPremisesConditionalAccessSettings](../api/intune-onboarding-onpremisesconditionalaccesssettings-get.md)|[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md);|Чтение свойств и связей объекта [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).|
+|[Получение объекта onPremisesConditionalAccessSettings](../api/intune-onboarding-onpremisesconditionalaccesssettings-get.md)|[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md)|Чтение свойств и связей объекта [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).|
 |[Обновление объекта onPremisesConditionalAccessSettings](../api/intune-onboarding-onpremisesconditionalaccesssettings-update.md)|[onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md)|Обновление свойств объекта [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).|
 
 ## <a name="properties"></a>Свойства
@@ -60,6 +60,8 @@ ms.locfileid: "43441767"
   "overrideDefaultRule": true
 }
 ```
+
+
 
 
 

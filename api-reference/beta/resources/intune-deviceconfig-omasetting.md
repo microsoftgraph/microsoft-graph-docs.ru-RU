@@ -3,14 +3,14 @@ title: Тип ресурса omaSetting
 description: Определение параметра OMA.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bfd4c72bc6018a4b49bcc20c0c1abd953052e471
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 88b5a45d466a50f3bdc9a5b53790ff5c10f53904
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43402038"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024047"
 ---
 # <a name="omasetting-resource-type"></a>Тип ресурса omaSetting
 
@@ -25,11 +25,11 @@ ms.locfileid: "43402038"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя.|
+|displayName|String|Отображаемое имя.|
 |description|String|Описание.|
 |omaUri|String|OMA.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,6 +47,9 @@ ms.locfileid: "43402038"
   "omaUri": "String"
 }
 ```
+
+
+
 
 
 

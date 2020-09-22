@@ -1,16 +1,16 @@
 ---
 title: 'servicePrincipal: Аддкэй'
-description: Добавление ключевых учетных данных в servicePrincipal.
+description: Добавление учетных данных ключа объекту servicePrincipal.
 localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 616d7d32419b19ec49da57771768ccffae88217b
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: b9a7470f13f99666a6f7e6bdfff53281c1b54b72
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383609"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025426"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipal: Аддкэй
 
@@ -25,13 +25,13 @@ ms.locfileid: "44383609"
 
 СервицепринЦипалс, у которых нет существующих действительных сертификатов (например, не было добавлено ни одного сертификата, или у всех сертификатов истек срок действия), не сможете использовать это действие службы. [Обновление servicePrincipal](../api/serviceprincipal-update.md) можно использовать для выполнения обновления.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Отсутствуют.  |
+|Делегированные (рабочая или учебная учетная запись) | Нет.  |
 |Делегированные (личная учетная запись Майкрософт) | Нет.    |
-|Приложение | Отсутствуют. |
+|Приложение | Нет. |
 
 > [!NOTE]
 > ServicePrincipal не требует каких – либо специальных разрешений для внесения в них собственных ключей.
@@ -57,9 +57,9 @@ POST /serviceprincipals/{id}/addKey
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| кэйкредентиал | [кэйкредентиал](../resources/keycredential.md) | Новые учетные данные ключа servicePrincipal для добавления. Для этого использования требуются свойства __Type__, __Usage__ и __Key__ . Поддерживаются следующие типы ключей:<br><ul><li>`AsymmetricX509Cert`: Использование должно быть `Verify` .</li><li>`X509CertAndPassword`: Использование должно быть`Sign`</li></ul>|
+| keyCredential | [keyCredential](../resources/keycredential.md) | Новые учетные данные ключа servicePrincipal для добавления. Для этого использования требуются свойства __Type__, __Usage__ и __Key__ . Поддерживаются следующие типы ключей:<br><ul><li>`AsymmetricX509Cert`: Использование должно быть `Verify` .</li><li>`X509CertAndPassword`: Использование должно быть `Sign`</li></ul>|
 | passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Необходимо задать только __секреттекст__ , который должен содержать пароль для ключа. Это свойство является обязательным только для ключей типа `X509CertAndPassword` . Задайте для него значение `null` другой.|
-| совмещен | String | Самозаверяющий маркер JWT, используемый в качестве подтверждения наличия существующих ключей. Этот маркер JWT должен быть подписан с помощью закрытого ключа одного из существующих действительных сертификатов servicePrincipal. Маркер должен содержать следующие утверждения:<ul><li>`aud`Необходимо указать аудиторию `00000002-0000-0000-c000-000000000000` .</li><li>`iss`-Issuer должен быть __идентификатором__ servicePrincipal, осуществляющим вызов.</li><li>`nbf`— Не до времени.</li><li>`exp`— Срок действия должен быть "NBF" + 10 минут.</li></ul><br>Ниже приведен [Пример](/graph/application-rollkey-prooftoken) кода, который можно использовать для создания этого маркера для проверки подлинности.|
+| совмещен | String | Самозаверяющий маркер JWT, используемый в качестве подтверждения наличия существующих ключей. Этот маркер JWT должен быть подписан с помощью закрытого ключа одного из существующих действительных сертификатов servicePrincipal. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` -Issuer должен быть __идентификатором__  servicePrincipal, осуществляющим вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Ниже приведен [Пример](/graph/application-rollkey-prooftoken) кода, который можно использовать для создания этого маркера для проверки подлинности.|
 
 
 ## <a name="response"></a>Отклик
@@ -116,7 +116,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -191,3 +191,4 @@ Content-Type: application/json
     "Error: serviceprincipal_addkey:\r\n      Resource type was null or missing, so we assume there is no response to validate."
     ]
 }-->
+

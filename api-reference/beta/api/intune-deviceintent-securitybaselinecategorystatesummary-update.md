@@ -3,14 +3,14 @@ title: Обновление Секуритибаселинекатегорист
 description: Обновление свойств объекта Секуритибаселинекатегористатесуммари.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c33744fa5d501db3d88b3e385198326a5b3f11f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 04f014cc683bdc098a54e1571f4cb2a8b8a1ee2c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381223"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022535"
 ---
 # <a name="update-securitybaselinecategorystatesummary"></a>Обновление Секуритибаселинекатегористатесуммари
 
@@ -43,10 +43,10 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.s
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [секуритибаселинекатегористатесуммари](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [секуритибаселинекатегористатесуммари](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md).
@@ -60,11 +60,11 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.s
 |errorCount|Int32|Количество устройств с ошибками, наследуемых от [секуритибаселинестатесуммари](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
 |conflictCount|Int32|Количество устройств с конфликтами, наследуемых от [секуритибаселинестатесуммари](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
 |notApplicableCount|Int32|Количество неприменимых устройств, наследуемых от [секуритибаселинестатесуммари](../resources/intune-deviceintent-securitybaselinestatesummary.md)|
-|displayName|Строка|Имя категории|
+|displayName|String|Имя категории|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [секуритибаселинекатегористатесуммари](../resources/intune-deviceintent-securitybaselinecategorystatesummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -107,6 +107,9 @@ Content-Length: 310
   "displayName": "Display Name value"
 }
 ```
+
+
+
 
 
 

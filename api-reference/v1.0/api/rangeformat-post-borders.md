@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c2b3948ed50dd7b5a84e5439860f41549b1195ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 740db5b32d091c0b0d08fe71e936eb68a477ec33
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510475"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023123"
 ---
 # <a name="create-rangeborder"></a>Создание объекта RangeBorder
 
@@ -43,9 +43,9 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [воркбукранжебордер](../resources/rangeborder.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [воркбукранжебордер](../resources/rangeborder.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [воркбукранжебордер](../resources/rangeborder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -88,7 +88,7 @@ Content-length: 136
 ---
 
 В тексте запроса добавьте представление объекта [воркбукранжебордер](../resources/rangeborder.md) в формате JSON.
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -120,3 +120,4 @@ Content-length: 136
   "suppressions": [
   ]
 }-->
+

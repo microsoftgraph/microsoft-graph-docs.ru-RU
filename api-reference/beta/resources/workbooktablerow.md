@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ba7b481f4b20033e1a4ffcd42ac92421bc3536a4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e20811129b069011db8b6a8ab9a6b762603b7600
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519122"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023760"
 ---
 # <a name="workbooktablerow-resource-type"></a>Тип ресурса Воркбуктаблеров
 
@@ -28,7 +28,7 @@ ms.locfileid: "42519122"
 |[Получение объекта TableRow](../api/tablerow-get.md) | [воркбуктаблеров](workbooktablerow.md) |Чтение свойств и связей объекта tableRow.|
 |[Обновление](../api/tablerow-update.md) | [воркбуктаблеров](workbooktablerow.md)  |Обновление объекта tableRow. |
 |[Range](../api/tablerow-range.md)|[workbookRange](workbookrange.md)|Получает объект диапазона, связанный со всей строкой.|
-|[удаление](../api/tablerow-delete.md);|Нет|Удаляет строку из таблицы.|
+|[Удаление](../api/tablerow-delete.md)|Нет|Удаляет строку из таблицы.|
 |[Список](../api/tablerow-list.md) | Коллекция [воркбуктаблеров](workbooktablerow.md) |Получение коллекции объектов tableRow. |
 |[Itemat](../api/tablerowcollection-itemat.md)|[воркбуктаблеров](workbooktablerow.md)|Получает строку на основании ее позиции в коллекции.|
 |[Add](../api/tablerowcollection-add.md)|[воркбуктаблеров](workbooktablerow.md)|Добавляет новую строку в таблицу.|
@@ -75,3 +75,5 @@ ms.locfileid: "42519122"
   "suppressions": []
 }
 -->
+
+

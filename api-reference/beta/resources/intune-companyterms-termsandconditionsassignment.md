@@ -3,14 +3,14 @@ title: Тип ресурса termsAndConditionsAssignment
 description: Объект termsAndConditionsAssignment представляет назначение определенной политики условий заданной группе. Чтобы зарегистрировать устройства в Intune, пользователям в группе необходимо принять условия.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 615bb6710f2acb82519cdbc87a0f8628f178b29e
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: cfbdd8f3d299e282d842673f8e9f3ee7b21cf3ea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793488"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024390"
 ---
 # <a name="termsandconditionsassignment-resource-type"></a>Тип ресурса termsAndConditionsAssignment
 
@@ -37,7 +37,7 @@ ms.locfileid: "44793488"
 |id|String|Уникальный идентификатор объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Объект, для которого назначается политика соблюдения условий.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -59,6 +59,9 @@ ms.locfileid: "44793488"
   }
 }
 ```
+
+
+
 
 
 

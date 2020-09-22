@@ -3,14 +3,14 @@ title: Update iosVppApp
 description: Обновление свойств объекта iosVppApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1e7b6302aae55b63a2e2faf327f2f82a030894bf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 299392cbc4353938c9d4329fcf68181d97a8916b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456128"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023284"
 ---
 # <a name="update-iosvppapp"></a>Update iosVppApp
 
@@ -41,7 +41,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -52,8 +52,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -71,7 +71,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 |appStoreUrl|String|URL-адрес магазина.|
 |licensingType|[vppLicensingType](../resources/intune-apps-vpplicensingtype.md)|Поддерживаемый тип лицензии.|
 |applicableDeviceType|[iosDeviceType](../resources/intune-apps-iosdevicetype.md)|Применимый тип устройства с iOS.|
-|vppTokenOrganizationName|Строка|Организация, связанная с токеном Apple Volume Purchase Program.|
+|vppTokenOrganizationName|String|Организация, связанная с токеном Apple Volume Purchase Program.|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|Тип программы оптовых покупок, с которой связан заданный токен Apple Volume Purchase Program. Возможные значения: `business`, `education`. Возможные значения: `business`, `education`.|
 |vppTokenAppleId|String|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
 |bundleId|String|Имя удостоверения.|
@@ -175,6 +175,9 @@ Content-Length: 1394
   "bundleId": "Bundle Id value"
 }
 ```
+
+
+
 
 
 

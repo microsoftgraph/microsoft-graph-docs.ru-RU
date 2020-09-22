@@ -3,14 +3,14 @@ title: Обновление объекта managedDeviceMobileAppConfigurationDe
 description: Обновление свойств объекта managedDeviceMobileAppConfigurationDeviceSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b832c02b12bda6586af93ae16e3a4f2c3d3ecda8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f8748a5df6c01a91a372e03e6f567c78abd59fe1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43405749"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025139"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicesummary"></a>Обновление объекта managedDeviceMobileAppConfigurationDeviceSummary
 
@@ -43,10 +43,10 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune-apps-manageddevicemobileappconfigurationdevicesummary.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [managedDeviceMobileAppConfigurationDeviceSummary](../resources/intune-apps-manageddevicemobileappconfigurationdevicesummary.md).
@@ -113,6 +113,9 @@ Content-Length: 409
   "configurationVersion": 4
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Обновление объекта deviceAndAppManagementRoleAssignment
 description: Обновление свойств объекта deviceAndAppManagementRoleAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d4e2c97a9217e011e357e87e6f1e45bbe0cefa2a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f4bc446f2a59244fcd6b02f157d25e260480524a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452725"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025678"
 ---
 # <a name="update-deviceandappmanagementroleassignment"></a>Обновление объекта deviceAndAppManagementRoleAssignment
 
@@ -41,7 +41,7 @@ PATCH /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -52,9 +52,9 @@ PATCH /deviceManagement/roleAssignments/{deviceAndAppManagementRoleAssignmentId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически. Наследуется от объекта [roleAssignment](../resources/intune-rbac-roleassignment.md).|
-|displayName|Строка|Отображаемое или понятное имя назначения роли. Наследуется от объекта [roleAssignment](../resources/intune-rbac-roleassignment.md).|
+|displayName|String|Отображаемое или понятное имя назначения роли. Наследуется от объекта [roleAssignment](../resources/intune-rbac-roleassignment.md).|
 |description|String|Описание назначения роли. Наследуется от объекта [roleAssignment](../resources/intune-rbac-roleassignment.md).|
-|resourceScopes|Коллекция строк|Список идентификаторов групп безопасности с элементами области применения ролей.  Эти идентификаторы берутся из Azure Active Directory. Наследуется от объекта [roleAssignment](../resources/intune-rbac-roleassignment.md).|
+|resourceScopes|Коллекция String|Список идентификаторов групп безопасности с элементами области применения ролей.  Эти идентификаторы берутся из Azure Active Directory. Наследуется от объекта [roleAssignment](../resources/intune-rbac-roleassignment.md).|
 |members|Коллекция String|Список идентификаторов групп безопасности с элементами ролей. Эти идентификаторы берутся из Azure Active Directory.|
 
 
@@ -104,6 +104,9 @@ Content-Length: 307
   ]
 }
 ```
+
+
+
 
 
 

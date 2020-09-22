@@ -1,22 +1,22 @@
 ---
-title: 'servicePrincipal: Чеккмемберграупс'
-description: Проверка участия в указанном списке групп. Возвращает из списка те группы, для которых у участника службы есть прямое или транзитивное членство.
+title: 'servicePrincipal: checkMemberGroups'
+description: Проверка членства в указанном списке групп. Возвращает из списка те группы, в которых субъект-служба состоит напрямую или транзитивно.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 74aca8149496509d91213a5866bf1acd053079fb
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: bca8a52ea2d10ba4dd32e871ab0dbadcf454bf00
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383610"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025398"
 ---
-# <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal: Чеккмемберграупс
+# <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal: checkMemberGroups
 
 Пространство имен: microsoft.graph
 
-Проверка участия в указанном списке групп. Возвращает из списка те группы, для которых у [servicePrincipal](../resources/serviceprincipal.md) есть прямое или транзитивное членство.
+Проверка членства в указанном списке групп. Возвращает из списка те группы, в которых [servicePrincipal](../resources/serviceprincipal.md) состоит напрямую или транзитивно.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,11 +44,11 @@ POST /servicePrincipals/{id}/checkMemberGroups
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|groupIds|Коллекция строк||
+|groupIds|Коллекция String||
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции String в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции строк в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 Ниже приведен пример вызова этого API.
@@ -124,3 +124,4 @@ Content-length: 39
   ]
 }
 -->
+

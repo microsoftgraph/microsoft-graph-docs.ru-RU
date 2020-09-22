@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 978b8f80b6a357ffeb2efced005e395787fedabf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 201f0c0ac11a0e26174661aa4d8a63baf23f7f3c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43457097"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024572"
 ---
 # <a name="accessreviewsettings-resource-type"></a>Тип ресурса Акцессревиевсеттингс
 
@@ -33,7 +33,7 @@ ms.locfileid: "43457097"
 | акцессрекоммендатионсенаблед | boolean |  |
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -54,6 +54,8 @@ ms.locfileid: "43457097"
     "accessRecommendationsEnabled":"boolean"
 }
 ```
+
+
 
 
 

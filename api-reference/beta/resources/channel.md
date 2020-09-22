@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 184ea90c229d222299848aaec1119aff9497d4af
-ms.sourcegitcommit: ab36e03d6bcb5327102214eb078d55709579d465
+ms.openlocfilehash: 8b055a8a76a888fc5fc2e3f213b8be69f34f6413
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46630314"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024445"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 
@@ -51,8 +51,21 @@ ms.locfileid: "46630314"
 |email|String| Адрес электронной почты для отправки сообщений в канал. Только для чтения.|
 |webUrl|String|Гиперссылка, ведущая к каналу в Microsoft Teams. Это URL-адрес, получаемый при щелчке правой кнопкой мыши по каналу в Microsoft Teams и выборе пункта "Получить ссылку на канал". Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. Только для чтения.|
 |membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|Тип канала. Можно настроить во время создания и нельзя изменить. Значение по умолчанию: standard.|
+|createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания канала.|
 
-## <a name="relationships"></a>Отношения
+### <a name="instance-attributes"></a>Атрибуты экземпляра
+
+Атрибуты экземпляра — это свойства с особым поведением. Эти свойства — временные и а) определяют поведение выполнения службы; или б) предоставляют краткосрочные значения свойств, например URL-адрес скачивания элемента, у которого истекает срок действия.
+
+| Имя свойства| Тип   | Описание
+|:-----------------------|:-------|:-------------------------|
+|@microsoft.graph.channelCreationMode|Строка|Указывает, что канал находится в состоянии миграции и в настоящее время используется для миграции. Принимает одно значение: `migration`.|
+
+> **Примечание**: `ChannelCreationMode` – перечисление, принимающее значение `migration`.
+
+Пример запроса POST см. в разделе [Запрос (создание канала в состоянии миграции)](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams#request-create-a-team-in-migration-state).
+
+## <a name="relationships"></a>Связи
 
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
@@ -60,6 +73,7 @@ ms.locfileid: "46630314"
 |tabs|Коллекция [teamsTab](../resources/teamstab.md)|Коллекция всех вкладок в канале. Свойство навигации.|
 |members|Коллекция [conversationMember](conversationmember.md)|Коллекция записей участников, сопоставленных с каналом.|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Метаданные для расположения, в котором хранятся файлы канала.|
+|operations|Коллекция [teamsAsyncOperation](teamsasyncoperation.md)| Асинхронные операции, которые выполнялись или выполняются для этой команды. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -82,7 +96,8 @@ ms.locfileid: "46630314"
   "isFavoriteByDefault": true,
   "email": "string",
   "webUrl": "string",
-  "membershipType": "channelMembershipType"
+  "membershipType": "channelMembershipType",
+  "createdDateTime": "string (timestamp)"
 }
 ```
 
@@ -98,3 +113,5 @@ ms.locfileid: "46630314"
   "suppressions": []
 }
 -->
+
+

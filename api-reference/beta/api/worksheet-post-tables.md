@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ea88fc2fdd0d5514cbcf4211ff8452d0fd51eb4c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e8bcf6989433750302b30595e29c2b101cf2234b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451189"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024670"
 ---
 # <a name="create-table"></a>Создание таблицы
 
@@ -40,17 +40,17 @@ POST /workbook/worksheets/{id|name}/tables/add
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами. 
 
 | Параметр       | Тип|Описание|
 |:---------------|:----------|:----------|
-| Адрес  | string| Адрес диапазона. Если вы вызываете этот API из `worksheets/{id|name}/tables/add` пути, нет необходимости поддерживать префикс имени листа в адресе. Тем не менее, если вы звоните по `workbook/tables/add` адресу, укажите имя листа, на котором необходимо создать таблицу (например: `sheet1!A1:D4`).|
+| Адрес  | string| Адрес диапазона. Если вы вызываете этот API из `worksheets/{id|name}/tables/add` пути, нет необходимости поддерживать префикс имени листа в адресе. Тем не менее, если вы звоните по `workbook/tables/add` адресу, укажите имя листа, на котором необходимо создать таблицу (например: `sheet1!A1:D4` ).|
 | hasHeaders  | boolean|Логическое значение, указывающее, имеет ли диапазон метки столбцов. Если источник не содержит заголовков (например, если этому свойству присвоено значение false), Excel автоматически создаст заголовок и сдвинет данные на одну строку вниз.|
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [воркбуктабле](../resources/workbooktable.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [воркбуктабле](../resources/workbooktable.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -119,3 +119,5 @@ Content-length: 109
   ]
 }
 -->
+
+

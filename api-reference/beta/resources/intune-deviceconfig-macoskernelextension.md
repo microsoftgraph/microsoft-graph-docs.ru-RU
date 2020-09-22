@@ -3,14 +3,14 @@ title: Тип ресурса Макоскернелекстенсион
 description: Представляет конкретное расширение ядра macOS. Расширение ядра macOS можно описать с помощью идентификатора группы и идентификатора пакета.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 457d13b2f3f78b52457afd7c30bf3b0e36ca4e92
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ef7004fd7be5340a7e5a1614e51d3ecdfd6f7ff4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447054"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024110"
 ---
 # <a name="macoskernelextension-resource-type"></a>Тип ресурса Макоскернелекстенсион
 
@@ -28,7 +28,7 @@ ms.locfileid: "43447054"
 |теамидентифиер|String|Идентификатор команды, использованный для подписи расширения ядра.|
 |bundleId|String|Идентификатор пакета расширения ядра.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,6 +45,9 @@ ms.locfileid: "43447054"
   "bundleId": "String"
 }
 ```
+
+
+
 
 
 

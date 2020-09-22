@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f603ae8ae2c80f9f177d7469013ebde9148bb948
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f22411e15b7c886847c366537a5f3a77f8283b7a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472245"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024591"
 ---
 # <a name="accessreviewdecision-resource-type"></a>Тип ресурса АкцессревиевдеЦисион
 
@@ -18,10 +18,10 @@ ms.locfileid: "43472245"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции [рецензирования Access](accessreviews-root.md) в `accessReviewDecision` Azure AD — представляет решение для проверки доступа к определенному объекту в Azure AD.  При просмотре доступа или экземпляре повторяющейся проверки доступа существует один `accessReviewDecision` проверенный пользователь.  Например, если в группе есть два гостей и один не гость, а для этой группы выполняется проверка доступа для гостей, то будут доступны два объекта решения для проверки доступа.  Если проверяющий изменяет свое решение или другой проверяющий переопределяет их, `accessReviewDecision` то обновляется.
+В функции [рецензирования Access](accessreviews-root.md) в Azure AD — `accessReviewDecision` представляет решение для проверки доступа к определенному объекту в Azure AD.  При просмотре доступа или экземпляре повторяющейся проверки доступа существует один `accessReviewDecision` проверенный пользователь.  Например, если в группе есть два гостей и один не гость, а для этой группы выполняется проверка доступа для гостей, то будут доступны два объекта решения для проверки доступа.  Если проверяющий изменяет свое решение или другой проверяющий переопределяет их, то `accessReviewDecision` обновляется.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 
 Нет.  Объекты этого типа автоматически создаются компонентом при инициализации проверки доступа и не могут быть удалены.  Они могут извлекаться из проверки доступа с помощью связей " [решения](../api/accessreview-listdecisions.md) " и " [мидеЦисионс](../api/accessreview-listmydecisions.md) ".
 
@@ -35,12 +35,12 @@ ms.locfileid: "43472245"
 | `accessReviewId`                |`String`                      | Созданный компонентом идентификатор проверки доступа.                                                                                       |
 | `reviewedBy`                    |[userIdentity](useridentity.md)| Удостоверение проверяющего. Если в качестве проверки использовалась рекомендация, параметр userPrincipalName пуст.                                                                                      |
 | `reviewedDate`                  |`DateTimeOffset`              | Дата и время, когда было предоставлено Последнее рецензирование для этого права доступа.                                                                         |
-| `reviewResult`                  |`String`                      | Результат проверки, один `NotReviewed`из, `Deny` `DontKnow` или. `Approve`                                                                                    |
+| `reviewResult`                  |`String`                      | Результат проверки, один из `NotReviewed` , `Deny` `DontKnow` или `Approve` .                                                                                    |
 | `justification`                 |`String`                      | Деловое обоснование проверяющего, если оно указано.                                                                         |
 | `appliedBy`                     |[userIdentity](useridentity.md)| По завершении проверки, если результаты были вручную применены, удостоверение пользователя, который применил решение. Если Рецензирование было применено автоматически, значение userPrincipalName пусто.                                                          |
 | `appliedDateTime`               |`DateTimeOffset`              | Дата и время применения решения проверки.                                                          |
-| `applyResult`                   |`String`                      | Результат `NotApplied`применения решения, один из, `Success` `Failed`, `NotFound` или. `NotSupported`                      |
-| `accessRecommendation`          |`String`                      | Созданная с помощью функции рекомендация, показанная рецензенту, один из `Approve` `Deny` или `NotAvailable`. |
+| `applyResult`                   |`String`                      | Результат применения решения, один из `NotApplied` ,, `Success` `Failed` `NotFound` или `NotSupported` .                      |
+| `accessRecommendation`          |`String`                      | Созданная с помощью функции рекомендация, показанная рецензенту, один из `Approve` `Deny` или `NotAvailable` . |
 
 
 Кроме того, могут присутствовать дополнительные свойства в зависимости от типа объекта, которому назначен доступ.  Например, если решение "Проверка доступа" является участником группы определенного пользователя или доступом к приложениям, то пользователь, который может получить доступ к нему, будет удален с помощью следующих свойств:
@@ -53,7 +53,7 @@ ms.locfileid: "43472245"
 
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.  Объекты этого типа можно получить из проверки доступа с помощью отношений [решений](../api/accessreview-listdecisions.md) и [МидеЦисионс](../api/accessreview-listmydecisions.md) в объекте [акцессревиев](accessreview.md) .
 
@@ -105,3 +105,5 @@ ms.locfileid: "43472245"
   "suppressions": []
 }
 -->
+
+

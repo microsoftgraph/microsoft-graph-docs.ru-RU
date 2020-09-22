@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 75d6865cc1f02dde270bedb40b6c0344d69a4bb9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 16e2967046797abce4ee04e7a8fae4d451447823
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509838"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025412"
 ---
 # <a name="list-securescores"></a>Перечисление объектов secureScores
 
@@ -57,7 +57,7 @@ GET /security/secureScores?$filter={property} eq '{property-value}'
 
 Не указывайте текст запроса для этого метода. Текст запроса будет игнорироваться.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов **секурескорес** в тексте отклика.
 
@@ -176,3 +176,4 @@ Content-type: application/json
   ]
 }
 -->
+

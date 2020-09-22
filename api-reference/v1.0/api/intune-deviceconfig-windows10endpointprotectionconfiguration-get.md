@@ -3,14 +3,14 @@ title: Get windows10EndpointProtectionConfiguration
 description: Чтение свойств и связей объекта windows10EndpointProtectionConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 49bca068bdf4ddfc5b24c4ba136243304b742e59
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3edfcf50d25b1848e61f69b64f4f10c8c5a2c591
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467437"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023130"
 ---
 # <a name="get-windows10endpointprotectionconfiguration"></a>Get windows10EndpointProtectionConfiguration
 
@@ -38,19 +38,19 @@ ms.locfileid: "43467437"
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -169,6 +169,9 @@ Content-Length: 4628
   }
 }
 ```
+
+
+
 
 
 

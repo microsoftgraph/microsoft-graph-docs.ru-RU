@@ -3,14 +3,14 @@ title: Получение Андроидимпортедпфксцертифик
 description: Чтение свойств и связей объекта Андроидимпортедпфксцертификатепрофиле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 64456c28852e4c208e7d8ad777f7557c48247438
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 80c954c1ea80367d31fa4b4acc5bb2b26184d1d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43344523"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025097"
 ---
 # <a name="get-androidimportedpfxcertificateprofile"></a>Получение Андроидимпортедпфксцертификатепрофиле
 
@@ -48,13 +48,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [андроидимпортедпфксцертификатепрофиле](../resources/intune-deviceconfig-androidimportedpfxcertificateprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -122,6 +122,9 @@ Content-Length: 1773
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Получение Граупполициуплоадедкатегори
 description: Чтение свойств и связей объекта Граупполициуплоадедкатегори.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e1de15daf90609875d283de25af6c62a89fc3e4b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b298e31a58a458ba28300ffadbaf1d2fbe936ad9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444678"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024810"
 ---
 # <a name="get-grouppolicyuploadedcategory"></a>Получение Граупполициуплоадедкатегори
 
@@ -49,13 +49,13 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [граупполициуплоадедкатегори](../resources/intune-grouppolicy-grouppolicyuploadedcategory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -83,6 +83,9 @@ Content-Length: 270
   }
 }
 ```
+
+
+
 
 
 

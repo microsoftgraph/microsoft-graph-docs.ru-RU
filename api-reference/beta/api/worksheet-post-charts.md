@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1ec6a1aa0d5d37e52924361f64e5e10291cf476b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e1c11cfc8c5c0876a01719c230ff03e1666396e3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42451198"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024691"
 ---
 # <a name="create-chart"></a>Создание объекта Chart
 
@@ -43,9 +43,9 @@ POST /workbook/worksheets/{id|name}/charts/
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [воркбукчарт](../resources/workbookchart.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [воркбукчарт](../resources/workbookchart.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [воркбукчарт](../resources/workbookchart.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -82,7 +82,7 @@ Content-length: 52
 ---
 
 В тексте запроса добавьте представление объекта [воркбукчарт](../resources/workbookchart.md) в формате JSON.
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -114,3 +114,5 @@ Content-length: 52
   ]
 }
 -->
+
+

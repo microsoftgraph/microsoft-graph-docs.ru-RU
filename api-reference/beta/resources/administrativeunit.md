@@ -5,12 +5,12 @@ localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3c6eb4b38f2af40d3c559da91ab3275086d0e652
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 024fe8619ced3287560ad6246ca3169577a56383
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450837"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024447"
 ---
 # <a name="administrativeunit-resource-type"></a>Тип ресурса administrativeUnit
 
@@ -36,8 +36,8 @@ ms.locfileid: "43450837"
 |[Создание](../api/administrativeunit-post-administrativeunits.md) | [administrativeUnit](administrativeunit.md) | Создайте новое административное подразделение.|
 |[List](../api/administrativeunit-list.md) | Коллекция [administrativeUnit](administrativeunit.md) |Список свойств всех Административеунитс.|
 |[получение](../api/administrativeunit-get.md); | [administrativeUnit](administrativeunit.md) |Чтение свойств и связей определенного объекта administrativeUnit.|
-|[обновление](../api/administrativeunit-update.md). | [administrativeUnit](administrativeunit.md)    |Обновление объекта administrativeUnit. |
-|[удаление](../api/administrativeunit-delete.md); | Нет |Удаление объекта administrativeUnit. |
+|[Обновление](../api/administrativeunit-update.md) | [administrativeUnit](administrativeunit.md)    |Обновление объекта administrativeUnit. |
+|[Удаление](../api/administrativeunit-delete.md) | Нет |Удаление объекта administrativeUnit. |
 |[Получение дельты](../api/administrativeunit-delta.md)|[administrativeUnit](administrativeunit.md)|Получите только что созданный, обновленный или удаленный **административеунитс** , не требуя полного считывания всей коллекции ресурсов.|
 |[Добавить участника](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Добавление члена (пользователя или группы).|
 |[Перечисление участников](../api/administrativeunit-list-members.md) |Коллекция [directoryObject](directoryobject.md)| Получение списка участников (пользователей и групп).|
@@ -58,10 +58,10 @@ ms.locfileid: "43450837"
 |:---------------|:--------|:----------|
 |description|string|Необязательное описание административной единицы.|
 |displayName|string|Отображаемое имя административной единицы.|
-|id|строка|Уникальный идентификатор административной единицы. Только для чтения.|
+|id|string|Уникальный идентификатор административной единицы. Только для чтения.|
 |visibility|string|Определяет, является ли модуль админстративе и его элементы скрытыми или общедоступными. Может быть задано значение значение hiddenmembership или public. Если не задано, то поведение по умолчанию — Public. Если задано значение значение hiddenmembership, только члены административной единицы могут перечислить других членов единицы админстративе.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для данной административной единицы. Допускается значение null.|
@@ -111,3 +111,5 @@ ms.locfileid: "43450837"
   "suppressions": []
 }
 -->
+
+

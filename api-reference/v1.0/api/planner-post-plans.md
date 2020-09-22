@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: c0a909c6e29f0f9566ac0835c82238cd9cfb39fc
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 87ec5ccb1bf98cf7c461d8fbc8dcf8213175e5e5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510986"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025713"
 ---
 # <a name="create-plannerplan"></a>Создание объекта plannerPlan
 
@@ -97,7 +97,7 @@ Content-length: 381
 
 Включите в текст запроса описание объекта [plannerPlan](../resources/plannerplan.md) в формате JSON.
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
@@ -138,3 +138,4 @@ Content-length: 357
   "suppressions": [
   ]
 }-->
+

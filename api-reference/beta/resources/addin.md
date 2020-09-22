@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 1700f3c6bec06c9f2e7ec6093fccffab443d2b08
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 000eb87d2ab29c128f79800c9bf9c99e51fb6dc1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895974"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024460"
 ---
 # <a name="addin-resource-type"></a>Тип ресурса addIn
 
@@ -18,7 +18,7 @@ ms.locfileid: "44895974"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые могут визуализировать файловые потоки, [могут настраивать](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) надстройки для работы с обработчиками файлов. Это позволит таким службам, как Microsoft 365, вызывать приложение в контексте документа, над которым работает пользователь.
+Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые могут визуализировать файловые потоки, [могут настраивать](https://docs.microsoft.com/onedrive/developer/file-handlers/?view=odsp-graph-online) надстройки для работы с обработчиками файлов. Это позволит таким службам, как Microsoft 365, вызывать приложение в контексте документов, над которыми работает пользователь.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -27,7 +27,7 @@ ms.locfileid: "44895974"
 |properties|Коллекция [keyValue](keyvalue.md)||
 |type|string||
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -60,3 +60,5 @@ ms.locfileid: "44895974"
   "suppressions": []
 }
 -->
+
+

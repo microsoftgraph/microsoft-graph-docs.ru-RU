@@ -3,14 +3,14 @@ title: Список Унсуппортеддевицеконфигуратион
 description: Список свойств и связей объектов Унсуппортеддевицеконфигуратион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f8bd6b32f312ccdcd4a023d5182806ff84a7e12c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 53268784faeb2e46db42a15f7277b6a80e682d76
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43341372"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48024866"
 ---
 # <a name="list-unsupporteddeviceconfigurations"></a>Список Унсуппортеддевицеконфигуратионс
 
@@ -44,13 +44,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [унсуппортеддевицеконфигуратион](../resources/intune-deviceconfig-unsupporteddeviceconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -115,6 +115,9 @@ Content-Length: 1656
   ]
 }
 ```
+
+
+
 
 
 

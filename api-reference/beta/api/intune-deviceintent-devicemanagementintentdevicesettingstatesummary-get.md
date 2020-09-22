@@ -3,14 +3,14 @@ title: Получение Девицеманажементинтентдевиц
 description: Чтение свойств и связей объекта Девицеманажементинтентдевицесеттингстатесуммари.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dafbc1018a75e56054e1978578f2f6b54dbc9e2b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 583d0f4cbb994a495981d0445f3908f4de06426c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43326826"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48022542"
 ---
 # <a name="get-devicemanagementintentdevicesettingstatesummary"></a>Получение Девицеманажементинтентдевицесеттингстатесуммари
 
@@ -46,13 +46,13 @@ GET /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSumma
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [девицеманажементинтентдевицесеттингстатесуммари](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -84,6 +84,9 @@ Content-Length: 366
   }
 }
 ```
+
+
+
 
 
 

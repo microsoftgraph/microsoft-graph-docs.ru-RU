@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 148b4c52a6f288d961c949cc0d599cb468c8b322
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 86ee81554c030eb0d4306866af386bba9e45a6cf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155070"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025671"
 ---
 # <a name="openshiftchangerequest-approve"></a>Опеншифтчанжерекуест: утверждение
 
@@ -100,3 +100,4 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: b8447db0c2fa5b59b1167a452ac462717dceb7ae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2811983bebfbba32670c8eadc229512199f5aa23
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509845"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48025433"
 ---
 # <a name="list-securescorecontrolprofiles"></a>Перечисление объектов secureScoreControlProfiles
 
@@ -57,7 +57,7 @@ GET /security/secureScoreControlProfiles?$filter={property} eq '{property-value}
 
 Не указывайте текст запроса для этого метода. Текст запроса будет игнорироваться.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов **секурескореконтролпрофилес** в тексте отклика.
 
@@ -176,3 +176,4 @@ Content-type: application/json
   ]
 }
 -->
+

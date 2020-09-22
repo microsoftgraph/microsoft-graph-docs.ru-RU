@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f82194dff2e805fe73d11ad4301a0e2c74347335
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: Auto
+ms.openlocfilehash: 3ff671b2dd15057f3bfc93634f00e2caebe9d3bb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897591"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023102"
 ---
 # <a name="riskyuser-confirmcompromised"></a>Рискюсер: Конфирмкомпромисед
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "44897591"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | IdentityRiskyUser.ReadWrite.All |
+|Для приложений | IdentityRiskyUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -92,4 +92,5 @@ Content-length: 39
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
