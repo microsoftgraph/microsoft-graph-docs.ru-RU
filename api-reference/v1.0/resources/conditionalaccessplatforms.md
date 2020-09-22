@@ -5,33 +5,33 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 88d40fa1557102bc04ef9a46bba93a50097d66cd
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: dc421f5527833cfd3193243b6ddb8b94c54a0855
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384657"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018864"
 ---
-# <a name="conditionalaccessplatforms-resource-type"></a><span data-ttu-id="0b7ef-103">Тип ресурса Кондитионалакцессплатформс</span><span class="sxs-lookup"><span data-stu-id="0b7ef-103">conditionalAccessPlatforms resource type</span></span>
+# <a name="conditionalaccessplatforms-resource-type"></a><span data-ttu-id="a9fb1-103">Тип ресурса Кондитионалакцессплатформс</span><span class="sxs-lookup"><span data-stu-id="a9fb1-103">conditionalAccessPlatforms resource type</span></span>
 
-<span data-ttu-id="0b7ef-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0b7ef-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a9fb1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a9fb1-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="0b7ef-105">Платформы, включенные в область политики и исключенные из нее.</span><span class="sxs-lookup"><span data-stu-id="0b7ef-105">Platforms included in and excluded from the policy scope.</span></span>
+<span data-ttu-id="a9fb1-105">Платформы, включенные в область политики и исключенные из нее.</span><span class="sxs-lookup"><span data-stu-id="a9fb1-105">Platforms included in and excluded from the policy scope.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0b7ef-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="0b7ef-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="a9fb1-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="a9fb1-106">Properties</span></span>
 
-| <span data-ttu-id="0b7ef-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="0b7ef-107">Property</span></span>     | <span data-ttu-id="0b7ef-108">Тип</span><span class="sxs-lookup"><span data-stu-id="0b7ef-108">Type</span></span>        | <span data-ttu-id="0b7ef-109">Описание</span><span class="sxs-lookup"><span data-stu-id="0b7ef-109">Description</span></span> |
+| <span data-ttu-id="a9fb1-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="a9fb1-107">Property</span></span>     | <span data-ttu-id="a9fb1-108">Тип</span><span class="sxs-lookup"><span data-stu-id="a9fb1-108">Type</span></span>        | <span data-ttu-id="a9fb1-109">Описание</span><span class="sxs-lookup"><span data-stu-id="a9fb1-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="0b7ef-110">инклудеплатформс</span><span class="sxs-lookup"><span data-stu-id="0b7ef-110">includePlatforms</span></span>|<span data-ttu-id="0b7ef-111">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="0b7ef-111">String collection</span></span>| <span data-ttu-id="0b7ef-112">Возможные значения: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="0b7ef-112">Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.</span></span>|
-|<span data-ttu-id="0b7ef-113">ексклудеплатформс</span><span class="sxs-lookup"><span data-stu-id="0b7ef-113">excludePlatforms</span></span>|<span data-ttu-id="0b7ef-114">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="0b7ef-114">String collection</span></span>| <span data-ttu-id="0b7ef-115">Возможные значения: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="0b7ef-115">Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="a9fb1-110">инклудеплатформс</span><span class="sxs-lookup"><span data-stu-id="a9fb1-110">includePlatforms</span></span>|<span data-ttu-id="a9fb1-111">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="a9fb1-111">String collection</span></span>| <span data-ttu-id="a9fb1-112">Возможные значения: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="a9fb1-112">Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="a9fb1-113">ексклудеплатформс</span><span class="sxs-lookup"><span data-stu-id="a9fb1-113">excludePlatforms</span></span>|<span data-ttu-id="a9fb1-114">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="a9fb1-114">String collection</span></span>| <span data-ttu-id="a9fb1-115">Возможные значения: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="a9fb1-115">Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `unknownFutureValue`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="0b7ef-116">Связи</span><span class="sxs-lookup"><span data-stu-id="0b7ef-116">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="a9fb1-116">Связи</span><span class="sxs-lookup"><span data-stu-id="a9fb1-116">Relationships</span></span>
 
-<span data-ttu-id="0b7ef-117">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="0b7ef-117">None.</span></span>
+<span data-ttu-id="a9fb1-117">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="a9fb1-117">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="0b7ef-118">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="0b7ef-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a9fb1-118">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="a9fb1-118">JSON representation</span></span>
 
-<span data-ttu-id="0b7ef-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0b7ef-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a9fb1-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a9fb1-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -58,3 +58,4 @@ ms.locfileid: "45384657"
   "section": "documentation",
   "tocPath": ""
 }-->
+

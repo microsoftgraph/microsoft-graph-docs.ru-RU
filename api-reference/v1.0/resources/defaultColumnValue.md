@@ -7,23 +7,23 @@ localization_priority: Normal
 description: Ресурс defaultColumnValue в ресурсе columnDefinition указывает значение, используемое по умолчанию, для этого столбца.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 986649e390fe22d2f8f39c2fa8ca4ff03ccd8af2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bcd2a59c18623c2c7c6d41d7a01fac72d3e9e324
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531697"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48018727"
 ---
-# <a name="defaultcolumnvalue-resource-type"></a><span data-ttu-id="60707-103">Тип ресурса defaultColumnValue</span><span class="sxs-lookup"><span data-stu-id="60707-103">DefaultColumnValue resource type</span></span>
+# <a name="defaultcolumnvalue-resource-type"></a><span data-ttu-id="1bba2-103">Тип ресурса defaultColumnValue</span><span class="sxs-lookup"><span data-stu-id="1bba2-103">DefaultColumnValue resource type</span></span>
 
-<span data-ttu-id="60707-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="60707-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1bba2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1bba2-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="60707-105">Ресурс **defaultColumnValue** в ресурсе [columnDefinition](columndefinition.md) указывает значение, используемое по умолчанию, для этого столбца.</span><span class="sxs-lookup"><span data-stu-id="60707-105">The **defaultColumnValue** on a [columnDefinition](columndefinition.md) resource specifies the default value for this column.</span></span>
-<span data-ttu-id="60707-106">Значение, используемое по умолчанию, можно указать либо непосредственно, либо в виде формулы.</span><span class="sxs-lookup"><span data-stu-id="60707-106">The default value can either be specified directly or as a formula.</span></span>
+<span data-ttu-id="1bba2-105">Ресурс **defaultColumnValue** в ресурсе [columnDefinition](columndefinition.md) указывает значение, используемое по умолчанию, для этого столбца.</span><span class="sxs-lookup"><span data-stu-id="1bba2-105">The **defaultColumnValue** on a [columnDefinition](columndefinition.md) resource specifies the default value for this column.</span></span>
+<span data-ttu-id="1bba2-106">Значение, используемое по умолчанию, можно указать либо непосредственно, либо в виде формулы.</span><span class="sxs-lookup"><span data-stu-id="1bba2-106">The default value can either be specified directly or as a formula.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="60707-107">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="60707-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1bba2-107">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="1bba2-107">JSON representation</span></span>
 
-<span data-ttu-id="60707-108">Ниже показано представление ресурса **defaultColumnValue** в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="60707-108">Here is a JSON representation of a **defaultColumnValue** resource.</span></span>
+<span data-ttu-id="1bba2-108">Ниже показано представление ресурса **defaultColumnValue** в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1bba2-108">Here is a JSON representation of a **defaultColumnValue** resource.</span></span>
 <!-- { "blockType": "resource", "@type": "microsoft.graph.defaultColumnValue" } -->
 
 ```json
@@ -33,17 +33,17 @@ ms.locfileid: "42531697"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="60707-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="60707-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="1bba2-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="1bba2-109">Properties</span></span>
 
-| <span data-ttu-id="60707-110">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="60707-110">Property name</span></span> | <span data-ttu-id="60707-111">Тип</span><span class="sxs-lookup"><span data-stu-id="60707-111">Type</span></span>   | <span data-ttu-id="60707-112">Описание</span><span class="sxs-lookup"><span data-stu-id="60707-112">Description</span></span>
+| <span data-ttu-id="1bba2-110">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="1bba2-110">Property name</span></span> | <span data-ttu-id="1bba2-111">Тип</span><span class="sxs-lookup"><span data-stu-id="1bba2-111">Type</span></span>   | <span data-ttu-id="1bba2-112">Описание</span><span class="sxs-lookup"><span data-stu-id="1bba2-112">Description</span></span>
 |:--------------|:-------|:----------------------------------------------------
-| <span data-ttu-id="60707-113">**formula**</span><span class="sxs-lookup"><span data-stu-id="60707-113">**formula**</span></span>   | <span data-ttu-id="60707-114">string</span><span class="sxs-lookup"><span data-stu-id="60707-114">string</span></span> | <span data-ttu-id="60707-115">Формула, используемая для вычисления значения, используемого по умолчанию, для данного столбца.</span><span class="sxs-lookup"><span data-stu-id="60707-115">The formula used to compute the default value for this column.</span></span>
-| <span data-ttu-id="60707-116">**value**</span><span class="sxs-lookup"><span data-stu-id="60707-116">**value**</span></span>     | <span data-ttu-id="60707-117">string</span><span class="sxs-lookup"><span data-stu-id="60707-117">string</span></span> | <span data-ttu-id="60707-118">Непосредственное значение, которое необходимо применять в качестве значения, используемого по умолчанию, для данного столбца.</span><span class="sxs-lookup"><span data-stu-id="60707-118">The direct value to use as the default value for this column.</span></span>
+| <span data-ttu-id="1bba2-113">**formula**</span><span class="sxs-lookup"><span data-stu-id="1bba2-113">**formula**</span></span>   | <span data-ttu-id="1bba2-114">string</span><span class="sxs-lookup"><span data-stu-id="1bba2-114">string</span></span> | <span data-ttu-id="1bba2-115">Формула, используемая для вычисления значения, используемого по умолчанию, для данного столбца.</span><span class="sxs-lookup"><span data-stu-id="1bba2-115">The formula used to compute the default value for this column.</span></span>
+| <span data-ttu-id="1bba2-116">**value**</span><span class="sxs-lookup"><span data-stu-id="1bba2-116">**value**</span></span>     | <span data-ttu-id="1bba2-117">string</span><span class="sxs-lookup"><span data-stu-id="1bba2-117">string</span></span> | <span data-ttu-id="1bba2-118">Непосредственное значение, которое необходимо применять в качестве значения, используемого по умолчанию, для данного столбца.</span><span class="sxs-lookup"><span data-stu-id="1bba2-118">The direct value to use as the default value for this column.</span></span>
 
-<span data-ttu-id="60707-119">Одновременно можно указать только одну **формулу** или одно **значение**.</span><span class="sxs-lookup"><span data-stu-id="60707-119">Only one of **formula** or **value** may be specified at a time.</span></span>
+<span data-ttu-id="1bba2-119">Одновременно можно указать только одну **формулу** или одно **значение**.</span><span class="sxs-lookup"><span data-stu-id="1bba2-119">Only one of **formula** or **value** may be specified at a time.</span></span>
 
-<span data-ttu-id="60707-120">В формулах SharePoint используется синтаксис, похожий на синтаксис формул в Excel.</span><span class="sxs-lookup"><span data-stu-id="60707-120">SharePoint formulas use a syntax similar to Excel formulas.</span></span>
-<span data-ttu-id="60707-121">Дополнительные сведения см. в статье [Примеры часто используемых формул в списках SharePoint][SPFormulas].</span><span class="sxs-lookup"><span data-stu-id="60707-121">See [Examples of common formulas in SharePoint Lists][SPFormulas] for more information.</span></span>
+<span data-ttu-id="1bba2-120">В формулах SharePoint используется синтаксис, похожий на синтаксис формул в Excel.</span><span class="sxs-lookup"><span data-stu-id="1bba2-120">SharePoint formulas use a syntax similar to Excel formulas.</span></span>
+<span data-ttu-id="1bba2-121">Дополнительные сведения см. в статье [Примеры часто используемых формул в списках SharePoint][SPFormulas].</span><span class="sxs-lookup"><span data-stu-id="1bba2-121">See [Examples of common formulas in SharePoint Lists][SPFormulas] for more information.</span></span>
 
 [SPFormulas]: https://support.office.com/en-us/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
 
@@ -55,3 +55,4 @@ ms.locfileid: "42531697"
   "section": "documentation",
   "tocPath": "Resources/DefaultColumnValue"
 } -->
+
