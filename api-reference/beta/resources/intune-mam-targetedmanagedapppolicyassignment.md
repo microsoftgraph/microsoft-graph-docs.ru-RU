@@ -3,14 +3,14 @@ title: Тип ресурса targetedManagedAppPolicyAssignment
 description: Тип развертывания групп или приложений.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 10e2ce0d984129061042db5b16552d313bd92615
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 86c87c02d60b4cccc2fa135a2f68c0a3d3c0f7fe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793859"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030124"
 ---
 # <a name="targetedmanagedapppolicyassignment-resource-type"></a>Тип ресурса targetedManagedAppPolicyAssignment
 
@@ -38,7 +38,7 @@ ms.locfileid: "44793859"
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Тип ресурса, используемого для развертывания в группу, Direct или в упаковке/набор политик. Возможные значения: `direct`, `policySets`.|
 |Идентификатор|String|Идентификатор ресурса, используемого для развертывания в группе|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -62,6 +62,9 @@ ms.locfileid: "44793859"
   "sourceId": "String"
 }
 ```
+
+
+
 
 
 
