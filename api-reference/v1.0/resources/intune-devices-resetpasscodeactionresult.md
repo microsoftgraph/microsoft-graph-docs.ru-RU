@@ -3,14 +3,14 @@ title: Тип ресурса resetPasscodeActionResult
 description: Результат действия "Сброс секретного кода"
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8510dcb20fa0af50df1db24927b97c32afb1188
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6725e0a51ad9b4053278dcf03c91236a7d820665
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439444"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091021"
 ---
 # <a name="resetpasscodeactionresult-resource-type"></a>Тип ресурса resetPasscodeActionResult
 
@@ -52,6 +52,8 @@ ms.locfileid: "43439444"
   "passcode": "String"
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a7e28e32a1be71061c2cb629f04b251a874e2ea3
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 50f918f804cda5fbf1bd20d125f4e29e1d5c35d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917236"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023039"
 ---
 # <a name="create-tokenissuancepolicy"></a>Создание Токениссуанцеполици
 
@@ -43,11 +43,11 @@ POST policies/tokenIssuancePolicies
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [токениссуанцеполици](../resources/tokenissuancepolicy.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [токениссуанцеполици](../resources/tokenissuancepolicy.md) в тексте отклика.
 
@@ -130,3 +130,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

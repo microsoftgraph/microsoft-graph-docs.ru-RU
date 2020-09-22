@@ -3,14 +3,14 @@ title: Получение Граупполицисеттингмаппинг
 description: Чтение свойств и связей объекта Граупполицисеттингмаппинг.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 19ceb791d5660bfee02ca0b799590afc48bcf03e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4769fdd7ee0859d45fe054c4945e68d59f4f491d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454853"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48043369"
 ---
 # <a name="get-grouppolicysettingmapping"></a>Получение Граупполицисеттингмаппинг
 
@@ -46,13 +46,13 @@ GET /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/groupPolicyMigrationReport
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1075
+Content-Length: 1143
 
 {
   "value": {
@@ -96,10 +96,14 @@ Content-Length: 1075
     "intuneSettingUriList": [
       "Intune Setting Uri List value"
     ],
-    "intuneSettingDefinitionId": "Intune Setting Definition Id value"
+    "intuneSettingDefinitionId": "Intune Setting Definition Id value",
+    "admxSettingDefinitionId": "Admx Setting Definition Id value"
   }
 }
 ```
+
+
+
 
 
 

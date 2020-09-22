@@ -3,14 +3,14 @@ title: Получение Ролескопетагаутоассигнмент
 description: Чтение свойств и связей объекта Ролескопетагаутоассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 676ce7d9707217c692b600467bd841941a927333
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: c022a195d65154a827d04abd3eb5b2b99af5704b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791674"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48014401"
 ---
 # <a name="get-rolescopetagautoassignment"></a>Получение Ролескопетагаутоассигнмент
 
@@ -40,13 +40,13 @@ ms.locfileid: "44791674"
 GET /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleAssignmentId}/microsoft.graph.deviceAndAppManagementRoleAssignment/roleScopeTags/{roleScopeTagId}/assignments/{roleScopeTagAutoAssignmentId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -82,6 +82,9 @@ Content-Length: 403
   }
 }
 ```
+
+
+
 
 
 

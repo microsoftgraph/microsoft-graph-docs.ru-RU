@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 84e0d6ef33cd63acb283806f994ca108873f0d0f
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: dd12448bf0e20824c7b3baa67caddfbe42f0595e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44217936"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48023046"
 ---
 # <a name="timeoffrequest-approve"></a>Тимеоффрекуест: утверждение
 
@@ -99,7 +99,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 <!-- {
@@ -121,3 +121,4 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
