@@ -5,31 +5,31 @@ localization_priority: Normal
 author: yyuank
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7f6c08adc311c343699667ea3179b0b2d09a5a34
-ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
+ms.openlocfilehash: c03ef7cdbb5e40ab77e0b3ad68668263db643568
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44272868"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48078208"
 ---
-# <a name="propertytoevaluate-resource-type"></a><span data-ttu-id="6cb8c-103">Тип ресурса Пропертитоевалуате</span><span class="sxs-lookup"><span data-stu-id="6cb8c-103">propertyToEvaluate resource type</span></span>
+# <a name="propertytoevaluate-resource-type"></a><span data-ttu-id="d56f8-103">Тип ресурса Пропертитоевалуате</span><span class="sxs-lookup"><span data-stu-id="d56f8-103">propertyToEvaluate resource type</span></span>
 
-<span data-ttu-id="6cb8c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6cb8c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d56f8-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d56f8-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6cb8c-105">Определяет имя и значение свойства.</span><span class="sxs-lookup"><span data-stu-id="6cb8c-105">Defines the name and the value of the property.</span></span>
+<span data-ttu-id="d56f8-105">Определяет имя и значение свойства.</span><span class="sxs-lookup"><span data-stu-id="d56f8-105">Defines the name and the value of the property.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6cb8c-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="6cb8c-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d56f8-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="d56f8-106">Properties</span></span>
 
-| <span data-ttu-id="6cb8c-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="6cb8c-107">Property</span></span> | <span data-ttu-id="6cb8c-108">Тип</span><span class="sxs-lookup"><span data-stu-id="6cb8c-108">Type</span></span> | <span data-ttu-id="6cb8c-109">Описание</span><span class="sxs-lookup"><span data-stu-id="6cb8c-109">Description</span></span> |
+| <span data-ttu-id="d56f8-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="d56f8-107">Property</span></span> | <span data-ttu-id="d56f8-108">Тип</span><span class="sxs-lookup"><span data-stu-id="d56f8-108">Type</span></span> | <span data-ttu-id="d56f8-109">Описание</span><span class="sxs-lookup"><span data-stu-id="d56f8-109">Description</span></span> |
 |:-------- |:---- |:----------- |
-| <span data-ttu-id="6cb8c-110">propertyName</span><span class="sxs-lookup"><span data-stu-id="6cb8c-110">propertyName</span></span> | <span data-ttu-id="6cb8c-111">String</span><span class="sxs-lookup"><span data-stu-id="6cb8c-111">String</span></span> | <span data-ttu-id="6cb8c-112">Предоставляет имя свойства.</span><span class="sxs-lookup"><span data-stu-id="6cb8c-112">Provides the property name.</span></span> |
-| <span data-ttu-id="6cb8c-113">propertyValue</span><span class="sxs-lookup"><span data-stu-id="6cb8c-113">propertyValue</span></span> | <span data-ttu-id="6cb8c-114">String</span><span class="sxs-lookup"><span data-stu-id="6cb8c-114">String</span></span> | <span data-ttu-id="6cb8c-115">Предоставляет значение свойства.</span><span class="sxs-lookup"><span data-stu-id="6cb8c-115">Provides the property value.</span></span> |
+| <span data-ttu-id="d56f8-110">propertyName</span><span class="sxs-lookup"><span data-stu-id="d56f8-110">propertyName</span></span> | <span data-ttu-id="d56f8-111">String</span><span class="sxs-lookup"><span data-stu-id="d56f8-111">String</span></span> | <span data-ttu-id="d56f8-112">Предоставляет имя свойства.</span><span class="sxs-lookup"><span data-stu-id="d56f8-112">Provides the property name.</span></span> |
+| <span data-ttu-id="d56f8-113">propertyValue</span><span class="sxs-lookup"><span data-stu-id="d56f8-113">propertyValue</span></span> | <span data-ttu-id="d56f8-114">String</span><span class="sxs-lookup"><span data-stu-id="d56f8-114">String</span></span> | <span data-ttu-id="d56f8-115">Предоставляет значение свойства.</span><span class="sxs-lookup"><span data-stu-id="d56f8-115">Provides the property value.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="6cb8c-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6cb8c-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d56f8-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d56f8-116">JSON representation</span></span>
 
-<span data-ttu-id="6cb8c-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6cb8c-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d56f8-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d56f8-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -56,3 +56,4 @@ ms.locfileid: "44272868"
   "section": "documentation",
   "tocPath": ""
 }-->
+
