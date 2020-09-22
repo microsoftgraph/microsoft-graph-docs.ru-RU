@@ -5,46 +5,46 @@ localization_priority: Normal
 author: rohinigoyal1
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 70dc63b9cba3db7c435b357f880084d314d0c884
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 0c576a7b7d309f49c14af56b12d7dc8dcdb1f75a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384397"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013554"
 ---
-# <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a><span data-ttu-id="88dbd-104">Тип ресурса Идентитисекуритидефаултсенфорцементполици</span><span class="sxs-lookup"><span data-stu-id="88dbd-104">identitySecurityDefaultsEnforcementPolicy resource type</span></span>
+# <a name="identitysecuritydefaultsenforcementpolicy-resource-type"></a><span data-ttu-id="2a312-104">Тип ресурса Идентитисекуритидефаултсенфорцементполици</span><span class="sxs-lookup"><span data-stu-id="2a312-104">identitySecurityDefaultsEnforcementPolicy resource type</span></span>
 
-<span data-ttu-id="88dbd-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="88dbd-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2a312-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2a312-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="88dbd-106">Представляет политику [безопасности по умолчанию](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) для Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="88dbd-106">Represents the Azure Active Directory [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) policy.</span></span> <span data-ttu-id="88dbd-107">Параметры безопасности по умолчанию содержат предварительно настроенные параметры безопасности, которые защищаются от распространенных атак.</span><span class="sxs-lookup"><span data-stu-id="88dbd-107">Security defaults contain preconfigured security settings that protect against common attacks.</span></span>
+<span data-ttu-id="2a312-106">Представляет политику [безопасности по умолчанию](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) для Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="2a312-106">Represents the Azure Active Directory [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) policy.</span></span> <span data-ttu-id="2a312-107">Параметры безопасности по умолчанию содержат предварительно настроенные параметры безопасности, которые защищаются от распространенных атак.</span><span class="sxs-lookup"><span data-stu-id="2a312-107">Security defaults contain preconfigured security settings that protect against common attacks.</span></span>
 
-<span data-ttu-id="88dbd-108">Наследуется от [основы](../resources/policybase.md).</span><span class="sxs-lookup"><span data-stu-id="88dbd-108">Inherits from [policyBase](../resources/policybase.md).</span></span>
+<span data-ttu-id="2a312-108">Наследуется от [основы](../resources/policybase.md).</span><span class="sxs-lookup"><span data-stu-id="2a312-108">Inherits from [policyBase](../resources/policybase.md).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="88dbd-109">Методы</span><span class="sxs-lookup"><span data-stu-id="88dbd-109">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="2a312-109">Методы</span><span class="sxs-lookup"><span data-stu-id="2a312-109">Methods</span></span>
 
-| <span data-ttu-id="88dbd-110">Метод</span><span class="sxs-lookup"><span data-stu-id="88dbd-110">Method</span></span>       | <span data-ttu-id="88dbd-111">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="88dbd-111">Return Type</span></span> | <span data-ttu-id="88dbd-112">Описание</span><span class="sxs-lookup"><span data-stu-id="88dbd-112">Description</span></span> |
+| <span data-ttu-id="2a312-110">Метод</span><span class="sxs-lookup"><span data-stu-id="2a312-110">Method</span></span>       | <span data-ttu-id="2a312-111">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="2a312-111">Return Type</span></span> | <span data-ttu-id="2a312-112">Описание</span><span class="sxs-lookup"><span data-stu-id="2a312-112">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="88dbd-113">[получение](../api/identitysecuritydefaultsenforcementpolicy-get.md);</span><span class="sxs-lookup"><span data-stu-id="88dbd-113">[Get](../api/identitysecuritydefaultsenforcementpolicy-get.md)</span></span> | [<span data-ttu-id="88dbd-114">идентитисекуритидефаултсенфорцементполици</span><span class="sxs-lookup"><span data-stu-id="88dbd-114">identitySecurityDefaultsEnforcementPolicy</span></span>](identitysecuritydefaultsenforcementpolicy.md) | <span data-ttu-id="88dbd-115">Чтение свойств объекта **идентитисекуритидефаултсенфорцементполици** .</span><span class="sxs-lookup"><span data-stu-id="88dbd-115">Read the properties of an **identitySecurityDefaultsEnforcementPolicy** object.</span></span> |
-| <span data-ttu-id="88dbd-116">[обновление](../api/identitysecuritydefaultsenforcementpolicy-update.md).</span><span class="sxs-lookup"><span data-stu-id="88dbd-116">[Update](../api/identitysecuritydefaultsenforcementpolicy-update.md)</span></span> | [<span data-ttu-id="88dbd-117">идентитисекуритидефаултсенфорцементполици</span><span class="sxs-lookup"><span data-stu-id="88dbd-117">identitySecurityDefaultsEnforcementPolicy</span></span>](identitysecuritydefaultsenforcementpolicy.md) | <span data-ttu-id="88dbd-118">Обновление объекта **идентитисекуритидефаултсенфорцементполици** .</span><span class="sxs-lookup"><span data-stu-id="88dbd-118">Update an **identitySecurityDefaultsEnforcementPolicy** object.</span></span> |
+| <span data-ttu-id="2a312-113">[получение](../api/identitysecuritydefaultsenforcementpolicy-get.md);</span><span class="sxs-lookup"><span data-stu-id="2a312-113">[Get](../api/identitysecuritydefaultsenforcementpolicy-get.md)</span></span> | [<span data-ttu-id="2a312-114">идентитисекуритидефаултсенфорцементполици</span><span class="sxs-lookup"><span data-stu-id="2a312-114">identitySecurityDefaultsEnforcementPolicy</span></span>](identitysecuritydefaultsenforcementpolicy.md) | <span data-ttu-id="2a312-115">Чтение свойств объекта **идентитисекуритидефаултсенфорцементполици** .</span><span class="sxs-lookup"><span data-stu-id="2a312-115">Read the properties of an **identitySecurityDefaultsEnforcementPolicy** object.</span></span> |
+| <span data-ttu-id="2a312-116">[обновление](../api/identitysecuritydefaultsenforcementpolicy-update.md).</span><span class="sxs-lookup"><span data-stu-id="2a312-116">[Update](../api/identitysecuritydefaultsenforcementpolicy-update.md)</span></span> | [<span data-ttu-id="2a312-117">идентитисекуритидефаултсенфорцементполици</span><span class="sxs-lookup"><span data-stu-id="2a312-117">identitySecurityDefaultsEnforcementPolicy</span></span>](identitysecuritydefaultsenforcementpolicy.md) | <span data-ttu-id="2a312-118">Обновление объекта **идентитисекуритидефаултсенфорцементполици** .</span><span class="sxs-lookup"><span data-stu-id="2a312-118">Update an **identitySecurityDefaultsEnforcementPolicy** object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="88dbd-119">Свойства</span><span class="sxs-lookup"><span data-stu-id="88dbd-119">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="2a312-119">Свойства</span><span class="sxs-lookup"><span data-stu-id="2a312-119">Properties</span></span>
 
-| <span data-ttu-id="88dbd-120">Свойство</span><span class="sxs-lookup"><span data-stu-id="88dbd-120">Property</span></span>     | <span data-ttu-id="88dbd-121">Тип</span><span class="sxs-lookup"><span data-stu-id="88dbd-121">Type</span></span>        | <span data-ttu-id="88dbd-122">Описание</span><span class="sxs-lookup"><span data-stu-id="88dbd-122">Description</span></span> |
+| <span data-ttu-id="2a312-120">Свойство</span><span class="sxs-lookup"><span data-stu-id="2a312-120">Property</span></span>     | <span data-ttu-id="2a312-121">Тип</span><span class="sxs-lookup"><span data-stu-id="2a312-121">Type</span></span>        | <span data-ttu-id="2a312-122">Описание</span><span class="sxs-lookup"><span data-stu-id="2a312-122">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="88dbd-123">description</span><span class="sxs-lookup"><span data-stu-id="88dbd-123">description</span></span>|<span data-ttu-id="88dbd-124">String</span><span class="sxs-lookup"><span data-stu-id="88dbd-124">String</span></span>|<span data-ttu-id="88dbd-125">Описание для этой политики.</span><span class="sxs-lookup"><span data-stu-id="88dbd-125">Description for this policy.</span></span> <span data-ttu-id="88dbd-126">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="88dbd-126">Read-only.</span></span>|
-|<span data-ttu-id="88dbd-127">displayName</span><span class="sxs-lookup"><span data-stu-id="88dbd-127">displayName</span></span>|<span data-ttu-id="88dbd-128">Строка</span><span class="sxs-lookup"><span data-stu-id="88dbd-128">String</span></span>|<span data-ttu-id="88dbd-129">Отображаемое имя для этой политики.</span><span class="sxs-lookup"><span data-stu-id="88dbd-129">Display name for this policy.</span></span> <span data-ttu-id="88dbd-130">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="88dbd-130">Read-only.</span></span>|
-|<span data-ttu-id="88dbd-131">id</span><span class="sxs-lookup"><span data-stu-id="88dbd-131">id</span></span>|<span data-ttu-id="88dbd-132">String</span><span class="sxs-lookup"><span data-stu-id="88dbd-132">String</span></span>|<span data-ttu-id="88dbd-133">Идентификатор для этой политики.</span><span class="sxs-lookup"><span data-stu-id="88dbd-133">Identifier for this policy.</span></span> <span data-ttu-id="88dbd-134">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="88dbd-134">Read-only.</span></span>|
-|<span data-ttu-id="88dbd-135">isEnabled</span><span class="sxs-lookup"><span data-stu-id="88dbd-135">isEnabled</span></span>|<span data-ttu-id="88dbd-136">Boolean</span><span class="sxs-lookup"><span data-stu-id="88dbd-136">Boolean</span></span>|<span data-ttu-id="88dbd-137">Если задано значение true, по умолчанию для клиента будет включен параметр безопасности Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="88dbd-137">If set to true, Azure Active Directory security defaults is enabled for the tenant.</span></span>|
+|<span data-ttu-id="2a312-123">description</span><span class="sxs-lookup"><span data-stu-id="2a312-123">description</span></span>|<span data-ttu-id="2a312-124">String</span><span class="sxs-lookup"><span data-stu-id="2a312-124">String</span></span>|<span data-ttu-id="2a312-125">Описание для этой политики.</span><span class="sxs-lookup"><span data-stu-id="2a312-125">Description for this policy.</span></span> <span data-ttu-id="2a312-126">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="2a312-126">Read-only.</span></span>|
+|<span data-ttu-id="2a312-127">displayName</span><span class="sxs-lookup"><span data-stu-id="2a312-127">displayName</span></span>|<span data-ttu-id="2a312-128">String</span><span class="sxs-lookup"><span data-stu-id="2a312-128">String</span></span>|<span data-ttu-id="2a312-129">Отображаемое имя для этой политики.</span><span class="sxs-lookup"><span data-stu-id="2a312-129">Display name for this policy.</span></span> <span data-ttu-id="2a312-130">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="2a312-130">Read-only.</span></span>|
+|<span data-ttu-id="2a312-131">id</span><span class="sxs-lookup"><span data-stu-id="2a312-131">id</span></span>|<span data-ttu-id="2a312-132">String</span><span class="sxs-lookup"><span data-stu-id="2a312-132">String</span></span>|<span data-ttu-id="2a312-133">Идентификатор для этой политики.</span><span class="sxs-lookup"><span data-stu-id="2a312-133">Identifier for this policy.</span></span> <span data-ttu-id="2a312-134">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="2a312-134">Read-only.</span></span>|
+|<span data-ttu-id="2a312-135">isEnabled</span><span class="sxs-lookup"><span data-stu-id="2a312-135">isEnabled</span></span>|<span data-ttu-id="2a312-136">Boolean</span><span class="sxs-lookup"><span data-stu-id="2a312-136">Boolean</span></span>|<span data-ttu-id="2a312-137">Если задано значение true, по умолчанию для клиента будет включен параметр безопасности Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="2a312-137">If set to true, Azure Active Directory security defaults is enabled for the tenant.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="88dbd-138">Связи</span><span class="sxs-lookup"><span data-stu-id="88dbd-138">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="2a312-138">Связи</span><span class="sxs-lookup"><span data-stu-id="2a312-138">Relationships</span></span>
 
-<span data-ttu-id="88dbd-139">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="88dbd-139">None.</span></span>
+<span data-ttu-id="2a312-139">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="2a312-139">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="88dbd-140">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="88dbd-140">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2a312-140">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="2a312-140">JSON representation</span></span>
 
-<span data-ttu-id="88dbd-141">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="88dbd-141">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2a312-141">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2a312-141">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -74,3 +74,5 @@ ms.locfileid: "45384397"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
