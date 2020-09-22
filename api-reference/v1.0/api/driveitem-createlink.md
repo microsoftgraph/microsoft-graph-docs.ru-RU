@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Используя действие createLink, вы можете поделиться ресурсом DriveItem с помощью ссылки для совместного доступа.
 doc_type: apiPageType
-ms.openlocfilehash: edd0259e35191c112c779b0afd545f7848675e8d
-ms.sourcegitcommit: 9b507499fb1ec61b4de47f36f915ae29c8594459
+ms.openlocfilehash: 6de5e91183e830193a5f53a1263e3a81f06d4bbf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43934852"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042200"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Создание ссылки для доступа к ресурсу DriveItem
 
@@ -193,7 +193,7 @@ Content-Type: application/json
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -293,3 +293,4 @@ Content-Type: application/json
   "suppressions": [
   ]
 } -->
+

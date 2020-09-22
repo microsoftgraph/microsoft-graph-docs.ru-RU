@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8e3cb0d0a79da9ec246f0da50f17c3987695bb27
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 2aabd1d7b8fac45be4ebb2302ca8d20015822bf9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897129"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042004"
 ---
 # <a name="group-subscribebymail"></a>group: subscribeByMail
 
@@ -38,7 +38,7 @@ POST /groups/{id}/subscribeByMail
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Prefer | return=minimal. Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`. Необязательный параметр.  | 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -96,3 +96,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

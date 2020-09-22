@@ -3,14 +3,14 @@ title: тип перечисления Дефендерсреатактион
 description: Действие защитника по умолчанию для обнаружения обнаруженных угроз вредоносных программ.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 24c2b0c60f0451b58e624558fd44f3628c92e3cc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d057cf5d052f1fc3043a0b55f4f3ca822f244a7b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448990"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041458"
 ---
 # <a name="defenderthreataction-enum-type"></a>тип перечисления Дефендерсреатактион
 
@@ -24,12 +24,14 @@ ms.locfileid: "43448990"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |девицедефаулт|нуль|Применение действия на основе определения обновления.|
-|чистить|1,1|Очистите обнаруженную угрозу.|
-|папку|2|Карантин обнаруженной угрозы.|
+|чистить|1 |Очистите обнаруженную угрозу.|
+|папку|2 |Карантин обнаруженной угрозы.|
 |удалить|4|Удаление обнаруженной угрозы.|
 |разрешить|4 |Разрешить обнаруженную угрозу.|
 |UserDefined типа|5 |Разрешить пользователю определять действие, выполняемое с обнаруженной угрозой.|
 |блок|6 |Блокировка обнаруженной угрозы.|
+
+
 
 
 

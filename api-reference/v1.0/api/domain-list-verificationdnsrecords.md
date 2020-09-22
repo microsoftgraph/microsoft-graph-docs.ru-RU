@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a1ba18c1fae3cccb3c2ea8669696360cac7ab5aa
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 3c678e9b6335be6f524d1592188df70443529503
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43179432"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042270"
 ---
 # <a name="list-verificationdnsrecords"></a>Список verificationDnsRecords
 
@@ -41,7 +41,7 @@ GET /domains/{id}/verificationDnsRecords
 
 > В качестве параметра {id} укажите домен, используя его полное доменное имя.
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
@@ -56,7 +56,7 @@ GET /domains/{id}/verificationDnsRecords
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [domainDnsRecord](../resources/domaindnsrecord.md) в тексте отклика.
 
@@ -130,3 +130,4 @@ Content-length: 220
   "suppressions": [
   ]
 }-->
+

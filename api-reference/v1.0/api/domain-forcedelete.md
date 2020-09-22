@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 60f81e459ceab6b9c33271a58fc24f884e559c29
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 712e49ed16e56da3b427ea9238be77d225bdbac7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43511069"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042333"
 ---
 # <a name="force-domain-deletion"></a>Принудительное удаление домена
 
@@ -59,7 +59,7 @@ POST /domains/{id}/forceDelete
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -67,7 +67,7 @@ POST /domains/{id}/forceDelete
 |:---------------|:--------|:----------|
 |`disableUserAccounts`|`Boolean`| Параметр для отключения переименованных учетных записей пользователей. Если учетная запись пользователя отключена, пользователь не может войти в систему. Если задано **значение true** , то `users` обновление в рамках этой операции будет отключено.  Значение по умолчанию: **true**. |
 
-## <a name="response-body"></a>Текст ответа
+## <a name="response-body"></a>Текст отклика
 
 В случае успеха этот метод возвращает `HTTP/1.1 204 OK` код состояния.
 
@@ -133,3 +133,4 @@ HTTP/1.1 204 OK
   "suppressions": [
   ]
 }-->
+

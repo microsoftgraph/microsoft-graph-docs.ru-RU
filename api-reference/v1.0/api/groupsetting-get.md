@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 8aa6e12cc1ea37b7f160b61c264751298c32ab48
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: d54fd319db767bbde85b2d1bef93b0f740411d0a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124527"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041829"
 ---
 # <a name="get-a-group-setting"></a>Получение параметра группы
 
@@ -38,8 +38,8 @@ ms.locfileid: "43124527"
 GET /groupSettings/{id}
 GET /groups/{id}/settings/{id}
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
 > Примечание. $filter не поддерживается.
 
@@ -52,7 +52,7 @@ GET /groups/{id}/settings/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [groupSetting](../resources/groupsetting.md) в тексте отклика.
 
@@ -123,3 +123,4 @@ Content-length: 194
   "suppressions": [
   ]
 }-->
+

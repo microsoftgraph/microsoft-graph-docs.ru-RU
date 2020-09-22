@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 139139033e55efae8d7962ea8ff00b8fc9ea2ba7
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 0e0bcd8a0560f148ddefbf8e2db36cd13da430ae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123981"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041983"
 ---
 # <a name="update-event"></a>Обновление события
 
@@ -42,7 +42,7 @@ PATCH /groups/{id}/calendar/events/{id}
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 
 ## <a name="example"></a>Пример
@@ -231,3 +231,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

@@ -1,22 +1,22 @@
 ---
 title: 'directoryObject: Валидатепропертиес'
-description: Убедитесь, что отображаемое имя или псевдоним почты группы Microsoft 365 соответствует политикам именования.
+description: Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования.
 localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a7e434313c9f66d9b780d0bf521be49dd53e8b3e
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 6f401a66dc14036b4ef2f687f418a89fb477ac57
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897801"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042340"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: Валидатепропертиес
 
 Пространство имен: microsoft.graph
 
-Убедитесь, что отображаемое имя или псевдоним почты группы Microsoft 365 соответствует политикам именования.  Клиенты могут использовать этот API, чтобы определить, является ли отображаемое имя или псевдоним почты допустимым, прежде чем пытаться [создать](group-post-groups.md) группу Microsoft 365. Чтобы проверить свойства существующей группы, используйте функцию [Group: валидатепропертиес](group-validateproperties.md) .
+Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования.  Клиенты могут использовать этот API, чтобы определить, является ли отображаемое имя или псевдоним почты допустимым, прежде чем пытаться [создать](group-post-groups.md) группу Microsoft 365. Чтобы проверить свойства существующей группы, используйте функцию [Group: валидатепропертиес](group-validateproperties.md) .
 
 Для отображаемого имени и свойств псевдонима почты выполняются следующие проверки политик:
 1. Проверка политики именования префиксов и суффиксов
@@ -47,13 +47,13 @@ POST /directoryObjects/validateProperties
 | Авторизация  | Bearer {токен}. Обязательный.    |
 | Content-Type   | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |Сущности|String| Group — единственный поддерживаемый тип объекта. |
-|displayName|Строка| Отображаемое имя группы, которую требуется проверить. Свойство не обязательно должно быть обязательным. Однако необходимо указать по крайней мере одно свойство (**DisplayName** или **mailNickname**). |
+|displayName|String| Отображаемое имя группы, которую требуется проверить. Свойство не обязательно должно быть обязательным. Однако необходимо указать по крайней мере одно свойство (**DisplayName** или **mailNickname**). |
 |mailNickname|String| Псевдоним почты для группы, которую требуется проверить. Свойство не обязательно должно быть обязательным. Однако необходимо указать по крайней мере одно свойство (**DisplayName** или **mailNickname**). |
 |онбехалфофусерид|Guid| Идентификатор пользователя, который олицетворяет при вызове API. Результаты проверки предназначены для атрибутов и ролей **онбехалфофусерид** . |
 
@@ -121,7 +121,7 @@ HTTP/1.1 204 No Content
 ### <a name="example-2-request-with-validation-errors"></a>Пример 2: запрос с ошибками проверки
 Это пример запроса с ошибками проверки.
 
-#### <a name="request"></a>Запросить
+#### <a name="request"></a>Запрос
 ```http
 POST https://graph.microsoft.com/v1.0/directoryObjects/validateProperties
 Content-type: application/json
@@ -179,3 +179,4 @@ Content-Type: application/json
   "suppressions": [
   ]
 }-->
+

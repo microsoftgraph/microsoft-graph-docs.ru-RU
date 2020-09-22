@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 15dcda1621680325a8e93f1dfada3012ec45a6b0
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 7b60fb266f5ed21bb59382fb14ade1964bbf6c9e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43179439"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042277"
 ---
 # <a name="list-serviceconfigurationrecords"></a>Список serviceConfigurationRecords
 
@@ -52,7 +52,7 @@ GET /domains/contoso.com/serviceConfigurationRecords
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [domainDnsRecord](../resources/domaindnsrecord.md) в тексте отклика.
 
@@ -135,3 +135,4 @@ Content-length: 220
   "suppressions": [
   ]
 }-->
+

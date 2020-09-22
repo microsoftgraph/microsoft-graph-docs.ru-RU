@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 151de4ee90d715ffb6619908ea17cd6ba5e52ed4
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 82647c1bcc73444cc70febf53f8bdaf336b84ad4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807852"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041696"
 ---
 # <a name="alternativesecurityid-resource-type"></a>Тип ресурса alternativeSecurityId
 
@@ -39,3 +39,4 @@ ms.locfileid: "46807852"
 | type             | Int32      | Только для внутреннего использования
 | identityProvider | string     | Только для внутреннего использования
 | ключа              | Edm.Binary | Только для внутреннего использования
+

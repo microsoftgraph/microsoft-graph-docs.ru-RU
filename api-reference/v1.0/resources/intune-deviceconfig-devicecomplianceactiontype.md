@@ -3,14 +3,14 @@ title: тип перечисления deviceComplianceActionType
 description: Перечисление типов запланированных действий
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e9b44df925cfad240202ad207ddb883b61d6be18
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fcfad0e76f1977f9353d63a1367cdef35c76d69e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448962"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041465"
 ---
 # <a name="devicecomplianceactiontype-enum-type"></a>тип перечисления deviceComplianceActionType
 
@@ -24,12 +24,14 @@ ms.locfileid: "43448962"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |noAction|нуль|Без действий|
-|уведомляющее|1,1|Уведомление об отправке|
-|блок|2|Блокировка устройства в AAD|
+|уведомляющее|1 |Уведомление об отправке|
+|блок|2 |Блокировка устройства в AAD|
 |снять|4|Прекращение использования устройства|
 |Очистка|4 |Очистка устройства|
 |ремовересаурцеакцесспрофилес|5 |Удаление профилей доступа к ресурсам с устройства|
 |пушнотификатион|9 |Отправка push-уведомления на устройство|
+
+
 
 
 

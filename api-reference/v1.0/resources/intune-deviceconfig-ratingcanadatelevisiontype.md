@@ -3,14 +3,14 @@ title: тип перечисления Ратингканадателевиси�
 description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Канаде
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 484d648d1d84793926d9ede2185689749efc2f51
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 0a033db304fa61a9823cc650344b2cc11e77855e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43472886"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041430"
 ---
 # <a name="ratingcanadatelevisiontype-enum-type"></a>тип перечисления Ратингканадателевисионтипе
 
@@ -31,6 +31,8 @@ ms.locfileid: "43472886"
 |паренталгуиданце|5 |PG, с родительским руководством|
 |agesAbove14|6 |Классификация 14 + предназначена для зрителей от 14 лет и старше|
 |agesAbove18|7 |18 + классификация предназначена для зрителей от 18 лет и старше|
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Тип ресурса iosVppApp
 description: Содержит свойства, в том числе унаследованные, для приложений iOS, на которые распространяется программа VPP (Volume Purchase Program).
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 70fc5f8774b3683942b241373f21859e2c0b7b4d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a756b9c127adee86a4a73e7ad445184bab20d6ac
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43474299"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041605"
 ---
 # <a name="iosvppapp-resource-type"></a>Тип ресурса iosVppApp
 
@@ -27,8 +27,8 @@ ms.locfileid: "43474299"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Перечисление iosVppApps](../api/intune-apps-iosvppapp-list.md)|Коллекция [iosVppApp](../resources/intune-apps-iosvppapp.md)|Список свойств и связей объектов [iosVppApp](../resources/intune-apps-iosvppapp.md).|
-|[Получение iosVppApp](../api/intune-apps-iosvppapp-get.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md);|Считывание свойств и связей объекта [iosVppApp](../resources/intune-apps-iosvppapp.md).|
-|[Создание iosVppApp](../api/intune-apps-iosvppapp-create.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md);|Создание нового объекта [iosVppApp](../resources/intune-apps-iosvppapp.md).|
+|[Получение iosVppApp](../api/intune-apps-iosvppapp-get.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md)|Считывание свойств и связей объекта [iosVppApp](../resources/intune-apps-iosvppapp.md).|
+|[Создание iosVppApp](../api/intune-apps-iosvppapp-create.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md)|Создание нового объекта [iosVppApp](../resources/intune-apps-iosvppapp.md).|
 |[Удаление iosVppApp](../api/intune-apps-iosvppapp-delete.md)|None|Удаление экземпляра [iosVppApp](../resources/intune-apps-iosvppapp.md).|
 |[Обновление iosVppApp](../api/intune-apps-iosvppapp-update.md)|[iosVppApp](../resources/intune-apps-iosvppapp.md)|Обновление свойств объекта [iosVppApp](../resources/intune-apps-iosvppapp.md).|
 
@@ -36,8 +36,8 @@ ms.locfileid: "43474299"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -55,7 +55,7 @@ ms.locfileid: "43474299"
 |appStoreUrl|String|URL-адрес магазина.|
 |licensingType|[vppLicensingType](../resources/intune-apps-vpplicensingtype.md)|Поддерживаемый тип лицензии.|
 |applicableDeviceType|[iosDeviceType](../resources/intune-apps-iosdevicetype.md)|Применимый тип устройства с iOS.|
-|vppTokenOrganizationName|Строка|Организация, связанная с токеном Apple Volume Purchase Program.|
+|vppTokenOrganizationName|String|Организация, связанная с токеном Apple Volume Purchase Program.|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|Тип программы оптовых покупок, с которой связан заданный токен Apple Volume Purchase Program. Возможные значения: `business`, `education`. Возможные значения: `business`, `education`.|
 |vppTokenAppleId|String|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
 |bundleId|String|Имя удостоверения.|
@@ -115,6 +115,8 @@ ms.locfileid: "43474299"
   "bundleId": "String"
 }
 ```
+
+
 
 
 

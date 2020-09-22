@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Получение метаданных ресурса DriveItem в объекте Drive по пути в файловой системе или идентификатору.
 doc_type: apiPageType
-ms.openlocfilehash: ec9c739a0f9426f4876c3b4419b0bbeda66e4a26
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: a3b797ed5a967c24af1e14ed38046305a2e388c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43806533"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042145"
 ---
 # <a name="get-a-driveitem-resource"></a>Получение ресурса DriveItem
 
@@ -53,6 +53,10 @@ GET /users/{user-id}/drive/root:/{item-path}
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$expand` и `$select` для настройки отклика.
 
 С помощью [`$expand`параметра строки запроса](/graph/query-parameters) вы можете включить дочерние элементы запрос на получение метаданных элемента при наличии **дочерней** связи.
+
+Чтобы вернуть удаленные элементы, можно также использовать параметр запроса `includeDeletedItems=true`.
+Этот параметр запроса действителен только тогда, когда целевым объектом назначается [driveItem](../resources/driveitem.md) через идентификатор, в ином случае он игнорируется.
+В настоящее время этот параметр поддерживается только в OneDrive персональный.
 
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 
@@ -150,3 +154,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

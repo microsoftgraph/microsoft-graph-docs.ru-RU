@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: enumPageType
-ms.openlocfilehash: fb21878207b03f087ec7797a60517581d63183a5
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: a74fe1f9c18f91705c5774f8a23b9c9947569e85
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44333341"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041192"
 ---
 # <a name="teamsappinstalledstate-enum-type"></a>тип перечисления Теамсаппинсталледстате
 
@@ -26,3 +26,4 @@ ms.locfileid: "44333341"
 |устанавлива|1 |Приложение устанавливается обычным образом.|
 |инсталледандхидден|2 |Приложение установлено, но скрыто в представлении.|
 |инсталледандперманент|4|Приложение устанавливается без возможности восстановления и не может быть удалено.|
+

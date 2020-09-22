@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 834eb0259a54ed1d5ea984496e4c7150daebee5f
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: e23cefdcab26b25ebafffde209d96a13650254d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43179425"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042263"
 ---
 # <a name="list-domains"></a>Список доменов
 
@@ -44,7 +44,7 @@ GET /domains
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [domain](../resources/domain.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -120,3 +120,4 @@ Content-length: 245
   "suppressions": [
   ]
 }-->
+

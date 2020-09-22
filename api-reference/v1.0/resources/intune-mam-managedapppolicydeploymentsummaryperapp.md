@@ -3,14 +3,14 @@ title: Тип ресурса managedAppPolicyDeploymentSummaryPerApp
 description: Представляет сводку по развертыванию политик для приложений.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a0a4189c1f26736231155da775f137e7f61bbd23
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b7082c3f3b1bd4d52970f2af223c55770c686be0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43468495"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041296"
 ---
 # <a name="managedapppolicydeploymentsummaryperapp-resource-type"></a>Тип ресурса managedAppPolicyDeploymentSummaryPerApp
 
@@ -45,6 +45,8 @@ ms.locfileid: "43468495"
   "configurationAppliedUserCount": 1024
 }
 ```
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: dc1b4d7b49871d8e178efe10201b8fcbb8e27023
-ms.sourcegitcommit: 9a6ce4ddf75beead19b7c35a1949cf4d105b9b29
+ms.openlocfilehash: 533f82fa737c85fd816da04d75b712072d95a46c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43229376"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48042011"
 ---
 # <a name="group-renew"></a>group: renew
 
@@ -45,7 +45,7 @@ POST /groups/{id}/renew
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -103,3 +103,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

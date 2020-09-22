@@ -6,12 +6,12 @@ description: Объект Итемактионстат предоставляе�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 4207c85185281ec9944aa08dfce088739116bb8e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f1be83bef880b967758a803e694b068df9bfaebf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447684"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041269"
 ---
 # <a name="itemactionstat-resource-type"></a>Тип ресурса Итемактионстат
 
@@ -51,3 +51,4 @@ ms.locfileid: "42447684"
   "suppressions": []
 }
 -->
+
