@@ -3,35 +3,35 @@ title: Обновление Ндесконнектор
 description: Обновление свойств объекта Ндесконнектор.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5be8474e47f5bce4cb215566a63884fd4cef7ae1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e1694a163742b63df535744b43b33e3fc2ca9d65
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43342821"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054506"
 ---
-# <a name="update-ndesconnector"></a><span data-ttu-id="e812f-103">Обновление Ндесконнектор</span><span class="sxs-lookup"><span data-stu-id="e812f-103">Update ndesConnector</span></span>
+# <a name="update-ndesconnector"></a><span data-ttu-id="2f475-103">Обновление Ндесконнектор</span><span class="sxs-lookup"><span data-stu-id="2f475-103">Update ndesConnector</span></span>
 
-<span data-ttu-id="e812f-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e812f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="2f475-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2f475-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="e812f-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e812f-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="2f475-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2f475-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e812f-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e812f-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2f475-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="2f475-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e812f-107">Обновление свойств объекта [ндесконнектор](../resources/intune-deviceconfig-ndesconnector.md) .</span><span class="sxs-lookup"><span data-stu-id="e812f-107">Update the properties of a [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object.</span></span>
+<span data-ttu-id="2f475-107">Обновление свойств объекта [ндесконнектор](../resources/intune-deviceconfig-ndesconnector.md) .</span><span class="sxs-lookup"><span data-stu-id="2f475-107">Update the properties of a [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="e812f-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="e812f-108">Prerequisites</span></span>
-<span data-ttu-id="e812f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e812f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="2f475-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="2f475-108">Prerequisites</span></span>
+<span data-ttu-id="2f475-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2f475-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e812f-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e812f-111">Permission type</span></span>|<span data-ttu-id="e812f-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="e812f-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="2f475-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2f475-111">Permission type</span></span>|<span data-ttu-id="2f475-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="2f475-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e812f-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e812f-113">Delegated (work or school account)</span></span>|<span data-ttu-id="e812f-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e812f-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="e812f-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e812f-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e812f-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e812f-116">Not supported.</span></span>|
-|<span data-ttu-id="e812f-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e812f-117">Application</span></span>|<span data-ttu-id="e812f-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e812f-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="2f475-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2f475-113">Delegated (work or school account)</span></span>|<span data-ttu-id="2f475-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2f475-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="2f475-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2f475-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2f475-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2f475-116">Not supported.</span></span>|
+|<span data-ttu-id="2f475-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2f475-117">Application</span></span>|<span data-ttu-id="2f475-118">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2f475-118">DeviceManagementConfiguration.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e812f-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e812f-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2f475-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2f475-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,33 +40,33 @@ ms.locfileid: "43342821"
 PATCH /deviceManagement/ndesConnectors/{ndesConnectorId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e812f-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="e812f-120">Request headers</span></span>
-|<span data-ttu-id="e812f-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="e812f-121">Header</span></span>|<span data-ttu-id="e812f-122">Значение</span><span class="sxs-lookup"><span data-stu-id="e812f-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2f475-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="2f475-120">Request headers</span></span>
+|<span data-ttu-id="2f475-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="2f475-121">Header</span></span>|<span data-ttu-id="2f475-122">Значение</span><span class="sxs-lookup"><span data-stu-id="2f475-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e812f-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e812f-123">Authorization</span></span>|<span data-ttu-id="e812f-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e812f-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e812f-125">Accept</span><span class="sxs-lookup"><span data-stu-id="e812f-125">Accept</span></span>|<span data-ttu-id="e812f-126">application/json</span><span class="sxs-lookup"><span data-stu-id="e812f-126">application/json</span></span>|
+|<span data-ttu-id="2f475-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2f475-123">Authorization</span></span>|<span data-ttu-id="2f475-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2f475-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="2f475-125">Accept</span><span class="sxs-lookup"><span data-stu-id="2f475-125">Accept</span></span>|<span data-ttu-id="2f475-126">application/json</span><span class="sxs-lookup"><span data-stu-id="2f475-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e812f-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e812f-127">Request body</span></span>
-<span data-ttu-id="e812f-128">В тексте запроса добавьте представление объекта [ндесконнектор](../resources/intune-deviceconfig-ndesconnector.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e812f-128">In the request body, supply a JSON representation for the [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2f475-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2f475-127">Request body</span></span>
+<span data-ttu-id="2f475-128">В тексте запроса добавьте представление объекта [ндесконнектор](../resources/intune-deviceconfig-ndesconnector.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2f475-128">In the request body, supply a JSON representation for the [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object.</span></span>
 
-<span data-ttu-id="e812f-129">В следующей таблице приведены свойства, необходимые при создании [ндесконнектор](../resources/intune-deviceconfig-ndesconnector.md).</span><span class="sxs-lookup"><span data-stu-id="e812f-129">The following table shows the properties that are required when you create the [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).</span></span>
+<span data-ttu-id="2f475-129">В следующей таблице приведены свойства, необходимые при создании [ндесконнектор](../resources/intune-deviceconfig-ndesconnector.md).</span><span class="sxs-lookup"><span data-stu-id="2f475-129">The following table shows the properties that are required when you create the [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).</span></span>
 
-|<span data-ttu-id="e812f-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="e812f-130">Property</span></span>|<span data-ttu-id="e812f-131">Тип</span><span class="sxs-lookup"><span data-stu-id="e812f-131">Type</span></span>|<span data-ttu-id="e812f-132">Описание</span><span class="sxs-lookup"><span data-stu-id="e812f-132">Description</span></span>|
+|<span data-ttu-id="2f475-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="2f475-130">Property</span></span>|<span data-ttu-id="2f475-131">Тип</span><span class="sxs-lookup"><span data-stu-id="2f475-131">Type</span></span>|<span data-ttu-id="2f475-132">Описание</span><span class="sxs-lookup"><span data-stu-id="2f475-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e812f-133">id</span><span class="sxs-lookup"><span data-stu-id="e812f-133">id</span></span>|<span data-ttu-id="e812f-134">String</span><span class="sxs-lookup"><span data-stu-id="e812f-134">String</span></span>|<span data-ttu-id="e812f-135">Ключ соединителя NDES Connector.</span><span class="sxs-lookup"><span data-stu-id="e812f-135">The key of the NDES Connector.</span></span>|
-|<span data-ttu-id="e812f-136">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="e812f-136">lastConnectionDateTime</span></span>|<span data-ttu-id="e812f-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e812f-137">DateTimeOffset</span></span>|<span data-ttu-id="e812f-138">Время последнего подключения для соединителя NDES Connector</span><span class="sxs-lookup"><span data-stu-id="e812f-138">Last connection time for the Ndes Connector</span></span>|
-|<span data-ttu-id="e812f-139">state</span><span class="sxs-lookup"><span data-stu-id="e812f-139">state</span></span>|[<span data-ttu-id="e812f-140">ндесконнекторстате</span><span class="sxs-lookup"><span data-stu-id="e812f-140">ndesConnectorState</span></span>](../resources/intune-deviceconfig-ndesconnectorstate.md)|<span data-ttu-id="e812f-141">Состояние соединителя NDES Connector.</span><span class="sxs-lookup"><span data-stu-id="e812f-141">Ndes Connector Status.</span></span> <span data-ttu-id="e812f-142">Возможные значения: `none`, `active`, `inactive`.</span><span class="sxs-lookup"><span data-stu-id="e812f-142">Possible values are: `none`, `active`, `inactive`.</span></span>|
-|<span data-ttu-id="e812f-143">displayName</span><span class="sxs-lookup"><span data-stu-id="e812f-143">displayName</span></span>|<span data-ttu-id="e812f-144">Строка</span><span class="sxs-lookup"><span data-stu-id="e812f-144">String</span></span>|<span data-ttu-id="e812f-145">Понятное имя соединителя NDES Connector.</span><span class="sxs-lookup"><span data-stu-id="e812f-145">The friendly name of the Ndes Connector.</span></span>|
+|<span data-ttu-id="2f475-133">id</span><span class="sxs-lookup"><span data-stu-id="2f475-133">id</span></span>|<span data-ttu-id="2f475-134">String</span><span class="sxs-lookup"><span data-stu-id="2f475-134">String</span></span>|<span data-ttu-id="2f475-135">Ключ соединителя NDES Connector.</span><span class="sxs-lookup"><span data-stu-id="2f475-135">The key of the NDES Connector.</span></span>|
+|<span data-ttu-id="2f475-136">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="2f475-136">lastConnectionDateTime</span></span>|<span data-ttu-id="2f475-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2f475-137">DateTimeOffset</span></span>|<span data-ttu-id="2f475-138">Время последнего подключения для соединителя NDES Connector</span><span class="sxs-lookup"><span data-stu-id="2f475-138">Last connection time for the Ndes Connector</span></span>|
+|<span data-ttu-id="2f475-139">state</span><span class="sxs-lookup"><span data-stu-id="2f475-139">state</span></span>|[<span data-ttu-id="2f475-140">ндесконнекторстате</span><span class="sxs-lookup"><span data-stu-id="2f475-140">ndesConnectorState</span></span>](../resources/intune-deviceconfig-ndesconnectorstate.md)|<span data-ttu-id="2f475-141">Состояние соединителя NDES Connector.</span><span class="sxs-lookup"><span data-stu-id="2f475-141">Ndes Connector Status.</span></span> <span data-ttu-id="2f475-142">Возможные значения: `none`, `active`, `inactive`.</span><span class="sxs-lookup"><span data-stu-id="2f475-142">Possible values are: `none`, `active`, `inactive`.</span></span>|
+|<span data-ttu-id="2f475-143">displayName</span><span class="sxs-lookup"><span data-stu-id="2f475-143">displayName</span></span>|<span data-ttu-id="2f475-144">String</span><span class="sxs-lookup"><span data-stu-id="2f475-144">String</span></span>|<span data-ttu-id="2f475-145">Понятное имя соединителя NDES Connector.</span><span class="sxs-lookup"><span data-stu-id="2f475-145">The friendly name of the Ndes Connector.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="e812f-146">Ответ</span><span class="sxs-lookup"><span data-stu-id="e812f-146">Response</span></span>
-<span data-ttu-id="e812f-147">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [ндесконнектор](../resources/intune-deviceconfig-ndesconnector.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="e812f-147">If successful, this method returns a `200 OK` response code and an updated [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="2f475-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="2f475-146">Response</span></span>
+<span data-ttu-id="2f475-147">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [ндесконнектор](../resources/intune-deviceconfig-ndesconnector.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2f475-147">If successful, this method returns a `200 OK` response code and an updated [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e812f-148">Пример</span><span class="sxs-lookup"><span data-stu-id="e812f-148">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2f475-148">Пример</span><span class="sxs-lookup"><span data-stu-id="2f475-148">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e812f-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="e812f-149">Request</span></span>
-<span data-ttu-id="e812f-150">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e812f-150">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="2f475-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="2f475-149">Request</span></span>
+<span data-ttu-id="2f475-150">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2f475-150">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/ndesConnectors/{ndesConnectorId}
 Content-type: application/json
@@ -80,8 +80,8 @@ Content-length: 183
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="e812f-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="e812f-151">Response</span></span>
-<span data-ttu-id="e812f-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e812f-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="2f475-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="2f475-151">Response</span></span>
+<span data-ttu-id="2f475-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2f475-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -95,6 +95,9 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
+
+
+
 
 
 

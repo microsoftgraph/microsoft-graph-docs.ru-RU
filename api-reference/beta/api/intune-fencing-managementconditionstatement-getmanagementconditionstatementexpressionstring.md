@@ -3,35 +3,35 @@ title: Функция Жетманажементкондитионстатеме
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f8a6f7a76516f2ca179a9de0c95e15a71572aaeb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2a238417c14b7cd3ba3474d5f3ebcfa5bc670c80
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43391978"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48054100"
 ---
-# <a name="getmanagementconditionstatementexpressionstring-function"></a><span data-ttu-id="2931c-103">Функция Жетманажементкондитионстатементекспрессионстринг</span><span class="sxs-lookup"><span data-stu-id="2931c-103">getManagementConditionStatementExpressionString function</span></span>
+# <a name="getmanagementconditionstatementexpressionstring-function"></a><span data-ttu-id="15573-103">Функция Жетманажементкондитионстатементекспрессионстринг</span><span class="sxs-lookup"><span data-stu-id="15573-103">getManagementConditionStatementExpressionString function</span></span>
 
-<span data-ttu-id="2931c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2931c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="15573-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="15573-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="2931c-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2931c-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="15573-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="15573-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="2931c-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="2931c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="15573-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="15573-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2931c-107">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="2931c-107">Not yet documented</span></span>
+<span data-ttu-id="15573-107">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="15573-107">Not yet documented</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="2931c-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="2931c-108">Prerequisites</span></span>
-<span data-ttu-id="2931c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2931c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="15573-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="15573-108">Prerequisites</span></span>
+<span data-ttu-id="15573-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="15573-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2931c-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2931c-111">Permission type</span></span>|<span data-ttu-id="2931c-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="2931c-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="15573-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="15573-111">Permission type</span></span>|<span data-ttu-id="15573-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="15573-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="2931c-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2931c-113">Delegated (work or school account)</span></span>|<span data-ttu-id="2931c-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="2931c-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="2931c-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2931c-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2931c-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2931c-116">Not supported.</span></span>|
-|<span data-ttu-id="2931c-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2931c-117">Application</span></span>|<span data-ttu-id="2931c-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="2931c-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="15573-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="15573-113">Delegated (work or school account)</span></span>|<span data-ttu-id="15573-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="15573-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="15573-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="15573-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="15573-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="15573-116">Not supported.</span></span>|
+|<span data-ttu-id="15573-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="15573-117">Application</span></span>|<span data-ttu-id="15573-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="15573-118">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2931c-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2931c-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="15573-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="15573-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -41,28 +41,28 @@ GET /deviceManagement/managementConditionStatements/{managementConditionStatemen
 GET /deviceManagement/managementConditions/{managementConditionId}/managementConditionStatements/{managementConditionStatementId}/getManagementConditionStatementExpressionString
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2931c-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="2931c-120">Request headers</span></span>
-|<span data-ttu-id="2931c-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="2931c-121">Header</span></span>|<span data-ttu-id="2931c-122">Значение</span><span class="sxs-lookup"><span data-stu-id="2931c-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="15573-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="15573-120">Request headers</span></span>
+|<span data-ttu-id="15573-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="15573-121">Header</span></span>|<span data-ttu-id="15573-122">Значение</span><span class="sxs-lookup"><span data-stu-id="15573-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="2931c-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2931c-123">Authorization</span></span>|<span data-ttu-id="2931c-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2931c-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="2931c-125">Accept</span><span class="sxs-lookup"><span data-stu-id="2931c-125">Accept</span></span>|<span data-ttu-id="2931c-126">application/json</span><span class="sxs-lookup"><span data-stu-id="2931c-126">application/json</span></span>|
+|<span data-ttu-id="15573-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="15573-123">Authorization</span></span>|<span data-ttu-id="15573-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="15573-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="15573-125">Accept</span><span class="sxs-lookup"><span data-stu-id="15573-125">Accept</span></span>|<span data-ttu-id="15573-126">application/json</span><span class="sxs-lookup"><span data-stu-id="15573-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2931c-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="2931c-127">Request body</span></span>
-<span data-ttu-id="2931c-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="2931c-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="15573-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="15573-127">Request body</span></span>
+<span data-ttu-id="15573-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="15573-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2931c-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="2931c-129">Response</span></span>
-<span data-ttu-id="2931c-130">В случае успеха эта функция возвращает код `200 OK` отклика и объект [манажементкондитионекспрессионстринг](../resources/intune-fencing-managementconditionexpressionstring.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2931c-130">If successful, this function returns a `200 OK` response code and a [managementConditionExpressionString](../resources/intune-fencing-managementconditionexpressionstring.md) in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="15573-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="15573-129">Response</span></span>
+<span data-ttu-id="15573-130">В случае успеха эта функция возвращает `200 OK` код отклика и объект [манажементкондитионекспрессионстринг](../resources/intune-fencing-managementconditionexpressionstring.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="15573-130">If successful, this function returns a `200 OK` response code and a [managementConditionExpressionString](../resources/intune-fencing-managementconditionexpressionstring.md) in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2931c-131">Пример</span><span class="sxs-lookup"><span data-stu-id="2931c-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="15573-131">Пример</span><span class="sxs-lookup"><span data-stu-id="15573-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="2931c-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="2931c-132">Request</span></span>
-<span data-ttu-id="2931c-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2931c-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="15573-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="15573-132">Request</span></span>
+<span data-ttu-id="15573-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="15573-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/managementConditionStatements/{managementConditionStatementId}/getManagementConditionStatementExpressionString
 ```
 
-### <a name="response"></a><span data-ttu-id="2931c-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="2931c-134">Response</span></span>
-<span data-ttu-id="2931c-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2931c-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="15573-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="15573-134">Response</span></span>
+<span data-ttu-id="15573-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="15573-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -75,6 +75,9 @@ Content-Length: 126
   }
 }
 ```
+
+
+
 
 
 
