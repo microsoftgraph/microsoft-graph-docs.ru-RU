@@ -5,33 +5,33 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: a6e32f7bf9c635423ca1aace92aea160f6cc2706
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b4f00fc4c44b3019dccbded1fd222aa211d78c7a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531527"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032679"
 ---
-# <a name="educationorganization-resource-type"></a><span data-ttu-id="4c118-103">Тип ресурса educationOrganization</span><span class="sxs-lookup"><span data-stu-id="4c118-103">educationOrganization resource type</span></span>
+# <a name="educationorganization-resource-type"></a><span data-ttu-id="ff5f3-103">Тип ресурса educationOrganization</span><span class="sxs-lookup"><span data-stu-id="ff5f3-103">educationOrganization resource type</span></span>
 
-<span data-ttu-id="4c118-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4c118-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ff5f3-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ff5f3-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="4c118-105">Абстрактный объект, используемый для моделирования сходства между различными типами организаций в секторе образования.</span><span class="sxs-lookup"><span data-stu-id="4c118-105">Abstract entity used to model the commonality between different organization types within the education sector.</span></span>
+<span data-ttu-id="ff5f3-105">Абстрактный объект, используемый для моделирования сходства между различными типами организаций в секторе образования.</span><span class="sxs-lookup"><span data-stu-id="ff5f3-105">Abstract entity used to model the commonality between different organization types within the education sector.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4c118-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="4c118-106">Properties</span></span>
-| <span data-ttu-id="4c118-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="4c118-107">Property</span></span>     | <span data-ttu-id="4c118-108">Тип</span><span class="sxs-lookup"><span data-stu-id="4c118-108">Type</span></span>   |<span data-ttu-id="4c118-109">Описание</span><span class="sxs-lookup"><span data-stu-id="4c118-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="ff5f3-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="ff5f3-106">Properties</span></span>
+| <span data-ttu-id="ff5f3-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="ff5f3-107">Property</span></span>     | <span data-ttu-id="ff5f3-108">Тип</span><span class="sxs-lookup"><span data-stu-id="ff5f3-108">Type</span></span>   |<span data-ttu-id="ff5f3-109">Описание</span><span class="sxs-lookup"><span data-stu-id="ff5f3-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4c118-110">description</span><span class="sxs-lookup"><span data-stu-id="4c118-110">description</span></span>|<span data-ttu-id="4c118-111">String</span><span class="sxs-lookup"><span data-stu-id="4c118-111">String</span></span>| <span data-ttu-id="4c118-112">Описание организации.</span><span class="sxs-lookup"><span data-stu-id="4c118-112">Organization description.</span></span>|
-|<span data-ttu-id="4c118-113">displayName</span><span class="sxs-lookup"><span data-stu-id="4c118-113">displayName</span></span>|<span data-ttu-id="4c118-114">Строка</span><span class="sxs-lookup"><span data-stu-id="4c118-114">String</span></span>| <span data-ttu-id="4c118-115">Отображаемое имя Организации.</span><span class="sxs-lookup"><span data-stu-id="4c118-115">Organization display name.</span></span>|
-|<span data-ttu-id="4c118-116">externalSource</span><span class="sxs-lookup"><span data-stu-id="4c118-116">externalSource</span></span>|<span data-ttu-id="4c118-117">едукатионекстерналсаурце</span><span class="sxs-lookup"><span data-stu-id="4c118-117">educationExternalSource</span></span>| <span data-ttu-id="4c118-118">Источник, из которого была создана данная организация.</span><span class="sxs-lookup"><span data-stu-id="4c118-118">Source where this organization was created from.</span></span> <span data-ttu-id="4c118-119">Допустимые значения: `sis`, `manual`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="4c118-119">The possible values are: `sis`, `manual`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="ff5f3-110">description</span><span class="sxs-lookup"><span data-stu-id="ff5f3-110">description</span></span>|<span data-ttu-id="ff5f3-111">String</span><span class="sxs-lookup"><span data-stu-id="ff5f3-111">String</span></span>| <span data-ttu-id="ff5f3-112">Описание организации.</span><span class="sxs-lookup"><span data-stu-id="ff5f3-112">Organization description.</span></span>|
+|<span data-ttu-id="ff5f3-113">displayName</span><span class="sxs-lookup"><span data-stu-id="ff5f3-113">displayName</span></span>|<span data-ttu-id="ff5f3-114">String</span><span class="sxs-lookup"><span data-stu-id="ff5f3-114">String</span></span>| <span data-ttu-id="ff5f3-115">Отображаемое имя Организации.</span><span class="sxs-lookup"><span data-stu-id="ff5f3-115">Organization display name.</span></span>|
+|<span data-ttu-id="ff5f3-116">externalSource</span><span class="sxs-lookup"><span data-stu-id="ff5f3-116">externalSource</span></span>|<span data-ttu-id="ff5f3-117">едукатионекстерналсаурце</span><span class="sxs-lookup"><span data-stu-id="ff5f3-117">educationExternalSource</span></span>| <span data-ttu-id="ff5f3-118">Источник, из которого была создана данная организация.</span><span class="sxs-lookup"><span data-stu-id="ff5f3-118">Source where this organization was created from.</span></span> <span data-ttu-id="ff5f3-119">Допустимые значения: `sis`, `manual`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="ff5f3-119">The possible values are: `sis`, `manual`, `unknownFutureValue`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="4c118-120">Отношения</span><span class="sxs-lookup"><span data-stu-id="4c118-120">Relationships</span></span>
-<span data-ttu-id="4c118-121">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="4c118-121">None.</span></span>
+## <a name="relationships"></a><span data-ttu-id="ff5f3-120">Отношения</span><span class="sxs-lookup"><span data-stu-id="ff5f3-120">Relationships</span></span>
+<span data-ttu-id="ff5f3-121">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="ff5f3-121">None.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="4c118-122">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="4c118-122">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ff5f3-122">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="ff5f3-122">JSON representation</span></span>
 
-<span data-ttu-id="4c118-123">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4c118-123">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="ff5f3-123">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ff5f3-123">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -61,3 +61,4 @@ ms.locfileid: "42531527"
   "section": "documentation",
   "tocPath": ""
 }-->
+
