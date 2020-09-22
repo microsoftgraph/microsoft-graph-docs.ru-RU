@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0da0f07f121ae23be2b2f6f33584d3de9c6157e5
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 586af0af699aa528dfe6b0a7d15988e9edca3e0d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329441"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991434"
 ---
 # <a name="delete-b2xuserflow"></a>Удаление b2xUserFlow
 
@@ -28,7 +28,7 @@ ms.locfileid: "47329441"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Идентитюсерфлов. ReadWrite. ALL|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|Идентитюсерфлов. ReadWrite. ALL|
+|Для приложений|Идентитюсерфлов. ReadWrite. ALL|
 
 Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
 
@@ -48,7 +48,7 @@ DELETE /identity/b2xUserFlows/{id}
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -90,7 +90,7 @@ DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -103,3 +103,5 @@ DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+

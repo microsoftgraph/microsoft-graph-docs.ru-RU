@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7835f71ce1ae33cc2c70ef1389de7e048104d35e
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 1cac9a30fe75f416dc8724c785c2c83101b37951
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109063"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992001"
 ---
 # <a name="create-contactfolder"></a>Создание объекта ContactFolder
 
@@ -85,7 +85,7 @@ Content-length: 84
 ---
 
 Предоставьте в тексте запроса описание объекта [contactFolder](../resources/contactfolder.md) в формате JSON.
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -115,3 +115,4 @@ Content-length: 104
   "suppressions": [
   ]
 }-->
+

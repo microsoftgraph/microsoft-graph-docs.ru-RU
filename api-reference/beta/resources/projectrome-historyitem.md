@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: resourcePageType
 author: ailae
-ms.openlocfilehash: c6b87e96e857b71939ca9762a7a32c97d24f38f8
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 8d5c3d303944dffc27e9996302ac31de671565b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812802"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993167"
 ---
 # <a name="historyitem-resource-type"></a>Тип ресурса historyItem
 
@@ -38,18 +38,18 @@ ms.locfileid: "46812802"
 |createdDateTime | DateTimeOffset | Задается сервером. Дата и время в формате UTC, когда объект был создан на сервере.|
 |lastModifiedDateTime | DateTimeOffset | Задается сервером. Дата и время в формате UTC, когда объект был изменен на сервере.|
 |id | String | Обязательный. Идентификатор GUID для объекта **historyItem** в клиентском наборе.|
-|стартеддатетиме | DateTimeOffset | Обязательный элемент. Дата и время (UTC) при запуске **historyItem** (сеанс активности). Обязательный для журнала временной шкалы.|
-|ластактиведатетиме | DateTimeOffset | Необязательное свойство. Дата и время (в формате UTC), когда **historyItem** (сеанс активности) использовался в последний раз как активный или завершенный — если значение равно null, то состояние **HistoryItem** должно быть текущим.|
-|expirationDateTime | DateTimeOffset | Необязательное свойство. Дата и время в формате UTC, когда **historyItem** будет окончательно удален. Может быть задано клиентом.|
+|стартеддатетиме | DateTimeOffset | Обязательно. Дата и время (UTC) при запуске **historyItem** (сеанс активности). Обязательный для журнала временной шкалы.|
+|ластактиведатетиме | DateTimeOffset | Необязательный параметр. Дата и время (в формате UTC), когда **historyItem** (сеанс активности) использовался в последний раз как активный или завершенный — если значение равно null, то состояние **HistoryItem** должно быть текущим.|
+|expirationDateTime | DateTimeOffset | Необязательный параметр. Дата и время в формате UTC, когда **historyItem** будет окончательно удален. Может быть задано клиентом.|
 |активедуратионсекондс | int | Необязательный параметр. Продолжительность активных пользователей. Если этот параметр не указан, вычисляется из **стартеддатетиме** и **ластактиведатетиме**.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 |Связь | Тип | Описание|
 |:------------|:-----|:-----------|
-|activity| [действии](../resources/projectrome-activity.md) | Необязательное свойство. Свойство NavigationProperty/вложение; свойство навигации для связанного действия.|
+|activity| [действии](../resources/projectrome-activity.md) | Необязательный параметр. Свойство NavigationProperty/вложение; свойство навигации для связанного действия.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -90,3 +90,5 @@ ms.locfileid: "46812802"
   "suppressions": []
 }
 -->
+
+

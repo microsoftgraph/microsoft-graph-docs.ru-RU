@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a597ce800d709df1ce5b0eb4ab54f8f2028605e6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 99d62710d0769f500984db8ffbd8936f6c217956
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441328"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991728"
 ---
 # <a name="get-audio-routing-group"></a>Получение группы маршрутизации звука
 
@@ -27,7 +27,7 @@ ms.locfileid: "42441328"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | Calls. Жоинграупкаллс. ALL, Calls. Инитиатеграупкаллс. ALL |
+| Для приложений                            | Calls. Жоинграупкаллс. ALL, Calls.IniТиатеграупкаллс. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ GET /communications/calls/{id}/audioRoutingGroups/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [аудиораутингграуп](../resources/audioroutinggroup.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -120,3 +120,5 @@ Content-Length: 233
   ]
 }
 -->
+
+

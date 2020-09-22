@@ -1,31 +1,31 @@
 ---
-title: Обновление Аусентикатионфловсполици
-description: Обновление логического свойства Селфсервицесигнуп объекта Аусентикатионфловсполици.
+title: Обновление authenticationFlowsPolicy
+description: Обновление логического свойства selfServiceSignUp объекта authenticationFlowsPolicy.
 author: linkhp
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3408cff98cc79dbf819e077ab12fa066f7d723f7
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
-ms.translationtype: Auto
+ms.openlocfilehash: 243b635f904881acd0bbbe05c542b738c3e474b9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44680896"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991602"
 ---
-# <a name="update-authenticationflowspolicy"></a>Обновление Аусентикатионфловсполици
+# <a name="update-authenticationflowspolicy"></a>Обновление authenticationFlowsPolicy
 
 Пространство имен: microsoft.graph
 
-Обновление логического свойства **селфсервицесигнуп** объекта [аусентикатионфловсполици](../resources/authenticationflowspolicy.md) . **Идентификатор**, **тип**и **Описание** свойства не могут быть изменены.
+Обновление логического свойства **selfServiceSignUp** объекта [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md). Свойства **идентификатор**, **тип** и **описание**изменить невозможно.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Policy. ReadWrite. Аусентикатионфловс|
+|Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.AuthenticationFlows|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|Policy. ReadWrite. Аусентикатионфловс|
+|Для приложений|Policy.ReadWrite.AuthenticationFlows|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,14 +43,14 @@ PATCH https://graph.microsoft.com/beta/policies/authenticationFlowsPolicy
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
-В тексте запроса вы можете предоставить представление объекта [аусентикатионфловсполици](../resources/authenticationflowspolicy.md) в формате JSON (необязательно).
+## <a name="request-body"></a>Текст запроса
+В тексте запроса можно указать представление JSON объекта [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md) (но не обязательно).
 
-В следующей таблице приведены свойства, необходимые при обновлении [аусентикатионфловсполици](../resources/authenticationflowspolicy.md).
+Ниже показаны свойства, которые необходимо указывать при обновлении[authenticationFlowsPolicy](../resources/authenticationflowspolicy.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|селфсервицесигнуп|[селфсервицесигнупаусентикатионфловконфигуратион](../resources/selfservicesignupauthenticationflowconfiguration.md)|Самостоятельная настройка регистрации.|
+|selfServiceSignUp|[selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md)|Самостоятельная конфигурация регистрации.|
 
 ## <a name="response"></a>Отклик
 
@@ -99,3 +99,5 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+

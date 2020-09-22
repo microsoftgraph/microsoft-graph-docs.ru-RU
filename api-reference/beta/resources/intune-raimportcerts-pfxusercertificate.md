@@ -3,14 +3,14 @@ title: Тип ресурса Пфксусерцертификате
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 21db7de4cb249cb0a263ee2ed98303b7708b32c5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 514e3d4c858a49ab51f5c3f7565ae4ccdf64be6e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462410"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993282"
 ---
 # <a name="pfxusercertificate-resource-type"></a>Тип ресурса Пфксусерцертификате
 
@@ -34,8 +34,8 @@ ms.locfileid: "43462410"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|tenantId|GUID|Пока не задокументировано.|
-|userId|GUID|Пока не задокументировано.|
+|tenantId|Guid|Пока не задокументировано.|
+|userId|Guid|Пока не задокументировано.|
 |отпечаток|String|Пока не задокументировано.|
 |усерупн|String|Пока не задокументировано.|
 |енкриптедпфксблоб|String|Пока не задокументировано.|
@@ -44,13 +44,13 @@ ms.locfileid: "43462410"
 |цертекспиратиондате|DateTimeOffset|Пока не задокументировано.|
 |providerName|String|Пока не задокументировано.|
 |енкриптионкэйнаме|String|Пока не задокументировано.|
-|паддингсчеме|Int32|Пока нет описания|
-|status|Int32|Пока нет описания|
-|intendedPurpose|Int32|Пока нет описания|
+|паддингсчеме|Int32|Пока не задокументировано.|
+|status|Int32|Пока не задокументировано.|
+|intendedPurpose|Int32|Пока не задокументировано.|
 |createdTime|DateTimeOffset|Пока не задокументировано.|
-|isDeleted|Boolean|Пока не задокументировано|
+|isDeleted|Boolean|Н/Д|
 |lastModifiedTime|DateTimeOffset|Пока не задокументировано.|
-|eTag|String|Пока не задокументировано.|
+|eTag|String|Н/Д|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -85,6 +85,9 @@ ms.locfileid: "43462410"
   "eTag": "String"
 }
 ```
+
+
+
 
 
 

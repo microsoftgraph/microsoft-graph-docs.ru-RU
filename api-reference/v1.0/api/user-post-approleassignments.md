@@ -1,26 +1,26 @@
 ---
-title: Предоставление пользователю Аппролеассигнмент
-description: Предоставьте пользователю назначение роли приложения.
+title: Предоставление appRoleAssignment пользователю
+description: Предоставление назначения роли приложения пользователю.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 44007dbd51446d80e962a6e0485c44b7cc2d6b24
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 3ec3534896bd5763d450e457edfac9a924e10d3a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383727"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992022"
 ---
-# <a name="grant-an-approleassignment-to-a-user"></a>Предоставление пользователю Аппролеассигнмент
+# <a name="grant-an-approleassignment-to-a-user"></a>Предоставление appRoleAssignment пользователю
 
 Пространство имен: microsoft.graph
 
-Используйте этот API, чтобы назначить роль приложения пользователю. Чтобы предоставить пользователю назначение роли приложения, вам потребуется три идентификатора:
+Используйте этот API, чтобы назначить роль приложения пользователю. Чтобы предоставить назначение роли приложения пользователю, нужны три идентификатора:
 
-- `principalId`— `id` Пользователь, которому назначается роль приложения.
-- `resourceId`: `id` Ресурс, в котором `servicePrincipal` определена роль приложения.
-- `appRoleId`: Значение `id` `appRole` (определяется для субъекта-службы ресурсов), которое необходимо назначить пользователю.
+- `principalId`: `id` пользователя, которому нужно назначить роль приложения.
+- `resourceId`: `id` ресурса `servicePrincipal`, который определяет роль приложения.
+- `appRoleId`: `id` объекта `appRole` (определенного в субъекте-службе ресурса) для назначения пользователю.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "44383727"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Аппролеассигнмент. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Аппролеассигнмент. ReadWrite. ALL |
+|Для приложений | AppRoleAssignment.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,7 +40,7 @@ POST /users/{id | userPrincipalName}/appRoleAssignments
 ```
 
 > [!NOTE]
-> Рекомендуется создавать назначения ролей приложений с помощью `appRoleAssignedTo` отношения между субъектом службы _ресурсов_ , а не с `appRoleAssignments` назначенным пользователем, группой или субъектом службы.
+> Рекомендуется создавать назначения ролей приложения, используя отношение `appRoleAssignedTo` _ресурса_ субъекта-службы вместо отношения `appRoleAssignments` назначенного пользователя, группы или субъекта-службы.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -51,11 +51,11 @@ POST /users/{id | userPrincipalName}/appRoleAssignments
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [аппролеассигнмент](../resources/approleassignment.md) в формате JSON.
+В тексте запроса укажите представление JSON для объекта [appRoleAssignment](../resources/approleassignment.md).
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [аппролеассигнмент](../resources/approleassignment.md) в тексте отклика.
+В случае успеха этот метод возвращает в тексте отклика код отклика `201 Created` и объект [appRoleAssignment](../resources/approleassignment.md).
 
 ## <a name="examples"></a>Примеры
 
@@ -100,7 +100,7 @@ Content-Length: 110
 ---
 
 
-В этом примере `{id}` и то, и `{principalId-value}` другое — это `id` назначенный пользователь.
+В этом примере `{id}` и `{principalId-value}` станут `id` назначенного пользователя.
 
 ### <a name="response"></a>Отклик
 
@@ -143,3 +143,4 @@ Content-length: 253
   ]
 }
 -->
+

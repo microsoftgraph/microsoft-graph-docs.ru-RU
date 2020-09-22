@@ -3,14 +3,14 @@ title: тип перечисления Девицеаппманажементт�
 description: Категория задачи управления приложениями для устройств.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a05cf03cd5c47d04f9b65d357eceece173a925e4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3bdf98eea0e8e86d096ada7caf2d2c721f90a389
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446682"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993702"
 ---
 # <a name="deviceappmanagementtaskcategory-enum-type"></a>тип перечисления Девицеаппманажементтасккатегори
 
@@ -26,7 +26,10 @@ ms.locfileid: "43446682"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестный источник.|
-|выборкам|1,1|& угрозе для защитника Windows: Управление уязвимостью.|
+|выборкам|1 |& угрозе для защитника Windows: Управление уязвимостью.|
+
+
+
 
 
 

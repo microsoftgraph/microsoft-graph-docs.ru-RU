@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 2b44d2f2881a91dea14bc78898f3f697b88b5932
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: 337216a290f41600947bcd83e13b907d80334164
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44743774"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992148"
 ---
 # <a name="list-licensedetails"></a>Перечисление licenseDetails
 
@@ -34,12 +34,12 @@ GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$select` параметр запроса. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select` параметр запроса. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Код носителя &lt;&gt;|
+| Authorization  | Код носителя &lt;&gt;|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
@@ -120,3 +120,4 @@ Content-length: 389
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f0101f7937b89df9d15b8b836dd241aa09d8e857
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: ac55260051aca49a5d267cd3e34c6d6b336c6c23
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181247"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992372"
 ---
 # <a name="create-certificatebasedauthconfiguration"></a>Создание Цертификатебаседаусконфигуратион
 
@@ -46,7 +46,7 @@ POST /organization/{id}/certificateBasedAuthConfiguration
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 Для создания объекта [цертификатебаседаусконфигуратион](../resources/certificatebasedauthconfiguration.md) требуются следующие свойства:
 
@@ -54,9 +54,9 @@ POST /organization/{id}/certificateBasedAuthConfiguration
 |:-------------|:------------|:------------|
 |цертификатеаусоритиес| Коллекция [цертификатеаусорити](../resources/certificateauthority.md) |Коллекция центров сертификации, которая создает доверенную цепочку сертификатов.  Каждый член коллекции должен содержать свойства **Certificate** и **исрутаусорити** . |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `201 Created` возвращает код отклика и новый объект [цертификатебаседаусконфигуратион](../resources/certificatebasedauthconfiguration.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [цертификатебаседаусконфигуратион](../resources/certificatebasedauthconfiguration.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -141,3 +141,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

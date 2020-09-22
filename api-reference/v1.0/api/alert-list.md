@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: be594c14612e8957e052ba536a1cf3c74fe7cdf6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e1f0d250d73c998371f52ad8ab26374dd85b9b6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518961"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992848"
 ---
 # <a name="list-alerts"></a>Перечисление оповещений
 
@@ -45,11 +45,23 @@ GET /security/alerts?$filter={property} eq '{property-value}' and {property} eq 
 Этот метод поддерживает указанные ниже [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 - `$count`
-- `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top` возвращает объединенные лучшие результаты от каждого поставщика API безопасности.  
+- `$top` – Возвращает объединенные лучшие результаты от каждого поставщика API безопасности.  
+- `$filter`
+
+В таблице ниже перечислены ключевые слова `$filter` по именам поставщиков.
+
+| Наименование поставщика      |ключевое слово $filter|
+|:----------|:----------|
+| Расширенная защита от угроз Azure | Расширенная защита от угроз Azure | 
+| Центр безопасности Azure | ASC |
+| Microsoft Cloud App Security | MCAS |
+| Защита идентификации Azure Active Directory | IPC |
+| Azure Sentinel | Azure Sentinel |
+| Advanced Threat Protection в Microsoft Defender | ATP в Защитнике Windows |
+| Office 365 | В настоящее время не поддерживается. |
 
 Чтобы возвратить альтернативный набор свойств, используйте параметр запроса OData `$select`, чтобы указать нужный набор свойств **alert**.  Например, чтобы вернуть свойства **assignedTo**, **category** и **severity**, добавьте в свой запрос следующее: `$select=assignedTo,category,severity`.
 
@@ -144,3 +156,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

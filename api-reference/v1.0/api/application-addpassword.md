@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1d816e00298ca0a82df3f595f19950bb44570ab4
-ms.sourcegitcommit: c6e8a2097267ace4c78124be48646f9129114b26
+ms.openlocfilehash: b5ab6e31aeea04b173ac8fee8fae884c82573a59
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47340056"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992834"
 ---
 # <a name="application-addpassword"></a>Приложение: Аддпассворд
 
@@ -49,9 +49,9 @@ POST /applications/{id}/addPassword
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| displayName | Строка | Понятное имя для пароля. Необязательное свойство. |
-| endDateTime | DateTimeOffset | Дата и время истечения срока действия пароля, представленного в формате ISO 8601, и всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательное свойство. Значение по умолчанию — "startDateTime + 2 года". |
-| startDateTime | DateTimeOffset | Дата и время, когда пароль становится действительным. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательное свойство.  Значение по умолчанию — "Now". |
+| displayName | String | Понятное имя для пароля. Необязательный параметр. |
+| endDateTime | DateTimeOffset | Дата и время истечения срока действия пароля, представленного в формате ISO 8601, и всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательный параметр. Значение по умолчанию — "startDateTime + 2 года". |
+| startDateTime | DateTimeOffset | Дата и время, когда пароль становится действительным. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Необязательный параметр.  Значение по умолчанию — "Now". |
 
 ## <a name="response"></a>Отклик
 
@@ -134,3 +134,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

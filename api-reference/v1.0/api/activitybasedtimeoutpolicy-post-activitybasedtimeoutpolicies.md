@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 670e912edd8cc966d0fbc07247ffcd6e3cbeffa0
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 480ab012a6f58e378d0bf9085d994eddb51e539d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917135"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992937"
 ---
 # <a name="create-activitybasedtimeoutpolicy"></a>Создание Активитибаседтимеаутполици
 
@@ -45,11 +45,11 @@ POST policies/activityBasedTimeoutPolicies
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [активитибаседтимеаутполици](../resources/activitybasedtimeoutpolicy.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [активитибаседтимеаутполици](../resources/activitybasedtimeoutpolicy.md) в тексте отклика.
 
@@ -132,3 +132,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

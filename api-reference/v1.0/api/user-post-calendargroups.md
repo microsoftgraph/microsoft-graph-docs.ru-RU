@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5eac9c9aa230b3a6a016437e2a7c1796ce0986c0
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 4f6a13072727a31be56912bdaebe84bb251c697c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109084"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992015"
 ---
 # <a name="create-calendargroup"></a>Создание объекта CalendarGroup
 
@@ -84,7 +84,7 @@ Content-length: 90
 ---
 
 Предоставьте в тексте запроса описание объекта [calendarGroup](../resources/calendargroup.md) в формате JSON.
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -115,3 +115,4 @@ Content-length: 110
   "suppressions": [
   ]
 }-->
+

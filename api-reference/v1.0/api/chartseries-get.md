@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 58b1fe088cc7990f690b622203cc17f7b565fb54
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 45e3122fca2b00f1208856105d7346cab0b6852b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518373"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992365"
 ---
 # <a name="get-chartseries"></a>Получение объекта ChartSeries
 
@@ -43,7 +43,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/series/{series-id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчартсериес](../resources/chartseries.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -104,3 +104,4 @@ Content-length: 26
   "suppressions": [
   ]
 }-->
+

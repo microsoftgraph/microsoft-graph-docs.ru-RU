@@ -1,31 +1,31 @@
 ---
-title: Получение Аусентикатионфловсполици
-description: Чтение свойств и связей объекта Аусентикатионфловсполици.
+title: Получение authenticationFlowsPolicy
+description: Прочтение свойств и связей объекта authenticationFlowsPolicy.
 author: linkhp
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 348b375d022eaacfabfa2d5f37af69004eb82b98
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
-ms.translationtype: Auto
+ms.openlocfilehash: 4aa1d26c54c70b6cde1231570c8d44de495db568
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44680924"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991616"
 ---
-# <a name="get-authenticationflowspolicy"></a>Получение Аусентикатионфловсполици
+# <a name="get-authenticationflowspolicy"></a>Получение authenticationFlowsPolicy
 
 Пространство имен: microsoft.graph
 
-Чтение свойств и связей объекта [аусентикатионфловсполици](../resources/authenticationflowspolicy.md) .
+Прочтение свойств и связей объекта [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Policy. Read. ALL, Policy. ReadWrite. Аусентикатионфловс|
+|Делегированные (рабочая или учебная учетная запись)|Policy.Read.All, Policy.ReadWrite.AuthenticationFlows|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|Policy. Read. ALL, Policy. ReadWrite. Аусентикатионфловс|
+|Для приложений|Policy.Read.All, Policy.ReadWrite.AuthenticationFlows|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,12 +42,12 @@ GET /policies/authenticationFlowsPolicy
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [аусентикатионфловсполици](../resources/authenticationflowspolicy.md) в тексте отклика.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [authenticationFlowsPolicy](../resources/authenticationflowspolicy.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -99,3 +99,5 @@ Content-Type: application/json
     }
 }
 ```
+
+

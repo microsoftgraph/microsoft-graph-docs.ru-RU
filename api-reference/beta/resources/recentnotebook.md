@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: jewan-microsoft
-ms.openlocfilehash: f75d3ce272d4f71c7a5ecbbc26c09e015d458ce7
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 2097f9362e24ffe279201ae0d1d9907531568d2a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810477"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993030"
 ---
 # <a name="recentnotebook-resource-type"></a>Тип ресурса recentNotebook
 
@@ -28,7 +28,7 @@ ms.locfileid: "46810477"
 |links|[recentNotebookLinks](recentnotebooklinks.md)|Ссылки для открытия записной книжки. Ссылка `oneNoteClientURL` открывает записную книжку в клиенте OneNote, если он установлен. `oneNoteWebURL`Ссылка открывает записную книжку в OneNote в Интернете.|
 |sourceService|String|Внутреннее хранилище, в котором находится записная книжка (`OneDriveForBusiness` или `OneDrive`).|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -55,3 +55,5 @@ ms.locfileid: "46810477"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | Коллекция [notebook](notebook.md) | Получите коллекцию записных книжек, которые недавно открывал пользователь. |
+
+

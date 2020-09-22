@@ -3,14 +3,14 @@ title: Тип ресурса Енроллментрестриктионскон�
 description: Класс, содержащий свойства, используемые для ограничения регистрации Полицисетитем.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9377854bb4c543147938ca785f87f539bca59de1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 91cdfb3649eea996677e2e9c7d0c1edf668b8aba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458442"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993548"
 ---
 # <a name="enrollmentrestrictionsconfigurationpolicysetitem-resource-type"></a>Тип ресурса Енроллментрестриктионсконфигуратионполицисетитем
 
@@ -42,10 +42,10 @@ ms.locfileid: "43458442"
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения Полицисетитем. Наследуется от [полицисетитем](../resources/intune-policyset-policysetitem.md)|
 |пайлоадид|String|Пайлоадид Полицисетитем. Наследуется от [полицисетитем](../resources/intune-policyset-policysetitem.md)|
 |itemType|String|Полицисеттипе Полицисетитем. Наследуется от [полицисетитем](../resources/intune-policyset-policysetitem.md)|
-|displayName|Строка|DisplayName объекта Полицисетитем. Наследуется от [полицисетитем](../resources/intune-policyset-policysetitem.md)|
+|displayName|String|DisplayName объекта Полицисетитем. Наследуется от [полицисетитем](../resources/intune-policyset-policysetitem.md)|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Состояние Полицисетитем. Наследуется от [полицисетитем](../resources/intune-policyset-policysetitem.md). Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки (при возникновении ошибки). Наследуется от [полицисетитем](../resources/intune-policyset-policysetitem.md). Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|гуидеддеплойменттагс|Коллекция объектов string|Теги управляемого развертывания, унаследованные от [полицисетитем](../resources/intune-policyset-policysetitem.md)|
+|гуидеддеплойменттагс|Коллекция String|Теги управляемого развертывания, унаследованные от [полицисетитем](../resources/intune-policyset-policysetitem.md)|
 |priority|Int32|Приоритет Енроллментрестриктионсконфигуратионполицисетитем.|
 |limit|Int32|Ограничения для Енроллментрестриктионсконфигуратионполицисетитем.|
 
@@ -78,6 +78,9 @@ ms.locfileid: "43458442"
   "limit": 1024
 }
 ```
+
+
+
 
 
 

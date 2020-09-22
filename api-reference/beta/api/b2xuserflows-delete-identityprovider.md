@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d0b1e3f29c988ba755306833600446e814b829b4
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 5c4431c9f56dd89e7f64cdef43d8f8cd85aced9c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329561"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991441"
 ---
 # <a name="delete-identityprovider-from-b2xuserflow"></a>Удаление identityProvider из b2xUserFlow
 
@@ -28,7 +28,7 @@ ms.locfileid: "47329561"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Идентитюсерфлов. ReadWrite. ALL|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение| Идентитюсерфлов. ReadWrite. ALL|
+|Для приложений| Идентитюсерфлов. ReadWrite. ALL|
 
 Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
 
@@ -49,7 +49,7 @@ DELETE /b2xUserFlows/{id}/identityProviders/{id}/$ref
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -101,3 +101,5 @@ DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_PartnerSignU
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

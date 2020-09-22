@@ -1,18 +1,18 @@
 ---
-title: Список транзитивных пользователей memberOf
+title: Перечисление user transitive memberOf
 description: Получение групп, ролей каталогов, участником которых является пользователь. Этот запрос API является транзитивным и также возвращает все группы, в которых пользователь является вложенным.
 author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: caee8bd1c849d7ac38562ace7e39541810de11aa
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 6e1186325dde5410b22983b34de04372c5092ba2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108720"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992052"
 ---
-# <a name="list-user-transitive-memberof"></a>Список транзитивных пользователей memberOf
+# <a name="list-user-transitive-memberof"></a>Перечисление user transitive memberOf
 
 Пространство имен: microsoft.graph
 
@@ -53,7 +53,7 @@ GET /users/{id | userPrincipalName}/transitiveMemberOf
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/me/transitiveMemberOf
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
@@ -132,3 +132,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

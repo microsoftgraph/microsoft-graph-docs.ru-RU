@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 32dbbe0c87fbaaf19e93f434949408b3fea73523
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 4450941649fa4cb0015d249d590430294c6273f0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805908"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991693"
 ---
 # <a name="list-methods"></a>Методы List
 
@@ -59,7 +59,7 @@ GET /users/{id}/authentication/methods
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [authenticationMethod](../resources/authenticationmethod.md) в теле отклика.
 
@@ -145,3 +145,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

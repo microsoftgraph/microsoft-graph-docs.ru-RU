@@ -3,14 +3,14 @@ title: Тип ресурса Онпременкриптедпайлоад
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: edbd98aa1dd2cd357603bb949e753e3df0024f1d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 85262162b100d55ad31a844980a5582b03580791
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447995"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993324"
 ---
 # <a name="onpremencryptedpayload-resource-type"></a>Тип ресурса Онпременкриптедпайлоад
 
@@ -34,22 +34,22 @@ ms.locfileid: "43447995"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|tenantId|GUID|Пока не задокументировано.|
-|userId|GUID|Пока не задокументировано.|
+|tenantId|Guid|Пока не задокументировано.|
+|userId|Guid|Пока не задокументировано.|
 |deviceId|Guid|Пока не задокументировано.|
-|пайлоадид|GUID|Пока не задокументировано.|
+|пайлоадид|Guid|Пока не задокументировано.|
 |девицекэйсумбпринт|String|Пока не задокументировано.|
 |cert1PayloadUUID|String|Пока не задокументировано.|
 |cert2PayloadUUID|String|Пока не задокументировано.|
 |cert3PayloadUUID|String|Пока не задокументировано.|
 |плисттемплате|String|Пока не задокументировано.|
 |енкриптедблоб|Binary|Пока не задокументировано.|
-|пайлоадверсион|Int32|Пока нет описания|
-|status|Int32|Пока нет описания|
+|пайлоадверсион|Int32|Пока не задокументировано.|
+|status|Int32|Пока не задокументировано.|
 |createdTime|DateTimeOffset|Пока не задокументировано.|
 |lastModifiedTime|DateTimeOffset|Пока не задокументировано.|
 |eTag|String|Пока не задокументировано.|
-|isDeleted|Boolean|Пока не задокументировано|
+|isDeleted|Boolean|Н/Д|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -83,6 +83,9 @@ ms.locfileid: "43447995"
   "isDeleted": true
 }
 ```
+
+
+
 
 
 

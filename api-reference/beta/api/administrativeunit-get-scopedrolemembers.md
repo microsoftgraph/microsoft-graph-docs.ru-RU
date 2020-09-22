@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1b080bc69886c8fb87ae5730fb41f043316ed2c6
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 93c6825c0b02bad092007d4314e1fd20bd0f972f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123393"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991742"
 ---
 # <a name="get-a-scopedrolemember"></a>Получение Скопедролемембер
 
@@ -45,7 +45,7 @@ GET /administrativeUnits/{id}/scopedRoleMembers/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [scopedrolemembership изменен](../resources/scopedrolemembership.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -111,3 +111,5 @@ Content-length: 307
   ]
 }
 -->
+
+

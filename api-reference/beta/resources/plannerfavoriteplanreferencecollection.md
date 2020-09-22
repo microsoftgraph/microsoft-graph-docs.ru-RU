@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 32c0cecc402570491c0025c0b4e0c88b74ed40fb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 079b841e32058fd5989944528c524a437405f3f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521736"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993170"
 ---
 # <a name="plannerfavoriteplanreferencecollection-resource-type"></a>Тип ресурса Планнерфаворитепланреференцеколлектион
 
@@ -22,7 +22,7 @@ ms.locfileid: "42521736"
 
 
 ## <a name="properties"></a>Свойства
-Вы можете определить свойства этого открытого типа. Имена свойств — это `id` значения ресурсов [plannerPlan](plannerplan.md) и их значения должны быть [планнерфаворитепланреференце](plannerfavoriteplanreference.md) объектами. Чтобы удалить элемент из списка "Избранное", присвойте свойству значение `null`.
+Вы можете определить свойства этого открытого типа. Имена свойств — это `id` значения ресурсов [plannerPlan](plannerplan.md) и их значения должны быть [планнерфаворитепланреференце](plannerfavoriteplanreference.md) объектами. Чтобы удалить элемент из списка "Избранное", присвойте свойству значение `null` .
 
 
 ## <a name="json-representation"></a>Представление JSON
@@ -64,3 +64,5 @@ ms.locfileid: "42521736"
   "suppressions": []
 }
 -->
+
+

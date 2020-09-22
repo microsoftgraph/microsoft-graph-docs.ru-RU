@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 46a4c70329e021c89bf9107b877fcf9fae88b3ca
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: b5dfb2bece9fe6b2762ede34de37ef735fabdbdb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329999"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991560"
 ---
 # <a name="create-b2cuserflow"></a>Создание b2cUserFlow
 
@@ -28,7 +28,7 @@ ms.locfileid: "47329999"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Идентитюсерфлов. ReadWrite. ALL|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|Идентитюсерфлов. ReadWrite. ALL|
+|Для приложений|Идентитюсерфлов. ReadWrite. ALL|
 
 Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
 
@@ -59,7 +59,7 @@ POST /identity/b2cUserFlows
 |id|String|Обязательный. Имя пользовательского потока. Имя будет предваряться `B2C_1` после создания.|
 |userFlowType|String|Обязательный. Тип создаваемого пользовательского процесса. Поддерживаемые значения для **userFlowType**:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
 |усерфловтипеверсион|С плавающей запятой|Обязательно. Версия пользовательского потока.|
-|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательное свойство. Поставщики удостоверений, которые необходимо включить в пользовательский блок.|
+|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательный параметр. Поставщики удостоверений, которые необходимо включить в пользовательский блок.|
 
 ## <a name="response"></a>Отклик
 
@@ -109,7 +109,7 @@ Content-length: 154
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -180,7 +180,7 @@ Content-length: 154
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -213,3 +213,5 @@ Content-type: application/json
     "Error: create_b2cUserFlow_from_b2cUserFlows_identityProvider/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '3'"
   ]
 }-->
+
+

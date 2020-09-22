@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: ccd210eeecd84acf8094f7a55b1733e64c4a5437
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b7c04404a557a897af4008f024e27a47684e835f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810475"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993023"
 ---
 # <a name="recipient-resource-type"></a>Тип ресурса recipient
 
@@ -25,7 +25,7 @@ ms.locfileid: "46810475"
 |:---------------|:--------|:----------|
 |emailAddress|[EmailAddress](emailaddress.md)|Электронный адрес получателя.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -56,3 +56,5 @@ ms.locfileid: "46810475"
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1658b9d0217d9e0acb2544f6711c307385baa6ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2acbbf08d5844ef239e40d39245c53ad54990a09
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508767"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991994"
 ---
 # <a name="workbookrange-columnsafter"></a>workbookRange: columnsAfter
 
@@ -50,7 +50,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/columnsAfter(count=n)
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookRange](../resources/range.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -119,3 +119,4 @@ Content-length: 157
   "suppressions": [
   ]
 }-->
+

@@ -3,14 +3,14 @@ title: Тип ресурса Виндовсдефендераппликатио�
 description: Содержит свойства для состояния развертывания дополнительной политики Виндовсдефендераппликатионконтрол для устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0ff3cadb9f9a253877c169cddd498189aa336ebf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4f3948961e89d59b1321f1edc08eaaa71f0a3c14
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449576"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993191"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus-resource-type"></a>Тип ресурса Виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус
 
@@ -34,7 +34,7 @@ ms.locfileid: "43449576"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |deviceName|String|Имя устройства.|
 |deviceId|String|ИДЕНТИФИКАТОР устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации.|
@@ -73,6 +73,9 @@ ms.locfileid: "43449576"
   "policyVersion": "String"
 }
 ```
+
+
+
 
 
 

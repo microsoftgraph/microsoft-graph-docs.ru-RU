@@ -3,14 +3,14 @@ title: Тип ресурса mediaContentRatingUnitedKingdom
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 794e0cb0a461a9ff23c7c3351925dd3efd7ebf89
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5dc8a19664e0d1b9d80451af88686be59b179780
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437149"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993785"
 ---
 # <a name="mediacontentratingunitedkingdom-resource-type"></a>Тип ресурса mediaContentRatingUnitedKingdom
 
@@ -45,6 +45,9 @@ ms.locfileid: "43437149"
   "tvRating": "String"
 }
 ```
+
+
+
 
 
 

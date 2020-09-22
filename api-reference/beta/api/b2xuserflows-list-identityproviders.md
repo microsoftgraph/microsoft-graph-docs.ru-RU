@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ad71b925d8fc2d36e997a1367497414f2feead7a
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: f8d040d4d27646a663f430ae66e1e40f1abbe78d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329414"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991392"
 ---
 # <a name="list-all-identityproviders-in-a-b2xuserflow"></a>Перечисление всех Идентитипровидерс в b2xUserFlow
 
@@ -28,7 +28,7 @@ ms.locfileid: "47329414"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Идентитюсерфлов. ReadWrite. ALL|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение| Идентитюсерфлов. ReadWrite. ALL|
+|Для приложений| Идентитюсерфлов. ReadWrite. ALL|
 
 Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
 
@@ -49,7 +49,7 @@ GET /b2xUserFlows/{id}/identityProviders
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -122,3 +122,5 @@ Content-type: application/json
     ]
 }
 ```
+
+

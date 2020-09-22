@@ -3,14 +3,14 @@ title: Тип ресурса Секуритиконфигуратионтаск
 description: Задача настройки безопасности.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: eaf2f479d491e8d6455dc3b296053a84983fdf98
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 472abf714f5ddb67fee01a3026f99e85887da5e0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793501"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993632"
 ---
 # <a name="securityconfigurationtask-resource-type"></a>Тип ресурса Секуритиконфигуратионтаск
 
@@ -29,10 +29,10 @@ ms.locfileid: "46793501"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Секуритиконфигуратионтаскс](../api/intune-partnerintegration-securityconfigurationtask-list.md)|Коллекция [секуритиконфигуратионтаск](../resources/intune-partnerintegration-securityconfigurationtask.md)|Список свойств и связей объектов [секуритиконфигуратионтаск](../resources/intune-partnerintegration-securityconfigurationtask.md) .|
-|[Получение Секуритиконфигуратионтаск](../api/intune-partnerintegration-securityconfigurationtask-get.md)|[секуритиконфигуратионтаск](../resources/intune-partnerintegration-securityconfigurationtask.md)|Чтение свойств и связей объекта [секуритиконфигуратионтаск](../resources/intune-partnerintegration-securityconfigurationtask.md) .|
-|[Создание Секуритиконфигуратионтаск](../api/intune-partnerintegration-securityconfigurationtask-create.md)|[секуритиконфигуратионтаск](../resources/intune-partnerintegration-securityconfigurationtask.md)|Создание нового объекта [секуритиконфигуратионтаск](../resources/intune-partnerintegration-securityconfigurationtask.md) .|
+|[Получение Секуритиконфигуратионтаск](../api/intune-partnerintegration-securityconfigurationtask-get.md)|[securityConfigurationTask](../resources/intune-partnerintegration-securityconfigurationtask.md)|Чтение свойств и связей объекта [секуритиконфигуратионтаск](../resources/intune-partnerintegration-securityconfigurationtask.md) .|
+|[Создание Секуритиконфигуратионтаск](../api/intune-partnerintegration-securityconfigurationtask-create.md)|[securityConfigurationTask](../resources/intune-partnerintegration-securityconfigurationtask.md)|Создание нового объекта [секуритиконфигуратионтаск](../resources/intune-partnerintegration-securityconfigurationtask.md) .|
 |[Удаление Секуритиконфигуратионтаск](../api/intune-partnerintegration-securityconfigurationtask-delete.md)|Нет|Удаляет объект [секуритиконфигуратионтаск](../resources/intune-partnerintegration-securityconfigurationtask.md).|
-|[Обновление Секуритиконфигуратионтаск](../api/intune-partnerintegration-securityconfigurationtask-update.md)|[секуритиконфигуратионтаск](../resources/intune-partnerintegration-securityconfigurationtask.md)|Обновление свойств объекта [секуритиконфигуратионтаск](../resources/intune-partnerintegration-securityconfigurationtask.md) .|
+|[Обновление Секуритиконфигуратионтаск](../api/intune-partnerintegration-securityconfigurationtask-update.md)|[securityConfigurationTask](../resources/intune-partnerintegration-securityconfigurationtask.md)|Обновление свойств объекта [секуритиконфигуратионтаск](../resources/intune-partnerintegration-securityconfigurationtask.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -48,9 +48,9 @@ ms.locfileid: "46793501"
 |креаторнотес|String|Заметки автора. Наследуется от [девицеаппманажементтаск](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
 |assignedTo|String|Имя или электронная почта администратора, которому назначена эта задача. Наследуется от [девицеаппманажементтаск](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
 |status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|Состояние. Наследуется от [девицеаппманажементтаск](../resources/intune-partnerintegration-deviceappmanagementtask.md). Возможные значения: `unknown`, `pending`, `active`, `completed`, `rejected`.|
-|ендпоинтсекуритиполици|[ендпоинтсекуритиконфигуратионтипе](../resources/intune-partnerintegration-endpointsecurityconfigurationtype.md)|Тип политики безопасности конечной точки. Возможные значения: `unknown`, `antivirus`, `diskEncryption`, `firewall`, `endpointDetectionAndResponse`, `attackSurfaceReduction`, `accountProtection`.|
-|аппликаблеплатформ|[ендпоинтсекуритиконфигуратионаппликаблеплатформ](../resources/intune-partnerintegration-endpointsecurityconfigurationapplicableplatform.md)|Соответствующая платформа. Возможные значения: `unknown`, `macOS`, `windows10AndLater`, `windows10AndWindowsServer`.|
-|ендпоинтсекуритиполиципрофиле|[ендпоинтсекуритиконфигуратионпрофилетипе](../resources/intune-partnerintegration-endpointsecurityconfigurationprofiletype.md)|Профиль политики безопасности конечной точки. Возможные значения: `unknown` , `antivirus` ,,,,, `windowsSecurity` `bitLocker` `fileVault` `firewall` `firewallRules` ,,, `endpointDetectionAndResponse` `deviceControl` `appAndBrowserIsolation` , `exploitProtection` , `webProtection` , `applicationControl` , `attackSurfaceReductionRules` , `accountProtection` .|
+|ендпоинтсекуритиполици|[endpointSecurityConfigurationType](../resources/intune-partnerintegration-endpointsecurityconfigurationtype.md)|Тип политики безопасности конечной точки. Возможные значения: `unknown`, `antivirus`, `diskEncryption`, `firewall`, `endpointDetectionAndResponse`, `attackSurfaceReduction`, `accountProtection`.|
+|аппликаблеплатформ|[endpointSecurityConfigurationApplicablePlatform](../resources/intune-partnerintegration-endpointsecurityconfigurationapplicableplatform.md)|Соответствующая платформа. Возможные значения: `unknown`, `macOS`, `windows10AndLater`, `windows10AndWindowsServer`.|
+|ендпоинтсекуритиполиципрофиле|[endpointSecurityConfigurationProfileType](../resources/intune-partnerintegration-endpointsecurityconfigurationprofiletype.md)|Профиль политики безопасности конечной точки. Возможные значения: `unknown` , `antivirus` ,,,,, `windowsSecurity` `bitLocker` `fileVault` `firewall` `firewallRules` ,,, `endpointDetectionAndResponse` `deviceControl` `appAndBrowserIsolation` , `exploitProtection` , `webProtection` , `applicationControl` , `attackSurfaceReductionRules` , `accountProtection` .|
 |insights|String|Сведения об устранении.|
 |манажеддевицекаунт|Int32|Число уязвимых устройств.|
 |интендедсеттингс|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Предполагаемые параметры и их значения.|
@@ -96,6 +96,9 @@ ms.locfileid: "46793501"
   ]
 }
 ```
+
+
+
 
 
 

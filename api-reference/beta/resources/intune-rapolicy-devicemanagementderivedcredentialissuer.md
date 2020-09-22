@@ -3,14 +3,14 @@ title: тип перечисления Девицеманажементдери�
 description: Поддерживаемые значения для поставщика производной учетных данных.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0f24af2e25b8623c4d15a51b65d7e4d6c63103cd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 72f2ab1f7a8bacb3aef8bfa4437d77acf0d3a996
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43357841"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993233"
 ---
 # <a name="devicemanagementderivedcredentialissuer-enum-type"></a>тип перечисления Девицеманажементдериведкредентиалиссуер
 
@@ -26,9 +26,12 @@ ms.locfileid: "43357841"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |интерцеде|нуль|интерцеде|
-|ентрустдатакард|1,1|Карточка ентруст|
-|пуребред|2|пуребред|
+|ентрустдатакард|1 |Карточка ентруст|
+|пуребред|2 |пуребред|
 |кстек|4|кстек|
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 9424055d5669b9279dede18b6eb3773da47d9b19
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 508404a3360b2b59656dc31df6ec44f16f682cf4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533886"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991896"
 ---
 # <a name="recordoperation-resource-type"></a>Тип ресурса Рекордоператион
 
@@ -23,7 +23,7 @@ ms.locfileid: "42533886"
 | Свойство                       | Тип                        | Описание                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
 | Контекст                  | String                      | Уникальная строка контекста клиента. Максимальный лимит — 256 символов.                                                                                                                               |
-| id                             | Строка                      | Идентификатор операции сервера. Только для чтения.                                                                                              |
+| id                             | String                      | Идентификатор операции сервера. только для чтения.                                                                                              |
 | рекордингакцесстокен           | String                      | Маркер доступа, необходимый для получения записи.                                                                                              |
 | рекординглокатион              | String                      | Расположение, в котором находится запись.                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения.                                                                                              |
@@ -66,3 +66,4 @@ ms.locfileid: "42533886"
   "suppressions": []
 }
 -->
+

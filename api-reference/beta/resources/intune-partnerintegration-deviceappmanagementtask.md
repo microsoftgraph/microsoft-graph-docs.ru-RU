@@ -3,14 +3,14 @@ title: Тип ресурса Девицеаппманажементтаск
 description: Задача управления приложениями для устройств.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 76ec2531f5c7697e65727efe8847b8021a1ccf7d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 073c0e23f2823809d53637bf17c452e6001d8815
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446697"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993716"
 ---
 # <a name="deviceappmanagementtask-resource-type"></a>Тип ресурса Девицеаппманажементтаск
 
@@ -36,7 +36,7 @@ ms.locfileid: "43446697"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|displayName|Строка|Имя.|
+|displayName|String|Имя.|
 |description|String|Описание.|
 |createdDateTime|DateTimeOffset|Дата создания.|
 |dueDateTime|DateTimeOffset|Дата выполнения.|
@@ -74,6 +74,9 @@ ms.locfileid: "43446697"
   "status": "String"
 }
 ```
+
+
+
 
 
 

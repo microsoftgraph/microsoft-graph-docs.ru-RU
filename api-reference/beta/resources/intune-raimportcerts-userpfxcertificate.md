@@ -3,14 +3,14 @@ title: Тип ресурса Усерпфксцертификате
 description: Объект, инкапсулирующий все сведения, необходимые для сертификатов пользователя PFX.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 43dc26333b6acf6275a719e7a79c051a134610f7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 574a62ddfea3b577fea966ae3b8d502a9ceebfb1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462379"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993296"
 ---
 # <a name="userpfxcertificate-resource-type"></a>Тип ресурса Усерпфксцертификате
 
@@ -34,7 +34,7 @@ ms.locfileid: "43462379"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для сертификата PFX.|
+|id|String|Уникальный идентификатор для сертификата PFX.|
 |отпечаток|String|Отпечаток SHA-1 сертификата PFX.|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Сертификат, предназначенный для целей из точки зрения развертывания. Возможные значения: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
 |userPrincipalName|String|Имя участника-пользователя сертификата PFX.|
@@ -77,6 +77,9 @@ ms.locfileid: "43462379"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

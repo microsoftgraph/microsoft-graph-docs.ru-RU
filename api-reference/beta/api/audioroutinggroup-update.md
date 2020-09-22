@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 28cbf6662b09be81c6ffbafecbe1f888e596e3a8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f3c6e8779ed7890d276c4c77a8ae20468e65af44
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441314"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991725"
 ---
 # <a name="update-audio-routing-group"></a>Обновление группы маршрутизации звука
 
@@ -27,7 +27,7 @@ ms.locfileid: "42441314"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Для приложений     | Calls. Жоинграупкаллс. ALL, Calls. Инитиатеграупкаллс. ALL |
+| Для приложений     | Calls. Жоинграупкаллс. ALL, Calls.IniТиатеграупкаллс. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,11 +47,11 @@ PATCH /communications/calls/{id}/audioRoutingGroups/{id}
 
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
-| приемники | Коллекция объектов string | Целевые участники в Аудиораутингграуп. |
+| приемники | Коллекция String | Целевые участники в Аудиораутингграуп. |
 | раутингмоде | String | Возможные значения: `oneToOne`, `multicast`. |
-| sources | Коллекция объектов string | Участник источника в Аудиораутингграуп. |
+| sources | Коллекция String | Участник источника в Аудиораутингграуп. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [аудиораутингграуп](../resources/audioroutinggroup.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -134,3 +134,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

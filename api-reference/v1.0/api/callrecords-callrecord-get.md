@@ -5,12 +5,12 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ae239cd7bb559d8fc46cbaa43933a54d6ffe5e1c
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 178aa338062a6a7ff8707bff12cae21735037bb3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183654"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992421"
 ---
 # <a name="get-callrecord"></a>Получение callRecord
 
@@ -31,7 +31,7 @@ ms.locfileid: "45183654"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | CallRecords.Read.All |
+| Для приложений                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ GET /communications/callRecords/{id}
 |:----------|:----------|
 | Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -401,3 +401,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

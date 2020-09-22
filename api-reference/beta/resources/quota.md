@@ -6,12 +6,12 @@ title: Назначаем
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 8421998d9815efcd23417aadde8ef29e28050647
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9477662c1ffa8419d7be293c31b8f50b06bd74d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521287"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993058"
 ---
 # <a name="quota-resource-type"></a>Тип ресурса Quota
 
@@ -74,3 +74,5 @@ ms.locfileid: "42521287"
   "suppressions": []
 }
 -->
+
+

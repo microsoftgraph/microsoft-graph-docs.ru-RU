@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8340fe68f865fa9acfba0cbb05537422e2cfacf9
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 995bcf06c01f75f75b786a3d5a697f054dbc7d9b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43805787"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991581"
 ---
 # <a name="get-authentication-operation"></a>Получение операции проверки подлинности
 
@@ -23,9 +23,9 @@ ms.locfileid: "43805787"
 * NotStarted
 * Работает
 * Succeeded
-* Ошибка
+* Не выполнено
 
-`Succeeded`и `Failed` являются состояниями терминала.
+`Succeeded` и `Failed` являются состояниями терминала.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -66,7 +66,7 @@ GET /users/{id}/authentication/operations/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [Operation](../resources/operation.md) в тексте отклика.
 
@@ -133,3 +133,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

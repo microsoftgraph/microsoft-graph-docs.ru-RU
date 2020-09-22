@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b5d24eb19679f360a65eac0afa95c0671c69990c
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 86dbe784c4a7a2c7069cfcfe6acf15336ccd98c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917084"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992946"
 ---
 # <a name="get-activitybasedtimeoutpolicy"></a>Получение Активитибаседтимеаутполици
 
@@ -40,7 +40,7 @@ GET /policies/activityBasedTimeoutPolicies/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры `$select` запросов OData для настройки отклика. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает `$select` параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -48,11 +48,11 @@ GET /policies/activityBasedTimeoutPolicies/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [активитибаседтимеаутполици](../resources/activitybasedtimeoutpolicy.md) в тексте отклика.
 
@@ -126,3 +126,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

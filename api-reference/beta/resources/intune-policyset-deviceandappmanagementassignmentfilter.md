@@ -3,14 +3,14 @@ title: Тип ресурса Девицеандаппманажементасс�
 description: Класс, содержащий свойства, используемые для фильтра назначений.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e3ea1fd9f7827fd8046de9024371022b61f56d6
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: e20794d5b96d4eb2edadfa6277c0b809b7ea4631
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793775"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993597"
 ---
 # <a name="deviceandappmanagementassignmentfilter-resource-type"></a>Тип ресурса Девицеандаппманажементассигнментфилтер
 
@@ -26,10 +26,10 @@ ms.locfileid: "44793775"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Девицеандаппманажементассигнментфилтерс](../api/intune-policyset-deviceandappmanagementassignmentfilter-list.md)|Коллекция [девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|Список свойств и связей объектов [девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) .|
-|[Получение Девицеандаппманажементассигнментфилтер](../api/intune-policyset-deviceandappmanagementassignmentfilter-get.md)|[девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|Чтение свойств и связей объекта [девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) .|
-|[Создание Девицеандаппманажементассигнментфилтер](../api/intune-policyset-deviceandappmanagementassignmentfilter-create.md)|[девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|Создание нового объекта [девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) .|
+|[Получение Девицеандаппманажементассигнментфилтер](../api/intune-policyset-deviceandappmanagementassignmentfilter-get.md)|[deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|Чтение свойств и связей объекта [девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) .|
+|[Создание Девицеандаппманажементассигнментфилтер](../api/intune-policyset-deviceandappmanagementassignmentfilter-create.md)|[deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|Создание нового объекта [девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) .|
 |[Удаление Девицеандаппманажементассигнментфилтер](../api/intune-policyset-deviceandappmanagementassignmentfilter-delete.md)|Нет|Удаляет объект [девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md).|
-|[Обновление Девицеандаппманажементассигнментфилтер](../api/intune-policyset-deviceandappmanagementassignmentfilter-update.md)|[девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|Обновление свойств объекта [девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) .|
+|[Обновление Девицеандаппманажементассигнментфилтер](../api/intune-policyset-deviceandappmanagementassignmentfilter-update.md)|[deviceAndAppManagementAssignmentFilter](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md)|Обновление свойств объекта [девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -37,9 +37,9 @@ ms.locfileid: "44793775"
 |id|String|Ключ фильтра назначений.|
 |createdDateTime|DateTimeOffset|Время создания фильтра назначений.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения фильтра назначений.|
-|displayName|Строка|DisplayName фильтра назначений.|
+|displayName|String|DisplayName фильтра назначений.|
 |description|String|Описание фильтра назначений.|
-|platform|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Тип платформы устройств, к которым будет применяться фильтр назначений. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
+|платформа|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Тип платформы устройств, к которым будет применяться фильтр назначений. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
 |правила|String|Определение правила для фильтра назначений.|
 |roleScopeTags|Коллекция String|RoleScopeTags фильтра назначений.|
 
@@ -69,6 +69,9 @@ ms.locfileid: "44793775"
   ]
 }
 ```
+
+
+
 
 
 

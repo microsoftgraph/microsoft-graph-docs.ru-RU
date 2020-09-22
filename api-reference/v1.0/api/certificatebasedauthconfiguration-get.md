@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 232dc629fdd4e6bec1914654d036c8d097d2bd17
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: cc2c0bd26d18ff8273993b6755ae8809b872f4e6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181261"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992436"
 ---
 # <a name="get-certificatebasedauthconfiguration"></a>Получение Цертификатебаседаусконфигуратион
 
@@ -46,7 +46,7 @@ GET /organization/{id}/certificateBasedAuthConfiguration/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [цертификатебаседаусконфигуратион](../resources/certificatebasedauthconfiguration.md) в тексте отклика.
 
@@ -125,3 +125,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

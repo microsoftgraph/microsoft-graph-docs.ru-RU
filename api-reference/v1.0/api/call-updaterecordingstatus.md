@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: bb8f68f53453662d8ab0707138c011548379a4e6
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 5436b865594a9463a5f7700b863320449f3594e0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183969"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992463"
 ---
 # <a name="call-updaterecordingstatus"></a>Call: Упдатерекордингстатус
 
@@ -27,7 +27,7 @@ ms.locfileid: "45183969"
 |:---------------------------------------|:-------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                                    |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                    |
-| Приложение                            | Calls. Жоинграупкаллс. ALL, Calls. Акцессмедиа. ALL  |
+| Для приложений                            | Calls. Жоинграупкаллс. ALL, Calls. Акцессмедиа. ALL  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ POST /communications/calls/{id}/updateRecordingStatus
 
 | Параметр       | Тип    | Описание                                                                           |
 |:----------------|:--------|:--------------------------------------------------------------------------------------|
-| Контекст   | Строка  | Уникальная строка контекста клиента. Максимальный лимит — 256 символов.                                 |
+| Контекст   | String  | Уникальная строка контекста клиента. Максимальный лимит — 256 символов.                                 |
 | status          | String  | Состояние записи. Возможные значения: `notRecording` , `recording` , или `failed` .  |
 
 ## <a name="response"></a>Отклик
@@ -130,3 +130,4 @@ Location: https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-40
   ]
 }
 -->
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 52918f4cf6d3e0f2ea31c3c0962bd2931c14c541
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3275a3fcc8d9a8c385db8333f9fbd9e60dc159c4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509663"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992200"
 ---
 # <a name="list-tablecollection"></a>Список TableCollection
 
@@ -44,7 +44,7 @@ GET /workbook/worksheets/{id|name}/tables
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбуктабле](../resources/table.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -104,7 +104,7 @@ Content-length: 158
 ```
 > **Примечание.** Используйте параметры запросов [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) и [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top), чтобы просматривать постранично большое количество таблиц.
 
-Пример. 
+Пример: 
 
 `https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables?$top=5`
 `https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables?$top=5&$skip=5`
@@ -120,3 +120,4 @@ Content-length: 158
   "suppressions": [
   ]
 }-->
+

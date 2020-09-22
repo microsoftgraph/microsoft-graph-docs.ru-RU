@@ -3,14 +3,14 @@ title: Перечисление объектов iosLobApp
 description: Список свойств и связей объектов iosLobApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c7f6055483f4de26b1dde91fc426714f00881e80
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a57ad92a3355a4d0bf81b1374c84ff2f1f1e96d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43422296"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992295"
 ---
 # <a name="list-ioslobapps"></a>Перечисление объектов iosLobApp
 
@@ -41,13 +41,13 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [iosLobApp](../resources/intune-apps-ioslobapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -112,6 +112,9 @@ Content-Length: 1594
   ]
 }
 ```
+
+
+
 
 
 

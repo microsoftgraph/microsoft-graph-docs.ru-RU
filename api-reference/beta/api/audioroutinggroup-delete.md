@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9c30895172147b3e4f6c132f906b074178803cc8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 87cada1f74e36398fef2f1eda82d622540c7ac47
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441335"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991722"
 ---
 # <a name="delete-audio-routing-group"></a>Удаление группы маршрутизации звука
 
@@ -27,7 +27,7 @@ ms.locfileid: "42441335"
 | :-------------- | :------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложений     | Calls. Жоинграупкаллс. ALL, Calls. Инитиатеграупкаллс. ALL |
+| Для приложений     | Calls. Жоинграупкаллс. ALL, Calls.IniТиатеграупкаллс. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ DELETE /communications/calls/{id}/audioRoutingGroups/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
@@ -102,3 +102,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

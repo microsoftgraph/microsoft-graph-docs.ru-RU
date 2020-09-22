@@ -3,14 +3,14 @@ title: Тип ресурса Пфксрекриптионрекуест
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3b05aa91e1c265bdcf384163c9a2787eb39149cd
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 709db603921804ce4a3eb87da7e58ec87df085a0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462417"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993317"
 ---
 # <a name="pfxrecryptionrequest-resource-type"></a>Тип ресурса Пфксрекриптионрекуест
 
@@ -34,18 +34,18 @@ ms.locfileid: "43462417"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|tenantId|GUID|Пока не задокументировано.|
-|userId|GUID|Пока не задокументировано.|
+|tenantId|Guid|Пока не задокументировано.|
+|userId|Guid|Пока не задокументировано.|
 |deviceId|Guid|Пока не задокументировано.|
-|профилеид|GUID|Пока не задокументировано.|
+|профилеид|Guid|Пока не задокументировано.|
 |отпечаток|String|Пока не задокументировано.|
 |девицекэйсумбпринт|String|Пока не задокументировано.|
-|status|Int32|Пока нет описания|
-|sourceType|Int32|Пока нет описания|
+|status|Int32|Пока не задокументировано.|
+|sourceType|Int32|Пока не задокументировано.|
 |createdTime|DateTimeOffset|Пока не задокументировано.|
 |lastModifiedTime|DateTimeOffset|Пока не задокументировано.|
-|isDeleted|Boolean|Пока не задокументировано|
-|eTag|String|Пока не задокументировано.|
+|isDeleted|Boolean|Н/Д|
+|eTag|String|Н/Д|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -75,6 +75,9 @@ ms.locfileid: "43462417"
   "eTag": "String"
 }
 ```
+
+
+
 
 
 

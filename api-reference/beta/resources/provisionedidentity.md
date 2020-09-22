@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 5fde45d8e9baf28fddfe9935d71689d24059dfa3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 03270c0b5e6ea373ad87355612ddfb85b428d61c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43371397"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993142"
 ---
 # <a name="provisionedidentity-resource-type"></a>Тип ресурса Провисионедидентити
 
@@ -25,7 +25,7 @@ ms.locfileid: "43371397"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |details|[detailsInfo](detailsinfo.md)|Сведения об удостоверении.|
-|displayName|Строка|Отображаемое имя удостоверения. |
+|displayName|String|Отображаемое имя удостоверения. |
 |id|String|Уникально идентифицирует удостоверение.|
 |идентититипе|String|Тип удостоверения, которое было подготовлено, например "пользователь" или "Группа".|
 
@@ -60,3 +60,5 @@ ms.locfileid: "43371397"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0f449461fe204002daf0f65bbbb6b2db2af42086
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: f96254db5e9d6f4394f45e1b1c266016258f950d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383681"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991777"
 ---
 # <a name="administrativeunit-delta"></a>administrativeUnit: Delta
 
@@ -49,22 +49,22 @@ GET /administrativeUnits/delta
 | $deltatoken | string | [Токен состояния](/graph/delta-query-overview) возвращается в `deltaLink` URL-адресе предыдущего вызова функции **Delta** для той же коллекции ресурсов, что указывает на завершение этого круга отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
 | $skiptoken | string | [Токен состояния](/graph/delta-query-overview) возвращается в `nextLink` URL-адресе предыдущего вызова функции **Delta** , указывая, что в коллекции ресурсов отслеживаются другие изменения. |
 
-### <a name="optional-query-parameters"></a>Необязательные параметры запросов
+### <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод поддерживает указанные ниже параметры запросов OData для настройки отклика.
 
 - Вы можете использовать параметр запроса `$select` так же, как в любом другом запросе GET, чтобы задать только те свойства, которые необходимы для эффективной работы. Свойство **id** возвращается всегда. 
 
 - Имеется ограниченная поддержка параметра `$filter`:
-  * Единственное поддерживаемое `$filter` выражение предназначено для отслеживания изменений для определенных ресурсов по их идентификаторам: `$filter=id+eq+{value}` или `$filter=id+eq+{value1}+or+id+eq+{value2}` . Количество идентификаторов, которые можно указать, ограничено максимальной длиной URL-адреса.
+  * Единственное поддерживаемое `$filter` выражение предназначено для отслеживания изменений для определенных ресурсов по их идентификаторам:  `$filter=id+eq+{value}` или `$filter=id+eq+{value1}+or+id+eq+{value2}` . Количество идентификаторов, которые можно указать, ограничено максимальной длиной URL-адреса.
 
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носитель &lt;токен&gt;. Обязательный элемент.|
+| Authorization  | Носитель &lt;токен&gt;. Обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -190,3 +190,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

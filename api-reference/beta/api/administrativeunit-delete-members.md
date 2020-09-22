@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3774df54f73c7e08456b3412a65378cfb51cefcf
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 0d4763a7ab2782b33be6c254f13a852ca8f14787
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123344"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991798"
 ---
 # <a name="remove-a-member"></a>Удаление участника
 
@@ -43,7 +43,7 @@ DELETE /administrativeUnits/{id}/members/{id}/$ref
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -55,9 +55,11 @@ DELETE /administrativeUnits/{id}/members/{id}/$ref
 DELETE https://graph.microsoft.com/beta/administrativeUnits/{id1}/members/{id2}/$ref
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
  
 ```http
 HTTP/1.1 204 No Content
 ```
+
+

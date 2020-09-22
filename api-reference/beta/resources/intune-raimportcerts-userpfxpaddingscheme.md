@@ -3,14 +3,14 @@ title: тип перечисления Усерпфкспаддингсчеме
 description: Поддерживаемые значения для схемы заполнения, используемой поставщиком шифрования.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3e96dc40ca742c802a1b2bc88e05a708202648bc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6e0e01c59302593ee329c097c17cd905dfdaaebd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467720"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47993268"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>тип перечисления Усерпфкспаддингсчеме
 
@@ -26,11 +26,14 @@ ms.locfileid: "43467720"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|нуль|Неизвестная схема заполнения.|
-|pkcs1|1,1|Pkcs1 больше не поддерживается|
-|oaepSha1|2|OaepSha1 больше не поддерживается|
+|pkcs1|1 |Pkcs1 больше не поддерживается|
+|oaepSha1|2 |OaepSha1 больше не поддерживается|
 |oaepSha256|4|Используйте заполнение OAEP SHA – 256.|
 |oaepSha384|4 |Используйте заполнение OAEP SHA – 384.|
 |oaepSha512|5 |Используйте заполнение OAEP SHA – 512.|
+
+
+
 
 
 

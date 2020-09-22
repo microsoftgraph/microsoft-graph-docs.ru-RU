@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 0fad3f407360d747b10f44cfb92055167e4f8fb9
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 1d7837048e27d382021489a11395053f48b91ac2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43108783"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47992141"
 ---
 # <a name="list-owneddevices"></a>Список ownedDevices
 
@@ -44,7 +44,7 @@ GET /users/{id | userPrincipalName}/ownedDevices
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/me/ownedDevices
 
 ---
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -110,3 +110,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

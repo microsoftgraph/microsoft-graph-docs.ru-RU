@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4115e1cdffe0342024485f4758f16265b67c65e8
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 26e4b244128a8dbd61179197d82d9d83a920b91f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329794"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47991514"
 ---
 # <a name="delete-b2cuserflow"></a>Удаление b2cUserFlow
 
@@ -28,7 +28,7 @@ ms.locfileid: "47329794"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Идентитюсерфлов. ReadWrite. ALL|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|Идентитюсерфлов. ReadWrite. ALL|
+|Для приложений|Идентитюсерфлов. ReadWrite. ALL|
 
 Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
 
@@ -48,7 +48,7 @@ DELETE /identity/b2cUserFlows/{id}
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -101,3 +101,5 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
