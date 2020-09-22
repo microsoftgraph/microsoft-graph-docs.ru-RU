@@ -3,14 +3,14 @@ title: Тип ресурса Ентерприсекодесигнингцерт�
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9369ef453188eaca193b9c14746e5bdf1854e25e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5a78cecdd0d9cb5648981cf1d54a606b21df6b9a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459113"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003950"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>Тип ресурса Ентерприсекодесигнингцертификате
 
@@ -34,7 +34,7 @@ ms.locfileid: "43459113"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |содержимое|Binary|Сертификат подписи кода Windows Enterprise в формате необработанных данных.|
 |status|[цертификатестатус](../resources/intune-apps-certificatestatus.md)|Состояние сертификата подготовлено или не подготовлено. Возможные значения: `notProvisioned`, `provisioned`.|
 |subjectName|String|Имя субъекта для сертификата.|
@@ -69,6 +69,9 @@ ms.locfileid: "43459113"
   "uploadDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

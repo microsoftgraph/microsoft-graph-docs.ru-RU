@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1bfe5c6e5932448eda4f977f9619843ed4bdec2d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4e6d0da0f18d68b61f67e57e40962de714b0e561
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466429"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004377"
 ---
 # <a name="get-synchronizationjob"></a>Получение Синчронизатионжоб
 
@@ -41,11 +41,11 @@ GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха возвращает `200 OK` ответ с [синчронизатионжоб](../resources/synchronization-synchronizationjob.md) в тексте отклика.
 
@@ -147,3 +147,5 @@ Content-length: 2577
   ]
 }
 -->
+
+

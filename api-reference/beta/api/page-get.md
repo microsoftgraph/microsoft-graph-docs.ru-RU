@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 13a4953c2ffa94ef85a836a3796f88a6cee149c1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 23fae34065f99afa22e0af9aa2c52d717f7dcce1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456011"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004608"
 ---
 # <a name="get-page"></a>Вывод страницы
 
@@ -37,7 +37,7 @@ GET /me/onenote/pages/{id}/content[?includeIDs=true]
 GET /me/onenote/pages/{id}/$value[?includeIDs=true]
 ```
 
-Параметр `includeIDs=true` запроса используется для [обновления страниц](../api/page-update.md).
+`includeIDs=true`Параметр запроса используется для [обновления страниц](../api/page-update.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -59,7 +59,7 @@ GET /sites/{id}/onenote/pages/{id}
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает `select` `expand` [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) и для настройки отклика.
 
-`parentSection` Ответ по умолчанию разворачивается и выбирает свойства `id`раздела `name`, а `self` также свойства. Допустимые `expand` значения для страниц `parentNotebook` : `parentSection`и.
+Ответ по умолчанию разворачивается `parentSection` и выбирает `id` Свойства раздела, `name` а также `self` Свойства. Допустимые `expand` значения для страниц: `parentNotebook` и `parentSection` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -70,7 +70,7 @@ GET /sites/{id}/onenote/pages/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [оненотепаже](../resources/onenotepage.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -118,3 +118,5 @@ Content-length: 312
   "suppressions": []
 }
 -->
+
+

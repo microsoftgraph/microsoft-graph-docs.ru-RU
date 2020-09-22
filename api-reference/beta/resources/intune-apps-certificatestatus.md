@@ -3,14 +3,14 @@ title: тип перечисления Цертификатестатус
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7d5280a314d442cf08161e389cccd549fce108d8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 394cfae4ec7ab3c01c36c200cda47693787b4167
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459122"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003985"
 ---
 # <a name="certificatestatus-enum-type"></a>тип перечисления Цертификатестатус
 
@@ -26,7 +26,10 @@ ms.locfileid: "43459122"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |нотпровисионед|нуль|Пока не задокументировано.|
-|предоставляемое|1,1|Пока не задокументировано.|
+|предоставляемое|1 |Пока не задокументировано.|
+
+
+
 
 
 

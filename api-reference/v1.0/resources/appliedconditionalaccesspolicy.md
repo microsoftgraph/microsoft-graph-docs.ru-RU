@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0e58058a174b630daa5022aed0dff78b7c2f3099
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: c90e8b012e62317b1a8b02df723d9426ec99c282
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44788691"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003362"
 ---
 # <a name="appliedconditionalaccesspolicy-resource-type"></a>Тип ресурса Апплиедкондитионалакцессполици
 
@@ -22,11 +22,11 @@ ms.locfileid: "44788691"
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|displayName|Строка|Указывает имя политики условного доступа (пример: "требовать MFA для Salesforce").|
+|displayName|String|Указывает имя политики условного доступа (пример: "требовать MFA для Salesforce").|
 |енфорцедгрантконтролс|Коллекция String|Указывает на элементы управления предоставлением, принудительно примененные политикой условного доступа (пример: "требовать многофакторную проверку подлинности").|
 |енфорцедсессионконтролс|Коллекция String|Указывает на элементы управления сеансом, принудительно примененные политикой условного доступа (пример: "требовать принудительно заданное приложением элементов управления").|
 |id|String|Уникальный идентификатор GUID политики условного доступа.|
-|result|String| Указывает результат политики ЦС, который был активирован. Возможные значения:<br/>`success`<br/>`failure`<br/>`notApplied`-Политика не применяется, так как условия политики не выполнены.<br/>`notEnabled`— Это связано с тем, что в отключенном состоянии политика отключена.|
+|result|String| Указывает результат политики ЦС, который был активирован. Возможные значения:<br/>`success`<br/>`failure`<br/>`notApplied` -Политика не применяется, так как условия политики не выполнены.<br/>`notEnabled` — Это связано с тем, что в отключенном состоянии политика отключена.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -60,3 +60,4 @@ ms.locfileid: "44788691"
   "section": "documentation",
   "tocPath": ""
 }-->
+

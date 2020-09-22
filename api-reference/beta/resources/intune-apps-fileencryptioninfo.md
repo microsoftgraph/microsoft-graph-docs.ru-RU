@@ -3,14 +3,14 @@ title: Тип ресурса fileEncryptionInfo
 description: Содержит свойства сведений о шифровании файлов для версии содержимого бизнес-приложения.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e5eaa2e993fb56eeb56b7e147963a0b8df03cae
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3878f17976f4a3e8fb9b665423b33ebbaa517472
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459099"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003929"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>Тип ресурса fileEncryptionInfo
 
@@ -55,6 +55,9 @@ ms.locfileid: "43459099"
   "fileDigestAlgorithm": "String"
 }
 ```
+
+
+
 
 
 

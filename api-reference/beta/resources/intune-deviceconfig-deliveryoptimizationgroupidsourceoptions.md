@@ -3,14 +3,14 @@ title: Тип ресурса Деливерйоптимизатионграуп�
 description: Тип параметров идентификатора группы
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1f490286de16c8ef8256e464d674d09631d7a459
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 29474e548515ecd8ef4cbf4ef900f565eb196b50
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456990"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003796"
 ---
 # <a name="deliveryoptimizationgroupidsourceoptions-resource-type"></a>Тип ресурса Деливерйоптимизатионграупидсаурцеоптионс
 
@@ -30,7 +30,7 @@ ms.locfileid: "43456990"
 |:---|:---|:---|
 |граупидсаурцеоптион|[deliveryOptimizationGroupIdOptionsType](../resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md)|Установите эту политику, чтобы ограничить выбор однорангового узла определенным источником. Возможные значения: `notConfigured`, `adSite`, `authenticatedDomainSid`, `dhcpUserOption`, `dnsSuffix`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,6 +46,9 @@ ms.locfileid: "43456990"
   "groupIdSourceOption": "String"
 }
 ```
+
+
+
 
 
 

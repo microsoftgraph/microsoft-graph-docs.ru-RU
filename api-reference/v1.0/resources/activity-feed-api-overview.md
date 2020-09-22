@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: conceptualPageType
-ms.openlocfilehash: f5b21822fcb30f5c7d243155e0c16eafa9db87f0
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b90fbd80889a7ae4eb36c3c1d8207b525e99a697
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808419"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003397"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Использование REST API веб-канала активности
 
@@ -67,7 +67,7 @@ Each activity represents a unique...
 ## Common use cases
 -->
 
-## <a name="next-steps"></a>Дальнейшие действия
+## <a name="next-steps"></a>Следующие шаги
 
 - Просмотрите [ресурс действия](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_activity) и определите действия приложения, чтобы помочь пользователям возобновить важные задачи.
 - В этом разделе приведены примеры использования [адаптивных карточек](https://adaptivecards.io/samples/) для создания новых **действий.**
@@ -77,3 +77,4 @@ Each activity represents a unique...
 
 - Узнайте [, как Microsoft Office использует действия](https://channel9.msdn.com/events/Build/2017/B8108).
 - Сведения об [API веб-канала активности и возможностях, когда я остановились](https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011).
+

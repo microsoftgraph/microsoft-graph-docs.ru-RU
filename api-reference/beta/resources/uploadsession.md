@@ -5,12 +5,12 @@ title: Тип ресурса uploadSession
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 5a9c205e2cc4e9c151985f1838f69143fbae79e6
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 9dd76265e08cc377aba295679a35f33f2256b3b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42590965"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003446"
 ---
 # <a name="uploadsession-resource-type"></a>Тип ресурса uploadSession
 
@@ -50,7 +50,7 @@ ms.locfileid: "42590965"
 
 ## <a name="see-also"></a>См. также
 
-- [Присоединение больших файлов к сообщениям и событиям Outlook в качестве вложений](/graph/outlook-large-attachments)
+- [Присоединение больших файлов к сообщениям и событиям Outlook в качестве вложений ](/graph/outlook-large-attachments)
 - [Отправка больших файлов с помощью сеанса отправки](../api/driveitem-createuploadsession.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -64,3 +64,5 @@ ms.locfileid: "42590965"
   "suppressions": []
 }
 -->
+
+

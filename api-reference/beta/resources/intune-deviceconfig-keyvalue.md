@@ -3,14 +3,14 @@ title: Тип ресурса Ключзначение
 description: Определение значения ключа.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 86a18d434722cff9b6737dd14a83e8aa38ed102c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b6d42009d03bfa88007688065d68099598f1e6eb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43439878"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003607"
 ---
 # <a name="keyvalue-resource-type"></a>Тип ресурса Ключзначение
 
@@ -25,7 +25,7 @@ ms.locfileid: "43439878"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ключа|String|Ключ.|
+|key|String|Ключ.|
 |value|String|Значение|
 
 ## <a name="relationships"></a>Связи
@@ -45,6 +45,9 @@ ms.locfileid: "43439878"
   "value": "String"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: dd732200b8ab02be3bffc443272a45f2da8a9a77
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6bd25cf435a65f8b5a9b55308b4fd05a8e8de05d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466436"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004412"
 ---
 # <a name="delete-synchronizationjob"></a>Удаление Синчронизатионжоб
 
@@ -41,11 +41,11 @@ DELETE /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха возвращает `204 No Content` отклик. В тексте отклика не возвращается никаких данных.
 
@@ -101,3 +101,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

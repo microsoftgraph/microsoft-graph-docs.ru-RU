@@ -3,14 +3,14 @@ title: Тип ресурса Excludedapps к объекту
 description: Содержит свойства исключенных приложений Office365.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 92a86a9b875caf47d5c06145716642bb3d6a7e81
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 30aaecee77c4cdea7539e790fd1204ecd9e8dc98
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790903"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003936"
 ---
 # <a name="excludedapps-resource-type"></a>Тип ресурса Excludedapps к объекту
 
@@ -71,6 +71,9 @@ ms.locfileid: "44790903"
   "word": true
 }
 ```
+
+
+
 
 
 

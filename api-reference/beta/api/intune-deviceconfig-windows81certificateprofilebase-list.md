@@ -3,14 +3,14 @@ title: Список windows81CertificateProfileBases
 description: Список свойств и связей объектов windows81CertificateProfileBase.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1fafedc48c82ebf65f08d2f88a6096daaf9845fa
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e3aea939fdcf721e448f7b886f0d29fbf23a992a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43337428"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005427"
 ---
 # <a name="list-windows81certificateprofilebases"></a>Список windows81CertificateProfileBases
 
@@ -44,13 +44,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [windows81CertificateProfileBase](../resources/intune-deviceconfig-windows81certificateprofilebase.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -127,6 +127,9 @@ Content-Length: 2100
   ]
 }
 ```
+
+
+
 
 
 

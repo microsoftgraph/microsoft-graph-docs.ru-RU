@@ -3,14 +3,14 @@ title: Получение Андроиддевицеовнеримпортедп
 description: Чтение свойств и связей объекта Андроиддевицеовнеримпортедпфксцертификатепрофиле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0e0a6214e3c7c4c6ce1c7b71a5fd0e3f5944981e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 15e3e434c7a25099d5b4d1f6959888cf8ea752a9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436197"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48005966"
 ---
 # <a name="get-androiddeviceownerimportedpfxcertificateprofile"></a>Получение Андроиддевицеовнеримпортедпфксцертификатепрофиле
 
@@ -54,7 +54,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [андроиддевицеовнеримпортедпфксцертификатепрофиле](../resources/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -122,6 +122,9 @@ Content-Length: 1784
   }
 }
 ```
+
+
+
 
 
 

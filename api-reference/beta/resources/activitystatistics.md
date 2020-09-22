@@ -5,12 +5,12 @@ localization_priority: Normal
 author: madehmer
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: 69b90ae911ca956dedf3a7675d7666c7faa4b906
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e94f9ad746c497e3b81eff6b919c50a59c6a0a11
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508431"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004284"
 ---
 # <a name="activitystatistics-resource-type"></a>Тип ресурса Активитистатистикс
 
@@ -23,7 +23,7 @@ ms.locfileid: "42508431"
 Следующие типы статистики являются производными от **активитистатистикс**:
 
 * [Звонок](callactivitystatistics.md)
-* [Чат](chatactivitystatistics.md)
+* [Отображаются](chatactivitystatistics.md)
 * [Электронная почта](emailactivitystatistics.md)
 * [Фокус](focusactivitystatistics.md)
 * [Назначить](meetingactivitystatistics.md)
@@ -48,11 +48,11 @@ For example, the ID "email_2019-08-10_2019-08-12" represents the emailActivitySt
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|activity |аналитиксактивититипе |Тип действия, для которого возвращается статистика. Возможные значения: `call`, `chat`, `email`, `focus`и. `meeting` |
+|activity |аналитиксактивититипе |Тип действия, для которого возвращается статистика. Возможные значения:,, `call` `chat` `email` , `focus` и `meeting` . |
 |duration |Длительность |Общее количество часов, потраченных на действие. Значение представляется в формате ISO 8601 для длительности. |
 |endDate |Date |Дата завершения действия, выраженная в формате ISO 8601 для календарных дат. Например, значение свойства может иметь значение "2019-07-03", которое соответствует формату ГГГГ – MM – DD. |
 |id |String |Идентификатор действия, предназначенный только для чтения. Не проанализируйте и не настраивайте значение для своих сценариев. |
-|startDate |Дата |Дата начала действия, выраженная в формате ISO 8601 для календарных дат. Например, значение свойства может иметь значение "2019-07-04", которое соответствует формату ГГГГ – MM – DD. |
+|startDate |Date |Дата начала действия, выраженная в формате ISO 8601 для календарных дат. Например, значение свойства может иметь значение "2019-07-04", которое соответствует формату ГГГГ – MM – DD. |
 |тимезонеусед |String |Часовой пояс, который пользователь задает в Microsoft Outlook для вычисления. Например, значение свойства может быть "тихоокеанское стандартное время". |
 
 ## <a name="relationships"></a>Связи
@@ -92,3 +92,4 @@ For example, the ID "email_2019-08-10_2019-08-12" represents the emailActivitySt
   "section": "documentation",
   "tocPath": ""
 }--> 
+

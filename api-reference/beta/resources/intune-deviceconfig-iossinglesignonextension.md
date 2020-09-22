@@ -3,14 +3,14 @@ title: Тип ресурса Иоссинглесигнонекстенсион
 description: Абстрактный базовый класс для всех типов расширений единого входа, относящихся к iOS.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 18f06e0e57cbe6ee774df9c10d226ad5ee5c986d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2c6d4dab1bd9bd7a79e9a3a32159aff30e490991
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440206"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003649"
 ---
 # <a name="iossinglesignonextension-resource-type"></a>Тип ресурса Иоссинглесигнонекстенсион
 
@@ -44,6 +44,9 @@ ms.locfileid: "43440206"
   "@odata.type": "#microsoft.graph.iosSingleSignOnExtension"
 }
 ```
+
+
+
 
 
 

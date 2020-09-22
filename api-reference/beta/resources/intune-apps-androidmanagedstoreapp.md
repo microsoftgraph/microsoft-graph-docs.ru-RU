@@ -3,14 +3,14 @@ title: Тип ресурса Андроидманажедстореапп
 description: Содержит свойства и унаследованные свойства для приложений с управляемым хранилищем Android.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4e9c64044451fc800d610b741c1eb4511d2088ee
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 4f07588aa26bfa2f78c2e0a8d3a10eadcdf11aba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792718"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004125"
 ---
 # <a name="androidmanagedstoreapp-resource-type"></a>Тип ресурса Андроидманажедстореапп
 
@@ -55,15 +55,17 @@ ms.locfileid: "46792718"
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседингаппкаунт|Int32|Общее количество приложений, которые напрямую или косвенно заменяют данное приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседедаппкаунт|Int32|Общее число приложений, для которых это приложение напрямую или косвенно заменяется. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |packageId|String|Идентификатор пакета.|
 |appIdentifier|String|Имя удостоверения.|
 |usedLicenseCount|Int32|Количество используемых лицензий VPP.|
 |totalLicenseCount|Int32|Общее количество лицензий VPP.|
 |appStoreUrl|String|URL-адрес приложения для рабочего хранилища.|
-|Частный|Логический|Указывает, доступно ли приложение только для указанных пользователей предприятия.|
-|иссистемапп|Логический|Указывает, является ли приложение предустановленным системным приложением.|
+|Частный|Boolean|Указывает, доступно ли приложение только для указанных пользователей предприятия.|
+|иссистемапп|Boolean|Указывает, является ли приложение предустановленным системным приложением.|
 |апптраккс|Коллекция [андроидманажедстореапптракк](../resources/intune-apps-androidmanagedstoreapptrack.md)|Дорожки, которые видимы для этого предприятия.|
-|суппортсоемконфиг|Логический|Поддерживает ли это приложение политику Оемконфиг.|
+|суппортсоемконфиг|Boolean|Поддерживает ли это приложение политику Оемконфиг.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -73,7 +75,7 @@ ms.locfileid: "46792718"
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Общие сведения по установке мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |userStatuses|Коллекция [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|Таблица|Коллекция [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|Список отношений для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|Таблица|Коллекция [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|Набор прямых отношений для этого приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -110,6 +112,8 @@ ms.locfileid: "46792718"
     "String"
   ],
   "dependentAppCount": 1024,
+  "supersedingAppCount": 1024,
+  "supersededAppCount": 1024,
   "packageId": "String",
   "appIdentifier": "String",
   "usedLicenseCount": 1024,
@@ -127,6 +131,9 @@ ms.locfileid: "46792718"
   "supportsOemConfig": true
 }
 ```
+
+
+
 
 
 

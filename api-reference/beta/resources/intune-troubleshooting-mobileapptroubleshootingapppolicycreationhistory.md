@@ -3,14 +3,14 @@ title: Тип ресурса Мобилеапптраублешутингапп�
 description: Элемент History, содержащийся в событии устранения неполадок мобильного приложения.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6a0f9e25145040347b8124442fa2639bbbcd0072
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 858beb604d8f677142685f85f41c05ecaa6dc2ce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43385439"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003537"
 ---
 # <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>Тип ресурса Мобилеапптраублешутингаппполицикреатионхистори
 
@@ -65,6 +65,9 @@ ms.locfileid: "43385439"
   "errorCode": "String"
 }
 ```
+
+
+
 
 
 

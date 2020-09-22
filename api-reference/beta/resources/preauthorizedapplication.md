@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 195659151fd512152dca267233c50bf1870c49b4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 52b90914a3916c57cb07c8bfa84c9a8786ec1209
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436865"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003523"
 ---
 # <a name="preauthorizedapplication-resource-type"></a>Тип ресурса preAuthorizedApplication
 
@@ -25,7 +25,7 @@ ms.locfileid: "43436865"
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
 |appId|String| Уникальный идентификатор приложения. |
-|пермиссионидс|Коллекция объектов string| Уникальный идентификатор для [oauth2PermissionScopes](permissionscope.md) , который требуется приложению. |
+|пермиссионидс|Коллекция String| Уникальный идентификатор для [oauth2PermissionScopes](permissionscope.md) , который требуется приложению. |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -59,3 +59,5 @@ ms.locfileid: "43436865"
   "suppressions": []
 }
 -->
+
+

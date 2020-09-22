@@ -5,12 +5,12 @@ author: ArvindHarinder1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fed4999b86a790389d96e26e630b270ac1b35f2d
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: a7ed5ab3870224e9bd37a9f9e2f75031d942cc78
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643762"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004423"
 ---
 # <a name="acquireaccesstoken"></a>аккуиреакцесстокен
 Пространство имен: microsoft.graph
@@ -107,3 +107,5 @@ Content-length: 123
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+

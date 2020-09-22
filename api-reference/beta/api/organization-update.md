@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ad330d5b4db44550512c48d52ff80f4ec76e74d8
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 58d9c86030d1171b2c081962ac9721872f14f9cb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181387"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004629"
 ---
 # <a name="update-organization"></a>Обновление организации
 
@@ -46,19 +46,19 @@ PATCH /organization/{id}
 | Content-Type   | application/json |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство  | Тип |Описание|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|Коллекция объектов string|                                        **Примечание.** Значение NULL не допускается.            |
+|marketingNotificationEmails|Коллекция String|                                        **Примечание.** Значение NULL не допускается.            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|Профиль конфиденциальности организации (заданные свойства statementUrl и contactEmail).            |
 |securityComplianceNotificationMails|Коллекция String||
 |securityComplianceNotificationPhones|Коллекция String||
 |technicalNotificationMails|Коллекция String|                                        **Примечание.** Значение NULL не допускается.            |
 
-Так как ресурс **Организации** поддерживает [расширения](/graph/extensibility-overview), с помощью `PATCH` операции можно добавлять, обновлять или удалять собственные данные, зависящие от приложения, в пользовательских свойствах расширения в существующем экземпляре **Организации** .
+Так как ресурс **Организации** поддерживает [расширения](/graph/extensibility-overview), с помощью операции можно `PATCH` добавлять, обновлять или удалять собственные данные, зависящие от приложения, в пользовательских свойствах расширения в существующем экземпляре **Организации** .
 
 ## <a name="response"></a>Отклик
 
@@ -141,3 +141,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

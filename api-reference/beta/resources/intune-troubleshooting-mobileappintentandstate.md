@@ -3,14 +3,14 @@ title: Тип ресурса Мобилеаппинтентандстате
 description: MobileApp намерения и состояние установки для конкретного устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 90733f18e64a584158c19b1a35b10727cad25fc0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b4c8e94599c78c82efab6051a58043ac96be5326
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43317825"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003586"
 ---
 # <a name="mobileappintentandstate-resource-type"></a>Тип ресурса Мобилеаппинтентандстате
 
@@ -34,7 +34,7 @@ MobileApp намерения и состояние установки для к�
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|UUID объекта.|
+|id|String|UUID объекта.|
 |managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
 |userId|String|Идентификатор пользователя, который пытался зарегистрировать устройство.|
 |мобилеапплист|Коллекция [мобилеаппинтентандстатедетаил](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)|Список целей и состояний полезных данных для клиента.|
@@ -76,6 +76,9 @@ MobileApp намерения и состояние установки для к�
   ]
 }
 ```
+
+
+
 
 
 

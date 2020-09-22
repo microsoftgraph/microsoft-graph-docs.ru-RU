@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 9a15059dd0f7c252b5c68d97e9f734a262ee3d89
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e368c0426ea8e44940d792a50eff0d8b9f0d26fe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452742"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004372"
 ---
 # <a name="tablecolumn-range"></a>TableColumn: Range
 
@@ -45,7 +45,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/Range
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [workbookRange](../resources/workbookrange.md)) в теле отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [workbookRange](../resources/workbookrange.md)) в теле отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -110,3 +110,5 @@ Content-length: 169
   ]
 }
 -->
+
+

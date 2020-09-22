@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 6c6c464d500e1b05974a81662d4eb99c2ce7c360
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 828fc09e3b7cdb281b682df93b3d6f94f264330d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456532"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004643"
 ---
 # <a name="create-page"></a>Создание страницы
 
@@ -20,7 +20,7 @@ ms.locfileid: "42456532"
 
 Создайте новую страницу OneNote в разделе по умолчанию записной книжки по умолчанию.
 
-Чтобы создать страницу в другом разделе записной книжки, используемой по умолчанию, `sectionName` можно использовать параметр запроса.  Пример: `../onenote/pages?sectionName=My%20section`
+Чтобы создать страницу в другом разделе записной книжки, используемой по умолчанию, можно использовать `sectionName` параметр запроса.  Пример: `../onenote/pages?sectionName=My%20section`.
 
 Эта `POST /onenote/pages` операция используется только для создания страниц в записной книжке текущего пользователя по умолчанию. Если вы нацелены на другие записные книжки, вы можете [создавать страницы в указанном разделе](../api/section-post-pages.md).      
 
@@ -64,7 +64,7 @@ POST /sites/{id}/onenote/pages
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-В `../onenote/pages` пути можно использовать параметр `sectionName` запроса, чтобы создать страницу в определенном разделе записной книжки по умолчанию. Пример: `../onenote/pages?sectionName=My%20section`. Если раздел не существует (или был переименован), API создаст новый раздел.
+В `../onenote/pages` пути можно использовать `sectionName` параметр запроса, чтобы создать страницу в определенном разделе записной книжки по умолчанию. Пример: `../onenote/pages?sectionName=My%20section`. Если раздел не существует (или был переименован), API создаст новый раздел.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -142,3 +142,5 @@ Content-length: 312
   "suppressions": []
 }
 -->
+
+

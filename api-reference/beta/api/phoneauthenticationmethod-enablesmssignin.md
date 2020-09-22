@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 953a23ee0d0c7506592681d9de65e05b5cc1cc9b
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: d4c77e03bf54252cd8f93f29d4e9760371e37697
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806394"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004566"
 ---
 # <a name="phoneauthenticationmethod-enablesmssignin"></a>Фонеаусентикатионмесод: Енаблесмссигнин
 
@@ -20,7 +20,7 @@ ms.locfileid: "43806394"
 
 Включите вход в SMS для существующего `mobile` номера телефона. Успешное включение:
 
-* Телефон должен иметь `"phoneType": "mobile"`значение.
+* Телефон должен иметь значение `"phoneType": "mobile"` .
 * Телефон должен быть уникальным в системе входа SMS (никто другой не может использовать этот номер).
 * Пользователю необходимо включить вход в систему SMS в политике [методы проверки подлинности](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) .
 
@@ -55,11 +55,11 @@ POST /users/{id}/authentication/phoneMethods/{id}/enableSmsSignIn
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK`. Метод не возвращает данные в теле отклика.
 
@@ -95,7 +95,7 @@ POST https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-75
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 <!-- {
@@ -117,3 +117,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

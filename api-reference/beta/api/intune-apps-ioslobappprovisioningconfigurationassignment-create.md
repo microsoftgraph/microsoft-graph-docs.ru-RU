@@ -3,14 +3,14 @@ title: Создание Иослобапппровисионингконфигу
 description: Создание нового объекта Иослобапппровисионингконфигуратионассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a061f97491ea006d2655ef2caa9e8c6e78f185c0
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 89be37ccc1f3b2b9c1550fc2979cf520d15aef71
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793410"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48006218"
 ---
 # <a name="create-ioslobappprovisioningconfigurationassignment"></a>Создание Иослобапппровисионингконфигуратионассигнмент
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -97,6 +97,9 @@ Content-Length: 400
   }
 }
 ```
+
+
+
 
 
 

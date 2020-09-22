@@ -3,14 +3,14 @@ title: Создание политики
 description: Создайте новый объект Policy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 22a1d700b0f82cb98876e4fadb439ee5010fed12
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 93eb8bc0f8aa415190f5e0e4b3f0dbdc4fe317a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43456294"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004853"
 ---
 # <a name="create-policyset"></a>Создание политики
 
@@ -29,7 +29,7 @@ ms.locfileid: "43456294"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ POST /deviceAppManagement/policySets
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Policy в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании этого параметра.
@@ -56,16 +56,16 @@ POST /deviceAppManagement/policySets
 |id|String|Ключ набора политик.|
 |createdDateTime|DateTimeOffset|Время создания набора политик.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения набора политик.|
-|displayName|Строка|DisplayName набора политик.|
+|displayName|String|DisplayName набора политик.|
 |description|String|Описание набора политик.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Состояние проверки или назначения набора политик. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки (при возникновении ошибки). Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|гуидеддеплойменттагс|Коллекция объектов string|Теги в руководстве по развертыванию|
-|roleScopeTags|Коллекция объектов string|RoleScopeTags набора политик|
+|гуидеддеплойменттагс|Коллекция String|Теги в руководстве по развертыванию|
+|roleScopeTags|Коллекция String|RoleScopeTags набора политик|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Policy](../resources/intune-policyset-policyset.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -116,6 +116,9 @@ Content-Length: 489
   ]
 }
 ```
+
+
+
 
 
 

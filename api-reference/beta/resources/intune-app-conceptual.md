@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3c4dfa20789599012ccbd97d9db7950b87f53a86
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 0afe1b29abeb82922f1e36d1d61ca86f2e2bcd23
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46793096"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004160"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -119,6 +119,9 @@ ms.locfileid: "46793096"
 - [Состояние публикации мобильного приложения](intune-apps-mobileapppublishingstate.md)
 - [Связь приложений для мобильных устройств](intune-apps-mobileapprelationship.md)
 - [Состояние связи мобильного приложения](intune-apps-mobileapprelationshipstate.md)
+- [Тип связи мобильных приложений](intune-apps-mobileapprelationshiptype.md)
+- [Замена мобильных приложений](intune-apps-mobileappsupersedence.md)
+- [Тип замены мобильного приложения](intune-apps-mobileappsupersedencetype.md)
 - [Отдельное мобильное приложение](intune-apps-mobilecontainedapp.md)
 - [Мобильное бизнес-приложение](intune-apps-mobilelobapp.md)
 - [Состояние проверки клиента Office](intune-cirrus-officeclientcheckinstatus.md)
@@ -184,3 +187,5 @@ ms.locfileid: "46793096"
 - [Приложение из магазина Windows](intune-apps-windowsstoreapp.md)
 - [Windows Universal AppX](intune-apps-windowsuniversalappx.md)
 - [Отдельное универсальное приложение Windows AppX](intune-apps-windowsuniversalappxcontainedapp.md)
+
+

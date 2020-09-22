@@ -3,14 +3,14 @@ title: Обновление Виндовсфеатуреупдатепрофил
 description: Обновление свойств объекта Виндовсфеатуреупдатепрофиле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 686450bd34be0f251de0c6bc898761d63cfc1a37
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 6ca90584b74ca5dc6cf0c14f42a0a5052e52fa8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123577"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004699"
 ---
 # <a name="update-windowsfeatureupdateprofile"></a>Обновление Виндовсфеатуреупдатепрофиле
 
@@ -43,10 +43,10 @@ PATCH /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfil
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md).
@@ -54,7 +54,7 @@ PATCH /deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfil
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор объекта.|
-|displayName|Строка|Отображаемое имя профиля.|
+|displayName|String|Отображаемое имя профиля.|
 |description|String|Описание профиля, указанного пользователем.|
 |феатуреупдатеверсион|String|Версия обновления компонентов, которая будет развернута на устройствах, предназначенных для этого профиля. Версией может быть любая поддерживаемая версия, например 1709, 1803 или 1809 и т. д.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля.|
@@ -106,6 +106,9 @@ Content-Length: 441
   ]
 }
 ```
+
+
+
 
 
 

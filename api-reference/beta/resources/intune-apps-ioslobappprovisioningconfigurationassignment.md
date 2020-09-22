@@ -3,14 +3,14 @@ title: Тип ресурса Иослобапппровисионингконф�
 description: Класс, содержащий свойства, которые используются для назначения групп при подготовке и настройке бизнес-приложения для iOS.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 025ff655059bebaef39f3ef9c5a371effa2b7e66
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 647c4aa8ee9c6a0d83d7168cf9e78cd610e1eee3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44790896"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003887"
 ---
 # <a name="ioslobappprovisioningconfigurationassignment-resource-type"></a>Тип ресурса Иослобапппровисионингконфигуратионассигнмент
 
@@ -59,6 +59,9 @@ ms.locfileid: "44790896"
   }
 }
 ```
+
+
+
 
 
 

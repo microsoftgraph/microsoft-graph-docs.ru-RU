@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: d9d2c6ff3ceadd55404d32e57d1837c4023771f4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ed814cb4e096ff8e13bdb8f06ede6cad4f94c6d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450170"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004202"
 ---
 # <a name="appidentity-resource-type"></a>Тип ресурса Аппидентити
 
@@ -21,11 +21,11 @@ ms.locfileid: "43450170"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |appId|String|Обозначает уникальный идентификатор GUID, представляющий идентификатор приложения в Azure Active Directory.|
-|displayName|Строка|Указывает на имя приложения, отображаемое на портале Azure.|
+|displayName|String|Указывает на имя приложения, отображаемое на портале Azure.|
 |сервицепринЦипалид|String|Указывает уникальный идентификатор GUID, указывающий идентификатор участника службы в Azure Active Directory для соответствующего приложения.|
 |servicePrincipalName|String|— Имя участника-службы — это имя приложения в клиенте. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -56,3 +56,5 @@ ms.locfileid: "43450170"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,14 +3,14 @@ title: тип перечисления Домаиннамесаурце
 description: Имя_домена источник.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9f59be2cbf2f248d9f677d47cdfa66e19598f5af
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f4daa1ad2f41ac6044fdff4dccdbc16a3a2f411f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43386495"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003782"
 ---
 # <a name="domainnamesource-enum-type"></a>тип перечисления Домаиннамесаурце
 
@@ -26,7 +26,10 @@ ms.locfileid: "43386495"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |фуллдомаиннаме|нуль|Полное доменное имя.|
-|нетбиосдомаиннаме|1,1|имя домена сети BIOS.|
+|нетбиосдомаиннаме|1 |имя домена сети BIOS.|
+
+
+
 
 
 

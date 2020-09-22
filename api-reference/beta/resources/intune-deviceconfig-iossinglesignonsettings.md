@@ -3,14 +3,14 @@ title: Тип ресурса Иоссинглесигнонсеттингс
 description: Параметры проверки подлинности Kerberos для iOS для единого входа
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2f43f5feea67f9f94a8aa5f9179add26deb84ee6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6206dbc62fa8ae9ff0dee4d47bec30ce4ae99ae0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43440191"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003642"
 ---
 # <a name="iossinglesignonsettings-resource-type"></a>Тип ресурса Иоссинглесигнонсеттингс
 
@@ -26,12 +26,12 @@ ms.locfileid: "43440191"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |алловедаппслист|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список идентификаторов приложений, которым разрешено использовать это имя для входа. Если это поле опущено, имя входа применяется ко всем приложениям на устройстве. Эта коллекция может содержать не более 500 элементов.|
-|алловедурлс|Коллекция объектов string|Список URL-адресов HTTP, которые должны быть сопоставлены для использования этого имени входа. При использовании iOS 9,0 или более поздних версий можно использовать подстановочные знаки.|
+|алловедурлс|Коллекция String|Список URL-адресов HTTP, которые должны быть сопоставлены для использования этого имени входа. При использовании iOS 9,0 или более поздних версий можно использовать подстановочные знаки.|
 |displayName|String|Отображаемое имя параметров входа, отображаемое на принимающем устройстве.|
 |кербероспринЦипалнаме|String|Имя субъекта Kerberos. Если этот параметр не указан, пользователю предлагается указать один во время установки профиля.|
 |керберосреалм|String|Имя области Kerberos. С учетом регистра.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -61,6 +61,9 @@ ms.locfileid: "43440191"
   "kerberosRealm": "String"
 }
 ```
+
+
+
 
 
 

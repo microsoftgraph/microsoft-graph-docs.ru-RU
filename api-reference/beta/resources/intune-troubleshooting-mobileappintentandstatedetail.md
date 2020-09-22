@@ -3,14 +3,14 @@ title: Тип ресурса Мобилеаппинтентандстатеде�
 description: Цель мобильного приложения и состояние установки для данного устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9511053bf11771bc3c766ab47672864b92d08cad
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2fa57fb4218d961d8d3e58eb284062998903325b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460582"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48003593"
 ---
 # <a name="mobileappintentandstatedetail-resource-type"></a>Тип ресурса Мобилеаппинтентандстатедетаил
 
@@ -60,6 +60,9 @@ ms.locfileid: "43460582"
   ]
 }
 ```
+
+
+
 
 
 

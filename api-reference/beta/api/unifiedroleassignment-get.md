@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1011d3188987b2702be3faee4424fd4cda77d91f
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 00b9a325ec79b555476b0ff153266c267141efc5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215823"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004323"
 ---
 # <a name="get-unifiedroleassignment"></a>Получение Унифиедролеассигнмент
 
@@ -40,19 +40,19 @@ GET /roleManagement/directory/roleAssignments/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает параметры запросов OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметры запросов OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [унифиедролеассигнмент](../resources/unifiedroleassignment.md) в тексте отклика.
 
@@ -114,11 +114,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-details-of-a-role-assignment-with-expand"></a>Пример 2: получение сведений о назначении роли с помощью`$expand`
+### <a name="example-2-get-details-of-a-role-assignment-with-expand"></a>Пример 2: получение сведений о назначении роли с помощью `$expand`
 
 #### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса с параметром `$expand` Query.
+Ниже приведен пример запроса с `$expand` параметром Query.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -203,3 +203,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

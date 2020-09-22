@@ -3,14 +3,14 @@ title: Тип ресурса Андроидманажедстореапптра�
 description: Содержит сведения о записях для приложений управляемого хранилища Android.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d505a11016ae9959ff783e15b83d912346365183
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0444165a3dfb86efa1f4fc25e2edf0ea309b6959
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449788"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48004076"
 ---
 # <a name="androidmanagedstoreapptrack-resource-type"></a>Тип ресурса Андроидманажедстореапптракк
 
@@ -45,6 +45,9 @@ ms.locfileid: "43449788"
   "trackAlias": "String"
 }
 ```
+
+
+
 
 
 
