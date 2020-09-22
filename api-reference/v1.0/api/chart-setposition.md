@@ -5,57 +5,57 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 21f6756dfab97d6c3449bea20348dff773b4d8d9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a98b7e528074fe0ad234b330222ca01f8ce17691
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42518541"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48060001"
 ---
-# <a name="chart-setposition"></a><span data-ttu-id="714b4-103">Chart: setPosition</span><span class="sxs-lookup"><span data-stu-id="714b4-103">Chart: setPosition</span></span>
+# <a name="chart-setposition"></a><span data-ttu-id="c20b0-103">Chart: setPosition</span><span class="sxs-lookup"><span data-stu-id="c20b0-103">Chart: setPosition</span></span>
 
-<span data-ttu-id="714b4-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="714b4-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c20b0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c20b0-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="714b4-105">Располагает диаграмму относительно ячеек на листе.</span><span class="sxs-lookup"><span data-stu-id="714b4-105">Positions the chart relative to cells on the worksheet.</span></span>
-## <a name="permissions"></a><span data-ttu-id="714b4-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="714b4-106">Permissions</span></span>
-<span data-ttu-id="714b4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="714b4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c20b0-105">Располагает диаграмму относительно ячеек на листе.</span><span class="sxs-lookup"><span data-stu-id="c20b0-105">Positions the chart relative to cells on the worksheet.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c20b0-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c20b0-106">Permissions</span></span>
+<span data-ttu-id="c20b0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c20b0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="714b4-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="714b4-109">Permission type</span></span>      | <span data-ttu-id="714b4-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="714b4-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c20b0-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c20b0-109">Permission type</span></span>      | <span data-ttu-id="c20b0-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c20b0-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="714b4-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="714b4-111">Delegated (work or school account)</span></span> | <span data-ttu-id="714b4-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="714b4-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="714b4-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="714b4-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="714b4-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="714b4-114">Not supported.</span></span>    |
-|<span data-ttu-id="714b4-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="714b4-115">Application</span></span> | <span data-ttu-id="714b4-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="714b4-116">Not supported.</span></span> |
+|<span data-ttu-id="c20b0-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c20b0-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c20b0-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c20b0-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="c20b0-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c20b0-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c20b0-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c20b0-114">Not supported.</span></span>    |
+|<span data-ttu-id="c20b0-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c20b0-115">Application</span></span> | <span data-ttu-id="c20b0-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c20b0-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="714b4-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="714b4-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c20b0-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c20b0-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/worksheets/{id|name}/charts/{name}/setPosition
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="714b4-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="714b4-118">Request headers</span></span>
-| <span data-ttu-id="714b4-119">Имя</span><span class="sxs-lookup"><span data-stu-id="714b4-119">Name</span></span>       | <span data-ttu-id="714b4-120">Описание</span><span class="sxs-lookup"><span data-stu-id="714b4-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c20b0-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c20b0-118">Request headers</span></span>
+| <span data-ttu-id="c20b0-119">Имя</span><span class="sxs-lookup"><span data-stu-id="c20b0-119">Name</span></span>       | <span data-ttu-id="c20b0-120">Описание</span><span class="sxs-lookup"><span data-stu-id="c20b0-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="714b4-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="714b4-121">Authorization</span></span>  | <span data-ttu-id="714b4-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="714b4-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="714b4-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="714b4-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="714b4-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="714b4-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="c20b0-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c20b0-121">Authorization</span></span>  | <span data-ttu-id="c20b0-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c20b0-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c20b0-124">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="c20b0-124">Workbook-Session-Id</span></span>  | <span data-ttu-id="c20b0-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="c20b0-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="714b4-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="714b4-127">Request body</span></span>
-<span data-ttu-id="714b4-128">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="714b4-128">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c20b0-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c20b0-127">Request body</span></span>
+<span data-ttu-id="c20b0-128">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="c20b0-128">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="714b4-129">Параметр</span><span class="sxs-lookup"><span data-stu-id="714b4-129">Parameter</span></span>    | <span data-ttu-id="714b4-130">Тип</span><span class="sxs-lookup"><span data-stu-id="714b4-130">Type</span></span>   |<span data-ttu-id="714b4-131">Описание</span><span class="sxs-lookup"><span data-stu-id="714b4-131">Description</span></span>|
+| <span data-ttu-id="c20b0-129">Параметр</span><span class="sxs-lookup"><span data-stu-id="c20b0-129">Parameter</span></span>    | <span data-ttu-id="c20b0-130">Тип</span><span class="sxs-lookup"><span data-stu-id="c20b0-130">Type</span></span>   |<span data-ttu-id="c20b0-131">Описание</span><span class="sxs-lookup"><span data-stu-id="c20b0-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="714b4-132">startCell</span><span class="sxs-lookup"><span data-stu-id="714b4-132">startCell</span></span>|<span data-ttu-id="714b4-133">Json</span><span class="sxs-lookup"><span data-stu-id="714b4-133">Json</span></span>|<span data-ttu-id="714b4-p104">Начальная ячейка. Место, куда будет перемещена диаграмма. Начальная ячейка — это верхняя левая или верхняя правая ячейка (это зависит от того, использует ли пользователь параметры отображения справа налево).</span><span class="sxs-lookup"><span data-stu-id="714b4-p104">The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.</span></span>|
-|<span data-ttu-id="714b4-137">endCell</span><span class="sxs-lookup"><span data-stu-id="714b4-137">endCell</span></span>|<span data-ttu-id="714b4-138">Json</span><span class="sxs-lookup"><span data-stu-id="714b4-138">Json</span></span>|<span data-ttu-id="714b4-p105">Необязательный. Конечная ячейка. Если указан этот параметр, значения ширины и высоты диаграммы будут заданы так, чтобы полностью покрыть данную ячейку или диапазон.</span><span class="sxs-lookup"><span data-stu-id="714b4-p105">Optional. The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.</span></span>|
+|<span data-ttu-id="c20b0-132">startCell</span><span class="sxs-lookup"><span data-stu-id="c20b0-132">startCell</span></span>|<span data-ttu-id="c20b0-133">Json</span><span class="sxs-lookup"><span data-stu-id="c20b0-133">Json</span></span>|<span data-ttu-id="c20b0-p104">Начальная ячейка. Место, куда будет перемещена диаграмма. Начальная ячейка — это верхняя левая или верхняя правая ячейка (это зависит от того, использует ли пользователь параметры отображения справа налево).</span><span class="sxs-lookup"><span data-stu-id="c20b0-p104">The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.</span></span>|
+|<span data-ttu-id="c20b0-137">endCell</span><span class="sxs-lookup"><span data-stu-id="c20b0-137">endCell</span></span>|<span data-ttu-id="c20b0-138">Json</span><span class="sxs-lookup"><span data-stu-id="c20b0-138">Json</span></span>|<span data-ttu-id="c20b0-p105">Необязательный. Конечная ячейка. Если указан этот параметр, значения ширины и высоты диаграммы будут заданы так, чтобы полностью покрыть данную ячейку или диапазон.</span><span class="sxs-lookup"><span data-stu-id="c20b0-p105">Optional. The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="714b4-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="714b4-142">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c20b0-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="c20b0-142">Response</span></span>
 
-<span data-ttu-id="714b4-p106">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="714b4-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="c20b0-p106">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="c20b0-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="714b4-145">Пример</span><span class="sxs-lookup"><span data-stu-id="714b4-145">Example</span></span>
-<span data-ttu-id="714b4-146">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="714b4-146">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="714b4-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="714b4-147">Request</span></span>
-<span data-ttu-id="714b4-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="714b4-148">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c20b0-145">Пример</span><span class="sxs-lookup"><span data-stu-id="c20b0-145">Example</span></span>
+<span data-ttu-id="c20b0-146">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="c20b0-146">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="c20b0-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="c20b0-147">Request</span></span>
+<span data-ttu-id="c20b0-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c20b0-148">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="714b4-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="714b4-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c20b0-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="c20b0-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chart_setposition"
@@ -70,27 +70,27 @@ Content-length: 66
   "endCell": "endCell-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="714b4-150">C#</span><span class="sxs-lookup"><span data-stu-id="714b4-150">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c20b0-150">C#</span><span class="sxs-lookup"><span data-stu-id="c20b0-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/chart-setposition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="714b4-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="714b4-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c20b0-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c20b0-151">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/chart-setposition-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="714b4-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="714b4-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c20b0-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c20b0-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/chart-setposition-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="714b4-153">Java</span><span class="sxs-lookup"><span data-stu-id="714b4-153">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="c20b0-153">Java</span><span class="sxs-lookup"><span data-stu-id="c20b0-153">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/chart-setposition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="714b4-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="714b4-154">Response</span></span>
-<span data-ttu-id="714b4-155">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="714b4-155">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="c20b0-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="c20b0-154">Response</span></span>
+<span data-ttu-id="c20b0-155">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c20b0-155">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response"
 } -->
@@ -109,3 +109,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+
