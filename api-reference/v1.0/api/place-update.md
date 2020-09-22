@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: d9d966a0fd901ccb040e0a15bbff88c247032bd3
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: 6c62796c56c2e0af51b7a159dead20b51f21e87f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44336392"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978806"
 ---
 # <a name="update-place"></a>Обновление места
 
@@ -59,7 +59,7 @@ PATCH /places/{id | emailAddress}
 | флурлабел             | String                                            | Указывает этаж, в котором находится комната. |
 | флурнумбер            | Int32                                             | Указывает номер этажа, в котором находится комната. |
 | geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | Указывает место в комнате или RoomList принимают одиночные в широте, долготе и дополнительном координатах высоты. |
-| исвхилчаиракцессибле | Логический                                           | Указывает, является ли комната вхилчаир доступным. |
+| исвхилчаиракцессибле | Boolean                                           | Указывает, является ли комната вхилчаир доступным. |
 | label                  | String                                            | Задает описательную метку для комнаты, например номер или имя. |
 | прозвищ               | String                                            | Задает псевдоним для комнаты, например "назначение комнаты". |
 | phone                  | String                                            | Номер телефона комнаты или RoomList принимают одиночные. |
@@ -120,7 +120,7 @@ Content-length: 285
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -229,7 +229,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -278,3 +278,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

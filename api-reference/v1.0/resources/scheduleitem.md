@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: cad5cfa500d3ae6e68bb1db06688e13e8e0d43e6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ce43ccb949aa4bba787289a8d2e3d80c84dd7c09
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811247"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977973"
 ---
 # <a name="scheduleitem-resource-type"></a>Тип ресурса Счедулеитем
 
@@ -22,14 +22,14 @@ ms.locfileid: "46811247"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |Дата, время и часовой пояс, в течение которого заканчивается соответствующее событие. |
-|Частный |Логический |Чувствительность соответствующего события. Значение true, если событие помечено `private` , в противном случае — false. Необязательное свойство.|
-|location |String | Расположение, в котором находится соответствующее событие. Необязательное свойство.|
+|Частный |Boolean |Чувствительность соответствующего события. Значение true, если событие помечено `private` , в противном случае — false. Необязательный параметр.|
+|location |String | Расположение, в котором находится соответствующее событие. Необязательный параметр.|
 |начать |[dateTimeTimeZone](datetimetimezone.md) |Дата, время и часовой пояс, в котором начинается соответствующее событие. |
 |status |freeBusyStatus | Состояние доступности пользователя или ресурса во время соответствующего события. Допустимые значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
-|subject |String | Строка темы соответствующего события. Необязательное свойство.|
+|subject |String | Строка темы соответствующего события. Необязательный параметр.|
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -66,3 +66,4 @@ ms.locfileid: "46811247"
   "tocPath": ""
 }
 -->
+

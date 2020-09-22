@@ -3,14 +3,14 @@ title: Update mobileAppContentFile
 description: Обновление свойств объекта mobileAppContentFile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bf26e28f7c24c49f573f2607a6c0abb4f4afcc6e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0fe430fb9d646a47ecc53acac46441d9cf7b1cf6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43415427"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977315"
 ---
 # <a name="update-mobileappcontentfile"></a>Update mobileAppContentFile
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -55,7 +55,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCo
 |:---|:---|:---|
 |azureStorageUri|String|URI службы хранилища Azure.|
 |isCommitted|Boolean|Значение, указывающее, является ли файл подтвержденным.|
-|id|Строка|Идентификатор файла.|
+|id|String|Идентификатор файла.|
 |createdDateTime|DateTimeOffset|Время создания файла.|
 |name|String|Имя файла.|
 |size|Int64|Размер файла до шифрования.|
@@ -118,6 +118,9 @@ Content-Length: 503
   "isDependency": true
 }
 ```
+
+
+
 
 
 

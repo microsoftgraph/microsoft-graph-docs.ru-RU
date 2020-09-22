@@ -3,14 +3,14 @@ title: Создание mobileAppInstallStatus
 description: Создание нового объекта mobileAppInstallStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 93938848a45d7cd4b8c12d642c4834bfde227fa5
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 1026935c8eb012e0a434a2364da60e6d69d0db20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791045"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977217"
 ---
 # <a name="create-mobileappinstallstatus"></a>Создание mobileAppInstallStatus
 
@@ -29,7 +29,7 @@ ms.locfileid: "46791045"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -44,10 +44,10 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта mobileAppInstallStatus в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании mobileAppInstallStatus.
@@ -70,7 +70,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallS
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -123,6 +123,9 @@ Content-Length: 604
   "displayVersion": "Display Version value"
 }
 ```
+
+
+
 
 
 

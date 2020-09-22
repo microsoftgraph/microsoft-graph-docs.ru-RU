@@ -3,14 +3,14 @@ title: Перечисление объектов deviceAndAppManagementRoleDefin
 description: Список свойств и связей объектов deviceAndAppManagementRoleDefinition.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d01c636fbdc1541c053f8786804a5b638b43fc06
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: da8d9887b38b72adc3610486a6becf8c88af5dc5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43452641"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978855"
 ---
 # <a name="list-deviceandappmanagementroledefinitions"></a>Перечисление объектов deviceAndAppManagementRoleDefinition
 
@@ -44,10 +44,10 @@ GET /deviceManagement/roleDefinitions
 |Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -93,6 +93,9 @@ Content-Length: 768
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Создание Мобилеаппдепенденци
 description: Создание нового объекта Мобилеаппдепенденци.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e2b493c7ca3201be4ac765add8877c176824d36
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: be92f602287c16e3481dcfafe9f38c2bff8a26ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793313"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977301"
 ---
 # <a name="create-mobileappdependency"></a>Создание Мобилеаппдепенденци
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -56,6 +56,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 |id|String|Идентификатор сущности отношения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
 |targetId|String|Идентификатор приложения целевого приложения для мобильных устройств. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
 |таржетдисплайнаме|String|Отображаемое имя целевого мобильного приложения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
+|targetType|[мобилеаппрелатионшиптипе](../resources/intune-apps-mobileapprelationshiptype.md)|Тип связи, указывающий, является ли целевой объект родительским или дочерним. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md). Возможные значения: `child`, `parent`.|
 |депенденцитипе|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|Тип отношения зависимости между родительским и дочерним приложениями. Возможные значения: `detect`, `autoInstall`.|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения.|
 
@@ -71,12 +72,13 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/relationships
 Content-type: application/json
-Content-length: 211
+Content-length: 238
 
 {
   "@odata.type": "#microsoft.graph.mobileAppDependency",
   "targetId": "Target Id value",
   "targetDisplayName": "Target Display Name value",
+  "targetType": "parent",
   "dependencyType": "autoInstall",
   "dependentAppCount": 1
 }
@@ -87,17 +89,21 @@ Content-length: 211
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 260
+Content-Length: 287
 
 {
   "@odata.type": "#microsoft.graph.mobileAppDependency",
   "id": "c7f6f9ab-f9ab-c7f6-abf9-f6c7abf9f6c7",
   "targetId": "Target Id value",
   "targetDisplayName": "Target Display Name value",
+  "targetType": "parent",
   "dependencyType": "autoInstall",
   "dependentAppCount": 1
 }
 ```
+
+
+
 
 
 

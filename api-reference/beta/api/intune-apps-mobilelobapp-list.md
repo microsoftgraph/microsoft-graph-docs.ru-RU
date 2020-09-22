@@ -3,14 +3,14 @@ title: Перечисление объектов mobileLobApp
 description: Список свойств и связей объектов mobileLobApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 922bbfa25539167d04c40df1014d13725b106951
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 40089b498bd72993b9417bd34d38eb097941386e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43414434"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47976958"
 ---
 # <a name="list-mobilelobapps"></a>Перечисление объектов mobileLobApp
 
@@ -43,13 +43,13 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [mobileLobApp](../resources/intune-apps-mobilelobapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1141
+Content-Length: 1206
 
 {
   "value": [
@@ -95,6 +95,8 @@ Content-Length: 1141
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4
@@ -102,6 +104,9 @@ Content-Length: 1141
   ]
 }
 ```
+
+
+
 
 
 

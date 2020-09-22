@@ -3,14 +3,14 @@ title: Создание Микрософтсторефорбусинесскон
 description: Создание нового объекта Микрософтсторефорбусинессконтаинедапп.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f068fc347ebc0352ccaf9e627cc3cfb35f57721
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 94e11440dbb422db7c31005a46c21145cb283214
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43404921"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977679"
 ---
 # <a name="create-microsoftstoreforbusinesscontainedapp"></a>Создание Микрософтсторефорбусинессконтаинедапп
 
@@ -45,7 +45,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -60,7 +60,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [микрософтсторефорбусинессконтаинедапп](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -91,6 +91,9 @@ Content-Length: 176
   "appUserModelId": "App User Model Id value"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Обновление К mobileappprovisioningconfiggroupassignment.
 description: Обновление свойств объекта К mobileappprovisioningconfiggroupassignment..
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 537570ee2e1300cf5c6eede23d8a8d5ef0cccfb3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 08a2de58d51bd00c7de2718a2c3e22c370e83000
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43414572"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977049"
 ---
 # <a name="update-mobileappprovisioningconfiggroupassignment"></a>Обновление К mobileappprovisioningconfiggroupassignment.
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -89,6 +89,9 @@ Content-Length: 178
   "id": "fad873e3-73e3-fad8-e373-d8fae373d8fa"
 }
 ```
+
+
+
 
 
 

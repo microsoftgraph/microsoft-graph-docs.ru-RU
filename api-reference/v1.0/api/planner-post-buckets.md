@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: e59c40b53a9e7e0ab4b06d539330fd61f12b1ae5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2f9840d87ad613d560c0572a1ef9a7c73fa1b701
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510993"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978771"
 ---
 # <a name="create-plannerbucket"></a>Создание объекта plannerBucket
 
@@ -86,7 +86,7 @@ Content-length: 92
 ---
 
 Включите в текст запроса описание объекта [plannerBucket](../resources/plannerbucket.md) в формате JSON.
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -117,3 +117,4 @@ Content-length: 145
   "suppressions": [
   ]
 }-->
+

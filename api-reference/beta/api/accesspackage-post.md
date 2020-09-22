@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ef57e5400d2bb93bf566badfc76fa8c890206809
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2fc35b0c2de4f8d152cef00194bf74b5fd5b8845
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448511"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977959"
 ---
 # <a name="create-accesspackage"></a>Создание Акцесспаккаже
 
@@ -42,14 +42,14 @@ POST /identityGovernance/entitlementManagement/accessPackages
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Носитель \{токен\}. Обязательно. |
+| Authorization | Носитель \{токен\}. Обязательно. |
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление объекта [акцесспаккаже](../resources/accesspackage.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика 201, созданный в теле отклика, и новый объект [акцесспаккаже](../resources/accesspackage.md) .
 
@@ -125,3 +125,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

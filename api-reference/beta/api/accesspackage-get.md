@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6324c868a4c78f108a8eb8177b70504d9129d8d7
-ms.sourcegitcommit: c1935e442ee973c6c3fcb01a15d76bcfa625362e
+ms.openlocfilehash: d3121adee9ef65736bc75537f5cbc6e65ed53f86
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44345211"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977966"
 ---
 # <a name="get-accesspackage"></a>Получение Акцесспаккаже
 
@@ -40,13 +40,13 @@ GET /identityGovernance/entitlementManagement/accessPackages/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Например, чтобы получить доступ к политикам пакетов доступа, добавьте `$expand=accessPackageAssignmentPolicies` . Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Например, чтобы получить доступ к политикам пакетов доступа, добавьте `$expand=accessPackageAssignmentPolicies` . Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Носитель \{токен\}. Обязательный элемент. |
+| Authorization | Носитель \{токен\}. Обязательно. |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -125,3 +125,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

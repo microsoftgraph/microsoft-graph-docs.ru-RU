@@ -3,14 +3,14 @@ title: действие Валидатексмл
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 007f039988515cd99b40fa314b9baec12afd7d02
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 76221cefa76e4fe405d62e4acb35dfe98bb36af9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177963"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977602"
 ---
 # <a name="validatexml-action"></a>действие Валидатексмл
 
@@ -43,17 +43,17 @@ POST /deviceAppManagement/mobileApps/validateXml
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|оффицеконфигуратионксмл|Binary|Н/Д|
+|оффицеконфигуратионксмл|Binary|Пока не задокументировано.|
 
 
 
@@ -86,6 +86,9 @@ Content-Length: 37
   "value": "Validate Xml value"
 }
 ```
+
+
+
 
 
 

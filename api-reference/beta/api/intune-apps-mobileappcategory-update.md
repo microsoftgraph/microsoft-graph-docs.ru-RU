@@ -3,14 +3,14 @@ title: Обновление объекта mobileAppCategory
 description: Обновление свойств объекта mobileAppCategory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b82bd4119db996193e1bfcaf654527c3c58f1ce3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bd2d1ef4dae6119456d8b2a9fc1cdf9c12f239e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43404403"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977462"
 ---
 # <a name="update-mobileappcategory"></a>Обновление объекта mobileAppCategory
 
@@ -44,7 +44,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategor
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -55,7 +55,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/categories/{mobileAppCategor
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|displayName|Строка|Имя категории приложений.|
+|displayName|String|Имя категории приложений.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта mobileAppCategory.|
 
 
@@ -92,6 +92,9 @@ Content-Length: 212
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
+
+
 
 
 

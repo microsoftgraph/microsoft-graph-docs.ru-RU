@@ -3,14 +3,14 @@ title: Получение Мобилеаппинсталлсуммари
 description: Чтение свойств и связей объекта Мобилеаппинсталлсуммари.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5e208e467acf95499c9a1a531f3f98737b583341
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4d286ff9c80a8be4652991bf688ca122603b0a34
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43414798"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977168"
 ---
 # <a name="get-mobileappinstallsummary"></a>Получение Мобилеаппинсталлсуммари
 
@@ -40,19 +40,19 @@ ms.locfileid: "43414798"
 GET /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [мобилеаппинсталлсуммари](../resources/intune-apps-mobileappinstallsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -87,6 +87,9 @@ Content-Length: 466
   }
 }
 ```
+
+
+
 
 
 

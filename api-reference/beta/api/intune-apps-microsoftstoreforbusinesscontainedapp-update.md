@@ -3,14 +3,14 @@ title: Обновление Микрософтсторефорбусинесск
 description: Обновление свойств объекта Микрософтсторефорбусинессконтаинедапп.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ff8287c5ba4a7d743e21cdac07313bb5d85405b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 623558c9fc0ddad8bed32eec2d33116cb842b3f3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43404793"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977609"
 ---
 # <a name="update-microsoftstoreforbusinesscontainedapp"></a>Обновление Микрософтсторефорбусинессконтаинедапп
 
@@ -45,7 +45,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnive
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -60,7 +60,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUnive
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [микрософтсторефорбусинессконтаинедапп](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -91,6 +91,9 @@ Content-Length: 176
   "appUserModelId": "App User Model Id value"
 }
 ```
+
+
+
 
 
 

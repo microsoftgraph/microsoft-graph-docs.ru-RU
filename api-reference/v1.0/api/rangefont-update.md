@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 660e7853a13464a902aee944a61f0134ac0263a3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: be97858b4a4a26e1c820e04819a638387c5b3a1d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42510510"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978694"
 ---
 # <a name="update-rangefont"></a>Обновление объекта rangefont
 
@@ -45,13 +45,13 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |bold|boolean|Указывает, является ли шрифт полужирным.|
-|color|строка|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
+|color|string|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
 |italic|boolean|Указывает, применяется ли курсив.|
 |name|string|Имя шрифта (например, Calibri)|
 |size|double|размер шрифта|
 |underline|string|Тип подчеркивания, применяемый для шрифта. Допустимые значения: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [воркбукранжефонт](../resources/rangefont.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -128,3 +128,4 @@ Content-length: 134
   "suppressions": [
   ]
 }-->
+

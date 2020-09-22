@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 949087aa272af949fdcdec020ba6457a0a87b27c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5f5d252b4b9ffe80329cba4f878bf8b4b0ac413e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511000"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978785"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 
@@ -133,3 +133,4 @@ Content-length: 833
   "suppressions": [
   ]
 }-->
+

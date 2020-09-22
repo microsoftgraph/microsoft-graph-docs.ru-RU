@@ -3,14 +3,14 @@ title: Перечисление объектов mobileAppCategory
 description: Список свойств и связей объектов mobileAppCategory.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b9727fbcb4e9b4464f360753f1bd84fd4ebf8f19
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3cb7d21aca6b4844747fb4fe260321ce44414bb5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43404450"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977455"
 ---
 # <a name="list-mobileappcategories"></a>Перечисление объектов mobileAppCategory
 
@@ -44,13 +44,13 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/categories
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [mobileAppCategory](../resources/intune-apps-mobileappcategory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -79,6 +79,9 @@ Content-Length: 261
   ]
 }
 ```
+
+
+
 
 
 

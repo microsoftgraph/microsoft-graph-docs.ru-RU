@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 27081a3868eefb26f2668261abf3241ea5b8ea0d
-ms.sourcegitcommit: 9edfcf99706c8490cd5832a1c706a88a89e24db1
+ms.openlocfilehash: 9b68ccdcb31dcc4f90e8b90f7590e69e912deb94
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42858877"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978316"
 ---
 # <a name="get-threatassessmentrequest"></a>Получение объекта threatAssessmentRequest
 
@@ -18,10 +18,10 @@ ms.locfileid: "42858877"
 
 Запрос на оценку угроз может иметь один из следующих типов:
 
-* [почта](../resources/mailAssessmentRequest.md);
+* [Почта](../resources/mailAssessmentRequest.md)
 * [Файл электронной почты](../resources/emailFileAssessmentRequest.md)
-* [Файл](../resources/fileAssessmentRequest.md)
-* [URL](../resources/urlAssessmentRequest.md)
+* [File](../resources/fileAssessmentRequest.md)
+* [URL-адрес](../resources/urlAssessmentRequest.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -43,7 +43,7 @@ GET /informationProtection/threatAssessmentRequests/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 |Имя            |Значение    |Описание                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -60,7 +60,7 @@ GET /informationProtection/threatAssessmentRequests/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [среатассессментрекуест](../resources/threatassessmentrequest.md) в тексте отклика. Возвращаются свойства этого типа: [маилассессментрекуест](../resources/mailAssessmentRequest.md), [емаилфилеассессментрекуест](../resources/emailFileAssessmentRequest.md), [филеассессментрекуест](../resources/fileAssessmentRequest.md), [урлассессментрекуест](../resources/urlAssessmentRequest.md).
 
@@ -452,3 +452,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: Перечисление объектов managedIOSLobApp
 description: Список свойств и связей объектов managedIOSLobApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 93c3041829b81503f11b0c6259a1e6521eb6e0a3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 19bc261470ea01731e5a021c9da1fb7455253c25
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43415643"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977791"
 ---
 # <a name="list-managedioslobapps"></a>Перечисление объектов managedIOSLobApp
 
@@ -43,13 +43,13 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1890
+Content-Length: 1955
 
 {
   "value": [
@@ -95,6 +95,8 @@ Content-Length: 1890
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "appAvailability": "lineOfBusiness",
       "version": "Version value",
       "committedContentVersion": "Committed Content Version value",
@@ -123,6 +125,9 @@ Content-Length: 1890
   ]
 }
 ```
+
+
+
 
 
 

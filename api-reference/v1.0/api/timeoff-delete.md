@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 68c26aafd2dcf5f7c4755117587267e9c03e3eaf
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: e01eaecc95638c3fbda9d21466a7868ae75b7a56
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "44218064"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978288"
 ---
 # <a name="delete-timeoff"></a>Удаление Тимеофф
 
@@ -44,7 +44,7 @@ DELETE /teams/{teamId}/schedule/timesOff/{timeOffId}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -115,3 +115,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

@@ -3,14 +3,14 @@ title: Create managedIOSStoreApp
 description: Создание объекта managedIOSStoreApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 20c14a37baabdb5bc0817fa81b4b5777c819570b
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: f594aeb3c54e0cb6abcf697034fff37a6ebfa69c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791094"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977742"
 ---
 # <a name="create-managediosstoreapp"></a>Create managedIOSStoreApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "46791094"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,10 +43,10 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта managedIOSStoreApp в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта managedIOSStoreApp.
@@ -71,6 +71,8 @@ POST /deviceAppManagement/mobileApps
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседингаппкаунт|Int32|Общее количество приложений, которые напрямую или косвенно заменяют данное приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседедаппкаунт|Int32|Общее число приложений, для которых это приложение напрямую или косвенно заменяется. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |appAvailability|[манажедаппаваилабилити](../resources/intune-apps-managedappavailability.md)|Доступность приложения. Наследуется от [managedApp](../resources/intune-apps-managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
 |version|String|Версия приложения. Наследуется от [managedApp](../resources/intune-apps-managedapp.md)|
 |bundleId|String|Идентификатор пакета приложения.|
@@ -90,7 +92,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1238
+Content-length: 1295
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -115,6 +117,8 @@ Content-length: 1238
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "bundleId": "Bundle Id value",
@@ -141,7 +145,7 @@ Content-length: 1238
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1410
+Content-Length: 1467
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -169,6 +173,8 @@ Content-Length: 1410
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "bundleId": "Bundle Id value",
@@ -189,6 +195,9 @@ Content-Length: 1410
   }
 }
 ```
+
+
+
 
 
 

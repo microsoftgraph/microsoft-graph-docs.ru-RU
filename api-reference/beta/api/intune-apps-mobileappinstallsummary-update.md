@@ -3,14 +3,14 @@ title: Обновление Мобилеаппинсталлсуммари
 description: Обновление свойств объекта Мобилеаппинсталлсуммари.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fab58b772d9cb9111c7676a08703dd7868d7d4cb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5f0f6cf70271447cdd411b6044ee7da8535066e0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43414791"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977133"
 ---
 # <a name="update-mobileappinstallsummary"></a>Обновление Мобилеаппинсталлсуммари
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -67,7 +67,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [мобилеаппинсталлсуммари](../resources/intune-apps-mobileappinstallsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -116,6 +116,9 @@ Content-Length: 423
   "pendingInstallUserCount": 7
 }
 ```
+
+
+
 
 
 

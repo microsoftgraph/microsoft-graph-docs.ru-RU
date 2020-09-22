@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: cdda1a24fad5827e9c320384a39325699d4d8165
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 2d71b43b578e6952c6a454fd45fe8ce327d9f907
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873309"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978456"
 ---
 # <a name="create-team-from-group"></a>Создание команды из группы
 
@@ -165,3 +165,4 @@ Content-length: 401
 ## <a name="see-also"></a>См. также
 
 - [Создание группы с командой](/graph/teams-create-group-and-team)
+

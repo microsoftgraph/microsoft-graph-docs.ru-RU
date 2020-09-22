@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 937feb0e414f1e3a6263bc2e54e440898431d130
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
+ms.openlocfilehash: 407bd1e2ad56ace6af783e4c83094d3ea74a5d42
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383926"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978594"
 ---
 # <a name="serviceprincipal-removepassword"></a>servicePrincipal: Ремовепассворд
 
@@ -47,7 +47,7 @@ POST /servicePrincipals/{id}/removePassword
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| Него значение KeyID | Идентификатор GUID | Уникальный идентификатор пароля. Обязательный. |
+| Него значение KeyID | GUID | Уникальный идентификатор пароля. Обязательный. |
 
 ## <a name="response"></a>Отклик
 
@@ -117,3 +117,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

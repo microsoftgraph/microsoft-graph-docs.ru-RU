@@ -3,14 +3,14 @@ title: Список Мобилеаппрелатионшипс
 description: Список свойств и связей объектов Мобилеаппрелатионшип.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 59777414cbde781bb522a2aa588e2d2728dae2eb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ae92864cea71c4f2a29a0c3c960de6039ef45039
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43414478"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977035"
 ---
 # <a name="list-mobileapprelationships"></a>Список Мобилеаппрелатионшипс
 
@@ -43,13 +43,13 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 248
+Content-Length: 279
 
 {
   "value": [
@@ -73,11 +73,15 @@ Content-Length: 248
       "@odata.type": "#microsoft.graph.mobileAppRelationship",
       "id": "7b4b5b14-5b14-7b4b-145b-4b7b145b4b7b",
       "targetId": "Target Id value",
-      "targetDisplayName": "Target Display Name value"
+      "targetDisplayName": "Target Display Name value",
+      "targetType": "parent"
     }
   ]
 }
 ```
+
+
+
 
 
 

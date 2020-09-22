@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4920b57c0c4a4af4568c072c2550c188932e693e
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 29d4f2c18132288b65407bbe75b8d622edd69d96
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873302"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978438"
 ---
 # <a name="delete-teamsapp"></a>Удаление teamsApp
 
@@ -57,7 +57,7 @@ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 |:--------------|:--------------  |
 | Авторизация | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -112,3 +112,4 @@ DELETE https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93
 ```http
 HTTP/1.1 204 No Content
 ```
+

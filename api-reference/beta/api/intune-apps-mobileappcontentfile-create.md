@@ -3,14 +3,14 @@ title: Создание объекта mobileAppContentFile
 description: Создание объекта mobileAppContentFile.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 48f07ef88425e8febc92088184a87925a07255cf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 40e0a2a4d08548c507716783952a0b5439e40f72
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43415590"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977364"
 ---
 # <a name="create-mobileappcontentfile"></a>Создание объекта mobileAppContentFile
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -55,7 +55,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppCon
 |:---|:---|:---|
 |azureStorageUri|String|URI службы хранилища Azure.|
 |isCommitted|Boolean|Значение, указывающее, является ли файл подтвержденным.|
-|id|Строка|Идентификатор файла.|
+|id|String|Идентификатор файла.|
 |createdDateTime|DateTimeOffset|Время создания файла.|
 |name|String|Имя файла.|
 |size|Int64|Размер файла до шифрования.|
@@ -118,6 +118,9 @@ Content-Length: 503
   "isDependency": true
 }
 ```
+
+
+
 
 
 

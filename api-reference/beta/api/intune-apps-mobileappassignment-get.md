@@ -3,14 +3,14 @@ title: Get mobileAppAssignment
 description: Чтение свойств и связей объекта mobileAppAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: df5dad617e34ceb47c312d490a22cbf6b029927d
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 421a01eee08f8bec2b03ddceb1ddf740fe5a5652
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793334"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977581"
 ---
 # <a name="get-mobileappassignment"></a>Get mobileAppAssignment
 
@@ -40,13 +40,13 @@ ms.locfileid: "44793334"
 GET /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -90,6 +90,9 @@ Content-Length: 689
   }
 }
 ```
+
+
+
 
 
 

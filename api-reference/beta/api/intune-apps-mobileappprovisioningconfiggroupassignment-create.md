@@ -3,14 +3,14 @@ title: Создание К mobileappprovisioningconfiggroupassignment.
 description: Создание нового объекта К mobileappprovisioningconfiggroupassignment..
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: af639bbaa5e07fc5b49f45b9829593cf855ab21a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dee05bc49230d6946fc6e20520029ecd03eef0e1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43414744"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977112"
 ---
 # <a name="create-mobileappprovisioningconfiggroupassignment"></a>Создание К mobileappprovisioningconfiggroupassignment.
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisio
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -89,6 +89,9 @@ Content-Length: 178
   "id": "fad873e3-73e3-fad8-e373-d8fae373d8fa"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7803d2b51b2dfd0604b7dafd8ff8a22d3b43a457
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: fe5a3a26b22d8c2497011c84d49d87e869964a0f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44332386"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47978876"
 ---
 # <a name="get-place"></a>Получение
 
@@ -33,7 +33,7 @@ ms.locfileid: "44332386"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Place.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-| Приложение                            | Place.Read.All |
+| Для приложений                            | Place.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,7 +54,7 @@ GET /places/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -229,3 +229,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

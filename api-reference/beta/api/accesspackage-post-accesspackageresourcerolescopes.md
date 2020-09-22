@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6dbe277f3f6b05bb7df55adf8523d7111f6f17cd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 39ed9ce31cd6a49e3ff1bbda81ff406a335353e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448517"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977945"
 ---
 # <a name="create-accesspackageresourcerolescope"></a>Создание Акцесспаккажересаурцеролескопе
 
@@ -45,11 +45,11 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/accessPackage
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [акцесспаккажересаурцеролескопе](../resources/accesspackageresourcerolescope.md) в формате JSON.  Включите в объект связи для [акцесспаккажересаурцероле](../resources/accesspackageresourcerole.md) и [акцесспаккажересаурцескопе](../resources/accesspackageresourcescope.md).  
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код ответа серии 200 и новый объект [акцесспаккажересаурцеролескопе](../resources/accesspackageresourcerolescope.md) в тексте отклика.
 
@@ -98,7 +98,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -131,3 +131,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

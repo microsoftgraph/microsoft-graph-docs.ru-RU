@@ -3,14 +3,14 @@ title: Перечисление объектов managedDeviceMobileAppConfigura
 description: Список свойств и связей объектов managedDeviceMobileAppConfigurationUserStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 89b41b898a96cf85dc323ae317d702640a6aa956
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6760706a31ca98765d7881ce24cc1cff5fbe6c5b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43415956"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977868"
 ---
 # <a name="list-manageddevicemobileappconfigurationuserstatuses"></a>Перечисление объектов managedDeviceMobileAppConfigurationUserStatus
 
@@ -44,13 +44,13 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvision
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -82,6 +82,9 @@ Content-Length: 416
   ]
 }
 ```
+
+
+
 
 
 

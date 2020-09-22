@@ -3,14 +3,14 @@ title: Список МобилеаппдепенденЦиес
 description: Список свойств и связей объектов Мобилеаппдепенденци.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 85da4798bc3cc7d7c1f63e9ff63bd4ecde4c52d6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 80a9125417f09cb44b538b5851415bb2444eb4bc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43415023"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977250"
 ---
 # <a name="list-mobileappdependencies"></a>Список МобилеаппдепенденЦиес
 
@@ -43,13 +43,13 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/relationships
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [мобилеаппдепенденци](../resources/intune-apps-mobileappdependency.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 317
+Content-Length: 348
 
 {
   "value": [
@@ -74,12 +74,16 @@ Content-Length: 317
       "id": "c7f6f9ab-f9ab-c7f6-abf9-f6c7abf9f6c7",
       "targetId": "Target Id value",
       "targetDisplayName": "Target Display Name value",
+      "targetType": "parent",
       "dependencyType": "autoInstall",
       "dependentAppCount": 1
     }
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Создание объекта mobileAppAssignment
 description: Создание объекта mobileAppAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e0a1d5bb75374307362b5291233afb5b554b6fe
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: db319c40fd4f3150cf5f113d54ff3c7dd98731b3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793341"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47977595"
 ---
 # <a name="create-mobileappassignment"></a>Создание объекта mobileAppAssignment
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -117,6 +117,9 @@ Content-Length: 640
   "sourceId": "Source Id value"
 }
 ```
+
+
+
 
 
 
