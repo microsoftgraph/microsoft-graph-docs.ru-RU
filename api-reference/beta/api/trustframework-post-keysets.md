@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 934a3c7bbcd0e76bc41eac0294e0660ea9da3ccc
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d0a435df4b8ff0eddefc34118738eab68abbb8b9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215961"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027400"
 ---
 # <a name="create-trustframeworkkeyset"></a>Создание Трустфрамеворккэйсет
 
@@ -45,11 +45,11 @@ POST /trustFramework/keySets
 | Авторизация | Bearer {токен}. Обязательный. |
 |Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика, заголовок расположения для нового объекта и новый объект [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md) в тексте отклика.
 
@@ -210,3 +210,5 @@ Location: /trustFramework/keySets('B2C_1A_keyset1')
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

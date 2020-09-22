@@ -3,14 +3,14 @@ title: Действие assign
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 19deff592647134fdfc8e61868b70840d3d563e6
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 304f8f909ec75dc5499bf6ac38d24351b324fe93
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792515"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027869"
 ---
 # <a name="assign-action"></a>Действие назначения
 
@@ -43,17 +43,17 @@ POST /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assign
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|девицехеалсскриптассигнментс|Коллекция [девицехеалсскриптассигнмент](../resources/intune-devices-devicehealthscriptassignment.md)|Н/Д|
+|девицехеалсскриптассигнментс|Коллекция [девицехеалсскриптассигнмент](../resources/intune-devices-devicehealthscriptassignment.md)|Пока не задокументировано.|
 
 
 
@@ -97,6 +97,9 @@ Content-length: 688
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

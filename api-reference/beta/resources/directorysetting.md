@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8aa79fb8372b9603c8c0d4845d6107e9f3f3cd76
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: c3626d2e63fcea6a536d6dbd18845ea5331b428d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181766"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027082"
 ---
 # <a name="directorysetting-resource-type"></a>Тип ресурса Директорисеттинг
 
@@ -40,7 +40,7 @@ ms.locfileid: "43181766"
 |templateId|string| Уникальный идентификатор шаблона, который используется для создания этой группы параметров. Только для чтения.|
 |values|Коллекция [settingValue](settingvalue.md)| Коллекция пар "имя-значение". Должен содержать и задавать все параметры, определенные в шаблоне.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
@@ -78,3 +78,5 @@ ms.locfileid: "43181766"
   "suppressions": []
 }
 -->
+
+

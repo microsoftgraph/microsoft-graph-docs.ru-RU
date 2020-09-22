@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: d2c4f007c23ae32fb79255a0a8f1509589740a70
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 140470f0e293b41770779628280f0117d8bb6a89
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42503434"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027057"
 ---
 # <a name="taxareas-resource-type"></a>Тип ресурса Таксареас
 
@@ -55,5 +55,7 @@ ms.locfileid: "42503434"
   "lastModifiedDateTime": "datetime"
 }
 ```
+
+
 
 

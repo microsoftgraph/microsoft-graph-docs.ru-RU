@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4e6349c66c69969d6496103b525b99912564246c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0e8c0edd2d1c5bc0dd2d195d6df3ee2787711003
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467083"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027713"
 ---
 # <a name="update-mailfolder"></a>Обновление mailFolder
 
@@ -49,7 +49,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 |:---------------|:--------|:----------|
 |displayName|Строка|Отображаемое имя элемента mailFolder.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [mailFolder](../resources/mailfolder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -122,3 +122,5 @@ Content-length: 179
   ]
 }
 -->
+
+

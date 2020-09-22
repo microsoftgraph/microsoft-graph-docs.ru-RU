@@ -3,14 +3,14 @@ title: Тип ресурса deviceConfigurationGroupAssignment
 description: Назначение группы конфигурации устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: eafc10e4fb464ab9dbaee642816b56a761bb5516
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7ae84489009eac1e01d399c2b90f81ed12e5b5da
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469383"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026777"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>Тип ресурса deviceConfigurationGroupAssignment
 
@@ -38,7 +38,7 @@ ms.locfileid: "43469383"
 |таржетграупид|String|Идентификатор группы AAD, на которую направляться конфигурация устройства.|
 |excludeGroup|Boolean|Указывает, следует ли исключить эту группу. Значения по умолчанию, включаемые в группу|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |deviceConfiguration|[deviceConfiguration](../resources/intune-shared-deviceconfiguration.md);|Ссылка навигации на целевую конфигурацию устройства.|
@@ -59,6 +59,9 @@ ms.locfileid: "43469383"
   "excludeGroup": true
 }
 ```
+
+
+
 
 
 

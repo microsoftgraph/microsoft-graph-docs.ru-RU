@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 64d5b2d2c10194156a1b577437d1e7a90773b80a
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: a657b7bf8ca90236649647d8a1d4d054134e2c95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219013"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027274"
 ---
 # <a name="trustframeworkkeyset-uploadpkcs12"></a>Трустфрамеворккэйсет: uploadPkcs12
 
@@ -54,7 +54,7 @@ POST /trustFramework/keySets/{id}/uploadPkcs12
 |key|String|Это поле для отправки PFX-содержимого. Значение должно представлять собой версию фактического содержимого сертификата в кодировке Base 64.|
 |password|Строка|Это поле для отправки пароля в PFX-контент.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект [трустфрамеворккэй](../resources/trustframeworkkey.md) в тексте отклика.
 
@@ -128,3 +128,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

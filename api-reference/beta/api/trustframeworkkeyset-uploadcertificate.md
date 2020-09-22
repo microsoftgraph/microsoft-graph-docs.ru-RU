@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0342565ca8c7e652118c525a3c51c4700840d718
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 81b52d3757e8710d264d3280a9012f80bc32b438
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215905"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027272"
 ---
 # <a name="trustframeworkkeyset-uploadcertificate"></a>Трустфрамеворккэйсет: Уплоадцертификате
 
@@ -53,7 +53,7 @@ POST /trustFramework/keySets/{id}/uploadCertificate
 |:-------------|:------------|:------------|
 |key|String| Это поле для отправки контента сертификата. Значение должно представлять собой версию фактического содержимого сертификата в кодировке Base 64. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект [трустфрамеворккэй](../resources/trustframeworkkey.md) в тексте отклика.
 
@@ -126,3 +126,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

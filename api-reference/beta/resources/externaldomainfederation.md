@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ffeaa955ac43a52a0e3485f4a561163d4d27a957
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: d81255a3687bf3d6aafe9369f901b209f5827b77
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46510300"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026917"
 ---
 # <a name="externaldomainfederation-resource-type"></a>Тип ресурса Екстерналдомаинфедератион
 
@@ -24,11 +24,11 @@ ms.locfileid: "46510300"
 
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| displayName |Строка | Имя источника удостоверений, как правило, также доменное имя. Только для чтения. |
+| displayName |String | Имя источника удостоверений, как правило, также доменное имя. Только для чтения. |
 | domainName |String | Доменное имя. Только для чтения. |
-| иссуерури |Строка | Иссуерури входящей Федерации. Только для чтения. |
+| иссуерури |String | Иссуерури входящей Федерации. Только для чтения. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -62,3 +62,5 @@ ms.locfileid: "46510300"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

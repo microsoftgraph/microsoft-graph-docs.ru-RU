@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: de1df6c258794165e37d3572d4bee5da84316c83
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 9807802d426fc5069a83014e52f0ed2210e05102
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215912"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027351"
 ---
 # <a name="update-or-create-trustframeworkpolicy"></a>Обновление или создание Трустфрамеворкполици
 
@@ -47,17 +47,17 @@ PUT /trustFramework/policies/{id}/$value
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|Application/XML. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте XML-представление объекта [трустфрамеворкполици](../resources/trustframeworkpolicy.md) . 
 
->**Note:** тип контента должен быть `application/xml`.
+>**Note:** тип контента должен быть `application/xml` .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Ответ будет одним из следующих вариантов:
-- Если [трустфрамеворкполици](../resources/trustframeworkpolicy.md) существует, успешный запрос возвращает код `200 OK` отклика.
-- Если [трустфрамеворкполици](../resources/trustframeworkpolicy.md) не существует, успешный запрос возвращает код `201 Created` отклика.
+- Если [трустфрамеворкполици](../resources/trustframeworkpolicy.md) существует, успешный запрос возвращает `200 OK` код отклика.
+- Если [трустфрамеворкполици](../resources/trustframeworkpolicy.md) не существует, успешный запрос возвращает `201 Created` код отклика.
 - В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="example"></a>Пример
@@ -107,3 +107,5 @@ Content-Type: application/xml
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

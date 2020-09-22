@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: 9a7ca111f0f61577ea4b02a9ea76e48c35bd2fbe
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: cd7e3401032f77f83d5cc430116190ba547d26b3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353751"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027015"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Работа с Excel в Microsoft Graph
 
@@ -101,7 +101,7 @@ workbook-session-id: {session-id}
 ### <a name="worksheet-operations"></a>Операции с листами
 
 #### <a name="list-worksheets-part-of-the-workbook"></a>Список листов, являющихся частью книги 
-Запросить 
+Запрос 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -111,7 +111,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ
+Отклик
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -196,7 +196,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="delete-a-worksheet"></a>Удаление листа
 
-Запросить
+Запрос
 ```
 DELETE /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('%7B75A18F35-34AA-4F44-97CC-FDC3C05D9F40%7D')
 content-type: Application/Json 
@@ -204,7 +204,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -213,7 +213,7 @@ HTTP code: 204 No Content
 
 #### <a name="update-worksheet-properties"></a>Обновление свойств листа
 
-Запросить 
+Запрос 
 
 ```
 PATCH /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets/SheetA
@@ -225,7 +225,7 @@ workbook-session-id: {session-id}
 { "name": "SheetA", "position": 3 }
 ```
 
-Ответ
+Отклик
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -246,7 +246,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="list-charts-that-are-part-of-the-worksheet"></a>Список диаграмм, являющихся частью листа 
 
-Запросить
+Запрос
 <!-- { "blockType": "ignored" } -->
 ```http 
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts
@@ -255,7 +255,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -281,7 +281,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="get-chart-image"></a>Получение изображения диаграммы
 
-Запросить
+Запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B00000000-0008-0000-0100-000003000000%7D')/Image(width=0,height=0,fittingMode='fit')
@@ -289,7 +289,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id} 
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -303,7 +303,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-chart"></a>Добавление диаграммы  
 
-Запросить
+Запрос
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -315,7 +315,7 @@ authorization: Bearer {access-token}
 { "type": "ColumnClustered", "sourcedata": "A1:C4", "seriesby": "Auto" }
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
@@ -367,7 +367,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="update-chart-source-data"></a>Обновление исходных данных диаграммы 
 
-Запросить
+Запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/charts('%7B2D421098-FA19-41F7-8528-EE7B00E4BB42%7D')/setData
@@ -379,7 +379,7 @@ workbook-session-id: {session-id}
 { "sourceData": "A1:C4", "seriesBy": "Auto" }
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -389,7 +389,7 @@ HTTP code: 204 No Content
 
 #### <a name="get-list-of-tables"></a>Получение списка таблиц 
 
-Запросить
+Запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJB6K563VVUU2ZC2FJBAHLSZZQXL/workbook/worksheets('%7B00000000-0001-0000-0000-000000000000%7D')/tables
@@ -398,7 +398,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -407,7 +407,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="create-table"></a>Создание таблицы
 
-Запросить
+Запрос
 <!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables/$/add
@@ -418,7 +418,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "hasHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
@@ -437,7 +437,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="update-table"></a>Обновление таблицы
 
-Запросить
+Запрос
 <!-- { "blockType": "ignored" } -->
 ```http 
 PATCH /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')
@@ -448,7 +448,7 @@ workbook-session-id: {session-id}
 { "name": "NewTableName", "showHeaders": true, "showTotals": false, "style": "TableStyleMedium4" }
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK
@@ -466,7 +466,7 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="get-list-of-table-rows"></a>Получение списка строк таблицы
-Запросить 
+Запрос 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -475,7 +475,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ
+Отклик
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -557,7 +557,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="get-list-of-table-columns"></a>Получение списка столбцов таблицы
 
-Запросить
+Запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns
@@ -565,7 +565,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ 
+Отклик 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -669,7 +669,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-table-row"></a>Добавление строки таблицы
 
-Запросить
+Запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows
@@ -680,7 +680,7 @@ workbook-session-id: {session-id}
 { "values": [ [ "Jan-15-2016", "49", "37" ] ], "index": null }
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 201 Created
@@ -702,7 +702,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="add-a-table-column"></a>Добавление столбца таблицы 
 
-Запросить
+Запрос
 <!-- { "blockType": "ignored" } -->
 ```http 
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('2')/Columns
@@ -713,7 +713,7 @@ accept: application/Json
 { "values": [ [ "Status" ], [ "Open" ], [ "Closed" ] ], "index": 2 }
 ```
 
-Ответ 
+Отклик 
 
 <!-- { "blockType": "ignored" } -->
 ```http 
@@ -742,7 +742,7 @@ content-type: application/json;odata.metadata
 
 #### <a name="delete-table-row"></a>Удаление строки таблицы
 
-Запросить
+Запрос
 <!-- { "blockType": "ignored" } -->
 ```http  
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Rows/$/ItemAt(index=6)
@@ -750,14 +750,14 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 #### <a name="delete-table-column"></a>Удаление столбца таблицы 
-Запросить
+Запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('4')/Columns('3')
@@ -765,14 +765,14 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 #### <a name="convert-table-to-range"></a>Преобразование таблицы в диапазон 
-Запросить
+Запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJDYBLIGAE7G5FE3I4VO2XP7BLU4/workbook/tables('1')/convertToRange
@@ -780,7 +780,7 @@ authorization: Bearer {access-token}
 workbook-session-id: {session-id}
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 200 OK 
@@ -788,7 +788,7 @@ content-type: application/json;odata.metadata
 ```
 
 #### <a name="table-sort"></a>Сортировка таблицы
-Запросить
+Запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/sort/apply
@@ -805,14 +805,14 @@ workbook-session-id: {session-id}
 ```
 
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
 ```
 
 #### <a name="table-filter"></a>Фильтрация таблицы
-Запросить
+Запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/apply
@@ -830,7 +830,7 @@ workbook-session-id: {session-id}
 }
 ```
 
-Ответ
+Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP code: 204 No Content
@@ -838,7 +838,7 @@ HTTP code: 204 No Content
 
 
 #### <a name="clear-filter"></a>Очистка фильтра
-Запросить
+Запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /{version}/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/worksheets('Sheet15799')/tables('table2')/columns(id='2')/filter/clear
@@ -1326,5 +1326,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="whats-new"></a>Новые возможности
-Узнайте о [последних новых возможностях и обновлениях](/graph/whats-new-overview) для этого набора API.
+## <a name="whats-new"></a>Что нового
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
+
+

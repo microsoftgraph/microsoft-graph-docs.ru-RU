@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: db234801ed4f4a1f1599d249d95f17b92a1f8afb
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: b530adba26b7d843758650dfcf437449bf1065ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215891"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027331"
 ---
 # <a name="trustframeworkkeyset-getactivekey"></a>Трустфрамеворккэйсет: Жетактивекэй
 
@@ -36,7 +36,7 @@ ms.locfileid: "43215891"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /trustFramework/keySets/{id}/getActiveKey
+GET /trustFramework/keySets/{id}/getActiveKey
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -45,11 +45,11 @@ POST /trustFramework/keySets/{id}/getActiveKey
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект [трустфрамеворккэй](../resources/trustframeworkkey.md) в тексте отклика.
 
@@ -66,7 +66,7 @@ POST /trustFramework/keySets/{id}/getActiveKey
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
+GET https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/trustframeworkkeyset-getactivekey-csharp-snippets.md)]
@@ -120,3 +120,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

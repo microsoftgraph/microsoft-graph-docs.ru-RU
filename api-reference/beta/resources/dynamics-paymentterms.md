@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: cf6917b724f9e35735d63d1cda13c01d6f9003bf
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1e9e7951da79d524002f004410ef6939d7be5b99
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42503602"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027085"
 ---
 # <a name="paymentterms-resource-type"></a>Тип ресурса Пайменттермс
 
@@ -44,7 +44,7 @@ ms.locfileid: "42503602"
 |lastModifiedDateTime          |datetime|Дата и время последнего изменения Пайменттермс. Только для чтения.|  
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -65,3 +65,5 @@ ms.locfileid: "42503602"
 }
 
 ```
+
+

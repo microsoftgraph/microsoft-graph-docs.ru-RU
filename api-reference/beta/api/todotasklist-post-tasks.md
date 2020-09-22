@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 14ad2ad47dd69d3f7e1408e55e82ff427b2a9fdc
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 82cc4f2320e723eb159711573aa4649f177053fb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843025"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027477"
 ---
 # <a name="create-todotask"></a>Создание Тодотаск
 Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -144,4 +144,6 @@ Content-Type: application/json
         }]
 }
 ```
+
+
 

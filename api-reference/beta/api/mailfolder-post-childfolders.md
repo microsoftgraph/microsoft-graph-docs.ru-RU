@@ -1,18 +1,18 @@
 ---
-title: Создание mailFolder
+title: Создание объекта mailFolder
 description: Используйте этот API для создания нового дочернего элемента mailFolder.
 author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 250c5097afc35222a18f17a342ecb2a70a12d0f3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1c7c85ecbd45fcb74cb57955283245fd9c0dac2f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443374"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027792"
 ---
-# <a name="create-mailfolder"></a>Создание mailFolder
+# <a name="create-mailfolder"></a>Создание объекта mailFolder
 
 Пространство имен: microsoft.graph
 
@@ -48,7 +48,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 | Авторизация | `Bearer {token}`. Обязательно. |
 | Content-Type | `application/json`. Обязательно. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Предоставьте в тексте запроса объект JSON с указанными ниже параметрами. **displayName** — это единственное доступное для записи свойство объекта [MailFolder](../resources/mailfolder.md).
 
@@ -58,7 +58,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [mailFolder](../resources/mailfolder.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [mailFolder](../resources/mailfolder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -135,3 +135,5 @@ Content-length: 179
   ]
 }
 -->
+
+

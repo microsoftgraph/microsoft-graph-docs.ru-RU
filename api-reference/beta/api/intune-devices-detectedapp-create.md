@@ -3,14 +3,14 @@ title: Создание объекта detectedApp
 description: Создание объекта detectedApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8cbb1ec1e0e45ae8f8ba7d910a2bb6314acabc9a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3cb167fe8e4643d22ffa814ae2d080b665e3b86d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43426611"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027939"
 ---
 # <a name="create-detectedapp"></a>Создание объекта detectedApp
 
@@ -44,10 +44,10 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта detectedApp в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта detectedApp.
@@ -55,7 +55,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для обнаруженного приложения. Он создается Intune автоматически при создании приложения. Только для чтения.|
-|displayName|Строка|Имя обнаруженного приложения. Только для чтения|
+|displayName|String|Имя обнаруженного приложения. Только для чтения|
 |version|String|Версия обнаруженного приложения. Только для чтения|
 |sizeInByte|Int64|Размер обнаруженного приложения в байтах. Только для чтения|
 |deviceCount|Int32|Количество устройств, на которых успешно установлено это приложение.|
@@ -99,6 +99,9 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
+
+
+
 
 
 

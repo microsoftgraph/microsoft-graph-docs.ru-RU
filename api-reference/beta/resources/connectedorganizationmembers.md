@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7eddc19d3d802174ca015877ec362ec742f2e791
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: d2df6b91ebcbc65f03ee39103768bdfad04df62f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509805"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027197"
 ---
 # <a name="connectedorganizationmembers-complex-type"></a>сложный тип Коннектедорганизатионмемберс
 
@@ -26,9 +26,9 @@ ms.locfileid: "46509805"
 
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| id |Строка | Идентификатор подключенной Организации в управлении обслуживанием. |
+| id |String | Идентификатор подключенной Организации в управлении обслуживанием. |
 | description |String | Имя подключенной Организации. Только для чтения. |
-| Создание резервной копии | Логический | Не используется в данный момент. |
+| Создание резервной копии | Boolean | Не используется в данный момент. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -60,3 +60,5 @@ ms.locfileid: "46509805"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

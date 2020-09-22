@@ -5,12 +5,12 @@ author: japere
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 864d76d7e6a7cb3724a91a753e5c5198e274780a
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: 3e42bc42c1989e530f7b7f307da3963407ded112
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556179"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027169"
 ---
 # <a name="connector-resource-type"></a>Тип ресурса Connector
 
@@ -24,17 +24,17 @@ ms.locfileid: "44556179"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список соединителей](../api/connector-list.md) | Коллекция [соединителей](connector.md) | Получение списка объектов Connector. | 
+| [Перечисление соединителей](../api/connector-list.md) | Коллекция [соединителей](connector.md) | Получение списка объектов Connector. | 
 | [Получение соединителя](../api/connector-get.md) | [PDIF](connector.md) | Чтение свойств и связей объекта Connector. |
 | [Перечисление memberOf](../api/connector-list-memberof.md) | Коллекция [коннекторграуп](connectorgroup.md) | Список коллекций объектов Коннекторграуп, участником которых является соединитель. |
-| [Добавление соединителя в Коннекторграуп](../api/connector-post-memberof.md)| [connectorGroup](connectorgroup.md) | Добавление соединителя в Коннекторграуп. |
+| [Добавление соединителя для connectorGroup](../api/connector-post-memberof.md)| [connectorGroup](connectorgroup.md) | Добавление соединителя в Коннекторграуп. |
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |екстерналип|String| Внешний IP-адрес, обнаруженный сервером соединителей. Только для чтения. |
-|id|Строка| Уникальный идентификатор соединителя. Только для чтения. |
+|id|String| Уникальный идентификатор соединителя. Только для чтения. |
 |ИмяКомпьютера|String| Имя компьютера, на котором установлен и запущен соединитель. |
 |status|string| Указывает состояние соединителя. Возможные значения: `active`, `inactive`. Только для чтения. |
 
@@ -78,3 +78,5 @@ ms.locfileid: "44556179"
   "suppressions": []
 }
 -->
+
+

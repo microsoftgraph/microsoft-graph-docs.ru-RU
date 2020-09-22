@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 956e05500dc47e5667ac63065480a84777414871
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: b6332882a72130e7088bf8934c79ae6e76f1aa4c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219020"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027281"
 ---
 # <a name="update-trustframeworkkeyset"></a>Обновление Трустфрамеворккэйсет
 
@@ -52,7 +52,7 @@ PUT /trustFramework/keySets/{id}
 |:-------------|:------------|:------------|
 |переключен|Коллекция [трустфрамеворккэй](../resources/trustframeworkkey.md)| Обновляет коллекцию Трустфрамеворккэйс|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [трустфрамеворккэйсет](../resources/trustframeworkkeyset.md) в тексте отклика.
 
@@ -164,3 +164,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

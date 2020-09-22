@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e4056b533f27b4cac890f26a386c5c4b0455670d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4f1ad719afb21a6e8fca724171029d4d924e4fd2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447246"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027673"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -106,7 +106,7 @@ Content-Type: application/json
 ---
 
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -159,3 +159,5 @@ Content-length: 272
   ]
 }
 -->
+
+

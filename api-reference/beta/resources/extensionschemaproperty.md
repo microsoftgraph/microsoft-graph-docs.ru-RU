@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: keylimesoda
-ms.openlocfilehash: e28642e12e7c9bb52b16c21e775e91562de1ebdb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c0bb3a423983b70066e2451a5029f4eaf2acaebd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423680"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026945"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Тип ресурса extensionSchemaProperty
 
@@ -24,7 +24,7 @@ ms.locfileid: "43423680"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|name|Строка| Имя строго типизированного свойства, определенного как часть расширения схемы.|
+|name|String| Имя строго типизированного свойства, определенного как часть расширения схемы.|
 |type|String| Тип свойства, определенного в качестве части расширения схемы.  Разрешенные значения: *Binary, Boolean, DateTime, Integer* или *String*.  Дополнительные сведения см. в приведенной ниже таблице.|
 
 #### <a name="supported-property-data-types"></a>Поддерживаемые типы данных свойств 
@@ -69,3 +69,5 @@ ms.locfileid: "43423680"
   "suppressions": []
 }
 -->
+
+

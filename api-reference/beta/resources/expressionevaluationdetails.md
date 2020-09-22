@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 347e356bda19228ea8b3738b5bf8b72f57da95f7
-ms.sourcegitcommit: 62c900af626e46439d949462f09061cc5c41d6ff
+ms.openlocfilehash: f2d14d19bee60581c65d43e81b5ec69acc53df0a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44272850"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026978"
 ---
 # <a name="expressionevaluationdetails-resource-type"></a>Тип ресурса Експрессионевалуатиондетаилс
 
@@ -25,9 +25,9 @@ ms.locfileid: "44272850"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 | выражение | String | Представляет выражение, которое было оценено. |
-| експрессионевалуатиондетаилс | Коллекция Експрессионевалуатиондетаилс | Представляет сведения об оценке выражения. |
-| експрессионресулт | Логический | Представляет значение результата текущего выражения. |
-| пропертитоевалуате | [пропертитоевалуате](propertytoevaluate.md) | Определяет имя свойства и значение этого свойства. |
+| expressionEvaluationDetails | Коллекция Експрессионевалуатиондетаилс | Представляет сведения об оценке выражения. |
+| експрессионресулт | Boolean | Представляет значение результата текущего выражения. |
+| propertyToEvaluate | [propertyToEvaluate](propertytoevaluate.md) | Определяет имя свойства и значение этого свойства. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -60,3 +60,5 @@ ms.locfileid: "44272850"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

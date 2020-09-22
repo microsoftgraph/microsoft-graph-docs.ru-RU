@@ -3,14 +3,14 @@ title: Тип ресурса Усераппинсталлстатус
 description: Содержит свойства для состояния установки пользователя.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ccc47a51273038be692d2a508d5f6adba73f9f40
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ccae01f74466c839e602d5f7b5c62536fc409a15
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43462528"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026847"
 ---
 # <a name="userappinstallstatus-resource-type"></a>Тип ресурса Усераппинсталлстатус
 
@@ -34,14 +34,14 @@ ms.locfileid: "43462528"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |userName|String|Имя пользователя.|
 |userPrincipalName|String|Имя участника пользователя.|
 |installedDeviceCount|Int32|Количество установленных устройств.|
 |failedDeviceCount|Int32|Количество устройств со сбоями.|
 |notInstalledDeviceCount|Int32|Количество не установленных устройств.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |программы|[mobileApp](../resources/intune-shared-mobileapp.md);|Ссылка навигации на мобильное приложение.|
@@ -66,6 +66,9 @@ ms.locfileid: "43462528"
   "notInstalledDeviceCount": 1024
 }
 ```
+
+
+
 
 
 

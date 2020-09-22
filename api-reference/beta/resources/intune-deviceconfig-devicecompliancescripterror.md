@@ -3,14 +3,14 @@ title: Тип ресурса Девицекомплианцескриптерр�
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7d37e750d60d50a166d7c9d89f3049959f33e5da
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: c0ea8bf7c882d7a31c4f4477c7d7b74994676497
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44789436"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026784"
 ---
 # <a name="devicecompliancescripterror-resource-type"></a>Тип ресурса Девицекомплианцескриптеррор
 
@@ -28,7 +28,7 @@ ms.locfileid: "44789436"
 |code|[code](../resources/intune-deviceconfig-code.md)|Код ошибки. Допустимые значения:,,,,,,,,,,, `none` `jsonFileInvalid` `jsonFileMissing` `jsonFileTooLarge` `rulesMissing` `duplicateRules` `tooManyRulesSpecified` `operatorMissing` `operatorNotSupported` `datatypeMissing` `datatypeNotSupported` `operatorDataTypeCombinationNotSupported` `moreInfoUriMissing` , `moreInfoUriInvalid` , `moreInfoUriTooLarge` , `descriptionMissing` `descriptionInvalid` `descriptionTooLarge` `titleMissing` `titleInvalid` `titleTooLarge` `operandMissing` `operandInvalid` `operandTooLarge` `settingNameMissing` `settingNameInvalid` `settingNameTooLarge` `englishLocaleMissing` `duplicateLocales` `unrecognizedLocale` `unknown` `remediationStringsMissing` ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.|
 |message|String|Сообщение об ошибке.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,6 +45,9 @@ ms.locfileid: "44789436"
   "message": "String"
 }
 ```
+
+
+
 
 
 

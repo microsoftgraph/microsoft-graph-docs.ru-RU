@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1e98395b627489b73a3638c88afc91b9edd86e54
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a161fcd8dea1084ebb004e054daa220c85d83d26
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43442986"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027120"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>Тип ресурса Директорйобжектпартнерреференце
 
@@ -25,8 +25,8 @@ ms.locfileid: "43442986"
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
 |description|String| Описание возвращаемого объекта. Только для чтения. |
-|displayName|Строка| Имя возвращаемого объекта каталога, например Group или Application. Только для чтения. |
-|екстерналпартнертенантид|GUID| Идентификатор клиента для партнерского клиента. Только для чтения. |
+|displayName|String| Имя возвращаемого объекта каталога, например Group или Application. Только для чтения. |
+|екстерналпартнертенантид|Guid| Идентификатор клиента для партнерского клиента. Только для чтения. |
 |id|String| Уникальный идентификатор ресурса. Наследуется от [directoryObject](directoryobject.md). Только для чтения. |
 |objectType|String| Тип упоминаемого объекта в партнерской клиенте. Только для чтения. |
 
@@ -66,3 +66,5 @@ ms.locfileid: "43442986"
   "suppressions": []
 }
 -->
+
+

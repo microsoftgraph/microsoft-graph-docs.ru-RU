@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ff827f53b23658adf71ed97d6193d0174a48b3fb
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 3316936c755ec05cbfad9d1fe9876fc14a2e1ba4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181801"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027092"
 ---
 # <a name="directoryroletemplate-resource-type"></a>Тип ресурса directoryRoleTemplate
 
@@ -31,10 +31,10 @@ ms.locfileid: "43181801"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |description|String|Описание, которое нужно задать для роли каталога. Только для чтения.|
-|displayName|Строка|Отображаемое имя, которое нужно назначить роли каталога. Только для чтения. |
+|displayName|String|Отображаемое имя, которое нужно назначить роли каталога. Только для чтения. |
 |id|String|Уникальный идентификатор шаблона. Наследуется из [directoryObject](directoryobject.md). Следует указать свойство **id** для шаблона роли каталога, чтобы свойство **roleTemplateId** в запросе POST активировало [directoryRole](directoryrole.md) на клиенте. Ключ, значение null не допускается. Только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
@@ -73,3 +73,5 @@ ms.locfileid: "43181801"
   "suppressions": []
 }
 -->
+
+

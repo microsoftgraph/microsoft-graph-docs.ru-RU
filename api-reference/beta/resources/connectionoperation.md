@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 21d962bbbfee64c51f11cf1ac3f5e7de2c0497e9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aed9574ba6fd5e8b2c47b38ee4eebb3326cf2a37
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507487"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027190"
 ---
 # <a name="connectionoperation-resource-type"></a>Тип ресурса Коннектионоператион
 
@@ -32,11 +32,11 @@ ms.locfileid: "42507487"
 
 | Свойство | Тип                          | Описание                       |
 |:---------|:------------------------------|:----------------------------------|
-| error    | [еррордетаил](errordetail.md) | Если `status` это `failed`так, предоставляет дополнительные сведения об ошибке, вызвавшей сбой. |
-| id       | Строка                        | Уникальный идентификатор для Коннектионоператион. Только для чтения. |
+| error    | [еррордетаил](errordetail.md) | Если `status` это так `failed` , предоставляет дополнительные сведения об ошибке, вызвавшей сбой. |
+| id       | String                        | Уникальный идентификатор для Коннектионоператион. Только для чтения. |
 | status   | string                        | Указывает состояние асинхронной операции. Возможные значения: `unspecified`, `inprogress`, `completed`, `failed`. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Нет
 
@@ -71,3 +71,5 @@ ms.locfileid: "42507487"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

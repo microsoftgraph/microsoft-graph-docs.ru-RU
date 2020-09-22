@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: resourcePageType
-ms.openlocfilehash: 94ebd10ef87946b5333ec5a06d5edccadc298158
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d45153a08572f32f29128fd4d3f51638d71c951b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42503574"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027071"
 ---
 # <a name="shipmentmethods-resource-type"></a>Тип ресурса Шипментмесодс
 
@@ -40,7 +40,7 @@ ms.locfileid: "42503574"
 |lastModifiedDateTime|datetime|Дата и время последнего изменения метода отгрузки. Только для чтения.|  
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -56,5 +56,7 @@ ms.locfileid: "42503574"
 }
 
 ```
+
+
 
 

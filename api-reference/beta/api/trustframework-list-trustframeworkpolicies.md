@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 439573b524465d540e8c167ab9b3961d2c770f31
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d3f15fe2462434cfca0dd68f6d797627b66f1013
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215955"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027393"
 ---
 # <a name="list-trustframeworkpolicies"></a>Список ТрустфрамеворкполиЦиес
 
@@ -48,13 +48,13 @@ GET /trustFramework/policies/
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [ТРУСТФРАМЕВОРКПОЛИЦИ](../resources/trustframeworkpolicy.md) в представлении JSON в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [трустфрамеворкполици](../resources/trustframeworkpolicy.md) в представлении JSON в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -124,3 +124,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

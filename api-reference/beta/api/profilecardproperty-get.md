@@ -1,18 +1,18 @@
 ---
-title: Получение Профилекардпроперти
+title: Получение ресурса profileCardProperty
 description: Получение свойств и связей объекта Профилекардпроперти.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1047159a1e2f0a481796004d461b00a29aa88482
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: aa6f26a0d5ca753d78fb60b8531b6d7bf9e4ab9f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123845"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027536"
 ---
-# <a name="get-profilecardproperty"></a>Получение Профилекардпроперти
+# <a name="get-profilecardproperty"></a>Получение ресурса profileCardProperty
 
 Пространство имен: microsoft.graph
 
@@ -42,7 +42,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/prof
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -129,3 +129,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

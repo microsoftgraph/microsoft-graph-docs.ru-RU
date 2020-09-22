@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0f99c4125cd64f02421df01692b1dc19ee7c6605
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 940ea0af79bffe931b19148c45e36f0a1716e0be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43464248"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027687"
 ---
 # <a name="update-mailsearchfolder"></a>Обновление Маилсеарчфолдер
 
@@ -48,11 +48,11 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | displayName | String | Отображаемое имя [mailFolder](../resources/mailfolder.md).|
-| инклуденестедфолдерс | Boolean | Способ обхода иерархии папок почтовых ящиков. `true`означает, что следует выполнить глубокий поиск, а `false` это означает, что вместо этого следует выполнить неглубокий Поиск. |
-| саурцефолдеридс | Коллекция объектов string | Папки почтовых ящиков, которые должны быть mined. |
+| инклуденестедфолдерс | Boolean | Способ обхода иерархии папок почтовых ящиков. `true` означает, что следует выполнить глубокий поиск, а это `false` означает, что вместо этого следует выполнить неглубокий Поиск. |
+| саурцефолдеридс | Коллекция String | Папки почтовых ящиков, которые должны быть mined. |
 | филтеркуери | String | Запрос OData для фильтрации сообщений. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [mailFolder](../resources/mailfolder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -132,3 +132,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

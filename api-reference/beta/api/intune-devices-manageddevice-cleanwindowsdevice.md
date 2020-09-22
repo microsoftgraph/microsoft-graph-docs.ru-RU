@@ -3,14 +3,14 @@ title: Действие cleanWindowsDevice
 description: Очистка устройства с Windows
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b6322a473d30a8a032448aacbe4f25c86c4fca7
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 826a9f3f872cdaf852dbd20fded449a7b1ed84b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792326"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027827"
 ---
 # <a name="cleanwindowsdevice-action"></a>Действие cleanWindowsDevice
 
@@ -49,10 +49,10 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -86,6 +86,9 @@ Content-length: 28
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

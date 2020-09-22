@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f5d53e3a24ad8e99c22d61bc6a4d519888c4aafd
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 95cce32d4336c34a61d6845b74e6e428d1774d21
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47311292"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027213"
 ---
 # <a name="connectedorganization-resource-type"></a>Тип ресурса Коннектедорганизатион
 
@@ -41,12 +41,12 @@ ms.locfileid: "47311292"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |createdBy|String|Имя участника-пользователя, создавшего этот ресурс. Только для чтения.|
-|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
+|createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |description|String|Описание подключенной Организации.|
 |displayName|String|Отображаемое имя подключенной Организации.|
 |id|String| Только для чтения.|
 |модифиедби|String|Имя участника-пользователя, который последним изменил этот ресурс. Только для чтения.|
-|modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
+|modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |state|коннектедорганизатионстате|Состояние подключенной Организации определяет, применимы ли политики назначения с типом области запрашивающего `AllConfiguredConnectedOrganizationSubjects` . Возможные значения: `configured`, `proposed`.|
 
 ## <a name="relationships"></a>Отношения
@@ -99,3 +99,5 @@ ms.locfileid: "47311292"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

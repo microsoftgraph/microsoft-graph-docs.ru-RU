@@ -3,14 +3,14 @@ title: действие Креатедевицелогколлектионрек
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15deac0383992f2045599aff34d097c3555be7f0
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 57f35c5c1744d6c8f0633b6e1c01d52a3d9185f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45124301"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027818"
 ---
 # <a name="createdevicelogcollectionrequest-action"></a>действие Креатедевицелогколлектионрекуест
 
@@ -49,7 +49,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -59,7 +59,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|TemplateType — тип|[девицелогколлектионрекуест](../resources/intune-devices-devicelogcollectionrequest.md)|Н/Д|
+|TemplateType — тип|[deviceLogCollectionRequest](../resources/intune-devices-devicelogcollectionrequest.md)|Пока не задокументировано.|
 
 
 
@@ -107,6 +107,9 @@ Content-Length: 567
   }
 }
 ```
+
+
+
 
 
 

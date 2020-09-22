@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b3e06b35d838817e3214ea10d22c11fe8d19d59f
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 7975d6834b162a4ced71ced6886faa8cee797159
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43215919"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027365"
 ---
 # <a name="create-trustframeworkpolicy"></a>Создание Трустфрамеворкполици
 
@@ -46,11 +46,11 @@ POST /trustFramework/policies
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|Application/XML. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте XML-представление объекта [трустфрамеворкполици](../resources/trustframeworkpolicy.md) . Необходимый тип контента — `application/xml`.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [трустфрамеворкполици](../resources/trustframeworkpolicy.md) в тексте отклика. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
@@ -99,3 +99,5 @@ Location: /trustFramework/policies/B2C_1A_SocialAndLocalAccounts_Base/
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
