@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: krbain
-ms.openlocfilehash: bf27255c2e5d52cfa1b0fb6529dc7d4fa949deda
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ab76cced936ebaa9f69a7fe7d4a2c2c4909475d7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808643"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019490"
 ---
 # <a name="serviceplaninfo-resource-type"></a>Тип ресурса servicePlanInfo
 
@@ -29,7 +29,7 @@ ms.locfileid: "46808643"
 |provisioningStatus|String|Состояние подготовки плана обслуживания. Возможные значения:<br/>"Success" — служба полностью подготовлена.<br/>"Disabled" — служба отключена.<br/>"PendingInput" — служба еще не подготовлена; ожидается подтверждение службы.<br/>"Пендингактиватион" — служба подготовлена, но требует явной активации администратором (например, Intune_O365 план обслуживания).<br/>"Пендингпровисионинг" — Корпорация Майкрософт добавила новую службу в SKU продукта и еще не активировалась в клиенте.|
 |Тег|String|Объект, которому можно назначить план обслуживания. Возможные значения:<br/>"User" — план обслуживания можно назначить отдельным пользователям.<br/>"Company" — план обслуживания можно назначить всему клиенту.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -63,3 +63,5 @@ ms.locfileid: "46808643"
   "suppressions": []
 }
 -->
+
+

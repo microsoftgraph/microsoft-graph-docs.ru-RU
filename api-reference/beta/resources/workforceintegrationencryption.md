@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c2d24371a0a999069d80a9ad86afd48ac9e68d38
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 15feb2097a3a7bf36092070cc2af4841d2aa3839
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519080"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019399"
 ---
 # <a name="workforceintegrationencryption-resource-type"></a>Тип ресурса Воркфорцеинтегратионенкриптион
 
@@ -56,3 +56,5 @@ ms.locfileid: "42519080"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

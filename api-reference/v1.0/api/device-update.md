@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6ad7775e813566b9ef29280e0a85b5f85a5d40ae
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6e33658c8072f6f2543993fe97e6064c78ceac99
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466684"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019357"
 ---
 # <a name="update-device"></a>Обновление устройства
 
@@ -115,3 +115,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

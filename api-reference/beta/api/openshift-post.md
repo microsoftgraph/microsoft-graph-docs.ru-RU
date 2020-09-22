@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a89971d91bf1a8c77e2c14b5190fa7ef0dfdc24b
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 5f9b02e5463c5215e67aef206d5876400ef275a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44153506"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019952"
 ---
 # <a name="create-openshift"></a>Создание Опеншифт
 
@@ -163,3 +163,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

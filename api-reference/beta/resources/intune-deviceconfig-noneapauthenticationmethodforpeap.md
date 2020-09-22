@@ -3,14 +3,14 @@ title: тип перечисления nonEapAuthenticationMethodForPeap
 description: Методы, отличные от EAP, для проверки подлинности, когда PEAP — выбранный тип EAP.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 738adf4a128c7b8f1fac54f590ad878871498569
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7513c4b2609072de3b9324e457a2c34b5ca21493
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460978"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019539"
 ---
 # <a name="noneapauthenticationmethodforpeap-enum-type"></a>тип перечисления nonEapAuthenticationMethodForPeap
 
@@ -26,7 +26,10 @@ ms.locfileid: "43460978"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|нуль|Нет.|
-|микрософтчапверсионтво|1,1|Microsoft CHAP версии 2 (MS-CHAP v2).|
+|микрософтчапверсионтво|1 |Microsoft CHAP версии 2 (MS-CHAP v2).|
+
+
+
 
 
 

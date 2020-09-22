@@ -5,12 +5,12 @@ description: Получение списка входов пользовател
 localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3db3b7606d4e8bf95a9e01ef097be3d1dfacdbef
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 6a9ff39ef995d60a541b94bc1982dc57adbab04c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674003"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019707"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
@@ -93,7 +93,7 @@ GET auditLogs/signIns
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -380,3 +380,5 @@ Content-length: 211
   ]
 }
 ```
+
+

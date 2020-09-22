@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bc65d419addf58bbf7b0a715c61538491777a5ec
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
+ms.openlocfilehash: 9308f200b410a1f049aa341682866c198448f767
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "42456420"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019987"
 ---
 # <a name="list-openshift"></a>Список Опеншифт
 
@@ -40,7 +40,7 @@ GET /teams/{id}/schedule/openShifts
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
   
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -166,3 +166,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

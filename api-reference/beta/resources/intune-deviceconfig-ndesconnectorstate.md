@@ -3,14 +3,14 @@ title: тип перечисления Ндесконнекторстате
 description: Текущее состояние соединителя NDES Connector.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 603518adb55c92e74beccfb2bda754137287834c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5fe1b49685052f4446f04840c867fb5f119f5e8f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437090"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019560"
 ---
 # <a name="ndesconnectorstate-enum-type"></a>тип перечисления Ндесконнекторстате
 
@@ -26,8 +26,11 @@ ms.locfileid: "43437090"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|нуль|Для этого соединителя пока недоступно состояние.|
-|ASP|1,1|Соединитель NDES Connector недавно подключился|
-|отсутств|2|Нет недавних действий для соединителя NDES Connector|
+|ASP|1 |Соединитель NDES Connector недавно подключился|
+|отсутств|2 |Нет недавних действий для соединителя NDES Connector|
+
+
+
 
 
 

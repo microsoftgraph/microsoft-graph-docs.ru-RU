@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: ab5d3101b1b9cabf8843d3726f036de74bf3a258
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2f51b8a19992739d4659b41577826d5a3b024972
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519101"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019414"
 ---
 # <a name="workbookworksheetprotection-resource-type"></a>Тип ресурса Воркбукворкшитпротектион
 
@@ -35,7 +35,7 @@ ms.locfileid: "42519101"
 |options|[воркбукворкшитпротектионоптионс](workbookworksheetprotectionoptions.md)|Параметры защиты листа. Только для чтения.|
 |protected|boolean|Указывает, защищен ли лист.  Только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
@@ -69,3 +69,5 @@ ms.locfileid: "42519101"
   "suppressions": []
 }
 -->
+
+

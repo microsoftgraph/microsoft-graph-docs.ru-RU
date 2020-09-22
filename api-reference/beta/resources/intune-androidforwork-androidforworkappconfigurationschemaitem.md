@@ -3,14 +3,14 @@ title: Тип ресурса androidForWorkAppConfigurationSchemaItem
 description: Один элемент конфигурации в схеме настраиваемой конфигурации Android for Work.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8ed09ee79b8a5607f4aec0647ed7d221ee407e5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 13af3b581498a4285773b2fda02d5596127c3012
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43459277"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019672"
 ---
 # <a name="androidforworkappconfigurationschemaitem-resource-type"></a>Тип ресурса androidForWorkAppConfigurationSchemaItem
 
@@ -26,7 +26,7 @@ ms.locfileid: "43459277"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |schemaItemKey|String|Уникальный ключ, используемый приложением для определения элемента.|
-|displayName|Строка|Понятное человеку имя.|
+|displayName|String|Понятное человеку имя.|
 |description|String|Описание компонентов приложения, которыми управляет элемент.|
 |defaultBoolValue|Boolean|Значение по умолчанию для элементов логического типа, если указано разработчиком приложения.|
 |defaultIntValue|Int32|Значение по умолчанию для элементов целочисленного типа, если указано разработчиком приложения.|
@@ -35,7 +35,7 @@ ms.locfileid: "43459277"
 |dataType|[андроидфорворкаппконфигуратионсчемаитемдататипе](../resources/intune-androidforwork-androidforworkappconfigurationschemaitemdatatype.md)|Тип значения, который описывает этот элемент. Возможные значения: `bool`, `integer`, `string`, `choice`, `multiselect`, `bundle`, `bundleArray`, `hidden`.|
 |selections|Коллекция объектов [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Список понятных человеку пар имя-значение для допустимых значений, которые можно задать для этого элемента (только для элементов одиночного и множественного выбора).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -67,6 +67,9 @@ ms.locfileid: "43459277"
   ]
 }
 ```
+
+
+
 
 
 

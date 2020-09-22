@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ae5ff61e8851aa614f856f1f85a9544c101ac54f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ba9f78f03f8de24b35ec723058929777356e3405
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450910"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019845"
 ---
 # <a name="update-outlook-category"></a>Обновление категории Outlook
 
@@ -41,7 +41,7 @@ PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -116,3 +116,5 @@ Content-length: 251
   ]
 }
 -->
+
+

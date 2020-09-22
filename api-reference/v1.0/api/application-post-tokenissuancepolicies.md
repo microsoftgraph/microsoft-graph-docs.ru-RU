@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ce95399a30481d3760795e44fb2ad33a6e0fd48d
-ms.sourcegitcommit: 5575e6607817ba23ceb0b01e2f5fc81e58bdcd1f
+ms.openlocfilehash: 00421d37537de006f33459644e796b6cb7bbcb78
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43806797"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019353"
 ---
 # <a name="assign-tokenissuancepolicy"></a>Назначить tokenIssuancePolicy
 
@@ -43,9 +43,9 @@ POST /applications/{id}/tokenIssuancePolicies/$ref
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите идентификатор объекта [токениссуанцеполици](../resources/tokenissuancepolicy.md) (с помощью `@odata.id` свойства), который должен быть назначен приложению.
+В тексте запроса укажите идентификатор объекта [токениссуанцеполици](../resources/tokenissuancepolicy.md) (с помощью `@odata.id` Свойства), который должен быть назначен приложению.
 
 ## <a name="response"></a>Отклик
 
@@ -91,7 +91,7 @@ Content-Type: application/json
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 
@@ -113,3 +113,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

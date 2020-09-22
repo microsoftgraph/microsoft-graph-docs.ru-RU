@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9bbf5be71676b942a3df0174f781a0a6708493e2
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 7dde453f22ec6a37107f14a276e3f716a095e1f2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154334"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019700"
 ---
 # <a name="get-shiftpreferences"></a>Получение Шифтпреференцес
 
@@ -144,3 +144,5 @@ Content-length: 401
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 902b552a8fc6e178c3cef120ace4ea66d954812f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 60135908638b6cb3e956ca864e4b0a53da352489
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42456388"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019908"
 ---
 # <a name="openshiftchangerequest-decline"></a>Опеншифтчанжерекуест: отклонить
 
@@ -44,7 +44,7 @@ POST /teams/{id}/schedule/openShiftsChangeRequests/{openShiftChangeRequestId}/de
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -77,7 +77,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 <!-- {
@@ -99,3 +99,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 429a8db8829c3ca298a71f0d0793a659820e14f3
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: 38c52b40abb0a46e7c7504b8ba676191a62fb253
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849599"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019938"
 ---
 # <a name="get-open-extension"></a>Получение открытого расширения
 
@@ -24,9 +24,9 @@ ms.locfileid: "46849599"
 
 |**Сценарий GET**|**Поддерживаемые ресурсы**|**Текст ответа**|
 |:-----|:-----|:-----|
-|Получение определенного расширения из экземпляра известного ресурса.| [Административный](../resources/administrativeunit.md) [единица,](../resources/device.md) [устройство, событие,](../resources/event.md) [группа,](../resources/group.md) [событие группы,](../resources/event.md) [post,](../resources/post.md) [сообщение,](../resources/message.md) [организация,](../resources/organization.md) [персональный контакт,](../resources/contact.md) [задача,](../resources/todotask.md) [список задач](../resources/todotasklist.md) [user](../resources/user.md)  | Только открытое расширение.|
-|Получение экземпляра известного ресурса, дополненного определенным расширением.|Административное подразделение, устройство, событие, группа, событие группы, post, сообщение, организация, персональные контакты, пользователь, задачи, список задач. |Экземпляр известного ресурса, дополненный открытым расширением.|
-|Поиск экземпляров ресурсов и их дополнение определенным расширением. | Событие, событие группы, запись группы, сообщение, личный контакт, задача, список задач |Экземпляры ресурса, дополненные открытым расширением.|
+|Получение определенного расширения из экземпляра известного ресурса.| [Административная единица](../resources/administrativeunit.md), [устройство](../resources/device.md), [событие](../resources/event.md), [Группа](../resources/group.md), [событие группы](../resources/event.md), [Отправка по группе](../resources/post.md), [сообщение](../resources/message.md), [Организация](../resources/organization.md), [личный контакт](../resources/contact.md), [пользователь](../resources/user.md), [задача](../resources/todotask.md), [tasklist](../resources/todotasklist.md)  | Только открытое расширение.|
+|Получение экземпляра известного ресурса, дополненного определенным расширением.|Административная единица, устройство, событие, группа, событие группы, отправка по группе, сообщение, организация, личный контакт, пользователь, задача, список задач. |Экземпляр известного ресурса, дополненный открытым расширением.|
+|Поиск экземпляров ресурсов и их дополнение определенным расширением. | Событие, событие группы, отправка в группу, сообщение, личный контакт, задача, список задач |Экземпляры ресурса, дополненные открытым расширением.|
 
 ## <a name="permissions"></a>Разрешения
 
@@ -43,8 +43,8 @@ ms.locfileid: "46849599"
 | [organization](../resources/organization.md) | User.Read | Не поддерживается | Organization.Read.All |
 | [contact](../resources/contact.md) (личный контакт) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks. ReadWrite. ALL |
+| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -72,7 +72,7 @@ GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/extensions/{extens
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>Получение известного экземпляра ресурса с соответствующим расширением 
 
-Для типов ресурса, включаемого в класс event, group event, group post, message, contact, task, task list, вы можете использовать тот же запрос REST, что и при получении экземпляра ресурса, искать расширение, соответствующее свойству **идентификатора,** и дополнить экземпляр расширением. Отклик включает большинство свойств ресурса.
+Для событий групп Event, Group POST, Message, Personal Contact, Task, Task List Types можно использовать тот же запрос REST, что и при извлечении экземпляра ресурса, искать расширение, которое соответствует фильтру для свойства **ID** , и развертывать экземпляр с расширением. Отклик включает большинство свойств ресурса.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -549,3 +549,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

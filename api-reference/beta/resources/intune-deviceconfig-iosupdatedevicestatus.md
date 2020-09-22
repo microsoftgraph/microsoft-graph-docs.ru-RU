@@ -3,14 +3,14 @@ title: Тип ресурса iosUpdateDeviceStatus
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5648ac2e4061059c26a8587e35c3a6ed5f1a8be3
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: b1a0857663582d39707ba72ee5a9cbeb6c94ec8b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792207"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019553"
 ---
 # <a name="iosupdatedevicestatus-resource-type"></a>Тип ресурса iosUpdateDeviceStatus
 
@@ -48,7 +48,7 @@ ms.locfileid: "46792207"
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о политике.|
 |userPrincipalName|String|Имя участника-пользователя.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -77,6 +77,9 @@ ms.locfileid: "46792207"
   "userPrincipalName": "String"
 }
 ```
+
+
+
 
 
 

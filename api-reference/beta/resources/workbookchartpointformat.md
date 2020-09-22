@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 9e947fa02624f2c24ea6433dc2e62eb0da218308
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eeadc46135a7565a0c54361dab93ddfaefd45e66
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519283"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019448"
 ---
 # <a name="workbookchartpointformat-resource-type"></a>Тип ресурса Воркбукчартпоинтформат
 
@@ -21,13 +21,13 @@ ms.locfileid: "42519283"
 Представляет объект форматирования для точек диаграммы.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 Нет
 
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |fill|[воркбукчартфилл](workbookchartfill.md)|Представляет формат заливки диаграммы, включая сведения о форматировании фона. Только для чтения.|
@@ -65,3 +65,5 @@ ms.locfileid: "42519283"
   "suppressions": []
 }
 -->
+
+

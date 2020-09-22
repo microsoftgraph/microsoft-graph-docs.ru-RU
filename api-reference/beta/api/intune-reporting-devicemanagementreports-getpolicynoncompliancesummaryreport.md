@@ -3,14 +3,14 @@ title: действие Жетполицинонкомплианцесуммар
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b449828f9a2e2e7ca3f7dd359504fe2e7a36053e
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: c5d2cbb9457ec4fb9ed0a0a267f0a4aaff7ac935
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44178432"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019959"
 ---
 # <a name="getpolicynoncompliancesummaryreport-action"></a>действие Жетполицинонкомплианцесуммарирепорт
 
@@ -43,7 +43,7 @@ POST /deviceManagement/reports/getPolicyNonComplianceSummaryReport
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -61,7 +61,7 @@ POST /deviceManagement/reports/getPolicyNonComplianceSummaryReport
 |skip|Int32|Пока не задокументировано.|
 |top|Int32|Пока не задокументировано.|
 |sessionId|String|Пока не задокументировано.|
-|filter|String|Н/Д|
+|filter|String|Пока не задокументировано.|
 
 
 
@@ -108,6 +108,9 @@ Content-Length: 107
   "value": "Z2V0UG9saWN5Tm9uQ29tcGxpYW5jZVN1bW1hcnlSZXBvcnQgSW50dW5lIERvYyBTYW1wbGUgLTQzMjEwMjAyNg=="
 }
 ```
+
+
+
 
 
 

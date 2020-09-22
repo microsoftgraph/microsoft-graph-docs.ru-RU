@@ -3,14 +3,14 @@ title: Создание Виндовсдефендераппликатионко
 description: Создание нового объекта Виндовсдефендераппликатионконтролсупплементалполициассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 02b478f19ee13bdb02e0e49fc28a71e0e2b7b0c1
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: f5f5082ae14beff41308b6eaf6b26bafe4e406a1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791267"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019946"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicyassignment"></a>Создание Виндовсдефендераппликатионконтролсупплементалполициассигнмент
 
@@ -43,10 +43,10 @@ POST /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationCo
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Виндовсдефендераппликатионконтролсупплементалполициассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Виндовсдефендераппликатионконтролсупплементалполициассигнмент.
@@ -97,6 +97,9 @@ Content-Length: 417
   }
 }
 ```
+
+
+
 
 
 
