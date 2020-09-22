@@ -5,32 +5,32 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9bbf5be71676b942a3df0174f781a0a6708493e2
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: 7dde453f22ec6a37107f14a276e3f716a095e1f2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154334"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019700"
 ---
-# <a name="get-shiftpreferences"></a><span data-ttu-id="3b7ac-103">Получение Шифтпреференцес</span><span class="sxs-lookup"><span data-stu-id="3b7ac-103">Get shiftPreferences</span></span>
+# <a name="get-shiftpreferences"></a><span data-ttu-id="cc802-103">Получение Шифтпреференцес</span><span class="sxs-lookup"><span data-stu-id="cc802-103">Get shiftPreferences</span></span>
 
-<span data-ttu-id="3b7ac-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3b7ac-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="cc802-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="cc802-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3b7ac-105">Получение свойств и связей объекта [шифтпреференцес](../resources/shiftpreferences.md) по идентификатору.</span><span class="sxs-lookup"><span data-stu-id="3b7ac-105">Retrieve the properties and relationships of a [shiftPreferences](../resources/shiftpreferences.md) object by ID.</span></span>
+<span data-ttu-id="cc802-105">Получение свойств и связей объекта [шифтпреференцес](../resources/shiftpreferences.md) по идентификатору.</span><span class="sxs-lookup"><span data-stu-id="cc802-105">Retrieve the properties and relationships of a [shiftPreferences](../resources/shiftpreferences.md) object by ID.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3b7ac-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3b7ac-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="cc802-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cc802-106">Permissions</span></span>
 
-<span data-ttu-id="3b7ac-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3b7ac-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="cc802-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cc802-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3b7ac-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3b7ac-109">Permission type</span></span>      | <span data-ttu-id="3b7ac-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3b7ac-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cc802-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cc802-109">Permission type</span></span>      | <span data-ttu-id="cc802-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cc802-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3b7ac-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3b7ac-111">Delegated (work or school account)</span></span> | <span data-ttu-id="3b7ac-112">User.Read.All, User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3b7ac-112">User.Read.All, User.ReadWrite.All</span></span>    |
-|<span data-ttu-id="3b7ac-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3b7ac-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3b7ac-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3b7ac-114">Not supported.</span></span>    |
-|<span data-ttu-id="3b7ac-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3b7ac-115">Application</span></span> | <span data-ttu-id="3b7ac-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3b7ac-116">Not supported.</span></span> |
+|<span data-ttu-id="cc802-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cc802-111">Delegated (work or school account)</span></span> | <span data-ttu-id="cc802-112">User.Read.All, User.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cc802-112">User.Read.All, User.ReadWrite.All</span></span>    |
+|<span data-ttu-id="cc802-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cc802-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cc802-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cc802-114">Not supported.</span></span>    |
+|<span data-ttu-id="cc802-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cc802-115">Application</span></span> | <span data-ttu-id="cc802-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cc802-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3b7ac-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3b7ac-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cc802-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cc802-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,30 +38,30 @@ ms.locfileid: "44154334"
 GET /users/{userId}/settings/shiftPreferences
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="3b7ac-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="3b7ac-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="cc802-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="cc802-118">Optional query parameters</span></span>
 
-<span data-ttu-id="3b7ac-119">Этот метод не поддерживает параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="3b7ac-119">This method does not support OData query parameters to customize the response.</span></span>
+<span data-ttu-id="cc802-119">Этот метод не поддерживает параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="cc802-119">This method does not support OData query parameters to customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="3b7ac-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3b7ac-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="cc802-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cc802-120">Request headers</span></span>
 
-| <span data-ttu-id="3b7ac-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="3b7ac-121">Header</span></span>       | <span data-ttu-id="3b7ac-122">Значение</span><span class="sxs-lookup"><span data-stu-id="3b7ac-122">Value</span></span> |
+| <span data-ttu-id="cc802-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="cc802-121">Header</span></span>       | <span data-ttu-id="cc802-122">Значение</span><span class="sxs-lookup"><span data-stu-id="cc802-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="3b7ac-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3b7ac-123">Authorization</span></span>  | <span data-ttu-id="3b7ac-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3b7ac-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="cc802-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cc802-123">Authorization</span></span>  | <span data-ttu-id="cc802-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cc802-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="3b7ac-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3b7ac-126">Request body</span></span>
-<span data-ttu-id="3b7ac-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="3b7ac-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cc802-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="cc802-126">Request body</span></span>
+<span data-ttu-id="cc802-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="cc802-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3b7ac-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="3b7ac-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cc802-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="cc802-128">Response</span></span>
 
-<span data-ttu-id="3b7ac-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [шифтпреференцес](../resources/shiftpreferences.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="3b7ac-129">If successful, this method returns a `200 OK` response code and a [shiftPreferences](../resources/shiftpreferences.md) object in the response body.</span></span>
+<span data-ttu-id="cc802-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [шифтпреференцес](../resources/shiftpreferences.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="cc802-129">If successful, this method returns a `200 OK` response code and a [shiftPreferences](../resources/shiftpreferences.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3b7ac-130">Пример</span><span class="sxs-lookup"><span data-stu-id="3b7ac-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="cc802-130">Пример</span><span class="sxs-lookup"><span data-stu-id="cc802-130">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="3b7ac-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="3b7ac-131">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="cc802-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="cc802-131">Request</span></span>
 
-<span data-ttu-id="3b7ac-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3b7ac-132">The following is an example of the request.</span></span>
+<span data-ttu-id="cc802-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cc802-132">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="3b7ac-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="3b7ac-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="cc802-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="cc802-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "shift-get"
@@ -69,26 +69,26 @@ GET /users/{userId}/settings/shiftPreferences
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/871dbd5c-3a6a-4392-bfe1-042452793a50/shiftPreferences
 ```
-# <a name="c"></a>[<span data-ttu-id="3b7ac-134">C#</span><span class="sxs-lookup"><span data-stu-id="3b7ac-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="cc802-134">C#</span><span class="sxs-lookup"><span data-stu-id="cc802-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/shift-get-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="3b7ac-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3b7ac-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="cc802-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="cc802-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/shift-get-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="3b7ac-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3b7ac-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="cc802-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="cc802-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/shift-get-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="3b7ac-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="3b7ac-137">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="cc802-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="cc802-137">Response</span></span>
 
-<span data-ttu-id="3b7ac-138">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="3b7ac-138">The following is an example of the response.</span></span>
+<span data-ttu-id="cc802-138">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="cc802-138">The following is an example of the response.</span></span>
 
-><span data-ttu-id="3b7ac-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3b7ac-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="cc802-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="cc802-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -144,3 +144,5 @@ Content-length: 401
   ]
 }
 -->
+
+

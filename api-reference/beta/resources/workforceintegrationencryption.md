@@ -5,31 +5,31 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c2d24371a0a999069d80a9ad86afd48ac9e68d38
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 15feb2097a3a7bf36092070cc2af4841d2aa3839
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519080"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48019399"
 ---
-# <a name="workforceintegrationencryption-resource-type"></a><span data-ttu-id="22ae8-103">Тип ресурса Воркфорцеинтегратионенкриптион</span><span class="sxs-lookup"><span data-stu-id="22ae8-103">workforceIntegrationEncryption resource type</span></span>
+# <a name="workforceintegrationencryption-resource-type"></a><span data-ttu-id="52e92-103">Тип ресурса Воркфорцеинтегратионенкриптион</span><span class="sxs-lookup"><span data-stu-id="52e92-103">workforceIntegrationEncryption resource type</span></span>
 
-<span data-ttu-id="22ae8-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="22ae8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="52e92-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="52e92-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="22ae8-105">Объект шифрования, определяющий протокол и секрет для [воркфорцеинтегратион](../resources/workforceintegration.md).</span><span class="sxs-lookup"><span data-stu-id="22ae8-105">An encryption entity defining the protocol and secret for a [workforceintegration](../resources/workforceintegration.md).</span></span>
+<span data-ttu-id="52e92-105">Объект шифрования, определяющий протокол и секрет для [воркфорцеинтегратион](../resources/workforceintegration.md).</span><span class="sxs-lookup"><span data-stu-id="52e92-105">An encryption entity defining the protocol and secret for a [workforceintegration](../resources/workforceintegration.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="22ae8-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="22ae8-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="52e92-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="52e92-106">Properties</span></span>
 
-| <span data-ttu-id="22ae8-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="22ae8-107">Property</span></span>     | <span data-ttu-id="22ae8-108">Тип</span><span class="sxs-lookup"><span data-stu-id="22ae8-108">Type</span></span>        | <span data-ttu-id="22ae8-109">Описание</span><span class="sxs-lookup"><span data-stu-id="22ae8-109">Description</span></span> |
+| <span data-ttu-id="52e92-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="52e92-107">Property</span></span>     | <span data-ttu-id="52e92-108">Тип</span><span class="sxs-lookup"><span data-stu-id="52e92-108">Type</span></span>        | <span data-ttu-id="52e92-109">Описание</span><span class="sxs-lookup"><span data-stu-id="52e92-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="22ae8-110">Protocol</span><span class="sxs-lookup"><span data-stu-id="22ae8-110">protocol</span></span>|<span data-ttu-id="22ae8-111">String</span><span class="sxs-lookup"><span data-stu-id="22ae8-111">String</span></span>| <span data-ttu-id="22ae8-112">Возможные значения: `sharedSecret`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="22ae8-112">Possible values are: `sharedSecret`, `unknownFutureValue`.</span></span>|
-|<span data-ttu-id="22ae8-113">гадк</span><span class="sxs-lookup"><span data-stu-id="22ae8-113">secret</span></span>|<span data-ttu-id="22ae8-114">String</span><span class="sxs-lookup"><span data-stu-id="22ae8-114">String</span></span>|<span data-ttu-id="22ae8-115">Шифрование общего секрета.</span><span class="sxs-lookup"><span data-stu-id="22ae8-115">Encryption shared secret.</span></span>|
+|<span data-ttu-id="52e92-110">Protocol</span><span class="sxs-lookup"><span data-stu-id="52e92-110">protocol</span></span>|<span data-ttu-id="52e92-111">String</span><span class="sxs-lookup"><span data-stu-id="52e92-111">String</span></span>| <span data-ttu-id="52e92-112">Возможные значения: `sharedSecret`, `unknownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="52e92-112">Possible values are: `sharedSecret`, `unknownFutureValue`.</span></span>|
+|<span data-ttu-id="52e92-113">гадк</span><span class="sxs-lookup"><span data-stu-id="52e92-113">secret</span></span>|<span data-ttu-id="52e92-114">String</span><span class="sxs-lookup"><span data-stu-id="52e92-114">String</span></span>|<span data-ttu-id="52e92-115">Шифрование общего секрета.</span><span class="sxs-lookup"><span data-stu-id="52e92-115">Encryption shared secret.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="22ae8-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="22ae8-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="52e92-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="52e92-116">JSON representation</span></span>
 
-<span data-ttu-id="22ae8-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="22ae8-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="52e92-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="52e92-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -56,3 +56,5 @@ ms.locfileid: "42519080"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
