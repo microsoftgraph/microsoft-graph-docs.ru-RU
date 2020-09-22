@@ -3,33 +3,33 @@ title: Delete androidLobApp
 description: Удаляет объект androidLobApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6b9b7ba0b3e307c7616da4a8cb282f1872188cf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5df077c00e024702c1afd88a2c911b3b3ed1db0e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463949"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48041794"
 ---
-# <a name="delete-androidlobapp"></a><span data-ttu-id="e5495-103">Delete androidLobApp</span><span class="sxs-lookup"><span data-stu-id="e5495-103">Delete androidLobApp</span></span>
+# <a name="delete-androidlobapp"></a><span data-ttu-id="59bbd-103">Delete androidLobApp</span><span class="sxs-lookup"><span data-stu-id="59bbd-103">Delete androidLobApp</span></span>
 
-<span data-ttu-id="e5495-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e5495-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="59bbd-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="59bbd-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="e5495-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e5495-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="59bbd-105">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="59bbd-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e5495-106">Удаляет объект [androidLobApp](../resources/intune-apps-androidlobapp.md).</span><span class="sxs-lookup"><span data-stu-id="e5495-106">Deletes a [androidLobApp](../resources/intune-apps-androidlobapp.md).</span></span>
+<span data-ttu-id="59bbd-106">Удаляет объект [androidLobApp](../resources/intune-apps-androidlobapp.md).</span><span class="sxs-lookup"><span data-stu-id="59bbd-106">Deletes a [androidLobApp](../resources/intune-apps-androidlobapp.md).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="e5495-107">Необходимые разрешения</span><span class="sxs-lookup"><span data-stu-id="e5495-107">Prerequisites</span></span>
-<span data-ttu-id="e5495-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e5495-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="59bbd-107">Необходимые разрешения</span><span class="sxs-lookup"><span data-stu-id="59bbd-107">Prerequisites</span></span>
+<span data-ttu-id="59bbd-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="59bbd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e5495-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e5495-110">Permission type</span></span>|<span data-ttu-id="e5495-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="e5495-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="59bbd-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="59bbd-110">Permission type</span></span>|<span data-ttu-id="59bbd-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="59bbd-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e5495-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e5495-112">Delegated (work or school account)</span></span>|<span data-ttu-id="e5495-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e5495-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="e5495-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e5495-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e5495-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e5495-115">Not supported.</span></span>|
-|<span data-ttu-id="e5495-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e5495-116">Application</span></span>|<span data-ttu-id="e5495-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e5495-117">Not supported.</span></span>|
+|<span data-ttu-id="59bbd-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="59bbd-112">Delegated (work or school account)</span></span>|<span data-ttu-id="59bbd-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="59bbd-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="59bbd-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="59bbd-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="59bbd-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="59bbd-115">Not supported.</span></span>|
+|<span data-ttu-id="59bbd-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="59bbd-116">Application</span></span>|<span data-ttu-id="59bbd-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="59bbd-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e5495-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e5495-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="59bbd-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="59bbd-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,31 +38,34 @@ ms.locfileid: "43463949"
 DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e5495-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="e5495-119">Request headers</span></span>
-|<span data-ttu-id="e5495-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="e5495-120">Header</span></span>|<span data-ttu-id="e5495-121">Значение</span><span class="sxs-lookup"><span data-stu-id="e5495-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="59bbd-119">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="59bbd-119">Request headers</span></span>
+|<span data-ttu-id="59bbd-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="59bbd-120">Header</span></span>|<span data-ttu-id="59bbd-121">Значение</span><span class="sxs-lookup"><span data-stu-id="59bbd-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e5495-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e5495-122">Authorization</span></span>|<span data-ttu-id="e5495-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e5495-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e5495-124">Accept</span><span class="sxs-lookup"><span data-stu-id="e5495-124">Accept</span></span>|<span data-ttu-id="e5495-125">application/json</span><span class="sxs-lookup"><span data-stu-id="e5495-125">application/json</span></span>|
+|<span data-ttu-id="59bbd-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="59bbd-122">Authorization</span></span>|<span data-ttu-id="59bbd-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="59bbd-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="59bbd-124">Accept</span><span class="sxs-lookup"><span data-stu-id="59bbd-124">Accept</span></span>|<span data-ttu-id="59bbd-125">application/json</span><span class="sxs-lookup"><span data-stu-id="59bbd-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e5495-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e5495-126">Request body</span></span>
-<span data-ttu-id="e5495-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e5495-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="59bbd-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="59bbd-126">Request body</span></span>
+<span data-ttu-id="59bbd-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="59bbd-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e5495-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="e5495-128">Response</span></span>
-<span data-ttu-id="e5495-129">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="e5495-129">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="59bbd-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="59bbd-128">Response</span></span>
+<span data-ttu-id="59bbd-129">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="59bbd-129">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e5495-130">Пример</span><span class="sxs-lookup"><span data-stu-id="e5495-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="59bbd-130">Пример</span><span class="sxs-lookup"><span data-stu-id="59bbd-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e5495-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="e5495-131">Request</span></span>
-<span data-ttu-id="e5495-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e5495-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="59bbd-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="59bbd-131">Request</span></span>
+<span data-ttu-id="59bbd-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="59bbd-132">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-### <a name="response"></a><span data-ttu-id="e5495-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="e5495-133">Response</span></span>
-<span data-ttu-id="e5495-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e5495-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="59bbd-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="59bbd-133">Response</span></span>
+<span data-ttu-id="59bbd-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="59bbd-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 
