@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 7ac7bb86c22a36f814f3c48211fb5ff17177a2d6
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 90f69ca6db0a84c0025caf4fff0ae07324703380
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674339"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048770"
 ---
 # <a name="printershare-resource-type"></a>Тип ресурса Принтершаре
 
@@ -24,10 +24,10 @@ ms.locfileid: "46674339"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список](../api/print-list-shares.md) | Коллекция [принтершаре](printershare.md) | Получение списка общих принтеров в клиенте. |
-| [получение](../api/printershare-get.md); | [принтершаре](printershare.md) | Чтение свойств и связей объекта **принтершаре** . |
-| [обновление](../api/printershare-update.md). | [принтершаре](printershare.md) | Обновление объекта **принтершаре** . |
-| [удаление](../api/printershare-delete.md); | Нет | Отменяет общий доступ к принтеру. |
+| [Перечисление](../api/print-list-shares.md) | Коллекция [принтершаре](printershare.md) | Получение списка общих принтеров в клиенте. |
+| [Получение](../api/printershare-get.md) | [принтершаре](printershare.md) | Чтение свойств и связей объекта **принтершаре** . |
+| [Обновление](../api/printershare-update.md) | [принтершаре](printershare.md) | Обновление объекта **принтершаре** . |
+| [Удаление](../api/printershare-delete.md) | Нет | Отменяет общий доступ к принтеру. |
 | [Список allowedUsers](../api/printershare-list-allowedusers.md) | Коллекция [принтусеридентити](printuseridentity.md) | Получение списка пользователей, которым предоставлен доступ к отправку заданий печати на связанный общий принтер. |
 | [Добавление allowedUser](../api/printershare-post-allowedusers.md) | Нет | Предоставьте заданному пользователю доступ на отправку заданий печати в соответствующую общую папку принтера. |
 | [Удаление allowedUser](../api/printershare-delete-alloweduser.md) | Нет | Отозвать доступ к общему принтеру для указанного пользователя. |
@@ -38,8 +38,8 @@ ms.locfileid: "46674339"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String| Идентификатор Принтершаре. Только для чтения.|
-|displayName|String|Имя общего принтера, который должен отображаться клиентами печати.|
+|id|Строка| Идентификатор Принтершаре. Только для чтения.|
+|displayName|Строка|Имя общего принтера, который должен отображаться клиентами печати.|
 |createdDateTime|DateTimeOffset|Значение DateTimeOffset при создании общего ресурса принтера. Только для чтения.|
 |manufacturer|String|Производитель, сообщаемый принтером, связанным с этим общим принтером. Только для чтения.|
 |model|String|Имя модели, сообщаемое принтером, связанным с этим общим принтером. Только для чтения.|
@@ -89,3 +89,5 @@ ms.locfileid: "46674339"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

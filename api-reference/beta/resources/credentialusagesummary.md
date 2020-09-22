@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 736575ba8958a45cad76f7142967c2a629b0732a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 311f89b67549e6bc373029aef82c88ca0e592f3d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458028"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050096"
 ---
 # <a name="credentialusagesummary-resource-type"></a>Тип ресурса Кредентиалусажесуммари
 
@@ -30,10 +30,10 @@ ms.locfileid: "43458028"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| аусмесод | string | Представляет способ проверки подлинности, используемый пользователем. Возможные значения `email`:, `mobileSMS`, `mobileCall` `officePhone`,, `securityQuestion` (только для самостоятельного сброса пароля), `appNotification` `appCode`и `alternateMobileCall` (поддерживается только для регистрации). |
+| аусмесод | string | Представляет способ проверки подлинности, используемый пользователем. Возможные значения: `email` ,,,, `mobileSMS` `mobileCall` `officePhone` `securityQuestion` (только для самостоятельного сброса пароля), `appNotification` `appCode` и  `alternateMobileCall` (поддерживается только для регистрации). |
 | фаилуреактивитикаунт | Int64 | Предоставляет количество неудачных сбросов или регистрационных данных. |
-| состав | string | Определяет компонент для отчета. Возможные значения: `registration` и `reset`. |
-| id | String | Уникальный идентификатор действия. Только для чтения. |
+| состав | string | Определяет компонент для отчета. Возможные значения: `registration` и `reset` . |
+| id | Строка | Уникальный идентификатор действия. Только для чтения. |
 | сукцессфулактивитикаунт | Int64 | Предоставляет количество успешных регистраций или сбросов. |
 
 ## <a name="relationships"></a>Связи
@@ -73,3 +73,4 @@ ms.locfileid: "43458028"
   "section": "documentation",
   "tocPath": ""
 }-->
+

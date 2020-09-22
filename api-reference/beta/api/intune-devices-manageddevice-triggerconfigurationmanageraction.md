@@ -3,14 +3,14 @@ title: действие Тригжерконфигуратионманажера
 description: Действие триггера в клиенте Конфигуратионманажер
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dd8f13dae50c8c74d72ccc6f55e13461301dd7da
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: d16e3b278755b53f42f5b4203032306fd332855b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792165"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050705"
 ---
 # <a name="triggerconfigurationmanageraction-action"></a>действие Тригжерконфигуратионманажерактион
 
@@ -52,7 +52,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -89,6 +89,9 @@ Content-length: 145
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: krbain
-ms.openlocfilehash: 29dec5abd28969871376de5a55a932cea9297848
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 240fe5ad24858a735d0ee2ce1a668ad64d703bb6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809875"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050109"
 ---
 # <a name="assignedlicense-resource-type"></a>Тип ресурса assignedLicense
 
@@ -26,7 +26,7 @@ ms.locfileid: "46809875"
 |дисабледпланс|Коллекция объектов Guid|Коллекция уникальных идентификаторов отключенных планов.|
 |skuId|Guid|Уникальный идентификатор SKU.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -59,3 +59,5 @@ ms.locfileid: "46809875"
   "suppressions": []
 }
 -->
+
+

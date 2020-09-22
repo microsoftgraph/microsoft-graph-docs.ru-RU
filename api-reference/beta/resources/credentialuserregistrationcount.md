@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: b291d871686b514474f754500d490be3ad331441
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c5fb3588c7d06f726c71c81279c0994fd0de4019
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458013"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050089"
 ---
 # <a name="credentialuserregistrationcount-resource-type"></a>Тип ресурса Кредентиалусеррегистратионкаунт
 
@@ -30,7 +30,7 @@ ms.locfileid: "43458013"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| id | String | Уникальный идентификатор действия. Только для чтения. |
+| id | Строка | Уникальный идентификатор действия. Только для чтения. |
 | тоталусеркаунт | Int64 | Предоставляет общее число пользователей в клиенте. |
 | усеррегистратионкаунтс | Коллекция [усеррегистратионкаунт](userregistrationcount.md) | Коллекция счетчиков регистрации и сведений о состоянии для пользователей в клиенте. |
 
@@ -75,3 +75,4 @@ ms.locfileid: "43458013"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: тип перечисления Счедуледретирестате
 description: 'Отмена или подтверждение запланированного снятия с учета '
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3e574a2ccbfecf3665fd160379f09533b4986c5b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c370a7b0e0c4b3b3ddc9da493c0743e392df256a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444864"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049466"
 ---
 # <a name="scheduledretirestate-enum-type"></a>тип перечисления Счедуледретирестате
 
@@ -26,7 +26,10 @@ ms.locfileid: "43444864"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |канцелретире|нуль|Отмена снятия с учета.|
-|комфирмретире|1,1|Отказаться от этих устройств.|
+|комфирмретире|1 |Отказаться от этих устройств.|
+
+
+
 
 
 

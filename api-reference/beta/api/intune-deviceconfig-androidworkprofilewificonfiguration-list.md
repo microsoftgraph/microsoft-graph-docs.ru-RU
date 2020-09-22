@@ -3,14 +3,14 @@ title: Список Андроидворкпрофилевификонфигур
 description: Список свойств и связей объектов Андроидворкпрофилевификонфигуратион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a9e2d3ee6b325e3f10bfceb04ee23d7e00acbe69
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 36874effa471fe25bea200a1d34c78ed56ca2ee3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434530"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048185"
 ---
 # <a name="list-androidworkprofilewificonfigurations"></a>Список Андроидворкпрофилевификонфигуратионс
 
@@ -47,10 +47,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [андроидворкпрофилевификонфигуратион](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -112,6 +112,9 @@ Content-Length: 1572
   ]
 }
 ```
+
+
+
 
 
 

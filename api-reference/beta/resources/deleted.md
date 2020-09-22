@@ -6,12 +6,12 @@ title: Deleted
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: b3c1a7a4c9a7c290ba71a21ba288e6195334377b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6f42f5cea70e4dd4304a12130aaa34376fde226d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507270"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049877"
 ---
 # <a name="deleted-facet"></a>Аспект Deleted
 
@@ -62,3 +62,5 @@ ms.locfileid: "42507270"
   "suppressions": []
 }
 -->
+
+

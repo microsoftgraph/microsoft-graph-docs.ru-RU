@@ -3,14 +3,14 @@ title: тип перечисления Впндеадпирдетектионр�
 description: Определяет, как часто следует проверять активность однорангового подключения.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 047d4f51767a180d89ee8a4eeb121978981d9d22
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4a5665bbbe8b55905beda7af8921e02bea72c5a9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412296"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049123"
 ---
 # <a name="vpndeadpeerdetectionrate-enum-type"></a>тип перечисления Впндеадпирдетектионрате
 
@@ -25,10 +25,13 @@ ms.locfileid: "43412296"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|medium|нуль|Средние|
-|Нет|1,1|Нет|
-|потребление|2|Низкий|
-|высокоуровневых|4|Высокий|
+|medium|нуль|Средняя|
+|Нет|1 |Нет|
+|потребление|2 |Низкая|
+|высокоуровневых|4|Высокая|
+
+
+
 
 
 

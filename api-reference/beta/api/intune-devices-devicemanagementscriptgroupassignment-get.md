@@ -3,14 +3,14 @@ title: Получение Девицеманажементскриптграуп
 description: Чтение свойств и связей объекта Девицеманажементскриптграупассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a370b5feeecb53cf8af4f31032b552e50c8e3711
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f62d805c386a75af784fe7fabc699f13ef159df3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380265"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050691"
 ---
 # <a name="get-devicemanagementscriptgroupassignment"></a>Получение Девицеманажементскриптграупассигнмент
 
@@ -47,13 +47,13 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/groupAs
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [девицеманажементскриптграупассигнмент](../resources/intune-devices-devicemanagementscriptgroupassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -79,6 +79,9 @@ Content-Length: 198
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Тип ресурса Унсуппортеддевицеконфигур�
 description: Описание причин неподдерживаемого объекта.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 59b54a1df17576999e9c3782191a9efa341b4b05
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a540d862a88168f1e1c195a87f289f520c0b6fed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412664"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049249"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>Тип ресурса Унсуппортеддевицеконфигуратиондетаил
 
@@ -26,7 +26,7 @@ ms.locfileid: "43412664"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |message|String|Сообщение с объяснением, почему объект не поддерживается.|
-|propertyName|String|Если сообщение связано с определенным свойством в исходной сущности, то имя этого свойства.|
+|propertyName|Строка|Если сообщение связано с определенным свойством в исходной сущности, то имя этого свойства.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -45,6 +45,9 @@ ms.locfileid: "43412664"
   "propertyName": "String"
 }
 ```
+
+
+
 
 
 

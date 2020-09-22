@@ -3,14 +3,14 @@ title: Получение Девицехеалсскриптассигнмент
 description: Чтение свойств и связей объекта Девицехеалсскриптассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6c94627f149506d47460a6aefcce3ae9b224e2d8
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 157e1816e4af68acbfda702315db8bbee7c9d93b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792403"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050684"
 ---
 # <a name="get-devicehealthscriptassignment"></a>Получение Девицехеалсскриптассигнмент
 
@@ -47,7 +47,7 @@ GET /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assignm
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -90,6 +90,9 @@ Content-Length: 622
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: тип перечисления Битлоккеренкриптионм�
 description: Типы Битлоккеренкриптионмесод
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f94f251455f52e35cf9aaaf640255525e2f5435b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9b8c6ad3e890a06250e9d998145b1e3e67d4e0d4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449112"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051111"
 ---
 # <a name="bitlockerencryptionmethod-enum-type"></a>тип перечисления Битлоккеренкриптионмесод
 
@@ -27,6 +27,8 @@ ms.locfileid: "43449112"
 |aesCbc256|4 |AES — CBC 256 — бит.|
 |xtsAes128|6 |КСТС — AES 128 — бит.|
 |xtsAes256|7 |КСТС — AES 256 — бит.|
+
+
 
 
 

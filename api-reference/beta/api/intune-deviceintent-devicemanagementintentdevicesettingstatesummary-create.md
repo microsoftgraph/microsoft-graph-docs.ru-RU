@@ -3,14 +3,14 @@ title: Создание Девицеманажементинтентдевице
 description: Создание нового объекта Девицеманажементинтентдевицесеттингстатесуммари.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 187f194080922288d36f9cb5c4a91713e61bc5d2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2f6c4dc42b6f6c762500b062c01e178bd4c4256c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43326929"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050796"
 ---
 # <a name="create-devicemanagementintentdevicesettingstatesummary"></a>Создание Девицеманажементинтентдевицесеттингстатесуммари
 
@@ -46,14 +46,14 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSumm
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицеманажементинтентдевицесеттингстатесуммари в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементинтентдевицесеттингстатесуммари.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор|
+|id|Строка|Идентификатор|
 |settingName|String|Имя параметра|
 |комплианткаунт|Int32|Количество устройств, соответствующих требованиям.|
 |conflictCount|Int32|Количество конфликтующих устройств|
@@ -64,7 +64,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSumm
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементинтентдевицесеттингстатесуммари](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -107,6 +107,9 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 32ed190f39d84e4c756d265527f4f0a8bcaf73f5
-ms.sourcegitcommit: 9faca60f0cc4ee9d6dce33fd25c72e14b5487d34
+ms.openlocfilehash: f18b5d9906063a542ee76e7d69f66d01a5178f18
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46509814"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049737"
 ---
 # <a name="educationschool-resource-type"></a>Тип ресурса educationSchool
 
@@ -26,7 +26,7 @@ ms.locfileid: "46509814"
 
 | Метод                                                                     | Возвращаемый тип                                      | Описание                                                                                 |
 | :------------------------------------------------------------------------- | :----------------------------------------------- | :------------------------------------------------------------------------------------------ |
-| [получение](../api/educationschool-get.md);                                       | [educationSchool](educationschool.md)            | Считывание свойств и отношений объекта **educationSchool**.                         |
+| [Получение](../api/educationschool-get.md)                                       | [educationSchool](educationschool.md)            | Считывание свойств и отношений объекта **educationSchool**.                         |
 | [Добавление класса](../api/educationschool-post-classes.md)                        | [educationClass](educationclass.md)              | Добавление нового объекта **educationClass** в учебное заведение через публикацию в свойстве навигации classes.  |
 | [Перечисление классов](../api/educationschool-list-classes.md)                     | Коллекция [educationClass](educationclass.md)   | Получение коллекции объектов **educationClass**.                                               |
 | [Удаление класса](../api/educationschool-delete-classes.md)                   | [educationClass](educationclass.md)              | Удаление **educationClass** из учебного заведения через свойство навигации classes.       |
@@ -35,7 +35,7 @@ ms.locfileid: "46509814"
 | [Удаление пользователя](../api/educationschool-delete-users.md)                      | [educationUser](educationuser.md)                | Удаление **educationUser** из учебного заведения через свойство навигации **users**.      |
 | [Получение administrativeUnit](../api/educationschool-get-administrativeunit.md) | [administrativeUnit](administrativeunit.md)      | Получение **administrativeUnit** , соответствующего этому **educationSchool**.                |
 | [Обновление](../api/educationschool-update.md)                                 | [educationSchool](educationschool.md)            | Обновление объекта **educationSchool**.                                                       |
-| [удаление](../api/educationschool-delete.md);                                 | Нет                                             | Удаление объекта **educationSchool**.                                                       |
+| [Удаление](../api/educationschool-delete.md)                                 | Нет                                             | Удаление объекта **educationSchool**.                                                       |
 | [Delta](../api/educationschool-delta.md)                                   | Коллекция [educationSchool](educationschool.md) | Получение добавочных изменений для **едукатионсчулс**                                            |
 
 ## <a name="properties"></a>Свойства
@@ -48,15 +48,15 @@ ms.locfileid: "46509814"
 | description          | String                                | Описание учебного заведения.                                                                                                                                           |
 | displayName          | Строка                                | Отображаемое имя учебного заведения.                                                                                                                                          |
 | externalId           | String                                | Идентификатор учебного заведения в системе синхронизации.                                                                                                                                      |
-| externalPrincipalId  | Строка                                | Идентификатор директора в системе синхронизации.                                                                                                                                   |
+| externalPrincipalId  | String                                | Идентификатор директора в системе синхронизации.                                                                                                                                   |
 | externalSource       | Строка                                | Тип внешнего источника, из которого был создан ресурс (определяется автоматически `externalSourceDetail` ). Возможные значения: `sis` , `lms` , или `manual` . |
 | екстерналсаурцедетаил | Строка                                | Имя внешнего источника, из которого были созданы ресурсы.                                                                                                   |
-| highestGrade         | Строка                                | Самый старший класс.                                                                                                                                                |
-| lowestGrade          | Строка                                | Самый младший класс.                                                                                                                                                 |
+| highestGrade         | String                                | Самый старший класс.                                                                                                                                                |
+| lowestGrade          | String                                | Самый младший класс.                                                                                                                                                 |
 | phone                | String                                | Номер телефона учебного заведения.                                                                                                                                              |
-| principalEmail       | Строка                                | Адрес электронной почты директора.                                                                                                                                      |
-| principalName        | Строка                                | Имя директора.                                                                                                                                               |
-| schoolNumber         | Строка                                | Номер школы.                                                                                                                                                       |
+| principalEmail       | String                                | Адрес электронной почты директора.                                                                                                                                      |
+| principalName        | String                                | Имя директора.                                                                                                                                               |
+| schoolNumber         | String                                | Номер школы.                                                                                                                                                       |
 
 ## <a name="relationships"></a>Связи
 
@@ -109,3 +109,5 @@ ms.locfileid: "46509814"
     "Error: Resource educationSchool has documented navigation properties, but we thought it was a complex type!"
   ]
 }-->
+
+

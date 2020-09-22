@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ba7d1cb38e1b33d7007cf4613550868d2b634c11
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 9e2c3e750754f7932e55a315c909c5186bb5a4f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181373"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049823"
 ---
 # <a name="directory-resource-type-deleted-items"></a>Тип ресурса directory (удаленные элементы)
 
@@ -40,7 +40,7 @@ ms.locfileid: "43181373"
 ## <a name="properties"></a>Свойства
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|id|String| Уникальный идентификатор объекта, например 12345678-9abc-def0-1234-56789abcde. Ключ. Значение null не допускается. Только для чтения.|
+|id|Строка| Уникальный идентификатор объекта, например 12345678-9abc-def0-1234-56789abcde. Ключ. Значение null не допускается. Только для чтения.|
 
 ## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
@@ -78,3 +78,5 @@ ms.locfileid: "43181373"
   "suppressions": []
 }
 -->
+
+

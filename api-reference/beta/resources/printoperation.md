@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 77a00aef382142046c44465a88909b90f966aa7e
-ms.sourcegitcommit: 90aaba4e965945cb6550cf625cbc03287f39e531
+ms.openlocfilehash: 970ac3dd06e5af1478600166ffdd4c84815aa5b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148587"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048724"
 ---
 # <a name="printoperation-resource-type"></a>Тип ресурса Принтоператион
 
@@ -29,7 +29,7 @@ ms.locfileid: "45148587"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String|Идентификатор операции. Только для чтения.|
+|id|Строка|Идентификатор операции. Только для чтения.|
 |status|[printOperationStatus](printoperationstatus.md)|Состояние операции. Только для чтения.|
 |createdDateTime|DateTimeOffset|Значение DateTimeOffset при создании операции. Только для чтения.|
 
@@ -64,3 +64,5 @@ ms.locfileid: "45148587"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

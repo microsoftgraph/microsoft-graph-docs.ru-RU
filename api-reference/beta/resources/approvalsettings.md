@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 23227bd4f363748bade73999a4004747d691a364
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3a3c674b6bb21ddebfbb63f60d1ec2d2b62077f8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508235"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050152"
 ---
 # <a name="approvalsettings-complex-type"></a>сложный тип Аппровалсеттингс
 
@@ -27,7 +27,7 @@ ms.locfileid: "42508235"
 | исаппровалрекуиред | Boolean | Если задано значение false, то для запросов в этой политике утверждение не требуется. |
 | исаппровалрекуиредфорекстенсион | Boolean| Если задано значение false, то утверждение не требуется для пользователя, который уже имеет назначение для расширения назначения. |
 | исрекуесторжустификатионрекуиред | Boolean | Указывает, требуется ли запрашивающему для предоставления обоснования в запросе. |
-| аппровалмоде| String | Один из `NoApproval`, `SingleStage` или `Serial`. `NoApproval` Используется при `isApprovalRequired` значении false. |
+| аппровалмоде| Строка | Один из `NoApproval` , `SingleStage` или `Serial` . `NoApproval`Используется при `isApprovalRequired` значении false. |
 | аппровалстажес | Коллекция [аппровалстаже](approvalstage.md)| Если необходимо утверждение, то один или два элемента этой коллекции определяют каждый из стадий утверждения. Пустой массив, если утверждение не нужно.  |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -62,3 +62,5 @@ ms.locfileid: "42508235"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

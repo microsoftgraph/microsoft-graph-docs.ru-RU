@@ -3,14 +3,14 @@ title: Создание Девицехеалсскриптассигнмент
 description: Создание нового объекта Девицехеалсскриптассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 605b21c3de1a7408224c3544e6f3bbb7d4adf04f
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 8d3de33569d5ce0fa0592dcb509187eeeb2a9b32
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792417"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050775"
 ---
 # <a name="create-devicehealthscriptassignment"></a>Создание Девицехеалсскриптассигнмент
 
@@ -47,14 +47,14 @@ POST /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assign
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицехеалсскриптассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицехеалсскриптассигнмент.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта назначения сценария работоспособности устройства. Это свойство доступно только для чтения.|
+|id|Строка|Ключ объекта назначения сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Группа Azure Active Directory, на которую мы нацелены на скрипт|
 |рунремедиатионскрипт|Boolean|Определите, нужно ли выполнять сценарий обнаружения или сценарий обнаружения и устранения неполадок.|
 |runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|Расписание запуска сценария для целевой группы|
@@ -114,6 +114,9 @@ Content-Length: 575
   }
 }
 ```
+
+
+
 
 
 

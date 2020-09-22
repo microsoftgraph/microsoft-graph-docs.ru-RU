@@ -5,12 +5,12 @@ localization_priority: Normal
 author: spunukol
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8d19eefbc9ca7f9a750ddf5ebe231cf57366d765
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 69d8d1e2314021752a5f1a0ab3650d8176ecc8dc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472147"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049851"
 ---
 # <a name="devicedetail-resource-type"></a>Тип ресурса Девицедетаил
 
@@ -21,9 +21,9 @@ ms.locfileid: "43472147"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Обозреватель|String|Указывает сведения, используемые для входа в браузер.|
+|Обозреватель|Строка|Указывает сведения, используемые для входа в браузер.|
 |deviceId|String|Уникальный идентификатор устройства, используемого для входа.|
-|displayName|String|Указывает имя устройства, используемого для входа.|
+|displayName|Строка|Указывает имя устройства, используемого для входа.|
 |isCompliant|Boolean|Указывает, является ли устройство совместимым.|
 |isManaged|Boolean|Указывает, является ли устройство управляемым.|
 |operatingSystem|String|Указывает имя и версию операционной системы, которые используются для входа в систему.|
@@ -63,3 +63,5 @@ ms.locfileid: "43472147"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

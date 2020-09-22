@@ -3,14 +3,14 @@ title: Получение windows10VpnConfiguration
 description: Чтение свойств и связей объекта windows10VpnConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e78a9d34b1de0f3de1a23da15b6a6ff2acdbc7f3
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 7d7a089405be3e0d0571a41ba0fe64e8b5c3e2c9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792606"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48047989"
 ---
 # <a name="get-windows10vpnconfiguration"></a>Получение windows10VpnConfiguration
 
@@ -51,7 +51,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -225,6 +225,9 @@ Content-Length: 4950
   }
 }
 ```
+
+
+
 
 
 

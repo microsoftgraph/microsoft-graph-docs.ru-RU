@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 170f3b735b4f14173058efbaaa1c81b80490f020
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: d4bd76dc84ad41c6d412144d13a784bec4f6a9f7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42895993"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050131"
 ---
 # <a name="archivedprintjob-resource-type"></a>Тип ресурса Арчиведпринтжоб
 
@@ -23,8 +23,8 @@ ms.locfileid: "42895993"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String|Глобальный уникальный идентификатор (GUID) задания печати. Только для чтения.|
-|принтерид|String|ИДЕНТИФИКАТОР принтера, для которого было задано задание в очереди. Только для чтения.|
+|id|Строка|Глобальный уникальный идентификатор (GUID) задания печати. Только для чтения.|
+|принтерид|Строка|ИДЕНТИФИКАТОР принтера, для которого было задано задание в очереди. Только для чтения.|
 |процессингстате|принтжобпроцессингстате|Последнее состояние обработки задания печати. Только для чтения.|
 |createdDateTime|DateTimeOffset|Значение dateTimeOffset при создании задания. Только для чтения.|
 |аккуиреддатетиме|DateTimeOffset|Значение dateTimeOffset, когда задание было получено принтером (при его наличии). Только для чтения.|
@@ -68,3 +68,4 @@ ms.locfileid: "42895993"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: Обновление Андроидворкпрофилевпнконфи
 description: Обновление свойств объекта Андроидворкпрофилевпнконфигуратион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 283524cfbf51540cb7ac8a1012c1bd4cb988f8ff
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 4b9aa543157ecf3012e61fc334cbce088aef4556
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123227"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048269"
 ---
 # <a name="update-androidworkprofilevpnconfiguration"></a>Обновление Андроидворкпрофилевпнконфигуратион
 
@@ -55,10 +55,10 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -66,19 +66,21 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|коннектионнаме|String|Имя подключения, отображаемое для пользователя.|
-|connectionType|[androidWorkProfileVpnConnectionType](../resources/intune-deviceconfig-androidworkprofilevpnconnectiontype.md)|Тип подключения. Возможные значения: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `paloAltoGlobalProtect`, `microsoftTunnel`.|
-|role|String|Роль, когда для типа подключения задано значение Secure Pulse.|
-|область|String|Область, когда для параметра Тип подключения задано значение Secure Pulse.|
+|коннектионнаме|Строка|Имя подключения, отображаемое для пользователя.|
+|connectionType|[androidWorkProfileVpnConnectionType](../resources/intune-deviceconfig-androidworkprofilevpnconnectiontype.md)|Тип подключения. Возможные значения: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `citrix`, `paloAltoGlobalProtect`, `microsoftTunnel`, `netMotionMobility`.|
+|role|Строка|Роль, когда для типа подключения задано значение Secure Pulse.|
+|область|Строка|Область, когда для параметра Тип подключения задано значение Secure Pulse.|
 |серверами|Коллекция [vpnserver.](../resources/intune-deviceconfig-vpnserver.md)|Список VPN-серверов в сети. Убедитесь, что конечные пользователи могут получать доступ к этим сетевым расположениям. Эта коллекция может содержать не более 500 элементов.|
-|распознавания|String|Отпечаток — это строка, которая будет использоваться для проверки доверенности VPN-сервера, который применяется, только если тип подключения — "VPN-метка капсулы".|
+|распознавания|Строка|Отпечаток — это строка, которая будет использоваться для проверки доверенности VPN-сервера, который применяется, только если тип подключения — "VPN-метка капсулы".|
 |Пользовательские|Коллекция [keyValue](../resources/intune-deviceconfig-keyvalue.md)|Пользовательские данные, если для параметра Тип подключения задано значение Citrix. Эта коллекция может содержать не более 25 элементов.|
 |customKeyValueData|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Пользовательские данные, если для параметра Тип подключения задано значение Citrix. Эта коллекция может содержать не более 25 элементов.|
 |Параметр authenticationmethod|[впнаусентикатионмесод](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Метод проверки подлинности. Возможные значения: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`, `azureAD`.|
 |проксисервер|[впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|Прокси-сервер.|
 |таржетедпаккажеидс|Коллекция String|Идентификаторы целевых пакетов приложений.|
-|Группа|Логический|Указывает, следует ли включить постоянное VPN-подключение.|
-|алвайсонлоккдовн|Логический|Если включено постоянное VPN-подключение, независимо от того, следует ли блокировать сетевой трафик при отключении VPN.|
+|targetedMobileApps|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Целевые мобильные приложения. Эта коллекция может содержать не более 500 элементов.|
+|Группа|Boolean|Указывает, следует ли включить постоянное VPN-подключение.|
+|алвайсонлоккдовн|Boolean|Если включено постоянное VPN-подключение, независимо от того, следует ли блокировать сетевой трафик при отключении VPN.|
+|микрософттуннелситеид|Строка|Идентификатор сайта туннеля (Майкрософт).|
 
 
 
@@ -92,7 +94,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2103
+Content-length: 2422
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileVpnConfiguration",
@@ -161,8 +163,18 @@ Content-length: 2103
   "targetedPackageIds": [
     "Targeted Package Ids value"
   ],
+  "targetedMobileApps": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ],
   "alwaysOn": true,
-  "alwaysOnLockdown": true
+  "alwaysOnLockdown": true,
+  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
 }
 ```
 
@@ -171,7 +183,7 @@ Content-length: 2103
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2275
+Content-Length: 2594
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileVpnConfiguration",
@@ -243,10 +255,23 @@ Content-Length: 2275
   "targetedPackageIds": [
     "Targeted Package Ids value"
   ],
+  "targetedMobileApps": [
+    {
+      "@odata.type": "microsoft.graph.appListItem",
+      "name": "Name value",
+      "publisher": "Publisher value",
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "appId": "App Id value"
+    }
+  ],
   "alwaysOn": true,
-  "alwaysOnLockdown": true
+  "alwaysOnLockdown": true,
+  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
 }
 ```
+
+
+
 
 
 

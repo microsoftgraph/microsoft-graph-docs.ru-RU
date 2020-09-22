@@ -3,14 +3,14 @@ title: тип перечисления Впнсерверцертификате�
 description: Тип сертификата, который VPN-сервер будет предоставлять VPN-клиенту для проверки подлинности
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 43775918815e2a6ad40ac71097657b355fb76e5a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5054d279fd116c5135b2270f9cdba5894934a9b3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420233"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048969"
 ---
 # <a name="vpnservercertificatetype-enum-type"></a>тип перечисления Впнсерверцертификатетипе
 
@@ -26,9 +26,12 @@ ms.locfileid: "43420233"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |алгоритм|нуль|АЛГОРИТМ|
-|ecdsa256|1,1|ECDSA256|
-|ecdsa384|2|ECDSA384|
+|ecdsa256|1 |ECDSA256|
+|ecdsa384|2 |ECDSA384|
 |ecdsa521|4|ECDSA521|
+
+
+
 
 
 

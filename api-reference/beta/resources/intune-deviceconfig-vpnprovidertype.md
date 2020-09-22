@@ -3,14 +3,14 @@ title: тип перечисления Впнпровидертипе
 description: Тип поставщика для VPN каждого приложения.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2809f0297ba952d1c302bc0597ab3e00bb33ab95
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 43b962235cda6622ca0d7d10d7da57f9f5181471
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412040"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048997"
 ---
 # <a name="vpnprovidertype-enum-type"></a>тип перечисления Впнпровидертипе
 
@@ -26,8 +26,11 @@ ms.locfileid: "43412040"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Туннельный трафик не настраивается явным образом.|
-|апппрокси|1,1|Трафик туннеля на уровне приложения.|
-|паккеттуннел|2|Трафик туннеля на уровне IP.|
+|апппрокси|1 |Трафик туннеля на уровне приложения.|
+|паккеттуннел|2 |Трафик туннеля на уровне IP.|
+
+
+
 
 
 

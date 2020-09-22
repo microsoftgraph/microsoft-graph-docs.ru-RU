@@ -3,14 +3,14 @@ title: Получение Андроидворкпрофилевификонфи
 description: Чтение свойств и связей объекта Андроидворкпрофилевификонфигуратион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cfd18b94c5e4c8b2b88b09f24ce3d2c35d008284
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 07736b05fe314617ae09f987845a725d4adb4e2b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434537"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048206"
 ---
 # <a name="get-androidworkprofilewificonfiguration"></a>Получение Андроидворкпрофилевификонфигуратион
 
@@ -48,13 +48,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [андроидворкпрофилевификонфигуратион](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -114,6 +114,9 @@ Content-Length: 1484
   }
 }
 ```
+
+
+
 
 
 

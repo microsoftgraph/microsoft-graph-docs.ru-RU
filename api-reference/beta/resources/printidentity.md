@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: d4ac0695357aba0ba6c44fef4654d2edaefca6cb
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 45a69cbad25d2f9c3c99c9e01aa47982fe5c62b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917612"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048773"
 ---
 # <a name="printidentity-resource-type"></a>Тип ресурса Принтидентити
 
@@ -23,7 +23,7 @@ ms.locfileid: "43917612"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String|Идентификатор Принтидентити. Только для чтения.|
+|id|Строка|Идентификатор Принтидентити. Только для чтения.|
 |displayName|Строка|Отображаемое имя Принтидентити.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -57,3 +57,5 @@ ms.locfileid: "43917612"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

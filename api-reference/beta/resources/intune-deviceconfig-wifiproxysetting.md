@@ -3,14 +3,14 @@ title: тип перечисления Вифипроксисеттинг
 description: Параметры прокси-сервера Wi-Fi.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cdbae03ce00e2effcb803540f534724f3a54ad3e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 1cc3ea969a5998a18f0397d8a2e66daecfdc9453
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466372"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048898"
 ---
 # <a name="wifiproxysetting-enum-type"></a>тип перечисления Вифипроксисеттинг
 
@@ -26,8 +26,11 @@ ms.locfileid: "43466372"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|нуль|Нет прокси-сервера.|
-|Вручную|1,1|Параметры прокси-сервера вручную через адрес и порт.|
-|Автоматически|2|Параметры автоматического прокси-сервера с помощью URL-адреса.|
+|Вручную|1 |Параметры прокси-сервера вручную через адрес и порт.|
+|Автоматически|2 |Параметры автоматического прокси-сервера с помощью URL-адреса.|
+
+
+
 
 
 

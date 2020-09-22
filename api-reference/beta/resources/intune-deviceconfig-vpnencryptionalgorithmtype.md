@@ -3,14 +3,14 @@ title: тип перечисления Впненкриптионалгорис�
 description: Тип алгоритма шифрования для сопоставления безопасности VPN
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b8a14effae7c95605529c0d0b12eb45f51708c43
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: c8a07e6e1eb5190457b5c66630a9595264334cd1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44788161"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049115"
 ---
 # <a name="vpnencryptionalgorithmtype-enum-type"></a>тип перечисления Впненкриптионалгорисмтипе
 
@@ -27,12 +27,15 @@ ms.locfileid: "44788161"
 |:---|:---|:---|
 |AES256|нуль|AES — 256|
 |3DES|1 |3DES|
-|Тройн|2|СТАНДАРТ|
+|Тройн|2 |СТАНДАРТ|
 |AES128|4|AES — 128|
 |aes128Gcm|4 |AES-128-GCM (16-октет ИКВ)|
 |aes256Gcm|5 |AES-256-GCM (16-октет ИКВ)|
 |aes192|6 |AES — 192|
 |aes192Gcm|7 |AES — 192 — GCM|
+
+
+
 
 
 

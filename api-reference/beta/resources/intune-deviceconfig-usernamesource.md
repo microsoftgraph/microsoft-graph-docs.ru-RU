@@ -3,14 +3,14 @@ title: тип перечисления usernameSource
 description: Источник имени пользователя.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ee5ef7efb07bc6ce775a5edb5e4fc049337abf58
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e88011305f1371d2a2cac2a55db776616f47f844
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412555"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049172"
 ---
 # <a name="usernamesource-enum-type"></a>тип перечисления usernameSource
 
@@ -26,8 +26,11 @@ ms.locfileid: "43412555"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |userPrincipalName|нуль|Имя участника пользователя.|
-|primarySmtpAddress|1,1|Основной SMTP-адрес.|
-|samAccountName|2|Имя учетной записи SAM пользователя.|
+|primarySmtpAddress|1 |Основной SMTP-адрес.|
+|samAccountName|2 |Имя учетной записи SAM пользователя.|
+
+
+
 
 
 

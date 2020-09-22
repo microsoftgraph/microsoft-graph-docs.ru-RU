@@ -3,14 +3,14 @@ title: Тип ресурса Впнпроксисервер
 description: VPN-прокси-сервер.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6cf550e25c1f777e9f78fd20bdf2863e79f491b2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fb89fb3b7da8f9f350767b75263c2532596b5faa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412033"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048990"
 ---
 # <a name="vpnproxyserver-resource-type"></a>Тип ресурса Впнпроксисервер
 
@@ -25,7 +25,7 @@ VPN-прокси-сервер.
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|аутоматикконфигуратионскриптурл|String|URL-адрес скрипта автоматической настройки прокси-сервера.|
+|аутоматикконфигуратионскриптурл|Строка|URL-адрес скрипта автоматической настройки прокси-сервера.|
 |address|String|Address.|
 |порта|Int32|Порта. Допустимые значения — от 0 до 65535|
 
@@ -47,6 +47,9 @@ VPN-прокси-сервер.
   "port": 1024
 }
 ```
+
+
+
 
 
 

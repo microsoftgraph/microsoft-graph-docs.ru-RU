@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: e64899cf56140246373c36428518ebd28bb136c7
-ms.sourcegitcommit: 55e9497c8e003be389f8b5d641f80dae7bf6004b
+ms.openlocfilehash: 355230339129a351f5a609292e7e7623a39a59b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909725"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049739"
 ---
 # <a name="educationstudent-resource-type"></a>Тип ресурса educationStudent
 
@@ -34,7 +34,7 @@ ms.locfileid: "44909725"
 | graduationYear | String          | Год выпуска учащегося из школы. |
 | studentNumber  | String          | Student Number.                                 |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -69,3 +69,5 @@ ms.locfileid: "44909725"
   "suppressions": []
 }
 -->
+
+

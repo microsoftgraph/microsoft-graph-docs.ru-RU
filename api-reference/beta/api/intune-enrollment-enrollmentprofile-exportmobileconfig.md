@@ -3,14 +3,14 @@ title: функция функция exportmobileconfig
 description: Экспорт конфигурации мобильного устройства
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8cf4e6615837eeb45942e8a7e0ab617477dc9135
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a6bac7e7f9f2c2144e146a90a08c1799b725f651
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448257"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050509"
 ---
 # <a name="exportmobileconfig-function"></a>функция функция exportmobileconfig
 
@@ -46,11 +46,11 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
-В случае успеха эта функция возвращает код `200 OK` отклика и строку в теле отклика.
+## <a name="response"></a>Отклик
+В случае успеха эта функция возвращает `200 OK` код отклика и строку в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -71,6 +71,9 @@ Content-Length: 45
   "value": "Export Mobile Config value"
 }
 ```
+
+
+
 
 
 

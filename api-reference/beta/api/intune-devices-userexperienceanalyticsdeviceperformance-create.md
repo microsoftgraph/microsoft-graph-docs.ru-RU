@@ -3,14 +3,14 @@ title: Создание Усерекспериенцеаналитиксдеви
 description: Создание нового объекта Усерекспериенцеаналитиксдевицеперформанце.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0de1046a65d0509400f1cf6338fd6af4f6eaac28
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: f76f62ff69701fd57a41080b344c5f5fd2366227
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791453"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050663"
 ---
 # <a name="create-userexperienceanalyticsdeviceperformance"></a>Создание Усерекспериенцеаналитиксдевицеперформанце
 
@@ -29,7 +29,7 @@ ms.locfileid: "46791453"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -53,7 +53,7 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор устройства для загрузки устройства аналитики взаимодействия с пользователем.|
+|id|Строка|Уникальный идентификатор устройства для загрузки устройства аналитики взаимодействия с пользователем.|
 |deviceName|String|Имя устройства службы аналитики взаимодействия с пользователем.|
 |model|String|Модель устройства аналитики взаимодействия с пользователем.|
 |manufacturer|String|Производитель устройства аналитики взаимодействия с пользователем.|
@@ -75,7 +75,7 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -140,6 +140,9 @@ Content-Length: 684
   "averageRestarts": 5.0
 }
 ```
+
+
+
 
 
 

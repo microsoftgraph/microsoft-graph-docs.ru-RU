@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 0d46263e5f393362cec155a9be3e2e5a54c3dfec
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: 2c0a1bdb4ec3ebe3c87b5b40595d30cf9108c5bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091524"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048743"
 ---
 # <a name="printjob-resource-type"></a>Тип ресурса printJob
 
@@ -24,16 +24,16 @@ ms.locfileid: "45091524"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [получение](../api/printjob-get.md); | [printJob](printjob.md) | Чтение свойств и связей объекта printJob. |
-| [Создание](../api/printer-post-jobs.md); | [printJob](printjob.md) | Создание нового объекта задания печати. |
-| [Начало](../api/printjob-startprintjob.md)|Отсутствует|Запустите задание печати.|
-| [Отмена](../api/printjob-cancelprintjob.md)|Отсутствует|Отмена задания печати.|
+| [Получение](../api/printjob-get.md) | [printJob](printjob.md) | Чтение свойств и связей объекта printJob. |
+| [Создание](../api/printer-post-jobs.md) | [printJob](printjob.md) | Создание нового объекта задания печати. |
+| [Начало](../api/printjob-startprintjob.md)|Нет|Запустите задание печати.|
+| [Отмена](../api/printjob-cancelprintjob.md)|Нет|Отмена задания печати.|
 | [Перенаправление (на другой принтер)](../api/printjob-redirect.md) | [printJob](printjob.md) | Задание печати, помещенное в очередь для конечного принтера. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String|GUID принтера. Только для чтения.|
+|id|Строка|GUID принтера. Только для чтения.|
 |createdDateTime|DateTimeOffset|Значение DateTimeOffset при создании задания. Только для чтения.|
 |status|[принтжобстатус](printjobstatus.md)|Состояние задания печати. Только для чтения.|
 
@@ -44,7 +44,7 @@ ms.locfileid: "45091524"
 |настоящему|Коллекция [printDocument](printdocument.md)| Только для чтения.|
 |tasks|Коллекция [принттаск](printtask.md)|Список [принттаскс](printtask.md) , которые были активированы этим заданием печати.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -78,3 +78,4 @@ ms.locfileid: "45091524"
   "section": "documentation",
   "tocPath": ""
 }-->
+

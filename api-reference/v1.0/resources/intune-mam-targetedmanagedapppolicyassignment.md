@@ -3,14 +3,14 @@ title: Тип ресурса targetedManagedAppPolicyAssignment
 description: Тип развертывания групп или приложений.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a2179db29dd065a611569fbc5f22435f9451c69c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7f3bd9dd623045ec004c89d72334d444748c7bc0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43474091"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048339"
 ---
 # <a name="targetedmanagedapppolicyassignment-resource-type"></a>Тип ресурса targetedManagedAppPolicyAssignment
 
@@ -54,6 +54,8 @@ ms.locfileid: "43474091"
   }
 }
 ```
+
+
 
 
 

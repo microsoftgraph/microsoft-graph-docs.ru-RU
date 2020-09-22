@@ -3,14 +3,14 @@ title: Тип ресурса Впнрауте
 description: Определение маршрута VPN.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1ee8e52bb838a688f11d4242ce85241fe0c06122
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 27c0fec6efc67a4b96ba6718fb624faf2ed3713f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43420327"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048983"
 ---
 # <a name="vpnroute-resource-type"></a>Тип ресурса Впнрауте
 
@@ -25,7 +25,7 @@ ms.locfileid: "43420327"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|дестинатионпрефикс|String|Префикс назначения (IPv4/V6-адрес).|
+|дестинатионпрефикс|Строка|Префикс назначения (IPv4/V6-адрес).|
 |префикссизе|Int32|Размер префикса. (1-32). Допустимые значения — от 1 до 32|
 
 ## <a name="relationships"></a>Связи
@@ -45,6 +45,9 @@ ms.locfileid: "43420327"
   "prefixSize": 1024
 }
 ```
+
+
+
 
 
 

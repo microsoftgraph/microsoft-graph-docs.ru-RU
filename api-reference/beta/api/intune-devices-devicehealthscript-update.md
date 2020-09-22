@@ -3,14 +3,14 @@ title: Обновление Девицехеалсскрипт
 description: Обновление свойств объекта Девицехеалсскрипт.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5acd729b38bff70c2d44494528130517dae7c764
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 9389f389dce2a28e8ddd74295a7c9df3519defce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176815"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050782"
 ---
 # <a name="update-devicehealthscript"></a>Обновление Девицехеалсскрипт
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Уникальный идентификатор сценария работоспособности устройства|
-|publisher|Строка|Имя издателя сценария работоспособности устройства|
+|publisher|String|Имя издателя сценария работоспособности устройства|
 |version|String|Версия сценария работоспособности устройства|
 |displayName|Строка|Имя сценария работоспособности устройства|
 |description|String|Описание сценария работоспособности устройства|
@@ -65,7 +65,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 |runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
 |Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта|
 |runAs32Bit|Boolean|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
-|roleScopeTagIds|Коллекция объектов string|Список идентификаторов тегов области для сценария работоспособности устройства|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для сценария работоспособности устройства|
 |исглобалскрипт|Boolean|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
 |хигхеставаилаблеверсион|Строка|Самая высокая доступная версия для собственного сценария Майкрософт|
 |детектионскриптпараметерс|Коллекция [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов Детектионскриптпараметерс в ComplexType.|
@@ -73,7 +73,7 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -172,6 +172,9 @@ Content-Length: 1393
   ]
 }
 ```
+
+
+
 
 
 

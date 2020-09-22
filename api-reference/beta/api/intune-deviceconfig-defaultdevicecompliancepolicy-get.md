@@ -3,14 +3,14 @@ title: Получение Дефаултдевицекомплианцеполи
 description: Чтение свойств и связей объекта Дефаултдевицекомплианцеполици.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2315bf2cea2ced96cbde1dbb26af70a033882a95
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 40d73ed6e3f3b35d7d7625c6d916c64c7c1f59bf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434361"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050943"
 ---
 # <a name="get-defaultdevicecompliancepolicy"></a>Получение Дефаултдевицекомплианцеполици
 
@@ -49,10 +49,10 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [дефаултдевицекомплианцеполици](../resources/intune-deviceconfig-defaultdevicecompliancepolicy.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -85,6 +85,9 @@ Content-Length: 440
   }
 }
 ```
+
+
+
 
 
 

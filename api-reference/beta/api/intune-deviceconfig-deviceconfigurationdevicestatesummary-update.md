@@ -3,14 +3,14 @@ title: Обновление объекта deviceConfigurationDeviceStateSummary
 description: Обновление свойств объекта deviceConfigurationDeviceStateSummary.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5422b0ea7b611ee115e4a0f2f03930b7ade176bf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 643381ade45950edfc2ec2cd300c657a04783630
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433451"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050838"
 ---
 # <a name="update-deviceconfigurationdevicestatesummary"></a>Обновление объекта deviceConfigurationDeviceStateSummary
 
@@ -46,14 +46,14 @@ PATCH /deviceManagement/deviceConfigurationDeviceStateSummaries
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств.|
 |notApplicableDeviceCount|Int32|Количество неприменимых устройств.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
@@ -107,6 +107,9 @@ Content-Length: 339
   "conflictDeviceCount": 3
 }
 ```
+
+
+
 
 
 

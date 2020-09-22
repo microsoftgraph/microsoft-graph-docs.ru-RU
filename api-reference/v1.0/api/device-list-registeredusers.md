@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 868fa7203af4cb8b821d0a69b3fb75e375499b14
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 41d881410aa46aca32d113fb1f7d5875693bed10
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463995"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048703"
 ---
 # <a name="list-registeredusers"></a>Список registeredUsers
 
@@ -46,7 +46,7 @@ GET /devices/{id}/registeredUsers
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/v1.0/devices/{id}/registeredUsers
 
 ---
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -112,3 +112,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

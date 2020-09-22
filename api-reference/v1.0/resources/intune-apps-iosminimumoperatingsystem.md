@@ -3,14 +3,14 @@ title: Тип ресурса iosMinimumOperatingSystem
 description: Содержит свойства для минимальной версии операционной системы, необходимой для мобильного приложения iOS.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4f3402155831e5cd77de26f13966061b0a7092a5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 06b72a0ae70c9720298cb23efcd6967602a47990
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43474574"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048556"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Тип ресурса iosMinimumOperatingSystem
 
@@ -51,6 +51,8 @@ ms.locfileid: "43474574"
   "v13_0": true
 }
 ```
+
+
 
 
 

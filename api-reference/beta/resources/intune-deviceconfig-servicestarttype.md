@@ -3,14 +3,14 @@ title: тип перечисления Сервицестарттипе
 description: Возможные значения типа запуска службы Xbox
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c7f670fed5ee7859a44fb8c3288ae956b6a4d4a4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 71e02102b1637ad4ccad675dd5ea0fd25508e711
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469660"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049438"
 ---
 # <a name="servicestarttype-enum-type"></a>тип перечисления Сервицестарттипе
 
@@ -26,8 +26,11 @@ ms.locfileid: "43469660"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Вручную|нуль|Тип запуска службы вручную (по умолчанию)|
-|Автоматически|1,1|Автоматический тип запуска службы|
-|отключено|2|Отключенный тип запуска службы|
+|Автоматически|1 |Автоматический тип запуска службы|
+|отключено|2 |Отключенный тип запуска службы|
+
+
+
 
 
 

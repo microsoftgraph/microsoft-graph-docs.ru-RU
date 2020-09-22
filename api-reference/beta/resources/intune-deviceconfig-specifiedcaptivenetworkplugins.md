@@ -3,14 +3,14 @@ title: Тип ресурса СпеЦифиедкаптивенетворкпл�
 description: Задает все сетевые подключаемые модули, разрешенные во время VPN-подключения IKEv2 AlwaysOn.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6752e045817e9a03eefae178d7df15d152f0ea58
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 91dde3ebe3508a137d9c01fdd7ee055ba421d6ff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412771"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049284"
 ---
 # <a name="specifiedcaptivenetworkplugins-resource-type"></a>Тип ресурса СпеЦифиедкаптивенетворкплугинс
 
@@ -25,7 +25,7 @@ ms.locfileid: "43412771"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедбундлеидентифиерс|Коллекция объектов string|Адрес сервера IKEv2. Должно быть полным доменным именем, Усерфкдн, сетевым адресом или ASN1DN|
+|алловедбундлеидентифиерс|Коллекция String|Адрес сервера IKEv2. Должно быть полным доменным именем, Усерфкдн, сетевым адресом или ASN1DN|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -45,6 +45,9 @@ ms.locfileid: "43412771"
   ]
 }
 ```
+
+
+
 
 
 

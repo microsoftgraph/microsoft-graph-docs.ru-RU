@@ -3,14 +3,14 @@ title: тип перечисления Ситесекуритилевел
 description: Возможные значения для уровня безопасности сайта.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8906bb409dad0e758104e6c71596cd6a6fa6ea30
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ed5bda11426b66895d91e17848453d796ab84aa3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412897"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049312"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>тип перечисления Ситесекуритилевел
 
@@ -26,11 +26,14 @@ ms.locfileid: "43412897"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|потребление|1,1|Потребление.|
-|медиумлов|2|Средняя — минимальная.|
+|потребление|1 |Потребление.|
+|медиумлов|2 |Средняя — минимальная.|
 |medium|4|Средний.|
 |медиумхигх|4 |Умеренно высокий.|
 |высокоуровневых|5 |Высокоуровневых.|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Получение Усерекспериенцеаналитиксдев
 description: Чтение свойств и связей объекта Усерекспериенцеаналитиксдевицеперформанце.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 14a7afbb519a4b67019f6cf03acef7adfd80bcbc
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 007bacb2d6a94e658519b23a90ea888bd53f1d9c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791444"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050649"
 ---
 # <a name="get-userexperienceanalyticsdeviceperformance"></a>Получение Усерекспериенцеаналитиксдевицеперформанце
 
@@ -29,7 +29,7 @@ ms.locfileid: "46791444"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,7 +52,7 @@ GET /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperienceAn
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -95,6 +95,9 @@ Content-Length: 743
   }
 }
 ```
+
+
+
 
 
 

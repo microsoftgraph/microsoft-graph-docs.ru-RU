@@ -3,14 +3,14 @@ title: тип перечисления Рекуиредпассвордтипе
 description: Возможные значения обязательных паролей.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 84b2b5516effa0f0100f19611c27f33e193a27a8
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 3926deef7ab7a0bd47784c13fba8a0cf1006e5ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43449712"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049571"
 ---
 # <a name="requiredpasswordtype-enum-type"></a>тип перечисления Рекуиредпассвордтипе
 
@@ -28,6 +28,9 @@ ms.locfileid: "43449712"
 |девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
 |цифрового|1 |Необходимо указать буквенно-цифровой пароль.|
 |числовых|2 |Необходим числовой пароль.|
+
+
+
 
 
 

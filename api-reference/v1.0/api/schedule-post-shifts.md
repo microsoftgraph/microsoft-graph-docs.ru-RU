@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c714d4ddf6423c524d3bb3382bf6f2f9222a48c5
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: f3e46b510cbee338b123ec771dc1571eed2963f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44218362"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051223"
 ---
 # <a name="create-shift"></a>Создание смены
 
@@ -45,7 +45,7 @@ POST /teams/{teamId}/schedule/shifts
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [сдвига](../resources/shift.md) в тексте отклика.
 
@@ -203,3 +203,4 @@ Content-length: 401
   ]
 }
 -->
+

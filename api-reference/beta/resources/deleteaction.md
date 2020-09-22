@@ -6,12 +6,12 @@ title: DeleteAction
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 453be9ad3764081207cfa51e56b69111186ff87b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b8f00827a37ba9c010acd1b52e751bd55638afb3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507277"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049886"
 ---
 # <a name="deleteaction-resource-type"></a>Тип ресурса DeleteAction
 
@@ -43,7 +43,7 @@ ms.locfileid: "42507277"
 | Имя свойства | Тип   | Описание
 |:--------------|:-------|:----------------------------------------------------
 | name          | string | Имя элемента, который был удален.
-| objectType    | string | `File`или `Folder`, в зависимости от типа удаленного элемента.
+| objectType    | string | `File` или `Folder` , в зависимости от типа удаленного элемента.
 
 ## <a name="remarks"></a>Замечания
 
@@ -59,3 +59,5 @@ ms.locfileid: "42507277"
   "suppressions": []
 }
 -->
+
+

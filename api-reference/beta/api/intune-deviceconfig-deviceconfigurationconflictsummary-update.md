@@ -3,14 +3,14 @@ title: Обновление Девицеконфигуратионконфлик
 description: Обновление свойств объекта Девицеконфигуратионконфликтсуммари.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a07341a3286b946c3a5630f4a765f9f1b59cd1c0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a148e34cca7167e82929925135ff547fe4bfdedb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433527"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050831"
 ---
 # <a name="update-deviceconfigurationconflictsummary"></a>Обновление Девицеконфигуратионконфликтсуммари
 
@@ -46,7 +46,7 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицеконфигуратионконфликтсуммари](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеконфигуратионконфликтсуммари](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md).
@@ -54,13 +54,13 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |конфликтингдевицеконфигуратионс|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Набор политик в конфликте с заданным параметром|
-|id|String|Идентификатор этого набора конфликтующих политик. Этот идентификатор — идентификаторы всех политик в Конфликтингдевицеконфигуратионс в лексикографикал порядке, разделенных символами подчеркивания.|
-|контрибутингсеттингс|Коллекция объектов string|Набор параметров в конфликте с заданными политиками|
+|id|Строка|Идентификатор этого набора конфликтующих политик. Этот идентификатор — идентификаторы всех политик в Конфликтингдевицеконфигуратионс в лексикографикал порядке, разделенных символами подчеркивания.|
+|контрибутингсеттингс|Коллекция String|Набор параметров в конфликте с заданными политиками|
 |девицечеккинсимпактед|Int32|Число возвратов, затронутых конфликтующими политиками и параметрами|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеконфигуратионконфликтсуммари](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -70,7 +70,7 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationConflictSummaryId}
 Content-type: application/json
-Content-length: 361
+Content-length: 398
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationConflictSummary",
@@ -78,7 +78,8 @@ Content-length: 361
     {
       "@odata.type": "microsoft.graph.settingSource",
       "id": "Id value",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "sourceType": "deviceIntent"
     }
   ],
   "contributingSettings": [
@@ -93,7 +94,7 @@ Content-length: 361
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 410
+Content-Length: 447
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationConflictSummary",
@@ -101,7 +102,8 @@ Content-Length: 410
     {
       "@odata.type": "microsoft.graph.settingSource",
       "id": "Id value",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "sourceType": "deviceIntent"
     }
   ],
   "id": "d5f22c23-2c23-d5f2-232c-f2d5232cf2d5",
@@ -111,6 +113,9 @@ Content-Length: 410
   "deviceCheckinsImpacted": 6
 }
 ```
+
+
+
 
 
 

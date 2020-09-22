@@ -3,14 +3,14 @@ title: тип перечисления windows10EditionType
 description: Тип выпуска Windows 10.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 714948d1f102f1b7e16b00ac2872b296c456e498
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 92a6f2450987196d781d84c6425e5a1d53498d2c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472464"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048451"
 ---
 # <a name="windows10editiontype-enum-type"></a>тип перечисления windows10EditionType
 
@@ -24,8 +24,8 @@ ms.locfileid: "43472464"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |windows10Enterprise|нуль|Windows 10 Корпоративная|
-|windows10EnterpriseN|1,1|Windows 10 Ентерприсен|
-|windows10Education|2|Windows 10 для образовательных учреждений|
+|windows10EnterpriseN|1 |Windows 10 Ентерприсен|
+|windows10Education|2 |Windows 10 для образовательных учреждений|
 |windows10EducationN|4|Windows 10 Едукатионн|
 |windows10MobileEnterprise|4 |Windows 10 Mobile корпоративный|
 |windows10HolographicEnterprise|5 |Windows 10 holographic Корпоративная|
@@ -35,6 +35,8 @@ ms.locfileid: "43472464"
 |windows10ProfessionalEducationN|9 |Windows 10 профессиональная Едукатионн|
 |windows10ProfessionalWorkstation|10 |Windows 10 профессиональная для рабочих станций|
 |windows10ProfessionalWorkstationN|11 |Windows 10 профессиональная для рабочих станций N|
+
+
 
 
 

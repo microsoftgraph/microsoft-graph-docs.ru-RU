@@ -3,14 +3,14 @@ title: тип перечисления Впнинтегритялгорисмт�
 description: Тип алгоритма проверки подлинности сопоставления VPN
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 794a0b37f31b54e48dcfcecf388bdfae2c47ae5f
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 22dcaf688a937cebc2bbced661262ebcc3bac54d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793663"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049044"
 ---
 # <a name="vpnintegrityalgorithmtype-enum-type"></a>тип перечисления Впнинтегритялгорисмтипе
 
@@ -27,10 +27,13 @@ ms.locfileid: "44793663"
 |:---|:---|:---|
 |sha2_256|нуль|SHA2 — 256|
 |sha1_96|1 |SHA1 — 96|
-|sha1_160|2|SHA1 – 160|
+|sha1_160|2 |SHA1 – 160|
 |sha2_384|4|SHA2 — 384|
 |sha2_512|4 |SHA2 — 512|
 |алгоритм|5 |MD5|
+
+
+
 
 
 

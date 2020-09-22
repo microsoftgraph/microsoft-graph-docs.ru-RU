@@ -3,14 +3,14 @@ title: Удаление Усерекспериенцеаналитиксдеви
 description: Удаляет объект Усерекспериенцеаналитиксдевицеперформанце.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 789c09eadd39e96eea0f7a0bec0ce5b74a6425c0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2dec537dfdeceda51afc735679dd96e541f6f89a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43322528"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050656"
 ---
 # <a name="delete-userexperienceanalyticsdeviceperformance"></a>Удаление Усерекспериенцеаналитиксдевицеперформанце
 
@@ -46,10 +46,10 @@ DELETE /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperienc
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -60,11 +60,14 @@ DELETE /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperienc
 DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperienceAnalyticsDevicePerformanceId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

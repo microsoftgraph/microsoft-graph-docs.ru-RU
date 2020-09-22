@@ -3,14 +3,14 @@ title: Тип ресурса settingSource
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 258633dc9e9893335e3859ec62bee4b5aa3b24c3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4552472cef78f5c0304b56026baebdc8d75aaac9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444827"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049431"
 ---
 # <a name="settingsource-resource-type"></a>Тип ресурса settingSource
 
@@ -20,15 +20,16 @@ ms.locfileid: "43444827"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Пока не задокументировано
+Н/Д
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
+|id|Строка|Пока не задокументировано.|
 |displayName|Строка|Пока не задокументировано.|
+|sourceType|[сеттингсаурцетипе](../resources/intune-shared-settingsourcetype.md)|Еще не задокументировано. Возможные значения: `deviceConfiguration`, `deviceIntent`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,9 +43,13 @@ ms.locfileid: "43444827"
 {
   "@odata.type": "#microsoft.graph.settingSource",
   "id": "String (identifier)",
-  "displayName": "String"
+  "displayName": "String",
+  "sourceType": "String"
 }
 ```
+
+
+
 
 
 

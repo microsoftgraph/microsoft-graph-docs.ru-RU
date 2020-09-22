@@ -3,14 +3,14 @@ title: Получение Девицеконфигуратионконфликт
 description: Чтение свойств и связей объекта Девицеконфигуратионконфликтсуммари.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 64c33c7cca4b5981cadb8b3f05a33198a181a3ea
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 780441166cdaa3040ee8eb2015dd5960f5800127
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43433565"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050922"
 ---
 # <a name="get-deviceconfigurationconflictsummary"></a>Получение Девицеконфигуратионконфликтсуммари
 
@@ -49,10 +49,10 @@ GET /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationCon
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [девицеконфигуратионконфликтсуммари](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationConflic
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 455
+Content-Length: 494
 
 {
   "value": {
@@ -77,7 +77,8 @@ Content-Length: 455
       {
         "@odata.type": "microsoft.graph.settingSource",
         "id": "Id value",
-        "displayName": "Display Name value"
+        "displayName": "Display Name value",
+        "sourceType": "deviceIntent"
       }
     ],
     "id": "d5f22c23-2c23-d5f2-232c-f2d5232cf2d5",
@@ -88,6 +89,9 @@ Content-Length: 455
   }
 }
 ```
+
+
+
 
 
 

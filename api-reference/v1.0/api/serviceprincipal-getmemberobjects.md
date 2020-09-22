@@ -1,22 +1,22 @@
 ---
 title: 'servicePrincipal: getMemberObjects'
-description: Список групп и ролей каталога, в которых участвует субъект-служба.  Эта проверка является транзитивным.
+description: Получение списка групп и ролей каталога, в которых участвует субъект-служба.  Это транзитивная проверка.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 76c25cfccb0455db4e6c5837fdb627ac067a3d3c
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 0b88be8f3318d7675cdb8538d785748293b2fbc1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44384003"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048563"
 ---
 # <a name="serviceprincipal-getmemberobjects"></a>servicePrincipal: getMemberObjects
 
 Пространство имен: microsoft.graph
 
-Получение списка групп и ролей каталогов, участником которых является данный [servicePrincipal](../resources/serviceprincipal.md) .  Эта проверка является транзитивным.
+Получение списка групп и ролей каталога, в которых участвует [servicePrincipal](../resources/serviceprincipal.md).  Это транзитивная проверка.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,11 +44,11 @@ POST /servicePrincipals/{id}/getMemberObjects
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Логическое||
+|securityEnabledOnly|Boolean||
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции String в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции строк в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 Ниже приведен пример вызова этого API.
@@ -123,3 +123,4 @@ Content-length: 39
   ]
 }
 -->
+

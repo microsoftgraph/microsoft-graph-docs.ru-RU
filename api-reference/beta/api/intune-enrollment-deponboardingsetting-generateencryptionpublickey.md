@@ -3,14 +3,14 @@ title: действие Женератинкриптионпубликкэй
 description: Создание открытого ключа, используемого для шифрования маркера программы регистрации устройств Apple
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f0bbabc3b3a6e0d8f150e7978c441a05381c9b41
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0fc81acabcc9ccc6349e765a6a0227782986d391
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444783"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050551"
 ---
 # <a name="generateencryptionpublickey-action"></a>действие Женератинкриптионпубликкэй
 
@@ -46,10 +46,10 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/generateEn
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении это действие возвращает код отклика `200 OK` и объект String в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -71,6 +71,9 @@ Content-Length: 55
   "value": "Generate Encryption Public Key value"
 }
 ```
+
+
+
 
 
 

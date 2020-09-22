@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0edcb4af5ae6bbc154d0748b57ec83efcb3137f0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: df7e9ce4491ea7a887b79f79d354c9099ea9f5d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508228"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050149"
 ---
 # <a name="approvalstage-complex-type"></a>сложный тип Аппровалстаже
 
@@ -67,3 +67,5 @@ ms.locfileid: "42508228"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

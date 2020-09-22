@@ -3,14 +3,14 @@ title: тип перечисления Виклисчедуле
 description: Возможные значения для еженедельного расписания.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 10b7f842cc369534b3c0aaa6c9a7af6c1ad322b6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 012d6f0c00adb2b527fe477ab1226b39db93fa88
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472499"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048472"
 ---
 # <a name="weeklyschedule-enum-type"></a>тип перечисления Виклисчедуле
 
@@ -24,14 +24,16 @@ ms.locfileid: "43472499"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|решения|1,1|Решения.|
-|воскресеньям|2|Воскресеньям.|
+|решения|1 |Решения.|
+|воскресеньям|2 |Воскресеньям.|
 |Вторник|4|Вторник.|
 |во|4 |Во.|
 |Четверг|5 |Четверг.|
 |Пятница|6 |Пятница.|
 |пятницам|7 |Пятницам.|
 |субботу|8 |Субботу.|
+
+
 
 
 

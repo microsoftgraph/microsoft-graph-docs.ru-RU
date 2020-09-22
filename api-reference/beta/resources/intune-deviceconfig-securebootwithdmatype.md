@@ -3,14 +3,14 @@ title: тип перечисления Секуребутвисдматипе
 description: Возможные значения безопасной загрузки с DMA
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 05456114cf3b271e476e6c891ac45755f4cebdd9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 72213d02c4914dcc172ed1742951034b85062efc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444834"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049445"
 ---
 # <a name="securebootwithdmatype-enum-type"></a>тип перечисления Секуребутвисдматипе
 
@@ -26,8 +26,11 @@ ms.locfileid: "43444834"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроено, нет операции|
-|висаутдма|1,1|Включение VBS с безопасной загрузкой|
+|висаутдма|1 |Включение VBS с безопасной загрузкой|
 |висдма|4|Включение VBS с безопасной загрузкой и DMA|
+
+
+
 
 
 

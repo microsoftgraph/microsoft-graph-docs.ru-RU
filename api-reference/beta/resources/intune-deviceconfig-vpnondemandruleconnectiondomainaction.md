@@ -3,14 +3,14 @@ title: тип перечисления Впнондемандрулеконне�
 description: Действие домена подключения к VPN-запросу с правилом.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7c5d9289d320924bfe73d404f59444cb754c18c3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3a603e14b0927431a9ccf8fd44b0da43ce0be876
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412071"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049011"
 ---
 # <a name="vpnondemandruleconnectiondomainaction-enum-type"></a>тип перечисления Впнондемандрулеконнектиондомаинактион
 
@@ -26,7 +26,10 @@ ms.locfileid: "43412071"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |коннектифнидед|нуль|При необходимости подключаться.|
-|неверконнект|1,1|Никогда не подключаться.|
+|неверконнект|1 |Никогда не подключаться.|
+
+
+
 
 
 

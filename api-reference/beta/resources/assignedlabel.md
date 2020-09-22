@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: b5b1072a2678e395976f2acd797182cbdfb3ee40
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 8ef079363d4951f269ea509534cecd2e6ae2a0f9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897164"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48050108"
 ---
 # <a name="assignedlabel-resource-type"></a>Тип ресурса Ассигнедлабел
 
@@ -23,8 +23,8 @@ ms.locfileid: "44897164"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|лабелид|String|Уникальный идентификатор метки.|
-|displayName|String|Отображаемое имя метки. Только для чтения.|
+|лабелид|Строка|Уникальный идентификатор метки.|
+|displayName|Строка|Отображаемое имя метки. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -59,3 +59,5 @@ ms.locfileid: "44897164"
   "suppressions": []
 }
 -->
+
+

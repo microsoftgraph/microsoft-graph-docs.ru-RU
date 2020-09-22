@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 4d7399f45138d6ab7d82f33e6577e7d08967ad15
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: 8f89d2d4daa45d1043e3412852cdaa480223129b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863700"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48048731"
 ---
 # <a name="printmargin-complex-type"></a>сложный тип Принтмаргин
 
@@ -58,3 +58,5 @@ ms.locfileid: "44863700"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

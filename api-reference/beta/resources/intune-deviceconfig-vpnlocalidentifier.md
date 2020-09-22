@@ -3,14 +3,14 @@ title: тип перечисления Впнлокалидентифиер
 description: Тип локального идентификатора VPN
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c2dac49087edb0d21e640896fab5d012f6ef86b3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e6488dfa6ff9be571bac32cca0af35e24204d5cb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43412156"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48049045"
 ---
 # <a name="vpnlocalidentifier-enum-type"></a>тип перечисления Впнлокалидентифиер
 
@@ -26,8 +26,11 @@ ms.locfileid: "43412156"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |девицефкдн|нуль|Полное доменное имя устройства|
-|empty|1,1|переменная Empty|
-|клиентцертификатесубжектнаме|2|Имя субъекта сертификата клиента|
+|пусто|1 |переменная Empty|
+|клиентцертификатесубжектнаме|2 |Имя субъекта сертификата клиента|
+
+
+
 
 
 

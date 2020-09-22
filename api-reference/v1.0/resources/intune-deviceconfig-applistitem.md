@@ -3,14 +3,14 @@ title: Тип ресурса appListItem
 description: Представляет приложение в списке управляемых приложений
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a018be94068c0edf478f78fc692b9abcd036a060
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a53da1a1e50b0537a20d763b49957369a28556ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43449164"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48051132"
 ---
 # <a name="applistitem-resource-type"></a>Тип ресурса appListItem
 
@@ -23,7 +23,7 @@ ms.locfileid: "43449164"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|name|Строка|Имя приложения|
+|name|String|Имя приложения|
 |publisher|String|Издатель приложения|
 |appStoreUrl|String|URL-адрес приложения в Магазине|
 |appId|String|Идентификатор приложения или его пакета|
@@ -47,6 +47,8 @@ ms.locfileid: "43449164"
   "appId": "String"
 }
 ```
+
+
 
 
 
