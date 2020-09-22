@@ -5,12 +5,12 @@ author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: b0337dfe620318482f3cc400512d5c381bf123a9
-ms.sourcegitcommit: 94c8985a3956622ea90f7e641f894d57b0982eb9
-ms.translationtype: MT
+ms.openlocfilehash: 5cdd723e9d73a0466ae4349026f6bf086cb9bdd2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44491884"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091868"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>Работа с API коммуникаций в Microsoft Graph
 
@@ -50,11 +50,12 @@ API коммуникаций можно использовать для созд
 | onlineMeeting                            | [свойства объекта onlineMeeting](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#properties)                     |
 | callRecord | [Свойства callRecord](/graph/api/resources/callrecords-callrecord#properties) |
 
-## <a name="whats-new"></a>Новые возможности
-Узнайте о [последних новых возможностях и обновлениях](/graph/whats-new-overview) для этого набора API.
+## <a name="whats-new"></a>Что нового
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
 
 ## <a name="see-also"></a>См. также
 
 - [Примеры API коммуникаций](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
 - [Пакет SDK для передачи сигналов коммуникаций](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls)
 - [Пакет SDK мультимедиа коммуникаций](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls.Media)
+

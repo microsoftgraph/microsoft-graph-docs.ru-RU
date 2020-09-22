@@ -3,14 +3,14 @@ title: Тип ресурса applePushNotificationCertificate
 description: Сертификат push-уведомлений Apple
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 79c7bcd1bfe7a1eac1820cbe7163cac0b2b5311e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2bbcca2707223f53b59d1b3d5d2ceb75ba08c57a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451318"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091322"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Тип ресурса applePushNotificationCertificate
 
@@ -30,7 +30,7 @@ ms.locfileid: "43451318"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сертификата|
+|id|Строка|Уникальный идентификатор сертификата|
 |appleIdentifier|String|Идентификатор Apple Id учетной записи, используемой для создания MDM Push Certificate.|
 |topicIdentifier|String|Идентификатор темы.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата push-уведомлений Apple.|
@@ -59,6 +59,8 @@ ms.locfileid: "43451318"
   "certificate": "String"
 }
 ```
+
+
 
 
 

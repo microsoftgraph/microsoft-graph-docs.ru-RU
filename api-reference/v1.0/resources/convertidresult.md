@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: svpsiva
-ms.openlocfilehash: 6eb66033ef1b0e345c3929982b9f08d6e4ce2573
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aa663420dd7b6e1c79e03af675b1f505c08cb875
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531746"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091854"
 ---
 # <a name="convertidresult-resource-type"></a>Тип ресурса Конвертидресулт
 
@@ -22,8 +22,8 @@ ms.locfileid: "42531746"
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
-| Идентификатор | String | Преобразованный идентификатор. Это значение является исходным непреобразуемым идентификатором. |
-| targetId | String | Преобразованный идентификатор. Это значение отсутствует, если произошел сбой преобразования. |
+| Идентификатор | Строка | Преобразованный идентификатор. Это значение является исходным непреобразуемым идентификатором. |
+| targetId | Строка | Преобразованный идентификатор. Это значение отсутствует, если произошел сбой преобразования. |
 | еррордетаилс | [женерицеррор](genericerror.md) | Объект Error, указывающий причину сбоя преобразования. Это значение отсутствует, если преобразование выполнено успешно. |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -48,3 +48,4 @@ ms.locfileid: "42531746"
   }
 }
 ```
+

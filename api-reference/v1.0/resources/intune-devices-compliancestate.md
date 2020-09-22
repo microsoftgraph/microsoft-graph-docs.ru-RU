@@ -3,14 +3,14 @@ title: тип перечисления Комплианцестате
 description: Состояние соответствия требованиям.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1c243145ee8511edb001ba2a55b3f72dde070297
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 24f7a2a62ae45504c03d2fcff49ca8f17bfab28b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451288"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091308"
 ---
 # <a name="compliancestate-enum-type"></a>тип перечисления Комплианцестате
 
@@ -24,12 +24,14 @@ ms.locfileid: "43451288"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Найден.|
-|совместимо|1,1|Совместимо.|
-|несоответствующих|2|Устройство не совместимо и заблокировано из корпоративных ресурсов.|
+|совместимо|1 |Совместимо.|
+|несоответствующих|2 |Устройство не совместимо и заблокировано из корпоративных ресурсов.|
 |противоречивы|4|Конфликт с другими правилами.|
 |error|4 |Ошибка|
 |инграцепериод|254|Устройство не соответствует требованиям, но имеет доступ к корпоративным ресурсам|
 |конфигманажер|255|Управление с помощью диспетчера конфигураций|
+
+
 
 
 

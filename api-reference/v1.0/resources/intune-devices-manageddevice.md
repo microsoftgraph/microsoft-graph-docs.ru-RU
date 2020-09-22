@@ -3,14 +3,14 @@ title: Тип ресурса managedDevice
 description: Устройства, которые управляются или предварительно регистрируются с помощью Intune
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cc519337284ac35d344876288826cf29a735da38
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 75a968f6f0539c3f1c136c2e1127fae39d9f58c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407007"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091147"
 ---
 # <a name="manageddevice-resource-type"></a>Тип ресурса managedDevice
 
@@ -24,8 +24,8 @@ ms.locfileid: "43407007"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Перечисление объектов managedDevice](../api/intune-devices-manageddevice-list.md)|Коллекция [managedDevice](../resources/intune-devices-manageddevice.md)|Перечисление свойств и связей объектов [managedDevice](../resources/intune-devices-manageddevice.md).|
-|[Получение объекта managedDevice](../api/intune-devices-manageddevice-get.md)|[managedDevice](../resources/intune-devices-manageddevice.md);|Чтение свойств и связей объекта [managedDevice](../resources/intune-devices-manageddevice.md).|
-|[Создание объекта managedDevice](../api/intune-devices-manageddevice-create.md)|[managedDevice](../resources/intune-devices-manageddevice.md);|Создание объекта [managedDevice](../resources/intune-devices-manageddevice.md).|
+|[Получение объекта managedDevice](../api/intune-devices-manageddevice-get.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|Чтение свойств и связей объекта [managedDevice](../resources/intune-devices-manageddevice.md).|
+|[Создание объекта managedDevice](../api/intune-devices-manageddevice-create.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|Создание объекта [managedDevice](../resources/intune-devices-manageddevice.md).|
 |[Удаление объекта managedDevice](../api/intune-devices-manageddevice-delete.md)|Нет|Удаление объекта [managedDevice](../resources/intune-devices-manageddevice.md).|
 |[Обновление объекта managedDevice](../api/intune-devices-manageddevice-update.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|Обновление свойств объекта [managedDevice](../resources/intune-devices-manageddevice.md).|
 |[Действие retire](../api/intune-devices-manageddevice-retire.md)|Нет|Прекращение использования устройства|
@@ -42,10 +42,10 @@ ms.locfileid: "43407007"
 |[Действие cleanWindowsDevice](../api/intune-devices-manageddevice-cleanwindowsdevice.md)|Нет|Очистка устройства с Windows|
 |[Действие logoutSharedAppleDeviceActiveUser](../api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser.md)|Нет|Выход от имени активного пользователя общего устройства Apple|
 |[Действие deleteUserFromSharedAppleDevice](../api/intune-devices-manageddevice-deleteuserfromsharedappledevice.md)|Нет|Удаление пользователя с общего устройства Apple|
-|[Действие syncDevice](../api/intune-devices-manageddevice-syncdevice.md)|None|Н/Д|
-|[Действие windowsDefenderScan](../api/intune-devices-manageddevice-windowsdefenderscan.md)|None|Н/Д|
-|[Действие windowsDefenderUpdateSignatures](../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md)|None|Н/Д|
-|[Действие updateWindowsDeviceAccount](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|Нет|Пока не задокументировано|
+|[Действие syncDevice](../api/intune-devices-manageddevice-syncdevice.md)|Нет|Н/Д|
+|[Действие windowsDefenderScan](../api/intune-devices-manageddevice-windowsdefenderscan.md)|Нет|Н/Д|
+|[Действие windowsDefenderUpdateSignatures](../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md)|Нет|Н/Д|
+|[Действие updateWindowsDeviceAccount](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -86,7 +86,7 @@ ms.locfileid: "43407007"
 |manufacturer|String|Производитель устройства|
 |imei|String|IMEI|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время истечения льготного периода соответствия устройства требованиям|
-|serialNumber|Строка|SerialNumber|
+|serialNumber|String|SerialNumber|
 |phoneNumber|String|Номер телефона устройства|
 |androidSecurityPatchLevel|String|Уровень обновления для системы безопасности Android|
 |userDisplayName|String|Отображаемое имя пользователя|
@@ -217,6 +217,8 @@ ms.locfileid: "43407007"
   "partnerReportedThreatState": "String"
 }
 ```
+
+
 
 
 

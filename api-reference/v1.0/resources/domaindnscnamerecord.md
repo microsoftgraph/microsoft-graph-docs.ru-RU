@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9aa4b443d6361a9d83a20d1c3e2e6345e7ee5809
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 9d2182ed121dbf303e3f9982c53655cecb6f4c10
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181660"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091721"
 ---
 # <a name="domaindnscnamerecord-resource-type"></a>Тип ресурса Домаинднскнамерекорд
 
@@ -19,18 +19,18 @@ ms.locfileid: "43181660"
 Представляет запись CNAME, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта [DomainDnsRecord](domaindnsrecord.md) .
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 Прямые запросы к этому ресурсу не поддерживаются. Сведения о том, как запросить записи службы домена, можно найти в разделе [domain](domain.md) .
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|каноникалнаме|String| Каноническое имя записи CNAME. Используется для настройки записи CNAME на узле DNS. |
-|id|String| Уникальный идентификатор, назначенный этой сущности. Не допускает значение null, доступно только для чтения|
+|каноникалнаме|Строка| Каноническое имя записи CNAME. Используется для настройки записи CNAME на узле DNS. |
+|id|Строка| Уникальный идентификатор, назначенный этой сущности. Не допускает значение null, доступно только для чтения|
 |Переключатель|Boolean| Если значение равно false, запись CNAME должна быть настроена клиентом на узле DNS для правильной работы Microsoft Online Services с доменом. Не допускает значение null |
-|label|String| Значение, используемое при настройке *псевдонима/узла или имени* записи CNAME на узле DNS. |
-|recordType|String| Тип записи DNS. Значение всегда равно *CNAME*. Key|
-|суппортедсервице|String| Служба или компонент Microsoft Online, который имеет зависимость от этой записи CNAME.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
+|label|Строка| Значение, используемое при настройке *псевдонима/узла или имени* записи CNAME на узле DNS. |
+|recordType|Строка| Тип записи DNS. Значение всегда равно *CNAME*. Key|
+|суппортедсервице|Строка| Служба или компонент Microsoft Online, который имеет зависимость от этой записи CNAME.</br></br>Может принимать одно из следующих значений: **null**, *Email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
 |используем|Int32| Значение, используемое при настройке свойства срока жизни (TTL) записи CNAME на узле DNS. Не допускает значение null |
 
 ## <a name="relationships"></a>Связи
@@ -71,3 +71,4 @@ ms.locfileid: "43181660"
   "section": "documentation",
   "tocPath": ""
 }-->
+

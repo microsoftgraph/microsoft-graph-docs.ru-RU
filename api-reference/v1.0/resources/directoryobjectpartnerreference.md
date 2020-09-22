@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 78d202cea4b092671a63870c7172dd31d3f70846
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cda40de50710c971970d64853b33eebbde8865a2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407090"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091770"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>Тип ресурса Директорйобжектпартнерреференце
 
@@ -22,10 +22,10 @@ ms.locfileid: "43407090"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|description|String| Описание возвращаемого объекта. Только для чтения. |
+|description|Строка| Описание возвращаемого объекта. Только для чтения. |
 |displayName|Строка| Имя возвращаемого объекта каталога, например Group или Application. Только для чтения. |
-|екстерналпартнертенантид|GUID| Идентификатор клиента для партнерского клиента. Только для чтения. |
-|id|String| Уникальный идентификатор ресурса. Наследуется от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Только для чтения. |
+|екстерналпартнертенантид|Guid| Идентификатор клиента для партнерского клиента. Только для чтения. |
+|id|Строка| Уникальный идентификатор ресурса. Наследуется от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Только для чтения. |
 |objectType|String| Тип упоминаемого объекта в партнерской клиенте. Только для чтения. |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -64,3 +64,4 @@ ms.locfileid: "43407090"
   "suppressions": []
 }
 -->
+

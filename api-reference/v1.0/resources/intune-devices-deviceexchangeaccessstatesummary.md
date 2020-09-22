@@ -3,14 +3,14 @@ title: Тип ресурса deviceExchangeAccessStateSummary
 description: Сводка по состоянию доступа к Exchange для устройств
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 25bc1fe1592b2aa1a1f0cde1b4bf45b6092a36d9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fb64307c12dcaf7b4e4fd0443001db7c6190c6fe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43407038"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091259"
 ---
 # <a name="deviceexchangeaccessstatesummary-resource-type"></a>Тип ресурса deviceExchangeAccessStateSummary
 
@@ -49,6 +49,8 @@ ms.locfileid: "43407038"
   "unavailableDeviceCount": 1024
 }
 ```
+
+
 
 
 

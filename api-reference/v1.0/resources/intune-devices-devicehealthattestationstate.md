@@ -3,14 +3,14 @@ title: Тип ресурса deviceHealthAttestationState
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 41c9fd4f09749857c9aeb588086ef23ce5775d48
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9a4e9b7e916f33bc6c472c5c90bd440a246f7016
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454006"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091203"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>Тип ресурса deviceHealthAttestationState
 
@@ -103,6 +103,8 @@ ms.locfileid: "43454006"
   "healthAttestationSupportedStatus": "String"
 }
 ```
+
+
 
 
 

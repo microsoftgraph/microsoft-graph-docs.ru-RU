@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс dateTimeColumn в ресурсе columnDefinition указывает, что значения столбца представляют собой даты или время.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 4c3f5fa00af8b04753f6581120760b5a57a9e08a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 37ae27f2ae9b74612895784e69752d37ef976b04
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531723"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091840"
 ---
 # <a name="datetimecolumn-resource-type"></a>Тип ресурса dateTimeColumn
 
@@ -63,3 +63,4 @@ ms.locfileid: "42531723"
   ],
   "tocPath": "Resources/DateTimeColumn"
 } -->
+

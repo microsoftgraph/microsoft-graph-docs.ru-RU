@@ -3,14 +3,14 @@ title: тип перечисления Сафесеарчфилтертипе
 description: Указывает, какой уровень безопасного поиска (фильтрация содержимого для взрослых) является обязательным
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7b9beb5f96cfbbe900c7aa655150d62497629a3e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 194344e7403e678edaf2a4a04eab9c9564ddc9a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472676"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091637"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>тип перечисления Сафесеарчфилтертипе
 
@@ -24,8 +24,10 @@ ms.locfileid: "43472676"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|жестк|1,1|Максимальная фильтрация с использованием содержимого для взрослых.|
-|средние|2|Умеренная фильтрация содержимого для взрослых (допустимые результаты поиска не будут фильтроваться).|
+|жестк|1 |Максимальная фильтрация с использованием содержимого для взрослых.|
+|средние|2 |Умеренная фильтрация содержимого для взрослых (допустимые результаты поиска не будут фильтроваться).|
+
+
 
 
 

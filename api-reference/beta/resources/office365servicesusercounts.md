@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 8600e79d425d15746fd7015adea98eb49a8a3c82
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 80bfb483e7e15dcdaffb6a8ba8ed30c8bb508f5c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896555"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092358"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>Тип ресурса office365ServicesUserCounts
 
@@ -35,7 +35,7 @@ ms.locfileid: "44896555"
 | теамсинактиве            | Int64  | Количество неактивных пользователей в Microsoft Teams.     |
 | office365Active          | Int64  | Количество активных пользователей в Microsoft 365.   |
 | office365Inactive        | Int64  | Количество неактивных пользователей в Microsoft 365.     |
-| репортпериод             | String | Количество дней, охватываемых отчетом.    |
+| репортпериод             | Строка | Количество дней, охватываемых отчетом.    |
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -66,3 +66,5 @@ ms.locfileid: "44896555"
   "reportPeriod": "String"
 }
 ```
+
+

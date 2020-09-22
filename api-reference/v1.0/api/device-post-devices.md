@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 396d74e2ef423b8efd61877b1a2b1fd8fdeee371
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d6096257131256cb583a23ef1bc29397fa2d2f62
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466713"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092274"
 ---
 # <a name="create-device"></a>Создание устройства
 
@@ -26,7 +26,7 @@ ms.locfileid: "43466713"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Device.ReadWrite.All |
+|Для приложения | Device.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ POST /devices
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
@@ -94,7 +94,7 @@ Content-type: application/json
 ---
 
 Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -133,3 +133,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

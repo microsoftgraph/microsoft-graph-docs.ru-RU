@@ -3,14 +3,14 @@ title: Тип ресурса windows10NetworkProxyServer
 description: Политика прокси-сервера сети.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c409c5d9db30d01acbd080d4bc38f96b22d3534a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 58fd5fb0e46b7458cf9c96c4f1b5d541ba60bf3b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451571"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091581"
 ---
 # <a name="windows10networkproxyserver-resource-type"></a>Тип ресурса windows10NetworkProxyServer
 
@@ -23,7 +23,7 @@ ms.locfileid: "43451571"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|address|String|Адрес прокси-сервера. Укажите адрес в поле "сервер \<\>\[формата:\<порт".\>\]|
+|address|String|Адрес прокси-сервера. Укажите адрес в формате \<server\> \[ :\<port\>\]|
 |exceptions|Коллекция String|Адреса, которые не должны использовать прокси-сервер. Система не использует прокси-сервер для адресов, начинающихся, как указано в этом узле.|
 |useForLocalAddresses|Boolean|Определяет необходимость использования прокси-сервера для локальных адресов (в интрасети).|
 
@@ -47,6 +47,8 @@ ms.locfileid: "43451571"
   "useForLocalAddresses": true
 }
 ```
+
+
 
 
 

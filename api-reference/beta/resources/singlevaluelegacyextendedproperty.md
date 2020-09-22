@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: 41857d57010265d7942e0d1694191ee5acf3c4d1
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: bb602443589faf61bbd66033e1c462d8e30f2e0b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849746"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48092295"
 ---
 # <a name="singlevaluelegacyextendedproperty-resource-type"></a>Тип ресурса singleValueLegacyExtendedProperty
 
@@ -29,13 +29,13 @@ ms.locfileid: "46849746"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Post](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) | Поддерживаемый экземпляр ресурса: [message,](../resources/message.md) [mailFolder,](../resources/mailfolder.md) [event,](../resources/event.md) [calendar,](../resources/calendar.md) [contact,](../resources/contact.md) [contactFolder,](../resources/contactfolder.md) [Outlook task](../resources/outlooktask.md)или [Outlook folder,](../resources/outlooktaskfolder.md)но не [записи в группе.](../resources/post.md) | Создание объекта **singleValueLegacyExtendedProperty** в новом или существующем экземпляре поддерживаемого ресурса. |
-|[Получение](../api/singlevaluelegacyextendedproperty-get.md) |Один или коллекция поддерживаемых экземпляров ресурса[(message,](../resources/message.md) [mailFolder,](../resources/mailfolder.md) [event,](../resources/event.md) [calendar,](../resources/calendar.md) [contactFolder,](../resources/contactfolder.md) [Outlook task,](../resources/outlooktask.md) [папка задач Outlook,](../resources/outlooktaskfolder.md) [запись](../resources/post.md)группы), либо один такой экземпляр, дополненный [объектом singleValueLegacyExtendedProperty.](singlevaluelegacyextendedproperty.md) [contact](../resources/contact.md) |Получение экземпляра ресурса с расширенным свойством с помощью параметра `$expand` или `$filter`.|
+|[Post](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) | Поддерживаемый экземпляр ресурса: [Message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [Calendar](../resources/calendar.md), [Contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), [Task Task](../resources/outlooktask.md)или [Outlook Task](../resources/outlooktaskfolder.md), но не [разноски](../resources/post.md)группы. | Создание объекта **singleValueLegacyExtendedProperty** в новом или существующем экземпляре поддерживаемого ресурса. |
+|[Получение](../api/singlevaluelegacyextendedproperty-get.md) |Один или коллекция поддерживаемых экземпляров ресурса ([Message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), [Calendar](../resources/calendar.md), [Contact](../resources/contact.md), [contactFolder](../resources/contactfolder.md), [Task Task](../resources/outlooktask.md), [Outlook Task Folder](../resources/outlooktaskfolder.md)или [POST Group POST](../resources/post.md)) или одного такого экземпляра, развернутого с помощью объекта [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) . |Получение экземпляра ресурса с расширенным свойством с помощью параметра `$expand` или `$filter`.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|строка|Идентификатор свойства. Только для чтения.|
+|id|string|Идентификатор свойства. Только для чтения.|
 |значение|string|Значение свойства.|
 
 ## <a name="relationships"></a>Связи
@@ -74,3 +74,5 @@ ms.locfileid: "46849746"
   "suppressions": []
 }
 -->
+
+
