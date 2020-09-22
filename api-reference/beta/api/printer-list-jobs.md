@@ -5,63 +5,63 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d442f39a0327c511a105b420fd57b775c6f06853
-ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
+ms.openlocfilehash: ea0cc63521ccaac667abe5ef62baf47cabb4c152
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "47400416"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035659"
 ---
-# <a name="list-printjobs"></a><span data-ttu-id="3a259-103">Список Принтжобс</span><span class="sxs-lookup"><span data-stu-id="3a259-103">List printJobs</span></span>
+# <a name="list-printjobs"></a><span data-ttu-id="7250d-103">Список Принтжобс</span><span class="sxs-lookup"><span data-stu-id="7250d-103">List printJobs</span></span>
 
-<span data-ttu-id="3a259-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3a259-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7250d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7250d-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3a259-105">Получение списка заданий печати, связанных с [принтером](../resources/printer.md).</span><span class="sxs-lookup"><span data-stu-id="3a259-105">Retrieve a list of print jobs associated with the [printer](../resources/printer.md).</span></span>
+<span data-ttu-id="7250d-105">Получение списка заданий печати, связанных с [принтером](../resources/printer.md).</span><span class="sxs-lookup"><span data-stu-id="7250d-105">Retrieve a list of print jobs associated with the [printer](../resources/printer.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3a259-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3a259-106">Permissions</span></span>
-<span data-ttu-id="3a259-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3a259-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7250d-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7250d-106">Permissions</span></span>
+<span data-ttu-id="7250d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7250d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="3a259-109">Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать, разрешение, предоставляющее доступ к [принтеру](printer-get.md) , а также одно из разрешений, перечисленных в следующей таблице.</span><span class="sxs-lookup"><span data-stu-id="3a259-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, a permission that grants [Get printer](printer-get.md) access, and one of the permissions listed in the following table.</span></span> <span data-ttu-id="3a259-110">Пользователь, вошедшего в систему, должен быть [администратором принтера](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span><span class="sxs-lookup"><span data-stu-id="3a259-110">The signed in user must be a [Printer Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
+<span data-ttu-id="7250d-109">Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать, разрешение, предоставляющее доступ к [принтеру](printer-get.md) , а также одно из разрешений, перечисленных в следующей таблице.</span><span class="sxs-lookup"><span data-stu-id="7250d-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, a permission that grants [Get printer](printer-get.md) access, and one of the permissions listed in the following table.</span></span> <span data-ttu-id="7250d-110">Пользователь, вошедшего в систему, должен быть [администратором принтера](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span><span class="sxs-lookup"><span data-stu-id="7250d-110">The signed in user must be a [Printer Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
 
-<span data-ttu-id="3a259-111">Чтобы считывать задания печати от другого пользователя, пользователь, вошедшего в систему, должен быть администратором печати и иметь разрешение PrintJob. ReadBasic. ALL, PrintJob. Read. ALL, PrintJob. Реадвритебасик. ALL или PrintJob. ReadWrite. ALL.</span><span class="sxs-lookup"><span data-stu-id="3a259-111">To read print jobs from another user, the signed in user needs to be a print administrator and have the PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, or PrintJob.ReadWrite.All permission.</span></span>
+<span data-ttu-id="7250d-111">Чтобы считывать задания печати от другого пользователя, пользователь, вошедшего в систему, должен быть администратором печати и иметь разрешение PrintJob. ReadBasic. ALL, PrintJob. Read. ALL, PrintJob. Реадвритебасик. ALL или PrintJob. ReadWrite. ALL.</span><span class="sxs-lookup"><span data-stu-id="7250d-111">To read print jobs from another user, the signed in user needs to be a print administrator and have the PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, or PrintJob.ReadWrite.All permission.</span></span>
 
-|<span data-ttu-id="3a259-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3a259-112">Permission type</span></span> | <span data-ttu-id="3a259-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3a259-113">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="7250d-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7250d-112">Permission type</span></span> | <span data-ttu-id="7250d-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7250d-113">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="3a259-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3a259-114">Delegated (work or school account)</span></span>| <span data-ttu-id="3a259-115">PrintJob. ReadBasic, PrintJob. Read, PrintJob. ReadBasic. ALL, PrintJob. Read. ALL, PrintJob. Реадвритебасик, PrintJob. ReadWrite, PrintJob. Реадвритебасик. ALL, PrintJob. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="3a259-115">PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All</span></span> |
-|<span data-ttu-id="3a259-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3a259-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3a259-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3a259-117">Not Supported.</span></span>|
-|<span data-ttu-id="3a259-118">Приложение</span><span class="sxs-lookup"><span data-stu-id="3a259-118">Application</span></span>| <span data-ttu-id="3a259-119">PrintJob. ReadBasic. ALL, PrintJob. Read. ALL, PrintJob. Реадвритебасик. ALL, PrintJob. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="3a259-119">PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All</span></span> |
+|<span data-ttu-id="7250d-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7250d-114">Delegated (work or school account)</span></span>| <span data-ttu-id="7250d-115">PrintJob. ReadBasic, PrintJob. Read, PrintJob. ReadBasic. ALL, PrintJob. Read. ALL, PrintJob. Реадвритебасик, PrintJob. ReadWrite, PrintJob. Реадвритебасик. ALL, PrintJob. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="7250d-115">PrintJob.ReadBasic, PrintJob.Read, PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All</span></span> |
+|<span data-ttu-id="7250d-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7250d-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7250d-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7250d-117">Not Supported.</span></span>|
+|<span data-ttu-id="7250d-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7250d-118">Application</span></span>| <span data-ttu-id="7250d-119">PrintJob. ReadBasic. ALL, PrintJob. Read. ALL, PrintJob. Реадвритебасик. ALL, PrintJob. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="7250d-119">PrintJob.ReadBasic.All, PrintJob.Read.All, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3a259-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3a259-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7250d-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7250d-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /print/printers/{id}/jobs
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="3a259-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="3a259-121">Optional query parameters</span></span>
-<span data-ttu-id="3a259-122">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="3a259-122">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="3a259-123">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="3a259-123">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7250d-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="7250d-121">Optional query parameters</span></span>
+<span data-ttu-id="7250d-122">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="7250d-122">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="7250d-123">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="7250d-123">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-* <span data-ttu-id="3a259-124">По умолчанию свойство **Documents** опущено из отклика.</span><span class="sxs-lookup"><span data-stu-id="3a259-124">The **documents** property is omitted from the response by default.</span></span> <span data-ttu-id="3a259-125">Чтобы также возвратить список [принтдокументс](../resources/printdocument.md) для каждого задания печати, используйте `$expand=documents` .</span><span class="sxs-lookup"><span data-stu-id="3a259-125">To also return a list of [printDocuments](../resources/printdocument.md) for each print job, use `$expand=documents`.</span></span>
-* <span data-ttu-id="3a259-126">Этот метод поддерживает фильтрацию заданий печати пользователем, создавшим их.</span><span class="sxs-lookup"><span data-stu-id="3a259-126">This method supports filtering print jobs by the user who created them.</span></span> <span data-ttu-id="3a259-127">USE `$filter=createdBy/userPrincipalName eq '{upn}'` , где **{UPN}** — это [имя участника-пользователя](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) связанного пользователя.</span><span class="sxs-lookup"><span data-stu-id="3a259-127">Use `$filter=createdBy/userPrincipalName eq '{upn}'`, where **{upn}** is the [user principal name](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the associated user.</span></span>
+* <span data-ttu-id="7250d-124">По умолчанию свойство **Documents** опущено из отклика.</span><span class="sxs-lookup"><span data-stu-id="7250d-124">The **documents** property is omitted from the response by default.</span></span> <span data-ttu-id="7250d-125">Чтобы также возвратить список [принтдокументс](../resources/printdocument.md) для каждого задания печати, используйте `$expand=documents` .</span><span class="sxs-lookup"><span data-stu-id="7250d-125">To also return a list of [printDocuments](../resources/printdocument.md) for each print job, use `$expand=documents`.</span></span>
+* <span data-ttu-id="7250d-126">Этот метод поддерживает фильтрацию заданий печати пользователем, создавшим их.</span><span class="sxs-lookup"><span data-stu-id="7250d-126">This method supports filtering print jobs by the user who created them.</span></span> <span data-ttu-id="7250d-127">USE `$filter=createdBy/userPrincipalName eq '{upn}'` , где **{UPN}** — это [имя участника-пользователя](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) связанного пользователя.</span><span class="sxs-lookup"><span data-stu-id="7250d-127">Use `$filter=createdBy/userPrincipalName eq '{upn}'`, where **{upn}** is the [user principal name](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the associated user.</span></span>
 
-### <a name="exceptions"></a><span data-ttu-id="3a259-128">Exceptions</span><span class="sxs-lookup"><span data-stu-id="3a259-128">Exceptions</span></span>
-<span data-ttu-id="3a259-129">Некоторые операторы не поддерживаются: `$count` , `$search` , `$filter` .</span><span class="sxs-lookup"><span data-stu-id="3a259-129">Some operators are not supported: `$count`, `$search`, `$filter`.</span></span>
+### <a name="exceptions"></a><span data-ttu-id="7250d-128">Exceptions</span><span class="sxs-lookup"><span data-stu-id="7250d-128">Exceptions</span></span>
+<span data-ttu-id="7250d-129">Некоторые операторы не поддерживаются: `$count` , `$search` , `$filter` .</span><span class="sxs-lookup"><span data-stu-id="7250d-129">Some operators are not supported: `$count`, `$search`, `$filter`.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="3a259-130">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3a259-130">Request headers</span></span>
-| <span data-ttu-id="3a259-131">Имя</span><span class="sxs-lookup"><span data-stu-id="3a259-131">Name</span></span>      |<span data-ttu-id="3a259-132">Описание</span><span class="sxs-lookup"><span data-stu-id="3a259-132">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7250d-130">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7250d-130">Request headers</span></span>
+| <span data-ttu-id="7250d-131">Имя</span><span class="sxs-lookup"><span data-stu-id="7250d-131">Name</span></span>      |<span data-ttu-id="7250d-132">Описание</span><span class="sxs-lookup"><span data-stu-id="7250d-132">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="3a259-133">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3a259-133">Authorization</span></span> | <span data-ttu-id="3a259-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3a259-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7250d-133">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7250d-133">Authorization</span></span> | <span data-ttu-id="7250d-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7250d-p106">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3a259-136">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3a259-136">Request body</span></span>
-<span data-ttu-id="3a259-137">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="3a259-137">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="3a259-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="3a259-138">Response</span></span>
-<span data-ttu-id="3a259-139">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [printJob](../resources/printjob.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="3a259-139">If successful, this method returns a `200 OK` response code and collection of [printJob](../resources/printjob.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="3a259-140">Пример</span><span class="sxs-lookup"><span data-stu-id="3a259-140">Example</span></span>
-### <a name="request"></a><span data-ttu-id="3a259-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="3a259-141">Request</span></span>
-<span data-ttu-id="3a259-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3a259-142">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7250d-136">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7250d-136">Request body</span></span>
+<span data-ttu-id="7250d-137">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="7250d-137">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="7250d-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="7250d-138">Response</span></span>
+<span data-ttu-id="7250d-139">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [printJob](../resources/printjob.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="7250d-139">If successful, this method returns a `200 OK` response code and collection of [printJob](../resources/printjob.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="7250d-140">Пример</span><span class="sxs-lookup"><span data-stu-id="7250d-140">Example</span></span>
+### <a name="request"></a><span data-ttu-id="7250d-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="7250d-141">Request</span></span>
+<span data-ttu-id="7250d-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7250d-142">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="3a259-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="3a259-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7250d-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="7250d-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_jobs"
@@ -69,23 +69,23 @@ GET /print/printers/{id}/jobs
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/{id}/jobs
 ```
-# <a name="c"></a>[<span data-ttu-id="3a259-144">C#</span><span class="sxs-lookup"><span data-stu-id="3a259-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7250d-144">C#</span><span class="sxs-lookup"><span data-stu-id="7250d-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-jobs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="3a259-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3a259-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7250d-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7250d-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-jobs-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="3a259-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3a259-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7250d-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7250d-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-jobs-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="3a259-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="3a259-147">Response</span></span>
-<span data-ttu-id="3a259-148">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="3a259-148">The following is an example of the response.</span></span>
-><span data-ttu-id="3a259-p107">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3a259-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="7250d-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="7250d-147">Response</span></span>
+<span data-ttu-id="7250d-148">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="7250d-148">The following is an example of the response.</span></span>
+><span data-ttu-id="7250d-p107">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="7250d-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -122,3 +122,5 @@ Content-length: 461
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
