@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: notifications
 doc_type: resourcePageType
 author: merzink
-ms.openlocfilehash: 92ff6d0748e24fd58154f596188f25c51bdc6403
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: daac7a8424666d3974512c1cc1b17ec8e6878d7e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520004"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985666"
 ---
 # <a name="targetpolicyendpoints-resource-type"></a>Тип ресурса Таржетполициендпоинтс
 
@@ -25,7 +25,7 @@ ms.locfileid: "42520004"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|платформтипес|Коллекция объектов string|Используется для фильтрации распространения уведомлений на определенную платформу или платформы. Допустимые значения `Windows`: `iOS`, `Android` и `WebPush`. По умолчанию все типы конечных точек Push (Windows, iOS, Android и Push) включены. |
+|платформтипес|Коллекция String|Используется для фильтрации распространения уведомлений на определенную платформу или платформы. Допустимые значения `Windows` : `iOS` , `Android` и `WebPush` . По умолчанию все типы конечных точек Push (Windows, iOS, Android и Push) включены. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -55,3 +55,4 @@ ms.locfileid: "42520004"
   "section": "documentation",
   "tocPath": ""
 }-->
+

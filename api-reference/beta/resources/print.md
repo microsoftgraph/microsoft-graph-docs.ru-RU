@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: b32ebb749b3b13ee1d468de69b0724fe281e6793
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
+ms.openlocfilehash: 309b7c8e62b94703bb00e21fb8c8ed2a2e917efe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091503"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985890"
 ---
 # <a name="print-resource-type"></a>Тип ресурса Print
 
@@ -23,22 +23,22 @@ ms.locfileid: "45091503"
 ## <a name="methods"></a>Методы
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список соединителей](../api/print-list-connectors.md) | Коллекция [принтконнектор](printconnector.md) | Получение списка соединителей печати. |
-| [Список принтеров](../api/print-list-printers.md) | Коллекция [принтеров](printer.md) | Получение списка принтеров. |
-| [Список общих папок](../api/print-list-shares.md) | Коллекция [принтершаре](printershare.md) | Получение списка общих принтеров. |
+| [Перечисление соединителей](../api/print-list-connectors.md) | Коллекция [принтконнектор](printconnector.md) | Получение списка соединителей печати. |
+| [Перечисление принтеров](../api/print-list-printers.md) | Коллекция [принтеров](printer.md) | Получение списка принтеров. |
+| [Перечисление общих ресурсов](../api/print-list-shares.md) | Коллекция [принтершаре](printershare.md) | Получение списка общих принтеров. |
 | [Список служб](../api/print-list-services.md) | Коллекция [принтсервице](printservice.md) | Получение списка служб. |
-| [Создание Принтершаре](../api/print-post-shares.md) | [принтершаре](printershare.md) | Создайте новый общий ресурс для принтера, отправив его в коллекцию **shares** . |
-| [Создание принтера](../api/printer-create.md) | [принтеркреатеоператион](printerCreateOperation.md) | Создание (регистрация) нового принтера с универсальной печатью. |
+| [Создание printerShare](../api/print-post-shares.md) | [принтершаре](printershare.md) | Создайте новый общий ресурс для принтера, отправив его в коллекцию **shares** . |
+| [Создание принтера](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Создание (регистрация) нового принтера с универсальной печатью. |
 | [Обновление параметров](../api/print-update-settings.md) |  [принтсеттингс](printsettings.md) | Обновляет параметры на уровне клиента для универсальной службы печати. |
-| [Список Таскдефинитионс](../api/print-list-taskdefinitions.md) | Коллекция [принттаскдефинитион](printtaskdefinition.md) | Получение общего для клиента списка Принттаскдефинитионс, созданного в универсальной печати. |
-| [Создание Таскдефинитион](../api/print-post-taskdefinitions.md) | [принттаскдефинитион](printtaskdefinition.md) | Создание нового Принттаскдефинитион. |
-| [Обновление Таскдефинитион](../api/print-update-taskdefinition.md) | [принттаскдефинитион](printtaskdefinition.md) | Обновление Принттаскдефинитион. |
-| [Удаление Таскдефинитион](../api/print-delete-taskdefinition.md) | Отсутствует | Удаление объекта Принттаскдефинитион. |
+| [Перечисление taskDefinitions](../api/print-list-taskdefinitions.md) | Коллекция [принттаскдефинитион](printtaskdefinition.md) | Получение общего для клиента списка Принттаскдефинитионс, созданного в универсальной печати. |
+| [Создание taskDefinition](../api/print-post-taskdefinitions.md) | [printTaskDefinition](printtaskdefinition.md) | Создание нового Принттаскдефинитион. |
+| [Обновление taskDefinition](../api/print-update-taskdefinition.md) | [printTaskDefinition](printtaskdefinition.md) | Обновление Принттаскдефинитион. |
+| [Удаление taskDefinition](../api/print-delete-taskdefinition.md) | Нет | Удаление объекта Принттаскдефинитион. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|settings|[принтсеттингс](printsettings.md)|Параметры на уровне клиента для универсальной службы печати.|
+|параметры|[принтсеттингс](printsettings.md)|Параметры на уровне клиента для универсальной службы печати.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип        | Описание |
@@ -48,7 +48,7 @@ ms.locfileid: "45091503"
 |shares|Коллекция [принтершаре](printershare.md)|Список общих принтеров, зарегистрированных в клиенте.|
 |аудиовыход|Коллекция [принтконнектор](printconnector.md)|Список доступных соединителей печати.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -79,3 +79,5 @@ ms.locfileid: "45091503"
     "Error: Resource print has documented navigation properties, but we thought it was a complex type!",
     "Resource print has documented navigation properties, but we thought it was a complex type!"
 }-->
+
+

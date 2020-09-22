@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a3f795996cd0446db112b875837637ea34512031
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4d609491ee2b9380c347450b99ca7049b4c155c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452766"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986206"
 ---
 # <a name="tablecollection-add"></a>TableCollection: add
 
@@ -56,7 +56,7 @@ POST /workbook/worksheets/{id|name}/tables/add
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [воркбуктабле](../resources/workbooktable.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбуктабле](../resources/workbooktable.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -127,3 +127,5 @@ Content-length: 109
   ]
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: тип перечисления windows10AppType
 description: Тип приложения Windows 10.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 834fb563f9637d62d0950cc962e52205c24b2dc9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 85f5e4194570c9ff1370ee6190cf669c83440106
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466288"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985939"
 ---
 # <a name="windows10apptype-enum-type"></a>тип перечисления windows10AppType
 
@@ -26,7 +26,10 @@ ms.locfileid: "43466288"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |системной|нуль|Системной.|
-|Гринвич|1,1|Гринвич.|
+|Гринвич|1 |Гринвич.|
+
+
+
 
 
 

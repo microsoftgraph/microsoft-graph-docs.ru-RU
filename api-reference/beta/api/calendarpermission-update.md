@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sochowdh
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 970edd0479798fc07e505476b24796b890221396
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb7f68b832b55f177791647de7a973b588c9a4a0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440894"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987490"
 ---
 # <a name="update-calendarpermission"></a>Обновление Календарпермиссион
 
@@ -51,7 +51,7 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -61,7 +61,7 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 |:-------------|:------------|:------------|
 |role|[календарролетипе](../resources/calendarpermission.md#calendarroletype-values)| Уровень разрешений, на который изменяется общий доступ к календарю или представитель. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [календарпермиссион](../resources/calendarpermission.md) в тексте отклика.
 
@@ -69,7 +69,7 @@ PATCH /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 ### <a name="request"></a>Запрос
 
-В следующем примере изменяется уровень разрешений для объекта Share, Александра, на `write`.
+В следующем примере изменяется уровень разрешений для объекта Share, Александра, на `write` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -145,3 +145,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

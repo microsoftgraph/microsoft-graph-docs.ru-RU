@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7be036e05bd772d01a9235427daa26b8044ba17e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3c4fc0e6b104e1888199f8323b787333b57b75d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440747"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987290"
 ---
 # <a name="call-transfer"></a>Call: Transfer
 
@@ -55,7 +55,7 @@ POST /communications/calls/{id}/transfer
 |трансфертаржет|[инвитатионпартиЦипантинфо](../resources/invitationparticipantinfo.md)|Участник, который является целевым объектом передачи.|
 |Контекст|String|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`.
 
 ## <a name="examples"></a>Примеры
@@ -216,7 +216,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-failed"></a>Уведомление о сбое передачи
 
-> **Примечание:** При сбое передачи вызова в качестве состояния вызова будет использоваться `established`.
+> **Примечание:** При сбое передачи вызова в качестве состояния вызова будет использоваться `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -388,7 +388,7 @@ Content-Type: application/json
 
 ##### <a name="notification---transfer-failed"></a>Уведомление о сбое передачи
 
-> **Примечание:** При сбое передачи вызова в качестве состояния вызова будет использоваться `established`.
+> **Примечание:** При сбое передачи вызова в качестве состояния вызова будет использоваться `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -436,3 +436,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

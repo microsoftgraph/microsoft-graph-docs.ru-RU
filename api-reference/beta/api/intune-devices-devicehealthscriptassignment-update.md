@@ -3,14 +3,14 @@ title: Обновление Девицехеалсскриптассигнмен
 description: Обновление свойств объекта Девицехеалсскриптассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 048ac284ab8e5754219b3ef86ce37c0aae01969d
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 96b22d18a641f5f50eb1afff5a7774b7fc37f8d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792389"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986639"
 ---
 # <a name="update-devicehealthscriptassignment"></a>Обновление Девицехеалсскриптассигнмент
 
@@ -44,7 +44,7 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assig
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -114,6 +114,9 @@ Content-Length: 575
   }
 }
 ```
+
+
+
 
 
 

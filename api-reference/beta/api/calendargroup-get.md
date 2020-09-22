@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 666271f692f33299ceba5a8f9d83d66aeaba0fd1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 818774a74946fab7acc59be6c09b903cc41a3932
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43388714"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987591"
 ---
 # <a name="get-calendargroup"></a>Получение объекта calendarGroup
 
@@ -41,7 +41,7 @@ GET /me/calendarGroups/{id}
 GET /users/{id | userPrincipalName}/calendarGroups/{id}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
@@ -55,7 +55,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [calendarGroup](../resources/calendargroup.md) в тексте отклика.
 
@@ -127,3 +127,5 @@ Content-length: 110
   ]
 }
 -->
+
+

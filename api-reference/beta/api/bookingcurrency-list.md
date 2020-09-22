@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: f279cfe4d6a5ca8ceef65ce63fb3edbf76716e68
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 644351aa2dff960590940cddfad3abbdda5d2b1d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376530"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987927"
 ---
 # <a name="list-bookingcurrencies"></a>Список БукингкурренЦиес
 
@@ -43,7 +43,7 @@ GET /bookingCurrencies
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [букингкурренци](../resources/bookingcurrency.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/bookingCurrencies
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Note: объект Response, показанный здесь, усекается для краткости. Все поддерживаемые валюты и свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Note: объект Response, показанный здесь, усекается для краткости. Все поддерживаемые валюты и свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -135,3 +135,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

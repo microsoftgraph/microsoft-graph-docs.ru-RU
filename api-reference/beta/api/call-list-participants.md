@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cf4b44f9e02037597a2c502272f55263568cd869
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 94017581dd76297fb3c55bce7ef82ea966144b63
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440803"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987388"
 ---
 # <a name="list-participants"></a>Список участников
 
@@ -52,7 +52,7 @@ GET /communications/calls/{id}/participants
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов- [участников](../resources/participant.md) в тексте отклика.
 
@@ -184,3 +184,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

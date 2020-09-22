@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5c119fd16744ac141c752bb6b975f6d6f4c9be1d
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: a2509d07e55332747f50659c93fb0ac49928565f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681614"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987339"
 ---
 # <a name="call-playprompt"></a>Call: Плайпромпт
 
@@ -32,7 +32,7 @@ ms.locfileid: "44681614"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Для приложений                            | Отсутствуют.                                        |
+| Для приложений                            | Нет.                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,7 +54,7 @@ POST /communications/calls/{id}/playPrompt
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |выдан|Коллекция [медиапромпт](../resources/mediaprompt.md)| Приглашения для воспроизведения. Максимальный поддерживаемый размер коллекции Медиапромпт составляет 20.|
-|CNAME|Логический| Значение цикла. Значение true указывает, что цикл должен быть бесконечным. Значение по умолчанию  false. |
+|CNAME|Boolean| Значение цикла. Значение true указывает, что цикл должен быть бесконечным. Значение по умолчанию  false. |
 |Контекст|String|Уникальная строка контекста клиента. Может содержать до 256 символов.|
 
 ## <a name="response"></a>Отклик
@@ -176,3 +176,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

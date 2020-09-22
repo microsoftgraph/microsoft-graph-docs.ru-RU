@@ -6,12 +6,12 @@ description: Добавление элемента в пакет элемент�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c192014a00e3a2119691857c8350dc03d53e1980
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 910054e5077c8d69939a14c42db824dd862141d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441055"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987780"
 ---
 # <a name="add-item-to-a-bundle"></a>Добавление элемента в пакет
 
@@ -44,15 +44,15 @@ POST /drive/bundles/{bundle-id}/children
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Авторизация | Носитель \{токен\}. Обязательно. |
+| Authorization | Носитель \{токен\}. Обязательно. |
 
 ## <a name="request-body"></a>Тело запроса
 
 Текст запроса включает идентификатор для элемента, который следует добавить в коллекцию Children набора.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха отклика `204 No Content`.
+В случае успеха отклика `204 No Content` .
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 
@@ -105,3 +105,5 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation"
 } -->
+
+

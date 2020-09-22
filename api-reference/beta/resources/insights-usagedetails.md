@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: resourcePageType
-ms.openlocfilehash: edddf1290073972a8950729e2c9694648ffe0c0a
-ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
+ms.openlocfilehash: 553de0e8df9b3853024ffc35cc61bf6d727a2c9b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44227005"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986077"
 ---
 # <a name="usagedetails-resource-type"></a>Тип ресурса Усажедетаилс
 
@@ -46,3 +46,5 @@ ms.locfileid: "44227005"
 | -------------         |---------------| -------------|
 | lastAccessedDateTime                  | DateTimeOffset        | Дата и время последнего обращения пользователя к ресурсу. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`. Только для чтения.                      |
 | lastModifiedDateTime              | DateTimeOffset        | Дата и время последнего изменения ресурса пользователем. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`. Только для чтения.       |
+
+

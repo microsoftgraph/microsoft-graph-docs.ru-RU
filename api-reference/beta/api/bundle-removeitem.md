@@ -6,12 +6,12 @@ description: Удаление элемента из набора элемент�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 508dd19edcd3c1ae231c54cdb195d86661bb4259
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc6e3a630fb8cc8efda269b898adce3a9111c2ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441027"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987728"
 ---
 # <a name="remove-item-from-bundle"></a>Удаление элемента из пакета
 
@@ -41,15 +41,15 @@ DELETE /drive/bundles/{bundle-id}/children/{item-id}
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Авторизация | Носитель \{токен\}. Обязательно. |
+| Authorization | Носитель \{токен\}. Обязательно. |
 
 ## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успеха отклика `204 No Content`.
+В случае успеха отклика `204 No Content` .
 
 Ознакомьтесь с разделом [ответы об ошибках][error-response] для получения дополнительных сведений об возвращении ошибок.
 
@@ -97,3 +97,5 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation"
 } -->
+
+

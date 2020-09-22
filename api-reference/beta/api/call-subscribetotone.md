@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: db11ab63008dc092206550a91b027878d3cf1547
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aea175602f363477103fba7b6fad785ce4f22c5f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440754"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987297"
 ---
 # <a name="call-subscribetotone"></a>Call: Субскрибетотоне
 
@@ -53,7 +53,7 @@ POST /communications/calls/{id}/subscribeToTone
 |:---------------|:--------|:------------|
 | Контекст  | String  | Уникальная строка контекста клиента. Может содержать до 256 символов. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 
 ## <a name="example"></a>Пример
@@ -164,3 +164,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

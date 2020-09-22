@@ -3,14 +3,14 @@ title: Создание Девицеманажементинтентусерст
 description: Создание нового объекта Девицеманажементинтентусерстате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f3c553ea40afba3c34849c866aaf39ba8187d19
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f1aac0c9469856d79e5947147adc837ee6511424
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43326150"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986765"
 ---
 # <a name="create-devicemanagementintentuserstate"></a>Создание Девицеманажементинтентусерстате
 
@@ -43,7 +43,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/userStates
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/userStates
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор|
+|id|String|Идентификатор|
 |userPrincipalName|String|Имя участника-пользователя, сообщаемое на устройстве|
 |userName|String|Имя пользователя, сообщаемое на устройстве|
 |deviceCount|Int32|Количество устройств, принадлежащие пользователю для намерения|
@@ -101,6 +101,9 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
+
+
+
 
 
 

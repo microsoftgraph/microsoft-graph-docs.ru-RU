@@ -3,14 +3,14 @@ title: Создать importedWindowsAutopilotDeviceIdentity
 description: Создать новый объект importedWindowsAutopilotDeviceIdentity.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ef21ddb7f3d392bd833f7396a8c29b9cd92dbe1d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5df1c70c2583f76ec87d6ad5c0e7bc55b3df79f8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452597"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986541"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Создать importedWindowsAutopilotDeviceIdentity
 
@@ -43,7 +43,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentities
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -54,9 +54,9 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentities
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|GUID объекта|
-|orderIdentifier|String|Номер заказа устройства Windows Autopilot. — Устаревшее|
+|orderIdentifier|Строка|Номер заказа устройства Windows Autopilot. — Устаревшее|
 |грауптаг|String|Тег Group для устройства автопилота Windows.|
-|serialNumber|String|Серийный номер устройства Windows Autopilot.|
+|serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
 |импортид|String|Идентификатор импорта для устройства автопилота Windows.|
 |hardwareIdentifier|Двоичный|Аппаратный большой двоичный объект (BLOB) устройства Windows Autopilot.|
@@ -122,6 +122,9 @@ Content-Length: 728
   "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
+
+
+
 
 
 

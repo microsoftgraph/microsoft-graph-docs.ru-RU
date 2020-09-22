@@ -3,14 +3,14 @@ title: Обновление Девицеманажементсеттингкат
 description: Обновление свойств объекта Девицеманажементсеттингкатегори.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bd4e412d8793e8fd2999a72643ab28aec1fc32b9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4f561d6a34f3ba793b2f313684669b6ac860f31f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43427833"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986660"
 ---
 # <a name="update-devicemanagementsettingcategory"></a>Обновление Девицеманажементсеттингкатегори
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/categories/{deviceManagementSettingCategoryId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -54,12 +54,12 @@ PATCH /deviceManagement/categories/{deviceManagementSettingCategoryId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор категории|
-|displayName|Строка|Имя категории|
+|displayName|String|Имя категории|
 |хасрекуиредсеттинг|Boolean|Категория содержит параметры, необходимые для верхнего уровня|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -92,6 +92,9 @@ Content-Length: 193
   "hasRequiredSetting": true
 }
 ```
+
+
+
 
 
 

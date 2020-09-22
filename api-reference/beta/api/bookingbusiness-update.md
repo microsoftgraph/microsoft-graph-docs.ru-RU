@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: b820d65a50b2a07bd1c3e95936bc6ee304f20d96
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: be5b4fc09bccded8b7f1e9739b7e1c080b5c73d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376606"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987976"
 ---
 # <a name="update-bookingbusiness"></a>Обновление букингбусинесс
 
@@ -47,7 +47,7 @@ PATCH /bookingBusinesses/{id}
 |businessHours|Коллекция [букингворкхаурс](../resources/bookingworkhours.md)|Количество часов работы для бизнеса.|
 |бусинесстипе|String|Тип бизнеса.|
 |дефаулткурренциисо|String|Код валюты, в которой работает предприятие, в Microsoft Books.|
-|displayName|Строка|Название организации, которая взаимодействует с клиентами.|
+|displayName|String|Название организации, которая взаимодействует с клиентами.|
 |email|String|Адрес электронной почты для бизнеса.|
 |phone|String|Номер телефона для бизнеса.|
 |счедулингполици|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Указывает, как можно создавать резервирования для этого бизнеса.|
@@ -93,7 +93,7 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -116,3 +116,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

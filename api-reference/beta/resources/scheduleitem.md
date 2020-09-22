@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-teams
 author: harini84
-ms.openlocfilehash: b4bbf2586543b4f731c136eaffbc955741191db6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 9c7ed4d1683a4b6f45161db5304d70dce17d0dd4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812799"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985813"
 ---
 # <a name="scheduleitem-resource-type"></a>Тип ресурса Счедулеитем
 
@@ -24,14 +24,14 @@ ms.locfileid: "46812799"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |end |[dateTimeTimeZone](datetimetimezone.md) |Дата, время и часовой пояс, в течение которого заканчивается соответствующее событие. |
-|Частный |Логический |Чувствительность соответствующего события. Значение true, если событие помечено `private` , в противном случае — false. Необязательное свойство. |
-|location |String | Расположение, в котором находится соответствующее событие. Необязательное свойство.|
+|Частный |Boolean |Чувствительность соответствующего события. Значение true, если событие помечено `private` , в противном случае — false. Необязательный параметр. |
+|location |String | Расположение, в котором находится соответствующее событие. Необязательный параметр.|
 |начать |[dateTimeTimeZone](datetimetimezone.md) |Дата, время и часовой пояс, в котором начинается соответствующее событие. |
 |status |freeBusyStatus | Состояние доступности пользователя или ресурса во время соответствующего события. Допустимые значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
-|subject |String | Строка темы соответствующего события. Необязательное свойство.|
+|subject |String | Строка темы соответствующего события. Необязательный параметр.|
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -69,3 +69,5 @@ ms.locfileid: "46812799"
   "suppressions": []
 }
 -->
+
+

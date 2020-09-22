@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 8cb963c0fda545ea88e8d8e4335954ffb455102f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a30a1fe5891a0f8a58f08d742ef2aac645006156
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520937"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985797"
 ---
 # <a name="search-resource-type"></a>Тип ресурса поиска
 
@@ -51,3 +51,5 @@ ms.locfileid: "42520937"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

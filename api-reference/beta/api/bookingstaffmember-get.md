@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: a614199159c7b01f8b4b6a3d5dcfd0c36d4710ad
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 43499ec7970118bde6c7ff9cc08c74c2bcdb1476
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376264"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987829"
 ---
 # <a name="get-bookingstaffmember"></a>Получение Букингстаффмембер
 
@@ -43,7 +43,7 @@ GET /bookingBusinesses/{id}/staffMembers/{id}
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [букингстаффмембер](../resources/bookingstaffmember.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -162,3 +162,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: Создание Виндовсаутопилотдеплойментпр
 description: Создание нового объекта Виндовсаутопилотдеплойментпрофилеассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 09bb88a6ba5b69de979f2cc9292ebfa23f0e1af9
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 86a7e73c9a748a36fcc59328d71a181fe5a2c916
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792059"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986485"
 ---
 # <a name="create-windowsautopilotdeploymentprofileassignment"></a>Создание Виндовсаутопилотдеплойментпрофилеассигнмент
 
@@ -43,7 +43,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -103,6 +103,9 @@ Content-Length: 460
   "sourceId": "Source Id value"
 }
 ```
+
+
+
 
 
 

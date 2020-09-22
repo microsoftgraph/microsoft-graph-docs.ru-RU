@@ -3,14 +3,14 @@ title: Создание Девицеманажементсеттингкатег
 description: Создание нового объекта Девицеманажементсеттингкатегори.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 52fe09f9c5ebd74c6d665f990836d1e0006a3c7b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7868d155dfd5fb5c0e18c2d3d224c708bddfe3b4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381619"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986737"
 ---
 # <a name="create-devicemanagementsettingcategory"></a>Создание Девицеманажементсеттингкатегори
 
@@ -43,7 +43,7 @@ POST /deviceManagement/categories
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -54,12 +54,12 @@ POST /deviceManagement/categories
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор категории|
-|displayName|Строка|Имя категории|
+|displayName|String|Имя категории|
 |хасрекуиредсеттинг|Boolean|Категория содержит параметры, необходимые для верхнего уровня|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -92,6 +92,9 @@ Content-Length: 193
   "hasRequiredSetting": true
 }
 ```
+
+
+
 
 
 

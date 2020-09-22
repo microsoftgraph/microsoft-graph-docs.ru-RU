@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dongkyun
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 141efaf0f08c91b12517c2e378df00ccd3803d12
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 38cd7723fedb641a0c0d0c339daec60c6cafe072
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123274"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987360"
 ---
 # <a name="call-logteleconferencedevicequality"></a>Call: Логтелеконференцедевицекуалити
 
@@ -179,7 +179,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 <!-- {
@@ -201,3 +201,5 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

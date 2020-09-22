@@ -3,14 +3,14 @@ title: Тип ресурса Девицеманажементаппликаби�
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 754d70f3f383bb90c7de83931b99a90902bf7ba2
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a2e145f54116272687683789e67cbab3e6429bf4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469316"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985946"
 ---
 # <a name="devicemanagementapplicabilityruleosedition-resource-type"></a>Тип ресурса Девицеманажементаппликабилитирулеоседитион
 
@@ -49,6 +49,9 @@ ms.locfileid: "43469316"
   "ruleType": "String"
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ccdfc5ee542a8e819ecbf4d30450dcc8e2c19991
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: fdae19af982d8e8c73db968123361fa3700d684c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873099"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986170"
 ---
 # <a name="create-team"></a>Создание команды
 
@@ -29,6 +29,7 @@ ms.locfileid: "46873099"
 | Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | Group.ReadWrite.All, Directory.ReadWrite.All |
+|Для приложений|Teamwork.Migrate.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +44,7 @@ POST /teams
 | Заголовок        | Значение                     |
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
-| Content-Type  | application/json          |
+| Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -555,3 +556,5 @@ Content-Length: 0
 - [Начало работы с шаблонами команд розничной торговли](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
 - [Начало работы с шаблонами команд здравоохранения](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [Создание группы с командой](/graph/teams-create-group-and-team)
+
+

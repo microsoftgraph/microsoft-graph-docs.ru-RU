@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 226655a34cf2c6d2aed03e1905243077dc19a2b2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 125f4e54c73602aedd434a9847ef4c68f7624575
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440817"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987430"
 ---
 # <a name="call-keepalive"></a>Call: keepAlive
 
@@ -48,8 +48,8 @@ POST /communications/calls/{id}/keepAlive
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
-Этот метод возвращает код `200 OK` HTTP-ответа.
+## <a name="response"></a>Отклик
+Этот метод возвращает `200 OK` код HTTP-ответа.
 
 ## <a name="examples"></a>Примеры
 
@@ -105,3 +105,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

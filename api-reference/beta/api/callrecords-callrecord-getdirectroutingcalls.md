@@ -5,12 +5,12 @@ author: stephenjust
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: d42dc962579efd783f56bc0e2f9fd0b15c334a10
-ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
+ms.openlocfilehash: 65b6311e66969d4b4daa3066eeef3fc4bcdd73ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47439859"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987192"
 ---
 # <a name="callrecord-getdirectroutingcalls"></a>Каллрекорд: Жетдиректраутингкаллс
 
@@ -28,7 +28,7 @@ ms.locfileid: "47439859"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | CallRecords.Read.All |
+| Для приложений                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -126,3 +126,5 @@ HTTP/1.1 200 OK
 * [Отчет об использовании маршрутизации Microsoft Teams Direct](https://docs.microsoft.com/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) в центре администрирования Microsoft Teams
 * [Панель мониторинга работоспособности для прямой маршрутизации](https://docs.microsoft.com/MicrosoftTeams/direct-routing-health-dashboard) в центре администрирования Microsoft Teams
 * [Отчет о звонках PSTN в Microsoft Graph](callrecords-callrecord-getpstncalls.md)
+
+

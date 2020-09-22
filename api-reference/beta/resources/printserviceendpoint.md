@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 7f28245c22916575d505b3e9f8db65070cbbbf5e
-ms.sourcegitcommit: 7baf4847486885edf08ead533c76503cd31a98a4
+ms.openlocfilehash: 8b9289807778c1a44940d8e8eb0d9163ed12f006
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42896062"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985862"
 ---
 # <a name="printserviceendpoint-resource-type"></a>Тип ресурса Принтсервицеендпоинт
 
@@ -29,8 +29,8 @@ ms.locfileid: "42896062"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|Строка|Понятное для пользователя отображаемое имя для конечной точки.|
-|name|String|Уникальное имя, идентифицирующее службу, которую предоставляет конечная точка. `discovery` Возможные значения: (служба обнаружения) `notification` , (служба уведомлений), `ipp` (Служба протокола IPP) и `registration` (служба регистрации). Только для чтения.|
+|displayName|String|Понятное для пользователя отображаемое имя для конечной точки.|
+|name|String|Уникальное имя, идентифицирующее службу, которую предоставляет конечная точка. Возможные значения: `discovery` (служба обнаружения), `notification` (служба уведомлений), `ipp` (Служба протокола IPP) и `registration` (служба регистрации). Только для чтения.|
 |URI|String|Универсальный код ресурса (URI), который можно использовать для доступа к службе.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -62,3 +62,4 @@ ms.locfileid: "42896062"
   "section": "documentation",
   "tocPath": ""
 }-->
+

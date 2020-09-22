@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: dc9945ed4f2752e1d48454d589a1c1be170db957
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 4ed2e5019bf0ea7591f7658b0d81fda438f704ff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183878"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987227"
 ---
 # <a name="call-updaterecordingstatus"></a>Call: Упдатерекордингстатус
 
@@ -29,7 +29,7 @@ ms.locfileid: "45183878"
 |:---------------------------------------|:-------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                                    |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                    |
-| Приложение                            | Calls. Жоинграупкаллс. ALL, Calls. Акцессмедиа. ALL  |
+| Для приложений                            | Calls. Жоинграупкаллс. ALL, Calls. Акцессмедиа. ALL  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -129,3 +129,5 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
   ]
 }
 -->
+
+

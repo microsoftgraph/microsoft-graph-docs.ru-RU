@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: bef2bd71d3ac039165146bcc5783eef7ba67a785
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: ee879104878189ddcaf51f65e4e127a61798c811
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863707"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986058"
 ---
 # <a name="integerrange-resource-type"></a>Тип ресурса Интежерранже
 
@@ -23,7 +23,7 @@ ms.locfileid: "44863707"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|начать|Int64|Инклюзивная Нижняя граница диапазона целых чисел.|
+|start|Int64|Инклюзивная Нижняя граница диапазона целых чисел.|
 |end|Int64|Включающая верхняя граница диапазона целых чисел.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -54,3 +54,4 @@ ms.locfileid: "44863707"
   "section": "documentation",
   "tocPath": ""
 }-->
+

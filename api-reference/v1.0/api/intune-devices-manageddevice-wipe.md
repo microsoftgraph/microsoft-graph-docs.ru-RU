@@ -3,14 +3,14 @@ title: Действие wipe
 description: Очистка устройства
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a85197b3b2e567f269122bf9289a24045e22bc9d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6011accbde9a0670a2a780aeeea99b17e9c19237
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43474414"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985113"
 ---
 # <a name="wipe-action"></a>Действие wipe
 
@@ -43,7 +43,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -84,6 +84,9 @@ Content-length: 109
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

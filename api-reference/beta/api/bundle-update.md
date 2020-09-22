@@ -6,12 +6,12 @@ description: Обновление пакета элементов driveitem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 18c04ff7760505901ded5adb6e291fadc7481b35
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 111dbfed3fed6af28c57e04c3437a3a6228c2e3e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441020"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987731"
 ---
 # <a name="update-bundle"></a>Пакет обновления
 
@@ -49,14 +49,14 @@ PATCH /drive/items/{bundle-id}
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Авторизация | Носитель \{токен\}. Обязательный. |
-| if-match      | тегом. Необязательное. Если указан заголовок запроса, а предоставленное значение eTag не совпадают с текущим тегом eTag в бункле, возвращается `412 Precondition Failed` ответ.
+| Authorization | Носитель \{токен\}. Обязательный. |
+| if-match      | тегом. Необязательный параметр. Если указан заголовок запроса, а предоставленное значение eTag не совпадают с текущим тегом eTag в бункле, `412 Precondition Failed` возвращается ответ.
 
 ## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает ресурс [driveItem][] , представляющий обновленный пакет, в тексте отклика.
 
@@ -126,3 +126,5 @@ Content-Type: application/json
   "section": "documentation",
     "tocPath": "Bundles/Update"
 } -->
+
+

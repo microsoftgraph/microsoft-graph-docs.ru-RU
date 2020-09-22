@@ -1,22 +1,22 @@
 ---
 title: Использование API Поиска (Майкрософт) для запросов данных
-description: С помощью API поиска приложения могут искать данные Office 365 в контексте пользователя, прошедшего проверку подлинности.
+description: С помощью API поиска приложения могут искать данные Microsoft 365 в контексте пользователя, прошедшего проверку подлинности.
 localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: db10ddaf3e1cb7984ddfe16854f60c3d68dbb7ae
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: e77c0170487b0762538d98376921565857c9b3c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866625"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985795"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Использование API Поиска (Майкрософт) для запросов данных
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вы можете использовать API Поиска (Майкрософт) для запроса данных Office 365 в своих приложениях.
+Вы можете использовать API Поиска (Майкрософт) для запроса данных Microsoft 365 в своих приложениях.
 
 Поисковые запросы выполняются в контексте вошедшего пользователя, указанного [маркером доступа с делегированными разрешениями](/graph/auth-v2-user).
 
@@ -117,3 +117,8 @@ API поиска возвращает отклики с ошибками, опи
   - результаты типов **message** и **event** сортируются по дате;
 
   - результаты типов **driveItem**, **externalFile** и **externalItem** сортируются по релевантности.
+
+## <a name="whats-new"></a>Новые возможности
+Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
+
+

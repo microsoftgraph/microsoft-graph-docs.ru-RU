@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3556d8b0445d51a79979434f70dc1417f021ba2d
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 1df48c9321b03d3548bd2c971ac733fcd6849a53
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319416"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987465"
 ---
 # <a name="call-cancelmediaprocessing"></a>Call: Канцелмедиапроцессинг
 
@@ -29,7 +29,7 @@ ms.locfileid: "47319416"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | Нет.                                       |
+| Для приложений                            | Нет.                                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -168,3 +168,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e68e33ba57b784af10e1b0b22e271ca0da1bbaf3
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 461c4729708c1d338d41f04a1f35419461f938f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895631"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987612"
 ---
 # <a name="update-calendar"></a>Обновление календаря
 
@@ -149,3 +149,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

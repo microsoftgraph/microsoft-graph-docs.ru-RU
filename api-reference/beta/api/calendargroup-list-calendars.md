@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9d62fb3b97f269298a4c9feb517c44d5917ec191
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 13b3899b1631230798a0324f29e573dc0e6ac829
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43361417"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987577"
 ---
 # <a name="list-calendars"></a>Список календарей
 
@@ -48,7 +48,7 @@ GET /me/calendarGroups/{id}/calendars
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
@@ -62,7 +62,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Calendar](../resources/calendar.md) в тексте отклика.
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/beta/me/calendarGroups/{id}/calendars
 ---
 
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
@@ -141,3 +141,5 @@ Content-length: 147
   ]
 }
 -->
+
+

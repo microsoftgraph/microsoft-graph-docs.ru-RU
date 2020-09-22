@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 50aaf78cd57591ba1c8666c56a790550f913b12a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8b55f41024a48fcd4b52780ecb9efc9a7c9a3390
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440040"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987059"
 ---
 # <a name="get-workbookchart"></a>Получение воркбукчарт
 
@@ -45,7 +45,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукчарт](../resources/workbookchart.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -106,3 +106,5 @@ Content-length: 52
   ]
 }
 -->
+
+

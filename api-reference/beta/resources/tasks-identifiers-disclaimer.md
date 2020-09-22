@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ''
 author: TarkanSevilmis
-ms.openlocfilehash: 9ff7b894c8414e2dc7f3dd9d425b0027d0ae13f5
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 75bf46a9ecebb226a1099fe30f3367b08915b867
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811961"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985659"
 ---
 # <a name="identifiers-in-tasks"></a>Идентификаторы в задачах
 
@@ -25,3 +25,5 @@ ms.locfileid: "46811961"
 - Вызывающее приложение попыталось создать значение идентификатора для объекта в задачах. Идентификаторы, созданные клиентами, не принимаются. Все идентификаторы создаются службой при создании объектов.
 
 Эта проверка **не является средством безопасности**. Она предназначена только для информирования приложений об общих проблемах, связанных с идентификатором, в процессе разработки приложения, которое в ином случае трудно определить.
+
+

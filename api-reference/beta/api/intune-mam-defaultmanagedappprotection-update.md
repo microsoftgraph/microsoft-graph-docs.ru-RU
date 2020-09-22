@@ -3,14 +3,14 @@ title: Обновление объекта defaultManagedAppProtection
 description: Обновляет свойства объекта defaultManagedAppProtection.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e3a36e3e6211aa5f5a8f18e637dbbfd727cd2f2f
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 6487e0f5e0abf4d10c926fa7196827015dc5955b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791940"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986422"
 ---
 # <a name="update-defaultmanagedappprotection"></a>Обновление объекта defaultManagedAppProtection
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,15 +53,15 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|displayName|String|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|id|String|Ключ объекта. Унаследовано от [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|
+|id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |version|String|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|periodOfflineBeforeAccessCheck|Длительность|Время до проверки доступа, когда устройство не подключено к Интернету. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|periodOnlineBeforeAccessCheck|Длительность|Время до проверки доступа, когда устройство подключено к Интернету. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|periodOfflineBeforeAccessCheck|Duration|Время до проверки доступа, когда устройство не подключено к Интернету. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|periodOnlineBeforeAccessCheck|Duration|Время до проверки доступа, когда устройство подключено к Интернету. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |allowedInboundDataTransferSources|[манажедаппдататрансферлевел](../resources/intune-mam-managedappdatatransferlevel.md)|Источники, из которых разрешена передача данных. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `allApps`, `managedApps`, `none`.|
 |allowedOutboundDataTransferDestinations|[манажедаппдататрансферлевел](../resources/intune-mam-managedappdatatransferlevel.md)|Назначения, в которые разрешена передача данных. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `allApps`, `managedApps`, `none`.|
 |organizationalCredentialsRequired|Boolean|Указывает, необходимы ли для использования приложения учетные данные организации. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
@@ -100,9 +100,9 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 |блоккдатаинжестионинтурганизатиондокументс|Boolean|Указывает, может ли пользователь перенести данные в организационные документы. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |алловеддатаинжестионлокатионс|Коллекция [манажедаппдатаинжестионлокатион](../resources/intune-mam-managedappdataingestionlocation.md)|Разрешенные места хранения управляемых данных. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `oneDriveForBusiness`, `sharePoint`, `camera`.|
 |аппактионифунаблетоаусентикатеусер|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Если этот параметр задан, то в случае, если не удается вернуть пользователя из-за неправильного маркера проверки подлинности, будет указано, какие действия необходимо выполнить. Это происходит, когда пользователь удаляется или отключается в AAD. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`, `warn`.|
-|диалеррестриктионлевел|[манажедаппфоненумберредиректлевел](../resources/intune-mam-managedappphonenumberredirectlevel.md)|Классы приложений номеронабирателя, которым разрешено нажатие и открытие номера телефона. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `allApps`, `managedApps`, `customApp`, `blocked`.|
+|диалеррестриктионлевел|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|Классы приложений номеронабирателя, которым разрешено нажатие и открытие номера телефона. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `allApps`, `managedApps`, `customApp`, `blocked`.|
 |appDataEncryptionType|[манажедаппдатаенкриптионтипе](../resources/intune-mam-managedappdataencryptiontype.md)|Необходимый тип шифрования данных в управляемом приложении (только для iOS). Возможные значения: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
-|screenCaptureBlocked|Логический|Указывает, заблокированы ли снимки экрана. (только для Android).|
+|screenCaptureBlocked|Boolean|Указывает, заблокированы ли снимки экрана. (только для Android).|
 |encryptAppData|Boolean|Указывает, следует ли шифровать данные управляемых приложений (только для Android).|
 |disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|Если этот параметр включен, шифрование на уровне приложения отключается, если включено шифрование на уровне устройства. (только для Android).|
 |minimumRequiredSdkVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании. (только для iOS)|
@@ -138,6 +138,8 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 |кустомдиалерапппротокол|String|Протокол настраиваемого приложения номеронабирателя для открытия номера телефона на iOS, например Skype:.|
 |кустомдиалерапппаккажеид|String|PackageId настраиваемого приложения номеронабирателя для открытия номера телефона на Android.|
 |кустомдиалераппдисплайнаме|String|Понятное имя настраиваемого приложения номеронабирателя для открытия номера телефона на Android.|
+|биометрикаусентикатионблоккед|Boolean|Указывает, разрешено ли использование биометрической проверки подлинности вместо ПИН-кода, если для параметра pinrequired установлено задано значение true. (Только для Android)|
+|рекуиредандроидсафетинетевалуатионтипе|[андроидманажедаппсафетинетевалуатионтипе](../resources/intune-mam-androidmanagedappsafetynetevaluationtype.md)|Определяет требования к типу оценки SafetyNet для Android для работы управляемого приложения. (Только для Android). Возможные значения: `basic`, `hardwareBacked`.|
 
 
 
@@ -151,7 +153,7 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtectionId}
 Content-type: application/json
-Content-length: 4775
+Content-length: 4881
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -262,7 +264,9 @@ Content-length: 4775
   "appActionIfAndroidDeviceModelNotAllowed": "wipe",
   "customDialerAppProtocol": "Custom Dialer App Protocol value",
   "customDialerAppPackageId": "Custom Dialer App Package Id value",
-  "customDialerAppDisplayName": "Custom Dialer App Display Name value"
+  "customDialerAppDisplayName": "Custom Dialer App Display Name value",
+  "biometricAuthenticationBlocked": true,
+  "requiredAndroidSafetyNetEvaluationType": "hardwareBacked"
 }
 ```
 
@@ -271,7 +275,7 @@ Content-length: 4775
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4947
+Content-Length: 5053
 
 {
   "@odata.type": "#microsoft.graph.defaultManagedAppProtection",
@@ -385,9 +389,14 @@ Content-Length: 4947
   "appActionIfAndroidDeviceModelNotAllowed": "wipe",
   "customDialerAppProtocol": "Custom Dialer App Protocol value",
   "customDialerAppPackageId": "Custom Dialer App Package Id value",
-  "customDialerAppDisplayName": "Custom Dialer App Display Name value"
+  "customDialerAppDisplayName": "Custom Dialer App Display Name value",
+  "biometricAuthenticationBlocked": true,
+  "requiredAndroidSafetyNetEvaluationType": "hardwareBacked"
 }
 ```
+
+
+
 
 
 

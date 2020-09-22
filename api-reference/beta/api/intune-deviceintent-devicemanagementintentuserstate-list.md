@@ -3,14 +3,14 @@ title: Список Девицеманажементинтентусерстат
 description: Список свойств и связей объектов Девицеманажементинтентусерстате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2fd9856ef5ffc1008b5a5c49a78e8a262014dc8d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b2be6cdf14648768e86aef9bd9d4ef4b4d0ed812
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43325859"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986751"
 ---
 # <a name="list-devicemanagementintentuserstates"></a>Список Девицеманажементинтентусерстатес
 
@@ -43,13 +43,13 @@ GET /deviceManagement/intents/{deviceManagementIntentId}/userStates
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицеманажементинтентусерстате](../resources/intune-deviceintent-devicemanagementintentuserstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -81,6 +81,9 @@ Content-Length: 385
   ]
 }
 ```
+
+
+
 
 
 

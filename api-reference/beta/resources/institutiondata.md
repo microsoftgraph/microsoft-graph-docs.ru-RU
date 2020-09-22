@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: a0734966d8a92aef5cd515043047bfcade35df47
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a528bf5bc8800b10deed2c45d84613b5ab4bd6b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42495447"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986075"
 ---
 # <a name="institutiondata-resource-type"></a>Тип ресурса Институтиондата
 
@@ -25,7 +25,7 @@ ms.locfileid: "42495447"
 | Свойство     | Тип                                 | Описание                                              |
 |:-------------|:-------------------------------------|:---------------------------------------------------------|
 |description   |String                                |Краткое описание учебного заведения, в котором пользователь изучается. |
-|displayName   |Строка                                |Имя учреждения, в котором пользователь изучается.              |
+|displayName   |String                                |Имя учреждения, в котором пользователь изучается.              |
 |location      |[physicalAddress](physicaladdress.md) |Адрес или расположение института.                     |
 |webUrl        |String                                |Ссылка на домашнюю страницу "учреждение" или "Отдел".           |
 
@@ -60,3 +60,4 @@ ms.locfileid: "42495447"
   "section": "documentation",
   "tocPath": ""
 }-->
+

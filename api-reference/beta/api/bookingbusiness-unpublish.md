@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 406954ede0d32e6897b1d86477d603c560780fd9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b32c2be3c7c318f7b26f1090892c5129e5634a51
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376693"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987983"
 ---
 # <a name="bookingbusiness-unpublish"></a>Букингбусинесс: Отмена публикации
 
@@ -27,7 +27,7 @@ ms.locfileid: "43376693"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Резервирования. Manage. ALL   |
+|Делегированные (рабочая или учебная учетная запись) |  Bookings.Manage.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
@@ -99,3 +99,5 @@ HTTP/1.1 204 No content
   ]
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: Обновление managedDevice
 description: Обновление свойств объекта managedDevice.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 55e63802783035e7a418ea6dd3041240685c228c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f3fec9d6a07e372e20fd341599c2d373fac449b9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43474487"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985155"
 ---
 # <a name="update-manageddevice"></a>Обновление managedDevice
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,7 +53,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор устройства.|
+|id|String|Уникальный идентификатор устройства.|
 |userId|String|Уникальный идентификатор пользователя, связанного с устройством.
 |
 |deviceName|String|Название устройства|
@@ -89,7 +89,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 |manufacturer|String|Производитель устройства|
 |imei|String|IMEI|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время истечения льготного периода соответствия устройства требованиям|
-|serialNumber|Строка|SerialNumber|
+|serialNumber|String|SerialNumber|
 |phoneNumber|String|Номер телефона устройства|
 |androidSecurityPatchLevel|String|Уровень обновления для системы безопасности Android|
 |userDisplayName|String|Отображаемое имя пользователя|
@@ -328,6 +328,9 @@ Content-Length: 4705
   "partnerReportedThreatState": "activated"
 }
 ```
+
+
+
 
 
 

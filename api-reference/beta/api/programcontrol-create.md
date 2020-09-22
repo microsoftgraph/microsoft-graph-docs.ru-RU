@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 17c25df842975c324ab827fc071283df7a5d44cd
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: f27094a28423137eb6c8e9661b42449f9cf7ac6c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43123097"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986233"
 ---
 # <a name="create-programcontrol"></a>Создание Програмконтрол
 
@@ -22,9 +22,9 @@ ms.locfileid: "43123097"
 
 Перед выполнением этого запроса вызывающий абонент должен был
 
-- [созданная программа](program-create.md) или [получена программа](program-list.md)со значением `programId` , включаемым в запрос.
+- [созданная программа](program-create.md) или [получена программа](program-list.md)со значением, `programId` включаемым в запрос.
 - [создана проверка доступа](accessreview-create.md) или [полученная проверка доступа](accessreview-get.md), для которой значение `controlId` должно быть включено в запрос, а
-- [получен список типов программного управления](programcontroltype-list.md), чтобы включить в запрос значение `controlTypeId` , которое необходимо включить в запрос.
+- [получен список типов программного управления](programcontroltype-list.md), чтобы `controlTypeId` включить в запрос значение, которое необходимо включить в запрос.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -59,7 +59,7 @@ POST /programControls
 | `controlId`              |`String`                | ControlId элемента управления, в частности идентификатор проверки доступа.                                                |
 | `controlTypeId`          |`String`                | Програмконтролтипе определяет тип элемента управления программы, например элемент управления, который связывается с проверками гостевого доступа. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201, Created` код отклика и объект [програмконтрол](../resources/programcontrol.md) в тексте отклика.
 
 
@@ -138,3 +138,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

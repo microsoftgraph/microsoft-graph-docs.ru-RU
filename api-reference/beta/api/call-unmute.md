@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5bb958a1faad2c8698876501ef539465cb0c254d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 432af873a871aff959da9731d2d1679d2fcf89d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440726"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987259"
 ---
 # <a name="call-unmute"></a>вызов: включение звука
 
@@ -55,7 +55,7 @@ POST /communications/calls/{id}/unmute
 |:---------------|:--------|:----------|
 |Контекст|String|Контекст клиента.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [унмутепартиЦипантоператион](../resources/unmuteParticipantoperation.md) в тексте отклика.
 
 >**Примечание:** Когда этот API возвращает успешный ответ, все участники получат обновление списка.
@@ -187,3 +187,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

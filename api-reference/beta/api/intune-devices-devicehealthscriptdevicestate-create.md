@@ -3,14 +3,14 @@ title: Создание Девицехеалсскриптдевицестате
 description: Создание нового объекта Девицехеалсскриптдевицестате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ff64deb4d0a1a27787f4b8a345c18e4e2ff3c073
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f331069b5fa833ec6b7df3dd5b92e4149b7bfa8e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43380593"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986632"
 ---
 # <a name="create-devicehealthscriptdevicestate"></a>Создание Девицехеалсскриптдевицестате
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunState
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -116,6 +116,9 @@ Content-Length: 811
   "remediationState": "skipped"
 }
 ```
+
+
+
 
 
 

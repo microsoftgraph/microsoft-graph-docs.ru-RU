@@ -6,12 +6,12 @@ description: Удаление пакета элементов driveitem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 24a7f6f9d45a44d37056439d4e7679561e67431f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 13cc2dcb3cda7dac8d6f9b7acfae153d84efabfa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441041"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987774"
 ---
 # <a name="delete-bundle"></a>Удаление пакета
 
@@ -45,8 +45,8 @@ DELETE /drive/items/{bundle-id}
 
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Авторизация | Носитель \{токен\}. Обязательный. |
-| if-match      | тегом. Необязательное. Если указан заголовок запроса, а предоставленное значение eTag (или cTag) не совпадают с текущим тегом в пакете, возвращается `412 Precondition Failed` ответ и пакет не удаляется.
+| Authorization | Носитель \{токен\}. Обязательный. |
+| if-match      | тегом. Необязательный параметр. Если указан заголовок запроса, а предоставленное значение eTag (или cTag) не совпадают с текущим тегом в пакете, `412 Precondition Failed` возвращается ответ и пакет не удаляется.
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -103,3 +103,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "Bundles/Delete"
 } -->
+
+

@@ -3,14 +3,14 @@ title: Тип ресурса windows10AssociatedApps
 description: Определение приложения, связанного с Windows 10.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8dc45852b0bd97b7000edd55e74bb9407587d7e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ecdea1d1493388c1fab3037d49b41f5f3388e3c0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43466281"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985918"
 ---
 # <a name="windows10associatedapps-resource-type"></a>Тип ресурса windows10AssociatedApps
 
@@ -45,6 +45,9 @@ ms.locfileid: "43466281"
   "identifier": "String"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: действие импорта
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d92e02692a03867bf596340bacc7f16cf23dc8dc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 87f86ccfbb1ad5ce5b38937f4cdafb26977043ff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43452552"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986513"
 ---
 # <a name="import-action"></a>действие импорта
 
@@ -43,7 +43,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentities/import
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentities/import
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|importedWindowsAutopilotDeviceIdentities|Коллекция [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Н/Д|
+|importedWindowsAutopilotDeviceIdentities|Коллекция [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Пока не задокументировано.|
 
 
 
@@ -124,6 +124,9 @@ Content-Length: 825
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 949afc82423bc3c36df90c009603e98c0a23da59
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9c1195c0f2c7d76a163ad9f3194ea02e96c5982f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440880"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987451"
 ---
 # <a name="call-changescreensharingrole"></a>Call: Чанжескриншарингроле
 
@@ -52,7 +52,7 @@ POST /communications/calls/{id}/changeScreenSharingRole
 |:---------------|:--------|:----------|
 |role|String|Возможные значения: "средство просмотра", "общий доступ"|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика, а все участники получат обновление списка.
 
 ## <a name="example"></a>Пример
@@ -102,7 +102,7 @@ Content-Length: 24
 HTTP/1.1 202 Accepted
 ```
 ##### <a name="notification---roster-updated-with-participant-sending-screen-sharing-video"></a>Уведомление о подсписке, обновленный при отправке участником демонстрации экрана общего видео
-Обратите `direction: sendOnly` внимание на свойство в потоке мультимедиа.
+Обратите внимание на `direction: sendOnly` свойство в потоке мультимедиа.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -165,3 +165,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

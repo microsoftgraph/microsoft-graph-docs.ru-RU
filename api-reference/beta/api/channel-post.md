@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 37fe0ed34ad7dc44d760376f75a49ffa3766ba6c
-ms.sourcegitcommit: 0a979eb1f21ec7834d24c268c24383c3139577ef
+ms.openlocfilehash: 765cbee31f97ab20db34fb07052beaaa5f6e99c6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/05/2020
-ms.locfileid: "47400413"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987087"
 ---
 # <a name="create-channel"></a>Создание канала
 
@@ -28,7 +28,7 @@ ms.locfileid: "47400413"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Channel. Create. Group *, Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL, сотрудничество. Migrate. ALL|
+|Для приложений | Channel. Create. Group *, Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL, сотрудничество. Migrate. ALL|
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
@@ -94,7 +94,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример отклика.
+Ниже показан пример ответа.
 
 > **Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -202,3 +202,5 @@ Content-length: 201
   ]
 }
 -->
+
+

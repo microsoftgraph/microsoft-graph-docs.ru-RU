@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5067df26f0b1c1e6b77d1c3d87d4c73bb9e45208
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: d794391c4cf8043ab4eaeafcfa21958d93e3412a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217005"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985687"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>Тип ресурса Синчронизатионтемплате
 
@@ -26,7 +26,7 @@ ms.locfileid: "43217005"
 
 | Метод        | Возвращаемый тип               | Описание                  |
 |:--------------|:--------------------------|:-----------------------------|
-|[List](../api/synchronization-synchronizationtemplate-list.md)    |Коллекция [синчронизатионтемплате](synchronization-synchronizationtemplate.md)  |Список шаблонов, доступных для приложения или экземпляра приложения (субъекта-службы).|
+|[Список](../api/synchronization-synchronizationtemplate-list.md)    |Коллекция [синчронизатионтемплате](synchronization-synchronizationtemplate.md)  |Список шаблонов, доступных для приложения или экземпляра приложения (субъекта-службы).|
 |[получение](../api/synchronization-synchronizationtemplate-get.md);      |[синчронизатионтемплате](synchronization-synchronizationtemplate.md)   |Чтение свойств и связей объекта **синчронизатионтемплате** .|
 <!-- 
 |[Create](../api/synchronization-synchronizationtemplate-post.md) |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Create a new template for an application.|
@@ -37,11 +37,11 @@ ms.locfileid: "43217005"
 
 | Свойство      | Тип                      | Описание                  |
 |:--------------|:--------------------------|:-----------------------------|
-|id             |Строка                     |Уникальный идентификатор шаблона.|
+|id             |String                     |Уникальный идентификатор шаблона.|
 |applicationId  |String                     |Идентификатор приложения, к которому принадлежит этот шаблон.|
-|умолчани        |Boolean                    |`true`Если этот шаблон рекомендуется использовать по умолчанию для приложения.|
+|умолчани        |Boolean                    |`true` Если этот шаблон рекомендуется использовать по умолчанию для приложения.|
 |description    |String                     |Описание шаблона.|
-|обнаружения   |String                     |`true`Если этот шаблон должен отображаться в коллекции шаблонов, доступных для экземпляра приложения (субъекта-службы).|
+|обнаружения   |String                     |`true` Если этот шаблон должен отображаться в коллекции шаблонов, доступных для экземпляра приложения (субъекта-службы).|
 |факторитаг     |String                     |Один из известных тегов фабрики, поддерживаемых обработчиком синхронизации. **Факторитаг** сообщает обработчику синхронизации, какую реализацию следует использовать при обработке заданий на основе этого шаблона.|
 |метаданных       |Коллекция Метадатаентри   |Дополнительные свойства расширения. Если явно не указано иное, значения метаданных не должны изменяться.|
 
@@ -89,3 +89,5 @@ ms.locfileid: "43217005"
   "suppressions": []
 }
 -->
+
+

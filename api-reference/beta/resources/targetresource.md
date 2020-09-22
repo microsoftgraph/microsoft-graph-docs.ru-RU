@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 42f477c5d68359882c6c679f66212b8b56055ed5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bec25af7e0f39a4adf15577c21d4141e1a3c431a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43356253"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985652"
 ---
 # <a name="targetresource-resource-type"></a>Тип ресурса targetResource
 
@@ -24,10 +24,10 @@ ms.locfileid: "43356253"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|String|Указывает уникальный идентификатор ресурса.|
-|displayName|Строка|Указывает отображаемое имя, заданное для ресурса. Обычно указывается при создании ресурса.|
-|type|String|Описывает тип ресурса.  Примеры значений: `Application`, `Group` `ServicePrincipal`, и `User`.|
-|userPrincipalName|String|Если **type** для `User`параметра Type задано значение, включается имя пользователя, инициировавшего действие; `null` для других типов.|
-|groupType|String|Если **type** для `Group`параметра Type задано значение, это указывает тип группы.|
+|displayName|String|Указывает отображаемое имя, заданное для ресурса. Обычно указывается при создании ресурса.|
+|type|String|Описывает тип ресурса.  Примеры значений: `Application` , `Group` , `ServicePrincipal` и `User` .|
+|userPrincipalName|String|Если для параметра **Type** задано значение `User` , это имя пользователя, инициировавшего действие, `null` для других типов.|
+|groupType|String|Если для параметра **Type** задано значение `Group` , это указывает тип группы.|
 |modifiedProperties|Коллекция [модифиедпроперти](modifiedproperty.md)|Указывает имя, старое значение и новое значение каждого атрибута, который изменился. Значения свойств зависят от **типа**операции.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -64,3 +64,5 @@ ms.locfileid: "43356253"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

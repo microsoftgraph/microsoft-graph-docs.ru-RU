@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: da3de64ce9517ffd3e2025b4c659baef27526f6f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7e2e1252a34d6efc6004aa78873a11139fece83f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42440796"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987346"
 ---
 # <a name="call-mute"></a>вызов: выкл.
 
@@ -56,7 +56,7 @@ POST /communications/calls/{id}/mute
 |:---------------|:--------|:----------|
 |Контекст|String|Контекст клиента.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [мутепартиЦипантоператион](../resources/muteParticipantoperation.md) в тексте отклика.
 
 > **Примечание:** После того как эта операция возвращает успешный ответ, все участники получат обновление списка
@@ -191,3 +191,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

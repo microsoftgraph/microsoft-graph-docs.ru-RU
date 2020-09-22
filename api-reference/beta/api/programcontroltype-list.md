@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 93cf528b1fec7f857057ea469ae5c313dee6c07c
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: a73f85b93c346dbf75d78593b74d08e1de35b925
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896429"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47986219"
 ---
 # <a name="list-programcontroltypes"></a>Список Програмконтролтипес
 
@@ -26,7 +26,7 @@ ms.locfileid: "44896429"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Програмконтрол. Read. ALL, Програмконтрол. ReadWrite. ALL   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | Програмконтрол. Read. ALL ", Програмконтрол. ReadWrite. ALL  |
+|Для приложений                            | Програмконтрол. Read. ALL ", Програмконтрол. ReadWrite. ALL  |
 
 Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им читать программу.
 
@@ -40,7 +40,7 @@ GET /programControlTypes
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не следует предоставлять текст запроса.
 
 ## <a name="response"></a>Отклик
@@ -126,3 +126,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

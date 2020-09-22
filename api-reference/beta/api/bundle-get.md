@@ -6,12 +6,12 @@ description: Получение пакета элементов driveitem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 191157efb35b50ecff358d7902a7a6c42a6fb7a4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 810f7c87effc14d2d62ad2039354754331da3ceb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42441034"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987801"
 ---
 # <a name="get-bundle"></a>Получение пакета
 
@@ -41,21 +41,21 @@ GET /drive/items/{bundle-id}
 Так как пакеты являются элементами, вы можете использовать коллекцию **Items** для возвращения метаданных пакета.
 Кроме того, вы можете **использовать коллекцию** Collections, чтобы убедиться, что вы получаете пакет в ответе.
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 
 Чтобы ограничить форму объектов, возвращаемых в результате вызова, вы можете использовать [параметры запросов OData][odata-parameters].
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание  |
 |:------------- |:------------ |
-| Авторизация | Носитель \{токен\}. Обязательный. |
-| if-none-match | тегом. Необязательное. Если указан заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то возвращается отклик `HTTP 304 Not Modified`.
+| Authorization | Носитель \{токен\}. Обязательный. |
+| if-none-match | тегом. Необязательный параметр. Если указан заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то возвращается отклик `HTTP 304 Not Modified`.
 
 ## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает объект [driveItem][driveItem] resource with the [bundle][bundle] в тексте отклика.
 
@@ -119,7 +119,7 @@ Content-type: application/json
 
 ### <a name="example-2-get-a-bundle-and-its-children-in-a-single-call"></a>Пример 2: получение пакета и его дочерних элементов в едином вызове
 
-Можно использовать параметр строки [`expand`](/graph/query-parameters) запроса, чтобы включить дочерние элементы пакета в тот же вызов, что и получение метаданных пакета.
+Можно использовать [`expand`](/graph/query-parameters) параметр строки запроса, чтобы включить дочерние элементы пакета в тот же вызов, что и получение метаданных пакета.
 
 #### <a name="request"></a>Запрос
 
@@ -185,3 +185,5 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "Bundles/Get Bundle Metadata"
 } -->
+
+

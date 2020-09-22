@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ccb98b3e194026c8f3fc7760a51567d2198306e3
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.openlocfilehash: 9451c5923b8225162c2610498baab5ad571bcab5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183885"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47987493"
 ---
 # <a name="call-answer"></a>вызов: ответ
 
@@ -29,7 +29,7 @@ ms.locfileid: "45183885"
 | :-------------- | :-----------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                        |
-| Приложение     | Calls. Жоинграупкаллс. ALL или Calls. Жоинграупкаллсасгуест. ALL |
+| Для приложений     | Calls. Жоинграупкаллс. ALL или Calls. Жоинграупкаллсасгуест. ALL |
 
 > **Примечание:** Для вызова, использующего носитель с размещением приложений, вам также потребуется разрешение Calls. Акцессмедиа. ALL. Необходимо иметь по крайней мере одно из следующих разрешений, чтобы обеспечить `source` расшифровку уведомления о входящем вызове: Calls. акцессмедиа. ALL, Calls.Iniтиате. ALL, Calls.IniТиатеграупкалл. ALL, Calls. Жоинграупкалл. ALL, Calls. Жоинграупкалласгуест. ALL. `source`Сведения о вызывающем абоненте в уведомлении о входящем звонке. Без по крайней мере одного из этих разрешений оно `source` останется зашифрованным.
 
@@ -187,7 +187,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Запросить
+##### <a name="request"></a>Запрос
 
 <!-- {
   "blockType": "ignored",
@@ -216,7 +216,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -570,3 +570,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+

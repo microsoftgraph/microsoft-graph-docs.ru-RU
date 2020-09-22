@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 750bd79dad9758f3ffe883fd87713c42c29c0917
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d314fcdd2a62be5aea05bed3b2a9e1881f95c3d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520923"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47985799"
 ---
 # <a name="searchhitscontainer-resource-type"></a>Тип ресурса Сеарчхитсконтаинер
 
@@ -27,7 +27,7 @@ ms.locfileid: "42520923"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |успешных|Коллекция [сеарчхит](searchhit.md)|Енкасулате результаты поиска.|
-|морересултсаваилабле|Логическое|Предоставляет сведения, если доступны дополнительные результаты. В этом случае можно увеличить смещение "от" и "до".|
+|морересултсаваилабле|Boolean|Предоставляет сведения, если доступны дополнительные результаты. В этом случае можно увеличить смещение "от" и "до".|
 |total|Int32|Общее число результатов. Обратите внимание, что это не количество результатов на странице, а общее количество результатов, удовлетворяющих запросу.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -60,3 +60,4 @@ ms.locfileid: "42520923"
   "section": "documentation",
   "tocPath": ""
 }-->
+
