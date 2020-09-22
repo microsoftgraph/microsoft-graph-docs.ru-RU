@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: c2e19f53021b9ec9a214b337f84e7fff8652091d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 757fb07765bcbe693909d422c5d4bdad2bd0c9e8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423876"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016900"
 ---
 # <a name="list-mailfolders"></a>Список объектов mailFolder
 
@@ -43,10 +43,10 @@ GET /users/{id | userPrincipalName}/mailFolders
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [mailFolder](../resources/mailfolder.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -191,3 +191,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

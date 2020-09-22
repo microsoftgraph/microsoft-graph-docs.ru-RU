@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: shauliu
-ms.openlocfilehash: b2a0a4ff42da594f9a74e26cc0facca9564548eb
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 5d11f6c1dab607fea27ac71f3142f899a7183a79
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809508"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016676"
 ---
 # <a name="governanceschedule-resource-type"></a>Тип ресурса Говернанцесчедуле
 
@@ -26,11 +26,11 @@ ms.locfileid: "46809508"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |startDateTime|DateTimeOffset|Время начала назначения роли. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|endDateTime|DateTimeOffset|Время окончания назначения роли. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. *Note: Если значение задано `null` , оно указывает на постоянное назначение.*|
+|endDateTime|DateTimeOffset|Время окончания назначения роли. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. *Note: Если значение задано `null` , оно указывает на постоянное назначение.*|
 |type|String|Тип расписания назначения ролей. `Once`Поддерживается только в настоящее время.
 |duration|Длительность|Продолжительность назначения роли. Он имеет формат TimeSpan.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -64,3 +64,5 @@ ms.locfileid: "46809508"
   "suppressions": []
 }
 -->
+
+

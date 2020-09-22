@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: f6e1a7078616e0c02bf300503c94f780ced44484
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3a9a0e9e509dd27014654445d37d9304d69b8d3b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507410"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016774"
 ---
 # <a name="conversation-resource-type"></a>Тип ресурса conversation
 
@@ -29,7 +29,7 @@ ms.locfileid: "42507410"
 |[Перечисление бесед](../api/group-list-conversations.md) | Коллекция [conversation](conversation.md) |Получение списка бесед в этой группе.|
 |[Создание](../api/group-post-conversations.md) |[conversation](conversation.md)| Создание беседы путем включения цепочки и записи.|
 |[Получение беседы](../api/conversation-get.md) | [conversation](conversation.md) |Считывание свойств и отношений объекта conversation.|
-|[удаление](../api/conversation-delete.md); | Нет |Удаление объекта conversation. |
+|[Удаление](../api/conversation-delete.md) | Нет |Удаление объекта conversation. |
 |[Список цепочек беседы](../api/conversation-list-threads.md) |Коллекция [conversationThread](conversationthread.md)| Получение всех цепочек в групповой беседе.|
 |[Создание цепочки беседы](../api/conversation-post-threads.md) |Коллекция [conversationThread](conversationthread.md)| Создание цепочки в указанной беседе.|
 
@@ -43,7 +43,7 @@ ms.locfileid: "42507410"
 |topic|String|Тема беседы. Это свойство можно задать при создании беседы, но его невозможно обновить.|
 |уникуесендерс|Коллекция String|Все пользователи, которые отправили сообщение в эту беседу.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |threads|Коллекция [conversationThread](conversationthread.md)|Коллекция всех цепочек в беседе. Свойство навигации. Только для чтения. Допускается значение null.|
@@ -86,3 +86,5 @@ ms.locfileid: "42507410"
   "suppressions": []
 }
 -->
+
+

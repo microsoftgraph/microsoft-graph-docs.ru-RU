@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f0683c967d56303cb092b7300e50312ab329ea4b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8c4807abc04cb980ec452590b9643f2b07d0ce67
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43458035"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016711"
 ---
 # <a name="countrynamedlocation-resource-type"></a>Тип ресурса Каунтринамедлокатион
 
@@ -36,14 +36,14 @@ ms.locfileid: "43458035"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|каунтриесандрегионс|Коллекция объектов string|Список стран и/или регионов в формате из двух букв, заданных в стандарте ISO 3166-2.|
+|каунтриесандрегионс|Коллекция String|Список стран и/или регионов в формате из двух букв, заданных в стандарте ISO 3166-2.|
 |createdDateTime|DateTimeOffset|Тип timestamp представляет дату и время создания расположения с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
-|displayName|Строка|Удобное для человека имя расположения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
+|displayName|String|Удобное для человека имя расположения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
 |id|String|Идентификатор объекта Намедлокатион. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
 |инклудеункновнкаунтриесандрегионс|Boolean|Значение true, если IP-адреса, которые не сопоставляются со страной или регионом, должны быть включены в именованное расположение.|
 |modifiedDateTime|DateTimeOffset|Тип timestamp представляет дату и время последнего изменения расположения с использованием формата ISO 8601, которое всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -80,3 +80,5 @@ ms.locfileid: "43458035"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

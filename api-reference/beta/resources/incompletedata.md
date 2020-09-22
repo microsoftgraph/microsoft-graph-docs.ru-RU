@@ -6,12 +6,12 @@ title: инкомплетедата
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 3abefff4749413648a3f1a56d1dbf6d44f16a471
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6505d02ee7436e02d90627cfd38a83e3e436706a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42496280"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016568"
 ---
 # <a name="incompletedata-resource-type"></a>Тип ресурса Инкомплетедата
 
@@ -48,3 +48,5 @@ ms.locfileid: "42496280"
   "suppressions": []
 }
 -->
+
+

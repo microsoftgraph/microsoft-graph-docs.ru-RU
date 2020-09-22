@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: acd31b5d5b115646716199842d862bf6637ea504
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: bf6dff6b3eea14455bb9dc1e8eed2f515847efc5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107705"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016942"
 ---
 # <a name="list-user-devices"></a>Перечисление пользовательских устройств
 
@@ -46,10 +46,10 @@ GET me/devices
 |Авторизация| Bearer {токен}. Обязательный. |
 |Accept | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код ответа 200 и свойства устройства пользователя в тексте отклика.
 
@@ -79,7 +79,7 @@ HTTP/1.1 200 OK
 ```
 
 ## <a name="example"></a>Пример
-В этом примере возвращается список устройств для пользователя. Чтобы выполнить командное устройство `me/devices/{id}/command`с помощью, необходимо получить идентификатор возвращенного устройства.
+В этом примере возвращается список устройств для пользователя. Чтобы выполнить командное устройство с помощью `me/devices/{id}/command` , необходимо получить идентификатор возвращенного устройства.
 
 #### <a name="request"></a>Запрос
 
@@ -126,3 +126,5 @@ Content-length: 140
   ]
 }
 ```
+
+
