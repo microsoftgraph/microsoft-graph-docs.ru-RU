@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: e174bfda0a7b3c1979df6c994f314dbc751da8b7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 03e98ca4422018ba0aeaa2a21f4fa767e3acb6c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43366891"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988039"
 ---
 # <a name="list-customers"></a>Перечисление клиентов
 
@@ -43,7 +43,7 @@ GET /bookingBusinesses/{id}/customers
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [букингкустомер](../resources/bookingcustomer.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -123,3 +123,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

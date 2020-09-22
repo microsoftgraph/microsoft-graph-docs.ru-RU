@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: e4a184a45f1ec385a47fab0e51918949119523b9
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 13771d3e2013d0aa18de2c67393afeabf98fb5ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808391"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988564"
 ---
 # <a name="assignedplan-resource-type"></a>Тип ресурса assignedPlan
 
@@ -27,7 +27,7 @@ ms.locfileid: "46808391"
 |service|String|Имя службы, например "Exchange".|
 |сервицепланид|Guid|Идентификатор GUID, определяющий план обслуживания.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -58,3 +58,4 @@ ms.locfileid: "46808391"
   "section": "documentation",
   "tocPath": ""
 }-->
+

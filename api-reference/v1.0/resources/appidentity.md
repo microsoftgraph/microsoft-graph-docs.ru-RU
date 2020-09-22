@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: dc2f6f912eafdacfc05eb11b65140995dfa28cec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a1878aa01f2a6594f102647b6642eab6f301fa91
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532122"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988599"
 ---
 # <a name="appidentity-resource-type"></a>Тип ресурса Аппидентити
 
@@ -23,7 +23,7 @@ ms.locfileid: "42532122"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |appId|String|Обозначает уникальный идентификатор GUID, представляющий идентификатор приложения в Azure Active Directory.|
-|displayName|Строка|Указывает на имя приложения, отображаемое на портале Azure.|
+|displayName|String|Указывает на имя приложения, отображаемое на портале Azure.|
 |сервицепринЦипалид|String|Указывает уникальный идентификатор GUID, указывающий идентификатор участника службы в Azure Active Directory для соответствующего приложения.|
 |servicePrincipalName|String|— Имя участника-службы — это имя приложения в клиенте. |
 
@@ -58,3 +58,4 @@ ms.locfileid: "42532122"
   "section": "documentation",
   "tocPath": ""
 }-->
+

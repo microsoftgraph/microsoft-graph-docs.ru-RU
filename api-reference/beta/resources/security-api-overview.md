@@ -5,12 +5,12 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: fdbb317fc0721e7a0d062fc67fdac9f193804bb1
-ms.sourcegitcommit: ff3fd4ead2b864ce6abb79915a0488d0562347f8
+ms.openlocfilehash: 92d2351ccf2636978e6e80bd0657681e3f6f07c9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46524389"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988935"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Использование Microsoft Graph Security API
 
@@ -143,3 +143,5 @@ Microsoft Graph Security API раскрывает новые способы вз
 
 - [Присоединяйтесь к сообществу Tech Community](https://aka.ms/graphsecuritycommunity)
 - [Обсуждения на сайте StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
+
+

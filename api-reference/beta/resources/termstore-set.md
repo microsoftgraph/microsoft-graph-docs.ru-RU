@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 5e74e0a603d088c7964b13fad51018171642c6ec
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 45436f1a20652555b17b553f96db60e5636d3d92
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539387"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988802"
 ---
 # <a name="set-resource-type"></a>задать тип ресурса
 
@@ -38,7 +38,7 @@ ms.locfileid: "46539387"
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Дата и время создания набора. Только для чтения.|
 |description|String|Описание, содержащее сведения об использовании терминов.|
-|id|Строка|Уникальный идентификатор. Только для чтения.|
+|id|String|Уникальный идентификатор. Только для чтения.|
 |локализеднамес|Коллекция [Microsoft. Graph. банка Microsoft. Graph. локализеднаме](../resources/termstore-localizedname.md)|Имя набора для каждого Лангуажетаг.|
 |properties|Коллекция [Microsoft. Graph. ключзначение](../resources/keyvalue.md)|Настраиваемые свойства для набора.|
 
@@ -85,7 +85,7 @@ ms.locfileid: "46539387"
 [microsoft.graph.termStore.relation]: termstore-relation.md
 [microsoft.graph.termStore.store]: termstore-store.md
 [microsoft.graph.termStore.localizedName]: termstore-localizedname.md
-[восстановлен]: ../resources/termstore-store.md
+[store]: ../resources/termstore-store.md
 [group]: ../resources/termstore-group.md
 [set]: ../resources/termstore-set.md
 [банком]: ../resources/termstore-term.md
@@ -104,3 +104,5 @@ ms.locfileid: "46539387"
   "suppressions": []
 }
 -->
+
+

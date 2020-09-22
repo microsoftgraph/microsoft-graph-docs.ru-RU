@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: ce0398ba134f7537420a99ccaed84f2ff209f883
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
-ms.translationtype: Auto
+ms.openlocfilehash: 4d27b5815366bdce76e5f99f0410f67684e608ea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44682266"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988823"
 ---
 # <a name="securityresource-resource-type"></a>Тип ресурса Секуритиресаурце
 
@@ -30,7 +30,7 @@ ms.locfileid: "44682266"
 |Элемент|Значение|Описание|
 |-|-|-|
 |атаковать|1 |Ресурс был атакован в оповещении.|
-|связываем|2|Ресурс связан с оповещением, хотя и не может напрямую атаковаться.|
+|связываем|2 |Ресурс связан с оповещением, хотя и не может напрямую атаковаться.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -59,3 +59,5 @@ ms.locfileid: "44682266"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

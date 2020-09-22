@@ -1,28 +1,28 @@
 ---
-title: Список Аппролеассигнментс, назначенных субъекту службы
-description: Получение списка назначений ролей приложений, назначенных субъекту службы.
+title: Список объектов appRoleAssignment, предоставленных субъект-службе
+description: Получение списка назначенных ролей приложения, предоставленных субъект-службе.
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 769842d56751795c7350a977e92e799722010231
-ms.sourcegitcommit: 7a6231aeb570ff45d01b3db3df07a411f9f60fd1
-ms.translationtype: MT
+ms.openlocfilehash: 203fc5d1c8c55f6608a23f96dbbf9c88a868def5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44383296"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989943"
 ---
-# <a name="list-approleassignments-granted-for-a-service-principal"></a>Список Аппролеассигнментс, назначенных субъекту службы
+# <a name="list-approleassignments-granted-for-a-service-principal"></a>Список объектов appRoleAssignment, предоставленных субъект-службе
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [аппролеассигнмент](../resources/approleassignment.md) , которым были предоставлены пользователи, группы или субъекты службы клиента для данного субъекта службы ресурсов.
+Получение списка [appRoleAssignment](../resources/approleassignment.md), предоставленного пользователям, группам или субъект-службам клиента для заданной субъект-службы ресурсов.
 
-Например, если участник службы ресурсов является субъектом-службой для API Microsoft Graph, будут возвращены все субъекты-службы, которым были предоставлены разрешения только для приложения Microsoft Graph.
+Например, если ресурс субъект-службы является субъект-службой API Microsoft Graph, все субъект-службы, которым были предоставлены разрешения только для приложений на Microsoft Graph будут возвращены.
 
-Если участником службы ресурсов является приложение, которому назначены роли приложений для пользователей и групп, будут возвращены все пользователи и группы, которым назначены роли приложений для этого приложения.
+Если ресурс субъект-службы является приложением, имеющим роли приложений, предоставленные пользователям и группам, все назначенные им роли для приложения будут возвращены.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,9 +30,9 @@ ms.locfileid: "44383296"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. Read. ALL, Directory. Read. ALL, Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL  |
+|Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Сервер приложений | Application. Read. ALL, Directory. Read. ALL, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -57,13 +57,13 @@ GET /servicePrincipals/{id}/appRoleAssignedTo
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [аппролеассигнмент](../resources/approleassignment.md) в тексте отклика.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [appRoleAssignment](../resources/approleassignment.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса на получение назначений ролей приложения, предоставленных для данного субъекта-службы ресурсов.
+В приведенном примере показано, как запросить извлечение назначений ролей приложения, предоставленных для заданного ресурса субъект-службы.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -135,3 +135,5 @@ Content-length: 306
   ]
 }
 -->
+
+

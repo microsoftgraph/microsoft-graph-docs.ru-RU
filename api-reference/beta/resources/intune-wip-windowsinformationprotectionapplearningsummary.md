@@ -3,14 +3,14 @@ title: Тип ресурса windowsInformationProtectionAppLearningSummary
 description: Объект сводки по обучению Windows Information Protection для приложений.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6d4a8a1d29077b0beb74b608794cce7ec12eebd0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 35e0ef26027548df06aa6dbdaf6b5e9ab0864786
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471947"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989082"
 ---
 # <a name="windowsinformationprotectionapplearningsummary-resource-type"></a>Тип ресурса windowsInformationProtectionAppLearningSummary
 
@@ -59,6 +59,9 @@ ms.locfileid: "43471947"
   "deviceCount": 1024
 }
 ```
+
+
+
 
 
 

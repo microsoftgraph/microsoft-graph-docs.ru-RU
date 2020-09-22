@@ -3,14 +3,14 @@ title: Тип ресурса deviceCompliancePolicySettingStateSummary
 description: Сводка по состоянию параметров политики соответствия для устройств в учетной записи.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 050e4eaa3e92e0c06648249227956bf6b6f1622e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0cd542c028e603251a9dc6325e9bac8c0fa1d3be
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43448857"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988277"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>Тип ресурса deviceCompliancePolicySettingStateSummary
 
@@ -73,6 +73,8 @@ ms.locfileid: "43448857"
   "conflictDeviceCount": 1024
 }
 ```
+
+
 
 
 

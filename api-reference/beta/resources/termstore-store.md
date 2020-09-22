@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 319e770ae4ec842d2f722b7beb1845f2449d58f8
-ms.sourcegitcommit: 29135eaeff6b2e963b9b5a8b41c207f044dce0fd
+ms.openlocfilehash: 9a315cd9187528b07932710171376b7efcda7af9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539380"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988798"
 ---
 # <a name="store-resource-type"></a>Тип ресурса хранилища
 
@@ -77,4 +77,6 @@ ms.locfileid: "46539380"
   "suppressions": []
 }
 -->
+
+
 

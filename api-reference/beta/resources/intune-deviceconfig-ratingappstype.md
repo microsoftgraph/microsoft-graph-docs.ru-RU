@@ -3,14 +3,14 @@ title: тип перечисления Ратингаппстипе
 description: Оценка приложений как в мультимедийном контенте
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 891dd5c6a17a5363060658c019c6a19b483a8f41
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4eae61cf3f1bbe028452288d3a1c5a0be9642847
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437014"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989201"
 ---
 # <a name="ratingappstype-enum-type"></a>тип перечисления Ратингаппстипе
 
@@ -26,11 +26,14 @@ ms.locfileid: "43437014"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |аллалловед|нуль|Значение по умолчанию, разрешить все содержимое приложений|
-|аллблоккед|1,1|Не разрешать контент приложений|
-|agesAbove4|2|4 +, возраст 4 и выше|
+|аллблоккед|1 |Не разрешать контент приложений|
+|agesAbove4|2 |4 +, возраст 4 и выше|
 |agesAbove9|4|9 +, возраст 9 и более поздних версий|
 |agesAbove12|4 |12 +, 12 лет и более |
 |agesAbove17|5 |17 +, возраст 17 и выше|
+
+
+
 
 
 

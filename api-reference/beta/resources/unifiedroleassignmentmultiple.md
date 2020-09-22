@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: eb763490e9d60ca386400eef3dae1b9e2d382d21
-ms.sourcegitcommit: 41a5bd5868685c10181f6285d5ac91c6dad556e2
+ms.openlocfilehash: c49034c0d050c928b8a9192af6b2adee27a2a516
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/04/2020
-ms.locfileid: "45038676"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988757"
 ---
 # <a name="unifiedroleassignmentmultiple-resource-type"></a>Тип ресурса Унифиедролеассигнментмултипле
 
@@ -36,7 +36,7 @@ ms.locfileid: "45038676"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 | id | String | Уникальный идентификатор для Унифиедролеассигнментмултипле. Key, не допускающая значение null, только для чтения. |
-| displayName | Строка | Имя назначения роли. Обязательный. |
+| displayName | String | Имя назначения роли. Обязательный атрибут. |
 | description | String | Описание назначения роли. |
 | роледефинитионид | String | Идентификатор Унифиедроледефинитион, для которого предназначено назначение. |
 | roleDefinition | [унифиедроледефинитион](unifiedroledefinition.md) |Свойство, определяющее roleDefinition, для которого предназначено назначение. Предоставляется таким образом, чтобы абоненты могли получить определение роли `$expand` одновременно с получением назначения роли. Только для чтения.  |
@@ -90,3 +90,5 @@ ms.locfileid: "45038676"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 64647df6f999ff9679faf23e2400780f005817ff
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 49a29f78963758ffad5ffe5bd7236429b52a0d37
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508620"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988673"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet: UsedRange
 
@@ -50,7 +50,7 @@ GET /workbook/worksheets/{id|name}/usedRange
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [Range](../resources/range.md) в теле отклика.
 
@@ -169,3 +169,4 @@ Content-length: 169
   "suppressions": [
   ]
 }-->
+

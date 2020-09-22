@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8032a721a8f8a94d7cd1481edf58ee785092bcfd
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: ecfe618a8db9f03bbf088ea053476fe6e51bcbf7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556319"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988942"
 ---
 # <a name="riskuseractivity-resource-type"></a>Тип ресурса Рискусерактивити
 
@@ -22,7 +22,7 @@ ms.locfileid: "44556319"
 
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
-| евенттипес | Коллекция Рискевенттипе |Список типов событий риска. Устаревшие. Вместо этого используйте **рискевенттипе** . |
+| евенттипес | Коллекция Рискевенттипе |Список типов событий риска. Устарело. Вместо этого используйте **рискевенттипе** . |
 |рискевенттипе|string|Тип обнаруженного события риска. Возможные значения:,,,,,,,,,,,, `unlikelyTravel` `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` `leakedCredentials` `investigationsThreatIntelligence` `genericadminConfirmedUserCompromised` `mcasImpossibleTravel` `mcasSuspiciousInboxManipulationRules` `investigationsThreatIntelligenceSigninLinked` `maliciousIPAddressValidCredentialsBlockedIP` и `unknownFutureValue` . |
 | описаны     | riskDetail  | Возможные значения:,,,,,,,,,, `none` `adminGeneratedTemporaryPassword` `userPerformedSecuredPasswordChange` `userPerformedSecuredPasswordReset` `adminConfirmedSigninSafe` `aiConfirmedSigninSafe` `userPassedMFADrivenByRiskBasedPolicy` `adminDismissedAllRiskForUser` `adminConfirmedSigninCompromised` `hidden` `adminConfirmedUserCompromised` , `unknownFutureValue` .  |
 
@@ -49,3 +49,5 @@ ms.locfileid: "44556319"
   "suppressions": []
 }
 -->
+
+

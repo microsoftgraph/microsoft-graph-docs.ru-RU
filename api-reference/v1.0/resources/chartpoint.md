@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: befa6f552fd343140d2aae10266c1445066266d5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 208f4eb90763210639540c9fd15bdaec89b7466c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531833"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988382"
 ---
 # <a name="chartpoint-resource-type"></a>Тип ресурса ChartPoint
 
@@ -67,3 +67,4 @@ ms.locfileid: "42531833"
   "section": "documentation",
   "tocPath": ""
 }-->
+

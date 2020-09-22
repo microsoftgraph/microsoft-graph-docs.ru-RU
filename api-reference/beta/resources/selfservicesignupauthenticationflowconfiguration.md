@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса Селфсервицесигнупаусентикатионфловконфигуратион
-description: Представляет конфигурации, связанные с регистрацией самостоятельной службы.
+title: selfServiceSignUpAuthenticationFlowConfiguration resource type
+description: Представляет конфигурации, связанные с самостоятельной регистрацией.
 author: linkhp
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 8c75b3a90a7e9de01234bb53ed8346c40eef932f
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
-ms.translationtype: Auto
+ms.openlocfilehash: 658e27e4fe75424f4bd39cc6c3a76255e70c4d92
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556449"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988809"
 ---
-# <a name="selfservicesignupauthenticationflowconfiguration-resource-type"></a>Тип ресурса Селфсервицесигнупаусентикатионфловконфигуратион
+# <a name="selfservicesignupauthenticationflowconfiguration-resource-type"></a>selfServiceSignUpAuthenticationFlowConfiguration resource type
 
 
 Пространство имен: microsoft.graph
 
-Представляет конфигурации, связанные с самостоятельным входом.
+Представляет конфигурации, связанные с самостоятельной регистрацией.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:-------|:---|:----------|
-|isEnabled|Boolean|Указывает, включен или отключен процесс самостоятельной регистрации для самостоятельных служб. Значение по умолчанию — `false`. Это свойство не является ключом. Обязательный элемент. |
+|isEnabled|Boolean|Указывает, включена или выключена ли самостоятельная регистрация. Значение по умолчанию — `false`. Это свойство не является ключевым. Обязательный. |
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
@@ -40,3 +40,5 @@ ms.locfileid: "44556449"
   "isEnabled": "Boolean"
 }
 ```
+
+

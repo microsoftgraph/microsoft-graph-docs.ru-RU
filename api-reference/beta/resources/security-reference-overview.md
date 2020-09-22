@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: conceptualPageType
-ms.openlocfilehash: 92bdc9948920e39b8f7e889fccaafe4211dd1eee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5550509e3ececdb159125e66c1bd12962722832d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520838"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988900"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>Использование API Microsoft Graph для обнаружения и защиты угроз безопасности (Предварительная версия)
 
@@ -30,3 +30,5 @@ ms.locfileid: "42520838"
 - [Интеграция с интеллектуальным графиком безопасности с помощью API безопасности](security-api-overview.md)
 - [Зачем использовать Azure AD для защиты удостоверений в вашей организации?](/graph/security-concept-overview#why-use-azure-ad-to-protect-identities-in-your-organization)
 - [Использование API защиты удостоверений Azure AD](identityprotection-root.md)
+
+

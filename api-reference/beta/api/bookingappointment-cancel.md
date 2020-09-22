@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 98633524d61093c6ddc4c9c85e5e98f205a508da
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 42a12bfd05dddf6306f6de22b07b2029d2f39e2d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43367708"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988137"
 ---
 # <a name="bookingappointment-cancel"></a>Букингаппоинтмент: Отмена
 
@@ -50,7 +50,7 @@ POST /bookingBusinesses/{id}/appointments/{id}/cancel
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No content`. В тексте отклика не возвращается никаких данных.
 
-При попытке отменить встречу, не ексисит, этот метод возвращает значение `HTTP 404 Not found`.
+При попытке отменить встречу, не ексисит, этот метод возвращает значение `HTTP 404 Not found` .
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -109,3 +109,5 @@ HTTP/1.1 204 No content
   ]
 }
 -->
+
+

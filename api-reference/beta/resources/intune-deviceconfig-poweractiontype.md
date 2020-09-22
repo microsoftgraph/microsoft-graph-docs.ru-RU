@@ -3,14 +3,14 @@ title: тип перечисления Поверактионтипе
 description: Типы действий по питанию
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a65f5f59ad4f598152145313481b537fa3035bd5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e70d5212bbc987e608ba34dc8cdb5b68cee0f0d5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437068"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989222"
 ---
 # <a name="poweractiontype-enum-type"></a>тип перечисления Поверактионтипе
 
@@ -26,10 +26,13 @@ ms.locfileid: "43437068"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроено|
-|noAction|1,1|Нет действий|
-|спящий режим|2|Перевод устройства в состояние сна|
+|noAction|1 |Нет действий|
+|спящий режим|2 |Перевод устройства в состояние сна|
 |режим гибернации|4|Перевод устройства в спящий режим|
 |запланирован|4 |Устройство завершения работы|
+
+
+
 
 
 

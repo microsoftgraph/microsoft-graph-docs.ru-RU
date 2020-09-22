@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: elisolMS
-ms.openlocfilehash: 7b2d4e25dc85f1140ecba9ab9d0365cc4e842be6
-ms.sourcegitcommit: ee41ba9ec6001716f1a9d575741bbeef577e2473
+ms.openlocfilehash: 713af92d91f179f90c9d37a238a23730f351895d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43200091"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989033"
 ---
 # <a name="configuring-the-invitation-message"></a>Настройка сообщения с приглашением
 
@@ -52,3 +52,5 @@ ms.locfileid: "43200091"
   "suppressions": []
 }
 -->
+
+

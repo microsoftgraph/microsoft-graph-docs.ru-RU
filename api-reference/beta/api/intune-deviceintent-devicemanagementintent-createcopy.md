@@ -3,14 +3,14 @@ title: действие Креатекопи
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e25371a5efb1a9cc342bb6122b464d304848b4ba
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 06d4d51a2a11b4fb4f029ff11ac40642364e1d7f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177249"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990041"
 ---
 # <a name="createcopy-action"></a>действие Креатекопи
 
@@ -43,17 +43,17 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/createCopy
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Н/Д|
+|displayName|String|Пока не задокументировано.|
 
 
 
@@ -97,6 +97,9 @@ Content-Length: 418
   }
 }
 ```
+
+
+
 
 
 

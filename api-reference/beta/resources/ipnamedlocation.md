@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f2d08de5438e85ce18cb9a78da0213a9b07fa104
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 37e5f46bf4806e402dcb527745c58c381945160a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917578"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988970"
 ---
 # <a name="ipnamedlocation-resource-type"></a>Тип ресурса Ипнамедлокатион
 
@@ -37,7 +37,7 @@ ms.locfileid: "43917578"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|Тип timestamp представляет дату и время создания расположения с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
-|displayName|Строка|Удобное для человека имя расположения.|
+|displayName|String|Удобное для человека имя расположения.|
 |id|String|Идентификатор объекта Намедлокатион. Только для чтения. Наследуется от [намедлокатион](../resources/namedLocation.md).|
 |ипранжес|Коллекция объектов [ipRange](iprange.md)|Список диапазонов IP-адресов в формате CIDR IPv4 (например, 1.2.3.4/32) или любом допустимом формате IPv6 из IETF RFC596.|
 |Доверять|Boolean|Значение true, если данное расположение явно является доверенным.|
@@ -80,3 +80,5 @@ ms.locfileid: "43917578"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

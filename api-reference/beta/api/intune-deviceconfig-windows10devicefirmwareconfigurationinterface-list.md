@@ -3,14 +3,14 @@ title: Список windows10DeviceFirmwareConfigurationInterfaces
 description: Список свойств и связей объектов windows10DeviceFirmwareConfigurationInterface.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b045c7a1f2d02f3e533452c7191367e002a0aa8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: ac896a058b678e166d83a2ff9e5a39e8000b9afa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43431631"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990118"
 ---
 # <a name="list-windows10devicefirmwareconfigurationinterfaces"></a>Список windows10DeviceFirmwareConfigurationInterfaces
 
@@ -44,13 +44,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [windows10DeviceFirmwareConfigurationInterface](../resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -114,6 +114,9 @@ Content-Length: 1670
   ]
 }
 ```
+
+
+
 
 
 

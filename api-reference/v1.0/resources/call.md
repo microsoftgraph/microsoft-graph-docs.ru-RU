@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 828614446143569b3e7d82233a8ba19e4140697e
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 966e03eacb3e72621c65aa64183c6db0bc8b4e82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319388"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988508"
 ---
 # <a name="call-resource-type"></a>Тип ресурса call
 
@@ -50,6 +50,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 | **Интерактивный голосовой ответ**                                     |                                                             |                                                                                 |
 | [PlayPrompt](../api/call-playprompt.md)                            | [playPromptOperation](playpromptoperation.md)               | Воспроизведение запроса в вызове.                                                        |
 | [RecordResponse](../api/call-record.md)                            | [recordOperation](recordoperation.md)                       | Запись короткого голосового ответа звонящего.                                        |
+| [CancelMediaProcessing](../api/call-cancelMediaProcessing.md)                  | [commsOperation](commsoperation.md)                         | Отмена обработки мультимедиа.                                                        |
 | [SubscribeToTone](../api/call-subscribetotone.md)                  | [commsOperation](commsoperation.md)                         | Подписка на тоны DTMF.                                                        |
 | **Самостоятельные операции участников**                                    |                                                             |                                                                                 |
 | [Отключение звука](../api/call-mute.md)                                        | [muteParticipantOperation](muteparticipantoperation.md)     | Отключение своего звука в вызове.                                                          |
@@ -153,3 +154,4 @@ incomingContext            | [incomingContext](incomingContext.md)              
   "suppressions": []
 }
 -->
+

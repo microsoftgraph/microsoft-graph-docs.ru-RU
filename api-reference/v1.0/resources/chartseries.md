@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f7d42633321c78eb03942072731b0636a8ca73b7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 173f9878daecd3443137800f143a2b3633a2fa20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531823"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988375"
 ---
 # <a name="chartseries-resource-type"></a>Тип ресурса ChartSeries
 
@@ -70,3 +70,4 @@ ms.locfileid: "42531823"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 58b6ce47cedca752cbbe151805a0ba1fd9c78cdf
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5b4deb0044f3fa9d36bf63835ebc063c42f60c2a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43367540"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988118"
 ---
 # <a name="update-bookingappointment"></a>Обновление букингаппоинтмент
 
@@ -67,7 +67,7 @@ PATCH /bookingBusinesses/{id}/appointments/{id}
 |сервицелокатион|[location](../resources/location.md)|Место доставки службы.|
 |Служба|String|Имя **букингсервице** , связанного с этой встречей.<br>Это свойство является необязательным при создании новой встречи. Если он не указан, то он вычисляется из службы, связанной с встречей, с помощью свойства **serviceId** .|
 |сервиценотес|String|Заметки из [букингстаффмембер](../resources/bookingstaffmember.md). Значение этого свойства доступно только при чтении этого **букингаппоинтмент** с помощью идентификатора.|
-|стаффмемберидс|Коллекция объектов string|Идентификатор каждого [букингстаффмембер](../resources/bookingstaffmember.md) , запланированного в этой встрече.|
+|стаффмемберидс|Коллекция String|Идентификатор каждого [букингстаффмембер](../resources/bookingstaffmember.md) , запланированного в этой встрече.|
 |начать|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата, время и часовой пояс, с которого начинается встреча.|
 
 
@@ -119,7 +119,7 @@ Content-type: application/json
 
 ---
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
@@ -142,3 +142,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

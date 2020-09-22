@@ -3,14 +3,14 @@ title: Список Макострустедрутцертификатес
 description: Список свойств и связей объектов Макострустедрутцертификате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fb3e9e8304e3bdd0b193c34a5da037ce41e97b4b
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 3bbce1211203e949a2864bc589b95bf133b323fd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792753"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990153"
 ---
 # <a name="list-macostrustedrootcertificates"></a>Список Макострустедрутцертификатес
 
@@ -43,7 +43,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -108,6 +108,9 @@ Content-Length: 1479
   ]
 }
 ```
+
+
+
 
 
 

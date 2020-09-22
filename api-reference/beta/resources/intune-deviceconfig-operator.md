@@ -3,14 +3,14 @@ title: тип перечисления оператора
 description: Оператор для правил.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cb0664095d4b44d994793fb891442cc7bc2da50f
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: e9ba2d810e510886f440bff50308f589083ce0d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793796"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989236"
 ---
 # <a name="operator-enum-type"></a>тип перечисления оператора
 
@@ -27,7 +27,7 @@ ms.locfileid: "44793796"
 |:---|:---|:---|
 |Нет|нуль|Оператор None.|
 |и|1 |Оператор and.|
-|или|2|Оператор OR.|
+|или|2 |Оператор OR.|
 |значения сумм|4|Оператору Equals.|
 |нотекуалс|4 |Оператор Нотекуалс.|
 |greaterThan|5 |Оператор GreaterThan.|
@@ -36,7 +36,7 @@ ms.locfileid: "44793796"
 |нотбетвин|8 |Оператор Нотбетвин.|
 |греатерекуалс|9 |Оператор Греатерекуалс.|
 |лессекуалс|10 |Оператор Лессекуалс.|
-|дайтимебетвин|-11:00|Оператор Дайтимебетвин.|
+|дайтимебетвин|11 |Оператор Дайтимебетвин.|
 |beginsWith|12 |Оператор BeginsWith.|
 |нотбегинсвис|13 |Оператор Нотбегинсвис.|
 |endsWith|14 |Оператор EndsWith.|
@@ -50,6 +50,9 @@ ms.locfileid: "44793796"
 |ордередсетекуалс|22|Оператор Ордередсетекуалс.|
 |субсетоф|23|Оператор Субсетоф.|
 |ексклудесалл|открыт|Оператор Ексклудесалл.|
+
+
+
 
 
 

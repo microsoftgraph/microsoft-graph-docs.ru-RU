@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 1a6a8f0f1448522d624b9c9e97bb2fab426b6988
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2435d1eef85dcdedc58b5e4e2be590759b779227
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519780"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988788"
 ---
 # <a name="threatassessmentrequest-resource-type"></a>Тип ресурса Среатассессментрекуест
 
@@ -52,7 +52,7 @@ ms.locfileid: "42519780"
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|results|Коллекция [среатассессментресулт](threatassessmentresult.md)|Коллекция результатов оценки угроз. Только для чтения. По умолчанию объект `GET /threatAssessmentRequests/{id}` a не возвращает это свойство, пока не `$expand` применено к нему.|
+|results|Коллекция [среатассессментресулт](threatassessmentresult.md)|Коллекция результатов оценки угроз. Только для чтения. По умолчанию объект a не `GET /threatAssessmentRequests/{id}` возвращает это свойство, пока не применено `$expand` к нему.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -90,3 +90,5 @@ ms.locfileid: "42519780"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

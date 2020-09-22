@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: d1a1f1cb63d4f5feee4f8a6d399a91dfc4c35266
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 7de7f328d59ba20de77ec75cf5c6f16a0da2bc9e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43367182"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988081"
 ---
 # <a name="list-appointments"></a>Список встреч
 
@@ -34,9 +34,9 @@ ms.locfileid: "43367182"
 GET /bookingBusinesses/{id}/appointments
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
-Чтобы получить набор встреч из зарезервированных дел в диапазоне дат, вместо `$filter`этого [получите calendarView](bookingbusiness-list-calendarview.md) для этого диапазона дат.
+Чтобы получить набор встреч из зарезервированных дел в диапазоне дат, вместо этого `$filter` [получите calendarView](bookingbusiness-list-calendarview.md) для этого диапазона дат.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -45,7 +45,7 @@ GET /bookingBusinesses/{id}/appointments
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [букингаппоинтмент](../resources/bookingappointment.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -273,3 +273,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

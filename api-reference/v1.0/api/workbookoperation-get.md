@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: bbf1efd39b970b4c91e6a108178a506371e3f073
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 2d5aca6184a392409abe8e103255ebe9999e9478
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46567052"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988649"
 ---
 # <a name="get-workbookoperation"></a>Получение Воркбукоператион
 
@@ -40,7 +40,7 @@ GET workbook/operations/{operation-id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -150,3 +150,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

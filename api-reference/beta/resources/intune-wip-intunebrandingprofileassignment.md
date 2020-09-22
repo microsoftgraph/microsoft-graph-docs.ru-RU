@@ -3,14 +3,14 @@ title: Тип ресурса Интунебрандингпрофилеасси�
 description: Эта сущность содержит свойства, используемые для назначения профиля фирменной символики группе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 47f2cbb5634b07384282e1c513e3b65647bdf488
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: cee1cc0b2454e842f50eff1fc6f8e9e0ed5455d1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793523"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47989089"
 ---
 # <a name="intunebrandingprofileassignment-resource-type"></a>Тип ресурса Интунебрандингпрофилеассигнмент
 
@@ -59,6 +59,9 @@ ms.locfileid: "44793523"
   }
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 42037a6b65deb4bd3fc31d63c5cd47bee21b7eb7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ba22a03f4d4a6d03b0093ed28b8c54a7c095d037
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520817"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988865"
 ---
 # <a name="securityactionstate-resource-type"></a>Тип ресурса Секуритяктионстате
 
@@ -60,3 +60,5 @@ ms.locfileid: "42520817"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

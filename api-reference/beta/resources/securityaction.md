@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 48c00d99ade3601e051d074272793d6aa0f2c66b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ce6b068e7df3a4c406c1eb0791bf8b3688994f5b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520831"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988898"
 ---
 # <a name="securityaction-resource-type"></a>Тип ресурса securityAction
 
@@ -41,9 +41,9 @@ ms.locfileid: "42520831"
 |completedDateTime|DateTimeOffset|Временная метка выполнения действия. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |createdDateTime|DateTimeOffset|Временная метка при создании действия. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |errorInfo|[resultInfo](resultinfo.md)| Сведения об ошибке при сбое действия.|
-|id|Строка| Создается системой при выполнении действия. Созданный GUID/уникальный идентификатор. Только для чтения.|
+|id|String| Создается системой при выполнении действия. Созданный GUID/уникальный идентификатор. Только для чтения.|
 |ластактиондатетиме|DateTimeOffset| Временная метка при последнем обновлении этого действия. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|name|Строка| Имя действия.|
+|name|String| Имя действия.|
 |parameters|Коллекция [keyValuePair](keyvaluepair.md)| Коллекция параметров (пар "ключ-значение"), необходимых для вызова действия, например URL-адрес или fileHash для блокировки и т. д.). **Required**|
 |состояния|Коллекция [секуритяктионстате](securityactionstate.md)|Коллекция Секуритяктионстате, в которой будет храниться журнал действия.|
 |status|string| Состояние действия. Возможные значения: `NotStarted`, `Running`, `Completed`, `Failed`.|
@@ -97,3 +97,4 @@ ms.locfileid: "42520831"
   "section": "documentation",
   "tocPath": ""
 }-->
+

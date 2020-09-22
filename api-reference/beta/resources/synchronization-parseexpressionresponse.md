@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0ef96bda8e9e28c655c4bbcf0153ea83ef5b0c8e
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 9bd675b079f42856e85f54b7da84a091a0f57f4f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43217607"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988816"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>Тип ресурса Парсикспрессионреспонсе
 
@@ -24,10 +24,10 @@ ms.locfileid: "43217607"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |error|публицеррор|Сведения об ошибке, если вычисление выражений привело к ошибке.|
-|евалуатионресулт|Коллекция объектов string|Коллекция значений, полученных при оценке выражения.|
-|евалуатионсукцеедед|Boolean|`true`, если оценка выполнена успешно.|
+|евалуатионресулт|Коллекция String|Коллекция значений, полученных при оценке выражения.|
+|евалуатионсукцеедед|Boolean|`true` , если оценка выполнена успешно.|
 |парседекспрессион|[аттрибутемаппингсаурце](synchronization-attributemappingsource.md)|Объект [аттрибутемаппингсаурце](synchronization-attributemappingsource.md) , представляющий проанализированное выражение.|
-|парсингсукцеедед|Boolean|`true`, если выражение было успешно проанализировано.|
+|парсингсукцеедед|Boolean|`true` , если выражение было успешно проанализировано.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -64,3 +64,5 @@ ms.locfileid: "43217607"
   "suppressions": []
 }
 -->
+
+

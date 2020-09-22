@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 858018ac269fdf16929e2f0efea6ec40bada7639
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: de52b49bfc009158da839e00bd8fb7475d588c4b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808363"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988542"
 ---
 # <a name="attendee-resource-type"></a>Тип ресурса attendee
 
@@ -28,7 +28,7 @@ ms.locfileid: "46808363"
 |status|[ResponseStatus](responsestatus.md)|Ответ участника (нет, принято, отклонено и т. д.) на событие, а также дата и время отправки ответа.|
 |type|String|Тип участника: `required`, `optional`, `resource`.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -61,3 +61,4 @@ ms.locfileid: "46808363"
   "section": "documentation",
   "tocPath": ""
 }-->
+

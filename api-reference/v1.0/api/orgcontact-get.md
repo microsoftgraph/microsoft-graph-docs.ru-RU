@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 399fdbe0cacf0335e104e12a4e0d0c144acef81c
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 521a9f9e01769007c6d06736bd6662b109a1f822
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43387336"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47988676"
 ---
 # <a name="get-orgcontact"></a>Получение orgContact
 
@@ -43,7 +43,7 @@ GET /contacts/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [orgContact](../resources/orgcontact.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -127,3 +127,4 @@ Content-length: 222
   ]
 }
 -->
+
