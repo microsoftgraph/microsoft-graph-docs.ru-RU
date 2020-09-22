@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: c4148e5740c9b31368be336a615524ced426a560
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: cd6f352ad114307933682f4d6df22408b54ebc73
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43219230"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48070585"
 ---
 # <a name="privilegedapproval-resource-type"></a>Тип ресурса Привилежедаппровал
 
@@ -45,7 +45,7 @@ ms.locfileid: "43219230"
 |startDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |userId|String||
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |ролеинфо|[privilegedRole](privilegedrole.md)| Только для чтения. Допускается значение null.|
@@ -92,3 +92,5 @@ ms.locfileid: "43219230"
   "suppressions": []
 }
 -->
+
+

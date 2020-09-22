@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 6433c1680630b5805cd18a22e550e58a51bcefbc
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: d81e8078d785761c09aa1070120924b2318415a9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898305"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057887"
 ---
 # <a name="useractivationcounts-resource-type"></a>Тип ресурса Усерактиватионкаунтс
 
@@ -50,3 +50,5 @@ ms.locfileid: "44898305"
   "activatedOnSharedComputer": true 
 }
 ```
+
+

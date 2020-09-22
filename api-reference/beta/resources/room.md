@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: e23d8a873abb0de5a086350b3748f9e40d7e12ae
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ff64a11b9a4e0e036824df1629f1ae055ade3f9d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521042"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016137"
 ---
 # <a name="room-resource-type"></a>Тип ресурса "комната"
 
@@ -35,10 +35,10 @@ ms.locfileid: "42521042"
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](physicaladdress.md)             | Почтовый адрес комнаты. |
 | аудиодевиценаме        | String                                            | Указывает имя звукового устройства в комнате. |
-| букингтипе            | [букингтипе](#bookingtype-values)                | Тип комнаты. Возможные значения: `standard`и `reserved`. |
+| букингтипе            | [букингтипе](#bookingtype-values)                | Тип комнаты. Возможные значения: `standard` и `reserved` . |
 | создания               | String                                            | Задает имя здания или номер здания, в котором находится комната. |
 | мощности               | String                                            | Указывает емкость комнаты. |
-| displayName            | Строка                                            | Имя, связанное с комнатой. |
+| displayName            | String                                            | Имя, связанное с комнатой. |
 | дисплайдевиценаме      | String                                            | Задает имя устройства отображения в комнате. |
 | emailAddress           | String                                            | Адрес электронной почты комнаты. |
 | флурлабел             | String                                            | Задает описательную метку для пола, например P. |
@@ -59,7 +59,7 @@ ms.locfileid: "42521042"
 | Стандартный | Комнату можно зарезервировать в соответствии с другими параметрами в этом командлете. Это значение используется по умолчанию. |
 | резервирования | Комната доступна только в первый поступающий, первый обслуживаемый. Оно не может быть зарезервировано.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -108,3 +108,5 @@ ms.locfileid: "42521042"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

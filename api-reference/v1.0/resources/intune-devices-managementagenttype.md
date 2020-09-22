@@ -3,14 +3,14 @@ title: тип перечисления Манажементаженттипе
 description: Тип агента управления.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d5f698a2878b0662193128044d7b069c8dfe8b3f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fe4dc7edada2353ebcc9b073f7c599ebef6e4244
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43406835"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091049"
 ---
 # <a name="managementagenttype-enum-type"></a>тип перечисления Манажементаженттипе
 
@@ -23,8 +23,8 @@ ms.locfileid: "43406835"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|атрибутов|1,1|Управление устройством осуществляется с помощью Exchange Server.|
-|Корпоратив|2|Управление устройством осуществляется с помощью Intune MDM.|
+|атрибутов|1 |Управление устройством осуществляется с помощью Exchange Server.|
+|Корпоратив|2 |Управление устройством осуществляется с помощью Intune MDM.|
 |еасмдм|4|Устройство управляется как в Exchange Server, так и в Intune MDM.|
 |интунеклиент|4 |Управление клиентом Intune.|
 |еасинтунеклиент|5 |Устройство — это EAS и двойное управление клиентом Intune.|
@@ -34,6 +34,8 @@ ms.locfileid: "43406835"
 |unknown|16 |Неизвестный тип агента управления.|
 |жамф|32|Атрибуты устройства извлекаются из Жамф.|
 |гуглеклауддевицеполициконтроллер|64|Управление устройством осуществляется с помощью Клауддпк Google.|
+
+
 
 
 

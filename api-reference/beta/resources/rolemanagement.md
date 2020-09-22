@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 71c59c1e44123b60dd46b2c72e71aabfc7a64c25
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: 19eb561944c3d9055f8453906bfedb92701c814f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991784"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016170"
 ---
 # <a name="rolemanagement-resource-type"></a>Тип ресурса Ролеманажемент
 
@@ -20,7 +20,7 @@ ms.locfileid: "43991784"
 
 Представляет объект управления ролями Microsoft 365 RBAC. Предоставляет доступ к определениям ролей и назначениям ролей, предоставляемым поставщикам RBAC. В настоящее время поддерживаются поставщики Active Directory (Azure AD) и deviceManagement (Intune). 
 
-Дополнительные сведения см. в статье: 
+Дополнительные сведения см. в указанных ниже статьях. 
 * [Разрешения роли администратора в Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 * [Управление доступом на основе ролей (RBAC) в Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control)
 
@@ -32,7 +32,7 @@ ms.locfileid: "43991784"
 
 Нет
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
@@ -52,3 +52,5 @@ ms.locfileid: "43991784"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

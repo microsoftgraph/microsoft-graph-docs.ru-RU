@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 519e2a7fdb6662496cdb660095ec63ce81b849f6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f91f07e889a1808696a0bfb7180b51aa06355334
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521056"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016172"
 ---
 # <a name="riskyuserhistoryitem-resource-type"></a>Тип ресурса Рискюсерхисторитем
 
@@ -64,3 +64,5 @@ ms.locfileid: "42521056"
   ]
 }
 -->
+
+

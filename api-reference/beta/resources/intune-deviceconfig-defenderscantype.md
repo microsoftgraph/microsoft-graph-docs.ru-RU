@@ -3,14 +3,14 @@ title: тип перечисления Дефендерскантипе
 description: Возможные значения для типа "сканирование системы".
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b833840281653b5ff083eb97dae5313406dc1a8f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 466fa8979f42eaccacf4ac371d54b1a45e823ec9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43413068"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016375"
 ---
 # <a name="defenderscantype-enum-type"></a>тип перечисления Дефендерскантипе
 
@@ -26,9 +26,12 @@ ms.locfileid: "43413068"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|отключено|1,1|Сканирование системы отключено.|
-|Quick|2|Быстрая проверка системы.|
+|отключено|1 |Сканирование системы отключено.|
+|Quick|2 |Быстрая проверка системы.|
 |полный|4|Полное сканирование системы.|
+
+
+
 
 
 

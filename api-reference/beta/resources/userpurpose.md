@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: abheek-das
-ms.openlocfilehash: b4ed5db9dfa87b2829d78371339c166c3bb74265
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
-ms.translationtype: Auto
+ms.openlocfilehash: 83abf3bd19434867bbd162b6260ed5f4445d8ffd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44846378"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057845"
 ---
 # <a name="userpurpose-resource-type"></a>Тип ресурса Усерпурпосе
 
@@ -30,14 +30,14 @@ ms.locfileid: "44846378"
 |Member|Описание|
 |:---------------|:--------|
 |unknown|Сведения о почтовом ящике не найдены.|
-|пользователь;|Учетная запись пользователя с почтовым ящиком в локальном лесе.|
+|user|Учетная запись пользователя с почтовым ящиком в локальном лесе.|
 |вязывает|Почтовый ящик, связанный с учетной записью пользователя в другом лесе.|
 |общие|Почтовые ящики, используемые двумя или более учетными записями пользователей.|
 |отеле|Почтовый ящик, представляющий комнату переговоров.|
 |перифери|Почтовый ящик, представляющий компонент оборудования.|
 |владельцев|Найден почтовый ящик, но цель пользователя отличается от указанных выше.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -68,3 +68,5 @@ ms.locfileid: "44846378"
   "suppressions": []
 }
 -->
+
+

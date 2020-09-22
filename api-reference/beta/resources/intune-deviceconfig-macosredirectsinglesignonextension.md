@@ -3,14 +3,14 @@ title: Тип ресурса Макосредиректсинглесигнон�
 description: Представляет профиль расширения единого входа с перенаправлением для устройств macOS.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c5cca8702dfe821c7e1e73e02170afba49d88e50
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b39d4716909d43430163e0b35213e749df6b1afe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43447026"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48064215"
 ---
 # <a name="macosredirectsinglesignonextension-resource-type"></a>Тип ресурса Макосредиректсинглесигнонекстенсион
 
@@ -60,6 +60,9 @@ ms.locfileid: "43447026"
   ]
 }
 ```
+
+
+
 
 
 

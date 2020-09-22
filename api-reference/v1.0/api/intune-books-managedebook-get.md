@@ -3,14 +3,14 @@ title: Get managedEBook
 description: Чтение свойств и связей объекта managedEBook.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: df34fb59b7b799d56536b3ac3031202ff81f5899
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2ee0ecc9f3dd0bbc52319beca03e95e5727ed6b7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467496"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48077886"
 ---
 # <a name="get-managedebook"></a>Get managedEBook
 
@@ -47,10 +47,10 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [managedEBook](../resources/intune-books-managedebook.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -88,6 +88,9 @@ Content-Length: 712
   }
 }
 ```
+
+
+
 
 
 

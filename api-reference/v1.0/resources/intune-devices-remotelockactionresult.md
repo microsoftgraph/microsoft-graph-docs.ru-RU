@@ -3,14 +3,14 @@ title: Тип ресурса remoteLockActionResult
 description: Результат блокирования с ПИН-кодом разблокировки
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0fcf663ad633f09a1198c901ffa1b82c2278b3ba
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c6eae05e799394d37fa5c842b278f60251fbd47a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43406828"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48091042"
 ---
 # <a name="remotelockactionresult-resource-type"></a>Тип ресурса remoteLockActionResult
 
@@ -52,6 +52,8 @@ ms.locfileid: "43406828"
   "unlockPin": "String"
 }
 ```
+
+
 
 
 

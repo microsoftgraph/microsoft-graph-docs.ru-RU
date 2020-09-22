@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2390ff2f9aab1fe74aa6aebf0cfdbeeb6a2d5131
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 838fe1b986245909c1c1251d23fe048d2ebf65ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793593"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016200"
 ---
 # <a name="riskyuser-resource-type"></a>Тип ресурса Рискюсер
 
@@ -39,7 +39,7 @@ ms.locfileid: "44793593"
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
 |`id`|`string`|Уникальный идентификатор пользователя под угрозой|
-|`isDeleted`|`bool`|Указывает, удален ли пользователь. Возможные значения: `true` ,`false`|
+|`isDeleted`|`bool`|Указывает, удален ли пользователь. Возможные значения: `true` , `false`|
 |`isProcessing`|`bool`|Указывает, вехсер ли опасное состояние пользователя при обработке внутренней|
 |`riskLastUpdatedDateTime`|`datetime`|Дата и время последнего обновления рискованного пользователя|
 |`riskLevel`|`riskLevel`| Возможные значения: "минимум", "средний", "высокий", "скрытый", "нет", unknownFutureValue.  |
@@ -48,7 +48,7 @@ ms.locfileid: "44793593"
 |`userDisplayName`|`string`|Опасное отображаемое имя пользователя|
 |`userPrincipalName`|`string`|Рискованное имя участника пользователя|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -89,3 +89,5 @@ ms.locfileid: "44793593"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

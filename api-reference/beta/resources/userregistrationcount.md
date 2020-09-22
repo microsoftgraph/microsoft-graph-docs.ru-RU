@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: e322f073655ffaa975464d666a365410138f6e51
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 5aa86a0b490ddb2cd68a504f5a4879f922fa0cf2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43384987"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057829"
 ---
 # <a name="userregistrationcount-resource-type"></a>Тип ресурса Усеррегистратионкаунт
 
@@ -25,9 +25,9 @@ ms.locfileid: "43384987"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 | регистратионкаунт | Int64 | Предоставляет счетчик регистраций для клиента. |
-| регистратионстатус | String | Представляет состояние регистрации пользователя. `registered`Возможные значения: `enabled`,, `capable`и. `mfaRegistered` |
+| регистратионстатус | String | Представляет состояние регистрации пользователя. Возможные значения: `registered` , `enabled` , `capable` и `mfaRegistered` . |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -56,3 +56,4 @@ ms.locfileid: "43384987"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 77f0f990587531c10914644366e066a0fd659f37
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: aabd0716990f67d0b73b4bb300b6953caa0bfe07
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519507"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057810"
 ---
 # <a name="userset-complex-type"></a>сложный тип User
 
@@ -26,9 +26,9 @@ ms.locfileid: "42519507"
 | :--------------------------- | :------------------------ | :---------- |
 | Создание резервной копии | Boolean | Для пользователя на этапе утверждения данное свойство указывает, является ли пользователь утверждающим резервной копии. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
-Ниже представлено представление объекта User в формате JSON.  Обратите внимание, что пользовательский набор является абстрактным базовым классом, и поэтому не может быть отправлен или получен.  Вместо этого используется один из `@odata.type` "`#microsoft.graph.singleUser``#microsoft.graph.groupMembers`", "", "`#microsoft.graph.connectedOrganizationMembers`", "`#microsoft.graph.requestorManager`", "`#microsoft.graph.internalSponsors`" или "`#microsoft.graph.externalSponsors`".
+Ниже представлено представление объекта User в формате JSON.  Обратите внимание, что пользовательский набор является абстрактным базовым классом, и поэтому не может быть отправлен или получен.  Вместо этого используется один из `@odata.type` " `#microsoft.graph.singleUser` ", " `#microsoft.graph.groupMembers` ", " `#microsoft.graph.connectedOrganizationMembers` ", " `#microsoft.graph.requestorManager` ", " `#microsoft.graph.internalSponsors` " или " `#microsoft.graph.externalSponsors` ".
 
 <!-- {
   "blockType": "resource",
@@ -56,3 +56,5 @@ ms.locfileid: "42519507"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

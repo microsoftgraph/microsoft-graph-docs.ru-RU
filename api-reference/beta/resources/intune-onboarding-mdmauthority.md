@@ -3,14 +3,14 @@ title: тип перечисления Мдмаусорити
 description: Центр управления мобильными устройствами.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c181d1943a9fdf72ef4c3757e6797bf0b64bb73b
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9f556ff52af0f0d83e30545b9dbf4fbe835bf689
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43455569"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48029486"
 ---
 # <a name="mdmauthority-enum-type"></a>тип перечисления Мдмаусорити
 
@@ -26,9 +26,12 @@ ms.locfileid: "43455569"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Unknown|
-|корпоративного|1,1|Intune|
-|SCCM|2|SCCM|
+|корпоративного|1 |Intune|
+|SCCM|2 |SCCM|
 |Office365|4|Office365|
+
+
+
 
 
 

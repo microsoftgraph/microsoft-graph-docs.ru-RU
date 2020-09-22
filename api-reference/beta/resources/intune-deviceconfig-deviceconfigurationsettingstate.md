@@ -3,14 +3,14 @@ title: Тип ресурса deviceConfigurationSettingState
 description: Состояние параметра конфигурации определенного устройства.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4601ba80d9ba4c67785848421e457107c7701159
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 596fd1d59e99a2023055ec92843474a46ae20fb6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43469376"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48016368"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>Тип ресурса deviceConfigurationSettingState
 
@@ -34,12 +34,12 @@ ms.locfileid: "43469376"
 |userId|String|ИД пользователя|
 |userName|String|Имя пользователя|
 |userEmail|String|Электронный адрес пользователя|
-|userPrincipalName|Строка|Имя участника-пользователя.|
+|userPrincipalName|String|Имя участника-пользователя.|
 |sources|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Соответствующие политики|
 |currentValue|String|Текущее значение параметра на устройстве|
 |сеттингинстанцеид|String|сеттингинстанцеид|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -66,13 +66,17 @@ ms.locfileid: "43469376"
     {
       "@odata.type": "microsoft.graph.settingSource",
       "id": "String",
-      "displayName": "String"
+      "displayName": "String",
+      "sourceType": "String"
     }
   ],
   "currentValue": "String",
   "settingInstanceId": "String"
 }
 ```
+
+
+
 
 
 
