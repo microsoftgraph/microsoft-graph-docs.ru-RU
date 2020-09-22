@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс Итемпревиевинфо содержит сведения о внедрении предварительного просмотра driveItem.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 7d2050a38e77e0cfa7176ba63756e9b9d8dcd384
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4d04384ba8efe27b369bfd4d73a560baf920cd53
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447628"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009242"
 ---
 # <a name="itempreviewinfo-resource-type"></a>Тип ресурса Итемпревиевинфо
 
@@ -40,7 +40,7 @@ ms.locfileid: "42447628"
 
 В зависимости от текущего состояния поддержки для заданных параметров может возвращаться либо getUrl, Постурл, либо и то, и другое.
 
-i-параметры — это строка, `application/x-www-form-urlencoded`отформатированная как, и при выполнении POST для постурл Content-Type необходимо задать соответствующие параметры. Например:
+i-параметры — это строка, отформатированная как `application/x-www-form-urlencoded` , и при выполнении POST для постурл Content-Type необходимо задать соответствующие параметры. Например:
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded
@@ -49,3 +49,4 @@ param1=value&param2=another%20value
 ```
 
 Форматы URL-адресов и параметров следует считать непрозрачными.
+

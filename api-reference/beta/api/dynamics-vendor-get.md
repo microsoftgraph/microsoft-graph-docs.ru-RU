@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 87c79a1b91044c23b771ca613e7b93ba79a1fed0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 291fbd0cb4956069935f495fd83f844fbbdd75ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427916"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008038"
 ---
 # <a name="get-vendors"></a>Получение поставщиков
 
@@ -48,7 +48,7 @@ GET /financials/companies/{id}/vendors/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **вендоров** в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -93,5 +93,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/vendors/{id}
   "lastModifiedDateTime": "2017-03-07T00:35:29.667Z"
 }
 ```
+
+
 
 

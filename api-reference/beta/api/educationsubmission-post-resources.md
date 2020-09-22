@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 8b8c92e3e26d588a79c7af460124fe56b3f708a8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d078cfb0f5e81cd245058b3952a74cfe5dd34836
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42425032"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007257"
 ---
 # <a name="create-educationsubmissionresource"></a>Создание Едукатионсубмиссионресаурце
 
@@ -41,11 +41,11 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [едукатионсубмиссионресаурце](../resources/educationsubmissionresource.md) в формате JSON.
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [едукатионсубмиссионресаурце](../resources/educationsubmissionresource.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -147,3 +147,5 @@ Content-length: 1152
   "suppressions": []
 }
 -->
+
+

@@ -6,12 +6,12 @@ description: Объект Итеманалитикс предоставляет 
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 0b4ee2bba6cff84a99cf5a0e20dddc09ad87ee59
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 879fad9ae77f065a7235a6adbfde5f742a1970f0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447656"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009298"
 ---
 # <a name="itemanalytics-resource-type"></a>Тип ресурса Итеманалитикс
 
@@ -58,3 +58,4 @@ ms.locfileid: "42447656"
   "suppressions": []
 }
 -->
+

@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 39a16e5ac1b710200b0370a74772d9c776167b2c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4effa4f3e6bf9d708acd9a2a4d03eaae573642c2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427377"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007779"
 ---
 # <a name="list-submissions"></a>Отправка списка
 
@@ -44,7 +44,7 @@ GET /education/classes/{id}/assignments/{id}/submissions
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [educationSubmission](../resources/educationsubmission.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -57,7 +57,7 @@ GET /education/classes/{id}/assignments/{id}/submissions
 GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -113,3 +113,5 @@ Content-length: 873
   "suppressions": []
 }
 -->
+
+

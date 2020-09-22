@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: d916ed3e1de5643983808c3bd410a2746d64c2b5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 30916ec2fd6bd00f92a5ad96be05400d7ec4c92f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431902"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008389"
 ---
 # <a name="get-countriesregions"></a>Получение Каунтриесрегионс
 
@@ -29,7 +29,7 @@ ms.locfileid: "42431902"
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
 |Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Financials.ReadWrite.All|
+|Приложение|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 ```
@@ -47,7 +47,7 @@ GET /financials/companies/{id}/countriesRegions/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **каунтриесрегионс** в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -74,3 +74,5 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegions/
   "lastModifiedDateTime": "2017-03-14T15:22:31.753Z"
 }
 ```
+
+

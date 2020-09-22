@@ -6,12 +6,12 @@ title: SharingLink
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: e96164b636866637a30f733cb46da5124d90fa49
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6c79de95408b334d11dd6c2682dc12a0679f686c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42520648"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48010166"
 ---
 # <a name="sharinglink-resource-type"></a>Тип ресурса sharingLink
 
@@ -51,9 +51,9 @@ ms.locfileid: "42520648"
 | application    | [identity][]  | Приложение, с которым сопоставлена ссылка.
 | type           | String        | Тип созданной ссылки.
 | scope          | String        | Область ссылки, представленная этим разрешением. Значение `anonymous` указывает, что ссылку может использовать любой пользователь, значение `organization` указывает, что ссылку могут использовать только пользователи, выполнившие вход в один и тот же клиент.
-| превентсдовнлоад | Boolean       | Если этот параметр имеет значение true, пользователь может использовать эту ссылку только для просмотра элемента в Интернете и не может использовать его для загрузки содержимого элемента. Только для OneDrive для бизнеса и SharePoint.
+| превентсдовнлоад | Логическое       | Если этот параметр имеет значение true, пользователь может использовать эту ссылку только для просмотра элемента в Интернете и не может использовать его для загрузки содержимого элемента. Только для OneDrive для бизнеса и SharePoint.
 | webHtml        | String        | Для ссылок `embed` это свойство содержит HTML-код элемента `<iframe>`, который внедряет элемент на веб-страницу.
-| webUrl         | Строка        | URL-адрес, который открывает элемент в браузере на веб-сайте OneDrive.
+| webUrl         | String        | URL-адрес, который открывает элемент в браузере на веб-сайте OneDrive.
 
 [Identity]: identity.md
 
@@ -90,3 +90,5 @@ ms.locfileid: "42520648"
   "suppressions": []
 }
 -->
+
+

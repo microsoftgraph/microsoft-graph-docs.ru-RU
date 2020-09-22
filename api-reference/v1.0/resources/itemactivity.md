@@ -6,12 +6,12 @@ description: Объект itemActivity предоставляет сведени
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: f1ffbcc84f3cb399b131ae40c46cae9230e4cac8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4ae71056fccebcb372891124b01999004b1957c2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447677"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009333"
 ---
 # <a name="itemactivity-resource-type"></a>Тип ресурса itemActivity
 
@@ -79,3 +79,4 @@ ms.locfileid: "42447677"
   "suppressions": []
 }
 -->
+

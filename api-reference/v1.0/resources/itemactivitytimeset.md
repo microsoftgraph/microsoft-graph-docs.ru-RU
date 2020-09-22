@@ -6,12 +6,12 @@ description: Объект itemActionSet предоставляет сведен�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: e7c2357965acaf049e8483b33b888116fea6e994
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 30372027d90c8ae4472c6cf66a164b5dbaff08ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447663"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009319"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>Тип ресурса itemActivityTimeSet
 
@@ -62,3 +62,4 @@ ms.locfileid: "42447663"
   "suppressions": []
 }
 -->
+

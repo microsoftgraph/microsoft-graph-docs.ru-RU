@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 93dee23d306ccada8d46d5bd91738344f5bd6bf8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0f5a536ba1dc6390d8642f82de2d4bf131602c62
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427846"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007898"
 ---
 # <a name="add-educationcategories"></a>Добавление Едукатионкатегориес
 
@@ -44,7 +44,7 @@ POST /education/classes/{id}/assignments/{id}/categories/$ref
 В тексте запроса укажите odata.id существующих объектов [едукатионкатегори](../resources/educationcategory.md) , которые требуется добавить к этому назначению.
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -65,8 +65,8 @@ Content-length: 212
 
 ```
 В тексте запроса укажите odata.id существующего объекта [едукатионкатегори](../resources/educationcategory.md) , который требуется добавить к этому назначению.
-##### <a name="response"></a>Ответ
-Ниже приведен пример отклика. 
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -91,3 +91,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

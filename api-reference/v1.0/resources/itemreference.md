@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс ItemReference предоставляет сведения, необходимые для обращения к ресурсу DriveItem через API.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 1c25b75dd422eb9d9fe515c425c9e71672bdecf8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a13fb5a3606b72c96a15317a9a7b1d5844184f4c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447622"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009228"
 ---
 # <a name="itemreference-resource-type"></a>Тип ресурса ItemReference
 
@@ -46,10 +46,10 @@ ms.locfileid: "42447622"
 
 | Свойство      | Тип              | Описание
 |:--------------|:------------------|:-----------------------------------------
-| driveId       | Строка            | Уникальный идентификатор экземпляра диска, содержащего элемент. Только для чтения.
-| driveType     | String            | Служит для идентификации типа для объекта drive. Сведения о возможных значениях см. в статье, посвященной ресурсу [drive][].
+| driveId       | String            | Уникальный идентификатор экземпляра диска, содержащего элемент. Только для чтения.
+| driveType     | Строка            | Служит для идентификации типа для объекта drive. Сведения о возможных значениях см. в статье, посвященной ресурсу [drive][].
 | id            | String            | Уникальный идентификатор элемента на диске. Только для чтения.
-| name          | Строка            | Имя элемента, на который направлена ссылка. Только для чтения.
+| name          | String            | Имя элемента, на который направлена ссылка. Только для чтения.
 | path          | String            | Путь, по которому можно перейти к элементу. Только для чтения.
 | shareId       | String            | Уникальный идентификатор общего ресурса, доступ к которому можно получить с помощью API [Shares][].
 | sharepointIds | [sharepointIds][] | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
@@ -82,3 +82,4 @@ GET https://graph.microsoft.com/v1.0/drives/{driveId}/items/{id}
   ],
   "tocPath": "Resources/ItemReference"
 } -->
+

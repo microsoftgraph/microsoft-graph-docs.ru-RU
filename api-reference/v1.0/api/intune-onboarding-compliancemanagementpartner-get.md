@@ -3,14 +3,14 @@ title: Получение Комплианцеманажементпартнер
 description: Чтение свойств и связей объекта Комплианцеманажементпартнер.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c88d65a85092674bc8790decb2da4bb43a565abc
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
-ms.translationtype: Auto
+ms.openlocfilehash: c0a65d8917cea8aa29848666b17e677b297c2b9c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44744174"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009459"
 ---
 # <a name="get-compliancemanagementpartner"></a>Получение Комплианцеманажементпартнер
 
@@ -38,13 +38,13 @@ ms.locfileid: "44744174"
 GET /deviceManagement/complianceManagementPartners/{complianceManagementPartnerId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -105,6 +105,9 @@ Content-Length: 1114
   }
 }
 ```
+
+
+
 
 
 

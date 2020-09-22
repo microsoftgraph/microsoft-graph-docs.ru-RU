@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 032f7ccc3140a9ea158ded7b072124cc7cf919d4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 515086b79c6a75c75375d159ef20eb2cc56ef231
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42428651"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008248"
 ---
 # <a name="delete-paymentterms"></a>Удаление Пайменттермс
 
@@ -29,7 +29,7 @@ ms.locfileid: "42428651"
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
 |Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Financials.ReadWrite.All|
+|Приложение|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 ```
@@ -44,12 +44,12 @@ DELETE /financials/companies/{id}/paymentTerms/{id}
 |Заголовок         |Значение                     |
 |---------------|--------------------------|
 |Авторизация  |Bearer {токен}. Обязательный. |
-|If-Match       |Обязательный. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **пайменттермс**, **пайменттермс** не будет обновлен. |
+|If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **пайменттермс**, **пайменттермс** не будет обновлен. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика ```204 No Content```. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
@@ -69,3 +69,5 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms/{
 ```json
 HTTP/1.1 204 No Content
 ```
+
+

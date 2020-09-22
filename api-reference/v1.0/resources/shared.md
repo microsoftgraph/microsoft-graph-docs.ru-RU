@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс Shared указывает, что к элементу DriveItem был предоставлен доступ другим пользователям.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 027a4275b342be4c6e61e0e3ad8a47c665de5946
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9058b1e3f5f8dd77c22ee253746c7eba8c1df7c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42446900"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009186"
 ---
 # <a name="shared-resource-type"></a>Тип ресурса Shared
 
@@ -71,3 +71,4 @@ ms.locfileid: "42446900"
   ],
   "tocPath": "Facets/Shared"
 } -->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3d4abe74ed67910e82bcdf936de3a7b54b463ac9
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8be0e4a6410376b395f1e7f28868f0051bee28b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43375546"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008612"
 ---
 # <a name="list-directorysettingtemplates"></a>Список Директорисеттингтемплатес
 
@@ -47,7 +47,7 @@ GET /directorySettingTemplates
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [директорисеттингтемплате](../resources/directorysettingtemplate.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -121,3 +121,5 @@ Content-length: 343
   ]
 }
 -->
+
+

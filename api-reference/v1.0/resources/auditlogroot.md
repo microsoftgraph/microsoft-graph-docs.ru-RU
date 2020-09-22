@@ -5,12 +5,12 @@ author: dhanyahk
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7b0632271c2fd02fa6137df3065d413f0e35a046
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 86ecd0e7721ad804174359baf19bfde7a3230c16
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532087"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009452"
 ---
 # <a name="auditlogroot-resource-type"></a>Тип ресурса Аудитлогрут
 
@@ -108,3 +108,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

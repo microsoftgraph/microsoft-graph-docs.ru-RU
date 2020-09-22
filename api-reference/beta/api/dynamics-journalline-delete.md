@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 64de86b424bed9a1592ceb7ae5194c42d9233352
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c293b28547846083a6ec1df743d12a3c205e6665
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42428931"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008318"
 ---
 # <a name="delete-journallines"></a>Удаление Жаурналлинес
 
@@ -45,11 +45,11 @@ DELETE /financials/companies/{id}/journals/{id}/journalLines/{id}
 |Авторизация   |Bearer {токен}. Обязательный. |
 |If-Match        |Обязательный. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **жаурналлинес**, **жаурналлинес** не будет обновлен. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика ```204 No Content```. В тексте отклика не возвращается никаких данных.
 
@@ -70,3 +70,5 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/
 ```json
 HTTP/1.1 204 No Content
 ```
+
+

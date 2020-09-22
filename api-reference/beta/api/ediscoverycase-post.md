@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: c247743db82687285d6811d15f86e011cb434a53
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 08383903c69b04fab82b47a623a7815e21902902
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566962"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007975"
 ---
 # <a name="create-ediscoverycase"></a>Создание Едисковерикасе
 
@@ -42,7 +42,7 @@ POST /compliance/ediscovery/cases
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса добавьте представление объекта [едисковерикасе](../resources/ediscoverycase.md) в формате JSON. В следующей таблице перечислены свойства, которые могут быть отправлены с помощью вызова.
 
@@ -140,3 +140,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

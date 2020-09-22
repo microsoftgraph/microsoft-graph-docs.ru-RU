@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: bf6b88ec992734114de7e63e82d97026b22f7081
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a95e0db2d53e3d6e3d172e875cac23119c4592f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431622"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008346"
 ---
 # <a name="create-customerpaymentjournals"></a>Создание Кустомерпайментжаурналс
 
@@ -46,11 +46,11 @@ POST /financials/companies/{id}/customerPaymentJournals/{id}
 |Авторизация |Bearer {токен}. Обязательный.|
 |Content-Type  |application/json         |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта **кустомерпайментжаурналс** в формате JSON.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **кустомерпайментжаурналс** в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **кустомерпайментжаурналс** в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -81,5 +81,7 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-05-17T11:30:01.313Z"
 }
 ```
+
+
 
 

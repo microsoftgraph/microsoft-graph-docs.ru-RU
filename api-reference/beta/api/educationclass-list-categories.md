@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f647c0b5241dc7ab98d0fda5f3ccce8233a6b557
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 05bd9bef94ae8e8c3a687470bb546a67dddb05ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42426698"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007667"
 ---
 # <a name="list-educationcategories"></a>Список Едукатионкатегориес
 
@@ -51,7 +51,7 @@ GET /education/classes/{id}/assignmentCategories
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [едукатионкатегори](../resources/educationcategory.md) в тексте отклика.
 
@@ -111,3 +111,5 @@ Content-length: 218
   "suppressions": []
 }
 -->
+
+

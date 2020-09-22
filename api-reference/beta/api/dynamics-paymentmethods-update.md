@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 202a4202aabe6d7eae04faee489dbc9ceb807722
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4bb3d809fe4378280c7c65b030dd9402c079f003
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42428693"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008253"
 ---
 # <a name="update-paymentmethods"></a>Обновление Пайментмесодс
 
@@ -46,7 +46,7 @@ PATCH /financials/companies/{id}/paymentMethods/{id}
 |Content-Type  |application/json          |
 |If-Match      |Обязательный. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **пайментмесодс**, **пайментмесодс** не будет обновлен. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 ## <a name="response"></a>Ответ
@@ -83,5 +83,7 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-22T08:35:48.33Z"
 }
 ```
+
+
 
 

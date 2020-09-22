@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 871a3e5334b6dc93ad65ea91508caccf0482b531
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 6d6e3505ce0dc57ad29ae5dd7d440a4169e7a7c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180139"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008598"
 ---
 # <a name="delete-domain"></a>Удаление домена
 
@@ -52,7 +52,7 @@ DELETE /domains/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Он не возвращает тело отклика.
 
@@ -107,3 +107,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

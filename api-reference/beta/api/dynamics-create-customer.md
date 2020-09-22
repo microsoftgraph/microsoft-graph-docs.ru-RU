@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 549c17420790bb0146c4a84b0a5b3a49ca9e3ec9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3eb9717f980120e4acb7d9e3c192a95cc2e2872b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431734"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008360"
 ---
 # <a name="create-customers"></a>Создание клиентов
 
@@ -48,8 +48,8 @@ POST /financials/companies/{id}/customers
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта **Customers** в формате JSON.
 
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **Customers** в тексте отклика.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает ```201 Created``` код отклика и объект **Customers** в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -129,4 +129,6 @@ Content-type: application/json
 }
 
 ```
+
+
 

@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: be8f7a06e0095ffcf09278f39828aea7a3d0fb51
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 11e0515caad03fdff6ceb35871c54858b9dfed5d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42431944"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008386"
 ---
 # <a name="delete-countriesregions"></a>Удаление Каунтриесрегионс
 
@@ -29,7 +29,7 @@ ms.locfileid: "42431944"
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
 |Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Financials.ReadWrite.All|
+|Приложение|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 ```
@@ -44,10 +44,10 @@ DELETE /financials/companies/{id}/countriesRegions/{id}
 |Авторизация  |Bearer {токен}. Обязательный. |
 |If-Match       |Обязательный. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **каунтриесрегионс**, **каунтриесрегионс** не будет обновлен. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика ```204 No Content```. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
@@ -67,3 +67,5 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegio
 ```json
 HTTP/1.1 204 No Content
 ```
+
+

@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bc52c3c2411818d98bc5889b1bf06b5a65c8b664
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5d4f54503d18b09691c877ab1a1bb7c5464e05fc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427398"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007795"
 ---
 # <a name="list-educationassignmentresources"></a>Список Едукатионассигнментресаурцес
 
@@ -44,7 +44,7 @@ GET /education/classes/{id}/assignments/{id}/resources
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [едукатионассигнментресаурце](../resources/educationassignmentresource.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -144,3 +144,5 @@ Content-length: 1011
   "suppressions": []
 }
 -->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 7d0e323c81ed421c2234bbd78bb3d98a9f21c8bb
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 80723ffd868d4b936dadb5fcbebcf4f373d2a4de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895995"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009158"
 ---
 # <a name="sharepoint-activity-reports"></a>Отчеты о действиях в SharePoint
 
@@ -28,3 +28,4 @@ ms.locfileid: "44895995"
 | [Получение количества файлов](../api/reportroot-getsharepointactivityfilecounts.md) | Stream      | Получите количество уникальных пользователей с лицензиями, которые работали с файлами, хранящимися на сайтах SharePoint. |
 | [Получение количества пользователей](../api/reportroot-getsharepointactivityusercounts.md) | Stream      | Получение сведений о том, как меняется количество активных пользователей. Пользователь считается активным, если он выполнил действие с файлом (сохранение, синхронизация, изменение или предоставление общего доступа) или посетил страницу в указанный период. |
 | [Получение страниц](../api/reportroot-getsharepointactivitypages.md) | Stream      | Получите количество уникальных страниц, посещенных пользователями. |
+

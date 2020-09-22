@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7a68078fb171c215a20d5f3c8688d8200318c6c8
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 38fcebc16d570f5d294e854643b2c5b89ddcb7b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42425676"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007422"
 ---
 # <a name="delete-educationschool"></a>Удаление educationSchool
 
@@ -43,7 +43,7 @@ DELETE /education/schools/{id}
 Не указывайте текст запроса для этого метода.
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -72,7 +72,7 @@ DELETE https://graph.microsoft.com/beta/education/schools/10002
 
 ---
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 
 <!-- {
@@ -96,3 +96,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

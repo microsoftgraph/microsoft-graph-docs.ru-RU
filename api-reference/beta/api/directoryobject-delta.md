@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d2f90d11e8ec4b052a6f5f8ff03603acdff6fe29
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 3ea2d7b6cbf722ae43e57d1649192a4d44717001
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180960"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008942"
 ---
 # <a name="directoryobject-delta"></a>directoryObject: Delta
 
@@ -57,8 +57,8 @@ GET /directoryObjects/delta
 
 Этот метод поддерживает необязательные параметры запросов OData для настройки отклика.
 
-- `$filter` С помощью специального `isOf` оператора можно фильтровать подмножество типов, производных от directoryObject.
-  - Можно объединить несколько выражений с помощью элемента `or`, который позволяет использовать одну разностную трассировку запросов нескольких типов. Более подробную информацию можно узнать в [третьем примере](#request-3) .
+- `$filter`С помощью специального `isOf` оператора можно фильтровать подмножество типов, производных от directoryObject.
+  - Можно объединить несколько выражений с помощью элемента `or` , который позволяет использовать одну разностную трассировку запросов нескольких типов. Более подробную информацию можно узнать в [третьем примере](#request-3) .
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -68,7 +68,7 @@ GET /directoryObjects/delta
 | Content-Type  | application/json |
 | Prefer | return=minimal <br><br>Указание этого заголовка с запросом, использующим параметр `deltaLink`, приведет к возвращению только свойств объекта, измененных с момента последнего цикла. Необязательно. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -136,7 +136,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta
 
 ### <a name="response-1"></a>Отклик 1
 
-Ниже приведен пример отклика при использовании параметра `deltaLink`, полученного в начале запроса. Фильтр `isOf` не использовался, поэтому возвращаются все типы, производные от directoryObject.
+Ниже приведен пример отклика при использовании параметра `deltaLink`, полученного в начале запроса. `isOf`Фильтр не использовался, поэтому возвращаются все типы, производные от directoryObject.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -356,3 +356,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

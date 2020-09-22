@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: c5f130d2a307d29f518835553f0b7fc5b5860ec3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d464d2e45939c1956e2fce981328fff0484195c5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427965"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008076"
 ---
 # <a name="update-unitsofmeasure"></a>Обновление Унитсофмеасуре
 
@@ -43,9 +43,9 @@ PATCH /financials/companies/{id}/unitsOfMeasure/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |------|-----|
-|Авторизация |Носителя. Обязательно.|
+|Authorization |Носителя. Обязательно.|
 |Content-Type  |application/json|
-|If-Match      |Обязательный. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **унитсофмеасуре**, **унитсофмеасуре** не будет обновлен. |
+|If-Match      |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **унитсофмеасуре**, **унитсофмеасуре** не будет обновлен. |
 
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
@@ -85,4 +85,6 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-03-15T01:21:09.563Z"
 }
 ```
+
+
 

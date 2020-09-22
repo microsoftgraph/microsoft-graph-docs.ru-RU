@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: c2351a88f88b216e9e3833dc719533b89732aeb1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: cc3f7146d24ae37e3f270d3b947758191c0b0e3b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42428581"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008255"
 ---
 # <a name="get-paymentterms"></a>Получение Пайменттермс
 
@@ -29,7 +29,7 @@ ms.locfileid: "42428581"
 |:---------------|:------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|Financials.ReadWrite.All |
 |Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Financials.ReadWrite.All|
+|Приложение|Financials.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,10 +45,10 @@ GET /financials/companies/{id}/paymentTerms/{id}
 |---------------|--------------------------|
 |Авторизация  |Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **пайменттермс** в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -78,3 +78,5 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms/{id}
   "lastModifiedDateTime": "2017-03-15T02:20:55.203Z"
 }
 ```
+
+

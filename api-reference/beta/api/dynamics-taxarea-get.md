@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 217216db6263279195d2c296969d2dd11a2caf07
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3db32f37a5043f4f76d3a3744f4947cbafd882a6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42428308"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008115"
 ---
 # <a name="get-taxareas"></a>Получение Таксареас
 
@@ -48,7 +48,7 @@ GET /financials/companies/{id}/taxAreas/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **таксареас** в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -75,4 +75,6 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/taxAreas/{id}
   "lastModifiedDateTime": "2017-05-17T11:30:01.313Z"
 }
 ```
+
+
 

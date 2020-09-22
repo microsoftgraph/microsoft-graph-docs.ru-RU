@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ac1678381a89402d9005c6bd198d2cee3f3178db
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 3cb2c5a8388ca10f3c2819d84957cf26eb75f2f6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424857"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007261"
 ---
 # <a name="educationsubmission-release"></a>educationSubmission: Release
 
@@ -40,10 +40,10 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/release
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
@@ -83,3 +83,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

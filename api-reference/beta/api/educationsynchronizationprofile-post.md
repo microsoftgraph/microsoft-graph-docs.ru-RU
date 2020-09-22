@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5eab69540ccc4d862f2106cd41a2b9b1023d30f4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7f8b7eb8ccbbb0df4fd0b32a434582f7e07e9ec4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424437"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007198"
 ---
 # <a name="create-an-educationsynchronizationprofile"></a>Создание Едукатионсинчронизатионпрофиле
 
@@ -44,7 +44,7 @@ POST /synchronizationProfiles
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `202, Accepted` код отклика и объект [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -188,3 +188,5 @@ Content-type: application/json
     ]
 }
 ```
+
+

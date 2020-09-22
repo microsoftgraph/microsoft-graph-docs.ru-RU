@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ce3dd12343574455c6afb55cf509fbfd2583b588
-ms.sourcegitcommit: 66a52d2e63cf3447ec50bd28e562d99e7c344814
+ms.openlocfilehash: 14ad018efa1aee22a8f6557fdab34b7d2fc6decf
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43062625"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009774"
 ---
 # <a name="update-educationclass-properties"></a>Обновление свойств educationclass
 
@@ -44,7 +44,7 @@ PATCH /education/classes/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |description|String| Описание курса.|
-|displayName|Строка| Название курса.|
+|displayName|String| Название курса.|
 |mailNickname|String| Почтовый псевдоним для отправки электронных сообщений всем пользователям, если это возможно. |
 |classCode|String| Код класса, используемый учебным заведением.|
 |externalId|String| Идентификатор курса из системы синхронизации. |
@@ -134,3 +134,4 @@ Content-length: 224
   "suppressions": [
   ]
 }-->
+

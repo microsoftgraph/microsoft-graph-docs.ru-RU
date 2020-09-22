@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ded38d78a5cd01f5b52ebeaba840001438698a7a
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 2deb86488ed23c8c58e71a9cb917e78082a78e90
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43180013"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008493"
 ---
 # <a name="create-domain"></a>Создание домена
 
@@ -45,7 +45,7 @@ POST /domains
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса укажите представление JSON объекта [domain](../resources/domain.md).
 
 > Тело запроса содержит свойство id для нового домена. id — это единственное свойство, которое можно указать, и оно является обязательным. Значение свойства id — полное доменное имя, которое необходимо создать.
@@ -108,3 +108,5 @@ Content-length: 192
   "suppressions": []
 }
 -->
+
+

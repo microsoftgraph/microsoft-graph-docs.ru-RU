@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f5ebf9947e518005ef284ac5f572cea7f60f7dce
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b74c7f2ce9689a689fb1081f344a35f590ca8ea5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517539"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009781"
 ---
 # <a name="list-educationschools"></a>Перечисление educationSchools
 
@@ -48,7 +48,7 @@ ms.locfileid: "42517539"
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationSchool](../resources/educationschool.md) в теле отклика.
 
@@ -148,3 +148,4 @@ Content-length: 345
   "suppressions": [
   ]
 }-->
+

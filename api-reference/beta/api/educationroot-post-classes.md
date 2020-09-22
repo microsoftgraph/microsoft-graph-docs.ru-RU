@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f17c356b4e6177fa3cba6a7e7aa9991c768c0e75
-ms.sourcegitcommit: ef9e0fd8fb6047fa9272e98310eaed2c4e0a2660
+ms.openlocfilehash: bdd0501e884aee897b52f92f85dd984fd85bff4b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44353233"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007506"
 ---
 # <a name="create-educationclass"></a>Создание educationClass
 
@@ -27,7 +27,7 @@ ms.locfileid: "44353233"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Сервер приложений | EduRoster.ReadWrite.All | 
+|Приложение | EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -132,3 +132,5 @@ Content-length: 224
   ]
 }
 -->
+
+

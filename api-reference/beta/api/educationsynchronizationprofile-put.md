@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: b0fb92a89ffb169b3a907c103fd3f393c730812d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2145db383d919b218a6d86115dba79d9b9e9875b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424423"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007086"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>Обновление Едукатионсинчронизатионпрофиле
 
@@ -41,10 +41,10 @@ PUT /synchronizationProfiles
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 | Content-Type | string | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [синчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `202, Accepted` код отклика и объект [синчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -190,3 +190,5 @@ Content-type: application/json
     ]
 }
 ```
+
+

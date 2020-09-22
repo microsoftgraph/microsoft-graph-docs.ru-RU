@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ad4e72c2d638e1b07aa1ef363f8d0c406ef9b4bd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 68a08977d9b3e0fbce93ab58132fcab92d4e55ff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42427657"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007823"
 ---
 # <a name="get-educationrubric-attached-to-educationassignment"></a>Получение Едукатионрубрик, подключенных к educationAssignment
 
@@ -42,13 +42,13 @@ GET /education/classes/{id}/assignments/{id}/rubric
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [едукатионрубрик](../resources/educationrubric.md) в тексте отклика.
 
@@ -198,3 +198,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

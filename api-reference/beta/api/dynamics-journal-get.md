@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 3265c600a5314a927df3ec15aff519ff9d139d3e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0b6fbfb9b07e6424f19cd868a3939802172bad21
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42429134"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008325"
 ---
 # <a name="get-journals"></a>Получение журналов
 
@@ -45,10 +45,10 @@ GET /financials/companies/{id}/journals/{id}
 |------|-----|
 |Авторизация  |Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **журналов** в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -74,4 +74,6 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}
   "lastModifiedDateTime": "2017-05-17T11:30:01.313Z"
 }
 ```
+
+
 

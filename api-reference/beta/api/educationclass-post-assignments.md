@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fcaeb3234562479b25eef28d9798187d087ea0ee
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f00a31619e13bcae54565bab6fbfae9d0fdb937a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42426467"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007625"
 ---
 # <a name="create-educationassignment"></a>Создание educationAssignment
 
@@ -45,7 +45,7 @@ POST /education/classes/{id}/assignments
 В тексте запроса добавьте представление объекта [educationAssignment](../resources/educationassignment.md) в формате JSON.
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [educationAssignment](../resources/educationassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -80,7 +80,7 @@ Content-length: 279
 ```
 В тексте запроса добавьте представление объекта [educationAssignment](../resources/educationassignment.md) в формате JSON.
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -147,3 +147,5 @@ Content-length: 279
   "suppressions": []
 }
 -->
+
+

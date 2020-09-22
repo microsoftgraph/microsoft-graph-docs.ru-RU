@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 94f93a038504c00e8bf9b7d616516ade668d2642
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2671920a997e1cf561e2be77a13f168efe6842e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424283"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007116"
 ---
 # <a name="start-sync-after-uploading-files-to-an-educationsynchronizationprofile"></a>Запуск синхронизации после отправки файлов в Едукатионсинчронизатионпрофиле
 
@@ -42,10 +42,10 @@ POST /synchronizationProfiles/{id}/start
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`. Если операция завершилась неудачно, `400 Bad Request`возвращается значение. Ответ содержит коллекцию объектов [едукатионфилесинчронизатионверификатионмессаже](../resources/educationfilesynchronizationverificationmessage.md) в теле отклика, если обнаружены какие-либо ошибки или предупреждения.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает код отклика `200 OK`. Если операция завершилась неудачно, возвращается значение `400 Bad Request` . Ответ содержит коллекцию объектов [едукатионфилесинчронизатионверификатионмессаже](../resources/educationfilesynchronizationverificationmessage.md) в теле отклика, если обнаружены какие-либо ошибки или предупреждения.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -74,7 +74,7 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/sta
 ---
 
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -157,3 +157,5 @@ Content-length: 2105
   "suppressions": [
   ]
 }-->
+
+

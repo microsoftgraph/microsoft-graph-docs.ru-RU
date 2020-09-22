@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5cb858308ab7fba8102cb39208384d8234baddd9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2d89803fd775b6ec6be921b500ab6eb95aad4969
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517546"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009771"
 ---
 # <a name="list-classes"></a>Перечисление курсов
 
@@ -43,7 +43,7 @@ GET /education/classes
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationClass](../resources/educationclass.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -124,3 +124,4 @@ Content-length: 277
   "suppressions": [
   ]
 }-->
+

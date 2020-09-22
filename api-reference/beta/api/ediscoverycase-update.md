@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 0014f0a173d190ab581be5ce21d78cebdfd20590
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 930ab10b8f85e31a036d13550615394d0954d13b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566934"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007947"
 ---
 # <a name="update-ediscoverycase"></a>Обновление Едисковерикасе
 
@@ -49,7 +49,7 @@ PATCH /compliance/ediscovery/cases/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |description|String| Описание варианта. |
-|displayName|Строка| Имя дела. |
+|displayName|String| Имя дела. |
 |externalId|String| Номер внешнего обращения для ссылки на клиента. |
 
 ## <a name="response"></a>Отклик
@@ -116,3 +116,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

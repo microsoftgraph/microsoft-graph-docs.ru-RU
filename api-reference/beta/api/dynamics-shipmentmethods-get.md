@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 6055bc8cd68e289ecb73fb4d77f61576fe0cfc92
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 41213b2463bdd1c0d2f6f6db6f87dce9d1ee189e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42428455"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008219"
 ---
 # <a name="get-shipmentmethods"></a>Получение Шипментмесодс
 
@@ -48,7 +48,7 @@ GET /financials/companies/{id}/shipmentMethods/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **шипментмесодс** в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -74,4 +74,6 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/shipmentMethods/{
   "lastModifiedDateTime": "2017-03-15T02:20:57.09Z"
 }
 ```
+
+
 

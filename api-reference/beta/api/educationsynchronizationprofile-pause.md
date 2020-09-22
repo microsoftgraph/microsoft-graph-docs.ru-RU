@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 71012e82fdb3e695d1ccf4e61dc9433c7fa2ebc1
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 003505dcfc00631f6d7ed9c40dbd9e4c8c3cebd5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42424458"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48007205"
 ---
 # <a name="pause-sync-on-an-educationsynchronizationprofile"></a>Приостановка синхронизации в Едукатионсинчронизатионпрофиле
 
@@ -42,7 +42,7 @@ POST /synchronizationProfiles/{id}/pause
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 
 ## <a name="example"></a>Пример
@@ -96,3 +96,5 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+
+

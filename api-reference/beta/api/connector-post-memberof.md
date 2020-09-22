@@ -5,20 +5,20 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a03aeef84c2b525ba7a7ef05ecdd58c772ad7fae
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 00f2ada7d46831b6b0bfbae0db4174e3ca2e9c90
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681501"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48009081"
 ---
-# <a name="add-connector-to-connectorgroup"></a>Добавление соединителя в Коннекторграуп
+# <a name="add-connector-to-connectorgroup"></a>Добавление соединителя для connectorGroup
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление [соединителя](../resources/connector.md) в [коннекторграуп](../resources/connectorgroup.md).
+Добавление [соединителя](../resources/connector.md)  в [коннекторграуп](../resources/connectorgroup.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -37,9 +37,9 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$re
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носителя. Обязательное|
+| Authorization  | Носителя. Обязательно|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [коннекторграуп](../resources/connectorgroup.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
@@ -105,3 +105,5 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
+

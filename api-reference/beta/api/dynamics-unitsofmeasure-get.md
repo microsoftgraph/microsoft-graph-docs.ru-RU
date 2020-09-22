@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 7e8ff96f93d14659970bebd66f018e50aea3ab12
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 56030276c3d5cf0ce6a583dbb1fa82d41d996b93
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42428147"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48008075"
 ---
 # <a name="get-unitsofmeasure"></a>Получение Унитсофмеасуре
 
@@ -48,7 +48,7 @@ GET /financials/companies/{id}/unitsOfMeasure/{id}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **унитсофмеасуре** в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -75,3 +75,5 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/unitsOfMeasure/{i
   "lastModifiedDateTime": "2017-03-15T01:21:09.563Z"
 }
 ```
+
+
