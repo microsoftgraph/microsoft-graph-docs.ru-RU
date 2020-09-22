@@ -7,12 +7,12 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 doc_type: apiPageType
-ms.openlocfilehash: 67d95e18f16fd7a556ef78f13dbb1e09f1eb6b8f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 4aa22cf2a0634d9c54d6c9e12573730714be3ca4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42429946"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981321"
 ---
 # <a name="get-generalledgerentries"></a>Получение Женералледжерентриес
 
@@ -43,12 +43,12 @@ GET /financials/companies/{id}/generalLedgerEntries/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок       |Значение             |
 |-------------|------------------|
-|Авторизация|Носителя. Обязательно. |
+|Authorization|Носителя. Обязательно. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **женералледжерентриес** в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -80,4 +80,6 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/generalLedgerEntr
     "lastModifiedDateTime": "2017-03-15T02:20:58.747Z"
 }
 ```
+
+
 
