@@ -1,18 +1,18 @@
 ---
-title: Создание Клаимсмаппингполици
+title: Создание claimsMappingPolicy
 description: Создание нового Клаимсмаппингполици.
 localization_priority: Normal
 author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1a1570e237c57f565c66afd0c921c31b6b8765f1
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: e4d7b95680877ed16e0366f526b3b16b1f61c7b1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863244"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083878"
 ---
-# <a name="create-claimsmappingpolicy"></a>Создание Клаимсмаппингполици
+# <a name="create-claimsmappingpolicy"></a>Создание claimsMappingPolicy
 
 Пространство имен: microsoft.graph
 
@@ -26,7 +26,7 @@ ms.locfileid: "44863244"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy.ReadWrite.ApplicationConfiguration |
+| Для приложения                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -129,3 +129,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

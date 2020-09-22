@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c0784bffd1682f59e94d728c2311ffaaa01681c5
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 17e9e0d73ce25fab0462d6ee8eb50e3e232f8340
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218053"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083892"
 ---
 # <a name="trustframeworkkeyset-resource-type"></a>Тип ресурса Трустфрамеворккэйсет
 
@@ -18,16 +18,16 @@ ms.locfileid: "43218053"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет ключи набора ключей и политики для инфраструктуры доверия. В платформе удостоверений хранятся секреты, которые можно использовать в политиках. Секреты могут представлять собой пароли, сертификаты и другие файлы. В портале эти сущности отображаются как `Policy keys`. Платформа удостоверений использует стандарт JSON Web Key (ЖВК) для кэйсетс. Эта сущность соответствует формату, указанному в [RFC 7517 в разделе 5](https://tools.ietf.org/html/rfc7517#section-5).
+Представляет ключи набора ключей и политики для инфраструктуры доверия. В платформе удостоверений хранятся секреты, которые можно использовать в политиках. Секреты могут представлять собой пароли, сертификаты и другие файлы. В портале эти сущности отображаются как `Policy keys` . Платформа удостоверений использует стандарт JSON Web Key (ЖВК) для кэйсетс. Эта сущность соответствует формату, указанному в [RFC 7517 в разделе 5](https://tools.ietf.org/html/rfc7517#section-5).
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [List](../api/trustframework-list-keysets.md) | [трустфрамеворккэйсет](trustframeworkkeyset.md) Семейства | Список Трустфрамеворккэйсетс. |
-| [создание](../api/trustframework-post-keysets.md); | [трустфрамеворккэйсет](trustframeworkkeyset.md) | Создайте Трустфрамеворккэйсет. |
-| [получение](../api/trustframeworkkeyset-get.md); | [трустфрамеворккэйсет](trustframeworkkeyset.md) | Чтение свойств и связей объекта Трустфрамеворккэйсет. |
-| [обновление](../api/trustframeworkkeyset-update.md). | [трустфрамеворккэйсет](trustframeworkkeyset.md) | Обновление объекта Трустфрамеворккэйсет. |
+| [Перечисление](../api/trustframework-list-keysets.md) | [трустфрамеворккэйсет](trustframeworkkeyset.md) Семейства | Список Трустфрамеворккэйсетс. |
+| [Создание](../api/trustframework-post-keysets.md) | [трустфрамеворккэйсет](trustframeworkkeyset.md) | Создайте Трустфрамеворккэйсет. |
+| [Получение](../api/trustframeworkkeyset-get.md) | [трустфрамеворккэйсет](trustframeworkkeyset.md) | Чтение свойств и связей объекта Трустфрамеворккэйсет. |
+| [Обновление](../api/trustframeworkkeyset-update.md) | [трустфрамеворккэйсет](trustframeworkkeyset.md) | Обновление объекта Трустфрамеворккэйсет. |
 | [удаление](../api/trustframeworkkeyset-delete.md); | Нет | Удаление объекта Трустфрамеворккэйсет. |
 |[Создание ключа](../api/trustframeworkkeyset-generatekey.md)|[трустфрамеворккэй](trustframeworkkey.md)| Создание ключа в наборе ключей. |
 |[Получение активного ключа](../api/trustframeworkkeyset-getactivekey.md)|[трустфрамеворккэй](trustframeworkkey.md)| Получить активный в данный момент ключ в наборе ключей. |
@@ -39,7 +39,7 @@ ms.locfileid: "43218053"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String| Уникальный идентификатор набора ключей трустфрамеворк |
+|id|Строка| Уникальный идентификатор набора ключей трустфрамеворк |
 |переключен|Коллекция [трустфрамеворккэй](trustframeworkkey.md)| Коллекция ключей. |
 
 ## <a name="relationships"></a>Связи
@@ -76,3 +76,5 @@ ms.locfileid: "43218053"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

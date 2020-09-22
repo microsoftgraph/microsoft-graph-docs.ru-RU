@@ -5,12 +5,12 @@ localization_priority: Normal
 author: paulgarn
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 82cab29a9b2876b325205f422e595293a5327ee1
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
-ms.translationtype: Auto
+ms.openlocfilehash: dbc70494077e9d2dea878c2da8657b3cf630aef1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44863224"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48083871"
 ---
 # <a name="update-claimsmappingpolicy"></a>Обновление клаимсмаппингполици
 
@@ -26,7 +26,7 @@ ms.locfileid: "44863224"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.ApplicationConfiguration |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy.ReadWrite.ApplicationConfiguration |
+| Для приложения                            | Policy.ReadWrite.ApplicationConfiguration |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,8 +50,8 @@ PATCH /policies/claimsMappingPolicies/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |RDLC|Коллекция String| Коллекция String, содержащая строку JSON, определяющую правила и параметры для этой политики.  Обязательный.|
-|description|String| Описание для этой политики.|
-|displayName|Строка| Отображаемое имя для этой политики. Обязательный элемент.|
+|description|Строка| Описание для этой политики.|
+|displayName|Строка| Отображаемое имя для этой политики. Обязательный.|
 |исорганизатиондефаулт|Boolean|Если задано значение true, активируется эта политика. Для одного и того же типа политики может быть задано несколько политик, но только одна из них может быть активирована в качестве организации по умолчанию. Необязательное значение по умолчанию — false.|
 
 ## <a name="response"></a>Отклик
@@ -133,3 +133,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

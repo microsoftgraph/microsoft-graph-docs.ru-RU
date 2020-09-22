@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: acbc931f5fb5293d0b073623b43a8df319838644
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6e0ee2ca2eebcca9b912c62242c2606590d9cbc4
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006834"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192268"
 ---
 # <a name="create-externalitem"></a>Создание Екстерналитем
 
@@ -46,8 +46,8 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 | Параметр     | Тип   | Описание                                         |
 |:--------------|:-------|:----------------------------------------------------|
-| ИД подключения | строка | `id`Свойство содержащего [екстерналконнектион](../resources/externalconnection.md) |
-| item-id       | строка | Предоставляемое разработчиком `id` свойство [екстерналитем](../resources/externalitem.md). Если такой элемент уже не существует `id` , создается новый элемент. Если такой элемент уже существует `id` , он перезаписывается объектом, отправленным в теле. |
+| ИД подключения | string | `id`Свойство содержащего [екстерналконнектион](../resources/externalconnection.md) |
+| item-id       | string | Предоставляемое разработчиком `id` свойство [екстерналитем](../resources/externalitem.md). Если такой элемент уже не существует `id` , создается новый элемент. Если такой элемент уже существует `id` , он перезаписывается объектом, отправленным в теле. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -90,7 +90,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
+При успешном выполнении этот метод возвращает код отклика `200 OK`.
 
 ## <a name="examples"></a>Примеры
 
@@ -115,9 +115,15 @@ Content-type: application/json
   "acl": [
     {
       "type": "user",
-      "value": "49103559-feac-4575-8b94-254814dfca72",
-      "accessType": "deny",
+      "value": "e811976d-83df-4cbd-8b9b-5215b18aa874",
+      "accessType": "grant",
       "identitySource": "azureActiveDirectory"
+    },
+    {
+      "type": "group",
+      "value": "14m1b9c38qe647f6a",
+      "accessType": "deny",
+      "identitySource": "external"
     }
   ],
   "properties": {
@@ -126,8 +132,8 @@ Content-type: application/json
     "assignee": "john@contoso.com"
   },
   "content": {
-    "value": "<h1>Error in payment gateway</h1><p>Error details...</p>",
-    "type": "html"
+    "value": "Error in payment gateway...",
+    "type": "text"
   }
 }
 ```
@@ -170,5 +176,3 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

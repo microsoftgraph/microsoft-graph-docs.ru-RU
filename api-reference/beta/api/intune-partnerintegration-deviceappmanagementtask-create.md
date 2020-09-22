@@ -3,14 +3,14 @@ title: Создание Девицеаппманажементтаск
 description: Создание нового объекта Девицеаппманажементтаск.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a85d1eab1db9399f89e384f07bca058f2568e96
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0410b5912dfdfcc98238fdb58fd1058690b96c83
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445382"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036354"
 ---
 # <a name="create-deviceappmanagementtask"></a>Создание Девицеаппманажементтаск
 
@@ -43,10 +43,10 @@ POST /deviceAppManagement/deviceAppManagementTasks
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицеаппманажементтаск в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеаппманажементтаск.
@@ -54,7 +54,7 @@ POST /deviceAppManagement/deviceAppManagementTasks
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|displayName|Строка|Имя.|
+|displayName|String|Имя.|
 |description|String|Описание.|
 |createdDateTime|DateTimeOffset|Дата создания.|
 |dueDateTime|DateTimeOffset|Дата выполнения.|
@@ -115,6 +115,9 @@ Content-Length: 508
   "status": "pending"
 }
 ```
+
+
+
 
 
 
