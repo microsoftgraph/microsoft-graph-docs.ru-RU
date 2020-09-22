@@ -5,58 +5,58 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a6ff5b6d9031c142821728b31cb66f8b0c5d100f
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: a9e0f2602840344db0f9c6464f709e1c44c9a8ee
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845472"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085454"
 ---
-# <a name="reports-getprinterarchivedprintjobs"></a><span data-ttu-id="2d9e5-103">отчеты: Жетпринтерарчиведпринтжобс</span><span class="sxs-lookup"><span data-stu-id="2d9e5-103">reports: getPrinterArchivedPrintJobs</span></span>
+# <a name="reports-getprinterarchivedprintjobs"></a><span data-ttu-id="14673-103">отчеты: Жетпринтерарчиведпринтжобс</span><span class="sxs-lookup"><span data-stu-id="14673-103">reports: getPrinterArchivedPrintJobs</span></span>
 
-<span data-ttu-id="2d9e5-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2d9e5-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="14673-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="14673-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2d9e5-105">Получение списка архивированных заданий печати, которые были поставлены в очередь для определенного [принтера](../resources/printer.md).</span><span class="sxs-lookup"><span data-stu-id="2d9e5-105">Get a list of archived print jobs that were queued for particular [printer](../resources/printer.md).</span></span>
+<span data-ttu-id="14673-105">Получение списка архивированных заданий печати, которые были поставлены в очередь для определенного [принтера](../resources/printer.md).</span><span class="sxs-lookup"><span data-stu-id="14673-105">Get a list of archived print jobs that were queued for particular [printer](../resources/printer.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2d9e5-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2d9e5-106">Permissions</span></span>
-<span data-ttu-id="2d9e5-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2d9e5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="14673-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="14673-106">Permissions</span></span>
+<span data-ttu-id="14673-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="14673-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="2d9e5-109">В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.</span><span class="sxs-lookup"><span data-stu-id="2d9e5-109">In addition to the following permissions, the user's tenant must have an active Universal Print subscription.</span></span>
+<span data-ttu-id="14673-109">В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.</span><span class="sxs-lookup"><span data-stu-id="14673-109">In addition to the following permissions, the user's tenant must have an active Universal Print subscription.</span></span>
 
-|<span data-ttu-id="2d9e5-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2d9e5-110">Permission type</span></span> | <span data-ttu-id="2d9e5-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2d9e5-111">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="14673-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="14673-110">Permission type</span></span> | <span data-ttu-id="14673-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="14673-111">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="2d9e5-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2d9e5-112">Delegated (work or school account)</span></span>| <span data-ttu-id="2d9e5-113">Users. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="2d9e5-113">Users.Read.All</span></span> |
-|<span data-ttu-id="2d9e5-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2d9e5-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2d9e5-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2d9e5-115">Not Supported.</span></span>|
-|<span data-ttu-id="2d9e5-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2d9e5-116">Application</span></span>|<span data-ttu-id="2d9e5-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2d9e5-117">Not Supported.</span></span>|
+|<span data-ttu-id="14673-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="14673-112">Delegated (work or school account)</span></span>| <span data-ttu-id="14673-113">Users. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="14673-113">Users.Read.All</span></span> |
+|<span data-ttu-id="14673-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="14673-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="14673-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="14673-115">Not Supported.</span></span>|
+|<span data-ttu-id="14673-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="14673-116">Application</span></span>|<span data-ttu-id="14673-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="14673-117">Not Supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2d9e5-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2d9e5-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="14673-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="14673-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /print/reports/getPrinterArchivedPrintJobs
 GET /reports/getPrinterArchivedPrintJobs
 ```
-## <a name="request-headers"></a><span data-ttu-id="2d9e5-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2d9e5-119">Request headers</span></span>
-| <span data-ttu-id="2d9e5-120">Имя</span><span class="sxs-lookup"><span data-stu-id="2d9e5-120">Name</span></span>          | <span data-ttu-id="2d9e5-121">Описание</span><span class="sxs-lookup"><span data-stu-id="2d9e5-121">Description</span></span>   |
+## <a name="request-headers"></a><span data-ttu-id="14673-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="14673-119">Request headers</span></span>
+| <span data-ttu-id="14673-120">Имя</span><span class="sxs-lookup"><span data-stu-id="14673-120">Name</span></span>          | <span data-ttu-id="14673-121">Описание</span><span class="sxs-lookup"><span data-stu-id="14673-121">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="2d9e5-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2d9e5-122">Authorization</span></span> | <span data-ttu-id="2d9e5-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2d9e5-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="14673-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="14673-122">Authorization</span></span> | <span data-ttu-id="14673-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="14673-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="function-parameters"></a><span data-ttu-id="2d9e5-125">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="2d9e5-125">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="14673-125">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="14673-125">Function parameters</span></span>
 
-| <span data-ttu-id="2d9e5-126">Параметр</span><span class="sxs-lookup"><span data-stu-id="2d9e5-126">Parameter</span></span>     | <span data-ttu-id="2d9e5-127">Тип</span><span class="sxs-lookup"><span data-stu-id="2d9e5-127">Type</span></span>                 | <span data-ttu-id="2d9e5-128">Обязательный?</span><span class="sxs-lookup"><span data-stu-id="2d9e5-128">Required?</span></span> | <span data-ttu-id="2d9e5-129">Description</span><span class="sxs-lookup"><span data-stu-id="2d9e5-129">Description</span></span>                                                          |
+| <span data-ttu-id="14673-126">Параметр</span><span class="sxs-lookup"><span data-stu-id="14673-126">Parameter</span></span>     | <span data-ttu-id="14673-127">Тип</span><span class="sxs-lookup"><span data-stu-id="14673-127">Type</span></span>                 | <span data-ttu-id="14673-128">Обязательный?</span><span class="sxs-lookup"><span data-stu-id="14673-128">Required?</span></span> | <span data-ttu-id="14673-129">Описание</span><span class="sxs-lookup"><span data-stu-id="14673-129">Description</span></span>                                                          |
 |---------------|----------------------|-----------|----------------------------------------------------------------------|
-| `printerId`   | `Edm.String`         | <span data-ttu-id="2d9e5-130">Да</span><span class="sxs-lookup"><span data-stu-id="2d9e5-130">Yes</span></span>       | <span data-ttu-id="2d9e5-131">ИДЕНТИФИКАТОР принтера, для которого возвращаются данные.</span><span class="sxs-lookup"><span data-stu-id="2d9e5-131">The ID of the printer to return data for.</span></span>                            |
-| `periodStart` | `Edm.DateTimeOffset` | <span data-ttu-id="2d9e5-132">Нет</span><span class="sxs-lookup"><span data-stu-id="2d9e5-132">No</span></span>        | <span data-ttu-id="2d9e5-133">Дата начала (включительно) периода времени, из которого требуется включить данные.</span><span class="sxs-lookup"><span data-stu-id="2d9e5-133">The start date (inclusive) for the time period to include data from.</span></span> |
-| `periodEnd`   | `Edm.DateTimeOffset` | <span data-ttu-id="2d9e5-134">Нет</span><span class="sxs-lookup"><span data-stu-id="2d9e5-134">No</span></span>        | <span data-ttu-id="2d9e5-135">Дата окончания (включительно) периода времени, из которого требуется включить данные.</span><span class="sxs-lookup"><span data-stu-id="2d9e5-135">The end date (inclusive) for the time period to include data from.</span></span>   |
+| `printerId`   | `Edm.String`         | <span data-ttu-id="14673-130">Да</span><span class="sxs-lookup"><span data-stu-id="14673-130">Yes</span></span>       | <span data-ttu-id="14673-131">ИДЕНТИФИКАТОР принтера, для которого возвращаются данные.</span><span class="sxs-lookup"><span data-stu-id="14673-131">The ID of the printer to return data for.</span></span>                            |
+| `periodStart` | `Edm.DateTimeOffset` | <span data-ttu-id="14673-132">Нет</span><span class="sxs-lookup"><span data-stu-id="14673-132">No</span></span>        | <span data-ttu-id="14673-133">Дата начала (включительно) периода времени, из которого требуется включить данные.</span><span class="sxs-lookup"><span data-stu-id="14673-133">The start date (inclusive) for the time period to include data from.</span></span> |
+| `periodEnd`   | `Edm.DateTimeOffset` | <span data-ttu-id="14673-134">Нет</span><span class="sxs-lookup"><span data-stu-id="14673-134">No</span></span>        | <span data-ttu-id="14673-135">Дата окончания (включительно) периода времени, из которого требуется включить данные.</span><span class="sxs-lookup"><span data-stu-id="14673-135">The end date (inclusive) for the time period to include data from.</span></span>   |
 
-## <a name="response"></a><span data-ttu-id="2d9e5-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="2d9e5-136">Response</span></span>
-<span data-ttu-id="2d9e5-137">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [арчиведпринтжоб](../resources/archivedprintjob.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2d9e5-137">If successful, this method returns a `200 OK` response code and a collection of [archivedPrintJob](../resources/archivedprintjob.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="14673-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="14673-136">Response</span></span>
+<span data-ttu-id="14673-137">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [арчиведпринтжоб](../resources/archivedprintjob.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="14673-137">If successful, this method returns a `200 OK` response code and a collection of [archivedPrintJob](../resources/archivedprintjob.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2d9e5-138">Пример</span><span class="sxs-lookup"><span data-stu-id="2d9e5-138">Example</span></span>
-<span data-ttu-id="2d9e5-139">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="2d9e5-139">The following example shows how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="2d9e5-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="2d9e5-140">Request</span></span>
-<span data-ttu-id="2d9e5-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2d9e5-141">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="14673-138">Пример</span><span class="sxs-lookup"><span data-stu-id="14673-138">Example</span></span>
+<span data-ttu-id="14673-139">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="14673-139">The following example shows how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="14673-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="14673-140">Request</span></span>
+<span data-ttu-id="14673-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="14673-141">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "reports-getprinterarchivedprintjobs"
@@ -65,9 +65,9 @@ GET /reports/getPrinterArchivedPrintJobs
 GET https://graph.microsoft.com/beta/print/reports/getPrinterArchivedPrintJobs(printerId='{id}',periodStart=<timestamp>,periodEnd=<timestamp>)
 ```
 
-##### <a name="response"></a><span data-ttu-id="2d9e5-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="2d9e5-142">Response</span></span>
-<span data-ttu-id="2d9e5-143">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="2d9e5-143">The following is an example of the response.</span></span>
-><span data-ttu-id="2d9e5-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2d9e5-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="14673-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="14673-142">Response</span></span>
+<span data-ttu-id="14673-143">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="14673-143">The following is an example of the response.</span></span>
+><span data-ttu-id="14673-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="14673-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,3 +101,4 @@ Content-length: 236
   "section": "documentation",
   "tocPath": ""
 }-->
+

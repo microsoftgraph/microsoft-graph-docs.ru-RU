@@ -5,30 +5,30 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 5220140589758b20285d738a4d60eadfd80defe1
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 52fcf121c3725a61ce833e766122baab0d3a2137
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566256"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48085419"
 ---
-# <a name="create-reviewset"></a><span data-ttu-id="7cfb9-103">Создание представления</span><span class="sxs-lookup"><span data-stu-id="7cfb9-103">Create reviewSet</span></span>
+# <a name="create-reviewset"></a><span data-ttu-id="db0c8-103">Создание представления</span><span class="sxs-lookup"><span data-stu-id="db0c8-103">Create reviewSet</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7cfb9-104">Создайте новый объект [Review](../resources/reviewset.md) .</span><span class="sxs-lookup"><span data-stu-id="7cfb9-104">Create a new [reviewSet](../resources/reviewset.md) object.</span></span> <span data-ttu-id="7cfb9-105">Текст запроса содержит отображаемое имя набора проверки, которое является единственным доступным для записи свойством.</span><span class="sxs-lookup"><span data-stu-id="7cfb9-105">The request body contains the display name of the review set, which is the only writable property.</span></span>
+<span data-ttu-id="db0c8-104">Создайте новый объект [Review](../resources/reviewset.md) .</span><span class="sxs-lookup"><span data-stu-id="db0c8-104">Create a new [reviewSet](../resources/reviewset.md) object.</span></span> <span data-ttu-id="db0c8-105">Текст запроса содержит отображаемое имя набора проверки, которое является единственным доступным для записи свойством.</span><span class="sxs-lookup"><span data-stu-id="db0c8-105">The request body contains the display name of the review set, which is the only writable property.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="7cfb9-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7cfb9-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="db0c8-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="db0c8-106">Permissions</span></span>
 
-<span data-ttu-id="7cfb9-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7cfb9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="db0c8-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="db0c8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="7cfb9-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7cfb9-109">Permission type</span></span>                        | <span data-ttu-id="7cfb9-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7cfb9-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="db0c8-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="db0c8-109">Permission type</span></span>                        | <span data-ttu-id="db0c8-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="db0c8-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="7cfb9-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7cfb9-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="7cfb9-112">User.Read</span><span class="sxs-lookup"><span data-stu-id="7cfb9-112">User.Read</span></span> |
-| <span data-ttu-id="7cfb9-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7cfb9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7cfb9-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7cfb9-114">Not supported.</span></span> |
-| <span data-ttu-id="7cfb9-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7cfb9-115">Application</span></span>                            | <span data-ttu-id="7cfb9-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7cfb9-116">Not supported.</span></span> |
+| <span data-ttu-id="db0c8-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="db0c8-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="db0c8-112">User.Read</span><span class="sxs-lookup"><span data-stu-id="db0c8-112">User.Read</span></span> |
+| <span data-ttu-id="db0c8-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="db0c8-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="db0c8-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="db0c8-114">Not supported.</span></span> |
+| <span data-ttu-id="db0c8-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="db0c8-115">Application</span></span>                            | <span data-ttu-id="db0c8-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="db0c8-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7cfb9-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7cfb9-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="db0c8-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="db0c8-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,31 +36,31 @@ ms.locfileid: "46566256"
 POST /compliance/ediscovery/cases/{id}/reviewSets/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7cfb9-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7cfb9-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="db0c8-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="db0c8-118">Request headers</span></span>
 
-| <span data-ttu-id="7cfb9-119">Имя</span><span class="sxs-lookup"><span data-stu-id="7cfb9-119">Name</span></span>       | <span data-ttu-id="7cfb9-120">Описание</span><span class="sxs-lookup"><span data-stu-id="7cfb9-120">Description</span></span>|
+| <span data-ttu-id="db0c8-119">Имя</span><span class="sxs-lookup"><span data-stu-id="db0c8-119">Name</span></span>       | <span data-ttu-id="db0c8-120">Описание</span><span class="sxs-lookup"><span data-stu-id="db0c8-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="7cfb9-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7cfb9-121">Authorization</span></span> | <span data-ttu-id="7cfb9-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7cfb9-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="db0c8-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="db0c8-121">Authorization</span></span> | <span data-ttu-id="db0c8-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="db0c8-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7cfb9-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7cfb9-124">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="db0c8-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="db0c8-124">Request body</span></span>
 
-<span data-ttu-id="7cfb9-125">В тексте запроса добавьте представление объекта [Review](../resources/reviewset.md)в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7cfb9-125">In the request body, supply JSON representation of the [reviewSet](../resources/reviewset.md).</span></span>  <span data-ttu-id="7cfb9-126">В следующей таблице перечислены обязательные свойства.</span><span class="sxs-lookup"><span data-stu-id="7cfb9-126">The following table lists the required properties.</span></span>
+<span data-ttu-id="db0c8-125">В тексте запроса добавьте представление объекта [Review](../resources/reviewset.md)в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="db0c8-125">In the request body, supply JSON representation of the [reviewSet](../resources/reviewset.md).</span></span>  <span data-ttu-id="db0c8-126">В следующей таблице перечислены обязательные свойства.</span><span class="sxs-lookup"><span data-stu-id="db0c8-126">The following table lists the required properties.</span></span>
 
-| <span data-ttu-id="7cfb9-127">Свойство</span><span class="sxs-lookup"><span data-stu-id="7cfb9-127">Property</span></span>     | <span data-ttu-id="7cfb9-128">Тип</span><span class="sxs-lookup"><span data-stu-id="7cfb9-128">Type</span></span>        | <span data-ttu-id="7cfb9-129">Описание</span><span class="sxs-lookup"><span data-stu-id="7cfb9-129">Description</span></span> |
+| <span data-ttu-id="db0c8-127">Свойство</span><span class="sxs-lookup"><span data-stu-id="db0c8-127">Property</span></span>     | <span data-ttu-id="db0c8-128">Тип</span><span class="sxs-lookup"><span data-stu-id="db0c8-128">Type</span></span>        | <span data-ttu-id="db0c8-129">Описание</span><span class="sxs-lookup"><span data-stu-id="db0c8-129">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="7cfb9-130">displayName</span><span class="sxs-lookup"><span data-stu-id="7cfb9-130">displayName</span></span>  | <span data-ttu-id="7cfb9-131">string</span><span class="sxs-lookup"><span data-stu-id="7cfb9-131">string</span></span>      | <span data-ttu-id="7cfb9-132">Имя набора проверки.</span><span class="sxs-lookup"><span data-stu-id="7cfb9-132">The name of the review set.</span></span> |
+| <span data-ttu-id="db0c8-130">displayName</span><span class="sxs-lookup"><span data-stu-id="db0c8-130">displayName</span></span>  | <span data-ttu-id="db0c8-131">string</span><span class="sxs-lookup"><span data-stu-id="db0c8-131">string</span></span>      | <span data-ttu-id="db0c8-132">Имя набора проверки.</span><span class="sxs-lookup"><span data-stu-id="db0c8-132">The name of the review set.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="7cfb9-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="7cfb9-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="db0c8-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="db0c8-133">Response</span></span>
 
-<span data-ttu-id="7cfb9-134">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Review](../resources/reviewset.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="7cfb9-134">If successful, this method returns a `201 Created` response code and a [reviewSet](../resources/reviewset.md) object in the response body.</span></span>
+<span data-ttu-id="db0c8-134">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Review](../resources/reviewset.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="db0c8-134">If successful, this method returns a `201 Created` response code and a [reviewSet](../resources/reviewset.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="7cfb9-135">Примеры</span><span class="sxs-lookup"><span data-stu-id="7cfb9-135">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="db0c8-135">Примеры</span><span class="sxs-lookup"><span data-stu-id="db0c8-135">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="7cfb9-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="7cfb9-136">Request</span></span>
+### <a name="request"></a><span data-ttu-id="db0c8-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="db0c8-136">Request</span></span>
 
-<span data-ttu-id="7cfb9-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7cfb9-137">The following is an example of the request.</span></span>
+<span data-ttu-id="db0c8-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="db0c8-137">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="7cfb9-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="7cfb9-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="db0c8-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="db0c8-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_reviewset"
@@ -74,26 +74,26 @@ Content-type: application/json
   "displayName": "My Reviewset 3",
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="7cfb9-139">C#</span><span class="sxs-lookup"><span data-stu-id="7cfb9-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="db0c8-139">C#</span><span class="sxs-lookup"><span data-stu-id="db0c8-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-reviewset-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="7cfb9-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7cfb9-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="db0c8-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="db0c8-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-reviewset-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="7cfb9-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7cfb9-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="db0c8-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="db0c8-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-reviewset-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="7cfb9-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="7cfb9-142">Response</span></span>
+### <a name="response"></a><span data-ttu-id="db0c8-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="db0c8-142">Response</span></span>
 
-<span data-ttu-id="7cfb9-143">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="7cfb9-143">The following is an example of the response.</span></span>
+<span data-ttu-id="db0c8-143">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="db0c8-143">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="7cfb9-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="7cfb9-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="db0c8-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="db0c8-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -128,3 +128,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
