@@ -5,30 +5,30 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e556daf6fd8039b6783c6d08e595d0df1a6c3541
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 56ae53e1b55be0a56a4c021449b8c5f4eb1a7c05
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42495412"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48058392"
 ---
-# <a name="internalsponsors-complex-type"></a><span data-ttu-id="10ac3-103">сложный тип Интерналспонсорс</span><span class="sxs-lookup"><span data-stu-id="10ac3-103">internalSponsors complex type</span></span>
+# <a name="internalsponsors-complex-type"></a><span data-ttu-id="c8841-103">сложный тип Интерналспонсорс</span><span class="sxs-lookup"><span data-stu-id="c8841-103">internalSponsors complex type</span></span>
 
-<span data-ttu-id="10ac3-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="10ac3-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c8841-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c8841-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="10ac3-105">Используется на этапе утверждения [политики назначения пакетов Access](accesspackageassignmentpolicy.md).</span><span class="sxs-lookup"><span data-stu-id="10ac3-105">Used in the approval stage of an [access package assignment policy](accesspackageassignmentpolicy.md).</span></span> <span data-ttu-id="10ac3-106">Это подтип набора [пользователей](userset.md), в котором `@odata.type` значение `#microsoft.graph.internalSponsors` указывает на то, что пользователь, подключенный к Организации, может быть утверждающим в качестве внутреннего спонсора.</span><span class="sxs-lookup"><span data-stu-id="10ac3-106">It is a subtype of [userSet](userset.md), in which the `@odata.type` value `#microsoft.graph.internalSponsors` indicates that a requesting user's connected organization internal sponsors are to be the approver.</span></span> <span data-ttu-id="10ac3-107">Этот утверждающий применяется только к запросам пользователей, которые являются частью подключенной Организации.</span><span class="sxs-lookup"><span data-stu-id="10ac3-107">This approver is only applicable to requests from users who are part of a connected organization.</span></span>  <span data-ttu-id="10ac3-108">При создании этапа утверждения политики назначения пакетов Access с Интерналспонсорс также включает другой утверждающий, например одного пользователя или члена группы, если у подключенной Организации нет внутреннего спонсора.</span><span class="sxs-lookup"><span data-stu-id="10ac3-108">When creating an access package assignment policy approval stage with internalSponsors, also include another approver, such as a single user or group member, in case the connected organization does not have an internal sponsor.</span></span>
+<span data-ttu-id="c8841-105">Используется на этапе утверждения [политики назначения пакетов Access](accesspackageassignmentpolicy.md).</span><span class="sxs-lookup"><span data-stu-id="c8841-105">Used in the approval stage of an [access package assignment policy](accesspackageassignmentpolicy.md).</span></span> <span data-ttu-id="c8841-106">Это подтип набора [пользователей](userset.md), в котором `@odata.type` значение `#microsoft.graph.internalSponsors` указывает на то, что пользователь, подключенный к Организации, может быть утверждающим в качестве внутреннего спонсора.</span><span class="sxs-lookup"><span data-stu-id="c8841-106">It is a subtype of [userSet](userset.md), in which the `@odata.type` value `#microsoft.graph.internalSponsors` indicates that a requesting user's connected organization internal sponsors are to be the approver.</span></span> <span data-ttu-id="c8841-107">Этот утверждающий применяется только к запросам пользователей, которые являются частью подключенной Организации.</span><span class="sxs-lookup"><span data-stu-id="c8841-107">This approver is only applicable to requests from users who are part of a connected organization.</span></span>  <span data-ttu-id="c8841-108">При создании этапа утверждения политики назначения пакетов Access с Интерналспонсорс также включает другой утверждающий, например одного пользователя или члена группы, если у подключенной Организации нет внутреннего спонсора.</span><span class="sxs-lookup"><span data-stu-id="c8841-108">When creating an access package assignment policy approval stage with internalSponsors, also include another approver, such as a single user or group member, in case the connected organization does not have an internal sponsor.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="10ac3-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="10ac3-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="c8841-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="c8841-109">Properties</span></span>
 
-| <span data-ttu-id="10ac3-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="10ac3-110">Property</span></span>                     | <span data-ttu-id="10ac3-111">Тип</span><span class="sxs-lookup"><span data-stu-id="10ac3-111">Type</span></span>                      | <span data-ttu-id="10ac3-112">Описание</span><span class="sxs-lookup"><span data-stu-id="10ac3-112">Description</span></span> |
+| <span data-ttu-id="c8841-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="c8841-110">Property</span></span>                     | <span data-ttu-id="c8841-111">Тип</span><span class="sxs-lookup"><span data-stu-id="c8841-111">Type</span></span>                      | <span data-ttu-id="c8841-112">Описание</span><span class="sxs-lookup"><span data-stu-id="c8841-112">Description</span></span> |
 | :--------------------------- | :------------------------ | :---------- |
-| <span data-ttu-id="10ac3-113">Создание резервной копии</span><span class="sxs-lookup"><span data-stu-id="10ac3-113">isBackup</span></span> | <span data-ttu-id="10ac3-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="10ac3-114">Boolean</span></span> | <span data-ttu-id="10ac3-115">Указывает, является ли спонсор резервным утверждающим.</span><span class="sxs-lookup"><span data-stu-id="10ac3-115">Indicates whether the sponsor is a backup fallback approver.</span></span> |
+| <span data-ttu-id="c8841-113">Создание резервной копии</span><span class="sxs-lookup"><span data-stu-id="c8841-113">isBackup</span></span> | <span data-ttu-id="c8841-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="c8841-114">Boolean</span></span> | <span data-ttu-id="c8841-115">Указывает, является ли спонсор резервным утверждающим.</span><span class="sxs-lookup"><span data-stu-id="c8841-115">Indicates whether the sponsor is a backup fallback approver.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="10ac3-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="10ac3-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c8841-116">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="c8841-116">JSON representation</span></span>
 
-<span data-ttu-id="10ac3-117">Ниже представлено представление типа в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="10ac3-117">The following is a JSON representation of the type.</span></span>
+<span data-ttu-id="c8841-117">Ниже представлено представление типа в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c8841-117">The following is a JSON representation of the type.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -56,3 +56,5 @@ ms.locfileid: "42495412"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

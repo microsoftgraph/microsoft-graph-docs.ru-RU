@@ -7,33 +7,33 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Получение коллекции элементов в списке.
 doc_type: apiPageType
-ms.openlocfilehash: f42973005e552ce84b1f2613c6012d4404fb5b07
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6f6034e0cff0a5af4034c1abbd0190111bb6f513
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511693"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48057254"
 ---
-# <a name="enumerate-items-in-a-list"></a><span data-ttu-id="64d45-103">Перечисление элементов списка</span><span class="sxs-lookup"><span data-stu-id="64d45-103">Enumerate items in a list</span></span>
+# <a name="enumerate-items-in-a-list"></a><span data-ttu-id="7286b-103">Перечисление элементов списка</span><span class="sxs-lookup"><span data-stu-id="7286b-103">Enumerate items in a list</span></span>
 
-<span data-ttu-id="64d45-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="64d45-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7286b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7286b-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="64d45-105">Получение коллекции ресурсов [items][item] из объекта [list][].</span><span class="sxs-lookup"><span data-stu-id="64d45-105">Get the collection of [items][item] in a [list][].</span></span>
+<span data-ttu-id="7286b-105">Получение коллекции ресурсов [items][item] из объекта [list][].</span><span class="sxs-lookup"><span data-stu-id="7286b-105">Get the collection of [items][item] in a [list][].</span></span>
 
 [list]: ../resources/list.md
 [item]: ../resources/listitem.md
 
-## <a name="permissions"></a><span data-ttu-id="64d45-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="64d45-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7286b-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7286b-107">Permissions</span></span>
 
-<span data-ttu-id="64d45-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="64d45-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7286b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7286b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="64d45-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="64d45-110">Permission type</span></span>      | <span data-ttu-id="64d45-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="64d45-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7286b-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7286b-110">Permission type</span></span>      | <span data-ttu-id="7286b-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7286b-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="64d45-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="64d45-112">Delegated (work or school account)</span></span> | <span data-ttu-id="64d45-113">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="64d45-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="64d45-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="64d45-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="64d45-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="64d45-115">Not supported.</span></span>    |
-|<span data-ttu-id="64d45-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="64d45-116">Application</span></span> | <span data-ttu-id="64d45-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="64d45-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="7286b-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7286b-112">Delegated (work or school account)</span></span> | <span data-ttu-id="7286b-113">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7286b-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7286b-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7286b-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7286b-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7286b-115">Not supported.</span></span>    |
+|<span data-ttu-id="7286b-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7286b-116">Application</span></span> | <span data-ttu-id="7286b-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7286b-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="64d45-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="64d45-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7286b-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7286b-118">HTTP request</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
@@ -41,37 +41,37 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expan
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 ```
 
-## <a name="example"></a><span data-ttu-id="64d45-119">Пример</span><span class="sxs-lookup"><span data-stu-id="64d45-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7286b-119">Пример</span><span class="sxs-lookup"><span data-stu-id="7286b-119">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="64d45-120">Запрос</span><span class="sxs-lookup"><span data-stu-id="64d45-120">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7286b-120">Запрос</span><span class="sxs-lookup"><span data-stu-id="7286b-120">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="64d45-121">HTTP</span><span class="sxs-lookup"><span data-stu-id="64d45-121">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7286b-121">HTTP</span><span class="sxs-lookup"><span data-stu-id="7286b-121">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-items", "scopes": "sites.read.all" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)
 ```
-# <a name="c"></a>[<span data-ttu-id="64d45-122">C#</span><span class="sxs-lookup"><span data-stu-id="64d45-122">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7286b-122">C#</span><span class="sxs-lookup"><span data-stu-id="7286b-122">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-list-items-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="64d45-123">JavaScript</span><span class="sxs-lookup"><span data-stu-id="64d45-123">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7286b-123">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7286b-123">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-list-items-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="64d45-124">Objective-C</span><span class="sxs-lookup"><span data-stu-id="64d45-124">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7286b-124">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7286b-124">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-items-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="64d45-125">Java</span><span class="sxs-lookup"><span data-stu-id="64d45-125">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="7286b-125">Java</span><span class="sxs-lookup"><span data-stu-id="7286b-125">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-list-items-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="64d45-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="64d45-126">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="7286b-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="7286b-126">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true } -->
 
@@ -118,3 +118,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+
