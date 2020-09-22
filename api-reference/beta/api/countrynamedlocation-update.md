@@ -5,32 +5,32 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 797159a390de07cef167b9f49299d103615f35f2
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 08c702475388d55a4964d6eadd14a75e12394360
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44681126"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002634"
 ---
-# <a name="update-countrynamedlocation"></a><span data-ttu-id="71131-103">Обновление Каунтринамедлокатион</span><span class="sxs-lookup"><span data-stu-id="71131-103">Update countryNamedLocation</span></span>
+# <a name="update-countrynamedlocation"></a><span data-ttu-id="09d65-103">Обновление Каунтринамедлокатион</span><span class="sxs-lookup"><span data-stu-id="09d65-103">Update countryNamedLocation</span></span>
 
-<span data-ttu-id="71131-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="71131-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="09d65-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="09d65-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="71131-105">Обновление свойств объекта [каунтринамедлокатион](../resources/countryNamedLocation.md) .</span><span class="sxs-lookup"><span data-stu-id="71131-105">Update the properties of a [countryNamedLocation](../resources/countryNamedLocation.md) object.</span></span>
+<span data-ttu-id="09d65-105">Обновление свойств объекта [каунтринамедлокатион](../resources/countryNamedLocation.md) .</span><span class="sxs-lookup"><span data-stu-id="09d65-105">Update the properties of a [countryNamedLocation](../resources/countryNamedLocation.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="71131-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="71131-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="09d65-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="09d65-106">Permissions</span></span>
 
-<span data-ttu-id="71131-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="71131-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="09d65-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="09d65-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="71131-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="71131-109">Permission type</span></span>                        | <span data-ttu-id="71131-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="71131-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="09d65-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="09d65-109">Permission type</span></span>                        | <span data-ttu-id="09d65-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="09d65-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="71131-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="71131-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="71131-112">Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс</span><span class="sxs-lookup"><span data-stu-id="71131-112">Policy.Read.All and Policy.ReadWrite.ConditionalAccess</span></span> |
-| <span data-ttu-id="71131-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="71131-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="71131-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="71131-114">Not supported.</span></span> |
-| <span data-ttu-id="71131-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="71131-115">Application</span></span>                            | <span data-ttu-id="71131-116">Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс</span><span class="sxs-lookup"><span data-stu-id="71131-116">Policy.Read.All and Policy.ReadWrite.ConditionalAccess</span></span> |
+| <span data-ttu-id="09d65-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="09d65-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="09d65-112">Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс</span><span class="sxs-lookup"><span data-stu-id="09d65-112">Policy.Read.All and Policy.ReadWrite.ConditionalAccess</span></span> |
+| <span data-ttu-id="09d65-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="09d65-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="09d65-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="09d65-114">Not supported.</span></span> |
+| <span data-ttu-id="09d65-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="09d65-115">Application</span></span>                            | <span data-ttu-id="09d65-116">Policy. Read. ALL и Policy. ReadWrite. Кондитионалакцесс</span><span class="sxs-lookup"><span data-stu-id="09d65-116">Policy.Read.All and Policy.ReadWrite.ConditionalAccess</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="71131-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="71131-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="09d65-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="09d65-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,34 +38,34 @@ ms.locfileid: "44681126"
 PATCH /identity/conditionalAccess/namedLocations/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="71131-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="71131-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="09d65-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="09d65-118">Request headers</span></span>
 
-| <span data-ttu-id="71131-119">Имя</span><span class="sxs-lookup"><span data-stu-id="71131-119">Name</span></span>       | <span data-ttu-id="71131-120">Описание</span><span class="sxs-lookup"><span data-stu-id="71131-120">Description</span></span>|
+| <span data-ttu-id="09d65-119">Имя</span><span class="sxs-lookup"><span data-stu-id="09d65-119">Name</span></span>       | <span data-ttu-id="09d65-120">Описание</span><span class="sxs-lookup"><span data-stu-id="09d65-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="71131-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="71131-121">Authorization</span></span> | <span data-ttu-id="71131-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="71131-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="71131-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="71131-124">Content-type</span></span>  | <span data-ttu-id="71131-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="71131-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="09d65-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="09d65-121">Authorization</span></span> | <span data-ttu-id="09d65-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="09d65-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="09d65-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="09d65-124">Content-type</span></span>  | <span data-ttu-id="09d65-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="09d65-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="71131-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="71131-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="09d65-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="09d65-127">Request body</span></span>
 
-<span data-ttu-id="71131-128">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="71131-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="71131-129">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="71131-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="71131-130">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="71131-130">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="09d65-128">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="09d65-128">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="09d65-129">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="09d65-129">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="09d65-130">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="09d65-130">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="71131-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="71131-131">Property</span></span>     | <span data-ttu-id="71131-132">Тип</span><span class="sxs-lookup"><span data-stu-id="71131-132">Type</span></span>        | <span data-ttu-id="71131-133">Описание</span><span class="sxs-lookup"><span data-stu-id="71131-133">Description</span></span> |
+| <span data-ttu-id="09d65-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="09d65-131">Property</span></span>     | <span data-ttu-id="09d65-132">Тип</span><span class="sxs-lookup"><span data-stu-id="09d65-132">Type</span></span>        | <span data-ttu-id="09d65-133">Описание</span><span class="sxs-lookup"><span data-stu-id="09d65-133">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="71131-134">каунтриесандрегионс</span><span class="sxs-lookup"><span data-stu-id="71131-134">countriesAndRegions</span></span>|<span data-ttu-id="71131-135">Коллекция объектов string</span><span class="sxs-lookup"><span data-stu-id="71131-135">String collection</span></span>|<span data-ttu-id="71131-136">Список стран и/или регионов в формате из двух букв, заданных в стандарте ISO 3166-2.</span><span class="sxs-lookup"><span data-stu-id="71131-136">List of countries and/or regions in two-letter format specified by ISO 3166-2.</span></span>|
-|<span data-ttu-id="71131-137">displayName</span><span class="sxs-lookup"><span data-stu-id="71131-137">displayName</span></span>|<span data-ttu-id="71131-138">String</span><span class="sxs-lookup"><span data-stu-id="71131-138">String</span></span>|<span data-ttu-id="71131-139">Удобное для человека имя расположения.</span><span class="sxs-lookup"><span data-stu-id="71131-139">Human-readable name of the location.</span></span>|
-|<span data-ttu-id="71131-140">инклудеункновнкаунтриесандрегионс</span><span class="sxs-lookup"><span data-stu-id="71131-140">includeUnknownCountriesAndRegions</span></span>|<span data-ttu-id="71131-141">Логический</span><span class="sxs-lookup"><span data-stu-id="71131-141">Boolean</span></span>|<span data-ttu-id="71131-142">Значение, `true` Если IP-адреса, которые не сопоставляются со страной или регионом, должны быть включены в именованное расположение.</span><span class="sxs-lookup"><span data-stu-id="71131-142">The value is `true` if IP addresses that don't map to a country or region should be included in the named location.</span></span>|
+|<span data-ttu-id="09d65-134">каунтриесандрегионс</span><span class="sxs-lookup"><span data-stu-id="09d65-134">countriesAndRegions</span></span>|<span data-ttu-id="09d65-135">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="09d65-135">String collection</span></span>|<span data-ttu-id="09d65-136">Список стран и/или регионов в формате из двух букв, заданных в стандарте ISO 3166-2.</span><span class="sxs-lookup"><span data-stu-id="09d65-136">List of countries and/or regions in two-letter format specified by ISO 3166-2.</span></span>|
+|<span data-ttu-id="09d65-137">displayName</span><span class="sxs-lookup"><span data-stu-id="09d65-137">displayName</span></span>|<span data-ttu-id="09d65-138">String</span><span class="sxs-lookup"><span data-stu-id="09d65-138">String</span></span>|<span data-ttu-id="09d65-139">Удобное для человека имя расположения.</span><span class="sxs-lookup"><span data-stu-id="09d65-139">Human-readable name of the location.</span></span>|
+|<span data-ttu-id="09d65-140">инклудеункновнкаунтриесандрегионс</span><span class="sxs-lookup"><span data-stu-id="09d65-140">includeUnknownCountriesAndRegions</span></span>|<span data-ttu-id="09d65-141">Boolean</span><span class="sxs-lookup"><span data-stu-id="09d65-141">Boolean</span></span>|<span data-ttu-id="09d65-142">Значение, `true` Если IP-адреса, которые не сопоставляются со страной или регионом, должны быть включены в именованное расположение.</span><span class="sxs-lookup"><span data-stu-id="09d65-142">The value is `true` if IP addresses that don't map to a country or region should be included in the named location.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="71131-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="71131-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="09d65-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="09d65-143">Response</span></span>
 
-<span data-ttu-id="71131-p105">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="71131-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="09d65-p105">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="09d65-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="71131-146">Примеры</span><span class="sxs-lookup"><span data-stu-id="71131-146">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="09d65-146">Примеры</span><span class="sxs-lookup"><span data-stu-id="09d65-146">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="71131-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="71131-147">Request</span></span>
+### <a name="request"></a><span data-ttu-id="09d65-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="09d65-147">Request</span></span>
 
-<span data-ttu-id="71131-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="71131-148">The following is an example of the request.</span></span>
+<span data-ttu-id="09d65-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="09d65-148">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="71131-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="71131-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="09d65-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="09d65-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_countrynamedlocation"
@@ -85,24 +85,24 @@ Content-type: application/json
     "includeUnknownCountriesAndRegions": false
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="71131-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="71131-150">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="09d65-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="09d65-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-countrynamedlocation-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="71131-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="71131-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="09d65-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="09d65-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-countrynamedlocation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="71131-152">C#</span><span class="sxs-lookup"><span data-stu-id="71131-152">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="09d65-152">C#</span><span class="sxs-lookup"><span data-stu-id="09d65-152">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-countrynamedlocation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="71131-153">Ответ</span><span class="sxs-lookup"><span data-stu-id="71131-153">Response</span></span>
+### <a name="response"></a><span data-ttu-id="09d65-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="09d65-153">Response</span></span>
 
-<span data-ttu-id="71131-154">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="71131-154">The following is an example of the response.</span></span>
+<span data-ttu-id="09d65-154">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="09d65-154">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -123,3 +123,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

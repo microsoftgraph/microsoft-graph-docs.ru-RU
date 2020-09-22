@@ -5,69 +5,69 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: bd83b4e51a54d8d5d6680852081f32a04064127e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f71a0c721def9f7236bf5329ffa210aadd8aede1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43397121"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48002207"
 ---
-# <a name="list-calendarview"></a><span data-ttu-id="ce610-103">Список calendarView</span><span class="sxs-lookup"><span data-stu-id="ce610-103">List calendarView</span></span>
+# <a name="list-calendarview"></a><span data-ttu-id="b1f95-103">Список calendarView</span><span class="sxs-lookup"><span data-stu-id="b1f95-103">List calendarView</span></span>
 
-<span data-ttu-id="ce610-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ce610-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b1f95-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b1f95-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ce610-105">Получение исключений, повторяемых или единичных экземпляров событий в таком представлении стандартного календаря группы, которое определяется заданным диапазоном времени.</span><span class="sxs-lookup"><span data-stu-id="ce610-105">Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the default calendar of a group.</span></span>
+<span data-ttu-id="b1f95-105">Получение исключений, повторяемых или единичных экземпляров событий в таком представлении стандартного календаря группы, которое определяется заданным диапазоном времени.</span><span class="sxs-lookup"><span data-stu-id="b1f95-105">Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range, from the default calendar of a group.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ce610-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ce610-106">Permissions</span></span>
-<span data-ttu-id="ce610-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ce610-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b1f95-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b1f95-106">Permissions</span></span>
+<span data-ttu-id="b1f95-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b1f95-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ce610-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ce610-109">Permission type</span></span>      | <span data-ttu-id="ce610-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ce610-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b1f95-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b1f95-109">Permission type</span></span>      | <span data-ttu-id="b1f95-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b1f95-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ce610-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ce610-111">Delegated (work or school account)</span></span> | <span data-ttu-id="ce610-112">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ce610-112">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="ce610-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ce610-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ce610-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ce610-114">Not supported.</span></span>    |
-|<span data-ttu-id="ce610-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ce610-115">Application</span></span> | <span data-ttu-id="ce610-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ce610-116">Not supported.</span></span> |
+|<span data-ttu-id="b1f95-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b1f95-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b1f95-112">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b1f95-112">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b1f95-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b1f95-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b1f95-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b1f95-114">Not supported.</span></span>    |
+|<span data-ttu-id="b1f95-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b1f95-115">Application</span></span> | <span data-ttu-id="b1f95-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b1f95-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ce610-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ce610-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b1f95-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b1f95-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
 
-## <a name="query-parameters"></a><span data-ttu-id="ce610-118">Параметры запроса</span><span class="sxs-lookup"><span data-stu-id="ce610-118">Query parameters</span></span>
-<span data-ttu-id="ce610-119">В URL-адресе запроса укажите перечисленные ниже обязательные параметры запроса и их значения.</span><span class="sxs-lookup"><span data-stu-id="ce610-119">In the request URL, provide the following required query parameters with values.</span></span>
+## <a name="query-parameters"></a><span data-ttu-id="b1f95-118">Параметры запроса</span><span class="sxs-lookup"><span data-stu-id="b1f95-118">Query parameters</span></span>
+<span data-ttu-id="b1f95-119">В URL-адресе запроса укажите перечисленные ниже обязательные параметры запроса и их значения.</span><span class="sxs-lookup"><span data-stu-id="b1f95-119">In the request URL, provide the following required query parameters with values.</span></span>
 
-| <span data-ttu-id="ce610-120">Параметр</span><span class="sxs-lookup"><span data-stu-id="ce610-120">Parameter</span></span>     | <span data-ttu-id="ce610-121">Тип</span><span class="sxs-lookup"><span data-stu-id="ce610-121">Type</span></span>   | <span data-ttu-id="ce610-122">Описание</span><span class="sxs-lookup"><span data-stu-id="ce610-122">Description</span></span>                                                                                                            |
+| <span data-ttu-id="b1f95-120">Параметр</span><span class="sxs-lookup"><span data-stu-id="b1f95-120">Parameter</span></span>     | <span data-ttu-id="b1f95-121">Тип</span><span class="sxs-lookup"><span data-stu-id="b1f95-121">Type</span></span>   | <span data-ttu-id="b1f95-122">Описание</span><span class="sxs-lookup"><span data-stu-id="b1f95-122">Description</span></span>                                                                                                            |
 |:--------------|:-------|:-----------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="ce610-123">startDateTime</span><span class="sxs-lookup"><span data-stu-id="ce610-123">startDateTime</span></span> | <span data-ttu-id="ce610-124">String</span><span class="sxs-lookup"><span data-stu-id="ce610-124">String</span></span> | <span data-ttu-id="ce610-p102">Дата и время начала диапазона, представленные в формате ISO 8601. Пример: "2019-11-08T19:00:00-08:00".</span><span class="sxs-lookup"><span data-stu-id="ce610-p102">The start date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T19:00:00-08:00".</span></span> |
-| <span data-ttu-id="ce610-127">endDateTime</span><span class="sxs-lookup"><span data-stu-id="ce610-127">endDateTime</span></span>   | <span data-ttu-id="ce610-128">String</span><span class="sxs-lookup"><span data-stu-id="ce610-128">String</span></span> | <span data-ttu-id="ce610-p103">Дата и время окончания диапазона, представленные в формате ISO 8601. Пример: "2019-11-08T20:00:00-08:00".</span><span class="sxs-lookup"><span data-stu-id="ce610-p103">The end date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T20:00:00-08:00".</span></span>   |
+| <span data-ttu-id="b1f95-123">startDateTime</span><span class="sxs-lookup"><span data-stu-id="b1f95-123">startDateTime</span></span> | <span data-ttu-id="b1f95-124">String</span><span class="sxs-lookup"><span data-stu-id="b1f95-124">String</span></span> | <span data-ttu-id="b1f95-p102">Дата и время начала диапазона, представленные в формате ISO 8601. Пример: "2019-11-08T19:00:00-08:00".</span><span class="sxs-lookup"><span data-stu-id="b1f95-p102">The start date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T19:00:00-08:00".</span></span> |
+| <span data-ttu-id="b1f95-127">endDateTime</span><span class="sxs-lookup"><span data-stu-id="b1f95-127">endDateTime</span></span>   | <span data-ttu-id="b1f95-128">String</span><span class="sxs-lookup"><span data-stu-id="b1f95-128">String</span></span> | <span data-ttu-id="b1f95-p103">Дата и время окончания диапазона, представленные в формате ISO 8601. Пример: "2019-11-08T20:00:00-08:00".</span><span class="sxs-lookup"><span data-stu-id="b1f95-p103">The end date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T20:00:00-08:00".</span></span>   |
 
-<span data-ttu-id="ce610-131">Значения `startDateTime` и `endDateTime` интерпретируются с использованием смещения часового пояса, указанного в значении, и на них не влияет значение заголовка `Prefer: outlook.timezone` при его наличии.</span><span class="sxs-lookup"><span data-stu-id="ce610-131">The values of `startDateTime` and `endDateTime` are interpreted using the timezone offset specified in the value and are not impacted by the value of the `Prefer: outlook.timezone` header if present.</span></span> <span data-ttu-id="ce610-132">Если в значении не указано смещение часового пояса, оно интерпретируется в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="ce610-132">If no timezone offset is included in the value, it is interpreted as UTC.</span></span>
+<span data-ttu-id="b1f95-131">Значения `startDateTime` и `endDateTime` интерпретируются с использованием смещения часового пояса, указанного в значении, и на них не влияет значение заголовка `Prefer: outlook.timezone` при его наличии.</span><span class="sxs-lookup"><span data-stu-id="b1f95-131">The values of `startDateTime` and `endDateTime` are interpreted using the timezone offset specified in the value and are not impacted by the value of the `Prefer: outlook.timezone` header if present.</span></span> <span data-ttu-id="b1f95-132">Если в значении не указано смещение часового пояса, оно интерпретируется в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="b1f95-132">If no timezone offset is included in the value, it is interpreted as UTC.</span></span>
 
-<span data-ttu-id="ce610-133">Этот метод также поддерживает некоторые [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="ce610-133">This method also supports some of the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="b1f95-133">Этот метод также поддерживает некоторые [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="b1f95-133">This method also supports some of the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="ce610-134">Свойства **createdDateTime** и **lastModifiedDateTime** [события](../resources/event.md) не поддерживают `$select`.</span><span class="sxs-lookup"><span data-stu-id="ce610-134">The **createdDateTime** and **lastModifiedDateTime** properties of [event](../resources/event.md) do not support `$select`.</span></span> <span data-ttu-id="ce610-135">Чтобы получить их значения, просто запросите **calendarView**, не применяя `$select`.</span><span class="sxs-lookup"><span data-stu-id="ce610-135">To get their values, simply query on **calendarView** without applying `$select`.</span></span>
+> <span data-ttu-id="b1f95-134">Свойства **createdDateTime** и **lastModifiedDateTime** [события](../resources/event.md) не поддерживают `$select`.</span><span class="sxs-lookup"><span data-stu-id="b1f95-134">The **createdDateTime** and **lastModifiedDateTime** properties of [event](../resources/event.md) do not support `$select`.</span></span> <span data-ttu-id="b1f95-135">Чтобы получить их значения, просто запросите **calendarView**, не применяя `$select`.</span><span class="sxs-lookup"><span data-stu-id="b1f95-135">To get their values, simply query on **calendarView** without applying `$select`.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="ce610-136">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ce610-136">Request headers</span></span>
-| <span data-ttu-id="ce610-137">Имя</span><span class="sxs-lookup"><span data-stu-id="ce610-137">Name</span></span>       | <span data-ttu-id="ce610-138">Тип</span><span class="sxs-lookup"><span data-stu-id="ce610-138">Type</span></span> | <span data-ttu-id="ce610-139">Описание</span><span class="sxs-lookup"><span data-stu-id="ce610-139">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="b1f95-136">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b1f95-136">Request headers</span></span>
+| <span data-ttu-id="b1f95-137">Имя</span><span class="sxs-lookup"><span data-stu-id="b1f95-137">Name</span></span>       | <span data-ttu-id="b1f95-138">Тип</span><span class="sxs-lookup"><span data-stu-id="b1f95-138">Type</span></span> | <span data-ttu-id="b1f95-139">Описание</span><span class="sxs-lookup"><span data-stu-id="b1f95-139">Description</span></span> |
 |:---------------|:--------|:--------|
-| <span data-ttu-id="ce610-140">Authorization</span><span class="sxs-lookup"><span data-stu-id="ce610-140">Authorization</span></span>  | <span data-ttu-id="ce610-141">string</span><span class="sxs-lookup"><span data-stu-id="ce610-141">string</span></span> | <span data-ttu-id="ce610-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ce610-p106">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="ce610-144">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="ce610-144">Prefer: outlook.timezone</span></span>  | <span data-ttu-id="ce610-145">string</span><span class="sxs-lookup"><span data-stu-id="ce610-145">string</span></span> | <span data-ttu-id="ce610-146">С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе.</span><span class="sxs-lookup"><span data-stu-id="ce610-146">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="ce610-147">Если он не задан, эти значения времени возвращаются в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="ce610-147">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="ce610-148">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="ce610-148">Optional.</span></span> |
-| <span data-ttu-id="ce610-149">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="ce610-149">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="ce610-150">string</span><span class="sxs-lookup"><span data-stu-id="ce610-150">string</span></span> | <span data-ttu-id="ce610-151">Формат возвращаемого свойства **body**.</span><span class="sxs-lookup"><span data-stu-id="ce610-151">The format of the **body** property to be returned in.</span></span> <span data-ttu-id="ce610-152">Возможные значения: "text" или "html".</span><span class="sxs-lookup"><span data-stu-id="ce610-152">Values can be "text" or "html".</span></span> <span data-ttu-id="ce610-153">Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан.</span><span class="sxs-lookup"><span data-stu-id="ce610-153">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="ce610-154">Если заголовок не указан, свойство **body** возвращается в формате HTML.</span><span class="sxs-lookup"><span data-stu-id="ce610-154">If the header is not specified, the **body** property is returned in HTML format.</span></span> <span data-ttu-id="ce610-155">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="ce610-155">Optional.</span></span> |
+| <span data-ttu-id="b1f95-140">Authorization</span><span class="sxs-lookup"><span data-stu-id="b1f95-140">Authorization</span></span>  | <span data-ttu-id="b1f95-141">string</span><span class="sxs-lookup"><span data-stu-id="b1f95-141">string</span></span> | <span data-ttu-id="b1f95-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b1f95-p106">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="b1f95-144">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="b1f95-144">Prefer: outlook.timezone</span></span>  | <span data-ttu-id="b1f95-145">string</span><span class="sxs-lookup"><span data-stu-id="b1f95-145">string</span></span> | <span data-ttu-id="b1f95-146">С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе.</span><span class="sxs-lookup"><span data-stu-id="b1f95-146">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="b1f95-147">Если он не задан, эти значения времени возвращаются в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="b1f95-147">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="b1f95-148">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="b1f95-148">Optional.</span></span> |
+| <span data-ttu-id="b1f95-149">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="b1f95-149">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="b1f95-150">string</span><span class="sxs-lookup"><span data-stu-id="b1f95-150">string</span></span> | <span data-ttu-id="b1f95-151">Формат возвращаемого свойства **body**.</span><span class="sxs-lookup"><span data-stu-id="b1f95-151">The format of the **body** property to be returned in.</span></span> <span data-ttu-id="b1f95-152">Возможные значения: "text" или "html".</span><span class="sxs-lookup"><span data-stu-id="b1f95-152">Values can be "text" or "html".</span></span> <span data-ttu-id="b1f95-153">Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан.</span><span class="sxs-lookup"><span data-stu-id="b1f95-153">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="b1f95-154">Если заголовок не указан, свойство **body** возвращается в формате HTML.</span><span class="sxs-lookup"><span data-stu-id="b1f95-154">If the header is not specified, the **body** property is returned in HTML format.</span></span> <span data-ttu-id="b1f95-155">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="b1f95-155">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ce610-156">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ce610-156">Request body</span></span>
-<span data-ttu-id="ce610-157">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ce610-157">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b1f95-156">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="b1f95-156">Request body</span></span>
+<span data-ttu-id="b1f95-157">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b1f95-157">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ce610-158">Ответ</span><span class="sxs-lookup"><span data-stu-id="ce610-158">Response</span></span>
-<span data-ttu-id="ce610-159">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [event](../resources/event.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="ce610-159">If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b1f95-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="b1f95-158">Response</span></span>
+<span data-ttu-id="b1f95-159">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [event](../resources/event.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="b1f95-159">If successful, this method returns a `200 OK` response code and collection of [event](../resources/event.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ce610-160">Пример</span><span class="sxs-lookup"><span data-stu-id="ce610-160">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="ce610-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="ce610-161">Request</span></span>
-<span data-ttu-id="ce610-162">Приведенный ниже пример запрашивает возвращение тел событий в текстовом формате.</span><span class="sxs-lookup"><span data-stu-id="ce610-162">The following example requests event bodies to be returned in text format.</span></span>
+## <a name="example"></a><span data-ttu-id="b1f95-160">Пример</span><span class="sxs-lookup"><span data-stu-id="b1f95-160">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="b1f95-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="b1f95-161">Request</span></span>
+<span data-ttu-id="b1f95-162">Приведенный ниже пример запрашивает возвращение тел событий в текстовом формате.</span><span class="sxs-lookup"><span data-stu-id="b1f95-162">The following example requests event bodies to be returned in text format.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="ce610-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="ce610-163">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b1f95-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="b1f95-163">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_get_calendarviews"
@@ -76,24 +76,24 @@ GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_da
 GET https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/calendarView?startDateTime=2017-01-01T19:00:00-08:00&endDateTime=2017-10-01T19:00:00.00-08:00
 Prefer: outlook.body-content-type="text"
 ```
-# <a name="c"></a>[<span data-ttu-id="ce610-164">C#</span><span class="sxs-lookup"><span data-stu-id="ce610-164">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b1f95-164">C#</span><span class="sxs-lookup"><span data-stu-id="b1f95-164">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-get-calendarviews-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ce610-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ce610-165">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b1f95-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b1f95-165">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-get-calendarviews-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ce610-166">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ce610-166">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b1f95-166">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b1f95-166">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-get-calendarviews-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="ce610-167">Ответ</span><span class="sxs-lookup"><span data-stu-id="ce610-167">Response</span></span>
-<span data-ttu-id="ce610-168">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ce610-168">The following is an example of the response.</span></span>
-><span data-ttu-id="ce610-169">**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ce610-169">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="ce610-170">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ce610-170">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="b1f95-167">Отклик</span><span class="sxs-lookup"><span data-stu-id="b1f95-167">Response</span></span>
+<span data-ttu-id="b1f95-168">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b1f95-168">The following is an example of the response.</span></span>
+><span data-ttu-id="b1f95-169">**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="b1f95-169">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="b1f95-170">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b1f95-170">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -285,3 +285,5 @@ Preference-Applied: outlook.body-content-type="text"
   ]
 }
 -->
+
+
