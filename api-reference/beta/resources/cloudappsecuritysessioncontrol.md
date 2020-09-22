@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fffabf697a8cb8b06cf89b73ec5afc0043e41ffc
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4665fc3456dbd6375ea0ef9651455427e74b732f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43467953"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034072"
 ---
 # <a name="cloudappsecuritysessioncontrol-resource-type"></a>Тип ресурса Клаудаппсекуритисессионконтрол
 
@@ -25,9 +25,9 @@ ms.locfileid: "43467953"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | Указывает, включен ли элемент управления сеансом. |
-|клаудаппсекурититипе|String | Возможные значения: `mcasConfigured`, `monitorOnly`, `blockDownloads`. Подробнее об этих значениях:https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1-create-an-azure-ad-conditional-access-test-policy- |
+|клаудаппсекурититипе|String | Возможные значения: `mcasConfigured`, `monitorOnly`, `blockDownloads`. Подробнее об этих значениях: https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad#step-1-create-an-azure-ad-conditional-access-test-policy- |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -60,3 +60,4 @@ ms.locfileid: "43467953"
   "section": "documentation",
   "tocPath": ""
 }-->
+

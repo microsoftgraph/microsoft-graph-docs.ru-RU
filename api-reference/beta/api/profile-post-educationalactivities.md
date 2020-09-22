@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 9725e105b59fe941d1842f6cdb49da6d457be6a9
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: cc3b5f264a3c7de4c4fdb0b318f42e83e644c6d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46808027"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034541"
 ---
 # <a name="create-educationalactivity"></a>Создание Едукатионалактивити
 
@@ -63,7 +63,7 @@ POST /users/{id | userPrincipalName}/profile/educationalActivities
 |source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
 |стартмонсеар|Дата|Месяц и год, когда пользователь присвоено указанному действию.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [едукатионалактивити](../resources/educationalactivity.md) в тексте отклика.
 
@@ -198,3 +198,5 @@ Content-type: application/json
   "startMonthYear": "Date"
 }
 ```
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 29d8bf6342dc1b1b07c7a07a1fe96dd399b5a8e8
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: b3e2cae6b14f3e7f8ea336bb3000bfa8e4894ac2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811604"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034408"
 ---
 # <a name="create-projectparticipation"></a>Создание ПрожектпартиЦипатион
 
@@ -67,7 +67,7 @@ POST /users/{id | userPrincipalName}/profile/projects
 
 ## <a name="relationships"></a>Отношения
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый объект [прожектпартиЦипатион](../resources/projectparticipation.md) в тексте отклика.
 
@@ -196,3 +196,5 @@ Content-type: application/json
   "sponsors": null
 }
 ```
+
+

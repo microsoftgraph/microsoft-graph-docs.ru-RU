@@ -1,24 +1,24 @@
 ---
-title: Создание объекта itemEmail
-description: Создание объекта itemEmail.
+title: Создание Итемемаил
+description: Создание нового Итемемаил.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 3577a0daa807c7f5016ae34b22174ffd1c2fe813
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: de684a581eb9c36cc1763cb557523a7b10ca2c06
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819542"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034499"
 ---
-# <a name="create-itememail"></a>Создание объекта itemEmail
+# <a name="create-itememail"></a>Создание Итемемаил
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [itemEmail](../resources/itememail.md) в профиле [пользователя.](../resources/profile.md)
+Создание нового объекта [итемемаил](../resources/itememail.md) в [профиле](../resources/profile.md)пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "46819542"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
-| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,24 +48,24 @@ POST /users/{id | userPrincipalName}/profile/emails
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-Представьте в тексте запроса описание объекта [itemEmail в формате JSON.](../resources/itememail.md)
+В тексте запроса добавьте представление объекта [итемемаил](../resources/itememail.md) в формате JSON.
 
-В таблице ниже приведены свойства, которые можно установить при создании нового [объекта itemEmail](../resources/itememail.md) в профиле [пользователя.](../resources/profile.md)
+В следующей таблице приведены свойства, которые можно задать при создании нового объекта [итемемаил](../resources/itememail.md) в [профиле](../resources/profile.md)пользователя.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |address|String|Сам адрес электронной почты.|
-|allowedAudiences|String|Аудитории, которые могут просматривать значения, содержащиеся в сущности. Наследуется от [itemFacet.](../resources/itemfacet.md) Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|displayName|String|Имя или метка, сопоставленные пользователем с определенным адресом электронной почты.|
-|inference|[inferenceData](../resources/inferencedata.md)|Содержит подробные данные о подобных значениях, если сущность задана созданием или изменением приложения. Наследуется от [itemFacet.](../resources/itemfacet.md)|
-|source|[personDataSource](../resources/persondatasource.md)|Где значения инициированы при синхронизации из другой службы. Наследуется от [itemFacet.](../resources/itemfacet.md)|
-|type|emailType|Тип адреса электронной почты. Возможные значения: `unknown`, `work`, `personal`, `main`, `other`.|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|String|Имя или метка, с которыми пользователь связан с определенным адресом электронной почты.|
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|type|емаилтипе|Тип адреса электронной почты. Возможные значения: `unknown`, `work`, `personal`, `main`, `other`.|
 
 
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код `201 Created` ответа [и объект itemEmail](../resources/itememail.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [итемемаил](../resources/itememail.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -137,3 +137,5 @@ Content-Type: application/json
   "type": null
 }
 ```
+
+

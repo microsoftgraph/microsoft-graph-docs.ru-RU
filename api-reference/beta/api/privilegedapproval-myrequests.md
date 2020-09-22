@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 8be41edff2c2c9163f26238ef0dd23bb61ea5170
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: f873b46bb1d598e95f01302c8b84a7146c29dc0b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218803"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035213"
 ---
 # <a name="privilegedapproval-myrequests"></a>Привилежедаппровал: Мирекуестс
 
@@ -45,7 +45,7 @@ GET /privilegedApproval/myRequests
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [привилежедаппровал](../resources/privilegedapproval.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [привилежедаппровал](../resources/privilegedapproval.md) в тексте отклика.
 
 Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
 
@@ -112,3 +112,5 @@ Content-length: 193
   ]
 }
 -->
+
+

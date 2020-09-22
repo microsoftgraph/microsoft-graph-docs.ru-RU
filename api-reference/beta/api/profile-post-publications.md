@@ -1,21 +1,21 @@
 ---
 title: Создание публикаций
-description: Создание объекта публикации.
+description: Создайте новый объект публикации.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 75692418ae2d54650f4ae6c616c727fab5b040e2
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 6e6992fa3bd871a3e80c7c9a949461d788e6926f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46819749"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034366"
 ---
-# <a name="create-itempublication"></a>Создание элемента itemPublication
+# <a name="create-itempublication"></a>Создание Итемпубликатион
 Пространство имен: microsoft.graph
 
-Создание объекта [itemPublication](../resources/itempublication.md) в профиле [пользователя.](../resources/profile.md)
+Создание нового объекта [итемпубликатион](../resources/itempublication.md) в [профиле](../resources/profile.md)пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,8 +23,8 @@ ms.locfileid: "46819749"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL |
+| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL |
 | Для приложений                            | User.ReadWrite.All                            |
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,30 +44,30 @@ POST /users/{id | userPrincipalName}/profile/publications
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса добавьте представление объекта [itemPublication в формате JSON.](../resources/itempublication.md)
+В тексте запроса добавьте представление объекта [итемпубликатион](../resources/itempublication.md) в формате JSON.
 
-В таблице ниже приведены свойства, которые можно установить при создании нового [объекта itemPublication](../resources/itempublication.md) в профиле [пользователя.](../resources/profile.md)
+В следующей таблице приведены свойства, которые можно задать при создании нового объекта [итемпубликатион](../resources/itempublication.md) в [профиле](../resources/profile.md)пользователя.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут просматривать значения, содержащиеся в сущности. Наследуется от [itemFacet.](../resources/itemfacet.md) Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|createdBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя или приложения, создавшего сущность. Наследуется от [itemFacet.](../resources/itemfacet.md)|
-|createdDateTime|DateTimeOffset|Предоставляет dateTimeOffset, когда был создан объект. Наследуется от [itemFacet.](../resources/itemfacet.md)|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|createdBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, создавшего сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|createdDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
 |description    |String      |Описание публикации.                   |
 |displayName    |String      |Название публикации.                         |
-|id|String|Идентификатор, используемый для индивидуального адресации сущности. Наследуется от [сущности](../resources/entity.md)|
-|inference|[inferenceData](../resources/inferencedata.md)|Содержит подробные данные о подобных значениях, если сущность задана созданием или изменением приложения. Наследуется от [itemFacet.](../resources/itemfacet.md)|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя или приложения, изменившего сущность. Наследуется от [itemFacet.](../resources/itemfacet.md)|
-|lastModifiedDateTime|DateTimeOffset|Предоставляет dateTimeOffset, когда был создан объект. Наследуется от [itemFacet.](../resources/itemfacet.md)|
-|publishedDate  |Дата        |Дата публикации публикации.      |
+|id|String|Идентификатор, используемый для индивидуальной адресации объекта. Наследуется от [объекта](../resources/entity.md)|
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|Предоставляет идентификатор пользователя и/или приложения, которое последним изменил объект. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|lastModifiedDateTime|DateTimeOffset|Предоставляет значение dateTimeOffset для объекта, когда была создана сущность. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|публишеддате  |Дата        |Дата публикации публикации.      |
 |publisher      |String      |Публикация или издатель для публикации.     |
-|source|[personDataSource](../resources/persondatasource.md)|Где значения инициированы при синхронизации из другой службы. Наследуется от [itemFacet.](../resources/itemfacet.md)|
-|thumbnailUrl   |String      |URL-адрес ссылается на эскиз публики.   |
-|webUrl         |String      |URL-адрес, ссылающиеся на публикацию.                  |
+|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|thumbnailUrl   |String      |URL-адрес, ссылающийся на эскиз публикации.   |
+|webUrl         |String      |URL-адрес, ссылающийся на публикацию.                  |
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код `201 Created` ответа [и объект itemPublication](../resources/itempublication.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [итемпубликатион](../resources/itempublication.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -148,3 +148,5 @@ Content-Type: application/json
   "webUrl": "https://www.iabm.io"
 }
 ```
+
+

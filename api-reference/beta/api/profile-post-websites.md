@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: becee4f5812c339bb7149b18b57def91b1a4e695
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7a5d3dc4e3558e936aa299a8c93a8a62337e9a20
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810061"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034338"
 ---
 # <a name="create-personwebsite"></a>Создание Персонвебсите
 
@@ -62,7 +62,7 @@ POST /users/{id | userPrincipalName}/profile/websites
 |source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
 |webUrl|String|Содержит ссылку на сам веб-сайт.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый объект [персонвебсите](../resources/personwebsite.md) в тексте отклика.
 
@@ -151,3 +151,5 @@ Content-type: application/json
   "webUrl": "www.lyndamer.no"
 }
 ```
+
+

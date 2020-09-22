@@ -1,18 +1,18 @@
 ---
-title: Получение Принтершаре
+title: Получение printerShare
 description: Получение свойств и связей общего ресурса принтера.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 3a7bb0ba278917962660d2e4fdfc54424b9cf7cd
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: c34a3a0c0e425035d71108c98aed7c2aa75c3333
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674297"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035514"
 ---
-# <a name="get-printershare"></a>Получение Принтершаре
+# <a name="get-printershare"></a>Получение printerShare
 
 Пространство имен: microsoft.graph
 
@@ -109,3 +109,5 @@ Content-length: 225
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

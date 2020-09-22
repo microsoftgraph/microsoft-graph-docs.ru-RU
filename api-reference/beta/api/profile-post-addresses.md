@@ -1,21 +1,21 @@
 ---
 title: Создание адресов
-description: Создание объекта addresses.
+description: Создайте новый объект Addresses.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 2dab94f8aefe12a073041ade6a6deedcee07f8ab
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 5c3c51d51926fa896a6f83b71f046692651bcc6e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46820265"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034533"
 ---
 # <a name="create-addresses"></a>Создание адресов
 Пространство имен: microsoft.graph
 
-Создание объекта [itemAddress](../resources/itemaddress.md) в профиле [пользователя.](../resources/profile.md)
+Создание нового объекта [итемаддресс](../resources/itemaddress.md) в [профиле](../resources/profile.md)пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,8 +23,8 @@ ms.locfileid: "46820265"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL |
+| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL |
 | Для приложений                            | User.ReadWrite.All                            |
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,21 +44,21 @@ POST /users/{id | userPrincipalName}/profile/addresses
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса добавьте представление объекта [itemAddress в формате JSON.](../resources/itemaddress.md)
+В тексте запроса добавьте представление объекта [итемаддресс](../resources/itemaddress.md) в формате JSON.
 
-В приведенной ниже таблице показаны свойства, которые можно установить при создании [нового объекта itemAddress](../resources/itemaddress.md) в профиле [пользователя.](../resources/profile.md)
+В следующей таблице приведены свойства, которые можно задать при создании нового объекта [итемаддресс](../resources/itemaddress.md) в [профиле](../resources/profile.md)пользователя.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут просматривать значения, содержащиеся в сущности. Наследуется от [itemFacet.](../resources/itemfacet.md) Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|detail|[physicalAddress](../resources/physicaladdress.md)|Сведения о самом адресе.|
-|displayName|String|Понятное имя, назначенное пользователю на этот адрес. |
-|geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|Геоокопдии адреса.|
-|inference|[inferenceData](../resources/inferencedata.md)|Содержит подробные данные о подобных значениях, если сущность задана созданием или изменением приложения. Наследуется от [itemFacet.](../resources/itemfacet.md)|
-|source|[personDataSource](../resources/persondatasource.md)|Где значения инициированы при синхронизации из другой службы. Наследуется от [itemFacet.](../resources/itemfacet.md)|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|описаны|[physicalAddress](../resources/physicaladdress.md)|Сведения о самом адресе.|
+|displayName|String|Понятное имя, назначенное пользователю для этого адреса. |
+|geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|Геокоординаты адреса.|
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код `201 Created` ответа [и объект itemAddress](../resources/itemaddress.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [итемаддресс](../resources/itemaddress.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -148,3 +148,5 @@ Content-Type: application/json
   "geoCoordinates": null
 }
 ```
+
+

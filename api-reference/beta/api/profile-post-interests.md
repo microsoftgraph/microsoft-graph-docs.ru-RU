@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: People
 doc_type: apiPageType
-ms.openlocfilehash: a53e551c5a7e1704754a72b0686481ae4129b2f8
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 7428f696db38815d025f8e9fe56510489713b7f8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812178"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034494"
 ---
 # <a name="create-personinterest"></a>Создание Персонинтерест
 
@@ -63,7 +63,7 @@ POST /users/{id | userPrincipalName}/profile/interests
 |source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
 |webUrl|String|Содержит ссылку на веб-страницу или ресурс, представляющие интерес. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [персонинтерест](../resources/personinterest.md) в тексте отклика.
 
@@ -154,3 +154,5 @@ Content-type: application/json
   "collaborationTags": null
 }
 ```
+
+

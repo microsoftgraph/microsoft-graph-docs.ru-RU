@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: efaa5ae2fbf0f2a9089352a97285780f38c1b713
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: a3dcdff7395d3ec531dec9fd38686430c707995a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218775"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035178"
 ---
 # <a name="get-privilegedrole"></a>Получение privilegedRole
 
@@ -46,10 +46,10 @@ GET /privilegedRoleAssignments/{id}/roleInfo
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [привилежедроле](../resources/privilegedrole.md) в тексте отклика.
 
@@ -111,3 +111,5 @@ Content-length: 46
   ]
 }
 -->
+
+

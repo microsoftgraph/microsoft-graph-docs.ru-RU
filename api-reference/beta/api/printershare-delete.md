@@ -1,18 +1,18 @@
 ---
-title: Удаление Принтершаре
+title: Удаление printerShare
 description: Удаление общего принтера (отменяйте общий доступ к связанному принтеру). Это действие невозможно отменить. Если к принтеру предоставлен общий доступ в будущем, все пользователи Windows, на которых ранее устанавливался принтер, должны обнаружить и повторно установить его.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 312a5e9a3cdfd8c03c4c7dae3d2d712c7c374248
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: f86270c9662ed74204cf193c35b57a12060a4e73
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673940"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035521"
 ---
-# <a name="delete-printershare"></a>Удаление Принтершаре
+# <a name="delete-printershare"></a>Удаление printerShare
 
 Пространство имен: microsoft.graph
 
@@ -27,7 +27,7 @@ ms.locfileid: "46673940"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Принтершаре. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись)| PrinterShare.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -93,3 +93,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 064fe66ca6939246cb8dcddafb0564641d3a2a71
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: f053dcbf93c4a933b4a4de4ea096621e7cb720e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218698"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034975"
 ---
 # <a name="create-privilegedroleassignment"></a>Создание privilegedRoleAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "43218698"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API для создания нового [привилежедролеассигнмент](../resources/privilegedroleassignment.md).
+Используйте этот API для создания нового  [привилежедролеассигнмент](../resources/privilegedroleassignment.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -40,12 +40,12 @@ POST /privilegedRoleAssignments
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [привилежедролеассигнмент](../resources/privilegedroleassignment.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [привилежедролеассигнмент](../resources/privilegedroleassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [привилежедролеассигнмент](../resources/privilegedroleassignment.md) в тексте отклика.
 
 Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
 ## <a name="example"></a>Пример
@@ -82,7 +82,7 @@ Content-length: 164
 ---
 
 В тексте запроса добавьте представление объекта [привилежедролеассигнмент](../resources/privilegedroleassignment.md) в формате JSON.
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -117,3 +117,5 @@ Content-length: 184
   ]
 }
 -->
+
+

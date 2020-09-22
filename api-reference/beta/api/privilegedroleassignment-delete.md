@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 5d4163b8932278a4679ca553875ccf8658a925d9
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 727d3d1f061f01196ac6382ca80f8d9a3c0c8000
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218740"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035080"
 ---
 # <a name="delete-privilegedroleassignment"></a>Удаление privilegedRoleAssignment
 
@@ -37,17 +37,17 @@ ms.locfileid: "43218740"
 DELETE /privilegedRoleAssignments/{id}
 ```
 
-Обратите ``{id}`` внимание, что используется формат "userId_roleId", где UserID — это строка GUID для идентификатора пользователя Azure AD, а roleId — строка GUID для идентификатора роли администратора Azure.
+Обратите внимание, что ``{id}`` используется формат "userId_roleId", где UserID — это строка GUID для идентификатора пользователя Azure AD, а roleId — строка GUID для идентификатора роли администратора Azure.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -101,3 +101,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

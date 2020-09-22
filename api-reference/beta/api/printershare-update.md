@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: bde00fc44cfba539ff830f4a6f8e7338e8743822
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 6d4b7e578fcf9436678442c86608f05fef77fb1d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674227"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035490"
 ---
 # <a name="update-printershare"></a>Обновление принтершаре
 
@@ -29,7 +29,7 @@ ms.locfileid: "46674227"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Принтершаре. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись)| PrinterShare.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -119,3 +119,5 @@ Content-length: 225
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

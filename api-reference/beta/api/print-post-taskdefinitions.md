@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: ddb46164cdd8012473aa87163cbdebe301ad9358
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: c16c38fd2c93a88e58d0f487f3ec9b4dca3bf5f0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46566433"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035915"
 ---
 # <a name="create-taskdefinition"></a>Создание taskDefinition
 
@@ -31,7 +31,7 @@ ms.locfileid: "46566433"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Принттаскдефинитион. ReadWrite. ALL |
+|Для приложений| PrintTaskDefinition.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -124,3 +124,5 @@ Content-length: 322
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

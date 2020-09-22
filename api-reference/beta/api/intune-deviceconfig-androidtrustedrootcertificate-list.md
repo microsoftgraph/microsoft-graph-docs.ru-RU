@@ -3,14 +3,14 @@ title: Список Андроидтрустедрутцертификатес
 description: Список свойств и связей объектов Андроидтрустедрутцертификате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aa7d5d69716fe207f6d29ce10b807cb7a7ebd284
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a210e247fdfc9f5e739f5f9e15e568273e7a1b4c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43344150"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036634"
 ---
 # <a name="list-androidtrustedrootcertificates"></a>Список Андроидтрустедрутцертификатес
 
@@ -44,13 +44,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [андроидтрустедрутцертификате](../resources/intune-deviceconfig-androidtrustedrootcertificate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -109,6 +109,9 @@ Content-Length: 1481
   ]
 }
 ```
+
+
+
 
 
 

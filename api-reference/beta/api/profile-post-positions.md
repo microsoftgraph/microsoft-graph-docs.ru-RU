@@ -1,24 +1,24 @@
 ---
-title: Создание объекта workPosition
-description: С помощью этого API можно создать объект workPosition.
+title: Создание Воркпоситион
+description: Используйте этот API для создания нового Воркпоситион.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 178752d0a3b504c3edd160b321043e3194aab314
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: 27410dbdd7b059e24bce0d532ebbd05381ac6aba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46820356"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034429"
 ---
-# <a name="create-workposition"></a>Создание объекта workPosition
+# <a name="create-workposition"></a>Создание Воркпоситион
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-С помощью этого API можно создать [объект workPosition](../resources/workposition.md) в профиле [пользователя.](../resources/profile.md)
+Используйте этот API, чтобы создать новый [воркпоситион](../resources/workposition.md) в [профиле](../resources/profile.md)пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,8 +26,8 @@ ms.locfileid: "46820356"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All          |
-| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All          |
+| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL          |
+| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL          |
 | Для приложений                            | User.ReadWrite.All                          |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,24 +48,24 @@ POST /users/{id | userPrincipalName}/profile/positions
 
 ## <a name="request-body"></a>Текст запроса
 
-Представьте в тексте запроса описание объекта [workPosition в формате](../resources/workposition.md) JSON.
+В тексте запроса добавьте представление объекта [воркпоситион](../resources/workposition.md) в формате JSON.
 
-В приведенной ниже таблице указаны свойства, которые можно задать при создании нового [объекта workPosition](../resources/workPosition.md) в профиле [пользователя.](../resources/profile.md)
+В следующей таблице приведены свойства, которые можно задать при создании нового объекта [воркпоситион](../resources/workPosition.md) в [профиле](../resources/profile.md)пользователя.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут просматривать значения, содержащиеся в сущности. Наследуется от [itemFacet.](../resources/itemfacet.md) Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|categories|Коллекция String|Категории, связанные с данным положением пользователя.|
-|коллеги|[Коллекция relatedPerson](../resources/relatedperson.md)|Коллеги, связанные с этой позицией.|
-|detail|[positionDetail](../resources/positiondetail.md)|Содержит подробные сведения о положении. |
-|inference|[inferenceData](../resources/inferencedata.md)|Содержит подробные данные о подобных значениях, если сущность задана созданием или изменением приложения. Наследуется от [itemFacet.](../resources/itemfacet.md)|
-|isCurrent|Boolean|Указывает, является ли положение текущей.|
-|manager|[relatedPerson](../resources/relatedperson.md)|Содержит сведения о руководителе пользователя в этом положении.|
-|source|[personDataSource](../resources/persondatasource.md)|Где значения инициированы при синхронизации из другой службы. Наследуется от [itemFacet.](../resources/itemfacet.md)|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|categories|Коллекция String|Категории, связанные с этим положением пользователя.|
+|коллег|Коллекция [релатедперсон](../resources/relatedperson.md)|Коллеги, связанные с этой позицией.|
+|описаны|[поситиондетаил](../resources/positiondetail.md)|Содержит подробные сведения о позиции. |
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|по току|Boolean|Указывает, является ли должность текущей.|
+|manager|[релатедперсон](../resources/relatedperson.md)|Содержит сведения о руководителе пользователя в этой позиции.|
+|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код `201, Created` ответа и [новый объект workPosition](../resources/workposition.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый объект [воркпоситион](../resources/workposition.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -188,3 +188,5 @@ Content-type: application/json
   "isCurrent": true
 }
 ```
+
+

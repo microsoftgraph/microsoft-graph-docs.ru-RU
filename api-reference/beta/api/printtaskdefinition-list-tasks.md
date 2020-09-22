@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 93501ddef6d24432f6569e535ef3231bafe4dd51
-ms.sourcegitcommit: 496410c1e256aa093eabf27f17e820d9ee91a293
+ms.openlocfilehash: 0bb661870b69565d1f692dc2d5406224112968d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46565223"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035345"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 
@@ -31,7 +31,7 @@ ms.locfileid: "46565223"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Принттаскдефинитион. ReadWrite. ALL |
+|Для приложений| PrintTaskDefinition.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -122,3 +122,5 @@ Content-length: 429
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

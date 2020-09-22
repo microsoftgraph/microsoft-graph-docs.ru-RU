@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса Аусентикатионфловсполици
-description: 'Представляет конфигурацию политики взаимодействия с самостоятельной регистрацией на уровне клиента, с помощью которой внешние пользователи могут подписаться на утверждение. '
+title: Тип ресурса authenticationFlowsPolicy
+description: 'Представляет конфигурацию политики для интерфейса самостоятельной регистрации на уровне клиента, которая позволяет внешним пользователям запрашивать утверждение регистрации. '
 author: linkhp
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 263b92c081545fc3ce337d25b4813d85fe034940
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
-ms.translationtype: Auto
+ms.openlocfilehash: a676014ba6d31ffea08331342504629796f49ec8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556462"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034133"
 ---
-# <a name="authenticationflowspolicy-resource-type"></a>Тип ресурса Аусентикатионфловсполици
+# <a name="authenticationflowspolicy-resource-type"></a>Тип ресурса authenticationFlowsPolicy
 
 
 Пространство имен: microsoft.graph
 
-Представляет [конфигурацию политики взаимодействия с самостоятельной регистрацией](../resources/selfservicesignupauthenticationflowconfiguration.md) на уровне клиента, с помощью которой внешние пользователи могут подписаться на утверждение. Он содержит сведения об ИДЕНТИФИКАТОРе, отображаемое имя и описание, а также указывает, включена ли функция регистрации самостоятельных служб для этой политики.
+Представляет [конфигурацию политики для интерфейса самостоятельной регистрации](../resources/selfservicesignupauthenticationflowconfiguration.md) на уровне клиента, которая позволяет внешним пользователям запрашивать утверждение регистрации. Содержит сведения об идентификаторе, отображаемое имя и описание, а также указывает, включена ли самостоятельная регистрация для политики.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:-------|:---|:----------|
-|id|String| Унаследованное свойство. Идентификатор политики потоков проверки подлинности. Необязательное свойство. Только для чтения.
-|displayName|Строка| Унаследованное свойство. Понятное для человека имя политики. Это свойство не является ключом. Необязательное свойство. Только для чтения.|
-|description|String|Унаследованное свойство. Описание политики. Это свойство не является ключом. Необязательное свойство. Только для чтения.|
-|селфсервицесигнуп|[селфсервицесигнупаусентикатионфловконфигуратион](../resources/selfservicesignupauthenticationflowconfiguration.md) |Содержит параметры [селфсервицесигнупаусентикатионфловконфигуратион](../resources/selfservicesignupauthenticationflowconfiguration.md) , которые сообщают, включена или отключена самостоятельная регистрация. Это свойство не является ключом. Необязательное свойство. Только для чтения. |
+|id|Строка| Унаследованное свойство. Идентификатор политики потоков проверки подлинности. Необязательно. Только для чтения.
+|displayName|Строка| Унаследованное свойство. Понятное для пользователя имя политики. Это свойство не является ключевым. Необязательно. Только для чтения.|
+|description|Строка|Унаследованное свойство. Описание политики. Это свойство не является ключевым. Необязательно. Только для чтения.|
+|selfServiceSignUp|[selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md) |Содержит параметры [selfServiceSignUpAuthenticationFlowConfiguration](../resources/selfservicesignupauthenticationflowconfiguration.md), описывающие, включена ли самостоятельная регистрация. Это свойство не является ключевым. Необязательно. Только для чтения. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
@@ -51,3 +51,5 @@ ms.locfileid: "44556462"
   },
 }
 ```
+
+

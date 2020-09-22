@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a3fd5a9a98ad0d9405bce059d8d3a47cef969b98
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 9a7812e313c4be3397c92ae0956a14c11d6bcdf5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673723"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034198"
 ---
 # <a name="authenticationdetail-resource-type"></a>Тип ресурса Аусентикатиондетаил
 
@@ -64,3 +64,4 @@ ms.locfileid: "46673723"
   "section": "documentation",
   "tocPath": ""
 }-->
+

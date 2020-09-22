@@ -1,18 +1,18 @@
 ---
-title: Получение Тасктригжер
+title: Получение taskTrigger
 description: Получение триггера задачи для принтера.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: aeb7d5481a550ac3e9223023aaef92ed009eb85e
-ms.sourcegitcommit: 8a74c06be9c41390331ca1717efedc5b5a244db5
-ms.translationtype: Auto
+ms.openlocfilehash: c24e5207b1bb9b791a98c1d5c87971797b807809
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091669"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035269"
 ---
-# <a name="get-tasktrigger"></a>Получение Тасктригжер
+# <a name="get-tasktrigger"></a>Получение taskTrigger
 
 Пространство имен: microsoft.graph
 
@@ -44,7 +44,7 @@ GET /print/printers/{id}/taskTriggers/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [принттасктригжер](../resources/printtasktrigger.md) в тексте отклика.
@@ -52,6 +52,8 @@ GET /print/printers/{id}/taskTriggers/{id}
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_printer_tasktrigger"
@@ -59,6 +61,20 @@ GET /print/printers/{id}/taskTriggers/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/{printerId}/taskTriggers/{taskTriggerId}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-printer-tasktrigger-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-printer-tasktrigger-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-printer-tasktrigger-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -91,3 +107,5 @@ Content-length: 181
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

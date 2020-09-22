@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: b63670598715d66e7c358a06f84ccb4a13bddafd
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: dc5baca4bd77065785792d5ab0098f75bfcca94b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218810"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035227"
 ---
 # <a name="list-privilegedapproval"></a>Перечисление privilegedApproval
 
@@ -44,10 +44,10 @@ GET /privilegedApproval
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [привилежедаппровал](../resources/privilegedapproval.md) в тексте отклика.
 
@@ -119,3 +119,5 @@ Content-length: 246
   ]
 }
 -->
+
+

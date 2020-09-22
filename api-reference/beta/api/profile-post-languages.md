@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ca294f73e9fbac6ea08305f8a85a3688de82b455
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 1378c275356360f07499468901fb2ab03afe9fd1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811632"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034490"
 ---
 # <a name="create-languageproficiency"></a>Создание ЛангуажепрофиЦиенци
 
@@ -152,3 +152,5 @@ Content-type: application/json
   "reading": "nativeOrBilingual"
 }
 ```
+
+

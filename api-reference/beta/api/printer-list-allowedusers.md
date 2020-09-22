@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 9cbe7e0c352ab24ccf66283db3c3fd4e1e4dd354
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: fe7aaadc66281d85dd3930677ca81dbad18163bd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673751"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035738"
 ---
 # <a name="list-allowedusers-for-printer"></a>Список Алловедусерс для принтера
 
@@ -110,3 +110,5 @@ Content-length: 286
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

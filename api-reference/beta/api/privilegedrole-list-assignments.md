@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 8474466bf1d2287535dfd7cbe16a1ab1a5ffbd22
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: f3e0fd9b4d15fedd4b12f9118257dcc46a57c2d8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218770"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035164"
 ---
 # <a name="list-assignments"></a>Перечисление заданий
 
@@ -37,7 +37,7 @@ ms.locfileid: "43218770"
 GET /privilegedRoles/{id}/assignments
 ```
 
-Обратите ``{id}`` внимание, что это идентификатор целевой роли.
+Обратите внимание, что ``{id}`` это идентификатор целевой роли.
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
@@ -46,10 +46,10 @@ GET /privilegedRoles/{id}/assignments
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [привилежедролеассигнмент](../resources/privilegedroleassignment.md) в тексте отклика.
 
@@ -120,3 +120,5 @@ Content-length: 237
   ]
 }
 -->
+
+

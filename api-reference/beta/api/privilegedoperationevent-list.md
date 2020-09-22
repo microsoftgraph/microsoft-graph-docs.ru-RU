@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: e0fc6347b273a046b202aecd803434d0f6fa0af8
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 28e7340aa3875835d1b6b84e0f4c09bd19700486
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218782"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035185"
 ---
 # <a name="list-privilegedoperationevents"></a>Список Привилежедоператионевентс
 
@@ -18,7 +18,7 @@ ms.locfileid: "43218782"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [привилежедоператионевент](../resources/privilegedoperationevent.md) , представляющих события аудита, которые создаются с помощью привилегированного управления удостоверениями для операций с ролями. Сведения о событии аудита содержатся в разделе [привилежедоператионевент](../resources/privilegedoperationevent.md). Чтобы отфильтровать результаты запроса, используйте стандартное выражение ``$filter`` OData.
+Получение списка объектов [привилежедоператионевент](../resources/privilegedoperationevent.md) , представляющих события аудита, которые создаются с помощью привилегированного управления удостоверениями для операций с ролями. Сведения о событии аудита содержатся в разделе [привилежедоператионевент](../resources/privilegedoperationevent.md). Чтобы отфильтровать результаты запроса, используйте стандартное ``$filter`` выражение OData.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -47,10 +47,10 @@ GET /privilegedOperationEvents
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [привилежедоператионевент](../resources/privilegedoperationevent.md) в тексте отклика.
 
@@ -59,14 +59,14 @@ GET /privilegedOperationEvents
 
 ### <a name="get-audit-events-for-role-assignment-operations"></a>Получение событий аудита для операций назначения ролей
 ##### <a name="request"></a>Запрос
-В приведенном ниже примере показан запрос на получение событий аудита для операций с назначением ролей. В этом случае ``requestType`` значение равно ``Assign``.
+В приведенном ниже примере показан запрос на получение событий аудита для операций с назначением ролей. В этом случае ``requestType`` значение равно ``Assign`` .
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Assign'
 ```
 ##### <a name="response"></a>Отклик
-Ниже показан пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приводится пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -119,14 +119,14 @@ Content-length: 547
 ```
 ### <a name="get-audit-events-for-the-operations-of-self-role-activation-and-makepermanent"></a>Получение событий аудита для операций активации и Макеперманент в роли самоконтроля
 ##### <a name="request"></a>Запрос
-В приведенном ниже примере показан запрос на получение событий аудита для операций активации и Макеперманент. В этом случае ``requestType`` значение равно ``Activate``.
+В приведенном ниже примере показан запрос на получение событий аудита для операций активации и Макеперманент. В этом случае ``requestType`` значение равно ``Activate`` .
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Activate'
 ```
 ##### <a name="response"></a>Отклик
-Ниже показан пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приводится пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -180,14 +180,14 @@ Content-length: 547
 
 ### <a name="get-audit-events-for-role-assignment-deactivation"></a>Получение событий аудита для отключения назначения ролей
 ##### <a name="request"></a>Запрос
-В приведенном ниже примере показан запрос на получение событий аудита для деактивации назначения роли. В этом случае ``requestType`` значение равно ``Deactivate``.
+В приведенном ниже примере показан запрос на получение событий аудита для деактивации назначения роли. В этом случае ``requestType`` значение равно ``Deactivate`` .
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Deactivate'
 ```
 ##### <a name="response"></a>Отклик
-Ниже показан пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приводится пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -230,7 +230,7 @@ Content-length: 547
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=(creationDateTime%20ge%202017-06-25T07:00:00Z)%20and%20(creationDateTime%20le%202017-07-25T17:30:17Z)&$count=true&$orderby=creationDateTime%20desc
 ```
 ##### <a name="response"></a>Отклик
-Ниже показан пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приводится пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -295,3 +295,5 @@ Content-length: 547
   "suppressions": []
 }
 -->
+
+

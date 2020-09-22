@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: dc8da38c9da8d6631e8e46199f420ae0b3ab652e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 93b5490048c149ca526a9c3d0024175c1c20d7e7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507585"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033932"
 ---
 # <a name="companydetail-resource-type"></a>Тип ресурса Компанидетаил
 
@@ -25,8 +25,8 @@ ms.locfileid: "42507585"
 | Свойство       | Тип                                | Описание                                 |
 |:---------------|:------------------------------------|:--------------------------------------------|
 |address         |[physicalAddress](physicaladdress.md)| Адрес компании.                     |
-|отделу;      |String                               | Название отдела в компании.           |
-|displayName     |Строка                               | Название компании.                               |
+|department      |String                               | Название отдела в компании.           |
+|displayName     |String                               | Название компании.                               |
 |officeLocation  |String                               | Местонахождение комнаты для пользователя, на который ссылается.  |
 |произношение   |String                               | Рекомендации по произношению названия компании.   |
 |webUrl          |String                               | Ссылка на домашнюю страницу компании.              |
@@ -64,3 +64,4 @@ ms.locfileid: "42507585"
   "section": "documentation",
   "tocPath": ""
 }-->
+

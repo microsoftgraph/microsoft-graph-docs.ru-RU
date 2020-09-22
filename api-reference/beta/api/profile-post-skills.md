@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 1943b28688af983aa0bd78db1b18df246867962d
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: a13713904da19cc4b13729633e63e81275596833
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810064"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034359"
 ---
 # <a name="create-skillproficiency"></a>Создание СкиллпрофиЦиенци
 
@@ -63,7 +63,7 @@ POST /users/{id | userPrincipalName}/profile/skills
 |source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
 |webUrl|String|Содержит ссылку на источник информации о навыке. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый объект [скиллпрофиЦиенци](../resources/skillproficiency.md) в тексте отклика.
 
@@ -155,3 +155,5 @@ Content-Type: application/json
   ]
 }
 ```
+
+

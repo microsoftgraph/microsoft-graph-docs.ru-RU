@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 7a73777ae8477275e9071645ce092ca1a4187527
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 664079223e9dc6fe685ad52d0112f74cb4264aab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507592"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48033946"
 ---
 # <a name="commsoperation-resource-type"></a>Тип ресурса Коммсоператион
 
@@ -31,7 +31,7 @@ ms.locfileid: "42507592"
 | Свойство           | Тип                        | Описание                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
 | Контекст      | String                      | Уникальная строка контекста клиента. Максимальный лимит — 256 символов.                           |
-| id                 | Строка                      | ИДЕНТИФИКАТОР операции. Только для чтения.                                                    |
+| id                 | String                      | ИДЕНТИФИКАТОР операции. Только для чтения.                                                    |
 | resultInfo         | [resultInfo](resultinfo.md) | Сведения о результате. Только для чтения.                                              |
 | status             | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |
 
@@ -70,3 +70,5 @@ ms.locfileid: "42507592"
   "suppressions": []
 }
 -->
+
+

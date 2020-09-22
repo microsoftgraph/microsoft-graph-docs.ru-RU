@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 31500e00e4c53b272a24c333e39ec425a782970a
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 5d895dd5d3bcc9c4cb83d91d1ed59cb00112d645
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218684"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034961"
 ---
 # <a name="list-privilegedroleassignmentrequests"></a>Список Привилежедролеассигнментрекуестс
 
@@ -45,10 +45,10 @@ GET /privilegedRoleAssignmentRequests
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -119,3 +119,5 @@ Content-length: 304
   ]
 }
 -->
+
+

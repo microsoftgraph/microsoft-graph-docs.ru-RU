@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: afc7251bafdb6570eca801abc41ff39216d7381b
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 0184824c47bc13120122df15b4c2473e0ad3cb12
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218670"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034940"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Создание Привилежедролеассигнментрекуест
 
@@ -40,18 +40,18 @@ POST /privilegedRoleAssignmentRequests
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md) в формате JSON. 
 
 | Свойство     | Тип    |  Описание|
 |:---------------|:--------|:----------|
 |roleId|String|Идентификатор роли. Обязательное.|
-|type|String|Представляет тип операции для назначения роли. Возможные значения `AdminAdd`: администраторы добавляют пользователей к ролям; `UserAdd`: Пользователи добавляют назначения ролей. Обязательный.|
+|type|String|Представляет тип операции для назначения роли. Возможные значения `AdminAdd` : администраторы добавляют пользователей к ролям; `UserAdd` : пользователи добавляют назначения ролей. Обязательный.|
 |ассигнментстате|String|Состояние назначения. Значение может быть `Eligible` для правого назначения `Active` , если оно напрямую назначено `Active` администраторами или активировано в соответствии с подходящими пользователями. Возможные значения: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Обязательный.|
 |reason|String|Необходимо указать причину для запроса на назначение роли для аудита и проверки.|
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|Расписание запроса на назначение роли.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md) в тексте отклика.
 
 ### <a name="error-codes"></a>Коды ошибок
@@ -165,3 +165,5 @@ Content-length: 304
   ]
 }
 -->
+
+

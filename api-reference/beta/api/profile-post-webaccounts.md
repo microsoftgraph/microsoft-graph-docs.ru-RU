@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b1bcf743737616ac5c48d3b8c3132b57d11464ac
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 23990dd1022985a91953d714eeab5f886b5cca6d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46812199"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034352"
 ---
 # <a name="create-webaccount"></a>Создание учетной записи
 
@@ -63,7 +63,7 @@ POST /users/{id | userPrincipalName}/profile/webAccounts
 |userId|String|Имя пользователя, отображаемое для учетной записи Account.  |
 |webUrl|String|Содержит ссылку на профиль пользователя в облачной службе, если она существует.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201, Created` код отклика и новый объект [учетной записи](../resources/webaccount.md) в тексте отклика.
 
@@ -156,3 +156,5 @@ Content-type: application/json
   "webUrl": "https://github.com/innocenty.popov"
 }
 ```
+
+

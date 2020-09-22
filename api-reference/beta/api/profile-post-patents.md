@@ -1,22 +1,22 @@
 ---
 title: Создание патентов
-description: Создание объекта patents.
+description: Создание нового объекта патентов.
 localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 8345de1ca41dfd5e338b77c667ef06ae4b3bf31c
-ms.sourcegitcommit: 239db9e961e42b505f52de9859963a9136935f2f
+ms.openlocfilehash: b90cd7f5f3775b7aafc9f19ef9c8039488fabc35
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46820301"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034392"
 ---
-# <a name="create-itempatent"></a>Создание itemPatent
+# <a name="create-itempatent"></a>Создание Итемпатент
 
 Пространство имен: microsoft.graph
 
-Создание объекта [itemPatent](../resources/itempatent.md) в профиле [пользователя.](../resources/profile.md)
+Создайте новый объект [итемпатент](../resources/itempatent.md) в [профиле](../resources/profile.md)пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "46820301"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite, User.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | User.ReadWrite, User.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, User. ReadWrite. ALL |
+| Делегированные (личная учетная запись Майкрософт) | User. ReadWrite, User. ReadWrite. ALL |
 | Для приложений                            | User.ReadWrite.All                            |
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,26 +45,26 @@ POST /users/{id | userPrincipalName}/profile/patents
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-Представьте в тексте запроса описание объекта [itemPatent в формате](../resources/itempatent.md) JSON.
+В тексте запроса добавьте представление объекта [итемпатент](../resources/itempatent.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые можно установить при создании нового [объекта itemPatent](../resources/itempatent.md) в профиле [пользователя.](../resources/profile.md)
+В следующей таблице приведены свойства, которые можно задать при создании нового объекта [итемпатент](../resources/itempatent.md) в [профиле](../resources/profile.md)пользователя.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAudiences|String|Аудитории, которые могут просматривать значения, содержащиеся в сущности. Наследуется от [itemFacet.](../resources/itemfacet.md) Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|description|String|Почерк и сокращение патентов. |
-|displayName|String|Название патента или филинга. |
-|inference|[inferenceData](../resources/inferencedata.md)|Содержит подробные данные о подобных значениях, если сущность задана созданием или изменением приложения. Наследуется от [itemFacet.](../resources/itemfacet.md)|
-|isPending        |Boolean     |Означает патант утилю на ожидании.        |
-|issuedDate       |Дата        |Дата предоставления патента.   |
-|issuingAuthority |String      |Центр, получивший патент.     |
-|число           |String      |Patent number.                      |
-|source|[personDataSource](../resources/persondatasource.md)|Где значения инициированы при синхронизации из другой службы. Наследуется от [itemFacet.](../resources/itemfacet.md)|
-|webUrl           |String      |URL-адрес ссылается на патент или финансовое указание. |
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|description|String|Дескприптион патента или для хранения. |
+|displayName|String|Название патента или его для архивации. |
+|выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|Ожидается        |Boolean     |Указывает, что патент находится в состоянии ожидания.        |
+|иссуеддате       |Дата        |Дата предоставления патента.   |
+|иссуингаусорити |String      |Центр сертификации, который предоставил патент.     |
+|число           |String      |Номер патента.                      |
+|source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
+|webUrl           |String      |URL-адрес, ссылающийся на патент или в систему архивации. |
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код `201 Created` отклика [и объект itemPatent](../resources/itempatent.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [итемпатент](../resources/itempatent.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -145,3 +145,5 @@ Content-Type: application/json
   "webUrl": "https://patents.gov/3954432633"
 }
 ```
+
+

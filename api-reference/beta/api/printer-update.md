@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 4040174e1f1ad0278dcdfcd1dd94dbe9b6d94b27
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 77e0c59384107c3dce702b2deba9442c24f996c8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674402"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035612"
 ---
 # <a name="update-printer"></a>Обновление принтера
 
@@ -42,9 +42,9 @@ PATCH /print/printers/{id}
 | Имя       | Описание|
 |:-----------|:-----------|
 | Авторизация | Bearer {токен}. Обязательный. |
-| Content-Type  | `application/json` При использовании делегированных разрешений `application/ipp` при использовании разрешений приложения. Обязательный элемент.|
+| Content-Type  | `application/json` При использовании делегированных разрешений `application/ipp` при использовании разрешений приложения. Обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 ### <a name="delegated-permissions-and-json-payload"></a>Делегированные разрешения и полезные данные JSON
 
@@ -182,3 +182,5 @@ Content-length: 1313
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

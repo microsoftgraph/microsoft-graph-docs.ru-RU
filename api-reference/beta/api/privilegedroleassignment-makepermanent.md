@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: c2c041cc23bfe9118d9a4745a69796239952bac8
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: 7f5d98eab91bf6146e82fc9968c654b9843e5a8e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218712"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035045"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>Привилежедролеассигнмент: Макеперманент
 
@@ -43,18 +43,18 @@ POST /privilegedRoleAssignments/{id}/makePermanent
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|reason|string|Необязательный параметр. Причина для совершения звонка.|
-|тиккетнумбер|string|Необязательный параметр. Регистрационный номер, связанный с этим действием.|
-|тиккетсистем|string|Необязательный параметр. Система билетов.|
+|reason|string|Необязательный. Причина для совершения звонка.|
+|тиккетнумбер|string|Необязательный. Регистрационный номер, связанный с этим действием.|
+|тиккетсистем|string|Необязательный. Система билетов.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [привилежедролеассигнмент](../resources/privilegedroleassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [привилежедролеассигнмент](../resources/privilegedroleassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -127,3 +127,5 @@ Content-length: 184
   ]
 }
 -->
+
+

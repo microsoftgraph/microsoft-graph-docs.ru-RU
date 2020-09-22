@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a498f85238127a6816ed5d6597839862cd00f58d
-ms.sourcegitcommit: 2c6e16dd8381945de6adf1eea020c142969b7801
+ms.openlocfilehash: 9d0d9b4f65c8fb99c932348415109fde79370a38
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47319465"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48035402"
 ---
 # <a name="printjob-redirect"></a>printJob: redirect
 
@@ -34,7 +34,7 @@ ms.locfileid: "47319465"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| PrintJob.Manage.All |
+|Для приложений| PrintJob.Manage.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -129,3 +129,5 @@ Content-length: 437
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

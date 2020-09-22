@@ -3,14 +3,14 @@ title: Получение managedDevice
 description: Чтение свойств и связей объекта managedDevice.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 05e8659aed001287d61abb3c572696628ed8da69
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 5922715ff642e5e966468628391338e035ee381e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46789855"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48036606"
 ---
 # <a name="get-manageddevice"></a>Получение managedDevice
 
@@ -29,7 +29,7 @@ ms.locfileid: "46789855"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,13 +52,13 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [managedDevice](../resources/intune-devices-manageddevice.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDev
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8380
+Content-Length: 8455
 
 {
   "value": {
@@ -259,10 +259,15 @@ Content-Length: 8380
     "processorArchitecture": "x86",
     "specificationVersion": "Specification Version value",
     "joinType": "azureADJoined",
-    "skuFamily": "Sku Family value"
+    "skuFamily": "Sku Family value",
+    "skuNumber": 9,
+    "managementFeatures": "microsoftManagedDesktop"
   }
 }
 ```
+
+
+
 
 
 

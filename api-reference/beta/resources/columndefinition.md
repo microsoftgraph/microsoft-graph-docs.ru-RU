@@ -6,12 +6,12 @@ title: ColumnDefinition
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: d36c7460b5ee50a6230cdacc5514e200920e31c4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6b21ae8b85044ea1c0b9fef16c1bb7dd57487040
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507630"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034009"
 ---
 # <a name="columndefinition-resource-type"></a>Тип ресурса columnDefinition
 
@@ -68,10 +68,10 @@ ms.locfileid: "42507630"
 | **columnGroup**         | строка  | Для столбцов сайтов это имя группы, к которой принадлежит данный столбец. Помогает упорядочивать связанные столбцы.
 | **description**         | string  | Описание столбца, которое видит пользователь.
 | **displayName**         | string  | Имя столбца, которое видит пользователь.
-| **enforceUniqueValues** | boolean | Если задано значение true, в соответствующем столбце не может быть нескольких элементов списка с одинаковыми значениями.
-| **hidden**              | boolean | Указывает, отображается ли столбец в пользовательском интерфейсе.
-| **id**                  | строка  | Уникальный идентификатор столбца.
-| **indexed**             | boolean | Указывает, можно ли использовать значения столбцов для сортировки и поиска.
+| **enforceUniqueValues** | логический | Если задано значение true, в соответствующем столбце не может быть нескольких элементов списка с одинаковыми значениями.
+| **hidden**              | логический | Указывает, отображается ли столбец в пользовательском интерфейсе.
+| **id**                  | string  | Уникальный идентификатор столбца.
+| **indexed**             | логический | Указывает, можно ли использовать значения столбцов для сортировки и поиска.
 | **name**                | string  | Используемое в API имя столбца из свойства [fields][] объекта [listItem][]. Имя, которое видит пользователь, указывается в свойстве **displayName**.
 | **readOnly**            | логический    | Указывает, можно ли менять значения в столбце.
 | **required**            | логический | Указывает, является ли значение в столбце обязательным.
@@ -124,3 +124,5 @@ ms.locfileid: "42507630"
   "suppressions": []
 }
 -->
+
+

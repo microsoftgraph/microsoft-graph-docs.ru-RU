@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 674b89cc122c51a4532d445ff8499a4194aa63ab
-ms.sourcegitcommit: bdef75943ade3f1080120f555b67d5ebb3245699
+ms.openlocfilehash: abb1bbd8c7d8c866ab1149d7a3c2ed810dcc4fde
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2020
-ms.locfileid: "43218691"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034989"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>Отмена Привилежедролеассигнментрекуест
 
@@ -41,10 +41,10 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 Ok`. Он возвращает [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md) в тексте отклика.
 
 ### <a name="error-codes"></a>Коды ошибок
@@ -131,3 +131,5 @@ Content-length: 304
   ]
 }
 -->
+
+

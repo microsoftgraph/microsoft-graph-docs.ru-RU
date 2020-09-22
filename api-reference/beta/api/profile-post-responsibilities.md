@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 272424204c0fd9f7d3d970ad66fed3fe77e9ad68
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 9c0907217bd75b79bc7e200dfc5d9deb901a2bfe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46813133"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48034349"
 ---
 # <a name="create-personresponsibility"></a>Создание Персонреспонсибилити
 Пространство имен: microsoft.graph
@@ -59,7 +59,7 @@ POST /users/{id | userPrincipalName}/profile/responsibilities
 |source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
 |webUrl|String|Содержит ссылку на веб-страницу или ресурс, отвечающие за ответственность.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [персонреспонсибилити](../resources/personannotation.md) в тексте отклика.
 
@@ -141,3 +141,5 @@ Content-Type: application/json
   ]
 }
 ```
+
+
