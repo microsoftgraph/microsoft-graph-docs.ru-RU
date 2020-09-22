@@ -3,14 +3,14 @@ title: Список Полицисетассигнментс
 description: Список свойств и связей объектов Полицисетассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6cdee9ce5f29527ad7ebae846d3a6ef30871caa
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 13e8407e639a5901e8b91910492380f17a0bf9d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44791702"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032042"
 ---
 # <a name="list-policysetassignments"></a>Список Полицисетассигнментс
 
@@ -43,10 +43,10 @@ GET /deviceAppManagement/policySets/{policySetId}/assignments
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -82,6 +82,9 @@ Content-Length: 492
   ]
 }
 ```
+
+
+
 
 
 

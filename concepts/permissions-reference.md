@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 8f1edef15b236bff614077cdddbb66603a6f3fc0
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: a0bf66038c571b45baf894fe5a10fe2760f00ca9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47842976"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032406"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -257,6 +257,28 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 * _Application.ReadWrite.OwnedBy_. Составление списка всех приложений, принадлежащих вызывающему приложению (`GET /beta/servicePrincipals/{id}/ownedObjects`)
 * _Application.ReadWrite.OwnedBy_. Добавление другого владельца приложения (`POST /applications/{id}/owners/$ref`).
 > Примечание: могут потребоваться дополнительные разрешения.
+
+---
+
+## <a name="bitlocker-recovery-key-permissions"></a>Разрешения ключа восстановления BitLocker
+
+#### <a name="delegated-permissions"></a>Делегированные разрешения
+
+|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _BitlockerKey.ReadBasic.All_ | Чтение основных сведений о ключе BitLocker | Позволяет приложению прочесть свойства ключа BitLocker для всех устройств в клиенте. Ключ восстановления не возвращается. | Да | Нет |
+| _BitlockerKey.Read.All_ | Чтение ключа BitLocker | Позволяет приложению прочесть ключи BitLocker для всех устройств в клиенте. Ключ восстановления возвращается. | Да | Нет |
+
+#### <a name="application-permissions"></a>Разрешения приложений
+
+Нет.
+
+### <a name="example-usage"></a>Примеры использования
+
+#### <a name="delegated"></a>Delegated
+
+* _BitlockerKey.ReadBasic.All_: Составление списка ключей восстановления BitLocker для всех устройств в клиенте без возвращения свойства "key" (`GET /bitlocker/recoveryKeys`).
+* _BitlockerKey.Read.All_: Получение ключа восстановления BitLocker с помощью ключа восстановления (`GET /bitlocker/recoveryKeys/{bitlockerRecoveryKeyId}?$select=key`).
 
 ---
 

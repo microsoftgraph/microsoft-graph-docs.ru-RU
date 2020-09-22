@@ -3,14 +3,14 @@ title: Обновление Рбакаппликатионмултипле
 description: Обновление свойств объекта Рбакаппликатионмултипле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e686809753c8061dab5c7345006a310664dd1497
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: be552b43bb1e2add4f01d93c17a243e988f8ac95
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43421222"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031979"
 ---
 # <a name="update-rbacapplicationmultiple"></a>Обновление Рбакаппликатионмултипле
 
@@ -43,10 +43,10 @@ PATCH /roleManagement/deviceManagement
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [рбакаппликатионмултипле](../resources/intune-rbac-rbacapplicationmultiple.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [рбакаппликатионмултипле](../resources/intune-rbac-rbacapplicationmultiple.md).
@@ -86,6 +86,9 @@ Content-Length: 114
   "id": "ee4797e5-97e5-ee47-e597-47eee59747ee"
 }
 ```
+
+
+
 
 
 

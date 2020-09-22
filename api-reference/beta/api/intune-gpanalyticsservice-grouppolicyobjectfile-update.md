@@ -3,14 +3,14 @@ title: Обновление Граупполициобжектфиле
 description: Обновление свойств объекта Граупполициобжектфиле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c47340c73e815ec5afcb2d3b012f5904ebfca73
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e368f9c302aa51e50fcaf21acf95b1cf8a95de24
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43454881"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48032252"
 ---
 # <a name="update-grouppolicyobjectfile"></a>Обновление Граупполициобжектфиле
 
@@ -43,10 +43,10 @@ PATCH /deviceManagement/groupPolicyObjectFiles/{groupPolicyObjectFileId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [граупполициобжектфиле](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [граупполициобжектфиле](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md).
@@ -54,7 +54,7 @@ PATCH /deviceManagement/groupPolicyObjectFiles/{groupPolicyObjectFileId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Пока не задокументировано.|
-|граупполициобжектид|GUID|GUID объекта групповой политики из XML-содержимого объекта групповой политики|
+|граупполициобжектид|Guid|GUID объекта групповой политики из XML-содержимого объекта групповой политики|
 |аудистингуишеднаме|String|Различающееся имя подразделения.|
 |createdDateTime|DateTimeOffset|Дата и время первой загрузки Граупполици.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения Граупполициобжектфиле.|
@@ -62,7 +62,7 @@ PATCH /deviceManagement/groupPolicyObjectFiles/{groupPolicyObjectFileId}
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [граупполициобжектфиле](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -99,6 +99,9 @@ Content-Length: 389
   "content": "Content value"
 }
 ```
+
+
+
 
 
 
