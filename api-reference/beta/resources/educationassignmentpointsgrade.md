@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: c2ef014c3e9e2954dba5fb759fcf3f86b3681b68
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bcce2fc6445c465defb2d795f3bfab9545838643
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42502510"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013721"
 ---
 # <a name="educationassignmentpointsgrade-resource-type"></a>Тип ресурса Едукатионассигнментпоинтсграде
 
@@ -57,3 +57,5 @@ ms.locfileid: "42502510"
   "suppressions": []
 }
 -->
+
+
