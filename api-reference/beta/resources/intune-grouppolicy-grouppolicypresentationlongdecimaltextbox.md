@@ -3,14 +3,14 @@ title: Тип ресурса Граупполиципресентатионло�
 description: Представляет элемент ADMX ЛонгдеЦималтекстбокс и элемент ЛонгдеЦимал ADMX.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 29444d81bec6089de22faca5c40c990c22c73258
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fd18187a7ac378271fd55d8d93708435831a9191
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43443835"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030845"
 ---
 # <a name="grouppolicypresentationlongdecimaltextbox-resource-type"></a>Тип ресурса ГраупполиципресентатионлонгдеЦималтекстбокс
 
@@ -47,7 +47,7 @@ ms.locfileid: "43443835"
 |minValue|Int64|Длинное целое число без знака, задающее минимальное допустимое значение. Значение по умолчанию равно 0.|
 |maxValue|Int64|Длинное целое число без знака, задающее максимальное допустимое значение. Значение по умолчанию — 9999.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |RDLC|[граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|Определение групповой политики, связанное с презентацией. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
@@ -74,6 +74,9 @@ ms.locfileid: "43443835"
   "maxValue": 1024
 }
 ```
+
+
+
 
 
 

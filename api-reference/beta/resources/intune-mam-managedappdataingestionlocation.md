@@ -3,14 +3,14 @@ title: тип перечисления Манажедаппдатаинжест�
 description: Расположения, которые можно использовать для переноса данных в документы Организации
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b13277e37234e0913b546257ad989491a69ece00
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9e3882ee4470a79c988f0f8e02855bee039fcfff
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43373201"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030418"
 ---
 # <a name="managedappdataingestionlocation-enum-type"></a>тип перечисления Манажедаппдатаинжестионлокатион
 
@@ -25,9 +25,12 @@ ms.locfileid: "43373201"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|онедривефорбусинесс|1,1|OneDrive для бизнеса;|
-|sharePoint|2|SharePoint Online|
+|онедривефорбусинесс|1 |OneDrive для бизнеса;|
+|sharePoint|2 |SharePoint Online|
 |видеокамер|4|Камера устройства|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Тип ресурса Граупполицидефинитион
 description: Сущность описывает все сведения об одной групповой политике.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 05021b93dfae495941d13b3f18cb01d7e7c0a706
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: a9ba5a4c415b0bc94b60479530ac6a7ca35f3c75
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376997"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48031013"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>Тип ресурса Граупполицидефинитион
 
@@ -32,16 +32,16 @@ ms.locfileid: "43376997"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |класстипе|[граупполицидефинитионкласстипе](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Определяет тип групп, к которым можно применить политику. Возможные значения: `user`, `machine`.|
-|displayName|Строка|Имя локализованной политики.|
+|displayName|String|Имя локализованной политики.|
 |експлаинтекст|String|Локализованное объяснение или текст справки, связанный с политикой. По умолчанию это значение пусто.|
 |категорипас|String|Локализованный полный путь к категории для политики.|
 |суппортедон|String|Локализованная строка, используемая для указания версии операционной системы или приложения, на которые влияет политика.|
 |полицитипе|[граупполицитипе](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
-|граупполицикатегорид|GUID|Идентификатор категории родительской категории|
+|граупполицикатегорид|Guid|Идентификатор категории родительской категории|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |дефинитионфиле|[граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|Файл групповой политики, связанный с определением.|
@@ -70,6 +70,9 @@ ms.locfileid: "43376997"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

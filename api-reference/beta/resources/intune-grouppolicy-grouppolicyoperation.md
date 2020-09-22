@@ -3,14 +3,14 @@ title: Тип ресурса Граупполициоператион
 description: Сущность представляет операцию групповой политики.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 69ab3503d761052ba8293b9133f43204a6afd7b0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 186fc43e61dff934771469c621d1b77583535d4f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43376919"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030992"
 ---
 # <a name="grouppolicyoperation-resource-type"></a>Тип ресурса Граупполициоператион
 
@@ -40,7 +40,7 @@ ms.locfileid: "43376919"
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -61,6 +61,9 @@ ms.locfileid: "43376919"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

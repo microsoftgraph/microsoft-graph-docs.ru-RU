@@ -3,14 +3,14 @@ title: тип перечисления Манажедаппдатастораж�
 description: Места хранения, в которых управляемые приложения потенциально могут хранить свои данные
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 07a86bf07260b1a7a1bf2c4367229a1b803dac23
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: bacaf018f3dc2ce37de3630c710916b4bb6e9e21
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43373127"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030411"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>тип перечисления Манажедаппдатасторажелокатион
 
@@ -25,9 +25,12 @@ ms.locfileid: "43373127"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|онедривефорбусинесс|1,1|OneDrive для бизнеса;|
-|sharePoint|2|SharePoint|
+|онедривефорбусинесс|1 |OneDrive для бизнеса;|
+|sharePoint|2 |SharePoint|
 |localStorage|6 |Локальное хранилище на устройстве|
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Тип ресурса iosMobileAppIdentifier
 description: Идентификатор приложения для iOS.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 88dd590887954334ce9a419f8140a41c8fdd5647
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b106811c802571edfd4da28134ea99883869c129
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43374103"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030467"
 ---
 # <a name="iosmobileappidentifier-resource-type"></a>Тип ресурса iosMobileAppIdentifier
 
@@ -30,7 +30,7 @@ ms.locfileid: "43374103"
 |:---|:---|:---|
 |bundleId|String|Идентификатор приложения, указанный в магазине приложений.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,6 +46,9 @@ ms.locfileid: "43374103"
   "bundleId": "String"
 }
 ```
+
+
+
 
 
 

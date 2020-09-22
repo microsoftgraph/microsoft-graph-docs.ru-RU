@@ -3,14 +3,14 @@ title: Тип ресурса Граупполиципресентатион
 description: Базовая сущность для отображения представления любого из дополнительных параметров в определении групповой политики.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: db195263c806a2e48a72f9bd7c09d0d663be584d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 434cd86c69de1b3bec92521f134253a7d165ff36
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43446929"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030950"
 ---
 # <a name="grouppolicypresentation-resource-type"></a>Тип ресурса Граупполиципресентатион
 
@@ -35,7 +35,7 @@ ms.locfileid: "43446929"
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |RDLC|[граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|Определение групповой политики, связанное с презентацией.|
@@ -56,6 +56,9 @@ ms.locfileid: "43446929"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Тип ресурса Json
 description: Представляет данные, возвращаемые в формате JSON.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 80bfcd0f93b08d32ee966e61092658712e59e4e1
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 538cabfa08009cdb8bcc3da281a06feb6e12346c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43374053"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48030446"
 ---
 # <a name="json-resource-type"></a>Тип ресурса Json
 
@@ -26,7 +26,7 @@ ms.locfileid: "43374053"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,6 +41,9 @@ ms.locfileid: "43374053"
   "@odata.type": "#microsoft.graph.Json"
 }
 ```
+
+
+
 
 
 
