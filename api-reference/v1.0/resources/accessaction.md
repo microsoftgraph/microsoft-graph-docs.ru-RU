@@ -6,28 +6,28 @@ description: Объект Акцессактион предоставляет с
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: d9d91417b3b8cb0a8f321a412b9b238e97c9a0a4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 45d369b55aabb5fe2df5883d5b04bf1e73f46c65
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42532143"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028380"
 ---
-# <a name="accessaction-resource-type"></a><span data-ttu-id="6ad9f-103">Тип ресурса Акцессактион</span><span class="sxs-lookup"><span data-stu-id="6ad9f-103">accessAction resource type</span></span>
+# <a name="accessaction-resource-type"></a><span data-ttu-id="d21bc-103">Тип ресурса Акцессактион</span><span class="sxs-lookup"><span data-stu-id="d21bc-103">accessAction resource type</span></span>
 
-<span data-ttu-id="6ad9f-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6ad9f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d21bc-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d21bc-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="6ad9f-105">Присутствие ресурса **акцессактион** в [**itemActivity**][activity] указывает на то, что действие получило доступ к элементу.</span><span class="sxs-lookup"><span data-stu-id="6ad9f-105">The presence of the **accessAction** resource on an [**itemActivity**][activity] indicates that the activity accessed an item.</span></span>
+<span data-ttu-id="d21bc-105">Присутствие ресурса **акцессактион** в [**itemActivity**][activity] указывает на то, что действие получило доступ к элементу.</span><span class="sxs-lookup"><span data-stu-id="d21bc-105">The presence of the **accessAction** resource on an [**itemActivity**][activity] indicates that the activity accessed an item.</span></span>
 
-><span data-ttu-id="6ad9f-106">**Примечание:** Записи действий Access доступны только в SharePoint и OneDrive для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="6ad9f-106">**Note:** Access activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
+><span data-ttu-id="d21bc-106">**Примечание:** Записи действий Access доступны только в SharePoint и OneDrive для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="d21bc-106">**Note:** Access activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
 
 [activity]: itemactivity.md
 
-## <a name="properties"></a><span data-ttu-id="6ad9f-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="6ad9f-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d21bc-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="d21bc-107">Properties</span></span>
 
-<span data-ttu-id="6ad9f-108">У этого типа ресурса нет свойств.</span><span class="sxs-lookup"><span data-stu-id="6ad9f-108">This resource type has no properties.</span></span>
+<span data-ttu-id="d21bc-108">У этого типа ресурса нет свойств.</span><span class="sxs-lookup"><span data-stu-id="d21bc-108">This resource type has no properties.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="6ad9f-109">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6ad9f-109">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d21bc-109">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d21bc-109">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -51,3 +51,4 @@ ms.locfileid: "42532143"
   "suppressions": []
 }
 -->
+

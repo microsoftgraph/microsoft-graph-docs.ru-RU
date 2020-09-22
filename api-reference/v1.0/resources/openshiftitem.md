@@ -5,28 +5,28 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2fb690d06a2ca20fe8c4c50d41a06bc2d247ef1f
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: d3e68f5cb558b67f92ed4107e8fb947cb7c300ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154979"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028247"
 ---
-# <a name="openshiftitem-resource-type"></a><span data-ttu-id="e643a-103">Тип ресурса Опеншифтитем</span><span class="sxs-lookup"><span data-stu-id="e643a-103">openShiftItem resource type</span></span>
+# <a name="openshiftitem-resource-type"></a><span data-ttu-id="3768e-103">Тип ресурса Опеншифтитем</span><span class="sxs-lookup"><span data-stu-id="3768e-103">openShiftItem resource type</span></span>
 
-<span data-ttu-id="e643a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e643a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3768e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3768e-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="e643a-105">Представляет одно число [опеншифт](../resources/openshift.md).</span><span class="sxs-lookup"><span data-stu-id="e643a-105">Represents a single count of an [openShift](../resources/openshift.md).</span></span>
+<span data-ttu-id="3768e-105">Представляет одно число [опеншифт](../resources/openshift.md).</span><span class="sxs-lookup"><span data-stu-id="3768e-105">Represents a single count of an [openShift](../resources/openshift.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e643a-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="e643a-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="3768e-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="3768e-106">Properties</span></span>
 
-| <span data-ttu-id="e643a-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="e643a-107">Property</span></span>     | <span data-ttu-id="e643a-108">Тип</span><span class="sxs-lookup"><span data-stu-id="e643a-108">Type</span></span>        | <span data-ttu-id="e643a-109">Описание</span><span class="sxs-lookup"><span data-stu-id="e643a-109">Description</span></span> |
+| <span data-ttu-id="3768e-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="3768e-107">Property</span></span>     | <span data-ttu-id="3768e-108">Тип</span><span class="sxs-lookup"><span data-stu-id="3768e-108">Type</span></span>        | <span data-ttu-id="3768e-109">Описание</span><span class="sxs-lookup"><span data-stu-id="3768e-109">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="e643a-110">опенслоткаунт</span><span class="sxs-lookup"><span data-stu-id="e643a-110">openSlotCount</span></span>|<span data-ttu-id="e643a-111">Int32</span><span class="sxs-lookup"><span data-stu-id="e643a-111">Int32</span></span>| <span data-ttu-id="e643a-112">Количество слотов для заданной открытой смены.</span><span class="sxs-lookup"><span data-stu-id="e643a-112">Count of the number of slots for the given open shift.</span></span>|
+|<span data-ttu-id="3768e-110">опенслоткаунт</span><span class="sxs-lookup"><span data-stu-id="3768e-110">openSlotCount</span></span>|<span data-ttu-id="3768e-111">Int32</span><span class="sxs-lookup"><span data-stu-id="3768e-111">Int32</span></span>| <span data-ttu-id="3768e-112">Количество слотов для заданной открытой смены.</span><span class="sxs-lookup"><span data-stu-id="3768e-112">Count of the number of slots for the given open shift.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="e643a-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e643a-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3768e-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="3768e-113">JSON representation</span></span>
 
-<span data-ttu-id="e643a-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e643a-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="3768e-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3768e-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -52,3 +52,4 @@ ms.locfileid: "44154979"
   "section": "documentation",
   "tocPath": ""
 }-->
+
