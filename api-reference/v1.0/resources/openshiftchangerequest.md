@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 47a2aa9eddc4e45d88c3768ded2b44e9d5952178
-ms.sourcegitcommit: 02c16375520853d3fa2a82ff012639550f981fc8
+ms.openlocfilehash: ad13d42eb5c4617292be449e1a517d376a3bf8a7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44154986"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028282"
 ---
 # <a name="openshiftchangerequest-resource-type"></a>Тип ресурса Опеншифтчанжерекуест
 
@@ -22,7 +22,7 @@ ms.locfileid: "44154986"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [List](../api/openshiftchangerequest-list.md) | Коллекция [опеншифтчанжерекуест](openshiftchangerequest.md) | Перечисление свойств и связей объектов **опеншифтчанжерекуест** в команде. |
+| [Список](../api/openshiftchangerequest-list.md) | Коллекция [опеншифтчанжерекуест](openshiftchangerequest.md) | Перечисление свойств и связей объектов **опеншифтчанжерекуест** в команде. |
 | [создание](../api/openshiftchangerequest-post.md); | [опеншифтчанжерекуест](openshiftchangerequest.md) | Создайте экземпляр объекта **опеншифтчанжерекуест** . |
 | [получение](../api/openshiftchangerequest-get.md); | [опеншифтчанжерекуест](openshiftchangerequest.md) | Чтение свойств и связей объекта **опеншифтчанжерекуест** . |
 |[Утвердить](../api/openshiftchangerequest-approve.md)|Нет|Утверждение запроса на изменение открытого сочетания клавиш.|
@@ -32,7 +32,7 @@ ms.locfileid: "44154986"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|опеншифтид|Строка| Идентификатор для открытой смены.|
+|опеншифтид|String| Идентификатор для открытой смены.|
 
 ## <a name="relationships"></a>Связи
 
@@ -66,3 +66,4 @@ ms.locfileid: "44154986"
   "section": "documentation",
   "tocPath": ""
 }-->
+

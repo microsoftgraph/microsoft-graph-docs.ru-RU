@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 98de91ae0bb0eb7e0942bbe465fe3c0b10f749d7
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 69583a52ae62fad62708256b1eecba1ab8955517
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811863"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028226"
 ---
 # <a name="recurrencerange-resource-type"></a>Тип ресурса recurrenceRange
 
@@ -28,7 +28,7 @@ ms.locfileid: "46811863"
 |numberOfOccurrences|Int32|Количество повторений события. Обязательное свойство, которое должно быть положительным, если для **type** задано значение `numbered`.|
 |recurrenceTimeZone|String |Часовой пояс для свойств **startDate** и **endDate**. Необязательное. Если это свойство не задано, используется часовой пояс события.|
 |startDate|Date|Дата, с которой начинает применяться расписание повторения. В зависимости от того, каково расписание повторения события, первый экземпляр собрания может приходиться на эту или более позднюю дату. Должно быть задано то же значение, что и для свойства **start** повторяющегося [события](event.md). Обязательное.|
-|type|рекурренцеранжетипе|Диапазон повторения. Допустимые значения: `endDate`, `noEnd`, `numbered`. Обязательный элемент.|
+|type|рекурренцеранжетипе|Диапазон повторения. Допустимые значения: `endDate`, `noEnd`, `numbered`. Обязательно.|
 
 С помощью свойства **type** можно указывать различные типы для **recurrenceRange**. Обратите внимание на обязательные свойства для каждого типа, описанные в приведенной ниже таблице.
 
@@ -39,7 +39,7 @@ ms.locfileid: "46811863"
 |`numbered`|Диапазон с определенным количеством повторений | Событие повторяется определенное количество раз (указанное в **numberOfOccurrences**) в соответствии с расписанием повторения, начиная с даты **startDate**. | Повторение события 10 раз с 1 июня 2017 г.  | **type**, **startDate**, **numberOfOccurrences** |
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -75,3 +75,4 @@ ms.locfileid: "46811863"
   ],
   "tocPath": ""
 }-->
+

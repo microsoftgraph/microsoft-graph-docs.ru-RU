@@ -3,14 +3,14 @@ title: Get sharedPCConfiguration
 description: Чтение свойств и связей объекта sharedPCConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 84509d4a2be68d1c8ed23ea4edf9575f2b524318
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 488e702a079b3e421fdea98892a81db0fc098377
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43342003"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027981"
 ---
 # <a name="get-sharedpcconfiguration"></a>Get sharedPCConfiguration
 
@@ -48,13 +48,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [sharedPCConfiguration](../resources/intune-deviceconfig-sharedpcconfiguration.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -133,6 +133,9 @@ Content-Length: 2223
   }
 }
 ```
+
+
+
 
 
 

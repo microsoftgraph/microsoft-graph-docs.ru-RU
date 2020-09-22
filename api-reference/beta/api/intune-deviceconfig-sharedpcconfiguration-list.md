@@ -3,14 +3,14 @@ title: Перечисление объектов sharedPCConfiguration
 description: Список свойств и связей объектов sharedPCConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b716f91f45236fae05f1a92761e5284e34a27ef
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: da15b1ac036ebfe2ee62b8937b81c2df3c36bffe
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43341967"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48027967"
 ---
 # <a name="list-sharedpcconfigurations"></a>Перечисление объектов sharedPCConfiguration
 
@@ -44,13 +44,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [sharedPCConfiguration](../resources/intune-deviceconfig-sharedpcconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -131,6 +131,9 @@ Content-Length: 2349
   ]
 }
 ```
+
+
+
 
 
 

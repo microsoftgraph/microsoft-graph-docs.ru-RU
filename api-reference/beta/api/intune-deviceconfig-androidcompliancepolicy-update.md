@@ -3,14 +3,14 @@ title: Update androidCompliancePolicy
 description: Обновление свойств объекта androidCompliancePolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a807ff101a380b74aeff1ea7fed1fc1f699b42d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b1a7a9611da3b8f06159748adfadd7d4313747f8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43352553"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028086"
 ---
 # <a name="update-androidcompliancepolicy"></a>Update androidCompliancePolicy
 
@@ -43,26 +43,27 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [androidCompliancePolicy](../resources/intune-deviceconfig-androidcompliancepolicy.md) в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта [androidCompliancePolicy](../resources/intune-deviceconfig-androidcompliancepolicy.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
-|passwordRequired|Логический|Указывает, что для разблокировки устройства требуется указывать пароль.|
+|passwordRequired|Boolean|Указывает, что для разблокировки устройства требуется указывать пароль.|
 |passwordMinimumLength|Int32|Минимальная длина пароля. Допустимые значения: от 4 до 16.|
 |passwordRequiredType|[андроидрекуиредпассвордтипе](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|Тип символов в пароле. Возможные значения: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
+|рекуиредпассвордкомплексити|[андроидрекуиредпассвордкомплексити](../resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md)|Указывает на то, что сложность пароля на Android необязательна. Один из следующих: NONE, низкие, средние, высокие. Это новый API, предназначенный для Android 11 +. Возможные значения: `none`, `low`, `medium`, `high`.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Период бездействия (в минутах), по истечении которого будет запрашиваться ввод пароля.|
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля. Допустимые значения: от 1 до 365.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать. Допустимые значения: от 1 до 24.|
@@ -99,7 +100,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 Content-type: application/json
-Content-length: 1710
+Content-length: 1750
 
 {
   "@odata.type": "#microsoft.graph.androidCompliancePolicy",
@@ -112,6 +113,7 @@ Content-length: 1710
   "passwordRequired": true,
   "passwordMinimumLength": 5,
   "passwordRequiredType": "alphabetic",
+  "requiredPasswordComplexity": "low",
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordBlockCount": 2,
@@ -151,7 +153,7 @@ Content-length: 1710
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1882
+Content-Length: 1922
 
 {
   "@odata.type": "#microsoft.graph.androidCompliancePolicy",
@@ -167,6 +169,7 @@ Content-Length: 1882
   "passwordRequired": true,
   "passwordMinimumLength": 5,
   "passwordRequiredType": "alphabetic",
+  "requiredPasswordComplexity": "low",
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordBlockCount": 2,
@@ -200,6 +203,9 @@ Content-Length: 1882
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Список Андроидцертификатепрофилебасес
 description: Список свойств и связей объектов Андроидцертификатепрофилебасе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c9431f513f3a0fbdc39f8dfde2f898e32d8226f3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 12a8b7b7d7bd6a03bd251b79220712f3f8cbe88a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43352897"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028156"
 ---
 # <a name="list-androidcertificateprofilebases"></a>Список Андроидцертификатепрофилебасес
 
@@ -44,13 +44,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [андроидцертификатепрофилебасе](../resources/intune-deviceconfig-androidcertificateprofilebase.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -119,6 +119,9 @@ Content-Length: 1825
   ]
 }
 ```
+
+
+
 
 
 

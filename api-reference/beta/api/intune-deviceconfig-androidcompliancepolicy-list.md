@@ -3,14 +3,14 @@ title: Перечисление объектов androidCompliancePolicy
 description: Список свойств и связей объектов androidCompliancePolicy.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 50dca9d0cde4f28e2c8421db91772c0d1f42b76e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 24665964008b7eee5116a12996d750ef65ba52b3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43352568"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028097"
 ---
 # <a name="list-androidcompliancepolicies"></a>Перечисление объектов androidCompliancePolicy
 
@@ -43,13 +43,13 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [androidCompliancePolicy](../resources/intune-deviceconfig-androidcompliancepolicy.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2091
+Content-Length: 2135
 
 {
   "value": [
@@ -83,6 +83,7 @@ Content-Length: 2091
       "passwordRequired": true,
       "passwordMinimumLength": 5,
       "passwordRequiredType": "alphabetic",
+      "requiredPasswordComplexity": "low",
       "passwordMinutesOfInactivityBeforeLock": 5,
       "passwordExpirationDays": 6,
       "passwordPreviousPasswordBlockCount": 2,
@@ -118,6 +119,9 @@ Content-Length: 2091
   ]
 }
 ```
+
+
+
 
 
 

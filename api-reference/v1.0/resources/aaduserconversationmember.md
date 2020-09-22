@@ -5,12 +5,12 @@ localization_priority: Priority
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9714605cabbc25d3eeae7a68b2bc8f09d6131836
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: d53709726c55cc3ac9f2051bd499a996b33d9c36
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873456"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028359"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>Тип ресурса aadUserConversationMember
 
@@ -62,3 +62,4 @@ ms.locfileid: "46873456"
   "suppressions": []
 }
 -->
+

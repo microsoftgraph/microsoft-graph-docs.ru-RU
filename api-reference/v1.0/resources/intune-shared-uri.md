@@ -3,14 +3,14 @@ title: Тип ресурса uri
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8a3785e97465eea3988857e281abc7cb9e1119ce
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4d73b31bd103d799d54195c533b1ffce44018d08
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43445622"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028331"
 ---
 # <a name="uri-resource-type"></a>Тип ресурса uri
 
@@ -18,7 +18,7 @@ ms.locfileid: "43445622"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Пока не задокументировано
+Н/Д
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -43,6 +43,8 @@ ms.locfileid: "43445622"
   ]
 }
 ```
+
+
 
 
 

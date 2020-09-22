@@ -3,14 +3,14 @@ title: Получение Адванцедсреатпротектиононбо
 description: Чтение свойств и связей объекта Адванцедсреатпротектиононбоардингдевицесеттингстате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3eb3cb9e1fabc095bb3c01d039c80a21557277fb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4f5ff45c827603cff322f1212c0380c50354966d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43436286"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48028240"
 ---
 # <a name="get-advancedthreatprotectiononboardingdevicesettingstate"></a>Получение Адванцедсреатпротектиононбоардингдевицесеттингстате
 
@@ -46,13 +46,13 @@ GET /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedThr
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [адванцедсреатпротектиононбоардингдевицесеттингстате](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -89,6 +89,9 @@ Content-Length: 669
   }
 }
 ```
+
+
+
 
 
 
