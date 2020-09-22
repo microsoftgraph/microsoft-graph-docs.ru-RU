@@ -5,34 +5,34 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 11b52b58aea908e00d4a6149cca0bb9c9dba5fd0
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ab0fd1b58da0fd3e0b21212897c3f7a3e2d185b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521778"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48026539"
 ---
-# <a name="plannercategorydescriptions-resource-type"></a><span data-ttu-id="6f354-105">Тип ресурса Планнеркатегоридескриптионс</span><span class="sxs-lookup"><span data-stu-id="6f354-105">plannerCategoryDescriptions resource type</span></span>
+# <a name="plannercategorydescriptions-resource-type"></a><span data-ttu-id="ab309-105">Тип ресурса Планнеркатегоридескриптионс</span><span class="sxs-lookup"><span data-stu-id="ab309-105">plannerCategoryDescriptions resource type</span></span>
 
-<span data-ttu-id="6f354-106">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6f354-106">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ab309-106">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ab309-106">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6f354-107">Ресурс **планнеркатегоридескриптионс** представляет описательные метки для категорий, определенных для плана.</span><span class="sxs-lookup"><span data-stu-id="6f354-107">The **plannerCategoryDescriptions** resource represents the descriptive labels for the categories that have been defined for a plan.</span></span> <span data-ttu-id="6f354-108">Он принадлежит объекту [сведений о плане](plannerplandetails.md) .</span><span class="sxs-lookup"><span data-stu-id="6f354-108">It belongs to the [plan details](plannerplandetails.md) object.</span></span> <span data-ttu-id="6f354-109">Может быть определено до 6 категорий.</span><span class="sxs-lookup"><span data-stu-id="6f354-109">There can be up to 6 categories defined.</span></span> 
+<span data-ttu-id="ab309-107">Ресурс **планнеркатегоридескриптионс** представляет описательные метки для категорий, определенных для плана.</span><span class="sxs-lookup"><span data-stu-id="ab309-107">The **plannerCategoryDescriptions** resource represents the descriptive labels for the categories that have been defined for a plan.</span></span> <span data-ttu-id="ab309-108">Он принадлежит объекту [сведений о плане](plannerplandetails.md) .</span><span class="sxs-lookup"><span data-stu-id="ab309-108">It belongs to the [plan details](plannerplandetails.md) object.</span></span> <span data-ttu-id="ab309-109">Может быть определено до 6 категорий.</span><span class="sxs-lookup"><span data-stu-id="ab309-109">There can be up to 6 categories defined.</span></span> 
 
 
-## <a name="properties"></a><span data-ttu-id="6f354-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="6f354-110">Properties</span></span>
-| <span data-ttu-id="6f354-111">Свойство</span><span class="sxs-lookup"><span data-stu-id="6f354-111">Property</span></span>     | <span data-ttu-id="6f354-112">Тип</span><span class="sxs-lookup"><span data-stu-id="6f354-112">Type</span></span>   |<span data-ttu-id="6f354-113">Описание</span><span class="sxs-lookup"><span data-stu-id="6f354-113">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="ab309-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="ab309-110">Properties</span></span>
+| <span data-ttu-id="ab309-111">Свойство</span><span class="sxs-lookup"><span data-stu-id="ab309-111">Property</span></span>     | <span data-ttu-id="ab309-112">Тип</span><span class="sxs-lookup"><span data-stu-id="ab309-112">Type</span></span>   |<span data-ttu-id="ab309-113">Описание</span><span class="sxs-lookup"><span data-stu-id="ab309-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6f354-114">Category1</span><span class="sxs-lookup"><span data-stu-id="6f354-114">category1</span></span>|<span data-ttu-id="6f354-115">Строка</span><span class="sxs-lookup"><span data-stu-id="6f354-115">String</span></span>|<span data-ttu-id="6f354-116">Метка, связанная с категорией 1</span><span class="sxs-lookup"><span data-stu-id="6f354-116">The label associated with Category 1</span></span>|
-|<span data-ttu-id="6f354-117">category2</span><span class="sxs-lookup"><span data-stu-id="6f354-117">category2</span></span>|<span data-ttu-id="6f354-118">Строка</span><span class="sxs-lookup"><span data-stu-id="6f354-118">String</span></span>|<span data-ttu-id="6f354-119">Метка, сопоставленная с категорией 2</span><span class="sxs-lookup"><span data-stu-id="6f354-119">The label associated with Category 2</span></span>|
-|<span data-ttu-id="6f354-120">category3</span><span class="sxs-lookup"><span data-stu-id="6f354-120">category3</span></span>|<span data-ttu-id="6f354-121">Строка</span><span class="sxs-lookup"><span data-stu-id="6f354-121">String</span></span>|<span data-ttu-id="6f354-122">Метка, связанная с категорией 3</span><span class="sxs-lookup"><span data-stu-id="6f354-122">The label associated with Category 3</span></span>|
-|<span data-ttu-id="6f354-123">category4</span><span class="sxs-lookup"><span data-stu-id="6f354-123">category4</span></span>|<span data-ttu-id="6f354-124">Строка</span><span class="sxs-lookup"><span data-stu-id="6f354-124">String</span></span>|<span data-ttu-id="6f354-125">Метка, сопоставленная с категорией 4</span><span class="sxs-lookup"><span data-stu-id="6f354-125">The label associated with Category 4</span></span>|
-|<span data-ttu-id="6f354-126">category5</span><span class="sxs-lookup"><span data-stu-id="6f354-126">category5</span></span>|<span data-ttu-id="6f354-127">Строка</span><span class="sxs-lookup"><span data-stu-id="6f354-127">String</span></span>|<span data-ttu-id="6f354-128">Метка, сопоставленная с категорией 5</span><span class="sxs-lookup"><span data-stu-id="6f354-128">The label associated with Category 5</span></span>|
-|<span data-ttu-id="6f354-129">category6</span><span class="sxs-lookup"><span data-stu-id="6f354-129">category6</span></span>|<span data-ttu-id="6f354-130">Строка</span><span class="sxs-lookup"><span data-stu-id="6f354-130">String</span></span>|<span data-ttu-id="6f354-131">Метка, сопоставленная с категорией 6</span><span class="sxs-lookup"><span data-stu-id="6f354-131">The label associated with Category 6</span></span>|
+|<span data-ttu-id="ab309-114">Category1</span><span class="sxs-lookup"><span data-stu-id="ab309-114">category1</span></span>|<span data-ttu-id="ab309-115">String</span><span class="sxs-lookup"><span data-stu-id="ab309-115">String</span></span>|<span data-ttu-id="ab309-116">Метка, связанная с категорией 1</span><span class="sxs-lookup"><span data-stu-id="ab309-116">The label associated with Category 1</span></span>|
+|<span data-ttu-id="ab309-117">category2</span><span class="sxs-lookup"><span data-stu-id="ab309-117">category2</span></span>|<span data-ttu-id="ab309-118">String</span><span class="sxs-lookup"><span data-stu-id="ab309-118">String</span></span>|<span data-ttu-id="ab309-119">Метка, сопоставленная с категорией 2</span><span class="sxs-lookup"><span data-stu-id="ab309-119">The label associated with Category 2</span></span>|
+|<span data-ttu-id="ab309-120">category3</span><span class="sxs-lookup"><span data-stu-id="ab309-120">category3</span></span>|<span data-ttu-id="ab309-121">String</span><span class="sxs-lookup"><span data-stu-id="ab309-121">String</span></span>|<span data-ttu-id="ab309-122">Метка, связанная с категорией 3</span><span class="sxs-lookup"><span data-stu-id="ab309-122">The label associated with Category 3</span></span>|
+|<span data-ttu-id="ab309-123">category4</span><span class="sxs-lookup"><span data-stu-id="ab309-123">category4</span></span>|<span data-ttu-id="ab309-124">String</span><span class="sxs-lookup"><span data-stu-id="ab309-124">String</span></span>|<span data-ttu-id="ab309-125">Метка, сопоставленная с категорией 4</span><span class="sxs-lookup"><span data-stu-id="ab309-125">The label associated with Category 4</span></span>|
+|<span data-ttu-id="ab309-126">category5</span><span class="sxs-lookup"><span data-stu-id="ab309-126">category5</span></span>|<span data-ttu-id="ab309-127">String</span><span class="sxs-lookup"><span data-stu-id="ab309-127">String</span></span>|<span data-ttu-id="ab309-128">Метка, сопоставленная с категорией 5</span><span class="sxs-lookup"><span data-stu-id="ab309-128">The label associated with Category 5</span></span>|
+|<span data-ttu-id="ab309-129">category6</span><span class="sxs-lookup"><span data-stu-id="ab309-129">category6</span></span>|<span data-ttu-id="ab309-130">String</span><span class="sxs-lookup"><span data-stu-id="ab309-130">String</span></span>|<span data-ttu-id="ab309-131">Метка, сопоставленная с категорией 6</span><span class="sxs-lookup"><span data-stu-id="ab309-131">The label associated with Category 6</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="6f354-132">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6f354-132">JSON representation</span></span>
-<span data-ttu-id="6f354-133">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6f354-133">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ab309-132">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ab309-132">JSON representation</span></span>
+<span data-ttu-id="ab309-133">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ab309-133">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -66,3 +66,5 @@ ms.locfileid: "42521778"
   "suppressions": []
 }
 -->
+
+
