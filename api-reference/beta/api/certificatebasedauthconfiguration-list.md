@@ -5,35 +5,35 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2c52f2a144802a548dddc9b1f40c80f8daf3d493
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: d840c270b0c259eb392b23001de4a357eaf7e2f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181051"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47983321"
 ---
-# <a name="list-certificatebasedauthconfigurations"></a><span data-ttu-id="8eef5-103">Список Цертификатебаседаусконфигуратионс</span><span class="sxs-lookup"><span data-stu-id="8eef5-103">List certificateBasedAuthConfigurations</span></span>
+# <a name="list-certificatebasedauthconfigurations"></a><span data-ttu-id="a4904-103">Список Цертификатебаседаусконфигуратионс</span><span class="sxs-lookup"><span data-stu-id="a4904-103">List certificateBasedAuthConfigurations</span></span>
 
-<span data-ttu-id="8eef5-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8eef5-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a4904-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a4904-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8eef5-105">Получение списка объектов [цертификатебаседаусконфигуратион](../resources/certificateBasedAuthConfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="8eef5-105">Get a list of [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) objects.</span></span>
+<span data-ttu-id="a4904-105">Получение списка объектов [цертификатебаседаусконфигуратион](../resources/certificateBasedAuthConfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="a4904-105">Get a list of [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) objects.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="8eef5-106">В коллекции может существовать только один экземпляр Цертификатебаседаусконфигуратион.</span><span class="sxs-lookup"><span data-stu-id="8eef5-106">Only a single instance of certificateBasedAuthConfiguration can exist in the collection.</span></span> <span data-ttu-id="8eef5-107">Он всегда имеет фиксированный идентификатор со значением "29728ade-6ae4-4ee9-9103-412912537da5".</span><span class="sxs-lookup"><span data-stu-id="8eef5-107">It always has a fixed ID with a value of '29728ade-6ae4-4ee9-9103-412912537da5'.</span></span>
+> <span data-ttu-id="a4904-106">В коллекции может существовать только один экземпляр Цертификатебаседаусконфигуратион.</span><span class="sxs-lookup"><span data-stu-id="a4904-106">Only a single instance of certificateBasedAuthConfiguration can exist in the collection.</span></span> <span data-ttu-id="a4904-107">Он всегда имеет фиксированный идентификатор со значением "29728ade-6ae4-4ee9-9103-412912537da5".</span><span class="sxs-lookup"><span data-stu-id="a4904-107">It always has a fixed ID with a value of '29728ade-6ae4-4ee9-9103-412912537da5'.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8eef5-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8eef5-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a4904-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a4904-108">Permissions</span></span>
 
-<span data-ttu-id="8eef5-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8eef5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a4904-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a4904-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="8eef5-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8eef5-111">Permission type</span></span>                        | <span data-ttu-id="8eef5-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8eef5-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="a4904-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a4904-111">Permission type</span></span>                        | <span data-ttu-id="a4904-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a4904-112">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="8eef5-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8eef5-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="8eef5-114">Организация. чтение. ALL, Организация. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="8eef5-114">Organization.Read.All, Organization.ReadWrite.All</span></span> |
-| <span data-ttu-id="8eef5-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8eef5-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8eef5-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8eef5-116">Not supported.</span></span> |
-| <span data-ttu-id="8eef5-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8eef5-117">Application</span></span>    | <span data-ttu-id="8eef5-118">Организация. чтение. ALL, Организация. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="8eef5-118">Organization.Read.All, Organization.ReadWrite.All</span></span> |
+| <span data-ttu-id="a4904-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a4904-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="a4904-114">Организация. чтение. ALL, Организация. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="a4904-114">Organization.Read.All, Organization.ReadWrite.All</span></span> |
+| <span data-ttu-id="a4904-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a4904-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a4904-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a4904-116">Not supported.</span></span> |
+| <span data-ttu-id="a4904-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a4904-117">Application</span></span>    | <span data-ttu-id="a4904-118">Организация. чтение. ALL, Организация. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="a4904-118">Organization.Read.All, Organization.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8eef5-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8eef5-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a4904-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a4904-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,27 +41,27 @@ ms.locfileid: "43181051"
 GET /organization/{id}/certificateBasedAuthConfiguration
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8eef5-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8eef5-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="a4904-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a4904-120">Request headers</span></span>
 
-| <span data-ttu-id="8eef5-121">Имя</span><span class="sxs-lookup"><span data-stu-id="8eef5-121">Name</span></span>      |<span data-ttu-id="8eef5-122">Описание</span><span class="sxs-lookup"><span data-stu-id="8eef5-122">Description</span></span>|
+| <span data-ttu-id="a4904-121">Имя</span><span class="sxs-lookup"><span data-stu-id="a4904-121">Name</span></span>      |<span data-ttu-id="a4904-122">Описание</span><span class="sxs-lookup"><span data-stu-id="a4904-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="8eef5-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8eef5-123">Authorization</span></span> | <span data-ttu-id="8eef5-124">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="8eef5-124">Bearer {token}</span></span> |
+| <span data-ttu-id="a4904-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="a4904-123">Authorization</span></span> | <span data-ttu-id="a4904-124">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="a4904-124">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8eef5-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="8eef5-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="a4904-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a4904-125">Request body</span></span>
 
-<span data-ttu-id="8eef5-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="8eef5-126">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="a4904-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="a4904-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8eef5-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="8eef5-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a4904-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="a4904-127">Response</span></span>
 
-<span data-ttu-id="8eef5-128">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [цертификатебаседаусконфигуратион](../resources/certificatebasedauthconfiguration.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="8eef5-128">If successful, this method returns a `200 OK` response code and a collection of [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) objects in the response body.</span></span>
+<span data-ttu-id="a4904-128">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [цертификатебаседаусконфигуратион](../resources/certificatebasedauthconfiguration.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="a4904-128">If successful, this method returns a `200 OK` response code and a collection of [certificateBasedAuthConfiguration](../resources/certificatebasedauthconfiguration.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="8eef5-129">Примеры</span><span class="sxs-lookup"><span data-stu-id="8eef5-129">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="a4904-129">Примеры</span><span class="sxs-lookup"><span data-stu-id="a4904-129">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="8eef5-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="8eef5-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a4904-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="a4904-130">Request</span></span>
 
-<span data-ttu-id="8eef5-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8eef5-131">The following is an example of the request.</span></span>
+<span data-ttu-id="a4904-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a4904-131">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="8eef5-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="8eef5-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a4904-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="a4904-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_certificatebasedauthconfigurations"
@@ -70,26 +70,26 @@ GET /organization/{id}/certificateBasedAuthConfiguration
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/{id}/certificateBasedAuthConfiguration
 ```
-# <a name="c"></a>[<span data-ttu-id="8eef5-133">C#</span><span class="sxs-lookup"><span data-stu-id="8eef5-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a4904-133">C#</span><span class="sxs-lookup"><span data-stu-id="a4904-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-certificatebasedauthconfigurations-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="8eef5-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8eef5-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a4904-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a4904-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-certificatebasedauthconfigurations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="8eef5-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8eef5-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a4904-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a4904-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-certificatebasedauthconfigurations-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="8eef5-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="8eef5-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a4904-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="a4904-136">Response</span></span>
 
-<span data-ttu-id="8eef5-137">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="8eef5-137">The following is an example of the response.</span></span>
+<span data-ttu-id="a4904-137">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="a4904-137">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="8eef5-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8eef5-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="a4904-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a4904-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -130,3 +130,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

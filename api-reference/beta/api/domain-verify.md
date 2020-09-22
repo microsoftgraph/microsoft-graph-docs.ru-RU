@@ -5,60 +5,60 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0bccef382bd41aa4c9912ba81926be7913114f8a
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: ef37508a93d55feec8a5446f45b6a8275f9b7cae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43179537"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982250"
 ---
-# <a name="domain-verify"></a><span data-ttu-id="476d1-103">domain: verify</span><span class="sxs-lookup"><span data-stu-id="476d1-103">domain: verify</span></span>
+# <a name="domain-verify"></a><span data-ttu-id="5fff8-103">domain: verify</span><span class="sxs-lookup"><span data-stu-id="5fff8-103">domain: verify</span></span>
 
-<span data-ttu-id="476d1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="476d1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5fff8-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5fff8-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="476d1-105">Проверка права собственности на домен.</span><span class="sxs-lookup"><span data-stu-id="476d1-105">Validates the ownership of the domain.</span></span>
+<span data-ttu-id="5fff8-105">Проверка права собственности на домен.</span><span class="sxs-lookup"><span data-stu-id="5fff8-105">Validates the ownership of the domain.</span></span>
 
-> <span data-ttu-id="476d1-p101">**Важно!** Применяется только к непроверенному домену. Для непроверенного домена свойство isVerified объекта [domain](../resources/domain.md) будет иметь значение false.</span><span class="sxs-lookup"><span data-stu-id="476d1-p101">**Important:** Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.</span></span>
+> <span data-ttu-id="5fff8-p101">**Важно!** Применяется только к непроверенному домену. Для непроверенного домена свойство isVerified объекта [domain](../resources/domain.md) будет иметь значение false.</span><span class="sxs-lookup"><span data-stu-id="5fff8-p101">**Important:** Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="476d1-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="476d1-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="5fff8-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5fff8-108">Permissions</span></span>
 
-<span data-ttu-id="476d1-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="476d1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5fff8-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5fff8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="476d1-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="476d1-111">Permission type</span></span>      | <span data-ttu-id="476d1-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="476d1-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5fff8-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5fff8-111">Permission type</span></span>      | <span data-ttu-id="5fff8-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5fff8-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="476d1-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="476d1-113">Delegated (work or school account)</span></span> | <span data-ttu-id="476d1-114">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="476d1-114">Directory.Read.All</span></span>    |
-|<span data-ttu-id="476d1-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="476d1-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="476d1-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="476d1-116">Not supported.</span></span>    |
-|<span data-ttu-id="476d1-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="476d1-117">Application</span></span> | <span data-ttu-id="476d1-118">Directory.Read.All, Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="476d1-118">Directory.Read.All, Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="5fff8-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5fff8-113">Delegated (work or school account)</span></span> | <span data-ttu-id="5fff8-114">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="5fff8-114">Directory.Read.All</span></span>    |
+|<span data-ttu-id="5fff8-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5fff8-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5fff8-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5fff8-116">Not supported.</span></span>    |
+|<span data-ttu-id="5fff8-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5fff8-117">Application</span></span> | <span data-ttu-id="5fff8-118">Directory.Read.All, Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5fff8-118">Directory.Read.All, Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="476d1-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="476d1-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5fff8-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5fff8-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /domains/{id}/verify
 ```
 
-> <span data-ttu-id="476d1-120">В качестве параметра {id} укажите домен, используя его полное доменное имя.</span><span class="sxs-lookup"><span data-stu-id="476d1-120">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="5fff8-120">В качестве параметра {id} укажите домен, используя его полное доменное имя.</span><span class="sxs-lookup"><span data-stu-id="5fff8-120">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="476d1-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="476d1-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5fff8-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5fff8-121">Request headers</span></span>
 
-| <span data-ttu-id="476d1-122">Имя</span><span class="sxs-lookup"><span data-stu-id="476d1-122">Name</span></span>       | <span data-ttu-id="476d1-123">Описание</span><span class="sxs-lookup"><span data-stu-id="476d1-123">Description</span></span>|
+| <span data-ttu-id="5fff8-122">Имя</span><span class="sxs-lookup"><span data-stu-id="5fff8-122">Name</span></span>       | <span data-ttu-id="5fff8-123">Описание</span><span class="sxs-lookup"><span data-stu-id="5fff8-123">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="476d1-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="476d1-124">Authorization</span></span>  | <span data-ttu-id="476d1-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="476d1-p103">Bearer {token}. Required.</span></span>|
-| <span data-ttu-id="476d1-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="476d1-127">Content-Type</span></span>  | <span data-ttu-id="476d1-128">application/json</span><span class="sxs-lookup"><span data-stu-id="476d1-128">application/json</span></span> |
+| <span data-ttu-id="5fff8-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5fff8-124">Authorization</span></span>  | <span data-ttu-id="5fff8-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5fff8-p103">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="5fff8-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5fff8-127">Content-Type</span></span>  | <span data-ttu-id="5fff8-128">application/json</span><span class="sxs-lookup"><span data-stu-id="5fff8-128">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="476d1-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="476d1-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="5fff8-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5fff8-129">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="476d1-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="476d1-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5fff8-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="5fff8-130">Response</span></span>
 
-<span data-ttu-id="476d1-131">При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [domain](../resources/domain.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="476d1-131">If successful, this method returns `200 OK` response code and [domain](../resources/domain.md) object in the response body.</span></span>
+<span data-ttu-id="5fff8-131">При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [domain](../resources/domain.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="5fff8-131">If successful, this method returns `200 OK` response code and [domain](../resources/domain.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="476d1-132">Пример</span><span class="sxs-lookup"><span data-stu-id="476d1-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="476d1-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="476d1-133">Request</span></span>
+## <a name="example"></a><span data-ttu-id="5fff8-132">Пример</span><span class="sxs-lookup"><span data-stu-id="5fff8-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="5fff8-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="5fff8-133">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="476d1-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="476d1-134">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5fff8-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="5fff8-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "domain_verify"
@@ -66,23 +66,23 @@ POST /domains/{id}/verify
 ```http
 POST https://graph.microsoft.com/beta/domains/contoso.com/verify
 ```
-# <a name="c"></a>[<span data-ttu-id="476d1-135">C#</span><span class="sxs-lookup"><span data-stu-id="476d1-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="5fff8-135">C#</span><span class="sxs-lookup"><span data-stu-id="5fff8-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/domain-verify-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="476d1-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="476d1-136">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="5fff8-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5fff8-136">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/domain-verify-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="476d1-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="476d1-137">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="5fff8-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5fff8-137">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/domain-verify-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="476d1-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="476d1-138">Response</span></span>
-<span data-ttu-id="476d1-p104">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="476d1-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="5fff8-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="5fff8-138">Response</span></span>
+<span data-ttu-id="5fff8-p104">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5fff8-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -117,3 +117,5 @@ Content-length: 192
   ]
 }
 -->
+
+

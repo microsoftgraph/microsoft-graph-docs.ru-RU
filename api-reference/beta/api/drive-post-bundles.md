@@ -6,34 +6,34 @@ description: Создание пакета элементов driveitem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 58ac2e4d0e6cc4a4f587aec082b59fe4ab633037
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 4f00311003bd6342ee4fba0f2560077cb8640d7f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43107271"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982208"
 ---
-# <a name="create-bundle"></a><span data-ttu-id="15cb4-103">Создание пакета</span><span class="sxs-lookup"><span data-stu-id="15cb4-103">Create bundle</span></span>
+# <a name="create-bundle"></a><span data-ttu-id="0ec18-103">Создание пакета</span><span class="sxs-lookup"><span data-stu-id="0ec18-103">Create bundle</span></span>
 
-<span data-ttu-id="15cb4-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="15cb4-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="0ec18-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0ec18-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="15cb4-105">Добавление нового [пакета][] на диск пользователя.</span><span class="sxs-lookup"><span data-stu-id="15cb4-105">Add a new [bundle][] to the user's drive.</span></span>
+<span data-ttu-id="0ec18-105">Добавление нового [пакета][] на диск пользователя.</span><span class="sxs-lookup"><span data-stu-id="0ec18-105">Add a new [bundle][] to the user's drive.</span></span>
 
 [bundle]: ../resources/bundle.md
 
-## <a name="permissions"></a><span data-ttu-id="15cb4-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="15cb4-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="0ec18-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0ec18-107">Permissions</span></span>
 
-<span data-ttu-id="15cb4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="15cb4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0ec18-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0ec18-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="15cb4-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="15cb4-110">Permission type</span></span>      | <span data-ttu-id="15cb4-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="15cb4-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0ec18-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0ec18-110">Permission type</span></span>      | <span data-ttu-id="0ec18-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0ec18-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="15cb4-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="15cb4-112">Delegated (work or school account)</span></span> | <span data-ttu-id="15cb4-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="15cb4-113">Not supported.</span></span>                             |
-|<span data-ttu-id="15cb4-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="15cb4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="15cb4-115">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="15cb4-115">Files.ReadWrite, Files.ReadWrite.All</span></span>   |
-|<span data-ttu-id="15cb4-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="15cb4-116">Application</span></span>          | <span data-ttu-id="15cb4-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="15cb4-117">Not supported.</span></span>                                           |
+|<span data-ttu-id="0ec18-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0ec18-112">Delegated (work or school account)</span></span> | <span data-ttu-id="0ec18-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0ec18-113">Not supported.</span></span>                             |
+|<span data-ttu-id="0ec18-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0ec18-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0ec18-115">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0ec18-115">Files.ReadWrite, Files.ReadWrite.All</span></span>   |
+|<span data-ttu-id="0ec18-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0ec18-116">Application</span></span>          | <span data-ttu-id="0ec18-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0ec18-117">Not supported.</span></span>                                           |
 
-## <a name="http-request"></a><span data-ttu-id="15cb4-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="15cb4-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0ec18-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0ec18-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,34 +41,34 @@ ms.locfileid: "43107271"
 POST /drive/bundles
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="15cb4-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="15cb4-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0ec18-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0ec18-119">Request headers</span></span>
 
-| <span data-ttu-id="15cb4-120">Имя</span><span class="sxs-lookup"><span data-stu-id="15cb4-120">Name</span></span>          | <span data-ttu-id="15cb4-121">Описание</span><span class="sxs-lookup"><span data-stu-id="15cb4-121">Description</span></span>  |
+| <span data-ttu-id="0ec18-120">Имя</span><span class="sxs-lookup"><span data-stu-id="0ec18-120">Name</span></span>          | <span data-ttu-id="0ec18-121">Описание</span><span class="sxs-lookup"><span data-stu-id="0ec18-121">Description</span></span>  |
 |:------------- |:------------ |
-| <span data-ttu-id="15cb4-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="15cb4-122">Authorization</span></span> | <span data-ttu-id="15cb4-123">Носитель \{токен\}.</span><span class="sxs-lookup"><span data-stu-id="15cb4-123">Bearer \{token\}.</span></span> <span data-ttu-id="15cb4-124">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="15cb4-124">Required.</span></span> |
+| <span data-ttu-id="0ec18-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="0ec18-122">Authorization</span></span> | <span data-ttu-id="0ec18-123">Носитель \{токен\}.</span><span class="sxs-lookup"><span data-stu-id="0ec18-123">Bearer \{token\}.</span></span> <span data-ttu-id="0ec18-124">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="0ec18-124">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="15cb4-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="15cb4-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="0ec18-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="0ec18-125">Request body</span></span>
 
-<span data-ttu-id="15cb4-126">В тексте запроса добавьте представление создаваемого набора в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="15cb4-126">In the request body, supply a JSON representation of the bundle to be created.</span></span>
+<span data-ttu-id="0ec18-126">В тексте запроса добавьте представление создаваемого набора в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0ec18-126">In the request body, supply a JSON representation of the bundle to be created.</span></span>
 
-## <a name="response"></a><span data-ttu-id="15cb4-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="15cb4-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0ec18-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="0ec18-127">Response</span></span>
 
-<span data-ttu-id="15cb4-128">Если запрос выполнен успешно, будет возвращен [driveItem](../resources/driveitem.md) , представляющий созданный пакет.</span><span class="sxs-lookup"><span data-stu-id="15cb4-128">If the request is successful, the [driveItem](../resources/driveitem.md) representing the newly created bundle will be returned.</span></span>
+<span data-ttu-id="0ec18-128">Если запрос выполнен успешно, будет возвращен [driveItem](../resources/driveitem.md) , представляющий созданный пакет.</span><span class="sxs-lookup"><span data-stu-id="0ec18-128">If the request is successful, the [driveItem](../resources/driveitem.md) representing the newly created bundle will be returned.</span></span>
 
-<span data-ttu-id="15cb4-129">Ознакомьтесь с разделом [ответы об ошибках][error-response] для получения дополнительных сведений об возвращении ошибок.</span><span class="sxs-lookup"><span data-stu-id="15cb4-129">Read the [Error Responses][error-response] topic for more info about how errors are returned.</span></span>
+<span data-ttu-id="0ec18-129">Ознакомьтесь с разделом [ответы об ошибках][error-response] для получения дополнительных сведений об возвращении ошибок.</span><span class="sxs-lookup"><span data-stu-id="0ec18-129">Read the [Error Responses][error-response] topic for more info about how errors are returned.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="15cb4-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="15cb4-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="0ec18-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="0ec18-130">Examples</span></span>
 
-### <a name="example-1-create-a-bundle"></a><span data-ttu-id="15cb4-131">Пример 1: создание пакета</span><span class="sxs-lookup"><span data-stu-id="15cb4-131">Example 1: Create a bundle</span></span>
+### <a name="example-1-create-a-bundle"></a><span data-ttu-id="0ec18-131">Пример 1: создание пакета</span><span class="sxs-lookup"><span data-stu-id="0ec18-131">Example 1: Create a bundle</span></span>
 
-<span data-ttu-id="15cb4-132">В приведенном ниже примере показано, как создать базовый пакет.</span><span class="sxs-lookup"><span data-stu-id="15cb4-132">The following example shows how to create a basic new bundle.</span></span>
-<span data-ttu-id="15cb4-133">Этот запрос создаст новый пакет с именем `Just some files` и добавит в пакет два существующих элемента.</span><span class="sxs-lookup"><span data-stu-id="15cb4-133">This request will create a new bundle named `Just some files` and add two existing items to the bundle.</span></span>
-<span data-ttu-id="15cb4-134">Этот пакет можно использовать для совместного использования коллекции файлов с другими пользователями без предоставления общего доступа к папке, в которой хранятся эти элементы.</span><span class="sxs-lookup"><span data-stu-id="15cb4-134">This bundle can be used to share a collection of files with other users without sharing the folder those items are stored in.</span></span>
+<span data-ttu-id="0ec18-132">В приведенном ниже примере показано, как создать базовый пакет.</span><span class="sxs-lookup"><span data-stu-id="0ec18-132">The following example shows how to create a basic new bundle.</span></span>
+<span data-ttu-id="0ec18-133">Этот запрос создаст новый пакет с именем `Just some files` и добавит в пакет два существующих элемента.</span><span class="sxs-lookup"><span data-stu-id="0ec18-133">This request will create a new bundle named `Just some files` and add two existing items to the bundle.</span></span>
+<span data-ttu-id="0ec18-134">Этот пакет можно использовать для совместного использования коллекции файлов с другими пользователями без предоставления общего доступа к папке, в которой хранятся эти элементы.</span><span class="sxs-lookup"><span data-stu-id="0ec18-134">This bundle can be used to share a collection of files with other users without sharing the folder those items are stored in.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="15cb4-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="15cb4-135">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="0ec18-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="0ec18-135">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="15cb4-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="15cb4-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="0ec18-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="0ec18-136">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "create-bundle" } -->
 
 ```json
@@ -85,22 +85,22 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="15cb4-137">C#</span><span class="sxs-lookup"><span data-stu-id="15cb4-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="0ec18-137">C#</span><span class="sxs-lookup"><span data-stu-id="0ec18-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-bundle-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="15cb4-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="15cb4-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="0ec18-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0ec18-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-bundle-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="15cb4-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="15cb4-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="0ec18-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0ec18-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-bundle-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="15cb4-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="15cb4-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="0ec18-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="0ec18-140">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -117,16 +117,16 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="15cb4-141">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="15cb4-141">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="15cb4-142">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="15cb4-142">All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="0ec18-141">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="0ec18-141">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="0ec18-142">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0ec18-142">All the properties will be returned from an actual call.</span></span>
 
-### <a name="example-2-create-an-album"></a><span data-ttu-id="15cb4-143">Пример 2: Создание альбома</span><span class="sxs-lookup"><span data-stu-id="15cb4-143">Example 2: Create an album</span></span>
+### <a name="example-2-create-an-album"></a><span data-ttu-id="0ec18-143">Пример 2: Создание альбома</span><span class="sxs-lookup"><span data-stu-id="0ec18-143">Example 2: Create an album</span></span>
 
-<span data-ttu-id="15cb4-144">Запрос на создание нового фотоальбома похож на то, что в аспекте пакета свойство альбома устанавливается в значение, отличное от NULL.</span><span class="sxs-lookup"><span data-stu-id="15cb4-144">The request to create a new photo album is similar, although inside the bundle facet, the album property is set to a non-null value.</span></span>
+<span data-ttu-id="0ec18-144">Запрос на создание нового фотоальбома похож на то, что в аспекте пакета свойство альбома устанавливается в значение, отличное от NULL.</span><span class="sxs-lookup"><span data-stu-id="0ec18-144">The request to create a new photo album is similar, although inside the bundle facet, the album property is set to a non-null value.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="15cb4-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="15cb4-145">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="0ec18-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="0ec18-145">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="15cb4-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="15cb4-146">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="0ec18-146">HTTP</span><span class="sxs-lookup"><span data-stu-id="0ec18-146">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "create-album" } -->
 
 ```json
@@ -142,22 +142,22 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="15cb4-147">C#</span><span class="sxs-lookup"><span data-stu-id="15cb4-147">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="0ec18-147">C#</span><span class="sxs-lookup"><span data-stu-id="0ec18-147">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-album-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="15cb4-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="15cb4-148">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="0ec18-148">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0ec18-148">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-album-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="15cb4-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="15cb4-149">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="0ec18-149">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0ec18-149">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-album-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="15cb4-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="15cb4-150">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="0ec18-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="0ec18-150">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -175,13 +175,13 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="15cb4-151">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="15cb4-151">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="15cb4-152">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="15cb4-152">All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="0ec18-151">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="0ec18-151">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="0ec18-152">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0ec18-152">All the properties will be returned from an actual call.</span></span>
 
-<span data-ttu-id="15cb4-153">Если для _@microsoft. Graph. conflictBehavior_ задано **Переименование** , а пакет с таким именем уже существует, то новое имя пакета будет обновляться как уникальное.</span><span class="sxs-lookup"><span data-stu-id="15cb4-153">If _@microsoft.graph.conflictBehavior_ is set to **rename** and a bundle with the same name already exists, the new bundle name will be updated to be unique.</span></span>
-<span data-ttu-id="15cb4-154">OneDrive добавит номер в конец имени пакета.</span><span class="sxs-lookup"><span data-stu-id="15cb4-154">OneDrive will append a number to the end of the bundle name.</span></span>
+<span data-ttu-id="0ec18-153">Если для _@microsoft. Graph. conflictBehavior_ задано **Переименование** , а пакет с таким именем уже существует, то новое имя пакета будет обновляться как уникальное.</span><span class="sxs-lookup"><span data-stu-id="0ec18-153">If _@microsoft.graph.conflictBehavior_ is set to **rename** and a bundle with the same name already exists, the new bundle name will be updated to be unique.</span></span>
+<span data-ttu-id="0ec18-154">OneDrive добавит номер в конец имени пакета.</span><span class="sxs-lookup"><span data-stu-id="0ec18-154">OneDrive will append a number to the end of the bundle name.</span></span>
 
-<span data-ttu-id="15cb4-155">Например, `My Day at the Beach` будет переименован `My Day at the Beach 1`.</span><span class="sxs-lookup"><span data-stu-id="15cb4-155">For example, `My Day at the Beach` would be renamed `My Day at the Beach 1`.</span></span>
-<span data-ttu-id="15cb4-156">Если `My Day at the Beach 1` используется, то номер будет увеличен повторно до тех пор, пока не будет обнаружено уникальное имя пакета.</span><span class="sxs-lookup"><span data-stu-id="15cb4-156">If `My Day at the Beach 1` is taken, then the number would be incremented again until a unique bundle name is discovered.</span></span>
+<span data-ttu-id="0ec18-155">Например, будет `My Day at the Beach` переименован `My Day at the Beach 1` .</span><span class="sxs-lookup"><span data-stu-id="0ec18-155">For example, `My Day at the Beach` would be renamed `My Day at the Beach 1`.</span></span>
+<span data-ttu-id="0ec18-156">Если `My Day at the Beach 1` используется, то номер будет увеличен повторно до тех пор, пока не будет обнаружено уникальное имя пакета.</span><span class="sxs-lookup"><span data-stu-id="0ec18-156">If `My Day at the Beach 1` is taken, then the number would be incremented again until a unique bundle name is discovered.</span></span>
 
 
 [error-response]: /graph/errors
@@ -193,3 +193,5 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "Bundles/Create"
 } -->
+
+

@@ -5,29 +5,29 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 4a4d34e94fc54cd47ed6773e91c2fb62f0b62ce4
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2425f7ebd6ac516a9100605c9ebfe47f1b87a114
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447712"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47984252"
 ---
-# <a name="invitationparticipantinfo-resource-type"></a><span data-ttu-id="afb5d-103">Тип ресурса ИнвитатионпартиЦипантинфо</span><span class="sxs-lookup"><span data-stu-id="afb5d-103">invitationParticipantInfo resource type</span></span>
+# <a name="invitationparticipantinfo-resource-type"></a><span data-ttu-id="66c34-103">Тип ресурса ИнвитатионпартиЦипантинфо</span><span class="sxs-lookup"><span data-stu-id="66c34-103">invitationParticipantInfo resource type</span></span>
 
-<span data-ttu-id="afb5d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="afb5d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="66c34-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="66c34-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="afb5d-105">Этот ресурс используется для представления объекта, приглашенного на вызов группы.</span><span class="sxs-lookup"><span data-stu-id="afb5d-105">This resource is used to represent the entity that is being invited to a group call.</span></span> 
+<span data-ttu-id="66c34-105">Этот ресурс используется для представления объекта, приглашенного на вызов группы.</span><span class="sxs-lookup"><span data-stu-id="66c34-105">This resource is used to represent the entity that is being invited to a group call.</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="afb5d-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="afb5d-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="66c34-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="66c34-106">Properties</span></span>
 
-| <span data-ttu-id="afb5d-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="afb5d-107">Property</span></span>                           | <span data-ttu-id="afb5d-108">Тип</span><span class="sxs-lookup"><span data-stu-id="afb5d-108">Type</span></span>                          | <span data-ttu-id="afb5d-109">Описание</span><span class="sxs-lookup"><span data-stu-id="afb5d-109">Description</span></span>                                                                          |
+| <span data-ttu-id="66c34-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="66c34-107">Property</span></span>                           | <span data-ttu-id="66c34-108">Тип</span><span class="sxs-lookup"><span data-stu-id="66c34-108">Type</span></span>                          | <span data-ttu-id="66c34-109">Описание</span><span class="sxs-lookup"><span data-stu-id="66c34-109">Description</span></span>                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| <span data-ttu-id="afb5d-110">хищения</span><span class="sxs-lookup"><span data-stu-id="afb5d-110">identity</span></span>                           | [<span data-ttu-id="afb5d-111">identitySet</span><span class="sxs-lookup"><span data-stu-id="afb5d-111">identitySet</span></span>](identityset.md) | <span data-ttu-id="afb5d-112">[Удостоверение](identityset.md) , связанное с этим приглашением.</span><span class="sxs-lookup"><span data-stu-id="afb5d-112">The [identitySet](identityset.md) associated with this invitation.</span></span>                   |
-| <span data-ttu-id="afb5d-113">реплацескаллид</span><span class="sxs-lookup"><span data-stu-id="afb5d-113">replacesCallId</span></span>                     | <span data-ttu-id="afb5d-114">String</span><span class="sxs-lookup"><span data-stu-id="afb5d-114">String</span></span>                        | <span data-ttu-id="afb5d-115">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="afb5d-115">Optional.</span></span> <span data-ttu-id="afb5d-116">Вызов, частью которого в данный момент является целевое удостоверение.</span><span class="sxs-lookup"><span data-stu-id="afb5d-116">The call which the target identity is currently a part of.</span></span> <span data-ttu-id="afb5d-117">Этот вызов будет сброшен после добавления участника.</span><span class="sxs-lookup"><span data-stu-id="afb5d-117">This call will be dropped once the participant is added.</span></span> |
+| <span data-ttu-id="66c34-110">хищения</span><span class="sxs-lookup"><span data-stu-id="66c34-110">identity</span></span>                           | [<span data-ttu-id="66c34-111">identitySet</span><span class="sxs-lookup"><span data-stu-id="66c34-111">identitySet</span></span>](identityset.md) | <span data-ttu-id="66c34-112">[Удостоверение](identityset.md) , связанное с этим приглашением.</span><span class="sxs-lookup"><span data-stu-id="66c34-112">The [identitySet](identityset.md) associated with this invitation.</span></span>                   |
+| <span data-ttu-id="66c34-113">реплацескаллид</span><span class="sxs-lookup"><span data-stu-id="66c34-113">replacesCallId</span></span>                     | <span data-ttu-id="66c34-114">String</span><span class="sxs-lookup"><span data-stu-id="66c34-114">String</span></span>                        | <span data-ttu-id="66c34-115">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="66c34-115">Optional.</span></span> <span data-ttu-id="66c34-116">Вызов, частью которого в данный момент является целевое удостоверение.</span><span class="sxs-lookup"><span data-stu-id="66c34-116">The call which the target identity is currently a part of.</span></span> <span data-ttu-id="66c34-117">Этот вызов будет сброшен после добавления участника.</span><span class="sxs-lookup"><span data-stu-id="66c34-117">This call will be dropped once the participant is added.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="afb5d-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="afb5d-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="66c34-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="66c34-118">JSON representation</span></span>
 
-<span data-ttu-id="afb5d-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="afb5d-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="66c34-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="66c34-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -55,3 +55,4 @@ ms.locfileid: "42447712"
   "suppressions": []
 }
 -->
+
