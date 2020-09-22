@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d33627cacb676390a54b9eda1253e8f600003ea0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2072d8022aa95c82dcdc6deae727c4fd7f64b7fd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411245"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038503"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>Действие removeAllDevicesFromManagement
 
@@ -26,7 +26,7 @@ ms.locfileid: "43411245"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)| _зависит от контекста_ |
-| &nbsp;&nbsp; Управление устройствами | DeviceManagementManagedDevices.PriviligedOperation.All |
+| &nbsp;&nbsp;Управление устройствами | DeviceManagementManagedDevices.PriviligedOperation.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -42,13 +42,13 @@ POST /users/{usersId}/removeAllDevicesFromManagement
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -66,6 +66,9 @@ POST https://graph.microsoft.com/v1.0/users/{usersId}/removeAllDevicesFromManage
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

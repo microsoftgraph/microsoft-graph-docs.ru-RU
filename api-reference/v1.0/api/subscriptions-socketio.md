@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Позволяет получать уведомления об изменении почти в режиме реального времени для диска с помощью socket.io.
 doc_type: apiPageType
-ms.openlocfilehash: 3249bba061257b4bae715734ab4e3ba348131c63
-ms.sourcegitcommit: d6386c5d4bb8917132c3f6c4de945487939b7fb7
+ms.openlocfilehash: 5b7d499940358f7057e32630efae580b66dd8253
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109159"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037964"
 ---
 # <a name="get-websocket-endpoint"></a>Получение конечной точки WebSocket
 
@@ -94,9 +94,9 @@ Content-type: application/json
 }
 ```
 
-`notificationUrl` Возвращаемый параметр является URL-адресом конечной точки Socket.IO.
+`notificationUrl`Возвращаемый параметр является URL-адресом конечной точки Socket.IO.
 
-В приведенном ниже примере показано, `notificationUrl` как использовать with Socket.IO в JavaScript.
+В приведенном ниже примере показано, как использовать `notificationUrl` with Socket.IO в JavaScript.
 
 ```javascript
 // this is the notificationUrl returned from this API
@@ -122,3 +122,4 @@ socket.on("notification", (data)=>console.log("Notification!", data));
   "suppressions": [
   ]
 }-->
+

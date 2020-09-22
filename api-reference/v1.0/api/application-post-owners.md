@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9056bdf9ca72578a732ed219daa209d6db14fe21
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 3b91447ae4c031df3c910dbc799740bc9b7076a5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289681"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039021"
 ---
 # <a name="add-owner"></a>Добавление владельца
 
@@ -41,7 +41,7 @@ POST /applications/{id}/owners/$ref
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите идентификатор объекта каталога, который необходимо назначить владельцем.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
@@ -112,3 +112,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

@@ -5,12 +5,12 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: b424a5ed3aba8bf287ad4d7fe6319504e18b4828
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 9655f8ad57f200fcc1a080c5f210452ca9630441
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44895568"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037516"
 ---
 # <a name="plannerbucket-resource-type"></a>Тип ресурса plannerBucket
 
@@ -26,15 +26,15 @@ ms.locfileid: "44895568"
 |:---------------|:--------|:----------|
 |[Получение объекта plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md); |Чтение свойств и связей объекта **plannerBucket** .|
 |[Перечисление plannerTasks](../api/plannerbucket-list-tasks.md) |Коллекция [plannerTask](plannertask.md)| Получение коллекции объектов **plannerTask**.|
-|[Создание](../api/planner-post-buckets.md); | [plannerBucket](plannerbucket.md);   | Создание нового объекта **plannerBucket** . |
-|[Update](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md);   |Обновление объекта **plannerBucket** . |
-|[Delete](../api/plannerbucket-delete.md) | Нет |Удаление объекта **plannerBucket** . |
+|[создание](../api/planner-post-buckets.md); | [plannerBucket](plannerbucket.md);   | Создание нового объекта **plannerBucket** . |
+|[обновление](../api/plannerbucket-update.md). | [plannerBucket](plannerbucket.md);   |Обновление объекта **plannerBucket** . |
+|[удаление](../api/plannerbucket-delete.md); | Нет |Удаление объекта **plannerBucket** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|String| Только для чтения. Идентификатор сегмента. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
-|name|Строка|Имя сегмента.|
+|name|String|Имя сегмента.|
 |orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
 |planId|Строка|ИДЕНТИФИКАТОР плана, к которому относится сегмент.|
 
@@ -43,7 +43,7 @@ ms.locfileid: "44895568"
 |:---------------|:--------|:----------|
 |tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускается значение null. Коллекция задач в сегменте.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
@@ -74,3 +74,4 @@ ms.locfileid: "44895568"
   "section": "documentation",
   "tocPath": ""
 }-->
+

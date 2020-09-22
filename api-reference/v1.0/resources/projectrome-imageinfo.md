@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: 70d95d833518814f75d31227264be0dd5f85dba4
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d4ed317b987d461c9ef6816e9d05aae0de358ec7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806886"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037201"
 ---
 # <a name="imageinfo-resource-type"></a>Тип ресурса Имажеинфо
 
@@ -24,7 +24,7 @@ ms.locfileid: "46806886"
 |:----|:-----|:-----------|
 |iconUrl | String | Необязательно URI, указывающий на значок, представляющий приложение, используемое для создания действия.|
 |алтернатетекст | String | Необязательно доступное для изображения содержимое с замещающим текстом|
-|аддимажекуери | Логический | Необязательно параметр, указывающий на то, что сервер может динамически отображать изображение в ответ на параметризация. Например, изображение с высокой контрастностью|
+|аддимажекуери | Boolean | Необязательно параметр, указывающий на то, что сервер может динамически отображать изображение в ответ на параметризация. Например, изображение с высокой контрастностью|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -58,3 +58,4 @@ ms.locfileid: "46806886"
   "section": "documentation",
   "tocPath": ""
 }-->
+

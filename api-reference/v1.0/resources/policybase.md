@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 3b45d36976f8939efbeb11dcc0a7cda5598b6afb
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 4e0d1d59698b8a82252c4cbc2ae8edf2ae1e3b62
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917546"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037334"
 ---
 # <a name="policybase-resource-type"></a>Тип ресурса основы
 
@@ -18,7 +18,7 @@ ms.locfileid: "43917546"
 
 Представляет абстрактный базовый тип для типов политик, от которых наследуется наследование.
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 
 Нет
 
@@ -28,7 +28,7 @@ ms.locfileid: "43917546"
 |:-------------|:------------|:------------|
 |id|String| Уникальный идентификатор для этой политики. Только для чтения.|
 |description|String| Описание для этой политики.|
-|displayName|Строка| Отображаемое имя для этой политики. |
+|displayName|String| Отображаемое имя для этой политики. |
 
 ## <a name="relationships"></a>Связи
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 8832a037f3bbb5d24de176e56fabebeb883992b6
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: f895ccbc1aaa143bbc9bb8adc7045fbab705e0cd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811254"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037229"
 ---
 # <a name="process-resource-type"></a>Тип ресурса "процесс"
 
@@ -27,7 +27,7 @@ ms.locfileid: "46811254"
 |createdDateTime|DateTimeOffset|Время запуска процесса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |fileHash|[fileHash](filehash.md)|Сложный тип, содержащий хэши файлов (криптография и с учетом расположения).|
 |интегритилевел|processIntegrityLevel|Уровень целостности процесса. Возможные значения: `unknown`, `untrusted`, `low`, `medium`, `high`, `system`.|
-|Повышенный уровень|Логический|Значение true, если процесс повышен.|
+|Повышенный уровень|Boolean|Значение true, если процесс повышен.|
 |name|String|Имя файла образа процесса.|
 |парентпроцесскреатеддатетиме|DateTimeOffset|Дата и время начала родительского процесса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |парентпроцессид|Int32|Идентификатор процесса (PID) родительского процесса.|
@@ -35,7 +35,7 @@ ms.locfileid: "46811254"
 |path|String|Полный путь, включая имя файла.|
 |processId|Int32|Идентификатор процесса (PID).|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -74,3 +74,4 @@ ms.locfileid: "46811254"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: be86fd4601c31b7431a7a4994e7a2df081bbc363
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e963e5b0ae6bd05dbf33ed5f8f3968c601ec1f62
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461818"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037096"
 ---
 # <a name="publicclientapplication-resource-type"></a>Тип ресурса publicClientApplication
 
@@ -22,7 +22,7 @@ ms.locfileid: "43461818"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|редиректурис|Коллекция объектов string| Задает URL-адреса, по которым маркеры пользователей отправляются для входа, или URI перенаправления, для которых отправляются коды авторизации OAuth 2,0 и маркеры доступа. |
+|редиректурис|Коллекция String| Задает URL-адреса, по которым маркеры пользователей отправляются для входа, или URI перенаправления, для которых отправляются коды авторизации OAuth 2,0 и маркеры доступа. |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -55,3 +55,4 @@ ms.locfileid: "43461818"
   "suppressions": []
 }
 -->
+

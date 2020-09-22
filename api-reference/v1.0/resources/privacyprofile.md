@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: ec7de45bdffc2a8a00ac6519afb55cfbbc841429
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 52aa1171e8fdc1fb01eae0241306fe197d7b36c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811275"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037222"
 ---
 # <a name="privacyprofile-resource-type"></a>Тип ресурса privacyProfile
 
@@ -24,7 +24,7 @@ ms.locfileid: "46811275"
 |contactEmail|String| Допустимый электронный адрес SMTP для контактного лица, к которому можно обращаться по вопросам, касающимся заявления о конфиденциальности. Не обязательное.|
 |statementUrl|String| Допустимый формат URL-адреса, который начинается с http:// или https://. Максимальная длина составляет 255 символов. URL-адрес заявления о конфиденциальности организации. Не обязательное.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -42,3 +42,4 @@ ms.locfileid: "46811275"
   "statementUrl": "string"
 }
 ```
+

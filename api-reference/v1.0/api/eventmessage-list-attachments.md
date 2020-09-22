@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 85f00cd7d0788237cc7dbe09fa153fe5f02874b3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c8bafea2ea512ae9535c586cbd3a1d98ab31c1b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461541"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038748"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -43,7 +43,7 @@ GET /users/{id | userPrincipalName}/messages/{id}/attachments
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Attachment](../resources/attachment.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 
 ---
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -119,3 +119,4 @@ Content-length: 215
   "suppressions": [
   ]
 }-->
+

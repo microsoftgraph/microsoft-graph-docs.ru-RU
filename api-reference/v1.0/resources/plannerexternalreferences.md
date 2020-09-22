@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 37511817d32d1979cf30fc12eb7a1560b1870c27
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0bf0945fb133e87d2dee3000c6084aa13e9638ba
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447124"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037488"
 ---
 # <a name="plannerexternalreferences-resource-type"></a>Тип ресурса Планнерекстерналреференцес
 
@@ -20,11 +20,11 @@ ms.locfileid: "42447124"
 
 
 ## <a name="properties"></a>Свойства
-Клиентская возможность может определять свойства открытого типа. В этом случае клиент должен предоставить **действительные URL-адреса** на основе протоколов **HTTP/HTTPS** , а их значения должны быть объектами [екстерналреференце](plannerexternalreference.md) . На основе OData имена свойств в открытых типах не могут содержать следующие символы: `.`, `:`и `%` поэтому их необходимо закодировать. Пример показан ниже. Чтобы удалить ссылку, присвойте свойству значение `null`.
+Клиентская возможность может определять свойства открытого типа. В этом случае клиент должен предоставить **действительные URL-адреса** на основе протоколов **HTTP/HTTPS** , а их значения должны быть объектами [екстерналреференце](plannerexternalreference.md) . На основе OData имена свойств в открытых типах не могут содержать следующие символы: `.` , `:` и `%`  поэтому их необходимо закодировать. Пример показан ниже. Чтобы удалить ссылку, присвойте свойству значение `null` .
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление JSON ресурса.
+Ниже этот ресурс представлен в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -77,3 +77,4 @@ ms.locfileid: "42447124"
   "section": "documentation",
   "tocPath": ""
 }-->
+

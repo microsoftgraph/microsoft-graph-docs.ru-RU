@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 49b8989bd8526cbe8074a386ae31e76fd195642d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1bdf811e68e6a856d50621d063fe66daecf57748
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447096"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037367"
 ---
 # <a name="planneruser-resource-type"></a>Тип ресурса plannerUser
 
@@ -24,7 +24,7 @@ ms.locfileid: "42447096"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Список планов](../api/planneruser-list-plans.md) |Коллекция объектов [plannerPlan](plannerplan.md)| Получение коллекции объектов **plannerPlan** .|
-|[Перечисление задач](../api/planneruser-list-tasks.md) |Коллекция [plannerTask](plannertask.md)| Получение коллекции объектов **plannerTask**.|
+|[Перечисление задач](../api/planneruser-list-tasks.md) |Коллекция объектов [plannerTask](plannertask.md)| Получение коллекции объектов **plannerTask**.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -65,3 +65,4 @@ ms.locfileid: "42447096"
   "section": "documentation",
   "tocPath": ""
 }-->
+

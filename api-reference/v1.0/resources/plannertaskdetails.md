@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 4dda174401ebf3435c7a190a3f92167ac6b47c0d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 32ea3fff1c97920a83f667282e1341926a02b5c1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533972"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037377"
 ---
 # <a name="plannertaskdetails-resource-type"></a>Тип ресурса plannerTaskDetails
 
@@ -30,9 +30,9 @@ ms.locfileid: "42533972"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |checklist|[plannerChecklistItems](plannerchecklistitems.md)|Коллекция элементов контрольного списка задачи.|
-|description|Строка|Описание задачи.|
-|id|Строка| Только для чтения. Идентификатор сведений о задаче. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
-|previewType|string|Устанавливает тип предварительного просмотра задачи. Допустимые значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. `automatic` Если выбран отображаемый предварительный просмотр, то приложение просматривает задачу.|
+|description|String|Описание задачи.|
+|id|String| Только для чтения. Идентификатор сведений о задаче. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
+|previewType|string|Устанавливает тип предварительного просмотра задачи. Допустимые значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Если `automatic` выбран отображаемый предварительный просмотр, то приложение просматривает задачу.|
 |references|[plannerExternalReferences](plannerexternalreferences.md)|Коллекция ссылок на задачу.|
 
 ## <a name="relationships"></a>Связи
@@ -69,3 +69,4 @@ ms.locfileid: "42533972"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,14 +3,14 @@ title: Тип ресурса roleDefinition
 description: 'Ресурс "Определение роли". Определение роли лежит в основе доступа на основе ролей в Intune. Роль сочетает в себе ресурс Intune, например мобильное приложение, и связанные разрешения роли для ресурса, такие как создание или чтение. Есть роли двух типов: встроенные и настраиваемые. Встроенные роли невозможно изменить. Как встроенные, так и настраиваемые роли должны включать применяемые назначения. Создайте настраиваемые роли, чтобы определить роль, которая позволяет объединить любые доступные ресурсы и разрешения роли.'
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8871b37406b4eb976d85ae93a67430ecb9f35f5a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2704b26265a6e1f39ef7d7383f1ade1ef1ffc9ca
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441596"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037797"
 ---
 # <a name="roledefinition-resource-type"></a>Тип ресурса roleDefinition
 
@@ -24,8 +24,8 @@ ms.locfileid: "43441596"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Перечисление объектов roleDefinition](../api/intune-rbac-roledefinition-list.md)|Коллекция [roleDefinition](../resources/intune-rbac-roledefinition.md)|Список свойств и связей объектов [roleDefinition](../resources/intune-rbac-roledefinition.md).|
-|[Получение объекта roleDefinition](../api/intune-rbac-roledefinition-get.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md);|Чтение свойств и связей объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
-|[Создание объекта roleDefinition](../api/intune-rbac-roledefinition-create.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md);|Создание объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
+|[Получение объекта roleDefinition](../api/intune-rbac-roledefinition-get.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|Чтение свойств и связей объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
+|[Создание объекта roleDefinition](../api/intune-rbac-roledefinition-create.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|Создание объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
 |[Удаление объекта roleDefinition](../api/intune-rbac-roledefinition-delete.md)|Нет|Удаление объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
 |[Обновление объекта roleDefinition](../api/intune-rbac-roledefinition-update.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|Обновление свойств объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
 
@@ -33,7 +33,7 @@ ms.locfileid: "43441596"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
-|displayName|Строка|Отображаемое имя определения роли.|
+|displayName|String|Отображаемое имя определения роли.|
 |description|String|Описание определения роли.|
 |rolePermissions|Коллекция [rolePermission](../resources/intune-rbac-rolepermission.md)|Список разрешений, активированных для роли. Они должны соответствовать объекту actionName, который определен как часть rolePermission.|
 |isBuiltIn|Boolean|Тип роли. Для встроенного определения роли задается значение True, а для настраиваемого — False.|
@@ -76,6 +76,8 @@ ms.locfileid: "43441596"
   "isBuiltIn": true
 }
 ```
+
+
 
 
 

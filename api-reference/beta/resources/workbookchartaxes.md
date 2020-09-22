@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 89d9a45f0f9e992ac8a93cde6114fc8c9f073359
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 41bb19e048c27f8c498d809cace15080ec79fb05
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519388"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039098"
 ---
 # <a name="workbookchartaxes-resource-type"></a>Тип ресурса Воркбукчартаксес
 
@@ -21,13 +21,13 @@ ms.locfileid: "42519388"
 Представляет оси диаграммы.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 Нет
 
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |категоряксис|[воркбукчартаксис](workbookchartaxis.md)|Представляет ось категорий на диаграмме. Только для чтения.|
@@ -66,3 +66,5 @@ ms.locfileid: "42519388"
   "suppressions": []
 }
 -->
+
+

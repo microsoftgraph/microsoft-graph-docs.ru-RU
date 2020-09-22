@@ -1,22 +1,22 @@
 ---
 title: Тип ресурса plannerTask
-description: Ресурс **plannerTask** представляет задачу планировщика в Office 365. Задача планировщика содержится в плане и может быть назначена сегменту в плане. Каждый объект задачи имеет объект details, который может содержать дополнительные сведения о задаче. Дополнительные сведения об отношениях между группой, планом и задачей см. в этом обзоре.
+description: Ресурс **plannerTask** представляет задачу планировщика в Microsoft 365. Задача планировщика содержится в плане и может быть назначена сегменту в плане. Каждый объект задачи имеет объект details, который может содержать дополнительные сведения о ней. Дополнительную информацию об отношениях между группой, планом и задачей см. в обзоре.
 localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 7a5e5db3baf0ebf82597d796f4f1a8737f3d7ea9
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 62efdd9c76aecde9367e36d5d688313a10aa69d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447103"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037382"
 ---
 # <a name="plannertask-resource-type"></a>Тип ресурса plannerTask
 
 Пространство имен: microsoft.graph
 
-Ресурс **plannerTask** представляет задачу планировщика в Office 365. Задача планировщика содержится в [плане](plannerplan.md) и может быть назначена [сегменту](plannerbucket.md) в плане. Каждый объект задачи имеет объект [details](plannertaskdetails.md), который может содержать дополнительные сведения о задаче. Дополнительные сведения об отношениях между группой, планом и задачей см. в [этом обзоре](planner-overview.md).
+Ресурс **plannerTask** представляет задачу планировщика в Microsoft 365. Задача планировщика содержится в [плане](plannerplan.md) и может быть назначена [сегменту](plannerbucket.md) в плане. Каждый объект задачи имеет объект [details](plannertaskdetails.md), который может содержать дополнительные сведения о ней. Дополнительную информацию об отношениях между группой, планом и задачей см. в [этом обзоре](planner-overview.md).
 
 
 ## <a name="methods"></a>Методы
@@ -108,3 +108,4 @@ ms.locfileid: "42447103"
   "section": "documentation",
   "tocPath": ""
 }-->
+

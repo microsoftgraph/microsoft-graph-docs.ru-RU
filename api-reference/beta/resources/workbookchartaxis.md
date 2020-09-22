@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 5e799d5db1042f743ecc8fe389ed32e808b7fe02
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: ca26aec49744bacf1e9e1d9738dfd552944622f7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519381"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039084"
 ---
 # <a name="workbookchartaxis-resource-type"></a>Тип ресурса Воркбукчартаксис
 
@@ -37,7 +37,7 @@ ms.locfileid: "42519381"
 |minimum|Json|Представляет минимальное значение на оси значений. Ему можно присвоить числовое значение или пустую строку (для автоматически заданных значений оси). Всегда возвращает числовое значение.|
 |minorUnit|Json|Представляет интервал между двумя промежуточными делениями. Можно указать в виде числового значения или пустой строки (для автоматически заданных значений оси). Возвращаемое значение всегда является числом.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |format|[воркбукчартаксисформат](workbookchartaxisformat.md)|Представляет форматирование объекта диаграммы, в том числе форматирование линий и шрифта. Только для чтения.|
@@ -88,3 +88,5 @@ ms.locfileid: "42519381"
   "suppressions": []
 }
 -->
+
+

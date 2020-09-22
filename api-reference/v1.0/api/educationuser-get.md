@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: bd3453a53448a012fc4b0b80ba385f7fb7e35180
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 2e339ed49e3101cf1214b4ccc0a2861c0c0bb434
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517427"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038916"
 ---
 # <a name="get-educationuser"></a>Получение educationUser
 
@@ -42,7 +42,7 @@ GET /education/users/{id}
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвратит код отклика `200 OK` и объект [educationUser](../resources/educationuser.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -133,3 +133,4 @@ Content-length: 508
   "suppressions": [
   ]
 }-->
+

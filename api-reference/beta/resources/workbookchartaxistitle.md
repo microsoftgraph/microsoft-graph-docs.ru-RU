@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 543a13042f4245f90b799f6298a3f29c6368ea8f
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 9f751d1dc0c21f1a3fe60dd9dfa6cb03209ae12d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519367"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039057"
 ---
 # <a name="workbookchartaxistitle-resource-type"></a>Тип ресурса Воркбукчартаксиститле
 
@@ -34,7 +34,7 @@ ms.locfileid: "42519367"
 |text|string|Обозначает название оси.|
 |visible|boolean|Логическое значение, которое определяет видимость названия оси.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |format|[воркбукчартаксиститлеформат](workbookchartaxistitleformat.md)|Представляет форматирование для названия оси диаграммы. Только для чтения.|
@@ -73,3 +73,5 @@ ms.locfileid: "42519367"
   "suppressions": []
 }
 -->
+
+

@@ -3,14 +3,14 @@ title: Тип ресурса remoteAssistancePartner
 description: Ресурсы remoteAssistPartner представляются метаданные и состояние определенной партнерской службы удаленного помощника.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9eca68f2a2feb2906f1d2b55b3f857d515a22c50
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: fd035cd48a45e1240123d564110df4e1466feb47
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441559"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037775"
 ---
 # <a name="remoteassistancepartner-resource-type"></a>Тип ресурса remoteAssistancePartner
 
@@ -28,14 +28,14 @@ ms.locfileid: "43441559"
 |[Создание объекта remoteAssistancePartner](../api/intune-remoteassistance-remoteassistancepartner-create.md)|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md)|Создание объекта [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).|
 |[Удаление объекта remoteAssistancePartner](../api/intune-remoteassistance-remoteassistancepartner-delete.md)|Нет|Удаляет объект [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).|
 |[Обновление объекта remoteAssistancePartner](../api/intune-remoteassistance-remoteassistancepartner-update.md)|[remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md)|Обновление свойств объекта [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).|
-|[Действие beginOnboarding](../api/intune-remoteassistance-remoteassistancepartner-beginonboarding.md)|None|Н/Д|
-|[Действие disconnect](../api/intune-remoteassistance-remoteassistancepartner-disconnect.md)|Нет|Пока не задокументировано|
+|[Действие beginOnboarding](../api/intune-remoteassistance-remoteassistancepartner-beginonboarding.md)|Нет|Н/Д|
+|[Действие disconnect](../api/intune-remoteassistance-remoteassistancepartner-disconnect.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор партнера.|
-|displayName|Строка|Отображаемое имя партнера.|
+|displayName|String|Отображаемое имя партнера.|
 |onboardingUrl|String|URL-адрес портала подключения партнера, где администратор может настроить свою службу удаленного помощника.|
 |onboardingStatus|[ремотеассистанцеонбоардингстатус](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|Подлежит определению. Возможные значения: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Метка времени последнего запроса, отправленного службе Intune партнером TEM.|
@@ -61,6 +61,8 @@ ms.locfileid: "43441559"
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
+
+
 
 
 

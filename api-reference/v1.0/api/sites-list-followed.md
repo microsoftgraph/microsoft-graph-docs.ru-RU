@@ -5,12 +5,12 @@ title: Перечисление отслеживаемых сайтов
 localization_priority: Normal
 ms.prod: SharePoint
 doc_type: apiPageType
-ms.openlocfilehash: e1f1d781897802eab62674d4bbed18507ec4d2c6
-ms.sourcegitcommit: e20c113409836115f338dcfe3162342ef3bd6a4a
+ms.openlocfilehash: d52b91fa9b24394f92169a74c46d12278c779784
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45006697"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038084"
 ---
 # <a name="list-followed-sites"></a>Перечисление отслеживаемых сайтов
 
@@ -144,3 +144,4 @@ Content-type: application/json
   ]
 }
 -->
+

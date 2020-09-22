@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ресурс quota предоставляет сведения об ограничениях дискового пространства в ресурсе Drive.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 293daf950beb5cdf3cbd791a1e8bf0d4b92a220b
-ms.sourcegitcommit: 1ec5a7be90790aaebdf6d85d93ab0c72b381c9c3
+ms.openlocfilehash: 833093569de75af450f325384f29d001e50da000
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44864212"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037109"
 ---
 # <a name="quota-resource-type"></a>Тип ресурса quota
 
@@ -74,3 +74,4 @@ ms.locfileid: "44864212"
   ],
   "tocPath": "Facets/Quota"
 } -->
+

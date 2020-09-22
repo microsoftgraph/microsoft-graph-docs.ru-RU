@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f5b75ce4d3df43f0f24d35178777198173d6a97a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 69f2b7f8712cc450ef36d301b2458678f727eff2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43370952"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038860"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -64,7 +64,7 @@ GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/att
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/attachments
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -74,7 +74,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Attachment](../resources/attachment.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/v1.0/me/events/{id}/attachments
 
 ---
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -150,3 +150,4 @@ Content-length: 215
   "suppressions": [
   ]
 }-->
+

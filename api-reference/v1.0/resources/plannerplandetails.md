@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: ec6f22b9a14fc25f6c63b3e6e7c93ec66e4741d2
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 727da0983ddcaffb158be14a578a5a81eacecab3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897003"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037390"
 ---
 # <a name="plannerplandetails-resource-type"></a>Тип ресурса plannerPlanDetails
 
@@ -25,7 +25,7 @@ ms.locfileid: "44897003"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта plannerPlanDetails](../api/plannerplandetails-get.md) | [plannerPlanDetails](plannerplandetails.md); |Чтение свойств и связей объекта **plannerPlanDetails** .|
-|[Update](../api/plannerplandetails-update.md) | [plannerPlanDetails](plannerplandetails.md);    |Обновление объекта **plannerPlanDetails** . |
+|[обновление](../api/plannerplandetails-update.md). | [plannerPlanDetails](plannerplandetails.md);    |Обновление объекта **plannerPlanDetails** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -66,3 +66,4 @@ ms.locfileid: "44897003"
   "section": "documentation",
   "tocPath": ""
 }-->
+

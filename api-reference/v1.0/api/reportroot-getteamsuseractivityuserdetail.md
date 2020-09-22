@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 79d64971eb23ab98069298d016b0e04686d79d67
-ms.sourcegitcommit: c4d6ccd343a6b298a2aa844f1bad66c736487251
+ms.openlocfilehash: 7932844945de2255fb07adf16cdd943c65421c7f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42589161"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038356"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -28,7 +28,7 @@ ms.locfileid: "42589161"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                           |
 | Для приложений                            | Reports.Read.All                         |
 
-**Примечание**. Чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю соответствующую роль ограниченного администратора Azure AD. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Office 365](/graph/reportroot-authorization).
+**Примечание**. Чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю соответствующую роль ограниченного администратора Azure AD. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -131,3 +131,4 @@ Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Da
   "suppressions": [
   ]
 }-->
+

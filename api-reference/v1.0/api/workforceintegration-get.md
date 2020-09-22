@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: aa08c99cdca34a9561c81e0f90ac4f61fdb15871
-ms.sourcegitcommit: b083a570375252eff8054f9fe70e1e5e2becc06d
+ms.openlocfilehash: 2b19f368f14f26679247f310c34c6f263e45aec6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44845759"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037936"
 ---
 # <a name="get-workforceintegration"></a>Получение Воркфорцеинтегратион
 
@@ -40,7 +40,7 @@ GET /teamwork/workforceIntegrations/{workforceIntegrationId}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -129,3 +129,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

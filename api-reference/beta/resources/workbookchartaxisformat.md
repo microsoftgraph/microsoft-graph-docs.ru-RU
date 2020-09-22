@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 0bb5375edc2a2e504b602d6b66720ac9aee9bc55
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: d04f885f135eadf2a8404b7e17b3b2ed32554e14
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519374"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039066"
 ---
 # <a name="workbookchartaxisformat-resource-type"></a>Тип ресурса Воркбукчартаксисформат
 
@@ -21,12 +21,12 @@ ms.locfileid: "42519374"
 Инкапсулирует свойства формата для оси диаграммы.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 Нет
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |font|[воркбукчартфонт](workbookchartfont.md)|Представляет атрибуты шрифта (имя, размер, цвет и т. д.) для элемента оси диаграммы. Только для чтения.|
@@ -64,3 +64,5 @@ ms.locfileid: "42519374"
   "suppressions": []
 }
 -->
+
+

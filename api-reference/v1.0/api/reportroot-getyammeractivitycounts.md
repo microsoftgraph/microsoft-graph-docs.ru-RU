@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 39b37534565d04f14e8560bffd012e61ae823617
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 1005d97b8707c7bd8de1d67ed3bdd03e9a51d150
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44892408"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038349"
 ---
 # <a name="reportroot-getyammeractivitycounts"></a>reportRoot: getYammerActivityCounts
 
@@ -30,7 +30,7 @@ ms.locfileid: "44892408"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                           |
 | Для приложений                            | Reports.Read.All                         |
 
-**Примечание**. Чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю соответствующую роль ограниченного администратора Azure AD. Более подробную информацию [можно узнать в статье авторизация для API для чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
+**Примечание**. Чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю соответствующую роль ограниченного администратора Azure AD. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerActivityCounts(period='D7'
 ```
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -126,3 +126,4 @@ Report Refresh Date,Liked,Posted,Read,Report Date,Report Period
   "suppressions": [
   ]
 }-->
+

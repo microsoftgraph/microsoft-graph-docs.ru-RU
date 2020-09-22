@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: c4112be06512ba0f974206721ac5fb186cf7573e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: b9eb6eb3d69cf89819ece38675893607c042e86b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509978"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038237"
 ---
 # <a name="get-resource"></a>Вывод ресурса
 
@@ -43,7 +43,7 @@ GET /sites/{id}/onenote/resources/{id}/content
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и двоичные данные изображения или файла в тексте отклика.
 
@@ -103,3 +103,4 @@ Content-Type: application/octet-stream
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: 9e690c13086cb0c40905255678f8b7134521e2f3
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 0c08fed11b53610c06b27b9fa9d5e898b2f0620d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533980"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037368"
 ---
 # <a name="plannerprogresstaskboardtaskformat-resource-type"></a>Тип ресурса plannerProgressTaskBoardTaskFormat
 
@@ -63,3 +63,4 @@ ms.locfileid: "42533980"
   "section": "documentation",
   "tocPath": ""
 }-->
+

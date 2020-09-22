@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: resourcePageType
-ms.openlocfilehash: 7a52fb4bc3062129175a43c95e0603eff3d514d5
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: c76df8bcc4334fc045b3841fad934f8749913381
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806935"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037243"
 ---
 # <a name="activity-resource-type"></a>Тип ресурса активности
 
@@ -47,18 +47,18 @@ ms.locfileid: "46806935"
 |активатионурл | String | Обязательный. URL-адрес, используемый для запуска действия в оптимальном собственном интерфейсе, представленном appId. Может запустить веб-приложение, если не существует собственного приложения.|
 |фаллбаккурл | String | Необязательный параметр. URL-адрес, используемый для запуска действия в веб-приложении, если оно доступно.|
 |contentUrl | String | Необязательный параметр. Используется в событии, когда содержимое может отображаться за преработкой в собственном или веб-интерфейсе веб-приложения (например, указатель на элемент в RSS-канале).|
-|висуалелементс| [висуалинфо](../resources/projectrome-visualinfo.md) | Обязательный элемент. Объект, содержащий информацию для отображения действий в пользовательском интерфейсе.|
-|контентинфо | Нетипизированный объект JSON | Необязательное свойство. Настраиваемая часть расширяемого описания содержимого Data – JSON – LD в соответствии с синтаксисом [Schema.org](https://schema.org) .|
+|висуалелементс| [висуалинфо](../resources/projectrome-visualinfo.md) | Обязательно. Объект, содержащий информацию для отображения действий в пользовательском интерфейсе.|
+|контентинфо | Нетипизированный объект JSON | Необязательный параметр. Настраиваемая часть расширяемого описания содержимого Data – JSON – LD в соответствии с синтаксисом [Schema.org](https://schema.org) .|
 |expirationDateTime | DateTimeOffset | Задается сервером. DateTime в формате UTC, когда истечет срок действия объекта на сервере.|
 |status | status | Задается сервером. Код состояния, используемый для идентификации допустимых объектов. Значения: активные, обновленные, удаленные, проигнорированы.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 |Связь | Тип | Описание|
 |:------------|:-----|:-----------|
-|Historyitem| Коллекция [активитихисторитем](../resources/projectrome-historyitem.md) | Необязательное свойство. Свойство NavigationProperty/вложение; свойство навигации для Historyitem действия.|
+|Historyitem| Коллекция [активитихисторитем](../resources/projectrome-historyitem.md) | Необязательный параметр. Свойство NavigationProperty/вложение; свойство навигации для Historyitem действия.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -115,3 +115,4 @@ ms.locfileid: "46806935"
   "section": "documentation",
   "tocPath": ""
 }-->
+

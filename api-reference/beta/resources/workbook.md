@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса "книга"
+title: Тип ресурса workbook
 description: Содержит связанные объекты книг, такие как листы, таблицы, диапазоны и т. д.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 34523b5ff0e358344b8c3c5b695e89a9bdddd7a2
-ms.sourcegitcommit: b469176f49aacbd02cd06838cc7c8d36cf5bc768
+ms.openlocfilehash: a2940b4b873630f21ceb3c7db21456e81e8c859a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45165109"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039190"
 ---
-# <a name="workbook-resource-type"></a>Тип ресурса "книга"
+# <a name="workbook-resource-type"></a>Тип ресурса workbook
 
 Пространство имен: microsoft.graph
 
@@ -22,9 +22,9 @@ ms.locfileid: "45165109"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Создание сеанса](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Создание сеанса книги для запуска сохраняемого или несохраняемого сеанса.|
-|[Закрыть сеанс](../api/workbook-closesession.md) | Нет |Закрытие существующего сеанса.|
-|[Сеанс обновления](../api/workbook-refreshsession.md) | Нет |Обновление существующего сеанса.|
+|[Create session](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Создание сеанса книги для запуска сохраняемого или несохраняемого сеанса.|
+|[Close session](../api/workbook-closesession.md) | Нет |Закрытие существующего сеанса.|
+|[Refresh session](../api/workbook-refreshsession.md) | Нет |Обновление существующего сеанса.|
 
 ## <a name="properties"></a>Свойства
 Нет
@@ -32,11 +32,11 @@ ms.locfileid: "45165109"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|names|Коллекция [воркбукнамедитем](workbooknameditem.md) |Представляет коллекцию именованных элементов в книге (именованные диапазоны и константы). Только для чтения.|
-|tables|Коллекция [воркбуктабле](workbooktable.md) |Представляет коллекцию таблиц, сопоставленных с книгой. Только для чтения.|
-|worksheets|Коллекция [воркбукворкшит](workbookworksheet.md) |Представляет коллекцию листов, сопоставленных с книгой. Только для чтения.|
+|names|Коллекция [workbookNamedItem](workbooknameditem.md) |Представляет коллекцию именованных элементов в книге (именованные диапазоны и константы). Только для чтения.|
+|tables|Коллекция [workbookTable](workbooktable.md) |Представляет коллекцию таблиц, сопоставленных с книгой. Только для чтения.|
+|worksheets|Коллекция [workbookWorksheet](workbookworksheet.md) |Представляет коллекцию листов, сопоставленных с книгой. Только для чтения.|
 |воркббукаппликатион|[воркбукаппликатион](workbookapplication.md) |Представляет Воркбукаппликатион Excel, который управляет книгой.|
-|operations|Коллекция [воркбукоператион](workbookoperation.md)|Состояние операций книги. Получение коллекции операций не поддерживается, но вы можете получить состояние длительной операции, если `Location` заголовок возвращается в ответе. Только для чтения. Допускается значение null.|
+|operations|Коллекция [workbookOperation](workbookoperation.md)|Состояние операций книги. Получить коллекцию операций нельзя, но можно получить состояние длительной операции, если в ответе возвращается заголовок `Location`. Только для чтения. Допускается значение null.|
 
 ## <a name="functions"></a>Функции
 
@@ -161,3 +161,5 @@ content-type: application/json;odata.metadata
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

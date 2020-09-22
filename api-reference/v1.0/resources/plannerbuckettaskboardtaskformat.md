@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: a1d5c084835d5e86d090f8d9d4691276e900345a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1bd9282a137640af0abc1fd590ac5a87c18ea94e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42534016"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037502"
 ---
 # <a name="plannerbuckettaskboardtaskformat-resource-type"></a>Тип ресурса plannerBucketTaskBoardTaskFormat
 
@@ -63,3 +63,4 @@ ms.locfileid: "42534016"
   "section": "documentation",
   "tocPath": ""
 }-->
+

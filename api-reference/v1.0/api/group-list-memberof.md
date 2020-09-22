@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 7f30b10ef9c6b33fc92b86b02fefe8c4c71c4a39
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: a6a87d643c9cd0b53b4769f6943f4a6f8e779f5f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43125227"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038622"
 ---
 # <a name="list-memberof"></a>Список memberOf
 
@@ -18,7 +18,7 @@ ms.locfileid: "43125227"
 
 Получение групп, непосредственным членом которых является данная группа. 
 
-Эта операция не является транзитивной. В отличие от аналогичной операции для функции "Группы Office 365", эта операция возвращает группы всех типов, а не только группы Office 365.
+Эта операция не является транзитивной. В отличие от аналогичной операции для функции "Группы Microsoft 365", эта операция возвращает группы всех типов, а не только группы Microsoft 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -116,3 +116,4 @@ Content-length: 55
   "suppressions": [
   ]
 }-->
+

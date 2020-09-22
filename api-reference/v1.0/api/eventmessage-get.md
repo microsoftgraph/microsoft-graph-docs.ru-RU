@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6aae4c310ad98c81bec05929699826d4f6eff6c4
-ms.sourcegitcommit: 20b951f8bd245bb3a2bc7d3f5533e8619e9db084
+ms.openlocfilehash: 8f3d05bf9e2ed8de15ab1b79946dbf4c71ce7920
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "45427489"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038755"
 ---
 # <a name="get-eventmessage"></a>Получение объекта eventMessage
 
@@ -45,7 +45,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -193,7 +193,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=mic
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. В отклике возвращаются свойства связанного события. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. В отклике возвращаются свойства связанного события. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",
@@ -359,3 +359,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

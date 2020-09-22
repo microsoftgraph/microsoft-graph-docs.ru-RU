@@ -3,14 +3,14 @@ title: Тип ресурса allDevicesAssignmentTarget
 description: Представляет ресурс, назначенный всем управляемым устройствам в клиенте.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5f89e50ea2d8e3ec1b0d396ed9aff7f4e13c9901
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2157cd348a7620c71175338631e210944430cf53
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43441552"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037768"
 ---
 # <a name="alldevicesassignmenttarget-resource-type"></a>Тип ресурса allDevicesAssignmentTarget
 
@@ -42,6 +42,8 @@ ms.locfileid: "43441552"
   "@odata.type": "#microsoft.graph.allDevicesAssignmentTarget"
 }
 ```
+
+
 
 
 

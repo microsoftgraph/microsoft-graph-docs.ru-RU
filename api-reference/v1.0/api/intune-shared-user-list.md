@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 42959c59740332f3d330f9938ac284ac837e728f
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d06b458b96598c892dc068a13d8aadc728d28505
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411260"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038510"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -26,10 +26,10 @@ ms.locfileid: "43411260"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)| _зависит от контекста_|
-| &nbsp;&nbsp; Управление устройствами | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
-| &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
-| &nbsp;&nbsp; Входящая миграция | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
-| &nbsp;&nbsp; Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp;Управление устройствами | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp;MAM | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
+| &nbsp;Входящая миграция &nbsp; | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp;Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -45,13 +45,13 @@ GET /users
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [user](../resources/intune-shared-user.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -80,6 +80,9 @@ Content-Length: 136
   ]
 }
 ```
+
+
+
 
 
 

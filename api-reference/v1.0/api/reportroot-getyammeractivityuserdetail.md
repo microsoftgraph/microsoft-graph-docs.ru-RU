@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: cb3f46ddaf52f306fc6452b96f1534e7e921fffb
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 7bc2fa6e9a3f6fe23ac5cb360f15d7a926844814
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898291"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038328"
 ---
 # <a name="reportroot-getyammeractivityuserdetail"></a>reportRoot: getYammerActivityUserDetail
 
@@ -30,7 +30,7 @@ ms.locfileid: "44898291"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                           |
 | Для приложений                            | Reports.Read.All                         |
 
-**Примечание**. Чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю соответствующую роль ограниченного администратора Azure AD. Более подробную информацию [можно узнать в статье авторизация для API для чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
+**Примечание**. Чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю соответствующую роль ограниченного администратора Azure AD. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -98,9 +98,9 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerActivityUserDetail(period=
 ```
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
 
@@ -124,7 +124,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 GET https://graph.microsoft.com/v1.0/reports/getYammerActivityUserDetail(date='2018-03-05')
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -162,3 +162,4 @@ Report Refresh Date,User Principal Name,Display Name,User State,State Change Dat
   "suppressions": [
   ]
 }-->
+

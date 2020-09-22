@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: d7b495575eafbea877df79a6b8a5fb83b0ad2060
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 1c4156adb0466dc8261abb4539559e094a2dbfb6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533998"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037481"
 ---
 # <a name="plannergroup-resource-type"></a>Тип ресурса Планнерграуп
 
@@ -62,3 +62,4 @@ ms.locfileid: "42533998"
   "section": "documentation",
   "tocPath": ""
 }-->
+

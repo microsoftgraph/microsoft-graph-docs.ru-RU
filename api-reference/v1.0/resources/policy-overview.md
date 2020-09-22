@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 771052a57671c1993bec189808544c2d3582dcb2
-ms.sourcegitcommit: fec7d5002dbeb8d58587c89f1b678d4a54645422
+ms.openlocfilehash: 189757df4313eff1ab9545b69fe5a13ed5785c9c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45384376"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037341"
 ---
 # <a name="azure-ad-policy-overview"></a>Общие сведения о политике Azure AD
 
@@ -35,3 +35,4 @@ Azure Active Directory (Azure AD) использует политики для �
 
 * Просмотрите различные типы ресурсов политики, перечисленные выше, и их различные методы.
 * Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 9c940de4dd8b57bfe04690a9df889c98d856bbc5
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: a1be7569f6fb7f96b28d34f8e319df78f14a6ae9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598516"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037901"
 ---
 # <a name="changenotification-resource-type"></a>Тип ресурса changeNotification
 
@@ -28,12 +28,12 @@ ms.locfileid: "46598516"
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
-| changeType | string | Указывает тип изменения, которое вызывает уведомление об изменении. Поддерживаемые значения: `created`, `updated`, `deleted`. Обязательный. |
-| clientState | string | Значение свойства **clientState** , которое отправляется в запросе на подписку (при наличии). Максимальная длина: 255 символов. Клиент может проверить, поступило ли уведомление об изменении из службы, сравнив значения свойства **clientState** . Значение свойства **clientState** , отправляемого с подпиской, сравнивается со значением свойства **clientState** , полученного при каждом уведомлении об изменении. Необязательный. |
-| id | string | Уникальный идентификатор уведомления. Необязательный. |
-| resource | string | URI ресурса, который выдал уведомление об изменении относительно `https://graph.microsoft.com` . Обязательный. |
-| resourceData | [Microsoft. Graph. resourceData](resourcedata.md) | Содержимое этого свойства зависит от типа связанного с ним ресурса. Обязательный. |
-| subscriptionExpirationDateTime | [дата и время](https://tools.ietf.org/html/rfc3339) | Время окончания срока действия подписки. Обязательный. |
+| changeType | string | Указывает тип изменения, которое вызывает уведомление об изменении. Поддерживаемые значения: `created`, `updated`, `deleted`. Обязательно. |
+| clientState | string | Значение свойства **clientState** , которое отправляется в запросе на подписку (при наличии). Максимальная длина: 255 символов. Клиент может проверить, поступило ли уведомление об изменении из службы, сравнив значения свойства **clientState** . Значение свойства **clientState** , отправляемого с подпиской, сравнивается со значением свойства **clientState** , полученного при каждом уведомлении об изменении. Необязательный параметр. |
+| id | string | Уникальный идентификатор уведомления. Необязательный параметр. |
+| resource | string | URI ресурса, который выдал уведомление об изменении относительно `https://graph.microsoft.com` . Обязательно. |
+| resourceData | [Microsoft. Graph. resourceData](resourcedata.md) | Содержимое этого свойства зависит от типа связанного с ним ресурса. Обязательно. |
+| subscriptionExpirationDateTime | [дата и время](https://tools.ietf.org/html/rfc3339) | Время окончания срока действия подписки. Обязательно. |
 | subscriptionId | строка | Уникальный идентификатор подписки, создавшей уведомление. |
 | tenantId | кодом | Уникальный идентификатор клиента, с которого поступило уведомление об изменении. |
 
@@ -82,3 +82,4 @@ ms.locfileid: "46598516"
   "suppressions": []
 }
 -->
+

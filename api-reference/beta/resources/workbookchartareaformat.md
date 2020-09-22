@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 69183153f066ba2b3521ec1519babb991491431e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 02e176887053654c103bf2aedaf86f48831d9d08
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519402"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039141"
 ---
 # <a name="workbookchartareaformat-resource-type"></a>Тип ресурса Воркбукчартареаформат
 
@@ -21,13 +21,13 @@ ms.locfileid: "42519402"
 Инкапсулирует свойства формата для всей области диаграммы.
 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 Нет
 
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |fill|[воркбукчартфилл](workbookchartfill.md)|Представляет формат заливки объекта, включая сведения о форматировании фона. Только для чтения.|
@@ -66,3 +66,5 @@ ms.locfileid: "42519402"
   "suppressions": []
 }
 -->
+
+

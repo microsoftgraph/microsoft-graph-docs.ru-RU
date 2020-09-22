@@ -5,14 +5,14 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: aafc3875277982e57413a924181680e172ba4d82
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: e12d5fba4378054a16a4b7fc21573ab966f67d01
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461662"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038794"
 ---
-# <a name="list-instances"></a>Экземпляры списков
+# <a name="list-instances"></a>экземпляры списков;
 
 Пространство имен: microsoft.graph
 
@@ -63,12 +63,12 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 | Имя       | Тип | Описание |
 |:---------------|:--------|:--------|
 | Authorization  | string | Bearer {токен}. Обязательный.  |
-| Prefer: outlook.timezone  | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательное свойство. |
+| Prefer: outlook.timezone  | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный параметр. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Event](../resources/event.md) в теле отклика.
 ## <a name="example"></a>Пример
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/v1.0/me/events/AAMkAGUzYRgWAAA=/instances?startD
 
 ---
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
@@ -201,3 +201,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

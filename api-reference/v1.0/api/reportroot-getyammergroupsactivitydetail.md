@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: f20663973a2178e4fdd7b036a09046e8128e6ff4
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: b8bab3f6d9bb4f787b337adf66d99256d6f69438
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897017"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038209"
 ---
 # <a name="reportroot-getyammergroupsactivitydetail"></a>reportRoot: getYammerGroupsActivityDetail
 
@@ -30,7 +30,7 @@ ms.locfileid: "44897017"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                           |
 | Для приложений                            | Reports.Read.All                         |
 
-**Примечание**. Чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю соответствующую роль ограниченного администратора Azure AD. Более подробную информацию [можно узнать в статье авторизация для API для чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
+**Примечание**. Чтобы разрешить приложениям читать отчеты об использовании служб от имени пользователя с помощью делегированных разрешений, администратор клиента должен назначить пользователю соответствующую роль ограниченного администратора Azure AD. Дополнительные сведения см. в статье [Авторизация для API с целью чтения отчетов об использовании Microsoft 365](/graph/reportroot-authorization).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -99,9 +99,9 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityDetail(perio
 ```
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
 
@@ -123,7 +123,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityDetail(date='2018-03-05')
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -158,3 +158,4 @@ Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Acti
   "suppressions": [
   ]
 }-->
+

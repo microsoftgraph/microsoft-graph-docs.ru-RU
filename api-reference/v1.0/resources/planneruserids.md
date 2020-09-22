@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: e8e63a757e659ea6d2baf709019d17d353279493
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 3a02ce136acf23235889d36bd5c953180e018d40
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811296"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037355"
 ---
 # <a name="planneruserids-resource-type"></a>Тип ресурса Планнерусеридс
 
@@ -23,9 +23,9 @@ ms.locfileid: "46811296"
 Клиентская возможность может определять свойства открытого типа. В этом случае клиент должен предоставить идентификаторы пользователей как свойства с `true` логическими значениями. Если к идентификаторам пользователей больше не предоставляется доступ, свойства автоматически удаляются путем присвоения их значений `false` логическому значению.
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление JSON ресурса.
+Ниже этот ресурс представлен в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -58,3 +58,4 @@ ms.locfileid: "46811296"
   "section": "documentation",
   "tocPath": ""
 }-->
+

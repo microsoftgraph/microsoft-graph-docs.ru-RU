@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 6f03117cce8e21f82ada720477da5db24c2a8516
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 7c0a09a2348099392a8e00c176f038e30703a854
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533962"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037257"
 ---
 # <a name="post-resource-type"></a>Тип ресурса Post
 
@@ -52,9 +52,9 @@ ms.locfileid: "42533962"
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|Содержимое публикации. Это свойство используется по умолчанию. Это свойство может иметь значение null.|
 |categories|Коллекция String|Категории, сопоставленные с публикацией.|
-|changeKey|Строка|Указывает версию публикации. При каждом изменении публикации также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
+|changeKey|String|Указывает версию публикации. При каждом изменении публикации также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
 |conversationId|String|Уникальный идентификатор беседы. Только для чтения.|
-|conversationThreadId|String|Уникальный идентификатор цепочки беседы. Только для чтения.|
+|conversationThreadId|Строка|Уникальный идентификатор цепочки беседы. Только для чтения.|
 |createdDateTime|DateTimeOffset|Указывает, когда была создана публикация. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |from|[recipient](recipient.md)|Используется в сценариях делегированного доступа. Указывает, кто опубликовал сообщение от имени другого пользователя. Это свойство используется по умолчанию.|
 |hasAttachments|Boolean|Указывает, есть ли в публикации хотя бы одно вложение. Это свойство используется по умолчанию.|
@@ -153,3 +153,4 @@ ms.locfileid: "42533962"
   "section": "documentation",
   "tocPath": ""
 }-->
+

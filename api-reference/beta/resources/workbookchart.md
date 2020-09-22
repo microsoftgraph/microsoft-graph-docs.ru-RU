@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: f28e89ae20d5675da303f11dc67b6e4b562b5340
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fb430048de0b8141c7da74d9377bd937659af221
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519409"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039162"
 ---
 # <a name="workbookchart-resource-type"></a>Тип ресурса Воркбукчарт
 
@@ -30,7 +30,7 @@ ms.locfileid: "42519409"
 |[Список рядов](../api/chart-list-series.md) |Коллекция [воркбукчартсериес](workbookchartseries.md)| Получение коллекции объектов ChartSeries.|
 |[Обновление](../api/chart-update.md) | [воркбукчарт](workbookchart.md)   |Обновление объекта Chart. |
 |[Image](../api/chart-image.md)|Строка изображения с кодировкой base64|Отрисовывает диаграмму в виде изображения с кодировкой base64, масштабируя ее в соответствии с указанным размером.|
-|[удаление](../api/chart-delete.md);|Нет|Удаляет объект диаграммы.|
+|[Удаление](../api/chart-delete.md)|Нет|Удаляет объект диаграммы.|
 |[Setdata](../api/chart-setdata.md)|Нет|Сбрасывает исходные данные для диаграммы.|
 |[Setposition](../api/chart-setposition.md)|Нет|Располагает диаграмму относительно ячеек на листе.|
 |[Список](../api/chart-list.md) | Коллекция [воркбукчарт](workbookchart.md) |Получение коллекции объектов диаграмм. |
@@ -41,13 +41,13 @@ ms.locfileid: "42519409"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |height|double|Обозначает высоту объекта диаграммы (в пунктах).|
-|id|строка|Возвращает диаграмму с учетом ее положения в коллекции. Только для чтения.|
+|id|string|Возвращает диаграмму с учетом ее положения в коллекции. Только для чтения.|
 |left|double|Расстояние в пунктах от левого края диаграммы до начала листа.|
 |name|string|Обозначает имя объекта диаграммы.|
 |top|double|Представляет расстояние в пунктах от верхнего края объекта до верхнего края первой строки (на листе) или до верхнего края области диаграммы (на диаграмме).|
 |width|double|Представляет ширину объекта диаграммы (в пунктах).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |axes|[воркбукчартаксес](workbookchartaxes.md)|Представляет оси диаграммы. Только для чтения.|
@@ -94,3 +94,5 @@ ms.locfileid: "42519409"
   "suppressions": []
 }
 -->
+
+

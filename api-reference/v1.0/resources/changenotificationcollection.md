@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: 1eadd0fbc14fe9e6581ab6fa3375837653fc0859
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: cd3e5508d4281de8c791259882a413127315e0b2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598511"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037894"
 ---
 # <a name="changenotificationcollection-resource-type"></a>Тип ресурса changeNotificationCollection
 
@@ -28,7 +28,7 @@ ms.locfileid: "46598511"
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
-| значение | Коллекция ([чанженотификатион](changenotification.md)) | Набор уведомлений, отправляемых на URL-адрес уведомлений. Обязательный. |
+| значение | Коллекция ([чанженотификатион](changenotification.md)) | Набор уведомлений, отправляемых на URL-адрес уведомлений. Обязательно. |
 
 ## <a name="relationships"></a>Связи
 
@@ -67,3 +67,4 @@ ms.locfileid: "46598511"
   "suppressions": []
 }
 -->
+

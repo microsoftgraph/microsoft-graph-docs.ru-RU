@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 37bc96fdd0dad65a1f6b5b6bcec244ef96b915ac
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 5ebd0785153b05aea7c63785ee30bc5726551b25
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447026"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037082"
 ---
 # <a name="rangefill-resource-type"></a>Тип ресурса RangeFill
 
@@ -63,3 +63,4 @@ ms.locfileid: "42447026"
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1822afaf92a7e9831ca710c043f552291cb6967f
-ms.sourcegitcommit: 87966dcd42a0111c5c9987fcae0a491c92022938
+ms.openlocfilehash: 5378a777eb8834c7e1d54edab619552acd8ce585
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44289688"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039070"
 ---
 # <a name="create-extensionproperty"></a>Создание Екстенсионпроперти
 
@@ -42,16 +42,16 @@ POST /applications/{id}/extensionProperties
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type | application/json. Обязательный. |
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите объект [екстенсионпроперти](../resources/extensionproperty.md) со следующими свойствами.
 
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|dataType|String| Задает тип данных значения, которое может содержать свойство Extension. Поддерживаются следующие значения: Значение null не допускается. <ul><li>`Binary`– 256 байт (максимум)</li><li>`Boolean`</li><li>`DateTime`-Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC.</li><li>`Integer`— значение 32 — бит.</li><li>`LargeInteger`— значение 64 — бит.</li><li>`String`– 256 символов максимум</li></ul>|
+|dataType|String| Задает тип данных значения, которое может содержать свойство Extension. Поддерживаются следующие значения: Значение null не допускается. <ul><li>`Binary` – 256 байт (максимум)</li><li>`Boolean`</li><li>`DateTime` -Должен быть указан в формате ISO 8601. Данные времени будут храниться в формате UTC.</li><li>`Integer` — значение 32 — бит.</li><li>`LargeInteger` — значение 64 — бит.</li><li>`String` – 256 символов максимум</li></ul>|
 |name|String| Имя свойства расширения. Значение null не допускается. |
-|таржетобжектс|Коллекция объектов string| Поддерживаются следующие значения: Значение null не допускается. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
+|таржетобжектс|Коллекция String| Поддерживаются следующие значения: Значение null не допускается. <ul><li>`User`</li><li>`Group`</li><li>`Organization`</li><li>`Device`</li><li>`Application`</li></ul>|
 
 
 ## <a name="response"></a>Отклик
@@ -137,3 +137,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: d15ea9d47ab8f092bd754f02f1d1517af2120ad7
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e083f171b777b3223d698530b64539c86bb15139
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447117"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037474"
 ---
 # <a name="plannerorderhintsbyassignee-resource-type"></a>Тип ресурса Планнерордерхинтсбяссигни
 
@@ -23,7 +23,7 @@ ms.locfileid: "42447117"
 Клиентская возможность может определять свойства открытого типа. В этом случае клиент должен предоставить идентификаторы пользователей, назначенных задаче, в качестве имен свойств и допустимую [подсказку порядка](planner-order-hint-format.md) в качестве значения.
 Невозможно удалить свойства из этого типа. Служба автоматически удалит значения, так как назначения для содержащегося [plannerTask](plannertask.md) будут обновлены.
 
-Пример.
+Пример:
 
 <!-- {
   "blockType": "resource",
@@ -49,3 +49,4 @@ ms.locfileid: "42447117"
   "section": "documentation",
   "tocPath": ""
 }-->
+

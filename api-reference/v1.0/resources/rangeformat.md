@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: edf239d5e14ca65ee4ae15f846182e5678f89f46
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f78b0cfbbf709c7b398560c80282dc9ed2985092
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447019"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037068"
 ---
 # <a name="rangeformat-resource-type"></a>Тип ресурса RangeFormat
 
@@ -34,7 +34,7 @@ ms.locfileid: "42447019"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |columnWidth|double|Возвращает или задает ширину всех столбцов в пределах диапазона. Если столбцы разной ширины, будет возвращено значение NULL.|
-|horizontalAlignment|string|Представляет выравнивание по горизонтали для указанного объекта. Возможные `General`значения:, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`,. `Distributed`|
+|horizontalAlignment|string|Представляет выравнивание по горизонтали для указанного объекта. Возможные значения:,, `General` `Left` ,, `Center` `Right` `Fill` , `Justify` , `CenterAcrossSelection` , `Distributed` .|
 |rowHeight|double|Возвращает или задает высоту всех строк в диапазоне. Если строки разной высоты, будет возвращено значение NULL.|
 |verticalAlignment|string|Представляет выравнивание по вертикали для указанного объекта. Допустимые значения: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
 |wrapText|boolean|Указывает, использует ли Excel обтекание текстом для объекта. Значение null указывает, что для диапазона в целом не применяется согласованный параметр обтекания.|
@@ -80,3 +80,4 @@ ms.locfileid: "42447019"
   "section": "documentation",
   "tocPath": ""
 }-->
+

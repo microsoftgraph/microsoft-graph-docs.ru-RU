@@ -3,14 +3,14 @@ title: Обновление managedDeviceMobileAppConfigurationDeviceStatus
 description: Обновление свойств объекта managedDeviceMobileAppConfigurationDeviceStatus.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ad38a993f9cc216d61f2eeaed38c20625cd094d7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 72c9537ff821ea416f60a9d8315130d303970c82
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43422253"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038608"
 ---
 # <a name="update-manageddevicemobileappconfigurationdevicestatus"></a>Обновление managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -41,7 +41,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -51,7 +51,7 @@ PATCH /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfig
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |deviceDisplayName|String|Имя устройства в объекте DevicePolicyStatus.|
 |userName|String|Имя пользователя в отчете|
 |deviceModel|String|Модель устройства в отчете|
@@ -105,6 +105,9 @@ Content-Length: 494
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+
+
 
 
 

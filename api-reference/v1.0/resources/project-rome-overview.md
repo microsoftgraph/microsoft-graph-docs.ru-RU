@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ailae
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: f7e68c50e6e58c4f9f7a2b04bf2f26361fef6063
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 945d3925362c6d013fa411d9b586bca18c8a24a3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806977"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037208"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Использование API Microsoft Graph для работы с проектом Рим
 
@@ -39,5 +39,5 @@ ms.locfileid: "46806977"
 - [Создание или замена элемента журнала](../api/projectrome-put-historyitem.md)
 - [Удаление элемента журнала](../api/projectrome-delete-historyitem.md)
 
-## <a name="whats-new"></a>Что нового
+## <a name="whats-new"></a>Новые возможности
 Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.

@@ -5,12 +5,12 @@ description: Подпишитесь на сайт или сайты пользо
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 6b4907428a17d0b832539cf37e7061376f29050c
-ms.sourcegitcommit: bd40e302ce04b686e86989246ab7c4cc9ad3f320
+ms.openlocfilehash: 07acd4f0baf9cf1450605a4b5fc7a4775ba06df9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43124436"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038216"
 ---
 # <a name="follow-site"></a>Отслеживание сайта 
 
@@ -43,10 +43,10 @@ POST /users/{user-id}/followedSites/add
 
 | Имя                 | Значение  | Описание                                                            |
 |:---------------------|:-------|:-----------------------------------------------------------------------|
-|   id                 | строка | [Уникальный идентификатор](../resources/site.md#id-property) элемента. |
+|   id                 | string | [Уникальный идентификатор](../resources/site.md#id-property) элемента. |
 
 
-## <a name="response"></a>Ответ 
+## <a name="response"></a>Отклик 
 
 * Если запрос выполнен успешно, этот метод возвращает массив сайтов, которые были выполнены.  
 * Если при выполнении какого-либо из указанных сайтов возникла ошибка, этот метод возвращает `207` код состояния, а текст отклика будет содержать массив записей, содержащих объекты [Error](/graph/errors) , и ситеидс, указывающие, какие сайты не могут быть выполнены.
@@ -187,3 +187,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

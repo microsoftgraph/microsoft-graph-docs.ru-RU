@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5adc385c5764371c1e2cab516bc33fd8504aecf5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 43f36c1843a8f9e92081015dd349ee48a1f768ef
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42447089"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037348"
 ---
 # <a name="playpromptoperation-resource-type"></a>Тип ресурса Плайпромптоператион
 
@@ -23,7 +23,7 @@ ms.locfileid: "42447089"
 | Свойство            | Тип                        | Описание|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
 | Контекст       | String                      | Уникальная строка контекста клиента. Максимальный лимит — 256 символов.                              |
-| id                  | Строка                      | Только для чтения.                                                                         |
+| id                  | String                      | Только для чтения.                                                                         |
 | resultInfo          | [resultInfo](resultinfo.md) | Сведения о результате. Только для чтения.                                |
 | status              | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`.               |
 
@@ -62,3 +62,4 @@ ms.locfileid: "42447089"
   "suppressions": []
 }
 -->
+

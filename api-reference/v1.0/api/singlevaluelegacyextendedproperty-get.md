@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 6aac7f78830ba7f9a677d2840105fbf5292dbcc3
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: d83bb1a072d2f42e0769495793acda1d124a1a19
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807327"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038223"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>Получение объекта singleValueLegacyExtendedProperty
 
@@ -46,7 +46,7 @@ ms.locfileid: "46807327"
 ## <a name="permissions"></a>Разрешения
 В зависимости от ресурса, из которого вы получаете расширенное свойство, а также от запрашиваемого типа разрешения (делегированного или приложения), для вызова этого API требуется минимум разрешение, указанное в следующей таблице. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Приложение |
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
@@ -237,7 +237,7 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -409,3 +409,4 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=singleValueExtendedProp
   "suppressions": [
   ]
 }-->
+

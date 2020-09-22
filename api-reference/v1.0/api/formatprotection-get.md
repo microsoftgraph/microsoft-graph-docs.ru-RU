@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: bbc7337675e55799615f201d6655dc85e864d7e9
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 3e51dca9431d9dd14a70b527114f7e66454b9cb3
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46806176"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038641"
 ---
 # <a name="get-formatprotection"></a>Получение объекта FormatProtection
 
@@ -42,7 +42,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -107,3 +107,4 @@ Content-length: 45
   "suppressions": [
   ]
 }-->
+

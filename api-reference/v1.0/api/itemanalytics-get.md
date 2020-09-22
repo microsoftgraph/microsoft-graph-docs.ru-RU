@@ -6,19 +6,19 @@ description: Получение Итеманалитикс о представл
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: b6f1da3d02b1a11afc70ca3be51177fb4e193047
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 311d7eea81ba3001af6cb94e2a3f837824a67fde
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42511756"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038475"
 ---
 # <a name="get-itemanalytics"></a>Получение Итеманалитикс
 
 Пространство имен: microsoft.graph
 
 Получение [итеманалитикс][] о представлениях, которые были выполнены для этого ресурса.
-Ресурс **итеманалитикс** — это удобный способ получения статистики действий `allTime` и. `lastSevenDays`
+Ресурс **итеманалитикс** — это удобный способ получения статистики действий `allTime` и `lastSevenDays` .
 Для настраиваемого диапазона или интервала времени используйте API [getActivitiesByInterval][] .
 
 >**Примечание:** Ресурс **итеманалитикс** пока недоступен во всех [национальных развертываниях](/graph/deployments).
@@ -58,7 +58,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ 
+## <a name="response"></a>Отклик 
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объекта [итеманалитикс][] в тексте отклика. 
 
@@ -127,3 +127,4 @@ Content-type: application/json
   ]
 }
 -->
+

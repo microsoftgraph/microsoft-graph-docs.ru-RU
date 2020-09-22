@@ -3,14 +3,14 @@ title: Удаление объекта telecomExpenseManagementPartner
 description: Удаляет объект telecomExpenseManagementPartner.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2878cfaf408b8882bdf56855cadef58394d16f4d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 622038f989561fc7fa462022d685513cdb3fd02e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43411121"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038490"
 ---
 # <a name="delete-telecomexpensemanagementpartner"></a>Удаление объекта telecomExpenseManagementPartner
 
@@ -41,13 +41,13 @@ DELETE /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagem
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -58,11 +58,14 @@ DELETE /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagem
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagementPartnerId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

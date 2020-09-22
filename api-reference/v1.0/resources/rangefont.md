@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 2d519d4a21af17dd10fa840e2e81bab9aef35c19
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 95a58a62355c70b1f2588b83594ab5497ac3db49
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42533908"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48037075"
 ---
 # <a name="rangefont-resource-type"></a>Тип ресурса RangeFont
 
@@ -30,7 +30,7 @@ ms.locfileid: "42533908"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |bold|boolean|Указывает, является ли шрифт полужирным.|
-|color|строка|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
+|color|string|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
 |italic|boolean|Указывает, применяется ли курсив.|
 |name|string|Имя шрифта (например, Calibri)|
 |size|double|размер шрифта|
@@ -72,3 +72,4 @@ ms.locfileid: "42533908"
   "section": "documentation",
   "tocPath": ""
 }-->
+

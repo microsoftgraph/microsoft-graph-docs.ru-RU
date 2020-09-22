@@ -3,14 +3,14 @@ title: Get sharedPCConfiguration
 description: Чтение свойств и связей объекта sharedPCConfiguration.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f748991c883c486719abeb392deafb12cbb88102
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2c0f4af1415c311c1a32b3f3106dad3bd040a754
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43387500"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038531"
 ---
 # <a name="get-sharedpcconfiguration"></a>Get sharedPCConfiguration
 
@@ -38,19 +38,19 @@ ms.locfileid: "43387500"
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [sharedPCConfiguration](../resources/intune-deviceconfig-sharedpcconfiguration.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -98,6 +98,9 @@ Content-Length: 1101
   }
 }
 ```
+
+
+
 
 
 
