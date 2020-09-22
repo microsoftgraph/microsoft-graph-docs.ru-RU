@@ -5,60 +5,60 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9a87f7d0e2a265a6a27f661fde188909ef38310a
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 89dc205c2bf8eb869711043198995560260e776c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43437528"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48093037"
 ---
-# <a name="restart-synchronizationjob"></a><span data-ttu-id="e14cc-104">Перезапуск Синчронизатионжоб</span><span class="sxs-lookup"><span data-stu-id="e14cc-104">Restart synchronizationJob</span></span>
+# <a name="restart-synchronizationjob"></a><span data-ttu-id="fbcf3-104">Перезапуск Синчронизатионжоб</span><span class="sxs-lookup"><span data-stu-id="fbcf3-104">Restart synchronizationJob</span></span>
 
-<span data-ttu-id="e14cc-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e14cc-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fbcf3-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fbcf3-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e14cc-106">Перезапустите задание синхронизации, чтобы принудительно обработать все объекты в каталоге.</span><span class="sxs-lookup"><span data-stu-id="e14cc-106">Restart the synchronization job, forcing it to reprocess all the objects in the directory.</span></span> <span data-ttu-id="e14cc-107">При необходимости можно очистить существующее состояние синхронизации и предыдущие ошибки.</span><span class="sxs-lookup"><span data-stu-id="e14cc-107">Optionally clears existing synchronization state and previous errors.</span></span>
+<span data-ttu-id="fbcf3-106">Перезапустите задание синхронизации, чтобы принудительно обработать все объекты в каталоге.</span><span class="sxs-lookup"><span data-stu-id="fbcf3-106">Restart the synchronization job, forcing it to reprocess all the objects in the directory.</span></span> <span data-ttu-id="fbcf3-107">При необходимости можно очистить существующее состояние синхронизации и предыдущие ошибки.</span><span class="sxs-lookup"><span data-stu-id="fbcf3-107">Optionally clears existing synchronization state and previous errors.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e14cc-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e14cc-108">Permissions</span></span>
-<span data-ttu-id="e14cc-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e14cc-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="fbcf3-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fbcf3-108">Permissions</span></span>
+<span data-ttu-id="fbcf3-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fbcf3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e14cc-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e14cc-111">Permission type</span></span>                        | <span data-ttu-id="e14cc-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e14cc-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fbcf3-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fbcf3-111">Permission type</span></span>                        | <span data-ttu-id="fbcf3-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fbcf3-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e14cc-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e14cc-113">Delegated (work or school account)</span></span>     |<span data-ttu-id="e14cc-114">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e14cc-114">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="e14cc-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e14cc-115">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="e14cc-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e14cc-116">Not supported.</span></span> |
-|<span data-ttu-id="e14cc-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e14cc-117">Application</span></span>                            |<span data-ttu-id="e14cc-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e14cc-118">Not supported.</span></span>  | 
+|<span data-ttu-id="fbcf3-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fbcf3-113">Delegated (work or school account)</span></span>     |<span data-ttu-id="fbcf3-114">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fbcf3-114">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="fbcf3-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fbcf3-115">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="fbcf3-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fbcf3-116">Not supported.</span></span> |
+|<span data-ttu-id="fbcf3-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fbcf3-117">Application</span></span>                            |<span data-ttu-id="fbcf3-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fbcf3-118">Not supported.</span></span>  | 
 
-## <a name="http-request"></a><span data-ttu-id="e14cc-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e14cc-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fbcf3-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fbcf3-119">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e14cc-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="e14cc-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="fbcf3-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="fbcf3-120">Request headers</span></span>
 
-| <span data-ttu-id="e14cc-121">Имя</span><span class="sxs-lookup"><span data-stu-id="e14cc-121">Name</span></span>           | <span data-ttu-id="e14cc-122">Тип</span><span class="sxs-lookup"><span data-stu-id="e14cc-122">Type</span></span>    | <span data-ttu-id="e14cc-123">Описание</span><span class="sxs-lookup"><span data-stu-id="e14cc-123">Description</span></span>|
+| <span data-ttu-id="fbcf3-121">Имя</span><span class="sxs-lookup"><span data-stu-id="fbcf3-121">Name</span></span>           | <span data-ttu-id="fbcf3-122">Тип</span><span class="sxs-lookup"><span data-stu-id="fbcf3-122">Type</span></span>    | <span data-ttu-id="fbcf3-123">Описание</span><span class="sxs-lookup"><span data-stu-id="fbcf3-123">Description</span></span>|
 |:---------------|:--------|:-----------|
-| <span data-ttu-id="e14cc-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="e14cc-124">Authorization</span></span>  | <span data-ttu-id="e14cc-125">string</span><span class="sxs-lookup"><span data-stu-id="e14cc-125">string</span></span>  | <span data-ttu-id="e14cc-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e14cc-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fbcf3-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="fbcf3-124">Authorization</span></span>  | <span data-ttu-id="fbcf3-125">string</span><span class="sxs-lookup"><span data-stu-id="fbcf3-125">string</span></span>  | <span data-ttu-id="fbcf3-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fbcf3-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e14cc-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e14cc-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="fbcf3-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="fbcf3-128">Request body</span></span>
 
-<span data-ttu-id="e14cc-129">В тексте запроса укажите объект JSON со следующим параметром.</span><span class="sxs-lookup"><span data-stu-id="e14cc-129">In the request body, provide a JSON object with the following parameter.</span></span>
+<span data-ttu-id="fbcf3-129">В тексте запроса укажите объект JSON со следующим параметром.</span><span class="sxs-lookup"><span data-stu-id="fbcf3-129">In the request body, provide a JSON object with the following parameter.</span></span>
 
-| <span data-ttu-id="e14cc-130">Параметр</span><span class="sxs-lookup"><span data-stu-id="e14cc-130">Parameter</span></span>     | <span data-ttu-id="e14cc-131">Тип</span><span class="sxs-lookup"><span data-stu-id="e14cc-131">Type</span></span>      | <span data-ttu-id="e14cc-132">Описание</span><span class="sxs-lookup"><span data-stu-id="e14cc-132">Description</span></span>    |
+| <span data-ttu-id="fbcf3-130">Параметр</span><span class="sxs-lookup"><span data-stu-id="fbcf3-130">Parameter</span></span>     | <span data-ttu-id="fbcf3-131">Тип</span><span class="sxs-lookup"><span data-stu-id="fbcf3-131">Type</span></span>      | <span data-ttu-id="fbcf3-132">Описание</span><span class="sxs-lookup"><span data-stu-id="fbcf3-132">Description</span></span>    |
 |:--------------|:----------|:---------------|
-|<span data-ttu-id="e14cc-133">criteria</span><span class="sxs-lookup"><span data-stu-id="e14cc-133">criteria</span></span>       |[<span data-ttu-id="e14cc-134">синчронизатионжобрестарткритериа</span><span class="sxs-lookup"><span data-stu-id="e14cc-134">synchronizationJobRestartCriteria</span></span>](../resources/synchronization-synchronizationjobrestartcriteria.md) |<span data-ttu-id="e14cc-135">Условия перезапуска</span><span class="sxs-lookup"><span data-stu-id="e14cc-135">Restart criteria</span></span>|
+|<span data-ttu-id="fbcf3-133">criteria</span><span class="sxs-lookup"><span data-stu-id="fbcf3-133">criteria</span></span>       |[<span data-ttu-id="fbcf3-134">синчронизатионжобрестарткритериа</span><span class="sxs-lookup"><span data-stu-id="fbcf3-134">synchronizationJobRestartCriteria</span></span>](../resources/synchronization-synchronizationjobrestartcriteria.md) |<span data-ttu-id="fbcf3-135">Условия перезапуска</span><span class="sxs-lookup"><span data-stu-id="fbcf3-135">Restart criteria</span></span>|
 
-## <a name="response"></a><span data-ttu-id="e14cc-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="e14cc-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fbcf3-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="fbcf3-136">Response</span></span>
 
-<span data-ttu-id="e14cc-137">В случае успеха возвращает `204 No Content` отклик.</span><span class="sxs-lookup"><span data-stu-id="e14cc-137">If successful, returns a `204 No Content` response.</span></span> <span data-ttu-id="e14cc-138">В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="e14cc-138">It does not return anything in the response body.</span></span>
+<span data-ttu-id="fbcf3-137">В случае успеха возвращает `204 No Content` отклик.</span><span class="sxs-lookup"><span data-stu-id="fbcf3-137">If successful, returns a `204 No Content` response.</span></span> <span data-ttu-id="fbcf3-138">В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="fbcf3-138">It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e14cc-139">Пример</span><span class="sxs-lookup"><span data-stu-id="e14cc-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fbcf3-139">Пример</span><span class="sxs-lookup"><span data-stu-id="fbcf3-139">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="e14cc-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="e14cc-140">Request</span></span>
-<span data-ttu-id="e14cc-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e14cc-141">The following is an example of a request.</span></span>
+##### <a name="request"></a><span data-ttu-id="fbcf3-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="fbcf3-140">Request</span></span>
+<span data-ttu-id="fbcf3-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fbcf3-141">The following is an example of a request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e14cc-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="e14cc-142">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="fbcf3-142">HTTP</span><span class="sxs-lookup"><span data-stu-id="fbcf3-142">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_restart"
@@ -74,23 +74,23 @@ Content-type: application/json
    }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="e14cc-143">C#</span><span class="sxs-lookup"><span data-stu-id="e14cc-143">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="fbcf3-143">C#</span><span class="sxs-lookup"><span data-stu-id="fbcf3-143">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-restart-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e14cc-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e14cc-144">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="fbcf3-144">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fbcf3-144">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-restart-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e14cc-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e14cc-145">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="fbcf3-145">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fbcf3-145">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-restart-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="e14cc-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="e14cc-146">Response</span></span>
-<span data-ttu-id="e14cc-147">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="e14cc-147">The following is an example of a response.</span></span>
+##### <a name="response"></a><span data-ttu-id="fbcf3-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="fbcf3-146">Response</span></span>
+<span data-ttu-id="fbcf3-147">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="fbcf3-147">The following is an example of a response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -114,3 +114,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+
