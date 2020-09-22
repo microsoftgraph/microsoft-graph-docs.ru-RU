@@ -5,12 +5,12 @@ localization_priority: Normal
 author: snlraju-msft
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: be4fa7bd8f4b44842bd6dbc9876d0dd19fe466fd
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bd267c77a9904564e8b2b7f592f207204d9396b0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42507501"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994220"
 ---
 # <a name="configuration-resource-type"></a>Тип ресурса конфигурации
 
@@ -26,7 +26,7 @@ ms.locfileid: "42507501"
 
 | Свойство       | Тип              | Описание |
 |:---------------|:------------------|:------------|
-| аусоризедаппс | Коллекция объектов string | Коллекция идентификаторов приложений для зарегистрированных приложений Azure Active Directory, которым разрешено управлять Екстерналконнектион и индексировать контент в Екстерналконнектион. |
+| аусоризедаппс | Коллекция String | Коллекция идентификаторов приложений для зарегистрированных приложений Azure Active Directory, которым разрешено управлять Екстерналконнектион и индексировать контент в Екстерналконнектион. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -56,3 +56,5 @@ ms.locfileid: "42507501"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

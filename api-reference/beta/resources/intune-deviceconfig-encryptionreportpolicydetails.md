@@ -3,14 +3,14 @@ title: Тип ресурса Енкриптионрепортполицидет�
 description: Сведения о политике для отчета о шифровании
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c8a92037429908af4ff53ea45b9b5f9b65a5a436
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4dd42ac3f80fae8e4946c72c856a0f560165584a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460067"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994192"
 ---
 # <a name="encryptionreportpolicydetails-resource-type"></a>Тип ресурса Енкриптионрепортполицидетаилс
 
@@ -45,6 +45,9 @@ ms.locfileid: "43460067"
   "policyName": "String"
 }
 ```
+
+
+
 
 
 

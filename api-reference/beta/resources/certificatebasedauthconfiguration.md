@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b834de13ccfeb59cd88fae093406a380c9aa5b58
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 3be9f1e22736c12f219932a806e23d3f22c4dce7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "43181794"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994339"
 ---
 # <a name="certificatebasedauthconfiguration-resource-type"></a>Тип ресурса Цертификатебаседаусконфигуратион
 
@@ -82,3 +82,5 @@ ms.locfileid: "43181794"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -3,14 +3,14 @@ title: тип перечисления Енкриптионстате
 description: Состояние шифрования
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 98ebb42e33e219d916925a2fb3da825687ce76b5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 95ef5227910433a93f0dfa0759d29f19e5863cea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460044"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994185"
 ---
 # <a name="encryptionstate-enum-type"></a>тип перечисления Енкриптионстате
 
@@ -26,7 +26,10 @@ ms.locfileid: "43460044"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |нотенкриптед|нуль|Не зашифровано|
-|шифрования|1,1|Шифрования|
+|шифрования|1 |Шифрования|
+
+
+
 
 
 

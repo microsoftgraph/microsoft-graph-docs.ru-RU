@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d4b838522aca98f0d2f2cbac9eb2ebe9bca3e479
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: e5f94ed5149294c8173948b3ce1ac5d17fd85b28
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42452660"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994421"
 ---
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 
@@ -52,11 +52,11 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |index|number|Необязательный параметр. Определяет относительную позицию новой строки. Если параметру присвоено значение null, строка добавляется в конце. Все строки ниже вставляемой строки сдвигаются вниз. Используется нулевой индекс.|
-|values|(логическая или числовая) коллекция|Необязательное. Двухмерный массив неформатированных значений строк таблицы.|
+|values|(логическая или числовая) коллекция|Необязательный параметр. Двухмерный массив неформатированных значений строк таблицы.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [воркбуктаблеров](../resources/workbooktablerow.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбуктаблеров](../resources/workbooktablerow.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 В этом примере две строки данных вставляются в конец таблицы. 
@@ -93,7 +93,7 @@ Content-length: 51
 ---
 
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -124,3 +124,5 @@ Content-length: 45
   ]
 }
 -->
+
+

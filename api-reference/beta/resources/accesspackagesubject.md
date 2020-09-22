@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 0f71b23e48c818747a2b70b52ec8b4baa53bf118
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f8b967e2ba2d678d9648b09eae4aeb3dca760c52
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508494"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994346"
 ---
 # <a name="accesspackagesubject-resource-type"></a>Тип ресурса Акцесспаккажесубжект
 
@@ -24,7 +24,7 @@ ms.locfileid: "42508494"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|Строка|Отображаемое имя субъекта.|
+|displayName|String|Отображаемое имя субъекта.|
 |email|String|Адрес электронной почты субъекта.|
 |id|String| Только для чтения.|
 |objectId|String|Идентификатор объекта subject.|
@@ -69,3 +69,5 @@ ms.locfileid: "42508494"
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

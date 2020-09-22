@@ -3,14 +3,14 @@ title: тип перечисления Филеваултстате
 description: Состояние Филеваулт
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2d7f69413ac7fd4be1e857951b2a70aac0fe7bc3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 4d2e038d5f75f25bb534bfc5923b946d0a0dfd16
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444318"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994143"
 ---
 # <a name="filevaultstate-enum-type"></a>тип перечисления Филеваултстате
 
@@ -26,9 +26,12 @@ ms.locfileid: "43444318"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |success|нуль|Успешное состояние Филеваулт|
-|дривинкриптедбюсер|1,1|Филеваулт был включен пользователем и не управляется политикой|
-|усердеферреденкриптион|2|Политика Филеваулт успешно установлена, но пользователь не начал шифрование|
+|дривинкриптедбюсер|1 |Филеваулт был включен пользователем и не управляется политикой|
+|усердеферреденкриптион|2 |Политика Филеваулт успешно установлена, но пользователь не начал шифрование|
 |ескровнотенаблед|4 |Филеваулт не включен параметр "депонирование ключей восстановления"|
+
+
+
 
 
 

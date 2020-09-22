@@ -3,14 +3,14 @@ title: Тип ресурса Екстендедкэйусаже
 description: Настраиваемое определение расширенного использования ключа
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c4fe1818aca19053242882e45edd1da5bbc544e8
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: f6928a52e1bfcc9089a13d31c31e4297c86ad202
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43460037"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994150"
 ---
 # <a name="extendedkeyusage-resource-type"></a>Тип ресурса Екстендедкэйусаже
 
@@ -45,6 +45,9 @@ ms.locfileid: "43460037"
   "objectIdentifier": "String"
 }
 ```
+
+
+
 
 
 

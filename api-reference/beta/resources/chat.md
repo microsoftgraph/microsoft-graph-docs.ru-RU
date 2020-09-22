@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c536e94230866b209f6d0dffef31bbf23c49b71b
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 8dd9ecd5f845682187fb84a9e057d7fdb7cb70d0
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872805"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994337"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса Chat
 
@@ -37,7 +37,7 @@ ms.locfileid: "46872805"
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-| id| Строка| Уникальный идентификатор чата. Только для чтения.|
+| id| String| Уникальный идентификатор чата. Только для чтения.|
 | topic| String|  Необязательно Тема или тема чата. Доступно только для чатов групп.|
 | createdDateTime| dateTimeOffset|  Дата и время создания чата. Только для чтения.|
 | lastUpdatedDateTime| dateTimeOffset|  Дата и время переименования чата или изменения членства. Ластупдатеддатетиме не обновляется при отправке сообщения в чат. Только для чтения.|
@@ -86,3 +86,5 @@ ms.locfileid: "46872805"
   "tocPath": ""
 }
 -->
+
+

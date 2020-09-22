@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: c1225bf6f9aacef77ece20c659a51b36d362ff31
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 124158abc65f061d9371f1567822c2f88cdd7e96
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329367"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994381"
 ---
 # <a name="list-groups"></a>Список групп
 Пространство имен: Microsoft. Graph. банка
@@ -26,7 +26,7 @@ ms.locfileid: "47329367"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись) | Банк. чтение. ALL, банк. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Не поддерживается. |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ GET /termStore/groups
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -120,4 +120,6 @@ Content-Type: application/json
   ]
 }
 -->
+
+
 

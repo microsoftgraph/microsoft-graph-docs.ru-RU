@@ -3,14 +3,14 @@ title: тип перечисления Фолдерпротектионтипе
 description: Возможные значения защиты папок
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ded583dfe44d393a2ae1c8f56f9952feb85cf857
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9ccdaf6625685a0e9e317ad01c8b81fffa04f651
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43444290"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47994073"
 ---
 # <a name="folderprotectiontype-enum-type"></a>тип перечисления Фолдерпротектионтипе
 
@@ -26,10 +26,13 @@ ms.locfileid: "43444290"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Значение по умолчанию для устройства, без намерения.|
-|подключить|1,1|Функциональная возможность блока.|
-|аудитмоде|2|Разрешите функциональные возможности, но Создайте журналы.|
+|подключить|1 |Функциональная возможность блока.|
+|аудитмоде|2 |Разрешите функциональные возможности, но Создайте журналы.|
 |блоккдискмодификатион|4|Блокировать запись недоверенных приложений в секторах диска.|
 |аудитдискмодификатион|4 |Создание журналов при записи недоверенных приложений в секторах диска.|
+
+
+
 
 
 
