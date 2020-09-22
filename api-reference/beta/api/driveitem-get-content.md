@@ -6,32 +6,32 @@ title: Скачивание файла
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f18e10e6c81bad8a56603eea84fc4c5a193b1c23
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a3c25878d587001c5948691b723587c35272e662
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432588"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47982045"
 ---
-# <a name="download-the-contents-of-a-driveitem"></a><span data-ttu-id="ae96b-104">Скачивание содержимого элемента DriveItem</span><span class="sxs-lookup"><span data-stu-id="ae96b-104">Download the contents of a DriveItem</span></span>
+# <a name="download-the-contents-of-a-driveitem"></a><span data-ttu-id="b4b08-104">Скачивание содержимого элемента DriveItem</span><span class="sxs-lookup"><span data-stu-id="b4b08-104">Download the contents of a DriveItem</span></span>
 
-<span data-ttu-id="ae96b-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ae96b-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b4b08-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b4b08-105">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ae96b-106">В этой статье рассказывается, как скачать содержимое основного потока (файла) элемента DriveItem.</span><span class="sxs-lookup"><span data-stu-id="ae96b-106">Download the contents of the primary stream (file) of a DriveItem.</span></span> <span data-ttu-id="ae96b-107">Вы можете скачать только те элементы driveItem, у которых имеется свойство **file**.</span><span class="sxs-lookup"><span data-stu-id="ae96b-107">Only driveItems with the **file** property can be downloaded.</span></span>
+<span data-ttu-id="b4b08-106">В этой статье рассказывается, как скачать содержимое основного потока (файла) элемента DriveItem.</span><span class="sxs-lookup"><span data-stu-id="b4b08-106">Download the contents of the primary stream (file) of a DriveItem.</span></span> <span data-ttu-id="b4b08-107">Вы можете скачать только те элементы driveItem, у которых имеется свойство **file**.</span><span class="sxs-lookup"><span data-stu-id="b4b08-107">Only driveItems with the **file** property can be downloaded.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ae96b-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ae96b-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b4b08-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b4b08-108">Permissions</span></span>
 
-<span data-ttu-id="ae96b-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ae96b-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b4b08-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b4b08-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ae96b-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ae96b-111">Permission type</span></span>      | <span data-ttu-id="ae96b-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ae96b-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b4b08-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b4b08-111">Permission type</span></span>      | <span data-ttu-id="b4b08-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b4b08-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ae96b-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ae96b-113">Delegated (work or school account)</span></span> | <span data-ttu-id="ae96b-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ae96b-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="ae96b-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ae96b-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ae96b-116">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ae96b-116">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="ae96b-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ae96b-117">Application</span></span> | <span data-ttu-id="ae96b-118">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ae96b-118">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="b4b08-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b4b08-113">Delegated (work or school account)</span></span> | <span data-ttu-id="b4b08-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b4b08-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b4b08-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b4b08-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b4b08-116">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b4b08-116">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b4b08-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b4b08-117">Application</span></span> | <span data-ttu-id="b4b08-118">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b4b08-118">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ae96b-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ae96b-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b4b08-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b4b08-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -44,46 +44,46 @@ GET /sites/{siteId}/drive/items/{item-id}/content
 GET /users/{userId}/drive/items/{item-id}/content
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="ae96b-120">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ae96b-120">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="b4b08-120">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b4b08-120">Optional request headers</span></span>
 
-| <span data-ttu-id="ae96b-121">Имя</span><span class="sxs-lookup"><span data-stu-id="ae96b-121">Name</span></span>          | <span data-ttu-id="ae96b-122">Значение</span><span class="sxs-lookup"><span data-stu-id="ae96b-122">Value</span></span>  | <span data-ttu-id="ae96b-123">Описание</span><span class="sxs-lookup"><span data-stu-id="ae96b-123">Description</span></span>                                                                                                                                              |
+| <span data-ttu-id="b4b08-121">Имя</span><span class="sxs-lookup"><span data-stu-id="b4b08-121">Name</span></span>          | <span data-ttu-id="b4b08-122">Значение</span><span class="sxs-lookup"><span data-stu-id="b4b08-122">Value</span></span>  | <span data-ttu-id="b4b08-123">Описание</span><span class="sxs-lookup"><span data-stu-id="b4b08-123">Description</span></span>                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="ae96b-124">if-none-match</span><span class="sxs-lookup"><span data-stu-id="ae96b-124">if-none-match</span></span> | <span data-ttu-id="ae96b-125">String</span><span class="sxs-lookup"><span data-stu-id="ae96b-125">String</span></span> | <span data-ttu-id="ae96b-126">Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то будет возвращен ответ `HTTP 304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="ae96b-126">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
+| <span data-ttu-id="b4b08-124">if-none-match</span><span class="sxs-lookup"><span data-stu-id="b4b08-124">if-none-match</span></span> | <span data-ttu-id="b4b08-125">String</span><span class="sxs-lookup"><span data-stu-id="b4b08-125">String</span></span> | <span data-ttu-id="b4b08-126">Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то будет возвращен ответ `HTTP 304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="b4b08-126">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
 
-## <a name="example"></a><span data-ttu-id="ae96b-127">Пример</span><span class="sxs-lookup"><span data-stu-id="ae96b-127">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b4b08-127">Пример</span><span class="sxs-lookup"><span data-stu-id="b4b08-127">Example</span></span>
 
-<span data-ttu-id="ae96b-128">В примере ниже показано, как скачать весь файл.</span><span class="sxs-lookup"><span data-stu-id="ae96b-128">Here is an example to download a complete file.</span></span>
+<span data-ttu-id="b4b08-128">В примере ниже показано, как скачать весь файл.</span><span class="sxs-lookup"><span data-stu-id="b4b08-128">Here is an example to download a complete file.</span></span>
 
 
 
-# <a name="http"></a>[<span data-ttu-id="ae96b-129">HTTP</span><span class="sxs-lookup"><span data-stu-id="ae96b-129">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b4b08-129">HTTP</span><span class="sxs-lookup"><span data-stu-id="b4b08-129">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "download-item-content", "scopes": "files.read" } -->
 
 ```msgraph-interactive
 GET /me/drive/items/{item-id}/content
 ```
-# <a name="c"></a>[<span data-ttu-id="ae96b-130">C#</span><span class="sxs-lookup"><span data-stu-id="ae96b-130">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b4b08-130">C#</span><span class="sxs-lookup"><span data-stu-id="b4b08-130">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/download-item-content-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="ae96b-131">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ae96b-131">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b4b08-131">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b4b08-131">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/download-item-content-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="ae96b-132">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ae96b-132">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b4b08-132">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b4b08-132">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/download-item-content-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="ae96b-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="ae96b-133">Response</span></span>
+### <a name="response"></a><span data-ttu-id="b4b08-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="b4b08-133">Response</span></span>
 
-<span data-ttu-id="ae96b-p104">Возвращает отклик `302 Found`, перенаправляя к URL-адресу загрузки файла, прошедшему предварительную проверку подлинности. Это такой же URL-адрес, доступный с помощью свойства `@microsoft.graph.downloadUrl` в ресурсе DriveItem.</span><span class="sxs-lookup"><span data-stu-id="ae96b-p104">Returns a `302 Found` response redirecting to a pre-authenticated download URL for the file. This is the same URL available through the `@microsoft.graph.downloadUrl` property on the DriveItem.</span></span>
+<span data-ttu-id="b4b08-p104">Возвращает отклик `302 Found`, перенаправляя к URL-адресу загрузки файла, прошедшему предварительную проверку подлинности. Это такой же URL-адрес, доступный с помощью свойства `@microsoft.graph.downloadUrl` в ресурсе DriveItem.</span><span class="sxs-lookup"><span data-stu-id="b4b08-p104">Returns a `302 Found` response redirecting to a pre-authenticated download URL for the file. This is the same URL available through the `@microsoft.graph.downloadUrl` property on the DriveItem.</span></span>
 
-<span data-ttu-id="ae96b-p105">Чтобы загрузить содержимое файла, приложению необходимо будет следовать заголовку `Location` в отклике. Многие библиотеки клиентов HTTP будут автоматически следовать перенаправлению 302 и немедленно начинать загрузку файла.</span><span class="sxs-lookup"><span data-stu-id="ae96b-p105">To download the contents of the file your application will need to follow the `Location` header in the response. Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immedately.</span></span>
+<span data-ttu-id="b4b08-p105">Чтобы загрузить содержимое файла, приложению необходимо будет следовать заголовку `Location` в отклике. Многие библиотеки клиентов HTTP будут автоматически следовать перенаправлению 302 и немедленно начинать загрузку файла.</span><span class="sxs-lookup"><span data-stu-id="b4b08-p105">To download the contents of the file your application will need to follow the `Location` header in the response. Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immedately.</span></span>
 
-<span data-ttu-id="ae96b-138">URL-адреса загрузки, прошедшие предварительную проверку подлинности, действительны только на протяжении короткого периода времени (несколько минут) и не требуют заголовка `Authorization` для загрузки.</span><span class="sxs-lookup"><span data-stu-id="ae96b-138">Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.</span></span>
+<span data-ttu-id="b4b08-138">URL-адреса загрузки, прошедшие предварительную проверку подлинности, действительны только на протяжении короткого периода времени (несколько минут) и не требуют заголовка `Authorization` для загрузки.</span><span class="sxs-lookup"><span data-stu-id="b4b08-138">Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "stream" } -->
 
@@ -92,9 +92,9 @@ HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
-## <a name="partial-range-downloads"></a><span data-ttu-id="ae96b-139">Загрузка части заданного диапазона байтов</span><span class="sxs-lookup"><span data-stu-id="ae96b-139">Partial range downloads</span></span>
+## <a name="partial-range-downloads"></a><span data-ttu-id="b4b08-139">Загрузка части заданного диапазона байтов</span><span class="sxs-lookup"><span data-stu-id="b4b08-139">Partial range downloads</span></span>
 
-<span data-ttu-id="ae96b-p106">Чтобы загрузить из файла часть заданного диапазона байтов, приложение может использовать заголовок `Range`, как указано в документе [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt). Обратите внимание, что заголовок `Range` необходимо добавлять в фактический URL-адрес `@microsoft.graph.downloadUrl`, а не в запрос для `/content`.</span><span class="sxs-lookup"><span data-stu-id="ae96b-p106">To download a partial range of bytes from the file, your app can use the `Range` header as specified in [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt). Note that you must append the `Range` header to the actual `@microsoft.graph.downloadUrl` URL and not to the request for `/content`.</span></span>
+<span data-ttu-id="b4b08-p106">Чтобы загрузить из файла часть заданного диапазона байтов, приложение может использовать заголовок `Range`, как указано в документе [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt). Обратите внимание, что заголовок `Range` необходимо добавлять в фактический URL-адрес `@microsoft.graph.downloadUrl`, а не в запрос для `/content`.</span><span class="sxs-lookup"><span data-stu-id="b4b08-p106">To download a partial range of bytes from the file, your app can use the `Range` header as specified in [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt). Note that you must append the `Range` header to the actual `@microsoft.graph.downloadUrl` URL and not to the request for `/content`.</span></span>
 
 <!-- { "blockType": "request", "name": "download-item-partial", "scopes": "files.read" } -->
 
@@ -103,7 +103,7 @@ GET https://b0mpua-by3301.files.1drv.com/y23vmag
 Range: bytes=0-1023
 ```
 
-<span data-ttu-id="ae96b-p107">Это позволит вернуть отклик `HTTP 206 Partial Content` с запрашиваемым диапазоном байтов из файла. Если не удается создать диапазон, можно проигнорировать заголовок диапазона, после чего отклик `HTTP 200` возвращается с полным содержимым файла.</span><span class="sxs-lookup"><span data-stu-id="ae96b-p107">This will return an `HTTP 206 Partial Content` response with the request range of bytes from the file. If the range cannot be generated the Range header may be ignored and an `HTTP 200` response would be returned with the full contents of the file.</span></span>
+<span data-ttu-id="b4b08-p107">Это позволит вернуть отклик `HTTP 206 Partial Content` с запрашиваемым диапазоном байтов из файла. Если не удается создать диапазон, можно проигнорировать заголовок диапазона, после чего отклик `HTTP 200` возвращается с полным содержимым файла.</span><span class="sxs-lookup"><span data-stu-id="b4b08-p107">This will return an `HTTP 206 Partial Content` response with the request range of bytes from the file. If the range cannot be generated the Range header may be ignored and an `HTTP 200` response would be returned with the full contents of the file.</span></span>
 
 <!-- { "blockType": "response", "name": "download-item-partial", "@odata.type": "stream" } -->
 
@@ -114,9 +114,9 @@ Content-Range: bytes 0-1023/2048
 <first 1024 bytes of file>
 ```
 
-### <a name="error-responses"></a><span data-ttu-id="ae96b-144">Ответы с ошибками</span><span class="sxs-lookup"><span data-stu-id="ae96b-144">Error responses</span></span>
+### <a name="error-responses"></a><span data-ttu-id="b4b08-144">Ответы с ошибками</span><span class="sxs-lookup"><span data-stu-id="b4b08-144">Error responses</span></span>
 
-<span data-ttu-id="ae96b-145">Дополнительные сведения о возвращении ошибок см. в статье [Ответы с ошибками][error-response].</span><span class="sxs-lookup"><span data-stu-id="ae96b-145">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="b4b08-145">Дополнительные сведения о возвращении ошибок см. в статье [Ответы с ошибками][error-response].</span><span class="sxs-lookup"><span data-stu-id="b4b08-145">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 
@@ -131,3 +131,5 @@ Content-Range: bytes 0-1023/2048
   ]
 }
 -->
+
+

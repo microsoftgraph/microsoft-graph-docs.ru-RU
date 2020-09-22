@@ -6,32 +6,32 @@ title: Создание папки
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 0ae06ebefc6b15e41b26b34727b34556b0f589f6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: c6e0c249d0201fd4fb9b60af317fa599a86ce968
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42432476"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47981928"
 ---
-# <a name="create-a-new-folder-in-a-drive"></a><span data-ttu-id="a065c-103">Создание папки на диске</span><span class="sxs-lookup"><span data-stu-id="a065c-103">Create a new folder in a drive</span></span>
+# <a name="create-a-new-folder-in-a-drive"></a><span data-ttu-id="d0662-103">Создание папки на диске</span><span class="sxs-lookup"><span data-stu-id="d0662-103">Create a new folder in a drive</span></span>
 
-<span data-ttu-id="a065c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a065c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d0662-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d0662-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a065c-105">Создание папки или ресурса [DriveItem](../resources/driveitem.md) в объекте [Drive](../resources/drive.md) с указанным родительским элементом или по указанному пути.</span><span class="sxs-lookup"><span data-stu-id="a065c-105">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
+<span data-ttu-id="d0662-105">Создание папки или ресурса [DriveItem](../resources/driveitem.md) в объекте [Drive](../resources/drive.md) с указанным родительским элементом или по указанному пути.</span><span class="sxs-lookup"><span data-stu-id="d0662-105">Create a new folder or [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) with a specified parent item or path.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a065c-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a065c-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d0662-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d0662-106">Permissions</span></span>
 
-<span data-ttu-id="a065c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a065c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d0662-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d0662-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a065c-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a065c-109">Permission type</span></span>      | <span data-ttu-id="a065c-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a065c-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d0662-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d0662-109">Permission type</span></span>      | <span data-ttu-id="d0662-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d0662-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a065c-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a065c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a065c-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a065c-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a065c-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a065c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a065c-114">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a065c-114">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a065c-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a065c-115">Application</span></span> | <span data-ttu-id="a065c-116">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a065c-116">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="d0662-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d0662-111">Delegated (work or school account)</span></span> | <span data-ttu-id="d0662-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d0662-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="d0662-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d0662-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d0662-114">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d0662-114">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="d0662-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d0662-115">Application</span></span> | <span data-ttu-id="d0662-116">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d0662-116">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a065c-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a065c-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d0662-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d0662-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -43,23 +43,23 @@ POST /sites/{site-id}/drive/items/{parent-item-id}/children
 POST /users/{user-id}/drive/items/{parent-item-id}/children
 ```
 
-## <a name="request-body"></a><span data-ttu-id="a065c-118">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a065c-118">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d0662-118">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d0662-118">Request body</span></span>
 
-<span data-ttu-id="a065c-119">Предоставьте в тексте запроса описание создаваемого ресурса [DriveItem](../resources/driveitem.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a065c-119">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
+<span data-ttu-id="d0662-119">Предоставьте в тексте запроса описание создаваемого ресурса [DriveItem](../resources/driveitem.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d0662-119">In the request body, supply a JSON representation of the [DriveItem](../resources/driveitem.md) resource to create.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a065c-120">Отклик</span><span class="sxs-lookup"><span data-stu-id="a065c-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d0662-120">Отклик</span><span class="sxs-lookup"><span data-stu-id="d0662-120">Response</span></span>
 
-<span data-ttu-id="a065c-121">В случае успеха этот метод возвращает код отклика `201 Created` и ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="a065c-121">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="d0662-121">В случае успеха этот метод возвращает код отклика `201 Created` и ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="d0662-121">If successful, this method returns `201 Created` response code and a [Driveitem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a065c-122">Пример</span><span class="sxs-lookup"><span data-stu-id="a065c-122">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d0662-122">Пример</span><span class="sxs-lookup"><span data-stu-id="d0662-122">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="a065c-123">Запрос</span><span class="sxs-lookup"><span data-stu-id="a065c-123">Request</span></span>
+### <a name="request"></a><span data-ttu-id="d0662-123">Запрос</span><span class="sxs-lookup"><span data-stu-id="d0662-123">Request</span></span>
 
-<span data-ttu-id="a065c-124">Ниже показан пример запроса на создание папки в корневой папке OneDrive пользователя, выполнившего вход в систему.</span><span class="sxs-lookup"><span data-stu-id="a065c-124">Here is an example of the request to create a new folder in the signed-in user's OneDrive root folder.</span></span>
-<span data-ttu-id="a065c-125">Используемое свойство `@microsoft.graph.conflictBehavior` указывает, что если при создании папки оказалось, что уже существует элемент с таким именем, служба должна выбрать новое имя папки.</span><span class="sxs-lookup"><span data-stu-id="a065c-125">The `@microsoft.graph.conflictBehavior` property used indicates that if an item already exists with the same name, the service should choose a new name for the folder while creating it.</span></span>
+<span data-ttu-id="d0662-124">Ниже показан пример запроса на создание папки в корневой папке OneDrive пользователя, выполнившего вход в систему.</span><span class="sxs-lookup"><span data-stu-id="d0662-124">Here is an example of the request to create a new folder in the signed-in user's OneDrive root folder.</span></span>
+<span data-ttu-id="d0662-125">Используемое свойство `@microsoft.graph.conflictBehavior` указывает, что если при создании папки оказалось, что уже существует элемент с таким именем, служба должна выбрать новое имя папки.</span><span class="sxs-lookup"><span data-stu-id="d0662-125">The `@microsoft.graph.conflictBehavior` property used indicates that if an item already exists with the same name, the service should choose a new name for the folder while creating it.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="a065c-126">HTTP</span><span class="sxs-lookup"><span data-stu-id="a065c-126">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d0662-126">HTTP</span><span class="sxs-lookup"><span data-stu-id="d0662-126">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "create-folder", "scopes": "files.readwrite" } -->
 
 ```http
@@ -72,24 +72,24 @@ Content-Type: application/json
   "@microsoft.graph.conflictBehavior": "rename"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="a065c-127">C#</span><span class="sxs-lookup"><span data-stu-id="a065c-127">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d0662-127">C#</span><span class="sxs-lookup"><span data-stu-id="d0662-127">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-folder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a065c-128">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a065c-128">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d0662-128">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d0662-128">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-folder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="a065c-129">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a065c-129">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d0662-129">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d0662-129">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-folder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="a065c-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="a065c-130">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d0662-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="d0662-130">Response</span></span>
 
-<span data-ttu-id="a065c-131">При успешном выполнении этот метод возвращает созданную папку в виде ресурса [DriveItem][item-resource].</span><span class="sxs-lookup"><span data-stu-id="a065c-131">If successful, this method returns the newly created folder as a [DriveItem][item-resource] resource.</span></span>
+<span data-ttu-id="d0662-131">При успешном выполнении этот метод возвращает созданную папку в виде ресурса [DriveItem][item-resource].</span><span class="sxs-lookup"><span data-stu-id="d0662-131">If successful, this method returns the newly created folder as a [DriveItem][item-resource] resource.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -127,9 +127,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="error-response"></a><span data-ttu-id="a065c-132">Отклик с ошибкой</span><span class="sxs-lookup"><span data-stu-id="a065c-132">Error response</span></span>
+## <a name="error-response"></a><span data-ttu-id="d0662-132">Отклик с ошибкой</span><span class="sxs-lookup"><span data-stu-id="d0662-132">Error response</span></span>
 
-<span data-ttu-id="a065c-133">Дополнительные сведения о возвращении ошибок см. в статье [Ответы с ошибками][error-response].</span><span class="sxs-lookup"><span data-stu-id="a065c-133">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="d0662-133">Дополнительные сведения о возвращении ошибок см. в статье [Ответы с ошибками][error-response].</span><span class="sxs-lookup"><span data-stu-id="d0662-133">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
@@ -146,3 +146,5 @@ Content-Type: application/json
   ]
 }
 -->
+
+
