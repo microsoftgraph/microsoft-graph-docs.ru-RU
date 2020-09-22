@@ -3,14 +3,14 @@ title: Получение Усерекспериенцеаналитиксбас
 description: Чтение свойств и связей объекта Усерекспериенцеаналитиксбаселине.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c6f6bb74e0a7e4e8e90e97b1ba4959bb3a965ca
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 3f438806707c145e0f495ce56683deae1785ccbb
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43323043"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072321"
 ---
 # <a name="get-userexperienceanalyticsbaseline"></a>Получение Усерекспериенцеаналитиксбаселине
 
@@ -49,10 +49,10 @@ GET /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalyticsB
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [усерекспериенцеаналитиксбаселине](../resources/intune-devices-userexperienceanalyticsbaseline.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -81,6 +81,9 @@ Content-Length: 297
   }
 }
 ```
+
+
+
 
 
 

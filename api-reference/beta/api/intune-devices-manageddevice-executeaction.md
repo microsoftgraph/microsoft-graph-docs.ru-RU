@@ -3,14 +3,14 @@ title: Действие executeAction
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b16beb4e8a40c674e3c1a95d937d21893df595e
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 4a6349e8df37dc78c7e0d6e38832742265025a3d
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792298"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072545"
 ---
 # <a name="executeaction-action"></a>Действие executeAction
 
@@ -49,7 +49,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -59,7 +59,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |actionName|[манажеддевицеремотеактион](../resources/intune-devices-manageddeviceremoteaction.md)|Пока не задокументировано.|
 |keepEnrollmentData|Boolean|Н/Д|
 |keepUserData|Boolean|Н/Д|
-|девицеидс|Коллекция строк|Пока не задокументировано.|
+|девицеидс|Коллекция строк|Н/Д|
 |нотификатионтитле|String|Пока не задокументировано.|
 |нотификатионбоди|String|Пока не задокументировано.|
 |deviceName|String|Пока не задокументировано.|
@@ -117,6 +117,9 @@ Content-Length: 385
   }
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Создание Усерекспериенцеаналитиксбасе
 description: Создание нового объекта Усерекспериенцеаналитиксбаселине.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c11f14f2a281ab2317645a71abc0effaf541fb0d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b8c6b1472fcee0f38c561be44685b2583f0d6fc1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43323446"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072328"
 ---
 # <a name="create-userexperienceanalyticsbaseline"></a>Создание Усерекспериенцеаналитиксбаселине
 
@@ -46,7 +46,7 @@ POST /deviceManagement/userExperienceAnalyticsBaselines
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Усерекспериенцеаналитиксбаселине в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Усерекспериенцеаналитиксбаселине.
@@ -54,14 +54,14 @@ POST /deviceManagement/userExperienceAnalyticsBaselines
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор базового идентификатора аналитики взаимодействия с пользователем.|
-|displayName|Строка|Имя базового объекта аналитики взаимодействия с пользователем.|
+|displayName|String|Имя базового объекта аналитики взаимодействия с пользователем.|
 |овераллскоре|Int32|Общий показатель базового уровня для аналитики взаимодействия с пользователем.|
 |isBuiltIn|Boolean|Указывает, является ли текущий базовый планом коммерческого медианы или настраиваемым базовым планом.|
 |createdDateTime|DateTimeOffset|Дата создания настраиваемого базового плана.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксбаселине](../resources/intune-devices-userexperienceanalyticsbaseline.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -97,6 +97,9 @@ Content-Length: 266
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
+
+
+
 
 
 

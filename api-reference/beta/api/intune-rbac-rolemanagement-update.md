@@ -3,14 +3,14 @@ title: Обновление Ролеманажемент
 description: Обновление свойств объекта Ролеманажемент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d81ccac5dc51c1193f6956c346910aa66784898
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d0aeff280e468dd672ba747de034f278f8226ba2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43423905"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072069"
 ---
 # <a name="update-rolemanagement"></a>Обновление Ролеманажемент
 
@@ -46,7 +46,7 @@ PATCH /roleManagement
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [ролеманажемент](../resources/intune-rbac-rolemanagement.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [ролеманажемент](../resources/intune-rbac-rolemanagement.md).
@@ -86,6 +86,9 @@ Content-Length: 105
   "id": "6fb74c1e-4c1e-6fb7-1e4c-b76f1e4cb76f"
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Список Девицешеллскриптс
 description: Список свойств и связей объектов Девицешеллскрипт.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 406bbc7dd0f756f3a281d9a653b0e06ab007b40d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 0c7330a19fb65e17fafde20e5d2e055713a73678
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43425539"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072552"
 ---
 # <a name="list-deviceshellscripts"></a>Список Девицешеллскриптс
 
@@ -46,10 +46,10 @@ GET /deviceManagement/deviceShellScripts
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицешеллскрипт](../resources/intune-devices-deviceshellscript.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -89,6 +89,9 @@ Content-Length: 674
   ]
 }
 ```
+
+
+
 
 
 

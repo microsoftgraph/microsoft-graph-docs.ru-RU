@@ -3,14 +3,14 @@ title: Получение Ролеманажемент
 description: Чтение свойств и связей объекта Ролеманажемент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a59ca1b3f8934670b8cb060257f37cafae533eea
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 8ade0ce8a0803a34a47172abde0f90fb0f76c40a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43472350"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072076"
 ---
 # <a name="get-rolemanagement"></a>Получение Ролеманажемент
 
@@ -49,10 +49,10 @@ GET /roleManagement
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [ролеманажемент](../resources/intune-rbac-rolemanagement.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -77,6 +77,9 @@ Content-Length: 128
   }
 }
 ```
+
+
+
 
 
 

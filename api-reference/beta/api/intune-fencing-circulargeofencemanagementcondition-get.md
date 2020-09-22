@@ -3,14 +3,14 @@ title: Получение Циркуларжеофенцеманажементк
 description: Чтение свойств и связей объекта Циркуларжеофенцеманажементкондитион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0dbd0a2e727d45ba881c5af82755c9af1fe08d58
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 3b4c4a3ad10d06b01bc58c347065674713faba7a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177606"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072286"
 ---
 # <a name="get-circulargeofencemanagementcondition"></a>Получение Циркуларжеофенцеманажементкондитион
 
@@ -53,7 +53,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Циркуларжеофенцеманажементкондитион](../resources/intune-fencing-circulargeofencemanagementcondition.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -90,6 +90,9 @@ Content-Length: 586
   }
 }
 ```
+
+
+
 
 
 

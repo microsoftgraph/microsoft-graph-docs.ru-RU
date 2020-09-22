@@ -3,14 +3,14 @@ title: Действие wipe
 description: Очистка устройства
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ea07fd650a00e91896639d0312b48bb787b2b54
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: 1f9e4c9464999b3c39deefcc8fa6164c23b246a2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792129"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072434"
 ---
 # <a name="wipe-action"></a>Действие wipe
 
@@ -52,7 +52,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -62,7 +62,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |keepEnrollmentData|Boolean|Н/Д|
 |keepUserData|Boolean|Н/Д|
 |macOsUnlockCode|String|Пока не задокументировано.|
-|усепротектедвипе|Boolean|Пока нет описания|
+|усепротектедвипе|Boolean|Н/Д|
 
 
 
@@ -92,6 +92,9 @@ Content-length: 138
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

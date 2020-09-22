@@ -3,14 +3,14 @@ title: Создание Девицеманажементинтентассигн
 description: Создание нового объекта Девицеманажементинтентассигнмент.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 63eb168a175613fdca7c84559fcd5c368958c446
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: fcd8e87a5b1469d6180af5da1a58e1181eed90e4
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792578"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072573"
 ---
 # <a name="create-devicemanagementintentassignment"></a>Создание Девицеманажементинтентассигнмент
 
@@ -46,7 +46,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/assignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицеманажементинтентассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементинтентассигнмент.
@@ -97,6 +97,9 @@ Content-Length: 376
   }
 }
 ```
+
+
+
 
 
 

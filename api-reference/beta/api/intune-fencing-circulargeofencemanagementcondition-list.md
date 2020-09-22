@@ -3,14 +3,14 @@ title: Список Циркуларжеофенцеманажементконд
 description: Список свойств и связей объектов Циркуларжеофенцеманажементкондитион.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a443f76a6ab2e75d457621b4f8872a2c8c0daa91
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 27b40646b0f8dab210641633606c4909a3292270
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177599"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48072279"
 ---
 # <a name="list-circulargeofencemanagementconditions"></a>Список Циркуларжеофенцеманажементкондитионс
 
@@ -50,7 +50,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Циркуларжеофенцеманажементкондитион](../resources/intune-fencing-circulargeofencemanagementcondition.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -89,6 +89,9 @@ Content-Length: 628
   ]
 }
 ```
+
+
+
 
 
 
