@@ -5,50 +5,50 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fea55d7f4fdaa0b4cefd7cce16d9f1c8f7836362
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8ec7dbc4b42cffa98e0cc7924ed3703d03cd60fc
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42517434"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038923"
 ---
-# <a name="get-user"></a><span data-ttu-id="f02c2-103">Получение пользователя</span><span class="sxs-lookup"><span data-stu-id="f02c2-103">Get user</span></span>
+# <a name="get-user"></a><span data-ttu-id="636f0-103">Получение пользователя</span><span class="sxs-lookup"><span data-stu-id="636f0-103">Get user</span></span>
 
-<span data-ttu-id="f02c2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f02c2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="636f0-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="636f0-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="f02c2-105">Получение простого каталога **user**, который соответствует этому объекту **educationUser**.</span><span class="sxs-lookup"><span data-stu-id="f02c2-105">Retrieve the simple directory **user** that corresponds to this **educationUser**.</span></span>
+<span data-ttu-id="636f0-105">Получение простого каталога **user**, который соответствует этому объекту **educationUser**.</span><span class="sxs-lookup"><span data-stu-id="636f0-105">Retrieve the simple directory **user** that corresponds to this **educationUser**.</span></span>
 
-><span data-ttu-id="f02c2-106">**Примечание.** Если используется делегированный маркер, участники могут видеть сведения только о своих учебных заведениях.</span><span class="sxs-lookup"><span data-stu-id="f02c2-106">**Note:** If the delegated token is used, members can only see information about their own schools.</span></span> <span data-ttu-id="f02c2-107">В данном случае используйте ресурс `...beta/education/me/schools`.</span><span class="sxs-lookup"><span data-stu-id="f02c2-107">Use the `...beta/education/me/schools` resource in this case.</span></span>
+><span data-ttu-id="636f0-106">**Примечание.** Если используется делегированный маркер, участники могут видеть сведения только о своих учебных заведениях.</span><span class="sxs-lookup"><span data-stu-id="636f0-106">**Note:** If the delegated token is used, members can only see information about their own schools.</span></span> <span data-ttu-id="636f0-107">В данном случае используйте ресурс `...beta/education/me/schools`.</span><span class="sxs-lookup"><span data-stu-id="636f0-107">Use the `...beta/education/me/schools` resource in this case.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f02c2-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f02c2-108">Permissions</span></span>
-<span data-ttu-id="f02c2-109">Для вызова этого API требуется сочетание разрешений.</span><span class="sxs-lookup"><span data-stu-id="f02c2-109">A combination of permissions is required to call this API.</span></span> <span data-ttu-id="f02c2-110">Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f02c2-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="636f0-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="636f0-108">Permissions</span></span>
+<span data-ttu-id="636f0-109">Для вызова этого API требуется сочетание разрешений.</span><span class="sxs-lookup"><span data-stu-id="636f0-109">A combination of permissions is required to call this API.</span></span> <span data-ttu-id="636f0-110">Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="636f0-110">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f02c2-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f02c2-111">Permission type</span></span>      | <span data-ttu-id="f02c2-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f02c2-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="636f0-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="636f0-111">Permission type</span></span>      | <span data-ttu-id="636f0-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="636f0-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f02c2-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f02c2-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="f02c2-114">EduRoster.ReadBasic, EduRoster.Read или EduRoster.Write плюс Directory.Read.All или User.Read</span><span class="sxs-lookup"><span data-stu-id="f02c2-114">One from EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write plus either Directory.Read.All or User.Read</span></span>|
-|<span data-ttu-id="f02c2-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f02c2-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="f02c2-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f02c2-116">Not supported.</span></span>  |
-|<span data-ttu-id="f02c2-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f02c2-117">Application</span></span> | <span data-ttu-id="f02c2-118">EduRoster.Read.All, EduRoster.ReadWrite.All и Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="f02c2-118">EduRoster.Read.All, EduRoster.ReadWrite.All plus Directory.Read.All</span></span>| 
+|<span data-ttu-id="636f0-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="636f0-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="636f0-114">EduRoster.ReadBasic, EduRoster.Read или EduRoster.Write плюс Directory.Read.All или User.Read</span><span class="sxs-lookup"><span data-stu-id="636f0-114">One from EduRoster.ReadBasic, EduRoster.Read, EduRoster.Write plus either Directory.Read.All or User.Read</span></span>|
+|<span data-ttu-id="636f0-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="636f0-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="636f0-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="636f0-116">Not supported.</span></span>  |
+|<span data-ttu-id="636f0-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="636f0-117">Application</span></span> | <span data-ttu-id="636f0-118">EduRoster.Read.All, EduRoster.ReadWrite.All и Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="636f0-118">EduRoster.Read.All, EduRoster.ReadWrite.All plus Directory.Read.All</span></span>| 
 
-## <a name="http-request"></a><span data-ttu-id="f02c2-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f02c2-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="636f0-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="636f0-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/me/user
 GET /education/users/{id}/user
 ```
-## <a name="request-headers"></a><span data-ttu-id="f02c2-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f02c2-120">Request headers</span></span>
-| <span data-ttu-id="f02c2-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="f02c2-121">Header</span></span>       | <span data-ttu-id="f02c2-122">Значение</span><span class="sxs-lookup"><span data-stu-id="f02c2-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="636f0-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="636f0-120">Request headers</span></span>
+| <span data-ttu-id="636f0-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="636f0-121">Header</span></span>       | <span data-ttu-id="636f0-122">Значение</span><span class="sxs-lookup"><span data-stu-id="636f0-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="f02c2-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f02c2-123">Authorization</span></span>  | <span data-ttu-id="f02c2-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f02c2-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="636f0-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="636f0-123">Authorization</span></span>  | <span data-ttu-id="636f0-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="636f0-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="f02c2-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f02c2-126">Request body</span></span>
-<span data-ttu-id="f02c2-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f02c2-127">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="f02c2-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="f02c2-128">Response</span></span>
-<span data-ttu-id="f02c2-129">При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [user](../resources/user.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="f02c2-129">If successful, this method returns a `200 OK` response code and a [user](../resources/user.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="f02c2-130">Пример</span><span class="sxs-lookup"><span data-stu-id="f02c2-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f02c2-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="f02c2-131">Request</span></span>
-<span data-ttu-id="f02c2-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f02c2-132">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="636f0-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="636f0-126">Request body</span></span>
+<span data-ttu-id="636f0-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="636f0-127">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="636f0-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="636f0-128">Response</span></span>
+<span data-ttu-id="636f0-129">При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [user](../resources/user.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="636f0-129">If successful, this method returns a `200 OK` response code and a [user](../resources/user.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="636f0-130">Пример</span><span class="sxs-lookup"><span data-stu-id="636f0-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="636f0-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="636f0-131">Request</span></span>
+<span data-ttu-id="636f0-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="636f0-132">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="f02c2-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="f02c2-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="636f0-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="636f0-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_educationuser"
@@ -56,28 +56,28 @@ GET /education/users/{id}/user
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/me/user
 ```
-# <a name="c"></a>[<span data-ttu-id="f02c2-134">C#</span><span class="sxs-lookup"><span data-stu-id="f02c2-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="636f0-134">C#</span><span class="sxs-lookup"><span data-stu-id="636f0-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f02c2-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f02c2-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="636f0-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="636f0-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f02c2-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f02c2-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="636f0-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="636f0-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="f02c2-137">Java</span><span class="sxs-lookup"><span data-stu-id="f02c2-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="636f0-137">Java</span><span class="sxs-lookup"><span data-stu-id="636f0-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-educationuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="f02c2-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="f02c2-138">Response</span></span>
-<span data-ttu-id="f02c2-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f02c2-139">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="636f0-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="636f0-138">Response</span></span>
+<span data-ttu-id="636f0-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="636f0-139">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="f02c2-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f02c2-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="636f0-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="636f0-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -118,3 +118,4 @@ Content-length: 491
   "suppressions": [
   ]
 }-->
+

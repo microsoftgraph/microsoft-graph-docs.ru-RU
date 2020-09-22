@@ -5,52 +5,52 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 85f00cd7d0788237cc7dbe09fa153fe5f02874b3
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c8bafea2ea512ae9535c586cbd3a1d98ab31c1b5
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43461541"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48038748"
 ---
-# <a name="list-attachments"></a><span data-ttu-id="458ba-103">Список вложений</span><span class="sxs-lookup"><span data-stu-id="458ba-103">List attachments</span></span>
+# <a name="list-attachments"></a><span data-ttu-id="c394a-103">Список вложений</span><span class="sxs-lookup"><span data-stu-id="c394a-103">List attachments</span></span>
 
-<span data-ttu-id="458ba-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="458ba-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c394a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c394a-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="458ba-105">Получение списка объектов вложений.</span><span class="sxs-lookup"><span data-stu-id="458ba-105">Retrieve a list of attachment objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="458ba-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="458ba-106">Permissions</span></span>
-<span data-ttu-id="458ba-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="458ba-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c394a-105">Получение списка объектов вложений.</span><span class="sxs-lookup"><span data-stu-id="c394a-105">Retrieve a list of attachment objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c394a-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c394a-106">Permissions</span></span>
+<span data-ttu-id="c394a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c394a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="458ba-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="458ba-109">Permission type</span></span>      | <span data-ttu-id="458ba-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="458ba-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c394a-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c394a-109">Permission type</span></span>      | <span data-ttu-id="c394a-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c394a-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="458ba-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="458ba-111">Delegated (work or school account)</span></span> | <span data-ttu-id="458ba-112">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="458ba-112">Mail.Read</span></span>    |
-|<span data-ttu-id="458ba-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="458ba-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="458ba-114">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="458ba-114">Mail.Read</span></span>    |
-|<span data-ttu-id="458ba-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="458ba-115">Application</span></span> | <span data-ttu-id="458ba-116">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="458ba-116">Mail.Read</span></span> |
+|<span data-ttu-id="c394a-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c394a-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c394a-112">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="c394a-112">Mail.Read</span></span>    |
+|<span data-ttu-id="c394a-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c394a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c394a-114">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="c394a-114">Mail.Read</span></span>    |
+|<span data-ttu-id="c394a-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c394a-115">Application</span></span> | <span data-ttu-id="c394a-116">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="c394a-116">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="458ba-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="458ba-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c394a-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c394a-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}/attachments
 GET /users/{id | userPrincipalName}/messages/{id}/attachments
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="458ba-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="458ba-118">Optional query parameters</span></span>
-<span data-ttu-id="458ba-119">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="458ba-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c394a-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="c394a-118">Optional query parameters</span></span>
+<span data-ttu-id="c394a-119">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="c394a-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="458ba-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="458ba-120">Request headers</span></span>
-| <span data-ttu-id="458ba-121">Имя</span><span class="sxs-lookup"><span data-stu-id="458ba-121">Name</span></span>       | <span data-ttu-id="458ba-122">Тип</span><span class="sxs-lookup"><span data-stu-id="458ba-122">Type</span></span> | <span data-ttu-id="458ba-123">Описание</span><span class="sxs-lookup"><span data-stu-id="458ba-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c394a-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c394a-120">Request headers</span></span>
+| <span data-ttu-id="c394a-121">Имя</span><span class="sxs-lookup"><span data-stu-id="c394a-121">Name</span></span>       | <span data-ttu-id="c394a-122">Тип</span><span class="sxs-lookup"><span data-stu-id="c394a-122">Type</span></span> | <span data-ttu-id="c394a-123">Описание</span><span class="sxs-lookup"><span data-stu-id="c394a-123">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="458ba-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="458ba-124">Authorization</span></span>  | <span data-ttu-id="458ba-125">string</span><span class="sxs-lookup"><span data-stu-id="458ba-125">string</span></span>  | <span data-ttu-id="458ba-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="458ba-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c394a-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="c394a-124">Authorization</span></span>  | <span data-ttu-id="c394a-125">string</span><span class="sxs-lookup"><span data-stu-id="c394a-125">string</span></span>  | <span data-ttu-id="c394a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c394a-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="458ba-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="458ba-128">Request body</span></span>
-<span data-ttu-id="458ba-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="458ba-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c394a-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c394a-128">Request body</span></span>
+<span data-ttu-id="c394a-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c394a-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="458ba-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="458ba-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c394a-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="c394a-130">Response</span></span>
 
-<span data-ttu-id="458ba-131">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Attachment](../resources/attachment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="458ba-131">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="458ba-132">Пример</span><span class="sxs-lookup"><span data-stu-id="458ba-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="458ba-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="458ba-133">Request</span></span>
-<span data-ttu-id="458ba-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="458ba-134">Here is an example of the request.</span></span>
+<span data-ttu-id="c394a-131">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Attachment](../resources/attachment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c394a-131">If successful, this method returns a `200 OK` response code and collection of [Attachment](../resources/attachment.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="c394a-132">Пример</span><span class="sxs-lookup"><span data-stu-id="c394a-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c394a-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="c394a-133">Request</span></span>
+<span data-ttu-id="c394a-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c394a-134">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="458ba-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="458ba-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="c394a-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="c394a-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "eventmessage_get_attachments_v1"
@@ -58,26 +58,26 @@ GET /users/{id | userPrincipalName}/messages/{id}/attachments
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
 ```
-# <a name="c"></a>[<span data-ttu-id="458ba-136">C#</span><span class="sxs-lookup"><span data-stu-id="458ba-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="c394a-136">C#</span><span class="sxs-lookup"><span data-stu-id="c394a-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/eventmessage-get-attachments-v1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="458ba-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="458ba-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="c394a-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="c394a-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/eventmessage-get-attachments-v1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="458ba-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="458ba-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="c394a-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="c394a-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/eventmessage-get-attachments-v1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="458ba-139">Java</span><span class="sxs-lookup"><span data-stu-id="458ba-139">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="c394a-139">Java</span><span class="sxs-lookup"><span data-stu-id="c394a-139">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/eventmessage-get-attachments-v1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="458ba-140">Ответ</span><span class="sxs-lookup"><span data-stu-id="458ba-140">Response</span></span>
-<span data-ttu-id="458ba-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="458ba-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c394a-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="c394a-140">Response</span></span>
+<span data-ttu-id="c394a-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c394a-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "eventmessage_get_attachments_v1",
@@ -119,3 +119,4 @@ Content-length: 215
   "suppressions": [
   ]
 }-->
+

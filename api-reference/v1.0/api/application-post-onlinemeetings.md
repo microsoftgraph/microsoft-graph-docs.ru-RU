@@ -5,58 +5,58 @@ author: ananmishr
 localization_priority: Priority
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: e0d855e84947c7dc480a4168b3d15baebecb1f80
-ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
+ms.openlocfilehash: be8fb17a2c59024a0902923eb775c8972bb702f1
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44556347"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039035"
 ---
-# <a name="create-onlinemeeting"></a><span data-ttu-id="563ad-103">Создание объекта onlineMeeting</span><span class="sxs-lookup"><span data-stu-id="563ad-103">Create onlineMeeting</span></span>
+# <a name="create-onlinemeeting"></a><span data-ttu-id="a2474-103">Создание объекта onlineMeeting</span><span class="sxs-lookup"><span data-stu-id="a2474-103">Create onlineMeeting</span></span>
 
-<span data-ttu-id="563ad-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="563ad-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a2474-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a2474-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="563ad-105">Создание собрания по сети от имени пользователя с помощью ИД объекта (OID) в маркере пользователя.</span><span class="sxs-lookup"><span data-stu-id="563ad-105">Create an online meeting on behalf of a user by using the object ID (OID) in the user token.</span></span>
+<span data-ttu-id="a2474-105">Создание собрания по сети от имени пользователя с помощью ИД объекта (OID) в маркере пользователя.</span><span class="sxs-lookup"><span data-stu-id="a2474-105">Create an online meeting on behalf of a user by using the object ID (OID) in the user token.</span></span>
 
-> <span data-ttu-id="563ad-106">**Примечание.** Собрание не отображается в календаре пользователя.</span><span class="sxs-lookup"><span data-stu-id="563ad-106">**Note**: The meeting does not show up on the user's calendar.</span></span>
+> <span data-ttu-id="a2474-106">**Примечание.** Собрание не отображается в календаре пользователя.</span><span class="sxs-lookup"><span data-stu-id="a2474-106">**Note**: The meeting does not show up on the user's calendar.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="563ad-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="563ad-107">Permissions</span></span>
-<span data-ttu-id="563ad-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="563ad-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a2474-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a2474-107">Permissions</span></span>
+<span data-ttu-id="a2474-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a2474-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="563ad-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="563ad-110">Permission type</span></span>                        | <span data-ttu-id="563ad-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="563ad-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="a2474-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a2474-110">Permission type</span></span>                        | <span data-ttu-id="a2474-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a2474-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="563ad-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="563ad-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="563ad-113">OnlineMeetings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="563ad-113">OnlineMeetings.ReadWrite</span></span>                    |
-| <span data-ttu-id="563ad-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="563ad-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="563ad-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="563ad-115">Not Supported</span></span>                               |
-| <span data-ttu-id="563ad-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="563ad-116">Application</span></span>                            | <span data-ttu-id="563ad-117">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="563ad-117">Not Supported</span></span>                |
+| <span data-ttu-id="a2474-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a2474-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="a2474-113">OnlineMeetings.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a2474-113">OnlineMeetings.ReadWrite</span></span>                    |
+| <span data-ttu-id="a2474-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a2474-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a2474-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="a2474-115">Not Supported</span></span>                               |
+| <span data-ttu-id="a2474-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="a2474-116">Application</span></span>                            | <span data-ttu-id="a2474-117">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="a2474-117">Not Supported</span></span>                |
 
-## <a name="http-request"></a><span data-ttu-id="563ad-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="563ad-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a2474-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a2474-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="563ad-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="563ad-119">Request headers</span></span>
-| <span data-ttu-id="563ad-120">Имя</span><span class="sxs-lookup"><span data-stu-id="563ad-120">Name</span></span>          | <span data-ttu-id="563ad-121">Описание</span><span class="sxs-lookup"><span data-stu-id="563ad-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="a2474-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a2474-119">Request headers</span></span>
+| <span data-ttu-id="a2474-120">Имя</span><span class="sxs-lookup"><span data-stu-id="a2474-120">Name</span></span>          | <span data-ttu-id="a2474-121">Описание</span><span class="sxs-lookup"><span data-stu-id="a2474-121">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="563ad-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="563ad-122">Authorization</span></span> | <span data-ttu-id="563ad-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="563ad-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="563ad-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="563ad-125">Content-type</span></span>  | <span data-ttu-id="563ad-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="563ad-p103">application/json. Required.</span></span> |
-| <span data-ttu-id="563ad-128">Принять-Язык</span><span class="sxs-lookup"><span data-stu-id="563ad-128">Accept-Language</span></span>  | <span data-ttu-id="563ad-129">Язык.</span><span class="sxs-lookup"><span data-stu-id="563ad-129">Language.</span></span> <span data-ttu-id="563ad-130">Необязательное.</span><span class="sxs-lookup"><span data-stu-id="563ad-130">Optional.</span></span> |
+| <span data-ttu-id="a2474-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a2474-122">Authorization</span></span> | <span data-ttu-id="a2474-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a2474-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a2474-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a2474-125">Content-type</span></span>  | <span data-ttu-id="a2474-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a2474-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="a2474-128">Принять-Язык</span><span class="sxs-lookup"><span data-stu-id="a2474-128">Accept-Language</span></span>  | <span data-ttu-id="a2474-129">Язык.</span><span class="sxs-lookup"><span data-stu-id="a2474-129">Language.</span></span> <span data-ttu-id="a2474-130">Необязательное.</span><span class="sxs-lookup"><span data-stu-id="a2474-130">Optional.</span></span> |
 
-<span data-ttu-id="563ad-131">Если запрос содержит `Accept-Language` HTTP-заголовок, то `content` из `joinInformation` будет указан на языке и языкового стандарта, указанного в заголовке `Accept-Language`.</span><span class="sxs-lookup"><span data-stu-id="563ad-131">If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header.</span></span> <span data-ttu-id="563ad-132">Контент по умолчанию будет на английском языке.</span><span class="sxs-lookup"><span data-stu-id="563ad-132">The default content will be in English.</span></span>
+<span data-ttu-id="a2474-131">Если запрос содержит `Accept-Language` HTTP-заголовок, то `content` из `joinInformation` будет указан на языке и языкового стандарта, указанного в заголовке `Accept-Language`.</span><span class="sxs-lookup"><span data-stu-id="a2474-131">If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header.</span></span> <span data-ttu-id="a2474-132">Контент по умолчанию будет на английском языке.</span><span class="sxs-lookup"><span data-stu-id="a2474-132">The default content will be in English.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="563ad-133">Основной текст запроса</span><span class="sxs-lookup"><span data-stu-id="563ad-133">Request body</span></span>
-<span data-ttu-id="563ad-134">В тексте запроса должно быть представление объекта [onlineMeeting](../resources/onlinemeeting.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="563ad-134">In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a2474-133">Основной текст запроса</span><span class="sxs-lookup"><span data-stu-id="a2474-133">Request body</span></span>
+<span data-ttu-id="a2474-134">В тексте запроса должно быть представление объекта [onlineMeeting](../resources/onlinemeeting.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a2474-134">In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="563ad-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="563ad-135">Response</span></span>
-<span data-ttu-id="563ad-136">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [onlineMeeting](../resources/onlinemeeting.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="563ad-136">If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a2474-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="a2474-135">Response</span></span>
+<span data-ttu-id="a2474-136">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [onlineMeeting](../resources/onlinemeeting.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="a2474-136">If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="563ad-137">Примеры</span><span class="sxs-lookup"><span data-stu-id="563ad-137">Examples</span></span> 
+## <a name="examples"></a><span data-ttu-id="a2474-137">Примеры</span><span class="sxs-lookup"><span data-stu-id="a2474-137">Examples</span></span> 
 
-<span data-ttu-id="563ad-138">В приведенном ниже примере показано, как создать собрание по сети с помощью маркера пользователя.</span><span class="sxs-lookup"><span data-stu-id="563ad-138">The following example creates an online meeting with a user token.</span></span>
+<span data-ttu-id="a2474-138">В приведенном ниже примере показано, как создать собрание по сети с помощью маркера пользователя.</span><span class="sxs-lookup"><span data-stu-id="a2474-138">The following example creates an online meeting with a user token.</span></span>
 
-### <a name="request"></a><span data-ttu-id="563ad-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="563ad-139">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a2474-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="a2474-139">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="563ad-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="563ad-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="a2474-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="a2474-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create-onlinemeeting-user-token"
@@ -71,27 +71,27 @@ Content-Type: application/json
   "subject":"User Token Meeting"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="563ad-141">C#</span><span class="sxs-lookup"><span data-stu-id="563ad-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="a2474-141">C#</span><span class="sxs-lookup"><span data-stu-id="a2474-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-onlinemeeting-user-token-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="563ad-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="563ad-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="a2474-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a2474-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-onlinemeeting-user-token-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="563ad-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="563ad-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="a2474-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a2474-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-onlinemeeting-user-token-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="563ad-144">Java</span><span class="sxs-lookup"><span data-stu-id="563ad-144">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="a2474-144">Java</span><span class="sxs-lookup"><span data-stu-id="a2474-144">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-onlinemeeting-user-token-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="563ad-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="563ad-145">Response</span></span>
-><span data-ttu-id="563ad-146">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="563ad-146">**Note:** The response object shown here might be shortened for readability.</span></span> 
+### <a name="response"></a><span data-ttu-id="a2474-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="a2474-145">Response</span></span>
+><span data-ttu-id="a2474-146">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="a2474-146">**Note:** The response object shown here might be shortened for readability.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -136,7 +136,7 @@ Content-Type: application/json
   "subject": "User Token Meeting"
 }
 ```
-><span data-ttu-id="563ad-147">**Примечание.** если указан японский язык, в ответ будут включены перечисленные ниже данные.</span><span class="sxs-lookup"><span data-stu-id="563ad-147">**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.</span></span>
+><span data-ttu-id="a2474-147">**Примечание.** если указан японский язык, в ответ будут включены перечисленные ниже данные.</span><span class="sxs-lookup"><span data-stu-id="a2474-147">**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.</span></span>
 
 ```json
     "joinInformation": {
@@ -158,3 +158,4 @@ Content-Type: application/json
   ]
 }
 -->
+
