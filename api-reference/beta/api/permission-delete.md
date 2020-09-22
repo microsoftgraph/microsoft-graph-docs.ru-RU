@@ -6,34 +6,34 @@ title: Отмена доступа к элементу
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: a7990bf666dd18bfc0e04d5874fe176ed48e909b
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 49d68b991c6f19be9979a039ba482f87e9637560
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42455979"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48040329"
 ---
-# <a name="delete-a-sharing-permission-from-a-file-or-folder"></a><span data-ttu-id="45f59-103">Удаление разрешения на общий доступ для файла или папки</span><span class="sxs-lookup"><span data-stu-id="45f59-103">Delete a sharing permission from a file or folder</span></span>
+# <a name="delete-a-sharing-permission-from-a-file-or-folder"></a><span data-ttu-id="8db29-103">Удаление разрешения на общий доступ для файла или папки</span><span class="sxs-lookup"><span data-stu-id="8db29-103">Delete a sharing permission from a file or folder</span></span>
 
-<span data-ttu-id="45f59-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="45f59-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8db29-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8db29-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="45f59-105">В этой статье рассказывается, как отменить доступ к ресурсу [DriveItem](../resources/driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="45f59-105">Remove access to a [DriveItem](../resources/driveitem.md).</span></span>
+<span data-ttu-id="8db29-105">В этой статье рассказывается, как отменить доступ к ресурсу [DriveItem](../resources/driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="8db29-105">Remove access to a [DriveItem](../resources/driveitem.md).</span></span>
 
-<span data-ttu-id="45f59-106">Вы можете удалить только те разрешения на общий доступ, которые **не** были унаследованы.</span><span class="sxs-lookup"><span data-stu-id="45f59-106">Only sharing permissions that are **not** inherited can be deleted.</span></span>
-<span data-ttu-id="45f59-107">Свойство **inheritedFrom** должно иметь значение `null`.</span><span class="sxs-lookup"><span data-stu-id="45f59-107">The **inheritedFrom** property must be `null`.</span></span>
+<span data-ttu-id="8db29-106">Вы можете удалить только те разрешения на общий доступ, которые **не** были унаследованы.</span><span class="sxs-lookup"><span data-stu-id="8db29-106">Only sharing permissions that are **not** inherited can be deleted.</span></span>
+<span data-ttu-id="8db29-107">Свойство **inheritedFrom** должно иметь значение `null`.</span><span class="sxs-lookup"><span data-stu-id="8db29-107">The **inheritedFrom** property must be `null`.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="45f59-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="45f59-108">Permissions</span></span>
-<span data-ttu-id="45f59-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="45f59-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8db29-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8db29-108">Permissions</span></span>
+<span data-ttu-id="8db29-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8db29-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="45f59-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="45f59-111">Permission type</span></span>      | <span data-ttu-id="45f59-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="45f59-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8db29-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8db29-111">Permission type</span></span>      | <span data-ttu-id="8db29-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8db29-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="45f59-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="45f59-113">Delegated (work or school account)</span></span> | <span data-ttu-id="45f59-114">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="45f59-114">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="45f59-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="45f59-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="45f59-116">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="45f59-116">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="45f59-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="45f59-117">Application</span></span> | <span data-ttu-id="45f59-118">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="45f59-118">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="8db29-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8db29-113">Delegated (work or school account)</span></span> | <span data-ttu-id="8db29-114">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8db29-114">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="8db29-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8db29-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8db29-116">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8db29-116">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="8db29-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8db29-117">Application</span></span> | <span data-ttu-id="8db29-118">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8db29-118">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="45f59-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="45f59-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8db29-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8db29-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -44,44 +44,44 @@ DELETE /sites/{site-id}/drive/items/{item-id}/permissions/{perm-id}
 DELETE /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="45f59-120">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="45f59-120">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="8db29-120">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8db29-120">Optional request headers</span></span>
 
-| <span data-ttu-id="45f59-121">Имя</span><span class="sxs-lookup"><span data-stu-id="45f59-121">Name</span></span>          | <span data-ttu-id="45f59-122">Тип</span><span class="sxs-lookup"><span data-stu-id="45f59-122">Type</span></span>   | <span data-ttu-id="45f59-123">Описание</span><span class="sxs-lookup"><span data-stu-id="45f59-123">Description</span></span>                                                                                                                                                                                       |
+| <span data-ttu-id="8db29-121">Имя</span><span class="sxs-lookup"><span data-stu-id="8db29-121">Name</span></span>          | <span data-ttu-id="8db29-122">Тип</span><span class="sxs-lookup"><span data-stu-id="8db29-122">Type</span></span>   | <span data-ttu-id="8db29-123">Описание</span><span class="sxs-lookup"><span data-stu-id="8db29-123">Description</span></span>                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="45f59-124">if-match</span><span class="sxs-lookup"><span data-stu-id="45f59-124">if-match</span></span>      | <span data-ttu-id="45f59-125">string</span><span class="sxs-lookup"><span data-stu-id="45f59-125">string</span></span> | <span data-ttu-id="45f59-126">Если указан заголовок запроса, а предоставленный тег eTag (или cTag) не совпадает с текущим тегом элемента, то возвращается отклик `412 Precondition Failed`, а элемент не удаляется.</span><span class="sxs-lookup"><span data-stu-id="45f59-126">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
+| <span data-ttu-id="8db29-124">if-match</span><span class="sxs-lookup"><span data-stu-id="8db29-124">if-match</span></span>      | <span data-ttu-id="8db29-125">string</span><span class="sxs-lookup"><span data-stu-id="8db29-125">string</span></span> | <span data-ttu-id="8db29-126">Если указан заголовок запроса, а предоставленный тег eTag (или cTag) не совпадает с текущим тегом элемента, то возвращается отклик `412 Precondition Failed`, а элемент не удаляется.</span><span class="sxs-lookup"><span data-stu-id="8db29-126">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
 
 
-## <a name="response"></a><span data-ttu-id="45f59-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="45f59-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8db29-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="8db29-127">Response</span></span>
 
-<span data-ttu-id="45f59-128">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="45f59-128">If successful, this method returns `204 No Content` response code.</span></span>
+<span data-ttu-id="8db29-128">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="8db29-128">If successful, this method returns `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="45f59-129">Пример</span><span class="sxs-lookup"><span data-stu-id="45f59-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8db29-129">Пример</span><span class="sxs-lookup"><span data-stu-id="8db29-129">Example</span></span>
 
-<span data-ttu-id="45f59-130">В этом примере показано, как удалить разрешение, идентифицированное как {perm-id} из элемента {item-id} в хранилище OneDrive текущего пользователя.</span><span class="sxs-lookup"><span data-stu-id="45f59-130">This example removes the permission identified as {perm-id} from the item {item-id} in the current user's OneDrive.</span></span>
+<span data-ttu-id="8db29-130">В этом примере показано, как удалить разрешение, идентифицированное как {perm-id} из элемента {item-id} в хранилище OneDrive текущего пользователя.</span><span class="sxs-lookup"><span data-stu-id="8db29-130">This example removes the permission identified as {perm-id} from the item {item-id} in the current user's OneDrive.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="45f59-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="45f59-131">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8db29-131">HTTP</span><span class="sxs-lookup"><span data-stu-id="8db29-131">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "delete-permission", "scopes": "files.readwrite" }-->
 
 ```http
 DELETE https://graph.microsoft.com/beta/me/drive/root/items/{item-id}/permissions/{perm-id}
 ```
-# <a name="c"></a>[<span data-ttu-id="45f59-132">C#</span><span class="sxs-lookup"><span data-stu-id="45f59-132">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8db29-132">C#</span><span class="sxs-lookup"><span data-stu-id="8db29-132">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="45f59-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="45f59-133">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8db29-133">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8db29-133">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-permission-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="45f59-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="45f59-134">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8db29-134">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8db29-134">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-permission-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="45f59-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="45f59-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="8db29-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="8db29-135">Response</span></span>
 
 <!-- { "blockType": "response", "truncated": false } -->
 
@@ -89,9 +89,9 @@ DELETE https://graph.microsoft.com/beta/me/drive/root/items/{item-id}/permission
 HTTP/1.1 204 No Content
 ```
 
-## <a name="remarks"></a><span data-ttu-id="45f59-136">Примечания</span><span class="sxs-lookup"><span data-stu-id="45f59-136">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="8db29-136">Примечания</span><span class="sxs-lookup"><span data-stu-id="8db29-136">Remarks</span></span>
 
-* <span data-ttu-id="45f59-137">[Диски](../resources/drive.md), у которых для свойства **driveType** задано значение `personal` (личное хранилище OneDrive), не могут создавать и изменять разрешения в корневом ресурсе DriveItem.</span><span class="sxs-lookup"><span data-stu-id="45f59-137">[Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) cannot create or modify permissions on the root DriveItem.</span></span> 
+* <span data-ttu-id="8db29-137">[Диски](../resources/drive.md), у которых для свойства **driveType** задано значение `personal` (личное хранилище OneDrive), не могут создавать и изменять разрешения в корневом ресурсе DriveItem.</span><span class="sxs-lookup"><span data-stu-id="8db29-137">[Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) cannot create or modify permissions on the root DriveItem.</span></span> 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -106,3 +106,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

@@ -3,44 +3,44 @@ title: Тип ресурса windowsKioskDesktopApp
 description: Базовый класс для типа приложений
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: af8e97b8b1aac3fcee5592da78b96bc2ccfd5143
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 145cc54d3d04a3a703ad65f5ee91a71df7bb63ab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43463466"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48039785"
 ---
-# <a name="windowskioskdesktopapp-resource-type"></a><span data-ttu-id="dabc3-103">Тип ресурса windowsKioskDesktopApp</span><span class="sxs-lookup"><span data-stu-id="dabc3-103">windowsKioskDesktopApp resource type</span></span>
+# <a name="windowskioskdesktopapp-resource-type"></a><span data-ttu-id="65fd4-103">Тип ресурса windowsKioskDesktopApp</span><span class="sxs-lookup"><span data-stu-id="65fd4-103">windowsKioskDesktopApp resource type</span></span>
 
-<span data-ttu-id="dabc3-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="dabc3-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="65fd4-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="65fd4-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="dabc3-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dabc3-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="65fd4-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="65fd4-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="dabc3-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="dabc3-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="65fd4-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="65fd4-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="dabc3-107">Базовый класс для типа приложений</span><span class="sxs-lookup"><span data-stu-id="dabc3-107">The base class for a type of apps</span></span>
+<span data-ttu-id="65fd4-107">Базовый класс для типа приложений</span><span class="sxs-lookup"><span data-stu-id="65fd4-107">The base class for a type of apps</span></span>
 
 
-<span data-ttu-id="dabc3-108">Наследуется от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)</span><span class="sxs-lookup"><span data-stu-id="dabc3-108">Inherits from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span></span>
+<span data-ttu-id="65fd4-108">Наследуется от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)</span><span class="sxs-lookup"><span data-stu-id="65fd4-108">Inherits from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="dabc3-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="dabc3-109">Properties</span></span>
-|<span data-ttu-id="dabc3-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="dabc3-110">Property</span></span>|<span data-ttu-id="dabc3-111">Тип</span><span class="sxs-lookup"><span data-stu-id="dabc3-111">Type</span></span>|<span data-ttu-id="dabc3-112">Описание</span><span class="sxs-lookup"><span data-stu-id="dabc3-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="65fd4-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="65fd4-109">Properties</span></span>
+|<span data-ttu-id="65fd4-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="65fd4-110">Property</span></span>|<span data-ttu-id="65fd4-111">Тип</span><span class="sxs-lookup"><span data-stu-id="65fd4-111">Type</span></span>|<span data-ttu-id="65fd4-112">Описание</span><span class="sxs-lookup"><span data-stu-id="65fd4-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="dabc3-113">стартлайауттилесизе</span><span class="sxs-lookup"><span data-stu-id="dabc3-113">startLayoutTileSize</span></span>|[<span data-ttu-id="dabc3-114">windowsAppStartLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="dabc3-114">windowsAppStartLayoutTileSize</span></span>](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|<span data-ttu-id="dabc3-115">Размер плитки приложения для начального макета, унаследованного от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md).</span><span class="sxs-lookup"><span data-stu-id="dabc3-115">The app tile size for the start layout Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md).</span></span> <span data-ttu-id="dabc3-116">Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.</span><span class="sxs-lookup"><span data-stu-id="dabc3-116">Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.</span></span>|
-|<span data-ttu-id="dabc3-117">name</span><span class="sxs-lookup"><span data-stu-id="dabc3-117">name</span></span>|<span data-ttu-id="dabc3-118">String</span><span class="sxs-lookup"><span data-stu-id="dabc3-118">String</span></span>|<span data-ttu-id="dabc3-119">Представляет понятное имя приложения, наследуемого от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)</span><span class="sxs-lookup"><span data-stu-id="dabc3-119">Represents the friendly name of an app Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span></span>|
-|<span data-ttu-id="dabc3-120">Тип</span><span class="sxs-lookup"><span data-stu-id="dabc3-120">appType</span></span>|[<span data-ttu-id="dabc3-121">виндовскиоскапптипе</span><span class="sxs-lookup"><span data-stu-id="dabc3-121">windowsKioskAppType</span></span>](../resources/intune-deviceconfig-windowskioskapptype.md)|<span data-ttu-id="dabc3-122">Тип приложения, наследуемого из [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md).</span><span class="sxs-lookup"><span data-stu-id="dabc3-122">The app type Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md).</span></span> <span data-ttu-id="dabc3-123">Возможные значения: `unknown`, `store`, `desktop`, `aumId`.</span><span class="sxs-lookup"><span data-stu-id="dabc3-123">Possible values are: `unknown`, `store`, `desktop`, `aumId`.</span></span>|
-|<span data-ttu-id="dabc3-124">Автозапуск</span><span class="sxs-lookup"><span data-stu-id="dabc3-124">autoLaunch</span></span>|<span data-ttu-id="dabc3-125">Boolean</span><span class="sxs-lookup"><span data-stu-id="dabc3-125">Boolean</span></span>|<span data-ttu-id="dabc3-126">Разрешить автоматический запуск приложения в режиме киоска с несколькими приложениями, унаследованном от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)</span><span class="sxs-lookup"><span data-stu-id="dabc3-126">Allow the app to be auto-launched in multi-app kiosk mode Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span></span>|
-|<span data-ttu-id="dabc3-127">path</span><span class="sxs-lookup"><span data-stu-id="dabc3-127">path</span></span>|<span data-ttu-id="dabc3-128">String</span><span class="sxs-lookup"><span data-stu-id="dabc3-128">String</span></span>|<span data-ttu-id="dabc3-129">Определение пути к классическому приложению</span><span class="sxs-lookup"><span data-stu-id="dabc3-129">Define the path of a desktop app</span></span>|
-|<span data-ttu-id="dabc3-130">десктопаппликатионид</span><span class="sxs-lookup"><span data-stu-id="dabc3-130">desktopApplicationId</span></span>|<span data-ttu-id="dabc3-131">String</span><span class="sxs-lookup"><span data-stu-id="dabc3-131">String</span></span>|<span data-ttu-id="dabc3-132">Определение Десктопаппликатионид приложения</span><span class="sxs-lookup"><span data-stu-id="dabc3-132">Define the DesktopApplicationID of the app</span></span>|
-|<span data-ttu-id="dabc3-133">десктопаппликатионлинкпас</span><span class="sxs-lookup"><span data-stu-id="dabc3-133">desktopApplicationLinkPath</span></span>|<span data-ttu-id="dabc3-134">String</span><span class="sxs-lookup"><span data-stu-id="dabc3-134">String</span></span>|<span data-ttu-id="dabc3-135">Определение Десктопаппликатионлинкпас приложения</span><span class="sxs-lookup"><span data-stu-id="dabc3-135">Define the DesktopApplicationLinkPath of the app</span></span>|
+|<span data-ttu-id="65fd4-113">стартлайауттилесизе</span><span class="sxs-lookup"><span data-stu-id="65fd4-113">startLayoutTileSize</span></span>|[<span data-ttu-id="65fd4-114">windowsAppStartLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="65fd4-114">windowsAppStartLayoutTileSize</span></span>](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|<span data-ttu-id="65fd4-115">Размер плитки приложения для начального макета, унаследованного от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md).</span><span class="sxs-lookup"><span data-stu-id="65fd4-115">The app tile size for the start layout Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md).</span></span> <span data-ttu-id="65fd4-116">Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.</span><span class="sxs-lookup"><span data-stu-id="65fd4-116">Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.</span></span>|
+|<span data-ttu-id="65fd4-117">name</span><span class="sxs-lookup"><span data-stu-id="65fd4-117">name</span></span>|<span data-ttu-id="65fd4-118">String</span><span class="sxs-lookup"><span data-stu-id="65fd4-118">String</span></span>|<span data-ttu-id="65fd4-119">Представляет понятное имя приложения, наследуемого от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)</span><span class="sxs-lookup"><span data-stu-id="65fd4-119">Represents the friendly name of an app Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span></span>|
+|<span data-ttu-id="65fd4-120">Тип</span><span class="sxs-lookup"><span data-stu-id="65fd4-120">appType</span></span>|[<span data-ttu-id="65fd4-121">виндовскиоскапптипе</span><span class="sxs-lookup"><span data-stu-id="65fd4-121">windowsKioskAppType</span></span>](../resources/intune-deviceconfig-windowskioskapptype.md)|<span data-ttu-id="65fd4-122">Тип приложения, наследуемого из [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md).</span><span class="sxs-lookup"><span data-stu-id="65fd4-122">The app type Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md).</span></span> <span data-ttu-id="65fd4-123">Возможные значения: `unknown`, `store`, `desktop`, `aumId`.</span><span class="sxs-lookup"><span data-stu-id="65fd4-123">Possible values are: `unknown`, `store`, `desktop`, `aumId`.</span></span>|
+|<span data-ttu-id="65fd4-124">Автозапуск</span><span class="sxs-lookup"><span data-stu-id="65fd4-124">autoLaunch</span></span>|<span data-ttu-id="65fd4-125">Boolean</span><span class="sxs-lookup"><span data-stu-id="65fd4-125">Boolean</span></span>|<span data-ttu-id="65fd4-126">Разрешить автоматический запуск приложения в режиме киоска с несколькими приложениями, унаследованном от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)</span><span class="sxs-lookup"><span data-stu-id="65fd4-126">Allow the app to be auto-launched in multi-app kiosk mode Inherited from [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)</span></span>|
+|<span data-ttu-id="65fd4-127">path</span><span class="sxs-lookup"><span data-stu-id="65fd4-127">path</span></span>|<span data-ttu-id="65fd4-128">String</span><span class="sxs-lookup"><span data-stu-id="65fd4-128">String</span></span>|<span data-ttu-id="65fd4-129">Определение пути к классическому приложению</span><span class="sxs-lookup"><span data-stu-id="65fd4-129">Define the path of a desktop app</span></span>|
+|<span data-ttu-id="65fd4-130">десктопаппликатионид</span><span class="sxs-lookup"><span data-stu-id="65fd4-130">desktopApplicationId</span></span>|<span data-ttu-id="65fd4-131">String</span><span class="sxs-lookup"><span data-stu-id="65fd4-131">String</span></span>|<span data-ttu-id="65fd4-132">Определение Десктопаппликатионид приложения</span><span class="sxs-lookup"><span data-stu-id="65fd4-132">Define the DesktopApplicationID of the app</span></span>|
+|<span data-ttu-id="65fd4-133">десктопаппликатионлинкпас</span><span class="sxs-lookup"><span data-stu-id="65fd4-133">desktopApplicationLinkPath</span></span>|<span data-ttu-id="65fd4-134">String</span><span class="sxs-lookup"><span data-stu-id="65fd4-134">String</span></span>|<span data-ttu-id="65fd4-135">Определение Десктопаппликатионлинкпас приложения</span><span class="sxs-lookup"><span data-stu-id="65fd4-135">Define the DesktopApplicationLinkPath of the app</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="dabc3-136">Связи</span><span class="sxs-lookup"><span data-stu-id="dabc3-136">Relationships</span></span>
-<span data-ttu-id="dabc3-137">Нет</span><span class="sxs-lookup"><span data-stu-id="dabc3-137">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="65fd4-136">Отношения</span><span class="sxs-lookup"><span data-stu-id="65fd4-136">Relationships</span></span>
+<span data-ttu-id="65fd4-137">Нет</span><span class="sxs-lookup"><span data-stu-id="65fd4-137">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="dabc3-138">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="dabc3-138">JSON Representation</span></span>
-<span data-ttu-id="dabc3-139">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="dabc3-139">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="65fd4-138">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="65fd4-138">JSON Representation</span></span>
+<span data-ttu-id="65fd4-139">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="65fd4-139">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskDesktopApp"
@@ -58,6 +58,9 @@ ms.locfileid: "43463466"
   "desktopApplicationLinkPath": "String"
 }
 ```
+
+
+
 
 
 
