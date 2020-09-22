@@ -5,18 +5,18 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: feab40fe5e56249ca0653d82084c8636f35e74f2
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: 806016e3ce1bdafe40ffc990947edc1122c6eb75
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408017"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970882"
 ---
 # <a name="list-workbookcomments"></a>Список Воркбуккомментс
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов [воркбуккоммент](../resources/workbookcomment.md) .
+Получение списка объектов  [воркбуккоммент](../resources/workbookcomment.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,7 +42,7 @@ GET workbook/comments
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -121,3 +121,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

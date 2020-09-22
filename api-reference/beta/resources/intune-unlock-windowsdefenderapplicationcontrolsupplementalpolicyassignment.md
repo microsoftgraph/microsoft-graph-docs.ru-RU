@@ -3,14 +3,14 @@ title: Тип ресурса Виндовсдефендераппликатио�
 description: Класс, содержащий свойства, которые используются для назначения дополнительной политики Виндовсдефендераппликатионконтрол группе.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 04224e7ff32df18f3c9ef32cc6f8e8f88df54e36
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
+ms.openlocfilehash: e8117669953b3e919912b11779ffb1435334a13e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44793530"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971834"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicyassignment-resource-type"></a>Тип ресурса Виндовсдефендераппликатионконтролсупплементалполициассигнмент
 
@@ -59,6 +59,9 @@ ms.locfileid: "44793530"
   }
 }
 ```
+
+
+
 
 
 

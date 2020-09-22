@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: f03aeca5c15d26854954ecd4f459e5c0ab49cb4e
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 743ebaaf60c76b5191fca1b17b70dbfdca3fcf8c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508823"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970777"
 ---
 # <a name="get-workbookapplication"></a>Получение Воркбукаппликатион
 
@@ -41,7 +41,7 @@ GET /workbook/application
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукаппликатион](../resources/workbookapplication.md) в тексте отклика.
 
@@ -109,3 +109,4 @@ Content-length: 48
   ]
 }
 -->
+

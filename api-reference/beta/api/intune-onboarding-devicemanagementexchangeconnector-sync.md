@@ -3,14 +3,14 @@ title: Действие sync
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7e69ed64af2fafa725ec0df4e93d3be8e5d863c6
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: dcefe999ba36d5e4e434e92edb4f2eac44db3598
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43450306"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972086"
 ---
 # <a name="sync-action"></a>Действие синхронизации
 
@@ -43,7 +43,7 @@ POST /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}/
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -80,6 +80,9 @@ Content-length: 31
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

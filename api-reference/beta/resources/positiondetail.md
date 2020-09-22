@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: resourcePageType
-ms.openlocfilehash: 6c77c116f013000ec4d419ec20c1e45c07187a22
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: fbd013292754dea43dd69b645dcd2ab735559b69
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42521595"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971484"
 ---
 # <a name="positiondetail-resource-type"></a>Тип ресурса Поситиондетаил
 
@@ -66,3 +66,4 @@ ms.locfileid: "42521595"
   "section": "documentation",
   "tocPath": ""
 }-->
+

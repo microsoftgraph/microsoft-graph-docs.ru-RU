@@ -6,12 +6,12 @@ title: 'Получение предыдущей версии элемента с
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 85dda18768463398244fc648b77d92e20ca82786
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: bcd53e58c1b5849cc1e98f57e22244201fd8d085
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457106"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972016"
 ---
 # <a name="get-a-listitemversion-resource-preview"></a>Получение ресурса ListItemVersion (ознакомительная версия)
 
@@ -42,7 +42,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}
 ```
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [ListItemVersion](../resources/listitemversion.md) в теле отклика.
 
@@ -92,3 +92,5 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
+
+

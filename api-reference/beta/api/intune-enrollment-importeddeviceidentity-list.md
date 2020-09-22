@@ -3,14 +3,14 @@ title: Список Импортеддевицеидентитиес
 description: Список свойств и связей объектов Импортеддевицеидентити.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 22913472f82a6d6cf8eb80a5db3a22d5594c87a7
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 50a1d695fc9c96e73de143c9f13aa4e902b953e7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451028"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972177"
 ---
 # <a name="list-importeddeviceidentities"></a>Список Импортеддевицеидентитиес
 
@@ -43,13 +43,13 @@ GET /deviceManagement/importedDeviceIdentities
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -84,6 +84,9 @@ Content-Length: 577
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b7dc32d1087b153e0369e6c986eca5c44714cb16
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 78cb78973c541483aa8c8f5421271669183e59e2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508858"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970847"
 ---
 # <a name="list-tables"></a>Перечисление таблиц
 
@@ -43,7 +43,7 @@ GET /workbook/tables
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбуктабле](../resources/table.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -113,3 +113,4 @@ Content-length: 158
   "suppressions": [
   ]
 }-->
+

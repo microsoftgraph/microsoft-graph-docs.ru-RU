@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 60d21aefcf1d2abac66e7797624984570bd132bf
-ms.sourcegitcommit: 11503211a31ea17f4e577c21ec36d364184c0580
+ms.openlocfilehash: 160f40dc21a7cb35c9f409f02b0cc6d2d258c2ea
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43181925"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971316"
 ---
 # <a name="get-member-groups"></a>Вывод групп пользователя
 
@@ -129,3 +129,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: jewan-microsoft
-ms.openlocfilehash: d219677c70be566b5039a39c5421c91a9ab11c8c
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 463ac02029753fcc99392fbc3db464989f5ae01a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46809376"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971545"
 ---
 # <a name="onenotepage-resource-type"></a>Тип ресурса Оненотепаже
 
@@ -35,7 +35,7 @@ ms.locfileid: "46809376"
 |Self|String|Конечная точка, в которой можно получить сведения о странице. Только для чтения.|
 |title|String|Заголовок страницы. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |parentNotebook|[notebook](notebook.md)|Записная книжка, содержащая страницу.  Только для чтения.|
@@ -50,7 +50,7 @@ ms.locfileid: "46809376"
 |[Удаление страницы](../api/page-delete.md) | Нет |Удаление страницы. |
 |[copyToSection](../api/page-copytosection.md)| Нет |Копирует страницу в определенный раздел.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -93,3 +93,5 @@ ms.locfileid: "46809376"
   "suppressions": []
 }
 -->
+
+

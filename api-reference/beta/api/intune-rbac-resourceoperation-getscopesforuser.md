@@ -3,14 +3,14 @@ title: Функция Getscopesforuser к объекту
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bac1b7e497a38882f17a437b011a520df114a07d
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 168092ec35deca205c3db455cbe691b23780e702
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43471558"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972044"
 ---
 # <a name="getscopesforuser-function"></a>Функция Getscopesforuser к объекту
 
@@ -43,7 +43,7 @@ GET /deviceManagement/resourceOperations/{resourceOperationId}/getScopesForUser
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -52,7 +52,7 @@ GET /deviceManagement/resourceOperations/{resourceOperationId}/getScopesForUser
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|UserID|String|Н/Д|
+|UserID|String|Пока не задокументировано.|
 
 
 
@@ -80,6 +80,9 @@ Content-Length: 56
   ]
 }
 ```
+
+
+
 
 
 

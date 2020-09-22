@@ -5,12 +5,12 @@ localization_priority: Normal
 author: grangeryy
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 7e0a59c3c8c6deceb28aadd6fbc58e18ace0e5b5
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6d9378f4f2ee69108384e771e42a317060a53dce
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508816"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970756"
 ---
 # <a name="get-workbookcomment"></a>Получение Воркбуккоммент
 
@@ -46,7 +46,7 @@ GET workbook/comments/{id}
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [воркбуккоммент](../resources/workbookcomment.md) в тексте отклика.
 
@@ -116,3 +116,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

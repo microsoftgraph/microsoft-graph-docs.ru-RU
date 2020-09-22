@@ -3,14 +3,14 @@ title: Действие searchExistingIdentities
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7c3204c972cb1fdc9a08e8b1f0a48e539d3c2c69
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 20463207142db5f1fb850d03eaf42b6c36ba3950
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43451021"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972170"
 ---
 # <a name="searchexistingidentities-action"></a>Действие searchExistingIdentities
 
@@ -43,7 +43,7 @@ POST /deviceManagement/importedDeviceIdentities/searchExistingIdentities
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/importedDeviceIdentities/searchExistingIdentities
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|импортеддевицеидентитиес|Коллекция [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md)|Н/Д|
+|импортеддевицеидентитиес|Коллекция [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md)|Пока не задокументировано.|
 
 
 
@@ -112,6 +112,9 @@ Content-Length: 577
   ]
 }
 ```
+
+
+
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ''
 author: svpsiva
-ms.openlocfilehash: 83d29b26388938e478287e342a03dab762eb1633
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 65b09820bab9675f0246c28211f22fb32f018728
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46811471"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971764"
 ---
 # <a name="manage-focused-inbox"></a>Управление сортировкой почты
 
@@ -38,3 +38,5 @@ ms.locfileid: "46811471"
 [Создание операции переопределения для отправителя](../api/inferenceclassification-post-overrides.md) | [Перечисление всех операций переопределения для пользователей](../api/inferenceclassification-list-overrides.md) |
 
 [Обновление операции переопределения для отправителя](../api/inferenceclassificationoverride-update.md) | [Удаление операции переопределения для отправителя](../api/inferenceclassificationoverride-delete.md)
+
+

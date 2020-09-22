@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: bdc4b7eb03d482660883a190e145058d41381f66
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: aae9420f3d1b6e329a007eda3917ce7eaa8c4dda
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43317511"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971547"
 ---
 # <a name="messageruleactions-resource-type"></a>Тип ресурса messageRuleActions
 
@@ -75,3 +75,5 @@ ms.locfileid: "43317511"
   "suppressions": []
 }
 -->
+
+

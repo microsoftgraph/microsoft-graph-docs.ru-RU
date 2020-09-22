@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 52e00448737deadce612f5305f4a35ff3a1ff2dc
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: a7b021173b28826642898d96c889a955f8bd182e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408080"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970903"
 ---
 # <a name="workbook-createsession"></a>книга: Креатесессион
 
@@ -56,7 +56,7 @@ POST /workbook/createSession
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [workbookSessionInfo](../resources/workbooksessioninfo.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
@@ -121,7 +121,7 @@ Content-length: 52
 
 ### <a name="example-2-session-creation-with-long-running-operation-pattern"></a>Пример 2: Создание сеанса с длительным шаблоном операции
 
-#### <a name="request"></a>Запросить
+#### <a name="request"></a>Запрос
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/worksheets({id})/createSession
@@ -159,3 +159,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8d3a6d0ce1ae4dd9807f92e5f8af12e83fcff275
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 81ab50326dcf02ffd0f3a2b1835bd92264abfa9e
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508865"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970854"
 ---
 # <a name="list-names"></a>Перечисление имен
 
@@ -43,7 +43,7 @@ GET /workbook/names
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбукнамедитем](../resources/nameditem.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -113,3 +113,4 @@ Content-length: 136
   "suppressions": [
   ]
 }-->
+

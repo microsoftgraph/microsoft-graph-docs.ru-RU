@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 6900b961608ff29c503dc355dfb8876d3e273feb
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 24afbf388def4c1132e312ce41b1c8307ce18661
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519297"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971414"
 ---
 # <a name="workbookchartlineformat-resource-type"></a>Тип ресурса Воркбукчартлинеформат
 
@@ -68,3 +68,5 @@ ms.locfileid: "42519297"
   "suppressions": []
 }
 -->
+
+

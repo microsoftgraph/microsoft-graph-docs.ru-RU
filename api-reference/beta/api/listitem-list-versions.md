@@ -6,12 +6,12 @@ title: Получение предыдущей версии записи спи�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 13dd9e08ae60b4c8ac3b4e9fd1a99bf4f70b53d6
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 731a6b2a71fd03790e447dfb331c7cf4e6f5f482
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457113"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47972030"
 ---
 # <a name="listing-versions-of-a-listitem-preview"></a>Создание списка версий элемента ListItem (ознакомительная версия)
 
@@ -43,7 +43,7 @@ GET /sites/{site-id}/items/{item-id}/versions
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [ListItemVersion](../resources/listitemversion.md) в теле отклика.
 
@@ -118,3 +118,5 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
+
+

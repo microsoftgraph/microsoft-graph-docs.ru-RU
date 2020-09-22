@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса todo
-description: Представляет службы дел, доступные пользователю.
+title: Тип ресурса TODO
+description: Представляет службы To Do, доступные пользователю.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 99b2936cf84c5cfdc25a39ff6f0e35518658d0ff
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: aa468c6d6556ad70d3650e40fb3fd01c46ccdb35
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46850048"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971477"
 ---
-# <a name="todo-resource-type"></a>Тип ресурса todo
+# <a name="todo-resource-type"></a>Тип ресурса TODO
 
 Пространство имен: microsoft.graph
 
-Представляет службы дел, доступные пользователю.
+Представляет службы To Do, доступные пользователю.
 
-Наследуется от [объекта.](../resources/entity.md)
+Наследуется от [объекта Entity](../resources/entity.md).
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Списки](../api/todo-list-lists.md) | [Коллекция todoTaskList](todotasklist.md) | Получение всех списков задач в почтовом ящике пользователя. |
-|[Создание объекта todoTaskList](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Создание списка задач в почтовом ящике пользователя. |
+|[Перечисление списков](../api/todo-list-lists.md) | Коллекция [todoTaskList](todotasklist.md) | Получение всех списков задач в почтовом ящике пользователя. |
+|[Создание Тодотасклист](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Создание списка задач To Do в почтовом ящике пользователя. |
 
 ## <a name="properties"></a>Свойства
 Нет
@@ -32,7 +32,7 @@ ms.locfileid: "46850048"
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|lists|[Коллекция todoTaskList](../resources/todotasklist.md)| Списки задач в почтовом ящике пользователей. |
+|lists|Коллекция [todoTaskList](../resources/todotasklist.md)| Списки задач в почтовом ящике пользователя. |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.
@@ -50,4 +50,6 @@ ms.locfileid: "46850048"
   "id": "String"
 }
 ```
+
+
 

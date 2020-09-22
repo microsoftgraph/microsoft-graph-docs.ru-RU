@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: resourcePageType
-ms.openlocfilehash: 922ebf14f59d60a988fe77ee36ce04d9c76befec
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: eb17035f0d062d55a3607dd30f31459b79b8400c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519031"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971372"
 ---
 # <a name="yammeractivityuserdetail-resource-type"></a>Тип ресурса Яммерактивитюсердетаил
 
@@ -22,14 +22,14 @@ ms.locfileid: "42519031"
 | :---------------- | :---------------- |
 | репортрефрешдате | Дата              |
 | userPrincipalName | String            |
-| displayName       | Строка            |
+| displayName       | String            |
 | userState         | String            |
 | статечанжедате   | Дата              |
 | ластактивитидате  | Дата              |
 | постедкаунт       | Int64             |
 | реадкаунт         | Int64             |
 | ликедкаунт        | Int64             |
-| ассигнедпродуктс  | Коллекция объектов string |
+| ассигнедпродуктс  | Коллекция String |
 | репортпериод      | String            |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -56,3 +56,5 @@ ms.locfileid: "42519031"
   "reportPeriod": "String"
 }
 ```
+
+

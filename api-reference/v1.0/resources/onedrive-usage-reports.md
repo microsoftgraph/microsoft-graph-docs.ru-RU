@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: conceptualPageType
-ms.openlocfilehash: 52310eecc4b8c36ec935b83ee31b8c03c1d8bb59
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
+ms.openlocfilehash: 63aede8ac57f277070a90599d625479c18ddbdab
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44896919"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47970679"
 ---
 # <a name="onedrive-usage-reports"></a>Отчеты об использовании OneDrive
 
@@ -28,3 +28,4 @@ ms.locfileid: "44896919"
 | [Получение количества учетных записей](../api/reportroot-getonedriveusageaccountcounts.md) | Stream      | Отследите, как меняется количество активных сайтов OneDrive для бизнеса. Активным считается сайт, на котором пользователи просматривали, изменяли, добавляли, скачивали, синхронизировали файлы или делились ими. |
 | [Получение количества файлов](../api/reportroot-getonedriveusagefilecounts.md) | Stream      | Получение общего количества файлов на всех сайтах и количества активных файлов. Файл считается активным, если он был сохранен, синхронизирован, изменен в указанный период или им поделились в указанный период. |
 | [Получение занятого объема хранилища](../api/reportroot-getonedriveusagestorage.md) | Поток      | Получение сведений о том, как меняется используемый объем хранилища в OneDrive для бизнеса. |
+

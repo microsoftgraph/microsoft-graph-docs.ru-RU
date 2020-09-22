@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 23aebcc68e0f0aa2fec0be895dffb8c723a1ddc8
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: 6009003b47b1e0bf0406cb3f9cbe8853d8a9b72b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43917131"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971960"
 ---
 # <a name="list-relyingpartydetailedsummary"></a>Список Релингпартидетаиледсуммари
 
@@ -45,12 +45,12 @@ GET /reports/getRelyingPartyDetailedSummary
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запроса OData для настройки ответа. 
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. 
 
-- `$filter` Параметр можно использовать для фильтрации по Релингпартид, мигратионстатус и другим атрибутам. Например, $filter = Релингпартид EQ "identifier".
-- Вы можете использовать `$orderby`параметры `$top`, и `$skip` запросы в любом запросе GET.
+- Параметр можно использовать `$filter` для фильтрации по релингпартид, мигратионстатус и другим атрибутам. Например, $filter = Релингпартид EQ "identifier".
+- Вы можете использовать `$orderby` `$top` Параметры, и `$skip` запросы в любом запросе GET.
 
-Общие сведения можно найти в разделе [Параметры запроса OData](/graph/query-parameters).
+Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -63,7 +63,7 @@ GET /reports/getRelyingPartyDetailedSummary
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [релингпартидетаиледсуммари](../resources/relyingpartydetailedsummary.md) в тексте отклика.
 
@@ -145,3 +145,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

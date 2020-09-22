@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b3e751ea0652b2a6c621079372fa167e8de03df9
-ms.sourcegitcommit: d14e2abb24d9fbab519458b1c9fec890a5e51d70
+ms.openlocfilehash: 5659feb6b08a90b7bac44ae2677925ec733c2328
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43543396"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971337"
 ---
 # <a name="list-directoryaudits"></a>Перечисление directoryAudits
 
@@ -46,7 +46,7 @@ GET /auditLogs/directoryaudits
 | [\$Вверх](/graph/query_parameters#top-parameter)             | Задает размер страницы результатов.                                                | `/auditLogs/directoryAudits?$top=1`                                         |
 | [\$skiptoken](/graph/query_parameters#skiptoken-parameter) | Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. | `/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
-### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, \$поддерживаемые параметром Filter
+### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, поддерживаемые \$ параметром Filter
 
 | Атрибут                                                    | Поддерживаемые операторы |
 | :----------------------------------------------------------- | :------------------ |
@@ -72,7 +72,7 @@ GET /auditLogs/directoryaudits
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [директоряудит](../resources/directoryaudit.md) в тексте отклика.
 
@@ -189,3 +189,4 @@ Content-length: 271
   "suppressions": [
   ]
 }-->
+

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: resourcePageType
-ms.openlocfilehash: 60d37ab606668fbe6828293112997980c7e4580c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: dc269a041358a8b85a97224fa1bc880a38fa91e6
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42519311"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971470"
 ---
 # <a name="workbookchartlegend-resource-type"></a>Тип ресурса Воркбукчартлеженд
 
@@ -74,3 +74,5 @@ ms.locfileid: "42519311"
   "suppressions": []
 }
 -->
+
+

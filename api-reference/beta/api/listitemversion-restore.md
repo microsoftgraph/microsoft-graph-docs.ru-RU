@@ -6,12 +6,12 @@ title: Восстановление предыдущей версии элеме
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 25e244c9dee5adb3b756f2c4bae38b292dc16679
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f70ae287b787a30e835c9fb8403b32b4f808c1ed
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42457094"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47971954"
 ---
 # <a name="restore-a-previous-version-of-a-listitem"></a>Восстановление предыдущей версии ресурса ListItem
 
@@ -74,3 +74,5 @@ HTTP/1.1 204 No content
   "suppressions": []
 }
 -->
+
+
