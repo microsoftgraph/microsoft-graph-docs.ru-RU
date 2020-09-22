@@ -3,14 +3,14 @@ title: Список Андроидворкпрофилесцепцертифик
 description: Список свойств и связей объектов Андроидворкпрофилесцепцертификатепрофиле.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c38332ad6357483b9dde22075e7ab8985caa57e4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 6ad2eea0c0fa6a2c2d77b8c46792f86a7aaf47de
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43434775"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47990208"
 ---
 # <a name="list-androidworkprofilescepcertificateprofiles"></a>Список Андроидворкпрофилесцепцертификатепрофилес
 
@@ -44,13 +44,13 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [андроидворкпрофилесцепцертификатепрофиле](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -135,6 +135,9 @@ Content-Length: 2427
   ]
 }
 ```
+
+
+
 
 
 
