@@ -3,14 +3,14 @@ title: Удаление Девицекомплианцескрипт
 description: Удаляет объект Девицекомплианцескрипт.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 80593afa9707c517c9ac361e66a143a1c9f00278
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 8d8f57f99b597541cb3e82cdfc4c42ce97b78e4f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792501"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011335"
 ---
 # <a name="delete-devicecompliancescript"></a>Удаление Девицекомплианцескрипт
 
@@ -46,7 +46,7 @@ DELETE /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -65,6 +65,9 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceComplianceScripts
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

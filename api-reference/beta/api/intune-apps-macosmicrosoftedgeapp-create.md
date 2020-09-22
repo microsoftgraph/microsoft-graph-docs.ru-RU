@@ -3,14 +3,14 @@ title: Создание Макосмикрософтеджеапп
 description: Создание нового объекта Макосмикрософтеджеапп.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2532964c8c2d938f6a6e5690745c16b0ac855ff4
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 1809c3897d0c3a1dea8017df33e7516a6113154c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792060"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012098"
 ---
 # <a name="create-macosmicrosoftedgeapp"></a>Создание Макосмикрософтеджеапп
 
@@ -29,7 +29,7 @@ ms.locfileid: "46792060"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложений|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -71,7 +71,9 @@ POST /deviceAppManagement/mobileApps
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|channel|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|Канал, который необходимо установить на целевые устройства. Возможные значения: `dev`, `beta`, `stable`.|
+|суперседингаппкаунт|Int32|Общее количество приложений, которые напрямую или косвенно заменяют данное приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседедаппкаунт|Int32|Общее число приложений, для которых это приложение напрямую или косвенно заменяется. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|оптоволокон|[microsoftEdgeChannel](../resources/intune-apps-microsoftedgechannel.md)|Канал, который необходимо установить на целевые устройства. Возможные значения: `dev`, `beta`, `stable`.|
 
 
 
@@ -85,7 +87,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 742
+Content-length: 799
 
 {
   "@odata.type": "#microsoft.graph.macOSMicrosoftEdgeApp",
@@ -110,6 +112,8 @@ Content-length: 742
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "channel": "beta"
 }
 ```
@@ -119,7 +123,7 @@ Content-length: 742
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 914
+Content-Length: 971
 
 {
   "@odata.type": "#microsoft.graph.macOSMicrosoftEdgeApp",
@@ -147,9 +151,14 @@ Content-Length: 914
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "channel": "beta"
 }
 ```
+
+
+
 
 
 

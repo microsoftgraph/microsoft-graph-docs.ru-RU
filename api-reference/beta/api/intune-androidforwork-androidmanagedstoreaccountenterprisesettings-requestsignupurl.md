@@ -3,14 +3,14 @@ title: Действие requestSignupUrl
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: affc4dbdb421bfe2abb4cfee8ab6a8773262b11e
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: b647a261b1080daf840dc1a218cbb7ef22b9f077
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43417997"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012595"
 ---
 # <a name="requestsignupurl-action"></a>Действие requestSignupUrl
 
@@ -43,7 +43,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/requestSignu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/requestSignu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|hostName|String|Н/Д|
+|hostName|String|Пока не задокументировано.|
 
 
 
@@ -86,6 +86,9 @@ Content-Length: 56
   "value": "https://example.com/requestSignupUrl/"
 }
 ```
+
+
+
 
 
 

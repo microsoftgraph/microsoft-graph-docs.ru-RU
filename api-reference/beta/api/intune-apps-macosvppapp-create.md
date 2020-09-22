@@ -3,14 +3,14 @@ title: Создание Макосвппапп
 description: Создание нового объекта Макосвппапп.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8ad8ad8f468cb811c4422d1cf8e80f247c9b8d01
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 6258c478acf1a8c8f35a65969b6fd0f296670d34
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792004"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012021"
 ---
 # <a name="create-macosvppapp"></a>Создание Макосвппапп
 
@@ -43,10 +43,10 @@ POST /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Макосвппапп в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Макосвппапп.
@@ -71,6 +71,8 @@ POST /deviceAppManagement/mobileApps
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседингаппкаунт|Int32|Общее количество приложений, которые напрямую или косвенно заменяют данное приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседедаппкаунт|Int32|Общее число приложений, для которых это приложение напрямую или косвенно заменяется. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |usedLicenseCount|Int32|Количество используемых лицензий VPP.|
 |totalLicenseCount|Int32|Общее количество лицензий VPP.|
 |releaseDateTime|DateTimeOffset|Дата и время выпуска приложения, на которое распространяется программа VPP.|
@@ -85,7 +87,7 @@ POST /deviceAppManagement/mobileApps
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [макосвппапп](../resources/intune-apps-macosvppapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -95,7 +97,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1869
+Content-length: 1926
 
 {
   "@odata.type": "#microsoft.graph.macOsVppApp",
@@ -120,6 +122,8 @@ Content-length: 1869
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
@@ -158,7 +162,7 @@ Content-length: 1869
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2041
+Content-Length: 2098
 
 {
   "@odata.type": "#microsoft.graph.macOsVppApp",
@@ -186,6 +190,8 @@ Content-Length: 2041
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
@@ -218,6 +224,9 @@ Content-Length: 2041
   ]
 }
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Перечисление объектов deviceConfigurationAssignment
 description: Список свойств и связей объектов deviceConfigurationAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 264a453491fb75c52777d9e8ba5a40cfba96505f
-ms.sourcegitcommit: f3dda172d95ef1eda8f6dd9e3ffdc7d3c0744c0a
+ms.openlocfilehash: 31dc849652c0433facf9a98cdc06da7780d3e39a
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45123150"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011517"
 ---
 # <a name="list-deviceconfigurationassignments"></a>Перечисление объектов deviceConfigurationAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "45123150"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -92,6 +92,9 @@ Content-Length: 503
   ]
 }
 ```
+
+
+
 
 
 

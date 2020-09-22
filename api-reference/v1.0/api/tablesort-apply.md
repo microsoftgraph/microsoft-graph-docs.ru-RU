@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 433dd7f62727f87ef5439708aa2b5958cf4b1e5d
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 6fb2cff67ca14baca6dfb9f4bebbb7a79bfe8d3c
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509487"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012775"
 ---
 # <a name="tablesort-apply"></a>TableSort: apply
 
@@ -46,7 +46,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 |:---------------|:--------|:----------|
 |fields|Коллекция Воркбуксортфиелд|Список условий для сортировки.|
 |matchCase|boolean|Необязательный. Указывает, необходимо ли учитывать регистр при сортировке строк.|
-|method|string|Необязательный параметр. Метод сортировки, используемый для китайских символов.  Возможные значения: `PinYin`, `StrokeCount`.|
+|method|string|Необязательный параметр. Метод сортировки, используемый для китайских символов.  Возможные значения: `PinYin` , `StrokeCount` .|
 
 ## <a name="response"></a>Отклик
 
@@ -125,3 +125,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

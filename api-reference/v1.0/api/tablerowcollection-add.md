@@ -5,12 +5,12 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5872aad33f5a553714db996ebfa2207eabc144be
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: a9b0eedadf4ff3b509444f01896c6f74c30f0815
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509501"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012833"
 ---
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 
@@ -54,7 +54,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/add
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [воркбуктаблеров](../resources/tablerow.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбуктаблеров](../resources/tablerow.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 В этом примере две строки данных вставляются в конец таблицы. 
@@ -91,7 +91,7 @@ Content-length: 51
 ---
 
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -124,3 +124,4 @@ Content-length: 45
   ],
   "tocPath": ""
 }-->
+

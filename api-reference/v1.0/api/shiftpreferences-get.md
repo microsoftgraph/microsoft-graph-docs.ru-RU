@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a83331992092cec3204b0279944a13c17870c295
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: a0cda56aa25c6fac2c0abf009af3fc97ddaa7729
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44217363"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012917"
 ---
 # <a name="get-shiftpreferences"></a>Получение Шифтпреференцес
 
@@ -49,10 +49,10 @@ GET /users/{userId}/settings/shiftPreferences
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [шифтпреференцес](../resources/shiftpreferences.md) в тексте отклика.
 
@@ -152,3 +152,4 @@ Content-length: 401
   ]
 }
 -->
+

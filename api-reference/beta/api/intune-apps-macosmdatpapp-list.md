@@ -3,14 +3,14 @@ title: Список Макосмдатпаппс
 description: Список свойств и связей объектов Макосмдатпапп.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9fac6879be62aa9e07c0692eafde2fa6e10de1d0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 9e015dd8388b65e47892081ddc23aa1ac44300c7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43416392"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012105"
 ---
 # <a name="list-macosmdatpapps"></a>Список Макосмдатпаппс
 
@@ -29,7 +29,7 @@ ms.locfileid: "43416392"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,10 +46,10 @@ GET /deviceAppManagement/mobileApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [макосмдатпапп](../resources/intune-apps-macosmdatpapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1017
+Content-Length: 1082
 
 {
   "value": [
@@ -94,11 +94,16 @@ Content-Length: 1017
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
-      "dependentAppCount": 1
+      "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2
     }
   ]
 }
 ```
+
+
+
 
 
 

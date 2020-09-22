@@ -3,14 +3,14 @@ title: Создание Андроидманажедстореаппконфиг
 description: Создание нового объекта Андроидманажедстореаппконфигуратионсчема.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf3990e02c3ea34a9262f1df964ad70d5488e8bb
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 96a3a88550f4353456bf3fec9991f244b3442fad
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43395523"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012504"
 ---
 # <a name="create-androidmanagedstoreappconfigurationschema"></a>Создание Андроидманажедстореаппконфигуратионсчема
 
@@ -29,7 +29,7 @@ ms.locfileid: "43395523"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Для приложения|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ POST /deviceManagement/androidManagedStoreAppConfigurationSchemas
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Андроидманажедстореаппконфигуратионсчема в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Андроидманажедстореаппконфигуратионсчема.
@@ -60,7 +60,7 @@ POST /deviceManagement/androidManagedStoreAppConfigurationSchemas
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [андроидманажедстореаппконфигуратионсчема](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -187,6 +187,9 @@ Content-Length: 1634
   ]
 }
 ```
+
+
+
 
 
 

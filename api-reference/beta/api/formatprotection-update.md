@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ruoyingl
 ms.prod: ''
-ms.openlocfilehash: ab8474101a92347adacdb091f14aa761f337257f
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: 3e3aad34e8fdb60e35f2ff4e664e9258819a6eae
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46807341"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012763"
 ---
 # <a name="update-formatprotection"></a>Обновление объекта FormatProtection
 
@@ -48,7 +48,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 |formulaHidden|boolean|Указывает, скрывает ли Excel формулу для ячеек в диапазоне. Значение NULL указывает, что для всего диапазона не задан единый параметр скрытия формулы.|
 |locked|boolean|Указывает, блокирует ли Excel ячейки в объекте. Значение NULL указывает, что для всего диапазона не задан единый параметр блокировки.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [FormatProtection](../resources/formatprotection.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -115,3 +115,5 @@ Content-length: 45
   ]
 }
 -->
+
+

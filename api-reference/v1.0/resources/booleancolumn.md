@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Аспект booleanColumn ресурса columnDefinition указывает, что столбец содержит логическое значение.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: aec08623e2ee51a17a83ba0ec139c0524258378c
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 8a93118e8126f3dceeb955030978aaf393bac1dd
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42531993"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012742"
 ---
 # <a name="booleancolumn-resource-type"></a>Тип ресурса BooleanColumn
 
@@ -41,3 +41,4 @@ ms.locfileid: "42531993"
   "section": "documentation",
   "tocPath": "Resources/BooleanColumn"
 } -->
+

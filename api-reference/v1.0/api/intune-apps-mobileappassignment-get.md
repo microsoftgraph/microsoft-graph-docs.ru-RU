@@ -3,14 +3,14 @@ title: Get mobileAppAssignment
 description: Чтение свойств и связей объекта mobileAppAssignment.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b5d8a3f85c975dc4b0d39eb9235cbad3333dce77
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 231a16f26d41ea3a5a8793d8966d1cfebb06cc28
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43401542"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013204"
 ---
 # <a name="get-mobileappassignment"></a>Get mobileAppAssignment
 
@@ -38,19 +38,19 @@ ms.locfileid: "43401542"
 GET /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -82,6 +82,9 @@ Content-Length: 359
   }
 }
 ```
+
+
+
 
 
 

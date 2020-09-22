@@ -3,14 +3,14 @@ title: Список Андроидманажедстореаппс
 description: Список свойств и связей объектов Андроидманажедстореапп.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f748d3318303911611a83f15ca292863d45ef116
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: af19bb4042397966209725ac3014a3b5c52f2394
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43417658"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012343"
 ---
 # <a name="list-androidmanagedstoreapps"></a>Список Андроидманажедстореаппс
 
@@ -29,7 +29,7 @@ ms.locfileid: "43417658"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,10 +46,10 @@ GET /deviceAppManagement/mobileApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1533
+Content-Length: 1598
 
 {
   "value": [
@@ -95,6 +95,8 @@ Content-Length: 1533
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "packageId": "Package Id value",
       "appIdentifier": "App Identifier value",
       "usedLicenseCount": 0,
@@ -114,6 +116,9 @@ Content-Length: 1533
   ]
 }
 ```
+
+
+
 
 
 

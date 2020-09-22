@@ -3,14 +3,14 @@ title: Действие createInstance
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 893d87fabbdf1d25bad409d358586e8ec53f09a4
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: c165339bd2cdf3f6cf990b7279844737c8d4c8aa
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43381425"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011349"
 ---
 # <a name="createinstance-action"></a>Действие createInstance
 
@@ -44,7 +44,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devi
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -54,7 +54,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devi
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Пока не задокументировано.|
+|displayName|String|Н/Д|
 |description|String|Пока не задокументировано.|
 |сеттингсделта|Коллекция [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Пока не задокументировано.|
 |roleScopeTagIds|Коллекция строк|Н/Д|
@@ -113,6 +113,9 @@ Content-Length: 418
   }
 }
 ```
+
+
+
 
 
 

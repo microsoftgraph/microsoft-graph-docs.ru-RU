@@ -3,14 +3,14 @@ title: Получение Макосвппапп
 description: Чтение свойств и связей объекта Макосвппапп.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a1ca8de7cc7343b508528dd38ef280f31741b038
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: 2813619c21a0b51db3e6336eb6d9db9ed005fdf7
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43409863"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011951"
 ---
 # <a name="get-macosvppapp"></a>Получение Макосвппапп
 
@@ -42,19 +42,19 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallSt
 GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [макосвппапп](../resources/intune-apps-macosvppapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -70,7 +70,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2170
+Content-Length: 2231
 
 {
   "value": {
@@ -99,6 +99,8 @@ Content-Length: 2170
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "usedLicenseCount": 0,
     "totalLicenseCount": 1,
     "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
@@ -132,6 +134,9 @@ Content-Length: 2170
   }
 }
 ```
+
+
+
 
 
 

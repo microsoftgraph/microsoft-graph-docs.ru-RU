@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Вы можете получить доступ к общим элементам DriveItem или коллекции общих элементов, используя параметр shareId или URL-адрес для совместного доступа.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: ea837294b81a492111b8730c08bd682dcfc26db2
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: f8ca26b4e226212186f3e2716b5d4ff4c250b44f
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42509831"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013036"
 ---
 # <a name="accessing-shared-driveitems"></a>Доступ к общим элементам DriveItem
 
@@ -66,7 +66,7 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 
 | Имя       | Тип   | Описание                                                    |
 |:-----------|:-------|:---------------------------------------------------------------|
-| **Prefer** | string | Необязательный параметр. Установите одно из значений, `prefer` приведенных ниже.  |
+| **Prefer** | string | Необязательный параметр. Установите одно из значений, приведенных `prefer` ниже.  |
 
 ### <a name="prefer-header-values"></a>Предпочтительные значения заголовков
 
@@ -77,7 +77,7 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 
 Редимшаринглинк должен считаться эквивалентным участнику, который перемещается в ссылку для совместного доступа, в браузере (принимается жестом общего доступа), тогда как Редимшаринглинкифнецессари предназначена для сценариев, в которых намерением является простой просмотр метаданных ссылки.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и ресурс [sharedDriveItem](../resources/shareddriveitem.md) в тексте отклика.
 
@@ -220,7 +220,7 @@ GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 ---
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
@@ -270,3 +270,4 @@ Content-Type: application/json
   "suppressions": [
   ]
 } -->
+

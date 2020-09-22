@@ -3,14 +3,14 @@ title: Действие unbind
 description: Пока не задокументировано.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6dc8e99aae3ee34da809eeec6e28d0add2584ab0
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: d61f8a767afedfe73cbff987efcbfd87b66da1d2
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43417912"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012511"
 ---
 # <a name="unbind-action"></a>Действие unbind
 
@@ -49,7 +49,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/unbind
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -65,6 +65,9 @@ POST https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAccoun
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

@@ -3,14 +3,14 @@ title: Удаление Девицекомплианцескриптдевице
 description: Удаляет объект Девицекомплианцескриптдевицестате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2889698f4bb5e1ea8276a768b28f9f2fd13e93bd
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: d70df43ddf27ec1b0537158c88d6db961d40afd8
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792466"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011244"
 ---
 # <a name="delete-devicecompliancescriptdevicestate"></a>Удаление Девицекомплианцескриптдевицестате
 
@@ -29,7 +29,7 @@ ms.locfileid: "44792466"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,10 +43,10 @@ DELETE /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/devi
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -65,6 +65,9 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceComplianceScripts
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+
 
 
 

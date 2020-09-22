@@ -3,14 +3,14 @@ title: Обновление объекта macOSOfficeSuiteApp
 description: Обновление свойств объекта macOSOfficeSuiteApp.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6943da70e15bcc82c6419c74719e6e87e3a7cecc
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: cd1b83b0e92b434d5509e48c030f10298b333e11
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46792025"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012035"
 ---
 # <a name="update-macosofficesuiteapp"></a>Обновление объекта macOSOfficeSuiteApp
 
@@ -45,7 +45,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -73,6 +73,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседингаппкаунт|Int32|Общее количество приложений, которые напрямую или косвенно заменяют данное приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседедаппкаунт|Int32|Общее число приложений, для которых это приложение напрямую или косвенно заменяется. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 
 
 
@@ -86,7 +88,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 718
+Content-length: 775
 
 {
   "@odata.type": "#microsoft.graph.macOSOfficeSuiteApp",
@@ -110,7 +112,9 @@ Content-length: 718
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "dependentAppCount": 1
+  "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2
 }
 ```
 
@@ -119,7 +123,7 @@ Content-length: 718
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 890
+Content-Length: 947
 
 {
   "@odata.type": "#microsoft.graph.macOSOfficeSuiteApp",
@@ -146,9 +150,14 @@ Content-Length: 890
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "dependentAppCount": 1
+  "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2
 }
 ```
+
+
+
 
 
 

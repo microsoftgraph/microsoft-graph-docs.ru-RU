@@ -3,14 +3,14 @@ title: Перечисление объектов defaultManagedAppProtection
 description: Перечисление свойств и связей объектов defaultManagedAppProtection.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e746a25a15858d76a872976b9b3259546a054c3c
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: a7942ebf8c44d3a6bb2d80535d4ca3b08d306139
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44177347"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48013099"
 ---
 # <a name="list-defaultmanagedappprotections"></a>Перечисление объектов defaultManagedAppProtection
 
@@ -41,13 +41,13 @@ GET /deviceAppManagement/defaultManagedAppProtections
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -124,6 +124,9 @@ Content-Length: 2422
   ]
 }
 ```
+
+
+
 
 
 

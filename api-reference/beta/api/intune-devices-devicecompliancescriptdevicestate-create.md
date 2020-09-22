@@ -3,14 +3,14 @@ title: Создание Девицекомплианцескриптдевице
 description: Создание нового объекта Девицекомплианцескриптдевицестате.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 51da464896ff0a9acdcb395deb04f5117ef02db8
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 699f3e17317389aac687dfc1dd05fc2aeaf05d4b
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792473"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011237"
 ---
 # <a name="create-devicecompliancescriptdevicestate"></a>Создание Девицекомплианцескриптдевицестате
 
@@ -29,7 +29,7 @@ ms.locfileid: "44792473"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/device
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -104,6 +104,9 @@ Content-Length: 436
   "scriptError": "Script Error value"
 }
 ```
+
+
+
 
 
 

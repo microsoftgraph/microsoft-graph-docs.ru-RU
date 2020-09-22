@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: de7c7216af4e79547db7963e63d9cd60565740c5
-ms.sourcegitcommit: bbcf074f0be9d5e02f84c290122850cc5968fb1f
+ms.openlocfilehash: cca956fdfc67a667133ba7ac6248402a734454d9
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43397192"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012623"
 ---
 # <a name="list-acceptedsenders"></a>Список acceptedSenders
 
@@ -50,7 +50,7 @@ GET /groups/{id}/acceptedSenders
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/acceptedSenders
 ---
 
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 >**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -116,3 +116,5 @@ Content-length: 55
   ]
 }
 -->
+
+

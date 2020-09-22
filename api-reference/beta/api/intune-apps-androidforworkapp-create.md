@@ -3,14 +3,14 @@ title: Создание Андроидфорворкапп
 description: Создание нового объекта Андроидфорворкапп.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 38f876356253ae481440b20f91b19dd856a273a6
-ms.sourcegitcommit: dc3bade0c096d5ce716d4bc07cd9c7cabb52477b
+ms.openlocfilehash: 2fd15207306b07cb175bc1e8c97257a87be4b518
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46791247"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48012483"
 ---
 # <a name="create-androidforworkapp"></a>Создание Андроидфорворкапп
 
@@ -29,7 +29,7 @@ ms.locfileid: "46791247"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementApps.ReadWrite.All|
+|Для приложения|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -71,6 +71,8 @@ POST /deviceAppManagement/mobileApps
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседингаппкаунт|Int32|Общее количество приложений, которые напрямую или косвенно заменяют данное приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|суперседедаппкаунт|Int32|Общее число приложений, для которых это приложение напрямую или косвенно заменяется. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |packageId|String|Идентификатор пакета.|
 |appIdentifier|String|Имя удостоверения.|
 |usedLicenseCount|Int32|Количество используемых лицензий VPP.|
@@ -79,7 +81,7 @@ POST /deviceAppManagement/mobileApps
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [андроидфорворкапп](../resources/intune-apps-androidforworkapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -89,7 +91,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 903
+Content-length: 960
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkApp",
@@ -114,6 +116,8 @@ Content-length: 903
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "packageId": "Package Id value",
   "appIdentifier": "App Identifier value",
   "usedLicenseCount": 0,
@@ -127,7 +131,7 @@ Content-length: 903
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1075
+Content-Length: 1132
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkApp",
@@ -155,6 +159,8 @@ Content-Length: 1075
     "Role Scope Tag Ids value"
   ],
   "dependentAppCount": 1,
+  "supersedingAppCount": 3,
+  "supersededAppCount": 2,
   "packageId": "Package Id value",
   "appIdentifier": "App Identifier value",
   "usedLicenseCount": 0,
@@ -162,6 +168,9 @@ Content-Length: 1075
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
+
+
+
 
 
 

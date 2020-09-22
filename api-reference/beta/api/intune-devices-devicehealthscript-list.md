@@ -3,14 +3,14 @@ title: Список Девицехеалсскриптс
 description: Список свойств и связей объектов Девицехеалсскрипт.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 931f71ec288e10f296017a5a12f8b46cf85b7ac4
-ms.sourcegitcommit: d961d83d2792328c9b64421325299e4b56d8dabd
+ms.openlocfilehash: 83cc4756b9bd6522f598a39937988888d71b8732
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44176850"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011216"
 ---
 # <a name="list-devicehealthscripts"></a>Список Девицехеалсскриптс
 
@@ -29,7 +29,7 @@ ms.locfileid: "44176850"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,13 +43,13 @@ GET /deviceManagement/deviceHealthScripts
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -112,6 +112,9 @@ Content-Length: 1578
   ]
 }
 ```
+
+
+
 
 
 

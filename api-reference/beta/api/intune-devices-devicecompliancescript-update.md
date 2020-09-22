@@ -3,14 +3,14 @@ title: Обновление Девицекомплианцескрипт
 description: Обновление свойств объекта Девицекомплианцескрипт.
 author: dougeby
 localization_priority: Normal
-ms.prod: Intune
+ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 88187ad5f3ea66202823c074b85a5336078246df
-ms.sourcegitcommit: 0be363e309fa40f1fbb2de85b3b559105b178c0c
-ms.translationtype: Auto
+ms.openlocfilehash: 2a52d599e5746316c449548e26493e1f05dec4ec
+ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44792480"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48011258"
 ---
 # <a name="update-devicecompliancescript"></a>Обновление Девицекомплианцескрипт
 
@@ -29,7 +29,7 @@ ms.locfileid: "44792480"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,10 +43,10 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Bearer &lt;token&gt;. Обязательный.|
+|Authorization|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицекомплианцескрипт](../resources/intune-devices-devicecompliancescript.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицекомплианцескрипт](../resources/intune-devices-devicecompliancescript.md).
@@ -56,14 +56,14 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}
 |id|String|Уникальный идентификатор для сценария соответствия требованиям устройства|
 |publisher|String|Имя издателя сценариев соответствия требованиям устройства|
 |version|String|Версия сценария соответствия требованиям устройства|
-|displayName|Строка|Имя сценария соответствия требованиям устройства|
+|displayName|String|Имя сценария соответствия требованиям устройства|
 |description|String|Описание сценария соответствия требованиям устройства|
 |детектионскриптконтент|Binary|Весь контент скрипта обнаружения PowerShell|
 |createdDateTime|DateTimeOffset|Метка времени создания сценария соответствия устройства требованиям. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Метка времени изменения сценария соответствия требованиям устройства. Это свойство доступно только для чтения.|
 |runAsAccount|[рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта|
-|runAs32Bit|Boolean|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
+|Свойства enforcesignaturecheck|Логическое|Указывает, нужно ли проверять подпись скрипта|
+|runAs32Bit|Логическое|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
 |roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для сценария соответствия требованиям устройств|
 
 
@@ -121,6 +121,9 @@ Content-Length: 592
   ]
 }
 ```
+
+
+
 
 
 
