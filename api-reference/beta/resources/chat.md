@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7c365fd343af3078663cbd184b67b49feb37945c
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: da9dcf4a1777d23a3b5f4b73e505641057558605
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193479"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48222836"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса Chat
 
@@ -26,12 +26,12 @@ ms.locfileid: "48193479"
 |:---------------|:--------|:----------|-----------|
 |[Список чатов](../api/chat-list.md) | Коллекция [чата](chat.md) | Получение списка сеансов, в которые входит пользователь.| **Только делегированные** |
 |[Получение чата](../api/chat-get.md) | [chat](chat.md) | Чтение свойств и связей чата.| **Только делегированные** |
-|[Список членов чата](../api/conversationmember-list.md) | Коллекция [conversationmember](conversationmember.md) | Получение списка всех пользователей в чате.| Делегирование и приложение * |
-|[Получение члена чата](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Получение одного пользователя в чате.| Делегирование и приложение * |
+|[Список членов чата](../api/conversationmember-list.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка всех пользователей в чате.| Делегирование и приложение * |
+|[Получение члена чата](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | Получение одного пользователя в чате.| Делегирование и приложение * |
 |[Список сообщений в чате](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в индивидуальном или групповом чате. | Делегирование и приложение * |
 |[Получение сообщения в чате](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. | Делегирование и приложение * |
 
-\*> **Примечание:** При использовании разрешений приложений необходимо знать, как вы будете получать идентификатор чата. Так как перечисление бесед с разрешениями приложений не поддерживается, не все сценарии возможны. Можно получить идентификаторы чата с делегированными разрешениями и из [уведомлений об изменениях для/ЧАТС/жеталлмессажес](../api/subscription-post-subscriptions.md) с разрешениями приложений.
+>**Примечание:** При использовании разрешений приложений необходимо знать, как вы будете получать идентификатор чата. Так как перечисление бесед с разрешениями приложений не поддерживается, не все сценарии возможны. Можно получить идентификаторы чата с делегированными разрешениями и из [уведомлений об изменениях для/ЧАТС/жеталлмессажес](../api/subscription-post-subscriptions.md) с разрешениями приложений.
 
 ## <a name="properties"></a>Свойства
 
@@ -67,7 +67,6 @@ ms.locfileid: "48193479"
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset"
 }
-
 ```
 
 ## <a name="see-also"></a>См. также

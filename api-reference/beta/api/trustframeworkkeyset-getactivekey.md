@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b530adba26b7d843758650dfcf437449bf1065ba
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e13986bb5702fe86a384e93c4e64e76cf0b39d6f
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027331"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48222973"
 ---
 # <a name="trustframeworkkeyset-getactivekey"></a>Трустфрамеворккэйсет: Жетактивекэй
 
@@ -29,7 +29,7 @@ ms.locfileid: "48027331"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Трустфрамеворккэйсет. Read. ALL, Трустфрамеворккэйсет. ReadWrite. ALL. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Трустфрамеворккэйсет. Read. ALL, Трустфрамеворккэйсет. ReadWrite. ALL. |
+| Приложение                            | Трустфрамеворккэйсет. Read. ALL, Трустфрамеворккэйсет. ReadWrite. ALL. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -65,7 +65,7 @@ GET /trustFramework/keySets/{id}/getActiveKey
   "name": "trustframeworkkeyset_getactivekey"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/trustFramework/keySets/{id}/getActiveKey
 ```
 # <a name="c"></a>[C#](#tab/csharp)

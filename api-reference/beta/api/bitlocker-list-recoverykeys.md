@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0ceadccb9ce4fbfcfffab42d403054b95c90ae50
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 566a0c81a648207d8fb719f044a6095e2ae4847e
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992745"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48222906"
 ---
 # <a name="list-recoverykeys"></a>Список Рековерикэйс
 Пространство имен: microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "47992745"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|BitLocker. ReadBasic. ALL, BitLocker. Read. ALL|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|Не поддерживается|
+|Приложение|Не поддерживается|
 
 >**Примечание**. для делегированных разрешений, чтобы разрешить приложениям получать ресурсы битлоккеррековерикэй от имени вошедшего пользователя, администратору клиента должен быть назначен один из следующих ролей, либо пользователь должен быть зарегистрированным владельцем устройства, для которого была создана резервная копия ключа восстановления BitLocker: 
 * Глобальный администратор
@@ -60,7 +60,7 @@ GET /bitlocker/recoveryKeys
 GET /bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает `$filter` параметр запроса OData для фильтрации результатов по **идентификатору устройства** , в которое было Последнее резервное копирование. Подробнее: [Пример 2](#example-2). Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 Ответ также может содержать объект `odata.nextLink` , который можно использовать для отображения результатов в наборе результатов. Дополнительные сведения см в разделе [разбиение данных Microsoft Graph](/graph/paging).
@@ -72,7 +72,7 @@ GET /bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
 |OCP — имя клиента|Имя клиентского приложения, выполняющего вызов API. Обязательно.|
 |OCP — Client – Version|Версия клиентского приложения, выполняющего вызов API. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -86,6 +86,8 @@ GET /bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_bitlockerrecoverykey"
@@ -96,10 +98,24 @@ GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-bitlockerrecoverykey-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
@@ -136,6 +152,8 @@ Content-Type: application/json
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleIds": ["1ab40ab2-32a8-4b00-b6b5-ba724e407de9"],
@@ -147,10 +165,24 @@ GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys?$filter=deviceId eq 
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-bitlockerrecoverykey-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
