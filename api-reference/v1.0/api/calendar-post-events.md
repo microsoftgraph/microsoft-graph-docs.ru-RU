@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6fcd43bba70b466cc79736ad0a97cc93c4aa0c61
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 41ee3754c0c459eacf8dd974c1f53f76537aeda8
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070361"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193514"
 ---
 # <a name="create-event"></a>Создание события
 
@@ -65,8 +65,7 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ### <a name="example-1-create-an-event-in-a-specific-calendar"></a>Пример 1. Создание события в определенном календаре
 
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
+В примере ниже создается событие в определенном календаре и событию назначается необязательное значение **transactionId**.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -103,7 +102,8 @@ Content-type: application/json
       },
       "type": "required"
     }
-  ]
+  ],
+  "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -126,7 +126,9 @@ Content-type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -159,6 +161,7 @@ Content-type: application/json
     "isOrganizer": true,
     "responseRequested": true,
     "seriesMasterId": null,
+    "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7",
     "showAs": "busy",
     "type": "singleInstance",
     "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGViNDU7zAAAAA7zAAAZb2ckAAA%3D&exvsurl=1&path=/calendar/item",
@@ -223,9 +226,6 @@ Content-type: application/json
 #### <a name="request"></a>Запрос
 В следующем примере создается событие в указанном календаре пользователя, вошедшего в систему, и оно включается в виде онлайн-собрания.
 
-Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
-
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -286,7 +286,9 @@ Content-type: application/json
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

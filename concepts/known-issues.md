@@ -3,20 +3,20 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: b02d38ac87f914b943d473b8e30b2e03151a4299
-ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
-ms.translationtype: MT
+ms.openlocfilehash: f5ff0d6ef17ad4046bdaedf0444df94e1f7bb3df
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44897731"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193213"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
 В этой статье описываются известные проблемы, связанные с Microsoft Graph. 
 
-Чтобы сообщить о известной проблеме, посетите страницу [поддержки Microsoft Graph](https://developer.microsoft.com/graph/support) .
+Чтобы сообщить об известных проблемах, перейдите на[поддержки Microsoft Graph](https://developer.microsoft.com/graph/support).
 
-Сведения о последних обновлениях API Microsoft Graph можно найти в [журнале изменений Microsoft Graph](changelog.md).
+Сведения о последних обновлениях API в Microsoft Graph см. в [журнале изменений Microsoft Graph](changelog.md).
 
 ## <a name="bookings"></a>Bookings
 
@@ -36,7 +36,7 @@ ms.locfileid: "44897731"
 
 В качестве обходного решения можно ограничить группу компаний, возвращаемых по запросу, указав параметр `query`. Пример:
 
-```
+```http
 GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 ```
 ## <a name="calendars"></a>Календари
@@ -228,17 +228,17 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 * получение и обновление свойств групп, связанных с администрированием групп и управлением ими;
 * синхронизация, типы и [параметры каталогов](/graph/api/resources/directoryobject?view=graph-rest-1.0) групп;
 * владельцы и члены групп.
-* Извлечение групповых бесед и потоков
+* Получение групповых бесед
 
 Примеры функций групп, поддерживающих только делегированные разрешения:
 
-* События групп, Фото
+* Групповые события, фотографии
 * внешние отправители, разрешенные или запрещенные отправители, подписка на группы;
 * избранное пользователей и счетчик непросмотренных элементов.
 
 ### <a name="policy"></a>Политика
 
-С помощью Microsoft Graph для создания и именования группы Microsoft 365 обходит все групповые политики Майкрософт 365, настроенные с помощью Outlook Web App.
+С помощью Microsoft Graph можно создать группу Microsoft 365 и присвоить ей название в обход всех групповых политик Microsoft 365, настроенных через Outlook Web App.
 
 ### <a name="setting-the-allowexternalsenders-property"></a>Установка свойства allowExternalSenders
 
@@ -329,7 +329,7 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 Чтобы получить список команд, см. [список всех команд](teams-list-all-teams.md) и [список ваших команд](/graph/api/user-list-joinedteams?view=graph-rest-1.0).
 
 ### <a name="post-teams-is-only-available-in-beta"></a>POST / команды доступны только в бета-версии
-Чтобы создавать команды в версии 1.0, ознакомьтесь со статьей [Создание группы](/graph/api/team-put-teams?view=graph-rest-1.0).
+Чтобы создать команды в v1.0, см. [создание команды](/graph/api/team-put-teams?view=graph-rest-1.0).
 
 ### <a name="missing-teams-in-list-all-teams"></a>Отсутствующие команды в списке всех команд
 
@@ -342,12 +342,12 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 ### <a name="no-instant-access-after-creation"></a>Нет мгновенного доступа после создания
 
-Пользователей можно создавать мгновенно с помощью метода POST для объекта user. Для получения доступа к службам Microsoft 365 сначала необходимо назначить лицензию Microsoft 365 пользователю. Из-за распределенного характера службы файлы, сообщения и события этого пользователя станут доступны посредством API Microsoft Graph через 15 минут после назначения лицензии. В течение этого времени приложения будут получать ошибку HTTP 404.
+Пользователей можно создавать мгновенно с помощью метода POST для объекта user. Для доступа к службам Microsoft 365 пользователю нужна соответствующая лицензия. Из-за распределенного характера службы файлы, сообщения и события этого пользователя станут доступны посредством API Microsoft Graph через 15 минут после назначения лицензии. В течение этого времени приложения будут получать ошибку HTTP 404.
 
 ### <a name="photo-restrictions"></a>Ограничения для фотографий
 
-Просмотр и обновление фотографии профиля пользователя возможны, только если у пользователя есть почтовый ящик. Кроме того, все фотографии, которые *могли* быть ранее сохранены с помощью свойства **thumbnailPhoto** (с помощью Azure AD Graph или через синхронизацию с AD подключением), больше недоступны через свойство **Photo** приложения Microsoft Graph для ресурса [User](/graph/api/resources/user?view=graph-rest-1.0) .
-В этом случае сбой при просмотре или обновлении фотографии вызовет следующую ошибку:
+Просмотреть и обновить фотографию профиля пользователя можно, только если у пользователя есть почтовый ящик. Кроме того, все фотографии, которые *могли* быть сохранены ранее с помощью свойства **thumbnailPhoto** (с помощью Azure AD Graph или службы синхронизации AD Connect), больше не доступны через свойство **photo** Microsoft Graph ресурса [user](/graph/api/resources/user?view=graph-rest-1.0).
+В этом случае, если фотографию не удастся просмотреть или обновить, возникнет следующая ошибка:
 
 ```javascript
 {
