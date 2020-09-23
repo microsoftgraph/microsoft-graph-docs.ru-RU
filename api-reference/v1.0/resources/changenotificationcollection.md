@@ -5,38 +5,39 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: cd3e5508d4281de8c791259882a413127315e0b2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bf4f6fd5bb573885b32baa4f9b7296d5a1a2ef7b
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037894"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192821"
 ---
-# <a name="changenotificationcollection-resource-type"></a><span data-ttu-id="471b6-103">Тип ресурса changeNotificationCollection</span><span class="sxs-lookup"><span data-stu-id="471b6-103">changeNotificationCollection resource type</span></span>
+# <a name="changenotificationcollection-resource-type"></a><span data-ttu-id="eecbd-103">Тип ресурса changeNotificationCollection</span><span class="sxs-lookup"><span data-stu-id="eecbd-103">changeNotificationCollection resource type</span></span>
 
-<span data-ttu-id="471b6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="471b6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="eecbd-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="eecbd-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="471b6-105">Представляет коллекцию уведомлений об изменении ресурсов, отправляемых подписчику.</span><span class="sxs-lookup"><span data-stu-id="471b6-105">Represents a collection of resource change notifications sent to the subscriber.</span></span>
+<span data-ttu-id="eecbd-105">Представляет коллекцию уведомлений об изменении ресурсов, отправляемых подписчику.</span><span class="sxs-lookup"><span data-stu-id="eecbd-105">Represents a collection of resource change notifications sent to the subscriber.</span></span>
 
-<span data-ttu-id="471b6-106">Дополнительные сведения см. [в статье Использование API Microsoft Graph для получения уведомлений об изменениях](webhooks.md).</span><span class="sxs-lookup"><span data-stu-id="471b6-106">For details, see [Use the Microsoft Graph API to get change notifications](webhooks.md).</span></span>
+<span data-ttu-id="eecbd-106">Дополнительные сведения см. [в статье Использование API Microsoft Graph для получения уведомлений об изменениях](webhooks.md).</span><span class="sxs-lookup"><span data-stu-id="eecbd-106">For details, see [Use the Microsoft Graph API to get change notifications](webhooks.md).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="471b6-107">Методы</span><span class="sxs-lookup"><span data-stu-id="471b6-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="eecbd-107">Методы</span><span class="sxs-lookup"><span data-stu-id="eecbd-107">Methods</span></span>
 
-<span data-ttu-id="471b6-108">Нет.</span><span class="sxs-lookup"><span data-stu-id="471b6-108">None.</span></span>
+<span data-ttu-id="eecbd-108">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="eecbd-108">None.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="471b6-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="471b6-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="eecbd-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="eecbd-109">Properties</span></span>
 
-| <span data-ttu-id="471b6-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="471b6-110">Property</span></span> | <span data-ttu-id="471b6-111">Тип</span><span class="sxs-lookup"><span data-stu-id="471b6-111">Type</span></span> | <span data-ttu-id="471b6-112">Описание</span><span class="sxs-lookup"><span data-stu-id="471b6-112">Description</span></span> |
+| <span data-ttu-id="eecbd-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="eecbd-110">Property</span></span> | <span data-ttu-id="eecbd-111">Тип</span><span class="sxs-lookup"><span data-stu-id="eecbd-111">Type</span></span> | <span data-ttu-id="eecbd-112">Описание</span><span class="sxs-lookup"><span data-stu-id="eecbd-112">Description</span></span> |
 |:---------|:-----|:------------|
-| <span data-ttu-id="471b6-113">значение</span><span class="sxs-lookup"><span data-stu-id="471b6-113">value</span></span> | <span data-ttu-id="471b6-114">Коллекция ([чанженотификатион](changenotification.md))</span><span class="sxs-lookup"><span data-stu-id="471b6-114">collection([changeNotification](changenotification.md))</span></span> | <span data-ttu-id="471b6-115">Набор уведомлений, отправляемых на URL-адрес уведомлений.</span><span class="sxs-lookup"><span data-stu-id="471b6-115">The set of notifications being sent to the notification URL.</span></span> <span data-ttu-id="471b6-116">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="471b6-116">Required.</span></span> |
+| <span data-ttu-id="eecbd-113">валидатионтокенс</span><span class="sxs-lookup"><span data-stu-id="eecbd-113">validationTokens</span></span> | <span data-ttu-id="eecbd-114">Коллекция (string)</span><span class="sxs-lookup"><span data-stu-id="eecbd-114">collection(string)</span></span> | <span data-ttu-id="eecbd-115">Содержит массив маркеров JWT, созданных приложением Microsoft Graph для проверки источника уведомлений.</span><span class="sxs-lookup"><span data-stu-id="eecbd-115">Contains an array of JWT tokens generated by Microsoft Graph for the application to validate the origin of the notifications.</span></span> <span data-ttu-id="eecbd-116">Microsoft Graph создает один маркер для каждой отдельной записи приложения и клиента для элемента, если он существует в массиве значений.</span><span class="sxs-lookup"><span data-stu-id="eecbd-116">Microsoft Graph generates a single token for each distinct app and tenant pair for an item if it exists in the value array.</span></span> <span data-ttu-id="eecbd-117">Имейте в виду, что уведомления могут содержать набор элементов для различных приложений и клиентов, подписанных с использованием того же URL-адреса уведомления.</span><span class="sxs-lookup"><span data-stu-id="eecbd-117">Keep in mind that notifications can contain a mix of items for various apps and tenants that subscribed using the same notification URL.</span></span> <span data-ttu-id="eecbd-118">Предоставляется только для [уведомлений об изменениях с данными ресурсов](/graph/webhooks-with-resource-data.md) .</span><span class="sxs-lookup"><span data-stu-id="eecbd-118">Only provided for [change notifications with resource data](/graph/webhooks-with-resource-data.md) Optional.</span></span> |
+| <span data-ttu-id="eecbd-119">значение</span><span class="sxs-lookup"><span data-stu-id="eecbd-119">value</span></span> | <span data-ttu-id="eecbd-120">Коллекция ([чанженотификатион](changenotification.md))</span><span class="sxs-lookup"><span data-stu-id="eecbd-120">collection([changeNotification](changenotification.md))</span></span> | <span data-ttu-id="eecbd-121">Набор уведомлений, отправляемых на URL-адрес уведомлений.</span><span class="sxs-lookup"><span data-stu-id="eecbd-121">The set of notifications being sent to the notification URL.</span></span> <span data-ttu-id="eecbd-122">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="eecbd-122">Required.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="471b6-117">Связи</span><span class="sxs-lookup"><span data-stu-id="471b6-117">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="eecbd-123">Связи</span><span class="sxs-lookup"><span data-stu-id="eecbd-123">Relationships</span></span>
 
-<span data-ttu-id="471b6-118">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="471b6-118">None.</span></span>
+<span data-ttu-id="eecbd-124">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="eecbd-124">None.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="471b6-119">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="471b6-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="eecbd-125">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="eecbd-125">JSON representation</span></span>
 
-<span data-ttu-id="471b6-120">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="471b6-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="eecbd-126">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="eecbd-126">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
