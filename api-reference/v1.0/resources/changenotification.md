@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: resourcePageType
 ms.prod: non-product-specific
-ms.openlocfilehash: a1be7569f6fb7f96b28d34f8e319df78f14a6ae9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ab8533f85e541947dccfc4c76989c100c64020cf
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037901"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193467"
 ---
 # <a name="changenotification-resource-type"></a>Тип ресурса changeNotification
 
@@ -22,15 +22,16 @@ ms.locfileid: "48037901"
 
 ## <a name="methods"></a>Методы
 
-Нет.
+Отсутствуют.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
 | changeType | string | Указывает тип изменения, которое вызывает уведомление об изменении. Поддерживаемые значения: `created`, `updated`, `deleted`. Обязательно. |
-| clientState | string | Значение свойства **clientState** , которое отправляется в запросе на подписку (при наличии). Максимальная длина: 255 символов. Клиент может проверить, поступило ли уведомление об изменении из службы, сравнив значения свойства **clientState** . Значение свойства **clientState** , отправляемого с подпиской, сравнивается со значением свойства **clientState** , полученного при каждом уведомлении об изменении. Необязательный параметр. |
-| id | string | Уникальный идентификатор уведомления. Необязательный параметр. |
+| clientState | string | Значение свойства **clientState** , которое отправляется в запросе на подписку (при наличии). Максимальная длина: 255 символов. Клиент может проверить, поступило ли уведомление об изменении из службы, сравнив значения свойства **clientState** . Значение свойства **clientState** , отправляемого с подпиской, сравнивается со значением свойства **clientState** , полученного при каждом уведомлении об изменении. Необязательно. |
+| енкриптедконтент | [Microsoft. Graph. Чанженотификатионенкриптедконтент](changenotificationencryptedcontent.md) | Просмотреть Зашифрованное содержимое, связанное с уведомлением об изменении. Предоставляется только в том случае, если **енкриптионцертификате** и **инклудересаурцедата** определены во время запроса на подписку, и если он поддерживается ресурсом. Необязательно. |
+| id | string | Уникальный идентификатор уведомления. Необязательно. |
 | resource | string | URI ресурса, который выдал уведомление об изменении относительно `https://graph.microsoft.com` . Обязательно. |
 | resourceData | [Microsoft. Graph. resourceData](resourcedata.md) | Содержимое этого свойства зависит от типа связанного с ним ресурса. Обязательно. |
 | subscriptionExpirationDateTime | [дата и время](https://tools.ietf.org/html/rfc3339) | Время окончания срока действия подписки. Обязательно. |

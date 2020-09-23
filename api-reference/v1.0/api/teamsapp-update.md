@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0dc3c5f3021c5479ef3eb6f227d7fbe512e0c122
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: e69a43182b0d96b146b080e7326560dc11ac3ed1
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843165"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48223552"
 ---
 # <a name="update-teamsapp"></a>Обновление teamsApp
 
@@ -22,7 +22,7 @@ ms.locfileid: "47843165"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
 >**Примечание:** Только глобальные администраторы могут вызывать этот API.
 
@@ -48,7 +48,7 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 | Авторизация | Bearer {токен}. Обязательный.  |
 | Content-Type  | Application/ZIP. Обязательно. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса включите полезные данные манифеста ZIP для Teams. Дополнительные сведения см. [в статье Создание пакета приложения](/microsoftteams/platform/concepts/apps/apps-package)
 
@@ -65,6 +65,8 @@ POST /appCatalogs/teamsApps/{id}/appDefinitions
 ### <a name="request"></a>Запрос
 
 <!-- markdownlint-disable MD034 -->
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_teamsapp"
@@ -77,6 +79,16 @@ Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-teamsapp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-teamsapp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- markdownlint-disable MD024 -->
 

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: b984f3e6e6d263e3d2f4fc25caf288f4e0565477
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 615eb0555f1f262cb399e11b844425eb8b370aa0
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045525"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48223510"
 ---
 # <a name="grant-an-approleassignment-to-a-service-principal"></a>Предоставление appRoleAssignment субъекту-службе
 
@@ -56,11 +56,11 @@ POST /servicePrincipals/{id}/appRoleAssignments
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите представление JSON объекта [appRoleAssignment](../resources/approleassignment.md).
+В тексте запроса укажите представление JSON для объекта [appRoleAssignment](../resources/approleassignment.md).
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `201 Created` и объект [appRoleAssignment](../resources/approleassignment.md) в тексте отклика.
+В случае успеха этот метод возвращает в тексте отклика код отклика `201 Created` и объект [appRoleAssignment](../resources/approleassignment.md).
 
 ## <a name="examples"></a>Примеры
 
@@ -105,7 +105,7 @@ Content-Length: 110
 ---
 
 
-В этом примере `{id}` и `{principalId-value}` оба будут `id` назначенного субъекта-службы клиента, а `{resoruceId}` будет `id` субъектом-службой ресурса (API).
+В этом примере `{id}` и `{principalId-value}` оба будут `id` назначенного субъекта-службы клиента, а `{resourceId}` будет `id` субъектом-службой ресурса (API).
 
 ### <a name="response"></a>Отклик
 

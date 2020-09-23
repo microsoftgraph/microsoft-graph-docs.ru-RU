@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 19a3432225e3aeeabe2a22a460cac3947af1b052
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 98f13af65a522e5af2fa172bbf395f7b7678e4be
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192723"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48223417"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -145,7 +145,7 @@ ms.locfileid: "48192723"
 |Дополнение|Бета-версия и версия 1.0|Добавлено свойство **lastEditedDateTime** для ресурса [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta).|
 |Изменение| Бета-версия и версия 1.0| Изменено свойство **lastModifiedDateTime** в ресурсе [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) для представления времени, когда объект затрагивался в последний раз. Оно всегда будет настроено и никогда не будет иметь значение `null`|
 |Дополнение|бета| Добавлено свойство **createdDateTime** для ресурсов [channel](/graph/api/resources/channel?view=graph-rest-beta) и [team](/graph/api/resources/team?view=graph-rest-beta).|
-|Дополнение|бета| Добавлен метод [Update chatMessage](/graph/api/chatmessage-update?view=graph-rest-beta) для ресурса [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta).|
+|Дополнение|Бета-версия и версия 1.0| Добавлен метод [Update chatMessage](/graph/api/chatmessage-update) для ресурса [chatMessage](/graph/api/resources/chatmessage).|
 
 ### <a name="users"></a>Пользователи
 

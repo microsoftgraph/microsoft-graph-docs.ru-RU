@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c5194dd714be8da267b8eef1a28bd268e658cbcf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 64e8c449f5336b06da8287aa057fb4ad7776812e
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088736"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193304"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -100,6 +100,7 @@ ms.locfileid: "48088736"
 |showAs|freeBusyStatus|Отображаемое состояние. Допустимые значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |начать|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс начала события. По умолчанию время начала указано в формате UTC.|
 |subject|String|Текст в строке темы сообщения о событии.|
+|transactionId |String |Настраиваемый идентификатор, указанный клиентским приложением серверу во избежание лишних операций POST в том случае, если клиент попробует снова создать одно и то же событие. Это полезно в тех случаях, когда из-за плохого сетевого подключения клиент отключается, не успев получить от сервера ответ на предыдущий запрос клиента на создание события. После того, как при создании события вы настроили **transactionId**, вы можете изменить **transactionId** в последующем обновлении. Это свойство возвращается только в полезных данных ответа, если такая настройка была сделана в приложении. Необязательное свойство.|
 |type|eventType|Тип события. Допустимые значения: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Только для чтения.|
 |webLink|String|URL-адрес для открытия события в Outlook в Интернете.<br/><br/>Outlook в Интернете открывает это событие в браузере, если выполнен вход в почтовый ящик. В противном случае Outlook в Интернете предлагает выполнить вход.<br/><br/>Доступ к этому URL-адресу можно получить из объекта iFrame.|
 
@@ -226,6 +227,7 @@ ms.locfileid: "48088736"
   "showAs": "String",
   "start": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "subject": "string",
+  "transactionId": "string",
   "type": "String",
   "webLink": "string",
 

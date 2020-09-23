@@ -5,12 +5,12 @@ localization_priority: Priority
 author: davidmu1
 ms.prod: change-notifications
 doc_type: conceptualPageType
-ms.openlocfilehash: d8f5529c56282c59572e615fd875860f136e6149
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b5a713d5860da2b74401f2a484bffa253142641
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015248"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48193136"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
@@ -33,7 +33,7 @@ REST API Microsoft Graph использует механизм веб-перех
 | [список][] на [сайте][] SharePoint | Изменения содержимого в _списке_: <br>`/sites/{id}/lists/{id}` | Нет |
 | [Оповещение][] безопасности | Изменения в конкретном предупреждении:<br>`/security/alerts/{id}` <br>Изменения в отфильтрованных оповещениях:<br> `/security/alerts/?$filter`| Нет |
 | [callRecord][] в Teams | Изменения во _всех_ записях звонков: `/communications/callRecords` | Нет |
-| [chatMessage](chatmessage.md) Teams | Изменения в сообщениях чата во всех каналах во всех командах:<br>`/teams/getAllMessages`<br>Изменения в сообщениях чата во всех чатах:<br>`/chats/getAllMessages` | Да |
+| [chatMessage][] Teams | Изменения в сообщениях чата во всех каналах во всех командах:<br>`/teams/getAllMessages` <br>Изменения в сообщениях чата на определенном канале:<br>`/teams/{id}/channels/{id}/messages`<br>Изменения в сообщениях чата во всех чатах:<br>`/chats/getAllMessages` <br>Изменения в сообщениях чата в конкретном чате:<br>`/chats/{id}/messages` | Да |
 
 > **Примечание**. Любой путь ресурса, начинающийся с `/users/{id}`, может принимать `/me` для указания вошедшего пользователя.
 
@@ -45,7 +45,7 @@ REST API Microsoft Graph использует механизм веб-перех
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | Делегированное — рабочая или учебная учетная запись     | [alert][], [contact][], [conversation][], [driveItem][], [list][], [event][], [group][], [message][], [user][]|
 | Делегированное — личная учетная запись Майкрософт | [contact][], [driveItem][], [list][], [event][], [message][]                                        |
-| Приложение                            | [alert][], [contact][], [list][], [driveItem][], [event][], [group][], [message][], [user][], [callRecord][]|
+| Приложение                            | [alert][], [contact][], [list][], [driveItem][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][]|
 
 
 ## <a name="see-also"></a>См. также
@@ -57,6 +57,7 @@ REST API Microsoft Graph использует механизм веб-перех
 - [Обновление подписки](../api/subscription-update.md)
 - [Удаление подписки](../api/subscription-delete.md)
 
+[chatMessage]: ./chatmessage.md
 [contact]: ./contact.md
 [conversation]: ./conversation.md
 [driveItem]: ./driveitem.md
