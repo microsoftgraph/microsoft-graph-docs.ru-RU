@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: a0bf66038c571b45baf894fe5a10fe2760f00ca9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 48dada7f3f1f47a5b513c62073f5c3c34f7c7e3b
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032406"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192737"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -1552,7 +1552,7 @@ _ProgramControl.Read.All_ и _ProgramControl.ReadWrite.All_ допустимы �
 
 |   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
 |:----------------|:------------------|:-------------|:-----------------------|:-----------------------|
-| _ExternalItem.Read.All_ | Чтение внешних данных | Позволяет приложению читать внешние данные, принятые к с помощью API индексирования Поиска (Майкрософт).| Да | Нет |
+| _ExternalItem.ReadWrite.All_ | Чтение и запись внешних данных | Позволяет приложению осуществлять прием через индексирующие API соединителей Microsoft Graph или запрашивать данные, принятые через соединители Microsoft Graph.| Да | Нет |
 
 ### <a name="remarks"></a>Примечания
 Разрешения поиска действительны только для рабочих и учебных учетных записей.
@@ -1563,9 +1563,9 @@ _ProgramControl.Read.All_ и _ProgramControl.ReadWrite.All_ допустимы �
 
 ### <a name="example-usage"></a>Примеры использования
 
-#### <a name="application"></a>Для приложений
+#### <a name="application"></a>Приложение
 
-* _ExternalItem.Read.All__:  доступ к внешним данным в [ API поиска](/graph/api/resources/search-api-overview) (`POST /search/query`).
+* _ExternalItem.ReadWrite.All_ :  доступ к внешним данным в [API поиска](/graph/api/resources/search-api-overview) (`POST /search/query`).
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: ea1a4f45a32208cd910db52bc1b64409b26eb73a
-ms.sourcegitcommit: c650b95ef4d0c3e93e2eb36cd6b52ed31200164f
+ms.openlocfilehash: 3ef5db3a7cc6c5d8be24fa30f6f716c81285e649
+ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44685170"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48230705"
 ---
 ```javascript
 
@@ -25,13 +25,11 @@ const searchResponse = {
         "/external/connections/connectionfriendlyname"
       ],
       query: {
-        query_string: {
-          query: "contoso product"
-        }
+        queryString: "contoso product"
       },
       from: 0,
       size: 25,
-      stored_fields: [
+      fields: [
         "title",
         "description"
       ]

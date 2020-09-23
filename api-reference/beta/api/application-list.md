@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2517a88aa136851c33595697c5b67548ffc836a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 925d1fd7bc10b88a95fd7f98d9943b31bdc7fc30
+ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996852"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48192443"
 ---
 # <a name="list-applications"></a>Список приложений
 
@@ -20,6 +20,9 @@ ms.locfileid: "47996852"
 
 Получение списка [приложений](../resources/application.md) в организации.
 
+> [!NOTE]
+> При вызове этого API с использованием маркеров, выпущенных для личной учетной записи Майкрософт, возвращаются приложения, принадлежащие личной учетной записи Майкрософт. Для личных учетных записей Майкрософт не существует понятия организаций. Чтобы составить список приложений, принадлежащих определенным личным учетным записям Майкрософт, для этого API помимо Application.Read.All или Application.ReadWrite.All требуется разрешение User.Read.
+ 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,8 +30,8 @@ ms.locfileid: "47996852"
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
+| Делегированные (личная учетная запись Майкрософт) | Application.Read.All и User.Read, Application.ReadWrite.All и User.Read  |
+| Приложение | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
