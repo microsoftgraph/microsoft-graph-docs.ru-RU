@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 63375e567d5faffcd1e25cdd85d3c43e37efbc77
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 314795b1edad398a093b3c1bbfc401c0ef450c23
+ms.sourcegitcommit: b7e82d0d64f640a09f5da76b38d8ed9f13684f95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994395"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48258452"
 ---
 # <a name="create-group"></a>Создание группы
 Пространство имен: Microsoft. Graph. банка
@@ -26,7 +26,7 @@ ms.locfileid: "47994395"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись) |TermStore.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ POST /termStore/groups
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя создаваемой группы.|
+|displayName|Строка|Имя создаваемой группы.|
 
 
 

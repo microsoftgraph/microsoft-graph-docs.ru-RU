@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 9a315cd9187528b07932710171376b7efcda7af9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: de8b0c004da804a4d9a617eec20de22c51e98108
+ms.sourcegitcommit: b7e82d0d64f640a09f5da76b38d8ed9f13684f95
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988798"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48258438"
 ---
 # <a name="store-resource-type"></a>Тип ресурса хранилища
 
@@ -32,11 +32,11 @@ ms.locfileid: "47988798"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание
 |:---|:---|:---
-|дефаултлангуажетаг | String | Язык по умолчанию для банка терминов.
-|id|String | Уникальный идентификатор банка терминов. Только для чтения.
+|дефаултлангуажетаг | Строка | Язык банка терминов по умолчанию.
+|id|Строка | Уникальный идентификатор банка терминов. Только для чтения.
 |лангуажетагс | Коллекция String | Список языков для банка терминов.
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание
 |:---|:---|:---
 |groups |Коллекция [Microsoft. Graph. банка терминов Microsoft. Graph.](../resources/termstore-group.md) | Коллекция всех групп, доступных в банке терминов.
