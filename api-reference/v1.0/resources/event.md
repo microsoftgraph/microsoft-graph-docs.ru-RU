@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 64e8c449f5336b06da8287aa057fb4ad7776812e
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 60c45284f02cca644051770e2b8f262d1d0e7b6a
+ms.sourcegitcommit: b7e82d0d64f640a09f5da76b38d8ed9f13684f95
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193304"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48258417"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -73,7 +73,7 @@ ms.locfileid: "48193304"
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |end|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс завершения события. По умолчанию время завершения указано в формате UTC.|
 |hasAttachments|Boolean|Задайте значение true, если у события есть вложения.|
-|iCalUId|String|Уникальный идентификатор, совместно используемый всеми экземплярами события в разных календарях. Только для чтения.|
+|iCalUId|String|Уникальный идентификатор для события в календарях. Этот идентификатор отличается для каждого вхождения повторяющегося ряда. Только для чтения.|
 |id|String| Только для чтения.|
 |importance|importance|Важность события. Допустимые значения: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Задайте значение true, если событие длится весь день.|
