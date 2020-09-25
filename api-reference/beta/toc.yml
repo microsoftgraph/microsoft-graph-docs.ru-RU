@@ -890,7 +890,7 @@ items:
                 href: api/serviceprincipal-list-createdobjects.md
               - name: Список ownedObjects
                 href: api/serviceprincipal-list-ownedobjects.md
-              - name: изменившихся
+              - name: delta
                 href: api/serviceprincipal-delta.md
               - name: Назначение ролей приложений
                 href: resources/approleassignment.md
@@ -1389,7 +1389,7 @@ items:
                 href: api/onlinemeeting-update.md
               - name: Удаление
                 href: api/onlinemeeting-delete.md
-          - name: Присутствие (предварительная версия)
+          - name: Присутствие (Предварительная версия)
             href: resources/presence.md
             items:
               - name: Получение сведений о присутствии
@@ -1578,6 +1578,13 @@ items:
                     href: api/printconnector-update.md
                   - name: Удаление
                     href: api/printconnector-delete.md
+              - name: Печать документа
+                href: resources/printdocument.md
+                items:
+                  - name: Отправка данных
+                    href: api/printdocument-uploaddata.md
+                  - name: Скачать двоичный файл
+                    href: api/printdocument-get-file.md
               - name: Задание печати
                 href: resources/printjob.md
                 items:
@@ -10494,9 +10501,9 @@ items:
                         href: api/entitlementmanagementsettings-get.md
                       - name: Обновление
                         href: api/entitlementmanagementsettings-update.md
-              - name: Управление привилегированными пользователями
+              - name: Служба Privileged Identity Management
                 items:
-                  - name: Управление привилегированными пользователями
+                  - name: Служба Privileged Identity Management
                     href: resources/privilegedidentitymanagement-root.md
                   - name: Azure AD
                     items:
@@ -11006,7 +11013,7 @@ items:
                     href: api/educationalactivity-update.md
                   - name: Удаление
                     href: api/educationalactivity-delete.md
-              - name: Адрес электронной почты
+              - name: адрес электронной почты;
                 items:
                   - name: Электронная почта элемента
                     href: resources/itememail.md

@@ -4830,6 +4830,14 @@ items:
                 href: api/team-get.md
               - name: Обновление объекта команды
                 href: api/team-update.md
+              - name: Удаление команды
+                href: api/group-delete.md
+              - name: Список участников
+                href: api/team-list-members.md
+              - name: Добавление участников
+                href: api/team-post-members.md
+              - name: Удаление участников
+                href: api/team-delete-members.md
               - name: Архивация объекта команды
                 href: api/team-archive.md
               - name: Распаковка объекта команды
