@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 831a873d245424bcb92c7281b1bbdc97b29223bf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 71c22c86d2ebbb02587a20355adb1d461479297d
+ms.sourcegitcommit: 3c0fa2d13ede0fdfa66d966d4ec32cb468c3befa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075562"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48273580"
 ---
 # <a name="term-resource-type"></a>Тип ресурса термина
 
@@ -18,7 +18,7 @@ ms.locfileid: "48075562"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет термин, используемый в [банке]терминов. Термин можно использовать для представления объекта, который затем можно использовать в качестве метаданных для тега конент. Несколько терминов можно организовать иерархически в пределах [набора].
+Представляет термин, используемый в [банке]терминов. Термин можно использовать для представления объекта, который затем можно использовать в качестве метаданных для контента. Несколько терминов можно организовать иерархически в пределах [набора].
 
 Наследуется от [объекта Entity](../resources/entity.md).
 
@@ -43,7 +43,7 @@ ms.locfileid: "48075562"
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения термина. Только для чтения|
 |properties|Коллекция [Microsoft. Graph. ключзначение](../resources/keyvalue.md)|Коллекция свойств термина|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |children|Коллекция [Microsoft. Graph. Банк терминов Microsoft. Graph.](../resources/termstore-term.md)|Дочерние элементы текущего термина|
@@ -84,7 +84,7 @@ ms.locfileid: "48075562"
 }
 ```
 
-[store]: ../resources/termstore-store.md
+[восстановлен]: ../resources/termstore-store.md
 [set]: ../resources/termstore-set.md
 [term]: ../resources/termstore-term.md
 [group]: ../resources/termstore-group.md
