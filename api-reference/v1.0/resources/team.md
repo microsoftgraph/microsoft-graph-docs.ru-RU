@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 892d9bedb188ea0a39a611fdb207248958624f28
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cda0768321c793a35b6c72bbb6906c6d8aeaff31
+ms.sourcegitcommit: 3c0fa2d13ede0fdfa66d966d4ec32cb468c3befa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056431"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48273706"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -34,14 +34,15 @@ ms.locfileid: "48056431"
 |[Получение команды](../api/team-get.md) | [team](team.md) | Получение свойств и связей указанной команды.|
 |[Обновление команды](../api/team-update.md) | [team](team.md) |Обновление свойств указанной команды. |
 |[Удаление команды](/graph/api/group-delete?view=graph-rest-1.0) | Нет |Удаление команды и ее связанной группы. |
-|[Клонирование команды](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Копирование команды и ее связанной группы. |
+|[Перечисление участников](../api/team-list-members.md)|Коллекция [conversationMember](../resources/conversationmember.md)|Получение списка conversationMembers из свойства навигации members.|
+|[Добавление участников](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Добавление нового участника.|
+|[Удаление участников](../api/team-delete-members.md)|Нет|Удаление объекта [conversationMember](../resources/conversationmember.md).|
+|[Изменение роли участника](/graph/api/conversationmember-update?view=graph-rest-beta&tabs=http)|[conversationMember](../resources/conversationmember.md)|Перевод пользователя из категории участников в категорию владельцев или наоборот, из категории владельцев в категорию обычных участников.|
 |[Архивация команды](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Перевод команды в состояние только для чтения. |
 |[Распаковка команды](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Восстановление команды в состояние чтения и записи. |
+|[Клонирование команды](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Копирование команды и ее связанной группы. |
 |[Перечисление ваших команд](../api/user-list-joinedteams.md) | Коллекция [team](team.md) | Перечисление команд, в которых вы являетесь участником. |
 |[Перечисление всех команд](/graph/teams-list-all-teams) | Коллекция [group](group.md) | Перечисление всех групп, содержащих команды. |
-|[Публикация приложений в организации](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | Создание приложений Teams, видимых только для вашей организации. |
-|[Добавление приложения в команду](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | Добавляет (устанавливает) приложение в команду.|
-|[Добавление вкладки в канал](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Добавляет (устанавливает) вкладку в канал команды.|
 
 ## <a name="properties"></a>Свойства
 
