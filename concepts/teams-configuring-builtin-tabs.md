@@ -4,12 +4,12 @@ description: Создание или настройка вкладки Microsoft
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ec60248bc43c21e476c56b768af4644298b34ae5
-ms.sourcegitcommit: a1a57e803c334e11316dd571ad1b54c95406740e
+ms.openlocfilehash: 888194fefef2e04f60ae802d5f8d710ba4388a97
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44413485"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288933"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Настройка встроенных типов вкладок в Microsoft Teams
 
@@ -18,9 +18,9 @@ ms.locfileid: "44413485"
 
 ## <a name="custom-tabs"></a>Настраиваемые вкладки
 
-Чтобы использовать Microsoft Graph для настройки вкладки, связанной с [поставщиком вкладок](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview), которого вы записали, определите значения `entityId`, `contentUrl`, `removeUrl` и `websiteUrl`, предоставляемые [интерфейсом конфигурации приложения для Microsoft Teams](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest), и передайте эти же значения `entityId`, `contentUrl`, `removeUrl` и `websiteUrl` в Microsoft Graph.
+Чтобы использовать Microsoft Graph для настройки вкладки, связанной с [поставщиком вкладок](/microsoftteams/platform/concepts/tabs/tabs-overview), которого вы записали, определите значения `entityId`, `contentUrl`, `removeUrl` и `websiteUrl`, предоставляемые [интерфейсом конфигурации приложения для Microsoft Teams](/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest), и передайте эти же значения `entityId`, `contentUrl`, `removeUrl` и `websiteUrl` в Microsoft Graph.
 
-Объект `teamsAppId` аналогичен `id` в [схеме манифеста приложения для Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema).
+Объект `teamsAppId` аналогичен `id` в [схеме манифеста приложения для Microsoft Teams](/microsoftteams/platform/resources/schema/manifest-schema).
 
 ## <a name="website-tabs"></a>Вкладки веб-сайтов
 
@@ -28,9 +28,9 @@ ms.locfileid: "44413485"
 
 | Свойство   | Тип        | Описание                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | string      | Null                                                     |
+| entityId   | string      | NULL                                                     |
 | contentUrl | строка      | URL-адрес веб-сайта                                       |
-| removeUrl  | string      | NULL                                                     |
+| removeUrl  | строка      | NULL                                                     |
 | websiteUrl | строка      | URL-адрес веб-сайта                                       |
 
 ## <a name="word-excel-powerpoint-and-pdf-tabs"></a>Вкладки Word, Excel, PowerPoint и PDF
@@ -50,7 +50,7 @@ ms.locfileid: "44413485"
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | Идентификатор sourceDoc для файла. Вы найдете его, открыв файл в SharePoint и посмотрев на адресную строку — URL-адрес будет иметь предложение `sourcedoc=%7B{sourceDocId}%7D`. Вы также можете получить эти данные из webUrl адреса элемента диска SharePoint для документа. Дополнительные сведения см.[GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
 | contentUrl | string      | URL-адрес документ в формате `{folder-webUrl}/{item-name}`. {folder-webUrl} - это webUrl адрес папки SharePoint, содержащей файл, который можно найти путем открытия файла в SharePoint и просмотра адресной строки, либо с помощью свойства webUrl из [GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get?view=graph-rest-beta). {item-name} соответствует имени файла (например, file.docx), которое является свойством `name` в [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
-| removeUrl  | string      | NULL                                                     |
+| removeUrl  | строка      | NULL                                                     |
 | websiteUrl | string      | Null                                       |
 
 ### <a name="example-create-a-configured-word-tab"></a>Пример: создание настроенной вкладки Word
@@ -79,7 +79,7 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | Пустая строка ("")                                        |
 | contentUrl | string      | URL-адрес корневой папки библиотеки документов. Этот URL-адрес можно найти, открыв папку SharePoint в браузере, скопировав URL-адрес и удалив "/Формс/аллитемс.аспкс" и все после этого. |
-| removeUrl  | string      | NULL                                                     |
+| removeUrl  | строка      | NULL                                                     |
 | websiteUrl | string      | Null                                                     |
 
 ### <a name="example-create-a-configured-document-library-tab"></a>Пример: создание настроенной вкладки библиотеки документов

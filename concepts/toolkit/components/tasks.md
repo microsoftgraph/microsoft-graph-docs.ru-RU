@@ -3,22 +3,22 @@ title: Компонент Tasks в наборе инструментов Microso
 description: Компонент Tasks позволяет пользователю просматривать, добавлять, удалять, выполнять или изменять задачи. Она работает с любой из задач в планировщике (Майкрософт) или в Microsoft.
 localization_priority: Normal
 author: benotter
-ms.openlocfilehash: cfd248ca7cb240cd724b8df863383b308121db4b
-ms.sourcegitcommit: 1bc5a0c179dce57e90349610566fb86e1b5fbf95
+ms.openlocfilehash: 54e72c5756eb029d7219c07a591c956207a1c0e6
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/04/2020
-ms.locfileid: "43144277"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288562"
 ---
 # <a name="tasks-component-in-the-microsoft-graph-toolkit"></a>Компонент Tasks в наборе инструментов Microsoft Graph
 
 Компонент Tasks позволяет пользователю просматривать, добавлять, удалять, выполнять или изменять задачи. Она работает с задачами в планировщике (Майкрософт) или в Microsoft.  
 
-Кроме того, пользователь может назначить одну или несколько пользователей Microsoft Graph для задачи. Более подробную информацию о назначениях Microsoft Graph можно узнать в разделе [планнерассигнментс](https://docs.microsoft.com/graph/api/resources/plannerassignments?view=graph-rest-1.0).
+Кроме того, пользователь может назначить одну или несколько пользователей Microsoft Graph для задачи. Более подробную информацию о назначениях Microsoft Graph можно узнать в разделе [планнерассигнментс](/graph/api/resources/plannerassignments?view=graph-rest-1.0).
 
 ## <a name="example"></a>Пример
 
-В следующем примере отображаются задачи планировщика Microsoft, вошедшего в систему, с `mgt-tasks` помощью компонента. С помощью редактора кода можно увидеть, как [Свойства](#properties) изменяют поведение компонента.
+В следующем примере отображаются задачи планировщика Microsoft, вошедшего в систему, с помощью `mgt-tasks` компонента. С помощью редактора кода можно увидеть, как [Свойства](#properties) изменяют поведение компонента.
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-tasks--tasks&source=docs" height="500"></iframe>
 
@@ -126,7 +126,7 @@ mgt-tasks {
 
 ## <a name="templates"></a>Шаблоны
 
-`tasks` Компонент поддерживает несколько [шаблонов](../templates.md) , позволяющих заменить определенные части компонента. Чтобы указать шаблон, включите `<template>` элемент в компонент и задайте для него `data-type` одно из следующих значений:
+`tasks`Компонент поддерживает несколько [шаблонов](../templates.md) , позволяющих заменить определенные части компонента. Чтобы указать шаблон, включите элемент в `<template>` компонент и задайте `data-type` для него одно из следующих значений:
 
 | Тип данных     | Контекст данных              | Описание                                                       |
 | ---------     | ------------------------- | ----------------------------------------------------------------- |

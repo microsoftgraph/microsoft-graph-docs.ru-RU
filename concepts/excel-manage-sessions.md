@@ -4,12 +4,12 @@ description: Если приложению нужно вызывать API Excel
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: c3dda46a41c5c300642fb00bb1e96847bc9ebc92
-ms.sourcegitcommit: 4a37678913c98f62b8174de6ca03908b9af864bd
+ms.openlocfilehash: 488637f53ffc1298420d40e93f3f5d9fd7a0b518
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47296549"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289227"
 ---
 # <a name="manage-sessions-and-persistence-in-excel-with-microsoft-graph"></a>Управление сеансами и хранением данных в Excel с помощью Microsoft Graph
 
@@ -29,7 +29,7 @@ API Excel вызываются в одном из трех режимов:
 Рекомендуемая [Обработка ошибок](workbook-error-handling.md) для API Excel основана на типе запроса, коде ошибки и коде состояния. Ниже приведены типы запросов.
 
 - **Креатесессион Request** — используется для создания постоянного или непостоянного сеанса. В ответе на Успешный ответ идентификатор сеанса возвращается в свойстве **ID** в тексте отклика. Подробнее: [CREATE SESSION](/graph/api/workbook-createsession?view=graph-rest-1.0).
-- Запросы, выполняемые при **запросе с запросом** , которые следуют за запросом креатесессион. Обычно они содержат `workbook-session-id: {session-id}` заголовок. Исключением является запрос состояния опроса, который использует долгосрочный шаблон операции. Дополнительные сведения см. в статье [Работа с API, для выполнения которых требуется длительное время](/graph/workbook-best-practice#working-with-apis-that-take-a-long-time-to-complete).
+- Запросы, выполняемые при **запросе с запросом** , которые следуют за запросом креатесессион. Обычно они содержат `workbook-session-id: {session-id}` заголовок. Исключением является запрос состояния опроса, который использует долгосрочный шаблон операции. Дополнительные сведения см. в статье [Работа с API, для выполнения которых требуется длительное время](./workbook-best-practice.md#working-with-apis-that-take-a-long-time-to-complete).
 - **Запрос с Несеансом** используется в режиме, не поддерживающем сеансы. В этих запросах нет `workbook-session-id: {session-id}` заголовка.  
 
 ## <a name="next-steps"></a>Дальнейшие действия

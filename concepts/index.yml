@@ -11,26 +11,26 @@ metadata:
   ms.date: 02/28/2020
   featureFlags:
   - clicktale
-  ms.openlocfilehash: 5c4b9c744c32e57da058857a49c1c31b216e0944
-  ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+  ms.openlocfilehash: 5683fcb0ab57d1541a53a547c815341ca8fcfb71
+  ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 09/18/2020
-  ms.locfileid: "48009102"
+  ms.lasthandoff: 09/26/2020
+  ms.locfileid: "48289122"
 highlightedContent:
   items:
   - title: Обзор Microsoft Graph
     itemType: overview
-    url: /graph/overview
+    url: ./overview.md
   - title: Службы и компоненты
     itemType: concept
-    url: /graph/overview-major-services
+    url: ./overview-major-services.md
   - title: Песочница Graph
     itemType: deploy
     url: https://developer.microsoft.com/graph/graph-explorer/
   - title: Новые возможности Microsoft Graph
     itemType: overview
-    url: /graph/whats-new-overview
+    url: ./whats-new-overview.md
   - title: REST API Microsoft Graph версии 1.0
     itemType: reference
     url: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
@@ -41,53 +41,53 @@ conceptualContent:
   items:
   - title: Обзор
     links:
-    - url: /graph/users-you-can-reach
+    - url: ./users-you-can-reach.md
       itemType: concept
       text: Пользователи, с которыми вы можете связаться
-    - url: /graph/data-connect-overview
+    - url: ./data-connect-overview.md
       itemType: concept
       text: Подключение к данным Microsoft Graph
     - url: https://developer.microsoft.com/graph/quick-start
       itemType: quickstart
       text: Примеры использования
-    - url: /graph/tutorials
+    - url: ./tutorials.yml
       itemType: tutorial
       text: Учебники
   - title: Узнать
     links:
-    - url: /graph/azuread-users-concept-overview
+    - url: ./azuread-users-concept-overview.md
       itemType: overview
       text: Пользователи
-    - url: /graph/teams-concept-overview
+    - url: ./teams-concept-overview.md
       itemType: overview
       text: Командная работа
-    - url: /graph/onedrive-concept-overview
+    - url: ./onedrive-concept-overview.md
       itemType: overview
       text: Файлы
-    - url: /graph/outlook-calendar-concept-overview
+    - url: ./outlook-calendar-concept-overview.md
       itemType: overview
       text: Календарь
-    - url: /graph/outlook-mail-concept-overview
+    - url: ./outlook-mail-concept-overview.md
       itemType: overview
       text: Почта
-    - url: /graph/azuread-identity-access-management-concept-overview
+    - url: ./azuread-identity-access-management-concept-overview.md
       itemType: overview
       text: Удостоверение и доступ
   - title: Разработка
     links:
-    - url: /graph/auth/auth-concepts
+    - url: ./auth/auth-concepts.md
       itemType: concept
       text: Получение маркеров аутентификации
-    - url: https://docs.microsoft.com/en-us/graph/use-the-api
+    - url: ./use-the-api.md
       itemType: overview
       text: Использование API
-    - url: /graph/migrate-azure-ad-graph-planning-checklist
+    - url: ./migrate-azure-ad-graph-planning-checklist.md
       itemType: overview
       text: Миграция
-    - url: /graph/sdks/sdks-overview
+    - url: ./sdks/sdks-overview.md
       itemType: overview
       text: Использование пакетов SDK
-    - url: /graph/toolkit/overview
+    - url: ./toolkit/overview.md
       itemType: overview
       text: Использование набора средств
 additionalContent:
@@ -96,10 +96,10 @@ additionalContent:
     items:
     - title: Журнал изменений
       summary: Сведения об изменениях в версиях 1.0 и бета-версиях API Microsoft Graph.
-      url: /graph/changelog
+      url: ./changelog.md
     - title: Известные проблемы
       summary: Сведения об известных проблемах, связанных с Microsoft Graph
-      url: /graph/known-issues
+      url: ./known-issues.md
     - title: Поддержка
       summary: Задайте вопрос или поделитесь своим мнением об интерфейсах API или документах.
       url: https://developer.microsoft.com/graph/support

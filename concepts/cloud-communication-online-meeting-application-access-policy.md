@@ -4,12 +4,12 @@ description: Узнайте, как настроить приложения дл
 author: frankpeng7
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: 8f0738d282cfe012b90293b067c87ab7dc284f9e
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: fc96bd7958fd2729c9222bdb88b50fb04608732a
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843347"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289465"
 ---
 # <a name="allow-applications-to-access-online-meetings-on-behalf-of-a-user"></a>Разрешение приложениям получать доступ к собраниям по сети от имени пользователя
 
@@ -28,7 +28,7 @@ ms.locfileid: "47843347"
     - Определите идентификатор приложения (клиента) на [портале регистрации приложений Azure](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
     - Определение идентификатора пользователя (объекта) пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)
 
-2. Подключитесь к Skype для бизнеса PowerShell с помощью учетной записи админитратор. Дополнительные сведения: [Управление Skype для бизнеса Online с помощью PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell).
+2. Подключитесь к Skype для бизнеса PowerShell с помощью учетной записи админитратор. Дополнительные сведения: [Управление Skype для бизнеса Online с помощью PowerShell](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell).
 
 3. Создайте политику доступа к приложениям, содержащую список идентификаторов приложений.
 
@@ -58,7 +58,7 @@ ms.locfileid: "47843347"
 - OnlineMeetings.Read.All
 - OnlineMeetings.ReadWrite.All
 
-Дополнительные сведения о настройке политики доступа приложения см. в справочнике по командлету PowerShell [New-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/new-csapplicationaccesspolicy).
+Дополнительные сведения о настройке политики доступа приложения см. в справочнике по командлету PowerShell [New-ApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy).
 
 ## <a name="errors"></a>Ошибки
 
@@ -82,8 +82,8 @@ ms.locfileid: "47843347"
 ## <a name="see-also"></a>См. также
 
 - [Справочник по разрешениям](permissions-reference.md)
-- [New-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/new-csapplicationaccesspolicy)
-- [Granting — Аппликатионакцессполици](https://docs.microsoft.com/powershell/module/skype/grant-csapplicationaccesspolicy)
-- [Get-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/get-csapplicationaccesspolicy)
-- [Set-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/set-csapplicationaccesspolicy)
-- [Remove-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/skype/remove-csapplicationaccesspolicy)
+- [New-ApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy)
+- [Granting — Аппликатионакцессполици](/powershell/module/skype/grant-csapplicationaccesspolicy)
+- [Get-ApplicationAccessPolicy](/powershell/module/skype/get-csapplicationaccesspolicy)
+- [Set-ApplicationAccessPolicy](/powershell/module/skype/set-csapplicationaccesspolicy)
+- [Remove-ApplicationAccessPolicy](/powershell/module/skype/remove-csapplicationaccesspolicy)

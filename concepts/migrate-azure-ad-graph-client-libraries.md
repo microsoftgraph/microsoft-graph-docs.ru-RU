@@ -4,12 +4,12 @@ description: Описывается перенос приложений API Azur
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: 757a8d43b3a0729e4d791c7a4f4f85640af87274
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 7fea43e808d14f2d80dc01690055257908f7fe18
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872952"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288359"
 ---
 # <a name="migrate-net-client-library-use-to-microsoft-graph"></a>Миграция использования клиентской библиотеки .NET в Microsoft Graph
 
@@ -28,7 +28,7 @@ ms.locfileid: "46872952"
 
 ## <a name="overview-of-the-migration-steps"></a>Обзор этапов миграции
 
-В следующих шагах предполагается, что ваше приложение уже использует ADAL для получения маркеров доступа для вызова Azure AD Graph, и теперь вы будете продолжать использовать ADAL. Переключение на MSAL можно выполнить в отдельном действии, описанном в статье [Переход на MSAL](/graph/migrate-azure-ad-graph-authentication-library#migrate-to-msal).
+В следующих шагах предполагается, что ваше приложение уже использует ADAL для получения маркеров доступа для вызова Azure AD Graph, и теперь вы будете продолжать использовать ADAL. Переключение на MSAL можно выполнить в отдельном действии, описанном в статье [Переход на MSAL](./migrate-azure-ad-graph-authentication-library.md#migrating-to-msal).
 
 1. Чтобы получить маркер доступа к Microsoft Graph, обновите **resourceurl экземпляром** с " `https://graph.windows.net` на" `https://graph.microsoft.com` .
 
@@ -157,5 +157,5 @@ ms.locfileid: "46872952"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Узнайте, как [развертывать, тестировать и расширять](/graph/migrate-azure-ad-graph-deploy-test-extend) приложения, перенесенные в Microsoft Graph.
+- Узнайте, как [развертывать, тестировать и расширять](./migrate-azure-ad-graph-deploy-test-extend.md) приложения, перенесенные в Microsoft Graph.
 - Снова просмотрите [Контрольный список](migrate-azure-ad-graph-planning-checklist.md) .

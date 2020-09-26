@@ -5,19 +5,19 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 8008abbfa10bbc0c7267384c66afc7c7c1c1c328
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8c44856d97ceb0986e6cab71d4be4d0ef62ee0b6
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055724"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288702"
 ---
 # <a name="create-relation"></a>Создание отношения
 Пространство имен: Microsoft. Graph. банка
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [связи](../resources/termstore-relation.md) . Они используются для создания закрепленных и ресуед связей между терминами или между термином и набором. При создании закрепленного/повторно используемого термина между термином и set значение Фромтерм в тексте POST должно иметь значение null.
+Создание объекта [связи](../resources/termstore-relation.md) . Они используются для создания закрепленных и повторно используемых отношений между терминами или между термином и набором. При создании закрепленного/повторно используемого термина между термином и set значение Фромтерм в тексте POST должно иметь значение null.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).

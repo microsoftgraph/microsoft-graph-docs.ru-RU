@@ -4,12 +4,12 @@ description: Сведения о том, как запросы Microsoft Graph �
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: c4255b31f7825df3b9c0d3d44e7003e27e72b6a8
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: ae393192961c61890e7dc3963a82727b6aea0557
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46873393"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289108"
 ---
 # <a name="request-differences-between-azure-ad-graph-and-microsoft-graph"></a>Запрос различий между Azure AD Graph и Microsoft Graph
 
@@ -101,8 +101,8 @@ https://graph.microsoft.com/v1.0/me/?$select=displayName,streetAddress,city,stat
 Дополнительные сведения:
 
 - Свойства по умолчанию для пользователя, обратитесь к разделу [Пользователи](/graph/api/resources/users?view=graph-rest-1.0)
-- `$select`Параметр и другие поддерживаемые параметры запроса ODATA в разделе [Использование параметров запроса для настройки ответов](/graph/query-parameters).
-- Эта и другие Рекомендуемые [оптимизации приведены в разделе рекомендации.](/graph/best-practices-concept)
+- `$select`Параметр и другие поддерживаемые параметры запроса ODATA в разделе [Использование параметров запроса для настройки ответов](./query-parameters.md).
+- Эта и другие Рекомендуемые [оптимизации приведены в разделе рекомендации.](./best-practices-concept.md)
 
 ## <a name="relationships-and-navigation-properties"></a>Отношения и свойства навигации
 
@@ -127,4 +127,3 @@ https://graph.microsoft.com/v1.0/me/?$select=displayName,streetAddress,city,stat
 
 - Сведения о [различиях функций служб](migrate-azure-ad-graph-feature-differences.md) в Azure AD Graph и Microsoft Graph.
 - Снова просмотрите [Контрольный список](migrate-azure-ad-graph-planning-checklist.md) .
-

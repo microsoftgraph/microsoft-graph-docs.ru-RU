@@ -4,12 +4,12 @@ description: Перед отправкой упреждающего сообще
 author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 76b7527a961cc3aa5e78b30ff740cbda90d1c63c
-ms.sourcegitcommit: 2856a818ef3be0d4cfcbc9253906603bcc3d6325
+ms.openlocfilehash: dafd70f1d741f15b2cfe52efe7f0a4942f06f3bd
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45435056"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288940"
 ---
 # <a name="proactive-messaging-using-a-bot-in-microsoft-teams"></a>Упреждающий обмен сообщениями с помощью Bot в Microsoft Teams
 
@@ -25,7 +25,7 @@ ms.locfileid: "45435056"
 
 ## <a name="create-your-teams-app-and-bot"></a>Создание приложения Teams и программы Bot
 
-Если у вас еще нет приложения Microsoft Teams с роботом, который может отправить сообщение, необходимо создать его. В документации по платформе Teams вы можете ознакомиться с разделом [Add Боты to Apps to Teams](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-overview) . Сведения о создании почтового робота для упреждающего обмена сообщениями можно узнать в статье [профилактической системы обмена сообщениями для Боты](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-proactive).
+Если у вас еще нет приложения Microsoft Teams с роботом, который может отправить сообщение, необходимо создать его. В документации по платформе Teams вы можете ознакомиться с разделом [Add Боты to Apps to Teams](/microsoftteams/platform/concepts/bots/bots-overview) . Сведения о создании почтового робота для упреждающего обмена сообщениями можно узнать в статье [профилактической системы обмена сообщениями для Боты](/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-proactive).
 
 Вы также можете использовать [шаблон приложения Communicator компании](https://github.com/OfficeDev/microsoft-teams-company-communicator-app) в качестве хорошей отправной точки для вашего приложения. Этот шаблон приложения — это готовое приложение Microsoft Teams, которое может создавать, планировать и распространять сообщения всей компании.
 
@@ -35,7 +35,7 @@ ms.locfileid: "45435056"
 
 ## <a name="deploy-your-app-to-your-tenant-app-catalog"></a>Развертывание приложения в каталоге приложений клиента
 
-Microsoft Graph может устанавливать только приложения, добавленные в каталог приложений клиента, или доступные в общедоступном магазине приложений Microsoft Teams. При работе с новым приложением необходимо убедиться в том, что он является [каталогом приложений клиента](https://docs.microsoft.com/microsoftteams/platform/publishing/apps-publish#microsoft-teams-tenant-app-catalog).
+Microsoft Graph может устанавливать только приложения, добавленные в каталог приложений клиента, или доступные в общедоступном магазине приложений Microsoft Teams. При работе с новым приложением необходимо убедиться в том, что он является [каталогом приложений клиента](/microsoftteams/platform/publishing/apps-publish#microsoft-teams-tenant-app-catalog).
 
 ## <a name="install-the-app-for-your-users"></a>Установка приложения для пользователей
 
@@ -70,7 +70,7 @@ POST /users/{user-id}/teamwork/installedApps
 
 ## <a name="get-the-chat-thread-id"></a>Получение идентификатора потока чата
 
-Когда приложение устанавливается для пользователя, Bot получит `conversationUpdate` событие, которое будет содержать необходимые сведения для отправки упреждающего сообщения. Дополнительные сведения: [события Bot](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bots-notifications).
+Когда приложение устанавливается для пользователя, Bot получит `conversationUpdate` событие, которое будет содержать необходимые сведения для отправки упреждающего сообщения. Дополнительные сведения: [события Bot](/microsoftteams/platform/concepts/bots/bots-notifications).
 
 Если вы потеряли его `chatThreadId` , вы сможете снова найти его, вызвав:
 
@@ -82,7 +82,7 @@ GET /users/{user-id}/chats?$filter=installedApps/any(a:a/teamsApp/id eq '{teamsA
 
 ## <a name="sending-the-message"></a>Отправка сообщения
 
-Теперь, когда у ленты есть необходимые сведения, вы можете [Отправить упреждающее сообщение](https://docs.microsoft.com/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-proactive).
+Теперь, когда у ленты есть необходимые сведения, вы можете [Отправить упреждающее сообщение](/microsoftteams/platform/concepts/bots/bot-conversations/bots-conv-proactive).
 
 ## <a name="c-sample"></a>Пример кода на языке C#
 

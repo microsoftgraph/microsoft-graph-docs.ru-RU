@@ -3,12 +3,12 @@ title: Использование пакетов SDK Microsoft Graph с бета
 description: Описание использования пакетов SDK Microsoft Graph с бета-версией API.
 localization_priority: Normal
 author: jasonjoh
-ms.openlocfilehash: a384384b4172a835160cf12b8e1fb0c06edc7fe7
-ms.sourcegitcommit: ae2e4b8963edcdcc8ce572c06a531db4769d7779
+ms.openlocfilehash: 6a0444cdb30b2e07c4d93f683aaef2f5283c3846
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47312201"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288968"
 ---
 # <a name="use-the-microsoft-graph-sdks-with-the-beta-api"></a>Использование пакетов SDK Microsoft Graph с бета-версией API
 
@@ -55,6 +55,13 @@ GraphServiceClient graphClient = new GraphServiceClient(...);
 # <a name="java"></a>[Java](#tab/Java)
 
 Для вызова бета-версии API необходимо установить [пакет SDK Java для бета-версии Microsoft Graph](https://github.com/microsoftgraph/msgraph-beta-sdk-java). Использование совпадает с небета-версией пакета SDK.
+
+```Java
+IGraphServiceClient graphClient = GraphServiceClient
+                .builder()
+                .authenticationProvider(authProvider)
+                .buildClient();
+```
 
 # <a name="objective-c"></a>[Objective-C](#tab/Objective-C)
 

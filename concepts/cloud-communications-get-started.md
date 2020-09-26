@@ -4,12 +4,12 @@ description: Узнайте, как можно использовать боты
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
-ms.openlocfilehash: ae04e60079a789125dd6a818c19ec625eaac1443
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 4a5decb1b9415e2e57297d253bc56236b357080a
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40871669"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289381"
 ---
 # <a name="get-started-with-cloud-communications"></a>Начало работы с облачными подключениями
 
@@ -19,16 +19,16 @@ API облачных коммуникаций в Microsoft Graph добавля�
 
 Беоре вы приступите к работе, вам будет полезно ознакомиться со следующими статьями:
 
-- [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD) и как служба помогает сотрудникам входить в систему и получать доступ к ресурсам.
-- [Служба Azure Bot](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-3.0) и ее возможности.
+- [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD) и как служба помогает сотрудникам входить в систему и получать доступ к ресурсам.
+- [Служба Azure Bot](/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-3.0) и ее возможности.
 
 ## <a name="register-a-bot"></a>Регистрация Bot
 
 Термины "приложение службы" и "bot" можно использовать в качестве взаимозаменяемых. Вы можете самостоятельно создать объект Bot через [портал Azure](https://azure.microsoft.com/features/azure-portal/) или зарегистрировать Bot, который не размещен в Azure. Более подробную информацию о процессе регистрации Bot можно узнать в статье [регистрация абонентского робота](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html). 
 
-Чтобы упростить работу в дальнейшем, полезно знать о различных [типах разрешений](https://docs.microsoft.com/azure/active-directory/develop/v1-permissions-and-consent#types-of-permissions) в Azure AD. Приложениям с делегированными разрешениями необходимо войти в систему пользователя. Для разрешений на основе приложения пользователь, вошедшего в систему, часто может работать в качестве фоновой службы.
+Чтобы упростить работу в дальнейшем, полезно знать о различных [типах разрешений](/azure/active-directory/develop/v1-permissions-and-consent#types-of-permissions) в Azure AD. Приложениям с делегированными разрешениями необходимо войти в систему пользователя. Для разрешений на основе приложения пользователь, вошедшего в систему, часто может работать в качестве фоновой службы.
 
-Если вы хотите [Добавить Bot в Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot), вы можете узнать, как использовать [app Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-app-studio) и определить необходимые метаданные.
+Если вы хотите [Добавить Bot в Microsoft Teams](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot), вы можете узнать, как использовать [app Studio](/microsoftteams/platform/get-started/get-started-app-studio) и определить необходимые метаданные.
 
 ## <a name="manage-the-state-of-the-bot"></a>Управление состоянием Bot
 

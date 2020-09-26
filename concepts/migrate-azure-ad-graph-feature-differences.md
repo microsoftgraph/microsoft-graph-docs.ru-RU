@@ -4,12 +4,12 @@ description: Описание различий между функциями API
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: 34cbf88ed5fc1f6fe2cba9df3fdb0167630d120e
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 61dd6da095c106c2a7eae68097c7be084b3a87ba
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872931"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288793"
 ---
 # <a name="feature-differences-between-azure-ad-graph-and-microsoft-graph"></a>Различия между функциями Azure AD Graph и Microsoft Graph
 
@@ -34,7 +34,7 @@ ms.locfileid: "46872931"
 - Обновление значений расширений с помощью PATCH
 - Удаление значений расширений с помощью PATCH (устанавливается в **значение NULL**)
 
-Microsoft Graph предоставляет расширенные возможности для разработчиков расширений схемы, которые в настоящее время не совместимы с расширениями каталогов Azure AD Graph. Чтобы узнать больше, ознакомьтесь с разрешениями [в разделе Добавление пользовательских данных в расширениях схемы](/graph/extensibility-overview#schema-extensions).
+Microsoft Graph предоставляет расширенные возможности для разработчиков расширений схемы, которые в настоящее время не совместимы с расширениями каталогов Azure AD Graph. Чтобы узнать больше, ознакомьтесь с разрешениями [в разделе Добавление пользовательских данных в расширениях схемы](./extensibility-overview.md#schema-extensions).
 
 ### <a name="recommended-migration-approach"></a>Рекомендуемый подход к миграции
 
@@ -60,7 +60,7 @@ Microsoft Graph предоставляет расширенные возможн
 
 Azure AD Graph и Microsoft Graph позволяют отслеживать изменения с помощью запросов.  Высокоуровневый подход похож на два API, но синтаксис отличается.
 
-Graph Azure AD вызывает эти разностные запросы.  В Microsoft Graph они являются [разностными запросами](/graph/delta-query-overview).
+Graph Azure AD вызывает эти разностные запросы.  В Microsoft Graph они являются [разностными запросами](./delta-query-overview.md).
 
 В следующей таблице представлены основные сходства и различия:
 

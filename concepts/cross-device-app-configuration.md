@@ -3,12 +3,12 @@ title: 'Создание приложений для нескольких уст
 description: 'С помощью Project Rome вы можете создавать решения, которые одинаково легко использовать на различных устройствах и платформах, избавляя пользователей от лишних сложностей и повышая взаимодействие с приложением. Чтобы приложения могли обмениваться данными между устройствами и платформами с помощью API Project Rome, необходимо настроить приложение для нескольких устройств, включающее сведения о приложениях для определенных платформ. '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 93f171278eb892cb31712738c0e2249eb7d2f353
-ms.sourcegitcommit: ef8eac3cf973a1971f8f1d41d75a085fad3690f0
+ms.openlocfilehash: 7c1b93afa9f239d170475fea776bdc89e7170b0d
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "37969852"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289346"
 ---
 # <a name="build-cross-device-apps-powered-by-project-rome"></a>Создание приложений для нескольких устройств на платформе Project Rome 
 
@@ -70,14 +70,14 @@ ms.locfileid: "37969852"
 
 Чтобы найти идентификаторы:
 
-* **windows_universal** — укажите AUMID для каждого приложения UWP. Дополнительные сведения см. в статьях [Определение идентификатора модели пользователя для установленного приложения (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)) и [Application](https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-application).
-* **windows_win32** — укажите AUMID для каждого приложения. Чтобы получить эти сведения для приложений Win32, необходимо использовать скрипт. Дополнительные сведения см. в статье [Определение идентификатора модели пользователя установленного приложения (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **windows_universal** — укажите AUMID для каждого приложения UWP. Дополнительные сведения см. в статьях [Определение идентификатора модели пользователя для установленного приложения (Industry 8.1)](/previous-versions/windows/embedded/dn449300(v=winembedded.82)) и [Application](/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** — укажите AUMID для каждого приложения. Чтобы получить эти сведения для приложений Win32, необходимо использовать скрипт. Дополнительные сведения см. в статье [Определение идентификатора модели пользователя установленного приложения (Industry 8.1)](/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
 * **android** — дополнительные сведения см. в разделе [Изменение имени пакета](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **ios** — дополнительные сведения см. в статьях [Bundle](https://developer.apple.com/documentation/foundation/bundle) и [Обязательные, локализуемые и редактируемые свойства](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** — войдите на [портал регистрации приложений](https://apps.dev.microsoft.com). Вы можете просмотреть идентификатор приложения или клиента для любого приложения. Поддерживаются как идентификаторы Live SDK (шестнадцатеричные значения), так и конвергированные идентификаторы приложений (GUID).   
 
 ### <a name="step-3-configure-support-for-microsoft-account-or-azure-ad"></a>Шаг 3. Настройте поддержку учетных записей Майкрософт или Azure AD
-Чтобы включить поддержку работы на нескольких устройствах, пользователи приложения должны входить с помощью  [учетной записи Майкрософт](https://account.microsoft.com/account)  или  [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-developers-guide)  (Azure AD). Вы укажете идентификаторы приложений и клиентов для поддержки аутентификации в конфигурации приложения для нескольких устройств, чтобы включить поддержку кроссплатформенной работы. Можно указать до 10 экземпляров.
+Чтобы включить поддержку работы на нескольких устройствах, пользователи приложения должны входить с помощью  [учетной записи Майкрософт](https://account.microsoft.com/account)  или  [Azure Active Directory](/azure/active-directory/develop/active-directory-developers-guide)  (Azure AD). Вы укажете идентификаторы приложений и клиентов для поддержки аутентификации в конфигурации приложения для нескольких устройств, чтобы включить поддержку кроссплатформенной работы. Можно указать до 10 экземпляров.
 
 Вы можете определить идентификаторы имеющихся приложений и клиентов или подготовить новые, войдя на [портал регистрации приложений](https://apps.dev.microsoft.com) с помощью учетной записи разработчика. После входа на портал вы сможете просмотреть идентификатор приложения или клиента для любого приложения. Поддерживаются как идентификаторы Live SDK (шестнадцатеричные значения), так и конвергированные идентификаторы приложений (GUID).   
 
@@ -96,7 +96,7 @@ ms.locfileid: "37969852"
 Чтобы найти идентификаторы:
 
 * 
-  **Windows Notification Service** — см. раздел [Регистрация приложения и получение учетных данных для облачной службы](https://docs.microsoft.com/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) и посетите [портал регистрации приложений](https://apps.dev.microsoft.com).
+  **Windows Notification Service** — см. раздел [Регистрация приложения и получение учетных данных для облачной службы](/previous-versions/windows/apps/hh913756(v=win.10)#registering-your-app-and-receiving-the-credentials-for-your-cloud-service) и посетите [портал регистрации приложений](https://apps.dev.microsoft.com).
 * **Служба push-уведомлений Apple** — см. [обзор APNs](https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html).
 * **Google Cloud Messaging** — см. статью [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/).
 
@@ -143,8 +143,8 @@ ms.locfileid: "37969852"
 
 Чтобы найти идентификаторы:
 
-* **windows_universal** — укажите AUMID для каждого приложения UWP. Дополнительные сведения см. в статьях [Определение идентификатора модели пользователя для установленного приложения (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)) и [Application](https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-application).
-* **windows_win32** — укажите AUMID для каждого приложения. Чтобы получить эти сведения для приложений Win32, необходимо использовать скрипт. Дополнительные сведения см. в статье [Определение идентификатора модели пользователя установленного приложения (Industry 8.1)](https://docs.microsoft.com/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
+* **windows_universal** — укажите AUMID для каждого приложения UWP. Дополнительные сведения см. в статьях [Определение идентификатора модели пользователя для установленного приложения (Industry 8.1)](/previous-versions/windows/embedded/dn449300(v=winembedded.82)) и [Application](/uwp/schemas/appxpackage/appxmanifestschema/element-application).
+* **windows_win32** — укажите AUMID для каждого приложения. Чтобы получить эти сведения для приложений Win32, необходимо использовать скрипт. Дополнительные сведения см. в статье [Определение идентификатора модели пользователя установленного приложения (Industry 8.1)](/previous-versions/windows/embedded/dn449300(v=winembedded.82)).
 * **android** — дополнительные сведения см. в разделе [Изменение имени пакета](https://developer.android.com/studio/build/application-id.html#change_the_package_name). 
 * **ios** — дополнительные сведения см. в статьях [Bundle](https://developer.apple.com/documentation/foundation/bundle) и [Обязательные, локализуемые и редактируемые свойства](https://help.apple.com/itunes-connect/developer/#/devfc3066644).
 * **msa** — войдите на [портал регистрации приложений](https://apps.dev.microsoft.com). Вы можете просмотреть идентификатор приложения или клиента для любого приложения. Поддерживаются как идентификаторы Live SDK (шестнадцатеричные значения), так и конвергированные идентификаторы приложений (GUID).   
@@ -188,7 +188,7 @@ ms.locfileid: "37969852"
 Если ваше приложение использует API веб-каналов активности в Microsoft Graph, то значение узла необходимо передавать в свойстве **activitySourceHost**. Дополнительные сведения см. в статье [Тип ресурса activity](/graph/api/resources/projectrome-activity?view=graph-rest-1.0).
 
 ### <a name="universal-windows-apps"></a>Универсальные приложения для Windows
-Если у вас есть приложение для Windows, то перед публикацией данных необходимо настроить значение узла в манифесте приложения. Дополнительные сведения см. в статье [uap5:UserActivity](https://docs.microsoft.com/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity). 
+Если у вас есть приложение для Windows, то перед публикацией данных необходимо настроить значение узла в манифесте приложения. Дополнительные сведения см. в статье [uap5:UserActivity](/uwp/schemas/appxpackage/uapmanifestschema/element-uap5-useractivity). 
 
 <!-- Removing until we add the details.
 ### iOS & Android apps
@@ -206,4 +206,4 @@ ms.locfileid: "37969852"
 API веб-каналов активности асинхронно принимает конфигурацию приложения для нескольких устройств, поэтому ошибки конфигурации могут быть не сразу замечены при публикации действий пользователя. Если службе не удастся получить JSON-файл по причине ошибки протокола TLS или неправильного форматирования, все опубликованные действия будут связаны только с идентификатором приложения, опубликовавшего действия. Что касается действий, опубликованных через Microsoft Graph, это идентификатор приложения учетной записи Майкрософт, используемый для авторизации запросов к Microsoft Graph. В случае действий, опубликованных с помощью клиентских API, activity.applicationId запишет идентификатор только того приложения для определенной платформы, которое опубликовало действие. Это препятствует выполнению операций чтения и записи с действиями из каких-либо других приложений для определенных платформ, определенных в конфигурации приложения для нескольких устройств. 
 
 ### <a name="platform-will-not-initialize-on-android-or-ios"></a>Платформа не инициализируется на Android или iOS
-Интерфейсу API ретрансляции устройств для Android или iOS требуется конфигурация приложения для нескольких устройств, чтобы создавать экземпляры подключений к приложению Android или iOS. Если платформе не удается инициализироваться, убедитесь, что вы правильно указали идентификаторы приложений учетной записи Майкрософт и учетные данные push-уведомлений, используемые для настройки приложения для нескольких устройств в Центре разработки для Windows. Кроме того, в качестве значения узла клиентских приложений укажите домен, определяющий ваше приложение для нескольких устройств. 
+Интерфейсу API ретрансляции устройств для Android или iOS требуется конфигурация приложения для нескольких устройств, чтобы создавать экземпляры подключений к приложению Android или iOS. Если платформе не удается инициализироваться, убедитесь, что вы правильно указали идентификаторы приложений учетной записи Майкрософт и учетные данные push-уведомлений, используемые для настройки приложения для нескольких устройств в Центре разработки для Windows. Кроме того, в качестве значения узла клиентских приложений укажите домен, определяющий ваше приложение для нескольких устройств.

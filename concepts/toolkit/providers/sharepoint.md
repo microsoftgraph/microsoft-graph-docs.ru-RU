@@ -3,12 +3,12 @@ title: Поставщик SharePoint
 description: Используйте поставщика SharePoint в веб-частях SharePoint, чтобы включить в себя доступ к компонентам Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 98694291203c6b55d72e22503897d9515960d054
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1681dd07c93cfb419fb8aa61263432eaebb099dd
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036816"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288499"
 ---
 # <a name="sharepoint-provider"></a>Поставщик SharePoint
 
@@ -50,7 +50,7 @@ public render(): void {
 
 ## <a name="test-in-the-workbench"></a>Тестирование в Workbench
 
-Если вы только начинаете работать с веб-частями SharePoint, вы можете воспользоваться инструкциями по [созданию первой веб-части](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part) .
+Если вы только начинаете работать с веб-частями SharePoint, вы можете воспользоваться инструкциями по [созданию первой веб-части](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part) .
 
 После создания веб-части и готовности к использованию компонентов необходимо убедиться, что веб-часть имеет необходимые разрешения для доступа к Microsoft Graph. Дополнительные сведения см. [в статье Использование Microsoft Graph в SharePoint Framework](/sharepoint/dev/spfx/use-aad-tutorial).
 

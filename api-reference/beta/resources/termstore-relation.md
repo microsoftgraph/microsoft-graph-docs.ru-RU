@@ -5,12 +5,12 @@ author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 2e8f4dc8b82c496909f5b150829d9fb4e114ba59
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 12d976a189b5ebc50e993b5c1203800e4afd68da
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973591"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289059"
 ---
 # <a name="relation-resource-type"></a>Тип ресурса связи
 
@@ -44,9 +44,9 @@ ms.locfileid: "47973591"
 |:---|:---|:---|
 |фромтерм|[Microsoft. Graph. Банк. Term](../resources/termstore-term.md)|[Термин] "от" отношения. Термин, в котором определено отношение. Значение NULL указывает на то, что отношение напрямую с [набором]. |
 |set|[Microsoft. Graph. банка. Set](../resources/termstore-set.md)|[Набор] , в котором соотношение является релевантным.|
-|тотерм|[Microsoft. Graph. Банк. Term](../resources/termstore-term.md)|[Термин] "Кому" отношения. Термин, для которого определен реалтионшип.|
+|тотерм|[Microsoft. Graph. Банк. Term](../resources/termstore-term.md)|[Термин] "Кому" отношения. Термин, для которого определена связь.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже указано представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
@@ -68,7 +68,7 @@ ms.locfileid: "47973591"
 [microsoft.graph.termStore.set]: termstore-set.md
 [microsoft.graph.termStore.relations]: termstore-relation.md
 [microsoft.graph.termStore.relation]: termstore-relation.md
-[store]: ../resources/termstore-store.md
+[восстановлен]: ../resources/termstore-store.md
 [банком]: ../resources/termstore-term.md
 [set]: ../resources/termstore-set.md
 

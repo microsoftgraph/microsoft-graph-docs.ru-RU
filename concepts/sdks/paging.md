@@ -3,12 +3,12 @@ title: Страница через коллекцию с помощью паке
 description: Содержит инструкции по созданию запросов API Microsoft Graph с помощью пакетов SDK Microsoft Graph.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: e3cd656c5210739436ff9df68cfb700f264204de
-ms.sourcegitcommit: df2c52f84aae5d4fed641d7411ba547371f0eaad
+ms.openlocfilehash: ef48af29a4cc0388c405e2a42894d98ce6c98010
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44052547"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289491"
 ---
 # <a name="page-through-a-collection-using-the-microsoft-graph-sdks"></a>Страница через коллекцию с помощью пакетов SDK Microsoft Graph
 
@@ -19,7 +19,7 @@ ms.locfileid: "44052547"
 В приведенном ниже примере показано, как выполняется итерация по всем сообщениям в почтовом ящике пользователя.
 
 > [!TIP]
-> В этом примере задается небольшой размер страницы `top` с помощью параметра для демонстрационных целей. Вы можете задать размер страницы до 999, чтобы свести к минимуму необходимое количество запросов.
+> В этом примере задается небольшой размер страницы с помощью `top` параметра для демонстрационных целей. Вы можете задать размер страницы до 999, чтобы свести к минимуму необходимое количество запросов.
 
 ### <a name="c"></a>[C#](#tab/csharp)
 
@@ -64,6 +64,27 @@ let pageIterator = new PageIterator(client, response, callback);
 
 // This iterates the collection until the nextLink is drained out.
 await pageIterator.iterate();
+```
+
+### <a name="java"></a>[Java](#tab/java)
+
+```java
+IMessageCollectionPage messagesPage = graphClient.me().messages()
+    .buildRequest()
+    .select("Sender,Subject")
+    .top(10)
+    .get();
+
+
+while(messagesPage != null) {
+  final List<Message> messages = messagesPage.GetCurrentPage();
+  final IMessageCollectionRequestBuilder nextPage = messagesPage.GetNextPage();
+  if(nextPage == null) {
+    break;
+  } else {
+    messagePage = nextPage.buildRequest().get();
+  }
+}
 ```
 
 ---
@@ -140,6 +161,12 @@ while (!pageIterator.isComplete()) {
   count = 0;
   await pageIterator.resume();
 }
+```
+
+### <a name="java"></a>[Java](#tab/java)
+
+```java
+// not supported in java SDK
 ```
 
 ---

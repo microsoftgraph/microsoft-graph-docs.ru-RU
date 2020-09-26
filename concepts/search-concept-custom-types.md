@@ -4,16 +4,16 @@ description: С помощью API Microsoft Search можно импортир�
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: b125b8f923e941ad73d5c578e99a67fdd9ea9eea
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: ef245e88e635e888c3a5e2eeafb61497e804072f
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192604"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288184"
 ---
 # <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>Использование API службы поиска Microsoft для поиска настраиваемых типов, импортированных с помощью Microsoft Graph Connectors
 
-Используйте API Microsoft Search API для поиска контента, полученных и индексируемых через [соединители Microsoft Graph](https://docs.microsoft.com/microsoftsearch/connectors-overview). Содержимое импортируется либо через [встроенные соединители](https://docs.microsoft.com/microsoftsearch/connectors-gallery) , предоставляемые корпорацией Майкрософт, либо через пользовательские соединители, реализованные с помощью [API приема Microsoft Graph Connectors](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).
+Используйте API Microsoft Search API для поиска контента, полученных и индексируемых через [соединители Microsoft Graph](/microsoftsearch/connectors-overview). Содержимое импортируется либо через [встроенные соединители](/microsoftsearch/connectors-gallery) , предоставляемые корпорацией Майкрософт, либо через пользовательские соединители, реализованные с помощью [API приема Microsoft Graph Connectors](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).
 
 [!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
@@ -35,7 +35,7 @@ TODOSEARCHAPI - Bug 1653398
 
 ## <a name="example"></a>Пример
 
-В этом примере содержимое базы данных [AdventureWorks](https://docs.microsoft.com/sql/samples/adventureworks-install-configure) было активировано с помощью встроенного СОЕДИНИТЕЛЯ Azure SQL.
+В этом примере содержимое базы данных [AdventureWorks](/sql/samples/adventureworks-install-configure) было активировано с помощью встроенного СОЕДИНИТЕЛЯ Azure SQL.
 
 ### <a name="request"></a>Запрос
 

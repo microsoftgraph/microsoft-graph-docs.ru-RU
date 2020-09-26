@@ -4,12 +4,12 @@ description: Контрольный список для переноса при�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: 5f859861c7c656f9287f4f6b3742f976c75299bc
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 5470366e3b61cde18b52246483a46485f3f00c68
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872903"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288666"
 ---
 # <a name="app-migration-planning-checklist"></a>Контрольный список планирования миграции приложений
 
@@ -55,7 +55,7 @@ ms.locfileid: "46872903"
 
 Теперь, когда вы переключились на Microsoft Graph, вы не сможете упростить разблокировку многих дополнительных наборов данных и функций, которые теперь доступны вам. Вы можете узнать о возможных возможностях, изучив некоторые [примеры](/graph/examples).
 
-Если вы используете [библиотеку проверки подлинности Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL), рассмотрите возможность переключения на [библиотеку проверки подлинности Microsoft](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) (MSAL).
+Если вы используете [библиотеку проверки подлинности Active Directory](/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL), рассмотрите возможность переключения на [библиотеку проверки подлинности Microsoft](/azure/active-directory/develop/reference-v2-libraries) (MSAL).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

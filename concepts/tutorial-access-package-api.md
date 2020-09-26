@@ -4,25 +4,25 @@ description: Узнайте, как создать пакет Access и запр
 author: davidmu1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7c9f283a00bbf09c1bc54c4abd924c92fe1ce140
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c276289b4e71c96386afd7e2502021249025965b
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036830"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288842"
 ---
 # <a name="tutorial-create-an-access-package-using-microsoft-graph-apis"></a>Руководство: создание пакета Access с помощью API Microsoft Graph
 
-Управление доступом ко всем ресурсам, необходимым для сотрудников, таких как группы, приложения и сайты, является важной функцией для организаций. Вы хотите предоставить сотрудникам необходимый уровень доступа, который им необходим для продуктивности, и удалить доступ, когда он больше не нужен. [Управление обслуживанием Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) с помощью API Microsoft Graph позволяет управлять этим типом доступа.
+Управление доступом ко всем ресурсам, необходимым для сотрудников, таких как группы, приложения и сайты, является важной функцией для организаций. Вы хотите предоставить сотрудникам необходимый уровень доступа, который им необходим для продуктивности, и удалить доступ, когда он больше не нужен. [Управление обслуживанием Azure Active Directory (Azure AD)](/azure/active-directory/governance/entitlement-management-overview) с помощью API Microsoft Graph позволяет управлять этим типом доступа.
 
 В этом руководстве вы запросили разработку кода для создания пакета ресурсов для маркетинговой кампании, с которой внутренние пользователи могут самостоятельно выполнить запрос. Запросы не требуют утверждения и срок действия доступа пользователя истечет через 30 дней. В этом руководстве ресурсы маркетинговой кампании — это всего лишь членство в одной группе, но может быть коллекцией групп, приложений или сайтов SharePoint Online.
 
 >**Примечание:** Объекты ответа, показанные в этом руководстве, могут быть сокращены для удобочитаемости. 
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 
 Для успешного выполнения этого руководства убедитесь, что у вас есть необходимые компоненты:
-- Для управления обслуживанием Azure AD требуются определенные лицензии. Более подробную информацию можно узнать в статье [требования к лицензии](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview#license-requirements). В клиенте требуются следующие лицензии:
+- Для управления обслуживанием Azure AD требуются определенные лицензии. Более подробную информацию можно узнать в статье [требования к лицензии](/azure/active-directory/governance/entitlement-management-overview#license-requirements). В клиенте требуются следующие лицензии:
     - Azure AD Premium P2
     - Лицензия Enterprise Mobility + Security (EMS)
 - В этом руководстве предполагается, что используется обозреватель Microsoft Graph, но вы можете использовать POST или создать собственное клиентское приложение для вызова Microsoft Graph. Чтобы вызвать API Microsoft Graph в этом руководстве, необходимо использовать учетную запись с ролью глобального администратора и соответствующими разрешениями. В этом руководстве `User.ReadWrite.All` `Group.ReadWrite.All` `EntitlementManagement.ReadWrite.All` необходимы разрешения, и делегированные разрешения. Выполните следующие действия, чтобы задать разрешения в Microsoft Graph Explorer:
@@ -725,12 +725,12 @@ No Content - 204
 В этом руководстве показано, как использовать многие API для выполнения задач. Изучите Справочник по API для этих API, чтобы узнать больше о возможных действиях API.
 
 
-- [Работа с API управления обслуживанием Azure AD](https://docs.microsoft.com/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta)
-- [акцесспаккажекаталог](https://docs.microsoft.com/graph/api/resources/accesspackagecatalog?view=graph-rest-beta)
-- [акцесспаккажересаурцерекуест](https://docs.microsoft.com/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta)
-- [акцесспаккаже](https://docs.microsoft.com/graph/api/resources/accesspackage?view=graph-rest-beta)
-- [акцесспаккажересаурцеролескопе](https://docs.microsoft.com/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta)
-- [акцесспаккажеассигнментполици](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)
-- [акцесспаккажеассигнментрекуест](https://docs.microsoft.com/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta)
-- [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-1.0)
-- [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-1.0)
+- [Работа с API управления обслуживанием Azure AD](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta)
+- [акцесспаккажекаталог](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta)
+- [акцесспаккажересаурцерекуест](/graph/api/resources/accesspackageresourcerequest?view=graph-rest-beta)
+- [акцесспаккаже](/graph/api/resources/accesspackage?view=graph-rest-beta)
+- [акцесспаккажересаурцеролескопе](/graph/api/resources/accesspackageresourcerolescope?view=graph-rest-beta)
+- [акцесспаккажеассигнментполици](/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta)
+- [акцесспаккажеассигнментрекуест](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta)
+- [group](/graph/api/resources/group?view=graph-rest-1.0)
+- [user](/graph/api/resources/user?view=graph-rest-1.0)

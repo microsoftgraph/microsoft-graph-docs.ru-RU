@@ -2,12 +2,12 @@
 title: Национальные облачные развертывания
 description: В дополнение к нашей глобальной сети центров обработки данных облачные службы Майкрософт доступны в трех отдельных национальных облачных службах.
 author: arpitha-dhanapathi
-ms.openlocfilehash: cc302e4bc56e207b117667dc907b3bb928aaa164
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: 765652f6b7303f9726748497bd6d3738f0ee3670
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47329336"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289206"
 ---
 # <a name="national-cloud-deployments"></a>Национальные облачные развертывания
 
@@ -23,7 +23,7 @@ ms.locfileid: "47329336"
 
 В этой статье приводятся сведения о различных облачных развертываниях Microsoft Graph и возможностях, доступных разработчикам в различных средах.
 
->**Note:** [Microsoft Graph Data Connect](https://docs.microsoft.com/graph/data-connect-concept-overview?view=graph-rest-1.0) не поддерживает никакие из национальных облачных развертываний. 
+>**Note:** [Microsoft Graph Data Connect](./data-connect-concept-overview.md?view=graph-rest-1.0) не поддерживает никакие из национальных облачных развертываний. 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/R_3E0IVypRM]
 
@@ -38,7 +38,7 @@ ms.locfileid: "47329336"
 |Azure AD для Германии |https://portal.microsoftazure.de|`https://login.microsoftonline.de`|
 |Azure AD для Китая под управлением 21Vianet |https://portal.azure.cn|`https://login.chinacloudapi.cn`|
 
-Дополнительные сведения о маркерах доступа Azure AD и Microsoft Graph приведены в статье Общие сведения о [проверке подлинности](./auth/auth-concepts.md). Сведения о сценариях проверки [подлинности](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)Azure AD см.
+Дополнительные сведения о маркерах доступа Azure AD и Microsoft Graph приведены в статье Общие сведения о [проверке подлинности](./auth/auth-concepts.md). Сведения о сценариях проверки [подлинности](/azure/active-directory/develop/authentication-scenarios)Azure AD см.
 
 
 ## <a name="microsoft-graph-and-graph-explorer-service-root-endpoints"></a>Корневые конечные точки службы Microsoft Graph и проводника Graph
@@ -105,9 +105,9 @@ ms.locfileid: "47329336"
 
 Дополнительные сведения о национальных облаках приведены в следующих разделах:
 - [Национальные облака Майкрософт](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)
-- [Microsoft 365 для государственных организаций США](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
-- [Microsoft 365 под управлением 21Vianet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
-- [Office 365 Germany](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
+- [Microsoft 365 для государственных организаций США](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
+- [Microsoft 365 под управлением 21Vianet](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
+- [Office 365 Germany](/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
 - [Правительственные учреждения Azure](https://azure.microsoft.com/global-infrastructure/government/)
-- [Azure Китая 21Vianet](https://docs.microsoft.com/azure/china/)
-- [Azure для Германии](https://docs.microsoft.com/azure/germany/)
+- [Azure Китая 21Vianet](/azure/china/)
+- [Azure для Германии](/azure/germany/)

@@ -3,12 +3,12 @@ title: Установка пакета SDK Microsoft Graph
 description: Содержит инструкции по установке пакетов SDK для C#, Java, JavaScript, задания на языке, PHP и Ruby Microsoft Graph.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 13fa6bc82c311efb1d70e678ba0fe7537b23330a
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: d9feb4ebca4cc0558ad981e1598ff6f7d68ac95a
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192632"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289472"
 ---
 # <a name="install-the-microsoft-graph-sdks"></a>Установка пакетов SDK Microsoft Graph
 
@@ -35,6 +35,7 @@ Install-Package Microsoft.Graph.Auth -IncludePrerelease
 Пакет SDK Microsoft Graph Java включен в следующие пакеты:
 
 - [Microsoft-Graph](https://github.com/microsoftgraph/msgraph-sdk-java) — содержит модели и построители запросов для доступа к `v1.0` конечной точке с помощью API Fluent.
+- [Microsoft-Graph-бета-версия](https://github.com/microsoftgraph/msgraph-beta-sdk-java) содержит модели и построители запросов для доступа к `beta` конечной точке с помощью API Fluent.
 - [Microsoft — Graph — Core](https://github.com/microsoftgraph/msgraph-sdk-java-core) — основная библиотека для совершения вызовов в Microsoft Graph.
 - [Microsoft-Graph-auth](https://github.com/microsoftgraph/msgraph-sdk-java-auth) -предоставляет оболочку проверки подлинности (MSAL), основанную на сценариях проверки подлинности (), для использования с пакетом SDK Microsoft Graph.
 
@@ -49,7 +50,7 @@ repository {
 
 dependency {
     // Include the sdk as a dependency
-    compile('com.microsoft.graph:microsoft-graph:1.2.+')
+    implementation 'com.microsoft.graph:microsoft-graph:2.+'
 }
 ```
 
@@ -61,7 +62,7 @@ dependency {
 <dependency>
     <groupId>com.microsoft.graph</groupId>
     <artifactId>microsoft-graph</artifactId>
-    <version>1.2.0</version>
+    <version>[2.0,)</version>
 </dependency>
 ```
 

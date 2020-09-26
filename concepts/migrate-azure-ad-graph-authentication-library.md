@@ -4,12 +4,12 @@ description: Описывается обновление использован�
 author: dkershaw10
 localization_priority: Normal
 ms.prod: azure-active-directory
-ms.openlocfilehash: 17a6fa76b3aa32b0eae17bd96e6e8ec9d84ebdbb
-ms.sourcegitcommit: ef47b165f7a140cfc0309a275cb8722dd265660d
+ms.openlocfilehash: 35fc2b5c1ad1d7aebc790b93a31ba8d1924b8bc1
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46872959"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289024"
 ---
 # <a name="review-app-authentication-library-changes"></a>Проверка изменений библиотеки проверки подлинности приложений
 
@@ -17,8 +17,8 @@ ms.locfileid: "46872959"
 
 Большинство приложений используют библиотеку проверки подлинности для получения и управления маркерами доступа для вызова Microsoft Graph.  Корпорация Майкрософт предлагает две библиотеки проверки подлинности:
 
-- [Библиотека проверки подлинности Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)
-- [Библиотека проверки подлинности (Майкрософт](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) ) (MSAL)
+- [Библиотека проверки подлинности Azure Active Directory](/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL)
+- [Библиотека проверки подлинности (Майкрософт](/azure/active-directory/develop/reference-v2-libraries) ) (MSAL)
 
 ## <a name="updating-adal"></a>Обновление ADAL
 

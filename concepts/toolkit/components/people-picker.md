@@ -3,12 +3,12 @@ title: Компонент "Выбор людей"
 description: Вы можете использовать веб-компонент "центр управления", чтобы выполнить поиск указанного числа людей и отобразить список результатов с помощью Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: 2e7d03a0c6728d3ff775282343a847ba88afbf42
-ms.sourcegitcommit: 233ac43db0eb5edd46fe944a5515d7dd9abb1298
+ms.openlocfilehash: eca2ad4c0b56ff3475480a36eab2e943e3b6d9e4
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/24/2020
-ms.locfileid: "45408073"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288618"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент "Выбор людей" в наборе инструментов Microsoft Graph
 
@@ -57,7 +57,7 @@ ms.locfileid: "45408073"
     document.querySelector('mgt-people-picker').selectedPeople.push(personObject);
     ```
 
-- С помощью `selectUsersById()` метода, который принимает массив [идентификаторов пользователей](https://docs.microsoft.com/graph/api/resources/users?view=graph-rest-1.0) Microsoft Graph, чтобы найти сведения о пользователе для выбора.
+- С помощью `selectUsersById()` метода, который принимает массив [идентификаторов пользователей](/graph/api/resources/users?view=graph-rest-1.0) Microsoft Graph, чтобы найти сведения о пользователе для выбора.
 
      >**Примечание:** Если для пользователя не найдено ни одного пользователя `id` , данные не будут отображены `id` .
 
@@ -105,7 +105,7 @@ mgt-people-picker {
 
 ## <a name="templates"></a>Шаблоны
 
- `mgt-people-picker`поддерживает несколько [шаблонов](../templates.md) , которые можно использовать для замены определенных частей компонента. Чтобы указать шаблон, включите элемент в `<template>` компонент и задайте `data-type` для него одно из следующих значений.
+ `mgt-people-picker` поддерживает несколько [шаблонов](../templates.md) , которые можно использовать для замены определенных частей компонента. Чтобы указать шаблон, включите элемент в `<template>` компонент и задайте `data-type` для него одно из следующих значений.
 
 | Тип данных | Контекст данных | Описание |
 | --- | --- | --- |
@@ -114,7 +114,7 @@ mgt-people-picker {
 | error | NULL: нет данных | Шаблон, используемый, если поиск пользователей не возвращает пользователей. |
 | нет данных | NULL: нет данных | Альтернативный шаблон, используемый в случае, если поиск пользователей не возвращает пользователей. |
 | выбранное лицо | Person: объект сведений о лице | Шаблон для отображения выбранных пользователей. |
-| person | Person: объект сведений о лице | Шаблон для отображения людей в раскрывающемся меню. |
+| которому | Person: объект сведений о лице | Шаблон для отображения людей в раскрывающемся меню. |
 
 В приведенных ниже примерах показано, как использовать `error` шаблон.
 
@@ -136,7 +136,7 @@ mgt-people-picker {
 | [/Users](/graph/api/user-list?view=graph-rest-1.0)  | User.ReadBasic.All |
 | [/граупс](/group-list?view=graph-rest-beta)  | Group.Read.All |
 | [/граупс/ \$ {groupId}/мемберс](/graph/api/group-list-members?view=graph-rest-1.0) | User.ReadBasic.All        |
-| [/Users/$ {УсерпринЦипленаме}](/graph/api/user-get?view=graph-rest-1.0)  | User.Read |
+| [/Users/$ {УсерпринЦипленаме} ](/graph/api/user-get?view=graph-rest-1.0)  | User.Read |
 
 ## <a name="authentication"></a>Проверка подлинности
 

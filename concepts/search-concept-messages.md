@@ -4,12 +4,12 @@ description: Вы можете использовать API Microsoft Search API
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 439a6ca1d560a848a0e78b2105dc717abfa5ad44
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: e9917b8153946161168e90f78399f29b6a7f3df3
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192557"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288828"
 ---
 # <a name="use-the-microsoft-search-api-to-search-outlook-messages"></a>Использование API службы поиска Microsoft для поиска сообщений Outlook
 
@@ -23,7 +23,7 @@ ms.locfileid: "48192557"
 
 Поиск сообщений применяется к рабочим или учебным учетным записям. Пользователи могут выполнять поиск в своем почтовом ящике, но не могут искать делегированные почтовые ящики. Подробнее: [Известные ограничения](#known-limitations).
 
-При поиске сообщений также выполняется поиск вложений. [Поддерживаются такие же типы файлов](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) , что и для поиска в SharePoint Online.
+При поиске сообщений также выполняется поиск вложений. [Поддерживаются такие же типы файлов](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) , что и для поиска в SharePoint Online.
 
 ## <a name="example-1-search-messages-in-a-users-mailbox"></a>Пример 1: Поиск сообщений в почтовом ящике пользователя
 

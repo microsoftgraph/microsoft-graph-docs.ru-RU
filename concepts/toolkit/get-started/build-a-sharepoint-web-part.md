@@ -3,16 +3,16 @@ title: Создание веб-части SharePoint с помощью набо�
 description: Приступите к работе с набором инструментов Microsoft Graph для создания веб-части SharePoint.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: bdc2d6679c145f3f50d908bbf0e4e417234c4dc9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b2ae71a8fb37e088c0497716fdf4d1cdc42f41ef
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059661"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288530"
 ---
 # <a name="build-a-sharepoint-web-part-with-the-microsoft-graph-toolkit"></a>Создание веб-части SharePoint с помощью набора инструментов Microsoft Graph
 
-В этом разделе описывается, как использовать компоненты набора инструментов Microsoft Graph в [клиентской веб-части SharePoint](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts). Приступая к работе состоит из следующих этапов:
+В этом разделе описывается, как использовать компоненты набора инструментов Microsoft Graph в [клиентской веб-части SharePoint](/sharepoint/dev/spfx/web-parts/overview-client-side-web-parts). Приступая к работе состоит из следующих этапов:
 
 1. Настройте среду разработки и создайте веб-часть.
 2. Обновление TypeScript в проекте.
@@ -25,7 +25,7 @@ ms.locfileid: "48059661"
 
 ## <a name="set-up-your-sharepoint-framework-development-environment-and-create-a-new-web-part"></a>Настройка среды разработки SharePoint Framework и создание новой веб-части
 
-Выполните действия, чтобы [настроить среду разработки SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/set-up-your-development-environment) , а затем [Создайте новую веб-часть](https://docs.microsoft.com/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part).
+Выполните действия, чтобы [настроить среду разработки SharePoint Framework](/sharepoint/dev/spfx/set-up-your-development-environment) , а затем [Создайте новую веб-часть](/sharepoint/dev/spfx/web-parts/get-started/build-a-hello-world-web-part).
 
 ## <a name="update-typescript-in-your-project"></a>Обновление TypeScript в проекте
 
@@ -196,5 +196,3 @@ gulp serve
 - Опробуйте компоненты в [интерактивная среда](https://mgt.dev).
 - Задайте вопрос о [переполнении стека](https://aka.ms/mgt-question).
 - Сообщать об ошибках или оставлять запрос на функцию в [GitHub](https://aka.ms/mgt).
-
-
