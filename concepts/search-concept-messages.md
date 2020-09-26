@@ -4,32 +4,32 @@ description: Вы можете использовать API Microsoft Search API
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 439a6ca1d560a848a0e78b2105dc717abfa5ad44
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: e9917b8153946161168e90f78399f29b6a7f3df3
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192557"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288828"
 ---
-# <a name="use-the-microsoft-search-api-to-search-outlook-messages"></a><span data-ttu-id="5f71c-103">Использование API службы поиска Microsoft для поиска сообщений Outlook</span><span class="sxs-lookup"><span data-stu-id="5f71c-103">Use the Microsoft Search API to search Outlook messages</span></span>
+# <a name="use-the-microsoft-search-api-to-search-outlook-messages"></a><span data-ttu-id="544fb-103">Использование API службы поиска Microsoft для поиска сообщений Outlook</span><span class="sxs-lookup"><span data-stu-id="544fb-103">Use the Microsoft Search API to search Outlook messages</span></span>
 
-<span data-ttu-id="5f71c-104">Используйте API Microsoft Search API для поиска информации в сообщениях электронной почты, получения сообщений, упорядоченных по релевантности, и отображения выделенного интерфейса поиска.</span><span class="sxs-lookup"><span data-stu-id="5f71c-104">Use the Microsoft Search API to search for information in email messages, return messages ranked by relevance, and render a dedicated search experience.</span></span> <span data-ttu-id="5f71c-105">Поиск применяется к основному тексту и вложениям сообщений в собственном почтовом ящике вошедшего пользователя.</span><span class="sxs-lookup"><span data-stu-id="5f71c-105">The search applies to the body and attachments of messages in the signed-in user's own mailbox.</span></span>
+<span data-ttu-id="544fb-104">Используйте API Microsoft Search API для поиска информации в сообщениях электронной почты, получения сообщений, упорядоченных по релевантности, и отображения выделенного интерфейса поиска.</span><span class="sxs-lookup"><span data-stu-id="544fb-104">Use the Microsoft Search API to search for information in email messages, return messages ranked by relevance, and render a dedicated search experience.</span></span> <span data-ttu-id="544fb-105">Поиск применяется к основному тексту и вложениям сообщений в собственном почтовом ящике вошедшего пользователя.</span><span class="sxs-lookup"><span data-stu-id="544fb-105">The search applies to the body and attachments of messages in the signed-in user's own mailbox.</span></span>
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-<span data-ttu-id="5f71c-106">Поисковый запрос может включать в себя [фильтры](https://support.office.com/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da) , вводимые пользователями в текстовое поле **поиска** в Outlook.</span><span class="sxs-lookup"><span data-stu-id="5f71c-106">A search query can include [filters](https://support.office.com/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da) that end users enter in the **Search** text box in Outlook.</span></span>
+<span data-ttu-id="544fb-106">Поисковый запрос может включать в себя [фильтры](https://support.office.com/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da) , вводимые пользователями в текстовое поле **поиска** в Outlook.</span><span class="sxs-lookup"><span data-stu-id="544fb-106">A search query can include [filters](https://support.office.com/article/learn-to-narrow-your-search-criteria-for-better-searches-in-outlook-d824d1e9-a255-4c8a-8553-276fb895a8da) that end users enter in the **Search** text box in Outlook.</span></span>
 
-<span data-ttu-id="5f71c-107">Результаты поиска сообщений сортируются по **receivedDateTime** в порядке убывания.</span><span class="sxs-lookup"><span data-stu-id="5f71c-107">Message search results are sorted by **receivedDateTime** in descending order.</span></span>
+<span data-ttu-id="544fb-107">Результаты поиска сообщений сортируются по **receivedDateTime** в порядке убывания.</span><span class="sxs-lookup"><span data-stu-id="544fb-107">Message search results are sorted by **receivedDateTime** in descending order.</span></span>
 
-<span data-ttu-id="5f71c-108">Поиск сообщений применяется к рабочим или учебным учетным записям.</span><span class="sxs-lookup"><span data-stu-id="5f71c-108">Message search applies to work or school accounts.</span></span> <span data-ttu-id="5f71c-109">Пользователи могут выполнять поиск в своем почтовом ящике, но не могут искать делегированные почтовые ящики.</span><span class="sxs-lookup"><span data-stu-id="5f71c-109">Users can search their own mailbox, but can't search delegated mailboxes.</span></span> <span data-ttu-id="5f71c-110">Подробнее: [Известные ограничения](#known-limitations).</span><span class="sxs-lookup"><span data-stu-id="5f71c-110">For details, see [known limitations](#known-limitations).</span></span>
+<span data-ttu-id="544fb-108">Поиск сообщений применяется к рабочим или учебным учетным записям.</span><span class="sxs-lookup"><span data-stu-id="544fb-108">Message search applies to work or school accounts.</span></span> <span data-ttu-id="544fb-109">Пользователи могут выполнять поиск в своем почтовом ящике, но не могут искать делегированные почтовые ящики.</span><span class="sxs-lookup"><span data-stu-id="544fb-109">Users can search their own mailbox, but can't search delegated mailboxes.</span></span> <span data-ttu-id="544fb-110">Подробнее: [Известные ограничения](#known-limitations).</span><span class="sxs-lookup"><span data-stu-id="544fb-110">For details, see [known limitations](#known-limitations).</span></span>
 
-<span data-ttu-id="5f71c-111">При поиске сообщений также выполняется поиск вложений.</span><span class="sxs-lookup"><span data-stu-id="5f71c-111">Message search also looks for attachments.</span></span> <span data-ttu-id="5f71c-112">[Поддерживаются такие же типы файлов](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) , что и для поиска в SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="5f71c-112">The [supported file types](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for message attachment search are the same as those for SharePoint Online search.</span></span>
+<span data-ttu-id="544fb-111">При поиске сообщений также выполняется поиск вложений.</span><span class="sxs-lookup"><span data-stu-id="544fb-111">Message search also looks for attachments.</span></span> <span data-ttu-id="544fb-112">[Поддерживаются такие же типы файлов](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) , что и для поиска в SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="544fb-112">The [supported file types](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) for message attachment search are the same as those for SharePoint Online search.</span></span>
 
-## <a name="example-1-search-messages-in-a-users-mailbox"></a><span data-ttu-id="5f71c-113">Пример 1: Поиск сообщений в почтовом ящике пользователя</span><span class="sxs-lookup"><span data-stu-id="5f71c-113">Example 1: Search messages in a user's mailbox</span></span>
+## <a name="example-1-search-messages-in-a-users-mailbox"></a><span data-ttu-id="544fb-113">Пример 1: Поиск сообщений в почтовом ящике пользователя</span><span class="sxs-lookup"><span data-stu-id="544fb-113">Example 1: Search messages in a user's mailbox</span></span>
 
-<span data-ttu-id="5f71c-114">В следующем примере выполняется запрос сообщений в почтовом ящике вошедшего пользователя, который содержит строку "contoso" в любой части сообщения (имя отправителя, тема, текст сообщения или вложения).</span><span class="sxs-lookup"><span data-stu-id="5f71c-114">The following example queries messages in the signed-in user's mailbox that contain the string "contoso" in any part of the message (the sender name, subject, message body, or any attachments).</span></span> <span data-ttu-id="5f71c-115">Запрос возвращает первые 25 результатов.</span><span class="sxs-lookup"><span data-stu-id="5f71c-115">The query returns the first 25 results.</span></span> <span data-ttu-id="5f71c-116">Результаты поиска упорядочиваются по убыванию **даты и времени** .</span><span class="sxs-lookup"><span data-stu-id="5f71c-116">The search results are ordered by **DateTime** descending.</span></span>
+<span data-ttu-id="544fb-114">В следующем примере выполняется запрос сообщений в почтовом ящике вошедшего пользователя, который содержит строку "contoso" в любой части сообщения (имя отправителя, тема, текст сообщения или вложения).</span><span class="sxs-lookup"><span data-stu-id="544fb-114">The following example queries messages in the signed-in user's mailbox that contain the string "contoso" in any part of the message (the sender name, subject, message body, or any attachments).</span></span> <span data-ttu-id="544fb-115">Запрос возвращает первые 25 результатов.</span><span class="sxs-lookup"><span data-stu-id="544fb-115">The query returns the first 25 results.</span></span> <span data-ttu-id="544fb-116">Результаты поиска упорядочиваются по убыванию **даты и времени** .</span><span class="sxs-lookup"><span data-stu-id="544fb-116">The search results are ordered by **DateTime** descending.</span></span>
 
-### <a name="request"></a><span data-ttu-id="5f71c-117">Запрос</span><span class="sxs-lookup"><span data-stu-id="5f71c-117">Request</span></span>
+### <a name="request"></a><span data-ttu-id="544fb-117">Запрос</span><span class="sxs-lookup"><span data-stu-id="544fb-117">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -51,9 +51,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="5f71c-118">Отклик</span><span class="sxs-lookup"><span data-stu-id="5f71c-118">Response</span></span>
+### <a name="response"></a><span data-ttu-id="544fb-118">Отклик</span><span class="sxs-lookup"><span data-stu-id="544fb-118">Response</span></span>
 
-<span data-ttu-id="5f71c-119">Ниже приведен пример ответа, содержащего одно сообщение, которое соответствует заданному критерию поиска.</span><span class="sxs-lookup"><span data-stu-id="5f71c-119">The following is an example of the response, which contains one message that matches the search criterion.</span></span>
+<span data-ttu-id="544fb-119">Ниже приведен пример ответа, содержащего одно сообщение, которое соответствует заданному критерию поиска.</span><span class="sxs-lookup"><span data-stu-id="544fb-119">The following is an example of the response, which contains one message that matches the search criterion.</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -114,12 +114,12 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-search-top-results-messages"></a><span data-ttu-id="5f71c-120">Пример 2: Поиск в сообщениях с наибольшим результатом</span><span class="sxs-lookup"><span data-stu-id="5f71c-120">Example 2: Search top results messages</span></span>
+## <a name="example-2-search-top-results-messages"></a><span data-ttu-id="544fb-120">Пример 2: Поиск в сообщениях с наибольшим результатом</span><span class="sxs-lookup"><span data-stu-id="544fb-120">Example 2: Search top results messages</span></span>
 
-<span data-ttu-id="5f71c-121">В следующем примере используется поисковый запрос, показанный в примере 1, и отсортирует результаты по релевантности.</span><span class="sxs-lookup"><span data-stu-id="5f71c-121">The following example uses the search query shown in Example 1, and sorts the results by relevance.</span></span> 
+<span data-ttu-id="544fb-121">В следующем примере используется поисковый запрос, показанный в примере 1, и отсортирует результаты по релевантности.</span><span class="sxs-lookup"><span data-stu-id="544fb-121">The following example uses the search query shown in Example 1, and sorts the results by relevance.</span></span> 
 
 <!-- markdownlint-disable MD024 -->
-### <a name="request"></a><span data-ttu-id="5f71c-122">Запрос</span><span class="sxs-lookup"><span data-stu-id="5f71c-122">Request</span></span>
+### <a name="request"></a><span data-ttu-id="544fb-122">Запрос</span><span class="sxs-lookup"><span data-stu-id="544fb-122">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -142,7 +142,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="5f71c-123">Отклик</span><span class="sxs-lookup"><span data-stu-id="5f71c-123">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="544fb-123">Отклик</span><span class="sxs-lookup"><span data-stu-id="544fb-123">Response</span></span>
 ```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -202,12 +202,12 @@ Content-type: application/json
 }
 ```
 
-## <a name="known-limitations"></a><span data-ttu-id="5f71c-124">Известные ограничения</span><span class="sxs-lookup"><span data-stu-id="5f71c-124">Known limitations</span></span>
+## <a name="known-limitations"></a><span data-ttu-id="544fb-124">Известные ограничения</span><span class="sxs-lookup"><span data-stu-id="544fb-124">Known limitations</span></span>
 
-- <span data-ttu-id="5f71c-125">Доступ к почтовому ящику вошедшего пользователя можно получить только из собственного почтового ящика.</span><span class="sxs-lookup"><span data-stu-id="5f71c-125">You can access only the signed-in user’s own mailbox.</span></span> <span data-ttu-id="5f71c-126">Поиск делегированных почтовых ящиков не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5f71c-126">Searching delegated mailboxes is not supported.</span></span>
-- <span data-ttu-id="5f71c-127">Для сообщений свойство **Total** объекта [сеарчхитсконтаинер](/graph/api/resources/searchhitscontainer?view=graph-rest-beta&preserve-view=true) содержит количество результатов на странице, а не общее число результатов поиска.</span><span class="sxs-lookup"><span data-stu-id="5f71c-127">For messages, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta&preserve-view=true) type contains the number of results on the page, not the total number of matching results.</span></span>
-- <span data-ttu-id="5f71c-128">Сортировка результатов не поддерживается для событий.</span><span class="sxs-lookup"><span data-stu-id="5f71c-128">Sorting results is not supported for events.</span></span> <span data-ttu-id="5f71c-129">Предложение Sort в запросе возвратит код ошибки ошибочного запроса в ответе.</span><span class="sxs-lookup"><span data-stu-id="5f71c-129">A sort clause in the request will return a Bad Request error code in the response.</span></span>
+- <span data-ttu-id="544fb-125">Доступ к почтовому ящику вошедшего пользователя можно получить только из собственного почтового ящика.</span><span class="sxs-lookup"><span data-stu-id="544fb-125">You can access only the signed-in user’s own mailbox.</span></span> <span data-ttu-id="544fb-126">Поиск делегированных почтовых ящиков не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="544fb-126">Searching delegated mailboxes is not supported.</span></span>
+- <span data-ttu-id="544fb-127">Для сообщений свойство **Total** объекта [сеарчхитсконтаинер](/graph/api/resources/searchhitscontainer?view=graph-rest-beta&preserve-view=true) содержит количество результатов на странице, а не общее число результатов поиска.</span><span class="sxs-lookup"><span data-stu-id="544fb-127">For messages, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer?view=graph-rest-beta&preserve-view=true) type contains the number of results on the page, not the total number of matching results.</span></span>
+- <span data-ttu-id="544fb-128">Сортировка результатов не поддерживается для событий.</span><span class="sxs-lookup"><span data-stu-id="544fb-128">Sorting results is not supported for events.</span></span> <span data-ttu-id="544fb-129">Предложение Sort в запросе возвратит код ошибки ошибочного запроса в ответе.</span><span class="sxs-lookup"><span data-stu-id="544fb-129">A sort clause in the request will return a Bad Request error code in the response.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="5f71c-130">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="5f71c-130">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="544fb-130">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="544fb-130">Next steps</span></span>
 
-- [<span data-ttu-id="5f71c-131">Использование API службы поиска Microsoft</span><span class="sxs-lookup"><span data-stu-id="5f71c-131">Use the Microsoft Search API</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [<span data-ttu-id="544fb-131">Использование API службы поиска Microsoft</span><span class="sxs-lookup"><span data-stu-id="544fb-131">Use the Microsoft Search API</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
