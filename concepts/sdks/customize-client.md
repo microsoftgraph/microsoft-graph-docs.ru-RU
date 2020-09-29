@@ -3,12 +3,12 @@ title: Настройка клиента службы SDK Microsoft Graph
 description: В этом разделе приведены инструкции по изменению поведения клиента службы SDK Microsoft Graph по умолчанию.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 67e0fbc00d1c2760d1d6f226213447fe88a70670
-ms.sourcegitcommit: df2c52f84aae5d4fed641d7411ba547371f0eaad
+ms.openlocfilehash: dd8fdca9d093c8164dd486fb185d462b9de0ff0d
+ms.sourcegitcommit: 6eadb95e21b2e7eb5d6b081b91999cb91070f397
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44052556"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48299279"
 ---
 # <a name="customize-the-microsoft-graph-sdk-service-client"></a>Настройка клиента службы SDK Microsoft Graph
 
@@ -103,6 +103,28 @@ export default class CustomLoggingHandler implements Middleware {
     this.nextMiddleware = middleware;
   }
 }
+```
+
+## <a name="java"></a>[Java](#tab/java)
+
+```java
+// you can configure any OkHttpClient option and add interceptors
+// Note: com.microsoft.graph:microsoft-graph:2.3 or above is required
+// for a complete description of available configuration options https://square.github.io/okhttp/4.x/okhttp/okhttp3/-ok-http-client/-builder/
+final OkHttpClient httpClient = HttpClients.createDefault(coreAuthenticationProvider)
+                                .newBuilder()
+                                .followSslRedirects(false) // sample configuration to apply to client
+                                .build();
+
+final IHttpProvider httpProvider = DefaultClientConfig
+                          .createWithAuthenticationProvider(authenticationProvider)
+                          .getHttpProvider(httpClient);
+
+final IGraphServiceClient graphServiceClient = GraphServiceClient
+                .builder()
+                .authenticationProvider(authenticationProvider)
+                .httpProvider(httpProvider)
+                .buildClient();
 ```
 
 ---

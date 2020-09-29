@@ -4,12 +4,12 @@ description: Данные отчетов, доступные через API от
 author: kszb
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: 2830a3ad66f123418712aac214dd30be8227ca90
-ms.sourcegitcommit: a6d284b3726139f11194aa3d23b8bb79165cc09e
+ms.openlocfilehash: ab92cc905bd384bfae17902e86070694951a3fd7
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46810946"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288254"
 ---
 # <a name="authorization-for-apis-to-read-microsoft-365-usage-reports"></a>Авторизация для API с целью чтения отчетов об использовании Microsoft 365
 
@@ -34,7 +34,7 @@ API для чтения отчетов об использовании Microsoft
 
 ## <a name="assign-azure-ad-roles-to-users"></a>Назначение ролей Azure AD для пользователей
 
-После получения приложением разрешений все обладатели доступа к приложению (т. е. участники клиента Azure AD) получат предоставленные разрешения. Чтобы обеспечить дополнительную защиту конфиденциальных данных отчетов, администраторы клиента должны назначить пользователям приложения соответствующие роли Azure AD. Подробности см. в статьях [Разрешения роли администратора в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) и [Назначение ролей администратора и других ролей пользователям с помощью Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal).
+После получения приложением разрешений все обладатели доступа к приложению (т. е. участники клиента Azure AD) получат предоставленные разрешения. Чтобы обеспечить дополнительную защиту конфиденциальных данных отчетов, администраторы клиента должны назначить пользователям приложения соответствующие роли Azure AD. Подробности см. в статьях [Разрешения роли администратора в Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) и [Назначение ролей администратора и других ролей пользователям с помощью Azure Active Directory](/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
 >**Примечание.** Вы должны быть администратором клиента, чтобы выполнить это действие.
 

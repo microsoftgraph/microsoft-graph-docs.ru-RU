@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: f5ff0d6ef17ad4046bdaedf0444df94e1f7bb3df
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 8ed19246dcc7885c9921919724beb5e76ed3b37e
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193213"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289045"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -390,4 +390,4 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 ## <a name="functionality-available-only-in-office-365-rest-or-azure-ad-graph-apis"></a>Функции, доступные только в REST API Office 365 или API Graph Azure AD
 
-Некоторые функции еще не доступны в Microsoft Graph. Если вы не нашли нужную функцию, можете использовать специальные [REST API Office 365](https://docs.microsoft.com/previous-versions/office/office-365-api/). Сведения об Azure Active Directory см. в статье [Миграция приложений Azure AD Graph в Microsoft Graph](https://docs.microsoft.com/graph/migrate-azure-ad-graph-overview). 
+Некоторые функции еще не доступны в Microsoft Graph. Если вы не нашли нужную функцию, можете использовать специальные [REST API Office 365](/previous-versions/office/office-365-api/). Сведения об Azure Active Directory см. в статье [Миграция приложений Azure AD Graph в Microsoft Graph](./migrate-azure-ad-graph-planning-checklist.md).

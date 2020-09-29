@@ -3,12 +3,12 @@ title: Рекомендации по работе с Microsoft Graph
 description: Эта статья содержит рекомендации по эффективному использованию Microsoft Graph в приложениях, независимо от текущей задачи — знакомство с Microsoft Graph, увеличение производительности или повышение надежности приложения.
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 87a6fbdce7364dbccbef04a2da58b97bddb7f5c4
-ms.sourcegitcommit: a21fa7fad3a75f94e924b36d6ab94a3699983bdf
+ms.openlocfilehash: adfb7a1989ddd7667f5afc230f349295ac1c642e
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44226877"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288051"
 ---
 # <a name="best-practices-for-working-with-microsoft-graph"></a>Рекомендации по работе с Microsoft Graph
 
@@ -27,7 +27,7 @@ ms.locfileid: "44226877"
 - заголовке HTTP-запроса *Authorization*, в виде токена *Bearer*;
 - графическом конструкторе клиента при использовании клиентской библиотеки Microsoft Graph.
 
-Чтобы получить маркер доступа к Microsoft Graph, используйте API библиотеки проверки подлинности (Майкрософт) — [MSAL](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-libraries).
+Чтобы получить маркер доступа к Microsoft Graph, используйте API библиотеки проверки подлинности (Майкрософт) — [MSAL](/azure/active-directory/develop/active-directory-v2-libraries).
 
 ## <a name="consent-and-authorization"></a>Согласие и авторизация
 
@@ -42,8 +42,8 @@ ms.locfileid: "44226877"
 - **Будьте внимательны при настройке приложения**. Это непосредственно повлияет на работу пользователей и администраторов, а также на внедрение приложений и их безопасность. Примеры:
 
   - Заявление о конфиденциальности, условия использования, название, логотип и домен приложения будут отображаться в окне согласия и других интерфейсах, поэтому их следует сделать понятными для пользователей.
-  - Учитывайте, кто будет предоставлять согласие вашему приложению — пользователи или администраторы, — и настройте [запрашиваемые разрешения соответствующим образом](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes).
-  - Убедитесь, что вы понимаете разницу между [статическим, динамическим и добавочным согласиями](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent).
+  - Учитывайте, кто будет предоставлять согласие вашему приложению — пользователи или администраторы, — и настройте [запрашиваемые разрешения соответствующим образом](/azure/active-directory/develop/active-directory-v2-scopes).
+  - Убедитесь, что вы понимаете разницу между [статическим, динамическим и добавочным согласиями](/azure/active-directory/develop/active-directory-v2-compare#incremental-and-dynamic-consent).
 
 - **Учитывайте мультитенантные приложения**. Помните, что у клиентов могут быть разные правила относительно приложений и согласия в разных состояниях. Примеры:
 

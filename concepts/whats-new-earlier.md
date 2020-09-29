@@ -3,12 +3,12 @@ title: Обзор предыдущих выпусков Microsoft Graph
 description: Новые возможности в предыдущих выпусках Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 84452d032bb1ee65b02401fca528b0b3e2f7289d
-ms.sourcegitcommit: f4e95b6e06dedeca0aa6b27e8ad1c655b1d45fec
+ms.openlocfilehash: 63ce3a29a94f155e61ad54a7f4c12e82afae2529
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47448448"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289073"
 ---
 # <a name="highlights-of-earlier-releases"></a>Обзор предыдущих выпусков
 
@@ -33,7 +33,7 @@ GA функции, которая позволяет организаторам 
 - GA [именованных расположений](/graph/api/resources/namedLocation), представляющих собой настраиваемые правила, которые определяют сетевые расположения, используемые в политике условного доступа.
 
 ### <a name="schema-extensions"></a>Расширения схемы
-Функция [расширений схемы](/graph/api/resources/schemaextension) теперь общедоступна в [Microsoft Cloud for US Government](/graph/deployments).
+Функция [расширений схемы](/graph/api/resources/schemaextension) теперь общедоступна в [Microsoft Cloud for US Government](./deployments.md).
 
 ### <a name="teamwork"></a>Командная работа
 Используйте делегированные разрешения `TeamsAppInstallation.ReadForTeam` или`TeamsAppInstallation.ReadWriteForTeam`, или разрешения приложений `TeamsAppInstallation.ReadForTeam.All` или `TeamsAppInstallation.ReadWriteForTeam.All`, чтобы [составить список приложений, установленных в группе](/graph/api/teamsappinstallation-list).
@@ -119,7 +119,7 @@ GA функции, которая позволяет организаторам 
 Указание геолокационных данных в [определении столбца](/graph/api/resources/columndefinition) для ресурса [списка](/graph/api/resources/list) SharePoint.
 
 ### <a name="teamwork"></a>Командная работа
-- Использование делегированного разрешения [AppCatalog.Read.All](/graph/permissions-reference#appcatalog-resource-permissions) для перечисления [приложений](/graph/api/resources/teamsapp?view=graph-rest-1.0) из каталога приложений Microsoft Teams.
+- Использование делегированного разрешения [AppCatalog.Read.All](./permissions-reference.md#appcatalog-resource-permissions) для перечисления [приложений](/graph/api/resources/teamsapp?view=graph-rest-1.0) из каталога приложений Microsoft Teams.
 - [Получение информации о папке](/graph/api/channel-get-filesfolder) с сопоставлением вкладки **Файлы** [канала](/graph/api/resources/channel) Teams.
 - [Получение канала по умолчанию](/graph/api/team-get-primarychannel) с меткой **Общие** [команды](/graph/api/resources/team).
 
@@ -193,7 +193,7 @@ GA функции, которая позволяет организаторам 
 
 ### <a name="cloud-communications--call-records"></a>Облачные коммуникации | Записи звонков
 - Общедоступная версия [API записи звонков](/graph/api/resources/callrecords-api-overview?view=graph-rest-1.0). Используйте ресурс [callRecord](/graph/api/resources/callrecord?view=graph-rest-1.0) для получения метаданных звонков и онлайн-собраний в Microsoft Teams и Skype.
-- Подпишитесь на [уведомления об изменениях](/graph/webhooks) для отслеживания изменений всех ресурсов **callRecord** в организации.
+- Подпишитесь на [уведомления об изменениях](./webhooks.md) для отслеживания изменений всех ресурсов **callRecord** в организации.
 - [Список сеансов](/graph/api/callrecords-session-list?view=graph-rest-1.0) в **callRecord** и дополнительное [разворачивание каждого сеанса на сегменты списка](/graph/api/callrecords-session-list?view=graph-rest-1.0#example-2-get-session-list-with-segments) в записи звонка.
 - Поддержка значений диапазонов на 60 ГГц (`frequency60GHz`) и `unknownFutureValue` WiFi конечной точки мультимедиа в сегменте.
 - Поддержка голосовой почты в качестве возможного типа конечной точки на стороне службы в [сегменте](/graph/api/resources/callrecords-segment) связи.
@@ -221,10 +221,10 @@ GA функции, которая позволяет организаторам 
 
 ### <a name="microsoft-graph-sdks"></a>Пакеты SDK Microsoft Graph
 См. новые рекомендации к SDK в отношении следующего:
-- [Разбиение на страницы](/graph/sdks/paging)
-- [Пакетная обработка](/graph/sdks/batch-requests)
-- [Отправка больших файлов в OneDrive](/graph/sdks/large-file-upload)
-- [Настройка клиента службы SDK с помощью компонентов ПО промежуточного слоя для HTTP](/graph/sdks/customize-client).
+- [Разбиение на страницы](./sdks/paging.md)
+- [Пакетная обработка](./sdks/batch-requests.md)
+- [Отправка больших файлов в OneDrive](./sdks/large-file-upload.md)
+- [Настройка клиента службы SDK с помощью компонентов ПО промежуточного слоя для HTTP](./sdks/customize-client.md).
 
 ### <a name="teamwork"></a>Командная работа
 - Если ваш сценарий предполагает онлайн-собрания в Teams, см. рекомендации [ Как выбрать](choose-online-meeting-api.md) между [API календаря](outlook-calendar-online-meetings.md) и [API облачных средств обмена данными](cloud-communications-online-meetings.md) для создания онлайн-собраний и подключения к ним.
@@ -259,7 +259,7 @@ GA функции, которая позволяет организаторам 
 - Укажите ресурсы для подготовки в свойстве **resourceProvisioningOptions**, которые обычно не входят в объем создания [группы](/graph/api/resources/group?view=graph-rest-beta) по умолчанию. В настоящее время поддерживается подготовка группы в качестве [команды](/graph/api/resources/team?view=graph-rest-beta) с возможностями Microsoft Teams.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
-- Применяйте параметры системного запроса OData (`$count`, `$filter`, `$search`) при получении коллекций сущностей, которые являются производными [directoryObject](). Вы можете выполнить [поиск определенных маркеров](/graph/query-parameters?#using-search-on-directory-object-collections) в свойствах **displayName** и **description** этих сущностей, а также использовать OData cast для обрезки результатов **directoryObject** до определенных производных типов. Подробные сведения приведены в статье [Создание расширенных запросов в Microsoft Graph с использованием атрибутов $count, $filter, $search и $orderby](https://developer.microsoft.com/ru-RU/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/).
+- Применяйте параметры системного запроса OData (`$count`, `$filter`, `$search`) при получении коллекций сущностей, которые являются производными [directoryObject](). Вы можете выполнить [поиск определенных маркеров](./query-parameters.md#using-search-on-directory-object-collections) в свойствах **displayName** и **description** этих сущностей, а также использовать OData cast для обрезки результатов **directoryObject** до определенных производных типов. Подробные сведения приведены в статье [Создание расширенных запросов в Microsoft Graph с использованием атрибутов $count, $filter, $search и $orderby](https://developer.microsoft.com/ru-RU/graph/blogs/build-advanced-queries-with-count-filter-search-and-orderby/).
 - В рамках [API защиты удостоверений](/graph/api/resources/identityprotection-root?view=graph-rest-beta) используйте свойство **riskEventType**, чтобы [получить тип определенного риска](/graph/api/riskdetection-get?view=graph-rest-beta) или [получить тип риска в журнале пользователя](/graph/api/riskyuser-list-history?view=graph-rest-beta). Не используйте свойство **riskType**, поскольку оно устарело.
 - Укажите типы клиентского приложения в свойстве **clientAppTypes** [набора свойств](/graph/api/resources/conditionalaccessconditionset?view=graph-rest-beta) для [политики условного доступа](/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta).
 - Используйте делегированное разрешение `EntitlementManagement.Read.All`, чтобы разрешить приложению считывание пакетов доступа, а также связанных ресурсов по управлению правами от имени пользователя, выполнившего вход.
@@ -268,7 +268,7 @@ GA функции, которая позволяет организаторам 
 
 ### <a name="teamwork"></a>Командная работа
 - Приложения Teams, [поддерживающие единый вход (SSO),](/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) могут указывать `WebApplicationInfo.id` из манифеста приложения Teams в свойстве **azureADAppId** в [teamsAppDefinition](/graph/api/resources/teamsappdefinition?view=graph-rest-beta).
-- Используйте [детализированные разрешения](/graph/permissions-reference#teams-resource-specific-consent-permissions) для доступа к ресурсам [team](/graph/api/resources/team?view=graph-rest-beta) и [channel](/graph/api/resources/channel?view=graph-rest-beta).
+- Используйте [детализированные разрешения](./permissions-reference.md#teams-resource-specific-consent-permissions) для доступа к ресурсам [team](/graph/api/resources/team?view=graph-rest-beta) и [channel](/graph/api/resources/channel?view=graph-rest-beta).
 
 
 ## <a name="april-2020-new-and-generally-available"></a>Апрель 2020 г.: новые и общедоступные возможности
@@ -320,7 +320,7 @@ GA функции, которая позволяет организаторам 
 - [Управление](/graph/api/resources/authenticationmethods-overview?view=graph-rest-beta) пользовательскими [методами проверки подлинности](/graph/api/resources/authenticationmethod?view=graph-rest-beta), среди которых [пароль](/graph/api/resources/passwordauthenticationmethod?view=graph-rest-beta) или [телефон](/graph/api/resources/phoneauthenticationmethod?view=graph-rest-beta). Например, [сброс пароля пользователя](/graph/api/passwordauthenticationmethod-resetpassword?view=graph-rest-beta) и [получение состояния сброса](/graph/api/authenticationoperation-get?view=graph-rest-beta) или [добавление номера телефона](/graph/api/authentication-post-phonemethods?view=graph-rest-beta) пользователя для проверки подлинности с помощью SMS или голосового вызова, если для этого пользователя включена соответствующая политика.
 
 ### <a name="reports--identity-and-access-reports"></a>Отчеты | Отчеты об удостоверениях и доступе
-[Список](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) [проверяющих сторон](https://docs.microsoft.com/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts), настроенных в службах федерации Active Directory.
+[Список](/graph/api/relyingpartydetailedsummary-list?view=graph-rest-beta) [проверяющих сторон](/windows-server/identity/ad-fs/technical-reference/understanding-key-ad-fs-concepts), настроенных в службах федерации Active Directory.
 
 ### <a name="reports--microsoft-365-usage-reports"></a>Отчеты | Отчеты об использовании Microsoft 365
 Просмотр данных о **созданных собраниях** и **действиях с уведомлениями о собраниях** в отчетах CSV, включающих [счетчики действий с электронной почтой](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta), [счетчики пользователей, совершающих действия с электронной почтой](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta) и [данные о действиях пользователей с электронной почтой](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta).
@@ -395,7 +395,7 @@ GA функции, которая позволяет организаторам 
 Просмотрите пример [создания события в общем или делегированном календаре](outlook-create-event-in-shared-delegated-calendar.md), а также действия и свойства, доступные для делегата, приглашенных и владельца календаря во время этого процесса.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
-- Чтобы повысить безопасность при подписке на [уведомления об изменениях пользовательских данных](webhooks.md), [установите Transport Layer Security (TLS) 1.2](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2) или выше на клиентах и серверах сайтов, используемых в процессе уведомления. Новое требование вводится поэтапно, начиная с 15 февраля 2020 года. К 15 мая 2020 года все конечные точки уведомления должны соответствовать новому требованию TLS. [Узнайте о стадиях развертывания](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) и при необходимости воспользуйтесь новым свойством **latestSupportedTlsVersion** в качестве временного решения, чтобы избежать сбоев подписки до выполнения обновления TLS.
+- Чтобы повысить безопасность при подписке на [уведомления об изменениях пользовательских данных](webhooks.md), [установите Transport Layer Security (TLS) 1.2](/configmgr/core/plan-design/security/enable-tls-1-2) или выше на клиентах и серверах сайтов, используемых в процессе уведомления. Новое требование вводится поэтапно, начиная с 15 февраля 2020 года. К 15 мая 2020 года все конечные точки уведомления должны соответствовать новому требованию TLS. [Узнайте о стадиях развертывания](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) и при необходимости воспользуйтесь новым свойством **latestSupportedTlsVersion** в качестве временного решения, чтобы избежать сбоев подписки до выполнения обновления TLS.
 - Используйте соответствующие типы [запроса оценки угроз](/graph/api/resources/threatAssessmentRequest?view=graph-rest-1.0) для отслеживания угроз от [почты](/graph/api/resources/mailassessmentrequest?view=graph-rest-1.0), [файла сообщения электронной почты](/graph/api/resources/emailfileassessmentrequest?view=graph-rest-1.0) (. EML-файл), [файлов вложений электронной почты](/graph/api/resources/fileassessmentrequest?view=graph-rest-1.0) (текстовых файлов, файлов Word и двоичных файлов) и [URL-адреса](/graph/api/resources/urlassessmentrequest?view=graph-rest-1.0).
 
 ### <a name="users"></a>Пользователи
@@ -497,7 +497,7 @@ API аналитики имеет общедоступное состояние.
 - Для указанной [группы](/graph/api/resources/group?view=graph-rest-1.0) [проверка участия](/graph/api/group-checkmemberobjects?view=graph-rest-1.0) в других группах или ролях каталога.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
-- Регистрация [приложений](/graph/api/resources/application?view=graph-rest-1.0), проходящих проверку подлинности в Azure Active Directory (Azure AD). Используйте делегированные [разрешения](/graph/permissions-reference#application-resource-permissions), Application.Read.All и Application.ReadWrite.All, или разрешение приложения, Application.Read.All.
+- Регистрация [приложений](/graph/api/resources/application?view=graph-rest-1.0), проходящих проверку подлинности в Azure Active Directory (Azure AD). Используйте делегированные [разрешения](./permissions-reference.md#application-resource-permissions), Application.Read.All и Application.ReadWrite.All, или разрешение приложения, Application.Read.All.
 - Для указанного [устройства](/graph/api/resources/device?view=graph-rest-1.0) [проверка участия](/graph/api/device-checkmemberobjects?view=graph-rest-1.0) в других группах или ролях каталога.
 
 ### <a name="mail"></a>Почта
@@ -559,7 +559,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 
 ### <a name="identity-and-access"></a>Идентификация и доступ
 - Использование [контактов организации](/graph/api/resources/orgcontact?view=graph-rest-1.0) в рабочих приложениях. Контакты организации находятся под управлением администраторов организации и синхронизируются из локальной службы каталогов Active Directory или из Exchange Online.
-- Настройка [проверки подлинности на основе сертификатов](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started) в [организации](/graph/api/resources/organization?view=graph-rest-1.0).
+- Настройка [проверки подлинности на основе сертификатов](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started) в [организации](/graph/api/resources/organization?view=graph-rest-1.0).
 - Добавление и удаление [учетных данных с паролем](/graph/api/resources/passwordcredential?view=graph-rest-1.0) для [приложений](/graph/api/resources/application?view=graph-rest-1.0).
 
 ### <a name="mail"></a>Почта
@@ -571,7 +571,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 
 ### <a name="microsoft-graph-sdks"></a>Пакеты SDK Microsoft Graph
 - Использование обработчиков хаоса в SDK JavaScript для проверки устойчивости приложения к сбоям серверов, возникающим в трудновоспроизводимых условиях.
-- Прочтите о [создании вызовов API с помощью пакетов SDK](/graph/sdks/create-requests).
+- Прочтите о [создании вызовов API с помощью пакетов SDK](./sdks/create-requests.md).
 
 ### <a name="users"></a>Пользователи
 - [Получение](/graph/api/user-get-mailboxsettings?view=graph-rest-1.0) или [настройка](/graph/api/user-update-mailboxsettings?view=graph-rest-1.0) параметров предпочитаемого пользователем формата даты и времени [для почтового ящика пользователя](/graph/api/resources/mailboxsettings?view=graph-rest-1.0). 
@@ -614,7 +614,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 
 ### <a name="microsoft-graph-security-api"></a>Microsoft Graph Security API
 - Предварительная версия интеграции с RSA NetWitness, ServiceNow и Splunk для сопоставления и синхронизации [оповещений](/graph/api/resources/security-api-overview?view=graph-rest-beta#alerts), улучшения защиты от угроз и реагирования.
-- Новые переключатели добавлены в [соединитель безопасности Microsoft Graph](https://docs.microsoft.com/connectors/microsoftgraphsecurity/) и в [сборники схем](https://docs.microsoft.com/azure/security-center/security-center-playbooks) для логических приложений и потоков. См. [примеры сборников схем](https://github.com/microsoftgraph/security-api-solutions/tree/master/Playbooks).
+- Новые переключатели добавлены в [соединитель безопасности Microsoft Graph](/connectors/microsoftgraphsecurity/) и в [сборники схем](/azure/security-center/security-center-playbooks) для логических приложений и потоков. См. [примеры сборников схем](https://github.com/microsoftgraph/security-api-solutions/tree/master/Playbooks).
 - Поддержка отправки [индикаторов угроз](/graph/api/resources/security-api-overview?view=graph-rest-beta#threat-indicators-preview) в Microsoft Defender ATP для блокирования или отправки оповещений об угрозах с использованием собственных источников аналитики. Интеграция с партнерами, такими как ThreatConnect, дает заказчикам возможность отправлять индикаторы непосредственно из решений аналитики угроз и автоматизации. 
 
 ### <a name="notifications"></a>Уведомления
@@ -749,7 +749,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 Применяйте дату и время окончания срока действия или пароль при [создании ссылки для общего доступа](/graph/api/driveitem-createlink?view=graph-rest-beta) к файлу, папке или другому объекту [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta).
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
-- Используйте [новое разрешение приложений](/graph/permissions-reference?#accessreviews-permissions) _AccessReview.ReadWrite.Membership_ для операций CRUD при [проверках доступа](/graph/api/resources/accessreviews-root?view=graph-rest-beta). 
+- Используйте [новое разрешение приложений](./permissions-reference.md#access-reviews-permissions) _AccessReview.ReadWrite.Membership_ для операций CRUD при [проверках доступа](/graph/api/resources/accessreviews-root?view=graph-rest-beta). 
 - Используйте [новые разрешения приложений и делегированные разрешения](permissions-reference.md#administrative-units-permissions) _AdministrativeUnit.Read.All_ и _AdministrativeUnit.ReadWrite.All_ для чтения и записи (включая создание, обновление и удаление участников, а также управление ими) ресурсов [административных единиц](/graph/api/resources/administrativeunit?view=graph-rest-beta) соответственно.
 - Используйте [новые разрешения приложений и делегированные разрешения](permissions-reference.md#organization-permissions) _Organization.Read.All_ и _Organization.ReadWrite.All_ для доступа к [организации](/graph/api/resources/organization?view=graph-rest-beta) и соответствующим ресурсам, например [SKU, на которые оформлена подписка](/graph/api/resources/subscribedsku?view=graph-rest-beta).
 - Используйте новую функцию [обнаружения](/graph/api/directorydefinition-discover?view=graph-rest-beta) для поиска последней [схемы синхронизации](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta) каталога, чтобы синхронизировать объекты каталога, атрибуты и их типы с приложением.
@@ -808,7 +808,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 Используйте более детализированное делегированное разрешение _Mail.ReadBasic_, чтобы читать почтовый ящик пользователя, кроме текста сообщений, текста предварительного просмотра, вложений и расширенных свойств, а также без возможности поиска в почтовом ящике. Доступно для методов чтения [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta) и [отслеживания изменений](delta-query-overview.md) для [сообщения](/graph/api/resources/message?view=graph-rest-beta) и объекта **mailFolder**.
 
 ### <a name="microsoft-graph-toolkit"></a>Набор средств Microsoft Graph
-[Набор средств Microsoft Graph](/graph/toolkit/overview) — это набор не зависящих от платформы веб-компонентов и помощников, обеспечивающий удобную проверку подлинности и доступ к данным в Microsoft Graph.  Так как набор средств Microsoft Graph находится в состоянии предварительной версии, используйте компоненты и поставщиков наборов средств только для тех приложений, которые не предназначены для рабочей среды.
+[Набор средств Microsoft Graph](./toolkit/overview.md) — это набор не зависящих от платформы веб-компонентов и помощников, обеспечивающий удобную проверку подлинности и доступ к данным в Microsoft Graph.  Так как набор средств Microsoft Graph находится в состоянии предварительной версии, используйте компоненты и поставщиков наборов средств только для тех приложений, которые не предназначены для рабочей среды.
 
 ### <a name="reports"></a>Отчеты
 - Получайте [отчеты о методах проверки подлинности](/graph/api/resources/authenticationmethods-usage-insights-overview?view=graph-rest-beta), используемых пользователями в организации, таких как самостоятельное хранение пароля и многофакторная проверка подлинности (MFA).
@@ -830,7 +830,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 
 ### <a name="identity-and-access"></a>Удостоверения и доступ
 [Поставщики удостоверений](/graph/api/resources/identityprovider?view=graph-rest-1.0)
-[Руководство по улучшенной проверке подлинности](/graph/auth)
+[Руководство по улучшенной проверке подлинности](./auth/index.yml)
 [Миграция приложений из Azure AD Graph в Microsoft Graph](migrate-azure-ad-graph-planning-checklist.md)
 
 ### <a name="sdks"></a>Пакеты SDK

@@ -4,12 +4,12 @@ description: 'Microsoft Intune помогает предприятиям упр�
 author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: a18096f53dfa88bd37b0cad11639c3b2285206e6
-ms.sourcegitcommit: 7c03131291113c343a98bb0234d31bd4535a4050
+ms.openlocfilehash: a3fa7e8dcd60a5070e7f52a307d355e0e0df4d04
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "35133770"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288352"
 ---
 # <a name="intune-devices-and-apps-api-overview"></a>Обзор API устройств и приложений Intune
 
@@ -57,7 +57,7 @@ Microsoft Intune помогает предприятиям управлять у
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Доступ к интерфейсам API Intune в Microsoft Graph с использованием Azure AD](https://docs.microsoft.com/intune/intune-graph-apis).
+- [Доступ к интерфейсам API Intune в Microsoft Graph с использованием Azure AD](/intune/intune-graph-apis).
 - Узнайте, как выполнять распространенные задачи, с помощью [примеров PowerShell для Intune](https://github.com/microsoftgraph/powershell-intune-samples).
 - Узнайте, как [использовать REST API Intune](/graph/api/resources/intune-graph-overview?view=graph-rest-1.0).
 - Сведения о новых возможностях API Intune см. в [журнале изменений](changelog.md).

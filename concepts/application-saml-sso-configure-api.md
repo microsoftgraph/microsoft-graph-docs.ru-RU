@@ -5,12 +5,12 @@ author: kenwith
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f1bab27f592d772472933aeebfcdcfdecd6151ab
-ms.sourcegitcommit: 5c3f4a3e2620d1d9e635e09231bbaa73cb0c3cdd
+ms.openlocfilehash: 93a13a651e82c4930b216fd072fd69cd788dc27d
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46673905"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288177"
 ---
 # <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a>Автоматизация настройки единого входа на основе SAML для приложений с помощью API Microsoft Graph
 
@@ -33,10 +33,10 @@ ms.locfileid: "46673905"
 
 |Тип ресурса |Метод |
 |---------|---------|
-|[applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta)|[Перечисление applicationTemplate](https://docs.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-beta&tabs=http) <br>[Создание экземпляра applicationTemplate](https://docs.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&tabs=http)|
-|[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Обновление servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Создание appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-1.0&tabs=http) <br> [Назначение claimsMappingPolicies](https://docs.microsoft.com/graph/api/serviceprincipal-post-claimsmappingpolicies?view=graph-rest-beta&tabs=http)|
-|[applications](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)|[Обновление приложения](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-1.0&tabs=http)|
-|[claimsMappingPolicy](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [Создание claimsMappingPolicy](https://docs.microsoft.com/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?view=graph-rest-beta&tabs=http)
+|[applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta)|[Перечисление applicationTemplate](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) <br>[Создание экземпляра applicationTemplate](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta)|
+|[servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Обновление servicePrincipal](/graph/api/serviceprincipal-update?tabs=http&view=graph-rest-1.0) <br> [Создание appRoleAssignments](/graph/api/serviceprincipal-post-approleassignments?tabs=http&view=graph-rest-1.0) <br> [Назначение claimsMappingPolicies](/graph/api/serviceprincipal-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)|
+|[applications](/graph/api/resources/application?view=graph-rest-1.0)|[Обновление приложения](/graph/api/application-update?tabs=http&view=graph-rest-1.0)|
+|[claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [Создание claimsMappingPolicy](/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)
 
 >[!NOTE]
 >Объекты отклика, приведенные в этой статье, могут быть сокращены для удобства чтения. При фактическом вызове будут возвращены все свойства.
@@ -51,7 +51,7 @@ ms.locfileid: "46673905"
 
 ### <a name="retrieve-the-gallery-application-template-identifier"></a>Получение идентификатора шаблона для приложения из коллекции
 
-У каждого приложения в коллекции приложений Azure AD есть [шаблон](https://docs.microsoft.com/graph/api/applicationtemplate-list?view=graph-rest-beta&tabs=http), описывающий метаданные для этого приложения. По этому шаблону вы можете создать экземпляр приложения и субъект-службу в клиенте для управления им.
+У каждого приложения в коллекции приложений Azure AD есть [шаблон](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta), описывающий метаданные для этого приложения. По этому шаблону вы можете создать экземпляр приложения и субъект-службу в клиенте для управления им.
 
 #### <a name="request"></a>Запрос
 
@@ -119,10 +119,10 @@ Content-type: application/json
 
 ### <a name="create-the-gallery-application"></a>Создание приложения из коллекции
 
-Используя идентификатор шаблона, полученный для приложения на предыдущем шаге, [создайте экземпляр](https://docs.microsoft.com/graph/api/applicationtemplate-instantiate?view=graph-rest-beta&tabs=http) приложения и субъект-службу в клиенте.
+Используя идентификатор шаблона, полученный для приложения на предыдущем шаге, [создайте экземпляр](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) приложения и субъект-службу в клиенте.
 
 > [!NOTE] 
-> Вы можете использовать API applicationTemplate для создания экземпляров [приложений не из коллекции](https://docs.microsoft.com/azure/active-directory/manage-apps/view-applications-portal). Используйте applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
+> Вы можете использовать API applicationTemplate для создания экземпляров [приложений не из коллекции](/azure/active-directory/manage-apps/view-applications-portal). Используйте applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 > [!NOTE]
 > Подождите некоторое время, пока приложение будет подготовлено в клиенте Azure AD. Это не происходит сразу. Одной из стратегий является выполнение запроса GET для объекта приложения или субъекта-службы каждые 5–10 секунд до тех пор, пока запрос не будет успешным.
@@ -223,7 +223,7 @@ Content-type: application/json
 ```
 ### <a name="set-single-sign-on-mode"></a>Настройка режима единого входа
 
-В этом примере вы настроите режим единого входа `saml` для [типа ресурса servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0). Также вы можете настроить другие свойства единого входа SAML: `notificationEmailAddresses`, `loginUrl` и `samlSingleSignOnSettings.relayState`.
+В этом примере вы настроите режим единого входа `saml` для [типа ресурса servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0). Также вы можете настроить другие свойства единого входа SAML: `notificationEmailAddresses`, `loginUrl` и `samlSingleSignOnSettings.relayState`.
 
 Прежде чем этот запрос заработает, необходимо предоставить согласие на вкладке **Изменить разрешения** в песочнице Graph. Кроме того, используйте идентификатор **servicePrincipal**, полученный ранее.
 
@@ -326,9 +326,9 @@ HTTP/1.1 204
 ```
 ### <a name="add-app-roles-optional"></a>Добавление ролей приложения (необязательно)
 
-Если приложение ожидает получить сведения о роли в маркере, добавьте определение ролей в объект приложения. Для AWS вы можете [включить подготовку пользователя](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api), чтобы автоматически получать все роли из учетной записи AWS. 
+Если приложение ожидает получить сведения о роли в маркере, добавьте определение ролей в объект приложения. Для AWS вы можете [включить подготовку пользователя](/azure/active-directory/app-provisioning/application-provisioning-configure-api), чтобы автоматически получать все роли из учетной записи AWS. 
 
-Дополнительные сведения см. в статье [Настройка утверждения роли, выдаваемого в маркере SAML](https://docs.microsoft.com/azure/active-directory/develop/active-directory-enterprise-app-role-management).
+Дополнительные сведения см. в статье [Настройка утверждения роли, выдаваемого в маркере SAML](/azure/active-directory/develop/active-directory-enterprise-app-role-management).
 
 > [!NOTE] 
 > При добавлении ролей приложения не изменяйте стандартные роли приложения msiam_access. 
@@ -422,7 +422,7 @@ HTTP/1.1 204
 | roles | assignedroles |
 | `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier` | userprincipalname |
 
-Дополнительные сведения см. в статье [Настройка утверждений, добавляемых в маркеры](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping).
+Дополнительные сведения см. в статье [Настройка утверждений, добавляемых в маркеры](/azure/active-directory/develop/active-directory-claims-mapping).
 
 > [!NOTE]
 > Некоторые ключи в политике сопоставления утверждений чувствительны к регистру (например, "Version"). Если появляется сообщение об ошибке "Свойство имеет недопустимое значение", это может быть проблема, связанная с регистром.
@@ -519,7 +519,7 @@ HTTP/1.1 204
 
 ## <a name="step-4-configure-signing-certificate"></a>Шаг 4. Настройка сертификата для подписи
 
-При использовании API [applicationTemplate](https://docs.microsoft.com/graph/api/resources/applicationtemplate?view=graph-rest-beta)сертификат для подписи не создается автоматически. Создайте пользовательский сертификат для подписи и назначьте его приложению. 
+При использовании API [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta)сертификат для подписи не создается автоматически. Создайте пользовательский сертификат для подписи и назначьте его приложению. 
 
 ### <a name="create-a-custom-signing-certificate"></a>Создание пользовательского сертификата для подписи
 
@@ -651,7 +651,7 @@ namespace Self_signed_cert
 * Пароль
 * Открытый ключ 
 
-Извлеките закрытый и открытый ключи в кодировке Base64 из PFX-файла. Дополнительные сведения об их свойствах см. в описании [типа ресурса keyCredential](https://docs.microsoft.com/graph/api/resources/keycredential?view=graph-rest-1.0).
+Извлеките закрытый и открытый ключи в кодировке Base64 из PFX-файла. Дополнительные сведения об их свойствах см. в описании [типа ресурса keyCredential](/graph/api/resources/keycredential?view=graph-rest-1.0).
 
 Убедитесь, что значение keyId для keyCredential, примененное для параметра Sign, соответствует значению keyId для passwordCredential. Вы можете создать `customkeyIdentifier`, получив хэш отпечатка сертификата. См. предыдущий код ссылки C#.
 
@@ -798,7 +798,7 @@ Content-type: appRoleAssignments/json
 }
 ```
 
-Подробнее см. в описании [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-1.0).
+Подробнее см. в описании [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0).
 
 ## <a name="step-6-configure-the-application-side"></a>Шаг 6. Настройка на стороне приложения
 
@@ -809,5 +809,5 @@ Content-type: appRoleAssignments/json
 `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- [Настройка подготовки пользователей с помощью API Microsoft Graph](https://docs.microsoft.com/azure/active-directory/app-provisioning/application-provisioning-configure-api)
-- [Использование отчета о действиях приложения AD FS для миграции приложений в Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-application-activity)
+- [Настройка подготовки пользователей с помощью API Microsoft Graph](/azure/active-directory/app-provisioning/application-provisioning-configure-api)
+- [Использование отчета о действиях приложения AD FS для миграции приложений в Azure AD](/azure/active-directory/manage-apps/migrate-adfs-application-activity)

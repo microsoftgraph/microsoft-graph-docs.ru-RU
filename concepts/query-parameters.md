@@ -4,12 +4,12 @@ description: В Microsoft Graph предусмотрены необязател�
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 54660e943204598a7e83c29b8cc7e1d731490146
-ms.sourcegitcommit: c7c198f6fa252b68e91be341b93b818afd387486
+ms.openlocfilehash: 8cbc9e8a1af1f5d668520750e088ed4e2c87d32d
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "47439999"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288646"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Настройка ответов с помощью параметров запроса
 
@@ -95,12 +95,12 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 
 
 Параметр запроса `$count` поддерживается для таких коллекций ресурсов и их отношений, которые являются производными от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta)
-- [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta)
-- [orgContact](https://docs.microsoft.com/graph/api/resources/orgcontact?view=graph-rest-beta)
-- [device](https://docs.microsoft.com/graph/api/resources/device?view=graph-rest-beta)
-- [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta)
-- [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta)
-- [users](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta).
+- [application](/graph/api/resources/application?view=graph-rest-beta)
+- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta)
+- [device](/graph/api/resources/device?view=graph-rest-beta)
+- [group](/graph/api/resources/group?view=graph-rest-beta)
+- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta)
+- [users](/graph/api/resources/user?view=graph-rest-beta).
 
 ## <a name="expand-parameter"></a>Параметр expand
 
@@ -230,12 +230,12 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 > **Примечание.** Сочетание параметров запросов `$orderby` и `$filter` поддерживается в бета-версии конечной точки для следующих ресурсов AD и их связей, полученных из [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta):
 >
->- [application](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-beta)
->- [orgContact](https://docs.microsoft.com/graph/api/resources/orgcontact?view=graph-rest-beta)
->- [device](https://docs.microsoft.com/graph/api/resources/device?view=graph-rest-beta)
->- [group](https://docs.microsoft.com/graph/api/resources/group?view=graph-rest-beta)
->- [servicePrincipal](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-beta)
->- [user](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta)
+>- [application](/graph/api/resources/application?view=graph-rest-beta)
+>- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta)
+>- [device](/graph/api/resources/device?view=graph-rest-beta)
+>- [group](/graph/api/resources/group?view=graph-rest-beta)
+>- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta)
+>- [user](/graph/api/resources/user?view=graph-rest-beta)
 >
 > Чтобы использовать `$orderby` и `$filter` вместе, вам требуется:
 >
@@ -286,11 +286,11 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 Дополнительные сведения о доступных для поиска свойствах, синтаксисе KQL, поддерживаемых операторах и подсказках для поиска вы найдете в таких статьях:
 
-- [Свойства, доступные для поиска в Exchange](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)
+- [Свойства, доступные для поиска в Exchange](/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)
 
-- [Руководство по синтаксису языка запросов по ключевым словам (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Руководство по синтаксису языка запросов по ключевым словам (KQL)](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- [Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](https://technet.microsoft.com/library/dn774955(v=exchg.160).aspx).
+- [Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators).
 
 ### <a name="using-search-on-person-collections"></a>Использование параметра $search в коллекциях person
 

@@ -2,13 +2,13 @@
 title: Интеграция приложения iOS с клиентским пакетом SDK для уведомления пользователей
 description: Интеграция приложения iOS с клиентским пакетом SDK уведомления пользователей.
 localization_priority: Priority
-ms.prod: Microsoft Graph notifications
-ms.openlocfilehash: 007a82f18e1cc8bfcb2dfcd4c18753ed6a3f261d
-ms.sourcegitcommit: 2050639c9e9a6b2dab9ce53d6a9fc87e98789b50
+ms.prod: notifications
+ms.openlocfilehash: 9a89fd3080b4bcc5d16f58be35d9e339388c0e39
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080915"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288674"
 ---
 # <a name="integrate-your-ios-app-with-the-client-side-sdk-for-user-notifications"></a>Интеграция приложения iOS с клиентским пакетом SDK для уведомления пользователей
 
@@ -90,7 +90,7 @@ target 'iOSSample' do
 
 Клиентский SDK создан на основе инфраструктуры, называемой платформой подключенных устройств. Перед использованием каких-либо функций необходимо инициализировать платформу в вашем приложении. Действия по инициализации должны находиться в методе **AppDelegate**, поскольку они должны быть выполнены до использования сценариев уведомлений.
 
-Необходимо создать и инициализировать платформу путем создания экземпляра класса [**MCDConnectedDevicesPlatform**](https://docs.microsoft.com/windows/project-rome/objectivec-api/connecteddevices/mcdconnecteddevicesplatform). Перед этим подключите обработчики событий, как показано здесь, поскольку после запуска платформы могут начать возникать события.  
+Необходимо создать и инициализировать платформу путем создания экземпляра класса [**MCDConnectedDevicesPlatform**](/windows/project-rome/objectivec-api/connecteddevices/mcdconnecteddevicesplatform). Перед этим подключите обработчики событий, как показано здесь, поскольку после запуска платформы могут начать возникать события.  
 
 ```ObjectiveC
 MCDConnectedDevicesPlatform* platform = [MCDConnectedDevicesPlatform new];
@@ -251,6 +251,6 @@ if (notification != nil) {
 
 ## <a name="see-also"></a>См. также
 
-- [Справочник по API](https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/) содержит информацию о всех API-интерфейсах, связанных с функциями уведомлений в SDK. 
+- [Справочник по API](/windows/project-rome/notifications/api-reference-for-ios/) содержит информацию о всех API-интерфейсах, связанных с функциями уведомлений в SDK. 
 - [Пример клиентского кода](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/GraphNotifications) для приложений Android.
-- [Пример серверного кода приложения](notifications-integrating-app-server.md) для публикации уведомлений. 
+- [Пример серверного кода приложения](notifications-integrating-app-server.md) для публикации уведомлений.

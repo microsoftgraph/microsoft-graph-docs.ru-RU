@@ -4,18 +4,18 @@ description: Microsoft Graph — это соответствующий огра
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 54d22a0f0b1b18eeaaaf8bda317d8dc08d0448ee
-ms.sourcegitcommit: feebe30e62aa19ce5cb8e8338e043326e464ed9e
+ms.openlocfilehash: 5a890588fe4b379cf27360db98c4118d0e3ca7d5
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43991742"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288814"
 ---
 # <a name="use-the-microsoft-graph-api"></a>Использование API Microsoft Graph
 
 Microsoft Graph — это соответствующий ограничениям REST веб-API, обеспечивающий доступ к ресурсам службы Microsoft Cloud. После [регистрации приложения](auth-register-app-v2.md) и [получения маркеров аутентификации для пользователя](auth-v2-user.md) или [службы](auth-v2-service.md) можно отправлять запросы к API Microsoft Graph.
 
-> **Важно!** Изменяется принцип применения политик условного доступа к Microsoft Graph. Вам необходимо обновить свои приложения, чтобы они могли обрабатывать сценарии, в которых выполняется настройка политик условного доступа. Дополнительные сведения и рекомендации см. в статье [Руководство для разработчиков по условному доступу в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer).
+> **Важно!** Изменяется принцип применения политик условного доступа к Microsoft Graph. Вам необходимо обновить свои приложения, чтобы они могли обрабатывать сценарии, в которых выполняется настройка политик условного доступа. Дополнительные сведения и рекомендации см. в статье [Руководство для разработчиков по условному доступу в Azure Active Directory](/azure/active-directory/develop/active-directory-conditional-access-developer).
 
 ## <a name="odata-namespace"></a>Пространство имен OData
 
@@ -134,7 +134,7 @@ GET https://graph.microsoft.com/me/calendarView?startDateTime=2019-09-01T09:00:0
 
 Postman — это инструмент, который можно использовать для создания и тестирования запросов с помощью API Microsoft Graph. Вы можете скачать Postman по адресу: `https://www.getpostman.com/`. Чтобы взаимодействовать с Microsoft Graph в Postman, используйте коллекцию Microsoft Graph.
 
-Дополнительные сведения см. в статье [Использование Postman с API Microsoft Graph](https://docs.microsoft.com/graph/use-postman?context=graph%2Fapi%2Fbeta&view=graph-rest-beta).
+Дополнительные сведения см. в статье [Использование Postman с API Microsoft Graph](./use-postman.md?context=graph%252fapi%252fbeta&view=graph-rest-beta).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

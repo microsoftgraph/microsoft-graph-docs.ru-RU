@@ -2,13 +2,13 @@
 title: Интеграция приложения Android с клиентским пакетом SDK для уведомления пользователей
 description: Интеграция приложения Android с клиентским пакетом SDK уведомления пользователей
 localization_priority: Priority
-ms.prod: Microsoft Graph notifications
-ms.openlocfilehash: 4463b89bf95d7b874299542596a3803007406e55
-ms.sourcegitcommit: 566d09c17f9d641b6fac9b9159405a3cc41e037b
+ms.prod: notifications
+ms.openlocfilehash: c56aef1befa98c2082d3476900a8e40c4034653f
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45183948"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288681"
 ---
 # <a name="integrate-your-android-app-with-the-client-side-sdk-for-user-notifications"></a>Интеграция приложения Android с клиентским пакетом SDK для уведомления пользователей
 
@@ -116,7 +116,7 @@ import com.microsoft.connecteddevices.userdata.usernotifications;
 
 Клиентский SDK создан на основе инфраструктуры, называемой платформой подключенных устройств. Перед использованием каких-либо функций необходимо инициализировать платформу в вашем приложении. Действия по инициализации должны находиться в методе **OnCreate** класса main, так как они должны быть выполнены до использования сценариев уведомлений.
 
-Необходимо создать и инициализировать платформу путем создания экземпляра класса [**ConnectedDevicesPlatform**](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest). Перед этим подключите обработчики событий, так как после запуска платформы могут начать возникать события. 
+Необходимо создать и инициализировать платформу путем создания экземпляра класса [**ConnectedDevicesPlatform**](/java/api/com.microsoft.connecteddevices.connecteddevicesplatform?view=rome-android-latest). Перед этим подключите обработчики событий, так как после запуска платформы могут начать возникать события. 
 
 ```java
 ConnectedDevicesPlatform platform = new ConnectedDevicesPlatform(context);
@@ -375,6 +375,6 @@ channel.deleteUserNotificationAsync(notification.getId()).whenCompleteAsync((use
 
 ## <a name="see-also"></a>См. также
 
-- [Справочник по API](https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-android) содержит информацию о всех API-интерфейсах, связанных с функциями уведомлений в SDK. 
+- [Справочник по API](/windows/project-rome/notifications/api-reference-for-android) содержит информацию о всех API-интерфейсах, связанных с функциями уведомлений в SDK. 
 - [Пример клиентского кода](https://github.com/Microsoft/project-rome/tree/master/Android/samples/graphnotificationssample) для приложений Android.
-- [Пример серверного кода приложения](notifications-integrating-app-server.md) для публикации уведомлений. 
+- [Пример серверного кода приложения](notifications-integrating-app-server.md) для публикации уведомлений.

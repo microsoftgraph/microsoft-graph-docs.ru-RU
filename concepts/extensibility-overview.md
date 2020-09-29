@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет одну конечну�
 author: dkershaw10
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 61cd5227e495102a7ac957959cffffc104d85542
-ms.sourcegitcommit: 1f8dc8750a50fb624a33e1d6360d29af38fa9514
+ms.openlocfilehash: e6438451fa4abdf08e288b9d262fdc46c7ce7e59
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46849109"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289220"
 ---
 # <a name="add-custom-data-to-resources-using-extensions"></a>Добавление пользовательских данных в ресурсы с помощью расширений
 
@@ -120,7 +120,7 @@ Microsoft Graph предоставляет одну конечную точку 
 
 ### <a name="azure-ad-directory-schema-extensions"></a>Расширения схемы каталога Azure AD
 
-Azure AD поддерживает схожий тип расширения, известный как [расширения схемы каталога](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), для нескольких ресурсов [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0). Вы можете использовать API Microsoft Graph для управления [определениями свойств расширений](/graph/api/resources/extensionproperty?view=graph-rest-1.0) и для добавления, получения, обновления и удаления _данных_ в свойствах этих расширений.
+Azure AD поддерживает схожий тип расширения, известный как [расширения схемы каталога](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), для нескольких ресурсов [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0). Вы можете использовать API Microsoft Graph для управления [определениями свойств расширений](/graph/api/resources/extensionproperty?view=graph-rest-1.0) и для добавления, получения, обновления и удаления _данных_ в свойствах этих расширений.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -139,7 +139,7 @@ Azure AD поддерживает схожий тип расширения, из
 
 Следующие ограничения распространяются на ресурсы Outlook (такие как **message**, **event**, и **contact**):
 
-- Каждое открытое расширение хранится в [именованном свойстве MAPI](https://msdn.microsoft.com/library/cc765864(v=office.15).aspx), являющемся ограниченным ресурсом в почтовом ящике пользователя. Дополнительные сведения см. в статье [Тип ресурса openTypeExtension](/graph/api/resources/opentypeextension?view=graph-rest-1.0).
+- Каждое открытое расширение хранится в [именованном свойстве MAPI](/office/client-developer/outlook/mapi/mapi-named-properties), являющемся ограниченным ресурсом в почтовом ящике пользователя. Дополнительные сведения см. в статье [Тип ресурса openTypeExtension](/graph/api/resources/opentypeextension?view=graph-rest-1.0).
 
 ### <a name="schema-extension-limits"></a>Ограничения расширений схемы
 
@@ -157,6 +157,6 @@ Azure AD поддерживает схожий тип расширения, из
 
 ## <a name="see-also"></a>См. также
 
-- [Домены Microsoft 365](https://technet.microsoft.com/library/office-365-domains.aspx)
+- [Домены Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/domains)
 
 - [Добавление и проверка домена для клиента Microsoft 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

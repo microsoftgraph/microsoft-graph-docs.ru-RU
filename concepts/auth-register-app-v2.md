@@ -5,12 +5,12 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: graphiamtop20
-ms.openlocfilehash: f7f2bb2d67e4100c618d41e6a7634f86abb4dae7
-ms.sourcegitcommit: 66ceeb5015ea4e92dc012cd48eee84b2bbe8e7b4
+ms.openlocfilehash: 12cf99ba3e97c699ba4531cb7f0a02b6211e9627
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "37054042"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289500"
 ---
 # <a name="register-an-application-with-the-microsoft-identity-platform"></a>Регистрация приложения с помощью платформы удостоверений Майкрософт
 
@@ -38,7 +38,7 @@ ms.locfileid: "37054042"
        - Для веб-приложений укажите основной URL-адрес приложения. Например, `http://localhost:31544` может быть URL-адресом веб-приложения, выполняемого на локальном компьютере. Пользователи будут использовать этот URL-адрес для входа в приложение веб-клиента.
        - Для общедоступных клиентских приложений укажите универсальный код ресурса (URI), который использует AAD для возвращения ответов маркера. Укажите значение, специфичное для вашего приложения, например `myapp://auth`.
 
-     Конкретные примеры для веб-приложений или собственных приложений см. в наших [кратких руководствах](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
+     Конкретные примеры для веб-приложений или собственных приложений см. в наших [кратких руководствах](/azure/active-directory/develop/#quickstarts).
 
 1. По завершении щелкните **Зарегистрировать**.
 
@@ -63,11 +63,11 @@ AAD присвоит вашему приложению уникальный ид
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Узнайте больше о [разрешениях и согласии](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent) или просмотрите [справочник по разрешениям](permissions-reference.md) Microsoft Graph.
+- Узнайте больше о [разрешениях и согласии](/azure/active-directory/develop/v2-permissions-and-consent) или просмотрите [справочник по разрешениям](permissions-reference.md) Microsoft Graph.
 - Сведения о том, как включить дополнительные функции настройки при регистрации приложения (учетные данные, разрешения) и включить вход для пользователей из других клиентов, см. в руководствах ниже:
-  - [Настройка клиентского приложения для доступа к веб-API](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis)
-  - [Настройка приложения для доступа к веб-API](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-expose-web-apis)
-  - [Изменение учетных записей, поддерживаемых приложением](https://docs.microsoft.com/azure/active-directory/develop/quickstart-modify-supported-accounts)
-- Следуя этим [кратким руководствам](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts), можно быстро создать приложение и добавить в него такие функциональные возможности, как получение и обновление маркеров, выполнение входа пользователя, отображение некоторых сведений о пользователе и многое другое.
-- Дополнительные сведения о двух объектах Azure AD, представляющих зарегистрированное приложение, и о взаимосвязи между ними: [Объекты приложения и субъекта-службы](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals).
-- Дополнительные сведения о фирменной символике, которой следует пользоваться при разработке приложений, см. в [рекомендациях по использованию фирменной символики для приложений](https://docs.microsoft.com/azure/active-directory/develop/howto-add-branding-in-azure-ad-apps).
+  - [Настройка клиентского приложения для доступа к веб-API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis)
+  - [Настройка приложения для доступа к веб-API](/azure/active-directory/develop/quickstart-configure-app-expose-web-apis)
+  - [Изменение учетных записей, поддерживаемых приложением](/azure/active-directory/develop/quickstart-modify-supported-accounts)
+- Следуя этим [кратким руководствам](/azure/active-directory/develop/#quickstarts), можно быстро создать приложение и добавить в него такие функциональные возможности, как получение и обновление маркеров, выполнение входа пользователя, отображение некоторых сведений о пользователе и многое другое.
+- Дополнительные сведения о двух объектах Azure AD, представляющих зарегистрированное приложение, и о взаимосвязи между ними: [Объекты приложения и субъекта-службы](/azure/active-directory/develop/app-objects-and-service-principals).
+- Дополнительные сведения о фирменной символике, которой следует пользоваться при разработке приложений, см. в [рекомендациях по использованию фирменной символики для приложений](/azure/active-directory/develop/howto-add-branding-in-azure-ad-apps).

@@ -4,21 +4,21 @@ description: Узнайте, как устранить ошибки автори
 author: davidmu1
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7a15bab8807a8f19c7af0e2804cc5ea10b5dbdfb
-ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
+ms.openlocfilehash: c0379ed6559d06d35a6bc5e85080c8e36b562ed1
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43511188"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288625"
 ---
 # <a name="resolve-microsoft-graph-authorization-errors"></a>Устранение ошибок авторизации в Microsoft Graph
 
 Ошибки авторизации могут возникать в результате ряда различных неполадок, большая часть которых приводит к возникновению ошибки 403 (за некоторыми исключениями). Например, ошибки авторизации могут возникнуть в результате следующих неполадок:
 
-* Некорректные [потоки получения маркеров доступа](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)
-* Неправильно настроенные [области разрешений](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
-* Отсутствие [согласия](https://docs.microsoft.com/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#understanding-user-and-admin-consent)
-* Отсутствие [разрешений](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent)
+* Некорректные [потоки получения маркеров доступа](/azure/active-directory/develop/active-directory-authentication-scenarios)
+* Неправильно настроенные [области разрешений](/azure/active-directory/develop/active-directory-v2-scopes)
+* Отсутствие [согласия](/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#understanding-user-and-admin-consent)
+* Отсутствие [разрешений](/azure/active-directory/develop/v2-permissions-and-consent)
 
 ## <a name="steps-to-resolve-common-errors"></a>Действия по устранению распространенных ошибок
 
@@ -26,28 +26,28 @@ ms.locfileid: "43511188"
 
 **Ошибка "401 — недостаточно прав": является ли маркер допустимым?** <br>
 
-Убедитесь, что приложение выводит допустимый маркер доступа к Microsoft Graph в рамках запроса. Эта ошибка часто означает, что маркер доступа отсутствует в заголовке HTTP-запроса на проверку подлинности, что он недопустим или срок его действия истек. Мы настоятельно рекомендуем использовать [Библиотеку проверки подлинности Майкрософт (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview) для получения маркеров доступа. Кроме того, эта ошибка может возникать при попытке использовать маркер делегированного доступа, предоставленный личной учетной записи Майкрософт, для доступа к API, который поддерживает только рабочие или учебные учетные записи (учетные записи организации). 
+Убедитесь, что приложение выводит допустимый маркер доступа к Microsoft Graph в рамках запроса. Эта ошибка часто означает, что маркер доступа отсутствует в заголовке HTTP-запроса на проверку подлинности, что он недопустим или срок его действия истек. Мы настоятельно рекомендуем использовать [Библиотеку проверки подлинности Майкрософт (MSAL)](/azure/active-directory/develop/msal-overview) для получения маркеров доступа. Кроме того, эта ошибка может возникать при попытке использовать маркер делегированного доступа, предоставленный личной учетной записи Майкрософт, для доступа к API, который поддерживает только рабочие или учебные учетные записи (учетные записи организации). 
 
 **Ошибка "403 — запрещено": выбран ли соответствующий набор разрешений?**<br>
 
 Убедитесь, что вы запросили правильный набор разрешений на основе API Microsoft Graph, который вызывает приложение. Минимальные разрешения, которые мы рекомендуем, рассматриваются во всех статьях, посвященных методу API Microsoft Graph. Кроме того, эти разрешения должны быть предоставлены приложению пользователем или администратором. Для предоставления разрешений обычно используется страница подтверждения или колонка "Регистрация приложений" на портале Azure. В колонке для приложения **Параметры** выберите **Необходимые разрешения** > **Предоставить разрешения**. <br>
 
-* [Разрешения Microsoft Graph](https://docs.microsoft.com/graph/permissions-reference) <br>
-* [Общие сведения о разрешениях Azure AD и согласии](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent) <br>
+* [Разрешения Microsoft Graph](./permissions-reference.md) <br>
+* [Общие сведения о разрешениях Azure AD и согласии](/azure/active-directory/develop/v2-permissions-and-consent) <br>
 
 **Ошибка "403 — запрещено": получило ли приложение маркер для соответствия выбранным разрешениям?** <br>
 
 Убедитесь, что тип запрошенных или предоставленных разрешений совпадает с типом маркера доступа, который получает приложение. Возможно, вы запрашиваете и предоставляете разрешения для приложения, но используете маркеры потоков делегированного интерактивного кода вместо маркеров потоков учетных данных клиента, или запрашиваете и предоставляете делегированные разрешения, но используете маркеры потоков учетных данных клиента вместо маркеров потоков делегированного кода. <br>
-* [Получение доступа от имени пользователей и делегированные разрешения](https://docs.microsoft.com/graph/auth_v2_user) 
-* [Azure AD версии 2.0 — поток кода авторизации OAuth 2.0](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-auth-code-flow)
-* [Получение доступа без пользователя (служба управляющей программы) и разрешения приложения](https://docs.microsoft.com/graph/auth_v2_service)
-* [Azure AD версии 2.0 — поток учетных данных клиента OAuth 2.0](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
+* [Получение доступа от имени пользователей и делегированные разрешения](/graph/auth_v2_user) 
+* [Azure AD версии 2.0 — поток кода авторизации OAuth 2.0](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
+* [Получение доступа без пользователя (служба управляющей программы) и разрешения приложения](/graph/auth_v2_service)
+* [Azure AD версии 2.0 — поток учетных данных клиента OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
 
 **Ошибка "403 — запрещено": сброс пароля** <br>
 
 В настоящее время нет разрешений для служб программы, управляющей разрешениями приложения, которые позволяют сбросить пароли пользователей. Эти API поддерживаются только с помощью потоков интерактивного делегированного кода для администратора, выполнившего вход.
 
-* [Разрешения Microsoft Graph](https://docs.microsoft.com/graph/permissions-reference) <br>
+* [Разрешения Microsoft Graph](./permissions-reference.md) <br>
 
 **Ошибка "403 — запрещено": есть ли доступ у пользователя, и имеет ли он лицензию?** <br>
 
@@ -61,5 +61,5 @@ Microsoft Graph определяет, разрешено ли выполнени
 
 На основании политик условного доступа организации у пользователя, получающего доступ к ресурсам Microsoft Graph через ваше приложение, могут быть запрошены дополнительные сведения, отсутствующие в маркере доступа, который изначально был получен вашим приложением. В этом случае приложение получает сообщение об ошибке 400 с *interaction_required* при получении маркера доступа или сообщение об ошибке 403 с *insufficient_claims* при вызове Microsoft Graph. В обоих случаях сообщение об ошибке содержит дополнительные сведения, которые могут быть представлены в конечную точку авторизации, чтобы запросить у пользователя дополнительную информацию (например, многофакторная проверка подлинности или регистрация устройства).
 
-* [Обработка запросов условного доступа с помощью MSAL](https://docs.microsoft.com/azure/active-directory/develop/msal-handling-exceptions#conditional-access-and-claims-challenges)
-* [Руководство для разработчиков по условному доступу в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/conditional-access-dev-guide)
+* [Обработка запросов условного доступа с помощью MSAL](/azure/active-directory/develop/msal-handling-exceptions#conditional-access-and-claims-challenges)
+* [Руководство для разработчиков по условному доступу в Azure Active Directory](/azure/active-directory/develop/conditional-access-dev-guide)

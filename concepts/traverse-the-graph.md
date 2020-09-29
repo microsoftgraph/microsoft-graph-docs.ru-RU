@@ -3,12 +3,12 @@ title: Доступ к данным и методам с помощью Microsof
 description: Помимо чтения и записи данных с помощью API Microsoft Graph, вы можете использовать шаблоны запросов для просмотра ресурсов в Microsoft Graph. Документ метаданных поможет вам разобраться в модели данных ресурсов и отношений в Microsoft Graph.
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: c00179e5ea39f5be40308e400774bb1316ff8c3a
-ms.sourcegitcommit: 272996d2772b51105ec25f1cf7482ecda3b74ebe
+ms.openlocfilehash: 22f396f3ceb050f0802ac77e51e5445f5f4c871c
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42448538"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288491"
 ---
 # <a name="access-data-and-methods-by-navigating-microsoft-graph"></a>Доступ к данным и методам с помощью Microsoft Graph
 
@@ -350,4 +350,4 @@ content-length: 96
 ## <a name="see-also"></a>См. также
 
 - [Использование API Microsoft Graph](use-the-api.md)
-- [Получение токенов аутентификации](/graph/auth)
+- [Получение токенов аутентификации](./auth/index.yml)

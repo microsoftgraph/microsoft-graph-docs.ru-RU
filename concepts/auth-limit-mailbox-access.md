@@ -4,16 +4,16 @@ description: Чтобы ограничить область разрешений
 author: svpsiva
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 75778efe46552eef0c7798cd602eed99ef871d5e
-ms.sourcegitcommit: 195fa0d441a49662e144323d37518dbba0c76fc7
+ms.openlocfilehash: 530a7d3628b789e3ed61f4fd4e36f6dff4b53f55
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43806835"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288142"
 ---
 # <a name="scoping-application-permissions-to-specific-exchange-online-mailboxes"></a>Ограничение области разрешений для приложений с указанием определенных почтовых ящиков Exchange Online 
 
-Некоторые приложения вызывают Microsoft Graph от своего имени, а не от имени пользователя. Обычно это фоновые службы и управляющие программы, которые работают на сервере без выполнившего вход пользователя. В таких приложениях используется [поток предоставления учетных данных клиента OAuth 2.0](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow), обеспечивающий проверку подлинности, и заданы настройки разрешений для приложений, которые позволяют таким приложениям получать доступ ко всем почтовым ящикам организации на сервере Exchange Online. Например с помощью разрешения для приложения Mail.Read приложения могут считывать почту во всех почтовых ящиках без выполнившего вход пользователя. 
+Некоторые приложения вызывают Microsoft Graph от своего имени, а не от имени пользователя. Обычно это фоновые службы и управляющие программы, которые работают на сервере без выполнившего вход пользователя. В таких приложениях используется [поток предоставления учетных данных клиента OAuth 2.0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow), обеспечивающий проверку подлинности, и заданы настройки разрешений для приложений, которые позволяют таким приложениям получать доступ ко всем почтовым ящикам организации на сервере Exchange Online. Например с помощью разрешения для приложения Mail.Read приложения могут считывать почту во всех почтовых ящиках без выполнившего вход пользователя. 
 
 Администраторам, которые хотят ограничить доступ приложения к определенному набору почтовых ящиков, можно воспользоваться командлетом PowerShell **New-ApplicationAccessPolicy**, чтобы настроить управление доступом. В этой статье описаны основные действия, которые необходимо выполнить для настройки политики доступа приложения.
 
@@ -22,7 +22,7 @@ ms.locfileid: "43806835"
 ## <a name="configure-applicationaccesspolicy"></a>Настройка ApplicationAccessPolicy
 
 Чтобы настроить политику доступа приложения и ограничить область разрешений для приложения, выполните указанные ниже действия.
-1.  Подключитесь к Exchange Online PowerShell. Подробнее см. статью [Подключение к Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1.  Подключитесь к Exchange Online PowerShell. Подробнее см. статью [Подключение к Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
 2.  Определите идентификатор клиента приложения и группу безопасности с поддержкой электронной почты, чтобы ограничить доступ приложения.
 
@@ -59,7 +59,7 @@ ms.locfileid: "43806835"
 - Contacts.Read
 - Contacts.ReadWrite
 
-Дополнительные сведения о настройке политики доступа приложения см. в справочнике по командлету PowerShell [New-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/new-applicationaccesspolicy). 
+Дополнительные сведения о настройке политики доступа приложения см. в справочнике по командлету PowerShell [New-ApplicationAccessPolicy](/powershell/module/exchange/organization/new-applicationaccesspolicy). 
 
 ## <a name="handling-api-errors"></a>Обработка ошибок API
 Если API-вызову будет отказано в доступе из-за настроек политики доступа приложения, может появиться указанное ниже сообщение об ошибке. 
@@ -82,8 +82,8 @@ ms.locfileid: "43806835"
 ## <a name="see-also"></a>Дополнительные ресурсы
 
 - [Справочник по разрешениям](permissions-reference.md)
-- [New-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/new-applicationaccesspolicy)
-- [Get-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/get-applicationaccesspolicy)
-- [Remove-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/remove-applicationaccesspolicy)
-- [Set-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/set-applicationaccesspolicy)
-- [Test-ApplicationAccessPolicy](https://docs.microsoft.com/powershell/module/exchange/organization/test-applicationaccesspolicy)
+- [New-ApplicationAccessPolicy](/powershell/module/exchange/organization/new-applicationaccesspolicy)
+- [Get-ApplicationAccessPolicy](/powershell/module/exchange/organization/get-applicationaccesspolicy)
+- [Remove-ApplicationAccessPolicy](/powershell/module/exchange/organization/remove-applicationaccesspolicy)
+- [Set-ApplicationAccessPolicy](/powershell/module/exchange/organization/set-applicationaccesspolicy)
+- [Test-ApplicationAccessPolicy](/powershell/module/exchange/organization/test-applicationaccesspolicy)

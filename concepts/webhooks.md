@@ -5,12 +5,12 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 2dec25283a7517a723013b3571bb252fcaac7ddd
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 884a06319ffb73ea2121fe600589ee369038da58
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193164"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288156"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -272,7 +272,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 ## <a name="firewall-configuration"></a>Конфигурация брандмауэра
 
-При необходимости можно настроить брандмауэр, который защищает URL-адрес уведомления, чтобы разрешить входящие подключения только из Microsoft Graph. Это позволит снизить дополнительное воздействие недопустимых уведомлений об изменениях, которые отправляются на URL-адрес уведомления. Такие недействительные уведомления об изменениях могут пытаться активировать реализуемую вами пользовательскую логику. Полный список IP-адресов, которые используются Microsoft Graph для доставки уведомлений об изменениях, см в сведениях о[дополнительных конечных точках для Microsoft 365](https://docs.microsoft.com/office365/enterprise/additional-office365-ip-addresses-and-urls).
+При необходимости можно настроить брандмауэр, который защищает URL-адрес уведомления, чтобы разрешить входящие подключения только из Microsoft Graph. Это позволит снизить дополнительное воздействие недопустимых уведомлений об изменениях, которые отправляются на URL-адрес уведомления. Такие недействительные уведомления об изменениях могут пытаться активировать реализуемую вами пользовательскую логику. Полный список IP-адресов, которые используются Microsoft Graph для доставки уведомлений об изменениях, см в сведениях о[дополнительных конечных точках для Microsoft 365](/office365/enterprise/additional-office365-ip-addresses-and-urls).
 
 > **Примечание.** Указанные IP-адреса, которые используются для доставки уведомлений об изменениях, можно обновлять в любой момент без предварительных примечаний.
 
