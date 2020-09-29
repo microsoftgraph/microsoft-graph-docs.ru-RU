@@ -1,23 +1,23 @@
 ---
 title: Обзор API для хранилища файлов OneDrive
-description: OneDrive является центром файлов в Office 365.
+description: OneDrive является центром файлов в Microsoft 365.
 localization_priority: Priority
 ms.prod: onedrive
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b0b548880d788e6b8d98596e06f0071e7bdc3a8e
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 59c9c711f7728b65006d1553cb9595dcecc76ed1
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969349"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289087"
 ---
 # <a name="onedrive-file-storage-api-overview"></a>Обзор API для хранилища файлов OneDrive
 
-OneDrive является центром файлов в Office 365.
+OneDrive является центром файлов в Microsoft 365.
 Люди работают с файлами в различных контекстах, например Microsoft Teams, группах, SharePoint и т. д.
 С OneDrive пользователи открывать эти файлы независимо от того, где они хранятся, а с Microsoft Graph для работы с ними можно использовать один API.
 
-Файлы в Office 365 хранятся на [дисках][Drive API].
+Файлы в Microsoft 365 хранятся на [дисках][Drive API].
 Пользователи могут хранить файлы на личном (своем OneDrive) либо общем диске на базе библиотеки документов [SharePoint][].
 Гибкость OneDrive позволяет пользователям работать с коллегами так, как им удобно.
 Пользователи могут делиться ссылками на файлы, копировать либо перемещать файлы на диски групп или даже прикреплять файлы OneDrive к почтовым сообщениям в Outlook.
@@ -78,7 +78,7 @@ Microsoft Graph открывает доступ к различному соде
 
 [SharePoint]: sharepoint-concept-overview.md
 [средство выбора файлов]: https://dev.onedrive.com/sdk/js-v72/js-picker-overview.htm
-[обработчик файлов]: https://docs.microsoft.com/onedrive/developer/file-handlers
+[обработчик файлов]: /onedrive/developer/file-handlers
 [специальные папки]: /graph/api/drive-get-specialfolder?view=graph-rest-1.0
 [API заметок]: integrate-with-onenote.md
 [API Excel]: /graph/api/resources/excel?view=graph-rest-1.0
