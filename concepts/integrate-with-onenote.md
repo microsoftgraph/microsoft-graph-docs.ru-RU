@@ -5,12 +5,12 @@ author: Jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 3c4fe67529b920c9a346636cc3e1d6724d469b51
-ms.sourcegitcommit: ed03445225e98cf0881de08273c36be8d0e576ea
+ms.openlocfilehash: 933c37df5b02eef73c44e5dcff0386fef06e49f3
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "40951918"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288884"
 ---
 # <a name="onenote-api-overview"></a>Обзор API OneNote
 
@@ -36,7 +36,7 @@ OneNote можно использовать как холст, где польз
 
 ### <a name="reach-millions-of-onenote-users-on-all-major-platforms"></a>Доступ для миллионов пользователей OneNote на всех основных платформах
 
-С помощью OneNote вы можете сделать свое приложение более популярным. Приложение OneNote предустановлено на новых устройствах с Windows и доступно на большинстве платформ, в Интернете и в составе Office 365. При публикации приложений, использующих многофункциональную среду OneNote, вам открывается доступ к обширному кроссплатформенному рынку.
+С помощью OneNote вы можете сделать свое приложение более популярным. Приложение OneNote предустановлено на новых устройствах с Windows и доступно на большинстве платформ, в Интернете и в составе Microsoft 365. При публикации приложений, использующих многофункциональную среду OneNote, вам открывается доступ к обширному кроссплатформенному рынку.
 
 <!-- Might be good to show a few examples of Microsoft Graph API calls here, similar to what we have in the featured scenarios topic: featured_scenarios..md You could have an H2 section called "What can I do with OneNote APIs in Microsoft Graph?"-->
 
@@ -80,14 +80,14 @@ OneNote можно использовать как холст, где польз
 ## <a name="see-also"></a>См. также
 Узнайте о других функциях OneNote, которые предоставляются только на конечной точке REST для службы OneNote.
 
-- [Разработка для OneNote](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-landing)
-- [Работа с записными книжками для занятий](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
-- [Работа с асинхронными записными книжками для занятий](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
-- [Работа со служебными записными книжками](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
-- [Копирование записных книжек, разделов и страниц](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-copy)
-- [Управление разрешениями на объекты OneNote](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
-- [Использование диалогового окна сохранения OneNote на веб-страницах](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
-- [Подписка на веб-перехватчики](https://docs.microsoft.com/previous-versions/office/office-365-api/how-to/onenote-sync)
+- [Разработка для OneNote](/previous-versions/office/office-365-api/how-to/onenote-landing)
+- [Работа с записными книжками для занятий](/previous-versions/office/office-365-api/how-to/onenote-classnotebook)
+- [Работа с асинхронными записными книжками для занятий](/previous-versions/office/office-365-api/how-to/onenote-classnotebook-asynchronous)
+- [Работа со служебными записными книжками](/previous-versions/office/office-365-api/how-to/onenote-staffnotebook)
+- [Копирование записных книжек, разделов и страниц](/previous-versions/office/office-365-api/how-to/onenote-copy)
+- [Управление разрешениями на объекты OneNote](/previous-versions/office/office-365-api/how-to/onenote-manage-perms)
+- [Использование диалогового окна сохранения OneNote на веб-страницах](/previous-versions/office/office-365-api/how-to/onenote-save-dialog)
+- [Подписка на веб-перехватчики](/previous-versions/office/office-365-api/how-to/onenote-sync)
 
 ## <a name="api-reference"></a>Справочные материалы по API
 Ищете справочные материалы по API для этой службы?
@@ -102,4 +102,3 @@ OneNote можно использовать как холст, где польз
 Чтобы отправлять вызовы API OneNote из песочницы Graph, нажмите **Показать другие примеры** в столбце слева. **Включите** OneNote с помощью меню. Вам также потребуется включить соответствующие разрешения. В меню слева под именем учетной записи выберите **Изменить разрешения**. Дополнительные сведения о разрешениях OneNote см. в разделе [Разрешения для заметок](permissions-reference.md#notes-permissions).
 
 Сведения о том, как приступить к работе с API OneNote в Microsoft Graph, см. в [справочных материалах по OneNote](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0).
-

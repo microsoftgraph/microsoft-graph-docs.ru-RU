@@ -5,24 +5,24 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: graphiamtop20
-ms.openlocfilehash: c83d04e00882f306f9ec396db5cd17cfca520c66
-ms.sourcegitcommit: b1e1f614299f668453916bd85761ef7b6c8d6eff
+ms.openlocfilehash: 7a04ae1e436e44699d7e3c10322eb7552df982bd
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37969498"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288135"
 ---
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>Вызов Microsoft Graph из приложения CSP
 
 > **Примечание.** Эта статья предназначена **только** для разработчиков приложений CSP. Программа [Поставщик облачных решений (Майкрософт) (CSP)](https://partner.microsoft.com/cloud-solution-provider) позволяет партнерам Майкрософт перепродавать веб-службы Майкрософт клиентам и управлять ими.
 
-В этой статье описано, как обеспечить доступ приложения к данным пользователей, управляемым партнером, через Microsoft Graph с помощью [потока предоставления кодов авторизации](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code) или [потока клиентских учетных данных между службами](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
+В этой статье описано, как обеспечить доступ приложения к данным пользователей, управляемым партнером, через Microsoft Graph с помощью [потока предоставления кодов авторизации](/azure/active-directory/develop/active-directory-protocols-oauth-code) или [потока клиентских учетных данных между службами](/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
 
 **Важно!** Вызов Microsoft Graph из приложения CSP поддерживается только для ресурсов каталога (таких как **user**, **group**, **device**, **organization**) и ресурсов [Intune](/graph/api/resources/intune-graph-overview?view=graph-rest-beta).
 
 ## <a name="what-is-a-partner-managed-application"></a>Приложение, управляемое партнером
 
-Программа CSP позволяет партнерам Майкрософт перепродавать веб-службы Майкрософт (такие как Office 365, Microsoft Azure и CRM Online) клиентам и управлять ими. Управление службами клиента осуществляется с помощью делегированных полномочий администратора, которые позволяют агентам партнера настраивать среды клиентов.
+Программа "Поставщик облачных решений (Майкрософт)" позволяет партнерам Майкрософт перепродавать веб-службы Майкрософт (такие как Microsoft 365, Microsoft Azure и CRM Online) клиентам и управлять ими. Управление службами клиента осуществляется с помощью делегированных полномочий администратора, которые позволяют агентам партнера настраивать среды клиентов.
 
 Кроме того, партнер-разработчик может создать **приложение, управляемое партнером**, для управления службами Майкрософт клиента. Приложения, управляемые партнером, часто называются приложениями *с предварительным доступом*, так как этим приложениям автоматически предоставляется доступ к данным всех клиентов. При работе с ними пользователю из одного из доменов клиента не нужно давать согласие на доступ к данным. Приложения, управляемые партнерами, также наследуют делегированные права администратора, поэтому агенты партнера также могут получить привилегированный доступ к клиентам через такое приложение.
 
@@ -36,7 +36,7 @@ ms.locfileid: "37969498"
 
 Описанные здесь первые шаги похожи на большинство аналогичных действий по регистрации и настройке мультитенантного приложения.
 
-1. [Зарегистрируйте приложение](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration) в домене Партнера на [портале Azure](https://portal.azure.com). Настройте приложение как [мультитенантное](https://docs.microsoft.com/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#update-registration-to-be-multi-tenant), чтобы партнер мог им управлять. Если приложение развернуто и продается в нескольких географических регионах, его нужно зарегистрировать в каждом из них, как описано <a href="#region">здесь</a>.
+1. [Зарегистрируйте приложение](/azure/active-directory/active-directory-app-registration) в домене Партнера на [портале Azure](https://portal.azure.com). Настройте приложение как [мультитенантное](/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#update-registration-to-be-multi-tenant), чтобы партнер мог им управлять. Если приложение развернуто и продается в нескольких географических регионах, его нужно зарегистрировать в каждом из них, как описано <a href="#region">здесь</a>.
 2. Настройте мультитенантное приложение еще раз на портале Azure, указав *необходимые разрешения* и используя способ, предусматривающий минимальные привилегии.
 
 ### <a name="pre-consent-your-app-for-all-your-customers"></a>Предоставление приложению доступа к данным всех клиентов
@@ -69,7 +69,7 @@ ms.locfileid: "37969498"
 
 ## <a name="token-acquisition-flows"></a>Потоки получения маркеров
 
-Потоки получения токенов для приложений, управляемых партнерами, ничем не отличаются от таковых для обычных мультитенантных приложений. Доступны [поток предоставления кодов авторизации](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code) и [поток учетных данных клиентов между службами](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
+Потоки получения токенов для приложений, управляемых партнерами, ничем не отличаются от таковых для обычных мультитенантных приложений. Доступны [поток предоставления кодов авторизации](/azure/active-directory/develop/active-directory-protocols-oauth-code) и [поток учетных данных клиентов между службами](/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
 
 Помимо предварительного доступа ко всем доменам клиента, приложения, управляемые партнерами, имеют одну дополнительную возможность. С помощью таких приложений агенты могут получать доступ к данным доменов клиентов (используя делегированные права администратора). Принцип работы изложен ниже.
 
@@ -77,15 +77,15 @@ ms.locfileid: "37969498"
 2. Приложение запрашивает маркер доступа для нужного клиента, управляемого партнером.
 3. Приложение использует маркер доступа для вызова Microsoft Graph.
 
-Это стандартный [поток предоставления кодов авторизации](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code), но агенты должны входить в свои учетные записи партнеров. Рассмотрим, как это выглядит на практике. Допустим, домен партнера — *partner.com* (домашний домен агентов), а домен клиента — *customer.com*:
+Это стандартный [поток предоставления кодов авторизации](/azure/active-directory/develop/active-directory-protocols-oauth-code), но агенты должны входить в свои учетные записи партнеров. Рассмотрим, как это выглядит на практике. Допустим, домен партнера — *partner.com* (домашний домен агентов), а домен клиента — *customer.com*:
 
-1. [Получите код авторизации.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code) Приложение отправляет запрос в конечную точку ```/authorize``` и должно использовать **домен клиента** (в нашем примере — ```customer.com```) в качестве целевого. Ваши агенты по-прежнему смогут входить в учетную запись ```username@partner.com```.
+1. [Получите код авторизации.](/azure/active-directory/develop/active-directory-protocols-oauth-code#request-an-authorization-code) Приложение отправляет запрос в конечную точку ```/authorize``` и должно использовать **домен клиента** (в нашем примере — ```customer.com```) в качестве целевого. Ваши агенты по-прежнему смогут входить в учетную запись ```username@partner.com```.
 
     ```http
     GET https://login.microsoftonline.com/customer.com/oauth2/authorize
     ```
 
-2. [Получите маркер доступа, используя код авторизации.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) Отправляя запрос в конечную точку ```token```, приложение должно использовать **домен клиента** в качестве целевого домена, в нашем примере это ```customer.com```:
+2. [Получите маркер доступа, используя код авторизации.](/azure/active-directory/develop/active-directory-protocols-oauth-code#use-the-authorization-code-to-request-an-access-token) Отправляя запрос в конечную точку ```token```, приложение должно использовать **домен клиента** в качестве целевого домена, в нашем примере это ```customer.com```:
 
     ```http
     POST https://login.microsoftonline.com/customer.com/oauth2/token
