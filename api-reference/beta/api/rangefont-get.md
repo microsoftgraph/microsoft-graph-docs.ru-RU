@@ -5,56 +5,56 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 5e70e54cd139074f68e3b05926ca0edc2266461c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d7842d8c63624a7326d862744448de6c6bc1bcd3
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48047151"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315236"
 ---
-# <a name="get-rangefont"></a><span data-ttu-id="89871-103">Получение объекта RangeFont</span><span class="sxs-lookup"><span data-stu-id="89871-103">Get RangeFont</span></span>
+# <a name="get-rangefont"></a><span data-ttu-id="94b8b-103">Получение объекта RangeFont</span><span class="sxs-lookup"><span data-stu-id="94b8b-103">Get RangeFont</span></span>
 
-<span data-ttu-id="89871-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="89871-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="94b8b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="94b8b-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="89871-105">Получение свойств и связей объекта rangefont.</span><span class="sxs-lookup"><span data-stu-id="89871-105">Retrieve the properties and relationships of rangefont object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="89871-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="89871-106">Permissions</span></span>
-<span data-ttu-id="89871-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="89871-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="94b8b-105">Получение свойств и связей объекта rangefont.</span><span class="sxs-lookup"><span data-stu-id="94b8b-105">Retrieve the properties and relationships of rangefont object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="94b8b-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="94b8b-106">Permissions</span></span>
+<span data-ttu-id="94b8b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="94b8b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="89871-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="89871-109">Permission type</span></span>      | <span data-ttu-id="89871-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="89871-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="94b8b-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="94b8b-109">Permission type</span></span>      | <span data-ttu-id="94b8b-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="94b8b-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="89871-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="89871-111">Delegated (work or school account)</span></span> | <span data-ttu-id="89871-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="89871-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="89871-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="89871-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="89871-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="89871-114">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="89871-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="89871-115">Application</span></span> | <span data-ttu-id="89871-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="89871-116">Not supported.</span></span> |
+|<span data-ttu-id="94b8b-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="94b8b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="94b8b-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="94b8b-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="94b8b-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="94b8b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="94b8b-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="94b8b-114">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="94b8b-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="94b8b-115">Application</span></span> | <span data-ttu-id="94b8b-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="94b8b-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="89871-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="89871-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="94b8b-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="94b8b-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names/{name}/range/format/font
 GET /workbook/worksheets/{id|name}/range(address='<address>')/format/font
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="89871-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="89871-118">Optional query parameters</span></span>
-<span data-ttu-id="89871-119">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="89871-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="94b8b-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="94b8b-118">Optional query parameters</span></span>
+<span data-ttu-id="94b8b-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="94b8b-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="89871-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="89871-120">Request headers</span></span>
-| <span data-ttu-id="89871-121">Имя</span><span class="sxs-lookup"><span data-stu-id="89871-121">Name</span></span>      |<span data-ttu-id="89871-122">Описание</span><span class="sxs-lookup"><span data-stu-id="89871-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="94b8b-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="94b8b-120">Request headers</span></span>
+| <span data-ttu-id="94b8b-121">Имя</span><span class="sxs-lookup"><span data-stu-id="94b8b-121">Name</span></span>      |<span data-ttu-id="94b8b-122">Описание</span><span class="sxs-lookup"><span data-stu-id="94b8b-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="89871-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="89871-123">Authorization</span></span>  | <span data-ttu-id="89871-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="89871-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="89871-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="89871-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="89871-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="89871-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="94b8b-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="94b8b-123">Authorization</span></span>  | <span data-ttu-id="94b8b-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="94b8b-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="94b8b-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="94b8b-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="94b8b-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="94b8b-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="89871-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="89871-129">Request body</span></span>
-<span data-ttu-id="89871-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="89871-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="94b8b-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="94b8b-129">Request body</span></span>
+<span data-ttu-id="94b8b-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="94b8b-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="89871-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="89871-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="94b8b-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="94b8b-131">Response</span></span>
 
-<span data-ttu-id="89871-132">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукранжефонт](../resources/workbookrangefont.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="89871-132">If successful, this method returns a `200 OK` response code and [workbookRangeFont](../resources/workbookrangefont.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="89871-133">Пример</span><span class="sxs-lookup"><span data-stu-id="89871-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="89871-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="89871-134">Request</span></span>
-<span data-ttu-id="89871-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="89871-135">Here is an example of the request.</span></span>
+<span data-ttu-id="94b8b-132">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [воркбукранжефонт](../resources/workbookrangefont.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="94b8b-132">If successful, this method returns a `200 OK` response code and [workbookRangeFont](../resources/workbookrangefont.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="94b8b-133">Пример</span><span class="sxs-lookup"><span data-stu-id="94b8b-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="94b8b-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="94b8b-134">Request</span></span>
+<span data-ttu-id="94b8b-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="94b8b-135">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="89871-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="89871-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="94b8b-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="94b8b-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_rangefont"
@@ -62,22 +62,22 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/format/font
 ```
-# <a name="c"></a>[<span data-ttu-id="89871-137">C#</span><span class="sxs-lookup"><span data-stu-id="89871-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="94b8b-137">C#</span><span class="sxs-lookup"><span data-stu-id="94b8b-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-rangefont-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="89871-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="89871-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="94b8b-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="94b8b-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-rangefont-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="89871-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="89871-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="94b8b-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="94b8b-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-rangefont-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="89871-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="89871-140">Response</span></span>
-<span data-ttu-id="89871-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="89871-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="94b8b-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="94b8b-140">Response</span></span>
+<span data-ttu-id="94b8b-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="94b8b-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -111,5 +111,3 @@ Content-length: 134
   ]
 }
 -->
-
-

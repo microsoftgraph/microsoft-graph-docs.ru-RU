@@ -5,55 +5,55 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d956912bf53595845728b5b2fe2139ed995f5b84
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 17cf60b4f9565f8e20969219ad9e399fb93646f5
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035488"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314814"
 ---
-# <a name="create-allowedgroup-for-printershare"></a><span data-ttu-id="635c6-103">Создание Алловедграуп для Принтершаре</span><span class="sxs-lookup"><span data-stu-id="635c6-103">Create allowedGroup for printerShare</span></span>
+# <a name="create-allowedgroup-for-printershare"></a><span data-ttu-id="400df-103">Создание Алловедграуп для Принтершаре</span><span class="sxs-lookup"><span data-stu-id="400df-103">Create allowedGroup for printerShare</span></span>
 
-<span data-ttu-id="635c6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="635c6-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="400df-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="400df-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="635c6-105">Предоставление указанному групповому доступу на отправку заданий печати связанному [принтершаре](../resources/printershare.md).</span><span class="sxs-lookup"><span data-stu-id="635c6-105">Grant the specified group access to submit print jobs to the associated [printerShare](../resources/printershare.md).</span></span>
+<span data-ttu-id="400df-105">Предоставление указанному групповому доступу на отправку заданий печати связанному [принтершаре](../resources/printershare.md).</span><span class="sxs-lookup"><span data-stu-id="400df-105">Grant the specified group access to submit print jobs to the associated [printerShare](../resources/printershare.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="635c6-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="635c6-106">Permissions</span></span>
-<span data-ttu-id="635c6-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="635c6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="400df-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="400df-106">Permissions</span></span>
+<span data-ttu-id="400df-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="400df-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="635c6-109">Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать в дополнение к разрешениям, приведенным в следующей таблице.</span><span class="sxs-lookup"><span data-stu-id="635c6-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="635c6-110">Пользователь, вошедшего в систему, должен быть [администратором принтера](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span><span class="sxs-lookup"><span data-stu-id="635c6-110">The signed in user must be a [Printer Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
+<span data-ttu-id="400df-109">Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать в дополнение к разрешениям, приведенным в следующей таблице.</span><span class="sxs-lookup"><span data-stu-id="400df-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="400df-110">Пользователь, вошедшего в систему, должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span><span class="sxs-lookup"><span data-stu-id="400df-110">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
 
-|<span data-ttu-id="635c6-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="635c6-111">Permission type</span></span> | <span data-ttu-id="635c6-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="635c6-112">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="400df-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="400df-111">Permission type</span></span> | <span data-ttu-id="400df-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="400df-112">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="635c6-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="635c6-113">Delegated (work or school account)</span></span>| <span data-ttu-id="635c6-114">PrinterShare.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="635c6-114">PrinterShare.ReadWrite.All</span></span> |
-|<span data-ttu-id="635c6-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="635c6-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="635c6-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="635c6-116">Not Supported.</span></span>|
-|<span data-ttu-id="635c6-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="635c6-117">Application</span></span>|<span data-ttu-id="635c6-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="635c6-118">Not Supported.</span></span>|
+|<span data-ttu-id="400df-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="400df-113">Delegated (work or school account)</span></span>| <span data-ttu-id="400df-114">PrinterShare.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="400df-114">PrinterShare.ReadWrite.All</span></span> |
+|<span data-ttu-id="400df-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="400df-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="400df-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="400df-116">Not Supported.</span></span>|
+|<span data-ttu-id="400df-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="400df-117">Application</span></span>|<span data-ttu-id="400df-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="400df-118">Not Supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="635c6-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="635c6-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="400df-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="400df-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /print/shares/{id}/allowedGroups/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="635c6-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="635c6-120">Request headers</span></span>
-| <span data-ttu-id="635c6-121">Имя</span><span class="sxs-lookup"><span data-stu-id="635c6-121">Name</span></span>          | <span data-ttu-id="635c6-122">Описание</span><span class="sxs-lookup"><span data-stu-id="635c6-122">Description</span></span>   |
+## <a name="request-headers"></a><span data-ttu-id="400df-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="400df-120">Request headers</span></span>
+| <span data-ttu-id="400df-121">Имя</span><span class="sxs-lookup"><span data-stu-id="400df-121">Name</span></span>          | <span data-ttu-id="400df-122">Описание</span><span class="sxs-lookup"><span data-stu-id="400df-122">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="635c6-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="635c6-123">Authorization</span></span> | <span data-ttu-id="635c6-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="635c6-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="635c6-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="635c6-126">Content-type</span></span>  | <span data-ttu-id="635c6-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="635c6-p104">application/json. Required.</span></span>|
+| <span data-ttu-id="400df-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="400df-123">Authorization</span></span> | <span data-ttu-id="400df-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="400df-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="400df-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="400df-126">Content-type</span></span>  | <span data-ttu-id="400df-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="400df-p104">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="635c6-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="635c6-129">Request body</span></span>
-<span data-ttu-id="635c6-130">В теле запроса добавьте ссылку на объект Group с помощью `@odata.id` формата, как показано в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="635c6-130">In the request body, supply a reference to a group entity by using the `@odata.id` format, as shown in the following example.</span></span>
+## <a name="request-body"></a><span data-ttu-id="400df-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="400df-129">Request body</span></span>
+<span data-ttu-id="400df-130">В теле запроса добавьте ссылку на объект Group с помощью `@odata.id` формата, как показано в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="400df-130">In the request body, supply a reference to a group entity by using the `@odata.id` format, as shown in the following example.</span></span>
 
-## <a name="response"></a><span data-ttu-id="635c6-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="635c6-131">Response</span></span>
-<span data-ttu-id="635c6-132">В случае успешного выполнения этот метод возвращает код отклика `201 Created`.</span><span class="sxs-lookup"><span data-stu-id="635c6-132">If successful, this method returns a `201 Created` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="400df-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="400df-131">Response</span></span>
+<span data-ttu-id="400df-132">В случае успешного выполнения этот метод возвращает код отклика `201 Created`.</span><span class="sxs-lookup"><span data-stu-id="400df-132">If successful, this method returns a `201 Created` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="635c6-133">Пример</span><span class="sxs-lookup"><span data-stu-id="635c6-133">Example</span></span>
-### <a name="request"></a><span data-ttu-id="635c6-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="635c6-134">Request</span></span>
-<span data-ttu-id="635c6-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="635c6-135">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="400df-133">Пример</span><span class="sxs-lookup"><span data-stu-id="400df-133">Example</span></span>
+### <a name="request"></a><span data-ttu-id="400df-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="400df-134">Request</span></span>
+<span data-ttu-id="400df-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="400df-135">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="635c6-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="635c6-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="400df-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="400df-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_allowedgroup_from_printers"
@@ -67,25 +67,25 @@ Content-length: 67
   "@odata.id": "https://graph.microsoft.com/beta/groups/{id}"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="635c6-137">C#</span><span class="sxs-lookup"><span data-stu-id="635c6-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="400df-137">C#</span><span class="sxs-lookup"><span data-stu-id="400df-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-allowedgroup-from-printers-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="635c6-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="635c6-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="400df-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="400df-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-allowedgroup-from-printers-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="635c6-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="635c6-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="400df-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="400df-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-allowedgroup-from-printers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="635c6-140">В теле запроса добавьте ссылку на объект Group, указав URI Microsoft Graph в `@odata.id` поле тела JSON.</span><span class="sxs-lookup"><span data-stu-id="635c6-140">In the request body, supply a reference to a group entity by including the group's Microsoft Graph URI in the `@odata.id` field of the JSON body.</span></span>
+<span data-ttu-id="400df-140">В теле запроса добавьте ссылку на объект Group, указав URI Microsoft Graph в `@odata.id` поле тела JSON.</span><span class="sxs-lookup"><span data-stu-id="400df-140">In the request body, supply a reference to a group entity by including the group's Microsoft Graph URI in the `@odata.id` field of the JSON body.</span></span>
 
-### <a name="response"></a><span data-ttu-id="635c6-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="635c6-141">Response</span></span>
-<span data-ttu-id="635c6-142">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="635c6-142">The following is an example of the response.</span></span> 
+### <a name="response"></a><span data-ttu-id="400df-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="400df-141">Response</span></span>
+<span data-ttu-id="400df-142">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="400df-142">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,5 +104,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
