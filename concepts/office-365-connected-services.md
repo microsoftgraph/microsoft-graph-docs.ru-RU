@@ -1,17 +1,17 @@
 ---
-title: Вызов служб Office 365 в Visual Studio 2017 с помощью API Microsoft Graph
+title: Вызов служб Microsoft 365 в Visual Studio 2017 с помощью API Microsoft Graph
 description: Вы можете сделать так, чтобы приложение вызывало API Microsoft Graph, с помощью Подключенных служб Visual Studio. В этой статье описано, как получить фотографию профиля вошедшего пользователя, передать ее в OneDrive и отправить письмо со ссылкой для общего доступа к фотографии.
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: a051b4011ab2efef7179680bb5bcbab1e717d8cc
-ms.sourcegitcommit: d0f88dcb7f4c72196c45a00cccbb9fc30b715637
+ms.openlocfilehash: 02e3f7a27ffb0a99b5974831b3037a5804f9616d
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42926668"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48289094"
 ---
-# <a name="call-office-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>Вызов служб Office 365 в Visual Studio 2017 с помощью API Microsoft Graph
+# <a name="call-microsoft-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>Вызов служб Microsoft 365 в Visual Studio 2017 с помощью API Microsoft Graph
 
 Вы можете сделать так, чтобы приложение вызывало API Microsoft Graph, с помощью Подключенных служб Visual Studio. В этой статье описано, как получить фотографию профиля вошедшего пользователя, передать ее в OneDrive и отправить письмо со ссылкой для общего доступа к фотографии.
 
@@ -33,7 +33,7 @@ ms.locfileid: "42926668"
 
 1. Выберите в обозревателе решений **Подключенные службы**, чтобы открыть одноименную вкладку. 
 
-2. Выберите поставщика **Доступ к службам Office 365 с помощью Microsoft Graph**. Следуйте указаниям мастера. Выберите следующие разрешения (позже их можно будет изменить):
+2. Выберите поставщика **Доступ к службам Microsoft 365 с помощью Microsoft Graph**. Следуйте указаниям мастера. Выберите следующие разрешения (позже их можно будет изменить):
 
     - Для API **File** установите разрешения **Полный доступ к вашим файлам**.
     - Для API **Mail** установите разрешения **Отправка почты от вашего имени**.
@@ -81,7 +81,7 @@ ms.locfileid: "42926668"
 
 - [Startup.Auth.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/App_Start/Startup.Auth.cs) выполняет аутентификацию текущего пользователя и инициализирует кэш маркеров приложения.
 
-- Models\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) содержит сведения о маркере пользователя. Вы можете заменить его на собственный кэш маркеров. Дополнительные сведения см. в статье [Кэширование маркеров доступа в мультитенантном приложении](https://azure.microsoft.com/documentation/articles/guidance-multitenant-identity-token-cache/).
+- Models\\[SessionTokenCache.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/TokenStorage/SessionTokenCache.cs) содержит сведения о маркере пользователя. Вы можете заменить его на собственный кэш маркеров. Дополнительные сведения см. в статье [Кэширование маркеров доступа в мультитенантном приложении](/azure/architecture/multitenant-identity/token-cache).
 
 - Models\\[SampleAuthProvider.cs](https://github.com/microsoftgraph/aspnet-connect-sample/tree/Office365connectedservice/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Microsoft%20Graph%20SDK%20ASPNET%20Sample/Helpers/SampleAuthProvider.cs) реализует локальный интерфейс IAuthProvider и получает маркер доступа. 
 
@@ -95,4 +95,3 @@ ms.locfileid: "42926668"
 ## <a name="need-help"></a>Нужна помощь?
 
 Если вам нужна помощь, задавайте вопросы на сайте [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Отметьте вашу запись тегом {microsoftgraph}.
-
