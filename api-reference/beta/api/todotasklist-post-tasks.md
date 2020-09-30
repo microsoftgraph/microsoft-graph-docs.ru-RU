@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 82cc4f2320e723eb159711573aa4649f177053fb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 47e6822c099c07a7b4b65a50eb1292d4280a8535
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027477"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314178"
 ---
 # <a name="create-todotask"></a>Создание Тодотаск
 Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -73,6 +73,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+В следующем примере создается объект **тодотаск** в указанном списке задач и включается [линкедресаурце](../resources/linkedresource.md).
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

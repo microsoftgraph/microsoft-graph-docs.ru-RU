@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fe43222eac877d467654a890a923533a8ba94824
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1c26a61e95e213b10ad7894d02a30d38bd781970
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058538"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314757"
 ---
 # <a name="get-todotasklist"></a>Получение Тодотасклист
 Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -80,10 +80,8 @@ GET https://graph.microsoft.com/beta/me/todo/lists/AAMkADIyAAAAABrJAAA=
 
 ---
 
-
-
 ### <a name="response"></a>Отклик
-**Примечание:** Ниже приведен пример ответа. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

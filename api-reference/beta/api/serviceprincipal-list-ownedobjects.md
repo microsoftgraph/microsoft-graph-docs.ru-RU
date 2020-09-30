@@ -1,24 +1,24 @@
 ---
-title: 'СервицепринЦипалс: List ownedObjects'
-description: Получение списка объектов, принадлежащих servicePrincipal.  Это могут быть приложения или группы.
+title: 'servicePrincipals: Перечисление ownedObjects'
+description: Извлечение списка объектов, принадлежащих servicePrincipal.  Это могут быть приложения или группы.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 3ec40ad643ee5d337c702980ee7a164cab3c3b60
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e018a5f140e5b578af0257a471d8010522a7e860
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044517"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314316"
 ---
-# <a name="serviceprincipals-list-ownedobjects"></a>СервицепринЦипалс: List ownedObjects
+# <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals: Перечисление ownedObjects
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов, принадлежащих [servicePrincipal](../resources/serviceprincipal.md).  Это могут быть приложения или группы.
+Извлечение списка объектов, принадлежащих [servicePrincipal](../resources/serviceprincipal.md).  Это могут быть приложения или группы.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,14 +37,14 @@ ms.locfileid: "48044517"
 GET /servicePrincipals/{id}/ownedObjects
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя           | Описание                |
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -115,5 +115,3 @@ Content-length: 55
   ]
 }
 -->
-
-

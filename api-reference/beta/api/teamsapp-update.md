@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e47ca7c35ddd535ec9809039cc57c4be670ef85a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e0e0f8b9380fdd97cb41a9edbaa8d3d1eb71b8e3
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076622"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314843"
 ---
 # <a name="update-teamsapp"></a>Обновление teamsApp
 
@@ -24,7 +24,7 @@ ms.locfileid: "48076622"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 >**Примечание:** Только глобальные администраторы могут вызывать этот API.
 
@@ -148,5 +148,3 @@ Content-Type: application/json
     "lastModifiedDateTime": "2020-02-10 22:48:33.841",
 }
 ```
-
-

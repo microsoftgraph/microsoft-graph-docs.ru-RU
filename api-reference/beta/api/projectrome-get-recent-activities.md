@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: apiPageType
 author: ailae
-ms.openlocfilehash: 0d18ed3e6628575d870ebb10f1a3aea816faea8d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 146b4d83b6fda3dc56744e1b60daf15811ed3747
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085544"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314974"
 ---
 # <a name="get-recent-user-activities"></a>Получение последних действий пользователя
 
@@ -40,7 +40,7 @@ GET /me/activities/recent
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа. Поддерживаются следующие параметры запросов:
+Этот метод поддерживает некоторые [Параметры запроса OData](/graph/query-parameters) для настройки ответа. Поддерживаются следующие параметры запросов:
 
 - $expand для свойства навигации **historyitem** .
 - $top, чтобы ограничить максимальное количество элементов на страницах.
@@ -157,5 +157,3 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
-
-

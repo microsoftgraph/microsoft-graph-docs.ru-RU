@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 8fa7885ff80c79737d376c3487e1807160120591
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c46482f6d93a9fa3567f3729414bf57cd5d5a8c2
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022276"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313543"
 ---
 # <a name="serviceprincipals-list-owners"></a>servicePrincipals: Перечисление владельцев
 
@@ -37,7 +37,7 @@ ms.locfileid: "48022276"
 GET /servicePrincipals/{id}/owners
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя           | Описание                |
@@ -116,5 +116,3 @@ Content-length: 55
   ]
 }
 -->
-
-

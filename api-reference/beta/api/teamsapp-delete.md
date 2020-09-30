@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bb9fdb59a1b406ff3827af07b5246434c5a585b2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5077d7f2a55f9ad6d3382ab3fc65af5f12260c4f
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076656"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315558"
 ---
 # <a name="delete-teamsapp"></a>Удаление teamsApp
 
@@ -26,7 +26,7 @@ ms.locfileid: "48076656"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 >**Примечание:** Только глобальные администраторы могут вызывать этот API. 
 
@@ -111,5 +111,3 @@ DELETE https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93
 ```http
 HTTP/1.1 204 No Content
 ```
-
-

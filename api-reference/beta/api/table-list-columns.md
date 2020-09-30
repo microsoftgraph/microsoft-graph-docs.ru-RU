@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: b93c456860a2cf0fbb899aa17592bffbc4db7c94
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a4d870a51a6e78981446dec9c94331189607c21d
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087787"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313977"
 ---
 # <a name="list-columns"></a>Перечисление столбцов
 
@@ -35,7 +35,7 @@ GET /workbook/tables/{id|name}/columns
 GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа. Для получения надежных результатов применяйте параметры запросов [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) и [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) на странице. Это поможет избежать проблем с производительностью, связанных с большими результирующими наборами.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа. Для получения надежных результатов применяйте параметры запросов [$top](/graph/query-parameters#top) и [$skip](/graph/query-parameters#skip-parameter) на странице. Это поможет избежать проблем с производительностью, связанных с большими результирующими наборами.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -101,7 +101,7 @@ Content-length: 126
 ```
 
 > 
-  **Примечание.** Используйте параметры запросов [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) и [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter), чтобы просматривать постранично большое количество столбцов.
+  **Примечание.** Используйте параметры запросов [$top](/graph/query-parameters#top) и [$skip](/graph/query-parameters#skip-parameter), чтобы просматривать постранично большое количество столбцов.
 
 Пример: 
 
@@ -121,5 +121,3 @@ Content-length: 126
   ]
 }
 -->
-
-

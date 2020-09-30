@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 6bbc6d0dc347e056740591ca401289534ffb179e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3a1192a9a14181a0c5a4dac9e067e6326dba60b4
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085459"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314096"
 ---
 # <a name="get-reviewset"></a>Получение представления
 
@@ -44,7 +44,7 @@ GET /compliance/ediscovery/cases/{id}/reviewSets/{id}
 
 Так как запрос может вернуть много обращений, можно отфильтровать их с помощью **DisplayName**.  Чтобы выполнить фильтрацию по **DisplayName**, добавьте в запрос следующее: `$filter=displayName eq 'rs1'` , где имя набора проверки — RS1.
 
-Дополнительные сведения о фильтрации и указании полей можно узнать [в статье Использование выражений фильтров в URI OData ](https://docs.microsoft.com/dynamics-nav/using-filter-expressions-in-odata-uris).
+Дополнительные сведения о фильтрации и указании полей можно узнать [в статье Использование выражений фильтров в URI OData ](/dynamics-nav/using-filter-expressions-in-odata-uris).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -129,5 +129,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

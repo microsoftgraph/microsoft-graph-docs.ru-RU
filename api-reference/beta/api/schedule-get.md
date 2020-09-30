@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2f2f4e2a9e21511def764597f15b563e4900eab5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d7d948f5cd5b386d5e2ed4b81ea27527e22f588d
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48047051"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315163"
 ---
 # <a name="get-schedule"></a>Получение расписания
 
@@ -33,13 +33,9 @@ ms.locfileid: "48047051"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Schedule. Read. ALL, Group. Read. ALL, Schedule. ReadWrite. ALL, Group. ReadWrite. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule. Read. All *, Schedule. ReadWrite. ALL* |
-
->\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
-
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+|Для приложений | Schedule. Read. ALL, Schedule. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 

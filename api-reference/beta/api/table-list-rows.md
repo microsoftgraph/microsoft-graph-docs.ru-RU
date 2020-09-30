@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 8a443a7d10b555712d25234c354f51e14f7abbd2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7d727a0b33d1ade4d6559d285e201ba5a0ebe3fb
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087777"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315128"
 ---
 # <a name="list-rows"></a>Перечисление строк
 
@@ -35,7 +35,7 @@ GET /workbook/tables/{id|name}/rows
 GET /workbook/worksheets/{id|name}/tables/{id|name}/rows
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа. Для получения надежных результатов применяйте параметры запросов [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) и [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) на странице. Это поможет избежать проблем с производительностью, связанных с большими результирующими наборами.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа. Для получения надежных результатов применяйте параметры запросов [$top](/graph/query-parameters#top) и [$skip](/graph/query-parameters#skip-parameter) на странице. Это поможет избежать проблем с производительностью, связанных с большими результирующими наборами.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -98,7 +98,7 @@ Content-length: 82
 }
 ```
 
-> **Примечание:** Используйте параметры запроса [$Top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) и [$Skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skip-parameter) для постраничного выполнения большого количества строк.
+> **Примечание:** Используйте параметры запроса [$Top](/graph/query-parameters#top) и [$Skip](/graph/query-parameters#skip-parameter) для постраничного выполнения большого количества строк.
 
 Пример: 
 
@@ -118,5 +118,3 @@ Content-length: 82
   ]
 }
 -->
-
-

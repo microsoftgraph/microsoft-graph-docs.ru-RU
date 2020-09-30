@@ -5,12 +5,12 @@ description: Получение списка входов пользовател
 localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6a9ff39ef995d60a541b94bc1982dc57adbab04c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f9dbe01eccbde48d768daa4d0a3fb0cbd8504824
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019707"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314229"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
@@ -44,9 +44,9 @@ GET auditLogs/signIns
 
 | Имя | Описание | Пример |
 |:---- |:----------- |:------- |
-| [$filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters#filter-parameter)| Фильтрует результаты (строки). | `/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24` |
-| [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top-parameter) | Задает размер страницы результатов. | `/auditLogs/signIns?$top=1` |
-| [$skiptoken](https://developer.microsoft.com/graph/docs/concepts/query_parameters#skiptoken-parameter) | Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. |`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
+| [$filter](/graph/query-parameters#filter-parameter)| Фильтрует результаты (строки). | `/auditLogs/signIns?&$filter=createdDateTime le 2018-01-24` |
+| [$top](/graph/query-parameters#top-parameter) | Задает размер страницы результатов. | `/auditLogs/signIns?$top=1` |
+| [$skiptoken](/graph/query-parameters#skiptoken-parameter) | Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. |`/auditLogs/signIns?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
 ### <a name="attributes-supported-by-filter-parameter"></a>Атрибуты, поддерживаемые параметром $filter
 
@@ -93,7 +93,7 @@ GET auditLogs/signIns
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -135,7 +135,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -380,5 +380,3 @@ Content-length: 211
   ]
 }
 ```
-
-

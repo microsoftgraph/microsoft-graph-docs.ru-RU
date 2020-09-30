@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 0523404e836223f8a59e191d1e7040a279433795
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bddf0b72173b2f37b3fdd8544bc777c87bb33ee3
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073385"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314596"
 ---
 # <a name="todotasklist-resource-type"></a>Тип ресурса Тодотасклист
 
@@ -44,9 +44,17 @@ ms.locfileid: "48073385"
 |id|String| Идентификатор списка задач, уникальный в почтовом ящике пользователя. Только для чтения. Наследуется от [объекта](entity.md)|
 |Владелец|Boolean| Значение true, если пользователь является владельцем данного списка задач.|
 |IsShared|Boolean| True, если список задач открыт для совместного использования с другими пользователями|
-|веллкновнлистнаме|веллкновнлистнаме| Свойство, указывающее известное имя списка, если заданный список представляет собой известный список. Возможные значения: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
+|веллкновнлистнаме|веллкновнлистнаме| Свойство, указывающее имя списка, если заданный список представляет собой известный список. Возможные значения: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
 
-## <a name="relationships"></a>Отношения
+### <a name="wellknownlistname-values"></a>значения Веллкновнлистнаме
+|Member|Описание|
+|:---|:---|
+|Нет| Список, созданный пользователем.|
+|дефаултлист| Встроенный список **задач** .|
+|флагжедемаилс| Встроенный список **электронной почты с пометкой** . В этом списке представлены задачи с помеченными сообщениями электронной почты.|
+|unknownFutureValue| Значение Sentinel для перечисления расширяемые. Не следует использовать.|
+
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |extensions|Коллекция [extension](extension.md)| Коллекция открытых расширений, определенных для списка задач. Допускается значение null.|

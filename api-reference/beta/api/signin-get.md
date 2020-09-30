@@ -5,12 +5,12 @@ description: Получение объекта SignIn, содержащего в
 localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8b2ab1ae6fc7fcae39e77a7a0b8e2ab1a86323ca
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 44de8254d5c6573e6b5fc586df19e49ae924f8cb
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040198"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314236"
 ---
 # <a name="get-signin"></a>Получение объекта signIn
 
@@ -30,7 +30,7 @@ ms.locfileid: "48040198"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
 | Для приложений | Аудитлог. Read. ALL, Directory. Read. ALL | 
 
-Кроме того, приложения должны быть [правильно зарегистрированы](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
+Кроме того, приложения должны быть [правильно зарегистрированы](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ GET /auditLogs/signIns/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",
@@ -338,5 +338,3 @@ Content-length: 211
   ]
 }
 ```
-
-

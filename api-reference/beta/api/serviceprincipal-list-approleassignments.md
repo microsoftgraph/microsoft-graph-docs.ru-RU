@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 86779e6ce137e64770b5d55a416fba99b6f8d4aa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 345a454f8638c6a5de5ba5d35c061941bd8f9865
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989922"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313578"
 ---
 # <a name="list-approleassignments-granted-to-a-service-principal"></a>Список объектов appRoleAssignment, предоставленных для субъект-службы
 
@@ -22,7 +22,7 @@ ms.locfileid: "47989922"
 
 Получение списка [appRoleAssignment](../resources/approleassignment.md), предоставленного субъект-службе.
 
-Роли приложений, назначаемые субъектам-службам, также называются [разрешениями приложений](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Разрешения приложений можно предоставлять с помощью создания назначений ролей приложений, а также с помощью [интерфейса согласия](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
+Роли приложений, назначаемые субъектам-службам, также называются [разрешениями приложений](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Разрешения приложений можно предоставлять с помощью создания назначений ролей приложений, а также с помощью [интерфейса согласия](/azure/active-directory/develop/application-consent-experience).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -135,5 +135,3 @@ Content-length: 306
   ]
 }
 -->
-
-

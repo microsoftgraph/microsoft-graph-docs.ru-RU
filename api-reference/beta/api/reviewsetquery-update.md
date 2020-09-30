@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: daf8471b4bfea2509a2adbd84e23a96622998c5b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eccfd08989b9cba23d72216de441f60e10ebb00f
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085285"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314743"
 ---
 # <a name="update-reviewsetquery"></a>Обновление Ревиевсеткуери
 
@@ -48,8 +48,8 @@ PATCH /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| displayName | Строка | Отображаемое имя Просмотр запроса Set. |
-| Запрос | Строка | Строка запроса в запросе KQL (ключевое слово языка запросов). Подробнее: [поля метаданных документа](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). |
+| displayName | String | Отображаемое имя Просмотр запроса Set. |
+| Запрос | String | Строка запроса в запросе KQL (ключевое слово языка запросов). Подробнее: [поля метаданных документа](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery). |
 
 ## <a name="response"></a>Отклик
 
@@ -99,5 +99,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

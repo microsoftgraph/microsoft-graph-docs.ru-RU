@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: ea0cc63521ccaac667abe5ef62baf47cabb4c152
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a5ed974c1b5e6d1f43b3444309e5a3652d13864b
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035659"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314215"
 ---
 # <a name="list-printjobs"></a>Список Принтжобс
 
@@ -23,7 +23,7 @@ ms.locfileid: "48035659"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать, разрешение, предоставляющее доступ к [принтеру](printer-get.md) , а также одно из разрешений, перечисленных в следующей таблице. Пользователь, вошедшего в систему, должен быть [администратором принтера](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать, разрешение, предоставляющее доступ к [принтеру](printer-get.md) , а также одно из разрешений, перечисленных в следующей таблице. Пользователь, вошедшего в систему, должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 Чтобы считывать задания печати от другого пользователя, пользователь, вошедшего в систему, должен быть администратором печати и иметь разрешение PrintJob. ReadBasic. ALL, PrintJob. Read. ALL, PrintJob. Реадвритебасик. ALL или PrintJob. ReadWrite. ALL.
 
@@ -43,7 +43,7 @@ GET /print/printers/{id}/jobs
 Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 * По умолчанию свойство **Documents** опущено из отклика. Чтобы также возвратить список [принтдокументс](../resources/printdocument.md) для каждого задания печати, используйте `$expand=documents` .
-* Этот метод поддерживает фильтрацию заданий печати пользователем, создавшим их. USE `$filter=createdBy/userPrincipalName eq '{upn}'` , где **{UPN}** — это [имя участника-пользователя](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) связанного пользователя.
+* Этот метод поддерживает фильтрацию заданий печати пользователем, создавшим их. USE `$filter=createdBy/userPrincipalName eq '{upn}'` , где **{UPN}** — это [имя участника-пользователя](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) связанного пользователя.
 
 ### <a name="exceptions"></a>Exceptions
 Некоторые операторы не поддерживаются: `$count` , `$search` , `$filter` .
@@ -122,5 +122,3 @@ Content-length: 461
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

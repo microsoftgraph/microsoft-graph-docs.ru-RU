@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1827898260f216b7c4d947b78386c5f2e5c5227e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8080185c913a99702fba9510845ac284bf186afc
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035801"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314386"
 ---
 # <a name="printer-create"></a>принтер: Create
 
@@ -23,7 +23,7 @@ ms.locfileid: "48035801"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать. Пользователь, вошедшего в систему, должен быть [администратором принтера](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать. Пользователь, вошедшего в систему, должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
@@ -62,7 +62,7 @@ POST /print/printers/create
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
-Ниже приведен пример запроса. Для получения справки по созданию необходимого запроса подписи сертификата (CSR) обратитесь к [образцу кода создания CSR](https://docs.microsoft.com/universal-print/hardware/universal-print-oem-certificate-signing-request).
+Ниже приведен пример запроса.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -125,5 +125,3 @@ Retry-After: 5
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

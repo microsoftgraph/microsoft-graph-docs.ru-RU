@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 47ed057d12261cd1ccfcda8ed4876921702ed8e6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d3bcd6ee1c54f06eeb265424a6ea32c922e0ecf8
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076808"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313942"
 ---
 # <a name="grant-an-approleassignment-for-a-service-principal"></a>Предоставление appRoleAssignment субъекту-службе
 
@@ -20,7 +20,7 @@ ms.locfileid: "48076808"
 
 Назначение роли приложения для этого субъекта-службы пользователю, группе или субъекту-службе клиента.
 
-Роли приложений, назначаемые субъектам-службам, также называются [разрешениями приложений](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Разрешения приложений можно предоставлять непосредственно в назначениях ролей приложений, а также с помощью [интерфейса согласия](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
+Роли приложений, назначаемые субъектам-службам, также называются [разрешениями приложений](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Разрешения приложений можно предоставлять непосредственно в назначениях ролей приложений, а также с помощью [интерфейса согласия](/azure/active-directory/develop/application-consent-experience).
 
 Чтобы предоставить назначение роли приложения, нужны три идентификатора:
 
@@ -54,11 +54,11 @@ POST /servicePrincipals/{id}/appRoleAssignedTo
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите представление JSON объекта [appRoleAssignment](../resources/approleassignment.md).
+В тексте запроса укажите представление JSON для объекта [appRoleAssignment](../resources/approleassignment.md).
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `201 Created` и объект [appRoleAssignment](../resources/approleassignment.md) в тексте отклика.
+В случае успеха этот метод возвращает в тексте отклика код отклика `201 Created` и объект [appRoleAssignment](../resources/approleassignment.md).
 
 ## <a name="examples"></a>Примеры
 
@@ -142,5 +142,3 @@ Content-length: 253
   ]
 }
 -->
-
-

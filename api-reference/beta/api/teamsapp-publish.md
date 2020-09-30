@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 92c90df5035ffa26b4a592ff8cc6d2749048308d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 52d216329ce1701c7322572bb3363dc27e22e4f2
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076640"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315151"
 ---
 # <a name="publish-teamsapp"></a>Публикация teamsApp
 
@@ -23,7 +23,7 @@ ms.locfileid: "48076640"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 >**Примечание:** Только глобальные администраторы могут вызывать этот API.
 
@@ -149,5 +149,3 @@ Location: https://graph.microsoft.com/beta/appCatalogs/teamsApps/e3e29acb-8c79-4
   "distributionMethod": "organization"
 }
 ```
-
-

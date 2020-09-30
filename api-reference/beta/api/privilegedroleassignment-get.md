@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 7e2bdb0d718d39de574ee5325765b2573bda5ec4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 243e7bd118830ff42b337c0dca64bac9404679cc
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035075"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314911"
 ---
 # <a name="get-privilegedroleassignment"></a>Получение privilegedRoleAssignment
 
@@ -36,7 +36,7 @@ ms.locfileid: "48035075"
 GET /privilegedRoleAssignments/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -112,5 +112,3 @@ Content-length: 184
   ]
 }
 -->
-
-

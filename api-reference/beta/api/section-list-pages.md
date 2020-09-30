@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: ac6b6547481cccb5baa9b03bebab2d92fd34d410
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 635a8ef8d5b57577099cba6d233327b6b661b33b
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074108"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314306"
 ---
 # <a name="list-pages"></a>Список страниц
 
@@ -37,7 +37,7 @@ GET /groups/{id}/onenote/sections/{id}/pages
 GET /sites/{id}/onenote/sections/{id}/pages
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 Запрос по умолчанию для страниц возвращает 20 первых страниц, упорядоченных по `lastModifiedTime desc` . Если запрос по умолчанию возвращает более 20 страниц, ответ содержит элемент `@odata.nextLink` , который можно использовать для страницы в наборе результатов. Максимальное количество страниц, возвращаемых для `top` запроса — 100.
 
@@ -102,5 +102,3 @@ Content-length: 393
   "suppressions": []
 }
 -->
-
-

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fdae19af982d8e8c73db968123361fa3700d684c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f322a920aa8d624ff8d985ddfda6ccd7d0c1d6f3
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47986170"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312794"
 ---
 # <a name="create-team"></a>Создание команды
 
@@ -553,8 +553,6 @@ Content-Length: 0
 ## <a name="see-also"></a>См. также
 
 - [Доступные шаблоны](/MicrosoftTeams/get-started-with-teams-templates)
-- [Начало работы с шаблонами команд розничной торговли](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
-- [Начало работы с шаблонами команд здравоохранения](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
+- [Начало работы с шаблонами команд розничной торговли](/MicrosoftTeams/get-started-with-retail-teams-templates)
+- [Начало работы с шаблонами команд здравоохранения](/MicrosoftTeams/healthcare/healthcare-templates)
 - [Создание группы с командой](/graph/teams-create-group-and-team)
-
-

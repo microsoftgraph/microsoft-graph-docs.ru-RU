@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c9df1f2bffebfbfb26707bd1b61f4acb1a6235ee
-ms.sourcegitcommit: 3c0fa2d13ede0fdfa66d966d4ec32cb468c3befa
+ms.openlocfilehash: 5ddbd41aa7e51434fb6e6d07a90bac090a0266d6
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48273594"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314968"
 ---
 # <a name="update-printer"></a>Обновление принтера
 
@@ -23,7 +23,7 @@ ms.locfileid: "48273594"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать. Пользователь, вошедшего в систему, должен быть [администратором принтера](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать. Пользователь, вошедшего в систему, должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 Только приложение, которое зарегистрировало принтер, может обновлять принтер с помощью разрешений приложения.
 
@@ -31,7 +31,7 @@ ms.locfileid: "48273594"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Printer. ReadWrite. ALL, Printer. FullControl. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| Printer.ReadWrite.All |
+|Для приложений| Printer.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -182,5 +182,3 @@ Content-length: 1313
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 845b0e53de1f16d548baee27c2c6265495221207
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 6a81a7cb35418cc10ceffc52f5c56e41470930e7
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223319"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313928"
 ---
 # <a name="grant-an-approleassignment-to-a-service-principal"></a>Предоставление appRoleAssignment субъекту-службе
 
@@ -20,7 +20,7 @@ ms.locfileid: "48223319"
 
 Назначьте роль приложения субъекту-службе клиента.
 
-Роли приложений, назначаемые субъектам-службам, также называются [разрешениями приложений](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Разрешения приложения можно предоставлять непосредственно в назначениях ролей приложений, а также с помощью [интерфейса согласия](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
+Роли приложений, назначаемые субъектам-службам, также называются [разрешениями приложений](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Разрешения приложения можно предоставлять непосредственно в назначениях ролей приложений, а также с помощью [интерфейса согласия](/azure/active-directory/develop/application-consent-experience).
 
 Чтобы предоставить назначение роли приложения субъекту-службе клиента, нужны три идентификатора:
 
@@ -145,5 +145,3 @@ Content-length: 253
   ]
 }
 -->
-
-

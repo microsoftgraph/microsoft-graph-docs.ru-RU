@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: d74ca2f9ba794eb7213aff42171c0d13d3751906
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fc3d326aa7f2d29af0b8876ba77131f37d51d5bc
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035248"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314152"
 ---
 # <a name="get-privilegedapproval"></a>Получение privilegedApproval
 
@@ -35,7 +35,7 @@ ms.locfileid: "48035248"
 GET /privilegedApproval/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -112,5 +112,3 @@ Content-length: 193
   ]
 }
 -->
-
-

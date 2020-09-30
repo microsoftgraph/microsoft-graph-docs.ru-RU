@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: d6c99aa96fb8b2bec47f57fdc32abe5e008aac12
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 35624371c0fb88dc25e14c33ff0240a8e9fc6020
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035066"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314897"
 ---
 # <a name="list-privilegedroleassignments"></a>Список Привилежедролеассигнментс
 
@@ -36,7 +36,7 @@ ms.locfileid: "48035066"
 GET /privilegedRoleAssignments
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приводится пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже показан пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -131,7 +131,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приводится пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже показан пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -191,7 +191,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приводится пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже показан пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -251,7 +251,7 @@ GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevate
 ---
 
 ##### <a name="response"></a>Отклик 
-Ниже приводится пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже показан пример отклика. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -313,5 +313,3 @@ Content-length: 237
   ]
 }
 -->
-
-

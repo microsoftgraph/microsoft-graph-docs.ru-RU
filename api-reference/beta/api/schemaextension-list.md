@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 0dd2f09a1967a40be0bf62ac5245a3fa3a055c0d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7f90461495b3e0a100a08b4887e67d33ed06cca8
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058727"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48314383"
 ---
 # <a name="list-schemaextensions"></a>Перечисление schemaExtensions
 
@@ -38,7 +38,7 @@ ms.locfileid: "48058727"
 GET /schemaExtensions
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -131,5 +131,3 @@ Content-length: 274
   ]
 }
 -->
-
-
