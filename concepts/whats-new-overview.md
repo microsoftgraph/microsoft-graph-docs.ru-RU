@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: d1d7d483e6061c86cc25641fc1f02e0130c62d93
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: f8508b73003168316eb1b79221ee7ee485ce51a5
+ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192730"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48288744"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -35,22 +35,21 @@ ms.locfileid: "48192730"
 ### <a name="reports"></a>Отчеты
 [Получите отчет, включающий количество уникальных пользователей](/graph/api/reportroot-getemailappusageversionsusercounts) для Outlook 2019 и Outlook в Microsoft 365.
 
-<!--
-### Use the SDKs
-GA of the Microsoft Graph PowerShell SDK (https://github.com/microsoftgraph/msgraph-sdk-powershell) which enables access to the entire surface of Microsoft Graph in a straightforward and consistent way.
--->
-
 ### <a name="teamwork"></a>Командная работа
 - Получите свойство **lastEditedDateTime**, чтобы узнать, когда отправитель последний раз внес изменения в [сообщение чата](/graph/api/resources/chatmessage).
 - Получите свойство **lastModifiedDateTime**, чтобы узнать, когда отправитель создал сообщение чата или когда любой пользователь изменил его другими способами, в том числе добавив или удалив реакции. 
+- [Получайте уведомления об изменениях](webhooks.md) в [сообщениях чата](/graph/api/resources/chatmessage).
+
+### <a name="use-the-sdks"></a>Использование пакетов SDK
+Общая доступность пакета [SDK PowerShell Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-powershell), обеспечивающего понятный и согласованный доступ ко всем возможностям Microsoft Graph.
 
 ### <a name="use-the-toolkit"></a>Использование набора средств
 Воспользуйтесь новыми пошаговыми руководствами по началу работы для набора средств Microsoft Graph и насладитесь удобством набора средств:
-- [Создание веб-приложения в JavaScript](/graph/toolkit/get-started/build-a-web-app)
-- [Создание веб-части SharePoint](/graph/toolkit/get-started/build-a-sharepoint-web-part)
-- [Создание вкладки Microsoft Teams](/graph/toolkit/get-started/build-a-microsoft-teams-tab)
-- [Использование набора средств с помощью React](/graph/toolkit/get-started/use-toolkit-with-react)
-- [Использование набора средств с помощью Angular](/graph/toolkit/get-started/use-toolkit-with-angular)
+- [Создание веб-приложения в JavaScript](./toolkit/get-started/build-a-web-app.md)
+- [Создание веб-части SharePoint](./toolkit/get-started/build-a-sharepoint-web-part.md)
+- [Создание вкладки Microsoft Teams](./toolkit/get-started/build-a-microsoft-teams-tab.md)
+- [Использование набора средств с помощью React](./toolkit/get-started/use-toolkit-with-react.md)
+- [Использование набора средств с помощью Angular](./toolkit/get-started/use-toolkit-with-angular.md)
 
 ### <a name="users"></a>Пользователи
 Помимо получения SMTP-адреса [пользователя](/graph/api/resources/user) с помощью свойства **mail**, теперь вы можете установить это свойство и обновить адрес электронной почты пользователя. 
@@ -77,10 +76,6 @@ GA of the Microsoft Graph PowerShell SDK (https://github.com/microsoftgraph/msgr
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 Организации могут [получить](/graph/api/continuousaccessevaluationpolicy-get?view=graph-rest-beta&preserve-view=true) или [обновить](/graph/api/continuousaccessevaluationpolicy-update?view=graph-rest-beta&preserve-view=true) [политику оценки непрерывного доступа](/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta&preserve-view=true), чтобы управлять сеансами проверки подлинности в режиме реального времени.
 
-### <a name="teamwork"></a>Командная работа
-- Узнайте о дате и времени создания [канала](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) или [команды](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) Teams.
-- [Обновите](/graph/api/chatmessage-update?view=graph-rest-beta&preserve-view=true) свойство **policyViolation** объекта [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) в [канале](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) или [чате](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true), позволив приложениям защиты от потери данных (DLP) отслеживать [нарушения политики сообщений чатов](/graph/api/resources/chatmessagepolicyviolation?view=graph-rest-beta&preserve-view=true), чтобы сообщения не содержали данные, которые пользователи не должны отправлять.
-
 ### <a name="search"></a>Поиск
 
 - Используйте дополнительные возможности в [API Поиска (Майкрософт)](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true) для соединителей OneDrive, SharePoint, Microsoft Graph: 
@@ -90,11 +85,18 @@ GA of the Microsoft Graph PowerShell SDK (https://github.com/microsoftgraph/msgr
   - Получайте настраиваемые свойства в ресурсах [listItem](/graph/api/resources/listitem?view=graph-rest-beta&preserve-view=true).
   - [Сортируйте](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#sort-search-results) результаты поиска для OneDrive и SharePoint с помощью любого свойства, поддерживающего сортировку.
   - [Уточняйте результаты с помощью агрегатов](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#refine-results-using-aggregations) для OneDrive и SharePoint.
-- Запрашивайте внешние данные, принятые соединителями Microsoft Graph, в [нескольких связях](/graph/search-concept-custom-types).
+- Запрашивайте внешние данные, принятые соединителями Microsoft Graph, в [нескольких связях](./search-concept-custom-types.md).
 - Воспользуйтесь улучшенным содержимым для соединителей Microsoft Graph, чтобы узнать о следующем:
   - [Управление связями](search-index-manage-connections.md)
   - [Управление схемой](search-index-manage-schema.md)
   - [Управление элементами](search-index-manage-items.md)
+- Отслеживайте состояние [подключения](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) Microsoft Graph.
+- Определите [внешнюю группу](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true), чтобы задать разрешения для объектов [внешних элементов](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true), добавленных в [подключение](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) Microsoft Graph. Внешние группы могут представлять группы, не относящиеся к Azure Active Directory, или похожие на группы конструкции, например бизнес-подразделения, которые устанавливают разрешения для содержимого во внешнем источнике данных.
+
+### <a name="teamwork"></a>Командная работа
+- Узнайте о дате и времени создания [канала](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) или [команды](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) Teams.
+- [Обновите](/graph/api/chatmessage-update?view=graph-rest-beta&preserve-view=true) свойство **policyViolation** объекта [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) в [канале](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) или [чате](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true), позволив приложениям защиты от потери данных (DLP) отслеживать [нарушения политики сообщений чатов](/graph/api/resources/chatmessagepolicyviolation?view=graph-rest-beta&preserve-view=true), чтобы сообщения не содержали данные, которые пользователи не должны отправлять.
+
 
 ## <a name="august-2020-new-and-generally-available"></a>Август 2020 г.: новые и общедоступные возможности
 
@@ -185,4 +187,3 @@ GA of the Microsoft Graph PowerShell SDK (https://github.com/microsoftgraph/msgr
 - Ознакомьтесь с подробными сведениями о дополнениях API Microsoft Graph и обновлениями действий API в [журнале изменений](changelog.md).
 - Найдите [обзоры предыдущих выпусков](whats-new-earlier.md).
 - Узнайте больше о [политиках в отношении управления версиями, поддержки и внесения критических изменений в Microsoft Graph](versioning-and-support.md).
-
