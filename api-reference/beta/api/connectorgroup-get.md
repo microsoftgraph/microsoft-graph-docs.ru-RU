@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 996ed42380d6e6fd9ce301c5a622411281ebb15a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 840bc017a7b144243c2e5dc2f656d4116f5cac5c
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982306"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312985"
 ---
 # <a name="get-connectorgroup"></a>Получение connectorGroup
 
@@ -35,14 +35,14 @@ ms.locfileid: "47982306"
 GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Носителя. Обязательно|
+| Авторизация  | Носителя. Обязательный|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -109,5 +109,3 @@ Content-length: 119
   "suppressions": []
 }
 -->
-
-

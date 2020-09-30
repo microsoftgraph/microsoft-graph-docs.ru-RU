@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 995bcf06c01f75f75b786a3d5a697f054dbc7d9b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a78dcb844015237bef44b8e48dcf266761cf026a
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991581"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312430"
 ---
 # <a name="get-authentication-operation"></a>Получение операции проверки подлинности
 
@@ -21,7 +21,7 @@ ms.locfileid: "47991581"
 Получение свойств и связей объекта [Operation](../resources/operation.md) . В настоящее время эти операции создаются путем инициирования сброса пароля с помощью метода [сброса пароля](passwordauthenticationmethod-resetpassword.md) . Объект Operation сообщает вызывающей стороне о текущем состоянии операции сброса пароля. Возможные состояния:
 
 * NotStarted
-* Работает
+* Выполняется
 * Succeeded
 * Не выполнено
 
@@ -37,7 +37,7 @@ ms.locfileid: "47991581"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
 | Для приложений                            | Не поддерживается. | Не поддерживается. |
 
-Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный администратор
 * Глобальный читатель
@@ -62,7 +62,7 @@ GET /users/{id}/authentication/operations/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -133,5 +133,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

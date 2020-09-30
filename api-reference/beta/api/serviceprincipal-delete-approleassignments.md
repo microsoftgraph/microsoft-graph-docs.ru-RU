@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 5398e58b6e0edc8b7b87021946f69986d3f619a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dc05aaae842602b333c4136566999dba1213dfc3
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044646"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313249"
 ---
 # <a name="delete-an-approleassignment-granted-to-a-service-principal"></a>Удаление Аппролеассигнмент, назначенного субъекту службы
 
@@ -20,7 +20,7 @@ ms.locfileid: "48044646"
 
 Удаляет объект [аппролеассигнмент](../resources/approleassignment.md) , предоставленный субъектом службы.
 
-Роли приложений, назначенные субъектам служб, также называются [разрешениями приложений](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Удаление назначения роли приложения для субъекта-службы эквивалентно отмене предоставления разрешений только для приложения.
+Роли приложений, назначенные субъектам служб, также называются [разрешениями приложений](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Удаление назначения роли приложения для субъекта-службы эквивалентно отмене предоставления разрешений только для приложения.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "48044646"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Аппролеассигнмент. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | AppRoleAssignment.ReadWrite.All |
 
@@ -49,7 +49,7 @@ DELETE /servicePrincipals/{id}/appRoleAssignments/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -114,5 +114,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

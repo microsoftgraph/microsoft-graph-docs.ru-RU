@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 7de7f328d59ba20de77ec75cf5c6f16a0da2bc9e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5859fbf5d821a2d3f56e8a72b19ee8392b633bf9
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988081"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312399"
 ---
 # <a name="list-appointments"></a>Список встреч
 
@@ -34,7 +34,7 @@ ms.locfileid: "47988081"
 GET /bookingBusinesses/{id}/appointments
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 Чтобы получить набор встреч из зарезервированных дел в диапазоне дат, вместо этого `$filter` [получите calendarView](bookingbusiness-list-calendarview.md) для этого диапазона дат.
 
@@ -273,5 +273,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

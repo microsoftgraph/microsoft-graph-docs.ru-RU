@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c80ed7f997cc888c340d6f155b986c0307c6234f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 51de5257597947f1a7a83740862e9e8f89ccf728
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064705"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313767"
 ---
 # <a name="offershiftrequest-approve"></a>Оффершифтрекуест: утверждение
 
@@ -26,11 +26,9 @@ ms.locfileid: "48064705"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Schedule. ReadWrite. ALL * |
-
->\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
+| Для приложений                            | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

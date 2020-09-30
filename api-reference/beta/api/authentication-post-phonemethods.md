@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6ebed72ef48e116273994d85f60abced79d862db
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 85abd41b85c00a1f669c5fe5add2beaf2a2dbcf0
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991649"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312500"
 ---
 # <a name="create-phoneauthenticationmethod"></a>Создание Фонеаусентикатионмесод
 
@@ -34,7 +34,7 @@ ms.locfileid: "47991649"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
 | Для приложений                            | Не поддерживается. | Не поддерживается. |
 
-Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный администратор
 * Привилегированный администратор проверки подлинности
@@ -138,5 +138,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

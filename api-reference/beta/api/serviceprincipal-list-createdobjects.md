@@ -1,18 +1,18 @@
 ---
-title: 'servicePrincipal: List createdObjects'
+title: 'servicePrincipal: Перечисление createdObjects'
 description: Получение списка объектов directoryobject.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 7f4ebd1229a702cbb77e6b13aeeef0be9c118b30
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e3a320b3c5cfb2418e438f97ed05de06aeabaa9a
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044580"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313557"
 ---
-# <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: List createdObjects
+# <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: Перечисление createdObjects
 
 Пространство имен: microsoft.graph
 
@@ -27,7 +27,7 @@ ms.locfileid: "48044580"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application. Read. ALL, Directory. Read. ALL, Application. ReadWrite. Овнедби, Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Для приложений | Application.Read.All, Directory.Read.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "48044580"
 GET /servicePrincipals/{id}/createdObjects
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя           | Описание                |
@@ -115,5 +115,3 @@ Content-length: 55
   ]
 }
 -->
-
-

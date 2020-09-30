@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: cbef8b345db23f1b396d1667bd0acb17cbdcf7a6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2a3e2ad3923e7404b72a5e612c5f776b22a8bbad
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996621"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312738"
 ---
 # <a name="list-bookingbusinesses"></a>Список Букингбусинессес
 
@@ -40,7 +40,7 @@ ms.locfileid: "47996621"
 GET /bookingBusinesses
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 Этот метод также поддерживает `query` параметр, который принимает строковое значение. Этот параметр позволяет ограничить результаты получения для предприятий, которые совпадают с указанной строкой. Вы можете увидеть [Пример](#request-2) ниже.
 
@@ -169,5 +169,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

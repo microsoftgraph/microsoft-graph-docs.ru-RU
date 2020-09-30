@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f438927eba98dfa96514292ba68765989d83278a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 366402224641ec308c9e257a1238f3166a03a28c
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008932"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48311982"
 ---
 # <a name="get-directoryaudit"></a>Получение directoryAudit
 
@@ -30,7 +30,7 @@ ms.locfileid: "48008932"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
 |Для приложений | AuditLog.Read.All | 
 
-Кроме того, приложения должны быть [правильно зарегистрированы](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
+Кроме того, приложения должны быть [правильно зарегистрированы](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -158,5 +158,3 @@ Content-length: 218
   "suppressions": [
   ]
 }-->
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a2c3f96b03439f00e8b0ad8ce064ce703ae5cc56
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 56cd61e1ff81fb157b10708223521d5ffb0faafd
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989937"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313593"
 ---
 # <a name="serviceprincipal-getpasswordsinglesignoncredentials"></a>servicePrincipal: Жетпассвордсинглесигнонкредентиалс
 
@@ -31,7 +31,7 @@ ms.locfileid: "47989937"
 | Для приложений                            | Application. ReadWrite. Овнедби и Directory. Read. ALL, Application. ReadWrite. ALL и Directory. Read. ALL, Directory. ReadWrite. ALL |
 
 > [!NOTE]
-> Пользователи могут самостоятельно создавать учетные данные. Владельцы и администраторы участников службы могут создавать учетные данные для каждого пользователя или группы: Глобаладминистратор, Аппликатионадминистратор, Клаудаппликатионадминистратор. Чтобы узнать больше, ознакомьтесь с разделами [роли каталога](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+> Пользователи могут самостоятельно создавать учетные данные. Владельцы и администраторы участников службы могут создавать учетные данные для каждого пользователя или группы: Глобаладминистратор, Аппликатионадминистратор, Клаудаппликатионадминистратор. Чтобы узнать больше, ознакомьтесь с разделами [роли каталога](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -135,5 +135,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ec213bd54fb7143fd9d1da57b849d3147eb8f580
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8674d425d6613896ac5d90263a64c2de9f109740
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998490"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313914"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -45,6 +45,7 @@ ms.locfileid: "47998490"
 | countryLetterCode | String | Сокращенное название страны или региона для организации. |
 | createdDateTime | DateTimeOffset | Метка времени создания организации. Значение не может изменяться и заполняется автоматически, когда создается организация. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
 | deletedDateTime | DateTimeOffset | Представляет дату и время удаления клиента Azure AD с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
+| директорисизекуота | [директорисизекуота](directorySizeQuota.md) | Сведения о квоте размера каталога в Организации. |
 | displayName | String | Отображаемое имя для клиента. |
 | id | String | Уникальный идентификатор клиента, представляющий организацию (или клиента). Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения. |
 | isMultipleDataLocationsForServicesEnabled | Boolean | Используется значение **true**, если в организации включена поддержка нескольких регионов. Используется значение **false**, если поддержка нескольких регионов в организации не включена. По умолчанию используется значение **null**. Только для чтения. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). |
@@ -69,7 +70,7 @@ ms.locfileid: "47998490"
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|Коллекция [certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md)| Свойство навигации для управления конфигурацией проверки подлинности на основе сертификатов. В коллекции можно создать только один экземпляр объекта certificateBasedAuthConfiguration.  |
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для ресурса Организации. Допускается значение null.|
-|параметры|[организатионсеттингс](organizationsettings.md) | Получение свойств и связей объекта Организатионсеттингс. Допускается значение null.|
+|settings|[организатионсеттингс](organizationsettings.md) | Получение свойств и связей объекта Организатионсеттингс. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -93,6 +94,7 @@ ms.locfileid: "47998490"
   "countryLetterCode": "string",
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
+  "directorySizeQuota": {"@odata.type": "microsoft.graph.directorySizeQuota"},
   "displayName": "string",
   "id": "string (identifier)",
   "isMultipleDataLocationsForServicesEnabled": "boolean",

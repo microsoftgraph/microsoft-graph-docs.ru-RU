@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 03e98ca4422018ba0aeaa2a21f4fa767e3acb6c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9ecab7075255ba1becb24aaa38076fe855a074fa
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988039"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312374"
 ---
 # <a name="list-customers"></a>Перечисление клиентов
 
@@ -34,7 +34,7 @@ ms.locfileid: "47988039"
 GET /bookingBusinesses/{id}/customers
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -123,5 +123,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

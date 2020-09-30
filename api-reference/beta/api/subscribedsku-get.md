@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SumitParikh
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dfb973f8a581699ab9bd79851f096288462b9d8c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8dfd200c2d7468f4543511f6d30666ebc8529245
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044368"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313921"
 ---
 # <a name="get-subscribedsku"></a>Вывод объекта SubscribedSku
 
@@ -36,14 +36,14 @@ ms.locfileid: "48044368"
 GET /subscribedSkus/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя       | Описание|
 |:-----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -121,5 +121,3 @@ Content-length: 450
   ]
 }
 -->
-
-

@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fd452b7d0df102556d5431e5fcf6351753fc906a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f4e2867c878ad654a6e0466ad94f16a864be9e7c
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009053"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48311977"
 ---
 # <a name="update-device"></a>Обновление устройства
 
@@ -29,7 +29,7 @@ ms.locfileid: "48009053"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение | Не поддерживается |
+|Для приложений | Не поддерживается |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -54,8 +54,8 @@ PATCH /devices/{id}
 |operatingSystem|String|Тип операционной системы на устройстве.|
 |operatingSystemVersion|String|Версия операционной системы на устройстве.|
 |displayName|String|Отображаемое имя устройства.|
-|isCompliant|Boolean|Используется значение **true**, если устройство соответствует требованиям политик управления мобильными устройствами (MDM). В противном случае используется значение **false**. С помощью Intune можно обновлять любой тип ОС устройства или [утвержденное приложение MDM](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для устройств Windows OS. |
-|isManaged|Boolean|Используется значение **true**, если устройство контролируется с помощью приложения для управления мобильными устройствами (MDM), например Intune. В противном случае используется значение **false**. С помощью Intune можно обновлять любой тип ОС устройства или [утвержденное приложение MDM](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для устройств Windows OS. |
+|isCompliant|Boolean|Используется значение **true**, если устройство соответствует требованиям политик управления мобильными устройствами (MDM). В противном случае используется значение **false**. С помощью Intune можно обновлять любой тип ОС устройства или [утвержденное приложение MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для устройств Windows OS. |
+|isManaged|Boolean|Используется значение **true**, если устройство контролируется с помощью приложения для управления мобильными устройствами (MDM), например Intune. В противном случае используется значение **false**. С помощью Intune можно обновлять любой тип ОС устройства или [утвержденное приложение MDM](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для устройств Windows OS. |
 
 Так как ресурс **Device** поддерживает [расширения](/graph/extensibility-overview), с помощью операции можно `PATCH` добавлять, обновлять или удалять собственные данные, зависящие от приложения, в пользовательских свойствах расширения в существующем экземпляре **устройства** .
 
@@ -127,5 +127,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

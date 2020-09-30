@@ -1,21 +1,23 @@
 ---
-title: Создание Линкедресаурцес
-description: Создание нового объекта Линкедресаурцес.
+title: Создание Линкедресаурце
+description: Создание нового объекта Линкедресаурце.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e5a5a702c55db40c77304c577b440f34dc610e8b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 56ad2b1f83475cc6b5af748c129f0cd84cdc07b0
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058587"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313697"
 ---
-# <a name="create-linkedresources"></a>Создание Линкедресаурцес
+# <a name="create-linkedresource"></a>Создание Линкедресаурце
 Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта Линкедресаурцес.
+Создание нового объекта **линкедресаурце** .
+
+Вы также можете создать объект **линкедресаурце** при [создании тодотаск](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -79,8 +81,7 @@ Content-Type: application/json
 Content-length: 166
 
 {
-  "@odata.type": "#microsoft.graph.linkedResource",
-  "webUrl": "http:://microsoft.com",
+  "webUrl": "https://microsoft.com",
   "applicationName": "Microsoft",
   "displayName": "Microsoft",
   "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"

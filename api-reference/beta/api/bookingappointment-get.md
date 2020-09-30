@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 10b9fc68d179328592b1dfdbb58a93cab55f336c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f7d84daee651e06b4c5afc218d79f2a9c246b9b6
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988123"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312402"
 ---
 # <a name="get-bookingappointment"></a>Получение Букингаппоинтмент
 
@@ -36,7 +36,7 @@ ms.locfileid: "47988123"
 GET /bookingBusinesses/{id}/appointments/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -200,5 +200,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

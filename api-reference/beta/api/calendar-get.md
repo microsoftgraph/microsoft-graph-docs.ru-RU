@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6ef533d2a8960d607a461807c29ecc31df2b4995
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2b3f1c3977bfd80019c87b03f81b5e1fba881954
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987675"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313144"
 ---
 # <a name="get-calendar"></a>Вывод календаря
 
@@ -18,7 +18,7 @@ ms.locfileid: "47987675"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [calendar](../resources/calendar.md). В качестве календаря может использоваться календарь [пользователя](../resources/user.md)или стандартный календарь [группы](../resources/group.md)Microsoft 365.
+Получение свойств и связей объекта [calendar](../resources/calendar.md). Это может быть календарь для [пользователя](../resources/user.md) или стандартный календарь для [группы](../resources/group.md) Microsoft 365.
 
 Существует два сценария, в которых приложение может получить календарь другого пользователя:
 
@@ -57,7 +57,7 @@ GET /me/calendarGroups/{id}/calendars/{id}
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
@@ -150,5 +150,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

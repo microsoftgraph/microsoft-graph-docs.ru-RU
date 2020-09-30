@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 30c8cc7e7d08ab71927405c5f4103bad133976d7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0f058c170a080dd0d3ed9028c6b66e31302f1fc3
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996824"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312556"
 ---
 # <a name="create-call"></a>Создание звонка
 
@@ -18,13 +18,13 @@ ms.locfileid: "47996824"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создать [вызов](../resources/call.md) позволяет Bot создать новый исходящий одноранговый или групповой вызов или присоединиться к существующему собранию. Вам потребуется [зарегистрировать запрашивающий абонент](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) и просмотреть список необходимых разрешений, как описано ниже.
+Создать [вызов](../resources/call.md) позволяет Bot создать новый исходящий одноранговый или групповой вызов или присоединиться к существующему собранию. Вам потребуется [зарегистрировать запрашивающий абонент](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) и просмотреть список необходимых разрешений, как описано ниже.
 
 > **Примечание:** В настоящее время поддерживаются только звонки по протоколу VoIP. 
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                             |
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
@@ -1127,5 +1127,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

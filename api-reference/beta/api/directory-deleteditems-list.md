@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f6c33dc40d556f36b2155542a63f8b82f54e672b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f5727e5f638ed4c2e07d9a799693e07abb962daf
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009004"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48311975"
 ---
 # <a name="list-deleted-items"></a>Перечисление удаленных элементов
 
@@ -32,7 +32,7 @@ ms.locfileid: "48009004"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL |
+|Для приложений | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
 ### <a name="for-users"></a>Для пользователей:
 
@@ -60,16 +60,16 @@ GET /directory/deletedItems/microsoft.graph.user
 
 Этот API в настоящее время поддерживает получение типов объектов приложений (Microsoft. Graph. Application), групп (Microsoft. Graph. Group) или пользователей (Microsoft. Graph. User) из удаленных элементов. Тип является обязательной частью URI. Вызов GET /directory/deleteditems без типа не поддерживается.
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Bearer &lt;code&gt; *Обязательный*.|
+| Авторизация  | Bearer &lt;code&gt; *Обязательный*.|
 | Accept  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -143,5 +143,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

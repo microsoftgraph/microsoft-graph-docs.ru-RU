@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 06f96df47780a3bb89197584aa50625925a49dcb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 15d2d801d98b96cea2e31023f260fab3d149fa9c
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997125"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312612"
 ---
 # <a name="list-agreements"></a>Список соглашений
 
@@ -35,7 +35,7 @@ GET /agreements
 ```
 <!--
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 -->
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -43,7 +43,7 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Agreement](../resources/agreement.md) в тексте отклика.
@@ -109,5 +109,3 @@ Content-length: 146
   ]
 }
 -->
-
-

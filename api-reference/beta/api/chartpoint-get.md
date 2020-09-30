@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: c804ef236b6c29918ff58336cd17a99db07cefca
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b66dafeaf34c6cedc3c76ff5aff7bc998ffd5943
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982873"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312257"
 ---
 # <a name="get-chartpoint"></a>Получение объекта ChartPoint
 
@@ -34,7 +34,7 @@ ms.locfileid: "47982873"
 GET /workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points/{undefined}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -42,7 +42,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points/{unde
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -105,5 +105,3 @@ Content-length: 20
   ]
 }
 -->
-
-

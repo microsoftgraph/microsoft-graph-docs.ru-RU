@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 13b3899b1631230798a0324f29e573dc0e6ac829
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 998dcfca1930ecea3525b4867cc77ff821d20574
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987577"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313109"
 ---
 # <a name="list-calendars"></a>Список календарей
 
@@ -48,9 +48,9 @@ GET /me/calendarGroups/{id}/calendars
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -58,7 +58,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 | :------------ | :----- | :------------------------ |
 | Authorization | string | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -141,5 +141,3 @@ Content-length: 147
   ]
 }
 -->
-
-

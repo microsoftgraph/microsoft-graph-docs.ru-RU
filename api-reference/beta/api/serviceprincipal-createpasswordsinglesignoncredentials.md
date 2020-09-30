@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7edecd61c6dfeaacaabf3b7ff6ff789584397631
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 844aa04d39ada59fa06c92749331f0d71714bd9b
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044657"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313246"
 ---
 # <a name="serviceprincipal-createpasswordsinglesignoncredentials"></a>servicePrincipal: Креатепассвордсинглесигнонкредентиалс
 
@@ -31,7 +31,7 @@ ms.locfileid: "48044657"
 | Для приложений                            | Application. ReadWrite. ALL и Directory. Read. ALL, Directory. ReadWrite. ALL |
 
 > [!NOTE]
-> Пользователи могут самостоятельно создавать учетные данные. Владельцы и администраторы участников службы могут создавать учетные данные для каждого пользователя или группы: Глобаладминистратор, Аппликатионадминистратор, Клаудаппликатионадминистратор. Чтобы узнать больше, ознакомьтесь с разделами [роли каталога](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+> Пользователи могут самостоятельно создавать учетные данные. Владельцы и администраторы участников службы могут создавать учетные данные для каждого пользователя или группы: Глобаладминистратор, Аппликатионадминистратор, Клаудаппликатионадминистратор. Чтобы узнать больше, ознакомьтесь с разделами [роли каталога](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -54,7 +54,7 @@ POST /servicePrincipals/{id}/createPasswordSingleSignOnCredentials
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка|Идентификатор пользователя или группы, к которой принадлежит этот набор учетных данных.|
+|id|String|Идентификатор пользователя или группы, к которой принадлежит этот набор учетных данных.|
 |записей|Коллекция [учетных данных](../resources/credential.md)|Список объектов учетных данных, определяющих полный вход.|
 
 ## <a name="response"></a>Отклик
@@ -150,5 +150,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c6b88a77101c504c6bf2c7979758a73a3755c638
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d4f8bd9053db7b58e3aec81e82a5d0c2d20c2407
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991588"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312423"
 ---
 # <a name="update-authorizationpolicy"></a>Обновление Аусоризатионполици
 
@@ -42,7 +42,7 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -53,7 +53,7 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 |:-------------|:------------|:------------|  
 |displayName|String| Отображаемое имя для этой политики. |  
 |description|String| Описание этой политики. |  
-|гуестусерролеид|Guid| Представляет templateId роли для роли, которая должна быть выделена пользователю "гость". Обратитесь к [списку унифиедроледефинитионс](https://docs.microsoft.com/graph/api/rbacapplication-list-roledefinitions?view=graph-rest-beta&tabs=http) , чтобы найти список доступных шаблонов ролей. Только поддерживаемые роли: User (a0b1b346-4d3e-4e8b-98f8-753987be4970), гость (10dae51f-b6af-4016-8d66-8c2a99b929b3) и пользователь с ограниченным гостями (2af84b1e-32c8-42b7-82bc-daa82404023b). | 
+|гуестусерролеид|Guid| Представляет templateId роли для роли, которая должна быть выделена пользователю "гость". Обратитесь к [списку унифиедроледефинитионс](./rbacapplication-list-roledefinitions.md) , чтобы найти список доступных шаблонов ролей. Только поддерживаемые роли: User (a0b1b346-4d3e-4e8b-98f8-753987be4970), гость (10dae51f-b6af-4016-8d66-8c2a99b929b3) и пользователь с ограниченным гостями (2af84b1e-32c8-42b7-82bc-daa82404023b). | 
 |енабледпревиевфеатурес|Коллекция (String)| Список компонентов, включенных для закрытой предварительной версии в клиенте. | 
 |блоккмсолповершелл|Boolean| Чтобы отключить использование MSOL PowerShell, задайте для этого свойства значение `true` . Параметр `true` также отключит доступ пользователей к устаревшей конечной точке службы, используемой MSOL PowerShell. Это не повлияет на Azure AD Connect или Microsoft Graph. | 
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultUserRolePermissions.md)| Задает определенные настраиваемые разрешения для роли пользователя по умолчанию. | 
@@ -299,5 +299,3 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 ```http
 HTTP/1.1 204 No Content
 ```
-
-

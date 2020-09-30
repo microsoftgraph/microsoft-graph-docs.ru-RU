@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 697b1b77e5429f2a1f6f8d9117938c6fac3f3786
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4aaac7534efcb95d3200f783b28eb291f067cbd0
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002700"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313417"
 ---
 # <a name="list-posts"></a>Список публикаций
 
@@ -27,7 +27,7 @@ ms.locfileid: "48002700"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group. ReadWrite. ALL, Group. Read. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group. ReadWrite. ALL, Group. Read. ALL |
+|Для приложений | Group. ReadWrite. ALL, Group. Read. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts
 
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
@@ -137,5 +137,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

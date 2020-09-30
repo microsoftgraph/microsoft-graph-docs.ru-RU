@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 00668f8a60e4501d2e385f378014e99059be937e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8f9d19adc857a50bb835c7ce91fe270a4a075c29
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991651"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312507"
 ---
 # <a name="list-phonemethods"></a>Список Фонемесодс
 
@@ -30,7 +30,7 @@ ms.locfileid: "47991651"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
 | Для приложений                            | Не поддерживается. | Не поддерживается. |
 
-Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный администратор
 * Глобальный читатель
@@ -54,9 +54,9 @@ GET /users/{id}/authentication/phoneMethods
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -144,5 +144,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

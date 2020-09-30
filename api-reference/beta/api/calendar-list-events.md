@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e10a1c859b024b258269d3fa6e18f292fb46690c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1f1a292024772c2504bd4b72231e4154a4679abc
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987679"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313134"
 ---
 # <a name="list-events"></a>Перечисление событий
 
@@ -18,7 +18,7 @@ ms.locfileid: "47987679"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка событий в календаре.  В качестве календаря может использоваться календарь [пользователя](../resources/user.md)или стандартный календарь [группы](../resources/group.md)Microsoft 365. В этом списке указаны единичные собрания и главные собрания в соответствующих рядах.
+Получение списка событий в календаре.  Это может быть календарь для [пользователя](../resources/user.md) или стандартный календарь для [группы](../resources/group.md) Microsoft 365. В этом списке указаны единичные собрания и главные собрания в соответствующих рядах.
 
 Чтобы получить расширенные экземпляры события, вы можете [получить представление календаря](calendar-list-calendarview.md) или [экземпляры события](event-list-instances.md).
 
@@ -53,7 +53,7 @@ GET /me/calendarGroups/{id}/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:--------|:--------|
@@ -135,5 +135,3 @@ Content-length: 354
   ]
 }
 -->
-
-

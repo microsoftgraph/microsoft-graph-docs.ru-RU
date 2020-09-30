@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 98f622e627a19dcfee960b31a9a442f246ea01dd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7a21fd0023b57ead06c5fbe4ac092b6a8e1f803a
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982915"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312259"
 ---
 # <a name="get-chartlineformat"></a>Получение объекта ChartLineFormat
 
@@ -36,7 +36,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/format/line
 GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/majorgridlines/format/line
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -44,7 +44,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/majorgridlines/
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -106,5 +106,3 @@ Content-length: 28
   ]
 }
 -->
-
-

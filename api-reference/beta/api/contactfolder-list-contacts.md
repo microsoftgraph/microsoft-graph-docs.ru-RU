@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fa660186ea9cdb34ba6586a1e932f740d51e5d26
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 46121845c39835f2fe83a9cf417ff673fbf949e2
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002935"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312097"
 ---
 # <a name="list-contacts"></a>Список контактов
 
@@ -39,7 +39,7 @@ GET /me/contactFolders/{id}/contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
@@ -117,5 +117,3 @@ Content-length: 263
   ]
 }
 -->
-
-

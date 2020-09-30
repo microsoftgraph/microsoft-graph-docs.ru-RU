@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 7417f48b38bb45f5967da9df443ae15c5383e725
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 461e0a12c6d5003fa822ddb5de110ed723af7590
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996210"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48311989"
 ---
 # <a name="list-registeredusers"></a>Список registeredUsers
 
@@ -41,14 +41,14 @@ GET /devices/{id}/registeredUsers
 
 > Примечание. Параметр id в запросе — это свойство id объекта device, а не свойство deviceId.
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -115,5 +115,3 @@ Content-length: 55
   ]
 }
 -->
-
-

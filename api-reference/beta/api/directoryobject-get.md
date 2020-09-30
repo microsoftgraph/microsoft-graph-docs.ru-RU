@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6f1ebf6f44fbe1116433cffd78502ae29abfb668
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3d543e322fda2c8d7b7ddef21f1c5dce6435edfe
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008906"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312876"
 ---
 # <a name="get-directoryobject"></a>Получение объекта DirectoryObject
 
@@ -34,7 +34,7 @@ ms.locfileid: "48008906"
 GET /directoryObjects/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
@@ -102,5 +102,3 @@ Content-length: 22
   ]
 }
 -->
-
-

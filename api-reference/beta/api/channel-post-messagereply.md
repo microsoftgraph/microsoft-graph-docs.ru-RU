@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bd656b24e107a8884acb96c5fe2d09861fa54ed2
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 33936790f3b467dd523992f8dbd2d4b96260bc3b
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192338"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313049"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>Ответ на сообщение в канале
 
@@ -22,7 +22,7 @@ ms.locfileid: "48192338"
 
 > **Note**: мы не рекомендуем использовать этот API для переноса данных. Пропускная способность, необходимая для обычной миграции, отсутствует.
 
-> **Note**: нарушение [условий использования](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) Microsoft Teams в качестве файла журнала. Отправлять только сообщения, которые пользователи смогут читать.
+> **Note**: нарушение [условий использования](/legal/microsoft-apis/terms-of-use) Microsoft Teams в качестве файла журнала. Отправлять только сообщения, которые пользователи смогут читать.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -149,5 +149,3 @@ Content-length: 160
   ]
 }
 -->
-
-

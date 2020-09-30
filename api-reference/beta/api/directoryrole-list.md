@@ -5,12 +5,12 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6f0d292998fb37a7832b3807aaa7ced54908241f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0979d8e5745becca9db07764abc8bc58c3be2ff7
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008759"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313347"
 ---
 # <a name="list-directoryroles"></a>Перечисление объектов directoryRole
 
@@ -34,14 +34,14 @@ ms.locfileid: "48008759"
 GET /directoryRoles
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод **не** поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика (например, $filter не поддерживается).
+Этот метод **не** поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика (например, $filter не поддерживается).
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -111,5 +111,3 @@ Content-length: 187
   ]
 }
 -->
-
-

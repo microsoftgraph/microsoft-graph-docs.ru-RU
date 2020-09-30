@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 50ae9c5157d78eb55492dd4021d777149d4620c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 28a49afb25e498ad7d1bdd356694e9be47ea9d5d
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982656"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313475"
 ---
 # <a name="send-chatmessage-in-a-chat"></a>Отправка chatMessage в чате
 
@@ -22,7 +22,7 @@ ms.locfileid: "47982656"
 
 > **Note**: мы не рекомендуем использовать этот API для переноса данных. Пропускная способность, необходимая для обычной миграции, отсутствует.
 
-> **Note**: нарушение [условий использования](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) Microsoft Teams в качестве файла журнала. Отправлять только сообщения, которые пользователи смогут читать.
+> **Note**: нарушение [условий использования](/legal/microsoft-apis/terms-of-use) Microsoft Teams в качестве файла журнала. Отправлять только сообщения, которые пользователи смогут читать.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -49,7 +49,7 @@ POST /users/{id}/chats/{id}/messages
 |:--------------|:--------------|
 | Авторизация | Bearer {код}. Обязательно. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [chatMessage](../resources/chatmessage.md) в формате JSON.
 
@@ -142,5 +142,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
-

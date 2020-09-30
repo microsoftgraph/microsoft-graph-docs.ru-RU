@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e80eab3d3935c119046570576a18344447a486d8
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 6d8ca916ec8e9c358eba1ff0809de41b5a6343e6
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192361"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313053"
 ---
 # <a name="create-chatmessage-in-channel"></a>Создание chatMessage в канале
 
@@ -22,7 +22,7 @@ ms.locfileid: "48192361"
 
 > **Note**: мы не рекомендуем использовать этот API для переноса данных. Пропускная способность, необходимая для обычной миграции, отсутствует.
 
-> **Note**: нарушение [условий использования](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) Microsoft Teams в качестве файла журнала. Отправлять только сообщения, которые пользователи смогут читать.
+> **Note**: нарушение [условий использования](/legal/microsoft-apis/terms-of-use) Microsoft Teams в качестве файла журнала. Отправлять только сообщения, которые пользователи смогут читать.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -161,5 +161,3 @@ Content-length: 160
   ]
 }
 -->
-
-

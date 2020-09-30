@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 710d01ae995781e754f52407d35515eded883d3b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 48daf0b7ea49062b1869649b4b8a71d39aeb4d4c
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48047086"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313774"
 ---
 # <a name="list-borders"></a>Список границ
 
@@ -36,7 +36,7 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/format/borders
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -115,5 +115,3 @@ Content-length: 185
   ]
 }
 -->
-
-

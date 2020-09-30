@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: d270208bc36ce2527f1ea119d61305471d2c17d6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9e4188453538375696a2e59faec449662f8bdbbd
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48047089"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313795"
 ---
 # <a name="get-rangeformat"></a>Получение объекта RangeFormat
 
@@ -36,7 +36,7 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/format
 GET /workbook/tables/{id|name}/columns/{id|name}/range/format
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -108,5 +108,3 @@ Content-length: 96
   ]
 }
 -->
-
-

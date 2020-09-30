@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 95db4ad2a6a05e4df4c8055536d99a771b7568c4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: da99bf47dcc7d56101a46dfdca67f971b55178aa
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067827"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313872"
 ---
 # <a name="reportroot-getm365appplatformusercounts"></a>Reportroot.: getM365AppPlatformUserCounts
 
@@ -20,7 +20,7 @@ ms.locfileid: "48067827"
 
 Получите отчет, который обеспечивает тенденцию активных пользователей по всем приложениям для каждой платформы — Windows, Mac, Интернета и мобильных устройств в вашей организации.
 
-> **Примечание:** Сведения о различных представлениях отчетов и их именах можно найти в [статье microsoft 365 Reports — использование приложений microsoft 365](https://docs.microsoft.com/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
+> **Примечание:** Сведения о различных представлениях отчетов и их именах можно найти в [статье microsoft 365 Reports — использование приложений microsoft 365](/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -235,5 +235,3 @@ Content-Length: 156
   "suppressions": [
   ]
 }-->
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 8189e8704e28044a001fc2a8c5ee73e379716ca9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ef72690a1caf2389a84807f7f8b40c0e9c89c131
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988032"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312745"
 ---
 # <a name="list-services"></a>Список служб
 
@@ -34,7 +34,7 @@ ms.locfileid: "47988032"
 GET /bookingBusinesses/{id}/services
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -232,5 +232,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

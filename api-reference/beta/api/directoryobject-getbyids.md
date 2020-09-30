@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b7bbc021328374692f7d12f6016ca0e5178720e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b4bf049ed135b1dd563d640827360ddf91db0d47
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008892"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312878"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Получение объектов каталога из списка идентификаторов
 
@@ -22,7 +22,7 @@ ms.locfileid: "48008892"
 
 Ниже перечислены некоторые распространенные случаи использования этой функции.
 
-* Разрешение идентификаторов, возвращаемых как часть коллекций идентификаторов функциями, например [getMemberObjects](/graph/api/directoryobject-getmemberobjects.md?view=graph-rest-beta) или [getMemberGroups](/graph/api/directoryobject-getmembergroups.md?view=graph-rest-beta), в базовые объекты каталогов.
+* Разрешение идентификаторов, возвращаемых как часть коллекций идентификаторов функциями, например [getMemberObjects](./directoryobject-getmemberobjects.md) или [getMemberGroups](./directoryobject-getmembergroups.md), в базовые объекты каталогов.
 * Разрешение идентификаторов, которые приложение хранит во внешнем хранилище, в базовые объекты каталогов.
 
 ## <a name="permissions"></a>Разрешения
@@ -148,5 +148,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

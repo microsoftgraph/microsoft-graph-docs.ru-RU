@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: a9164b90d8b3156fa9abb57d41767c9a322f7c27
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 482d4cf50b84dee2216477c98a9e45d692b4b1f8
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193451"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313893"
 ---
 # <a name="list-subscriptions"></a>Перечисление подписок
 
@@ -28,7 +28,7 @@ ms.locfileid: "48193451"
 |:---------------- |:-------------------------------------------- |
 | [Делегированная](/graph/auth-v2-user) (Рабочая или учебная учетная запись) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md) или подписки. Read. All (см. ниже). |
 | [Делегированная](/graph/auth-v2-user) учетная запись (личная учетная запись Майкрософт) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md) или подписки. Read. All (см. ниже). |
-| [Application](/graph/auth-v2-service) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md). |
+| [Приложение](/graph/auth-v2-service) | Разрешение, необходимое для [создания подписки](subscription-post-subscriptions.md). |
 
 Результаты отклика основаны на контексте приложения, отправившего вызов. Ниже представлена сводка общих сценариев.
 
@@ -61,7 +61,7 @@ GET /subscriptions
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+Этот метод не поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -160,5 +160,3 @@ Content-length: 586
 > **Примечание.** Значение свойства `clientState` не возвращается в целях безопасности.  
 
 Когда запрос возвращает несколько страниц данных, отклик включает свойство `@odata.nextLink`, помогающее управлять результатами.  Дополнительные сведения см. в статье [Разбиение данных Microsoft Graph по страницам в приложении](/graph/paging).
-
-

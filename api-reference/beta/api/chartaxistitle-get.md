@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 93ef4e8699df5656936617840d7385de2c41a6c3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 491c8bc815df0133176ea2d8178b14feb2103e50
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983137"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312297"
 ---
 # <a name="get-workbookchartaxistitle"></a>Получение Воркбукчартаксиститле
 
@@ -36,7 +36,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/seriesaxis/title
 GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -44,7 +44,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/axes/categoryaxis/title
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -107,5 +107,3 @@ Content-length: 45
   ]
 }
 -->
-
-

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9451c5923b8225162c2610498baab5ad571bcab5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4182c743859d9ec4bf23a3cf0a86b99662060de8
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987493"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313095"
 ---
 # <a name="call-answer"></a>вызов: ответ
 
@@ -22,7 +22,7 @@ ms.locfileid: "47987493"
 
 Ожидается, что Bot отвечает, [отклоняете](./call-reject.md) или [перенаправляете](./call-redirect.md) вызов до истечения времени ожидания вызова. Текущее значение времени ожидания — 15 секунд.
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Permissions
 Для ответа на одноранговый звонок не требуется никаких разрешений. Для присоединения к группе необходимо одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий)                 |
@@ -453,7 +453,7 @@ Content-Type: application/json
 
 ### <a name="example-3-answer-a-policy-based-recording-call"></a>Пример 3: ответ на вызов записи на основе политики
 
-В [сценарии записи на основе политик](https://docs.microsoft.com/microsoftteams/teams-recording-policy), прежде чем участник политики присоединяется к вызову, на Bot, связанном с политикой, будет отправлено уведомление о входящем звонке.
+В [сценарии записи на основе политик](/microsoftteams/teams-recording-policy), прежде чем участник политики присоединяется к вызову, на Bot, связанном с политикой, будет отправлено уведомление о входящем звонке.
 Сведения о присоединении можно найти в свойстве **ботдата** . С помощью Bot можно выбрать ответ на вызов и соответствующим образом [Обновить состояние записи](call-updaterecordingstatus.md) .
 
 Ниже приведен пример уведомления о входящем вызове, которое получит робота в этом случае.
@@ -570,5 +570,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

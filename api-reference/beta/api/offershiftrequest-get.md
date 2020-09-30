@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bffabd291f56e8be5d33cd5c5ead55d30ffbcd2f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 89b4c6db5c1898b64d72f7ba9cdaeb45ea3b10ef
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064677"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313756"
 ---
 # <a name="get-offershiftrequest"></a>Получение Оффершифтрекуест
 
@@ -26,11 +26,9 @@ ms.locfileid: "48064677"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Group.Read.All, Group.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Schedule. Read. ALL, Group. Read. ALL, Schedule. ReadWrite. ALL, Group. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Schedule. Read. All *, Schedule. ReadWrite. ALL* |
-
->\***Важно!** Разрешения на доступ к приложениям в настоящее время доступны только для частного просмотра и недоступны для использования в общедоступном режиме.
+| Для приложений                            | Schedule. Read. ALL, Schedule. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: aea175602f363477103fba7b6fad785ce4f22c5f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4bbe3178d899d66f2c4b874c349a394a71d9b14e
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987297"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313312"
 ---
 # <a name="call-subscribetotone"></a>Call: Субскрибетотоне
 
@@ -32,7 +32,7 @@ ms.locfileid: "47987297"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
 | Для приложений     | Calls.AccessMedia.All                       |
 
->**Примечание:** Все указанные данные тона могут быть не сохранены. Убедитесь, что вы соответствуете законам и нормативам, касающимся защиты данных и конфиденциальности коммуникаций. Дополнительные сведения можно узнать из [условий использования](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) и обратившись за юридической помощью.
+>**Примечание:** Все указанные данные тона могут быть не сохранены. Убедитесь, что вы соответствуете законам и нормативам, касающимся защиты данных и конфиденциальности коммуникаций. Дополнительные сведения можно узнать из [условий использования](/legal/microsoft-apis/terms-of-use) и обратившись за юридической помощью.
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -46,7 +46,7 @@ POST /communications/calls/{id}/subscribeToTone
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    | Описание |
@@ -164,5 +164,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

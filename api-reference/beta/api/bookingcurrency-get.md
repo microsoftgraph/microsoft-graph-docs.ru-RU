@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 31d8791f6ae2345bedffa7fe25a80f83651bda3e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3d7dcc7abace1963b865638b66bb6dcf25f48723
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987955"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313179"
 ---
 # <a name="get-bookingcurrency"></a>Получение Букингкурренци
 
@@ -35,7 +35,7 @@ ms.locfileid: "47987955"
 GET /bookingCurrencies/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -104,5 +104,3 @@ Content-length: 50
   ]
 }
 -->
-
-
