@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b7f70e65831d435b01dd75d1d86241d77d16cdc9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4beca2a2336a88d640a7140d59b8a3b0a61a0b84
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051293"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315100"
 ---
 # <a name="get-schedule"></a>Получение расписания
 
@@ -34,8 +34,6 @@ ms.locfileid: "48051293"
 | Делегированные (рабочая или учебная учетная запись)     | Schedule. Read. ALL, Group. Read. ALL, Schedule. ReadWrite. ALL, Group. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                 |
 | Для приложений                            | Schedule. Read. ALL, Schedule. ReadWrite. ALL                                      |
-
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
 
 ## <a name="http-request"></a>HTTP-запрос
 

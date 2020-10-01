@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 518544215e141c46a6f99ebd84625404d4d61591
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 71f446eab31dc3fdfcc2dfd4f025c35f9cc9239b
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051209"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48312766"
 ---
 # <a name="create-schedulinggroup"></a>Создание объекта schedulingGroup
 
@@ -27,8 +27,6 @@ ms.locfileid: "48051209"
 |Делегированные (рабочая или учебная учетная запись) | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений |Schedule.ReadWrite.All |
-
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
 
 ## <a name="http-request"></a>HTTP-запрос
 

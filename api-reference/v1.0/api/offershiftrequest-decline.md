@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8368935da77d178c7e1165da4b9ac418a9016f0e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 54c33624d924f9f424a99ff0668f8c1f7dd9c37a
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087147"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313676"
 ---
 # <a name="offershiftrequest-decline"></a>Оффершифтрекуест: отклонить
 
@@ -26,9 +26,7 @@ ms.locfileid: "48087147"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Schedule.ReadWrite.All |
-
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
+| Для приложений                            | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

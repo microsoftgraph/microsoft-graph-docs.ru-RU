@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 47beed16d5b25a21a912686b5a0750751dd953f9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d0044a174c9983bf21a696a428d458dd04cc0cc9
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012966"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315565"
 ---
 # <a name="get-shift"></a>Получение смены
 
@@ -22,13 +22,12 @@ ms.locfileid: "48012966"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
+
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                    |
 |:---------------------------------------|:-------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Schedule. Read. ALL, Group. Read. ALL, Schedule. ReadWrite. ALL, Group. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                 |
 | Для приложений                            | Schedule. Read. ALL, Schedule. ReadWrite. ALL                                      |
-
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +47,7 @@ GET /teams/{teamId}/schedule/shifts/{shiftId}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

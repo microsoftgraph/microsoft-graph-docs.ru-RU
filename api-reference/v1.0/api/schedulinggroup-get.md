@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 26d8b1787003a1d83f5a7cbcc9955bf42e28ceaf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 01ffc74717e9890771894b1cff6cc41ab6499f10
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015584"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48311947"
 ---
 # <a name="get-schedulinggroup"></a>Получение объекта schedulingGroup
 
@@ -27,9 +27,6 @@ ms.locfileid: "48015584"
 |Делегированные (рабочая или учебная учетная запись) | Schedule. Read. ALL, Group. Read. ALL, Schedule. ReadWrite. ALL, Group. ReadWrite. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Schedule. Read. ALL, Schedule. ReadWrite. ALL |
-
-
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -49,7 +46,7 @@ GET /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

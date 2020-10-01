@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f3e46b510cbee338b123ec771dc1571eed2963f6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 42b492917a84f9775b2e48bcd3b29d4b5e3c84f4
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051223"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315079"
 ---
 # <a name="create-shift"></a>Создание смены
 
@@ -27,8 +27,6 @@ ms.locfileid: "48051223"
 |Делегированные (рабочая или учебная учетная запись) | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Schedule.ReadWrite.All |
-
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
 
 ## <a name="http-request"></a>HTTP-запрос
 

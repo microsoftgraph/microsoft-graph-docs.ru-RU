@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f1a9637876071c499ce8cfd9da40d211c4b4f91c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fde2023fd8d345dce36e4d6bd6b9e361ff159d22
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015591"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48311926"
 ---
 # <a name="delete-schedulinggroup"></a>Удаление объекта schedulingGroup
 
@@ -29,8 +29,6 @@ ms.locfileid: "48015591"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Schedule.ReadWrite.All |
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
-
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +43,7 @@ DELETE /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

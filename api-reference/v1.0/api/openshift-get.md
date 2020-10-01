@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 49bd48e8b70347acde1b21474dd9e4d34a12678c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e90190515e245e871ef089bb37670b75ba3c109e
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057140"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313620"
 ---
 # <a name="get-openshift"></a>Получение Опеншифт
 
@@ -37,6 +37,10 @@ ms.locfileid: "48057140"
 ```http
 GET /teams/{id}/schedule/openShifts/{openShiftId}
 ```
+
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
+Этот метод не поддерживает параметры запросов OData для настройки отклика.
  
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -44,7 +48,7 @@ GET /teams/{id}/schedule/openShifts/{openShiftId}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

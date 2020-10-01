@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 054a6dd0589929c22c7dc6b8c5e954dee360bef2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b41323a124b12055ed21339b53a39caf54e402d
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015661"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48313193"
 ---
 # <a name="schedule-share"></a>Расписание: общий доступ
 
@@ -29,8 +29,6 @@ ms.locfileid: "48015661"
 |Делегированные (рабочая или учебная учетная запись) | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Schedule.ReadWrite.All |
-
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы могут получать доступ к группам, которые не являются участниками.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +51,7 @@ POST /teams/{teamId}/schedule/share
 
 |Параметр                   |Тип           |Описание  |
 |-----------------------|-------------------|--------------|
-| нотифитеам            |`Boolean`             |Указывает, должна ли вся группа получить видимое уведомление о данном действии или только те сотрудники, которым назначена смена. Обязательно.       |
+| нотифитеам            |`Boolean`             |Указывает, должна ли вся группа получить видимое уведомление о данном действии или только те сотрудники, которым назначена смена. Обязательное.       |
 | startDateTime         |`DateTimeOffset`   |Время начала совместного использования смен по расписанию. Обязательный элемент.   |
 | endDateTime           |`DateTimeOffset`   | Время окончания для совместного использования смены графика до.   |
 
