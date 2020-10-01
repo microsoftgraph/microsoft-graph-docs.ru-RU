@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: eaa11591f5174f8d77e9513cb9bba3ed1de44976
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6d3df08c36a7a59e4502164ac1f89c85268d0a01
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067540"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330195"
 ---
 # <a name="update-securescorecontrolprofiles"></a>Обновление объектов secureScoreControlProfiles
 
@@ -26,9 +26,9 @@ ms.locfileid: "48067540"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |   Область securityevents. ReadWrite. ALL.  |
+|Делегированные (рабочая или учебная учетная запись) |   SecurityEvents.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | Область securityevents. ReadWrite. ALL. |
+|Приложение | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,8 +52,8 @@ PATCH /security/secureScoreControlProfiles/{id}
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |assignedTo|String|Имя аналитики, которой назначен элемент управления для рассмотрения, внедрения или исправления.|
-|тенантноте|String|Комментарии аналитика в элементе управления (для управления клиентом).|
-|контролстатеупдатес| String|Управляемый аналитикой параметр для элемента управления. Возможные значения: `ignore`, `thirdParty`, `reviewed`.|
+|тенантноте|Строка|Комментарии аналитика в элементе управления (для управления клиентом).|
+|контролстатеупдатес| Строка|Управляемый аналитикой параметр для элемента управления. Возможные значения: `ignore`, `thirdParty`, `reviewed`.|
 
 
 ## <a name="response"></a>Отклик

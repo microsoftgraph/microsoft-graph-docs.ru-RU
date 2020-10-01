@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: resourcePageType
-ms.openlocfilehash: fc961bff401a16d74881210aa28e9fcb115e8ae1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5c67aadd421d4f7ac3ac96527dc85deef33de722
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067260"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330335"
 ---
 # <a name="plannerexternalreferences-resource-type"></a>Тип ресурса Планнерекстерналреференцес
 
@@ -24,9 +24,9 @@ ms.locfileid: "48067260"
 ## <a name="properties"></a>Свойства
 Клиентская возможность может определять свойства открытого типа. В этом случае клиент должен предоставить **действительные URL-адреса** на основе протоколов **HTTP/HTTPS** , а их значения должны быть объектами [екстерналреференце](plannerexternalreference.md) . На основе OData имена свойств в открытых типах не могут содержать следующие символы: `.` , `:` и `%`  поэтому их необходимо закодировать. Пример показан ниже. Чтобы удалить ссылку, присвойте свойству значение `null` .
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже этот ресурс представлен в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -50,7 +50,7 @@ ms.locfileid: "48067260"
 }
 ```
 
-Примеры
+## <a name="example"></a>Пример
 
 ```json
 {
