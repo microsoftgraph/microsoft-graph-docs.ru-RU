@@ -5,55 +5,57 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b36f02ec2193bfc1eda1706265fa1392b04a4e70
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: ae6618baaa7c29fb6e603dd4521e66b97da2148f
+ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223963"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48315464"
 ---
-# <a name="update-chatmessage"></a><span data-ttu-id="04039-103">Обновление chatMessage</span><span class="sxs-lookup"><span data-stu-id="04039-103">Update chatMessage</span></span>
+# <a name="update-chatmessage"></a><span data-ttu-id="eef3a-103">Обновление chatMessage</span><span class="sxs-lookup"><span data-stu-id="eef3a-103">Update chatMessage</span></span>
 
-<span data-ttu-id="04039-104">Обновление объекта [chatMessage](../resources/chatMessage.md) .</span><span class="sxs-lookup"><span data-stu-id="04039-104">Update a [chatMessage](../resources/chatMessage.md) object.</span></span> <span data-ttu-id="04039-105">Можно обновить только свойство **полицивиолатион** элемента **chatMessage** .</span><span class="sxs-lookup"><span data-stu-id="04039-105">Only the **policyViolation** property of a **chatMessage** can be updated.</span></span>
+<span data-ttu-id="eef3a-104">Обновление объекта [chatMessage](../resources/chatMessage.md) .</span><span class="sxs-lookup"><span data-stu-id="eef3a-104">Update a [chatMessage](../resources/chatMessage.md) object.</span></span> <span data-ttu-id="eef3a-105">Можно обновить только свойство **полицивиолатион** элемента **chatMessage** .</span><span class="sxs-lookup"><span data-stu-id="eef3a-105">Only the **policyViolation** property of a **chatMessage** can be updated.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="04039-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="04039-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="eef3a-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="eef3a-106">Permissions</span></span>
 
-<span data-ttu-id="04039-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="04039-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="eef3a-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="eef3a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="04039-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="04039-109">Permission type</span></span>      | <span data-ttu-id="04039-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="04039-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="eef3a-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="eef3a-109">Permission type</span></span>      | <span data-ttu-id="eef3a-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="eef3a-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="04039-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="04039-111">Delegated (work or school account)</span></span> | <span data-ttu-id="04039-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="04039-112">Not supported.</span></span>    |
-|<span data-ttu-id="04039-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="04039-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="04039-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="04039-114">Not supported.</span></span>    |
-|<span data-ttu-id="04039-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="04039-115">Application</span></span> | <span data-ttu-id="04039-116">Chat. Упдатеполицивиолатион. ALL для сообщения чата.</span><span class="sxs-lookup"><span data-stu-id="04039-116">Chat.UpdatePolicyViolation.All for a chat message.</span></span></br><span data-ttu-id="04039-117">Чаннелмессаже. Упдатеполицивиолатион. ALL для сообщения канала.</span><span class="sxs-lookup"><span data-stu-id="04039-117">ChannelMessage.UpdatePolicyViolation.All for a channel message.</span></span> |
+|<span data-ttu-id="eef3a-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="eef3a-111">Delegated (work or school account)</span></span> | <span data-ttu-id="eef3a-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="eef3a-112">Not supported.</span></span>    |
+|<span data-ttu-id="eef3a-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="eef3a-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="eef3a-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="eef3a-114">Not supported.</span></span>    |
+|<span data-ttu-id="eef3a-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="eef3a-115">Application</span></span> | <span data-ttu-id="eef3a-116">Chat. Упдатеполицивиолатион. ALL для сообщения чата.</span><span class="sxs-lookup"><span data-stu-id="eef3a-116">Chat.UpdatePolicyViolation.All for a chat message.</span></span></br><span data-ttu-id="eef3a-117">Чаннелмессаже. Упдатеполицивиолатион. ALL для сообщения канала.</span><span class="sxs-lookup"><span data-stu-id="eef3a-117">ChannelMessage.UpdatePolicyViolation.All for a channel message.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="04039-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="04039-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="eef3a-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="eef3a-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /teams/(team-id)/channels/{channel-id}/chatMessages/{message-id}
 PATCH /users/(user-id)/chats/{chatThread-id}/chatMessages/{message-id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="04039-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="04039-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="eef3a-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="eef3a-119">Request headers</span></span>
 
-| <span data-ttu-id="04039-120">Имя</span><span class="sxs-lookup"><span data-stu-id="04039-120">Name</span></span>       | <span data-ttu-id="04039-121">Описание</span><span class="sxs-lookup"><span data-stu-id="04039-121">Description</span></span>|
+| <span data-ttu-id="eef3a-120">Имя</span><span class="sxs-lookup"><span data-stu-id="eef3a-120">Name</span></span>       | <span data-ttu-id="eef3a-121">Описание</span><span class="sxs-lookup"><span data-stu-id="eef3a-121">Description</span></span>|
 |:-----------|:----------|
-| <span data-ttu-id="04039-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="04039-122">Authorization</span></span>  | <span data-ttu-id="04039-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="04039-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="04039-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="04039-125">Content-Type</span></span> | <span data-ttu-id="04039-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="04039-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="eef3a-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="eef3a-122">Authorization</span></span>  | <span data-ttu-id="eef3a-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="eef3a-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="eef3a-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="eef3a-125">Content-Type</span></span> | <span data-ttu-id="eef3a-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="eef3a-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="04039-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="04039-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="eef3a-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="eef3a-128">Request body</span></span>
 
-<span data-ttu-id="04039-129">В тексте запроса добавьте представление объекта [chatMessage](../resources/chatMessage.md) в формате JSON, указав только свойство **полицивиолатион** .</span><span class="sxs-lookup"><span data-stu-id="04039-129">In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object, specifying only the **policyViolation** property.</span></span>
+<span data-ttu-id="eef3a-129">В тексте запроса добавьте представление объекта [chatMessage](../resources/chatMessage.md) в формате JSON, указав только свойство **полицивиолатион** .</span><span class="sxs-lookup"><span data-stu-id="eef3a-129">In the request body, supply a JSON representation of a [chatMessage](../resources/chatMessage.md) object, specifying only the **policyViolation** property.</span></span>
 
-## <a name="response"></a><span data-ttu-id="04039-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="04039-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="eef3a-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="eef3a-130">Response</span></span>
 
-<span data-ttu-id="04039-131">В случае успешного выполнения этот метод возвращает `200 OK` отклик.</span><span class="sxs-lookup"><span data-stu-id="04039-131">If successful, this method returns a `200 OK` response.</span></span>
+<span data-ttu-id="eef3a-131">В случае успешного выполнения этот метод возвращает `200 OK` отклик.</span><span class="sxs-lookup"><span data-stu-id="eef3a-131">If successful, this method returns a `200 OK` response.</span></span>
 
-## <a name="example"></a><span data-ttu-id="04039-132">Пример</span><span class="sxs-lookup"><span data-stu-id="04039-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="eef3a-132">Пример</span><span class="sxs-lookup"><span data-stu-id="eef3a-132">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="04039-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="04039-133">Request</span></span>
+### <a name="request"></a><span data-ttu-id="eef3a-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="eef3a-133">Request</span></span>
 
-<span data-ttu-id="04039-134">Ниже приведен пример запроса на обновление свойства **полицивиолатион** сообщения канала Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="04039-134">The following is an example of the request to update the **policyViolation** property on a Microsoft Teams channel message.</span></span>
+<span data-ttu-id="eef3a-134">Ниже приведен пример запроса на обновление свойства **полицивиолатион** сообщения канала Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="eef3a-134">The following is an example of the request to update the **policyViolation** property on a Microsoft Teams channel message.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="eef3a-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="eef3a-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chatMessage.PatchPolicyViolation.All"
@@ -76,11 +78,29 @@ Content-Length: 248
   }
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="eef3a-136">C#</span><span class="sxs-lookup"><span data-stu-id="eef3a-136">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/chatmessagepatchpolicyviolationall-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="eef3a-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="eef3a-137">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/chatmessagepatchpolicyviolationall-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="eef3a-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="eef3a-138">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/chatmessagepatchpolicyviolationall-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="eef3a-139">Java</span><span class="sxs-lookup"><span data-stu-id="eef3a-139">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/chatmessagepatchpolicyviolationall-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- markdownlint-disable MD024 -->
-### <a name="response"></a><span data-ttu-id="04039-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="04039-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="eef3a-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="eef3a-140">Response</span></span>
 
-<span data-ttu-id="04039-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="04039-136">Here is an example of the response.</span></span>
+<span data-ttu-id="eef3a-141">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="eef3a-141">Here is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
