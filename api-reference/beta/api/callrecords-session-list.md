@@ -5,32 +5,32 @@ localization_priority: Normal
 author: stephenjust
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 547bf8bf570a020be5939e27392a5534d1a742da
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 51ef8e1e9cd56d5f969615cb9364ce26f8bd5d8e
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987164"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48329971"
 ---
-# <a name="list-callrecord-sessions"></a><span data-ttu-id="b8cda-103">Список сеансов Каллрекорд</span><span class="sxs-lookup"><span data-stu-id="b8cda-103">List callRecord sessions</span></span>
+# <a name="list-callrecord-sessions"></a><span data-ttu-id="ba6cc-103">Список сеансов Каллрекорд</span><span class="sxs-lookup"><span data-stu-id="ba6cc-103">List callRecord sessions</span></span>
 
-<span data-ttu-id="b8cda-104">Пространство имен: microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="b8cda-104">Namespace: microsoft.graph.callRecords</span></span>
+<span data-ttu-id="ba6cc-104">Пространство имен: microsoft.graph.callRecords</span><span class="sxs-lookup"><span data-stu-id="ba6cc-104">Namespace: microsoft.graph.callRecords</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b8cda-105">Получение списка [сеансов](../resources/callrecords-session.md) , связанных с объектом [каллрекорд](../resources/callrecords-callrecord.md) .</span><span class="sxs-lookup"><span data-stu-id="b8cda-105">Retrieve the list of [sessions](../resources/callrecords-session.md) associated with a [callRecord](../resources/callrecords-callrecord.md) object.</span></span>
+<span data-ttu-id="ba6cc-105">Получение списка [сеансов](../resources/callrecords-session.md) , связанных с объектом [каллрекорд](../resources/callrecords-callrecord.md) .</span><span class="sxs-lookup"><span data-stu-id="ba6cc-105">Retrieve the list of [sessions](../resources/callrecords-session.md) associated with a [callRecord](../resources/callrecords-callrecord.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b8cda-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b8cda-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ba6cc-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ba6cc-106">Permissions</span></span>
 
-<span data-ttu-id="b8cda-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b8cda-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ba6cc-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ba6cc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="b8cda-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b8cda-109">Permission type</span></span>                        | <span data-ttu-id="b8cda-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b8cda-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="ba6cc-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ba6cc-109">Permission type</span></span>                        | <span data-ttu-id="ba6cc-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ba6cc-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="b8cda-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b8cda-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="b8cda-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b8cda-112">Not supported.</span></span> |
-| <span data-ttu-id="b8cda-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b8cda-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b8cda-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b8cda-114">Not supported.</span></span> |
-| <span data-ttu-id="b8cda-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b8cda-115">Application</span></span>                            | <span data-ttu-id="b8cda-116">CallRecords.Read.All</span><span class="sxs-lookup"><span data-stu-id="b8cda-116">CallRecords.Read.All</span></span> |
+| <span data-ttu-id="ba6cc-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ba6cc-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="ba6cc-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ba6cc-112">Not supported.</span></span> |
+| <span data-ttu-id="ba6cc-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ba6cc-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ba6cc-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ba6cc-114">Not supported.</span></span> |
+| <span data-ttu-id="ba6cc-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="ba6cc-115">Application</span></span>                            | <span data-ttu-id="ba6cc-116">CallRecords.Read.All</span><span class="sxs-lookup"><span data-stu-id="ba6cc-116">CallRecords.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b8cda-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b8cda-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ba6cc-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ba6cc-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,31 +38,31 @@ ms.locfileid: "47987164"
 GET /communications/callRecords/{id}/sessions
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="b8cda-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="b8cda-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="ba6cc-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="ba6cc-118">Optional query parameters</span></span>
 
-<span data-ttu-id="b8cda-119">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="b8cda-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="b8cda-120">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="b8cda-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="ba6cc-119">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="ba6cc-119">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="ba6cc-120">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="ba6cc-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b8cda-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b8cda-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ba6cc-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ba6cc-121">Request headers</span></span>
 
-| <span data-ttu-id="b8cda-122">Имя</span><span class="sxs-lookup"><span data-stu-id="b8cda-122">Name</span></span>      |<span data-ttu-id="b8cda-123">Описание</span><span class="sxs-lookup"><span data-stu-id="b8cda-123">Description</span></span>|
+| <span data-ttu-id="ba6cc-122">Имя</span><span class="sxs-lookup"><span data-stu-id="ba6cc-122">Name</span></span>      |<span data-ttu-id="ba6cc-123">Описание</span><span class="sxs-lookup"><span data-stu-id="ba6cc-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="b8cda-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="b8cda-124">Authorization</span></span> | <span data-ttu-id="b8cda-125">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="b8cda-125">Bearer {token}</span></span> |
+| <span data-ttu-id="ba6cc-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ba6cc-124">Authorization</span></span> | <span data-ttu-id="ba6cc-125">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="ba6cc-125">Bearer {token}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b8cda-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="b8cda-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ba6cc-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ba6cc-126">Request body</span></span>
 
-<span data-ttu-id="b8cda-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b8cda-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="ba6cc-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ba6cc-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b8cda-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="b8cda-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ba6cc-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="ba6cc-128">Response</span></span>
 
-<span data-ttu-id="b8cda-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенные объекты [Session](../resources/callrecords-session.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="b8cda-129">If successful, this method returns a `200 OK` response code and the requested [session](../resources/callrecords-session.md) objects in the response body.</span></span>
+<span data-ttu-id="ba6cc-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенные объекты [Session](../resources/callrecords-session.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="ba6cc-129">If successful, this method returns a `200 OK` response code and the requested [session](../resources/callrecords-session.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="b8cda-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="b8cda-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ba6cc-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="ba6cc-130">Examples</span></span>
 
-### <a name="example-1-get-session-list"></a><span data-ttu-id="b8cda-131">Пример 1: получение списка сеансов</span><span class="sxs-lookup"><span data-stu-id="b8cda-131">Example 1: Get session list</span></span>
+### <a name="example-1-get-session-list"></a><span data-ttu-id="ba6cc-131">Пример 1: получение списка сеансов</span><span class="sxs-lookup"><span data-stu-id="ba6cc-131">Example 1: Get session list</span></span>
 
-#### <a name="request"></a><span data-ttu-id="b8cda-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="b8cda-132">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ba6cc-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="ba6cc-132">Request</span></span>
 
-<span data-ttu-id="b8cda-133">Ниже приведен пример запроса на получение списка [сеансов](../resources/callrecords-session.md) для [каллрекорд](../resources/callrecords-callrecord.md).</span><span class="sxs-lookup"><span data-stu-id="b8cda-133">The following is an example of the request to get the list of [sessions](../resources/callrecords-session.md) for a [callRecord](../resources/callrecords-callrecord.md).</span></span>
+<span data-ttu-id="ba6cc-133">Ниже приведен пример запроса на получение списка [сеансов](../resources/callrecords-session.md) для [каллрекорд](../resources/callrecords-callrecord.md).</span><span class="sxs-lookup"><span data-stu-id="ba6cc-133">The following is an example of the request to get the list of [sessions](../resources/callrecords-session.md) for a [callRecord](../resources/callrecords-callrecord.md).</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -73,11 +73,11 @@ GET /communications/callRecords/{id}/sessions
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions
 ```
 
-#### <a name="response"></a><span data-ttu-id="b8cda-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="b8cda-134">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ba6cc-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="ba6cc-134">Response</span></span>
 
-<span data-ttu-id="b8cda-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b8cda-135">The following is an example of the response.</span></span>
+<span data-ttu-id="ba6cc-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ba6cc-135">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="b8cda-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b8cda-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="ba6cc-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ba6cc-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -148,15 +148,15 @@ Content-type: application/json
             }
         }
     ],
-    "@odata.nextlink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$skiptoken=abc"
+    "@odata.nextLink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$skiptoken=abc"
 }
 ```
 
-### <a name="example-2-get-session-list-with-segments"></a><span data-ttu-id="b8cda-138">Пример 2: получение списка сеансов с сегментами</span><span class="sxs-lookup"><span data-stu-id="b8cda-138">Example 2: Get session list with segments</span></span>
+### <a name="example-2-get-session-list-with-segments"></a><span data-ttu-id="ba6cc-138">Пример 2: получение списка сеансов с сегментами</span><span class="sxs-lookup"><span data-stu-id="ba6cc-138">Example 2: Get session list with segments</span></span>
 
-#### <a name="request"></a><span data-ttu-id="b8cda-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="b8cda-139">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="ba6cc-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="ba6cc-139">Request</span></span>
 
-<span data-ttu-id="b8cda-140">Ниже приведен пример запроса на получение списка [сеансов](../resources/callrecords-session.md) для [каллрекорд](../resources/callrecords-callrecord.md) с включенными [сегментами](../resources/callrecords-segment.md) .</span><span class="sxs-lookup"><span data-stu-id="b8cda-140">The following is an example of the request to get the list of [sessions](../resources/callrecords-session.md) for a [callRecord](../resources/callrecords-callrecord.md) with [segments](../resources/callrecords-segment.md) included.</span></span>
+<span data-ttu-id="ba6cc-140">Ниже приведен пример запроса на получение списка [сеансов](../resources/callrecords-session.md) для [каллрекорд](../resources/callrecords-callrecord.md) с включенными [сегментами](../resources/callrecords-segment.md) .</span><span class="sxs-lookup"><span data-stu-id="ba6cc-140">The following is an example of the request to get the list of [sessions](../resources/callrecords-session.md) for a [callRecord](../resources/callrecords-callrecord.md) with [segments](../resources/callrecords-segment.md) included.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -167,11 +167,11 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions?$expand=segments
 ```
 
-#### <a name="response"></a><span data-ttu-id="b8cda-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="b8cda-141">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="ba6cc-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="ba6cc-141">Response</span></span>
 
-<span data-ttu-id="b8cda-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b8cda-142">The following is an example of the response.</span></span>
+<span data-ttu-id="ba6cc-142">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ba6cc-142">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="b8cda-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b8cda-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="ba6cc-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ba6cc-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -379,7 +379,7 @@ Content-type: application/json
             ]
         }
     ],
-    "@odata.nextlink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$expand=segments&$skiptoken=abc"
+    "@odata.nextLink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$expand=segments&$skiptoken=abc"
 }
 ```
 
