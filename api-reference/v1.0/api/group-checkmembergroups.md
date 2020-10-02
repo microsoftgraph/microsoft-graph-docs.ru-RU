@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: aaa53bb44c34dca11745e19257f6481d50dc4567
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f0f32fb5ac3bb4ce426cd4a3410300493e56a711
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023387"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330342"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -28,7 +28,7 @@ ms.locfileid: "48023387"
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
-| Приложение                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All. Directory.ReadWrite.All                               |
+| Для приложения                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                               |
 
 
 
