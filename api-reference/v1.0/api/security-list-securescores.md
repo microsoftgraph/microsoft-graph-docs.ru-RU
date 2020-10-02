@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 16e2967046797abce4ee04e7a8fae4d451447823
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3eea4465c7cbaa767ff03684515431adbdb560a6
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025412"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330363"
 ---
 # <a name="list-securescores"></a>Перечисление объектов secureScores
 
@@ -24,9 +24,9 @@ ms.locfileid: "48025412"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL.   |
+|Делегированные (рабочая или учебная учетная запись) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All   |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL. |
+|Приложение | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ GET /security/secureScores?$filter={property} eq '{property-value}'
 |:----------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода. Текст запроса будет игнорироваться.
 

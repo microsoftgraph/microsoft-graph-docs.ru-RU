@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ec60e8c0f23fe882a719114dee6f720a8c4419eb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d26434d06d300fd24bb42d9f6b1a35d93e51b205
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059693"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330020"
 ---
 # <a name="create-threatassessmentrequest"></a>Создание объекта threatAssessmentRequest
 
@@ -29,7 +29,7 @@ ms.locfileid: "48059693"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Среатассессмент. ReadWrite. ALL.             |
+| Делегированные (рабочая или учебная учетная запись)     | ThreatAssessment.ReadWrite.All             |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | Не поддерживается.                              |
 
@@ -47,7 +47,7 @@ POST /informationProtection/threatAssessmentRequests
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [среатассессментрекуест](../resources/threatassessmentrequest.md) в формате JSON.
 

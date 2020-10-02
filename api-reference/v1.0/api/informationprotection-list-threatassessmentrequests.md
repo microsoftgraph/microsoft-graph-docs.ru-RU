@@ -5,12 +5,12 @@ localization_priority: Normal
 author: hafen-ms
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: be292adda729184673f1eccf8c97c83048992b47
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2a5e0f41ce21157ebbec6b9e6c578421d127625c
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992344"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330265"
 ---
 # <a name="list-threatassessmentrequests"></a>Список Среатассессментрекуестс
 
@@ -29,9 +29,9 @@ ms.locfileid: "47992344"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Среатассессмент. ReadWrite. ALL.             |
+| Делегированные (рабочая или учебная учетная запись)     | ThreatAssessment.ReadWrite.All             |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Среатассессмент. Read. ALL.                  |
+| Приложение                            | ThreatAssessment.Read.All                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -58,7 +58,7 @@ GET /informationProtection/threatAssessmentRequests
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

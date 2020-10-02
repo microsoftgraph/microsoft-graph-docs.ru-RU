@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Normal
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 9e8dbf79d704e9872073812502a4f414fe68397d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6192d33e2d7d1b98e61a4d9f28f863cd03e234d7
+ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971042"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48330370"
 ---
 # <a name="update-securescorecontrolprofile"></a>Обновление объектов secureScoreControlProfile
 
@@ -24,9 +24,9 @@ ms.locfileid: "47971042"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |   Область securityevents. ReadWrite. ALL.  |
+|Делегированные (рабочая или учебная учетная запись) |   SecurityEvents.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | Область securityevents. ReadWrite. ALL. |
+|Приложение | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +43,7 @@ PATCH /security/secureScoreControlProfiles/{id}
 | Авторизация  | Bearer {код}. Обязательно.|
 |Prefer | Возврат = представление. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление значений в формате JSON для соответствующих полей, которые необходимо обновить. Текст **должен** содержать `vendorInformation` Свойство Valid `provider` и `vendor` Fields. В следующей таблице перечислены поля, которые можно обновить для **секурескореконтролпрофиле**. Значения для существующих свойств, не включенных в текст запроса, не изменятся. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
