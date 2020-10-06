@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: cda0768321c793a35b6c72bbb6906c6d8aeaff31
-ms.sourcegitcommit: 3c0fa2d13ede0fdfa66d966d4ec32cb468c3befa
+ms.openlocfilehash: 7ab400ea5de668fe34f34981e4ed76af6f4acf67
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48273706"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364413"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -33,16 +33,15 @@ ms.locfileid: "48273706"
 |[Создание команды из группы](../api/team-put-teams.md) | [team](team.md) | Создание команды или добавление команды в существующую группу.|
 |[Получение команды](../api/team-get.md) | [team](team.md) | Получение свойств и связей указанной команды.|
 |[Обновление команды](../api/team-update.md) | [team](team.md) |Обновление свойств указанной команды. |
-|[Удаление команды](/graph/api/group-delete?view=graph-rest-1.0) | Нет |Удаление команды и ее связанной группы. |
+|[Удаление команды](/graph/api/group-delete?view=graph-rest-1.0&preserve-view=true) | Нет |Удаление команды и ее связанной группы. |
 |[Перечисление участников](../api/team-list-members.md)|Коллекция [conversationMember](../resources/conversationmember.md)|Получение списка conversationMembers из свойства навигации members.|
 |[Добавление участников](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Добавление нового участника.|
 |[Удаление участников](../api/team-delete-members.md)|Нет|Удаление объекта [conversationMember](../resources/conversationmember.md).|
-|[Изменение роли участника](/graph/api/conversationmember-update?view=graph-rest-beta&tabs=http)|[conversationMember](../resources/conversationmember.md)|Перевод пользователя из категории участников в категорию владельцев или наоборот, из категории владельцев в категорию обычных участников.|
+|[Изменение роли участника](/graph/api/conversationmember-update?view=graph-rest-beta&tabs=http&preserve-view=true)|[conversationMember](../resources/conversationmember.md)|Перевод пользователя из категории участников в категорию владельцев или наоборот, из категории владельцев в категорию обычных участников.|
 |[Архивация команды](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Перевод команды в состояние только для чтения. |
 |[Распаковка команды](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Восстановление команды в состояние чтения и записи. |
 |[Клонирование команды](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Копирование команды и ее связанной группы. |
 |[Перечисление ваших команд](../api/user-list-joinedteams.md) | Коллекция [team](team.md) | Перечисление команд, в которых вы являетесь участником. |
-|[Перечисление всех команд](/graph/teams-list-all-teams) | Коллекция [group](group.md) | Перечисление всех групп, содержащих команды. |
 
 ## <a name="properties"></a>Свойства
 
@@ -109,6 +108,8 @@ ms.locfileid: "48273706"
 }-->
 
 ## <a name="see-also"></a>См. также
+
+- [Работа с Microsoft Teams при помощи API Microsoft Graph](teams-api-overview.md)
 - [Создание группы с командой](/graph/teams-create-group-and-team)
-- [Использование API Teams](teams-api-overview.md)
+- [Перечисление всех команд](/graph/teams-list-all-teams)
 

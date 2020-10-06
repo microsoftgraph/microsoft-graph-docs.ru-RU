@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b24f35a52464b30bb26bef03b23d11e3c86d6dfe
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 89aa412654cc1fbb998f03e0f696fe3b146ea0b8
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315390"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364245"
 ---
 # <a name="create-team"></a>Создание команды
 
@@ -26,7 +26,7 @@ ms.locfileid: "48315390"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Group.ReadWrite.All, Directory.ReadWrite.All |
+| Для приложений                            | Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ POST /teams
 | Заголовок        | Значение                     |
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
-| Content-Type  | application/json          |
+| Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -59,8 +59,6 @@ POST /teams
 
 #### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post"
@@ -75,21 +73,6 @@ Content-Type: application/json
   "description": "My Sample Team’s Description"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-
----
-
 
 ##### <a name="response"></a>Отклик
 <!-- {
@@ -107,12 +90,10 @@ Content-Length: 0
 
 ### <a name="example-2-application-permissions"></a>Пример 2. Разрешения для приложения
 
-Ниже приведен пример минимального запроса с использованием разрешений для приложения. Исключив другие свойства, клиент неявно принимает значения по умолчанию из готового шаблона, представленного объектом `template`. При отправке запроса с разрешениями для приложения ресурс [user](../resources/user.md) должен быть указан в коллекции `owners`.
+Ниже приведен пример минимального запроса с использованием разрешений для приложения. Исключив другие свойства, клиент неявно принимает значения по умолчанию из готового шаблона, представленного объектом `template`. При отправке запроса с разрешениями для приложения ресурс [user](../resources/user.md) должен быть указан в коллекции `members`.
 
 #### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post_minimal"
@@ -125,25 +106,15 @@ Content-Type: application/json
   "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
   "displayName": "My Sample Team",
   "description": "My Sample Team’s Description",
-  "owners@odata.bind": [
-    "https://graph.microsoft.com/v1.0/users('userId')"
+  "members@odata.bind": [
+            {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "roles": ["owner"],
+            "userId": "0040b377-61d8-43db-94f5-81374122dc7e"
+        }
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-minimal-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-team-post-minimal-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-minimal-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-
----
 
 #### <a name="response"></a>Отклик
 <!-- {
@@ -165,6 +136,7 @@ Content-Length: 0
 
 #### <a name="request"></a>Запрос
 
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "ignored",
   "name": "create_team_post_full_payload"
@@ -253,7 +225,7 @@ Content-Type: application/json
     ]
 }
 ```
-
+---
 
 #### <a name="response"></a>Отклик
 <!-- {
@@ -276,12 +248,10 @@ Content-Length: 0
 Обратите внимание на некоторые моменты, связанные с этим вызовом:
 
 * Чтобы создать команду, в группе, из которой она создается, должен быть хотя бы один владелец.
-* Созданная команда всегда наследует из группы отображаемое имя, параметры видимости, специализацию и владельцев. Поэтому, когда выполняется этот вызов с использованием свойства **group@odata.bind**, включение свойств **displayName**, **visibility**, **specialization** или **owners@odata.bind** команды возвращает ошибку.
+* Созданная команда всегда наследует отображаемое имя, параметры видимости, специализацию и членов группы. Поэтому, когда выполняется этот вызов с использованием свойства **group@odata.bind**, включение свойств команды **displayName**, **visibility**, **specialization** или **members@odata.bind** возвращает ошибку.
 * Если группа создана менее 15 минут назад, вызов метода "Создание команды" может завершиться ошибкой с кодом 404 из-за задержек репликации. Рекомендуется повторить вызов метода "Создание команды" три раза с 10-секундной задержкой между вызовами.
 
-
 #### <a name="request"></a>Запрос
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -289,30 +259,15 @@ Content-Length: 0
   "name": "create_team_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams
+POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-team-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-team-from-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-team-from-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
-
-
 #### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
@@ -335,18 +290,17 @@ Content-Length: 0
 
 #### <a name="request"></a>Запрос
 
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams
+POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')",
   "channels": [
         {
@@ -375,22 +329,7 @@ Content-Type: application/json
     ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
-
-
 #### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
@@ -415,36 +354,22 @@ Content-Length: 0
 
 #### <a name="request"></a>Запрос
 
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_non_standard"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams
+POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
+  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')",
   "displayName": "My Class Team",
   "description": "My Class Team’s Description"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-non-standard-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-non-standard-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-non-standard-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 #### <a name="response"></a>Отклик
 <!-- {
@@ -468,18 +393,17 @@ Content-Length: 0
 
 #### <a name="request"></a>Запрос
 
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "convert_team_from_non_standard2"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams
+POST https://graph.microsoft.com/v1.0/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
+  "template@odata.bind": "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')",
   "displayName": "My Class Team",
   "description": "My Class Team’s Description",
   "channels": [
@@ -509,21 +433,7 @@ Content-Type: application/json
     ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/convert-team-from-non-standard2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/convert-team-from-non-standard2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/convert-team-from-non-standard2-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
-
 #### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
