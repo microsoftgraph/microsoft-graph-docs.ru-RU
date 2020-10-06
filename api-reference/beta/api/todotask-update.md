@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 846e364161e2ca48d6a7733939c146ea543b3a2b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 43b182a536bd379c3bb2f572eec7460a54e0576e
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058545"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364350"
 ---
 # <a name="update-todotask"></a>Обновление Тодотаск
 Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -66,7 +66,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [тодотаск](../resources/todotask.md) в тексте отклика.
 
@@ -88,11 +88,10 @@ Content-Type: application/json
 Content-length: 608
 
 {
-    "dueDateTime":
-    {
-        "dateTime":"2020-07-25T16:00:00",
-        "timeZone":"Eastern Standard Time"
-    }
+   "dueDateTime":{
+      "dateTime":"2020-07-25T16:00:00",
+      "timeZone":"Eastern Standard Time"
+   }
 }
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)

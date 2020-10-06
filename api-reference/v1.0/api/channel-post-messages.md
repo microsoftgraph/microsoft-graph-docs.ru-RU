@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 423d71b8cfd21ff1c12921d2e0710ad8f4c64f97
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: fe107780e3a9b0b15666be42aee47c2815ddc937
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193248"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364231"
 ---
 # <a name="create-chatmessage-in-a-channel"></a>Создание объекта chatMessage в канале
 
@@ -48,7 +48,7 @@ POST /teams/{id}/channels/{id}/messages
 
 В тексте запроса добавьте представление объекта [Message](../resources/chatmessage.md) в формате JSON. Только свойство Body является обязательным, другие свойства являются необязательными.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [chatMessage](../resources/chatmessage.md) в тексте отклика.
 
@@ -77,6 +77,7 @@ Content-type: application/json
   }
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -122,7 +123,6 @@ Content-length: 160
     "createdDateTime": "2019-02-04T19:58:15.511Z",
     "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
     "lastEditedDateTime": null,
-    "deleted": false,
     "subject": null,
     "summary": null,
     "importance": "normal",
@@ -278,7 +278,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 <!-- {
@@ -366,7 +366,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 <!-- {

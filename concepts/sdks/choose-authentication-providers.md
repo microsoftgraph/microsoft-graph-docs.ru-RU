@@ -3,12 +3,12 @@ title: Выбор поставщика проверки подлинности M
 description: Сведения о том, как выбрать поставщиков проверки подлинности для конкретного сценария для вашего приложения.
 localization_priority: Normal
 author: MichaelMainer
-ms.openlocfilehash: 678468abae61fa0f9830c0dd1b1578d9aafa177a
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 0570087f3b512d7416093757feab43a5f5926310
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40868536"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364252"
 ---
 # <a name="choose-a-microsoft-graph-authentication-provider-based-on-scenario"></a>Выбор поставщика проверки подлинности Microsoft Graph на основе сценария
 
@@ -35,7 +35,7 @@ ms.locfileid: "40868536"
 | | Интерактивны | Делегированный потребитель/org | [Интерактивный поставщик](#InteractiveProvider) |
 
 
-## <a name="authorization-code-provider"></a><a name="AuthCodeProvider"/>Поставщик кода авторизации
+## <a name="authorization-code-provider"></a><a name="AuthCodeProvider" ></a>Поставщик кода авторизации
 
 Потоки кода авторизации позволяют встроенным и веб-приложениям безопасно получать маркеры в имени пользователя. Для получения дополнительных сведений см [код кода авторизации платформы Microsoft Identity и OAuth 2,0](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
@@ -84,7 +84,7 @@ AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(
 
 ---
 
-##  <a name="client-credentials-provider"></a><a name="ClientCredentialsProvider"/>Поставщик учетных данных клиента
+##  <a name="client-credentials-provider"></a><a name="ClientCredentialsProvider"></a>Поставщик учетных данных клиента
 
 Поток учетных данных клиента позволяет приложениям службы работать без взаимодействия с пользователем. Доступ зависит от удостоверения приложения. Дополнительные сведения см. [в статье платформа идентификации Майкрософт и процесс учетных данных клиента OAuth 2,0](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
@@ -133,7 +133,7 @@ ClientCredentialProvider authProvider = new ClientCredentialProvider(
 
 ---
 
-##  <a name="on-behalf-of-provider"></a><a name="OnBehalfOfProvider"/>Поставщик от имени
+##  <a name="on-behalf-of-provider"></a><a name="OnBehalfOfProvider"></a>Поставщик от имени
 
 Потоки "от имени" применяются, когда приложение вызывает службу или веб-API, которые в своюмся вызывает API Microsoft Graph. Узнайте больше, прочитав [платформу Microsoft Identity и OAuth 2,0 от имени по поручению](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
@@ -175,7 +175,7 @@ OnBehalfOfProvider authProvider = new OnBehalfOfProvider(confidentialClientAppli
 
 ---
 
-## <a name="implicit-provider"></a><a name="ImplicitProvider"/>Неявный поставщик
+## <a name="implicit-provider"></a><a name="ImplicitProvider"></a>Неявный поставщик
 
 Неявный поток предоставления используется в приложениях, основанных на браузерах. Для получения дополнительных сведений см [Microsoft Identity Platform и неявный поток предоставления разрешений](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow).
 
@@ -227,7 +227,7 @@ const client = Client.initWithMiddleware(options);
 
 ---
 
-##  <a name="device-code-provider"></a><a name="DeviceCodeProvider"/>Поставщик кода устройства
+##  <a name="device-code-provider"></a><a name="DeviceCodeProvider"></a>Поставщик кода устройства
 
 Потоки кода устройства позволяют выполнять вход на устройства с помощью другого устройства. Дополнительные сведения см. [в статье платформа идентификации Майкрософт и код устройства OAuth 2,0](/azure/active-directory/develop/v2-oauth2-device-code).
 
@@ -269,7 +269,7 @@ DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication
 
 ---
 
-##  <a name="integrated-windows-provider"></a><a name="IntegratedWindowsProvider"/>Интегрированный поставщик Windows
+##  <a name="integrated-windows-provider"></a><a name="IntegratedWindowsProvider"></a>Интегрированный поставщик Windows
 
 Интегрированный поток Windows предоставляет компьютеру Windows способ получить маркер доступа без уведомления при присоединении к домену. Подробнее: [Встроенная проверка подлинности Windows](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
 
@@ -310,7 +310,7 @@ IntegratedWindowsAuthenticationProvider authProvider = new IntegratedWindowsAuth
 
 ---
 
-##  <a name="interactive-provider"></a><a name="InteractiveProvider"/>Интерактивный поставщик
+##  <a name="interactive-provider"></a><a name="InteractiveProvider"></a>Интерактивный поставщик
 
 Интерактивный обмен используется приложениями для мобильных устройств (Xamarin и UWP) и приложениями для настольных ПК, чтобы вызывать Microsoft Graph в имени пользователя. Дополнительные сведения см в разделе [получение маркеров в интерактивном режиме](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively).
 
@@ -372,7 +372,7 @@ MSALAuthenticationProviderOptions *authProviderOptions= [[MSALAuthenticationProv
 
 ---
 
-##  <a name="usernamepassword-provider"></a><a name="UsernamePasswordProvider"/>Имя пользователя и поставщик паролей
+##  <a name="usernamepassword-provider"></a><a name="UsernamePasswordProvider"></a>Имя пользователя и поставщик паролей
 
 Поставщик имени пользователя и пароля позволяет приложению выполнять вход в систему, используя имя пользователя и пароль. Используйте этот поток, только если вы не можете использовать другие потоки OAuth. Для получения дополнительных сведений см [платформа идентификации Майкрософт и учетные данные пароля владельца ресурса OAuth 2,0](/azure/active-directory/develop/v2-oauth-ropc)
 
