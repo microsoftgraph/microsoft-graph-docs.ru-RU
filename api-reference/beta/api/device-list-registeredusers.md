@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 461e0a12c6d5003fa822ddb5de110ed723af7590
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 674d52cb3ae19afb87ee30db584f37c9d5d360b9
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48311989"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371489"
 ---
 # <a name="list-registeredusers"></a>Список registeredUsers
 
@@ -29,7 +29,7 @@ ms.locfileid: "48311989"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory. Read. ALL или Directory. ReadWrite. ALL или Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Directory.Read.All или Directory.ReadWrite.All |
+|Приложение | Directory.Read.All или Directory.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

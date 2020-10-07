@@ -49,7 +49,7 @@ ms.locfileid: "48031405"
 |longitude|Double|Долгота в градусах от – 180 до + 180 включительно.|
 |радиусинметерс|Одинарное|Радиус в метрах.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |манажементкондитионстатементс|Коллекция [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md)|Операторы условия управления, связанные с условием управления. Наследуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md)|

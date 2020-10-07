@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4bbe3178d899d66f2c4b874c349a394a71d9b14e
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 156a5cace6a651a1d0ae727c1f4d251b62eaf510
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313312"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372049"
 ---
 # <a name="call-subscribetotone"></a>Call: Субскрибетотоне
 
@@ -30,7 +30,7 @@ ms.locfileid: "48313312"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложений     | Calls.AccessMedia.All                       |
+| Приложение     | Calls.AccessMedia.All                       |
 
 >**Примечание:** Все указанные данные тона могут быть не сохранены. Убедитесь, что вы соответствуете законам и нормативам, касающимся защиты данных и конфиденциальности коммуникаций. Дополнительные сведения можно узнать из [условий использования](/legal/microsoft-apis/terms-of-use) и обратившись за юридической помощью.
 ## <a name="http-request"></a>HTTP-запрос

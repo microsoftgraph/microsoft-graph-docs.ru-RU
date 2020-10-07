@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dab569a7b08e4f26f9ed33786208fc687e90a52e
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 677408e7807c9074472a9bd108c57cc42a7f910f
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312126"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48371727"
 ---
 # <a name="list-applications-assigned-to-a-connectorgroup"></a>Список приложений, назначенных Коннекторграуп
 
@@ -40,7 +40,7 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applicat
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Носителя. Обязательный|
+| Авторизация  | Носителя. Обязательно|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 2a3e2ad3923e7404b72a5e612c5f776b22a8bbad
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 655907bf89145c77c7663577470747d58d1b7f11
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312738"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372266"
 ---
 # <a name="list-bookingbusinesses"></a>Список Букингбусинессес
 
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses
 ---
 
 ##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,

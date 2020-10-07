@@ -57,7 +57,7 @@ POST /users/{id | userPrincipalName}/profile/webAccounts
 |алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |description|String|Содержит описание, предоставленное пользователем для учетной записи службы, на которую выполняется ссылка.|
 |выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|service|[сервицеинформатион](../resources/serviceinformation.md)| Содержит основные сведения о связанной службе. |
+|служба|[сервицеинформатион](../resources/serviceinformation.md)| Содержит основные сведения о связанной службе. |
 |source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
 |статусмессаже|String|Содержит сообщение о состоянии от облачной службы, если оно предоставлено или синхронизировано. |
 |userId|String|Имя пользователя, отображаемое для учетной записи Account.  |

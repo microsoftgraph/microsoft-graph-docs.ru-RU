@@ -5,12 +5,12 @@ description: Получение списка входов пользовател
 localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f9dbe01eccbde48d768daa4d0a3fb0cbd8504824
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: c3627d0561fe76f6d307812538cf3e383bb99b0b
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314229"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372590"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
@@ -28,7 +28,7 @@ ms.locfileid: "48314229"
 |:--------------- |:------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись) | Аудитлог. Read. ALL, Directory. Read. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-| Для приложений | Аудитлог. Read. ALL, Directory. Read. ALL | 
+| Приложение | Аудитлог. Read. ALL, Directory. Read. ALL | 
 
 Кроме того, приложения должны быть должным образом зарегистрированы в Azure Active Directory.
 
@@ -135,7 +135,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
