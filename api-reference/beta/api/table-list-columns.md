@@ -5,55 +5,55 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: a4d870a51a6e78981446dec9c94331189607c21d
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 3ddf055983f1a36ceeca5c48687e05a09528c7bf
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313977"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48372707"
 ---
-# <a name="list-columns"></a><span data-ttu-id="2b7d9-103">Перечисление столбцов</span><span class="sxs-lookup"><span data-stu-id="2b7d9-103">List columns</span></span>
+# <a name="list-columns"></a><span data-ttu-id="b84af-103">Перечисление столбцов</span><span class="sxs-lookup"><span data-stu-id="b84af-103">List columns</span></span>
 
-<span data-ttu-id="2b7d9-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2b7d9-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="b84af-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b84af-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2b7d9-105">Получение списка объектов tablecolumn.</span><span class="sxs-lookup"><span data-stu-id="2b7d9-105">Retrieve a list of tablecolumn objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="2b7d9-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2b7d9-106">Permissions</span></span>
-<span data-ttu-id="2b7d9-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2b7d9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b84af-105">Получение списка объектов tablecolumn.</span><span class="sxs-lookup"><span data-stu-id="b84af-105">Retrieve a list of tablecolumn objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="b84af-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b84af-106">Permissions</span></span>
+<span data-ttu-id="b84af-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b84af-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2b7d9-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2b7d9-109">Permission type</span></span>      | <span data-ttu-id="2b7d9-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2b7d9-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b84af-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b84af-109">Permission type</span></span>      | <span data-ttu-id="b84af-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b84af-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2b7d9-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2b7d9-111">Delegated (work or school account)</span></span> | <span data-ttu-id="2b7d9-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2b7d9-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="2b7d9-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2b7d9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2b7d9-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2b7d9-114">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="2b7d9-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2b7d9-115">Application</span></span> | <span data-ttu-id="2b7d9-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2b7d9-116">Not supported.</span></span> |
+|<span data-ttu-id="b84af-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b84af-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b84af-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b84af-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="b84af-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b84af-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b84af-114">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b84af-114">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="b84af-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b84af-115">Application</span></span> | <span data-ttu-id="b84af-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b84af-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2b7d9-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2b7d9-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b84af-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b84af-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/tables/{id|name}/columns
 GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="2b7d9-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="2b7d9-118">Optional query parameters</span></span>
-<span data-ttu-id="2b7d9-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="2b7d9-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span> <span data-ttu-id="2b7d9-120">Для получения надежных результатов применяйте параметры запросов [$top](/graph/query-parameters#top) и [$skip](/graph/query-parameters#skip-parameter) на странице.</span><span class="sxs-lookup"><span data-stu-id="2b7d9-120">For reliable results, use the [$top](/graph/query-parameters#top) and [$skip](/graph/query-parameters#skip-parameter) query parameters to page through the results.</span></span> <span data-ttu-id="2b7d9-121">Это поможет избежать проблем с производительностью, связанных с большими результирующими наборами.</span><span class="sxs-lookup"><span data-stu-id="2b7d9-121">This will help avoid performance problems related to large result sets.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="b84af-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="b84af-118">Optional query parameters</span></span>
+<span data-ttu-id="b84af-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="b84af-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span> <span data-ttu-id="b84af-120">Для получения надежных результатов применяйте параметры запросов [$top](/graph/query-parameters#top) и [$skip](/graph/query-parameters#skip-parameter) на странице.</span><span class="sxs-lookup"><span data-stu-id="b84af-120">For reliable results, use the [$top](/graph/query-parameters#top) and [$skip](/graph/query-parameters#skip-parameter) query parameters to page through the results.</span></span> <span data-ttu-id="b84af-121">Это поможет избежать проблем с производительностью, связанных с большими результирующими наборами.</span><span class="sxs-lookup"><span data-stu-id="b84af-121">This will help avoid performance problems related to large result sets.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="2b7d9-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2b7d9-122">Request headers</span></span>
-| <span data-ttu-id="2b7d9-123">Имя</span><span class="sxs-lookup"><span data-stu-id="2b7d9-123">Name</span></span>      |<span data-ttu-id="2b7d9-124">Описание</span><span class="sxs-lookup"><span data-stu-id="2b7d9-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b84af-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b84af-122">Request headers</span></span>
+| <span data-ttu-id="b84af-123">Имя</span><span class="sxs-lookup"><span data-stu-id="b84af-123">Name</span></span>      |<span data-ttu-id="b84af-124">Описание</span><span class="sxs-lookup"><span data-stu-id="b84af-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="2b7d9-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2b7d9-125">Authorization</span></span>  | <span data-ttu-id="2b7d9-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2b7d9-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="2b7d9-128">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="2b7d9-128">Workbook-Session-Id</span></span>  | <span data-ttu-id="2b7d9-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="2b7d9-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="b84af-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b84af-125">Authorization</span></span>  | <span data-ttu-id="b84af-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b84af-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b84af-128">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="b84af-128">Workbook-Session-Id</span></span>  | <span data-ttu-id="b84af-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="b84af-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2b7d9-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2b7d9-131">Request body</span></span>
-<span data-ttu-id="2b7d9-132">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="2b7d9-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b84af-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b84af-131">Request body</span></span>
+<span data-ttu-id="b84af-132">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b84af-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2b7d9-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="2b7d9-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b84af-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="b84af-133">Response</span></span>
 
-<span data-ttu-id="2b7d9-134">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбуктаблеколумн](../resources/workbooktablecolumn.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2b7d9-134">If successful, this method returns a `200 OK` response code and collection of [workbookTableColumn](../resources/workbooktablecolumn.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="2b7d9-135">Пример</span><span class="sxs-lookup"><span data-stu-id="2b7d9-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="2b7d9-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="2b7d9-136">Request</span></span>
-<span data-ttu-id="2b7d9-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2b7d9-137">Here is an example of the request.</span></span>
+<span data-ttu-id="b84af-134">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбуктаблеколумн](../resources/workbooktablecolumn.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="b84af-134">If successful, this method returns a `200 OK` response code and collection of [workbookTableColumn](../resources/workbooktablecolumn.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="b84af-135">Пример</span><span class="sxs-lookup"><span data-stu-id="b84af-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b84af-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="b84af-136">Request</span></span>
+<span data-ttu-id="b84af-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b84af-137">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2b7d9-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="2b7d9-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="b84af-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="b84af-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_columns"
@@ -61,22 +61,22 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns?$top=5&$skip=5
 ```
-# <a name="c"></a>[<span data-ttu-id="2b7d9-139">C#</span><span class="sxs-lookup"><span data-stu-id="2b7d9-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="b84af-139">C#</span><span class="sxs-lookup"><span data-stu-id="b84af-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-columns-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2b7d9-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2b7d9-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="b84af-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b84af-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-columns-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2b7d9-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2b7d9-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="b84af-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b84af-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-columns-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="2b7d9-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="2b7d9-142">Response</span></span>
-<span data-ttu-id="2b7d9-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2b7d9-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="b84af-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="b84af-142">Response</span></span>
+<span data-ttu-id="b84af-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b84af-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,10 +100,10 @@ Content-length: 126
 }
 ```
 
-> <span data-ttu-id="2b7d9-146">
-  \*\*Примечание.\*\* Используйте параметры запросов [$top](/graph/query-parameters#top) и [$skip](/graph/query-parameters#skip-parameter), чтобы просматривать постранично большое количество столбцов.</span><span class="sxs-lookup"><span data-stu-id="2b7d9-146">**Note:** Use the [$top](/graph/query-parameters#top) and [$skip](/graph/query-parameters#skip-parameter) query parameters to page through large numbers of columns.</span></span>
+> <span data-ttu-id="b84af-146">
+  \*\*Примечание.\*\* Используйте параметры запросов [$top](/graph/query-parameters#top) и [$skip](/graph/query-parameters#skip-parameter), чтобы просматривать постранично большое количество столбцов.</span><span class="sxs-lookup"><span data-stu-id="b84af-146">**Note:** Use the [$top](/graph/query-parameters#top) and [$skip](/graph/query-parameters#skip-parameter) query parameters to page through large numbers of columns.</span></span>
 
-<span data-ttu-id="2b7d9-147">Пример:</span><span class="sxs-lookup"><span data-stu-id="2b7d9-147">Example:</span></span> 
+<span data-ttu-id="b84af-147">Пример:</span><span class="sxs-lookup"><span data-stu-id="b84af-147">Example:</span></span> 
 
 `https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns?$top=5`
 `https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns?$top=5&$skip=5`
