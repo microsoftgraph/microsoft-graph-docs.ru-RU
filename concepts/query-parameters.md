@@ -4,12 +4,12 @@ description: В Microsoft Graph предусмотрены необязател�
 author: mumbi-o
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 8cbc9e8a1af1f5d668520750e088ed4e2c87d32d
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 630348d75f566cbfe82dee987a9d20d4f59f0190
+ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288646"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48364119"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Настройка ответов с помощью параметров запроса
 
@@ -132,48 +132,46 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 Параметр запроса `$filter` позволяет получить только подмножество объектов коллекции. Параметр запроса `$filter` также используется для извлечения таких отношений, как members, memberOf, transitiveMembers и transitiveMemberOf. Например, получите все группы безопасности, участником которых являетесь.
 
-Также чтобы найти пользователей, чье отображаемое имя начинается с буквы J, используйте `startswith`.
+Также чтобы найти пользователей, чье отображаемое имя начинается с буквы J, используйте `startsWith`.
 
 ```http
-GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'J')
+GET https://graph.microsoft.com/v1.0/users?$filter=startsWith(displayName,'J')
 ```
 
 [Попробовать в песочнице Graph][filter-example]
 
-Поддержка операторов `$filter` зависит от того, какой API Microsoft Graph используется. В большинстве случаев поддерживаются следующие операторы: 
+Поддержка операторов `$filter` зависит от того, какой API Microsoft Graph используется. В большинстве случаев поддерживаются следующие операторы:
 
-- `eq` (равняется);
-- `in` (в);
-- `ne` (не равняется);
-- `gt` (больше чем);
-- `ge` (не меньше чем);
-- `lt` (меньше чем), `le` (не больше чем);
-- `and` (и);
-- `or` (или);
-- `not` (не).
- 
-Часто поддерживается строковый оператор `startswith`. Некоторые API поддерживают лямбда-оператор `any`. 
+- равно `eq` / не равно `ne`
+- меньше `lt` / больше `gt`
+- меньше или равно `le` / больше или равно `ge`
+- и `and` / или `or`
+- в `in`
+- Отрицание `not`
+- лямбда-оператор "любой" `any`
+- лямбда-оператор "все" `all`
+- Начинается с `startsWith`
+- Заканчивается на `endsWith`
 
-> **Примечание.** При одновременном использовании `$filter` и `$orderby` в одном запросе [задайте свойства определенным образом](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query), чтобы получать сообщения.  
+> **Примечание.** Поддержка этих операторов зависит от сущности. Дополнительные сведения см. в документации по конкретным сущностям. 
+>
+> В настоящее время строковый оператор `contains` не поддерживается ни одним ресурсом Microsoft Graph.
 
 Примеры использования см. в приведенной ниже таблице. Дополнительные сведения о синтаксисе `$filter` см. в [статье о протоколе OData][odata-filter].  
-
 Приведенная ниже таблица содержит несколько примеров использования параметра запроса `$filter`.
 
 > **Примечание.** Щелкните примеры, чтобы попробовать поработать с ними в [песочнице Graph][graph-explorer].
 
 | Описание | Пример
 |:------------|:--------|
-| Поиск пользователей с именем Mary по нескольким свойствам. | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
+| Получение всех пользователей с именем Маша по нескольким свойствам. | [`https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'mary') or startswith(givenName,'mary') or startswith(surname,'mary') or startswith(mail,'mary') or startswith(userPrincipalName,'mary')`](https://developer.microsoft.com/graph/graph-explorer?request=users?$filter=startswith(displayName,'mary')+or+startswith(givenName,'mary')+or+startswith(surname,'mary')+or+startswith(mail,'mary')+or+startswith(userPrincipalName,'mary')&method=GET&version=v1.0) |
+| Получение всех пользователей с почтовым доменом "hotmail.com" | [`https://graph.microsoft.com/v1.0/users?$count=true&$filter=endsWith(mail,'@hotmail.com')`](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24count%3Dtrue%26%24filter%3DendsWith(mail%2C'%40hotmail.com')%26%24select%3Did%2CdisplayName%2Cmail&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) |
 | Получение всех событий для вошедшего пользователя, которые начинаются после 01.07.2017 г. | [`https://graph.microsoft.com/v1.0/me/events?$filter=start/dateTime ge '2017-07-01T08:00'`](https://developer.microsoft.com/graph/graph-explorer?request=me/events?$filter=start/dateTime+ge+'2017-07-01T08:00'&method=GET&version=v1.0) |
 | Получение всех сообщений с определенного адреса, полученных вошедшим пользователем. | [`https://graph.microsoft.com/v1.0/me/messages?$filter=from/emailAddress/address eq 'someuser@example.com'`](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=from/emailAddress/address+eq+'someuser@.com'&method=GET&version=v1.0) |
 | Получение всех сообщений, полученных вошедшим пользователем в апреле 2017 г. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=ReceivedDateTime ge 2017-04-01 and receivedDateTime lt 2017-05-01`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=ReceivedDateTime+ge+2017-04-01+and+receivedDateTime+lt+2017-05-01&method=GET&version=v1.0) |
 | Получение всех непрочитанных сообщений в папке "Входящие" вошедшего пользователя. | [`https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$filter=isRead eq false`](https://developer.microsoft.com/graph/graph-explorer?request=me/mailFolders/inbox/messages?$filter=isRead+eq+false&method=GET&version=v1.0) |
 | Получение списка всех групп Microsoft 365 в организации. | [`https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')`](https://developer.microsoft.com/graph/graph-explorer?request=groups?$filter=groupTypes/any(c:c+eq+'Unified')&method=GET&version=v1.0) |
 | Используйте преобразование OData, чтобы получить транзитивное членство в группах с отображаемым именем, которое начинается с "а", включая количество возвращаемых объектов. | [`https://graph.microsoft.com/beta/me/transitiveMemberOf/microsoft.graph.group?$count=true&$filter=startswith(displayName, 'a')`](https://developer.microsoft.com/graph/graph-explorer?request=me/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName,'a')&method=GET&version=v1.0) |
-
-> **Примечание.** Ознакомьтесь с документацией по конкретным объектам каталога (ресурсы Azure AD), чтобы узнать больше о поддержке оператора `$filter`.
-> В настоящее время строковый оператор `contains` не поддерживается ни одним ресурсом Microsoft Graph.
 
 ## <a name="format-parameter"></a>Параметр format
 
