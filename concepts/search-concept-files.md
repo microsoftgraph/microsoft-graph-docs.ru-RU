@@ -4,35 +4,35 @@ description: Вы можете использовать API службы пои�
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 38915d4ec4e38f5bd41e67e31d5708caf34272ec
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 3b6f8e1cbdaf686e1ab73c2b168968221d9efbcc
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192545"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373988"
 ---
-# <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a><span data-ttu-id="49186-103">Использование API службы поиска Microsoft для поиска содержимого в OneDrive и SharePoint</span><span class="sxs-lookup"><span data-stu-id="49186-103">Use the Microsoft Search API to search content in OneDrive and SharePoint</span></span>
+# <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a><span data-ttu-id="a703e-103">Использование API службы поиска Microsoft для поиска содержимого в OneDrive и SharePoint</span><span class="sxs-lookup"><span data-stu-id="a703e-103">Use the Microsoft Search API to search content in OneDrive and SharePoint</span></span>
 
-<span data-ttu-id="49186-104">Используйте API службы поиска Microsoft для поиска контента, хранящегося в OneDrive или SharePoint: файлы, папки, списки, элементы списков или сайты.</span><span class="sxs-lookup"><span data-stu-id="49186-104">Use the Microsoft Search API to search content stored in OneDrive or SharePoint: files, folders, lists, list items, or sites.</span></span>
+<span data-ttu-id="a703e-104">Используйте API службы поиска Microsoft для поиска контента, хранящегося в OneDrive или SharePoint: файлы, папки, списки, элементы списков или сайты.</span><span class="sxs-lookup"><span data-stu-id="a703e-104">Use the Microsoft Search API to search content stored in OneDrive or SharePoint: files, folders, lists, list items, or sites.</span></span>
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-<span data-ttu-id="49186-105">API поиска позволяет ограничить типы контента, извлекаемого в OneDrive или SharePoint, путем указания свойства **EntityTypes** в [сеарчрекуест](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="49186-105">The Search API lets you scope the types of content to retrieve in OneDrive or SharePoint by specifying the **entityTypes** property on the [searchRequest](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true).</span></span> <span data-ttu-id="49186-106">В следующей части этой статьи показаны некоторые примеры:</span><span class="sxs-lookup"><span data-stu-id="49186-106">The later part of this article shows a few examples:</span></span>
+<span data-ttu-id="a703e-105">API поиска позволяет ограничить типы контента, извлекаемого в OneDrive или SharePoint, путем указания свойства **EntityTypes** в [сеарчрекуест](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true).</span><span class="sxs-lookup"><span data-stu-id="a703e-105">The Search API lets you scope the types of content to retrieve in OneDrive or SharePoint by specifying the **entityTypes** property on the [searchRequest](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true).</span></span> <span data-ttu-id="a703e-106">В следующей части этой статьи показаны некоторые примеры:</span><span class="sxs-lookup"><span data-stu-id="a703e-106">The later part of this article shows a few examples:</span></span>
 
-- [<span data-ttu-id="49186-107">Пример 1: Поиск файлов</span><span class="sxs-lookup"><span data-stu-id="49186-107">Example 1: Search files</span></span>](#example-1-search-files)
-- [<span data-ttu-id="49186-108">Пример 2: Поиск элементов списка</span><span class="sxs-lookup"><span data-stu-id="49186-108">Example 2: Search list items</span></span>](#example-2-search-list-items)
-- [<span data-ttu-id="49186-109">Пример 3: Поиск на сайтах</span><span class="sxs-lookup"><span data-stu-id="49186-109">Example 3: Search sites</span></span>](#example-3-search-sites)
-- [<span data-ttu-id="49186-110">Пример 4: Поиск по всему контенту в OneDrive и SharePoint</span><span class="sxs-lookup"><span data-stu-id="49186-110">Example 4: Search all content in OneDrive and SharePoint</span></span>](#example-4-search-all-content-in-onedrive-and-sharepoint)
+- [<span data-ttu-id="a703e-107">Пример 1: Поиск файлов</span><span class="sxs-lookup"><span data-stu-id="a703e-107">Example 1: Search files</span></span>](#example-1-search-files)
+- [<span data-ttu-id="a703e-108">Пример 2: Поиск элементов списка</span><span class="sxs-lookup"><span data-stu-id="a703e-108">Example 2: Search list items</span></span>](#example-2-search-list-items)
+- [<span data-ttu-id="a703e-109">Пример 3: Поиск на сайтах</span><span class="sxs-lookup"><span data-stu-id="a703e-109">Example 3: Search sites</span></span>](#example-3-search-sites)
+- [<span data-ttu-id="a703e-110">Пример 4: Поиск по всему контенту в OneDrive и SharePoint</span><span class="sxs-lookup"><span data-stu-id="a703e-110">Example 4: Search all content in OneDrive and SharePoint</span></span>](#example-4-search-all-content-in-onedrive-and-sharepoint)
 
-## <a name="specify-select-properties"></a><span data-ttu-id="49186-111">Выбор свойств</span><span class="sxs-lookup"><span data-stu-id="49186-111">Specify select properties</span></span>
+## <a name="specify-select-properties"></a><span data-ttu-id="a703e-111">Выбор свойств</span><span class="sxs-lookup"><span data-stu-id="a703e-111">Specify select properties</span></span>
 
-<span data-ttu-id="49186-112">Вы можете указать поля, которые вы хотите вернуть в ответе, как часть вложенного свойства **Fields** объекта [сеарчхит](/graph/api/resources/searchhit?view=graph-rest-beta&preserve-view=true) в отклике.</span><span class="sxs-lookup"><span data-stu-id="49186-112">You can specify the fields you want back in the response, as part of the **fields** sub-property of a [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta&preserve-view=true) object in the response.</span></span> <span data-ttu-id="49186-113">Это позволяет либо обрезать ответ по сети, либо запрашивать определенные свойства, не входящие в состав встроенной схемы.</span><span class="sxs-lookup"><span data-stu-id="49186-113">This is a way to either trim down the response over the wire, or to request some specific properties that are not part of the out-of-the-box schema.</span></span>
+<span data-ttu-id="a703e-112">Вы можете указать поля, которые вы хотите вернуть в ответе, как часть вложенного свойства **Fields** объекта [сеарчхит](/graph/api/resources/searchhit?view=graph-rest-beta&preserve-view=true) в отклике.</span><span class="sxs-lookup"><span data-stu-id="a703e-112">You can specify the fields you want back in the response, as part of the **fields** sub-property of a [searchHit](/graph/api/resources/searchhit?view=graph-rest-beta&preserve-view=true) object in the response.</span></span> <span data-ttu-id="a703e-113">Это позволяет либо обрезать ответ по сети, либо запрашивать определенные свойства, не входящие в состав встроенной схемы.</span><span class="sxs-lookup"><span data-stu-id="a703e-113">This is a way to either trim down the response over the wire, or to request some specific properties that are not part of the out-of-the-box schema.</span></span>
 
-<span data-ttu-id="49186-114">Обратите внимание, что выбор свойства доступен только для элемента **ListItem** , так как это единственная сущность SharePoint в Microsoft Graph, поддерживающая настраиваемые свойства.</span><span class="sxs-lookup"><span data-stu-id="49186-114">Note that property selection is only available for **listItem** since this is the only SharePoint entity in Microsoft Graph that supports custom properties.</span></span>
+<span data-ttu-id="a703e-114">Обратите внимание, что выбор свойства доступен только для элемента **ListItem** , так как это единственная сущность SharePoint в Microsoft Graph, поддерживающая настраиваемые свойства.</span><span class="sxs-lookup"><span data-stu-id="a703e-114">Note that property selection is only available for **listItem** since this is the only SharePoint entity in Microsoft Graph that supports custom properties.</span></span>
 
-<span data-ttu-id="49186-115">Чтобы получить настраиваемое свойство для объекта **driveItem**, необходимо вместо этого запросить свойство **ListItem** .</span><span class="sxs-lookup"><span data-stu-id="49186-115">To retrieve a custom property for a **driveItem**, query **listItem** instead.</span></span>
+<span data-ttu-id="a703e-115">Чтобы получить настраиваемое свойство для объекта **driveItem**, необходимо вместо этого запросить свойство **ListItem** .</span><span class="sxs-lookup"><span data-stu-id="a703e-115">To retrieve a custom property for a **driveItem**, query **listItem** instead.</span></span>
 
-### <a name="request"></a><span data-ttu-id="49186-116">Запрос</span><span class="sxs-lookup"><span data-stu-id="49186-116">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a703e-116">Запрос</span><span class="sxs-lookup"><span data-stu-id="a703e-116">Request</span></span>
 
 ```HTTP
 POST /search/query
@@ -56,7 +56,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="49186-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="49186-117">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a703e-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="a703e-117">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -99,20 +99,20 @@ Content-type: application/json
 }
 ```
 
-## <a name="use-filters-in-search-queries"></a><span data-ttu-id="49186-118">Использование фильтров в поисковых запросах</span><span class="sxs-lookup"><span data-stu-id="49186-118">Use filters in search queries</span></span>
+## <a name="use-filters-in-search-queries"></a><span data-ttu-id="a703e-118">Использование фильтров в поисковых запросах</span><span class="sxs-lookup"><span data-stu-id="a703e-118">Use filters in search queries</span></span>
 
-<span data-ttu-id="49186-119">KQL можно использовать в условиях поиска запросов для OneDrive и SharePoint.</span><span class="sxs-lookup"><span data-stu-id="49186-119">You can use KQL in search terms of queries for OneDrive and SharePoint.</span></span> <span data-ttu-id="49186-120">Например:</span><span class="sxs-lookup"><span data-stu-id="49186-120">For example:</span></span>
+<span data-ttu-id="a703e-119">KQL можно использовать в условиях поиска запросов для OneDrive и SharePoint.</span><span class="sxs-lookup"><span data-stu-id="a703e-119">You can use KQL in search terms of queries for OneDrive and SharePoint.</span></span> <span data-ttu-id="a703e-120">Пример:</span><span class="sxs-lookup"><span data-stu-id="a703e-120">For example:</span></span>
 
-- <span data-ttu-id="49186-121">`"query": "contoso filetype:docx OR filetype:doc"` ограничивает область запроса документами Word.</span><span class="sxs-lookup"><span data-stu-id="49186-121">`"query": "contoso filetype:docx OR filetype:doc"` scopes the query to Word documents.</span></span>
-- <span data-ttu-id="49186-122">`"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` ограничивает область запроса определенной папкой на сайте.</span><span class="sxs-lookup"><span data-stu-id="49186-122">`"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` scopes the query to a particular folder within a site.</span></span>
-- <span data-ttu-id="49186-123">`"query": "contoso AND isDocument=true"` ограничивает область запроса, возвращающий только документы.</span><span class="sxs-lookup"><span data-stu-id="49186-123">`"query": "contoso AND isDocument=true"` scopes the query to only return documents.</span></span> <span data-ttu-id="49186-124">Любой контейнер (папка, Библиотека документов) не будет возвращен.</span><span class="sxs-lookup"><span data-stu-id="49186-124">Any container (folder, document library) will not be returned.</span></span>
-- <span data-ttu-id="49186-125">`"query": "contoso contentclass:STS_List_Events"` область действия запроса на события календаря, хранящиеся в SharePoint.</span><span class="sxs-lookup"><span data-stu-id="49186-125">`"query": "contoso contentclass:STS_List_Events"` scopes the query to Calendar events stored in SharePoint.</span></span>
+- <span data-ttu-id="a703e-121">`"query": "contoso filetype:docx OR filetype:doc"` ограничивает область запроса документами Word.</span><span class="sxs-lookup"><span data-stu-id="a703e-121">`"query": "contoso filetype:docx OR filetype:doc"` scopes the query to Word documents.</span></span>
+- <span data-ttu-id="a703e-122">`"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` ограничивает область запроса определенной папкой на сайте.</span><span class="sxs-lookup"><span data-stu-id="a703e-122">`"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` scopes the query to a particular folder within a site.</span></span>
+- <span data-ttu-id="a703e-123">`"query": "contoso AND isDocument=true"` ограничивает область запроса, возвращающий только документы.</span><span class="sxs-lookup"><span data-stu-id="a703e-123">`"query": "contoso AND isDocument=true"` scopes the query to only return documents.</span></span> <span data-ttu-id="a703e-124">Любой контейнер (папка, Библиотека документов) не будет возвращен.</span><span class="sxs-lookup"><span data-stu-id="a703e-124">Any container (folder, document library) will not be returned.</span></span>
+- <span data-ttu-id="a703e-125">`"query": "contoso contentclass:STS_List_Events"` область действия запроса на события календаря, хранящиеся в SharePoint.</span><span class="sxs-lookup"><span data-stu-id="a703e-125">`"query": "contoso contentclass:STS_List_Events"` scopes the query to Calendar events stored in SharePoint.</span></span>
 
-<span data-ttu-id="49186-126">Для того чтобы оно было допустимым, ограничение свойств должно указывать допустимое имя управляемого свойства, запрашиваемое в условии.</span><span class="sxs-lookup"><span data-stu-id="49186-126">In order to be valid, properties restriction should specify a valid, queryable managed property name in the condition.</span></span>
+<span data-ttu-id="a703e-126">Для того чтобы оно было допустимым, ограничение свойств должно указывать допустимое имя управляемого свойства, запрашиваемое в условии.</span><span class="sxs-lookup"><span data-stu-id="a703e-126">In order to be valid, properties restriction should specify a valid, queryable managed property name in the condition.</span></span>
 
-## <a name="example-1-search-files"></a><span data-ttu-id="49186-127">Пример 1: Поиск файлов</span><span class="sxs-lookup"><span data-stu-id="49186-127">Example 1: Search files</span></span>
+## <a name="example-1-search-files"></a><span data-ttu-id="a703e-127">Пример 1: Поиск файлов</span><span class="sxs-lookup"><span data-stu-id="a703e-127">Example 1: Search files</span></span>
 
-### <a name="request"></a><span data-ttu-id="49186-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="49186-128">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a703e-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="a703e-128">Request</span></span>
 
 ```HTTP
 POST https://graph.microsoft.com/beta/search/query
@@ -132,7 +132,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="49186-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="49186-129">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a703e-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="a703e-129">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -187,9 +187,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-2-search-list-items"></a><span data-ttu-id="49186-130">Пример 2: Поиск элементов списка</span><span class="sxs-lookup"><span data-stu-id="49186-130">Example 2: Search list items</span></span>
+## <a name="example-2-search-list-items"></a><span data-ttu-id="a703e-130">Пример 2: Поиск элементов списка</span><span class="sxs-lookup"><span data-stu-id="a703e-130">Example 2: Search list items</span></span>
 
-### <a name="request"></a><span data-ttu-id="49186-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="49186-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a703e-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="a703e-131">Request</span></span>
 
 ```HTTP
 POST /search/query
@@ -209,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="49186-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="49186-132">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a703e-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="a703e-132">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -260,9 +260,9 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-3-search-sites"></a><span data-ttu-id="49186-133">Пример 3: Поиск на сайтах</span><span class="sxs-lookup"><span data-stu-id="49186-133">Example 3: Search sites</span></span>
+## <a name="example-3-search-sites"></a><span data-ttu-id="a703e-133">Пример 3: Поиск на сайтах</span><span class="sxs-lookup"><span data-stu-id="a703e-133">Example 3: Search sites</span></span>
 
-### <a name="request"></a><span data-ttu-id="49186-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="49186-134">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a703e-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="a703e-134">Request</span></span>
 
 ```HTTP
 POST /search/query
@@ -282,7 +282,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="49186-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="49186-135">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a703e-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="a703e-135">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -321,11 +321,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="example-4-search-all-content-in-onedrive-and-sharepoint"></a><span data-ttu-id="49186-136">Пример 4: Поиск по всему контенту в OneDrive и SharePoint</span><span class="sxs-lookup"><span data-stu-id="49186-136">Example 4: Search all content in OneDrive and SharePoint</span></span>
+## <a name="example-4-search-all-content-in-onedrive-and-sharepoint"></a><span data-ttu-id="a703e-136">Пример 4: Поиск по всему контенту в OneDrive и SharePoint</span><span class="sxs-lookup"><span data-stu-id="a703e-136">Example 4: Search all content in OneDrive and SharePoint</span></span>
 
-<span data-ttu-id="49186-137">В этом примере запрашивается весь контент на сайтах OneDrive и SharePoint, к которым вошедшего в систему пользователя предоставлен доступ для чтения.</span><span class="sxs-lookup"><span data-stu-id="49186-137">This example queries all the content in OneDrive and SharePoint sites to which the signed-in user has read access.</span></span> <span data-ttu-id="49186-138">Свойство **ресурса** в ответе возвращает совпадения, которые представляют собой файлы и папки в виде объектов **driveItem** , совпадений, которые являются контейнерами **(списками SharePoint), и**всеми остальными совпадениями как **ListItem**.</span><span class="sxs-lookup"><span data-stu-id="49186-138">The **resource** property in the response returns matches that are files and folders as **driveItem** objects, matches that are containers (SharePoint lists) as **list**, and all other matches as **listItem**.</span></span>
+<span data-ttu-id="a703e-137">В этом примере запрашивается весь контент на сайтах OneDrive и SharePoint, к которым вошедшего в систему пользователя предоставлен доступ для чтения.</span><span class="sxs-lookup"><span data-stu-id="a703e-137">This example queries all the content in OneDrive and SharePoint sites to which the signed-in user has read access.</span></span> <span data-ttu-id="a703e-138">Свойство **ресурса** в ответе возвращает совпадения, которые представляют собой файлы и папки в виде объектов **driveItem** , совпадений, которые являются контейнерами **(списками SharePoint), и**всеми остальными совпадениями как **ListItem**.</span><span class="sxs-lookup"><span data-stu-id="a703e-138">The **resource** property in the response returns matches that are files and folders as **driveItem** objects, matches that are containers (SharePoint lists) as **list**, and all other matches as **listItem**.</span></span>
 
-### <a name="request"></a><span data-ttu-id="49186-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="49186-139">Request</span></span>
+### <a name="request"></a><span data-ttu-id="a703e-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="a703e-139">Request</span></span>
 
 ```HTTP
 POST /search/query
@@ -345,7 +345,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="49186-140">Ответ</span><span class="sxs-lookup"><span data-stu-id="49186-140">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a703e-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="a703e-140">Response</span></span>
 
 ```HTTP
 HTTP/1.1 200 OK
@@ -419,6 +419,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="next-steps"></a><span data-ttu-id="49186-141">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="49186-141">Next steps</span></span>
+## <a name="known-limitations"></a><span data-ttu-id="a703e-141">Известные ограничения</span><span class="sxs-lookup"><span data-stu-id="a703e-141">Known limitations</span></span>
 
-- [<span data-ttu-id="49186-142">Использование API Поиска (Майкрософт) для запроса данных</span><span class="sxs-lookup"><span data-stu-id="49186-142">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+<span data-ttu-id="a703e-142">При поиске **диска**необходимо включить в **строку queryString** термин, содержащийся в имени библиотеки документов.</span><span class="sxs-lookup"><span data-stu-id="a703e-142">When searching for **drive**, you need to include in the **queryString** a term contained in the name of the document library.</span></span> <span data-ttu-id="a703e-143">Запросы `*` не поддерживаются и не возвращают все доступные диски.</span><span class="sxs-lookup"><span data-stu-id="a703e-143">Querying `*` is not supported and does not return all available drives.</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="a703e-144">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="a703e-144">Next steps</span></span>
+
+- [<span data-ttu-id="a703e-145">Использование API Поиска (Майкрософт) для запроса данных</span><span class="sxs-lookup"><span data-stu-id="a703e-145">Use the Microsoft Search API to query data</span></span>](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)

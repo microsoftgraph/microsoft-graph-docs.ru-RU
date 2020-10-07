@@ -5,35 +5,35 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 56cd61e1ff81fb157b10708223521d5ffb0faafd
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 4e722b2d99849be37b0c720c19569663d215834f
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313593"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373701"
 ---
-# <a name="serviceprincipal-getpasswordsinglesignoncredentials"></a><span data-ttu-id="2c74d-103">servicePrincipal: Жетпассвордсинглесигнонкредентиалс</span><span class="sxs-lookup"><span data-stu-id="2c74d-103">servicePrincipal: getPasswordSingleSignOnCredentials</span></span>
+# <a name="serviceprincipal-getpasswordsinglesignoncredentials"></a><span data-ttu-id="426ec-103">servicePrincipal: Жетпассвордсинглесигнонкредентиалс</span><span class="sxs-lookup"><span data-stu-id="426ec-103">servicePrincipal: getPasswordSingleSignOnCredentials</span></span>
 
-<span data-ttu-id="2c74d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2c74d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="426ec-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="426ec-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2c74d-105">Получение списка учетных данных единого входа с помощью пароля пользователя или группы.</span><span class="sxs-lookup"><span data-stu-id="2c74d-105">Get a list of single sign-on credentials using a password for a user or group.</span></span>
+<span data-ttu-id="426ec-105">Получение списка учетных данных единого входа с помощью пароля пользователя или группы.</span><span class="sxs-lookup"><span data-stu-id="426ec-105">Get a list of single sign-on credentials using a password for a user or group.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2c74d-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2c74d-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="426ec-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="426ec-106">Permissions</span></span>
 
-<span data-ttu-id="2c74d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2c74d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="426ec-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="426ec-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="2c74d-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2c74d-109">Permission type</span></span>                        | <span data-ttu-id="2c74d-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2c74d-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="426ec-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="426ec-109">Permission type</span></span>                        | <span data-ttu-id="426ec-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="426ec-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="2c74d-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2c74d-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="2c74d-112">Application. ReadWrite. ALL и Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="2c74d-112">Application.ReadWrite.All and Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
-| <span data-ttu-id="2c74d-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2c74d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2c74d-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2c74d-114">Not supported.</span></span> |
-| <span data-ttu-id="2c74d-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2c74d-115">Application</span></span>                            | <span data-ttu-id="2c74d-116">Application. ReadWrite. Овнедби и Directory. Read. ALL, Application. ReadWrite. ALL и Directory. Read. ALL, Directory. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="2c74d-116">Application.ReadWrite.OwnedBy and Directory.Read.All, Application.ReadWrite.All and Directory.Read.All, Directory.ReadWrite.All</span></span> |
+| <span data-ttu-id="426ec-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="426ec-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="426ec-112">Application. ReadWrite. ALL и Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="426ec-112">Application.ReadWrite.All and Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span> |
+| <span data-ttu-id="426ec-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="426ec-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="426ec-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="426ec-114">Not supported.</span></span> |
+| <span data-ttu-id="426ec-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="426ec-115">Application</span></span>                            | <span data-ttu-id="426ec-116">Application. ReadWrite. Овнедби и Directory. Read. ALL, Application. ReadWrite. ALL и Directory. Read. ALL, Directory. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="426ec-116">Application.ReadWrite.OwnedBy and Directory.Read.All, Application.ReadWrite.All and Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
 > [!NOTE]
-> <span data-ttu-id="2c74d-117">Пользователи могут самостоятельно создавать учетные данные.</span><span class="sxs-lookup"><span data-stu-id="2c74d-117">Users can create credentials for themselves.</span></span> <span data-ttu-id="2c74d-118">Владельцы и администраторы участников службы могут создавать учетные данные для каждого пользователя или группы: Глобаладминистратор, Аппликатионадминистратор, Клаудаппликатионадминистратор.</span><span class="sxs-lookup"><span data-stu-id="2c74d-118">Service principal owners and admins with the following roles can create credentials for any user or group: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator.</span></span> <span data-ttu-id="2c74d-119">Чтобы узнать больше, ознакомьтесь с разделами [роли каталога](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).</span><span class="sxs-lookup"><span data-stu-id="2c74d-119">To learn more, see [Directory roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).</span></span>
+> <span data-ttu-id="426ec-117">Пользователи могут самостоятельно создавать учетные данные.</span><span class="sxs-lookup"><span data-stu-id="426ec-117">Users can create credentials for themselves.</span></span> <span data-ttu-id="426ec-118">Владельцы и администраторы участников службы могут создавать учетные данные для каждого пользователя или группы: Глобаладминистратор, Аппликатионадминистратор, Клаудаппликатионадминистратор.</span><span class="sxs-lookup"><span data-stu-id="426ec-118">Service principal owners and admins with the following roles can create credentials for any user or group: GlobalAdministrator, ApplicationAdministrator, CloudApplicationAdministrator.</span></span> <span data-ttu-id="426ec-119">Чтобы узнать больше, ознакомьтесь с разделами [роли каталога](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).</span><span class="sxs-lookup"><span data-stu-id="426ec-119">To learn more, see [Directory roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="2c74d-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2c74d-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="426ec-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="426ec-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,32 +41,32 @@ ms.locfileid: "48313593"
 POST /servicePrincipals/{id}/getPasswordSingleSignOnCredentials
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2c74d-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2c74d-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="426ec-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="426ec-121">Request headers</span></span>
 
-| <span data-ttu-id="2c74d-122">Имя</span><span class="sxs-lookup"><span data-stu-id="2c74d-122">Name</span></span>          | <span data-ttu-id="2c74d-123">Описание</span><span class="sxs-lookup"><span data-stu-id="2c74d-123">Description</span></span>   |
+| <span data-ttu-id="426ec-122">Имя</span><span class="sxs-lookup"><span data-stu-id="426ec-122">Name</span></span>          | <span data-ttu-id="426ec-123">Описание</span><span class="sxs-lookup"><span data-stu-id="426ec-123">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="2c74d-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2c74d-124">Authorization</span></span> | <span data-ttu-id="2c74d-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2c74d-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="2c74d-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2c74d-127">Content-Type</span></span>  | <span data-ttu-id="2c74d-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2c74d-p104">application/json. Required.</span></span>  |
+| <span data-ttu-id="426ec-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="426ec-124">Authorization</span></span> | <span data-ttu-id="426ec-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="426ec-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="426ec-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="426ec-127">Content-Type</span></span>  | <span data-ttu-id="426ec-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="426ec-p104">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="2c74d-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2c74d-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="426ec-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="426ec-130">Request body</span></span>
 
-<span data-ttu-id="2c74d-131">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="2c74d-131">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="426ec-131">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="426ec-131">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="2c74d-132">Параметр</span><span class="sxs-lookup"><span data-stu-id="2c74d-132">Parameter</span></span>    | <span data-ttu-id="2c74d-133">Тип</span><span class="sxs-lookup"><span data-stu-id="2c74d-133">Type</span></span>        | <span data-ttu-id="2c74d-134">Описание</span><span class="sxs-lookup"><span data-stu-id="2c74d-134">Description</span></span> |
+| <span data-ttu-id="426ec-132">Параметр</span><span class="sxs-lookup"><span data-stu-id="426ec-132">Parameter</span></span>    | <span data-ttu-id="426ec-133">Тип</span><span class="sxs-lookup"><span data-stu-id="426ec-133">Type</span></span>        | <span data-ttu-id="426ec-134">Описание</span><span class="sxs-lookup"><span data-stu-id="426ec-134">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="2c74d-135">id</span><span class="sxs-lookup"><span data-stu-id="2c74d-135">id</span></span>|<span data-ttu-id="2c74d-136">String</span><span class="sxs-lookup"><span data-stu-id="2c74d-136">String</span></span>|<span data-ttu-id="2c74d-137">Идентификатор пользователя или группы, к которой принадлежит этот набор учетных данных.</span><span class="sxs-lookup"><span data-stu-id="2c74d-137">The ID of the user or group this credential set belongs to.</span></span>|
+|<span data-ttu-id="426ec-135">id</span><span class="sxs-lookup"><span data-stu-id="426ec-135">id</span></span>|<span data-ttu-id="426ec-136">String</span><span class="sxs-lookup"><span data-stu-id="426ec-136">String</span></span>|<span data-ttu-id="426ec-137">Идентификатор пользователя или группы, к которой принадлежит этот набор учетных данных.</span><span class="sxs-lookup"><span data-stu-id="426ec-137">The ID of the user or group this credential set belongs to.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="2c74d-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="2c74d-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="426ec-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="426ec-138">Response</span></span>
 
-<span data-ttu-id="2c74d-139">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект [пассвордсинглесигнонкредентиалсет](../resources/passwordsinglesignoncredentialset.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2c74d-139">If successful, this method returns a `200 OK` response code and a new [passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md) object in the response body.</span></span>
+<span data-ttu-id="426ec-139">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и новый объект [пассвордсинглесигнонкредентиалсет](../resources/passwordsinglesignoncredentialset.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="426ec-139">If successful, this method returns a `200 OK` response code and a new [passwordSingleSignOnCredentialSet](../resources/passwordsinglesignoncredentialset.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="2c74d-140">Примеры</span><span class="sxs-lookup"><span data-stu-id="2c74d-140">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="426ec-140">Примеры</span><span class="sxs-lookup"><span data-stu-id="426ec-140">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="2c74d-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="2c74d-141">Request</span></span>
+### <a name="request"></a><span data-ttu-id="426ec-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="426ec-141">Request</span></span>
 
-<span data-ttu-id="2c74d-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2c74d-142">The following is an example of a request.</span></span>
+<span data-ttu-id="426ec-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="426ec-142">The following is an example of a request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="2c74d-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="2c74d-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="426ec-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="426ec-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_getpasswordsinglesignoncredentials"
@@ -79,26 +79,26 @@ Content-type: application/json
   "id": "5793aa3b-cca9-4794-679a240f8b58"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="2c74d-144">C#</span><span class="sxs-lookup"><span data-stu-id="2c74d-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="426ec-144">C#</span><span class="sxs-lookup"><span data-stu-id="426ec-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-getpasswordsinglesignoncredentials-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="2c74d-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="2c74d-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="426ec-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="426ec-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-getpasswordsinglesignoncredentials-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="2c74d-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="2c74d-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="426ec-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="426ec-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-getpasswordsinglesignoncredentials-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="2c74d-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="2c74d-147">Response</span></span>
+### <a name="response"></a><span data-ttu-id="426ec-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="426ec-147">Response</span></span>
 
-<span data-ttu-id="2c74d-148">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="2c74d-148">The following is an example of the response.</span></span>
+<span data-ttu-id="426ec-148">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="426ec-148">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="2c74d-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2c74d-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="426ec-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="426ec-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

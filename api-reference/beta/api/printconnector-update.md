@@ -5,61 +5,61 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a8c036362760f057cf301551028c33b4a7218d88
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 8662b03a40c6d659b8c50567b725513e0b8bf9af
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314089"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373117"
 ---
-# <a name="update-printconnector"></a><span data-ttu-id="faee7-103">Обновление Принтконнектор</span><span class="sxs-lookup"><span data-stu-id="faee7-103">Update printConnector</span></span>
+# <a name="update-printconnector"></a><span data-ttu-id="6fc54-103">Обновление Принтконнектор</span><span class="sxs-lookup"><span data-stu-id="6fc54-103">Update printConnector</span></span>
 
-<span data-ttu-id="faee7-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="faee7-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="6fc54-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="6fc54-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="faee7-105">Обновление свойств объекта **принтконнектор** .</span><span class="sxs-lookup"><span data-stu-id="faee7-105">Update the properties of a **printConnector** object.</span></span>
+<span data-ttu-id="6fc54-105">Обновление свойств объекта **принтконнектор** .</span><span class="sxs-lookup"><span data-stu-id="6fc54-105">Update the properties of a **printConnector** object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="faee7-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="faee7-106">Permissions</span></span>
-<span data-ttu-id="faee7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="faee7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6fc54-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6fc54-106">Permissions</span></span>
+<span data-ttu-id="6fc54-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6fc54-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="faee7-109">Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать в дополнение к разрешениям, приведенным в следующей таблице.</span><span class="sxs-lookup"><span data-stu-id="faee7-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="faee7-110">Пользователь, вошедшего в систему, должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span><span class="sxs-lookup"><span data-stu-id="faee7-110">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
+<span data-ttu-id="6fc54-109">Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать в дополнение к разрешениям, приведенным в следующей таблице.</span><span class="sxs-lookup"><span data-stu-id="6fc54-109">To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.</span></span> <span data-ttu-id="6fc54-110">Пользователь, вошедшего в систему, должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span><span class="sxs-lookup"><span data-stu-id="6fc54-110">The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).</span></span>
 
-|<span data-ttu-id="faee7-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="faee7-111">Permission type</span></span> | <span data-ttu-id="faee7-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="faee7-112">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="6fc54-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6fc54-111">Permission type</span></span> | <span data-ttu-id="6fc54-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6fc54-112">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="faee7-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="faee7-113">Delegated (work or school account)</span></span>| <span data-ttu-id="faee7-114">User.Read</span><span class="sxs-lookup"><span data-stu-id="faee7-114">User.Read</span></span> |
-|<span data-ttu-id="faee7-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="faee7-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="faee7-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="faee7-116">Not Supported.</span></span>|
-|<span data-ttu-id="faee7-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="faee7-117">Application</span></span>|<span data-ttu-id="faee7-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="faee7-118">Not Supported.</span></span>|
+|<span data-ttu-id="6fc54-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6fc54-113">Delegated (work or school account)</span></span>| <span data-ttu-id="6fc54-114">User.Read</span><span class="sxs-lookup"><span data-stu-id="6fc54-114">User.Read</span></span> |
+|<span data-ttu-id="6fc54-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6fc54-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6fc54-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6fc54-116">Not Supported.</span></span>|
+|<span data-ttu-id="6fc54-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="6fc54-117">Application</span></span>|<span data-ttu-id="6fc54-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6fc54-118">Not Supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="faee7-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="faee7-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6fc54-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6fc54-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /print/connectors/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="faee7-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="faee7-120">Request headers</span></span>
-| <span data-ttu-id="faee7-121">Имя</span><span class="sxs-lookup"><span data-stu-id="faee7-121">Name</span></span>       | <span data-ttu-id="faee7-122">Описание</span><span class="sxs-lookup"><span data-stu-id="faee7-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6fc54-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6fc54-120">Request headers</span></span>
+| <span data-ttu-id="6fc54-121">Имя</span><span class="sxs-lookup"><span data-stu-id="6fc54-121">Name</span></span>       | <span data-ttu-id="6fc54-122">Описание</span><span class="sxs-lookup"><span data-stu-id="6fc54-122">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="faee7-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="faee7-123">Authorization</span></span> | <span data-ttu-id="faee7-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="faee7-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="faee7-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="faee7-126">Content-type</span></span>  | <span data-ttu-id="faee7-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="faee7-p104">application/json. Required.</span></span>|
+| <span data-ttu-id="6fc54-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="6fc54-123">Authorization</span></span> | <span data-ttu-id="6fc54-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6fc54-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6fc54-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6fc54-126">Content-type</span></span>  | <span data-ttu-id="6fc54-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6fc54-p104">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="faee7-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="faee7-129">Request body</span></span>
-<span data-ttu-id="faee7-130">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="faee7-130">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="faee7-131">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="faee7-131">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="faee7-132">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="faee7-132">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6fc54-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="6fc54-129">Request body</span></span>
+<span data-ttu-id="6fc54-130">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="6fc54-130">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="6fc54-131">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="6fc54-131">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="6fc54-132">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="6fc54-132">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="faee7-133">Свойство</span><span class="sxs-lookup"><span data-stu-id="faee7-133">Property</span></span>     | <span data-ttu-id="faee7-134">Тип</span><span class="sxs-lookup"><span data-stu-id="faee7-134">Type</span></span>        | <span data-ttu-id="faee7-135">Описание</span><span class="sxs-lookup"><span data-stu-id="faee7-135">Description</span></span> |
+| <span data-ttu-id="6fc54-133">Свойство</span><span class="sxs-lookup"><span data-stu-id="6fc54-133">Property</span></span>     | <span data-ttu-id="6fc54-134">Тип</span><span class="sxs-lookup"><span data-stu-id="6fc54-134">Type</span></span>        | <span data-ttu-id="6fc54-135">Описание</span><span class="sxs-lookup"><span data-stu-id="6fc54-135">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="faee7-136">name</span><span class="sxs-lookup"><span data-stu-id="faee7-136">name</span></span>|<span data-ttu-id="faee7-137">String</span><span class="sxs-lookup"><span data-stu-id="faee7-137">String</span></span>|<span data-ttu-id="faee7-138">Имя соединителя.</span><span class="sxs-lookup"><span data-stu-id="faee7-138">The name of the connector.</span></span>|
-|<span data-ttu-id="faee7-139">fullyQualifiedDomainName</span><span class="sxs-lookup"><span data-stu-id="faee7-139">fullyQualifiedDomainName</span></span>|<span data-ttu-id="faee7-140">String</span><span class="sxs-lookup"><span data-stu-id="faee7-140">String</span></span>|<span data-ttu-id="faee7-141">Имя узла для соединителя.</span><span class="sxs-lookup"><span data-stu-id="faee7-141">The connector machine's hostname.</span></span>|
-|<span data-ttu-id="faee7-142">operatingSystem</span><span class="sxs-lookup"><span data-stu-id="faee7-142">operatingSystem</span></span>|<span data-ttu-id="faee7-143">String</span><span class="sxs-lookup"><span data-stu-id="faee7-143">String</span></span>|<span data-ttu-id="faee7-144">Версия операционной системы на соединителе компьютера.</span><span class="sxs-lookup"><span data-stu-id="faee7-144">The connector machine's operating system version.</span></span>|
-|<span data-ttu-id="faee7-145">аппверсион</span><span class="sxs-lookup"><span data-stu-id="faee7-145">appVersion</span></span>|<span data-ttu-id="faee7-146">String</span><span class="sxs-lookup"><span data-stu-id="faee7-146">String</span></span>|<span data-ttu-id="faee7-147">Версия соединителя.</span><span class="sxs-lookup"><span data-stu-id="faee7-147">The connector's version.</span></span>|
-|<span data-ttu-id="faee7-148">location</span><span class="sxs-lookup"><span data-stu-id="faee7-148">location</span></span>|[<span data-ttu-id="faee7-149">принтерлокатион</span><span class="sxs-lookup"><span data-stu-id="faee7-149">printerLocation</span></span>](../resources/printerlocation.md)|<span data-ttu-id="faee7-150">Физическое и/или организационное расположение соединителя.</span><span class="sxs-lookup"><span data-stu-id="faee7-150">The physical and/or organizational location of the connector.</span></span>|
+|<span data-ttu-id="6fc54-136">name</span><span class="sxs-lookup"><span data-stu-id="6fc54-136">name</span></span>|<span data-ttu-id="6fc54-137">String</span><span class="sxs-lookup"><span data-stu-id="6fc54-137">String</span></span>|<span data-ttu-id="6fc54-138">Имя соединителя.</span><span class="sxs-lookup"><span data-stu-id="6fc54-138">The name of the connector.</span></span>|
+|<span data-ttu-id="6fc54-139">fullyQualifiedDomainName</span><span class="sxs-lookup"><span data-stu-id="6fc54-139">fullyQualifiedDomainName</span></span>|<span data-ttu-id="6fc54-140">String</span><span class="sxs-lookup"><span data-stu-id="6fc54-140">String</span></span>|<span data-ttu-id="6fc54-141">Имя узла для соединителя.</span><span class="sxs-lookup"><span data-stu-id="6fc54-141">The connector machine's hostname.</span></span>|
+|<span data-ttu-id="6fc54-142">operatingSystem</span><span class="sxs-lookup"><span data-stu-id="6fc54-142">operatingSystem</span></span>|<span data-ttu-id="6fc54-143">String</span><span class="sxs-lookup"><span data-stu-id="6fc54-143">String</span></span>|<span data-ttu-id="6fc54-144">Версия операционной системы на соединителе компьютера.</span><span class="sxs-lookup"><span data-stu-id="6fc54-144">The connector machine's operating system version.</span></span>|
+|<span data-ttu-id="6fc54-145">аппверсион</span><span class="sxs-lookup"><span data-stu-id="6fc54-145">appVersion</span></span>|<span data-ttu-id="6fc54-146">String</span><span class="sxs-lookup"><span data-stu-id="6fc54-146">String</span></span>|<span data-ttu-id="6fc54-147">Версия соединителя.</span><span class="sxs-lookup"><span data-stu-id="6fc54-147">The connector's version.</span></span>|
+|<span data-ttu-id="6fc54-148">location</span><span class="sxs-lookup"><span data-stu-id="6fc54-148">location</span></span>|[<span data-ttu-id="6fc54-149">принтерлокатион</span><span class="sxs-lookup"><span data-stu-id="6fc54-149">printerLocation</span></span>](../resources/printerlocation.md)|<span data-ttu-id="6fc54-150">Физическое и/или организационное расположение соединителя.</span><span class="sxs-lookup"><span data-stu-id="6fc54-150">The physical and/or organizational location of the connector.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="faee7-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="faee7-151">Response</span></span>
-<span data-ttu-id="faee7-152">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [принтконнектор](../resources/printConnector.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="faee7-152">If successful, this method returns a `200 OK` response code and an updated [printConnector](../resources/printConnector.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="faee7-153">Пример</span><span class="sxs-lookup"><span data-stu-id="faee7-153">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="faee7-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="faee7-154">Request</span></span>
-<span data-ttu-id="faee7-155">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="faee7-155">The following is an example of the request.</span></span>
+## <a name="response"></a><span data-ttu-id="6fc54-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="6fc54-151">Response</span></span>
+<span data-ttu-id="6fc54-152">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [принтконнектор](../resources/printConnector.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="6fc54-152">If successful, this method returns a `200 OK` response code and an updated [printConnector](../resources/printConnector.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="6fc54-153">Пример</span><span class="sxs-lookup"><span data-stu-id="6fc54-153">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6fc54-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="6fc54-154">Request</span></span>
+<span data-ttu-id="6fc54-155">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6fc54-155">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="faee7-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="faee7-156">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="6fc54-156">HTTP</span><span class="sxs-lookup"><span data-stu-id="6fc54-156">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_connector"
@@ -81,23 +81,23 @@ Content-length: 300
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="faee7-157">C#</span><span class="sxs-lookup"><span data-stu-id="faee7-157">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="6fc54-157">C#</span><span class="sxs-lookup"><span data-stu-id="6fc54-157">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-connector-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="faee7-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="faee7-158">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="6fc54-158">JavaScript</span><span class="sxs-lookup"><span data-stu-id="6fc54-158">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-connector-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="faee7-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="faee7-159">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="6fc54-159">Objective-C</span><span class="sxs-lookup"><span data-stu-id="6fc54-159">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-connector-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="faee7-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="faee7-160">Response</span></span>
-<span data-ttu-id="faee7-161">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="faee7-161">The following is an example of the response.</span></span>
-><span data-ttu-id="faee7-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="faee7-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="6fc54-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="6fc54-160">Response</span></span>
+<span data-ttu-id="6fc54-161">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="6fc54-161">The following is an example of the response.</span></span>
+><span data-ttu-id="6fc54-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="6fc54-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
