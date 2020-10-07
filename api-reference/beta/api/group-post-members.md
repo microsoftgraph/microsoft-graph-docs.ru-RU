@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a6c2cd31cb087d2bea6dcb730a1fd2581ed99552
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ea0202e62fcf965d820fa2a51396001af4648af8
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002095"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373232"
 ---
 # <a name="add-member"></a>Добавление участника
 
@@ -23,7 +23,7 @@ ms.locfileid: "48002095"
 Вы можете добавлять пользователей, участников служб или другие группы. 
 
 > [!Important]
-> Вы можете добавлять пользователей только в группы безопасности и Microsoft 365, управляемые через облако.
+> Вы можете добавлять пользователей только в группы безопасности и группы Microsoft 365, управляемые через облако.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -49,7 +49,7 @@ POST /groups/{group-id}/members/$ref
 Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) или [group](../resources/group.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных. Этот метод возвращает `400 Bad Request` код отклика, если объект уже является участником группы. Этот метод возвращает `404 Not Found` код отклика, если добавляемый объект не существует. 
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос

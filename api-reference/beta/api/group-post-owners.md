@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f71d683baf1340143ae82801461e2efb7334811e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e7a15b9fdda3b48fb79318a25a8ce5ce0c853caa
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002060"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373227"
 ---
 # <a name="add-group-owner"></a>Добавление владельца группы
 
@@ -46,7 +46,7 @@ POST /groups/{id}/owners/$ref
 Предоставьте в тексте запроса описание добавляемого объекта [user](../resources/user.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных. Этот метод возвращает `400 Bad Request` код отклика, если объект уже является участником группы. Этот метод возвращает `404 Not Found` код отклика, если добавляемый объект не существует.
 
 ## <a name="example"></a>Пример
 #### <a name="request"></a>Запрос

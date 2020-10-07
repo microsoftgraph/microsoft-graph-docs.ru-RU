@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: f64f8903276e83295547169aac867b1f2b3652fc
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: d4c16bd0175f8ae0cd9d8e03f549bea9eff3db63
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192567"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373505"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph-preview"></a>Обзор API Поиска (Майкрософт) в Microsoft Graph (предварительная версия)
 
@@ -52,12 +52,12 @@ API Поиска (Майкрософт) поддерживает поиск сл
 
 - Подробнее о [Поиске (Майкрософт)](/microsoftsearch/).
 - Подробнее о некоторых основных вариантах использования:
-- 
   - [Управление подключениями для индексирования внешнего контента](search-index-manage-connections.md)
   - [Индексирование внешнего контента](search-index-manage-items.md)
   - [Поиск сообщений Outlook](search-concept-messages.md)
   - [Поиск событий календаря](search-concept-events.md)
   - [Поиск содержимого в OneDrive и SharePoint](search-concept-files.md)
+  - [Поиск внешнего контента](search-concept-custom-types.md)
   - [Сортировка результатов поиска](search-concept-sort.md)
   - [Уточнение результатов поиска](search-concept-aggregation.md)
   

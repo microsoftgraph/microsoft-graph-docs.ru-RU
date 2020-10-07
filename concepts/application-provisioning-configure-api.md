@@ -1,18 +1,18 @@
 ---
-title: Настройка подготовки с помощью API Microsoft Graph
+title: 'Настройка подготовки с помощью интерфейсов API Microsoft Graph:'
 description: Узнайте, как сэкономить время с помощью API Microsoft Graph для автоматизации настройки автоматической подготовки.
 author: kenwith
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6fe5ce68bde32746e17d968f7e34a190c41e1bca
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: e08a1c9c3d16cfe0a413d65dc6c0b918b8567393
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289507"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373379"
 ---
-# <a name="configure-provisioning-using-microsoft-graph-apis"></a>Настройка подготовки с помощью API Microsoft Graph
+# <a name="configure-provisioning-using-microsoft-graph-apis"></a>Настройка подготовки с помощью интерфейсов API Microsoft Graph:
 
 Портал Azure — это удобный способ настройки подготовки для отдельных приложений по одному за раз. Но если вы создаете несколько или даже сотни экземпляров приложения, вы можете упростить процесс создания и настройки приложений с помощью API Microsoft Graph. В этой статье рассказывается, как автоматизировать подготовку конфигурации с помощью API. Этот метод часто используется для таких приложений, как [веб-службы Amazon](/azure/active-directory/saas-apps/amazon-web-service-tutorial#configure-azure-ad-sso).
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 3fe375ca2e9695a237b60e30cdd9e98a9e545d35
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: a6b26c01133f519b0308ffee430d85c9df6d868b
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193960"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373855"
 ---
 # <a name="searchbucket-resource-type"></a>Тип ресурса Сеарчбуккет
 
@@ -20,17 +20,15 @@ ms.locfileid: "48193960"
 
 Представляет контейнер для одного или нескольких результатов поиска, которые имеют одно и то же значение для поля сущности, в котором они объединены. 
 
-
-
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |key|String| Дискретное значение поля, для которого рассчитано агрегирование.|
-|count|Int32| Количество совпадений поиска, имеющих одно и то же значение, указанное в свойстве **Key** . |
+|count|Int32| Приблизительное количество совпадений поиска с одинаковым значением, указанным в свойстве **Key** . Обратите внимание, что это число не является точным числом совпадений.|
 |аггрегатионфилтертокен|String| Маркер, содержащий закодированный фильтр для объединения результатов поиска по определенному значению **ключа** . Чтобы использовать фильтр, передайте маркер в качестве части свойства **аггрегатионфилтер** объекта **сеарчрекуест** в формате **"{Field}: \\ " {аггрегатионфилтертокен} \\ ""**. См. [пример](/graph/search-concept-aggregation#example-2-apply-an-aggregation-filter-based-on-a-previous-request).|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

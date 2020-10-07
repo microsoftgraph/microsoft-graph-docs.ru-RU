@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 7f90461495b3e0a100a08b4887e67d33ed06cca8
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: ca8986dec23e03763aca1491ed4627fa0b87792b
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314383"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373561"
 ---
 # <a name="list-schemaextensions"></a>Перечисление schemaExtensions
 
@@ -30,7 +30,7 @@ ms.locfileid: "48314383"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User. Read, Application. Read. ALL   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application.Read.All  |
+|Приложение | Application.Read.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: f226f781be5713d23fb2882c2e41254d8c2f23de
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ef60a818420ef590ab89c998b5c4ae51edaa21f8
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078453"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373204"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -135,7 +135,7 @@ ms.locfileid: "48078453"
 |licenseProcessingState|String|Указывает состояние назначения лицензии группы для всех участников группы. Возможные значения: `QueuedForProcessing`, `ProcessingInProgress` и `ProcessingComplete`. <br><br>Возвращается только с помощью оператора $select. Только для чтения. |
 |mail|String|SMTP-адрес группы, например "serviceadmins@contoso.onmicrosoft.com". <br><br>Возвращается по умолчанию. Только для чтения. Поддерживает параметр $filter.|
 |mailEnabled|Boolean|Указывает, включена ли для этой группы поддержка почты. <br><br>Возвращается по умолчанию.|
-|mailNickname|String|Почтовый псевдоним для группы (уникальный в организации). Это свойство должно быть указано при создании группы. <br><br>Возвращается по умолчанию. Поддерживает параметр $filter.|
+|mailNickname|String|Почтовый псевдоним для группы (уникальный в организации). Это свойство должно быть указано при создании группы. Такие символы нельзя использовать в mailNickName: `@()\[]";:.<>,SPACE`. <br><br>Возвращается по умолчанию. Поддерживает параметр $filter.|
 |membershipRule|String|Правило, определяющее участников этой группы, если группа является динамической (groupTypes содержит `DynamicMembership`). Дополнительные сведения о синтаксисе правила участия см. в [здесь](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). <br><br>Возвращается по умолчанию. |
 |membershipRuleProcessingState|String|Указывает, включена или приостановлена динамическая обработка участия. Возможные значения: On или Paused. <br><br>Возвращается по умолчанию. |
 |onPremisesDomainName|String|Содержит локальный параметр **domain FQDN**, также называемый **dnsDomainName**, синхронизированный из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect.<br><br>Возвращается по умолчанию. Только для чтения. |

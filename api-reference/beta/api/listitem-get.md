@@ -6,12 +6,12 @@ title: Получение записи из списка SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 497ca5440f7e0d6803c1379a3c66d4b50024b2e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 25d0a055840055c822814799346136a6bda6c660
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067974"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373582"
 ---
 # <a name="get-an-item-in-a-list"></a>Получение элемента списка
 
@@ -30,9 +30,11 @@ ms.locfileid: "48067974"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Sites.Read.All, Sites.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Sites.Read.All, Sites.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Sites.Read.All, Sites.ReadWrite.All |
+|Для приложений | Sites. Read. ALL, sites. ReadWrite. ALL, sites. Manage. ALL |
+
+> **Note**: Application Permission sites. Manage. ALL является обязательным, если для списка SharePoint включены параметры утверждения контента. В противном случае Microsoft Graph не будет получать элементы списка, которые имеют состояние утверждения, отличное от "утверждено".
 
 ## <a name="http-request"></a>HTTP-запрос
 
