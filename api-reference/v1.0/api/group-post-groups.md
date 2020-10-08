@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: aaf131b219606291f829836e6e7a860d3dbbec39
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d7a8e738cf6a6bd3a5b4331bd1c6cfb467303cf3
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057488"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373974"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -56,7 +56,7 @@ POST /groups
 | displayName | string | Имя, которое следует отобразить в адресной книге для группы. Максимальная длина: 256 символов. Обязательный. |
 | description | строка | Описание группы. Максимальная длина: 1024 символа. Необязательно. |
 | mailEnabled | boolean | Установите значение **true** для групп, поддерживающих почту. Обязательно. |
-| mailNickname | string | Почтовый псевдоним для группы. Максимальная длина: 64 символа. Обязательный. |
+| mailNickname | string | Почтовый псевдоним для группы. Максимальная длина: 64 символа. Такие символы нельзя использовать в mailNickName: `@()\[]";:.<>,SPACE`. Обязательный. |
 | securityEnabled | boolean | Значение **true** для групп безопасности, включая группы Microsoft 365. Обязательный. |
 | owners | string collection | Это свойство представляет владельцев группы на момент создания. Необязательный параметр. |
 | members | string collection | Это свойство представляет участников группы на момент создания. Необязательно. |
