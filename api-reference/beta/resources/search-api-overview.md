@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 135eabcb61c81287262e9ebd8681ad3d76104df2
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: d4d88f772ec6291a35c19bd30a63ee90cd0ca989
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193125"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48373890"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Использование API Поиска (Майкрософт) для запросов данных
 
@@ -98,6 +98,11 @@ API Microsoft Search предоставляет метод [query](../api/search
 
 Если поля, указанные в свойстве **fields**, отсутствуют в схеме, они не будут возвращены в отклике. Недопустимые поля в запросе игнорируются без уведомления.
 
+Если в запросе отсутствуют поля, указанные в свойстве **fields**, вы получите набор свойств для всех типов по умолчанию. При использовании расширенных свойств **listItem** и **externalItem** ведут себя иначе, если поля, указанные в свойстве **fields**, не переданы в запрос.
+
+- **listItem** не возвращает никаких настраиваемых полей.
+- **externalItem** возвращает все поля с атрибутом **retrievable** в схеме соединителя Microsoft Graph для этого конкретного подключения.
+
 ## <a name="keyword-query-language-kql-support"></a>Поддержка языка KQL
 
 Вы можете указать произвольный текст ключевых слов (например, `AND` и `OR`) и ограничения свойств в синтаксисе KQL в фактической строке поискового запроса (свойства **query** в тексте запроса **query**). Синтаксис и команда зависят от типов объектов (в свойстве **entityTypes**), указанных в тексте того же запроса **query**.
@@ -109,7 +114,7 @@ API Microsoft Search предоставляет метод [query](../api/search
 
 ## <a name="sort-search-results"></a>Сортировка результатов поиска
 
-Результат поиска в отклике отсортированы в следующем стандартном порядке:
+Результаты поиска в отклике отсортированы в следующем стандартном порядке:
 
 - **message** и **event** сортируются по дате.
 - Все типы SharePoint, OneDrive и соединителей сортируются по релевантности.
@@ -142,7 +147,7 @@ API Microsoft Search предоставляет метод [query](../api/search
 
 API поиска возвращает отклики с ошибками, описанные в [определении объектов ошибок OData](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), каждый из которых представляет собой объект JSON, содержащий код и сообщение.
 
-<!---TODOSEARCHAPI Describe the know errors : bad requests.--->
+<!---TODOSEARCHAPI Describe the know errors: bad requests.--->
 
 ## <a name="known-limitations"></a>Известные ограничения
 
@@ -177,6 +182,17 @@ API поиска возвращает отклики с ошибками, опи
 | [searchHit](./searchhit.md)        | Переименованное свойство | **_source** | **resource** |
 | [searchHit](./searchhit.md)        | Переименованное свойство | **_summary**  | **summary**  |
 
+## <a name="search-samples"></a>Примеры поиска
+
+- Подробнее о некоторых основных вариантах использования:
+  - [Поиск сообщений Outlook](/graph/search-concept-messages)
+  - [Поиск событий календаря](/graph/search-concept-events)
+  - [Поиск содержимого в OneDrive и SharePoint](/graph/search-concept-files)
+  - [Поиск внешнего контента](/graph/search-concept-custom-types)
+  - [Сортировка результатов поиска](/graph/search-concept-sort)
+  - [Уточнение результатов поиска](/graph/search-concept-aggregation)
+
+- Узнайте больше об API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 
 
 ## <a name="whats-new"></a>Новые возможности
