@@ -410,6 +410,16 @@ items:
           - name: Группа
             href: resources/group.md
             items:
+              - name: Список групп
+                href: api/group-list.md
+              - name: Создание группы
+                href: api/group-post-groups.md
+              - name: Вывод группы
+                href: api/group-get.md
+              - name: Обновление группы
+                href: api/group-update.md
+              - name: Удаление группы
+                href: api/group-delete.md
               - name: Добавление в избранное
                 href: api/group-addfavorite.md
               - name: Добавление члена
@@ -422,14 +432,10 @@ items:
                 href: api/group-checkmembergroups.md
               - name: Проверка объектов Member
                 href: api/group-checkmemberobjects.md
-              - name: Создание группы
-                href: api/group-post-groups.md
-              - name: Удаление группы
-                href: api/group-delete.md
               - name: Получение дельты
                 href: api/group-delta.md
-              - name: Вывод группы
-                href: api/group-get.md
+              - name: Получение конечной точки
+                href: api/endpoint-get.md
               - name: Вывод групп пользователя
                 href: api/group-getmembergroups.md
               - name: Вывод объектов членства
@@ -454,8 +460,8 @@ items:
                     href: api/groupsettingtemplate-list.md
                   - name: Получение шаблона параметров группы
                     href: api/groupsettingtemplate-get.md
-              - name: Список групп
-                href: api/group-list.md
+              - name: Перечисление конечных точек
+                href: api/group-list-endpoints.md
               - name: Список политик жизненного цикла
                 href: api/group-list-grouplifecyclepolicies.md
               - name: Список свойств member of
@@ -470,8 +476,6 @@ items:
                 href: api/group-list-owners.md
               - name: Перечисление фотографий
                 href: api/group-list-photos.md
-              - name: Обновление группы
-                href: api/group-update.md
               - name: Удаление из избранного
                 href: api/group-removefavorite.md
               - name: Удаление члена
@@ -694,7 +698,7 @@ items:
                     href: api/application-addkey.md
                   - name: Удаление ключа
                     href: api/application-removekey.md
-              - name: Расширения
+              - name: Extensions
                 items:
                   - name: Список
                     href: api/application-list-extensionproperty.md
@@ -741,7 +745,7 @@ items:
                 href: api/serviceprincipal-get.md
               - name: Обновление
                 href: api/serviceprincipal-update.md
-              - name: Удаление
+              - name: Delete
                 href: api/serviceprincipal-delete.md
               - name: Получение дельты
                 href: api/serviceprincipal-delta.md
@@ -988,11 +992,11 @@ items:
                 href: api/calendarpermission-get.md
               - name: Обновление
                 href: api/calendarpermission-update.md
-              - name: Удаление
+              - name: Delete
                 href: api/calendarpermission-delete.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -3529,7 +3533,7 @@ items:
                 href: api/educationuser-get.md
               - name: Удаление пользователя
                 href: api/educationuser-delete.md
-      - name: Расширения
+      - name: Extensions
         items:
           - name: Открытые расширения
             href: resources/opentypeextension.md
@@ -3557,7 +3561,7 @@ items:
                 href: api/schemaextension-update.md
               - name: Удаление расширения схемы
                 href: api/schemaextension-delete.md
-      - name: Файлы
+      - name: Files
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
           - name: Обзор
@@ -3663,7 +3667,7 @@ items:
                     href: api/administrativeunit-get.md
                   - name: Обновление
                     href: api/administrativeunit-update.md
-                  - name: Удаление
+                  - name: Delete
                     href: api/administrativeunit-delete.md
                   - name: Добавление участника
                     href: api/administrativeunit-post-members.md
@@ -3844,7 +3848,7 @@ items:
                     href: api/certificatebasedauthconfiguration-get.md
                   - name: Удаление
                     href: api/certificatebasedauthconfiguration-delete.md
-              - name: условный доступ;
+              - name: Условный доступ
                 items:
                   - name: Политики
                     items:
@@ -3858,7 +3862,7 @@ items:
                         href: api/conditionalaccesspolicy-get.md
                       - name: Обновление
                         href: api/conditionalaccesspolicy-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/conditionalaccesspolicy-delete.md
                   - name: Именованные расположения
                     items:
@@ -3884,7 +3888,7 @@ items:
                             href: api/countrynamedlocation-get.md
                           - name: Обновление
                             href: api/countrynamedlocation-update.md
-                          - name: Удаление
+                          - name: Delete
                             href: api/countrynamedlocation-delete.md
                       - name: IP-адрес с именем
                         items:
@@ -3898,7 +3902,7 @@ items:
                             href: api/ipnamedlocation-get.md
                           - name: Обновление
                             href: api/ipnamedlocation-update.md
-                          - name: Удаление
+                          - name: Delete
                             href: api/ipnamedlocation-delete.md
               - name: Операции с политикой данных
                 href: resources/datapolicyoperation.md
@@ -3916,7 +3920,7 @@ items:
                     href: api/oauth2permissiongrant-get.md
                   - name: Обновление
                     href: api/oauth2permissiongrant-update.md
-                  - name: Удаление
+                  - name: Delete
                     href: api/oauth2permissiongrant-delete.md
                   - name: Получение дельты
                     href: api/oauth2permissiongrant-delta.md
@@ -3977,7 +3981,7 @@ items:
                         href: api/activitybasedtimeoutpolicy-get.md
                       - name: Обновление
                         href: api/activitybasedtimeoutpolicy-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/activitybasedtimeoutpolicy-delete.md
                   - name: Политика обнаружения домашней области
                     href: resources/homerealmdiscoverypolicy.md
@@ -3990,7 +3994,7 @@ items:
                         href: api/homerealmdiscoverypolicy-get.md
                       - name: Обновление
                         href: api/homerealmdiscoverypolicy-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/homerealmdiscoverypolicy-delete.md
                       - name: Список субъектов-служб и приложений
                         href: api/homerealmdiscoverypolicy-list-appliesto.md
@@ -4005,7 +4009,7 @@ items:
                         href: api/claimsmappingpolicy-get.md
                       - name: Обновление
                         href: api/claimsmappingpolicy-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/claimsmappingpolicy-delete.md
                       - name: Список субъектов-служб и приложений
                         href: api/claimsmappingpolicy-list-appliesto.md
@@ -4020,7 +4024,7 @@ items:
                         href: api/tokenissuancepolicy-get.md
                       - name: Обновление
                         href: api/tokenissuancepolicy-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/tokenissuancepolicy-delete.md
                       - name: Список субъектов-служб и приложений
                         href: api/tokenissuancepolicy-list-appliesto.md
@@ -4035,7 +4039,7 @@ items:
                         href: api/tokenlifetimepolicy-get.md
                       - name: Обновление
                         href: api/tokenlifetimepolicy-update.md
-                      - name: Удаление
+                      - name: Delete
                         href: api/tokenlifetimepolicy-delete.md
                       - name: Список субъектов-служб и приложений
                         href: api/tokenlifetimepolicy-list-appliesto.md
@@ -4113,7 +4117,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -4384,7 +4388,7 @@ items:
                 href: api/contact-delta.md
           - name: Категории
             items:
-              - name: Категория
+              - name: Category
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -5025,7 +5029,7 @@ items:
                     href: api/offershiftrequest-get.md
                   - name: Список
                     href: api/offershiftrequest-list.md
-                  - name: Утвердить
+                  - name: '"Утвердить"'
                     href: api/offershiftrequest-approve.md
                   - name: Отклоня
                     href: api/offershiftrequest-decline.md
@@ -5040,7 +5044,7 @@ items:
                     href: api/openshift-get.md
                   - name: Обновление
                     href: api/openshift-update.md
-                  - name: Удаление
+                  - name: Delete
                     href: api/openshift-delete.md
               - name: Открыть запрос на изменение сочетания клавиш
                 href: resources/openshiftchangerequest.md
@@ -5051,7 +5055,7 @@ items:
                     href: api/openshiftchangerequest-post.md
                   - name: Получение
                     href: api/openshiftchangerequest-get.md
-                  - name: Утвердить
+                  - name: '"Утвердить"'
                     href: api/openshiftchangerequest-approve.md
                   - name: Отклоня
                     href: api/openshiftchangerequest-decline.md
@@ -5071,7 +5075,7 @@ items:
                     href: api/swapshiftschangerequest-post.md
                   - name: Получение
                     href: api/swapshiftschangerequest-get.md
-                  - name: Утвердить
+                  - name: '"Утвердить"'
                     href: api/swapshiftschangerequest-approve.md
                   - name: Отклоня
                     href: api/swapshiftschangerequest-decline.md
@@ -5108,7 +5112,7 @@ items:
                     href: api/timeoffrequest-get.md
                   - name: Удаление
                     href: api/timeoffrequest-delete.md
-                  - name: Утвердить
+                  - name: '"Утвердить"'
                     href: api/timeoffrequest-approve.md
                   - name: Отклоня
                     href: api/timeoffrequest-decline.md
