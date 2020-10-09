@@ -6,12 +6,12 @@ description: Возвращает метаданные элемента в сп�
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e2d441bb306a6614cdc27f5dff79bd55377b0459
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0eda1b3af89bbb885b2a58e2651323627846d143
+ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057292"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48374366"
 ---
 # <a name="get-listitem"></a>Получение ресурса listItem
 
@@ -30,7 +30,9 @@ ms.locfileid: "48057292"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Read.All, Sites.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Sites.Read.All, Sites.ReadWrite.All |
+|Для приложений | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All |
+
+> **Примечание.**: Требуется разрешение для приложений Sites.Manage.All, если в списке SharePoint включены параметры утверждения контента. В противном случае Microsoft Graph не будет получать элементы списка, которые не имеют состояния «Утверждено».
 
 ## <a name="http-request"></a>HTTP-запрос
 
