@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 3275a3fcc8d9a8c385db8333f9fbd9e60dc159c4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0943fb68f2cd9513bee78a505eed895f4de46977
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992200"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401598"
 ---
 # <a name="list-tablecollection"></a>Список TableCollection
 
@@ -33,7 +33,7 @@ GET /workbook/tables
 GET /workbook/worksheets/{id|name}/tables
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -41,7 +41,7 @@ GET /workbook/worksheets/{id|name}/tables
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Основной текст запросов
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -102,7 +102,7 @@ Content-length: 158
   ]
 }
 ```
-> **Примечание.** Используйте параметры запросов [$top](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top) и [$skip](https://developer.microsoft.com/graph/docs/concepts/query_parameters#top), чтобы просматривать постранично большое количество таблиц.
+> **Примечание.** Используйте параметры запросов [$top](/graph/query-parameters#top) и [$skip](/graph/query-parameters#top), чтобы просматривать постранично большое количество таблиц.
 
 Пример: 
 
@@ -120,4 +120,3 @@ Content-length: 158
   "suppressions": [
   ]
 }-->
-

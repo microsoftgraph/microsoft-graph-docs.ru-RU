@@ -6,12 +6,12 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 0e24d33cedceb65bb607282f329d72ec0ba5ab1e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 887705234bb70918ebca82bcea30fbd82d9812ce
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067402"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400779"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
@@ -126,9 +126,8 @@ ms.locfileid: "48067402"
 | name                 | String             | Имя элемента (имя и расширение файла). Чтение и запись.
 | package              | [package][]        | В случае наличия указывает, что этот элемент — пакет, а не папка или файл. Пакеты обрабатываются как файлы в одном контексте, и как папки — в другом. Только для чтения.
 | parentReference      | [itemReference][]  | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.
-| пендингоператионс    | [пендингоператионс][] | Если указано, показывает, что одна или несколько операций, которые могут повлиять на состояние driveItem, ожидают завершения. Только для чтения.
-| Фотография
-                | [photo][]          | Метаданные фотографии, если в роли элемента выступает фотография. Только для чтения.
+| pendingOperations    | [pendingOperations][] | Если указано, показывает, что одна или несколько операций, которые могут повлиять на состояние driveItem, ожидают завершения. Только для чтения.
+| photo;                | [photo][]          | Метаданные фотографии, если в роли элемента выступает фотография. Только для чтения.
 | publication          | [publicationFacet][] | Предоставляет сведения о состоянии элемента (опубликован или получен для изменения) в расположениях, поддерживающих такие действия. Это свойство не возвращается по умолчанию. Только для чтения. |
 | remoteItem           | [remoteItem][]     | Данные удаленного элемента, если элемент используется совместно на диске, но не на том, к которому получен доступ в данный момент. Только для чтения.
 | root                 | [root][]           | Ненулевое значение этого свойства указывает, что ресурс driveItem является самым верхним на диске.
@@ -237,7 +236,7 @@ URL-адрес будет доступен в течение короткого 
 [listItem]: listitem.md
 [package]: package.md
 [permission]: permission.md
-[пендингоператионс]: pendingoperations.md
+[pendingOperations]: pendingoperations.md
 [photo]: photo.md
 [remoteItem]: remoteitem.md
 [root]: root.md
@@ -249,7 +248,7 @@ URL-адрес будет доступен в течение короткого 
 [thumbnailSet]: thumbnailset.md
 [video]: video.md
 [workbook]: workbook.md
-[user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
+[user]: /graph/api/resources/users
 [publicationFacet]: publicationfacet.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -267,5 +266,3 @@ URL-адрес будет доступен в течение короткого 
   "suppressions": []
 }
 -->
-
-

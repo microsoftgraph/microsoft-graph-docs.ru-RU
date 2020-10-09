@@ -7,12 +7,12 @@ localization_priority: Normal
 ms.prod: sharepoint
 description: Перечислите эффективные разрешения общего доступа в driveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 62b133fc1924fa2ee03f2908a1ff473fb28714a2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3f106b1bbd7506711d03a738a2cfc0f02e543948
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042126"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401346"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Список разрешений на совместное использование в driveItem
 
@@ -72,7 +72,7 @@ GET /users/{userId}/drive/items/{itemId}/permissions
 
 Абоненты могут распознать унаследованное разрешение, проверив свойство **inheritedFrom**. Это свойство — ресурс [**itemReference**](../resources/itemreference.md), отсылающий к предшествующему элементу, от которого унаследовано разрешение.
 
-Уровни разрешений SharePoint, заданные для элемента, возвращаются с префиксом SP. Примеры: SP.View Only, SP.Limited Access, SP.View Web Analytics Data. См. [полный список ролей SharePoint](https://technet.microsoft.com/library/cc721640.aspx#section1).
+Уровни разрешений SharePoint, заданные для элемента, возвращаются с префиксом SP. Примеры: SP.View Only, SP.Limited Access, SP.View Web Analytics Data. См. [полный список ролей SharePoint](/SharePoint/sites/user-permissions-and-permission-levels#section1).
 
 ## <a name="example"></a>Пример
 
@@ -172,4 +172,3 @@ Content-Type: application/json
   "suppressions": [
   ]
 } -->
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 19eb561944c3d9055f8453906bfedb92701c814f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 531412e826d730b634ff7506386963e0e465127b
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016170"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400608"
 ---
 # <a name="rolemanagement-resource-type"></a>Тип ресурса Ролеманажемент
 
@@ -22,7 +22,7 @@ ms.locfileid: "48016170"
 
 Дополнительные сведения см. в указанных ниже статьях. 
 * [Разрешения роли администратора в Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
-* [Управление доступом на основе ролей (RBAC) в Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control)
+* [Управление доступом на основе ролей (RBAC) в Microsoft Intune](/mem/intune/fundamentals/role-based-access-control)
 
 ## <a name="methods"></a>Методы
 
@@ -52,5 +52,3 @@ ms.locfileid: "48016170"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

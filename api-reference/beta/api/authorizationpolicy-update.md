@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d4f8bd9053db7b58e3aec81e82a5d0c2d20c2407
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 3a51767eb02765b3c6914d8b04c5758202b3df1f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48312423"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401906"
 ---
 # <a name="update-authorizationpolicy"></a>Обновление Аусоризатионполици
 
@@ -26,9 +26,9 @@ ms.locfileid: "48312423"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy. ReadWrite. Authorization|
+| Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.Authorization|
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy. ReadWrite. Authorization|
+| Для приложений                            | Policy.ReadWrite.Authorization|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -55,11 +55,12 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 |description|String| Описание этой политики. |  
 |гуестусерролеид|Guid| Представляет templateId роли для роли, которая должна быть выделена пользователю "гость". Обратитесь к [списку унифиедроледефинитионс](./rbacapplication-list-roledefinitions.md) , чтобы найти список доступных шаблонов ролей. Только поддерживаемые роли: User (a0b1b346-4d3e-4e8b-98f8-753987be4970), гость (10dae51f-b6af-4016-8d66-8c2a99b929b3) и пользователь с ограниченным гостями (2af84b1e-32c8-42b7-82bc-daa82404023b). | 
 |енабледпревиевфеатурес|Коллекция (String)| Список компонентов, включенных для закрытой предварительной версии в клиенте. | 
-|блоккмсолповершелл|Boolean| Чтобы отключить использование MSOL PowerShell, задайте для этого свойства значение `true` . Параметр `true` также отключит доступ пользователей к устаревшей конечной точке службы, используемой MSOL PowerShell. Это не повлияет на Azure AD Connect или Microsoft Graph. | 
+|блоккмсолповершелл|Логический| Чтобы отключить использование MSOL PowerShell, задайте для этого свойства значение `true` . Параметр `true` также отключит доступ пользователей к устаревшей конечной точке службы, используемой MSOL PowerShell. Это не повлияет на Azure AD Connect или Microsoft Graph. | 
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultUserRolePermissions.md)| Задает определенные настраиваемые разрешения для роли пользователя по умолчанию. | 
-|allowedToUseSSPR|Boolean| Указывает, можно ли использовать функцию самостоятельного сброса пароля для пользователей клиента. | 
-|allowedToSignUpEmailBasedSubscriptions|Boolean| Указывает, могут ли пользователи регистрироваться на почтовые подписки. | 
-|allowEmailVerifiedUsersToJoinOrganization|Boolean| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. | 
+|allowedToUseSSPR|Логический| Указывает, может ли функция сброса пароля Self-Serve использоваться пользователями клиента. | 
+|allowedToSignUpEmailBasedSubscriptions|Логический| Указывает, могут ли пользователи регистрироваться на почтовые подписки. | 
+|allowEmailVerifiedUsersToJoinOrganization|Логический| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. |
+| пермиссионгрантполициидсассигнедтодефаултусерроле | Коллекция объектов string | Указывает, разрешено ли согласие пользователя на доступ к приложениям, а также от того, какая [политика согласия приложения](/azure/active-directory/manage-apps/manage-app-consent-policies) определяет разрешение для пользователей на предоставление согласия. Значения должны быть в формате `managePermissionGrantsForSelf.{id}` , где `{id}` — это **идентификатор** встроенной или настраиваемой [политики согласия приложений](/azure/active-directory/manage-apps/manage-app-consent-policies). Пустой список указывает на то, что согласие пользователя на приложения отключено. |
 
 ## <a name="response"></a>Отклик
 
@@ -86,6 +87,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 }
 
 ```
+
 #### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
@@ -93,12 +95,11 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+  "@odata.type": "microsoft.graph.authorizationPolicy"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
-
 ```
 
 ### <a name="example-2-enable-new-feature-for-preview-on-tenant"></a>Пример 2: включение новой функции для предварительного просмотра в клиенте
@@ -143,20 +144,18 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+  "@odata.type": "microsoft.graph.authorizationPolicy"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-
 ### <a name="example-3-block-msol-powershell-in-tenant"></a>Пример 3: Блокировка MSOL PowerShell в клиенте
 
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -193,12 +192,13 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+  "@odata.type": "microsoft.graph.authorizationPolicy"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
+
 ### <a name="example-4-disable-default-user-roles-permission-to-create-applications"></a>Пример 4: отключение разрешения роли пользователя по умолчанию для создания приложений
 
 #### <a name="request"></a>Запрос
@@ -244,14 +244,14 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+  "@odata.type": "microsoft.graph.authorizationPolicy"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-5-enable-default-user-role-to-use-self-serve-password-reset-feature"></a>Пример 5: Включение роли пользователя по умолчанию для использования функции самостоятельного сброса пароля
+### <a name="example-5-enable-default-user-role-to-use-self-serve-password-reset-feature"></a>Пример 5: Включение роли пользователя по умолчанию для использования функции сброса пароля Self-Serve
 
 #### <a name="request"></a>Запрос
 
@@ -293,7 +293,75 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicyPolicy"
+  "@odata.type": "microsoft.graph.authorizationPolicy"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-6-disable-user-consent-to-apps-for-default-user-role"></a>Пример 6: отключение согласия пользователя для приложений для роли пользователя по умолчанию
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_authZPolicy_disableUserConsent"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+
+{
+    "permissionGrantPolicyIdsAssignedToDefaultUserRole": [ ]
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authorizationPolicy"
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-7-enable-user-consent-to-apps-subject-to-app-consent-policy"></a>Пример 7: включение согласия пользователя для приложений, подчиняются политике согласия приложений 
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса, который разрешает согласие пользователя на приложения, в соответствии со встроенной [политикой согласия приложений](/azure/active-directory/manage-apps/manage-app-consent-policies) `microsoft-user-default-low` , которая разрешает делегированные разрешения, классифицированные как низкие, для клиентских приложений из проверенных издателей или зарегистрированных в одном клиенте.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_authZPolicy_enableUserConsentLow"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+
+{
+    "permissionGrantPolicyIdsAssignedToDefaultUserRole": [
+        "managePermissionGrantsForSelf.microsoft-user-default-low"
+    ]
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authorizationpolicy"
 } -->
 
 ```http

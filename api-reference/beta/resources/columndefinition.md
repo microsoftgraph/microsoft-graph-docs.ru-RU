@@ -6,12 +6,12 @@ title: ColumnDefinition
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
-ms.openlocfilehash: 6b21ae8b85044ea1c0b9fef16c1bb7dd57487040
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d6034bfc85c7c2c1e93d0557fdf508fd1ea1ff46
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034009"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401689"
 ---
 # <a name="columndefinition-resource-type"></a>Тип ресурса columnDefinition
 
@@ -112,7 +112,7 @@ ms.locfileid: "48034009"
 [fields]: fieldvalueset.md
 [listItem]: listitem.md
 
-[SPFieldType]: https://msdn.microsoft.com/library/microsoft.sharepoint.spfieldtype.aspx
+[SPFieldType]: /previous-versions/office/sharepoint-server/ms428806(v=office.15)
 
 <!--
 {
@@ -124,5 +124,3 @@ ms.locfileid: "48034009"
   "suppressions": []
 }
 -->
-
-

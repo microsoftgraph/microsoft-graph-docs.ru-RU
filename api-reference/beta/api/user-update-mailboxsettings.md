@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a55d0f7584edaa0caecafb52384073c202ba1857
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 03a8c5f8369b54a105c904da0fd6debebb33a98e
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034214"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401556"
 ---
 # <a name="update-user-mailbox-settings"></a>Обновление параметров почтового ящика пользователя
 
@@ -28,7 +28,7 @@ ms.locfileid: "48034214"
 - часовой пояс;
 - [рабочее время](../resources/workinghours.md).
 
-При обновлении предпочтительного формата даты или времени для пользователя укажите его соответственно в [кратком формате даты](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) или [коротком формате времени](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) . 
+При обновлении предпочтительного формата даты или времени для пользователя укажите его соответственно в [кратком формате даты](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) или [коротком формате времени](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime) . 
 
 При обновлении предпочтительного часового пояса для пользователя укажите его в формате [часового пояса Windows или Internet Assigned Numbers Authority (IANA)](https://www.iana.org/time-zones) (также известного как часовой пояс Олсона). Кроме того, можно настроить часовой пояс, как показано в [примере 2](#example-2) ниже.
 
@@ -51,7 +51,7 @@ PATCH /me/mailboxSettings
 PATCH /users/{id|userPrincipalName}/mailboxSettings
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
@@ -269,5 +269,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

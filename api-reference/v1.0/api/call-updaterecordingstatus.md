@@ -5,18 +5,18 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5436b865594a9463a5f7700b863320449f3594e0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a785b64257acbc7cc59da8f6fea24fe5c9040ad9
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992463"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401035"
 ---
 # <a name="call-updaterecordingstatus"></a>Call: Упдатерекордингстатус
 
 Пространство имен: microsoft.graph
 
-Обновление состояния записи приложения, связанного с вызовом. Для этого необходимо использовать решение для [записи на основе политики Teams](https://docs.microsoft.com/MicrosoftTeams/teams-recording-policy) .
+Обновление состояния записи приложения, связанного с вызовом. Для этого необходимо использовать решение для [записи на основе политики Teams](/MicrosoftTeams/teams-recording-policy) .
 
 > **Дополнительное ограничение**: вы не можете использовать API-интерфейс для записи или сохранения мультимедийного контента из вызовов или собраний, к которым обращается приложение, или данных, полученных из этого контента ("запись" или "запись"), без предварительного вызова API **упдатерекордингстатус** для указания того, что запись началась и получает ответ об успешной отправке от этого API. Если приложение начинает запись собрания, оно должно закончить запись перед вызовом API **упдатерекордингстатус** , чтобы указать, что запись закончена.
 
@@ -130,4 +130,3 @@ Location: https://graph.microsoft.com/v1.0/communications/calls/57dab8b1-894c-40
   ]
 }
 -->
-

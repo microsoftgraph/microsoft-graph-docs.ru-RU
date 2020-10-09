@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: krbain
-ms.openlocfilehash: 6bfab41ca0fc6754eb08f86eed3bf16a0c1e0f12
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f0032c9b32ba068b0ccaf7c2e4cafb8a775184da
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029206"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401787"
 ---
 # <a name="licenseassignmentstate-resource-type"></a>Тип ресурса Лиценсеассигнментстате
 
@@ -31,7 +31,7 @@ ms.locfileid: "48029206"
 |:---------------|:--------|:----------|
 |ассигнедбиграуп|string|Идентификатор группы, которая назначает эту лицензию. Если назначение относится к прямой назначенной лицензии, это поле будет иметь значение null. Только для чтения.|
 |дисабледпланс|Collection(String)|Планы обслуживания, которые отключены в этом назначении. Только для чтения.|
-|error|String|Ошибка при назначении лицензии. Если лицензия назначена успешно, это поле будет иметь значение null. Только для чтения. Возможные значения: `CountViolation` , `MutuallyExclusiveViolation` , `DependencyViolation` , `ProhibitedInUsageLocationViolation` , `UniquenessViolation` и `Others` . Дополнительные сведения о том, как определять и устранять ошибки назначения лицензий, можно найти [здесь](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems).|
+|error|String|Ошибка при назначении лицензии. Если лицензия назначена успешно, это поле будет иметь значение null. Только для чтения. Возможные значения: `CountViolation` , `MutuallyExclusiveViolation` , `DependencyViolation` , `ProhibitedInUsageLocationViolation` , `UniquenessViolation` и `Others` . Дополнительные сведения о том, как определять и устранять ошибки назначения лицензий, можно найти [здесь](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems).|
 |skuId|String|Уникальный идентификатор SKU. Только для чтения.|
 |state|String|Указывает текущее состояние этого назначения. Только для чтения. Возможные значения: Active, Активевисеррор, Disabled и Error.|
 
@@ -54,5 +54,3 @@ ms.locfileid: "48029206"
 }
 
 ```
-
-

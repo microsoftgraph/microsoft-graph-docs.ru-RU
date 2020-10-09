@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: yyuank
-ms.openlocfilehash: 2b91fccac9811c7347618ef98ad8c5bd033f533f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 60ac47c22a5ef9a506fac8fcaadc8e697d474044
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070228"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402144"
 ---
 # <a name="get-endpoint"></a>Получение конечной точки
 
@@ -32,7 +32,7 @@ ms.locfileid: "48070228"
 GET /groups/{id}/endpoints/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -108,4 +108,3 @@ Content-length: 208
   ]
 }
 -->
-

@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: d1c815423993a93100e8feb3d90b644096122c85
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5ee215dff7fafaa25e4601ade1819322d8894e5a
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059637"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401577"
 ---
 # <a name="list-shared"></a>Список "Общие"
 
@@ -42,8 +42,8 @@ GET /users/{id | userPrincipalName}/insights/shared
 GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 `$filter`С помощью параметра запроса можно фильтровать общие элементы. Например, на основе **типа**:
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Accept  | application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -117,5 +117,3 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared
                 "type: "type-value" 
 }
 ```
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 064e37794bcbc48bcc09f8e75d6d31642defd3e8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b76b8c81cda0241255377539314accc2d6b2a9fe
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025699"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400615"
 ---
 # <a name="list-buckets"></a>Перечисление сегментов
 
@@ -33,14 +33,14 @@ ms.locfileid: "48025699"
 GET /planner/buckets
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод требует указания [фильтра](https://developer.microsoft.com/graph/docs/concepts/query_parameters) по идентификатору плана.
+Этот метод требует указания [фильтра](/graph/query-parameters) по идентификатору плана.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -115,4 +115,3 @@ Content-length: 251
   "suppressions": [
   ]
 }-->
-

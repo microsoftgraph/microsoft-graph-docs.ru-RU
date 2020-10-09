@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 838fe1b986245909c1c1251d23fe048d2ebf65ba
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 77b3a483c8993b421348bb052c66d66a1558beb0
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016200"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400713"
 ---
 # <a name="riskyuser-resource-type"></a>Тип ресурса Рискюсер
 
@@ -20,7 +20,7 @@ ms.locfileid: "48016200"
 
 Представляет пользователей Azure AD, которые находятся под угрозой. Azure AD постоянно оценивает риск пользователя на основе различных сигналов и машинного обучения. Этот API предоставляет программный доступ ко всем пользователям с рисками в Azure AD.
 
-Для получения дополнительных сведений о событиях риска обратитесь к разделу [Защита удостоверений Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/).
+Для получения дополнительных сведений о событиях риска обратитесь к разделу [Защита удостоверений Azure Active Directory](/azure/active-directory/identity-protection/overview-identity-protection).
 
 >**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
 
@@ -48,7 +48,7 @@ ms.locfileid: "48016200"
 |`userDisplayName`|`string`|Опасное отображаемое имя пользователя|
 |`userPrincipalName`|`string`|Рискованное имя участника пользователя|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -89,5 +89,3 @@ ms.locfileid: "48016200"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

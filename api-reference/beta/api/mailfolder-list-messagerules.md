@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9fa10dca78b917bf5662dd280e9b9cb60d4bff85
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4de3ecb0b2b61513c4653ae4b558693f3765b1d3
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053617"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401822"
 ---
 # <a name="list-rules"></a>Перечисление правил
 
@@ -36,7 +36,7 @@ GET /me/mailFolders/inbox/messagerules
 GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
@@ -146,5 +146,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 08d138e3b41cd233626304943bc65ee553a66ed7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ef827c1b8a0fec8ff676eeeef10c2d20dca50377
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991574"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401878"
 ---
 # <a name="get-authorizationpolicy"></a>Получение Аусоризатионполици
 
@@ -44,7 +44,7 @@ GET /policies/authorizationPolicy/authorizationPolicy
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -95,6 +95,9 @@ Content-type: application/json
     "allowedToSignUpEmailBasedSubscriptions": false,
     "allowedToUseSSPR": true,
     "allowEmailVerifiedUsersToJoinOrganization": true,
+    "permissionGrantPolicyIdsAssignedToDefaultUserRole": [
+        "managePermissionGrantsForSelf.microsoft-user-default-low"
+    ]
 }
 ```
 

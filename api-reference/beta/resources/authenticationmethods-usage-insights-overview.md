@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: e01451aadeb157d66ce2a1ac20ab363772d8dafd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6d626c558dd7728d08682e5eebce138a5197f5b6
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034107"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402303"
 ---
 # <a name="working-with-the-authentication-methods-usage-report-api"></a>Работа с API отчетов об использовании методов проверки подлинности
 
@@ -43,11 +43,6 @@ ms.locfileid: "48034107"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Сведения о [развертывании средства самообслуживания Azure Active Directory для самостоятельного сброса пароля](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
-- Узнайте, как развернуть [Azure Active Directory MFA](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted).
-- Узнайте, как включить [регистрацию сведений о безопасности в сочетании](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined).
-
-
-
-
-
+- Сведения о [развертывании средства самообслуживания Azure Active Directory для самостоятельного сброса пароля](/azure/active-directory/authentication/howto-sspr-deployment).
+- Узнайте, как развернуть [Azure Active Directory MFA](/azure/active-directory/authentication/howto-mfa-getstarted).
+- Узнайте, как включить [регистрацию сведений о безопасности в сочетании](/azure/active-directory/authentication/howto-registration-mfa-sspr-combined).

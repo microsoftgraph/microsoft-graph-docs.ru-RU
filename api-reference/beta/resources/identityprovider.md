@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: namkedia
-ms.openlocfilehash: 23c23d022d35d51323e374674775bab01532d4b9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8f8adb3911b5912644356771f1b228880021ca94
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013575"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401430"
 ---
 # <a name="identityprovider-resource-type"></a>Тип ресурса identityProvider
 
@@ -18,7 +18,7 @@ ms.locfileid: "48013575"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет поставщиков удостоверений с [внешними удостоверениями](https://docs.microsoft.com/azure/active-directory/external-identities/) для клиента Azure Active Directory и клиента Azure AD B2C.
+Представляет поставщиков удостоверений с [внешними удостоверениями](/azure/active-directory/external-identities/) для клиента Azure Active Directory и клиента Azure AD B2C.
 
 Для сценариев Azure AD B2B в клиенте Azure AD типом поставщика удостоверений может быть Google или Facebook.
 
@@ -74,5 +74,3 @@ ms.locfileid: "48013575"
     "clientSecret": "String"
 }
 ```
-
-

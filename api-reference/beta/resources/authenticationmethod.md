@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b9510a53ea80142bd9f155dce3e12824ad2d186e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d6afb785527b2d2448e54533ce02c0a72bf84353
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034134"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402347"
 ---
 # <a name="authenticationmethod-resource-type"></a>Тип ресурса authenticationMethod
 
@@ -18,7 +18,7 @@ ms.locfileid: "48034134"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет метод проверки подлинности, зарегистрированный для пользователя. [Способ проверки подлинности](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) используется пользователем для проверки подлинности или подтверждения удостоверения системы. В качестве примеров можно привести пароль, Телефон (с помощью SMS или голосового вызова), ключи безопасности FIDO2 и многое другое. В настоящее время применяются методы Password и Phone.
+Представляет метод проверки подлинности, зарегистрированный для пользователя. [Способ проверки подлинности](/azure/active-directory/authentication/concept-authentication-methods) используется пользователем для проверки подлинности или подтверждения удостоверения системы. В качестве примеров можно привести пароль, Телефон (с помощью SMS или голосового вызова), ключи безопасности FIDO2 и многое другое. В настоящее время применяются методы Password и Phone.
 
 ## <a name="methods"></a>Методы
 
@@ -33,7 +33,7 @@ ms.locfileid: "48034134"
 |:-------------|:------------|:------------|
 |id|String| Идентификатор этого экземпляра метода проверки подлинности, зарегистрированный для этого пользователя. Только для чтения. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -66,5 +66,3 @@ ms.locfileid: "48034134"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

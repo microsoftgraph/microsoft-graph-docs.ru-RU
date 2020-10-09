@@ -1,16 +1,16 @@
 ---
 title: 'groupLifecyclePolicy: Реневграуп'
-description: Обновляет срок действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.
+description: Продление срока действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.
 localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1421a2ffa62935c8b16ba8d8e3126e3d3cede770
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8d41890b33cb2793caf8e29d970dee24299551fe
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001829"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402455"
 ---
 # <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: Реневграуп
 
@@ -18,9 +18,9 @@ ms.locfileid: "48001829"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновляет срок действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.
+Продление срока действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.
 
-> **Примечание:** В версии 1.0 [Используйте ресурс Group, чтобы выполнить обновление запросов](/graph/api/group-renew?view=graph-rest-1.0).
+> **Примечание:** При вызове конечной точки версии 1.0 используйте метод [продления группы](/graph/api/group-renew?view=graph-rest-1.0) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,7 +47,7 @@ POST /groupLifecyclePolicies/renewGroup
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр | Тип | Описание |
@@ -116,5 +116,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 7982cfd3cf167627879e2fe4d36e2f676b1ab16f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f4bb07186ede8949256fba40ad107affaf2889cc
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989530"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400755"
 ---
 # <a name="working-with-the-azure-ad-entitlement-management-api"></a>Работа с API управления обслуживанием Azure AD
 
@@ -93,9 +93,9 @@ ms.locfileid: "47989530"
 - [акцесспаккажесубжект](accesspackagesubject.md) — используется в [акцесспаккажеассигнмент](accesspackageassignment.md) в качестве пользователя темы с назначенным пакетом Access.
 - [идентитисаурце](identitysource.md) — используется в [коннектедорганизатион](connectedorganization.md), один из [азуреактиведиректоритенант](azureactivedirectorytenant.md), [домаинидентитисаурце](domainidentitysource.md) или [externalDomainFederation](externaldomainfederation.md).
 
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
- - [Что такое управление обслуживанием Azure AD?](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)
+ - [Что такое управление обслуживанием Azure AD?](/azure/active-directory/governance/entitlement-management-overview)
 
 
 
@@ -108,5 +108,3 @@ ms.locfileid: "47989530"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nmoreau
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: e877b1e126a353aae04a90500fdfe99cd4ec8342
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: c699dab1c97d5b7650f42d4282e36d35b2769a31
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193325"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401809"
 ---
 # <a name="searchentity-query"></a>Сеарчентити: запрос
 

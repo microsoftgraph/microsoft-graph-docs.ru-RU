@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: d5f0dbfe0b27a44f48d0be947e15ef20a980e935
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dc70b7d6dfff5bc512656167a5d32ec317336193
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48059616"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402123"
 ---
 # <a name="list-trending"></a>Список "Популярные"
 
@@ -43,8 +43,8 @@ GET /me/insights/trending/{id}/resource
 GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 `$filter`С помощью параметра запроса можно фильтровать элементы тенденции. Например, на основе **типа**:
 
@@ -63,7 +63,7 @@ GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Accept  | application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -107,6 +107,3 @@ Content-length: 801
     ]
 }
 ```
-
-
-

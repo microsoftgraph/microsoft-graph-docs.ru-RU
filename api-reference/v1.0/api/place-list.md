@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 00fd4afb1d0f2ac71109158178c131c05ec214af
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: baf669e04baba3f76d9fd38cf33507e165ea3920
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020736"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402018"
 ---
 # <a name="list-places"></a>Список мест
 
@@ -28,7 +28,7 @@ ms.locfileid: "48020736"
 
 По умолчанию эта операция возвращает число почтовых мест в 100 на страницу.
 
-В сравнении с функциями [финдрумс](https://docs.microsoft.com/graph/api/user-findrooms?view=graph-rest-beta&tabs=http) и [финдрумлистс](https://docs.microsoft.com/graph/api/user-findroomlists?view=graph-rest-beta) эта операция возвращает расширенные полезные данные для комнат и списков помещений. Подробнее [о](../resources/place.md#using-the-places-api) том, как они сравниваются.
+В сравнении с функциями [финдрумс](/graph/api/user-findrooms?view=graph-rest-beta) и [финдрумлистс](/graph/api/user-findroomlists?view=graph-rest-beta) эта операция возвращает расширенные полезные данные для комнат и списков помещений. Подробнее [о](../resources/place.md#using-the-places-api) том, как они сравниваются.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -64,7 +64,7 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 
 >**Note**: для получения комнат в списке помещений необходимо указать список помещений по свойству **EmailAddress** , а не по **идентификатору**.
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает следующие параметры запроса, помогающие настроить ответ:
 - `$filter`
 - `$select`
@@ -82,7 +82,7 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -408,4 +408,3 @@ Content-type: application/json
     "Error: Malformed function params 'id-of-roomlist'"
   ]
 }-->
-

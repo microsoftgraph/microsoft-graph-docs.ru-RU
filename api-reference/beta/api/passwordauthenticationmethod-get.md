@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1cd38f82b3b79002c7fe31f9b6e6858b0801e44c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 81410eeaef66aee702b010f715ee15ac3be70215
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040352"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48401811"
 ---
 # <a name="get-passwordauthenticationmethod"></a>Получение Пассвордаусентикатионмесод
 
@@ -30,7 +30,7 @@ ms.locfileid: "48040352"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
 | Для приложений                            | Не поддерживается. | Не поддерживается. |
 
-Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный администратор
 * Глобальный читатель
@@ -54,9 +54,9 @@ GET /users/{id}/authentication/passwordMethods/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запросов
 
 Не указывайте текст запроса для этого метода.
 
@@ -126,5 +126,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

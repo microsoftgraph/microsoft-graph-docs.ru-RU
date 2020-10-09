@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: resourcePageType
-ms.openlocfilehash: 76e63c5aece7f7254afa282469a1dc8ce664217f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f1bf04c8357fbd57876b460848c549b3edd6f1f7
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026238"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48400746"
 ---
 # <a name="reviewset-resource-type"></a>Тип ресурса Review
 
@@ -30,12 +30,12 @@ ms.locfileid: "48026238"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|createdBy| [identitySet](https://docs.microsoft.com/graph/api/resources/identityset) | Пользователь, создавший набор проверки. Только для чтения. |
-|createdDateTime|DateTimeOffset| Дата и время создания набора проверки. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
+|createdBy| [identitySet](/graph/api/resources/identityset) | Пользователь, создавший набор проверки. Только для чтения. |
+|createdDateTime|DateTimeOffset| Дата и время создания набора проверки. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
 |displayName|String| Имя набора проверки. Имя уникально с максимальным ограничением в 64 символов. |
 |id|String| Уникальный идентификатор набора проверки. Только для чтения. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
@@ -73,5 +73,3 @@ ms.locfileid: "48026238"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
