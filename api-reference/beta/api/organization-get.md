@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b339431a995f610214317aa98dd914f598a2ec2b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e672cbc82ca2ee39a021a77db6e47fa501ba0cdf
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055880"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404973"
 ---
 # <a name="get-organization"></a>Получение организации
 
@@ -44,7 +44,7 @@ GET /organization
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -149,5 +149,3 @@ Content-length: 411
   ]
 }
 -->
-
-

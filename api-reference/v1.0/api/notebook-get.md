@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: ebfd9c9505601f96735278144cb9bb1059a3bd1a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0f5c7553ef77ee114fab7fdc97ff757010192e04
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020806"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405066"
 ---
 # <a name="get-notebook"></a>Вывод записной книжки
 
@@ -35,7 +35,7 @@ GET /groups/{id}/onenote/notebooks/{id}
 GET /sites/{id}/onenote/notebooks/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `select` `expand` [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) и для настройки отклика.
+Этот метод поддерживает `select` `expand` [параметры запросов OData](/graph/query-parameters) и для настройки отклика.
 
 Допустимые значения `expand` для записных книжек: `sections` и `sectionGroups`.
 
@@ -122,4 +122,3 @@ Content-length: 284
   "suppressions": [
   ]
 }-->
-

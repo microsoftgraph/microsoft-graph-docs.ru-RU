@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f28a745e03b25ae5f4e78a25581c7a3022c9f698
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8f573f958cbc1a5acafa8022b3a90168cdcb5e4e
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092260"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405076"
 ---
 # <a name="list-deleted-items"></a>Перечисление удаленных элементов
 
@@ -40,7 +40,7 @@ ms.locfileid: "48092260"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложения | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ### <a name="for-groups"></a>Для групп:
 
@@ -48,7 +48,7 @@ ms.locfileid: "48092260"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
+|Для приложений | Group.Read.All, Group.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -61,7 +61,7 @@ GET /directory/deletedItems/microsoft.graph.user
 В настоящее время этот API поддерживает получение групп (microsoft.graph.group) и пользователей (microsoft.graph.user) из удаленных элементов. Тип является обязательной частью URI. Вызов GET/директори/делетедитемс без типа не поддерживается.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -145,4 +145,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

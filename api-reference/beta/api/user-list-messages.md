@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: cb9dc81ea7a0f0e4607ac7844a0e1c52aae5f9e4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fb29d5ec769fa67b3d461500d8635de4e1c79c1e
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031895"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405185"
 ---
 # <a name="list-messages"></a>Список сообщений
 
@@ -40,7 +40,7 @@ ms.locfileid: "48031895"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
 |Делегированные (личная учетная запись Майкрософт) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Приложение | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
+|Для приложения | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -69,7 +69,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 Вы можете использовать `$filter` параметр запроса для свойства **ментионспревиев** , чтобы получить такие сообщения, которые упоминают пользователя, выполнившего вход в систему.
 
@@ -421,5 +421,3 @@ Content-length: 2704
   ]
 }
 -->
-
-

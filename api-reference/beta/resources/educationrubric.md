@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 276a16852f546b88806c797dbe5c2501de80f5ed
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 154e153166c45a0eb671ab554d1b8ed337fb9830
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071271"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48406074"
 ---
 # <a name="educationrubric-resource-type"></a>Тип ресурса Едукатионрубрик
 
@@ -20,7 +20,7 @@ ms.locfileid: "48071271"
 
 Rubricа, который можно прикрепить к назначению. Rubric связан с **educationUser** (преподавателем) и подключен к одному или нескольким ресурсам **educationAssignment** . 
 
-Более подробную информацию вы найдете в статье [образование Rubric Overview](https://developer.microsoft.com/graph/docs/concepts/education-rubric-overview) .
+Более подробную информацию вы найдете в статье [образование Rubric Overview](/graph/education-rubric-overview) .
 
 ## <a name="methods"></a>Методы
 
@@ -41,11 +41,11 @@ Rubricа, который можно прикрепить к назначению
 |displayName|String|Имя этого Rubric.|
 |снижения|[едукатионассигнментградетипе](educationassignmentgradetype.md)|Тип ступенчатости этого Rubric — NULL для нулевых точек Rubric или [едукатионассигнментпоинтсградетипе](educationassignmentpointsgradetype.md) для точек Rubric.|
 |lastModifiedBy|[identitySet](identityset.md)|Последний пользователь для изменения ресурса.|
-|lastModifiedDateTime|DateTimeOffset|Момент времени последнего изменения ресурса.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|lastModifiedDateTime|DateTimeOffset|Момент времени последнего изменения ресурса.  Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |тонов|Коллекция [рубриклевел](rubriclevel.md)|Коллекция уровней, составляющих данный Rubric.|
 |являются|Коллекция [рубриккуалити](rubricquality.md)|Коллекция качеств, составляющих этот Rubric.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет
 
@@ -86,5 +86,3 @@ Rubricа, который можно прикрепить к назначению
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

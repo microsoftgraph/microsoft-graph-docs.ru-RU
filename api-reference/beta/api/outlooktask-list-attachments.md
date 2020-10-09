@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 60626ade5e83366520bc3c34dd7002cae36e1180
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0f2b1990af5639e9b3a8e5043106b28d3c022da0
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017437"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404933"
 ---
 # <a name="list-attachments-deprecated"></a>Список вложений (не рекомендуется)
 
@@ -44,7 +44,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -132,5 +132,3 @@ Content-length: 215
   ]
 }
 -->
-
-

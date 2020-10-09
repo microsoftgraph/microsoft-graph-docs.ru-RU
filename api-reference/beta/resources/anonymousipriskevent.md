@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: cloudhandler
-ms.openlocfilehash: e233e1995748f57a5da9eca51bf336b60d5273b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bcbe25270f4752e7660ab4ce0c8b9d7d636c22e6
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004272"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405619"
 ---
 # <a name="anonymousipriskevent-resource-type-deprecated"></a>Тип ресурса Анонимаусиприскевент (не рекомендуется)
 
@@ -21,7 +21,7 @@ ms.locfileid: "48004272"
 >[!CAUTION]
 >API **идентитирискевентс** устарел и не возвращает данные на 10 января 2020. Дополнительные сведения см. [в разделе устаревшее API идентитирискевентс](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
-Событие риска, обнаруженное службой [удостоверений Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/) , в котором выполняется попытка входа учетной записи с IP-адреса, который является анонимным. Полную информацию о событиях риска можно найти в [документации по защите удостоверений Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/).
+Событие риска, обнаруженное службой [удостоверений Azure Active Directory](/azure/active-directory/identity-protection/overview-identity-protection) , в котором выполняется попытка входа учетной записи с IP-адреса, который является анонимным. Полную информацию о событиях риска можно найти в [документации по защите удостоверений Azure AD](/azure/active-directory/identity-protection/overview-identity-protection).
 
 
 ## <a name="methods"></a>Методы
@@ -46,7 +46,7 @@ ms.locfileid: "48004272"
 |userId|строка| Идентификатор пользователя, который подвергается риску|
 |userPrincipalName|string| Имя участника пользователя, который подвергается риску|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|
@@ -95,5 +95,3 @@ ms.locfileid: "48004272"
   "suppressions": []
 }
 -->
-
-

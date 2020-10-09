@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b405b97f6a98452241704cdd74bb2b697a945601
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 47bf9fa5e27de020757f823a24d648f91cc42cc2
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078068"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404702"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>Настройка синхронизации с пользовательскими целевыми атрибутами
 
@@ -20,7 +20,7 @@ ms.locfileid: "48078068"
 
 Вы можете настроить схему синхронизации, включив в нее настраиваемые атрибуты, определенные в целевом каталоге. В этой статье описывается, как настроить подписку на Salesforce, добавив новое поле с именем `officeCode` . Вы настраиваете синхронизацию из Azure Active Directory (Azure AD) с Salesforce, и для каждого пользователя вы заполните `officeCode` поле в Salesforce значением из `extensionAttribute10` поля в Azure AD.
 
-В этой статье предполагается, что вы уже добавили приложение, которое поддерживает синхронизацию с клиентом с помощью [портала Azure](https://portal.azure.com), вы знаете отображаемое имя приложения, и у вас есть маркер авторизации для Microsoft Graph. Сведения о том, как получить маркер авторизации, можно найти [в статье получение маркеров доступа для вызова Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).
+В этой статье предполагается, что вы уже добавили приложение, которое поддерживает синхронизацию с клиентом с помощью [портала Azure](https://portal.azure.com), вы знаете отображаемое имя приложения, и у вас есть маркер авторизации для Microsoft Graph. Сведения о том, как получить маркер авторизации, можно найти [в статье получение маркеров доступа для вызова Microsoft Graph](/graph/auth/).
 
 ## <a name="find-the-service-principal-object-by-display-name"></a>Поиск объекта субъекта службы по отображаемому имени
 
@@ -295,5 +295,3 @@ HTTP/1.1 201 No Content
   "suppressions": [
   ]
 }-->
-
-

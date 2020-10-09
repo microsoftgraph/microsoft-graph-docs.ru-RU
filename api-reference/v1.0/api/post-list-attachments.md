@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 2f35e5121ca1a6d04bfcc6f492b453682003b066
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 807c5ac4d96c3e733187e5e22c9293c4ccf1f806
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020582"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405899"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -34,8 +34,8 @@ ms.locfileid: "48020582"
 GET /groups/{id}/threads/{id}/posts/{id}/attachments
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 В частности, вы можете использовать параметр запроса $expand, чтобы включить все вложенные вложения со всеми остальными свойствами POST. Например:
 
@@ -48,7 +48,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}?$expand
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -128,4 +128,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: f8a30c69b42ce52f6a81450ffa8739d7d87a12f7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9984bb4f2400f9bd2593ebb54283e82bd462f45c
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026966"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404765"
 ---
 # <a name="outlook-extended-properties-overview"></a>Общие сведения о расширенных свойствах Outlook
 
@@ -27,7 +27,7 @@ ms.locfileid: "48026966"
 - [event](../resources/event.md);
 - [calendar](../resources/calendar.md);
 - [contact](../resources/contact.md);
-- [contactFolder](../resources/contactfolder.md).
+- [contactFolder](../resources/contactfolder.md)
 - [Задача Outlook](../resources/outlooktask.md)
 - [Папка задач Outlook](../resources/outlooktaskfolder.md)
 
@@ -39,7 +39,7 @@ ms.locfileid: "48026966"
 
 ## <a name="use-extended-properties-or-open-extensions"></a>Что использовать — расширенные свойства или открытые расширения
 
-В большинстве часто применяемых сценариев у вас должна быть возможность использования открытых расширений (они представлены объектом [openTypeExtension](../resources/opentypeextension.md) и ранее звались расширениями данных Office 365), чтобы хранить пользовательские данные и получать к ним доступ для экземпляров ресурса в почтовом ящике пользователя. Используйте расширенные свойства, только если вам нужно получить доступ к пользовательским данным для свойств MAPI Outlook, которые еще не предоставлены в [метаданных API Microsoft Graph](https://developer.microsoft.com/graph/docs/overview/call_api).
+В большинстве часто применяемых сценариев у вас должна быть возможность использования открытых расширений (они представлены объектом [openTypeExtension](../resources/opentypeextension.md) и ранее звались расширениями данных Office 365), чтобы хранить пользовательские данные и получать к ним доступ для экземпляров ресурса в почтовом ящике пользователя. Используйте расширенные свойства, только если вам нужно получить доступ к пользовательским данным для свойств MAPI Outlook, которые еще не предоставлены в [метаданных API Microsoft Graph](../index.md).
 
 ## <a name="types-of-extended-properties"></a>Типы расширенных свойств
 
@@ -83,7 +83,7 @@ ms.locfileid: "48026966"
 
 Чтобы получить доступ к свойствам, предопределенным с помощью MAPI, клиента или сервера, которые еще не представлены в Microsoft Graph, используйте формат proptag. У этих свойств есть идентификаторы в диапазоне 0x0001-0x7fff. Не пытайтесь определять пользовательское свойство с помощью формата proptag.
 
-Информацию о соответствии расширенных свойств и существующих свойств MAPI, таких как идентификатор свойства или GUID, можно найти в статье \[\][MS-OXPROPS: Основной список свойств для протоколов Exchange Server](https://msdn.microsoft.com/library/cc433490%28v=exchg.80%29.aspx).
+Информацию о соответствии расширенных свойств и существующих свойств MAPI, таких как идентификатор свойства или GUID, можно найти в статье \[\][MS-OXPROPS: Основной список свойств для протоколов Exchange Server](/openspecs/exchange_server_protocols/ms-oxprops/f6ab1613-aefe-447d-a49c-18217230b148).
 
 **Примечание.** После выбора формата для свойства **id** получайте доступ к этому расширенному свойству, используя только этот формат.
 
@@ -98,6 +98,3 @@ ms.locfileid: "48026966"
 
 - [Создание расширенного свойства в новом или существующем экземпляре ресурса](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md)
 - [Получение экземпляра ресурса с расширенным свойством с помощью параметра `$expand`](../api/multivaluelegacyextendedproperty-get.md)
-
-
-

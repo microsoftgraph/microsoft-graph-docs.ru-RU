@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 7460622ba14a9b31fc439123795883a6d7d431b1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 44630c526562810b104e64952eab92c872a9ab78
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966408"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48406123"
 ---
 # <a name="call-answer"></a>вызов: ответ
 
@@ -49,7 +49,7 @@ POST /communications/calls/{id}/answer
 | Параметр        | Тип                                     |Описание                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |Позволяет Боты предоставить определенный URI обратного вызова для текущего вызова, чтобы получать уведомления в дальнейшем. Если это свойство не задано, вместо него будет использоваться глобальный URI обратного вызова Bot. Это должно быть `https` .    |
-|акцептедмодалитиес|Коллекция String                         |Список принимаемых модальности. Возможные значения: `audio`, `video`, `videoBasedScreenSharing`. Необходимо для ответа на вызов. |
+|акцептедмодалитиес|Коллекция объектов string                         |Список принимаемых модальности. Возможные значения: `audio`, `video`, `videoBasedScreenSharing`. Необходимо для ответа на вызов. |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) или [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |Настройка мультимедиа. Потребоваться                                                                                                            |
 
 ## <a name="response"></a>Отклик
@@ -438,7 +438,7 @@ Content-Type: application/json
 
 ### <a name="example-3-answer-a-policy-based-recording-call"></a>Пример 3: ответ на вызов записи на основе политики
 
-В [сценарии записи на основе политик](https://docs.microsoft.com/microsoftteams/teams-recording-policy), прежде чем участник политики присоединяется к вызову, на Bot, связанном с политикой, будет отправлено уведомление о входящем звонке.
+В [сценарии записи на основе политик](/microsoftteams/teams-recording-policy), прежде чем участник политики присоединяется к вызову, на Bot, связанном с политикой, будет отправлено уведомление о входящем звонке.
 Сведения о присоединении можно найти в свойстве **ботдата** . С помощью Bot можно выбрать ответ на вызов и соответствующим образом [Обновить состояние записи](call-updaterecordingstatus.md) .
 
 Ниже приведен пример уведомления о входящем вызове, которое будет получено в этом случае.
@@ -555,4 +555,3 @@ Content-Type: application/json
   ]
 }
 -->
-

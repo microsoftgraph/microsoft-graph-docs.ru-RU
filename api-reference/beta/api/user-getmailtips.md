@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 724b0b418eb9607369c6cea11149febe3baff4ad
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e22e6ab85ab90db49029850eca6755e17eeb99c8
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017131"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405211"
 ---
 # <a name="user-getmailtips"></a>Пользователь: подсказки
 
@@ -38,7 +38,7 @@ POST /me/getMailTips
 POST /users/{id|userPrincipalName}/getMailTips
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение|
 |:-----------  |:------|
@@ -50,7 +50,7 @@ POST /users/{id|userPrincipalName}/getMailTips
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|EmailAddresses|Коллекция String|Коллекция SMTP-адресов получателей, для которых требуется получить подсказки.|
+|EmailAddresses|Коллекция объектов string|Коллекция SMTP-адресов получателей, для которых требуется получить подсказки.|
 |маилтипсоптионс|String|Перечисление флагов, представляющих запрашиваемые подсказки. Возможные значения: `automaticReplies` , `customMailTip` , `deliveryRestriction` , `externalMemberCount` , `mailboxFullStatus` , `maxMessageSize` , `moderationStatus` , `recipientScope` , `recipientSuggestions` и `totalMemberCount` .|
 
 ## <a name="response"></a>Отклик
@@ -158,5 +158,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

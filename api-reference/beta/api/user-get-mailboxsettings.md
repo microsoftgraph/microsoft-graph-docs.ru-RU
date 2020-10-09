@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 608004dfb3eee7b2bd9251231832601d853d28fa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 38c40fde000cc690a3fffc3bcc795d2039579282
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017173"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405276"
 ---
 # <a name="get-user-mailbox-settings"></a>Получение параметров почтового ящика пользователя
 
@@ -31,7 +31,7 @@ ms.locfileid: "48017173"
 - [рабочее время](../resources/workinghours.md).
 - [Назначение пользователя](../resources/userpurpose.md)
 
-С помощью Outlook в Интернете пользователи могут настраивать предпочитаемый формат даты и времени. Пользователи могут выбрать один из поддерживаемых [кратких форматов даты](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) или [кратких форматов времени](https://docs.microsoft.com/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime). Эта операция `GET` возвращает формат, выбранный пользователем.
+С помощью Outlook в Интернете пользователи могут настраивать предпочитаемый формат даты и времени. Пользователи могут выбрать один из поддерживаемых [кратких форматов даты](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortDate) или [кратких форматов времени](/dotnet/standard/base-types/standard-date-and-time-format-strings#ShortTime). Эта операция `GET` возвращает формат, выбранный пользователем.
 
 Пользователи могут настроить нужный часовой пояс в любом клиенте Outlook, выбрав из [поддерживаемых часовых поясов](outlookuser-supportedtimezones.md), настроенных администратором для почтового сервера. Администратор может настроить часовые пояса в формате часовых поясов Windows или [Администрации адресного пространства Интернета](https://www.iana.org/time-zones) (IANA, другое название — часовой пояс Олсона). Формат Windows используется по умолчанию. 
 
@@ -82,7 +82,7 @@ GET /me/mailboxSettings/userPurpose
 GET /users/{id|userPrincipalName}/mailboxSettings/userPurpose
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает некоторые [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+Этот метод поддерживает некоторые [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
@@ -361,5 +361,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

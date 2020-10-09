@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: resourcePageType
 ms.prod: extensions
-ms.openlocfilehash: fb8e0a51f840d402b14ea98dd5ffd2d66e692249
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dae7b69ab48ed0b05eda03aa032c9d8b2cfa44d9
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998525"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405563"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Тип ресурсов openTypeExtension (открытые расширения)
 
@@ -42,7 +42,7 @@ ms.locfileid: "47998525"
 
 ## <a name="outlook-specific-considerations"></a>Специальные рекомендации для Outlook
 
-Каждое открытое расширение, присутствующее в ресурсе Outlook (событии, сообщении или личном контакте), хранится в [именованном свойстве MAPI](https://msdn.microsoft.com/library/cc765864(v=office.15).aspx). Создавая открытые расширения для Outlook, учитывайте, что именованные свойства MAPI в почтовом ящике пользователя — это ограниченный ресурс. Когда будет достигнута квота именованных свойств пользователя, для этого пользователя невозможно будет создавать другие именованные свойства. Это может привести к неожиданным действиям пользователей, для работы которых необходимы именованные свойства.
+Каждое открытое расширение, присутствующее в ресурсе Outlook (событии, сообщении или личном контакте), хранится в [именованном свойстве MAPI](/office/client-developer/outlook/mapi/mapi-named-properties). Создавая открытые расширения для Outlook, учитывайте, что именованные свойства MAPI в почтовом ящике пользователя — это ограниченный ресурс. Когда будет достигнута квота именованных свойств пользователя, для этого пользователя невозможно будет создавать другие именованные свойства. Это может привести к неожиданным действиям пользователей, для работы которых необходимы именованные свойства.
 
 Руководствуйтесь приведенными ниже рекомендациями при создании открытых расширений в ресурсах Outlook.
 
@@ -51,7 +51,7 @@ ms.locfileid: "47998525"
 
 ### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>Использование открытых расширений (для ресурсов Outlook) или расширенных свойств
 
-Открытые расширения — это рекомендуемое решение для большинства сценариев, в которых используется хранение пользовательских данных и доступ к ним. Если вам нужно получить доступ к пользовательским данным для свойств MAPI Outlook, которые еще не предоставлены при помощи [метаданных API Microsoft Graph](https://developer.microsoft.com/graph/docs/overview/call_api), используйте [расширенные свойства и соответствующий REST API](extended-properties-overview.md). Вы можете проверить, какие свойства предоставляются с помощью метаданных, на странице [https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata).
+Открытые расширения — это рекомендуемое решение для большинства сценариев, в которых используется хранение пользовательских данных и доступ к ним. Если вам нужно получить доступ к пользовательским данным для свойств MAPI Outlook, которые еще не предоставлены при помощи [метаданных API Microsoft Graph](../index.md), используйте [расширенные свойства и соответствующий REST API](extended-properties-overview.md). Вы можете проверить, какие свойства предоставляются с помощью метаданных, на странице [https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata).
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -104,5 +104,3 @@ ms.locfileid: "47998525"
   "suppressions": []
 }
 -->
-
-

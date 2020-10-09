@@ -5,43 +5,43 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: resourcePageType
-ms.openlocfilehash: 359a74cbf48e0db2b4c3e480b73dfed928232288
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8fac6cfa8de0533c936c9d8d03a6173f06d0886f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089723"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404793"
 ---
 # <a name="ediscoverycase-resource-type"></a>Тип ресурса Едисковерикасе
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-случаи обнаружения электронных данных — это контейнеры, содержащие custodians, удержания, коллекции, обзоры и экспорты.  Узнайте больше о обращениях и [Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20).
+случаи обнаружения электронных данных — это контейнеры, содержащие custodians, удержания, коллекции, обзоры и экспорты.  Узнайте больше о обращениях и [Advanced eDiscovery](/microsoft-365/compliance/overview-ediscovery-20).
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Перечисление](../api/ediscoverycase-list.md) | Коллекция [едисковерикасе](ediscoverycase.md) | Получение списка дел eDiscovery.|
-| [Получение](../api/ediscoverycase-get.md) | [ediscoveryCase](ediscoverycase.md) | Считывание свойств дел eDiscovery. |
-| [Создание](../api/ediscoverycase-post.md) | [ediscoveryCase](ediscoverycase.md) | Создание нового **едисковерикасе** путем публикации в коллекции вариантов. |
-| [Обновление](../api/ediscoverycase-update.md) | [ediscoveryCase](ediscoverycase.md) | Обновление случая обнаружения электронных данных. |
+| [Список](../api/ediscoverycase-list.md) | Коллекция [едисковерикасе](ediscoverycase.md) | Получение списка дел eDiscovery.|
+| [получение](../api/ediscoverycase-get.md); | [ediscoveryCase](ediscoverycase.md) | Считывание свойств дел eDiscovery. |
+| [создание](../api/ediscoverycase-post.md); | [ediscoveryCase](ediscoverycase.md) | Создание нового **едисковерикасе** путем публикации в коллекции вариантов. |
+| [обновление](../api/ediscoverycase-update.md). | [ediscoveryCase](ediscoverycase.md) | Обновление случая обнаружения электронных данных. |
 | [удаление](../api/ediscoverycase-delete.md); | Нет | Удаление случая обнаружения электронных данных. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|клоседби|[identitySet](https://docs.microsoft.com/graph/api/resources/identityset)|Пользователь, который закрыл обращение.|
-|closedDateTime|DateTimeOffset|Дата и время закрытия обращения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|createdBy|[identitySet](https://docs.microsoft.com/graph/api/resources/identityset)|Пользователь, создавший обращение.|
-|createdDateTime|DateTimeOffset|Дата и время создания объекта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|description|Строка|Описание варианта.|
-|displayName|Строка|Имя дела.|
+|клоседби|[identitySet](/graph/api/resources/identityset)|Пользователь, который закрыл обращение.|
+|closedDateTime|DateTimeOffset|Дата и время закрытия обращения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|createdBy|[identitySet](/graph/api/resources/identityset)|Пользователь, создавший обращение.|
+|createdDateTime|DateTimeOffset|Дата и время создания объекта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|description|String|Описание варианта.|
+|displayName|String|Имя дела.|
 |externalId|String|Номер внешнего обращения для ссылки на клиента.|
-|id|Строка| Идентификатор для случая обнаружения электронных данных. Только для чтения. |
-|lastModifiedBy|[identitySet](https://docs.microsoft.com/graph/api/resources/identityset)|Последний пользователь, изменившего объект.|
-|lastModifiedDateTime|DateTimeOffset| Дата и время последнего изменения обращения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|id|String| Идентификатор для случая обнаружения электронных данных. Только для чтения. |
+|lastModifiedBy|[identitySet](/graph/api/resources/identityset)|Последний пользователь, изменившего объект.|
+|lastModifiedDateTime|DateTimeOffset| Дата и время последнего изменения обращения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |status|String| Состояние обращения. Возможные значения: `unknown` , `active` , `pendingDelete` , `closing` , `closed` и `closedWithError` . Дополнительные сведения см. в приведенной ниже таблице.|
 
 ### <a name="casestatus-values"></a>значения Касестатус
@@ -99,5 +99,3 @@ ms.locfileid: "48089723"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

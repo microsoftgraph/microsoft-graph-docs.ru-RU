@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b343058d50e71129ce7dd44c4a9e94844a2fa194
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: a7ef677f5eecf80b3e0f8d55839c31abec60003f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223747"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404660"
 ---
 # <a name="list-administrativeunits"></a>Список Административеунитс
 
@@ -25,7 +25,7 @@ ms.locfileid: "48223747"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit. Read. ALL, Directory. Read. ALL, AdministrativeUnit. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | AdministrativeUnit. Read. ALL, Directory. Read. ALL, AdministrativeUnit. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Для приложений | AdministrativeUnit. Read. ALL, Directory. Read. ALL, AdministrativeUnit. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +33,7 @@ ms.locfileid: "48223747"
 GET /directory/administrativeUnits
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|

@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d14d477d3f2a7be94a676aafd17eee6ebf362925
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 06d72e1609d80f94d58829805bba6fc208fa9c48
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089030"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404807"
 ---
 # <a name="list-outlook-categories"></a>Перечисление категорий Outlook
 
@@ -35,7 +35,7 @@ GET /me/outlook/masterCategories
 GET /users/{id|userPrincipalName}/outlook/masterCategories
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -139,4 +139,3 @@ Content-length: 727
   "suppressions": [
   ]
 }-->
-

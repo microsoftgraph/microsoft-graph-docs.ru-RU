@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: cloudhandler
-ms.openlocfilehash: c9c1efda0cb4c11899d5884da05a91f07e5a000d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 05c887fade095da07b12c1b82c9efdf71259234f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029232"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404681"
 ---
 # <a name="leakedcredentialsriskevent-resource-type-deprecated"></a>Тип ресурса Леакедкредентиалсрискевент (не рекомендуется)
 
@@ -21,7 +21,7 @@ ms.locfileid: "48029232"
 >[!CAUTION]
 >API **идентитирискевентс** устарел и не возвращает данные на 10 января 2020. Дополнительные сведения см. [в разделе устаревшее API идентитирискевентс](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
-Событие риска, обнаруженное службой [удостоверений Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/) , в котором были обнаружены учетные данные учетной записи в подстановке. Полную информацию о событиях риска можно найти в [документации по защите удостоверений Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/).
+Событие риска, обнаруженное службой [удостоверений Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/) , в котором были обнаружены учетные данные учетной записи в подстановке. Полную информацию о событиях риска можно найти в [документации по защите удостоверений Azure AD](/azure/active-directory/identity-protection/overview-identity-protection).
 
 
 ## <a name="methods"></a>Методы
@@ -44,7 +44,7 @@ ms.locfileid: "48029232"
 |userId|строка| Идентификатор пользователя, который подвергается риску|
 |userPrincipalName|string| Имя участника пользователя, который подвергается риску|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|
@@ -91,5 +91,3 @@ ms.locfileid: "48029232"
   "suppressions": []
 }
 -->
-
-

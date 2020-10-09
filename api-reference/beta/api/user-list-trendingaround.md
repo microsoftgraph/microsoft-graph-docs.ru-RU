@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d8d5b9806532750ff352634bde845d00fb920790
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ede5f41f57c96aa490ae85a287568d6a5074556d
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085278"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405097"
 ---
 # <a name="list-trendingaround"></a>Список trendingAround
 
@@ -39,7 +39,7 @@ GET /drive/root/createdByUser/trendingAround
 GET /drive/root/lastModifiedByUser/trendingAround
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок         | Значение                      |
@@ -74,5 +74,3 @@ Content-length: 226
   "webUrl": "webUrl-value",
 }
 ```
-
-

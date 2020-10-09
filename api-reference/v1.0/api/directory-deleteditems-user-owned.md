@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: faf62e2926edc8e2931bdcd9405e0dffd627c678
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f639bb8b0c7fcf04aff072cc3295255a310fbfda
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026084"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404541"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>Список удаленных элементов, принадлежащих пользователю
 
@@ -24,7 +24,7 @@ ms.locfileid: "48026084"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 | --- | --- |
@@ -44,7 +44,7 @@ POST /directory/deletedItems/getUserOwnedObjects
 | ------------- | ------------------------- |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 ```json
 {
@@ -123,6 +123,3 @@ Content-length: 1249
         ]
  }
 ```
-
-
-

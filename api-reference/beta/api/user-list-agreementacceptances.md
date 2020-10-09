@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d27b78dff3902b86c62239df6a996f682a86fa11
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4e517887622a17e8b62caabc9ad932cefe2e7d88
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017089"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405220"
 ---
 # <a name="list-agreementacceptances"></a>Перечисление agreementAcceptances
 
@@ -35,15 +35,15 @@ GET /users/{id | userPrincipalName}/agreementAcceptances
 ```
 <!--
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 -->
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запросов
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [agreementAcceptance](../resources/agreementacceptance.md) в тексте отклика.
@@ -113,5 +113,3 @@ Content-length: 303
   ]
 }
 -->
-
-

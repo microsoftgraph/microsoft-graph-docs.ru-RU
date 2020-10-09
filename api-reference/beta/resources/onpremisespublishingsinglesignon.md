@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c3c2accea8252e8aae9c82bc93ebf92055b13481
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 720690a5e62e39665507b80d3c126b162862b470
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998623"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404926"
 ---
 # <a name="onpremisespublishingsinglesignon-resource-type"></a>Тип ресурса Онпремисеспублишингсинглесигнон
 
@@ -18,7 +18,7 @@ ms.locfileid: "47998623"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет параметры единого входа для ресурса [онпремисеспублишинг](onpremisespublishing.md) при публикации локального приложения с помощью прокси приложения Azure AD. Этот ресурс используется для настройки встроенной проверки подлинности Windows и проверки подлинности на основе заголовков в режиме единого входа. Дополнительные сведения см. в статье [ограниченное делегирование Kerberos для единого входа в приложения с помощью прокси-сервера приложения](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd).
+Представляет параметры единого входа для ресурса [онпремисеспублишинг](onpremisespublishing.md) при публикации локального приложения с помощью прокси приложения Azure AD. Этот ресурс используется для настройки встроенной проверки подлинности Windows и проверки подлинности на основе заголовков в режиме единого входа. Дополнительные сведения см. в статье [ограниченное делегирование Kerberos для единого входа в приложения с помощью прокси-сервера приложения](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd).
 
 >[!NOTE]
 >Не используйте это свойство для настройки SAML или единого входа на основе пароля. Если настраивается единый вход SAML, необходимо задать параметр [servicePrincipal](serviceprincipal.md).
@@ -60,4 +60,3 @@ ms.locfileid: "47998623"
   "section": "documentation",
   "tocPath": ""
 }-->
-

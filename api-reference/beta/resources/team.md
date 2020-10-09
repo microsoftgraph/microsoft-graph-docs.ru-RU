@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5f3074b34f59cef66568bf685c225fb551ba2a1a
-ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
+ms.openlocfilehash: 48cc5a44ffca20b435d9095d7f25fd5bfa65b4e8
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48364348"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405542"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -30,7 +30,7 @@ ms.locfileid: "48364348"
 |[Создание команды из группы](../api/team-put-teams.md) | [team](team.md) | Создание команды или добавление команды в существующую группу.|
 |[Получение команды](../api/team-get.md) | [team](team.md) | Получение свойств и связей указанной команды.|
 |[Обновление команды](../api/team-update.md) | [team](team.md) |Обновление свойств указанной команды. |
-|[Удаление команды](/graph/api/group-delete?view=graph-rest-1.0&preserve-view=true) | Нет |Удаление команды и ее связанной группы. |
+|[Удаление команды](../api/group-delete.md) | Нет |Удаление команды и ее связанной группы. |
 |[Перечисление участников](../api/team-list-members.md)|Коллекция [conversationMember](../resources/conversationmember.md)|Получение списка conversationMembers из свойства навигации members.|
 |[Добавление участников](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Добавление нового участника.|
 |[Удаление участников](../api/team-delete-members.md)|Нет|Удаление объекта [conversationMember](../resources/conversationmember.md).|
@@ -52,7 +52,7 @@ ms.locfileid: "48364348"
 |visibility|[teamVisibilityType](teamvisibilitytype.md)| Видимость группы и команды. Значение по умолчанию: Public. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Параметры для настройки использования Giphy, мемов и наклеек в команде.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Параметры для настройки того, могут ли гости создавать, изменять или удалять каналы в команде.|
-|internalId | string | Уникальный идентификатор для команды, используемый в нескольких местах, например в журнале аудита или [API действий управления Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). |
+|internalId | string | Уникальный идентификатор для команды, используемый в нескольких местах, например в журнале аудита или [API действий управления Office 365](/office/office-365-management-api/office-365-management-activity-api-reference). |
 |isArchived|Boolean|Находится ли команда в режиме только для чтения. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Параметры для настройки того, могут ли участники выполнять определенные действия, например создавать каналы и добавлять ботов в команде.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Параметры для настройки обмена сообщениями и упоминаний в команде.|
@@ -84,7 +84,7 @@ ms.locfileid: "48364348"
 |photo;|[profilePhoto](../resources/profilephoto.md)|Фотография команды|
 |[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| Общий канал для команды. | 
 |schedule|[schedule](schedule.md)| Расписание смен для команды.|
-|шаблон|[teamsTemplate](teamstemplate.md)| Шаблон, из которого создана команда. См. [доступные шаблоны](https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-templates). |
+|шаблон|[teamsTemplate](teamstemplate.md)| Шаблон, из которого создана команда. См. [доступные шаблоны](/MicrosoftTeams/get-started-with-teams-templates). |
 
 ## <a name="json-representation"></a>Представление в формате JSON
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1876ce76ffde8750a268ae1fed769a7b8ab7658e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 37a87491d1094192b6133fac5c58e9f34d3932b8
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010061"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404611"
 ---
 # <a name="list-contracts"></a>Список контрактов
 
@@ -38,7 +38,7 @@ GET /contracts
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа. 
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа. 
 
 > Фильтрация поддерживается для customerId, Дефаултдомаиннаме и displayName.
 
@@ -48,7 +48,7 @@ GET /contracts
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -124,4 +124,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

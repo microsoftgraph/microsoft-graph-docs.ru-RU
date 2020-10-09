@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c7c105dbf895d41b2e986a8fa723e0df314dd90d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fa327935c4e3b45c28a0f7ae01ababeffe37d61d
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057962"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405227"
 ---
 # <a name="unifiedrolepermission-resource-type"></a>Тип ресурса Унифиедролепермиссион
 
@@ -70,7 +70,7 @@ ms.locfileid: "48057962"
 
 ```
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -91,8 +91,8 @@ ms.locfileid: "48057962"
 ```
 ## <a name="see-also"></a>См. также
 
-- [Разрешения роли администратора в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) — сведения о разрешениях для встроенных ролей каталогов.
-- [Подтипы регистрации приложений и разрешения в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/roles-custom-available-permissions) — сведения о разрешениях, доступных для пользовательских ролей каталога. 
+- [Разрешения роли администратора в Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) — сведения о разрешениях для встроенных ролей каталогов.
+- [Подтипы регистрации приложений и разрешения в Azure Active Directory](/azure/active-directory/users-groups-roles/roles-custom-available-permissions) — сведения о разрешениях, доступных для пользовательских ролей каталога. 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -103,5 +103,3 @@ ms.locfileid: "48057962"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: cloudhandler
-ms.openlocfilehash: 735108451ac9de71a7d05d4146f490ad94df0e82
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 461f20233e92edca48b9dd51fa417b33ab9f386c
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073644"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404674"
 ---
 # <a name="locatedriskevent-resource-type"></a>Тип ресурса Локатедрискевент
 
@@ -18,12 +18,12 @@ ms.locfileid: "48073644"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Событие риска, обнаруженное [защитой удостоверений Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/) на основе данных о расположении. К найденным относятся следующие типы событий риска.
+Событие риска, обнаруженное [защитой удостоверений Azure Active Directory](/azure/active-directory/identity-protection/overview-identity-protection) на основе данных о расположении. К найденным относятся следующие типы событий риска.
 * [входы с анонимными IP-адресами](anonymousipriskevent.md)
 * [входы с зараженных вредоносными программами устройств](malwareriskevent.md)
 * [невозможность перемещаться к необычным расположениям](impossibletravelriskevent.md)
 * [входы из подозрительных IP-адресов](suspiciousipriskevent.md)
-* [входы из незнакомых расположений](unfamiliarlocationriskevent.md) Полную информацию о событиях риска можно найти в [документации по защите удостоверений Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection-risk-events-types/).
+* [входы из незнакомых расположений](unfamiliarlocationriskevent.md) Полную информацию о событиях риска можно найти в [документации по защите удостоверений Azure AD](/azure/active-directory/identity-protection/overview-identity-protection).
 
 
 ## <a name="methods"></a>Методы
@@ -48,7 +48,7 @@ ms.locfileid: "48073644"
 |userId|строка| Идентификатор пользователя, который подвергается риску|
 |userPrincipalName|string| Имя участника пользователя, который подвергается риску|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|
@@ -99,5 +99,3 @@ ms.locfileid: "48073644"
   "suppressions": []
 }
 -->
-
-

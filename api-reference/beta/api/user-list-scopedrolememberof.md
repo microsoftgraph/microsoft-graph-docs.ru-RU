@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: c254a9213204e63fe028de299230376de8c31461
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cc5d67bb83102588ec1508912b36456c9f4da1c9
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47974091"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405136"
 ---
 # <a name="list-scopedadministratorof"></a>Список Скопедадминистратороф
 
@@ -37,14 +37,14 @@ GET /users/{id}/scopedRoleMemberOf
 
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -118,5 +118,3 @@ Content-length: 307
   ]
 }
 -->
-
-

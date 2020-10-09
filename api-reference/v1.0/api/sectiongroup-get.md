@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 163cc02a43c1fb7af2ce22e9813696a48f1878ce
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 98251949da409cca9e314e102bfe69b98c8a8d66
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088897"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405764"
 ---
 # <a name="get-sectiongroup"></a>Получение sectionGroup
 
@@ -35,7 +35,7 @@ GET /groups/{id}/onenote/sectionGroups/{id}
 GET /sites/{id}/onenote/sectionGroups/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 Запрос по умолчанию разворачивает `parentNotebook` и выбирает `id` `name` свойства, и `self` . Допустимые `expand` значения для групп разделов — `parentNotebook` и `parentSectionGroup` .
 
@@ -123,4 +123,3 @@ Content-length: 305
   "suppressions": [
   ]
 }-->
-

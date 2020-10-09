@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f97d4d86b2cd66bc62e23dc1f99622ed7af2084c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f375ce450f05320388423f2f0fc7e5eb35af577f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067085"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405262"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Общие сведения об API синхронизации Azure AD
 
@@ -23,11 +23,11 @@ ms.locfileid: "48067085"
 - Рабочий день в Azure AD
 - Azure AD to Cloud Applications, например Dropbox, Salesforce, ServiceNow и т. д. 
 
-С помощью API синхронизации в Microsoft Graph можно управлять синхронизацией удостоверений программным способом, в том числе:
+Можно воспользоваться интерфейсами API синхронизации в Microsoft Graph для управления синхронизацией удостоверений программными средствами, в том числе для:
 
-- Создание, запуск и остановка заданий синхронизации
-- Внесение изменений в схему синхронизации для заданий
-- Проверка текущего состояния синхронизации
+- создания, запуска и остановки заданий синхронизации
+- изменения схемы синхронизации для заданий
+- проверки текущего состояния синхронизации
 
 Дополнительные сведения о синхронизации в Azure AD приведены в следующих статьях:
 
@@ -66,7 +66,7 @@ ms.locfileid: "48067085"
 
 ### <a name="authorization"></a>Авторизация
 
-API синхронизации Azure AD использует OAuth 2,0 для проверки подлинности. Перед выполнением запросов к API необходимо получить маркер доступа. Дополнительные сведения [можно найти в статье получение маркеров доступа для вызова Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). Для доступа к ресурсам синхронизации приложению требуются разрешения Directory. ReadWrite. ALL. Для получения дополнительных сведений ознакомьтесь с [разрешениями для каталогов](/graph/permissions-reference#directory-permissions).
+API синхронизации Azure AD использует OAuth 2,0 для проверки подлинности. Перед выполнением запросов к API необходимо получить маркер доступа. Дополнительные сведения [можно найти в статье получение маркеров доступа для вызова Microsoft Graph](/graph/auth/). Для доступа к ресурсам синхронизации приложению требуются разрешения Directory. ReadWrite. ALL. Для получения дополнительных сведений ознакомьтесь с [разрешениями для каталогов](/graph/permissions-reference#directory-permissions).
 
 ### <a name="find-the-service-principal-object-by-display-name"></a>Поиск объекта субъекта службы по отображаемому имени
 
@@ -201,12 +201,7 @@ HTTP/1.1 200 OK
     "synchronizationRules": []
 }
 ```
-## <a name="see-also"></a>См. также
+## <a name="see-also"></a>Дополнительные ресурсы
 
 * [Настройка синхронизации с атрибутами расширения каталога](../resources/synchronization-configure-with-directory-extension-attributes.md)
 * [Настройка синхронизации с пользовательскими целевыми атрибутами](../resources/synchronization-configure-with-custom-target-attributes.md)
-
-
-
-
-

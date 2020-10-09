@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 103b882a20d0c3e1b07648058b68ff0e561af726
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e03373e4d976c7000383a77e5b24a335860a502e
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004713"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48406207"
 ---
 # <a name="list-sectiongroups"></a>Список sectionGroups
 
@@ -37,7 +37,7 @@ GET /groups/{id}/onenote/sectionGroups
 GET /sites/{id}/onenote/sectionGroups
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 По умолчанию используется порядок сортировки `name asc`.
 
@@ -131,5 +131,3 @@ Content-length: 378
   ]
 }
 -->
-
-

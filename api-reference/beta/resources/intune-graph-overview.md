@@ -4,12 +4,12 @@ description: Перечисление API Microsoft Graph для коечных 
 author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: e1c93c38c1667d1681e280b69ff106060900b46c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b88dc6191f3082df800b3f93e2c4fd22531258e2
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031118"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404699"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Работа с Intune в Microsoft Graph  
 
@@ -19,7 +19,7 @@ ms.locfileid: "48031118"
 
 API Microsoft Graph для Intune обеспечивает программный доступ к сведениям Intune для клиента. API выполняет операции Intune, аналогичные доступным с помощью **портала Azure**.  
 
-В сценариях управления мобильными устройствами (MDM) API Microsoft Graph для Intune поддерживает автономные развертывания. [Гибридные развертывания](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) Intune не поддерживаются. 
+В сценариях управления мобильными устройствами (MDM) API Microsoft Graph для Intune поддерживает автономные развертывания. [Гибридные развертывания](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) Intune не поддерживаются. 
 
 ## <a name="using-the-microsoft-graph-api-for-intune"></a>Использование API Microsoft Graph для Intune
 
@@ -42,16 +42,12 @@ Intune предоставляет данные для Microsoft Graph анало
 
 ## <a name="using-microsoft-graph-permissions"></a>Использование разрешений Microsoft Graph
 
-Microsoft Graph позволяет управлять доступом к ресурсам, используя разрешения. Разработчикам необходимо указать разрешения, необходимые для доступа к ресурсам Intune. Как правило, разрешения указываются на портале Azure Active Directory. Дополнительные сведения см. в статье [Справочник по разрешениям Microsoft Graph](https://docs.microsoft.com/graph/permissions-reference).
+Microsoft Graph позволяет управлять доступом к ресурсам, используя разрешения. Разработчикам необходимо указать разрешения, необходимые для доступа к ресурсам Intune. Как правило, разрешения указываются на портале Azure Active Directory. Дополнительные сведения см. в статье [Справочник по разрешениям Microsoft Graph](/graph/permissions-reference).
 
 ## <a name="whats-new"></a>Что нового
 Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Узнайте, [как использовать Azure AD](https://docs.microsoft.com/intune/intune-graph-apis) для доступа к API Microsoft Graph для Intune.  
+- Узнайте, [как использовать Azure AD](/intune/intune-graph-apis) для доступа к API Microsoft Graph для Intune.  
 - Изучите [примеры PowerShell для Intune](https://github.com/microsoftgraph/powershell-intune-samples), демонстрирующие способ использования API Microsoft Graph для Intune в рабочем контексте.
-
-
-
-

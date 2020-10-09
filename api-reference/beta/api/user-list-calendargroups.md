@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6da9158bec099a1bcd0ba9146b3c9e8fe325eaaf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2c1be83b7cceb1d2b965dc3e62d1264b037c283c
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017075"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405218"
 ---
 # <a name="list-calendargroups"></a>Список объектов calendarGroup
 
@@ -35,7 +35,7 @@ GET /me/calendarGroups
 GET /users/{id | userPrincipalName}/calendarGroups
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
@@ -112,5 +112,3 @@ Content-length: 155
   ]
 }
 -->
-
-

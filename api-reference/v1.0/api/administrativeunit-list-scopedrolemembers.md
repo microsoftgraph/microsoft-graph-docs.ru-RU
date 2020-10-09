@@ -5,12 +5,12 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 84c295b021e3491355694a65c5e35a3c2fda0d0c
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 6b66134f3ce477e17385d8f163bd3e37278498e6
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223610"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405514"
 ---
 # <a name="list-scopedrolemembers"></a>Список Scopedadministrators
 
@@ -25,7 +25,7 @@ ms.locfileid: "48223610"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL |
+|Для приложений | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -33,7 +33,7 @@ ms.locfileid: "48223610"
 GET /directory/administrativeUnits/{id}/scopedRoleMembers
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|

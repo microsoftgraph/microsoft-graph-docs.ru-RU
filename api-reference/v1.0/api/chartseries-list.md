@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 552953488ce2ba1519b06b46c009286a20ad3b30
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 120895df9536b20af746ec6ecff64097d20c0d79
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973465"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48406093"
 ---
 # <a name="list-chartseriescollection"></a>Список ChartSeriesCollection
 
@@ -32,7 +32,7 @@ ms.locfileid: "47973465"
 GET /workbook/worksheets/{id|name}/charts/{name}/series
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -40,7 +40,7 @@ GET /workbook/worksheets/{id|name}/charts/{name}/series
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Основной текст запросов
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -109,4 +109,3 @@ Content-length: 59
   "suppressions": [
   ]
 }-->
-

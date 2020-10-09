@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6030679dceb11e9424cdf7e88859ec27b346fb4a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac9937c4d729c6bc56243f83cd8dd0427a514603
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083864"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405493"
 ---
 # <a name="list-domainnamereferences"></a>Список Домаиннамереференцес
 
@@ -27,7 +27,7 @@ ms.locfileid: "48083864"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Domain.ReadWrite.All |
+|Для приложений | Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -41,7 +41,7 @@ GET /domains/{id}/domainNameReferences
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -128,4 +128,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

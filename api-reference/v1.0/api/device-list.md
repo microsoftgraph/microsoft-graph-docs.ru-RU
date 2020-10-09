@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 432d7e263faab60a95084ca3d7aef6cb42f5884d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c2642062d481fb9072db1f514e15612aace0458d
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973409"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404842"
 ---
 # <a name="list-devices"></a>Список устройств
 
@@ -34,13 +34,13 @@ ms.locfileid: "47973409"
 GET /devices
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -114,4 +114,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

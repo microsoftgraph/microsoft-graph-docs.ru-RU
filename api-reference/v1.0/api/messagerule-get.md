@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3ff8493307f7956033e4823906d66da944804657
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7193c1bff6a9ed2b96255c0cf3764d4b9557bf57
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019056"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404828"
 ---
 # <a name="get-rule"></a>Получение правила
 
@@ -36,7 +36,7 @@ GET /me/mailFolders/inbox/messageRules/{id}
 GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -44,7 +44,7 @@ GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код ответа `200 OK` и объект [messageRule](../resources/messagerule.md) в тексте ответа.
@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZ
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. По умолчанию свойства даты и времени в ответе возвращаются в формате UTC. 
 
-Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -132,4 +132,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

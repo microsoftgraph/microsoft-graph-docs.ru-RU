@@ -5,12 +5,12 @@ localization_priority: Normal
 author: ruoyingl
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a32030417f2a5c4230660b626dfd4d25e41dd006
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3b894a4b2889d96d7005dcf298355d8eef2182b6
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48020868"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405409"
 ---
 # <a name="list-nameditemcollection"></a>Список NamedItemCollection
 
@@ -32,7 +32,7 @@ ms.locfileid: "48020868"
 GET /workbook/names
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -40,7 +40,7 @@ GET /workbook/names
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Основной текст запросов
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -113,4 +113,3 @@ Content-length: 136
   "suppressions": [
   ]
 }-->
-

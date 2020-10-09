@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3a821a30a65a3972bcce9a16096defdd6c3106cd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c89ed29d6cbdf4f392656d853ac41efc9964a5c4
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48010019"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405500"
 ---
 # <a name="get-conversationthread"></a>Получение conversationThread
 
@@ -34,13 +34,13 @@ GET /groups/{id}/conversations/{id}/threads/{id}
 
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -125,4 +125,3 @@ Content-length: 419
   "suppressions": [
   ]
 }-->
-

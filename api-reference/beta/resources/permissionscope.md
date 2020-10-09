@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: d7d66b0f0a4b7a87b2454ba9fb6e21b1406d35a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ea3205139bffa11ff8fbe67d1ab6abb426bc65ca
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998077"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48406179"
 ---
 # <a name="permissionscope-resource-type"></a>Тип ресурса permissionScope
 
@@ -18,9 +18,9 @@ ms.locfileid: "47998077"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет определение [делегированного разрешения](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types).
+Представляет определение [делегированного разрешения](/azure/active-directory/develop/v2-permissions-and-consent#permission-types).
 
-Делегированные разрешения могут запрашиваться клиентскими приложениями, которым необходим маркер доступа к API, в котором определены разрешения. Делегированные разрешения можно запрашивать [динамически](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent), используя `scopes` параметр в запросе на авторизацию для платформы идентификации Майкрософт или [статически](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope), с помощью коллекции **рекуиредресаурцеакцесс** для объекта [Application](application.md) .
+Делегированные разрешения могут запрашиваться клиентскими приложениями, которым необходим маркер доступа к API, в котором определены разрешения. Делегированные разрешения можно запрашивать [динамически](/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent), используя `scopes` параметр в запросе на авторизацию для платформы идентификации Майкрософт или [статически](/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope), с помощью коллекции **рекуиредресаурцеакцесс** для объекта [Application](application.md) .
 
 ## <a name="properties"></a>Свойства
 
@@ -72,5 +72,3 @@ ms.locfileid: "47998077"
   "suppressions": []
 }
 -->
-
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: 61221581354c5742c85a6cc2bcf931afd67a5481
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0b2f9d7831a01760e871298b1df8de05a5b43978
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051720"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405885"
 ---
 # <a name="get-user-activities"></a>Получение действий пользователей
 
@@ -38,7 +38,7 @@ GET /me/activities
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа. Поддерживаются следующие параметры запросов:
+Этот метод поддерживает некоторые [Параметры запроса OData](/graph/query-parameters) для настройки ответа. Поддерживаются следующие параметры запросов:
 
 - $expand для свойства навигации **historyitem** .
 - $top, чтобы ограничить максимальное количество элементов на страницах.
@@ -60,7 +60,7 @@ GET /me/activities
 |:----|:-----|:-----------|
 |Authorization | string | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Текст запроса отсутствует.
 
@@ -152,4 +152,3 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

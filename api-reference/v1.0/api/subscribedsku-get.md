@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SumitParikh
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3b17c5166ad59b5ead7a7ed86f5013642dd0640e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 382fbf43310894f1476f5d6e414006e53ae7abb6
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48038090"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405732"
 ---
 # <a name="get-subscribedsku"></a>Вывод объекта SubscribedSku
 
@@ -34,7 +34,7 @@ ms.locfileid: "48038090"
 GET /subscribedSkus/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод **не** поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика (например, $filter не поддерживается).
+Этот метод **не** поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика (например, $filter не поддерживается).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -42,7 +42,7 @@ GET /subscribedSkus/{id}
 |:-----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -130,4 +130,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

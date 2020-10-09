@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f3caf89278062092ce1ea9294b0fb15481e5b884
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 35b8d2e043b688eefe3b3f070d84b4f1a556001c
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070298"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48406144"
 ---
 # <a name="list-calendars"></a>Список календарей
 
@@ -48,7 +48,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -140,4 +140,3 @@ Content-length: 147
   "suppressions": [
   ]
 }-->
-

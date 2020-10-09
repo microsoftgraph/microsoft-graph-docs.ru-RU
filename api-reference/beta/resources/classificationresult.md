@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 719ce6fa70172a3ab323aec8c991147ef212bcb7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 903284f99933c131a24474ac6f024a2c4c2550f1
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016830"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405584"
 ---
 # <a name="classificationresult-resource-type"></a>Тип ресурса Классификатионресулт
 
@@ -18,7 +18,7 @@ ms.locfileid: "48016830"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет результат операции классификации из модуля классификации Майкрософт. Результаты классификации данных в Azure Information Protection, Office и других службах Майкрософт могут возвращать [строго определенный набор типов классификации](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for). Эти типы можно предоставлять в API [евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateclassificationresults.md) для разрешения конфиденциальной информации в метку Microsoft Information Protection. 
+Представляет результат операции классификации из модуля классификации Майкрософт. Результаты классификации данных в Azure Information Protection, Office и других службах Майкрософт могут возвращать [строго определенный набор типов классификации](/office365/securitycompliance/what-the-sensitive-information-types-look-for). Эти типы можно предоставлять в API [евалуатеклассификатионресултс](../api/informationprotectionlabel-evaluateclassificationresults.md) для разрешения конфиденциальной информации в метку Microsoft Information Protection. 
 
 ## <a name="properties"></a>Свойства
 
@@ -58,5 +58,3 @@ ms.locfileid: "48016830"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

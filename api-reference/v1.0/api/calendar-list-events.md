@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6b064396b5ca9a7036b7427cab120b4dec5b8f63
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8f46ecf14245aa28b9547e1baedebd07ed5ece98
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070375"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404653"
 ---
 # <a name="list-events"></a>Перечисление событий
 
@@ -50,7 +50,7 @@ GET /me/calendarGroups/{id}/calendars/{id}/events
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:--------|:--------|
@@ -134,4 +134,3 @@ Content-length: 354
   "suppressions": [
   ]
 }-->
-

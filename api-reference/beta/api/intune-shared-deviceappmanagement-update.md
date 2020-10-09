@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0a08433c7493ce658bf92d9a0c56a13227ebacc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c79524516f086742bbdf80b3188614ddcd1d87cc
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47980444"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404499"
 ---
 # <a name="update-deviceappmanagement"></a>Обновление объекта deviceAppManagement
 
@@ -28,11 +28,11 @@ ms.locfileid: "47980444"
 |:---|:---|
 | Делегированные (рабочая или учебная учетная запись) | |
 | &nbsp;&nbsp; **Приложения**, **книги**, **onboarding**входящая миграция, **Интеграция партнеров**или **набор политик** | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | |
 | &nbsp;&nbsp; **Приложения**, **книги**, **onboarding**входящая миграция, **Интеграция партнеров**или **набор политик** | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,10 +46,10 @@ PATCH /deviceAppManagement
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md).
@@ -64,7 +64,7 @@ PATCH /deviceAppManagement
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|Время последней успешной синхронизации приложений из Microsoft Store для бизнеса с учетной записью.|
 |микрософтсторефорбусинесспорталселектион|[microsoftStoreForBusinessPortalSelectionOptions](../resources/intune-onboarding-microsoftstoreforbusinessportalselectionoptions.md)|Сведения о портале конечного пользователя используются для синхронизации приложений из Microsoft Store для бизнеса и портала компании Intune. Выбрать можно три варианта: \[ "только корпоративный портал", "Корпоративный портал и частный магазин", "только частный магазин" \] . Возможные значения: `none`, `companyPortal`, `privateStore`.|
 
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) в тексте отклика.
@@ -97,15 +97,3 @@ Content-Length: 110
   "id": "bbb801a3-01a3-bbb8-a301-b8bba301b8bb"
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-

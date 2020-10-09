@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 429a6657b15d9a51a5503cf0247bcc2a206685d4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ff8944e9aa46bf52354af2f9762c089f9e0d1446
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997818"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48406174"
 ---
 # <a name="place-resource-type"></a>размещение типа ресурса
 
@@ -25,7 +25,7 @@ ms.locfileid: "47997818"
 
 Места, такие как [комната](room.md) и [RoomList принимают одиночные](roomlist.md) , содержат базовый **идентификатор**, отображаемое имя и адрес электронной почты. Кроме того, они содержат сведения о переходах, такие как физический адрес и географические координаты, а также в случае комнат, а также другие релевантные сведения, такие как возможности AV, номер этажа и мощность.
 
-Функции [финдрумс](https://docs.microsoft.com/graph/api/user-findrooms?view=graph-rest-beta&tabs=http) и [финдрумлистс](https://docs.microsoft.com/graph/api/user-findroomlists?view=graph-rest-beta) поддерживают подобный Поиск комнат и списков помещений в клиенте. Ниже приведено сравнение между API мест и этими функциями.  Если вы создаете рабочее приложение, выберите API "места", так как API теперь доступен в версии 1.0. Запланируйте обновление существующего кода, использующего **финдрумс** или **финдрумлистс** , для использования API мест, так как **финдрумс** или **финдрумлистс** будут устаревшими, а временная шкала будет объявлена.
+Функции [финдрумс](../api/user-findrooms.md) и [финдрумлистс](../api/user-findroomlists.md) поддерживают подобный Поиск комнат и списков помещений в клиенте. Ниже приведено сравнение между API мест и этими функциями.  Если вы создаете рабочее приложение, выберите API "места", так как API теперь доступен в версии 1.0. Запланируйте обновление существующего кода, использующего **финдрумс** или **финдрумлистс** , для использования API мест, так как **финдрумс** или **финдрумлистс** будут устаревшими, а временная шкала будет объявлена.
 
 |API мест |функции Финдрумс и Финдрумлистс|
 |:------------------------------------|:-----------------------------|
@@ -82,8 +82,8 @@ ms.locfileid: "47997818"
 ```
 
 ## <a name="see-also"></a>См. также
-- Чтобы создать список помещений для администраторов, используйте командлет Exchange PowerShell [New – DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps).
-- Чтобы добавить конференцию в список помещений, используйте командлет [Add – DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/add-distributiongroupmember?view=exchange-ps)для Exchange PowerShell.
+- Чтобы создать список помещений для администраторов, используйте командлет Exchange PowerShell [New – DistributionGroup](/powershell/module/exchange/users-and-groups/new-distributiongroup).
+- Чтобы добавить конференцию в список помещений, используйте командлет [Add – DistributionGroupMember](/powershell/module/exchange/users-and-groups/add-distributiongroupmember)для Exchange PowerShell.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -94,5 +94,3 @@ ms.locfileid: "47997818"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
