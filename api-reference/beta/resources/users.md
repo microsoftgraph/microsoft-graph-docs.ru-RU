@@ -5,12 +5,12 @@ localization_priority: Priority
 author: krbain
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: ddf0c0790e94f576069e64839fb2c35cd89b362c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7e78476b85ed16550ca1af23c8e3fd611869a127
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057831"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402956"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Работа с пользователями в Microsoft Graph
 
@@ -25,7 +25,7 @@ ms.locfileid: "48057831"
 
 ## <a name="authorization"></a>Авторизация
 
-Для операций доступа к пользователям необходимо одно из указанных ниже [разрешений](https://developer.microsoft.com/graph/docs/authorization/permission_scopes). Первые три разрешения могут быть предоставлены приложению пользователем. Остальные разрешения могут быть предоставлены приложению администратором.
+Для операций доступа к пользователям необходимо одно из указанных ниже [разрешений](/graph/permissions-reference). Первые три разрешения могут быть предоставлены приложению пользователем. Остальные разрешения могут быть предоставлены приложению администратором.
 
 - User.ReadBasic.All
 - User.Read
@@ -67,4 +67,3 @@ ms.locfileid: "48057831"
 
 ## <a name="whats-new"></a>Что нового
 Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
-

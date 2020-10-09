@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d4c77e03bf54252cd8f93f29d4e9760371e37697
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d155bf20055bcd7fdd4a7629db5686c8a37103cf
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004566"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402662"
 ---
 # <a name="phoneauthenticationmethod-enablesmssignin"></a>Фонеаусентикатионмесод: Енаблесмссигнин
 
@@ -22,7 +22,7 @@ ms.locfileid: "48004566"
 
 * Телефон должен иметь значение `"phoneType": "mobile"` .
 * Телефон должен быть уникальным в системе входа SMS (никто другой не может использовать этот номер).
-* Пользователю необходимо включить вход в систему SMS в политике [методы проверки подлинности](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) .
+* Пользователю необходимо включить вход в систему SMS в политике [методы проверки подлинности](/azure/active-directory/authentication/concept-authentication-methods) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -34,7 +34,7 @@ ms.locfileid: "48004566"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
 | Для приложений                            | Не поддерживается. | Не поддерживается. |
 
-Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный администратор
 * Привилегированный администратор проверки подлинности
@@ -117,5 +117,3 @@ HTTP/1.1 200 OK
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

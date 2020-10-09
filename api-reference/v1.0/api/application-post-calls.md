@@ -5,24 +5,24 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3fa1279e217ccfa178689c8163a9f80c9a389418
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5fd34f481530af2d77e7dc69d68e9e8289168094
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039077"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403785"
 ---
 # <a name="create-call"></a>Создание звонка
 
 Пространство имен: microsoft.graph
 
-Создать [вызов](../resources/call.md) позволяет Bot создать новый исходящий одноранговый или групповой вызов или присоединиться к существующему собранию. Вам потребуется [зарегистрировать запрашивающий абонент](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) и просмотреть список необходимых разрешений, как описано ниже.
+Создать [вызов](../resources/call.md) позволяет Bot создать новый исходящий одноранговый или групповой вызов или присоединиться к существующему собранию. Вам потребуется [зарегистрировать запрашивающий абонент](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot) и просмотреть список необходимых разрешений, как описано ниже.
 
 > **Примечание:** В настоящее время поддерживаются только звонки по протоколу VoIP. 
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](https://docs.microsoft.com/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot#add-microsoft-graph-permissions).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                             |
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
@@ -44,7 +44,7 @@ POST /communications/calls
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В тексте запроса добавьте представление объекта [Call](../resources/call.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
@@ -914,4 +914,3 @@ Content-Type: application/json
   ]
 }
 -->
-

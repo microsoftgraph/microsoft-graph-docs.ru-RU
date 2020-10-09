@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3ccc73672fb626be6e0a51a2e789e631fa5f1c93
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3c783877235faedcf7bb6ae8a228487344376866
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070372"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404177"
 ---
 # <a name="list-calendarview"></a>Список calendarView
 
@@ -65,7 +65,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/calendarV
 
 Значения `startDateTime` и `endDateTime` интерпретируются с использованием смещения часового пояса, указанного в значении, и на них не влияет значение заголовка `Prefer: outlook.timezone` при его наличии. Если в значении не указано смещение часового пояса, оно интерпретируется в формате UTC.
 
-Этот метод также поддерживает некоторые [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+Этот метод также поддерживает некоторые [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 > [!NOTE]
 > Свойства **createdDateTime** и **lastModifiedDateTime** [события](../resources/event.md) не поддерживают `$select`. Чтобы получить их значения, просто запросите **calendarView**, не применяя `$select`.
@@ -153,4 +153,3 @@ Content-length: 354
   "suppressions": [
   ]
 }-->
-

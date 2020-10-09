@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: d674a06d2cb699f6d075086533a492d577143808
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 428b36fefe733b172e4a09d333047bff4464bea2
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47990797"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403100"
 ---
 # <a name="grant-an-approleassignment-to-a-group"></a>Предоставление appRoleAssignment группе
 
@@ -24,7 +24,7 @@ ms.locfileid: "47990797"
 - `resourceId`: `id` ресурса `servicePrincipal`, который определяет роль приложения.
 - `appRoleId`: `id` объекта `appRole` (определенного в субъекте-службе ресурса) для назначения группе.
 
-Чтобы [использовать группу для управления доступом к приложениям](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-saasapps), могут потребоваться дополнительные лицензии.
+Чтобы [использовать группу для управления доступом к приложениям](/azure/active-directory/users-groups-roles/groups-saasapps), могут потребоваться дополнительные лицензии.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -55,11 +55,11 @@ POST /groups/{id}/appRoleAssignments
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите представление JSON объекта [appRoleAssignment](../resources/approleassignment.md).
+В тексте запроса укажите представление JSON для объекта [appRoleAssignment](../resources/approleassignment.md).
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `201 Created` и объект [appRoleAssignment](../resources/approleassignment.md) в тексте отклика.
+В случае успеха этот метод возвращает в тексте отклика код отклика `201 Created` и объект [appRoleAssignment](../resources/approleassignment.md).
 
 ## <a name="examples"></a>Примеры
 
@@ -143,5 +143,3 @@ Content-length: 253
   ]
 }
 -->
-
-

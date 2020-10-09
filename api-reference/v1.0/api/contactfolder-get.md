@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: bbfd4817538919c7cee623475647c07e610621bc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5cbb2e029ffb7f13d0c150901ef42756007cf33c
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067015"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402921"
 ---
 # <a name="get-contactfolder"></a>Получение объекта contactFolder
 
@@ -40,7 +40,7 @@ GET /me/contactFolders/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
@@ -112,4 +112,3 @@ Content-length: 104
   "suppressions": [
   ]
 }-->
-

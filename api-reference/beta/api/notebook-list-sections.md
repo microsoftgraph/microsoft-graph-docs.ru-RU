@@ -5,12 +5,12 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: f30f503d4719f87d008eb98514cbfe8ca5b3e264
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: abf43e54db8f743f2eee11bd900e50755224062f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053519"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404492"
 ---
 # <a name="list-sections"></a>Вывод списка разделов
 
@@ -37,7 +37,7 @@ GET /groups/{id}/onenote/notebooks/{id}/sections
 GET /sites/{id}/onenote/notebooks/{id}/sections
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 По умолчанию используется порядок сортировки `name asc`.
 
@@ -132,5 +132,3 @@ Content-length: 345
   ]
 }
 -->
-
-

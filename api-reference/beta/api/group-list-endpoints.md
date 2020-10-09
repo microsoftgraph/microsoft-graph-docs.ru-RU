@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 0e4f8e90571da3f4744ca7d913c38990006f21eb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 92b672a8a8eae075f4d965bdb268f94ccfe07cb4
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002161"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403110"
 ---
 # <a name="list-endpoints"></a>Перечисление конечных точек
 
@@ -35,7 +35,7 @@ ms.locfileid: "48002161"
 GET /groups/{id}/endpoints
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -43,7 +43,7 @@ GET /groups/{id}/endpoints
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type   | Приложение/JSON |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запросов
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+>Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -116,5 +116,3 @@ Content-length: 261
   ]
 }
 -->
-
-

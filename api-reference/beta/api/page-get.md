@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 23fae34065f99afa22e0af9aa2c52d717f7dcce1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3e65a4edda10a6c3a8fca7714fc17168ccb36e66
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004608"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403967"
 ---
 # <a name="get-page"></a>Вывод страницы
 
@@ -57,7 +57,7 @@ GET /groups/{id}/onenote/pages/{id}
 GET /sites/{id}/onenote/pages/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `select` `expand` [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) и для настройки отклика.
+Этот метод поддерживает `select` `expand` [параметры запросов OData](/graph/query-parameters) и для настройки отклика.
 
 Ответ по умолчанию разворачивается `parentSection` и выбирает `id` Свойства раздела, `name` а также `self` Свойства. Допустимые `expand` значения для страниц: `parentNotebook` и `parentSection` .
 
@@ -118,5 +118,3 @@ Content-length: 312
   "suppressions": []
 }
 -->
-
-

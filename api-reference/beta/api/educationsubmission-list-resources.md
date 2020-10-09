@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 7eb873868cdfc76e29d814e58cd27dfaf53a9917
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 796324308b76a51d98af1ffc9afed3bc51278f93
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007254"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403383"
 ---
 # <a name="list-resources"></a>Список ресурсов
 
@@ -39,7 +39,7 @@ GET /educationClasses/assignments/{id}/submissions/{id}/resources
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -133,5 +133,3 @@ Content-length: 1045
   "suppressions": []
 }
 -->
-
-

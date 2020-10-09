@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: fc85b1413a0b4405bdbbce17c5979c705e335304
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8c3980e07b11623957c89fe44a745c496d91e832
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036223"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404471"
 ---
 # <a name="get-onlinemeeting"></a>Получение Онлинемитинг
 
@@ -28,7 +28,7 @@ ms.locfileid: "48036223"
 | :------------------------------------- | :---------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                        |
-| Для приложений                            | Онлинемитингс. Read. ALL, Онлинемитингс. ReadWrite. ALL * |
+| Для приложений                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
 
 > [!IMPORTANT]
 > \* Администраторы должны создать [политику доступа к приложениям](/graph/cloud-communication-online-meeting-application-access-policy) и предоставить ее пользователю, доставке приложения, настроенного в политике, для получения собрания по сети от имени этого пользователя (идентификатора пользователя, указанного в пути запроса).
@@ -44,7 +44,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}
 > **Примечания.**
 >
 > - Путь `/app` является устаревшим. В дальнейшем используйте путь `/communications`.
-> - `id` в первых двух маршрутах — [VTC Conference ID](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up).
+> - `id` в первых двух маршрутах — [VTC Conference ID](/microsoftteams/cloud-video-interop-for-teams-set-up).
 > - `userId` — Это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в разделе [Политика доступа к приложениям](/graph/cloud-communication-online-meeting-application-access-policy).
 > - `meetingId` — **идентификатор** [объекта онлинемитинг](../resources/onlinemeeting.md).
 
@@ -59,7 +59,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}
 
 Если запрос содержит `Accept-Language` HTTP-заголовок, то `content` из `joinInformation` будет указан на языке и языкового стандарта, указанного в заголовке `Accept-Language`. Контент по умолчанию будет на английском языке.
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запросов
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -187,5 +187,3 @@ Content-Length: 1574
   ]
 }
 -->
-
-

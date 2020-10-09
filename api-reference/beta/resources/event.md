@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: b480e439eec2b0448437d41f7e93c5a948d3a105
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2ff96feabbd3008c54436dcfc82eb853218cb531
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064284"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402541"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -20,7 +20,7 @@ ms.locfileid: "48064284"
 
 Событие в календаре ресурса [user](user.md) или стандартный календарь для ресурса [group](group.md), представляющего группу Microsoft 365.
 
-Максимальное количество участников в ресурсе **event** и максимальное количество получателей в ресурсе [eventMessage](eventmessage.md), отправленном из почтового ящика Exchange Online, составляет 500. Дополнительные сведения см. в разделе [Ограничения на отправку](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
+Максимальное количество участников в ресурсе **event** и максимальное количество получателей в ресурсе [eventMessage](eventmessage.md), отправленном из почтового ящика Exchange Online, составляет 500. Дополнительные сведения см. в разделе [Ограничения на отправку](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
 
 Этот ресурс поддерживает:
 
@@ -230,5 +230,3 @@ ms.locfileid: "48064284"
   "suppressions": []
 }
 -->
-
-

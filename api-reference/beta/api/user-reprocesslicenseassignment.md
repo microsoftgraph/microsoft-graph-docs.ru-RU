@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 80daaf6d31d9d7b1d3964f66c1bcbd46aa961862
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3cbd277d1ea8115e8a7625b9b7c1436f9b7892f0
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064474"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403939"
 ---
 # <a name="user-reprocesslicenseassignment"></a>Пользователь: Репроцесслиценсеассигнмент
 
@@ -18,7 +18,7 @@ ms.locfileid: "48064474"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Повторно обработайте все назначения лицензий на основе группы для пользователя. Чтобы узнать больше о лицензировании на основе групп, ознакомьтесь со статьей " [Лицензирование на основе групп" в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). Кроме того, для получения дополнительных сведений ознакомьтесь с [разрешениями проблем назначения лицензий для группы в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) .
+Повторно обработайте все назначения лицензий на основе группы для пользователя. Чтобы узнать больше о лицензировании на основе групп, ознакомьтесь со статьей " [Лицензирование на основе групп" в Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal). Кроме того, для получения дополнительных сведений ознакомьтесь с [разрешениями проблем назначения лицензий для группы в Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems) .
 
 
 ## <a name="permissions"></a>Разрешения
@@ -126,5 +126,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

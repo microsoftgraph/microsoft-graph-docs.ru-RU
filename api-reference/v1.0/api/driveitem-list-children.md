@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Получение коллекции ресурсов DriveItem, являющихся дочерними элементами ресурса DriveItem.
 doc_type: apiPageType
-ms.openlocfilehash: 18b78c05ba6d6c947c74f270a5b1c9cf14ca7256
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 117cb25599dffdc120eab64199090d74c4c05db5
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48042137"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402879"
 ---
 # <a name="list-children-of-a-driveitem"></a>Создание списка дочерних элементов ресурса driveItem
 
@@ -153,7 +153,7 @@ Content-type: application/json
 
 **Примечание.** Если коллекция превышает размер страницы по умолчанию (200 элементов), свойство **\@odata.nextLink** возвращается в отклике, чтобы указать доступность дополнительных элементов и предоставить запрашиваемый URL-адрес для следующей страницы элементов.
 
-Вы можете управлять размером страницы с помощью [необязательных параметров строки запроса](https://developer.microsoft.com/graph/docs/concepts/query_parameters)
+Вы можете управлять размером страницы с помощью [необязательных параметров строки запроса](/graph/query-parameters)
 
 ### <a name="error-responses"></a>Ответы с ошибками
 
@@ -171,4 +171,3 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
-

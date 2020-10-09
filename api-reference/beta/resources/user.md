@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 3b8c7e95ea349178336a6a0cdbea060eb1382ab7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5fdcef5bae827dfaf55545dc7357de3df217ec1f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057964"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402981"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -206,7 +206,7 @@ ms.locfileid: "48057964"
 | passwordProfile | [passwordProfile](passwordprofile.md) | Задает профиль пароля для пользователя. Профиль содержит пароль пользователя. Это свойство обязательно указывать при создании пользователя. Пароль в профиле должен соответствовать минимальным требованиям, указанным в свойстве **passwordPolicies**. По умолчанию требуется надежный пароль. <br><br>Возвращается только с помощью оператора $select. |
 | pastProjects | Коллекция строк | Список предыдущих проектов пользователя. <br><br>Возвращается только с помощью оператора $select. |
 | postalCode | String | Почтовый индекс адреса пользователя. Формат почтового индекса зависит от страны или региона пользователя. В США для этого атрибута используется ZIP-код. <br><br>Возвращается только с помощью оператора $select. |
-| preferredDataLocation | String | Предпочитаемое расположение данных для пользователя. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Возвращается только с помощью оператора $select. |
+| preferredDataLocation | String | Предпочитаемое расположение данных для пользователя. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Возвращается только с помощью оператора $select. |
 | preferredLanguage | String | Предпочитаемый язык для пользователя. Он должен быть представлен в формате ISO 639-1, например "ru-RU". <br><br>Возвращается по умолчанию. |
 | preferredName | String | Предпочитаемое имя пользователя. <br><br>Возвращается только с помощью оператора $select. |
 | provisionedPlans | Коллекция [provisionedPlan](provisionedplan.md) | Планы, подготовленные для пользователя. <br><br>Возвращается только с помощью оператора $select. Только для чтения. Значение null не допускается. |
@@ -468,5 +468,3 @@ ms.locfileid: "48057964"
   "suppressions": []
 }
 -->
-
-

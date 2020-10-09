@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c901050f3cd068f68557473587e96b5ea5f65905
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4f3dc4cbe1a68ae6f7c751c9b305f95901928d17
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057766"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402954"
 ---
 # <a name="verifiedcustomdomaincertificatesmetadata-resource-type"></a>Тип ресурса Верифиедкустомдомаинцертификатесметадата
 
@@ -18,7 +18,7 @@ ms.locfileid: "48057766"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет метаданные пользовательских сертификатов домена для ресурса [онпремисеспублишинг](onpremisespublishing.md) при публикации локального приложения с помощью прокси приложения. Использование пользовательского домена позволяет использовать собственное доменное имя вместо домена по умолчанию (msappproxy.net) для вашего приложения. Дополнительные сведения см. в разделе " [Настраиваемые домены" прокси-сервера приложений Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-custom-domain).
+Представляет метаданные пользовательских сертификатов домена для ресурса [онпремисеспублишинг](onpremisespublishing.md) при публикации локального приложения с помощью прокси приложения. Использование пользовательского домена позволяет использовать собственное доменное имя вместо домена по умолчанию (msappproxy.net) для вашего приложения. Дополнительные сведения см. в разделе " [Настраиваемые домены" прокси-сервера приложений Azure AD](/azure/active-directory/manage-apps/application-proxy-configure-custom-domain).
 
 ## <a name="properties"></a>Свойства
 
@@ -30,7 +30,7 @@ ms.locfileid: "48057766"
 |subjectName|String| Имя субъекта пользовательского сертификата домена. |
 |отпечаток|String| Отпечаток, связанный с пользовательским сертификатом домена. |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -62,4 +62,3 @@ ms.locfileid: "48057766"
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -6,12 +6,12 @@ title: Создание списка содержимого папки
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ef6d5db62d931077ffe4de635068cf51a9bdca29
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 83cd26de9e49b90a6143af18c09f5c0983178d73
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981998"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403687"
 ---
 # <a name="list-children-of-a-driveitem"></a>Создание списка дочерних элементов ресурса driveItem
 
@@ -146,7 +146,7 @@ Content-type: application/json
 
 **Примечание.** Если коллекция превышает размер страницы по умолчанию (200 элементов), свойство **\@odata.nextLink** возвращается в отклике, чтобы указать доступность дополнительных элементов и предоставить запрашиваемый URL-адрес для следующей страницы элементов.
 
-Вы можете управлять размером страницы с помощью [необязательных параметров строки запроса](https://developer.microsoft.com/graph/docs/concepts/query_parameters)
+Вы можете управлять размером страницы с помощью [необязательных параметров строки запроса](/graph/query-parameters)
 
 ### <a name="error-responses"></a>Ответы с ошибками
 
@@ -166,5 +166,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

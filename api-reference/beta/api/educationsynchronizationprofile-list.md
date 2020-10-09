@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: ac941da5ee0f5aafb5cbbfb59e58a7eba8f72d92
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 594627b402c386b86958c76cd4f2d67a93e6edec
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007226"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403299"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>Список Едукатионсинчронизатионпрофилес
 
@@ -36,14 +36,14 @@ GET /synchronizationProfiles
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает следующие [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика: $filter, $orderby, $top, $skip и $Count.
+Этот метод поддерживает следующие [Параметры запроса OData](/graph/query-parameters) для настройки отклика: $filter, $orderby, $top, $skip и $Count.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в тексте отклика.
@@ -168,5 +168,3 @@ Content-length: 3296
   ]
 }
 ```
-
-

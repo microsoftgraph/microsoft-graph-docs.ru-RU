@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 99f5c4211ea7a649bb7da92bf35bcd8ade84d42e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a09b15e713eb68c4ef72d0321df17cc973a4e42b
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055031"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404142"
 ---
 # <a name="get-onlinemeeting"></a>Получение Онлинемитинг
 
@@ -18,7 +18,7 @@ ms.locfileid: "48055031"
 
 Получение свойств и связей объекта [онлинемитинг](../resources/onlinemeeting.md) .
 
-> **Примечание:** В `GET` настоящее время метод поддерживается только для [идентификатора конференции VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). Эти идентификаторы создаются для пользователей, лицензированных для облачных видеоконференций, и этот метод используется для получения сведений о присоединении к собранию.
+> **Примечание:** В `GET` настоящее время метод поддерживается только для [идентификатора конференции VTC](/microsoftteams/cloud-video-interop-for-teams-set-up). Эти идентификаторы создаются для пользователей, лицензированных для облачных видеоконференций, и этот метод используется для получения сведений о присоединении к собранию.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,7 +47,7 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 
 Если запрос содержит `Accept-Language` HTTP-заголовок, то `content` из `joinInformation` будет указан на языке и языкового стандарта, указанного в заголовке `Accept-Language`. Контент по умолчанию будет на английском языке.
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Основной текст запросов
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -171,4 +171,3 @@ Content-Length: 1574
   ]
 }
 -->
-

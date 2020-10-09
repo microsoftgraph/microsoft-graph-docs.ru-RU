@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 1cfdc09a35a0f04d5ce3e2ffffec80524f40c1e5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 93c5c5c7bd7b04baa70af9fffd2c7319f50af4ad
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073364"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404345"
 ---
 # <a name="call-subscribetotone"></a>Call: Субскрибетотоне
 
@@ -31,7 +31,7 @@ ms.locfileid: "48073364"
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
 | Для приложений     | Calls.AccessMedia.All                       |
 
->**Примечание:** Все указанные данные тона могут быть не сохранены. Убедитесь, что вы соответствуете законам и нормативам, касающимся защиты данных и конфиденциальности коммуникаций. Дополнительные сведения можно узнать из [условий использования](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) и обратившись за юридической помощью.
+>**Примечание:** Все указанные данные тона могут быть не сохранены. Убедитесь, что вы соответствуете законам и нормативам, касающимся защиты данных и конфиденциальности коммуникаций. Дополнительные сведения можно узнать из [условий использования](/legal/microsoft-apis/terms-of-use) и обратившись за юридической помощью.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ POST /communications/calls/{id}/subscribeToTone
 
 | Параметр      | Тип    | Описание |
 |:---------------|:--------|:------------|
-| Контекст  | Строка  | Уникальная строка контекста клиента. Может содержать до 256 символов. |
+| Контекст  | String  | Уникальная строка контекста клиента. Может содержать до 256 символов. |
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
@@ -166,4 +166,3 @@ Content-Type: application/json
   ]
 }
 -->
-

@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d23e08d2e412f77e94c802fcc03778eb89ab7158
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aad3e32cc1dd6936d0be221fe20225d56b386cb2
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012756"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403131"
 ---
 # <a name="group-evaluatedynamicmembership"></a>Группа: Евалуатединамикмембершип
 
@@ -67,8 +67,8 @@ POST /groups/evaluateDynamicMembership
 
 | Параметр | Тип | Описание |
 | :-------- | :--- | :---------- |
-| Идентификатора | Коллекция String | memberId это идентификатор объекта для оцениваемого пользователя или устройства. |
-| membershipRule | Коллекция String | Правило, используемое для оценки членства. Если это свойство не указано, оценивается правило для существующей группы. Если это свойство указано, то пользователь или устройство оцениваются для возможного членства в группе с тем же правилом. Дополнительные сведения см. [в статье динамическое правило членства для групп в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
+| Идентификатора | Коллекция объектов string | memberId это идентификатор объекта для оцениваемого пользователя или устройства. |
+| membershipRule | Коллекция объектов string | Правило, используемое для оценки членства. Если это свойство не указано, оценивается правило для существующей группы. Если это свойство указано, то пользователь или устройство оцениваются для возможного членства в группе с тем же правилом. Дополнительные сведения см. [в статье динамическое правило членства для групп в Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
 
 ## <a name="response"></a>Отклик
 
@@ -114,7 +114,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 <!-- {
   "blockType": "response",
@@ -222,5 +222,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 47ba704a8e4a4a4c4aedb6e70341aa37c3eb1377
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6f27734ab05b4fc38a6a7a720837da6cc21de817
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064509"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403981"
 ---
 # <a name="create-user"></a>Создание пользователя
 
@@ -54,7 +54,7 @@ POST /users
 
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
-|accountEnabled |Boolean |Значение true, если учетная запись включена; в противном случае — false.|
+|accountEnabled |Логический |Значение true, если учетная запись включена; в противном случае — false.|
 |displayName |string |Имя, которое следует отобразить в адресной книге для пользователя.|
 |onPremisesImmutableId |string |Необходимо указывать только при создании учетной записи пользователя, если вы используете федеративный домен для свойства userPrincipalName (UPN) этого пользователя.|
 |mailNickname |string |Почтовый псевдоним для пользователя.|
@@ -63,7 +63,7 @@ POST /users
 
 Так как ресурс **user** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными в экземпляр user при его создании.
 
-Федеративные пользователи, созданные с помощью этого API, будут вынуждены подписываться каждые 12 часов по умолчанию. Сведения о том, как это сделать, приведены в статье [исключения для времени существования маркеров](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
+Федеративные пользователи, созданные с помощью этого API, будут вынуждены подписываться каждые 12 часов по умолчанию. Сведения о том, как это сделать, приведены в статье [исключения для времени существования маркеров](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
 
 >[!NOTE]
 >Добавление [локальной учетной записи B2C](../resources/objectidentity.md) к существующему объекту **пользователя** запрещено, если объект **пользователя** еще не содержит удостоверение локальной учетной записи.
@@ -266,5 +266,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

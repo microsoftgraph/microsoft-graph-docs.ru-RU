@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: a161fcd8dea1084ebb004e054daa220c85d83d26
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1b9f042f970109a348b637636749778ed95e55e6
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027120"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402571"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>Тип ресурса Директорйобжектпартнерреференце
 
@@ -52,7 +52,7 @@ ms.locfileid: "48027120"
 
 ## <a name="see-also"></a>См. также
 
-- [Получение объектов каталога из списка идентификаторов](/graph/api/directoryobject-getbyids?view=graph-rest-beta)
+- [Получение объектов каталога из списка идентификаторов](../api/directoryobject-getbyids.md)
 
 <!-- uuid: fbec8cd7-cfe4-431d-87fc-d102cd2841a4
 2018-12-06 02:01:30 UTC -->
@@ -66,5 +66,3 @@ ms.locfileid: "48027120"
   "suppressions": []
 }
 -->
-
-

@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 032c9af59751b2695bc039ea4b8a4bbb60859fb9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5d14aef54f607ce676b3d2e3686fa445b5bd192b
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008500"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48402746"
 ---
 # <a name="list-domains"></a>Список доменов
 
@@ -35,7 +35,7 @@ ms.locfileid: "48008500"
 GET /domains
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
@@ -43,7 +43,7 @@ GET /domains
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Accept         | приложение/JSON; |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запросов
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -120,5 +120,3 @@ Content-length: 245
   ]
 }
 -->
-
-

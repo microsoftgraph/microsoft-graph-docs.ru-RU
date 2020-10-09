@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f69fb905fb886cd6dc06da90f0a8d997954b6cc4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0d05b881f3646b16913edf349af2c8fba6e3a8cb
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006995"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403278"
 ---
 # <a name="list-schools"></a>Перечисление учебных заведений
 
@@ -28,7 +28,7 @@ ms.locfileid: "48006995"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduRoster.ReadBasic                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Приложение                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
+| Для приложений                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 > [!NOTE]
 > При использовании делегированных разрешений возвращаются только те ресурсы educationSchool, которые является членом пользователя проверки подлинности.
@@ -44,7 +44,7 @@ GET /education/users/{id}/schools
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -159,5 +159,3 @@ Content-length: 345
   ]
 }
 -->
-
-

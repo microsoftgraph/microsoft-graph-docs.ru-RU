@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 46b14333d100c4c4859690978a39397a2781290c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5bc0c4b1ca2f1e1423953f47793dc3b1a0bccb58
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045609"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404093"
 ---
 # <a name="list-serviceprincipals"></a>Перечисление servicePrincipals
 
@@ -36,7 +36,7 @@ GET /servicePrincipals
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя           | Описание                |
@@ -146,4 +146,3 @@ Content-type: application/json
   ]
 }
 -->
-
