@@ -5,44 +5,44 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 911c790ab08487428ff04e93508f4f62ab657aa7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 078284cb4134b0b4fa2f86eb9a09f61ab6655351
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044209"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405283"
 ---
-# <a name="stspolicy-resource-type"></a><span data-ttu-id="e6b8b-103">Тип ресурса Стсполици</span><span class="sxs-lookup"><span data-stu-id="e6b8b-103">stsPolicy resource type</span></span>
+# <a name="stspolicy-resource-type"></a><span data-ttu-id="3a4ba-103">Тип ресурса Стсполици</span><span class="sxs-lookup"><span data-stu-id="3a4ba-103">stsPolicy resource type</span></span>
 
-<span data-ttu-id="e6b8b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e6b8b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3a4ba-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3a4ba-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e6b8b-105">Представляет абстрактный базовый тип для типов политики, которые управляют поведением [платформы Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/) .</span><span class="sxs-lookup"><span data-stu-id="e6b8b-105">Represents an abstract base type for policy types that control [Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/) behavior.</span></span>
+<span data-ttu-id="3a4ba-105">Представляет абстрактный базовый тип для типов политики, которые управляют поведением [платформы Microsoft Identity](/azure/active-directory/develop/) .</span><span class="sxs-lookup"><span data-stu-id="3a4ba-105">Represents an abstract base type for policy types that control [Microsoft identity platform](/azure/active-directory/develop/) behavior.</span></span>
 
-<span data-ttu-id="e6b8b-106">Наследуется от [основы](policyBase.md).</span><span class="sxs-lookup"><span data-stu-id="e6b8b-106">Inherits from [policyBase](policyBase.md).</span></span>
+<span data-ttu-id="3a4ba-106">Наследуется от [основы](policyBase.md).</span><span class="sxs-lookup"><span data-stu-id="3a4ba-106">Inherits from [policyBase](policyBase.md).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="e6b8b-107">Методы</span><span class="sxs-lookup"><span data-stu-id="e6b8b-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="3a4ba-107">Методы</span><span class="sxs-lookup"><span data-stu-id="3a4ba-107">Methods</span></span>
 
-<span data-ttu-id="e6b8b-108">Нет</span><span class="sxs-lookup"><span data-stu-id="e6b8b-108">None</span></span>
+<span data-ttu-id="3a4ba-108">Нет</span><span class="sxs-lookup"><span data-stu-id="3a4ba-108">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e6b8b-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="e6b8b-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="3a4ba-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="3a4ba-109">Properties</span></span>
 
-| <span data-ttu-id="e6b8b-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="e6b8b-110">Property</span></span>     | <span data-ttu-id="e6b8b-111">Тип</span><span class="sxs-lookup"><span data-stu-id="e6b8b-111">Type</span></span>        | <span data-ttu-id="e6b8b-112">Описание</span><span class="sxs-lookup"><span data-stu-id="e6b8b-112">Description</span></span> |
+| <span data-ttu-id="3a4ba-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="3a4ba-110">Property</span></span>     | <span data-ttu-id="3a4ba-111">Тип</span><span class="sxs-lookup"><span data-stu-id="3a4ba-111">Type</span></span>        | <span data-ttu-id="3a4ba-112">Описание</span><span class="sxs-lookup"><span data-stu-id="3a4ba-112">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="e6b8b-113">id</span><span class="sxs-lookup"><span data-stu-id="e6b8b-113">id</span></span>|<span data-ttu-id="e6b8b-114">Строка</span><span class="sxs-lookup"><span data-stu-id="e6b8b-114">String</span></span>| <span data-ttu-id="e6b8b-115">Уникальный идентификатор для этой политики.</span><span class="sxs-lookup"><span data-stu-id="e6b8b-115">Unique identifier for this policy.</span></span> <span data-ttu-id="e6b8b-116">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="e6b8b-116">Read-only.</span></span> <span data-ttu-id="e6b8b-117">Наследуется от [основы](policyBase.md).</span><span class="sxs-lookup"><span data-stu-id="e6b8b-117">Inherited from [policyBase](policyBase.md).</span></span>|
-|<span data-ttu-id="e6b8b-118">description</span><span class="sxs-lookup"><span data-stu-id="e6b8b-118">description</span></span>|<span data-ttu-id="e6b8b-119">String</span><span class="sxs-lookup"><span data-stu-id="e6b8b-119">String</span></span>| <span data-ttu-id="e6b8b-120">Описание для этой политики.</span><span class="sxs-lookup"><span data-stu-id="e6b8b-120">Description for this policy.</span></span> <span data-ttu-id="e6b8b-121">Наследуется от [основы](policyBase.md).</span><span class="sxs-lookup"><span data-stu-id="e6b8b-121">Inherited from [policyBase](policyBase.md).</span></span>|
-|<span data-ttu-id="e6b8b-122">displayName</span><span class="sxs-lookup"><span data-stu-id="e6b8b-122">displayName</span></span>|<span data-ttu-id="e6b8b-123">Строка</span><span class="sxs-lookup"><span data-stu-id="e6b8b-123">String</span></span>| <span data-ttu-id="e6b8b-124">Отображаемое имя для этой политики.</span><span class="sxs-lookup"><span data-stu-id="e6b8b-124">Display name for this policy.</span></span> <span data-ttu-id="e6b8b-125">Наследуется от [основы](policyBase.md).</span><span class="sxs-lookup"><span data-stu-id="e6b8b-125">Inherited from [policyBase](policyBase.md).</span></span>|
-|<span data-ttu-id="e6b8b-126">RDLC</span><span class="sxs-lookup"><span data-stu-id="e6b8b-126">definition</span></span>|<span data-ttu-id="e6b8b-127">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="e6b8b-127">String collection</span></span>| <span data-ttu-id="e6b8b-128">Коллекция String, содержащая строку JSON, определяющую правила и параметры политики.</span><span class="sxs-lookup"><span data-stu-id="e6b8b-128">A string collection containing a JSON string that defines the rules and settings for a policy.</span></span> <span data-ttu-id="e6b8b-129">Синтаксис определения отличается для каждого производного типа политики.</span><span class="sxs-lookup"><span data-stu-id="e6b8b-129">The syntax for the definition differs for each derived policy type.</span></span> <span data-ttu-id="e6b8b-130">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e6b8b-130">Required.</span></span>|
-|<span data-ttu-id="e6b8b-131">исорганизатиондефаулт</span><span class="sxs-lookup"><span data-stu-id="e6b8b-131">isOrganizationDefault</span></span>|<span data-ttu-id="e6b8b-132">Boolean</span><span class="sxs-lookup"><span data-stu-id="e6b8b-132">Boolean</span></span>|<span data-ttu-id="e6b8b-133">Если задано значение true, активируется эта политика.</span><span class="sxs-lookup"><span data-stu-id="e6b8b-133">If set to true, activates this policy.</span></span> <span data-ttu-id="e6b8b-134">Для одного и того же типа политики может быть задано несколько политик, но только одна из них может быть активирована в качестве организации по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="e6b8b-134">There can be many policies for the same policy type, but only one can be activated as the organization default.</span></span> <span data-ttu-id="e6b8b-135">Необязательное значение по умолчанию — false.</span><span class="sxs-lookup"><span data-stu-id="e6b8b-135">Optional, default value is false.</span></span>|
+|<span data-ttu-id="3a4ba-113">id</span><span class="sxs-lookup"><span data-stu-id="3a4ba-113">id</span></span>|<span data-ttu-id="3a4ba-114">String</span><span class="sxs-lookup"><span data-stu-id="3a4ba-114">String</span></span>| <span data-ttu-id="3a4ba-115">Уникальный идентификатор для этой политики.</span><span class="sxs-lookup"><span data-stu-id="3a4ba-115">Unique identifier for this policy.</span></span> <span data-ttu-id="3a4ba-116">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="3a4ba-116">Read-only.</span></span> <span data-ttu-id="3a4ba-117">Наследуется от [основы](policyBase.md).</span><span class="sxs-lookup"><span data-stu-id="3a4ba-117">Inherited from [policyBase](policyBase.md).</span></span>|
+|<span data-ttu-id="3a4ba-118">description</span><span class="sxs-lookup"><span data-stu-id="3a4ba-118">description</span></span>|<span data-ttu-id="3a4ba-119">String</span><span class="sxs-lookup"><span data-stu-id="3a4ba-119">String</span></span>| <span data-ttu-id="3a4ba-120">Описание для этой политики.</span><span class="sxs-lookup"><span data-stu-id="3a4ba-120">Description for this policy.</span></span> <span data-ttu-id="3a4ba-121">Наследуется от [основы](policyBase.md).</span><span class="sxs-lookup"><span data-stu-id="3a4ba-121">Inherited from [policyBase](policyBase.md).</span></span>|
+|<span data-ttu-id="3a4ba-122">displayName</span><span class="sxs-lookup"><span data-stu-id="3a4ba-122">displayName</span></span>|<span data-ttu-id="3a4ba-123">String</span><span class="sxs-lookup"><span data-stu-id="3a4ba-123">String</span></span>| <span data-ttu-id="3a4ba-124">Отображаемое имя для этой политики.</span><span class="sxs-lookup"><span data-stu-id="3a4ba-124">Display name for this policy.</span></span> <span data-ttu-id="3a4ba-125">Наследуется от [основы](policyBase.md).</span><span class="sxs-lookup"><span data-stu-id="3a4ba-125">Inherited from [policyBase](policyBase.md).</span></span>|
+|<span data-ttu-id="3a4ba-126">RDLC</span><span class="sxs-lookup"><span data-stu-id="3a4ba-126">definition</span></span>|<span data-ttu-id="3a4ba-127">Коллекция объектов string</span><span class="sxs-lookup"><span data-stu-id="3a4ba-127">String collection</span></span>| <span data-ttu-id="3a4ba-128">Коллекция String, содержащая строку JSON, определяющую правила и параметры политики.</span><span class="sxs-lookup"><span data-stu-id="3a4ba-128">A string collection containing a JSON string that defines the rules and settings for a policy.</span></span> <span data-ttu-id="3a4ba-129">Синтаксис определения отличается для каждого производного типа политики.</span><span class="sxs-lookup"><span data-stu-id="3a4ba-129">The syntax for the definition differs for each derived policy type.</span></span> <span data-ttu-id="3a4ba-130">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="3a4ba-130">Required.</span></span>|
+|<span data-ttu-id="3a4ba-131">исорганизатиондефаулт</span><span class="sxs-lookup"><span data-stu-id="3a4ba-131">isOrganizationDefault</span></span>|<span data-ttu-id="3a4ba-132">Логический</span><span class="sxs-lookup"><span data-stu-id="3a4ba-132">Boolean</span></span>|<span data-ttu-id="3a4ba-133">Если задано значение true, активируется эта политика.</span><span class="sxs-lookup"><span data-stu-id="3a4ba-133">If set to true, activates this policy.</span></span> <span data-ttu-id="3a4ba-134">Для одного и того же типа политики может быть задано несколько политик, но только одна из них может быть активирована в качестве организации по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="3a4ba-134">There can be many policies for the same policy type, but only one can be activated as the organization default.</span></span> <span data-ttu-id="3a4ba-135">Необязательное значение по умолчанию — false.</span><span class="sxs-lookup"><span data-stu-id="3a4ba-135">Optional, default value is false.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="e6b8b-136">Связи</span><span class="sxs-lookup"><span data-stu-id="e6b8b-136">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="3a4ba-136">Связи</span><span class="sxs-lookup"><span data-stu-id="3a4ba-136">Relationships</span></span>
 
-<span data-ttu-id="e6b8b-137">Нет</span><span class="sxs-lookup"><span data-stu-id="e6b8b-137">None</span></span>
+<span data-ttu-id="3a4ba-137">Нет</span><span class="sxs-lookup"><span data-stu-id="3a4ba-137">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="e6b8b-138">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e6b8b-138">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3a4ba-138">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="3a4ba-138">JSON representation</span></span>
 
-<span data-ttu-id="e6b8b-139">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e6b8b-139">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="3a4ba-139">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3a4ba-139">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -73,5 +73,3 @@ ms.locfileid: "48044209"
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

@@ -5,58 +5,58 @@ author: kenwith
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 095ce00cafcc07c17de5e93b766fb5d12def4723
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 0be3a07c2dec554c25afcb5c228bc392615c9964
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373575"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405367"
 ---
-# <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a><span data-ttu-id="53a60-103">Автоматизация настройки единого входа на основе SAML для приложений с помощью API Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="53a60-103">Automate SAML-based SSO app configuration with Microsoft Graph API</span></span>
+# <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a><span data-ttu-id="75fd9-103">Автоматизация настройки единого входа на основе SAML для приложений с помощью API Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="75fd9-103">Automate SAML-based SSO app configuration with Microsoft Graph API</span></span>
 
-<span data-ttu-id="53a60-104">Из этой статьи вы узнаете, как создать и настроить приложение из коллекции Azure Active Directory (Azure AD).</span><span class="sxs-lookup"><span data-stu-id="53a60-104">In this article, you'll learn how to create and configure an application from the Azure Active Directory (Azure AD) Gallery.</span></span> <span data-ttu-id="53a60-105">В этой статье в качестве примера используется AWS, но описанные здесь шаги можно применить для любого другого приложения на основе SAML, включенного в коллекцию Azure AD.</span><span class="sxs-lookup"><span data-stu-id="53a60-105">This article uses AWS as an example, but you can use the steps in this article for any SAML-based app in the Azure AD Gallery.</span></span>
+<span data-ttu-id="75fd9-104">Из этой статьи вы узнаете, как создать и настроить приложение из коллекции Azure Active Directory (Azure AD).</span><span class="sxs-lookup"><span data-stu-id="75fd9-104">In this article, you'll learn how to create and configure an application from the Azure Active Directory (Azure AD) Gallery.</span></span> <span data-ttu-id="75fd9-105">В этой статье в качестве примера используется AWS, но описанные здесь шаги можно применить для любого другого приложения на основе SAML, включенного в коллекцию Azure AD.</span><span class="sxs-lookup"><span data-stu-id="75fd9-105">This article uses AWS as an example, but you can use the steps in this article for any SAML-based app in the Azure AD Gallery.</span></span>
 
-<span data-ttu-id="53a60-106">**Шаги по автоматизации настройки единого входа на основе SAML с помощью API Microsoft Graph**</span><span class="sxs-lookup"><span data-stu-id="53a60-106">**Steps to use Microsoft Graph APIs to automate configuration of SAML-based single sign-on**</span></span>
+<span data-ttu-id="75fd9-106">**Шаги по автоматизации настройки единого входа на основе SAML с помощью API Microsoft Graph**</span><span class="sxs-lookup"><span data-stu-id="75fd9-106">**Steps to use Microsoft Graph APIs to automate configuration of SAML-based single sign-on**</span></span>
 
-| <span data-ttu-id="53a60-107">Шаг</span><span class="sxs-lookup"><span data-stu-id="53a60-107">Step</span></span>  | <span data-ttu-id="53a60-108">Сведения</span><span class="sxs-lookup"><span data-stu-id="53a60-108">Details</span></span>  |
+| <span data-ttu-id="75fd9-107">Шаг</span><span class="sxs-lookup"><span data-stu-id="75fd9-107">Step</span></span>  | <span data-ttu-id="75fd9-108">Сведения</span><span class="sxs-lookup"><span data-stu-id="75fd9-108">Details</span></span>  |
 |---------|---------|
-| [<span data-ttu-id="53a60-109">1. Создание приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="53a60-109">1. Create the gallery application</span></span>](#step-1-create-the-gallery-application) | <span data-ttu-id="53a60-110">Вход в клиент API</span><span class="sxs-lookup"><span data-stu-id="53a60-110">Sign in to the API client</span></span> <br> <span data-ttu-id="53a60-111">Получение приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="53a60-111">Retrieve the gallery application</span></span> <br> <span data-ttu-id="53a60-112">Создание приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="53a60-112">Create the gallery application</span></span>|
-| [<span data-ttu-id="53a60-113">2. Настройка единого входа</span><span class="sxs-lookup"><span data-stu-id="53a60-113">2. Configure single sign-on</span></span>](#step-2-configure-single-sign-on) | <span data-ttu-id="53a60-114">Получение идентификаторов объектов для приложения и субъекта-службы</span><span class="sxs-lookup"><span data-stu-id="53a60-114">Retrieve app object ID and service principal object ID</span></span> <br> <span data-ttu-id="53a60-115">Настройка режима единого входа</span><span class="sxs-lookup"><span data-stu-id="53a60-115">Set single sign-on mode</span></span> <br> <span data-ttu-id="53a60-116">Настройка основных URL-адресов SAML, таких как идентификатор, URL-адрес ответа и URL-адрес входа</span><span class="sxs-lookup"><span data-stu-id="53a60-116">Set basic SAML URLs such as identifier, reply URL, sign-on URL</span></span> <br> <span data-ttu-id="53a60-117">Добавление ролей приложения (необязательно)</span><span class="sxs-lookup"><span data-stu-id="53a60-117">Add app roles (Optional)</span></span>|
-| [<span data-ttu-id="53a60-118">3. Настройка сопоставления утверждений</span><span class="sxs-lookup"><span data-stu-id="53a60-118">3. Configure claims mapping</span></span>](#step-3-configure-claims-mapping) | <span data-ttu-id="53a60-119">Создание политики сопоставления утверждений</span><span class="sxs-lookup"><span data-stu-id="53a60-119">Create claims mapping policy</span></span> <br> <span data-ttu-id="53a60-120">Назначение политики сопоставления утверждений субъекту-службе</span><span class="sxs-lookup"><span data-stu-id="53a60-120">Assign claims mapping policy to service principal</span></span>|
-| [<span data-ttu-id="53a60-121">4. Настройка сертификата для подписи</span><span class="sxs-lookup"><span data-stu-id="53a60-121">4. Configure signing certificate</span></span>](#step-4-configure-signing-certificate) | <span data-ttu-id="53a60-122">Создание сертификата</span><span class="sxs-lookup"><span data-stu-id="53a60-122">Create a certificate</span></span> <BR> <span data-ttu-id="53a60-123">Добавление пользовательского ключа подписывания</span><span class="sxs-lookup"><span data-stu-id="53a60-123">Add a custom signing key</span></span> <br> <span data-ttu-id="53a60-124">Активация пользовательского ключа подписывания</span><span class="sxs-lookup"><span data-stu-id="53a60-124">Activate the custom signing key</span></span>|
-| [<span data-ttu-id="53a60-125">5. Назначение пользователей</span><span class="sxs-lookup"><span data-stu-id="53a60-125">5. Assign users</span></span>](#step-5-assign-users) | <span data-ttu-id="53a60-126">Назначение пользователей и групп для приложения</span><span class="sxs-lookup"><span data-stu-id="53a60-126">Assign users and groups to the application</span></span>
-| [<span data-ttu-id="53a60-127">6. Настройка на стороне приложения</span><span class="sxs-lookup"><span data-stu-id="53a60-127">6. Configure the application side</span></span>](#step-6-configure-the-application-side)| <span data-ttu-id="53a60-128">Получение метаданных SAML из Azure AD</span><span class="sxs-lookup"><span data-stu-id="53a60-128">Get Azure AD SAML metadata</span></span>
+| [<span data-ttu-id="75fd9-109">1. Создание приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="75fd9-109">1. Create the gallery application</span></span>](#step-1-create-the-gallery-application) | <span data-ttu-id="75fd9-110">Вход в клиент API</span><span class="sxs-lookup"><span data-stu-id="75fd9-110">Sign in to the API client</span></span> <br> <span data-ttu-id="75fd9-111">Получение приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="75fd9-111">Retrieve the gallery application</span></span> <br> <span data-ttu-id="75fd9-112">Создание приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="75fd9-112">Create the gallery application</span></span>|
+| [<span data-ttu-id="75fd9-113">2. Настройка единого входа</span><span class="sxs-lookup"><span data-stu-id="75fd9-113">2. Configure single sign-on</span></span>](#step-2-configure-single-sign-on) | <span data-ttu-id="75fd9-114">Получение идентификаторов объектов для приложения и субъекта-службы</span><span class="sxs-lookup"><span data-stu-id="75fd9-114">Retrieve app object ID and service principal object ID</span></span> <br> <span data-ttu-id="75fd9-115">Настройка режима единого входа</span><span class="sxs-lookup"><span data-stu-id="75fd9-115">Set single sign-on mode</span></span> <br> <span data-ttu-id="75fd9-116">Настройка основных URL-адресов SAML, таких как идентификатор, URL-адрес ответа и URL-адрес входа</span><span class="sxs-lookup"><span data-stu-id="75fd9-116">Set basic SAML URLs such as identifier, reply URL, sign-on URL</span></span> <br> <span data-ttu-id="75fd9-117">Добавление ролей приложения (необязательно)</span><span class="sxs-lookup"><span data-stu-id="75fd9-117">Add app roles (Optional)</span></span>|
+| [<span data-ttu-id="75fd9-118">3. Настройка сопоставления утверждений</span><span class="sxs-lookup"><span data-stu-id="75fd9-118">3. Configure claims mapping</span></span>](#step-3-configure-claims-mapping) | <span data-ttu-id="75fd9-119">Создание политики сопоставления утверждений</span><span class="sxs-lookup"><span data-stu-id="75fd9-119">Create claims mapping policy</span></span> <br> <span data-ttu-id="75fd9-120">Назначение политики сопоставления утверждений субъекту-службе</span><span class="sxs-lookup"><span data-stu-id="75fd9-120">Assign claims mapping policy to service principal</span></span>|
+| [<span data-ttu-id="75fd9-121">4. Настройка сертификата для подписи</span><span class="sxs-lookup"><span data-stu-id="75fd9-121">4. Configure signing certificate</span></span>](#step-4-configure-signing-certificate) | <span data-ttu-id="75fd9-122">Создание сертификата</span><span class="sxs-lookup"><span data-stu-id="75fd9-122">Create a certificate</span></span> <BR> <span data-ttu-id="75fd9-123">Добавление пользовательского ключа подписывания</span><span class="sxs-lookup"><span data-stu-id="75fd9-123">Add a custom signing key</span></span> <br> <span data-ttu-id="75fd9-124">Активация пользовательского ключа подписывания</span><span class="sxs-lookup"><span data-stu-id="75fd9-124">Activate the custom signing key</span></span>|
+| [<span data-ttu-id="75fd9-125">5. Назначение пользователей</span><span class="sxs-lookup"><span data-stu-id="75fd9-125">5. Assign users</span></span>](#step-5-assign-users) | <span data-ttu-id="75fd9-126">Назначение пользователей и групп для приложения</span><span class="sxs-lookup"><span data-stu-id="75fd9-126">Assign users and groups to the application</span></span>
+| [<span data-ttu-id="75fd9-127">6. Настройка на стороне приложения</span><span class="sxs-lookup"><span data-stu-id="75fd9-127">6. Configure the application side</span></span>](#step-6-configure-the-application-side)| <span data-ttu-id="75fd9-128">Получение метаданных SAML из Azure AD</span><span class="sxs-lookup"><span data-stu-id="75fd9-128">Get Azure AD SAML metadata</span></span>
 
-<span data-ttu-id="53a60-129">**Список всех API, используемых в этой статье**</span><span class="sxs-lookup"><span data-stu-id="53a60-129">**List of all APIs used in the article**</span></span>
+<span data-ttu-id="75fd9-129">**Список всех API, используемых в этой статье**</span><span class="sxs-lookup"><span data-stu-id="75fd9-129">**List of all APIs used in the article**</span></span>
 
-<span data-ttu-id="53a60-130">Убедитесь, что у вас есть соответствующие разрешения для вызова следующих API.</span><span class="sxs-lookup"><span data-stu-id="53a60-130">Make sure you have the corresponding permissions to call the following APIs.</span></span>
+<span data-ttu-id="75fd9-130">Убедитесь, что у вас есть соответствующие разрешения для вызова следующих API.</span><span class="sxs-lookup"><span data-stu-id="75fd9-130">Make sure you have the corresponding permissions to call the following APIs.</span></span>
 
-|<span data-ttu-id="53a60-131">Тип ресурса</span><span class="sxs-lookup"><span data-stu-id="53a60-131">Resource type</span></span> |<span data-ttu-id="53a60-132">Метод</span><span class="sxs-lookup"><span data-stu-id="53a60-132">Method</span></span> |
+|<span data-ttu-id="75fd9-131">Тип ресурса</span><span class="sxs-lookup"><span data-stu-id="75fd9-131">Resource type</span></span> |<span data-ttu-id="75fd9-132">Метод</span><span class="sxs-lookup"><span data-stu-id="75fd9-132">Method</span></span> |
 |---------|---------|
-|[<span data-ttu-id="53a60-133">applicationTemplate</span><span class="sxs-lookup"><span data-stu-id="53a60-133">applicationTemplate</span></span>](/graph/api/resources/applicationtemplate?view=graph-rest-beta)|[<span data-ttu-id="53a60-134">Перечисление applicationTemplate</span><span class="sxs-lookup"><span data-stu-id="53a60-134">List applicationTemplate</span></span>](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) <br>[<span data-ttu-id="53a60-135">Создание экземпляра applicationTemplate</span><span class="sxs-lookup"><span data-stu-id="53a60-135">Instantiate applicationTemplate</span></span>](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta)|
-|[<span data-ttu-id="53a60-136">servicePrincipals</span><span class="sxs-lookup"><span data-stu-id="53a60-136">servicePrincipals</span></span>](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[<span data-ttu-id="53a60-137">Обновление servicePrincipal</span><span class="sxs-lookup"><span data-stu-id="53a60-137">Update servicePrincipal</span></span>](/graph/api/serviceprincipal-update?tabs=http&view=graph-rest-1.0) <br> [<span data-ttu-id="53a60-138">Создание appRoleAssignments</span><span class="sxs-lookup"><span data-stu-id="53a60-138">Create appRoleAssignments</span></span>](/graph/api/serviceprincipal-post-approleassignments?tabs=http&view=graph-rest-1.0) <br> [<span data-ttu-id="53a60-139">Назначение claimsMappingPolicies</span><span class="sxs-lookup"><span data-stu-id="53a60-139">Assign claimsMappingPolicies</span></span>](/graph/api/serviceprincipal-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)|
-|[<span data-ttu-id="53a60-140">applications</span><span class="sxs-lookup"><span data-stu-id="53a60-140">applications</span></span>](/graph/api/resources/application?view=graph-rest-1.0)|[<span data-ttu-id="53a60-141">Обновление приложения</span><span class="sxs-lookup"><span data-stu-id="53a60-141">Update application</span></span>](/graph/api/application-update?tabs=http&view=graph-rest-1.0)|
-|[<span data-ttu-id="53a60-142">claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="53a60-142">claimsMappingPolicy</span></span>](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [<span data-ttu-id="53a60-143">Создание claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="53a60-143">Create claimsMappingPolicy</span></span>](/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)
+|[<span data-ttu-id="75fd9-133">applicationTemplate</span><span class="sxs-lookup"><span data-stu-id="75fd9-133">applicationTemplate</span></span>](/graph/api/resources/applicationtemplate?view=graph-rest-beta)|[<span data-ttu-id="75fd9-134">Перечисление applicationTemplate</span><span class="sxs-lookup"><span data-stu-id="75fd9-134">List applicationTemplate</span></span>](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) <br>[<span data-ttu-id="75fd9-135">Создание экземпляра applicationTemplate</span><span class="sxs-lookup"><span data-stu-id="75fd9-135">Instantiate applicationTemplate</span></span>](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta)|
+|[<span data-ttu-id="75fd9-136">servicePrincipals</span><span class="sxs-lookup"><span data-stu-id="75fd9-136">servicePrincipals</span></span>](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[<span data-ttu-id="75fd9-137">Обновление servicePrincipal</span><span class="sxs-lookup"><span data-stu-id="75fd9-137">Update servicePrincipal</span></span>](/graph/api/serviceprincipal-update?tabs=http&view=graph-rest-1.0) <br> [<span data-ttu-id="75fd9-138">Создание appRoleAssignments</span><span class="sxs-lookup"><span data-stu-id="75fd9-138">Create appRoleAssignments</span></span>](/graph/api/serviceprincipal-post-approleassignments?tabs=http&view=graph-rest-1.0) <br> [<span data-ttu-id="75fd9-139">Назначение claimsMappingPolicies</span><span class="sxs-lookup"><span data-stu-id="75fd9-139">Assign claimsMappingPolicies</span></span>](/graph/api/serviceprincipal-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)|
+|[<span data-ttu-id="75fd9-140">applications</span><span class="sxs-lookup"><span data-stu-id="75fd9-140">applications</span></span>](/graph/api/resources/application?view=graph-rest-1.0)|[<span data-ttu-id="75fd9-141">Обновление приложения</span><span class="sxs-lookup"><span data-stu-id="75fd9-141">Update application</span></span>](/graph/api/application-update?tabs=http&view=graph-rest-1.0)|
+|[<span data-ttu-id="75fd9-142">claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="75fd9-142">claimsMappingPolicy</span></span>](/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)| [<span data-ttu-id="75fd9-143">Создание claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="75fd9-143">Create claimsMappingPolicy</span></span>](/graph/api/claimsmappingpolicy-post-claimsmappingpolicies?tabs=http&view=graph-rest-beta)
 
 >[!NOTE]
-><span data-ttu-id="53a60-144">Объекты отклика, приведенные в этой статье, могут быть сокращены для удобства чтения.</span><span class="sxs-lookup"><span data-stu-id="53a60-144">The response objects shown in this article might be shortened for readability.</span></span> <span data-ttu-id="53a60-145">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="53a60-145">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="75fd9-144">Объекты отклика, приведенные в этой статье, могут быть сокращены для удобства чтения.</span><span class="sxs-lookup"><span data-stu-id="75fd9-144">The response objects shown in this article might be shortened for readability.</span></span> <span data-ttu-id="75fd9-145">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="75fd9-145">All the properties will be returned from an actual call.</span></span>
 
-## <a name="step-1-create-the-gallery-application"></a><span data-ttu-id="53a60-146">Шаг 1. Создание приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="53a60-146">Step 1: Create the gallery application</span></span>
+## <a name="step-1-create-the-gallery-application"></a><span data-ttu-id="75fd9-146">Шаг 1. Создание приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="75fd9-146">Step 1: Create the gallery application</span></span>
 
-### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a><span data-ttu-id="53a60-147">Вход в песочницу Microsoft Graph (рекомендуется), Postman или любой другой используемый клиент API</span><span class="sxs-lookup"><span data-stu-id="53a60-147">Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API client you use</span></span>
+### <a name="sign-in-to-microsoft-graph-explorer-recommended-postman-or-any-other-api-client-you-use"></a><span data-ttu-id="75fd9-147">Вход в песочницу Microsoft Graph (рекомендуется), Postman или любой другой используемый клиент API</span><span class="sxs-lookup"><span data-stu-id="75fd9-147">Sign in to Microsoft Graph Explorer (recommended), Postman, or any other API client you use</span></span>
 
-1. <span data-ttu-id="53a60-148">Запустите [песочницу Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).</span><span class="sxs-lookup"><span data-stu-id="53a60-148">Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span></span>
-2. <span data-ttu-id="53a60-149">Выберите вариант **Вход с помощью учетной записи Майкрософт** и войдите, используя учетные данные глобального администратора Azure AD или администратора приложения.</span><span class="sxs-lookup"><span data-stu-id="53a60-149">Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator or App Admin credentials.</span></span>
-3. <span data-ttu-id="53a60-150">После успешного входа вы увидите данные учетной записи пользователя на панели слева.</span><span class="sxs-lookup"><span data-stu-id="53a60-150">Upon successful sign-in, you'll see the user account details in the left-hand pane.</span></span>
+1. <span data-ttu-id="75fd9-148">Запустите [песочницу Microsoft Graph](https://developer.microsoft.com/graph/graph-explorer).</span><span class="sxs-lookup"><span data-stu-id="75fd9-148">Start [Microsoft Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).</span></span>
+2. <span data-ttu-id="75fd9-149">Выберите вариант **Вход с помощью учетной записи Майкрософт** и войдите, используя учетные данные глобального администратора Azure AD или администратора приложения.</span><span class="sxs-lookup"><span data-stu-id="75fd9-149">Select **Sign-In with Microsoft** and sign in using an Azure AD global administrator or App Admin credentials.</span></span>
+3. <span data-ttu-id="75fd9-150">После успешного входа вы увидите данные учетной записи пользователя на панели слева.</span><span class="sxs-lookup"><span data-stu-id="75fd9-150">Upon successful sign-in, you'll see the user account details in the left-hand pane.</span></span>
 
-### <a name="retrieve-the-gallery-application-template-identifier"></a><span data-ttu-id="53a60-151">Получение идентификатора шаблона для приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="53a60-151">Retrieve the gallery application template identifier</span></span>
+### <a name="retrieve-the-gallery-application-template-identifier"></a><span data-ttu-id="75fd9-151">Получение идентификатора шаблона для приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="75fd9-151">Retrieve the gallery application template identifier</span></span>
 
-<span data-ttu-id="53a60-152">У каждого приложения в коллекции приложений Azure AD есть [шаблон](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta), описывающий метаданные для этого приложения.</span><span class="sxs-lookup"><span data-stu-id="53a60-152">Applications in the Azure AD application gallery each have an [application template](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) that describes the metadata for that application.</span></span> <span data-ttu-id="53a60-153">По этому шаблону вы можете создать экземпляр приложения и субъект-службу в клиенте для управления им.</span><span class="sxs-lookup"><span data-stu-id="53a60-153">Using this template, you can create an instance of the application and service principal in your tenant for management.</span></span>
+<span data-ttu-id="75fd9-152">У каждого приложения в коллекции приложений Azure AD есть [шаблон](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta), описывающий метаданные для этого приложения.</span><span class="sxs-lookup"><span data-stu-id="75fd9-152">Applications in the Azure AD application gallery each have an [application template](/graph/api/applicationtemplate-list?tabs=http&view=graph-rest-beta) that describes the metadata for that application.</span></span> <span data-ttu-id="75fd9-153">По этому шаблону вы можете создать экземпляр приложения и субъект-службу в клиенте для управления им.</span><span class="sxs-lookup"><span data-stu-id="75fd9-153">Using this template, you can create an instance of the application and service principal in your tenant for management.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="53a60-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="53a60-154">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="75fd9-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="75fd9-154">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="53a60-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="53a60-155">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="75fd9-155">HTTP</span><span class="sxs-lookup"><span data-stu-id="75fd9-155">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_applicationtemplates"
@@ -65,22 +65,22 @@ ms.locfileid: "48373575"
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/applicationTemplates
 ```
-# <a name="c"></a>[<span data-ttu-id="53a60-156">C#</span><span class="sxs-lookup"><span data-stu-id="53a60-156">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="75fd9-156">C#</span><span class="sxs-lookup"><span data-stu-id="75fd9-156">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplates-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="53a60-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="53a60-157">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="75fd9-157">JavaScript</span><span class="sxs-lookup"><span data-stu-id="75fd9-157">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplates-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="53a60-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="53a60-158">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="75fd9-158">Objective-C</span><span class="sxs-lookup"><span data-stu-id="75fd9-158">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-applicationtemplates-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="53a60-159">Отклик</span><span class="sxs-lookup"><span data-stu-id="53a60-159">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="75fd9-159">Отклик</span><span class="sxs-lookup"><span data-stu-id="75fd9-159">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -117,21 +117,21 @@ Content-type: application/json
 }
 ```
 
-### <a name="create-the-gallery-application"></a><span data-ttu-id="53a60-160">Создание приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="53a60-160">Create the gallery application</span></span>
+### <a name="create-the-gallery-application"></a><span data-ttu-id="75fd9-160">Создание приложения из коллекции</span><span class="sxs-lookup"><span data-stu-id="75fd9-160">Create the gallery application</span></span>
 
-<span data-ttu-id="53a60-161">Используя идентификатор шаблона, полученный для приложения на предыдущем шаге, [создайте экземпляр](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) приложения и субъект-службу в клиенте.</span><span class="sxs-lookup"><span data-stu-id="53a60-161">Using the template ID that you retrieved for your application in the last step, [create an instance](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) of the application and service principal in your tenant.</span></span>
+<span data-ttu-id="75fd9-161">Используя идентификатор шаблона, полученный для приложения на предыдущем шаге, [создайте экземпляр](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) приложения и субъект-службу в клиенте.</span><span class="sxs-lookup"><span data-stu-id="75fd9-161">Using the template ID that you retrieved for your application in the last step, [create an instance](/graph/api/applicationtemplate-instantiate?tabs=http&view=graph-rest-beta) of the application and service principal in your tenant.</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="53a60-162">Вы можете использовать API applicationTemplate для создания экземпляров [приложений не из коллекции](/azure/active-directory/manage-apps/view-applications-portal).</span><span class="sxs-lookup"><span data-stu-id="53a60-162">You can use applicationTemplate API to instantiate [Non-Gallery apps](/azure/active-directory/manage-apps/view-applications-portal).</span></span> <span data-ttu-id="53a60-163">Используйте applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.</span><span class="sxs-lookup"><span data-stu-id="53a60-163">Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.</span></span>
+> <span data-ttu-id="75fd9-162">Вы можете использовать API applicationTemplate для создания экземпляров [приложений не из коллекции](/azure/active-directory/manage-apps/view-applications-portal).</span><span class="sxs-lookup"><span data-stu-id="75fd9-162">You can use applicationTemplate API to instantiate [Non-Gallery apps](/azure/active-directory/manage-apps/view-applications-portal).</span></span> <span data-ttu-id="75fd9-163">Используйте applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.</span><span class="sxs-lookup"><span data-stu-id="75fd9-163">Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="53a60-164">Подождите некоторое время, пока приложение будет подготовлено в клиенте Azure AD.</span><span class="sxs-lookup"><span data-stu-id="53a60-164">Allow some time for the app to be provisioned into your Azure AD tenant.</span></span> <span data-ttu-id="53a60-165">Это не происходит сразу.</span><span class="sxs-lookup"><span data-stu-id="53a60-165">It is not instant.</span></span> <span data-ttu-id="53a60-166">Одной из стратегий является выполнение запроса GET для объекта приложения или субъекта-службы каждые 5–10 секунд до тех пор, пока запрос не будет успешным.</span><span class="sxs-lookup"><span data-stu-id="53a60-166">One strategy is to do a GET query on the application / service principal object every 5-10 seconds until the query is successful.</span></span>
+> <span data-ttu-id="75fd9-164">Подождите некоторое время, пока приложение будет подготовлено в клиенте Azure AD.</span><span class="sxs-lookup"><span data-stu-id="75fd9-164">Allow some time for the app to be provisioned into your Azure AD tenant.</span></span> <span data-ttu-id="75fd9-165">Это не происходит сразу.</span><span class="sxs-lookup"><span data-stu-id="75fd9-165">It is not instant.</span></span> <span data-ttu-id="75fd9-166">Одной из стратегий является выполнение запроса GET для объекта приложения или субъекта-службы каждые 5–10 секунд до тех пор, пока запрос не будет успешным.</span><span class="sxs-lookup"><span data-stu-id="75fd9-166">One strategy is to do a GET query on the application / service principal object every 5-10 seconds until the query is successful.</span></span>
 
 
-#### <a name="request"></a><span data-ttu-id="53a60-167">Запрос</span><span class="sxs-lookup"><span data-stu-id="53a60-167">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="75fd9-167">Запрос</span><span class="sxs-lookup"><span data-stu-id="75fd9-167">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="53a60-168">HTTP</span><span class="sxs-lookup"><span data-stu-id="53a60-168">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="75fd9-168">HTTP</span><span class="sxs-lookup"><span data-stu-id="75fd9-168">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "applicationtemplate_instantiate"
@@ -145,22 +145,22 @@ Content-type: application/json
   "displayName": "AWS Contoso"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="53a60-169">C#</span><span class="sxs-lookup"><span data-stu-id="53a60-169">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="75fd9-169">C#</span><span class="sxs-lookup"><span data-stu-id="75fd9-169">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/applicationtemplate-instantiate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="53a60-170">JavaScript</span><span class="sxs-lookup"><span data-stu-id="53a60-170">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="75fd9-170">JavaScript</span><span class="sxs-lookup"><span data-stu-id="75fd9-170">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/applicationtemplate-instantiate-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="53a60-171">Objective-C</span><span class="sxs-lookup"><span data-stu-id="53a60-171">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="75fd9-171">Objective-C</span><span class="sxs-lookup"><span data-stu-id="75fd9-171">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/applicationtemplate-instantiate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="53a60-172">Отклик</span><span class="sxs-lookup"><span data-stu-id="53a60-172">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="75fd9-172">Отклик</span><span class="sxs-lookup"><span data-stu-id="75fd9-172">Response</span></span>
 
 
 <!-- {
@@ -207,11 +207,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="step-2-configure-single-sign-on"></a><span data-ttu-id="53a60-173">Шаг 2. Настройка единого входа</span><span class="sxs-lookup"><span data-stu-id="53a60-173">Step 2: Configure single sign-on</span></span>
+## <a name="step-2-configure-single-sign-on"></a><span data-ttu-id="75fd9-173">Шаг 2. Настройка единого входа</span><span class="sxs-lookup"><span data-stu-id="75fd9-173">Step 2: Configure single sign-on</span></span>
 
-### <a name="retrieve-app-object-id-and-service-principal-object-id"></a><span data-ttu-id="53a60-174">Получение идентификаторов объектов для приложения и субъекта-службы</span><span class="sxs-lookup"><span data-stu-id="53a60-174">Retrieve app object ID and service principal object ID</span></span>
+### <a name="retrieve-app-object-id-and-service-principal-object-id"></a><span data-ttu-id="75fd9-174">Получение идентификаторов объектов для приложения и субъекта-службы</span><span class="sxs-lookup"><span data-stu-id="75fd9-174">Retrieve app object ID and service principal object ID</span></span>
 
-<span data-ttu-id="53a60-175">Из отклика на предыдущий вызов извлеките и сохраните идентификаторы объекта для приложения и субъекта-службы.</span><span class="sxs-lookup"><span data-stu-id="53a60-175">Use the response from the previous call to retrieve and save the application object ID and service principal object ID.</span></span>
+<span data-ttu-id="75fd9-175">Из отклика на предыдущий вызов извлеките и сохраните идентификаторы объекта для приложения и субъекта-службы.</span><span class="sxs-lookup"><span data-stu-id="75fd9-175">Use the response from the previous call to retrieve and save the application object ID and service principal object ID.</span></span>
 
 ```
 "application": {
@@ -221,45 +221,45 @@ Content-type: application/json
         "objectId": "f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
 }
 ```
-### <a name="set-single-sign-on-mode"></a><span data-ttu-id="53a60-176">Настройка режима единого входа</span><span class="sxs-lookup"><span data-stu-id="53a60-176">Set single sign-on mode</span></span>
+### <a name="set-single-sign-on-mode"></a><span data-ttu-id="75fd9-176">Настройка режима единого входа</span><span class="sxs-lookup"><span data-stu-id="75fd9-176">Set single sign-on mode</span></span>
 
-<span data-ttu-id="53a60-177">В этом примере вы настроите режим единого входа `saml` для [типа ресурса servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0).</span><span class="sxs-lookup"><span data-stu-id="53a60-177">In this example, you'll set `saml` as the single sign-on mode in the [servicePrincipal resource type](/graph/api/resources/serviceprincipal?view=graph-rest-1.0).</span></span> <span data-ttu-id="53a60-178">Также вы можете настроить другие свойства единого входа SAML: `notificationEmailAddresses`, `loginUrl` и `samlSingleSignOnSettings.relayState`.</span><span class="sxs-lookup"><span data-stu-id="53a60-178">Other SAML SSO properties that you can configure are: `notificationEmailAddresses`, `loginUrl`, and `samlSingleSignOnSettings.relayState`.</span></span>
+<span data-ttu-id="75fd9-177">В этом примере вы настроите режим единого входа `saml` для [типа ресурса servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0).</span><span class="sxs-lookup"><span data-stu-id="75fd9-177">In this example, you'll set `saml` as the single sign-on mode in the [servicePrincipal resource type](/graph/api/resources/serviceprincipal?view=graph-rest-1.0).</span></span> <span data-ttu-id="75fd9-178">Также вы можете настроить другие свойства единого входа SAML: `notificationEmailAddresses`, `loginUrl` и `samlSingleSignOnSettings.relayState`.</span><span class="sxs-lookup"><span data-stu-id="75fd9-178">Other SAML SSO properties that you can configure are: `notificationEmailAddresses`, `loginUrl`, and `samlSingleSignOnSettings.relayState`.</span></span>
 
-<span data-ttu-id="53a60-179">Прежде чем этот запрос заработает, необходимо предоставить согласие на вкладке **Изменить разрешения** в песочнице Graph.</span><span class="sxs-lookup"><span data-stu-id="53a60-179">Before this query will work you need to provide consent on the **Modify permissions** tab in Graph Explorer.</span></span> <span data-ttu-id="53a60-180">Кроме того, используйте идентификатор **servicePrincipal**, полученный ранее.</span><span class="sxs-lookup"><span data-stu-id="53a60-180">Also, make sure you are using the **servicePrincipal** ID that you obtained earlier.</span></span>
+<span data-ttu-id="75fd9-179">Прежде чем этот запрос заработает, необходимо предоставить согласие на вкладке **Изменить разрешения** в песочнице Graph.</span><span class="sxs-lookup"><span data-stu-id="75fd9-179">Before this query will work you need to provide consent on the **Modify permissions** tab in Graph Explorer.</span></span> <span data-ttu-id="75fd9-180">Кроме того, используйте идентификатор **servicePrincipal**, полученный ранее.</span><span class="sxs-lookup"><span data-stu-id="75fd9-180">Also, make sure you are using the **servicePrincipal** ID that you obtained earlier.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="53a60-181">Запрос</span><span class="sxs-lookup"><span data-stu-id="53a60-181">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="75fd9-181">Запрос</span><span class="sxs-lookup"><span data-stu-id="75fd9-181">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="53a60-182">HTTP</span><span class="sxs-lookup"><span data-stu-id="53a60-182">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="75fd9-182">HTTP</span><span class="sxs-lookup"><span data-stu-id="75fd9-182">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
 }-->
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
-Content-type: servicePrincipal/json
+PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
+Content-type: application/json
 
 {
     "preferredSingleSignOnMode": "saml"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="53a60-183">C#</span><span class="sxs-lookup"><span data-stu-id="53a60-183">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="75fd9-183">C#</span><span class="sxs-lookup"><span data-stu-id="75fd9-183">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="53a60-184">JavaScript</span><span class="sxs-lookup"><span data-stu-id="53a60-184">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="75fd9-184">JavaScript</span><span class="sxs-lookup"><span data-stu-id="75fd9-184">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="53a60-185">Objective-C</span><span class="sxs-lookup"><span data-stu-id="53a60-185">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="75fd9-185">Objective-C</span><span class="sxs-lookup"><span data-stu-id="75fd9-185">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="53a60-186">Отклик</span><span class="sxs-lookup"><span data-stu-id="53a60-186">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="75fd9-186">Отклик</span><span class="sxs-lookup"><span data-stu-id="75fd9-186">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -270,16 +270,16 @@ Content-type: servicePrincipal/json
 HTTP/1.1 204
 ```
 
-### <a name="set-basic-saml-urls-such-as-identifier-reply-url-sign-on-url"></a><span data-ttu-id="53a60-187">Настройка основных URL-адресов SAML, таких как идентификатор, URL-адрес ответа и URL-адрес входа</span><span class="sxs-lookup"><span data-stu-id="53a60-187">Set basic SAML URLs such as identifier, reply URL, sign-on URL</span></span>
+### <a name="set-basic-saml-urls-such-as-identifier-reply-url-sign-on-url"></a><span data-ttu-id="75fd9-187">Настройка основных URL-адресов SAML, таких как идентификатор, URL-адрес ответа и URL-адрес входа</span><span class="sxs-lookup"><span data-stu-id="75fd9-187">Set basic SAML URLs such as identifier, reply URL, sign-on URL</span></span>
 
-<span data-ttu-id="53a60-188">Настройте идентификатор и URL-адреса ответа для AWS в объекте приложения.</span><span class="sxs-lookup"><span data-stu-id="53a60-188">Set the identifier and reply URLs for AWS in the application object.</span></span>
+<span data-ttu-id="75fd9-188">Настройте идентификатор и URL-адреса ответа для AWS в объекте приложения.</span><span class="sxs-lookup"><span data-stu-id="75fd9-188">Set the identifier and reply URLs for AWS in the application object.</span></span>
 
-<span data-ttu-id="53a60-189">Используйте идентификатор **application**, полученный ранее.</span><span class="sxs-lookup"><span data-stu-id="53a60-189">Make sure you are using the **application** id obtained earlier.</span></span>
+<span data-ttu-id="75fd9-189">Используйте идентификатор **application**, полученный ранее.</span><span class="sxs-lookup"><span data-stu-id="75fd9-189">Make sure you are using the **application** id obtained earlier.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="53a60-190">Запрос</span><span class="sxs-lookup"><span data-stu-id="53a60-190">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="75fd9-190">Запрос</span><span class="sxs-lookup"><span data-stu-id="75fd9-190">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="53a60-191">HTTP</span><span class="sxs-lookup"><span data-stu-id="53a60-191">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="75fd9-191">HTTP</span><span class="sxs-lookup"><span data-stu-id="75fd9-191">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -300,25 +300,25 @@ Content-type: applications/json
     ]    
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="53a60-192">C#</span><span class="sxs-lookup"><span data-stu-id="53a60-192">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="75fd9-192">C#</span><span class="sxs-lookup"><span data-stu-id="75fd9-192">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="53a60-193">JavaScript</span><span class="sxs-lookup"><span data-stu-id="53a60-193">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="75fd9-193">JavaScript</span><span class="sxs-lookup"><span data-stu-id="75fd9-193">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="53a60-194">Objective-C</span><span class="sxs-lookup"><span data-stu-id="53a60-194">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="75fd9-194">Objective-C</span><span class="sxs-lookup"><span data-stu-id="75fd9-194">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="53a60-195">Java</span><span class="sxs-lookup"><span data-stu-id="53a60-195">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="75fd9-195">Java</span><span class="sxs-lookup"><span data-stu-id="75fd9-195">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="53a60-196">Отклик</span><span class="sxs-lookup"><span data-stu-id="53a60-196">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="75fd9-196">Отклик</span><span class="sxs-lookup"><span data-stu-id="75fd9-196">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -328,19 +328,19 @@ Content-type: applications/json
 ```http
 HTTP/1.1 204
 ```
-### <a name="add-app-roles-optional"></a><span data-ttu-id="53a60-197">Добавление ролей приложения (необязательно)</span><span class="sxs-lookup"><span data-stu-id="53a60-197">Add app roles (Optional)</span></span>
+### <a name="add-app-roles-optional"></a><span data-ttu-id="75fd9-197">Добавление ролей приложения (необязательно)</span><span class="sxs-lookup"><span data-stu-id="75fd9-197">Add app roles (Optional)</span></span>
 
-<span data-ttu-id="53a60-198">Если приложение ожидает получить сведения о роли в маркере, добавьте определение ролей в объект приложения.</span><span class="sxs-lookup"><span data-stu-id="53a60-198">If the application requires the role information in the token, add the definition of the roles in the application object.</span></span> <span data-ttu-id="53a60-199">Для AWS вы можете [включить подготовку пользователя](/azure/active-directory/app-provisioning/application-provisioning-configure-api), чтобы автоматически получать все роли из учетной записи AWS.</span><span class="sxs-lookup"><span data-stu-id="53a60-199">For AWS, you can [enable user provisioning](/azure/active-directory/app-provisioning/application-provisioning-configure-api) to fetch all the roles from that AWS account.</span></span> 
+<span data-ttu-id="75fd9-198">Если приложение ожидает получить сведения о роли в маркере, добавьте определение ролей в объект приложения.</span><span class="sxs-lookup"><span data-stu-id="75fd9-198">If the application requires the role information in the token, add the definition of the roles in the application object.</span></span> <span data-ttu-id="75fd9-199">Для AWS вы можете [включить подготовку пользователя](/azure/active-directory/app-provisioning/application-provisioning-configure-api), чтобы автоматически получать все роли из учетной записи AWS.</span><span class="sxs-lookup"><span data-stu-id="75fd9-199">For AWS, you can [enable user provisioning](/azure/active-directory/app-provisioning/application-provisioning-configure-api) to fetch all the roles from that AWS account.</span></span> 
 
-<span data-ttu-id="53a60-200">Дополнительные сведения см. в статье [Настройка утверждения роли, выдаваемого в маркере SAML](/azure/active-directory/develop/active-directory-enterprise-app-role-management).</span><span class="sxs-lookup"><span data-stu-id="53a60-200">For more information, see [Configure the role claim issued in the SAML token](/azure/active-directory/develop/active-directory-enterprise-app-role-management).</span></span>
+<span data-ttu-id="75fd9-200">Дополнительные сведения см. в статье [Настройка утверждения роли, выдаваемого в маркере SAML](/azure/active-directory/develop/active-directory-enterprise-app-role-management).</span><span class="sxs-lookup"><span data-stu-id="75fd9-200">For more information, see [Configure the role claim issued in the SAML token](/azure/active-directory/develop/active-directory-enterprise-app-role-management).</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="53a60-201">При добавлении ролей приложения не изменяйте стандартные роли приложения msiam_access.</span><span class="sxs-lookup"><span data-stu-id="53a60-201">When adding app roles, don't modify the default app roles msiam_access.</span></span> 
+> <span data-ttu-id="75fd9-201">При добавлении ролей приложения не изменяйте стандартные роли приложения msiam_access.</span><span class="sxs-lookup"><span data-stu-id="75fd9-201">When adding app roles, don't modify the default app roles msiam_access.</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="53a60-202">Запрос</span><span class="sxs-lookup"><span data-stu-id="53a60-202">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="75fd9-202">Запрос</span><span class="sxs-lookup"><span data-stu-id="75fd9-202">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="53a60-203">HTTP</span><span class="sxs-lookup"><span data-stu-id="53a60-203">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="75fd9-203">HTTP</span><span class="sxs-lookup"><span data-stu-id="75fd9-203">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -348,7 +348,7 @@ HTTP/1.1 204
 
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/serviceprincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
-Content-type: serviceprincipals/json
+Content-type: application/json
 
 {
 "appRoles": [
@@ -387,26 +387,26 @@ Content-type: serviceprincipals/json
 
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="53a60-204">C#</span><span class="sxs-lookup"><span data-stu-id="53a60-204">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="75fd9-204">C#</span><span class="sxs-lookup"><span data-stu-id="75fd9-204">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="53a60-205">JavaScript</span><span class="sxs-lookup"><span data-stu-id="53a60-205">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="75fd9-205">JavaScript</span><span class="sxs-lookup"><span data-stu-id="75fd9-205">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="53a60-206">Objective-C</span><span class="sxs-lookup"><span data-stu-id="53a60-206">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="75fd9-206">Objective-C</span><span class="sxs-lookup"><span data-stu-id="75fd9-206">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="53a60-207">Java</span><span class="sxs-lookup"><span data-stu-id="53a60-207">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="75fd9-207">Java</span><span class="sxs-lookup"><span data-stu-id="75fd9-207">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="53a60-208">Отклик</span><span class="sxs-lookup"><span data-stu-id="53a60-208">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="75fd9-208">Отклик</span><span class="sxs-lookup"><span data-stu-id="75fd9-208">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -416,29 +416,29 @@ Content-type: serviceprincipals/json
 HTTP/1.1 204
 ```
 
-## <a name="step-3-configure-claims-mapping"></a><span data-ttu-id="53a60-209">Шаг 3. Настройка сопоставления утверждений</span><span class="sxs-lookup"><span data-stu-id="53a60-209">Step 3: Configure claims mapping</span></span>
+## <a name="step-3-configure-claims-mapping"></a><span data-ttu-id="75fd9-209">Шаг 3. Настройка сопоставления утверждений</span><span class="sxs-lookup"><span data-stu-id="75fd9-209">Step 3: Configure claims mapping</span></span>
 
-### <a name="create-claims-mapping-policy"></a><span data-ttu-id="53a60-210">Создание политики сопоставления утверждений</span><span class="sxs-lookup"><span data-stu-id="53a60-210">Create claims mapping policy</span></span>
+### <a name="create-claims-mapping-policy"></a><span data-ttu-id="75fd9-210">Создание политики сопоставления утверждений</span><span class="sxs-lookup"><span data-stu-id="75fd9-210">Create claims mapping policy</span></span>
 
-<span data-ttu-id="53a60-211">В дополнение к основным утверждениям настройте следующие, чтобы служба Azure AD включала их в маркер SAML.</span><span class="sxs-lookup"><span data-stu-id="53a60-211">In addition to the basic claims, configure the following claims for Azure AD to emit in the SAML token:</span></span>
+<span data-ttu-id="75fd9-211">В дополнение к основным утверждениям настройте следующие, чтобы служба Azure AD включала их в маркер SAML.</span><span class="sxs-lookup"><span data-stu-id="75fd9-211">In addition to the basic claims, configure the following claims for Azure AD to emit in the SAML token:</span></span>
 
-| <span data-ttu-id="53a60-212">Имя утверждения</span><span class="sxs-lookup"><span data-stu-id="53a60-212">Claim name</span></span> | <span data-ttu-id="53a60-213">Источник</span><span class="sxs-lookup"><span data-stu-id="53a60-213">Source</span></span>  |
+| <span data-ttu-id="75fd9-212">Имя утверждения</span><span class="sxs-lookup"><span data-stu-id="75fd9-212">Claim name</span></span> | <span data-ttu-id="75fd9-213">Источник</span><span class="sxs-lookup"><span data-stu-id="75fd9-213">Source</span></span>  |
 |---------|---------|
-| `https://aws.amazon.com/SAML/Attributes/Role` | <span data-ttu-id="53a60-214">assignedroles</span><span class="sxs-lookup"><span data-stu-id="53a60-214">assignedroles</span></span>| 
-| `https://aws.amazon.com/SAML/Attributes/RoleSessionName` | <span data-ttu-id="53a60-215">userprincipalname</span><span class="sxs-lookup"><span data-stu-id="53a60-215">userprincipalname</span></span> |
-| `https://aws.amazon.com/SAML/Attributes/SessionDuration` | <span data-ttu-id="53a60-216">"900"</span><span class="sxs-lookup"><span data-stu-id="53a60-216">"900"</span></span> |
-| <span data-ttu-id="53a60-217">roles</span><span class="sxs-lookup"><span data-stu-id="53a60-217">roles</span></span> | <span data-ttu-id="53a60-218">assignedroles</span><span class="sxs-lookup"><span data-stu-id="53a60-218">assignedroles</span></span> |
-| `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier` | <span data-ttu-id="53a60-219">userprincipalname</span><span class="sxs-lookup"><span data-stu-id="53a60-219">userprincipalname</span></span> |
+| `https://aws.amazon.com/SAML/Attributes/Role` | <span data-ttu-id="75fd9-214">assignedroles</span><span class="sxs-lookup"><span data-stu-id="75fd9-214">assignedroles</span></span>| 
+| `https://aws.amazon.com/SAML/Attributes/RoleSessionName` | <span data-ttu-id="75fd9-215">userprincipalname</span><span class="sxs-lookup"><span data-stu-id="75fd9-215">userprincipalname</span></span> |
+| `https://aws.amazon.com/SAML/Attributes/SessionDuration` | <span data-ttu-id="75fd9-216">"900"</span><span class="sxs-lookup"><span data-stu-id="75fd9-216">"900"</span></span> |
+| <span data-ttu-id="75fd9-217">roles</span><span class="sxs-lookup"><span data-stu-id="75fd9-217">roles</span></span> | <span data-ttu-id="75fd9-218">assignedroles</span><span class="sxs-lookup"><span data-stu-id="75fd9-218">assignedroles</span></span> |
+| `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier` | <span data-ttu-id="75fd9-219">userprincipalname</span><span class="sxs-lookup"><span data-stu-id="75fd9-219">userprincipalname</span></span> |
 
-<span data-ttu-id="53a60-220">Дополнительные сведения см. в статье [Настройка утверждений, добавляемых в маркеры](/azure/active-directory/develop/active-directory-claims-mapping).</span><span class="sxs-lookup"><span data-stu-id="53a60-220">For more information, see [Customize claims emitted in token](/azure/active-directory/develop/active-directory-claims-mapping).</span></span>
+<span data-ttu-id="75fd9-220">Дополнительные сведения см. в статье [Настройка утверждений, добавляемых в маркеры](/azure/active-directory/develop/active-directory-claims-mapping).</span><span class="sxs-lookup"><span data-stu-id="75fd9-220">For more information, see [Customize claims emitted in token](/azure/active-directory/develop/active-directory-claims-mapping).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="53a60-221">Некоторые ключи в политике сопоставления утверждений чувствительны к регистру (например, "Version").</span><span class="sxs-lookup"><span data-stu-id="53a60-221">Some keys in the claims mapping policy are case sensitive (for example, "Version").</span></span> <span data-ttu-id="53a60-222">Если появляется сообщение об ошибке "Свойство имеет недопустимое значение", это может быть проблема, связанная с регистром.</span><span class="sxs-lookup"><span data-stu-id="53a60-222">If you receive an error message such as "Property has an invalid value", it might be a case sensitive issue.</span></span>
+> <span data-ttu-id="75fd9-221">Некоторые ключи в политике сопоставления утверждений чувствительны к регистру (например, "Version").</span><span class="sxs-lookup"><span data-stu-id="75fd9-221">Some keys in the claims mapping policy are case sensitive (for example, "Version").</span></span> <span data-ttu-id="75fd9-222">Если появляется сообщение об ошибке "Свойство имеет недопустимое значение", это может быть проблема, связанная с регистром.</span><span class="sxs-lookup"><span data-stu-id="75fd9-222">If you receive an error message such as "Property has an invalid value", it might be a case sensitive issue.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="53a60-223">Запрос</span><span class="sxs-lookup"><span data-stu-id="53a60-223">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="75fd9-223">Запрос</span><span class="sxs-lookup"><span data-stu-id="75fd9-223">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="53a60-224">HTTP</span><span class="sxs-lookup"><span data-stu-id="53a60-224">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="75fd9-224">HTTP</span><span class="sxs-lookup"><span data-stu-id="75fd9-224">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "servicePrincipals"
@@ -446,36 +446,36 @@ HTTP/1.1 204
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies
-Content-type: claimsMappingPolicies/json
+Content-type: application/json
 
 {
     "definition": [
-        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"}]}}"
     ],
     "displayName": "AWS Claims Policy",
     "isOrganizationDefault": false
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="53a60-225">C#</span><span class="sxs-lookup"><span data-stu-id="53a60-225">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="75fd9-225">C#</span><span class="sxs-lookup"><span data-stu-id="75fd9-225">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="53a60-226">JavaScript</span><span class="sxs-lookup"><span data-stu-id="53a60-226">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="75fd9-226">JavaScript</span><span class="sxs-lookup"><span data-stu-id="75fd9-226">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="53a60-227">Objective-C</span><span class="sxs-lookup"><span data-stu-id="53a60-227">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="75fd9-227">Objective-C</span><span class="sxs-lookup"><span data-stu-id="75fd9-227">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipals-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="53a60-228">Java</span><span class="sxs-lookup"><span data-stu-id="53a60-228">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="75fd9-228">Java</span><span class="sxs-lookup"><span data-stu-id="75fd9-228">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="53a60-229">Отклик</span><span class="sxs-lookup"><span data-stu-id="53a60-229">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="75fd9-229">Отклик</span><span class="sxs-lookup"><span data-stu-id="75fd9-229">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -486,23 +486,23 @@ Content-type: claimsMappingPolicies/json
 
 ```http
 HTTP/1.1 201 OK
-Content-type: claimsMappingPolicies/json
+Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/claimsMappingPolicies/$entity",
     "id": "a7b19e62-9adb-4edb-8521-cd35305f095d",
     "deletedDateTime": null,
     "definition": [
-        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/nameidentifier\"}]}}"
+        "{\"ClaimsMappingPolicy\":{\"Version\":1,\"IncludeBasicClaimSet\":\"true\", \"ClaimsSchema\": [{\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/Role\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/RoleSessionName\"}, {\"Value\":\"900\",\"SamlClaimType\": \"https://aws.amazon.com/SAML/Attributes/SessionDuration\"}, {\"Source\":\"user\",\"ID\":\"assignedroles\",\"SamlClaimType\": \"appRoles\"}, {\"Source\":\"user\",\"ID\":\"userprincipalname\",\"SamlClaimType\": \"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier\"}]}}"
     ],
     "displayName": "AWS Claims Policy",
     "isOrganizationDefault": false
 }
 ```
 
-### <a name="assign-claims-mapping-policy-to-service-principal"></a><span data-ttu-id="53a60-230">Назначение политики сопоставления утверждений субъекту-службе</span><span class="sxs-lookup"><span data-stu-id="53a60-230">Assign claims mapping policy to service principal</span></span>
+### <a name="assign-claims-mapping-policy-to-service-principal"></a><span data-ttu-id="75fd9-230">Назначение политики сопоставления утверждений субъекту-службе</span><span class="sxs-lookup"><span data-stu-id="75fd9-230">Assign claims mapping policy to service principal</span></span>
 
-#### <a name="request"></a><span data-ttu-id="53a60-231">Запрос</span><span class="sxs-lookup"><span data-stu-id="53a60-231">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="75fd9-231">Запрос</span><span class="sxs-lookup"><span data-stu-id="75fd9-231">Request</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -511,7 +511,7 @@ Content-type: claimsMappingPolicies/json
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e/claimsMappingPolicies/$ref
 
-Content-type: claimsMappingPolicies/json
+Content-type: application/json
 
 {
   "@odata.id":"https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/6b33aa8e-51f3-41a6-a0fd-d660d276197a"
@@ -519,7 +519,7 @@ Content-type: claimsMappingPolicies/json
 ```
 
 
-#### <a name="response"></a><span data-ttu-id="53a60-232">Отклик</span><span class="sxs-lookup"><span data-stu-id="53a60-232">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="75fd9-232">Отклик</span><span class="sxs-lookup"><span data-stu-id="75fd9-232">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -529,13 +529,13 @@ Content-type: claimsMappingPolicies/json
 HTTP/1.1 204
 ```
 
-## <a name="step-4-configure-signing-certificate"></a><span data-ttu-id="53a60-233">Шаг 4. Настройка сертификата для подписи</span><span class="sxs-lookup"><span data-stu-id="53a60-233">Step 4: Configure signing certificate</span></span>
+## <a name="step-4-configure-signing-certificate"></a><span data-ttu-id="75fd9-233">Шаг 4. Настройка сертификата для подписи</span><span class="sxs-lookup"><span data-stu-id="75fd9-233">Step 4: Configure signing certificate</span></span>
 
-<span data-ttu-id="53a60-234">При использовании API [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta)сертификат для подписи не создается автоматически.</span><span class="sxs-lookup"><span data-stu-id="53a60-234">Using the [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta) API doesn't create a signing certificate by default.</span></span> <span data-ttu-id="53a60-235">Создайте пользовательский сертификат для подписи и назначьте его приложению.</span><span class="sxs-lookup"><span data-stu-id="53a60-235">Create your custom signing cert and assign it to the application.</span></span> 
+<span data-ttu-id="75fd9-234">При использовании API [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta)сертификат для подписи не создается автоматически.</span><span class="sxs-lookup"><span data-stu-id="75fd9-234">Using the [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta) API doesn't create a signing certificate by default.</span></span> <span data-ttu-id="75fd9-235">Создайте пользовательский сертификат для подписи и назначьте его приложению.</span><span class="sxs-lookup"><span data-stu-id="75fd9-235">Create your custom signing cert and assign it to the application.</span></span> 
 
-### <a name="create-a-custom-signing-certificate"></a><span data-ttu-id="53a60-236">Создание пользовательского сертификата для подписи</span><span class="sxs-lookup"><span data-stu-id="53a60-236">Create a custom signing certificate</span></span>
+### <a name="create-a-custom-signing-certificate"></a><span data-ttu-id="75fd9-236">Создание пользовательского сертификата для подписи</span><span class="sxs-lookup"><span data-stu-id="75fd9-236">Create a custom signing certificate</span></span>
 
-<span data-ttu-id="53a60-237">Для целей тестирования можно создать самозаверяющий сертификат с помощью следующих команд PowerShell.</span><span class="sxs-lookup"><span data-stu-id="53a60-237">To test, you can use the following PowerShell command to get a self-signed certificate.</span></span> <span data-ttu-id="53a60-238">Затем потребуется вручную обработать и извлечь нужные значения с помощью других средств.</span><span class="sxs-lookup"><span data-stu-id="53a60-238">You will then need to manipulate and pull the values you need manually using other tools.</span></span> <span data-ttu-id="53a60-239">При создании сертификата для подписи в рабочей среде применяйте все самые передовые рекомендации по безопасности, используемые в вашей компании.</span><span class="sxs-lookup"><span data-stu-id="53a60-239">Use the best security practice from your company to create a signing certificate for production.</span></span>
+<span data-ttu-id="75fd9-237">Для целей тестирования можно создать самозаверяющий сертификат с помощью следующих команд PowerShell.</span><span class="sxs-lookup"><span data-stu-id="75fd9-237">To test, you can use the following PowerShell command to get a self-signed certificate.</span></span> <span data-ttu-id="75fd9-238">Затем потребуется вручную обработать и извлечь нужные значения с помощью других средств.</span><span class="sxs-lookup"><span data-stu-id="75fd9-238">You will then need to manipulate and pull the values you need manually using other tools.</span></span> <span data-ttu-id="75fd9-239">При создании сертификата для подписи в рабочей среде применяйте все самые передовые рекомендации по безопасности, используемые в вашей компании.</span><span class="sxs-lookup"><span data-stu-id="75fd9-239">Use the best security practice from your company to create a signing certificate for production.</span></span>
 
 ```powershell
 Param(
@@ -562,7 +562,7 @@ Export-PfxCertificate -cert $path -FilePath $pfxFile -Password $pwdSecure
 Export-Certificate -cert $path -FilePath $cerFile
 ```
 
-<span data-ttu-id="53a60-240">Кроме того, в качестве подтверждения концепции можно использовать следующее консольное приложение C#, чтобы понять, как можно получить необходимые значения.</span><span class="sxs-lookup"><span data-stu-id="53a60-240">Alternatively, the following C# console app can be used as a Proof of Concept to understand how the required values can be obtained.</span></span> <span data-ttu-id="53a60-241">Обратите внимание, что этот код предназначен **ТОЛЬКО для обучения и справочных материалов** и не должен использоваться "как есть" в рабочей среде.</span><span class="sxs-lookup"><span data-stu-id="53a60-241">Note that this code is for **learning and reference ONLY** and should not be used as-is in production.</span></span>
+<span data-ttu-id="75fd9-240">Кроме того, в качестве подтверждения концепции можно использовать следующее консольное приложение C#, чтобы понять, как можно получить необходимые значения.</span><span class="sxs-lookup"><span data-stu-id="75fd9-240">Alternatively, the following C# console app can be used as a Proof of Concept to understand how the required values can be obtained.</span></span> <span data-ttu-id="75fd9-241">Обратите внимание, что этот код предназначен **ТОЛЬКО для обучения и справочных материалов** и не должен использоваться "как есть" в рабочей среде.</span><span class="sxs-lookup"><span data-stu-id="75fd9-241">Note that this code is for **learning and reference ONLY** and should not be used as-is in production.</span></span>
 
 ```csharp
 using System;
@@ -655,22 +655,22 @@ namespace Self_signed_cert
 }
 ```
 
-### <a name="add-a-custom-signing-key"></a><span data-ttu-id="53a60-242">Добавление пользовательского ключа подписывания</span><span class="sxs-lookup"><span data-stu-id="53a60-242">Add a custom signing key</span></span>
+### <a name="add-a-custom-signing-key"></a><span data-ttu-id="75fd9-242">Добавление пользовательского ключа подписывания</span><span class="sxs-lookup"><span data-stu-id="75fd9-242">Add a custom signing key</span></span>
 
-<span data-ttu-id="53a60-243">Добавьте следующие сведения в субъект-службу.</span><span class="sxs-lookup"><span data-stu-id="53a60-243">Add the following information to the service principal:</span></span>
+<span data-ttu-id="75fd9-243">Добавьте следующие сведения в субъект-службу.</span><span class="sxs-lookup"><span data-stu-id="75fd9-243">Add the following information to the service principal:</span></span>
 
-* <span data-ttu-id="53a60-244">Закрытый ключ</span><span class="sxs-lookup"><span data-stu-id="53a60-244">Private key</span></span>
-* <span data-ttu-id="53a60-245">Пароль</span><span class="sxs-lookup"><span data-stu-id="53a60-245">Password</span></span>
-* <span data-ttu-id="53a60-246">Открытый ключ</span><span class="sxs-lookup"><span data-stu-id="53a60-246">Public key</span></span> 
+* <span data-ttu-id="75fd9-244">Закрытый ключ</span><span class="sxs-lookup"><span data-stu-id="75fd9-244">Private key</span></span>
+* <span data-ttu-id="75fd9-245">Пароль</span><span class="sxs-lookup"><span data-stu-id="75fd9-245">Password</span></span>
+* <span data-ttu-id="75fd9-246">Открытый ключ</span><span class="sxs-lookup"><span data-stu-id="75fd9-246">Public key</span></span> 
 
-<span data-ttu-id="53a60-247">Извлеките закрытый и открытый ключи в кодировке Base64 из PFX-файла.</span><span class="sxs-lookup"><span data-stu-id="53a60-247">Extract the private and public key Base64 encoded from the PFX file.</span></span> <span data-ttu-id="53a60-248">Дополнительные сведения об их свойствах см. в описании [типа ресурса keyCredential](/graph/api/resources/keycredential?view=graph-rest-1.0).</span><span class="sxs-lookup"><span data-stu-id="53a60-248">To learn more about the properties, see [keyCredential resource type](/graph/api/resources/keycredential?view=graph-rest-1.0).</span></span>
+<span data-ttu-id="75fd9-247">Извлеките закрытый и открытый ключи в кодировке Base64 из PFX-файла.</span><span class="sxs-lookup"><span data-stu-id="75fd9-247">Extract the private and public key Base64 encoded from the PFX file.</span></span> <span data-ttu-id="75fd9-248">Дополнительные сведения об их свойствах см. в описании [типа ресурса keyCredential](/graph/api/resources/keycredential?view=graph-rest-1.0).</span><span class="sxs-lookup"><span data-stu-id="75fd9-248">To learn more about the properties, see [keyCredential resource type](/graph/api/resources/keycredential?view=graph-rest-1.0).</span></span>
 
-<span data-ttu-id="53a60-249">Убедитесь, что значение keyId для keyCredential, примененное для параметра Sign, соответствует значению keyId для passwordCredential.</span><span class="sxs-lookup"><span data-stu-id="53a60-249">Make sure that the keyId for the keyCredential used for "Sign" matches the keyId of the passwordCredential.</span></span> <span data-ttu-id="53a60-250">Вы можете создать `customkeyIdentifier`, получив хэш отпечатка сертификата.</span><span class="sxs-lookup"><span data-stu-id="53a60-250">You can generate the `customkeyIdentifier` by getting the hash of the cert's thumbprint.</span></span> <span data-ttu-id="53a60-251">См. предыдущий код ссылки C#.</span><span class="sxs-lookup"><span data-stu-id="53a60-251">See the previous C# reference code.</span></span>
+<span data-ttu-id="75fd9-249">Убедитесь, что значение keyId для keyCredential, примененное для параметра Sign, соответствует значению keyId для passwordCredential.</span><span class="sxs-lookup"><span data-stu-id="75fd9-249">Make sure that the keyId for the keyCredential used for "Sign" matches the keyId of the passwordCredential.</span></span> <span data-ttu-id="75fd9-250">Вы можете создать `customkeyIdentifier`, получив хэш отпечатка сертификата.</span><span class="sxs-lookup"><span data-stu-id="75fd9-250">You can generate the `customkeyIdentifier` by getting the hash of the cert's thumbprint.</span></span> <span data-ttu-id="75fd9-251">См. предыдущий код ссылки C#.</span><span class="sxs-lookup"><span data-stu-id="75fd9-251">See the previous C# reference code.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="53a60-252">Запрос</span><span class="sxs-lookup"><span data-stu-id="53a60-252">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="75fd9-252">Запрос</span><span class="sxs-lookup"><span data-stu-id="75fd9-252">Request</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="53a60-253">Значение key в свойстве keyCredentials сокращено для удобства чтения.</span><span class="sxs-lookup"><span data-stu-id="53a60-253">The "key" value in the keyCredentials property is shortened for readability.</span></span> <span data-ttu-id="53a60-254">Значение представлено в кодировке Base 64.</span><span class="sxs-lookup"><span data-stu-id="53a60-254">The value is base 64 encoded.</span></span> <span data-ttu-id="53a60-255">Для закрытого ключа свойство `usage` имеет значение "Sign".</span><span class="sxs-lookup"><span data-stu-id="53a60-255">For the private key the property `usage` is "Sign".</span></span> <span data-ttu-id="53a60-256">Для открытого ключа свойство `usage` имеет значение "Verify".</span><span class="sxs-lookup"><span data-stu-id="53a60-256">For the public key the property `usage` is "Verify".</span></span>
+> <span data-ttu-id="75fd9-253">Значение key в свойстве keyCredentials сокращено для удобства чтения.</span><span class="sxs-lookup"><span data-stu-id="75fd9-253">The "key" value in the keyCredentials property is shortened for readability.</span></span> <span data-ttu-id="75fd9-254">Значение представлено в кодировке Base 64.</span><span class="sxs-lookup"><span data-stu-id="75fd9-254">The value is base 64 encoded.</span></span> <span data-ttu-id="75fd9-255">Для закрытого ключа свойство `usage` имеет значение "Sign".</span><span class="sxs-lookup"><span data-stu-id="75fd9-255">For the private key the property `usage` is "Sign".</span></span> <span data-ttu-id="75fd9-256">Для открытого ключа свойство `usage` имеет значение "Verify".</span><span class="sxs-lookup"><span data-stu-id="75fd9-256">For the public key the property `usage` is "Verify".</span></span>
 
 <!-- {
   "blockType": "request",
@@ -679,7 +679,7 @@ namespace Self_signed_cert
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
 
-Content-type: servicePrincipals/json
+Content-type: application/json
 
 {
     "keyCredentials":[
@@ -717,7 +717,7 @@ Content-type: servicePrincipals/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="53a60-257">Отклик</span><span class="sxs-lookup"><span data-stu-id="53a60-257">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="75fd9-257">Отклик</span><span class="sxs-lookup"><span data-stu-id="75fd9-257">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -727,11 +727,11 @@ Content-type: servicePrincipals/json
 HTTP/1.1 204
 ```
 
-### <a name="activate-the-custom-signing-key"></a><span data-ttu-id="53a60-258">Активация пользовательского ключа подписывания</span><span class="sxs-lookup"><span data-stu-id="53a60-258">Activate the custom signing key</span></span>
+### <a name="activate-the-custom-signing-key"></a><span data-ttu-id="75fd9-258">Активация пользовательского ключа подписывания</span><span class="sxs-lookup"><span data-stu-id="75fd9-258">Activate the custom signing key</span></span>
 
-<span data-ttu-id="53a60-259">Вам нужно задать для свойства `preferredTokenSigningKeyThumbprint` значение отпечатка сертификата, с помощью которого Azure AD будет подписывать ответ SAML.</span><span class="sxs-lookup"><span data-stu-id="53a60-259">You need to set the `preferredTokenSigningKeyThumbprint` property to the thumbprint of the certificate you want Azure AD to use to sign the SAML response.</span></span> 
+<span data-ttu-id="75fd9-259">Вам нужно задать для свойства `preferredTokenSigningKeyThumbprint` значение отпечатка сертификата, с помощью которого Azure AD будет подписывать ответ SAML.</span><span class="sxs-lookup"><span data-stu-id="75fd9-259">You need to set the `preferredTokenSigningKeyThumbprint` property to the thumbprint of the certificate you want Azure AD to use to sign the SAML response.</span></span> 
 
-#### <a name="request"></a><span data-ttu-id="53a60-260">Запрос</span><span class="sxs-lookup"><span data-stu-id="53a60-260">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="75fd9-260">Запрос</span><span class="sxs-lookup"><span data-stu-id="75fd9-260">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -740,14 +740,14 @@ HTTP/1.1 204
 ```msgraph-interactive
 PATCH https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e
 
-Content-type: servicePrincipals/json
+Content-type: application/json
 
 {
     "preferredTokenSigningKeyThumbprint": "AC09FEF18DDE6983EE2A164FBA3C4DD7518BD787"
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="53a60-261">Отклик</span><span class="sxs-lookup"><span data-stu-id="53a60-261">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="75fd9-261">Отклик</span><span class="sxs-lookup"><span data-stu-id="75fd9-261">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -756,20 +756,20 @@ Content-type: servicePrincipals/json
 ```http
 HTTP/1.1 204
 ```
-## <a name="step-5-assign-users"></a><span data-ttu-id="53a60-262">Шаг 5. Назначение пользователей</span><span class="sxs-lookup"><span data-stu-id="53a60-262">Step 5: Assign users</span></span>
+## <a name="step-5-assign-users"></a><span data-ttu-id="75fd9-262">Шаг 5. Назначение пользователей</span><span class="sxs-lookup"><span data-stu-id="75fd9-262">Step 5: Assign users</span></span>
 
-### <a name="assign-users-and-groups-to-the-application"></a><span data-ttu-id="53a60-263">Назначение пользователей и групп для приложения</span><span class="sxs-lookup"><span data-stu-id="53a60-263">Assign users and groups to the application</span></span>
+### <a name="assign-users-and-groups-to-the-application"></a><span data-ttu-id="75fd9-263">Назначение пользователей и групп для приложения</span><span class="sxs-lookup"><span data-stu-id="75fd9-263">Assign users and groups to the application</span></span>
 
-<span data-ttu-id="53a60-264">Назначьте субъекту-службе следующего пользователя и роль AWS_Role1.</span><span class="sxs-lookup"><span data-stu-id="53a60-264">Assign the following user to the service principal and assign the AWS_Role1.</span></span> 
+<span data-ttu-id="75fd9-264">Назначьте субъекту-службе следующего пользователя и роль AWS_Role1.</span><span class="sxs-lookup"><span data-stu-id="75fd9-264">Assign the following user to the service principal and assign the AWS_Role1.</span></span> 
 
-| <span data-ttu-id="53a60-265">Имя</span><span class="sxs-lookup"><span data-stu-id="53a60-265">Name</span></span>  | <span data-ttu-id="53a60-266">Идентификатор</span><span class="sxs-lookup"><span data-stu-id="53a60-266">ID</span></span>  |
+| <span data-ttu-id="75fd9-265">Имя</span><span class="sxs-lookup"><span data-stu-id="75fd9-265">Name</span></span>  | <span data-ttu-id="75fd9-266">Идентификатор</span><span class="sxs-lookup"><span data-stu-id="75fd9-266">ID</span></span>  |
 |---------|---------|
-| <span data-ttu-id="53a60-267">Идентификатор пользователя (principalId)</span><span class="sxs-lookup"><span data-stu-id="53a60-267">User ID (principalId)</span></span> | <span data-ttu-id="53a60-268">6cad4079-4e79-4a3f-9efb-ea30a14bdb26</span><span class="sxs-lookup"><span data-stu-id="53a60-268">6cad4079-4e79-4a3f-9efb-ea30a14bdb26</span></span> |
-| <span data-ttu-id="53a60-269">Тип (principalType)</span><span class="sxs-lookup"><span data-stu-id="53a60-269">Type (principalType)</span></span> | <span data-ttu-id="53a60-270">Пользователь</span><span class="sxs-lookup"><span data-stu-id="53a60-270">User</span></span> |
-| <span data-ttu-id="53a60-271">Идентификатор роли приложения (appRoleId)</span><span class="sxs-lookup"><span data-stu-id="53a60-271">App role ID (appRoleId)</span></span> | <span data-ttu-id="53a60-272">454dc4c2-8176-498e-99df-8c4efcde41ef</span><span class="sxs-lookup"><span data-stu-id="53a60-272">454dc4c2-8176-498e-99df-8c4efcde41ef</span></span> |
-| <span data-ttu-id="53a60-273">Идентификатор субъекта-службы (resourceId)</span><span class="sxs-lookup"><span data-stu-id="53a60-273">servicePrincipalID (resourceId)</span></span> | <span data-ttu-id="53a60-274">f47a6776-bca7-4f2e-bc6c-eec59d058e3e</span><span class="sxs-lookup"><span data-stu-id="53a60-274">f47a6776-bca7-4f2e-bc6c-eec59d058e3e</span></span> |
+| <span data-ttu-id="75fd9-267">Идентификатор пользователя (principalId)</span><span class="sxs-lookup"><span data-stu-id="75fd9-267">User ID (principalId)</span></span> | <span data-ttu-id="75fd9-268">6cad4079-4e79-4a3f-9efb-ea30a14bdb26</span><span class="sxs-lookup"><span data-stu-id="75fd9-268">6cad4079-4e79-4a3f-9efb-ea30a14bdb26</span></span> |
+| <span data-ttu-id="75fd9-269">Тип (principalType)</span><span class="sxs-lookup"><span data-stu-id="75fd9-269">Type (principalType)</span></span> | <span data-ttu-id="75fd9-270">Пользователь</span><span class="sxs-lookup"><span data-stu-id="75fd9-270">User</span></span> |
+| <span data-ttu-id="75fd9-271">Идентификатор роли приложения (appRoleId)</span><span class="sxs-lookup"><span data-stu-id="75fd9-271">App role ID (appRoleId)</span></span> | <span data-ttu-id="75fd9-272">454dc4c2-8176-498e-99df-8c4efcde41ef</span><span class="sxs-lookup"><span data-stu-id="75fd9-272">454dc4c2-8176-498e-99df-8c4efcde41ef</span></span> |
+| <span data-ttu-id="75fd9-273">Идентификатор субъекта-службы (resourceId)</span><span class="sxs-lookup"><span data-stu-id="75fd9-273">servicePrincipalID (resourceId)</span></span> | <span data-ttu-id="75fd9-274">f47a6776-bca7-4f2e-bc6c-eec59d058e3e</span><span class="sxs-lookup"><span data-stu-id="75fd9-274">f47a6776-bca7-4f2e-bc6c-eec59d058e3e</span></span> |
 
-#### <a name="request"></a><span data-ttu-id="53a60-275">Запрос</span><span class="sxs-lookup"><span data-stu-id="53a60-275">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="75fd9-275">Запрос</span><span class="sxs-lookup"><span data-stu-id="75fd9-275">Request</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -778,7 +778,7 @@ HTTP/1.1 204
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/servicePrincipals/f47a6776-bca7-4f2e-bc6c-eec59d058e3e/appRoleAssignments
 
-Content-type: appRoleAssignments/json
+Content-type: application/json
 
 {
   "principalId": "6cad4079-4e79-4a3f-9efb-ea30a14bdb26",
@@ -788,7 +788,7 @@ Content-type: appRoleAssignments/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="53a60-276">Отклик</span><span class="sxs-lookup"><span data-stu-id="53a60-276">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="75fd9-276">Отклик</span><span class="sxs-lookup"><span data-stu-id="75fd9-276">Response</span></span>
 
 <!-- {
   "blockType": "response",
@@ -796,7 +796,7 @@ Content-type: appRoleAssignments/json
 } -->
 ```http
 HTTP/1.1 201 
-Content-type: appRoleAssignments/json
+Content-type: application/json
 
 {
     "id": "rq7hyzl4yECaNZleMrTpDV-OCe5TEl5Ao_o76XMrRFU",
@@ -810,16 +810,16 @@ Content-type: appRoleAssignments/json
 }
 ```
 
-<span data-ttu-id="53a60-277">Подробнее см. в описании [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0).</span><span class="sxs-lookup"><span data-stu-id="53a60-277">For more information, see [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0).</span></span>
+<span data-ttu-id="75fd9-277">Подробнее см. в описании [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0).</span><span class="sxs-lookup"><span data-stu-id="75fd9-277">For more information, see [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0).</span></span>
 
-## <a name="step-6-configure-the-application-side"></a><span data-ttu-id="53a60-278">Шаг 6. Настройка на стороне приложения</span><span class="sxs-lookup"><span data-stu-id="53a60-278">Step 6: Configure the application side</span></span>
+## <a name="step-6-configure-the-application-side"></a><span data-ttu-id="75fd9-278">Шаг 6. Настройка на стороне приложения</span><span class="sxs-lookup"><span data-stu-id="75fd9-278">Step 6: Configure the application side</span></span>
 
-### <a name="get-azure-ad-saml-metadata"></a><span data-ttu-id="53a60-279">Получение метаданных SAML из Azure AD</span><span class="sxs-lookup"><span data-stu-id="53a60-279">Get Azure AD SAML metadata</span></span>
+### <a name="get-azure-ad-saml-metadata"></a><span data-ttu-id="75fd9-279">Получение метаданных SAML из Azure AD</span><span class="sxs-lookup"><span data-stu-id="75fd9-279">Get Azure AD SAML metadata</span></span>
 
-<span data-ttu-id="53a60-280">Используйте следующий URL-адрес, чтобы получить метаданные SAML из Azure AD для конкретного настроенного приложения.</span><span class="sxs-lookup"><span data-stu-id="53a60-280">Use the following URL to get the Azure AD SAML metadata for the specific configured application.</span></span> <span data-ttu-id="53a60-281">Эти метаданные содержат такие сведения, как сертификат для подписи, идентификатор сущности Azure AD (entityID), служба единого входа Azure AD (SingleSignOnService) и т. д.</span><span class="sxs-lookup"><span data-stu-id="53a60-281">The metadata contains information such as the signing certificate, Azure AD entityID, and Azure AD SingleSignOnService, among others.</span></span>
+<span data-ttu-id="75fd9-280">Используйте следующий URL-адрес, чтобы получить метаданные SAML из Azure AD для конкретного настроенного приложения.</span><span class="sxs-lookup"><span data-stu-id="75fd9-280">Use the following URL to get the Azure AD SAML metadata for the specific configured application.</span></span> <span data-ttu-id="75fd9-281">Эти метаданные содержат такие сведения, как сертификат для подписи, идентификатор сущности Azure AD (entityID), служба единого входа Azure AD (SingleSignOnService) и т. д.</span><span class="sxs-lookup"><span data-stu-id="75fd9-281">The metadata contains information such as the signing certificate, Azure AD entityID, and Azure AD SingleSignOnService, among others.</span></span>
 
 `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
 
-## <a name="next-steps"></a><span data-ttu-id="53a60-282">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="53a60-282">Next steps</span></span>
-- [<span data-ttu-id="53a60-283">Настройка подготовки пользователей с помощью API Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="53a60-283">Use Microsoft Graph APIs to configure user provisioning</span></span>](/azure/active-directory/app-provisioning/application-provisioning-configure-api)
-- [<span data-ttu-id="53a60-284">Использование отчета о действиях приложения AD FS для миграции приложений в Azure AD</span><span class="sxs-lookup"><span data-stu-id="53a60-284">Use the AD FS application activity report to migrate applications to Azure AD</span></span>](/azure/active-directory/manage-apps/migrate-adfs-application-activity)
+## <a name="next-steps"></a><span data-ttu-id="75fd9-282">Дальнейшие действия</span><span class="sxs-lookup"><span data-stu-id="75fd9-282">Next steps</span></span>
+- [<span data-ttu-id="75fd9-283">Настройка подготовки пользователей с помощью API Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="75fd9-283">Use Microsoft Graph APIs to configure user provisioning</span></span>](/azure/active-directory/app-provisioning/application-provisioning-configure-api)
+- [<span data-ttu-id="75fd9-284">Использование отчета о действиях приложения AD FS для миграции приложений в Azure AD</span><span class="sxs-lookup"><span data-stu-id="75fd9-284">Use the AD FS application activity report to migrate applications to Azure AD</span></span>](/azure/active-directory/manage-apps/migrate-adfs-application-activity)
