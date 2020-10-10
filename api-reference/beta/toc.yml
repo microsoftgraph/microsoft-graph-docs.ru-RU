@@ -9318,7 +9318,7 @@ items:
                 href: api/schemaextension-update.md
               - name: Удаление расширения схемы
                 href: api/schemaextension-delete.md
-      - name: Files
+      - name: Файлы
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
           - name: Обзор
@@ -9987,6 +9987,36 @@ items:
                         href: api/b2cauthenticationmethodspolicy-get.md
                       - name: Обновление
                         href: api/b2cauthenticationmethodspolicy-update.md
+                      - name: Delete
+                        href: api/phoneauthenticationmethod-delete.md
+                      - name: Добавление
+                        href: api/authentication-post-phonemethods.md
+                      - name: Включение входа в SMS
+                        href: api/phoneauthenticationmethod-enablesmssignin.md
+                      - name: Отключение входа в SMS
+                        href: api/phoneauthenticationmethod-disablesmssignin.md
+              - name: Политика метода проверки подлинности
+                items:
+                  - name: Обзор
+                    href: resources/authenticationmethodspolicies-overview.md
+                  - name: Ключ безопасности FIDO2
+                    href: resources/fido2authenticationmethodconfiguration.md
+                    items:
+                      - name: Получение
+                        href: api/fido2authenticationmethodconfiguration-get.md
+                      - name: Обновление
+                        href: api/fido2authenticationmethodconfiguration-update.md
+                      - name: Delete
+                        href: api/fido2authenticationmethodconfiguration-delete.md
+                  - name: Вход в систему без пароля для проверки подлинности (Майкрософт)
+                    href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
+                    items:
+                      - name: Получение
+                        href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-get.md
+                      - name: Обновление
+                        href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
+                      - name: Delete
+                        href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
               - name: Настройка проверки подлинности на основе сертификатов
                 href: resources/certificatebasedauthconfiguration.md
                 items:
@@ -9998,7 +10028,7 @@ items:
                     href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
                   - name: Удалить
                     href: api/certificatebasedauthconfiguration-delete.md
-              - name: Условный доступ
+              - name: условный доступ;
                 items:
                   - name: Политики
                     items:

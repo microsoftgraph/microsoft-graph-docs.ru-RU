@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8f7f9462a7a71c2efc4b3a471de1c638fc3dbae7
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 362a83b9398ef8020e88990169aab425abec1e49
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372392"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417763"
 ---
 # <a name="get-authentication-operation"></a>Получение операции проверки подлинности
 
@@ -21,7 +21,7 @@ ms.locfileid: "48372392"
 Получение свойств и связей объекта [Operation](../resources/operation.md) . В настоящее время эти операции создаются путем инициирования сброса пароля с помощью метода [сброса пароля](passwordauthenticationmethod-resetpassword.md) . Объект Operation сообщает вызывающей стороне о текущем состоянии операции сброса пароля. Возможные состояния:
 
 * NotStarted
-* Выполняется
+* Работает
 * Succeeded
 * Не выполнено
 
@@ -49,7 +49,7 @@ ms.locfileid: "48372392"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{id}/authentication/operations/{id}
+GET /users/{id | userPrincipalName}/authentication/operations/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -62,7 +62,7 @@ GET /users/{id}/authentication/operations/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -83,7 +83,7 @@ GET /users/{id}/authentication/operations/{id}
 }-->
 
 ```msgraph-interactive
-GET /users/{id}/authentication/operations/{id}
+GET /users/{id | userPrincipalName}/authentication/operations/{id}
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-operation-csharp-snippets.md)]

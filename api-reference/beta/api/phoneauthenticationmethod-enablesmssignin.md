@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d155bf20055bcd7fdd4a7629db5686c8a37103cf
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 75236ca18c192b1168a83a896269e4fd3b1c6675
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402662"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417830"
 ---
 # <a name="phoneauthenticationmethod-enablesmssignin"></a>Фонеаусентикатионмесод: Енаблесмссигнин
 
@@ -46,7 +46,7 @@ ms.locfileid: "48402662"
 
 ```http
 POST /me/authentication/phoneMethods/{id}/enableSmsSignIn
-POST /users/{id}/authentication/phoneMethods/{id}/enableSmsSignIn
+POST /users/{id | userPrincipalName}/authentication/phoneMethods/{id}/enableSmsSignIn
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -55,7 +55,7 @@ POST /users/{id}/authentication/phoneMethods/{id}/enableSmsSignIn
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

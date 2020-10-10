@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 689dfb9972b925aeb2585a7cb7f5879a525f0f18
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: e7b68c01fc3f274e0cdfeacbadf31d52f860a2bf
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372427"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417779"
 ---
 # <a name="list-phonemethods"></a>Список Фонемесодс
 
@@ -43,7 +43,7 @@ ms.locfileid: "48372427"
 
 ```http
 GET /me/authentication/phoneMethods
-GET /users/{id}/authentication/phoneMethods
+GET /users/{id | userPrincipalName}/authentication/phoneMethods
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -54,9 +54,9 @@ GET /users/{id}/authentication/phoneMethods
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

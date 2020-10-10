@@ -3,18 +3,19 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: df74d810f20ef4041d02881a6c6bd536e3febaee
-ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
+ms.openlocfilehash: 883a22e302987c59aa5c62268265f24df737ed8f
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48364434"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48403855"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
 Этот журнал изменений описывает конкретные изменения уровня API в Microsoft Graph v1.0 и бета-версии.
 
 Сводную информацию о значении этих изменений API, а также о последних инструментах, компонентах, руководствах и учебных пособиях см. в разделе [Что нового в Microsoft Graph](whats-new-overview.md).
+
 ## <a name="october-2020"></a>Октябрь 2020 г.
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
@@ -22,6 +23,8 @@ ms.locfileid: "48364434"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение|бета|Добавлено свойство **allowInvitesFrom** к ресурсу [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta).|
+|Дополнение|бета|Добавлен тип ресурса [b2cAuthenticationMethodsPolicy](/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta) и следующие операции: [Get b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-get?view=graph-rest-beta) и [Update b2cAuthenticationMethodsPolicy](/graph/api/b2cauthenticationmethodspolicy-update?view=graph-rest-beta).|
+|Дополнение|бета|Добавлено разрешение **Policy.ReadWrite.AuthenticationMethod** в [Справочник разрешений](permissions-reference.md#policy-permissions).|
 
 ## <a name="september-2020"></a>Сентябрь 2020 г.
 
@@ -123,9 +126,11 @@ ms.locfileid: "48364434"
 | Дополнение | v1.0 | Представлен [API для административных единиц](/graph/api/resources/administrativeunit?view=graph-rest-1.0). Административные единицы позволяют организациям делить Azure Active Directory на подразделения и делегировать административные обязанности этим подразделениям. Подразделения могут представлять регионы, отделы, места возникновения затрат и т. д. Теперь ими можно управлять с помощью API Microsoft Graph.|
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
+
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение|бета|Добавлен тип ресурсов [continuousAccessEvaluationPolicy](/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta).|
+|Дополнение|бета|Добавлено свойство **permissionGrantPolicyIdsAssignedToDefaultUserRole** в ресурс [authorizationPolicy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true).|
 
 ### <a name="reports"></a>Отчеты
 
@@ -249,8 +254,8 @@ ms.locfileid: "48364434"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | бета | Добавлен объект [b2cUserFlows](/graph/api/resources/b2cuserflows?view=graph-rest-beta) для управления потоками пользователей в клиенте Azure Active Directory B2C. |
-| Дополнение | бета | Добавлен объект [b2xUserFlows](/graph/api/resources/b2xuserflows?view=graph-rest-beta) для управления маршрутами пользователей в клиенте Azure Active Directory B2C. |
+| Дополнение | бета | Добавлен объект [b2cIdentityUserFlow](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta) для управления потоками пользователей в клиенте Azure Active Directory B2C. |
+| Дополнение | бета | Добавлен объект [b2xIdentityUserFlow](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta) для управления потоками пользователей самостоятельной регистрации в клиенте Azure Active Directory. |
 
 ### <a name="people-and-workplace-intelligence--profile"></a>Люди и рабочая аналитика | Профиль
 
@@ -3869,7 +3874,7 @@ ms.locfileid: "48364434"
 |Изменение|Бета|Добавлено свойство навигации **windowsProtectionState** для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta).|
 |Изменение|Бета|Удалены свойства навигации **mobileAppIdentifierDeployments** и **targetedSecurityGroups** объекта [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration?view=graph-rest-beta).|
 |Изменение|Бета-версия|Удалено свойство навигации **targetedSecurityGroups** объекта [targetedManagedAppProtection](/graph/api/resources/intune-mam-targetedmanagedappprotection?view=graph-rest-beta).|
-|Изменение|Бета-версия|Добавлено свойство навигации **deviceManagementTroubleshootingEvents** для объекта [user](/graph/api/resources/intune-devices-user?view=graph-rest-beta).|
+|Изменение|Бета|Добавлено свойство навигации **deviceManagementTroubleshootingEvents** для объекта [user](/graph/api/resources/intune-devices-user?view=graph-rest-beta).|
 |Изменение|Бета-версия|Удалено свойство навигации **allowedAppLockerFiles** объекта [windowsInformationProtection](/graph/api/resources/intune-mam-windowsinformationprotection?view=graph-rest-beta).|
 |Изменение|Бета-версия|Удалено свойство навигации **windowsProtectionState** объекта [windowsManagedDevice](/graph/api/resources/intune-devices-windowsmanageddevice?view=graph-rest-beta).|
 |Изменение|Бета|Добавлено свойство **v11_0** для сложного типа [iosMinimumOperatingSystem](/graph/api/resources/intune-apps-iosminimumoperatingsystem?view=graph-rest-beta).|

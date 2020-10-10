@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 7c4e1e5280843ae6fd1913ca69b093c9de1dab0f
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: f64cc64ee2d14b4967d36e35513b54c86820750d
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48374359"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48404949"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -40,27 +40,29 @@ ms.locfileid: "48374359"
 | [Обновление группы](../api/group-update.md) | Нет | Обновление свойств объекта group. |
 | [Удаление группы](../api/group-delete.md) | Нет | Удаление объекта group. |
 | [delta](../api/group-delta.md) | Коллекция group | Получение добавочных изменений для групп. |
-| [Перечисление groupLifecyclePolicies](../api/group-list-grouplifecyclepolicies.md)  | Коллекция [groupLifecyclePolicy](grouplifecyclepolicy.md) | Перечисление политик жизненного цикла для групп. |
-| [Renew](../api/group-renew.md) | Логический | Обновляет срок действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой. |
+| [Добавление члена](../api/group-post-members.md) | Нет | Добавление пользователя или группы в данную группу путем помещения в свойство навигации **members** (поддерживается только для групп безопасности, в том числе с включенной поддержкой почты). |
 | [Добавление владельца](../api/group-post-owners.md) | Нет | Добавление владельца группы путем помещения в свойство навигации **owners** (поддерживается только для групп безопасности, в том числе с включенной поддержкой почты). |
+| [Создание параметра](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) | Создание параметра объекта на базе groupSettingTemplate. POST-запрос должен предоставлять объекты settingValue для всех параметров, определенных в шаблоне. В случае этой операции могут использоваться только шаблоны специально для групп. |
+| [Удаление параметра](../api/groupsetting-delete.md) | Нет | Удаление объекта setting. |
+| [Получение конечной точки](../api/endpoint-get.md) | [endpoint](endpoint.md) | Чтение свойств и связей объекта endpoint. |
+| [Получение параметра](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Считывание свойств определенного объекта setting. |
+| [Перечисление конечных точек](../api/group-list-endpoints.md) | Коллекция [endpoint](endpoint.md) | Получение коллекции объектов endpoint. |
+| [Перечисление groupLifecyclePolicies](../api/group-list-grouplifecyclepolicies.md)  | Коллекция [groupLifecyclePolicy](grouplifecyclepolicy.md) | Перечисление политик жизненного цикла для групп. |
+| [Перечисление участников](../api/group-list-members.md) | Коллекция [directoryObject](directoryobject.md) | Получение пользователей и групп, являющихся непосредственными участниками этой группы, из свойства навигации **members**. |
 | [Список владельцев](../api/group-list-owners.md) | Коллекция [directoryObject](directoryobject.md) | Получение владельцев группы из свойства навигации **owners**. |
-| [Удаление владельца](../api/group-delete-owners.md) | Нет | Удаление владельца из группы Microsoft 365 или группы безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **owners**. |
-| [Добавление участника](../api/group-post-members.md) | Нет | Добавление пользователя или группы в данную группу путем помещения в свойство навигации **members** (поддерживается только для групп безопасности, в том числе с включенной поддержкой почты). |
-| [Список членов](../api/group-list-members.md) | Коллекция [directoryObject](directoryobject.md) | Получение пользователей и групп, являющихся непосредственными участниками этой группы, из свойства навигации **members**. |
+| [Перечисление параметров](../api/groupsetting-list.md) | Коллекция объектов [groupSetting](groupsetting.md) | Перечисление свойств всех объектов setting. |
 | [Перечисление транзитивных участников](../api/group-list-transitivemembers.md) | Коллекция [directoryObject](directoryobject.md) | Получение пользователей, групп и устройств, являющихся участниками, включая вложенных участников этой группы. |
 | [Перечисление транзитивных свойств memberOf](../api/group-list-transitivememberof.md) | Коллекция [directoryObject](directoryobject.md) | Перечисление групп, в которых состоит эта группа. Эта операция является транзитивной и включает группы, в которых эта группа является вложенным элементом. |
 | [Удаление участника](../api/group-delete-members.md) | Нет | Удаление участника из группы Microsoft 365 или группы безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **members**. Вы можете удалять пользователей или другие группы. |
+| [Удаление владельца](../api/group-delete-owners.md) | Нет | Удаление владельца из группы Microsoft 365 или группы безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **owners**. |
+| [Обновление параметра](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Обновление объекта setting. |
+| [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Добавление или удаление подписок группы. Вы также можете включать и отключать отдельные планы, связанные с подпиской. |
 | [checkMemberGroups](../api/group-checkmembergroups.md) | Коллекция String | Проверка данной группы на членство в списке групп. Это транзитивная функция. |
 | [checkMemberObjects](../api/group-checkmemberobjects.md) | Коллекция String | Проверка участия в списке группы, роли каталога или объектах административных единиц. Это транзитивная функция. |
 | [getMemberGroups](../api/group-getmembergroups.md) | Коллекция String | Возврат всех групп, в которых состоит эта группа. Это транзитивная функция. |
 | [getMemberObjects](../api/group-getmemberobjects.md) | Коллекция String | Возврат всех групп, в которых состоит эта группа. Это транзитивная функция. |
-| [Создание параметра](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) | Создание параметра объекта на базе groupSettingTemplate. POST-запрос должен предоставлять объекты settingValue для всех параметров, определенных в шаблоне. В случае этой операции могут использоваться только шаблоны специально для групп. |
-| [Получение параметра](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Считывание свойств определенного объекта параметра. |
-| [Перечисление параметров](../api/groupsetting-list.md) | Коллекция объектов [groupSetting](groupsetting.md) | Перечисление свойств всех объектов параметра. |
-| [Обновление параметра](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Обновление объекта параметра. |
-| [Удаление параметра](../api/groupsetting-delete.md) | Нет | Удаление объекта параметра. |
+| [renew](../api/group-renew.md) | Boolean | Обновляет срок действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой. |
 | [validateProperties](../api/group-validateproperties.md) | JSON | Проверка соответствия отображаемого имени или почтового псевдонима группы Microsoft 365 политикам именования. |
-| [assignLicense](../api/group-assignlicense.md) | [group](group.md) | Добавление или удаление подписок группы. Вы также можете включать и отключать отдельные планы, связанные с подпиской. |
 | **Назначение ролей приложений** |||
 | [Перечисление appRoleAssignments](../api/group-list-approleassignments.md) | Коллекция [appRoleAssignment](approleassignment.md) | Получение приложений и ролей приложений, назначенных группе. |
 | [Добавление объекта appRoleAssignment](../api/group-post-approleassignments.md) | [appRoleAssignment](approleassignment.md) | Назначение роли приложения группе. |

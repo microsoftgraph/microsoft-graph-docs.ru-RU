@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5fba175c46aa86b0db649cb69eee9cad6e8cbc8a
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 515d5adb7feaab4f460882c22ee1639fd37df123
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372406"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417770"
 ---
 # <a name="get-authenticationmethod"></a>Получение параметра authenticationMethod
 
@@ -43,7 +43,7 @@ ms.locfileid: "48372406"
 
 ```http
 GET /me/authentication/methods/{id}
-GET /users/{id}/authentication/methods/{id}
+GET /users/{id | userPrincipalName}/authentication/methods/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -56,7 +56,7 @@ GET /users/{id}/authentication/methods/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

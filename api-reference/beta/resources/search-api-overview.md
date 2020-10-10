@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: d4d88f772ec6291a35c19bd30a63ee90cd0ca989
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 36e953866de02e81910d1b75397e90cf7fdd0f29
+ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373890"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48405325"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Использование API Поиска (Майкрософт) для запросов данных
 
@@ -123,9 +123,9 @@ API Microsoft Search предоставляет метод [query](../api/search
 
 Учтите, что сортировка результатов в настоящее время поддерживается только для следующих типов SharePoint и OneDrive: [driveItem](driveitem.md), [listItem](listitem.md), [list](list.md), [site](site.md).
 
-Свойства, к которым применяется предложение sort, должны быть сортируемыми в [схеме поиска](https://docs.microsoft.com/sharepoint/manage-search-schema) SharePoint. Если свойство, указанное в запросе, не является сортируемым или не существует, в отклике будет возвращена ошибка `HTTP 400 Bad Request`. Учтите, что нельзя задать сортировку документов по релевантности с использованием [sortProperty](sortproperty.md).
+Свойства, к которым применяется предложение sort, должны быть сортируемыми в [схеме поиска](/sharepoint/manage-search-schema) SharePoint. Если свойство, указанное в запросе, не является сортируемым или не существует, в отклике будет возвращена ошибка `HTTP 400 Bad Request`. Обратите внимание, что нельзя задать сортировку документов по релевантности с использованием [sortProperty](sortproperty.md).
 
-При указании параметра **name** объекта [sortProperty](sortproperty.md) можно использовать имя свойства из типа Microsoft Graph (например, в [driveItem](driveitem.md)) или имя управляемого свойств в индексе поиска.
+При указании параметра **name** объекта [sortProperty](sortproperty.md) можно использовать имя свойства из типа Microsoft Graph (например, в [driveItem](driveitem.md)) или имя управляемого свойства в индексе поиска.
 
 Примеры сортировки результатов см. в разделе [Сортировка результатов поиска](/graph/search-concept-sort).
 
@@ -133,9 +133,9 @@ API Microsoft Search предоставляет метод [query](../api/search
 
 Агрегаты (также называемые уточнениями в SharePoint) — это очень популярное средство, которое позволяет расширить возможности поиска. В дополнение к результатам они предоставляют некоторые обобщенные сведения о наборе данных, из которого получены результатов поиска. Например, можно представить сведения о наиболее заметных авторах документов, которые удовлетворяют запросу, или о самых распространенных типах файлов и т. д.
 
-В [searchRequest](./searchrequest.md) укажите агрегаты, которые надо получить в дополнение к результатам поиска. Описание каждого агрегата приведено в [aggregationOption](./aggregationoption.md), где указывается свойство, на основе которого будет рассчитываться агрегат, и количаство [searchBucket](searchBucket.md), возвращаемое в отклике.
+В [searchRequest](./searchrequest.md) укажите агрегаты, которые нужно получить в дополнение к результатам поиска. Описание каждого агрегата приведено в [aggregationOption](./aggregationoption.md), где указывается свойство, на основе которого будет рассчитываться агрегат, и количество объектов [searchBucket](searchBucket.md), возвращаемое в отклике.
 
-Свойства, по которым запрашивается агрегат, должны быть уточняемыми в [схеме поиска](https://docs.microsoft.com/sharepoint/manage-search-schema) SharePoint. Если указанное свойство не является уточняемым или не существует, отклик возвращает`HTTP 400 Bad Request`.
+Свойства, по которым запрашивается агрегат, должны быть уточняемыми в [схеме поиска](/sharepoint/manage-search-schema) SharePoint. Если указанное свойство не является уточняемым или не существует, отклик возвращает`HTTP 400 Bad Request`.
 
 Когда будет получен отклик, содержащий набор объектов [searchBucket](searchBucket.md), можно уточнить поисковый запрос, ограничив его только совпадающими элементами из одного объекта [searchBucket](searchBucket.md). Это достигается путем передачи значения **aggregationsFilterToken** в свойстве **aggregationFilters** последующего [searchRequest](./searchrequest.md).
 
@@ -155,10 +155,10 @@ API поиска возвращает отклики с ошибками, опи
 
 - Метод **query** определяется, чтобы разрешить передачу коллекции из одного или нескольких экземпляров **searchRequest**. Однако в настоящее время служба может обрабатывать только по одному экземпляру [searchRequest](./searchrequest.md) за раз.
 
-- Ресурс [searchRequest](./searchrequest.md) поддерживает одновременную передачу объектов нескольких типов. Однако в настоящее время поддерживается только следующее сочетание для типов сущностей Sharepoint и OneDrive: **driveItem**, **drive**, **site**, **list**, **listItem**.
-Любые сочетания, включающие **message**, **event**, типы Sharepoint и OneDrive или **externalItem**, пока не поддерживаются.  
+- Ресурс [searchRequest](./searchrequest.md) поддерживает одновременную передачу объектов нескольких типов. Однако в настоящее время поддерживается только следующее сочетание для типов объектов SharePoint и OneDrive: **driveItem**, **drive**, **site**, **list**, **listItem**.
+Любые сочетания, включающие **message**, **event**, типы SharePoint и OneDrive или **externalItem**, пока не поддерживаются.  
 
-- Свойство **contentSource**, которое определяет используемое соединение, применимо, только если для свойства **entityType** задано значение `externalItem`.
+- Свойство **contentSource**, определяющее используемое соединение, применимо только при присвоении свойству **entityType** значения `externalItem`.
 
 - API поиска не поддерживает настраиваемую сортировку для **message**, **event** или **externalItem**.
 
@@ -198,4 +198,3 @@ API поиска возвращает отклики с ошибками, опи
 ## <a name="whats-new"></a>Новые возможности
 
 Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
-

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 23af471670712b9ca77688e185dee3efceae2e89
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 83d83f0e1c298484a69a72eebc57d02feeb9738d
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402679"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417844"
 ---
 # <a name="delete-phoneauthenticationmethod"></a>Удаление Фонеаусентикатионмесод
 
@@ -48,7 +48,7 @@ ms.locfileid: "48402679"
 
 ```http
 DELETE /me/authentication/phoneMethods/{id}
-DELETE /users/{id}/authentication/phoneMethods/{id}
+DELETE /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -57,7 +57,7 @@ DELETE /users/{id}/authentication/phoneMethods/{id}
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

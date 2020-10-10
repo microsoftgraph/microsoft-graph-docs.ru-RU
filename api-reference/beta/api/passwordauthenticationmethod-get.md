@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 81410eeaef66aee702b010f715ee15ac3be70215
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 93ac85f59cf82fffeb50ffa56c67324d4eae4f05
+ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401811"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417921"
 ---
 # <a name="get-passwordauthenticationmethod"></a>Получение Пассвордаусентикатионмесод
 
@@ -43,7 +43,7 @@ ms.locfileid: "48401811"
 
 ```http
 GET /me/authentication/passwordMethods/{id}
-GET /users/{id}/authentication/passwordMethods/{id}
+GET /users/{id | userPrincipalName}/authentication/passwordMethods/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -54,9 +54,9 @@ GET /users/{id}/authentication/passwordMethods/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
