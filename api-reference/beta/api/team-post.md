@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: bdb14241f4b8cddcb3f39c7e361329914ed13ef7
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 4c1b347088e353e9732e01a7286a09e6d23ff6bc
+ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373155"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48433445"
 ---
 # <a name="create-team"></a>Создание команды
 
@@ -28,8 +28,7 @@ ms.locfileid: "48373155"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Group.ReadWrite.All, Directory.ReadWrite.All |
-|Для приложений|Teamwork.Migrate.All|
+| Для приложений                            | Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -122,16 +121,18 @@ POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
-  "displayName": "My Sample Team",
-  "description": "My Sample Team’s Description",
-  "members@odata.bind": [
-            {
-            "@odata.type": "#microsoft.graph.aadUserConversationMember",
-            "roles": ["owner"],
-            "userId": "0040b377-61d8-43db-94f5-81374122dc7e"
-        }
-  ]
+   "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('standard')",
+   "displayName":"My Sample Team",
+   "description":"My Sample Team’s Description",
+   "members@odata.bind":[
+      {
+         "@odata.type":"#microsoft.graph.aadUserConversationMember",
+         "roles":[
+            "owner"
+         ],
+         "userId":"0040b377-61d8-43db-94f5-81374122dc7e"
+      }
+   ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -361,33 +362,33 @@ POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
-  "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')",
-  "channels": [
-        {
-            "displayName": "Class Announcements 📢",
-            "isFavoriteByDefault": true
-        },
-        {
-            "displayName": "Homework 🏋️",
-            "isFavoriteByDefault": true,
-        }
-    ],
-    "memberSettings": {
-        "allowCreateUpdateChannels": false,
-        "allowDeleteChannels": false,
-        "allowAddRemoveApps": false,
-        "allowCreateUpdateRemoveTabs": false,
-        "allowCreateUpdateRemoveConnectors": false
-    },
-    "installedApps": [
-        {
-            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
-        },
-        {
-            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
-        }
-    ]
+   "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('standard')",
+   "group@odata.bind":"https://graph.microsoft.com/v1.0/groups('groupId')",
+   "channels":[
+      {
+         "displayName":"Class Announcements 📢",
+         "isFavoriteByDefault":true
+      },
+      {
+         "displayName":"Homework 🏋️",
+         "isFavoriteByDefault":true
+      }
+   ],
+   "memberSettings":{
+      "allowCreateUpdateChannels":false,
+      "allowDeleteChannels":false,
+      "allowAddRemoveApps":false,
+      "allowCreateUpdateRemoveTabs":false,
+      "allowCreateUpdateRemoveConnectors":false
+   },
+   "installedApps":[
+      {
+         "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
+      },
+      {
+         "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
+      }
+   ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -491,34 +492,34 @@ POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
-  "displayName": "My Class Team",
-  "description": "My Class Team’s Description",
-  "channels": [
-        {
-            "displayName": "Class Announcements 📢",
-            "isFavoriteByDefault": true
-        },
-        {
-            "displayName": "Homework 🏋️",
-            "isFavoriteByDefault": true,
-        }
-    ],
-    "memberSettings": {
-        "allowCreateUpdateChannels": false,
-        "allowDeleteChannels": false,
-        "allowAddRemoveApps": false,
-        "allowCreateUpdateRemoveTabs": false,
-        "allowCreateUpdateRemoveConnectors": false
-    },
-    "installedApps": [
-        {
-            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
-        },
-        {
-            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
-        }
-    ]
+   "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('educationClass')",
+   "displayName":"My Class Team",
+   "description":"My Class Team’s Description",
+   "channels":[
+      {
+         "displayName":"Class Announcements 📢",
+         "isFavoriteByDefault":true
+      },
+      {
+         "displayName":"Homework 🏋️",
+         "isFavoriteByDefault":true
+      }
+   ],
+   "memberSettings":{
+      "allowCreateUpdateChannels":false,
+      "allowDeleteChannels":false,
+      "allowAddRemoveApps":false,
+      "allowCreateUpdateRemoveTabs":false,
+      "allowCreateUpdateRemoveConnectors":false
+   },
+   "installedApps":[
+      {
+         "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
+      },
+      {
+         "teamsApp@odata.bind":"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
+      }
+   ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
