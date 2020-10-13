@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 07d5353b7c46611b4ba1abaa46be721035e1d9e9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e997d3be656bd69b35fdb8d1b6258660ad594e12
+ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48033568"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48433333"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -46,6 +46,10 @@ ms.locfileid: "48033568"
 |[Удаление пароля](../api/serviceprincipal-removepassword.md)|[passwordCredential](passwordcredential.md)|Удаление пароля из servicePrincipal.|
 |[Добавление ключа](../api/serviceprincipal-addkey.md)|[keyCredential](keycredential.md)|Добавление учетных данных ключа объекту servicePrincipal.|
 |[Удаление ключа](../api/serviceprincipal-removekey.md)|Нет|Удаление учетных данных ключа объекта servicePrincipal.|
+|**Классификация делегированных разрешений**| | |
+|[Список классификации делегированных разрешений](../api/serviceprincipal-list-delegatedpermissionclassifications.md) |Коллекция [delegatedPermissionClassification](delegatedpermissionclassification.md)| Получение классификаций для делегированных разрешений, предоставленных этим субъектом-службой.|
+|[Добавление классификации делегированных разрешений](../api/serviceprincipal-post-delegatedpermissionclassifications.md) |[delegatedPermissionClassification](delegatedpermissionclassification.md) | Добавление классификации для делегированных разрешений, предоставленных этим субъектом-службой. |
+|[Удаление классификации делегированных разрешений](../api/serviceprincipal-delete-delegatedpermissionclassifications.md) | Нет | Удаление классификации для делегированных разрешений, предоставленных этим субъектом-службой.|
 |**Предоставление делегированных разрешений**| | |
 |[Перечисление oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md) |Коллекция [oAuth2PermissionGrant](oauth2permissiongrant.md)| Получите предоставление делегированных разрешений, предоставляющих этому объекту-службе доступ к API от имени пользователя, вошедшего в систему.|
 |**Членство**.| | |
