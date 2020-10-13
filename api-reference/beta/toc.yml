@@ -925,6 +925,15 @@ items:
                 items:
                   - name: 'Список делегированных разрешений, предоставленных представителем'
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
+              - name: Классификации делегированных разрешений
+                href: resources/delegatedpermissionclassification.md
+                items:
+                  - name: Список
+                    href: api/serviceprincipal-list-delegatedpermissionclassifications.md
+                  - name: Создание
+                    href: api/serviceprincipal-post-delegatedpermissionclassifications.md
+                  - name: Удалить
+                    href: api/serviceprincipal-delete-delegatedpermissionclassifications.md
               - name: Участие
                 items:
                   - name: Список memberOf
@@ -10237,6 +10246,34 @@ items:
                         href: api/homerealmdiscoverypolicy-delete.md
                       - name: Список субъектов-служб и приложений
                         href: api/homerealmdiscoverypolicy-list-appliesto.md
+                  - name: Политика предоставления разрешений
+                    href: resources/permissiongrantpolicy.md
+                    items:
+                      - name: Создание
+                        href: api/permissiongrantpolicy-post-permissiongrantpolicies.md
+                      - name: Перечисление
+                        href: api/permissiongrantpolicy-list.md
+                      - name: Получение
+                        href: api/permissiongrantpolicy-get.md
+                      - name: Обновление
+                        href: api/permissiongrantpolicy-update.md
+                      - name: Delete
+                        href: api/permissiongrantpolicy-delete.md
+                      - name: Наборы условий предоставления разрешений
+                        href: resources/permissiongrantconditionset.md
+                        items:
+                          - name: Список включает
+                            href: api/permissiongrantpolicy-list-includes.md
+                          - name: Создание в включенных
+                            href: api/permissiongrantpolicy-post-includes.md
+                          - name: Удаление из включенных
+                            href: api/permissiongrantpolicy-delete-includes.md
+                          - name: Список исключений
+                            href: api/permissiongrantpolicy-list-excludes.md
+                          - name: Создание в исключениях
+                            href: api/permissiongrantpolicy-post-excludes.md
+                          - name: Удаление из исключений
+                            href: api/permissiongrantpolicy-delete-excludes.md
                   - name: Политика выпуска маркеров
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -11985,7 +12022,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
