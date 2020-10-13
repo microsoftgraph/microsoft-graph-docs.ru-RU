@@ -5,12 +5,12 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: 724e1b81bdb2d5c1244681cc4a754c0272be8a1d
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: 72ad6506cf90f0341148ef0b32f804e6ee4d12a7
+ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417865"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48433424"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
@@ -59,7 +59,7 @@ ms.locfileid: "48417865"
 
 |Member|
 |:---|
-|пользователь|
+|user|
 |group|
 
 ### <a name="authenticationmethodstate-values"></a>значения Аусентикатионмесодстате
@@ -87,7 +87,7 @@ ms.locfileid: "48417865"
 
 |Member|
 |:---|
-|birthday|
+|birthday;|
 |свадеб|
 |unknownFutureValue|
 
@@ -158,7 +158,7 @@ ms.locfileid: "48417865"
 |Member|
 |:---|
 |email|
-|mobilePhone|
+|mobilePhone;|
 |оффицефоне|
 |секуритикуестион|
 |аппнотификатион|
@@ -1084,7 +1084,7 @@ Enum для типов значений реестра, определенных
 |Member|
 |:---|
 |SignIn|
-|пользователь|
+|user|
 |unknownFutureValue|
 
 ### <a name="chatmessagepolicyviolationuseractiontype-values"></a>значения Чатмессажеполицивиолатионусерактионтипе
@@ -1265,7 +1265,7 @@ Enum для типов значений реестра, определенных
 
 | Элемент | Значение | Описание             |
 |:-------|:------|:------------------------|
-| mail   | 1,1     | Почтовые угрозы.            |
+| mail;   | 1,1     | Почтовые угрозы.            |
 | url    | 2     | Угроза URL-адресов.             |
 | file   | 4     | Угроза файла вложения. |
 
@@ -1297,7 +1297,7 @@ Enum для типов значений реестра, определенных
 | Элемент        | Значение | Описание              |
 |:--------------|:------|:-------------------------|
 | undefined     | нуль     | Еще не известно.            |
-| пользователь          | 1,1     | Отправка пользователя.         |
+| user          | 1,1     | Отправка пользователя.         |
 | имени | 2     | Отправка администратором клиента. |
 
 ### <a name="threatassessmentresulttype-values"></a>значения Среатассессментресулттипе
@@ -1414,7 +1414,7 @@ Enum для типов значений реестра, определенных
 
 |Member|
 |:---|
-|пользователь|
+|user|
 |group|
 
 ### <a name="connectionstate-values"></a>значения Коннектионстате
@@ -1425,3 +1425,17 @@ Enum для типов значений реестра, определенных
 |сможет|
 |устаревши|
 |лимитексцеедед|
+
+### <a name="permissionclassificationtype-values"></a>значения Пермиссионклассификатионтипе
+
+| Member
+|:-------
+| потребление
+
+### <a name="permissiontype-values"></a>значения Пермиссионтипе
+
+| Member
+|:-------------------------
+| приложение
+| делегированные
+| делегатедусерконсентабле

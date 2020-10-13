@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0b4300a3f5256b69b24c5df53866d970e0858b88
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eb59ce72fb1c6bfd977e73514bf8c576d20cd2a0
+ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989894"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48433438"
 ---
 # <a name="get-unifiedroleassignmentmultiple"></a>Получение unifiedRoleAssignmentMultiple
 
@@ -18,7 +18,7 @@ ms.locfileid: "47989894"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [унифиедролеассигнментмултипле](../resources/unifiedroleassignmentmultiple.md) . Используйте этот объект для получения назначений ролей в Microsoft Intune. Для других приложений Микрсофт 365 (например, Azure AD) используйте [унифиедролеассигнмент](../resources/unifiedroleassignment.md).
+Получение свойств и связей объекта [унифиедролеассигнментмултипле](../resources/unifiedroleassignmentmultiple.md) . Используйте этот объект для получения назначений ролей в Microsoft Intune. Для других приложений Microsoft 365 (например, Azure AD) используйте [унифиедролеассигнмент](../resources/unifiedroleassignment.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "47989894"
 |:--------------- |:------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись) | DeviceManagementRBAC. Read. ALL, DeviceManagementRBAC. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | DeviceManagementRBAC. Read. ALL, DeviceManagementRBAC. ReadWrite. ALL |
+| Приложение | DeviceManagementRBAC. Read. ALL, DeviceManagementRBAC. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ GET /roleManagement/deviceManagement/roleAssignments/{id}
 |:----- |:----------- |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -4,13 +4,13 @@ description: Удаление подписки.
 localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
-ms.prod: ''
-ms.openlocfilehash: 08166c2570c6c73fbb412a4713b5669b36e57736
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: abc9bb7654e3571d19c4fe47451a572eeff63ee0
+ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193320"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48433326"
 ---
 # <a name="delete-subscription"></a>Удаление подписки
 
@@ -27,10 +27,10 @@ ms.locfileid: "48193320"
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Приложение |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) | Не поддерживается | Не поддерживается | CallRecords.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/теамс/{ИД}/чаннелс/{ИД}/мессажес) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Не поддерживается | ChannelMessage.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/теамс/жеталлмессажес--все сообщения каналов в организации) | Не поддерживается | Не поддерживается | ChannelMessage.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/ЧАТС/{ИД}/мессажес) | Chat.Read, Chat.ReadWrite | Не поддерживается | Chat.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/ЧАТС/жеталлмессажес--все сообщения чата в организации) | Не поддерживается | Не поддерживается | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All | Не поддерживается | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages — все сообщения канала в организации) | Не поддерживается | Не поддерживается | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Chat.Read, Chat.ReadWrite | Не поддерживается | Chat.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/chats/getAllMessages — все сообщения чата в организации) | Не поддерживается | Не поддерживается | Chat.Read.All  |
 |[contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 |[driveItem](../resources/driveitem.md) (личное хранилище OneDrive пользователя) | Не поддерживается | Files.ReadWrite | Не поддерживается |
 |[driveItem](../resources/driveitem.md) (OneDrive для бизнеса) | Files.ReadWrite.All | Не поддерживается | Files.ReadWrite.All |
@@ -47,22 +47,22 @@ ms.locfileid: "48193320"
 
 подписки **chatMessage** с делегированными разрешениями не поддерживают данные ресурсов (**инклудересаурцедата** должны быть `false` ) и не требуют [шифрования](/graph/webhooks-with-resource-data).
 
-подписки **chatMessage** с разрешениями приложений включают данные ресурсов и требуют [шифрования](/graph/webhooks-with-resource-data). Если [енкриптионцертификате](../resources/subscription.md) не указан, создание подписки завершится с ошибками. Перед созданием подписки на **chatMessage** необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis). 
+Подписки **chatMessage** с разрешениями для приложений включают данные ресурса и требуют [шифрования](/graph/webhooks-with-resource-data). Создание подписки завершится сбоем, если не указан [encryptionCertificate](../resources/subscription.md). Перед созданием подписки **chatMessage** вы должны запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis). 
 
-> **Примечание:** `/teams/getAllMessages` и `/chats/getAllMessages` доступны пользователям, у которых есть  
- [необходимые лицензии](https://aka.ms/teams-changenotification-licenses).
+> **Примечание.** `/teams/getAllMessages` и `/chats/getAllMessages` доступны для пользователей с  
+[требуемыми лицензиями](https://aka.ms/teams-changenotification-licenses).
 
 ### <a name="driveitem"></a>driveItem
 
-Дополнительные ограничения применяются к подпискам на элементы OneDrive. Ограничения применяются к созданию и управлению (получению, обновлению и удалению) подписок.
+Дополнительные ограничения применяются к подпискам на элементы OneDrive. Ограничения применяются для создания, а также управления (получение, обновление и удаление) подписками.
 
-В личном хранилище OneDrive можно подписаться на корневую папку или любую подпапку на этом диске. В OneDrive для бизнеса можно подписаться только на корневую папку. Уведомления об изменениях отправляются для определенных типов изменений папки, на которую оформлена подписка, любого файла, папки или других экземпляров **driveItem** в ее иерархии. Нельзя подписаться на экземпляры **drive** или **driveItem**, не являющиеся папками, например на отдельные файлы.
+В личном хранилище OneDrive можно подписаться на корневую папку или любую вложенную папку в этом хранилище. В OneDrive для бизнеса можно подписаться только на корневую папку. Уведомления об изменениях отправляются для определенных типов изменений папки, на которую оформлена подписка, любого файла, папки или других экземпляров **driveItem** в ее иерархии. Нельзя подписаться на экземпляры **drive** или **driveItem**, не являющиеся папками, например на отдельные файлы.
 
-### <a name="contact-event-and-message"></a>контакты, события и сообщения
+### <a name="contact-event-and-message"></a>contact, event и message
 
-Дополнительные ограничения применяются для подписок на элементы Outlook. Ограничения применяются к созданию и управлению (получению, обновлению и удалению) подписок.
+Дополнительные ограничения применяются к подпискам на элементы Outlook. Ограничения применяются для создания, а также управления (получение, обновление и удаление) подписками.
 
-- Делегированное разрешение поддерживает подписку на элементы в папках только в почтовом ящике пользователя, выполнившего вход. Например, нельзя использовать делегированные календари разрешений. Read для подписки на события в почтовом ящике другого пользователя.
+- Делегированные разрешения поддерживают подписку на элементы в папках только в почтовом ящике пользователя, выполнившего вход. Например, вы не можете использовать делегированное разрешение Calendars.Read, чтобы подписаться на события в почтовом ящике другого пользователя.
 - Чтобы подписаться на уведомления об изменениях контактов Outlook, событий или сообщений в _общих или делегированных_ папках:
 
   - Используйте соответствующее разрешение приложения для подписки на изменения элементов в папке или почтовом ящике _любого_ пользователя в клиенте.
@@ -70,14 +70,14 @@ ms.locfileid: "48193320"
 
 ### <a name="presence"></a>presence
 
-для подписок на **присутствие** требуется [Шифрование](/graph/webhooks-with-resource-data). Если [енкриптионцертификате](../resources/subscription.md) не указан, создание подписки завершится с ошибками.
+для подписок на **присутствие** требуется [Шифрование](/graph/webhooks-with-resource-data). Создание подписки завершится сбоем, если не указан [encryptionCertificate](../resources/subscription.md).
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /subscriptions/{id}
+DELETE /subscriptions/{subscription-id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -109,7 +109,7 @@ DELETE /subscriptions/{id}
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/subscriptions/{id}
+DELETE https://graph.microsoft.com/beta/subscriptions/7f105c7d-2dc5-4530-97cd-4e7ae6534c07
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-subscription-csharp-snippets.md)]
