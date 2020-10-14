@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: e997d3be656bd69b35fdb8d1b6258660ad594e12
-ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.openlocfilehash: 3e40c3f9b0d435d2ac913afbef107da29e0bff20
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433333"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460413"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -128,6 +128,7 @@ ms.locfileid: "48433333"
 |appRoleAssignments|Коллекция [appRoleAssignment](approleassignment.md)|Приложения, которым назначен этот субъект-служба. Только для чтения. Допускается значение null.|
 |claimsMappingPolicies|Коллекция [claimsMappingPolicy](claimsmappingpolicy.md)|Типы ресурсов claimsMappingPolicy, назначенные субъекту-службе.|
 |createdObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, созданные субъектом-службой. Только для чтения. Допускается значение null.|
+|delegatedPermissionClassifications|Коллекция [delegatedPermissionClassification](delegatedpermissionclassification.md)|Классификации для делегированных разрешений, предоставленные приложением, которое представляет эта субъект-служба.|
 |endpoints|Коллекция [endpoint](endpoint.md)|Конечные точки, доступные для обнаружения. Службы, такие как Sharepoint, заполняют это свойство конечными точками, относящимися к клиенту SharePoint. Другие приложения могут обнаруживать эти конечные точки и использовать их.|
 |homeRealmDiscoveryPolicies|Коллекция [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md)|Типы ресурсов homeRealmDiscoveryPolicy, назначенные субъекту-службе.|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Роли, в которых участвует субъект-служба. Методы HTTP: GET. Только для чтения. Допускается значение null.|
