@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: e53acd2bb17a1082384f7c7f694aea34fc3911fc
-ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.openlocfilehash: 0fdda1a2c3664df29ee12374d213366eda43856a
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433682"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458712"
 ---
 # <a name="create-permissiongrantconditionset-in-includes-collection-of-permissiongrantpolicy"></a>Создание Пермиссионгранткондитионсет в коллекции включенных элементов Пермиссионгрантполици
 
@@ -28,7 +28,7 @@ ms.locfileid: "48433682"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Policy. ReadWrite. Пермиссионгрант |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Policy. ReadWrite. Пермиссионгрант |
+|Для приложений | Policy. ReadWrite. Пермиссионгрант |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -59,6 +59,8 @@ POST /policies/permissionGrantPolicies/{id}/includes
 
 В этом примере *все* делегированные разрешения для клиентских приложений из проверенных издателей включены в политику предоставления разрешений. Так как все остальные условия из [пермиссионгранткондитионсет](../resources/permissiongrantconditionset.md) опущены, они будут принимать значения по умолчанию, которые в каждом случае являются самыми-инклюзивными.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "truncated": true,
@@ -74,6 +76,20 @@ Content-Type: application/json
   "clientApplicationsFromVerifiedPublisherOnly": true
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/permissiongrantpolicy-create-includes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/permissiongrantpolicy-create-includes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/permissiongrantpolicy-create-includes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

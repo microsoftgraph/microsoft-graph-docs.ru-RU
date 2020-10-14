@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 2bc9c59b10f0f8ba3e203a3e0fc1daaf3e557e57
-ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.openlocfilehash: 4fc5f04ebfcb4c07fb8eef894445b2fa9164ed6c
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433685"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458724"
 ---
 # <a name="create-permissiongrantconditionset-in-excludes-collection-of-permissiongrantpolicy"></a>Create Пермиссионгранткондитионсет в исключении коллекции Пермиссионгрантполици
 
@@ -28,7 +28,7 @@ ms.locfileid: "48433685"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Policy. ReadWrite. Пермиссионгрант |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Policy. ReadWrite. Пермиссионгрант |
+|Для приложений | Policy. ReadWrite. Пермиссионгрант |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -59,6 +59,8 @@ POST /policies/permissionGrantPolicies/{id}/excludes
 
 В этом примере *все* делегированные разрешения для Microsoft Graph (**AppID** 00000003-0000-0000-C000-000000000000) исключаются из политики предоставления разрешений.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "truncated": true,
@@ -74,6 +76,20 @@ Content-Type: application/json
   "resourceApplication": "00000003-0000-0000-c000-000000000000"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/permissiongrantpolicy-create-excludes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/permissiongrantpolicy-create-excludes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/permissiongrantpolicy-create-excludes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

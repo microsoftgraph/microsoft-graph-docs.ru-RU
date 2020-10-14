@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 03a8c5f8369b54a105c904da0fd6debebb33a98e
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: fc889bcafef7433e1da050b2dba94d9f7eed1d9a
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401556"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459569"
 ---
 # <a name="update-user-mailbox-settings"></a>Обновление параметров почтового ящика пользователя
 
@@ -63,10 +63,10 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему. Вы можете настроить такие уведомления только для диапазона дат в будущем.|
-|dateFormat|string|Формат даты для почтового ящика пользователя.|
+|dateFormat|Строка|Формат даты для почтового ящика пользователя.|
 |делегатемитингмессажеделиверйоптионс|делегатемитингмессажеделиверйоптионс| Если у пользователя есть представитель календаря, этот параметр указывает, будут ли представитель, владелец почтового ящика или и то, и другое, получать сообщения о собраниях и ответы на приглашения. Возможные значения: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
 |language|[localeInfo](../resources/localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
-|тимеформат|string|Формат времени для почтового ящика пользователя.|
+|тимеформат|Строка|Формат времени для почтового ящика пользователя.|
 |timeZone|string|Часовой пояс, используемый по умолчанию, для почтового ящика пользователя.|
 |workingHours|[workingHours](../resources/workinghours.md)|Часы, дни недели и часовой пояс работы пользователя.|
 
@@ -131,7 +131,7 @@ Content-Type: application/json
 ---
 
 #### <a name="response"></a>Отклик
-Ответ включает обновленные параметры автоматических ответов. Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ответ включает обновленные параметры автоматических ответов. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "update_mailboxsettings_1",

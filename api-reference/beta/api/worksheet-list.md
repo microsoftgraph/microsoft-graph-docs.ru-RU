@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 26da070c11ef9256f79e95f5447d032a8ca48835
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 01d18210e5b4722bb233650a1e9e6fc3c8d9a2c6
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401500"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460649"
 ---
 # <a name="list-worksheetcollection"></a>Список WorksheetCollection
 
@@ -42,7 +42,7 @@ GET /workbook/worksheets
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

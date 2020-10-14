@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 9866915769a938fa98af9c8ba92850888def3eb7
-ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.openlocfilehash: 8bfef7bdb0c3965aed1a9362fed81008f4925519
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433637"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460245"
 ---
 # <a name="get-permissiongrantpolicy"></a>Получение Пермиссионгрантполици
 
@@ -28,7 +28,7 @@ ms.locfileid: "48433637"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy. Read. Пермиссионгрант, Policy. ReadWrite. Пермиссионгрант |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy. Read. Пермиссионгрант, Policy. ReadWrite. Пермиссионгрант |
+| Для приложений                            | Policy. Read. Пермиссионгрант, Policy. ReadWrite. Пермиссионгрант |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -62,6 +62,8 @@ GET /policies/permissionGrantPolicies/{id}
 
 Ниже приведен пример запроса. В этом примере запрошенная политика — это встроенная политика предоставления разрешений `microsoft-user-default-low` , которая включает в себя недорогие делегированные разрешения для приложений из проверенных издателей или приложений, зарегистрированных в этом клиенте.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_permissiongrantpolicy"
@@ -70,6 +72,20 @@ GET /policies/permissionGrantPolicies/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-user-default-low
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-permissiongrantpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-permissiongrantpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-permissiongrantpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

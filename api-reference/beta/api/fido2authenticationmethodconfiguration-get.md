@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5411f9c76b6870eccdb43863b5a62380d7caafa3
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: 8c1090c2ab71e66779d643e5149b3a053d35f5a7
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418427"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458824"
 ---
 # <a name="get-fido2authenticationmethodconfiguration"></a>Получение fido2AuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
@@ -24,8 +24,8 @@ ms.locfileid: "48418427"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Policy. ReadWrite. AuthenticationMethod|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.AuthenticationMethod|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 Для делегированных сценариев администратору требуется одна из следующих [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
@@ -50,7 +50,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fid
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -86,26 +86,28 @@ Content-type: application/json
 Content-length: 491
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
-    "id": "Fido2",
-    "state": "enabled",
-    "isSelfServiceRegistrationAllowed": true,
-    "isAttestationEnforced": true,
-    "keyRestrictions": {
-        "isEnforced": false,
-        "enforcementType": "block",
-        "aaGuids": []
-    },
-    "includeTargets": [
-        {
-            "targetType": "group",
-            "id": "all_users",
-            "isRegistrationRequired": false,
-            "useForSignIn": true
-        }
-    ]
-  }
+   "value":{
+      "@odata.type":"#microsoft.graph.fido2AuthenticationMethodConfiguration",
+      "id":"Fido2",
+      "state":"enabled",
+      "isSelfServiceRegistrationAllowed":true,
+      "isAttestationEnforced":true,
+      "keyRestrictions":{
+         "isEnforced":false,
+         "enforcementType":"block",
+         "aaGuids":[
+            
+         ]
+      },
+      "includeTargets":[
+         {
+            "targetType":"group",
+            "id":"all_users",
+            "isRegistrationRequired":false,
+            "useForSignIn":true
+         }
+      ]
+   }
 }
 ```
 

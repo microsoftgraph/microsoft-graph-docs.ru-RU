@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4e517887622a17e8b62caabc9ad932cefe2e7d88
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: e3b34bb0d274982e93a7156d5f5cd142e9e60119
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405220"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460091"
 ---
 # <a name="list-agreementacceptances"></a>Перечисление agreementAcceptances
 
@@ -43,7 +43,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 |:----------|:----------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [agreementAcceptance](../resources/agreementacceptance.md) в тексте отклика.

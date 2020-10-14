@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3a51767eb02765b3c6914d8b04c5758202b3df1f
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: aef29fa2ca32bd5cbc850695d1584b16852fbaab
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401906"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457413"
 ---
 # <a name="update-authorizationpolicy"></a>Обновление Аусоризатионполици
 
@@ -55,12 +55,12 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 |description|String| Описание этой политики. |  
 |гуестусерролеид|Guid| Представляет templateId роли для роли, которая должна быть выделена пользователю "гость". Обратитесь к [списку унифиедроледефинитионс](./rbacapplication-list-roledefinitions.md) , чтобы найти список доступных шаблонов ролей. Только поддерживаемые роли: User (a0b1b346-4d3e-4e8b-98f8-753987be4970), гость (10dae51f-b6af-4016-8d66-8c2a99b929b3) и пользователь с ограниченным гостями (2af84b1e-32c8-42b7-82bc-daa82404023b). | 
 |енабледпревиевфеатурес|Коллекция (String)| Список компонентов, включенных для закрытой предварительной версии в клиенте. | 
-|блоккмсолповершелл|Логический| Чтобы отключить использование MSOL PowerShell, задайте для этого свойства значение `true` . Параметр `true` также отключит доступ пользователей к устаревшей конечной точке службы, используемой MSOL PowerShell. Это не повлияет на Azure AD Connect или Microsoft Graph. | 
+|блоккмсолповершелл|Boolean| Чтобы отключить использование MSOL PowerShell, задайте для этого свойства значение `true` . Параметр `true` также отключит доступ пользователей к устаревшей конечной точке службы, используемой MSOL PowerShell. Это не повлияет на Azure AD Connect или Microsoft Graph. | 
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultUserRolePermissions.md)| Задает определенные настраиваемые разрешения для роли пользователя по умолчанию. | 
-|allowedToUseSSPR|Логический| Указывает, может ли функция сброса пароля Self-Serve использоваться пользователями клиента. | 
-|allowedToSignUpEmailBasedSubscriptions|Логический| Указывает, могут ли пользователи регистрироваться на почтовые подписки. | 
-|allowEmailVerifiedUsersToJoinOrganization|Логический| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. |
-| пермиссионгрантполициидсассигнедтодефаултусерроле | Коллекция объектов string | Указывает, разрешено ли согласие пользователя на доступ к приложениям, а также от того, какая [политика согласия приложения](/azure/active-directory/manage-apps/manage-app-consent-policies) определяет разрешение для пользователей на предоставление согласия. Значения должны быть в формате `managePermissionGrantsForSelf.{id}` , где `{id}` — это **идентификатор** встроенной или настраиваемой [политики согласия приложений](/azure/active-directory/manage-apps/manage-app-consent-policies). Пустой список указывает на то, что согласие пользователя на приложения отключено. |
+|allowedToUseSSPR|Boolean| Указывает, может ли функция сброса пароля Self-Serve использоваться пользователями клиента. | 
+|allowedToSignUpEmailBasedSubscriptions|Boolean| Указывает, могут ли пользователи регистрироваться на почтовые подписки. | 
+|allowEmailVerifiedUsersToJoinOrganization|Boolean| Указывает, может ли пользователь присоединиться к клиенту по проверке электронной почты. |
+| пермиссионгрантполициидсассигнедтодефаултусерроле | Коллекция String | Указывает, разрешено ли согласие пользователя на доступ к приложениям, а также от того, какая [политика согласия приложения](/azure/active-directory/manage-apps/manage-app-consent-policies) определяет разрешение для пользователей на предоставление согласия. Значения должны быть в формате `managePermissionGrantsForSelf.{id}` , где `{id}` — это **идентификатор** встроенной или настраиваемой [политики согласия приложений](/azure/active-directory/manage-apps/manage-app-consent-policies). Пустой список указывает на то, что согласие пользователя на приложения отключено. |
 
 ## <a name="response"></a>Отклик
 
@@ -90,7 +90,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -139,7 +139,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -187,7 +187,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -239,7 +239,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -288,7 +288,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -306,6 +306,8 @@ HTTP/1.1 204 No Content
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authZPolicy_disableUserConsent"
@@ -318,10 +320,24 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
     "permissionGrantPolicyIdsAssignedToDefaultUserRole": [ ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-disableuserconsent-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authzpolicy-disableuserconsent-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-authzpolicy-disableuserconsent-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -339,6 +355,8 @@ HTTP/1.1 204 No Content
 
 Ниже приведен пример запроса, который разрешает согласие пользователя на приложения, в соответствии со встроенной [политикой согласия приложений](/azure/active-directory/manage-apps/manage-app-consent-policies) `microsoft-user-default-low` , которая разрешает делегированные разрешения, классифицированные как низкие, для клиентских приложений из проверенных издателей или зарегистрированных в одном клиенте.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authZPolicy_enableUserConsentLow"
@@ -353,6 +371,20 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
     ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-enableuserconsentlow-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authzpolicy-enableuserconsentlow-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-authzpolicy-enableuserconsentlow-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

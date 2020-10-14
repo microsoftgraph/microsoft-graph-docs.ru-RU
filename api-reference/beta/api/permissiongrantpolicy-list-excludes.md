@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: d7effc47b6561598e90e3fed45e953b0ab159b98
-ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.openlocfilehash: 31423b4f617bf4f4d83e099a42b7671fd62fa327
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433640"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460204"
 ---
 # <a name="list-excludes-collection-of-permissiongrantpolicy"></a>List исключает коллекцию Пермиссионгрантполици
 
@@ -28,7 +28,7 @@ ms.locfileid: "48433640"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Policy. Read. Пермиссионгрант, Directory. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Policy. Read. Пермиссионгрант, Directory. Read. ALL |
+|Для приложений | Policy. Read. Пермиссионгрант, Directory. Read. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -61,6 +61,8 @@ GET /policies/permissionGrantPolicies/{id}/excludes
 
 Ниже приведен пример запроса на получение наборов условий, **исключаемых** из встроенной политики предоставления разрешений `microsoft-application-admin` . Эта политика предоставления разрешений включает все делегированные разрешения, а также все разрешения приложений, кроме разрешений приложений для Microsoft Graph и разрешений приложений для Azure AD Graph.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "permissiongrantpolicy_get_excludes"
@@ -69,6 +71,20 @@ GET /policies/permissionGrantPolicies/{id}/excludes
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-application-admin/excludes
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/permissiongrantpolicy-get-excludes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/permissiongrantpolicy-get-excludes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/permissiongrantpolicy-get-excludes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 7cafcdfb6ee92a3913fd82f338c3607dec9c00bd
-ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.openlocfilehash: 84a0b1eae5d4800a50ddc9e258690228f971fad4
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433652"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460348"
 ---
 # <a name="delete-permissiongrantconditionset-from-excludes-collection-of-permissiongrantpolicy"></a>Удаление Пермиссионгранткондитионсет из коллекции исключений Пермиссионгрантполици
 
@@ -28,7 +28,7 @@ ms.locfileid: "48433652"
 |:--------------------|:---------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись) | Пермиссионгрантполици. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-| Приложение | Пермиссионгрантполици. ReadWrite. ALL |
+| Для приложений | Пермиссионгрантполици. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -58,6 +58,8 @@ DELETE /policies/permissionGrantPolicies/{permissiongrantpolicy-id}/excludes/{ex
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "permissiongrantpolicy_delete_excludes"
@@ -66,6 +68,20 @@ DELETE /policies/permissionGrantPolicies/{permissiongrantpolicy-id}/excludes/{ex
 ```http
 DELETE https://graph.microsoft.com/beta/policies/permissionGrantPolicies/my-custom-consent-policy/excludes/6a846635-3e70-4a10-821e-512a0db93cbd
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/permissiongrantpolicy-delete-excludes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/permissiongrantpolicy-delete-excludes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/permissiongrantpolicy-delete-excludes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

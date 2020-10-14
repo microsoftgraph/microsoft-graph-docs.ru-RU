@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 0ccc47ff73b11fcbc0c465bb1dbe8979939511ac
-ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.openlocfilehash: 1bc18442c7c6e1713ca1ed863a631519aeadef00
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433667"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459620"
 ---
 # <a name="update-permissiongrantpolicy"></a>Обновление Пермиссионгрантполици
 
@@ -28,7 +28,7 @@ ms.locfileid: "48433667"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy. ReadWrite. Пермиссионгрант |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Policy. ReadWrite. Пермиссионгрант |
+| Для приложений                            | Policy. ReadWrite. Пермиссионгрант |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -63,6 +63,8 @@ PATCH /policies/permissionGrantPolicies/{id}
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_permissiongrantpolicy"
@@ -76,6 +78,20 @@ Content-Type: application/json
   "displayName": "Custom permission grant policy"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-permissiongrantpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-permissiongrantpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-permissiongrantpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: 1120553d03daf30ce068bc61b7c378bcea2b1983
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 32f0e9504bc104967436596d512fe687a92aea5f
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401490"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459062"
 ---
 # <a name="list-rangeview-rows"></a>Получение списка строк rangeView
 
@@ -44,7 +44,7 @@ GET me/drive/root/workbook/worksheets/{id}/range(address={address})/visibleView/
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e22e6ab85ab90db49029850eca6755e17eeb99c8
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: c354400caabbabcaba7f4d25ba33181d55bcf7a0
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405211"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457753"
 ---
 # <a name="user-getmailtips"></a>Пользователь: подсказки
 
@@ -50,7 +50,7 @@ POST /users/{id|userPrincipalName}/getMailTips
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|EmailAddresses|Коллекция объектов string|Коллекция SMTP-адресов получателей, для которых требуется получить подсказки.|
+|EmailAddresses|Коллекция String|Коллекция SMTP-адресов получателей, для которых требуется получить подсказки.|
 |маилтипсоптионс|String|Перечисление флагов, представляющих запрашиваемые подсказки. Возможные значения: `automaticReplies` , `customMailTip` , `deliveryRestriction` , `externalMemberCount` , `mailboxFullStatus` , `maxMessageSize` , `moderationStatus` , `recipientScope` , `recipientSuggestions` и `totalMemberCount` .|
 
 ## <a name="response"></a>Отклик

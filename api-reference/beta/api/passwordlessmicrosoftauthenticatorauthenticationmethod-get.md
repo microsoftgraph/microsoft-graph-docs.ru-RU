@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8402360e4d4ca87afe2f09aa5b03a52e452aa0a8
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: 1a92e7669df96efe69d8e793fc327a8c578ffcde
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418519"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457501"
 ---
 # <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethod"></a>Получение Пассвордлессмикрософтаусентикатораусентикатионмесод
 Пространство имен: microsoft.graph
@@ -54,7 +54,7 @@ GET /users/{id | userPrincipalName}/authentication/passwordlessMicrosoftAuthenti
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -64,6 +64,8 @@ GET /users/{id | userPrincipalName}/authentication/passwordlessMicrosoftAuthenti
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_passwordlessmicrosoftauthenticatorauthenticationmethod"
@@ -72,6 +74,20 @@ GET /users/{id | userPrincipalName}/authentication/passwordlessMicrosoftAuthenti
 ``` http
 GET https://graph.microsoft.com/beta/me/authentication/passwordlessMicrosoftAuthenticatorMethods/R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-passwordlessmicrosoftauthenticatorauthenticationmethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-passwordlessmicrosoftauthenticatorauthenticationmethod-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-passwordlessmicrosoftauthenticatorauthenticationmethod-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

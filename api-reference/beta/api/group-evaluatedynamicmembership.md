@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: aad3e32cc1dd6936d0be221fe20225d56b386cb2
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 1716605557493f268d38beb8bf674dc15416c5b6
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403131"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457550"
 ---
 # <a name="group-evaluatedynamicmembership"></a>Группа: Евалуатединамикмембершип
 
@@ -67,8 +67,8 @@ POST /groups/evaluateDynamicMembership
 
 | Параметр | Тип | Описание |
 | :-------- | :--- | :---------- |
-| Идентификатора | Коллекция объектов string | memberId это идентификатор объекта для оцениваемого пользователя или устройства. |
-| membershipRule | Коллекция объектов string | Правило, используемое для оценки членства. Если это свойство не указано, оценивается правило для существующей группы. Если это свойство указано, то пользователь или устройство оцениваются для возможного членства в группе с тем же правилом. Дополнительные сведения см. [в статье динамическое правило членства для групп в Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
+| Идентификатора | Коллекция String | memberId это идентификатор объекта для оцениваемого пользователя или устройства. |
+| membershipRule | Коллекция String | Правило, используемое для оценки членства. Если это свойство не указано, оценивается правило для существующей группы. Если это свойство указано, то пользователь или устройство оцениваются для возможного членства в группе с тем же правилом. Дополнительные сведения см. [в статье динамическое правило членства для групп в Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
 
 ## <a name="response"></a>Отклик
 
@@ -114,7 +114,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 <!-- {
   "blockType": "response",

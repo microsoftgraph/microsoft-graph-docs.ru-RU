@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6f27734ab05b4fc38a6a7a720837da6cc21de817
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 7bef3fbf890fc8d55e28c28db519ec5853a833fa
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403981"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459601"
 ---
 # <a name="create-user"></a>Создание пользователя
 
@@ -54,7 +54,7 @@ POST /users
 
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
-|accountEnabled |Логический |Значение true, если учетная запись включена; в противном случае — false.|
+|accountEnabled |Boolean |Значение true, если учетная запись включена; в противном случае — false.|
 |displayName |string |Имя, которое следует отобразить в адресной книге для пользователя.|
 |onPremisesImmutableId |string |Необходимо указывать только при создании учетной записи пользователя, если вы используете федеративный домен для свойства userPrincipalName (UPN) этого пользователя.|
 |mailNickname |string |Почтовый псевдоним для пользователя.|

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: dac61d89fb2c49a7f6c3fc9157259c409bd0fe17
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: c76a5eca03706be659c8d2d93d134af5091cd660
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400874"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459494"
 ---
 # <a name="list-mailfolders"></a>Список объектов mailFolder
 
@@ -27,7 +27,7 @@ ms.locfileid: "48400874"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
 |Делегированные (личная учетная запись Майкрософт) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Для приложения | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
+|Приложение | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders
 ---
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа, который включает в себя **маилсеарчфолдер** , который является дочерней папкой в папке "Входящие". Примечание. Представленный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа, который включает в себя **маилсеарчфолдер** , который является дочерней папкой в папке "Входящие". Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

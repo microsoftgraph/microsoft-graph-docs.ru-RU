@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 92b672a8a8eae075f4d965bdb268f94ccfe07cb4
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: e7dcb0d269f1689a449840bbe2d805f78d19ec37
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403110"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457940"
 ---
 # <a name="list-endpoints"></a>Перечисление конечных точек
 
@@ -43,7 +43,7 @@ GET /groups/{id}/endpoints
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type   | Приложение/JSON |
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
