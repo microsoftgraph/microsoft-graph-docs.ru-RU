@@ -5,45 +5,45 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: aad3e32cc1dd6936d0be221fe20225d56b386cb2
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 1716605557493f268d38beb8bf674dc15416c5b6
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403131"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457550"
 ---
-# <a name="group-evaluatedynamicmembership"></a><span data-ttu-id="4fa5e-103">Группа: Евалуатединамикмембершип</span><span class="sxs-lookup"><span data-stu-id="4fa5e-103">group: evaluateDynamicMembership</span></span>
+# <a name="group-evaluatedynamicmembership"></a><span data-ttu-id="f0e5c-103">Группа: Евалуатединамикмембершип</span><span class="sxs-lookup"><span data-stu-id="f0e5c-103">group: evaluateDynamicMembership</span></span>
 
-<span data-ttu-id="4fa5e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4fa5e-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f0e5c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f0e5c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4fa5e-105">Определите, может ли пользователь или устройство являться членом динамической группы.</span><span class="sxs-lookup"><span data-stu-id="4fa5e-105">Evaluate whether a user or device is or would be a member of a dynamic group.</span></span> <span data-ttu-id="4fa5e-106">Правило членства возвращается вместе с другими сведениями, использованными в ходе оценки.</span><span class="sxs-lookup"><span data-stu-id="4fa5e-106">The membership rule is returned along with other details that were used in the evaluation.</span></span> <span data-ttu-id="4fa5e-107">Эту операцию можно выполнить следующими способами:</span><span class="sxs-lookup"><span data-stu-id="4fa5e-107">You can complete this operation in the following ways:</span></span> 
+<span data-ttu-id="f0e5c-105">Определите, может ли пользователь или устройство являться членом динамической группы.</span><span class="sxs-lookup"><span data-stu-id="f0e5c-105">Evaluate whether a user or device is or would be a member of a dynamic group.</span></span> <span data-ttu-id="f0e5c-106">Правило членства возвращается вместе с другими сведениями, использованными в ходе оценки.</span><span class="sxs-lookup"><span data-stu-id="f0e5c-106">The membership rule is returned along with other details that were used in the evaluation.</span></span> <span data-ttu-id="f0e5c-107">Эту операцию можно выполнить следующими способами:</span><span class="sxs-lookup"><span data-stu-id="f0e5c-107">You can complete this operation in the following ways:</span></span> 
 
-- <span data-ttu-id="4fa5e-108">Оценка того, является ли пользователь или устройство членом указанной динамической группы.</span><span class="sxs-lookup"><span data-stu-id="4fa5e-108">Evaluate whether a user or device is a member of a specified dynamic group.</span></span>  
-- <span data-ttu-id="4fa5e-109">Оценка того, будет ли пользователь или устройство участником динамической группы на основе идентификатора пользователя или устройства и правила членства.</span><span class="sxs-lookup"><span data-stu-id="4fa5e-109">Evaluate whether a user or device would be a member of a dynamic group based on the ID of the user or device and a membership rule.</span></span>
+- <span data-ttu-id="f0e5c-108">Оценка того, является ли пользователь или устройство членом указанной динамической группы.</span><span class="sxs-lookup"><span data-stu-id="f0e5c-108">Evaluate whether a user or device is a member of a specified dynamic group.</span></span>  
+- <span data-ttu-id="f0e5c-109">Оценка того, будет ли пользователь или устройство участником динамической группы на основе идентификатора пользователя или устройства и правила членства.</span><span class="sxs-lookup"><span data-stu-id="f0e5c-109">Evaluate whether a user or device would be a member of a dynamic group based on the ID of the user or device and a membership rule.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4fa5e-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4fa5e-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f0e5c-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f0e5c-110">Permissions</span></span>
 
-<span data-ttu-id="4fa5e-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4fa5e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f0e5c-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f0e5c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-### <a name="evaluate-dynamic-membership-with-member-id-and-group-id"></a><span data-ttu-id="4fa5e-113">Оценка динамического членства с ИДЕНТИФИКАТОРом участника и ИДЕНТИФИКАТОРом группы</span><span class="sxs-lookup"><span data-stu-id="4fa5e-113">Evaluate dynamic membership with member ID and group ID</span></span>
+### <a name="evaluate-dynamic-membership-with-member-id-and-group-id"></a><span data-ttu-id="f0e5c-113">Оценка динамического членства с ИДЕНТИФИКАТОРом участника и ИДЕНТИФИКАТОРом группы</span><span class="sxs-lookup"><span data-stu-id="f0e5c-113">Evaluate dynamic membership with member ID and group ID</span></span>
 
-| <span data-ttu-id="4fa5e-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4fa5e-114">Permission type</span></span> | <span data-ttu-id="4fa5e-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4fa5e-115">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="f0e5c-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f0e5c-114">Permission type</span></span> | <span data-ttu-id="f0e5c-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f0e5c-115">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="4fa5e-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4fa5e-116">Delegated (work or school account)</span></span> | <span data-ttu-id="4fa5e-117">Для пользователя: Group. Read. ALL и User. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="4fa5e-117">For user: Group.Read.All and User.Read.All, Directory.Read.All</span></span><br><span data-ttu-id="4fa5e-118">Для Device: Group. Read. ALL и Device. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="4fa5e-118">For device: Group.Read.All and Device.Read.All, Directory.Read.All</span></span> |
-| <span data-ttu-id="4fa5e-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4fa5e-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4fa5e-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4fa5e-120">Not supported.</span></span> |
-| <span data-ttu-id="4fa5e-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4fa5e-121">Application</span></span>                            | <span data-ttu-id="4fa5e-122">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4fa5e-122">Not supported.</span></span> |
+| <span data-ttu-id="f0e5c-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f0e5c-116">Delegated (work or school account)</span></span> | <span data-ttu-id="f0e5c-117">Для пользователя: Group. Read. ALL и User. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="f0e5c-117">For user: Group.Read.All and User.Read.All, Directory.Read.All</span></span><br><span data-ttu-id="f0e5c-118">Для Device: Group. Read. ALL и Device. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="f0e5c-118">For device: Group.Read.All and Device.Read.All, Directory.Read.All</span></span> |
+| <span data-ttu-id="f0e5c-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f0e5c-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f0e5c-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f0e5c-120">Not supported.</span></span> |
+| <span data-ttu-id="f0e5c-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f0e5c-121">Application</span></span>                            | <span data-ttu-id="f0e5c-122">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f0e5c-122">Not supported.</span></span> |
 
-### <a name="evaluate-dynamic-membership-with-member-id-and-membership-rule"></a><span data-ttu-id="4fa5e-123">Оценка динамического членства с ИДЕНТИФИКАТОРом участника и правилом членства</span><span class="sxs-lookup"><span data-stu-id="4fa5e-123">Evaluate dynamic membership with member ID and membership rule</span></span>
+### <a name="evaluate-dynamic-membership-with-member-id-and-membership-rule"></a><span data-ttu-id="f0e5c-123">Оценка динамического членства с ИДЕНТИФИКАТОРом участника и правилом членства</span><span class="sxs-lookup"><span data-stu-id="f0e5c-123">Evaluate dynamic membership with member ID and membership rule</span></span>
 
-| <span data-ttu-id="4fa5e-124">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4fa5e-124">Permission type</span></span> | <span data-ttu-id="4fa5e-125">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4fa5e-125">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="f0e5c-124">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f0e5c-124">Permission type</span></span> | <span data-ttu-id="f0e5c-125">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f0e5c-125">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="4fa5e-126">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4fa5e-126">Delegated (work or school account)</span></span> | <span data-ttu-id="4fa5e-127">Для пользователя: User. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="4fa5e-127">For user: User.Read.All, Directory.Read.All</span></span><br><span data-ttu-id="4fa5e-128">Для Device: Device. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="4fa5e-128">For device: Device.Read.All, Directory.Read.All</span></span> |
-| <span data-ttu-id="4fa5e-129">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4fa5e-129">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4fa5e-130">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4fa5e-130">Not supported.</span></span> |
-| <span data-ttu-id="4fa5e-131">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4fa5e-131">Application</span></span>                            | <span data-ttu-id="4fa5e-132">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4fa5e-132">Not supported.</span></span> |
+| <span data-ttu-id="f0e5c-126">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f0e5c-126">Delegated (work or school account)</span></span> | <span data-ttu-id="f0e5c-127">Для пользователя: User. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="f0e5c-127">For user: User.Read.All, Directory.Read.All</span></span><br><span data-ttu-id="f0e5c-128">Для Device: Device. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="f0e5c-128">For device: Device.Read.All, Directory.Read.All</span></span> |
+| <span data-ttu-id="f0e5c-129">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f0e5c-129">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f0e5c-130">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f0e5c-130">Not supported.</span></span> |
+| <span data-ttu-id="f0e5c-131">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f0e5c-131">Application</span></span>                            | <span data-ttu-id="f0e5c-132">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f0e5c-132">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="4fa5e-133">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4fa5e-133">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f0e5c-133">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f0e5c-133">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -52,38 +52,38 @@ POST /groups/{id}/evaluateDynamicMembership
 POST /groups/evaluateDynamicMembership
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4fa5e-134">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4fa5e-134">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f0e5c-134">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f0e5c-134">Request headers</span></span>
 
-| <span data-ttu-id="4fa5e-135">Имя</span><span class="sxs-lookup"><span data-stu-id="4fa5e-135">Name</span></span> | <span data-ttu-id="4fa5e-136">Описание</span><span class="sxs-lookup"><span data-stu-id="4fa5e-136">Description</span></span> |
+| <span data-ttu-id="f0e5c-135">Имя</span><span class="sxs-lookup"><span data-stu-id="f0e5c-135">Name</span></span> | <span data-ttu-id="f0e5c-136">Описание</span><span class="sxs-lookup"><span data-stu-id="f0e5c-136">Description</span></span> |
 | :--- | :---------- |
-| <span data-ttu-id="4fa5e-137">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4fa5e-137">Authorization</span></span> | <span data-ttu-id="4fa5e-138">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="4fa5e-138">Bearer {token}</span></span> |
-| <span data-ttu-id="4fa5e-139">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4fa5e-139">Content-type</span></span>  | <span data-ttu-id="4fa5e-140">application/json</span><span class="sxs-lookup"><span data-stu-id="4fa5e-140">application/json</span></span> |
+| <span data-ttu-id="f0e5c-137">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f0e5c-137">Authorization</span></span> | <span data-ttu-id="f0e5c-138">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="f0e5c-138">Bearer {token}</span></span> |
+| <span data-ttu-id="f0e5c-139">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f0e5c-139">Content-type</span></span>  | <span data-ttu-id="f0e5c-140">application/json</span><span class="sxs-lookup"><span data-stu-id="f0e5c-140">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="4fa5e-141">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4fa5e-141">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f0e5c-141">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f0e5c-141">Request body</span></span>
 
-<span data-ttu-id="4fa5e-142">В тексте запроса укажите необходимые свойства.</span><span class="sxs-lookup"><span data-stu-id="4fa5e-142">In the request body, supply the required properties.</span></span>
+<span data-ttu-id="f0e5c-142">В тексте запроса укажите необходимые свойства.</span><span class="sxs-lookup"><span data-stu-id="f0e5c-142">In the request body, supply the required properties.</span></span>
 
-<span data-ttu-id="4fa5e-143">В следующей таблице перечислены свойства, которые необходимы при оценке членства в группе.</span><span class="sxs-lookup"><span data-stu-id="4fa5e-143">The following table lists the properties that are required when you evaluate group membership.</span></span>
+<span data-ttu-id="f0e5c-143">В следующей таблице перечислены свойства, которые необходимы при оценке членства в группе.</span><span class="sxs-lookup"><span data-stu-id="f0e5c-143">The following table lists the properties that are required when you evaluate group membership.</span></span>
 
-| <span data-ttu-id="4fa5e-144">Параметр</span><span class="sxs-lookup"><span data-stu-id="4fa5e-144">Parameter</span></span> | <span data-ttu-id="4fa5e-145">Тип</span><span class="sxs-lookup"><span data-stu-id="4fa5e-145">Type</span></span> | <span data-ttu-id="4fa5e-146">Описание</span><span class="sxs-lookup"><span data-stu-id="4fa5e-146">Description</span></span> |
+| <span data-ttu-id="f0e5c-144">Параметр</span><span class="sxs-lookup"><span data-stu-id="f0e5c-144">Parameter</span></span> | <span data-ttu-id="f0e5c-145">Тип</span><span class="sxs-lookup"><span data-stu-id="f0e5c-145">Type</span></span> | <span data-ttu-id="f0e5c-146">Описание</span><span class="sxs-lookup"><span data-stu-id="f0e5c-146">Description</span></span> |
 | :-------- | :--- | :---------- |
-| <span data-ttu-id="4fa5e-147">Идентификатора</span><span class="sxs-lookup"><span data-stu-id="4fa5e-147">memberId</span></span> | <span data-ttu-id="4fa5e-148">Коллекция объектов string</span><span class="sxs-lookup"><span data-stu-id="4fa5e-148">String collection</span></span> | <span data-ttu-id="4fa5e-149">memberId это идентификатор объекта для оцениваемого пользователя или устройства.</span><span class="sxs-lookup"><span data-stu-id="4fa5e-149">memberId is the object Id of the user or device to be evaluated.</span></span> |
-| <span data-ttu-id="4fa5e-150">membershipRule</span><span class="sxs-lookup"><span data-stu-id="4fa5e-150">membershipRule</span></span> | <span data-ttu-id="4fa5e-151">Коллекция объектов string</span><span class="sxs-lookup"><span data-stu-id="4fa5e-151">String collection</span></span> | <span data-ttu-id="4fa5e-152">Правило, используемое для оценки членства.</span><span class="sxs-lookup"><span data-stu-id="4fa5e-152">The rule that is used for membership evaluation.</span></span> <span data-ttu-id="4fa5e-153">Если это свойство не указано, оценивается правило для существующей группы.</span><span class="sxs-lookup"><span data-stu-id="4fa5e-153">If this property is not provided, the rule for the existing group is evaluated.</span></span> <span data-ttu-id="4fa5e-154">Если это свойство указано, то пользователь или устройство оцениваются для возможного членства в группе с тем же правилом.</span><span class="sxs-lookup"><span data-stu-id="4fa5e-154">If this property is provided, the user or device is evaluated for possible membership in a group with the same rule.</span></span> <span data-ttu-id="4fa5e-155">Дополнительные сведения см. [в статье динамическое правило членства для групп в Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).</span><span class="sxs-lookup"><span data-stu-id="4fa5e-155">For more information, see [Dynamic membership rules for groups in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).</span></span>|
+| <span data-ttu-id="f0e5c-147">Идентификатора</span><span class="sxs-lookup"><span data-stu-id="f0e5c-147">memberId</span></span> | <span data-ttu-id="f0e5c-148">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="f0e5c-148">String collection</span></span> | <span data-ttu-id="f0e5c-149">memberId это идентификатор объекта для оцениваемого пользователя или устройства.</span><span class="sxs-lookup"><span data-stu-id="f0e5c-149">memberId is the object Id of the user or device to be evaluated.</span></span> |
+| <span data-ttu-id="f0e5c-150">membershipRule</span><span class="sxs-lookup"><span data-stu-id="f0e5c-150">membershipRule</span></span> | <span data-ttu-id="f0e5c-151">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="f0e5c-151">String collection</span></span> | <span data-ttu-id="f0e5c-152">Правило, используемое для оценки членства.</span><span class="sxs-lookup"><span data-stu-id="f0e5c-152">The rule that is used for membership evaluation.</span></span> <span data-ttu-id="f0e5c-153">Если это свойство не указано, оценивается правило для существующей группы.</span><span class="sxs-lookup"><span data-stu-id="f0e5c-153">If this property is not provided, the rule for the existing group is evaluated.</span></span> <span data-ttu-id="f0e5c-154">Если это свойство указано, то пользователь или устройство оцениваются для возможного членства в группе с тем же правилом.</span><span class="sxs-lookup"><span data-stu-id="f0e5c-154">If this property is provided, the user or device is evaluated for possible membership in a group with the same rule.</span></span> <span data-ttu-id="f0e5c-155">Дополнительные сведения см. [в статье динамическое правило членства для групп в Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).</span><span class="sxs-lookup"><span data-stu-id="f0e5c-155">For more information, see [Dynamic membership rules for groups in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).</span></span>|
 
-## <a name="response"></a><span data-ttu-id="4fa5e-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="4fa5e-156">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f0e5c-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="f0e5c-156">Response</span></span>
 
-<span data-ttu-id="4fa5e-157">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [евалуатединамикмембершипресулт](../resources/evaluatedynamicmembershipresult.md) .</span><span class="sxs-lookup"><span data-stu-id="4fa5e-157">If successful, this method returns a `200 OK` response code and an [evaluateDynamicMembershipResult](../resources/evaluatedynamicmembershipresult.md) object.</span></span>
+<span data-ttu-id="f0e5c-157">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [евалуатединамикмембершипресулт](../resources/evaluatedynamicmembershipresult.md) .</span><span class="sxs-lookup"><span data-stu-id="f0e5c-157">If successful, this method returns a `200 OK` response code and an [evaluateDynamicMembershipResult](../resources/evaluatedynamicmembershipresult.md) object.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="4fa5e-158">Примеры</span><span class="sxs-lookup"><span data-stu-id="4fa5e-158">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f0e5c-158">Примеры</span><span class="sxs-lookup"><span data-stu-id="f0e5c-158">Examples</span></span>
 
-### <a name="example-1-evaluate-if-a-user-or-device-is-a-member-of-an-existing-group"></a><span data-ttu-id="4fa5e-159">Пример 1: Оценка того, является ли пользователь или устройство участником существующей группы</span><span class="sxs-lookup"><span data-stu-id="4fa5e-159">Example 1: Evaluate if a user or device is a member of an existing group</span></span>
+### <a name="example-1-evaluate-if-a-user-or-device-is-a-member-of-an-existing-group"></a><span data-ttu-id="f0e5c-159">Пример 1: Оценка того, является ли пользователь или устройство участником существующей группы</span><span class="sxs-lookup"><span data-stu-id="f0e5c-159">Example 1: Evaluate if a user or device is a member of an existing group</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4fa5e-160">Запрос</span><span class="sxs-lookup"><span data-stu-id="4fa5e-160">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f0e5c-160">Запрос</span><span class="sxs-lookup"><span data-stu-id="f0e5c-160">Request</span></span>
 
-<span data-ttu-id="4fa5e-161">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4fa5e-161">The following is an example of the request.</span></span>
+<span data-ttu-id="f0e5c-161">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f0e5c-161">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="4fa5e-162">HTTP</span><span class="sxs-lookup"><span data-stu-id="4fa5e-162">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f0e5c-162">HTTP</span><span class="sxs-lookup"><span data-stu-id="f0e5c-162">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_evaluatedynamicmembership"
@@ -97,24 +97,24 @@ Content-type: application/json
   "memberId": "319b41e8-d9e4-42f8-bdc9-741113f48b33"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="4fa5e-163">C#</span><span class="sxs-lookup"><span data-stu-id="4fa5e-163">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f0e5c-163">C#</span><span class="sxs-lookup"><span data-stu-id="f0e5c-163">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-evaluatedynamicmembership-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4fa5e-164">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4fa5e-164">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f0e5c-164">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f0e5c-164">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-evaluatedynamicmembership-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4fa5e-165">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4fa5e-165">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f0e5c-165">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f0e5c-165">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="4fa5e-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="4fa5e-166">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="f0e5c-166">Отклик</span><span class="sxs-lookup"><span data-stu-id="f0e5c-166">Response</span></span>
 
-<span data-ttu-id="4fa5e-167">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="4fa5e-167">The following is an example of the response.</span></span> 
+<span data-ttu-id="f0e5c-167">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f0e5c-167">The following is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -142,14 +142,14 @@ Content-type: application/json
 
 ```
 
-### <a name="example-2-evaluate-if-a-user-or-device-would-be-a-member-of-a-group-based-on-a-membership-rule"></a><span data-ttu-id="4fa5e-168">Пример 2: Оценка того, будет ли пользователь или устройство участником группы на основе правила членства</span><span class="sxs-lookup"><span data-stu-id="4fa5e-168">Example 2: Evaluate if a user or device would be a member of a group based on a membership rule</span></span>
+### <a name="example-2-evaluate-if-a-user-or-device-would-be-a-member-of-a-group-based-on-a-membership-rule"></a><span data-ttu-id="f0e5c-168">Пример 2: Оценка того, будет ли пользователь или устройство участником группы на основе правила членства</span><span class="sxs-lookup"><span data-stu-id="f0e5c-168">Example 2: Evaluate if a user or device would be a member of a group based on a membership rule</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4fa5e-169">Запрос</span><span class="sxs-lookup"><span data-stu-id="4fa5e-169">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="f0e5c-169">Запрос</span><span class="sxs-lookup"><span data-stu-id="f0e5c-169">Request</span></span>
 
-<span data-ttu-id="4fa5e-170">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4fa5e-170">The following is an example of the request.</span></span>
+<span data-ttu-id="f0e5c-170">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f0e5c-170">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="4fa5e-171">HTTP</span><span class="sxs-lookup"><span data-stu-id="4fa5e-171">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f0e5c-171">HTTP</span><span class="sxs-lookup"><span data-stu-id="f0e5c-171">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_evaluatedynamicmembership"
@@ -164,24 +164,24 @@ Content-type: application/json
   "membershipRule": "(user.displayName -startsWith \"EndTestUser\")"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="4fa5e-172">C#</span><span class="sxs-lookup"><span data-stu-id="4fa5e-172">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f0e5c-172">C#</span><span class="sxs-lookup"><span data-stu-id="f0e5c-172">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-evaluatedynamicmembership-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4fa5e-173">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4fa5e-173">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f0e5c-173">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f0e5c-173">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-evaluatedynamicmembership-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4fa5e-174">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4fa5e-174">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f0e5c-174">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f0e5c-174">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="4fa5e-175">Отклик</span><span class="sxs-lookup"><span data-stu-id="4fa5e-175">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="f0e5c-175">Отклик</span><span class="sxs-lookup"><span data-stu-id="f0e5c-175">Response</span></span>
 
-<span data-ttu-id="4fa5e-176">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="4fa5e-176">The following is an example of the response.</span></span> 
+<span data-ttu-id="f0e5c-176">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="f0e5c-176">The following is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",

@@ -5,63 +5,63 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e22e6ab85ab90db49029850eca6755e17eeb99c8
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: c354400caabbabcaba7f4d25ba33181d55bcf7a0
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405211"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457753"
 ---
-# <a name="user-getmailtips"></a><span data-ttu-id="0681b-103">Пользователь: подсказки</span><span class="sxs-lookup"><span data-stu-id="0681b-103">user: getMailTips</span></span>
+# <a name="user-getmailtips"></a><span data-ttu-id="88689-103">Пользователь: подсказки</span><span class="sxs-lookup"><span data-stu-id="88689-103">user: getMailTips</span></span>
 
-<span data-ttu-id="0681b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0681b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="88689-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="88689-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0681b-105">Получение подсказок одного или нескольких получателей, доступных [пользователю](../resources/user.md), вошедшего в систему.</span><span class="sxs-lookup"><span data-stu-id="0681b-105">Get the MailTips of one or more recipients as available to the signed-in [user](../resources/user.md).</span></span>
+<span data-ttu-id="88689-105">Получение подсказок одного или нескольких получателей, доступных [пользователю](../resources/user.md), вошедшего в систему.</span><span class="sxs-lookup"><span data-stu-id="88689-105">Get the MailTips of one or more recipients as available to the signed-in [user](../resources/user.md).</span></span>
 
-<span data-ttu-id="0681b-106">Обратите внимание, что выполнив `POST` вызов `getMailTips` действия, вы можете запросить определенные типы подсказок, которые будут возвращаться сразу для нескольких получателей.</span><span class="sxs-lookup"><span data-stu-id="0681b-106">Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to be returned for more than one recipient at one time.</span></span> <span data-ttu-id="0681b-107">Запрошенные подсказки возвращаются в коллекции [подсказок](../resources/mailtips.md) .</span><span class="sxs-lookup"><span data-stu-id="0681b-107">The requested MailTips are returned in a [mailTips](../resources/mailtips.md) collection.</span></span>
+<span data-ttu-id="88689-106">Обратите внимание, что выполнив `POST` вызов `getMailTips` действия, вы можете запросить определенные типы подсказок, которые будут возвращаться сразу для нескольких получателей.</span><span class="sxs-lookup"><span data-stu-id="88689-106">Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to be returned for more than one recipient at one time.</span></span> <span data-ttu-id="88689-107">Запрошенные подсказки возвращаются в коллекции [подсказок](../resources/mailtips.md) .</span><span class="sxs-lookup"><span data-stu-id="88689-107">The requested MailTips are returned in a [mailTips](../resources/mailtips.md) collection.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0681b-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0681b-108">Permissions</span></span>
-<span data-ttu-id="0681b-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0681b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="88689-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="88689-108">Permissions</span></span>
+<span data-ttu-id="88689-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="88689-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0681b-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0681b-111">Permission type</span></span>      | <span data-ttu-id="0681b-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0681b-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="88689-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="88689-111">Permission type</span></span>      | <span data-ttu-id="88689-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="88689-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0681b-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0681b-113">Delegated (work or school account)</span></span> | <span data-ttu-id="0681b-114">Mail. Read, mail. Read. Shared</span><span class="sxs-lookup"><span data-stu-id="0681b-114">Mail.Read, Mail.Read.Shared</span></span>    |
-|<span data-ttu-id="0681b-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0681b-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0681b-116">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="0681b-116">Mail.Read</span></span>    |
-|<span data-ttu-id="0681b-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0681b-117">Application</span></span> | <span data-ttu-id="0681b-118">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="0681b-118">Mail.Read</span></span> |
+|<span data-ttu-id="88689-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="88689-113">Delegated (work or school account)</span></span> | <span data-ttu-id="88689-114">Mail. Read, mail. Read. Shared</span><span class="sxs-lookup"><span data-stu-id="88689-114">Mail.Read, Mail.Read.Shared</span></span>    |
+|<span data-ttu-id="88689-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="88689-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="88689-116">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="88689-116">Mail.Read</span></span>    |
+|<span data-ttu-id="88689-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="88689-117">Application</span></span> | <span data-ttu-id="88689-118">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="88689-118">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0681b-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0681b-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="88689-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="88689-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/getMailTips
 POST /users/{id|userPrincipalName}/getMailTips
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="0681b-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="0681b-120">Optional query parameters</span></span>
-<span data-ttu-id="0681b-121">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="0681b-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="0681b-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0681b-122">Request headers</span></span>
-| <span data-ttu-id="0681b-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="0681b-123">Header</span></span>       | <span data-ttu-id="0681b-124">Значение</span><span class="sxs-lookup"><span data-stu-id="0681b-124">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="88689-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="88689-120">Optional query parameters</span></span>
+<span data-ttu-id="88689-121">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="88689-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="88689-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="88689-122">Request headers</span></span>
+| <span data-ttu-id="88689-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="88689-123">Header</span></span>       | <span data-ttu-id="88689-124">Значение</span><span class="sxs-lookup"><span data-stu-id="88689-124">Value</span></span>|
 |:-----------  |:------|
-| <span data-ttu-id="0681b-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0681b-125">Authorization</span></span> | <span data-ttu-id="0681b-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0681b-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="0681b-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0681b-128">Content-Type</span></span>  | <span data-ttu-id="0681b-129">application/json</span><span class="sxs-lookup"><span data-stu-id="0681b-129">application/json</span></span>  |
+| <span data-ttu-id="88689-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="88689-125">Authorization</span></span> | <span data-ttu-id="88689-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="88689-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="88689-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="88689-128">Content-Type</span></span>  | <span data-ttu-id="88689-129">application/json</span><span class="sxs-lookup"><span data-stu-id="88689-129">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="0681b-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0681b-130">Request body</span></span>
-<span data-ttu-id="0681b-131">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="0681b-131">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="88689-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="88689-130">Request body</span></span>
+<span data-ttu-id="88689-131">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="88689-131">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="0681b-132">Свойство</span><span class="sxs-lookup"><span data-stu-id="0681b-132">Property</span></span>     | <span data-ttu-id="0681b-133">Тип</span><span class="sxs-lookup"><span data-stu-id="0681b-133">Type</span></span>   |<span data-ttu-id="0681b-134">Описание</span><span class="sxs-lookup"><span data-stu-id="0681b-134">Description</span></span>|
+| <span data-ttu-id="88689-132">Свойство</span><span class="sxs-lookup"><span data-stu-id="88689-132">Property</span></span>     | <span data-ttu-id="88689-133">Тип</span><span class="sxs-lookup"><span data-stu-id="88689-133">Type</span></span>   |<span data-ttu-id="88689-134">Описание</span><span class="sxs-lookup"><span data-stu-id="88689-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="0681b-135">EmailAddresses</span><span class="sxs-lookup"><span data-stu-id="0681b-135">EmailAddresses</span></span>|<span data-ttu-id="0681b-136">Коллекция объектов string</span><span class="sxs-lookup"><span data-stu-id="0681b-136">String collection</span></span>|<span data-ttu-id="0681b-137">Коллекция SMTP-адресов получателей, для которых требуется получить подсказки.</span><span class="sxs-lookup"><span data-stu-id="0681b-137">A collection of SMTP addresses of recipients to get MailTips for.</span></span>|
-|<span data-ttu-id="0681b-138">маилтипсоптионс</span><span class="sxs-lookup"><span data-stu-id="0681b-138">MailTipsOptions</span></span>|<span data-ttu-id="0681b-139">String</span><span class="sxs-lookup"><span data-stu-id="0681b-139">String</span></span>|<span data-ttu-id="0681b-140">Перечисление флагов, представляющих запрашиваемые подсказки.</span><span class="sxs-lookup"><span data-stu-id="0681b-140">A enumeration of flags that represents the requested mailtips.</span></span> <span data-ttu-id="0681b-141">Возможные значения: `automaticReplies` , `customMailTip` , `deliveryRestriction` , `externalMemberCount` , `mailboxFullStatus` , `maxMessageSize` , `moderationStatus` , `recipientScope` , `recipientSuggestions` и `totalMemberCount` .</span><span class="sxs-lookup"><span data-stu-id="0681b-141">Possible values are: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, and `totalMemberCount`.</span></span>|
+|<span data-ttu-id="88689-135">EmailAddresses</span><span class="sxs-lookup"><span data-stu-id="88689-135">EmailAddresses</span></span>|<span data-ttu-id="88689-136">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="88689-136">String collection</span></span>|<span data-ttu-id="88689-137">Коллекция SMTP-адресов получателей, для которых требуется получить подсказки.</span><span class="sxs-lookup"><span data-stu-id="88689-137">A collection of SMTP addresses of recipients to get MailTips for.</span></span>|
+|<span data-ttu-id="88689-138">маилтипсоптионс</span><span class="sxs-lookup"><span data-stu-id="88689-138">MailTipsOptions</span></span>|<span data-ttu-id="88689-139">String</span><span class="sxs-lookup"><span data-stu-id="88689-139">String</span></span>|<span data-ttu-id="88689-140">Перечисление флагов, представляющих запрашиваемые подсказки.</span><span class="sxs-lookup"><span data-stu-id="88689-140">A enumeration of flags that represents the requested mailtips.</span></span> <span data-ttu-id="88689-141">Возможные значения: `automaticReplies` , `customMailTip` , `deliveryRestriction` , `externalMemberCount` , `mailboxFullStatus` , `maxMessageSize` , `moderationStatus` , `recipientScope` , `recipientSuggestions` и `totalMemberCount` .</span><span class="sxs-lookup"><span data-stu-id="88689-141">Possible values are: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, and `totalMemberCount`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="0681b-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="0681b-142">Response</span></span>
+## <a name="response"></a><span data-ttu-id="88689-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="88689-142">Response</span></span>
 
-<span data-ttu-id="0681b-143">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [подсказки](../resources/mailtips.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="0681b-143">If successful, this method returns a `200 OK` response code and a collection of [mailTips](../resources/mailtips.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="0681b-144">Пример</span><span class="sxs-lookup"><span data-stu-id="0681b-144">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="0681b-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="0681b-145">Request</span></span>
-<span data-ttu-id="0681b-146">В следующем примере показано, как получить подсказки для указанных получателей для всех параметров автоматического ответа и полного состояния почтового ящика.</span><span class="sxs-lookup"><span data-stu-id="0681b-146">The following example gets MailTips for the specified recipients, for any automatic reply settings and the mailbox full status.</span></span>
+<span data-ttu-id="88689-143">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [подсказки](../resources/mailtips.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="88689-143">If successful, this method returns a `200 OK` response code and a collection of [mailTips](../resources/mailtips.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="88689-144">Пример</span><span class="sxs-lookup"><span data-stu-id="88689-144">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="88689-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="88689-145">Request</span></span>
+<span data-ttu-id="88689-146">В следующем примере показано, как получить подсказки для указанных получателей для всех параметров автоматического ответа и полного состояния почтового ящика.</span><span class="sxs-lookup"><span data-stu-id="88689-146">The following example gets MailTips for the specified recipients, for any automatic reply settings and the mailbox full status.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="0681b-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="0681b-147">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="88689-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="88689-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_getmailtips"
@@ -78,23 +78,23 @@ Content-Type: application/json
     "MailTipsOptions": "automaticReplies, mailboxFullStatus"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="0681b-148">C#</span><span class="sxs-lookup"><span data-stu-id="0681b-148">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="88689-148">C#</span><span class="sxs-lookup"><span data-stu-id="88689-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-getmailtips-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0681b-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0681b-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="88689-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="88689-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/user-getmailtips-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="0681b-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0681b-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="88689-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="88689-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-getmailtips-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="0681b-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="0681b-151">Response</span></span>
-<span data-ttu-id="0681b-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0681b-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="88689-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="88689-151">Response</span></span>
+<span data-ttu-id="88689-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="88689-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
