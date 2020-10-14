@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: fb29d5ec769fa67b3d461500d8635de4e1c79c1e
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 664be7dc49855abb0c4219f6d2f753fb3a37c5de
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405185"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461673"
 ---
 # <a name="list-messages"></a>Список сообщений
 
@@ -40,7 +40,7 @@ ms.locfileid: "48405185"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
 |Делегированные (личная учетная запись Майкрософт) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Для приложения | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
+|Приложение | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 

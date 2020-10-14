@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b729b8ca18cc5dda2359d9db32e700ea129f9dba
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: f2fcb5011640881ca53fd3c642172e19402359af
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417837"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461043"
 ---
 # <a name="phoneauthenticationmethod-disablesmssignin"></a>Фонеаусентикатионмесод: Дисаблесмссигнин
 
@@ -53,7 +53,7 @@ POST /users/{id | userPrincipalName}/authentication/phoneMethods/{id}/disableSms
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
