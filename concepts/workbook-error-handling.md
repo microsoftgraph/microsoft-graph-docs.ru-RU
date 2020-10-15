@@ -4,12 +4,12 @@ description: Инструкции по обработке ошибок для AP
 author: grangeryy
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e9968877e9b3153ad455ed7f0c693b4a70c2c2b1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bbf60c34c66ffd42004696d5f8591dd9a2996457
+ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018090"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48471429"
 ---
 # <a name="error-handling-for-excel-apis-in-microsoft-graph"></a>Обработка ошибок для API Excel в Microsoft Graph
 
@@ -132,7 +132,7 @@ Content-type: application/json
 
 ## <a name="special-case-handling"></a>Особая обработка обращений
 
-Для [запросов с сеансом](excel-manage-sessions.md#request-types)рекомендуется повторно создать сеанс при возникновении `503/serviceUnavailable` `502/badGateway` ошибки или ошибки.
+Для [запросов с сеансом](excel-manage-sessions.md#request-types)при возникновении `502/badGateway` ошибки или `503/serviceUnavailable` ошибки, если код ошибки второго уровня указан в [подробных кодах ошибок](workbook-error-codes.md#detailed-error-code), проанализируйте код второго уровня и выполните соответствующие инструкции; в противном случае мы реконмменд, что вы повторно создаете сеанс напрямую.
 <!-- {
   "type": "#page.annotation",
   "description": "Error handling in Excel Graph.",
