@@ -5,53 +5,53 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 563b793846a93b443b181a305eded0348bb7db50
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 601fa244f061d43b75df0a66189103a63472dc72
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404366"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460875"
 ---
-# <a name="get-a-scopedrolemember"></a><span data-ttu-id="a30ce-103">Получение Скопедролемембер</span><span class="sxs-lookup"><span data-stu-id="a30ce-103">Get a scopedRoleMember</span></span>
+# <a name="get-a-scopedrolemember"></a><span data-ttu-id="38d7b-103">Получение Скопедролемембер</span><span class="sxs-lookup"><span data-stu-id="38d7b-103">Get a scopedRoleMember</span></span>
 
-<span data-ttu-id="a30ce-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a30ce-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="38d7b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="38d7b-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="a30ce-105">Получение определенного ресурса [scopedrolemembership изменен](../resources/scopedrolemembership.md) .</span><span class="sxs-lookup"><span data-stu-id="a30ce-105">Retrieve a specific [scopedRoleMembership](../resources/scopedrolemembership.md) resource.</span></span>
-## <a name="permissions"></a><span data-ttu-id="a30ce-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a30ce-106">Permissions</span></span>
-<span data-ttu-id="a30ce-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a30ce-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="38d7b-105">Получение определенного ресурса [scopedrolemembership изменен](../resources/scopedrolemembership.md) .</span><span class="sxs-lookup"><span data-stu-id="38d7b-105">Retrieve a specific [scopedRoleMembership](../resources/scopedrolemembership.md) resource.</span></span>
+## <a name="permissions"></a><span data-ttu-id="38d7b-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="38d7b-106">Permissions</span></span>
+<span data-ttu-id="38d7b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="38d7b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="a30ce-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a30ce-109">Permission type</span></span>      | <span data-ttu-id="a30ce-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a30ce-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="38d7b-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="38d7b-109">Permission type</span></span>      | <span data-ttu-id="38d7b-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="38d7b-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a30ce-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a30ce-111">Delegated (work or school account)</span></span> | <span data-ttu-id="a30ce-112">Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="a30ce-112">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="a30ce-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a30ce-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a30ce-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a30ce-114">Not supported.</span></span>    |
-|<span data-ttu-id="a30ce-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a30ce-115">Application</span></span> | <span data-ttu-id="a30ce-116">Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="a30ce-116">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="38d7b-111">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="38d7b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="38d7b-112">Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="38d7b-112">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="38d7b-113">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="38d7b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="38d7b-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="38d7b-114">Not supported.</span></span>    |
+|<span data-ttu-id="38d7b-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="38d7b-115">Application</span></span> | <span data-ttu-id="38d7b-116">Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="38d7b-116">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a30ce-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a30ce-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="38d7b-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="38d7b-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directory/administrativeUnits/{id}/scopedRoleMembers/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="a30ce-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="a30ce-118">Optional query parameters</span></span>
-<span data-ttu-id="a30ce-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="a30ce-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="38d7b-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="38d7b-118">Optional query parameters</span></span>
+<span data-ttu-id="38d7b-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="38d7b-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="a30ce-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a30ce-120">Request headers</span></span>
-| <span data-ttu-id="a30ce-121">Имя</span><span class="sxs-lookup"><span data-stu-id="a30ce-121">Name</span></span>      |<span data-ttu-id="a30ce-122">Описание</span><span class="sxs-lookup"><span data-stu-id="a30ce-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="38d7b-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="38d7b-120">Request headers</span></span>
+| <span data-ttu-id="38d7b-121">Имя</span><span class="sxs-lookup"><span data-stu-id="38d7b-121">Name</span></span>      |<span data-ttu-id="38d7b-122">Описание</span><span class="sxs-lookup"><span data-stu-id="38d7b-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="a30ce-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a30ce-123">Authorization</span></span>  | <span data-ttu-id="a30ce-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a30ce-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="38d7b-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="38d7b-123">Authorization</span></span>  | <span data-ttu-id="38d7b-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="38d7b-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a30ce-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a30ce-126">Request body</span></span>
-<span data-ttu-id="a30ce-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="a30ce-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="38d7b-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="38d7b-126">Request body</span></span>
+<span data-ttu-id="38d7b-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="38d7b-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a30ce-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="a30ce-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="38d7b-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="38d7b-128">Response</span></span>
 
-<span data-ttu-id="a30ce-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [scopedrolemembership изменен](../resources/scopedrolemembership.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="a30ce-129">If successful, this method returns a `200 OK` response code and the requested [scopedRoleMembership](../resources/scopedrolemembership.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="a30ce-130">Пример</span><span class="sxs-lookup"><span data-stu-id="a30ce-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a30ce-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="a30ce-131">Request</span></span>
-<span data-ttu-id="a30ce-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a30ce-132">Here is an example of the request.</span></span>
+<span data-ttu-id="38d7b-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [scopedrolemembership изменен](../resources/scopedrolemembership.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="38d7b-129">If successful, this method returns a `200 OK` response code and the requested [scopedRoleMembership](../resources/scopedrolemembership.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="38d7b-130">Пример</span><span class="sxs-lookup"><span data-stu-id="38d7b-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="38d7b-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="38d7b-131">Request</span></span>
+<span data-ttu-id="38d7b-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="38d7b-132">Here is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="a30ce-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="a30ce-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="38d7b-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="38d7b-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_scopedrolemember"
@@ -59,19 +59,19 @@ GET /directory/administrativeUnits/{id}/scopedRoleMembers/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/scopedRoleMembers/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="a30ce-134">C#</span><span class="sxs-lookup"><span data-stu-id="a30ce-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="38d7b-134">C#</span><span class="sxs-lookup"><span data-stu-id="38d7b-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-scopedrolemember-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="a30ce-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="a30ce-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="38d7b-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="38d7b-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-scopedrolemember-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="a30ce-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="a30ce-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="38d7b-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="38d7b-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-scopedrolemember-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="a30ce-137">Java</span><span class="sxs-lookup"><span data-stu-id="a30ce-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="38d7b-137">Java</span><span class="sxs-lookup"><span data-stu-id="38d7b-137">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-scopedrolemember-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -80,8 +80,8 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/scopedRo
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="a30ce-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="a30ce-138">Response</span></span>
-<span data-ttu-id="a30ce-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a30ce-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="38d7b-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="38d7b-138">Response</span></span>
+<span data-ttu-id="38d7b-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="38d7b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
