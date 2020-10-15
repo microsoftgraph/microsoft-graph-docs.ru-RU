@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 4bc0a5f571b172bbcbb7e2ae74c6dfd854ba645b
-ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
+ms.openlocfilehash: ef374f0718ed5c8df6cd7261ccce15d1b0cdab9e
+ms.sourcegitcommit: e7e5c40a616a88d21116f60b394422cf2a9077c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48364392"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48463754"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -17,6 +17,16 @@ ms.locfileid: "48364392"
 > [!IMPORTANT]
 > Функции в состоянии _предварительной версии_, в том числе API и средства, могут меняться без предварительного уведомления, а некоторые из них, возможно, никогда не будут повышены до общедоступного (GA) состояния. Не используйте функции предварительной версии в рабочих приложениях.
 
+## <a name="october-2020-new-in-preview-only"></a>Октябрь 2020 г.: новые возможности только в предварительной версии
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
+- Управляйте [политиками метода проверки подлинности](/graph/api/resources/authenticationmethodspolicies-overview?view=graph-rest-beta&preserve-view=true), чтобы определять пользователей, которые могут использовать конкретные методы многофакторной проверки подлинности для входа в Azure Active Directory. Настройте политики, чтобы определить следующее:
+  - Типы ключей безопасности FIDO2, которые можно использовать в клиенте Azure AD.
+  - Пользователей или группы пользователей, которым разрешено использовать ключи безопасности FIDO2 или вход без пароля с помощью телефона для входа в Azure AD.
+- Настройте [метод проверки подлинности электронной почты](/graph/api/resources/emailauthenticationmethod?view=graph-rest-beta&preserve-view=true), чтобы пользователи самостоятельно сбрасывали пароли.
+- Используйте [Azure AD B2C](/azure/active-directory-b2c/overview) и [выберите механизм настройки и проверки подлинности пользователей с помощью локальных учетных записей](/graph/api/resources/b2cauthenticationmethodspolicy?view=graph-rest-beta&preserve-view=true).
+- Используйте `Policy.ReadWrite.AuthenticationMethod` для чтения и записи политик метода проверки подлинности в организации в виде делегированного разрешения от имени вошедшего пользователя или разрешения приложения без необходимости входа пользователя.
+- Укажите в [политике авторизации](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true), можно ли приглашать внешних пользователей в организацию и кому это разрешено.
 
 ## <a name="september-2020-new-and-generally-available"></a>Сентябрь 2020г.: новые и общедоступные возможности
 
@@ -57,6 +67,9 @@ ms.locfileid: "48364392"
 
 ## <a name="september-2020-new-in-preview-only"></a>Сентябрь 2020г.: новые возможности только в предварительной версии
 
+### <a name="application"></a>Для приложений
+Создание, перечисление и удаление [классификаций делегированных разрешений](/graph/api/resources/delegatedpermissionclassification?view=graph-rest-beta&preserve-view=true), применяемых [субъектом-службой](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true). Используйте классификации делегированных разрешений в сочетании с [параметрами согласия пользователей](/azure/active-directory/manage-apps/configure-user-consent), чтобы устанавливать ограничения на то, когда пользователям разрешено предоставлять согласие приложениям.
+
 ### <a name="cloud-communications"></a>Облачные коммуникации
 - Не рекомендуется использовать свойства**autoAdmittedUsers** из[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true). Вместо этого следует использовать новое свойство **lobbyBypassSettings** и его [значения](/graph/api/resources/lobbybypasssettings?view=graph-rest-beta&preserve-view=true#lobbybypassscope-values).
 - Используйте дополнительные параметры, связанные для объявления звонящим о присоединении или выходе из собрания по сети (свойство **isEntryExitAnnounced**), и разрешения конкретных выступающих доступа к собранию (свойство **allowedPresenters**).
@@ -69,7 +82,8 @@ ms.locfileid: "48364392"
 Обновления Intune за [сентябрь](changelog.md#september-2020) для бета-версии.
 
 ### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
-[Получите ключ восстановления BitLocker](/graph/api/bitlockerrecoverykey-get?view=graph-rest-beta&preserve-view=true) от имени вошедшего пользователя, который является владельцем устройства или выполняет соответствующую роль. При получении ключа восстановления создается [журнал аудита](/azure/active-directory/reports-monitoring/concept-audit-logs) наравне с пользовательским интерфейсом.
+- [Получите ключ восстановления BitLocker](/graph/api/bitlockerrecoverykey-get?view=graph-rest-beta&preserve-view=true) от имени вошедшего пользователя, который является владельцем устройства или выполняет соответствующую роль. При получении ключа восстановления создается [журнал аудита](/azure/active-directory/reports-monitoring/concept-audit-logs) наравне с пользовательским интерфейсом.
+- Получите общее и использованное значение [квоты каталога](/graph/api/resources/directorysizequota?view=graph-rest-beta&preserve-view=true) в [организации](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true) с помощью свойства **directorySizeQuota**.
 
 ### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
 Вы можете включить [расписание](/graph/api/resources/requestschedule?view=graph-rest-beta&preserve-view=true) при запросе или удалении [назначения пользователя на пакет доступа](/graph/api/resources/accesspackageassignment?view=graph-rest-beta&preserve-view=true), который определяет доступ к группам, приложениям или сайтам SharePoint.
@@ -96,76 +110,6 @@ ms.locfileid: "48364392"
 
 ### <a name="teamwork"></a>Командная работа
 - Узнайте о дате и времени создания [канала](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) или [команды](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) Teams.
-
-
-## <a name="august-2020-new-and-generally-available"></a>Август 2020 г.: новые и общедоступные возможности
-
-### <a name="change-notifications"></a>Уведомления об изменениях
-[Отслеживание изменений](delta-query-overview.md) поддерживаемых ресурсов в национальном облаке Microsoft Graph для государственных организаций США.
-
-### <a name="cloud-communications"></a>Облачные коммуникации
-- [Отмените](/graph/api/call-cancelmediaprocessing) любые действия интерактивного голосового ответа (IVR), выполняемые или находящиеся в очереди, которые [воспроизводят звуковой сигнал](/graph/api/call-playprompt) или [записывают ответ](/graph/api/call-record).
-- Получите [сведения о расшифровке звонка](/graph/api/resources/calltranscriptioninfo) с помощью свойства **transcription**.
-
-### <a name="teamwork"></a>Командная работа
-- Используйте альтернативный способ [создания группы](/graph/api/team-post) без предварительного создания группы.
-- Используйте свойство навигации **участники**, чтобы добавить участников в команду с большей надежностью и меньшей задержкой.
-- Узнайте, в каком состоянии находится публикация [приложения](/graph/api/resources/teamsapp) Microsoft Teams с помощью свойства **publishingState** [определения приложения](/graph/api/resources/teamsappdefinition). Возможные значения состояния публикации: `submitted`, `published` и `rejected`. См. [пример](/graph/api/teamsapp-list?view=graph-rest-beta&preserve-view=true#example-3-list-applications-with-a-given-id-and-return-the-submission-review-state).
-- Воспользуйтесь делегированным разрешением `AppCatalog.Submit`, чтобы позволить пользователю [отправить приложение](/graph/api/teamsapp-publish) и оформить запрос на его проверку администратором. С помощью этого же разрешения пользователь может [отменить](/graph/api/teamsapp-delete) отправленное ранее приложение, которое не было опубликовано. 
-
-
-## <a name="august-2020-new-in-preview-only"></a>Август 2020 г.: новые возможности только в предварительной версии
-
-### <a name="applications"></a>Приложения
-Поддержка единого входа на основе паролей в ресурсах приложения [субъекта-службы](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) и указание таких [параметров](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta&preserve-view=true) в свойстве **passwordSingleSignOnSettings**. Сведения о едином входе на основе паролей в Azure AD см. в статье [Настройка единого входа на основе пароля](/azure/active-directory/manage-apps/configure-password-single-sign-on-non-gallery-applications).
-
-### <a name="calendar"></a>Календарь
-Улучшенная программная поддержка сценариев, в которых используется повторяющееся [событие](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true):
-- надежный поиск экземпляра события в повторяющемся ряду, в том числе измененного или отмененного, с помощью свойства **occurrenceId**;
-- поиск любых исключений в ряду повторяющихся экземпляров события с помощью свойства **exceptionOccurrences**;
-- поиск любых отмен в ряду повторяющихся экземпляров события с помощью свойства **cancelledOccurrences**.
-
-### <a name="change-notifications"></a>Уведомления об изменениях
-- Используйте свойство **includeResourceData** ресурса [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) для [настройки уведомлений об изменениях, включающих данные ресурсов](webhooks-with-resource-data.md). Не используйте свойство **includeProperties**.
-- Получение [уведомлений об изменениях, доставляемых через концентратор событий](change-notifications-delivery.md).
-
-### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
-- Предоставление всем пользователям и группам возможности [совместного использования принтера](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) с помощью свойства **allowAllUser**.
-- С помощью новых делегированных разрешений и разрешений для приложений можно пользоваться и управлять [печатью документа](/graph/api/resources/printDocument?view=graph-rest-beta&preserve-view=true), [заданием на печать](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true), [принтером](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true), [предоставлением общего доступа к принтеру](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) и [определением операции печати](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true). Дополнительные сведения см. в статье об обновлениях в сфере облачной печати [за август](changelog.md#august-2020).
-
-### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
-Обновления Intune в бета-версии за [август](changelog.md#august-2020).
-
-### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
-- Настройка [условий соглашения об использовании](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) для поддержки срока действия и периодичности соглашения с обязательным принятием пользователем соглашения на отдельных устройствах или повторным принятием соглашения с установленной периодичностью. 
-- Используйте свойство **file** для перехода к [настраиваемому соглашению](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true) условий. Не используйте свойство **files**.
-- Добавление, удаление и перечисление внутренних или внешних кураторов, которые могут утверждать запросы от [подключенной организации](/graph/api/resources/connectedorganization?view=graph-rest-beta&preserve-view=true) на доступ к группе, приложению или сайту SharePoint Online. Дополнительные сведения см. в статье [Управление правами](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true).
-
-### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
-- Разрешите дальнейшую настройку [политики авторизации](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true) для клиента, например разрешите [роли пользователя по умолчанию](/graph/api/resources/defaultuserrolepermissions?view=graph-rest-beta&preserve-view=true) создавать приложения или группы безопасности или читать других пользователей, разрешите пользователям возможность подписываться на подписки через электронную почту или присоединяться к клиенту через проверку электронной почты, а также предоставьте пользователям возможность самостоятельного сброса пароля.
-- Управляйте [предопределенными, настраиваемыми политиками как пользовательскими потоками в клиенте Azure Active Directory B2C](/graph/api/resources/b2cuserflows?view=graph-rest-beta&preserve-view=true). См. Дополнительные сведения о [пользовательских потоках B2C](/azure/active-directory-b2c/user-flow-overview).
-- Включите [возможность самостоятельной регистрации в качестве пользовательских потоков B2X в клиенте Azure Active Directory](/graph/api/resources/b2xuserflows?view=graph-rest-beta&preserve-view=true). См. Дополнительные сведения о [самостоятельной регистрации](/azure/active-directory/external-identities/self-service-sign-up-overview).
-
-### <a name="people-and-workplace-intelligence--profile"></a>Люди и рабочая аналитика | Профиль
-Добавление следующих дополнительных свойств пользовательского [профиля](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true) и управление ими. Их можно отображать в общих для пользователей интерфейсах в Microsoft 365 и сторонних приложениях:
-- [addresses](/graph/api/resources/itemAddress?view=graph-rest-beta&preserve-view=true)
-- [anniversaries](/graph/api/resources/personAnniversary?view=graph-rest-beta&preserve-view=true)
-- [awards](/graph/api/resources/personAward?view=graph-rest-beta&preserve-view=true)
-- [certifications](/graph/api/resources/personCertification?view=graph-rest-beta&preserve-view=true)
-- [notes](/graph/api/resources/personAnnotation?view=graph-rest-beta&preserve-view=true)
-- [patents](/graph/api/resources/itemPatent?view=graph-rest-beta&preserve-view=true)
-- [publications](/graph/api/resources/itemPublication?view=graph-rest-beta&preserve-view=true)
-
-
-### <a name="reports--microsoft-365-usage-reports"></a>Отчеты | Отчеты об использовании Microsoft 365
-Получение [отчетов об использовании приложений Microsoft 365](/graph/api/resources/microsoft-365-apps-usage-report?view=graph-rest-beta&preserve-view=true), в частности сведений о пользователе, количества пользователей и количества используемых платформ.
-
-### <a name="teamwork"></a>Командная работа
-Получение [контента, размещенного в сообщении чата](/graph/api/resources/chatMessageHostedContent?view=graph-rest-beta&preserve-view=true), например изображений или фрагментов кода. См. [пример](/graph/api/chatmessagehostedcontent-get?view=graph-rest-beta&preserve-view=true&branch=master#example-2-get-hosted-content-bytes-for-an-image), чтобы получить количество байтов содержимого для изображения.
-
-### <a name="to-do-tasks"></a>Задачи To-Do
-- Появление нового набора API для [Microsoft To Do](todo-concept-overview.md), позволяющего пользователям приложения упорядочивать и отслеживать личные задачи в клиентских приложениях Microsoft 365. Дополнительные сведения см. в статье [Использование API Microsoft To Do](/graph/api/resources/todo-overview?view=graph-rest-beta&preserve-view=true).
-- Прекращение поддержки [API задач Outlook](/graph/api/resources/outlooktask?view=graph-rest-beta&preserve-view=true).
 
 
 ## <a name="want-to-stay-in-the-loop"></a>Хотите получать актуальную информацию?

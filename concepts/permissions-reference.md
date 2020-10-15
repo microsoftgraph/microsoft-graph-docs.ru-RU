@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 9beb0d468c76bd25d73b6f1f16e52e7aeaab7cd8
-ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.openlocfilehash: bb9ec9bafa1887b2b630e606a677c84b289d062f
+ms.sourcegitcommit: e7e5c40a616a88d21116f60b394422cf2a9077c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433410"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48463796"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -1383,7 +1383,7 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 | _Policy.ReadWrite.FeatureRollout_ | Чтение и запись политик развертывания функций | Позволяет приложению считывать и записывать политики развертывания функций без необходимости входа пользователя. Содержит возможности назначения и удаления пользователей и групп для развертывания определенной функции. | Да |
 | _Policy.ReadWrite.PermissionGrant_ | Управление политиками, связанными с согласиями и предоставлением разрешений | Позволяет приложению без вошедшего в систему пользователя управлять политиками, связанными с согласием и разрешениями, которые предоставлены приложениям. | Да |
 | _Policy.ReadWrite.TrustFramework_ | Чтение и запись политик инфраструктуры доверия в организации | Позволяет приложению считывать и записывать политики инфраструктуры доверия в организации без необходимости входа пользователя. | Да |
-| _Policy.ReadWrite.AuthenticationMethod_ | Чтение и запись политик метода проверки подлинности в вашей организации | Позволяет приложению читать и записывать политики метода проверки подлинности от имени вошедшего пользователя. | Да |
+| _Policy.ReadWrite.AuthenticationMethod_ | Чтение и запись политик метода проверки подлинности в вашей организации | Позволяет приложению читать и записывать политики метода проверки подлинности без необходимости входа пользователя. | Да |
 
 ### <a name="example-usage"></a>Примеры использования
 

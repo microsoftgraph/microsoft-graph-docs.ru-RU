@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: 59e8120d512866ad5a84a2efc23e4724638a166e
-ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.openlocfilehash: 6e8066280d6e64cc56f670a12fdcf2003ae7d158
+ms.sourcegitcommit: e7e5c40a616a88d21116f60b394422cf2a9077c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433403"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48463789"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -35,7 +35,7 @@ ms.locfileid: "48433403"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | бета | Добавлена навигация [delegatedPermissionClassifications](/graph/api/resources/delegatedpermissionclassification?view=graph-rest-beta) для ресурса [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta).
+| Дополнение | бета | Добавлена навигация [delegatedPermissionClassification](/graph/api/resources/delegatedpermissionclassification?view=graph-rest-beta) для ресурса [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta).
 
 ### <a name="calendar"></a>Календарь
 
@@ -3720,7 +3720,7 @@ ms.locfileid: "48433403"
 |Изменение|Бета-версия|Добавлены свойства **packageId** и **identityVersion** для объекта [androidLobApp](/graph/api/resources/intune-apps-androidlobapp?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство **packageId** для объекта [androidStoreApp](/graph/api/resources/intune-apps-androidstoreapp?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство **faceIdBlocked** для объекта [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta).|
-|Изменение|Бета-версия|Добавлено свойство **members** для объекта [deviceAndAppManagementRoleAssignment](/graph/api/resources/intune-rbac-deviceandappmanagementroleassignment?view=graph-rest-beta).|
+|Изменение|Бета|Добавлено свойство **members** для объекта [deviceAndAppManagementRoleAssignment](/graph/api/resources/intune-rbac-deviceandappmanagementroleassignment?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство **macOSRestriction** для объекта [deviceEnrollmentPlatformRestrictionsConfiguration](/graph/api/resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлены свойства **whenPartnerDevicesWillBeRemovedDateTime** и **whenPartnerDevicesWillBeMarkedAsNonCompliantDateTime** для объекта [deviceManagementPartner](/graph/api/resources/intune-onboarding-devicemanagementpartner?view=graph-rest-beta).|
 |Изменение|Бета-версия|Изменен тип следующих свойств объекта [deviceManagementScript](/graph/api/resources/intune-devices-devicemanagementscript?view=graph-rest-beta):<br/>**scriptContent** со String на Binary.<br/>|
@@ -3880,7 +3880,7 @@ ms.locfileid: "48433403"
 |Изменение|Бета-версия|Добавлено свойство **ignoreVersionDetection** для объекта [windowsMobileMSI](/graph/api/resources/intune-apps-windowsmobilemsi?view=graph-rest-beta).|
 |Изменение|Бета-версия|Удалено свойство навигации **mobileAppIdentifierDeployments** объекта [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-beta).|
 |Изменение|Бета-версия|Удалено свойство навигации **mobileAppIdentifierDeployments** объекта [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta).|
-|Изменение|Бета-версия|Добавлено свойство навигации **assignments** для объекта [deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration?view=graph-rest-beta).|
+|Изменение|Бета|Добавлено свойство навигации **assignments** для объекта [deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration?view=graph-rest-beta).|
 |Изменение|Бета-версия|Удалено свойство навигации **deviceConfiguration** объекта [deviceConfigurationAssignment](/graph/api/resources/intune-deviceconfig-deviceconfigurationassignment?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство навигации **deviceConfiguration** для объекта [deviceConfigurationGroupAssignment](/graph/api/resources/intune-deviceconfig-deviceconfigurationgroupassignment?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлены свойства навигации **deviceSetupConfigurations**, **ndesConnectors**, **exchangeOnPremisesPolicies**, **conditionalAccessSettings**, **auditEvents** и **troubleshootingEvents** для объекта [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta).|
@@ -4304,7 +4304,7 @@ ms.locfileid: "48433403"
 | Изменение           | Бета-версия    | Добавлено свойство **complianceGracePeriodExpirationDateTime** для объекта [iosUpdateDeviceStatus](/graph/api/resources/intune-deviceconfig-iosupdatedevicestatus?view=graph-rest-beta). |
 | Изменение           | Бета-версия    | Добавлено свойство **preSharedKey** для объекта [macOSWiFiConfiguration](/graph/api/resources/intune-deviceconfig-macoswificonfiguration?view=graph-rest-beta). |
 | Изменение           | Бета-версия    | Добавлены свойства **phoneNumber**, **androidSecurityPatchLevel** и **userDisplayName** для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta). |
-| Изменение           | Бета-версия    | Добавлены свойства **userName**, **deviceModel**, **platform** и **complianceGracePeriodExpirationDateTime** для объекта [managedDeviceMobileAppConfigurationDeviceStatus](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationdevicestatus?view=graph-rest-beta). |
+| Изменение           | Бета    | Добавлены свойства **userName**, **deviceModel**, **platform** и **complianceGracePeriodExpirationDateTime** для объекта [managedDeviceMobileAppConfigurationDeviceStatus](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationdevicestatus?view=graph-rest-beta). |
 | Изменение           | Бета-версия    | Добавлено свойство **userPrincipalName** для объекта [mobileAppInstallStatus](/graph/api/resources/intune-apps-mobileappinstallstatus?view=graph-rest-beta). |
 | Изменение           | Бета-версия    | Добавлено свойство **overrideDefaultRule** для объекта [onPremisesConditionalAccessSettings](/graph/api/resources/intune-onboarding-onpremisesconditionalaccesssettings?view=graph-rest-beta). |
 | Изменение           | Бета-версия    | Добавлено свойство **userPrincipalName** для объекта [userAppInstallStatus](/graph/api/resources/intune-apps-userappinstallstatus?view=graph-rest-beta). |

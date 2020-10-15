@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 3e40c3f9b0d435d2ac913afbef107da29e0bff20
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 5b9ccfcd473afd17106022febd0e124024d7fa74
+ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460413"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48471450"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -119,6 +119,7 @@ ms.locfileid: "48460413"
 |signInAudience|String| Указывает, какие учетные записи Майкрософт поддерживаются для соответствующего приложения. Только для чтения.|
 |tags|Коллекция объектов string| Настраиваемые строки, которые можно использовать для классификации и определения субъекта-службы. Значение null не допускается. |
 |tokenEncryptionKeyId|String|Задает значение открытого ключа keyId из коллекции keyCredentials. Если это свойство настроено, Azure AD выпускает маркеры для этого приложения в зашифрованном виде; шифрование производится с помощью ключа, указанного эти свойством. Код приложения, получающий зашифрованный маркер, должен использовать соответствующий закрытый ключ для расшифровки маркера, прежде чем его можно будет применить для пользователя, выполнившего вход.|
+| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Определяет проверенного издателя приложения, которое представляет этот субъект-служба.|
 
 ## <a name="relationships"></a>Связи
 
@@ -191,7 +192,8 @@ ms.locfileid: "48460413"
   "signInAudience": "String",
   "tags": ["string"],
   "tokenEncryptionKeyId": "String",
-  "useCustomTokenSigningKey": false
+  "useCustomTokenSigningKey": false,
+  "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"}
 }
 ```
 
