@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ac9937c4d729c6bc56243f83cd8dd0427a514603
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 35d779f5869e657ed46fa73a6d3d69fea7d53506
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405493"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460042"
 ---
 # <a name="list-domainnamereferences"></a>Список Домаиннамереференцес
 
@@ -25,9 +25,9 @@ ms.locfileid: "48405493"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Не поддерживается. |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Domain.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | Не поддерживается. |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Domain.ReadWrite.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 

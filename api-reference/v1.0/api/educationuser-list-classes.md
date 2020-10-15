@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 302fbf986c330a11c61e16da322197a5582e0e35
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: f9193ea6c1073d38261a06b229e5520618a36975
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402158"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459797"
 ---
 # <a name="list-classes"></a>Перечисление курсов
 
@@ -25,9 +25,9 @@ ms.locfileid: "48402158"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduRoster.ReadBasic  |
-|Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+|Делегированное (рабочая или учебная учетная запись) |  EduRoster.ReadBasic  |
+|Делегированное (личная учетная запись Майкрософт) |  Не поддерживается.  |
+|Приложение | EduRoster.Read.All, EduRoster.ReadWrite.All | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

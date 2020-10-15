@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: ef49ed6eb3c0677d48c62bfc1e325d551de9b712
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 4d573ef73aed7ebce12534c47797632eeb2ddb68
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400622"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458348"
 ---
 # <a name="delete-an-approleassignment-granted-to-a-service-principal"></a>Удаление Аппролеассигнмент, назначенного субъекту службы
 

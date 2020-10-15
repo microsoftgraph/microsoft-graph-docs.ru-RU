@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e5b96b3b6f4584547a82772c17eb01eb612b9afe
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 71622ab33eff6183694b90d65c3a6f84e3da238c
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404632"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459233"
 ---
 # <a name="get-contract"></a>Получение контракта
 

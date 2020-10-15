@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c14bd8906240de10e68c52112213255c6872fc68
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 7af31ad2a9ad70d6c71c9665a8c375b6664fc604
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405444"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461029"
 ---
 # <a name="list-serviceconfigurationrecords"></a>Список serviceConfigurationRecords
 
@@ -27,9 +27,9 @@ ms.locfileid: "48405444"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All, Domain.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | Directory.Read.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Directory.Read.All, Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

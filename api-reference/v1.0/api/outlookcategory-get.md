@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e94696463f31528d9022742afa32973526167be0
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: b86a904872c4a46e886d74e7fb20aa9c89aea8cf
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400643"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458544"
 ---
 # <a name="get-outlook-category"></a>Получение категории Outlook
 
@@ -24,7 +24,7 @@ ms.locfileid: "48400643"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | MailboxSettings.Read    |
+|Делегированное (рабочая или учебная учетная запись) | MailboxSettings.Read    |
 |Делегированные (личная учетная запись Майкрософт) | MailboxSettings.Read    |
 |Для приложений | MailboxSettings.Read |
 

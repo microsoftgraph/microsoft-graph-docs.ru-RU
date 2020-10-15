@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 91028c0c8dd04eef099d90f02a0809d50069931c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d194fd78ca7bc8eb713ea06ee18656b888630a68
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405934"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461218"
 ---
 # <a name="list-memberof"></a>Список memberOf
 
@@ -23,9 +23,9 @@ ms.locfileid: "48405934"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL  |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
+|Делегированное (рабочая или учебная учетная запись) | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL  |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "48405934"
 GET /contacts/{id}/memberOf
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$select` для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$select` для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |

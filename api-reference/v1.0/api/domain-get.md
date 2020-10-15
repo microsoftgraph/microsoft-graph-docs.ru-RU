@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 89c4e5f29796375ca98146764f2d9fc89662a5d9
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: cf7557ecf9ff34cf0746f4267aa8461e277a9004
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405488"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457767"
 ---
 # <a name="get-domain"></a>Получение домена
 
@@ -25,9 +25,9 @@ ms.locfileid: "48405488"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.Read.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory.Read.All, Domain.ReadWrite.All |
+|Делегированное (рабочая или учебная учетная запись) | Directory.Read.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Directory.Read.All, Domain.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

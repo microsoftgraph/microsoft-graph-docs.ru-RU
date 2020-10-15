@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0f0f44effdc0aaf7d4b4d464aade9058f0641041
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: dfac14fa95b23565fd8021ad75e43e539cb81c10
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405080"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460455"
 ---
 # <a name="update-device"></a>Обновление устройства
 
@@ -25,9 +25,9 @@ ms.locfileid: "48405080"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Не поддерживается |
+|Делегированное (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+|Приложение | Не поддерживается |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: da39683f20a8ac5c8bbf8fde3d23bd64b7c97ad2
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 452fa3f90de2eeedec46fddac8351517e6c24585
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402256"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460028"
 ---
 # <a name="list-members"></a>Список участников
 
@@ -23,9 +23,9 @@ ms.locfileid: "48402256"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduRoster.ReadBasic  |
+|Делегированное (рабочая или учебная учетная запись) |  EduRoster.ReadBasic  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается  |
-|Для приложений | EduRoster. Read. ALL, EduRoster. ReadWrite. ALL плюс Member. Read. Hidden | 
+|Приложение | EduRoster. Read. ALL, EduRoster. ReadWrite. ALL плюс Member. Read. Hidden | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

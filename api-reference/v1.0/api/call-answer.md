@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 44630c526562810b104e64952eab92c872a9ab78
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 25aa593c9e5fd0e1bd86d7265c4ebaaf22395d02
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406123"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459867"
 ---
 # <a name="call-answer"></a>вызов: ответ
 
@@ -27,7 +27,7 @@ ms.locfileid: "48406123"
 | :-------------- | :-----------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                        |
-| Для приложений     | Calls. Жоинграупкаллс. ALL или Calls. Жоинграупкаллсасгуест. ALL |
+| Приложение     | Calls. Жоинграупкаллс. ALL или Calls. Жоинграупкаллсасгуест. ALL |
 
 > **Примечание:** Для вызова, использующего носитель с размещением приложений, вам также потребуется разрешение Calls. Акцессмедиа. ALL. Необходимо иметь по крайней мере одно из следующих разрешений, чтобы обеспечить `source` расшифровку уведомления о входящем вызове: Calls. акцессмедиа. ALL, Calls.Iniтиате. ALL, Calls.IniТиатеграупкалл. ALL, Calls. Жоинграупкалл. ALL, Calls. Жоинграупкалласгуест. ALL. `source`Сведения о вызывающем абоненте в уведомлении о входящем звонке. Без по крайней мере одного из этих разрешений оно `source` останется зашифрованным.
 

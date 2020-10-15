@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 2553684dffd1c5be9fa65d445b57177f7a45a435
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 1f2df675252a29b7665ea0f60b30d0ff8ef7ed9f
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405003"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458852"
 ---
 # <a name="list-sections"></a>Вывод списка разделов
 

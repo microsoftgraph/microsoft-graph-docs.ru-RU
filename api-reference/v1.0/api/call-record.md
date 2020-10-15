@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: b27910e3ba20f6408c0305f22a737dd78f3acd3c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: fa4fe6698d788ac8588101e6f818fdd70712c1fb
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404163"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461321"
 ---
 # <a name="call-recordresponse"></a>Call: Рекордреспонсе
 
@@ -34,7 +34,7 @@ ms.locfileid: "48404163"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложений     | Calls.AccessMedia.All                       |
+| Приложение     | Calls.AccessMedia.All                       |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -122,7 +122,7 @@ Content-Length: 394
 
 
 ##### <a name="response"></a>Отклик
-Ниже показан пример ответа.
+Ниже показан пример отклика.
 
 > **Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

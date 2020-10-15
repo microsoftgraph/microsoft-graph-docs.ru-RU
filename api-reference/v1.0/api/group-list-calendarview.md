@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1e951324ec5db18d5bb4c31fa8a0d35e6ea61c36
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 3676177ada11c9db397c094a7ca83e0def5ce4a2
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401294"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459727"
 ---
 # <a name="list-calendarview"></a>Список calendarView
 

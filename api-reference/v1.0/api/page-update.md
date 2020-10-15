@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: fc1e43542728b9590ed4983cdf32e8de277a0467
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 03875c85fd9c751ad15c8d3b252a190e86d873ef
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402016"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460742"
 ---
 # <a name="update-page"></a>Обновление страницы
 
@@ -22,8 +22,8 @@ ms.locfileid: "48402016"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Notes. ReadWrite, Notes. ReadWrite. ALL    |
-|Делегированные (личная учетная запись Майкрософт) | Notes.ReadWrite    |
+|Делегированное (рабочая или учебная учетная запись) | Notes. ReadWrite, Notes. ReadWrite. ALL    |
+|Делегированное (личная учетная запись Майкрософт) | Notes.ReadWrite    |
 |Для приложений | Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +45,7 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`.  Данные JSON не возвращаются по PATCH-запросу.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.  Данные JSON не возвращаются по PATCH-запросу.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 7193c1bff6a9ed2b96255c0cf3764d4b9557bf57
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 42f6152a53070a08441fb80c301d3dbf1efbc9ff
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404828"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48457704"
 ---
 # <a name="get-rule"></a>Получение правила
 
@@ -25,7 +25,7 @@ ms.locfileid: "48404828"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | MailboxSettings.Read    |
+|Делегированное (рабочая или учебная учетная запись) | MailboxSettings.Read    |
 |Делегированные (личная учетная запись Майкрософт) | MailboxSettings.Read    |
 |Для приложений | MailboxSettings.Read |
 

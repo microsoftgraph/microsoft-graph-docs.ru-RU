@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 5fd34f481530af2d77e7dc69d68e9e8289168094
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: ef2505caf61a9b80de4ac53be9bbb334aad00ad9
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403785"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458474"
 ---
 # <a name="create-call"></a>Создание звонка
 
@@ -28,7 +28,7 @@ ms.locfileid: "48403785"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                                                                           |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                                                           |
-| Для приложений                            | Calls. Жоинграупкаллсасгуест. ALL, Calls. Жоинграупкаллс. ALL, Calls.Iniтиате. Все, Calls.IniТиатеграупкаллс. ALL |
+| Приложение                            | Calls. Жоинграупкаллсасгуест. ALL, Calls. Жоинграупкаллс. ALL, Calls.Iniтиате. Все, Calls.IniТиатеграупкаллс. ALL |
 
 > **Примечание:** Для вызова с использованием мультимедиа, размещаемого в приложении, вам потребуется разрешение Calls. Акцессмедиа. ALL в дополнение к одному из разрешений, перечисленных в приведенной выше таблице.
 
@@ -44,7 +44,7 @@ POST /communications/calls
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [Call](../resources/call.md) в формате JSON.
 
 ## <a name="response"></a>Отклик

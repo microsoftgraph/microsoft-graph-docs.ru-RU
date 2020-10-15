@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 81745029b62ac099221173f9560e954ca591789d
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 012c59e028c7c1f9ad7b730ccb3589fc08037d1c
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406165"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461323"
 ---
 # <a name="update-application"></a>Обновление приложения
 

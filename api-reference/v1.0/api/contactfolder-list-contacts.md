@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dcdefa0d191977c818233e9b4a18f2074954bd35
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: b06818def9ed051ac536a2f08e29906a001410a7
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404268"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48459237"
 ---
 # <a name="list-contacts"></a>Список контактов
 

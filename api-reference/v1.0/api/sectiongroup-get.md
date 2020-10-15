@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 98251949da409cca9e314e102bfe69b98c8a8d66
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 0e15caf09b1955bb583a63e767856ac03684ff16
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405764"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458901"
 ---
 # <a name="get-sectiongroup"></a>Получение sectionGroup
 

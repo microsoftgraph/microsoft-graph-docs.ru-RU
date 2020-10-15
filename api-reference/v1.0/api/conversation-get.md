@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a8d0d5927006ec670b85b9916b0d134313b40abc
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 1a992984302e9847887813574b8783b4285315f2
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404583"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460623"
 ---
 # <a name="get-conversation"></a>Получение беседы
 
@@ -22,9 +22,9 @@ ms.locfileid: "48404583"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group. ReadWrite. ALL, Group. Read. ALL    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group. ReadWrite. ALL, Group. Read. ALL |
+|Делегированное (рабочая или учебная учетная запись) | Group. ReadWrite. ALL, Group. Read. ALL    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Group. ReadWrite. ALL, Group. Read. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

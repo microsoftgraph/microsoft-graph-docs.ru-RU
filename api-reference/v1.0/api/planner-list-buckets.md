@@ -5,12 +5,12 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: b76b8c81cda0241255377539314accc2d6b2a9fe
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 26da0ec336de9b33dc87edf14584c9deb739ee9d
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400615"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458957"
 ---
 # <a name="list-buckets"></a>Перечисление сегментов
 

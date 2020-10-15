@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 06d72e1609d80f94d58829805bba6fc208fa9c48
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 5a564d036f5f3a499bde3bce92437f2a3dd70a42
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404807"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48461435"
 ---
 # <a name="list-outlook-categories"></a>Перечисление категорий Outlook
 
@@ -24,7 +24,7 @@ ms.locfileid: "48404807"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | MailboxSettings.Read    |
+|Делегированное (рабочая или учебная учетная запись) | MailboxSettings.Read    |
 |Делегированные (личная учетная запись Майкрософт) | MailboxSettings.Read    |
 |Для приложений | MailboxSettings.Read |
 

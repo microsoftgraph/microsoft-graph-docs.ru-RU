@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 60f0a52c7b67fd0de9cbddd56ec62eb209dd2f9c
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 6fc63b3ca035cf2d569a724da5d0ea57555e238e
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405479"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460891"
 ---
 # <a name="list-posts"></a>Список публикаций
 
@@ -23,9 +23,9 @@ ms.locfileid: "48405479"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group. ReadWrite. ALL, Group. Read. ALL    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group. ReadWrite. ALL, Group. Read. ALL |
+|Делегированное (рабочая или учебная учетная запись) | Group. ReadWrite. ALL, Group. Read. ALL    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Group. ReadWrite. ALL, Group. Read. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

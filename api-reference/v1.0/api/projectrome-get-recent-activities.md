@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 author: ailae
 doc_type: apiPageType
-ms.openlocfilehash: 459de1d6309f8db37180cd99e3286974bfd8c373
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 00e0ff641af173d75301d7f9b52586f17c3993bc
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405892"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48458943"
 ---
 # <a name="get-recent-user-activities"></a>Получение последних действий пользователя
 
@@ -24,8 +24,8 @@ ms.locfileid: "48405892"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | UserActivity.ReadWrite.CreatedByApp    |
-|Делегированные (личная учетная запись Майкрософт) | UserActivity.ReadWrite.CreatedByApp    |
+|Делегированное (рабочая или учебная учетная запись) | UserActivity.ReadWrite.CreatedByApp    |
+|Делегированное (личная учетная запись Майкрософт) | UserActivity.ReadWrite.CreatedByApp    |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос

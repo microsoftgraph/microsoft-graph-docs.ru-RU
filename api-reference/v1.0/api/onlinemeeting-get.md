@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a09b15e713eb68c4ef72d0321df17cc973a4e42b
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 58679d53800ef449242594b76dec2ad623a6831f
+ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404142"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48460913"
 ---
 # <a name="get-onlinemeeting"></a>Получение Онлинемитинг
 
@@ -26,9 +26,9 @@ ms.locfileid: "48404142"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)           |
 |:---------------------------------------|:------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                                        |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                        |
-| Для приложений                            | OnlineMeetings.Read.All |
+| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается.                                        |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                        |
+| Приложение                            | OnlineMeetings.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +47,7 @@ GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
 
 Если запрос содержит `Accept-Language` HTTP-заголовок, то `content` из `joinInformation` будет указан на языке и языкового стандарта, указанного в заголовке `Accept-Language`. Контент по умолчанию будет на английском языке.
 
-## <a name="request-body"></a>Основной текст запросов
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
