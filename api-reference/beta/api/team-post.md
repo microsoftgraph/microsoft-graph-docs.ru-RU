@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4c1b347088e353e9732e01a7286a09e6d23ff6bc
-ms.sourcegitcommit: 775b38baac6a4e7704d6144ef4589f2fc476bd61
+ms.openlocfilehash: 4013251fce41125a0fc6a662d9481520ac75742d
+ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48433445"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48479954"
 ---
 # <a name="create-team"></a>Создание команды
 
@@ -26,9 +26,9 @@ ms.locfileid: "48433445"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Group.ReadWrite.All, Directory.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All |
+| Делегированное (рабочая или учебная учетная запись)     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Для приложений                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
