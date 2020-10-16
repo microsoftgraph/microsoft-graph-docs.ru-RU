@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 69fb12b694558fa8d8624d09f108f0c285365a12
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aad508267edfedde5b1d104745f1c1f3b7ee70f4
+ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009214"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48471436"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -101,6 +101,7 @@ ms.locfileid: "48009214"
 |servicePrincipalType|Строка|Указывает, что представляет субъект-служба: приложение или управляемое удостоверение. Это значение устанавливается внутри Azure AD. Если субъект-служба представляет [приложение](./application.md), указывается значение __Application__. Если субъект-служба представляет [управляемое удостоверение](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview), указывается значение __ManagedIdentity__.|
 |tags|Коллекция объектов string| Настраиваемые строки, которые можно использовать для классификации и определения субъекта-службы. Значение null не допускается. |
 | tokenEncryptionKeyId |String|Задает значение открытого ключа keyId из коллекции keyCredentials. Если это свойство настроено, Azure AD выпускает маркеры для этого приложения в зашифрованном виде; шифрование производится с помощью ключа, указанного эти свойством. Код приложения, получающий зашифрованный маркер, должен использовать соответствующий закрытый ключ для расшифровки маркера, прежде чем его можно будет применить для пользователя, выполнившего вход.|
+| verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Определяет проверенного издателя приложения, которое представляет этот субъект-служба.
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип |Описание|
@@ -160,7 +161,8 @@ ms.locfileid: "48009214"
   "servicePrincipalNames": ["string"],
   "servicePrincipalType": "string",
   "tags": ["string"],
-  "tokenEncryptionKeyId": "String"
+  "tokenEncryptionKeyId": "String",
+  "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"}
 }
 ```
 
