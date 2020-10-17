@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d6549b3bb0ec622176bbb286464138821eb42a64
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 86d2edd545a3abe03deffd35233bd1250d1bb94e
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018447"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581514"
 ---
 # <a name="extensionproperty-resource-type"></a>Тип ресурса Екстенсионпроперти
 
@@ -22,7 +22,7 @@ ms.locfileid: "48018447"
 
 > [!IMPORTANT]
 > Расширения схемы Azure AD, описанные в этой статье, доступны только в целях обеспечения обратной совместимости в Microsoft Graph.
-> Он позволяет использовать Microsoft Graph, чтобы продолжить управление свойствами расширения, добавленными через Azure AD Graph или [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect).
+> Он позволяет использовать Microsoft Graph, чтобы продолжить управление свойствами расширения, добавленными через Azure AD Graph или [Azure AD Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect).
 > Для новых настраиваемых расширений рекомендуется использовать расширения схемы Microsoft Graph для [добавления пользовательских данных в ресурсы](/graph/extensibility-overview).
 
 ## <a name="methods"></a>Методы
@@ -80,4 +80,3 @@ ms.locfileid: "48018447"
   "section": "documentation",
   "tocPath": ""
 }-->
-

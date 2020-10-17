@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: e48d179e53111cc69b72eb8aa61c52ae105764df
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 431ea73f20b36b189ae7638cc56a01239c1f113f
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018909"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582130"
 ---
 # <a name="conditionalaccessgrantcontrols-resource-type"></a>Тип ресурса Кондитионалакцессгрантконтролс
 
@@ -24,8 +24,8 @@ ms.locfileid: "48018909"
 |:-------- |:---- |:----------- |
 | operator | String | Определяет связь элементов управления предоставлением. Возможные значения: `AND` , `OR` . |
 | буилтинконтролс | Коллекция String | Список значений встроенных элементов управления, необходимых для политики. Возможные значения: `Block` , `Mfa` , `CompliantDevice` , `DomainJoinedDevice` , `ApprovedApplication` , `CompliantApplication` |
-| кустомаусентикатионфакторс | Коллекция String | Список идентификаторов настраиваемых элементов управления, необходимых для политики. Более подробную информацию можно узнать в статье [настраиваемые элементы управления](https://docs.microsoft.com/azure/active-directory/conditional-access/controls). |
-| термсофусе | Коллекция String | Список [условий использования](https://docs.microsoft.com/graph/api/resources/agreement) идентификаторов, необходимых для политики. |
+| кустомаусентикатионфакторс | Коллекция String | Список идентификаторов настраиваемых элементов управления, необходимых для политики. Более подробную информацию можно узнать в статье [настраиваемые элементы управления](/azure/active-directory/conditional-access/controls). |
+| термсофусе | Коллекция String | Список [условий использования](/graph/api/resources/agreement) идентификаторов, необходимых для политики. |
 
 ## <a name="relationships"></a>Связи
 
@@ -65,4 +65,3 @@ ms.locfileid: "48018909"
   "section": "documentation",
   "tocPath": ""
 }-->
-

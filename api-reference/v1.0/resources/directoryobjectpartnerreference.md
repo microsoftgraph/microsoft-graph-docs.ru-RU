@@ -5,12 +5,12 @@ author: keylimesoda
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: cda40de50710c971970d64853b33eebbde8865a2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 39a3077862727f4d8457a6d0105f03296ba67950
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091770"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582158"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>Тип ресурса Директорйобжектпартнерреференце
 
@@ -22,10 +22,10 @@ ms.locfileid: "48091770"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|description|Строка| Описание возвращаемого объекта. Только для чтения. |
-|displayName|Строка| Имя возвращаемого объекта каталога, например Group или Application. Только для чтения. |
+|description|String| Описание возвращаемого объекта. Только для чтения. |
+|displayName|String| Имя возвращаемого объекта каталога, например Group или Application. Только для чтения. |
 |екстерналпартнертенантид|Guid| Идентификатор клиента для партнерского клиента. Только для чтения. |
-|id|Строка| Уникальный идентификатор ресурса. Наследуется от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Только для чтения. |
+|id|String| Уникальный идентификатор ресурса. Наследуется от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Только для чтения. |
 |objectType|String| Тип упоминаемого объекта в партнерской клиенте. Только для чтения. |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -50,7 +50,7 @@ ms.locfileid: "48091770"
 
 ## <a name="see-also"></a>См. также
 
-- [Получение объектов каталога из списка идентификаторов](/graph/api/directoryobject-getbyids?view=graph-rest-v1.0)
+- [Получение объектов каталога из списка идентификаторов](../api/directoryobject-getbyids.md)
 
 <!-- uuid: fbec8cd7-cfe4-431d-87fc-d102cd2841a4
 2018-12-06 02:01:30 UTC -->
@@ -64,4 +64,3 @@ ms.locfileid: "48091770"
   "suppressions": []
 }
 -->
-

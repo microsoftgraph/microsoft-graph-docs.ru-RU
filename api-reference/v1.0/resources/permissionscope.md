@@ -5,20 +5,20 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 9a7c69e13fecf4e446f43fb6b2554c1cfd5bdee2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: db7cb97cfa4a23460175ea79334894ae2e5a813b
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984245"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582144"
 ---
 # <a name="permissionscope-resource-type"></a>Тип ресурса permissionScope
 
 Пространство имен: microsoft.graph
 
-Представляет определение [делегированного разрешения](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types).
+Представляет определение [делегированного разрешения](/azure/active-directory/develop/v2-permissions-and-consent#permission-types).
 
-Делегированные разрешения могут запрашиваться клиентскими приложениями, которым необходим маркер доступа к API, в котором определены разрешения. Делегированные разрешения можно запрашивать [динамически](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent), используя `scopes` параметр в запросе на авторизацию для платформы идентификации Майкрософт или [статически](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope), с помощью коллекции **рекуиредресаурцеакцесс** для объекта [Application](application.md) .
+Делегированные разрешения могут запрашиваться клиентскими приложениями, которым необходим маркер доступа к API, в котором определены разрешения. Делегированные разрешения можно запрашивать [динамически](/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent), используя `scopes` параметр в запросе на авторизацию для платформы идентификации Майкрософт или [статически](/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope), с помощью коллекции **рекуиредресаурцеакцесс** для объекта [Application](application.md) .
 
 ## <a name="properties"></a>Свойства
 
@@ -70,4 +70,3 @@ ms.locfileid: "47984245"
   "suppressions": []
 }
 -->
-

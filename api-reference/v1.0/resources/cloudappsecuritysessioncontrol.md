@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 150b0b53b219b46978c83666560264fb60bf8ba0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 114e788e12ab8f633bc6350b08140f9d5e4fe8a3
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086804"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581269"
 ---
 # <a name="cloudappsecuritysessioncontrol-resource-type"></a>Тип ресурса Клаудаппсекуритисессионконтрол
 
@@ -23,7 +23,7 @@ ms.locfileid: "48086804"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | Указывает, включен ли элемент управления сеансом. |
-|клаудаппсекурититипе|String| Возможные значения: `mcasConfigured`, `monitorOnly`, `blockDownloads`, `unknownFutureValue`. Для получения дополнительных сведений обратитесь [к разделу развертывание приложения условного доступа для популярных приложений](https://docs.microsoft.com/cloud-app-security/proxy-deployment-aad). |
+|клаудаппсекурититипе|String| Возможные значения: `mcasConfigured`, `monitorOnly`, `blockDownloads`, `unknownFutureValue`. Для получения дополнительных сведений обратитесь [к разделу развертывание приложения условного доступа для популярных приложений](/cloud-app-security/proxy-deployment-aad). |
 
 ## <a name="relationships"></a>Связи
 
@@ -58,4 +58,3 @@ ms.locfileid: "48086804"
   "section": "documentation",
   "tocPath": ""
 }-->
-

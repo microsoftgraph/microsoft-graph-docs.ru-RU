@@ -7,12 +7,12 @@ localization_priority: Normal
 description: Ниже показано представление ресурса ColumnDefinition в формате JSON.
 ms.prod: ''
 doc_type: resourcePageType
-ms.openlocfilehash: 28d124038601ae578e0ee1c30b0ca7ebea8321c1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aae4b71055c7a6574cc4abbaa506fad8961991d9
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086727"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581228"
 ---
 # <a name="columndefinition-resource"></a>Ресурс ColumnDefinition
 
@@ -116,7 +116,7 @@ ms.locfileid: "48086727"
 [fields]: fieldvalueset.md
 [listItem]: listitem.md
 
-[SPFieldType]: https://msdn.microsoft.com/library/microsoft.sharepoint.spfieldtype.aspx
+[SPFieldType]: /previous-versions/office/sharepoint-server/ms428806(v=office.15)
 
 <!-- {
   "type": "#page.annotation",
@@ -125,4 +125,3 @@ ms.locfileid: "48086727"
   "section": "documentation",
   "tocPath": "Resources/ColumnDefinition"
 } -->
-

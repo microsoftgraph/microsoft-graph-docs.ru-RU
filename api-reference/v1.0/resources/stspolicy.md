@@ -5,18 +5,18 @@ localization_priority: Normal
 author: lujiangfeng666
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 7ec37db5a285427e475dab41252e071da1eb3090
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cb43f538fe961af85c1a92f5e853ae8bca44b418
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086426"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581906"
 ---
 # <a name="stspolicy-resource-type"></a>Тип ресурса Стсполици
 
 Пространство имен: microsoft.graph
 
-Представляет абстрактный базовый тип для типов политики, которые управляют поведением [платформы Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/) .
+Представляет абстрактный базовый тип для типов политики, которые управляют поведением [платформы Microsoft Identity](/azure/active-directory/develop/) .
 
 Наследуется от [основы](policyBase.md).
 
@@ -28,10 +28,10 @@ ms.locfileid: "48086426"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка| Уникальный идентификатор для этой политики. Только для чтения. Наследуется от [основы](policyBase.md).|
-|description|Строка| Описание для этой политики. Наследуется от [основы](policyBase.md).|
-|displayName|Строка| Отображаемое имя для этой политики. Наследуется от [основы](policyBase.md).|
-|RDLC|Коллекция String| Коллекция String, содержащая строку JSON, определяющую правила и параметры политики. Синтаксис определения отличается для каждого производного типа политики. Обязательный.|
+|id|String| Уникальный идентификатор для этой политики. Только для чтения. Наследуется от [основы](policyBase.md).|
+|description|String| Описание для этой политики. Наследуется от [основы](policyBase.md).|
+|displayName|String| Отображаемое имя для этой политики. Наследуется от [основы](policyBase.md).|
+|RDLC|Коллекция String| Коллекция String, содержащая строку JSON, определяющую правила и параметры политики. Синтаксис определения отличается для каждого производного типа политики. Обязательно.|
 |исорганизатиондефаулт|Boolean|Если задано значение true, активируется эта политика. Для одного и того же типа политики может быть задано несколько политик, но только одна из них может быть активирована в качестве организации по умолчанию. Необязательное значение по умолчанию — false.|
 
 ## <a name="relationships"></a>Связи
@@ -71,4 +71,3 @@ ms.locfileid: "48086426"
   "section": "documentation",
   "tocPath": ""
 }-->
-

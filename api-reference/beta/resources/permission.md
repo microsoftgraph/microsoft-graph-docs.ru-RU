@@ -6,12 +6,12 @@ description: ресурс Permission, представляющий разреш�
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 3151e6d070695f2010417f6befbb0c4e83fd3830
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 29b4c7aaccc62afa16057388758e1a62f05db41e
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998101"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582354"
 ---
 # <a name="permission-resource-type"></a>Тип ресурса разрешения
 
@@ -249,7 +249,7 @@ ms.locfileid: "47998101"
 | [Обновление](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [удаление](../api/permission-delete.md);                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 | [Добавление пользователей в ссылку совместного доступа](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
-
+| [Отзыв разрешений](../api/permission-revokegrants.md)   | `POST /drive/items/{item-id}/permissions/{id}/revokeGrants`
 
 [createLink]: ../api/driveitem-createlink.md
 [обладают]: ../api/permission-grant.md
@@ -272,5 +272,3 @@ ms.locfileid: "47998101"
   "suppressions": []
 }
 -->
-
-

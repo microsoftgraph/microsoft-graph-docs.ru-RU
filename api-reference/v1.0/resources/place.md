@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 25117aa82efcd914b588572f0d557139b59ec036
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d7554463870556791f7f422928c17aa25819ebc8
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056424"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581717"
 ---
 # <a name="place-resource-type"></a>размещение типа ресурса
 
@@ -23,12 +23,12 @@ ms.locfileid: "48056424"
 
 Места, такие как [комната](room.md) и [RoomList принимают одиночные](roomlist.md) , содержат базовый **идентификатор**, отображаемое имя и адрес электронной почты. Кроме того, они содержат сведения о переходах, такие как физический адрес и географические координаты, а также в случае комнат, а также другие релевантные сведения, такие как возможности AV, номер этажа и мощность.
 
-Функции [финдрумс](https://docs.microsoft.com/graph/api/user-findrooms?view=graph-rest-beta&tabs=http) и [финдрумлистс](https://docs.microsoft.com/graph/api/user-findroomlists?view=graph-rest-beta) поддерживают подобный Поиск комнат и списков помещений в клиенте. Ниже приведено сравнение между API мест и этими функциями.  Если вы создаете рабочее приложение, выберите API "места", так как API теперь доступен в версии 1.0. Запланируйте обновление существующего кода, использующего **финдрумс** или **финдрумлистс** , для использования API мест, так как **финдрумс** или **финдрумлистс** будут устаревшими, а временная шкала будет объявлена.
+Функции [финдрумс](/graph/api/user-findrooms) и [финдрумлистс](/graph/api/user-findroomlists) поддерживают подобный Поиск комнат и списков помещений в клиенте. Ниже приведено сравнение между API мест и этими функциями.  Если вы создаете рабочее приложение, выберите API "места", так как API теперь доступен в версии 1.0. Запланируйте обновление существующего кода, использующего **финдрумс** или **финдрумлистс** , для использования API мест, так как **финдрумс** или **финдрумлистс** будут устаревшими, а временная шкала будет объявлена.
 
 |API мест |функции Финдрумс и Финдрумлистс|
 |:------------------------------------|:-----------------------------|
 |Поддерживает извлечение всех помещений или списков помещений в клиенте, а также всех комнат в списке помещений | Подобная поддержка — получение всех помещений или списков помещений в клиенте и всех комнат в списке помещений|
-|[Места в списке](../api/place-list.md) могут возвращать более 100 комнат в клиенте | [финдрумс](https://docs.microsoft.com/graph/api/user-findrooms?view=graph-rest-beta&tabs=http) возвращает до первых 100 комнат в клиенте. |
+|[Места в списке](../api/place-list.md) могут возвращать более 100 комнат в клиенте | [финдрумс](/graph/api/user-findrooms) возвращает до первых 100 комнат в клиенте. |
 |Поддерживает [Извлечение отдельных помещений или списка помещений](../api/place-get.md) в клиенте | Не поддерживает извлечение отдельного помещения или списка помещений в клиенте
 |Определяет конкретные объекты [комнаты](room.md) и [RoomList принимают одиночные](roomlist.md) , которые задают набор свойств с более широкими возможностями, в дополнение к ОТОБРАЖАЕМОМУ имени и SMTP-адресу. | Каждая комната и список помещений имеют более легкий тип [EmailAddress](emailaddress.md) , который указывает только отображаемое имя и SMTP-адрес.|
 |Поддерживает только организационные сценарии с делегированными (рабочими или учебными учетными записями) или разрешениями приложений. | Подобная поддержка только для организационных сценариев с делегированными разрешениями или приложениями|
@@ -80,8 +80,8 @@ ms.locfileid: "48056424"
 ```
 
 ## <a name="see-also"></a>См. также
-- Чтобы создать список помещений для администраторов, используйте командлет Exchange PowerShell [New – DistributionGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps).
-- Чтобы добавить конференцию в список помещений, используйте командлет [Add – DistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/add-distributiongroupmember?view=exchange-ps)для Exchange PowerShell.
+- Чтобы создать список помещений для администраторов, используйте командлет Exchange PowerShell [New – DistributionGroup](/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps).
+- Чтобы добавить конференцию в список помещений, используйте командлет [Add – DistributionGroupMember](/powershell/module/exchange/users-and-groups/add-distributiongroupmember?view=exchange-ps)для Exchange PowerShell.
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -92,4 +92,3 @@ ms.locfileid: "48056424"
   "section": "documentation",
   "tocPath": ""
 }-->
-

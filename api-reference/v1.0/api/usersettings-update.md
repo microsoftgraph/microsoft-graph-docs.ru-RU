@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: bc13589a5a6f4c05bc6decc9f0e8daa1f814fccf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0b20225fe22ede9cf0226a3fd1b4c3332922bf6c
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970917"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582060"
 ---
 # <a name="update-settings"></a>Обновление параметров
 
@@ -21,7 +21,7 @@ ms.locfileid: "47970917"
 ### <a name="batch-request"></a>Пакетный запрос
 
 Кроме того, можно отказаться от использования нескольких пользователей из delve и отказаться от их вклада в релевантность содержимого для всей Организации с помощью пакетного запроса.
-Для получения дополнительных сведений см [Пакетная обработка JSON](https://developer.microsoft.com/graph/docs/concepts/json_batching).
+Для получения дополнительных сведений см [Пакетная обработка JSON](/graph/json-batching).
 
 >**Важно!** только члены группы ролей " [Управление организацией](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) " могут обновлять нескольких пользователей. 
 
@@ -33,8 +33,8 @@ ms.locfileid: "47970917"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User. ReadWrite, User. ReadWrite. ALL   |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (рабочая или учебная учетная запись) | User. ReadWrite, User. ReadWrite. ALL   |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -56,7 +56,7 @@ PATCH /users/{id | userPrincipalName}/settings/
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
@@ -94,7 +94,3 @@ Content-length: 72
   "contributionToContentDiscoveryDisabled": true
 }
 ```
-
-
-
-

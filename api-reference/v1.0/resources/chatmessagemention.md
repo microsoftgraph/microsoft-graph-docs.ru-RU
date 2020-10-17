@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 1a7ef91ca698058e6f3b9dacd3928329aaf719c7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fbb65b95884b5666aaf915b4239d3b2a401b9d3f
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069171"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582018"
 ---
 # <a name="chatmessagemention-resource-type"></a>Тип ресурса Чатмессажементион
 
@@ -33,14 +33,14 @@ ms.locfileid: "48069171"
 
 Второе упоминание имеет `id` атрибут 1, совпадающий со свойством **ID** второго экземпляра, который равен 1.
 
-Полный контекст этого примера приведен в разделе [список ответов на сообщения канала](/graph/api/channel-list-messagereplies?view=graph-rest-beta).
+Полный контекст этого примера приведен в разделе [список ответов на сообщения канала](/graph/api/channel-list-messagereplies).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство| Тип|Описание|
 |:---------------|:--------|:----------|
 |id|Int32|Индекс объекта, упоминаемого в заданном **chatMessage**. Соответствует значению {index} в соответствующем `<at id="{index}">` теге в тексте сообщения.|
-|ментионтекст|string|Строка, используемая для представления упоминания. Например, отображаемое имя пользователя, имя группы.|
+|ментионтекст|Строка|Строка, используемая для представления упоминания. Например, отображаемое имя пользователя, имя группы.|
 |котором|[identitySet](identityset.md)|Упоминаемая сущность (пользователь, приложение, группа или канал).  Если это канал или группа, @mentioned, Identity содержит свойство **CONVERSATION** , предоставляющее идентификатор команды или канала, и свойство **конверсатионидентититипе** , которое представляет группу или канал.|
 
 
@@ -73,4 +73,3 @@ ms.locfileid: "48069171"
   "suppressions": []
 }
 -->
-

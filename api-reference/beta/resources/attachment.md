@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: outlook
 author: svpsiva
-ms.openlocfilehash: c745b2516d2ff3455d00b18df97acd01188f5e29
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a66505ec27c6920b51f174c7acb3e6a276309c53
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966788"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582193"
 ---
 # <a name="attachment-resource-type"></a>Тип ресурса attachment
 
@@ -92,7 +92,6 @@ ms.locfileid: "47966788"
   "name": "string",
   "size": 1024
 }
-
 ```
 
 
