@@ -5,52 +5,52 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ccd375a5bbae6bc9eb109fff7991fd5cced3f23d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bf3ffb3bd350f30b2d9966998bf2c07cb65c6cc1
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47967732"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582228"
 ---
-# <a name="list-names"></a><span data-ttu-id="5d736-103">Перечисление имен</span><span class="sxs-lookup"><span data-stu-id="5d736-103">List names</span></span>
+# <a name="list-names"></a><span data-ttu-id="fc5d9-103">Перечисление имен</span><span class="sxs-lookup"><span data-stu-id="fc5d9-103">List names</span></span>
 
-<span data-ttu-id="5d736-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5d736-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fc5d9-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fc5d9-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="5d736-105">Получение списка именованных элементов, связанных с листом.</span><span class="sxs-lookup"><span data-stu-id="5d736-105">Retrieve a list of named item associated with the worksheet.</span></span> 
-## <a name="permissions"></a><span data-ttu-id="5d736-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5d736-106">Permissions</span></span>
-<span data-ttu-id="5d736-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5d736-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fc5d9-105">Получение списка именованных элементов, связанных с листом.</span><span class="sxs-lookup"><span data-stu-id="fc5d9-105">Retrieve a list of named item associated with the worksheet.</span></span> 
+## <a name="permissions"></a><span data-ttu-id="fc5d9-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fc5d9-106">Permissions</span></span>
+<span data-ttu-id="fc5d9-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fc5d9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="5d736-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5d736-109">Permission type</span></span>      | <span data-ttu-id="5d736-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5d736-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fc5d9-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fc5d9-109">Permission type</span></span>      | <span data-ttu-id="fc5d9-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fc5d9-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5d736-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5d736-111">Delegated (work or school account)</span></span> | <span data-ttu-id="5d736-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="5d736-112">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="5d736-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5d736-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5d736-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5d736-114">Not supported.</span></span>    |
-|<span data-ttu-id="5d736-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5d736-115">Application</span></span> | <span data-ttu-id="5d736-116">Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="5d736-116">Sites.Read.All</span></span> |
+|<span data-ttu-id="fc5d9-111">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fc5d9-111">Delegated (work or school account)</span></span> | <span data-ttu-id="fc5d9-112">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fc5d9-112">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="fc5d9-113">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fc5d9-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fc5d9-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fc5d9-114">Not supported.</span></span>    |
+|<span data-ttu-id="fc5d9-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="fc5d9-115">Application</span></span> | <span data-ttu-id="fc5d9-116">Sites.Read.All</span><span class="sxs-lookup"><span data-stu-id="fc5d9-116">Sites.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5d736-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5d736-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fc5d9-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fc5d9-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/worksheets/{id|name}/names
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="5d736-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="5d736-118">Optional query parameters</span></span>
-<span data-ttu-id="5d736-119">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="5d736-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="fc5d9-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="fc5d9-118">Optional query parameters</span></span>
+<span data-ttu-id="fc5d9-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="fc5d9-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="5d736-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5d736-120">Request headers</span></span>
-| <span data-ttu-id="5d736-121">Имя</span><span class="sxs-lookup"><span data-stu-id="5d736-121">Name</span></span>      |<span data-ttu-id="5d736-122">Описание</span><span class="sxs-lookup"><span data-stu-id="5d736-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="fc5d9-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fc5d9-120">Request headers</span></span>
+| <span data-ttu-id="fc5d9-121">Имя</span><span class="sxs-lookup"><span data-stu-id="fc5d9-121">Name</span></span>      |<span data-ttu-id="fc5d9-122">Описание</span><span class="sxs-lookup"><span data-stu-id="fc5d9-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="5d736-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5d736-123">Authorization</span></span>  | <span data-ttu-id="5d736-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5d736-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="5d736-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="5d736-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="5d736-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="5d736-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="fc5d9-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fc5d9-123">Authorization</span></span>  | <span data-ttu-id="fc5d9-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fc5d9-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fc5d9-126">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="fc5d9-126">Workbook-Session-Id</span></span>  | <span data-ttu-id="fc5d9-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="fc5d9-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="5d736-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="5d736-129">Request body</span></span>
-<span data-ttu-id="5d736-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="5d736-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="fc5d9-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="fc5d9-129">Request body</span></span>
+<span data-ttu-id="fc5d9-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="fc5d9-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5d736-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="5d736-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fc5d9-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="fc5d9-131">Response</span></span>
 
-<span data-ttu-id="5d736-132">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбукнамедитем](../resources/nameditem.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="5d736-132">If successful, this method returns a `200 OK` response code and collection of [WorkbookNamedItem](../resources/nameditem.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="5d736-133">Пример</span><span class="sxs-lookup"><span data-stu-id="5d736-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="5d736-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="5d736-134">Request</span></span>
-<span data-ttu-id="5d736-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5d736-135">Here is an example of the request.</span></span>
+<span data-ttu-id="fc5d9-132">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [воркбукнамедитем](../resources/nameditem.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="fc5d9-132">If successful, this method returns a `200 OK` response code and collection of [WorkbookNamedItem](../resources/nameditem.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="fc5d9-133">Пример</span><span class="sxs-lookup"><span data-stu-id="fc5d9-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="fc5d9-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="fc5d9-134">Request</span></span>
+<span data-ttu-id="fc5d9-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fc5d9-135">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="5d736-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="5d736-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="fc5d9-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="fc5d9-136">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_tables"
@@ -58,26 +58,26 @@ GET /workbook/worksheets/{id|name}/names
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/names
 ```
-# <a name="c"></a>[<span data-ttu-id="5d736-137">C#</span><span class="sxs-lookup"><span data-stu-id="5d736-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="fc5d9-137">C#</span><span class="sxs-lookup"><span data-stu-id="fc5d9-137">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-tables-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5d736-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5d736-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="fc5d9-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fc5d9-138">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-tables-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5d736-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5d736-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="fc5d9-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fc5d9-139">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-tables-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="5d736-140">Java</span><span class="sxs-lookup"><span data-stu-id="5d736-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="fc5d9-140">Java</span><span class="sxs-lookup"><span data-stu-id="fc5d9-140">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-tables-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="5d736-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="5d736-141">Response</span></span>
-<span data-ttu-id="5d736-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5d736-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="fc5d9-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="fc5d9-141">Response</span></span>
+<span data-ttu-id="fc5d9-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fc5d9-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -110,4 +110,3 @@ Content-length: 158
   "suppressions": [
   ]
 }-->
-
