@@ -749,7 +749,7 @@ items:
                     href: api/application-addkey.md
                   - name: Удаление ключа
                     href: api/application-removekey.md
-              - name: Extensions
+              - name: Расширения
                 items:
                   - name: Список расширений
                     href: api/application-list-extensionproperty.md
@@ -925,7 +925,7 @@ items:
                 items:
                   - name: 'Список делегированных разрешений, предоставленных представителем'
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
-              - name: Классификации делегированных разрешений
+              - name: Классификация делегированных разрешений
                 href: resources/delegatedpermissionclassification.md
                 items:
                   - name: Список
@@ -9299,7 +9299,7 @@ items:
             items:
               - name: Получение ошибок синхронизации
                 href: api/educationsynchronizationerrors-get.md
-      - name: Extensions
+      - name: Расширения
         items:
           - name: Открытые расширения
             href: resources/opentypeextension.md
@@ -9411,6 +9411,8 @@ items:
                 href: api/shares-get.md
               - name: Предоставление доступа к ссылке для общего доступа
                 href: api/permission-grant.md
+              - name: Отзыв разрешений для ссылки совместного доступа
+                href: api/permission-revokegrants.md
               - name: Разрешения списка
                 href: api/driveitem-list-permissions.md
               - name: Добавление разрешений
@@ -9950,52 +9952,35 @@ items:
                       - name: Обновление
                         href: api/authenticationflowspolicy-update.md
               - name: Методы проверки подлинности
+                href: resources/authenticationmethods-overview.md
                 items:
-                  - name: Методы проверки подлинности B2B
-                    href: resources/authenticationmethods-overview.md
-                    item:
-                      - name: Метод проверки подлинности
-                        href: resources/authenticationmethod.md
-                        items:
-                          - name: Список
-                            href: api/authentication-list-methods.md
-                          - name: Получение
-                            href: api/authenticationmethod-get.md
-                      - name: Password
-                        href: resources/passwordauthenticationmethod.md
-                        items:
-                          - name: Список
-                            href: api/authentication-list-passwordmethods.md
-                          - name: Получение
-                            href: api/passwordauthenticationmethod-get.md
-                          - name: Сбросить
-                            href: api/passwordauthenticationmethod-resetpassword.md
-                          - name: Получение состояния операции
-                            href: api/authenticationoperation-get.md
-                      - name: Phone
-                        href: resources/phoneauthenticationmethod.md
-                        items:
-                          - name: Список
-                            href: api/authentication-list-phonemethods.md
-                          - name: Получение
-                            href: api/phoneauthenticationmethod-get.md
-                          - name: Обновление
-                            href: api/phoneauthenticationmethod-update.md
-                          - name: Delete
-                            href: api/phoneauthenticationmethod-delete.md
-                          - name: Добавление
-                            href: api/authentication-post-phonemethods.md
-                          - name: Включение входа в SMS
-                            href: api/phoneauthenticationmethod-enablesmssignin.md
-                          - name: Отключение входа в SMS
-                            href: api/phoneauthenticationmethod-disablesmssignin.md
-                  - name: Методы проверки подлинности B2C
-                    href: resources/b2cauthenticationmethodspolicy.md
+                  - name: Ключи контроля доступа FIDO2
+                    href: resources/fido2authenticationmethod.md
                     items:
+                      - name: Список
+                        href: api/fido2authenticationmethod-list.md
                       - name: Получение
-                        href: api/b2cauthenticationmethodspolicy-get.md
+                        href: api/fido2authenticationmethod-get.md
+                      - name: Удаление
+                        href: api/fido2authenticationmethod-delete.md
+                  - name: Sign-In телефона без пароля для средства проверки подлинности (Майкрософт)
+                    href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
+                    items:
+                      - name: Список
+                        href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-list.md
+                      - name: Получение
+                        href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
+                      - name: Удаление
+                        href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
+                  - name: Phone
+                    href: resources/phoneauthenticationmethod.md
+                    items:
+                      - name: Список
+                        href: api/authentication-list-phonemethods.md
+                      - name: Получение
+                        href: api/phoneauthenticationmethod-get.md
                       - name: Обновление
-                        href: api/b2cauthenticationmethodspolicy-update.md
+                        href: api/phoneauthenticationmethod-update.md
                       - name: Delete
                         href: api/phoneauthenticationmethod-delete.md
                       - name: Добавление
@@ -10004,11 +9989,35 @@ items:
                         href: api/phoneauthenticationmethod-enablesmssignin.md
                       - name: Отключение входа в SMS
                         href: api/phoneauthenticationmethod-disablesmssignin.md
+                  - name: Электронный адрес
+                    href: resources/emailauthenticationmethod.md
+                    items:
+                      - name: Список
+                        href: api/emailauthenticationmethod-list.md
+                      - name: Получение
+                        href: api/emailauthenticationmethod-get.md
+                      - name: Обновление
+                        href: api/emailauthenticationmethod-update.md
+                      - name: Delete
+                        href: api/emailauthenticationmethod-delete.md
+                      - name: Добавление
+                        href: api/emailauthenticationmethod-post.md
+                  - name: Password
+                    href: resources/passwordauthenticationmethod.md
+                    items:
+                      - name: Список
+                        href: api/authentication-list-passwordmethods.md
+                      - name: Получение
+                        href: api/passwordauthenticationmethod-get.md
+                      - name: Сбросить
+                        href: api/passwordauthenticationmethod-resetpassword.md
+                      - name: Получение состояния операции
+                        href: api/authenticationoperation-get.md
               - name: Политика метода проверки подлинности
                 items:
                   - name: Обзор
                     href: resources/authenticationmethodspolicies-overview.md
-                  - name: Ключ безопасности FIDO2
+                  - name: Политика FIDO2
                     href: resources/fido2authenticationmethodconfiguration.md
                     items:
                       - name: Получение
@@ -10017,7 +10026,7 @@ items:
                         href: api/fido2authenticationmethodconfiguration-update.md
                       - name: Delete
                         href: api/fido2authenticationmethodconfiguration-delete.md
-                  - name: Вход в систему без пароля для проверки подлинности (Майкрософт)
+                  - name: Политика входа без пароля для проверки подлинности (Майкрософт) для телефона
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
                     items:
                       - name: Получение
@@ -10026,6 +10035,13 @@ items:
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
                       - name: Delete
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
+              - name: Политика методов проверки подлинности B2C
+                href: resources/b2cauthenticationmethodspolicy.md
+                items:
+                  - name: Получение
+                    href: api/b2cauthenticationmethodspolicy-get.md
+                  - name: Обновление
+                    href: api/b2cauthenticationmethodspolicy-update.md
               - name: Настройка проверки подлинности на основе сертификатов
                 href: resources/certificatebasedauthconfiguration.md
                 items:
@@ -12022,7 +12038,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы

@@ -1,7 +1,7 @@
 name: Справочные материалы
 items:
   - name: Обзор Microsoft Graph
-    href: /graph/overview
+    href: ./overview.md
   - name: Получение маркеров аутентификации
     items:
       - name: Обзор
@@ -75,7 +75,7 @@ items:
         displayname: 'Migration, Azure AD Graph'
         items:
           - name: Обзор
-            href: /graph/migrate-azure-ad-graph-overview?context=graph/api/1.0
+            href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph%252fapi%252f1.0
           - name: Контрольный список для переноса приложений
             href: /graph/migrate-azure-ad-graph-planning-checklist?context=graph/api/1.0
           - name: 1. Проверка различий
@@ -698,7 +698,7 @@ items:
                     href: api/application-addkey.md
                   - name: Удаление ключа
                     href: api/application-removekey.md
-              - name: Extensions
+              - name: Расширения
                 items:
                   - name: Список
                     href: api/application-list-extensionproperty.md
@@ -3533,7 +3533,7 @@ items:
                 href: api/educationuser-get.md
               - name: Удаление пользователя
                 href: api/educationuser-delete.md
-      - name: Extensions
+      - name: Расширения
         items:
           - name: Открытые расширения
             href: resources/opentypeextension.md
@@ -3561,7 +3561,7 @@ items:
                 href: api/schemaextension-update.md
               - name: Удаление расширения схемы
                 href: api/schemaextension-delete.md
-      - name: Files
+      - name: Файлы
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
           - name: Обзор
@@ -3848,7 +3848,7 @@ items:
                     href: api/certificatebasedauthconfiguration-get.md
                   - name: Удаление
                     href: api/certificatebasedauthconfiguration-delete.md
-              - name: Условный доступ
+              - name: условный доступ;
                 items:
                   - name: Политики
                     items:
