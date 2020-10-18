@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b1cf7a0a983956cdf7d110485cd9871fdeecace6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 95d68b3930e4ecad297cb5e50185a4280167e979
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972695"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582249"
 ---
 # <a name="create-user"></a>Создание пользователя
 
@@ -62,7 +62,7 @@ POST /users
 Так как ресурс **user** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `POST` можно добавлять настраиваемые свойства с собственными данными в экземпляр user при его создании.
 
 >[!NOTE]
->Федеративные пользователи, созданные с помощью этого API, по умолчанию должны выполнять вход каждые 12 часов.  Дополнительные сведения об изменении этого параметра см. в разделе [Исключения для сроков действия маркеров](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
+>Федеративные пользователи, созданные с помощью этого API, по умолчанию должны выполнять вход каждые 12 часов.  Дополнительные сведения об изменении этого параметра см. в разделе [Исключения для сроков действия маркеров](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
 
 ## <a name="response"></a>Отклик
 
@@ -267,4 +267,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

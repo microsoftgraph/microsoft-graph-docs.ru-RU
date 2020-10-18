@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Priority
 ms.prod: intune
 doc_type: conceptualPageType
-ms.openlocfilehash: a6c9235d511c3c93db7f92abe0b0a7545393852b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: baad1c809bfd34dd60bab009b7b83c5fcb46dddf
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088554"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581934"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Работа с Intune в Microsoft Graph  
 
@@ -18,7 +18,7 @@ ms.locfileid: "48088554"
 
 API Microsoft Graph для Intune обеспечивает программный доступ к сведениям Intune для клиента. API выполняет операции Intune, аналогичные доступным с помощью **портала Azure**.  
 
-В сценариях управления мобильными устройствами (MDM) API Microsoft Graph для Intune поддерживает автономные развертывания. [Гибридные развертывания](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) Intune не поддерживаются. 
+В сценариях управления мобильными устройствами (MDM) API Microsoft Graph для Intune поддерживает автономные развертывания. [Гибридные развертывания](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) Intune не поддерживаются. 
 
 ## <a name="using-the-microsoft-graph-api-for-intune"></a>Использование API Microsoft Graph для Intune
 
@@ -40,22 +40,16 @@ Intune предоставляет данные интерфейсу API Microsof
 
 ## <a name="accessing-the-microsoft-graph-api-for-intune"></a>Доступ к API Microsoft Graph для Intune
 
-Intune поддерживает как [делегированные разрешения](https://docs.microsoft.com/graph/auth-v2-user), так и [разрешения приложений](https://docs.microsoft.com/graph/auth-v2-service). Делегированные разрешения и разрешения приложений поддерживают операции как чтения, так и записи. Разрешения приложений и делегированные разрешения поддерживает как однотенантные, так и многотенантные приложения. Дополнительные сведения о разрешениях, доступных в Microsoft Graph, см. в [справочнике по разрешениям Microsoft Graph](https://docs.microsoft.com/graph/permissions-reference).
+Intune поддерживает как [делегированные разрешения](/graph/auth-v2-user), так и [разрешения приложений](/graph/auth-v2-service). Делегированные разрешения и разрешения приложений поддерживают операции как чтения, так и записи. Разрешения приложений и делегированные разрешения поддерживает как однотенантные, так и многотенантные приложения. Дополнительные сведения о разрешениях, доступных в Microsoft Graph, см. в [справочнике по разрешениям Microsoft Graph](/graph/permissions-reference).
 
 ## <a name="using-permissions"></a>Использование разрешений
 
-API Microsoft Graph контролирует доступ к ресурсам с помощью разрешений. Разработчикам необходимо указать разрешения, необходимые для доступа к ресурсам Intune. Как правило, разрешения указываются на портале Azure Active Directory. Дополнительные сведения см. в статье [Справочник по разрешениям Microsoft Graph](https://docs.microsoft.com/graph/permissions-reference).
+API Microsoft Graph контролирует доступ к ресурсам с помощью разрешений. Разработчикам необходимо указать разрешения, необходимые для доступа к ресурсам Intune. Как правило, разрешения указываются на портале Azure Active Directory. Дополнительные сведения см. в статье [Справочник по разрешениям Microsoft Graph](/graph/permissions-reference).
 
 ## <a name="whats-new"></a>Что нового
 Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Узнайте, [как использовать Azure AD](https://docs.microsoft.com/intune/intune-graph-apis) для доступа к API Microsoft Graph для Intune.  
+- Узнайте, [как использовать Azure AD](/intune/intune-graph-apis) для доступа к API Microsoft Graph для Intune.  
 - Изучите [примеры PowerShell для Intune](https://github.com/microsoftgraph/powershell-intune-samples), демонстрирующие способ использования API Microsoft Graph для Intune в рабочем контексте.
-
-
-
-
-
-

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: f64cc64ee2d14b4967d36e35513b54c86820750d
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: a89dfe246eef55c53d18171bd022d04640e0dee3
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404949"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582025"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -135,17 +135,12 @@ ms.locfileid: "48404949"
 |licenseProcessingState|String|Указывает состояние назначения лицензии группы для всех участников группы. Значение по умолчанию: **false**. Только для чтения. Возможные значения: `QueuedForProcessing`, `ProcessingInProgress` и `ProcessingComplete`.<br><br>Возвращается только с помощью оператора $select. Только для чтения.|
 |mail|String|SMTP-адрес группы, например "serviceadmins@contoso.onmicrosoft.com". <br><br>Возвращается по умолчанию. Только для чтения. Поддерживает параметр $filter.|
 |mailEnabled|Boolean|Указывает, включена ли для этой группы поддержка почты. <br><br>Возвращается по умолчанию.|
-|mailNickname|String|Почтовый псевдоним для группы (уникальный в организации). Это свойство должно быть указано при создании группы. Такие символы нельзя использовать в mailNickName: `@()\[]";:.<>,SPACE`. <br><br>Возвращается по умолчанию. Поддерживает параметр $filter.|
-|membershipRule|String|Правило, определяющее участников этой группы, если группа является динамической (groupTypes содержит `DynamicMembership`). Дополнительные сведения о синтаксисе правила участия см. в [здесь](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). <br><br>Возвращается по умолчанию. |
+|membershipRule|String|Правило, определяющее участников этой группы, если группа является динамической (groupTypes содержит `DynamicMembership`). Дополнительные сведения о синтаксисе правила участия см. в [здесь](/azure/active-directory/users-groups-roles/groups-dynamic-membership). <br><br>Возвращается по умолчанию. |
 |membershipRuleProcessingState|String|Указывает, включена или приостановлена динамическая обработка участия. Возможные значения: On или Paused. <br><br>Возвращается по умолчанию. |
-|onPremisesDomainName|String|Содержит локальный параметр **domain FQDN**, также называемый **dnsDomainName**, синхронизированный из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect.<br><br>Возвращается по умолчанию. Только для чтения. |
-|onPremisesLastSyncDateTime|DateTimeOffset|Указывает время последней синхронизации группы с локальным каталогом. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 (время всегда в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. <br><br>Возвращается по умолчанию. Только для чтения. Поддерживает параметр $filter.|
-|onPremisesNetBiosName|String|Содержит локальный параметр **netBios name**, синхронизированный из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect.<br><br>Возвращается по умолчанию. Только для чтения. |
-|onPremisesProvisioningErrors|Коллекция [onPremisesProvisioningError](onpremisesprovisioningerror.md)| Ошибки при использовании продукта синхронизации Майкрософт во время подготовки. <br><br>Возвращается по умолчанию.|
 |onPremisesSamAccountName|String|Содержит локальный параметр **SAM account name**, синхронизированный из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect.<br><br>Возвращается по умолчанию. Только для чтения. |
 |onPremisesSecurityIdentifier|String|Содержит локальный идентификатор безопасности (SID) для локальной группы, синхронизированной с облаком. <br><br>Возвращается по умолчанию. Только для чтения. |
 |onPremisesSyncEnabled|Логический|Значение **true** указывает, что эта группа синхронизируется из локального каталога. Значение **false** указывает, что эта группа ранее синхронизировалась из локального каталога, но синхронизация больше не выполняется. Значение **null** указывает, что этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). <br><br>Возвращается по умолчанию. Только для чтения. Поддерживает параметр $filter.|
-|preferredDataLocation|String|Предпочитаемое расположение данных для группы. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Возвращается по умолчанию.|
+|preferredDataLocation|String|Предпочитаемое расположение данных для группы. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Возвращается по умолчанию.|
 |preferredLanguage|String|Предпочитаемый язык для группы Microsoft 365. Он должен быть представлен в формате ISO 639-1, например "ru-RU". <br><br>Возвращается по умолчанию. |
 |proxyAddresses|Коллекция String| Адреса электронной почты для группы, ведущие в один почтовый ящик группы. Пример: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. Для фильтрации выражений по многозначным свойствам требуется оператор **any**. <br><br>Возвращается по умолчанию. Только для чтения. Значение null не допускается. Поддерживает параметр $filter. |
 |renewedDateTime|DateTimeOffset| Метка времени последнего обновления группы. Не может изменяться непосредственно. Обновляется только при выполнении [действия обновления](../api/group-renew.md). Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. <br><br>Возвращается по умолчанию. Только для чтения.|
@@ -179,7 +174,7 @@ ms.locfileid: "48404949"
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Пользователь или приложение, создавшие группу. ПРИМЕЧАНИЕ. Это значение не задается, если пользователь является администратором. Только для чтения.|
 |drive|[drive](drive.md)|Используемый по умолчанию диск группы. Только для чтения.|
 |drives|Коллекция [drive](drive.md)|Диск группы. Только для чтения.|
-|events|Коллекция [event](event.md)|События в календаре группы.|
+|Мероприятия|Коллекция [event](event.md)|События в календаре группы.|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для группы. Только для чтения. Допускается значение null.|
 |groupLifecyclePolicies|Коллекция [groupLifecyclePolicy](grouplifecyclepolicy.md)|Коллекция политик жизненного цикла для этой группы. Только для чтения. Допускается значение null.|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Группы, в которых состоит эта группа. Методы HTTP: GET (поддерживается для всех групп). Только для чтения. Допускается значение null.|
@@ -397,4 +392,3 @@ ms.locfileid: "48404949"
   "section": "documentation",
   "tocPath": ""
 }-->
-

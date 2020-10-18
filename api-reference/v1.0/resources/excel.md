@@ -5,12 +5,12 @@ localization_priority: Priority
 author: grangery
 ms.prod: excel
 doc_type: conceptualPageType
-ms.openlocfilehash: e9e360ba6f91dfaaaca589f9d65e75f56d4b6161
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6cf83c0e18f5d7f8a881cf36fcb4b4a444599158
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018517"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581535"
 ---
 # <a name="working-with-excel-in-microsoft-graph"></a>Работа с Excel в Microsoft Graph
 
@@ -29,9 +29,9 @@ REST API Excel поддерживает только книги в формат�
 
 ## <a name="authorization-and-scopes"></a>Авторизация и области
 
-Для проверки подлинности API Excel вы можете использовать [конечную точку Azure AD версии 2](https://developer.microsoft.com/graph/docs/authorization/converged_auth). Для всех API требуется заголовок HTTP `Authorization: Bearer {access-token}`.   
+Для проверки подлинности API Excel вы можете использовать [конечную точку Azure AD версии 2](../index.md). Для всех API требуется заголовок HTTP `Authorization: Bearer {access-token}`.   
   
-Чтобы использовать ресурс Excel, требуется одно из следующих [разрешений](https://developer.microsoft.com/graph/docs/authorization/permission_scopes):
+Чтобы использовать ресурс Excel, требуется одно из следующих [разрешений](/graph/permissions-reference):
 
 * Files.Read (для чтения)
 * Files.ReadWrite (для чтения и записи)
@@ -1331,4 +1331,3 @@ Content-Type: application/json
 
 ## <a name="whats-new"></a>Что нового
 Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
-

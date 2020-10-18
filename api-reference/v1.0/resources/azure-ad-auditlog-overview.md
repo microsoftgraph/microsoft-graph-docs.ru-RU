@@ -5,12 +5,12 @@ localization_priority: Priority
 author: khotz
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: cfb622200b5437390c6617c8bd599409fa90925f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ada166c457a5c6eb29aa7ff5dffe45491816c553
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091875"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581927"
 ---
 # <a name="activity-reports-api-overview"></a>Обзор API отчетов об активности
 
@@ -62,8 +62,8 @@ Operation | URL-адрес
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Зарегистрируйте приложение](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal), чтобы соответствовать предварительным требованиям отчетов. 
-- Ознакомьтесь с примерами журналов [аудита](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples) и [входа](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
+- [Зарегистрируйте приложение](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal), чтобы соответствовать предварительным требованиям отчетов. 
+- Ознакомьтесь с примерами журналов [аудита](/azure/active-directory/active-directory-reporting-api-audit-samples) и [входа](/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
 - Изучите действия и ресурс [directoryAudit](directoryaudit.md).
 - Изучите действия и ресурс [signIn](signin.md). 
 <!--
@@ -74,4 +74,3 @@ Operation | URL-адрес
   ]
 }
 -->
-

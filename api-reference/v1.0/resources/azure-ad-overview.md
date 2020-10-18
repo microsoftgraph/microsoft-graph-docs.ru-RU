@@ -5,16 +5,16 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: ''
 doc_type: conceptualPageType
-ms.openlocfilehash: 0c90ccd670c53980da7345bfaa3c5aea1e82b22c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7968e4f626ba73d68cb6abbd1d9339957c383d88
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48012749"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581465"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Работа с ресурсами Azure Active Directory в Microsoft Graph
 
-Microsoft Graph предоставляет доступ к ресурсам [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/active-directory-whatis) для управления ролями администратора (каталога), приглашения внешних пользователей в организацию, и, если вы являетесь [поставщиком облачных решений](https://partner.microsoft.com/cloud-solution-provider), управления данными клиентов.  Microsoft Graph также предоставляет методы, которые могут использоваться приложениями, например для поиска информации о транзитивных группах и ролях пользователей.
+Microsoft Graph предоставляет доступ к ресурсам [Azure Active Directory (Azure AD)](/azure/active-directory/active-directory-whatis) для управления ролями администратора (каталога), приглашения внешних пользователей в организацию, и, если вы являетесь [поставщиком облачных решений](https://partner.microsoft.com/cloud-solution-provider), управления данными клиентов.  Microsoft Graph также предоставляет методы, которые могут использоваться приложениями, например для поиска информации о транзитивных группах и ролях пользователей.
 
 > **Примечание**. Некоторые ресурсы Azure AD описаны в других разделах справочника по API. Дополнительную информацию см. в статьях [Пользователи](users.md) и [Группы](group.md).
 
@@ -23,7 +23,7 @@ Microsoft Graph предоставляет доступ к ресурсам [Azu
 
 Для вызова API Microsoft Graph для ресурсов Azure AD приложению необходимы соответствующие разрешения. Для многих API, предоставляемых для ресурсов Azure AD, требуется одно из [разрешений _Directory_](/graph/permissions-reference#directory-permissions). Разрешения Directory дают широкие права и всегда предоставляются администратором.
 
-Чтобы приложение могло вызывать API AD Azure от имени пользователя (делегированные разрешения), этому пользователю должна быть назначена соответствующая [роль администратора](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+Чтобы приложение могло вызывать API AD Azure от имени пользователя (делегированные разрешения), этому пользователю должна быть назначена соответствующая [роль администратора](/azure/active-directory/active-directory-assign-admin-roles).
 
 Дополнительные сведения о разрешениях, в том числе делегированных и для приложений, см. в [справочнике по разрешениям](/graph/permissions-reference).
 
@@ -36,17 +36,17 @@ Microsoft Graph предоставляет доступ к ресурсам [Azu
 | **Объект и методы каталога** | | |
 | `directoryObject` — это базовый класс, от которого наследуются многие ресурсы каталога, такие как пользователи и группы. Microsoft Graph предоставляет несколько методов, которые можно использовать для поиска сведений о пользователях, группах и других объектах каталога. Например, вы можете проверить транзитивное членство в списке групп, вернуть все группы и роли, транзитивным членом которых является объект каталога, или получить все ресурсы указанного типа (такие как пользователь или группа) из списка идентификаторов ролевых ресурсов. | [directoryObject](../resources/directoryobject.md) | Недоступно |
 | **Управление ролями каталога (администратора)** | | |
-| Активируйте роли каталога в клиенте Azure AD и управляйте членством пользователей в ролях каталога. Роли каталога также известны как роли администратора. | [directoryRole](../resources/directoryrole.md) <br/>[directoryRoleTemplate](../resources/directoryroletemplate.md) | [Назначение ролей администратора в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) |
-| Применение предопределенных параметров группы к клиенту или экземплярам отдельных ресурсов. Параметры группы контролируют такое поведение, как обработка списков заблокированных слов для отображаемых имен группы, разрешение или запрещение пользователям-гостям быть владельцами групп, а также многие другие случаи. | [groupSetting](../resources/groupsetting.md) <br/>[groupSettingTemplate](../resources/groupsettingtemplate.md)| [Командлеты Azure Active Directory для настройки параметров группы](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)|
+| Активируйте роли каталога в клиенте Azure AD и управляйте членством пользователей в ролях каталога. Роли каталога также известны как роли администратора. | [directoryRole](../resources/directoryrole.md) <br/>[directoryRoleTemplate](../resources/directoryroletemplate.md) | [Назначение ролей администратора в Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles) |
+| Применение предопределенных параметров группы к клиенту или экземплярам отдельных ресурсов. Параметры группы контролируют такое поведение, как обработка списков заблокированных слов для отображаемых имен группы, разрешение или запрещение пользователям-гостям быть владельцами групп, а также многие другие случаи. | [groupSetting](../resources/groupsetting.md) <br/>[groupSettingTemplate](../resources/groupsettingtemplate.md)| [Командлеты Azure Active Directory для настройки параметров группы](/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)|
 | **Управление устройствами** | | |
-| Управляйте устройствами, зарегистрированными в организации. Устройства (ноутбуки, настольные компьютеры, планшеты и мобильные телефоны) регистрируются на пользователей. Устройства обычно создаются в облаке с помощью службы регистрации устройств или Microsoft Intune. Они используются политиками условного доступа для многофакторной аутентификации. | [device](../resources/device.md) | [Знакомство с регистрацией устройств в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview).<br/><br/>[Что такое InTune?](https://docs.microsoft.com/intune-classic/understand-explore/introduction-to-microsoft-intune)<br/><br/>[Регистрация устройств для управления в Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) |
+| Управляйте устройствами, зарегистрированными в организации. Устройства (ноутбуки, настольные компьютеры, планшеты и мобильные телефоны) регистрируются на пользователей. Устройства обычно создаются в облаке с помощью службы регистрации устройств или Microsoft Intune. Они используются политиками условного доступа для многофакторной аутентификации. | [device](../resources/device.md) | [Знакомство с регистрацией устройств в Azure Active Directory](/azure/active-directory/active-directory-device-registration-overview).<br/><br/>[Что такое InTune?](/intune-classic/understand-explore/introduction-to-microsoft-intune)<br/><br/>[Регистрация устройств для управления в Intune](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) |
 | **Управление клиентами партнеров** | | |
 | Получайте сведения об отношениях партнерства с клиентами.<br/><br/>**Примечание.** Это относится только к клиентам партнеров. Клиенты партнеров — это клиенты Azure AD, которые принадлежат партнерам корпорации Майкрософт, являющимся [поставщиками облачных решений Майкрософт](https://partnercenter.microsoft.com/partner/programs), участниками программы синдикации Office 365 или участниками партнерской программы Microsoft Advisor. | [contract](../resources/contract.md) | [Вызов Microsoft Graph из приложения Cloud Solution Provider](/graph/auth-cloudsolutionprovider) |
-| Управление доменами, связанными с клиентом. Действия с доменами позволяют регистраторам автоматизировать установление связей доменов для таких служб, как Microsoft 365. | [domain](../resources/domain.md); | [Добавление имени личного домена в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-domains-add-azure-portal) |
+| Управление доменами, связанными с клиентом. Действия с доменами позволяют регистраторам автоматизировать установление связей доменов для таких служб, как Microsoft 365. | [domain](../resources/domain.md); | [Добавление имени личного домена в Azure Active Directory](/azure/active-directory/active-directory-domains-add-azure-portal) |
 | **Управление клиентами** | | |
 | Получайте информацию об организации, например адрес, контакты для уведомлений и связи по техническим вопросам, планы обслуживания, на которые она подписана, и связанные с ней домены. | [organization](../resources/organization.md) | Недоступно |
 | Получайте информацию о службах, на которые подписана компания. | [subscribedSku](../resources/subscribedsku.md) | Недоступно |
-| Приглашайте внешних пользователей в организацию. | [invitation](../resources/invitation.md) | [Что такое служба совместной работы Azure AD B2B?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) |
+| Приглашайте внешних пользователей в организацию. | [invitation](../resources/invitation.md) | [Что такое служба совместной работы Azure AD B2B?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) |
 
 ## <a name="whats-new"></a>Новые возможности
 Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
@@ -58,6 +58,3 @@ Microsoft Graph предоставляет доступ к ресурсам [Azu
 - Опробуйте API в [песочнице Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
-
-
-

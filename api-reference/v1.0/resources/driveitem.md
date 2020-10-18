@@ -6,12 +6,12 @@ description: Элемент — это основная модель данны�
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 86416189a6e69c0b485e314159976931fffcc81e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 22b3d62ea83aa9e1b91f6be1f181bbe575341138
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032756"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48581990"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
@@ -243,7 +243,7 @@ URL-адрес будет доступен в течение короткого 
 [thumbnailSet]: thumbnailset.md
 [video]: video.md
 [workbook]: workbook.md
-[user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
+[user]: /graph/api/resources/users
 [publicationFacet]: publicationfacet.md
 
 [DriveItemVersion]: driveitemversion.md
@@ -259,4 +259,3 @@ URL-адрес будет доступен в течение короткого 
   "tocPath": "Items",
   "tocBookmarks": { "Resources/Item": "#" }
 } -->
-
