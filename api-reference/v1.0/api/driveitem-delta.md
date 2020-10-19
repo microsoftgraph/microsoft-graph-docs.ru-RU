@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: С помощью этого метода приложение может отслеживать изменения drive и соответствующих дочерних элементов.
 doc_type: apiPageType
-ms.openlocfilehash: ff8a04a9f7926bd886a0bd8b5f4d32f8e72053d5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b7ea6dda4b3b6957e82da97ae0296258cee2fb33
+ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009844"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48582347"
 ---
 # <a name="track-changes-for-a-drive"></a>Отслеживание изменений для Drive
 
@@ -295,7 +295,7 @@ Content-type: application/json
 
 Во многих сценариях сканирования интерес представляют именно изменения разрешений. Чтобы получить сведения о том, какие изменения являются следствием изменений разрешений, можно использовать в запросе заголовок `Prefer: deltashowsharingchanges`. В этом случае для всех элементов, включенных в ответ на запрос в связи с изменениями разрешений, будет отображаться примечание OData `@microsoft.graph.sharedChanged":"True"`. Эта функция применима к SharePoint и OneDrive для бизнеса, но не к личным учетным записям OneDrive.
 
-> **Примечание.** При включении в запрос заголовка `Prefer: deltashowsharingchanges` требуется использовать `Prefer: deltashowremovedasdeleted` и `Prefer: deltatraversepermissiongaps`. Эти значения заголовка можно объединить в один общий заголовок: `Prefer: deltashowremovedasdeleted; deltatraversepermissiongaps; deltashowsharingchanges;`.
+> **Примечание.** При включении в запрос заголовка `Prefer: deltashowsharingchanges` требуется использовать `Prefer: deltashowremovedasdeleted` и `Prefer: deltatraversepermissiongaps`. Эти значения заголовка можно объединить в один общий заголовок: `Prefer: deltashowremovedasdeleted, deltatraversepermissiongaps, deltashowsharingchanges`.
 
 ## <a name="error-responses"></a>Ответы с ошибками
 
