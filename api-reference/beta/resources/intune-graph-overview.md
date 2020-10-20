@@ -1,25 +1,27 @@
 ---
 title: Использование API Graph для Intune — API Microsoft Graph
-description: Перечисление API Microsoft Graph для коечных точек Intune (REST), которые можно использовать для управления организацией клиента, его устройствами, приложениями, доступом и ресурсами.
+description: Перечисление API Microsoft Graph для конечных точек Intune (REST), которые можно использовать для управления организацией клиента, его устройствами, приложениями, доступом и ресурсами.
 author: rolyon
 localization_priority: Priority
 ms.prod: intune
-ms.openlocfilehash: b88dc6191f3082df800b3f93e2c4fd22531258e2
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d18e86708e43c4945037ad8494eb613c0695c21a
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404699"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601694"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Работа с Intune в Microsoft Graph  
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 API Microsoft Graph для Intune обеспечивает программный доступ к сведениям Intune для клиента. API выполняет операции Intune, аналогичные доступным с помощью **портала Azure**.  
 
 В сценариях управления мобильными устройствами (MDM) API Microsoft Graph для Intune поддерживает автономные развертывания. [Гибридные развертывания](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management) Intune не поддерживаются. 
+
+Все бета-версии API Microsoft Graph для Intune тестируются и проверяются группой Intune до их развертывания. Последние изменения API см. в [журнале изменений](/graph/changelog). 
 
 ## <a name="using-the-microsoft-graph-api-for-intune"></a>Использование API Microsoft Graph для Intune
 
