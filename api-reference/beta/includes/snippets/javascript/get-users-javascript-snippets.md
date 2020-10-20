@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
 ms.openlocfilehash: cd840b268f2c1c61fa49221a99ce3b49642e728d
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "35705559"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48609545"
 ---
 ```javascript
 
