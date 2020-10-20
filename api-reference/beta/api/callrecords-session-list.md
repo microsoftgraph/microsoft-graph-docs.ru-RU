@@ -2,15 +2,15 @@
 title: Список сеансов Каллрекорд
 description: Получение списка объектов Session для объекта Каллрекорд.
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 51ef8e1e9cd56d5f969615cb9364ce26f8bd5d8e
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: e3b23a131bf049e10d514a428b473bfc1df8e60a
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48329971"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601099"
 ---
 # <a name="list-callrecord-sessions"></a>Список сеансов Каллрекорд
 
@@ -48,11 +48,11 @@ GET /communications/callRecords/{id}/sessions
 |:----------|:----------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенные объекты [Session](../resources/callrecords-session.md) в теле отклика.
 
@@ -73,7 +73,7 @@ GET /communications/callRecords/{id}/sessions
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 
@@ -167,7 +167,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}/sessions?$expand=segments
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 

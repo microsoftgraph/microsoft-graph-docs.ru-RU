@@ -2,15 +2,15 @@
 title: Тип ресурса Клиентусеражент
 description: Тип Клиентусеражент
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: d2024e4263da379ab42c2878bc18e0a2d3ec27ac
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c22a957262c471fad480dd0313595c05c05ec83d
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48069449"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601773"
 ---
 # <a name="clientuseragent-resource-type"></a>Тип ресурса Клиентусеражент
 
@@ -23,7 +23,7 @@ ms.locfileid: "48069449"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |applicationVersion|String|Определяет версию программного обеспечения приложения, используемого конечной точкой.|
-|headerValue|Строка|Значение заголовка User — Agent, указанное конечной точкой.|
+|headerValue|String|Значение заголовка User — Agent, указанное конечной точкой.|
 |платформа|Microsoft. Graph. Каллрекордс. Клиентплатформ|Определяет платформу, используемую этой конечной точкой. Возможные значения: `unknown`, `windows`, `macOS`, `iOS`, `android`, `web`, `ipPhone`, `roomSystem`, `surfaceHub`, `holoLens`, `unknownFutureValue`.|
 |продуктфамили|Microsoft. Graph. Каллрекордс. Продуктфамили|Определяет семейство программного обеспечения приложений, используемое этой конечной точкой. Возможные значения: `unknown`, `teams`, `skypeForBusiness`, `lync`, `unknownFutureValue`.|
 

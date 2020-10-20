@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 77b3a483c8993b421348bb052c66d66a1558beb0
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: f97da36c0a3a4c1d20e586293ae3ef5efcd0cdc4
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400713"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601078"
 ---
 # <a name="riskyuser-resource-type"></a>Тип ресурса Рискюсер
 
@@ -38,15 +38,15 @@ ms.locfileid: "48400713"
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|`id`|`string`|Уникальный идентификатор пользователя под угрозой|
-|`isDeleted`|`bool`|Указывает, удален ли пользователь. Возможные значения: `true` , `false`|
-|`isProcessing`|`bool`|Указывает, вехсер ли опасное состояние пользователя при обработке внутренней|
+|`id`|`string`|Уникальный идентификатор пользователя под угрозой.|
+|`isDeleted`|`bool`|Указывает, удален ли пользователь. Возможные значения: `true`, `false`.|
+|`isProcessing`|`bool`|Указывает, обрабатывается ли небезопасным состояние пользователя в серверной части.|
 |`riskLastUpdatedDateTime`|`datetime`|Дата и время последнего обновления рискованного пользователя|
 |`riskLevel`|`riskLevel`| Возможные значения: "минимум", "средний", "высокий", "скрытый", "нет", unknownFutureValue.  |
 |`riskState`|`riskState`| Возможные значения: None, Конфирмедсафе, remediateо, Атриск, unknownFutureValue.  |
 |`riskDetail`|`riskDetail`| Возможные значения: None, Админженератедтемпорарипассворд, Усерперформедсекуредпассвордчанже, Усерперформедсекуредпассвордресет, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, Hidden, adminConfirmedUserCompromised, unknownFutureValue.  |
-|`userDisplayName`|`string`|Опасное отображаемое имя пользователя|
-|`userPrincipalName`|`string`|Рискованное имя участника пользователя|
+|`userDisplayName`|`string`|Опасное отображаемое имя пользователя.|
+|`userPrincipalName`|`string`|Опасное имя участника пользователя.|
 
 ## <a name="relationships"></a>Связи
 

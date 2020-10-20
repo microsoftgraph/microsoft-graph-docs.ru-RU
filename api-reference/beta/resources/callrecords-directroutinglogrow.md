@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Директраутинглогров
 description: Представляет строку данных в журнале вызовов прямой маршрутизации.
-author: stephenjust
+author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 2b3636882236d24e3da1435e89904de1f2845756
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c5baf5768c7cee9e0525373bb4f7139f6a145acb
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966774"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601204"
 ---
 # <a name="directroutinglogrow-resource-type"></a>Тип ресурса Директраутинглогров
 

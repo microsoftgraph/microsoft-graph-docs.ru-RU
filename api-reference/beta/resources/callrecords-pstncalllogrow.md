@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Пстнкалллогров
 description: Представляет строку данных в журнале звонков телефонной сети общего пользования (PSTN).
-author: stephenjust
+author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: aa25211831db42f70fef18375e718554029df4de
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bc83f3304eeb918d665b2651fda9809fd8a05880
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071376"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601673"
 ---
 # <a name="pstncalllogrow-resource-type"></a>Тип ресурса Пстнкалллогров
 
@@ -46,7 +46,7 @@ ms.locfileid: "48071376"
 |лиценсекапабилити|String|Лицензия, используемая для вызова.|
 |инвенторитипе|String|Тип номера телефона пользователя, например услуга бесплатных номеров.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 

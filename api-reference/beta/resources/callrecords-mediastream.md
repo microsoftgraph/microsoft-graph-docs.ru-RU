@@ -2,15 +2,15 @@
 title: Тип ресурса Медиастреам
 description: Тип Медиастреам
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0f0181a94743cadf770355d6be349e0d482a387f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 748ed1f58571ac80f29c592ccd34612cf5e6617f
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071418"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601165"
 ---
 # <a name="mediastream-resource-type"></a>Тип ресурса Медиастреам
 

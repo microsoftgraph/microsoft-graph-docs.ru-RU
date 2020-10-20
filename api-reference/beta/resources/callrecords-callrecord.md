@@ -2,15 +2,15 @@
 title: Тип ресурса Каллрекорд
 description: Представляет один одноранговый вызов или групповой вызов между несколькими участниками, которые иногда называют собранием по сети.
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: a119b95daf651ca5a91c269210a81a9a9a3cc1f0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9ee1f65b47965ad28fae11c98865d7101273276b
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071585"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601519"
 ---
 # <a name="callrecord-resource-type"></a>Тип ресурса Каллрекорд
 
@@ -43,7 +43,7 @@ ms.locfileid: "48071585"
 |type|Microsoft. Graph. Каллрекордс. callType|Указывает тип вызова. Возможные значения: `unknown`, `groupCall`, `peerToPeer`, `unknownFutureValue`.|
 |version|Int64|Монотонно увеличивающаяся версия записи вызова. Более высокие записи вызовов с одинаковым ИДЕНТИФИКАТОРом содержат дополнительные данные по сравнению с более низкой версией.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|

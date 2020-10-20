@@ -2,15 +2,15 @@
 title: Тип ресурса Session
 description: Тип сеанса
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5c31acb452b8d30763e8ba0500354c9b6d6bbbfc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 91683b4bd9568d14a7049a74d997564b570e4f26
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046895"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600973"
 ---
 # <a name="session-resource-type"></a>Тип ресурса Session
 
@@ -18,7 +18,7 @@ ms.locfileid: "48046895"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет пользовательское взаимодействие с пользователем или собрание пользователя в случае вызова конференции.
+Представляет User-User связь или User-Meeting связь в случае вызова конференции.
 
 ## <a name="methods"></a>Методы
 
@@ -31,7 +31,7 @@ ms.locfileid: "48046895"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|string|Уникальный идентификатор сеанса. Только для чтения.|
+|id|строка|Уникальный идентификатор сеанса. Только для чтения.|
 |объекта|[Microsoft. Graph. Каллрекордс. Endpoint](callrecords-endpoint.md)|Конечная точка, которая инициировала сеанс.|
 |вызываемого абонента|[Microsoft. Graph. Каллрекордс. Endpoint](callrecords-endpoint.md)|Конечная точка, которая ответила на сеанс.|
 |failureInfo|[Microsoft. Graph. Каллрекордс. Фаилуреинфо](callrecords-failureinfo.md)|Сведения о сбое, связанные с сеансом в случае сбоя сеанса.|

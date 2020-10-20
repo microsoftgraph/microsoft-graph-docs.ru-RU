@@ -6,11 +6,11 @@ author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
 ms.openlocfilehash: 5ad3720587523e6937b4c3713a1c5a8c06d1e6e5
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330422"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601498"
 ---
 # <a name="programresource-resource-type"></a>Тип ресурса Програмресаурце
 
@@ -26,7 +26,7 @@ ms.locfileid: "48330422"
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| type | Строка | Тип ресурса, указывающий, является ли он группой или приложением. |
+| type | String | Тип ресурса, указывающий, является ли он группой или приложением. |
 
 ## <a name="json-representation"></a>Представление JSON
 

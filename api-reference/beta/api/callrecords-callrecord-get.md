@@ -2,15 +2,15 @@
 title: Получение callRecord
 description: Получение свойств и связей объекта каллрекорд.
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: c192d0c6af90966a1b18363b32923c9cdf1ed74b
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 7660af536659ad6c2baf1e2ad12938ee10a46c9d
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330031"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601120"
 ---
 # <a name="get-callrecord"></a>Получение callRecord
 
@@ -53,11 +53,11 @@ GET /communications/callRecords/{id}
 |:----------|:----------|
 | Авторизация | Bearer {token} |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [Microsoft. Graph. Каллрекордс. каллрекорд](../resources/callrecords-callrecord.md) в теле отклика.
 
@@ -78,7 +78,7 @@ GET /communications/callRecords/{id}
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 
@@ -146,9 +146,9 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=sessions($expand=segments)
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Если список сеансов усекается, `sessions@odata.nextLink` будет предоставлено значение для получения следующей страницы сеансов.
+Ниже приведен пример отклика. Если список сеансов усекается, `sessions@odata.nextLink` будет предоставлено значение для получения следующей страницы сеансов.
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

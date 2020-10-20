@@ -2,15 +2,15 @@
 title: Тип ресурса Фаилуреинфо
 description: Тип Фаилуреинфо
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 5edd2a501b3e1a5633f0bd01ac36815201eb927d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e67e0df2c3f98ea2c9c1b49d32cb6295559516dd
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064376"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601193"
 ---
 # <a name="failureinfo-resource-type"></a>Тип ресурса Фаилуреинфо
 
@@ -34,7 +34,7 @@ ms.locfileid: "48064376"
 |reason|String|Классификация причин сбоя вызова или части вызова.|
 |разместить|Microsoft. Graph. Каллрекордс. Фаилурестаже|Рабочая область при возникновении ошибки. Возможные значения: `unknown`, `callSetup`, `midcall`, `unknownFutureValue`.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

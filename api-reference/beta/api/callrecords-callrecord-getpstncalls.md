@@ -1,16 +1,16 @@
 ---
 title: 'Каллрекорд: Жетпстнкаллс'
 description: Получение журнала звонков PSTN.
-author: stephenjust
+author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 30cf19d780c36decbc837bb6a56e755e1fde9c0c
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 598c3c4fe8abd1b1dcc77cea1d2f513b439771a3
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313270"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601106"
 ---
 # <a name="callrecord-getpstncalls"></a>Каллрекорд: Жетпстнкаллс
 
@@ -28,7 +28,7 @@ ms.locfileid: "48313270"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | CallRecords.Read.All |
+| Приложение                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

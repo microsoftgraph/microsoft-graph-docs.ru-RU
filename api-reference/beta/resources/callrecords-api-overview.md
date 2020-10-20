@@ -1,16 +1,16 @@
 ---
 title: Работа с API записей звонков в Microsoft Graph
 description: API записей звонков Microsoft Graph позволяет извлекать данные об использовании и диагностике для звонков и собраний по сети в вашей организации.
-author: stephenjust
+author: williamlooney
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: c6c80200c2d4f7f4cdd51e99c04066025364751a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b30440157d325452131cb62ffd0c88a933b4bb78
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071593"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601526"
 ---
 # <a name="working-with-the-call-records-api-in-microsoft-graph"></a>Работа с API записей звонков в Microsoft Graph
 

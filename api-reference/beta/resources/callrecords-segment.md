@@ -2,15 +2,15 @@
 title: Тип ресурса "сегмент"
 description: Тип сегмента
 localization_priority: Normal
-author: stephenjust
+author: williamlooney
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 0d1047c0a83954acb393e5f4fd2879c5ab6c3ae5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 84f18568d1890b331d1bedd6d9e7114518fad3cf
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046932"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601666"
 ---
 # <a name="segment-resource-type"></a>Тип ресурса "сегмент"
 
@@ -18,7 +18,7 @@ ms.locfileid: "48046932"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет часть взаимодействия пользователя с пользователем или собрание по телефону в случае Конференции. Типичный вызов VOIP будет иметь по одному сегменту на сеанс. В определенных сценариях, таких как звонки по протоколу PSTN, для каждого сеанса будет использоваться несколько сегментов из-за дополнительного обмена данными между серверами, необходимыми для подключения вызова.
+Представляет часть User-User взаимодействия или User-Meeting связи в случае вызова конференции. Типичный вызов VOIP будет иметь по одному сегменту на сеанс. В определенных сценариях, таких как звонки по протоколу PSTN, для каждого сеанса будет использоваться несколько сегментов из-за дополнительного обмена данными между серверами, необходимыми для подключения вызова.
 
 ## <a name="methods"></a>Методы
 
@@ -28,7 +28,7 @@ ms.locfileid: "48046932"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка|Уникальный идентификатор сегмента. Только для чтения.|
+|id|String|Уникальный идентификатор сегмента. Только для чтения.|
 |объекта|[Microsoft. Graph. Каллрекордс. Endpoint](callrecords-endpoint.md)|Конечная точка, которая инициировала этот сегмент.|
 |вызываемого абонента|[Microsoft. Graph. Каллрекордс. Endpoint](callrecords-endpoint.md)|Конечная точка, которая ответила на этот сегмент.|
 |failureInfo|[Microsoft. Graph. Каллрекордс. Фаилуреинфо](callrecords-failureinfo.md)|Сведения об ошибке, связанные с сегментом, если произошел сбой.|

@@ -1,16 +1,16 @@
 ---
 title: 'Каллрекорд: Жетдиректраутингкаллс'
 description: Получение журнала вызовов прямой маршрутизации.
-author: stephenjust
+author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 4fa60bf34d55382ee9a7a04e5b506e92b12a4d75
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: a99b776eda23bd1ebaef63bc3f190cb66bd794a7
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313284"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601113"
 ---
 # <a name="callrecord-getdirectroutingcalls"></a>Каллрекорд: Жетдиректраутингкаллс
 
@@ -28,7 +28,7 @@ ms.locfileid: "48313284"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | CallRecords.Read.All |
+| Приложение                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -57,7 +57,7 @@ GET /communications/callRecords/getDirectRoutingCalls
 |фромдатетиме|DateTimeOffset|Начало диапазона времени для запроса. UTC, включительно.<br/>Диапазон времени основан на времени начала вызова.|
 |тодатетиме|DateTimeOffset|Конец диапазона времени для запроса. UTC, включительно.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения эта функция возвращает `200 OK` код отклика и коллекцию записей [директраутинглогров](../resources/callrecords-directroutinglogrow.md) в тексте отклика.
   

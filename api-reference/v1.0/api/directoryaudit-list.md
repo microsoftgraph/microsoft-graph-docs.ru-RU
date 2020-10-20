@@ -5,12 +5,12 @@ localization_priority: Normal
 author: SarahBar
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5659feb6b08a90b7bac44ae2677925ec733c2328
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9a06d02929ca194d29820cedbe4b40aea5590035
+ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971337"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48601610"
 ---
 # <a name="list-directoryaudits"></a>Перечисление directoryAudits
 
@@ -42,7 +42,7 @@ GET /auditLogs/directoryaudits
 
 | Параметр                                                       | Описание                                                                   | Пример                                                                     |
 | :--------------------------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
-| [\$Фишинг](/graph/query_parameters#filter-parameter)       | Фильтрует результаты (строки).                                                       | `/auditLogs/directoryAudits?&$filter=createdDateTime le 2018-01-24`         |
+| [\$Фишинг](/graph/query_parameters#filter-parameter)       | Фильтрует результаты (строки).                                                       | `/auditLogs/directoryAudits?&$filter=activityDateTime le 2018-01-24`         |
 | [\$Вверх](/graph/query_parameters#top-parameter)             | Задает размер страницы результатов.                                                | `/auditLogs/directoryAudits?$top=1`                                         |
 | [\$skiptoken](/graph/query_parameters#skiptoken-parameter) | Возвращает следующую страницу результатов из результирующих наборов, занимающих несколько страниц. | `/auditLogs/directoryAudits?$skiptoken=01fa0e77c60c2d3d63226c8e3294c860__1` |
 
@@ -72,7 +72,7 @@ GET /auditLogs/directoryaudits
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [директоряудит](../resources/directoryaudit.md) в тексте отклика.
 
