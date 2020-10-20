@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: bdcb54069667118af908b12f588d7344d38c2967
-ms.sourcegitcommit: 3f7bac952864cfa67f749d902d9897f08534c0e3
+ms.openlocfilehash: 14344b195d99e34325f60bfc8eff86030d99ddfc
+ms.sourcegitcommit: c75356177c73ec480cec868a4404a63dca5b078d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35731810"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "48601644"
 ---
 ```javascript
 
@@ -16,7 +16,6 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/security/secureScoreControlProfiles/{id}')
-    .version('beta')
     .get();
 
 ```
