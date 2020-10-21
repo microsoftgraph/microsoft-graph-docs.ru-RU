@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: conceptualPageType
-ms.openlocfilehash: 0f72de87ca36294fe9b359bb1d62638a2b56b2d8
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 7c72b6bfce1fe1d4c6133785f647bffa363eb860
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48401451"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635168"
 ---
 # <a name="working-with-groups-in-microsoft-graph"></a>Работа с группами в Microsoft Graph
 
@@ -18,9 +18,9 @@ ms.locfileid: "48401451"
 
 > **Примечание.** Создавать группы можно только с помощью рабочих или учебных учетных записей. Личные учетные записи Майкрософт не поддерживают группы.
 
-| Тип              | Вариант использования | groupType | Поддержка почты | Поддержка защиты | Возможность создания и управления с помощью API |
+| Тип              | Вариант использования | groupType | mailEnabled | securityEnabled | Создано и управляется с помощью API |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
-| [Группы Microsoft 365](#microsoft-365-groups) | Обеспечение совместной работы пользователей с общими ресурсами Майкрософт в Интернете. | `["Unified"]` | `true` | `false` | Да |
+| [Группы Microsoft 365](#microsoft-365-groups) | Обеспечение совместной работы пользователей с общими ресурсами Майкрософт в Интернете. | `["Unified"]` | `true` | `true` или `false` | Да |
 | [Группы безопасности](#security-groups-and-mail-enabled-security-groups) | Управление доступом пользователей к ресурсам в приложении. | `[]` | `false` | `true` | Да |
 | [Группы безопасности, поддерживающие почту](#security-groups-and-mail-enabled-security-groups) | Управление доступом пользователей к ресурсам в приложении с общим почтовым ящиком группы. | `[]` | `true` | `true` | Нет |
 | Группы рассылки | Рассылка почты участникам группы. Рекомендуем использовать группы Microsoft 365, так как они предоставляют более широкий выбор ресурсов. | `[]` | `true` | `false` | Нет |

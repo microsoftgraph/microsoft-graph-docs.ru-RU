@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 8a005671f7db481fb406e1a56044689db516648e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3ae917f9b92ee743173842b3ed9ccf2a2bea3edd
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991021"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634870"
 ---
 # <a name="update-governancerolesetting"></a>Обновление Говернанцеролесеттинг
 
@@ -21,15 +21,38 @@ ms.locfileid: "47991021"
 Обновление свойств объекта [говернанцеролесеттинг](../resources/governancerolesetting.md).
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
 
 >**Примечание:** Этот API также требует, чтобы у автора запроса было по крайней мере одно `Active` назначение роли администратора ( `owner` или `user access administrator` ) для ресурса.
 
 |Тип разрешения      | Разрешения              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
+### <a name="azure-resources"></a>Ресурсы Azure
+
+| Тип разрешения | Разрешения |
+|:--------------- |:----------- |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | Не поддерживается. |
+
+### <a name="azure-ad"></a>Azure AD
+
+| Тип разрешения | Разрешения |
+|:--------------- |:----------- |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | Не поддерживается. |
+
+### <a name="groups"></a>Группы
+
+|Тип разрешения | Разрешения |
+|:-------------- |:----------- |
+| Делегированное (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азуреадграупс |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +62,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization  | Bearer {token}|
+| Авторизация  | Bearer {token}|
 | Content-Type  | application/json|
 
 

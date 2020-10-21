@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 78c685c1f2234ad2cd3815eef0d34a3fc3ee0dac
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f7b35d88167a608d2a25ae5a76a1fed8ed539d58
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991084"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634916"
 ---
 # <a name="list-governanceroleassignmentrequests"></a>Список Говернанцеролеассигнментрекуестс
 
@@ -21,13 +21,31 @@ ms.locfileid: "47991084"
 Получение коллекции [говернанцеролеассигнментрекуестс](../resources/governanceroleassignmentrequest.md). 
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
 
-|Тип разрешения      | Разрешения              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Привилежедакцесс. Read. Азурересаурцес |
+### <a name="azure-resources"></a>Ресурсы Azure
+
+| Тип разрешения | Разрешения |
+|:--------------- |:----------- |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение | Привилежедакцесс. Read. Азурересаурцес |
+
+### <a name="azure-ad"></a>Azure AD
+
+| Тип разрешения | Разрешения |
+|:--------------- |:----------- |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение | Привилежедакцесс. Read. AzureAD |
+
+### <a name="groups"></a>Группы
+
+|Тип разрешения | Разрешения |
+|:-------------- |:----------- |
+| Делегированное (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азуреадграупс |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение | Привилежедакцесс. Read. Азуреадграупс |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -64,7 +82,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subSt
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -78,7 +96,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subSt
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

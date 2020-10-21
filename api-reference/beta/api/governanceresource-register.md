@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 207a733e72dcf7c05c6cdf81dddb3cecf37e3bdd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: df5e9a2d63c6a49a8eb7b8ab9b5ed88b4f50c577
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991175"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635063"
 ---
 # <a name="governanceresource-register"></a>governanceResource: Register
 
@@ -22,13 +22,31 @@ ms.locfileid: "47991175"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
 
 >**Примечание:** Этот API также требует, чтобы у запрашивающего по крайней мере одно назначение активной роли для ресурса.
 
+### <a name="azure-resources"></a>Ресурсы Azure
+
 | Тип разрешения | Разрешения |
 |:--------------- |:----------- |
-| Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | Не поддерживается. |
+
+### <a name="azure-ad"></a>Azure AD
+
+| Тип разрешения | Разрешения |
+|:--------------- |:----------- |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | Не поддерживается. |
+
+### <a name="groups"></a>Группы
+
+|Тип разрешения | Разрешения |
+|:-------------- |:----------- |
+| Делегированное (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азуреадграупс |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
@@ -47,7 +65,7 @@ POST /privilegedAccess/azureResources/resources/register
 
 | Имя | Описание |
 |:---- |:----------- |
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Тело запроса
@@ -56,7 +74,7 @@ POST /privilegedAccess/azureResources/resources/register
 |:---------- |:---- |:----------- |
 | externalId | String | Внешний идентификатор ресурса, регистрируемого в PIM. При регистрации подписки идентификатором является идентификатор подписки, добавленный в начале `/subscriptions/` . Например, `/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac`. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` отклик.
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 75c6044e6fc76c0ac19e7990240b883f663cba04
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 95ff7dbf174a5dc6287be0fc7476c21596e651ba
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991070"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634874"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Обновление Говернанцеролеассигнментрекуестс
 
@@ -21,15 +21,33 @@ ms.locfileid: "47991070"
 Позволяет администраторам обновлять свои решения ( `AdminApproved` или `AdminDenied` ) в [говернанцеролеассигнментрекуестс](../resources/governanceroleassignmentrequest.md) , которые находятся в состоянии `PendingAdminDecision` .
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
 
 >**Примечание:** Кроме того, для этого API необходимо, чтобы у автора запроса было по крайней мере одно `Active` назначение роли администратора ( `owner` или `user access administrator` ) для ресурса, к которому относится [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) . 
 
-|Тип разрешения      | Разрешения              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+### <a name="azure-resources"></a>Ресурсы Azure
+
+| Тип разрешения | Разрешения |
+|:--------------- |:----------- |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | Не поддерживается. |
+
+### <a name="azure-ad"></a>Azure AD
+
+| Тип разрешения | Разрешения |
+|:--------------- |:----------- |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | Не поддерживается. |
+
+### <a name="groups"></a>Группы
+
+|Тип разрешения | Разрешения |
+|:-------------- |:----------- |
+| Делегированное (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азуреадграупс |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +69,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 |решении        |String                 |✓        |Принятие решения администратором запроса на назначение роли. Значение должно быть Обновлено как `AdminApproved` или `AdminDenied` .|
 |schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | Расписание запроса на назначение роли. Для состояния `AdminApproved` это обязательное требование.|
 |ассигнментстате      |String|         | Состояние присваивания, а также значения `Eligible` `Active` : или. Для решения `AdminApproved` это необходимо. |
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 Этот метод можно применять только к запросам, которые находятся в состоянии `PendingAdminDecision` .
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.

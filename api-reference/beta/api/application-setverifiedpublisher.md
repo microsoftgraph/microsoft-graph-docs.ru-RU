@@ -1,16 +1,16 @@
 ---
 title: 'Приложение: Сетверифиедпублишер'
-description: Установите проверенного издателя приложения.
+description: Установка проверенного издателя приложения.
 localization_priority: Normal
 author: jesakowi
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1cf02a44cbaff8494765bfa99383c3905f0522fe
-ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
+ms.openlocfilehash: 3aa6156ca95e1d75376ac24be9883aa0ed3db04e
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48471576"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634585"
 ---
 # <a name="application-setverifiedpublisher"></a>Приложение: Сетверифиедпублишер
 
@@ -24,7 +24,7 @@ ms.locfileid: "48471576"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Application.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
 |Приложение | Не поддерживается |
 
@@ -49,7 +49,7 @@ POST /applications/{id}/setVerifiedPublisher
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| верифиедпублишерид | Строка | Идентификатор сети партнерской сети (МПНИД) проверенного издателя, который необходимо задать для приложения, из учетной записи центра партнера издателя. |
+| верифиедпублишерид | строка | Идентификатор сети партнерской сети (МПНИД) проверенного издателя, который необходимо задать для приложения, из учетной записи центра партнера издателя. |
 
 ## <a name="response"></a>Отклик
 
@@ -61,6 +61,8 @@ POST /applications/{id}/setVerifiedPublisher
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "application_setverifiedpublisher"
@@ -74,6 +76,12 @@ Content-type: application/json
     "verifiedPublisherId": "1234567"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/application-setverifiedpublisher-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: afd00558e6fca4e79221eea9a76a9ce1ef304807
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cb93f7f40a580297d1cd255e7468a079e5a5b23a
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991189"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635112"
 ---
 # <a name="list-governanceresources"></a>Список Говернанцересаурцес
 
@@ -21,13 +21,31 @@ ms.locfileid: "47991189"
 Получение коллекции [governanceResource](../resources/governanceresource.md) , к которой у запрашивающего есть доступ.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference#privileged-access-permissions).
 
-|Тип разрешения      | Разрешения              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Привилежедакцесс. Read. Азурересаурцес |
+### <a name="azure-resources"></a>Ресурсы Azure
+
+| Тип разрешения | Разрешения |
+|:--------------- |:----------- |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение | Привилежедакцесс. Read. Азурересаурцес |
+
+### <a name="azure-ad"></a>Azure AD
+
+| Тип разрешения | Разрешения |
+|:--------------- |:----------- |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение | Привилежедакцесс. Read. AzureAD |
+
+### <a name="groups"></a>Группы
+
+|Тип разрешения | Разрешения |
+|:-------------- |:----------- |
+| Делегированное (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азуреадграупс |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение | Привилежедакцесс. Read. Азуреадграупс |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +62,7 @@ GET /privilegedAccess/azureResources/resources
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [governanceResource](../resources/governanceresource.md) в тексте отклика.
 ## <a name="examples"></a>Примеры
 

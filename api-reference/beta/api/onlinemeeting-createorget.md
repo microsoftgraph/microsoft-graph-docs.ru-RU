@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 80efbd54109fccaa0299e08e0c172001f46fe692
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9a9e59bac76717f983f3bcbe3de0fac56de7c703
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48047233"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635448"
 ---
 # <a name="onlinemeeting-createorget"></a>Онлинемитинг: Креатеоржет
 
@@ -36,19 +36,19 @@ ms.locfileid: "48047233"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Запрос при использовании делегированного маркера:
+Запрос при использовании токена делегирования:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/createOrGet
 ```
 
-Запрос при использовании маркера приложения:
+Запрос при использовании токена приложения:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{userId}/onlineMeetings/createOrGet
 ```
 
-> **Примечание:** `userId` — Это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в разделе [Политика доступа к приложениям](/graph/cloud-communication-online-meeting-application-access-policy).
+> **Примечание.** `userId` — это идентификатор объекта пользователя на [портале управления пользователями Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). Дополнительные сведения см. в статье [Политики доступа для приложений](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание                 |
@@ -68,7 +68,7 @@ POST /users/{userId}/onlineMeetings/createOrGet
 | startDateTime | DateTime                                                   | Время начала собрания в формате UTC.                                                                       |
 | subject       | String                                                     | Тема собрания по сети.                                                                   |
 
-> **Примечания.**
+> **Примечания:**
 >
 > - Если **startDateTime** и **endDateTime** не указаны, то **startDateTime** по умолчанию будет иметь текущее значение DateTime, а значение **endDateTime** будет равно **startDateTime** + 1 час.
 >
@@ -78,7 +78,7 @@ POST /users/{userId}/onlineMeetings/createOrGet
 >
 > - В настоящее время **чатинфо** поддерживается только в бета-версии.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если создается новое собрание, или `200 OK` код ответа при получении существующего собрания. В обоих случаях объект [онлинемитинг](../resources/onlinemeeting.md) возвращается в теле отклика.
 
 ## <a name="examples"></a>Примеры
@@ -111,6 +111,7 @@ Content-Type: application/json
                         "id": "1f35f2e6-9cab-44ad-8d5a-b74c14720000"
                     }
                 },
+                "role": "presenter",
                 "upn": "test1@contoso.com"
             }
         ]
