@@ -5,12 +5,12 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 3ce1bdd95b3ae28befd0b19c79dbc634f453f4bc
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 2537efb0346d154aba595b11f96d2b72607b44d4
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582116"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634467"
 ---
 # <a name="list-calendargroups"></a>Список объектов calendarGroup
 
@@ -40,7 +40,7 @@ GET /users/{id | userPrincipalName}/calendarGroups
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

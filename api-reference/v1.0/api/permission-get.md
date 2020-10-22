@@ -7,12 +7,12 @@ localization_priority: Normal
 description: В этой статье рассказывается, как возвратить действующее разрешение на общий доступ для конкретного ресурса разрешения.
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 4a530b18fcbd5d1336fbee730004a487fd2c5710
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: f2f3072ff2244112d70b1a6ef3e3423191808230
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400603"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634573"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>Получение разрешения на общий доступ для файла или папки
 

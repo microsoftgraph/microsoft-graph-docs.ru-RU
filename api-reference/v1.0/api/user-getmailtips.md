@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e0463cab4fd3a4d1bb268bc504eb4fd2d807d941
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 2d377b749cc4839ac3506f492be2677497706c94
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581878"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635399"
 ---
 # <a name="user-getmailtips"></a>Пользователь: подсказки
 
@@ -25,7 +25,7 @@ ms.locfileid: "48581878"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Mail. Read, mail. Read. Shared    |
+|Делегированные (рабочая или учебная учетная запись) | Mail. Read, mail. Read. Shared    |
 |Делегированные (личная учетная запись Майкрософт) | Mail.Read    |
 |Для приложений | Mail.Read |
 
@@ -43,7 +43,7 @@ POST /users/{id|userPrincipalName}/getMailTips
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Свойство     | Тип   |Описание|

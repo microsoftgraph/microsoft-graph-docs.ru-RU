@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: f992211fab49434d555cd48045070c6d28b0d91e
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: e5dca8705a6601914c497d35d4429a7d6e3432f1
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582207"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635129"
 ---
 # <a name="certificatebasedauthconfiguration-resource-type"></a>Тип ресурса Цертификатебаседаусконфигуратион
 
@@ -37,7 +37,7 @@ ms.locfileid: "48582207"
 | [Удаление Цертификатебаседаусконфигуратион](../api/certificatebasedauthconfiguration-delete.md) | Нет | Удаление объекта **цертификатебаседаусконфигуратион** . |
 
 >[!NOTE]
->Обновление **церфикатебаседаусконфигуратион** не поддерживается. Чтобы изменить **церфикатебаседаусконфигуратион**, сначала удалите его, а затем создайте новый **церфикатебаседаусконфигуратион**.
+>Обновление **цертификатебаседаусконфигуратион** не поддерживается. Чтобы изменить **цертификатебаседаусконфигуратион**, сначала удалите его, а затем создайте новый **цертификатебаседаусконфигуратион**.
 
 ## <a name="properties"></a>Свойства
 
@@ -48,9 +48,9 @@ ms.locfileid: "48582207"
 
 ## <a name="relationships"></a>Связи
 
-Нет
+Видим
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jesakowi
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b9f56a4bf020003f71679c07f380c992b48db491
-ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
+ms.openlocfilehash: 60681396c5f1c7e74b2ef04cd1984815e3a5e7a0
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48471538"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635551"
 ---
 # <a name="application-setverifiedpublisher"></a>Приложение: Сетверифиедпублишер
 
@@ -18,7 +18,7 @@ ms.locfileid: "48471538"
 
 Задайте [верифиедпублишер](../resources/verifiedPublisher.md) для [приложения](../resources/application.md). Дополнительные сведения, включая предварительные требования для настройки проверенного издателя, можно найти в статье [Проверка издателя](/azure/active-directory/develop/publisher-verification-overview).
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Permissions
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -41,13 +41,13 @@ POST /applications/{id}/setVerifiedPublisher
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В тексте запроса укажите следующие обязательные свойства.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| верифиедпублишерид | Строка | Идентификатор сети партнерской сети (МПНИД) проверенного издателя, который необходимо задать для приложения, из учетной записи центра партнера издателя. |
+| верифиедпублишерид | строка | Идентификатор сети партнерской сети (МПНИД) проверенного издателя, который необходимо задать для приложения, из учетной записи центра партнера издателя. |
 
 ## <a name="response"></a>Отклик
 
@@ -59,6 +59,8 @@ POST /applications/{id}/setVerifiedPublisher
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "application_setverifiedpublisher"
@@ -72,6 +74,12 @@ Content-type: application/json
     "verifiedPublisherId": "1234567"
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/application-setverifiedpublisher-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

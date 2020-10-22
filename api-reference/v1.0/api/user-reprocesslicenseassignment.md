@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e4243e927ead9a282fd4e897b0d93ab612bf4459
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: ed79bdf0c219f0c3a654e46e755a7acd1a452904
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582242"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635462"
 ---
 # <a name="user-reprocesslicenseassignment"></a>Пользователь: Репроцесслиценсеассигнмент
 
@@ -39,7 +39,7 @@ POST /users/{id}/reprocessLicenseAssignment
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

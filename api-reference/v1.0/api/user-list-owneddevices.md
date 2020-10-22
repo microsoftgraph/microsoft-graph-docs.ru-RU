@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: b123751a7d0d159f3c1a131bb5dadec5bbf1006b
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: ff3bda5afd0dedb9781c532052c4978a7c493c49
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582081"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635497"
 ---
 # <a name="list-owneddevices"></a>Список ownedDevices
 
@@ -41,7 +41,7 @@ GET /users/{id | userPrincipalName}/ownedDevices
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

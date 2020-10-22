@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jesakowi
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ee598fc37ad3aa2abc8dac1a7980b29a53e41029
-ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
+ms.openlocfilehash: dca739f5086e10fecdfba56cfd1338a9230b4d4d
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48471535"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48635519"
 ---
 # <a name="application-unsetverifiedpublisher"></a>Приложение: Унсетверифиедпублишер
 
@@ -18,7 +18,7 @@ ms.locfileid: "48471535"
 
 Отмените настройку [верифиедпублишер](../resources/verifiedPublisher.md) , предварительно заданной для [приложения](../resources/application.md), удалив все проверенные свойства издателя. Для получения дополнительных сведений см [Проверка издателя](/azure/active-directory/develop/publisher-verification-overview).
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Permissions
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -40,7 +40,7 @@ POST /applications/{id}/unsetVerifiedPublisher
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -54,6 +54,8 @@ POST /applications/{id}/unsetVerifiedPublisher
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "application_unsetverifiedpublisher"
@@ -62,6 +64,16 @@ POST /applications/{id}/unsetVerifiedPublisher
 ```http
 POST https://graph.microsoft.com/v1.0/applications/{id}/unsetVerifiedPublisher
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/application-unsetverifiedpublisher-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/application-unsetverifiedpublisher-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

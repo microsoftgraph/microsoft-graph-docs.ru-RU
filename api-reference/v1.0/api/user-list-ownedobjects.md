@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7cdbf845121ea38c1098281196c80145a70f69cd
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: e8d1381b390968e10401534f8e92929a651686b5
+ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582263"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48634454"
 ---
 # <a name="list-ownedobjects"></a>Список ownedObjects
 
@@ -41,7 +41,7 @@ GET /users/{id | userPrincipalName}/ownedObjects
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
