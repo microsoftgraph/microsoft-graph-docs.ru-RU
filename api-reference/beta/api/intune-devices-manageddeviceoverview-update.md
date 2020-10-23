@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 160da271112fb6dc3efaaa510fb8e2a4873b9289
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 91fda0e137b033005c44920fb79cedd3aee2f266
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072419"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704051"
 ---
-# <a name="update-manageddeviceoverview"></a><span data-ttu-id="000be-103">Обновление объекта managedDeviceOverview</span><span class="sxs-lookup"><span data-stu-id="000be-103">Update managedDeviceOverview</span></span>
+# <a name="update-manageddeviceoverview"></a><span data-ttu-id="a3ca7-103">Обновление объекта managedDeviceOverview</span><span class="sxs-lookup"><span data-stu-id="a3ca7-103">Update managedDeviceOverview</span></span>
 
-<span data-ttu-id="000be-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="000be-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a3ca7-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a3ca7-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="000be-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="000be-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="a3ca7-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a3ca7-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="000be-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="000be-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a3ca7-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="a3ca7-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="000be-107">Обновление свойств объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).</span><span class="sxs-lookup"><span data-stu-id="000be-107">Update the properties of a [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object.</span></span>
+<span data-ttu-id="a3ca7-107">Обновление свойств объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).</span><span class="sxs-lookup"><span data-stu-id="a3ca7-107">Update the properties of a [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="000be-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="000be-108">Prerequisites</span></span>
-<span data-ttu-id="000be-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="000be-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="a3ca7-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="a3ca7-108">Prerequisites</span></span>
+<span data-ttu-id="a3ca7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a3ca7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="000be-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="000be-111">Permission type</span></span>|<span data-ttu-id="000be-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="000be-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="a3ca7-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a3ca7-111">Permission type</span></span>|<span data-ttu-id="a3ca7-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="a3ca7-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="000be-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="000be-113">Delegated (work or school account)</span></span>|<span data-ttu-id="000be-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="000be-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="000be-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="000be-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="000be-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="000be-116">Not supported.</span></span>|
-|<span data-ttu-id="000be-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="000be-117">Application</span></span>|<span data-ttu-id="000be-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="000be-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="a3ca7-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a3ca7-113">Delegated (work or school account)</span></span>|<span data-ttu-id="a3ca7-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a3ca7-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="a3ca7-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a3ca7-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a3ca7-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a3ca7-116">Not supported.</span></span>|
+|<span data-ttu-id="a3ca7-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a3ca7-117">Application</span></span>|<span data-ttu-id="a3ca7-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a3ca7-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="000be-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="000be-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a3ca7-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a3ca7-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,37 +40,37 @@ ms.locfileid: "48072419"
 PATCH /deviceManagement/managedDeviceOverview
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="000be-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="000be-120">Request headers</span></span>
-|<span data-ttu-id="000be-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="000be-121">Header</span></span>|<span data-ttu-id="000be-122">Значение</span><span class="sxs-lookup"><span data-stu-id="000be-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a3ca7-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="a3ca7-120">Request headers</span></span>
+|<span data-ttu-id="a3ca7-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="a3ca7-121">Header</span></span>|<span data-ttu-id="a3ca7-122">Значение</span><span class="sxs-lookup"><span data-stu-id="a3ca7-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="000be-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="000be-123">Authorization</span></span>|<span data-ttu-id="000be-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="000be-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="000be-125">Accept</span><span class="sxs-lookup"><span data-stu-id="000be-125">Accept</span></span>|<span data-ttu-id="000be-126">application/json</span><span class="sxs-lookup"><span data-stu-id="000be-126">application/json</span></span>|
+|<span data-ttu-id="a3ca7-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a3ca7-123">Authorization</span></span>|<span data-ttu-id="a3ca7-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a3ca7-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="a3ca7-125">Accept</span><span class="sxs-lookup"><span data-stu-id="a3ca7-125">Accept</span></span>|<span data-ttu-id="a3ca7-126">application/json</span><span class="sxs-lookup"><span data-stu-id="a3ca7-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="000be-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="000be-127">Request body</span></span>
-<span data-ttu-id="000be-128">В теле запроса добавьте представление объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="000be-128">In the request body, supply a JSON representation for the [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a3ca7-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a3ca7-127">Request body</span></span>
+<span data-ttu-id="a3ca7-128">В теле запроса добавьте представление объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a3ca7-128">In the request body, supply a JSON representation for the [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object.</span></span>
 
-<span data-ttu-id="000be-129">В приведенной ниже таблице указаны свойства, необходимые при создании объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).</span><span class="sxs-lookup"><span data-stu-id="000be-129">The following table shows the properties that are required when you create the [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).</span></span>
+<span data-ttu-id="a3ca7-129">В приведенной ниже таблице указаны свойства, необходимые при создании объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).</span><span class="sxs-lookup"><span data-stu-id="a3ca7-129">The following table shows the properties that are required when you create the [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).</span></span>
 
-|<span data-ttu-id="000be-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="000be-130">Property</span></span>|<span data-ttu-id="000be-131">Тип</span><span class="sxs-lookup"><span data-stu-id="000be-131">Type</span></span>|<span data-ttu-id="000be-132">Описание</span><span class="sxs-lookup"><span data-stu-id="000be-132">Description</span></span>|
+|<span data-ttu-id="a3ca7-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="a3ca7-130">Property</span></span>|<span data-ttu-id="a3ca7-131">Тип</span><span class="sxs-lookup"><span data-stu-id="a3ca7-131">Type</span></span>|<span data-ttu-id="a3ca7-132">Описание</span><span class="sxs-lookup"><span data-stu-id="a3ca7-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="000be-133">id</span><span class="sxs-lookup"><span data-stu-id="000be-133">id</span></span>|<span data-ttu-id="000be-134">String</span><span class="sxs-lookup"><span data-stu-id="000be-134">String</span></span>|<span data-ttu-id="000be-135">Уникальный идентификатор сводки.</span><span class="sxs-lookup"><span data-stu-id="000be-135">Unique Identifier for the summary</span></span>|
-|<span data-ttu-id="000be-136">enrolledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="000be-136">enrolledDeviceCount</span></span>|<span data-ttu-id="000be-137">Int32</span><span class="sxs-lookup"><span data-stu-id="000be-137">Int32</span></span>|<span data-ttu-id="000be-138">Общее количество зарегистрированных устройств.</span><span class="sxs-lookup"><span data-stu-id="000be-138">Total enrolled device count.</span></span> <span data-ttu-id="000be-139">Не включает устройства ПК, которыми управляет агент Intune для ПК.</span><span class="sxs-lookup"><span data-stu-id="000be-139">Does not include PC devices managed via Intune PC Agent</span></span>|
-|<span data-ttu-id="000be-140">mdmEnrolledCount</span><span class="sxs-lookup"><span data-stu-id="000be-140">mdmEnrolledCount</span></span>|<span data-ttu-id="000be-141">Int32</span><span class="sxs-lookup"><span data-stu-id="000be-141">Int32</span></span>|<span data-ttu-id="000be-142">Количество устройств, зарегистрированных в MDM.</span><span class="sxs-lookup"><span data-stu-id="000be-142">The number of devices enrolled in MDM</span></span>|
-|<span data-ttu-id="000be-143">dualEnrolledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="000be-143">dualEnrolledDeviceCount</span></span>|<span data-ttu-id="000be-144">Int32</span><span class="sxs-lookup"><span data-stu-id="000be-144">Int32</span></span>|<span data-ttu-id="000be-145">Количество устройств, зарегистрированных как в MDM, так и в EAS.</span><span class="sxs-lookup"><span data-stu-id="000be-145">The number of devices enrolled in both MDM and EAS</span></span>|
-|<span data-ttu-id="000be-146">deviceOperatingSystemSummary</span><span class="sxs-lookup"><span data-stu-id="000be-146">deviceOperatingSystemSummary</span></span>|[<span data-ttu-id="000be-147">deviceOperatingSystemSummary</span><span class="sxs-lookup"><span data-stu-id="000be-147">deviceOperatingSystemSummary</span></span>](../resources/intune-devices-deviceoperatingsystemsummary.md)|<span data-ttu-id="000be-148">Общие сведения об операционной системе устройства.</span><span class="sxs-lookup"><span data-stu-id="000be-148">Device operating system summary.</span></span>|
-|<span data-ttu-id="000be-149">deviceExchangeAccessStateSummary</span><span class="sxs-lookup"><span data-stu-id="000be-149">deviceExchangeAccessStateSummary</span></span>|[<span data-ttu-id="000be-150">deviceExchangeAccessStateSummary</span><span class="sxs-lookup"><span data-stu-id="000be-150">deviceExchangeAccessStateSummary</span></span>](../resources/intune-devices-deviceexchangeaccessstatesummary.md)|<span data-ttu-id="000be-151">Распределение состояния доступа к Exchange в Intune.</span><span class="sxs-lookup"><span data-stu-id="000be-151">Distribution of Exchange Access State in Intune</span></span>|
-|<span data-ttu-id="000be-152">managedDeviceModelsAndManufacturers</span><span class="sxs-lookup"><span data-stu-id="000be-152">managedDeviceModelsAndManufacturers</span></span>|[<span data-ttu-id="000be-153">managedDeviceModelsAndManufacturers</span><span class="sxs-lookup"><span data-stu-id="000be-153">managedDeviceModelsAndManufacturers</span></span>](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|<span data-ttu-id="000be-154">Модели и производства меатадата для управляемых устройств в учетной записи</span><span class="sxs-lookup"><span data-stu-id="000be-154">Models and Manufactures meatadata for managed devices in the account</span></span>|
-|<span data-ttu-id="000be-155">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="000be-155">lastModifiedDateTime</span></span>|<span data-ttu-id="000be-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="000be-156">DateTimeOffset</span></span>|<span data-ttu-id="000be-157">Общие сведения о дате и времени последнего изменения устройства</span><span class="sxs-lookup"><span data-stu-id="000be-157">Last modified date time of device overview</span></span>|
+|<span data-ttu-id="a3ca7-133">id</span><span class="sxs-lookup"><span data-stu-id="a3ca7-133">id</span></span>|<span data-ttu-id="a3ca7-134">Строка</span><span class="sxs-lookup"><span data-stu-id="a3ca7-134">String</span></span>|<span data-ttu-id="a3ca7-135">Уникальный идентификатор сводки.</span><span class="sxs-lookup"><span data-stu-id="a3ca7-135">Unique Identifier for the summary</span></span>|
+|<span data-ttu-id="a3ca7-136">enrolledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="a3ca7-136">enrolledDeviceCount</span></span>|<span data-ttu-id="a3ca7-137">Int32</span><span class="sxs-lookup"><span data-stu-id="a3ca7-137">Int32</span></span>|<span data-ttu-id="a3ca7-138">Общее количество зарегистрированных устройств.</span><span class="sxs-lookup"><span data-stu-id="a3ca7-138">Total enrolled device count.</span></span> <span data-ttu-id="a3ca7-139">Не включает устройства ПК, которыми управляет агент Intune для ПК.</span><span class="sxs-lookup"><span data-stu-id="a3ca7-139">Does not include PC devices managed via Intune PC Agent</span></span>|
+|<span data-ttu-id="a3ca7-140">mdmEnrolledCount</span><span class="sxs-lookup"><span data-stu-id="a3ca7-140">mdmEnrolledCount</span></span>|<span data-ttu-id="a3ca7-141">Int32</span><span class="sxs-lookup"><span data-stu-id="a3ca7-141">Int32</span></span>|<span data-ttu-id="a3ca7-142">Количество устройств, зарегистрированных в MDM.</span><span class="sxs-lookup"><span data-stu-id="a3ca7-142">The number of devices enrolled in MDM</span></span>|
+|<span data-ttu-id="a3ca7-143">dualEnrolledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="a3ca7-143">dualEnrolledDeviceCount</span></span>|<span data-ttu-id="a3ca7-144">Int32</span><span class="sxs-lookup"><span data-stu-id="a3ca7-144">Int32</span></span>|<span data-ttu-id="a3ca7-145">Количество устройств, зарегистрированных как в MDM, так и в EAS.</span><span class="sxs-lookup"><span data-stu-id="a3ca7-145">The number of devices enrolled in both MDM and EAS</span></span>|
+|<span data-ttu-id="a3ca7-146">deviceOperatingSystemSummary</span><span class="sxs-lookup"><span data-stu-id="a3ca7-146">deviceOperatingSystemSummary</span></span>|[<span data-ttu-id="a3ca7-147">deviceOperatingSystemSummary</span><span class="sxs-lookup"><span data-stu-id="a3ca7-147">deviceOperatingSystemSummary</span></span>](../resources/intune-devices-deviceoperatingsystemsummary.md)|<span data-ttu-id="a3ca7-148">Общие сведения об операционной системе устройства.</span><span class="sxs-lookup"><span data-stu-id="a3ca7-148">Device operating system summary.</span></span>|
+|<span data-ttu-id="a3ca7-149">deviceExchangeAccessStateSummary</span><span class="sxs-lookup"><span data-stu-id="a3ca7-149">deviceExchangeAccessStateSummary</span></span>|[<span data-ttu-id="a3ca7-150">deviceExchangeAccessStateSummary</span><span class="sxs-lookup"><span data-stu-id="a3ca7-150">deviceExchangeAccessStateSummary</span></span>](../resources/intune-devices-deviceexchangeaccessstatesummary.md)|<span data-ttu-id="a3ca7-151">Распределение состояния доступа к Exchange в Intune.</span><span class="sxs-lookup"><span data-stu-id="a3ca7-151">Distribution of Exchange Access State in Intune</span></span>|
+|<span data-ttu-id="a3ca7-152">managedDeviceModelsAndManufacturers</span><span class="sxs-lookup"><span data-stu-id="a3ca7-152">managedDeviceModelsAndManufacturers</span></span>|[<span data-ttu-id="a3ca7-153">managedDeviceModelsAndManufacturers</span><span class="sxs-lookup"><span data-stu-id="a3ca7-153">managedDeviceModelsAndManufacturers</span></span>](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|<span data-ttu-id="a3ca7-154">Модели и производства меатадата для управляемых устройств в учетной записи</span><span class="sxs-lookup"><span data-stu-id="a3ca7-154">Models and Manufactures meatadata for managed devices in the account</span></span>|
+|<span data-ttu-id="a3ca7-155">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="a3ca7-155">lastModifiedDateTime</span></span>|<span data-ttu-id="a3ca7-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a3ca7-156">DateTimeOffset</span></span>|<span data-ttu-id="a3ca7-157">Общие сведения о дате и времени последнего изменения устройства</span><span class="sxs-lookup"><span data-stu-id="a3ca7-157">Last modified date time of device overview</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="000be-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="000be-158">Response</span></span>
-<span data-ttu-id="000be-159">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="000be-159">If successful, this method returns a `200 OK` response code and an updated [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a3ca7-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="a3ca7-158">Response</span></span>
+<span data-ttu-id="a3ca7-159">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="a3ca7-159">If successful, this method returns a `200 OK` response code and an updated [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="000be-160">Пример</span><span class="sxs-lookup"><span data-stu-id="000be-160">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a3ca7-160">Пример</span><span class="sxs-lookup"><span data-stu-id="a3ca7-160">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="000be-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="000be-161">Request</span></span>
-<span data-ttu-id="000be-162">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="000be-162">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="a3ca7-161">Запрос</span><span class="sxs-lookup"><span data-stu-id="a3ca7-161">Request</span></span>
+<span data-ttu-id="a3ca7-162">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a3ca7-162">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDeviceOverview
 Content-type: application/json
@@ -117,8 +117,8 @@ Content-length: 1187
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="000be-163">Отклик</span><span class="sxs-lookup"><span data-stu-id="000be-163">Response</span></span>
-<span data-ttu-id="000be-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="000be-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="a3ca7-163">Отклик</span><span class="sxs-lookup"><span data-stu-id="a3ca7-163">Response</span></span>
+<span data-ttu-id="a3ca7-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a3ca7-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -166,7 +166,6 @@ Content-Length: 1300
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 
