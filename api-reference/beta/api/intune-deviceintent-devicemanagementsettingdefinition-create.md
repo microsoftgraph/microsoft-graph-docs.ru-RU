@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c92467d3ad05422da91e5da5eccaf1df3b2a709
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d97dcaa2518d8f2121315ef9ebfff22610460543
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074680"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698745"
 ---
 # <a name="create-devicemanagementsettingdefinition"></a>Создание Девицеманажементсеттингдефинитион
 
@@ -49,27 +49,29 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Девицеманажементсеттингдефинитион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементсеттингдефинитион.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор определения параметра|
+|id|Строка|Идентификатор определения параметра|
 |Типом|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|Тип данных значения. Возможные значения: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
-|displayName|String|Отображаемое имя параметра|
-|истоплевел|Boolean|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
-|description|String|Описание параметра|
-|плацехолдертекст|String|Замещающий текст в качестве примера допустимых входных данных|
-|документатионурл|String|URL-адрес для установки документации|
-|keywords|Коллекция String|Ключевые слова, связанные с параметром|
+|displayName|Строка|Отображаемое имя параметра|
+|истоплевел|Логический|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
+|description|Строка|Описание параметра|
+|плацехолдертекст|Строка|Замещающий текст в качестве примера допустимых входных данных|
+|документатионурл|Строка|URL-адрес для установки документации|
+|хеадертитле|Строка|Заголовок параметра "заголовок" представляет категорию или раздел параметров или параметров|
+|хеадерсубтитле|Строка|Подзаголовок заголовка параметра для дополнительных сведений о категории или разделе|
+|keywords|Коллекция строк|Ключевые слова, связанные с параметром|
 |провероч|Коллекция [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)|Коллекция ограничений для значения параметра|
 |зависящ|Коллекция [девицеманажементсеттингдепенденци](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Коллекция зависимостей для других параметров|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -79,7 +81,7 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/settingDefinitions
 Content-type: application/json
-Content-length: 928
+Content-length: 1014
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingDefinition",
@@ -89,6 +91,8 @@ Content-length: 928
   "description": "Description value",
   "placeholderText": "Placeholder Text value",
   "documentationUrl": "https://example.com/documentationUrl/",
+  "headerTitle": "Header Title value",
+  "headerSubtitle": "Header Subtitle value",
   "keywords": [
     "Keywords value"
   ],
@@ -122,7 +126,7 @@ Content-length: 928
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 977
+Content-Length: 1063
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingDefinition",
@@ -133,6 +137,8 @@ Content-Length: 977
   "description": "Description value",
   "placeholderText": "Placeholder Text value",
   "documentationUrl": "https://example.com/documentationUrl/",
+  "headerTitle": "Header Title value",
+  "headerSubtitle": "Header Subtitle value",
   "keywords": [
     "Keywords value"
   ],
@@ -160,7 +166,6 @@ Content-Length: 977
   ]
 }
 ```
-
 
 
 

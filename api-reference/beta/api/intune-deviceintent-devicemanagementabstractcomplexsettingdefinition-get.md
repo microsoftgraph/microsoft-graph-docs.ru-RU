@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4b0b089a80cb943d8cac3a1f811cba0a5a628464
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 04108bcbfcc7a113e57493a17e45e6a7222909d9
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47974501"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698864"
 ---
 # <a name="get-devicemanagementabstractcomplexsettingdefinition"></a>Получение Девицеманажементабстракткомплекссеттингдефинитион
 
@@ -43,19 +43,19 @@ GET /deviceManagement/intents/{deviceManagementIntentId}/categories/{deviceManag
 GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceManagementTemplateSettingCategoryId}/settingDefinitions/{deviceManagementSettingDefinitionId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [девицеманажементабстракткомплекссеттингдефинитион](../resources/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{device
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1142
+Content-Length: 1232
 
 {
   "value": {
@@ -83,6 +83,8 @@ Content-Length: 1142
     "description": "Description value",
     "placeholderText": "Placeholder Text value",
     "documentationUrl": "https://example.com/documentationUrl/",
+    "headerTitle": "Header Title value",
+    "headerSubtitle": "Header Subtitle value",
     "keywords": [
       "Keywords value"
     ],
@@ -114,7 +116,6 @@ Content-Length: 1142
   }
 }
 ```
-
 
 
 

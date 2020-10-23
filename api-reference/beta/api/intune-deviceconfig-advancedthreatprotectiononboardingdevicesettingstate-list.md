@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a02602ff0b7659cb6a961d744e02cda53ccd10bb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 971187957555697e4dd3e35836120c78e8a8c994
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028205"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698948"
 ---
 # <a name="list-advancedthreatprotectiononboardingdevicesettingstates"></a>Список Адванцедсреатпротектиононбоардингдевицесеттингстатес
 
@@ -43,13 +43,13 @@ GET /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedThr
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [адванцедсреатпротектиононбоардингдевицесеттингстате](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -88,7 +88,6 @@ Content-Length: 711
   ]
 }
 ```
-
 
 
 

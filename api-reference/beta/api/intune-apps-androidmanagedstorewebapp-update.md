@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c9ef54245b427372901a4b1cd6f29eff9b3b616
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 309587118066c8726414cd7d1d8637c7fb0d2b71
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006281"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48700544"
 ---
 # <a name="update-androidmanagedstorewebapp"></a>Обновление Андроидманажедсторевебапп
 
@@ -48,16 +48,16 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -71,7 +71,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |uploadState|Int32|Состояние отправки. Возможные значения: 0 – `Not Ready` , 1 – `Ready` , 2 `Processing` . Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publishingState|[мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |суперседингаппкаунт|Int32|Общее количество приложений, которые напрямую или косвенно заменяют данное приложение. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |суперседедаппкаунт|Int32|Общее число приложений, для которых это приложение напрямую или косвенно заменяется. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -80,14 +80,14 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |usedLicenseCount|Int32|Количество используемых лицензий VPP. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
 |totalLicenseCount|Int32|Общее количество лицензий VPP. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
 |appStoreUrl|String|URL-адрес приложения для рабочего хранилища. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
-|Частный|Логическое|Указывает, доступно ли приложение только для указанных пользователей предприятия. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
-|иссистемапп|Логическое|Указывает, является ли приложение предустановленным системным приложением. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|Частный|Логический|Указывает, доступно ли приложение только для указанных пользователей предприятия. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|иссистемапп|Логический|Указывает, является ли приложение предустановленным системным приложением. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
 |апптраккс|Коллекция [андроидманажедстореапптракк](../resources/intune-apps-androidmanagedstoreapptrack.md)|Дорожки, которые видимы для этого предприятия. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
-|суппортсоемконфиг|Логическое|Поддерживает ли это приложение политику Оемконфиг. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
+|суппортсоемконфиг|Логический|Поддерживает ли это приложение политику Оемконфиг. Наследуется от [андроидманажедстореапп](../resources/intune-apps-androidmanagedstoreapp.md)|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [андроидманажедсторевебапп](../resources/intune-apps-androidmanagedstorewebapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -194,7 +194,6 @@ Content-Length: 1400
   "supportsOemConfig": true
 }
 ```
-
 
 
 

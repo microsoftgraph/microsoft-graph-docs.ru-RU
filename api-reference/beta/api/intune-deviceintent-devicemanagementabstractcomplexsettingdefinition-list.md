@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 896e831d0537331f8f358c667a7a47637ed2f564
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a72ed6f3899e0953d92fa786731fdc68e4ec424c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47974515"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698836"
 ---
 # <a name="list-devicemanagementabstractcomplexsettingdefinitions"></a>Список Девицеманажементабстракткомплекссеттингдефинитионс
 
@@ -46,13 +46,13 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceM
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицеманажементабстракткомплекссеттингдефинитион](../resources/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/settingDefinitions
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1228
+Content-Length: 1322
 
 {
   "value": [
@@ -81,6 +81,8 @@ Content-Length: 1228
       "description": "Description value",
       "placeholderText": "Placeholder Text value",
       "documentationUrl": "https://example.com/documentationUrl/",
+      "headerTitle": "Header Title value",
+      "headerSubtitle": "Header Subtitle value",
       "keywords": [
         "Keywords value"
       ],
@@ -113,7 +115,6 @@ Content-Length: 1228
   ]
 }
 ```
-
 
 
 
