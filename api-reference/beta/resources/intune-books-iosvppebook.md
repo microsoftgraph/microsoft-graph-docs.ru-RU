@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3ad21960a331de67542208082a615464c027db0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d24ab09bb82a7721fe7314f83a53433aa0200a52
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966578"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706020"
 ---
 # <a name="iosvppebook-resource-type"></a>Тип ресурса iosVppEBook
 
@@ -37,9 +37,9 @@ ms.locfileid: "47966578"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
-|displayName|String|Имя электронной книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
-|description|String|Описание. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
+|displayName|Строка|Имя электронной книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
+|description|Строка|Описание. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |publisher|String|Издатель. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Обложка книги. Наследуется от объекта [managedEBook](../resources/intune-books-managedebook.md).|
@@ -55,7 +55,7 @@ ms.locfileid: "47966578"
 |seller|String|Продавец.|
 |totalLicenseCount|Int32|Общее число лицензий.|
 |usedLicenseCount|Int32|Число используемых лицензий.|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности.|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -106,7 +106,6 @@ ms.locfileid: "47966578"
   ]
 }
 ```
-
 
 
 

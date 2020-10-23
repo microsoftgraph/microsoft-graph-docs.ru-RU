@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d829950fdcbca21145f3bda88c90833eb38831c2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 02ece544ac7b4b78beb8e49bb67e33035a0d0bf9
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022416"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706326"
 ---
 # <a name="update-devicemanagement"></a>Обновление объекта deviceManagement
 
@@ -36,7 +36,7 @@ ms.locfileid: "48022416"
 | &nbsp; &nbsp; **Условия компании** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Цель устройства** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **Электронная SIM-карта** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Ограждение** | DeviceManagementConfiguration.ReadWrite.All |
@@ -58,7 +58,7 @@ ms.locfileid: "48022416"
 | &nbsp; &nbsp; **Условия компании** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Цель устройства** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **Электронная SIM-карта** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Ограждение** | DeviceManagementConfiguration.ReadWrite.All |
@@ -87,10 +87,10 @@ PATCH /deviceManagement
 
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса добавьте представление объекта [deviceManagement](../resources/intune-shared-devicemanagement.md) в формате JSON.
 
@@ -98,10 +98,10 @@ PATCH /deviceManagement
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор устройства.|
+|id|Строка|Уникальный идентификатор устройства.|
 |**Конфигурация устройств**|
 |интунеаккаунтид|GUID|Идентификатор учетной записи Intune для данного клиента|
-|легаципкмананжементенаблед|Boolean|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
+|легаципкмананжементенаблед|Логический|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
 |максимумдептокенс|Int32|Максимальное число маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
@@ -155,9 +155,9 @@ Content-length: 751
 }
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 
 Примечание. Представленный здесь объект отклика может быть усечен для краткости. Возвращаемые свойства различаются в зависимости от рабочего процесса и контекста.
 
@@ -191,7 +191,6 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
-
 
 
 

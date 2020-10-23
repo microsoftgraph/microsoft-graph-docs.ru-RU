@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6ae319028d9853a57b8f169c96b6e075fa830561
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b29a70dc6f107f9c912bed92e603b5b565247964
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989110"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48705703"
 ---
 # <a name="ratingcanadatelevisiontype-enum-type"></a>тип перечисления Ратингканадателевисионтипе
 
@@ -26,14 +26,13 @@ ms.locfileid: "47989110"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
-|аллблоккед|1 |Не разрешать показ контента|
-|children|2 |Классификация C подходит для детей от 2 до 7 лет|
+|аллблоккед|1,1|Не разрешать показ контента|
+|children|2|Классификация C подходит для детей от 2 до 7 лет|
 |childrenAbove8|4|Классификация C8 подходит для детей от 8 до 8 лет|
 |обобщен|4 |Классификация "G" подходит для общей аудитории|
 |паренталгуиданце|5 |PG, с родительским руководством|
 |agesAbove14|6 |Классификация 14 + предназначена для зрителей от 14 лет и старше|
 |agesAbove18|7 |18 + классификация предназначена для зрителей от 18 лет и старше|
-
 
 
 

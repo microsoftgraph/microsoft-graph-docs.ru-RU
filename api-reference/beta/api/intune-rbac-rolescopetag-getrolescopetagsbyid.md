@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6f93eee23919a24062ec9c2a0c1523d0c579efd5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a9b814ec665ec7ef590d05deec697b46376ffa1b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072027"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706354"
 ---
 # <a name="getrolescopetagsbyid-action"></a>действие Жетролескопетагсбид
 
@@ -47,7 +47,7 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{roleA
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -97,7 +97,6 @@ Content-Length: 257
   ]
 }
 ```
-
 
 
 

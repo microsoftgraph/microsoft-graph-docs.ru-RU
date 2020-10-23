@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 439878c615884a0da1dbdf7762e052abef4a0482
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3add7a02064035e363f5d2d4886edc93cbd0d37a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998685"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48705993"
 ---
 # <a name="deviceconfigurationconflictsummary-resource-type"></a>Тип ресурса Девицеконфигуратионконфликтсуммари
 
@@ -35,8 +35,8 @@ ms.locfileid: "47998685"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |конфликтингдевицеконфигуратионс|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Набор политик в конфликте с заданным параметром|
-|id|String|Идентификатор этого набора конфликтующих политик. Этот идентификатор — идентификаторы всех политик в Конфликтингдевицеконфигуратионс в лексикографикал порядке, разделенных символами подчеркивания.|
-|контрибутингсеттингс|Коллекция String|Набор параметров в конфликте с заданными политиками|
+|id|Строка|Идентификатор этого набора конфликтующих политик. Этот идентификатор — идентификаторы всех политик в Конфликтингдевицеконфигуратионс в лексикографикал порядке, разделенных символами подчеркивания.|
+|контрибутингсеттингс|Коллекция строк|Набор параметров в конфликте с заданными политиками|
 |девицечеккинсимпактед|Int32|Число возвратов, затронутых конфликтующими политиками и параметрами|
 
 ## <a name="relationships"></a>Связи
@@ -68,7 +68,6 @@ ms.locfileid: "47998685"
   "deviceCheckinsImpacted": 1024
 }
 ```
-
 
 
 

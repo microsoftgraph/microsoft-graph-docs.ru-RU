@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ac6d9b160d64a7578bb31d86dcba135eecb63bef
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a9602eea3f5f6e825453fb25f9b5703c1125f2f3
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085005"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48705738"
 ---
 # <a name="ioskioskmodeapptype-enum-type"></a>тип перечисления Иоскиоскмодеапптипе
 
@@ -26,10 +26,9 @@ ms.locfileid: "48085005"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Значение по умолчанию для устройства, без намерения.|
-|аппстореапп|1 |Приложение, которое необходимо запустить, поступает из магазина App Store.|
-|managedApp|2 |Приложение, которое необходимо запустить, встроено в устройство.|
+|аппстореапп|1,1|Приложение, которое необходимо запустить, поступает из магазина App Store.|
+|managedApp|2|Приложение, которое необходимо запустить, встроено в устройство.|
 |буилтинапп|4|Запускаемое приложение является управляемым приложением.|
-
 
 
 

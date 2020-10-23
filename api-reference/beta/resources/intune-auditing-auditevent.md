@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4b0124e369ee792af6110c533a3bd96b46f8fc9d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0695d951aaa8825153e7a20dac60f30351907e2c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076318"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706074"
 ---
 # <a name="auditevent-resource-type"></a>Тип ресурса auditEvent
 
@@ -36,8 +36,8 @@ ms.locfileid: "48076318"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|displayName|String|Отображаемое имя события.|
+|id|Строка|Ключ объекта.|
+|displayName|Строка|Отображаемое имя события.|
 |componentName|String|Имя компонента.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
 |activity|String|Понятное имя действия.|
@@ -49,7 +49,7 @@ ms.locfileid: "48076318"
 |resources|Коллекция [auditResource](../resources/intune-auditing-auditresource.md)|Изменяемые ресурсы.|
 |category|String|Категория аудита.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -113,7 +113,6 @@ ms.locfileid: "48076318"
   "category": "String"
 }
 ```
-
 
 
 

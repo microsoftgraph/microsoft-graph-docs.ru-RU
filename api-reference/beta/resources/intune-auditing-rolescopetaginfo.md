@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67927894be0f4209e915781169a45d5daa874b20
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 003906982c875fa4a70ee99c029f7c49b73b9398
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076246"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706032"
 ---
 # <a name="rolescopetaginfo-resource-type"></a>Тип ресурса Ролескопетагинфо
 
@@ -25,10 +25,10 @@ ms.locfileid: "48076246"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя тега области.|
-|ролескопетагид|String|Идентификатор тега Scope.|
+|displayName|Строка|Отображаемое имя тега области.|
+|ролескопетагид|Строка|Идентификатор тега Scope.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,7 +45,6 @@ ms.locfileid: "48076246"
   "roleScopeTagId": "String"
 }
 ```
-
 
 
 

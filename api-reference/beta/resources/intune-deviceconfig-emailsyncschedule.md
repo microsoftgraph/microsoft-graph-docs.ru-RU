@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 209cacfad96a4523cce3a6125652dc86f61227d9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fa1dfa4455a39c9d7fffff1ee95a739632cd49cd
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994206"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48705927"
 ---
 # <a name="emailsyncschedule-enum-type"></a>тип перечисления Емаилсинксчедуле
 
@@ -26,13 +26,12 @@ ms.locfileid: "47994206"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|асмессажесарриве|1 |Синхронизация по мере поступления сообщений.|
-|Вручную|2 |Синхронизация вручную.|
+|асмессажесарриве|1,1|Синхронизация по мере поступления сообщений.|
+|Вручную|2|Синхронизация вручную.|
 |фифтинминутес|4|Синхронизация каждые пятнадцать минут.|
 |thirtyMinutes|4 |Синхронизация каждые 30 минут.|
 |сикстиминутес|5 |Синхронизация каждые 60 минут.|
 |баседонмюсаже|6 |Синхронизация с учетом использования.|
-
 
 
 

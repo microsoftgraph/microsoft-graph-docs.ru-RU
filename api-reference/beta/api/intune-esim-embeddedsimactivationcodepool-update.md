@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6af2c40b0fb028b4f057c15922e2489344f80ee6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5ab6955d026324a053d14af2145aad647a585b2c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48005035"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706613"
 ---
 # <a name="update-embeddedsimactivationcodepool"></a>Обновление Ембеддедсимактиватионкодепул
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,8 +53,8 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для встроенного пула кода активации SIM-карты. Созданное системой значение, назначаемое при создании.|
-|displayName|String|Имя администратора внедренного пула кода активации SIM-карты.|
+|id|Строка|Уникальный идентификатор для встроенного пула кода активации SIM-карты. Созданное системой значение, назначаемое при создании.|
+|displayName|Строка|Имя администратора внедренного пула кода активации SIM-карты.|
 |createdDateTime|DateTimeOffset|Время создания внедренного пула кода активации SIM-карты. Созданная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения пула кода активации внедренной SIM-карты. Обновленная сторона службы.|
 |активатионкодес|Коллекция [ембеддедсимактиватионкоде](../resources/intune-esim-embeddedsimactivationcode.md)|Коды активации, принадлежащие этому пулу. Это свойство навигации используется для публикации кодов активации в Intune, но не может использоваться для считывания кодов активации из Intune.|
@@ -62,7 +62,7 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [ембеддедсимактиватионкодепул](../resources/intune-esim-embeddedsimactivationcodepool.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -113,7 +113,6 @@ Content-Length: 628
   "activationCodeCount": 3
 }
 ```
-
 
 
 

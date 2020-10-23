@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e7429433f4e1a382d0a5f4ba0dab6028bf27d283
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8049ef7a7678d7d5283d45d2236dc364f2df4669
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070977"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48706172"
 ---
 # <a name="win32lobappreturncode-resource-type"></a>Тип ресурса win32LobAppReturnCode
 
@@ -28,7 +28,7 @@ ms.locfileid: "48070977"
 |ретурнкоде|Int32|Возвращаемый код.|
 |type|[win32LobAppReturnCodeType](../resources/intune-apps-win32lobappreturncodetype.md)|Тип кода возврата. Возможные значения: `failed`, `success`, `softReboot`, `hardReboot`, `retry`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -45,7 +45,6 @@ ms.locfileid: "48070977"
   "type": "String"
 }
 ```
-
 
 
 
