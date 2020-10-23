@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 47e8d4169cf5e732c8dc8bc5a0c7260131389644
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0a888e3ddd88b71a6543c343abd66bf497cca1d9
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064236"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701420"
 ---
 # <a name="macosprocessidentifiertype-enum-type"></a>тип перечисления Макоспроцессидентифиертипе
 
@@ -25,9 +25,8 @@ ms.locfileid: "48064236"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|bundleID|1 |Указывает приложение с ИДЕНТИФИКАТОРом пакета.|
-|path|2 |Указывает путь к файлу для процесса.|
-
+|bundleID|1,1|Указывает приложение с ИДЕНТИФИКАТОРом пакета.|
+|path|2|Указывает путь к файлу для процесса.|
 
 
 

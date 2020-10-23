@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 383c272efc420cba893208e806a29df55f5429f6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f07b1dc3535e624302b3d2ad2bfd047c286604b8
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073679"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723787"
 ---
 # <a name="androidmanagedstoreappassignmentsettings-resource-type"></a>Тип ресурса Андроидманажедстореаппассигнментсеттингс
 
@@ -28,9 +28,9 @@ ms.locfileid: "48073679"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|андроидманажедстореапптраккидс|Коллекция String|Идентификаторы отслеживания, которые необходимо включить для этого назначения приложения.|
+|андроидманажедстореапптраккидс|Коллекция строк|Идентификаторы отслеживания, которые необходимо включить для этого назначения приложения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -48,7 +48,6 @@ ms.locfileid: "48073679"
   ]
 }
 ```
-
 
 
 

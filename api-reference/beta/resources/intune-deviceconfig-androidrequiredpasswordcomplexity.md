@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e1e5de9270126a295e05fad789ebd03e392da05c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f26f1e55e4f4703a06db6a7b2d44fb1b3cfd753a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023648"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724623"
 ---
 # <a name="androidrequiredpasswordcomplexity-enum-type"></a>тип перечисления Андроидрекуиредпассвордкомплексити
 
@@ -25,11 +25,10 @@ ms.locfileid: "48023648"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Значение по умолчанию для устройства без пароля.|
-|потребление|1 |Сложность пароля на устройстве имеет тип, заданный в документации по Android.|
-|medium|2 |Сложность пароля на устройстве имеет тип Medium, как определено в документации по Android.|
+|none|нуль|Значение по умолчанию для устройства без пароля.|
+|потребление|1,1|Сложность пароля на устройстве имеет тип, заданный в документации по Android.|
+|medium|2|Сложность пароля на устройстве имеет тип Medium, как определено в документации по Android.|
 |высокоуровневых|4|Сложность пароля на устройстве имеет тип высокая, как определено в документации по Android.|
-
 
 
 
