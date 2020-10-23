@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9022b320507cc10455e2eeb3ebd3a3ca58d52f71
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d065903190c0422380c7b15b70626ecb28dcf9c3
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993842"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727486"
 ---
 # <a name="macoscontentcachingtype-enum-type"></a>тип перечисления Макосконтенткачингтипе
 
@@ -26,9 +26,8 @@ ms.locfileid: "47993842"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Значение, используемое по умолчанию. Будут кэшироваться данные пользователя в iCloud и данных, не являющихся iCloud.|
-|усерконтентонли|1 |Разрешить службе кэширования контента Apple кэшировать данные пользователя в iCloud.|
-|шаредконтентонли|2 |Разрешить службе кэширования контента Apple кэшировать данные, не относящиеся к iCloud (например, приложения и обновления программного обеспечения).|
-
+|усерконтентонли|1,1|Разрешить службе кэширования контента Apple кэшировать данные пользователя в iCloud.|
+|шаредконтентонли|2|Разрешить службе кэширования контента Apple кэшировать данные, не относящиеся к iCloud (например, приложения и обновления программного обеспечения).|
 
 
 

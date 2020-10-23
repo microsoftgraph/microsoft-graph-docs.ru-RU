@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6594e67b2147594c941e29cf9662d3f18de0ae4f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: afd5364cf4e24f0bab2d2d950868e762cec77e26
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48011139"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48712955"
 ---
 # <a name="getuseridswithflaggedappregistration-function"></a>Функция getUserIdsWithFlaggedAppRegistration
 
@@ -43,13 +43,13 @@ GET /deviceAppManagement/managedAppRegistrations/getUserIdsWithFlaggedAppRegistr
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении эта функция возвращает код отклика `200 OK` и коллекцию String в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -73,7 +73,6 @@ Content-Length: 79
   ]
 }
 ```
-
 
 
 

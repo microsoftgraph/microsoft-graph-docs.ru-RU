@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4fde5787e77827950bab4b5f68bf94325eea3446
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2213a0a16ce4e4bb2954d6eebda27efe192a5772
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095095"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681973"
 ---
 # <a name="macosvppappassignmentsettings-resource-type"></a>Тип ресурса Макосвппаппассигнментсеттингс
 
@@ -29,6 +29,7 @@ ms.locfileid: "48095095"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |useDeviceLicensing|Boolean|Указывает, используется ли лицензирование устройств.|
+|унинсталлондевицеремовал|Логический|Указывает, следует ли удалить приложение, когда устройство удалено из Intune.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -43,10 +44,10 @@ ms.locfileid: "48095095"
 ``` json
 {
   "@odata.type": "#microsoft.graph.macOsVppAppAssignmentSettings",
-  "useDeviceLicensing": true
+  "useDeviceLicensing": true,
+  "uninstallOnDeviceRemoval": true
 }
 ```
-
 
 
 

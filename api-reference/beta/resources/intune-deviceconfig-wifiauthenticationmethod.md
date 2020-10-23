@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Вифиаусентикатионмесод
-description: Способ проверки подлинности Wi/Fi.
+description: Wi-Fi способ проверки подлинности.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4c916cdc7fbde6546005c7798ccfd7bf495f5367
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 608590c58600aa68e7f9aecb24852840ab7b6cc3
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048894"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727429"
 ---
 # <a name="wifiauthenticationmethod-enum-type"></a>тип перечисления Вифиаусентикатионмесод
 
@@ -20,15 +20,14 @@ ms.locfileid: "48048894"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Способ проверки подлинности Wi/Fi.
+Wi-Fi способ проверки подлинности.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |certificate|нуль|Используйте сертификат удостоверения для проверки подлинности.|
-|усернамеандпассворд|1 |Используйте имя пользователя и пароль для проверки подлинности.|
-|дериведкредентиал|2 |Используйте производные учетные данные для проверки подлинности.|
-
+|усернамеандпассворд|1,1|Используйте имя пользователя и пароль для проверки подлинности.|
+|дериведкредентиал|2|Используйте производные учетные данные для проверки подлинности.|
 
 
 

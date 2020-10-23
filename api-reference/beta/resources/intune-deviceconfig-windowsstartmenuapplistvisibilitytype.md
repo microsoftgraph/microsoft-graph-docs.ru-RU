@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 19502b86b420221124f8fdb3d667ef3537033e38
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f18af9736b7e7d097bb438a25a9b89fd0fafe137
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061695"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48684808"
 ---
 # <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>тип перечисления Виндовсстартменуапплиствисибилититипе
 
@@ -26,10 +26,9 @@ ms.locfileid: "48061695"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Определено пользователем. Значение по умолчанию.|
-|свертываются|1 |Свертывание списка приложений в меню "Пуск".|
-|удалить|2 |Полностью удаляет список приложений из меню "Пуск".|
+|свертываются|1,1|Свертывание списка приложений в меню "Пуск".|
+|удалить|2|Полностью удаляет список приложений из меню "Пуск".|
 |дисаблесеттингсапп|4 |Отключает соответствующий переключатель (сворачивать или удалить) в приложении "Параметры".|
-
 
 
 

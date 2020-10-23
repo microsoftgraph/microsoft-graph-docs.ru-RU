@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2807e54150e3fa1d5f77d237485cee7774ba4f7e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0398d2634ef4071c4d5429073247800c2427f2db
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004062"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727563"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>Тип ресурса androidMinimumOperatingSystem
 
@@ -33,9 +33,9 @@ ms.locfileid: "48004062"
 |v4_4|Boolean|Версия 4.4 или выше.|
 |v5_0|Boolean|Версия 5.0 или выше.|
 |v5_1|Boolean|Версия 5.1 или выше.|
-|v6_0|Логическое|Версия 6,0 или более поздняя.|
-|v7_0|Логическое|Версия 7,0 или более поздняя.|
-|v7_1|Логическое|Версия 7,1 или более поздняя.|
+|v6_0|Логический|Версия 6,0 или более поздняя.|
+|v7_0|Логический|Версия 7,0 или более поздняя.|
+|v7_1|Логический|Версия 7,1 или более поздняя.|
 |v8_0|Boolean|Версия 8.0 или выше.|
 |v8_1|Boolean|Версия 8,1 или более поздняя.|
 |v9_0|Boolean|Версия 9.0 или выше.|
@@ -69,7 +69,6 @@ ms.locfileid: "48004062"
   "v9_0": true
 }
 ```
-
 
 
 

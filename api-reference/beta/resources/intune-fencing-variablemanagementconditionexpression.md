@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2cb61473401d868fb98a9ea041f268252168d5be
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 756e9c24b3ea2ccb2f5ba03de61e9b1a67e32174
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031244"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727304"
 ---
 # <a name="variablemanagementconditionexpression-resource-type"></a>Тип ресурса Вариаблеманажементкондитионекспрессион
 
@@ -28,9 +28,9 @@ ms.locfileid: "48031244"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|манажементкондитионид|String|Идентификатор условия управления, используемый для оценки выражения.|
+|манажементкондитионид|Строка|Идентификатор условия управления, используемый для оценки выражения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,7 +46,6 @@ ms.locfileid: "48031244"
   "managementConditionId": "String"
 }
 ```
-
 
 
 
