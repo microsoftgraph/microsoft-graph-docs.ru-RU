@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1f37ecd9ae837c0e2c6adb42d4f145fc22dcbbc5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 09780e959d50a433893b70edcd308420c55be2f4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48000030"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709224"
 ---
 # <a name="create-enrollmentconfigurationassignment"></a>Создание объекта enrollmentConfigurationAssignment
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,10 +53,10 @@ POST /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigura
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ назначения конфигурации регистрации|
+|id|Строка|Ключ назначения конфигурации регистрации|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Представляет назначение управляемым устройствам в клиенте.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Тип ресурса, используемого для развертывания, в группу, Direct или набор политик. Возможные значения: `direct`, `policySets`.|
-|Идентификатор|String|Идентификатор ресурса, используемого для развертывания в группе|
+|Идентификатор|Строка|Идентификатор ресурса, используемого для развертывания в группе|
 
 
 
@@ -103,7 +103,6 @@ Content-Length: 438
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

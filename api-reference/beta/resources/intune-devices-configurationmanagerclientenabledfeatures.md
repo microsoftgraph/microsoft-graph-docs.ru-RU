@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 317378e58c870e77140ae961925aeb59a001daff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cca44f666e5636d221521045831fd58974079e98
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060645"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48708783"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>Тип ресурса configurationManagerClientEnabledFeatures
 
@@ -31,8 +31,8 @@ ms.locfileid: "48060645"
 |deviceConfiguration|Boolean|Управляет ли Intune конфигурацией устройства|
 |compliancePolicy|Boolean|Управляется ли Intune политикой соответствия требованиям|
 |windowsUpdateForBusiness|Boolean|Управляет ли Intune Центром обновления Windows для бизнеса|
-|ендпоинтпротектион|Boolean|Управляет ли Intune Endpoint Protection|
-|оффицеаппс|Boolean|Управляет ли Intune приложением Office|
+|ендпоинтпротектион|Логический|Управляет ли Intune Endpoint Protection|
+|оффицеаппс|Логический|Управляет ли Intune приложением Office|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -57,7 +57,6 @@ ms.locfileid: "48060645"
   "officeApps": true
 }
 ```
-
 
 
 

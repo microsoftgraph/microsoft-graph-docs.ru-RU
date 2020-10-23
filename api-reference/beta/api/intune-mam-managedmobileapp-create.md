@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ab212fafcd03ed20735a888c757b319d8186f6cc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e962c9af7aef586513931ad7d26d4b9f3063e9ad
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48065048"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709357"
 ---
 # <a name="create-managedmobileapp"></a>Создание объекта managedMobileApp
 
@@ -49,7 +49,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта managedMobileApp в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта managedMobileApp.
@@ -57,7 +57,7 @@ POST /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCo
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Идентификатор приложения с типом его операционной системы.|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |version|String|Версия объекта.|
 
 
@@ -101,7 +101,6 @@ Content-Length: 275
   "version": "Version value"
 }
 ```
-
 
 
 

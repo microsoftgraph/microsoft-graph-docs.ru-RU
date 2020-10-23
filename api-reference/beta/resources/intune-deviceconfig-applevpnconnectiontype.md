@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b3797e01d523907731a72aa8b44c9613e4e1400e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d392ec953ba802ccda544238c061d1fbb78eb029
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075961"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48708895"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>тип перечисления Апплевпнконнектионтипе
 
@@ -26,8 +26,8 @@ ms.locfileid: "48075961"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Цискоаниконнект|нуль|Cisco Аниконнект.|
-|пулсесекуре|1 |Безопасный импульс.|
-|f5EdgeClient|2 |Пограничный клиент F5.|
+|пулсесекуре|1,1|Безопасный импульс.|
+|f5EdgeClient|2|Пограничный клиент F5.|
 |деллсоникваллмобилеконнект|4|Мобильное подключение Dell Сониквалл.|
 |чеккпоинткапсулевпн|4 |Проверка покапсулы VPN.|
 |кустомвпн|5 |Пользовательская сеть VPN.|
@@ -36,14 +36,13 @@ ms.locfileid: "48075961"
 |ciscoAnyConnectV2|8 |Cisco Аниконнект v2.|
 |Элемент paloaltoglobalprotect|9 |Palo Alto сети Глобалпротект.|
 |зскалерприватеакцесс|10 |Частный доступ зскалер.|
-|f5Access2018|11 |F5 доступ 2018.|
+|f5Access2018|-11:00|F5 доступ 2018.|
 |Цитриксссо|12 |Единый вход Citrix.|
 |paloAltoGlobalProtectV2|13 |Palo Alto сети Глобалпротект v2.|
 |Клиентских|14 |Клиентских.|
 |Группа|15 |Группа.|
 |микрософттуннел|16 |Туннель Microsoft.|
 |нетмотионмобилити|17 |Мобильность Нетмотион.|
-
 
 
 
