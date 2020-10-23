@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c0ea45dde6026ad0d101e54caf0026d953b96491
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0d7c8d67190d9559aa78f7f805dd1573108c89a3
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47974326"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734380"
 ---
 # <a name="delete-appleenrollmentprofileassignment"></a>Удаление Апплинроллментпрофилеассигнмент
 
@@ -43,7 +43,7 @@ DELETE /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiate
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/appleUserInitiatedEnrol
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 63b523046e64c173662abef117fcddb1dfe3f7e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8ba26feb55f3c2074758f72233d702bce90b85ba
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992714"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734114"
 ---
 # <a name="create-userexperienceanalyticsapphealthdevicemodelperformance"></a>Создание Усерекспериенцеаналитиксапфеалсдевицемоделперформанце
 
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDeviceModelPerformance
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,17 +53,17 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDeviceModelPerformance
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности модели устройства Analytics User Experience.|
+|id|Строка|Уникальный идентификатор объекта производительности модели устройства Analytics User Experience.|
 |deviceModel|String|Имя модели устройства.|
-|девицемануфактурер|String|Название изготовителя устройства.|
+|девицемануфактурер|Строка|Название изготовителя устройства.|
 |активедевицекаунт|Int32|Количество активных устройств для модели. Допустимые значения: от 2147483648 до 2147483647|
 |меантиметофаилуреинминутес|Int32|Среднее время до сбоя устройства модели в минутах. Допустимые значения: от 2147483648 до 2147483647|
 |моделапфеалсскоре|Двойное с плавающей точкой|Показатель работоспособности приложения модели устройства. Допустимые значения — 1 79769313486232e308 E + 308 — 1 79769313486232e308 E + 308|
-|моделапфеалсстатус|String|Общее состояние работоспособности приложения модели устройства.|
+|моделапфеалсстатус|Строка|Общее состояние работоспособности приложения модели устройства.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксапфеалсдевицемоделперформанце](../resources/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -104,7 +104,6 @@ Content-Length: 408
   "modelAppHealthStatus": "Model App Health Status value"
 }
 ```
-
 
 
 

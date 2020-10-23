@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ceb30b2dc6a154eb337684cb4eb5816453846886
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b898cb1fc896a7797a72ab0408bd2218adc24f4e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064915"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734317"
 ---
 # <a name="create-localizednotificationmessage"></a>Создание объекта localizedNotificationMessage
 
@@ -46,14 +46,14 @@ POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplate
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта localizedNotificationMessage в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта localizedNotificationMessage.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |locale|String|Языковой стандарт, для которого предназначено сообщение.|
 |subject|String|Тема шаблона сообщения.|
@@ -100,7 +100,6 @@ Content-Length: 313
   "isDefault": true
 }
 ```
-
 
 
 

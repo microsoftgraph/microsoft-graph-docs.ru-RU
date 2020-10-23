@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4d2e038d5f75f25bb534bfc5923b946d0a0dfd16
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c1ef23c9428b2d8b5ed82c5264d829eb0b1febde
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47994143"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734037"
 ---
 # <a name="filevaultstate-enum-type"></a>тип перечисления Филеваултстате
 
@@ -26,10 +26,9 @@ ms.locfileid: "47994143"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |success|нуль|Успешное состояние Филеваулт|
-|дривинкриптедбюсер|1 |Филеваулт был включен пользователем и не управляется политикой|
-|усердеферреденкриптион|2 |Политика Филеваулт успешно установлена, но пользователь не начал шифрование|
+|дривинкриптедбюсер|1,1|Филеваулт был включен пользователем и не управляется политикой|
+|усердеферреденкриптион|2|Политика Филеваулт успешно установлена, но пользователь не начал шифрование|
 |ескровнотенаблед|4 |Филеваулт не включен параметр "депонирование ключей восстановления"|
-
 
 
 

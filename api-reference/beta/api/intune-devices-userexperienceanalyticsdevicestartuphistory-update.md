@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2ff216d06922f50dabc539f046055c73aebca739
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 76e0b597b5569f641e56f8a9e4f3b3e1f7b6dca6
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48082590"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733443"
 ---
 # <a name="update-userexperienceanalyticsdevicestartuphistory"></a>Обновление Усерекспериенцеаналитиксдевицестартуфистори
 
@@ -46,7 +46,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperie
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [усерекспериенцеаналитиксдевицестартуфистори](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитиксдевицестартуфистори](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md).
@@ -64,8 +64,8 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperie
 |корелогинтимеинмс|Int32|Время входа в ядро устройства аналитики взаимодействия с пользователем (в миллисекундах).|
 |респонсиведесктоптимеинмс|Int32|Время, в течение которого выполняется анализ пользовательского интерфейса на рабочем столе в миллисекундах.|
 |тоталлогинтимеинмс|Int32|Общее время входа в систему для устройства аналитики взаимодействия с пользователем (в миллисекундах).|
-|исфирстлогин|Boolean|Первое имя входа устройства Analytics User Experience.|
-|исфеатуреупдате|Boolean|Загрузочная запись устройства аналитики взаимодействия с пользователем — это обновление компонентов.|
+|исфирстлогин|Логический|Первое имя входа устройства Analytics User Experience.|
+|исфеатуреупдате|Логический|Загрузочная запись устройства аналитики взаимодействия с пользователем — это обновление компонентов.|
 |operatingSystemVersion|String|Версия операционной системы для записи загрузки устройства службы аналитики взаимодействия с пользователем.|
 |рестарткатегори|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|Категория перезагрузки ОС. Возможные значения: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`, `longPowerButtonPress`, `bootError`.|
 |рестартстопкоде|Строка|Код остановки перезапуска ОС. Здесь показан код проверки ошибки, который можно использовать для поиска причины синего экрана.|
@@ -73,7 +73,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupHistory/{userExperie
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерекспериенцеаналитиксдевицестартуфистори](../resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -134,7 +134,6 @@ Content-Length: 729
   "restartFaultBucket": "Restart Fault Bucket value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 28387a3afdd8111cf8212ca9a52d923da3ae0b20
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 24d4747c6f9c61460f23a25f81a32c423a17e878
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48068254"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734373"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>Обновление Граупполицидефинитионфиле
 
@@ -48,26 +48,26 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Локализованное понятное имя файла ADMX.|
-|description|String|Локализованное описание параметров политики в файле ADMX. По умолчанию это значение пусто.|
-|лангуажекодес|Коллекция String|Поддерживаемые коды языков для ADMX.|
-|таржетпрефикс|String|Задает логическое имя, которое ссылается на пространство имен в файле ADMX.|
-|Атрибут|String|Указывает универсальный код ресурса (URI), используемый для идентификации пространства имен в файле ADMX.|
+|displayName|Строка|Локализованное понятное имя файла ADMX.|
+|description|Строка|Локализованное описание параметров политики в файле ADMX. По умолчанию это значение пусто.|
+|лангуажекодес|Коллекция строк|Поддерживаемые коды языков для ADMX.|
+|таржетпрефикс|Строка|Задает логическое имя, которое ссылается на пространство имен в файле ADMX.|
+|Атрибут|Строка|Указывает универсальный код ресурса (URI), используемый для идентификации пространства имен в файле ADMX.|
 |полицитипе|[граупполицитипе](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
-|последним|String|Версия редакции, связанная с файлом.|
-|id|String|Ключ объекта.|
+|последним|Строка|Версия редакции, связанная с файлом.|
+|id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -115,7 +115,6 @@ Content-Length: 471
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

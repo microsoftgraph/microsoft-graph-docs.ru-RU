@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 09fdc3b7d099646dc36e6b398657962b638a7ab8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ebaa80f901e8da092fee9f398c2a57356253f0cb
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061023"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734198"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>тип перечисления Девицеманажементтемплатетипе
 
@@ -26,8 +26,8 @@ ms.locfileid: "48061023"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |секуритибаселине|нуль|Шаблон базового плана безопасности|
-|спеЦиализеддевицес|1 |Шаблон специализированных устройств|
-|адванцедсреатпротектионсекуритибаселине|2 |Основной шаблон безопасности Advanced Threat protection|
+|спеЦиализеддевицес|1,1|Шаблон специализированных устройств|
+|адванцедсреатпротектионсекуритибаселине|2|Основной шаблон безопасности Advanced Threat protection|
 |deviceConfiguration|4|Шаблон конфигурации устройства|
 |собственный|4 |Настраиваемый шаблон, определенный администратором|
 |секурититемплате|5 |Шаблоны с определенными параметрами безопасности|
@@ -36,7 +36,6 @@ ms.locfileid: "48061023"
 |девицекомплианце|8 |Шаблон соответствия требованиям устройств|
 |deviceConfigurationForOffice365|9 |Настройка устройств для параметров Microsoft Office 365|
 |клаудпк|10 |Шаблон базового уровня безопасности для Cloud PC|
-
 
 
 

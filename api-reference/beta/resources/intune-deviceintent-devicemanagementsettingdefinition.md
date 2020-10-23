@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fa69157c22c7b04ec3d5afcee3c029b50354f122
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 782986bac762ff434cb35955f7811eb71de6bf61
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061226"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734002"
 ---
 # <a name="devicemanagementsettingdefinition-resource-type"></a>Тип ресурса Девицеманажементсеттингдефинитион
 
@@ -34,14 +34,16 @@ ms.locfileid: "48061226"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор определения параметра|
+|id|Строка|Идентификатор определения параметра|
 |Типом|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|Тип данных значения. Возможные значения: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
-|displayName|String|Отображаемое имя параметра|
-|истоплевел|Boolean|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
-|description|String|Описание параметра|
-|плацехолдертекст|String|Замещающий текст в качестве примера допустимых входных данных|
-|документатионурл|String|URL-адрес для установки документации|
-|keywords|Коллекция объектов string|Ключевые слова, связанные с параметром|
+|displayName|Строка|Отображаемое имя параметра|
+|истоплевел|Логический|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
+|description|Строка|Описание параметра|
+|плацехолдертекст|Строка|Замещающий текст в качестве примера допустимых входных данных|
+|документатионурл|Строка|URL-адрес для установки документации|
+|хеадертитле|Строка|Заголовок параметра "заголовок" представляет категорию или раздел параметров или параметров|
+|хеадерсубтитле|Строка|Подзаголовок заголовка параметра для дополнительных сведений о категории или разделе|
+|keywords|Коллекция строк|Ключевые слова, связанные с параметром|
 |провероч|Коллекция [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)|Коллекция ограничений для значения параметра|
 |зависящ|Коллекция [девицеманажементсеттингдепенденци](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Коллекция зависимостей для других параметров|
 
@@ -66,6 +68,8 @@ ms.locfileid: "48061226"
   "description": "String",
   "placeholderText": "String",
   "documentationUrl": "String",
+  "headerTitle": "String",
+  "headerSubtitle": "String",
   "keywords": [
     "String"
   ],
@@ -93,7 +97,6 @@ ms.locfileid: "48061226"
   ]
 }
 ```
-
 
 
 

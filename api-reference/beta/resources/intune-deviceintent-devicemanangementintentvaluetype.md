@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 421f8a8b4a5a699f39ad9f5d378890c5a26df598
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c8c57a1b1bcd233fc63926ed015299d5a235359c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060995"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734191"
 ---
 # <a name="devicemanangementintentvaluetype-enum-type"></a>тип перечисления Девицемананжементинтентвалуетипе
 
@@ -25,13 +25,12 @@ ms.locfileid: "48060995"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|целое|нуль|Значение параметра представляет собой целое число|
-|boolean|1 |Значение параметра является логическим|
-|string|2 |Значением параметра является строка|
+|integer|нуль|Значение параметра представляет собой целое число|
+|boolean|1,1|Значение параметра является логическим|
+|string|2|Значением параметра является строка|
 |знак|4|Значение параметра представляет собой сложный объект|
 |.|4 |Значение параметра представляет собой коллекцию|
 |абстракткомплекс|5 |Значение параметра является абстрактным сложным объектом|
-
 
 
 

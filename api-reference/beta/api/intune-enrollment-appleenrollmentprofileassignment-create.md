@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: db6b389b4ac7169cf65a8293634c087543de4da4
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 74cc106ff7a6a13bc1c7e0c9ddfec07fcacb9427
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040772"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734387"
 ---
 # <a name="create-appleenrollmentprofileassignment"></a>Создание Апплинроллментпрофилеассигнмент
 
@@ -46,7 +46,7 @@ POST /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedE
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Апплинроллментпрофилеассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Апплинроллментпрофилеассигнмент.
@@ -58,7 +58,7 @@ POST /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedE
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [апплинроллментпрофилеассигнмент](../resources/intune-enrollment-appleenrollmentprofileassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -97,7 +97,6 @@ Content-Length: 376
   }
 }
 ```
-
 
 
 

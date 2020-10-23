@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a6c3e7151ee4ccb84486d9996dca4a48fb1a4a5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c3573b1c25c56216cf79301726015f01cde8927f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090475"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733373"
 ---
 # <a name="get-appleuserinitiatedenrollmentprofile"></a>Получение Апплеусеринитиатеденроллментпрофиле
 
@@ -49,10 +49,10 @@ GET /deviceManagement/appleUserInitiatedEnrollmentProfiles/{appleUserInitiatedEn
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [апплеусеринитиатеденроллментпрофиле](../resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -91,7 +91,6 @@ Content-Length: 662
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0b1771c752b804aca270b6dc8f31687ca8007904
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e5a3dcd3a1c79d33cfba11a0a04b2ef93f1a8f3c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060547"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48734170"
 ---
 # <a name="devicecompliancescriptdevicestate-resource-type"></a>Тип ресурса Девицекомплианцескриптдевицестате
 
@@ -34,13 +34,13 @@ ms.locfileid: "48060547"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта состояния "сценарий соответствия требованиям устройства". Это свойство доступно только для чтения.|
+|id|Строка|Ключ объекта состояния "сценарий соответствия требованиям устройства". Это свойство доступно только для чтения.|
 |детектионстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние обнаружения с последнего выполнения скрипта соответствия устройств требованиям. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |ластстатеупдатедатетиме|DateTimeOffset|Последняя метка времени выполнения сценария соответствия требованиям устройства|
 |експектедстатеупдатедатетиме|DateTimeOffset|Следующий штамп времени, когда ожидается выполнение сценария соответствия устройства|
 |lastSyncDateTime|DateTimeOffset|Время последнего синхронизации расширения управления Intune с Intune|
-|скриптаутпут|String|Выходные данные сценария обнаружения|
-|скриптеррор|String|Ошибка сценария обнаружения|
+|скриптаутпут|Строка|Выходные данные сценария обнаружения|
+|скриптеррор|Строка|Ошибка сценария обнаружения|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -67,7 +67,6 @@ ms.locfileid: "48060547"
   "scriptError": "String"
 }
 ```
-
 
 
 
