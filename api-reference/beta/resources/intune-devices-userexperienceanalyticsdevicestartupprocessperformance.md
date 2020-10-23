@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 11f8f7b6dc4d217235778de0cb36661361be6e10
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 949951e263aeb12af29f26f99a35a89d1194005d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080910"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725388"
 ---
 # <a name="userexperienceanalyticsdevicestartupprocessperformance-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксдевицестартуппроцессперформанце
 
@@ -65,7 +65,6 @@ ms.locfileid: "48080910"
   "totalImpactInMs": 1024
 }
 ```
-
 
 
 

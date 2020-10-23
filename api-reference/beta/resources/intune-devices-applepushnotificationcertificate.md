@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d079d3f6c0c53dc2fc7aa0c697604aa3968f2ac3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8c51cc7fb990418335a33580d7257c9563004748
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060890"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725556"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Тип ресурса applePushNotificationCertificate
 
@@ -33,14 +33,14 @@ ms.locfileid: "48060890"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сертификата|
+|id|Строка|Уникальный идентификатор сертификата|
 |appleIdentifier|String|Идентификатор Apple Id учетной записи, используемой для создания MDM Push Certificate.|
 |topicIdentifier|String|Идентификатор темы.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата push-уведомлений Apple.|
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата push-уведомлений Apple.|
-|цертификатеуплоадстатус|String|Состояние отправки сертификата.|
-|цертификатеуплоадфаилуререасон|String|Причина сбоя отправки сертификата.|
-|цертификатесериалнумбер|String|Серийный номер сертификата. Это свойство доступно только для чтения.|
+|цертификатеуплоадстатус|Строка|Состояние отправки сертификата.|
+|цертификатеуплоадфаилуререасон|Строка|Причина сбоя отправки сертификата.|
+|цертификатесериалнумбер|Строка|Серийный номер сертификата. Это свойство доступно только для чтения.|
 |certificate|String|Н/Д|
 
 ## <a name="relationships"></a>Связи
@@ -68,7 +68,6 @@ ms.locfileid: "48060890"
   "certificate": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9defb03d04987d68c5bb55806458869c2d37be50
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a684d92988b87daa2f12de9df302e424672e7c14
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080231"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725864"
 ---
 # <a name="deptokentype-enum-type"></a>тип перечисления Дептокентипе
 
@@ -25,10 +25,9 @@ ms.locfileid: "48080231"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Тип маркера — None|
-|DEP|1 |Тип токена — DEP.|
-|апплесчулманажер|2 |Тип маркера — Apple School Manager|
-
+|none|нуль|Тип маркера — None|
+|DEP|1,1|Тип токена — DEP.|
+|апплесчулманажер|2|Тип маркера — Apple School Manager|
 
 
 

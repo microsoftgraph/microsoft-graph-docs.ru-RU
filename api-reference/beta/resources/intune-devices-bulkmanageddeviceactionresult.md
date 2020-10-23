@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 97b56db5eb906d16b344e9e8c0a2bbb920cf5e46
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e6993d7b55397320ad8cae8d669db59651827235
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060842"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725521"
 ---
 # <a name="bulkmanageddeviceactionresult-resource-type"></a>Тип ресурса Булкманажеддевицеактионресулт
 
@@ -25,10 +25,10 @@ ms.locfileid: "48060842"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|сукцессфулдевицеидс|Коллекция объектов string|Успешное выполнение устройств|
-|фаиледдевицеидс|Коллекция объектов string|Неисправные устройства|
-|нотфаунддевицеидс|Коллекция объектов string|Устройства не найдены|
-|нотсуппортеддевицеидс|Коллекция объектов string|Неподдерживаемые устройства|
+|сукцессфулдевицеидс|Коллекция строк|Успешное выполнение устройств|
+|фаиледдевицеидс|Коллекция строк|Неисправные устройства|
+|нотфаунддевицеидс|Коллекция строк|Устройства не найдены|
+|нотсуппортеддевицеидс|Коллекция строк|Неподдерживаемые устройства|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -57,7 +57,6 @@ ms.locfileid: "48060842"
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 63f0e254c90b259f2d1756000c34b852433ac429
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1f667f7408ca4a9ce9d29ca33e8e79f338456091
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049151"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48726411"
 ---
 # <a name="visibilitysetting-enum-type"></a>тип перечисления Висибилитисеттинг
 
@@ -26,9 +26,8 @@ ms.locfileid: "48049151"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|скрытых|1 |Скрытых.|
-|отобразит|2 |Отобразит.|
-
+|скрытых|1,1|Скрытых.|
+|отобразит|2|Отобразит.|
 
 
 

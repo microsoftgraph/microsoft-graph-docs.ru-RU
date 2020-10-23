@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6b1be15b0639047f5662f972118a98c28a4eb58b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 43cd91db1eb0d0d476d590601ba131cc526ea90d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089457"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48726275"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>Тип ресурса windowsAutopilotDeploymentProfile
 
@@ -41,11 +41,11 @@ ms.locfileid: "48089457"
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения профиля|
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Настройка "нет на месте"|
 |енроллментстатусскринсеттингс|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Настройка экрана состояния регистрации|
-|екстраксардварехаш|Boolean|Извлечение Хардварехаш для профиля|
+|екстраксардварехаш|Логический|Извлечение Хардварехаш для профиля|
 |девиценаметемплате|Строка|Шаблон, используемый для именования автопилотного устройства. Это может быть настраиваемый текст, который также может содержать серийный номер устройства или случайное число. Общая длина текста, созданного шаблоном, не может превышать 15 символов.|
 |deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|Тип устройства автопилота, к которому применяется этот профиль. Возможные значения: `windowsPc`, `surfaceHub2`.|
-|енаблевхитеглове|Boolean|Включите для профиля белый Глове для автопилотного развертывания.|
-|roleScopeTagIds|Коллекция String|Теги областей для профиля.|
+|енаблевхитеглове|Логический|Включите для профиля белый Глове для автопилотного развертывания.|
+|roleScopeTagIds|Коллекция строк|Теги областей для профиля.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -99,7 +99,6 @@ ms.locfileid: "48089457"
   ]
 }
 ```
-
 
 
 

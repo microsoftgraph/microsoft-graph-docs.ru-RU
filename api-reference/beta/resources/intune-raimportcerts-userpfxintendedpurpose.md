@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: be8b798dfc79bd291f3ce91021ea15ff5d36639f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8db764032db2d15a93441d98cb0169ebc0316ca7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993289"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48726320"
 ---
 # <a name="userpfxintendedpurpose-enum-type"></a>тип перечисления Усерпфксинтендедпурпосе
 
@@ -26,11 +26,10 @@ ms.locfileid: "47993289"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |неназначенных|нуль|Не назначены роли и использования.|
-|смиминкриптион|1 |Является допустимым для шифрования S/MIME.|
-|смимесигнинг|2 |Является допустимым для подписывания S/MIME.|
+|смиминкриптион|1,1|Является допустимым для шифрования S/MIME.|
+|смимесигнинг|2|Является допустимым для подписывания S/MIME.|
 |виртуального|4 |Допустимо для использования в VPN.|
 |подключений|8 |Допустимо для использования в Wi-Fi.|
-
 
 
 

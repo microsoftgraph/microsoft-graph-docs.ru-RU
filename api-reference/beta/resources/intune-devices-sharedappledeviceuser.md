@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: df9f47aa4655c0e360d5c89f38443f5f8dc499ae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3946247ba9424fb1c961a11753376b7bcfb78c4a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081008"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724454"
 ---
 # <a name="sharedappledeviceuser-resource-type"></a>Тип ресурса Шаредаппледевицеусер
 
@@ -26,7 +26,7 @@ ms.locfileid: "48081008"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |userPrincipalName|String|Имя пользователя|
-|дататосинк|Boolean|Данные для синхронизации|
+|дататосинк|Логический|Данные для синхронизации|
 |Квота|Int64|Квота данных|
 |Используется|Int64|Квота данных|
 
@@ -49,7 +49,6 @@ ms.locfileid: "48081008"
   "dataUsed": 1024
 }
 ```
-
 
 
 

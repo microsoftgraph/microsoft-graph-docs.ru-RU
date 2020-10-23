@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b4c2c0ec5a532be1a9cb3090a4d2a1b6d69cb0fb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 04bfeb269bc41c8114ca11427c8a41e56e2c36aa
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48082137"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724433"
 ---
 # <a name="userexperienceanalyticsapphealthappperformancebyappversion-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион
 
@@ -26,10 +26,10 @@ ms.locfileid: "48082137"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Усерекспериенцеаналитиксапфеалсаппперформанцебяппверсионс](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-list.md)|Коллекция [усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)|Список свойств и связей объектов [усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md) .|
-|[Получение Усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-get.md)|[усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)|Чтение свойств и связей объекта [усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md) .|
-|[Создание Усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-create.md)|[усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)|Создание нового объекта [усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md) .|
+|[Получение Усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-get.md)|[userExperienceAnalyticsAppHealthAppPerformanceByAppVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)|Чтение свойств и связей объекта [усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md) .|
+|[Создание Усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-create.md)|[userExperienceAnalyticsAppHealthAppPerformanceByAppVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)|Создание нового объекта [усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md) .|
 |[Удаление Усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-delete.md)|Нет|Удаляет объект [усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md).|
-|[Обновление Усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-update.md)|[усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)|Обновление свойств объекта [усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md) .|
+|[Обновление Усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-update.md)|[userExperienceAnalyticsAppHealthAppPerformanceByAppVersion](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md)|Обновление свойств объекта [усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -67,7 +67,6 @@ ms.locfileid: "48082137"
   "meanTimeToFailureInMinutes": 1024
 }
 ```
-
 
 
 

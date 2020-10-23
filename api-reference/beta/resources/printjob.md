@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 2c0a1bdb4ec3ebe3c87b5b40595d30cf9108c5bf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7810c8cd864020c42de4482deea67620950f6cf0
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048743"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48726306"
 ---
 # <a name="printjob-resource-type"></a>Тип ресурса printJob
 
@@ -24,10 +24,10 @@ ms.locfileid: "48048743"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Получение](../api/printjob-get.md) | [printJob](printjob.md) | Чтение свойств и связей объекта printJob. |
-| [Создание](../api/printer-post-jobs.md) | [printJob](printjob.md) | Создание нового объекта задания печати. |
-| [Начало](../api/printjob-startprintjob.md)|Нет|Запустите задание печати.|
-| [Отмена](../api/printjob-cancelprintjob.md)|Нет|Отмена задания печати.|
+| [получение](../api/printjob-get.md); | [printJob](printjob.md) | Чтение свойств и связей объекта printJob. |
+| [создание](../api/printer-post-jobs.md); | [printJob](printjob.md) | Создание нового объекта задания печати. |
+| [Начало](../api/printjob-start.md)|Нет|Запустите задание печати.|
+| [Отмена](../api/printjob-cancel.md)|Нет|Отмена задания печати.|
 | [Перенаправление (на другой принтер)](../api/printjob-redirect.md) | [printJob](printjob.md) | Задание печати, помещенное в очередь для конечного принтера. |
 
 ## <a name="properties"></a>Свойства
@@ -36,8 +36,12 @@ ms.locfileid: "48048743"
 |id|Строка|GUID принтера. Только для чтения.|
 |createdDateTime|DateTimeOffset|Значение DateTimeOffset при создании задания. Только для чтения.|
 |status|[принтжобстатус](printjobstatus.md)|Состояние задания печати. Только для чтения.|
+|configuration|[принтжобконфигуратион](printJobConfiguration.md)|Группа параметров, которые принтер должен использовать для печати задания.|
+|подбираемый|Edm.Boolean|Если этот параметр имеет значение true, документ может быть извлечен принтером.|
+|редиректедфром|Edm.String|Содержит URL-адрес исходного задания, если задание было перенаправлено с другого принтера.|
+|редиректедто|Edm.String|Содержит URL-адрес конечного задания, если задание было перенаправлено на другой принтер.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
 |createdBy|[userIdentity](useridentity.md)| Только для чтения. Допускается значение null.|
@@ -62,8 +66,12 @@ ms.locfileid: "48048743"
 {
   "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
+  "isFetchable": "Boolean",
+  "redirectedFrom": "String",
+  "redirectedTo": "String",
   "status": {"@odata.type": "microsoft.graph.printJobStatus"},
   "createdBy": {"@odata.type": "microsoft.graph.userIdentity"},
+  "configuration": {"@odata.type": "microsoft.graph.printJobConfiguration"},
   "documents": [ {"@odata.type": "microsoft.graph.printDocument"} ]
 }
 

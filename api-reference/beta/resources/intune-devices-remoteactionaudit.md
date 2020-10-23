@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c510dc40ac21e3990ee7771154c7b58268f332e6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b52a8bc27ff35981c045a2b9256af8a694e59783
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081099"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725416"
 ---
 # <a name="remoteactionaudit-resource-type"></a>Тип ресурса remoteActionAudit
 
@@ -71,7 +71,6 @@ ms.locfileid: "48081099"
   "managedDeviceId": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 40a174554a4b431aa2cd7b1856dff4b595530dab
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 201528b3f4c12828f4f77c73efadda2a743b8210
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030012"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48726341"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>тип перечисления Виндовсинформатионпротектионенфорцементлевел
 
@@ -26,10 +26,9 @@ ms.locfileid: "48030012"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Защита от незащищенных|нуль|Защита не включена|
-|енкриптандаудитонли|1 |Только шифрование и аудит|
-|енкриптаудитандпромпт|2 |Шифрование, аудит и запрос|
+|енкриптандаудитонли|1,1|Только шифрование и аудит|
+|енкриптаудитандпромпт|2|Шифрование, аудит и запрос|
 |енкриптаудитандблокк|4|Шифрование, аудит и блокировка|
-
 
 
 

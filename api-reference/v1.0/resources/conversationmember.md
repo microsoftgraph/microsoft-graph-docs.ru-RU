@@ -2,24 +2,32 @@
 title: Тип ресурса conversationMember
 description: Представляет пользователя в беседе.
 localization_priority: Normal
-author: clearab
+author: laujan
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e2c888ea55b331762761857c14b4710bf582be3f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 970e64ff358654aafee5b47a229a8425fdc69c9e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056928"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725836"
 ---
 # <a name="conversationmember-resource-type"></a>Тип ресурса conversationMember
 
 Пространство имен: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Представляет пользователя в [команде](team.md).
 См. также [аадусерконверсатионмембер](aaduserconversationmember.md).
+
+## <a name="methods"></a>Методы
+
+| Метод       | Возвращаемый тип  |Описание|
+|:---------------|:--------|:----------|
+|[Перечисление участников](../api/conversationmember-list.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка всех пользователей в чате или канале.|
+|[Получение участника](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | Получение одного пользователя в чате или канале.|
+|[Добавление участника](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Добавление участника в канал.|
+|[Обновление участника](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Обновление участника в канале.|
+|[Удаление участника](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Удаление участника из канала.|
 
 ## <a name="properties"></a>Свойства
 

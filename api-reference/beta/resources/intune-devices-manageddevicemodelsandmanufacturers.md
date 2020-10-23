@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1b7b689bcffb8950fd75e244089b7d9c74ad9ace
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: afcd9ea210d50bd5778133fcac743ba7bd624118
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081218"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48725472"
 ---
 # <a name="manageddevicemodelsandmanufacturers-resource-type"></a>Тип ресурса Манажеддевицемоделсандмануфактурерс
 
@@ -25,8 +25,8 @@ ms.locfileid: "48081218"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|девицемоделс|Коллекция String|Список моделей для управляемых устройств в учетной записи|
-|девицемануфактурерс|Коллекция String|Список производства для управляемых устройств в учетной записи|
+|девицемоделс|Коллекция строк|Список моделей для управляемых устройств в учетной записи|
+|девицемануфактурерс|Коллекция строк|Список производства для управляемых устройств в учетной записи|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -49,7 +49,6 @@ ms.locfileid: "48081218"
   ]
 }
 ```
-
 
 
 
