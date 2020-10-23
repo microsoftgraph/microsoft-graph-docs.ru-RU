@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1170bbb7e852a8b63939137a04fd11d2d5203e4e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8cf2210df9398a283ade5c0f3a3656c6a352178d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47986499"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48736431"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentity"></a>Обновление importedWindowsAutopilotDeviceIdentity
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindow
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,15 +53,15 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentities/{importedWindow
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID объекта|
+|id|Строка|GUID объекта|
 |orderIdentifier|Строка|Номер заказа устройства Windows Autopilot. — Устаревшее|
-|грауптаг|String|Тег Group для устройства автопилота Windows.|
+|грауптаг|Строка|Тег Group для устройства автопилота Windows.|
 |serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
-|импортид|String|Идентификатор импорта для устройства автопилота Windows.|
+|импортид|Строка|Идентификатор импорта для устройства автопилота Windows.|
 |hardwareIdentifier|Двоичный|Аппаратный большой двоичный объект (BLOB) устройства Windows Autopilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Текущее состояние импортированного устройства.|
-|ассигнедусерпринЦипалнаме|String|Имя участника-пользователя для пользователя, которому будет назначено устройство|
+|ассигнедусерпринЦипалнаме|Строка|Имя участника-пользователя для пользователя, которому будет назначено устройство|
 
 
 
@@ -122,7 +122,6 @@ Content-Length: 728
   "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
-
 
 
 
