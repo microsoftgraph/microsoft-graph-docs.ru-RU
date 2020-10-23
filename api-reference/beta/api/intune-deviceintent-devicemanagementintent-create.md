@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e2a8e8847e57f9a79367ff848bb02be65ef5ee52
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4dde81534254088926ecb2e8ba21ee7972ad46c6
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48000730"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704086"
 ---
 # <a name="create-devicemanagementintent"></a>Создание Девицеманажементинтент
 
@@ -43,7 +43,7 @@ POST /deviceManagement/intents
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,17 +53,17 @@ POST /deviceManagement/intents
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор намерения|
-|displayName|String|Имя пользователя для данного отображаемого имени|
-|description|String|Описание, заданное пользователем|
+|id|Строка|Идентификатор намерения|
+|displayName|Строка|Имя пользователя для данного отображаемого имени|
+|description|Строка|Описание, заданное пользователем|
 |isAssigned|Boolean|Указывает, назначена ли пользователю задача|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения намерения|
-|templateId|String|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности.|
+|templateId|Строка|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -107,7 +107,6 @@ Content-Length: 379
   ]
 }
 ```
-
 
 
 

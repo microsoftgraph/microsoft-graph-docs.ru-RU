@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 70ee690d541eeeb5080a81c188c168ba5b38c312
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a7e24128a69cc4b4549bd694b6b499c158cde804
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061681"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703778"
 ---
 # <a name="windowsvpnconnectiontype-enum-type"></a>тип перечисления Виндовсвпнконнектионтипе
 
@@ -26,10 +26,9 @@ ms.locfileid: "48061681"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |пулсесекуре|нуль|Безопасный импульс.|
-|f5EdgeClient|1 |Пограничный клиент F5.|
-|деллсоникваллмобилеконнект|2 |Мобильное подключение Dell Сониквалл.|
+|f5EdgeClient|1,1|Пограничный клиент F5.|
+|деллсоникваллмобилеконнект|2|Мобильное подключение Dell Сониквалл.|
 |чеккпоинткапсулевпн|4|Проверка покапсулы VPN.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c0a02b911941daa0f14b80a3f72b84d2be569ceb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3523685e7622b54844229e0af3cbc33278f07626
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070823"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703883"
 ---
 # <a name="applesubjectnameformat-enum-type"></a>тип перечисления Апплесубжектнамеформат
 
@@ -26,12 +26,11 @@ ms.locfileid: "48070823"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |коммоннаме|нуль|Общее имя.|
-|коммоннамеасемаил|1 |Общее имя как электронная почта.|
-|собственный|2 |Настраиваемый формат имени субъекта.|
+|коммоннамеасемаил|1,1|Общее имя как электронная почта.|
+|собственный|2|Настраиваемый формат имени субъекта.|
 |коммоннамеинклудинжемаил|4|Общее имя, включая электронную почту.|
 |коммоннамеасимеи|5 |Общее имя в виде IMEI.|
 |коммоннамеассериалнумбер|6 |Общее имя в виде порядкового номера.|
-
 
 
 

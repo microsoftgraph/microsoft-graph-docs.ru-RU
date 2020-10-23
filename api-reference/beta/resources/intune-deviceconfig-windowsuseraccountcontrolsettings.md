@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0ba314b72485b6e37b73efc02624bbc403ee9dad
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d736d47798a774114f6e59bb66146511bdc62347
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061688"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703785"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>тип перечисления Виндовсусераккаунтконтролсеттингс
 
@@ -26,11 +26,10 @@ ms.locfileid: "48061688"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|алвайснотифи|1 |Всегда уведомлять.|
-|нотифйонаппчанжес|2 |Уведомление об изменениях приложения.|
+|алвайснотифи|1,1|Всегда уведомлять.|
+|нотифйонаппчанжес|2|Уведомление об изменениях приложения.|
 |нотифйонаппчанжесвисаутдимминг|4|Уведомлять об изменениях приложений без затенения рабочего стола.|
 |невернотифи|4 |Никогда не уведомлять.|
-
 
 
 

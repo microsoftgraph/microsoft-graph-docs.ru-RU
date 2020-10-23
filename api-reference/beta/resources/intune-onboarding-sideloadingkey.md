@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e0d44ceabb8834b71b41a50fe977c952bddeaa01
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 93a0e91332403d3bc333db90a74923e57a55d107
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029367"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48704732"
 ---
 # <a name="sideloadingkey-resource-type"></a>Тип ресурса Сиделоадингкэй
 
@@ -34,14 +34,14 @@ ms.locfileid: "48029367"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор ключа загрузки на стороне.|
+|id|Строка|Уникальный идентификатор ключа загрузки на стороне.|
 |value|String|Значение ключа загрузки на стороне, это значение 5x5, разделенное хифенс.|
-|displayName|String|Имя ключа загрузки на стороне, отображаемое для администраторов ИТ-специалистов.|
-|description|String|Описание ключа загрузки на стороне, которое отображается для администраторов ИТ-специалистов..|
+|displayName|Строка|Имя ключа загрузки на стороне, отображаемое для администраторов ИТ-специалистов.|
+|description|Строка|Описание ключа загрузки на стороне, которое отображается для администраторов ИТ-специалистов..|
 |тоталактиватион|Int32|Клавиша загрузки на боковой стороне общая активация отображается для администраторов ИТ-специалистов.|
-|lastUpdatedDateTime|String|Клавиша загрузки на боковой стороне Дата последнего обновления отображается для администраторов ИТ-специалистов.|
+|lastUpdatedDateTime|Строка|Клавиша загрузки на боковой стороне Дата последнего обновления отображается для администраторов ИТ-специалистов.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -63,7 +63,6 @@ ms.locfileid: "48029367"
   "lastUpdatedDateTime": "String"
 }
 ```
-
 
 
 
