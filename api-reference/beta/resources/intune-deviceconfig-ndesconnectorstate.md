@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5fe1b49685052f4446f04840c867fb5f119f5e8f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 66baf1e0ad92318eb29805a53ee236ba9e41ed67
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019560"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723029"
 ---
 # <a name="ndesconnectorstate-enum-type"></a>тип перечисления Ндесконнекторстате
 
@@ -25,10 +25,9 @@ ms.locfileid: "48019560"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Для этого соединителя пока недоступно состояние.|
-|ASP|1 |Соединитель NDES Connector недавно подключился|
-|отсутств|2 |Нет недавних действий для соединителя NDES Connector|
-
+|none|нуль|Для этого соединителя пока недоступно состояние.|
+|ASP|1,1|Соединитель NDES Connector недавно подключился|
+|отсутств|2|Нет недавних действий для соединителя NDES Connector|
 
 
 

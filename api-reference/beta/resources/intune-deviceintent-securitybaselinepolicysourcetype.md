@@ -1,18 +1,18 @@
 ---
-title: тип перечисления Андроидусернамесаурце
-description: Источник имени пользователя для Android.
+title: тип перечисления Секуритибаселинеполицисаурцетипе
+description: Источник создания политики
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4ca4f35d8d311a3778b46e7e27f8c4cc6aa7c030
+ms.openlocfilehash: 4f1721dc06fa5d1a97ef97025ff65396588dbda1
 ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723928"
+ms.locfileid: "48723900"
 ---
-# <a name="androidusernamesource-enum-type"></a>тип перечисления Андроидусернамесаурце
+# <a name="securitybaselinepolicysourcetype-enum-type"></a>тип перечисления Секуритибаселинеполицисаурцетипе
 
 Пространство имен: microsoft.graph
 
@@ -20,15 +20,13 @@ ms.locfileid: "48723928"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Источник имени пользователя для Android.
+Источник создания политики
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|username|нуль|Имя пользователя.|
-|userPrincipalName|1,1|Имя участника-пользователя.|
-|samAccountName|2|Имя учетной записи SAM пользователя.|
-|primarySmtpAddress|4|Основной SMTP-адрес.|
+|deviceConfiguration|нуль|Пока не задокументировано.|
+|девицеинтент|1,1|Пока не задокументировано.|
 
 
 

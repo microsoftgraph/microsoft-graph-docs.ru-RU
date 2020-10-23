@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 677396e280eaf639888bffdc25a6078081456200
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 439fd1b4a59a196057210aafd56d9a938573cc45
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021646"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723984"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Корпоративные условия в Microsoft Intune
 
@@ -29,6 +29,3 @@ ms.locfileid: "48021646"
 - [Состояние принятия условий](intune-companyterms-termsandconditionsacceptancestatus.md)
 - [Назначение условий](intune-companyterms-termsandconditionsassignment.md)
 - [Назначение групп условий](intune-companyterms-termsandconditionsgroupassignment.md)
-
-
-

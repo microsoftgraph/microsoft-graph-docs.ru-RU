@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Нетворксинглесигнонтипе
-description: Параметры типа единого входа сети Wi – Fi.
+description: Wi-Fi параметров типа единого входа в сеть.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a93330b58595f5f9fc49c43815be7bbe1fa18b73
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dbe45cc5e931b20b93f788f321859b0844587ef7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089492"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723022"
 ---
 # <a name="networksinglesignontype-enum-type"></a>тип перечисления Нетворксинглесигнонтипе
 
@@ -20,15 +20,14 @@ ms.locfileid: "48089492"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Параметры типа единого входа сети Wi – Fi.
+Wi-Fi параметров типа единого входа в сеть.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |отключено|нуль|Отключено|
-|Предварительный вход|1 |Предварительный вход|
-|Вход в систему|2 |После входа|
-
+|Предварительный вход|1,1|Предварительный вход|
+|Вход в систему|2|После входа|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6343684a068d81486ebe8dcdca92e926762467a6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e04136b0ff365c2d092a85cc96f0624b64371f52
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031720"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723914"
 ---
 # <a name="androidvpnconnectiontype-enum-type"></a>тип перечисления Androidvpnconnectiontype.
 
@@ -26,13 +26,13 @@ ms.locfileid: "48031720"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Цискоаниконнект|нуль|Cisco Аниконнект.|
-|пулсесекуре|1 |Безопасный импульс.|
-|f5EdgeClient|2 |Пограничный клиент F5.|
+|пулсесекуре|1,1|Безопасный импульс.|
+|f5EdgeClient|2|Пограничный клиент F5.|
 |деллсоникваллмобилеконнект|4|Мобильное подключение Dell Сониквалл.|
 |чеккпоинткапсулевпн|4 |Проверка покапсулы VPN.|
 |клиентов|5 |Клиентов|
 |микрософттуннел|7 |Туннель Microsoft.|
-
+|нетмотионмобилити|8 |Мобильность Нетмотион.|
 
 
 

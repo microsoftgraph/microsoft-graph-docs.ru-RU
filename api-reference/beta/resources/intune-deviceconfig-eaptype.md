@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 911b7b8f6717def186633b8ddfabd1367c498531
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0d67147c281805e6d626f3f5e12fb5346ca90356
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003754"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48712031"
 ---
 # <a name="eaptype-enum-type"></a>тип перечисления Еаптипе
 
@@ -25,13 +25,12 @@ ms.locfileid: "48003754"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|еаптлс|13 |Протокол EAP-Transport Layer Security (EAP-TLS).|
+|еаптлс|13 |EAP-Transport уровня безопасности (EAP-TLS).|
 |LEAP|17 |Облегченный протокол проверки подлинности (LEAP).|
 |еапсим|18 |EAP для модуля удостоверения абонента GSM (EAP-SIM).|
-|еапттлс|21|Протокол TLS-туннелирования (EAP-TTLS).|
+|еапттлс|21|EAP-Tunneled TLS (EAP-TTLS).|
 |протокола|25|Протокол PEAP (protected Extensible Authentication Protocol).|
-|еапфаст|43|EAP-гибкая Проверка подлинности с помощью безопасного туннелирования (EAP-FAST).|
-
+|еапфаст|43|Проверка подлинности EAP-Flexible с помощью безопасного туннелирования (EAP-FAST).|
 
 
 

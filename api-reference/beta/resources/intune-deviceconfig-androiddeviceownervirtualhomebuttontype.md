@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ea5134460969f53a2834c9bb93f2fc6e88ef480d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4f142c9ee4852c8a22d4fd64d6fe9d3970a9d9ae
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073917"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723942"
 ---
 # <a name="androiddeviceownervirtualhomebuttontype-enum-type"></a>тип перечисления Андроиддевицеовнервиртуалхомебуттонтипе
 
@@ -26,9 +26,8 @@ ms.locfileid: "48073917"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен; Это значение игнорируется.|
-|свипеуп|1 |Кнопка "Прокрутка на домашнюю страницу".|
-|чисел|2 |Кнопка "Плавающая Домашняя страница".|
-
+|свипеуп|1,1|Кнопка "Прокрутка на домашнюю страницу".|
+|чисел|2|Кнопка "Плавающая Домашняя страница".|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bb7f6ecb00072fb5280cb4033a39fb2041524b7a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a9707268f648edc60ab7b37292b6e59f7721d983
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031384"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48722874"
 ---
 # <a name="managementcondition-resource-type"></a>Тип ресурса Манажементкондитион
 
@@ -32,16 +32,16 @@ ms.locfileid: "48031384"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для условия управления. Созданное системой значение, назначаемое при создании.|
-|uniqueName|String|Уникальное имя условия управления. Используется в выражениях условия управления.|
-|displayName|String|Имя условия управления, определенное администратором.|
-|description|String|Описание условия управления, заданное администратором.|
+|id|Строка|Уникальный идентификатор для условия управления. Созданное системой значение, назначаемое при создании.|
+|uniqueName|Строка|Уникальное имя условия управления. Используется в выражениях условия управления.|
+|displayName|Строка|Имя условия управления, определенное администратором.|
+|description|Строка|Описание условия управления, заданное администратором.|
 |createdDateTime|DateTimeOffset|Время создания условия управления. Созданная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условия управления. Обновленная сторона службы.|
 |eTag|String|Тег ETag условия управления. Обновленная сторона службы.|
 |аппликаблеплатформс|Коллекция [девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Соответствующие платформы для этого условия управления.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |манажементкондитионстатементс|Коллекция [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md)|Операторы условия управления, связанные с условием управления.|
@@ -69,7 +69,6 @@ ms.locfileid: "48031384"
   ]
 }
 ```
-
 
 
 

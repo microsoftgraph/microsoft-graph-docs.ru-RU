@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f331069b5fa833ec6b7df3dd5b92e4149b7bfa8e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 69500d91eb5a22c5c3742256265d435ea0b31d0b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47986632"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48724278"
 ---
 # <a name="create-devicehealthscriptdevicestate"></a>Создание Девицехеалсскриптдевицестате
 
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunState
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,16 +53,16 @@ POST /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunState
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта состояния устройства сценария работоспособности. Это свойство доступно только для чтения.|
+|id|Строка|Ключ объекта состояния устройства сценария работоспособности. Это свойство доступно только для чтения.|
 |детектионстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние обнаружения с последнего выполнения сценария работоспособности устройства. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |ластстатеупдатедатетиме|DateTimeOffset|Последняя метка времени выполнения сценария работоспособности устройства|
 |експектедстатеупдатедатетиме|DateTimeOffset|Следующий штамп времени, когда ожидается выполнение сценария работоспособности устройства.|
 |lastSyncDateTime|DateTimeOffset|Время последнего синхронизации расширения управления Intune с Intune|
-|преремедиатиондетектионскриптаутпут|String|Выходные данные сценария обнаружения перед исправлением|
-|преремедиатиондетектионскриптеррор|String|Ошибка сценария обнаружения перед исправлением|
-|ремедиатионскриптеррор|String|Вывод ошибок сценария исправления|
-|постремедиатиондетектионскриптаутпут|String|Выходные данные сценария обнаружения после исправления|
-|постремедиатиондетектионскриптеррор|String|Ошибка сценария обнаружения после исправления|
+|преремедиатиондетектионскриптаутпут|Строка|Выходные данные сценария обнаружения перед исправлением|
+|преремедиатиондетектионскриптеррор|Строка|Ошибка сценария обнаружения перед исправлением|
+|ремедиатионскриптеррор|Строка|Вывод ошибок сценария исправления|
+|постремедиатиондетектионскриптаутпут|Строка|Выходные данные сценария обнаружения после исправления|
+|постремедиатиондетектионскриптеррор|Строка|Ошибка сценария обнаружения после исправления|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Состояние исправления с последнего выполнения скрипта работоспособности устройства. Возможные значения: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
 
 
@@ -116,7 +116,6 @@ Content-Length: 811
   "remediationState": "skipped"
 }
 ```
-
 
 
 

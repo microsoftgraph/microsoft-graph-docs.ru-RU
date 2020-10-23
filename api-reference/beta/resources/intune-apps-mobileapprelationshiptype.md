@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f42792e312f478ad235248393ccf690fcd4de2d9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1e83679826233d08fec109c1697c59f1ee6e78c5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48082098"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48719740"
 ---
 # <a name="mobileapprelationshiptype-enum-type"></a>тип перечисления Мобилеаппрелатионшиптипе
 
@@ -25,9 +25,8 @@ ms.locfileid: "48082098"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|ребенка|нуль|Указывает, что целевой объект связи является дочерним по отношению к элементу.|
-|родитель|1 |Указывает, что целевой объект отношения является родительским для отношения.|
-
+|child|нуль|Указывает, что целевой объект связи является дочерним по отношению к элементу.|
+|родитель|1,1|Указывает, что целевой объект отношения является родительским для отношения.|
 
 
 

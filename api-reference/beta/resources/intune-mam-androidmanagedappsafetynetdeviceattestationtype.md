@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 645027397a852c98ee973ee53382e4e552724ab0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f18a4eb3dd7d31c51dc21a02999aa4ea99d2f0fd
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030565"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723879"
 ---
 # <a name="androidmanagedappsafetynetdeviceattestationtype-enum-type"></a>тип перечисления Андроидманажедаппсафетинетдевицеаттестатионтипе
 
@@ -25,10 +25,9 @@ ms.locfileid: "48030565"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|нет набора требований|
-|басиЦинтегрити|1 |требовать, чтобы устройство Android продавало базовую проверку целостности SafetyNet|
-|басиЦинтегритянддевицецертификатион|2 |требовать, чтобы устройство Android продавало базовую целостность SafetyNet и проверки сертификации устройств|
-
+|none|нуль|нет набора требований|
+|басиЦинтегрити|1,1|требовать, чтобы устройство Android продавало базовую проверку целостности SafetyNet|
+|басиЦинтегритянддевицецертификатион|2|требовать, чтобы устройство Android продавало базовую целостность SafetyNet и проверки сертификации устройств|
 
 
 

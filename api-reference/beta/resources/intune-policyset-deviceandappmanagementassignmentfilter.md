@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e20794d5b96d4eb2edadfa6277c0b809b7ea4631
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 49eff7d45586a35880b482a821dab872392e8406
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993597"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48723815"
 ---
 # <a name="deviceandappmanagementassignmentfilter-resource-type"></a>Тип ресурса Девицеандаппманажементассигнментфилтер
 
@@ -34,14 +34,14 @@ ms.locfileid: "47993597"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ фильтра назначений.|
+|id|Строка|Ключ фильтра назначений.|
 |createdDateTime|DateTimeOffset|Время создания фильтра назначений.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения фильтра назначений.|
-|displayName|String|DisplayName фильтра назначений.|
-|description|String|Описание фильтра назначений.|
+|displayName|Строка|DisplayName фильтра назначений.|
+|description|Строка|Описание фильтра назначений.|
 |платформа|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Тип платформы устройств, к которым будет применяться фильтр назначений. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|правила|String|Определение правила для фильтра назначений.|
-|roleScopeTags|Коллекция String|RoleScopeTags фильтра назначений.|
+|правила|Строка|Определение правила для фильтра назначений.|
+|roleScopeTags|Коллекция строк|RoleScopeTags фильтра назначений.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -69,7 +69,6 @@ ms.locfileid: "47993597"
   ]
 }
 ```
-
 
 
 

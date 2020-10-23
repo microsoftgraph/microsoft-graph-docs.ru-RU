@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 46a19d4032a661bc1f17161d2fdadde774558bcb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2bdc14c1d9e65d32e664318d894e11bd08d56320
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47973972"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48719710"
 ---
 # <a name="mobileappsupersedence-resource-type"></a>Тип ресурса Мобилеаппсуперседенце
 
@@ -29,19 +29,19 @@ ms.locfileid: "47973972"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Мобилеаппсуперседенцес](../api/intune-apps-mobileappsupersedence-list.md)|Коллекция [мобилеаппсуперседенце](../resources/intune-apps-mobileappsupersedence.md)|Список свойств и связей объектов [мобилеаппсуперседенце](../resources/intune-apps-mobileappsupersedence.md) .|
-|[Получение Мобилеаппсуперседенце](../api/intune-apps-mobileappsupersedence-get.md)|[мобилеаппсуперседенце](../resources/intune-apps-mobileappsupersedence.md)|Чтение свойств и связей объекта [мобилеаппсуперседенце](../resources/intune-apps-mobileappsupersedence.md) .|
-|[Создание Мобилеаппсуперседенце](../api/intune-apps-mobileappsupersedence-create.md)|[мобилеаппсуперседенце](../resources/intune-apps-mobileappsupersedence.md)|Создание нового объекта [мобилеаппсуперседенце](../resources/intune-apps-mobileappsupersedence.md) .|
+|[Получение Мобилеаппсуперседенце](../api/intune-apps-mobileappsupersedence-get.md)|[mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md)|Чтение свойств и связей объекта [мобилеаппсуперседенце](../resources/intune-apps-mobileappsupersedence.md) .|
+|[Создание Мобилеаппсуперседенце](../api/intune-apps-mobileappsupersedence-create.md)|[mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md)|Создание нового объекта [мобилеаппсуперседенце](../resources/intune-apps-mobileappsupersedence.md) .|
 |[Удаление Мобилеаппсуперседенце](../api/intune-apps-mobileappsupersedence-delete.md)|Нет|Удаляет объект [мобилеаппсуперседенце](../resources/intune-apps-mobileappsupersedence.md).|
-|[Обновление Мобилеаппсуперседенце](../api/intune-apps-mobileappsupersedence-update.md)|[мобилеаппсуперседенце](../resources/intune-apps-mobileappsupersedence.md)|Обновление свойств объекта [мобилеаппсуперседенце](../resources/intune-apps-mobileappsupersedence.md) .|
+|[Обновление Мобилеаппсуперседенце](../api/intune-apps-mobileappsupersedence-update.md)|[mobileAppSupersedence](../resources/intune-apps-mobileappsupersedence.md)|Обновление свойств объекта [мобилеаппсуперседенце](../resources/intune-apps-mobileappsupersedence.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор сущности отношения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
-|targetId|String|Идентификатор приложения целевого приложения для мобильных устройств. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
-|таржетдисплайнаме|String|Отображаемое имя целевого мобильного приложения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
-|targetType|[мобилеаппрелатионшиптипе](../resources/intune-apps-mobileapprelationshiptype.md)|Тип связи, указывающий, является ли целевой объект родительским или дочерним. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md). Возможные значения: `child`, `parent`.|
-|суперседенцетипе|[мобилеаппсуперседенцетипе](../resources/intune-apps-mobileappsupersedencetype.md)|Тип отношения замены между родительским и дочерним приложениями. Возможные значения: `update`, `replace`.|
+|id|Строка|Идентификатор сущности отношения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
+|targetId|Строка|Идентификатор приложения целевого приложения для мобильных устройств. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
+|таржетдисплайнаме|Строка|Отображаемое имя целевого мобильного приложения. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
+|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|Тип связи, указывающий, является ли целевой объект родительским или дочерним. Наследуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md). Возможные значения: `child`, `parent`.|
+|суперседенцетипе|[mobileAppSupersedenceType](../resources/intune-apps-mobileappsupersedencetype.md)|Тип отношения замены между родительским и дочерним приложениями. Возможные значения: `update`, `replace`.|
 |суперседедаппкаунт|Int32|Общее число приложений, напрямую или косвенно заменяющих дочерним приложением.|
 |суперседингаппкаунт|Int32|Общее число приложений, напрямую или косвенно заменяющих родительское приложение.|
 
@@ -68,7 +68,6 @@ ms.locfileid: "47973972"
   "supersedingAppCount": 1024
 }
 ```
-
 
 
 
