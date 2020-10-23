@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d78328cc9f44dbffca0085890a8c69184c2eac3b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 69cac1316054a7822cb169eb4070a8787c101032
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080805"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697639"
 ---
 # <a name="userexperienceanalyticsoperatingsystemrestartcategory-enum-type"></a>тип перечисления Усерекспериенцеаналитиксоператингсистемрестарткатегори
 
@@ -25,15 +25,14 @@ ms.locfileid: "48080805"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|нуль|Неизвестно|
-|рестартвисупдате|1 |Перезапуск с обновлением|
-|рестартвисаутупдате|2 |Перезагрузка без обновления|
+|unknown|нуль|Unknown|
+|рестартвисупдате|1,1|Перезапуск с обновлением|
+|рестартвисаутупдате|2|Перезагрузка без обновления|
 |блуескрин|4|Перезагрузка синего экрана|
 |шутдовнвисупдате|4 |Завершение работы с обновлением|
 |шутдовнвисаутупдате|5 |Завершение работы без обновления|
 |лонгповербуттонпресс|6 |Нажатие кнопки длительного энергопотребления|
 |бутеррор|7 |Ошибка загрузки|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1b10e378fa294d35d343487b96fa4627aba50ae8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b6a8fdb1032d838ac2f78083575b6427cc6145a5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48062654"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696687"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Создание windowsAutopilotDeviceIdentity
 
@@ -47,38 +47,38 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта windowsAutopilotDeviceIdentity в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании windowsAutopilotDeviceIdentity.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID объекта|
+|id|Строка|GUID объекта|
 |деплойментпрофилеассигнментстатус|[виндовсаутопилотпрофилеассигнментстатус](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Состояние назначения профиля устройства автопилота Windows. Возможные значения: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |деплойментпрофилеассигнментдетаиледстатус|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Подробное состояние назначения профиля для устройства автопилота Windows. Возможные значения: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`.|
 |деплойментпрофилеассигнеддатетиме|DateTimeOffset|Время настройки профиля для устройства автопилота Windows.|
 |orderIdentifier|Строка|Идентификатор заказа устройства с автопилотом Windows — не является устаревшим|
-|грауптаг|String|Тег Group для устройства автопилота Windows.|
-|пурчасеордеридентифиер|String|Идентификатор заказа на покупку для устройства автопилота Windows.|
+|грауптаг|Строка|Тег Group для устройства автопилота Windows.|
+|пурчасеордеридентифиер|Строка|Идентификатор заказа на покупку для устройства автопилота Windows.|
 |serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
 |manufacturer|String|OEM-производитель устройства автопилота Windows.|
 |model|String|Имя модели для устройства автопилота Windows.|
 |енроллментстате|[енроллментстате](../resources/intune-shared-enrollmentstate.md)|Состояние регистрации в Intune для устройства автопилота Windows. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |ластконтактеддатетиме|DateTimeOffset|Дата и время последнего обращения в Intune к устройству автопилота Windows.|
-|аддрессаблеусернаме|String|Имя пользователя с адресом.|
+|аддрессаблеусернаме|Строка|Имя пользователя с адресом.|
 |userPrincipalName|String|Имя участника пользователя.|
 |resourceName|String|Имя ресурса.|
-|скунумбер|String|Номер SKU|
-|системфамили|String|Семейство системы|
-|Свойства azureactivedirectorydeviceid|String|ИДЕНТИФИКАТОР устройства AAD|
-|манажеддевицеид|String|Управляемый идентификатор устройства|
-|displayName|String|"Display Name" (Отображаемое имя);|
+|скунумбер|Строка|Номер SKU|
+|системфамили|Строка|Семейство системы|
+|Свойства azureactivedirectorydeviceid|Строка|ИДЕНТИФИКАТОР устройства AAD|
+|манажеддевицеид|Строка|Управляемый идентификатор устройства|
+|displayName|Строка|"Display Name" (Отображаемое имя);|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -147,7 +147,6 @@ Content-Length: 1124
   "displayName": "Display Name value"
 }
 ```
-
 
 
 

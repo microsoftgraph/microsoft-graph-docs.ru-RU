@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a9ba5a4c415b0bc94b60479530ac6a7ca35f3c75
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bea1b7bda5532cbb310930bcb65759b0f125d384
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031013"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697373"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>Тип ресурса Граупполицидефинитион
 
@@ -32,16 +32,16 @@ ms.locfileid: "48031013"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |класстипе|[граупполицидефинитионкласстипе](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Определяет тип групп, к которым можно применить политику. Возможные значения: `user`, `machine`.|
-|displayName|String|Имя локализованной политики.|
-|експлаинтекст|String|Локализованное объяснение или текст справки, связанный с политикой. По умолчанию это значение пусто.|
-|категорипас|String|Локализованный полный путь к категории для политики.|
-|суппортедон|String|Локализованная строка, используемая для указания версии операционной системы или приложения, на которые влияет политика.|
+|displayName|Строка|Имя локализованной политики.|
+|експлаинтекст|Строка|Локализованное объяснение или текст справки, связанный с политикой. По умолчанию это значение пусто.|
+|категорипас|Строка|Локализованный полный путь к категории для политики.|
+|суппортедон|Строка|Локализованная строка, используемая для указания версии операционной системы или приложения, на которые влияет политика.|
 |полицитипе|[граупполицитипе](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
 |граупполицикатегорид|Guid|Идентификатор категории родительской категории|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |дефинитионфиле|[граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|Файл групповой политики, связанный с определением.|
@@ -70,7 +70,6 @@ ms.locfileid: "48031013"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

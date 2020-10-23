@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a2d6acbf9ab656a0c9e1c1143ef765d97fab25e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4e4d3469d64bf5fc0a0080b1afea57a355bb4f21
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056102"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696806"
 ---
 # <a name="delete-devicemanagementscriptassignment"></a>Удаление Девицеманажементскриптассигнмент
 
@@ -39,6 +39,7 @@ ms.locfileid: "48056102"
 ``` http
 DELETE /deviceManagement/deviceShellScripts/{deviceShellScriptId}/assignments/{deviceManagementScriptAssignmentId}
 DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assignments/{deviceManagementScriptAssignmentId}
+DELETE /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeShellScriptId}/assignments/{deviceManagementScriptAssignmentId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -47,7 +48,7 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -66,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceShellScripts/{dev
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

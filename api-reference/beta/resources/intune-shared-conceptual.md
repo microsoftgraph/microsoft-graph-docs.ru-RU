@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 localization_priority: Normal
 author: dougeby
 ms.prod: intune
-ms.openlocfilehash: 60588a0c9a2714da80c0d5e24b4300146e3b1556
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0d5dd4150260ac61b9a49c231127107ea91fb758
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055430"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697198"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Общие ресурсы в Microsoft Intune
 
@@ -73,7 +73,7 @@ ms.locfileid: "48055430"
 - [Тип владельца](intune-shared-ownertype.md)
 - [Тип платформы политики](intune-shared-policyplatformtype.md)
 - [Проксируемый домен](intune-shared-proxieddomain.md)
-- [Отчет](intune-shared-report.md)
+- [Report](intune-shared-report.md)
 - [Корневая папка отчета](intune-shared-reportroot.md)
 - [Итоговое состояние приложения](intune-shared-resultantappstate.md)
 - [Цвет RGB](intune-shared-rgbcolor.md)
@@ -83,7 +83,7 @@ ms.locfileid: "48055430"
 - [Настройка типа источника](intune-shared-settingsourcetype.md)
 - [Целевая конфигурация управляемых приложений](intune-shared-targetedmanagedappconfiguration.md)
 - [URI](intune-shared-uri.md)
-- [User](intune-shared-user.md)
+- [Пользователь](intune-shared-user.md)
 - [Тип учетной записи токена VPP](intune-shared-vpptokenaccounttype.md)
 - [Причина сбоя действия с токеном VPP](intune-shared-vpptokenactionfailurereason.md)
 - [Настройки назначения бизнес-приложения Win32](intune-shared-win32lobappassignmentsettings.md)
@@ -95,5 +95,3 @@ ms.locfileid: "48055430"
 - [Конфигурация присоединения к домену Windows](intune-shared-windowsdomainjoinconfiguration.md)
 - [Настройки назначения универсального приложения Windows AppX](intune-shared-windowsuniversalappxappassignmentsettings.md)
 - [Состояние центра обновления Windows](intune-shared-windowsupdatestate.md)
-
-

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6e0e01c59302593ee329c097c17cd905dfdaaebd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 676bd1b99a2dd18e06dbd451d478c8db4cf2c131
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993268"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697219"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>тип перечисления Усерпфкспаддингсчеме
 
@@ -25,13 +25,12 @@ ms.locfileid: "47993268"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Неизвестная схема заполнения.|
-|pkcs1|1 |Pkcs1 больше не поддерживается|
-|oaepSha1|2 |OaepSha1 больше не поддерживается|
+|none|нуль|Неизвестная схема заполнения.|
+|pkcs1|1,1|Pkcs1 больше не поддерживается|
+|oaepSha1|2|OaepSha1 больше не поддерживается|
 |oaepSha256|4|Используйте заполнение OAEP SHA – 256.|
 |oaepSha384|4 |Используйте заполнение OAEP SHA – 384.|
 |oaepSha512|5 |Используйте заполнение OAEP SHA – 512.|
-
 
 
 

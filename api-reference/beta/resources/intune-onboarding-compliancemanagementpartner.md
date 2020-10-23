@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6b78d16fa7545e62cf326f590953bec0afbdf51d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2e294006c4c489546807d35e57e34be856d01233
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029787"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697317"
 ---
 # <a name="compliancemanagementpartner-resource-type"></a>Тип ресурса Комплианцеманажементпартнер
 
@@ -34,20 +34,20 @@ ms.locfileid: "48029787"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор объекта|
+|id|Строка|Идентификатор объекта|
 |lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пакета пульса после того, как администратор направил соответствие партнеру управления соответствием|
 |partnerState|[девицеманажементпартнертенантстате](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|displayName|String|Отображаемое имя партнера|
-|макосонбоардед|Boolean|Партнер, подключенный к устройствам Mac.|
-|виндовсонбоардед|Boolean|Партнер, направленный на устройства с Windows.|
-|андроидонбоардед|Boolean|Партнер, направленный на устройства с Android.|
-|иосонбоардед|Boolean|Партнер, подключенный к устройствам iOS.|
+|displayName|Строка|Отображаемое имя партнера|
+|макосонбоардед|Логический|Партнер, подключенный к устройствам Mac.|
+|виндовсонбоардед|Логический|Партнер, направленный на устройства с Windows.|
+|андроидонбоардед|Логический|Партнер, направленный на устройства с Android.|
+|иосонбоардед|Логический|Партнер, подключенный к устройствам iOS.|
 |макосенроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства Mac через партнера.|
 |виндовсенроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства Windows с помощью партнера.|
 |андроиденроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства с Android через партнера.|
 |иосенроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства с iOS через партнера.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -111,7 +111,6 @@ ms.locfileid: "48029787"
   ]
 }
 ```
-
 
 
 

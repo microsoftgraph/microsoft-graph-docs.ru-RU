@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 49b23869d3232f0ddb990bfabd642c75a0cd1420
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7fbc512c97f96b1aecf88533628997a871faa131
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043110"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48698073"
 ---
 # <a name="update-devicemanagementreportschedule"></a>Обновление Девицеманажементрепортсчедуле
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/reports/reportSchedules/{deviceManagementReportScheduleI
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -56,15 +56,15 @@ PATCH /deviceManagement/reports/reportSchedules/{deviceManagementReportScheduleI
 |id|Строка|Уникальный идентификатор для этой сущности|
 |репортсчедуленаме|Строка|Имя расписания|
 |subject|String|Тема запланированных отчетов, которые доставляются|
-|письма|Коллекция String|Сообщения электронной почты, на которые доставляются запланированные отчеты|
+|письма|Коллекция строк|Сообщения электронной почты, на которые доставляются запланированные отчеты|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Периодичность запланированной доставки отчета. Возможные значения: `none`, `daily`, `weekly`, `monthly`.|
 |startDateTime|DateTimeOffset|Время, когда начинается доставка запланированных отчетов|
 |endDateTime|DateTimeOffset|Время окончания доставки запланированных отчетов|
 |userId|String|Идентификатор пользователя, создавшего отчет|
 |репортнаме|Строка|Имя отчета|
 |filter|Строка|Фильтры, примененные к отчету|
-|select|Коллекция String|Столбцы, выбранные из отчета|
-|orderBy|Коллекция String|Упорядочение столбцов в отчете|
+|select|Коллекция строк|Столбцы, выбранные из отчета|
+|orderBy|Коллекция строк|Упорядочение столбцов в отчете|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат запланированного отчета. Возможные значения: `csv`, `pdf`.|
 
 
@@ -134,7 +134,6 @@ Content-Length: 588
   "format": "pdf"
 }
 ```
-
 
 
 

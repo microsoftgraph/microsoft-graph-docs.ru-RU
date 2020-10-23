@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b67734bf98a48c31a1346bd730c8521fd8a8d681
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 03baadeea1441d5eecc1ff6e8974724b19a59949
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060771"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697786"
 ---
 # <a name="comanagementeligibledevicessummary-resource-type"></a>Тип ресурса Команажементелигибледевицессуммари
 
@@ -25,11 +25,11 @@ ms.locfileid: "48060771"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|команажедкаунт|Int32|Количество устройств, для которых уже осуществляется совместное управление|
-|елигиблекаунт|Int32|Количество устройств, полностью доступных для совместного управления|
-|елигиблебутнотазуреаджоинедкаунт|Int32|Количество устройств, подходящих для совместного управления, но еще не включенных в Azure Active Directory|
-|нидсосупдатекаунт|Int32|Количество устройств, которые будут доступны для совместного управления после обновления ОС|
-|инелигиблекаунт|Int32|Количество устройств, подходящих для совместного управления|
+|команажедкаунт|Int32|Количество устройств, уже Co-Managed|
+|елигиблекаунт|Int32|Количество устройств, полностью доступных для Co-Management|
+|елигиблебутнотазуреаджоинедкаунт|Int32|Количество устройств, подходящих для Co-Management, но еще не присоединенных к Azure Active Directory|
+|нидсосупдатекаунт|Int32|Количество устройств, которые будут доступны Co-Management после обновления ОС|
+|инелигиблекаунт|Int32|Количество устройств, доступных для Co-Management|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -51,7 +51,6 @@ ms.locfileid: "48060771"
   "ineligibleCount": 1024
 }
 ```
-
 
 
 

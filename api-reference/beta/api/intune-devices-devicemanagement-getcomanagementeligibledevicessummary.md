@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd43bd70ce136cda185bf5ffec5cd01d589f2d5b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1ab3005c17c1c53ee48fb69f9e5e78477a440b13
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056130"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696820"
 ---
 # <a name="getcomanagementeligibledevicessummary-function"></a>Функция Жеткоманажементелигибледевицессуммари
 
@@ -46,10 +46,10 @@ GET /deviceManagement/getComanagementEligibleDevicesSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успеха эта функция возвращает `200 OK` код отклика и объект [команажементелигибледевицессуммари](../resources/intune-devices-comanagementeligibledevicessummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -78,7 +78,6 @@ Content-Length: 251
   }
 }
 ```
-
 
 
 

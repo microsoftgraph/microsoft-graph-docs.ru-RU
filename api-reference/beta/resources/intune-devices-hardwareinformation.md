@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2875ea3a4f8ba7bd00b2a1095ecaf496c36e5ef6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aba75cb97b15253932eda90dbd252fde640f8461
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081393"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697660"
 ---
 # <a name="hardwareinformation-resource-type"></a>Тип ресурса Hardwareinformation.
 
@@ -42,7 +42,7 @@ ms.locfileid: "48081393"
 |баттерисериалнумбер|Строка|Серийный номер текущей батареи устройства|
 |баттерихеалсперцентаже|Int32|Процент работоспособности текущего аккумулятора устройства. Допустимые значения: от 0 до 100|
 |баттеричаржециклес|Int32|Количество циклов зарядки, прошедшей через текущий аккумулятор устройства. Допустимые значения — от 0 до 2147483647|
-|Свойства isshareddevice|Boolean|Общие iPad|
+|Свойства isshareddevice|Логический|Общие iPad|
 |шареддевицекачедусерс|Коллекция [шаредаппледевицеусер](../resources/intune-devices-sharedappledeviceuser.md)|Все пользователи на общем устройстве Apple|
 |тпмспеЦификатионверсион|Строка|Строка, указывающая версию спецификации.|
 |оператингсистемедитион|Строка|Строка, задающая выпуск операционной системы.|
@@ -52,6 +52,8 @@ ms.locfileid: "48081393"
 |девицегуардлокалсистемаусоритикредентиалгуардстате|[девицегуардлокалсистемаусоритикредентиалгуардстате](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Состояние Credential Guard в администраторе локальной системы (LSA). . Возможные значения: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
 |осбуилднумбер|Строка|Номер сборки операционной системы на устройстве с Android|
 |оператингсистемпродукттипе|Int32|Int, указывающий операционную систему Windows Продукттипе. Дополнительные сведения https://go.microsoft.com/fwlink/?linkid=2126950 . Допустимые значения — от 0 до 2147483647|
+|ipAddressV4|Строка|IPAddressV4|
+|субнетаддресс|Строка|субнетаддресс|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -100,10 +102,11 @@ ms.locfileid: "48081393"
   "deviceGuardVirtualizationBasedSecurityState": "String",
   "deviceGuardLocalSystemAuthorityCredentialGuardState": "String",
   "osBuildNumber": "String",
-  "operatingSystemProductType": 1024
+  "operatingSystemProductType": 1024,
+  "ipAddressV4": "String",
+  "subnetAddress": "String"
 }
 ```
-
 
 
 

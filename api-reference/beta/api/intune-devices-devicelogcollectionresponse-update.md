@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: de1cc5fefa8961638ad4aebe1517c1918299553f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c6dade84eeb03fbfedc846d6ef7740579146fff8
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056137"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696841"
 ---
 # <a name="update-devicelogcollectionresponse"></a>Обновление Девицелогколлектионреспонсе
 
@@ -46,26 +46,26 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор в виде tenantId_deviceId_requestId|
+|id|Строка|Уникальный идентификатор в виде tenantId_deviceId_requestId|
 |status|String|Состояние запроса на сбор журналов|
 |манажеддевицеид|Guid|Идентификатор устройства|
 |errorCode|Int64|Код ошибки (при наличии). Допустимые значения — 9.22337203685478 E + 18 — 9.22337203685478 E + 18|
 |рекуестеддатетимеутк|DateTimeOffset|Дата и время запроса|
 |рецеиведдатетимеутк|DateTimeOffset|Дата и время получения запроса|
-|Свойства initiatedbyuserprincipalname|String|Имя участника-пользователя, который инициировал запрос.|
+|Свойства initiatedbyuserprincipalname|Строка|Имя участника-пользователя, который инициировал запрос.|
 |експиратиондатетимеутк|DateTimeOffset|Дата и время истечения срока действия журналов|
 |size|Двойное с плавающей точкой|Размер журналов. Допустимые значения — 1 79769313486232e308 E + 308 — 1 79769313486232e308 E + 308|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -110,7 +110,6 @@ Content-Length: 528
   "size": 1.3333333333333333
 }
 ```
-
 
 
 

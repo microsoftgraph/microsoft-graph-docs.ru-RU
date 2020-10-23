@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Команажементелигибледевице
-description: Состояние возможности совместного управления устройствами
+description: Состояние Co-Management приемлемости устройства
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c6a912aa9631295c7331afa8f1d985b5231ac614
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5790f49a20f6079dbaf8e6400fd2bfb6b33e86fc
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48060764"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48697793"
 ---
 # <a name="comanagementeligibledevice-resource-type"></a>Тип ресурса Команажементелигибледевице
 
@@ -20,7 +20,7 @@ ms.locfileid: "48060764"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние возможности совместного управления устройствами
+Состояние Co-Management приемлемости устройства
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
@@ -34,15 +34,15 @@ ms.locfileid: "48060764"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор устройства|
+|id|Строка|Уникальный идентификатор устройства|
 |deviceName|String|DeviceName|
 |deviceType|[deviceType](../resources/intune-shared-devicetype.md)|DeviceType. Возможные значения:,,,,,,,,,,, `desktop` `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` , `unix` ,,, `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `windows10x` `androidnGMS` `cloudPC` `blackberry` `palm` ,, `unknown` ,,,,,,,,,,,,,.|
 |клиентрегистратионстатус|[deviceRegistrationState](../resources/intune-devices-deviceregistrationstate.md)|Клиентрегистратионстатус. Возможные значения: `notRegistered`, `registered`, `revoked`, `keyConflict`, `approvalPending`, `certificateReset`, `notRegisteredPendingEnrollment`, `unknown`.|
 |ownerType|[ownerType](../resources/intune-shared-ownertype.md)|OwnerType. Возможные значения: `unknown`, `company`, `personal`.|
-|managementAgents|[манажементаженттипе](../resources/intune-shared-managementagenttype.md)|ManagementAgents. Возможные значения: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `windowsManagementCloudApi`.|
+|managementAgents|[манажементаженттипе](../resources/intune-shared-managementagenttype.md)|ManagementAgents. Возможные значения: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`.|
 |манажементстате|[манажементстате](../resources/intune-devices-managementstate.md)|Манажементстате. Возможные значения: `managed`, `retirePending`, `retireFailed`, `wipePending`, `wipeFailed`, `unhealthy`, `deletePending`, `retireIssued`, `wipeIssued`, `wipeCanceled`, `retireCanceled`, `discovered`.|
-|референцеид|String|ReferenceId|
-|мдмстатус|String|мдмстатус|
+|референцеид|Строка|ReferenceId|
+|мдмстатус|Строка|мдмстатус|
 |osVersion|String|OSVersion|
 |serialNumber|String|SerialNumber|
 |manufacturer|String|Вычислитель|
@@ -50,7 +50,7 @@ ms.locfileid: "48060764"
 |osDescription|String|Свойства OSDescription|
 |ентитисаурце|Int32|ентитисаурце|
 |userId|String|ИД пользователя|
-|Основное|String|Имя участника-пользователя|
+|Основное|Строка|Имя участника-пользователя|
 |userEmail|String|Электронный адрес пользователя|
 |userName|String|Имя пользователя|
 |status|[comanagementEligibleType](../resources/intune-devices-comanagementeligibletype.md)|Команажементелигиблестатус. Возможные значения: `comanaged`, `eligible`, `eligibleButNotAzureAdJoined`, `needsOsUpdate`, `ineligible`.|
@@ -91,7 +91,6 @@ ms.locfileid: "48060764"
   "status": "String"
 }
 ```
-
 
 
 

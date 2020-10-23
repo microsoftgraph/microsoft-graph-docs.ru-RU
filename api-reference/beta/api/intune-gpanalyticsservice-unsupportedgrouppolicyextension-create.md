@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4527a57e68325e18634587661f1a15634ec8c75a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 066adda1d6d6b66eb42984ab22c20f155b1f5ea7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074561"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696554"
 ---
 # <a name="create-unsupportedgrouppolicyextension"></a>Создание Унсуппортедграупполициекстенсион
 
@@ -46,22 +46,22 @@ POST /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Унсуппортедграупполициекстенсион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Унсуппортедграупполициекстенсион.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
+|id|Строка|Пока не задокументировано.|
 |сеттингскопе|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Задание области для неподдерживаемого расширения. Возможные значения: `unknown`, `device`, `user`.|
-|намеспацеурл|String|URL-адрес пространства имен неподдерживаемого расширения.|
-|екстенсионтипе|String|Екстенсионтипе неподдерживаемого расширения.|
-|nodeName|String|Имя узла неподдерживаемого расширения.|
+|намеспацеурл|Строка|URL-адрес пространства имен неподдерживаемого расширения.|
+|екстенсионтипе|Строка|Екстенсионтипе неподдерживаемого расширения.|
+|nodeName|Строка|Имя узла неподдерживаемого расширения.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [унсуппортедграупполициекстенсион](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -98,7 +98,6 @@ Content-Length: 285
   "nodeName": "Node Name value"
 }
 ```
-
 
 
 
