@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 20a5d4ef3fe2dc79c3843d86c525086940a8d78c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b14b632e03160e9b56de1ad2ba0c2e32a1b74179
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079937"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728979"
 ---
 # <a name="importedwindowsautopilotdeviceidentitystate-resource-type"></a>Тип ресурса importedWindowsAutopilotDeviceIdentityState
 
@@ -30,7 +30,7 @@ ms.locfileid: "48079937"
 |deviceErrorCode|Int32|Код ошибки устройства, сообщаемый службой каталогов устройства (DDS).|
 |deviceErrorName|Строка|Имя ошибки устройства, сообщаемое службой каталогов устройства (DDS).|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -49,7 +49,6 @@ ms.locfileid: "48079937"
   "deviceErrorName": "String"
 }
 ```
-
 
 
 

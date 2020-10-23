@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ebcf90a628ff4a3a435e34a2439a277fa3a3064d
-ms.sourcegitcommit: 258974d689cb8f04ff542ec8bc5fe5793da5cc05
+ms.openlocfilehash: ac8b7c926066325651665e7ef6178c95372cf16f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48385809"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729175"
 ---
 # <a name="setdevicename-action"></a>Действие setDeviceName
 
@@ -27,9 +27,9 @@ ms.locfileid: "48385809"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.PrivilegedOperations.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.PriviligedOperation.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.PrivilegedOperations.All|
+|Для приложений|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,7 +52,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -86,7 +86,6 @@ Content-length: 41
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

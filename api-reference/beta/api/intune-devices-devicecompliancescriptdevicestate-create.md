@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 699f3e17317389aac687dfc1dd05fc2aeaf05d4b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 908c7cbeac5ed14d0e96fc9e080357a6c6bcef99
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48011237"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728783"
 ---
 # <a name="create-devicecompliancescriptdevicestate"></a>Создание Девицекомплианцескриптдевицестате
 
@@ -29,7 +29,7 @@ ms.locfileid: "48011237"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
+|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -43,7 +43,7 @@ POST /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/device
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,17 +53,17 @@ POST /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/device
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта состояния "сценарий соответствия требованиям устройства". Это свойство доступно только для чтения.|
+|id|Строка|Ключ объекта состояния "сценарий соответствия требованиям устройства". Это свойство доступно только для чтения.|
 |детектионстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние обнаружения с последнего выполнения скрипта соответствия устройств требованиям. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |ластстатеупдатедатетиме|DateTimeOffset|Последняя метка времени выполнения сценария соответствия требованиям устройства|
 |експектедстатеупдатедатетиме|DateTimeOffset|Следующий штамп времени, когда ожидается выполнение сценария соответствия устройства|
 |lastSyncDateTime|DateTimeOffset|Время последнего синхронизации расширения управления Intune с Intune|
-|скриптаутпут|String|Выходные данные сценария обнаружения|
-|скриптеррор|String|Ошибка сценария обнаружения|
+|скриптаутпут|Строка|Выходные данные сценария обнаружения|
+|скриптеррор|Строка|Ошибка сценария обнаружения|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицекомплианцескриптдевицестате](../resources/intune-devices-devicecompliancescriptdevicestate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -104,7 +104,6 @@ Content-Length: 436
   "scriptError": "Script Error value"
 }
 ```
-
 
 
 

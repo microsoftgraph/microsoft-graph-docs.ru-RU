@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 37c2bd663bd635448844464dd1a03e9c5842bd03
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0caaff068ef8bce5f2da6dfcb5167d0903fbbfb7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48068660"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729119"
 ---
 # <a name="create-importeddeviceidentity"></a>Создание Импортеддевицеидентити
 
@@ -46,26 +46,26 @@ POST /deviceManagement/importedDeviceIdentities
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Импортеддевицеидентити в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Импортеддевицеидентити.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор импортированного удостоверения устройства|
-|импортеддевицеидентифиер|String|Импортированный идентификатор устройства|
+|id|Строка|Идентификатор импортированного удостоверения устройства|
+|импортеддевицеидентифиер|Строка|Импортированный идентификатор устройства|
 |импортеддевицеидентититипе|[импортеддевицеидентититипе](../resources/intune-enrollment-importeddeviceidentitytype.md)|Тип импортированного удостоверения устройства. Возможные значения: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения описания|
 |createdDateTime|DateTimeOffset|Дата и время создания устройства|
 |ластконтактеддатетиме|DateTimeOffset|Дата и время последнего обращения к устройству|
-|description|String|Описание устройства|
+|description|Строка|Описание устройства|
 |енроллментстате|[енроллментстате](../resources/intune-shared-enrollmentstate.md)|Состояние устройства в Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |платформа|[управляем](../resources/intune-enrollment-platform.md)|Платформа устройства. Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -108,7 +108,6 @@ Content-Length: 504
   "platform": "ios"
 }
 ```
-
 
 
 

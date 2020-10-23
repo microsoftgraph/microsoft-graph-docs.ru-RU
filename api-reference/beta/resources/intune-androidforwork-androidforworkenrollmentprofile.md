@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9bc95a4588096427cee8005c0cb70cb798bb3608
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ee0fb84bee4d70177930857dcce9bbff0144d3c0
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004167"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728615"
 ---
 # <a name="androidforworkenrollmentprofile-resource-type"></a>Тип ресурса androidForWorkEnrollmentProfile
 
@@ -37,9 +37,9 @@ ms.locfileid: "48004167"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |accountId|String|GUID клиента, которому принадлежит профиль регистрации.|
-|id|String|Уникальный GUID профиля регистрации.|
-|displayName|String|Отображаемое имя для профиля регистрации.|
-|description|String|Описание профиля регистрации.|
+|id|Строка|Уникальный GUID профиля регистрации.|
+|displayName|Строка|Отображаемое имя для профиля регистрации.|
+|description|Строка|Описание профиля регистрации.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля регистрации.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля регистрации.|
 |tokenValue|String|Значение последнего созданного маркера для этого профиля регистрации.|
@@ -79,7 +79,6 @@ ms.locfileid: "48004167"
   }
 }
 ```
-
 
 
 
