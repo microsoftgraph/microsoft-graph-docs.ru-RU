@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 89897f2edf56db403f8ce01091e851358f3d8bd9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3c0975fa4a0b1e565fd3798967d2f09175acd256
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972254"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48708160"
 ---
 # <a name="update-windowsmanagementapp"></a>Обновление windowsManagementApp
 
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/windowsManagementApp
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,12 +53,12 @@ PATCH /deviceAppManagement/windowsManagementApp
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для приложения управления Windows|
-|availableVersion|String|Доступная версия приложения управления Windows.|
+|id|Строка|Уникальный идентификатор для приложения управления Windows|
+|availableVersion|Строка|Доступная версия приложения управления Windows.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [windowsManagementApp](../resources/intune-devices-windowsmanagementapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -89,7 +89,6 @@ Content-Length: 161
   "availableVersion": "Available Version value"
 }
 ```
-
 
 
 

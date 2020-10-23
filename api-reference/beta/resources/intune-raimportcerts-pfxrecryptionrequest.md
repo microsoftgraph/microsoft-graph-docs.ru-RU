@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 709db603921804ce4a3eb87da7e58ec87df085a0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 043bfa48660b8bee04bec35de7b7cc987af0a634
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993317"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707600"
 ---
 # <a name="pfxrecryptionrequest-resource-type"></a>Тип ресурса Пфксрекриптионрекуест
 
@@ -75,7 +75,6 @@ ms.locfileid: "47993317"
   "eTag": "String"
 }
 ```
-
 
 
 

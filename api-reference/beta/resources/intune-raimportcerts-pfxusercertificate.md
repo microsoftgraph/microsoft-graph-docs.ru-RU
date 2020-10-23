@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 514e3d4c858a49ab51f5c3f7565ae4ccdf64be6e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 42cfb2f4bf44f02870751e02f1cb973f96d2237c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993282"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707593"
 ---
 # <a name="pfxusercertificate-resource-type"></a>Тип ресурса Пфксусерцертификате
 
@@ -85,7 +85,6 @@ ms.locfileid: "47993282"
   "eTag": "String"
 }
 ```
-
 
 
 

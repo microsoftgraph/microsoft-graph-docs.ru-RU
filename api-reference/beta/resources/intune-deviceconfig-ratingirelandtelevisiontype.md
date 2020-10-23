@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0a198c98fd82e5b4f388175b244ded0cb2c9dbd2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 22596d202032ca5f60b4af977554a8c5f4ee3ead
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049711"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707096"
 ---
 # <a name="ratingirelandtelevisiontype-enum-type"></a>тип перечисления Ратингиреландтелевисионтипе
 
@@ -26,13 +26,12 @@ ms.locfileid: "48049711"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
-|аллблоккед|1 |Не разрешать показ контента|
-|обобщен|2 |Классификация "GA" подходит для всех аудиторий|
+|аллблоккед|1,1|Не разрешать показ контента|
+|обобщен|2|Классификация "GA" подходит для всех аудиторий|
 |children|4|Классификация CH подходит для дочерних элементов|
 |йоунгадултс|4 |Классификация я подходит для аудитории тинаже|
 |паренталсупервисион|5 |Классификация PS предлагает родителям и хранителям учитывать доступ детей к ограничениям|
 |обнаружен|6 |Классификация MA подходит для взрослых.|
-
 
 
 

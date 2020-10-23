@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dd925db9eef2c03702ded5927408c6fc2d6ef399
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cf4d5ebcd77dfef119d97e0d5bbe2bfbfb93c4e7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026749"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48707817"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>Тип ресурса Девицеманажементусерригхтслокалусерорграуп
 
@@ -26,10 +26,10 @@ ms.locfileid: "48026749"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |name|String|Имя локального пользователя или группы.|
-|description|String|Описание локального пользователя или группы администратором.|
+|description|Строка|Описание локального пользователя или группы администратором.|
 |securityIdentifier|String|Идентификатор безопасности этого локального пользователя или группы (например, * S-1-5-32-544).|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,7 +47,6 @@ ms.locfileid: "48026749"
   "securityIdentifier": "String"
 }
 ```
-
 
 
 
