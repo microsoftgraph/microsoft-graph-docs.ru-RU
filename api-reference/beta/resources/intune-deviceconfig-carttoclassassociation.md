@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5aaced5f6c5959b4113ae5d6ff3cbbfecb0a1ba1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 987eb9ad94ca84b9af3c9b7991e0f18068b6fcb4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081627"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729821"
 ---
 # <a name="carttoclassassociation-resource-type"></a>Тип ресурса КарттоклассассоЦиатион
 
@@ -40,8 +40,8 @@ ms.locfileid: "48081627"
 |version|Int32|Версия КарттоклассассоЦиатион.|
 |displayName|Строка|Указанное администратором имя конфигурации устройства.|
 |description|Строка|Администратор предоставил описание КарттоклассассоЦиатион.|
-|девицекартидс|Коллекция String|Идентификаторы корзин устройств, которые необходимо связать с классами.|
-|классрумидс|Коллекция String|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
+|девицекартидс|Коллекция строк|Идентификаторы корзин устройств, которые необходимо связать с классами.|
+|классрумидс|Коллекция строк|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -71,7 +71,6 @@ ms.locfileid: "48081627"
   ]
 }
 ```
-
 
 
 

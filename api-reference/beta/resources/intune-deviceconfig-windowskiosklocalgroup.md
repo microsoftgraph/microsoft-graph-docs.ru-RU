@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cd26b8e7d7649d832e844ee9c6a0a68e7ed9cd5f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3e7777245f9020de1db2ad3b89a41052739ccb98
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039764"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729527"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>Тип ресурса Виндовскиосклокалграуп
 
@@ -28,9 +28,9 @@ ms.locfileid: "48039764"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groupName|String|Имя локальной группы, которая будет заблокирована для этой конфигурации киоска|
+|groupName|Строка|Имя локальной группы, которая будет заблокирована для этой конфигурации киоска|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,7 +46,6 @@ ms.locfileid: "48039764"
   "groupName": "String"
 }
 ```
-
 
 
 

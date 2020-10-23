@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 769afaef5370cd55c8edc30a057a9bba15893d88
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7bfc889acd17049e38a0e4efe03d83389e9983fd
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031664"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729697"
 ---
 # <a name="iosbookmark-resource-type"></a>Тип ресурса Иосбукмарк
 
@@ -26,10 +26,10 @@ ms.locfileid: "48031664"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |url|String|URL-адрес, разрешенный для доступа|
-|букмаркфолдер|String|Папка, в которую следует добавить закладку в Safari|
-|displayName|String|Отображаемое имя закладки|
+|букмаркфолдер|Строка|Папка, в которую следует добавить закладку в Safari|
+|displayName|Строка|Отображаемое имя закладки|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,7 +47,6 @@ ms.locfileid: "48031664"
   "displayName": "String"
 }
 ```
-
 
 
 

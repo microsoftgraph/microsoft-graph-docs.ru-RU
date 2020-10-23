@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: beceb3fd321f0d8694a80e15a614a584dd6626e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 60169100f3332ea78c9bf5079e4edba202108069
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998763"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48729863"
 ---
 # <a name="devicecompliancescriptrule-resource-type"></a>Тип ресурса Девицекомплианцескриптруле
 
@@ -28,7 +28,7 @@ ms.locfileid: "47998763"
 |settingName|String|Имя параметра, указанное в правиле.|
 |operator|[operator](../resources/intune-deviceconfig-operator.md)|Оператор, указанный в правиле. Возможные значения:,,,,,,,,,,, `none` `and` `or` `isEquals` `notEquals` `greaterThan` `lessThan` `between` `notBetween` `greaterEquals` `lessEquals` `dayTimeBetween` `beginsWith` , `notBeginsWith` ,,, `endsWith` `notEndsWith` `contains` `notContains` `allOf` `oneOf` `noneOf` `setEquals` `orderedSetEquals` `subsetOf` ,, `excludesAll` ,,,,,,,,,,,,,.|
 |dataType|[DataType](../resources/intune-deviceconfig-datatype.md)|Тип данных, указанный в правиле. Возможные значения: `none` , `boolean` ,,,,, `int64` `double` `string` `dateTime` `version` ,,, `base64` `xml` `booleanArray` , `int64Array` , `doubleArray` , `stringArray` , `dateTimeArray` , `versionArray` .|
-|начинается|String|Операнд, указанный в правиле.|
+|начинается|Строка|Операнд, указанный в правиле.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -49,7 +49,6 @@ ms.locfileid: "47998763"
   "operand": "String"
 }
 ```
-
 
 
 
