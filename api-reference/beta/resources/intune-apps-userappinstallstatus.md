@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ccae01f74466c839e602d5f7b5c62536fc409a15
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a642d70d07ec5680ac7040b2916452fca2630150
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026847"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48685522"
 ---
 # <a name="userappinstallstatus-resource-type"></a>Тип ресурса Усераппинсталлстатус
 
@@ -34,17 +34,17 @@ ms.locfileid: "48026847"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |userName|String|Имя пользователя.|
 |userPrincipalName|String|Имя участника пользователя.|
 |installedDeviceCount|Int32|Количество установленных устройств.|
 |failedDeviceCount|Int32|Количество устройств со сбоями.|
 |notInstalledDeviceCount|Int32|Количество не установленных устройств.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|программы|[mobileApp](../resources/intune-shared-mobileapp.md);|Ссылка навигации на мобильное приложение.|
+|приложение|[mobileApp](../resources/intune-shared-mobileapp.md);|Ссылка навигации на мобильное приложение.|
 |deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Состояние установки приложения на устройствах.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -66,7 +66,6 @@ ms.locfileid: "48026847"
   "notInstalledDeviceCount": 1024
 }
 ```
-
 
 
 

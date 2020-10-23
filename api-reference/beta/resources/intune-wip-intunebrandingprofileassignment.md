@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cee1cc0b2454e842f50eff1fc6f8e9e0ed5455d1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a1815ad30c46b87c687eba7ee09b7f91a5871edd
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989089"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48685410"
 ---
 # <a name="intunebrandingprofileassignment-resource-type"></a>Тип ресурса Интунебрандингпрофилеассигнмент
 
@@ -34,7 +34,7 @@ ms.locfileid: "47989089"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта.|
+|id|Строка|Уникальный идентификатор объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения, которой назначен профиль фирменной символики.|
 
 ## <a name="relationships"></a>Связи
@@ -59,7 +59,6 @@ ms.locfileid: "47989089"
   }
 }
 ```
-
 
 
 

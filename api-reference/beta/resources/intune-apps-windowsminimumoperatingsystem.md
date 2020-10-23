@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f82eb5e5c77807b4cdd8be0d80481b6f129b529
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d3f80d823cf9e4eaecc20021353fc130d313d4ae
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070935"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48685459"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>Тип ресурса windowsMinimumOperatingSystem
 
@@ -28,14 +28,14 @@ ms.locfileid: "48070935"
 |v8_0|Boolean|Windows 8.0 или более поздней версии.|
 |v8_1|Boolean|Windows 8.1 или более поздней версии.|
 |v10_0|Boolean|Windows 10.0 или более поздней версии.|
-|v10_1607|Boolean|Windows 10 1607 или более поздняя версия.|
-|v10_1703|Boolean|Windows 10 1703 или более поздняя версия.|
-|v10_1709|Boolean|Windows 10 1709 или более поздняя версия.|
-|v10_1803|Boolean|Windows 10 1803 или более поздняя версия.|
-|v10_1809|Boolean|Windows 10 1809 или более поздняя версия.|
-|v10_1903|Boolean|Windows 10 1903 или более поздняя версия.|
+|v10_1607|Логический|Windows 10 1607 или более поздняя версия.|
+|v10_1703|Логический|Windows 10 1703 или более поздняя версия.|
+|v10_1709|Логический|Windows 10 1709 или более поздняя версия.|
+|v10_1803|Логический|Windows 10 1803 или более поздняя версия.|
+|v10_1809|Логический|Windows 10 1809 или более поздняя версия.|
+|v10_1903|Логический|Windows 10 1903 или более поздняя версия.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -59,7 +59,6 @@ ms.locfileid: "48070935"
   "v10_1903": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c55b19e19255d3527046bba07cfaea86ecb69d6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 04c058ff0e88a925c52b1e3f66105068628200b2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076920"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48685543"
 ---
 # <a name="list-resourceoperations"></a>Перечисление объектов resourceOperation
 
@@ -46,10 +46,10 @@ GET /deviceManagement/resourceOperations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [resourceOperation](../resources/intune-rbac-resourceoperation.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -81,7 +81,6 @@ Content-Length: 359
   ]
 }
 ```
-
 
 
 
