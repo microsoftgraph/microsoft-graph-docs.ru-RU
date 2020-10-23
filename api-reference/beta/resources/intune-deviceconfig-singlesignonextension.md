@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Синглесигнонекстенсион
-description: Представляет расширение единого входа Apple.
+description: Представляет расширение Apple Single Sign-On.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4bac023984ee46ad4c98813931479617424669a7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a2a6db561e064fb12837d5adc6dfbbd227f01384
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049326"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693859"
 ---
 # <a name="singlesignonextension-resource-type"></a>Тип ресурса Синглесигнонекстенсион
 
@@ -20,13 +20,13 @@ ms.locfileid: "48049326"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Представляет расширение единого входа Apple.
+Представляет расширение Apple Single Sign-On.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,7 +41,6 @@ ms.locfileid: "48049326"
   "@odata.type": "#microsoft.graph.singleSignOnExtension"
 }
 ```
-
 
 
 

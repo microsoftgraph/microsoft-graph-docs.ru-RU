@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 8365eb40f17b332fe86bc8f589286e508da2fa36
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3f349e5ea619a8a1c2f793e6874d37cf80c21357
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084851"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693768"
 ---
 # <a name="windows10editiontype-enum-type"></a>тип перечисления windows10EditionType
 
@@ -26,8 +26,8 @@ ms.locfileid: "48084851"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |windows10Enterprise|нуль|Windows 10 Корпоративная|
-|windows10EnterpriseN|1 |Windows 10 Ентерприсен|
-|windows10Education|2 |Windows 10 для образовательных учреждений|
+|windows10EnterpriseN|1,1|Windows 10 Ентерприсен|
+|windows10Education|2|Windows 10 для образовательных учреждений|
 |windows10EducationN|4|Windows 10 Едукатионн|
 |windows10MobileEnterprise|4 |Windows 10 Mobile корпоративный|
 |windows10HolographicEnterprise|5 |Windows 10 holographic Корпоративная|
@@ -36,7 +36,7 @@ ms.locfileid: "48084851"
 |windows10ProfessionalEducation|8 |Windows 10 профессиональная образование|
 |windows10ProfessionalEducationN|9 |Windows 10 профессиональная Едукатионн|
 |windows10ProfessionalWorkstation|10 |Windows 10 профессиональная для рабочих станций|
-|windows10ProfessionalWorkstationN|11 |Windows 10 профессиональная для рабочих станций N|
+|windows10ProfessionalWorkstationN|-11:00|Windows 10 профессиональная для рабочих станций N|
 |notConfigured|12 |NotConfigured|
 |windows10Home|13 |Windows 10 Домашняя|
 |windows10HomeChina|14 |Windows 10 домашняя (Китай)|
@@ -45,7 +45,6 @@ ms.locfileid: "48084851"
 |windows10Mobile|17 |Windows 10 Mobile|
 |windows10IoTCore|18 |Ядро IoT Windows 10|
 |windows10IoTCoreCommercial|19|Windows 10 IoT базовая коммерческая версия|
-
 
 
 

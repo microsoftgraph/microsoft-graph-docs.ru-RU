@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Редиректсинглесигнонекстенсион
-description: Представляет расширение единого входа Apple.
+description: Представляет расширение Apple Single Sign-On.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 348f6c194c1084bf186812cb4e86edba8b9b7579
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b51e708889bd4d6e81f50a326143deef7bd40f4a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049585"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693915"
 ---
 # <a name="redirectsinglesignonextension-resource-type"></a>Тип ресурса Редиректсинглесигнонекстенсион
 
@@ -20,7 +20,7 @@ ms.locfileid: "48049585"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Представляет расширение единого входа Apple.
+Представляет расширение Apple Single Sign-On.
 
 
 Наследуется от [синглесигнонекстенсион](../resources/intune-deviceconfig-singlesignonextension.md)
@@ -31,7 +31,7 @@ ms.locfileid: "48049585"
 |екстенсионидентифиер|Строка|Получает или задает идентификатор пакета расширения приложения, выполняющего единый вход для указанных URL-адресов.|
 |теамидентифиер|Строка|Получает или задает идентификатор группы расширения приложения, выполняющего единый вход для указанных URL-адресов.|
 |построения|Коллекция [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)|Получает или задает список типизированных пар "ключ — значение", используемых для настройки профилей типа учетных данных. Эта коллекция может содержать не более 500 элементов.|
-|урлпрефиксес|Коллекция String|Один или несколько префиксов URL-адресов поставщиков удостоверений, у которых расширение приложения выполняет единый вход. URL-адреса должны начинаться с http://или https://. Все префиксы URL-адреса должны быть уникальными для всех профилей.|
+|урлпрефиксес|Коллекция строк|Один или несколько префиксов URL-адресов поставщиков удостоверений, у которых расширение приложения выполняет единый вход. URL-адреса должны начинаться с http://или https://. Все префиксы URL-адреса должны быть уникальными для всех профилей.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -60,7 +60,6 @@ ms.locfileid: "48049585"
   ]
 }
 ```
-
 
 
 

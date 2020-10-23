@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 42a288ff23d51cb4d5d6e98a30dd55ad3533d709
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 435c65ed27245aa1f899a129a13a443c6a69396c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049277"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693796"
 ---
 # <a name="subjectalternativenametype-enum-type"></a>тип перечисления subjectAlternativeNameType
 
@@ -25,12 +25,12 @@ ms.locfileid: "48049277"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Нет альтернативного имени субъекта.|
-|emailAddress|1 |Адрес электронной почты.|
-|userPrincipalName|2 |Имя участника-пользователя (UPN).|
+|none|нуль|Нет альтернативного имени субъекта.|
+|emailAddress|1,1|Адрес электронной почты.|
+|userPrincipalName|2|Имя участника-пользователя (UPN).|
 |кустомазуреадаттрибуте|4 |Настраиваемый атрибут Azure AD.|
 |домаиннамесервице|8 |Служба доменных имен (DNS).|
-
+|универсалресаурцеидентифиер|16 |Универсальный код ресурса (URI).|
 
 
 

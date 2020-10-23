@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4bb3d52b39c48a43dbc9d90b9565f88209e37e4c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 06ef929412f2f977d6017ab30dc1ea268bbaf59a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049718"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48694069"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>Тип ресурса win32LobAppPowerShellScriptDetection
 
@@ -28,8 +28,8 @@ ms.locfileid: "48049718"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Свойства enforcesignaturecheck|Boolean|Значение, указывающее, применяется ли проверка подписи|
-|runAs32Bit|Boolean|Значение, указывающее, должен ли этот скрипт выполняться как 32 бит|
+|Свойства enforcesignaturecheck|Логический|Значение, указывающее, применяется ли проверка подписи|
+|runAs32Bit|Логический|Значение, указывающее, должен ли этот скрипт выполняться как 32 бит|
 |скриптконтент|Строка|Содержимое скрипта в кодировке Base64 для обнаружения бизнес-приложения Win32|
 
 ## <a name="relationships"></a>Связи
@@ -50,7 +50,6 @@ ms.locfileid: "48049718"
   "scriptContent": "String"
 }
 ```
-
 
 
 
