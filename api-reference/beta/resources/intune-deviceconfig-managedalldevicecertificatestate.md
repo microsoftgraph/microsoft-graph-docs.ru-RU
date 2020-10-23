@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0d78387106497c8ff2300f4d1c64445cafe25e96
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7fd7544e01ff0351d8883dd8201b9c3a901e2d7d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48016228"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48710043"
 ---
 # <a name="managedalldevicecertificatestate-resource-type"></a>Тип ресурса Манажедаллдевицецертификатестате
 
@@ -34,21 +34,21 @@ ms.locfileid: "48016228"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |цертификатеревокестатус|[цертификатеревокатионстатус](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзыв состояния. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
 |цертификатеревокестатусластчанжедатетиме|DateTimeOffset|Время последнего изменения состояния отзыва|
-|манажеддевицедисплайнаме|String|Отображаемое имя устройства|
+|манажеддевицедисплайнаме|Строка|Отображаемое имя устройства|
 |userPrincipalName|String|Имя субъекта-пользователя|
 |цертификатикспиратиондатетиме|DateTimeOffset|Дата окончания срока действия сертификата|
-|цертификатеиссуернаме|String|Издатель|
-|certificateThumbprint|String|Отпечаток|
-|цертификатесериалнумбер|String|Серийный номер|
-|цертификатесубжектнаме|String|Имя субъекта сертификата|
+|цертификатеиссуернаме|Строка|Издатель|
+|certificateThumbprint|Строка|Thumbprint|
+|цертификатесериалнумбер|Строка|Серийный номер|
+|цертификатесубжектнаме|Строка|Имя субъекта сертификата|
 |цертификатекэйусажес|Int32|Использование ключа|
-|цертификатикстендедкэйусажес|String|Расширенное использование ключа|
+|цертификатикстендедкэйусажес|Строка|Расширенное использование ключа|
 |цертификатеиссуанцедатетиме|DateTimeOffset|Дата выпуска|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -77,7 +77,6 @@ ms.locfileid: "48016228"
   "certificateIssuanceDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

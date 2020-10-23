@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 41e8f1cb8907633f919df19431a01e9e43c9c5de
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e81f7e318572e6d2713f2e8e0c803ff62346c682
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039393"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709826"
 ---
 # <a name="devicemanagementreportfileformat-enum-type"></a>тип перечисления Девицеманажементрепортфилеформат
 
@@ -26,8 +26,7 @@ ms.locfileid: "48039393"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |расширения|нуль|Значения, разделенные запятыми|
-|pdf|1 |Формат PDF|
-
+|pdf|1,1|Формат PDF|
 
 
 

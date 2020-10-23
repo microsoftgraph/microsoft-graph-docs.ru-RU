@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: efc57de0c8913f74698b6a847bb557a14a6ad2c8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e3efec1b2b80e8fe3ca6830369230ff2f0b8c4bd
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024880"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709555"
 ---
 # <a name="get-manageddeviceencryptionstate"></a>Получение Манажеддевицеенкриптионстате
 
@@ -46,13 +46,13 @@ GET /deviceManagement/managedDeviceEncryptionStates/{managedDeviceEncryptionStat
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [манажеддевицеенкриптионстате](../resources/intune-deviceconfig-manageddeviceencryptionstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -94,7 +94,6 @@ Content-Length: 810
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 495d40ae9da2c11845b99a65d7dcdfad28e02a6f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3156c353a2da365034cf98537b7fba0ec651d010
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086222"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709574"
 ---
 # <a name="create-manageddeviceencryptionstate"></a>Создание Манажеддевицеенкриптионстате
 
@@ -46,7 +46,7 @@ POST /deviceManagement/managedDeviceEncryptionStates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Манажеддевицеенкриптионстате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Манажеддевицеенкриптионстате.
@@ -55,7 +55,7 @@ POST /deviceManagement/managedDeviceEncryptionStates
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |userPrincipalName|String|Имя пользователя|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Платформа устройства. Возможные значения: `desktop` ,,,,,,,,,,,,,,,,,,,,,,,,,,, `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `blackberry` `palm` `unknown` .|
+|deviceType|[deviceTypes](../resources/intune-deviceconfig-devicetypes.md)|Платформа устройства. Возможные значения: `desktop` ,,,,,,,,,,,,,,,,,,,,,,,,,,, `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `blackberry` `palm` `unknown` .|
 |osVersion|String|Версия операционной системы устройства|
 |тпмспеЦификатионверсион|Строка|Версия TPM устройства|
 |deviceName|String|Имя устройства|
@@ -68,7 +68,7 @@ POST /deviceManagement/managedDeviceEncryptionStates
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [манажеддевицеенкриптионстате](../resources/intune-deviceconfig-manageddeviceencryptionstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -131,7 +131,6 @@ Content-Length: 753
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1bfae831ad9e21bee9438c5b0c776775f6ed726b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ff6c3bf31b1fbe390bb53d4166c961dd2bcef3e4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049459"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709938"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>тип перечисления Секуреассессментаккаунттипе
 
@@ -26,10 +26,9 @@ ms.locfileid: "48049459"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |азуреадаккаунт|нуль|Указывает учетную запись Azure AD в формате AzureAD\username@tenant.com.|
-|домаинаккаунт|1 |Указывает учетную запись домена в формате домен \ пользователь или user@domain.com.|
-|локалаккаунт|2 |Указывает локальную учетную запись в формате имени пользователя.|
+|домаинаккаунт|1,1|Указывает учетную запись домена в формате домен \ пользователь или user@domain.com.|
+|локалаккаунт|2|Указывает локальную учетную запись в формате имени пользователя.|
 |локалгуестаккаунт|4|Указывает локальную гостевую учетную запись в формате имени теста.|
-
 
 
 

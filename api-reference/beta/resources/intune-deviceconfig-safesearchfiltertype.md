@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6a799bc90544c2c5d65b51808b185ea905c7b54d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2e043979f3f57b16ad4d2bb62b1c7d8710889f3b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48049529"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48710029"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>тип перечисления Сафесеарчфилтертипе
 
@@ -26,9 +26,8 @@ ms.locfileid: "48049529"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|жестк|1 |Максимальная фильтрация с использованием содержимого для взрослых.|
-|средние|2 |Умеренная фильтрация содержимого для взрослых (допустимые результаты поиска не будут фильтроваться).|
-
+|жестк|1,1|Максимальная фильтрация с использованием содержимого для взрослых.|
+|средние|2|Умеренная фильтрация содержимого для взрослых (допустимые результаты поиска не будут фильтроваться).|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d64f5ce049c73b74f105f3899ccf218e3c82fc85
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 988d7e11039ab3074cce46dccbd5a671a8dc0d7b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039379"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48709812"
 ---
 # <a name="devicemanagementreports-resource-type"></a>Тип ресурса Девицеманажементрепортс
 
@@ -39,9 +39,9 @@ ms.locfileid: "48039379"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этой сущности|
+|id|Строка|Уникальный идентификатор для этой сущности|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |качедрепортконфигуратионс|Коллекция [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md)|Сущность, представляющая конфигурацию кэшированного отчета|
@@ -62,7 +62,6 @@ ms.locfileid: "48039379"
   "id": "String (identifier)"
 }
 ```
-
 
 
 
