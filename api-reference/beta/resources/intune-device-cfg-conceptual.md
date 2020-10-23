@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 416485ee39f02ba6a3b6532f159e124ecf1f1841
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6087a688102e9577fe24ae3d3eb4cd3c70768aee
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966550"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727493"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
@@ -38,7 +38,7 @@ ms.locfileid: "47966550"
 - [Тип политики разрешений приложения по умолчанию для владельца устройства с Android](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
 - [Конфигурация проверки подлинности производных учетных данных владельца устройств Android](intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md)
 - [Тип профиля регистрации владельца устройства Android](intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)
-- [Конфигурация Wi/Fi для владельца устройств Android Enterprise](intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)
+- [Конфигурация Wi-Fi "владелец устройства Android корпоративный"](intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md)
 - [Общая конфигурация устройств для владельца устройства с Android](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
 - [Глобальный прокси-сервер владельца устройства Android](intune-deviceconfig-androiddeviceownerglobalproxy.md)
 - [Автонастройка глобального прокси-сервера владельца устройств Android](intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md)
@@ -358,7 +358,7 @@ ms.locfileid: "47966550"
 - [Локальные параметры безопасности: поведение при извлечении смарт-карты](intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)
 - [Локальные параметры безопасности: режим отображения запроса для повышения прав стандартного пользователя](intune-deviceconfig-localsecurityoptionsstandarduserelevationpromptbehaviortype.md)
 - [приемник событий Apple macOS](intune-deviceconfig-macosappleeventreceiver.md)
-- [macOS связанные домены ключей и значений](intune-deviceconfig-macosassociateddomainskeyvaluepair.md)
+- [элемент macOS, связанных с доменами](intune-deviceconfig-macosassociateddomainsitem.md)
 - [macOS с единым входом Azure AD](intune-deviceconfig-macosazureadsinglesignonextension.md)
 - [База профилей сертификатов для macOS](intune-deviceconfig-macoscertificateprofilebase.md)
 - [Политика соответствия macOS](intune-deviceconfig-macoscompliancepolicy.md)
@@ -387,7 +387,15 @@ ms.locfileid: "47966550"
 - [macOS переадресации расширения единого входа](intune-deviceconfig-macosredirectsinglesignonextension.md)
 - [Профиль сертификата SCEP для macOS](intune-deviceconfig-macosscepcertificateprofile.md)
 - [расширение единого входа macOS](intune-deviceconfig-macossinglesignonextension.md)
+- [Сводка по учетной записи обновления программного обеспечения macOS](intune-deviceconfig-macossoftwareupdateaccountsummary.md)
+- [поведение обновления программного обеспечения macOS](intune-deviceconfig-macossoftwareupdatebehavior.md)
+- [Категория обновлений программного обеспечения macOS](intune-deviceconfig-macossoftwareupdatecategory.md)
+- [Сводка по категории обновлений программного обеспечения macOS](intune-deviceconfig-macossoftwareupdatecategorysummary.md)
+- [Конфигурация обновления программного обеспечения macOS](intune-deviceconfig-macossoftwareupdateconfiguration.md)
 - [Политика задержки обновления программного обеспечения macOS](intune-deviceconfig-macossoftwareupdatedelaypolicy.md)
+- [Тип расписания обновления программного обеспечения macOS](intune-deviceconfig-macossoftwareupdatescheduletype.md)
+- [состояние обновления программного обеспечения macOS](intune-deviceconfig-macossoftwareupdatestate.md)
+- [Сводка по состоянию обновления программного обеспечения macOS](intune-deviceconfig-macossoftwareupdatestatesummary.md)
 - [расширение системы macOS](intune-deviceconfig-macossystemextension.md)
 - [тип расширения системы macOS](intune-deviceconfig-macossystemextensiontype.md)
 - [Сопоставление типов расширений системы macOS](intune-deviceconfig-macossystemextensiontypemapping.md)
@@ -612,5 +620,3 @@ ms.locfileid: "47966550"
 - [Конфигурация Wi-Fi для Windows](intune-deviceconfig-windowswificonfiguration.md)
 - [Конфигурация корпоративного типа EAP для Wi-Fi в Windows](intune-deviceconfig-windowswifienterpriseeapconfiguration.md)
 - [Интерфейс проводной сети](intune-deviceconfig-wirednetworkinterface.md)
-
-

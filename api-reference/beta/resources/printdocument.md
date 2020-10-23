@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 34f35181e9d1ba70c2efe8df31d6d6457aa0acde
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 102cf81f0770f02b1206bff1fa927121696047c1
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635140"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727978"
 ---
 # <a name="printdocument-resource-type"></a>Тип ресурса printDocument
 
@@ -24,17 +24,16 @@ ms.locfileid: "48635140"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [уплоаддата](../api/printdocument-uploaddata.md) | Нет | Отправьте один двоичный сегмент **printDocument**. |
+| [Создание сеанса отправки](../api/printdocument-get-file.md) | [uploadSession](uploadsession.md) | Создайте сеанс отправки для последовательной отправки диапазонов двоичного файла **printDocument**. |
 | [Скачать двоичный файл](../api/printdocument-get-file.md) | URL-адрес скачивания | Скачайте двоичный файл, связанный с классом **printDocument**. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String|Идентификатор документа. Только для чтения.|
-|displayName|String|Имя документа. Только для чтения.|
+|id|Строка|Идентификатор документа. Только для чтения.|
+|displayName|Строка|Имя документа. Только для чтения.|
 |contentType|String|Тип контента документа (MIME). Только для чтения.|
 |size|Int64|Размер документа в байтах. Только для чтения.|
-|configuration|[принтердокументконфигуратион](printerdocumentconfiguration.md) |Группа параметров, которые принтер должен использовать для печати документа. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -51,19 +50,9 @@ ms.locfileid: "48635140"
 ```json
 {
   "id": "String (identifier)",
-  "name": "String",
-  "mimeType": "String",
-  "sizeInBytes": 12345,
-  "documentConfiguration": {
-    "pageRanges": [ {"@odata.type": "microsoft.graph.printPageRange"} ],
-    "printQuality": "String",
-    "printResolutionInDpi": 123456,
-    "feedDirection": "String",
-    "orientation": "String",
-    "duplexConfiguration": "String",
-    "copies": 123456,
-    "colorConfiguration": "String"
-  }
+  "displayName": "String",
+  "contentType": "String",
+  "size": 12345
 }
 
 ```

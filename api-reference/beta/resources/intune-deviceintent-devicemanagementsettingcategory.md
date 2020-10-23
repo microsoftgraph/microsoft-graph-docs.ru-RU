@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: acf2e01ae003fa8e5ce4355ce42c6c049949dc98
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 52b8b1b1044c5bace65c009ee6439fb5dafc4f8c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48061275"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728274"
 ---
 # <a name="devicemanagementsettingcategory-resource-type"></a>Тип ресурса Девицеманажементсеттингкатегори
 
@@ -34,9 +34,9 @@ ms.locfileid: "48061275"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор категории|
-|displayName|String|Имя категории|
-|хасрекуиредсеттинг|Boolean|Категория содержит параметры, необходимые для верхнего уровня|
+|id|Строка|Идентификатор категории|
+|displayName|Строка|Имя категории|
+|хасрекуиредсеттинг|Логический|Категория содержит параметры, необходимые для верхнего уровня|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -59,7 +59,6 @@ ms.locfileid: "48061275"
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

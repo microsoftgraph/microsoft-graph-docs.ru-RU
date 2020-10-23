@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9894eddfc17902c5c7e8b291e8ea348132800b2f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dcc0e802c8a37a6219b473b51fe4280cb0ad73dd
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087658"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728006"
 ---
 # <a name="devicemanagementautopilotpolicytype-enum-type"></a>тип перечисления Девицеманажементаутопилотполицитипе
 
@@ -29,7 +29,6 @@ ms.locfileid: "48087658"
 |приложение|4|Пока не задокументировано.|
 |appModel|7 |Пока не задокументировано.|
 |конфигуратионполици|12 |Пока не задокументировано.|
-
 
 
 

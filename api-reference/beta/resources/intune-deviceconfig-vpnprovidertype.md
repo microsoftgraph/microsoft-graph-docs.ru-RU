@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 43b962235cda6622ca0d7d10d7da57f9f5181471
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f20433a7e2bbb0dd134471476fd96fe3e49b9ecd
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048997"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728330"
 ---
 # <a name="vpnprovidertype-enum-type"></a>тип перечисления Впнпровидертипе
 
@@ -26,9 +26,8 @@ ms.locfileid: "48048997"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Туннельный трафик не настраивается явным образом.|
-|апппрокси|1 |Трафик туннеля на уровне приложения.|
-|паккеттуннел|2 |Трафик туннеля на уровне IP.|
-
+|апппрокси|1,1|Трафик туннеля на уровне приложения.|
+|паккеттуннел|2|Трафик туннеля на уровне IP.|
 
 
 

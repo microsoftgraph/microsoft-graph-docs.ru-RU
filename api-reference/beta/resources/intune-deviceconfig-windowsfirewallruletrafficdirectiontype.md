@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1daa258488b62a125c9174ca18072f71656f5c68
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 328f06aa534f3c7435893b712353048ca80d97de
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039932"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48728260"
 ---
 # <a name="windowsfirewallruletrafficdirectiontype-enum-type"></a>тип перечисления Виндовсфиреваллрулетраффикдиректионтипе
 
@@ -26,9 +26,8 @@ ms.locfileid: "48039932"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|вышли|1 |Правило применяется к исходящему трафику.|
-|возврата|2 |Правило применяется к входящему трафику.|
-
+|вышли|1,1|Правило применяется к исходящему трафику.|
+|в |2|Правило применяется к входящему трафику.|
 
 
 

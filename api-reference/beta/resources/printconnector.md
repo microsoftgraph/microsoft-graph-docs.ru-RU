@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: d027344db67a26fc0af7ebffaaad63d3fe3c4971
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9962bad290d6a07c214107e58c8a96afb9148394
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046813"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48727992"
 ---
 # <a name="printconnector-resource-type"></a>Тип ресурса Принтконнектор
 
@@ -32,7 +32,7 @@ ms.locfileid: "48046813"
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |id|String| Только для чтения.|
-|name|String|Имя соединителя.|
+|displayName|Строка|Имя соединителя.|
 |fullyQualifiedDomainName|Строка|Имя узла для соединителя.|
 |operatingSystem|String|Версия операционной системы на соединителе компьютера.|
 |аппверсион|Строка|Версия соединителя.|
@@ -56,7 +56,7 @@ ms.locfileid: "48046813"
 ```json
 {
   "id": "String (identifier)",
-  "name": "String",
+  "displayName": "String",
   "fullyQualifiedDomainName": "String",
   "operatingSystem": "String",
   "appVersion": "String",

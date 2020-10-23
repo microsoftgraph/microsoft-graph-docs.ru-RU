@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5f92f1d67ac1315a68c5f909a8fbd25a7deab5e1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3601d117de7e273344e9c27cfd52b095243e2ed7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056032"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48726754"
 ---
 # <a name="updatedeviceproperties-action"></a>действие Упдатедевицепропертиес
 
@@ -47,7 +47,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -57,7 +57,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |userPrincipalName|String|Пока не задокументировано.|
 |аддрессаблеусернаме|String|Пока не задокументировано.|
 |грауптаг|String|Пока не задокументировано.|
-|displayName|String|Пока не задокументировано.|
+|displayName|Строка|Пока не задокументировано.|
 
 
 
@@ -87,7 +87,6 @@ Content-length: 187
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
