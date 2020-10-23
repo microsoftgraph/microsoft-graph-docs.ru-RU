@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9d47b60bf805ba4f12345512c5d18b2c953c4467
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1302bec464f92a19d96746c11e3c858a00332e8d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993667"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730418"
 ---
 # <a name="deviceappmanagementtaskstatus-enum-type"></a>тип перечисления Девицеаппманажементтаскстатус
 
@@ -26,11 +26,10 @@ ms.locfileid: "47993667"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Состояние не определено.|
-|закончен|1 |Задача готова к просмотру.|
-|ASP|2 |Задача принята и работает над.|
+|закончен|1,1|Задача готова к просмотру.|
+|ASP|2|Задача принята и работает над.|
 |готовы|4|Трудозатраты завершены.|
 |клоняет|4 |Задача отклонена.|
-
 
 
 

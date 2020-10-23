@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: extensions
 doc_type: resourcePageType
-ms.openlocfilehash: 25b4fb551831c0df55d6ea2c728300cb01965799
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: fae3e9d791f74951cea2a1a4b2ed5ebd654b374e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581983"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730299"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Тип ресурсов openTypeExtension (открытые расширения)
 
@@ -29,14 +29,14 @@ ms.locfileid: "48581983"
 |Ресурс |Версия |
 |:---------------|:-------|
 | [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta)  | Только предварительная версия |
-| [Событие календаря](event.md) | Общедоступная версия |
+| [event](event.md) для календаря | Общедоступная версия |
 | [event](event.md) для календаря группы | Общедоступная версия |
 | [post](post.md) цепочки беседы группы | Общедоступная версия |
 | [device](device.md) | Общедоступная версия |
 | [group](group.md) | Общедоступная версия |
 | [message](message.md) | Общедоступная версия |
 | [organization](organization.md) | Общедоступная версия |
-| [Личный контакт](contact.md) | Общедоступная версия |
+| [contact](contact.md) (личный контакт) | Общедоступная версия |
 | [user](user.md) | Общедоступная версия |
 
 ## <a name="outlook-specific-considerations"></a>Специальные рекомендации для Outlook
@@ -69,7 +69,6 @@ ms.locfileid: "48581983"
   "extensionName": "string",
   "id": "string (identifier)"
 }
-
 ```
 
 ## <a name="properties"></a>Свойства

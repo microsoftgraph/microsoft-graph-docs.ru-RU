@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f6da589015b5120add046eabfa146069cc349951
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4be968bfb2191b71fd810ee83ce36d4e795ea17b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075765"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730313"
 ---
 # <a name="mobileappintent-enum-type"></a>тип перечисления Мобилеаппинтент
 
@@ -26,13 +26,12 @@ ms.locfileid: "48075765"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |доступен|нуль|Available|
-|нотаваилабле|1 |Компонент недоступен|
-|рекуирединсталл|2 |Обязательная установка|
+|нотаваилабле|1,1|Компонент недоступен|
+|рекуирединсталл|2|Обязательная установка|
 |рекуиредунинсталл|4|Обязательное удаление|
 |рекуиредандаваилаблеинсталл|4 |рекуиредандаваилаблеинсталл|
 |аваилаблеинсталлвисаутенроллмент|5 |аваилаблеинсталлвисаутенроллмент|
 |Отличающ|6 |Исключить|
-
 
 
 

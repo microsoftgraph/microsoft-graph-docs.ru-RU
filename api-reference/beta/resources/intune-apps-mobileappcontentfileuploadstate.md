@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 35ff5b1fcdab01c6b84c75f85cee3cc66f293f5f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a330f674bc8cfdd69b1e32b399674f55f49f2374
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052730"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730765"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>тип перечисления Мобилеаппконтентфилеуплоадстате
 
@@ -26,8 +26,8 @@ ms.locfileid: "48052730"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |success|нуль|Пока не задокументировано.|
-|трансиентеррор|1 |Пока не задокументировано.|
-|error|2 |Пока не задокументировано.|
+|трансиентеррор|1,1|Пока не задокументировано.|
+|error|2|Пока не задокументировано.|
 |unknown|4|Пока не задокументировано.|
 |азуресторажеурирекуестсукцесс|100|Пока не задокументировано.|
 |азуресторажеурирекуестпендинг|101|Пока не задокументировано.|
@@ -41,7 +41,6 @@ ms.locfileid: "48052730"
 |коммитфилепендинг|301|Пока не задокументировано.|
 |коммитфилефаилед|302|Пока не задокументировано.|
 |коммитфилетимедаут|303|Пока не задокументировано.|
-
 
 
 

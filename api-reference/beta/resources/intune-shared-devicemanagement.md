@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 507a823d01683affb23341539221c7b6d3317129
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 62a4a4f1926b549a5f7bab8bfdf8fc214ac07d56
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084375"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730406"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -20,11 +20,11 @@ ms.locfileid: "48084375"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ресурс deviceManagement представляет контейнер, содержимое которого зависит от рабочего процесса, в том числе:  
+Ресурс deviceManagement представляет контейнер, содержимое которого зависит от рабочего процесса, в том числе:
 
 - Параметры Android for Work
 - События аудита
-- Корпоративные положения и условия 
+- Корпоративные положения и условия
 - Профили корпоративной регистрации
 - Параметры конфигурации устройств
 - Параметры намерения устройства
@@ -67,7 +67,7 @@ ms.locfileid: "48084375"
 |id|Строка|Уникальный идентификатор, связанный с устройством.|
 |**Конфигурация устройств**|
 |интунеаккаунтид|Guid|Идентификатор учетной записи Intune для данного клиента|
-|легаципкмананжементенаблед|Boolean|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
+|легаципкмананжементенаблед|Логический|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
 |максимумдептокенс|Int32|Максимальное число маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
@@ -213,7 +213,6 @@ ms.locfileid: "48084375"
   "subscriptionState": "String"
 }
 ```
-
 
 
 

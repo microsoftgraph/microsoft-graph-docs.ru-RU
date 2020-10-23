@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2fa57fb4218d961d8d3e58eb284062998903325b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 62071f73a670d3281dade4e555203abe9ed21e3e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003593"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730292"
 ---
 # <a name="mobileappintentandstatedetail-resource-type"></a>Тип ресурса Мобилеаппинтентандстатедетаил
 
@@ -26,9 +26,9 @@ ms.locfileid: "48003593"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |applicationId|String|Идентификатор Мобиеапп.|
-|displayName|String|Название приложения, которое предоставил или импортировал администратор.|
+|displayName|Строка|Название приложения, которое предоставил или импортировал администратор.|
 |mobileAppIntent|[mobileAppIntent](../resources/intune-troubleshooting-mobileappintent.md);|Цель для мобильного приложения. Возможные значения: `available`, `notAvailable`, `requiredInstall`, `requiredUninstall`, `requiredAndAvailableInstall`, `availableInstallWithoutEnrollment`, `exclude`.|
-|дисплайверсион|String|Доступная для человека версия приложения|
+|дисплайверсион|Строка|Доступная для человека версия приложения|
 |installState|[ресултантаппстате](../resources/intune-shared-resultantappstate.md)|Состояние установки приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |суппортеддевицетипес|Коллекция [мобилеаппсуппортеддевицетипе](../resources/intune-troubleshooting-mobileappsupporteddevicetype.md)|Поддерживаемые платформы для приложения.|
 
@@ -60,7 +60,6 @@ ms.locfileid: "48003593"
   ]
 }
 ```
-
 
 
 

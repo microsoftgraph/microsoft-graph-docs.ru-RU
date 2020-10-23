@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 78808c25c86683fd7a9fb6e8e7466ac4ddbaa7b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d5b3b33049d01d14c5c0800910138ceef1245d29
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084340"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730395"
 ---
 # <a name="devicemanagementderivedcredentialsettings-resource-type"></a>Тип ресурса Девицеманажементдериведкредентиалсеттингс
 
@@ -20,7 +20,7 @@ ms.locfileid: "48084340"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ресурс Девицеманажементдериведкредентиалсеттингс представляет контейнер, содержимое которого зависит от рабочего процесса, в том числе:  
+Ресурс Девицеманажементдериведкредентиалсеттингс представляет контейнер, содержимое которого зависит от рабочего процесса, в том числе:
 
 - Параметры конфигурации устройств
 - Политика RA
@@ -58,7 +58,6 @@ ms.locfileid: "48084340"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

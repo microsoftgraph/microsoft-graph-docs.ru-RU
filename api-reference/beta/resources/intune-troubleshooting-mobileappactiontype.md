@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9762aa0fefc1f82bf171670c70015500e0dd5346
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0c711e0e669426ad92c094aa0650111b874c43ef
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48075758"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48730320"
 ---
 # <a name="mobileappactiontype-enum-type"></a>тип перечисления Мобилеаппактионтипе
 
@@ -26,11 +26,10 @@ ms.locfileid: "48075758"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестный результат.|
-|инсталлкоммандсент|1 |Была отправлена команда установки приложения.|
+|инсталлкоммандсент|1,1|Была отправлена команда установки приложения.|
 |устанавлива|4|Приложение установлено.|
 |удалить|4 |Приложение удалено.|
 |усеррекуестединсталл|5 |Установка запрошена пользователем|
-
 
 
 
