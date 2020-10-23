@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3878177d847cd4c98908345f8e1de66b22218bb3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a3bffd69ad5ce9c1a413504509c718afd0ce10e3
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48080350"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735234"
 ---
 # <a name="depenrollmentbaseprofile-resource-type"></a>Тип ресурса Депенроллментбасепрофиле
 
@@ -34,36 +34,34 @@ ms.locfileid: "48080350"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|GUID объекта, наследуемого от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|displayName|String|Имя профиля, унаследованного от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|description|String|Описание профиля, унаследованного от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|рекуиресусераусентикатион|Boolean|Указывает, требуется ли для профиля проверка подлинности пользователей, унаследованных от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|конфигуратионендпоинтурл|String|URL-адрес конечной точки конфигурации, используемый для регистрации, унаследованный от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|enableAuthenticationViaCompanyPortal|Boolean|Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала. Наследуется от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
-|рекуирекомпанипорталонсетупассистантенролледдевицес|Boolean|Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке, наследуемых от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
+|id|Строка|GUID объекта, наследуемого от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
+|displayName|Строка|Имя профиля, унаследованного от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
+|description|Строка|Описание профиля, унаследованного от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
+|рекуиресусераусентикатион|Логический|Указывает, требуется ли для профиля проверка подлинности пользователей, унаследованных от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
+|конфигуратионендпоинтурл|Строка|URL-адрес конечной точки конфигурации, используемый для регистрации, унаследованный от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
+|enableAuthenticationViaCompanyPortal|Логический|Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала. Наследуется от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
+|рекуирекомпанипорталонсетупассистантенролледдевицес|Логический|Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке, наследуемых от [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Boolean|Указывает, является ли этот профиль профилем по умолчанию|
-|супервиседмодинаблед|Boolean|Защищенный режим, true для включения, false в противном случае. https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intuneДополнительную информацию можно узнать в статье.|
-|суппортдепартмент|String|Сведения о отделе поддержки|
-|пасскодедисаблед|Boolean|Указывает, отключена ли область настройки секретного кода|
-|Обязательный|Boolean|Указывает, является ли профиль обязательной|
-|локатиондисаблед|Boolean|Указывает, отключена ли область настройки службы расположения|
-|суппортфоненумбер|String|Номер телефона службы поддержки|
-|профилеремовалдисаблед|Boolean|Указывает, отключен ли параметр удаления профиля|
-|рестореблоккед|Boolean|Указывает, заблокирована ли область настроек восстановления|
-|апплеиддисаблед|Boolean|Указывает, отключена ли область настройки Apple ID|
-|термсандкондитионсдисаблед|Boolean|Указывает, отключена ли область установки "условия и условия"|
-|таучиддисаблед|Boolean|Указывает, отключена ли панель настройки сенсорного экрана|
-|апплепайдисаблед|Boolean|Указывает, отключена ли область настройки оплаты Apple|
-|зумдисаблед|Boolean|Указывает, отключена ли область настройки масштабирования|
-|сиридисаблед|Boolean|Указывает, отключена ли область настройки Siri|
-|диагностиксдисаблед|Boolean|Указывает, отключена ли область настройки диагностики|
-|дисплайтонесетупдисаблед|Boolean|Указывает, отключен ли экран установки дисплайтоне|
-|приваципанедисаблед|Boolean|Указывает, отключен ли экран конфиденциальности|
-|скринтимескриндисаблед|Boolean|Указывает, отключена ли настройка времени ожидания экрана|
-|девиценаметемплате|String|Задает шаблон литерала или имени.|
-|конфигуратионвебурл|Boolean|URL-адрес для входа в помощнике по настройке|
+|супервиседмодинаблед|Логический|Защищенный режим, true для включения, false в противном случае. https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intuneДополнительную информацию можно узнать в статье.|
+|суппортдепартмент|Строка|Сведения о отделе поддержки|
+|Обязательный|Логический|Указывает, является ли профиль обязательной|
+|локатиондисаблед|Логический|Указывает, отключена ли область настройки службы расположения|
+|суппортфоненумбер|Строка|Номер телефона службы поддержки|
+|профилеремовалдисаблед|Логический|Указывает, отключен ли параметр удаления профиля|
+|рестореблоккед|Логический|Указывает, заблокирована ли область настроек восстановления|
+|апплеиддисаблед|Логический|Указывает, отключена ли область настройки Apple ID|
+|термсандкондитионсдисаблед|Логический|Указывает, отключена ли область установки "условия и условия"|
+|таучиддисаблед|Логический|Указывает, отключена ли панель настройки сенсорного экрана|
+|апплепайдисаблед|Логический|Указывает, отключена ли область настройки оплаты Apple|
+|сиридисаблед|Логический|Указывает, отключена ли область настройки Siri|
+|диагностиксдисаблед|Логический|Указывает, отключена ли область настройки диагностики|
+|дисплайтонесетупдисаблед|Логический|Указывает, отключен ли экран установки дисплайтоне|
+|приваципанедисаблед|Логический|Указывает, отключен ли экран конфиденциальности|
+|скринтимескриндисаблед|Логический|Указывает, отключена ли настройка времени ожидания экрана|
+|девиценаметемплате|Строка|Задает шаблон литерала или имени.|
+|конфигуратионвебурл|Логический|URL-адрес для входа в помощнике по настройке|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -87,7 +85,6 @@ ms.locfileid: "48080350"
   "isDefault": true,
   "supervisedModeEnabled": true,
   "supportDepartment": "String",
-  "passCodeDisabled": true,
   "isMandatory": true,
   "locationDisabled": true,
   "supportPhoneNumber": "String",
@@ -97,7 +94,6 @@ ms.locfileid: "48080350"
   "termsAndConditionsDisabled": true,
   "touchIdDisabled": true,
   "applePayDisabled": true,
-  "zoomDisabled": true,
   "siriDisabled": true,
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
@@ -107,7 +103,6 @@ ms.locfileid: "48080350"
   "configurationWebUrl": true
 }
 ```
-
 
 
 

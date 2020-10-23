@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ea065d4f01472a907497cee612253e87b1ffd031
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e5f55b056f3c20d164446c27d7c1a6d549d99ecf
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079825"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735150"
 ---
 # <a name="devicemanagementreportschedule-resource-type"></a>Тип ресурса Девицеманажементрепортсчедуле
 
@@ -34,21 +34,21 @@ ms.locfileid: "48079825"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этой сущности|
-|репортсчедуленаме|String|Имя расписания|
+|id|Строка|Уникальный идентификатор для этой сущности|
+|репортсчедуленаме|Строка|Имя расписания|
 |subject|String|Тема запланированных отчетов, которые доставляются|
-|письма|Коллекция String|Сообщения электронной почты, на которые доставляются запланированные отчеты|
+|письма|Коллекция строк|Сообщения электронной почты, на которые доставляются запланированные отчеты|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Периодичность запланированной доставки отчета. Возможные значения: `none`, `daily`, `weekly`, `monthly`.|
 |startDateTime|DateTimeOffset|Время, когда начинается доставка запланированных отчетов|
 |endDateTime|DateTimeOffset|Время окончания доставки запланированных отчетов|
 |userId|String|Идентификатор пользователя, создавшего отчет|
-|репортнаме|String|Имя отчета|
-|filter|String|Фильтры, примененные к отчету|
-|select|Коллекция String|Столбцы, выбранные из отчета|
-|orderBy|Коллекция String|Упорядочение столбцов в отчете|
+|репортнаме|Строка|Имя отчета|
+|filter|Строка|Фильтры, примененные к отчету|
+|select|Коллекция строк|Столбцы, выбранные из отчета|
+|orderBy|Коллекция строк|Упорядочение столбцов в отчете|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат запланированного отчета. Возможные значения: `csv`, `pdf`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -83,7 +83,6 @@ ms.locfileid: "48079825"
   "format": "String"
 }
 ```
-
 
 
 

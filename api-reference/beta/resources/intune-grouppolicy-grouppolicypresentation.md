@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 434cd86c69de1b3bec92521f134253a7d165ff36
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 74cdae84e30764e2bf148d7b0de1756e52962060
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48030950"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735220"
 ---
 # <a name="grouppolicypresentation-resource-type"></a>Тип ресурса Граупполиципресентатион
 
@@ -31,11 +31,11 @@ ms.locfileid: "48030950"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|label|String|Локализованная текстовая подпись для любой сущности презентации. По умолчанию это значение пусто.|
-|id|String|Ключ объекта.|
+|label|Строка|Локализованная текстовая подпись для любой сущности презентации. По умолчанию это значение пусто.|
+|id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |RDLC|[граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|Определение групповой политики, связанное с презентацией.|
@@ -56,7 +56,6 @@ ms.locfileid: "48030950"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

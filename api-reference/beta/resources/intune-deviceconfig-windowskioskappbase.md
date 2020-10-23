@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2162086c2a70a44207830f61f4456574a5bfe9bb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4212dfd0362ed6253c10a2b2796241c74678dda2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039890"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48736214"
 ---
 # <a name="windowskioskappbase-resource-type"></a>Тип ресурса Виндовскиоскаппбасе
 
@@ -28,9 +28,9 @@ ms.locfileid: "48039890"
 |стартлайауттилесизе|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Размер плитки приложения для начального макета. Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.|
 |name|String|Представляет понятное имя приложения.|
 |Тип|[виндовскиоскапптипе](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения. Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
-|Автозапуск|Boolean|Разрешение автоматического запуска приложения в полноэкранном режиме с поддержкой нескольких приложений|
+|Автозапуск|Логический|Разрешение автоматического запуска приложения в полноэкранном режиме с поддержкой нескольких приложений|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -49,7 +49,6 @@ ms.locfileid: "48039890"
   "autoLaunch": true
 }
 ```
-
 
 
 

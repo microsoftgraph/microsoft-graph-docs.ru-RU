@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Макосазуреадсинглесигнонекстенсион
-description: Представляет профиль расширения единого входа Azure AD для устройств macOS.
+description: Представляет один Sign-Onный профиль расширения Azure AD для устройств macOS.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b70a34c8a664ea47804bc5517a419211a8938a96
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1bc80bb752230fd1699091c380538e62d4ca09c1
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084991"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48736249"
 ---
 # <a name="macosazureadsinglesignonextension-resource-type"></a>Тип ресурса Макосазуреадсинглесигнонекстенсион
 
@@ -20,7 +20,7 @@ ms.locfileid: "48084991"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Представляет профиль расширения единого входа Azure AD для устройств macOS.
+Представляет один Sign-Onный профиль расширения Azure AD для устройств macOS.
 
 
 Наследуется от [макоссинглесигнонекстенсион](../resources/intune-deviceconfig-macossinglesignonextension.md)
@@ -28,8 +28,8 @@ ms.locfileid: "48084991"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|енаблешареддевицемоде|Boolean|Включает или отключает режим общего устройства.|
-|бундлеидакцессконтроллист|Коллекция String|Необязательный список дополнительных идентификаторов пакетов, которые могут использовать расширение AAD для единого входа.|
+|енаблешареддевицемоде|Логический|Включает или отключает режим общего устройства.|
+|бундлеидакцессконтроллист|Коллекция строк|Необязательный список дополнительных идентификаторов пакетов, которые могут использовать расширение AAD для единого входа.|
 |построения|Коллекция [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)|Получает или задает список типизированных пар "ключ — значение", используемых для настройки профилей типа учетных данных. Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="relationships"></a>Связи
@@ -58,7 +58,6 @@ ms.locfileid: "48084991"
   ]
 }
 ```
-
 
 
 

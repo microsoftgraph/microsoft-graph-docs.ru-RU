@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 35b28b5e105e9e61166df36db5ab841fcd063ff6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f8e08079a2980483c0bdc99f81bb4254aabc1eb5
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039435"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735159"
 ---
 # <a name="devicemanagementexportjob-resource-type"></a>Тип ресурса Девицеманажементекспортжоб
 
@@ -34,18 +34,18 @@ ms.locfileid: "48039435"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для этой сущности|
-|репортнаме|String|Имя отчета|
-|filter|String|Фильтры, примененные к отчету|
-|select|Коллекция String|Столбцы, выбранные из отчета|
+|id|Строка|Уникальный идентификатор для этой сущности|
+|репортнаме|Строка|Имя отчета|
+|filter|Строка|Фильтры, примененные к отчету|
+|select|Коллекция строк|Столбцы, выбранные из отчета|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат экспортированного отчета. Возможные значения: `csv`, `pdf`.|
-|снапшотид|String|Моментальный снимок является идентифицируемым подмножеством набора данных, представленным Репортнаме. Здесь можно использовать идентификатор sessionId или Качедрепортконфигуратион. Если указан идентификатор sessionId, фильтрация, выбор и OrderBy применяются к данным, представленным в sessionId. Filter, SELECT и OrderBy не могут указываться вместе с идентификатором Качедрепортконфигуратион.|
+|снапшотид|Строка|Моментальный снимок является идентифицируемым подмножеством набора данных, представленным Репортнаме. Здесь можно использовать идентификатор sessionId или Качедрепортконфигуратион. Если указан идентификатор sessionId, фильтрация, выбор и OrderBy применяются к данным, представленным в sessionId. Filter, SELECT и OrderBy не могут указываться вместе с идентификатором Качедрепортконфигуратион.|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Состояние задания экспорта. Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |url|String|Временное расположение экспортируемого отчета|
 |рекуестдатетиме|DateTimeOffset|Время запроса экспорта отчета|
 |expirationDateTime|DateTimeOffset|Время истечения срока действия экспортированного отчета|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -73,7 +73,6 @@ ms.locfileid: "48039435"
   "expirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 
