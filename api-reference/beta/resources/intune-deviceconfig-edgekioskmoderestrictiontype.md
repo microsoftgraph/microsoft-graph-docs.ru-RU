@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 98508a288ef46f8112ac5d796b8ddef64c5940e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 98d360d220df9b94f1a13194885d576bcdf362da
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058202"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732574"
 ---
 # <a name="edgekioskmoderestrictiontype-enum-type"></a>тип перечисления Еджекиоскмодерестриктионтипе
 
@@ -26,11 +26,10 @@ ms.locfileid: "48058202"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроено (не ограничено).|
-|дигиталсигнаже|1 |Интерактивная и цифровая подпись в режиме одного приложения.|
-|нормалмоде|2 |В обычном режиме (полная версия Microsoft EDGE).|
+|дигиталсигнаже|1,1|Интерактивная и цифровая подпись в режиме одного приложения.|
+|нормалмоде|2|В обычном режиме (полная версия Microsoft EDGE).|
 |публикбровсингсинглеапп|4|Общедоступный обзор в режиме одного приложения.|
 |публикбровсингмултиапп|4 |Общедоступный обзор (InPrivate) в режиме нескольких приложений.|
-
 
 
 

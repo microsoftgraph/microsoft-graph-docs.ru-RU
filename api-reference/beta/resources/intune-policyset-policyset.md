@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 10f86c5a5943862c41cd79145b4b04baa5d96ea6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 434175ae962fc4ed0bf9f12db3ea08da57d0254a
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993429"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733233"
 ---
 # <a name="policyset-resource-type"></a>Тип ресурса "политика"
 
@@ -36,21 +36,21 @@ ms.locfileid: "47993429"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ набора политик.|
+|id|Строка|Ключ набора политик.|
 |createdDateTime|DateTimeOffset|Время создания набора политик.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения набора политик.|
-|displayName|String|DisplayName набора политик.|
-|description|String|Описание набора политик.|
+|displayName|Строка|DisplayName набора политик.|
+|description|Строка|Описание набора политик.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Состояние проверки или назначения набора политик. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки (при возникновении ошибки). Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
-|гуидеддеплойменттагс|Коллекция String|Теги в руководстве по развертыванию|
-|roleScopeTags|Коллекция String|RoleScopeTags набора политик|
+|гуидеддеплойменттагс|Коллекция строк|Теги в руководстве по развертыванию|
+|roleScopeTags|Коллекция строк|RoleScopeTags набора политик|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [полицисетассигнмент](../resources/intune-policyset-policysetassignment.md)|Назначения набора политик.|
-|items|Коллекция [полицисетитем](../resources/intune-policyset-policysetitem.md)|Элементы набора политик с максимальным количеством 100.|
+|элементы|Коллекция [полицисетитем](../resources/intune-policyset-policysetitem.md)|Элементы набора политик с максимальным количеством 100.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -78,7 +78,6 @@ ms.locfileid: "47993429"
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 574a62ddfea3b577fea966ae3b8d502a9ceebfb1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dc7e3d82fe48cd7eaac7f5c94aeba96212c417b7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47993296"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48733219"
 ---
 # <a name="userpfxcertificate-resource-type"></a>Тип ресурса Усерпфксцертификате
 
@@ -34,17 +34,17 @@ ms.locfileid: "47993296"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для сертификата PFX.|
-|отпечаток|String|Отпечаток SHA-1 сертификата PFX.|
+|id|Строка|Уникальный идентификатор для сертификата PFX.|
+|отпечаток|Строка|Отпечаток SHA-1 сертификата PFX.|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Сертификат, предназначенный для целей из точки зрения развертывания. Возможные значения: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
 |userPrincipalName|String|Имя участника-пользователя сертификата PFX.|
 |startDateTime|DateTimeOffset|Дата и время начала действия сертификата.|
 |expirationDateTime|DateTimeOffset|Дата и время действия сертификата.|
-|providerName|String|Поставщик криптографии, используемый для шифрования этого объекта BLOB.|
-|keyName|String|Имя ключа (в пределах поставщика), используемого для шифрования большого двоичного объекта.|
+|providerName|Строка|Поставщик криптографии, используемый для шифрования этого объекта BLOB.|
+|keyName|Строка|Имя ключа (в пределах поставщика), используемого для шифрования большого двоичного объекта.|
 |паддингсчеме|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Схема заполнения, используемая поставщиком во время шифрования и расшифровки. Возможные значения: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
 |енкриптедпфксблоб|Binary|Зашифрованный BLOB-объект PFX.|
-|енкриптедпфкспассворд|String|Зашифрованный пароль PFX.|
+|енкриптедпфкспассворд|Строка|Зашифрованный пароль PFX.|
 |createdDateTime|DateTimeOffset|Дата и время импорта этого PFX-сертификата.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата PFX.|
 
@@ -77,7 +77,6 @@ ms.locfileid: "47993296"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

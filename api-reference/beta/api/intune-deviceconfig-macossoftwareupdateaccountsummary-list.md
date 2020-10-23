@@ -1,18 +1,18 @@
 ---
-title: Получение Ембеддедсимактиватионкодепулассигнмент
-description: Чтение свойств и связей объекта Ембеддедсимактиватионкодепулассигнмент.
+title: Список Макоссофтвареупдатеаккаунтсуммариес
+description: Список свойств и связей объектов Макоссофтвареупдатеаккаунтсуммари.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1a878bb48b3406e7da0dc4c8b2977d2b8f185d6b
+ms.openlocfilehash: 3112bad12e2d72a81ebde465eaa8cbe97b6c4b6a
 ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732165"
+ms.locfileid: "48731843"
 ---
-# <a name="get-embeddedsimactivationcodepoolassignment"></a>Получение Ембеддедсимактиватионкодепулассигнмент
+# <a name="list-macossoftwareupdateaccountsummaries"></a>Список Макоссофтвареупдатеаккаунтсуммариес
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "48732165"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [ембеддедсимактиватионкодепулассигнмент](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) .
+Список свойств и связей объектов [макоссофтвареупдатеаккаунтсуммари](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,13 +37,10 @@ ms.locfileid: "48732165"
 }
 -->
 ``` http
-GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/assignments/{embeddedSIMActivationCodePoolAssignmentId}
+GET /deviceManagement/macOSSoftwareUpdateAccountSummaries
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
-
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
@@ -53,14 +50,14 @@ GET /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodeP
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [ембеддедсимактиватионкодепулассигнмент](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [макоссофтвареупдатеаккаунтсуммари](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/assignments/{embeddedSIMActivationCodePoolAssignmentId}
+GET https://graph.microsoft.com/beta/deviceManagement/macOSSoftwareUpdateAccountSummaries
 ```
 
 ### <a name="response"></a>Отклик
@@ -68,18 +65,25 @@ GET https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCodeP
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 422
+Content-Length: 583
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.embeddedSIMActivationCodePoolAssignment",
-    "id": "e7304dcc-4dcc-e730-cc4d-30e7cc4d30e7",
-    "target": {
-      "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget",
-      "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-      "deviceAndAppManagementAssignmentFilterType": "include"
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.macOSSoftwareUpdateAccountSummary",
+      "id": "64687d05-7d05-6468-057d-6864057d6864",
+      "displayName": "Display Name value",
+      "deviceId": "Device Id value",
+      "userId": "User Id value",
+      "deviceName": "Device Name value",
+      "userPrincipalName": "User Principal Name value",
+      "osVersion": "Os Version value",
+      "successfulUpdateCount": 5,
+      "failedUpdateCount": 1,
+      "totalUpdateCount": 0,
+      "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
     }
-  }
+  ]
 }
 ```
 

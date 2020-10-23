@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 84575b172dee1f07d114abb202b3868ab936ce9a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0e457cf44b5a73f14dfd87fd69f2b9e27cef08c3
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076185"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731941"
 ---
 # <a name="airprintdestination-resource-type"></a>Тип ресурса Аирпринтдестинатион
 
@@ -26,11 +26,11 @@ ms.locfileid: "48076185"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |ipAddress|String|IP-адрес назначения Аирпринт.|
-|resourcePath|String|Путь к ресурсу, связанный с принтером. Соответствует _ipps параметру RP записи Бонжаур. TCP. Например: Printers/Canon_MG5300_series, Printers/Xerox_Phaser_7600, IPP/Print, Epson_IPP_Printer.|
+|resourcePath|Строка|Путь к ресурсу, связанный с принтером. Соответствует _ipps параметру RP записи Бонжаур. TCP. Например: Printers/Canon_MG5300_series, Printers/Xerox_Phaser_7600, IPP/Print, Epson_IPP_Printer.|
 |порта|Int32|Прослушивающий порт назначения Аирпринт. Если этот ключ не указан, Аирпринт будет использовать порт по умолчанию. Доступно в iOS 11,0 и более поздних версиях.|
-|форцетлс|Boolean|Если задано значение true, подключения Аирпринт защищены с помощью протокола TLS. Значение по умолчанию: false. Доступно в iOS 11,0 и более поздних версиях.|
+|форцетлс|Логический|Если задано значение true, подключения Аирпринт защищены с помощью протокола TLS. Значение по умолчанию: false. Доступно в iOS 11,0 и более поздних версиях.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -49,7 +49,6 @@ ms.locfileid: "48076185"
   "forceTls": true
 }
 ```
-
 
 
 

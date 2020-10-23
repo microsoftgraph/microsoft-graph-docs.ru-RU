@@ -1,16 +1,16 @@
 ---
 title: тип перечисления Вифисекурититипе
-description: Типы безопасности Wi/Fi.
+description: Wi-Fi типов безопасности.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 22dd7bf07e6355dd92f04461120e3afb142d6d9a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e01faac094cd2ae040137b251d30006883388173
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48048878"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732532"
 ---
 # <a name="wifisecuritytype-enum-type"></a>тип перечисления Вифисекурититипе
 
@@ -20,18 +20,17 @@ ms.locfileid: "48048878"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Типы безопасности Wi/Fi.
+Wi-Fi типов безопасности.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |окно|нуль|Открыть (без проверки подлинности).|
-|впаперсонал|1 |WPA – личное.|
-|впаентерприсе|2 |WPA — предприятие. Для настройки параметров предприятия необходимо использовать тип IOSEnterpriseWifiConfiguration.|
+|впаперсонал|1,1|WPA – личное.|
+|впаентерприсе|2|WPA — предприятие. Для настройки параметров предприятия необходимо использовать тип IOSEnterpriseWifiConfiguration.|
 |WEP|4|WEP-шифрование.|
 |wpa2Personal|4 |WPA2 — личное.|
 |wpa2Enterprise|5 |WPA2 — предприятие. Для настройки параметров предприятия необходимо использовать тип Виндовсвифиентерприсиапконфигуратион.|
-
 
 
 

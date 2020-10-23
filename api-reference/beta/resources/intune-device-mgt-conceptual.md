@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4c365a5713d8a2b9da24e1a8eee89121395ec6e9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6b63e8e9cc94558f7e34af6b69b71b36efc05d7d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48073959"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731962"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -56,6 +56,8 @@ ms.locfileid: "48073959"
 - [Сценарий соответствия устройства требованиям](intune-devices-devicecompliancescript.md)
 - [Состояние устройства со сценариями соответствия требованиям устройства](intune-devices-devicecompliancescriptdevicestate.md)
 - [Сводка по запуску сценария соответствия требованиям устройства](intune-devices-devicecompliancescriptrunsummary.md)
+- [Сценарий оболочки настраиваемого атрибута устройства](intune-devices-devicecustomattributeshellscript.md)
+- [Тип значения настраиваемого атрибута устройства](intune-devices-devicecustomattributevaluetype.md)
 - [Причина сбоя регистрации устройства](intune-troubleshooting-deviceenrollmentfailurereason.md)
 - [Сводка по состоянию доступа к Exchange для устройств](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Геолокация устройств](intune-devices-devicegeolocation.md)
@@ -210,7 +212,9 @@ ms.locfileid: "48073959"
 - [Результат действия устройства при вращении ключей BitLocker](intune-devices-rotatebitlockerkeysdeviceactionresult.md)
 - [Сводка по состоянию категории базовых показателей безопасности](intune-deviceintent-securitybaselinecategorystatesummary.md)
 - [Состояние соответствия требованиям базового плана безопасности](intune-deviceintent-securitybaselinecompliancestate.md)
+- [Политика основной политики безопасности](intune-deviceintent-securitybaselinecontributingpolicy.md)
 - [Состояние устройства базового плана безопасности](intune-deviceintent-securitybaselinedevicestate.md)
+- [Базовый тип источника политики безопасности](intune-deviceintent-securitybaselinepolicysourcetype.md)
 - [Сводка состояния базового плана безопасности](intune-deviceintent-securitybaselinestatesummary.md)
 - [Шаблон базового плана безопасности](intune-deviceintent-securitybaselinetemplate.md)
 - [Пользователь общего устройства Apple](intune-devices-sharedappledeviceuser.md)
@@ -268,5 +272,3 @@ ms.locfileid: "48073959"
 - [Тип ресурса windowsManagementApp](intune-devices-windowsmanagementapp.md)
 - [Тип ресурса windowsManagementAppHealthState](intune-devices-windowsmanagementapphealthstate.md)
 - [Состояние защиты Windows](intune-devices-windowsprotectionstate.md)
-
-

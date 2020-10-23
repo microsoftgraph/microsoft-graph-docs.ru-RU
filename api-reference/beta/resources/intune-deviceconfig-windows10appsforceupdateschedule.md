@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7041f61bfe56a12c238426864e82563c88d23f98
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9f902ef48caafa5f782c12d862e540bf7c482899
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47985932"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732525"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>Тип ресурса windows10AppsForceUpdateSchedule
 
@@ -27,7 +27,7 @@ ms.locfileid: "47985932"
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|Время начала принудительного перезапуска.|
 |recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Расписание повторения. Возможные значения: `none`, `daily`, `weekly`, `monthly`.|
-|руниммедиателифафтерстартдатетиме|Boolean|Если этот параметр имеет значение true, задача выполняется немедленно, если StartDateTime находится в прошлое, иначе — выполняется при следующем повторении.|
+|руниммедиателифафтерстартдатетиме|Логический|Если этот параметр имеет значение true, задача выполняется немедленно, если StartDateTime находится в прошлое, иначе — выполняется при следующем повторении.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -47,7 +47,6 @@ ms.locfileid: "47985932"
   "runImmediatelyIfAfterStartDateTime": true
 }
 ```
-
 
 
 

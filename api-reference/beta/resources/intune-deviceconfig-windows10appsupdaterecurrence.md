@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3b378d0ae320dec6f54edf40061587c8fc6fdcf1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2dd5c36c3d8da88a90f493e6b9cebff97b6d4f68
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058181"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732518"
 ---
 # <a name="windows10appsupdaterecurrence-enum-type"></a>тип перечисления windows10AppsUpdateRecurrence
 
@@ -25,11 +25,10 @@ ms.locfileid: "48058181"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Значение по умолчанию указывает один экземпляр.|
-|ежедневно|1 |Daily (Ежедневный).|
-|Табель|2 |Weekly (Еженедельный).|
+|none|нуль|Значение по умолчанию указывает один экземпляр.|
+|ежедневно|1,1|Daily (Ежедневный).|
+|Табель|2|Weekly (Еженедельный).|
 |ежемесячно|4|Ежемесячно.|
-
 
 
 

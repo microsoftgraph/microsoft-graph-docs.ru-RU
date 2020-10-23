@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9e09565c27d1aa3f60905bcd2bcae1aecb793a58
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b71f045ac937af455da428b98242f9d074b14840
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026686"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48732539"
 ---
 # <a name="lanmanagerauthenticationlevel-enum-type"></a>тип перечисления Ланманажераусентикатионлевел
 
@@ -26,12 +26,11 @@ ms.locfileid: "48026686"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |лманднлтм|нуль|Отправка ответов LM & NTLM|
-|lmNtlmAndNtlmV2|1 |Отправлять LM & NTLM — использовать сеансовую безопасность NTLMv2 при согласовании|
-|лманднтлмонли|2 |Отправлять только LM & NTLM ответы|
+|lmNtlmAndNtlmV2|1,1|Отправлять LM & NTLM — использовать сеансовую безопасность NTLMv2 при согласовании|
+|лманднтлмонли|2|Отправлять только LM & NTLM ответы|
 |lmAndNtlmV2|4|Отправлять только LM & только ответы NTLMv2.|
 |lmNtlmV2AndNotLm|4 |Отправлять только LM & NTLMv2 ответы. Отклонять LM|
 |lmNtlmV2AndNotLmOrNtm|5 |Отправлять только LM & NTLMv2 ответы. Отклонять LM & NTLM|
-
 
 
 

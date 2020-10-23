@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: de815ba89a0e72c2c942f4ba5b0f41d3769965e8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 711fc5d9a0d4adca172e5e2e05a50a664efb4b75
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076080"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731920"
 ---
 # <a name="androiddeviceownerdefaultapppermissionpolicytype-enum-type"></a>тип перечисления Андроиддевицеовнердефаултапппермиссионполицитипе
 
@@ -26,10 +26,9 @@ ms.locfileid: "48076080"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
-|Подсказка|1 |Появляется.|
-|автопредоставление|2 |Автоматическое предоставление.|
+|Подсказка|1,1|Появляется.|
+|автопредоставление|2|Автоматическое предоставление.|
 |автозапрет|4|Автоматическое отклонение.|
-
 
 
 
