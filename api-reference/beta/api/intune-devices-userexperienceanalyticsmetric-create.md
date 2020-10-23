@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b145e81613c167bd70745df77c4db976b393250b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1fbdb73cf1db5769e7319002923cf7466c80f9e1
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48000639"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48731234"
 ---
 # <a name="create-userexperienceanalyticsmetric"></a>Создание Усерекспериенцеаналитиксметрик
 
@@ -46,7 +46,7 @@ POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytics
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -56,13 +56,13 @@ POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytics
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор метрики аналитики взаимодействия с пользователем.|
+|id|Строка|Уникальный идентификатор метрики аналитики взаимодействия с пользователем.|
 |значение|Двойное с плавающей точкой|Значение метрики аналитики взаимодействия с пользователем.|
-|устройств|String|Единица измерения показателя взаимодействия с пользователем.|
+|устройств|Строка|Единица измерения показателя взаимодействия с пользователем.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксметрик](../resources/intune-devices-userexperienceanalyticsmetric.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -95,7 +95,6 @@ Content-Length: 177
   "unit": "Unit value"
 }
 ```
-
 
 
 
