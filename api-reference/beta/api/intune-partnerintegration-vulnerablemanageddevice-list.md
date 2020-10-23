@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c3f11a0c78a0a4c30b916540af3defa7f5f327e7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2f45ada8bfccad2c9e3c46e5ef370a78e4efa2a6
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999932"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48692907"
 ---
 # <a name="list-vulnerablemanageddevices"></a>Список Вулнераблеманажеддевицес
 
@@ -43,13 +43,13 @@ GET ** Collection URI for microsoft.management.services.api.vulnerableManagedDev
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -79,7 +79,6 @@ Content-Length: 316
   ]
 }
 ```
-
 
 
 

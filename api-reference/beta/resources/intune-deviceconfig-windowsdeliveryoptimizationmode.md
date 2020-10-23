@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e3b32f3a6480b236297a7d0217c9aed8eefd5c44
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 719e315f8cccf52f98dfddb979d9f0fd5490dff8
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48084459"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48692431"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>тип перечисления Виндовсделиверйоптимизатионмоде
 
@@ -26,13 +26,12 @@ ms.locfileid: "48084459"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Разрешить пользователю устанавливать.|
-|httpOnly|1 |Только HTTP, без пиринга|
-|хттпвиспирингнат|2 |Операционная система по умолчанию — HTTP, смешанная с одноранговым устройством с одним транслятором сетевых адресов|
+|httpOnly|1,1|Только HTTP, без пиринга|
+|хттпвиспирингнат|2|Операционная система по умолчанию — HTTP, смешанная с одноранговым устройством с одним транслятором сетевых адресов|
 |хттпвиспирингприватеграуп|4|HTTP-смешение с одноранговым элементом в частной группе|
 |хттпвисинтернетпиринг|4 |HTTP-смешение с подключением к Интернету|
 |симпледовнлоад|99|Простой режим загрузки без пиринга|
 |бипассмоде|100|Режим обхода. Не используйте оптимизацию доставки и не используйте BITS|
-
 
 
 

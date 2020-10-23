@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dad2b95eff28b48e5790a124ba3cbdc4272b8c06
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9e39cf4af0af0ad183b262d524429bc52a2122cb
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48077039"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693250"
 ---
 # <a name="create-devicelogcollectionresponse"></a>Создание Девицелогколлектионреспонсе
 
@@ -46,26 +46,26 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Девицелогколлектионреспонсе в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицелогколлектионреспонсе.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор в виде tenantId_deviceId_requestId|
+|id|Строка|Уникальный идентификатор в виде tenantId_deviceId_requestId|
 |status|String|Состояние запроса на сбор журналов|
 |манажеддевицеид|Guid|Идентификатор устройства|
 |errorCode|Int64|Код ошибки (при наличии). Допустимые значения — 9.22337203685478 E + 18 — 9.22337203685478 E + 18|
 |рекуестеддатетимеутк|DateTimeOffset|Дата и время запроса|
 |рецеиведдатетимеутк|DateTimeOffset|Дата и время получения запроса|
-|Свойства initiatedbyuserprincipalname|String|Имя участника-пользователя, который инициировал запрос.|
+|Свойства initiatedbyuserprincipalname|Строка|Имя участника-пользователя, который инициировал запрос.|
 |експиратиондатетимеутк|DateTimeOffset|Дата и время истечения срока действия журналов|
 |size|Двойное с плавающей точкой|Размер журналов. Допустимые значения — 1 79769313486232e308 E + 308 — 1 79769313486232e308 E + 308|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -110,7 +110,6 @@ Content-Length: 528
   "size": 1.3333333333333333
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 13f0f5fb94476d6c7a3ae170660d008e160540ae
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a93ef4060f11b8478055efebda2a116d0c87645d
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999925"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48692893"
 ---
 # <a name="update-vulnerablemanageddevice"></a>Обновление Вулнераблеманажеддевице
 
@@ -43,7 +43,7 @@ PATCH ** Entity URI for microsoft.management.services.api.vulnerableManagedDevic
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,14 +53,14 @@ PATCH ** Entity URI for microsoft.management.services.api.vulnerableManagedDevic
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ сущности и идентификатор устройства AAD.|
-|манажеддевицеид|String|Идентификатор управляемого устройства Intune.|
-|displayName|String|Имя устройства.|
+|id|Строка|Ключ сущности и идентификатор устройства AAD.|
+|манажеддевицеид|Строка|Идентификатор управляемого устройства Intune.|
+|displayName|Строка|Имя устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата последней синхронизации.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -95,7 +95,6 @@ Content-Length: 263
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
-
 
 
 

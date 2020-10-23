@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4f561d6a34f3ba793b2f313684669b6ac860f31f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 84e645cdd3625db9d5a172061cd5d1d6b1d7fa9f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47986660"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48691738"
 ---
 # <a name="update-devicemanagementsettingcategory"></a>Обновление Девицеманажементсеттингкатегори
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/categories/{deviceManagementSettingCategoryId}
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,13 +53,13 @@ PATCH /deviceManagement/categories/{deviceManagementSettingCategoryId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор категории|
-|displayName|String|Имя категории|
-|хасрекуиредсеттинг|Boolean|Категория содержит параметры, необходимые для верхнего уровня|
+|id|Строка|Идентификатор категории|
+|displayName|Строка|Имя категории|
+|хасрекуиредсеттинг|Логический|Категория содержит параметры, необходимые для верхнего уровня|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -92,7 +92,6 @@ Content-Length: 193
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

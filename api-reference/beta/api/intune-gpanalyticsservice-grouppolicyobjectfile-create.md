@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 57b1a474efa2a969aa5e80af5ab3cc96160d7f9d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 691b498ea7b041896afed95f68974e1c744cd0b4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48065174"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693040"
 ---
 # <a name="create-grouppolicyobjectfile"></a>Создание Граупполициобжектфиле
 
@@ -46,23 +46,23 @@ POST /deviceManagement/groupPolicyObjectFiles
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Граупполициобжектфиле в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Граупполициобжектфиле.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Пока не задокументировано.|
+|id|Строка|Пока не задокументировано.|
 |граупполициобжектид|Guid|GUID объекта групповой политики из XML-содержимого объекта групповой политики|
-|аудистингуишеднаме|String|Различающееся имя подразделения.|
+|аудистингуишеднаме|Строка|Различающееся имя подразделения.|
 |createdDateTime|DateTimeOffset|Дата и время первой загрузки Граупполици.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения Граупполициобжектфиле.|
 |content|String|Содержимое файла объекта групповой политики.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполициобжектфиле](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -99,7 +99,6 @@ Content-Length: 389
   "content": "Content value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 05c15b116ebf774c211a2ea30d496059fe61e37d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7b84784636ff3fe6d4efe5f4644e929c06dfe82f
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023534"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693180"
 ---
 # <a name="create-userexperienceanalyticsapphealthdeviceperformancedetails"></a>Создание Усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс
 
@@ -43,7 +43,7 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,16 +53,16 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности устройства аналитики взаимодействия с пользователем.|
+|id|Строка|Уникальный идентификатор объекта производительности устройства аналитики взаимодействия с пользователем.|
 |eventDateTime|DateTimeOffset|Время возникновения события.|
-|eventType|String|Тип события.|
+|eventType|Строка|Тип события.|
 |appDisplayName|String|Понятное имя приложения, для которого произошло событие.|
 |deviceId|String|Идентификатор устройства.|
 |deviceDisplayName|String|Имя устройства.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -101,7 +101,6 @@ Content-Length: 374
   "deviceDisplayName": "Device Display Name value"
 }
 ```
-
 
 
 

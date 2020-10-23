@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: aaef91b47e0554c9f94bcd48aafe33434f4496ad
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e9c16f3fa21bfbbf60db05096f0cdbcf3afb52a4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48081358"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48691353"
 ---
 # <a name="insightvaluedouble-resource-type"></a>Тип ресурса Инсигхтвалуедаубле
 
@@ -46,7 +46,6 @@ ms.locfileid: "48081358"
   "value": "4.2"
 }
 ```
-
 
 
 

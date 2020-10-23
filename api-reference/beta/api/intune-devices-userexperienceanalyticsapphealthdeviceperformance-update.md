@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b4929feb11a6dfd914fd7f453e6a55d0edd23a2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2408ad8564411c58c5d65eeb41fb6ce82a491aec
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023577"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48693194"
 ---
 # <a name="update-userexperienceanalyticsapphealthdeviceperformance"></a>Обновление Усерекспериенцеаналитиксапфеалсдевицеперформанце
 
@@ -43,31 +43,31 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformance/{userE
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [усерекспериенцеаналитиксапфеалсдевицеперформанце](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитиксапфеалсдевицеперформанце](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта производительности устройства аналитики взаимодействия с пользователем.|
+|id|Строка|Уникальный идентификатор объекта производительности устройства аналитики взаимодействия с пользователем.|
 |deviceModel|String|Имя модели устройства.|
-|девицемануфактурер|String|Название изготовителя устройства.|
+|девицемануфактурер|Строка|Название изготовителя устройства.|
 |аппкрашкаунт|Int32|Количество сбоев приложений для устройства. Допустимые значения: от 2147483648 до 2147483647|
 |крашедаппкаунт|Int32|Количество отдельных сбоев приложений для устройства. Допустимые значения: от 2147483648 до 2147483647|
 |апфангкаунт|Int32|Количество зависаний приложения для устройства. Допустимые значения: от 2147483648 до 2147483647|
 |меантиметофаилуреинминутес|Int32|Среднее время до сбоя устройства в минутах. Допустимые значения: от 2147483648 до 2147483647|
 |девицеапфеалсскоре|Двойное с плавающей точкой|Показатель работоспособности приложения для устройства. Допустимые значения — 1 79769313486232e308 E + 308 — 1 79769313486232e308 E + 308|
-|девицеапфеалсстатус|String|Общее состояние работоспособности приложений для устройства.|
+|девицеапфеалсстатус|Строка|Общее состояние работоспособности приложений для устройства.|
 |deviceId|String|Идентификатор устройства.|
 |deviceDisplayName|String|Имя устройства.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерекспериенцеаналитиксапфеалсдевицеперформанце](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -116,7 +116,6 @@ Content-Length: 539
   "deviceDisplayName": "Device Display Name value"
 }
 ```
-
 
 
 

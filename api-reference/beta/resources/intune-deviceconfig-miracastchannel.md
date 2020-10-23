@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 54649e5aca1939c3c7e6ec579afd8e05d8878df6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d07187a6a98ac53e0338fc30432e7f20ee9596ae
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055437"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48692459"
 ---
 # <a name="miracastchannel-enum-type"></a>тип перечисления Миракастчаннел
 
@@ -26,8 +26,8 @@ ms.locfileid: "48055437"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|one|1 |Один.|
-|two|2 |2.|
+|one|1,1|Один.|
+|two|2|2.|
 |three|4|Трёх.|
 |four|4 |Четыре.|
 |five|5 |Следующих.|
@@ -36,7 +36,7 @@ ms.locfileid: "48055437"
 |Основными|8 |Основными.|
 |9|9 |9.|
 |раз|10 |Раз.|
-|Eleven|11 |Eleven.|
+|Eleven|-11:00|Eleven.|
 |сиртисикс|36|36.|
 |40|40|40.|
 |фортифаур|44|44.|
@@ -46,7 +46,6 @@ ms.locfileid: "48055437"
 |онехундредфифтисевен|157|Онехундредфифти — семь.|
 |онехундредсикстйоне|161|Онехундредсиксти — один.|
 |онехундредсикстифиве|165|Онехундредсиксти — пять.|
-
 
 
 
