@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: fd6534256e60b5fbc1e699eab2e6df787ab63864
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2b8d2a8478d3b6b0c5ffbea13b4a59873cdc9f91
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002123"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701433"
 ---
 # <a name="list-owners"></a>Список владельцев
 
@@ -18,16 +18,16 @@ ms.locfileid: "48002123"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка владельцев группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект группы.
+Получение списка владельцев группы. Владельцы — это набор пользователей, которым разрешено изменять объект Group. В настоящее время владельцы не доступны в Microsoft Graph для групп, которые были созданы в Exchange или в группах, синхронизированных из локальной среды. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group. Read. ALL и User. ReadBasic. ALL, Group. Read. ALL и User. Read. ALL, Group. Read. ALL и User. ReadWrite. ALL, Group. Read. ALL и User. Read. ALL и User. Read. ALL  |
+|Делегированные (рабочая или учебная учетная запись) | Group.Read.All и User.ReadBasic.All, Group.Read.All и User.Read.All, Group.Read.All и User.ReadWrite.All, Group.Read.All и User.Read.All и Application.Read.All  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group. Read. ALL и User. Read. ALL, Group. Read. ALL и User. ReadWrite. ALL, Group. Read. ALL и User. Read. ALL и Application. Read. ALL. |
+|Для приложений | Group.Read.All и User.Read.All, Group.Read.All и User.ReadWrite.All, Group.Read.All и User.Read.All и Application.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -45,7 +45,7 @@ GET /groups/{id}/owners
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/owners
 
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

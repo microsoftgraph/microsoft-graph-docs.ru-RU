@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fc1bf75fffe3f4008171320a78d1a487cdd0771a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c751c799c385c09d60aa7c57db8425173d093151
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092666"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702532"
 ---
 # <a name="iosvpnsecurityassociationparameters-resource-type"></a>Тип ресурса ИосвпнсекуритяссоЦиатионпараметерс
 
@@ -27,7 +27,7 @@ ms.locfileid: "48092666"
 |:---|:---|:---|
 |секуритенкриптионалгорисм|[vpnEncryptionAlgorithmType](../resources/intune-deviceconfig-vpnencryptionalgorithmtype.md)|Алгоритм шифрования. Возможные значения: `aes256`, `des`, `tripleDes`, `aes128`, `aes128Gcm`, `aes256Gcm`, `aes192`, `aes192Gcm`.|
 |секуритинтегритялгорисм|[vpnIntegrityAlgorithmType](../resources/intune-deviceconfig-vpnintegrityalgorithmtype.md)|Алгоритм проверки целостности. Возможные значения: `sha2_256`, `sha1_96`, `sha1_160`, `sha2_384`, `sha2_512`, `md5`.|
-|секуритидиффиехеллманграуп|Int32|Группа Диффи Диффи — Хелмана|
+|секуритидиффиехеллманграуп|Int32|Группа Diffie-Hellman|
 |лифетимеинминутес|Int32|Срок действия (в минутах)|
 
 ## <a name="relationships"></a>Связи
@@ -49,7 +49,6 @@ ms.locfileid: "48092666"
   "lifetimeInMinutes": 1024
 }
 ```
-
 
 
 

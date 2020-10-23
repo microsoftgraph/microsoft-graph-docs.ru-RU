@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 29585af2586a849c5c75bbf04878d3aadcd8d710
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a6843d99461310d6bbd547eaa0d56a19c1e719de
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48029794"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702336"
 ---
 # <a name="certificateconnectorsetting-resource-type"></a>Тип ресурса Цертификатеконнекторсеттинг
 
@@ -27,12 +27,12 @@ ms.locfileid: "48029794"
 |:---|:---|:---|
 |status|Int32|Состояние соединителя сертификатов|
 |цертекспиритиме|DateTimeOffset|Время истечения срока действия сертификата|
-|енроллментеррор|String|Ошибка регистрации соединителя сертификатов|
+|енроллментеррор|Строка|Ошибка регистрации соединителя сертификатов|
 |ластконнекторконнектионтиме|DateTimeOffset|Время последнего подключения к соединителю сертификата|
-|коннекторверсион|String|Версия соединителя сертификатов|
+|коннекторверсион|Строка|Версия соединителя сертификатов|
 |ластуплоадверсион|Int64|Версия последнего отправленного соединителя сертификатов|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,7 +53,6 @@ ms.locfileid: "48029794"
   "lastUploadVersion": 1024
 }
 ```
-
 
 
 

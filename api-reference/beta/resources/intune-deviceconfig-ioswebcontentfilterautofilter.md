@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4300821522a10d08036385cfe3f418968145601d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4db3b5c04b4cbac46e04ce097ec12ed979ed9ee2
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092603"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702497"
 ---
 # <a name="ioswebcontentfilterautofilter-resource-type"></a>Тип ресурса Иосвебконтентфилтераутофилтер
 
@@ -28,8 +28,8 @@ ms.locfileid: "48092603"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедурлс|Коллекция String|Дополнительные URL-адреса, разрешенные для Access|
-|блоккедурлс|Коллекция String|Дополнительные URL-адреса, заблокированные для Access|
+|алловедурлс|Коллекция строк|Дополнительные URL-адреса, разрешенные для Access|
+|блоккедурлс|Коллекция строк|Дополнительные URL-адреса, заблокированные для Access|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -52,7 +52,6 @@ ms.locfileid: "48092603"
   ]
 }
 ```
-
 
 
 

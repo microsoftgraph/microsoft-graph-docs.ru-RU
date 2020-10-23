@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: eb97de8d8eb0400d40a0b66a8637108bf9781748
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f19348e301873b98b8ddf7491160323e5b009f1b
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47999603"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701678"
 ---
 # <a name="create-devicemanagementautopilotevent"></a>Создание Девицеманажементаутопилотевент
 
@@ -43,7 +43,7 @@ POST /deviceManagement/autopilotEvents
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,18 +53,18 @@ POST /deviceManagement/autopilotEvents
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|UUID объекта.|
+|id|Строка|UUID объекта.|
 |deviceId|String|Идентификатор устройства, связанный с объектом|
 |eventDateTime|DateTimeOffset|Время возникновения события.|
 |девицерегистереддатетиме|DateTimeOffset|Дата регистрации устройства.|
 |енроллментстартдатетиме|DateTimeOffset|Дата начала регистрации устройства.|
 |enrollmentType|[windowsAutopilotEnrollmentType](../resources/intune-troubleshooting-windowsautopilotenrollmenttype.md)|Тип регистрации. Возможные значения: `unknown`, `azureADJoinedWithAutopilotProfile`, `offlineDomainJoined`, `azureADJoinedUsingDeviceAuthWithAutopilotProfile`, `azureADJoinedUsingDeviceAuthWithoutAutopilotProfile`, `azureADJoinedWithOfflineAutopilotProfile`, `azureADJoinedWithWhiteGlove`, `offlineDomainJoinedWithWhiteGlove`, `offlineDomainJoinedWithOfflineAutopilotProfile`.|
-|девицесериалнумбер|String|Серийный номер устройства.|
+|девицесериалнумбер|Строка|Серийный номер устройства.|
 |managedDeviceName|String|Управляемое имя устройства.|
 |userPrincipalName|String|Имя участника пользователя, используемое для регистрации устройства.|
-|виндовсаутопилотдеплойментпрофиледисплайнаме|String|Имя профиля для автопилота.|
+|виндовсаутопилотдеплойментпрофиледисплайнаме|Строка|Имя профиля для автопилота.|
 |енроллментстате|[енроллментстате](../resources/intune-shared-enrollmentstate.md)|Не удалось зарегистрировать состояние регистрации, например "зарегистрировано". Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|windows10EnrollmentCompletionPageConfigurationDisplayName|String|Имя профиля страницы состояния регистрации|
+|windows10EnrollmentCompletionPageConfigurationDisplayName|Строка|Имя профиля страницы состояния регистрации|
 |деплойментстате|[windowsAutopilotDeploymentState](../resources/intune-troubleshooting-windowsautopilotdeploymentstate.md)|Состояние развертывания, например успешное выполнение, сбой, выполнение, Сукцессвистимеаут. Возможные значения: `unknown`, `success`, `inProgress`, `failure`, `successWithTimeout`.|
 |osVersion|String|Версия операционной системы устройства.|
 |деплойментдуратион|Длительность|Длительность развертывания с автопилотной версией, включая регистрацию.|
@@ -76,11 +76,11 @@ POST /deviceManagement/autopilotEvents
 |деплойментенддатетиме|DateTimeOffset|Время окончания развертывания.|
 |таржетедаппкаунт|Int32|Количество целевых приложений.|
 |таржетедполицикаунт|Int32|Количество целевых политик.|
-|енроллментфаилуредетаилс|String|Сведения о сбоях при регистрации.|
+|енроллментфаилуредетаилс|Строка|Сведения о сбоях при регистрации.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементаутопилотевент](../resources/intune-troubleshooting-devicemanagementautopilotevent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -155,7 +155,6 @@ Content-Length: 1406
   "enrollmentFailureDetails": "Enrollment Failure Details value"
 }
 ```
-
 
 
 

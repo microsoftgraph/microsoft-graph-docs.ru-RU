@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9a8db1948f6d6ef80fe5cd53444a9819275dbc18
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 94c3dc76d1b3dd75ec8b88541f78088a10e35b44
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027819"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702063"
 ---
 # <a name="update-userexperienceanalyticsdevicestartupprocessperformance"></a>Обновление Усерекспериенцеаналитиксдевицестартуппроцессперформанце
 
@@ -43,18 +43,18 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance/{
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [усерекспериенцеаналитиксдевицестартуппроцессперформанце](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитиксдевицестартуппроцессперформанце](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор производительности процесса запуска устройства Analytics User Experience.|
-|процесснаме|String|Имя процесса запуска устройства службы аналитики взаимодействия с пользователем.|
+|id|Строка|Уникальный идентификатор производительности процесса запуска устройства Analytics User Experience.|
+|процесснаме|Строка|Имя процесса запуска устройства службы аналитики взаимодействия с пользователем.|
 |productName|String|Имя продукта для процесса запуска устройства Analytics Device (взаимодействие с пользователем).|
 |publisher|String|Издатель процесса запуска устройства Analytics User Experience.|
 |deviceCount|Int64|Сводка по процессу запуска при запуске устройства с пользовательским интерфейсом.|
@@ -63,7 +63,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDeviceStartupProcessPerformance/{
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерекспериенцеаналитиксдевицестартуппроцессперформанце](../resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -104,7 +104,6 @@ Content-Length: 334
   "totalImpactInMs": 15
 }
 ```
-
 
 
 

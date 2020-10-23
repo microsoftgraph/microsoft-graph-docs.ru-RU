@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7418811c38c56c3d68b906e82774b2a8c1d4685e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 170045c1c83542ced8b1a4d1c631da65b6467a0e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966669"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702609"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>Тип ресурса managedDeviceMobileAppConfiguration
 
@@ -32,13 +32,13 @@ ms.locfileid: "47966669"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |targetedMobileApps|Коллекция String|приложение-обработчик|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этой сущности конфигурации приложения.|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этой сущности конфигурации приложения.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|description|String|Указанное администратором описание конфигурации устройства.|
+|description|Строка|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|String|Указанное администратором имя конфигурации устройства.|
+|displayName|Строка|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
 ## <a name="relationships"></a>Связи
@@ -75,7 +75,6 @@ ms.locfileid: "47966669"
   "version": 1024
 }
 ```
-
 
 
 

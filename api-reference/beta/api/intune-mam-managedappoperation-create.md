@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b8d236beff5fb829cfb12f7db62c185ca6817ff3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1ee13cd888f57f77c92e4e25e6557ad0a3c4405e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48000331"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701804"
 ---
 # <a name="create-managedappoperation"></a>Создание объекта managedAppOperation
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,10 +53,10 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/ope
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя операции.|
+|displayName|Строка|Имя операции.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения операции для приложения.|
 |state|String|Текущее состояние операции|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |version|String|Версия объекта.|
 
 
@@ -97,7 +97,6 @@ Content-Length: 272
   "version": "Version value"
 }
 ```
-
 
 
 

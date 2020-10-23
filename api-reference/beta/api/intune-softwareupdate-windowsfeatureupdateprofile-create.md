@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 68382c5b5dfdf38cb57f926b3aed7623e6180cb2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c391483f2127ba89a98b0b02a8c2ebd5b1c83e07
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053701"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702777"
 ---
 # <a name="create-windowsfeatureupdateprofile"></a>Создание Виндовсфеатуреупдатепрофиле
 
@@ -46,24 +46,24 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта Виндовсфеатуреупдатепрофиле в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Виндовсфеатуреупдатепрофиле.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор объекта.|
-|displayName|String|Отображаемое имя профиля.|
-|description|String|Описание профиля, указанного пользователем.|
-|феатуреупдатеверсион|String|Версия обновления компонентов, которая будет развернута на устройствах, предназначенных для этого профиля. Версией может быть любая поддерживаемая версия, например 1709, 1803 или 1809 и т. д.|
+|id|Строка|Идентификатор объекта.|
+|displayName|Строка|Отображаемое имя профиля.|
+|description|Строка|Описание профиля, указанного пользователем.|
+|феатуреупдатеверсион|Строка|Версия обновления компонентов, которая будет развернута на устройствах, предназначенных для этого профиля. Версией может быть любая поддерживаемая версия, например 1709, 1803 или 1809 и т. д.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля.|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого элемента обновления компонента.|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого элемента обновления компонента.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -106,7 +106,6 @@ Content-Length: 441
   ]
 }
 ```
-
 
 
 

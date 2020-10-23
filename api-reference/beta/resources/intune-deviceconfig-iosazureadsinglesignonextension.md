@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса Иосазуреадсинглесигнонекстенсион
-description: Представляет профиль расширения единого входа Azure AD для устройств с iOS.
+description: Представляет один Sign-Onный профиль расширения Azure AD для устройств с iOS.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7c1349eacff4275e49a7e31b380b6e01245da709
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f330fad7553d702368c1b0f4a26eee0a35f40e32
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47971883"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701538"
 ---
 # <a name="iosazureadsinglesignonextension-resource-type"></a>Тип ресурса Иосазуреадсинглесигнонекстенсион
 
@@ -20,7 +20,7 @@ ms.locfileid: "47971883"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Представляет профиль расширения единого входа Azure AD для устройств с iOS.
+Представляет один Sign-Onный профиль расширения Azure AD для устройств с iOS.
 
 
 Наследуется от [иоссинглесигнонекстенсион](../resources/intune-deviceconfig-iossinglesignonextension.md)
@@ -28,8 +28,8 @@ ms.locfileid: "47971883"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|енаблешареддевицемоде|Boolean|Включает или отключает режим общего устройства.|
-|бундлеидакцессконтроллист|Коллекция String|Необязательный список дополнительных идентификаторов пакетов, которые могут использовать расширение AAD для единого входа.|
+|енаблешареддевицемоде|Логический|Включает или отключает режим общего устройства.|
+|бундлеидакцессконтроллист|Коллекция строк|Необязательный список дополнительных идентификаторов пакетов, которые могут использовать расширение AAD для единого входа.|
 |построения|Коллекция [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)|Получает или задает список типизированных пар "ключ — значение", используемых для настройки профилей типа учетных данных. Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="relationships"></a>Связи
@@ -57,7 +57,6 @@ ms.locfileid: "47971883"
   ]
 }
 ```
-
 
 
 

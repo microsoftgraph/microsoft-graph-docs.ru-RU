@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a1e74178c160560d806f4947e9c2fd3533d6739c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f2157fccff9cbd6a1618b5989b91bb95edae576c
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064103"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48702238"
 ---
 # <a name="windowsfeatureupdateprofile-resource-type"></a>Тип ресурса Виндовсфеатуреупдатепрофиле
 
@@ -35,13 +35,13 @@ ms.locfileid: "48064103"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор объекта.|
-|displayName|String|Отображаемое имя профиля.|
-|description|String|Описание профиля, указанного пользователем.|
-|феатуреупдатеверсион|String|Версия обновления компонентов, которая будет развернута на устройствах, предназначенных для этого профиля. Версией может быть любая поддерживаемая версия, например 1709, 1803 или 1809 и т. д.|
+|id|Строка|Идентификатор объекта.|
+|displayName|Строка|Отображаемое имя профиля.|
+|description|Строка|Описание профиля, указанного пользователем.|
+|феатуреупдатеверсион|Строка|Версия обновления компонентов, которая будет развернута на устройствах, предназначенных для этого профиля. Версией может быть любая поддерживаемая версия, например 1709, 1803 или 1809 и т. д.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля.|
-|roleScopeTagIds|Коллекция объектов string|Список тегов областей для этого элемента обновления компонента.|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого элемента обновления компонента.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -71,7 +71,6 @@ ms.locfileid: "48064103"
   ]
 }
 ```
-
 
 
 

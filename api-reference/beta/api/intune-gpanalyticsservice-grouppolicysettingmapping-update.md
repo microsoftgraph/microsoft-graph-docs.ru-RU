@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 70bada190dd6f46ef3f8e0f87e31c847bf651d89
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4c022f100e540845a099ef36dbf2c6fac4171b50
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48043285"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48703155"
 ---
 # <a name="update-grouppolicysettingmapping"></a>Обновление Граупполицисеттингмаппинг
 
@@ -46,7 +46,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса добавьте представление объекта [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md).
@@ -55,7 +55,7 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 |:---|:---|:---|
 |id|Строка|Пока не задокументировано.|
 |parentId|Строка|Родительский идентификатор параметра групповой политики.|
-|чилдидлист|Коллекция String|Список дочерних идентификаторов параметра групповой политики.|
+|чилдидлист|Коллекция строк|Список дочерних идентификаторов параметра групповой политики.|
 |settingName|String|Имя этого параметра групповой политики.|
 |settingValue|Строка|Значение этого параметра групповой политики.|
 |сеттингвалуетипе|Строка|Тип значения этого параметра групповой политики.|
@@ -68,16 +68,16 @@ PATCH /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportI
 |мдмсеттингури|Строка|Универсальный код ресурса (URI) MDM CSP, которому соответствует этот параметр групповой политики.|
 |мдмминимумосверсион|Int32|Минимальная версия ОС, поддерживаемая параметром MDM.|
 |сеттингтипе|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|Тип параметра (Security или ADMX) групповой политики. Возможные значения: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`.|
-|исмдмсуппортед|Boolean|Указывает, поддерживается ли Intune или нет|
+|исмдмсуппортед|Логический|Указывает, поддерживается ли Intune или нет|
 |mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Указывает, поддерживается ли параметр в MDM. Возможные значения: `unknown`, `supported`, `unsupported`, `deprecated`.|
 |сеттингскопе|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Область применения параметра. Возможные значения: `unknown`, `device`, `user`.|
-|интунесеттингурилист|Коллекция String|Список URI параметров Intune, которые сопоставлены параметру групповой политики|
+|интунесеттингурилист|Коллекция строк|Список URI параметров Intune, которые сопоставлены параметру групповой политики|
 |интунесеттингдефинитионид|Строка|Идентификатор определения параметра Intune|
 |адмкссеттингдефинитионид|Строка|Идентификатор групповой политики ADMX|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -154,7 +154,6 @@ Content-Length: 1072
   "admxSettingDefinitionId": "Admx Setting Definition Id value"
 }
 ```
-
 
 
 

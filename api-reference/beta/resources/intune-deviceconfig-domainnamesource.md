@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f4daa1ad2f41ac6044fdff4dccdbc16a3a2f411f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5e06598bb797262bb4e19fb13960a6a0e97b2ba7
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003782"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701573"
 ---
 # <a name="domainnamesource-enum-type"></a>тип перечисления Домаиннамесаурце
 
@@ -26,8 +26,7 @@ ms.locfileid: "48003782"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |фуллдомаиннаме|нуль|Полное доменное имя.|
-|нетбиосдомаиннаме|1 |имя домена сети BIOS.|
-
+|нетбиосдомаиннаме|1,1|имя домена сети BIOS.|
 
 
 

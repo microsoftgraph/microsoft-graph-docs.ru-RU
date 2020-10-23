@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса iosWiFiConfiguration
-description: Предоставляя конфигурации в этом профиле, вы можете указать устройству iOS подключаться к желаемой конечной точке Wi/Fi. Указав способ проверки подлинности и типы безопасности, ожидаемые конечной точкой Wi/Fi, можно легко установить соединение Wi/Fi для конечного пользователя. Этот профиль предоставляет ограниченные и простые типы безопасности, чем Корпоративный профиль Wi/Fi.
+description: Предоставляя конфигурации в этом профиле, вы можете указать устройству iOS подключаться к необходимой конечной точке Wi-Fi. Указав способ проверки подлинности и типы безопасности, ожидаемые конечной точкой Wi-Fi, вы можете сделать Wi-Fi подключение неполноценным для конечного пользователя. Этот профиль предоставляет ограниченные и простые типы безопасности, чем корпоративный Wi-Fi профиль.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 24e99cc6f287c94f6f4540bb8d5485f49b88a60b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3f03ac6c6e110cea72a0574f0c9ea226e8089ddf
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092568"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48701531"
 ---
 # <a name="ioswificonfiguration-resource-type"></a>Тип ресурса iosWiFiConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "48092568"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Предоставляя конфигурации в этом профиле, вы можете указать устройству iOS подключаться к желаемой конечной точке Wi/Fi. Указав способ проверки подлинности и типы безопасности, ожидаемые конечной точкой Wi/Fi, можно легко установить соединение Wi/Fi для конечного пользователя. Этот профиль предоставляет ограниченные и простые типы безопасности, чем Корпоративный профиль Wi/Fi.
+Предоставляя конфигурации в этом профиле, вы можете указать устройству iOS подключаться к необходимой конечной точке Wi-Fi. Указав способ проверки подлинности и типы безопасности, ожидаемые конечной точкой Wi-Fi, вы можете сделать Wi-Fi подключение неполноценным для конечного пользователя. Этот профиль предоставляет ограниченные и простые типы безопасности, чем корпоративный Wi-Fi профиль.
 
 
 Наследуется от [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).
@@ -39,8 +39,8 @@ ms.locfileid: "48092568"
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
@@ -49,16 +49,16 @@ ms.locfileid: "48092568"
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |нетворкнаме|Строка|Сетевое имя|
-|SSID|Строка|Это имя сети Wi-Fi, которая отправляется на все устройства.|
-|коннектаутоматикалли|Boolean|Подключаться автоматически, если сеть находится в диапазоне. Если задать для этого параметра значение true, запрос пользователя будет пропущен и автоматически подключено устройство к сети Wi/Fi.|
-|коннектвхеннетворкнамеишидден|Boolean|Подключаться, если сеть не ведет вещание своего имени (SSID). Если задано значение true, этот профиль заставляет устройство подключаться к сети, на которой не выполняется трансляция идентификатора SSID на все устройства.|
-|вифисекурититипе|[вифисекурититипе](../resources/intune-deviceconfig-wifisecuritytype.md)|Указывает, использует ли конечная точка Wi/Fi тип безопасности на основе EAP. Возможные значения: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
+|SSID|Строка|Это имя Wi-Fiной сети, которая отправляется на все устройства.|
+|коннектаутоматикалли|Логический|Подключаться автоматически, если сеть находится в диапазоне. Если задать для этого параметра значение true, запрос пользователя будет пропущен и устройство будет автоматически подключено к Wi-Fi сети.|
+|коннектвхеннетворкнамеишидден|Логический|Подключаться, если сеть не ведет вещание своего имени (SSID). Если задано значение true, этот профиль заставляет устройство подключаться к сети, на которой не выполняется трансляция идентификатора SSID на все устройства.|
+|вифисекурититипе|[вифисекурититипе](../resources/intune-deviceconfig-wifisecuritytype.md)|Указывает, использует ли конечная точка Wi-Fi тип безопасности на основе EAP. Возможные значения: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
 |proxySettings|[вифипроксисеттинг](../resources/intune-deviceconfig-wifiproxysetting.md)|Тип прокси-сервера для этого подключения Wi-Fi. Возможные значения: `none`, `manual`, `automatic`.|
 |проксимануаладдресс|Строка|IP-адрес или DNS-имя узла прокси-сервера при выборе конфигурации вручную.|
 |проксимануалпорт|Int32|Порт прокси-сервера при выборе конфигурации вручную.|
 |проксяутоматикконфигуратионурл|Строка|URL-адрес скрипта автоматической настройки прокси-сервера при выборе параметра Автоматическая настройка. Обычно это URL-адрес файла PAC (Автонастройка прокси-сервера).|
-|дисаблемакаддрессрандомизатион|Boolean|Если задано значение true, устройства, подключающиеся с помощью этого профиля Wi-Fi, предоставляют свой фактический MAC-адрес Wi-Fi вместо случайного MAC-адреса. Применяется к iOS 14 и более поздних версий.|
-|preSharedKey|Строка|Это предварительно общий ключ для частной сети Wi-Fi WPA.|
+|дисаблемакаддрессрандомизатион|Логический|Если задано значение true, устройства, подключающиеся с помощью данного профиля Wi-Fi, предоставляют свои фактические Wi-Fi MAC-адреса вместо случайного MAC-адреса. Применяется к iOS 14 и более поздних версий.|
+|preSharedKey|Строка|Это предварительно общий ключ для сети WPA Personal Wi-Fi.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -126,7 +126,6 @@ ms.locfileid: "48092568"
   "preSharedKey": "String"
 }
 ```
-
 
 
 
