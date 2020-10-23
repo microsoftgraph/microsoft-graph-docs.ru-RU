@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 01fcbb66f4acd542360d6dbc8b63a85498f30ce8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d1faa96c223c16b2214b185a3c2a9800cf15d9ca
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027932"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48690366"
 ---
 # <a name="delete-detectedapp"></a>Delete detectedApp
 
@@ -44,10 +44,10 @@ DELETE /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devi
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -66,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/detectedApps/{detectedA
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

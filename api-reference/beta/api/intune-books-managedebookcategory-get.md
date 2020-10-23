@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 621f008b5c9f3d3a5e8250529170e338570b3ebd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f6edd5166eb5cf84d1520cc87352aa10318f2c96
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47975467"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48690597"
 ---
 # <a name="get-managedebookcategory"></a>Получение Манажедебуккатегори
 
@@ -41,19 +41,19 @@ GET /deviceAppManagement/managedEBookCategories/{managedEBookCategoryId}
 GET /deviceAppManagement/managedEBooks/{managedEBookId}/categories/{managedEBookCategoryId}
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [манажедебуккатегори](../resources/intune-books-managedebookcategory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -80,7 +80,6 @@ Content-Length: 242
   }
 }
 ```
-
 
 
 

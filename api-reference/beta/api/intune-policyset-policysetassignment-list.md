@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 13e8407e639a5901e8b91910492380f17a0bf9d2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 649a732d241c30bee53fe2fe756c811a723f15cf
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032042"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48690870"
 ---
 # <a name="list-policysetassignments"></a>Список Полицисетассигнментс
 
@@ -43,13 +43,13 @@ GET /deviceAppManagement/policySets/{policySetId}/assignments
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [полицисетассигнмент](../resources/intune-policyset-policysetassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -82,7 +82,6 @@ Content-Length: 492
   ]
 }
 ```
-
 
 
 

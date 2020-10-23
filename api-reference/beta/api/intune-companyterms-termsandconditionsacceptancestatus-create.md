@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5fe683af13b6fac6380cfaa8c5c638d73f931a43
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: db514c3dad485cfeb4f63d923a83d86b34a55e70
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47975033"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48690128"
 ---
 # <a name="create-termsandconditionsacceptancestatus"></a>Создание объекта termsAndConditionsAcceptanceStatus
 
@@ -43,7 +43,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatu
 ## <a name="request-headers"></a>Заголовки запроса
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Bearer &lt;token&gt;. Обязательный.|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Тело запроса
@@ -53,7 +53,7 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта.|
+|id|Строка|Уникальный идентификатор объекта.|
 |userDisplayName|String|Отображает имя пользователя, чье принятие представлено объектом.|
 |acceptedVersion|Int32|Номер последней версии условий, принятых пользователем.|
 |acceptedDateTime|DateTimeOffset|Дата и время последнего принятия условий пользователем.|
@@ -98,7 +98,6 @@ Content-Length: 313
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 
