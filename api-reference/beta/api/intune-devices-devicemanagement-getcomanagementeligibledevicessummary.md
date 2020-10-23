@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cd43bd70ce136cda185bf5ffec5cd01d589f2d5b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1ab3005c17c1c53ee48fb69f9e5e78477a440b13
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48056130"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696820"
 ---
-# <a name="getcomanagementeligibledevicessummary-function"></a><span data-ttu-id="1d837-103">Функция Жеткоманажементелигибледевицессуммари</span><span class="sxs-lookup"><span data-stu-id="1d837-103">getComanagementEligibleDevicesSummary function</span></span>
+# <a name="getcomanagementeligibledevicessummary-function"></a><span data-ttu-id="1b0ca-103">Функция Жеткоманажементелигибледевицессуммари</span><span class="sxs-lookup"><span data-stu-id="1b0ca-103">getComanagementEligibleDevicesSummary function</span></span>
 
-<span data-ttu-id="1d837-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1d837-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1b0ca-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1b0ca-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="1d837-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1d837-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="1b0ca-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1b0ca-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1d837-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="1d837-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1b0ca-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="1b0ca-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1d837-107">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="1d837-107">Not yet documented</span></span>
+<span data-ttu-id="1b0ca-107">Пока не задокументировано.</span><span class="sxs-lookup"><span data-stu-id="1b0ca-107">Not yet documented</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="1d837-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="1d837-108">Prerequisites</span></span>
-<span data-ttu-id="1d837-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1d837-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="1b0ca-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="1b0ca-108">Prerequisites</span></span>
+<span data-ttu-id="1b0ca-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1b0ca-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1d837-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1d837-111">Permission type</span></span>|<span data-ttu-id="1d837-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="1d837-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="1b0ca-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1b0ca-111">Permission type</span></span>|<span data-ttu-id="1b0ca-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="1b0ca-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1d837-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1d837-113">Delegated (work or school account)</span></span>|<span data-ttu-id="1d837-114">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="1d837-114">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span>|
-|<span data-ttu-id="1d837-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1d837-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1d837-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1d837-116">Not supported.</span></span>|
-|<span data-ttu-id="1d837-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1d837-117">Application</span></span>|<span data-ttu-id="1d837-118">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="1d837-118">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span>|
+|<span data-ttu-id="1b0ca-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1b0ca-113">Delegated (work or school account)</span></span>|<span data-ttu-id="1b0ca-114">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="1b0ca-114">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span>|
+|<span data-ttu-id="1b0ca-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1b0ca-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1b0ca-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1b0ca-116">Not supported.</span></span>|
+|<span data-ttu-id="1b0ca-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1b0ca-117">Application</span></span>|<span data-ttu-id="1b0ca-118">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span><span class="sxs-lookup"><span data-stu-id="1b0ca-118">DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1d837-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1d837-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1b0ca-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1b0ca-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,28 +40,28 @@ ms.locfileid: "48056130"
 GET /deviceManagement/getComanagementEligibleDevicesSummary
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1d837-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="1d837-120">Request headers</span></span>
-|<span data-ttu-id="1d837-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="1d837-121">Header</span></span>|<span data-ttu-id="1d837-122">Значение</span><span class="sxs-lookup"><span data-stu-id="1d837-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1b0ca-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="1b0ca-120">Request headers</span></span>
+|<span data-ttu-id="1b0ca-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="1b0ca-121">Header</span></span>|<span data-ttu-id="1b0ca-122">Значение</span><span class="sxs-lookup"><span data-stu-id="1b0ca-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="1d837-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1d837-123">Authorization</span></span>|<span data-ttu-id="1d837-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1d837-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="1d837-125">Accept</span><span class="sxs-lookup"><span data-stu-id="1d837-125">Accept</span></span>|<span data-ttu-id="1d837-126">application/json</span><span class="sxs-lookup"><span data-stu-id="1d837-126">application/json</span></span>|
+|<span data-ttu-id="1b0ca-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1b0ca-123">Authorization</span></span>|<span data-ttu-id="1b0ca-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1b0ca-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="1b0ca-125">Accept</span><span class="sxs-lookup"><span data-stu-id="1b0ca-125">Accept</span></span>|<span data-ttu-id="1b0ca-126">application/json</span><span class="sxs-lookup"><span data-stu-id="1b0ca-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1d837-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1d837-127">Request body</span></span>
-<span data-ttu-id="1d837-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1d837-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1b0ca-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="1b0ca-127">Request body</span></span>
+<span data-ttu-id="1b0ca-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1b0ca-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1d837-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="1d837-129">Response</span></span>
-<span data-ttu-id="1d837-130">В случае успеха эта функция возвращает `200 OK` код отклика и объект [команажементелигибледевицессуммари](../resources/intune-devices-comanagementeligibledevicessummary.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1d837-130">If successful, this function returns a `200 OK` response code and a [comanagementEligibleDevicesSummary](../resources/intune-devices-comanagementeligibledevicessummary.md) in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="1b0ca-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="1b0ca-129">Response</span></span>
+<span data-ttu-id="1b0ca-130">В случае успеха эта функция возвращает `200 OK` код отклика и объект [команажементелигибледевицессуммари](../resources/intune-devices-comanagementeligibledevicessummary.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1b0ca-130">If successful, this function returns a `200 OK` response code and a [comanagementEligibleDevicesSummary](../resources/intune-devices-comanagementeligibledevicessummary.md) in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1d837-131">Пример</span><span class="sxs-lookup"><span data-stu-id="1d837-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1b0ca-131">Пример</span><span class="sxs-lookup"><span data-stu-id="1b0ca-131">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="1d837-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="1d837-132">Request</span></span>
-<span data-ttu-id="1d837-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1d837-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="1b0ca-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="1b0ca-132">Request</span></span>
+<span data-ttu-id="1b0ca-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1b0ca-133">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/getComanagementEligibleDevicesSummary
 ```
 
-### <a name="response"></a><span data-ttu-id="1d837-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="1d837-134">Response</span></span>
-<span data-ttu-id="1d837-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1d837-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="1b0ca-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="1b0ca-134">Response</span></span>
+<span data-ttu-id="1b0ca-p102">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1b0ca-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -78,7 +78,6 @@ Content-Length: 251
   }
 }
 ```
-
 
 
 
