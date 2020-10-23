@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1f80c5e59b4fdf2d76dfc8d3306ebd7f1d850535
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b1c8c980f8d56fcb78f9399b100e2a3798631a12
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089422"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696064"
 ---
 # <a name="windowsupdatestate-resource-type"></a>Тип ресурса Виндовсупдатестате
 
@@ -71,7 +71,6 @@ ms.locfileid: "48089422"
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

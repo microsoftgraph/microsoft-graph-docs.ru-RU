@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 69429b760dd85faa79dfd9f2499321410018f94a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 55e0e8a536d73397349564b7616140bb4c0116f4
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024306"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696260"
 ---
 # <a name="deliveryoptimizationbandwidth-resource-type"></a>Тип ресурса Деливерйоптимизатионбандвидс
 
@@ -26,7 +26,7 @@ ms.locfileid: "48024306"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,7 +41,6 @@ ms.locfileid: "48024306"
   "@odata.type": "#microsoft.graph.deliveryOptimizationBandwidth"
 }
 ```
-
 
 
 

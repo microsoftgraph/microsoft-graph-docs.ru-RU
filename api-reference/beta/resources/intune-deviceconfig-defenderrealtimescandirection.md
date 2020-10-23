@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 93a9bcd2d76008f1113c755e904e1141003ee553
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1fe80eb0df800cb0439497a6603448e942c8dc27
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024315"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696330"
 ---
 # <a name="defenderrealtimescandirection-enum-type"></a>тип перечисления Дефендерреалтимескандиректион
 
@@ -26,9 +26,8 @@ ms.locfileid: "48024315"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |монитораллфилес|нуль|0 (по умолчанию) — мониторинг всех файлов (с двунаправленным письмом)|
-|мониторинкомингфилесонли|1 |Отслеживайте только входящие файлы.|
-|монитораутгоингфилесонли|2 |Отслеживайте только исходящие файлы.|
-
+|мониторинкомингфилесонли|1,1|Отслеживайте только входящие файлы.|
+|монитораутгоингфилесонли|2|Отслеживайте только исходящие файлы.|
 
 
 

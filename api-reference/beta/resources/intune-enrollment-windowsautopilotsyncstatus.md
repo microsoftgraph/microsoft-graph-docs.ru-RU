@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3a98de1a17a5d0928cb506bdc54a33ec4393b10a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 61a9d2522a35cc4352c17f99e7126b541e842f2e
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031566"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48694944"
 ---
 # <a name="windowsautopilotsyncstatus-enum-type"></a>тип перечисления Виндовсаутопилотсинкстатус
 
@@ -26,10 +26,9 @@ ms.locfileid: "48031566"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестное состояние синхронизации|
-|inProgress|1 |Выполняется синхронизация|
-|готовы|2 |Синхронизация завершена.|
+|inProgress|1,1|Выполняется синхронизация|
+|готовы|2|Синхронизация завершена.|
 |сбоев|4|Ошибка синхронизации.|
-
 
 
 

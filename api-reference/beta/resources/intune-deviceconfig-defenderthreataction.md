@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3d93ed616a73c69467a1a77cb27e6fb27a7ea553
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bd71ee742ba7d7b5a98c5f3bbf90496bb52392be
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024299"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48696267"
 ---
 # <a name="defenderthreataction-enum-type"></a>тип перечисления Дефендерсреатактион
 
@@ -26,13 +26,12 @@ ms.locfileid: "48024299"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |девицедефаулт|нуль|Применение действия на основе определения обновления.|
-|чистить|1 |Очистите обнаруженную угрозу.|
-|папку|2 |Карантин обнаруженной угрозы.|
+|чистить|1,1|Очистите обнаруженную угрозу.|
+|папку|2|Карантин обнаруженной угрозы.|
 |удалить|4|Удаление обнаруженной угрозы.|
 |разрешить|4 |Разрешить обнаруженную угрозу.|
 |UserDefined типа|5 |Разрешить пользователю определять действие, выполняемое с обнаруженной угрозой.|
 |блок|6 |Блокировка обнаруженной угрозы.|
-
 
 
 
