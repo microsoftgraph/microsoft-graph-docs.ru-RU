@@ -179,8 +179,14 @@ items:
         expanded: true
         items:
           - name: Облачная печать (предварительная версия)
-            href: universal-print-concept-overview.md
-            displayName: Universal Print
+            expanded: true
+            items:
+              - name: Обзор
+                href: universal-print-concept-overview.md
+                displayName: Universal Print
+              - name: Добавление данных в сеанс отправки
+                href: upload-data-to-upload-session.md
+                displayName: Universal Print Job Submission
           - name: Корпоративное управление
             href: intune-concept-overview.md
             displayName: Intune
