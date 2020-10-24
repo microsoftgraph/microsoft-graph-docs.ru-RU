@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 58679d53800ef449242594b76dec2ad623a6831f
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 22b3884dff4f2d3b7a69b80f82bab0afa9e2d6c3
+ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460913"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48742085"
 ---
 # <a name="get-onlinemeeting"></a>Получение Онлинемитинг
 
@@ -26,8 +26,8 @@ ms.locfileid: "48460913"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)           |
 |:---------------------------------------|:------------------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается.                                        |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                        |
+| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                                        |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                        |
 | Приложение                            | OnlineMeetings.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -154,7 +154,13 @@ Content-Length: 1574
   },
   "startDateTime": "2018-05-30T00:30:00Z",
   "subject": "Test Meeting.",
-  "videoTeleconferenceId": "123456789"
+  "videoTeleconferenceId": "123456789",
+  "lobbyBypassSettings": {
+    "scope": "everyone",
+    "isDialInBypassEnabled": true
+  },
+  "isEntryExitAnnounced": true,
+  "allowedPresenters": "everyone"
 }
 ```
 

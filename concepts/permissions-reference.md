@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 415b619692eb28329e66758f749597822a336ea7
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 9b0fd92958573fe067d3030273be1a93542054c1
+ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635581"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48742183"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -919,6 +919,43 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 * Считывание всех рискованных пользователей и свойств в клиенте (`GET /beta/riskyUsers`)
 * Считывание всех рискованных пользователей со средним совокупным уровнем риска (`GET /beta/riskyUsers?$filter=risk/riskLevelAggregated eq microsoft.graph.riskLevel'medium'`)
 * Считывание сведений о риске для отдельного пользователя (`GET /beta/riskyUsers/$filter=id eq ‘{userObjectId}’`)
+
+Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
+
+---
+
+## <a name="identity-user-flow-permissions"></a>Разрешения потока пользователей с удостоверениями
+
+#### <a name="delegated-permissions"></a>Делегированные разрешения
+
+|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _IdentityUserFlow.Read.All_ |   Чтение всех потоков пользователей с удостоверениями в клиенте  | Позволяет приложению читать потоки пользователей в организации. | Да | Нет |
+| _IdentityUserFlow.ReadWrite.All_ |   Чтение и запись всех потоков пользователей с удостоверениями в клиенте.    | Позволяет приложению читать и записывать потоки пользователей в организации. | Да | Нет |
+
+#### <a name="application-permissions"></a>Разрешения приложений
+
+|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _IdentityUserFlow.Read.All_ |   Чтение всех потоков пользователей с удостоверениями в клиенте  | Позволяет приложению читать потоки пользователей в организации. | Да | Нет |
+| _IdentityUserFlow.ReadWrite.All_ |   Чтение и запись всех потоков пользователей с удостоверениями в клиенте.    | Позволяет приложению читать и записывать потоки пользователей в организации. | Да | Нет |
+
+### <a name="remarks"></a>Примечания
+
+Разрешения _IdentityUserFlow.Read.All_ и _IdentityUserFlow.ReadWrite.ALL_ действительны только для рабочих и учебных учетных записей. Чтобы приложение с делегированными разрешениями могло читать и записывать потоки пользователей, вошедший пользователь должен быть участником одной из следующих ролей администратора: "Глобальный администратор" или "Администратор потоков пользователей с внешним идентификатором". Дополнительные сведения о ролях администратора см. в статье [Назначение ролей администратора в Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles).
+
+### <a name="example-usage"></a>Примеры использования
+
+#### <a name="delegated-and-application"></a>Разрешения приложения и делегированные разрешения
+
+Следующие сценарии поддерживаются как для разрешений приложения, так и для делегированных разрешений:
+
+* _IdentityUserFlow.Read.All_: чтение всех потоков пользователей в клиенте Azure AD B2C (`GET beta/identity/b2cUserFlows`)
+* _IdentityUserFlow.Read.All_: чтение всех потоков пользователей в клиенте Azure Active Directory (Azure AD) (`GET beta/identity/b2xUserFlows`)
+* _IdentityUserFlow.ReadWrite.All_: создание потока пользователей в клиенте Azure AD B2C (`POST beta/identity/b2cUserFlows`)
+* _IdentityUserFlow.ReadWrite.All_: создание потока пользователей в клиенте Azure Active Directory (Azure AD) (`POST beta/identity/b2xUserflows`)
+* _IdentitytUserFlow.ReadWrite.All_: добавление поставщика удостоверений в поток пользователей Azure AD B2C (`PATCH beta/identity/b2cUserFlows/{id}/identityProviders/$ref`)
+* _IdentityUserFlow.ReadWrite.All_: удаление поставщика удостоверений из потока пользователей Azure AD B2C (`DELETE beta/identity/b2cUserFlows/{id}/identityProviders/{id}`)
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 

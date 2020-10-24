@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: resourcePageType
-ms.openlocfilehash: 3efd8a90e1ca42193a858a37465a49bc17fd164a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a642532579d127fdeb48b4c69524975b293ff959
+ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48037677"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48742001"
 ---
 # <a name="meetingparticipantinfo-resource-type"></a>Тип ресурса МитингпартиЦипантинфо
 
@@ -20,10 +20,19 @@ ms.locfileid: "48037677"
 
 ## <a name="properties"></a>Свойства
 
-| Свойство       | Тип                          | Описание                              |
-|:---------------|:------------------------------|:-----------------------------------------|
-| хищения       | [identitySet](identityset.md) | Сведения об удостоверении участника. |
-| Основное            | String                        | Имя участника пользователя.  |
+| Свойство | Тип                          | Описание                                                                         |
+| :------- | :---------------------------- | :---------------------------------------------------------------------------------- |
+| хищения | [identitySet](identityset.md) | Сведения об удостоверении участника.                                            |
+| Основное      | String                        | Имя участника пользователя.                                             |
+| role     | онлинемитингроле             | Указывает роль участника в собрании.  Возможные значения перечислены в следующей таблице. |
+
+### <a name="onlinemeetingrole-values"></a>значения Онлинемитингроле
+
+| Значение              | Описание                     |
+| ------------------ | ------------------------------- |
+| attendee           | Участник является участником. |
+| докладчика          | Участник является выступающим. |
+| unknownFutureValue | Неизвестное будущее значение.           |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -39,7 +48,8 @@ ms.locfileid: "48037677"
 ```json
 {
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
-  "upn": "String"
+  "upn": "String",
+  "role": "String"
 }
 ```
 
