@@ -40,8 +40,8 @@ items:
             href: /graph/webhooks?context=graph/api/1.0
           - name: Учебник
             href: /learn/modules/msgraph-changenotifications-trackchanges
-          - name: Отсутствие уведомлений в Outlook (предварительная версия)
-            href: /graph/webhooks-outlook-authz?context=graph/api/1.0
+          - name: Пропущенные уведомления об изменении
+            href: /graph/webhooks-lifecycle
           - name: Уведомления с данными ресурсов
             href: /graph/webhooks-with-resource-data?context=graph/api/1.0
       - name: Отслеживание изменений
@@ -185,7 +185,7 @@ items:
   - name: Справочник по версии 1.0
     expanded: true
     items:
-      - name: Обзор
+      - name: Общие сведения
         href: overview.md
       - name: Пользователи
         items:

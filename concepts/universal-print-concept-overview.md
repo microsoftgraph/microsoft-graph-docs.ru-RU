@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f70c9cb6914c68d40a17418d35ff00305095b9c8
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: f9705c62b338da024bd61ce1efcd22319b908189
+ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288821"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48735990"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>Обзор API облачной среды универсальной печати
 
@@ -27,12 +27,15 @@ ms.locfileid: "48288821"
 ### <a name="print-documents-from-web-and-mobile-applications"></a>Печать документов из веб-приложений и мобильных приложений
 
 Благодаря перемещению инфраструктуры печати в облако печатать документы можно непосредственно из веб-приложений и мобильных приложений.
+- Пользователи могут отправлять задания печати в printerShare.
+- Кроме того, администраторы принтера могут отправлять задания печати на принтер для выполнения предварительного тестирования, прежде чем предоставить организации общий доступ к принтеру.
 
-Чтобы приступить к работе с API универсальной печати, выполните указанные ниже действия.
+Выполните указанные ниже действия, чтобы отправить задания печати в printerShare.
 
-1. [Создайте задание печати](/graph/api/printer-post-jobs?view=graph-rest-beta) и сохраните идентификатор полученного документа.
-2. [Отправьте данные документа](/graph/api/printdocument-uploaddata?view=graph-rest-beta) в документ.
-3. [Запустите задание печати](/graph/api/printjob-startprintjob?view=graph-rest-beta).
+1. [Создайте задание печати](/graph/api/printershare-post-jobs?view=graph-rest-beta) и сохраните идентификатор полученного документа.
+2. [Создайте uploadSession](/graph/api/printdocument-createuploadsession?view=graph-rest-beta) для документа. 
+3. [Отправьте байты в созданный сеанс отправки](/upload-data-to-upload-session).
+4. [Запустите задание печати](/graph/api/printjob-start?view=graph-rest-beta).
 
 ### <a name="manage-printers"></a>Управление принтерами
 
