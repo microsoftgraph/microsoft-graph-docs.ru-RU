@@ -40,8 +40,8 @@ items:
             href: /graph/webhooks?context=graph/api/beta
           - name: Учебник
             href: /learn/modules/msgraph-changenotifications-trackchanges
-          - name: Отсутствие уведомлений в Outlook (предварительная версия)
-            href: /graph/webhooks-outlook-authz?context=graph/api/beta
+          - name: Пропущенные уведомления об изменении
+            href: /graph/webhooks-lifecycle
           - name: Уведомления с данными ресурсов
             href: /graph/webhooks-with-resource-data?context=graph/api/beta
           - name: Получение уведомлений разными способами (предварительная версия)
@@ -1402,7 +1402,7 @@ items:
                 href: api/onlinemeeting-update.md
               - name: Удаление
                 href: api/onlinemeeting-delete.md
-          - name: Присутствие (предварительная версия)
+          - name: Присутствие (Предварительная версия)
             href: resources/presence.md
             items:
               - name: Получение сведений о присутствии
@@ -10503,6 +10503,20 @@ items:
                         href: api/b2xidentityuserflow-post-identityproviders.md
                       - name: Удаление поставщика удостоверений
                         href: api/b2xidentityuserflow-delete-identityproviders.md
+                  - name: Атрибуты пользовательского процесса
+                    items:
+                      - name: Атрибут Flow Flow
+                        href: resources/identityuserflowattribute.md
+                      - name: Список
+                        href: api/identityuserflowattribute-list.md
+                      - name: Создание
+                        href: api/identityuserflowattribute-post.md
+                      - name: Получение
+                        href: api/identityuserflowattribute-get.md
+                      - name: Обновление
+                        href: api/identityuserflowattribute-update.md
+                      - name: Удаление
+                        href: api/identityuserflowattribute-delete.md
           - name: Управление
             items:
               - name: Проверки доступа
