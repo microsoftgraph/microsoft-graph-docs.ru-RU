@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 8ed19246dcc7885c9921919724beb5e76ed3b37e
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 69db1a4d65803c0405bc52548bb111619744a5a1
+ms.sourcegitcommit: 3cd8584827fef6751d40979aa5f950f3c46ff27d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289045"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48755710"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -77,27 +77,27 @@ GET /me/calendars/{id}/events
 В настоящее время календари ICS поддерживаются частично:
 
 * Вы можете добавить календарь ICS в почтовый ящик пользователя через интерфейс пользователя, но не через API Microsoft Graph.
-* [Перечисление календарей пользователя](/graph/api/user-list-calendars?view=graph-rest-1.0) позволяет получить свойства **name**, **color** и **id** всех [календарей](/graph/api/resources/calendar?view=graph-rest-1.0) в группе календарей пользователя по умолчанию или указанной группе календарей, в том числе календарей ICS. URL-адрес ICS невозможно хранить и открывать в ресурсе calendar.
-* Вы также можете [отобразить события](/graph/api/calendar-list-events?view=graph-rest-1.0) календаря ICS.
+* [Перечисление календарей пользователя](/graph/api/user-list-calendars) позволяет получить свойства **name** , **color** и **id** всех [календарей](/graph/api/resources/calendar) в группе календарей пользователя по умолчанию или указанной группе календарей, в том числе календарей ICS. URL-адрес ICS невозможно хранить и открывать в ресурсе calendar.
+* Вы также можете [отобразить события](/graph/api/calendar-list-events) календаря ICS.
 
 ### <a name="attaching-large-files-to-events"></a>Прикрепление больших файлов к событиям
-Приложение с делегированными разрешениями возвращает `HTTP 403 Forbidden` при попытке [присоединить большие файлы](outlook-large-attachments.md) к сообщению Outlook или событию, которое находится в общем или делегированном почтовом ящике. С делегированными разрешениями [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) завершается успешно, только если сообщение или событие находятся в почтовом ящике вошедшего в систему пользователя.
+Приложение с делегированными разрешениями возвращает `HTTP 403 Forbidden` при попытке [присоединить большие файлы](outlook-large-attachments.md) к сообщению Outlook или событию, которое находится в общем или делегированном почтовом ящике. С делегированными разрешениями [createUploadSession](/graph/api/attachment-createuploadsession) завершается успешно, только если сообщение или событие находятся в почтовом ящике вошедшего в систему пользователя.
 
 ### <a name="onlinemeetingurl-property-support-for-microsoft-teams"></a>Поддержка свойства onlineMeetingUrl для Microsoft Teams
 
-В настоящее время свойство **onlineMeetingUrl** ресурса [event](/graph/api/resources/event?view=graph-rest-1.0) для собрания Skype означает URL-адрес для собрания по сети. Однако для ресурса event собрания в Microsoft Teams задано значение NULL.
+В настоящее время свойство **onlineMeetingUrl** ресурса [event](/graph/api/resources/event) для собрания Skype означает URL-адрес для собрания по сети. Однако для ресурса event собрания в Microsoft Teams задано значение NULL.
 
-В бета-версии предлагается обходное решение, позволяющее использовать свойство **onlineMeetingProvider** ресурса [event](/graph/api/resources/event?view=graph-rest-beta) с целью убедиться, что поставщиком является Microsoft Teams. С помощью свойства **onlineMeeting** ресурса **event** вы можете получить доступ к объекту **joinUrl**.
+В бета-версии предлагается обходное решение, позволяющее использовать свойство **onlineMeetingProvider** ресурса [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) с целью убедиться, что поставщиком является Microsoft Teams. С помощью свойства **onlineMeeting** ресурса **event** вы можете получить доступ к объекту **joinUrl** .
 
 ## <a name="change-notifications"></a>Уведомления об изменениях
 
 ### <a name="additional-notifications-for-users"></a>Дополнительные уведомления для пользователей
 
-[Подписки](/graph/api/resources/subscription) на изменения для **пользователя** с **changeType**, для которого установлено значение **обновлено**, также будут получать уведомления о **changeType**: **обновлено** при создании пользователя и обратимом удалении пользователя.
+[Подписки](/graph/api/resources/subscription) на изменения для **пользователя** с **changeType** , для которого установлено значение **обновлено** , также будут получать уведомления о **changeType** : **обновлено** при создании пользователя и обратимом удалении пользователя.
 
 ### <a name="additional-notifications-for-groups"></a>Дополнительные уведомления для групп
 
-[Подписки](/graph/api/resources/subscription) на изменения для **группы** с **changeType**, для которого установлено значение **обновлено**, также будут получать уведомления о **changeType**: **обновлено** при создании группы и обратимом удалении группы.
+[Подписки](/graph/api/resources/subscription) на изменения для **группы** с **changeType** , для которого установлено значение **обновлено** , также будут получать уведомления о **changeType** : **обновлено** при создании группы и обратимом удалении группы.
 
 ## <a name="cloud-communications"></a>Облачные коммуникации 
 
@@ -143,7 +143,7 @@ GET /me/calendars/{id}/events
 
 В версии `/v1.0` запрос `GET /me/contactFolders` не включает папку контактов пользователя по умолчанию.
 
-Эта ошибка будет исправлена. Чтобы получить идентификатор папки контактов по умолчанию, вы можете использовать следующий запрос на [отображение контактов](/graph/api/user-list-contacts?view=graph-rest-1.0) и свойство **parentFolderId**:
+Эта ошибка будет исправлена. Чтобы получить идентификатор папки контактов по умолчанию, вы можете использовать следующий запрос на [отображение контактов](/graph/api/user-list-contacts) и свойство **parentFolderId** :
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
@@ -151,29 +151,29 @@ GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
 
 В указанном выше запросе:
 
-1. `/me/contacts?$top=1` возвращает свойства [контакта](/graph/api/resources/contact?view=graph-rest-1.0) в папке контактов по умолчанию.
+1. `/me/contacts?$top=1` возвращает свойства [контакта](/graph/api/resources/contact) в папке контактов по умолчанию.
 2. При добавлении `&$select=parentFolderId` возвращается только свойство контакта **parentFolderId** — идентификатор папки контактов по умолчанию.
 
 
 ### <a name="accessing-contacts-via-a-contact-folder-in-beta"></a>Доступ к контактам через папку контактов в бета-версии
 
-В настоящее время в версии `/beta` существует проблема, из-за которой нельзя получить доступ к ресурсу [contact](/graph/api/resources/contact?view=graph-rest-beta), указав его родительскую папку в URL-адресе запроса REST, как показано в 2 приведенных ниже сценариях.
+В настоящее время в версии `/beta` существует проблема, из-за которой нельзя получить доступ к ресурсу [contact](/graph/api/resources/contact?view=graph-rest-beta&preserve-view=true), указав его родительскую папку в URL-адресе запроса REST, как показано в 2 приведенных ниже сценариях.
 
-* Доступ к контакту из папки верхнего уровня [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-beta).
+* Доступ к контакту из папки верхнего уровня [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-beta&preserve-view=true).
 
 ```http
 GET /me/contactfolders/{id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
 
-* Доступ к контакту в дочерней папке папки **contactFolder**.  В приведенном ниже примере показан один уровень вложения, но для хранения контакта допускается несколько.
+* Доступ к контакту в дочерней папке папки **contactFolder** .  В приведенном ниже примере показан один уровень вложения, но для хранения контакта допускается несколько.
 
 ```http
 GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 
-Кроме того, вы можете просто [получить](/graph/api/contact-get?view=graph-rest-beta) контакт по его идентификатору, как показано ниже, так как конечная точка /contacts для запроса GET в версии `/beta` применяется ко всем контактам в почтовом ящике пользователя:
+Кроме того, вы можете просто [получить](/graph/api/contact-get?view=graph-rest-beta&preserve-view=true) контакт по его идентификатору, как показано ниже, так как конечная точка /contacts для запроса GET в версии `/beta` применяется ко всем контактам в почтовом ящике пользователя:
 
 ```http
 GET /me/contacts/{id}
@@ -193,20 +193,20 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### <a name="creating-a-resource-and-open-extension-at-the-same-time"></a>Одновременное создание ресурса и открытого расширения
 
-Невозможно указать открытое расширение при создании экземпляра **administrativeUnit**, **device**, **group**, **organization** или **user**. Сначала необходимо создать экземпляр, а затем указать данные открытого расширения в последующем запросе ``POST`` к этому экземпляру.
+Невозможно указать открытое расширение при создании экземпляра **administrativeUnit** , **device** , **group** , **organization** или **user** . Сначала необходимо создать экземпляр, а затем указать данные открытого расширения в последующем запросе ``POST`` к этому экземпляру.
 
 ### <a name="creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time"></a>Создание экземпляра ресурса с одновременным добавлением данных расширения схемы
 
-Вы не можете указать расширение схемы в той же операции, которая создает экземпляр **contact**, **event**, **message** или **post**.
+Вы не можете указать расширение схемы в той же операции, которая создает экземпляр **contact** , **event** , **message** или **post** .
 Сперва нужно создать экземпляр ресурса, а затем выполнить операцию `PATCH` для этого экземпляра, чтобы добавить расширение схемы и пользовательские данные.
 
 ### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>Для каждого экземпляра ресурса разрешено не более 100 значений свойства расширения схемы
 
-В настоящее время для каждого экземпляра таких ресурсов каталога, как **device**, **group** и **user**, можно установить не более 100 значений свойства расширения схемы.
+В настоящее время для каждого экземпляра таких ресурсов каталога, как **device** , **group** и **user** , можно установить не более 100 значений свойства расширения схемы.
 
 ### <a name="filtering-on-schema-extension-properties-not-supported-on-all-entity-types"></a>Фильтрация по свойствам расширения схемы поддерживается не для всех типов объектов
 
-Фильтрация по свойствам расширения схемы (с помощью выражения `$filter`) не поддерживается для типов объектов Outlook **contact**, **event**, **message** или **post**.
+Фильтрация по свойствам расширения схемы (с помощью выражения `$filter`) не поддерживается для типов объектов Outlook **contact** , **event** , **message** или **post** .
 
 ## <a name="files-onedrive"></a>Файлы (OneDrive)
 
@@ -216,7 +216,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### <a name="permissions-for-groups-and-microsoft-teams"></a>Разрешения для групп и Microsoft Teams
 
-Microsoft Graph предоставляет два разрешения ([*Group.Read.All*](permissions-reference.md#group-permissions) и [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)) для доступа к API для групп и Microsoft Teams.
+Microsoft Graph предоставляет два разрешения ( [*Group.Read.All*](permissions-reference.md#group-permissions) и [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)) для доступа к API для групп и Microsoft Teams.
 Эти разрешения должен предоставить администратор.
 В будущем мы планируем добавить новые разрешения для групп и команд, которые смогут предоставлять пользователи.
 
@@ -226,7 +226,7 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 * создание и удаление групп;
 * получение и обновление свойств групп, связанных с администрированием групп и управлением ими;
-* синхронизация, типы и [параметры каталогов](/graph/api/resources/directoryobject?view=graph-rest-1.0) групп;
+* синхронизация, типы и [параметры каталогов](/graph/api/resources/directoryobject) групп;
 * владельцы и члены групп.
 * Получение групповых бесед
 
@@ -238,7 +238,7 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 ### <a name="policy"></a>Политика
 
-С помощью Microsoft Graph можно создать группу Microsoft 365 и присвоить ей название в обход всех групповых политик Microsoft 365, настроенных через Outlook Web App.
+Использование Microsoft Graph для создания группы Microsoft 365 и присвоения ей имени в обход всех групповых политик Microsoft 365, настроенных через Outlook в Интернете.
 
 ### <a name="setting-the-allowexternalsenders-property"></a>Установка свойства allowExternalSenders
 
@@ -250,7 +250,7 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 ## <a name="identity-and-access--application-and-service-principal-apis"></a>Удостоверение и доступ | API приложений и субъектов-служб
 
-Скоро в объекты [application](/graph/api/resources/application?view=graph-rest-beta) и [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) будут внесены изменения. Ниже приведено краткое описание текущих ограничений и возможностей API, находящихся в разработке.
+Скоро в объекты [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) и [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) будут внесены изменения. Ниже приведено краткое описание текущих ограничений и возможностей API, находящихся в разработке.
 
 Текущие ограничения:
 
@@ -312,11 +312,11 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 ## <a name="mail-outlook"></a>Почта (Outlook)
 
 ### <a name="attaching-large-files-to-messages"></a>Вложение больших файлов в сообщения
-Приложение с делегированными разрешениями возвращает `HTTP 403 Forbidden` при попытке [присоединить большие файлы](outlook-large-attachments.md) к сообщению Outlook или событию, которое находится в общем или делегированном почтовом ящике. С делегированными разрешениями [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) завершается успешно, только если сообщение или событие находятся в почтовом ящике вошедшего в систему пользователя.
+Приложение с делегированными разрешениями возвращает `HTTP 403 Forbidden` при попытке [присоединить большие файлы](outlook-large-attachments.md) к сообщению Outlook или событию, которое находится в общем или делегированном почтовом ящике. С делегированными разрешениями [createUploadSession](/graph/api/attachment-createuploadsession) завершается успешно, только если сообщение или событие находятся в почтовом ящике вошедшего в систему пользователя.
 
 ### <a name="the-comment-parameter-for-creating-a-draft"></a>Параметр comment для создания черновика
 
-Параметр **comment** для создания ответа или черновика ([createReply](/graph/api/message-createreply?view=graph-rest-1.0), [createReplyAll](/graph/api/message-createreplyall?view=graph-rest-1.0), [createForward](/graph/api/message-createforward?view=graph-rest-1.0)) не включается в текст полученного черновика сообщения.
+Параметр **comment** для создания ответа или черновика ( [createReply](/graph/api/message-createreply), [createReplyAll](/graph/api/message-createreplyall), [createForward](/graph/api/message-createforward)) не включается в текст полученного черновика сообщения.
 
 ### <a name="get-messages-returns-chats-in-microsoft-teams"></a>При использовании запроса GET для сообщений возвращаются также чаты в Microsoft Teams
 
@@ -326,16 +326,16 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 ### <a name="get-teams-is-not-supported"></a>GET / команды не поддерживается
 
-Чтобы получить список команд, см. [список всех команд](teams-list-all-teams.md) и [список ваших команд](/graph/api/user-list-joinedteams?view=graph-rest-1.0).
+Чтобы получить список команд, см. [список всех команд](teams-list-all-teams.md) и [список ваших команд](/graph/api/user-list-joinedteams).
 
 ### <a name="post-teams-is-only-available-in-beta"></a>POST / команды доступны только в бета-версии
-Чтобы создать команды в v1.0, см. [создание команды](/graph/api/team-put-teams?view=graph-rest-1.0).
+Чтобы создать команды в v1.0, см. [создание команды](/graph/api/team-put-teams).
 
 ### <a name="missing-teams-in-list-all-teams"></a>Отсутствующие команды в списке всех команд
 
 Некоторые команды, созданные в прошлом, но не использовавшиеся в последнее время пользователем Microsoft Teams, не указываются при использовании метода [перечисления всех команд](teams-list-all-teams.md).
 Новые команды будут перечислены.
-У некоторых старых команд нет свойства **resourceProvisioningOptions**, содержащего значение "Team", которое присваивается недавно созданным командам и командам, посещаемым в Microsoft Teams.
+У некоторых старых команд нет свойства **resourceProvisioningOptions** , содержащего значение "Team", которое присваивается недавно созданным командам и командам, посещаемым в Microsoft Teams.
 В будущем свойство **resourceProvisioningOptions** будет присваиваться существующим командам, не открывавшимся в Microsoft Teams.
 
 ## <a name="users"></a>Пользователи
@@ -346,7 +346,7 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 ### <a name="photo-restrictions"></a>Ограничения для фотографий
 
-Просмотреть и обновить фотографию профиля пользователя можно, только если у пользователя есть почтовый ящик. Кроме того, все фотографии, которые *могли* быть сохранены ранее с помощью свойства **thumbnailPhoto** (с помощью Azure AD Graph или службы синхронизации AD Connect), больше не доступны через свойство **photo** Microsoft Graph ресурса [user](/graph/api/resources/user?view=graph-rest-1.0).
+Просмотреть и обновить фотографию профиля пользователя можно, только если у пользователя есть почтовый ящик. Кроме того, все фотографии, которые *могли* быть сохранены ранее с помощью свойства **thumbnailPhoto** (с помощью Azure AD Graph или службы синхронизации AD Connect), больше не доступны через свойство **photo** Microsoft Graph ресурса [user](/graph/api/resources/user).
 В этом случае, если фотографию не удастся просмотреть или обновить, возникнет следующая ошибка:
 
 ```javascript
@@ -364,11 +364,11 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 ### <a name="revoke-sign-in-sessions-returns-wrong-http-code"></a>Отзыв сеансов входа возвращает неправильный код HTTP
 
-[user: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) должен возвращать ответ `204 No content` в случае успешного отзыва и код ошибки HTTP (4xx или 5xx), если запрос не выполнен.    Однако из-за проблемы со службой этот API возвращает `200 OK` и логический параметр, который всегда правильный.  Пока проблема не будет устранена, разработчикам рекомендуется просто интерпретировать код возврата 2xx как успешное выполнение запроса к этому API.
+[user: revokeSignInSessions API](/graph/api/user-revokesigninsessions) должен возвращать ответ `204 No content` в случае успешного отзыва и код ошибки HTTP (4xx или 5xx), если запрос не выполнен.    Однако из-за проблемы со службой этот API возвращает `200 OK` и логический параметр, который всегда правильный.  Пока проблема не будет устранена, разработчикам рекомендуется просто интерпретировать код возврата 2xx как успешное выполнение запроса к этому API.
 
 ### <a name="incomplete-objects-when-using-getbyids-request"></a>Неполные объекты при использовании запроса getByIds
 
-При запросе объектов с помощью [получения объектов каталога из списка идентификаторов](/graph/api/directoryobject-getbyids?view=graph-rest-1.0) должны возвращаться полные объекты. Однако в настоящее время объекты [user](/graph/api/resources/user?view=graph-rest-1.0) в конечной точке версии 1.0 возвращаются с ограниченным набором свойств. Временное решение: возврат более полных объектов [user](/graph/api/resources/user?view=graph-rest-1.0) обеспечивается при использовании операции в сочетании с параметром запроса `$select`. Это поведение не соответствует спецификациям OData. Так как это поведение может быть изменено в будущем, используйте это временное решение только при указании в параметре `$select=` всех нужных свойств и только если допускается внесение существенных изменений в это временное решение.
+При запросе объектов с помощью [получения объектов каталога из списка идентификаторов](/graph/api/directoryobject-getbyids) должны возвращаться полные объекты. Однако в настоящее время объекты [user](/graph/api/resources/user) в конечной точке версии 1.0 возвращаются с ограниченным набором свойств. Временное решение: возврат более полных объектов [user](/graph/api/resources/user) обеспечивается при использовании операции в сочетании с параметром запроса `$select`. Это поведение не соответствует спецификациям OData. Так как это поведение может быть изменено в будущем, используйте это временное решение только при указании в параметре `$select=` всех нужных свойств и только если допускается внесение существенных изменений в это временное решение.
 
 ## <a name="query-parameter-limitations"></a>Ограничения параметров запроса
 

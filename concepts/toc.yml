@@ -445,8 +445,8 @@ items:
                 href: webhooks.md
               - name: Учебник
                 href: /learn/modules/msgraph-changenotifications-trackchanges
-              - name: Отсутствие уведомлений в Outlook (предварительная версия)
-                href: webhooks-outlook-authz.md
+              - name: Пропущенные уведомления об изменениях
+                href: webhooks-lifecycle.md
               - name: Уведомления с данными ресурсов
                 href: webhooks-with-resource-data.md
               - name: Получение уведомлений разными способами (предварительная версия)
