@@ -3,16 +3,16 @@ title: Использование пакетов SDK Microsoft Graph с бета
 description: Описание использования пакетов SDK Microsoft Graph с бета-версией API.
 localization_priority: Normal
 author: jasonjoh
-ms.openlocfilehash: 6a0444cdb30b2e07c4d93f683aaef2f5283c3846
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: fe0272ca46b4bdea1d36048296d1a702b9e1f469
+ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288968"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48771848"
 ---
 # <a name="use-the-microsoft-graph-sdks-with-the-beta-api"></a>Использование пакетов SDK Microsoft Graph с бета-версией API
 
-По умолчанию пакет SDK Microsoft Graph использует конечную точку Microsoft Graph [версии 1.0](/graph/api/overview?view=graph-rest-1.0) . Пакеты SDK можно использовать с конечной точкой [бета-версии](/graph/api/overview?view=graph-rest-beta) для непроизводственных приложений. Метод доступа к конечной точке бета-версии зависит от того, какой пакет SDK используется.
+Во многих пакетах SDK для Microsoft Graph по умолчанию используется конечная точка Microsoft Graph [версии 1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=false) . Пакеты SDK можно использовать с конечной точкой [бета-версии](/graph/api/overview?view=graph-rest-beta&preserve-view=true) для непроизводственных приложений. Метод доступа к конечной точке бета-версии зависит от того, какой пакет SDK используется.
 
 [!INCLUDE [beta-disclaimer](../../api-reference/includes/beta-disclaimer.md)]
 
@@ -27,7 +27,7 @@ using Microsoft.Graph.Beta;
 GraphServiceClient graphClient = new GraphServiceClient(...);
 ```
 
-## <a name="typescript"></a>[TypeScript](#tab/typeScript)
+# <a name="typescript"></a>[TypeScript](#tab/typeScript)
 
 [Клиентская библиотека JavaScript Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-javascript) может вызывать бета-версию API одним из двух способов.
 
@@ -76,6 +76,33 @@ NSString* meUrlString = [NSString stringWithFormat:@"%@/me", "https://graph.micr
 NSURL* meUrl = [[NSURL alloc] initWithString:meUrlString];
 
 NSMutableURLRequest* meRequest = [[NSMutableURLRequest alloc] initWithURL:meUrl];
+```
+
+# <a name="php"></a>[PHP](#tab/PHP)
+
+[Пакет SDK Microsoft Graph для PHP](https://github.com/microsoftgraph/msgraph-sdk-php) поддерживает конечную точку и модели бета-версии. Конечная точка бета-тестирования задается с помощью `setApiVersion` метода. Вам потребуется устранить неоднозначность моделей v 1.0 и Beta путем предоставления псевдонима.
+
+```php
+use Microsoft\Graph\Graph;
+use Beta\Microsoft\Graph\Model as BetaModel;
+
+class UseBeta
+{
+    public function run()
+    {
+        $accessToken = 'xxx';
+
+        $graph = new Graph();
+        $graph->setAccessToken($accessToken);
+
+        $user = $graph->setApiVersion("beta")
+                      ->createRequest("GET", "/me")
+                      ->setReturnType(BetaModel\User::class)
+                      ->execute();
+
+        echo "Hello, I am $user->getGivenName() ";
+    }
+}
 ```
 
 ---

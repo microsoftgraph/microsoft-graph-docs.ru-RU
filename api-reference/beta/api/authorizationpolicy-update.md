@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: aef29fa2ca32bd5cbc850695d1584b16852fbaab
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: ed00da66613496c04ecee97b916a22f71688a72f
+ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457413"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48771806"
 ---
 # <a name="update-authorizationpolicy"></a>Обновление Аусоризатионполици
 
@@ -26,9 +26,9 @@ ms.locfileid: "48457413"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.Authorization|
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy.ReadWrite.Authorization|
+| Делегированное (рабочая или учебная учетная запись)     | Policy.ReadWrite.Authorization|
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | Policy.ReadWrite.Authorization|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -83,9 +83,8 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-  "guestUserRole": "2af84b1e-32c8-42b7-82bc-daa82404023b"
+   "guestUserRole":"2af84b1e-32c8-42b7-82bc-daa82404023b"
 }
-
 ```
 
 #### <a name="response"></a>Отклик
@@ -119,9 +118,10 @@ HTTP/1.1 204 No Content
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-  "enabledPreviewFeatures": ["assignGroupsToRoles"]
+   "enabledPreviewFeatures":[
+      "assignGroupsToRoles"
+   ]
 }
-
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-preview-csharp-snippets.md)]
@@ -167,9 +167,8 @@ HTTP/1.1 204 No Content
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-  "blockMsolPowerShell": true
+   "blockMsolPowerShell":true
 }
-
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-blockmsolpowershell-csharp-snippets.md)]
@@ -216,12 +215,10 @@ HTTP/1.1 204 No Content
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-    "defaultUserRolePermissions":
-    {
-      "allowedToCreateApps": false
-    }
+   "defaultUserRolePermissions":{
+      "allowedToCreateApps":false
+   }
 }
-
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-applications-csharp-snippets.md)]
@@ -268,9 +265,8 @@ HTTP/1.1 204 No Content
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-    "allowedToUseSSPR": true
+   "allowedToUseSSPR":true
 }
-
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-sspr-csharp-snippets.md)]
@@ -317,7 +313,9 @@ HTTP/1.1 204 No Content
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-    "permissionGrantPolicyIdsAssignedToDefaultUserRole": [ ]
+   "permissionGrantPolicyIdsAssignedToDefaultUserRole":[
+   
+   ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -366,9 +364,9 @@ HTTP/1.1 204 No Content
 PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
 
 {
-    "permissionGrantPolicyIdsAssignedToDefaultUserRole": [
-        "managePermissionGrantsForSelf.microsoft-user-default-low"
-    ]
+   "permissionGrantPolicyIdsAssignedToDefaultUserRole":[
+      "managePermissionGrantsForSelf.microsoft-user-default-low"
+   ]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

@@ -5,12 +5,12 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 2fc3e7066ee53af6864400bb221b9494246ec7b5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aae37d83bafb9c8ad59dcbce1de6b8875ee091dd
+ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48090024"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48771799"
 ---
 # <a name="get-iteminsightssettings"></a>Получение Итеминсигхтссеттингс
 
@@ -28,9 +28,9 @@ ms.locfileid: "48090024"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.Read, User.ReadWrite |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | User.Read, User.ReadWrite  |
+|Делегированное (рабочая или учебная учетная запись) | User.Read, User.ReadWrite |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Не поддерживается. |
 
 >**Примечание:** Для этой операции с делегированными разрешениями необходимо, чтобы вошедшего в систему пользователя была назначена роль глобального администратора.
 
