@@ -2,15 +2,15 @@
 title: Создание канала
 description: Создайте новый канал в команде Майкрософт, как указано в теле запроса.
 localization_priority: Normal
-author: clearab
+author: laujan
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 765cbee31f97ab20db34fb07052beaaa5f6e99c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 41d0e74ef3e08102a5fb670159d0f7e51085817d
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987087"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782827"
 ---
 # <a name="create-channel"></a>Создание канала
 
@@ -26,13 +26,13 @@ ms.locfileid: "47987087"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Channel. Create. Group *, Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL, сотрудничество. Migrate. ALL|
+|Делегированное (рабочая или учебная учетная запись) | Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Channel. Create. Group *, Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL, сотрудничество. Migrate. ALL|
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание** . Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
-> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
+> **Примечание** . Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -54,6 +54,11 @@ POST /teams/{id}/channels
 ## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [channel](../resources/channel.md) в тексте отклика.
+
+Если запрос завершается неудачно, этот метод возвращает `400 Bad Request` код отклика. Ниже приведены распространенные причины этого ответа.
+
+* **createdDateTime** задается в будущем.
+* **createdDateTime** указан правильно, но атрибут экземпляра **чаннелкреатионмоде** отсутствует или имеет недопустимое значение.
 
 ## <a name="examples"></a>Примеры
 
@@ -78,6 +83,7 @@ Content-type: application/json
   "membershipType": "standard"
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -94,7 +100,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример ответа.
+Ниже приводится пример отклика.
 
 > **Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -121,7 +127,6 @@ Content-length: 201
 
 В приведенном ниже примере показан запрос на создание закрытого канала и Добавление пользователя в качестве владельца группы.
 
-
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -147,6 +152,7 @@ Content-type: application/json
      ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-from-user-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -161,7 +167,8 @@ Content-type: application/json
 
 ---
 
-
+<!-- markdownlint-disable MD001 -->
+<!-- markdownlint-disable MD024 -->
 #### <a name="response"></a>Отклик
 
 Ниже приводится пример отклика.
@@ -189,6 +196,39 @@ Content-length: 201
 }
 ```
 
+### <a name="example-3-create-a-channel-in-migration-mode"></a>Пример 3: создание канала в режиме миграции
+
+#### <a name="request"></a>Запрос
+
+В приведенном ниже примере показано, как создать канал для импортированных сообщений.
+
+```http
+POST https://graph.microsoft.com/beta/teams/{id}/channels
+Content-Type: application/json
+
+{
+  "@microsoft.graph.channelCreationMode": "migration",
+  "displayName": "Architecture Discussion",
+  "description": "This channel is where we debate all future architecture plans",
+  "membershipType": "standard",
+  "createdDateTime": "2020-03-14T11:22:17.067Z"
+}
+```
+
+#### <a name="response"></a>Отклик
+
+```http
+HTTP/1.1 202 Accepted
+Location: /teams/{teamId}/channels/{channelId}/operations/{operationId}
+Content-Location: /teams/{teamId}/channels/{channelId}
+```
+
+## <a name="see-also"></a>См. также
+
+* [Выполнение переноса для канала](channel-completemigration.md)
+* [Импорт сообщений из сторонних платформ в Teams с помощью Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+* [Создание команды](team-post.md)
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -202,5 +242,3 @@ Content-length: 201
   ]
 }
 -->
-
-

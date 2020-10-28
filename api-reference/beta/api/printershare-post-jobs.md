@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: f991c2b4e50577f13144b7da178cd93308dec532
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cb737bd2826703fa29928ef0fbb5913d89428cbc
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705137"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782789"
 ---
 # <a name="create-printjob-for-a-printershare"></a>Создание printJob для Принтершаре
 
@@ -27,9 +27,9 @@ ms.locfileid: "48705137"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| PrintJob. Реадвритебасик, PrintJob. ReadWrite, PrintJob. Реадвритебасик. ALL, PrintJob. ReadWrite. ALL |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)| PrintJob. Реадвритебасик, PrintJob. ReadWrite, PrintJob. Реадвритебасик. ALL, PrintJob. ReadWrite. ALL |
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,12 +45,12 @@ POST print/shares/{id}/jobs
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [printJob](../resources/printjob.md) в формате JSON.
-Объект printJob должен содержать только **конфигурацию**. Все свойства **конфигурации** допускают значение null.
+Объект printJob должен содержать только **конфигурацию** . Все свойства **конфигурации** допускают значение null.
 Все остальные поля, включая задания и идентификаторы документов, задаются автоматически при создании ресурса.
 
 Теперь для универсальной печати поддерживается только один **printDocument** для каждого объекта **printJob** .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [printJob](../resources/printjob.md) и связанный с [printDocument](../resources/printDocument.md) в теле отклика. 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -99,6 +99,20 @@ Content-type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-printjob-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-printjob-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

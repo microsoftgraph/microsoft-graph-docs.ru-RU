@@ -3,12 +3,12 @@ title: Начало работы с пакетом SDK PowerShell для Microso
 description: Приступая к работе с пакетом SDK PowerShell для Microsoft Graph, используя его, выполните некоторые основные задачи.
 localization_priority: Normal
 author: jasonjoh
-ms.openlocfilehash: ab4a0c5a65dc752116d3622f71e024e039d90675
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: eeeaee7bf45e3b8d17f866425556102eef2c1cae
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193780"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782888"
 ---
 # <a name="get-started-with-the-microsoft-graph-powershell-sdk"></a>Начало работы с пакетом SDK PowerShell для Microsoft Graph
 
@@ -41,16 +41,16 @@ Select-MgProfile -Name "beta"
 
 ### <a name="sign-in"></a>Вход
 
-Используйте `Connect-Graph` команду для входа с использованием требуемых областей. Необходимо войти в учетную запись администратора, чтобы получить согласие на требуемые области.
+Используйте `Connect-MgGraph` команду для входа с использованием требуемых областей. Необходимо войти в учетную запись администратора, чтобы получить согласие на требуемые области.
 
 ```powershell
-Connect-Graph -Scopes "User.Read.All","Group.ReadWrite.All"
+Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 ```
 
 В командной строке предлагается перейти на веб-страницу, чтобы войти в систему с помощью кода устройства. После этого команда указывает на успешное выполнение с `Welcome To Microsoft Graph!` сообщением. Это необходимо сделать только один раз для каждого сеанса.
 
 > [!TIP]
-> Чтобы добавить дополнительные разрешения, повторите `Connect-Graph` команду с новыми областями разрешений.
+> Чтобы добавить дополнительные разрешения, повторите `Connect-MgGraph` команду с новыми областями разрешений.
 
 ## <a name="call-microsoft-graph"></a>Вызов Microsoft Graph
 

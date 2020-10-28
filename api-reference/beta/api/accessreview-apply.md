@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a5e050c1eed0af5ed73dc82848ba449135006bfc
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: f520402ce9d4b1b6effa11244ca32c9c88cb3a64
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48371221"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782853"
 ---
 # <a name="apply-accessreview"></a>Применение Акцессревиев
 
@@ -33,8 +33,8 @@ ms.locfileid: "48371221"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. ReadWrite. Membership, Акцессревиев. ReadWrite. ALL |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)     | Акцессревиев. ReadWrite. Membership, Акцессревиев. ReadWrite. ALL |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Приложение                            | AccessReview.ReadWrite.Membership |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -54,12 +54,8 @@ POST /accessReviews/{reviewId}/applyDecisions
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает данные в теле отклика.
 
-## <a name="see-also"></a>См. также
-
-- [Как выполнить проверку доступа](/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)
-
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -83,7 +79,7 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -106,3 +102,7 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+## <a name="see-also"></a>См. также
+
+- [Как выполнить проверку доступа](/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)
