@@ -5,12 +5,12 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 046c623f5f6e2eb66be063199141529ef50c2720
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bf5eff6f7a5308c6753b5c1adc62970bf619a600
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733198"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782906"
 ---
 # <a name="add-conversationmember"></a>Добавление Конверсатионмембер
 
@@ -24,9 +24,9 @@ ms.locfileid: "48733198"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированные (рабочая или учебная учетная запись)| Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Делегированное (рабочая или учебная учетная запись)| Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение| Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -59,6 +59,8 @@ POST /teams/{id}/channels/{id}/members
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_conversation_member"
@@ -74,6 +76,24 @@ content-length: 26
   "user@odata.bind": "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-conversation-member-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-conversation-member-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-conversation-member-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-conversation-member-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 
