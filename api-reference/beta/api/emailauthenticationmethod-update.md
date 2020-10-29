@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cc4fc3c7900482e4444465a406e7c8b4319bcf0f
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: afff423fef59bb06af7659bd5de2b553b76ddca5
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458139"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796509"
 ---
 # <a name="update-emailauthenticationmethod"></a>Обновление Емаилаусентикатионмесод
 Пространство имен: microsoft.graph
@@ -25,7 +25,7 @@ ms.locfileid: "48458139"
 |Тип разрешения|Разрешения, действующие на себя (от большинства до минимальных привилегий)|Разрешения, действующие на других (по крайней мере для самых привилегированных)|
 |:---|:---|:--|
 |Делегированные (рабочая или учебная учетная запись)|Не поддерживается.|Усераусентикатионмесод. ReadWrite. ALL
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|Не поддерживается.
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|Не поддерживается.
 |Для приложений|Не поддерживается.|Не поддерживается.
 
 Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима одна из следующих [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
@@ -42,7 +42,7 @@ ms.locfileid: "48458139"
 }
 -->
 ``` http
-PATCH /users/{id | userPrincipalName}/authentication/emailMethods/{id}
+PUT /users/{id | userPrincipalName}/authentication/emailMethods/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -77,7 +77,7 @@ PATCH /users/{id | userPrincipalName}/authentication/emailMethods/{id}
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/emailMethods/3ddfcfc8-9383-446f-83cc-3ab9be4be18f
+PUT https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/emailMethods/3ddfcfc8-9383-446f-83cc-3ab9be4be18f
 Content-Type: application/json
 
 {

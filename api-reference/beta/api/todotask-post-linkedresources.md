@@ -5,17 +5,17 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 56ad2b1f83475cc6b5af748c129f0cd84cdc07b0
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: e296600642b3aad7bbd895260da139e5dd1a37c7
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48313697"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796637"
 ---
 # <a name="create-linkedresource"></a>Создание Линкедресаурце
 Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта **линкедресаурце** .
+Создайте объект [линкедресаурце](../resources/linkedresource.md) для связи указанной [задачи](../resources/todotask.md) с элементом партнерского приложения. Например, вы можете связать задачу с элементом электронной почты в Outlook, спурред задачу, а также создать объект **линкедресаурце** для отслеживания его связи.
 
 Вы также можете создать объект **линкедресаурце** при [создании тодотаск](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples).
 
@@ -25,7 +25,7 @@ ms.locfileid: "48313697"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос

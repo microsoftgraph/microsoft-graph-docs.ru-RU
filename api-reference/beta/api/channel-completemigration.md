@@ -5,12 +5,12 @@ localization_priority: Normal
 author: laujan
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 894c8353b626b1f4cebe62bd00311533933df5a7
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 35991987816f65b7a52a80857b00621572fbb793
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48783044"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796551"
 ---
 # <a name="channel-completemigration"></a>канал: Комплетемигратион
 
@@ -18,7 +18,7 @@ ms.locfileid: "48783044"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Завершите процесс переноса сообщений, удалив `migration mode` из [канала](../resources/channel.md) в команде. `Migration mode` — Это специальное состояние, которое предотвращает выполнение определенных операций, таких как создание сообщений и добавление участников, в процессе переноса данных.
+Завершите процесс переноса сообщений, удалив `migration mode` из [канала](../resources/channel.md) в команде. `Migration mode` — Это специальное состояние, которое предотвращает некоторые операции, например отправку сообщений и добавление участников, в процессе переноса данных.
 
 После выполнения запроса **комплетемигратион** вы не можете импортировать в команду Дополнительные сообщения. Вы можете добавлять участников в команду после того, как запрос возвращает успешный ответ.
 

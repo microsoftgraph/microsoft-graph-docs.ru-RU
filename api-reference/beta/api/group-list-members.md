@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 9d3226201c82d2cc28b7d30d342deecac8acbbd6
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 2b0b08c838f12817133578fbe94459d7a0acebe1
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782839"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796609"
 ---
 # <a name="list-group-members"></a>Перечисление участников группы
 
@@ -28,9 +28,9 @@ ms.locfileid: "48782839"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All, User.Read.All, Group.Read.All, Directory.Read.All |
+| Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Directory.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | Group. Read. ALL, User. Read. ALL, Directory. Read. ALL |
+| Для приложений | Group.Read.All, Directory.Read.All |
 
 > **Примечание:** Чтобы получить список членов скрытой группы членства, требуется разрешение Member. Read. Hidden.
 

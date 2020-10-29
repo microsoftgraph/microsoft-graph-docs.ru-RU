@@ -5,12 +5,12 @@ localization_priority: Priority
 author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 50ba7c1c60e121760f26a26cdb090ef984c9f4b2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a82f04b4be1a6b7d02b751b9c63acf3439e45d7a
+ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051825"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48771771"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
@@ -32,9 +32,9 @@ ms.locfileid: "48051825"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Для ресурса **user**:<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
+|Делегированные (рабочая или учебная учетная запись) | Для ресурса **user** :<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />Для ресурса **group** :<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact** :<br />Contacts.Read, Contacts.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Разрешения приложений                        | Для ресурса **user**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
+|Разрешения приложений                        | Для ресурса **user** :<br/>User.Read.All, User.ReadWrite.All<br /><br />Для ресурса **group** :<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact** :<br />Contacts.Read, Contacts.ReadWrite |
 
 > **Примечание.** В настоящее время существует [известная проблема](/graph/known-issues#groups) с доступом к фотографиям группы с помощью разрешений для приложений.
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/v1.0/me/photo/$value
 ##### <a name="response"></a>Отклик
 Содержит двоичные данные запрошенной фотографии. Код HTTP-отклика: 200.
 
-### <a name="example-2-get-the-48x48-photo-for-the-signed-in-use"></a>Пример 2. Получение фотографии 48 x 48 для вошедшего пользователя
+### <a name="example-2-get-the-48x48-photo-for-the-signed-in-user"></a>Пример 2. Получение фотографии 48 x 48 для вошедшего пользователя
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "ignored"

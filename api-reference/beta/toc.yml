@@ -1,7 +1,7 @@
 name: Справочные материалы
 items:
   - name: Обзор Microsoft Graph
-    href: ./overview.md
+    href: /graph/overview
   - name: Получение маркеров аутентификации
     items:
       - name: Обзор
@@ -329,8 +329,9 @@ items:
                   - name: Обновление
                     href: api/iteminsightssettings-update.md
           - name: Почта
-            href: resources/message.md
             items:
+              - name: Сообщение
+                href: resources/message.md
               - name: Создание папки почты
                 href: api/user-post-mailfolders.md
               - name: Создание сообщения
@@ -352,8 +353,9 @@ items:
               - name: Отправка почты
                 href: api/user-sendmail.md
           - name: Примечания
-            href: resources/onenote.md
             items:
+              - name: Microsoft
+                href: resources/onenote.md
               - name: Создание записной книжки
                 href: api/onenote-post-notebooks.md
               - name: Список записных книжек
@@ -454,6 +456,18 @@ items:
                 href: api/user-upgrade-teamsappinstallation.md
               - name: Удаление приложения
                 href: api/user-delete-teamsappinstallation.md
+          - name: Задачи из списка дел
+            items:
+              - name: Задача
+                href: resources/todotask.md
+              - name: Создание задачи
+                href: api/todotasklist-post-tasks.md
+              - name: Создание списка задач
+                href: api/todo-post-lists.md
+              - name: Перечисление задач
+                href: api/todotasklist-list-tasks.md
+              - name: Список списков задач
+                href: api/todo-list-lists.md
           - name: Настройки пользователя
             items:
               - name: Настройки пользователя
@@ -12653,7 +12667,7 @@ items:
                 href: api/onenote-list-notebooks.md
               - name: Создание записной книжки
                 href: api/onenote-post-notebooks.md
-      - name: Задачи To-Do (предварительная версия)
+      - name: Задачи из списка дел
         displayName: Microsoft To Do
         items:
           - name: Обзор

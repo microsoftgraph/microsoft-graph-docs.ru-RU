@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: d7a8e738cf6a6bd3a5b4331bd1c6cfb467303cf3
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 308293442b000d372b5aebc0b175ebef566d90c9
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373974"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782979"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -78,7 +78,7 @@ POST /groups
 | Тип группы | Назначенное участие | Динамическое членство |
 |:--------------|:------------------------|:---------------|
 | Microsoft 365 (как единая группа)| `["Unified"]` | `["Unified","DynamicMembership"]`
-| Динамический | `[]` (_null_) | `["DynamicMembership"]`|
+| Динамический | `[]` ( _null_ ) | `["DynamicMembership"]`|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [group](../resources/group.md) в теле отклика. Отклик включает в себя только свойства по умолчанию для группы.
@@ -136,7 +136,7 @@ Content-length: 244
 
 Ниже приведен пример отклика.
 
->**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. В результате реального вызова возвращаются все свойства по умолчанию.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. В результате реального вызова возвращаются все свойства по умолчанию.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -183,10 +183,8 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "create_prepopulated_group"
 }-->
 ``` http
@@ -211,30 +209,12 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-prepopulated-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-prepopulated-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-prepopulated-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-prepopulated-group-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Отклик
 
 Ниже представлен пример успешного отклика. Он включает только свойства по умолчанию. Вы можете получить свойства навигации **owners** или **members** группы, чтобы проверить владельца или участников. 
 
->**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. В результате реального вызова возвращаются все свойства по умолчанию.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. В результате реального вызова возвращаются все свойства по умолчанию.
 
 <!-- {
   "blockType": "response",

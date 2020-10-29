@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса channel
 description: 'Канал — это коллекция объектов chatMessages в команде. '
-author: clearab
+author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 8b055a8a76a888fc5fc2e3f213b8be69f34f6413
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9d5f9f78ba70a6156c260ea679e6e1c081bec1dc
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48024445"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782958"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 
@@ -39,6 +39,7 @@ ms.locfileid: "48024445"
 |[Создание объекта chatMessage в канале](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | Отправка сообщения в канал. |
 |[Создание ответа на chatMessage в канале](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Ответ на сообщение в канале.|
 |[Получение папки с файлами](../api/driveitem-get.md)| [driveItem](driveitem.md) | Получение сведений о папке SharePoint, в которой хранятся файлы канала. |
+|[Завершение миграции](../api/channel-completemigration.md)|[channel](channel.md)| Удаление режима миграции из канала, после чего канал становится доступным для публикации и чтения сообщений пользователями.|
 
 ## <a name="properties"></a>Свойства
 
@@ -61,7 +62,7 @@ ms.locfileid: "48024445"
 |:-----------------------|:-------|:-------------------------|
 |@microsoft.graph.channelCreationMode|Строка|Указывает, что канал находится в состоянии миграции и в настоящее время используется для миграции. Принимает одно значение: `migration`.|
 
-> **Примечание**: `ChannelCreationMode` – перечисление, принимающее значение `migration`.
+> **Примечание** : `channelCreationMode` – перечисление, принимающее значение `migration`.
 
 Пример запроса POST см. в разделе [Запрос (создание канала в состоянии миграции)](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams#request-create-a-team-in-migration-state).
 
@@ -113,5 +114,3 @@ ms.locfileid: "48024445"
   "suppressions": []
 }
 -->
-
-

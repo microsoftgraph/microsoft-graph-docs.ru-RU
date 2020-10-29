@@ -5,12 +5,12 @@ localization_priority: Priority
 author: namkedia
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fc40a64c1af6282b0a618062cb9a0bb4cc62cc5e
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 06f48adfd89bc6ae9a19f5ce4775b354a354dff6
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458049"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796614"
 ---
 # <a name="update-b2cauthenticationmethodspolicy"></a>Обновление b2cAuthenticationMethodsPolicy
 
@@ -54,7 +54,7 @@ PATCH /policies/b2cAuthenticationMethodsPolicy
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |isEmailPasswordAuthenticationEnabled|Логическое|Администратор клиента может настраивать локальные учетные записи, используя электронную почту, если включен метод проверки подлинности электронной почты и пароля.|
-|isUserNameAuthenticationEnabled|Логическое|Администратор клиента может настраивать локальные учетные записи, используя имя пользователя, если включен метод проверки подлинности электронной почты и пароля.|
+|isUserNameAuthenticationEnabled|Логический|Администратор клиента может настраивать локальные учетные записи, используя имя пользователя, если включен метод проверки подлинности электронной почты и пароля.|
 
 ## <a name="response"></a>Отклик
 

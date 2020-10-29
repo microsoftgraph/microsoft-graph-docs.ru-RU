@@ -5,17 +5,17 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0c2ea4db41b75a2ea7e4107741df97630d893cb7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8cd0bf564a8282e27942ce679c9392a03b169491
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058594"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796642"
 ---
 # <a name="list-linkedresources"></a>Список Линкедресаурцес
 Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение Линкедресаурцес из свойства навигации Линкедресаурцес.
+Получение сведений об одном или нескольких элементах партнерского приложения, на основе которого была создана указанная [задача](../resources/todotask.md) . Сведения представлены в объекте [линкедресаурце](../resources/linkedresource.md) для каждого элемента. Он включает внешний идентификатор элемента в партнерской приложении и, если это возможно, глубокая ссылка на этот элемент в приложении.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -23,7 +23,7 @@ ms.locfileid: "48058594"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос

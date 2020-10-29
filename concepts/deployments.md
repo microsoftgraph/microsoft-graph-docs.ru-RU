@@ -2,12 +2,12 @@
 title: Национальные облачные развертывания
 description: В дополнение к нашей глобальной сети центров обработки данных облачные службы Майкрософт доступны в трех отдельных национальных облачных службах.
 author: arpitha-dhanapathi
-ms.openlocfilehash: 765652f6b7303f9726748497bd6d3738f0ee3670
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: ef34ae6efc7827bbbf8599c571689091287281b2
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48289206"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796768"
 ---
 # <a name="national-cloud-deployments"></a>Национальные облачные развертывания
 
@@ -88,7 +88,7 @@ ms.locfileid: "48289206"
 | Субъекты-службы  |✔| ➖ |➖|
 | Уведомления об изменениях (веб-перехватчики)  | ✔ |✔ |✔* |
 | Разностный запрос | ✔ | ✔ | ➖ |
-| Расширения схемы каталога |✔|➖|➖|
+| Расширения схемы каталога |✔|✔|➖|
 | Расширения открытого типа|➖|➖|➖|
   
 Следующие функции Microsoft Graph доступны в предварительной версии (в `/beta` конечной точке) в Microsoft Cloud Китая и Microsoft Cloud Германии (версия 1.0 конечные точки для этих функций доступны только в Microsoft Cloud для государственных организаций США):

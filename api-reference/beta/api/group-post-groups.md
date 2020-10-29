@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: b643a2bd9af0d3c6ff18fcc5eba69bb58c18b21c
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: ef62655e2d31734a466404402ac808c66aace324
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373247"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782832"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -57,7 +57,7 @@ POST /groups
 |:---------------|:--------|:----------|
 | displayName | string | Имя, которое следует отобразить в адресной книге для группы. Обязательный. |
 | description | строка | Описание группы. Необязательно. |
-| isAssignableToRole | Логическое | Значение **true**, чтобы группу можно было назначить роли Azure AD. Только администратор привилегированных ролей и глобальный администратор может настроить значение этого свойства. Необязательно. |
+| isAssignableToRole | Логическое | Значение **true** , чтобы группу можно было назначить роли Azure AD. Только администратор привилегированных ролей и глобальный администратор может настроить значение этого свойства. Необязательно. |
 | mailEnabled | boolean | Установите значение **true** для групп, поддерживающих почту. Обязательно. |
 | mailNickname | string | Почтовый псевдоним для группы. Такие символы нельзя использовать в mailNickName: `@()\[]";:.<>,SPACE`. Обязательный. |
 | securityEnabled | boolean | Значение **true** для групп безопасности, включая группы Microsoft 365. Обязательный. |
@@ -82,7 +82,7 @@ POST /groups
 | Тип группы | Назначенное участие | Динамическое членство |
 |:--------------|:------------------------|:---------------|
 | Microsoft 365 (как единая группа)| `["Unified"]` | `["Unified","DynamicMembership"]`
-| Динамический | `[]` (_null_) | `["DynamicMembership"]`|
+| Динамический | `[]` ( _null_ ) | `["DynamicMembership"]`|
 
 ## <a name="response"></a>Отклик
 
@@ -138,7 +138,7 @@ Content-length: 244
 
 Ниже приведен пример отклика.
 
->**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. В результате реального вызова возвращаются все свойства по умолчанию.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. В результате реального вызова возвращаются все свойства по умолчанию.
 
 <!-- {
   "blockType": "response",
@@ -195,9 +195,8 @@ Content-type: application/json
 
 Ниже приведен пример запроса.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "create_prepopulated_group"
 }-->
 ``` http
@@ -222,20 +221,6 @@ Content-Type: application/json
   ]
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-prepopulated-group-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-prepopulated-group-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-prepopulated-group-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Отклик 
 

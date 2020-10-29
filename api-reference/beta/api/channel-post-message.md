@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b9c4668c1f9c19cade4d737ee23273ebdd82f65d
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: f4b5e5c0d686576ef23ae87b6a6614b1dcaef1a2
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782802"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796593"
 ---
 # <a name="create-chatmessage-in-channel"></a>Создание chatMessage в канале
 
@@ -156,7 +156,7 @@ Content-length: 160
 
 ### <a name="example-2-import-messages-text-only"></a>Пример 2: Импорт сообщений (только текст)
 
-> **Note** : для этого сценария не требуются специальные области разрешений, так как запрос является частью **chatMessage** ; Здесь также применяются области для **chatMessage** .
+> **Примечание** . `Teamwork.Migrate.All` для этого сценария необходимо указать область разрешений.
 
 #### <a name="request"></a>Запрос
 <!-- { "blockType": "ignored" } -->
@@ -248,7 +248,7 @@ HTTP/1.1 200 OK
 > [!NOTE]
 > В настоящее время встроенными образами является единственный тип мультимедиа, поддерживаемый схемой API импорта сообщений.
 
-> **Note** : для этого сценария не требуются специальные области разрешений, так как запрос является частью **chatMessage** ; Здесь также применяются области для **chatMessage** .
+> **Примечание** . `Teamwork.Migrate.All` для этого сценария необходимо указать область разрешений.
 
 #### <a name="request"></a>Запрос
 <!-- { "blockType": "ignored" } -->
@@ -257,6 +257,15 @@ HTTP/1.1 200 OK
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages
 
+{
+   "createdDateTime":"2019-02-04T19:58:15.511Z",
+   "from":{
+      "user":{
+         "id":"id-value",
+         "displayName":"John Doe",
+         "userIdentityType":"aadUser"
+      }
+   },
 {
    "body":{
       "contentType":"html",

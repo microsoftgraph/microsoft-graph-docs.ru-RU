@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ea5473bc015eea4d4f6d8fb0d3d20c3be5dac661
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: abf5884d42086f1944f69f3a598299407e04c75f
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782867"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796565"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>Ответ на сообщение в канале
 
@@ -145,7 +145,7 @@ Content-length: 160
 
 ### <a name="example-2-import-messages"></a>Пример 2: Импорт сообщений
 
-> **Note** : для этого сценария не требуются специальные области разрешений, так как запрос является частью **chatMessage** ; Здесь также применяются области для **chatMessage** .
+> **Примечание** . `Teamwork.Migrate.All` для этого сценария необходимо указать область разрешений.
 
 #### <a name="request"></a>Запрос
 <!-- { "blockType": "ignored" } -->
