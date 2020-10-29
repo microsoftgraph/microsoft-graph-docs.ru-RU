@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: cfe63b8cfed082a48a0bd39127926374a15c398d
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: a4947a091428227ee55c5bde5c09cfd591b4b349
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48783021"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48797125"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -118,9 +118,6 @@ ms.locfileid: "48783021"
 | [Список категорий Outlook](../api/outlookuser-list-mastercategories.md) | Коллекция [outlookCategory](outlookcategory.md)                                 | Получение всех категорий, определенных для пользователя. |
 | [Преобразование идентификаторов Exchange](../api/user-translateexchangeids.md) | Коллекция [convertIdResult](convertidresult.md) | Перевод идентификаторов ресурсов, связанных с Outlook, между форматами. |
 | [Обновление параметров почтового ящика пользователя](../api/user-update-mailboxsettings.md) | [mailboxSettings](mailboxsettings.md) | Включение, настройка или отключение одного или нескольких объектов mailboxSettings пользователя. |
-| **Задачи Outlook** |||
-| [Создание объекта outlookTask](../api/outlookuser-post-tasks.md) | [outlookTask](outlooktask.md) | Создание задачи Outlook в группе задач по умолчанию ("Мои задачи") и папке задач по умолчанию ("Задачи") в почтовом ящике пользователя. |
-| [Список задач](../api/outlookuser-list-tasks.md) | Коллекция объектов [outlookTask](outlooktask.md) | Получение всех задач Outlook в почтовом ящике пользователя. |
 | **Люди** |||
 | [Получение списка людей](../api/user-list-people.md) | [person](person.md) | Получение списка объектов person, упорядоченных по их релевантности для пользователя, которая определяется его моделями общения и совместной работы, а также бизнес-отношениями. |
 | **Фотография** |||
@@ -142,12 +139,18 @@ ms.locfileid: "48783021"
 | [Список приложений, установленных для пользователя](../api/user-list-teamsappinstallation.md) | [teamsAppInstallation](teamsappinstallation.md) | Получение списка приложений, установленных в личной области указанного пользователя. |
 | [Обновление приложения](../api/user-upgrade-teamsappinstallation.md) | Нет | Обновление установленного приложения в личной области указанного пользователя до последней версии. |
 | [Удаление приложения для пользователя](../api/user-delete-teamsappinstallation.md) | Нет  | Удаление приложения из личной области указанного пользователя. |
+| **Задачи To-Do** |||
+|[Создание задачи](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Создание [todoTask](todotask.md) в указанном списке задач.|
+|[Создание списка задач](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Создание списка задач To Do в почтовом ящике пользователя. |
+|[Перечисление задач](../api/todotasklist-list-tasks.md)|Коллекция [todoTask](todotask.md)|Получение всех ресурсов [todoTask](todotask.md) в указанном списке.|
+|[Перечисление списков задач](../api/todo-list-lists.md) | Коллекция [todoTaskList](todotasklist.md) | Получение всех списков задач в почтовом ящике пользователя. |
 | **Параметры пользователя** |||
 | [Получение параметров](../api/usersettings-get.md) | [userSettings](usersettings.md) | Чтение объекта settings пользователя и организации. |
 | [Обновление параметров](../api/usersettings-update.md) | [userSettings](usersettings.md) | Обновление свойств объекта settings. |
-| **Списки задач To Do** |||
-|[Перечисление списков](../api/todo-list-lists.md) | Коллекция [todoTaskList](todotasklist.md) | Получение всех списков задач в почтовом ящике пользователя. |
-|[Создание todoTasklist](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Создание списка задач To Do в почтовом ящике пользователя. |
+| **Задачи Outlook** (не рекомендуется)|||
+| [Создание объекта outlookTask](../api/outlookuser-post-tasks.md) (не рекомендуется) | [outlookTask](outlooktask.md) | Создание задачи Outlook в группе задач по умолчанию ("Мои задачи") и папке задач по умолчанию ("Задачи") в почтовом ящике пользователя. |
+| [Перечисление задач](../api/outlookuser-list-tasks.md) (не рекомендуется) | Коллекция объектов [outlookTask](outlooktask.md) | Получение всех задач Outlook в почтовом ящике пользователя. |
+
 
 ## <a name="properties"></a>Свойства
 
