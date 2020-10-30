@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2a5c7e53882846a45597421d4f2b5384d2c87a8d
-ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
+ms.openlocfilehash: 9c611ab5f0fa612146fcd413d59fb9baea32701d
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48479947"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796740"
 ---
 # <a name="create-team"></a>Создание команды
 
@@ -129,7 +129,7 @@ Content-Type: application/json
    "template@odata.bind":"https://graph.microsoft.com/v1.0/teamsTemplates('standard')",
    "displayName":"My Sample Team",
    "description":"My Sample Team’s Description",
-   "members@odata.bind":[
+   "members":[
       {
          "@odata.type":"#microsoft.graph.aadUserConversationMember",
          "roles":[
@@ -286,12 +286,12 @@ Content-Length: 0
 
 ### <a name="example-4-create-a-team-from-group"></a>Пример 4. Создание команды из группы
 
-В следующем примере показано, как можно создать новую [команду](../resources/team.md) из [группы](../resources/group.md) с учетом **groupId**.
+В следующем примере показано, как можно создать новую [команду](../resources/team.md) из [группы](../resources/group.md) с учетом **groupId** .
 
 Обратите внимание на некоторые моменты, связанные с этим вызовом:
 
 * Чтобы создать команду, в группе, из которой она создается, должен быть хотя бы один владелец.
-* Созданная команда всегда наследует отображаемое имя, параметры видимости, специализацию и членов группы. Поэтому, когда выполняется этот вызов с использованием свойства **group@odata.bind**, включение свойств команды **displayName**, **visibility**, **specialization** или **members@odata.bind** возвращает ошибку.
+* Созданная команда всегда наследует отображаемое имя, параметры видимости, специализацию и членов группы. Поэтому, когда выполняется этот вызов с использованием свойства **group@odata.bind** , включение свойств команды **displayName** , **visibility** , **specialization** или **members@odata.bind** возвращает ошибку.
 * Если группа создана менее 15 минут назад, вызов метода "Создание команды" может завершиться ошибкой с кодом 404 из-за задержек репликации. Рекомендуется повторить вызов метода "Создание команды" три раза с 10-секундной задержкой между вызовами.
 
 #### <a name="request"></a>Запрос

@@ -1,16 +1,16 @@
 ---
 title: Создание команды
 description: Создание новой команды.
-author: nkramer
+author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4013251fce41125a0fc6a662d9481520ac75742d
-ms.sourcegitcommit: 82f9200355841c30f7a7487861d79e17256ff788
+ms.openlocfilehash: 6ab87af3faed82a788b6f505ef5e6a22c0fba1eb
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48479954"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782881"
 ---
 # <a name="create-team"></a>Создание команды
 
@@ -90,13 +90,17 @@ Content-Type: application/json
 
 ---
 
+<!-- markdownlint-disable MD024 -->
+<!-- markdownlint-disable MD001 -->
 
 ##### <a name="response"></a>Отклик
+
 <!-- {
   "blockType": "response",
   "name": "create_team_post",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -110,12 +114,14 @@ Content-Length: 0
 Ниже приведен пример минимального запроса с использованием разрешений для приложения. Исключив другие свойства, клиент неявно принимает значения по умолчанию из готового шаблона, представленного объектом `template`. При отправке запроса с разрешениями для приложения ресурс [user](../resources/user.md) должен быть указан в коллекции `members`.
 
 #### <a name="request"></a>Запрос
+<!-- markdownlint-disable MD025 -->
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_team_post_minimal"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -135,6 +141,7 @@ Content-Type: application/json
    ]
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-post-minimal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -149,13 +156,13 @@ Content-Type: application/json
 
 ---
 
-
 #### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "name": "create_team_post_minimal",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -175,6 +182,7 @@ Content-Length: 0
   "blockType": "request",
   "name": "create_team_post_full_payload"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -273,13 +281,13 @@ Content-Type: application/json
 
 ---
 
-
 #### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "name": "create_team_post_full_payload",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -290,14 +298,13 @@ Content-Length: 0
 
 ### <a name="example-4-create-a-team-from-group"></a>Пример 4. Создание команды из группы
 
-В следующем примере показано, как можно создать новую [команду](../resources/team.md) из [группы](../resources/group.md) с учетом **groupId**.
+В следующем примере показано, как можно создать новую [команду](../resources/team.md) из [группы](../resources/group.md) с учетом **groupId** .
 
 Обратите внимание на некоторые моменты, связанные с этим вызовом:
 
 * Чтобы создать команду, в группе, из которой она создается, должен быть хотя бы один владелец.
-* Созданная команда всегда наследует отображаемое имя, параметры видимости, специализацию и членов группы. Поэтому, когда выполняется этот вызов с использованием свойства **group@odata.bind**, включение свойств команды **displayName**, **visibility**, **specialization** или **members@odata.bind** возвращает ошибку.
+* Созданная команда всегда наследует отображаемое имя, параметры видимости, специализацию и членов группы. Поэтому, когда выполняется этот вызов с использованием свойства **group@odata.bind** , включение свойств команды **displayName** , **visibility** , **specialization** или **members@odata.bind** возвращает ошибку.
 * Если группа создана менее 15 минут назад, вызов метода "Создание команды" может завершиться ошибкой с кодом 404 из-за задержек репликации. Рекомендуется повторить вызов метода "Создание команды" три раза с 10-секундной задержкой между вызовами.
-
 
 #### <a name="request"></a>Запрос
 
@@ -306,6 +313,7 @@ Content-Length: 0
   "blockType": "request",
   "name": "create_team_from_group"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -315,6 +323,7 @@ Content-Type: application/json
   "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-team-from-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -329,13 +338,13 @@ Content-Type: application/json
 
 ---
 
-
 #### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "name": "create_team_from_group",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -357,6 +366,7 @@ Content-Length: 0
   "blockType": "request",
   "name": "convert_team_from_group"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -405,13 +415,13 @@ Content-Type: application/json
 
 ---
 
-
 #### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "name": "convert_team_from_group",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -435,6 +445,7 @@ Content-Length: 0
   "blockType": "request",
   "name": "convert_team_from_non_standard"
 }-->
+
 ```http
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
@@ -536,13 +547,13 @@ Content-Type: application/json
 
 ---
 
-
 #### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "name": "convert_team_from_non_standard2",
   "@odata.type": "microsoft.graph.team"
 }-->
+
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
@@ -551,9 +562,53 @@ Content-Location: /teams/{teamId}
 Content-Length: 0
 ```
 
+### <a name="example-8-create-a-team-in-migration-mode"></a>Пример 8. Создание команды в режиме миграции
+
+#### <a name="request"></a>Запрос
+
+В следующем примере показано, как создать команду для импортированных сообщений.
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+
+{
+  "@microsoft.graph.teamCreationMode": "migration",
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+  "displayName": "My Sample Team",
+  "description": "My Sample Team’s Description",
+  "createdDateTime": "2020-03-14T11:22:17.067Z"
+}
+```
+
+#### <a name="response"></a>Отклик
+
+```http
+HTTP/1.1 202 Accepted
+Location: /teams/{teamId}/operations/{operationId}
+Content-Location: /teams/{teamId}
+```
+
+#### <a name="error-response"></a>Отклик с ошибкой
+
+При безуспешном запросе этот метод возвращает код отклика `400 Bad Request`. 
+
+```http
+400 Bad Request
+```
+
+Ниже перечислены распространенные причины этого отклика.
+
+* Для **createdDateTime** установлено значение в будущем.
+* Параметр **createdDateTime** указан правильно, но отсутствует атрибут экземпляра **channelCreationMode** или ему присвоено недопустимое значение.
+
+
 ## <a name="see-also"></a>См. также
 
-- [Доступные шаблоны](/MicrosoftTeams/get-started-with-teams-templates)
-- [Начало работы с шаблонами команд розничной торговли](/MicrosoftTeams/get-started-with-retail-teams-templates)
-- [Начало работы с шаблонами команд здравоохранения](/MicrosoftTeams/healthcare/healthcare-templates)
-- [Создание группы с командой](/graph/teams-create-group-and-team)
+* [Завершение миграции для команды](team-completemigration.md)
+* [Импорт сообщений из сторонних платформ в Teams с помощью Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams)
+* [Создание канала](channel-post.md)
+* [Доступные шаблоны](/MicrosoftTeams/get-started-with-teams-templates)
+* [Начало работы с шаблонами команд розничной торговли](/MicrosoftTeams/get-started-with-retail-teams-templates)
+* [Начало работы с шаблонами команд здравоохранения](/MicrosoftTeams/healthcare/healthcare-templates)
+* [Создание группы с командой](/graph/teams-create-group-and-team)

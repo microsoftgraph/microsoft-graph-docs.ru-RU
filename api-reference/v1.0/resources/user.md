@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 35ce4fb1ae5f5168b60f97fdace24fe0eb007605
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 24035e0d1cae131b1c08d0cc2f300272f3d87d8f
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782944"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796922"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -112,9 +112,15 @@ ms.locfileid: "48782944"
 | [Перечисление задач](../api/planneruser-list-tasks.md)                                             | Коллекция [plannerTask](plannertask.md)                                         | Получает объекты plannerTask, назначенные пользователю.                                                                                                                                                                                              |
 | **Расширения схемы**                                                                      |                                                                                  |                                                                                                                                                                                                                                     |
 | [Добавление значений расширений для схемы](/graph/extensibility-schema-groups)                          | Нет                                                                             | Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.                                                                                                                                        |
+| **Задачи To-Do** |||
+|[Создание задачи](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Создание [todoTask](todotask.md) в указанном списке задач.|
+|[Создание списка задач](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Создание списка задач To Do в почтовом ящике пользователя. |
+|[Перечисление задач](../api/todotasklist-list-tasks.md)|Коллекция [todoTask](todotask.md)|Получение всех ресурсов [todoTask](todotask.md) в указанном списке.|
+|[Перечисление списков задач](../api/todo-list-lists.md) | Коллекция [todoTaskList](todotasklist.md) | Получение всех списков задач в почтовом ящике пользователя. |
 | **Параметры пользователя**                                                                          |                                                                                  |                                                                                                                                                                                                                                     |
 | [Получение параметров](../api/usersettings-get.md)                                                 | [userSettings](usersettings.md)                                                  | Чтение объекта settings пользователя и организации.                                                                                                                                                                                     |
 | [Обновление параметров](../api/usersettings-update.md)                                           | [userSettings](usersettings.md)                                                  | Обновление свойств объекта settings.                                                                                                                                                                                       |
+
 
 ## <a name="properties"></a>Свойства
 
@@ -128,7 +134,7 @@ ms.locfileid: "48782944"
 |birthday|DateTimeOffset|День рождения пользователя. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |businessPhones|Коллекция строк|Номера телефонов пользователя. ПРИМЕЧАНИЕ. Несмотря на то что это коллекция строк, в качестве этого свойства можно указать только одно число. <br>"Только для чтения" для пользователей, которые синхронизируются с локальным каталогом. |
 |city|String|Город, в котором находится пользователь. Поддерживает `$filter`.|
-|companyName | String | Название организации, с которой связан пользователь. Это свойство может быть полезно для описания компании внешнего пользователя. Длина имени организации не должна превышать 64 символов.<br><br>Возвращается только с помощью оператора `$select`.|
+|companyName | String | Название организации, с которой связан пользователь. Это свойство может быть полезно для описания компании внешнего пользователя. Длина имени организации не должна превышать 64 символов.<br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter`.|
 |consentProvidedForMinor|String|Устанавливает, получено ли согласие для несовершеннолетних. Допустимые значения: `null`, `granted`, `denied` и `notRequired`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions).|
 |country|Строка|Страна или регион, в котором находится пользователь, например "США" или "Соединенное Королевство". Поддерживает `$filter`.|
 |createdDateTime | DateTimeOffset |Дата создания объекта пользователя. |
@@ -170,8 +176,8 @@ ms.locfileid: "48782944"
 |onPremisesSecurityIdentifier|String|Содержит локальный идентификатор безопасности (SID) локальной группы, синхронизированной с облаком. Только для чтения.|
 |onPremisesSyncEnabled|Boolean| Значение **true** указывает, что этот объект синхронизируется из локального каталога. Значение **false** указывает, что этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Значение **null** указывает, что этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). Только для чтения |
 |onPremisesUserPrincipalName|String| Содержит локальный параметр `userPrincipalName`, синхронизированный из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. |
-|otherMails|String| Список дополнительных адресов электронной почты для пользователя. Например: `["bob@contoso.com", "Robert@fabrikam.com"]`. Поддерживает `$filter`.|
-|passwordPolicies|String|Задает политики паролей для пользователя. Это свойство представляет собой перечисление с возможным значением DisableStrongPassword. Оно позволяет использовать менее надежные пароли, чем предусмотрено политикой по умолчанию. Вы также можете указать значение DisablePasswordExpiration. Два значения можно указать одновременно. Пример: DisablePasswordExpiration, DisableStrongPassword.|
+|otherMails|Коллекция строк| Список дополнительных адресов электронной почты для пользователя. Например: `["bob@contoso.com", "Robert@fabrikam.com"]`. Поддерживает параметр $filter.|
+|passwordPolicies|String|Задает политики паролей для пользователя. Это свойство представляет собой перечисление с единственным возможным значением — "DisableStrongPassword". Оно позволяет использовать менее надежные пароли, чем предусмотрено политикой по умолчанию. Вы также можете указать значение "DisablePasswordExpiration". Эти значения можно указать одновременно. Пример: "DisablePasswordExpiration, DisableStrongPassword".|
 |passwordProfile|[passwordProfile](passwordprofile.md)|Задает профиль пароля для пользователя. Профиль содержит пароль пользователя. Это свойство обязательно указывать при создании пользователя. Пароль в профиле должен соответствовать минимальным требованиям, указанным в свойстве **passwordPolicies** . По умолчанию требуется надежный пароль.|
 |pastProjects|Коллекция строк|Список предыдущих проектов пользователя.|
 |postalCode|String|Почтовый индекс адреса пользователя. Формат почтового индекса зависит от страны или региона пользователя. В США для этого атрибута используется ZIP-код.|
@@ -265,6 +271,7 @@ ms.locfileid: "48782944"
 |photo|[profilePhoto](profilephoto.md)| Фотография профиля пользователя. Только для чтения.|
 |planner|[plannerUser](planneruser.md)| Точка входа в ресурс Planner, который может существовать для пользователя. Только для чтения.|
 |registeredDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, зарегистрированные для пользователя. Только для чтения. Допускается значение null.|
+|todo|[todo](todo.md)|Представляет службы To Do, доступные пользователю. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -476,7 +483,7 @@ ms.locfileid: "48782944"
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "onPremisesUserPrincipalName": "string",
-  "otherMails": "string",
+  "otherMails": ["string"],
   "passwordPolicies": "string",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],

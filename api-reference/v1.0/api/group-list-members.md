@@ -5,18 +5,20 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 6eebc7a1f9a33b1cebf5d935b4ff5af0a4b3a790
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fce71e0caa13e5b1ba7ac4bf5aab41ecd2e96357
+ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057635"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48782555"
 ---
 # <a name="list-members"></a>Список участников
 
 Пространство имен: microsoft.graph
 
 Получение списка непосредственных участников группы. Участниками группы могут быть пользователи, контакты организации, устройства, субъекты-службы и другие группы. В настоящее время субъекты-службы не указаны как участники группы благодаря поэтапному развертыванию субъектов-служб в конечной точке Microsoft Graph версии 1.0. Эта операция не является транзитивной.
+
+Если группа содержит более 100 участников, Microsoft Graph возвращает в отклике свойство `@odata.nextLink`, содержащее URL-адрес следующей страницы результатов. При наличии этого свойства продолжайте выполнять дополнительные запросы с URL-адресом `@odata.nextLink` в каждом отклике, пока не будут возвращены все результаты, как описано в статье [Разбиение данных Microsoft Graph по страницам в приложении](/graph/paging).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -82,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members
 
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {
   "blockType": "response",
   "truncated": true,
