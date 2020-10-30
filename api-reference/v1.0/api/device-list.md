@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4d05c7fd43fcc424da20f9191fe80d09a40ce827
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: d3d6bd36e634794507e8fe8651edbd5d46687593
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460469"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796670"
 ---
 # <a name="list-devices"></a>Список устройств
 
@@ -34,11 +34,15 @@ ms.locfileid: "48460469"
 GET /devices
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Можно использовать `$search` в свойствах **DisplayName** и **Description** . Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
+
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+
+| Имя       |  Описание|
+|:-----------|:------------|
+| Авторизация  | Bearer {токен}. Обязательный. |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`или применении `$filter` с параметром запроса `$orderby`. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -46,8 +50,13 @@ GET /devices
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [device](../resources/device.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-get-a-list-of-devices"></a>Пример 1: получение списка устройств
+
+#### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -76,9 +85,12 @@ GET https://graph.microsoft.com/v1.0/devices
 
 ---
 
+#### <a name="response"></a>Отклик
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика.
+
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,20 +104,146 @@ Content-type: application/json
 {
   "value": [
     {
-      "accountEnabled":false,
-      "deviceId":"4c299165-6e8f-4b45-a5ba-c5d250a707ff",
-      "displayName":"Test device",
-      "id": "id-value",
-      "operatingSystem":"linux",
-      "operatingSystemVersion":"1"
+      "accountEnabled":true,
+      "deviceId":"00000000-0000-0000-0000-000000000000",
+      "deviceVersion":1,
+      "displayName":"contoso_Android",
+      "Manufacturer":"Google",
+      "Model":"Pixel 3a",
+      "operatingSystemVersion":"10.0"
     }
   ]
 }
 ```
 
+### <a name="example-2-get-only-a-count-of-devices"></a>Пример 2: получение только количества устройств
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/devices/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+`294`
+
+### <a name="example-3-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 3: используйте $filter и $top, чтобы получить одно устройство с отображаемым именем, начинающимся с "a", включая количество возвращаемых объектов.
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/devices?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName 
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#devices",
+  "@odata.count":1,
+  "value":[
+    {
+      "accountEnabled":true,
+      "deviceId":"00000000-0000-0000-0000-000000000000",
+      "deviceVersion":1,
+      "displayName":"a_device_1",
+      "Manufacturer":"Google",
+      "Model":"Pixel 3a",
+      "operatingSystemVersion":"10.0"
+    }
+  ]
+}
+```
+
+### <a name="example-4-use-search-to-get-devices-with-display-names-that-contain-the-letters-android-including-a-count-of-returned-objects"></a>Пример 4: использование $search для получения устройств с отображаемыми именами, которые содержат буквы "Android", включая число возвращаемых объектов
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_android_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/devices?$search="displayName:Android"&$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#devices",
+  "@odata.count":1396,
+  "value":[
+    {
+      "accountEnabled":true,
+      "deviceId":"00000000-0000-0000-0000-000000000000",
+      "deviceVersion":1,
+      "displayName":"contoso_Android",
+      "Manufacturer":"Google",
+      "Model":"Pixel 3a",
+      "operatingSystemVersion":"10.0"
+    }
+  ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!-- 
+{
   "type": "#page.annotation",
   "description": "List devices",
   "keywords": "",

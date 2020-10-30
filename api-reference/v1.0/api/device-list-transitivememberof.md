@@ -5,12 +5,12 @@ author: spunukol
 ms.prod: microsoft-identity-platform
 localization_priority: Normal
 doc_type: apiPageType
-ms.openlocfilehash: 859cd2fa83a62f04d65f2553e2fd33f3c483e760
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 448ff36acb5dfbc8882ac0fc8595251d8645b4c4
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078026"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796677"
 ---
 # <a name="list-device-transitive-groups"></a>Перечисление транзитивных групп устройств
 
@@ -40,14 +40,14 @@ GET /devices/{id | userPrincipalName}/transitiveMemberOf
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Кроме того, включено также приведение к OData, например, вы можете получить только directoryRoles, участником которых является пользователь. Можно использовать `$search` в свойствах **DisplayName** и **Description** . Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| Accept  | application/json|
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`, `$filter`, `$orderby` или с параметрами запросов OData cast. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -57,9 +57,11 @@ GET /devices/{id | userPrincipalName}/transitiveMemberOf
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-get-groups-that-the-device-is-a-transitive-member-of"></a>Пример 1: получение групп, в которых устройство является транзитивным участником
+
+#### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -90,10 +92,9 @@ GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf
 
 ---
 
+#### <a name="response"></a>Отклик
 
-### <a name="response"></a>Отклик
-
-Ниже приведен пример отклика. 
+Ниже приведен пример отклика.
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -122,10 +123,127 @@ Content-type: application/json
   ]
 }
 ```
+### <a name="example-2-get-only-a-count-of-all-transitive-membership"></a>Пример 2: Получение только количества транзитивных участников
 
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+`294`
+
+### <a name="example-3-use-odata-cast-and-search-to-get-group-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Пример 3: использование функции CAST и $search для получения сведений о членстве в группах с отображаемыми именами, содержащими "видео", в том числе от числа возвращаемых объектов.
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_video_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$search="displayName:Video"&$select=displayName,id
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups(displayName,id)",
+  "@odata.count":7,
+  "value":[
+    {
+      "displayName":"Contoso Videos",
+      "id":"11111111-2222-3333-4444-555555555555"
+    }
+  ]
+}
+```
+
+### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 4: использование функции CAST и $filter для получения членства с отображаемым именем, начинающимся с "A", включая количество возвращаемых объектов
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'a')
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.count":76,
+  "value":[
+    {
+      "displayName":"AAD Contoso Users",
+      "mail":"AADContoso_Users@contoso.com",
+      "mailEnabled":true,
+      "mailNickname":"AADContoso_Users",
+      "securityEnabled":true
+    }
+  ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!-- 
+{
   "type": "#page.annotation",
   "description": "List devices transitiveMsemberOf",
   "keywords": "",
@@ -134,4 +252,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

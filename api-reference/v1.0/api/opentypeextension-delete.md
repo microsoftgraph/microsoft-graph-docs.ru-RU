@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: ebaa3a22728fb2e64137b755b0874c5420923f0b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9430f4480cc6d18979c9b395ecc4fc7c9bda72c4
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47988690"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48797155"
 ---
 # <a name="delete-open-extension"></a>Удаление открытого расширения
 
@@ -33,6 +33,8 @@ ms.locfileid: "47988690"
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Не поддерживается | Organization.ReadWrite.All |
 | [contact](../resources/contact.md) (личный контакт) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
+| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks. ReadWrite. ALL |
+| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 В запросе идентифицируйте экземпляр ресурса, воспользуйтесь свойством навигации **extensions** этого экземпляра, чтобы определить расширение, и укажите метод `DELETE` для этого экземпляра расширения.
@@ -48,6 +50,8 @@ DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
 DELETE /organization/{Id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
+DELETE /users/me/todo/lists/{todoTaskListId}/extensions/{extensionId}
+DELETE /users/me/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
 ```
 
 >**Примечание.** В приведенном выше синтаксисе показаны некоторые распространенные способы определения экземпляра ресурса, чье расширение нужно удалить. Все другие варианты синтаксиса, позволяющие определить эти экземпляры ресурса, поддерживают удаление открытых расширений этих экземпляров подобным образом.
@@ -63,7 +67,7 @@ DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
 |:---------------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

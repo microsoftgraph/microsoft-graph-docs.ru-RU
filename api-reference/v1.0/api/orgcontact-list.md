@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f7c356f2247e3d5a4b4c2939b6a97faf4ae2c2c7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 499f474d7eef78f40a850536143490f15a4c9e7a
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079405"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48797034"
 ---
 # <a name="list-orgcontacts"></a>Перечисление orgContacts
 
@@ -23,9 +23,9 @@ ms.locfileid: "48079405"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | OrgContact. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | OrgContact. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+|Делегированное (рабочая или учебная учетная запись) | OrgContact. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | OrgContact. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -33,12 +33,13 @@ ms.locfileid: "48079405"
 GET /contacts
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$expand` `$filter` `$select` параметры запросов,, и `$top` [OData](/graph/query-parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа, в том числе,,,, `$count` `$expand` `$filter` `$search` `$select` и `$top` . `$search` можно использовать в свойстве **displayName** . Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:-----------|:----------|
 | Авторизация  |Bearer {токен}. Обязательный. |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`или применении `$filter` с параметром запроса `$orderby`. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -46,8 +47,13 @@ GET /contacts
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [orgContact](../resources/orgcontact.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-get-organizational-contacts-for-an-organization"></a>Пример 1: получение организационных контактов для Организации
+
+#### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 
@@ -77,10 +83,12 @@ GET https://graph.microsoft.com/v1.0/contacts
 
 ---
 
+#### <a name="response"></a>Отклик
 
-##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,35 +98,155 @@ GET https://graph.microsoft.com/v1.0/contacts
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 222
 
 {
   "value": [
     {
+      "companyName": "Contoso",
+      "department": "Marketing",
+      "displayName": "Eric S",
+      "givenName":"Eric",
+      "jobTitle":"Accountant",
+      "mail":"erics@contoso.com",
+      "mailNickname":"erics",
+      "surname":"Solomon",
       "addresses":[
-          {
-            "city": "string",
-            "countryOrRegion": "string",
-            "officeLocation": "string",
-            "postalCode": "string",
-            "state": "string",
-            "street": "string"
-          }
+        {
+          "city":"MyCity",
+          "countryOrRegion":"United States",
+          "officeLocation":"MyCity",
+          "postalCode":"98000",
+          "state":"WA",
+          "street":"Contoso Way"
+        }
       ],
-      "companyName": "companyName-value",
-      "department": "department-value",
-      "displayName": "displayName-value",
       "phones":[
-          {
-            "type": "string",
-            "number": "string"
-          }
+        {
+          "number":"111-1111",
+          "type":"businessFax"
+        }
       ]
     }
   ]
 }
 ```
 
+### <a name="example-2-get-only-a-count-of-organizational-contacts"></a>Пример 2: получение только количества контактов Организации
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/contacts/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+`893`
+
+### <a name="example-3-use-filter-and-top-to-get-one-organizational-contact-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 3: использование $filter и $top для получения одного организационного контакта с отображаемым именем, начинающимся с "a", включая количество возвращаемых объектов
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/contacts?$filter=startswith(displayName,'A')&$count=true&$top=1&$orderby=displayName
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.orgcontact",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#contacts",
+  "@odata.count":1,
+  "value":[
+    {
+      "displayName":"Abigail Jackson",
+      "mail":"abigailJ@contoso.com",
+      "mailNickname":"abigailJ"
+    }
+  ]
+}
+```
+
+### <a name="example-4-use-search-to-get-organizational-contacts-with-display-names-that-contain-the-letters-wa-including-a-count-of-returned-objects"></a>Пример 4: использование $search для получения организационных контактов с отображаемыми именами, содержащими "WA", в том числе от количества возвращаемых объектов.
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_phone_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/contacts?$search="displayName:wa"&$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.orgcontact",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#contacts",
+  "@odata.count":22,
+  "value":[
+    {
+      "displayName":"Nicole Wagner",
+      "mail":"nicolewa@contoso.com",
+      "mailNickname":"nicolewa"
+    }
+  ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

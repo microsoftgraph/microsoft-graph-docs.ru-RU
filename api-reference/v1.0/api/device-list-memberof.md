@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b3e06502e05a883630e6fe1f211a5715dd01aac5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7bf0ef729438b47d72993f1350173b0dc570b9b3
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48013344"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796957"
 ---
 # <a name="list-device-groups"></a>Список групп устройств
 
@@ -36,23 +36,28 @@ ms.locfileid: "48013344"
 GET /devices/{id}/memberOf
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа.
+
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Кроме того, включено также приведение к OData, например, вы можете получить только directoryRoles, участником которых является пользователь. Можно использовать `$search` в свойствах **DisplayName** и **Description** . Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
+
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| Accept  | application/json|
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`, `$filter`, `$orderby` или с параметрами запросов OData cast. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-get-groups-that-the-device-is-a-direct-member-of"></a>Пример 1: получение групп, непосредственным участником которых является устройство
+
+#### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -82,9 +87,12 @@ GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf
 
 ---
 
+#### <a name="response"></a>Отклик
 
-### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. 
+
+> **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -111,9 +119,129 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-2-get-only-a-count-of-all-memberships"></a>Пример 2: Получение только количества участников
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+`394`
+
+### <a name="example-3-use-odata-cast-and-search-to-get-membership-with-display-names-that-contain-the-letters-video-including-a-count-of-returned-objects"></a>Пример 3: использование функции CAST и $search для получения членства с отображаемыми именами, содержащими видео "Video", включая число возвращаемых объектов
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_video_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$search="displayName:Video"
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.count":1396,
+  "value":[
+    {
+      "displayName":"SFA Videos",
+      "mail":"SFAVideos@service.contoso.com",
+      "mailNickname":"SFAVideos"
+    }
+  ]
+}
+```
+
+### <a name="example-4-use-odata-cast-and-filter-to-get-membership-with-a-display-name-that-starts-with-the-letter-a-including-a-count-of-returned-objects"></a>Пример 4: использование функции CAST и $filter для получения членства с отображаемым именем, начинающимся с буквы "A", включая количество возвращаемых объектов
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'A')
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups",
+  "@odata.count":76,
+  "value":[
+    {
+      "displayName":"AAD Contoso Videos",
+      "mail":"AADContosoVideos@contoso.com",
+      "mailEnabled":true,
+      "mailNickname":"AADContoso_Videos",
+      "securityEnabled":true
+    }
+  ]
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!-- 
+{
   "type": "#page.annotation",
   "description": "List memberOf",
   "keywords": "",
@@ -122,4 +250,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 24c10425331f965e8e09dc6d6dad6bc71d774f15
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bcd666c743d50b0e8d263510fe7b33297fc16940
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057544"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796656"
 ---
 # <a name="list-group-transitive-members"></a>Перечисление транзитивных участников группы
 
@@ -24,9 +24,9 @@ ms.locfileid: "48057544"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory. Read. ALL, Directory. AccessAsUser. ALL, User. ReadBasic. ALL, User. Read. ALL, Application. Read. ALL  |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Directory. Read. ALL, User. Read. ALL, Application. Read. ALL |
+|Делегированное (рабочая или учебная учетная запись) | Directory. Read. ALL, Directory. AccessAsUser. ALL, User. ReadBasic. ALL, User. Read. ALL, Application. Read. ALL  |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Directory. Read. ALL, User. Read. ALL, Application. Read. ALL |
 
 >**Примечание:** Чтобы получить список членов скрытой группы членства, требуется разрешение Member. Read. Hidden.
 
@@ -42,15 +42,16 @@ GET /groups/{id}/transitiveMembers
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Можно использовать `$search` в свойствах **DisplayName** и **Description** . Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Заголовок       | Значение |
-|:-----------|:----------|
+| Имя | Описание |
+|:---- |:----------- |
 | Авторизация  | Bearer {токен}. Обязательный. |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`, `$filter`, `$orderby` или с параметрами запросов OData cast. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -58,9 +59,11 @@ GET /groups/{id}/transitiveMembers
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-get-the-transitive-membership-of-a-group"></a>Пример 1: получение транзитивного членства в группе
+
+#### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -91,11 +94,12 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMembers
 
 ---
 
-
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
->**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+
+>**Примечание** . Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -111,24 +115,131 @@ Content-type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.user",
-      "businessPhones": [
-        "businessPhones-value"
-      ],
-      "displayName": "displayName-value",
-      "givenName": "givenName-value",
-      "jobTitle": "jobTitle-value",
-      "mail": "mail-value",
-      "mobilePhone": "mobilePhone-value",
-      "officeLocation": "officeLocation-value",
-      "preferredLanguage": "preferredLanguage-value",
-      "surname": "surname-value",
-      "userPrincipalName": "userPrincipalName-value",
-      "id": "id-value"
+      "id": "11111111-2222-3333-4444-555555555555",
+      "mail": "group1@contoso.com"
     }
   ]
 }
 ```
 
+### <a name="example-2-get-only-a-count-of-transitive-membership"></a>Пример 2: получение только числа транзитивных участников
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_group_transitivemembers_count"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMembers/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+`893`
+
+### <a name="example-3-use-odata-cast-and-search-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Пример 3: использование функции CAST и $search для получения членства в группах с отображаемыми именами, содержащими уровень, включая количество возвращаемых объектов
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_tier_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMembers/microsoft.graph.user?$count=true&$orderBy=displayName&$search="displayName:tier"&$select=displayName,id
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users(displayName,id)",
+  "@odata.count":7,
+  "value":[
+    {
+      "displayName":"Joseph Price",
+      "id":"11111111-2222-3333-4444-555555555555"
+    }
+  ]
+}
+```
+
+### <a name="example-4-use-odata-cast-and-filter-to-get-user-membership-in-groups-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 4: использование функции CAST и $filter для получения членства пользователя в группах с отображаемым именем, начинающимся с "A", включая количество возвращаемых объектов
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/groups/{id}/transitiveMembers/microsoft.graph.users?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'a')
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.count":76,
+  "value":[
+    {
+      "displayName":"AAD Contoso Users",
+      "mail":"AADContoso_Users@contoso.com"
+    }
+  ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -140,4 +251,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

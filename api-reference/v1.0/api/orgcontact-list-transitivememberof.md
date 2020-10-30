@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 780abea12cf61655f8d529dadf2f8c4414401dc2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2387bf17583869f8b5a043d0a8318a424f37af15
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48032903"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48797146"
 ---
 # <a name="list-transitivememberof"></a>Список Транситивемембероф
 
@@ -24,9 +24,9 @@ ms.locfileid: "48032903"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL  |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
+|Делегированное (рабочая или учебная учетная запись) | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL  |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | OrgContact. Read. ALL и Group. Read. ALL, Directory. Read. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ GET /contacts/{id}/transitiveMemberOf
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -61,38 +61,19 @@ GET /contacts/{id}/transitiveMemberOf
 
 Ниже приведен пример запроса.
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "orgcontact_list_transitivememberof"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/me/transitiveMemberOf
+GET https://graph.microsoft.com/v1.0/{id}/transitiveMemberOf
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/orgcontact-list-transitivememberof-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/orgcontact-list-transitivememberof-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/orgcontact-list-transitivememberof-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/orgcontact-list-transitivememberof-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
->**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+>**Примечание** . Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 
 <!-- {
   "blockType": "response",
