@@ -5,54 +5,62 @@ author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cafaae793f68ebdfb16661f05c9798f38eb8747a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b7fb87a125a9906ea7af92003a2aa614ba794791
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966410"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48797160"
 ---
-# <a name="list-applications"></a><span data-ttu-id="08601-103">Список приложений</span><span class="sxs-lookup"><span data-stu-id="08601-103">List applications</span></span>
+# <a name="list-applications"></a><span data-ttu-id="f2cdf-103">Список приложений</span><span class="sxs-lookup"><span data-stu-id="f2cdf-103">List applications</span></span>
 
-<span data-ttu-id="08601-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="08601-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f2cdf-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f2cdf-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="08601-105">Получение списка [приложений](../resources/application.md) в организации.</span><span class="sxs-lookup"><span data-stu-id="08601-105">Get the list of [applications](../resources/application.md) in this organization.</span></span>
+<span data-ttu-id="f2cdf-105">Получение списка [приложений](../resources/application.md) в организации.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-105">Get the list of [applications](../resources/application.md) in this organization.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="08601-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="08601-106">Permissions</span></span>
-<span data-ttu-id="08601-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="08601-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f2cdf-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f2cdf-106">Permissions</span></span>
+<span data-ttu-id="f2cdf-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f2cdf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="08601-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="08601-109">Permission type</span></span>      | <span data-ttu-id="08601-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="08601-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f2cdf-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f2cdf-109">Permission type</span></span>      | <span data-ttu-id="f2cdf-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f2cdf-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="08601-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="08601-111">Delegated (work or school account)</span></span> | <span data-ttu-id="08601-112">Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="08601-112">Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="08601-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="08601-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="08601-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="08601-114">Not supported.</span></span>    |
-|<span data-ttu-id="08601-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="08601-115">Application</span></span> | <span data-ttu-id="08601-116">Application.Read.All, Application.ReadWrite.All, Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="08601-116">Application.Read.All, Application.ReadWrite.All, Directory.Read.All</span></span> |
+|<span data-ttu-id="f2cdf-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f2cdf-111">Delegated (work or school account)</span></span> | <span data-ttu-id="f2cdf-112">Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f2cdf-112">Application.Read.All, Application.ReadWrite.All, Directory.Read.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="f2cdf-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f2cdf-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f2cdf-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-114">Not supported.</span></span>    |
+|<span data-ttu-id="f2cdf-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f2cdf-115">Application</span></span> | <span data-ttu-id="f2cdf-116">Application.Read.All, Application.ReadWrite.All, Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="f2cdf-116">Application.Read.All, Application.ReadWrite.All, Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="08601-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="08601-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f2cdf-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f2cdf-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="08601-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="08601-118">Optional query parameters</span></span>
-<span data-ttu-id="08601-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="08601-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="f2cdf-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="f2cdf-118">Optional query parameters</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="08601-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="08601-120">Request headers</span></span>
-| <span data-ttu-id="08601-121">Имя</span><span class="sxs-lookup"><span data-stu-id="08601-121">Name</span></span>           | <span data-ttu-id="08601-122">Описание</span><span class="sxs-lookup"><span data-stu-id="08601-122">Description</span></span>                |
+<span data-ttu-id="f2cdf-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-119">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`.</span></span> <span data-ttu-id="f2cdf-120">Вы можете использовать `$search` в свойствах **displayName** и **description** .</span><span class="sxs-lookup"><span data-stu-id="f2cdf-120">You can use `$search` on the **displayName** and **description** properties.</span></span> <span data-ttu-id="f2cdf-121">Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-121">When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters.</span></span> <span data-ttu-id="f2cdf-122">Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-122">There can be a slight delay between when an item is added or updated and when it is available in the index.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="f2cdf-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f2cdf-123">Request headers</span></span>
+
+| <span data-ttu-id="f2cdf-124">Имя</span><span class="sxs-lookup"><span data-stu-id="f2cdf-124">Name</span></span>           | <span data-ttu-id="f2cdf-125">Описание</span><span class="sxs-lookup"><span data-stu-id="f2cdf-125">Description</span></span>                |
 |:---------------|:---------------------------|
-| <span data-ttu-id="08601-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="08601-123">Authorization</span></span>  | <span data-ttu-id="08601-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="08601-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="f2cdf-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f2cdf-126">Authorization</span></span>  | <span data-ttu-id="f2cdf-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="f2cdf-129">ConsistencyLevel</span><span class="sxs-lookup"><span data-stu-id="f2cdf-129">ConsistencyLevel</span></span> | <span data-ttu-id="f2cdf-130">необязательный.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-130">eventual.</span></span> <span data-ttu-id="f2cdf-131">Этот заголовок и `$count` требуются при использовании `$search`или применении `$filter` с параметром запроса `$orderby`.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-131">This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter.</span></span> <span data-ttu-id="f2cdf-132">В нем используется индекс, который может не соответствовать последним изменениям объекта.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-132">It uses an index that may not be up-to-date with recent changes to the object.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="08601-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="08601-126">Request body</span></span>
-<span data-ttu-id="08601-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="08601-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f2cdf-133">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f2cdf-133">Request body</span></span>
+<span data-ttu-id="f2cdf-134">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="08601-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="08601-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f2cdf-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="f2cdf-135">Response</span></span>
 
-<span data-ttu-id="08601-129">При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [application](../resources/application.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="08601-129">If successful, this method returns a `200 OK` response code and a collection of [application](../resources/application.md) objects in the response body.</span></span>
-## <a name="examples"></a><span data-ttu-id="08601-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="08601-130">Examples</span></span>
-### <a name="request"></a><span data-ttu-id="08601-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="08601-131">Request</span></span>
-<span data-ttu-id="08601-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="08601-132">Here is an example of the request.</span></span>
+<span data-ttu-id="f2cdf-136">При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [application](../resources/application.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-136">If successful, this method returns a `200 OK` response code and a collection of [application](../resources/application.md) objects in the response body.</span></span>
+
+## <a name="examples"></a><span data-ttu-id="f2cdf-137">Примеры</span><span class="sxs-lookup"><span data-stu-id="f2cdf-137">Examples</span></span>
+
+### <a name="example-1-get-the-list-of-applications"></a><span data-ttu-id="f2cdf-138">Пример 1: получение списка приложений</span><span class="sxs-lookup"><span data-stu-id="f2cdf-138">Example 1: Get the list of applications</span></span>
+
+#### <a name="request"></a><span data-ttu-id="f2cdf-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="f2cdf-139">Request</span></span>
+
+<span data-ttu-id="f2cdf-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-140">Here is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="08601-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="08601-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f2cdf-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="f2cdf-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_application"
@@ -61,29 +69,31 @@ GET /applications
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/applications
 ```
-# <a name="c"></a>[<span data-ttu-id="08601-134">C#</span><span class="sxs-lookup"><span data-stu-id="08601-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f2cdf-142">C#</span><span class="sxs-lookup"><span data-stu-id="f2cdf-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="08601-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="08601-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f2cdf-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f2cdf-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-application-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="08601-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="08601-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f2cdf-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f2cdf-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-application-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="08601-137">Java</span><span class="sxs-lookup"><span data-stu-id="08601-137">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="f2cdf-145">Java</span><span class="sxs-lookup"><span data-stu-id="f2cdf-145">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-application-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="08601-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="08601-138">Response</span></span>
-<span data-ttu-id="08601-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="08601-139">Here is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="f2cdf-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="f2cdf-146">Response</span></span>
 
-> <span data-ttu-id="08601-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="08601-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="f2cdf-147">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-147">Here is an example of the response.</span></span>
+
+> <span data-ttu-id="f2cdf-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,71 +103,141 @@ GET https://graph.microsoft.com/v1.0/applications
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1229
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications",
-    "value": [
-        {
-            "id": "00af5dfb-85da-4b41-a677-0c6b86dd34f8",
-            "deletedDateTime": null,
-            "isFallbackPublicClient": false,
-            "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
-            "applicationTemplateId": null,
-            "identifierUris": [
-                "http://contoso/a7770d29-4321-41a6-b863-ca11d6639448"
-            ],
-            "createdDateTime": "2019-09-15T05:23:08Z",
-            "displayName": "My app",
-            "isDeviceOnlyAuthSupported": null,
-            "groupMembershipClaims": null,
-            "optionalClaims": null,
-            "orgRestrictions": [],
-            "publisherDomain": "contoso.onmicrosoft.com",
-            "signInAudience": "AzureADMyOrg",
-            "tags": [],
-            "tokenEncryptionKeyId": null,
-            "api": {
-                "requestedAccessTokenVersion": null,
-                "acceptMappedClaims": null,
-                "knownClientApplications": [],
-                "oauth2PermissionScopes": [],
-                "preAuthorizedApplications": []
-            },
-            "appRoles": [],
-            "publicClient": {
-                "redirectUris": []
-            },
-            "info": {
-                "termsOfServiceUrl": null,
-                "supportUrl": null,
-                "privacyStatementUrl": null,
-                "marketingUrl": null,
-                "logoUrl": null
-            },
-            "keyCredentials": [],
-            "parentalControlSettings": {
-                "countriesBlockedForMinors": [],
-                "legalAgeGroupRule": "Allow"
-            },
-            "passwordCredentials": [],
-            "requiredResourceAccess": [],
-            "web": {
-                "redirectUris": [
-                    "https://127.0.0.1:444/applications/default.aspx"
-                ],
-                "homePageUrl": "http://www.contoso.com/landingPage",
-                "logoutUrl": null,
-                "implicitGrantSettings": {
-                    "enableIdTokenIssuance": true,
-                    "enableAccessTokenIssuance": false
-                }
-            }
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications",
+  "value": [
+    {
+      "appId": "00000000-0000-0000-0000-000000000000",
+      "identifierUris": [ "http://contoso/" ],
+      "displayName": "My app",
+      "publisherDomain": "contoso.com",
+      "signInAudience": "AzureADMyOrg"
+    }
+  ]
 }
 ```
 
+### <a name="example-2-get-only-a-count-of-applications"></a><span data-ttu-id="f2cdf-150">Пример 2: получение только количества приложений</span><span class="sxs-lookup"><span data-stu-id="f2cdf-150">Example 2: Get only a count of applications</span></span>
+
+#### <a name="request"></a><span data-ttu-id="f2cdf-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="f2cdf-151">Request</span></span>
+
+<span data-ttu-id="f2cdf-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-152">The following is an example of the request.</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/applications/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a><span data-ttu-id="f2cdf-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="f2cdf-153">Response</span></span>
+
+<span data-ttu-id="f2cdf-154">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-154">The following is an example of the response.</span></span>
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+`893`
+
+### <a name="example-3-use-filter-and-top-to-get-one-application-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a><span data-ttu-id="f2cdf-155">Пример 3: использование параметров $filter и $top для получения одного приложения с отображаемым именем, которое начинается с "а", включая количество возвращаемых объектов</span><span class="sxs-lookup"><span data-stu-id="f2cdf-155">Example 3: Use $filter and $top to get one application with a display name that starts with 'a' including a count of returned objects</span></span>
+
+#### <a name="request"></a><span data-ttu-id="f2cdf-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="f2cdf-156">Request</span></span>
+
+<span data-ttu-id="f2cdf-157">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-157">The following is an example of the request.</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/applications?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a><span data-ttu-id="f2cdf-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="f2cdf-158">Response</span></span>
+
+<span data-ttu-id="f2cdf-159">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-159">The following is an example of the response.</span></span>
+
+><span data-ttu-id="f2cdf-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.application",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#applications",
+  "@odata.count":1,
+  "value":[
+    {
+      "appId": "00000000-0000-0000-0000-000000000000",
+      "identifierUris": [ "http://contoso/" ],
+      "displayName":"a",
+      "publisherDomain": "contoso.com",
+      "signInAudience": "AzureADMyOrg"
+    }
+  ]
+}
+```
+
+### <a name="example-4-use-search-to-get-applications-with-display-names-that-contain-the-letters-web-including-a-count-of-returned-objects"></a><span data-ttu-id="f2cdf-162">Пример 4: использование параметра $search для получения приложений с отображаемыми именами, содержащими буквы "Web", включая количество возвращаемых объектов</span><span class="sxs-lookup"><span data-stu-id="f2cdf-162">Example 4: Use $search to get applications with display names that contain the letters 'Web' including a count of returned objects</span></span>
+
+#### <a name="request"></a><span data-ttu-id="f2cdf-163">Запрос</span><span class="sxs-lookup"><span data-stu-id="f2cdf-163">Request</span></span>
+
+<span data-ttu-id="f2cdf-164">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-164">The following is an example of the request.</span></span>
+
+<!-- {
+  "blockType": "request",
+  "name": "get_web_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/applications?$search="displayName:Web"&$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a><span data-ttu-id="f2cdf-165">Отклик</span><span class="sxs-lookup"><span data-stu-id="f2cdf-165">Response</span></span>
+
+<span data-ttu-id="f2cdf-166">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-166">The following is an example of the response.</span></span>
+
+><span data-ttu-id="f2cdf-p107">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f2cdf-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.application",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#applications",
+  "@odata.count":1396,
+  "value":[
+    {
+      "appId": "00000000-0000-0000-0000-000000000000",
+      "identifierUris": [ "http://contoso/" ],
+      "displayName":"'DotNetWeb-App' ",
+      "publisherDomain": "contoso.com",
+      "signInAudience": "AzureADMyOrg"
+    }
+  ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -171,4 +251,3 @@ Content-length: 1229
   ]
 }
 -->
-
