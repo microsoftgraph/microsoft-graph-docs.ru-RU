@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cafaae793f68ebdfb16661f05c9798f38eb8747a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b7fb87a125a9906ea7af92003a2aa614ba794791
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966410"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48797160"
 ---
 # <a name="list-applications"></a>Список приложений
 
@@ -34,12 +34,15 @@ ms.locfileid: "47966410"
 GET /applications
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
+
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Вы можете использовать `$search` в свойствах **displayName** и **description** . Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя           | Описание                |
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`или применении `$filter` с параметром запроса `$orderby`. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -47,8 +50,13 @@ GET /applications
 ## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [application](../resources/application.md) в тексте отклика.
+
 ## <a name="examples"></a>Примеры
-### <a name="request"></a>Запрос
+
+### <a name="example-1-get-the-list-of-applications"></a>Пример 1: получение списка приложений
+
+#### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 
@@ -80,10 +88,12 @@ GET https://graph.microsoft.com/v1.0/applications
 ---
 
 
-### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,71 +103,141 @@ GET https://graph.microsoft.com/v1.0/applications
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 1229
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications",
-    "value": [
-        {
-            "id": "00af5dfb-85da-4b41-a677-0c6b86dd34f8",
-            "deletedDateTime": null,
-            "isFallbackPublicClient": false,
-            "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
-            "applicationTemplateId": null,
-            "identifierUris": [
-                "http://contoso/a7770d29-4321-41a6-b863-ca11d6639448"
-            ],
-            "createdDateTime": "2019-09-15T05:23:08Z",
-            "displayName": "My app",
-            "isDeviceOnlyAuthSupported": null,
-            "groupMembershipClaims": null,
-            "optionalClaims": null,
-            "orgRestrictions": [],
-            "publisherDomain": "contoso.onmicrosoft.com",
-            "signInAudience": "AzureADMyOrg",
-            "tags": [],
-            "tokenEncryptionKeyId": null,
-            "api": {
-                "requestedAccessTokenVersion": null,
-                "acceptMappedClaims": null,
-                "knownClientApplications": [],
-                "oauth2PermissionScopes": [],
-                "preAuthorizedApplications": []
-            },
-            "appRoles": [],
-            "publicClient": {
-                "redirectUris": []
-            },
-            "info": {
-                "termsOfServiceUrl": null,
-                "supportUrl": null,
-                "privacyStatementUrl": null,
-                "marketingUrl": null,
-                "logoUrl": null
-            },
-            "keyCredentials": [],
-            "parentalControlSettings": {
-                "countriesBlockedForMinors": [],
-                "legalAgeGroupRule": "Allow"
-            },
-            "passwordCredentials": [],
-            "requiredResourceAccess": [],
-            "web": {
-                "redirectUris": [
-                    "https://127.0.0.1:444/applications/default.aspx"
-                ],
-                "homePageUrl": "http://www.contoso.com/landingPage",
-                "logoutUrl": null,
-                "implicitGrantSettings": {
-                    "enableIdTokenIssuance": true,
-                    "enableAccessTokenIssuance": false
-                }
-            }
-        }
-    ]
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications",
+  "value": [
+    {
+      "appId": "00000000-0000-0000-0000-000000000000",
+      "identifierUris": [ "http://contoso/" ],
+      "displayName": "My app",
+      "publisherDomain": "contoso.com",
+      "signInAudience": "AzureADMyOrg"
+    }
+  ]
 }
 ```
 
+### <a name="example-2-get-only-a-count-of-applications"></a>Пример 2: получение только количества приложений
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_count_only"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/applications/$count
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: text/plain
+```
+
+`893`
+
+### <a name="example-3-use-filter-and-top-to-get-one-application-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 3: использование параметров $filter и $top для получения одного приложения с отображаемым именем, которое начинается с "а", включая количество возвращаемых объектов
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/applications?$filter=startswith(displayName, 'a')&$count=true&$top=1&$orderby=displayName
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.application",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#applications",
+  "@odata.count":1,
+  "value":[
+    {
+      "appId": "00000000-0000-0000-0000-000000000000",
+      "identifierUris": [ "http://contoso/" ],
+      "displayName":"a",
+      "publisherDomain": "contoso.com",
+      "signInAudience": "AzureADMyOrg"
+    }
+  ]
+}
+```
+
+### <a name="example-4-use-search-to-get-applications-with-display-names-that-contain-the-letters-web-including-a-count-of-returned-objects"></a>Пример 4: использование параметра $search для получения приложений с отображаемыми именами, содержащими буквы "Web", включая количество возвращаемых объектов
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_web_count"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/applications?$search="displayName:Web"&$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.application",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#applications",
+  "@odata.count":1396,
+  "value":[
+    {
+      "appId": "00000000-0000-0000-0000-000000000000",
+      "identifierUris": [ "http://contoso/" ],
+      "displayName":"'DotNetWeb-App' ",
+      "publisherDomain": "contoso.com",
+      "signInAudience": "AzureADMyOrg"
+    }
+  ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -171,4 +251,3 @@ Content-length: 1229
   ]
 }
 -->
-
