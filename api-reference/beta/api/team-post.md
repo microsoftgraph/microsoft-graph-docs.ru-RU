@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6ab87af3faed82a788b6f505ef5e6a22c0fba1eb
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 30d942e192a89caba71d1093016b3be9a6fa8ef2
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782881"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796691"
 ---
 # <a name="create-team"></a>Создание команды
 
@@ -130,7 +130,7 @@ Content-Type: application/json
    "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('standard')",
    "displayName":"My Sample Team",
    "description":"My Sample Team’s Description",
-   "members@odata.bind":[
+   "members":[
       {
          "@odata.type":"#microsoft.graph.aadUserConversationMember",
          "roles":[
@@ -600,7 +600,7 @@ Content-Location: /teams/{teamId}
 Ниже перечислены распространенные причины этого отклика.
 
 * Для **createdDateTime** установлено значение в будущем.
-* Параметр **createdDateTime** указан правильно, но отсутствует атрибут экземпляра **channelCreationMode** или ему присвоено недопустимое значение.
+* Параметр **createdDateTime** указан правильно, но отсутствует атрибут экземпляра **teamCreationMode** или ему присвоено недопустимое значение.
 
 
 ## <a name="see-also"></a>См. также
