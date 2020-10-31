@@ -4,12 +4,12 @@ description: Описывает доступные пакеты SDK, Подде�
 localization_priority: Normal
 author: MichaelMainer
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: b839b9a7ae0a32a22c9d20a61c96d021137388e3
-ms.sourcegitcommit: 93b6781adf2c889235022d34ab50e2a4d62760c5
+ms.openlocfilehash: 88d5cc0515ef71ffa12e09fac7a6875dfb305bb2
+ms.sourcegitcommit: adc36691fd77544eeb1ec061ccfa59abffbfea9a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46589307"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "48819685"
 ---
 # <a name="microsoft-graph-sdks-overview"></a>Общие сведения о пакетах SDK Microsoft Graph
 
@@ -41,6 +41,6 @@ ms.locfileid: "46589307"
 
 При создании приложений с помощью Microsoft Graph рекомендуется получить бесплатную подписку на Microsoft 365 для разработчиков, зарегистрировавшись в программе для [разработчиков microsoft 365](https://developer.microsoft.com/microsoft-365/dev-program).
 
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="see-also"></a>См. также
 
 [Документация по требованиям по проектированию](https://github.com/microsoftgraph/msgraph-sdk-design) SDK содержит более подробные сведения о возможностях и возможностях SDK. Запрос или голосование за дополнительные функции на сайте [Microsoft Graph UserVoice](https://microsoftgraph.uservoice.com) . Список пакетов SDK и примеров для Microsoft Graph представлен на [странице ресурсы Microsoft Graph](https://developer.microsoft.com/en-us/graph/gallery/?filterBy=Samples,SDKs).
