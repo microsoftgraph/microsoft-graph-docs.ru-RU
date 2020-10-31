@@ -5,25 +5,25 @@ author: nilakhan
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 16931e8296bd390f9531e3d9cc3ed36df7886534
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6e5a8a06f21d338703db7ca557e9911c96b87bbb
+ms.sourcegitcommit: 3afb8123098a25ce30b16648ce2f31e8eaac388c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727950"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816163"
 ---
 # <a name="upload-documents-using-the-microsoft-graph-universal-print-api"></a>Отправка документов с помощью API универсальной печати Microsoft Graph
 
 Чтобы напечатать документ с помощью API универсальной печати в Microsoft Graph, [создайте задание печати](/graph/api/printershare-post-jobs?view=graph-rest-beta), отправьте документ и [запустите задание печати](/graph/api/printjob-start?view=graph-rest-beta). В этой статье описано, как отправить документ, начиная с [создания сеанса отправки](/graph/api/printdocument-createuploadsession?view=graph-rest-beta).
 
-Чтобы отправить файл или его часть, приложение отправляет запрос PUT на адрес **uploadUrl**, указанный в ответе для **createUploadSession**.
+Чтобы отправить файл или его часть, приложение отправляет запрос PUT на адрес **uploadUrl** , указанный в ответе для **createUploadSession** .
 Вы можете отправить файл целиком или разделить его на несколько диапазонов байтов. При этом каждый запрос должен содержать фрагмент размером менее 10 МБ.
 
-Сегменты файла можно отправлять в любом порядке, в том числе параллельно (до четырех параллельных запросов). После отправки всех двоичных сегментов документа двоичный файл связывается с **printDocument**.
+Сегменты файла можно отправлять в любом порядке, в том числе параллельно (до четырех параллельных запросов). После отправки всех двоичных сегментов документа двоичный файл связывается с **printDocument** .
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Отправьте запрос PUT на адрес **uploadUrl**, указанный в ответе для **createUploadSession**.
+Отправьте запрос PUT на адрес **uploadUrl** , указанный в ответе для **createUploadSession** .
 
 ### <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание   |
@@ -83,11 +83,11 @@ Content-Type: application/json
 
 ## <a name="completing-a-file"></a>Завершение отправки файла
 
-После получения последнего диапазона байтов файла сервер отправляет ответ `HTTP 201 Created`. Текст ответа также будет включать набор свойств для связанного **printDocument**.
+После получения последнего диапазона байтов файла сервер отправляет ответ `HTTP 201 Created`. Текст ответа также будет включать набор свойств для связанного **printDocument** .
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "printjob.readwrite" } -->
 
-```
+```http
 PUT https://print.print.microsoft.com/uploadSessions/5400be13-5a4e-4c20-be70-90c85bfe5d6e?tempauthtoken={token}
 Content-Length: 10
 Content-Range: bytes 4533312-4533321/4533322
@@ -142,7 +142,7 @@ Content-Type: application/json
 
 Чтобы отменить сеанс отправки, отправьте запрос DELETE на URL-адрес отправки. Это следует делать в тех случаях, когда отправка прерывается (например, если пользователь отменил передачу).
 
-Временные файлы и соответствующий сеанс отправки автоматически очищаются по прошествии времени, указанного свойством **expirationDateTime**.
+Временные файлы и соответствующий сеанс отправки автоматически очищаются по прошествии времени, указанного свойством **expirationDateTime** .
 
 ### <a name="request"></a>Запрос
 

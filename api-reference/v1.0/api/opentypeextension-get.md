@@ -5,12 +5,12 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: extensions
 doc_type: apiPageType
-ms.openlocfilehash: 5e861c038a6baa28e820775e4c0030a25e9095ff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 55b4a8187942e78156370c05c634153d9f479dd6
+ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063102"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48796754"
 ---
 # <a name="get-open-extension"></a>Получение открытого расширения
 
@@ -22,9 +22,9 @@ ms.locfileid: "48063102"
 
 |**Сценарий GET**|**Поддерживаемые ресурсы**|**Текст ответа**|
 |:-----|:-----|:-----|
-|Получение определенного расширения из экземпляра известного ресурса.| [Device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md) | Только открытое расширение.|
-|Получение экземпляра известного ресурса, дополненного определенным расширением.|Device, event, group, group event, group post, message, organization, personal contact, user |Экземпляр известного ресурса, дополненный открытым расширением.|
-|Поиск экземпляров ресурсов и их дополнение определенным расширением. |Event, group event, group post, message, personal contact|Экземпляры ресурса, дополненные открытым расширением.|
+|Получение определенного расширения из экземпляра известного ресурса.| [Device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md), [task](../resources/todotask.md), [tasklist](../resources/todotasklist.md).  | Только открытое расширение.|
+|Получение экземпляра известного ресурса, дополненного определенным расширением.|Device, event, group, group event, group post, message, organization, personal contact, user, task, task list. |Экземпляр известного ресурса, дополненный открытым расширением.|
+|Поиск экземпляров ресурсов и их дополнение определенным расширением. |Event, group event, group post, message, personal contact, task, task list.|Экземпляры ресурса, дополненные открытым расширением.|
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,7 +41,8 @@ ms.locfileid: "48063102"
 | [organization](../resources/organization.md) | User.Read | Не поддерживается | Organization.Read.All |
 | [contact](../resources/contact.md) (личный контакт) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
-
+| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -62,12 +63,13 @@ GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
 GET /organization/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/extensions/{extensionId}
 ```
-
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>Получение известного экземпляра ресурса с соответствующим расширением 
 
-Для типов ресурса, таких как event, group event, group post, message, personal contact, можно использовать такой же запрос REST, что и при получении экземпляра ресурса. Найдите расширение, соответствующее заданному свойству **id**, и дополните экземпляр расширением. Отклик включает большинство свойств ресурса.
+Для типов ресурса, таких как event, group event, group post, message, personal contact, task, task list, можно использовать такой же запрос REST, что и при получении экземпляра ресурса. Найдите расширение, соответствующее заданному свойству **id** , и дополните экземпляр расширением. Отклик включает большинство свойств ресурса.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -76,8 +78,9 @@ GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{Id|userPrincipalName}/todo/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 ```
-
 
 Для типов ресурса device, group, organization и user также необходимо использовать параметр `$select`, чтобы включить свойство **id** и другие свойства, которые необходимо получить из экземпляра ресурса:
 
@@ -91,7 +94,7 @@ GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId
 
 ### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a>Фильтрация экземпляров ресурсов с соответствующим расширением 
 
-Используйте такой же запрос REST, что и при получении коллекции поддерживаемого ресурса, отфильтруйте в коллекции экземпляры, содержащие расширение с соответствующим свойством **id**, и дополните эти экземпляры расширением.
+Используйте такой же запрос REST, что и при получении коллекции поддерживаемого ресурса, отфильтруйте в коллекции экземпляры, содержащие расширение с соответствующим свойством **id** , и дополните эти экземпляры расширением.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -107,7 +110,7 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 ## <a name="path-parameters"></a>Параметры пути
 |Параметр|Тип|Описание|
 |:-----|:-----|:-----|
-|Id|string|Заполнитель уникального идентификатора для объекта в соответствующей коллекции, например сообщения, события или контакта. Обязательный. Не следует путать его со свойством **id** объекта **openTypeExtension**.|
+|Id|string|Заполнитель уникального идентификатора для объекта в соответствующей коллекции, например сообщения, события или контакта. Обязательный. Не следует путать его со свойством **id** объекта **openTypeExtension** .|
 |extensionId|string|Заполнитель имени расширения, которое представляет собой уникальный текстовый идентификатор для расширения, либо полного имени, в котором сцеплены тип расширения и уникальный текстовый идентификатор. Полное имя возвращается в свойстве **id** при создании расширения. Обязательный.|
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
