@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: MSGraphDocsVteam
 localization_priority: Priority
-ms.openlocfilehash: c3521733b2bf6f048acc0ffa858312af371b6f51
-ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
+ms.openlocfilehash: 03079840ce7a1f189febd8c0528d86dd10e90b03
+ms.sourcegitcommit: adc36691fd77544eeb1ec061ccfa59abffbfea9a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48771840"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "48819713"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -24,9 +24,6 @@ ms.locfileid: "48771840"
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | v1.0 | Добавлено поле **AlternateIdLogin** в определение политики [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-1.0).|
 | Дополнение | бета | Добавлено поле **AlternateIdLogin** в определение политики [homeRealmDiscoveryPolicy](/graph/api/resources/homerealmdiscoverypolicy?view=graph-rest-beta).|
-| Дополнение | бета | Добавлена сущность [fido2AuthenticationMethodConfiguration](/graph/api/resources/fido2AuthenticationMethodConfiguration?view=graph-rest-beta) для управления политикой способов проверки подлинности пользовательских ключей безопасности FIDO2. |
-| Дополнение | бета | Добавлена сущность [passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](/graph/api/resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration?view=graph-rest-beta) для управления политикой способа проверки подлинности при входе без пароля с помощью Microsoft Authenticator. |
-| Дополнение | бета | Добавлен объект [emailauthenticationmethod](/graph/api/resources/emailauthenticationmethod?view=graph-rest-beta) для управления методом проверки подлинности электронной почты пользователей. |
 | Дополнение | Бета-версия и версия 1.0 | Добавлены свойства [verified publisher](/graph/api/resources/verifiedPublisher) для ресурсов [application](/graph/api/resources/application) и [servicePrincipal](/graph/api/resources/serviceprincipal). |
 | Дополнение | Бета-версия и версия 1.0 | Добавлены методы [setVerifiedPublisher](/graph/api/application-setverifiedpublisher) и [unsetVerifiedPublisher](/graph/api/application-unsetverifiedpublisher) для ресурса [application](/graph/api/resources/application). |
 
@@ -101,6 +98,12 @@ ms.locfileid: "48771840"
 |:---|:---|:---|
 |Дополнение|бета|Добавлен метод [revokeGrants](/graph/api/permission-revokeGrants?view=graph-rest-beta) к ресурсу [permission](/graph/api/resources/permission?view=graph-rest-beta).|
 
+### <a name="identity-and-access"></a>Удостоверение и доступ
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | Версия 1.0 | Добавлена поддержка параметров запросов `$count`, `$search` и `$filter` для улучшения возможностей запросов для следующих действий: <br><ul><li>[Перечисление приложений](/graph/api/application-list?view=graph-rest-1.0)</li><li>[Перечисление устройств](/graph/api/device-list?view=graph-rest-1.0)</li><li>[Перечисление групп устройств](/graph/api/device-list-memberof?view=graph-rest-1.0)</li><li>[Перечисление транзитивных групп устройств](/graph/api/device-list-transitivememberof?view=graph-rest-1.0)</li><li>[Перечисление групп](/graph/api/group-list?view=graph-rest-1.0)</li><li>[Перечисление group memberOf](/graph/api/group-list-memberof?view=graph-rest-1.0)</li><li>[Перечисление участников группы](/graph/api/group-list-members?view=graph-rest-1.0)</li><li>[Перечисление group transitive memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-1.0)</li><li>[Перечисление транзитивных участников группы](/graph/api/group-list-transitivemembers?view=graph-rest-1.0)</li><li>[Перечисление объектов orgContact](/graph/api/orgcontact-list?view=graph-rest-1.0)</li><li>[Перечисление объектов servicePrincipal](/graph/api/serviceprincipal-list?view=graph-rest-1.0)</li><li>[Перечисление servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0)</li><li>[Перечисление servicePrincipal transitive memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0)</li><li>[Перечисление пользователей](/graph/api/user-list?view=graph-rest-1.0)</li><li>[Перечисление user memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0)</li><li>[Перечисление user transitive memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-1.0)</li></ul><br>Добавлены примеры использования OData cast для следующего: <ul><li>[Перечисление group memberOf](/graph/api/group-list-memberof?view=graph-rest-1.0)</li><li>[Перечисление участников группы](/graph/api/group-list-members?view=graph-rest-1.0)</li><li>[Перечисление group transitive memberOf](/graph/api/group-list-transitivememberof?view=graph-rest-1.0)</li><li>[Перечисление servicePrincipal memberOf](/graph/api/serviceprincipal-list-memberof?view=graph-rest-1.0)</li><li>[Перечисление servicePrincipal transitive memberOf](/graph/api/serviceprincipal-list-transitivememberof?view=graph-rest-1.0)</li><li>[Перечисление user memberOf](/graph/api/user-list-memberof?view=graph-rest-1.0)</li><li>[Перечисление user transitive memberOf](/graph/api/user-list-transitivememberof?view=graph-rest-1.0)</li></ul> |
+
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
@@ -118,13 +121,34 @@ ms.locfileid: "48771840"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
+|Дополнение|бета|Добавлена поддержка **completeMigration** для ресурсов [channel](/graph/api/resources/channel?view=graph-rest-beta) и [team](/graph/api/resources/team?view=graph-rest-beta)|
+|Дополнение|бета|Добавлено свойство **teamCreationMode** для ресурса [team](/graph/api/resources/team?view=graph-rest-beta).|
+|Дополнение|бета|Добавлено свойство **channelCreationMode** для ресурса [channel](/graph/api/resources/channel?view=graph-rest-beta).|
 | Дополнение | Версия 1.0 | Добавлены методы [Перечисление участников](/graph/api/conversationmember-list?view=graph-rest-beta), [Получение участника](/graph/api/conversationmember-get?view=graph-rest-beta), [Добавление участника](/graph/api/conversationmember-add?view=graph-rest-beta), [Обновление участника](/graph/api/conversationmember-update?view=graph-rest-beta) и [Удаление участника](/graph/api/conversationmember-delete?view=graph-rest-beta) для ресурсов [conversationMember](/graph/api/resources/conversationmember?view=graph-rest-beta) и [aadUserConversationMember](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta).|
+
+### <a name="to-do-tasks"></a>Задачи To-Do
+
+| **Тип изменения** | **Версия** | **Описание** |
+|:---|:---|:---|
+|Дополнение|Версия 1.0|Добавлена связь **todo** для ресурса [user](/graph/api/resources/user?view=graph-rest-1.0).|
+|Дополнение|Версия 1.0|Добавлен тип ресурса [todo](/graph/api/resources/todo?view=graph-rest-1.0).|
+|Дополнение|Версия 1.0|Добавлен тип ресурса [todoTaskList](/graph/api/resources/todoTaskList?view=graph-rest-1.0).|
+|Дополнение|Версия 1.0|Добавлен тип ресурса [todoTask](/graph/api/resources/todoTask?view=graph-rest-1.0).|
+|Дополнение|Версия 1.0|Добавлен тип ресурса [linkedResource](/graph/api/resources/linkedResource?view=graph-rest-1.0).|
+|Дополнение|Версия 1.0|Добавлен тип перечисления **wellknownListName** .|
+|Дополнение|Версия 1.0|Добавлен тип перечисления **bodyType** .|
+|Дополнение|Версия 1.0|Добавлен тип перечисления **importance** .|
+|Дополнение|Версия 1.0|Добавлен тип перечисления **taskStatus** .|
+|Дополнение|Версия 1.0|Добавлен метод [delta](/graph/api/todoTaskList-delta?view=graph-rest-1.0) для ресурса [todoTaskList](/graph/api/resources/todoTaskList?view=graph-rest-1.0).|
+|Дополнение|Версия 1.0|Добавлен метод [delta](/graph/api/todoTask-delta?view=graph-rest-1.0) для ресурса [todoTask](/graph/api/resources/todoTask?view=graph-rest-1.0).|
+
 
 ### <a name="users"></a>Пользователи
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение | Бета-версия и версия 1.0 | Добавлены свойства **employeeType** , **employeeOrgData** и **employeeHireDate** для объекта [user](/graph/api/resources/user). |
+| Изменение | Бета-версия и версия 1.0 | Свойства **businessPhones** и **mobilePhone** изменены в формат "только для чтения" для пользователей, синхронизированных из локального каталога в объекте [user](/graph/api/resources/user). |
 
 ## <a name="september-2020"></a>Сентябрь 2020 г.
 
@@ -227,6 +251,7 @@ ms.locfileid: "48771840"
 | Дополнение | бета | Добавлен тип перечисления **volumeType** .|
 | Дополнение | бета | Добавлен сложный тип **directorySizeQuota** для объекта [organization](/graph/api/resources/organization?view=graph-rest-beta). |
 
+
 ### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
@@ -261,17 +286,15 @@ ms.locfileid: "48771840"
 | Дополнение        | бета | Запрашивайте внешние данные в [нескольких связях](search-concept-custom-types.md).|
 | Изменение        | бета |Some properties in the request and response have been renamed and are deprecated.  See [more details](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#schema-change-deprecation-warning) about the deprecation.|
 
-### <a name="teamwork"></a>Командная работа
+### <a name="teamwork"></a>Командная работа 
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-|Дополнение|Бета-версия и версия 1.0|Добавлено свойство **lastEditedDateTime** для ресурса [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta).|
-|Изменение| Бета-версия и версия 1.0| Changed **lastModifiedDateTime** property in the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resource to represent the time the entity was last touched. It will always be set and never have a `null` value|
+|Дополнение|Бета-версия и версия 1.0|Добавлено свойство **lastEditedDateTime** для ресурса [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta).|    
+|Изменение| Бета-версия и версия 1.0| Changed **lastModifiedDateTime** property in the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) resource to represent the time the entity was last touched. It will always be set and never have a `null` value|  
 |Дополнение|бета| Добавлено свойство **createdDateTime** для ресурсов [channel](/graph/api/resources/channel?view=graph-rest-beta) и [team](/graph/api/resources/team?view=graph-rest-beta).|
 |Дополнение|Бета-версия и версия 1.0| Добавлен метод [Update chatMessage](/graph/api/chatmessage-update) для ресурса [chatMessage](/graph/api/resources/chatmessage).|
-|Дополнение|v1.0| Добавлены способы [Список членов](/graph/api/team-list-members?view=graph-rest-1.0&preserve-view=true), [Добавление членов](/graph/api/team-post-members?view=graph-rest-1.0&preserve-view=true), и [Удаление членов](/graph/api/team-delete-members?view=graph-rest-1.0&preserve-view=true).|
-
-### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
+|Дополнение|v1.0| Добавлены методы [Список членов](/graph/api/team-list-members?view=graph-rest-1.0&preserve-view=true), [Добавление членов](/graph/api/team-post-members?view=graph-rest-1.0&preserve-view=true), и [Удаление членов](/graph/api/team-delete-members?view=graph-rest-1.0&preserve-view=true).|
 
 ### <a name="users"></a>Пользователи
 
@@ -447,7 +470,7 @@ ms.locfileid: "48771840"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Изменение | бета | Метод [Update printer](/graph/api/printer-update) теперь поддерживает разрешения приложений и кодировку IPP.|
+| Изменение | Бета | Метод [Update printer](/graph/api/printer-update) теперь поддерживает разрешения приложений и кодировку IPP.|
 | Дополнение | Бета | Добавлены следующие области разрешений:<ul><li>Printer.ReadWrite.All</li><li>PrintJob.ReadBasic.All</li><li>PrintJob.Read.All</li><li>PrintJob.ReadWriteBasic.All</li><li>PrintJob.ReadWrite.All</li></ul>Для получения более подробных сведений см. [Справочник по разрешениям](/graph/permissions-reference#universal-print-permissions).  |
 | Дополнение | Бета | Для API универсальной печати добавлены следующие ресурсы: <ul><li>[printTask](/graph/api/resources/printtask?view=graph-rest-beta)</li><li>[printTaskDefinition](/graph/api/resources/printtaskdefinition?view=graph-rest-beta)</li><li>[printTaskStatus](/graph/api/resources/printtaskstatus?view=graph-rest-beta)</li><li>[printTaskTrigger](/graph/api/resources/printtasktrigger?view=graph-rest-beta)</li></ul> |
 | Изменение | Бета | [Get printJob](/graph/api/printjob-get?view=graph-rest-beta) теперь поддерживает разрешения приложений и `$expand=tasks`. |
@@ -772,7 +795,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Дополнение | 1.0 | Добавлена поддержка для подписок [веб-перехватчиков](webhooks.md) на записи звонков.|
 | Изменение | 1.0 | Добавлены `frequency60GHz` и `unknownFutureValue` для перечисления **microsoft.graph.callRecords.wifiBand** . |
 | Изменение | 1.0 | Добавлено `voicemail` для перечисления **microsoft.graph.callRecords.serviceRole** .|
-| Дополнение | 1.0 | Добавлен API [List sessions](/graph/api/callrecords-session-list?view=graph-rest-beta). |
+| Дополнение | Версия 1.0 | Добавлен API [List sessions](/graph/api/callrecords-session-list?view=graph-rest-beta). |
 
 ### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
 
@@ -1172,7 +1195,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 |Добавление|Бета|Добавлена функция [getManagedDevicesWithFailedOrPendingApps](/graph/api/intune-troubleshooting-user-getmanageddeviceswithfailedorpendingapps) для [пользователя](/graph/api/resources/intune-shared-user) |
 |Добавление|бета|Добавлена функция [areGlobalScriptsAvailable](/graph/api/intune-devices-devicehealthscript-areglobalscriptsavailable) в коллекции [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript) |
 |Удаление|бета|Удалены следующие типы перечисления:<br/>**logLevel**<br/>|
-|Добавление|бета|Добавлено свойство **certificateSerialNumber** в сущность [applePushNotificationCertificate](/graph/api/resources/intune-devices-applepushnotificationcertificate)|
+|Дополнение|бета|Добавлено свойство **certificateSerialNumber** в сущность [applePushNotificationCertificate](/graph/api/resources/intune-devices-applepushnotificationcertificate)|
 |Добавление|Бета|Добавлены свойства **isGlobalScript** и **highestAvailableVersion** в [deviceHealthScript](/graph/api/resources/intune-devices-devicehealthscript)|
 |Добавление|Бета|Добавлено свойство **hasRequiredSetting** в сущность [deviceManagementSettingCategory](/graph/api/resources/intune-deviceintent-devicemanagementsettingcategory)|
 |Дополнение|бета|Добавлены свойства **sendDeviceOwnershipChangePushNotification** , **enrollmentAvailability** и **roleScopeTagIds** в [intuneBrandingProfile](/graph/api/resources/intune-wip-intunebrandingprofile)|
@@ -1186,7 +1209,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 |Добавление|Бета|Добавлены свойства навигации **userExperienceAnalyticsDeviceStartupProcesses** , **userExperienceAnalyticsDeviceStartupProcessPerformance** and **userExperienceAnalyticsStartupScoreHistory** в сущность [deviceManagement](/graph/api/resources/intune-shared-devicemanagement)|
 |Добавление|Бета|Добавлено свойство навигации **unsupportedGroupPolicyExtensions** в сущность [groupPolicyMigrationReport](/graph/api/resources/intune-gpanalyticsservice-grouppolicymigrationreport)|
 |Добавление|Бета|Добавлено свойство **configMgrDeviceCount** к сложному типу [deviceOperatingSystemSummary](/graph/api/resources/intune-devices-deviceoperatingsystemsummary).|
-|Добавление|Бета|Добавлены свойства **roleScopeTagIds** , **sendDeviceOwnershipChangePushNotification** и **enrollmentAvailability** для сложного типа [intuneBrand](/graph/api/resources/intune-onboarding-intunebrand)|
+|Добавление|бета|Добавлены свойства **roleScopeTagIds** , **sendDeviceOwnershipChangePushNotification** и **enrollmentAvailability** для сложного типа [intuneBrand](/graph/api/resources/intune-onboarding-intunebrand)|
 |Добавление|бета|Добавлено свойство [troubleshootingErrorDetails](/graph/api/resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem) к сложному типу **mobileAppTroubleshootingHistoryItem**|
 |Добавление|Бета|Добавлен член **xTec** в тип перечисления [deviceManagementDerivedCredentialIssuer](/graph/api/resources/intune-rapolicy-devicemanagementderivedcredentialissuer)|
 |Добавление|Бета|Добавлен элемент **windows10x** в тип перечисления [deviceType](/graph/api/resources/intune-deviceconfig-devicetype)|
@@ -1432,7 +1455,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 |Дополнение|Бета|Добавлено новое свойство `endpointType` сложному типу [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-beta).
 |Дополнение|Бета|Добавлено новое свойство `endpointType` сложному типу [invitationParticipantInfo](/graph/api/resources/invitationparticipantinfo?view=graph-rest-beta).
 |Дополнение|Бета|Добавлено новое свойство `recordingStatus` сложному типу [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-beta).
-|Удаление|Бета|Удалено свойство `status` из сложного типа [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-beta).
+|Удаление|бета|Удалено свойство `status` из сложного типа [recordingInfo](/graph/api/resources/recordinginfo?view=graph-rest-beta).
 |Удаление|Бета|Удалено наследование [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-beta) из сложного типа [invitationParticipantInfo](/graph/api/resources/invitationparticipantinfo?view=graph-rest-beta).
 
 
@@ -3219,7 +3242,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 |Дополнение|Бета|Для сущности [appleVpnConfiguration](/graph/api/resources/intune-deviceconfig-applevpnconfiguration?view=graph-rest-beta) добавлено свойство **customKeyValueData**|
 |Дополнение|Бета|Для сущности [deviceComplianceSettingState](/graph/api/resources/intune-deviceconfig-devicecompliancepolicystate?view=graph-rest-beta) добавлены свойства **userPrincipalName** и **deviceModel**|
 |Дополнение|Бета|Для сущности [deviceConfigurationState](/graph/api/resources/intune-deviceconfig-deviceconfigurationstate?view=graph-rest-beta) добавлены свойства **userId** и **userPrincipalName**|
-|Дополнение|Бета|Для сущности [deviceManagementExchangeConnector](/graph/api/resources/intune-onboarding-devicemanagementexchangeconnector?view=graph-rest-beta) добавлено свойство **connectorServerName**|
+|Дополнение|бета|Для сущности [deviceManagementExchangeConnector](/graph/api/resources/intune-onboarding-devicemanagementexchangeconnector?view=graph-rest-beta) добавлено свойство **connectorServerName**|
 |Удаление|Бета|Для сущности [iosMobileAppConfiguration](/graph/api/resources/intune-apps-iosmobileappconfiguration?view=graph-rest-beta) удалено свойство **settingXml**|
 |Дополнение|Бета|Для сущности [iosVppApp](/graph/api/resources/intune-apps-iosvppapp?view=graph-rest-beta) добавлены свойства **vppTokenId** и **revokeLicenseActionResults**|
 |Дополнение|Бета|Для сущности [macOSCompliancePolicy](/graph/api/resources/intune-deviceconfig-macoscompliancepolicy?view=graph-rest-beta) добавлены свойства **firewallEnabled** , **firewallBlockAllIncoming** и **firewallEnableStealthMode**|
@@ -3291,7 +3314,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Дополнение        | бета          | Добавлены объект [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta) и следующие методы и действия CRUD: <br> [перечисление](/graph/api/bookingbusiness-list?view=graph-rest-beta); <br> [создание](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta); <br> [получение](/graph/api/bookingbusiness-get?view=graph-rest-beta); <br> [Обновление](/graph/api/bookingbusiness-update?view=graph-rest-beta) <br> [удаление](/graph/api/bookingbusiness-delete?view=graph-rest-beta); <br> [публикация](/graph/api/bookingbusiness-publish?view=graph-rest-beta); <br> [отмена публикации](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta). <br> Узнайте больше об интеграции с [API Microsoft Bookings](booking-concept-overview.md). |
 | Дополнение        | бета          | Добавлены объект [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta) и следующие методы и действие CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta); <br> [создание](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta); <br> [получение](/graph/api/bookingappointment-get?view=graph-rest-beta); <br> [Обновление](/graph/api/bookingappointment-update?view=graph-rest-beta) <br> [удаление](/graph/api/bookingappointment-delete?view=graph-rest-beta); <br> [отмена](/graph/api/bookingappointment-cancel?view=graph-rest-beta). |
 | Дополнение        | Бета          | Добавлены объект [bookingCurrency](/graph/api/resources/bookingcurrency?view=graph-rest-beta) и следующие методы: <br> [перечисление](/graph/api/bookingcurrency-list?view=graph-rest-beta); <br> [получение](/graph/api/bookingcurrency-get?view=graph-rest-beta). |
-| Дополнение        | Бета          | Добавлены объект [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta) и следующие методы CRUD: <br> [List](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta) <br> [создание](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta); <br> [Получение](/graph/api/bookingcustomer-get?view=graph-rest-beta) <br> [обновление](/graph/api/bookingcustomer-update?view=graph-rest-beta); <br> [удаление](/graph/api/bookingcustomer-delete?view=graph-rest-beta).|
+| Дополнение        | Бета          | Добавлены объект [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta) и следующие методы CRUD: <br> [List](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta) <br> [создание](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta); <br> [получение](/graph/api/bookingcustomer-get?view=graph-rest-beta); <br> [обновление](/graph/api/bookingcustomer-update?view=graph-rest-beta); <br> [удаление](/graph/api/bookingcustomer-delete?view=graph-rest-beta).|
 | Дополнение        | Бета          | Добавлены объект [bookingService](/graph/api/resources/bookingservice?view=graph-rest-beta) и следующие методы CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-services?view=graph-rest-beta); <br> [создание](/graph/api/bookingbusiness-post-services?view=graph-rest-beta); <br> [получение](/graph/api/bookingservice-get?view=graph-rest-beta); <br> [обновление](/graph/api/bookingservice-update?view=graph-rest-beta); <br> [удаление](/graph/api/bookingservice-delete?view=graph-rest-beta).|
 | Дополнение        | Бета          | Добавлены объект [bookingStaffMember](/graph/api/resources/bookingstaffmember?view=graph-rest-beta) и следующие методы CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-staffmembers?view=graph-rest-beta); <br> [создание](/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-beta); <br> [получение](/graph/api/bookingstaffmember-get?view=graph-rest-beta); <br> [обновление](/graph/api/bookingstaffmember-update?view=graph-rest-beta); <br> [удаление](/graph/api/bookingstaffmember-delete?view=graph-rest-beta).|
 | Дополнение        | Бета          | Добавлены следующие сложные типы: <br> [bookingNamedEntity](/graph/api/resources/bookingnamedentity?view=graph-rest-beta); <br> [bookingPerson](/graph/api/resources/bookingperson?view=graph-rest-beta); <br> [bookingReminder](/graph/api/resources/bookingreminder?view=graph-rest-beta); <br> [bookingWorkHours](/graph/api/resources/bookingworkhours?view=graph-rest-beta); <br> [bookingWorkTimeSlot](/graph/api/resources/bookingworktimeslot?view=graph-rest-beta).|
@@ -3635,7 +3658,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
 |Изменение|Бета|Добавлены свойства **applicationID** и **creatorUserID** ресурса [subscription](/graph/api/resources/subscription?view=graph-rest-beta). |
-|Изменение|Бета-версия|Добавлена операция [list](/graph/api/subscription-list?view=graph-rest-beta) для объекта [subscription](/graph/api/resources/subscription?view=graph-rest-beta). |
+|Изменение|бета|Добавлена операция [list](/graph/api/subscription-list?view=graph-rest-beta) для объекта [subscription](/graph/api/resources/subscription?view=graph-rest-beta). |
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
 
@@ -3757,7 +3780,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 |Дополнение|Версия 1.0|Добавлено действие [logoutSharedAppleDeviceActiveUser](/graph/api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [deleteUserFromSharedAppleDevice](/graph/api/intune-devices-manageddevice-deleteuserfromsharedappledevice?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [syncDevice](/graph/api/intune-devices-manageddevice-syncdevice?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
-|Дополнение|1.0|Добавлено действие [windowsDefenderScan](/graph/api/intune-devices-manageddevice-windowsdefenderscan?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
+|Дополнение|Версия 1.0|Добавлено действие [windowsDefenderScan](/graph/api/intune-devices-manageddevice-windowsdefenderscan?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [windowsDefenderUpdateSignatures](/graph/api/intune-devices-manageddevice-windowsdefenderupdatesignatures?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [updateWindowsDeviceAccount](/graph/api/intune-devices-manageddevice-updatewindowsdeviceaccount?view=graph-rest-1.0) для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0). |
 |Дополнение|Версия 1.0|Добавлено действие [removeAllDevicesFromManagement](/graph/api/intune-devices-user-removealldevicesfrommanagement?view=graph-rest-1.0) для объекта [user](/graph/api/resources/intune-shared-user?view=graph-rest-1.0). |
@@ -4061,7 +4084,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 |Изменение|Бета-версия|Добавлено свойство навигации **assignments** для объекта [iosLobAppProvisioningConfiguration](/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство навигации **apps** для объекта [iosManagedAppProtection](/graph/api/resources/intune-mam-iosmanagedappprotection?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство навигации **assignments** для объекта [managedDeviceMobileAppConfiguration](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-beta).|
-|Изменение|Бета-версия|Добавлено свойство навигации **assignments** для объекта [managedEBook](/graph/api/resources/intune-books-managedebook?view=graph-rest-beta).|
+|Изменение|Бета|Добавлено свойство навигации **assignments** для объекта [managedEBook](/graph/api/resources/intune-books-managedebook?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство навигации **assignments** для объекта [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство навигации **apps** для объекта [targetedManagedAppConfiguration](/graph/api/resources/intune-mam-targetedmanagedappconfiguration?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство навигации **assignments** для объекта [termsAndConditions](/graph/api/resources/intune-companyterms-termsandconditions?view=graph-rest-beta).|
@@ -4468,7 +4491,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Изменение      | Бета-версия    | Добавлено свойство **availableVersion** для объекта [windowsManagementApp](/graph/api/resources/intune-devicefe-windowsmanagementapp?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Удалены свойства **onboardingStatus** , **deployedVersion** и **lastModifiedTime** для объекта [windowsManagementApp](/graph/api/resources/intune-devicefe-windowsmanagementapp?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлено свойство **packageIdentityName** для объекта [windowsStoreForBusinessApp](/graph/api/resources/intune-apps-windowsstoreforbusinessapp?view=graph-rest-beta). |
-| Изменение      | Бета-версия    | Добавлены свойства навигации **mobileAppIdentifierDeployments** и **deploymentSummary** для объекта [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-beta). |
+| Изменение      | Бета    | Добавлены свойства навигации **mobileAppIdentifierDeployments** и **deploymentSummary** для объекта [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлено свойство навигации **mobileAppIdentifierDeployments** для объекта [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлены свойства навигации **deviceConfigurationUserStateSummaries** и **iosUpdateStatuses** для объекта [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Удалено свойство навигации **complianceSettingStateSummaries** для объекта [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta). |
@@ -4688,7 +4711,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Изменение          | Бета-версия        | Содержание объекта **message** теперь можно получать в виде обычного текста, а не только в формате HTML. Дополнительные сведения см. в описаниях событий [get](/graph/api/message-get?view=graph-rest-beta) и [list](/graph/api/user-list-messages?view=graph-rest-beta). |
+| Изменение          | Бета        | Содержание объекта **message** теперь можно получать в виде обычного текста, а не только в формате HTML. Дополнительные сведения см. в описаниях событий [get](/graph/api/message-get?view=graph-rest-beta) и [list](/graph/api/user-list-messages?view=graph-rest-beta). |
 
 
 ### <a name="to-do-tasks"></a>Задачи из списка дел
@@ -4860,7 +4883,7 @@ Added new APIs and resources for subscribing to and retrieving call records from
 | Изменение      | Бета-версия    | Добавлено свойство **expirationDateTime** к объекту [iosLobAppProvisioningConfiguration](/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Удалено свойство **expiration** из объекта [iosLobAppProvisioningConfiguration](/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлены свойства **passwordMinimumCharacterSetCount** , **osMinimumVersion** , **osMaximumVersion** , **deviceThreatProtectionEnabled** , **deviceThreatProtectionRequiredSecurityLevel** и **storageRequireEncryption** к объекту [macOSCompliancePolicy](/graph/api/resources/intune-deviceconfig-macoscompliancepolicy?view=graph-rest-beta). |
-| Изменение      | Бета-версия    | Удалено свойство **manifest** из объекта [managedAndroidLobApp](/graph/api/resources/intune-apps-managedandroidlobapp?view=graph-rest-beta). |
+| Изменение      | Бета    | Удалено свойство **manifest** из объекта [managedAndroidLobApp](/graph/api/resources/intune-apps-managedandroidlobapp?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлены свойства **isSupervised** , **exchangeLastSuccessfulSyncDateTime** , **exchangeAccessState** и **exchangeAccessStateReason** к объекту [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Добавлено свойство **deviceExchangeAccessStateSummary** к объекту [managedDeviceOverview](/graph/api/resources/intune-devices-manageddeviceoverview?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Удалено свойство **manifest** из объекта [managedIOSLobApp](/graph/api/resources/intune-apps-managedioslobapp?view=graph-rest-beta). |

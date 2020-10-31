@@ -4,12 +4,12 @@ description: Разностный запрос позволяет запраши
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 5eaec2833dd7baae09073c893fb67f3620bbfe71
-ms.sourcegitcommit: bbff139eea483faaa2d1dd08af39314f35ef48ce
+ms.openlocfilehash: bef08802c4a917f21ffc795dcda52660f08623b8
+ms.sourcegitcommit: adc36691fd77544eeb1ec061ccfa59abffbfea9a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46598271"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "48819670"
 ---
 # <a name="get-incremental-changes-to-messages-in-a-folder"></a>Получение добавочных изменений для сообщений в папке
 
@@ -21,7 +21,7 @@ ms.locfileid: "46598271"
 
 Запрос изменений выполняется отдельно для каждой папки. Чтобы отслеживать изменения сообщений в иерархии папок, необходимо наблюдать за каждой папкой отдельно.
 
-Как правило, цикл отслеживания изменений сообщений в папке почты состоит из одного или нескольких запросов GET с функцией **delta**. Исходный запрос GET во многом аналогичен [получению сообщений](/graph/api/user-list-messages?view=graph-rest-1.0), но он также содержит функцию **delta**:
+Как правило, цикл отслеживания изменений сообщений в папке почты состоит из одного или нескольких запросов GET с функцией **delta** . Исходный запрос GET во многом аналогичен [получению сообщений](/graph/api/user-list-messages?view=graph-rest-1.0), но он также содержит функцию **delta** :
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
@@ -29,8 +29,8 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages/delta
 
 Запрос GET с функцией **delta** возвращает одно из следующих значений:
 
-- ссылку `nextLink` (содержащую URL-адрес с вызовом функции **delta** и маркером _skipToken_);
-- ссылку `deltaLink` (содержащую URL-адрес с вызовом функции **delta** и маркером _deltaToken_).
+- ссылку `nextLink` (содержащую URL-адрес с вызовом функции **delta** и маркером _skipToken_ );
+- ссылку `deltaLink` (содержащую URL-адрес с вызовом функции **delta** и маркером _deltaToken_ ).
 
 Это маркеры являются [маркерами состояния](delta-query-overview.md#state-tokens), полностью непрозрачными для клиента. Чтобы продолжить цикл отслеживания изменений, просто скопируйте и примените URL-адрес, полученный из последнего запроса GET, при следующем вызове функции **delta** для этой папки. Ссылка `deltaLink` в ответе означает, что текущий цикл отслеживания изменений завершен. Вы можете сохранить и использовать URL-адрес `deltaLink` в начале следующего цикла.
 
@@ -99,7 +99,7 @@ since the completion of the very first round.
 Первый запрос задает следующие параметры:
 
 - параметр `$select` для возврата свойств `subject`, `sender` и `isRead` для каждого сообщения в ответе;
-- [необязательный заголовок запроса](#optional-request-header) _odata.maxpagesize_, возвращающий 2 сообщения одновременно.
+- [необязательный заголовок запроса](#optional-request-header) _odata.maxpagesize_ , возвращающий 2 сообщения одновременно.
 
 <!-- {
   "blockType": "ignored",
@@ -132,7 +132,7 @@ Prefer: odata.maxpagesize=2
       "@odata.type": "#microsoft.graph.message",
       "@odata.etag": "W/\"CQAAABYAAAARn2vdzPFjSbaPPxzjlzOTAAASsKZz\"",
       "subject": "Holiday hours update",
-      "isRead": "false",
+      "isRead": false,
       "sender": {
         "emailAddress": {
           "name": "Dana Swope",
@@ -145,7 +145,7 @@ Prefer: odata.maxpagesize=2
       "@odata.type": "#microsoft.graph.message",
       "@odata.etag": "W/\"CQAAABYAAAARn2vdzPFjSbaPPxzjlzOTAAAEfYB/\"",
       "subject": "Holiday promotion sale",
-      "isRead": "true",
+      "isRead": true,
       "sender": {
         "emailAddress": {
           "name": "Samantha Booth",
