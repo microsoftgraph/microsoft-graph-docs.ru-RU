@@ -5,57 +5,57 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b3b865066c498e340f917dd72aaf06e75593a66f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: affaf5ab5cce121f4a763e90e32ed9589510e4ca
+ms.sourcegitcommit: 3afb8123098a25ce30b16648ce2f31e8eaac388c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48045523"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816212"
 ---
-# <a name="create-serviceprincipal"></a><span data-ttu-id="f100b-103">Создание объекта servicePrincipal</span><span class="sxs-lookup"><span data-stu-id="f100b-103">Create servicePrincipal</span></span>
+# <a name="create-serviceprincipal"></a><span data-ttu-id="3d46f-103">Создание объекта servicePrincipal</span><span class="sxs-lookup"><span data-stu-id="3d46f-103">Create servicePrincipal</span></span>
 
-<span data-ttu-id="f100b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f100b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3d46f-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3d46f-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="f100b-105">Создание нового объекта [servicePrincipal](../resources/serviceprincipal.md).</span><span class="sxs-lookup"><span data-stu-id="f100b-105">Create a new [servicePrincipal](../resources/serviceprincipal.md) object.</span></span>
+<span data-ttu-id="3d46f-105">Создание нового объекта [servicePrincipal](../resources/serviceprincipal.md).</span><span class="sxs-lookup"><span data-stu-id="3d46f-105">Create a new [servicePrincipal](../resources/serviceprincipal.md) object.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="f100b-106">Добавление [**passwordCredential**](../resources/passwordcredential.md) при создании объектов servicePrincipal не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f100b-106">Adding [**passwordCredential**](../resources/passwordcredential.md) when creating servicePrincipals is not supported.</span></span> <span data-ttu-id="f100b-107">Используйте метод [addPassword](serviceprincipal-addpassword.md), чтобы добавлять пароли для servicePrincipal.</span><span class="sxs-lookup"><span data-stu-id="f100b-107">Use the [addPassword](serviceprincipal-addpassword.md) method to add passwords for a servicePrincipal.</span></span>
+> <span data-ttu-id="3d46f-106">Добавление [**passwordCredential**](../resources/passwordcredential.md) при создании объектов servicePrincipal не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3d46f-106">Adding [**passwordCredential**](../resources/passwordcredential.md) when creating servicePrincipals is not supported.</span></span> <span data-ttu-id="3d46f-107">Используйте метод [addPassword](serviceprincipal-addpassword.md), чтобы добавлять пароли для servicePrincipal.</span><span class="sxs-lookup"><span data-stu-id="3d46f-107">Use the [addPassword](serviceprincipal-addpassword.md) method to add passwords for a servicePrincipal.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f100b-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f100b-108">Permissions</span></span>
-<span data-ttu-id="f100b-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f100b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3d46f-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3d46f-108">Permissions</span></span>
+<span data-ttu-id="3d46f-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3d46f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="f100b-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f100b-111">Permission type</span></span>      | <span data-ttu-id="f100b-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f100b-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3d46f-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3d46f-111">Permission type</span></span>      | <span data-ttu-id="3d46f-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3d46f-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f100b-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f100b-113">Delegated (work or school account)</span></span> | <span data-ttu-id="f100b-114">Application.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f100b-114">Application.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="f100b-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f100b-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f100b-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f100b-116">Not supported.</span></span>    |
-|<span data-ttu-id="f100b-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f100b-117">Application</span></span> | <span data-ttu-id="f100b-118">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f100b-118">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
+|<span data-ttu-id="3d46f-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3d46f-113">Delegated (work or school account)</span></span> | <span data-ttu-id="3d46f-114">Application.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="3d46f-114">Application.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="3d46f-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3d46f-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3d46f-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3d46f-116">Not supported.</span></span>    |
+|<span data-ttu-id="3d46f-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3d46f-117">Application</span></span> | <span data-ttu-id="3d46f-118">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3d46f-118">Application.ReadWrite.OwnedBy, Application.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f100b-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f100b-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3d46f-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3d46f-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /serviceprincipals
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f100b-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f100b-120">Request headers</span></span>
-| <span data-ttu-id="f100b-121">Имя</span><span class="sxs-lookup"><span data-stu-id="f100b-121">Name</span></span>       | <span data-ttu-id="f100b-122">Описание</span><span class="sxs-lookup"><span data-stu-id="f100b-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3d46f-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3d46f-120">Request headers</span></span>
+| <span data-ttu-id="3d46f-121">Имя</span><span class="sxs-lookup"><span data-stu-id="3d46f-121">Name</span></span>       | <span data-ttu-id="3d46f-122">Описание</span><span class="sxs-lookup"><span data-stu-id="3d46f-122">Description</span></span>|
 |:-----------|:----------|
-| <span data-ttu-id="f100b-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f100b-123">Authorization</span></span> | <span data-ttu-id="f100b-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f100b-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="f100b-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f100b-126">Content-Type</span></span> | <span data-ttu-id="f100b-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f100b-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="3d46f-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3d46f-123">Authorization</span></span> | <span data-ttu-id="3d46f-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3d46f-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="3d46f-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3d46f-126">Content-Type</span></span> | <span data-ttu-id="3d46f-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3d46f-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f100b-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f100b-129">Request body</span></span>
-<span data-ttu-id="f100b-130">Предоставьте в тексте запроса описание объекта [serviceprincipal](../resources/serviceprincipal.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f100b-130">In the request body, supply a JSON representation of a [serviceprincipal](../resources/serviceprincipal.md) object.</span></span> <span data-ttu-id="f100b-131">Текст запроса должен содержать **appId**.</span><span class="sxs-lookup"><span data-stu-id="f100b-131">The request body must contain  **appId**.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3d46f-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3d46f-129">Request body</span></span>
+<span data-ttu-id="3d46f-130">Предоставьте в тексте запроса описание объекта [serviceprincipal](../resources/serviceprincipal.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3d46f-130">In the request body, supply a JSON representation of a [serviceprincipal](../resources/serviceprincipal.md) object.</span></span> <span data-ttu-id="3d46f-131">Текст запроса должен содержать **appId** .</span><span class="sxs-lookup"><span data-stu-id="3d46f-131">The request body must contain  **appId** .</span></span>
 
-## <a name="response"></a><span data-ttu-id="f100b-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="f100b-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3d46f-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="3d46f-132">Response</span></span>
 
-<span data-ttu-id="f100b-133">В случае успеха этот метод возвращает код отклика `201 Created` и объект [serviceprincipal](../resources/serviceprincipal.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="f100b-133">If successful, this method returns a `201 Created` response code and a [serviceprincipal](../resources/serviceprincipal.md) object in the response body.</span></span>
+<span data-ttu-id="3d46f-133">В случае успеха этот метод возвращает код отклика `201 Created` и объект [serviceprincipal](../resources/serviceprincipal.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="3d46f-133">If successful, this method returns a `201 Created` response code and a [serviceprincipal](../resources/serviceprincipal.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="f100b-134">Примеры</span><span class="sxs-lookup"><span data-stu-id="f100b-134">Examples</span></span>
-### <a name="request"></a><span data-ttu-id="f100b-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="f100b-135">Request</span></span>
-<span data-ttu-id="f100b-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f100b-136">Here is an example of the request.</span></span>
+## <a name="examples"></a><span data-ttu-id="3d46f-134">Примеры</span><span class="sxs-lookup"><span data-stu-id="3d46f-134">Examples</span></span>
+### <a name="request"></a><span data-ttu-id="3d46f-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="3d46f-135">Request</span></span>
+<span data-ttu-id="3d46f-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3d46f-136">Here is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="f100b-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="f100b-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3d46f-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="3d46f-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_serviceprincipal_from_serviceprincipals"
@@ -65,32 +65,32 @@ POST https://graph.microsoft.com/v1.0/serviceprincipals
 Content-type: application/json
 
 {
-  "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+  "appId": "65415bb1-9267-4313-bbf5-ae259732ee12"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="f100b-138">C#</span><span class="sxs-lookup"><span data-stu-id="f100b-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3d46f-138">C#</span><span class="sxs-lookup"><span data-stu-id="3d46f-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-serviceprincipal-from-serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f100b-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f100b-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3d46f-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3d46f-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-serviceprincipal-from-serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f100b-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f100b-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3d46f-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3d46f-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-serviceprincipal-from-serviceprincipals-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="f100b-141">Java</span><span class="sxs-lookup"><span data-stu-id="f100b-141">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="3d46f-141">Java</span><span class="sxs-lookup"><span data-stu-id="3d46f-141">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-serviceprincipal-from-serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="f100b-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="f100b-142">Response</span></span>
-<span data-ttu-id="f100b-143">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f100b-143">Here is an example of the response.</span></span> 
+### <a name="response"></a><span data-ttu-id="3d46f-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="3d46f-142">Response</span></span>
+<span data-ttu-id="3d46f-143">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="3d46f-143">Here is an example of the response.</span></span> 
 
-> <span data-ttu-id="f100b-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f100b-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="3d46f-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3d46f-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
