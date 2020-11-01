@@ -4,12 +4,12 @@ description: Запросы изменений позволяют приложе
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: fc88ea150a2cc126a451e174a624543ab49c7b93
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 2a684d593458b2f40a6b45f7c326f45f37e1cc4a
+ms.sourcegitcommit: adc36691fd77544eeb1ec061ccfa59abffbfea9a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797090"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "48819669"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
@@ -187,6 +187,14 @@ Content-type: application/json
 ### <a name="national-clouds"></a>Национальные облачные развертывания
 
 Запросы изменений доступны для клиентов, размещенных в общедоступном облаке и Microsoft Graph China, управляемых только 21Vianet.
+
+### <a name="replays"></a>Повторения
+
+Ваше приложение должно быть готово к повторениям, которые происходят, когда одинаковое изменение возникает в последующих откликах. Хотя разностный запрос является оптимальным средством сокращения повторений, они по-прежнему возможны.
+
+### <a name="synchronization-reset"></a>Сброс синхронизации
+
+Разностный запрос может возвращать код отклика `410 (gone)` и заголовок **Location** , содержащий URL-адрес запроса с пустым разностным маркером (аналогично исходному запросу). Это означает, что приложение требуется перезапустить с полной синхронизацией целевого клиента. Обычно это происходит, чтобы предотвратить несоответствие данных из-за внутреннего обслуживания или миграции целевого клиента.
 
 ### <a name="token-duration"></a>Длительность маркера
 
