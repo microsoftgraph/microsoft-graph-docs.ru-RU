@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 90dd08cc78727bcd7f1e0ce96e914c22705b09f9
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 012516efd2355528eb8842337c502915688156b2
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797132"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849132"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -21,7 +21,7 @@ ms.locfileid: "48797132"
 
 ## <a name="microsoft-graph-permission-names"></a>Имена разрешений Microsoft Graph
 
-Имена разрешений Microsoft Graph соответствуют простому шаблону: _ресурс.операция.ограничение_ . Например, разрешение _User.Read_ позволяет просматривать профиль вошедшего пользователя, разрешение _User.ReadWrite_ — просматривать и редактировать профиль вошедшего пользователя, а разрешение _Mail.Send_ — отправлять почту от его имени.
+Имена разрешений Microsoft Graph соответствуют простому шаблону: _ресурс.операция.ограничение_. Например, разрешение _User.Read_ позволяет просматривать профиль вошедшего пользователя, разрешение _User.ReadWrite_ — просматривать и редактировать профиль вошедшего пользователя, а разрешение _Mail.Send_ — отправлять почту от его имени.
 
 Указанное в имени _ограничение_ определяет потенциальный уровень доступа приложения в рамках каталога. В настоящее время Microsoft Graph поддерживает следующие ограничения:
 
@@ -54,7 +54,7 @@ ms.locfileid: "48797132"
 
 Это относится ко всем отношениям типа [directoryObject](/graph/api/resources/directoryobject) (а не только к ссылкам участников). Примеры: `/groups/{id}/members`, `/users/{id}/memberOf` и `me/ownedObjects`.
 
-Предположим, у приложения есть разрешения [User.Read.All](#user-permissions) и [Group.Read.All](#group-permissions) для Microsoft Graph.  Создана группа, содержащая пользователя, группу и устройство.  Приложение вызывает [перечисление участников группы](/graph/api/group-list-members).  У приложения есть доступ к объектам user и group в группе, но не к объекту device.  В отклике возвращаются все выбранные свойства объектов user и group. Но для объекта device возвращаются только ограниченные сведения.  Для устройства возвращаются тип и ИД объекта, а другие свойства имеют значение *null* . Приложения без разрешения не смогут использовать идентификатор для получения фактического объекта.
+Предположим, у приложения есть разрешения [User.Read.All](#user-permissions) и [Group.Read.All](#group-permissions) для Microsoft Graph.  Создана группа, содержащая пользователя, группу и устройство.  Приложение вызывает [перечисление участников группы](/graph/api/group-list-members).  У приложения есть доступ к объектам user и group в группе, но не к объекту device.  В отклике возвращаются все выбранные свойства объектов user и group. Но для объекта device возвращаются только ограниченные сведения.  Для устройства возвращаются тип и ИД объекта, а другие свойства имеют значение *null*. Приложения без разрешения не смогут использовать идентификатор для получения фактического объекта.
 
 ```http
 GET https://graph.microsoft.com/v1.0/groups/{id}/members?$select=id,displayName,description,createdDateTime,deletedDateTime,homepage,loginUrl HTTP/1.1
@@ -179,7 +179,7 @@ _AccessReview.Read.All_ , _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrit
 
 #### <a name="delegated"></a>Delegated
 
-* _Analytics.Read_ . [Перечисление соответствующих параметров для пользователя](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings`)
+* _Analytics.Read_. [Перечисление соответствующих параметров для пользователя](/graph/api/useranalytics-get-settings?view=graph-rest-beta) (`GET /beta/me/analytics/settings`)
 
 #### <a name="application"></a>Для приложений
 
@@ -208,10 +208,10 @@ _AccessReview.Read.All_ , _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrit
 ### <a name="example-usage"></a>Примеры использования
 
 #### <a name="delegated"></a>Делегированные
-* _AppCatalog.ReadWrite.All_ . [Составление списка всех приложений в каталоге](/graph/api/teamsapp-list?view=graph-rest-beta) (`GET /beta/appCatalogs/teamsApps`)
-* _AppCatalog.ReadWrite.All_ . [Публикация приложения](/graph/api/teamsapp-publish?view=graph-rest-beta) (`POST /beta/appCatalogs/teamsApps`)
-* _AppCatalog.ReadWrite.All_ . [Обновление опубликованного приложения](/graph/api/teamsapp-update?view=graph-rest-beta) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
-* _AppCatalog.ReadWrite.All_ . [Удаление опубликованного приложения](/graph/api/teamsapp-delete?view=graph-rest-beta) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
+* _AppCatalog.ReadWrite.All_. [Составление списка всех приложений в каталоге](/graph/api/teamsapp-list?view=graph-rest-beta) (`GET /beta/appCatalogs/teamsApps`)
+* _AppCatalog.ReadWrite.All_. [Публикация приложения](/graph/api/teamsapp-publish?view=graph-rest-beta) (`POST /beta/appCatalogs/teamsApps`)
+* _AppCatalog.ReadWrite.All_. [Обновление опубликованного приложения](/graph/api/teamsapp-update?view=graph-rest-beta) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
+* _AppCatalog.ReadWrite.All_. [Удаление опубликованного приложения](/graph/api/teamsapp-delete?view=graph-rest-beta) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
 
 #### <a name="application"></a>Для приложений
 
@@ -247,16 +247,16 @@ _AccessReview.Read.All_ , _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrit
 
 #### <a name="delegated"></a>Делегированные разрешения
 
-* _Application.Read.All_ . Составление списка всех приложений (`GET /beta/applications`)
-* _Application.ReadWrite.All_ . Обновление субъекта-службы (`PATCH /beta/servicePrincipals/{id}`)
+* _Application.Read.All_. Составление списка всех приложений (`GET /beta/applications`)
+* _Application.ReadWrite.All_. Обновление субъекта-службы (`PATCH /beta/servicePrincipals/{id}`)
 
 #### <a name="application"></a>Для приложений
 
-* _Application.Read.All_ . Составление списка всех приложений (`GET /beta/applications`)
-* _Application.ReadWrite.All_ . Удаление субъект-службы (`DELETE /beta/servicePrincipals/{id}`)
-* _Application.ReadWrite.OwnedBy_ . Создание приложения (`POST /beta/applications`)
-* _Application.ReadWrite.OwnedBy_ . Составление списка всех приложений, принадлежащих вызывающему приложению (`GET /beta/servicePrincipals/{id}/ownedObjects`)
-* _Application.ReadWrite.OwnedBy_ . Добавление другого владельца приложения (`POST /applications/{id}/owners/$ref`).
+* _Application.Read.All_. Составление списка всех приложений (`GET /beta/applications`)
+* _Application.ReadWrite.All_. Удаление субъект-службы (`DELETE /beta/servicePrincipals/{id}`)
+* _Application.ReadWrite.OwnedBy_. Создание приложения (`POST /beta/applications`)
+* _Application.ReadWrite.OwnedBy_. Составление списка всех приложений, принадлежащих вызывающему приложению (`GET /beta/servicePrincipals/{id}/ownedObjects`)
+* _Application.ReadWrite.OwnedBy_. Добавление другого владельца приложения (`POST /applications/{id}/owners/$ref`).
 > Примечание: могут потребоваться дополнительные разрешения.
 
 ---
@@ -334,15 +334,15 @@ _AccessReview.Read.All_ , _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrit
 
 #### <a name="delegated"></a>Делегированные разрешения
 
-* _Calendars.Read_ . Получение событий пользовательского календаря, произошедших с 23 апреля 2017 г. до 29 апреля 2017 г. (`GET /me/calendarView?startDateTime=2017-04-23T00:00:00&endDateTime=2017-04-29T00:00:00`).
+* _Calendars.Read_. Получение событий пользовательского календаря, произошедших с 23 апреля 2017 г. до 29 апреля 2017 г. (`GET /me/calendarView?startDateTime=2017-04-23T00:00:00&endDateTime=2017-04-29T00:00:00`).
 * _Calendars.Read.Shared_ : поиск периодов, когда свободны все участники (`POST /users/{id|userPrincipalName}/findMeetingTimes`).
-* _Calendars.ReadWrite_ . Добавление события в календарь пользователя (`POST /me/events`).
+* _Calendars.ReadWrite_. Добавление события в календарь пользователя (`POST /me/events`).
 
 #### <a name="application"></a>Для приложений
 
-* _Calendars.Read_ . Поиск событий, организованных пользователем bob@contoso.com, в календаре конференц-зала (`GET /users/{id | userPrincipalName}/events?$filter=organizer/emailAddress/address eq 'bob@contoso.com'`).
+* _Calendars.Read_. Поиск событий, организованных пользователем bob@contoso.com, в календаре конференц-зала (`GET /users/{id | userPrincipalName}/events?$filter=organizer/emailAddress/address eq 'bob@contoso.com'`).
 * _Calendars.Read_ : список всех событий в календаре пользователя за май (`GET /users/{id | userPrincipalName}/calendarView?startDateTime=2017-05-01T00:00:00&endDateTime=2017-06-01T00:00:00`).
-* _Calendars.ReadWrite_ . Добавление в пользовательский календарь события для утвержденного нерабочего времени (`POST /users/{id | userPrincipalName}/events`).
+* _Calendars.ReadWrite_. Добавление в пользовательский календарь события для утвержденного нерабочего времени (`POST /users/{id | userPrincipalName}/events`).
 * _Calendars.Send_ : отправка сообщения (`POST /users/{id | userPrincipalName}/sendCalendars`).
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
@@ -392,11 +392,11 @@ _AccessReview.Read.All_ , _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrit
 
 #### <a name="application"></a>Для приложений
 
-* _Calls.Initiate.All_ . Совершение однорангового звонка из приложения пользователю в организации (`POST /beta/communications/calls`).
-* _Calls.InitiateGroupCall.All_ . Совершение группового звонка из приложения группе пользователей в организации (`POST /beta/communications/calls`).
-* _Calls.JoinGroupCall.All_ . Присоединение к групповому звонку или собранию по сети из приложения (`POST /beta/communications/calls`).
-* _Calls.JoinGroupCallasGuest.All_ . Присоединение к групповому звонку или собранию по сети из приложения, но у приложения есть только гостевые разрешения в собрании (`POST /beta/communications/calls`).
-* _Calls.AccessMedia.All_ . Создание звонка или присоединение к нему с получением приложением прямого доступа к потокам мультимедиа участников звонка (`POST /beta/communications/calls`).
+* _Calls.Initiate.All_. Совершение однорангового звонка из приложения пользователю в организации (`POST /beta/communications/calls`).
+* _Calls.InitiateGroupCall.All_. Совершение группового звонка из приложения группе пользователей в организации (`POST /beta/communications/calls`).
+* _Calls.JoinGroupCall.All_. Присоединение к групповому звонку или собранию по сети из приложения (`POST /beta/communications/calls`).
+* _Calls.JoinGroupCallasGuest.All_. Присоединение к групповому звонку или собранию по сети из приложения, но у приложения есть только гостевые разрешения в собрании (`POST /beta/communications/calls`).
+* _Calls.AccessMedia.All_. Создание звонка или присоединение к нему с получением приложением прямого доступа к потокам мультимедиа участников звонка (`POST /beta/communications/calls`).
 
 > **Примечание.** Примеры запросов см. в статье [Создание звонка](/graph/api/application-post-calls?view=graph-rest-beta).
 
@@ -430,9 +430,9 @@ _AccessReview.Read.All_ , _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrit
 
 #### <a name="application"></a>Для приложений
 
-* _CallRecords.Read.All_ . Получение записи звонка (`GET /v1.0/communications/callRecords/{id}`).
-* _CallRecords.Read.All_ . Подписка на новые записи звонков (`POST /v1.0/subscriptions`).
-* _CallRecords.Read.All_ . Получение записей звонков прямой маршрутизации в указанном периоде времени (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getDirectRoutingCalls(fromDateTime={start date and time),toDateTime={end date and time))`)
+* _CallRecords.Read.All_. Получение записи звонка (`GET /v1.0/communications/callRecords/{id}`).
+* _CallRecords.Read.All_. Подписка на новые записи звонков (`POST /v1.0/subscriptions`).
+* _CallRecords.Read.All_. Получение записей звонков прямой маршрутизации в указанном периоде времени (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getDirectRoutingCalls(fromDateTime={start date and time),toDateTime={end date and time))`)
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
@@ -572,15 +572,15 @@ _AccessReview.Read.All_ , _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrit
 ### <a name="example-usage"></a>Примеры использования
 #### <a name="delegated"></a>Делегированные разрешения
 
-* _Contacts.Read_ . Чтение контакта в одной из папок контактов верхнего уровня для вошедшего пользователя (`GET /me/contactfolders/{Id}/contacts/{id}`).
-* _Contacts.ReadWrite_ . Обновление фотографии одного из контактов вошедшего пользователя (`PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`).
-* _Contacts.ReadWrite_ . Добавление контактов в корневую папку вошедшего пользователя (`POST /me/contacts`).
+* _Contacts.Read_. Чтение контакта в одной из папок контактов верхнего уровня для вошедшего пользователя (`GET /me/contactfolders/{Id}/contacts/{id}`).
+* _Contacts.ReadWrite_. Обновление фотографии одного из контактов вошедшего пользователя (`PUT /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`).
+* _Contacts.ReadWrite_. Добавление контактов в корневую папку вошедшего пользователя (`POST /me/contacts`).
 
 #### <a name="application"></a>Для приложений
 
-* _Contacts.Read_ . Чтение контактов в одной из папок контактов верхнего уровня для любого пользователя в организации (`GET /users/{id | userPrincipalName}/contactfolders/{Id}/contacts/{id}`).
-* _Contacts.ReadWrite_ . Обновление фотографии любого контакта любого пользователя в организации (`PUT /user/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`).
-* _Contacts.ReadWrite_ . Добавление контактов в корневую папку любого пользователя в организации (`POST /users/{id | userPrincipalName}/contacts`).
+* _Contacts.Read_. Чтение контактов в одной из папок контактов верхнего уровня для любого пользователя в организации (`GET /users/{id | userPrincipalName}/contactfolders/{Id}/contacts/{id}`).
+* _Contacts.ReadWrite_. Обновление фотографии любого контакта любого пользователя в организации (`PUT /user/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value`).
+* _Contacts.ReadWrite_. Добавление контактов в корневую папку любого пользователя в организации (`POST /users/{id | userPrincipalName}/contacts`).
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
@@ -608,7 +608,7 @@ _AccessReview.Read.All_ , _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrit
 
 #### <a name="application"></a>Для приложений
 
-* _Device.ReadWrite.All_ . Чтение всех зарегистрированных устройств в организации (`GET /devices`).
+* _Device.ReadWrite.All_. Чтение всех зарегистрированных устройств в организации (`GET /devices`).
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
@@ -664,13 +664,13 @@ _AccessReview.Read.All_ , _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrit
 ### <a name="example-usage"></a>Примеры использования
 
 #### <a name="delegated"></a>Делегированные разрешения
-* _Directory.Read.All_ . Перечисление всех административных единиц в организации (`GET /beta/administrativeUnits`).
-* _Directory.ReadWrite.All_ . Добавление членов роли каталога (`POST /directoryRoles/{id}/members/$ref`).
+* _Directory.Read.All_. Перечисление всех административных единиц в организации (`GET /beta/administrativeUnits`).
+* _Directory.ReadWrite.All_. Добавление членов роли каталога (`POST /directoryRoles/{id}/members/$ref`).
 
 #### <a name="application"></a>Для приложений
-* _Directory.Read.All_ . Перечисление всех объектов, членом которых является пользователь, включая роли каталога и административные единицы (`GET /beta/users/{id}/memberOf`).
-* _Directory.Read.All_ . Перечисление всех членов группы, включая субъекты-службы (`GET /beta/groups/{id}/members`).
-* _Directory.ReadWrite.All_ . Добавление владельца группы (`POST /groups/{id}/owners/$ref`).
+* _Directory.Read.All_. Перечисление всех объектов, членом которых является пользователь, включая роли каталога и административные единицы (`GET /beta/users/{id}/memberOf`).
+* _Directory.Read.All_. Перечисление всех членов группы, включая субъекты-службы (`GET /beta/groups/{id}/members`).
+* _Directory.ReadWrite.All_. Добавление владельца группы (`POST /groups/{id}/owners/$ref`).
 
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
@@ -760,7 +760,7 @@ _AccessReview.Read.All_ , _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrit
 
 ### <a name="remarks"></a>Примечания
 
-> **Примечание** . В личных учетных записях разрешения Files.Read и Files.ReadWrite также предоставляют доступ к файлам, которыми поделились с вошедшим пользователем другие люди.
+> **Примечание**. В личных учетных записях разрешения Files.Read и Files.ReadWrite также предоставляют доступ к файлам, которыми поделились с вошедшим пользователем другие люди.
 
 Делегированные разрешения Files.Read.Selected и Files.ReadWrite.Selected действительны только в рабочих и учебных учетных записях и доступны для работы только с [обработчиками файлов Office 365 (версия 1.0)](/previous-versions/office/office-365-api/). Они не должны использоваться для непосредственного вызова API Microsoft Graph.
 
@@ -771,11 +771,11 @@ _AccessReview.Read.All_ , _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrit
 
 #### <a name="delegated"></a>Делегированные разрешения
 
-* _Files.Read_ . Чтение файлов в OneDrive вошедшего пользователя (`GET /me/drive/root/children`).
-* _Files.Read.All_ . Чтение файлов, доступ к которым предоставлен вошедшему пользователю (`GET /me/drive/root/sharedWithMe`).
-* _Files.ReadWrite_ . Запись файла в OneDrive вошедшего пользователя (`PUT /me/drive/root/children/filename.txt/content`).
-* _Files.ReadWrite.All_ . Запись файла, доступ к которому предоставлен пользователю (`PUT /users/rgregg@contoso.com/drive/root/children/file.txt/content`).
-* _Files.ReadWrite.AppFolder_ . Запись файлов в папку приложения в OneDrive (`PUT /me/drive/special/approot/children/file.txt/content`).
+* _Files.Read_. Чтение файлов в OneDrive вошедшего пользователя (`GET /me/drive/root/children`).
+* _Files.Read.All_. Чтение файлов, доступ к которым предоставлен вошедшему пользователю (`GET /me/drive/root/sharedWithMe`).
+* _Files.ReadWrite_. Запись файла в OneDrive вошедшего пользователя (`PUT /me/drive/root/children/filename.txt/content`).
+* _Files.ReadWrite.All_. Запись файла, доступ к которому предоставлен пользователю (`PUT /users/rgregg@contoso.com/drive/root/children/file.txt/content`).
+* _Files.ReadWrite.AppFolder_. Запись файлов в папку приложения в OneDrive (`PUT /me/drive/special/approot/children/file.txt/content`).
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
@@ -817,7 +817,7 @@ _AccessReview.Read.All_ , _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrit
 
 Для разрешений приложения действуют некоторые ограничения на поддерживаемые API. Дополнительные сведения см. в статье, посвященной [известным проблемам](known-issues.md).
 
-В некоторых случаях, чтобы приложение могло считывать некоторые свойства группы, такие как `member` и `memberOf`, требуются [разрешения для каталогов](#directory-permissions). Например, если среди членов группы есть один или несколько объектов [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta), то приложению потребуются действующие разрешения на чтение субъектов-служб, предоставленные с помощью разрешений _Directory.\*_ . В противном случае Microsoft Graph возвращает ошибку. (В случае делегированных разрешений вошедшему пользователю также необходимы права на чтение субъектов-служб в организации.) Это относится и к свойству `memberOf`, которое может возвращать объекты [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta).
+В некоторых случаях, чтобы приложение могло считывать некоторые свойства группы, такие как `member` и `memberOf`, требуются [разрешения для каталогов](#directory-permissions). Например, если среди членов группы есть один или несколько объектов [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta), то приложению потребуются действующие разрешения на чтение субъектов-служб, предоставленные с помощью разрешений _Directory.\*_. В противном случае Microsoft Graph возвращает ошибку. (В случае делегированных разрешений вошедшему пользователю также необходимы права на чтение субъектов-служб в организации.) Это относится и к свойству `memberOf`, которое может возвращать объекты [administrativeUnit](/graph/api/resources/administrativeunit?view=graph-rest-beta).
 
 Чтобы настроить атрибут **preferredDataLocation** группы Microsoft 365, приложению требуется разрешение Directory.ReadWrite.All. Когда пользователь в среде с поддержкой нескольких регионов создает группу Microsoft 365, значению **preferredDataLocation** группы автоматически присваивается значение, соответствующее этому значению пользователя. Дополнительные сведения о предпочтительном расположении данных групп см. в статье [Создание группы Microsoft 365 с определенным предпочтительным расположением данных (PDL)](/office365/enterprise/multi-geo-add-group-with-pdl).
 
@@ -829,17 +829,17 @@ _AccessReview.Read.All_ , _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrit
 ### <a name="example-usage"></a>Примеры использования
 #### <a name="delegated"></a>Delegated
 
-* _Group.Read.All_ . Чтение всех групп Microsoft 365, в которых состоит вошедший пользователь (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`).
-* _Group.Read.All_ . Чтение всего содержимого групп Microsoft 365, например бесед (`GET /groups/{id}/conversations`).
-* _Group.ReadWrite.All_ . Обновление свойств группы, например фотографий (`PUT /groups/{id}/photo/$value`).
-* _GroupMember.ReadWrite.All_ . Обновление участников группы (`POST /groups/{id}/members/$ref`).
+* _Group.Read.All_. Чтение всех групп Microsoft 365, в которых состоит вошедший пользователь (`GET /me/memberOf/$/microsoft.graph.group?$filter=groupTypes/any(a:a%20eq%20'unified')`).
+* _Group.Read.All_. Чтение всего содержимого групп Microsoft 365, например бесед (`GET /groups/{id}/conversations`).
+* _Group.ReadWrite.All_. Обновление свойств группы, например фотографий (`PUT /groups/{id}/photo/$value`).
+* _GroupMember.ReadWrite.All_. Обновление участников группы (`POST /groups/{id}/members/$ref`).
 > **Примечание.** При этом также необходимо разрешение _User.ReadBasic.All_ для чтения пользователя, чтобы добавить его как участника.
 
 #### <a name="application"></a>Приложение
 
-* _Group.Read.All_ . Поиск всех групп, имена которых начинаются с "Sales" (`GET /groups?$filter=startswith(displayName,'Sales')`).
-* _Group.ReadWrite.All_ . Управляющая служба создает события в календаре группы Microsoft 365 (`POST /groups/{id}/events`).
-* _Group.Create_ . Создание группы (`POST /groups`).
+* _Group.Read.All_. Поиск всех групп, имена которых начинаются с "Sales" (`GET /groups?$filter=startswith(displayName,'Sales')`).
+* _Group.ReadWrite.All_. Управляющая служба создает события в календаре группы Microsoft 365 (`POST /groups/{id}/events`).
+* _Group.Create_. Создание группы (`POST /groups`).
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
@@ -864,11 +864,11 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 #### <a name="delegated"></a>Делегированные разрешения
 Следующие сценарии поддерживаются для делегированных разрешений:
 
-* _IdentityProvider.Read.All_ . Чтение всех поставщиков удостоверений, настроенных в клиенте (`GET /beta/identityProviders`).
-* _IdentityProvider.Read.All_ . Чтение существующего поставщика удостоверений (`GET /beta/identityProviders/{id}`).
-* _IdentityProvider.ReadWrite.All_ . Создание поставщика удостоверений (`POST /beta/identityProviders`).
-* _IdentityProvider.ReadWrite.All_ . Обновление существующего поставщика удостоверений (`PATCH /beta/identityProviders/{id}`).
-* _IdentityProvider.ReadWrite.All_ . Удаление существующего поставщика удостоверений (`DELETE /beta/identityProviders/{id}`).
+* _IdentityProvider.Read.All_. Чтение всех поставщиков удостоверений, настроенных в клиенте (`GET /beta/identityProviders`).
+* _IdentityProvider.Read.All_. Чтение существующего поставщика удостоверений (`GET /beta/identityProviders/{id}`).
+* _IdentityProvider.ReadWrite.All_. Создание поставщика удостоверений (`POST /beta/identityProviders`).
+* _IdentityProvider.ReadWrite.All_. Обновление существующего поставщика удостоверений (`PATCH /beta/identityProviders/{id}`).
+* _IdentityProvider.ReadWrite.All_. Удаление существующего поставщика удостоверений (`DELETE /beta/identityProviders/{id}`).
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
@@ -1041,31 +1041,31 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 
 #### <a name="delegated"></a>Делегированные
 
-* _DeviceManagementServiceConfiguration.Read.All_ . Проверка текущего состояния подписки на Intune (`GET /deviceManagement/subscriptionState`).
-* _DeviceManagementServiceConfiguration.ReadWrite.All_ . Создание условий (`POST /deviceManagement/termsAndConditions`).
-* _DeviceManagementConfiguration.Read.All_ . Поиск состояния конфигурации устройства (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`).
-* _DeviceManagementConfiguration.ReadWrite.All_ . Назначение политики соответствия требованиям к устройствам для группы (`POST deviceCompliancePolicies/{id}/assign`).
-* _DeviceManagementApps.Read.All_ . Поиск всех приложений Магазина Windows, опубликованных в Intune (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`).
-* _DeviceManagementApps.ReadWrite.All_ . Публикация нового приложения (`POST /deviceAppManagement/mobileApps`).
-* _DeviceManagementRBAC.Read.All_ . Поиск назначения ролей по имени (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`).
-* _DeviceManagementRBAC.ReadWrite.All_ . Создание пользовательской роли (`POST /deviceManagement/roleDefinitions`).
-* _DeviceManagementManagedDevices.Read.All_ . Поиск управляемого устройства по имени (`GET /managedDevices/?$filter=deviceName eq 'My Device'`).
-* _DeviceManagementManagedDevices.ReadWrite.All_ . Удаление управляемого устройства (`DELETE /managedDevices/{id}`).
-* _DeviceManagementManagedDevices.PrivilegedOperations.All_ . Сброс секретного кода для управляемого устройства пользователя (`POST /managedDevices/{id}/resetPasscode`).
+* _DeviceManagementServiceConfiguration.Read.All_. Проверка текущего состояния подписки на Intune (`GET /deviceManagement/subscriptionState`).
+* _DeviceManagementServiceConfiguration.ReadWrite.All_. Создание условий (`POST /deviceManagement/termsAndConditions`).
+* _DeviceManagementConfiguration.Read.All_. Поиск состояния конфигурации устройства (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`).
+* _DeviceManagementConfiguration.ReadWrite.All_. Назначение политики соответствия требованиям к устройствам для группы (`POST deviceCompliancePolicies/{id}/assign`).
+* _DeviceManagementApps.Read.All_. Поиск всех приложений Магазина Windows, опубликованных в Intune (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`).
+* _DeviceManagementApps.ReadWrite.All_. Публикация нового приложения (`POST /deviceAppManagement/mobileApps`).
+* _DeviceManagementRBAC.Read.All_. Поиск назначения ролей по имени (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`).
+* _DeviceManagementRBAC.ReadWrite.All_. Создание пользовательской роли (`POST /deviceManagement/roleDefinitions`).
+* _DeviceManagementManagedDevices.Read.All_. Поиск управляемого устройства по имени (`GET /managedDevices/?$filter=deviceName eq 'My Device'`).
+* _DeviceManagementManagedDevices.ReadWrite.All_. Удаление управляемого устройства (`DELETE /managedDevices/{id}`).
+* _DeviceManagementManagedDevices.PrivilegedOperations.All_. Сброс секретного кода для управляемого устройства пользователя (`POST /managedDevices/{id}/resetPasscode`).
 
 #### <a name="application"></a>Для приложений
 
-* _DeviceManagementServiceConfiguration.Read.All_ . Проверка текущего состояния подписки на Intune (`GET /deviceManagement/subscriptionState`).
-* _DeviceManagementServiceConfiguration.ReadWrite.All_ . Создание условий (`POST /deviceManagement/termsAndConditions`).
-* _DeviceManagementConfiguration.Read.All_ . Поиск состояния конфигурации устройства (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`).
-* _DeviceManagementConfiguration.ReadWrite.All_ . Назначение политики соответствия требованиям к устройствам для группы (`POST deviceCompliancePolicies/{id}/assign`).
-* _DeviceManagementApps.Read.All_ . Поиск всех приложений Магазина Windows, опубликованных в Intune (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`).
-* _DeviceManagementApps.ReadWrite.All_ . Публикация нового приложения (`POST /deviceAppManagement/mobileApps`).
-* _DeviceManagementRBAC.Read.All_ . Поиск назначения ролей по имени (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`).
-* _DeviceManagementRBAC.ReadWrite.All_ . Создание пользовательской роли (`POST /deviceManagement/roleDefinitions`).
-* _DeviceManagementManagedDevices.Read.All_ . Поиск управляемого устройства по имени (`GET /managedDevices/?$filter=deviceName eq 'My Device'`).
-* _DeviceManagementManagedDevices.ReadWrite.All_ . Удаление управляемого устройства (`DELETE /managedDevices/{id}`).
-* _DeviceManagementManagedDevices.PrivilegedOperations.All_ . Сброс секретного кода для управляемого устройства пользователя (`POST /managedDevices/{id}/resetPasscode`).
+* _DeviceManagementServiceConfiguration.Read.All_. Проверка текущего состояния подписки на Intune (`GET /deviceManagement/subscriptionState`).
+* _DeviceManagementServiceConfiguration.ReadWrite.All_. Создание условий (`POST /deviceManagement/termsAndConditions`).
+* _DeviceManagementConfiguration.Read.All_. Поиск состояния конфигурации устройства (`GET /deviceManagement/deviceConfigurations/{id}/deviceStatuses`).
+* _DeviceManagementConfiguration.ReadWrite.All_. Назначение политики соответствия требованиям к устройствам для группы (`POST deviceCompliancePolicies/{id}/assign`).
+* _DeviceManagementApps.Read.All_. Поиск всех приложений Магазина Windows, опубликованных в Intune (`GET /deviceAppManagement/mobileApps?$filter=isOf('microsoft.graph.windowsStoreApp')`).
+* _DeviceManagementApps.ReadWrite.All_. Публикация нового приложения (`POST /deviceAppManagement/mobileApps`).
+* _DeviceManagementRBAC.Read.All_. Поиск назначения ролей по имени (`GET /deviceManagement/roleAssignments?$filter=displayName eq 'My Role Assignment'`).
+* _DeviceManagementRBAC.ReadWrite.All_. Создание пользовательской роли (`POST /deviceManagement/roleDefinitions`).
+* _DeviceManagementManagedDevices.Read.All_. Поиск управляемого устройства по имени (`GET /managedDevices/?$filter=deviceName eq 'My Device'`).
+* _DeviceManagementManagedDevices.ReadWrite.All_. Удаление управляемого устройства (`DELETE /managedDevices/{id}`).
+* _DeviceManagementManagedDevices.PrivilegedOperations.All_. Сброс секретного кода для управляемого устройства пользователя (`POST /managedDevices/{id}/resetPasscode`).
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
@@ -1105,22 +1105,22 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 
 Разрешения _Mail.Read.Shared_ , _Mail.ReadWrite.Shared_ и _Mail.Send.Shared_ действительны только для рабочих и учебных учетных записей. Все остальные разрешения поддерживаются как для учетных записей Майкрософт, так и для рабочих или учебных учетных записей.
 
-С помощью разрешения _Mail.Send_ или _Mail.Send.Shared_ приложение может отправлять сообщения, сохраняя их копии в папке "Отправленные", даже если у приложения нет соответствующего разрешения _Mail.ReadWrite_ или _Mail.ReadWrite.Shared_ .
+С помощью разрешения _Mail.Send_ или _Mail.Send.Shared_ приложение может отправлять сообщения, сохраняя их копии в папке "Отправленные", даже если у приложения нет соответствующего разрешения _Mail.ReadWrite_ или _Mail.ReadWrite.Shared_.
 
 ### <a name="example-usage"></a>Примеры использования
 
 #### <a name="delegated"></a>Делегированные разрешения
 
-* _Mail.Read_ . Перечисление сообщений в папке "Входящие" пользователя, отсортированных по свойству `receivedDateTime` (`GET /me/mailfolders/inbox/messages?$orderby=receivedDateTime DESC`).
+* _Mail.Read_. Перечисление сообщений в папке "Входящие" пользователя, отсортированных по свойству `receivedDateTime` (`GET /me/mailfolders/inbox/messages?$orderby=receivedDateTime DESC`).
 * _Mail.Read.Shared_ : поиск всех сообщений с вложениями в папке "Входящие" пользователя, предоставившего вошедшему пользователю доступ к этой папке (`GET /users{id | userPrincipalName}/mailfolders/inbox/messages?$filter=hasAttachments eq true`).
-* _Mail.ReadWrite_ . Сообщение отмечается как прочитанное (`PATCH /me/messages/{id}`).
-* _Mail.Send_ . Отправка сообщения (`POST /me/sendmail`).
-* _MailboxSettings.ReadWrite_ . Обновление автоматического ответа пользователя (`PATCH /me/mailboxSettings`).
+* _Mail.ReadWrite_. Сообщение отмечается как прочитанное (`PATCH /me/messages/{id}`).
+* _Mail.Send_. Отправка сообщения (`POST /me/sendmail`).
+* _MailboxSettings.ReadWrite_. Обновление автоматического ответа пользователя (`PATCH /me/mailboxSettings`).
 
 #### <a name="application"></a>Для приложений
 
-* _Mail.Read_ . Поиск сообщений, отправленных с адреса bob@contoso.com (`GET /users/{id | userPrincipalName}/messages?$filter=from/emailAddress/address eq 'bob@contoso.com'`).
-* _Mail.ReadWrite_ . Создание в папке "Входящие" вложенной папки под названием "`Expense Reports`" (`POST /users/{id | userPrincipalName}/mailfolders`).
+* _Mail.Read_. Поиск сообщений, отправленных с адреса bob@contoso.com (`GET /users/{id | userPrincipalName}/messages?$filter=from/emailAddress/address eq 'bob@contoso.com'`).
+* _Mail.ReadWrite_. Создание в папке "Входящие" вложенной папки под названием "`Expense Reports`" (`POST /users/{id | userPrincipalName}/mailfolders`).
 * _Mail.Send_ : отправка сообщения (`POST /users/{id | userPrincipalName}/sendmail`).
 * _MailboxSettings.Read_ : получение часового пояса по умолчанию для почтового ящика пользователя (`GET /users/{id | userPrincipalName}/mailboxSettings/timeZone`).
 
@@ -1152,13 +1152,13 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 
 #### <a name="delegated"></a>Делегированные разрешения
 
-* _Member.Read.Hidden_ . Чтение сведений о членах административной единицы со скрытым членством от имени вошедшего пользователя (`GET /administrativeUnits/{id}/members`).
-* _Member.Read.Hidden_ . Чтение сведений о членах группы со скрытым членством от имени вошедшего пользователя (`GET /groups/{id}/members`).
+* _Member.Read.Hidden_. Чтение сведений о членах административной единицы со скрытым членством от имени вошедшего пользователя (`GET /administrativeUnits/{id}/members`).
+* _Member.Read.Hidden_. Чтение сведений о членах группы со скрытым членством от имени вошедшего пользователя (`GET /groups/{id}/members`).
 
 #### <a name="application"></a>Для приложений
 
-* _Member.Read.Hidden_ . Чтение сведений о членах административной единицы со скрытым членством (`GET /administrativeUnits/{id}/members`).
-* _Member.Read.Hidden_ . Чтение сведений о членах группы со скрытым членством (`GET /groups/{id}/members`).
+* _Member.Read.Hidden_. Чтение сведений о членах административной единицы со скрытым членством (`GET /administrativeUnits/{id}/members`).
+* _Member.Read.Hidden_. Чтение сведений о членах группы со скрытым членством (`GET /groups/{id}/members`).
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
@@ -1196,16 +1196,16 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 ### <a name="example-usage"></a>Примеры использования
 #### <a name="delegated"></a>Делегированные разрешения
 
-* _Notes.Create_ . Создание записных книжек для вошедшего пользователя (`POST /me/onenote/notebooks`).
-* _Notes.Read_ . Чтение записных книжек вошедшего пользователя (`GET /me/onenote/notebooks`).
-* _Notes.Read.All_ . Получение всех записных книжек, доступных вошедшему пользователю в организации (`GET /me/onenote/notebooks?includesharednotebooks=true`).
-* _Notes.ReadWrite_ . Обновление страницы вошедшего пользователя (`PATCH /me/onenote/pages/{id}/$value`).
-* _Notes.ReadWrite.All_ . Создание страницы в записной книжке другого пользователя, доступной вошедшему пользователю в организации (`POST /users/{id}/onenote/pages`).
+* _Notes.Create_. Создание записных книжек для вошедшего пользователя (`POST /me/onenote/notebooks`).
+* _Notes.Read_. Чтение записных книжек вошедшего пользователя (`GET /me/onenote/notebooks`).
+* _Notes.Read.All_. Получение всех записных книжек, доступных вошедшему пользователю в организации (`GET /me/onenote/notebooks?includesharednotebooks=true`).
+* _Notes.ReadWrite_. Обновление страницы вошедшего пользователя (`PATCH /me/onenote/pages/{id}/$value`).
+* _Notes.ReadWrite.All_. Создание страницы в записной книжке другого пользователя, доступной вошедшему пользователю в организации (`POST /users/{id}/onenote/pages`).
 
 #### <a name="application"></a>Для приложений
 
-* _Notes.Read.All_ . Чтение всех записных книжек пользователей в группе (`GET /groups/{id}/onenote/notebooks`).
-* _Notes.ReadWrite.All_ . Обновление страницы в записной книжке любого пользователя в организации (`PATCH /users/{id}/onenote/pages/{id}/$value`).
+* _Notes.Read.All_. Чтение всех записных книжек пользователей в группе (`GET /groups/{id}/onenote/notebooks`).
+* _Notes.ReadWrite.All_. Обновление страницы в записной книжке любого пользователя в организации (`PATCH /users/{id}/onenote/pages/{id}/$value`).
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
@@ -1219,7 +1219,7 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 Ограничение *CreatedByApp* , связанное с этим разрешением, означает, что служба будет применять неявную фильтрацию результатов на основе удостоверения вызывающего приложения: либо идентификатора приложения учетной записи Майкрософт, либо набора идентификаторов, настроенных для идентификации кроссплатформенных приложений.
 ### <a name="example-usage"></a>Примеры использования
 #### <a name="delegated"></a>Делегированное
-* _Notifications.ReadWrite.CreatedByApp_ . Публикация ориентированного на пользователя уведомления, которое может затем доставляться различным клиентам приложения пользователя, запущенным в других конечных точках. (POST /me/notifications/).
+* _Notifications.ReadWrite.CreatedByApp_. Публикация ориентированного на пользователя уведомления, которое может затем доставляться различным клиентам приложения пользователя, запущенным в других конечных точках. (POST /me/notifications/).
 
 ---
 
@@ -1245,8 +1245,8 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 
 #### <a name="delegated"></a>Делегированные разрешения
 
-* _OnlineMeetings.Read_ . Извлечение свойств и связей [собрания по сети](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/communications/onlinemeetings/{default id}`).
-* _OnlineMeetings.ReadWrite_ . Создание [собрания по сети](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) (`POST /beta/communications/onlinemeetings`).
+* _OnlineMeetings.Read_. Извлечение свойств и связей [собрания по сети](/graph/api/onlinemeeting-get?view=graph-rest-beta) (`GET /beta/communications/onlinemeetings/{default id}`).
+* _OnlineMeetings.ReadWrite_. Создание [собрания по сети](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) (`POST /beta/communications/onlinemeetings`).
 
 #### <a name="application"></a>Для приложений
 
@@ -1258,7 +1258,7 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
   * Обновление [собрания по сети](/graph/api/onlinemeeting-get?view=graph-rest-beta) от имени пользователя (`PATCH /beta/users/{userId}/onlineMeetings/{id})
   * Удаление [собрания по сети](/graph/api/onlinemeeting-get?view=graph-rest-beta) от имени пользователя (`DELETE /beta/users/{userId}/onlineMeetings/{id})
   
-> **Примечание** . При создании [собрания по сети](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) создается собрание от имени пользователя, но оно не отображается в календаре этого пользователя.
+> **Примечание**. При создании [собрания по сети](/graph/api/application-post-onlinemeetings?view=graph-rest-beta) создается собрание от имени пользователя, но оно не отображается в календаре этого пользователя.
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
@@ -1298,7 +1298,7 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 ### <a name="remarks"></a>Заметки
 Эти разрешения можно использовать для указания артефактов, которые должны возвращаться в запросах авторизации и токенов Azure AD. Они поддерживаются конечными точками Azure AD 1.0 и 2.0 по-разному.
 
-С конечной точкой Azure AD 1.0 используется только разрешение _openid_ . Вы можете указать его в параметре *scope* в запросе авторизации, чтобы вернуть токен идентификатора при использовании протокола OpenID Connect. Дополнительные сведения см. в статье [Предоставление доступа к веб-приложениям с помощью OpenID Connect и Azure Active Directory](/azure/active-directory/develop/active-directory-protocols-openid-connect-code). Чтобы получить токен идентификатора, для приложения должно быть настроено разрешение _User.Read_ .
+С конечной точкой Azure AD 1.0 используется только разрешение _openid_. Вы можете указать его в параметре *scope* в запросе авторизации, чтобы вернуть токен идентификатора при использовании протокола OpenID Connect. Дополнительные сведения см. в статье [Предоставление доступа к веб-приложениям с помощью OpenID Connect и Azure Active Directory](/azure/active-directory/develop/active-directory-protocols-openid-connect-code). Чтобы получить токен идентификатора, для приложения должно быть настроено разрешение _User.Read_.
 
 При использовании конечной точки Azure AD 2.0 и протоколов OAuth 2.0 или OpenID Connect указывается разрешение _offline\_access_ в параметре _scope_ для явного запроса токена обновления. При использовании OpenID Connect указывается разрешение _openid_ для запроса токена идентификации. Вы также можете указать разрешение _email_ , _profile_ или оба для возврата дополнительных утверждений в токене идентификации. При использовании конечной точки 2.0 не нужно указывать разрешение _User.Read_ для возврата токена идентификации. Дополнительные сведения см. в разделе [Области OpenID Connect](/azure/active-directory/develop/active-directory-v2-scopes#openid-connect-scopes).
 
@@ -1384,8 +1384,8 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 ### <a name="example-usage"></a>Примеры использования
 
 #### <a name="delegated"></a>Делегированные разрешения
-* _People.Read_ . Чтение списка релевантных пользователей (`GET /me/people`).
-* _People.Read.All_ . Чтение списка пользователей, релевантных для другого пользователя в той же организации (`GET /users('{id})/people`).
+* _People.Read_. Чтение списка релевантных пользователей (`GET /me/people`).
+* _People.Read.All_. Чтение списка пользователей, релевантных для другого пользователя в той же организации (`GET /users('{id})/people`).
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
@@ -1463,14 +1463,14 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 
 Следующие сценарии поддерживаются как для разрешений приложения, так и для делегированных разрешений:
 
-* _Policy.Read.All_ . Чтение политик организации (`GET /policies`)
-* _Policy.Read.All_ . Чтение политик инфраструктуры доверия в организации (`GET /beta/trustFramework/policies`)
-* _Policy.Read.All_ . Чтение политик развертывания функций в организации (`GET /beta/directory/featureRolloutPolicies`)
+* _Policy.Read.All_. Чтение политик организации (`GET /policies`)
+* _Policy.Read.All_. Чтение политик инфраструктуры доверия в организации (`GET /beta/trustFramework/policies`)
+* _Policy.Read.All_. Чтение политик развертывания функций в организации (`GET /beta/directory/featureRolloutPolicies`)
 * _Policy.ReadWrite.ApplicationConfiguration_ : чтение и запись политик конфигурации приложений вашей организации (`POST /beta/policies/tokenLifetimePolicies`)
-* _Policy.ReadWrite.AuthenticationFlows_ . Чтение и запись политики потоков аутентификации вашей организации (`PATCH /beta/policies/authenticationFlowsPolicy`)
-* _Policy.ReadWrite.ConditionalAccess_ . Чтение и запись политик условного доступа в организации (`POST /beta/identity/conditionalAccess/policies`)
-* _Policy.ReadWrite.FeatureRollout_ . Чтение и запись политик развертывания функций в организации (`POST /beta/directory/featureRolloutPolicies`)
-* _Policy.ReadWrite.TrustFramework_ . Чтение и запись политик инфраструктуры доверия в организации (`POST /beta/trustFramework/policies`)
+* _Policy.ReadWrite.AuthenticationFlows_. Чтение и запись политики потоков аутентификации вашей организации (`PATCH /beta/policies/authenticationFlowsPolicy`)
+* _Policy.ReadWrite.ConditionalAccess_. Чтение и запись политик условного доступа в организации (`POST /beta/identity/conditionalAccess/policies`)
+* _Policy.ReadWrite.FeatureRollout_. Чтение и запись политик развертывания функций в организации (`POST /beta/directory/featureRolloutPolicies`)
+* _Policy.ReadWrite.TrustFramework_. Чтение и запись политик инфраструктуры доверия в организации (`POST /beta/trustFramework/policies`)
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
@@ -1487,9 +1487,9 @@ _IdentityProvider.Read.All_ и _IdentityProvider.ReadWrite.All_ допустим
 
 ### <a name="example-usage"></a>Примеры использования
 
-* _Presence.Read_ . Если вы выполнили вход, вы получите сведения о собственном присутствии (`GET /me/presence`)
-* _Presence.Read.All_ . Получение сведений о присутствии другого пользователя (`GET /users/{id}/presence`)
-* _Presence.Read.All_ . Получение сведений о присутствии нескольких пользователей (`POST /communications/getPresencesByUserId`)
+* _Presence.Read_. Если вы выполнили вход, вы получите сведения о собственном присутствии (`GET /me/presence`)
+* _Presence.Read.All_. Получение сведений о присутствии другого пользователя (`GET /users/{id}/presence`)
+* _Presence.Read.All_. Получение сведений о присутствии нескольких пользователей (`POST /communications/getPresencesByUserId`)
 
 ---
 
@@ -1540,9 +1540,9 @@ _ProgramControl.Read.All_ и _ProgramControl.ReadWrite.All_ допустимы �
 
 #### <a name="application"></a>Для приложений
 
-* _Reports.Read.All_ . Чтение подробного отчета об использовании почтовых приложений за 7-дневный период (`GET /reports/EmailAppUsage(view='Detail',period='D7')/content`).
-* _Reports.Read.All_ . Чтение подробного отчета о действиях с электронной почтой за 01.01.2017 (`GET /reports/EmailActivity(view='Detail',data='2017-01-01')/content`).
-* _Reports.Read.All_ . Чтение подробных отчетов об активации Microsoft 365 (`GET /reports/Office365Activations(view='Detail')/content`).
+* _Reports.Read.All_. Чтение подробного отчета об использовании почтовых приложений за 7-дневный период (`GET /reports/EmailAppUsage(view='Detail',period='D7')/content`).
+* _Reports.Read.All_. Чтение подробного отчета о действиях с электронной почтой за 01.01.2017 (`GET /reports/EmailActivity(view='Detail',data='2017-01-01')/content`).
+* _Reports.Read.All_. Чтение подробных отчетов об активации Microsoft 365 (`GET /reports/Office365Activations(view='Detail')/content`).
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
@@ -1666,7 +1666,7 @@ _ProgramControl.Read.All_ и _ProgramControl.ReadWrite.All_ допустимы �
 
 #### <a name="delegated-and-application"></a>Разрешения приложения и делегированные разрешения
 
-- _SecurityEvents.Read.All_ . Чтение списка всех оповещений безопасности от любых лицензированных поставщиков безопасности, доступных в клиенте (`GET /beta/security/alerts`)
+- _SecurityEvents.Read.All_. Чтение списка всех оповещений безопасности от любых лицензированных поставщиков безопасности, доступных в клиенте (`GET /beta/security/alerts`)
 - _SecurityEvents.ReadWrite.All_ : обновление или чтение оповещений безопасности от любых лицензированных поставщиков безопасности, доступных в клиенте (`PATCH /beta/security/alerts/{id}`)
 
 ---
@@ -1718,10 +1718,10 @@ _ProgramControl.Read.All_ и _ProgramControl.ReadWrite.All_ допустимы �
 
 #### <a name="delegated"></a>Делегированные разрешения
 
-* _Sites.Read.All_ . Чтение списков на корневом сайте SharePoint (`GET /v1.0/sites/root/lists`).
-* _Sites.ReadWrite.All_ . Создание элементов списка SharePoint (`POST /v1.0/sites/root/lists/123/items`).
-* _Sites.Manage.All_ . Добавление нового списка на сайт SharePoint (`POST /v1.0/sites/root/lists`).
-* _Sites.FullControl.All_ . Полный доступ к сайтам и спискам SharePoint.
+* _Sites.Read.All_. Чтение списков на корневом сайте SharePoint (`GET /v1.0/sites/root/lists`).
+* _Sites.ReadWrite.All_. Создание элементов списка SharePoint (`POST /v1.0/sites/root/lists/123/items`).
+* _Sites.Manage.All_. Добавление нового списка на сайт SharePoint (`POST /v1.0/sites/root/lists`).
+* _Sites.FullControl.All_. Полный доступ к сайтам и спискам SharePoint.
 
 ---
 
@@ -1748,12 +1748,12 @@ _ProgramControl.Read.All_ и _ProgramControl.ReadWrite.All_ допустимы �
 ### <a name="example-usage"></a>Примеры использования
 #### <a name="delegated"></a>Делегированные разрешения
 
-* _Tasks.Read_ . Получение всех задач в почтовом ящике пользователя (`GET /me/outlook/tasks`).
-* _Tasks.Read.Shared_ . Доступ к задачам в папке, доступ к которой вам предоставил другой пользователь в организации (`Get /users{id|userPrincipalName}/outlook/taskfolders/{id}/tasks`).
-* _Tasks.ReadWrite_ . Добавление события в папку задач по умолчанию, принадлежащую пользователю (`POST /me/outlook/tasks`).
-* _Tasks.Read_ . Получение всех незавершенных задач в почтовом ящике пользователя (`GET /users/{id | userPrincipalName}/outlook/tasks?$filter=status ne 'completed'`).
-* _Tasks.ReadWrite_ . Обновление задачи в почтовом ящике пользователя (`PATCH /users/{id | userPrincipalName}/outlook/tasks/id`).
-* _Tasks.ReadWrite.Shared_ . Выполнение задачи от имени другого пользователя (`POST /users/{id | userPrincipalName}/outlook/tasks/id/complete`).
+* _Tasks.Read_. Получение всех задач в почтовом ящике пользователя (`GET /me/outlook/tasks`).
+* _Tasks.Read.Shared_. Доступ к задачам в папке, доступ к которой вам предоставил другой пользователь в организации (`Get /users{id|userPrincipalName}/outlook/taskfolders/{id}/tasks`).
+* _Tasks.ReadWrite_. Добавление события в папку задач по умолчанию, принадлежащую пользователю (`POST /me/outlook/tasks`).
+* _Tasks.Read_. Получение всех незавершенных задач в почтовом ящике пользователя (`GET /users/{id | userPrincipalName}/outlook/tasks?$filter=status ne 'completed'`).
+* _Tasks.ReadWrite_. Обновление задачи в почтовом ящике пользователя (`PATCH /users/{id | userPrincipalName}/outlook/tasks/id`).
+* _Tasks.ReadWrite.Shared_. Выполнение задачи от имени другого пользователя (`POST /users/{id | userPrincipalName}/outlook/tasks/id/complete`).
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
@@ -1892,18 +1892,20 @@ _ProgramControl.Read.All_ и _ProgramControl.ReadWrite.All_ допустимы �
 | Разрешение | Отображаемая строка | Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | TeamSettings.Read.Group | Считывание параметров этой команды. | Считывание параметров этой команды без необходимости выполнять вход. |Нет | Нет |
+| TeamSettings.ReadWrite.Group | Обновление параметров для команды. | Считывание и запись параметров этой команды без необходимости выполнять вход. |Нет | Нет |
 | ChannelSettings.Read.Group | Чтение названий, описаний и параметров каналов этой команды. | Считывание названий, описаний и параметров каналов этой группы без необходимости выполнять вход. |Нет | Нет |
-| ChannelSettings.Edit.Group | Редактирование названий, описаний и параметров каналов этой команды.| Редактирование названий, описаний и параметры каналов этой группы без необходимости выполнять вход. |Нет | Нет |
+| ChannelSettings.ReadWrite.Group | Обновление названий, описаний и параметров каналов этой команды.| Обновление названий, описаний и параметров каналов этой группы без необходимости выполнять вход. |Нет | Нет |
 |Channel.Create.Group | Создание каналов в этой команде. | Создание каналов в этой группе без необходимости выполнять вход. |Нет | Нет |
 |Channel.Delete.Group | Удаление каналов этой команды. | Удаление каналов этой группы без необходимости выполнять вход. |Нет | Нет |
 |ChannelMessage.Read.Group | Считывание сообщений канала команды. | Позволяет приложению считывать сообщения канала этой группы без необходимости выполнять вход. |Нет | Нет |
-|TeamsApp.Read.Group | Просмотр приложений, установленных в этой команде. | Просмотр приложений, установленных в этой группе, без необходимости выполнять вход. |Нет | Нет |
+|TeamsAppInstallation.Read.Group | Просмотр приложений, установленных в этой команде. | Просмотр приложений, установленных в этой группе, без необходимости выполнять вход. |Нет | Нет |
 |TeamsTab.Read.Group | Считывание вкладок этой команды. | Считывание вкладок этой группы без необходимости выполнять вход. |Нет | Нет |
 |TeamsTab.Create.Group | Создание вкладок в этой команде. | Создание вкладок в этой группе без необходимости выполнять вход. |Нет | Нет |
-|TeamsTab.Edit.Group | Редактирование вкладок этой команды. | Редактирование вкладок этой группы без необходимости выполнять вход. |Нет | Нет |
+|TeamsTab.ReadWrite.Group | Обновление вкладок этой команды. | Обновление вкладок этой группы без необходимости выполнять вход. |Нет | Нет |
 |TeamsTab.Delete.Group | Удаление вкладок этой команды. | Удаление вкладок этой группы без необходимости выполнять вход. |Нет | Нет |
-|Member.Read.Group | Считывание участников этой команды.| Считывание участников этой группы без необходимости выполнять вход. |Нет | Нет |
-|Owner.Read.Group| Считывание владельцев этой команды. | Считывание владельцев этой группы без необходимости выполнять вход. |Нет | Нет |
+|TeamMember.Read.Group | Считывание участников этой команды. | Считывание участников этой команды без необходимости выполнять вход. |Нет | Нет |
+|Member.Read.Group | Считывание участников этой группы.| Считывание участников этой группы без необходимости выполнять вход. |Нет | Нет |
+|Owner.Read.Group| Считывание владельцев этой группы.    | Считывание владельцев этой группы без необходимости выполнять вход. |Нет | Нет |
 
 ## <a name="teams-settings-permissions"></a>Разрешения для параметров Teams
 
@@ -2142,7 +2144,7 @@ _ProgramControl.Read.All_ и _ProgramControl.ReadWrite.All_ допустимы �
 
 Разрешение _User.ReadWrite.All_ (делегированное или для приложений) позволяет обновлять свойства **businessPhones** , **mobilePhone** или **otherMails** других пользователей только для пользователей, не являющихся администраторами, или для пользователей, которым назначена одна из следующих ролей: читатель каталога, приглашающий гостей, читатель Центра сообщений или читатель отчетов. Дополнительные сведения см. в разделе "Администратор службы поддержки (паролей)" среди [доступных ролей Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
-Для считывания и записи сведений о подчиненных (`directReports`) или руководителе (`manager`) для рабочей или учебной учетной записи приложению необходимо свойство _User.Read.All_ (только для чтения) или _User.ReadWrite.All_ .
+Для считывания и записи сведений о подчиненных (`directReports`) или руководителе (`manager`) для рабочей или учебной учетной записи приложению необходимо свойство _User.Read.All_ (только для чтения) или _User.ReadWrite.All_.
 
 Разрешение _User.ReadBasic.All_ предоставляет приложению доступ только к ограниченному набору свойств, называемому базовым профилем. Это вызвано тем, что полный профиль может содержать конфиденциальные сведения о каталоге. Базовый профиль включает только следующие свойства:
 
@@ -2161,15 +2163,15 @@ _ProgramControl.Read.All_ и _ProgramControl.ReadWrite.All_ допустимы �
 
 #### <a name="delegated"></a>Делегированные разрешения
 
-* _User.Read_ . Чтение полного профиля вошедшего пользователя (`GET /me`).
-* _User.ReadWrite_ . Обновление фотографии вошедшего пользователя (`PUT /me/photo/$value`).
-* _User.ReadBasic.All_ . Поиск всех пользователей с именем David (`GET /users?$filter=startswith(displayName,'David')`).
-* _User.Read.All_ . Чтение сведений о руководителе пользователя (`GET /user/{id | userPrincipalName}/manager`).
+* _User.Read_. Чтение полного профиля вошедшего пользователя (`GET /me`).
+* _User.ReadWrite_. Обновление фотографии вошедшего пользователя (`PUT /me/photo/$value`).
+* _User.ReadBasic.All_. Поиск всех пользователей с именем David (`GET /users?$filter=startswith(displayName,'David')`).
+* _User.Read.All_. Чтение сведений о руководителе пользователя (`GET /user/{id | userPrincipalName}/manager`).
 
 #### <a name="application"></a>Для приложений
 
-* _User.Read.All_ . Чтение всех пользователей и связей с помощью разностного запроса (`GET /beta/users/delta?$select=displayName,givenName,surname`).
-* _User.ReadWrite.All_ . Обновление фотографии любого пользователя в организации (`PUT /user/{id | userPrincipalName}/photo/$value`).
+* _User.Read.All_. Чтение всех пользователей и связей с помощью разностного запроса (`GET /beta/users/delta?$select=displayName,givenName,surname`).
+* _User.ReadWrite.All_. Обновление фотографии любого пользователя в организации (`PUT /user/{id | userPrincipalName}/photo/$value`).
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
