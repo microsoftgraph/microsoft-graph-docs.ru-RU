@@ -405,7 +405,7 @@ items:
             items:
               - name: Список задач
                 href: api/planneruser-list-tasks.md
-          - name: Задачи из списка дел
+          - name: Задачи To-Do
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -415,13 +415,13 @@ items:
                 href: api/todo-post-lists.md
               - name: Перечисление задач
                 href: api/todotasklist-list-tasks.md
-              - name: Список списков задач
+              - name: Перечисление списков задач
                 href: api/todo-list-lists.md
       - name: Группы
         items:
           - name: Обзор
             href: resources/groups-overview.md
-          - name: Группа
+          - name: Group
             href: resources/group.md
             items:
               - name: Список групп
@@ -1010,7 +1010,7 @@ items:
                 href: api/calendarpermission-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -4131,7 +4131,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -4402,7 +4402,7 @@ items:
                 href: api/contact-delta.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -4756,7 +4756,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Создание плана
@@ -4914,25 +4914,51 @@ items:
             items:
               - name: Список каналов
                 href: api/channel-list.md
-              - name: Получение канала
-                href: api/channel-get.md
               - name: Создание канала
                 href: api/channel-post.md
+              - name: Получение канала
+                href: api/channel-get.md
               - name: 'Ветвь обновлений '
                 href: api/channel-patch.md
               - name: Удаление канала
                 href: api/channel-delete.md
               - name: Получение папки с файлами
                 href: api/channel-get-filesfolder.md
+              - name: Перечисление сообщений в каналах
+                href: api/channel-list-messages.md
+              - name: Получение Дельта сообщений канала
+                href: api/chatmessage-delta.md
+              - name: Получение сообщений в каналах
+                href: api/channel-get-message.md
+              - name: Получение ответов на сообщения
+                href: api/channel-list-messagereplies.md
+              - name: Получение ответа на сообщение
+                href: api/channel-get-messagereply.md
               - name: Отправка сообщения
-                href: api/channel-post-messages.md
+                href: api/channel-post-message.md
               - name: Ответ на сообщение
                 href: api/channel-post-messagereply.md
+              - name: Добавление участника в канал
+                href: api/conversationmember-add.md
+              - name: Удаление участника из канала
+                href: api/conversationmember-delete.md
+              - name: Обновление роли участника в канале
+                href: api/conversationmember-update.md
           - name: Сообщение чата
             href: resources/chatmessage.md
             items:
+              - name: Перечисление сообщений в каналах
+                href: api/channel-list-messages.md
+              - name: Получение Дельта сообщений канала
+                href: api/chatmessage-delta.md
+              - name: Получение сообщений в каналах
+                href: api/channel-get-message.md
+              - name: Получение ответов на сообщения
+                href: api/channel-list-messagereplies.md
+              - name: Получение ответа на сообщение
+                href: api/channel-get-messagereply.md
               - name: Отправка сообщения
-                href: api/channel-post-messages.md
+                href: api/chatmessage-post.md
               - name: Ответ на сообщение
                 href: api/channel-post-messagereply.md
               - name: Обновление сообщения
@@ -5196,7 +5222,7 @@ items:
           - name: Список задач
             href: resources/todotasklist.md
             items:
-              - name: Список списков задач
+              - name: Перечисление списков задач
                 href: api/todo-list-lists.md
               - name: Создание списка задач
                 href: api/todo-post-lists.md

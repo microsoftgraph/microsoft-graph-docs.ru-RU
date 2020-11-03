@@ -456,7 +456,7 @@ items:
                 href: api/user-upgrade-teamsappinstallation.md
               - name: Удаление приложения
                 href: api/user-delete-teamsappinstallation.md
-          - name: Задачи из списка дел
+          - name: Задачи To-Do
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -466,7 +466,7 @@ items:
                 href: api/todo-post-lists.md
               - name: Перечисление задач
                 href: api/todotasklist-list-tasks.md
-              - name: Список списков задач
+              - name: Перечисление списков задач
                 href: api/todo-list-lists.md
           - name: Настройки пользователя
             items:
@@ -480,7 +480,7 @@ items:
         items:
           - name: Обзор
             href: resources/groups-overview.md
-          - name: Группа
+          - name: Group
             href: resources/group.md
             items:
               - name: Список групп
@@ -1232,9 +1232,9 @@ items:
                 href: api/event-delta.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
-          - name: Category
+          - name: Категория
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -1651,22 +1651,10 @@ items:
                     href: api/printer-list-jobs.md
                   - name: Создание задания печати
                     href: api/printer-post-jobs.md
-                  - name: Список разрешенных пользователей
-                    href: api/printer-list-allowedusers.md
-                  - name: Список разрешенных групп
-                    href: api/printer-list-allowedgroups.md
                   - name: Триггеры задач List
                     href: api/printer-list-tasktriggers.md
-                  - name: Создание группы разрешенных
-                    href: api/printer-post-allowedgroups.md
-                  - name: Создание разрешенного пользователя
-                    href: api/printer-post-allowedusers.md
                   - name: Создание триггера задачи
                     href: api/printer-post-tasktriggers.md
-                  - name: Удаление разрешенной группы
-                    href: api/printer-delete-allowedgroup.md
-                  - name: Удаление разрешенного пользователя
-                    href: api/printer-delete-alloweduser.md
                   - name: Триггер задачи Delete
                     href: api/printer-delete-tasktrigger.md
                   - name: Восстановление заводских настроек по умолчанию
@@ -9308,7 +9296,7 @@ items:
                 href: api/educationassignment-put-rubric.md
               - name: Удаление Rubric из назначения
                 href: api/educationassignment-delete-rubric.md
-          - name: Category
+          - name: Категория
             href: resources/educationcategory.md
             items:
               - name: Создание категории
@@ -10916,7 +10904,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -11513,7 +11501,7 @@ items:
                 href: api/opentypeextension-get.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -12098,7 +12086,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Обновление
                     href: api/termstore-store-update.md
-              - name: Группа
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Создание
@@ -12149,7 +12137,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -12675,7 +12663,7 @@ items:
           - name: Список задач
             href: resources/todotasklist.md
             items:
-              - name: Список списков задач
+              - name: Перечисление списков задач
                 href: api/todo-list-lists.md
               - name: Создание списка задач
                 href: api/todo-post-lists.md
@@ -12795,7 +12783,7 @@ items:
                     href: api/attachment-delete.md
               - name: Категории
                 items:
-                  - name: Category
+                  - name: Категория
                     href: resources/outlookcategory.md
                   - name: Перечисление категорий
                     href: api/outlookuser-list-mastercategories.md

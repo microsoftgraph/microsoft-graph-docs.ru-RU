@@ -5,56 +5,56 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 30dc0c24d785ff00bfe074a8149316c79ca98f58
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: faa4848694bdfb9c7562e0190d9576bf99f5a72e
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017264"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848358"
 ---
-# <a name="list-monthlyprintusagesummariesbyuser"></a><span data-ttu-id="914e8-103">Список monthlyPrintUsageSummariesByUser</span><span class="sxs-lookup"><span data-stu-id="914e8-103">List monthlyPrintUsageSummariesByUser</span></span>
+# <a name="list-monthlyprintusagesummariesbyuser"></a><span data-ttu-id="d5ca1-103">Список monthlyPrintUsageSummariesByUser</span><span class="sxs-lookup"><span data-stu-id="d5ca1-103">List monthlyPrintUsageSummariesByUser</span></span>
 
-<span data-ttu-id="914e8-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="914e8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d5ca1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d5ca1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="914e8-105">Получение списка ежемесячных сводок использования печати, сгруппированных по пользователям.</span><span class="sxs-lookup"><span data-stu-id="914e8-105">Retrieve a list of monthly print usage summaries, grouped by user.</span></span>
+<span data-ttu-id="d5ca1-105">Получение списка ежемесячных сводок использования печати, сгруппированных по пользователям.</span><span class="sxs-lookup"><span data-stu-id="d5ca1-105">Retrieve a list of monthly print usage summaries, grouped by user.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="914e8-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="914e8-106">Permissions</span></span>
-<span data-ttu-id="914e8-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="914e8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d5ca1-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d5ca1-106">Permissions</span></span>
+<span data-ttu-id="d5ca1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d5ca1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="914e8-109">В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.</span><span class="sxs-lookup"><span data-stu-id="914e8-109">In addition to the following permissions, the user's tenant must have an active Universal Print subscription.</span></span>
+<span data-ttu-id="d5ca1-109">В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.</span><span class="sxs-lookup"><span data-stu-id="d5ca1-109">In addition to the following permissions, the user's tenant must have an active Universal Print subscription.</span></span>
 
-|<span data-ttu-id="914e8-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="914e8-110">Permission type</span></span> | <span data-ttu-id="914e8-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="914e8-111">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="d5ca1-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d5ca1-110">Permission type</span></span> | <span data-ttu-id="d5ca1-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d5ca1-111">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="914e8-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="914e8-112">Delegated (work or school account)</span></span>| <span data-ttu-id="914e8-113">Users. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="914e8-113">Users.Read.All</span></span> |
-|<span data-ttu-id="914e8-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="914e8-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="914e8-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="914e8-115">Not Supported.</span></span>|
-|<span data-ttu-id="914e8-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="914e8-116">Application</span></span>|<span data-ttu-id="914e8-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="914e8-117">Not Supported.</span></span>|
+|<span data-ttu-id="d5ca1-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d5ca1-112">Delegated (work or school account)</span></span>| <span data-ttu-id="d5ca1-113">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="d5ca1-113">Reports.Read.All</span></span> |
+|<span data-ttu-id="d5ca1-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d5ca1-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d5ca1-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d5ca1-115">Not Supported.</span></span>|
+|<span data-ttu-id="d5ca1-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d5ca1-116">Application</span></span>|<span data-ttu-id="d5ca1-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d5ca1-117">Not Supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="914e8-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="914e8-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d5ca1-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d5ca1-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /reports/monthlyPrintUsageSummariesByUser
 GET /print/reports/monthlyPrintUsageSummariesByUser
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="914e8-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="914e8-119">Optional query parameters</span></span>
-<span data-ttu-id="914e8-120">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="914e8-120">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="914e8-121">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="914e8-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="d5ca1-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="d5ca1-119">Optional query parameters</span></span>
+<span data-ttu-id="d5ca1-120">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="d5ca1-120">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="d5ca1-121">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="d5ca1-121">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="914e8-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="914e8-122">Request headers</span></span>
-| <span data-ttu-id="914e8-123">Имя</span><span class="sxs-lookup"><span data-stu-id="914e8-123">Name</span></span>      |<span data-ttu-id="914e8-124">Описание</span><span class="sxs-lookup"><span data-stu-id="914e8-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d5ca1-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d5ca1-122">Request headers</span></span>
+| <span data-ttu-id="d5ca1-123">Имя</span><span class="sxs-lookup"><span data-stu-id="d5ca1-123">Name</span></span>      |<span data-ttu-id="d5ca1-124">Описание</span><span class="sxs-lookup"><span data-stu-id="d5ca1-124">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="914e8-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="914e8-125">Authorization</span></span> | <span data-ttu-id="914e8-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="914e8-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d5ca1-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d5ca1-125">Authorization</span></span> | <span data-ttu-id="d5ca1-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d5ca1-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="914e8-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="914e8-128">Request body</span></span>
-<span data-ttu-id="914e8-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="914e8-129">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="914e8-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="914e8-130">Response</span></span>
-<span data-ttu-id="914e8-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [принтусажесуммарибюсер](../resources/printusagesummarybyuser.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="914e8-131">If successful, this method returns a `200 OK` response code and a collection of [printUsageSummaryByUser](../resources/printusagesummarybyuser.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="914e8-132">Пример</span><span class="sxs-lookup"><span data-stu-id="914e8-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="914e8-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="914e8-133">Request</span></span>
-<span data-ttu-id="914e8-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="914e8-134">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d5ca1-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="d5ca1-128">Request body</span></span>
+<span data-ttu-id="d5ca1-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d5ca1-129">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="d5ca1-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="d5ca1-130">Response</span></span>
+<span data-ttu-id="d5ca1-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [принтусажесуммарибюсер](../resources/printusagesummarybyuser.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="d5ca1-131">If successful, this method returns a `200 OK` response code and a collection of [printUsageSummaryByUser](../resources/printusagesummarybyuser.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="d5ca1-132">Пример</span><span class="sxs-lookup"><span data-stu-id="d5ca1-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="d5ca1-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="d5ca1-133">Request</span></span>
+<span data-ttu-id="d5ca1-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d5ca1-134">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="914e8-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="914e8-135">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d5ca1-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="d5ca1-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_endpoints"
@@ -62,23 +62,23 @@ GET /print/reports/monthlyPrintUsageSummariesByUser
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/reports/monthlyPrintUsageSummariesByUser
 ```
-# <a name="c"></a>[<span data-ttu-id="914e8-136">C#</span><span class="sxs-lookup"><span data-stu-id="914e8-136">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d5ca1-136">C#</span><span class="sxs-lookup"><span data-stu-id="d5ca1-136">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-endpoints-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="914e8-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="914e8-137">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d5ca1-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d5ca1-137">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-endpoints-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="914e8-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="914e8-138">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d5ca1-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d5ca1-138">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-endpoints-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="914e8-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="914e8-139">Response</span></span>
-<span data-ttu-id="914e8-140">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="914e8-140">The following is an example of the response.</span></span>
-><span data-ttu-id="914e8-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="914e8-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="d5ca1-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="d5ca1-139">Response</span></span>
+<span data-ttu-id="d5ca1-140">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d5ca1-140">The following is an example of the response.</span></span>
+><span data-ttu-id="d5ca1-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d5ca1-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
