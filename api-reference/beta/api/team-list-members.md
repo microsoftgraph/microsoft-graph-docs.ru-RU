@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fbe0cbf6207a1beee0488cf26a13f17f8c1d4fa4
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 151274972a58707a8af7410eed5027261c4e6326
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48329978"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848849"
 ---
 # <a name="list-members"></a>Список участников
 Пространство имен: microsoft.graph
@@ -26,9 +26,11 @@ ms.locfileid: "48329978"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|TeamMember.Read.All, TeamMember.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)| TeamMember.Read.All, TeamMember.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение|TeamMember.Read.All, TeamMember.ReadWrite.All|
+|Для приложений| TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All |
+
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
 ## <a name="http-request"></a>HTTP-запрос
 
