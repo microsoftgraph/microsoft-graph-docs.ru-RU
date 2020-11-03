@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 289c07d509dc663af66017d6b146be916cdb991f
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: f9d865d3e9a51100256aa9620bf53b005de692c8
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373071"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848840"
 ---
 # <a name="create-members"></a>Создание участников
 Пространство имен: microsoft.graph
@@ -24,9 +24,9 @@ ms.locfileid: "48373071"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)| TeamMember.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)| TeamMember.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение| TeamMember.ReadWrite.All|
+|Приложение| TeamMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 

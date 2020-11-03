@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 102cf81f0770f02b1206bff1fa927121696047c1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c0bc886b618e061bee51ad82d7032737015f58ab
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727978"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849216"
 ---
 # <a name="printdocument-resource-type"></a>Тип ресурса printDocument
 
@@ -24,14 +24,14 @@ ms.locfileid: "48727978"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Создание сеанса отправки](../api/printdocument-get-file.md) | [uploadSession](uploadsession.md) | Создайте сеанс отправки для последовательной отправки диапазонов двоичного файла **printDocument**. |
+| [Создание сеанса отправки](../api/printdocument-createuploadsession.md) | [uploadSession](uploadsession.md) | Создайте сеанс отправки для последовательной отправки диапазонов двоичного файла **printDocument**. |
 | [Скачать двоичный файл](../api/printdocument-get-file.md) | URL-адрес скачивания | Скачайте двоичный файл, связанный с классом **printDocument**. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка|Идентификатор документа. Только для чтения.|
-|displayName|Строка|Имя документа. Только для чтения.|
+|id|String|Идентификатор документа. Только для чтения.|
+|displayName|String|Имя документа. Только для чтения.|
 |contentType|String|Тип контента документа (MIME). Только для чтения.|
 |size|Int64|Размер документа в байтах. Только для чтения.|
 

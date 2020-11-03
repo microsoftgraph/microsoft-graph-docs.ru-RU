@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8ec0f30e21054c048d7734fc645b01eebaa6dc96
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: d6fef9ad3a7e5166f13fce08ac3bf77b3c8a1336
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373127"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848796"
 ---
 # <a name="get-printconnector"></a>Получение Принтконнектор
 
@@ -29,7 +29,7 @@ ms.locfileid: "48373127"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| User.Read |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /print/connectors/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [принтконнектор](../resources/printconnector.md) в тексте отклика.
@@ -91,7 +91,7 @@ Content-length: 1097
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/connectors/$entity",
   "id": "9953d245-3f6e-418c-a438-67f50e69a430",
-  "name": "ConnectorName",
+  "displayName": "ConnectorName",
   "fullyQualifiedDomainName": "CONNECTOR-MACHINE",
   "operatingSystem": "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555",
   "appVersion": "0.19.7338.23496",

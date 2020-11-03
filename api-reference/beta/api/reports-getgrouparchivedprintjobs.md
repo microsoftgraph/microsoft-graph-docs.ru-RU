@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1eb5919a80bb3d2fb0eb389e6c5a9fbc284a7395
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1242a7cfa4789a5c35138d3bbe53e73d456566e5
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48017222"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848320"
 ---
 # <a name="reports-getgrouparchivedprintjobs"></a>отчеты: Жетграупарчиведпринтжобс
 
@@ -27,7 +27,7 @@ ms.locfileid: "48017222"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Users. Read. ALL |
+|Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 

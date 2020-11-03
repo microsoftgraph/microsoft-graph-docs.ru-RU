@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 9a489efd0361319bfc035eb62b7546ecf7df02a5
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: ea33c5eb43bb008d39ec40f3b79f9be501cc4629
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373036"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849076"
 ---
 # <a name="list-printconnectors"></a>Список Принтконнекторс
 
@@ -29,7 +29,7 @@ ms.locfileid: "48373036"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| User.Read |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| Не поддерживается. |
+|Для приложений| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,14 +41,14 @@ GET /print/connectors
 Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ### <a name="exceptions"></a>Exceptions
-Некоторые операторы не поддерживаются: `$count` , `$orderby` , `$search` , `$filter` .
+Некоторые операторы не поддерживаются: `$count` , `$search` , `$filter` .
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [принтконнектор](../resources/printconnector.md) в тексте отклика.

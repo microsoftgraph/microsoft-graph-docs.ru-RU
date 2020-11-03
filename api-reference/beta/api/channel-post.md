@@ -5,12 +5,12 @@ localization_priority: Normal
 author: laujan
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 41d0e74ef3e08102a5fb670159d0f7e51085817d
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: f7fd428b50c97c8f800295e5d0dd8f334aa575b7
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782827"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848036"
 ---
 # <a name="create-channel"></a>Создание канала
 
@@ -26,13 +26,13 @@ ms.locfileid: "48782827"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Channel. Create. Group *, Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL, сотрудничество. Migrate. ALL|
+|Делегированные (рабочая или учебная учетная запись) | Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Channel. Create. Group *, Channel. Create, Branch. Migrate. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
-> **Примечание** . Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
-> **Примечание** . Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -55,10 +55,10 @@ POST /teams/{id}/channels
 
 При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [channel](../resources/channel.md) в тексте отклика.
 
-Если запрос завершается неудачно, этот метод возвращает `400 Bad Request` код отклика. Ниже приведены распространенные причины этого ответа.
+При безуспешном запросе этот метод возвращает код отклика `400 Bad Request`. Ниже перечислены распространенные причины этого отклика.
 
-* **createdDateTime** задается в будущем.
-* **createdDateTime** указан правильно, но атрибут экземпляра **чаннелкреатионмоде** отсутствует или имеет недопустимое значение.
+* Для **createdDateTime** установлено значение в будущем.
+* Параметр **createdDateTime** указан правильно, но отсутствует атрибут экземпляра **channelCreationMode** или ему присвоено недопустимое значение.
 
 ## <a name="examples"></a>Примеры
 

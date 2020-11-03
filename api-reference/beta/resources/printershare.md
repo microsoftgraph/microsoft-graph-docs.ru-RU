@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 4abfc143c90530fd75965e75044248e79e325483
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4fc729a41105340cc4066ee238c8d1ace3490765
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731458"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848233"
 ---
 # <a name="printershare-resource-type"></a>Тип ресурса Принтершаре
 
@@ -40,8 +40,8 @@ ms.locfileid: "48731458"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка| Идентификатор Принтершаре. Только для чтения.|
-|displayName|Строка|Имя общего принтера, который должен отображаться клиентами печати.|
+|id|String| Идентификатор Принтершаре. Только для чтения.|
+|displayName|String|Имя общего принтера, который должен отображаться клиентами печати.|
 |createdDateTime|DateTimeOffset|Значение DateTimeOffset при создании общего ресурса принтера. Только для чтения.|
 |manufacturer|String|Производитель, сообщаемый принтером, связанным с этим общим принтером. Только для чтения.|
 |model|String|Имя модели, сообщаемое принтером, связанным с этим общим принтером. Только для чтения.|
@@ -60,7 +60,7 @@ ms.locfileid: "48731458"
 |алловедграупс|[принтидентити](printidentity.md)|Группы, у которых пользователи имеют доступ к печати с помощью принтера.|
 |jobs|Коллекция [printJob](printjob.md)| Список заданий, помещенных в очередь для печати принтером, связанным с этим общим принтером.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -77,8 +77,16 @@ ms.locfileid: "48731458"
 ```json
 {
   "id": "String (identifier)",
-  "name": "String",
-  "createdDateTime": "String (timestamp)"
+  "displayName": "String",
+  "manufacturer": "String",
+  "model": "String",
+  "createdDateTime": "String (timestamp)",
+  "isAcceptingJobs": true,
+  "allowAllUsers": false,
+  "location": {"@odata.type": "microsoft.graph.printerLocation"},
+  "status": {"@odata.type": "microsoft.graph.printerStatus"},
+  "defaults": {"@odata.type": "microsoft.graph.printerDefaults"},
+  "capabilities": {"@odata.type": "microsoft.graph.printerCapabilities"}
 }
 ```
 

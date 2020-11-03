@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: b1a7e2d9e051901a65bae864a1a3888d66e468d5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7c7ec996054461b2b2eeb201656c018a5796d5bc
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035225"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848789"
 ---
 # <a name="get-printusagesummarybyuser"></a>Получение Принтусажесуммарибюсер
 
@@ -27,7 +27,7 @@ ms.locfileid: "48035225"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| User.Read |
+|Делегированные (рабочая или учебная учетная запись)| Reports.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -48,7 +48,7 @@ GET /print/reports/monthlyPrintUsageSummariesByUser/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [принтусажесуммарибюсер](../resources/printusagesummarybyuser.md) в тексте отклика.

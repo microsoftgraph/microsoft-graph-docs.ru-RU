@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 17233e6bfdd874743fc89e199e2848edb6965a8d
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 74598426ab62a1bed37aabe0e69b1c118327b71b
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192366"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848040"
 ---
 # <a name="list-channel-messages"></a>Перечисление сообщений в каналах
 

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: c1844a46847bd5a232afd60ff61bd7db0e38df83
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: d1d16426eedf9bd715929ebdc886272af2cf6b7c
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782783"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849146"
 ---
 # <a name="printer-restorefactorydefaults"></a>принтер: Ресторефакторидефаултс
 
@@ -18,7 +18,7 @@ ms.locfileid: "48782783"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Восстановите параметры [принтера](../resources/printer.md)в заводские настройки.
+Восстановите параметры [принтера](../resources/printer.md)по умолчанию на значения, заданные производителем.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,9 +27,9 @@ ms.locfileid: "48782783"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)| Printer. ReadWrite. ALL, Printer. FullControl. ALL |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| Не поддерживается. |
+|Делегированные (рабочая или учебная учетная запись)| Printer. ReadWrite. ALL, Printer. FullControl. ALL |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /print/printers/{id}/restoreFactoryDefaults
 |:--------------|:--------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

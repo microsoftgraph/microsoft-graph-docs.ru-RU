@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: b86d3607decc8aca5b24b2be6f8344da87693fde
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2f1decf04f48f7ee8dc074997e6d503130bc74bc
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703575"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848621"
 ---
 # <a name="printer-resource-type"></a>Тип ресурса Printer
 
@@ -28,7 +28,7 @@ ms.locfileid: "48703575"
 | [получение](../api/printer-get.md); | [Printer](printer.md) | Чтение свойств и связей объекта Printer. |
 | [обновление](../api/printer-update.md). | [Printer](printer.md) | Обновление объекта Printer. |
 | [удаление](../api/printer-delete.md); | Нет | Отмените регистрацию физического принтера в универсальной службе печати. |
-| [ресторефакторидефаултс](../api/printer-restorefactorydefaults.md) | Нет | Восстановление стандартных параметров принтера по умолчанию. |
+| [ресторефакторидефаултс](../api/printer-restorefactorydefaults.md) | Нет | Восстановите параметры принтера по умолчанию на значения, заданные производителем. |
 | [Список заданий](../api/printer-list-jobs.md) | Коллекция [printJob](printjob.md) | Получение списка заданий печати, помещенных в очередь для обработки принтером. |
 | [Создание задания](../api/printer-post-jobs.md) | [printJob](printjob.md) | Создание нового задания печати для принтера. Чтобы начать печать задания, используйте [Start](../api/printjob-start.md). |
 | [Перечисление соединителей](../api/printer-list-connectors.md) | Коллекция [принтконнектор](printconnector.md) | Получение списка соединителей, с которыми связан этот принтер. |
@@ -39,8 +39,8 @@ ms.locfileid: "48703575"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка|Идентификатор документа. Только для чтения.|
-|displayName|Строка|Имя принтера.|
+|id|String|Идентификатор документа. Только для чтения.|
+|displayName|String|Имя принтера.|
 |manufacturer|String|Производитель, сообщаемый принтером. Только для чтения.|
 |model|String|Имя модели, сообщаемое принтером. Только для чтения.|
 |регистереддатетиме|DateTimeOffset|Значение DateTimeOffset при регистрации принтера. Только для чтения.|
@@ -49,6 +49,7 @@ ms.locfileid: "48703575"
 |isAcceptingJobs|Логический|Принимает ли принтер новые задания печати.|
 |location|[принтерлокатион](printerlocation.md)|Физическое и/или организационное расположение принтера.|
 |defaults|[принтердефаултс](printerdefaults.md)|Параметры печати по умолчанию для принтера.|
+|capabilities|[принтеркапабилитиес](printercapabilities.md)|Возможности принтера, связанного с этим общим принтером.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип        | Описание |
@@ -58,7 +59,7 @@ ms.locfileid: "48703575"
 |аудиовыход|[принтконнектор](printconnector.md)|Соединители, связанные с принтером.|
 |тасктригжерс|Коллекция [принттасктригжер](printtasktrigger.md)|Список триггеров задач, связанных с принтером.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -75,16 +76,16 @@ ms.locfileid: "48703575"
 ```json
 {
   "id": "String (identifier)",
-  "name": "String",
+  "displayName": "String",
   "manufacturer": "String",
   "model": "String",
   "isShared": true,
   "registeredDateTime": "String (timestamp)",
-  "acceptingJobs": true,
-  "registeredBy": {"@odata.type": "microsoft.graph.printUserIdentity"},
+  "isAcceptingJobs": true,
   "location": {"@odata.type": "microsoft.graph.printerLocation"},
   "status": {"@odata.type": "microsoft.graph.printerStatus"},
-  "defaults": {"@odata.type": "microsoft.graph.printerDefaults"}
+  "defaults": {"@odata.type": "microsoft.graph.printerDefaults"},
+  "capabilities": {"@odata.type": "microsoft.graph.printerCapabilities"}
 }
 ```
 

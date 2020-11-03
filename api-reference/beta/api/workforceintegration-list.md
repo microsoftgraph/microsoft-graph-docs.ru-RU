@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 5d64b4b4dcaf2de295924faa38e2c026d547daf3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: db9e9c9ab372533341d7c28d140c083af95922df
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47989787"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848670"
 ---
 # <a name="list-workforceintegrations"></a>Список Воркфорцеинтегратионс
 
@@ -26,7 +26,7 @@ ms.locfileid: "47989787"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     |  Воркфорцеинтегратион. Read. ALL, Воркфорцеинтегратион. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Воркфорцеинтегратион. Read. ALL, Воркфорцеинтегратион. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 

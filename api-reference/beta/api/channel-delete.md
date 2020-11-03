@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6e0204fea1a3291bbca4c942a03e5364fc5b4a47
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ab9d5e0ffc4ac853284e6ef0e1b9f98f1aaa7004
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983307"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848021"
 ---
 # <a name="delete-channel"></a>Удаление канала
 
@@ -27,9 +27,9 @@ ms.locfileid: "47983307"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Channel. Delete. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Channel. Delete. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Channel. Delete. ALL, Channel. Delete. Group *, Group. ReadWrite. ALL, Directory. ReadWrite. ALL    |
+|Для приложений | Channel. Delete. Group *, Channel. Delete. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
