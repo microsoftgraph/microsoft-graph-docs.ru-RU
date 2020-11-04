@@ -6,12 +6,12 @@ title: Отписаться от элемента Drive
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: f0148663bbe25902a96d1a3d89fea16d509a0ad8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 057ba8e3d75b9e78af19008060426ad695ca5543
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48063807"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904211"
 ---
 # <a name="unfollow-drive-item"></a>Отписаться от элемента Drive
 
@@ -48,7 +48,7 @@ POST /users/{user-id}/drive/items/{item-id}/unfollow
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении вызова API возвращается отклик `204 No Content`. В тексте отклика не возвращается никаких данных.
+При успешном выполнении вызова API возвращается отклик `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -60,7 +60,7 @@ POST /users/{user-id}/drive/items/{item-id}/unfollow
 <!-- { "blockType": "request", "name": "unfollow-item", "scopes": "files.read" } -->
 
 ```http
-DELETE /me/drive/items/{item-id}/unfollow
+POST /me/drive/items/{item-id}/unfollow
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unfollow-item-csharp-snippets.md)]

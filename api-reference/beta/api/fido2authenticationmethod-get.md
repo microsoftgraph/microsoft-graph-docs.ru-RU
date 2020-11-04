@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0144069949623693005855426ca483bedebcac74
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: 2175bfbb0af1960fe64efacb47f34914ac553618
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418430"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904151"
 ---
 # <a name="get-fido2authenticationmethod"></a>Получение fido2AuthenticationMethod
 Пространство имен: microsoft.graph
@@ -51,7 +51,7 @@ GET /users/{id | userPrincipalName}/authentication/fido2AuthenticationMethod/{id
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -61,6 +61,8 @@ GET /users/{id | userPrincipalName}/authentication/fido2AuthenticationMethod/{id
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_fido2authenticationmethod"
@@ -69,6 +71,20 @@ GET /users/{id | userPrincipalName}/authentication/fido2AuthenticationMethod/{id
 ``` http
 GET https://graph.microsoft.com/beta/me/authentication/fido2AuthenticationMethod/-2_GRUg2-HYz6_1YG4YRAQ2
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-fido2authenticationmethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-fido2authenticationmethod-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-fido2authenticationmethod-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

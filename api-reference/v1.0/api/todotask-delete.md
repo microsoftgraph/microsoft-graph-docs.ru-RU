@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ca86b2344e67c86418c8bc5d2d3914148994f1e9
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: b8e890bac27be2ba29e6c241af6faeb645e55f92
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797451"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904941"
 ---
 # <a name="delete-todotask"></a>Удаление Тодотаск
 Пространство имен: microsoft.graph
@@ -23,7 +23,7 @@ ms.locfileid: "48797451"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -53,6 +53,8 @@ DELETE /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADA1MTHgwAAA=", "721a35e2-35e2-721a-e235-1a72e2351a72"],
@@ -62,6 +64,24 @@ DELETE /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 ``` http
 DELETE https://graph.microsoft.com/v1.0/me/todo/lists/AAMkADA1MTHgwAAA=/tasks/721a35e2-35e2-721a-e235-1a72e2351a72
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-todotask-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-todotask-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-todotask-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-todotask-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

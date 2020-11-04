@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 66d4815220d77e0f7189bf876c32eb043e032c7c
-ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
+ms.openlocfilehash: b90e3abff3d0624b7639195f02e342f7fa11c5ee
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48364287"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848929"
 ---
 # <a name="patch-channel"></a>Канал исправлений
 
@@ -26,7 +26,7 @@ ms.locfileid: "48364287"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Чаннелсеттингс. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Чаннелсеттингс. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Для приложений | Чаннелсеттингс. ReadWrite. Group *, Чаннелсеттингс. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 

@@ -5,14 +5,16 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: yyuank
-ms.openlocfilehash: b4581105a06a7f234462e904822a3e87c52899f2
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: a08bb14103afd36905e209fc1c2dfeefe7787990
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459776"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904569"
 ---
 # <a name="get-endpoint"></a>Получение конечной точки
+
+Пространство имен: microsoft.graph
 
 Получение свойств и связей определенного объекта [конечной точки](../resources/endpoint.md) .
 
@@ -24,7 +26,7 @@ ms.locfileid: "48459776"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.Read.All, Group.ReadWrite.All |
+|Для приложений | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -71,10 +73,9 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 
 ---
 
-
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+>Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

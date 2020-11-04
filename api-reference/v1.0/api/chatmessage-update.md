@@ -5,12 +5,12 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ae6618baaa7c29fb6e603dd4521e66b97da2148f
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: d3be68c5c2ba9e561cc66b4665759dfbb9e82753
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48315464"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848648"
 ---
 # <a name="update-chatmessage"></a>Обновление chatMessage
 
@@ -22,7 +22,7 @@ ms.locfileid: "48315464"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Chat. Упдатеполицивиолатион. ALL для сообщения чата.</br>Чаннелмессаже. Упдатеполицивиолатион. ALL для сообщения канала. |
 

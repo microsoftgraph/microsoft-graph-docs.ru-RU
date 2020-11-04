@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 29d4f2c18132288b65407bbe75b8d622edd69d96
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b9186b7d3066d00d5e84a18b92dde1a8e5f2457f
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978438"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848775"
 ---
 # <a name="delete-teamsapp"></a>Удаление teamsApp
 
@@ -31,8 +31,7 @@ ms.locfileid: "47978438"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|
-| Делегированные (рабочая или учебная учетная запись)     | CamlQuery. ReadWrite. ALL, Directory. ReadWrite. ALL |
-| Делегированные (рабочая или учебная учетная запись) | AppCatalog.Submit |
+| Делегированные (рабочая или учебная учетная запись) | CamlQuery. оправить, CamlQuery. ReadWrite. ALL, Directory. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается|
 | Для приложений                            | Не поддерживается. |
 
@@ -57,7 +56,7 @@ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 |:--------------|:--------------  |
 | Авторизация | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 1d46136c0d3bf0991545f5331d73382831d9aa2b
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: ec64a58a88d410abf84acbbb6fd92ccaf3940b3e
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373460"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848936"
 ---
 # <a name="create-channel"></a>Создание канала
 
@@ -24,9 +24,9 @@ ms.locfileid: "48373460"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение |Channel. Create, Group. ReadWrite. ALL, Directory. ReadWrite. ALL, "сотрудничество. миграция. все"|
+|Для приложений | Channel. Create. Group *, Channel. Create, Branch. Migrate. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
@@ -92,7 +92,7 @@ Content-type: application/json
 ---
 #### <a name="response"></a>Отклик
 
-Ниже показан пример ответа.
+Ниже приводится пример отклика.
 
 > **Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

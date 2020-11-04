@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c2716dd5d2dfcac6b20b9d25bdd5ecac003c1b30
-ms.sourcegitcommit: d12bd5435c198bcd096e1f7f6a2716f4a04631cc
+ms.openlocfilehash: 48687f8f42520848369e3060174be187650db6d3
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137143"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849013"
 ---
 # <a name="get-filesfolder"></a>Получение filesFolder
 
@@ -23,9 +23,9 @@ ms.locfileid: "48137143"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Files.Read.All, Group.Read.All, Files.ReadWrite.All, Group.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Files.Read.All, Group.Read.All, Files.ReadWrite.All, Group.ReadWrite.All     |
+|Делегированное (рабочая или учебная учетная запись) | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос

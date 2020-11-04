@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fa995b4b545eb2f9f7ea42d9fd9d8744a0a656cb
-ms.sourcegitcommit: 7e1993d64cc6d3145ae0ca984fefe74772b6052b
+ms.openlocfilehash: 794cb72014d2021b7eec0f46937b1597607a0d64
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47843179"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904758"
 ---
 # <a name="list-teamsapp"></a>Список teamsApp
 
@@ -52,7 +52,7 @@ GET /appCatalogs/teamsApps
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -73,7 +73,7 @@ GET /appCatalogs/teamsApps
   "name": "list_teamsapp"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/appCatalogs/teamsApp?$filter=distributionMethod eq 'organization'
 ```
 

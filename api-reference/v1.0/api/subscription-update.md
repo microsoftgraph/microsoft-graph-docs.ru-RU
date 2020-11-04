@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: 2900fd09839bdd570a41a5bad40578dec1c7ace8
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: 5221f855df88103808f561d720f49c812911355e
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742220"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849097"
 ---
 # <a name="update-subscription"></a>Обновление подписки
 
@@ -27,7 +27,7 @@ ms.locfileid: "48742220"
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Приложение |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) | Не поддерживается | Не поддерживается | CallRecords.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | Не поддерживается | Не поддерживается | ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | Не поддерживается | Не поддерживается |  Чаннелмессаже. Read. Group *, Чаннелмессаже. Read. ALL  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages — все сообщения канала в организации) | Не поддерживается | Не поддерживается | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Не поддерживается | Не поддерживается | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/getAllMessages — все сообщения чата в организации) | Не поддерживается | Не поддерживается | Chat.Read.All  |
@@ -42,6 +42,8 @@ ms.locfileid: "48742220"
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Не поддерживается | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
+
 ### <a name="chatmessage"></a>chatMessage
 
 Подписки **chatMessage** с разрешениями для приложений включают данные ресурса и требуют [шифрования](/graph/webhooks-with-resource-data). Создание подписки завершится сбоем, если не указан [encryptionCertificate](../resources/subscription.md). Перед созданием подписки **chatMessage** вы должны запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis). 
@@ -52,7 +54,7 @@ ms.locfileid: "48742220"
 
 Дополнительные ограничения применяются к подпискам на элементы OneDrive. Ограничения применяются для создания, а также управления (получение, обновление и удаление) подписками.
 
-В личном хранилище OneDrive можно подписаться на корневую папку или любую вложенную папку в этом хранилище. В OneDrive для бизнеса можно подписаться только на корневую папку. Уведомления об изменениях отправляются для определенных типов изменений папки, на которую оформлена подписка, любого файла, папки или других экземпляров **driveItem** в ее иерархии. Нельзя подписаться на экземпляры **drive** или **driveItem**, не являющиеся папками, например на отдельные файлы.
+В личном хранилище OneDrive можно подписаться на корневую папку или любую вложенную папку в этом хранилище. В OneDrive для бизнеса можно подписаться только на корневую папку. Уведомления об изменениях отправляются для определенных типов изменений папки, на которую оформлена подписка, любого файла, папки или других экземпляров **driveItem** в ее иерархии. Нельзя подписаться на экземпляры **drive** или **driveItem** , не являющиеся папками, например на отдельные файлы.
 
 ### <a name="contact-event-and-message"></a>contact, event и message
 

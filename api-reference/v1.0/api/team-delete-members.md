@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e132e5b15affb2ba649dd84818d595b69c8269e4
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 45a89703062ca77dfc0189aa12cc361bc0b6e025
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330326"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849174"
 ---
 # <a name="remove-members-from-team"></a>Удаление участников из группы
 Пространство имен: microsoft.graph
@@ -22,9 +22,11 @@ ms.locfileid: "48330326"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)| TeamMember.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)| TeamMember.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение| TeamMember.ReadWrite.All|
+|Приложение| TeamMember.ReadWrite.All |
+
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
 ## <a name="http-request"></a>HTTP-запрос
 

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 9c611ab5f0fa612146fcd413d59fb9baea32701d
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 0101b8cb59b0be777b7de04b2756fdf30baa7c48
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796740"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848810"
 ---
 # <a name="create-team"></a>Создание команды
 
@@ -26,7 +26,7 @@ ms.locfileid: "48796740"
 | :------------------------------------- | :------------------------------------------ |
 | Делегированное (рабочая или учебная учетная запись)     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 | Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All, Teamwork.Migrate.All|
+| Для приложений                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -286,7 +286,7 @@ Content-Length: 0
 
 ### <a name="example-4-create-a-team-from-group"></a>Пример 4. Создание команды из группы
 
-В следующем примере показано, как можно создать новую [команду](../resources/team.md) из [группы](../resources/group.md) с учетом **groupId** .
+В следующем примере показано, как можно создать новую [команду](../resources/team.md) из [группы](../resources/group.md) с учетом **groupId**.
 
 Обратите внимание на некоторые моменты, связанные с этим вызовом:
 

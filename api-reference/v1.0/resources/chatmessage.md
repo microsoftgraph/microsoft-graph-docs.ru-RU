@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: af025ad2484757626fec08d9131a870cb345e492
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: a3d994379b3b15170ff490433827eda79c18d4f7
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223214"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849195"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -23,10 +23,17 @@ ms.locfileid: "48223214"
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
 |**Сообщения канала**| | |
-|[Создание объекта chatMessage в канале](../api/channel-post-messages.md) | [chatMessage](#chatmessage-resource-type)| Создайте новое сообщение разговора верхнего уровня в канале.|
+|[Список chatMessage Channel](../api/channel-list-messages.md) | Коллекция [chatMessage](chatmessage.md) | Список всех корневых сообщений чата в канале.|
+|[Получение chatMessages в разностном канале](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Получение добавочных сообщений чата в канале. |
+|[Создание подписки для сообщений о новых каналах](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Прослушивать новые и измененные сообщения каналов и реакции на них. |
+|[Получение chatMessage Channel](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | Получение одного из каналов сообщения с одним корневым сеансом.|
+|[Создание объекта chatMessage в канале](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | Отправка сообщения в канал. |
 |[Обновление chatMessage](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Обновление свойства **полицивиолатион** сообщения чата.|
 |**Ответы на сообщения канала**| | |
-|[Ответ на chatMessage в канале](../api/channel-post-messagereply.md) | [chatMessage](#chatmessage-resource-type)| Ответ на существующее сообщение чата в канале.|
+|[Перечисление ответов на chatMessage](../api/channel-list-messagereplies.md) | Коллекция [chatMessage](chatmessage.md)| Список всех ответов на сообщение чата в канале.|
+|[Получение ответа на chatMessage](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Получение одного ответа на сообщение чата в канале.|
+|[Ответ на chatMessage в канале](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Ответ на существующее сообщение чата в канале.|
+|[Обновление chatMessage](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Обновление свойства **полицивиолатион** сообщения чата.|
 
 ## <a name="properties"></a>Свойства
 
@@ -50,7 +57,7 @@ ms.locfileid: "48223214"
 | полицивиолатион | [чатмессажеполицивиолатион](../resources/chatmessagepolicyviolation.md) |Определяет свойства нарушения политики, заданные с помощью приложения предотвращения потери данных (DLP).|
 |языковые стандарты|string|Язык сообщения чата, заданное клиентом.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: de62b21264ea9cd4b807849362c5ec6aebe32913
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eb019555d012a9373b21571291687a703beb5b8e
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47984553"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848209"
 ---
 # <a name="list-workforceintegrations"></a>Список Воркфорцеинтегратионс
 
@@ -24,7 +24,7 @@ ms.locfileid: "47984553"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     |  Воркфорцеинтегратион. Read. ALL, Воркфорцеинтегратион. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Воркфорцеинтегратион. Read. ALL, Воркфорцеинтегратион. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -49,7 +49,7 @@ GET /teamwork/workforceIntegrations
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

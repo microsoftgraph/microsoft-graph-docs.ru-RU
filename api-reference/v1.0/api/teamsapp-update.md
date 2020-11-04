@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e69a43182b0d96b146b080e7326560dc11ac3ed1
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 6f54f7938e448d83a9ac2ff70e1dfb215e1b71d6
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223552"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849153"
 ---
 # <a name="update-teamsapp"></a>Обновление teamsApp
 
@@ -22,14 +22,13 @@ ms.locfileid: "48223552"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 >**Примечание:** Только глобальные администраторы могут вызывать этот API.
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|
-| Делегированные (рабочая или учебная учетная запись)     | CamlQuery. ReadWrite. ALL, Directory. ReadWrite. ALL |
-| Делегированные (рабочая или учебная учетная запись) | AppCatalog.Submit|
+| Делегированные (рабочая или учебная учетная запись)     | CamlQuery. оправить, CamlQuery. ReadWrite. ALL, Directory. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается|
 | Для приложений                            | Не поддерживается. |
 

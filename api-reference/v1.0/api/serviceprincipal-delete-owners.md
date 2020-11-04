@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 05a3b67f02be009918cb17c5954b1d2de4494d92
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5d3856dc2337e7bfb55ece8aee9d24e47df7f918
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47972765"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48903525"
 ---
 # <a name="remove-owner"></a>Удаление владельца
 
@@ -23,14 +23,14 @@ ms.locfileid: "47972765"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. ReadWrite. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application. ReadWrite. ALL, Application. ReadWrite. Овнедби |
+|Для приложений | Application.ReadWrite.All, Application.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /serviceprincipals/{id}/owners/{id}/$ref
+DELETE /servicePrincipals/{id}/owners/{id}/$ref
 
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -38,7 +38,7 @@ DELETE /serviceprincipals/{id}/owners/{id}/$ref
 |:---- |:---------- |
 | Авторизация | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите идентификатор объекта каталога, который необходимо назначить владельцем.
 
 ## <a name="response"></a>Отклик
@@ -58,7 +58,7 @@ DELETE /serviceprincipals/{id}/owners/{id}/$ref
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/serviceprincipals/{id}/owners/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/owners/{id}/$ref
 Content-type: application/json
 Content-length: 30
 
@@ -90,7 +90,7 @@ Content-length: 30
 
 Ниже приведен пример отклика.
 
->**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

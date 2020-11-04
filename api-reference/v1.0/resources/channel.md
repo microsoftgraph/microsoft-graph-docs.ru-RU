@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: f9860f6d1385374258eeed11dd8db4db21ba895c
-ms.sourcegitcommit: 39e48ed2d95b142ccf3f40ecc52441458f2745bf
+ms.openlocfilehash: baf38d4ced45f5616a8db1bf51fe2d3ba17e940f
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48364405"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849181"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 
@@ -27,6 +27,16 @@ ms.locfileid: "48364405"
 |[Получение канала](../api/channel-get.md) | [channel](channel.md) | Чтение свойств и связей канала.|
 |[Обновление канала](../api/channel-patch.md) | [channel](channel.md) | Обновление свойств канала.|
 |[Удаление канала](../api/channel-delete.md) | Нет | Удаление канала.|
+|[Получение дельты сообщения](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Получение добавочных сообщений в канале. |
+|[Перечисление сообщений в каналах](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в канале |
+|[Перечисление участников канала](../api/conversationmember-list.md)| Коллекция [conversationMember](conversationmember.md)| Получение списка участников канала. |
+|[Получение участника канала](../api/conversationmember-get.md)| [conversationMember](conversationmember.md)| Получение участника канала. |
+|[Добавление участника канала](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Добавление участника в канал. Поддерживается, только если параметру `channelType` присвоено значение `private`.|
+|[Обновление участника канала](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Обновление участника канала. Поддерживается, только если параметру `channelType` присвоено значение `private`.|
+|[Удаление участника канала](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Удаление участника канала. Поддерживается, только если параметру `channelType` присвоено значение `private`.|
+|[Создание объекта chatMessage в канале](../api/channel-post-messages.md) | [chatMessage](../resources/chatmessage.md) | Отправка сообщения в канал. |
+|[Создание ответа на chatMessage в канале](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Ответ на сообщение в канале.|
+|[Получение папки с файлами](../api/driveitem-get.md)| [driveItem](driveitem.md) | Получение сведений о папке SharePoint, в которой хранятся файлы канала. |
 |[Перечисление вкладок](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Перечисление вкладок, закрепленных в канале.|
 
 ## <a name="properties"></a>Свойства

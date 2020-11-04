@@ -5,12 +5,12 @@ localization_priority: Normal
 author: akumar39
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0ca47d0f9c640509d0a61f68c688d45753293ad5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9ff45c62726c5efc986593e3e949ffacdb115a15
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48015535"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849083"
 ---
 # <a name="update-workforceintegration"></a>Обновление Воркфорцеинтегратион
 
@@ -24,7 +24,7 @@ ms.locfileid: "48015535"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     |Воркфорцеинтегратион. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Воркфорцеинтегратион. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -42,7 +42,7 @@ PATCH /teamwork/workforceIntegrations
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -53,7 +53,7 @@ PATCH /teamwork/workforceIntegrations
 |апиверсион|Int32|Версия API для URL-адреса обратного вызова. Начните с 1.|
 |displayName|String|Имя интеграции трудовых ресурсов.|
 |шифрования|воркфорцеинтегратионенкриптион|Ресурс для шифрования взаимодействия сотрудников. |
-|isActive|Boolean|Указывает, активна ли эта интеграция сотрудников в настоящее время и доступна ли она.|
+|isActive|Логический|Указывает, активна ли эта интеграция сотрудников в настоящее время и доступна ли она.|
 |суппортедентитиес|string| Возможные значения: `none`, `shift`, `swapRequest`, `openshift`, `openShiftRequest`, `userShiftPreferences`. Если выбрано более одного значения, все значения должны начинаться с первой буквы в верхнем регистре.|
 |url|String| URL-адрес интеграции сотрудников для обратных вызовов из службы смены. |
 
@@ -164,7 +164,7 @@ PATCH https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations/{workforce
 ```
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 ```
 HTTP/1.1 200 OK
 Content-type: application/json

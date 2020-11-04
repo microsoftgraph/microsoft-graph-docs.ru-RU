@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f915765192cf039c2095bac7e64a573d9b43b595
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 1b4a9df1bdeedf9f59cbd5dfc716cf21fe978daf
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797338"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904241"
 ---
 # <a name="create-linkedresource"></a>Создание Линкедресаурце
 Пространство имен: microsoft.graph
@@ -25,7 +25,7 @@ ms.locfileid: "48797338"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -68,6 +68,8 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["dfsdc-f9dfdfs-dcsda9", "e2dc-f9cce2-dce29"],
@@ -86,6 +88,24 @@ Content-length: 166
   "externalId": "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-linkedresource-from-linkedresources-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-linkedresource-from-linkedresources-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-linkedresource-from-linkedresources-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-linkedresource-from-linkedresources-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

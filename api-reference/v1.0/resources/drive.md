@@ -7,12 +7,12 @@ localization_priority: Priority
 ms.prod: sharepoint
 description: Ресурс Drive — объект верхнего уровня, представляющий хранилище OneDrive пользователя или библиотеку документов в SharePoint.
 doc_type: resourcePageType
-ms.openlocfilehash: 700df7e7ea38a195bcb0b3ea50187f942635ed76
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6e4f228edbc39decbb2a60aaf79f3e3788bfcc24
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48018594"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848684"
 ---
 # <a name="drive-resource-type"></a>Тип ресурса Drive
 
@@ -112,7 +112,7 @@ ms.locfileid: "48018594"
 | [Получение корневой папки для ресурса Drive по умолчанию пользователя][item-get]       | `GET /drive/root`           |
 | [Получение списка дочерних элементов ресурса Drive][item-children]             | `GET /drive/root/children`  |
 | [Получение списка изменений для всех элементов в ресурсе Drive][item-changes]    | `GET /drive/root/delta`     |
-| [Получение списка отслеживаемых объектов driveItems пользователя][drive-following]         | `Get /drive/followed`       |
+| [Получение списка отслеживаемых объектов driveItems пользователя][drive-following]         | `Get /drive/following`       |
 | [Поиск элементов в ресурсе Drive][item-search]               | `GET /drive/root/search`    |
 | [Доступ к специальной папке](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
 

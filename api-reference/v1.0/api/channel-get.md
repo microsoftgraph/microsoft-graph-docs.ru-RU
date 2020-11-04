@@ -5,12 +5,12 @@ author: nkramer
 doc_type: apiPageType
 ms.prod: microsoft-teams
 localization_priority: Normal
-ms.openlocfilehash: b2af077ae4036434503947f46feab45f7f765c38
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: d6a2c9e822bd93f6619472ab3059f60a18add24b
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373652"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848971"
 ---
 # <a name="get-channel"></a>Получение канала
 
@@ -24,9 +24,9 @@ ms.locfileid: "48373652"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Channel. ReadBasic. ALL, Чаннелсеттингс. Read. ALL, Чаннелсеттингс. ReadWrite. ALL, Чаннелсеттингс. Read. Group *, чаннелсеттингс. Edit. Group*, Group. Read. ALL, Group. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL    |
+|Для приложений | ChannelSettings.Read.Group *, ChannelSettings.ReadWrite.Group* , Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 

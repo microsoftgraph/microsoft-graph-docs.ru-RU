@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3b8b45794078aaeadef850cd937afa5e93164424
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 116d0f95020ecd88166ec946c42c616cf7041090
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48601285"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48849062"
 ---
 # <a name="delete-channel"></a>Удаление канала
 
@@ -26,9 +26,9 @@ ms.locfileid: "48601285"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Channel. Delete. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Channel. Delete. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Channel. Delete. ALL, Channel. Delete. Group *, Group. ReadWrite. ALL, Directory. ReadWrite. ALL    |
+|Для приложений | Channel. Delete. Group *, Channel. Delete. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
@@ -46,7 +46,7 @@ DELETE /teams/{id}/channels/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

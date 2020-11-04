@@ -5,27 +5,29 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 19047d78899fa3ab918ce6928fac7f755d9e0f4b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9f300779832210aa4f2b740aa3a1ebe1690a3d8b
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978519"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848650"
 ---
 # <a name="get-primarychannel"></a>Получение primaryChannel
 
 Пространство имен: microsoft.graph
 
-Получение стандартного [канала](../resources/channel.md) (**Общий**) [команды](../resources/team.md).
+Получение стандартного [канала](../resources/channel.md) ( **Общий** ) [команды](../resources/team.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.Read.All, Group.ReadWrite.All    |
+|Делегированное (рабочая или учебная учетная запись) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | ChannelSettings.Read.Group *, ChannelSettings.ReadWrite.Group* , Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All |
+
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
 > **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 

@@ -5,12 +5,12 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6eb295dc9bc9f62172513e9d55c43394d36093ec
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 05dd3377e5a3161a38d9db1d56de7bba7ccf9af4
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48700902"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848327"
 ---
 # <a name="delete-conversationmember"></a>Удаление Конверсатионмембер
 
@@ -25,9 +25,9 @@ ms.locfileid: "48700902"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированные (рабочая или учебная учетная запись)| Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись)| ChannelMember.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Для приложений| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->
@@ -41,7 +41,7 @@ DELETE /teams/{id}/channels/{id}/members/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

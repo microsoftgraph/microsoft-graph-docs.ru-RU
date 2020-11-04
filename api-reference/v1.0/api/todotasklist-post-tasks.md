@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: c9d9e4c9a7928b05cc6625e38bbbfc6e651036d0
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: 873cc4073ed56d1a30237676f617d9f415fc5b2a
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48797386"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904437"
 ---
 # <a name="create-todotask"></a>Создание Тодотаск
 Пространство имен: microsoft.graph
@@ -23,7 +23,7 @@ ms.locfileid: "48797386"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -75,6 +75,8 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 ### <a name="request"></a>Запрос
 В следующем примере создается объект **тодотаск** в указанном списке задач и включается [линкедресаурце](../resources/linkedresource.md).
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM"],
@@ -97,6 +99,24 @@ Content-length: 608
    ]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-todotask-from-tasks-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-todotask-from-tasks-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-todotask-from-tasks-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-todotask-from-tasks-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### <a name="response"></a>Отклик

@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f71b8b4694d8c705e34988755b64cd7ad62b5133
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 2f3d26b883da5e86acc2fb2870dda0880d356f31
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373389"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848649"
 ---
 # <a name="create-members"></a>Создание участников
 Пространство имен: microsoft.graph
@@ -22,9 +22,11 @@ ms.locfileid: "48373389"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)| TeamMember.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)| TeamMember.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение| TeamMember.ReadWrite.All|
+|Приложение| TeamMember.ReadWrite.All |
+
+> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -34,7 +36,6 @@ ms.locfileid: "48373389"
 -->
 ``` http
 POST /teams/{teamsId}/members
-POST /teams/{teamsId}/channels/{channelId}/members
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов

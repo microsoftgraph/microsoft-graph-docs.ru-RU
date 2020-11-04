@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fe74ffc6b360c2f83b917e9852a42faa6e193955
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: e62916b373043a2da479d4fa77338362b1621291
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742373"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904010"
 ---
 # <a name="update-identityuserflowattribute"></a>Обновление Идентитюсерфловаттрибуте
 
@@ -26,9 +26,9 @@ ms.locfileid: "48742373"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Идентитюсерфлов. ReadWrite. ALL|
+|Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение| Идентитюсерфлов. ReadWrite. ALL|
+|Для приложений| IdentityUserFlow.ReadWrite.All|
 
 Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
 
@@ -62,7 +62,7 @@ PATCH /userFlowAttributes/{id}
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`. В случае неудачи возвращается ошибка `4xx` с подробностями.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="examples"></a>Примеры
 
@@ -70,6 +70,8 @@ PATCH /userFlowAttributes/{id}
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_userFlowAttributes"
@@ -84,6 +86,20 @@ Content-type: application/json
   "description": "Your new hobby"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-userflowattributes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-userflowattributes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-userflowattributes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

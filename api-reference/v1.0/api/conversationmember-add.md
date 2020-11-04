@@ -5,12 +5,12 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: bf5eff6f7a5308c6753b5c1adc62970bf619a600
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 150c3003487ed4585951495b0f9e9ed9a6f38121
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782906"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848656"
 ---
 # <a name="add-conversationmember"></a>Добавление Конверсатионмембер
 
@@ -24,9 +24,9 @@ ms.locfileid: "48782906"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированное (рабочая или учебная учетная запись)| Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| Чаннелмембер. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись)| ChannelMember.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений| ChannelMember.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored"} -->

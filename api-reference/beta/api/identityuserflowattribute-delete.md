@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 76eaa73ad22a2e418caf9bff7904422c16c01037
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: 6912769c140a95054c30c67defc4068a5a8b4e43
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742406"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48904133"
 ---
 # <a name="delete-identityuserflowattribute"></a>Удаление Идентитюсерфловаттрибуте
 
@@ -26,9 +26,9 @@ ms.locfileid: "48742406"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Идентитюсерфлов. ReadWrite. ALL|
+|Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|Идентитюсерфлов. ReadWrite. ALL|
+|Для приложений|IdentityUserFlow.ReadWrite.All|
 
 Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
 
@@ -62,6 +62,8 @@ DELETE /identity/userFlowAttributes/{id}
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_userFlowAttributes"
@@ -71,6 +73,20 @@ DELETE /identity/userFlowAttributes/{id}
 ``` http
 DELETE https://graph.microsoft.com/beta/identity/userFlowAttributes/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-userflowattributes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-userflowattributes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-userflowattributes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 
