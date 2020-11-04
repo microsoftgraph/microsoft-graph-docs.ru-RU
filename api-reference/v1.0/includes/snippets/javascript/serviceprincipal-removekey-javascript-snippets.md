@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: ffac099d5a91139f47068a4b9875cc7da355a9bc
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: fa0e5040351e62fc55892357162ec2325d4d8129
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334906"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905454"
 ---
 ```javascript
 
@@ -20,7 +20,7 @@ const removeKey = {
     proof:"eyJ0eXAiOiJ..."
 };
 
-let res = await client.api('/serviceprincipals/{id}/removeKey')
+let res = await client.api('/servicePrincipals/{id}/removeKey')
     .post(removeKey);
 
 ```

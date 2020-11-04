@@ -1,18 +1,20 @@
 ---
 title: Перечисление конечных точек
 description: Получение списка объектов конечной точки.
-author: dkershaw10
+author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: f3bd3ae6d49e6f101872f5c38a0b0e85395c7f9a
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: e9472ea6b4fcbc34678f2359eabcbb3e38c74bd8
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459720"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905899"
 ---
 # <a name="list-endpoints"></a>Перечисление конечных точек
+
+Пространство имен: microsoft.graph
 
 Получение списка объектов [конечной точки](../resources/endpoint.md) .
 
@@ -23,7 +25,7 @@ ms.locfileid: "48459720"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Group.Read.All, Group.ReadWrite.All |
+|Для приложений | Group.Read.All, Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -71,10 +73,9 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 
 ---
 
-
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+>Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
