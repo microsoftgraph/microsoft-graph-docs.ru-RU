@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e0664205494f7d964dcdd4ee8b7e666ff616c329
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: abdaee226abb033a1275c964616315a79a754c6f
+ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732318"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48848607"
 ---
 # <a name="get-conversationmember"></a>Получение объекта conversationMember
 
@@ -24,9 +24,9 @@ ms.locfileid: "48732318"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированные (рабочая или учебная учетная запись)| Для ресурса **user** или **chat**: Chat.ReadBasic, Chat.Read, Chat.ReadWrite<br/><br/>Для ресурса **channel**: ChannelMember.Read.All, ChannelMember.ReadWrite, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| Для ресурса **user** или **chat**: не поддерживается.<br/><br/>Для ресурса **channel**: Member.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись)| Для ресурса **user** или **chat** : Chat.ReadBasic, Chat.Read, Chat.ReadWrite<br/><br/>Для ресурса **channel** : ChannelMember.Read.All, ChannelMember.ReadWrite |
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение| Для ресурса **user** или **chat** : не поддерживается.<br/><br/>Для ресурса **channel** : TeamMember.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
