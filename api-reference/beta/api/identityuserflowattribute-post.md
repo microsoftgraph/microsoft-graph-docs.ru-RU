@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 443ac0848e7ace309172dc0ca38d9a191acb9635
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: 50c3970e7736092c6be2646e8f788a7d84304414
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742410"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48903884"
 ---
 # <a name="create-identityuserflowattribute"></a>Создание Идентитюсерфловаттрибуте
 
@@ -26,9 +26,9 @@ ms.locfileid: "48742410"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Идентитюсерфлов. ReadWrite. ALL|
+|Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|Идентитюсерфлов. ReadWrite. ALL|
+|Для приложений|IdentityUserFlow.ReadWrite.All|
 
 Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
 
@@ -56,11 +56,11 @@ POST /identity/userFlowAttributes
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|id|String|Идентификатор атрибута пользовательского процесса. Это автоматически создаваемый атрибут, предназначенный только для чтения.|
-|displayName|String|Отображаемое имя атрибута пользовательского процесса.|
+|id|String|Идентификатор атрибута потока пользователей. Это автоматически созданный атрибут только для чтения.|
+|displayName|String|Отображаемое имя атрибута потока пользователей.|
 |description|String|Описание атрибута Flow User. Он отображается для пользователя во время регистрации.|
-|усерфловаттрибутетипе|String|Тип атрибута пользовательского процесса. Это автоматически заданный атрибут, предназначенный только для чтения. В зависимости от типа атрибута значения этого свойства будут `builtIn` или `custom` .|
-|dataType|String|Тип данных атрибута пользовательского процесса. Этот параметр нельзя изменить после создания настраиваемого атрибута пользовательского процесса. Для **DataType** поддерживаются следующие значения:<br/><ul><li>`string` : указывает, что тип данных для Идентитюсерфловаттрибуте является строкой. </li><li>`boolean` : указывает, что тип данных для Идентитюсерфловаттрибуте является логическим.</li><li>`int64` : указывает, что тип данных для Идентитюсерфловаттрибуте является целым числом.</li></ul>|
+|userFlowAttributeType|String|Тип атрибута потока пользователей. Это автоматически настроенный атрибут только для чтения. В зависимости от типа атрибута значением этого свойства является `builtIn` или `custom`.|
+|dataType|String|Тип данных атрибута потока пользователей. Этот параметр нельзя изменить после создания настраиваемого атрибута пользовательского процесса. Поддерживаемые значения для **dataType** :<br/><ul><li>`string` : указывает, что тип данных для Идентитюсерфловаттрибуте является строкой. </li><li>`boolean` : указывает, что тип данных для Идентитюсерфловаттрибуте является логическим.</li><li>`int64` : указывает, что тип данных для Идентитюсерфловаттрибуте является целым числом.</li></ul>|
 
 ## <a name="response"></a>Отклик
 
@@ -72,6 +72,8 @@ POST /identity/userFlowAttributes
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_userFlowAttribute_from_userFlowAttributes"
@@ -88,6 +90,20 @@ Content-type: application/json
   "dataType": "string",
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-userflowattribute-from-userflowattributes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-userflowattribute-from-userflowattributes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-userflowattribute-from-userflowattributes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 
