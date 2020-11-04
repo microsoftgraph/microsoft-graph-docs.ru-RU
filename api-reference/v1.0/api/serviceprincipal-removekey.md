@@ -5,80 +5,80 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e40b6a591de47afa317b8fa51bf74b48feaf24b1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e746f45f146b8fdfe2449ed6f1549e31c0f26c47
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47978617"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905435"
 ---
-# <a name="serviceprincipal-removekey"></a><span data-ttu-id="f08e8-103">servicePrincipal: Ремовекэй</span><span class="sxs-lookup"><span data-stu-id="f08e8-103">servicePrincipal: removeKey</span></span>
+# <a name="serviceprincipal-removekey"></a><span data-ttu-id="5d328-103">servicePrincipal: Ремовекэй</span><span class="sxs-lookup"><span data-stu-id="5d328-103">servicePrincipal: removeKey</span></span>
 
-<span data-ttu-id="f08e8-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f08e8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5d328-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5d328-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="f08e8-105">Удаление ключевых учетных данных из [servicePrincipal](../resources/serviceprincipal.md).</span><span class="sxs-lookup"><span data-stu-id="f08e8-105">Remove a key credential from a [servicePrincipal](../resources/serviceprincipal.md).</span></span> <span data-ttu-id="f08e8-106">Этот метод вместе с [аддкэй](serviceprincipal-addkey.md) можно использовать в servicePrincipal для автоматизации изкрутки ключей истечения срока действия.</span><span class="sxs-lookup"><span data-stu-id="f08e8-106">This method along with [addKey](serviceprincipal-addkey.md) can be used by a servicePrincipal to automate rolling its expiring keys.</span></span>
+<span data-ttu-id="5d328-105">Удаление ключевых учетных данных из [servicePrincipal](../resources/serviceprincipal.md).</span><span class="sxs-lookup"><span data-stu-id="5d328-105">Remove a key credential from a [servicePrincipal](../resources/serviceprincipal.md).</span></span> <span data-ttu-id="5d328-106">Этот метод вместе с [аддкэй](serviceprincipal-addkey.md) можно использовать в servicePrincipal для автоматизации изкрутки ключей истечения срока действия.</span><span class="sxs-lookup"><span data-stu-id="5d328-106">This method along with [addKey](serviceprincipal-addkey.md) can be used by a servicePrincipal to automate rolling its expiring keys.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="f08e8-107">[Создание servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) и [обновление операций servicePrincipal](../api/serviceprincipal-update.md) можно продолжать использовать для добавления и обновления ключевых учетных данных для любых servicePrincipal с контекстом пользователя или без него.</span><span class="sxs-lookup"><span data-stu-id="f08e8-107">[Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) and [Update servicePrincipal](../api/serviceprincipal-update.md) operations can continue to be used to add and update key credentials for any servicePrincipal with or without a user's context.</span></span>
+> <span data-ttu-id="5d328-107">[Создание servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) и [обновление операций servicePrincipal](../api/serviceprincipal-update.md) можно продолжать использовать для добавления и обновления ключевых учетных данных для любых servicePrincipal с контекстом пользователя или без него.</span><span class="sxs-lookup"><span data-stu-id="5d328-107">[Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) and [Update servicePrincipal](../api/serviceprincipal-update.md) operations can continue to be used to add and update key credentials for any servicePrincipal with or without a user's context.</span></span>
 
-<span data-ttu-id="f08e8-108">В рамках проверки запроса для этого метода проверяется наличие проверки на наличие существующего ключа перед выполнением действия.</span><span class="sxs-lookup"><span data-stu-id="f08e8-108">As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.</span></span>
+<span data-ttu-id="5d328-108">В рамках проверки запроса для этого метода проверяется наличие проверки на наличие существующего ключа перед выполнением действия.</span><span class="sxs-lookup"><span data-stu-id="5d328-108">As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f08e8-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f08e8-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="5d328-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5d328-109">Permissions</span></span>
 
-|<span data-ttu-id="f08e8-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f08e8-110">Permission type</span></span>      | <span data-ttu-id="f08e8-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f08e8-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5d328-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5d328-110">Permission type</span></span>      | <span data-ttu-id="5d328-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5d328-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f08e8-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f08e8-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f08e8-113">Нет.</span><span class="sxs-lookup"><span data-stu-id="f08e8-113">None.</span></span>  |
-|<span data-ttu-id="f08e8-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f08e8-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f08e8-115">Нет.</span><span class="sxs-lookup"><span data-stu-id="f08e8-115">None.</span></span>    |
-|<span data-ttu-id="f08e8-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="f08e8-116">Application</span></span> | <span data-ttu-id="f08e8-117">Нет.</span><span class="sxs-lookup"><span data-stu-id="f08e8-117">None.</span></span> |
+|<span data-ttu-id="5d328-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5d328-112">Delegated (work or school account)</span></span> | <span data-ttu-id="5d328-113">Нет.</span><span class="sxs-lookup"><span data-stu-id="5d328-113">None.</span></span>  |
+|<span data-ttu-id="5d328-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5d328-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5d328-115">Нет.</span><span class="sxs-lookup"><span data-stu-id="5d328-115">None.</span></span>    |
+|<span data-ttu-id="5d328-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="5d328-116">Application</span></span> | <span data-ttu-id="5d328-117">Нет.</span><span class="sxs-lookup"><span data-stu-id="5d328-117">None.</span></span> |
 
 > [!NOTE]
-> <span data-ttu-id="f08e8-118">ServicePrincipal не требует каких – либо специальных разрешений для развертывания собственных ключей.</span><span class="sxs-lookup"><span data-stu-id="f08e8-118">A servicePrincipal does not need any specific permission to roll its own keys.</span></span>
+> <span data-ttu-id="5d328-118">ServicePrincipal не требует каких – либо специальных разрешений для развертывания собственных ключей.</span><span class="sxs-lookup"><span data-stu-id="5d328-118">A servicePrincipal does not need any specific permission to roll its own keys.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="f08e8-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f08e8-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5d328-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5d328-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /serviceprincipals/{id}/removeKey
+POST /servicePrincipals/{id}/removeKey
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f08e8-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f08e8-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="5d328-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5d328-120">Request headers</span></span>
 
-| <span data-ttu-id="f08e8-121">Имя</span><span class="sxs-lookup"><span data-stu-id="f08e8-121">Name</span></span>           | <span data-ttu-id="f08e8-122">Описание</span><span class="sxs-lookup"><span data-stu-id="f08e8-122">Description</span></span>                |
+| <span data-ttu-id="5d328-121">Имя</span><span class="sxs-lookup"><span data-stu-id="5d328-121">Name</span></span>           | <span data-ttu-id="5d328-122">Описание</span><span class="sxs-lookup"><span data-stu-id="5d328-122">Description</span></span>                |
 |:---------------|:---------------------------|
-| <span data-ttu-id="f08e8-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f08e8-123">Authorization</span></span>  | <span data-ttu-id="f08e8-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f08e8-p102">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="f08e8-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f08e8-126">Content-Type</span></span>   | <span data-ttu-id="f08e8-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f08e8-p103">application/json. Required.</span></span>|
+| <span data-ttu-id="5d328-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5d328-123">Authorization</span></span>  | <span data-ttu-id="5d328-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5d328-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="5d328-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5d328-126">Content-Type</span></span>   | <span data-ttu-id="5d328-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5d328-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f08e8-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f08e8-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="5d328-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5d328-129">Request body</span></span>
 
-<span data-ttu-id="f08e8-130">В тексте запроса укажите следующие обязательные свойства.</span><span class="sxs-lookup"><span data-stu-id="f08e8-130">In the request body, provide the following required properties.</span></span>
+<span data-ttu-id="5d328-130">В тексте запроса укажите следующие обязательные свойства.</span><span class="sxs-lookup"><span data-stu-id="5d328-130">In the request body, provide the following required properties.</span></span>
 
-| <span data-ttu-id="f08e8-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="f08e8-131">Property</span></span>  | <span data-ttu-id="f08e8-132">Тип</span><span class="sxs-lookup"><span data-stu-id="f08e8-132">Type</span></span> | <span data-ttu-id="f08e8-133">Описание</span><span class="sxs-lookup"><span data-stu-id="f08e8-133">Description</span></span>|
+| <span data-ttu-id="5d328-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="5d328-131">Property</span></span>  | <span data-ttu-id="5d328-132">Тип</span><span class="sxs-lookup"><span data-stu-id="5d328-132">Type</span></span> | <span data-ttu-id="5d328-133">Описание</span><span class="sxs-lookup"><span data-stu-id="5d328-133">Description</span></span>|
 |:----------|:-----|:-----------|
-| <span data-ttu-id="f08e8-134">Него значение KeyID</span><span class="sxs-lookup"><span data-stu-id="f08e8-134">keyId</span></span>     | <span data-ttu-id="f08e8-135">GUID</span><span class="sxs-lookup"><span data-stu-id="f08e8-135">GUID</span></span> | <span data-ttu-id="f08e8-136">Уникальный идентификатор пароля.</span><span class="sxs-lookup"><span data-stu-id="f08e8-136">The unique identifier for the password.</span></span>|
-| <span data-ttu-id="f08e8-137">совмещен</span><span class="sxs-lookup"><span data-stu-id="f08e8-137">proof</span></span> | <span data-ttu-id="f08e8-138">String</span><span class="sxs-lookup"><span data-stu-id="f08e8-138">String</span></span> | <span data-ttu-id="f08e8-139">Самозаверяющий маркер JWT, используемый в качестве подтверждения наличия существующих ключей.</span><span class="sxs-lookup"><span data-stu-id="f08e8-139">A self-signed JWT token used as a proof of possession of the existing keys.</span></span> <span data-ttu-id="f08e8-140">Этот маркер JWT должен быть подписан с помощью закрытого ключа одного из существующих действительных сертификатов servicePrincipal.</span><span class="sxs-lookup"><span data-stu-id="f08e8-140">This JWT token must be signed using the private key of one of the servicePrincipal's existing valid certificates.</span></span> <span data-ttu-id="f08e8-141">Маркер должен содержать следующие утверждения:</span><span class="sxs-lookup"><span data-stu-id="f08e8-141">The token should contain the following claims:</span></span><ul><li><span data-ttu-id="f08e8-142">`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</span><span class="sxs-lookup"><span data-stu-id="f08e8-142">`aud` - Audience needs to be `00000002-0000-0000-c000-000000000000`.</span></span></li><li><span data-ttu-id="f08e8-143">`iss` -Issuer должен быть __идентификатором__  servicePrincipal, осуществляющим вызов.</span><span class="sxs-lookup"><span data-stu-id="f08e8-143">`iss` - Issuer needs to be the __id__  of the servicePrincipal that is making the call.</span></span></li><li><span data-ttu-id="f08e8-144">`nbf` — вовремя.</span><span class="sxs-lookup"><span data-stu-id="f08e8-144">`nbf` - Not before time.</span></span></li><li><span data-ttu-id="f08e8-145">`exp` — сроком действия должно быть значение "nbf" + 10 минут.</span><span class="sxs-lookup"><span data-stu-id="f08e8-145">`exp` - Expiration time should be "nbf" + 10 mins.</span></span></li></ul><br><span data-ttu-id="f08e8-146">Ниже приведен [Пример](/graph/application-rollkey-prooftoken) кода, который можно использовать для создания этого маркера для проверки подлинности.</span><span class="sxs-lookup"><span data-stu-id="f08e8-146">Here is a code [sample](/graph/application-rollkey-prooftoken) that can be used to generate this proof of possession token.</span></span>|
+| <span data-ttu-id="5d328-134">Него значение KeyID</span><span class="sxs-lookup"><span data-stu-id="5d328-134">keyId</span></span>     | <span data-ttu-id="5d328-135">GUID</span><span class="sxs-lookup"><span data-stu-id="5d328-135">GUID</span></span> | <span data-ttu-id="5d328-136">Уникальный идентификатор пароля.</span><span class="sxs-lookup"><span data-stu-id="5d328-136">The unique identifier for the password.</span></span>|
+| <span data-ttu-id="5d328-137">совмещен</span><span class="sxs-lookup"><span data-stu-id="5d328-137">proof</span></span> | <span data-ttu-id="5d328-138">String</span><span class="sxs-lookup"><span data-stu-id="5d328-138">String</span></span> | <span data-ttu-id="5d328-139">Самозаверяющий маркер JWT, используемый в качестве подтверждения наличия существующих ключей.</span><span class="sxs-lookup"><span data-stu-id="5d328-139">A self-signed JWT token used as a proof of possession of the existing keys.</span></span> <span data-ttu-id="5d328-140">Этот маркер JWT должен быть подписан с помощью закрытого ключа одного из существующих действительных сертификатов servicePrincipal.</span><span class="sxs-lookup"><span data-stu-id="5d328-140">This JWT token must be signed using the private key of one of the servicePrincipal's existing valid certificates.</span></span> <span data-ttu-id="5d328-141">Маркер должен содержать следующие утверждения:</span><span class="sxs-lookup"><span data-stu-id="5d328-141">The token should contain the following claims:</span></span><ul><li><span data-ttu-id="5d328-142">`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</span><span class="sxs-lookup"><span data-stu-id="5d328-142">`aud` - Audience needs to be `00000002-0000-0000-c000-000000000000`.</span></span></li><li><span data-ttu-id="5d328-143">`iss` -Issuer должен быть __идентификатором__  servicePrincipal, осуществляющим вызов.</span><span class="sxs-lookup"><span data-stu-id="5d328-143">`iss` - Issuer needs to be the __id__  of the servicePrincipal that is making the call.</span></span></li><li><span data-ttu-id="5d328-144">`nbf` — вовремя.</span><span class="sxs-lookup"><span data-stu-id="5d328-144">`nbf` - Not before time.</span></span></li><li><span data-ttu-id="5d328-145">`exp` — сроком действия должно быть значение "nbf" + 10 минут.</span><span class="sxs-lookup"><span data-stu-id="5d328-145">`exp` - Expiration time should be "nbf" + 10 mins.</span></span></li></ul><br><span data-ttu-id="5d328-146">Ниже приведен [Пример](/graph/application-rollkey-prooftoken) кода, который можно использовать для создания этого маркера для проверки подлинности.</span><span class="sxs-lookup"><span data-stu-id="5d328-146">Here is a code [sample](/graph/application-rollkey-prooftoken) that can be used to generate this proof of possession token.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="f08e8-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="f08e8-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5d328-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="5d328-147">Response</span></span>
 
-<span data-ttu-id="f08e8-148">В случае успешного выполнения этот метод возвращает код отклика `204 No content`.</span><span class="sxs-lookup"><span data-stu-id="f08e8-148">If successful, this method returns a `204 No content` response code.</span></span>
+<span data-ttu-id="5d328-148">В случае успешного выполнения этот метод возвращает код отклика `204 No content`.</span><span class="sxs-lookup"><span data-stu-id="5d328-148">If successful, this method returns a `204 No content` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="f08e8-149">Примеры</span><span class="sxs-lookup"><span data-stu-id="f08e8-149">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="5d328-149">Примеры</span><span class="sxs-lookup"><span data-stu-id="5d328-149">Examples</span></span>
 
-<span data-ttu-id="f08e8-150">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="f08e8-150">The following is example shows how to call this API.</span></span>
+<span data-ttu-id="5d328-150">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="5d328-150">The following is example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="f08e8-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="f08e8-151">Request</span></span>
+### <a name="request"></a><span data-ttu-id="5d328-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="5d328-151">Request</span></span>
 
-<span data-ttu-id="f08e8-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f08e8-152">The following is an example of the request.</span></span>
+<span data-ttu-id="5d328-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5d328-152">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="f08e8-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="f08e8-153">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5d328-153">HTTP</span><span class="sxs-lookup"><span data-stu-id="5d328-153">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_removekey"
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/serviceprincipals/{id}/removeKey
+POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/removeKey
 Content-Type: application/json
 
 {
@@ -86,28 +86,28 @@ Content-Type: application/json
     "proof":"eyJ0eXAiOiJ..."
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="f08e8-154">C#</span><span class="sxs-lookup"><span data-stu-id="f08e8-154">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="5d328-154">C#</span><span class="sxs-lookup"><span data-stu-id="5d328-154">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-removekey-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="f08e8-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f08e8-155">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="5d328-155">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5d328-155">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-removekey-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="f08e8-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f08e8-156">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="5d328-156">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5d328-156">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-removekey-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="f08e8-157">Java</span><span class="sxs-lookup"><span data-stu-id="f08e8-157">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="5d328-157">Java</span><span class="sxs-lookup"><span data-stu-id="5d328-157">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-removekey-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="f08e8-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="f08e8-158">Response</span></span>
+### <a name="response"></a><span data-ttu-id="5d328-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="5d328-158">Response</span></span>
 
-<span data-ttu-id="f08e8-159">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="f08e8-159">The following is an example of the response.</span></span>
+<span data-ttu-id="5d328-159">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="5d328-159">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

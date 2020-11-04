@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 9b4aa24bd09ec280b4ece349619f7e9715a19c4b
-ms.sourcegitcommit: 5a1373f2ccd9ee813fc60d42e7ac6b115b5f9f66
+ms.openlocfilehash: ac094fd012df0fab22ae95126f9ba9f307d65ca5
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44334460"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905170"
 ---
 ```java
 
@@ -21,7 +21,7 @@ passwordCredential.secretText = "MKTr0w1...";
 
 String proof = "eyJ0eXAiOiJ...";
 
-graphClient.serviceprincipals("{id}")
+graphClient.servicePrincipals("{id}")
     .addKey(keyCredential,passwordCredential,proof)
     .buildRequest()
     .post();
