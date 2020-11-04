@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: affaf5ab5cce121f4a763e90e32ed9589510e4ca
-ms.sourcegitcommit: 3afb8123098a25ce30b16648ce2f31e8eaac388c
+ms.openlocfilehash: fa5641c79a165a0b65e7173f57a17f9440c4912b
+ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816212"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48905469"
 ---
 # <a name="create-serviceprincipal"></a>Создание объекта servicePrincipal
 
@@ -34,7 +34,7 @@ ms.locfileid: "48816212"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /serviceprincipals
+POST /servicePrincipals
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -44,11 +44,11 @@ POST /serviceprincipals
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Предоставьте в тексте запроса описание объекта [serviceprincipal](../resources/serviceprincipal.md) в формате JSON. Текст запроса должен содержать **appId** .
+Предоставьте в тексте запроса описание объекта [servicePrincipal](../resources/serviceprincipal.md) в формате JSON. Текст запроса должен содержать **appId**.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `201 Created` и объект [serviceprincipal](../resources/serviceprincipal.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `201 Created` и объект [servicePrincipal](../resources/serviceprincipal.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос
@@ -61,7 +61,7 @@ POST /serviceprincipals
   "name": "create_serviceprincipal_from_serviceprincipals"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/serviceprincipals
+POST https://graph.microsoft.com/v1.0/servicePrincipals
 Content-type: application/json
 
 {
