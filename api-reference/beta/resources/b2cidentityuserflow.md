@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: jkdouglas
-ms.openlocfilehash: af29926d77c8888cadc67c4cd7e7558fe47062d6
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: a7f246ed903fa651deaf5278a54f8f4bac520f5c
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406486"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921776"
 ---
 # <a name="b2cidentityuserflow-resource-type"></a>Тип ресурса b2cIdentityUserFlow
 
@@ -45,7 +45,7 @@ ms.locfileid: "48406486"
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
 |id|Строка|Имя пользовательского потока. Это обязательное значение, не изменяемое после создания. После создания перед именем будет добавлен префикс со значением `B2C_1_`.|
-|userFlowType|Строка|[Тип пользовательского потока](https://docs.microsoft.com/azure/active-directory-b2c/user-flow-versions). Поддерживаемые значения для **userFlowType**:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
+|userFlowType|Строка|[Тип пользовательского потока](/azure/active-directory-b2c/user-flow-versions). Поддерживаемые значения для **userFlowType** :<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
 |userFlowTypeVersion|Одинарное|Версия пользовательского потока.|
 
 ## <a name="relationships"></a>Связи

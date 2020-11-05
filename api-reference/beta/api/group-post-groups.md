@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: ef62655e2d31734a466404402ac808c66aace324
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 8c05c175df44f6ef8746aa8a9e84633b22ffd570
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782832"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921608"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -189,7 +189,7 @@ Content-type: application/json
 
 ### <a name="example-2-create-a-microsoft-365-group-with-an-owner-and-members"></a>Пример 2. Создание группы Microsoft 365 с владельцем и участниками
 
-В следующем примере создается группа Microsoft 365 с указанным владельцем и участниками. Обратите внимание на то, что в рамках создания группы можно добавить не более 20 отношений, например владельцев и участников. Позже вы можете добавить дополнительных участников с помощью API [добавления участников](https://docs.microsoft.com/graph/api/group-post-members?view=graph-rest-beta&tabs=http) или пакетной обработки JSON.
+В следующем примере создается группа Microsoft 365 с указанным владельцем и участниками. Обратите внимание на то, что в рамках создания группы можно добавить не более 20 отношений, например владельцев и участников. Позже вы можете добавить дополнительных участников с помощью API [добавления участников](/graph/api/group-post-members?view=graph-rest-beta&tabs=http) или пакетной обработки JSON.
 
 #### <a name="request"></a>Запрос
 

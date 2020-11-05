@@ -5,12 +5,12 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: a3dd8232233d328b254d2b7668fb923694ce770c
-ms.sourcegitcommit: 31a9b4cb3d0f905f123475a4c1a86f5b1e59b935
+ms.openlocfilehash: 363ae9739205a6e96ff836a0190f066d919f5adf
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42219764"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921818"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Обзор API безопасности Microsoft Graph
 
@@ -28,8 +28,8 @@ ms.locfileid: "42219764"
 
 - [Написание кода.](https://aka.ms/graphsecuritysdk) Найдите [примеры кода](https://aka.ms/graphsecurityapicode) на C#, Java, NodeJS и т. д.
 - [Подключение с помощью сценариев.](https://aka.ms/graphsecuritypowershellsampleblog) Найдите [примеры PowerShell](https://aka.ms/graphsecuritypowershellsample).
-- [Перетаскивание в рабочие процессы и схемы.](https://aka.ms/graphsecurityconnectorsblogpost) Используйте [соединители Microsoft Graph Security](https://aka.ms/graphsecurityconnectors) для [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-overview), [Microsoft Flow](https://flow.microsoft.com/) и [PowerApps](https://powerapps.microsoft.com/).
-- [Получение данных в отчетах и панелях мониторинга.](https://aka.ms/graphsecuritypowerbiconnectorblogpost) Используйте [соединитель Microsoft Graph Security для Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc).
+- [Перетаскивание в рабочие процессы и схемы.](https://aka.ms/graphsecurityconnectorsblogpost) Используйте [соединители Microsoft Graph Security](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security) для [Azure Logic Apps](/azure/logic-apps/logic-apps-overview), [Microsoft Flow](https://flow.microsoft.com/) и [PowerApps](https://powerapps.microsoft.com/).
+- [Получение данных в отчетах и панелях мониторинга.](https://aka.ms/graphsecuritypowerbiconnectorblogpost) Используйте [соединитель Microsoft Graph Security для Power BI](/power-bi/connect-data/desktop-connect-graph-security).
 - [Подключение с помощью записных книжек Jupyter.](https://jupyter.org/) Найдите [примеры записных книжек Jupyter](https://aka.ms/graphsecurityjupyternotebooks).  
 
 ### <a name="unify-and-standardize-alert-tracking"></a>Объединение и стандартизация отслеживания оповещений
@@ -46,7 +46,7 @@ ms.locfileid: "42219764"
 
 ### <a name="unlock-security-context-to-drive-investigation"></a>Разблокировка контекста безопасности для расследований
 
-Подробно изучите ресурсы, связанные с безопасностью (например, пользователей, узлы и приложения), а затем добавьте контекст организации от других поставщиков Microsoft Graph (Azure AD, Microsoft Intune, Office 365), чтобы объединить контексты бизнеса и безопасности для более эффективного реагирования на угрозы.
+Подробно изучите ресурсы, связанные с безопасностью (например, пользователей, узлы и приложения), а затем добавьте контекст организации от других поставщиков Microsoft Graph (Azure AD, Microsoft Intune, Microsoft 365), чтобы объединить контексты бизнеса и безопасности для более эффективного реагирования на угрозы.
 
 ### <a name="automate-security-workflows-and-reporting"></a>Автоматизация рабочих процессов и отчетов безопасности
 
