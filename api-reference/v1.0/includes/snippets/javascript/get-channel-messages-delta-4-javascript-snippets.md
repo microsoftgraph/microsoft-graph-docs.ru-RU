@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: e844b7aa819c6db68bb130e4dee448029e6f8eaf
+ms.openlocfilehash: 47eec3b2ec7e4f3ed3460caf5fc623ea7d53d2f1
 ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/04/2020
-ms.locfileid: "48907352"
+ms.locfileid: "48905100"
 ---
 ```javascript
 
@@ -15,11 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const message = {
-  isRead: true,
-};
-
-let res = await client.api('/me/messages/{id}')
-    .update(message);
+let res = await client.api('/teams/{id}/channels/{id}/messages/delta')
+    .get();
 
 ```

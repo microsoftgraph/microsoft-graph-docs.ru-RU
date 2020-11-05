@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 915505a294a11afe8328002f5df0022032c3ffc2
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: a99c8faf5540310640b8321ea7a7bc30eaded624
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458232"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921643"
 ---
 # <a name="delete-emailauthenticationmethod"></a>Удаление Емаилаусентикатионмесод
 Пространство имен: microsoft.graph
@@ -25,10 +25,10 @@ ms.locfileid: "48458232"
 |Тип разрешения|Разрешения, действующие на себя (от большинства до минимальных привилегий)|Разрешения, действующие на других (по крайней мере для самых привилегированных)|
 |:---|:---|:--|
 |Делегированные (рабочая или учебная учетная запись)|Не поддерживается.|Усераусентикатионмесод. ReadWrite. ALL
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|Не поддерживается.
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|Не поддерживается.
 |Для приложений|Не поддерживается.|Не поддерживается.
 
-Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный администратор
 * Глобальный читатель

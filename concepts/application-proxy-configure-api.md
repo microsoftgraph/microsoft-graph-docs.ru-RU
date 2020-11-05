@@ -5,27 +5,27 @@ author: davidmu1
 ms.topic: conceptual
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8d9ff3e3c6c351768fddd0b4339840a711c864ae
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 5052555b16b81170d8a6aa04f1c26c13fcd8d320
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373345"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921797"
 ---
 # <a name="automate-the-configuration-of-application-proxy-using-the-microsoft-graph-api"></a>Автоматизация настройки прокси приложения с помощью API Microsoft Graph.
 
-В этой статье вы узнаете, как создать и настроить [прокси приложения](https://aka.ms/whyappproxy) Azure Active Directory (Azure AD) для приложения. Прокси приложения обеспечивает безопасный удаленный доступ и единый вход в локальные веб-приложения. После настройки прокси приложения для приложения пользователи могут получать доступ к локальным приложениям с помощью внешнего URL-адреса, портала "Мои приложения" или других внутренних порталов приложений.
+В этой статье вы узнаете, как создать и настроить [прокси приложения](/azure/active-directory/manage-apps/what-is-application-proxy) Azure Active Directory (Azure AD) для приложения. Прокси приложения обеспечивает безопасный удаленный доступ и единый вход в локальные веб-приложения. После настройки прокси приложения для приложения пользователи могут получать доступ к локальным приложениям с помощью внешнего URL-адреса, портала "Мои приложения" или других внутренних порталов приложений.
 
-В этой статье предполагается, что вы уже установили соединитель и выполнили [необходимые условия](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) для прокси приложения, чтобы соединители могли общаться со СЛУЖБАМИ Azure AD.
+В этой статье предполагается, что вы уже установили соединитель и выполнили [необходимые условия](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#before-you-begin) для прокси приложения, чтобы соединители могли общаться со СЛУЖБАМИ Azure AD.
 
 Убедитесь, что у вас есть соответствующие разрешения для вызова следующих API.
 
 |Тип ресурса |Метод |
 |---------|---------|
-|[applications](https://docs.microsoft.com/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](https://docs.microsoft.com/graph/api/resources/onpremisespublishing?view=graph-rest-beta)| [Создание приложения](https://docs.microsoft.com/graph/api/application-post-applications?view=graph-rest-beta&tabs=http) <br> [Обновление приложения](https://docs.microsoft.com/graph/api/application-update?view=graph-rest-beta)<br> [Добавление приложения в Коннекторграуп](https://docs.microsoft.com/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
-|[connector](https://docs.microsoft.com/graph/api/resources/connector?view=graph-rest-beta)| [Получение соединителей](https://docs.microsoft.com/graph/api/connector-get?view=graph-rest-beta)
-|[connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Создание connectorGroup](https://docs.microsoft.com/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Добавление соединителя для connectorGroup](https://docs.microsoft.com/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
-|[servicePrincipals](https://docs.microsoft.com/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Создать servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-post-serviceprincipals?view=graph-rest-beta&tabs=http) <br> [Обновление servicePrincipal](https://docs.microsoft.com/graph/api/serviceprincipal-update?view=graph-rest-1.0&tabs=http) <br> [Создание appRoleAssignments](https://docs.microsoft.com/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
+|[applications](/graph/api/resources/application?view=graph-rest-1.0)<br> [onPremisesPublishing](/graph/api/resources/onpremisespublishing?view=graph-rest-beta)| [Создание приложения](/graph/api/application-post-applications?tabs=http&view=graph-rest-beta) <br> [Обновление приложения](/graph/api/application-update?view=graph-rest-beta)<br> [Добавление приложения в Коннекторграуп](/graph/api/connectorgroup-post-applications?view=graph-rest-beta)|
+|[connector](/graph/api/resources/connector?view=graph-rest-beta)| [Получение соединителей](/graph/api/connector-get?view=graph-rest-beta)
+|[connectorGroup](/graph/api/resources/connectorGroup?view=graph-rest-beta)| [Создание connectorGroup](/graph/api/resources/connectorgroup?view=graph-rest-beta) <br> [Добавление соединителя для connectorGroup](/graph/api/connector-post-memberof?view=graph-rest-beta) <br> |
+|[servicePrincipals](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)|[Создать servicePrincipal](/graph/api/serviceprincipal-post-serviceprincipals?tabs=http&view=graph-rest-beta) <br> [Обновление servicePrincipal](/graph/api/serviceprincipal-update?tabs=http&view=graph-rest-1.0) <br> [Создание appRoleAssignments](/graph/api/serviceprincipal-post-approleassignments?view=graph-rest-beta)|
 
 > [!NOTE]
 > В запросах, показанных в этой статье, используются примеры значений. Их необходимо обновить. Отображаемые объекты ответа также могут быть сокращены для удобочитаемости. 
@@ -268,7 +268,7 @@ Content-type: appplication/json
 HTTP/1.1 204 No content
 ```
 ### <a name="complete-the-configuration-of-the-application"></a>Завершение настройки приложения
-Обновите свойства **redirectUri**, **идентифиерури**и **хомепажеурл** приложения для внешнего ур, настроенного в свойстве **онпремисеспублишинг** . Затем обновите [имплиЦитгрантсеттингс](https://docs.microsoft.com/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0) до `true` **енабледтокениссуанце** и `false` для **енабледакцесстокениссуанце**.
+Обновите свойства **redirectUri** , **идентифиерури** и **хомепажеурл** приложения для внешнего ур, настроенного в свойстве **онпремисеспублишинг** . Затем обновите [имплиЦитгрантсеттингс](/graph/api/resources/implicitgrantsettings?view=graph-rest-1.0) до `true` **енабледтокениссуанце** и `false` для **енабледакцесстокениссуанце**.
 
 #### <a name="request"></a>Запрос
 <!-- {
@@ -490,7 +490,7 @@ HTTP/1.1 204 No content
 ```
 
 ## <a name="step-4-configure-single-sign-on"></a>Шаг 4: Настройка единого входа
-Это приложение использует встроенную проверку подлинности Windows (ИВА). Чтобы настроить Ива, установите свойства единого входа в тип ресурса [синглесигнонсеттингс](https://docs.microsoft.com/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) .
+Это приложение использует встроенную проверку подлинности Windows (ИВА). Чтобы настроить Ива, установите свойства единого входа в тип ресурса [синглесигнонсеттингс](/graph/api/resources/onpremisespublishingsinglesignon?view=graph-rest-beta) .
 
 #### <a name="request"></a>Запрос
 
@@ -658,9 +658,9 @@ Content-type: application/json
 }
 ```
 
-Дополнительные сведения см. в документации по типу ресурса [appRoleAssignment](https://docs.microsoft.com/graph/api/resources/approleassignment?view=graph-rest-beta).
+Дополнительные сведения см. в документации по типу ресурса [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-beta).
 
 
 ## <a name="additional-steps"></a>Дополнительные действия
-- [Автоматизация конфигурации с помощью примеров PowerShell для прокси-сервера приложений](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
-- [Автоматизация настройки единого входа на основе SAML для приложений с помощью API Microsoft Graph](https://docs.microsoft.com/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)
+- [Автоматизация конфигурации с помощью примеров PowerShell для прокси-сервера приложений](/azure/active-directory/manage-apps/application-proxy-powershell-samples.md)
+- [Автоматизация настройки единого входа на основе SAML для приложений с помощью API Microsoft Graph](/azure/active-directory/manage-apps/application-saml-sso-configure-api.md)
