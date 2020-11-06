@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 066d866db1a6390e8f19fe355442183dcd9fd01f
-ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
+ms.openlocfilehash: 3bcdc22bb84d669836a8fcafb7353fbf23a7dad7
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48471497"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932481"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -174,7 +174,7 @@ Microsoft Graph позволяет получать доступ к данным
 | -------------- | ------------ |
 | [Звонки](/graph/api/resources/call) | 10 000 звонков в месяц и 100 параллельных вызовов   |
 | [Сведения о собрании](/graph/api/resources/meetinginfo)   | 2000 собраний на пользователя каждый месяц |
-| [Присутствие](/graph/api/resources/presence) (предварительная версия)   | 2 запроса в секунду |
+| [Присутствие](/graph/api/resources/presence) (предварительная версия)   | 50 запросов в секунду |
 
 ### <a name="onenote-service-limits"></a>Ограничения службы OneNote
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: conceptualPageType
 ms.prod: ''
-ms.openlocfilehash: 1c664d25be4e7106ca7d2024de4b8fb4dc52cc54
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 82538ec91f682d5c4c53f76543a41f3c76a1811e
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192184"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932607"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 
@@ -30,13 +30,14 @@ REST API Microsoft Graph использует механизм веб-перех
 | [user][] | Изменения для всех пользователей:<br>`/users` <br>Изменения для конкретного пользователя:<br>`/users/{id}`| Нет |
 | [group][] | Изменения во всех группах:<br>`/groups` <br>Изменения в конкретной группе:<br>`/groups/{id}`<br>Изменения для владельцев конкретной группы:<br>`/groups/{id}/owners`<br>Изменения для участников конкретной группы:<br>`/groups/{id}/members` | Нет |
 | [Беседа][] группы Microsoft 365  | Изменения в разговорах группы:<br>`groups/{id}/conversations` | Нет |
-| [driveItem][]на OneDrive (личный) | Изменения содержимого в иерархии _любой папки_:<br>`/users/{id}/drive/root` | Нет |
-| [driveItem][]на OneDrive для бизнеса | Изменения содержимого в иерархии _корневой папки_:<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | Нет |
+| [driveItem][]на OneDrive (личный) | Изменения содержимого в иерархии _любой папки_ :<br>`/users/{id}/drive/root` | Нет |
+| [driveItem][]на OneDrive для бизнеса | Изменения содержимого в иерархии _корневой папки_ :<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | Нет |
 | [список][] на [сайте][] SharePoint | `/sites/{id}/lists/{id}` | Нет |
 | [Оповещение][] безопасности | Изменения в конкретном предупреждении:<br>`/security/alerts/{id}` <br>Изменения в отфильтрованных оповещениях:<br> `/security/alerts/?$filter`| Нет |
 | [callRecord][] в Teams | Изменения во _всех_ записях звонков: `/communications/callRecords` | Нет |
 | [chatMessage][] Teams | Изменения в сообщениях чата во всех каналах во всех командах:<br>`/teams/getAllMessages` <br>Изменения в сообщениях чата на определенном канале:<br>`/teams/{id}/channels/{id}/messages`<br>Изменения в сообщениях чата во всех чатах:<br>`/chats/getAllMessages` <br>Изменения в сообщениях чата в конкретном чате:<br>`/chats/{id}/messages` | Да |
 | [Присутствие][] в Teams | Изменения, внесенные в сведения о присутствии одного пользователя: `/communications/presences/{id}` <br> Изменения, внесенные в сведения о присутствии нескольких пользователей:<br> `/communications/presences?$filter=id in ({id},{id}...)` | Да |
+| Печать [принттаскдефинитион][] | Изменения всех событий в определении задачи печати:<br>`/print/printtaskdefinition/{id}/tasks` | Нет |
 
 > **Примечание**. Любой путь ресурса, начинающийся с `/users/{id}`, может принимать `/me` для указания вошедшего пользователя.
 
@@ -48,7 +49,7 @@ REST API Microsoft Graph использует механизм веб-перех
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | Делегированное — рабочая или учебная учетная запись     | [оповещение][], [контакт][], [беседа][], [driveItem][], [список][], [событие][], [Группа][], [сообщение][], [пользователь][], [присутствие][], [chatMessage][] (Предварительная версия) |
 | Делегированное — личная учетная запись Майкрософт | [contact][], [driveItem][], [list][], [event][], [message][]                                        |
-| Приложение                            | [Alert][], [Contact][], [driveItem][], [List][], [event][], [Group][], [Message][], [User][], [каллрекорд][], [chatMessage][]|
+| Приложение                            | [Alert][], [Contact][], [driveItem][], [List][], [event][], [Group][], [Message][], [User][], [каллрекорд][], [chatMessage][], [принттаскдефинитион][]|
 
 ## <a name="see-also"></a>См. также
 
@@ -72,5 +73,6 @@ REST API Microsoft Graph использует механизм веб-перех
 [callRecord]: ./callrecords-callrecord.md
 [alert]: ./alert.md
 [presence]: ./presence.md
+[printTaskDefinition]: ./printtaskdefinition.md
 
 
