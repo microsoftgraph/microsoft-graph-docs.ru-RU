@@ -5,18 +5,18 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: jesakowi
-ms.openlocfilehash: 0285eb767a2fc4606dceaf74693a570f14dd6612
-ms.sourcegitcommit: c28da0e5feea4791c19663a30b223a0a5da0ed02
+ms.openlocfilehash: d998b8bf3e5ab4ad253e31a96794e8e531e6803e
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48471531"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921901"
 ---
 # <a name="verifiedpublisher-resource-type"></a>Тип ресурса Верифиедпублишер
 
 Пространство имен: microsoft.graph
 
-Представляет проверенного издателя [приложения](application.md). Для получения дополнительных сведений см [Проверка издателя](https://docs.microsoft.com/azure/active-directory/develop/publisher-verification-overview). Проверенные издатели задаются с помощью [сетверифиедпублишер](../api/application-setverifiedpublisher.md) и могут быть удалены только с помощью [унсетверифиедпублишер](../api/application-unsetverifiedpublisher.md).
+Представляет проверенного издателя [приложения](application.md). Для получения дополнительных сведений см [Проверка издателя](/azure/active-directory/develop/publisher-verification-overview). Проверенные издатели задаются с помощью [сетверифиедпублишер](../api/application-setverifiedpublisher.md) и могут быть удалены только с помощью [унсетверифиедпублишер](../api/application-unsetverifiedpublisher.md).
 
 ## <a name="properties"></a>Свойства
 

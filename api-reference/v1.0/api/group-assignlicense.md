@@ -5,18 +5,18 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: a0772d0aca5a60bb4c5d9faa7d75efcd8d9ef385
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5e36b6507f49444c4bd6a5433544c9f5976b4379
+ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48023704"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48921762"
 ---
 # <a name="group-assignlicense"></a>Группа: Ассигнлиценсе
 
 Пространство имен: microsoft.graph
 
-Добавление и удаление лицензий для группы. Лицензии, назначенные группе, будут назначены всем пользователям в группе. Чтобы узнать больше о лицензировании на основе групп, ознакомьтесь со статьей " [Лицензирование на основе групп" в Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+Добавление и удаление лицензий для группы. Лицензии, назначенные группе, будут назначены всем пользователям в группе. Чтобы узнать больше о лицензировании на основе групп, ознакомьтесь со статьей " [Лицензирование на основе групп" в Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
 Чтобы получить доступ к подпискам в каталоге, выполните [запрос Get субскрибедскус](../resources/subscribedsku.md).
 

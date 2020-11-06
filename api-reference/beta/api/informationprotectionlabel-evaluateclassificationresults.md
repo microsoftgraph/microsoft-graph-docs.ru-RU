@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 22fb19a5d44ff9bed091c1cbd84183470a3490ce
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 46fc62d610a792493585dd3a5241e8af30d183ee
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001481"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932467"
 ---
 # <a name="informationprotectionlabel-evaluateclassificationresults"></a>Информатионпротектионлабел: Евалуатеклассификатионресултс
 
@@ -53,7 +53,7 @@ ms.locfileid: "48001481"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
+POST /informationProtection/policy/labels/{id}/evaluateClassificationResults
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -62,9 +62,9 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Авторизация | Bearer {токен}. Обязательный.                                                                                                                                             |
 | Content-Type  | application/json. Обязательный.                                                                                                                                           |
-| User — Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательный параметр. |
+| User-Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательно. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -92,7 +92,7 @@ POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateClassificationResults
+POST https://graph.microsoft.com/beta/informationProtection/policy/labels/evaluateClassificationResults
 Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 

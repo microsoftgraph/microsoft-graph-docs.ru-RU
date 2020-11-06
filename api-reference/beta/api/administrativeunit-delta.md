@@ -5,12 +5,12 @@ localization_priority: Normal
 author: anandyadavMSFT
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f96254db5e9d6f4394f45e1b1c266016258f950d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f42f795d1182fb506fa167cc07c2d10d0cdd17e6
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991777"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932362"
 ---
 # <a name="administrativeunit-delta"></a>administrativeUnit: Delta
 
@@ -49,7 +49,7 @@ GET /administrativeUnits/delta
 | $deltatoken | string | [Токен состояния](/graph/delta-query-overview) возвращается в `deltaLink` URL-адресе предыдущего вызова функции **Delta** для той же коллекции ресурсов, что указывает на завершение этого круга отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
 | $skiptoken | string | [Токен состояния](/graph/delta-query-overview) возвращается в `nextLink` URL-адресе предыдущего вызова функции **Delta** , указывая, что в коллекции ресурсов отслеживаются другие изменения. |
 
-### <a name="optional-query-parameters"></a>Необязательные параметры запроса
+### <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод поддерживает указанные ниже параметры запросов OData для настройки отклика.
 
@@ -62,14 +62,14 @@ GET /administrativeUnits/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носитель &lt;токен&gt;. Обязательно.|
+| Авторизация  | Носитель &lt;токен&gt;. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции [administrativeUnit](../resources/administrativeunit.md) в тексте отклика. Оклик также содержит URL-адрес `nextLink` или `deltaLink`. 
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции [administrativeUnit](../resources/administrativeunit.md) в тексте отклика. Отклик также содержит URL-адрес `nextLink` или `deltaLink`. 
 
 - Если возвращается URL-адрес `nextLink`, это означает, что во время сеанса получены не все страницы данных. **AdministrativeUnit** продолжает совершать запросы, используя `nextLink` URL-адрес, пока `deltaLink` в ответ не будет включен URL-адрес.
 
@@ -87,7 +87,7 @@ GET /administrativeUnits/delta
   "name": "administrativeunit_delta"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/administrativeunits/delta
+GET https://graph.microsoft.com/beta/administrativeUnits/delta
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/administrativeunit-delta-csharp-snippets.md)]

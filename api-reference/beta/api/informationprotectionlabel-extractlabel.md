@@ -5,12 +5,12 @@ localization_priority: Normal
 author: tommoser
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6ac5cd943f249e52f488819cd86b40854458ae6d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 729cc7c276ad5bb12b3f7848fd925ce291fb5cd8
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48001483"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932474"
 ---
 # <a name="informationprotectionlabel-extractlabel"></a>Информатионпротектионлабел: Екстрактлабел
 
@@ -46,10 +46,10 @@ POST /informationprotection/policy/labels/extractLabel
 | Имя          | Описание                                                                                                                                                                       |
 | :------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Авторизация | Bearer {токен}. Обязательный.                                                                                                                                                         |
-| Content-Type  | Content-Type: Application/JSON. Обязательно.                                                                                                                                         |
-| User — Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательный параметр. |
+| Content-Type  | Content-Type: Application/JSON. Обязательный.                                                                                                                                         |
+| User-Agent    | Описывает имя и версию вызывающего приложения. Подробные сведения отображаются в Azure Information Protection Analytics. Рекомендуемый формат — ApplicationName/Version. Необязательно. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -76,7 +76,7 @@ POST /informationprotection/policy/labels/extractLabel
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/informationprotection/policy/labels/extractLabel
+POST https://graph.microsoft.com/beta/informationProtection/policy/labels/extractLabel
 Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 
