@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 01097dbcd41da54baf26509f0a8be4d3ff6de885
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 3c5dac6b678d397f05653486b0806d6b7a016d53
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782965"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932605"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -58,7 +58,7 @@ ms.locfileid: "48782965"
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Параметры для настройки того, могут ли участники выполнять определенные действия, например создавать каналы и добавлять ботов в команде.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Параметры для настройки обмена сообщениями и упоминаний в команде.|
 |discoverySettings|[teamDiscoverySettings](teamdiscoverysettings.md) |Параметры для настройки возможности обнаружения команды другими пользователями.|
-|webUrl|string (только для чтения) | Гиперссылка, ведущая к команде в клиенте Microsoft Teams. Это URL-адрес, получаемый при щелчке правой кнопкой мыши по команде в клиенте Microsoft Teams и выборе пункта **Получить ссылку на команду** . Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. |
+|webUrl|string (только для чтения) | Гиперссылка, ведущая к команде в клиенте Microsoft Teams. Это URL-адрес, получаемый при щелчке правой кнопкой мыши по команде в клиенте Microsoft Teams и выборе пункта **Получить ссылку на команду**. Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. |
 |classSettings|[teamClassSettings](teamclasssettings.md) |Настройка параметров класса. Доступна только в том случае, если команда представляет класс.|
 |isMembershipLimitedToOwners|Boolean|Если присвоено значение `true`, команда в настоящее время находится в состоянии участия только для владельцев команды и недоступна другим участникам, например учащимся.|
 |createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания команды.|
@@ -71,7 +71,7 @@ ms.locfileid: "48782965"
 |:-----------------------|:-------|:-------------------------|
 |@microsoft.graph.teamCreationMode|string|Указывает, что команда находится в состоянии миграции и в настоящее время используется для миграции. Принимает одно значение: `migration`.|
 
-Пример запроса POST см. в разделе [Запрос (создание команды в состоянии миграции)](https://github.com/MicrosoftDocs/msteams-docs/blob/add-import-messages/msteams-platform/graph-api/import-messages/import-external-messages-to-teams.md#request-create-team-in-migration-state).
+Пример запроса POST см. в разделе [Запрос (создание команды в состоянии миграции)](https://docs.microsoft.com/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
 ## <a name="relationships"></a>Связи
 
@@ -91,7 +91,7 @@ ms.locfileid: "48782965"
 
 Ниже указано представление ресурса в формате JSON.
 
->**Примечание.** Если команда относится к типу class, к ней применяется свойство **classSettings** .
+>**Примечание.** Если команда относится к типу class, к ней применяется свойство **classSettings**.
 
 <!-- {
   "blockType": "resource",
