@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ce6f029f75014bba95df11a1c1b319d8e9859e21
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: b1b7cf1c502b54c258f7e657881b53749548758a
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192583"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932432"
 ---
 # <a name="event-delta"></a>event: delta
 
@@ -99,7 +99,7 @@ Prefer: odata.maxpagesize=2
 
 
 ##### <a name="response"></a>Отклик
-В случае успешного выполнения запроса отклик будет включать маркер состояния — _skipToken_ или _deltaToken_. Первый указан в заголовке отклика _@odata.nextLink_, второй — в заголовке отклика _@odata.deltaLink_. Первый указывает на необходимость продолжать цикл, второй — на наличие всех изменений для определенного цикла.
+В случае успешного выполнения запроса отклик будет включать маркер состояния — _skipToken_ или _deltaToken_. Первый указан в заголовке отклика _@odata.nextLink_ , второй — в заголовке отклика _@odata.deltaLink_. Первый указывает на необходимость продолжать цикл, второй — на наличие всех изменений для определенного цикла.
 
 Ниже показан отклик с маркером состояния _skipToken_ в заголовке отклика _@odata.nextLink_.
 
@@ -134,7 +134,7 @@ Content-length: 359
 }
 ```
 
-### <a name="see-also"></a>См. также
+## <a name="see-also"></a>См. также
 
 - [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview)
 - [Получение добавочных изменений событий в календаре](/graph/delta-query-events)

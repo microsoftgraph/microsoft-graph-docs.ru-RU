@@ -5,12 +5,12 @@ author: kenwith
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 0be3a07c2dec554c25afcb5c228bc392615c9964
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: f9efbebb2f0756534fdac6085f1c77428e66e0b9
+ms.sourcegitcommit: 5b0b254cc6d8224b3126331eeff6bd0d903e9060
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405367"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48945117"
 ---
 # <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a>Автоматизация настройки единого входа на основе SAML для приложений с помощью API Microsoft Graph
 
@@ -225,7 +225,7 @@ Content-type: application/json
 
 В этом примере вы настроите режим единого входа `saml` для [типа ресурса servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0). Также вы можете настроить другие свойства единого входа SAML: `notificationEmailAddresses`, `loginUrl` и `samlSingleSignOnSettings.relayState`.
 
-Прежде чем этот запрос заработает, необходимо предоставить согласие на вкладке **Изменить разрешения** в песочнице Graph. Кроме того, используйте идентификатор **servicePrincipal**, полученный ранее.
+Прежде чем этот запрос заработает, необходимо предоставить согласие на вкладке **Изменить разрешения** в песочнице Graph. Кроме того, используйте идентификатор **servicePrincipal** , полученный ранее.
 
 #### <a name="request"></a>Запрос
 
@@ -274,7 +274,7 @@ HTTP/1.1 204
 
 Настройте идентификатор и URL-адреса ответа для AWS в объекте приложения.
 
-Используйте идентификатор **application**, полученный ранее.
+Используйте идентификатор **application** , полученный ранее.
 
 #### <a name="request"></a>Запрос
 
@@ -819,6 +819,11 @@ Content-type: application/json
 Используйте следующий URL-адрес, чтобы получить метаданные SAML из Azure AD для конкретного настроенного приложения. Эти метаданные содержат такие сведения, как сертификат для подписи, идентификатор сущности Azure AD (entityID), служба единого входа Azure AD (SingleSignOnService) и т. д.
 
 `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`
+
+> [!NOTE]
+> Приложение должно быть способно анализировать метку порядка байтов из XML-данных метаданных федерации, отображаемую с помощью `https://login.microsoftonline.com/{tenant-id}/federationmetadata/2007-06/federationmetadata.xml?appid={app-id}`. Метка порядка байтов представлена в виде непечатаемого символа ASCII `»¿` и в шестнадцатеричном формате выглядит как `EF BB BF` при просмотре XML-данных.
+
+ 
 
 ## <a name="next-steps"></a>Дальнейшие действия
 - [Настройка подготовки пользователей с помощью API Microsoft Graph](/azure/active-directory/app-provisioning/application-provisioning-configure-api)
