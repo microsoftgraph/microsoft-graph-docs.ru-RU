@@ -5,12 +5,12 @@ localization_priority: Normal
 author: psignoret
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2fe66ab3259cc6850c75badaee9cf7ccba72e689
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ef244ecab046800ccd877d4c3f26414fa8ce1de9
+ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48028498"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48932502"
 ---
 # <a name="oauth2permissiongrant-delta"></a>oauth2permissiongrant: Delta
 
@@ -34,7 +34,7 @@ ms.locfileid: "48028498"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /oauth2permissiongrants/delta
+GET /oauth2PermissionGrants/delta
 ```
 
 ## <a name="query-parameters"></a>Параметры запроса
@@ -59,12 +59,12 @@ GET /oauth2permissiongrants/delta
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции [oauth2permissiongrant](../resources/oauth2permissiongrant.md) в тексте отклика. Оклик также содержит URL-адрес `nextLink` или `deltaLink`.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции [oauth2permissiongrant](../resources/oauth2permissiongrant.md) в тексте отклика. Отклик также содержит URL-адрес `nextLink` или `deltaLink`.
 
 - Если `nextLink` возвращается URL-адрес, дополнительные страницы данных можно получить в сеансе. **Oauth2permissiongrant** продолжает совершать запросы, используя `nextLink` URL-адрес, пока `deltaLink` в ответ не будет включен URL-адрес.
 - Если `deltaLink` возвращается URL-адрес, дополнительные данные о ресурсе не возвращаются. Следует оставить и использовать `deltaLink` URL-адрес для получения сведений об изменениях в ресурсе в будущем.
@@ -80,7 +80,7 @@ GET /oauth2permissiongrants/delta
   "name": "oauth2permissiongrant_delta"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/oauth2permissiongrants/delta
+GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/delta
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/oauth2permissiongrant-delta-csharp-snippets.md)]
