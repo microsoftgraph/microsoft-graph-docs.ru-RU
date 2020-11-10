@@ -5,30 +5,30 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 8688775867b55000aa4a5e5e934d261221396cd9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5e35a4a16fb1d7d58544dc7a1c32e432ed567b86
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034805"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48980810"
 ---
-# <a name="list-awards"></a><span data-ttu-id="b36cd-103">Список вознаграждений</span><span class="sxs-lookup"><span data-stu-id="b36cd-103">List awards</span></span>
+# <a name="list-awards"></a><span data-ttu-id="5a1af-103">Список вознаграждений</span><span class="sxs-lookup"><span data-stu-id="5a1af-103">List awards</span></span>
 
-<span data-ttu-id="b36cd-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b36cd-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="5a1af-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5a1af-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="b36cd-105">Получение списка объектов [персонавард](../resources/personaward.md) из [профиля](../resources/profile.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="b36cd-105">Retrieve a list of [personAward](../resources/personaward.md) objects from a user's [profile](../resources/profile.md).</span></span>
+<span data-ttu-id="5a1af-105">Получение списка объектов [персонавард](../resources/personaward.md) из [профиля](../resources/profile.md)пользователя.</span><span class="sxs-lookup"><span data-stu-id="5a1af-105">Retrieve a list of [personAward](../resources/personaward.md) objects from a user's [profile](../resources/profile.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b36cd-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b36cd-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="5a1af-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5a1af-106">Permissions</span></span>
 
-<span data-ttu-id="b36cd-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b36cd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5a1af-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5a1af-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="b36cd-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b36cd-109">Permission type</span></span>                        | <span data-ttu-id="b36cd-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b36cd-110">Permissions (from least to most privileged)</span></span>                                      |
+| <span data-ttu-id="5a1af-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5a1af-109">Permission type</span></span>                        | <span data-ttu-id="5a1af-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5a1af-110">Permissions (from least to most privileged)</span></span>                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| <span data-ttu-id="b36cd-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b36cd-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="b36cd-112">User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="b36cd-112">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
-| <span data-ttu-id="b36cd-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b36cd-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b36cd-114">User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="b36cd-114">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
-| <span data-ttu-id="b36cd-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b36cd-115">Application</span></span>                            | <span data-ttu-id="b36cd-116">User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="b36cd-116">User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span>                            |
+| <span data-ttu-id="5a1af-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5a1af-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="5a1af-112">User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="5a1af-112">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
+| <span data-ttu-id="5a1af-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5a1af-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5a1af-114">User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="5a1af-114">User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span> |
+| <span data-ttu-id="5a1af-115">Для приложения</span><span class="sxs-lookup"><span data-stu-id="5a1af-115">Application</span></span>                            | <span data-ttu-id="5a1af-116">User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="5a1af-116">User.ReadBasic.All, User.Read.All, User.ReadWrite.All</span></span>                            |
 
-## <a name="http-request"></a><span data-ttu-id="b36cd-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b36cd-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5a1af-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5a1af-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -39,33 +39,33 @@ GET /me/profile/awards
 GET /users/{id | userPrincipalName}/profile/awards
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="b36cd-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="b36cd-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="5a1af-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="5a1af-118">Optional query parameters</span></span>
 
-<span data-ttu-id="b36cd-119">Этот метод поддерживает следующие параметры запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="b36cd-119">This method supports the following OData query parameters to help customize the response.</span></span> <span data-ttu-id="b36cd-120">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="b36cd-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="5a1af-119">Этот метод поддерживает следующие параметры запроса OData для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="5a1af-119">This method supports the following OData query parameters to help customize the response.</span></span> <span data-ttu-id="5a1af-120">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="5a1af-120">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-|<span data-ttu-id="b36cd-121">Имя</span><span class="sxs-lookup"><span data-stu-id="b36cd-121">Name</span></span>            |<span data-ttu-id="b36cd-122">Значение</span><span class="sxs-lookup"><span data-stu-id="b36cd-122">Value</span></span>    |<span data-ttu-id="b36cd-123">Описание</span><span class="sxs-lookup"><span data-stu-id="b36cd-123">Description</span></span>                                                                                                                                                                 |
+|<span data-ttu-id="5a1af-121">Имя</span><span class="sxs-lookup"><span data-stu-id="5a1af-121">Name</span></span>            |<span data-ttu-id="5a1af-122">Значение</span><span class="sxs-lookup"><span data-stu-id="5a1af-122">Value</span></span>    |<span data-ttu-id="5a1af-123">Описание</span><span class="sxs-lookup"><span data-stu-id="5a1af-123">Description</span></span>                                                                                                                                                                 |
 |:---------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|<span data-ttu-id="b36cd-124">$filter</span><span class="sxs-lookup"><span data-stu-id="b36cd-124">$filter</span></span>         |<span data-ttu-id="b36cd-125">string</span><span class="sxs-lookup"><span data-stu-id="b36cd-125">string</span></span>   |<span data-ttu-id="b36cd-126">Разрешает отклик только на те объекты, которые содержат заданные условия.</span><span class="sxs-lookup"><span data-stu-id="b36cd-126">Limits the response to only those objects which contain the specified criteria.</span></span>                                                                                             |
-|<span data-ttu-id="b36cd-127">$orderby</span><span class="sxs-lookup"><span data-stu-id="b36cd-127">$orderby</span></span>        |<span data-ttu-id="b36cd-128">строка</span><span class="sxs-lookup"><span data-stu-id="b36cd-128">string</span></span>   |<span data-ttu-id="b36cd-129">По умолчанию объекты в отклике сортируются по значению createdDateTime в запросе.</span><span class="sxs-lookup"><span data-stu-id="b36cd-129">By default the objects in the response are sorted by their createdDateTime value in a query.</span></span> <span data-ttu-id="b36cd-130">Вы можете изменить порядок ответа с помощью параметра *$OrderBy* .</span><span class="sxs-lookup"><span data-stu-id="b36cd-130">You can change the order of the of the response using the *$orderby* parameter.</span></span>|
-|<span data-ttu-id="b36cd-131">$select</span><span class="sxs-lookup"><span data-stu-id="b36cd-131">$select</span></span>         |<span data-ttu-id="b36cd-132">string</span><span class="sxs-lookup"><span data-stu-id="b36cd-132">string</span></span>   |<span data-ttu-id="b36cd-p104">Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.</span><span class="sxs-lookup"><span data-stu-id="b36cd-p104">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>                                        |
-|<span data-ttu-id="b36cd-135">$skip</span><span class="sxs-lookup"><span data-stu-id="b36cd-135">$skip</span></span>           |<span data-ttu-id="b36cd-136">int</span><span class="sxs-lookup"><span data-stu-id="b36cd-136">int</span></span>      |<span data-ttu-id="b36cd-137">Пропустите первые n результатов, которые удобно использовать для разбиения на страницы.</span><span class="sxs-lookup"><span data-stu-id="b36cd-137">Skip the first n results, useful for paging.</span></span>                                                                                                                                |
-|<span data-ttu-id="b36cd-138">$top</span><span class="sxs-lookup"><span data-stu-id="b36cd-138">$top</span></span>            |<span data-ttu-id="b36cd-139">int</span><span class="sxs-lookup"><span data-stu-id="b36cd-139">int</span></span>      |<span data-ttu-id="b36cd-140">Количество возвращаемых результатов.</span><span class="sxs-lookup"><span data-stu-id="b36cd-140">Number of results to be returned.</span></span>                                                                                                                                           |
+|<span data-ttu-id="5a1af-124">$filter</span><span class="sxs-lookup"><span data-stu-id="5a1af-124">$filter</span></span>         |<span data-ttu-id="5a1af-125">string</span><span class="sxs-lookup"><span data-stu-id="5a1af-125">string</span></span>   |<span data-ttu-id="5a1af-126">Разрешает отклик только на те объекты, которые содержат заданные условия.</span><span class="sxs-lookup"><span data-stu-id="5a1af-126">Limits the response to only those objects which contain the specified criteria.</span></span>                                                                                             |
+|<span data-ttu-id="5a1af-127">$orderby</span><span class="sxs-lookup"><span data-stu-id="5a1af-127">$orderby</span></span>        |<span data-ttu-id="5a1af-128">строка</span><span class="sxs-lookup"><span data-stu-id="5a1af-128">string</span></span>   |<span data-ttu-id="5a1af-129">По умолчанию объекты в отклике сортируются по значению createdDateTime в запросе.</span><span class="sxs-lookup"><span data-stu-id="5a1af-129">By default the objects in the response are sorted by their createdDateTime value in a query.</span></span> <span data-ttu-id="5a1af-130">Вы можете изменить порядок ответа с помощью параметра *$OrderBy* .</span><span class="sxs-lookup"><span data-stu-id="5a1af-130">You can change the order of the of the response using the *$orderby* parameter.</span></span>|
+|<span data-ttu-id="5a1af-131">$select</span><span class="sxs-lookup"><span data-stu-id="5a1af-131">$select</span></span>         |<span data-ttu-id="5a1af-132">string</span><span class="sxs-lookup"><span data-stu-id="5a1af-132">string</span></span>   |<span data-ttu-id="5a1af-p104">Список разделенных запятыми свойств, которые необходимо включить в отклик. Для оптимизации производительности выбирайте только необходимые свойства.</span><span class="sxs-lookup"><span data-stu-id="5a1af-p104">Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.</span></span>                                        |
+|<span data-ttu-id="5a1af-135">$skip</span><span class="sxs-lookup"><span data-stu-id="5a1af-135">$skip</span></span>           |<span data-ttu-id="5a1af-136">int</span><span class="sxs-lookup"><span data-stu-id="5a1af-136">int</span></span>      |<span data-ttu-id="5a1af-137">Пропустите первые n результатов, которые удобно использовать для разбиения на страницы.</span><span class="sxs-lookup"><span data-stu-id="5a1af-137">Skip the first n results, useful for paging.</span></span>                                                                                                                                |
+|<span data-ttu-id="5a1af-138">$top</span><span class="sxs-lookup"><span data-stu-id="5a1af-138">$top</span></span>            |<span data-ttu-id="5a1af-139">int</span><span class="sxs-lookup"><span data-stu-id="5a1af-139">int</span></span>      |<span data-ttu-id="5a1af-140">Количество возвращаемых результатов.</span><span class="sxs-lookup"><span data-stu-id="5a1af-140">Number of results to be returned.</span></span>                                                                                                                                           |
 
-## <a name="request-headers"></a><span data-ttu-id="b36cd-141">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="b36cd-141">Request headers</span></span>
-|<span data-ttu-id="b36cd-142">Имя</span><span class="sxs-lookup"><span data-stu-id="b36cd-142">Name</span></span>|<span data-ttu-id="b36cd-143">Описание</span><span class="sxs-lookup"><span data-stu-id="b36cd-143">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5a1af-141">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="5a1af-141">Request headers</span></span>
+|<span data-ttu-id="5a1af-142">Имя</span><span class="sxs-lookup"><span data-stu-id="5a1af-142">Name</span></span>|<span data-ttu-id="5a1af-143">Описание</span><span class="sxs-lookup"><span data-stu-id="5a1af-143">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="b36cd-144">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b36cd-144">Authorization</span></span>|<span data-ttu-id="b36cd-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b36cd-p105">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="5a1af-144">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5a1af-144">Authorization</span></span>|<span data-ttu-id="5a1af-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5a1af-p105">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b36cd-147">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b36cd-147">Request body</span></span>
-<span data-ttu-id="b36cd-148">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b36cd-148">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5a1af-147">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5a1af-147">Request body</span></span>
+<span data-ttu-id="5a1af-148">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="5a1af-148">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b36cd-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="b36cd-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5a1af-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="5a1af-149">Response</span></span>
 
-<span data-ttu-id="b36cd-150">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [персонавард](../resources/personaward.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="b36cd-150">If successful, this method returns a `200 OK` response code and a collection of [personAward](../resources/personaward.md) objects in the response body.</span></span>
+<span data-ttu-id="5a1af-150">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [персонавард](../resources/personaward.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="5a1af-150">If successful, this method returns a `200 OK` response code and a collection of [personAward](../resources/personaward.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="b36cd-151">Примеры</span><span class="sxs-lookup"><span data-stu-id="b36cd-151">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="5a1af-151">Примеры</span><span class="sxs-lookup"><span data-stu-id="5a1af-151">Examples</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="b36cd-152">HTTP</span><span class="sxs-lookup"><span data-stu-id="b36cd-152">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="5a1af-152">HTTP</span><span class="sxs-lookup"><span data-stu-id="5a1af-152">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_itemawards_from_profile"
@@ -74,22 +74,26 @@ GET /users/{id | userPrincipalName}/profile/awards
 ``` http
 GET https://graph.microsoft.com/beta/me/profile/awards
 ```
-# <a name="c"></a>[<span data-ttu-id="b36cd-153">C#</span><span class="sxs-lookup"><span data-stu-id="b36cd-153">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="5a1af-153">C#</span><span class="sxs-lookup"><span data-stu-id="5a1af-153">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-itemawards-from-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b36cd-154">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b36cd-154">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="5a1af-154">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5a1af-154">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-itemawards-from-profile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b36cd-155">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b36cd-155">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="5a1af-155">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5a1af-155">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-itemawards-from-profile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="5a1af-156">Java</span><span class="sxs-lookup"><span data-stu-id="5a1af-156">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-itemawards-from-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### <a name="response"></a><span data-ttu-id="b36cd-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="b36cd-156">Response</span></span>
-<span data-ttu-id="b36cd-157">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="b36cd-157">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="5a1af-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="5a1af-157">Response</span></span>
+<span data-ttu-id="5a1af-158">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="5a1af-158">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
