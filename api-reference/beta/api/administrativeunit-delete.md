@@ -5,54 +5,54 @@ author: anandyadavMSFT
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1c41b100d8898c4d50e156708fd69d67ddcf755d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f5df878bb0b9053a214f3eb98eb69d8a58b67a24
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991773"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962709"
 ---
-# <a name="delete-administrativeunit"></a><span data-ttu-id="50a58-103">Удаление administrativeUnit</span><span class="sxs-lookup"><span data-stu-id="50a58-103">Delete administrativeUnit</span></span>
+# <a name="delete-administrativeunit"></a><span data-ttu-id="15147-103">Удаление administrativeUnit</span><span class="sxs-lookup"><span data-stu-id="15147-103">Delete administrativeUnit</span></span>
 
-<span data-ttu-id="50a58-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="50a58-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="15147-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="15147-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="50a58-105">Удаление [administrativeUnit](../resources/administrativeunit.md).</span><span class="sxs-lookup"><span data-stu-id="50a58-105">Delete an [administrativeUnit](../resources/administrativeunit.md).</span></span>
+<span data-ttu-id="15147-105">Удаление [administrativeUnit](../resources/administrativeunit.md).</span><span class="sxs-lookup"><span data-stu-id="15147-105">Delete an [administrativeUnit](../resources/administrativeunit.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="50a58-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="50a58-106">Permissions</span></span>
-<span data-ttu-id="50a58-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="50a58-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="15147-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="15147-106">Permissions</span></span>
+<span data-ttu-id="15147-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="15147-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="50a58-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="50a58-109">Permission type</span></span>      | <span data-ttu-id="50a58-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="50a58-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="15147-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="15147-109">Permission type</span></span>      | <span data-ttu-id="15147-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="15147-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="50a58-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="50a58-111">Delegated (work or school account)</span></span> | <span data-ttu-id="50a58-112">AdministrativeUnit. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="50a58-112">AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="50a58-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="50a58-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="50a58-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="50a58-114">Not supported.</span></span>    |
-|<span data-ttu-id="50a58-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="50a58-115">Application</span></span> | <span data-ttu-id="50a58-116">AdministrativeUnit.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="50a58-116">AdministrativeUnit.ReadWrite.All</span></span> |
+|<span data-ttu-id="15147-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="15147-111">Delegated (work or school account)</span></span> | <span data-ttu-id="15147-112">AdministrativeUnit. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="15147-112">AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="15147-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="15147-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="15147-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="15147-114">Not supported.</span></span>    |
+|<span data-ttu-id="15147-115">Для приложения</span><span class="sxs-lookup"><span data-stu-id="15147-115">Application</span></span> | <span data-ttu-id="15147-116">AdministrativeUnit.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="15147-116">AdministrativeUnit.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="50a58-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="50a58-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="15147-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="15147-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /administrativeUnits/{id}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="50a58-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="50a58-118">Request headers</span></span>
-| <span data-ttu-id="50a58-119">Имя</span><span class="sxs-lookup"><span data-stu-id="50a58-119">Name</span></span>       | <span data-ttu-id="50a58-120">Описание</span><span class="sxs-lookup"><span data-stu-id="50a58-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="15147-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="15147-118">Request headers</span></span>
+| <span data-ttu-id="15147-119">Имя</span><span class="sxs-lookup"><span data-stu-id="15147-119">Name</span></span>       | <span data-ttu-id="15147-120">Описание</span><span class="sxs-lookup"><span data-stu-id="15147-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="50a58-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="50a58-121">Authorization</span></span>  | <span data-ttu-id="50a58-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="50a58-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="15147-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="15147-121">Authorization</span></span>  | <span data-ttu-id="15147-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="15147-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="50a58-124">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="50a58-124">Request body</span></span>
-<span data-ttu-id="50a58-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="50a58-125">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="15147-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="15147-124">Request body</span></span>
+<span data-ttu-id="15147-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="15147-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="50a58-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="50a58-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="15147-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="15147-126">Response</span></span>
 
-<span data-ttu-id="50a58-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="50a58-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="15147-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="15147-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="50a58-129">Пример</span><span class="sxs-lookup"><span data-stu-id="50a58-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="50a58-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="50a58-130">Request</span></span>
-<span data-ttu-id="50a58-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="50a58-131">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="15147-129">Пример</span><span class="sxs-lookup"><span data-stu-id="15147-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="15147-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="15147-130">Request</span></span>
+<span data-ttu-id="15147-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="15147-131">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="50a58-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="50a58-132">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="15147-132">HTTP</span><span class="sxs-lookup"><span data-stu-id="15147-132">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_administrativeunit"
@@ -60,22 +60,26 @@ DELETE /administrativeUnits/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/administrativeUnits/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="50a58-133">C#</span><span class="sxs-lookup"><span data-stu-id="50a58-133">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="15147-133">C#</span><span class="sxs-lookup"><span data-stu-id="15147-133">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-administrativeunit-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="50a58-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="50a58-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="15147-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="15147-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-administrativeunit-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="50a58-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="50a58-135">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="15147-135">Objective-C</span><span class="sxs-lookup"><span data-stu-id="15147-135">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-administrativeunit-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="15147-136">Java</span><span class="sxs-lookup"><span data-stu-id="15147-136">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-administrativeunit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="50a58-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="50a58-136">Response</span></span>
-<span data-ttu-id="50a58-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="50a58-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="15147-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="15147-137">Response</span></span>
+<span data-ttu-id="15147-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="15147-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true

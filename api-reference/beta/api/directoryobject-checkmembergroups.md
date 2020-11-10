@@ -5,39 +5,39 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d205f4affaf8676e8cc372bb8e9a4adc1c6eb622
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f6a7e261f1d324b7077317796fc87608027f38d2
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996164"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48963130"
 ---
-# <a name="check-member-groups"></a><span data-ttu-id="4b4c8-103">Проверка членства в группах</span><span class="sxs-lookup"><span data-stu-id="4b4c8-103">Check member groups</span></span>
+# <a name="check-member-groups"></a><span data-ttu-id="36d11-103">Проверка членства в группах</span><span class="sxs-lookup"><span data-stu-id="36d11-103">Check member groups</span></span>
 
-<span data-ttu-id="4b4c8-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4b4c8-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="36d11-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="36d11-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4b4c8-105">Проверяет членство в указанном списке групп и возвращает из этого списка группы, в которые входит указанный пользователь, группа, субъект-служба или объект каталога.</span><span class="sxs-lookup"><span data-stu-id="4b4c8-105">Check for membership in a specified list of groups, and returns from that list those groups of which the specified user, group, service principal or directory object is a member.</span></span> <span data-ttu-id="4b4c8-106">Это транзитивная функция.</span><span class="sxs-lookup"><span data-stu-id="4b4c8-106">This function is transitive.</span></span>
+<span data-ttu-id="36d11-105">Проверяет членство в указанном списке групп и возвращает из этого списка группы, в которые входит указанный пользователь, группа, субъект-служба или объект каталога.</span><span class="sxs-lookup"><span data-stu-id="36d11-105">Check for membership in a specified list of groups, and returns from that list those groups of which the specified user, group, service principal or directory object is a member.</span></span> <span data-ttu-id="36d11-106">Это транзитивная функция.</span><span class="sxs-lookup"><span data-stu-id="36d11-106">This function is transitive.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4b4c8-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4b4c8-107">Permissions</span></span>
-<span data-ttu-id="4b4c8-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4b4c8-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="36d11-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="36d11-107">Permissions</span></span>
+<span data-ttu-id="36d11-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="36d11-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="4b4c8-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4b4c8-110">Permission type</span></span>      | <span data-ttu-id="4b4c8-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4b4c8-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="36d11-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="36d11-110">Permission type</span></span>      | <span data-ttu-id="36d11-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="36d11-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4b4c8-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4b4c8-112">Delegated (work or school account)</span></span> | <span data-ttu-id="4b4c8-113">User. ReadBasic. ALL и Граупмембер. Read. ALL, User. Read. ALL и Граупмембер. Read. ALL, User. ReadBasic. ALL и Group. Read. ALL, User. Read. ALL и Group. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="4b4c8-113">User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, Directory.Read.All</span></span>    |
-|<span data-ttu-id="4b4c8-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4b4c8-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4b4c8-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4b4c8-115">Not supported.</span></span>    |
-|<span data-ttu-id="4b4c8-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4b4c8-116">Application</span></span> | <span data-ttu-id="4b4c8-117">User. Read. ALL и Граупмембер. Read. ALL, User. Read. ALL и Group. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="4b4c8-117">User.Read.All and GroupMember.Read.All, User.Read.All and Group.Read.All, Directory.Read.All</span></span> |
+|<span data-ttu-id="36d11-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="36d11-112">Delegated (work or school account)</span></span> | <span data-ttu-id="36d11-113">User. ReadBasic. ALL и Граупмембер. Read. ALL, User. Read. ALL и Граупмембер. Read. ALL, User. ReadBasic. ALL и Group. Read. ALL, User. Read. ALL и Group. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="36d11-113">User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All, User.Read.All and Group.Read.All, Directory.Read.All</span></span>    |
+|<span data-ttu-id="36d11-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="36d11-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="36d11-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="36d11-115">Not supported.</span></span>    |
+|<span data-ttu-id="36d11-116">Для приложения</span><span class="sxs-lookup"><span data-stu-id="36d11-116">Application</span></span> | <span data-ttu-id="36d11-117">User. Read. ALL и Граупмембер. Read. ALL, User. Read. ALL и Group. Read. ALL, Directory. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="36d11-117">User.Read.All and GroupMember.Read.All, User.Read.All and Group.Read.All, Directory.Read.All</span></span> |
 
-<span data-ttu-id="4b4c8-118">Используйте приведенные ниже рекомендации по сценариям, чтобы определить, какие типы разрешений следует использовать:</span><span class="sxs-lookup"><span data-stu-id="4b4c8-118">Use the follow scenario guidance to help determine which permission types to use:</span></span>
-- <span data-ttu-id="4b4c8-119">Используйте User. Read и Граупмембер. Read. ALL или User. Read. ALL или User. Read и Group. Read. ALL для получения сведений о членстве в группах для вошедшего пользователя.</span><span class="sxs-lookup"><span data-stu-id="4b4c8-119">Use User.Read and GroupMember.Read.All or User.Read and Group.Read.All permissions to get group memberships for the signed-in user.</span></span>
-- <span data-ttu-id="4b4c8-120">Используйте User. ReadBasic. ALL и Граупмембер. Read. ALL, User. Read. ALL и Граупмембер. Read. ALL, User. ReadBasic. ALL и Group. Read. ALL или User. Read. ALL и Group. Read. ALL, чтобы получить сведения о членстве в группах для любого пользователя.</span><span class="sxs-lookup"><span data-stu-id="4b4c8-120">Use User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All or User.Read.All and Group.Read.All permissions to get group memberships for any user.</span></span>
-- <span data-ttu-id="4b4c8-121">Используйте Граупмембер. Read. ALL или Group. Read. ALL для получения сведений о членстве в группах для группы.</span><span class="sxs-lookup"><span data-stu-id="4b4c8-121">Use GroupMember.Read.All or Group.Read.All permission to get group memberships for a group.</span></span>
-- <span data-ttu-id="4b4c8-122">Используйте Application. ReadWrite. ALL и Граупмембер. Read. ALL или Application. ReadWrite. ALL и Group. Read. ALL для получения сведений о членстве в группах для субъекта-службы.</span><span class="sxs-lookup"><span data-stu-id="4b4c8-122">Use Application.ReadWrite.All and GroupMember.Read.All or Application.ReadWrite.All and Group.Read.All permissions to get group memberships for a service principal.</span></span>
-- <span data-ttu-id="4b4c8-123">Используйте разрешение Directory. Read. ALL для получения сведений о членстве в группах для объекта каталога.</span><span class="sxs-lookup"><span data-stu-id="4b4c8-123">Use Directory.Read.All permission to get group memberships for a directory object.</span></span>
+<span data-ttu-id="36d11-118">Используйте приведенные ниже рекомендации по сценариям, чтобы определить, какие типы разрешений следует использовать:</span><span class="sxs-lookup"><span data-stu-id="36d11-118">Use the follow scenario guidance to help determine which permission types to use:</span></span>
+- <span data-ttu-id="36d11-119">Используйте User. Read и Граупмембер. Read. ALL или User. Read. ALL или User. Read и Group. Read. ALL для получения сведений о членстве в группах для вошедшего пользователя.</span><span class="sxs-lookup"><span data-stu-id="36d11-119">Use User.Read and GroupMember.Read.All or User.Read and Group.Read.All permissions to get group memberships for the signed-in user.</span></span>
+- <span data-ttu-id="36d11-120">Используйте User. ReadBasic. ALL и Граупмембер. Read. ALL, User. Read. ALL и Граупмембер. Read. ALL, User. ReadBasic. ALL и Group. Read. ALL или User. Read. ALL и Group. Read. ALL, чтобы получить сведения о членстве в группах для любого пользователя.</span><span class="sxs-lookup"><span data-stu-id="36d11-120">Use User.ReadBasic.All and GroupMember.Read.All, User.Read.All and GroupMember.Read.All, User.ReadBasic.All and Group.Read.All or User.Read.All and Group.Read.All permissions to get group memberships for any user.</span></span>
+- <span data-ttu-id="36d11-121">Используйте Граупмембер. Read. ALL или Group. Read. ALL для получения сведений о членстве в группах для группы.</span><span class="sxs-lookup"><span data-stu-id="36d11-121">Use GroupMember.Read.All or Group.Read.All permission to get group memberships for a group.</span></span>
+- <span data-ttu-id="36d11-122">Используйте Application. ReadWrite. ALL и Граупмембер. Read. ALL или Application. ReadWrite. ALL и Group. Read. ALL для получения сведений о членстве в группах для субъекта-службы.</span><span class="sxs-lookup"><span data-stu-id="36d11-122">Use Application.ReadWrite.All and GroupMember.Read.All or Application.ReadWrite.All and Group.Read.All permissions to get group memberships for a service principal.</span></span>
+- <span data-ttu-id="36d11-123">Используйте разрешение Directory. Read. ALL для получения сведений о членстве в группах для объекта каталога.</span><span class="sxs-lookup"><span data-stu-id="36d11-123">Use Directory.Read.All permission to get group memberships for a directory object.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="4b4c8-124">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4b4c8-124">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="36d11-124">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="36d11-124">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/checkMemberGroups
@@ -46,29 +46,29 @@ POST /groups/{id}/checkMemberGroups
 POST /servicePrincipals/{id}/checkMemberGroups
 POST /directoryObjects/{id}/checkMemberGroups
 ```
-## <a name="request-headers"></a><span data-ttu-id="4b4c8-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4b4c8-125">Request headers</span></span>
-| <span data-ttu-id="4b4c8-126">Имя</span><span class="sxs-lookup"><span data-stu-id="4b4c8-126">Name</span></span>       | <span data-ttu-id="4b4c8-127">Тип</span><span class="sxs-lookup"><span data-stu-id="4b4c8-127">Type</span></span> | <span data-ttu-id="4b4c8-128">Описание</span><span class="sxs-lookup"><span data-stu-id="4b4c8-128">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="36d11-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="36d11-125">Request headers</span></span>
+| <span data-ttu-id="36d11-126">Имя</span><span class="sxs-lookup"><span data-stu-id="36d11-126">Name</span></span>       | <span data-ttu-id="36d11-127">Тип</span><span class="sxs-lookup"><span data-stu-id="36d11-127">Type</span></span> | <span data-ttu-id="36d11-128">Описание</span><span class="sxs-lookup"><span data-stu-id="36d11-128">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="4b4c8-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="4b4c8-129">Authorization</span></span>  | <span data-ttu-id="4b4c8-130">string</span><span class="sxs-lookup"><span data-stu-id="4b4c8-130">string</span></span>  | <span data-ttu-id="4b4c8-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4b4c8-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="4b4c8-133">Content-Type</span><span class="sxs-lookup"><span data-stu-id="4b4c8-133">Content-Type</span></span>  | <span data-ttu-id="4b4c8-134">application/json</span><span class="sxs-lookup"><span data-stu-id="4b4c8-134">application/json</span></span>  |
+| <span data-ttu-id="36d11-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="36d11-129">Authorization</span></span>  | <span data-ttu-id="36d11-130">string</span><span class="sxs-lookup"><span data-stu-id="36d11-130">string</span></span>  | <span data-ttu-id="36d11-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="36d11-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="36d11-133">Content-Type</span><span class="sxs-lookup"><span data-stu-id="36d11-133">Content-Type</span></span>  | <span data-ttu-id="36d11-134">application/json</span><span class="sxs-lookup"><span data-stu-id="36d11-134">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="4b4c8-135">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="4b4c8-135">Request body</span></span>
-<span data-ttu-id="4b4c8-136">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="4b4c8-136">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="36d11-135">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="36d11-135">Request body</span></span>
+<span data-ttu-id="36d11-136">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="36d11-136">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="4b4c8-137">Параметр</span><span class="sxs-lookup"><span data-stu-id="4b4c8-137">Parameter</span></span>    | <span data-ttu-id="4b4c8-138">Тип</span><span class="sxs-lookup"><span data-stu-id="4b4c8-138">Type</span></span>   |<span data-ttu-id="4b4c8-139">Описание</span><span class="sxs-lookup"><span data-stu-id="4b4c8-139">Description</span></span>|
+| <span data-ttu-id="36d11-137">Параметр</span><span class="sxs-lookup"><span data-stu-id="36d11-137">Parameter</span></span>    | <span data-ttu-id="36d11-138">Тип</span><span class="sxs-lookup"><span data-stu-id="36d11-138">Type</span></span>   |<span data-ttu-id="36d11-139">Описание</span><span class="sxs-lookup"><span data-stu-id="36d11-139">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4b4c8-140">groupIds</span><span class="sxs-lookup"><span data-stu-id="4b4c8-140">groupIds</span></span>|<span data-ttu-id="4b4c8-141">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="4b4c8-141">String collection</span></span> |<span data-ttu-id="4b4c8-p104">Коллекция, содержащая идентификатор объектов групп, членство в которых нужно проверить. Можно указать до 20 групп.</span><span class="sxs-lookup"><span data-stu-id="4b4c8-p104">A collection that contains the object IDs of the groups in which to check membership. Up to 20 groups may be specified.</span></span>|
+|<span data-ttu-id="36d11-140">groupIds</span><span class="sxs-lookup"><span data-stu-id="36d11-140">groupIds</span></span>|<span data-ttu-id="36d11-141">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="36d11-141">String collection</span></span> |<span data-ttu-id="36d11-p104">Коллекция, содержащая идентификатор объектов групп, членство в которых нужно проверить. Можно указать до 20 групп.</span><span class="sxs-lookup"><span data-stu-id="36d11-p104">A collection that contains the object IDs of the groups in which to check membership. Up to 20 groups may be specified.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="4b4c8-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="4b4c8-144">Response</span></span>
+## <a name="response"></a><span data-ttu-id="36d11-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="36d11-144">Response</span></span>
 
-<span data-ttu-id="4b4c8-145">В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции String в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="4b4c8-145">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
+<span data-ttu-id="36d11-145">В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции String в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="36d11-145">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4b4c8-146">Пример</span><span class="sxs-lookup"><span data-stu-id="4b4c8-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="36d11-146">Пример</span><span class="sxs-lookup"><span data-stu-id="36d11-146">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="4b4c8-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="4b4c8-147">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="36d11-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="36d11-147">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="4b4c8-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="4b4c8-148">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="36d11-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="36d11-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_checkmembergroups"
@@ -84,23 +84,27 @@ Content-type: application/json
   ]
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="4b4c8-149">C#</span><span class="sxs-lookup"><span data-stu-id="4b4c8-149">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="36d11-149">C#</span><span class="sxs-lookup"><span data-stu-id="36d11-149">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-checkmembergroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="4b4c8-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="4b4c8-150">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="36d11-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="36d11-150">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/directoryobject-checkmembergroups-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="4b4c8-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="4b4c8-151">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="36d11-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="36d11-151">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-checkmembergroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="36d11-152">Java</span><span class="sxs-lookup"><span data-stu-id="36d11-152">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/directoryobject-checkmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="4b4c8-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="4b4c8-152">Response</span></span>
-<span data-ttu-id="4b4c8-p105">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="4b4c8-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="36d11-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="36d11-153">Response</span></span>
+<span data-ttu-id="36d11-p105">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="36d11-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
