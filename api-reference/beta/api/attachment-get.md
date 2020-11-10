@@ -5,67 +5,67 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: 03490de22ff54f010d725fd17caef619f381911f
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 03fbf8152d12cc451d1dcc0592909a6e594ce1b9
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372469"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961688"
 ---
-# <a name="get-attachment"></a><span data-ttu-id="61a59-103">Получение вложения</span><span class="sxs-lookup"><span data-stu-id="61a59-103">Get attachment</span></span>
+# <a name="get-attachment"></a><span data-ttu-id="fdcca-103">Получение вложения</span><span class="sxs-lookup"><span data-stu-id="fdcca-103">Get attachment</span></span>
 
-<span data-ttu-id="61a59-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="61a59-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="fdcca-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="fdcca-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
-<span data-ttu-id="61a59-105">Чтение свойств, связей или необработанного содержимого вложения, вложенного в пользовательское [событие](../resources/event.md), [сообщение](../resources/message.md), [задачу Outlook](../resources/outlooktask.md)или [POST](../resources/post.md).</span><span class="sxs-lookup"><span data-stu-id="61a59-105">Read the properties, relationships, or raw contents of an attachment, attached to a user [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).</span></span>
+<span data-ttu-id="fdcca-105">Чтение свойств, связей или необработанного содержимого вложения, вложенного в пользовательское [событие](../resources/event.md), [сообщение](../resources/message.md), [задачу Outlook](../resources/outlooktask.md)или [POST](../resources/post.md).</span><span class="sxs-lookup"><span data-stu-id="fdcca-105">Read the properties, relationships, or raw contents of an attachment, attached to a user [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).</span></span>
 
-<span data-ttu-id="61a59-106">Допустимые типы вложений:</span><span class="sxs-lookup"><span data-stu-id="61a59-106">An attachment can be one of the following types:</span></span>
+<span data-ttu-id="fdcca-106">Допустимые типы вложений:</span><span class="sxs-lookup"><span data-stu-id="fdcca-106">An attachment can be one of the following types:</span></span>
 
-* <span data-ttu-id="61a59-107">файл (ресурс [fileAttachment](../resources/fileattachment.md));</span><span class="sxs-lookup"><span data-stu-id="61a59-107">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
-* <span data-ttu-id="61a59-108">элемент (контакт, событие или сообщение, представленные ресурсом [itemAttachment](../resources/itemattachment.md));</span><span class="sxs-lookup"><span data-stu-id="61a59-108">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span> <span data-ttu-id="61a59-109">Вы можете использовать `$expand` для получения других свойств этого элемента.</span><span class="sxs-lookup"><span data-stu-id="61a59-109">You can use `$expand` to further get the properties of that item.</span></span> <span data-ttu-id="61a59-110">См. [пример](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message).</span><span class="sxs-lookup"><span data-stu-id="61a59-110">See an [example](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message).</span></span>
-* <span data-ttu-id="61a59-111">ссылка на файл (ресурс [referenceAttachment](../resources/referenceattachment.md)).</span><span class="sxs-lookup"><span data-stu-id="61a59-111">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
+* <span data-ttu-id="fdcca-107">файл (ресурс [fileAttachment](../resources/fileattachment.md));</span><span class="sxs-lookup"><span data-stu-id="fdcca-107">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
+* <span data-ttu-id="fdcca-108">элемент (контакт, событие или сообщение, представленные ресурсом [itemAttachment](../resources/itemattachment.md));</span><span class="sxs-lookup"><span data-stu-id="fdcca-108">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span> <span data-ttu-id="fdcca-109">Вы можете использовать `$expand` для получения других свойств этого элемента.</span><span class="sxs-lookup"><span data-stu-id="fdcca-109">You can use `$expand` to further get the properties of that item.</span></span> <span data-ttu-id="fdcca-110">См. [пример](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message).</span><span class="sxs-lookup"><span data-stu-id="fdcca-110">See an [example](#example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message).</span></span>
+* <span data-ttu-id="fdcca-111">ссылка на файл (ресурс [referenceAttachment](../resources/referenceattachment.md)).</span><span class="sxs-lookup"><span data-stu-id="fdcca-111">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
 
-<span data-ttu-id="61a59-112">Все эти типы ресурсов вложений являются производными от ресурса [attachment](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="61a59-112">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span>
+<span data-ttu-id="fdcca-112">Все эти типы ресурсов вложений являются производными от ресурса [attachment](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="fdcca-112">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span>
 
-### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a><span data-ttu-id="61a59-113">Получение необработанного содержимого вложенного файла или элемента</span><span class="sxs-lookup"><span data-stu-id="61a59-113">Get the raw contents of a file or item attachment</span></span>
-<span data-ttu-id="61a59-114">Чтобы получить необработанное содержимое вложенного файла или элемента, вы можете добавить сегмент пути `/$value`.</span><span class="sxs-lookup"><span data-stu-id="61a59-114">You can append the path segment `/$value` to get the raw contents of a file or item attachment.</span></span> 
+### <a name="get-the-raw-contents-of-a-file-or-item-attachment"></a><span data-ttu-id="fdcca-113">Получение необработанного содержимого вложенного файла или элемента</span><span class="sxs-lookup"><span data-stu-id="fdcca-113">Get the raw contents of a file or item attachment</span></span>
+<span data-ttu-id="fdcca-114">Чтобы получить необработанное содержимое вложенного файла или элемента, вы можете добавить сегмент пути `/$value`.</span><span class="sxs-lookup"><span data-stu-id="fdcca-114">You can append the path segment `/$value` to get the raw contents of a file or item attachment.</span></span> 
 
-<span data-ttu-id="61a59-115">Для вложенного файла тип содержимого определяется исходя из его исходного типа.</span><span class="sxs-lookup"><span data-stu-id="61a59-115">For a file attachment, the content type is based on its original content type.</span></span> <span data-ttu-id="61a59-116">См. [пример](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) ниже.</span><span class="sxs-lookup"><span data-stu-id="61a59-116">See an [example](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) below.</span></span>
+<span data-ttu-id="fdcca-115">Для вложенного файла тип содержимого определяется исходя из его исходного типа.</span><span class="sxs-lookup"><span data-stu-id="fdcca-115">For a file attachment, the content type is based on its original content type.</span></span> <span data-ttu-id="fdcca-116">См. [пример](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) ниже.</span><span class="sxs-lookup"><span data-stu-id="fdcca-116">See an [example](#example-5-get-the-raw-contents-of-a-file-attachment-on-a-message) below.</span></span>
 
-<span data-ttu-id="61a59-117">Для вложенного элемента, которое является [контактом ](../resources/contact.md), [событием ](../resources/event.md) и [сообщением](../resources/message.md), возвращаемое необработанное содержимое будет иметь формат MIME.</span><span class="sxs-lookup"><span data-stu-id="61a59-117">For an item attachment that is a [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md), the raw contents returned is in MIME format.</span></span>
+<span data-ttu-id="fdcca-117">Для вложенного элемента, которое является [контактом ](../resources/contact.md), [событием ](../resources/event.md) и [сообщением](../resources/message.md), возвращаемое необработанное содержимое будет иметь формат MIME.</span><span class="sxs-lookup"><span data-stu-id="fdcca-117">For an item attachment that is a [contact](../resources/contact.md), [event](../resources/event.md), or [message](../resources/message.md), the raw contents returned is in MIME format.</span></span>
 
-| <span data-ttu-id="61a59-118">тип вложенного элемента</span><span class="sxs-lookup"><span data-stu-id="61a59-118">Item attachment type</span></span>  | <span data-ttu-id="61a59-119">Возвращаемое необработанное содержимое</span><span class="sxs-lookup"><span data-stu-id="61a59-119">Raw contents returned</span></span> |
+| <span data-ttu-id="fdcca-118">тип вложенного элемента</span><span class="sxs-lookup"><span data-stu-id="fdcca-118">Item attachment type</span></span>  | <span data-ttu-id="fdcca-119">Возвращаемое необработанное содержимое</span><span class="sxs-lookup"><span data-stu-id="fdcca-119">Raw contents returned</span></span> |
 |:-----------|:----------|
-| <span data-ttu-id="61a59-120">**контакт**</span><span class="sxs-lookup"><span data-stu-id="61a59-120">**contact**</span></span> | <span data-ttu-id="61a59-121">[vCard](http://www.faqs.org/rfcs/rfc2426.html) в формате MIME.</span><span class="sxs-lookup"><span data-stu-id="61a59-121">[vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME format.</span></span> <span data-ttu-id="61a59-122">См. [пример](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message).</span><span class="sxs-lookup"><span data-stu-id="61a59-122">See [example](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message).</span></span> |
-| <span data-ttu-id="61a59-123">**событие**</span><span class="sxs-lookup"><span data-stu-id="61a59-123">**event**</span></span> | <span data-ttu-id="61a59-124">iCal в формате MIME.</span><span class="sxs-lookup"><span data-stu-id="61a59-124">iCal MIME format.</span></span> <span data-ttu-id="61a59-125">См. [пример](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message).</span><span class="sxs-lookup"><span data-stu-id="61a59-125">See [example](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message).</span></span> |
-| <span data-ttu-id="61a59-126">**сообщение**</span><span class="sxs-lookup"><span data-stu-id="61a59-126">**message**</span></span> | <span data-ttu-id="61a59-127">Формат MIME.</span><span class="sxs-lookup"><span data-stu-id="61a59-127">MIME format.</span></span> <span data-ttu-id="61a59-128">См. [пример](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message).</span><span class="sxs-lookup"><span data-stu-id="61a59-128">See [example](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message).</span></span> |
+| <span data-ttu-id="fdcca-120">**контакт**</span><span class="sxs-lookup"><span data-stu-id="fdcca-120">**contact**</span></span> | <span data-ttu-id="fdcca-121">[vCard](http://www.faqs.org/rfcs/rfc2426.html) в формате MIME.</span><span class="sxs-lookup"><span data-stu-id="fdcca-121">[vCard](http://www.faqs.org/rfcs/rfc2426.html) MIME format.</span></span> <span data-ttu-id="fdcca-122">См. [пример](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message).</span><span class="sxs-lookup"><span data-stu-id="fdcca-122">See [example](#example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message).</span></span> |
+| <span data-ttu-id="fdcca-123">**событие**</span><span class="sxs-lookup"><span data-stu-id="fdcca-123">**event**</span></span> | <span data-ttu-id="fdcca-124">iCal в формате MIME.</span><span class="sxs-lookup"><span data-stu-id="fdcca-124">iCal MIME format.</span></span> <span data-ttu-id="fdcca-125">См. [пример](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message).</span><span class="sxs-lookup"><span data-stu-id="fdcca-125">See [example](#example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message).</span></span> |
+| <span data-ttu-id="fdcca-126">**сообщение**</span><span class="sxs-lookup"><span data-stu-id="fdcca-126">**message**</span></span> | <span data-ttu-id="fdcca-127">Формат MIME.</span><span class="sxs-lookup"><span data-stu-id="fdcca-127">MIME format.</span></span> <span data-ttu-id="fdcca-128">См. [пример](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message).</span><span class="sxs-lookup"><span data-stu-id="fdcca-128">See [example](#example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message).</span></span> |
 
-<span data-ttu-id="61a59-129">При попытке получить `$value` вложенной ссылки происходит возврат HTTP 405.</span><span class="sxs-lookup"><span data-stu-id="61a59-129">Attempting to get the `$value` of a reference attachment returns HTTP 405.</span></span>
+<span data-ttu-id="fdcca-129">При попытке получить `$value` вложенной ссылки происходит возврат HTTP 405.</span><span class="sxs-lookup"><span data-stu-id="fdcca-129">Attempting to get the `$value` of a reference attachment returns HTTP 405.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="61a59-130">Разрешения</span><span class="sxs-lookup"><span data-stu-id="61a59-130">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="fdcca-130">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fdcca-130">Permissions</span></span>
 
-<span data-ttu-id="61a59-p106">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="61a59-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fdcca-p106">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fdcca-p106">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-* <span data-ttu-id="61a59-133">При доступе к вложениям в сообщениях: mail. Read</span><span class="sxs-lookup"><span data-stu-id="61a59-133">If accessing attachments in messages: Mail.Read</span></span>
-* <span data-ttu-id="61a59-134">При доступе к вложениям в событиях: Calendars. Read</span><span class="sxs-lookup"><span data-stu-id="61a59-134">If accessing attachments in events: Calendars.Read</span></span>
-* <span data-ttu-id="61a59-135">При доступе к вложениям в задачах Outlook: Tasks. Read</span><span class="sxs-lookup"><span data-stu-id="61a59-135">If accessing attachments in Outlook tasks: Tasks.Read</span></span>
-* <span data-ttu-id="61a59-136">При доступе к вложениям в записях групп: Group. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="61a59-136">If accessing attachments in group posts: Group.Read.All</span></span>
+* <span data-ttu-id="fdcca-133">При доступе к вложениям в сообщениях: mail. Read</span><span class="sxs-lookup"><span data-stu-id="fdcca-133">If accessing attachments in messages: Mail.Read</span></span>
+* <span data-ttu-id="fdcca-134">При доступе к вложениям в событиях: Calendars. Read</span><span class="sxs-lookup"><span data-stu-id="fdcca-134">If accessing attachments in events: Calendars.Read</span></span>
+* <span data-ttu-id="fdcca-135">При доступе к вложениям в задачах Outlook: Tasks. Read</span><span class="sxs-lookup"><span data-stu-id="fdcca-135">If accessing attachments in Outlook tasks: Tasks.Read</span></span>
+* <span data-ttu-id="fdcca-136">При доступе к вложениям в записях групп: Group. Read. ALL</span><span class="sxs-lookup"><span data-stu-id="fdcca-136">If accessing attachments in group posts: Group.Read.All</span></span>
 
 <!--
 * If accessing attachments in group events or posts: Group.Read.All
 -->
 
-## <a name="http-request"></a><span data-ttu-id="61a59-137">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="61a59-137">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fdcca-137">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fdcca-137">HTTP request</span></span>
 
-<span data-ttu-id="61a59-138">В этом разделе показан синтаксис HTTP-запроса GET для каждого из сущностей ([event](../resources/event.md), [Message](../resources/message.md), [Task Task](../resources/outlooktask.md)и [POST](../resources/post.md)), поддерживающих вложения:</span><span class="sxs-lookup"><span data-stu-id="61a59-138">This section shows the HTTP GET request syntax for each of the entities ([event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), and [post](../resources/post.md)) that support attachments:</span></span>
+<span data-ttu-id="fdcca-138">В этом разделе показан синтаксис HTTP-запроса GET для каждого из сущностей ([event](../resources/event.md), [Message](../resources/message.md), [Task Task](../resources/outlooktask.md)и [POST](../resources/post.md)), поддерживающих вложения:</span><span class="sxs-lookup"><span data-stu-id="fdcca-138">This section shows the HTTP GET request syntax for each of the entities ([event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), and [post](../resources/post.md)) that support attachments:</span></span>
 
-- <span data-ttu-id="61a59-139">Чтобы получить свойства и связи вложения, укажите идентификатор вложения для индексирования в коллекции **вложений** , прикрепленных к указанному [событию](../resources/event.md), [сообщению](../resources/message.md), [задаче Outlook](../resources/outlooktask.md)или экземпляру [POST](../resources/post.md) .</span><span class="sxs-lookup"><span data-stu-id="61a59-139">To get the properties and relationships of an attachment, specify the attachment ID to index into the **attachments** collection, attached to the specified [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md) instance.</span></span>
-- <span data-ttu-id="61a59-140">Если вложением является файл или элемент Outlook (контакт, событие или сообщение), вы можете также получить необработанное содержимое вложения, добавив сегмент пути `/$value` в URL-адрес запроса.</span><span class="sxs-lookup"><span data-stu-id="61a59-140">If the attachment is a file or Outlook item (contact, event, or message), you can further get the raw contents of the attachment by appending the path segment `/$value` to the request URL.</span></span>
+- <span data-ttu-id="fdcca-139">Чтобы получить свойства и связи вложения, укажите идентификатор вложения для индексирования в коллекции **вложений** , прикрепленных к указанному [событию](../resources/event.md), [сообщению](../resources/message.md), [задаче Outlook](../resources/outlooktask.md)или экземпляру [POST](../resources/post.md) .</span><span class="sxs-lookup"><span data-stu-id="fdcca-139">To get the properties and relationships of an attachment, specify the attachment ID to index into the **attachments** collection, attached to the specified [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md) instance.</span></span>
+- <span data-ttu-id="fdcca-140">Если вложением является файл или элемент Outlook (контакт, событие или сообщение), вы можете также получить необработанное содержимое вложения, добавив сегмент пути `/$value` в URL-адрес запроса.</span><span class="sxs-lookup"><span data-stu-id="fdcca-140">If the attachment is a file or Outlook item (contact, event, or message), you can further get the raw contents of the attachment by appending the path segment `/$value` to the request URL.</span></span>
 
-<span data-ttu-id="61a59-141">Вложение [события](../resources/event.md):</span><span class="sxs-lookup"><span data-stu-id="61a59-141">An attachment of an [event](../resources/event.md):</span></span>
+<span data-ttu-id="fdcca-141">Вложение [события](../resources/event.md):</span><span class="sxs-lookup"><span data-stu-id="fdcca-141">An attachment of an [event](../resources/event.md):</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -80,7 +80,7 @@ GET /users/{id | userPrincipalName}/events/{id}/attachments/{id}/$value
 GET /groups/{id}/events/{id}/attachments/{id}
 -->
 
-<span data-ttu-id="61a59-142">Вложение [сообщения](../resources/message.md) в почтовый ящик пользователя:</span><span class="sxs-lookup"><span data-stu-id="61a59-142">An attachment of a [message](../resources/message.md) in a user's mailbox:</span></span>
+<span data-ttu-id="fdcca-142">Вложение [сообщения](../resources/message.md) в почтовый ящик пользователя:</span><span class="sxs-lookup"><span data-stu-id="fdcca-142">An attachment of a [message](../resources/message.md) in a user's mailbox:</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -90,7 +90,7 @@ GET /me/messages/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/messages/{id}/attachments/{id}/$value
 ```
 
-<span data-ttu-id="61a59-143">Вложение [сообщения](../resources/message.md) , содержащегося на верхнем уровне [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя:</span><span class="sxs-lookup"><span data-stu-id="61a59-143">An attachment of a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox:</span></span>
+<span data-ttu-id="fdcca-143">Вложение [сообщения](../resources/message.md) , содержащегося на верхнем уровне [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя:</span><span class="sxs-lookup"><span data-stu-id="fdcca-143">An attachment of a [message](../resources/message.md) contained in a top level [mailFolder](../resources/mailfolder.md) in a user's mailbox:</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -100,7 +100,7 @@ GET /me/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-<span data-ttu-id="61a59-144">Вложение [сообщения](../resources/message.md) , содержащегося в дочерней папке [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя:</span><span class="sxs-lookup"><span data-stu-id="61a59-144">An attachment of a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox:</span></span>
+<span data-ttu-id="fdcca-144">Вложение [сообщения](../resources/message.md) , содержащегося в дочерней папке [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя:</span><span class="sxs-lookup"><span data-stu-id="fdcca-144">An attachment of a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox:</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -110,9 +110,9 @@ GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}/$v
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}/$value
 ```
 
-<span data-ttu-id="61a59-145">В предыдущем примере показан один уровень вложенности, но сообщение может находиться в дочернем элементе дочернего элемента и т. д.</span><span class="sxs-lookup"><span data-stu-id="61a59-145">The preceding example shows one level of nesting, but a message can be located in a child of a child and so on.</span></span>
+<span data-ttu-id="fdcca-145">В предыдущем примере показан один уровень вложенности, но сообщение может находиться в дочернем элементе дочернего элемента и т. д.</span><span class="sxs-lookup"><span data-stu-id="fdcca-145">The preceding example shows one level of nesting, but a message can be located in a child of a child and so on.</span></span>
 
-<span data-ttu-id="61a59-146">Вложение [задачи Outlook](../resources/outlooktask.md):</span><span class="sxs-lookup"><span data-stu-id="61a59-146">An attachment of an [Outlook task](../resources/outlooktask.md):</span></span>
+<span data-ttu-id="fdcca-146">Вложение [задачи Outlook](../resources/outlooktask.md):</span><span class="sxs-lookup"><span data-stu-id="fdcca-146">An attachment of an [Outlook task](../resources/outlooktask.md):</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -122,7 +122,7 @@ GET /me/outlook/tasks/{id}/attachments/{id}/$value
 GET /users/{id}/outlook/tasks/{id}/attachments/{id}/$value
 ```
 
-<span data-ttu-id="61a59-147">Вложение [записи](../resources/post.md) в [поток](../resources/conversationthread.md) , принадлежащее [беседе](../resources/conversation.md) группы:</span><span class="sxs-lookup"><span data-stu-id="61a59-147">An attachment of a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group:</span></span>
+<span data-ttu-id="fdcca-147">Вложение [записи](../resources/post.md) в [поток](../resources/conversationthread.md) , принадлежащее [беседе](../resources/conversation.md) группы:</span><span class="sxs-lookup"><span data-stu-id="fdcca-147">An attachment of a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) belonging to a [conversation](../resources/conversation.md) of a group:</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -132,38 +132,38 @@ GET /groups/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$value
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="61a59-148">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="61a59-148">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="fdcca-148">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="fdcca-148">Optional query parameters</span></span>
 
-<span data-ttu-id="61a59-149">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="61a59-149">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="fdcca-149">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="fdcca-149">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="61a59-150">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="61a59-150">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="fdcca-150">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fdcca-150">Request headers</span></span>
 
-| <span data-ttu-id="61a59-151">Имя</span><span class="sxs-lookup"><span data-stu-id="61a59-151">Name</span></span>       | <span data-ttu-id="61a59-152">Тип</span><span class="sxs-lookup"><span data-stu-id="61a59-152">Type</span></span> | <span data-ttu-id="61a59-153">Описание</span><span class="sxs-lookup"><span data-stu-id="61a59-153">Description</span></span>|
+| <span data-ttu-id="fdcca-151">Имя</span><span class="sxs-lookup"><span data-stu-id="fdcca-151">Name</span></span>       | <span data-ttu-id="fdcca-152">Тип</span><span class="sxs-lookup"><span data-stu-id="fdcca-152">Type</span></span> | <span data-ttu-id="fdcca-153">Описание</span><span class="sxs-lookup"><span data-stu-id="fdcca-153">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="61a59-154">Authorization</span><span class="sxs-lookup"><span data-stu-id="61a59-154">Authorization</span></span>  | <span data-ttu-id="61a59-155">string</span><span class="sxs-lookup"><span data-stu-id="61a59-155">string</span></span>  | <span data-ttu-id="61a59-p107">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="61a59-p107">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="fdcca-154">Authorization</span><span class="sxs-lookup"><span data-stu-id="fdcca-154">Authorization</span></span>  | <span data-ttu-id="fdcca-155">string</span><span class="sxs-lookup"><span data-stu-id="fdcca-155">string</span></span>  | <span data-ttu-id="fdcca-p107">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fdcca-p107">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="61a59-158">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="61a59-158">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="fdcca-158">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="fdcca-158">Request body</span></span>
 
-<span data-ttu-id="61a59-159">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="61a59-159">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="fdcca-159">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="fdcca-159">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="61a59-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="61a59-160">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fdcca-160">Отклик</span><span class="sxs-lookup"><span data-stu-id="fdcca-160">Response</span></span>
 
-<span data-ttu-id="61a59-161">В случае успешного выполнения метод GET возвращает `200 OK` код отклика.</span><span class="sxs-lookup"><span data-stu-id="61a59-161">If successful, the GET method returns a `200 OK` response code.</span></span> 
+<span data-ttu-id="fdcca-161">В случае успешного выполнения метод GET возвращает `200 OK` код отклика.</span><span class="sxs-lookup"><span data-stu-id="fdcca-161">If successful, the GET method returns a `200 OK` response code.</span></span> 
 
-<span data-ttu-id="61a59-162">При получении свойств и связей вложения текст ответа включает объект [attachment](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="61a59-162">If you're getting the properties and relationships of an attachment, the response body includes an [attachment](../resources/attachment.md) object.</span></span>
-<span data-ttu-id="61a59-163">Кроме того, возвращаются свойства этого типа вложения: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) или [referenceAttachment](../resources/referenceattachment.md).</span><span class="sxs-lookup"><span data-stu-id="61a59-163">The properties of that type of attachment are returned: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md), or [referenceAttachment](../resources/referenceattachment.md).</span></span>
+<span data-ttu-id="fdcca-162">При получении свойств и связей вложения текст ответа включает объект [attachment](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="fdcca-162">If you're getting the properties and relationships of an attachment, the response body includes an [attachment](../resources/attachment.md) object.</span></span>
+<span data-ttu-id="fdcca-163">Кроме того, возвращаются свойства этого типа вложения: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md) или [referenceAttachment](../resources/referenceattachment.md).</span><span class="sxs-lookup"><span data-stu-id="fdcca-163">The properties of that type of attachment are returned: [fileAttachment](../resources/fileattachment.md), [itemAttachment](../resources/itemattachment.md), or [referenceAttachment](../resources/referenceattachment.md).</span></span>
 
-<span data-ttu-id="61a59-164">При получении необработанного содержимого вложенного файла или элемента, текст ответа содержит необработанное значение вложения.</span><span class="sxs-lookup"><span data-stu-id="61a59-164">If you're getting the raw contents of a file or item attachment, the response body includes the raw value of the attachment.</span></span>
+<span data-ttu-id="fdcca-164">При получении необработанного содержимого вложенного файла или элемента, текст ответа содержит необработанное значение вложения.</span><span class="sxs-lookup"><span data-stu-id="fdcca-164">If you're getting the raw contents of a file or item attachment, the response body includes the raw value of the attachment.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="61a59-165">Примеры</span><span class="sxs-lookup"><span data-stu-id="61a59-165">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="fdcca-165">Примеры</span><span class="sxs-lookup"><span data-stu-id="fdcca-165">Examples</span></span>
 
-### <a name="example-1-get-the-properties-of-a-file-attachment"></a><span data-ttu-id="61a59-166">Пример 1. Получение свойств вложенного файла</span><span class="sxs-lookup"><span data-stu-id="61a59-166">Example 1: Get the properties of a file attachment</span></span>
+### <a name="example-1-get-the-properties-of-a-file-attachment"></a><span data-ttu-id="fdcca-166">Пример 1. Получение свойств вложенного файла</span><span class="sxs-lookup"><span data-stu-id="fdcca-166">Example 1: Get the properties of a file attachment</span></span>
 
-#### <a name="request"></a><span data-ttu-id="61a59-167">Запрос</span><span class="sxs-lookup"><span data-stu-id="61a59-167">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="fdcca-167">Запрос</span><span class="sxs-lookup"><span data-stu-id="fdcca-167">Request</span></span>
 
-<span data-ttu-id="61a59-168">Ниже приведен пример запроса на получение свойств вложенного файла сообщения.</span><span class="sxs-lookup"><span data-stu-id="61a59-168">Here is an example of the request to get the properties of a file attachment on a message.</span></span>
+<span data-ttu-id="fdcca-168">Ниже приведен пример запроса на получение свойств вложенного файла сообщения.</span><span class="sxs-lookup"><span data-stu-id="fdcca-168">Here is an example of the request to get the properties of a file attachment on a message.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="61a59-169">HTTP</span><span class="sxs-lookup"><span data-stu-id="61a59-169">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="fdcca-169">HTTP</span><span class="sxs-lookup"><span data-stu-id="fdcca-169">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_file_attachment_beta",
@@ -173,24 +173,28 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}/$va
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=
 ```
-# <a name="c"></a>[<span data-ttu-id="61a59-170">C#</span><span class="sxs-lookup"><span data-stu-id="61a59-170">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="fdcca-170">C#</span><span class="sxs-lookup"><span data-stu-id="fdcca-170">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-file-attachment-beta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="61a59-171">JavaScript</span><span class="sxs-lookup"><span data-stu-id="61a59-171">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="fdcca-171">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fdcca-171">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-file-attachment-beta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="61a59-172">Objective-C</span><span class="sxs-lookup"><span data-stu-id="61a59-172">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="fdcca-172">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fdcca-172">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-file-attachment-beta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="fdcca-173">Java</span><span class="sxs-lookup"><span data-stu-id="fdcca-173">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-file-attachment-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="61a59-173">Отклик</span><span class="sxs-lookup"><span data-stu-id="61a59-173">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="fdcca-174">Отклик</span><span class="sxs-lookup"><span data-stu-id="fdcca-174">Response</span></span>
 
-<span data-ttu-id="61a59-p109">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="61a59-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="fdcca-p109">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fdcca-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_file_attachment_beta",
@@ -217,13 +221,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-properties-of-an-item-attachment"></a><span data-ttu-id="61a59-177">Пример 2. Получение свойств вложенного элемента</span><span class="sxs-lookup"><span data-stu-id="61a59-177">Example 2: Get the properties of an item attachment</span></span>
+### <a name="example-2-get-the-properties-of-an-item-attachment"></a><span data-ttu-id="fdcca-178">Пример 2. Получение свойств вложенного элемента</span><span class="sxs-lookup"><span data-stu-id="fdcca-178">Example 2: Get the properties of an item attachment</span></span>
 
-#### <a name="request"></a><span data-ttu-id="61a59-178">Запрос</span><span class="sxs-lookup"><span data-stu-id="61a59-178">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="fdcca-179">Запрос</span><span class="sxs-lookup"><span data-stu-id="fdcca-179">Request</span></span>
 
-<span data-ttu-id="61a59-179">В следующем примере показано, как получить вложенный элемент в сообщении.</span><span class="sxs-lookup"><span data-stu-id="61a59-179">The next example shows how to get an item attachment on a message.</span></span> <span data-ttu-id="61a59-180">Возвращаются свойства **itemAttachment**.</span><span class="sxs-lookup"><span data-stu-id="61a59-180">The properties of the **itemAttachment** are returned.</span></span>
+<span data-ttu-id="fdcca-180">В следующем примере показано, как получить вложенный элемент в сообщении.</span><span class="sxs-lookup"><span data-stu-id="fdcca-180">The next example shows how to get an item attachment on a message.</span></span> <span data-ttu-id="fdcca-181">Возвращаются свойства **itemAttachment**.</span><span class="sxs-lookup"><span data-stu-id="fdcca-181">The properties of the **itemAttachment** are returned.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="61a59-181">HTTP</span><span class="sxs-lookup"><span data-stu-id="61a59-181">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="fdcca-182">HTTP</span><span class="sxs-lookup"><span data-stu-id="fdcca-182">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_item_attachment",
@@ -233,23 +237,27 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')
 ```
-# <a name="c"></a>[<span data-ttu-id="61a59-182">C#</span><span class="sxs-lookup"><span data-stu-id="61a59-182">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="fdcca-183">C#</span><span class="sxs-lookup"><span data-stu-id="fdcca-183">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="61a59-183">JavaScript</span><span class="sxs-lookup"><span data-stu-id="61a59-183">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="fdcca-184">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fdcca-184">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-item-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="61a59-184">Objective-C</span><span class="sxs-lookup"><span data-stu-id="61a59-184">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="fdcca-185">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fdcca-185">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-attachment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="fdcca-186">Java</span><span class="sxs-lookup"><span data-stu-id="fdcca-186">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-item-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="61a59-185">Отклик</span><span class="sxs-lookup"><span data-stu-id="61a59-185">Response</span></span>
-<span data-ttu-id="61a59-p111">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="61a59-p111">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="fdcca-187">Отклик</span><span class="sxs-lookup"><span data-stu-id="fdcca-187">Response</span></span>
+<span data-ttu-id="fdcca-p111">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fdcca-p111">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_item_attachment",
@@ -273,12 +281,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message"></a><span data-ttu-id="61a59-189">Пример 3. Развертывание и изменение свойств элемента, вложенного в сообщение</span><span class="sxs-lookup"><span data-stu-id="61a59-189">Example 3: Expand and get the properties of the item attached to a message</span></span>
-#### <a name="request"></a><span data-ttu-id="61a59-190">Запрос</span><span class="sxs-lookup"><span data-stu-id="61a59-190">Request</span></span>
+### <a name="example-3-expand-and-get-the-properties-of-the-item-attached-to-a-message"></a><span data-ttu-id="fdcca-191">Пример 3. Развертывание и изменение свойств элемента, вложенного в сообщение</span><span class="sxs-lookup"><span data-stu-id="fdcca-191">Example 3: Expand and get the properties of the item attached to a message</span></span>
+#### <a name="request"></a><span data-ttu-id="fdcca-192">Запрос</span><span class="sxs-lookup"><span data-stu-id="fdcca-192">Request</span></span>
 
-<span data-ttu-id="61a59-191">В следующем примере показано, как использовать `$expand` для получения свойств элемента (контакт, событие или сообщение), вложенного в сообщение.</span><span class="sxs-lookup"><span data-stu-id="61a59-191">The next example shows how to use `$expand` to get the properties of the item (contact, event, or message) that is attached to the message.</span></span> <span data-ttu-id="61a59-192">В этом примере вложением является сообщением. Свойства вложенного сообщения также возвращаются.</span><span class="sxs-lookup"><span data-stu-id="61a59-192">In this example, that item is a message; the properties of that attached message are also returned.</span></span>
+<span data-ttu-id="fdcca-193">В следующем примере показано, как использовать `$expand` для получения свойств элемента (контакт, событие или сообщение), вложенного в сообщение.</span><span class="sxs-lookup"><span data-stu-id="fdcca-193">The next example shows how to use `$expand` to get the properties of the item (contact, event, or message) that is attached to the message.</span></span> <span data-ttu-id="fdcca-194">В этом примере вложением является сообщением. Свойства вложенного сообщения также возвращаются.</span><span class="sxs-lookup"><span data-stu-id="fdcca-194">In this example, that item is a message; the properties of that attached message are also returned.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="61a59-193">HTTP</span><span class="sxs-lookup"><span data-stu-id="61a59-193">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="fdcca-195">HTTP</span><span class="sxs-lookup"><span data-stu-id="fdcca-195">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_and_expand_item_attachment",
@@ -288,23 +296,27 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/messages('AAMkADA1M-zAAA=')/attachments('AAMkADA1M-CJKtzmnlcqVgqI=')/?$expand=microsoft.graph.itemattachment/item
 ```
-# <a name="c"></a>[<span data-ttu-id="61a59-194">C#</span><span class="sxs-lookup"><span data-stu-id="61a59-194">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="fdcca-196">C#</span><span class="sxs-lookup"><span data-stu-id="fdcca-196">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-and-expand-item-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="61a59-195">JavaScript</span><span class="sxs-lookup"><span data-stu-id="61a59-195">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="fdcca-197">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fdcca-197">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-and-expand-item-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="61a59-196">Objective-C</span><span class="sxs-lookup"><span data-stu-id="61a59-196">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="fdcca-198">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fdcca-198">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-and-expand-item-attachment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="fdcca-199">Java</span><span class="sxs-lookup"><span data-stu-id="fdcca-199">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-and-expand-item-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="61a59-197">Отклик</span><span class="sxs-lookup"><span data-stu-id="61a59-197">Response</span></span>
-<span data-ttu-id="61a59-p113">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="61a59-p113">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="fdcca-200">Отклик</span><span class="sxs-lookup"><span data-stu-id="fdcca-200">Response</span></span>
+<span data-ttu-id="fdcca-p113">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fdcca-p113">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_and_expand_item_attachment",
@@ -383,13 +395,13 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-4-get-the-properties-of-a-reference-attachment"></a><span data-ttu-id="61a59-201">Пример 4. Получение свойств вложенной ссылки</span><span class="sxs-lookup"><span data-stu-id="61a59-201">Example 4: Get the properties of a reference attachment</span></span>
+### <a name="example-4-get-the-properties-of-a-reference-attachment"></a><span data-ttu-id="fdcca-204">Пример 4. Получение свойств вложенной ссылки</span><span class="sxs-lookup"><span data-stu-id="fdcca-204">Example 4: Get the properties of a reference attachment</span></span>
 
-#### <a name="request"></a><span data-ttu-id="61a59-202">Запрос</span><span class="sxs-lookup"><span data-stu-id="61a59-202">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="fdcca-205">Запрос</span><span class="sxs-lookup"><span data-stu-id="fdcca-205">Request</span></span>
 
-<span data-ttu-id="61a59-203">Ниже приведен пример запроса на получение вложенной ссылки из данных, касающихся события.</span><span class="sxs-lookup"><span data-stu-id="61a59-203">Here is an example of the request to get a reference attachment on an event.</span></span>
+<span data-ttu-id="fdcca-206">Ниже приведен пример запроса на получение вложенной ссылки из данных, касающихся события.</span><span class="sxs-lookup"><span data-stu-id="fdcca-206">Here is an example of the request to get a reference attachment on an event.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="61a59-204">HTTP</span><span class="sxs-lookup"><span data-stu-id="61a59-204">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="fdcca-207">HTTP</span><span class="sxs-lookup"><span data-stu-id="fdcca-207">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_reference_attachment",
@@ -399,23 +411,27 @@ Content-type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/events/AAMkAGE1M88AADUv0uAAAG=/attachments/AAMkAGE1Mg72tgf7hJp0PICVGCc0g=
 ```
-# <a name="c"></a>[<span data-ttu-id="61a59-205">C#</span><span class="sxs-lookup"><span data-stu-id="61a59-205">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="fdcca-208">C#</span><span class="sxs-lookup"><span data-stu-id="fdcca-208">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-reference-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="61a59-206">JavaScript</span><span class="sxs-lookup"><span data-stu-id="61a59-206">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="fdcca-209">JavaScript</span><span class="sxs-lookup"><span data-stu-id="fdcca-209">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-reference-attachment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="61a59-207">Objective-C</span><span class="sxs-lookup"><span data-stu-id="61a59-207">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="fdcca-210">Objective-C</span><span class="sxs-lookup"><span data-stu-id="fdcca-210">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-reference-attachment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="fdcca-211">Java</span><span class="sxs-lookup"><span data-stu-id="fdcca-211">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-reference-attachment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="61a59-208">Отклик</span><span class="sxs-lookup"><span data-stu-id="61a59-208">Response</span></span>
-<span data-ttu-id="61a59-p114">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="61a59-p114">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="fdcca-212">Отклик</span><span class="sxs-lookup"><span data-stu-id="fdcca-212">Response</span></span>
+<span data-ttu-id="fdcca-p114">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fdcca-p114">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "get_reference_attachment",
@@ -446,11 +462,11 @@ Content-type: application/json
 ```
 
 
-### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a><span data-ttu-id="61a59-212">Пример 5. Получение необработанного содержимого вложенного файла в сообщении</span><span class="sxs-lookup"><span data-stu-id="61a59-212">Example 5: Get the raw contents of a file attachment on a message</span></span>
+### <a name="example-5-get-the-raw-contents-of-a-file-attachment-on-a-message"></a><span data-ttu-id="fdcca-216">Пример 5. Получение необработанного содержимого вложенного файла в сообщении</span><span class="sxs-lookup"><span data-stu-id="fdcca-216">Example 5: Get the raw contents of a file attachment on a message</span></span>
 
-#### <a name="request"></a><span data-ttu-id="61a59-213">Запрос</span><span class="sxs-lookup"><span data-stu-id="61a59-213">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="fdcca-217">Запрос</span><span class="sxs-lookup"><span data-stu-id="fdcca-217">Request</span></span>
 
-<span data-ttu-id="61a59-214">Ниже приведен пример запроса на получение необработанного содержимого файла Word, вложенного в сообщение.</span><span class="sxs-lookup"><span data-stu-id="61a59-214">Here is an example of the request to get the raw contents of a Word file that has been attached to a message.</span></span>
+<span data-ttu-id="fdcca-218">Ниже приведен пример запроса на получение необработанного содержимого файла Word, вложенного в сообщение.</span><span class="sxs-lookup"><span data-stu-id="fdcca-218">Here is an example of the request to get the raw contents of a Word file that has been attached to a message.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_value_file_attachment",
@@ -461,8 +477,8 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=/$value
 ```
 
-#### <a name="response"></a><span data-ttu-id="61a59-215">Отклик</span><span class="sxs-lookup"><span data-stu-id="61a59-215">Response</span></span>
-<span data-ttu-id="61a59-216">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="61a59-216">Here is an example of the response.</span></span> <span data-ttu-id="61a59-217">Фактический текст ответа содержит необработанные байты вложенного файла, которые кратко описаны ниже.</span><span class="sxs-lookup"><span data-stu-id="61a59-217">The actual response body includes the raw bytes of the file attachment, which are abbreviated here for brevity.</span></span>
+#### <a name="response"></a><span data-ttu-id="fdcca-219">Отклик</span><span class="sxs-lookup"><span data-stu-id="fdcca-219">Response</span></span>
+<span data-ttu-id="fdcca-220">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="fdcca-220">Here is an example of the response.</span></span> <span data-ttu-id="fdcca-221">Фактический текст ответа содержит необработанные байты вложенного файла, которые кратко описаны ниже.</span><span class="sxs-lookup"><span data-stu-id="fdcca-221">The actual response body includes the raw bytes of the file attachment, which are abbreviated here for brevity.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -477,11 +493,11 @@ HTTP/1.1 200 OK
 ```
 
 
-### <a name="example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a><span data-ttu-id="61a59-218">Пример 6. Получение необработанного содержимого MIME вложенного контакта в сообщении</span><span class="sxs-lookup"><span data-stu-id="61a59-218">Example 6: Get the MIME raw contents of a contact attachment on a message</span></span>
+### <a name="example-6-get-the-mime-raw-contents-of-a-contact-attachment-on-a-message"></a><span data-ttu-id="fdcca-222">Пример 6. Получение необработанного содержимого MIME вложенного контакта в сообщении</span><span class="sxs-lookup"><span data-stu-id="fdcca-222">Example 6: Get the MIME raw contents of a contact attachment on a message</span></span>
 
-#### <a name="request"></a><span data-ttu-id="61a59-219">Запрос</span><span class="sxs-lookup"><span data-stu-id="61a59-219">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="fdcca-223">Запрос</span><span class="sxs-lookup"><span data-stu-id="fdcca-223">Request</span></span>
 
-<span data-ttu-id="61a59-220">Ниже приведен пример запроса на получение необработанного содержимого элемента контакта, вложенного в сообщение.</span><span class="sxs-lookup"><span data-stu-id="61a59-220">Here is an example of the request to get the raw contents of a contact item that has been attached to a message.</span></span> 
+<span data-ttu-id="fdcca-224">Ниже приведен пример запроса на получение необработанного содержимого элемента контакта, вложенного в сообщение.</span><span class="sxs-lookup"><span data-stu-id="fdcca-224">Here is an example of the request to get the raw contents of a contact item that has been attached to a message.</span></span> 
 <!-- {
   "blockType": "ignored",
   "name": "get_value_contact_attachment",
@@ -492,8 +508,8 @@ HTTP/1.1 200 OK
 GET https://graph.microsoft.com/beta/me/messages/AAMkADI5MAAGjk2PxAAA=/attachments/AAMkADI5MAAGjk2PxAAABEgAQACEJqrbJZBNIlr3pGFvd9K8=/$value
 ```
 
-#### <a name="response"></a><span data-ttu-id="61a59-221">Отклик</span><span class="sxs-lookup"><span data-stu-id="61a59-221">Response</span></span>
-<span data-ttu-id="61a59-222">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="61a59-222">Here is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="fdcca-225">Отклик</span><span class="sxs-lookup"><span data-stu-id="fdcca-225">Response</span></span>
+<span data-ttu-id="fdcca-226">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="fdcca-226">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "ignored",
@@ -526,11 +542,11 @@ END:VCARD
 ```
 
 
-### <a name="example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a><span data-ttu-id="61a59-223">Пример 7. Получение необработанного содержимого MIME вложенного события в сообщении</span><span class="sxs-lookup"><span data-stu-id="61a59-223">Example 7: Get the MIME raw contents of an event attachment on a message</span></span>
+### <a name="example-7-get-the-mime-raw-contents-of-an-event-attachment-on-a-message"></a><span data-ttu-id="fdcca-227">Пример 7. Получение необработанного содержимого MIME вложенного события в сообщении</span><span class="sxs-lookup"><span data-stu-id="fdcca-227">Example 7: Get the MIME raw contents of an event attachment on a message</span></span>
 
-#### <a name="request"></a><span data-ttu-id="61a59-224">Запрос</span><span class="sxs-lookup"><span data-stu-id="61a59-224">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="fdcca-228">Запрос</span><span class="sxs-lookup"><span data-stu-id="fdcca-228">Request</span></span>
 
-<span data-ttu-id="61a59-225">Ниже приведен пример запроса на получение необработанного содержимого события, вложенного в сообщение.</span><span class="sxs-lookup"><span data-stu-id="61a59-225">Here is an example of the request to get the raw contents of an event that has been attached to a message.</span></span> 
+<span data-ttu-id="fdcca-229">Ниже приведен пример запроса на получение необработанного содержимого события, вложенного в сообщение.</span><span class="sxs-lookup"><span data-stu-id="fdcca-229">Here is an example of the request to get the raw contents of an event that has been attached to a message.</span></span> 
 <!-- {
   "blockType": "ignored",
   "name": "get_value_event_attachment",
@@ -541,8 +557,8 @@ END:VCARD
 GET https://graph.microsoft.com/beta/me/messages/AAMkADVIOAAA=/attachments/AAMkADVIOAAABEgAQACvkutl6c4FMifPyS6NvXsM=/$value
 ```
 
-#### <a name="response"></a><span data-ttu-id="61a59-226">Отклик</span><span class="sxs-lookup"><span data-stu-id="61a59-226">Response</span></span>
-<span data-ttu-id="61a59-227">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="61a59-227">Here is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="fdcca-230">Отклик</span><span class="sxs-lookup"><span data-stu-id="fdcca-230">Response</span></span>
+<span data-ttu-id="fdcca-231">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="fdcca-231">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "ignored",
@@ -606,11 +622,11 @@ END:VCALENDAR
 ```
 
 
-### <a name="example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a><span data-ttu-id="61a59-228">Пример 8. Получение необработанного содержимого MIME вложенного элемента приглашения на собрание в сообщении</span><span class="sxs-lookup"><span data-stu-id="61a59-228">Example 8: Get the MIME raw contents of a meeting invitation item attachment on a message</span></span>
+### <a name="example-8-get-the-mime-raw-contents-of-a-meeting-invitation-item-attachment-on-a-message"></a><span data-ttu-id="fdcca-232">Пример 8. Получение необработанного содержимого MIME вложенного элемента приглашения на собрание в сообщении</span><span class="sxs-lookup"><span data-stu-id="fdcca-232">Example 8: Get the MIME raw contents of a meeting invitation item attachment on a message</span></span>
 
-#### <a name="request"></a><span data-ttu-id="61a59-229">Запрос</span><span class="sxs-lookup"><span data-stu-id="61a59-229">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="fdcca-233">Запрос</span><span class="sxs-lookup"><span data-stu-id="fdcca-233">Request</span></span>
 
-<span data-ttu-id="61a59-230">Ниже приведен пример запроса на получение необработанного содержимого приглашения на собрание (типа [eventMessage](../resources/eventmessage.md)), вложенного в сообщение.</span><span class="sxs-lookup"><span data-stu-id="61a59-230">Here is an example of the request to get the raw contents of a meeting invitation (of the [eventMessage](../resources/eventmessage.md) type) that has been attached to a message.</span></span> <span data-ttu-id="61a59-231">Сущность **eventMessage** основана на типе **сообщения**.</span><span class="sxs-lookup"><span data-stu-id="61a59-231">The **eventMessage** entity is based on the **message** type.</span></span>
+<span data-ttu-id="fdcca-234">Ниже приведен пример запроса на получение необработанного содержимого приглашения на собрание (типа [eventMessage](../resources/eventmessage.md)), вложенного в сообщение.</span><span class="sxs-lookup"><span data-stu-id="fdcca-234">Here is an example of the request to get the raw contents of a meeting invitation (of the [eventMessage](../resources/eventmessage.md) type) that has been attached to a message.</span></span> <span data-ttu-id="fdcca-235">Сущность **eventMessage** основана на типе **сообщения**.</span><span class="sxs-lookup"><span data-stu-id="fdcca-235">The **eventMessage** entity is based on the **message** type.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_value_message_attachment",
@@ -621,10 +637,10 @@ END:VCALENDAR
 GET https://graph.microsoft.com/beta/me/messages/AAMkAGUzY5QKiAAA=/attachments/AAMkAGUzY5QKiAAABEgAQAK8ktgiIO19OqkvUZAqLmyQ=/$value
 ```
 
-#### <a name="response"></a><span data-ttu-id="61a59-232">Отклик</span><span class="sxs-lookup"><span data-stu-id="61a59-232">Response</span></span>
-<span data-ttu-id="61a59-233">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="61a59-233">Here is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="fdcca-236">Отклик</span><span class="sxs-lookup"><span data-stu-id="fdcca-236">Response</span></span>
+<span data-ttu-id="fdcca-237">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="fdcca-237">Here is an example of the response.</span></span> 
 
-<span data-ttu-id="61a59-234">В тексте ответа содержится приложение \*\*eventMessage \*\* в формате MIME.</span><span class="sxs-lookup"><span data-stu-id="61a59-234">The response body includes the **eventMessage** attachment in MIME format.</span></span> <span data-ttu-id="61a59-235">Текст \*\*eventMessage \*\* усекается для краткости.</span><span class="sxs-lookup"><span data-stu-id="61a59-235">The body of the  **eventMessage** is truncated for brevity.</span></span> <span data-ttu-id="61a59-236">Полный текст сообщения возвращается от фактического вызова.</span><span class="sxs-lookup"><span data-stu-id="61a59-236">The full message body is returned from an actual call.</span></span>
+<span data-ttu-id="fdcca-238">В тексте ответа содержится приложение **eventMessage** в формате MIME.</span><span class="sxs-lookup"><span data-stu-id="fdcca-238">The response body includes the **eventMessage** attachment in MIME format.</span></span> <span data-ttu-id="fdcca-239">Текст **eventMessage** усекается для краткости.</span><span class="sxs-lookup"><span data-stu-id="fdcca-239">The body of the  **eventMessage** is truncated for brevity.</span></span> <span data-ttu-id="fdcca-240">Полный текст сообщения возвращается от фактического вызова.</span><span class="sxs-lookup"><span data-stu-id="fdcca-240">The full message body is returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "ignored",
