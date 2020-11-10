@@ -5,32 +5,32 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c5b486c76210ce28280c9adef278734d5c11f58c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9fdb62b67269837beb0cb5fc8bbcbdad5297808f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076804"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979676"
 ---
-# <a name="assign-claimsmappingpolicy"></a><span data-ttu-id="3a9db-103">Назначение типа ресурса claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="3a9db-103">Assign claimsMappingPolicy</span></span>
+# <a name="assign-claimsmappingpolicy"></a><span data-ttu-id="39080-103">Назначение типа ресурса claimsMappingPolicy</span><span class="sxs-lookup"><span data-stu-id="39080-103">Assign claimsMappingPolicy</span></span>
 
-<span data-ttu-id="3a9db-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3a9db-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="39080-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="39080-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3a9db-105">Назначьте [клаимсмаппингполици](../resources/claimsmappingpolicy.md) для [servicePrincipal](../resources/servicePrincipal.md).</span><span class="sxs-lookup"><span data-stu-id="3a9db-105">Assign a [claimsMappingPolicy](../resources/claimsmappingpolicy.md) to a [servicePrincipal](../resources/servicePrincipal.md).</span></span>
+<span data-ttu-id="39080-105">Назначьте [клаимсмаппингполици](../resources/claimsmappingpolicy.md) для [servicePrincipal](../resources/servicePrincipal.md).</span><span class="sxs-lookup"><span data-stu-id="39080-105">Assign a [claimsMappingPolicy](../resources/claimsmappingpolicy.md) to a [servicePrincipal](../resources/servicePrincipal.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3a9db-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3a9db-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="39080-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="39080-106">Permissions</span></span>
 
-<span data-ttu-id="3a9db-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3a9db-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="39080-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="39080-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="3a9db-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3a9db-109">Permission type</span></span>                        | <span data-ttu-id="3a9db-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3a9db-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="39080-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="39080-109">Permission type</span></span>                        | <span data-ttu-id="39080-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="39080-110">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="3a9db-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3a9db-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="3a9db-112">Policy. Read. ALL и Application. ReadWrite. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="3a9db-112">Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All</span></span>  |
-| <span data-ttu-id="3a9db-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3a9db-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3a9db-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3a9db-114">Not supported.</span></span> |
-| <span data-ttu-id="3a9db-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3a9db-115">Application</span></span>                            | <span data-ttu-id="3a9db-116">Policy. Read. ALL и Application. ReadWrite. Овнедби, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. Овнедби, Policy. Read. ALL и Application. ReadWrite. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="3a9db-116">Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All</span></span> |
+| <span data-ttu-id="39080-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="39080-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="39080-112">Policy. Read. ALL и Application. ReadWrite. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="39080-112">Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All</span></span>  |
+| <span data-ttu-id="39080-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="39080-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="39080-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="39080-114">Not supported.</span></span> |
+| <span data-ttu-id="39080-115">Для приложения</span><span class="sxs-lookup"><span data-stu-id="39080-115">Application</span></span>                            | <span data-ttu-id="39080-116">Policy. Read. ALL и Application. ReadWrite. Овнедби, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. Овнедби, Policy. Read. ALL и Application. ReadWrite. ALL, Policy. ReadWrite. Аппликатионконфигуратион и Application. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="39080-116">Policy.Read.All and Application.ReadWrite.OwnedBy, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.OwnedBy, Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3a9db-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3a9db-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="39080-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="39080-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,28 +38,28 @@ ms.locfileid: "48076804"
 POST /servicePrincipals/{id}/claimsMappingPolicies/$ref
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3a9db-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3a9db-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="39080-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="39080-118">Request headers</span></span>
 
-| <span data-ttu-id="3a9db-119">Имя</span><span class="sxs-lookup"><span data-stu-id="3a9db-119">Name</span></span>          | <span data-ttu-id="3a9db-120">Описание</span><span class="sxs-lookup"><span data-stu-id="3a9db-120">Description</span></span>   |
+| <span data-ttu-id="39080-119">Имя</span><span class="sxs-lookup"><span data-stu-id="39080-119">Name</span></span>          | <span data-ttu-id="39080-120">Описание</span><span class="sxs-lookup"><span data-stu-id="39080-120">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="3a9db-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3a9db-121">Authorization</span></span> | <span data-ttu-id="3a9db-122">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="3a9db-122">Bearer {token}</span></span> |
-| <span data-ttu-id="3a9db-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3a9db-123">Content-Type</span></span> | <span data-ttu-id="3a9db-124">application/json</span><span class="sxs-lookup"><span data-stu-id="3a9db-124">application/json</span></span> |
+| <span data-ttu-id="39080-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="39080-121">Authorization</span></span> | <span data-ttu-id="39080-122">Bearer {token}</span><span class="sxs-lookup"><span data-stu-id="39080-122">Bearer {token}</span></span> |
+| <span data-ttu-id="39080-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="39080-123">Content-Type</span></span> | <span data-ttu-id="39080-124">application/json</span><span class="sxs-lookup"><span data-stu-id="39080-124">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="3a9db-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3a9db-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="39080-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="39080-125">Request body</span></span>
 
-<span data-ttu-id="3a9db-126">В тексте запроса укажите идентификатор объекта [клаимсмаппингполици](../resources/claimsmappingpolicy.md) (с помощью `@odata.id` Свойства), который должен быть назначен субъекту-службе.</span><span class="sxs-lookup"><span data-stu-id="3a9db-126">In the request body, supply the identifier of the [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object (using an `@odata.id` property) that should be assigned to the service principal.</span></span>
+<span data-ttu-id="39080-126">В тексте запроса укажите идентификатор объекта [клаимсмаппингполици](../resources/claimsmappingpolicy.md) (с помощью `@odata.id` Свойства), который должен быть назначен субъекту-службе.</span><span class="sxs-lookup"><span data-stu-id="39080-126">In the request body, supply the identifier of the [claimsMappingPolicy](../resources/claimsmappingpolicy.md) object (using an `@odata.id` property) that should be assigned to the service principal.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3a9db-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="3a9db-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="39080-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="39080-127">Response</span></span>
 
-<span data-ttu-id="3a9db-p102">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="3a9db-p102">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="39080-p102">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="39080-p102">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="3a9db-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="3a9db-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="39080-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="39080-130">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="3a9db-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="3a9db-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="39080-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="39080-131">Request</span></span>
 
-<span data-ttu-id="3a9db-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3a9db-132">The following is an example of the request.</span></span>
+<span data-ttu-id="39080-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="39080-132">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="3a9db-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="3a9db-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="39080-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="39080-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_claimsmappingpolicy_from_serviceprincipal"
@@ -73,24 +73,28 @@ Content-Type: application/json
   "@odata.id":"https://graph.microsoft.com/beta/policies/claimsMappingPolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"
 }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="3a9db-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3a9db-134">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="39080-134">JavaScript</span><span class="sxs-lookup"><span data-stu-id="39080-134">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-claimsmappingpolicy-from-serviceprincipal-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="c"></a>[<span data-ttu-id="3a9db-135">C#</span><span class="sxs-lookup"><span data-stu-id="3a9db-135">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="39080-135">C#</span><span class="sxs-lookup"><span data-stu-id="39080-135">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-claimsmappingpolicy-from-serviceprincipal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="3a9db-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3a9db-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="39080-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="39080-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-claimsmappingpolicy-from-serviceprincipal-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="39080-137">Java</span><span class="sxs-lookup"><span data-stu-id="39080-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-claimsmappingpolicy-from-serviceprincipal-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="3a9db-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="3a9db-137">Response</span></span>
+### <a name="response"></a><span data-ttu-id="39080-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="39080-138">Response</span></span>
 
-<span data-ttu-id="3a9db-138">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="3a9db-138">The following is an example of the response.</span></span>
+<span data-ttu-id="39080-139">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="39080-139">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
