@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c78bd0b460efa5f81d7aa957cf1c272d72186cf7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6f8d57cc1afbc79f3f88832bf3aa6fad270558ef
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002781"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956751"
 ---
 # <a name="get-conversationmember"></a>Получение объекта conversationMember
 
@@ -26,9 +26,9 @@ ms.locfileid: "48002781"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированные (рабочая или учебная учетная запись)| Для ресурса **user** или **chat**: Chat.ReadBasic, Chat.Read, Chat.ReadWrite<br/><br/>Для ресурса **channel**: ChannelMember.Read.All, ChannelMember.ReadWrite, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись)| Для ресурса **user** или **chat** : Chat.ReadBasic, Chat.Read, Chat.ReadWrite<br/><br/>Для ресурса **channel** : ChannelMember.Read.All, ChannelMember.ReadWrite, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| Для ресурса **user** или **chat**: не поддерживается.<br/><br/>Для ресурса **channel**: Member.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Приложение| Для ресурса **user** или **chat** : не поддерживается.<br/><br/>Для ресурса **channel** : Member.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-conversation-member-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-conversation-member-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

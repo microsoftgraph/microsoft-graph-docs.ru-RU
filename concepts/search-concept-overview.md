@@ -5,12 +5,12 @@ localization_priority: Priority
 ms.prod: search
 author: snlraju-msft
 scenarios: getting-started
-ms.openlocfilehash: d4c16bd0175f8ae0cd9d8e03f549bea9eff3db63
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 0ef20f80c003d880d25eff00c993bc1800545dc7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373505"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48952677"
 ---
 # <a name="overview-of-the-microsoft-search-api-in-microsoft-graph-preview"></a>Обзор API Поиска (Майкрософт) в Microsoft Graph (предварительная версия)
 
@@ -27,7 +27,9 @@ API Поиска (Майкрософт) предоставляет единую 
 
 ### <a name="include-custom-external-data-in-search-experience"></a>Включение настраиваемых внешних данных в интерфейс поиска
 
-Пользователи, желающие включить в свой поиск данные, не входящие в Microsoft Cloud, могут использовать [соединители](/microsoftsearch/connectors-overview), чтобы подключиться к определенному источнику данных, такому как база данных отдела кадров организации или каталог продуктов, и использовать API Поиска (Майкрософт) для [запроса](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) внешнего источника данных. [Коллекция соединителей Microsoft Graph](/microsoftsearch/connectors-gallery) включает ряд готовых к использованию соединителей. Пользователи также могут [создавать соединители](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true#common-use-cases), индексировать внешние настраиваемые элементы и запрашивать определенные внешние источники данных.
+Используйте [соединители Microsoft Graph](/microsoftsearch/connectors-overview), чтобы включить данные из-за пределов облака Майкрософт в свой интерфейс поиска. Например, подключитесь к базе данных отдела кадров организации или к каталогу продуктов. Затем используйте API Поиска (Майкрософт), чтобы легко [запросить](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) внешний источник данных. 
+
+Просмотрите [коллекцию соединителей Microsoft Graph](/microsoftsearch/connectors-gallery), чтобы найти готовые к использованию соединители. Вы также можете [создавать собственные соединители](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true#common-use-cases), чтобы индексировать внешние настраиваемые элементы и отправлять запросы к определенным внешним источникам данных.
 
 ### <a name="consistent-up-to-date-search-experience"></a>Единый актуальный интерфейс поиска
 

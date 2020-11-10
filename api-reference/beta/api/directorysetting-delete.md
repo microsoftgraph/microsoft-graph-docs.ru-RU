@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2465ee09047621c06ba618ba012d495ad1f24cc7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6b64e3d5a4e00ac829f12f3d07446a8da895171d
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008664"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956240"
 ---
 # <a name="delete-a-directory-setting"></a>Удаление параметра каталога
 
@@ -20,7 +20,7 @@ ms.locfileid: "48008664"
 
 Удаление параметра каталога.
 
-> **Note**: версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована, чтобы *Удалить граупсеттингс*.
+> **Note** : версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована, чтобы *Удалить граупсеттингс*.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -73,6 +73,10 @@ DELETE https://graph.microsoft.com/beta/settings/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-directorysetting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-directorysetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

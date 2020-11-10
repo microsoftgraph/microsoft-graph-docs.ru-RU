@@ -5,12 +5,12 @@ author: jerrysai
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2838a02481690db3d81fd544e88fce65b2053495
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 990428fc0022bca7d27f6eaac7978071f49381cb
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48223143"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956943"
 ---
 # <a name="update-continuousaccessevaluationpolicy"></a>Обновление Континуаусакцессевалуатионполици
 Пространство имен: microsoft.graph
@@ -26,7 +26,7 @@ ms.locfileid: "48223143"
 |:--------------------------------------|:---------------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Policy. Read. ALL, Policy. ReadWrite. Кондитионалакцесс и Application. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Приложение                            | Policy. Read. ALL, Policy. ReadWrite. Кондитионалакцесс и Application. Read. ALL |
+|Для приложений                            | Policy. Read. ALL, Policy. ReadWrite. Кондитионалакцесс и Application. Read. ALL |
 
 > [!NOTE]
 > У этого API есть [известная проблема](/graph/known-issues#permissions) , связанная с разрешениями.
@@ -52,9 +52,9 @@ PATCH /identity/continuousAccessEvaluationPolicy
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groups|Коллекция String|Коллекция идентификаторов групп в области для оценки. Если коллекция пуста, все группы находятся в области действия.|
+|groups|Коллекция строк|Коллекция идентификаторов групп в области для оценки. Если коллекция пуста, все группы находятся в области действия.|
 |isEnabled|Boolean| `true` , чтобы указать, следует ли выполнять оценку непрерывного доступа; в противном случае `false` . |
-|users|Коллекция String|Коллекция идентификаторов пользователей в области для оценки. Если коллекция пуста, все пользователи находятся в области действия.|
+|users|Коллекция строк|Коллекция идентификаторов пользователей в области для оценки. Если коллекция пуста, все пользователи находятся в области действия.|
 
 
 ## <a name="response"></a>Отклик
@@ -91,6 +91,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-continuousaccessevaluationpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-continuousaccessevaluationpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

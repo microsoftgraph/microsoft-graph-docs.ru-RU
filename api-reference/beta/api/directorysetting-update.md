@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d6d76e5d416af96b916ac8f5325ee0a95681f649
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5ecf6d6fbaa3b4d491356924b965bb1ac8b9facb
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008633"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956149"
 ---
 # <a name="update-a-directory-setting"></a>Обновление параметра каталога
 
@@ -20,7 +20,7 @@ ms.locfileid: "48008633"
 
 Обновление свойств определенного объекта параметров каталога.
 
-> **Note**: версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована для *обновления граупсеттингс*.
+> **Note** : версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована для *обновления граупсеттингс*.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,7 @@ ms.locfileid: "48008633"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Directory.ReadWrite.All |
+|Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -87,6 +87,10 @@ Content-length: 178
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-directorysetting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-directorysetting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

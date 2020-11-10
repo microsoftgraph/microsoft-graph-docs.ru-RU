@@ -5,12 +5,12 @@ localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 40611cb16bd737db42d4de0d61248d4a05cfacf3
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: e0127cbff360f0b4b08d43eccaabe26a5d4e31c6
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48371748"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48957506"
 ---
 # <a name="list-memberof"></a>Список memberOf
 
@@ -40,7 +40,7 @@ GET /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Носителя. Обязательно|
+| Authorization  | Носителя. Обязательный|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/connector-get-memberof-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/connector-get-memberof-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

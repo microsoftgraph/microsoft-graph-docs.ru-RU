@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8c90b1962a935e597f313fe8d0624e529cced097
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: cb65835bfef3b9eaf8c86c7ec2fb411493676d99
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996352"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48957231"
 ---
 # <a name="contact-delta"></a>contact: delta
 
@@ -65,11 +65,11 @@ GET /users/{id}/contactFolders/{id}/contacts/delta
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере показано, как выполнить один вызов функции **delta**, использовать параметр `$select` для получения только свойства **displayName** каждого контакта и ограничить максимальное количество контактов в теле отклика двумя.
+В следующем примере показано, как выполнить один вызов функции **delta** , использовать параметр `$select` для получения только свойства **displayName** каждого контакта и ограничить максимальное количество контактов в теле отклика двумя.
 
 Чтобы отследить изменения контактов в папке, выполните один или несколько вызовов функции **delta** с правильными маркерами состояния, чтобы получить набор добавочных изменений с момента последнего разностного запроса. 
 
-Пример, в котором показано, как использовать маркеры состояния для отслеживания изменений сообщений в почтовой папке: [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages). Отслеживания контактов и отслеживания сообщений в папках отличаются, прежде всего, URL-адресами разностных запросов и возвращаемыми в откликах коллекциями (**contact** и **message** соответственно).
+Пример, в котором показано, как использовать маркеры состояния для отслеживания изменений сообщений в почтовой папке: [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages). Отслеживания контактов и отслеживания сообщений в папках отличаются, прежде всего, URL-адресами разностных запросов и возвращаемыми в откликах коллекциями ( **contact** и **message** соответственно).
  
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -90,12 +90,16 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sample-code](../includes/snippets/javascript/contact-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/contact-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### <a name="response"></a>Отклик
 В случае успешного выполнения запроса отклик будет содержать маркер состояния — _skipToken_  
-или _deltaToken_. Первый включен в заголовок отклика _@odata.nextLink_, второй — в заголовок отклика _@odata.deltaLink_. Первый указывает на необходимость продолжать цикл, второй — на наличие всех изменений для определенного цикла.
+или _deltaToken_. Первый включен в заголовок отклика _@odata.nextLink_ , второй — в заголовок отклика _@odata.deltaLink_. Первый указывает на необходимость продолжать цикл, второй — на наличие всех изменений для определенного цикла.
 
 Ниже показан отклик с маркером состояния _skipToken_ в заголовке отклика _@odata.nextLink_.
 

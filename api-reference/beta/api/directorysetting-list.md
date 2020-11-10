@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 32cbc7fb3ae85c2d4b0bad21a44e213cc88c8cba
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: dc1c3b075c4686ad3211f9565efd6540a583e478
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48371323"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956212"
 ---
 # <a name="list-directory-settings"></a>Параметры каталога списка
 
@@ -20,7 +20,7 @@ ms.locfileid: "48371323"
 
 Получение списка объектов параметров каталога.
 
-> **Note**: версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована в *List граупсеттингс*.
+> **Note** : версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована в *List граупсеттингс*.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/settings
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-settings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-settings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

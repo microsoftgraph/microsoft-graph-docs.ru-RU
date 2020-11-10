@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ca1ea67f64f0eba5905ae160d00f1673d4b0dab5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bd073c4770aa40c9ec822de3def04172f0dc5312
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982448"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48957891"
 ---
 # <a name="list-policies"></a>Список политик
 
@@ -26,8 +26,8 @@ ms.locfileid: "47982448"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                       |
 |:--------------------------------------|:----------------------------------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись)     | Policy.Read.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Policy.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,7 +48,7 @@ GET /identity/conditionalAccess/policies
 |:----------|:----------|
 | Authorization | Bearer {token} |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies?$filter
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-policies-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-policies-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

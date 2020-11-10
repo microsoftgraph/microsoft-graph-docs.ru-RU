@@ -5,12 +5,12 @@ author: adimitui
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 81d8be0f07108baafb12fbaf930bb87ec53d269c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f440d9872df9ab61a86e28ea27d14aff112c1538
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008529"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956058"
 ---
 # <a name="domain-forcedelete"></a>домен: Форцеделете
 
@@ -61,13 +61,13 @@ POST /domains/{id}/forceDelete
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|дисаблеусераккаунтс|Boolean| Возможность отключения переименованных учетных записей пользователей. Если учетная запись пользователя отключена, пользователь не может войти в систему.<br>*True* (по умолчанию) — учетные записи пользователей, переименованные в рамках этой операции, отключены.<br>*False* — учетные записи пользователей, переименованные в рамках этой операции, не отключаются. |
+|дисаблеусераккаунтс|Логический| Возможность отключения переименованных учетных записей пользователей. Если учетная запись пользователя отключена, пользователь не может войти в систему.<br>*True* (по умолчанию) — учетные записи пользователей, переименованные в рамках этой операции, отключены.<br>*False* — учетные записи пользователей, переименованные в рамках этой операции, не отключаются. |
 
 ## <a name="response"></a>Отклик
 
@@ -100,6 +100,10 @@ Content-length: 33
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/domain-forcedelete-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/domain-forcedelete-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

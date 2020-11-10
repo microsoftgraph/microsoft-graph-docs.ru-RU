@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dd1d622a5e03603276e54c013bcad9ff78e197fa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b9e9622eccff2cedfb8085790fd4b7d44b140944
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008619"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48956135"
 ---
 # <a name="get-a-directory-setting-template"></a>Получение шаблона параметров каталога
 
@@ -20,7 +20,7 @@ ms.locfileid: "48008619"
 
 Шаблон параметров каталога представляет шаблон параметров, параметры которых могут создаваться в клиенте. Эта операция позволяет получать свойства объекта **директорисеттингтемплате** , включая доступные параметры и их значения по умолчанию.
 
-> **Note**: версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована, чтобы *получить groupSettingTemplate*.
+> **Note** : версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована, чтобы *получить groupSettingTemplate*.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,7 +44,7 @@ GET /directorySettingTemplates/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directorysettingtemplate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directorysettingtemplate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
