@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 1a08f664d4c3e92ed549a2c46b502acb6543985c
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 62ee41b7280121cdecf4aab1acf0b909357418f3
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372994"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48972445"
 ---
 # <a name="get-printer"></a>Получение принтера
 
@@ -29,7 +29,7 @@ ms.locfileid: "48372994"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Printer. Read. ALL, Printer. ReadWrite. ALL, Printer. FullControl. ALL. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| Не поддерживается. |
+|Для приложения| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/print/printers/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-printer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-printer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 8080185c913a99702fba9510845ac284bf186afc
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: 2173c4e8dfb4b4769d6c9fa5fe3b8f5df790670f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314386"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48972473"
 ---
 # <a name="printer-create"></a>принтер: Create
 
@@ -51,7 +51,7 @@ POST /print/printers/create
 |manufacturer|String|Производитель принтера.|Да|
 |model|String|Модель принтера.|Да|
 |фисикалдевицеид|String|UUID физического устройства принтера. Является обязательным, если `hasPhysicalDevice` свойство имеет значение true.|Нет|
-|хасфисикалдевице|Boolean|True, если принтер имеет физическое устройство вывода, в противном случае — значение false. Если этот параметр опущен, значение по умолчанию — true.|Нет|
+|хасфисикалдевице|Логический|True, если принтер имеет физическое устройство вывода, в противном случае — значение false. Если этот параметр опущен, значение по умолчанию — true.|Нет|
 |цертификатесигнингрекуест|[printCertificateSigningRequest](../resources/printcertificatesigningrequest.md)|Запрос подписи сертификата X. 509 (CSR) для сертификата, созданного и используемого принтером для идентификации.|Да|
 |коннекторид|String|Идентификатор соединителя, который выступает в качестве прокси-сервера для принтера.|Нет|
 
@@ -98,6 +98,10 @@ Content-length: 319
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-printer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-printer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

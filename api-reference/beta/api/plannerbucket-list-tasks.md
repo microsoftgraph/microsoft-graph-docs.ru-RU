@@ -1,16 +1,16 @@
 ---
 title: Перечисление задач
-description: Получение списка объектов **plannerTask**, связанных с объектом plannerBucket.
+description: Получение списка объектов **plannerTask** , связанных с объектом plannerBucket.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: dee06917ca103327fda089217c9d727cb7857738
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 826c3ea013f2ad3519bc23def4bd17282e246dc2
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48078565"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48973873"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 
@@ -18,7 +18,7 @@ ms.locfileid: "48078565"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов **plannerTask**, связанных с объектом [plannerBucket](../resources/plannerbucket.md).
+Получение списка объектов **plannerTask** , связанных с объектом [plannerBucket](../resources/plannerbucket.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/planner/buckets/gcrYAaAkgU2EQUvpkNNXLGQAGTt
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/plannerbucket-get-tasks-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/plannerbucket-get-tasks-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

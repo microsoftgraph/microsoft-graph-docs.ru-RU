@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 4ad1e07d21271096f8be8968cb43be2cbd19ec87
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6df75e05761d47e513272a222e956ee64235bde3
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968885"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48973962"
 ---
 # <a name="update-webaccount"></a>Обновление учетной записи
 
@@ -56,7 +56,7 @@ PATCH /users/{id | userPrincipalName}/profile/webAccounts/{id}
 |алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |description|String|Содержит описание, предоставленное пользователем для учетной записи службы, на которую выполняется ссылка.|
 |выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|service|[сервицеинформатион](../resources/serviceinformation.md)| Содержит основные сведения о связанной службе. |
+|служба|[сервицеинформатион](../resources/serviceinformation.md)| Содержит основные сведения о связанной службе. |
 |статусмессаже|String|Содержит сообщение о состоянии от облачной службы, если оно предоставлено или синхронизировано. |
 |userId|String|Имя пользователя, отображаемое для учетной записи Account.  |
 |webUrl|String|Содержит ссылку на профиль пользователя в облачной службе, если она существует.|
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-webaccount-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-webaccount-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

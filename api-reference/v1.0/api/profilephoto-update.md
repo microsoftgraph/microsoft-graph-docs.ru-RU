@@ -5,12 +5,12 @@ localization_priority: Priority
 author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a738802e47367ddebc5c4d5ae54bfcd2612b4cf3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: efd5568dcb03f3cbfab4105a58c0024f35f5f4a9
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051769"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48972593"
 ---
 # <a name="update-profilephoto"></a>Обновление объекта profilephoto
 
@@ -25,9 +25,9 @@ ms.locfileid: "48051769"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-- Фотография профиля вошедшего **пользователя**: User.ReadWrite, User.ReadWrite.All.
-- Фотография профиля **группы**: Group.ReadWrite.All.
-- Фотография **контакта**: Contacts.ReadWrite.
+- Фотография профиля вошедшего **пользователя** : User.ReadWrite, User.ReadWrite.All.
+- Фотография профиля **группы** : Group.ReadWrite.All.
+- Фотография **контакта** : Contacts.ReadWrite.
 
 > **Примечание.** Чтобы обновить фотографию какого-либо пользователя в организации, ваше приложение должно получить разрешение User.ReadWrite.All приложения и вызвать API с применением собственного идентификатора, не от имени пользователя. Дополнительные сведения см. в статье [Получение доступа без пользователя](/graph/auth-v2-service).
 
@@ -86,6 +86,10 @@ Binary data for the image
 
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-profilephoto-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-profilephoto-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

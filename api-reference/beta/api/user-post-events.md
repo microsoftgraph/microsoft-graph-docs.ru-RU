@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: harini84
 ms.prod: outlook
-ms.openlocfilehash: 15ba25a6d38e4a62314b79daa4e59b187b1b3dc1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e0ebb80c166484878d74a273da746fe967d01ee5
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064572"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48972643"
 ---
 # <a name="create-event"></a>Создание события
 
@@ -36,7 +36,7 @@ ms.locfileid: "48064572"
 Если вы организуете событие, у которого есть место проведения:
 
 1. Задайте соответствующее значение для свойства **location** объекта **event**.
-2. Задайте необязательное свойство **locationEmailAddress**, если у места проведения собрания есть адрес электронной почты.
+2. Задайте необязательное свойство **locationEmailAddress** , если у места проведения собрания есть адрес электронной почты.
 
 Кроме того, если место проведения собрания было настроено как ресурс или для мероприятия требуется какое-либо оборудование, настроенное как ресурс:
 
@@ -86,7 +86,7 @@ POST /users/{id | userPrincipalName}/calendars/{id}/events
 ### <a name="example-1-create-an-event-in-the-specified-time-zone-and-assign-the-event-an-optional-transactionid-value"></a>Пример 1: создание события в указанном часовом поясе и назначение события необязательному значению Трансактионид
 
 #### <a name="request"></a>Запрос
-Ниже приведен пример запроса. Для указания часового пояса начала и окончания в ответе используется заголовок запроса "предпочитать": Outlook. TimeZone. Он также задает свойство Трансактионид для уменьшения количества повторных попыток на сервере.
+Ниже приведен пример запроса. Для указания часового пояса начала и окончания в ответе используется заголовок запроса "предпочитать": Outlook. TimeZone. Он также настраивает свойство transactionId, чтобы сократить количество ненужных повторных попыток на сервере.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -138,6 +138,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-from-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -332,6 +336,10 @@ Content-length: 1390
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-multiple-locations-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-from-user-multiple-locations-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -538,10 +546,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-recurring-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-recurring-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -885,6 +897,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-event-from-user-with-online-meeting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-event-from-user-with-online-meeting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
