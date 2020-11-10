@@ -5,32 +5,32 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9189c06a827fd00572cf01ed0663bdab6ff29756
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: 338f373aca61e30745ee4fbc5f2d03f5d7a69b46
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932509"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48971704"
 ---
-# <a name="update-place"></a><span data-ttu-id="5e3a2-103">Обновление места</span><span class="sxs-lookup"><span data-stu-id="5e3a2-103">Update place</span></span>
+# <a name="update-place"></a><span data-ttu-id="ba6f7-103">Обновление места</span><span class="sxs-lookup"><span data-stu-id="ba6f7-103">Update place</span></span>
 
-<span data-ttu-id="5e3a2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="5e3a2-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ba6f7-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ba6f7-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5e3a2-105">Обновление свойств объекта [Place](../resources/place.md) , который может быть [комнатой](../resources/room.md) или [RoomList принимают одиночные](../resources/roomlist.md).</span><span class="sxs-lookup"><span data-stu-id="5e3a2-105">Update the properties of [place](../resources/place.md) object, which can be a [room](../resources/room.md) or [roomList](../resources/roomlist.md).</span></span> <span data-ttu-id="5e3a2-106">Можно определить **комнату** или **RoomList принимают одиночные** , указав свойство **ID** или **EmailAddress** .</span><span class="sxs-lookup"><span data-stu-id="5e3a2-106">You can identify the **room** or **roomList** by specifying the **id** or **emailAddress** property.</span></span>
+<span data-ttu-id="ba6f7-105">Обновление свойств объекта [Place](../resources/place.md) , который может быть [комнатой](../resources/room.md) или [RoomList принимают одиночные](../resources/roomlist.md).</span><span class="sxs-lookup"><span data-stu-id="ba6f7-105">Update the properties of [place](../resources/place.md) object, which can be a [room](../resources/room.md) or [roomList](../resources/roomlist.md).</span></span> <span data-ttu-id="ba6f7-106">Можно определить **комнату** или **RoomList принимают одиночные** , указав свойство **ID** или **EmailAddress** .</span><span class="sxs-lookup"><span data-stu-id="ba6f7-106">You can identify the **room** or **roomList** by specifying the **id** or **emailAddress** property.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5e3a2-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5e3a2-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ba6f7-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ba6f7-107">Permissions</span></span>
 
-<span data-ttu-id="5e3a2-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5e3a2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ba6f7-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ba6f7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="5e3a2-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5e3a2-110">Permission type</span></span>                        | <span data-ttu-id="5e3a2-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5e3a2-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="ba6f7-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ba6f7-110">Permission type</span></span>                        | <span data-ttu-id="ba6f7-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ba6f7-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="5e3a2-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5e3a2-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="5e3a2-113">Place.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5e3a2-113">Place.ReadWrite.All</span></span> |
-| <span data-ttu-id="5e3a2-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5e3a2-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5e3a2-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-115">Not supported.</span></span> |
-| <span data-ttu-id="5e3a2-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5e3a2-116">Application</span></span>                            | <span data-ttu-id="5e3a2-117">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="5e3a2-117">Not supported</span></span> |
+| <span data-ttu-id="ba6f7-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ba6f7-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="ba6f7-113">Place.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ba6f7-113">Place.ReadWrite.All</span></span> |
+| <span data-ttu-id="ba6f7-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ba6f7-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ba6f7-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-115">Not supported.</span></span> |
+| <span data-ttu-id="ba6f7-116">Для приложения</span><span class="sxs-lookup"><span data-stu-id="ba6f7-116">Application</span></span>                            | <span data-ttu-id="ba6f7-117">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="ba6f7-117">Not supported</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5e3a2-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5e3a2-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ba6f7-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ba6f7-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,50 +38,50 @@ ms.locfileid: "48932509"
 PATCH /places/{id | emailAddress}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5e3a2-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5e3a2-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ba6f7-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ba6f7-119">Request headers</span></span>
 
-| <span data-ttu-id="5e3a2-120">Имя</span><span class="sxs-lookup"><span data-stu-id="5e3a2-120">Name</span></span>       | <span data-ttu-id="5e3a2-121">Значение</span><span class="sxs-lookup"><span data-stu-id="5e3a2-121">Value</span></span>|
+| <span data-ttu-id="ba6f7-120">Имя</span><span class="sxs-lookup"><span data-stu-id="ba6f7-120">Name</span></span>       | <span data-ttu-id="ba6f7-121">Значение</span><span class="sxs-lookup"><span data-stu-id="ba6f7-121">Value</span></span>|
 |:-----------|:------|
-| <span data-ttu-id="5e3a2-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5e3a2-122">Authorization</span></span>  | <span data-ttu-id="5e3a2-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="5e3a2-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5e3a2-125">Content-Type</span></span> | <span data-ttu-id="5e3a2-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="ba6f7-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ba6f7-122">Authorization</span></span>  | <span data-ttu-id="ba6f7-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ba6f7-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ba6f7-125">Content-Type</span></span> | <span data-ttu-id="ba6f7-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5e3a2-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5e3a2-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ba6f7-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ba6f7-128">Request body</span></span>
 
-<span data-ttu-id="5e3a2-129">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-129">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="5e3a2-130">За один раз можно обновить только один экземпляр ресурса "помещение" ( **комната** или **RoomList принимают одиночные** ).</span><span class="sxs-lookup"><span data-stu-id="5e3a2-130">Only one instance of a place resource ( **room** or **roomList** ) can be updated at a time.</span></span> <span data-ttu-id="5e3a2-131">В тексте запроса `@odata.type` Укажите тип размещения и включите свойства этого типа для обновления.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-131">In the request body, use `@odata.type` to specify the type of place, and include the properties of that type to update.</span></span> <span data-ttu-id="5e3a2-132">Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-132">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="5e3a2-133">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-133">For best performance, don't include existing values that haven't changed.</span></span>
+<span data-ttu-id="ba6f7-129">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-129">In the request body, supply the values for relevant fields that should be updated.</span></span> <span data-ttu-id="ba6f7-130">За один раз можно обновить только один экземпляр ресурса "помещение" ( **комната** или **RoomList принимают одиночные** ).</span><span class="sxs-lookup"><span data-stu-id="ba6f7-130">Only one instance of a place resource ( **room** or **roomList** ) can be updated at a time.</span></span> <span data-ttu-id="ba6f7-131">В тексте запроса `@odata.type` Укажите тип размещения и включите свойства этого типа для обновления.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-131">In the request body, use `@odata.type` to specify the type of place, and include the properties of that type to update.</span></span> <span data-ttu-id="ba6f7-132">Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-132">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="ba6f7-133">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-133">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="5e3a2-134">Свойство</span><span class="sxs-lookup"><span data-stu-id="5e3a2-134">Property</span></span>               | <span data-ttu-id="5e3a2-135">Тип</span><span class="sxs-lookup"><span data-stu-id="5e3a2-135">Type</span></span>                                              | <span data-ttu-id="5e3a2-136">Описание</span><span class="sxs-lookup"><span data-stu-id="5e3a2-136">Description</span></span> |
+| <span data-ttu-id="ba6f7-134">Свойство</span><span class="sxs-lookup"><span data-stu-id="ba6f7-134">Property</span></span>               | <span data-ttu-id="ba6f7-135">Тип</span><span class="sxs-lookup"><span data-stu-id="ba6f7-135">Type</span></span>                                              | <span data-ttu-id="ba6f7-136">Описание</span><span class="sxs-lookup"><span data-stu-id="ba6f7-136">Description</span></span> |
 |:-----------------------|:--------------------------------------------------|:--|
-| <span data-ttu-id="5e3a2-137">address</span><span class="sxs-lookup"><span data-stu-id="5e3a2-137">address</span></span>                | [<span data-ttu-id="5e3a2-138">physicalAddress</span><span class="sxs-lookup"><span data-stu-id="5e3a2-138">physicalAddress</span></span>](../resources/physicaladdress.md)             | <span data-ttu-id="5e3a2-139">Почтовый адрес комнаты или RoomList принимают одиночные.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-139">The street address of the room or roomlist.</span></span> |
-| <span data-ttu-id="5e3a2-140">аудиодевиценаме</span><span class="sxs-lookup"><span data-stu-id="5e3a2-140">audioDeviceName</span></span>        | <span data-ttu-id="5e3a2-141">Строка</span><span class="sxs-lookup"><span data-stu-id="5e3a2-141">String</span></span>                                            | <span data-ttu-id="5e3a2-142">Указывает имя звукового устройства в комнате.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-142">Specifies the name of the audio device in the room.</span></span> |
-| <span data-ttu-id="5e3a2-143">букингтипе</span><span class="sxs-lookup"><span data-stu-id="5e3a2-143">bookingType</span></span>            | [<span data-ttu-id="5e3a2-144">букингтипе</span><span class="sxs-lookup"><span data-stu-id="5e3a2-144">bookingType</span></span>](../resources/room.md)                            | <span data-ttu-id="5e3a2-145">Тип комнаты.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-145">Type of room.</span></span> <span data-ttu-id="5e3a2-146">Возможные значения: `Standard` и `Reserved`.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-146">Possible values are `Standard` and `Reserved`.</span></span> |
-| <span data-ttu-id="5e3a2-147">создания</span><span class="sxs-lookup"><span data-stu-id="5e3a2-147">building</span></span>               | <span data-ttu-id="5e3a2-148">Строка</span><span class="sxs-lookup"><span data-stu-id="5e3a2-148">String</span></span>                                            | <span data-ttu-id="5e3a2-149">Задает имя здания или номер здания, в котором находится комната.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-149">Specifies the building name or building number that the room is in.</span></span> |
-| <span data-ttu-id="5e3a2-150">мощности</span><span class="sxs-lookup"><span data-stu-id="5e3a2-150">capacity</span></span>               | <span data-ttu-id="5e3a2-151">Строка</span><span class="sxs-lookup"><span data-stu-id="5e3a2-151">String</span></span>                                            | <span data-ttu-id="5e3a2-152">Указывает емкость комнаты.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-152">Specifies the capacity of the room.</span></span> |
-| <span data-ttu-id="5e3a2-153">дисплайдевиценаме</span><span class="sxs-lookup"><span data-stu-id="5e3a2-153">displayDeviceName</span></span>      | <span data-ttu-id="5e3a2-154">Строка</span><span class="sxs-lookup"><span data-stu-id="5e3a2-154">String</span></span>                                            | <span data-ttu-id="5e3a2-155">Задает имя устройства отображения в комнате.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-155">Specifies the name of the display device in the room.</span></span> |
-| <span data-ttu-id="5e3a2-156">флурлабел</span><span class="sxs-lookup"><span data-stu-id="5e3a2-156">floorLabel</span></span>             | <span data-ttu-id="5e3a2-157">Строка</span><span class="sxs-lookup"><span data-stu-id="5e3a2-157">String</span></span>                                            | <span data-ttu-id="5e3a2-158">Указывает этаж, в котором находится комната.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-158">Specifies the floor letter that the room is on.</span></span> |
-| <span data-ttu-id="5e3a2-159">флурнумбер</span><span class="sxs-lookup"><span data-stu-id="5e3a2-159">floorNumber</span></span>            | <span data-ttu-id="5e3a2-160">Int32</span><span class="sxs-lookup"><span data-stu-id="5e3a2-160">Int32</span></span>                                             | <span data-ttu-id="5e3a2-161">Указывает номер этажа, в котором находится комната.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-161">Specifies the floor number that the room is on.</span></span> |
-| <span data-ttu-id="5e3a2-162">geoCoordinates</span><span class="sxs-lookup"><span data-stu-id="5e3a2-162">geoCoordinates</span></span>         | [<span data-ttu-id="5e3a2-163">outlookGeoCoordinates</span><span class="sxs-lookup"><span data-stu-id="5e3a2-163">outlookGeoCoordinates</span></span>](../resources/outlookgeocoordinates.md) | <span data-ttu-id="5e3a2-164">Указывает место в комнате или RoomList принимают одиночные в широте, долготе и дополнительном координатах высоты.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-164">Specifies the room or roomlist location in latitude, longitude and optionally, altitude coordinates.</span></span> |
-| <span data-ttu-id="5e3a2-165">исвхилчаиракцессибле</span><span class="sxs-lookup"><span data-stu-id="5e3a2-165">isWheelchairAccessible</span></span> | <span data-ttu-id="5e3a2-166">Boolean</span><span class="sxs-lookup"><span data-stu-id="5e3a2-166">Boolean</span></span>                                           | <span data-ttu-id="5e3a2-167">Указывает, является ли комната вхилчаир доступным.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-167">Specifies whether the room is wheelchair accessible.</span></span> |
-| <span data-ttu-id="5e3a2-168">label</span><span class="sxs-lookup"><span data-stu-id="5e3a2-168">label</span></span>                  | <span data-ttu-id="5e3a2-169">Строка</span><span class="sxs-lookup"><span data-stu-id="5e3a2-169">String</span></span>                                            | <span data-ttu-id="5e3a2-170">Задает описательную метку для комнаты, например номер или имя.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-170">Specifies a descriptive label for the room, for example, a number or name.</span></span> |
-| <span data-ttu-id="5e3a2-171">прозвищ</span><span class="sxs-lookup"><span data-stu-id="5e3a2-171">nickname</span></span>               | <span data-ttu-id="5e3a2-172">Строка</span><span class="sxs-lookup"><span data-stu-id="5e3a2-172">String</span></span>                                            | <span data-ttu-id="5e3a2-173">Задает псевдоним для комнаты, например "назначение комнаты".</span><span class="sxs-lookup"><span data-stu-id="5e3a2-173">Specifies a nickname for the room, for example, "conf room".</span></span> |
-| <span data-ttu-id="5e3a2-174">phone</span><span class="sxs-lookup"><span data-stu-id="5e3a2-174">phone</span></span>                  | <span data-ttu-id="5e3a2-175">String</span><span class="sxs-lookup"><span data-stu-id="5e3a2-175">String</span></span>                                            | <span data-ttu-id="5e3a2-176">Номер телефона комнаты или RoomList принимают одиночные.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-176">The phone number of the room or roomlist.</span></span> |
-| <span data-ttu-id="5e3a2-177">tags</span><span class="sxs-lookup"><span data-stu-id="5e3a2-177">tags</span></span>                   | <span data-ttu-id="5e3a2-178">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="5e3a2-178">String collection</span></span>                                 | <span data-ttu-id="5e3a2-179">Задает дополнительные функции комнаты, например, сведения, например тип представления или тип мебели.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-179">Specifies additional features of the room, for example, details like the type of view or furniture type.</span></span> |
-| <span data-ttu-id="5e3a2-180">видеодевиценаме</span><span class="sxs-lookup"><span data-stu-id="5e3a2-180">videoDeviceName</span></span>        | <span data-ttu-id="5e3a2-181">Строка</span><span class="sxs-lookup"><span data-stu-id="5e3a2-181">String</span></span>                                            | <span data-ttu-id="5e3a2-182">Задает имя видеоустройства в комнате.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-182">Specifies the name of the video device in the room.</span></span> |
+| <span data-ttu-id="ba6f7-137">address</span><span class="sxs-lookup"><span data-stu-id="ba6f7-137">address</span></span>                | [<span data-ttu-id="ba6f7-138">physicalAddress</span><span class="sxs-lookup"><span data-stu-id="ba6f7-138">physicalAddress</span></span>](../resources/physicaladdress.md)             | <span data-ttu-id="ba6f7-139">Почтовый адрес комнаты или RoomList принимают одиночные.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-139">The street address of the room or roomlist.</span></span> |
+| <span data-ttu-id="ba6f7-140">аудиодевиценаме</span><span class="sxs-lookup"><span data-stu-id="ba6f7-140">audioDeviceName</span></span>        | <span data-ttu-id="ba6f7-141">String</span><span class="sxs-lookup"><span data-stu-id="ba6f7-141">String</span></span>                                            | <span data-ttu-id="ba6f7-142">Указывает имя звукового устройства в комнате.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-142">Specifies the name of the audio device in the room.</span></span> |
+| <span data-ttu-id="ba6f7-143">букингтипе</span><span class="sxs-lookup"><span data-stu-id="ba6f7-143">bookingType</span></span>            | [<span data-ttu-id="ba6f7-144">букингтипе</span><span class="sxs-lookup"><span data-stu-id="ba6f7-144">bookingType</span></span>](../resources/room.md)                            | <span data-ttu-id="ba6f7-145">Тип комнаты.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-145">Type of room.</span></span> <span data-ttu-id="ba6f7-146">Возможные значения: `Standard` и `Reserved`.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-146">Possible values are `Standard` and `Reserved`.</span></span> |
+| <span data-ttu-id="ba6f7-147">создания</span><span class="sxs-lookup"><span data-stu-id="ba6f7-147">building</span></span>               | <span data-ttu-id="ba6f7-148">String</span><span class="sxs-lookup"><span data-stu-id="ba6f7-148">String</span></span>                                            | <span data-ttu-id="ba6f7-149">Задает имя здания или номер здания, в котором находится комната.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-149">Specifies the building name or building number that the room is in.</span></span> |
+| <span data-ttu-id="ba6f7-150">мощности</span><span class="sxs-lookup"><span data-stu-id="ba6f7-150">capacity</span></span>               | <span data-ttu-id="ba6f7-151">String</span><span class="sxs-lookup"><span data-stu-id="ba6f7-151">String</span></span>                                            | <span data-ttu-id="ba6f7-152">Указывает емкость комнаты.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-152">Specifies the capacity of the room.</span></span> |
+| <span data-ttu-id="ba6f7-153">дисплайдевиценаме</span><span class="sxs-lookup"><span data-stu-id="ba6f7-153">displayDeviceName</span></span>      | <span data-ttu-id="ba6f7-154">String</span><span class="sxs-lookup"><span data-stu-id="ba6f7-154">String</span></span>                                            | <span data-ttu-id="ba6f7-155">Задает имя устройства отображения в комнате.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-155">Specifies the name of the display device in the room.</span></span> |
+| <span data-ttu-id="ba6f7-156">флурлабел</span><span class="sxs-lookup"><span data-stu-id="ba6f7-156">floorLabel</span></span>             | <span data-ttu-id="ba6f7-157">String</span><span class="sxs-lookup"><span data-stu-id="ba6f7-157">String</span></span>                                            | <span data-ttu-id="ba6f7-158">Указывает этаж, в котором находится комната.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-158">Specifies the floor letter that the room is on.</span></span> |
+| <span data-ttu-id="ba6f7-159">флурнумбер</span><span class="sxs-lookup"><span data-stu-id="ba6f7-159">floorNumber</span></span>            | <span data-ttu-id="ba6f7-160">Int32</span><span class="sxs-lookup"><span data-stu-id="ba6f7-160">Int32</span></span>                                             | <span data-ttu-id="ba6f7-161">Указывает номер этажа, в котором находится комната.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-161">Specifies the floor number that the room is on.</span></span> |
+| <span data-ttu-id="ba6f7-162">geoCoordinates</span><span class="sxs-lookup"><span data-stu-id="ba6f7-162">geoCoordinates</span></span>         | [<span data-ttu-id="ba6f7-163">outlookGeoCoordinates</span><span class="sxs-lookup"><span data-stu-id="ba6f7-163">outlookGeoCoordinates</span></span>](../resources/outlookgeocoordinates.md) | <span data-ttu-id="ba6f7-164">Указывает место в комнате или RoomList принимают одиночные в широте, долготе и дополнительном координатах высоты.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-164">Specifies the room or roomlist location in latitude, longitude and optionally, altitude coordinates.</span></span> |
+| <span data-ttu-id="ba6f7-165">исвхилчаиракцессибле</span><span class="sxs-lookup"><span data-stu-id="ba6f7-165">isWheelchairAccessible</span></span> | <span data-ttu-id="ba6f7-166">Логический</span><span class="sxs-lookup"><span data-stu-id="ba6f7-166">Boolean</span></span>                                           | <span data-ttu-id="ba6f7-167">Указывает, является ли комната вхилчаир доступным.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-167">Specifies whether the room is wheelchair accessible.</span></span> |
+| <span data-ttu-id="ba6f7-168">label</span><span class="sxs-lookup"><span data-stu-id="ba6f7-168">label</span></span>                  | <span data-ttu-id="ba6f7-169">String</span><span class="sxs-lookup"><span data-stu-id="ba6f7-169">String</span></span>                                            | <span data-ttu-id="ba6f7-170">Задает описательную метку для комнаты, например номер или имя.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-170">Specifies a descriptive label for the room, for example, a number or name.</span></span> |
+| <span data-ttu-id="ba6f7-171">прозвищ</span><span class="sxs-lookup"><span data-stu-id="ba6f7-171">nickname</span></span>               | <span data-ttu-id="ba6f7-172">String</span><span class="sxs-lookup"><span data-stu-id="ba6f7-172">String</span></span>                                            | <span data-ttu-id="ba6f7-173">Задает псевдоним для комнаты, например "назначение комнаты".</span><span class="sxs-lookup"><span data-stu-id="ba6f7-173">Specifies a nickname for the room, for example, "conf room".</span></span> |
+| <span data-ttu-id="ba6f7-174">phone</span><span class="sxs-lookup"><span data-stu-id="ba6f7-174">phone</span></span>                  | <span data-ttu-id="ba6f7-175">String</span><span class="sxs-lookup"><span data-stu-id="ba6f7-175">String</span></span>                                            | <span data-ttu-id="ba6f7-176">Номер телефона комнаты или RoomList принимают одиночные.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-176">The phone number of the room or roomlist.</span></span> |
+| <span data-ttu-id="ba6f7-177">tags</span><span class="sxs-lookup"><span data-stu-id="ba6f7-177">tags</span></span>                   | <span data-ttu-id="ba6f7-178">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="ba6f7-178">String collection</span></span>                                 | <span data-ttu-id="ba6f7-179">Задает дополнительные функции комнаты, например, сведения, например тип представления или тип мебели.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-179">Specifies additional features of the room, for example, details like the type of view or furniture type.</span></span> |
+| <span data-ttu-id="ba6f7-180">видеодевиценаме</span><span class="sxs-lookup"><span data-stu-id="ba6f7-180">videoDeviceName</span></span>        | <span data-ttu-id="ba6f7-181">String</span><span class="sxs-lookup"><span data-stu-id="ba6f7-181">String</span></span>                                            | <span data-ttu-id="ba6f7-182">Задает имя видеоустройства в комнате.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-182">Specifies the name of the video device in the room.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="5e3a2-183">Отклик</span><span class="sxs-lookup"><span data-stu-id="5e3a2-183">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ba6f7-183">Отклик</span><span class="sxs-lookup"><span data-stu-id="ba6f7-183">Response</span></span>
 
-<span data-ttu-id="5e3a2-184">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [Place](../resources/place.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-184">If successful, this method returns a `200 OK` response code and an updated [place](../resources/place.md) object in the response body.</span></span>
+<span data-ttu-id="ba6f7-184">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [Place](../resources/place.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-184">If successful, this method returns a `200 OK` response code and an updated [place](../resources/place.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="5e3a2-185">Примеры</span><span class="sxs-lookup"><span data-stu-id="5e3a2-185">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="ba6f7-185">Примеры</span><span class="sxs-lookup"><span data-stu-id="ba6f7-185">Examples</span></span>
 
-### <a name="example-1-update-a-room"></a><span data-ttu-id="5e3a2-186">Пример 1: обновление комнаты</span><span class="sxs-lookup"><span data-stu-id="5e3a2-186">Example 1: Update a room</span></span>
+### <a name="example-1-update-a-room"></a><span data-ttu-id="ba6f7-186">Пример 1: обновление комнаты</span><span class="sxs-lookup"><span data-stu-id="ba6f7-186">Example 1: Update a room</span></span>
 
-### <a name="request"></a><span data-ttu-id="5e3a2-187">Запрос</span><span class="sxs-lookup"><span data-stu-id="5e3a2-187">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ba6f7-187">Запрос</span><span class="sxs-lookup"><span data-stu-id="ba6f7-187">Request</span></span>
 
-<span data-ttu-id="5e3a2-188">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-188">The following is an example of the request.</span></span>
+<span data-ttu-id="ba6f7-188">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-188">The following is an example of the request.</span></span>
 
 
 
-# <a name="http"></a>[<span data-ttu-id="5e3a2-189">HTTP</span><span class="sxs-lookup"><span data-stu-id="5e3a2-189">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ba6f7-189">HTTP</span><span class="sxs-lookup"><span data-stu-id="ba6f7-189">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_room"
@@ -100,27 +100,31 @@ Content-length: 285
   "isWheelchairAccessible": false
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="5e3a2-190">C#</span><span class="sxs-lookup"><span data-stu-id="5e3a2-190">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ba6f7-190">C#</span><span class="sxs-lookup"><span data-stu-id="ba6f7-190">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-room-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5e3a2-191">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5e3a2-191">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ba6f7-191">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ba6f7-191">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-room-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5e3a2-192">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5e3a2-192">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ba6f7-192">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ba6f7-192">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-room-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="ba6f7-193">Java</span><span class="sxs-lookup"><span data-stu-id="ba6f7-193">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-room-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="5e3a2-193">Отклик</span><span class="sxs-lookup"><span data-stu-id="5e3a2-193">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ba6f7-194">Отклик</span><span class="sxs-lookup"><span data-stu-id="ba6f7-194">Response</span></span>
 
-<span data-ttu-id="5e3a2-194">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-194">The following is an example of the response.</span></span>
+<span data-ttu-id="ba6f7-195">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-195">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="5e3a2-195">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-195">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="5e3a2-196">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-196">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="ba6f7-196">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-196">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="ba6f7-197">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-197">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -168,15 +172,15 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-update-a-roomlist"></a><span data-ttu-id="5e3a2-197">Пример 2: обновление объекта RoomList принимают одиночные</span><span class="sxs-lookup"><span data-stu-id="5e3a2-197">Example 2: Update a roomlist</span></span>
+### <a name="example-2-update-a-roomlist"></a><span data-ttu-id="ba6f7-198">Пример 2: обновление объекта RoomList принимают одиночные</span><span class="sxs-lookup"><span data-stu-id="ba6f7-198">Example 2: Update a roomlist</span></span>
 
-### <a name="request"></a><span data-ttu-id="5e3a2-198">Запрос</span><span class="sxs-lookup"><span data-stu-id="5e3a2-198">Request</span></span>
+### <a name="request"></a><span data-ttu-id="ba6f7-199">Запрос</span><span class="sxs-lookup"><span data-stu-id="ba6f7-199">Request</span></span>
 
-<span data-ttu-id="5e3a2-199">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-199">The following is an example of the request.</span></span>
+<span data-ttu-id="ba6f7-200">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-200">The following is an example of the request.</span></span>
 
 
 
-# <a name="http"></a>[<span data-ttu-id="5e3a2-200">HTTP</span><span class="sxs-lookup"><span data-stu-id="5e3a2-200">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ba6f7-201">HTTP</span><span class="sxs-lookup"><span data-stu-id="ba6f7-201">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_roomlist"
@@ -205,27 +209,31 @@ Content-type: application/json
  }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="5e3a2-201">C#</span><span class="sxs-lookup"><span data-stu-id="5e3a2-201">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ba6f7-202">C#</span><span class="sxs-lookup"><span data-stu-id="ba6f7-202">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-roomlist-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="5e3a2-202">JavaScript</span><span class="sxs-lookup"><span data-stu-id="5e3a2-202">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ba6f7-203">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ba6f7-203">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-roomlist-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="5e3a2-203">Objective-C</span><span class="sxs-lookup"><span data-stu-id="5e3a2-203">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ba6f7-204">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ba6f7-204">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-roomlist-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="ba6f7-205">Java</span><span class="sxs-lookup"><span data-stu-id="ba6f7-205">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-roomlist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="5e3a2-204">Отклик</span><span class="sxs-lookup"><span data-stu-id="5e3a2-204">Response</span></span>
+### <a name="response"></a><span data-ttu-id="ba6f7-206">Отклик</span><span class="sxs-lookup"><span data-stu-id="ba6f7-206">Response</span></span>
 
-<span data-ttu-id="5e3a2-205">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-205">The following is an example of the response.</span></span>
+<span data-ttu-id="ba6f7-207">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-207">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="5e3a2-206">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-206">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="5e3a2-207">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5e3a2-207">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="ba6f7-208">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-208">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="ba6f7-209">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ba6f7-209">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
