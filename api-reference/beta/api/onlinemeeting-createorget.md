@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 9a9e59bac76717f983f3bcbe3de0fac56de7c703
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 51e619e6f09f98fcaa12423881a930df72c0597a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635448"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48980159"
 ---
 # <a name="onlinemeeting-createorget"></a>Онлинемитинг: Креатеоржет
 
@@ -68,17 +68,17 @@ POST /users/{userId}/onlineMeetings/createOrGet
 | startDateTime | DateTime                                                   | Время начала собрания в формате UTC.                                                                       |
 | subject       | String                                                     | Тема собрания по сети.                                                                   |
 
-> **Примечания:**
+> **Примечания.**
 >
 > - Если **startDateTime** и **endDateTime** не указаны, то **startDateTime** по умолчанию будет иметь текущее значение DateTime, а значение **endDateTime** будет равно **startDateTime** + 1 час.
 >
 > - Если предоставлено значение **startDateTime** , но значение **endDateTime** не задано, значение **endDateTime** будет равно **startDateTime** + 1 час.
 >
-> - Если **endDateTime** предоставляется без **startDateTime** или **endDateTime** более ранней версии, чем **startDateTime**, будет выдаваться сообщение об ошибке.
+> - Если **endDateTime** предоставляется без **startDateTime** или **endDateTime** более ранней версии, чем **startDateTime** , будет выдаваться сообщение об ошибке.
 >
 > - В настоящее время **чатинфо** поддерживается только в бета-версии.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если создается новое собрание, или `200 OK` код ответа при получении существующего собрания. В обоих случаях объект [онлинемитинг](../resources/onlinemeeting.md) возвращается в теле отклика.
 
 ## <a name="examples"></a>Примеры
@@ -128,6 +128,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-or-get-onlinemeeting-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-or-get-onlinemeeting-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
