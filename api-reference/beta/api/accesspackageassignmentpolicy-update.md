@@ -5,12 +5,12 @@ author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 23b2d10a3c7c7222b697a487a8d461023069bc1e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fd95cffe0b0f3f5996c7653c6be899ecd8d3f32e
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983846"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48952133"
 ---
 # <a name="update-accesspackageassignmentpolicy"></a>Обновление Акцесспаккажеассигнментполици
 
@@ -52,7 +52,7 @@ PUT /identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/{a
 |:---|:---|:---|
 |displayName|String|Отображаемое имя политики.|
 |description|String|Описание политики.|
-|canExtend|Boolean|Указывает, может ли пользователь продлить продолжительность назначения пакета доступа после утверждения.|
+|canExtend|Логический|Указывает, может ли пользователь продлить продолжительность назначения пакета доступа после утверждения.|
 |дуратиониндайс|Int32|Количество дней, в течение которых назначения из этой политики последний раз до истечения срока действия.|
 |expirationDateTime|DateTimeOffset|Срок действия для назначений, созданных в этой политике. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |рекуесторсеттингс|[рекуесторсеттингс](../resources/requestorsettings.md)|Кто может запрашивать этот пакет Access из этой политики.|
@@ -109,6 +109,10 @@ Content-length: 1000
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-accesspackageassignmentpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accesspackageassignmentpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

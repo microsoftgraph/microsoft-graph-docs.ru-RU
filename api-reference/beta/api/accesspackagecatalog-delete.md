@@ -5,12 +5,12 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 02de5e5ac3f6b5caa96e6dcad77522d3b92dcce1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 75889298f67ca7e751ef400d13902b588afafa04
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983790"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951996"
 ---
 # <a name="delete-accesspackagecatalog"></a>Удаление Акцесспаккажекаталог
 
@@ -44,13 +44,13 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}
 |:--------------|:--------------|
 | Authorization | Носитель \{токен\}. Обязательно. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа серии 200. В тексте отклика не возвращается никаких данных.
+В случае успешного выполнения этот метод возвращает код ответа серии 200. Метод не возвращает данные в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -77,6 +77,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-accesspackagecatalog-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-accesspackagecatalog-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 82fe1f9a825262deff595d636c5fbd899cc970b3
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: c178fef7450121574e15fb34245a8843fc120e97
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406465"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48953515"
 ---
 # <a name="create-b2xidentityuserflow"></a>Создание b2xIdentityUserFlow
 
@@ -26,9 +26,9 @@ ms.locfileid: "48406465"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Идентитюсерфлов. ReadWrite. ALL|
+|Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Идентитюсерфлов. ReadWrite. ALL|
+|Для приложений|IdentityUserFlow.ReadWrite.All|
 
 Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
 
@@ -50,7 +50,7 @@ POST /identity/b2xUserFlow
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Основной текст запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте представление объекта [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)в формате JSON.
 
@@ -58,8 +58,8 @@ POST /identity/b2xUserFlow
 |:---------------|:--------|:----------|
 |id|String|Обязательный. Имя пользовательского потока. Имя будет предваряться `B2X_1` после создания.|
 |userFlowType|String|Обязательный. Тип создаваемого пользовательского процесса. Это значение всегда будет равно `signUpOrSignIn` .|
-|усерфловтипеверсион|С плавающей запятой|Обязательно. Версия пользовательского потока. Это значение всегда равно 1.|
-|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательно. Поставщики удостоверений, которые необходимо включить в пользовательский блок.|
+|userFlowTypeVersion|С плавающей запятой|Обязательный. Версия пользовательского потока. Это значение всегда равно 1.|
+|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательное свойство. Поставщики удостоверений, которые необходимо включить в пользовательский блок.|
 
 ## <a name="response"></a>Отклик
 
@@ -104,12 +104,16 @@ Content-length: 154
 [!INCLUDE [sample-code](../includes/snippets/objc/create-b2xuserflow-from-b2xuserflows-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-b2xuserflow-from-b2xuserflows-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -175,12 +179,16 @@ Content-length: 154
 [!INCLUDE [sample-code](../includes/snippets/objc/create-b2xuserflow-from-b2xuserflows-identityproviders-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-b2xuserflow-from-b2xuserflows-identityproviders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
