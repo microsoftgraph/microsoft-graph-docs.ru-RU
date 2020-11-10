@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fe51b0fae482467f2ceddbffae1537e6399ed800
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5b9676e60e710ed3acd57e6719f9882f2b96d410
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007345"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965894"
 ---
 # <a name="list-outcomes"></a>Результаты списка
 
@@ -18,7 +18,7 @@ ms.locfileid: "48007345"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [едукатионауткоме](../resources/educationoutcome.md) .  Существует три типа результатов: **едукатионпоинтсауткоме**, **едукатионфидбаккауткоме**и **едукатионрубрикауткоме**.
+Получение списка объектов [едукатионауткоме](../resources/educationoutcome.md) .  Существует три типа результатов: **едукатионпоинтсауткоме** , **едукатионфидбаккауткоме** и **едукатионрубрикауткоме**.
 
 При отправке для назначения кредита (у которого нет значения Point без точки и ни одного Rubric) будет [едукатионфидбаккауткоме](../resources/educationpointsoutcome.md). (Он также может возвращать [едукатионпоинтсауткоме](../resources/educationpointsoutcome.md), но этот результат игнорируется.)
 
@@ -28,7 +28,7 @@ ms.locfileid: "48007345"
 
 Отправка для назначения с присоединенным Rubric, если Rubric является точкой Rubric, будет иметь [едукатионфидбаккауткоме](../resources/educationpointsoutcome.md), [едукатионпоинтсауткоме] (.. /ресаурцес/едукатионпоинтсауткоме.МД и [едукатионрубрикауткоме](../resources/educationrubricoutcome.md).
 
-Все типы результатов имеют обычные и опубликованные свойства, соответствующие этому типу результата; Например, **баллы** и **публишедпоинтс**, **Отзывы** и **публишедфидбакк**.  Регулярное свойство является последним значением, обновленным преподавателем; свойство Published — это последнее значение, возвращенное студенту.
+Все типы результатов имеют обычные и опубликованные свойства, соответствующие этому типу результата; Например, **баллы** и **публишедпоинтс** , **Отзывы** и **публишедфидбакк**.  Регулярное свойство является последним значением, обновленным преподавателем; свойство Published — это последнее значение, возвращенное студенту.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-outcomes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-outcomes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

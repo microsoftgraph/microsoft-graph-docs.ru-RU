@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 21ffa09f51e0aa64a9b423c0c73f792d90ae1069
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f16532566f27498f837ec54d4f55b4c40248a507
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48087959"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966874"
 ---
 # <a name="list-programs"></a>Список программ
 
@@ -26,7 +26,7 @@ ms.locfileid: "48087959"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Програмконтрол. Read. ALL, Програмконтрол. ReadWrite. ALL  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Програмконтрол. Read. ALL, Програмконтрол. ReadWrite. ALL  |
+|Для приложения                            | Програмконтрол. Read. ALL, Програмконтрол. ReadWrite. ALL  |
 
  Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им читать программу.
 
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/programs
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-program-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-program-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: c7111e51662516028351adeb1a5ee08446cfaf60
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e6cc5739ff0c1ec270c6bf19bb30731cddd4de53
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007120"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965838"
 ---
 # <a name="resume-sync-on-an-educationsynchronizationprofile"></a>Возобновление синхронизации в Едукатионсинчронизатионпрофиле
 
@@ -25,7 +25,7 @@ ms.locfileid: "48007120"
 
 | Тип разрешения | Разрешения |
 |:-----------|:----------|
-| Делегированные (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
+| Делегированное (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 |Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -40,7 +40,7 @@ POST /synchronizationProfiles/{id}/resume
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
@@ -67,6 +67,10 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/res
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-educationsynchronizationprofile-resume-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-educationsynchronizationprofile-resume-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

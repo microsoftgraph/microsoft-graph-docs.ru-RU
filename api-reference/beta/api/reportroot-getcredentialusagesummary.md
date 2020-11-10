@@ -5,12 +5,12 @@ localization_priority: Normal
 author: khotz
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: da940e4267fe0964b179aebe6431d1836a4bdd25
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 43584c15b8637be4a0e221c26b9f85d801730b22
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044818"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966818"
 ---
 # <a name="reportroot-getcredentialusagesummary"></a>Reportroot.: Жеткредентиалусажесуммари
 
@@ -44,7 +44,7 @@ GET /reports/getCredentialUsageSummary
 
 | Параметр | Тип | Описание |
 |:--------- |:---- |:----------- |
-| period | Строка | Задает период времени, для которого требуются данные об использовании. Пример: `/reports/getCredentialUsageSummary(period='D30')`. Поддерживаемые периоды: `D1` , `D7` , и `D30` . В периоде регистр не учитывается. |
+| period | String | Задает период времени, для которого требуются данные об использовании. Пример: `/reports/getCredentialUsageSummary(period='D30')`. Поддерживаемые периоды: `D1` , `D7` , и `D30` . В периоде регистр не учитывается. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -98,12 +98,16 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUsageSummary(period='D
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getcredentialusagesummary-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getcredentialusagesummary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Все свойства возвращаются при фактическом вызове.
 

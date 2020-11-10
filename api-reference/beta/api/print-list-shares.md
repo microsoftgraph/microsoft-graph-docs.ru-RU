@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 80da97475b6d8f79107034b441a06e58de9dc806
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3b258bdf6b6bf46ca3c4798b326210cf0edbf9fb
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022264"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48967072"
 ---
 # <a name="list-shares"></a>Перечисление общих ресурсов
 
@@ -29,7 +29,7 @@ ms.locfileid: "48022264"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Принтершаре. Read. ALL, Принтершаре. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Не поддерживается.|
+|Для приложения|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/print/shares
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shares-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-shares-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

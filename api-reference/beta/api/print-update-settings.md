@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: d481cb542ee0915a37a146d7635d22145998f44d
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 4501ed5d168a0771f87e7127996d90f5a21cde52
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373134"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966948"
 ---
 # <a name="update-printsettings"></a>Обновление Принтсеттингс
 
@@ -29,7 +29,7 @@ ms.locfileid: "48373134"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| User.Read |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|Не поддерживается.|
+|Для приложения|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -48,7 +48,7 @@ PATCH /print/settings
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|документконверсионенаблед|Boolean|Указывает, включено ли преобразование документов для клиента. Если включено преобразование документов, то при необходимости в универсальной службе печати документы автоматически преобразуются в формат, совместимый с принтером (например, XPS — PDF).|
+|документконверсионенаблед|Логический|Указывает, включено ли преобразование документов для клиента. Если включено преобразование документов, то при необходимости в универсальной службе печати документы автоматически преобразуются в формат, совместимый с принтером (например, XPS — PDF).|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No Content` и пустое тело отклика.
@@ -80,6 +80,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-settings-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-settings-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

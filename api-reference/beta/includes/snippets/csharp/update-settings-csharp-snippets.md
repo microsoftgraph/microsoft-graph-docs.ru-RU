@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 8d6ba6ae1080b7fa7a84e6fb135d63ba58954464
-ms.sourcegitcommit: 33ffed5b785abf36b1a7786856c9266958830d25
+ms.openlocfilehash: a40c2493cdc13b3d175e687d4215393ff688b1d1
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42948215"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966949"
 ---
 ```csharp
 
@@ -17,7 +17,7 @@ var printSettings = new PrintSettings
 };
 
 var print = new Print();
-print.Settings = settings;
+print.Settings = printSettings;
 
 await graphClient.Print
     .Request()

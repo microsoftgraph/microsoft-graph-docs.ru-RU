@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 5a34b460242b6eee1c83ac83af80f10d938c9391
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8c85147b5280dbfa623a17e10cfe36463e3c1e1b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007133"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965783"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>Едукатионсинчронизатионпрофиле: адрес uploadurl
 
@@ -29,7 +29,7 @@ URL-адрес отправки предоставляется только дл
 
 | Тип разрешения | Разрешения |
 |:-----------|:----------|
-| Делегированные (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
+| Делегированное (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 |Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/uplo
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationsynchronizationprofile-uploadurl-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationsynchronizationprofile-uploadurl-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

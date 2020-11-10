@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 00ed8f14dd2b84b0fab48c31dd352d53fffc805a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 517dc5e2fddf0c959215fb69621e0bb99bad75e5
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007127"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965846"
 ---
 # <a name="reset-sync-on-an-educationsynchronizationprofile"></a>Сброс синхронизации для Едукатионсинчронизатионпрофиле
 
@@ -27,7 +27,7 @@ ms.locfileid: "48007127"
 
 | Тип разрешения | Разрешения |
 |:-----------|:----------|
-| Делегированные (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
+| Делегированное (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 |Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -69,6 +69,10 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/res
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/post-educationsynchronizationprofile-reset-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-educationsynchronizationprofile-reset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: fe20285dce5a65bc29e61000f5d5b55e5fe88681
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f33383ea8c3c8b7369be47aa852847af022884ef
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007541"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966149"
 ---
 # <a name="update-educationoutcome"></a>Обновление едукатионауткоме
 
@@ -42,15 +42,15 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-Объект Едукатионауткоме будет одним из следующих производных типов: **едукатионпоинтсауткоме**, **едукатионфидбаккауткоме**или **едукатионрубрикауткоме**. Предоставьте конкретные свойства, относящиеся к типу обновляемого результата.
+Объект Едукатионауткоме будет одним из следующих производных типов: **едукатионпоинтсауткоме** , **едукатионфидбаккауткоме** или **едукатионрубрикауткоме**. Предоставьте конкретные свойства, относящиеся к типу обновляемого результата.
 
-Все производные типы результатов имеют обычные и публикуемые свойства, соответствующие этому типу результата; Например, **баллы** и **публишедпоинтс**, **Отзывы** и **публишедфидбакк**. Не обновляйте свойство "Опубликовано"; Он предназначен для внутреннего использования. Например, чтобы назначить точки **едукатионпоинтсауткоме**, обновите свойство **points** , но не обновляйте **публишедпоинтс**.
+Все производные типы результатов имеют обычные и публикуемые свойства, соответствующие этому типу результата; Например, **баллы** и **публишедпоинтс** , **Отзывы** и **публишедфидбакк**. Не обновляйте свойство "Опубликовано"; Он предназначен для внутреннего использования. Например, чтобы назначить точки **едукатионпоинтсауткоме** , обновите свойство **points** , но не обновляйте **публишедпоинтс**.
 
 ## <a name="response"></a>Отклик
 
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationfeedbackoutcome-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationfeedbackoutcome-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -172,6 +176,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationpointsoutcome-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationpointsoutcome-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -269,6 +277,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationoutcome-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationoutcome-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 1c35650b3bf3c180dfa6fb586361177e3e26253a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3e85d23fc4ef128a3c1231f51a8a037036b0a3d7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007833"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966609"
 ---
 # <a name="delete-educationassignment"></a>Удаление educationAssignment
 
@@ -28,7 +28,7 @@ ms.locfileid: "48007833"
 | :------------------------------------- | :------------------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | EduAssignments. Реадвритебасик, EduAssignments. ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                          |
-| Для приложений                            | Не поддерживается.                                          |
+| Для приложения                            | Не поддерживается.                                          |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ DELETE /education/classes/{id}/assignments/{id}
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -78,6 +78,10 @@ DELETE https://graph.microsoft.com/beta/education/classes/11014/assignments/1900
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-educationassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-educationassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
