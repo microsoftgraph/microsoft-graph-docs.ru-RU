@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: ffa9f15cfabc5811a42bb17aea818b101e0a9f71
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5691da201918ef36e6ab7fa6892fab54651ada2f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027715"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981665"
 ---
 # <a name="create-mailsearchfolder"></a>Создание Маилсеарчфолдер
 
@@ -56,8 +56,8 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 |:----------|:-----|:------------|
 | @odata.type | String | Тип создаваемой папки. Задано значение "Microsoft. Graph. Маилсеарчфолдер". |
 | displayName | String | Отображаемое имя новой папки.|
-| инклуденестедфолдерс | Boolean | Указывает, как должна проходить иерархия папок почтовых ящиков в поиске. `true` означает, что необходимо выполнить глубокий поиск, чтобы включить дочерние папки в иерархию каждой папки, явно указанной в **саурцефолдеридс**. `false` означает неглубокий Поиск только тех папок, которые явно указаны в **саурцефолдеридс**. |
-| саурцефолдеридс | Коллекция String | Папки почтовых ящиков, которые должны быть mined. |
+| инклуденестедфолдерс | Логический | Указывает, как должна проходить иерархия папок почтовых ящиков в поиске. `true` означает, что необходимо выполнить глубокий поиск, чтобы включить дочерние папки в иерархию каждой папки, явно указанной в **саурцефолдеридс**. `false` означает неглубокий Поиск только тех папок, которые явно указаны в **саурцефолдеридс**. |
+| саурцефолдеридс | Коллекция строк | Папки почтовых ящиков, которые должны быть mined. |
 | филтеркуери | String | Запрос OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Отклик
@@ -102,6 +102,10 @@ Content-length: 159
 [!INCLUDE [sample-code](../includes/snippets/objc/create-mailsearchfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-mailsearchfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -109,7 +113,7 @@ Content-length: 159
 
 Ниже приведен пример отклика.
 
->**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

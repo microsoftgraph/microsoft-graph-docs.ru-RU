@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: ca8986dec23e03763aca1491ed4627fa0b87792b
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 96e2ba8dd0b1f0e7e0180ec5cbd493d35b8e8976
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373561"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48982247"
 ---
 # <a name="list-schemaextensions"></a>Перечисление schemaExtensions
 
@@ -18,7 +18,7 @@ ms.locfileid: "48373561"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [schemaExtension](../resources/schemaextension.md) , созданных всеми приложениями, которыми вы владеете в текущем клиенте (которая может быть **разработкой**, **доступной**или **устаревшей**), а также всеми другими расширениями схемы, принадлежащими другим приложениям, которые помечены как **Доступные**. 
+Получение списка объектов [schemaExtension](../resources/schemaextension.md) , созданных всеми приложениями, которыми вы владеете в текущем клиенте (которая может быть **разработкой** , **доступной** или **устаревшей** ), а также всеми другими расширениями схемы, принадлежащими другим приложениям, которые помечены как **Доступные**. 
 
 > **Примечание:** Список также будет содержать определения расширений схемы (помеченные как `Available` ), созданные другими разработчиками из других клиентов. Это отличается от других API-интерфейсов, возвращающих только данные определенного клиента. Данные расширения, созданные на основе определений расширений схемы, зависят от клиента и доступны только для приложений, которым явно предоставлено разрешение. 
 
@@ -30,7 +30,7 @@ ms.locfileid: "48373561"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User. Read, Application. Read. ALL   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Application.Read.All  |
+|Для приложения | Application.Read.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/schemaExtensions?$filter=id%20eq%20'graphle
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schemaextensions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-schemaextensions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

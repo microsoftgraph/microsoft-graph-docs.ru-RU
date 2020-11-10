@@ -1,16 +1,16 @@
 ---
 title: Обновление объекта profilephoto
-description: Обновление фотографии любого пользователя в клиенте, в том числе пользователя, выполнившего вход, либо указанной группы или контакта. Так как
+description: Обновление фотографии для любого пользователя в клиенте, в том числе пользователя, выполнившего вход, или указанной группы или контакта. Так как
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: kevinbellinger
-ms.openlocfilehash: 675b1cb4116ec59b65442c683fe07f67a8045379
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bace39481de10040a58a84e1aafdfa58f00335b7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088001"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981759"
 ---
 # <a name="update-profilephoto"></a>Обновление объекта profilephoto
 
@@ -22,16 +22,16 @@ ms.locfileid: "48088001"
 
 Используйте PUT только для этой операции.
 
-> **Note**: при обновлении фотографии **пользователя** эта операция сначала пытается обновить фотографию в Microsoft 365. Если это не удается (из-за того, что у пользователя нет почтового ящика), этот API будет пытаться обновить фотографию в Azure Active Directory.
+> **Note** : при обновлении фотографии **пользователя** эта операция сначала пытается обновить фотографию в Microsoft 365. Если это не удается (из-за того, что у пользователя нет почтового ящика), этот API будет пытаться обновить фотографию в Azure Active Directory.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Фотография профиля вошедшего **пользователя**:<br/>User. ReadWrite, User. ReadWrite. ALL<br /><br />Для ресурса **group**:<br />Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.ReadWrite |
+|Делегированные (рабочая или учебная учетная запись)     | Фотография профиля вошедшего **пользователя** :<br/>User. ReadWrite, User. ReadWrite. ALL<br /><br />Для ресурса **group** :<br />Group.ReadWrite.All<br /><br />Для ресурса **contact** :<br />Contacts.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложения                            | Для ресурса **user**:<br/>User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.ReadWrite |
+|Для приложения                            | Для ресурса **user** :<br/>User.ReadWrite.All<br /><br />Для ресурса **group** :<br />Group.ReadWrite.All<br /><br />Для ресурса **contact** :<br />Contacts.ReadWrite |
 
 > **Примечание.** Чтобы обновить фотографию какого-либо пользователя в организации, ваше приложение должно получить разрешение User.ReadWrite.All приложения и вызвать API с применением собственного идентификатора, не от имени пользователя. Дополнительные сведения см. в статье [Получение доступа без пользователя](/graph/auth-v2-service). Для обновления фотографии пользователя, выполнившего вход, требуется разрешение User. ReadWrite.
 
@@ -93,10 +93,14 @@ Binary data for the image
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-profilephoto-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-profilephoto-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

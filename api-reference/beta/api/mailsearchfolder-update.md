@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 940ea0af79bffe931b19148c45e36f0a1716e0be
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 711b5eeaea28b2dd5ec29eacf092780295377092
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027687"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981651"
 ---
 # <a name="update-mailsearchfolder"></a>Обновление Маилсеарчфолдер
 
@@ -48,8 +48,8 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | displayName | String | Отображаемое имя [mailFolder](../resources/mailfolder.md).|
-| инклуденестедфолдерс | Boolean | Способ обхода иерархии папок почтовых ящиков. `true` означает, что следует выполнить глубокий поиск, а это `false` означает, что вместо этого следует выполнить неглубокий Поиск. |
-| саурцефолдеридс | Коллекция String | Папки почтовых ящиков, которые должны быть mined. |
+| инклуденестедфолдерс | Логический | Способ обхода иерархии папок почтовых ящиков. `true` означает, что следует выполнить глубокий поиск, а это `false` означает, что вместо этого следует выполнить неглубокий Поиск. |
+| саурцефолдеридс | Коллекция строк | Папки почтовых ящиков, которые должны быть mined. |
 | филтеркуери | String | Запрос OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Отклик
@@ -86,12 +86,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/update-mailsearchfolder-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-mailsearchfolder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

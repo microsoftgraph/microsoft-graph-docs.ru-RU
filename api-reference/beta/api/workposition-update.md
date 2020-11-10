@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a00e5dc77cb98ff2fad81b963f16c1b0061be22a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f3eef33734e288e5d5fdc9035d9e87b66a1c5f52
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48092918"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981862"
 ---
 # <a name="update-workposition"></a>Обновление Воркпоситион
 
@@ -54,12 +54,12 @@ PATCH /users/{id | userPrincipalName}/profile/positions/{id}
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|алловедаудиенцес|Строка|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |categories|Коллекция String|Категории, связанные с этим положением пользователя.|
 |коллег|Коллекция [релатедперсон](../resources/relatedperson.md)|Коллеги, связанные с этой позицией.|
 |описаны|[поситиондетаил](../resources/positiondetail.md)|Содержит подробные сведения о позиции. |
 |выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|по току|Boolean|Указывает, является ли должность текущей.|
+|по току|Логический|Указывает, является ли должность текущей.|
 |manager|[релатедперсон](../resources/relatedperson.md)|Содержит сведения о руководителе пользователя в этой позиции.|
 
 ## <a name="response"></a>Отклик
@@ -96,6 +96,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-workposition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-workposition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

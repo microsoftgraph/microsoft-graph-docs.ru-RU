@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cc8ba1449999c264eebd7ec2a15a3bcbf1d4b79c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 758a4869d353571c1369155171cff852d28da750
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027572"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981560"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -71,7 +71,7 @@ GET /users/{id}/mailFolders/{id}/messages/delta
 ##### <a name="request"></a>Запрос
 В следующем примере показано, как выполнить один вызов функции **delta** и ограничить максимальное количество сообщений в тексте ответа до 2.
 
-Чтобы отследить изменения в сообщениях папки, выполните один или несколько вызовов функции **delta**, чтобы получить набор изменений с момента последнего запроса. Пример, в котором показан цикл запросов изменений: [Получение добавочных изменений для сообщений в папке](/graph/delta-query-messages).
+Чтобы отследить изменения в сообщениях папки, выполните один или несколько вызовов функции **delta** , чтобы получить набор изменений с момента последнего запроса. Пример, в котором показан цикл запросов изменений: [Получение добавочных изменений для сообщений в папке](/graph/delta-query-messages).
  
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -92,12 +92,16 @@ Prefer: odata.maxpagesize=2
 [!INCLUDE [sample-code](../includes/snippets/javascript/message-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/message-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### <a name="response"></a>Отклик
 В случае успешного выполнения запроса отклик будет содержать маркер состояния — _skipToken_  
-или _deltaToken_. Первый включен в заголовок отклика _@odata.nextLink_, второй — в заголовок отклика _@odata.deltaLink_. Первый указывает на необходимость продолжать цикл, второй — на наличие всех изменений для определенного цикла.
+или _deltaToken_. Первый включен в заголовок отклика _@odata.nextLink_ , второй — в заголовок отклика _@odata.deltaLink_. Первый указывает на необходимость продолжать цикл, второй — на наличие всех изменений для определенного цикла.
 
 Ниже показан отклик с маркером состояния _skipToken_ в заголовке отклика _@odata.nextLink_.
 

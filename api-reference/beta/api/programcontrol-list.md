@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: markwahl-msft
-ms.openlocfilehash: 8e0947ff8e20a2b4002089f7abb006d354c1d991
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 153e52b77524f6503d86519ecd79008f36455c76
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47986226"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981757"
 ---
 # <a name="list-programcontrols"></a>Список Програмконтролс
 
@@ -26,7 +26,7 @@ ms.locfileid: "47986226"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Програмконтрол. Read. ALL, Програмконтрол. ReadWrite. ALL   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Програмконтрол. Read. ALL, Програмконтрол. ReadWrite. ALL  |
+|Для приложения                            | Програмконтрол. Read. ALL, Програмконтрол. ReadWrite. ALL  |
 
 Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им читать программу.
 
@@ -40,7 +40,7 @@ GET /programControls
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не следует предоставлять текст запроса.
 
 ## <a name="response"></a>Отклик
@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/programControls
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-programcontrol-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-programcontrol-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
