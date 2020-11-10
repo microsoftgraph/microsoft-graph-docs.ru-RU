@@ -5,32 +5,32 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: fc71acca245159cf04fb493364156e4e501a1c2a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 170d7ca2262e2742b0ee0d63e42be7a71edab48e
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991826"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48952248"
 ---
-# <a name="list-accesspackageassignments"></a><span data-ttu-id="69057-103">Список Акцесспаккажеассигнментс</span><span class="sxs-lookup"><span data-stu-id="69057-103">List accessPackageAssignments</span></span>
+# <a name="list-accesspackageassignments"></a><span data-ttu-id="d9416-103">Список Акцесспаккажеассигнментс</span><span class="sxs-lookup"><span data-stu-id="d9416-103">List accessPackageAssignments</span></span>
 
-<span data-ttu-id="69057-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="69057-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="d9416-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d9416-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="69057-105">Получение списка объектов [акцесспаккажеассигнмент](../resources/accesspackageassignment.md) в [службе управления обслуживанием Azure AD](../resources/entitlementmanagement-root.md).</span><span class="sxs-lookup"><span data-stu-id="69057-105">In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackageAssignment](../resources/accesspackageassignment.md) objects.</span></span> <span data-ttu-id="69057-106">В полученном списке содержатся все назначения, текущие и просроченные, которые вызывающий абонент имеет доступ для чтения, во всех каталогах и пакетах доступа.</span><span class="sxs-lookup"><span data-stu-id="69057-106">The resulting list includes all the assignments, current and well as expired, that the caller has access to read, across all catalogs and access packages.</span></span>
+<span data-ttu-id="d9416-105">Получение списка объектов [акцесспаккажеассигнмент](../resources/accesspackageassignment.md) в [службе управления обслуживанием Azure AD](../resources/entitlementmanagement-root.md).</span><span class="sxs-lookup"><span data-stu-id="d9416-105">In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), retrieve a list of [accessPackageAssignment](../resources/accesspackageassignment.md) objects.</span></span> <span data-ttu-id="d9416-106">В полученном списке содержатся все назначения, текущие и просроченные, которые вызывающий абонент имеет доступ для чтения, во всех каталогах и пакетах доступа.</span><span class="sxs-lookup"><span data-stu-id="d9416-106">The resulting list includes all the assignments, current and well as expired, that the caller has access to read, across all catalogs and access packages.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="69057-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="69057-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="d9416-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d9416-107">Permissions</span></span>
 
-<span data-ttu-id="69057-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="69057-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d9416-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d9416-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="69057-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="69057-110">Permission type</span></span>                        | <span data-ttu-id="69057-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="69057-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="d9416-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d9416-110">Permission type</span></span>                        | <span data-ttu-id="d9416-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d9416-111">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="69057-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="69057-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="69057-113">Ентитлементманажемент. Read. ALL, Ентитлементманажемент. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="69057-113">EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All</span></span> |
-| <span data-ttu-id="69057-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="69057-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="69057-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="69057-115">Not supported.</span></span> |
-| <span data-ttu-id="69057-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="69057-116">Application</span></span>                            | <span data-ttu-id="69057-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="69057-117">Not supported.</span></span> |
+| <span data-ttu-id="d9416-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d9416-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="d9416-113">Ентитлементманажемент. Read. ALL, Ентитлементманажемент. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="d9416-113">EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All</span></span> |
+| <span data-ttu-id="d9416-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d9416-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d9416-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d9416-115">Not supported.</span></span> |
+| <span data-ttu-id="d9416-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d9416-116">Application</span></span>                            | <span data-ttu-id="d9416-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d9416-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="69057-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="69057-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d9416-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d9416-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,33 +38,33 @@ ms.locfileid: "47991826"
 GET /identityGovernance/entitlementManagement/accessPackageAssignments
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="69057-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="69057-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="d9416-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="d9416-119">Optional query parameters</span></span>
 
-<span data-ttu-id="69057-120">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="69057-120">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="69057-121">Например, чтобы возвратить целевую тему и пакет Access, включите `$expand=target,accessPackage` .</span><span class="sxs-lookup"><span data-stu-id="69057-121">For example, to also return the target subject and access package, include `$expand=target,accessPackage`.</span></span> <span data-ttu-id="69057-122">Чтобы получить только доставленные назначения, можно включить запрос `$filter=assignmentState eq 'Delivered'` .</span><span class="sxs-lookup"><span data-stu-id="69057-122">To retrieve only delivered assignments, you can include a query `$filter=assignmentState eq 'Delivered'`.</span></span> <span data-ttu-id="69057-123">Чтобы получить только назначения для определенного пользователя, можно включить запрос с назначениями, предназначенными для идентификатора объекта этого пользователя: `$expand=target&$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` .</span><span class="sxs-lookup"><span data-stu-id="69057-123">To retrieve only assignments for a particular user, you can include a query with assignments targeting the object ID of that user: `$expand=target&$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'`.</span></span>  <span data-ttu-id="69057-124">Чтобы получить только назначения для определенного пользователя и определенного пакета Access, можно включить запрос с назначениями, предназначенными для этого пакета доступа, и ИДЕНТИФИКАТОРом объекта этого пользователя: `$expand=accessPackage,target&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea' and target/objectid eq '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` .</span><span class="sxs-lookup"><span data-stu-id="69057-124">To retrieve only assignments for a particular user and a particular access package, you can include a query with assignments targeting that access package and the object ID of that user: `$expand=accessPackage,target&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea' and target/objectid eq '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'`.</span></span>  <span data-ttu-id="69057-125">Чтобы получить только назначения, полученные в результате определенной политики назначения пакетов Access, можно включить запрос для этой политики: `$filter=accessPackageAssignmentPolicy/id eq 'd92ebb54-9b46-492d-ab7f-01f76767da7f'` .</span><span class="sxs-lookup"><span data-stu-id="69057-125">To retrieve only assignments resulting from a particular access package assignment policy, you can include a query for that policy: `$filter=accessPackageAssignmentPolicy/id eq 'd92ebb54-9b46-492d-ab7f-01f76767da7f'`.</span></span>
+<span data-ttu-id="d9416-120">Этот метод поддерживает некоторые параметры запросов OData для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="d9416-120">This method supports some of the OData query parameters to help customize the response.</span></span> <span data-ttu-id="d9416-121">Например, чтобы возвратить целевую тему и пакет Access, включите `$expand=target,accessPackage` .</span><span class="sxs-lookup"><span data-stu-id="d9416-121">For example, to also return the target subject and access package, include `$expand=target,accessPackage`.</span></span> <span data-ttu-id="d9416-122">Чтобы получить только доставленные назначения, можно включить запрос `$filter=assignmentState eq 'Delivered'` .</span><span class="sxs-lookup"><span data-stu-id="d9416-122">To retrieve only delivered assignments, you can include a query `$filter=assignmentState eq 'Delivered'`.</span></span> <span data-ttu-id="d9416-123">Чтобы получить только назначения для определенного пользователя, можно включить запрос с назначениями, предназначенными для идентификатора объекта этого пользователя: `$expand=target&$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` .</span><span class="sxs-lookup"><span data-stu-id="d9416-123">To retrieve only assignments for a particular user, you can include a query with assignments targeting the object ID of that user: `$expand=target&$filter=target/objectid+eq+'7deff43e-1f17-44ef-9e5f-d516b0ba11d4'`.</span></span>  <span data-ttu-id="d9416-124">Чтобы получить только назначения для определенного пользователя и определенного пакета Access, можно включить запрос с назначениями, предназначенными для этого пакета доступа, и ИДЕНТИФИКАТОРом объекта этого пользователя: `$expand=accessPackage,target&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea' and target/objectid eq '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'` .</span><span class="sxs-lookup"><span data-stu-id="d9416-124">To retrieve only assignments for a particular user and a particular access package, you can include a query with assignments targeting that access package and the object ID of that user: `$expand=accessPackage,target&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea' and target/objectid eq '7deff43e-1f17-44ef-9e5f-d516b0ba11d4'`.</span></span>  <span data-ttu-id="d9416-125">Чтобы получить только назначения, полученные в результате определенной политики назначения пакетов Access, можно включить запрос для этой политики: `$filter=accessPackageAssignmentPolicy/id eq 'd92ebb54-9b46-492d-ab7f-01f76767da7f'` .</span><span class="sxs-lookup"><span data-stu-id="d9416-125">To retrieve only assignments resulting from a particular access package assignment policy, you can include a query for that policy: `$filter=accessPackageAssignmentPolicy/id eq 'd92ebb54-9b46-492d-ab7f-01f76767da7f'`.</span></span>
 
-<span data-ttu-id="69057-126">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="69057-126">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="d9416-126">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="d9416-126">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="69057-127">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="69057-127">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="d9416-127">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d9416-127">Request headers</span></span>
 
-| <span data-ttu-id="69057-128">Имя</span><span class="sxs-lookup"><span data-stu-id="69057-128">Name</span></span>      |<span data-ttu-id="69057-129">Описание</span><span class="sxs-lookup"><span data-stu-id="69057-129">Description</span></span>|
+| <span data-ttu-id="d9416-128">Имя</span><span class="sxs-lookup"><span data-stu-id="d9416-128">Name</span></span>      |<span data-ttu-id="d9416-129">Описание</span><span class="sxs-lookup"><span data-stu-id="d9416-129">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="69057-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="69057-130">Authorization</span></span> | <span data-ttu-id="69057-131">Носитель \{токен\}.</span><span class="sxs-lookup"><span data-stu-id="69057-131">Bearer \{token\}.</span></span> <span data-ttu-id="69057-132">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="69057-132">Required.</span></span> |
+| <span data-ttu-id="d9416-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="d9416-130">Authorization</span></span> | <span data-ttu-id="d9416-131">Носитель \{токен\}.</span><span class="sxs-lookup"><span data-stu-id="d9416-131">Bearer \{token\}.</span></span> <span data-ttu-id="d9416-132">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="d9416-132">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="69057-133">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="69057-133">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="d9416-133">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d9416-133">Request body</span></span>
 
-<span data-ttu-id="69057-134">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="69057-134">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="d9416-134">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d9416-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="69057-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="69057-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="d9416-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="d9416-135">Response</span></span>
 
-<span data-ttu-id="69057-136">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [акцесспаккажеассигнмент](../resources/accesspackageassignment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="69057-136">If successful, this method returns a `200 OK` response code and a collection of [accessPackageAssignment](../resources/accesspackageassignment.md) objects in the response body.</span></span>
+<span data-ttu-id="d9416-136">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [акцесспаккажеассигнмент](../resources/accesspackageassignment.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="d9416-136">If successful, this method returns a `200 OK` response code and a collection of [accessPackageAssignment](../resources/accesspackageassignment.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="69057-137">Примеры</span><span class="sxs-lookup"><span data-stu-id="69057-137">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="d9416-137">Примеры</span><span class="sxs-lookup"><span data-stu-id="d9416-137">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="69057-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="69057-138">Request</span></span>
+### <a name="request"></a><span data-ttu-id="d9416-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="d9416-138">Request</span></span>
 
-<span data-ttu-id="69057-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="69057-139">The following is an example of the request.</span></span>
+<span data-ttu-id="d9416-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d9416-139">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="69057-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="69057-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="d9416-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="d9416-140">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_accesspackageassignments"
@@ -73,26 +73,30 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignments
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignments
 ```
-# <a name="c"></a>[<span data-ttu-id="69057-141">C#</span><span class="sxs-lookup"><span data-stu-id="69057-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="d9416-141">C#</span><span class="sxs-lookup"><span data-stu-id="d9416-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageassignments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="69057-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="69057-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="d9416-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d9416-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-accesspackageassignments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="69057-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="69057-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="d9416-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d9416-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-accesspackageassignments-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="d9416-144">Java</span><span class="sxs-lookup"><span data-stu-id="d9416-144">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-accesspackageassignments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="69057-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="69057-144">Response</span></span>
+### <a name="response"></a><span data-ttu-id="d9416-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="d9416-145">Response</span></span>
 
-<span data-ttu-id="69057-145">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="69057-145">The following is an example of the response.</span></span>
+<span data-ttu-id="d9416-146">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d9416-146">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="69057-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="69057-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="d9416-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d9416-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
