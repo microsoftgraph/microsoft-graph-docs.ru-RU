@@ -6,12 +6,12 @@ description: Удаление пакета элементов driveitem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 13cc2dcb3cda7dac8d6f9b7acfae153d84efabfa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d5aa0c77a755183582de8f7a798897cd192afbab
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987774"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48960277"
 ---
 # <a name="delete-bundle"></a>Удаление пакета
 
@@ -46,7 +46,7 @@ DELETE /drive/items/{bundle-id}
 | Имя          | Описание  |
 |:------------- |:------------ |
 | Authorization | Носитель \{токен\}. Обязательный. |
-| if-match      | тегом. Необязательный параметр. Если указан заголовок запроса, а предоставленное значение eTag (или cTag) не совпадают с текущим тегом в пакете, `412 Precondition Failed` возвращается ответ и пакет не удаляется.
+| if-match      | тегом. Необязательное свойство. Если указан заголовок запроса, а предоставленное значение eTag (или cTag) не совпадают с текущим тегом в пакете, `412 Precondition Failed` возвращается ответ и пакет не удаляется.
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -79,6 +79,10 @@ DELETE https://graph.microsoft.com/beta/drive/items/{bundle-id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-bundle-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-bundle-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

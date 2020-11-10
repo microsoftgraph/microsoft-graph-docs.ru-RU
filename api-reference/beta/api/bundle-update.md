@@ -6,12 +6,12 @@ description: Обновление пакета элементов driveitem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 111dbfed3fed6af28c57e04c3437a3a6228c2e3e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: af14454f660761a6e8fc6304d23870d5216540fc
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987731"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48960188"
 ---
 # <a name="update-bundle"></a>Пакет обновления
 
@@ -50,7 +50,7 @@ PATCH /drive/items/{bundle-id}
 | Имя          | Описание  |
 |:------------- |:------------ |
 | Authorization | Носитель \{токен\}. Обязательный. |
-| if-match      | тегом. Необязательный параметр. Если указан заголовок запроса, а предоставленное значение eTag не совпадают с текущим тегом eTag в бункле, `412 Precondition Failed` возвращается ответ.
+| if-match      | тегом. Необязательное свойство. Если указан заголовок запроса, а предоставленное значение eTag не совпадают с текущим тегом eTag в бункле, `412 Precondition Failed` возвращается ответ.
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -90,6 +90,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/rename-bundle-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/rename-bundle-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 15ed5e3a922fe4e630287c6193ff1daa8822fb30
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9e8eec740df193662c10a5ff9557fa3dafa30753
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987857"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48960376"
 ---
 # <a name="update-bookingservice"></a>Обновление букингсервице
 
@@ -60,12 +60,12 @@ PATCH /bookingBusinesses/{id}/services/{id}
 |displayName|String|Имя службы.|
 |emailAddress|String|Адрес электронной почты|
 |id|String| Только для чтения.|
-|ишидденфромкустомерс|Boolean|Значение true означает, что эта служба недоступна клиентам для резервирования.|
+|ишидденфромкустомерс|Логический|Значение true означает, что эта служба недоступна клиентам для резервирования.|
 |notes|String|Дополнительные сведения об этой службе.|
 |Буфер буфера|Длительность|Время, в течение которого помещается в буфер после встречи для этой службы и до того, как может быть зарезервирована Следующая встреча покупателя.|
 |пребуфер|Длительность|Время, в течение которого будет помещено в буфер, прежде чем можно будет запустить встречу для этой службы.|
 |счедулингполици|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Набор политик, определяющих, как должны создаваться встречи для этого типа службы и управлять ими.|
-|стаффмемберидс|Коллекция String|Представляет [сотрудников](../resources/bookingstaffmember.md) , которые предоставляют эту службу. |
+|стаффмемберидс|Коллекция строк|Представляет [сотрудников](../resources/bookingstaffmember.md) , которые предоставляют эту службу. |
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No content`. Метод не возвращает данные в теле отклика.
@@ -97,6 +97,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-bookingservice-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-bookingservice-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
