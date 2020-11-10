@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 28f9f04d815213a032aa535ea21af243dac5bba6
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: c670adb59f6acf7eb04579f64e80efebb718304b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48406400"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961248"
 ---
 # <a name="delete-an-identityprovider-from-a-b2cidentityuserflow"></a>Удаление объекта identityProvider из b2cIdentityUserFlow
 
@@ -26,9 +26,9 @@ ms.locfileid: "48406400"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Идентитюсерфлов. ReadWrite. ALL|
+|Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений| Идентитюсерфлов. ReadWrite. ALL|
+|Для приложения| IdentityUserFlow.ReadWrite.All|
 
 Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
 
@@ -55,7 +55,7 @@ DELETE /b2cUserFlows/{id}/identityProviders/{id}/$ref
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`. В случае неудачи возвращается ошибка `4xx` с подробностями.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="example"></a>Пример
 
@@ -84,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSign
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-b2xuserflows-identityproviders-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-b2xuserflows-identityproviders-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

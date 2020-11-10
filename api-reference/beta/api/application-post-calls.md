@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 0a3a3d47b1bc8bdb5d791cd66d7c4be572f02ff9
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 6cabaab5c12f8bb9a2b1088b91a936136536fec0
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372462"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962029"
 ---
 # <a name="create-call"></a>Создание звонка
 
@@ -30,7 +30,7 @@ ms.locfileid: "48372462"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                                                                           |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                                                           |
-| Приложение                            | Calls. Жоинграупкаллсасгуест. ALL, Calls. Жоинграупкаллс. ALL, Calls.Iniтиате. Все, Calls.IniТиатеграупкаллс. ALL |
+| Для приложений                            | Calls. Жоинграупкаллсасгуест. ALL, Calls. Жоинграупкаллс. ALL, Calls.Iniтиате. Все, Calls.IniТиатеграупкаллс. ALL |
 
 > **Примечание:** Для вызова с использованием мультимедиа, размещаемого в приложении, вам потребуется разрешение Calls. Акцессмедиа. ALL в дополнение к одному из перечисленных разрешений.
 
@@ -108,6 +108,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-call-service-hosted-media-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-call-service-hosted-media-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -265,7 +269,7 @@ Content-Type: application/json
 
 ### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>Пример 2: создание однорангового звонка VoIP с размещенными в приложении носителями
 
-> **Примечание**: в этом примере требуется Calls.Iniтиате. ALL и Calls. Акцессмедиа. ALL.
+> **Примечание** : в этом примере требуется Calls.Iniтиате. ALL и Calls. Акцессмедиа. ALL.
 
 ##### <a name="request"></a>Запрос
 В следующем примере показан запрос, который выполняет одноранговый звонок между Bot и указанным пользователем. В этом примере мультимедиа размещается локально приложением. Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены фактическими значениями, чтобы пример работал.
@@ -329,6 +333,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-call-app-hosted-media-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-call-app-hosted-media-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

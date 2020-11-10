@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5652a3ae5c2f0a5a02ea5ea193b06ffd6ab98257
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 72e55c0602463dcea8178935372c7f66255d98a9
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372378"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961008"
 ---
 # <a name="get-bitlockerrecoverykey"></a>Получение Битлоккеррековерикэй
 Пространство имен: microsoft.graph
@@ -28,10 +28,10 @@ ms.locfileid: "48372378"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|BitLocker. ReadBasic. ALL, BitLocker. Read. ALL|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Не поддерживается|
+|Для приложения|Не поддерживается|
 
 >**Примечание:** Для делегированных разрешений, позволяющих приложениям получать ресурсы Битлоккеррековерикэй от имени вошедшего пользователя, администратору клиента должен быть назначен один из следующих ролей, либо пользователь должен быть **зарегистрированным владельцем** устройства, с которого была создана резервная копия ключа BitLocker: 
-* глобальный администратор;
+* Глобальный администратор
 * Администратор облачных устройств
 * Администратор службы поддержки
 * администратор службы Intune;
@@ -65,7 +65,7 @@ GET /bitlocker/recoveryKeys/'{bitlockeryRecoveryKeyId}'?$select=key
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
-|OCP — имя клиента|Имя клиентского приложения, выполняющего вызов API. Обязательное.|
+|OCP — имя клиента|Имя клиентского приложения, выполняющего вызов API. Обязательный.|
 |OCP — Client – Version|Версия клиентского приложения, выполняющего вызов API. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -105,6 +105,10 @@ ocp-client-version: "1.2"
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -162,6 +166,10 @@ GET https://graph.microsoft.com/beta/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 31eeebd865326bb26aa428bf170cdd4bce7780b7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1caf9c4bd9f0e117743f615ad991cdeffeb2b702
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997069"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962331"
 ---
 # <a name="update-alert"></a>Обновление оповещения
 
@@ -28,7 +28,7 @@ ms.locfileid: "47997069"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |   SecurityEvents.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | SecurityEvents.ReadWrite.All |
+|Для приложения | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,9 +44,9 @@ PATCH /security/alerts/{alert_id}
 | Имя       | Описание|
 |:-----------|:-----------|
 | Авторизация  | Bearer {код}. Обязательно.|
-|Prefer | Возврат = представление. Необязательный параметр. |
+|Prefer | Возврат = представление. Необязательное свойство. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление значений в формате JSON для соответствующих полей, которые необходимо обновить. Текст **должен** содержать свойство **вендоринформатион** с допустимыми `provider` полями и `vendor` Fields. В следующей таблице перечислены поля, которые можно обновить для оповещения. Значения для существующих свойств, не включенных в текст запроса, не изменятся. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
@@ -108,6 +108,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-alert-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-alert-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

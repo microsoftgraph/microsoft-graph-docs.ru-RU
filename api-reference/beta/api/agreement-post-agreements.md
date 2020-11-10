@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: d8be5e20c4a528febe7fa127be309b6be9108588
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: aa5d2ce647667ea6de338256e4e80bc28eb81793
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997118"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962451"
 ---
 # <a name="create-agreement"></a>Создание соглашения
 
@@ -38,7 +38,7 @@ POST /agreements
 |:-------------|:------------|:------------|
 | Authorization | string | Носитель \{токен\}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [соглашения](../resources/agreement.md) в формате JSON.
 
 В приведенной ниже таблице показаны обязательные свойства при создании пользователя.
@@ -46,9 +46,9 @@ POST /agreements
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |displayName|String|Отображаемое имя соглашения.|
-|исвиевингбефореакцептанцерекуиред|Boolean|Указывает, должно ли пользователь развернуть и просмотреть Соглашение перед принятием.|
+|исвиевингбефореакцептанцерекуиред|Логический|Указывает, должно ли пользователь развернуть и просмотреть Соглашение перед принятием.|
 |Files/fileName|String|Имя файла соглашения (например, TOU.pdf).|
-|файлы и IsDefault|Boolean|Указывает, является ли этот файл соглашением по умолчанию, если ни одна из культур не соответствует параметрам клиента. Если ни один из файлов не помечен как используемый по умолчанию, первый из них будет рассматриваться как используемый по умолчанию.|
+|файлы и IsDefault|Логический|Указывает, является ли этот файл соглашением по умолчанию, если ни одна из культур не соответствует параметрам клиента. Если ни один из файлов не помечен как используемый по умолчанию, первый из них будет рассматриваться как используемый по умолчанию.|
 |файлы/язык|String|Язык и региональные параметры файла соглашения в формате languagecode2-Country/regioncode2. languagecode2 это код из двух букв в нижнем регистре, производный от стандарта ISO 639-1. страна или regioncode2 является производной от стандарта ISO 3166 и обычно состоит из двух прописных букв или тега языка BCP-47 (например, EN-US).|
 |Files/fileData/Data|Binary|Данные, представляющие условия использования PDF-документа.|
 
@@ -94,6 +94,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-agreement-from-agreements-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-agreement-from-agreements-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

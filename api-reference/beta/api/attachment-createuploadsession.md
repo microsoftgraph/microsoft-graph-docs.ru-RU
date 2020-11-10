@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: a8b48da33ec7107f80bf8345da71374e70d5edcd
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 49472ed726656bd704b3b8c167aef9074ddf503c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996652"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961664"
 ---
 # <a name="attachment-createuploadsession"></a>вложение: createUploadSession
 
@@ -52,14 +52,14 @@ ms.locfileid: "47996652"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Создание сеанса отправки для присоединения файла к **событию**: 
+Создание сеанса отправки для присоединения файла к **событию** : 
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/events/{id}/attachments/createUploadSession
 ```
 
-Создание сеанса отправки для вложения файла в **сообщение**: 
+Создание сеанса отправки для вложения файла в **сообщение** : 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -73,7 +73,7 @@ POST /me/messages/{id}/attachments/createUploadSession
 | Authorization | Bearer {token} |
 
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -129,6 +129,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/attachment-createuploadsession-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/attachment-createuploadsession-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

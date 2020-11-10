@@ -5,12 +5,12 @@ author: hafowler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 566a0c81a648207d8fb719f044a6095e2ae4847e
-ms.sourcegitcommit: a3fc420a5639c0f4e89af2b602db17392e176802
+ms.openlocfilehash: 865e44cf6c8d696ed4da549bad05d50229e29601
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48222906"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961304"
 ---
 # <a name="list-recoverykeys"></a>Список Рековерикэйс
 Пространство имен: microsoft.graph
@@ -28,7 +28,7 @@ ms.locfileid: "48222906"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|BitLocker. ReadBasic. ALL, BitLocker. Read. ALL|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Не поддерживается|
+|Для приложения|Не поддерживается|
 
 >**Примечание**. для делегированных разрешений, чтобы разрешить приложениям получать ресурсы битлоккеррековерикэй от имени вошедшего пользователя, администратору клиента должен быть назначен один из следующих ролей, либо пользователь должен быть зарегистрированным владельцем устройства, для которого была создана резервная копия ключа восстановления BitLocker: 
 * Глобальный администратор
@@ -50,7 +50,7 @@ ms.locfileid: "48222906"
 GET /bitlocker/recoveryKeys
 ```
 
-Чтобы получить список ключей BitLocker в клиенте, отфильтрованном по **идентификатору устройства**:
+Чтобы получить список ключей BitLocker в клиенте, отфильтрованном по **идентификатору устройства** :
 
 <!-- {
   "blockType": "ignored"
@@ -69,7 +69,7 @@ GET /bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
 |Имя|Описание|
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
-|OCP — имя клиента|Имя клиентского приложения, выполняющего вызов API. Обязательно.|
+|OCP — имя клиента|Имя клиентского приложения, выполняющего вызов API. Обязательный.|
 |OCP — Client – Version|Версия клиентского приложения, выполняющего вызов API. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -108,6 +108,10 @@ ocp-client-version: "1.2"
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -175,6 +179,10 @@ ocp-client-version: "1.2"
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

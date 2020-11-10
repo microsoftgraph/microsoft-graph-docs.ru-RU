@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 393071be1196c6f235df9628678ab499409eaa0a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ed1a68742562cdbb7df252d2167a0e7c33ec85ac
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997104"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962401"
 ---
 # <a name="list-alerts"></a>Перечисление оповещений
 
@@ -50,22 +50,22 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top` — Возвращает Объединенные основные результаты каждого поставщика API безопасности.
+- `$top` – Возвращает объединенные лучшие результаты от каждого поставщика API безопасности.
 - `$filter`
 
-В приведенной ниже таблице перечислены `$filter` Ключевые слова по имени каждого поставщика.
+В таблице ниже перечислены ключевые слова `$filter` по именам поставщиков.
 
-| Имя поставщика      |ключевое слово $filter|
+| Наименование поставщика      |ключевое слово $filter|
 |:----------|:----------|
 | Расширенная защита от угроз Azure | Расширенная защита от угроз Azure | 
 | Центр безопасности Azure | ASC |
-| Microsoft Cloud App Security | мкас |
-| Защита идентификации Azure Active Directory | ДЕРЖЕК |
+| Microsoft Cloud App Security | MCAS |
+| Защита идентификации Azure Active Directory | IPC |
 | Azure Sentinel | Azure Sentinel |
-| Advanced Threat Protection в Microsoft Defender | ATP в Microsoft Defender |
+| Advanced Threat Protection в Microsoft Defender | ATP в Защитнике Windows |
 | Office 365 |  В настоящее время не поддерживается. |
 
-Чтобы возвратить альтернативный набор свойств, используйте параметр запроса OData `$select`, чтобы указать нужный набор свойств **alert**.  Например, чтобы вернуть свойства **assignedTo**, **category** и **severity**, добавьте в свой запрос следующее: `$select=assignedTo,category,severity`.
+Чтобы возвратить альтернативный набор свойств, используйте параметр запроса OData `$select`, чтобы указать нужный набор свойств **alert**.  Например, чтобы вернуть свойства **assignedTo** , **category** и **severity** , добавьте в свой запрос следующее: `$select=assignedTo,category,severity`.
 
 > **Примечание.** Параметр запроса OData `$top` имеет ограничение в 1000 оповещений. В первый запрос GET рекомендуется включить только параметр `$top`, но не параметр `$skip`. Для разбивки на страницы можно использовать параметр `@odata.nextLink`. Если требуется применить параметр `$skip`, он имеет ограничение в 500 оповещений. Например, `/security/alerts?$top=10&$skip=500` вернет код отклика `200 OK`, но `/security/alerts?$top=10&$skip=501` вернет код отклика `400 Bad Request`. Дополнительные сведения см. в статье [Ответы с ошибками Microsoft Graph Security API](../resources/security-error-codes.md).
 
@@ -75,7 +75,7 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 |:----------|:----------|
 | Авторизация  | Bearer {код}. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Основной текст запросов
 
 Не указывайте текст запроса для этого метода. Текст запроса будет игнорироваться.
 
@@ -108,6 +108,10 @@ GET https://graph.microsoft.com/beta/security/alerts
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-alerts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-alerts-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

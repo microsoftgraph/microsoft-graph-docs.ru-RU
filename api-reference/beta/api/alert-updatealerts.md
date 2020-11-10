@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 9db39c6b7e9455e7350910eafd7ebe5ad06a5dd3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 37415ece13d81e7920b5edffd2db4431bf0be938
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47997055"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962318"
 ---
 # <a name="alert-updatealerts"></a>Предупреждение: Упдатеалертс
 
@@ -28,7 +28,7 @@ ms.locfileid: "47997055"
 |:---------------------------------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |   SecurityEvents.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | SecurityEvents.ReadWrite.All |
+|Для приложения | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ POST /security/alerts/updateAlerts
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|значение|Коллекция [alert](../resources/alert.md)| Коллекция оповещений, которые необходимо обновить. Каждая сущность должна иметь **идентификатор**, **вендоринформатион**и другие редактируемые свойства, которые необходимо обновить.|
+|значение|Коллекция [alert](../resources/alert.md)| Коллекция оповещений, которые необходимо обновить. Каждая сущность должна иметь **идентификатор** , **вендоринформатион** и другие редактируемые свойства, которые необходимо обновить.|
 
 ## <a name="response"></a>Отклик
 
@@ -106,12 +106,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/alert-updatealerts-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/alert-updatealerts-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

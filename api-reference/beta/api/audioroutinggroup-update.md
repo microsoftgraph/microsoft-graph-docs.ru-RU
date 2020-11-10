@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f3c6e8779ed7890d276c4c77a8ae20468e65af44
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9ca123ad39a307a67c5a91b542eab368dc988b85
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991725"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961568"
 ---
 # <a name="update-audio-routing-group"></a>Обновление группы маршрутизации звука
 
@@ -47,9 +47,9 @@ PATCH /communications/calls/{id}/audioRoutingGroups/{id}
 
 | Свойство       | Тип    |Описание|
 |:---------------|:--------|:----------|
-| приемники | Коллекция String | Целевые участники в Аудиораутингграуп. |
+| приемники | Коллекция строк | Целевые участники в Аудиораутингграуп. |
 | раутингмоде | String | Возможные значения: `oneToOne`, `multicast`. |
-| sources | Коллекция String | Участник источника в Аудиораутингграуп. |
+| sources | Коллекция строк | Участник источника в Аудиораутингграуп. |
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [аудиораутингграуп](../resources/audioroutinggroup.md) в тексте отклика.
@@ -91,6 +91,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-audioroutinggroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-audioroutinggroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

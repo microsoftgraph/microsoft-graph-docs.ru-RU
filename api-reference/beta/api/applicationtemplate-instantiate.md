@@ -5,12 +5,12 @@ localization_priority: Normal
 author: luleonpla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b44292e2d4f9fd23ba5a1e71c074750a5d507ad2
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 51083a8f3e0cc1675b6a7ea211fae7421d38b247
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372448"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48961744"
 ---
 # <a name="applicationtemplate-instantiate"></a>Аппликатионтемплате: создание экземпляра
 
@@ -28,7 +28,7 @@ ms.locfileid: "48372448"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Приложение                            | Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
+| Для приложений                            | Application. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -65,7 +65,7 @@ POST /applicationTemplates/{id}/instantiate
 Ниже приведен пример запроса.
 
 > [!NOTE] 
-> Вы можете использовать этот API для создания экземпляров [приложений, не относящихся к коллекции](/azure/active-directory/manage-apps/add-non-gallery-app). Используйте следующий идентификатор для **аппликатионтемплате**: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` .
+> Вы можете использовать этот API для создания экземпляров [приложений, не относящихся к коллекции](/azure/active-directory/manage-apps/add-non-gallery-app). Используйте следующий идентификатор для **аппликатионтемплате** : `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` .
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -91,6 +91,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/applicationtemplate-instantiate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/applicationtemplate-instantiate-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
