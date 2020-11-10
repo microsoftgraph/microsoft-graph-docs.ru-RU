@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: ce04f0e77ec0c01dc796e88d3f1d15c162cc5b1a
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: ba4b64a3f33041695aea17f257838bac1ef64880
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372114"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959886"
 ---
 # <a name="call-answer"></a>вызов: ответ
 
@@ -29,7 +29,7 @@ ms.locfileid: "48372114"
 | :-------------- | :-----------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                        |
-| Приложение     | Calls. Жоинграупкаллс. ALL или Calls. Жоинграупкаллсасгуест. ALL |
+| Для приложений     | Calls. Жоинграупкаллс. ALL или Calls. Жоинграупкаллсасгуест. ALL |
 
 > **Примечание:** Для вызова, использующего носитель с размещением приложений, вам также потребуется разрешение Calls. Акцессмедиа. ALL. Необходимо иметь по крайней мере одно из следующих разрешений, чтобы обеспечить `source` расшифровку уведомления о входящем вызове: Calls. акцессмедиа. ALL, Calls.Iniтиате. ALL, Calls.IniТиатеграупкалл. ALL, Calls. Жоинграупкалл. ALL, Calls. Жоинграупкалласгуест. ALL. `source`Сведения о вызывающем абоненте в уведомлении о входящем звонке. Без по крайней мере одного из этих разрешений оно `source` останется зашифрованным.
 
@@ -53,7 +53,7 @@ POST /communications/calls/{id}/answer
 | Параметр        | Тип                                     |Описание                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
 |callbackUri       |String                                    |Позволяет Боты предоставить определенный URI обратного вызова для текущего вызова, чтобы получать уведомления в дальнейшем. Если это свойство не задано, вместо него будет использоваться глобальный URI обратного вызова Bot. Это должно быть `https` .    |
-|акцептедмодалитиес|Коллекция объектов string                         |Список принимаемых модальности. Возможные значения: `audio` , `video` , `videoBasedScreenSharing` . Необходимо для ответа на вызов. |
+|акцептедмодалитиес|Коллекция строк                         |Список принимаемых модальности. Возможные значения: `audio` , `video` , `videoBasedScreenSharing` . Необходимо для ответа на вызов. |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) или [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |Настройка мультимедиа. Потребоваться                                                                                                            |
 
 ## <a name="response"></a>Отклик
@@ -99,6 +99,10 @@ Content-Length: 211
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-answer-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-answer-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -375,6 +379,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-answer-app-hosted-media-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-answer-app-hosted-media-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

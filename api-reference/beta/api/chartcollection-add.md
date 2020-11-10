@@ -5,12 +5,12 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 doc_type: apiPageType
-ms.openlocfilehash: ab4f4043fe23102c279a3a948858e0e3ed633de3
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c7d5911190fe41e0afa7a4d158ba7a81bd955d68
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47983088"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48958857"
 ---
 # <a name="workbookchartcollection-add"></a>Воркбукчартколлектион: Add
 
@@ -40,14 +40,14 @@ POST /workbook/worksheets/{id|name}/charts/add
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |type|string|Представляет тип диаграммы.  Возможные значения: `ColumnClustered` , `ColumnStacked` ,,, `ColumnStacked100` `BarClustered` `BarStacked` , `BarStacked100` , `LineStacked` , `LineStacked100` , `LineMarkers` `LineMarkersStacked` `LineMarkersStacked100` `PieOfPie` `etc.` ,,,,.|
 |sourceData|Json|Объект Range, соответствующий исходным данным.|
-|seriesBy|string|Необязательный параметр. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме.  Допустимые значения: `Auto`, `Columns`, `Rows`.|
+|seriesBy|string|Необязательно. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме.  Допустимые значения: `Auto`, `Columns`, `Rows`.|
 
 ## <a name="response"></a>Отклик
 
@@ -84,6 +84,10 @@ Content-length: 94
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/chartcollection-add-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/chartcollection-add-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

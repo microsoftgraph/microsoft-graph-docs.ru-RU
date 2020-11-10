@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a2509d07e55332747f50659c93fb0ac49928565f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: adf46f91bba84940e7ae7632d7e6ae804be9b1e2
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987339"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959640"
 ---
 # <a name="call-playprompt"></a>Call: Плайпромпт
 
@@ -48,13 +48,13 @@ POST /communications/calls/{id}/playPrompt
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |выдан|Коллекция [медиапромпт](../resources/mediaprompt.md)| Приглашения для воспроизведения. Максимальный поддерживаемый размер коллекции Медиапромпт составляет 20.|
-|CNAME|Boolean| Значение цикла. Значение true указывает, что цикл должен быть бесконечным. Значение по умолчанию  false. |
+|CNAME|Логический| Значение цикла. Значение true указывает, что цикл должен быть бесконечным. Значение по умолчанию  false. |
 |Контекст|String|Уникальная строка контекста клиента. Может содержать до 256 символов.|
 
 ## <a name="response"></a>Отклик
@@ -102,6 +102,10 @@ Content-Length: 166
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-playprompt-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-playprompt-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

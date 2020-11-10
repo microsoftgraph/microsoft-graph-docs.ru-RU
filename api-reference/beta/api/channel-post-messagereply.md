@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: abf5884d42086f1944f69f3a598299407e04c75f
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: c45aa4e0d3471d074dc0e15d89fad1a4311d5b40
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796565"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959112"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>Ответ на сообщение в канале
 
@@ -33,8 +33,8 @@ ms.locfileid: "48796565"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Чаннелмессаже. Send, Group. ReadWrite. ALL |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | Чаннелмессаже. Send, Group. ReadWrite. ALL |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Teamwork.Migrate.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -92,6 +92,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-reply-message-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-reply-message-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### <a name="response"></a>Отклик
@@ -145,7 +149,7 @@ Content-length: 160
 
 ### <a name="example-2-import-messages"></a>Пример 2: Импорт сообщений
 
-> **Примечание** . `Teamwork.Migrate.All` для этого сценария необходимо указать область разрешений.
+> **Примечание**. `Teamwork.Migrate.All` для этого сценария необходимо указать область разрешений.
 
 #### <a name="request"></a>Запрос
 <!-- { "blockType": "ignored" } -->

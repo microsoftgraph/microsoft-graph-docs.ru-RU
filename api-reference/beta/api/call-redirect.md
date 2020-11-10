@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cf1d09a2ea0832bfc4e6ab065f47b525a715b742
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0a977126c2360d730b553136754f95d69bc710f8
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987311"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959543"
 ---
 # <a name="call-redirect"></a>вызов: redirect
 
@@ -48,7 +48,7 @@ POST /communications/calls/{id}/redirect
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -57,8 +57,8 @@ POST /communications/calls/{id}/redirect
 |targets|Коллекция [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Целевые участники операции перенаправления. Если указано несколько целевых объектов, вызывается выполнение. Это означает, что все целевые объекты будут находиться в одном и том же периоде, и будет подключен только первый целевой объект. Поддерживается до 25 целевых объектов для выполнение.
 |таржетдиспоситион|String|Устаревшие Возможные значения: `default` , `simultaneousRing` , `forward` . Этот параметр является нерекомендуемым, мы автоматически вычислим, является ли это вызов переадресацией или вызовом выполнение из указанного количества целевых объектов.|
 |timeout|Int32|Время ожидания (в секундах) для операции перенаправления. Диапазон значений времени ожидания составляет от 15 до 90 секунд включительно. Значение времени ожидания по умолчанию составляет 55 секунд для одной цели и 60 секунд для нескольких целевых объектов (подлежит изменению). |
-|масккалли|Boolean|Указывает, следует ли скрыть вызываемого абонента от вызывающего абонента. Если этот параметр имеет значение true, идентификатором вызываемого абонента является "bot". Значение по умолчанию: false.|
-|масккаллер|Boolean|Указывает, следует ли скрыть абонента от вызываемого абонента. Если задано значение true, идентификатором звонящего является идентификатор Bot. Значение по умолчанию: false.|
+|масккалли|Логический|Указывает, следует ли скрыть вызываемого абонента от вызывающего абонента. Если этот параметр имеет значение true, идентификатором вызываемого абонента является "bot". Значение по умолчанию: false.|
+|масккаллер|Логический|Указывает, следует ли скрыть абонента от вызываемого абонента. Если задано значение true, идентификатором звонящего является идентификатор Bot. Значение по умолчанию: false.|
 |callbackUri|String|Это позволяет Боты предоставить определенный URI обратного вызова для текущего вызова, чтобы получать уведомления позже. Если это свойство не задано, вместо него будет использоваться глобальный URI обратного вызова Bot. Это должно быть `https` .|
 
 ## <a name="response"></a>Отклик
@@ -161,6 +161,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/call-redirect-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

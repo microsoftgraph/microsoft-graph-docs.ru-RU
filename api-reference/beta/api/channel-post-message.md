@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f4b5e5c0d686576ef23ae87b6a6614b1dcaef1a2
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: f7bdb9322b59e78b5b5fe363cccd0713314f3a70
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796593"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959152"
 ---
 # <a name="create-chatmessage-in-channel"></a>Создание chatMessage в канале
 
@@ -30,8 +30,8 @@ ms.locfileid: "48796593"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | Чаннелмессаже. Send, Group. ReadWrite. ALL |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (рабочая или учебная учетная запись)     | Чаннелмессаже. Send, Group. ReadWrite. ALL |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Teamwork.Migrate.All |
 
 <!-- markdownlint-disable MD024 -->
@@ -100,6 +100,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### <a name="response"></a>Отклик
@@ -156,7 +160,7 @@ Content-length: 160
 
 ### <a name="example-2-import-messages-text-only"></a>Пример 2: Импорт сообщений (только текст)
 
-> **Примечание** . `Teamwork.Migrate.All` для этого сценария необходимо указать область разрешений.
+> **Примечание**. `Teamwork.Migrate.All` для этого сценария необходимо указать область разрешений.
 
 #### <a name="request"></a>Запрос
 <!-- { "blockType": "ignored" } -->
@@ -248,7 +252,7 @@ HTTP/1.1 200 OK
 > [!NOTE]
 > В настоящее время встроенными образами является единственный тип мультимедиа, поддерживаемый схемой API импорта сообщений.
 
-> **Примечание** . `Teamwork.Migrate.All` для этого сценария необходимо указать область разрешений.
+> **Примечание**. `Teamwork.Migrate.All` для этого сценария необходимо указать область разрешений.
 
 #### <a name="request"></a>Запрос
 <!-- { "blockType": "ignored" } -->

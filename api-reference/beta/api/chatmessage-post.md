@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 93b5d1487bc358f71fa3e7db6ad91eb7292ea389
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 179f3f3ccd4afae57ca5c34c2789a311ecb69bd0
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48371818"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48958136"
 ---
 # <a name="send-chatmessage-in-a-channel-or-a-chat"></a>Отправка chatMessage в канале или чате
 
@@ -20,9 +20,9 @@ ms.locfileid: "48371818"
 
 Создание нового [chatMessage](../resources/chatmessage.md) в указанном [канале](../resources/channel.md) или [чате](../resources/chat.md).
 
-> **Note**: мы не рекомендуем использовать этот API для переноса данных. Пропускная способность, необходимая для обычной миграции, отсутствует.
+> **Note** : мы не рекомендуем использовать этот API для переноса данных. Пропускная способность, необходимая для обычной миграции, отсутствует.
 
-> **Note**: нарушение [условий использования](/legal/microsoft-apis/terms-of-use) Microsoft Teams в качестве файла журнала. Отправлять только сообщения, которые пользователи смогут читать.
+> **Note** : нарушение [условий использования](/legal/microsoft-apis/terms-of-use) Microsoft Teams в качестве файла журнала. Отправлять только сообщения, которые пользователи смогут читать.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -117,6 +117,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-channel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-channel-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -366,7 +370,7 @@ Content-length: 160
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
->**Примечание:** Файл уже должен находиться в SharePoint. Чтобы найти свойства файла, получите **driveItem** для файла. Например,/дривес/{ИД}/итемс/{ИД}. Идентификатор вложения — это идентификатор GUID в элементе **ETag** объекта **DriveItem**, вложение **ContentURL** — это **webUrl** папки **driveItem**плюс имя **driveItem**, а имя вложения — имя **driveItem**.
+>**Примечание:** Файл уже должен находиться в SharePoint. Чтобы найти свойства файла, получите **driveItem** для файла. Например,/дривес/{ИД}/итемс/{ИД}. Идентификатор вложения — это идентификатор GUID в элементе **ETag** объекта **DriveItem** , вложение **ContentURL** — это **webUrl** папки **driveItem** плюс имя **driveItem** , а имя вложения — имя **driveItem**.
 
 <!-- {
   "blockType": "request",
@@ -540,7 +544,7 @@ Content-length: 160
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-> **Примечание:** **Темпорарид** в коллекции **хостедконтентс** — это случайный идентификатор, который должен быть одинаковым для элементов **содержимого** (в **вложениях**) и **хостедконтентс** . (Обратите внимание, что для **темпорарид** задано значение **1** , а ссылка в содержимом как `../hostedContents/1/$value` .)
+> **Примечание:** **Темпорарид** в коллекции **хостедконтентс** — это случайный идентификатор, который должен быть одинаковым для элементов **содержимого** (в **вложениях** ) и **хостедконтентс** . (Обратите внимание, что для **темпорарид** задано значение **1** , а ссылка в содержимом как `../hostedContents/1/$value` .)
 
 для **contentBytes** должны быть заданы байты двоичных строк в кодировке Base64. Это можно сделать в C# с помощью `Convert.ToBase64String(File.ReadAllBytes("image.png"));`
 
