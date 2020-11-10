@@ -5,12 +5,12 @@ localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5c773841c9a1843e025c19cd1d94098508f9537e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bbfac68a2e2cdec800b1ff95536dacc8b4ea711b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48008801"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48962969"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryObject: Валидатепропертиес
 
@@ -59,7 +59,7 @@ POST /directoryObjects/validateProperties
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении и отсутствии ошибок проверки метод возвращает `204 No Content` код отклика. В тексте отклика не возвращается никаких данных.
+При успешном выполнении и отсутствии ошибок проверки метод возвращает `204 No Content` код отклика. Метод не возвращает данные в теле отклика.
 
 Если запрос является недопустимым, метод возвращает `400 Bad Request` код отклика. В тексте отклика возвращается сообщение об ошибке со сведениями о недопустимом запросе.
 
@@ -98,6 +98,10 @@ Content-length: 164
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/directoryobject-validateproperties-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/directoryobject-validateproperties-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
