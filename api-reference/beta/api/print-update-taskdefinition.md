@@ -5,62 +5,62 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: f029dd1e5463d6d69e78e76a90504ab610388533
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bd3b7059b46feaac596edb2618e3aba4a7126c21
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035917"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48966922"
 ---
-# <a name="update-taskdefinition"></a><span data-ttu-id="0d07a-103">Обновление taskDefinition</span><span class="sxs-lookup"><span data-stu-id="0d07a-103">Update taskDefinition</span></span>
+# <a name="update-taskdefinition"></a><span data-ttu-id="50922-103">Обновление taskDefinition</span><span class="sxs-lookup"><span data-stu-id="50922-103">Update taskDefinition</span></span>
 
-<span data-ttu-id="0d07a-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="0d07a-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="50922-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="50922-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0d07a-105">Обновление определения задачи.</span><span class="sxs-lookup"><span data-stu-id="0d07a-105">Update a task definition.</span></span>
+<span data-ttu-id="50922-105">Обновление определения задачи.</span><span class="sxs-lookup"><span data-stu-id="50922-105">Update a task definition.</span></span>
 
-<span data-ttu-id="0d07a-106">Сведения о том, как использовать этот API для добавления поддержки печати по запросу к универсальной печати, [можно узнать в статье расширение универсальной печати для поддержки печати по запросу](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).</span><span class="sxs-lookup"><span data-stu-id="0d07a-106">For details about how to use this API to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).</span></span>
+<span data-ttu-id="50922-106">Сведения о том, как использовать этот API для добавления поддержки печати по запросу к универсальной печати, [можно узнать в статье расширение универсальной печати для поддержки печати по запросу](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).</span><span class="sxs-lookup"><span data-stu-id="50922-106">For details about how to use this API to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0d07a-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0d07a-107">Permissions</span></span>
-<span data-ttu-id="0d07a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0d07a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="50922-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="50922-107">Permissions</span></span>
+<span data-ttu-id="50922-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="50922-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="0d07a-110">В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.</span><span class="sxs-lookup"><span data-stu-id="0d07a-110">In addition to the following permissions, the user's tenant must have an active Universal Print subscription.</span></span>
+<span data-ttu-id="50922-110">В дополнение к следующим разрешениям клиент пользователя должен иметь активную универсальную подписку на печать.</span><span class="sxs-lookup"><span data-stu-id="50922-110">In addition to the following permissions, the user's tenant must have an active Universal Print subscription.</span></span>
 
-|<span data-ttu-id="0d07a-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0d07a-111">Permission type</span></span> | <span data-ttu-id="0d07a-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0d07a-112">Permissions (from least to most privileged)</span></span> |
+|<span data-ttu-id="50922-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="50922-111">Permission type</span></span> | <span data-ttu-id="50922-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="50922-112">Permissions (from least to most privileged)</span></span> |
 |:---------------|:--------------------------------------------|
-|<span data-ttu-id="0d07a-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0d07a-113">Delegated (work or school account)</span></span>| <span data-ttu-id="0d07a-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0d07a-114">Not supported.</span></span> |
-|<span data-ttu-id="0d07a-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0d07a-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0d07a-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0d07a-116">Not Supported.</span></span>|
-|<span data-ttu-id="0d07a-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0d07a-117">Application</span></span>| <span data-ttu-id="0d07a-118">PrintTaskDefinition.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0d07a-118">PrintTaskDefinition.ReadWrite.All</span></span> |
+|<span data-ttu-id="50922-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="50922-113">Delegated (work or school account)</span></span>| <span data-ttu-id="50922-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="50922-114">Not supported.</span></span> |
+|<span data-ttu-id="50922-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="50922-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="50922-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="50922-116">Not Supported.</span></span>|
+|<span data-ttu-id="50922-117">Для приложения</span><span class="sxs-lookup"><span data-stu-id="50922-117">Application</span></span>| <span data-ttu-id="50922-118">PrintTaskDefinition.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="50922-118">PrintTaskDefinition.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0d07a-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0d07a-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="50922-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="50922-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /print/taskDefinitions/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0d07a-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0d07a-120">Request headers</span></span>
-| <span data-ttu-id="0d07a-121">Имя</span><span class="sxs-lookup"><span data-stu-id="0d07a-121">Name</span></span>      |<span data-ttu-id="0d07a-122">Описание</span><span class="sxs-lookup"><span data-stu-id="0d07a-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="50922-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="50922-120">Request headers</span></span>
+| <span data-ttu-id="50922-121">Имя</span><span class="sxs-lookup"><span data-stu-id="50922-121">Name</span></span>      |<span data-ttu-id="50922-122">Описание</span><span class="sxs-lookup"><span data-stu-id="50922-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="0d07a-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0d07a-123">Authorization</span></span> | <span data-ttu-id="0d07a-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0d07a-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="0d07a-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="0d07a-126">Content-type</span></span>  | <span data-ttu-id="0d07a-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0d07a-p103">application/json. Required.</span></span>|
+| <span data-ttu-id="50922-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="50922-123">Authorization</span></span> | <span data-ttu-id="50922-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="50922-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="50922-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="50922-126">Content-type</span></span>  | <span data-ttu-id="50922-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="50922-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="0d07a-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="0d07a-129">Request body</span></span>
-<span data-ttu-id="0d07a-130">В тексте запроса укажите значения для соответствующих полей [принттаскдефинитион](../resources/printtaskdefinition.md) , которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="0d07a-130">In the request body, supply the values for the relevant [printTaskDefinition](../resources/printtaskdefinition.md) fields that should be updated.</span></span> <span data-ttu-id="0d07a-131">Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.</span><span class="sxs-lookup"><span data-stu-id="0d07a-131">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="0d07a-132">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="0d07a-132">For best performance, don't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="50922-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="50922-129">Request body</span></span>
+<span data-ttu-id="50922-130">В тексте запроса укажите значения для соответствующих полей [принттаскдефинитион](../resources/printtaskdefinition.md) , которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="50922-130">In the request body, supply the values for the relevant [printTaskDefinition](../resources/printtaskdefinition.md) fields that should be updated.</span></span> <span data-ttu-id="50922-131">Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств.</span><span class="sxs-lookup"><span data-stu-id="50922-131">Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.</span></span> <span data-ttu-id="50922-132">Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="50922-132">For best performance, don't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="0d07a-133">Свойство</span><span class="sxs-lookup"><span data-stu-id="0d07a-133">Property</span></span>     | <span data-ttu-id="0d07a-134">Тип</span><span class="sxs-lookup"><span data-stu-id="0d07a-134">Type</span></span>        | <span data-ttu-id="0d07a-135">Описание</span><span class="sxs-lookup"><span data-stu-id="0d07a-135">Description</span></span> |
+| <span data-ttu-id="50922-133">Свойство</span><span class="sxs-lookup"><span data-stu-id="50922-133">Property</span></span>     | <span data-ttu-id="50922-134">Тип</span><span class="sxs-lookup"><span data-stu-id="50922-134">Type</span></span>        | <span data-ttu-id="50922-135">Описание</span><span class="sxs-lookup"><span data-stu-id="50922-135">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="0d07a-136">displayName</span><span class="sxs-lookup"><span data-stu-id="0d07a-136">displayName</span></span>|<span data-ttu-id="0d07a-137">String</span><span class="sxs-lookup"><span data-stu-id="0d07a-137">String</span></span>|<span data-ttu-id="0d07a-138">Имя Принттаскдефинитион.</span><span class="sxs-lookup"><span data-stu-id="0d07a-138">The name of the printTaskDefinition.</span></span>|
-|<span data-ttu-id="0d07a-139">createdBy</span><span class="sxs-lookup"><span data-stu-id="0d07a-139">createdBy</span></span>|<span data-ttu-id="0d07a-140">String</span><span class="sxs-lookup"><span data-stu-id="0d07a-140">String</span></span>|<span data-ttu-id="0d07a-141">Сведения о приложении, которое создало определение задачи.</span><span class="sxs-lookup"><span data-stu-id="0d07a-141">Information about the app that created the task definition.</span></span> <span data-ttu-id="0d07a-142">`createdBy.displayName`Можно обновить только свойство.</span><span class="sxs-lookup"><span data-stu-id="0d07a-142">Only the `createdBy.displayName` property can be updated.</span></span>|
+|<span data-ttu-id="50922-136">displayName</span><span class="sxs-lookup"><span data-stu-id="50922-136">displayName</span></span>|<span data-ttu-id="50922-137">String</span><span class="sxs-lookup"><span data-stu-id="50922-137">String</span></span>|<span data-ttu-id="50922-138">Имя Принттаскдефинитион.</span><span class="sxs-lookup"><span data-stu-id="50922-138">The name of the printTaskDefinition.</span></span>|
+|<span data-ttu-id="50922-139">createdBy</span><span class="sxs-lookup"><span data-stu-id="50922-139">createdBy</span></span>|<span data-ttu-id="50922-140">String</span><span class="sxs-lookup"><span data-stu-id="50922-140">String</span></span>|<span data-ttu-id="50922-141">Сведения о приложении, которое создало определение задачи.</span><span class="sxs-lookup"><span data-stu-id="50922-141">Information about the app that created the task definition.</span></span> <span data-ttu-id="50922-142">`createdBy.displayName`Можно обновить только свойство.</span><span class="sxs-lookup"><span data-stu-id="50922-142">Only the `createdBy.displayName` property can be updated.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="0d07a-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="0d07a-143">Response</span></span>
-<span data-ttu-id="0d07a-p106">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="0d07a-p106">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="0d07a-146">Пример</span><span class="sxs-lookup"><span data-stu-id="0d07a-146">Example</span></span>
-### <a name="request"></a><span data-ttu-id="0d07a-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="0d07a-147">Request</span></span>
-<span data-ttu-id="0d07a-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0d07a-148">The following is an example of the request.</span></span>
+## <a name="response"></a><span data-ttu-id="50922-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="50922-143">Response</span></span>
+<span data-ttu-id="50922-p106">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="50922-p106">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="50922-146">Пример</span><span class="sxs-lookup"><span data-stu-id="50922-146">Example</span></span>
+### <a name="request"></a><span data-ttu-id="50922-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="50922-147">Request</span></span>
+<span data-ttu-id="50922-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="50922-148">The following is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="0d07a-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="0d07a-149">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="50922-149">HTTP</span><span class="sxs-lookup"><span data-stu-id="50922-149">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "print_update_taskdefinition"
@@ -77,16 +77,20 @@ Content-length: 122
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="0d07a-150">C#</span><span class="sxs-lookup"><span data-stu-id="0d07a-150">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="50922-150">C#</span><span class="sxs-lookup"><span data-stu-id="50922-150">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/print-update-taskdefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="0d07a-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="0d07a-151">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="50922-151">JavaScript</span><span class="sxs-lookup"><span data-stu-id="50922-151">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/print-update-taskdefinition-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="0d07a-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="0d07a-152">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="50922-152">Objective-C</span><span class="sxs-lookup"><span data-stu-id="50922-152">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/print-update-taskdefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="50922-153">Java</span><span class="sxs-lookup"><span data-stu-id="50922-153">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/print-update-taskdefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -94,8 +98,8 @@ Content-length: 122
 
 ---
 
-### <a name="response"></a><span data-ttu-id="0d07a-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="0d07a-153">Response</span></span>
-<span data-ttu-id="0d07a-154">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="0d07a-154">The following is an example of the response.</span></span>
+### <a name="response"></a><span data-ttu-id="50922-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="50922-154">Response</span></span>
+<span data-ttu-id="50922-155">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="50922-155">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response"
 } -->
