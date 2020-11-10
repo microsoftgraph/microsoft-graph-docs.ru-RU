@@ -5,38 +5,38 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 047dd423f60375fc65f803cbe4c734b02a5c4040
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 2fdbe67e61afea72f298224769f4afa788e5b463
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457844"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965041"
 ---
-# <a name="grant-an-approleassignment-to-a-group"></a><span data-ttu-id="b6114-103">Предоставление appRoleAssignment группе</span><span class="sxs-lookup"><span data-stu-id="b6114-103">Grant an appRoleAssignment to a group</span></span>
+# <a name="grant-an-approleassignment-to-a-group"></a><span data-ttu-id="f7191-103">Предоставление appRoleAssignment группе</span><span class="sxs-lookup"><span data-stu-id="f7191-103">Grant an appRoleAssignment to a group</span></span>
 
-<span data-ttu-id="b6114-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="b6114-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f7191-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f7191-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b6114-105">Используйте этот API, чтобы назначить роль приложения группе.</span><span class="sxs-lookup"><span data-stu-id="b6114-105">Use this API to assign an app role to a group.</span></span> <span data-ttu-id="b6114-106">Роль будет считаться назначенной всем непосредственным участникам группы.</span><span class="sxs-lookup"><span data-stu-id="b6114-106">All direct members of the group will be considered assigned.</span></span> <span data-ttu-id="b6114-107">Чтобы предоставить назначение роли приложения группе, нужны три идентификатора:</span><span class="sxs-lookup"><span data-stu-id="b6114-107">To grant an app role assignment to a group, you need three identifiers:</span></span>
+<span data-ttu-id="f7191-105">Используйте этот API, чтобы назначить роль приложения группе.</span><span class="sxs-lookup"><span data-stu-id="f7191-105">Use this API to assign an app role to a group.</span></span> <span data-ttu-id="f7191-106">Роль будет считаться назначенной всем непосредственным участникам группы.</span><span class="sxs-lookup"><span data-stu-id="f7191-106">All direct members of the group will be considered assigned.</span></span> <span data-ttu-id="f7191-107">Чтобы предоставить назначение роли приложения группе, нужны три идентификатора:</span><span class="sxs-lookup"><span data-stu-id="f7191-107">To grant an app role assignment to a group, you need three identifiers:</span></span>
 
-- <span data-ttu-id="b6114-108">`principalId`: `id` группы, которой нужно назначить роль приложения.</span><span class="sxs-lookup"><span data-stu-id="b6114-108">`principalId`: The `id` of the group to which you are assigning the app role.</span></span>
-- <span data-ttu-id="b6114-109">`resourceId`: `id` ресурса `servicePrincipal`, который определяет роль приложения.</span><span class="sxs-lookup"><span data-stu-id="b6114-109">`resourceId`: The `id` of the resource `servicePrincipal` which has defined the app role.</span></span>
-- <span data-ttu-id="b6114-110">`appRoleId`: `id` объекта `appRole` (определенного в субъекте-службе ресурса) для назначения группе.</span><span class="sxs-lookup"><span data-stu-id="b6114-110">`appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the group.</span></span>
+- <span data-ttu-id="f7191-108">`principalId`: `id` группы, которой нужно назначить роль приложения.</span><span class="sxs-lookup"><span data-stu-id="f7191-108">`principalId`: The `id` of the group to which you are assigning the app role.</span></span>
+- <span data-ttu-id="f7191-109">`resourceId`: `id` ресурса `servicePrincipal`, который определяет роль приложения.</span><span class="sxs-lookup"><span data-stu-id="f7191-109">`resourceId`: The `id` of the resource `servicePrincipal` which has defined the app role.</span></span>
+- <span data-ttu-id="f7191-110">`appRoleId`: `id` объекта `appRole` (определенного в субъекте-службе ресурса) для назначения группе.</span><span class="sxs-lookup"><span data-stu-id="f7191-110">`appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the group.</span></span>
 
-<span data-ttu-id="b6114-111">Чтобы [использовать группу для управления доступом к приложениям](/azure/active-directory/users-groups-roles/groups-saasapps), могут потребоваться дополнительные лицензии.</span><span class="sxs-lookup"><span data-stu-id="b6114-111">Additional licenses might be required to [use a group to manage access to applications](/azure/active-directory/users-groups-roles/groups-saasapps).</span></span>
+<span data-ttu-id="f7191-111">Чтобы [использовать группу для управления доступом к приложениям](/azure/active-directory/users-groups-roles/groups-saasapps), могут потребоваться дополнительные лицензии.</span><span class="sxs-lookup"><span data-stu-id="f7191-111">Additional licenses might be required to [use a group to manage access to applications](/azure/active-directory/users-groups-roles/groups-saasapps).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b6114-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b6114-112">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f7191-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f7191-112">Permissions</span></span>
 
-<span data-ttu-id="b6114-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b6114-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f7191-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f7191-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b6114-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b6114-115">Permission type</span></span>      | <span data-ttu-id="b6114-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b6114-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f7191-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f7191-115">Permission type</span></span>      | <span data-ttu-id="f7191-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f7191-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b6114-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b6114-117">Delegated (work or school account)</span></span> | <span data-ttu-id="b6114-118">AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="b6114-118">AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="b6114-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b6114-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b6114-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b6114-120">Not supported.</span></span>    |
-|<span data-ttu-id="b6114-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b6114-121">Application</span></span> | <span data-ttu-id="b6114-122">AppRoleAssignment.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b6114-122">AppRoleAssignment.ReadWrite.All</span></span> |
+|<span data-ttu-id="f7191-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f7191-117">Delegated (work or school account)</span></span> | <span data-ttu-id="f7191-118">AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f7191-118">AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="f7191-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f7191-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f7191-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f7191-120">Not supported.</span></span>    |
+|<span data-ttu-id="f7191-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f7191-121">Application</span></span> | <span data-ttu-id="f7191-122">AppRoleAssignment.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f7191-122">AppRoleAssignment.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b6114-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b6114-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f7191-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f7191-123">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -44,31 +44,31 @@ POST /groups/{id}/appRoleAssignments
 ```
 
 > [!NOTE]
-> <span data-ttu-id="b6114-124">Рекомендуется создавать назначения ролей приложения, используя отношение `appRoleAssignedTo` _ресурса_ субъекта-службы вместо отношения `appRoleAssignments` назначенного пользователя, группы или субъекта-службы.</span><span class="sxs-lookup"><span data-stu-id="b6114-124">As a best practice, we recommend creating app role assignments through the `appRoleAssignedTo` relationship of the _resource_ service principal, instead of the `appRoleAssignments` relationship of the assigned user, group, or service principal.</span></span>
+> <span data-ttu-id="f7191-124">Рекомендуется создавать назначения ролей приложения, используя отношение `appRoleAssignedTo` _ресурса_ субъекта-службы вместо отношения `appRoleAssignments` назначенного пользователя, группы или субъекта-службы.</span><span class="sxs-lookup"><span data-stu-id="f7191-124">As a best practice, we recommend creating app role assignments through the `appRoleAssignedTo` relationship of the _resource_ service principal, instead of the `appRoleAssignments` relationship of the assigned user, group, or service principal.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="b6114-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b6114-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f7191-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f7191-125">Request headers</span></span>
 
-| <span data-ttu-id="b6114-126">Имя</span><span class="sxs-lookup"><span data-stu-id="b6114-126">Name</span></span>       | <span data-ttu-id="b6114-127">Описание</span><span class="sxs-lookup"><span data-stu-id="b6114-127">Description</span></span>|
+| <span data-ttu-id="f7191-126">Имя</span><span class="sxs-lookup"><span data-stu-id="f7191-126">Name</span></span>       | <span data-ttu-id="f7191-127">Описание</span><span class="sxs-lookup"><span data-stu-id="f7191-127">Description</span></span>|
 |:-----------|:----------|
-| <span data-ttu-id="b6114-128">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b6114-128">Authorization</span></span> | <span data-ttu-id="b6114-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b6114-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="b6114-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="b6114-131">Content-type</span></span> | <span data-ttu-id="b6114-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b6114-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="f7191-128">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f7191-128">Authorization</span></span> | <span data-ttu-id="f7191-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f7191-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="f7191-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f7191-131">Content-type</span></span> | <span data-ttu-id="f7191-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f7191-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b6114-134">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b6114-134">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f7191-134">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f7191-134">Request body</span></span>
 
-<span data-ttu-id="b6114-135">В тексте запроса укажите представление JSON для объекта [appRoleAssignment](../resources/approleassignment.md).</span><span class="sxs-lookup"><span data-stu-id="b6114-135">In the request body, supply a JSON representation of an [appRoleAssignment](../resources/approleassignment.md) object.</span></span>
+<span data-ttu-id="f7191-135">В тексте запроса укажите представление JSON для объекта [appRoleAssignment](../resources/approleassignment.md).</span><span class="sxs-lookup"><span data-stu-id="f7191-135">In the request body, supply a JSON representation of an [appRoleAssignment](../resources/approleassignment.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b6114-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="b6114-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f7191-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="f7191-136">Response</span></span>
 
-<span data-ttu-id="b6114-137">В случае успеха этот метод возвращает в тексте отклика код отклика `201 Created` и объект [appRoleAssignment](../resources/approleassignment.md).</span><span class="sxs-lookup"><span data-stu-id="b6114-137">If successful, this method returns a `201 Created` response code and an [appRoleAssignment](../resources/approleassignment.md) object in the response body.</span></span>
+<span data-ttu-id="f7191-137">В случае успеха этот метод возвращает в тексте отклика код отклика `201 Created` и объект [appRoleAssignment](../resources/approleassignment.md).</span><span class="sxs-lookup"><span data-stu-id="f7191-137">If successful, this method returns a `201 Created` response code and an [appRoleAssignment](../resources/approleassignment.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="b6114-138">Примеры</span><span class="sxs-lookup"><span data-stu-id="b6114-138">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f7191-138">Примеры</span><span class="sxs-lookup"><span data-stu-id="f7191-138">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="b6114-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="b6114-139">Request</span></span>
+### <a name="request"></a><span data-ttu-id="f7191-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="f7191-139">Request</span></span>
 
-<span data-ttu-id="b6114-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b6114-140">Here is an example of the request.</span></span>
+<span data-ttu-id="f7191-140">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f7191-140">Here is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="b6114-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="b6114-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f7191-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="f7191-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_create_approleassignment"
@@ -85,28 +85,32 @@ Content-Length: 110
   "appRoleId": "appRoleId-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="b6114-142">C#</span><span class="sxs-lookup"><span data-stu-id="b6114-142">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f7191-142">C#</span><span class="sxs-lookup"><span data-stu-id="f7191-142">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-create-approleassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="b6114-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="b6114-143">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f7191-143">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f7191-143">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/group-create-approleassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="b6114-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="b6114-144">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f7191-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f7191-144">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-create-approleassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="f7191-145">Java</span><span class="sxs-lookup"><span data-stu-id="f7191-145">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-create-approleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-<span data-ttu-id="b6114-145">В этом примере `{id}` и `{principalId-value}` станут `id` назначенной группы.</span><span class="sxs-lookup"><span data-stu-id="b6114-145">In this example, `{id}` and `{principalId-value}` would both be the `id` of the assigned group.</span></span>
+<span data-ttu-id="f7191-146">В этом примере `{id}` и `{principalId-value}` станут `id` назначенной группы.</span><span class="sxs-lookup"><span data-stu-id="f7191-146">In this example, `{id}` and `{principalId-value}` would both be the `id` of the assigned group.</span></span>
 
-### <a name="response"></a><span data-ttu-id="b6114-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="b6114-146">Response</span></span>
+### <a name="response"></a><span data-ttu-id="f7191-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="f7191-147">Response</span></span>
 
-<span data-ttu-id="b6114-147">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b6114-147">Here is an example of the response.</span></span> 
+<span data-ttu-id="f7191-148">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f7191-148">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="b6114-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b6114-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="f7191-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f7191-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

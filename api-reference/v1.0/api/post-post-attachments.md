@@ -5,68 +5,68 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1dfb6e35caccdfd943e1c701bc265bdcc91c92e8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 912506552c71bf1e6424f5af42ca4ddb46cd311a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051860"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48964319"
 ---
-# <a name="add-attachment"></a><span data-ttu-id="555f1-103">Добавление вложения</span><span class="sxs-lookup"><span data-stu-id="555f1-103">Add attachment</span></span>
+# <a name="add-attachment"></a><span data-ttu-id="ce8e6-103">Добавление вложения</span><span class="sxs-lookup"><span data-stu-id="ce8e6-103">Add attachment</span></span>
 
-<span data-ttu-id="555f1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="555f1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="ce8e6-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ce8e6-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="555f1-105">Добавление [вложения](../resources/attachment.md) при создании записи группы.</span><span class="sxs-lookup"><span data-stu-id="555f1-105">Add an [attachment](../resources/attachment.md) when creating a group post.</span></span>
+<span data-ttu-id="ce8e6-105">Добавление [вложения](../resources/attachment.md) при создании записи группы.</span><span class="sxs-lookup"><span data-stu-id="ce8e6-105">Add an [attachment](../resources/attachment.md) when creating a group post.</span></span>
 
-<span data-ttu-id="555f1-106">Эта операция ограничит размер вложения, которое можно добавить в течение 4 МБ.</span><span class="sxs-lookup"><span data-stu-id="555f1-106">This operation limits the size of the attachment you can add to under 4 MB.</span></span>
+<span data-ttu-id="ce8e6-106">Эта операция ограничит размер вложения, которое можно добавить в течение 4 МБ.</span><span class="sxs-lookup"><span data-stu-id="ce8e6-106">This operation limits the size of the attachment you can add to under 4 MB.</span></span>
 
-<span data-ttu-id="555f1-107">Допустимые типы вложений:</span><span class="sxs-lookup"><span data-stu-id="555f1-107">An attachment can be one of the following types:</span></span>
+<span data-ttu-id="ce8e6-107">Допустимые типы вложений:</span><span class="sxs-lookup"><span data-stu-id="ce8e6-107">An attachment can be one of the following types:</span></span>
 
-* <span data-ttu-id="555f1-108">файл (ресурс [fileAttachment](../resources/fileattachment.md));</span><span class="sxs-lookup"><span data-stu-id="555f1-108">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
-* <span data-ttu-id="555f1-109">элемент (контакт, событие или сообщение, представленные ресурсом [itemAttachment](../resources/itemattachment.md));</span><span class="sxs-lookup"><span data-stu-id="555f1-109">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span>
-* <span data-ttu-id="555f1-110">ссылка на файл (ресурс [referenceAttachment](../resources/referenceattachment.md)).</span><span class="sxs-lookup"><span data-stu-id="555f1-110">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
+* <span data-ttu-id="ce8e6-108">файл (ресурс [fileAttachment](../resources/fileattachment.md));</span><span class="sxs-lookup"><span data-stu-id="ce8e6-108">A file ([fileAttachment](../resources/fileattachment.md) resource).</span></span>
+* <span data-ttu-id="ce8e6-109">элемент (контакт, событие или сообщение, представленные ресурсом [itemAttachment](../resources/itemattachment.md));</span><span class="sxs-lookup"><span data-stu-id="ce8e6-109">An item (contact, event or message, represented by an [itemAttachment](../resources/itemattachment.md) resource).</span></span>
+* <span data-ttu-id="ce8e6-110">ссылка на файл (ресурс [referenceAttachment](../resources/referenceattachment.md)).</span><span class="sxs-lookup"><span data-stu-id="ce8e6-110">A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).</span></span>
 
-<span data-ttu-id="555f1-111">Все эти типы ресурсов вложений являются производными от ресурса [attachment](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="555f1-111">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span> 
+<span data-ttu-id="ce8e6-111">Все эти типы ресурсов вложений являются производными от ресурса [attachment](../resources/attachment.md).</span><span class="sxs-lookup"><span data-stu-id="ce8e6-111">All these types of attachment resources are derived from the [attachment](../resources/attachment.md) resource.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="555f1-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="555f1-112">Permissions</span></span>
-<span data-ttu-id="555f1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="555f1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ce8e6-112">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ce8e6-112">Permissions</span></span>
+<span data-ttu-id="ce8e6-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ce8e6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="555f1-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="555f1-115">Permission type</span></span>      | <span data-ttu-id="555f1-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="555f1-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ce8e6-115">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ce8e6-115">Permission type</span></span>      | <span data-ttu-id="ce8e6-116">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ce8e6-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="555f1-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="555f1-117">Delegated (work or school account)</span></span> | <span data-ttu-id="555f1-118">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="555f1-118">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="555f1-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="555f1-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="555f1-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="555f1-120">Not supported.</span></span>    |
-|<span data-ttu-id="555f1-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="555f1-121">Application</span></span> | <span data-ttu-id="555f1-122">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="555f1-122">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="ce8e6-117">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ce8e6-117">Delegated (work or school account)</span></span> | <span data-ttu-id="ce8e6-118">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ce8e6-118">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ce8e6-119">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ce8e6-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ce8e6-120">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ce8e6-120">Not supported.</span></span>    |
+|<span data-ttu-id="ce8e6-121">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ce8e6-121">Application</span></span> | <span data-ttu-id="ce8e6-122">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ce8e6-122">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="555f1-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="555f1-123">HTTP request</span></span>
-<span data-ttu-id="555f1-124">Включите вложение при создании [записи](../resources/post.md) в [conversationThread](../resources/conversationthread.md) группы.</span><span class="sxs-lookup"><span data-stu-id="555f1-124">Include an attachment when creating a [post](../resources/post.md) in a [conversationThread](../resources/conversationthread.md) of a group.</span></span> <span data-ttu-id="555f1-125">Указать родительскую [беседу](../resources/conversation.md) необязательно.</span><span class="sxs-lookup"><span data-stu-id="555f1-125">Specifying the parent [conversation](../resources/conversation.md) is optional.</span></span>
+## <a name="http-request"></a><span data-ttu-id="ce8e6-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ce8e6-123">HTTP request</span></span>
+<span data-ttu-id="ce8e6-124">Включите вложение при создании [записи](../resources/post.md) в [conversationThread](../resources/conversationthread.md) группы.</span><span class="sxs-lookup"><span data-stu-id="ce8e6-124">Include an attachment when creating a [post](../resources/post.md) in a [conversationThread](../resources/conversationthread.md) of a group.</span></span> <span data-ttu-id="ce8e6-125">Указать родительскую [беседу](../resources/conversation.md) необязательно.</span><span class="sxs-lookup"><span data-stu-id="ce8e6-125">Specifying the parent [conversation](../resources/conversation.md) is optional.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/threads/{id}/reply
 POST /groups/{id}/conversations/{id}/threads/{id}/reply
 ```
-## <a name="request-headers"></a><span data-ttu-id="555f1-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="555f1-126">Request headers</span></span>
-| <span data-ttu-id="555f1-127">Заголовок</span><span class="sxs-lookup"><span data-stu-id="555f1-127">Header</span></span>       | <span data-ttu-id="555f1-128">Значение</span><span class="sxs-lookup"><span data-stu-id="555f1-128">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="ce8e6-126">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ce8e6-126">Request headers</span></span>
+| <span data-ttu-id="ce8e6-127">Заголовок</span><span class="sxs-lookup"><span data-stu-id="ce8e6-127">Header</span></span>       | <span data-ttu-id="ce8e6-128">Значение</span><span class="sxs-lookup"><span data-stu-id="ce8e6-128">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="555f1-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="555f1-129">Authorization</span></span>  | <span data-ttu-id="555f1-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="555f1-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="ce8e6-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ce8e6-129">Authorization</span></span>  | <span data-ttu-id="ce8e6-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ce8e6-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="555f1-132">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="555f1-132">Request body</span></span>
-<span data-ttu-id="555f1-133">В тексте запроса укажите объект JSON, включающий параметр **POST** .</span><span class="sxs-lookup"><span data-stu-id="555f1-133">In the request body, provide a JSON object that includes a **post** parameter.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ce8e6-132">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ce8e6-132">Request body</span></span>
+<span data-ttu-id="ce8e6-133">В тексте запроса укажите объект JSON, включающий параметр **POST** .</span><span class="sxs-lookup"><span data-stu-id="ce8e6-133">In the request body, provide a JSON object that includes a **post** parameter.</span></span>
 
-| <span data-ttu-id="555f1-134">Параметр</span><span class="sxs-lookup"><span data-stu-id="555f1-134">Parameter</span></span>    | <span data-ttu-id="555f1-135">Тип</span><span class="sxs-lookup"><span data-stu-id="555f1-135">Type</span></span>   |<span data-ttu-id="555f1-136">Описание</span><span class="sxs-lookup"><span data-stu-id="555f1-136">Description</span></span>|
+| <span data-ttu-id="ce8e6-134">Параметр</span><span class="sxs-lookup"><span data-stu-id="ce8e6-134">Parameter</span></span>    | <span data-ttu-id="ce8e6-135">Тип</span><span class="sxs-lookup"><span data-stu-id="ce8e6-135">Type</span></span>   |<span data-ttu-id="ce8e6-136">Описание</span><span class="sxs-lookup"><span data-stu-id="ce8e6-136">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="555f1-137">post</span><span class="sxs-lookup"><span data-stu-id="555f1-137">post</span></span>|[<span data-ttu-id="555f1-138">post</span><span class="sxs-lookup"><span data-stu-id="555f1-138">post</span></span>](../resources/post.md)|<span data-ttu-id="555f1-139">Новая запись, с которой отправляются ответы, которые включают одно или несколько вложений в коллекцию [вложений](../resources/attachment.md) .</span><span class="sxs-lookup"><span data-stu-id="555f1-139">The new post that is being replied with, which includes one or more attachments in an [attachment](../resources/attachment.md) collection.</span></span>|
+|<span data-ttu-id="ce8e6-137">post</span><span class="sxs-lookup"><span data-stu-id="ce8e6-137">post</span></span>|[<span data-ttu-id="ce8e6-138">post</span><span class="sxs-lookup"><span data-stu-id="ce8e6-138">post</span></span>](../resources/post.md)|<span data-ttu-id="ce8e6-139">Новая запись, с которой отправляются ответы, которые включают одно или несколько вложений в коллекцию [вложений](../resources/attachment.md) .</span><span class="sxs-lookup"><span data-stu-id="ce8e6-139">The new post that is being replied with, which includes one or more attachments in an [attachment](../resources/attachment.md) collection.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="555f1-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="555f1-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ce8e6-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="ce8e6-140">Response</span></span>
 
-<span data-ttu-id="555f1-p104">При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Он не возвращает тело отклика.</span><span class="sxs-lookup"><span data-stu-id="555f1-p104">If successful, this method returns `202 Accepted` response code. It does not return a response body.</span></span>
+<span data-ttu-id="ce8e6-p104">При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Он не возвращает тело отклика.</span><span class="sxs-lookup"><span data-stu-id="ce8e6-p104">If successful, this method returns `202 Accepted` response code. It does not return a response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="555f1-143">Примеры</span><span class="sxs-lookup"><span data-stu-id="555f1-143">Examples</span></span>
-### <a name="example-1-include-a-file-attachment"></a><span data-ttu-id="555f1-144">Пример 1: включение вложенного файла</span><span class="sxs-lookup"><span data-stu-id="555f1-144">Example 1: Include a file attachment</span></span>
-#### <a name="request"></a><span data-ttu-id="555f1-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="555f1-145">Request</span></span>
-<span data-ttu-id="555f1-146">Ниже приведен пример запроса, включающего файл в качестве вложения при создании записи.</span><span class="sxs-lookup"><span data-stu-id="555f1-146">Here is an example of a request that includes a file as an attachment when creating a post.</span></span>
+## <a name="examples"></a><span data-ttu-id="ce8e6-143">Примеры</span><span class="sxs-lookup"><span data-stu-id="ce8e6-143">Examples</span></span>
+### <a name="example-1-include-a-file-attachment"></a><span data-ttu-id="ce8e6-144">Пример 1: включение вложенного файла</span><span class="sxs-lookup"><span data-stu-id="ce8e6-144">Example 1: Include a file attachment</span></span>
+#### <a name="request"></a><span data-ttu-id="ce8e6-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="ce8e6-145">Request</span></span>
+<span data-ttu-id="ce8e6-146">Ниже приведен пример запроса, включающего файл в качестве вложения при создании записи.</span><span class="sxs-lookup"><span data-stu-id="ce8e6-146">Here is an example of a request that includes a file as an attachment when creating a post.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="555f1-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="555f1-147">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ce8e6-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="ce8e6-147">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_file_attachment_with_post",
@@ -90,26 +90,26 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="555f1-148">C#</span><span class="sxs-lookup"><span data-stu-id="555f1-148">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ce8e6-148">C#</span><span class="sxs-lookup"><span data-stu-id="ce8e6-148">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-file-attachment-with-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="555f1-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="555f1-149">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ce8e6-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ce8e6-149">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-file-attachment-with-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="555f1-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="555f1-150">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ce8e6-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ce8e6-150">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-file-attachment-with-post-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="555f1-151">Java</span><span class="sxs-lookup"><span data-stu-id="555f1-151">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="ce8e6-151">Java</span><span class="sxs-lookup"><span data-stu-id="ce8e6-151">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-file-attachment-with-post-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-#### <a name="response"></a><span data-ttu-id="555f1-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="555f1-152">Response</span></span>
-<span data-ttu-id="555f1-153">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="555f1-153">Here is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="ce8e6-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="ce8e6-152">Response</span></span>
+<span data-ttu-id="ce8e6-153">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ce8e6-153">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_with_post"
@@ -118,10 +118,10 @@ Content-type: application/json
 HTTP/1.1 202 Accpted
 ```
 
-### <a name="example-2-include-an-item-attachment"></a><span data-ttu-id="555f1-154">Пример 2: включение вложения элемента</span><span class="sxs-lookup"><span data-stu-id="555f1-154">Example 2: Include an item attachment</span></span>
+### <a name="example-2-include-an-item-attachment"></a><span data-ttu-id="ce8e6-154">Пример 2: включение вложения элемента</span><span class="sxs-lookup"><span data-stu-id="ce8e6-154">Example 2: Include an item attachment</span></span>
 
-#### <a name="request"></a><span data-ttu-id="555f1-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="555f1-155">Request</span></span>
-<span data-ttu-id="555f1-156">Ниже приведен пример запроса, включающего событие в виде вложения при создании записи.</span><span class="sxs-lookup"><span data-stu-id="555f1-156">Here is an example of a request that includes an event as an attachment when creating a post.</span></span>
+#### <a name="request"></a><span data-ttu-id="ce8e6-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="ce8e6-155">Request</span></span>
+<span data-ttu-id="ce8e6-156">Ниже приведен пример запроса, включающего событие в виде вложения при создании записи.</span><span class="sxs-lookup"><span data-stu-id="ce8e6-156">Here is an example of a request that includes an event as an attachment when creating a post.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -163,8 +163,8 @@ Content-type: application/json
 ```
 
 
-#### <a name="response"></a><span data-ttu-id="555f1-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="555f1-157">Response</span></span>
-<span data-ttu-id="555f1-158">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="555f1-158">Here is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="ce8e6-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="ce8e6-157">Response</span></span>
+<span data-ttu-id="ce8e6-158">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ce8e6-158">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_with_post"
@@ -173,14 +173,14 @@ Content-type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="example-3-include-a-reference-attachment"></a><span data-ttu-id="555f1-159">Пример 3: включение вложения ссылки</span><span class="sxs-lookup"><span data-stu-id="555f1-159">Example 3: Include a reference attachment</span></span>
+### <a name="example-3-include-a-reference-attachment"></a><span data-ttu-id="ce8e6-159">Пример 3: включение вложения ссылки</span><span class="sxs-lookup"><span data-stu-id="ce8e6-159">Example 3: Include a reference attachment</span></span>
 
-#### <a name="request"></a><span data-ttu-id="555f1-160">Запрос</span><span class="sxs-lookup"><span data-stu-id="555f1-160">Request</span></span>
-<span data-ttu-id="555f1-161">Ниже приведен пример запроса, включающего вложение ссылки при создании записи.</span><span class="sxs-lookup"><span data-stu-id="555f1-161">Here is an example of a request that includes a reference attachment when creating a post.</span></span>
-<span data-ttu-id="555f1-162">Вложение указывает на папку в OneDrive.</span><span class="sxs-lookup"><span data-stu-id="555f1-162">The attachment points to a folder on OneDrive.</span></span>
+#### <a name="request"></a><span data-ttu-id="ce8e6-160">Запрос</span><span class="sxs-lookup"><span data-stu-id="ce8e6-160">Request</span></span>
+<span data-ttu-id="ce8e6-161">Ниже приведен пример запроса, включающего вложение ссылки при создании записи.</span><span class="sxs-lookup"><span data-stu-id="ce8e6-161">Here is an example of a request that includes a reference attachment when creating a post.</span></span>
+<span data-ttu-id="ce8e6-162">Вложение указывает на папку в OneDrive.</span><span class="sxs-lookup"><span data-stu-id="ce8e6-162">The attachment points to a folder on OneDrive.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="555f1-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="555f1-163">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="ce8e6-163">HTTP</span><span class="sxs-lookup"><span data-stu-id="ce8e6-163">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_with_post",
@@ -207,27 +207,27 @@ Content-type: application/json
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="555f1-164">C#</span><span class="sxs-lookup"><span data-stu-id="555f1-164">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="ce8e6-164">C#</span><span class="sxs-lookup"><span data-stu-id="ce8e6-164">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-item-attachment-with-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="555f1-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="555f1-165">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="ce8e6-165">JavaScript</span><span class="sxs-lookup"><span data-stu-id="ce8e6-165">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-reference-attachment-with-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="555f1-166">Objective-C</span><span class="sxs-lookup"><span data-stu-id="555f1-166">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="ce8e6-166">Objective-C</span><span class="sxs-lookup"><span data-stu-id="ce8e6-166">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-reference-attachment-with-post-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="555f1-167">Java</span><span class="sxs-lookup"><span data-stu-id="555f1-167">Java</span></span>](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-reference-attachment-with-post-java-snippets.md)]
+# <a name="java"></a>[<span data-ttu-id="ce8e6-167">Java</span><span class="sxs-lookup"><span data-stu-id="ce8e6-167">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-item-attachment-with-post-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="555f1-168">Отклик</span><span class="sxs-lookup"><span data-stu-id="555f1-168">Response</span></span>
-<span data-ttu-id="555f1-169">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="555f1-169">Here is an example of the response.</span></span>
+#### <a name="response"></a><span data-ttu-id="ce8e6-168">Отклик</span><span class="sxs-lookup"><span data-stu-id="ce8e6-168">Response</span></span>
+<span data-ttu-id="ce8e6-169">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ce8e6-169">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_reference_attachment_with_post"

@@ -5,61 +5,61 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: e675a5736eb27e901d07ec5e6b726303227c982f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 318cd74367ec47b3d7a8b4a1abbef8556d30b496
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002263"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965349"
 ---
-# <a name="delete-group"></a><span data-ttu-id="e3440-103">Delete group</span><span class="sxs-lookup"><span data-stu-id="e3440-103">Delete group</span></span>
+# <a name="delete-group"></a><span data-ttu-id="9cd00-103">Delete group</span><span class="sxs-lookup"><span data-stu-id="9cd00-103">Delete group</span></span>
 
-<span data-ttu-id="e3440-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e3440-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="9cd00-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9cd00-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e3440-105">Удаляет группу.</span><span class="sxs-lookup"><span data-stu-id="e3440-105">Deletes a group.</span></span>  
+<span data-ttu-id="9cd00-105">Удаляет группу.</span><span class="sxs-lookup"><span data-stu-id="9cd00-105">Deletes a group.</span></span>  
 
-<span data-ttu-id="e3440-106">После удаления группы Microsoft 365 перемещаются во временный контейнер и могут быть восстановлены в течение 30 дней.</span><span class="sxs-lookup"><span data-stu-id="e3440-106">When deleted, Microsoft 365 groups are moved to a temporary container and can be restored within 30 days.</span></span>  <span data-ttu-id="e3440-107">По истечении этого периода они удаляются без возможности восстановления.</span><span class="sxs-lookup"><span data-stu-id="e3440-107">After that time, they are permanently deleted.</span></span>  <span data-ttu-id="e3440-108">Дополнительные сведения см. в статье [deletedItems](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="e3440-108">To learn more, see [deletedItems](../resources/directory.md).</span></span>  <span data-ttu-id="e3440-109">Это относится только к группам Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="e3440-109">This applies only to Microsoft 365 groups.</span></span>
+<span data-ttu-id="9cd00-106">После удаления группы Microsoft 365 перемещаются во временный контейнер и могут быть восстановлены в течение 30 дней.</span><span class="sxs-lookup"><span data-stu-id="9cd00-106">When deleted, Microsoft 365 groups are moved to a temporary container and can be restored within 30 days.</span></span>  <span data-ttu-id="9cd00-107">По истечении этого периода они удаляются без возможности восстановления.</span><span class="sxs-lookup"><span data-stu-id="9cd00-107">After that time, they are permanently deleted.</span></span>  <span data-ttu-id="9cd00-108">Дополнительные сведения см. в статье [deletedItems](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="9cd00-108">To learn more, see [deletedItems](../resources/directory.md).</span></span>  <span data-ttu-id="9cd00-109">Это относится только к группам Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="9cd00-109">This applies only to Microsoft 365 groups.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e3440-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e3440-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9cd00-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9cd00-110">Permissions</span></span>
 
-<span data-ttu-id="e3440-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e3440-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9cd00-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9cd00-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e3440-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e3440-113">Permission type</span></span>      | <span data-ttu-id="e3440-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e3440-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9cd00-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9cd00-113">Permission type</span></span>      | <span data-ttu-id="9cd00-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9cd00-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e3440-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e3440-115">Delegated (work or school account)</span></span> | <span data-ttu-id="e3440-116">Group.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="e3440-116">Group.ReadWrite.All, Directory.AccessAsUser.All</span></span>   |
-|<span data-ttu-id="e3440-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e3440-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e3440-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e3440-118">Not supported.</span></span>    |
-|<span data-ttu-id="e3440-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e3440-119">Application</span></span> | <span data-ttu-id="e3440-120">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e3440-120">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="9cd00-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9cd00-115">Delegated (work or school account)</span></span> | <span data-ttu-id="9cd00-116">Group.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="9cd00-116">Group.ReadWrite.All, Directory.AccessAsUser.All</span></span>   |
+|<span data-ttu-id="9cd00-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9cd00-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9cd00-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9cd00-118">Not supported.</span></span>    |
+|<span data-ttu-id="9cd00-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9cd00-119">Application</span></span> | <span data-ttu-id="9cd00-120">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9cd00-120">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e3440-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e3440-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9cd00-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9cd00-121">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e3440-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e3440-122">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9cd00-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9cd00-122">Request headers</span></span>
 
-| <span data-ttu-id="e3440-123">Имя</span><span class="sxs-lookup"><span data-stu-id="e3440-123">Name</span></span>       | <span data-ttu-id="e3440-124">Тип</span><span class="sxs-lookup"><span data-stu-id="e3440-124">Type</span></span> | <span data-ttu-id="e3440-125">Описание</span><span class="sxs-lookup"><span data-stu-id="e3440-125">Description</span></span>|
+| <span data-ttu-id="9cd00-123">Имя</span><span class="sxs-lookup"><span data-stu-id="9cd00-123">Name</span></span>       | <span data-ttu-id="9cd00-124">Тип</span><span class="sxs-lookup"><span data-stu-id="9cd00-124">Type</span></span> | <span data-ttu-id="9cd00-125">Описание</span><span class="sxs-lookup"><span data-stu-id="9cd00-125">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="e3440-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="e3440-126">Authorization</span></span>  | <span data-ttu-id="e3440-127">string</span><span class="sxs-lookup"><span data-stu-id="e3440-127">string</span></span>  | <span data-ttu-id="e3440-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e3440-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9cd00-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="9cd00-126">Authorization</span></span>  | <span data-ttu-id="9cd00-127">string</span><span class="sxs-lookup"><span data-stu-id="9cd00-127">string</span></span>  | <span data-ttu-id="9cd00-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9cd00-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="e3440-130">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e3440-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="9cd00-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9cd00-130">Request body</span></span>
 
-<span data-ttu-id="e3440-131">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e3440-131">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="9cd00-131">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="9cd00-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e3440-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="e3440-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9cd00-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="9cd00-132">Response</span></span>
 
-<span data-ttu-id="e3440-p104">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="e3440-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="9cd00-p104">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="9cd00-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e3440-135">Пример</span><span class="sxs-lookup"><span data-stu-id="e3440-135">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9cd00-135">Пример</span><span class="sxs-lookup"><span data-stu-id="9cd00-135">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e3440-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="e3440-136">Request</span></span>
+### <a name="request"></a><span data-ttu-id="9cd00-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="9cd00-136">Request</span></span>
 
-<span data-ttu-id="e3440-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e3440-137">The following is an example of the request.</span></span>
+<span data-ttu-id="9cd00-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9cd00-137">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e3440-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="e3440-138">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="9cd00-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="9cd00-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_group"
@@ -67,24 +67,28 @@ DELETE /groups/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/groups/{id}
 ```
-# <a name="c"></a>[<span data-ttu-id="e3440-139">C#</span><span class="sxs-lookup"><span data-stu-id="e3440-139">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="9cd00-139">C#</span><span class="sxs-lookup"><span data-stu-id="9cd00-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-group-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="e3440-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e3440-140">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="9cd00-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="9cd00-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-group-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="e3440-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="e3440-141">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="9cd00-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="9cd00-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="9cd00-142">Java</span><span class="sxs-lookup"><span data-stu-id="9cd00-142">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="e3440-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="e3440-142">Response</span></span>
+### <a name="response"></a><span data-ttu-id="9cd00-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="9cd00-143">Response</span></span>
 
-<span data-ttu-id="e3440-143">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="e3440-143">The following is an example of the response.</span></span> 
+<span data-ttu-id="9cd00-144">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="9cd00-144">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
