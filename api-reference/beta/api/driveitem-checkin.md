@@ -5,12 +5,12 @@ title: 'driveItem: checkin'
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 92200c0e079a885192f2ad1709a1e45bb15370e2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c259b4c5c729d3af04876367d1273435b32302f5
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982168"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48955705"
 ---
 # <a name="driveitem-checkin"></a>driveItem: checkin
 
@@ -42,14 +42,14 @@ POST /sites/{siteId}/drive/items/{itemId}/checkin
 POST /users/{userId}/drive/items/{itemId}/checkin
 ```
 
-### <a name="request-body"></a>Тело запроса
+### <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 
 |   Имя    | Значение  |                                                Описание                                                |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------- |
-| checkInAs | string | Необязательный параметр. Состояние документа после завершения операции возврата. Может иметь значение `published` либо значение может быть не указано. |
+| checkInAs | string | Необязательно. Состояние документа после завершения операции возврата. Может иметь значение `published` либо значение может быть не указано. |
 | comment   | string | Комментарий к возврату, сопоставленный с версией.                                                   |
 
 ## <a name="example"></a>Пример
@@ -78,6 +78,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/checkin-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/checkin-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

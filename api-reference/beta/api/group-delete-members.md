@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 4f7f87ea31a485e98ca1bab1da828d447e431f7d
-ms.sourcegitcommit: 7370fb65d11d1347123a3f6d320d2c6d36f34224
+ms.openlocfilehash: 52023711a03126f1d72149de7aa120cdb68f682f
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338139"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48954250"
 ---
 # <a name="remove-member"></a>Удаление участника
 
@@ -70,13 +70,17 @@ DELETE https://graph.microsoft.com/beta/groups/{group-id}/members/{directory-obj
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-member-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-member-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-В запросе укажите идентификатор группы и идентификатор объекта каталога, который требуется удалить.
+В запросе укажите идентификатор группы и идентификатор объекта каталога, который вы хотите удалить.
 
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

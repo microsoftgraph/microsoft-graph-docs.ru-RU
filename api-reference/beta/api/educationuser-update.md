@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 62204793bcae4c8070bf172af1505ef4717fc160
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 38a3f187a934f57b9ecb910047367ccf3bf20c28
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47981095"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48955148"
 ---
 # <a name="update-educationuser-properties"></a>Обновление свойств educationUser
 
@@ -53,11 +53,11 @@ PATCH /education/users/{id}
 | Свойство         | Тип               | Описание                                                                                                                                     |
 | :--------------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
 | displayName      | String             | Отображаемое имя пользователя                                                                                                                            |
-| givenName;        | String             | Имя                                                                                                                                      |
+| givenName        | String             | Имя                                                                                                                                      |
 | middleName       | String             | Отчество пользователя                                                                                                                             |
 | surname          | String             | Фамилия пользователя                                                                                                                                 |
-| почта;             | String             | Электронный адрес                                                                                                                                   |
-| mobilePhone      | String             | Номер мобильного телефона пользователя                                                                                                                           |
+| mail             | String             | Электронный адрес                                                                                                                                   |
+| mobilePhone;      | String             | Номер мобильного телефона пользователя                                                                                                                           |
 | externalSource   | string             | Источник для создания пользователя. Возможные значения: `sis` , `manual` , или `lms` .                                                               |
 | mailingAddress   | [physicalAddress]  | Почтовый адрес пользователя. Примечание: `type` и `postOfficeBox` не поддерживаются для `educationUser` ресурсов.                                         |
 | residenceAddress | [physicalAddress]  | Адрес проживания пользователя. Примечание: `type` и `postOfficeBox` не поддерживаются для `educationUser` ресурсов.                                     |
@@ -108,6 +108,10 @@ Content-length: 508
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationuser-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/update-educationuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

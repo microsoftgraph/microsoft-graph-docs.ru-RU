@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 3332a50b1c47352e94f875aff821cfa772b7e6b9
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: ca2f6815f1206807d680100c04951bec6115ea91
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403061"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48953753"
 ---
 # <a name="update-group"></a>Update group
 
@@ -54,11 +54,11 @@ PATCH /groups/{id}
 |autoSubscribeNewMembers|Boolean|Значение, используемое по умолчанию: **false**. Указывает, будут ли новые участники группы автоматически подписаны на получение уведомлений по электронной почте.|
 |description|String|Необязательное описание для группы. |
 |displayName|String|Отображаемое имя для группы. Это свойство необходимо при создании группы. Оно не может быть удалено во время обновления. |
-|groupTypes|Коллекция String|Задает тип группы и участие в ней.  <br><br>Если коллекция содержит объект **Unified**, эта группа является группой Microsoft 365. В противном случае она является группой безопасности.  <br><br>Если коллекция включает объект **DynamicMembership**, то в этой группе используется динамическое членство. В противном случае членство является статическим. |
+|groupTypes|Коллекция String|Задает тип группы и участие в ней.  <br><br>Если коллекция содержит объект **Unified** , эта группа является группой Microsoft 365. В противном случае она является группой безопасности.  <br><br>Если коллекция включает объект **DynamicMembership** , то в этой группе используется динамическое членство. В противном случае членство является статическим. |
 |mailEnabled|Boolean|Указывает, включена ли для этой группы поддержка почты. |
 |mailNickname|String|Почтовый псевдоним для группы. Это свойство должно быть указано при создании группы. |
 |securityEnabled|Логический|Указывает, является ли группа группой безопасности, включая группы Microsoft 365. |
-|visibility|String|Определяет видимость группы Microsoft 365. Возможные значения: **Private** (частная), **Public** (общедоступная) или пустое значение (оно обрабатывается как **Public**).|
+|visibility|String|Определяет видимость группы Microsoft 365. Возможные значения: **Private** (частная), **Public** (общедоступная) или пустое значение (оно обрабатывается как **Public** ).|
 
 Так как ресурс **Group** поддерживает [расширения](/graph/extensibility-overview), с помощью операции можно `PATCH` добавлять, обновлять или удалять собственные данные, зависящие от приложения, в настраиваемых свойствах расширения в существующем экземпляре **группы** .
 
@@ -66,7 +66,7 @@ PATCH /groups/{id}
 > **Примечание.**
 >
 > - Свойство **autoSubscribeNewMembers** можно обновить, указав его в его собственном запросе PATCH, не включая при этом другие свойства, описанные в таблице выше.
-> - Только некоторые элементы API групп, относящиеся к основным операциям администрирования групп и управления ими, поддерживают разрешения для приложений и делегированные разрешения. Все остальные элементы API групп, включая обновление **autoSubscribeNewMembers**, поддерживают только делегированные разрешения. Примеры см. в разделе [Известные проблемы](/graph/known-issues#group).
+> - Только некоторые элементы API групп, относящиеся к основным операциям администрирования групп и управления ими, поддерживают разрешения для приложений и делегированные разрешения. Все остальные элементы API групп, включая обновление **autoSubscribeNewMembers** , поддерживают только делегированные разрешения. Примеры см. в разделе [Известные проблемы](/graph/known-issues#group).
 > - Правила обновления групп безопасности, поддерживающих почту, в Microsoft Exchange Server могут быть сложными. Дополнительные сведения см. в статье [Управление группами безопасности с поддержкой электронной почты в Exchange Server](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019).
 
 
@@ -111,12 +111,16 @@ Content-length: 211
 [!INCLUDE [sample-code](../includes/snippets/objc/update-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -153,7 +157,7 @@ Content-length: 211
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -164,7 +168,7 @@ Content-length: 211
 HTTP/1.1 204 No Content
 ```
 
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="see-also"></a>См. также
 
 - [Добавление пользовательских данных в ресурсы с помощью расширений](/graph/extensibility-overview)
 - [Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](/graph/extensibility-open-users)

@@ -5,12 +5,12 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 39bc4909e63e6e7ff908481873f32324703bf549
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2dc90964e7637a9b80e56d09618d83878aaaecbf
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47991259"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48955358"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>Удаление Едукатионсинчронизатионпрофиле
 
@@ -25,7 +25,7 @@ ms.locfileid: "47991259"
 
 | Тип разрешения | Разрешения |
 |:-----------|:----------|
-| Делегированные (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
+| Делегированное (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ DELETE /synchronizationProfiles/{id}
 |Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и без текста отклика.
@@ -67,6 +67,10 @@ DELETE https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationprofile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationprofile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
