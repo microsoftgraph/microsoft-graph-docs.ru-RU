@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b1572581cedc6e1c3fe87f4402e51c69c9b2c5dc
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: bd9dbcd409647f7597e6dc6bf57db81ae9d2e089
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076666"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981153"
 ---
 # <a name="list-teamsapp"></a>Список teamsApp
 
@@ -43,7 +43,7 @@ GET /appCatalogs/teamsApps
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$filter`, `$select` и `$expand` для настройки отклика.
 
-Использование `$expand=AppDefinitions` возвращает дополнительные сведения о состоянии приложения, такие как **публишингстате**, которое отражает состояние проверки отправки приложения и возвращает сведения о том, утверждено ли приложение, отклонено или находится в процессе рассмотрения. 
+Использование `$expand=AppDefinitions` возвращает дополнительные сведения о состоянии приложения, такие как **публишингстате** , которое отражает состояние проверки отправки приложения и возвращает сведения о том, утверждено ли приложение, отклонено или находится в процессе рассмотрения. 
 
 > **Примечание:** Можно выполнить фильтрацию по любому полю объекта [teamsApp](../resources/teamsapp.md) для сокращения списка результатов. Вы можете использовать любую из следующих операций фильтрации: EQUAL, Not Equals, and, OR и not.
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionM
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -150,6 +154,10 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1
 [!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -181,7 +189,7 @@ Content-Type: application/json
 
 ### <a name="example-3-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>Пример 3: перечисление приложений с заданным ИДЕНТИФИКАТОРом и возврат состояния проверки отправки
 
-В приведенном ниже примере перечисляются приложения с заданным ИДЕНТИФИКАТОРом, а затем **аппдефинитионс** возвращается значение **публишингстате**, которое отражает состояние проверки отправки приложения. `Submitted` означает, что проверка находится в состоянии ожидания, `published` означает, что приложение было утверждено администратором и `rejected` означает, что оно было отклонено администратором.
+В приведенном ниже примере перечисляются приложения с заданным ИДЕНТИФИКАТОРом, а затем **аппдефинитионс** возвращается значение **публишингстате** , которое отражает состояние проверки отправки приложения. `Submitted` означает, что проверка находится в состоянии ожидания, `published` означает, что приложение было утверждено администратором и `rejected` означает, что оно было отклонено администратором.
 
 #### <a name="request"></a>Запрос
 
@@ -205,6 +213,10 @@ GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id eq '876df
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

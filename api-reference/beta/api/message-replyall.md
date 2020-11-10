@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d27895954f78af4f9eac56a39de2da92fa0f85d2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2e0ad862a656b6b26d4de20bb4e0a31b45656a2d
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48076906"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981069"
 ---
 # <a name="message-replyall"></a>message: replyAll
 
@@ -25,7 +25,7 @@ ms.locfileid: "48076906"
 **Примечание**
 
 - Можно указать либо свойство Comment, либо свойство **Body** для `message` параметра. Если указать и то, и другое, будет возвращена ошибка неправильного запроса HTTP 400.
-- Если свойство **replyTo** указано в исходном сообщении, в формате Интернет-сообщений ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), необходимо отправить ответ получателям в  
+- Если свойство **replyTo** указано в исходном сообщении, в формате Интернет-сообщений ( [RFC 2822](https://www.rfc-editor.org/info/rfc2822)), необходимо отправить ответ получателям в  
 свойства **replyTo** и **toRecipients** , а не получатели в свойствах **from** и **toRecipients** . 
 
 
@@ -101,6 +101,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/message-replyall-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/message-replyall-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

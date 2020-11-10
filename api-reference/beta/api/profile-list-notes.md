@@ -5,12 +5,12 @@ author: kevinbellinger
 localization_priority: Normal
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: a88e8fe834cc6dab37d18b27c65b2b998f2cf690
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2d7318a5804cc1a66ba9b37851000cb6096ca0f9
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034695"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48980740"
 ---
 # <a name="list-notes"></a>Список заметок
 Пространство имен: microsoft.graph
@@ -25,7 +25,7 @@ ms.locfileid: "48034695"
 |:---------------------------------------|:---------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
-| Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
+| Для приложения                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/beta/me/profile/notes
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-notes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-notes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7a06f00b1ff024e116ed7d16cf416d23089f615e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 320d55cd049bdd558e8f847e2ac01593cc2f5ca7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48035815"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48980986"
 ---
 # <a name="printdocument-uploaddata"></a>printDocument: Уплоаддата
 
@@ -22,7 +22,7 @@ ms.locfileid: "48035815"
 
 Вы можете отправить файл целиком или разбить его на несколько диапазонов байтов, если число запросов не превышает 1 МБ.
 
-Сегменты файла можно отправить в любом порядке и можно отправить параллельно, используя до четырех одновременных запросов. После отправки всех двоичных сегментов документа двоичный файл связывается с **методом printJob**.
+Сегменты файла можно отправлять в любом порядке, в том числе параллельно (до четырех параллельных запросов). После отправки всех двоичных сегментов документа двоичный файл связывается с **методом printJob**.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -33,7 +33,7 @@ ms.locfileid: "48035815"
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| PrintJob. ReadWrite, PrintJob. ReadWrite. ALL |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| Не поддерживается. |
+|Для приложения| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,12 +49,12 @@ POST /print/printers/{id}/jobs/{id}/documents/{id}/uploadData
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-Текст запроса представляет собой двоичный объект BLOB, содержащий байты документа, которые задаются в заголовке как инклюзивный диапазон байтов `Range` . 
+Текст запроса — это большой двоичный объект, содержащий байты документа, указанные как инклюзивный диапазон байтов, в заголовке `Range`. 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает один из следующих ответов. В тексте отклика не возвращается никаких данных.
+В случае успешного выполнения этот метод возвращает один из следующих ответов. Метод не возвращает данные в теле отклика.
 
-| Condition     | Код ответа |
+| Условие     | Код ответа |
 |:--------------|:--------------|
 | Один или несколько двоичных сегментов по-прежнему необходимо отправить | `202 Accepted` |
 | Все двоичные сегменты успешно отправлены | `201 Created` |
@@ -83,6 +83,10 @@ Content-Length: 72797
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/printdocument-uploaddata-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/printdocument-uploaddata-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 98f03b98fb3ce7ebd84a5526658a60eae39759e6
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: a565fac12b24b21dd43d87b4a736971bccf79115
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460056"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48980540"
 ---
 # <a name="update-phoneauthenticationmethod"></a>Обновление Фонеаусентикатионмесод
 
@@ -63,7 +63,7 @@ PUT /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |phoneNumber|String|Номер телефона для текста или вызов для проверки подлинности. Номера телефонов используют формат "+ \<country code\> \<number\> x \<extension\> " с необязательным расширением. Например, допустимые + 1 5555551234 или + 1 5555551234x123. При создании или обновлении числа отклоняются, если они не совпадают с требуемым форматом.|
-|фонетипе|Строка| Возможные значения: `mobile` , `alternateMobile` , или `office` .|
+|фонетипе|string| Возможные значения: `mobile` , `alternateMobile` , или `office` .|
 
 ## <a name="response"></a>Отклик
 
@@ -100,6 +100,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-phoneauthenticationmethod-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-phoneauthenticationmethod-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
