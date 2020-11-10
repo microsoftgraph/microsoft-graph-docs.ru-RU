@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 24262a733a4a8dcdc8724950b0c65bf31fdbc9a2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1b2d4b27929656f0d3531f9c5a98d343a58317e0
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067533"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48967903"
 ---
 # <a name="user-exportpersonaldata"></a>Пользователь: Експортперсоналдата
 
@@ -25,7 +25,7 @@ ms.locfileid: "48067533"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  User. Export. ALL и User. Read. ALL  |
 |Делегированные (личная учетная запись Майкрософт) |  Неприменимо  |
-|Для приложений | User. Export. ALL и User. Read. ALL |
+|Для приложения | User. Export. ALL и User. Read. ALL |
 
 >**Примечание:** Экспорт может выполняться только администратором компании при использовании делегированного разрешения.
 
@@ -48,12 +48,12 @@ POST /users/{id}/exportPersonalData
 |сторажелокатион|String|Это URL-адрес учетной записи службы хранилища Azure, в которую будут экспортироваться данные.|
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`. В тексте отклика не возвращается никаких данных. Ответ содержит следующие заголовки.
+При успешном выполнении этот метод возвращает код отклика `202 Accepted`. Метод не возвращает данные в теле отклика. Ответ содержит следующие заголовки.
 
 | Имя       | Описание |
 |:---------------|:----------|
-| Расположение  | URL-адрес для проверки состояния запроса. |
-| Retry — после  | Период времени в секундах. Запрос должен подождать этого времени после отправки запроса на проверку состояния. |
+| Location  | URL-адрес для проверки состояния запроса. |
+| Retry-After  | Период времени в секундах. Запрос должен подождать этого времени после отправки запроса на проверку состояния. |
 
 
 ## <a name="example"></a>Пример
@@ -83,6 +83,10 @@ Content-length: 48
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-exportpersonaldata-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-exportpersonaldata-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
