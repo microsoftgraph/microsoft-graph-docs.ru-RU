@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 4ba017109a761afb1606c55039601739781568de
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: e93cb5133e27c74377bd7db7b7c8b8e28d1debef
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459573"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48975048"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -31,7 +31,7 @@ ms.locfileid: "48459573"
 
 >[!NOTE]
 > - При обновлении свойства **passwordProfile** необходимо разрешение Directory.AccessAsUser.All.
-> - Обновление свойств **businessPhones**, **mobilePhone** или **otherMails** других пользователей разрешается только для пользователей, не являющихся администраторами, или для пользователей, которым назначена одна из следующих ролей: читатель каталога, приглашающий гостей, читатель Центра сообщений или читатель отчетов. Дополнительные сведения см. в разделе "Администратор службы поддержки (паролей)" среди [доступных ролей Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).  Это относится к приложениям с предоставленными разрешениями User.ReadWrite.All или Directory.ReadWrite.All (делегированными или для приложений).
+> - Обновление свойств **businessPhones** , **mobilePhone** или **otherMails** других пользователей разрешается только для пользователей, не являющихся администраторами, или для пользователей, которым назначена одна из следующих ролей: читатель каталога, приглашающий гостей, читатель Центра сообщений или читатель отчетов. Дополнительные сведения см. в разделе "Администратор службы поддержки (паролей)" среди [доступных ролей Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).  Это относится к приложениям с предоставленными разрешениями User.ReadWrite.All или Directory.ReadWrite.All (делегированными или для приложений).
 
 >[!NOTE]
 >Обновление свойства **личностей** требует разрешения User.ManageIdentities.All. Кроме того, добавление [локальной учетной записи B2C](../resources/objectidentity.md) к существующему объекту **пользователя** не допускается, если только объект **пользователя** не содержит идентификатор локальной учетной записи.
@@ -63,12 +63,12 @@ PATCH /users/{id | userPrincipalName}
 |department|String|Название отдела, в котором работает пользователь.|
 |displayName|String|Отображаемое имя пользователя в адресной книге. Обычно это сочетание имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Поддерживает параметры $filter и $orderby.|
 |employeeId|String|Идентификатор сотрудника, назначенный пользователю организацией.|
-|givenName;|String|Простое имя пользователя.|
+|givenName|String|Простое имя пользователя.|
 |hireDate|DateTimeOffset|Дата найма пользователя. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |identities|Коллекция [objectIdentity](../resources/objectidentity.md)| Представляет удостоверения, которые можно использовать для входа в учетную запись пользователя. Удостоверение может предоставляться корпорацией Майкрософт, организациями или поставщиками удостоверений социальных сетей, такими как Facebook, Google и Майкрософт, и привязывается к учетной записи пользователя. Все обновления для **удостоверений** заменят всю коллекцию, и необходимо указать идентификатор userPrincipalName **сигнинтипе** в коллекции.|
-|interests;|Коллекция строк|Список интересов пользователя.|
+|interests|Коллекция строк|Список интересов пользователя.|
 |jobTitle|String|Должность пользователя.|
-|почта;|String|SMTP-адрес пользователя, например "gregory@contoso.onmicrosoft.com". Изменение этого свойства также приведет к обновлению коллекции пользователя **proxyAddresses**, которая будет включать это значение как SMTP-адрес. <br><br>Возвращается по умолчанию. Поддерживает параметр $filter.|
+|почта;|String|SMTP-адрес пользователя, например "gregory@contoso.onmicrosoft.com". Изменение этого свойства также приведет к обновлению коллекции пользователя **proxyAddresses** , которая будет включать это значение как SMTP-адрес. <br><br>Возвращается по умолчанию. Поддерживает параметр $filter.|
 |mailNickname|String|Почтовый псевдоним для пользователя. Это свойство должно быть указано при создании пользователя.|
 |mobilePhone|String|Основной сотовый телефон пользователя.|
 |mySite|String|URL-адрес личного сайта пользователя.|
@@ -79,7 +79,7 @@ PATCH /users/{id | userPrincipalName}
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md)|Задает профиль пароля для пользователя. Профиль содержит пароль пользователя. Это свойство обязательно указывать при создании пользователя. Пароль в профиле должен соответствовать минимальным требованиям, указанным в свойстве **passwordPolicies**. По умолчанию требуется надежный пароль.|
 |pastProjects|Коллекция строк|Список предыдущих проектов пользователя.|
 |postalCode|String|Почтовый индекс адреса пользователя. Формат почтового индекса зависит от страны или региона пользователя. В США для этого атрибута используется ZIP-код.|
-|preferredLanguage|String|Предпочитаемый язык для пользователя. Он должен быть представлен в формате ISO 639-1, например "ru-RU".|
+|preferredLanguage;|String|Предпочитаемый язык для пользователя. Он должен быть представлен в формате ISO 639-1, например "ru-RU".|
 |responsibilities|Коллекция строк|Список обязанностей пользователя.|
 |schools|Коллекция строк|Список учебных заведений, которые посещал пользователь.|
 |skills|Коллекция строк|Список навыков пользователя.|
@@ -93,7 +93,7 @@ PATCH /users/{id | userPrincipalName}
 Так как ресурс **User** поддерживает [расширения](/graph/extensibility-overview), с помощью операции можно `PATCH` добавлять, обновлять или удалять собственные данные, зависящие от приложения, в пользовательских свойствах расширения в существующем **пользовательском** экземпляре.
 
 > [!NOTE] 
-> Следующие свойства не могут быть обновлены с помощью контекста только для приложений: **aboutMe**, **birthday**, **hireDate**, **interests**, **mySite**, **pastProjects**, **preferredName**, **responsibilities**, **schools** и **skills**.
+> Следующие свойства не могут быть обновлены с помощью контекста только для приложений: **aboutMe** , **birthday** , **hireDate** , **interests** , **mySite** , **pastProjects** , **preferredName** , **responsibilities** , **schools** и **skills**.
 
 ## <a name="response"></a>Отклик
 
@@ -133,6 +133,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-user-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -182,6 +186,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-other-user-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-other-user-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

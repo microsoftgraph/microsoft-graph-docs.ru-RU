@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: e8c1a80a549314c0c8b1fef0c0c4dbac6fcec19a
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 2a0baa7aab8cc6e24b6e2e3d5d3c0e294b0f3933
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457746"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48976634"
 ---
 # <a name="user-assignlicense"></a>user: assignLicense
 
@@ -92,6 +92,10 @@ Content-length: 185
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-assignlicense-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-assignlicense-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

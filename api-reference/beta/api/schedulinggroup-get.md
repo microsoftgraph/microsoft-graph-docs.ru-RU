@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 542f005b172b4363a06ce8830e48a35cc0b6fadd
-ms.sourcegitcommit: a9f0fde9924ad184d315bb2de43c2610002409f3
+ms.openlocfilehash: b8784aa4e3f5b2c77b0da185e5c3e5eb30856fa3
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48314589"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48975741"
 ---
 # <a name="get-schedulinggroup"></a>Получение объекта schedulingGroup
 
@@ -28,7 +28,7 @@ ms.locfileid: "48314589"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Schedule. Read. ALL, Group. Read. ALL, Schedule. ReadWrite. ALL, Group. ReadWrite. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule. Read. ALL, Schedule. ReadWrite. ALL |
+|Для приложения | Schedule. Read. ALL, Schedule. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups/{s
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/schedule-get-schedulinggroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/schedule-get-schedulinggroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6a79d338af74ab96fb92f596c9413f0b8161539d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5eda35222f66f6ebb522e449cc1242c8e822f250
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968978"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48976653"
 ---
 # <a name="install-app-for-user"></a>Установка приложения для пользователя
 
@@ -28,7 +28,7 @@ ms.locfileid: "47968978"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadWriteForUser |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | TeamsAppInstallation.ReadWriteForUser.All |
+|Для приложения | TeamsAppInstallation.ReadWriteForUser.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ POST /users/{id}/teamwork/installedApps
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса должен содержаться идентификатор существующего приложения каталога, который требуется добавить.
 
@@ -83,6 +83,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-add-teamsapp-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-add-teamsapp-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

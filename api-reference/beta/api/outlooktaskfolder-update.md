@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 83a4faaac7e571f53bf4cd80e1cd3a275b4fcc51
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 82a02fe08f4f5d2e1ae3582dde0558a3bff96fd8
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47979730"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48974826"
 ---
 # <a name="update-outlooktaskfolder-deprecated"></a>Обновление outlooktaskfolder (не рекомендуется)
 
@@ -46,7 +46,7 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 |:-----------|:-----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -84,6 +84,10 @@ Content-length: 31
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-outlooktaskfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-outlooktaskfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -6,12 +6,12 @@ localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
 doc_type: apiPageType
-ms.openlocfilehash: 4c4d5cbd4ac37e18ea766894381939f1b18021a1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8ae21d3adb754798ea2332c1b9acc7880b4a6d99
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085336"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48975903"
 ---
 # <a name="riskyuser-dismiss"></a>Рискюсер: отклонить
 
@@ -29,7 +29,7 @@ ms.locfileid: "48085336"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | IdentityRiskyUser.ReadWrite.All |
+|Для приложения | IdentityRiskyUser.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -83,6 +83,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/dismiss-riskyuser-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/dismiss-riskyuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### <a name="response"></a>Отклик
@@ -124,6 +128,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/dismiss-riskyuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/dismiss-riskyuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

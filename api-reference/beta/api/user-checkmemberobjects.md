@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: efbf1b0eae84207e591f3f52ace88aa78f925e04
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8491978f3ee0c44a653cdc28a00aee39fcea1093
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968943"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48976589"
 ---
 # <a name="user-checkmemberobjects"></a>Пользователь: Чеккмемберобжектс
 
@@ -28,7 +28,7 @@ ms.locfileid: "47968943"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL<br><br>Кроме того:<br><br><ul><li>Если выполняется проверка членства в группах: Group. Read. ALL, Group. ReadWrite. ALL</li><li>При проверке принадлежности к административным единицам: AdministrativeUnit. Read. ALL, AdministrativeUnit. ReadWrite. ALL</li><li>Если выполняется проверка членства в ролях каталога: Ролеманажемент. Read. Directory, Ролеманажемент. ReadWrite. Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL<br>С<ul><li>Если выполняется проверка членства в группах: Group. Read. ALL, Group. ReadWrite. ALL</li><li>При проверке принадлежности к административным единицам: AdministrativeUnit. Read. ALL, AdministrativeUnit. ReadWrite. ALL</li><li>Если выполняется проверка членства в ролях каталога: Ролеманажемент. Read. Directory, Ролеманажемент. ReadWrite. Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All |
+| Для приложения                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL<br>С<ul><li>Если выполняется проверка членства в группах: Group. Read. ALL, Group. ReadWrite. ALL</li><li>При проверке принадлежности к административным единицам: AdministrativeUnit. Read. ALL, AdministrativeUnit. ReadWrite. ALL</li><li>Если выполняется проверка членства в ролях каталога: Ролеманажемент. Read. Directory, Ролеманажемент. ReadWrite. Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,10 +43,10 @@ POST /users/{id}/checkMemberObjects
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-checkmemberobjects-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-checkmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 0f6aa15be6725560f70cdaba1f8c59a69461f3f9
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 91ae0c420bf13e967a289431799328138b9bf143
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48374310"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48975139"
 ---
 # <a name="reportroot-getm365appplatformusercounts"></a>Reportroot.: getM365AppPlatformUserCounts
 
@@ -48,7 +48,7 @@ GET /reports/getM365AppPlatformUserCounts(period='{period_value}')
 
 | Параметр | Тип   | Описание                                                                                                                                                                                                                                                       |
 | :-------- | :----- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| period    | string | Указывает отчетный период. Для {period_value} поддерживаются следующие значения: `D7` , `D30` , `D90` и `D180` . Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Для {period_value} поддерживаются следующие значения: `D7` , `D30` , `D90` и `D180` . Эти значения указываются в формате D *n* , где *n*  — количество дней в отчетном периоде. Обязательный. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -123,6 +123,10 @@ GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getm365appplatformusercounts-csv-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getm365appplatformusercounts-csv-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -183,6 +187,10 @@ GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getm365appplatformusercounts-json-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getm365appplatformusercounts-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 9c7ef363ab441e6a8f813632d7be70cba8d332af
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4bb2829845db6b5cf5134ff6aecec7708ff0fa81
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044785"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48976442"
 ---
 # <a name="get-securityaction"></a>Получение объекта securityAction
 
@@ -28,7 +28,7 @@ ms.locfileid: "48044785"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Секуритяктионс. Read. ALL, Секуритяктионс. ReadWrite. ALL |
+| Для приложения                            | Секуритяктионс. Read. ALL, Секуритяктионс. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -83,12 +83,16 @@ GET https://graph.microsoft.com/beta/security/securityActions/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-securityaction-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-securityaction-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: c66bdc31ffc9a130eed48f1e30af3f71302335a0
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: bc67994dbf3d9a6107ed2a4bcba8f0f0f090e327
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192779"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48974644"
 ---
 # <a name="create-workposition"></a>Создание Воркпоситион
 
@@ -59,7 +59,7 @@ POST /users/{id | userPrincipalName}/profile/positions
 |коллег|Коллекция [релатедперсон](../resources/relatedperson.md)|Коллеги, связанные с этой позицией.|
 |описаны|[поситиондетаил](../resources/positiondetail.md)|Содержит подробные сведения о позиции. |
 |выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
-|по току|Логическое|Указывает, является ли должность текущей.|
+|по току|Логический|Указывает, является ли должность текущей.|
 |manager|[релатедперсон](../resources/relatedperson.md)|Содержит сведения о руководителе пользователя в этой позиции.|
 |source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
 
@@ -114,6 +114,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-workposition-from-profile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-workposition-from-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

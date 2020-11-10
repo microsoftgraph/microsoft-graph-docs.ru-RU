@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: svpsiva
 ms.prod: outlook
-ms.openlocfilehash: 664be7dc49855abb0c4219f6d2f753fb3a37c5de
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: a1c0b2f203ecae7abfb4bc3bd966da707329c694
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48461673"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48975328"
 ---
 # <a name="list-messages"></a>Список сообщений
 
@@ -40,7 +40,7 @@ ms.locfileid: "48461673"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
 |Делегированные (личная учетная запись Майкрософт) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Приложение | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
+|Для приложения | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -120,6 +120,10 @@ GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messages-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-messages-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -260,6 +264,10 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=MentionsPreview/IsMenti
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messages-with-mentions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-messages-with-mentions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### <a name="response-2"></a>Отклик 2
@@ -336,6 +344,10 @@ Prefer: outlook.body-content-type="text"
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messages-in-text-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-messages-in-text-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

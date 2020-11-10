@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 9e9cedfa435d235baa7099c5755fc6bead5c2aaa
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8c0c56f83a2a420a88590f36ab4de5f3942e334b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968941"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48976617"
 ---
 # <a name="checkmembergroups"></a>checkMemberGroups
 
@@ -20,7 +20,7 @@ ms.locfileid: "47968941"
 
 Проверка участия в указанном списке групп. Возвращает из списка те группы, в которых указанный пользователь состоит напрямую или транзитивно.
 
-Можно проверить не более 20 групп на каждый запрос. Эта функция поддерживает Microsoft 365 и другие типы групп, подготовленные в Azure AD. Обратите внимание, что группы Майкрософт 365 не могут содержать групп. Поэтому членство в группе Microsoft 365 всегда является прямым.
+В одном запросе можно проверять до 20 групп. Эта функция поддерживает Microsoft 365 и другие типы групп, подготовленных в Azure AD. Обратите внимание, что группы Microsoft 365 не могут содержать групп. Следовательно, участие в группе Microsoft 365 всегда является прямым.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -95,6 +95,10 @@ Content-length: 44
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-checkmembergroups-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-checkmembergroups-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

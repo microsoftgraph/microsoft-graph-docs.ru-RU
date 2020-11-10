@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 906a001ef934dc201b500ea30ccc274c9a5de605
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 594be32469abb7e75247936c9e32373ab3c3b95d
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848908"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48976386"
 ---
 # <a name="archive-team"></a>Архивация команды
 
@@ -34,7 +34,7 @@ ms.locfileid: "48848908"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | Теамсеттингс. ReadWrite. Group *, Теамсеттингс. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Для приложений | TeamSettings.ReadWrite.Group*, TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
@@ -85,6 +85,10 @@ POST https://graph.microsoft.com/beta/teams/{id}/archive
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/archive-team-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/archive-team-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

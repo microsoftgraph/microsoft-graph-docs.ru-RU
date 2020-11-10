@@ -549,6 +549,8 @@ items:
             items:
               - name: Обзор
                 href: toolkit/get-started/overview.md
+              - name: Создание приложения Azure Active Directory
+                href: toolkit/get-started/add-aad-app-registration.md
               - name: Создание веб-приложения (JavaScript)
                 href: toolkit/get-started/build-a-web-app.md
               - name: Создание веб-части SharePoint

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ac8588470d7c52bdd163567bee8a1210dd5478a7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ef1fbbf7c23e7ee79582d1b1c949b0f013f15713
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050425"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48975160"
 ---
 # <a name="create-unifiedroleassignment"></a>Создание Унифиедролеассигнмент
 
@@ -28,7 +28,7 @@ ms.locfileid: "48050425"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | RoleManagement.ReadWrite.Directory |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | RoleManagement.ReadWrite.Directory |
+| Для приложения                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ POST /roleManagement/directory/roleAssignments
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -88,6 +88,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignment-from-rbacapplication-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignment-from-rbacapplication-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -152,6 +156,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-unifiedroleassignment-over-administrativeunit-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignment-over-administrativeunit-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

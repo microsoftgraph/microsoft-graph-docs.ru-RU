@@ -5,12 +5,12 @@ localization_priority: Normal
 author: abhijeetsinha
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: afb8dbdb19816b487dfe7fe60cd09897120caa2b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 29a5be18680853ee88d22417ddaf731be7f8c1d8
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968985"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48976666"
 ---
 # <a name="update-unifiedroledefinition"></a>Обновление Унифиедроледефинитион
 
@@ -28,7 +28,7 @@ ms.locfileid: "47968985"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | RoleManagement.ReadWrite.Directory |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | RoleManagement.ReadWrite.Directory |
+| Для приложения                            | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -56,7 +56,7 @@ PATCH /roleManagement/directory/roleDefinitions/{id}
 |isBuiltIn|Boolean| Флаг, указывающий, является ли определение роли частью набора по умолчанию, входящего в состав продукта или настраиваемого. Только для чтения. |
 |isEnabled|Boolean| Флаг, указывающий, включена ли роль для назначения. Если значение false, роль недоступна для назначения. Только для чтения, если для Builtin задано значение true. |
 |resourceScopes|Коллекция String| Список разрешений областей, к которым применяется определение роли. В настоящее время поддерживается только "/". Только для чтения, если для Builtin задано значение true. **НЕ ИСПОЛЬЗУЙТЕ. Это свойство будет нерекомендуемым в ближайшее время. Присоединение области к назначению ролей.**|
-|rolePermissions|Коллекция [унифиедролепермиссион](../resources/unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, если для Builtin задано значение true. Обязательно. |
+|rolePermissions|Коллекция [унифиедролепермиссион](../resources/unifiedrolepermission.md)| Список разрешений, включенных в роль. Только для чтения, если для Builtin задано значение true. Обязательный. |
 |templateId|String| Настраиваемый идентификатор шаблона, который можно задать, если параметру Builtin присвоено значение false. Этот идентификатор обычно используется, если необходимо, чтобы один идентификатор совпадал для разных каталогов. Только для чтения, если для Builtin задано значение true. |
 |инхеритспермиссионсфром| Коллекция [унифиедроледефинитион](../resources/unifiedroledefinition.md)| Доступная только для чтения коллекция определений ролей, от которых наследуется данное определение роли. Этот атрибут поддерживает только встроенные роли Azure AD. |
 |version|String| Указывает версию определения роли. Только для чтения, если для Builtin задано значение true.|
@@ -106,6 +106,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-unifiedroledefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-unifiedroledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

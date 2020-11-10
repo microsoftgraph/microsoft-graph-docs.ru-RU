@@ -5,12 +5,12 @@ localization_priority: Normal
 author: adimitui
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d2e9f8ee05be960ff9c308aaee352b8a795a4a58
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 50d26588e35c1790464c61a389ef354db0777d38
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460567"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48975733"
 ---
 # <a name="get-organization"></a>Получение организации
 
@@ -32,7 +32,7 @@ ms.locfileid: "48460567"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложения | Organization.Read.All, Directory.Read.All, Organization.ReadWrite.All, Directory.ReadWrite.All |
 
-> **Примечание.** Приложения с разрешением User.Read могут считывать только такие свойства организации, как **id**, **displayName** и **verifiedDomains**.  Для всех остальных свойств возвращается значение `null`. Считать все свойства можно с помощью Organization.Read.All.
+> **Примечание.** Приложения с разрешением User.Read могут считывать только такие свойства организации, как **id** , **displayName** и **verifiedDomains**.  Для всех остальных свойств возвращается значение `null`. Считать все свойства можно с помощью Organization.Read.All.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/organization
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-organization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-organization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

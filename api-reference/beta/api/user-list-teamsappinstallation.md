@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ff38da671199bc7bb3b66fe498a86d95817ad649
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 41367caeeca0b323a774d21c63d4431bf21e1201
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004305"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48974585"
 ---
 # <a name="list-apps-installed-for-user"></a>Перечисление приложений, установленных для пользователя
 
@@ -28,7 +28,7 @@ ms.locfileid: "48004305"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Теамсаппинсталлатион. Реадфорусер, Теамсаппинсталлатион. Реадвритефорусер |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Теамсаппинсталлатион. Реадфорусер. ALL, Теамсаппинсталлатион. Реадвритефорусер. ALL |
+|Для приложения | Теамсаппинсталлатион. Реадфорусер. ALL, Теамсаппинсталлатион. Реадвритефорусер. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,7 +48,7 @@ GET /users/{id}/teamwork/installedApps
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-list-teamsapps-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: People
 doc_type: apiPageType
-ms.openlocfilehash: 7428f696db38815d025f8e9fe56510489713b7f8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 156e9f6cef6c0b0f6e9def42fc4d2417706e426b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034494"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48975379"
 ---
 # <a name="create-personinterest"></a>Создание Персонинтерест
 
@@ -56,7 +56,7 @@ POST /users/{id | userPrincipalName}/profile/interests
 |:---|:---|:---|
 |алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |categories|Коллекция String|Содержит категории, которые пользователь связал с интересом (например, персональный, реЦипиес). |
-|коллаборатионтагс|Коллекция String|Содержит теги сценариев, с которыми пользователь связан с интересом. Допустимые значения в коллекции: `askMeAbout` ,, `ableToMentor` `wantsToLearn` , `wantsToImprove` .|
+|коллаборатионтагс|Коллекция строк|Содержит теги сценариев, с которыми пользователь связан с интересом. Допустимые значения в коллекции: `askMeAbout` ,, `ableToMentor` `wantsToLearn` , `wantsToImprove` .|
 |description|String|Содержит описание интереса.|
 |displayName|String|Содержит понятное имя для интереса.  |
 |выводов|[инференцедата](../resources/inferencedata.md)|Содержит сведения о выводе, если объект создается или изменяется приложением. Наследуется от [итемфацет](../resources/itemfacet.md).|
@@ -102,6 +102,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-personinterest-from-profile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-personinterest-from-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

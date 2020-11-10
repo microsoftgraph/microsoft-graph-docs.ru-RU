@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 doc_type: apiPageType
-ms.openlocfilehash: 986f6dd19686488e5e87d2de2e9ce9447fc63614
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 7940a4fed4b11d54e9dddf98b192346eb184c698
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373792"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48975992"
 ---
 # <a name="reportroot-getm365appuserdetail"></a>Reportroot.: getM365AppUserDetail
 
@@ -49,7 +49,7 @@ GET /reports/getM365AppUserDetail(date={date_value})
 
 | Параметр | Тип   | Описание                                                                                                                                                                                                                                             |
 | :-------- | :----- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| period    | string | Указывает отчетный период. Для {period_value} поддерживаются следующие значения: `D7` , `D30` , `D90` и `D180` . Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде. |
+| period    | string | Указывает отчетный период. Для {period_value} поддерживаются следующие значения: `D7` , `D30` , `D90` и `D180` . Эти значения указываются в формате D *n* , где *n*  — количество дней в отчетном периоде. |
 | date      | Date   | Указывает дату, за которую вы хотите просмотреть пользователей, выполнивших какое-либо действие. Значение {date_value} указывается в формате ГГГГ-ММ-ДД. Так как этот отчет доступен только за последние 30 дней, значение {date_value} должно быть датой из этого диапазона.          |
 
 > **Примечание:** Необходимо задать один `period` или `date` в URL-адресе.
@@ -88,7 +88,7 @@ CSV-файл содержит столбцы со следующими заго�
 - Windows
 - Mac
 - Mobile
-- Веб
+- Web
 - Outlook
 - Word
 - Excel
@@ -159,6 +159,10 @@ GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')/c
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getm365appusercoundetail-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getm365appusercoundetail-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -219,6 +223,10 @@ GET https://graph.microsoft.com/beta/reports/getM365AppUserDetail(period='D7')/c
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/reportroot-getm365appusercountdetail-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/reportroot-getm365appusercountdetail-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 38c52b40abb0a46e7c7504b8ba676191a62fb253
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b001ef5e353163f5658783a7850524d25ac4bc38
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019938"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48975763"
 ---
 # <a name="get-open-extension"></a>Получение открытого расширения
 
@@ -43,8 +43,8 @@ ms.locfileid: "48019938"
 | [organization](../resources/organization.md) | User.Read | Не поддерживается | Organization.Read.All |
 | [contact](../resources/contact.md) (личный контакт) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks. ReadWrite. ALL |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks. ReadWrite. ALL |
+| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -72,7 +72,7 @@ GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/extensions/{extens
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>Получение известного экземпляра ресурса с соответствующим расширением 
 
-Для событий групп Event, Group POST, Message, Personal Contact, Task, Task List Types можно использовать тот же запрос REST, что и при извлечении экземпляра ресурса, искать расширение, которое соответствует фильтру для свойства **ID** , и развертывать экземпляр с расширением. Отклик включает большинство свойств ресурса.
+Для типов ресурса, таких как event, group event, group post, message, personal contact, task, task list, можно использовать такой же запрос REST, что и при получении экземпляра ресурса. Найдите расширение, соответствующее заданному свойству **id** , и дополните экземпляр расширением. Отклик включает большинство свойств ресурса.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -99,7 +99,7 @@ GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId
 
 ### <a name="filter-for-resource-instances-expanded-with-a-matching-extension"></a>Фильтрация экземпляров ресурсов с соответствующим расширением 
 
-Используйте такой же запрос REST, что и при получении коллекции поддерживаемого ресурса, отфильтруйте в коллекции экземпляры, содержащие расширение с соответствующим свойством **id**, и дополните эти экземпляры расширением.
+Используйте такой же запрос REST, что и при получении коллекции поддерживаемого ресурса, отфильтруйте в коллекции экземпляры, содержащие расширение с соответствующим свойством **id** , и дополните эти экземпляры расширением.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -169,6 +169,10 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 [!INCLUDE [sample-code](../includes/snippets/objc/get-opentypeextension-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -231,6 +235,10 @@ GET https://graph.microsoft.com/beta/groups/f5480dfd-7d77-4d0b-ba2e-3391953cc74a
 [!INCLUDE [sample-code](../includes/snippets/objc/get-opentypeextension-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -283,6 +291,10 @@ GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-opentypeextension-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -396,6 +408,10 @@ GET https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-opentypeextension-4-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-opentypeextension-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

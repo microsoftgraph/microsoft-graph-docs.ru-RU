@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 280ca648abf20622b92d9724c0cbe504e6b207d5
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 06c94c94d28af9e23c9b323e19a38c703231fa87
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48071943"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48976291"
 ---
 # <a name="delete-open-extension"></a>Удаление открытого расширения
 
@@ -35,8 +35,8 @@ ms.locfileid: "48071943"
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Не поддерживается | Organization.ReadWrite.All |
 | [contact](../resources/contact.md) (личный контакт) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [user](../resources/user.md) | User.ReadWrite | User.ReadWrite | User.ReadWrite.All |
-| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks. ReadWrite. ALL |
-| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks. ReadWrite. ALL |
+| [task](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
+| [tasklist](../resources/todotasklist.md)  | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -100,6 +100,10 @@ DELETE https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUy
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-opentypeextension-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-opentypeextension-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
