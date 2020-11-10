@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 38af98443e34ec64cdaa70316966451c4a58eb16
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f12d6cf2e05b8ea85459e41746b9fd4f1cba30c0
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966921"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48971793"
 ---
 # <a name="list-places"></a>Список мест
 
@@ -39,7 +39,7 @@ ms.locfileid: "47966921"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Place.Read.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-| Для приложений                            | Place.Read.All |
+| Для приложения                            | Place.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -63,9 +63,9 @@ GET /places/microsoft.graph.roomlist
 GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 ```
 
->**Note**: для получения комнат в списке помещений необходимо указать список помещений по свойству **EmailAddress** , а не по **идентификатору**. 
+>**Note** : для получения комнат в списке помещений необходимо указать список помещений по свойству **EmailAddress** , а не по **идентификатору**. 
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает следующие параметры запроса, помогающие настроить ответ:
 - $filter
 - $select
@@ -83,7 +83,7 @@ GET /places/{room-list-emailaddress}/microsoft.graph.roomlist/rooms
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -118,6 +118,10 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-all-rooms-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-all-rooms-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -238,6 +242,10 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 [!INCLUDE [sample-code](../includes/snippets/objc/get-all-roomlists-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-all-roomlists-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -319,6 +327,10 @@ GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.ro
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-rooms-in-roomlist-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-rooms-in-roomlist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

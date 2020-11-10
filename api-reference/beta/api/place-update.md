@@ -5,12 +5,12 @@ localization_priority: Normal
 author: vrod9429
 ms.prod: Outlook
 doc_type: apiPageType
-ms.openlocfilehash: 9189c06a827fd00572cf01ed0663bdab6ff29756
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: 338f373aca61e30745ee4fbc5f2d03f5d7a69b46
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932509"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48971704"
 ---
 # <a name="update-place"></a>Обновление места
 
@@ -28,7 +28,7 @@ ms.locfileid: "48932509"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Place.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Не поддерживается |
+| Для приложения                            | Не поддерживается |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,20 +52,20 @@ PATCH /places/{id | emailAddress}
 | Свойство               | Тип                                              | Описание |
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](../resources/physicaladdress.md)             | Почтовый адрес комнаты или RoomList принимают одиночные. |
-| аудиодевиценаме        | Строка                                            | Указывает имя звукового устройства в комнате. |
+| аудиодевиценаме        | String                                            | Указывает имя звукового устройства в комнате. |
 | букингтипе            | [букингтипе](../resources/room.md)                            | Тип комнаты. Возможные значения: `Standard` и `Reserved`. |
-| создания               | Строка                                            | Задает имя здания или номер здания, в котором находится комната. |
-| мощности               | Строка                                            | Указывает емкость комнаты. |
-| дисплайдевиценаме      | Строка                                            | Задает имя устройства отображения в комнате. |
-| флурлабел             | Строка                                            | Указывает этаж, в котором находится комната. |
+| создания               | String                                            | Задает имя здания или номер здания, в котором находится комната. |
+| мощности               | String                                            | Указывает емкость комнаты. |
+| дисплайдевиценаме      | String                                            | Задает имя устройства отображения в комнате. |
+| флурлабел             | String                                            | Указывает этаж, в котором находится комната. |
 | флурнумбер            | Int32                                             | Указывает номер этажа, в котором находится комната. |
 | geoCoordinates         | [outlookGeoCoordinates](../resources/outlookgeocoordinates.md) | Указывает место в комнате или RoomList принимают одиночные в широте, долготе и дополнительном координатах высоты. |
-| исвхилчаиракцессибле | Boolean                                           | Указывает, является ли комната вхилчаир доступным. |
-| label                  | Строка                                            | Задает описательную метку для комнаты, например номер или имя. |
-| прозвищ               | Строка                                            | Задает псевдоним для комнаты, например "назначение комнаты". |
+| исвхилчаиракцессибле | Логический                                           | Указывает, является ли комната вхилчаир доступным. |
+| label                  | String                                            | Задает описательную метку для комнаты, например номер или имя. |
+| прозвищ               | String                                            | Задает псевдоним для комнаты, например "назначение комнаты". |
 | phone                  | String                                            | Номер телефона комнаты или RoomList принимают одиночные. |
 | tags                   | Коллекция String                                 | Задает дополнительные функции комнаты, например, сведения, например тип представления или тип мебели. |
-| видеодевиценаме        | Строка                                            | Задает имя видеоустройства в комнате. |
+| видеодевиценаме        | String                                            | Задает имя видеоустройства в комнате. |
 
 ## <a name="response"></a>Отклик
 
@@ -110,6 +110,10 @@ Content-length: 285
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-room-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-room-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -215,6 +219,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-roomlist-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-roomlist-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

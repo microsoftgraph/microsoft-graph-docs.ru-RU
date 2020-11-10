@@ -6,12 +6,12 @@ title: Получение записи из списка SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 25d0a055840055c822814799346136a6bda6c660
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: e66d74493cfb07c0b8ed0071f971037b77f30cf1
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373582"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48971378"
 ---
 # <a name="get-an-item-in-a-list"></a>Получение элемента списка
 
@@ -32,9 +32,9 @@ ms.locfileid: "48373582"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Sites.Read.All, Sites.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Sites. Read. ALL, sites. ReadWrite. ALL, sites. Manage. ALL |
+|Для приложений | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All |
 
-> **Note**: Application Permission sites. Manage. ALL является обязательным, если для списка SharePoint включены параметры утверждения контента. В противном случае Microsoft Graph не будет получать элементы списка, которые имеют состояние утверждения, отличное от "утверждено".
+> **Примечание.** : Требуется разрешение для приложений Sites.Manage.All, если в списке SharePoint включены параметры утверждения контента. В противном случае Microsoft Graph не будет получать элементы списка, которые имеют состояние утверждения, отличное от "утверждено".
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-list-item-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-list-item-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

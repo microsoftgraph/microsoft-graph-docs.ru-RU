@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: d0a435df4b8ff0eddefc34118738eab68abbb8b9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c00701e2a6f1e370f2f646c225c2154a83441aa9
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48027400"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48971836"
 ---
 # <a name="create-trustframeworkkeyset"></a>Создание Трустфрамеворккэйсет
 
@@ -28,7 +28,7 @@ ms.locfileid: "48027400"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Трустфрамеворккэйсет. ReadWrite. ALL   |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Трустфрамеворккэйсет. ReadWrite. ALL    |
+| Для приложения                            | Трустфрамеворккэйсет. ReadWrite. ALL    |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -88,12 +88,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-trustframeworkkeyset-from-trustframework-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-trustframeworkkeyset-from-trustframework-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример ответа.
+Ниже приводится пример отклика.
 
 > **Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -159,7 +163,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже показан пример ответа.
+Ниже приводится пример отклика.
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

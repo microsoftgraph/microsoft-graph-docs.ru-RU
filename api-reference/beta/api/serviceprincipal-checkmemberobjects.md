@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8213b2db1cb61eb947816e6b9a3c62485606783c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 363ae809f4430d1219e25edb0871d8258fde2efb
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044684"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48970877"
 ---
 # <a name="serviceprincipal-checkmemberobjects"></a>servicePrincipal: Чеккмемберобжектс
 
@@ -55,7 +55,7 @@ POST /servicePrincipals/{id}/checkMemberObjects
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции String в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции строк в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -95,6 +95,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-checkmemberobjects-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-checkmemberobjects-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

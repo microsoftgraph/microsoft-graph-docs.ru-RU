@@ -5,12 +5,12 @@ localization_priority: Normal
 author: Nickgmicrosoft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 82d45f8af4e9a7a80626ad83c58b4fa58c5bb5de
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 037792b26464fe0ce5644b33d38e41d1f44de596
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095669"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48972180"
 ---
 # <a name="trustframeworkkeyset-uploadsecret"></a>Трустфрамеворккэйсет: Уплоадсекрет
 
@@ -28,7 +28,7 @@ ms.locfileid: "48095669"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Трустфрамеворккэйсет. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Трустфрамеворккэйсет. ReadWrite. ALL |
+| Для приложения                            | Трустфрамеворккэйсет. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,8 +51,8 @@ POST /trustFramework/keySets/{id}/uploadSecret
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|Используйте|Строка|Аналогично свойству **use** объекта **трустфрамеворккэй**.|
-|звонить|Строка|Аналогично свойству **k** объекта **трустфрамеворккэй**. Это поле, используемое для отправки секрета.|
+|Используйте|String|Аналогично свойству **use** объекта **трустфрамеворккэй**.|
+|звонить|String|Аналогично свойству **k** объекта **трустфрамеворккэй**. Это поле, используемое для отправки секрета.|
 |nbf|Int64|Аналогично свойству **NBF** объекта **трустфрамеворккэй**.|
 |exp|Int64|Аналогично свойству **exp** объекта **трустфрамеворккэй**.|
 
@@ -93,6 +93,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/trustframeworkkeyset-uploadsecret-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/trustframeworkkeyset-uploadsecret-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

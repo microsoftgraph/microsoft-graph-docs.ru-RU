@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 255b1c251d06414fcf625827fb1a23e00b233754
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 994c48091ff6059e4e696db4312eb15f3a377614
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48372532"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48971437"
 ---
 # <a name="get-reviewset"></a>Получение представления
 
@@ -42,7 +42,7 @@ GET /compliance/ediscovery/cases/{id}/reviewSets/{id}
 
 По умолчанию возвращаются все поля набора проверки; Однако вы можете указать, какие поля необходимо возвращать с помощью `$select` параметра запроса OData.  Например, чтобы возвращались только **DisplayName** и ID, добавьте в запрос следующее: `$select=displayName,Id` .
 
-Так как запрос может вернуть много обращений, можно отфильтровать их с помощью **DisplayName**.  Чтобы выполнить фильтрацию по **DisplayName**, добавьте в запрос следующее: `$filter=displayName eq 'rs1'` , где имя набора проверки — RS1.
+Так как запрос может вернуть много обращений, можно отфильтровать их с помощью **DisplayName**.  Чтобы выполнить фильтрацию по **DisplayName** , добавьте в запрос следующее: `$filter=displayName eq 'rs1'` , где имя набора проверки — RS1.
 
 Дополнительные сведения о фильтрации и указании полей можно узнать [в статье Использование выражений фильтров в URI OData ](/dynamics-nav/using-filter-expressions-in-odata-uris).
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/6f65a8e4-c6a0-4
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-reviewset-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-reviewset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
