@@ -3,14 +3,98 @@ title: Обзор предыдущих выпусков Microsoft Graph
 description: Новые возможности в предыдущих выпусках Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 90acde49b10d0e2a14b82d7b830848641a7ddabd
-ms.sourcegitcommit: 17cd789abbab2bf674ce4e39b3fcdc1bbebc83ce
+ms.openlocfilehash: f096f2e24ecfa146585a82490ae74d8c1e903b34
+ms.sourcegitcommit: 4e7830a22b440bbbcfa795937af85d8542e5525b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48742190"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48982690"
 ---
 # <a name="highlights-of-earlier-releases"></a>Обзор предыдущих выпусков
+
+## <a name="september-2020-new-and-generally-available"></a>Сентябрь 2020г.: новые и общедоступные возможности
+
+### <a name="calendar"></a>Календарь
+Общая доступность необязательного свойства **transactionId** ресурса [event](/graph/api/resources/event), которое настраивается клиентским приложением, чтобы избежать лишних операций POST, если клиент повторно пытается создать то же событие. Это полезно в тех случаях, когда из-за плохого сетевого подключения клиент отключается, не успев получить от сервера ответ на предыдущий запрос клиента на создание события.
+
+### <a name="cloud-communications"></a>Облачные коммуникации
+[Удаление участника](/graph/api/participant-delete) из [звонка](/graph/api/resources/call). Вы можете использовать эту операцию даже в тех случаях, когда нужно удалить участника из активного звонка.
+
+### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
+Обновления Intune за [сентябрь](changelog.md#september-2020) для версии 1.0.
+
+### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
+Общая доступность [API административных единиц](/graph/api/resources/administrativeunit), позволяющих организациям делить Azure Active Directory на подразделения, а также управлять административными обязанностями и делегировать их этим подразделениям. Эти подразделения могут представлять регионы, отделы, места возникновения затрат и т. д.
+
+### <a name="reports"></a>Отчеты
+[Получите отчет, включающий количество уникальных пользователей](/graph/api/reportroot-getemailappusageversionsusercounts) для Outlook 2019 и Outlook в Microsoft 365.
+
+### <a name="teamwork"></a>Командная работа
+- Получите свойство **lastEditedDateTime** , чтобы узнать, когда отправитель последний раз внес изменения в [сообщение чата](/graph/api/resources/chatmessage).
+- Получите свойство **lastModifiedDateTime** , чтобы узнать, когда отправитель создал сообщение чата или когда любой пользователь изменил его другими способами, в том числе добавив или удалив реакции. 
+- [Получайте уведомления об изменениях](webhooks.md) в [сообщениях чата](/graph/api/resources/chatmessage).
+- [Обновите](/graph/api/chatmessage-update?view=graph-rest-beta&preserve-view=true) свойство **policyViolation** объекта [chatMessage](/graph/api/resources/chatmessagepreserve-view=true) в [канале](/graph/api/resources/channel&preserve-view=true) или [чате](/graph/api/resources/chat&preserve-view=true), позволив приложениям защиты от потери данных (DLP) отслеживать [нарушения политики сообщений чатов](/graph/api/resources/chatmessagepolicyviolation?preserve-view=true), чтобы сообщения не содержали данные, которые пользователи не должны отправлять.
+
+### <a name="use-the-sdks"></a>Использование пакетов SDK
+Общая доступность пакета [SDK PowerShell Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-powershell), обеспечивающего понятный и согласованный доступ ко всем возможностям Microsoft Graph.
+
+### <a name="use-the-toolkit"></a>Использование набора средств
+Воспользуйтесь новыми пошаговыми руководствами по началу работы для набора средств Microsoft Graph и насладитесь удобством набора средств:
+- [Создание веб-приложения в JavaScript](./toolkit/get-started/build-a-web-app.md)
+- [Создание веб-части SharePoint](./toolkit/get-started/build-a-sharepoint-web-part.md)
+- [Создание вкладки Microsoft Teams](./toolkit/get-started/build-a-microsoft-teams-tab.md)
+- [Использование набора средств с помощью React](./toolkit/get-started/use-toolkit-with-react.md)
+- [Использование набора средств с помощью Angular](./toolkit/get-started/use-toolkit-with-angular.md)
+
+### <a name="users"></a>Пользователи
+Помимо получения SMTP-адреса [пользователя](/graph/api/resources/user) с помощью свойства **mail** , теперь вы можете установить это свойство и обновить адрес электронной почты пользователя. 
+
+## <a name="september-2020-new-in-preview-only"></a>Сентябрь 2020г.: новые возможности только в предварительной версии
+
+### <a name="application"></a>Для приложений
+Создание, перечисление и удаление [классификаций делегированных разрешений](/graph/api/resources/delegatedpermissionclassification?view=graph-rest-beta&preserve-view=true), применяемых [субъектом-службой](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true). Используйте классификации делегированных разрешений в сочетании с [параметрами согласия пользователей](/azure/active-directory/manage-apps/configure-user-consent), чтобы устанавливать ограничения на то, когда пользователям разрешено предоставлять согласие приложениям.
+
+### <a name="cloud-communications"></a>Облачные коммуникации
+- Не рекомендуется использовать свойства **autoAdmittedUsers** из [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true). Вместо этого следует использовать новое свойство **lobbyBypassSettings** и его [значения](/graph/api/resources/lobbybypasssettings?view=graph-rest-beta&preserve-view=true#lobbybypassscope-values).
+- Используйте дополнительные параметры, связанные для объявления звонящим о присоединении или выходе из собрания по сети (свойство **isEntryExitAnnounced** ), и разрешения конкретных выступающих доступа к собранию (свойство **allowedPresenters** ).
+
+### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
+- [Получите документы для каждого задания печати, связанного с принтером](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true), применив `$expand` [параметр запроса системы OData](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true#optional-query-parameters). 
+- Отфильтруйте задания печати по пользователю, который их создал, применив `$filter` [параметр системного запроса OData](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true#optional-query-parameters).
+
+### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
+Обновления Intune за [сентябрь](changelog.md#september-2020) для бета-версии.
+
+### <a name="identity-and-access--directory-management"></a>Удостоверение и доступ | Управление каталогом
+- [Получите ключ восстановления BitLocker](/graph/api/bitlockerrecoverykey-get?view=graph-rest-beta&preserve-view=true) от имени вошедшего пользователя, который является владельцем устройства или выполняет соответствующую роль. При получении ключа восстановления создается [журнал аудита](/azure/active-directory/reports-monitoring/concept-audit-logs) наравне с пользовательским интерфейсом.
+- Получите общее и использованное значение [квоты каталога](/graph/api/resources/directorysizequota?view=graph-rest-beta&preserve-view=true) в [организации](/graph/api/resources/organization?view=graph-rest-beta&preserve-view=true) с помощью свойства **directorySizeQuota**.
+
+### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
+Вы можете включить [расписание](/graph/api/resources/requestschedule?view=graph-rest-beta&preserve-view=true) при запросе или удалении [назначения пользователя на пакет доступа](/graph/api/resources/accesspackageassignment?view=graph-rest-beta&preserve-view=true), который определяет доступ к группам, приложениям или сайтам SharePoint.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
+Организации могут [получить](/graph/api/continuousaccessevaluationpolicy-get?view=graph-rest-beta&preserve-view=true) или [обновить](/graph/api/continuousaccessevaluationpolicy-update?view=graph-rest-beta&preserve-view=true) [политику оценки непрерывного доступа](/graph/api/resources/continuousAccessEvaluationPolicy?view=graph-rest-beta&preserve-view=true), чтобы управлять сеансами проверки подлинности в режиме реального времени.
+
+### <a name="search"></a>Поиск
+
+- Используйте дополнительные возможности в [API Поиска (Майкрософт)](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true) для соединителей OneDrive, SharePoint, Microsoft Graph: 
+
+  - Получайте [дополнительные типы](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#scope-search-based-on-entity-types) содержимого из OneDrive и SharePoint: **drive** , **list** , **listItem** и **site**. 
+  - Объединяйте свойства в области в результатах поиска для [выбранных свойств](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#get-selected-properties). 
+  - Получайте настраиваемые свойства в ресурсах [listItem](/graph/api/resources/listitem?view=graph-rest-beta&preserve-view=true).
+  - [Сортируйте](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#sort-search-results) результаты поиска для OneDrive и SharePoint с помощью любого свойства, поддерживающего сортировку.
+  - [Уточняйте результаты с помощью агрегатов](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true#refine-results-using-aggregations) для OneDrive и SharePoint.
+- Запрашивайте внешние данные, принятые соединителями Microsoft Graph, в [нескольких связях](./search-concept-custom-types.md).
+- Воспользуйтесь улучшенным содержимым для соединителей Microsoft Graph, чтобы узнать о следующем:
+  - [Управление связями](search-index-manage-connections.md)
+  - [Управление схемой](search-index-manage-schema.md)
+  - [Управление элементами](search-index-manage-items.md)
+- Отслеживайте состояние [подключения](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) Microsoft Graph.
+- Определите [внешнюю группу](/graph/api/resources/externalgroup?view=graph-rest-beta&preserve-view=true), чтобы задать разрешения для объектов [внешних элементов](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true), добавленных в [подключение](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) Microsoft Graph. Внешние группы могут представлять группы, не относящиеся к Azure Active Directory, или похожие на группы конструкции, например бизнес-подразделения, которые устанавливают разрешения для содержимого во внешнем источнике данных.
+
+### <a name="teamwork"></a>Командная работа
+- Узнайте о дате и времени создания [канала](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) или [команды](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) Teams.
+
 
 ## <a name="august-2020-new-and-generally-available"></a>Август 2020 г.: новые и общедоступные возможности
 
@@ -19,7 +103,7 @@ ms.locfileid: "48742190"
 
 ### <a name="cloud-communications"></a>Облачные коммуникации
 - [Отмените](/graph/api/call-cancelmediaprocessing) любые действия интерактивного голосового ответа (IVR), выполняемые или находящиеся в очереди, которые [воспроизводят звуковой сигнал](/graph/api/call-playprompt) или [записывают ответ](/graph/api/call-record).
-- Получите [сведения о расшифровке звонка](/graph/api/resources/calltranscriptioninfo) с помощью свойства **transcription** .
+- Получите [сведения о расшифровке звонка](/graph/api/resources/calltranscriptioninfo) с помощью свойства **transcription**.
 
 ### <a name="teamwork"></a>Командная работа
 - Используйте альтернативный способ [создания группы](/graph/api/team-post) без предварительного создания группы.
@@ -31,20 +115,20 @@ ms.locfileid: "48742190"
 ## <a name="august-2020-new-in-preview-only"></a>Август 2020 г.: новые возможности только в предварительной версии
 
 ### <a name="applications"></a>Приложения
-Поддержка единого входа на основе паролей в ресурсах приложения [субъекта-службы](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) и указание таких [параметров](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta&preserve-view=true) в свойстве **passwordSingleSignOnSettings** . Сведения о едином входе на основе паролей в Azure AD см. в статье [Настройка единого входа на основе пароля](/azure/active-directory/manage-apps/configure-password-single-sign-on-non-gallery-applications).
+Поддержка единого входа на основе паролей в ресурсах приложения [субъекта-службы](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) и указание таких [параметров](/graph/api/resources/passwordsinglesignonsettings?view=graph-rest-beta&preserve-view=true) в свойстве **passwordSingleSignOnSettings**. Сведения о едином входе на основе паролей в Azure AD см. в статье [Настройка единого входа на основе пароля](/azure/active-directory/manage-apps/configure-password-single-sign-on-non-gallery-applications).
 
 ### <a name="calendar"></a>Календарь
 Улучшенная программная поддержка сценариев, в которых используется повторяющееся [событие](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true):
 - надежный поиск экземпляра события в повторяющемся ряду, в том числе измененного или отмененного, с помощью свойства **occurrenceId** ;
 - поиск любых исключений в ряду повторяющихся экземпляров события с помощью свойства **exceptionOccurrences** ;
-- поиск любых отмен в ряду повторяющихся экземпляров события с помощью свойства **cancelledOccurrences** .
+- поиск любых отмен в ряду повторяющихся экземпляров события с помощью свойства **cancelledOccurrences**.
 
 ### <a name="change-notifications"></a>Уведомления об изменениях
-- Используйте свойство **includeResourceData** ресурса [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) для [настройки уведомлений об изменениях, включающих данные ресурсов](webhooks-with-resource-data.md). Не используйте свойство **includeProperties** .
+- Используйте свойство **includeResourceData** ресурса [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) для [настройки уведомлений об изменениях, включающих данные ресурсов](webhooks-with-resource-data.md). Не используйте свойство **includeProperties**.
 - Получение [уведомлений об изменениях, доставляемых через концентратор событий](change-notifications-delivery.md).
 
 ### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
-- Предоставление всем пользователям и группам возможности [совместного использования принтера](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) с помощью свойства **allowAllUser** .
+- Предоставление всем пользователям и группам возможности [совместного использования принтера](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) с помощью свойства **allowAllUser**.
 - С помощью новых делегированных разрешений и разрешений для приложений можно пользоваться и управлять [печатью документа](/graph/api/resources/printDocument?view=graph-rest-beta&preserve-view=true), [заданием на печать](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true), [принтером](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true), [предоставлением общего доступа к принтеру](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) и [определением операции печати](/graph/api/resources/printtaskdefinition?view=graph-rest-beta&preserve-view=true). Дополнительные сведения см. в статье об обновлениях в сфере облачной печати [за август](changelog.md#august-2020).
 
 ### <a name="devices-and-apps--corporate-management"></a>Устройства и приложения | Корпоративное управление
@@ -52,7 +136,7 @@ ms.locfileid: "48742190"
 
 ### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
 - Настройка [условий соглашения об использовании](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) для поддержки срока действия и периодичности соглашения с обязательным принятием пользователем соглашения на отдельных устройствах или повторным принятием соглашения с установленной периодичностью. 
-- Используйте свойство **file** для перехода к [настраиваемому соглашению](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true) условий. Не используйте свойство **files** .
+- Используйте свойство **file** для перехода к [настраиваемому соглашению](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true) условий. Не используйте свойство **files**.
 - Добавление, удаление и перечисление внутренних или внешних кураторов, которые могут утверждать запросы от [подключенной организации](/graph/api/resources/connectedorganization?view=graph-rest-beta&preserve-view=true) на доступ к группе, приложению или сайту SharePoint Online. Дополнительные сведения см. в статье [Управление правами](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
@@ -91,7 +175,7 @@ GA функции, которая позволяет организаторам 
 Удалено ошибочно реализованное свойство **sequenceNumber** из ресурса [changeNotification](/graph/api/resources/changenotification).
 
 ### <a name="groups"></a>Группы
-Общая доступность следующих свойств объекта [group](/graph/api/resources/group): **assignedLabels** , **expirationDateTime** , **membershipRule** , **membershipRuleProcessingState** , **preferredLanguage** и **theme** .
+Общая доступность следующих свойств объекта [group](/graph/api/resources/group): **assignedLabels** , **expirationDateTime** , **membershipRule** , **membershipRuleProcessingState** , **preferredLanguage** и **theme**.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
 - Удаление пользователя в качестве зарегистрированного владельца или пользователя [устройства](/graph/api/resources/device).
@@ -234,7 +318,7 @@ GA функции, которая позволяет организаторам 
 Обновления Intune за [июнь](changelog.md#june-2020) в бета-версии.
 
 ### <a name="education"></a>Образование
-- Возможность использовать делегированные разрешения `EduRoster.ReadBasic` для [получения](/graph/api/educationuser-get?view=graph-rest-beta&preserve-view=true) идентификатора [преподавателя](/graph/api/resources/educationteacher?view=graph-rest-beta&preserve-view=true) или [учащегося](/graph/api/resources/educationstudent?view=graph-rest-beta&preserve-view=true) во внешней исходной программе как свойство **externalId** .
+- Возможность использовать делегированные разрешения `EduRoster.ReadBasic` для [получения](/graph/api/educationuser-get?view=graph-rest-beta&preserve-view=true) идентификатора [преподавателя](/graph/api/resources/educationteacher?view=graph-rest-beta&preserve-view=true) или [учащегося](/graph/api/resources/educationstudent?view=graph-rest-beta&preserve-view=true) во внешней исходной программе как свойство **externalId**.
 - Использование свойства **externalSource** для отслеживания значения `lms`, если [организация](/graph/api/resources/educationorganization?view=graph-rest-beta&preserve-view=true) или [класс](/graph/api/resources/educationclass?view=graph-rest-beta&preserve-view=true) в сфере образования созданы в системе управления обучением (LMS).
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
@@ -244,7 +328,7 @@ GA функции, которая позволяет организаторам 
 
 ### <a name="search"></a>Поиск
 - Использование улучшения [свойства](/graph/api/resources/property?view=graph-rest-beta&preserve-view=true) в [схеме](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true) **isRefinable** для включения фильтрации результатов поиска и более точного управления взаимодействием при поиске, а также **псевдонимов** и **меток** для повышения релевантности.
-- Возможность указать до 128 ресурсов **свойства** в **схеме** .
+- Возможность указать до 128 ресурсов **свойства** в **схеме**.
 - Использование [get externalItem](/graph/api/externalitem-get?view=graph-rest-beta&preserve-view=true) для диагностики.
 
 ### <a name="users"></a>Пользователи
@@ -299,20 +383,20 @@ GA функции, которая позволяет организаторам 
 ### <a name="teamwork"></a>Командная работа
 - Если ваш сценарий предполагает онлайн-собрания в Teams, см. рекомендации [ Как выбрать](choose-online-meeting-api.md) между [API календаря](outlook-calendar-online-meetings.md) и [API облачных средств обмена данными](cloud-communications-online-meetings.md) для создания онлайн-собраний и подключения к ним.
 - [Отправка сообщений](/graph/api/channel-post-messages?view=graph-rest-1.0&preserve-view=true) и [ответ](/graph/api/channel-post-messagereply?view=graph-rest-1.0&preserve-view=true) на сообщения в [канале](/graph/api/resources/channel?view=graph-rest-1.0&preserve-view=true).
-- Получите расположение OneDrive для бизнеса файлов для [канала](/graph/api/resources/channel?view=graph-rest-1.0&preserve-view=true), используя свойство навигации **fileFolder** .
+- Получите расположение OneDrive для бизнеса файлов для [канала](/graph/api/resources/channel?view=graph-rest-1.0&preserve-view=true), используя свойство навигации **fileFolder**.
 
 ### <a name="teamwork--shifts"></a>Командная работа | Смены
 Общедоступная версия [shifts API](/graph/api/resources/shift?view=graph-rest-1.0&preserve-view=true) в версии 1.0. Используйте этот API в производственных приложениях для создания, обновления и управления расписаниями сотрудников без компьютеров, чтобы обеспечить их взаимодействие и эффективность совместной работы.
 
 ### <a name="users"></a>Пользователи
 - Подпишитесь на уведомления об изменении для ресурсов [user](/graph/api/resources/user) в службе Microsoft Cloud для Китая, предоставляемой 21Vianet.
-- Отслеживайте состояние и дату/время последнего изменения состояния внешнего пользователя, который был [приглашен](/graph/api/invitation-post?view=graph-rest-1.0&preserve-view=true) присоединиться к организации, с помощью свойств **externalUserState** и **externalUserStateChangeDateTime** ресурса **user** .
+- Отслеживайте состояние и дату/время последнего изменения состояния внешнего пользователя, который был [приглашен](/graph/api/invitation-post?view=graph-rest-1.0&preserve-view=true) присоединиться к организации, с помощью свойств **externalUserState** и **externalUserStateChangeDateTime** ресурса **user**.
 
 ## <a name="may-2020-new-in-preview-only"></a>Май 2020 г.: новые возможности только в предварительной версии
 
 ### <a name="change-notifications"></a>Уведомления об изменениях
 - Используйте формально схематизированные типы [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta&preserve-view=true) и [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta&preserve-view=true) для обработки уведомлений об изменении ресурса. 
-- Отслеживайте, находится ли уведомление в последовательности или утеряно, используя свойство **sequenceNumber** в ресурсе **changeNotification** .
+- Отслеживайте, находится ли уведомление в последовательности или утеряно, используя свойство **sequenceNumber** в ресурсе **changeNotification**.
 
 ### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
 - Ресурсы [printer](/graph/api/resources/printer?view=graph-rest-beta&preserve-view=true) и [printerShare](/graph/api/resources/printershare?view=graph-rest-beta&preserve-view=true) теперь аналогичны и имеют одинаковые свойства.
@@ -325,7 +409,7 @@ GA функции, которая позволяет организаторам 
 
 ### <a name="groups"></a>Группы
 - [Оцените](/graph/api/group-evaluatedynamicmembership?view=graph-rest-beta&preserve-view=true), является ли (может являться) пользователь или устройство членом динамической группы, используя существующее правило для [группы](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) или указанное правило. [Динамическое членство на основе правила](/azure/active-directory/users-groups-roles/groups-dynamic-membership) снижает затраты на администрирование добавления и удаления участников.
-- В Microsoft 365 при создании [группы](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) настройте поведение группы, указав варианты поведения в свойстве **resourceBehaviorOptions** . Например, вы можете разрешить участникам публиковать записи, подписывать новых участников в беседы, отключать приветственные сообщения электронной почты и скрывать группу в Outlook.
+- В Microsoft 365 при создании [группы](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) настройте поведение группы, указав варианты поведения в свойстве **resourceBehaviorOptions**. Например, вы можете разрешить участникам публиковать записи, подписывать новых участников в беседы, отключать приветственные сообщения электронной почты и скрывать группу в Outlook.
 - Укажите ресурсы для подготовки в свойстве **resourceProvisioningOptions** , которые обычно не входят в объем создания [группы](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) по умолчанию. В настоящее время поддерживается подготовка группы в качестве [команды](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) с возможностями Microsoft Teams.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
@@ -350,14 +434,14 @@ GA функции, которая позволяет организаторам 
 - [Создание или обновление события в виде собрания по сети](outlook-calendar-online-meetings.md):
   - В каждом **календаре** можно указать разрешенных и используемых по умолчанию поставщиков собраний по сети.
   - Можно создать или обновить [мероприятие](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true), доступное по сети, и предоставить участникам сведения для присоединения к собранию по сети. 
-  - В частности, можно использовать **onlineMeetingProvider** и **onlineMeeting** — это новые свойства **мероприятий** , с помощью которых можно задать или указать Microsoft Teams в качестве поставщика собраний по сети. Это временное решение [известной проблемы](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) со свойством **onlineMeetingUrl** .
+  - В частности, можно использовать **onlineMeetingProvider** и **onlineMeeting** — это новые свойства **мероприятий** , с помощью которых можно задать или указать Microsoft Teams в качестве поставщика собраний по сети. Это временное решение [известной проблемы](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) со свойством **onlineMeetingUrl**.
 - Добавление [файловых вложений до 150 МБ](outlook-large-attachments.md) в [событие](/graph/api/resources/event?view=graph-rest-1.0&preserve-view=true).
 
 ### <a name="files"></a>Файлы
 - [Извлекайте](/graph/api/driveitem-checkout?view=graph-rest-1.0&preserve-view=true) и [возвращайте](/graph/api/driveitem-checkin?view=graph-rest-1.0&preserve-view=true) файлы в OneDrive, чтобы управлять их обновлением и делать обновления доступными для других пользователей.
 - Применяйте необязательный пароль и дату/время истечения срока действия в качестве параметров действий[пригласить](/graph/api/driveitem-invite?view=graph-rest-1.0&preserve-view=true) и [создать ссылку совместного доступа](/graph/api/driveitem-createlink?view=graph-rest-1.0&preserve-view=true) для совместного доступа к [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0&preserve-view=true).
-- Получите или задайте пароль и дату/время истечения срока действия [разрешения](/graph/api/resources/permission?view=graph-rest-1.0&preserve-view=true), а также отслеживайте [identitySet](/graph/api/resources/identityset?view=graph-rest-1.0&preserve-view=true) пользователей, которым предоставлено разрешение на совместный доступ к **driveItem** .
-- Получите [разрешение](/graph/api/resources/permission?view=graph-rest-1.0&preserve-view=true) для [общего элемента диска](/graph/api/resources/shareddriveitem?view=graph-rest-1.0&preserve-view=true), используя свойство навигации **permission** .
+- Получите или задайте пароль и дату/время истечения срока действия [разрешения](/graph/api/resources/permission?view=graph-rest-1.0&preserve-view=true), а также отслеживайте [identitySet](/graph/api/resources/identityset?view=graph-rest-1.0&preserve-view=true) пользователей, которым предоставлено разрешение на совместный доступ к **driveItem**.
+- Получите [разрешение](/graph/api/resources/permission?view=graph-rest-1.0&preserve-view=true) для [общего элемента диска](/graph/api/resources/shareddriveitem?view=graph-rest-1.0&preserve-view=true), используя свойство навигации **permission**.
 - Ограничьте действия пользователей со [ссылкой совместного доступа](/graph/api/resources/sharinglink?view=graph-rest-1.0&preserve-view=true) только просмотром без возможности скачивания содержимого общего элемента **driveItem** в OneDrive для бизнеса или в SharePoint.
 
 ### <a name="identity-and-access"></a>Удостоверение и доступ
@@ -369,7 +453,7 @@ GA функции, которая позволяет организаторам 
 
 ### <a name="sites-and-lists"></a>Сайты и списки
 - [Список сайтов](/graph/api/sites-list-followed?view=graph-rest-1.0&preserve-view=true), на которые подписан пользователь.
-- Определите географическую область [семейства веб-сайтов](/graph/api/resources/sitecollection?view=graph-rest-1.0&preserve-view=true) с помощью свойства **dataLocationCode** .
+- Определите географическую область [семейства веб-сайтов](/graph/api/resources/sitecollection?view=graph-rest-1.0&preserve-view=true) с помощью свойства **dataLocationCode**.
 - Определите клиента файла, папки или другого элемента в SharePoint, путем доступа к свойству **tenantId** , которое является частью **sharepointIds** в [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0&preserve-view=true).
 
 ## <a name="april-2020-new-in-preview-only"></a>Апрель 2020 г.: новые возможности только в предварительной версии
@@ -402,7 +486,7 @@ GA функции, которая позволяет организаторам 
 - Получите функцию маршрутизации вызовов и контекст входящих [вызовов](/graph/api/resources/call?view=graph-rest-1.0&preserve-view=true).
 - [Обновите состояние записи](/graph/api/call-updaterecordingstatus?view=graph-rest-1.0&preserve-view=true) звонка.
 - Укажите информацию о записи для [участника](/graph/api/resources/participant?view=graph-rest-1.0&preserve-view=true), включая инициатора и состояние записи.
-- Для уникальной идентификации участников конференции или [звонка](/graph/api/resources/call?view=graph-rest-1.0&preserve-view=true) от участника к участнику используйте свойство **callChainId** .
+- Для уникальной идентификации участников конференции или [звонка](/graph/api/resources/call?view=graph-rest-1.0&preserve-view=true) от участника к участнику используйте свойство **callChainId**.
 - Определите как часть [participantInfo](/graph/api/resources/participantinfo?view=graph-rest-1.0&preserve-view=true) код страны и тип конечной точки (например, Skype для бизнеса или Skype для бизнеса VoIP) участника.
 - Сторонние партнеры в области устройств видеоконференцсвязи (VTC) могут регистрировать и предоставлять сведения о качестве связи для своих устройств через бот Cloud Video Interop (CVI) с помощью функции [logTeleconferenceDeviceQuality](/graph/api/call-logteleconferencedevicequality?view=graph-rest-1.0&preserve-view=true). Качество связи определяется данными открытого типа о [звуке](/graph/api/resources/teleconferencedeviceaudioquality?view=graph-rest-1.0&preserve-view=true), [видео](/graph/api/resources/teleconferencedevicevideoquality?view=graph-rest-1.0&preserve-view=true) и [демонстрации экрана](/graph/api/resources/teleconferencedevicescreensharingquality?view=graph-rest-1.0&preserve-view=true).
 
@@ -448,7 +532,7 @@ GA функции, которая позволяет организаторам 
 ### <a name="search"></a>Поиск
 - Чтобы добавить данные в файле к результатам поиска, просто индексируйте данные как [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true). Тип **externalFile** не рекомендуется.
 - [Обновите](/graph/api/externalitem-update?view=graph-rest-beta&preserve-view=true) [элемент в индексе](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true), обновив представление элемента в виде обычного текста (представленное свойством **content** ) или контейнер свойств элемента (представленный свойством **properties** ). При обновлении любого свойства в контейнере свойств перезаписывается весь контейнер свойств, поэтому убедитесь, что все свойства элемента явным образом включены в обновление.
-- Проверьте наличие `HTTP 429` и заголовка ответа `Retry-After` после вызова операции [создания](/graph/api/externalconnection-put-items?view=graph-rest-beta&preserve-view=true), [обновления](/graph/api/externalitem-update?view=graph-rest-beta&preserve-view=true) или [удаления](/graph/api/externalitem-delete?view=graph-rest-beta&preserve-view=true) элемента **externalItem** . Самый быстрый способ выполнить восстановление после [регулирования](throttling.md#best-practices-to-handle-throttling) — отложить запросы с помощью задержки `Retry-After`.
+- Проверьте наличие `HTTP 429` и заголовка ответа `Retry-After` после вызова операции [создания](/graph/api/externalconnection-put-items?view=graph-rest-beta&preserve-view=true), [обновления](/graph/api/externalitem-update?view=graph-rest-beta&preserve-view=true) или [удаления](/graph/api/externalitem-delete?view=graph-rest-beta&preserve-view=true) элемента **externalItem**. Самый быстрый способ выполнить восстановление после [регулирования](throttling.md#best-practices-to-handle-throttling) — отложить запросы с помощью задержки `Retry-After`.
 
 ### <a name="teamwork"></a>Командная работа
 Используйте разрешение на уровне приложения `ChannelMessage.Read.All` для чтения экземпляров [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) в каналах без зарегистрированного пользователя.
@@ -503,10 +587,10 @@ GA функции, которая позволяет организаторам 
 В рамках управления оповещениями используйте метод [обновления оповещений](/graph/api/alert-update?view=graph-rest-1.0&preserve-view=true) и обновляйте поле **комментариев** как `Closed in IPC` или `Closed in MCAS`.
 
 ### <a name="teamwork"></a>Командная работа
-Используйте свойство навигации **primaryChannel** [группы](/graph/api/resources/team?view=graph-rest-1.0&preserve-view=true) для доступа к каналу по умолчанию **General** .
+Используйте свойство навигации **primaryChannel** [группы](/graph/api/resources/team?view=graph-rest-1.0&preserve-view=true) для доступа к каналу по умолчанию **General**.
 
 ### <a name="users"></a>Пользователи
-Чтобы получить доступ к одному или нескольким удостоверениям, которые [пользователь](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) может использовать для входа в учетную запись пользователя Azure AD, используйте свойство **удостоверения** . Удостоверения могут предоставляться поставщиками услуг Майкрософт, организаций или социальных удостоверений, таких как Facebook, Google или Microsoft. Это свойство позволяет пользователю входить в учетную запись пользователя с помощью любого из этих удостоверений.
+Чтобы получить доступ к одному или нескольким удостоверениям, которые [пользователь](/graph/api/resources/user?view=graph-rest-1.0&preserve-view=true) может использовать для входа в учетную запись пользователя Azure AD, используйте свойство **удостоверения**. Удостоверения могут предоставляться поставщиками услуг Майкрософт, организаций или социальных удостоверений, таких как Facebook, Google или Microsoft. Это свойство позволяет пользователю входить в учетную запись пользователя с помощью любого из этих удостоверений.
 
 ## <a name="january-2020-new-in-preview"></a>Январь 2020: Новое в предварительной версии
 
@@ -657,16 +741,16 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 - Дополнительная поддержка собраний по сети:
   - В каждом **календаре** можно указать разрешенных и используемых по умолчанию поставщиков собраний по сети.
   - Можно создать или обновить [мероприятие](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true), доступное по сети, и предоставить участникам сведения для присоединения к собранию по сети. 
-  - В частности, можно использовать **onlineMeetingProvider** и **onlineMeeting** — это новые свойства **мероприятий** , с помощью которых можно задать или указать Microsoft Teams в качестве поставщика собраний по сети. Это временное решение [известной проблемы](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) со свойством **onlineMeetingUrl** .
+  - В частности, можно использовать **onlineMeetingProvider** и **onlineMeeting** — это новые свойства **мероприятий** , с помощью которых можно задать или указать Microsoft Teams в качестве поставщика собраний по сети. Это временное решение [известной проблемы](known-issues.md#onlinemeetingurl-property-support-for-microsoft-teams) со свойством **onlineMeetingUrl**.
 
 ### <a name="devices-and-apps"></a>Устройства и приложения
 Обновления Intune за [октябрь](changelog.md#october-2019)
 
 ### <a name="graph-explorer"></a>Песочница Graph
-Попробуйте [следующую версию песочницы Graph](https://developer.microsoft.com/graph/graph-explorer/preview) и воспользуйтесь полезной контекстной информацией, включая разрешения, маркеры доступа и фрагменты кода SDK, на новых вкладках **Разрешения** , **Проверка подлинности** и **Фрагменты кода** . С помощью ползунка **просмотра** можно переключаться между [рабочей](https://developer.microsoft.com/graph/graph-explorer) и новой предварительной версией песочницы Graph.
+Попробуйте [следующую версию песочницы Graph](https://developer.microsoft.com/graph/graph-explorer/preview) и воспользуйтесь полезной контекстной информацией, включая разрешения, маркеры доступа и фрагменты кода SDK, на новых вкладках **Разрешения** , **Проверка подлинности** и **Фрагменты кода**. С помощью ползунка **просмотра** можно переключаться между [рабочей](https://developer.microsoft.com/graph/graph-explorer) и новой предварительной версией песочницы Graph.
 
 ### <a name="groups"></a>Группы
-- Управление видимостью [групп](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) в определенных частях пользовательского интерфейса Outlook или в клиенте Outlook с помощью свойств **hideFromAddressLists** и **hideFromOutlookClients** .
+- Управление видимостью [групп](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) в определенных частях пользовательского интерфейса Outlook или в клиенте Outlook с помощью свойств **hideFromAddressLists** и **hideFromOutlookClients**.
 - [Назначение](/graph/api/group-assignlicense?view=graph-rest-beta&preserve-view=true) и удаление лицензий пользователям в [группе](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="identity-and-access"></a>Идентификация и доступ
@@ -730,8 +814,8 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 ### <a name="files"></a>Файлы
 - Улучшенная поддержка синхронизации:
 
-  - Определение операций, которые могут влиять на двоичное содержимое объекта [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true), с помощью нового свойства **pendingOperations** .
-  - [Восстановление](/graph/api/driveitem-restore?view=graph-rest-beta&preserve-view=true) удаленного объекта **driveItem** . 
+  - Определение операций, которые могут влиять на двоичное содержимое объекта [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true), с помощью нового свойства **pendingOperations**.
+  - [Восстановление](/graph/api/driveitem-restore?view=graph-rest-beta&preserve-view=true) удаленного объекта **driveItem**. 
 - Использование защищенного алгоритма хэширования (SHA-256) для улучшения безопасности и целостности данных ресурса [file](/graph/api/resources/file?view=graph-rest-beta&preserve-view=true).
 - Получение или настройка ориентации ресурса [photo](/graph/api/resources/photo?view=graph-rest-beta&preserve-view=true). Настройка поддерживается в OneDrive персональный.
 
@@ -743,7 +827,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
   - Указание причины применения [карантина](/graph/api/resources/synchronization-quarantine?view=graph-rest-beta&preserve-view=true) для задания синхронизации
 
 ### <a name="teamwork"></a>Командная работа
-Использование канала **Общий** в [команде](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) или настройка [параметров участников](/graph/api/resources/teammembersettings?view=graph-rest-beta&preserve-view=true), чтобы разрешить участникам команд создавать закрытые каналы в **команде** .
+Использование канала **Общий** в [команде](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true) или настройка [параметров участников](/graph/api/resources/teammembersettings?view=graph-rest-beta&preserve-view=true), чтобы разрешить участникам команд создавать закрытые каналы в **команде**.
 
 ### <a name="users"></a>Пользователи
 - Получение или обновление удостоверений, с помощью которых [пользователь](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) может войти в учетную запись. Эти удостоверения могут предоставляться бизнес-организациями или поставщиками удостоверений социальных сетей, такими как Facebook, Google и Майкрософт.
@@ -826,7 +910,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 - Используйте [политику развертывания функций](/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta&preserve-view=true), чтобы помочь администраторам клиента выполнить пилотное развертывание функций для определенных групп перед включением их для всей организации.
 
 ### <a name="mail"></a>Почта
-Используйте более детализированное разрешение приложений _Mail.ReadBasic.All_ , чтобы читать почтовый ящик пользователя, кроме текста сообщений, текста предварительного просмотра, вложений и расширенных свойств, а также без возможности поиска в почтовом ящике. Теперь его можно применять в [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true) и [отслеживании изменений](delta-query-overview.md) для [сообщения](/graph/api/resources/message?view=graph-rest-beta&preserve-view=true) и объекта **mailFolder** .
+Используйте более детализированное разрешение приложений _Mail.ReadBasic.All_ , чтобы читать почтовый ящик пользователя, кроме текста сообщений, текста предварительного просмотра, вложений и расширенных свойств, а также без возможности поиска в почтовом ящике. Теперь его можно применять в [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true) и [отслеживании изменений](delta-query-overview.md) для [сообщения](/graph/api/resources/message?view=graph-rest-beta&preserve-view=true) и объекта **mailFolder**.
 
 ### <a name="reports"></a>Отчеты
 - Получите дополнительные [данные об использовании почтового ящика](/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-beta&preserve-view=true) касательно числа и размера удаленных элементов.
@@ -875,7 +959,7 @@ GET /teams/{teamId}/channels/{channelId}/filesFolder
 - Получите сведения об [обнаруженном пользователе или рисках входа в систему](/graph/api/resources/riskdetection?view=graph-rest-beta&preserve-view=true) в среде Azure AD. Эта функциональность обнаружения рисков является частью Azure AD Identity Protection (Защиты идентификации Azure AD).
 
 ### <a name="mail"></a>Почта
-Используйте более детализированное делегированное разрешение _Mail.ReadBasic_ , чтобы читать почтовый ящик пользователя, кроме текста сообщений, текста предварительного просмотра, вложений и расширенных свойств, а также без возможности поиска в почтовом ящике. Доступно для методов чтения [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true) и [отслеживания изменений](delta-query-overview.md) для [сообщения](/graph/api/resources/message?view=graph-rest-beta&preserve-view=true) и объекта **mailFolder** .
+Используйте более детализированное делегированное разрешение _Mail.ReadBasic_ , чтобы читать почтовый ящик пользователя, кроме текста сообщений, текста предварительного просмотра, вложений и расширенных свойств, а также без возможности поиска в почтовом ящике. Доступно для методов чтения [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-beta&preserve-view=true) и [отслеживания изменений](delta-query-overview.md) для [сообщения](/graph/api/resources/message?view=graph-rest-beta&preserve-view=true) и объекта **mailFolder**.
 
 ### <a name="microsoft-graph-toolkit"></a>Набор средств Microsoft Graph
 [Набор средств Microsoft Graph](./toolkit/overview.md) — это набор не зависящих от платформы веб-компонентов и помощников, обеспечивающий удобную проверку подлинности и доступ к данным в Microsoft Graph.  Так как набор средств Microsoft Graph находится в состоянии предварительной версии, используйте компоненты и поставщиков наборов средств только для тех приложений, которые не предназначены для рабочей среды.
