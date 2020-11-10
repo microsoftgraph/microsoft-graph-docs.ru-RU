@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: b3e2cae6b14f3e7f8ea336bb3000bfa8e4894ac2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2484fc7282d984bb06e7ee6390d116bf0f5b0657
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48034408"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979578"
 ---
 # <a name="create-projectparticipation"></a>Создание ПрожектпартиЦипатион
 
@@ -57,7 +57,7 @@ POST /users/{id | userPrincipalName}/profile/projects
 |алловедаудиенцес|String|Аудитории, которые могут видеть значения, содержащиеся в сущности. Наследуется от [итемфацет](../resources/itemfacet.md). Возможные значения: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |categories|Коллекция String|Содержит категории, связанные с проектом пользователем (например, цифровое преобразование, гидростенд). |
 |Клиенты|[компанидетаил](../resources/companydetail.md)|Содержит подробные сведения о клиенте, для которого выполнялся проект. |
-|коллаборатионтагс|Коллекция String|Содержит теги сценариев, с которыми пользователь связан с интересом. Допустимые значения в коллекции: `askMeAbout` ,, `ableToMentor` `wantsToLearn` , `wantsToImprove` .|
+|коллаборатионтагс|Коллекция строк|Содержит теги сценариев, с которыми пользователь связан с интересом. Допустимые значения в коллекции: `askMeAbout` ,, `ableToMentor` `wantsToLearn` , `wantsToImprove` .|
 |коллег|Коллекция [релатедперсон](../resources/relatedperson.md)|Список людей, которые также работали над проектом. |
 |описаны|[поситиондетаил](../resources/positiondetail.md)|Содержит подробные сведения о роли пользователя в проекте.|
 |displayName|String|Содержит понятное имя проекта.|
@@ -65,7 +65,7 @@ POST /users/{id | userPrincipalName}/profile/projects
 |source|[персондатасаурце](../resources/persondatasource.md)|Источник значений при синхронизации от другой службы. Наследуется от [итемфацет](../resources/itemfacet.md).|
 |спонсорами|Коллекция [релатедперсон](../resources/relatedperson.md)|Пользователь или люди, которые спонсорируют проект.    |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 ## <a name="response"></a>Отклик
 
@@ -120,6 +120,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-projectparticipation-from-profile-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-projectparticipation-from-profile-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: bda0394f7d82bb80b18681bf784e5c80f347ed59
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1b8fa68a0bcc5901621770cb5f749ceb531dee30
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074138"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979568"
 ---
 # <a name="section-copytosectiongroup"></a>раздел: copyToSectionGroup
 
@@ -62,7 +62,7 @@ POST /sites/{id}/onenote/sections/{id}/copyToSectionGroup
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и `Operation-Location` заголовок. Опросить конечную точку Operations to Location, чтобы [получить состояние операции копирования](onenoteoperation-get.md).
+В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и `Operation-Location` заголовок. Опрос конечной точки Operation-Location для [получения состояния операции копирования](onenoteoperation-get.md).
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -95,6 +95,10 @@ Content-length: 84
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/section-copytosectiongroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/section-copytosectiongroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

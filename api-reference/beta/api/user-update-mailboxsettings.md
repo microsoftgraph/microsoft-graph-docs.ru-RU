@@ -5,12 +5,12 @@ localization_priority: Normal
 author: svpsiva
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: fc889bcafef7433e1da050b2dba94d9f7eed1d9a
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 4e53e9bdf488d4e19d8b5b0d12cc95751c1607b2
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459569"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48980008"
 ---
 # <a name="update-user-mailbox-settings"></a>Обновление параметров почтового ящика пользователя
 
@@ -57,16 +57,16 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих свойств, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом изменений других значений свойств. Чтобы обеспечить максимальную производительность, не включайте существующие значения, которые не изменились, в запрос. Ниже перечислены свойства, значения которых можно записать или обновить.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему. Вы можете настроить такие уведомления только для диапазона дат в будущем.|
-|dateFormat|Строка|Формат даты для почтового ящика пользователя.|
+|dateFormat|string|Формат даты для почтового ящика пользователя.|
 |делегатемитингмессажеделиверйоптионс|делегатемитингмессажеделиверйоптионс| Если у пользователя есть представитель календаря, этот параметр указывает, будут ли представитель, владелец почтового ящика или и то, и другое, получать сообщения о собраниях и ответы на приглашения. Возможные значения: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
 |language|[localeInfo](../resources/localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
-|тимеформат|Строка|Формат времени для почтового ящика пользователя.|
+|тимеформат|string|Формат времени для почтового ящика пользователя.|
 |timeZone|string|Часовой пояс, используемый по умолчанию, для почтового ящика пользователя.|
 |workingHours|[workingHours](../resources/workinghours.md)|Часы, дни недели и часовой пояс работы пользователя.|
 
@@ -89,7 +89,7 @@ PATCH /users/{id|userPrincipalName}/mailboxSettings
 ## <a name="examples"></a>Примеры
 ### <a name="example-1"></a>Пример 1
 #### <a name="request"></a>Запрос 
-В первом примере показано, как включить автоматические ответы для диапазона дат, настроив для свойства **automaticRepliesSetting** следующие свойства: **status**, **scheduledStartDateTime** и **scheduledEndDateTime**.
+В первом примере показано, как включить автоматические ответы для диапазона дат, настроив для свойства **automaticRepliesSetting** следующие свойства: **status** , **scheduledStartDateTime** и **scheduledEndDateTime**.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -126,6 +126,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-mailboxsettings-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-mailboxsettings-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -175,37 +179,37 @@ Content-Type: application/json
 
 {
   "workingHours": {
-      "endTime" : "18:30:00.0000000", 
-      "daysOfWeek": [ 
-          "Monday", 
-          "Tuesday", 
-          "Wednesday", 
-          "Thursday", 
-          "Friday", 
-          "Saturday" 
-      ], 
-      "timeZone" : { 
-         "@odata.type": "#microsoft.graph.customTimeZone", 
-         "bias":-300, 
+      "endTime" : "18:30:00.0000000", 
+      "daysOfWeek": [ 
+          "Monday", 
+          "Tuesday", 
+          "Wednesday", 
+          "Thursday", 
+          "Friday", 
+          "Saturday" 
+      ], 
+      "timeZone" : { 
+         "@odata.type": "#microsoft.graph.customTimeZone", 
+         "bias":-300, 
          "name": "Customized Time Zone",
-         "standardOffset":{   
-           "time":"02:00:00.0000000", 
-           "dayOccurrence":2, 
-           "dayOfWeek":"Sunday", 
-           "month":10, 
-           "year":0 
-         }, 
-         "daylightOffset":{   
-           "daylightBias":100, 
-           "time":"02:00:00.0000000", 
-           "dayOccurrence":4, 
-           "dayOfWeek":"Sunday", 
-           "month":5, 
-           "year":0 
-         } 
-      } 
+         "standardOffset":{   
+           "time":"02:00:00.0000000", 
+           "dayOccurrence":2, 
+           "dayOfWeek":"Sunday", 
+           "month":10, 
+           "year":0 
+         }, 
+         "daylightOffset":{   
+           "daylightBias":100, 
+           "time":"02:00:00.0000000", 
+           "dayOccurrence":4, 
+           "dayOfWeek":"Sunday", 
+           "month":5, 
+           "year":0 
+         } 
+      } 
   }
-} 
+} 
 ```
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.

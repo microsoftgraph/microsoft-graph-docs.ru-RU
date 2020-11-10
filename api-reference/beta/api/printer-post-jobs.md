@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 12bfa36bf90984fd3dbe964e1a5cc49884273c18
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 026905fb3d0dc2b0be71bcb5175c6741b63a9fba
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782937"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979857"
 ---
 # <a name="create-printjob-for-a-printer"></a>Создание метода printJob для принтера
 
@@ -27,9 +27,9 @@ ms.locfileid: "48782937"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)| PrintJob. Реадвритебасик, PrintJob. ReadWrite, PrintJob. Реадвритебасик. ALL, PrintJob. ReadWrite. ALL |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| Не поддерживается. |
+|Делегированные (рабочая или учебная учетная запись)| PrintJob. Реадвритебасик, PrintJob. ReadWrite, PrintJob. Реадвритебасик. ALL, PrintJob. ReadWrite. ALL |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ POST print/printers/{id}/jobs
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [printJob](../resources/printjob.md) в формате JSON. Объект printJob должен содержать только **конфигурацию** . Все свойства **конфигурации** допускают значение null. Все остальные поля, в том числе задания и идентификаторы документов, задаются автоматически при создании ресурса.
+В тексте запроса добавьте представление объекта [printJob](../resources/printjob.md) в формате JSON. Объект printJob должен содержать только **конфигурацию**. Все свойства **конфигурации** допускают значение null. Все остальные поля, в том числе задания и идентификаторы документов, задаются автоматически при создании ресурса.
 
 Теперь для универсальной печати поддерживается только один **printDocument** для каждого объекта **printJob** .
 
@@ -107,6 +107,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-printjob-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

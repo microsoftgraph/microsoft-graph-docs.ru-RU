@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 71477c07535179d243d998a360c138632e6ca26b
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 225292e130c6409c0a022ffd13868f6480e7bb1c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373151"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979697"
 ---
 # <a name="grant-an-approleassignment-for-a-service-principal"></a>Предоставление appRoleAssignment субъекту-службе
 
@@ -24,8 +24,8 @@ ms.locfileid: "48373151"
 
 Чтобы предоставить назначение роли приложения, нужны три идентификатора:
 
-- `principalId`: `id` **пользователя**, **группы** или объекта **servicePrincipal** клиента, которому назначается роль приложения.
-- `resourceId`: `id` ресурса **servicePrincipal**, определяющий роль приложения.
+- `principalId`: `id` **пользователя** , **группы** или объекта **servicePrincipal** клиента, которому назначается роль приложения.
+- `resourceId`: `id` ресурса **servicePrincipal** , определяющий роль приложения.
 - `appRoleId`: `id` объекта **appRole** (определенного в субъекте-службе ресурса) для назначения пользователю, группе или субъекту-службе.
 
 ## <a name="permissions"></a>Разрешения
@@ -94,6 +94,10 @@ Content-Length: 110
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-create-approleassignedto-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-create-approleassignedto-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

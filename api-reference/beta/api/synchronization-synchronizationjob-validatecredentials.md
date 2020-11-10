@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ceb65ac10fed3dee257893e2629ca137c749cb13
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 4094fefb1dd911de70c8f896abb43299dfce9638
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969209"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48979943"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>Синчронизатионжоб: Валидатекредентиалс
 
@@ -45,11 +45,11 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|усесаведкредентиалс|Boolean|Когда `true` `credentials` параметр будет игнорироваться и будут проверены ранее сохраненные учетные данные (если они есть). |
+|усесаведкредентиалс|Логический|Когда `true` `credentials` параметр будет игнорироваться и будут проверены ранее сохраненные учетные данные (если они есть). |
 |записей|Коллекция [синчронизатионсекреткэйстрингвалуепаир](../resources/synchronization-secretkeystringvaluepair.md)|Учетные данные для проверки. Игнорируется, если `useSavedCredentials` параметр имеет значение `true` .|
 
 ## <a name="response"></a>Отклик
-Если проверка прошла успешно, этот метод возвращает `204, No Content` код отклика. В тексте отклика не возвращается никаких данных.
+Если проверка прошла успешно, этот метод возвращает `204, No Content` код отклика. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -83,6 +83,10 @@ Content-length: 218
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-validatecredentials-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-validatecredentials-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

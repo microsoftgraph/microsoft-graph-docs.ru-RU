@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d8f2cc7e08820c05a0f5ef0ead66107bfa0f357c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7799f02dbb090be6d62d72f22a9ee0ef6c182d36
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064425"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48980012"
 ---
 # <a name="user-translateexchangeids"></a>Пользователь: Транслатиксчанжеидс
 
@@ -49,7 +49,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-| инпутидс | Коллекция объектов string | Коллекция идентификаторов для преобразования. Все идентификаторы в коллекции должны иметь одинаковый тип идентификатора источника и должны быть для элементов в одном почтовом ящике. Максимальный размер этой коллекции составляет 1000 строк. |
+| инпутидс | Коллекция строк | Коллекция идентификаторов для преобразования. Все идентификаторы в коллекции должны иметь одинаковый тип идентификатора источника и должны быть для элементов в одном почтовом ящике. Максимальный размер этой коллекции составляет 1000 строк. |
 | саурцеидтипе | ексчанжеидформат | Тип идентификатора идентификаторов в `InputIds` параметре. |
 | таржетидтипе | ексчанжеидформат | Запрошенный тип идентификатора для преобразования. |
 
@@ -111,6 +111,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/user-translateexchangeids-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-translateexchangeids-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
