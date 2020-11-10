@@ -6,90 +6,94 @@ description: Получение пакета элементов driveitem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 810f7c87effc14d2d62ad2039354754331da3ceb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f9deca81a99d36e91247ddd042fc875d0ffc1cad
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987801"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48960312"
 ---
-# <a name="get-bundle"></a><span data-ttu-id="48230-103">Получение пакета</span><span class="sxs-lookup"><span data-stu-id="48230-103">Get bundle</span></span>
+# <a name="get-bundle"></a><span data-ttu-id="7ed0c-103">Получение пакета</span><span class="sxs-lookup"><span data-stu-id="7ed0c-103">Get bundle</span></span>
 
-<span data-ttu-id="48230-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="48230-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="7ed0c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="7ed0c-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="48230-105">Получение метаданных для [пакета][] на основе уникального идентификатора пакета.</span><span class="sxs-lookup"><span data-stu-id="48230-105">Retrieve the metadata for a [bundle][] based on the bundle's unique ID.</span></span>
+<span data-ttu-id="7ed0c-105">Получение метаданных для [пакета][] на основе уникального идентификатора пакета.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-105">Retrieve the metadata for a [bundle][] based on the bundle's unique ID.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="48230-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="48230-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7ed0c-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7ed0c-106">Permissions</span></span>
 
-<span data-ttu-id="48230-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="48230-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7ed0c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7ed0c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="48230-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="48230-109">Permission type</span></span>      | <span data-ttu-id="48230-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="48230-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7ed0c-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7ed0c-109">Permission type</span></span>      | <span data-ttu-id="7ed0c-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7ed0c-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="48230-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="48230-111">Delegated (work or school account)</span></span> | <span data-ttu-id="48230-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="48230-112">Not supported.</span></span>                             |
-|<span data-ttu-id="48230-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="48230-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="48230-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="48230-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="48230-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="48230-115">Application</span></span>          | <span data-ttu-id="48230-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="48230-116">Not supported.</span></span>                                           |
+|<span data-ttu-id="7ed0c-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7ed0c-111">Delegated (work or school account)</span></span> | <span data-ttu-id="7ed0c-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-112">Not supported.</span></span>                             |
+|<span data-ttu-id="7ed0c-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7ed0c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7ed0c-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7ed0c-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7ed0c-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7ed0c-115">Application</span></span>          | <span data-ttu-id="7ed0c-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-116">Not supported.</span></span>                                           |
 
-## <a name="http-request"></a><span data-ttu-id="48230-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="48230-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7ed0c-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7ed0c-117">HTTP request</span></span>
 
 ```http
 GET /drive/bundles/{bundle-id}
 GET /drive/items/{bundle-id}
 ```
 
-<span data-ttu-id="48230-118">Так как пакеты являются элементами, вы можете использовать коллекцию **Items** для возвращения метаданных пакета.</span><span class="sxs-lookup"><span data-stu-id="48230-118">Because bundles are items, you can use the **items** collection to return metadata about a bundle.</span></span>
-<span data-ttu-id="48230-119">Кроме того, вы можете **использовать коллекцию** Collections, чтобы убедиться, что вы получаете пакет в ответе.</span><span class="sxs-lookup"><span data-stu-id="48230-119">You can also use the **bundles** collection as a convenience to ensure you're getting a bundle in response.</span></span>
+<span data-ttu-id="7ed0c-118">Так как пакеты являются элементами, вы можете использовать коллекцию **Items** для возвращения метаданных пакета.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-118">Because bundles are items, you can use the **items** collection to return metadata about a bundle.</span></span>
+<span data-ttu-id="7ed0c-119">Кроме того, вы можете **использовать коллекцию** Collections, чтобы убедиться, что вы получаете пакет в ответе.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-119">You can also use the **bundles** collection as a convenience to ensure you're getting a bundle in response.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="48230-120">Необязательные параметры запроса</span><span class="sxs-lookup"><span data-stu-id="48230-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="7ed0c-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="7ed0c-120">Optional query parameters</span></span>
 
-<span data-ttu-id="48230-121">Чтобы ограничить форму объектов, возвращаемых в результате вызова, вы можете использовать [параметры запросов OData][odata-parameters].</span><span class="sxs-lookup"><span data-stu-id="48230-121">You can use the [OData query parameters][odata-parameters] to restrict the shape of the objects returned from this call.</span></span>
+<span data-ttu-id="7ed0c-121">Чтобы ограничить форму объектов, возвращаемых в результате вызова, вы можете использовать [параметры запросов OData][odata-parameters].</span><span class="sxs-lookup"><span data-stu-id="7ed0c-121">You can use the [OData query parameters][odata-parameters] to restrict the shape of the objects returned from this call.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="48230-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="48230-122">Request headers</span></span>
-| <span data-ttu-id="48230-123">Имя</span><span class="sxs-lookup"><span data-stu-id="48230-123">Name</span></span>          | <span data-ttu-id="48230-124">Описание</span><span class="sxs-lookup"><span data-stu-id="48230-124">Description</span></span>  |
+## <a name="request-headers"></a><span data-ttu-id="7ed0c-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7ed0c-122">Request headers</span></span>
+| <span data-ttu-id="7ed0c-123">Имя</span><span class="sxs-lookup"><span data-stu-id="7ed0c-123">Name</span></span>          | <span data-ttu-id="7ed0c-124">Описание</span><span class="sxs-lookup"><span data-stu-id="7ed0c-124">Description</span></span>  |
 |:------------- |:------------ |
-| <span data-ttu-id="48230-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="48230-125">Authorization</span></span> | <span data-ttu-id="48230-126">Носитель \{токен\}.</span><span class="sxs-lookup"><span data-stu-id="48230-126">Bearer \{token\}.</span></span> <span data-ttu-id="48230-127">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="48230-127">Required.</span></span> |
-| <span data-ttu-id="48230-128">if-none-match</span><span class="sxs-lookup"><span data-stu-id="48230-128">if-none-match</span></span> | <span data-ttu-id="48230-129">тегом.</span><span class="sxs-lookup"><span data-stu-id="48230-129">eTag.</span></span> <span data-ttu-id="48230-130">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="48230-130">Optional.</span></span> <span data-ttu-id="48230-131">Если указан заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то возвращается отклик `HTTP 304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="48230-131">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span>
+| <span data-ttu-id="7ed0c-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="7ed0c-125">Authorization</span></span> | <span data-ttu-id="7ed0c-126">Носитель \{токен\}.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-126">Bearer \{token\}.</span></span> <span data-ttu-id="7ed0c-127">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-127">Required.</span></span> |
+| <span data-ttu-id="7ed0c-128">if-none-match</span><span class="sxs-lookup"><span data-stu-id="7ed0c-128">if-none-match</span></span> | <span data-ttu-id="7ed0c-129">тегом.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-129">eTag.</span></span> <span data-ttu-id="7ed0c-130">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-130">Optional.</span></span> <span data-ttu-id="7ed0c-131">Если указан заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то возвращается отклик `HTTP 304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-131">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="48230-132">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="48230-132">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="7ed0c-132">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="7ed0c-132">Request body</span></span>
 
-<span data-ttu-id="48230-133">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="48230-133">Do not supply a request body with this method.</span></span>
+<span data-ttu-id="7ed0c-133">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-133">Do not supply a request body with this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="48230-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="48230-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7ed0c-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="7ed0c-134">Response</span></span>
 
-<span data-ttu-id="48230-135">В случае успешного выполнения этот метод возвращает объект [driveItem][driveItem] resource with the [bundle][bundle] в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="48230-135">If successful, this method returns a [driveItem][driveItem] resource with the [bundle][bundle] in the response body.</span></span>
+<span data-ttu-id="7ed0c-135">В случае успешного выполнения этот метод возвращает объект [driveItem][driveItem] resource with the [bundle][bundle] в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-135">If successful, this method returns a [driveItem][driveItem] resource with the [bundle][bundle] in the response body.</span></span>
 
-<span data-ttu-id="48230-136">Ознакомьтесь с разделом [ответы об ошибках][error-response] для получения дополнительных сведений об возвращении ошибок.</span><span class="sxs-lookup"><span data-stu-id="48230-136">Read the [Error Responses][error-response] topic for more info about how errors are returned.</span></span>
+<span data-ttu-id="7ed0c-136">Ознакомьтесь с разделом [ответы об ошибках][error-response] для получения дополнительных сведений об возвращении ошибок.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-136">Read the [Error Responses][error-response] topic for more info about how errors are returned.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="48230-137">Примеры</span><span class="sxs-lookup"><span data-stu-id="48230-137">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="7ed0c-137">Примеры</span><span class="sxs-lookup"><span data-stu-id="7ed0c-137">Examples</span></span>
 
-### <a name="example-1-get-a-bundle"></a><span data-ttu-id="48230-138">Пример 1: получение пакета</span><span class="sxs-lookup"><span data-stu-id="48230-138">Example 1: Get a bundle</span></span>
+### <a name="example-1-get-a-bundle"></a><span data-ttu-id="7ed0c-138">Пример 1: получение пакета</span><span class="sxs-lookup"><span data-stu-id="7ed0c-138">Example 1: Get a bundle</span></span>
 
-#### <a name="request"></a><span data-ttu-id="48230-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="48230-139">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7ed0c-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="7ed0c-139">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="48230-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="48230-140">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7ed0c-140">HTTP</span><span class="sxs-lookup"><span data-stu-id="7ed0c-140">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-metadata" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/bundles/{bundle-id}
 ```
-# <a name="c"></a>[<span data-ttu-id="48230-141">C#</span><span class="sxs-lookup"><span data-stu-id="48230-141">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7ed0c-141">C#</span><span class="sxs-lookup"><span data-stu-id="7ed0c-141">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bundle-metadata-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="48230-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="48230-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7ed0c-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7ed0c-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-bundle-metadata-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="48230-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="48230-143">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7ed0c-143">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7ed0c-143">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bundle-metadata-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="7ed0c-144">Java</span><span class="sxs-lookup"><span data-stu-id="7ed0c-144">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bundle-metadata-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="48230-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="48230-144">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="7ed0c-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="7ed0c-145">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -115,42 +119,46 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="48230-145">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="48230-145">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="48230-146">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="48230-146">All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="7ed0c-146">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-146">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="7ed0c-147">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-147">All the properties will be returned from an actual call.</span></span>
 
-### <a name="example-2-get-a-bundle-and-its-children-in-a-single-call"></a><span data-ttu-id="48230-147">Пример 2: получение пакета и его дочерних элементов в едином вызове</span><span class="sxs-lookup"><span data-stu-id="48230-147">Example 2: Get a bundle and its children in a single call</span></span>
+### <a name="example-2-get-a-bundle-and-its-children-in-a-single-call"></a><span data-ttu-id="7ed0c-148">Пример 2: получение пакета и его дочерних элементов в едином вызове</span><span class="sxs-lookup"><span data-stu-id="7ed0c-148">Example 2: Get a bundle and its children in a single call</span></span>
 
-<span data-ttu-id="48230-148">Можно использовать [`expand`](/graph/query-parameters) параметр строки запроса, чтобы включить дочерние элементы пакета в тот же вызов, что и получение метаданных пакета.</span><span class="sxs-lookup"><span data-stu-id="48230-148">You can use the [`expand`](/graph/query-parameters) query string parameter to include the children of a bundle in the same call as retrieving the metadata of a bundle.</span></span>
+<span data-ttu-id="7ed0c-149">Можно использовать [`expand`](/graph/query-parameters) параметр строки запроса, чтобы включить дочерние элементы пакета в тот же вызов, что и получение метаданных пакета.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-149">You can use the [`expand`](/graph/query-parameters) query string parameter to include the children of a bundle in the same call as retrieving the metadata of a bundle.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="48230-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="48230-149">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7ed0c-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="7ed0c-150">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="48230-150">HTTP</span><span class="sxs-lookup"><span data-stu-id="48230-150">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="7ed0c-151">HTTP</span><span class="sxs-lookup"><span data-stu-id="7ed0c-151">HTTP</span></span>](#tab/http)
 <!-- { "blockType": "request", "name": "get-bundle-and-children" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
 ```
-# <a name="c"></a>[<span data-ttu-id="48230-151">C#</span><span class="sxs-lookup"><span data-stu-id="48230-151">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="7ed0c-152">C#</span><span class="sxs-lookup"><span data-stu-id="7ed0c-152">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bundle-and-children-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="48230-152">JavaScript</span><span class="sxs-lookup"><span data-stu-id="48230-152">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="7ed0c-153">JavaScript</span><span class="sxs-lookup"><span data-stu-id="7ed0c-153">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-bundle-and-children-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="48230-153">Objective-C</span><span class="sxs-lookup"><span data-stu-id="48230-153">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="7ed0c-154">Objective-C</span><span class="sxs-lookup"><span data-stu-id="7ed0c-154">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bundle-and-children-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="7ed0c-155">Java</span><span class="sxs-lookup"><span data-stu-id="7ed0c-155">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bundle-and-children-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-#### <a name="response"></a><span data-ttu-id="48230-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="48230-154">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="7ed0c-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="7ed0c-156">Response</span></span>
 
-<span data-ttu-id="48230-155">Этот вызов возвратит метаданные пакета и список дочерних элементов набора.</span><span class="sxs-lookup"><span data-stu-id="48230-155">This call will return the bundle metadata and a list of children of the bundle.</span></span>
-<span data-ttu-id="48230-156">Если у пакета нет дочерних элементов, он возвратит пустую коллекцию.</span><span class="sxs-lookup"><span data-stu-id="48230-156">If the bundle has no children, it will return an empty collection.</span></span>
+<span data-ttu-id="7ed0c-157">Этот вызов возвратит метаданные пакета и список дочерних элементов набора.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-157">This call will return the bundle metadata and a list of children of the bundle.</span></span>
+<span data-ttu-id="7ed0c-158">Если у пакета нет дочерних элементов, он возвратит пустую коллекцию.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-158">If the bundle has no children, it will return an empty collection.</span></span>
 
-<span data-ttu-id="48230-157">Если количество дочерних элементов в пакете превышает размер страницы по умолчанию, свойство **Children@odata. nextLink** будет возвращено с URL-адресом, который можно использовать для запроса следующей страницы дочерних элементов в пакете.</span><span class="sxs-lookup"><span data-stu-id="48230-157">If the number of children in the bundle is greater than the default page size, the **children@odata.nextLink** property will be returned with a URL that can be used to request the next page of children in the bundle.</span></span>
+<span data-ttu-id="7ed0c-159">Если количество дочерних элементов в пакете превышает размер страницы по умолчанию, свойство **Children@odata. nextLink** будет возвращено с URL-адресом, который можно использовать для запроса следующей страницы дочерних элементов в пакете.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-159">If the number of children in the bundle is greater than the default page size, the **children@odata.nextLink** property will be returned with a URL that can be used to request the next page of children in the bundle.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -169,7 +177,7 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="48230-158">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="48230-158">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="48230-159">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="48230-159">All the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="7ed0c-160">Объект Response, показанный здесь, может быть укорочен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-160">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="7ed0c-161">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="7ed0c-161">All the properties will be returned from an actual call.</span></span>
 
 
 [bundle]: ../resources/bundle.md
