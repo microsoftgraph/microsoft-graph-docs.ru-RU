@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 84a0b1eae5d4800a50ddc9e258690228f971fad4
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: fa922ebbe4c62e3015acb37a179b6c1d0c6ed6ab
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460348"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48977983"
 ---
 # <a name="delete-permissiongrantconditionset-from-excludes-collection-of-permissiongrantpolicy"></a>Удаление Пермиссионгранткондитионсет из коллекции исключений Пермиссионгрантполици
 
@@ -28,7 +28,7 @@ ms.locfileid: "48460348"
 |:--------------------|:---------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись) | Пермиссионгрантполици. ReadWrite. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-| Для приложений | Пермиссионгрантполици. ReadWrite. ALL |
+| Для приложения | Пермиссионгрантполици. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -78,6 +78,10 @@ DELETE https://graph.microsoft.com/beta/policies/permissionGrantPolicies/my-cust
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/permissiongrantpolicy-delete-excludes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/permissiongrantpolicy-delete-excludes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

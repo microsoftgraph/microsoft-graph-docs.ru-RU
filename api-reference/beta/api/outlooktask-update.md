@@ -5,12 +5,12 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 38d10be1ab316b373b88d0c504998563d67e0792
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3225fd6249cad572d29f3f11175369d183b40dd0
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48053477"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48978795"
 ---
 # <a name="update-outlooktask-deprecated"></a>Обновление outlooktask (не рекомендуется)
 
@@ -23,7 +23,7 @@ ms.locfileid: "48053477"
 
 Изменение свойств для записи в задаче Outlook.
 
-Свойство **комплетеддатетиме** может быть задано **полным** действием или явным образом с помощью операции patch. Если вы используете патч для установки **комплетеддатетиме**, убедитесь, что вы также установили **состояние** `completed` .
+Свойство **комплетеддатетиме** может быть задано **полным** действием или явным образом с помощью операции patch. Если вы используете патч для установки **комплетеддатетиме** , убедитесь, что вы также установили **состояние** `completed` .
 
 По умолчанию эта операция (а также операции POST, GET и [Complete](../api/outlooktask-complete.md) ) Возвращает свойства, связанные с датами, в формате UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.
 
@@ -117,6 +117,10 @@ Content-length: 76
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-outlooktask-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-outlooktask-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

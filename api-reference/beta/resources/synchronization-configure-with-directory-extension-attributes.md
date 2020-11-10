@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: conceptualPageType
 author: ArvindHarinder1
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6fbc9798f999902e774bb990d7361f7ab921ae34
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 0b04e27990ce255c771bb72426ced1f55eca7ec6
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458418"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48978467"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>Настройка синхронизации с атрибутами расширения каталога
 
@@ -18,7 +18,7 @@ ms.locfileid: "48458418"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вы можете настроить схему синхронизации, включив в нее атрибуты расширения каталога Azure Active Directory (Azure AD). В этой статье описывается, как использовать атрибут расширения каталога (**extension_9d98asdfl15980a_Nickname**) для заполнения значения User. Коммунитиниккнаме в Salesforce. В этом сценарии у вас есть Azure AD Connect, настроенный на подготовку ряда атрибутов расширения каталогов из локальной среды Windows Server Active Directory в Azure AD. 
+Вы можете настроить схему синхронизации, включив в нее атрибуты расширения каталога Azure Active Directory (Azure AD). В этой статье описывается, как использовать атрибут расширения каталога ( **extension_9d98asdfl15980a_Nickname** ) для заполнения значения User. Коммунитиниккнаме в Salesforce. В этом сценарии у вас есть Azure AD Connect, настроенный на подготовку ряда атрибутов расширения каталогов из локальной среды Windows Server Active Directory в Azure AD. 
 
 В этой статье предполагается, что вы уже добавили приложение, которое поддерживает синхронизацию с клиентом с помощью [портала Azure](https://portal.azure.com), вы знаете отображаемое имя приложения, и у вас есть маркер авторизации для Microsoft Graph. Сведения о том, как получить маркер авторизации, можно найти [в статье получение маркеров доступа для вызова Microsoft Graph](/graph/auth/).
 
@@ -83,7 +83,7 @@ Authorization: Bearer {Token}
 
 ## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a>Найдите имя необходимого атрибута расширения каталога
 
-Вам потребуется полное имя атрибута расширения. Если полное имя (которое должно выглядеть аналогично **extension_9d98asdfl15980a_Nickname**), ознакомьтесь со следующими сведениями о атрибутах расширения каталогов и способах их проверки: 
+Вам потребуется полное имя атрибута расширения. Если полное имя (которое должно выглядеть аналогично **extension_9d98asdfl15980a_Nickname** ), ознакомьтесь со следующими сведениями о атрибутах расширения каталогов и способах их проверки: 
 
 * [Расширение схемы каталога Azure AD с помощью настраиваемых свойств](https://azure.microsoft.com/resources/samples/active-directory-dotnet-graphapi-directoryextensions-web/)
 * [Расширения схемы каталогов | Основные понятия API Graph](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
@@ -112,6 +112,10 @@ Authorization: Bearer {Token}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationschema-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationschema-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -228,7 +232,7 @@ Content-Type: application/json
 
     - В разделе [синчронизатионрулес](synchronization-synchronizationrule.md)найдите правило, задающее Azure AD в качестве исходного каталога, и Salesforce.com в качестве целевого каталога ( `"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"` ).
     - В [обжектмаппингс](synchronization-objectmapping.md) правила найдите сопоставление между пользователями ( `"sourceObjectName": "User",   "targetObjectName": "User"` ).
-    - В массиве [аттрибутемаппингс](synchronization-attributemapping.md) объекта **обжектмаппинг**добавьте новую запись, как показано в следующем примере.
+    - В массиве [аттрибутемаппингс](synchronization-attributemapping.md) объекта **обжектмаппинг** добавьте новую запись, как показано в следующем примере.
 
     ```json
     {

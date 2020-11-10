@@ -5,12 +5,12 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 doc_type: apiPageType
-ms.openlocfilehash: 9e11defaf3d505d5566c9d5d720e26b6c88447a9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7fd688c714e0f8e2bb1440198bdc305f878518fb
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48022213"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48977759"
 ---
 # <a name="tiindicator-deletetiindicators"></a>Тииндикатор: Делететииндикаторс
 
@@ -28,7 +28,7 @@ ms.locfileid: "48022213"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | ThreatIndicators.ReadWrite.OwnedBy |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | ThreatIndicators.ReadWrite.OwnedBy |
+| Для приложения                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -50,7 +50,7 @@ POST /security/tiIndicators/deleteTiIndicators
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|значение|Коллекция String| Коллекция Тииндикатор `id` s, которую необходимо удалить. |
+|значение|Коллекция строк| Коллекция Тииндикатор `id` s, которую необходимо удалить. |
 
 ## <a name="response"></a>Отклик
 
@@ -91,6 +91,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/tiindicator-deletetiindicators-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/tiindicator-deletetiindicators-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

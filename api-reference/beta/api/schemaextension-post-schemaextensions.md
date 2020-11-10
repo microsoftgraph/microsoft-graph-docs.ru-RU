@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 30674a3637dcb97f583d0462020f850f0d242b17
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 49241c6374cad314197c9f9ad433d6a6c2aa966c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48058685"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48978821"
 ---
 # <a name="create-schemaextension"></a>Создание schemaExtension
 
@@ -30,12 +30,12 @@ ms.locfileid: "48058685"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
 > [!NOTE]
-> Кроме того, для делегированного процесса вошедшего пользователь должен быть владельцем вызывающего приложения или владельцем (приложением с), `appId` используемым для задания свойства **owner** .
+> Кроме того, при делегированном потоке вошедший в систему пользователь должен быть владелец вызывающего приложения ИЛИ владельцем (приложения с) `appId`, использованного для задания свойства **Владелец**.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -68,11 +68,11 @@ POST /schemaExtensions
 
 ## <a name="example"></a>Пример
 
-### <a name="example-1-creating-a-schema-extension-using-a-verified-domain"></a>Пример 1: создание расширения схемы с помощью проверенного домена
+### <a name="example-1-creating-a-schema-extension-using-a-verified-domain"></a>Пример 1. Создание расширения схемы с помощью проверенного домена
 
 #### <a name="request"></a>Запрос
 
-В этом примере показано использование проверенного имени домена, `graphlearn` а также имени схемы `courses` для формирования уникальной строки для свойства **ID** определения расширения схемы. Уникальная строка основана на этом формате, \{ _&#65279;имя_домена_ \} \_ \{ _&#65279;schemaName_ \} .
+В этом примере мы создаем уникальную строку со свойством **id** для определения расширения схемы, используя проверенное доменное имя (`graphlearn`) и имя схемы (`courses`). Уникальная строка имеет такой формат: \{_&#65279;доменноеИмя_\}\_\{_&#65279;имяСхемы_\}.
 
 В теле запроса должно быть представление объекта [schemaExtension](../resources/schemaextension.md) в формате JSON.
 
@@ -119,6 +119,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-schemaextension-from-schemaextensions-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-schemaextension-from-schemaextensions-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -160,11 +164,11 @@ Content-length: 420
 }
 ```
 
-### <a name="example-2-creating-a-schema-extension-using-just-a-name"></a>Пример 2: создание расширения схемы с использованием всего имени
+### <a name="example-2-creating-a-schema-extension-using-just-a-name"></a>Пример 2. Создание расширения схемы с помощью одного имени
 
 #### <a name="request"></a>Запрос
 
-В этом примере показано, как указать только имя схемы, `courses` в свойстве **ID** в запросе, вместе с представлением в формате JSON остальных свойств объекта [schemaExtension](../resources/schemaextension.md) . Microsoft Graph присвоит и возвращает уникальное строковое значение в отклике.
+В данном примере мы указываем имя схемы (`courses`) в свойстве **id** тела запроса, а также остальные свойства в объекте [schemaExtension](../resources/schemaextension.md) как данные JSON. Microsoft Graph назначит и вернет в отклике уникальное строковое значение.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -210,12 +214,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-schemaextension-from-schemaextensions-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-schemaextension-from-schemaextensions-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Отклик включает уникальную строку в свойстве **id**, созданную на основе имени схемы, предоставленном в запросе, и прочее содержимое созданного определения схемы. Значение **id** в отклике имеет формат ext\{_&#65279;8-случайных-букв-или-цифр_\}\_\{_&#65279;имя-схемы_\}. Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Отклик включает уникальную строку в свойстве **id** , созданную на основе имени схемы, предоставленном в запросе, и прочее содержимое созданного определения схемы. Значение **id** в отклике имеет формат ext\{_&#65279;8-случайных-букв-или-цифр_\}\_\{_&#65279;имя-схемы_\}. Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -251,11 +259,11 @@ Content-length: 420
 }
 ```
 
-### <a name="example-3-creating-a-schema-extension-setting-the-owner"></a>Пример 3: Создание параметра расширения схемы владелец
+### <a name="example-3-creating-a-schema-extension-setting-the-owner"></a>Пример 3. Создание расширения схемы путем задания владельца
 
 #### <a name="request"></a>Запрос
 
-В этом примере показано, как создать параметр расширения схемы для **владельца**.  В этом сценарии пользователь приложения может не быть владельцем приложения (например, если используется обозреватель Microsoft Graph).  В этом случае необходимо задать для свойства **owner** **идентификатор AppID** приложения, в противном случае вы не будете иметь права на создание расширения схемы. Задайте свойство **owner** в запросе вместе с представлением в формате JSON остальных свойств объекта [schemaExtension](../resources/schemaextension.md) .
+В этом примере показано, как создать расширение схемы, задав свойство **owner**.  В этом случае пользователь приложения может и быть владельцем приложения (например, при использовании песочницы Microsoft Graph).  В этом случае необходимо задать **appId** приложения, которым вы владеете, в качестве значения свойства **owner** , иначе у вас не будет прав на создание расширения схемы. Задайте свойство **owner** в запросе, а также остальные свойства в объекте [schemaExtension](../resources/schemaextension.md) как данные JSON.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -303,12 +311,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-schemaextension-from-schemaextensions-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-schemaextension-from-schemaextensions-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ответ включает в себя **владельца** , которому присвоено указанное значение в запросе. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Отклик содержит **owner** со значением, указанным в запросе. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

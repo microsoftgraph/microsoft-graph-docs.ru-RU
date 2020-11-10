@@ -3,12 +3,12 @@ title: Начало работы с набором средств Microsoft Grap
 description: Приступите к работе с набором инструментов Microsoft Graph в приложении.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: 6c970c687e9bacc18990826cd64bb017c960dd18
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: e3739bb6180e19569ae40e873d3a018bbb541833
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288513"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48977137"
 ---
 # <a name="getting-started-with-the-microsoft-graph-toolkit"></a>Начало работы с набором средств Microsoft Graph
 
@@ -22,7 +22,7 @@ ms.locfileid: "48288513"
 Для разработки с помощью набора инструментов вам необходим доступ к клиенту Microsoft 365. Если у вас его нет, вы можете получить бесплатную подписку на Microsoft 365 для разработчиков, [присоединяясь к программе для разработчиков microsoft 365](https://developer.microsoft.com/microsoft-365/dev-program). Сведения о том, как настроить подписку, можно найти [в разделе Настройка подписки на Microsoft 365 для разработчиков](/office/developer-program/microsoft-365-developer-program-get-started).
 
 ## <a name="set-up-your-development-environment"></a>Настройка среды разработки
-Для разработки с помощью набора инструментов вам потребуется текстовый редактор или IDE. Вы можете использовать нужный редактор или IDE или установить и использовать [Visual Studio Code](https://code.visualstudio.com/download) бесплатно. Кроме того, вам потребуется современный веб-браузер, например Microsoft EDGE, Google Chrome или Firefox.
+Для разработки с помощью набора инструментов вам потребуется текстовый редактор или IDE. Вы можете использовать нужный редактор или IDE или установить и использовать [Visual Studio Code](https://code.visualstudio.com/download) бесплатно. Кроме того, вам потребуется современный веб-браузер, например Microsoft EDGE, Google Chrome или Firefox. Кроме того, вам потребуется LTS версия Node.js, которую можно установить из [NodeJS.org](https://nodejs.org).
 
 ## <a name="using-the-microsoft-graph-toolkit"></a>Использование набора средств Microsoft Graph
 Вы можете использовать набор средств Microsoft Graph в приложении, обратившись непосредственно к загрузчику (через унпкг) или установив пакет NPM.
@@ -59,8 +59,10 @@ npm install @microsoft/mgt
 
 ## <a name="next-steps"></a>Дальнейшие действия
 Теперь вы готовы приступить к разработке с помощью набора инструментов Microsoft Graph! Ниже приведены руководства, которые помогут вам приступить к работе.
+
+- [Создание приложения Azure Active Directory](./add-aad-app-registration.md)
 - [Создание веб-приложения](./build-a-web-app.md) (Ванилла JavaScript)
 - [Создание веб-части SharePoint](./build-a-sharepoint-web-part.md)
 - [Создание вкладки Microsoft Teams](./build-a-microsoft-teams-tab.md)
 - [Использование набора инструментов с откликом](./use-toolkit-with-react.md)
-- [Использование набора средств с помощью Angular](./use-toolkit-with-angular.md)
+- [Использование набора инструментов с угловой](./use-toolkit-with-angular.md)

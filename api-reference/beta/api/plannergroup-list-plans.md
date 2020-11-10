@@ -1,16 +1,16 @@
 ---
 title: Список планов
-description: Получение списка объектов **plannerPlan**, принадлежащих объекту group.
+description: Получение списка объектов **plannerPlan** , принадлежащих объекту group.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 doc_type: apiPageType
-ms.openlocfilehash: 8394e295c2c2b87a3c36eb351efdbf84707577f2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: da8c36d89e1f7a219b89e1eccb31af1e4b64c051
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48019812"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48978460"
 ---
 # <a name="list-plans"></a>Список планов
 
@@ -18,7 +18,7 @@ ms.locfileid: "48019812"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов **plannerPlan**, принадлежащих объекту [group](../resources/group.md).
+Получение списка объектов **plannerPlan** , принадлежащих объекту [group](../resources/group.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-plans-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-plans-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

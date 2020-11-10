@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Normal
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 7bef3fbf890fc8d55e28c28db519ec5853a833fa
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: ffa0a6a819e845f48117617c9e82bf6abe4021da
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459601"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48977044"
 ---
 # <a name="create-user"></a>Создание пользователя
 
@@ -50,11 +50,11 @@ POST /users
 
 В теле запроса предоставьте описание объекта [user](../resources/user.md) в формате JSON.
 
-В приведенной ниже таблице перечислены обязательные свойства при создании пользователя. Если вы включаете свойство **identities** для создаваемого пользователя, не все перечисленные свойства являются обязательными. Для [удостоверения локальной учетной записи B2C](../resources/objectidentity.md) обязательным является только **passwordProfile**, а свойству **passwordPolicy** должно быть присвоено значение `DisablePasswordExpiration`. Для удостоверения социальных сетей ни одно свойство не является обязательным.
+В приведенной ниже таблице перечислены обязательные свойства при создании пользователя. Если вы включаете свойство **identities** для создаваемого пользователя, не все перечисленные свойства являются обязательными. Для [удостоверения локальной учетной записи B2C](../resources/objectidentity.md) обязательным является только **passwordProfile** , а свойству **passwordPolicy** должно быть присвоено значение `DisablePasswordExpiration`. Для удостоверения социальных сетей ни одно свойство не является обязательным.
 
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
-|accountEnabled |Boolean |Значение true, если учетная запись включена; в противном случае — false.|
+|accountEnabled |Логический |Значение true, если учетная запись включена; в противном случае — false.|
 |displayName |string |Имя, которое следует отобразить в адресной книге для пользователя.|
 |onPremisesImmutableId |string |Необходимо указывать только при создании учетной записи пользователя, если вы используете федеративный домен для свойства userPrincipalName (UPN) этого пользователя.|
 |mailNickname |string |Почтовый псевдоним для пользователя.|
@@ -110,6 +110,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-user-from-users-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-user-from-users-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -202,6 +206,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-user-from-users-identities-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-user-from-users-identities-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 8bfef7bdb0c3965aed1a9362fed81008f4925519
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 20d22030d16d99fc1bba22dd173d76b83ca96d2c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460245"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48977944"
 ---
 # <a name="get-permissiongrantpolicy"></a>Получение Пермиссионгрантполици
 
@@ -28,7 +28,7 @@ ms.locfileid: "48460245"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy. Read. Пермиссионгрант, Policy. ReadWrite. Пермиссионгрант |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Policy. Read. Пермиссионгрант, Policy. ReadWrite. Пермиссионгрант |
+| Для приложения                            | Policy. Read. Пермиссионгрант, Policy. ReadWrite. Пермиссионгрант |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-permissiongrantpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-permissiongrantpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

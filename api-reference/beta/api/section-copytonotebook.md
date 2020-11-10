@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 73bc2ed1c8a94f4f3c4d1135c929d94d6990f40f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5a1d99f93df7acd6c964ae690784ab3df8cca43c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074141"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48978690"
 ---
 # <a name="section-copytonotebook"></a>раздел: copyToNotebook
 
@@ -57,7 +57,7 @@ POST /sites/{id}/onenote/sections/{id}/copyToNotebook
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и `Operation-Location` заголовок. Опросить конечную точку Operations to Location, чтобы [получить состояние операции копирования](onenoteoperation-get.md).
+В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и `Operation-Location` заголовок. Опрос конечной точки Operation-Location для [получения состояния операции копирования](onenoteoperation-get.md).
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -90,6 +90,10 @@ Content-length: 84
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/section-copytonotebook-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/section-copytonotebook-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

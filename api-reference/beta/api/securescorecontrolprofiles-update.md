@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
 author: preetikr
-ms.openlocfilehash: 6d3df08c36a7a59e4502164ac1f89c85268d0a01
-ms.sourcegitcommit: 8ed1280dc0a4f04075d32feac00003a30a2ad9a8
+ms.openlocfilehash: 7ee27a7a7a344558df2316f47a16c4d11aeded8e
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48330195"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48976744"
 ---
 # <a name="update-securescorecontrolprofiles"></a>Обновление объектов secureScoreControlProfiles
 
@@ -28,7 +28,7 @@ ms.locfileid: "48330195"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |   SecurityEvents.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Приложение | SecurityEvents.ReadWrite.All |
+|Для приложения | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,8 +52,8 @@ PATCH /security/secureScoreControlProfiles/{id}
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |assignedTo|String|Имя аналитики, которой назначен элемент управления для рассмотрения, внедрения или исправления.|
-|тенантноте|Строка|Комментарии аналитика в элементе управления (для управления клиентом).|
-|контролстатеупдатес| Строка|Управляемый аналитикой параметр для элемента управления. Возможные значения: `ignore`, `thirdParty`, `reviewed`.|
+|тенантноте|String|Комментарии аналитика в элементе управления (для управления клиентом).|
+|контролстатеупдатес| String|Управляемый аналитикой параметр для элемента управления. Возможные значения: `ignore`, `thirdParty`, `reviewed`.|
 
 
 ## <a name="response"></a>Отклик
@@ -92,6 +92,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/securescorecontrolprofiles-update-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/securescorecontrolprofiles-update-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
