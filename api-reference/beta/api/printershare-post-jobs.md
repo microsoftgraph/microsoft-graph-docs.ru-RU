@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: cb737bd2826703fa29928ef0fbb5913d89428cbc
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 1e04b2eb45f39326010eefdc302c9e14980a09ba
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782789"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48968365"
 ---
 # <a name="create-printjob-for-a-printershare"></a>Создание printJob для Принтершаре
 
@@ -27,9 +27,9 @@ ms.locfileid: "48782789"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)| PrintJob. Реадвритебасик, PrintJob. ReadWrite, PrintJob. Реадвритебасик. ALL, PrintJob. ReadWrite. ALL |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| Не поддерживается. |
+|Делегированные (рабочая или учебная учетная запись)| PrintJob. Реадвритебасик, PrintJob. ReadWrite, PrintJob. Реадвритебасик. ALL, PrintJob. ReadWrite. ALL |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложения| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ POST print/shares/{id}/jobs
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [printJob](../resources/printjob.md) в формате JSON.
-Объект printJob должен содержать только **конфигурацию** . Все свойства **конфигурации** допускают значение null.
+Объект printJob должен содержать только **конфигурацию**. Все свойства **конфигурации** допускают значение null.
 Все остальные поля, включая задания и идентификаторы документов, задаются автоматически при создании ресурса.
 
 Теперь для универсальной печати поддерживается только один **printDocument** для каждого объекта **printJob** .
@@ -109,6 +109,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-printjob-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

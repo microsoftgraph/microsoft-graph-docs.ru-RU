@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4e1fd8eda31d1583489b1f75ab3dc97cf81f6d44
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 9ab66da19cbc2034b73476b8c9275f687e729f6a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457578"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48968691"
 ---
 # <a name="passwordauthenticationmethod-resetpassword"></a>Пассвордаусентикатионмесод: Ресетпассворд
 
@@ -73,7 +73,7 @@ POST /users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPa
 
 | Имя        | Описание     |
 |:------------|:----------------|
-|Расположение     | URL-адрес, который необходимо вызвать для проверки состояния операции.|
+|Location     | URL-адрес, который необходимо вызвать для проверки состояния операции.|
 |Retry — после  | Продолжительность в секундах.|
 
 ## <a name="examples"></a>Примеры
@@ -110,6 +110,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/passwordauthenticationmethod-resetpassword-adminprovided-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/passwordauthenticationmethod-resetpassword-adminprovided-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -169,6 +173,10 @@ POST https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authenticat
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/passwordauthenticationmethod-resetpassword-systemgenerated-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/passwordauthenticationmethod-resetpassword-systemgenerated-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

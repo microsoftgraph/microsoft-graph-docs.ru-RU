@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 4fc5f04ebfcb4c07fb8eef894445b2fa9164ed6c
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 39fcd797f61be5bf8468edc2a5153d08b29f32c5
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458724"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48969302"
 ---
 # <a name="create-permissiongrantconditionset-in-excludes-collection-of-permissiongrantpolicy"></a>Create Пермиссионгранткондитионсет в исключении коллекции Пермиссионгрантполици
 
@@ -26,9 +26,9 @@ ms.locfileid: "48458724"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Policy. ReadWrite. Пермиссионгрант |
+|Делегированные (рабочая или учебная учетная запись) | Policy.ReadWrite.PermissionGrant |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Policy. ReadWrite. Пермиссионгрант |
+|Для приложения | Policy.ReadWrite.PermissionGrant |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -57,7 +57,7 @@ POST /policies/permissionGrantPolicies/{id}/excludes
 
 ### <a name="request"></a>Запрос
 
-В этом примере *все* делегированные разрешения для Microsoft Graph (**AppID** 00000003-0000-0000-C000-000000000000) исключаются из политики предоставления разрешений.
+В этом примере *все* делегированные разрешения для Microsoft Graph ( **AppID** 00000003-0000-0000-C000-000000000000) исключаются из политики предоставления разрешений.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -86,6 +86,10 @@ Content-Type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/permissiongrantpolicy-create-excludes-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/permissiongrantpolicy-create-excludes-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

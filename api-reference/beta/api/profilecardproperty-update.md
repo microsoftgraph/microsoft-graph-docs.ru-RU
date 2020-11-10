@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: 6256b1f9c5e13f7a974d224b37f8479338e074bb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7e7acede752607b34cf8f3cb9378cb0d87983f25
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088076"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48968987"
 ---
 # <a name="update-profilecardproperty"></a>Обновление profileCardProperty
 
@@ -54,7 +54,7 @@ PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/pr
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |Комментарии|Коллекция Профилекарданнотатион| Содержит любые альтернативные или локализованные метки, которые указал Администратор.|
-|директорипропертинаме|Строка|Содержит имя свойства каталога, которое предназначено для отображения на карточке профиля. |
+|директорипропертинаме|String|Содержит имя свойства каталога, которое предназначено для отображения на карточке профиля. |
 
 ## <a name="response"></a>Отклик
 
@@ -99,6 +99,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-profilecardproperty-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-profilecardproperty-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

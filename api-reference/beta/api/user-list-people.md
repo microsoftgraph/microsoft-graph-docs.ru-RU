@@ -5,12 +5,12 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: insights
 doc_type: apiPageType
-ms.openlocfilehash: 6d6c89de41378faee3180ce673615c3a48e0035e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6212446f136d87b9331793c9846be8f2edd8a499
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47974102"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48968869"
 ---
 # <a name="list-people"></a>Список людей
 
@@ -59,7 +59,7 @@ GET /users/{id | userPrincipalName}/people
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Accept | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -98,6 +98,10 @@ GET https://graph.microsoft.com/beta/me/people
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-person-collection-beta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-person-collection-beta-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -198,7 +202,7 @@ Content-length: 1326
 
 #### <a name="requesting-a-subsequent-page-of-people"></a>Запрос последующей страницы людей
 
-Если в первом отклике содержится неполный список релевантных людей, вы можете создать второй запрос, используя параметры *$top* и *$skip*, чтобы запросить дополнительные страницы информации. Если в предыдущем запросе есть дополнительная информация, то при последующем запросе будет получена следующая страница с людьми с сервера.
+Если в первом отклике содержится неполный список релевантных людей, вы можете создать второй запрос, используя параметры *$top* и *$skip* , чтобы запросить дополнительные страницы информации. Если в предыдущем запросе есть дополнительная информация, то при последующем запросе будет получена следующая страница с людьми с сервера.
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$top=10&$skip=10
@@ -234,7 +238,7 @@ GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddress
 
 #### <a name="using-a-filter-to-limit-the-response"></a>Использование фильтра для ограничения ответа
 
-Вы можете использовать параметр *$filter*, чтобы ограничить количество информации в отклике и возвращать только тех людей, записи которых содержат указанные критерии.
+Вы можете использовать параметр *$filter* , чтобы ограничить количество информации в отклике и возвращать только тех людей, записи которых содержат указанные критерии.
 
 Следующий запрос ограничит отклик для людей с исходным каталогом.
 
@@ -244,7 +248,7 @@ GET https://graph.microsoft.com/beta/me/people/?$filter=Sources/Any (source: sou
 
 #### <a name="selecting-the-fields-to-return-in-a-filtered-response"></a>Выбор полей, возвращаемых в отфильтрованном ответе
 
-Сочетая параметры *$select* и *$filter*, вы можете создать настраиваемый список людей, релевантных для пользователя, и получать только те поля, которые необходимы вашему приложению.
+Сочетая параметры *$select* и *$filter* , вы можете создать настраиваемый список людей, релевантных для пользователя, и получать только те поля, которые необходимы вашему приложению.
 
 В следующем примере показано, как получить *DisplayName* и *EmailAddress* людей, отображаемое имя которых соответствует заданному имени. В этом примере возвращаются только те пользователи, отображаемое имя которых равно "пользователя Nestor Келлум".
 

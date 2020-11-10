@@ -6,12 +6,12 @@ title: Доступ к общим элементам
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 8231085723d54b305b6ec72b746f14331fbe1963
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: de6cbfdb3b50bba2ffba9cf5b2fda25b2245afa6
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040289"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48969245"
 ---
 # <a name="accessing-shared-driveitems"></a>Доступ к общим элементам DriveItem
 
@@ -65,7 +65,7 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 
 | Имя       | Тип   | Описание                                                    |
 |:-----------|:-------|:---------------------------------------------------------------|
-| **Prefer** | string | Необязательный. Установите одно из значений, приведенных `prefer` ниже.  |
+| **Prefer** | string | Необязательно. Установите одно из значений, приведенных `prefer` ниже.  |
 
 ### <a name="prefer-header-values"></a>Предпочтительные значения заголовков
 
@@ -105,6 +105,10 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-root-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-shared-root-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -132,13 +136,13 @@ Content-type: application/json
 
 ## <a name="access-the-shared-item-directly"></a>Прямой доступ к общему элементу
 
-Так как элемент [**SharedDriveItem**](../resources/shareddriveitem.md) содержит полезную информацию, большинство приложений будут стремиться получить прямой доступ к общему элементу [DriveItem](../resources/driveitem.md). Ресурс **SharedDriveItem** включает связи **корня** и **элементов**, которые могут получать доступ к содержимому в области общего элемента.
+Так как элемент [**SharedDriveItem**](../resources/shareddriveitem.md) содержит полезную информацию, большинство приложений будут стремиться получить прямой доступ к общему элементу [DriveItem](../resources/driveitem.md). Ресурс **SharedDriveItem** включает связи **корня** и **элементов** , которые могут получать доступ к содержимому в области общего элемента.
 
 ## <a name="example-single-file"></a>Пример (один файл)
 
 ### <a name="request"></a>Запрос
 
-При запросе связи **driveItem** будет возвращен элемент **DriveItem**, к которому предоставлен общий доступ.
+При запросе связи **driveItem** будет возвращен элемент **DriveItem** , к которому предоставлен общий доступ.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -157,6 +161,10 @@ GET /shares/{shareIdOrUrl}/driveItem
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-driveitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-shared-driveitem-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -183,7 +191,7 @@ Content-Type: application/json
 
 ### <a name="request"></a>Запрос
 
-При запросе связи **driveItem** и расширении коллекции **children** будет возвращен элемент **DriveItem**, к которому предоставлен общий доступ, а также файлы, содержащиеся в общей папке.
+При запросе связи **driveItem** и расширении коллекции **children** будет возвращен элемент **DriveItem** , к которому предоставлен общий доступ, а также файлы, содержащиеся в общей папке.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -202,6 +210,10 @@ GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shared-driveitem-expand-children-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-shared-driveitem-expand-children-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 977852695d4e12eeb6d13d8c4f073e99a71cfd3a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0e5dc0d15ce7152a9713bbd1729b22cc901762c7
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48004657"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48969352"
 ---
 # <a name="get-onenoteoperation"></a>Получение onenoteOperation
 
@@ -20,7 +20,7 @@ ms.locfileid: "48004657"
 
 Получение состояния длительной операции с OneNote. Это относится к операциям, которые возвращают заголовок **operationing — Location** в ответе, например,,, `CopyNotebook` `CopyToNotebook` `CopyToSectionGroup` `and CopyToSection` .   
 
-Вы можете опросить конечную точку Operations – Location, пока `status` свойство не возвратит значение `completed` или `failed` . 
+Вы можете опросить конечную точку Operation-Location, пока `status` свойство не возвратит значение `completed` или `failed` . 
 
 Если состояние имеет значение `completed` , `resourceLocation` свойство содержит URI конечной точки ресурса. 
 
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/me/onenote/operations/{id}
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-onenoteoperation-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-onenoteoperation-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
