@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: a76727ffd927f7d91b953c313b11a59e4512a65e
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 76829c502e83b4218241df74d9fc51e43c0eeb86
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635000"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965468"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Создание governanceRoleAssignmentRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "48635000"
 
 Создайте запрос на назначение роли, который будет представлять нужную операцию для назначения роли. В приведенной ниже таблице перечислены операции.
 
-| Operation                                   | Тип        |
+| Операция                                   | Тип        |
 |:--------------------------------------------|:------------|
 | Назначение роли                    | админадд    |
 | Активация подходящего назначения роли        | усерадд     |
@@ -56,7 +56,7 @@ ms.locfileid: "48635000"
 
 |Тип разрешения | Разрешения |
 |:-------------- |:----------- |
-| Делегированное (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азуреадграупс |
+| Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureADGroups |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений | Не поддерживается. |
 
@@ -75,7 +75,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | Авторизация | Bearer {code}    |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса добавьте представление объекта [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в формате JSON.
 
@@ -89,7 +89,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | reason           | String                                                   | Необходимо указать причину для запроса на назначение роли для аудита и проверки. |
 | schedule         | [governanceSchedule](../resources/governanceschedule.md) | Расписание запроса на назначение роли. Для типа запроса `UserAdd` ,, `AdminAdd` `AdminUpdate` , и `AdminExtend` , он необходим. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в тексте отклика.
 
@@ -164,6 +164,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/governanceroleassignmentrequest-post-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/governanceroleassignmentrequest-post-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -262,7 +266,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
@@ -360,7 +364,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
@@ -428,7 +432,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
@@ -501,7 +505,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",

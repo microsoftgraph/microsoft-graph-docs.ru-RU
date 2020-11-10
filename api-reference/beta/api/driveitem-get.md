@@ -6,12 +6,12 @@ title: Получение файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ee46dfde6ca18520dbafe949248ead4e899a1c38
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 75d859ca20f470518ffcd97b7c8f61217a64373a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47982033"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48963704"
 ---
 # <a name="get-a-driveitem-resource"></a>Получение ресурса DriveItem
 
@@ -57,9 +57,9 @@ GET /users/{userId}/drive/root:/{item-path}
 
 С помощью [`$expand`параметра строки запроса](/graph/query-parameters) вы можете включить дочерние элементы запрос на получение метаданных элемента при наличии **дочерней** связи.
 
-Вы также можете использовать `includeDeletedItems=true` параметр запроса, чтобы вернуть удаленные элементы.
-Этот параметр запроса является допустимым только при нацеливании на [driveItem](../resources/driveitem.md) по идентификатору, и в противном случае он будет игнорироваться.
-В настоящее время поддерживается только в OneDrive персональный.
+Чтобы вернуть удаленные элементы, можно также использовать параметр запроса `includeDeletedItems=true`.
+Этот параметр запроса действителен только тогда, когда целевым объектом назначается [driveItem](../resources/driveitem.md) через идентификатор, в ином случае он игнорируется.
+В настоящее время этот параметр поддерживается только в OneDrive персональный.
 
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 
@@ -93,6 +93,10 @@ GET /me/drive/root
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-item-metadata-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-item-metadata-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Normal
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 1716605557493f268d38beb8bf674dc15416c5b6
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: a9dffefdc8a7f967cd44d16168ad83c822bacc69
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457550"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48965327"
 ---
 # <a name="group-evaluatedynamicmembership"></a>Группа: Евалуатединамикмембершип
 
@@ -67,8 +67,8 @@ POST /groups/evaluateDynamicMembership
 
 | Параметр | Тип | Описание |
 | :-------- | :--- | :---------- |
-| Идентификатора | Коллекция String | memberId это идентификатор объекта для оцениваемого пользователя или устройства. |
-| membershipRule | Коллекция String | Правило, используемое для оценки членства. Если это свойство не указано, оценивается правило для существующей группы. Если это свойство указано, то пользователь или устройство оцениваются для возможного членства в группе с тем же правилом. Дополнительные сведения см. [в статье динамическое правило членства для групп в Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
+| Идентификатора | Коллекция строк | memberId это идентификатор объекта для оцениваемого пользователя или устройства. |
+| membershipRule | Коллекция строк | Правило, используемое для оценки членства. Если это свойство не указано, оценивается правило для существующей группы. Если это свойство указано, то пользователь или устройство оцениваются для возможного членства в группе с тем же правилом. Дополнительные сведения см. [в статье динамическое правило членства для групп в Azure Active Directory](/azure/active-directory/users-groups-roles/groups-dynamic-membership).|
 
 ## <a name="response"></a>Отклик
 
@@ -107,6 +107,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -174,6 +178,10 @@ Content-type: application/json
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-evaluatedynamicmembership-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-evaluatedynamicmembership-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

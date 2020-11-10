@@ -5,12 +5,12 @@ localization_priority: Normal
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: dea445040bc69418e9c4090ee9e7a5f2ccc84602
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8944533d18105de4b6cca0d0a95ad749985f1f9b
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701428"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48964978"
 ---
 # <a name="add-group-owner"></a>Добавление владельца группы
 
@@ -18,7 +18,7 @@ ms.locfileid: "48701428"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавьте пользователя или участника службы к владельцам группы. Владельцы — это набор пользователей или субъектов служб, которым разрешено изменять объект Group.
+Добавьте пользователя или субъект-службу к владельцам группы. Владельцы — это группа пользователей или субъектов-служб, которым разрешено изменять этот групповой объект.
 
 >**Важно!** При обновлении владельцев группы и создании команды для группы может потребоваться до 2 часов для синхронизации владельцев с Microsoft Teams. Кроме того, если нужно, чтобы владелец мог вносить изменения в команду, например путем создания плана Планировщика, владельца также требуется добавить в качестве участника группы или команды. 
 
@@ -76,6 +76,10 @@ Content-length: 30
 
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-owner-from-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-owner-from-group-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

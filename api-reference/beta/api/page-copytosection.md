@@ -5,12 +5,12 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 doc_type: apiPageType
-ms.openlocfilehash: 189ef82b66a972146488510a3de608c88fab4d1a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 521ad56d93a667e6043ca6f833cc2dfb747d69f3
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040436"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48964425"
 ---
 # <a name="page-copytosection"></a>Страница: copyToSection
 
@@ -50,14 +50,14 @@ POST /sites/{id}/onenote/pages/{id}/copyToSection
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|siteCollectionId|Строка|Идентификатор сайта SharePoint, в который необходимо скопировать. Используйте только при копировании на сайт SharePoint.|
-|siteId|Строка|Идентификатор веб-сайта SharePoint, в который необходимо скопировать. Используйте только при копировании на сайт SharePoint.|
+|siteCollectionId|String|Идентификатор сайта SharePoint, в который необходимо скопировать. Используйте только при копировании на сайт SharePoint.|
+|siteId|String|Идентификатор веб-сайта SharePoint, в который необходимо скопировать. Используйте только при копировании на сайт SharePoint.|
 |groupId|String|Идентификатор группы, в которую будет копироваться. Используйте только при копировании в группу Microsoft 365.|
 |id|String|Обязательный. Идентификатор раздела назначения.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и `Operation-Location` заголовок. Опросить конечную точку Operations to Location, чтобы [получить состояние операции копирования](onenoteoperation-get.md).
+В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и `Operation-Location` заголовок. Опрос конечной точки Operation-Location для [получения состояния операции копирования](onenoteoperation-get.md).
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -89,6 +89,10 @@ Content-length: 52
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/page-copytosection-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/page-copytosection-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,17 +1,17 @@
 ---
 author: JeremyKelley
-description: Получение коллекции ресурсов DriveItem, являющихся дочерними элементами ресурса DriveItem.
+description: Возвращает коллекцию DriveItems в дочерних элементах ресурса DriveItem.
 ms.date: 09/10/2017
 title: Создание списка содержимого папки
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 3a3e6a33f80675cfdb4a34c347814012e6320227
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 86bc8629f086cb40b4ab500115c04d2aeb7b36e6
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458292"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48964291"
 ---
 # <a name="list-children-of-a-driveitem"></a>Создание списка дочерних элементов ресурса driveItem
 
@@ -21,7 +21,7 @@ ms.locfileid: "48458292"
 
 Возвращает коллекцию [DriveItems](../resources/driveitem.md) в **дочерние** элементы ресурса DriveItem.
 
-Ресурсы DriveItem с аспектом **папки** или **пакета**, отличным от NULL, могут содержать один или несколько дочерних элементов DriveItem.
+Ресурсы DriveItem с аспектом **папки** или **пакета** , отличным от NULL, могут содержать один или несколько дочерних элементов DriveItem.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -81,6 +81,10 @@ GET /me/drive/root/children
 [!INCLUDE [sample-code](../includes/snippets/objc/list-children-root-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-children-root-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -106,6 +110,10 @@ GET /drives/{drive-id}/items/{item-id}/children
 
 # <a name="objective-c"></a>[Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-children-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-children-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
