@@ -5,69 +5,69 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: aa4326f1a4bdd71531dd41cbd206c6f5365f76cb
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 1b87d1ea3cab55789735e45bc66d5b3c048c4646
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987549"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48959914"
 ---
-# <a name="update-calendargroup"></a><span data-ttu-id="1ae50-103">Обновление объекта calendarGroup.</span><span class="sxs-lookup"><span data-stu-id="1ae50-103">Update calendargroup</span></span>
+# <a name="update-calendargroup"></a><span data-ttu-id="97927-103">Обновление объекта calendarGroup.</span><span class="sxs-lookup"><span data-stu-id="97927-103">Update calendargroup</span></span>
 
-<span data-ttu-id="1ae50-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1ae50-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="97927-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="97927-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1ae50-105">Обновление свойств объекта calendarGroup.</span><span class="sxs-lookup"><span data-stu-id="1ae50-105">Update the properties of calendargroup object.</span></span>
+<span data-ttu-id="97927-105">Обновление свойств объекта calendarGroup.</span><span class="sxs-lookup"><span data-stu-id="97927-105">Update the properties of calendargroup object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1ae50-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1ae50-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="97927-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="97927-106">Permissions</span></span>
 
-<span data-ttu-id="1ae50-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1ae50-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="97927-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="97927-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="1ae50-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1ae50-109">Permission type</span></span>                        | <span data-ttu-id="1ae50-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1ae50-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="97927-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="97927-109">Permission type</span></span>                        | <span data-ttu-id="97927-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="97927-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="1ae50-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1ae50-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="1ae50-112">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1ae50-112">Calendars.ReadWrite</span></span>                         |
-| <span data-ttu-id="1ae50-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1ae50-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1ae50-114">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1ae50-114">Calendars.ReadWrite</span></span>                         |
-| <span data-ttu-id="1ae50-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1ae50-115">Application</span></span>                            | <span data-ttu-id="1ae50-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="1ae50-116">Calendars.ReadWrite</span></span>                         |
+| <span data-ttu-id="97927-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="97927-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="97927-112">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="97927-112">Calendars.ReadWrite</span></span>                         |
+| <span data-ttu-id="97927-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="97927-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="97927-114">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="97927-114">Calendars.ReadWrite</span></span>                         |
+| <span data-ttu-id="97927-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="97927-115">Application</span></span>                            | <span data-ttu-id="97927-116">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="97927-116">Calendars.ReadWrite</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="1ae50-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1ae50-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="97927-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="97927-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
-<span data-ttu-id="1ae50-118">Любой объект [calendarGroup](../resources/calendargroup.md) пользователя.</span><span class="sxs-lookup"><span data-stu-id="1ae50-118">Any [calendarGroup](../resources/calendargroup.md) of a user.</span></span>
+<span data-ttu-id="97927-118">Любой объект [calendarGroup](../resources/calendargroup.md) пользователя.</span><span class="sxs-lookup"><span data-stu-id="97927-118">Any [calendarGroup](../resources/calendargroup.md) of a user.</span></span>
 
 ```http
 PATCH /me/calendarGroups/{id}
 PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1ae50-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1ae50-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="97927-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="97927-119">Request headers</span></span>
 
-| <span data-ttu-id="1ae50-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="1ae50-120">Header</span></span>        | <span data-ttu-id="1ae50-121">Значение</span><span class="sxs-lookup"><span data-stu-id="1ae50-121">Value</span></span>                       |
+| <span data-ttu-id="97927-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="97927-120">Header</span></span>        | <span data-ttu-id="97927-121">Значение</span><span class="sxs-lookup"><span data-stu-id="97927-121">Value</span></span>                       |
 | :------------ | :-------------------------- |
-| <span data-ttu-id="1ae50-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1ae50-122">Authorization</span></span> | <span data-ttu-id="1ae50-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1ae50-p102">Bearer {token}. Required.</span></span>   |
-| <span data-ttu-id="1ae50-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1ae50-125">Content-Type</span></span>  | <span data-ttu-id="1ae50-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1ae50-p103">application/json. Required.</span></span> |
+| <span data-ttu-id="97927-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="97927-122">Authorization</span></span> | <span data-ttu-id="97927-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="97927-p102">Bearer {token}. Required.</span></span>   |
+| <span data-ttu-id="97927-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="97927-125">Content-Type</span></span>  | <span data-ttu-id="97927-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="97927-p103">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1ae50-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1ae50-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="97927-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="97927-128">Request body</span></span>
 
-<span data-ttu-id="1ae50-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="1ae50-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+<span data-ttu-id="97927-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="97927-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="1ae50-132">Свойство</span><span class="sxs-lookup"><span data-stu-id="1ae50-132">Property</span></span> | <span data-ttu-id="1ae50-133">Тип</span><span class="sxs-lookup"><span data-stu-id="1ae50-133">Type</span></span>   | <span data-ttu-id="1ae50-134">Описание</span><span class="sxs-lookup"><span data-stu-id="1ae50-134">Description</span></span>     |
+| <span data-ttu-id="97927-132">Свойство</span><span class="sxs-lookup"><span data-stu-id="97927-132">Property</span></span> | <span data-ttu-id="97927-133">Тип</span><span class="sxs-lookup"><span data-stu-id="97927-133">Type</span></span>   | <span data-ttu-id="97927-134">Описание</span><span class="sxs-lookup"><span data-stu-id="97927-134">Description</span></span>     |
 | :------- | :----- | :-------------- |
-| <span data-ttu-id="1ae50-135">name</span><span class="sxs-lookup"><span data-stu-id="1ae50-135">name</span></span>     | <span data-ttu-id="1ae50-136">String</span><span class="sxs-lookup"><span data-stu-id="1ae50-136">String</span></span> | <span data-ttu-id="1ae50-137">Имя группы.</span><span class="sxs-lookup"><span data-stu-id="1ae50-137">The group name.</span></span> |
+| <span data-ttu-id="97927-135">name</span><span class="sxs-lookup"><span data-stu-id="97927-135">name</span></span>     | <span data-ttu-id="97927-136">String</span><span class="sxs-lookup"><span data-stu-id="97927-136">String</span></span> | <span data-ttu-id="97927-137">Имя группы.</span><span class="sxs-lookup"><span data-stu-id="97927-137">The group name.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="1ae50-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="1ae50-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="97927-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="97927-138">Response</span></span>
 
-<span data-ttu-id="1ae50-139">В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [calendarGroup](../resources/calendargroup.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1ae50-139">If successful, this method returns a `200 OK` response code and updated [calendarGroup](../resources/calendargroup.md) object in the response body.</span></span>
+<span data-ttu-id="97927-139">В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [calendarGroup](../resources/calendargroup.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="97927-139">If successful, this method returns a `200 OK` response code and updated [calendarGroup](../resources/calendargroup.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1ae50-140">Пример</span><span class="sxs-lookup"><span data-stu-id="1ae50-140">Example</span></span>
+## <a name="example"></a><span data-ttu-id="97927-140">Пример</span><span class="sxs-lookup"><span data-stu-id="97927-140">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="1ae50-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="1ae50-141">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="97927-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="97927-141">Request</span></span>
 
-<span data-ttu-id="1ae50-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1ae50-142">Here is an example of the request.</span></span>
+<span data-ttu-id="97927-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="97927-142">Here is an example of the request.</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="1ae50-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="1ae50-143">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="97927-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="97927-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_calendargroup"
@@ -82,24 +82,28 @@ Content-length: 30
   "name": "name-value"
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="1ae50-144">C#</span><span class="sxs-lookup"><span data-stu-id="1ae50-144">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="97927-144">C#</span><span class="sxs-lookup"><span data-stu-id="97927-144">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-calendargroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="1ae50-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1ae50-145">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="97927-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="97927-145">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-calendargroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="1ae50-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1ae50-146">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="97927-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="97927-146">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-calendargroup-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="97927-147">Java</span><span class="sxs-lookup"><span data-stu-id="97927-147">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-calendargroup-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-##### <a name="response"></a><span data-ttu-id="1ae50-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="1ae50-147">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="97927-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="97927-148">Response</span></span>
 
-<span data-ttu-id="1ae50-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1ae50-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="97927-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="97927-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
