@@ -5,30 +5,30 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 6fb2c5c1874e9c4fdd6dc59bf4b52783b6e1f88b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 204d9e9cf2e64056039162f4fd3a4e3eb3de2e6c
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085432"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981265"
 ---
-# <a name="list-reviewsets"></a><span data-ttu-id="35624-103">Список Ревиевсетс</span><span class="sxs-lookup"><span data-stu-id="35624-103">List reviewSets</span></span>
+# <a name="list-reviewsets"></a><span data-ttu-id="332a4-103">Список Ревиевсетс</span><span class="sxs-lookup"><span data-stu-id="332a4-103">List reviewSets</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="35624-104">Получение списка объектов [reviewing](../resources/reviewset.md) для объекта [едисковерикасе](../resources/ediscoverycase.md) .</span><span class="sxs-lookup"><span data-stu-id="35624-104">Retrieve the list of [reviewSet](../resources/reviewset.md) objects in an [ediscoveryCase](../resources/ediscoverycase.md) object.</span></span>
+<span data-ttu-id="332a4-104">Получение списка объектов [reviewing](../resources/reviewset.md) для объекта [едисковерикасе](../resources/ediscoverycase.md) .</span><span class="sxs-lookup"><span data-stu-id="332a4-104">Retrieve the list of [reviewSet](../resources/reviewset.md) objects in an [ediscoveryCase](../resources/ediscoverycase.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="35624-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="35624-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="332a4-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="332a4-105">Permissions</span></span>
 
-<span data-ttu-id="35624-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="35624-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="332a4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="332a4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="35624-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="35624-108">Permission type</span></span>                        | <span data-ttu-id="35624-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="35624-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="332a4-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="332a4-108">Permission type</span></span>                        | <span data-ttu-id="332a4-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="332a4-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="35624-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="35624-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="35624-111">User.Read</span><span class="sxs-lookup"><span data-stu-id="35624-111">User.Read</span></span> |
-| <span data-ttu-id="35624-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="35624-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="35624-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="35624-113">Not supported.</span></span> |
-| <span data-ttu-id="35624-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="35624-114">Application</span></span>                            | <span data-ttu-id="35624-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="35624-115">Not supported.</span></span> |
+| <span data-ttu-id="332a4-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="332a4-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="332a4-111">User.Read</span><span class="sxs-lookup"><span data-stu-id="332a4-111">User.Read</span></span> |
+| <span data-ttu-id="332a4-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="332a4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="332a4-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="332a4-113">Not supported.</span></span> |
+| <span data-ttu-id="332a4-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="332a4-114">Application</span></span>                            | <span data-ttu-id="332a4-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="332a4-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="35624-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="35624-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="332a4-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="332a4-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,27 +36,27 @@ ms.locfileid: "48085432"
 GET /compliance/ediscovery/cases/{id}/reviewSets
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="35624-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="35624-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="332a4-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="332a4-117">Request headers</span></span>
 
-| <span data-ttu-id="35624-118">Имя</span><span class="sxs-lookup"><span data-stu-id="35624-118">Name</span></span>          | <span data-ttu-id="35624-119">Описание</span><span class="sxs-lookup"><span data-stu-id="35624-119">Description</span></span>   |
+| <span data-ttu-id="332a4-118">Имя</span><span class="sxs-lookup"><span data-stu-id="332a4-118">Name</span></span>          | <span data-ttu-id="332a4-119">Описание</span><span class="sxs-lookup"><span data-stu-id="332a4-119">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="35624-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="35624-120">Authorization</span></span> | <span data-ttu-id="35624-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="35624-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="332a4-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="332a4-120">Authorization</span></span> | <span data-ttu-id="332a4-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="332a4-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="35624-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="35624-123">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="332a4-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="332a4-123">Request body</span></span>
 
-<span data-ttu-id="35624-124">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="35624-124">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="332a4-124">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="332a4-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="35624-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="35624-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="332a4-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="332a4-125">Response</span></span>
 
-<span data-ttu-id="35624-126">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенную коллекцию [перепредставления](../resources/reviewset.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="35624-126">If successful, this method returns a `200 OK` response code and the requested [reviewSet](../resources/reviewset.md) collection in the response body.</span></span>
+<span data-ttu-id="332a4-126">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенную коллекцию [перепредставления](../resources/reviewset.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="332a4-126">If successful, this method returns a `200 OK` response code and the requested [reviewSet](../resources/reviewset.md) collection in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="35624-127">Примеры</span><span class="sxs-lookup"><span data-stu-id="35624-127">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="332a4-127">Примеры</span><span class="sxs-lookup"><span data-stu-id="332a4-127">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="35624-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="35624-128">Request</span></span>
+### <a name="request"></a><span data-ttu-id="332a4-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="332a4-128">Request</span></span>
 
-<span data-ttu-id="35624-129">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="35624-129">The following is an example of the request.</span></span>
+<span data-ttu-id="332a4-129">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="332a4-129">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="35624-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="35624-130">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="332a4-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="332a4-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_reviewset",
@@ -66,24 +66,28 @@ GET /compliance/ediscovery/cases/{id}/reviewSets
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/6f65a8e4-c6a0-4cff-8a81-c9ab5df7290d/reviewSets
 ```
-# <a name="c"></a>[<span data-ttu-id="35624-131">C#</span><span class="sxs-lookup"><span data-stu-id="35624-131">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="332a4-131">C#</span><span class="sxs-lookup"><span data-stu-id="332a4-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-reviewset-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="35624-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="35624-132">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="332a4-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="332a4-132">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-reviewset-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="35624-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="35624-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="332a4-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="332a4-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/list-reviewset-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="332a4-134">Java</span><span class="sxs-lookup"><span data-stu-id="332a4-134">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-reviewset-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="35624-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="35624-134">Response</span></span>
+### <a name="response"></a><span data-ttu-id="332a4-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="332a4-135">Response</span></span>
 
-<span data-ttu-id="35624-135">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="35624-135">The following is an example of the response.</span></span>
+<span data-ttu-id="332a4-136">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="332a4-136">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",

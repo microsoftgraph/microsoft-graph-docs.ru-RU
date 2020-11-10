@@ -5,33 +5,33 @@ author: mashriv
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 5e38d52eec98726d7d15e7b1853c102f680b7897
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 9c9bc8832f5e0e692dc022ce443c4715dfaee243
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460931"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48981826"
 ---
-# <a name="get-outlooktaskfolder-deprecated"></a><span data-ttu-id="d2e06-103">Получение outlookTaskFolder (не рекомендуется)</span><span class="sxs-lookup"><span data-stu-id="d2e06-103">Get outlookTaskFolder (deprecated)</span></span>
+# <a name="get-outlooktaskfolder-deprecated"></a><span data-ttu-id="3fbcf-103">Получение outlookTaskFolder (не рекомендуется)</span><span class="sxs-lookup"><span data-stu-id="3fbcf-103">Get outlookTaskFolder (deprecated)</span></span>
 
-<span data-ttu-id="d2e06-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="d2e06-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="3fbcf-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3fbcf-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
 
 
-<span data-ttu-id="d2e06-105">Получение свойств и связей указанной папки задач Outlook.</span><span class="sxs-lookup"><span data-stu-id="d2e06-105">Get the properties and relationships of the specified Outlook task folder.</span></span>
-## <a name="permissions"></a><span data-ttu-id="d2e06-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d2e06-106">Permissions</span></span>
-<span data-ttu-id="d2e06-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d2e06-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3fbcf-105">Получение свойств и связей указанной папки задач Outlook.</span><span class="sxs-lookup"><span data-stu-id="3fbcf-105">Get the properties and relationships of the specified Outlook task folder.</span></span>
+## <a name="permissions"></a><span data-ttu-id="3fbcf-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3fbcf-106">Permissions</span></span>
+<span data-ttu-id="3fbcf-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3fbcf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d2e06-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d2e06-109">Permission type</span></span>      | <span data-ttu-id="d2e06-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d2e06-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3fbcf-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3fbcf-109">Permission type</span></span>      | <span data-ttu-id="3fbcf-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3fbcf-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d2e06-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d2e06-111">Delegated (work or school account)</span></span> | <span data-ttu-id="d2e06-112">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="d2e06-112">Tasks.Read</span></span>    |
-|<span data-ttu-id="d2e06-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d2e06-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d2e06-114">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="d2e06-114">Tasks.Read</span></span>    |
-|<span data-ttu-id="d2e06-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d2e06-115">Application</span></span> | <span data-ttu-id="d2e06-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d2e06-116">Not supported.</span></span> |
+|<span data-ttu-id="3fbcf-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3fbcf-111">Delegated (work or school account)</span></span> | <span data-ttu-id="3fbcf-112">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="3fbcf-112">Tasks.Read</span></span>    |
+|<span data-ttu-id="3fbcf-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3fbcf-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3fbcf-114">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="3fbcf-114">Tasks.Read</span></span>    |
+|<span data-ttu-id="3fbcf-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3fbcf-115">Application</span></span> | <span data-ttu-id="3fbcf-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3fbcf-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d2e06-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d2e06-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3fbcf-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3fbcf-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/taskFolders/{id}
@@ -39,25 +39,25 @@ GET /me/outlook/taskGroups/{id}/taskFolders/{id}
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="d2e06-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="d2e06-118">Optional query parameters</span></span>
-<span data-ttu-id="d2e06-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="d2e06-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="3fbcf-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="3fbcf-118">Optional query parameters</span></span>
+<span data-ttu-id="3fbcf-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="3fbcf-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d2e06-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d2e06-120">Request headers</span></span>
-| <span data-ttu-id="d2e06-121">Имя</span><span class="sxs-lookup"><span data-stu-id="d2e06-121">Name</span></span>      |<span data-ttu-id="d2e06-122">Описание</span><span class="sxs-lookup"><span data-stu-id="d2e06-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3fbcf-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3fbcf-120">Request headers</span></span>
+| <span data-ttu-id="3fbcf-121">Имя</span><span class="sxs-lookup"><span data-stu-id="3fbcf-121">Name</span></span>      |<span data-ttu-id="3fbcf-122">Описание</span><span class="sxs-lookup"><span data-stu-id="3fbcf-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="d2e06-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d2e06-123">Authorization</span></span>  | <span data-ttu-id="d2e06-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d2e06-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3fbcf-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3fbcf-123">Authorization</span></span>  | <span data-ttu-id="3fbcf-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3fbcf-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="d2e06-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d2e06-126">Request body</span></span>
-<span data-ttu-id="d2e06-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d2e06-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3fbcf-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3fbcf-126">Request body</span></span>
+<span data-ttu-id="3fbcf-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="3fbcf-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d2e06-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="d2e06-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3fbcf-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="3fbcf-128">Response</span></span>
 
-<span data-ttu-id="d2e06-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="d2e06-129">If successful, this method returns a `200 OK` response code and [outlookTaskFolder](../resources/outlooktaskfolder.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="d2e06-130">Пример</span><span class="sxs-lookup"><span data-stu-id="d2e06-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d2e06-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="d2e06-131">Request</span></span>
-<span data-ttu-id="d2e06-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d2e06-132">Here is an example of the request.</span></span>
+<span data-ttu-id="3fbcf-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="3fbcf-129">If successful, this method returns a `200 OK` response code and [outlookTaskFolder](../resources/outlooktaskfolder.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="3fbcf-130">Пример</span><span class="sxs-lookup"><span data-stu-id="3fbcf-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3fbcf-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="3fbcf-131">Request</span></span>
+<span data-ttu-id="3fbcf-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3fbcf-132">Here is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="d2e06-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="d2e06-133">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="3fbcf-133">HTTP</span><span class="sxs-lookup"><span data-stu-id="3fbcf-133">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_outlooktaskfolder"
@@ -65,22 +65,26 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/outlook/taskFolders/AAMkADIyAAAAABrJAAA=
 ```
-# <a name="c"></a>[<span data-ttu-id="d2e06-134">C#</span><span class="sxs-lookup"><span data-stu-id="d2e06-134">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="3fbcf-134">C#</span><span class="sxs-lookup"><span data-stu-id="3fbcf-134">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-outlooktaskfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="d2e06-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="d2e06-135">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="3fbcf-135">JavaScript</span><span class="sxs-lookup"><span data-stu-id="3fbcf-135">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-outlooktaskfolder-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="d2e06-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="d2e06-136">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="3fbcf-136">Objective-C</span><span class="sxs-lookup"><span data-stu-id="3fbcf-136">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-outlooktaskfolder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="3fbcf-137">Java</span><span class="sxs-lookup"><span data-stu-id="3fbcf-137">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-outlooktaskfolder-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="d2e06-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="d2e06-137">Response</span></span>
-<span data-ttu-id="d2e06-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d2e06-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="3fbcf-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="3fbcf-138">Response</span></span>
+<span data-ttu-id="3fbcf-p103">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3fbcf-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
