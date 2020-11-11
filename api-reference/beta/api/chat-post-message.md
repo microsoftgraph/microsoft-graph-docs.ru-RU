@@ -5,36 +5,36 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ac90249ab845a9f777fa126b599a9986dbb15e1c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0e11602181e50c2d6a190e45622c6bc7d4cd323f
+ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958206"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993950"
 ---
-# <a name="send-chatmessage-in-a-chat"></a><span data-ttu-id="8005c-103">Отправка chatMessage в чате</span><span class="sxs-lookup"><span data-stu-id="8005c-103">Send chatMessage in a chat</span></span>
+# <a name="send-chatmessage-in-a-chat"></a><span data-ttu-id="76701-103">Отправка chatMessage в чате</span><span class="sxs-lookup"><span data-stu-id="76701-103">Send chatMessage in a chat</span></span>
 
-<span data-ttu-id="8005c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8005c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="76701-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="76701-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8005c-105">Создание нового [chatMessage](../resources/chatmessage.md) в указанном [сеансе чата](../resources/chat.md).</span><span class="sxs-lookup"><span data-stu-id="8005c-105">Create a new [chatMessage](../resources/chatmessage.md) in the specified [chat](../resources/chat.md).</span></span> <span data-ttu-id="8005c-106">Этот API не может создать новый чат; чтобы получить идентификатор существующего чата, прежде чем создавать сообщение чата, необходимо использовать метод [List Chats](chat-list.md) .</span><span class="sxs-lookup"><span data-stu-id="8005c-106">This API cannot create an new chat; you must use the [list chats](chat-list.md) method to retreive the ID of an existing chat before creating a chat message.</span></span>
+<span data-ttu-id="76701-105">Создание нового [chatMessage](../resources/chatmessage.md) в указанном [сеансе чата](../resources/chat.md).</span><span class="sxs-lookup"><span data-stu-id="76701-105">Create a new [chatMessage](../resources/chatmessage.md) in the specified [chat](../resources/chat.md).</span></span> <span data-ttu-id="76701-106">Этот API не может создать новый чат; чтобы получить идентификатор существующего чата, необходимо использовать метод Chat [List](chat-list.md) Chats, прежде чем создавать сообщение чата.</span><span class="sxs-lookup"><span data-stu-id="76701-106">This API cannot create a new chat; you must use the [list chats](chat-list.md) method to retrieve the ID of an existing chat before creating a chat message.</span></span>
 
-> <span data-ttu-id="8005c-107">**Note** : мы не рекомендуем использовать этот API для переноса данных.</span><span class="sxs-lookup"><span data-stu-id="8005c-107">**Note** : We don't recommend that you use this API for data migration.</span></span> <span data-ttu-id="8005c-108">Пропускная способность, необходимая для обычной миграции, отсутствует.</span><span class="sxs-lookup"><span data-stu-id="8005c-108">It does not have the throughput necessary for a typical migration.</span></span>
+> <span data-ttu-id="76701-107">**Note** : мы не рекомендуем использовать этот API для переноса данных.</span><span class="sxs-lookup"><span data-stu-id="76701-107">**Note** : We don't recommend that you use this API for data migration.</span></span> <span data-ttu-id="76701-108">Пропускная способность, необходимая для обычной миграции, отсутствует.</span><span class="sxs-lookup"><span data-stu-id="76701-108">It does not have the throughput necessary for a typical migration.</span></span>
 
-> <span data-ttu-id="8005c-109">**Note** : нарушение [условий использования](/legal/microsoft-apis/terms-of-use) Microsoft Teams в качестве файла журнала.</span><span class="sxs-lookup"><span data-stu-id="8005c-109">**Note** : It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file.</span></span> <span data-ttu-id="8005c-110">Отправлять только сообщения, которые пользователи смогут читать.</span><span class="sxs-lookup"><span data-stu-id="8005c-110">Only send messages that people will read.</span></span>
+> <span data-ttu-id="76701-109">**Note** : нарушение [условий использования](/legal/microsoft-apis/terms-of-use) Microsoft Teams в качестве файла журнала.</span><span class="sxs-lookup"><span data-stu-id="76701-109">**Note** : It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file.</span></span> <span data-ttu-id="76701-110">Отправлять только сообщения, которые пользователи смогут читать.</span><span class="sxs-lookup"><span data-stu-id="76701-110">Only send messages that people will read.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="8005c-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8005c-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="76701-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="76701-111">Permissions</span></span>
 
-<span data-ttu-id="8005c-p104">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8005c-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="76701-p104">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="76701-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="8005c-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8005c-114">Permission type</span></span>                        | <span data-ttu-id="8005c-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8005c-115">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="76701-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="76701-114">Permission type</span></span>                        | <span data-ttu-id="76701-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="76701-115">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="8005c-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8005c-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="8005c-117">ChatMessage. Send, Chat. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8005c-117">ChatMessage.Send, Chat.ReadWrite</span></span> |
-| <span data-ttu-id="8005c-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8005c-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8005c-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8005c-119">Not supported.</span></span> |
-| <span data-ttu-id="8005c-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8005c-120">Application</span></span>                            | <span data-ttu-id="8005c-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8005c-121">Not supported.</span></span> |
+| <span data-ttu-id="76701-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="76701-116">Delegated (work or school account)</span></span>     | <span data-ttu-id="76701-117">ChatMessage. Send, Chat. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="76701-117">ChatMessage.Send, Chat.ReadWrite</span></span> |
+| <span data-ttu-id="76701-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="76701-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="76701-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="76701-119">Not supported.</span></span> |
+| <span data-ttu-id="76701-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="76701-120">Application</span></span>                            | <span data-ttu-id="76701-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="76701-121">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8005c-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8005c-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="76701-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="76701-122">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -43,29 +43,29 @@ POST /chats/{id}/messages
 POST /users/{id}/chats/{id}/messages
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="8005c-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8005c-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="76701-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="76701-123">Request headers</span></span>
 
-| <span data-ttu-id="8005c-124">Имя</span><span class="sxs-lookup"><span data-stu-id="8005c-124">Name</span></span>          | <span data-ttu-id="8005c-125">Описание</span><span class="sxs-lookup"><span data-stu-id="8005c-125">Description</span></span>   |
+| <span data-ttu-id="76701-124">Имя</span><span class="sxs-lookup"><span data-stu-id="76701-124">Name</span></span>          | <span data-ttu-id="76701-125">Описание</span><span class="sxs-lookup"><span data-stu-id="76701-125">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="8005c-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8005c-126">Authorization</span></span> | <span data-ttu-id="8005c-127">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="8005c-127">Bearer {code}.</span></span> <span data-ttu-id="8005c-128">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="8005c-128">Required.</span></span> |
+| <span data-ttu-id="76701-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="76701-126">Authorization</span></span> | <span data-ttu-id="76701-127">Bearer {код}.</span><span class="sxs-lookup"><span data-stu-id="76701-127">Bearer {code}.</span></span> <span data-ttu-id="76701-128">Обязательно.</span><span class="sxs-lookup"><span data-stu-id="76701-128">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8005c-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="8005c-129">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="76701-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="76701-129">Request body</span></span>
 
-<span data-ttu-id="8005c-130">В тексте запроса добавьте представление объекта [chatMessage](../resources/chatmessage.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8005c-130">In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object.</span></span>
+<span data-ttu-id="76701-130">В тексте запроса добавьте представление объекта [chatMessage](../resources/chatmessage.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="76701-130">In the request body, supply a JSON representation of a [chatMessage](../resources/chatmessage.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8005c-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="8005c-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="76701-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="76701-131">Response</span></span>
 
-<span data-ttu-id="8005c-132">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [chatMessage](../resources/chatmessage.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="8005c-132">If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.</span></span>
+<span data-ttu-id="76701-132">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [chatMessage](../resources/chatmessage.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="76701-132">If successful, this method returns a `201 Created` response code and a new [chatMessage](../resources/chatmessage.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="8005c-133">Примеры</span><span class="sxs-lookup"><span data-stu-id="8005c-133">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="76701-133">Примеры</span><span class="sxs-lookup"><span data-stu-id="76701-133">Examples</span></span>
 
-<span data-ttu-id="8005c-134">Более полный список примеров приведен [в статье Создание chatMessage в канале или чате](chatmessage-post.md).</span><span class="sxs-lookup"><span data-stu-id="8005c-134">For a more comprehensive list of examples, see [Create chatMessage in a channel or a chat](chatmessage-post.md).</span></span>
+<span data-ttu-id="76701-134">Более полный список примеров приведен [в статье Создание chatMessage в канале или чате](chatmessage-post.md).</span><span class="sxs-lookup"><span data-stu-id="76701-134">For a more comprehensive list of examples, see [Create chatMessage in a channel or a chat](chatmessage-post.md).</span></span>
 
-### <a name="request"></a><span data-ttu-id="8005c-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="8005c-135">Request</span></span>
+### <a name="request"></a><span data-ttu-id="76701-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="76701-135">Request</span></span>
 
-<span data-ttu-id="8005c-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8005c-136">The following is an example of the request.</span></span>
+<span data-ttu-id="76701-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="76701-136">The following is an example of the request.</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="8005c-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="8005c-137">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="76701-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="76701-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chatmessage_from_chat"
@@ -77,34 +77,34 @@ Content-type: application/json
 
 {
   "body": {
-     "content" : "Hello world"
+     "content": "Hello world"
   }
 }
 ```
-# <a name="c"></a>[<span data-ttu-id="8005c-138">C#</span><span class="sxs-lookup"><span data-stu-id="8005c-138">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="76701-138">C#</span><span class="sxs-lookup"><span data-stu-id="76701-138">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-chatmessage-from-chat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="8005c-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8005c-139">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="76701-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="76701-139">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-chatmessage-from-chat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="8005c-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8005c-140">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="76701-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="76701-140">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-chatmessage-from-chat-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="8005c-141">Java</span><span class="sxs-lookup"><span data-stu-id="8005c-141">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="76701-141">Java</span><span class="sxs-lookup"><span data-stu-id="76701-141">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-chatmessage-from-chat-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### <a name="response"></a><span data-ttu-id="8005c-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="8005c-142">Response</span></span>
+### <a name="response"></a><span data-ttu-id="76701-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="76701-142">Response</span></span>
 
-<span data-ttu-id="8005c-143">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="8005c-143">The following is an example of the response.</span></span>
+<span data-ttu-id="76701-143">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="76701-143">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="8005c-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8005c-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="76701-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="76701-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
