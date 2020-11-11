@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 54875cc667a755cfaf48f83b3ff026d8a46c758d
-ms.sourcegitcommit: f27e81daeff242e623d1a3627405667310395734
+ms.openlocfilehash: 1b49236781fd78a330391ee66b789a47780f078a
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/25/2019
-ms.locfileid: "40866359"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983692"
 ---
 ```java
 
@@ -23,8 +23,8 @@ identity.user = user;
 targets.identity = identity;
 targetsList.add(targets);
 call.targets = targetsList;
-LinkedList<String> requestedModalitiesList = new LinkedList<String>();
-requestedModalitiesList.add("audio");
+LinkedList<Modality> requestedModalitiesList = new LinkedList<Modality>();
+requestedModalitiesList.add(Modality.AUDIO);
 call.requestedModalities = requestedModalitiesList;
 ServiceHostedMediaConfig mediaConfig = new ServiceHostedMediaConfig();
 call.mediaConfig = mediaConfig;

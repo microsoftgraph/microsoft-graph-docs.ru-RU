@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: cf6d9eaa14639c7b718ea8c9150b261fe4e3c244
-ms.sourcegitcommit: b18f978808fef800bff9e587464a5f3e18eb7687
+ms.openlocfilehash: c232d51728fd01416bb860365901fe8cc61b6752
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35883841"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984031"
 ---
 ```java
 
@@ -13,7 +13,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 Contact contact = new Contact();
 contact.parentFolderId = "parentFolderId-value";
-contact.birthday = "datetime-value";
+contact.birthday = CalendarSerializer.deserialize("datetime-value");
 contact.fileAs = "fileAs-value";
 contact.displayName = "displayName-value";
 contact.givenName = "givenName-value";
