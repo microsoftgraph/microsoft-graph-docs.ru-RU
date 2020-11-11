@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 654b20efe10de0a6e51ac09cc86f61087c4eb694
-ms.sourcegitcommit: d4114bac58628527611e83e436132c6581a19c52
+ms.openlocfilehash: 1a4bbba0c62d47285f13ab1292a6f87eb72e7831
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44218250"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983910"
 ---
 ```java
 
@@ -20,7 +20,7 @@ encryption.secret = "secret-value";
 workforceIntegration.encryption = encryption;
 workforceIntegration.isActive = true;
 workforceIntegration.url = "url-value";
-workforceIntegration.supportedEntities = WorkforceIntegrationSupportedEntities.NONE;
+workforceIntegration.supportedEntities = EnumSet.of(WorkforceIntegrationSupportedEntities.NONE);
 
 graphClient.teamwork().workforceIntegrations()
     .buildRequest()

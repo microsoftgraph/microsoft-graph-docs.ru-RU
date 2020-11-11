@@ -1,21 +1,21 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 641e7413b4182c944bdc212fcf71d71ba28f6a04
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: ba373ddba347337df783adbdefd66b9f49034931
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36324832"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983792"
 ---
 ```java
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookRangeFormat workbookRangeFormat = new WorkbookRangeFormat();
-workbookRangeFormat.columnWidth = 135;
+workbookRangeFormat.columnWidth = 135d;
 workbookRangeFormat.horizontalAlignment = "Center";
 workbookRangeFormat.verticalAlignment = "Center";
-workbookRangeFormat.rowHeight = 49;
+workbookRangeFormat.rowHeight = 49d;
 workbookRangeFormat.wrapText = false;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{sheet-id}")

@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 02a90afa3cc5bfcab3f97a3e9eedf5496bc11d1b
-ms.sourcegitcommit: b5425ebf648572569b032ded5b56e1dcf3830515
+ms.openlocfilehash: 986b95372365eafd50770d483b98a6c41ce56847
+ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36324834"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48983970"
 ---
 ```java
 
@@ -13,7 +13,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 WorkbookRangeFont workbookRangeFont = new WorkbookRangeFont();
 workbookRangeFont.italic = true;
-workbookRangeFont.size = 26;
+workbookRangeFont.size = 26d;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{sheet-id}")
     .range("$B$1").format().font()
