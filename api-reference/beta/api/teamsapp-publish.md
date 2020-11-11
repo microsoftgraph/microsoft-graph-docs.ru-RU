@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4ea597956813bd44ff3a64bea005ccefa62de282
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 78ff984bfec1e72a5fd480a9dd61d268beea7689
+ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48903567"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993985"
 ---
 # <a name="publish-teamsapp"></a>Публикация teamsApp
 
@@ -23,9 +23,7 @@ ms.locfileid: "48903567"
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
-
->**Примечание:** Только глобальные администраторы могут вызывать этот API.
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|

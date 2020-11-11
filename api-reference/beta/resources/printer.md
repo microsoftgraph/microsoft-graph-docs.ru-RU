@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 2f1decf04f48f7ee8dc074997e6d503130bc74bc
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 37c552a1239ee1d374c22be77ba81004cfc92e1f
+ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848621"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993964"
 ---
 # <a name="printer-resource-type"></a>Тип ресурса Printer
 
@@ -41,13 +41,13 @@ ms.locfileid: "48848621"
 |:-------------|:------------|:------------|
 |id|String|Идентификатор документа. Только для чтения.|
 |displayName|String|Имя принтера.|
-|manufacturer|String|Производитель, сообщаемый принтером. Только для чтения.|
-|model|String|Имя модели, сообщаемое принтером. Только для чтения.|
+|manufacturer|String|Производитель, сообщаемый принтером.|
+|model|String|Имя модели, сообщаемое принтером.|
 |регистереддатетиме|DateTimeOffset|Значение DateTimeOffset при регистрации принтера. Только для чтения.|
-|status|[принтерстатус](printerstatus.md)|Состояние обработки принтера, включая ошибки. Только для чтения.|
+|status|[принтерстатус](printerstatus.md)|Состояние обработки принтера, включая ошибки.|
 |IsShared|Boolean|Значение true, если принтер является общим; в противном случае — false. Только для чтения.|
 |isAcceptingJobs|Логический|Принимает ли принтер новые задания печати.|
-|location|[принтерлокатион](printerlocation.md)|Физическое и/или организационное расположение принтера.|
+|расположение|[принтерлокатион](printerlocation.md)|Физическое и/или организационное расположение принтера.|
 |defaults|[принтердефаултс](printerdefaults.md)|Параметры печати по умолчанию для принтера.|
 |capabilities|[принтеркапабилитиес](printercapabilities.md)|Возможности принтера, связанного с этим общим принтером.|
 
@@ -59,7 +59,7 @@ ms.locfileid: "48848621"
 |аудиовыход|[принтконнектор](printconnector.md)|Соединители, связанные с принтером.|
 |тасктригжерс|Коллекция [принттасктригжер](printtasktrigger.md)|Список триггеров задач, связанных с принтером.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

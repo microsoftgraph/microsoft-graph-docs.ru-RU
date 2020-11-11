@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ac90249ab845a9f777fa126b599a9986dbb15e1c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0e11602181e50c2d6a190e45622c6bc7d4cd323f
+ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958206"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993950"
 ---
 # <a name="send-chatmessage-in-a-chat"></a>Отправка chatMessage в чате
 
@@ -18,7 +18,7 @@ ms.locfileid: "48958206"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [chatMessage](../resources/chatmessage.md) в указанном [сеансе чата](../resources/chat.md). Этот API не может создать новый чат; чтобы получить идентификатор существующего чата, прежде чем создавать сообщение чата, необходимо использовать метод [List Chats](chat-list.md) .
+Создание нового [chatMessage](../resources/chatmessage.md) в указанном [сеансе чата](../resources/chat.md). Этот API не может создать новый чат; чтобы получить идентификатор существующего чата, необходимо использовать метод Chat [List](chat-list.md) Chats, прежде чем создавать сообщение чата.
 
 > **Note** : мы не рекомендуем использовать этот API для переноса данных. Пропускная способность, необходимая для обычной миграции, отсутствует.
 
@@ -77,7 +77,7 @@ Content-type: application/json
 
 {
   "body": {
-     "content" : "Hello world"
+     "content": "Hello world"
   }
 }
 ```
