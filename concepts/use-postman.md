@@ -3,12 +3,12 @@ title: Использование Postman с API Microsoft Graph
 description: Используйте коллекцию Microsoft Graph Postman, чтобы начать работу с API Microsoft Graph в считанные минуты.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 9ca41df4321426181589ab3dbab5a76c0c683aaa
-ms.sourcegitcommit: 79988a42d91cc25bdd1c531b5f3261901d720a9a
+ms.openlocfilehash: c7029a68314c0a093e0943bcdad46be27155ca25
+ms.sourcegitcommit: b2e216de4a649606c961b3ed2aa3eb8a65f2355c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43916888"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44556217"
 ---
 # <a name="use-postman-with-the-microsoft-graph-api"></a>Использование Postman с API Microsoft Graph
 
@@ -41,14 +41,14 @@ ms.locfileid: "43916888"
 В правой верхней части окна должна отобразиться **среда Microsoft Graph** в виде значка с изображением глаза. Теперь необходимо [настроить среду](#using-the-collection).
 
 ## <a name="using-the-collection"></a>Использование коллекции
-После создания коллекции **Microsoft Graph** и **среды Microsoftr Graph** в Postman выполните указанные ниже действия.
+После создания коллекции **Microsoft Graph** и **среды Microsoft Graph** в Postman выполните указанные ниже действия.
 
 ### <a name="set-up-application-api-calls"></a>Настройка вызовов API приложений
 
 1. В правом верхнем углу выберите **Без среды** из раскрывающегося списка.
 2. Выберите **Среда Microsoft Graph**.
 3. Щелкните значок с изображением **глаза** справа и затем выберите **Изменить**.
-4. Введите свое приложение Microsoft Identity в **текущих** (не **начальных**) переменных: **ClientID**, **ClientSecret** и ** TenantID**. 
+4. Введите свое приложение Microsoft Identity в **текущих** (не **начальных** ) переменных: **ClientID** , **ClientSecret** и **TenantID**. 
  Дополнительные сведения о том, как создать приложение и получить согласие администратора только для приложений, см. в записи блога [Использование Postman для осуществления вызовов Microsoft Graph](https://developer.microsoft.com/ru-RU/graph/blogs/30daysmsgraph-day-13-postman-to-make-microsoft-graph-calls/).
 
 5. Нажмите кнопку **Обновить**. Закройте диалоговое окно **Управление средами**. В коллекции **MicrosoftGraph | Приложение** с левой стороны выберите **Получить маркер доступа только для приложений**. Затем в правой части нажмите кнопку **Отправить**.
@@ -63,7 +63,7 @@ ms.locfileid: "43916888"
 
 >**Важно!** Мы не рекомендуем использовать учетные записи пользователей рабочей среды, так как эта информация хранится непосредственно в Postman. Также не рекомендуем использовать этот способ для получения маркеров доступа в рабочей среде. Используйте его только в целях тестирования.
 
-Если вы не хотите хранить имена пользователей и пароли в переменных среды, которые синхронизируются с вашей облачной учетной записью Postman, можно использовать возможность **Получить новый маркер доступа**, чтобы получить маркер, не выходя из Postman.
+Если вы не хотите хранить имена пользователей и пароли в переменных среды, которые синхронизируются с вашей облачной учетной записью Postman, можно использовать возможность **Получить новый маркер доступа** , чтобы получить маркер, не выходя из Postman.
 
 1. Выберите **От имени пользователя | Получить маркер доступа с помощью Postman**.
 2. Откройте вкладку **Авторизация**.
@@ -71,8 +71,8 @@ ms.locfileid: "43916888"
 4. Заполните приведенные ниже поля реальными значениями для клиента и приложения. Обратите внимание на то, что здесь вы не можете использовать переменные среды: необходимо использовать фактические значения. Их можно найти, выбрав **EndPoints** (Конечные точки) в колонке приложения на portal.azure.com.
 
     - URL-адрес обратного вызова: https://app.getpostman.com/oauth2/callback
-    - URL-адрес проверки подлинности: https://login.microsoftonline.com/**TENANTID**/oauth2/v2.0/authorize
-    - URL-адрес маркера доступа: https://login.microsoftonline.com/**TENANTID**/oauth2/v2.0/token
+    - URL-адрес проверки подлинности: https://login.microsoftonline.com/**TENANTID** /oauth2/v2.0/authorize
+    - URL-адрес маркера доступа: https://login.microsoftonline.com/**TENANTID** /oauth2/v2.0/token
     - Идентификатор клиента: **CLIENTID**
     - Секрет клиента: **CLIENTSECRET**
     - Область: https://graph.microsoft.com/.default
