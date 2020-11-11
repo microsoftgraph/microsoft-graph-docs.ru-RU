@@ -1,19 +1,19 @@
 ---
 title: 'Использование тегов div API OneNote для извлечения данных из записанного содержимого '
-description: " Корпоративная записная книжка в Office 365"
+description: " Корпоративные записные книжки в Microsoft 365"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 8679f277cc893cd5903ff98adfa09f8285013792
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1a54af844b9c75f6506763e02135c10d6d8c59cd
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32578854"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898018"
 ---
 # <a name="use-onenote-api-div-tags-to-extract-data-from-captures"></a>Использование тегов div API OneNote для извлечения данных из записанного содержимого 
 
-**Область применения**: записные книжки клиентов в OneDrive и корпоративные записные книжки в Office 365.
+**Область применения:** Пользовательские записные книжки в OneDrive | Корпоративные записные книжки в Microsoft 365.
 
 Используйте API OneNote, чтобы извлекать данные визитных карточек с изображения или данные из рецептов и описаний товаров по URL-адресу.
 
@@ -128,7 +128,7 @@ API OneNote пытается найти и отобразить следующу
 
 <img alt="An example recipe extraction" src="images/recipe-extraction.png" width="200">
 
-API оптимизирован для работы с рецептами со многих популярных сайтов, например *Allrecipes.com*, *FoodNetwork.com* и *SeriousEats.com*.
+API оптимизирован для работы с рецептами со многих популярных сайтов, например *Allrecipes.com* , *FoodNetwork.com* и *SeriousEats.com*.
 
 ### <a name="common-scenarios-for-recipe-extractions"></a>Стандартные сценарии извлечения рецептов
 

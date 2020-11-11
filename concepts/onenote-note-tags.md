@@ -1,19 +1,19 @@
 ---
 title: Использование тегов заметок на страницах OneNote
-description: " Корпоративная записная книжка в Office 365"
+description: " Корпоративные записные книжки в Microsoft 365"
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: fb1067b2b564e8431aaa8a4bf8ca094a2b5d127d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c238f51ccce57b51fa3e17340c2d92321c3b6185
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32555465"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44895484"
 ---
 # <a name="use-note-tags-in-onenote-pages"></a>Использование тегов заметок на страницах OneNote
 
-**Относится к:** обычным записным книжкам в OneDrive | корпоративные записные книжки в Office 365
+**Область применения:** Пользовательские записные книжки в OneDrive | Корпоративные записные книжки в Microsoft 365.
 
 С помощью атрибута `data-tag` вы можете добавлять и изменять флажки, звездочки и другие встроенные теги заметок на странице OneNote, как показано на рисунке ниже.
 
@@ -26,19 +26,19 @@ ms.locfileid: "32555465"
 
 В HTML-коде страницы OneNote тег заметки представлен атрибутом `data-tag`. Пример:
 
-- Снятый флажок задачи: `<p data-tag="to-do">` 
+- Снятый флажок задачи: `<p data-tag="to-do">`
 
-- Установленный флажок задачи: `<p data-tag="to-do:completed">` 
+- Установленный флажок задачи: `<p data-tag="to-do:completed">`
 
-- Звездочка: `<h2 data-tag="important">` 
+- Звездочка: `<h2 data-tag="important">`
 
 Значение `data-tag` состоит из фигуры и (иногда) из состояния (см. все [поддерживаемые значения](#built-in-note-tags-for-onenote)).
 
-| Свойство | Описание |  
-|:------|:------|  
-| shape | Идентификатор тега заметки (пример: `to-do` или `important`). |  
-| status | Состояние тегов заметок с флажками. Это свойство используется только для установки флажков выполненных задач. |  
- 
+| Свойство | Описание |
+|:------|:------|
+| shape | Идентификатор тега заметки (пример: `to-do` или `important`). |
+| status | Состояние тегов заметок с флажками. Это свойство используется только для установки флажков выполненных задач. |
+
 
 <a name="note-tags"></a>
 
@@ -58,20 +58,20 @@ ms.locfileid: "32555465"
 
 Вы можете задать атрибут `data-tag` для указанных ниже элементов.
 
-- p 
+- p
 - ul, ol, li (см. дополнительные сведения о [тегах заметок в списках](#note-tags-on-lists))
-- img 
-- h1–h6 
-- title 
+- img
+- h1–h6
+- title
 
 Список тегов заметок, которые можно использовать в Microsoft Graph, см. в разделе [Встроенные теги заметок](#built-in-note-tags-for-onenote). Добавление и изменение пользовательских тегов с помощью Microsoft Graph не поддерживается.
- 
+
 ### <a name="examples"></a>Примеры
 
 Ниже показан простой список дел, в котором первый элемент завершен.
 
-```html 
-<p data-tag="to-do:completed" data-id="prep">Till garden bed</p> 
+```html
+<p data-tag="to-do:completed" data-id="prep">Till garden bed</p>
 <p data-tag="to-do" data-id="spring">Plant peas and spinach</p>
 <p data-tag="to-do" data-id="summer">Plant tomatoes and peppers</p>
 ```
@@ -95,7 +95,7 @@ Authorization: Bearer {token}
 
 Показанный ниже запрос создает страницу, которая содержит все [встроенные теги заметок](#built-in-note-tags-for-onenote).
 
-```html 
+```html
 POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages
 
 Content-Type: text/html
@@ -162,7 +162,7 @@ Authorization: Bearer {token}
     <p data-tag="important">Next time, <b>don't</b> forget to invite <span style="background-color:yellow">Dan</span>.</p>
   </body>
 </html>
-``` 
+```
 
 Дополнительные сведения о создании страниц см. в статье [Создание страниц в OneNote](onenote-create-page.md). Дополнительные сведения об изменении страниц см. в статье [Обновление страниц в OneNote](onenote-update-page.md).
 
@@ -202,21 +202,21 @@ Authorization: Bearer {token}
 
 #### <a name="input-html"></a>Входной HTML-код
 
-```html 
-<!--To display the same note tag on all list items, define note tags on the ul or ol.--> 
+```html
+<!--To display the same note tag on all list items, define note tags on the ul or ol.-->
 <ul data-tag="project-a" data-id="agenda">
   <li>An item with a Project A note tag</li>
   <li>An item with a Project A note tag</li>
 </ul>
 
-<!--To display unique note tags on list items, don't nest li elements in a ul or ol.--> 
+<!--To display unique note tags on list items, don't nest li elements in a ul or ol.-->
 <li data-tag="idea" data-id="my-idea">An item with an Idea note tag</li>
 <li data-tag="question" data-id="my-question">An item with a Question note tag</li>
 ```
- 
+
 #### <a name="output-html"></a>Выходной HTML-код
 
-```html 
+```html
 <ul>
   <li><span data-tag="project-a">An item with a Project A note tag</span></li>
   <li><span data-tag="project-a">An item with a Project A note tag</span></li>
@@ -234,13 +234,13 @@ Authorization: Bearer {token}
 
 Встроенные теги заметок включаются в выходной HTML, когда вы получаете контент страницы:
 
-`GET ../api/v1.0/pages/{page-id}/content` 
+`GET ../api/v1.0/pages/{page-id}/content`
 
 Атрибут `data-tag` в выходном HTML-коде всегда включает значение фигуры. Он включает состояние, только если он представляет тег заметки с установленным флажком (для выполненного элемента списка). В примерах ниже показан входной HTML-код, используемый для создания некоторых тегов заметок, и возвращаемый выходной HTML-код.
 
 #### <a name="input-html"></a>Входной HTML-код
 
-```html 
+```html
 <h1>Status meeting</h1>
 <p data-tag="important">Next week's meeting has been moved to <b>Wednesday</b>.</p>
 <p data-tag="question">What are the exact dates for the conference?</p>
@@ -254,7 +254,7 @@ Authorization: Bearer {token}
 
 #### <a name="output-html"></a>Выходной HTML-код
 
-```html 
+```html
 <h1 style="...">Status meeting</h1>
 <p data-tag="important">Next week's meeting has been moved to <span style="font-weight:bold">Wednesday</span>.</p>
 <p data-tag="question">What are the exact dates for the conference?</p>
@@ -281,20 +281,47 @@ Authorization: Bearer {token}
 
 ![Все встроенные теги заметок.](images/note-tags-all.png)
 
-Значения, которые можно присвоить атрибуту `data-tag`, показаны в следующей таблице. Пользовательские теги не поддерживаются.
+Значения, которые можно присвоить атрибуту `data-tag`, показаны в следующем списке. Пользовательские теги не поддерживаются.
 
-||Теги||
-|:---|:---|:-----|
-|`shape[:status]` |`to-do`<br/><br/>`to-do:completed`|`important`|
-|`question`|`definition`|`highlight`|
-|`contact`|`address`|`phone-number`|
-|`web-site-to-visit`|`idea`|`password`|
-|`critical`|`project-a`|`project-b`|
-|`remember-for-later`|`movie-to-see`|`book-to-read`|
-|`music-to-listen-to`|`source-for-article`|`remember-for-blog`|
-|`discuss-with-person-a`<br/><br/>`discuss-with-person-a:completed`|`discuss-with-person-b`<br/><br/>`discuss-with-person-b:completed`|`discuss-with-manager`<br/><br/>`discuss-with-manager:completed`|
-|`send-in-email`|`schedule-meeting`<br/><br/>`schedule-meeting:completed`|`call-back`<br/><br/>`call-back:completed`|
-|`to-do-priority-1`<br/><br/>`to-do-priority-1:completed`|`to-do-priority-2`<br/><br/>`to-do-priority-2:completed`|`client-request`<br/><br/>`client-request:completed`|
+- `shape[:status]`
+- `to-do`
+- `to-do:completed`
+- `important`
+- `question`
+- `definition`
+- `highlight`
+- `contact`
+- `address`
+- `phone-number`
+- `web-site-to-visit`
+- `idea`
+- `password`
+- `critical`
+- `project-a`
+- `project-b`
+- `remember-for-later`
+- `movie-to-see`
+- `book-to-read`
+- `music-to-listen-to`
+- `source-for-article`
+- `remember-for-blog`
+- `discuss-with-person-a`
+- `discuss-with-person-a:completed`
+- `discuss-with-person-b`
+- `discuss-with-person-b:completed`
+- `discuss-with-manager`
+- `discuss-with-manager:completed`
+- `send-in-email`
+- `schedule-meeting`
+- `schedule-meeting:completed`
+- `call-back`
+- `call-back:completed`
+- `to-do-priority-1`
+- `to-do-priority-1:completed`
+- `to-do-priority-2`
+- `to-do-priority-2:completed`
+- `client-request`
+- `client-request:completed`
 
 
 <a name="request-response-info"></a>
@@ -303,10 +330,10 @@ Authorization: Bearer {token}
 
 Microsoft Graph возвращает указанные ниже сведения в отклике.
 
-| Данные в отклике | Описание |  
-|------|------|  
-| Код успешного завершения действия | Код состояния HTTP 201 при успешном выполнении запроса POST и код состояния HTTP 204 при успешном выполнении запроса PATCH. |  
-| Ошибки | Дополнительные сведения об ошибках OneNote, которые может возвращать Microsoft Graph, см. в статье [Коды ошибок для API OneNote в Microsoft Graph](onenote-error-codes.md). |  
+| Данные в отклике | Описание |
+|------|------|
+| Код успешного завершения действия | Код состояния HTTP 201 при успешном выполнении запроса POST и код состояния HTTP 204 при успешном выполнении запроса PATCH. |
+| Ошибки | Дополнительные сведения об ошибках OneNote, которые может возвращать Microsoft Graph, см. в статье [Коды ошибок для API OneNote в Microsoft Graph](onenote-error-codes.md). |
 
 
 <a name="permissions"></a>
@@ -319,12 +346,12 @@ Microsoft Graph возвращает указанные ниже сведени�
 
 - Notes.Create
 - Notes.ReadWrite
-- Notes.ReadWrite.All  
+- Notes.ReadWrite.All
 
 #### <a name="permissions-for-patch-pages"></a>Разрешения в случае запросов PATCH для страниц
 
 - Notes.ReadWrite
-- Notes.ReadWrite.All  
+- Notes.ReadWrite.All
 
 Дополнительные сведения об областях разрешений и принципе их работы см. в разделе [Области разрешений OneNote](permissions-reference.md).
 
@@ -338,7 +365,7 @@ Microsoft Graph возвращает указанные ниже сведени�
 - [Интеграция с OneNote](integrate-with-onenote.md)
 - [Блог разработчиков OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [Вопросы разработки OneNote на сайте Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
-- [Репозитории GitHub OneNote](https://go.microsoft.com/fwlink/?LinkID=390178)  
- 
+- [Репозитории GitHub OneNote](https://go.microsoft.com/fwlink/?LinkID=390178)
+
 
 

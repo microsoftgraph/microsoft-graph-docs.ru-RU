@@ -5,16 +5,16 @@ author: arvindmicrosoft
 localization_priority: Priority
 ms.prod: bookings
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: bb1e6137a43b5a0a5ee5ec796bacb1315a395304
-ms.sourcegitcommit: 24092bd1e38e8adfd314dfe8dfea9b24a5c21da6
+ms.openlocfilehash: 3197c2eccc6d4f8db12bfc15e40f3ecd692c95a1
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43581683"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44892143"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Обзор API Microsoft Bookings (предварительная версия)
 
-Microsoft Bookings — это приложения для браузера и мобильных устройств, упрощающие планирование встреч для небольших компаний и их клиентов. Любая организация, предоставляющая услуги по предварительной записи, например крупные компании, автосервисы, парикмахерские и юридические фирмы, может получить выгоду от управления своими заказами, чтобы высвободить время для более важной задачи развития своего бизнеса. Microsoft Bookings доступен корпоративным организациям и предприятиям, имеющим подписку на Office 365 Business Premium.
+Microsoft Bookings — это приложения для браузера и мобильных устройств, упрощающие планирование встреч для небольших компаний и их клиентов. Любые организации, предоставляющие услуги по предварительной записи, например крупные компании, автосервисы, парикмахерские и юридические фирмы, смогут освободить время, отведенное на управление резервированием, и потратить его на более важные задачи для развития бизнеса. Служба Microsoft Bookings доступен корпоративным организациям и предприятиям, имеющим подписку на Microsoft 365 бизнес премиум.
 
 ## <a name="why-integrate-with-microsoft-bookings-using-microsoft-graph"></a>Зачем проводить интеграцию с Microsoft Bookings, используя Microsoft Graph?
 
@@ -42,6 +42,6 @@ Microsoft Bookings — это приложения для браузера и м
 
 Дополнительные сведения:
 
-- [Microsoft Bookings](https://support.office.com/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) и другие [приложения Office 365 бизнес](https://support.office.com/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
+- [Microsoft Bookings](https://support.office.com/article/Publish-your-business-calendar-online-with-Microsoft-Bookings-47403d64-a067-4754-9ae9-00157244c27d) и другие [бизнес-приложения Microsoft 365](https://support.office.com/article/manage-your-business-apps-in-the-business-center-47eca808-cf96-42ba-83e8-55daf18e49dc?ui=en-US&rs=en-US&ad=US).
 - [Использование API Bookings](/graph/api/resources/booking-api-overview?view=graph-rest-beta) в Microsoft Graph.
 

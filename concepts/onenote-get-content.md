@@ -1,19 +1,19 @@
 ---
 title: Получение содержимого и структуры OneNote с помощью Microsoft Graph
-description: " Корпоративная записная книжка в Office 365"
+description: " Корпоративная записная книжка в Microsoft 365"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 57b4531770a78f030d093d4c486760d64d9764ea
-ms.sourcegitcommit: 8a84ee922acd2946a3ffae9f8f7f7b485567bc05
+ms.openlocfilehash: cf6926103ac3fbade3c7857f1e13c01e5bc0c981
+ms.sourcegitcommit: 7153a13f4e95c7d9fed3f2c10a3d075ff87b368d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42618842"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44897465"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Получение содержимого и структуры OneNote с помощью Microsoft Graph
 
-**Область применения:** пользовательские записные книжки в OneDrive и корпоративные записные книжки в Office 365.
+**Область применения:** Пользовательские записные книжки в OneDrive | Корпоративные записные книжки в Microsoft 365.
 
 Чтобы получить содержимое и структуру OneNote, необходимо отправить запрос GET к целевой конечной точке. Пример:
 
@@ -84,9 +84,9 @@ ms.locfileid: "42618842"
 
 Запрос по умолчанию разворачивает родительский раздел и выбирает свойства `id`, `name` и `self` этого раздела.
 
-По умолчанию в ответ на запросы *GET для страниц* возвращаются только первые 20 записей. В ответах на запросы, в которых не указан параметр **top**, возвращается ссылка `@odata.nextLink`, с помощью которой можно получить следующие 20 записей.
+По умолчанию в ответ на запросы *GET для страниц* возвращаются только первые 20 записей. В ответах на запросы, в которых не указан параметр **top** , возвращается ссылка `@odata.nextLink`, с помощью которой можно получить следующие 20 записей.
 
-Для коллекции страниц в разделе используйте параметр **pagelevel**, чтобы возвращать уровень отступа страниц и их порядок в разделе. 
+Для коллекции страниц в разделе используйте параметр **pagelevel** , чтобы возвращать уровень отступа страниц и их порядок в разделе. 
 
 #### <a name="example"></a>Пример
 
@@ -158,11 +158,11 @@ ms.locfileid: "42618842"
 
 `../pages/{page-id}/content[?includeIDs]`
 
-(*Дополнительные сведения о [возвращаемом HTML-контенте](onenote-input-output-html.md)*.) 
+( *Дополнительные сведения о [возвращаемом HTML-контенте](onenote-input-output-html.md)*.) 
 
 <br/>
 
-Указав в строке запроса параметр **includeIDs=true**, можно получить созданные идентификаторы, используемые для [обновления страницы](onenote-update-page.md).
+Указав в строке запроса параметр **includeIDs=true** , можно получить созданные идентификаторы, используемые для [обновления страницы](onenote-update-page.md).
 
 
 
@@ -228,7 +228,7 @@ ms.locfileid: "42618842"
 
 <br/>
 
-Запросы групп разделов могут разворачивать свойства **sections**, **sectionGroups**, **parentNotebook** и **parentSectionGroup**.
+Запросы групп разделов могут разворачивать свойства **sections** , **sectionGroups** , **parentNotebook** и **parentSectionGroup**.
 
 По умолчанию для групп разделов используется порядок сортировки `name asc`.
 
@@ -246,7 +246,7 @@ ms.locfileid: "42618842"
 
 <br/>
 
-Запросы групп разделов могут разворачивать свойства **sections**, **sectionGroups**, **parentNotebook** и **parentSectionGroup**.
+Запросы групп разделов могут разворачивать свойства **sections** , **sectionGroups** , **parentNotebook** и **parentSectionGroup**.
 
 Запрос по умолчанию разворачивает родительскую записную книжку и родительскую группу разделов и выбирает их свойства `id`, `name` и `self`.
 
@@ -339,16 +339,16 @@ URI ресурса файла можно найти в [выходном HTML-к
 
 **Помните:**
 
-- Все запросы GET начинаются с [корневого URL-адреса службы](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url). <br/><br/>**Примеры**: `https://www.onenote.com/api/v1.0/me/notes` и `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`.
+- Все запросы GET начинаются с [корневого URL-адреса службы](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url). <br/><br/>**Примеры** : `https://www.onenote.com/api/v1.0/me/notes` и `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`.
 
-- Пробелы в строке запроса URL следует кодировать как %20.<br/><br/>**Пример**: `filter=title%20eq%20'biology'`.
+- Пробелы в строке запроса URL следует кодировать как %20.<br/><br/>**Пример** : `filter=title%20eq%20'biology'`.
 
-- В случае имен свойств и сравнения строк OData учитывается регистр. Рекомендуем использовать функцию OData **tolower** для сравнения строк.<br/><br/>**Пример**: `filter=tolower(name) eq 'spring'`.
+- В случае имен свойств и сравнения строк OData учитывается регистр. Рекомендуем использовать функцию OData **tolower** для сравнения строк.<br/><br/>**Пример** : `filter=tolower(name) eq 'spring'`.
  
 
 ### <a name="search--filter"></a>search и filter  
 
-Получение всех страниц с термином *recipe*, созданных определенным приложением (`search` доступен только для пользовательских записных книжек).
+Получение всех страниц с термином *recipe* , созданных определенным приложением (`search` доступен только для пользовательских записных книжек).
 
 ```
 [GET] ../pages?search=recipe&filter=createdByAppId eq 'WLID-000000004C12821A'
@@ -543,7 +543,7 @@ URI ресурса файла можно найти в [выходном HTML-к
 [GET] ../pages?skip=50&top=50&select=title,self&orderby=title
 ```
 
-> **Примечание.** Запросы GET для страниц, которые восстанавливают количество записей по умолчанию (то есть в них не указывается выражение **top**), возвращают в ответе ссылку **\@odata.nextLink**, с помощью которой можно получить следующие 20 записей.
+> **Примечание.** Запросы GET для страниц, которые восстанавливают количество записей по умолчанию (то есть в них не указывается выражение **top** ), возвращают в ответе ссылку **\@odata.nextLink** , с помощью которой можно получить следующие 20 записей.
  
 
 <a name="supported-odata-query-string-options"></a>
@@ -557,8 +557,8 @@ URI ресурса файла можно найти в [выходном HTML-к
 | Параметр запроса | Пример и описание |  
 |------|------|  
 | count | <p>`count=true`</p><p>Количество объектов в коллекции. Значение возвращается в свойстве **\@odata.count** ответа.</p> |  
-| expand | <p>`expand=sections,sectionGroups`</p><p>Свойства навигации, которые следует вернуть в тексте ответа. Для выражений **expand** поддерживаются следующие свойства:<br /> страницы: **parentNotebook**, **parentSection**;<br /> разделы: **parentNotebook**, **parentSectionGroup**;<br /> группы разделов: **sections**, **sectionGroups**, **parentNotebook**, **parentSectionGroup**;<br /> записные книжки: **sections**, **sectionGroups**.</p><p>По умолчанию запросы GET для страниц разворачивают **parentSection** и выделяют свойства раздела **id**, **name** и **self**. По умолчанию запросы GET для разделов и групп разделов разворачивают как **parentNotebook**, так и **parentSectionGroup**, а также выделяют родительские свойства **id**, **name** и **self**.</p><p>Может использоваться для одного объекта или коллекции.<br />Свойства следует разделять запятыми.<br />В именах свойств учитывается регистр.</p> |   
-| filter | <p>`filter=isDefault eq true`</p><p>Логическое выражение, указывающее, следует ли включать запись в набор результатов. Поддерживаются следующие функции и операторы OData:<br /> — операторы сравнения: **eq**, **ne**, **gt**, **ge**, **lt**, **le**;<br /> — логические операторы: **and**, **or**, **not**;<br /> — строковые функции: **contains**, **endswith**, **startswith**, **length**, **indexof**, **substring**, **tolower**, **toupper**, **trim**, **concat**.</p><p>В случае имен [свойств](#onenote-entity-properties) и сравнения строк OData учитывается регистр. Рекомендуем использовать функцию OData **tolower** для сравнения строк.<br /><br />**Пример**: `filter=tolower(name) eq 'spring'`.</p> |  
+| expand | <p>`expand=sections,sectionGroups`</p><p>Свойства навигации, которые следует вернуть в тексте ответа. Для выражений **expand** поддерживаются следующие свойства:<br /> страницы: **parentNotebook** , **parentSection** ;<br /> разделы: **parentNotebook** , **parentSectionGroup** ;<br /> группы разделов: **sections** , **sectionGroups** , **parentNotebook** , **parentSectionGroup** ;<br /> записные книжки: **sections** , **sectionGroups**.</p><p>По умолчанию запросы GET для страниц разворачивают **parentSection** и выделяют свойства раздела **id** , **name** и **self**. По умолчанию запросы GET для разделов и групп разделов разворачивают как **parentNotebook** , так и **parentSectionGroup** , а также выделяют родительские свойства **id** , **name** и **self**.</p><p>Может использоваться для одного объекта или коллекции.<br />Свойства следует разделять запятыми.<br />В именах свойств учитывается регистр.</p> |   
+| filter | <p>`filter=isDefault eq true`</p><p>Логическое выражение, указывающее, следует ли включать запись в набор результатов. Поддерживаются следующие функции и операторы OData:<br /> — операторы сравнения: **eq** , **ne** , **gt** , **ge** , **lt** , **le** ;<br /> — логические операторы: **and** , **or** , **not** ;<br /> — строковые функции: **contains** , **endswith** , **startswith** , **length** , **indexof** , **substring** , **tolower** , **toupper** , **trim** , **concat**.</p><p>В случае имен [свойств](#onenote-entity-properties) и сравнения строк OData учитывается регистр. Рекомендуем использовать функцию OData **tolower** для сравнения строк.<br /><br />**Пример** : `filter=tolower(name) eq 'spring'`.</p> |  
 | orderby | <p>`orderby=title,createdTime desc`</p><p>
             [Свойства](#onenote-entity-properties) для сортировки с необязательным порядком сортировки **asc** (по умолчанию) или **desc**. Вы можете сортировать по любому свойству сущности в запрошенной коллекции.</p><p>По умолчанию для записных книжек, разделов и групп разделов используется порядок сортировки `name asc`, а для страниц — `lastModifiedTime desc` (сначала отображается последняя измененная страница).</p><p>Разделяйте свойства запятыми и указывайте их в порядке применения. В именах свойств учитывается регистр.</p> |  
 | search | <p>`search=cell div`</p><p>Доступен только для пользовательских записных книжек.</p><p>Термин или фраза, которую нужно найти в заголовке и тексте страницы, замещающем тексте изображений и распознанном тексте. По умолчанию поисковые запросы возвращают результаты, отсортированные по релевантности.</p><p>OneNote использует полнотекстовый поиск Bing для поддержки поиска фраз, выделения корней, игнорирования орфографических ошибок, релевантности и ранжирования, разбиения слов, разных языков и других функций полнотекстового поиска. В строках search учитывается регистр.</p><p>Применяется только к страницам записных книжек, принадлежащих пользователю. Индексированное содержимое является личным и доступно только владельцу. Страницы, защищенные паролем, не индексируются. Применяется только к конечной точке `pages`.</p> |  
@@ -620,7 +620,7 @@ not | `not contains(tolower(title),'school')` |
 
 ## <a name="onenote-entity-properties"></a>Свойства объектов OneNote
 
-Выражения запроса **filter**, **select**, **expand** и **orderby** могут включать свойства объектов OneNote. 
+Выражения запроса **filter** , **select** , **expand** и **orderby** могут включать свойства объектов OneNote. 
 
 #### <a name="example"></a>Пример
 
@@ -639,10 +639,10 @@ not | `not contains(tolower(title),'school')` |
 
 Параметр строки запроса **expand** можно использовать со следующими свойствами навигации:
 
-- страницы: **parentNotebook**, **parentSection**;
-- разделы: **parentNotebook**, **parentSectionGroup**;
-- группы разделов: **sections**, **sectionGroups**, **parentNotebook**, **parentSectionGroup**;
-- записные книжки: **sections**, **sectionGroups**.
+- страницы: **parentNotebook** , **parentSection** ;
+- разделы: **parentNotebook** , **parentSectionGroup** ;
+- группы разделов: **sections** , **sectionGroups** , **parentNotebook** , **parentSectionGroup** ;
+- записные книжки: **sections** , **sectionGroups**.
 
 
 <a name="request-response-info"></a>
