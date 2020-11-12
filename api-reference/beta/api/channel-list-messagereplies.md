@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ae9f74c7385fc04efe418f7fd10b80385e093e4a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: f9dbee6a85b6f0b569f14c8970b9f42a8760e59b
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959199"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000527"
 ---
 # <a name="list-channel-message-replies"></a>Список ответов на сообщения канала
 
@@ -21,6 +21,8 @@ ms.locfileid: "48959199"
 Перечисление всех ответов на [сообщение](../resources/chatmessage.md) в [канале](../resources/channel.md) команды.
 
 Этот метод перечисляет только ответы на заданное сообщение, если таковые имеются. Чтобы получить само сообщение, просто вызовите [сообщение Get Channel](channel-get-message.md).
+
+> **Примечание** : Этот API поддерживает подписку на изменения (создание, обновление и удаление) с помощью [уведомлений об изменениях](../resources/webhooks.md). Это позволяет звонящим подписываться и получать изменения в режиме реального времени. Дополнительные сведения см. в статье [Получение уведомлений для сообщений](/graph/teams-changenotifications-chatmessage).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
@@ -56,8 +58,10 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [chatmessage](../resources/chatmessage.md) в тексте отклика.
+
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
 В этом примере указанное сообщение имеет два ответа. Каждый ответ содержит один или несколько объектов [чатмессажементион](../resources/chatmessagemention.md) .
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -87,7 +91,7 @@ GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -230,5 +234,4 @@ Content-type: application/json
   ]
 }
 -->
-
 

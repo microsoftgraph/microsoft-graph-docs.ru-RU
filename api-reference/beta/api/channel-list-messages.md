@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a06175070d98c00216df977b3e7742a2c374928f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 94cc4967d12f9ea2ae6190d4d1691d40283c43df
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959186"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000520"
 ---
 # <a name="list-channel-messages"></a>Перечисление сообщений в каналах
 
@@ -21,6 +21,8 @@ ms.locfileid: "48959186"
 Получение списка [сообщений](../resources/chatmessage.md) (без ответов) в [канале](../resources/channel.md) [команды](../resources/team.md). 
 
 Чтобы получить ответы на сообщение, вызовите API [перечисления ответов на сообщение](channel-list-messagereplies.md) или [получения ответа на сообщение](channel-get-messagereply.md). 
+
+> **Примечание**. Этот API поддерживает подписку на изменения (создание, обновление и удаление) с использованием [уведомлений об изменениях](../resources/webhooks.md). Это позволяет вызывающим подписаться на изменения и получать их в режиме реального времени. Дополнительные сведения см. в разделе [Получение уведомлений о сообщениях](/graph/teams-changenotifications-chatmessage).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -66,7 +68,7 @@ GET /teams/{id}/channels/{id}/messages
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -97,7 +99,7 @@ GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -260,6 +262,7 @@ Content-type: application/json
 }
 ```
 
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -273,5 +276,4 @@ Content-type: application/json
   ]
 }
 -->
-
 

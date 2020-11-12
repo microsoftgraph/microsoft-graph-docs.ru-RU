@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 255c1a421685d72aab1af8561d024d0c914e7236
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 03bf5aeb24aab47b51bd0a5f468df29044347f63
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48958303"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000513"
 ---
 # <a name="list-chat-messages"></a>Список сообщений чата
 
@@ -18,7 +18,9 @@ ms.locfileid: "48958303"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [сообщений](../resources/chatmessage.md) в [чате](../resources/chat.md). 
+Получение списка [сообщений](../resources/chatmessage.md) в [чате](../resources/chat.md).
+
+> **Примечание**. Этот API поддерживает подписку на изменения (создание, обновление и удаление) с использованием [уведомлений об изменениях](../resources/webhooks.md). Это позволяет вызывающим подписаться на изменения и получать их в режиме реального времени. Дополнительные сведения см. в разделе [Получение уведомлений о сообщениях](/graph/teams-changenotifications-chatmessage).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -62,7 +64,7 @@ GET /chats/{id}/messages
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -92,7 +94,7 @@ GET https://graph.microsoft.com/beta/chats/{id}/messages
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -284,5 +286,4 @@ Content-length: 201
   ]
 }
 -->
-
 
