@@ -5,12 +5,12 @@ localization_priority: Normal
 author: davidmu1
 doc_type: apiPageType
 ms.prod: ''
-ms.openlocfilehash: 30b2ce66a366abfb0471baf40915000edf55dad9
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 43ae2e82c1a9a0af7660151af1bf07062bbef2ec
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972033"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000688"
 ---
 # <a name="create-subscription"></a>Создание подписки
 
@@ -154,7 +154,7 @@ Content-type: application/json
 | Тип ресурса | Примеры |
 |:------ |:----- |
 |[Записи звонков](../resources/callrecords-callrecord.md)|`communications/callRecords`|
-|[Сообщение чата](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/allMessages`, `teams/{id}/channels/{id}/messages`, `teams/allMessages` |
+|[Сообщение чата](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
 |[Контакты](../resources/contact.md)|`me/contacts`|
 |[Беседы](../resources/conversation.md)|`groups('{id}')/conversations`|
 |[Диски](../resources/driveitem.md)|`me/drive/root`|
@@ -171,7 +171,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Отклик
 
-Ниже приводится пример отклика. 
+Ниже показан пример отклика. 
 
 >**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {

@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: f1af347d0c043ec2b0ca2da05ba44331aab925d2
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: bfaee36a21ee1f44781ea8ae7fed84b205ac90b4
+ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193472"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49000650"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -18,9 +18,9 @@ ms.locfileid: "48193472"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
 Представляет отдельное сообщение чата в [канале](channel.md) или [чате](chat.md). Сообщение может быть корневым или частью беседы, определяемой свойством **replyToId** в сообщении.
 
+> **Note** : этот ресурс поддерживает подписку на изменения (создание, обновление и удаление) с помощью [уведомлений об изменениях](../resources/webhooks.md). Это позволяет звонящим подписываться и получать изменения в режиме реального времени. Дополнительные сведения см. в статье [Получение уведомлений для сообщений](/graph/teams-changenotifications-chatMessage).
 
 ## <a name="methods"></a>Методы
 
@@ -48,6 +48,7 @@ ms.locfileid: "48193472"
 |[Перечисление всех размещенных контента](../api/chatmessage-list-chatmessagehostedcontents.md) | Коллекция [чатмессажехостедконтент](../resources/chatmessagehostedcontent.md)| Получение всего размещенного содержимого в сообщении чата.|
 |[Получение размещенного контента](../api/chatmessagehostedcontent-get.md) | [чатмессажехостедконтент](../resources/chatmessagehostedcontent.md) | Получение размещенного контента из сообщения чата.|
 
+
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип |Описание|
@@ -56,7 +57,7 @@ ms.locfileid: "48193472"
 |replyToId| string | Только для чтения. Идентификатор родительского сообщения чата или сообщения корневого сеанса беседы в цепочке. (Это относится только к сообщениям разговора в каналах, а не к разговорам.) |
 |from|[identitySet](identityset.md)| Только для чтения. Сведения об отправителе сообщения чата.|
 |etag| string | Только для чтения. Номер версии сообщения чата. |
-|messageType|string|Тип сообщения чата. Возможные значения: `message` .|
+|messageType|строка|Тип сообщения чата. Возможные значения: `message` .|
 |createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания сообщения чата.|
 |lastModifiedDateTime|dateTimeOffset|Только для чтения. Временная метка при создании или изменении сообщения чата (Начальная настройка), включая добавление или удаление реакции. |
 |ластедитеддатетиме|dateTimeOffset|Только для чтения. Временная метка при внесении изменений в сообщение чата. Запускает в пользовательском интерфейсе Teams флаг "отредактирован". Если не выполняется никаких изменений, значение — `null` .|
@@ -66,7 +67,7 @@ ms.locfileid: "48193472"
 |summary|string| Сводный текст сообщения чата, которое можно использовать для push-уведомлений и сводных представлений, а также для обратного просмотра. Применяется только к сообщениям разговора по каналу, а не к сообщениям в чате. |
 |attachments|Коллекция [chatMessageAttachment](chatmessageattachment.md) |Вложенные файлы. В настоящее время вложения доступны только для чтения. Отправка вложений не поддерживается. |
 |mentions|Коллекция [chatMessageMention](chatmessagemention.md)| Список сущностей, упоминаемых в сообщении чата. В настоящее время поддерживаются значения user, bot, team и channel.|
-|importance|string | Важность сообщения чата. Допустимые значения: `normal`, `high`, `urgent`.|
+|importance|строка | Важность сообщения чата. Допустимые значения: `normal`, `high`, `urgent`.|
 |reactions| Коллекция [chatMessageReaction](./chatmessagereaction.md) | Реакции на это сообщение чата (например, например).|
 |языковые стандарты|string|Язык сообщения чата, заданное клиентом.|
 | полицивиолатион | [чатмессажеполицивиолатион](../resources/chatmessagepolicyviolation.md) |Определяет свойства нарушения политики, заданные с помощью приложения предотвращения потери данных (DLP).|
@@ -126,4 +127,3 @@ ms.locfileid: "48193472"
   "suppressions": []
 }
 -->
-
