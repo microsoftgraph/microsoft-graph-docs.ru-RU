@@ -456,7 +456,7 @@ items:
                 href: api/user-upgrade-teamsappinstallation.md
               - name: Удаление приложения
                 href: api/user-delete-teamsappinstallation.md
-          - name: Задачи To-Do
+          - name: Задачи из списка дел
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -480,7 +480,7 @@ items:
         items:
           - name: Обзор
             href: resources/groups-overview.md
-          - name: Group
+          - name: Группа
             href: resources/group.md
             items:
               - name: Список групп
@@ -763,7 +763,7 @@ items:
                     href: api/application-addkey.md
                   - name: Удаление ключа
                     href: api/application-removekey.md
-              - name: Расширения
+              - name: Extensions
                 items:
                   - name: Список расширений
                     href: api/application-list-extensionproperty.md
@@ -786,7 +786,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -795,7 +795,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -859,7 +859,7 @@ items:
                     href: api/publishedresource-post-agentgroups.md
                   - name: Удалить из группы агентов
                     href: api/publishedresource-delete-agentgroups.md
-              - name: Connector
+              - name: Соединитель
                 href: resources/connector.md
                 items:
                   - name: Список
@@ -977,7 +977,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: Список
+                      - name: List
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -986,7 +986,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: Список
+                      - name: List
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -995,7 +995,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -1004,7 +1004,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Список
+                      - name: List
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1385,11 +1385,11 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Получение
                     href: api/callrecords-callrecord-get.md
-              - name: Сеанс
+              - name: Session
                 items:
-                  - name: Сеанс
+                  - name: Session
                     href: resources/callrecords-session.md
-                  - name: Список
+                  - name: List
                     href: api/callrecords-session-list.md
               - name: Звонки PSTN
                 items:
@@ -8898,7 +8898,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
                       - name: Обновление
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
-                      - name: Список
+                      - name: List
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
                       - name: Удалить
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
@@ -9384,7 +9384,7 @@ items:
             items:
               - name: Получение ошибок синхронизации
                 href: api/educationsynchronizationerrors-get.md
-      - name: Расширения
+      - name: Extensions
         items:
           - name: Открытые расширения
             href: resources/opentypeextension.md
@@ -10138,7 +10138,7 @@ items:
                     href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
                   - name: Удалить
                     href: api/certificatebasedauthconfiguration-delete.md
-              - name: Условный доступ
+              - name: условный доступ;
                 items:
                   - name: Политики
                     items:
@@ -10522,6 +10522,62 @@ items:
           - name: Управление
             items:
               - name: Проверки доступа
+                href: resources/accessreviewsv2-root.md
+                items:
+                  - name: Определение расписания проверки доступа
+                    href: resources/accessreviewscheduledefinition.md
+                    items:
+                      - name: Список
+                        href: api/accessreviewscheduledefinition-list.md
+                      - name: Получение
+                        href: api/accessreviewscheduledefinition-get.md
+                      - name: Создание
+                        href: api/accessreviewscheduledefinition-create.md
+                      - name: Удалить
+                        href: api/accessreviewscheduledefinition-delete.md
+                      - name: Обновление
+                        href: api/accessreviewscheduledefinition-update.md
+                  - name: Доступ к параметрам расписания проверки
+                    href: resources/accessreviewschedulesettings.md
+                  - name: Действие по применению проверки доступа
+                    href: resources/accessreviewapplyaction.md
+                  - name: Область проверки доступа
+                    href: resources/accessreviewscope.md
+                  - name: Область проверяющего для проверки доступа
+                    href: resources/accessreviewreviewerscope.md
+                  - name: Экземпляр проверки доступа
+                    href: resources/accessreviewinstance.md
+                    items:
+                      - name: Список
+                        href: api/accessreviewinstance-list.md
+                      - name: Получение
+                        href: api/accessreviewinstance-get.md
+                      - name: Список ожидающих утверждения
+                        href: api/accessreviewinstance-pendingaccessreviewinstances.md
+                      - name: Отправить напоминание
+                        href: api/accessreviewinstance-sendreminder.md
+                      - name: Остановить
+                        href: api/accessreviewinstance-stop.md
+                      - name: Принятие рекомендаций
+                        href: api/accessreviewinstance-acceptrecommendations.md
+                      - name: Применение решений
+                        href: api/accessreviewinstance-applydecisions.md
+                  - name: Элемент принятия решения для проверки доступа к экземпляру
+                    href: resources/accessreviewinstancedecisionitem.md
+                    items:
+                      - name: List
+                        href: api/accessreviewinstancedecisionitem-list.md
+                      - name: Список ожидающих утверждения
+                        href: api/accessreviewinstancedecisionitem-listpendingapproval.md
+                      - name: Update
+                        href: api/accessreviewinstancedecisionitem-update.md
+                  - name: Целевой элемент принятия решения для экземпляра проверки доступа
+                    href: resources/accessreviewinstancedecisionitemtarget.md
+                  - name: Целевая пользовательская проверка доступа к экземпляру решения
+                    href: resources/accessreviewinstancedecisionitemusertarget.md
+                  - name: Целевой объект участника "Проверка доступа к экземпляру"
+                    href: resources/accessreviewinstancedecisionitemserviceprincipaltarget.md
+              - name: Проверки доступа
                 href: resources/accessreviews-root.md
                 items:
                   - name: Проверка доступа
@@ -10604,7 +10660,7 @@ items:
                   - name: Назначение пакетов Access
                     href: resources/accesspackageassignment.md
                     items:
-                      - name: Список
+                      - name: List
                         href: api/accesspackageassignment-list.md
                   - name: Политика назначения пакетов Access
                     href: resources/accesspackageassignmentpolicy.md
@@ -10698,9 +10754,9 @@ items:
                         href: api/entitlementmanagementsettings-get.md
                       - name: Обновление
                         href: api/entitlementmanagementsettings-update.md
-              - name: Управление привилегированными пользователями
+              - name: Служба Privileged Identity Management
                 items:
-                  - name: Управление привилегированными пользователями
+                  - name: Служба Privileged Identity Management
                     href: resources/privilegedidentitymanagement-root.md
                   - name: Azure AD
                     items:
@@ -11454,9 +11510,9 @@ items:
           - name: Аналитика (предварительная версия)
             href: resources/useranalytics.md
             items:
-              - name: Параметры
+              - name: Settings
                 items:
-                  - name: Параметры
+                  - name: Settings
                     href: resources/settings.md
                   - name: Получение параметров
                     href: api/useranalytics-get-settings.md
@@ -11592,7 +11648,7 @@ items:
                   - name: Подробная сводка по проверяющей стороне
                     href: resources/relyingpartydetailedsummary.md
                     items:
-                      - name: Список
+                      - name: List
                         href: api/relyingpartydetailedsummary-list.md
               - name: Вход в приложение
                 items:
@@ -12086,7 +12142,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Обновление
                     href: api/termstore-store-update.md
-              - name: Group
+              - name: Группа
                 href: resources/termstore-group.md
                 items:
                   - name: Создание
@@ -12100,7 +12156,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: Список
+                  - name: List
                     href: api/termstore-group-list-sets.md
                   - name: Список дочерних элементов
                     href: api/termstore-term-list-children.md
@@ -12137,7 +12193,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -12534,7 +12590,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Получение
                     href: api/offershiftrequest-get.md
-                  - name: Список
+                  - name: List
                     href: api/offershiftrequest-list.md
                   - name: '"Утвердить"'
                     href: api/offershiftrequest-approve.md
