@@ -5,12 +5,12 @@ localization_priority: Priority
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 53a9e57107449dceaffe49c46632f73aa4c0464f
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 08d91de0d3e6440c4aa91038e1622805b338ed07
+ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581948"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030230"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -92,6 +92,7 @@ ms.locfileid: "48581948"
 | publisherDomain | String | Проверенный домен издателя для приложения. Только для чтения.|
 | requiredResourceAccess |Коллекция [requiredResourceAccess](requiredresourceaccess.md)| Указывает ресурсы, к которым приложению необходимо получить доступ. В этом свойстве также указывается набор областей разрешений OAuth и ролей приложения, необходимых для каждого из этих ресурсов. Эта настройка доступа к необходимым ресурсам определяет порядок предоставления согласия. Значение null не допускается.|
 | signInAudience | String | Указывает, учетные записи Майкрософт, которые поддерживаются для текущего приложения. Поддерживаемые значения:<ul><li>`AzureADMyOrg` — пользователи с рабочей или учебной учетной записью Майкрософт в клиенте Azure AD моей организации (один клиент).</li><li>`AzureADMultipleOrgs` — пользователи с рабочей или учебной учетной записью Майкрософт в клиенте Azure AD любой организации (несколько клиентов).</li><li>`AzureADandPersonalMicrosoftAccount` — пользователи с личной учетной записью Майкрософт, рабочей или учебной учетной записью в клиенте Azure AD любой организации.</li><li>`PersonalMicrosoftAccount` — пользователи только с личной учетной записью Майкрософт.</li></ul> |
+| spa                     | [spaApplication](../resources/spaapplication.md)                            | Указывает параметры для одностраничного приложения, в том числе URL-адреса выхода и URI перенаправления для кодов авторизации и маркеров доступа. |
 | tags |Коллекция String| Настраиваемые строки, которые можно использовать для классификации и определения приложения. Значение null не допускается.|
 | tokenEncryptionKeyId |String|Задает значение открытого ключа keyId из коллекции keyCredentials. При настройке Azure AD шифрует все созданные маркеры с помощью ключа, на который указывает это свойство. Код приложения, получающий зашифрованный маркер, должен использовать соответствующий закрытый ключ для расшифровки маркера, прежде чем его можно будет применить для пользователя, выполнившего вход.|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Указывает проверенного издателя приложения.|

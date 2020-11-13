@@ -3,14 +3,14 @@ title: Работа с ресурсами Azure Active Directory в Microsoft Gr
 description: Microsoft Graph для Azure Active Directory (Azure AD) предоставляет REST API для управления организацией, ресурсами и активами.
 localization_priority: Priority
 doc_type: conceptualPageType
-ms.prod: ''
+ms.prod: microsoft-identity-platform
 author: dkershaw10
-ms.openlocfilehash: bc3a61a60b49a0818a39b6d357582636e2a07fd4
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 8e6f9af9ba00e4cccea94e04fff0aed866ea7d2e
+ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400780"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030228"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Работа с ресурсами Azure Active Directory в Microsoft Graph
 
@@ -58,11 +58,12 @@ Microsoft Graph предоставляет доступ к ресурсам [Azu
 | **Управление клиентами** | | |
 | Получайте информацию об организации, например адрес, контакты для уведомлений и связи по техническим вопросам, планы обслуживания, на которые она подписана, и связанные с ней домены. | [organization](../resources/organization.md) | Недоступно |
 | Получайте информацию о службах, на которые подписана компания. | [subscribedSku](../resources/subscribedsku.md) | Недоступно |
-| Приглашайте внешних пользователей в организацию. | [invitation](../resources/invitation.md) | [Что такое служба совместной работы Azure AD B2B?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
-| **Проверки доступа** | | |
-| Проверка правильности участия в группах и прав доступа к приложению с помощью проверок доступа | [API проверки доступа](../resources/accessreviews-root.md) |[Проверки доступа Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
+| Приглашайте внешних пользователей в организацию. | [invitation](../resources/invitation.md) | [Что такое служба совместной работы Azure AD B2B?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
+| Управляйте фирменной символикой для интерфейса входа организации. | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [Добавление фирменной символики на страницу входа в Azure Active Directory вашей организации](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)|
 
-## <a name="whats-new"></a>Что нового
+| **Проверки доступа** | | | | Проверка правильности участия в группах и прав доступа к приложению с помощью проверок доступа | [API проверок доступа](../resources/accessreviews-root.md) |[Проверки доступа Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
+
+## <a name="whats-new"></a>Новые возможности
 Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
 
 ## <a name="next-steps"></a>Дальнейшие действия

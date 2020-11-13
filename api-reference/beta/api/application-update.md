@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5a179d54d549592ce296f69e868f6e14d816627e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6d35c8db63291c92d1ba309897e8e52eadc0ecbf
+ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961843"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030118"
 ---
 # <a name="update-application"></a>Обновление приложения
 
@@ -67,6 +67,7 @@ PATCH /applications/{id}
 | tags                    | Коллекция String                                                           | Настраиваемые строки, которые можно использовать для классификации и определения приложения. Значение null не допускается.                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | tokenEncryptionKeyId    | String                                                                      | Задает значение открытого ключа keyId из коллекции keyCredentials. При настройке Azure AD шифрует все созданные маркеры с помощью ключа, на который указывает это свойство. Код приложения, получающий зашифрованный маркер, должен использовать соответствующий закрытый ключ для расшифровки маркера, прежде чем его можно будет применить для пользователя, выполнившего вход.                                                                                                                                                                                                                               |
 | web                     | [webApplication](../resources/webapplication.md)                            | Указывает параметры для веб-приложения.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| защищен                     | [спааппликатион](../resources/spaapplication.md)                            | Задает параметры одностраничного приложения, в том числе URL-адреса выхода и URI перенаправления для кодов авторизации и маркеров доступа. |
 
 ## <a name="response"></a>Отклик
 

@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 3bcdc22bb84d669836a8fcafb7353fbf23a7dad7
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: 56cd4925f7678e22b94eb97d4420b4a18c682ef7
+ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932481"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030244"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -279,7 +279,7 @@ aadUserConversationMember, appCatalogs, changeTrackedEntity, channel, chatMessag
 | ---------- | ----------- | -------------- |
 | пара "приложение + клиент" | S: 3500, M: 5000, L: 8000 за 10 секунд | 3000 за 2 минуты 30 секунд |
 | приложение | 150 000 за 20 секунд  | 70 000 за 5 минут |
-| клиент | Неприменимо | 9000 за 5 минут |
+| клиент | Неприменимо | 18 000 за 5 минут |
 
 > **Примечание**. Ограничение пары "приложение + клиент" зависит от количества пользователей в клиенте, в котором выполняются запросы. Размеры клиента определяются следующим образом: S — менее 50 пользователей, M — от 50 до 500 пользователей и L — более 500 пользователей.
 
