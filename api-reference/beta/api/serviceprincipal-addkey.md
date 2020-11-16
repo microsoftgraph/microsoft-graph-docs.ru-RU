@@ -5,12 +5,12 @@ localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f532b317572ead85364b18aa37907b7279cf485f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d6e83d28e09a5505d02d9e80d409e0853d6b4c41
+ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48044727"
+ms.lasthandoff: 11/16/2020
+ms.locfileid: "49081861"
 ---
 # <a name="serviceprincipal-addkey"></a>servicePrincipal: Аддкэй
 
@@ -43,7 +43,7 @@ ms.locfileid: "48044727"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /serviceprincipals/{id}/addKey
+POST /servicePrincipals/{id}/addKey
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -59,7 +59,7 @@ POST /serviceprincipals/{id}/addKey
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| keyCredential | [keyCredential](../resources/keycredential.md) | Новые учетные данные ключа servicePrincipal для добавления. Для этого использования требуются свойства __Type__, __Usage__ и __Key__ . Поддерживаются следующие типы ключей:<br><ul><li>`AsymmetricX509Cert`: Использование должно быть `Verify` .</li><li>`X509CertAndPassword`: Использование должно быть `Sign`</li></ul>|
+| keyCredential | [keyCredential](../resources/keycredential.md) | Новые учетные данные ключа servicePrincipal для добавления. Для этого использования требуются свойства __Type__ , __Usage__ и __Key__ . Поддерживаются следующие типы ключей:<br><ul><li>`AsymmetricX509Cert`: Использование должно быть `Verify` .</li><li>`X509CertAndPassword`: Использование должно быть `Sign`</li></ul>|
 | passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Необходимо задать только __секреттекст__ , который должен содержать пароль для ключа. Это свойство является обязательным только для ключей типа `X509CertAndPassword` . Задайте для него значение `null` другой.|
 | совмещен | Строка | Самозаверяющий маркер JWT, используемый в качестве подтверждения наличия существующих ключей. Этот маркер JWT должен быть подписан с помощью закрытого ключа одного из существующих действительных сертификатов servicePrincipal. Маркер должен содержать следующие утверждения:<ul><li>`aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.</li><li>`iss` -Issuer должен быть __идентификатором__  servicePrincipal, осуществляющим вызов.</li><li>`nbf` — вовремя.</li><li>`exp` — сроком действия должно быть значение "nbf" + 10 минут.</li></ul><br>Ниже приведен [Пример](/graph/application-rollkey-prooftoken) кода, который можно использовать для создания этого маркера для проверки подлинности.|
 
@@ -83,7 +83,7 @@ POST /serviceprincipals/{id}/addKey
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/serviceprincipals/{id}/addKey
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/addKey
 Content-type: application/json
 
 {
@@ -105,7 +105,7 @@ Content-type: application/json
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -134,7 +134,7 @@ Content-Type: application/json
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/serviceprincipals/{id}/addKey
+POST https://graph.microsoft.com/beta/servicePrincipals/{id}/addKey
 Content-type: application/json
 
 {

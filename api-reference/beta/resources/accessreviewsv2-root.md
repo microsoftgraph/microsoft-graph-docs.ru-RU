@@ -1,27 +1,27 @@
 ---
-title: Обзоры Azure AD Access — бета-версия обновления
+title: Обзоры Azure AD Access — членство в группах
 description: Вы можете использовать обзоры Azure AD, чтобы настроить однократные или повторяющиеся проверки доступа для подтверждения прав доступа пользователя. Эта документация служит второй версией API.
 localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 44bdd534aeb36ad85133fe1ab26006150328e926
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 18a2969502be68b1ea63d208e5d8fb2f225047f3
+ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001039"
+ms.lasthandoff: 11/16/2020
+ms.locfileid: "49082218"
 ---
-# <a name="azure-ad-access-reviews"></a>Проверки доступа Azure AD
+# <a name="azure-ad-access-reviews-group-memberships"></a>Обзоры Access Azure AD (участие в группах)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->В этой документации представлена последняя поддерживаемая версия API просмотров Access для рецензирования в группах Microsoft 365. Обзоры других ресурсов можно найти в статьях [API для рецензирования Access](accessreviews-root.md).
+>Эта документация относится к экспертным проверкам групп Microsoft 365. Для проверки доступа ко всем другим типам ресурсов, ознакомьтесь со статьями [Рецензирование Access (все ресурсы)](accessreviews-root.md).
 >
->В настоящее время API Microsoft Graph поддерживает только обзоры доступа к группам.
+>В настоящее время этот API поддерживает только обзоры доступа к группам.
 
 Вы можете использовать [обзоры Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) , чтобы настроить однократные или повторяющиеся проверки доступа для подтверждения прав доступа пользователя.
 
@@ -38,7 +38,7 @@ ms.locfileid: "49001039"
 Обратите внимание, что функция рецензирования доступа, включая API, включена в Azure AD Premium P2.  Клиент, на котором создается проверка доступа, должен иметь допустимую приобретенную или пробную подписку на Azure AD Premium P2 или EMS.
 
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 
 В следующей таблице перечислены методы, которые можно использовать для взаимодействия с ресурсами, связанными с проверкой доступа.
 
@@ -50,7 +50,7 @@ ms.locfileid: "49001039"
 |[Удаление Акцессревиевсчедуледефинитион](../api/accessreviewscheduledefinition-delete.md) | Нет. | Удаление объекта `accessReviewScheduleDefinition` с указанным идентификатором. |
 |[Обновление Акцессревиевсчедуледефинитион](../api/accessreviewscheduledefinition-update.md) | Нет. | Обновление свойств объекта `accessReviewScheduleDefinition` с указанным идентификатором. |
 |[Список Акцессревиевинстанце](../api/accessreviewinstance-list.md) | Коллекция [акцессревиевинстанце](accessreviewinstance.md) | Перечисляет все `accessReviewInstance` для определенных `accessReviewScheduleDefinition` . Не включает связанные `accessReviewInstanceDecisionItem` с s элементы s в вхождения. |
-|[Получение Акцессревиевинстанце](../api/accessreviewinstance-get.md) | [акцессревиевинстанце](accessreviewinstance.md) | Возвращает значение `accessReviewInstance` `accessReviewScheduleDefinition` . Не включает связанные `accessReviewInstanceDecisionItem` элементы s в объект. |
+|[Получение Акцессревиевинстанце](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Возвращает значение `accessReviewInstance` `accessReviewScheduleDefinition` . Не включает связанные `accessReviewInstanceDecisionItem` элементы s в объект. |
 |[Список ожидающих утверждения Акцессревиевинстанцес](../api/accessreviewinstance-pendingaccessreviewinstances.md) | Коллекция [акцессревиевинстанце](accessreviewinstance.md) . | Получение всех `accessReviewInstance` пользователей, назначенных вызывающему пользователю. |
 |[Отправка напоминания о Акцессревиевинстанце](../api/accessreviewinstance-sendreminder.md) | Нет. | Отправка напоминания рецензентам `accessReviewInstance` . |
 |[Остановить Акцессревиевинстанце](../api/accessreviewinstance-stop.md) | Нет. | Вручную остановить `accessReviewInstance` . |

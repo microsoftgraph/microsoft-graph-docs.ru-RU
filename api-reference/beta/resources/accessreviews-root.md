@@ -1,25 +1,25 @@
 ---
-title: Обзор Azure AD Access — устаревшие версии
+title: Обзоры Access Azure AD (все ресурсы)
 description: Вы можете использовать обзоры Azure AD, чтобы настроить однократные или повторяющиеся проверки доступа для подтверждения прав доступа пользователя. Эта документация служит для поддержки устаревших API.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 9a3b10d4892a2b73e98a92375677745081a9aeed
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 1cca21c4d37d929a9744d83630bdd817e1013152
+ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000653"
+ms.lasthandoff: 11/16/2020
+ms.locfileid: "49081840"
 ---
-# <a name="azure-ad-access-reviews-legacy"></a>Обзоры Azure AD Access (устаревшие)
+# <a name="azure-ad-access-reviews-all-resources"></a>Обзоры Access Azure AD (все ресурсы)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->[Здесь](accessreviewsv2-root.md)можно найти более новую версию API проверки доступа. Эта новая версия в настоящее время поддерживает только обзоры членства в группах. Для рецензирования всех других ресурсов используйте устаревшие API.
+>Для доступа к API проверки доступа, которые применяются к группе мемебершипс, ознакомьтесь с [Разрецензированием Access (участие в группах)](accessreviewsv2-root.md). Эти API проверки доступа применяются ко всем другим типам ресурсов.
 
 Вы можете использовать [обзоры Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) , чтобы настроить однократные или повторяющиеся проверки доступа для подтверждения прав доступа пользователя.
 
@@ -37,7 +37,7 @@ ms.locfileid: "49000653"
 Прежде чем приступать к созданию обзора, программы или элемента управления программы, администратор должен заранее подготовиться к работе, чтобы подготовить ресурсы [програмконтролтипе](programcontroltype.md) и [бусинессфловтемплате](businessflowtemplate.md) . Организация может выполнять проверку доступа Azure AD или, в случае рецензирования роли Azure AD или ролей подписки Azure, системы PIM Azure AD.
 
 
-## <a name="methods"></a>Методы
+## <a name="methods"></a>Methods
 
 В следующей таблице перечислены методы, которые можно использовать для взаимодействия с ресурсами, связанными с проверкой доступа.
 
