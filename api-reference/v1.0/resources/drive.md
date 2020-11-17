@@ -5,20 +5,20 @@ ms.date: 09/10/2017
 title: Drive
 localization_priority: Priority
 ms.prod: sharepoint
-description: Ресурс Drive — объект верхнего уровня, представляющий хранилище OneDrive пользователя или библиотеку документов в SharePoint.
+description: Ресурс drive — объект верхнего уровня, представляющий хранилище OneDrive пользователя или библиотеку документов в SharePoint.
 doc_type: resourcePageType
-ms.openlocfilehash: 6e4f228edbc39decbb2a60aaf79f3e3788bfcc24
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: c389d801f8aea070dd310e1d826c9139298578cd
+ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848684"
+ms.lasthandoff: 11/16/2020
+ms.locfileid: "49082288"
 ---
-# <a name="drive-resource-type"></a>Тип ресурса Drive
+# <a name="drive-resource-type"></a>Тип ресурса drive
 
 Пространство имен: microsoft.graph
 
-Ресурс Drive — объект верхнего уровня, представляющий хранилище OneDrive пользователя или библиотеку документов в SharePoint.
+Ресурс drive — объект верхнего уровня, представляющий хранилище OneDrive пользователя или библиотеку документов в SharePoint.
 
 Для пользователей OneDrive всегда будет доступен хотя бы один диск (диск по умолчанию). Для пользователей, у которых нет лицензии на OneDrive, такой диск может быть недоступен.
 
