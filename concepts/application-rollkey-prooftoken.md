@@ -4,12 +4,12 @@ description: В рамках подтверждения запроса для м
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 author: davidmu1
-ms.openlocfilehash: b0e0384ab440bb08eb3b708c4ad057da42986c5c
-ms.sourcegitcommit: 726f20403323be7d267b67c2764ed7c244e02ee1
+ms.openlocfilehash: de27890f9e822f3cc75d1e8a1007794a0e70bf8c
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47330094"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086741"
 ---
 # <a name="generating-proof-of-possession-tokens-for-rolling-keys"></a>Создание маркеров подтверждения владения для смены ключей
 
@@ -22,7 +22,7 @@ ms.locfileid: "47330094"
 Маркер должен содержать следующие утверждения:
 
 - `aud` — требуется использовать аудиторию `00000002-0000-0000-c000-000000000000`.
-- `iss` — издателем должен быть __идентификатор__  приложения, выполняющего вызов.
+- `iss` — издателем должен быть __ObjectId__ Azure AD приложения, выполняющего вызов (а не applicationId или clientId).
 - `nbf` — вовремя.
 - `exp` — сроком действия должно быть значение "nbf" + 10 минут.
 
