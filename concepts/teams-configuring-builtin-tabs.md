@@ -4,12 +4,12 @@ description: Создание или настройка вкладки Microsoft
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3f1aa2a88a6852e39dbcf791997e19cc214086e1
-ms.sourcegitcommit: 5b0b254cc6d8224b3126331eeff6bd0d903e9060
+ms.openlocfilehash: 80a790c19cffcd7ec95afb84f5e6cd6bad885b56
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48945110"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086594"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Настройка встроенных типов вкладок в Microsoft Teams
 
@@ -103,12 +103,12 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 ## <a name="wiki-tabs"></a>Вкладки вики-сайта
 
 Для вкладок вики-сайта объекту `teamsAppId` соответствует `com.microsoft.teamspace.tab.wiki`.
-Вкладки вики-сайта не поддерживают конфигурацию через Graph.
-Однако обратите внимание, что практически отсутствуют параметры для конфигурации — в ненастроенной вкладке вики-сайта первому пользователю просто нужно выбрать **Настройка вкладки** , чтобы выполнить ее настройку.
+Вкладки вики-сайта не поддерживают конфигурацию через Microsoft Graph.
+Однако обратите внимание на то, что на ненастроенной вкладке вики-сайта не слишком много параметров, первый пользователь просто должен выбрать пункт **Настройка вкладки** , чтобы настроить ее.
 
 ## <a name="planner-tabs"></a>Вкладки планировщика
 
-Для вкладок планировщика объекту teamsAppId соответствует `com.microsoft.teamspace.tab.planner`. Конфигурация не поддерживается.
+Для вкладок планировщика `teamsAppId` используется значение `com.microsoft.teamspace.tab.planner` . Конфигурация не поддерживается.
 
 ## <a name="microsoft-stream-tabs"></a>Вкладки Microsoft Stream
 

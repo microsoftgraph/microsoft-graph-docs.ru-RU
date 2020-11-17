@@ -3,18 +3,18 @@ title: Поставщик SharePoint
 description: Используйте поставщика SharePoint в веб-частях SharePoint, чтобы включить в себя доступ к компонентам Microsoft Graph.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 1681dd07c93cfb419fb8aa61263432eaebb099dd
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: c27a24ac1b5f41b97d749620edbae09794072bed
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288499"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086755"
 ---
 # <a name="sharepoint-provider"></a>Поставщик SharePoint
 
 Используйте поставщика SharePoint в веб-частях SharePoint, чтобы включить в себя доступ к компонентам Microsoft Graph.
 
-Чтобы узнать больше, ознакомьтесь со статьей [поставщики](../providers.md).
+Чтобы узнать больше о поставщиках проверки подлинности, ознакомьтесь со статьей [поставщики](../providers.md).
 
 ## <a name="get-started"></a>Начало работы
 
@@ -46,7 +46,9 @@ public render(): void {
 
 ## <a name="sample"></a>Пример
 
-Пример использования различных компонентов в веб-частях SharePoint представлен в [примере веб-части SharePoint](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) в репозитории набора средств Microsoft Graph.
+Подробнее о том, как инитализе поставщика SharePoint, можно узнать в статье Создание руководства по началу работы с [веб-частью SharePoint](../get-started/build-a-sharepoint-web-part.md) .
+
+Предварительно созданный пример, в котором показано, как использовать различные компоненты в веб-частях SharePoint, можно найти в [примере веб-части SharePoint](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) в репозитории набора средств Microsoft Graph.
 
 ## <a name="test-in-the-workbench"></a>Тестирование в Workbench
 
@@ -56,7 +58,10 @@ public render(): void {
 
 Коротко говоря, важно добавить правое разрешение для `package-solution.json` . Вам потребуется отправить пакет веб-части в SharePoint и разрешить администратору утверждать запрошенные разрешения.
 
->**Совет.** если вы не знаете, какие разрешения следует добавить, документация для каждого компонента включает все необходимые разрешения.
+>[!TIP]
+>Руководство по началу работы с [веб-частью "Создание веб-части SharePoint](../get-started/build-a-sharepoint-web-part.md#configure-permissions) " содержит пошаговые инструкции по настройке и утверждению разрешений.
+
+>**Примечание.** если вы не знаете, какие разрешения следует добавить, документация для каждого компонента включает все необходимые разрешения.
 
 ## <a name="polyfills"></a>Polyfills
 

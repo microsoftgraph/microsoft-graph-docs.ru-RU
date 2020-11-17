@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3200e95acdee4042c3933d5926662d6e49d52052
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: eafbb6940a3d70e7191c18369e2764c137f0d674
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418518"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086653"
 ---
 # <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration"></a>Удаление Пассвордлессмикрософтаусентикатораусентикатионмесодконфигуратион
 Пространство имен: microsoft.graph
@@ -27,16 +27,14 @@ ms.locfileid: "48418518"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Policy. ReadWrite. AuthenticationMethod|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.AuthenticationMethod|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Для делегированных сценариев администратору требуется одна из следующих [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев администратору требуется следующая [роль](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный администратор
-* Глобальный читатель
-* Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности
+
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +51,7 @@ DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

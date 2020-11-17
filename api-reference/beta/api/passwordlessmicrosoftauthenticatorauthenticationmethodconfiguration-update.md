@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8536e70f264775a073830aeac77d3fc27810e5f0
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: 91c158137406da47cddfaaa2384ed951d326358f
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418494"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086636"
 ---
 # <a name="update-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration"></a>Обновление Пассвордлессмикрософтаусентикатораусентикатионмесодконфигуратион
 Пространство имен: microsoft.graph
@@ -27,16 +27,14 @@ ms.locfileid: "48418494"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Policy. ReadWrite. AuthenticationMethod|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.AuthenticationMethod|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Для делегированных сценариев администратору требуется одна из следующих [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев администратору требуется следующая [роль](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный администратор
-* Глобальный читатель
-* Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности
+
 
 ## <a name="http-request"></a>HTTP-запрос
 

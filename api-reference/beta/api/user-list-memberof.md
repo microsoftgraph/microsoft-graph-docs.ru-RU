@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: db326c2e985b07d22dffa6bf5ec067b72d3c8d00
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: cd6b8c9f1cc9fb051e88c4a47542c046a5d163fe
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49081973"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086790"
 ---
 # <a name="list-user-memberof"></a>Перечисление user memberOf
 
@@ -41,14 +41,14 @@ GET /users/{id | userPrincipalName}/memberOf
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Кроме того, включено также приведение к OData, например, вы можете получить только directoryRoles, участником которых является пользователь. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
+Этот метод поддерживает [параметры запроса OData](/graph/query_parameters) для настройки отклика, в том числе `$search`, `$count` и `$filter`. Также включено приведение к OData, например, вы можете получить только directoryRoles, участником которых является пользователь. Вы можете использовать параметр `$search` в свойстве **displayName**. При добавлении или обновлении элементов для этого ресурса они индексируются для использования с параметрами запроса `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Заголовок | Значение |
 |:------ |:----- |
 | Авторизация  | Bearer {токен}. Обязательный. |
-| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`, `$filter`, `$orderby` или с параметрами запросов OData cast. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`, `$filter`, `$orderby` или параметров запросов для преобразования OData. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -93,7 +93,6 @@ GET https://graph.microsoft.com/beta/users/{id}/memberOf
 
 ---
 
-
 #### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
@@ -115,7 +114,7 @@ Content-type: application/json
       "@odata.type": "#microsoft.graph.group",
       "displayName": "All Users",
       "mailEnabled": false,
-      "securityEnabled": true,
+      "securityEnabled": true
     }
   ]
 }
@@ -152,8 +151,6 @@ HTTP/1.1 200 OK
 Content-type: text/plain
 ```
 
-893
-
 ### <a name="example-3-use-odata-cast-to-get-only-a-count-of-group-membership"></a>Пример 3. Использование OData cast для получения только количества участия в группах
 
 #### <a name="request"></a>Запрос
@@ -183,8 +180,6 @@ ConsistencyLevel: eventual
 HTTP/1.1 200 OK
 Content-type: text/plain
 ```
-
-294
 
 ### <a name="example-4-use-search-and-odata-cast-to-get-membership-in-groups-with-display-names-that-contain-the-letters-tier-including-a-count-of-returned-objects"></a>Пример 4. Использование параметра $search и приведения к OData для получения участия пользователей в группах с отображаемыми именами, содержащими буквы «tier», включая количество возвращаемых объектов
 
@@ -271,7 +266,6 @@ Content-type: application/json
     }
   ]
 }
-
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

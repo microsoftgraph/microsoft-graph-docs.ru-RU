@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8c1090c2ab71e66779d643e5149b3a053d35f5a7
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 4e7c133c25d7770257423c803f640e00f23dc449
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48458824"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086632"
 ---
 # <a name="get-fido2authenticationmethodconfiguration"></a>Получение fido2AuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
@@ -28,12 +28,10 @@ ms.locfileid: "48458824"
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Для делегированных сценариев администратору требуется одна из следующих [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев администратору требуется следующая [роль](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный администратор
-* Глобальный читатель
-* Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности
+
 
 ## <a name="http-request"></a>HTTP-запрос
 

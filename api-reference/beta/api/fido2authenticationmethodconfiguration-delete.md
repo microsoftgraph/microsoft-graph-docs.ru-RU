@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8dbb2b7d2c8948763ffc48ac299cc3f2f330498a
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: ef92348219476f5a6ee344d5a25a5d1e7943e645
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418419"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086664"
 ---
 # <a name="delete-fido2authenticationmethodconfiguration"></a>Удаление fido2AuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
@@ -25,16 +25,14 @@ ms.locfileid: "48418419"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Policy. ReadWrite. AuthenticationMethod|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.AuthenticationMethod|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Для делегированных сценариев администратору требуется одна из следующих [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегированных сценариев администратору требуется следующая [роль](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный администратор
-* Глобальный читатель
-* Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности
+
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +49,7 @@ DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

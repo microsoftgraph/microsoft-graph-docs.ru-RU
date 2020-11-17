@@ -3,12 +3,12 @@ title: Настраиваемый поставщик
 description: Создайте настраиваемый поставщик, чтобы включить проверку подлинности и доступ к Graph для компонентов набора средств Microsoft Graph, если в вашем приложении есть код проверки подлинности.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 4e287a38a584f77b7dfedf6e36d56da7a4e29715
-ms.sourcegitcommit: 8e18d7fe3c869b2fd48872365116175d3bdce1b7
+ms.openlocfilehash: 57b7ca843f71d22992df18dc2466d0182d3fc556
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46643738"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086601"
 ---
 # <a name="custom-provider"></a>Настраиваемый поставщик
 
@@ -21,7 +21,7 @@ ms.locfileid: "46643738"
 
 ## <a name="simpleprovider"></a>симплепровидер
 
-Создайте экземпляр `SimpleProvider` класса, передав функцию, которая будет возвращать маркер доступа для переданных областей.
+Создайте экземпляр `SimpleProvider` класса, передав функцию, которая будет возвращать маркер доступа для переданных областей. 
 
 ```ts
 let provider = new SimpleProvider((scopes: string[]) => {
@@ -31,13 +31,17 @@ let provider = new SimpleProvider((scopes: string[]) => {
 
 Кроме того, вы также можете указать дополнительные `login` функции и `logout` функции, которые могут обрабатывать вызовы входа и выхода из компонента [Login](../components/login.md) .
 
+> [!IMPORTANT] 
+> Чтобы указать компоненты, которые они могут начать вызывать API Microsoft Graph после успешного входа пользователя, необходимо позвонить `Providers.setState(ProviderState.SignedIn)` . Пример такой функции показан в `login` приведенной ниже функции.
+
 ```ts
 function getAccessToken(scopes: string[]) {
   // return a promise with accessToken string
 }
 
 function login() {
-  // login code
+  //login code
+  Providers.globalProvider.setState(ProviderState.SignedIn)
 }
 
 function logout() {
@@ -63,7 +67,7 @@ export enum ProviderState {
 
 `IProvider`Абстрактный класс можно расширить для создания собственного поставщика.
 
-### <a name="state"></a>State
+### <a name="state"></a>Состояние
 
 Поставщик должен отслеживать состояние проверки подлинности и обновлять компоненты при изменении состояния. `IProvider`Класс уже реализует `onStateChanged(eventHandler)` обработчик и `state: ProviderState` свойство. Для `setState(state:ProviderState)` обновления состояния при изменении состояния необходимо просто использовать метод в реализации. При обновлении состояния событие будет срабатывать `stateChanged` и автоматически обновлены все компоненты.
 
