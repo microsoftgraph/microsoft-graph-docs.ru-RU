@@ -3,61 +3,163 @@ title: Поставщики набора средств Microsoft Graph
 description: Поставщики набора средств Microsoft Graph обеспечивают проверку подлинности и доступ к Microsoft Graph для всех компонентов.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 221258b49d9a5217829633c7882b9dd4f9d2a221
-ms.sourcegitcommit: 53dd31d323319fbd2ff7afc51b55a46efb8c5be3
+ms.openlocfilehash: 4b51fdf91fd37c0c3dc5ea0ec49571a8ed4e5d47
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "39955787"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086649"
 ---
-# <a name="microsoft-graph-toolkit-providers"></a><span data-ttu-id="d81b0-103">Поставщики набора средств Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="d81b0-103">Microsoft Graph Toolkit providers</span></span>
+# <a name="microsoft-graph-toolkit-providers"></a><span data-ttu-id="05a88-103">Поставщики набора средств Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="05a88-103">Microsoft Graph Toolkit providers</span></span>
 
-<span data-ttu-id="d81b0-104">Поставщики набора средств Microsoft Graph обеспечивают проверку подлинности и доступ к Microsoft Graph для всех компонентов.</span><span class="sxs-lookup"><span data-stu-id="d81b0-104">The Microsoft Graph Toolkit providers enable authentication and Microsoft Graph access for all components.</span></span> <span data-ttu-id="d81b0-105">Каждый поставщик предоставляет реализацию для получения необходимого маркера доступа для вызова API Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="d81b0-105">Each provider provides implementation for acquiring the necessary access token for calling the Microsoft Graph APIs.</span></span>
+<span data-ttu-id="05a88-104">Поставщики набора средств Microsoft Graph позволяют приложению выполнять проверку подлинности с помощью Microsoft Identity и получать доступ к Microsoft Graph только в нескольких строках кода.</span><span class="sxs-lookup"><span data-stu-id="05a88-104">The Microsoft Graph Toolkit providers enable your application to authenticate with Microsoft Identity and access Microsoft Graph in only few lines of code.</span></span> <span data-ttu-id="05a88-105">Каждый поставщик управляет проверкой подлинности пользователя и получением маркеров доступа для вызова API Microsoft Graph, поэтому вам не нужно самостоятельно писать этот код.</span><span class="sxs-lookup"><span data-stu-id="05a88-105">Each provider handles user authentication and acquiring the access tokens to call Microsoft Graph APIs, so that you don't have to write this code yourself.</span></span> 
 
-<span data-ttu-id="d81b0-106">Чтобы компоненты использовали поставщика, необходимо присвоить `Providers.globalProvider` свойству значение для поставщика, который вы хотите использовать.</span><span class="sxs-lookup"><span data-stu-id="d81b0-106">For the components to use a provider, you must set the `Providers.globalProvider` property to the value for a provider you'd like to use.</span></span>
+<span data-ttu-id="05a88-106">Вы можете использовать поставщиков самостоятельно, без компонентов, чтобы быстро реализовать проверку подлинности для приложения и совершать вызовы Microsoft Graph через клиентский пакет SDK для JavaScript.</span><span class="sxs-lookup"><span data-stu-id="05a88-106">You can use the providers on their own, without components, to quickly implement authentication for your app and make calls to Microsoft Graph via the JavaScript client SDK.</span></span>
 
-<span data-ttu-id="d81b0-107">В приведенном ниже примере показано, как использовать Мсалпровидер.</span><span class="sxs-lookup"><span data-stu-id="d81b0-107">The following example shows how to use the MsalProvider.</span></span>
+<span data-ttu-id="05a88-107">Поставщики необходимы при использовании компонентов набора инструментов Microsoft Graph, так как компоненты используют их для доступа к Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="05a88-107">The providers are required when using the Microsoft Graph Toolkit components as the components use them to access Microsoft Graph.</span></span> <span data-ttu-id="05a88-108">Если вы уже обладаете собственной проверкой подлинности и хотите использовать компоненты, вы можете использовать вместо него [настраиваемый поставщик](./providers/custom.md) .</span><span class="sxs-lookup"><span data-stu-id="05a88-108">If you already have your own authentication and want to use the components, you can use a [custom provider](./providers/custom.md) instead.</span></span>
+
+<span data-ttu-id="05a88-109">В набор входят следующие поставщики.</span><span class="sxs-lookup"><span data-stu-id="05a88-109">The Toolkit includes the following providers.</span></span>
+
+|<span data-ttu-id="05a88-110">Поставщики</span><span class="sxs-lookup"><span data-stu-id="05a88-110">Providers</span></span>|<span data-ttu-id="05a88-111">Описание</span><span class="sxs-lookup"><span data-stu-id="05a88-111">Description</span></span>|
+|---------|-----------|
+|[<span data-ttu-id="05a88-112">Msal</span><span class="sxs-lookup"><span data-stu-id="05a88-112">Msal</span></span>](./providers/msal.md)|<span data-ttu-id="05a88-113">Использует MSAL.js для входа пользователей и получения маркеров для использования с Microsoft Graph в веб-приложении.</span><span class="sxs-lookup"><span data-stu-id="05a88-113">Uses MSAL.js to sign in users and acquire tokens to use with Microsoft Graph in a web application.</span></span>|
+|[<span data-ttu-id="05a88-114">SharePoint</span><span class="sxs-lookup"><span data-stu-id="05a88-114">SharePoint</span></span>](./providers/sharepoint.md)|<span data-ttu-id="05a88-115">Проверяет подлинность и предоставляет Microsoft Graph доступ к компонентам в веб-частях SharePoint.</span><span class="sxs-lookup"><span data-stu-id="05a88-115">Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.</span></span>|
+|[<span data-ttu-id="05a88-116">Teams</span><span class="sxs-lookup"><span data-stu-id="05a88-116">Teams</span></span>](./providers/teams.md)|<span data-ttu-id="05a88-117">Проверка подлинности и предоставление доступа Microsoft Graph к компонентам в пределах вкладок Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="05a88-117">Authenticates and provides Microsoft Graph access to components inside  Microsoft Teams tabs.</span></span>|
+|[<span data-ttu-id="05a88-118">Сервера</span><span class="sxs-lookup"><span data-stu-id="05a88-118">Proxy</span></span>](./providers/proxy.md)|<span data-ttu-id="05a88-119">Позволяет использовать внутреннюю проверку подлинности путем маршрутизации всех вызовов Microsoft Graph через серверный сервер.</span><span class="sxs-lookup"><span data-stu-id="05a88-119">Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.</span></span>|
+|[<span data-ttu-id="05a88-120">Custom</span><span class="sxs-lookup"><span data-stu-id="05a88-120">Custom</span></span>](./providers/custom.md)|<span data-ttu-id="05a88-121">Создайте настраиваемый поставщик, чтобы включить проверку подлинности и доступ к Microsoft Graph с помощью существующего кода проверки подлинности приложения.</span><span class="sxs-lookup"><span data-stu-id="05a88-121">Create a custom provider to enable authentication and access to Microsoft Graph with your application's existing authentication code.</span></span>|
+
+## <a name="initializing-a-provider"></a><span data-ttu-id="05a88-122">Инициализация поставщика</span><span class="sxs-lookup"><span data-stu-id="05a88-122">Initializing a provider</span></span>
+
+<span data-ttu-id="05a88-123">Чтобы использовать поставщик в своем приложении, необходимо инициализировать новый поставщик, а затем назначить его глобальным поставщиком в пространстве имен providers.</span><span class="sxs-lookup"><span data-stu-id="05a88-123">To use a provider in your app, you need to initialize a new provider and then set it as the global provider in the Providers namespace.</span></span> <span data-ttu-id="05a88-124">Мы рекомендуем сделать это, прежде чем приступать к использованию любого из этих компонентов.</span><span class="sxs-lookup"><span data-stu-id="05a88-124">We recommend doing this before you start using any of the components.</span></span> <span data-ttu-id="05a88-125">Вы можете сделать это одним из двух способов:</span><span class="sxs-lookup"><span data-stu-id="05a88-125">You can do this one of two ways:</span></span>
+
+<span data-ttu-id="05a88-126">**Вариант 1: использование компонента поставщика**</span><span class="sxs-lookup"><span data-stu-id="05a88-126">**Option 1: Use the provider component**</span></span>
+
+<span data-ttu-id="05a88-127">Версию компонента поставщика можно использовать непосредственно в HTML-коде.</span><span class="sxs-lookup"><span data-stu-id="05a88-127">You can use the component version of the provider directly in your HTML.</span></span> <span data-ttu-id="05a88-128">В фоновом режиме инициализируется новый поставщик, который устанавливается в качестве глобального поставщика.</span><span class="sxs-lookup"><span data-stu-id="05a88-128">Behind the scenes, a new provider is initialized and set as the global provider.</span></span> <span data-ttu-id="05a88-129">В приведенном ниже примере показано, как использовать Мсалпровидер.</span><span class="sxs-lookup"><span data-stu-id="05a88-129">The following example shows how to use the MsalProvider.</span></span>
+
+```HTML
+<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+<mgt-msal-provider client-id="YOUR_CLIENT_ID"></mgt-msal-provider>
+```
+
+<span data-ttu-id="05a88-130">**Вариант 2: инициализировать в коде**</span><span class="sxs-lookup"><span data-stu-id="05a88-130">**Option 2: Initialize in code**</span></span>
+
+<span data-ttu-id="05a88-131">Инициализация поставщика в коде JavaScript позволяет предоставить дополнительные параметры.</span><span class="sxs-lookup"><span data-stu-id="05a88-131">Initializing your provider in your JavaScript code enables you to provide more options.</span></span> <span data-ttu-id="05a88-132">Для этого создайте новый экземпляр поставщика и задайте для него значение, которое будет `Providers.globalProvider` использоваться поставщиком.</span><span class="sxs-lookup"><span data-stu-id="05a88-132">To do this, create a new provider instance and set the value of the `Providers.globalProvider` property to the provider you'd like to use.</span></span> <span data-ttu-id="05a88-133">В приведенном ниже примере показано, как использовать Мсалпровидер.</span><span class="sxs-lookup"><span data-stu-id="05a88-133">The following example shows how to use the MsalProvider.</span></span>
 
 ```js
+import {Providers, MsalProvider } from "@microsoft/mgt";
 Providers.globalProvider = new MsalProvider({
-  clientId: '[CLIENT_ID]'
+  clientId: 'YOUR_CLIENT_ID'
+});
+```
+> <span data-ttu-id="05a88-134">**Примечание:** Сведения о том, как зарегистрировать свое приложение и получить идентификатор клиента, можно найти в статье [Создание приложения Azure Active Directory](./get-started/add-aad-app-registration.md).</span><span class="sxs-lookup"><span data-stu-id="05a88-134">**Note:** For details about how to register your app and get a client ID, see [Create an Azure Active Directory app](./get-started/add-aad-app-registration.md).</span></span>
+
+## <a name="permission-scopes"></a><span data-ttu-id="05a88-135">Области разрешений</span><span class="sxs-lookup"><span data-stu-id="05a88-135">Permission Scopes</span></span>
+
+<span data-ttu-id="05a88-136">Мы рекомендуем добавить все области разрешений, необходимые приложению для `scopes` атрибута или свойства при инициализации поставщика (это не относится к [поставщику SharePoint](./providers/sharepoint.md)).</span><span class="sxs-lookup"><span data-stu-id="05a88-136">We recommend adding all the permission scopes your application needs to the `scopes` attribute or property when initializing your provider (this does not apply to the [SharePoint provider](./providers/sharepoint.md)).</span></span> <span data-ttu-id="05a88-137">Это необязательный параметр, но он будет повышать уровень взаимодействия с пользователем, предоставляя пользователю сводный список разрешений, запрошенных всеми компонентами приложения, а не отдельные экраны для каждого компонента.</span><span class="sxs-lookup"><span data-stu-id="05a88-137">This is optional, but will improve your user experience by presenting a single consent screen to the user with an aggregated list of permissions requested by all components in your app, rather than presenting separate screens for each component.</span></span> <span data-ttu-id="05a88-138">В следующих примерах показано, как это сделать с помощью Мсалпровидер.</span><span class="sxs-lookup"><span data-stu-id="05a88-138">The following examples show how to do this with the MsalProvider.</span></span>
+
+```HTML
+<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+<mgt-msal-provider client-id="YOUR_CLIENT_ID"
+                   scopes="user.read,people.read"
+                   ></mgt-msal-provider>
+```
+
+<span data-ttu-id="05a88-139">Если вы инициализируем поставщик в коде, предоставьте области разрешений в массиве в `scopes` свойстве.</span><span class="sxs-lookup"><span data-stu-id="05a88-139">If you're initializing the provider in code, provide the permission scopes in an array in the `scopes` property.</span></span>
+
+```js
+import {Providers, MsalProvider } from "@microsoft/mgt";
+Providers.globalProvider = new MsalProvider({
+  clientId: 'YOUR_CLIENT_ID'
+  scopes:['user.read','people.read']
 });
 ```
 
-<span data-ttu-id="d81b0-108">В наборе средств реализованы следующие поставщики:</span><span class="sxs-lookup"><span data-stu-id="d81b0-108">The toolkit implements the following providers:</span></span>
+<span data-ttu-id="05a88-140">Список областей разрешений, необходимых для каждого компонента, можно найти в разделе " **разрешения Microsoft Graph** " на странице документации каждого компонента.</span><span class="sxs-lookup"><span data-stu-id="05a88-140">You can find the list of permission scopes required by each component in the **Microsoft Graph permissions** section of each component's documentation page.</span></span>
 
-- [<span data-ttu-id="d81b0-109">мсалпровидер</span><span class="sxs-lookup"><span data-stu-id="d81b0-109">MsalProvider</span></span>](./providers/msal.md)
-- [<span data-ttu-id="d81b0-110">шарепоинтпровидер</span><span class="sxs-lookup"><span data-stu-id="d81b0-110">SharePointProvider</span></span>](./providers/sharepoint.md)
-- [<span data-ttu-id="d81b0-111">теамспровидер</span><span class="sxs-lookup"><span data-stu-id="d81b0-111">TeamsProvider</span></span>](./providers/teams.md)
-- [<span data-ttu-id="d81b0-112">проксипровидер</span><span class="sxs-lookup"><span data-stu-id="d81b0-112">ProxyProvider</span></span>](./providers/proxy.md)
-- [<span data-ttu-id="d81b0-113">симплепровидер</span><span class="sxs-lookup"><span data-stu-id="d81b0-113">SimpleProvider</span></span>](./providers/custom.md)
+## <a name="provider-state"></a><span data-ttu-id="05a88-141">Состояние поставщика</span><span class="sxs-lookup"><span data-stu-id="05a88-141">Provider state</span></span>
 
-<span data-ttu-id="d81b0-114">Вы можете создать поставщика в любое время.</span><span class="sxs-lookup"><span data-stu-id="d81b0-114">You can create a provider at any time.</span></span> <span data-ttu-id="d81b0-115">Рекомендуется создать поставщика перед использованием любого из компонентов.</span><span class="sxs-lookup"><span data-stu-id="d81b0-115">We recommend that you create the provider before you use any of the components.</span></span> <span data-ttu-id="d81b0-116">В этом разделе описывается, как инициализировать поставщика.</span><span class="sxs-lookup"><span data-stu-id="d81b0-116">This section describes how to initialize a provider.</span></span>
+<span data-ttu-id="05a88-142">Поставщик отслеживает состояние проверки подлинности пользователя и передает его компонентам.</span><span class="sxs-lookup"><span data-stu-id="05a88-142">The provider keeps track of the user's authentication state and communicates it to the components.</span></span> <span data-ttu-id="05a88-143">Например, когда пользователь успешно выполняет вход, он `ProviderState` обновляется `SignedIn` , чтобы сообщить компонентам, которые теперь могут совершать звонки в Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="05a88-143">For example, when a user successfully signs in, the `ProviderState` is updated to `SignedIn`, signaling to the components that they are now able to make calls to Microsoft Graph.</span></span> <span data-ttu-id="05a88-144">`ProviderState`Перечисление определяет три состояния, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="05a88-144">The `ProviderState` enum defines three states, as shown.</span></span>
 
-## <a name="providers-namespace"></a><span data-ttu-id="d81b0-117">Пространство имен поставщиков</span><span class="sxs-lookup"><span data-stu-id="d81b0-117">Providers namespace</span></span>
+```ts
+export enum ProviderState {
+  Loading,
+  SignedOut,
+  SignedIn
+}
+```
 
-<span data-ttu-id="d81b0-118">`Providers` Пространство имен предоставляет следующие свойства и функции:</span><span class="sxs-lookup"><span data-stu-id="d81b0-118">The `Providers` namespace exposes the following properties and functions:</span></span>
+<span data-ttu-id="05a88-145">В некоторых случаях потребуется показать некоторые функции или выполнить действие только после успешного входа пользователя.</span><span class="sxs-lookup"><span data-stu-id="05a88-145">In some scenarios, you will want to show certain functionality or perform an action only after a user has successfully signed in.</span></span> <span data-ttu-id="05a88-146">Вы можете получить доступ к состоянию поставщика и проверить его, как показано в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="05a88-146">You can access and check the provider state, as shown in the following example.</span></span>
 
-- `globalProvider : IProvider`
+```js
+import { Providers, ProviderState } from '@microsoft/mgt'
 
-<span data-ttu-id="d81b0-119">Задайте для этого свойства поставщик, который будет использоваться глобально.</span><span class="sxs-lookup"><span data-stu-id="d81b0-119">Set this property to a provider that you want to use globally.</span></span> <span data-ttu-id="d81b0-120">Все компоненты используют это свойство для получения ссылки на поставщика.</span><span class="sxs-lookup"><span data-stu-id="d81b0-120">All components use this property to get a reference to the provider.</span></span> <span data-ttu-id="d81b0-121">При задании этого свойства `onProvidersChanged` событие будет срабатывать.</span><span class="sxs-lookup"><span data-stu-id="d81b0-121">Setting this property will fire the `onProvidersChanged` event.</span></span>
+//assuming a provider has already been initialized
 
-- `function onProviderUpdated(callbackFunction)`
+if (Providers.globalProvider.state === ProviderState.SignedIn) {
+  //your code here
+}
+```
+<span data-ttu-id="05a88-147">Вы также можете использовать этот `Providers.onProviderUpdated` метод для получения уведомлений при изменении состояния поставщика.</span><span class="sxs-lookup"><span data-stu-id="05a88-147">You can also use the `Providers.onProviderUpdated` method to get notified whenever the state of the provider changes.</span></span>
 
-<span data-ttu-id="d81b0-122">`callbackFunction` Функция будет вызываться при изменении поставщика или при изменении состояния поставщика.</span><span class="sxs-lookup"><span data-stu-id="d81b0-122">The `callbackFunction` function will be called when a provider is changed or when the state of a provider changes.</span></span> <span data-ttu-id="d81b0-123">В `ProvidersChangedState` функцию передается значение перечисления, которое указывает, что было обновлено.</span><span class="sxs-lookup"><span data-stu-id="d81b0-123">A `ProvidersChangedState` enum value will be passed to the function to indicate what updated.</span></span>
+```js
+import { Providers, ProviderState } from "@microsoft/mgt";
 
-## <a name="implement-your-own-provider"></a><span data-ttu-id="d81b0-124">Реализация собственного поставщика</span><span class="sxs-lookup"><span data-stu-id="d81b0-124">Implement your own provider</span></span>
+//assuming a provider has already been initialized
 
-<span data-ttu-id="d81b0-125">В наборе инструментов предусмотрено два способа создания новых поставщиков:</span><span class="sxs-lookup"><span data-stu-id="d81b0-125">The toolkit provides two ways to create new providers:</span></span>
+const providerStateChanged = () => {
+  if (Providers.globalProvider.state === ProviderState.SignedIn) {
+    // user is now signed in
+  }
+}
 
-- <span data-ttu-id="d81b0-126">Создайте новый `SimpleProvider` , передав функцию для получения маркера доступа.</span><span class="sxs-lookup"><span data-stu-id="d81b0-126">Create a new `SimpleProvider` by passing in a function for getting an access token.</span></span>
-- <span data-ttu-id="d81b0-127">Расширьте `IProvider` абстрактный класс.</span><span class="sxs-lookup"><span data-stu-id="d81b0-127">Extend the `IProvider` abstract class.</span></span>
+// register a callback for when the state changes
+Providers.onProviderUpdated(providerStateChanged);
 
-<span data-ttu-id="d81b0-128">Дополнительные сведения о каждом из них можно найти в разделе [Настраиваемые поставщики](./providers/custom.md).</span><span class="sxs-lookup"><span data-stu-id="d81b0-128">For more details about each one, see [custom providers](./providers/custom.md).</span></span>
+// remove callback if necessary
+Providers.removeProviderUpdatedListener(providerStateChanged);
+```
 
-## <a name="using-multiple-providers"></a><span data-ttu-id="d81b0-129">Использование нескольких поставщиков</span><span class="sxs-lookup"><span data-stu-id="d81b0-129">Using multiple providers</span></span>
+## <a name="getting-an-access-token"></a><span data-ttu-id="05a88-148">Получение маркера доступа</span><span class="sxs-lookup"><span data-stu-id="05a88-148">Getting an access token</span></span>
 
-<span data-ttu-id="d81b0-130">В некоторых сценариях приложение будет запускаться в другой среде и потребует другого поставщика.</span><span class="sxs-lookup"><span data-stu-id="d81b0-130">In some scenarios, your application will run in a different environment and require a different provider.</span></span> <span data-ttu-id="d81b0-131">Например, приложение может работать в качестве веб-приложения и вкладки Microsoft Teams, и вам может потребоваться использовать Мсалпровидер и Теамспровидер.</span><span class="sxs-lookup"><span data-stu-id="d81b0-131">For example, the app might run as both a web application and a Microsoft Teams tab and you might need to use the MsalProvider and the TeamsProvider.</span></span> <span data-ttu-id="d81b0-132">В этом сценарии все компоненты поставщика имеют `depends-on` атрибут для создания резервной цепочки, как показано в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="d81b0-132">For this scenario, all provider components have the `depends-on` attribute to create a fallback chain, as shown in the following example.</span></span>
+<span data-ttu-id="05a88-149">Каждый поставщик предоставляет вызываемую функцию `getAccessToken` , которая может получить текущий маркер доступа или получить новый маркер доступа для предоставленных областей.</span><span class="sxs-lookup"><span data-stu-id="05a88-149">Each provider exposes a function called `getAccessToken` that can retreive the current access token or retrieve a new access token for the provided scopes.</span></span> <span data-ttu-id="05a88-150">В приведенном ниже примере показано, как получить новый маркер доступа с `User.Read` областью разрешений.</span><span class="sxs-lookup"><span data-stu-id="05a88-150">The following example shows how to get a new access token with the `User.Read` permission scope.</span></span>
+
+```js
+import { Providers, ProviderState } from "@microsoft/mgt";
+
+//assuming a provider has already been initialized
+
+if (Providers.globalProvider.state === ProviderState.SignedIn) {
+  const token = Provider.globalProvider.getAccessToken({scopes: 'User.Read']})
+}
+```
+
+## <a name="making-your-own-calls-to-microsoft-graph"></a><span data-ttu-id="05a88-151">Выполнение собственных вызовов в Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="05a88-151">Making your own calls to Microsoft Graph</span></span>
+
+<span data-ttu-id="05a88-152">Все компоненты могут получать доступ к Microsoft Graph без какой-либо настройки, если вы инициализируем поставщик (как описано в предыдущих разделах).</span><span class="sxs-lookup"><span data-stu-id="05a88-152">All components can access Microsoft Graph without any customization required as long as you initialize a provider (as described in the previous sections).</span></span> <span data-ttu-id="05a88-153">Если вы хотите выполнить собственные вызовы Microsoft Graph, вы можете получить ссылку на тот же пакет SDK Microsoft Graph, который используется компонентами.</span><span class="sxs-lookup"><span data-stu-id="05a88-153">If you want to make your own calls to Microsoft Graph, you can do so by getting a reference to the same Microsoft Graph SDK used by the components.</span></span> <span data-ttu-id="05a88-154">Сначала получите ссылку на глобальную, `IProvider` а затем используйте объект, `graph` как показано ниже:</span><span class="sxs-lookup"><span data-stu-id="05a88-154">First, get a reference to the global `IProvider` and then use the `graph` object as shown:</span></span>
+
+```js
+import { Providers } from '@microsoft/mgt';
+
+let provider = Providers.globalProvider;
+if (provider) {
+  let graphClient = provider.graph.client;
+  let userDetails = await graphClient.api('me').get();
+}
+```
+<span data-ttu-id="05a88-155">Возможны случаи, когда необходимо передать дополнительные разрешения в зависимости от вызываемого API.</span><span class="sxs-lookup"><span data-stu-id="05a88-155">There might be cases where you need to pass additional permissions, depending on the API you're calling.</span></span> <span data-ttu-id="05a88-156">В следующем примере показывается, как это можно сделать.</span><span class="sxs-lookup"><span data-stu-id="05a88-156">The following example shows how to do this.</span></span>
+
+```js
+import { prepScopes } from '@microsoft/mgt';
+
+graphClient
+  .api('me')
+  .middlewareOptions(prepScopes('user.read', 'calendar.read'))
+  .get();
+```
+
+## <a name="using-multiple-providers"></a><span data-ttu-id="05a88-157">Использование нескольких поставщиков</span><span class="sxs-lookup"><span data-stu-id="05a88-157">Using multiple providers</span></span>
+
+<span data-ttu-id="05a88-158">В некоторых сценариях приложение будет работать в разных средах и для каждого из них требуется отдельный поставщик.</span><span class="sxs-lookup"><span data-stu-id="05a88-158">In some scenarios, your application will run in different environments and require a different provider for each.</span></span> <span data-ttu-id="05a88-159">Например, приложение может работать в качестве веб-приложения и вкладки Microsoft Teams, что означает, что вам может потребоваться использовать как Мсалпровидер, так и Теамспровидер.</span><span class="sxs-lookup"><span data-stu-id="05a88-159">For example, the app might run as both a web application and a Microsoft Teams tab, which means you might need to use both the MsalProvider and the TeamsProvider.</span></span> <span data-ttu-id="05a88-160">В этом сценарии все компоненты поставщика имеют `depends-on` атрибут для создания резервной цепочки, как показано в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="05a88-160">For this scenario, all provider components have the `depends-on` attribute to create a fallback chain, as shown in the following example.</span></span>
 
 ```html
 <mgt-teams-provider
@@ -69,9 +171,9 @@ Providers.globalProvider = new MsalProvider({
   depends-on="mgt-teams-provider" ></mgt-msal-provider>
 ```
 
-<span data-ttu-id="d81b0-133">В этом сценарии Мсалпровидер будет использоваться только в том случае, если Теамспровидер недоступен в текущей среде.</span><span class="sxs-lookup"><span data-stu-id="d81b0-133">In this scenario, the MsalProvider will only be used if the TeamsProvider is not available in the current environment.</span></span>
+<span data-ttu-id="05a88-161">В этом сценарии Мсалпровидер будет использоваться только в том случае, если приложение работает в качестве веб-приложения, а Теамспровидер недоступен в текущей среде.</span><span class="sxs-lookup"><span data-stu-id="05a88-161">In this scenario, the MsalProvider will only be used if your app is running as a web application and the TeamsProvider is not available in the current environment.</span></span>
 
-<span data-ttu-id="d81b0-134">Чтобы сделать то же самое в коде, можно использовать `isAvailable` свойство поставщика, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="d81b0-134">To accomplish the same in code, you can use the `isAvailable` property on the provider, as shown.</span></span>
+<span data-ttu-id="05a88-162">Чтобы сделать то же самое в коде, можно использовать `isAvailable` свойство поставщика, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="05a88-162">To accomplish the same in code, you can use the `isAvailable` property on the provider, as shown.</span></span>
 
 ```ts
 if (TeamsProvider.isAvailable) {
@@ -80,30 +182,23 @@ if (TeamsProvider.isAvailable) {
     Providers.globalProvider = new MsalProvider(msalConfig)
 }
 ```
+## <a name="user-loginlogout"></a><span data-ttu-id="05a88-163">Вход и выход пользователя</span><span class="sxs-lookup"><span data-stu-id="05a88-163">User Login/Logout</span></span>
 
-## <a name="making-your-own-calls-to-microsoft-graph"></a><span data-ttu-id="d81b0-135">Выполнение собственных вызовов в Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="d81b0-135">Making your own calls to Microsoft Graph</span></span>
+<span data-ttu-id="05a88-164">Если для вашего приложения инициализированы нужные поставщики, можно добавить [компонент входа](./components/login.md) в набор, чтобы быстро и быстро реализовать вход пользователя и выход.</span><span class="sxs-lookup"><span data-stu-id="05a88-164">When you have the right providers initialized for your application, you can add the Toolkit's [Login component](./components/login.md) to easily and quickly implement user login and logout.</span></span> <span data-ttu-id="05a88-165">Компонент работает с поставщиком, чтобы обрабатывать всю логику проверки подлинности и функции входа и выхода.</span><span class="sxs-lookup"><span data-stu-id="05a88-165">The component works with the provider to handle all of the authentication logic and login/logout functionality.</span></span> <span data-ttu-id="05a88-166">В следующем примере используется Мсалпровидер и компонент Login.</span><span class="sxs-lookup"><span data-stu-id="05a88-166">The following example uses the MsalProvider and the Login component.</span></span>
 
-<span data-ttu-id="d81b0-136">Все компоненты могут получать доступ к Microsoft Graph без какой-либо настройки, если вы инициализируем поставщик (как описано в предыдущем разделе).</span><span class="sxs-lookup"><span data-stu-id="d81b0-136">All components can access Microsoft Graph without any customization required as long as you initialize a provider (as described in the previous section).</span></span> <span data-ttu-id="d81b0-137">Чтобы получить ссылку на тот же пакет SDK Microsoft Graph, используемый компонентами, сначала получите ссылку на глобальный Ипровидер, а затем используйте `Graph` объект, как показано ниже:</span><span class="sxs-lookup"><span data-stu-id="d81b0-137">To get a reference to the same Microsoft Graph SDK used by the components, first get a reference to the global IProvider and then use the `Graph` object, as shown:</span></span>
-
-```js
-import { Providers } from '@microsoft/mgt';
-
-let provider = Providers.globalProvider;
-if (provider) {
-  let graphClient = provider.graph.client;
-  let userDetails = await graphClient.api('me').get();
-}
+```HTML
+<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+<mgt-msal-provider client-id="YOUR_CLIENT_ID"></mgt-msal-provider>
+<mgt-login></mgt-login>
 ```
 
-<span data-ttu-id="d81b0-138">Возможны случаи, когда вам потребуется передать дополнительные разрешения в зависимости от интерфейса API, который вы вызываете.</span><span class="sxs-lookup"><span data-stu-id="d81b0-138">There might be cases were you will need to pass additional permissions, depending on the API you're calling.</span></span>
+<span data-ttu-id="05a88-167">В сценариях, где вы хотите реализовать его самостоятельно, а не с помощью компонента входа в набор, вы можете сделать это, используя `login` `logout` методы поставщика.</span><span class="sxs-lookup"><span data-stu-id="05a88-167">In scenarios where you want to implement this yourself, rather than using the Toolkit's Login component, you can do so by using the `login` and `logout` methods of the provider.</span></span>
 
-```js
-import { prepScopes } from '@microsoft/mgt';
+## <a name="implement-your-own-provider"></a><span data-ttu-id="05a88-168">Реализация собственного поставщика</span><span class="sxs-lookup"><span data-stu-id="05a88-168">Implement your own provider</span></span>
 
-graphClient
-  .api('me')
-  .middlewareOptions(prepScopes('user.read', 'calendar.read'))
-  .get();
-```
+<span data-ttu-id="05a88-169">В сценариях, в которых вы хотите добавить компоненты набора инструментов в приложение с уже существующим кодом проверки подлинности, можно создать настраиваемый поставщик, который будет подключаться к механизму проверки подлинности, а не по предопределенным поставщикам.</span><span class="sxs-lookup"><span data-stu-id="05a88-169">In scenarios where you want to add Toolkit components to an application with pre-existing authentication code, you can create a custom provider that hooks into your authentication mechanism, instead of using our predefined providers.</span></span> <span data-ttu-id="05a88-170">В наборе инструментов предусмотрено два способа создания новых поставщиков:</span><span class="sxs-lookup"><span data-stu-id="05a88-170">The toolkit provides two ways to create new providers:</span></span>
 
-<span data-ttu-id="d81b0-139">`graph` Объект — это экземпляр [пакета SDK JavaScript для Microsoft Graph](https://github.com/microsoftgraph/msgraph-sdk-javascript) , который можно использовать для совершения вызовов Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="d81b0-139">The `graph` object is an instance of the [Microsoft Graph Javascript SDK](https://github.com/microsoftgraph/msgraph-sdk-javascript) and you can use it to make any calls to Microsoft Graph.</span></span>
+- <span data-ttu-id="05a88-171">Создайте новый `SimpleProvider` , который возвращает маркер доступа из кода проверки подлинности, передав функцию.</span><span class="sxs-lookup"><span data-stu-id="05a88-171">Create a new `SimpleProvider` that returns an access token from your authentication code by passing in a function.</span></span>
+- <span data-ttu-id="05a88-172">Расширьте `IProvider` абстрактный класс.</span><span class="sxs-lookup"><span data-stu-id="05a88-172">Extend the `IProvider` abstract class.</span></span>
+
+<span data-ttu-id="05a88-173">Дополнительные сведения о каждом из них можно найти в разделе [Настраиваемые поставщики](./providers/custom.md).</span><span class="sxs-lookup"><span data-stu-id="05a88-173">For more details about each one, see [custom providers](./providers/custom.md).</span></span>
