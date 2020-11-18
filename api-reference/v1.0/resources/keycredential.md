@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 97aab57c1ed0aa9f43536b89b49ca93a422962da
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d5faf577c45a82ef17ebbb5b2f195abd232df9fa
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48072937"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086751"
 ---
 # <a name="keycredential-resource-type"></a>Тип ресурса Кэйкредентиал
 
@@ -22,15 +22,15 @@ ms.locfileid: "48072937"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |кустомкэйидентифиер|Binary| Настраиваемый идентификатор ключа |
-| displayName | Строка | Понятное имя для ключа. Необязательное. |
+| displayName | String | Понятное имя для ключа. Необязательный атрибут. |
 |endDateTime|DateTimeOffset|Дата и время истечения срока действия учетных данных. Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |Него значение KeyID|Guid|Уникальный идентификатор (GUID) для ключа.|
 |startDateTime|DateTimeOffset|Дата и время, когда учетные данные становятся действительными. Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|type|Строка|Тип учетных данных ключа; Например, "симметричный".|
-|сведений|Строка|Строка, описывающая цель, для которой можно использовать ключ; Пример: "Verify".|
-|key|Двоичный| Значение для учетных данных ключа. Должно быть значением в кодировке Base 64. |
+|type|String|Тип учетных данных ключа; Например, "симметричный".|
+|сведений|String|Строка, описывающая цель, для которой можно использовать ключ; Пример: "Verify".|
+|key|Двоичный| Необработанные данные сертификата в массиве байтов, преобразованные в строку Base64; Пример: `[System.Convert]::ToBase64String($Cert.GetRawCertData())` . |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

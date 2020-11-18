@@ -5,19 +5,21 @@ localization_priority: Priority
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 28ce8fbf8fc14998f502ec1487d8a34f59c0d3c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d9df52fa26407cd5b08a3b8cb69ac156bc996925
+ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48091973"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49086783"
 ---
 # <a name="list-manager"></a>Получение руководителя
 
 Пространство имен: microsoft.graph
 
-Получение руководителя пользователя. Возвращает пользователя или контакт организации, назначенный в качестве руководителя пользователя.
+Возвращает пользователя или контакт организации, назначенный в качестве руководителя пользователя. Кроме того, вы можете развернуть цепочку руководителей до корневого узла.
+
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -29,27 +31,56 @@ ms.locfileid: "48091973"
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
 ## <a name="http-request"></a>HTTP-запрос
+
+Получение руководителя:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/manager
 GET /users/{id | userPrincipalName}/manager
 ```
+Получение цепочки управления:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me?$expand=manager
+GET /users?$expand=manager($levels=max)
+GET /users/{id | userPrincipalName}/?$expand=manager($levels=max)
+```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
+
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.  
+
+Если ваш запрос включает параметр `$expand=manager($levels=max)` для получения цепочки руководителей, вы также должны указать следующее:
+
+- Параметр строки запроса `$count=true`
+- Заголовок запроса `ConsistencyLevel=eventual`
+
+>**Примечание.** `max` — единственное разрешенное значение для `$levels`.
+> Если параметр `$level` не указан, возвращается только непосредственный руководитель.  
+> Вы можете указать `$select` в параметре `$expand`, чтобы выбрать свойства отдельных руководителей: `$expand=manager($levels=max;$select=id,displayName)`
+
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Заголовок       | Значение|
 |:-----------|:------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
+| ConsistencyLevel | необязательный. Требуется, если запрос содержит параметр `$expand=manager($levels=max)`. |
 
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-get-manager"></a>Пример 1. Получение руководителя
+
+Ниже показан пример запроса для получения руководителя.
+
+#### <a name="request"></a>Запрос
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -77,13 +108,14 @@ GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 
 ---
 
-##### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
+
 Ниже приведен пример отклика.
->**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+>**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.directoryObject",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
   "isCollection": false
 } -->
 ```http
@@ -91,22 +123,59 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "objectType": "User",
-  "id": "111048d2-2761-4347-b978-07354283363b",
-  "accountEnabled": true,
-  "city": "San Diego",
-  "country": "United States",
-  "department": "Sales & Marketing",
+  "id": "<user-id>",
   "displayName": "Sara Davis",
-  "givenName": "Sara",
   "jobTitle": "Finance VP",
   "mail": "SaraD@contoso.onmicrosoft.com",
-  "mailNickname": "SaraD",
-  "state": "CA",
-  "streetAddress": "9256 Towne Center Dr., Suite 400",
-  "surname": "Davis",
-  "usageLocation": "US",
   "userPrincipalName": "SaraD@contoso.onmicrosoft.com"
+}
+```
+
+### <a name="example-2-get-manager-chain-up-to-the-root-level"></a>Пример 2. Получение цепочкой руководителей до корневого уровня
+
+Ниже показан пример запроса для получения цепочки руководителей до корневого уровня.
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "get_transitive_managers"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me?$expand=manager($levels=max;$select=id,displayName)&$select=id,displayName&$count=true
+ConsistencyLevel: eventual
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика. Промежуточные руководители отображаются иерархически.
+
+>**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": false
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "<user1-id>",
+    "displayName": "Individual Contributor",
+    "manager": {
+        "id": "<manager1-id>",
+        "displayName": "Manager 1",
+        "manager": {
+            "id": "<manager2-id>",
+            "displayName": "Manager 2",
+            "manager": {
+                "id": "<manager3-id>",
+                "displayName": "Manager 3"
+            }
+        }
+    }
 }
 ```
 
@@ -121,4 +190,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
