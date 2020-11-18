@@ -1,18 +1,18 @@
 ---
-title: Список Усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилсес
-description: Список свойств и связей объектов Усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс.
+title: Список Девицеманажементконфигуратионкатегориес
+description: Список свойств и связей объектов Девицеманажементконфигуратионкатегори.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 168b41a86504d24a8f460a6f38c6deef228195cb
+ms.openlocfilehash: b8e2e8f7a540613c7d8f0ba3ee393d1ac036e31c
 ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "49202614"
+ms.locfileid: "49242152"
 ---
-# <a name="list-userexperienceanalyticsapphealthdeviceperformancedetailses"></a>Список Усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилсес
+# <a name="list-devicemanagementconfigurationcategories"></a>Список Девицеманажементконфигуратионкатегориес
 
 Пространство имен: microsoft.graph
 
@@ -20,16 +20,16 @@ ms.locfileid: "49202614"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) .
+Список свойств и связей объектов [девицеманажементконфигуратионкатегори](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -37,7 +37,7 @@ ms.locfileid: "49202614"
 }
 -->
 ``` http
-GET /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
+GET /deviceManagement/configurationCategories
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -50,14 +50,14 @@ GET /deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс](../resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицеманажементконфигуратионкатегори](../resources/intune-deviceconfigv2-devicemanagementconfigurationcategory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsAppHealthDevicePerformanceDetails
+GET https://graph.microsoft.com/beta/deviceManagement/configurationCategories
 ```
 
 ### <a name="response"></a>Отклик
@@ -65,18 +65,19 @@ GET https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsApp
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 435
+Content-Length: 382
 
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.userExperienceAnalyticsAppHealthDevicePerformanceDetails",
-      "id": "bc8c5273-5273-bc8c-7352-8cbc73528cbc",
-      "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
-      "eventType": "Event Type value",
-      "appDisplayName": "App Display Name value",
-      "deviceId": "Device Id value",
-      "deviceDisplayName": "Device Display Name value"
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
+      "id": "cff34dd2-4dd2-cff3-d24d-f3cfd24df3cf",
+      "description": "Description value",
+      "helpText": "Help Text value",
+      "name": "Name value",
+      "displayName": "Display Name value",
+      "platforms": "macOS",
+      "technologies": "mdm"
     }
   ]
 }

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: df9cc8722dd87db07a03d6208ad5cef3960d3291
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 969b89d16d9ab265246c0bca39932d874675da5f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691673"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49202530"
 ---
 # <a name="update-userexperienceanalyticsapphealthosversionperformance"></a>Обновление Усерекспериенцеаналитиксапфеалсосверсионперформанце
 
@@ -29,7 +29,7 @@ ms.locfileid: "48691673"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,24 +46,24 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthOSVersionPerformance/{us
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [усерекспериенцеаналитиксапфеалсосверсионперформанце](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитиксапфеалсосверсионперформанце](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта производительности для версии службы аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор объекта производительности для версии службы аналитики взаимодействия с пользователем.|
 |osVersion|String|Версия ОС, установленная на устройстве.|
-|осбуилднумбер|Строка|Номер сборки ОС, установленный на устройстве.|
+|осбуилднумбер|String|Номер сборки ОС, установленный на устройстве.|
 |активедевицекаунт|Int32|Число активных устройств для версии ОС. Допустимые значения: от 2147483648 до 2147483647|
 |меантиметофаилуреинминутес|Int32|Среднее время до сбоя для версии ОС в минутах. Допустимые значения: от 2147483648 до 2147483647|
 |осверсионапфеалсскоре|Двойное с плавающей точкой|Показатель работоспособности приложения для версии ОС. Допустимые значения — 1 79769313486232e308 E + 308 — 1 79769313486232e308 E + 308|
-|осверсионапфеалсстатус|Строка|Общее состояние работоспособности приложения для версии ОС.|
+|осверсионапфеалсстатус|String|Общее состояние работоспособности приложения для версии ОС.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерекспериенцеаналитиксапфеалсосверсионперформанце](../resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -104,7 +104,6 @@ Content-Length: 406
   "osVersionAppHealthStatus": "Os Version App Health Status value"
 }
 ```
-
 
 
 

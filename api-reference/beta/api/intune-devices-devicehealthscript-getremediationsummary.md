@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 19d6898f22a73b87d3fda587f314cb6b6b99a6fc
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c1fab0910bab555bfc696c6fe2faa1081c61b8fb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732883"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49203419"
 ---
 # <a name="getremediationsummary-function"></a>Функция Жетремедиатионсуммари
 
@@ -29,7 +29,7 @@ ms.locfileid: "48732883"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,10 +46,10 @@ GET /deviceManagement/deviceHealthScripts/getRemediationSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха эта функция возвращает `200 OK` код отклика и объект [девицехеалсскриптремедиатионсуммари](../resources/intune-devices-devicehealthscriptremediationsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -75,7 +75,6 @@ Content-Length: 155
   }
 }
 ```
-
 
 
 

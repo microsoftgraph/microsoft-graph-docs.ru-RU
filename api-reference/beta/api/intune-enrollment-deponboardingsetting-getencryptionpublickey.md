@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 91788302f7c9cf5047b1bfce2500d9de56750b68
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 01b17c853c56a8f7b6e74ae3ac4a4aecc4a5c2cf
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722566"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49201669"
 ---
 # <a name="getencryptionpublickey-function"></a>Функция getEncryptionPublicKey
 
@@ -29,7 +29,7 @@ ms.locfileid: "48722566"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,10 +46,10 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/getEncrypti
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха эта функция возвращает `200 OK` код отклика и строку в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -71,7 +71,6 @@ Content-Length: 50
   "value": "Get Encryption Public Key value"
 }
 ```
-
 
 
 

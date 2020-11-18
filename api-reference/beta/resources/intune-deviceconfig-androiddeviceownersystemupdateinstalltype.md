@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 509f31187e46f12c039ce5172722003fccd2e786
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1cc9fa7bcbefb068a6a3910c48a432fe2d1be2a7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685445"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49199940"
 ---
 # <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>тип перечисления Андроиддевицеовнерсистемупдатеинсталлтипе
 
@@ -29,7 +29,6 @@ ms.locfileid: "48685445"
 |отсрочки|1,1|Отложить автоматическую установку обновлений до 30 дней.|
 |окнами|2|Автоматическая установка в период ежедневного обслуживания.|
 |Автоматически|4|Автоматическая установка обновлений как можно скорее.|
-
 
 
 

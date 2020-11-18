@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 691b498ea7b041896afed95f68974e1c744cd0b4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 53507ce45286de3689ae248c3873c8fb535007d6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693040"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49201123"
 ---
 # <a name="create-grouppolicyobjectfile"></a>Создание Граупполициобжектфиле
 
@@ -29,7 +29,7 @@ ms.locfileid: "48693040"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,23 +46,23 @@ POST /deviceManagement/groupPolicyObjectFiles
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Граупполициобжектфиле в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Граупполициобжектфиле.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Пока не задокументировано.|
+|id|String|Пока не задокументировано.|
 |граупполициобжектид|Guid|GUID объекта групповой политики из XML-содержимого объекта групповой политики|
-|аудистингуишеднаме|Строка|Различающееся имя подразделения.|
+|аудистингуишеднаме|String|Различающееся имя подразделения.|
 |createdDateTime|DateTimeOffset|Дата и время первой загрузки Граупполици.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения Граупполициобжектфиле.|
 |content|String|Содержимое файла объекта групповой политики.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполициобжектфиле](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -99,7 +99,6 @@ Content-Length: 389
   "content": "Content value"
 }
 ```
-
 
 
 

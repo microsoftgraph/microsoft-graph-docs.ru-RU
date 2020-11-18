@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 98e56e52cd26e7348a9215ecf267c45cc3c7b3eb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d62124df60dff7337668a41d5cf5a604f53a4ca1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696435"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49200010"
 ---
 # <a name="win32lobapp-resource-type"></a>Тип ресурса win32LobApp
 
@@ -37,9 +37,9 @@ ms.locfileid: "48696435"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -60,8 +60,8 @@ ms.locfileid: "48696435"
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
-|инсталлкоммандлине|Строка|Командная строка для установки приложения|
-|унинсталлкоммандлине|Строка|Командная строка для удаления приложения|
+|инсталлкоммандлине|String|Командная строка для установки приложения|
+|унинсталлкоммандлине|String|Командная строка для удаления приложения|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, которая поддерживается этим приложением. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы.|
 |минимумфридискспацеинмб|Int32|Минимальное свободное место на диске, необходимое для установки этого приложения.|
@@ -74,8 +74,9 @@ ms.locfileid: "48696435"
 |инсталлекспериенце|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|Установка приложения.|
 |ретурнкодес|Коллекция [win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)|Коды возврата для поведения после установки.|
 |мсиинформатион|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Сведения о MSI, если это приложение Win32 является приложением MSI.|
-|сетупфилепас|Строка|Относительный путь к файлу установки в зашифрованном пакете Win32LobApp.|
-|минимумсуппортедвиндовсрелеасе|Строка|Значение минимального поддерживаемого выпуска Windows.|
+|сетупфилепас|String|Относительный путь к файлу установки в зашифрованном пакете Win32LobApp.|
+|минимумсуппортедвиндовсрелеасе|String|Значение минимального поддерживаемого выпуска Windows.|
+|дисплайверсион|String|Версия, отображаемая в UX для этого приложения.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -204,10 +205,10 @@ ms.locfileid: "48696435"
     "publisher": "String"
   },
   "setupFilePath": "String",
-  "minimumSupportedWindowsRelease": "String"
+  "minimumSupportedWindowsRelease": "String",
+  "displayVersion": "String"
 }
 ```
-
 
 
 

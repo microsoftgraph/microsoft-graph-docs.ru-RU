@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d2228052cdb4fdcd50c9008444c5a03b941a734c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0748b255faa5641dee9dce8c34ca460d935e68a2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727514"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49200283"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>Тип ресурса Ентерприсекодесигнингцертификате
 
@@ -34,13 +34,13 @@ ms.locfileid: "48727514"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |содержимое|Binary|Сертификат Windows корпоративный Code-Signing в формате необработанных данных.|
 |status|[цертификатестатус](../resources/intune-apps-certificatestatus.md)|Состояние сертификата подготовлено или не подготовлено. Возможные значения: `notProvisioned`, `provisioned`.|
 |subjectName|String|Имя субъекта для сертификата.|
 |subject|String|Значение субъекта для сертификата.|
-|иссуернаме|Строка|Имя поставщика сертификата.|
-|имени|Строка|Значение издателя для сертификата.|
+|иссуернаме|String|Имя поставщика сертификата.|
+|имени|String|Значение издателя для сертификата.|
 |expirationDateTime|DateTimeOffset|Дата окончания срока действия сертификата.|
 |уплоаддатетиме|DateTimeOffset|Дата и время отправки сертификата соконструирования.|
 
@@ -69,7 +69,6 @@ ms.locfileid: "48727514"
   "uploadDateTime": "String (timestamp)"
 }
 ```
-
 
 
 
