@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1575a5ad602bdb5f4a45520bf0957a89bbfe3141
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 87363436c9b2d88338a353e364340d754c56ceaa
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722910"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49198682"
 ---
 # <a name="prereleasefeatures-enum-type"></a>тип перечисления prereleaseFeatures
 
@@ -29,7 +29,6 @@ ms.locfileid: "48722910"
 |сеттингсонли|1,1|Только функции предварительной версии.|
 |сеттингсандекспериментатионс|2|Параметры и эксперименты, которые предварительно выпускают функции.|
 |notAllowed|4|Функции предварительной версии не разрешены.|
-
 
 
 

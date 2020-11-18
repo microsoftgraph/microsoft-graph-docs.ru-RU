@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 47cb2e4c4c611a4b697f7e1d7e1c600ba5dd5add
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2d28d608f93e861690b858a92f196ece025beb2c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693922"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49198229"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>тип перечисления Ратингунитедстатестелевисионтипе
 
@@ -33,7 +33,6 @@ ms.locfileid: "48693922"
 |паренталгуиданце|5 |TV-PG, родительский совет|
 |childrenAbove14|6 |TV-14, детей от 14 лет и выше|
 |взрослые|7 |Только для передачи телепередач-мА|
-
 
 
 

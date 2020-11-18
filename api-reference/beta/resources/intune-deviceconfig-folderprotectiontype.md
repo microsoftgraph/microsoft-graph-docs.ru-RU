@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bc508f3feaf1353d83a87cd0403f9ede2bbcad13
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 36ddb339db6710006a90e78b6f8eb2d298877077
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730488"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49198869"
 ---
 # <a name="folderprotectiontype-enum-type"></a>тип перечисления Фолдерпротектионтипе
 
@@ -30,7 +30,6 @@ ms.locfileid: "48730488"
 |аудитмоде|2|Разрешите функциональные возможности, но Создайте журналы.|
 |блоккдискмодификатион|4|Блокировать запись недоверенных приложений в секторах диска.|
 |аудитдискмодификатион|4 |Создание журналов при записи недоверенных приложений в секторах диска.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f6aa0777cb36e71d3ba6c71d4d589dae059e18ca
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: af27d4b637b3cb68ab8133392eb1a71fdce19b66
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726432"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49198494"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>тип перечисления Ратингфранцетелевисионтипе
 
@@ -31,7 +31,6 @@ ms.locfileid: "48726432"
 |agesAbove12|4|Не рекомендуется использовать классификацию-12 для детей в масштабе от 12|
 |agesAbove16|4 |Не рекомендуется использовать классификацию-16 для детей в 16|
 |agesAbove18|5 |Не рекомендуется использовать классификацию-18 для людей в 18|
-
 
 
 

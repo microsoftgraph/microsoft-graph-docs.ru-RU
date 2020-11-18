@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 98d360d220df9b94f1a13194885d576bcdf362da
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a5fecf749b7aacef1c9eb0c465889f37e080ddb3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732574"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49199121"
 ---
 # <a name="edgekioskmoderestrictiontype-enum-type"></a>тип перечисления Еджекиоскмодерестриктионтипе
 
@@ -30,7 +30,6 @@ ms.locfileid: "48732574"
 |нормалмоде|2|В обычном режиме (полная версия Microsoft EDGE).|
 |публикбровсингсинглеапп|4|Общедоступный обзор в режиме одного приложения.|
 |публикбровсингмултиапп|4 |Общедоступный обзор (InPrivate) в режиме нескольких приложений.|
-
 
 
 

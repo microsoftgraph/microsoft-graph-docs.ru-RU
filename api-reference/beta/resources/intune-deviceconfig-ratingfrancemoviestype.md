@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 579090e2172fc64993a822a8021570d78c01e539
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: df0a77ec6550a86f2707e0d4e74c08ccdf6fd89b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705654"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49198525"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>тип перечисления Ратингфранцемовиестипе
 
@@ -31,7 +31,6 @@ ms.locfileid: "48705654"
 |agesAbove12|4|Классификация не позволяет обменять пленку небольшими уровнями в соответствии с 12|
 |agesAbove16|4 |Классификация "16" запрещает обблокировка пленки мелкими уровнями в 16|
 |agesAbove18|5 |Категория "18" запрещает отбор незначительных элементов в 18|
-
 
 
 

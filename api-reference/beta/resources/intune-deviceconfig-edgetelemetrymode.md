@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 87663359f015d2b0ae854715b4ed7fe09a7c1973
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9a2ad7e97f9d957e4da278dad6dde3f686445e1a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728579"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49198883"
 ---
 # <a name="edgetelemetrymode-enum-type"></a>тип перечисления Еджетелеметримоде
 
@@ -29,7 +29,6 @@ ms.locfileid: "48728579"
 |Внутренняя|1,1|Разрешить отправку только журнала интрасети: Отправка только данных журнала браузера для сайтов интрасети|
 |свойства|2|Разрешить отправку только журнала Интернета: Отправка только данных журнала браузера для Интернет-сайтов|
 |интранетандинтернет|4|Разрешить отправку журнала интрасети и Интернета: отправка данных журнала браузера для интрасети и веб-сайтов|
-
 
 
 

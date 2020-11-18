@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5fee7a35e20461cec2fba40b34273d0d947416e1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b849da155f0431ba5fd505e04fac23e077753159
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728958"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49197879"
 ---
 # <a name="managementcertificatewiththumbprint-resource-type"></a>Тип ресурса Манажементцертификатевиссумбпринт
 
@@ -25,7 +25,7 @@ ms.locfileid: "48728958"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|отпечаток|Строка|Отпечаток сертификата управления|
+|отпечаток|String|Отпечаток сертификата управления|
 |certificate|String|Сертификат управления Base 64 с шифрованием|
 
 ## <a name="relationships"></a>Связи
@@ -45,7 +45,6 @@ ms.locfileid: "48728958"
   "certificate": "String"
 }
 ```
-
 
 
 

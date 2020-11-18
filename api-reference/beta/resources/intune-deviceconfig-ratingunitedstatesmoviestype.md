@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 22d2ff28e73034b4f46b3fdf9f0637e4c7a939f2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e8d3fe75f394279acdbd74489ac39041c4a47254
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693936"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49198362"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>тип перечисления Ратингунитедстатесмовиестипе
 
@@ -32,7 +32,6 @@ ms.locfileid: "48693936"
 |parentalGuidance13|4 |PG13, некоторые материалы могут быть неприемлемыми для детей 13|
 |ограниченной|5 |R для зрителей в разделе 17 требуется сопроводительный родитель или опекун взрослого|
 |взрослые|6 |NC17, только для взрослых|
-
 
 
 

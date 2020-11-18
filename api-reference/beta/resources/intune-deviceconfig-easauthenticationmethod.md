@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2f3f79f9f8ff7593c768c4d184ca3acbad2def69
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c741ceb63f779f11e706d26d3060c4e985e3fc16
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48711982"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49199282"
 ---
 # <a name="easauthenticationmethod-enum-type"></a>тип перечисления Еасаусентикатионмесод
 
@@ -28,7 +28,6 @@ ms.locfileid: "48711982"
 |усернамеандпассворд|нуль|Проверка подлинности с использованием имени пользователя и пароля.|
 |certificate|1,1|Проверка подлинности с помощью сертификата.|
 |дериведкредентиал|2|Проверка подлинности с использованием производных учетных данных.|
-
 
 
 

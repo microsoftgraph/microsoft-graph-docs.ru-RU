@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a5bebd514c4a24bd9a19b1a23c5b354c330d2bdf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9404f6a192b3ea78b2268083625923c107bd3204
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722846"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49197816"
 ---
 # <a name="managementconditionstatement-resource-type"></a>Тип ресурса Манажементкондитионстатемент
 
@@ -36,9 +36,9 @@ ms.locfileid: "48722846"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор оператора условия управления. Созданное системой значение, назначаемое при создании.|
-|displayName|Строка|Имя, определенное администратором оператора условия управления.|
-|description|Строка|Заданное администратором описание оператора условия управления.|
+|id|String|Уникальный идентификатор оператора условия управления. Созданное системой значение, назначаемое при создании.|
+|displayName|String|Имя, определенное администратором оператора условия управления.|
+|description|String|Заданное администратором описание оператора условия управления.|
 |createdDateTime|DateTimeOffset|Время создания оператора условия управления. Созданная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения оператора условия управления. Обновленная сторона службы.|
 |выражение|[манажементкондитионекспрессион](../resources/intune-fencing-managementconditionexpression.md)|Выражение оператора условия управления, используемое для оценки активации или деактивации оператора условия управления.|
@@ -77,7 +77,6 @@ ms.locfileid: "48722846"
   ]
 }
 ```
-
 
 
 

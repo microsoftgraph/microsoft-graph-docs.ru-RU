@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f71e2b7a4dcdc2563398e5d6e53fc50bc01aab6b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ccd21c6e4cd31d0546698b2e26461d429a0b6774
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707040"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49198404"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>тип перечисления Ратингунитедкингдоммовиестипе
 
@@ -34,7 +34,6 @@ ms.locfileid: "48707040"
 |agesAbove12Cinema|6 |12A, выпуск в кинотеатрах, подходящий для 12 лет и более|
 |agesAbove15|7 |15, подходит только для 15 лет и более ранних версий.|
 |взрослые|8 |Подходит только для взрослых|
-
 
 
 

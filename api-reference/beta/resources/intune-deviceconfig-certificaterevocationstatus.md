@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 22d2c3ff02af919ddc2f843e12d4a04aec974c13
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 89f0ce18f1f2d81373ac43497b6d3e55344b5a18
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695063"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49199618"
 ---
 # <a name="certificaterevocationstatus-enum-type"></a>тип перечисления Цертификатеревокатионстатус
 
@@ -25,12 +25,11 @@ ms.locfileid: "48695063"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Не отозван.|
+|Нет|нуль|Не отозван.|
 |закончен|1,1|Отзыв ожидается.|
 |опубликован|2|Выдана команда отзыва.|
 |сбоев|4|Не удалось выполнить отзыв.|
 |отозван|4 |Отозван.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1bce8f433ef965a0ef90acc72691e31e707d9293
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6d621aff1166f3ad71abf71b3c613ecca085f011
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735262"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49198731"
 ---
 # <a name="macossoftwareupdatecategorysummary-resource-type"></a>Тип ресурса Макоссофтвареупдатекатегорисуммари
 
@@ -26,19 +26,19 @@ ms.locfileid: "48735262"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Макоссофтвареупдатекатегорисуммариес](../api/intune-deviceconfig-macossoftwareupdatecategorysummary-list.md)|Коллекция [макоссофтвареупдатекатегорисуммари](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md)|Список свойств и связей объектов [макоссофтвареупдатекатегорисуммари](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md) .|
-|[Получение Макоссофтвареупдатекатегорисуммари](../api/intune-deviceconfig-macossoftwareupdatecategorysummary-get.md)|[макоссофтвареупдатекатегорисуммари](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md)|Чтение свойств и связей объекта [макоссофтвареупдатекатегорисуммари](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md) .|
-|[Создание Макоссофтвареупдатекатегорисуммари](../api/intune-deviceconfig-macossoftwareupdatecategorysummary-create.md)|[макоссофтвареупдатекатегорисуммари](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md)|Создание нового объекта [макоссофтвареупдатекатегорисуммари](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md) .|
+|[Получение Макоссофтвареупдатекатегорисуммари](../api/intune-deviceconfig-macossoftwareupdatecategorysummary-get.md)|[macOSSoftwareUpdateCategorySummary](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md)|Чтение свойств и связей объекта [макоссофтвареупдатекатегорисуммари](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md) .|
+|[Создание Макоссофтвареупдатекатегорисуммари](../api/intune-deviceconfig-macossoftwareupdatecategorysummary-create.md)|[macOSSoftwareUpdateCategorySummary](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md)|Создание нового объекта [макоссофтвареупдатекатегорисуммари](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md) .|
 |[Удаление Макоссофтвареупдатекатегорисуммари](../api/intune-deviceconfig-macossoftwareupdatecategorysummary-delete.md)|Нет|Удаляет объект [макоссофтвареупдатекатегорисуммари](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md).|
-|[Обновление Макоссофтвареупдатекатегорисуммари](../api/intune-deviceconfig-macossoftwareupdatecategorysummary-update.md)|[макоссофтвареупдатекатегорисуммари](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md)|Обновление свойств объекта [макоссофтвареупдатекатегорисуммари](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md) .|
+|[Обновление Макоссофтвареупдатекатегорисуммари](../api/intune-deviceconfig-macossoftwareupdatecategorysummary-update.md)|[macOSSoftwareUpdateCategorySummary](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md)|Обновление свойств объекта [макоссофтвареупдатекатегорисуммари](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|displayName|Строка|Имя отчета|
+|id|String|Ключ объекта.|
+|displayName|String|Имя отчета|
 |deviceId|String|ИДЕНТИФИКАТОР устройства.|
 |userId|String|Идентификатор пользователя.|
-|упдатекатегори|[макоссофтвареупдатекатегори](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|Тип обновления программного обеспечения. Возможные значения: `critical`, `configurationDataFile`, `firmware`, `other`.|
+|упдатекатегори|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|Тип обновления программного обеспечения. Возможные значения: `critical`, `configurationDataFile`, `firmware`, `other`.|
 |сукцессфулупдатекаунт|Int32|Количество успешных обновлений на устройстве|
 |фаиледупдатекаунт|Int32|Количество неудачных обновлений на устройстве|
 |тоталупдатекаунт|Int32|Общее количество обновлений на устройстве|
@@ -71,7 +71,6 @@ ms.locfileid: "48735262"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

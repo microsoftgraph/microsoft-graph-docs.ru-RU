@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fa1dfa4455a39c9d7fffff1ee95a739632cd49cd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 63e0c1ffaed029ca5ba010181c70ab0588135a36
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705927"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49198876"
 ---
 # <a name="emailsyncschedule-enum-type"></a>тип перечисления Емаилсинксчедуле
 
@@ -32,7 +32,6 @@ ms.locfileid: "48705927"
 |thirtyMinutes|4 |Синхронизация каждые 30 минут.|
 |сикстиминутес|5 |Синхронизация каждые 60 минут.|
 |баседонмюсаже|6 |Синхронизация с учетом использования.|
-
 
 
 

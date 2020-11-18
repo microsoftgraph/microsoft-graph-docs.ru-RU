@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 016940e5876d8f4878f9891b9462b2c1dd12704d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8bbf97eccb9e8d353b94f75867e2915550dac26e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732623"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49199114"
 ---
 # <a name="easservices-enum-type"></a>тип перечисления Еассервицес
 
@@ -25,13 +25,12 @@ ms.locfileid: "48732623"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Пока не задокументировано.|
+|Нет|нуль|Пока не задокументировано.|
 |calendars|1,1|Включает синхронизацию календарей.|
 |contacts|2|Включает синхронизацию контактов.|
-|email|4 |Включает синхронизацию электронной почты.|
+|рассылка|4 |Включает синхронизацию электронной почты.|
 |notes|8 |Включает синхронизацию заметок.|
 |напоминания|16 |Включает синхронизацию напоминаний.|
-
 
 
 

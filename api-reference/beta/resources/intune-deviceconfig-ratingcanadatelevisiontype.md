@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b29a70dc6f107f9c912bed92e603b5b565247964
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9f69dab6f2c58ac7d91139cf788218bf08493ca2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705703"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49198524"
 ---
 # <a name="ratingcanadatelevisiontype-enum-type"></a>тип перечисления Ратингканадателевисионтипе
 
@@ -33,7 +33,6 @@ ms.locfileid: "48705703"
 |паренталгуиданце|5 |PG, с родительским руководством|
 |agesAbove14|6 |Классификация 14 + предназначена для зрителей от 14 лет и старше|
 |agesAbove18|7 |18 + классификация предназначена для зрителей от 18 лет и старше|
-
 
 
 

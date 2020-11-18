@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5f1238c423fc12605c8ca2d3a8828d814a74b288
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1d04a83e732f0a97dc33462e80e635e59dd50989
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701580"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49199317"
 ---
 # <a name="dmaguarddeviceenumerationpolicytype-enum-type"></a>тип перечисления Дмагуарддевицеенумератионполицитипе
 
@@ -28,7 +28,6 @@ ms.locfileid: "48701580"
 |девицедефаулт|нуль|Значение по умолчанию. Устройства с перераспределением DMA несовместимые драйверы будут перечисляться только после того, как пользователь разблокирует экран.|
 |блоккалл|1,1|Устройства с пересопоставлением DMA несовместимые драйверы никогда не будут иметь разрешения на запуск и выполнение DMA в любое время.|
 |allowAll|2|Все внешние устройства с поддержкой прямого доступа к памяти PCIe будут перечисляться в любое время.|
-
 
 
 

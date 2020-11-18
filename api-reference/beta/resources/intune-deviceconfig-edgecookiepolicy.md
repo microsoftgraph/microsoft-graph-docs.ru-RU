@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 045efa4e72c4f5d530832f5988203d7cc00c7329
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 814a783e032e6108f02aaad036312f110423d8a7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732616"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49199135"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>тип перечисления Еджекукиеполици
 
@@ -29,7 +29,6 @@ ms.locfileid: "48732616"
 |разрешить|1,1|Разрешить.|
 |блокксирдпарти|2|Блокировать только сторонние файлы cookie.|
 |блоккалл|4|Блокировать все файлы cookie.|
-
 
 
 
