@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2c856cb899cb2379c9d0abf2cd459e289beea82c
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 2f14ed26169c659354af16963e03e449f246421c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000990"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49214387"
 ---
 # <a name="update-accessreviewinstancedecisionitem"></a>Обновление АкцессревиевинстанцедеЦисионитем
 
@@ -47,10 +47,10 @@ PATCH /me/pendingAccessReviewInstances/{instance-id}/decisions/{decision-id}
 
 | Свойство     | Тип       | Описание |
 |:-------------|:------------|:------------|
-| решении  | Строка | Решение о доступе к проверяемой сущности. Возможные значения: `Approve` `Deny` `NotReviewed` `DontKnow` . Обязательный.  |
-|  текста | Строка | Контекст проверки, предоставленной администраторам. Является обязательным, если Жустификатионрекуиредонаппровал имеет значение true для Акцессревиевсчедуледефинитион.  |
+| решении  | String | Решение о доступе к проверяемой сущности. Возможные значения: `Approve` `Deny` `NotReviewed` `DontKnow` . Обязательный.  |
+|  текста | String | Контекст проверки, предоставленной администраторам. Является обязательным, если Жустификатионрекуиредонаппровал имеет значение true для Акцессревиевсчедуледефинитион.  |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `204, NoContent` код отклика и без текста отклика.
 
 ### <a name="request"></a>Запрос
@@ -58,6 +58,8 @@ PATCH /me/pendingAccessReviewInstances/{instance-id}/decisions/{decision-id}
 
 Это пример утверждающего доступа для пользователя, представленного в `accessReviewInstanceDecisionItem` .
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accessReviewInstanceDecisionItem"
@@ -70,6 +72,24 @@ PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-
   "justification": "I trust this person"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accessreviewinstancedecisionitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accessreviewinstancedecisionitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-accessreviewinstancedecisionitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewinstancedecisionitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

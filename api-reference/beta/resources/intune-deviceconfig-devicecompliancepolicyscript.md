@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e1a87354782ff1e8b4d90eb3c6eb5c69e1332fd4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f1299848a53ea924278af06a71db9f1554849b53
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731425"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216166"
 ---
 # <a name="devicecompliancepolicyscript-resource-type"></a>Тип ресурса Девицекомплианцеполицискрипт
 
@@ -25,7 +25,7 @@ ms.locfileid: "48731425"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|девицекомплианцескриптид|Строка|Идентификатор сценария соответствия требованиям устройства.|
+|девицекомплианцескриптид|String|Идентификатор сценария соответствия требованиям устройства.|
 |рулесконтент|Binary|JSON правил.|
 
 ## <a name="relationships"></a>Связи
@@ -45,7 +45,6 @@ ms.locfileid: "48731425"
   "rulesContent": "binary"
 }
 ```
-
 
 
 

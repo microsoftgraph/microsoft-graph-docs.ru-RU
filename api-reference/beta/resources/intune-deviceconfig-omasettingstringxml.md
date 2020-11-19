@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 177942dd3374b063ecd7b26c657e152643d09288
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b4ac7c46dd21ffb9e9a31223822cf304e2b80c4f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722945"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49215725"
 ---
 # <a name="omasettingstringxml-resource-type"></a>Тип ресурса omaSettingStringXml
 
@@ -28,9 +28,10 @@ ms.locfileid: "48722945"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|description|Строка|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|displayName|String|Отображаемое имя. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|String|Описание. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|isEncrypted|Boolean|Указывает, зашифровано ли поле "значение". Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |fileName|String|Имя файла, связанное со свойством Value (XML).|
 |value|Двоичный|Значение (массив байтов в кодировке UTF8).|
 
@@ -50,11 +51,11 @@ ms.locfileid: "48722945"
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
+  "isEncrypted": true,
   "fileName": "String",
   "value": "binary"
 }
 ```
-
 
 
 

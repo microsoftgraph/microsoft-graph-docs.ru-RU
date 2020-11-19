@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3d073dbf0b6f2bdb17fb9649596c6ee04332d81c
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 187f60bbae38f5392c8facbf3e832f3b1f42dceb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000986"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49214219"
 ---
 # <a name="list-accessreviewscheduledefinition"></a>Список Акцессревиевсчедуледефинитион
 
@@ -33,7 +33,7 @@ ms.locfileid: "49000986"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL  |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений                            | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL |
+|Приложение                            | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL |
 
  Вошедшего в систему пользователя также должен находиться в роли каталога, который позволяет им читать проверку доступа.
 
@@ -48,13 +48,15 @@ GET /identityGovernance/accessReviews/definitions
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и массив объектов [акцессревиевсчедуледефинитион](../resources/accessreviewscheduledefinition.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос
 В приведенном ниже примере показан запрос на получение всех рядов проверки доступа в клиенте.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accessReviewScheduleDefinition"
@@ -62,6 +64,24 @@ GET /identityGovernance/accessReviews/definitions
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions?$top=100&$skip=0
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewscheduledefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewscheduledefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-accessreviewscheduledefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewscheduledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 ### <a name="response"></a>Отклик

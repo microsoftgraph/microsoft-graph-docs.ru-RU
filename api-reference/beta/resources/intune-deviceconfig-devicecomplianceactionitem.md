@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 75f2e083cca3742297b8bed2c878ff35460ccf73
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d1aa888b926cd0e9d4435e23b0b281618978d2e2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735857"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216187"
 ---
 # <a name="devicecomplianceactionitem-resource-type"></a>Тип ресурса deviceComplianceActionItem
 
@@ -34,7 +34,7 @@ ms.locfileid: "48735857"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |gracePeriodHours|Int32|Время ожидания (в часах) до применения действия. Допустимые значения: от 0 до 8760|
 |actionType|[deviceComplianceActionType](../resources/intune-deviceconfig-devicecomplianceactiontype.md)|Действия, которые необходимо выполнить. Возможные значения: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`, `pushNotification`, `remoteLock`.|
 |notificationTemplateId|String|Используемый шаблон сообщения уведомления|
@@ -63,7 +63,6 @@ ms.locfileid: "48735857"
   ]
 }
 ```
-
 
 
 

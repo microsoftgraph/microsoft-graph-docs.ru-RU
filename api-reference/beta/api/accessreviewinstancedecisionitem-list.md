@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: aa7389c8779d667d401f6f7ca421ea0d405d5d33
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 65f74fc94af433d0ecd545a33cef4e0022c387d3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001007"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49214375"
 ---
 # <a name="list-accessreviewinstancedecisionitem"></a>Список АкцессревиевинстанцедеЦисионитем
 
@@ -32,7 +32,7 @@ ms.locfileid: "49001007"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL  |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений                            | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL |
+|Приложение                            | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL |
 
  Вошедшего в систему пользователя также должен находиться в роли каталога, который позволяет им читать проверку доступа.
 
@@ -47,13 +47,15 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{ins
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и массив объектов [акцессревиевинстанцедеЦисионитем](../resources/accessreviewinstance.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос
 В приведенном ниже примере показан запрос на получение всех решений для экземпляра проверки доступа.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accessReviewInstanceDecisionItem"
@@ -61,6 +63,24 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances/{ins
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-444404f3baa6/instances/14444cdb-6a18-4c08-ba2c-48c02f0a0138/decisions?$top=100&$skip=0
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewinstancedecisionitem-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewinstancedecisionitem-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-accessreviewinstancedecisionitem-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstancedecisionitem-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

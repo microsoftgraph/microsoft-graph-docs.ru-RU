@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: da4160b192cdeee1ade6808c6973811808e16f6b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a7474218e9e0249a5b077ce923143f2dca644081
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725017"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49213929"
 ---
 # <a name="list-devicecompliancescheduledactionforrules"></a>List deviceComplianceScheduledActionForRules
 
@@ -29,7 +29,7 @@ ms.locfileid: "48725017"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,10 +46,10 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/schedu
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию объектов [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -77,7 +77,6 @@ Content-Length: 208
   ]
 }
 ```
-
 
 
 

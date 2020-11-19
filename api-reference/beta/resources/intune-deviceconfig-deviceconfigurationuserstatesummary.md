@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 946ae4975b740da95d71122a50be420e235eb86a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cf4609ed78c0596e217f6a8af48bf169fe2b29f4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726502"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216138"
 ---
 # <a name="deviceconfigurationuserstatesummary-resource-type"></a>Тип ресурса Девицеконфигуратионусерстатесуммари
 
@@ -31,7 +31,7 @@ ms.locfileid: "48726502"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |unknownUserCount|Int32|Количество неизвестных пользователей|
 |notApplicableUserCount|Int32|Количество неприменимых пользователей|
 |compliantUserCount|Int32|Число соответствующих пользователей|
@@ -64,7 +64,6 @@ ms.locfileid: "48726502"
   "conflictUserCount": 1024
 }
 ```
-
 
 
 

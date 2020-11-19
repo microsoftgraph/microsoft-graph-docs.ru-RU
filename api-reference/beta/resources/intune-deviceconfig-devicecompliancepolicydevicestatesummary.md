@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6bd1c7a322d98034197edae2a0a8439fdbb2b204
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f9eac21d80d4241c9fb3a1b202e94cd5ef2d07ca
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731431"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216173"
 ---
 # <a name="devicecompliancepolicydevicestatesummary-resource-type"></a>Тип ресурса deviceCompliancePolicyDeviceStateSummary
 
@@ -33,7 +33,7 @@ ms.locfileid: "48731431"
 |:---|:---|:---|
 |inGracePeriodCount|Int32|Количество устройств, для которых действует льготный период.|
 |configManagerCount|Int32|Количество устройств, для которых System Center Configuration Manager управляет соответствием требованиям.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств.|
 |notApplicableDeviceCount|Int32|Количество неприменимых устройств.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
@@ -68,7 +68,6 @@ ms.locfileid: "48731431"
   "conflictDeviceCount": 1024
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 676d787bfcbb42576ac6403b8deff318fac0ba60
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 26ef3709d37cf6c83b065ad572aa3db383df791f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728876"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49213814"
 ---
 # <a name="update-devicecomplianceuseroverview"></a>Обновление объекта deviceComplianceUserOverview
 
@@ -29,7 +29,7 @@ ms.locfileid: "48728876"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,14 +46,14 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/user
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [deviceComplianceUserOverview](../resources/intune-deviceconfig-devicecomplianceuseroverview.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceComplianceUserOverview](../resources/intune-deviceconfig-devicecomplianceuseroverview.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих пользователей.|
 |notApplicableCount|Int32|Количество неприменимых пользователей|
 |successCount|Int32|Количество успешных пользователей.|
@@ -110,7 +110,6 @@ Content-Length: 352
   "configurationVersion": 4
 }
 ```
-
 
 
 

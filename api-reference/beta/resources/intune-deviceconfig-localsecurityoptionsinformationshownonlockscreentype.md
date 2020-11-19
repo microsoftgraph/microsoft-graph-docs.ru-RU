@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6fd647dac3fb9392c2246efa25628353c6a254bd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 17c0bdd2db503ec7d044b2b611f27a66e6d00267
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690688"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49215844"
 ---
 # <a name="localsecurityoptionsinformationshownonlockscreentype-enum-type"></a>тип перечисления Локалсекуритйоптионсинформатионшовнонлоккскринтипе
 
@@ -29,7 +29,6 @@ ms.locfileid: "48690688"
 |усердисплайнамедомаинусер|1,1|Отображаемое имя пользователя, имена доменов и пользователей|
 |усердисплайнамеонли|2|Только отображаемое имя пользователя|
 |донотдисплайусер|4|Не отображать сведения о пользователе|
-
 
 
 

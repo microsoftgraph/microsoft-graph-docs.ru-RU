@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d392ec953ba802ccda544238c061d1fbb78eb029
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 59ae60a4e438bf2186617c8dbb7c110322519977
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708895"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216411"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>тип перечисления Апплевпнконнектионтипе
 
@@ -36,14 +36,13 @@ ms.locfileid: "48708895"
 |ciscoAnyConnectV2|8 |Cisco Аниконнект v2.|
 |Элемент paloaltoglobalprotect|9 |Palo Alto сети Глобалпротект.|
 |зскалерприватеакцесс|10 |Частный доступ зскалер.|
-|f5Access2018|-11:00|F5 доступ 2018.|
+|f5Access2018|11 |F5 доступ 2018.|
 |Цитриксссо|12 |Единый вход Citrix.|
 |paloAltoGlobalProtectV2|13 |Palo Alto сети Глобалпротект v2.|
 |Клиентских|14 |Клиентских.|
 |Группа|15 |Группа.|
 |микрософттуннел|16 |Туннель Microsoft.|
 |нетмотионмобилити|17 |Мобильность Нетмотион.|
-
 
 
 

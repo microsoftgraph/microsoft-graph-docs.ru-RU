@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f1e0266151c2b32baa0c5d66ea1341eee6da28b5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b25820e4356fadaa4f991c103500a8ef8f5c0122
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725507"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49214850"
 ---
 # <a name="comanageddevicessummary-resource-type"></a>Тип ресурса Команажеддевицессуммари
 
@@ -59,7 +59,6 @@ ms.locfileid: "48725507"
   "totalComanagedCount": 1024
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d4df79fcc8a532fa4fe026cffee0b21100c3963a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b9f186d1d8750df000bcc6f3f7a461d5b00e1152
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733072"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49214126"
 ---
 # <a name="update-devicecompliancepolicydevicestatesummary"></a>Обновление объекта deviceCompliancePolicyDeviceStateSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "48733072"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ PATCH /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md).
@@ -55,7 +55,7 @@ PATCH /deviceManagement/deviceCompliancePolicyDeviceStateSummary
 |:---|:---|:---|
 |inGracePeriodCount|Int32|Количество устройств, для которых действует льготный период.|
 |configManagerCount|Int32|Количество устройств, для которых System Center Configuration Manager управляет соответствием требованиям.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |unknownDeviceCount|Int32|Количество неизвестных устройств.|
 |notApplicableDeviceCount|Int32|Количество неприменимых устройств.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
@@ -113,7 +113,6 @@ Content-Length: 398
   "conflictDeviceCount": 3
 }
 ```
-
 
 
 

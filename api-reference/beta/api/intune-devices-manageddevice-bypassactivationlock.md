@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3164be770422f64740de28dce427d2810817ff58
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2e0f237f1a1ac1f8202c851d665360d6d675480c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731731"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49212813"
 ---
 # <a name="bypassactivationlock-action"></a>Действие bypassActivationLock
 
@@ -29,7 +29,7 @@ ms.locfileid: "48731731"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.PriviligedOperation.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.PriviligedOperation.All|
+|Приложение|DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -52,10 +52,10 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -71,7 +71,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

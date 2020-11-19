@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 38f6b56d33aa3c6aaec1ed6a993e8b6b24d201fb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 862637b0ffdc78f934cc069286286d5f78eeaa1e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728748"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49212974"
 ---
 # <a name="get-devicecompliancescriptrunsummary"></a>Получение Девицекомплианцескриптрунсуммари
 
@@ -29,7 +29,7 @@ ms.locfileid: "48728748"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,10 +49,10 @@ GET /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/runSumm
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [девицекомплианцескриптрунсуммари](../resources/intune-devices-devicecompliancescriptrunsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -82,7 +82,6 @@ Content-Length: 377
   }
 }
 ```
-
 
 
 

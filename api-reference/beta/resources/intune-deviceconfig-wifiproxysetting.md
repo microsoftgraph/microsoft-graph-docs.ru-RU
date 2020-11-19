@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4d4da3526cd8c3ab1eefbc04520cfa8c29b07c9f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d8f445b91fb2a700ccb7c82542602b78b227db8b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727437"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49215396"
 ---
 # <a name="wifiproxysetting-enum-type"></a>тип перечисления Вифипроксисеттинг
 
@@ -25,10 +25,9 @@ Wi-Fi параметры прокси-сервера.
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Нет прокси-сервера.|
+|Нет|нуль|Нет прокси-сервера.|
 |Вручную|1,1|Параметры прокси-сервера вручную через адрес и порт.|
 |Автоматически|2|Параметры автоматического прокси-сервера с помощью URL-адреса.|
-
 
 
 

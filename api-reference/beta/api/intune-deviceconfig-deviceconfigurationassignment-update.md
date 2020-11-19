@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6cce3252be41fc05f47db76abddeddec73f85f3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 47c634b8ee89839c32fb6d0d1c9e6a009f29681d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48689904"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49213758"
 ---
 # <a name="update-deviceconfigurationassignment"></a>Обновление объекта deviceConfigurationAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "48689904"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,17 +55,17 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ назначения.|
+|id|String|Ключ назначения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Источник назначения для конфигурации устройства, Direct или в упаковке/политике. Это свойство доступно только для чтения. Возможные значения: `direct`, `policySets`.|
-|Идентификатор|Строка|Идентификатор источника назначения. Это свойство доступно только для чтения.|
+|Идентификатор|String|Идентификатор источника назначения. Это свойство доступно только для чтения.|
 
 
 
@@ -112,7 +112,6 @@ Content-Length: 434
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

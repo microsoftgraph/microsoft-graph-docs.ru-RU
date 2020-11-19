@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 249a5081e63bd94885bdee059ae1521e03c52e71
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 381febc21db2951393b42689acecf4b729eb0b0f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724630"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216537"
 ---
 # <a name="androidforworkrequiredpasswordtype-enum-type"></a>тип перечисления Андроидфорворкрекуиредпассвордтипе
 
@@ -33,7 +33,6 @@ ms.locfileid: "48724630"
 |атлеасталфабетик|5 |По крайней мере необходимо указать по крайней мере буквенный пароль.|
 |атлеасталфанумерик|6 |Необходимо указать по крайней мере буквенно-цифровые пароли.|
 |алфанумериквиссимболс|7 |По крайней мере буквенно-цифровые символы и пароль не требуются.|
-
 
 
 

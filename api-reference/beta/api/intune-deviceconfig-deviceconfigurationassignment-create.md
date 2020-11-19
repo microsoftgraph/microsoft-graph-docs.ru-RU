@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 44fe4ceeed762c122d6ef4915813dc23924924bd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f90533687916a8b796331cb4b15d4e0d5ea7ac28
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724875"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49213786"
 ---
 # <a name="create-deviceconfigurationassignment"></a>Создание объекта deviceConfigurationAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "48724875"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,17 +55,17 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта deviceConfigurationAssignment в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceConfigurationAssignment.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ назначения.|
+|id|String|Ключ назначения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения для конфигурации устройств.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Источник назначения для конфигурации устройства, Direct или в упаковке/политике. Это свойство доступно только для чтения. Возможные значения: `direct`, `policySets`.|
-|Идентификатор|Строка|Идентификатор источника назначения. Это свойство доступно только для чтения.|
+|Идентификатор|String|Идентификатор источника назначения. Это свойство доступно только для чтения.|
 
 
 
@@ -112,7 +112,6 @@ Content-Length: 434
   "sourceId": "Source Id value"
 }
 ```
-
 
 
 

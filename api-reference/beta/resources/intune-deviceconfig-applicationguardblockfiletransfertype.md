@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6bd5cda8a2eaaf11ad78772fb67cfd72e4e7a4fb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8577d8e40c545e47deafbffecc78442342405159
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708881"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216285"
 ---
 # <a name="applicationguardblockfiletransfertype-enum-type"></a>тип перечисления Аппликатионгуардблоккфилетрансфертипе
 
@@ -30,7 +30,6 @@ ms.locfileid: "48708881"
 |блоккимажефиле|2|Блокировка буфера обмена для передачи файла изображения|
 |блоккноне|4|Ни текстовый файл, ни файл изображения не заблокирован для передачи|
 |блокктекстфиле|4 |Блокировка буфера обмена для передачи текстового файла|
-
 
 
 

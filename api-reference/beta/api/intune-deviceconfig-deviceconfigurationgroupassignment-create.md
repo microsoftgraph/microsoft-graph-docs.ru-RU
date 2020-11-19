@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 248b654418347ba23ebb1a270ac5587482557859
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ff2b3412317fb19ee4a38e0dbbcbef19ce420443
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735003"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49213513"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>Создание deviceConfigurationGroupAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "48735003"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -55,20 +55,20 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта deviceConfigurationGroupAssignment в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании deviceConfigurationGroupAssignment.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|таржетграупид|Строка|Идентификатор группы AAD, на которую направляться конфигурация устройства.|
-|excludeGroup|Логический|Указывает, следует ли исключить эту группу. Значения по умолчанию, включаемые в группу|
+|id|String|Ключ объекта.|
+|таржетграупид|String|Идентификатор группы AAD, на которую направляться конфигурация устройства.|
+|excludeGroup|Boolean|Указывает, следует ли исключить эту группу. Значения по умолчанию, включаемые в группу|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -101,7 +101,6 @@ Content-Length: 195
   "excludeGroup": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ad9484fd19d73e931abf12ff2e4af8cf5a09e793
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 86607a33e92aac13c93941eb4290399011e8aa94
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48704100"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49213190"
 ---
 # <a name="compare-function"></a>Функция Compare
 
@@ -29,7 +29,7 @@ ms.locfileid: "48704100"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ GET /deviceManagement/intents/{deviceManagementIntentId}/compare
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -88,7 +88,6 @@ Content-Length: 364
   ]
 }
 ```
-
 
 
 

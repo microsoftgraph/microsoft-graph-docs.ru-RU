@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7972332c6340facfc1acd20ec1099670d50b4e05
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c8a5b7eccd7fc137ee5dda5d815de307ad5d12de
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727426"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49215536"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>тип перечисления Велкомескринмитингинформатион
 
@@ -28,7 +28,6 @@ ms.locfileid: "48727426"
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
 |шоворганизерандтимеонли|1,1|Показывать только организатор и время.|
 |шоворганизерандтимеандсубжект|2|Отображение организатора, времени и темы (тема скрыта для частных собраний).|
-
 
 
 

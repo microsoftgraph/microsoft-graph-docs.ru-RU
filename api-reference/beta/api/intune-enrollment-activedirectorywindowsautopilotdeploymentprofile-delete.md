@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aad4f705ddeb9c6606631dc6a28c13a9f2d22698
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7e438afd986cdc91134f61ee950161e44073b2fb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724229"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49212652"
 ---
 # <a name="delete-activedirectorywindowsautopilotdeploymentprofile"></a>Удаление Активедиректоривиндовсаутопилотдеплойментпрофиле
 
@@ -29,7 +29,7 @@ ms.locfileid: "48724229"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -48,7 +48,7 @@ DELETE /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -67,7 +67,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeploym
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

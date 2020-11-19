@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3ab38a5dff42bf29dbda301c5dbdb102972716fb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f89ac80db5fdb4425fc87d404c027e787172f0ea
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707033"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49215669"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>Тип ресурса Рестриктедаппсвиолатион
 
@@ -34,13 +34,13 @@ ms.locfileid: "48707033"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта. Состоит из accountId, deviceId, Полициид и userId|
+|id|String|Уникальный идентификатор объекта. Состоит из accountId, deviceId, Полициид и userId|
 |userId|String|Уникальный идентификатор пользователя, должен быть GUID|
 |userName|String|Имя пользователя|
-|манажеддевицеид|Строка|Уникальный идентификатор управляемого устройства, должен быть GUID|
+|манажеддевицеид|String|Уникальный идентификатор управляемого устройства, должен быть GUID|
 |deviceName|String|Имя устройства|
-|девицеконфигуратионид|Строка|Уникальный идентификатор профиля конфигурации устройства, должен быть GUID|
-|девицеконфигуратионнаме|Строка|Имя профиля конфигурации устройства|
+|девицеконфигуратионид|String|Уникальный идентификатор профиля конфигурации устройства, должен быть GUID|
+|девицеконфигуратионнаме|String|Имя профиля конфигурации устройства|
 |platformType|[полициплатформтипе](../resources/intune-shared-policyplatformtype.md)|Тип платформы. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `all`.|
 |restrictedAppsState|[restrictedAppsState](../resources/intune-deviceconfig-restrictedappsstate.md)|Состояние ограниченных приложений. Возможные значения: `prohibitedApps`, `notApprovedApps`.|
 |restrictedApps|Коллекция [манажеддевицерепортедапп](../resources/intune-deviceconfig-manageddevicereportedapp.md)|Список нарушенных приложений с ограниченным доступом|
@@ -76,7 +76,6 @@ ms.locfileid: "48707033"
   ]
 }
 ```
-
 
 
 

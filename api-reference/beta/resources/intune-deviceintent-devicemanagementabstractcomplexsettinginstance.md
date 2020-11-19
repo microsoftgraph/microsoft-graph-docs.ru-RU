@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f9a96befe9bf00e8b964ca571675589d5ec375da
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 815a52e765a47257df4f9add18de5bdf223b621b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703743"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49214871"
 ---
 # <a name="devicemanagementabstractcomplexsettinginstance-resource-type"></a>Тип ресурса Девицеманажементабстракткомплекссеттингинстанце
 
@@ -37,10 +37,10 @@ ms.locfileid: "48703743"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор экземпляра параметра, унаследованный от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|дефинитионид|Строка|Идентификатор определения параметра для этого экземпляра, унаследованного от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|валуежсон|Строка|Представление JSON значения, наследуемого от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
-|имплементатионид|Строка|Идентификатор определения для выбранной реализации этого сложного параметра|
+|id|String|Идентификатор экземпляра параметра, унаследованный от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|дефинитионид|String|Идентификатор определения параметра для этого экземпляра, унаследованного от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|валуежсон|String|Представление JSON значения, наследуемого от [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|
+|имплементатионид|String|Идентификатор определения для выбранной реализации этого сложного параметра|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -64,7 +64,6 @@ ms.locfileid: "48703743"
   "implementationId": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf8d95b499c6ccb0ab9c1f9d314a84ec2de67002
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8986e5e224c63a61e1958e6a86047eaa0e8d235a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734422"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49213030"
 ---
 # <a name="update-devicemanagementintentuserstate"></a>Обновление Девицеманажементинтентусерстате
 
@@ -29,7 +29,7 @@ ms.locfileid: "48734422"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,14 +46,14 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}/userStates/{deviceMan
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицеманажементинтентусерстате](../resources/intune-deviceintent-devicemanagementintentuserstate.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементинтентусерстате](../resources/intune-deviceintent-devicemanagementintentuserstate.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор|
+|id|String|Идентификатор|
 |userPrincipalName|String|Имя участника-пользователя, сообщаемое на устройстве|
 |userName|String|Имя пользователя, сообщаемое на устройстве|
 |deviceCount|Int32|Количество устройств, принадлежащие пользователю для намерения|
@@ -101,7 +101,6 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
-
 
 
 

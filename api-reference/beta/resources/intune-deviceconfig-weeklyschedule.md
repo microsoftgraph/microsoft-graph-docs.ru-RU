@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c04f7abb785d3f1d0488f15fa9b809a5cf81b450
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4c572cd16f1a327f14c7b888d8af24bee579fb30
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727444"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49215550"
 ---
 # <a name="weeklyschedule-enum-type"></a>тип перечисления Виклисчедуле
 
@@ -35,7 +35,6 @@ ms.locfileid: "48727444"
 |пятницам|7 |Пятницам.|
 |субботу|8 |Субботу.|
 |носчедуледскан|9 |Без запланированного сканирования|
-
 
 
 

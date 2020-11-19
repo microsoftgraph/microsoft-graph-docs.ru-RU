@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 621ce758b439bff644dd8849747e4dc9e05b7bcf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 21751d0d5bd0d4ab16959ba0a467327168665a72
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734086"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49212568"
 ---
 # <a name="updatedeviceprofileassignment-action"></a>Действие updateDeviceProfileAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "48734086"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -82,7 +82,6 @@ Content-length: 51
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

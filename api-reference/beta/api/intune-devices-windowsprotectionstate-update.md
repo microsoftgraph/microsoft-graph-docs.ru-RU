@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 42e44f3d5fc96dd382435502c82b187f58207709
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6c5317326018404986a63243678455c59302683f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724243"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49212694"
 ---
 # <a name="update-windowsprotectionstate"></a>Обновление windowsProtectionState
 
@@ -29,7 +29,7 @@ ms.locfileid: "48724243"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,35 +46,38 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для объекта состояния защиты устройства. Это идентификатор устройства для устройства.|
-|малварепротектионенаблед|Логический|Защита от вредоносных программ включена или нет|
+|id|String|Уникальный идентификатор для объекта состояния защиты устройства. Это идентификатор устройства для устройства.|
+|малварепротектионенаблед|Boolean|Защита от вредоносных программ включена или нет|
 |девицестате|[виндовсдевицехеалсстате](../resources/intune-devices-windowsdevicehealthstate.md)|Состояние компьютера (например, очистка или ожидание полного сканирования или Ожидание перезагрузки и т. д.). Возможные значения: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
-|реалтимепротектионенаблед|Логический|Защита в режиме реального времени включена или нет?|
-|нетворкинспектионсистеменаблед|Логический|Система проверки сети включена или нет?|
-|куиккскановердуе|Логический|Быстрая проверка просрочена или нет?|
-|фуллскановердуе|Логический|Полная проверка просрочена или нет?|
-|сигнатуреупдатеовердуе|Логический|Подпись устарела или нет?|
-|ребутрекуиред|Логический|Требуется перезагрузка или нет?|
-|фуллсканрекуиред|Логический|Необходима полная проверка или нет?|
-|енгиневерсион|Строка|Текущая версия модуля Endpoint Protection|
-|сигнатуреверсион|Строка|Текущая версия определений вредоносных программ|
-|антималвареверсион|Строка|Текущая версия защиты от вредоносных программ|
+|реалтимепротектионенаблед|Boolean|Защита в режиме реального времени включена или нет?|
+|нетворкинспектионсистеменаблед|Boolean|Система проверки сети включена или нет?|
+|куиккскановердуе|Boolean|Быстрая проверка просрочена или нет?|
+|фуллскановердуе|Boolean|Полная проверка просрочена или нет?|
+|сигнатуреупдатеовердуе|Boolean|Подпись устарела или нет?|
+|ребутрекуиред|Boolean|Требуется перезагрузка или нет?|
+|фуллсканрекуиред|Boolean|Необходима полная проверка или нет?|
+|енгиневерсион|String|Текущая версия модуля Endpoint Protection|
+|сигнатуреверсион|String|Текущая версия определений вредоносных программ|
+|антималвареверсион|String|Текущая версия защиты от вредоносных программ|
 |ласткуиккскандатетиме|DateTimeOffset|Дата и время последнего быстрого сканирования|
 |ластфуллскандатетиме|DateTimeOffset|Дата и время последнего быстрого сканирования|
-|ласткуиккскансигнатуреверсион|Строка|Последняя версия подписи быстрого сканирования|
-|ластфуллскансигнатуреверсион|Строка|Версия последней полной проверки подписи|
+|ласткуиккскансигнатуреверсион|String|Последняя версия подписи быстрого сканирования|
+|ластфуллскансигнатуреверсион|String|Версия последней полной проверки подписи|
 |lastReportedDateTime|DateTimeOffset|Последнее состояние работоспособности устройства в отчете о времени|
+|продуктстатус|[виндовсдефендерпродуктстатус](../resources/intune-devices-windowsdefenderproductstatus.md)|Состояние продукта антивирусной программы "Защитник Windows". Возможные значения:,,,,,,,,,,, `noStatus` `serviceNotRunning` `serviceStartedWithoutMalwareProtection` `pendingFullScanDueToThreatAction` `pendingRebootDueToThreatAction` `pendingManualStepsDueToThreatAction` `avSignaturesOutOfDate` `asSignaturesOutOfDate` `noQuickScanHappenedForSpecifiedPeriod` `noFullScanHappenedForSpecifiedPeriod` `systemInitiatedScanInProgress` ,,,,,,, `systemInitiatedCleanInProgress` `samplesPendingSubmission` , `productRunningInEvaluationMode` , `productRunningInNonGenuineMode` , `productExpired` `offlineScanRequired` `serviceShutdownAsPartOfSystemShutdown` `threatRemediationFailedCritically` `threatRemediationFailedNonCritically` `noStatusFlagsSet` `platformOutOfDate` `platformUpdateInProgress` `platformAboutToBeOutdated` `signatureOrPlatformEndOfLifeIsPastOrIsImpending` `windowsSModeSignaturesInUseOnNonWin10SInstall` ,,,,,,,,,,,,,,,,,.|
+|исвиртуалмачине|Boolean|Указывает, является ли устройство виртуальной машиной.|
+|тамперпротектионенаблед|Boolean|Указывает, включена ли функция защиты от несанкционированного защитника Windows.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -84,7 +87,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/windowsProtectionState
 Content-type: application/json
-Content-length: 865
+Content-length: 971
 
 {
   "@odata.type": "#microsoft.graph.windowsProtectionState",
@@ -104,7 +107,10 @@ Content-length: 865
   "lastFullScanDateTime": "2017-01-01T00:01:44.9405639-08:00",
   "lastQuickScanSignatureVersion": "Last Quick Scan Signature Version value",
   "lastFullScanSignatureVersion": "Last Full Scan Signature Version value",
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "productStatus": "serviceNotRunning",
+  "isVirtualMachine": true,
+  "tamperProtectionEnabled": true
 }
 ```
 
@@ -113,7 +119,7 @@ Content-length: 865
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 914
+Content-Length: 1020
 
 {
   "@odata.type": "#microsoft.graph.windowsProtectionState",
@@ -134,10 +140,12 @@ Content-Length: 914
   "lastFullScanDateTime": "2017-01-01T00:01:44.9405639-08:00",
   "lastQuickScanSignatureVersion": "Last Quick Scan Signature Version value",
   "lastFullScanSignatureVersion": "Last Full Scan Signature Version value",
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "productStatus": "serviceNotRunning",
+  "isVirtualMachine": true,
+  "tamperProtectionEnabled": true
 }
 ```
-
 
 
 

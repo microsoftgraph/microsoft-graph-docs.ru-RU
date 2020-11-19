@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6f54fe9baa3773412229020582ebb0c8ee17129f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f82606d9483daabf77daf6f243e1eb1ef2163273
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708790"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49214647"
 ---
 # <a name="configurationmanageractiontype-enum-type"></a>тип перечисления Конфигуратионманажерактионтипе
 
@@ -29,7 +29,6 @@ ms.locfileid: "48708790"
 |рефрешусерполици|1,1|Обновление политики пользователя в клиенте Configuration Manager|
 |вакеупклиент|2|Пробуждение клиента Configuration Manager|
 |аппевалуатион|4|Оценка политики применения в клиенте Configuration Manager|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a3283a87f544050879cd2ba54a0dc47111239d0a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: fdecd9a85e86cefa72659088d4ed3fe594eb2d94
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701993"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49212617"
 ---
 # <a name="update-enrollmentprofile"></a>Обновление объекта enrollmentprofile
 
@@ -29,7 +29,7 @@ ms.locfileid: "48701993"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,24 +46,24 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта|
-|displayName|Строка|Имя профиля|
-|description|Строка|Описание профиля|
-|рекуиресусераусентикатион|Логический|Указывает, требуется ли для профиля проверка подлинности пользователя|
-|конфигуратионендпоинтурл|Строка|URL-адрес конечной точки конфигурации, используемый для регистрации|
-|enableAuthenticationViaCompanyPortal|Логический|Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала.|
-|рекуирекомпанипорталонсетупассистантенролледдевицес|Логический|Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке|
+|id|String|GUID объекта|
+|displayName|String|Имя профиля|
+|description|String|Описание профиля|
+|рекуиресусераусентикатион|Boolean|Указывает, требуется ли для профиля проверка подлинности пользователя|
+|конфигуратионендпоинтурл|String|URL-адрес конечной точки конфигурации, используемый для регистрации|
+|enableAuthenticationViaCompanyPortal|Boolean|Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала.|
+|рекуирекомпанипорталонсетупассистантенролледдевицес|Boolean|Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -104,7 +104,6 @@ Content-Length: 419
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
-
 
 
 

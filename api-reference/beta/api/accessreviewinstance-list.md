@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 844564c383b065adc80672cad727807cbb590ca7
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 43ad30510610ebe64a7a6a818ba068c5dc1bb4b4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001011"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49214760"
 ---
 # <a name="list-accessreviewinstance"></a>Список Акцессревиевинстанце
 
@@ -31,7 +31,7 @@ ms.locfileid: "49001011"
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL  |
-|Для приложений                            | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL |
+|Приложение                            | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. ALL |
 
 Вошедшего в систему пользователя также должен находиться в роли каталога, который позволяет им читать проверку доступа. Чтобы просмотреть только те экземпляры, для которых пользователь, вошедшего в систему, назначен проверяющему, ознакомьтесь со статьей [Просмотр списка ожидающих доступных экземпляров](accessreviewinstance-pendingaccessreviewinstances.md)
 
@@ -46,13 +46,15 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и массив объектов [акцессревиевинстанце](../resources/accessreviewinstance.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 ### <a name="request"></a>Запрос
 В приведенном ниже примере показан запрос на получение всех экземпляров проверки доступа для определения.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_accessReviewInstance"
@@ -60,6 +62,24 @@ GET /identityGovernance/accessReviews/definitions/{definition-id}/instances
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/60860cdd-fb4d-4054-91ba-f75e04f34444/instances?$top=100&$skip=0
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewinstance-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-accessreviewinstance-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-accessreviewinstance-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-accessreviewinstance-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
