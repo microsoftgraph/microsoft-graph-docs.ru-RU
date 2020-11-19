@@ -5,36 +5,36 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0e457cf44b5a73f14dfd87fd69f2b9e27cef08c3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 633bbd4ae2bf9e1347c93322912cc46bbd86d907
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731941"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216810"
 ---
-# <a name="airprintdestination-resource-type"></a><span data-ttu-id="da74c-103">Тип ресурса Аирпринтдестинатион</span><span class="sxs-lookup"><span data-stu-id="da74c-103">airPrintDestination resource type</span></span>
+# <a name="airprintdestination-resource-type"></a><span data-ttu-id="e07df-103">Тип ресурса Аирпринтдестинатион</span><span class="sxs-lookup"><span data-stu-id="e07df-103">airPrintDestination resource type</span></span>
 
-<span data-ttu-id="da74c-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="da74c-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="e07df-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e07df-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="da74c-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="da74c-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="e07df-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e07df-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="da74c-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="da74c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e07df-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e07df-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="da74c-107">Представляет целевой объект Аирпринт.</span><span class="sxs-lookup"><span data-stu-id="da74c-107">Represents an AirPrint destination.</span></span>
+<span data-ttu-id="e07df-107">Представляет целевой объект Аирпринт.</span><span class="sxs-lookup"><span data-stu-id="e07df-107">Represents an AirPrint destination.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="da74c-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="da74c-108">Properties</span></span>
-|<span data-ttu-id="da74c-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="da74c-109">Property</span></span>|<span data-ttu-id="da74c-110">Тип</span><span class="sxs-lookup"><span data-stu-id="da74c-110">Type</span></span>|<span data-ttu-id="da74c-111">Описание</span><span class="sxs-lookup"><span data-stu-id="da74c-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="e07df-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="e07df-108">Properties</span></span>
+|<span data-ttu-id="e07df-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="e07df-109">Property</span></span>|<span data-ttu-id="e07df-110">Тип</span><span class="sxs-lookup"><span data-stu-id="e07df-110">Type</span></span>|<span data-ttu-id="e07df-111">Описание</span><span class="sxs-lookup"><span data-stu-id="e07df-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="da74c-112">ipAddress</span><span class="sxs-lookup"><span data-stu-id="da74c-112">ipAddress</span></span>|<span data-ttu-id="da74c-113">String</span><span class="sxs-lookup"><span data-stu-id="da74c-113">String</span></span>|<span data-ttu-id="da74c-114">IP-адрес назначения Аирпринт.</span><span class="sxs-lookup"><span data-stu-id="da74c-114">The IP Address of the AirPrint destination.</span></span>|
-|<span data-ttu-id="da74c-115">resourcePath</span><span class="sxs-lookup"><span data-stu-id="da74c-115">resourcePath</span></span>|<span data-ttu-id="da74c-116">Строка</span><span class="sxs-lookup"><span data-stu-id="da74c-116">String</span></span>|<span data-ttu-id="da74c-117">Путь к ресурсу, связанный с принтером.</span><span class="sxs-lookup"><span data-stu-id="da74c-117">The Resource Path associated with the printer.</span></span> <span data-ttu-id="da74c-118">Соответствует _ipps параметру RP записи Бонжаур. TCP.</span><span class="sxs-lookup"><span data-stu-id="da74c-118">This corresponds to the rp parameter of the _ipps.tcp Bonjour record.</span></span> <span data-ttu-id="da74c-119">Например: Printers/Canon_MG5300_series, Printers/Xerox_Phaser_7600, IPP/Print, Epson_IPP_Printer.</span><span class="sxs-lookup"><span data-stu-id="da74c-119">For example: printers/Canon_MG5300_series, printers/Xerox_Phaser_7600, ipp/print, Epson_IPP_Printer.</span></span>|
-|<span data-ttu-id="da74c-120">порта</span><span class="sxs-lookup"><span data-stu-id="da74c-120">port</span></span>|<span data-ttu-id="da74c-121">Int32</span><span class="sxs-lookup"><span data-stu-id="da74c-121">Int32</span></span>|<span data-ttu-id="da74c-122">Прослушивающий порт назначения Аирпринт.</span><span class="sxs-lookup"><span data-stu-id="da74c-122">The listening port of the AirPrint destination.</span></span> <span data-ttu-id="da74c-123">Если этот ключ не указан, Аирпринт будет использовать порт по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="da74c-123">If this key is not specified AirPrint will use the default port.</span></span> <span data-ttu-id="da74c-124">Доступно в iOS 11,0 и более поздних версиях.</span><span class="sxs-lookup"><span data-stu-id="da74c-124">Available in iOS 11.0 and later.</span></span>|
-|<span data-ttu-id="da74c-125">форцетлс</span><span class="sxs-lookup"><span data-stu-id="da74c-125">forceTls</span></span>|<span data-ttu-id="da74c-126">Логический</span><span class="sxs-lookup"><span data-stu-id="da74c-126">Boolean</span></span>|<span data-ttu-id="da74c-127">Если задано значение true, подключения Аирпринт защищены с помощью протокола TLS.</span><span class="sxs-lookup"><span data-stu-id="da74c-127">If true AirPrint connections are secured by Transport Layer Security (TLS).</span></span> <span data-ttu-id="da74c-128">Значение по умолчанию: false.</span><span class="sxs-lookup"><span data-stu-id="da74c-128">Default is false.</span></span> <span data-ttu-id="da74c-129">Доступно в iOS 11,0 и более поздних версиях.</span><span class="sxs-lookup"><span data-stu-id="da74c-129">Available in iOS 11.0 and later.</span></span>|
+|<span data-ttu-id="e07df-112">ipAddress</span><span class="sxs-lookup"><span data-stu-id="e07df-112">ipAddress</span></span>|<span data-ttu-id="e07df-113">String</span><span class="sxs-lookup"><span data-stu-id="e07df-113">String</span></span>|<span data-ttu-id="e07df-114">IP-адрес назначения Аирпринт.</span><span class="sxs-lookup"><span data-stu-id="e07df-114">The IP Address of the AirPrint destination.</span></span>|
+|<span data-ttu-id="e07df-115">resourcePath</span><span class="sxs-lookup"><span data-stu-id="e07df-115">resourcePath</span></span>|<span data-ttu-id="e07df-116">String</span><span class="sxs-lookup"><span data-stu-id="e07df-116">String</span></span>|<span data-ttu-id="e07df-117">Путь к ресурсу, связанный с принтером.</span><span class="sxs-lookup"><span data-stu-id="e07df-117">The Resource Path associated with the printer.</span></span> <span data-ttu-id="e07df-118">Соответствует _ipps параметру RP записи Бонжаур. TCP.</span><span class="sxs-lookup"><span data-stu-id="e07df-118">This corresponds to the rp parameter of the _ipps.tcp Bonjour record.</span></span> <span data-ttu-id="e07df-119">Например: Printers/Canon_MG5300_series, Printers/Xerox_Phaser_7600, IPP/Print, Epson_IPP_Printer.</span><span class="sxs-lookup"><span data-stu-id="e07df-119">For example: printers/Canon_MG5300_series, printers/Xerox_Phaser_7600, ipp/print, Epson_IPP_Printer.</span></span>|
+|<span data-ttu-id="e07df-120">порта</span><span class="sxs-lookup"><span data-stu-id="e07df-120">port</span></span>|<span data-ttu-id="e07df-121">Int32</span><span class="sxs-lookup"><span data-stu-id="e07df-121">Int32</span></span>|<span data-ttu-id="e07df-122">Прослушивающий порт назначения Аирпринт.</span><span class="sxs-lookup"><span data-stu-id="e07df-122">The listening port of the AirPrint destination.</span></span> <span data-ttu-id="e07df-123">Если этот ключ не указан, Аирпринт будет использовать порт по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="e07df-123">If this key is not specified AirPrint will use the default port.</span></span> <span data-ttu-id="e07df-124">Доступно в iOS 11,0 и более поздних версиях.</span><span class="sxs-lookup"><span data-stu-id="e07df-124">Available in iOS 11.0 and later.</span></span>|
+|<span data-ttu-id="e07df-125">форцетлс</span><span class="sxs-lookup"><span data-stu-id="e07df-125">forceTls</span></span>|<span data-ttu-id="e07df-126">Boolean</span><span class="sxs-lookup"><span data-stu-id="e07df-126">Boolean</span></span>|<span data-ttu-id="e07df-127">Если задано значение true, подключения Аирпринт защищены с помощью протокола TLS.</span><span class="sxs-lookup"><span data-stu-id="e07df-127">If true AirPrint connections are secured by Transport Layer Security (TLS).</span></span> <span data-ttu-id="e07df-128">Значение по умолчанию: false.</span><span class="sxs-lookup"><span data-stu-id="e07df-128">Default is false.</span></span> <span data-ttu-id="e07df-129">Доступно в iOS 11,0 и более поздних версиях.</span><span class="sxs-lookup"><span data-stu-id="e07df-129">Available in iOS 11.0 and later.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="da74c-130">Связи</span><span class="sxs-lookup"><span data-stu-id="da74c-130">Relationships</span></span>
-<span data-ttu-id="da74c-131">Нет</span><span class="sxs-lookup"><span data-stu-id="da74c-131">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="e07df-130">Связи</span><span class="sxs-lookup"><span data-stu-id="e07df-130">Relationships</span></span>
+<span data-ttu-id="e07df-131">Нет</span><span class="sxs-lookup"><span data-stu-id="e07df-131">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="da74c-132">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="da74c-132">JSON Representation</span></span>
-<span data-ttu-id="da74c-133">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="da74c-133">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e07df-132">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e07df-132">JSON Representation</span></span>
+<span data-ttu-id="e07df-133">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e07df-133">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.airPrintDestination"
@@ -49,7 +49,6 @@ ms.locfileid: "48731941"
   "forceTls": true
 }
 ```
-
 
 
 

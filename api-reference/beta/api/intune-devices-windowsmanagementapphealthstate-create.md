@@ -5,33 +5,33 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e324fa6969391b6559408a7de2cf9eb672e22bfa
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0784b612e996f018112662cbf242f38f3da505aa
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708153"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49218735"
 ---
-# <a name="create-windowsmanagementapphealthstate"></a><span data-ttu-id="ebd00-103">Создание Виндовсманажементапфеалсстате</span><span class="sxs-lookup"><span data-stu-id="ebd00-103">Create windowsManagementAppHealthState</span></span>
+# <a name="create-windowsmanagementapphealthstate"></a><span data-ttu-id="597f5-103">Создание Виндовсманажементапфеалсстате</span><span class="sxs-lookup"><span data-stu-id="597f5-103">Create windowsManagementAppHealthState</span></span>
 
-<span data-ttu-id="ebd00-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="ebd00-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="597f5-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="597f5-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="ebd00-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ebd00-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="597f5-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="597f5-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ebd00-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ebd00-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="597f5-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="597f5-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ebd00-107">Создание нового объекта [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md) .</span><span class="sxs-lookup"><span data-stu-id="ebd00-107">Create a new [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) object.</span></span>
+<span data-ttu-id="597f5-107">Создание нового объекта [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md) .</span><span class="sxs-lookup"><span data-stu-id="597f5-107">Create a new [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="ebd00-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="ebd00-108">Prerequisites</span></span>
-<span data-ttu-id="ebd00-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ebd00-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="597f5-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="597f5-108">Prerequisites</span></span>
+<span data-ttu-id="597f5-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="597f5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ebd00-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ebd00-111">Permission type</span></span>|<span data-ttu-id="ebd00-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="ebd00-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="597f5-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="597f5-111">Permission type</span></span>|<span data-ttu-id="597f5-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="597f5-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ebd00-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ebd00-113">Delegated (work or school account)</span></span>|<span data-ttu-id="ebd00-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ebd00-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="ebd00-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ebd00-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ebd00-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ebd00-116">Not supported.</span></span>|
-|<span data-ttu-id="ebd00-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ebd00-117">Application</span></span>|<span data-ttu-id="ebd00-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ebd00-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="597f5-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="597f5-113">Delegated (work or school account)</span></span>|<span data-ttu-id="597f5-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="597f5-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="597f5-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="597f5-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="597f5-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="597f5-116">Not supported.</span></span>|
+|<span data-ttu-id="597f5-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="597f5-117">Application</span></span>|<span data-ttu-id="597f5-118">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="597f5-118">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ebd00-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ebd00-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="597f5-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="597f5-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -40,35 +40,35 @@ ms.locfileid: "48708153"
 POST /deviceAppManagement/windowsManagementApp/healthStates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ebd00-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="ebd00-120">Request headers</span></span>
-|<span data-ttu-id="ebd00-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="ebd00-121">Header</span></span>|<span data-ttu-id="ebd00-122">Значение</span><span class="sxs-lookup"><span data-stu-id="ebd00-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="597f5-120">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="597f5-120">Request headers</span></span>
+|<span data-ttu-id="597f5-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="597f5-121">Header</span></span>|<span data-ttu-id="597f5-122">Значение</span><span class="sxs-lookup"><span data-stu-id="597f5-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ebd00-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ebd00-123">Authorization</span></span>|<span data-ttu-id="ebd00-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ebd00-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ebd00-125">Accept</span><span class="sxs-lookup"><span data-stu-id="ebd00-125">Accept</span></span>|<span data-ttu-id="ebd00-126">application/json</span><span class="sxs-lookup"><span data-stu-id="ebd00-126">application/json</span></span>|
+|<span data-ttu-id="597f5-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="597f5-123">Authorization</span></span>|<span data-ttu-id="597f5-124">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="597f5-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="597f5-125">Accept</span><span class="sxs-lookup"><span data-stu-id="597f5-125">Accept</span></span>|<span data-ttu-id="597f5-126">application/json</span><span class="sxs-lookup"><span data-stu-id="597f5-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ebd00-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ebd00-127">Request body</span></span>
-<span data-ttu-id="ebd00-128">В тексте запроса добавьте представление объекта Виндовсманажементапфеалсстате в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ebd00-128">In the request body, supply a JSON representation for the windowsManagementAppHealthState object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="597f5-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="597f5-127">Request body</span></span>
+<span data-ttu-id="597f5-128">В тексте запроса добавьте представление объекта Виндовсманажементапфеалсстате в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="597f5-128">In the request body, supply a JSON representation for the windowsManagementAppHealthState object.</span></span>
 
-<span data-ttu-id="ebd00-129">В следующей таблице приведены свойства, необходимые при создании Виндовсманажементапфеалсстате.</span><span class="sxs-lookup"><span data-stu-id="ebd00-129">The following table shows the properties that are required when you create the windowsManagementAppHealthState.</span></span>
+<span data-ttu-id="597f5-129">В следующей таблице приведены свойства, необходимые при создании Виндовсманажементапфеалсстате.</span><span class="sxs-lookup"><span data-stu-id="597f5-129">The following table shows the properties that are required when you create the windowsManagementAppHealthState.</span></span>
 
-|<span data-ttu-id="ebd00-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="ebd00-130">Property</span></span>|<span data-ttu-id="ebd00-131">Тип</span><span class="sxs-lookup"><span data-stu-id="ebd00-131">Type</span></span>|<span data-ttu-id="ebd00-132">Описание</span><span class="sxs-lookup"><span data-stu-id="ebd00-132">Description</span></span>|
+|<span data-ttu-id="597f5-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="597f5-130">Property</span></span>|<span data-ttu-id="597f5-131">Тип</span><span class="sxs-lookup"><span data-stu-id="597f5-131">Type</span></span>|<span data-ttu-id="597f5-132">Описание</span><span class="sxs-lookup"><span data-stu-id="597f5-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ebd00-133">id</span><span class="sxs-lookup"><span data-stu-id="ebd00-133">id</span></span>|<span data-ttu-id="ebd00-134">Строка</span><span class="sxs-lookup"><span data-stu-id="ebd00-134">String</span></span>|<span data-ttu-id="ebd00-135">Уникальный идентификатор для состояния работоспособности приложения управления Windows.</span><span class="sxs-lookup"><span data-stu-id="ebd00-135">Unique Identifier for the Windows management app health state.</span></span> <span data-ttu-id="ebd00-136">Это свойство доступно только для чтения.</span><span class="sxs-lookup"><span data-stu-id="ebd00-136">This property is read-only.</span></span>|
-|<span data-ttu-id="ebd00-137">healthState</span><span class="sxs-lookup"><span data-stu-id="ebd00-137">healthState</span></span>|[<span data-ttu-id="ebd00-138">healthState</span><span class="sxs-lookup"><span data-stu-id="ebd00-138">healthState</span></span>](../resources/intune-devices-healthstate.md)|<span data-ttu-id="ebd00-139">Состояние работоспособности приложения управления Windows.</span><span class="sxs-lookup"><span data-stu-id="ebd00-139">Windows management app health state.</span></span> <span data-ttu-id="ebd00-140">Возможные значения: `unknown`, `healthy`, `unhealthy`.</span><span class="sxs-lookup"><span data-stu-id="ebd00-140">Possible values are: `unknown`, `healthy`, `unhealthy`.</span></span>|
-|<span data-ttu-id="ebd00-141">инсталледверсион</span><span class="sxs-lookup"><span data-stu-id="ebd00-141">installedVersion</span></span>|<span data-ttu-id="ebd00-142">Строка</span><span class="sxs-lookup"><span data-stu-id="ebd00-142">String</span></span>|<span data-ttu-id="ebd00-143">Установленная версия приложения управления Windows.</span><span class="sxs-lookup"><span data-stu-id="ebd00-143">Windows management app installed version.</span></span>|
-|<span data-ttu-id="ebd00-144">ластчеккиндатетиме</span><span class="sxs-lookup"><span data-stu-id="ebd00-144">lastCheckInDateTime</span></span>|<span data-ttu-id="ebd00-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ebd00-145">DateTimeOffset</span></span>|<span data-ttu-id="ebd00-146">Время последнего возврата приложения управления Windows.</span><span class="sxs-lookup"><span data-stu-id="ebd00-146">Windows management app last check-in time.</span></span>|
-|<span data-ttu-id="ebd00-147">deviceName</span><span class="sxs-lookup"><span data-stu-id="ebd00-147">deviceName</span></span>|<span data-ttu-id="ebd00-148">String</span><span class="sxs-lookup"><span data-stu-id="ebd00-148">String</span></span>|<span data-ttu-id="ebd00-149">Имя устройства, на котором установлено приложение "Управление Windows".</span><span class="sxs-lookup"><span data-stu-id="ebd00-149">Name of the device on which Windows management app is installed.</span></span>|
-|<span data-ttu-id="ebd00-150">девицеосверсион</span><span class="sxs-lookup"><span data-stu-id="ebd00-150">deviceOSVersion</span></span>|<span data-ttu-id="ebd00-151">Строка</span><span class="sxs-lookup"><span data-stu-id="ebd00-151">String</span></span>|<span data-ttu-id="ebd00-152">Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".</span><span class="sxs-lookup"><span data-stu-id="ebd00-152">Windows 10 OS version of the device on which Windows management app is installed.</span></span>|
+|<span data-ttu-id="597f5-133">id</span><span class="sxs-lookup"><span data-stu-id="597f5-133">id</span></span>|<span data-ttu-id="597f5-134">String</span><span class="sxs-lookup"><span data-stu-id="597f5-134">String</span></span>|<span data-ttu-id="597f5-135">Уникальный идентификатор для состояния работоспособности приложения управления Windows.</span><span class="sxs-lookup"><span data-stu-id="597f5-135">Unique Identifier for the Windows management app health state.</span></span> <span data-ttu-id="597f5-136">Это свойство доступно только для чтения.</span><span class="sxs-lookup"><span data-stu-id="597f5-136">This property is read-only.</span></span>|
+|<span data-ttu-id="597f5-137">healthState</span><span class="sxs-lookup"><span data-stu-id="597f5-137">healthState</span></span>|[<span data-ttu-id="597f5-138">healthState</span><span class="sxs-lookup"><span data-stu-id="597f5-138">healthState</span></span>](../resources/intune-devices-healthstate.md)|<span data-ttu-id="597f5-139">Состояние работоспособности приложения управления Windows.</span><span class="sxs-lookup"><span data-stu-id="597f5-139">Windows management app health state.</span></span> <span data-ttu-id="597f5-140">Возможные значения: `unknown`, `healthy`, `unhealthy`.</span><span class="sxs-lookup"><span data-stu-id="597f5-140">Possible values are: `unknown`, `healthy`, `unhealthy`.</span></span>|
+|<span data-ttu-id="597f5-141">инсталледверсион</span><span class="sxs-lookup"><span data-stu-id="597f5-141">installedVersion</span></span>|<span data-ttu-id="597f5-142">String</span><span class="sxs-lookup"><span data-stu-id="597f5-142">String</span></span>|<span data-ttu-id="597f5-143">Установленная версия приложения управления Windows.</span><span class="sxs-lookup"><span data-stu-id="597f5-143">Windows management app installed version.</span></span>|
+|<span data-ttu-id="597f5-144">ластчеккиндатетиме</span><span class="sxs-lookup"><span data-stu-id="597f5-144">lastCheckInDateTime</span></span>|<span data-ttu-id="597f5-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="597f5-145">DateTimeOffset</span></span>|<span data-ttu-id="597f5-146">Время последнего возврата приложения управления Windows.</span><span class="sxs-lookup"><span data-stu-id="597f5-146">Windows management app last check-in time.</span></span>|
+|<span data-ttu-id="597f5-147">deviceName</span><span class="sxs-lookup"><span data-stu-id="597f5-147">deviceName</span></span>|<span data-ttu-id="597f5-148">String</span><span class="sxs-lookup"><span data-stu-id="597f5-148">String</span></span>|<span data-ttu-id="597f5-149">Имя устройства, на котором установлено приложение "Управление Windows".</span><span class="sxs-lookup"><span data-stu-id="597f5-149">Name of the device on which Windows management app is installed.</span></span>|
+|<span data-ttu-id="597f5-150">девицеосверсион</span><span class="sxs-lookup"><span data-stu-id="597f5-150">deviceOSVersion</span></span>|<span data-ttu-id="597f5-151">String</span><span class="sxs-lookup"><span data-stu-id="597f5-151">String</span></span>|<span data-ttu-id="597f5-152">Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".</span><span class="sxs-lookup"><span data-stu-id="597f5-152">Windows 10 OS version of the device on which Windows management app is installed.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="ebd00-153">Ответ</span><span class="sxs-lookup"><span data-stu-id="ebd00-153">Response</span></span>
-<span data-ttu-id="ebd00-154">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="ebd00-154">If successful, this method returns a `201 Created` response code and a [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="597f5-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="597f5-153">Response</span></span>
+<span data-ttu-id="597f5-154">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="597f5-154">If successful, this method returns a `201 Created` response code and a [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ebd00-155">Пример</span><span class="sxs-lookup"><span data-stu-id="ebd00-155">Example</span></span>
+## <a name="example"></a><span data-ttu-id="597f5-155">Пример</span><span class="sxs-lookup"><span data-stu-id="597f5-155">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ebd00-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="ebd00-156">Request</span></span>
-<span data-ttu-id="ebd00-157">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ebd00-157">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="597f5-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="597f5-156">Request</span></span>
+<span data-ttu-id="597f5-157">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="597f5-157">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/windowsManagementApp/healthStates
 Content-type: application/json
@@ -84,8 +84,8 @@ Content-length: 300
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="ebd00-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="ebd00-158">Response</span></span>
-<span data-ttu-id="ebd00-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ebd00-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="597f5-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="597f5-158">Response</span></span>
+<span data-ttu-id="597f5-p104">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="597f5-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -101,7 +101,6 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
-
 
 
 
