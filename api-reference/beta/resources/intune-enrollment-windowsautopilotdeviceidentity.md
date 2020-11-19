@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8b375b8b0df981764c7e1dca97198d0bf1d115e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 26147128295cd31df1475dfa57f9fc91351ee09a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728902"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256269"
 ---
 # <a name="windowsautopilotdeviceidentity-resource-type"></a>Тип ресурса windowsAutopilotDeviceIdentity
 
@@ -39,27 +39,27 @@ ms.locfileid: "48728902"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта|
+|id|String|GUID объекта|
 |деплойментпрофилеассигнментстатус|[виндовсаутопилотпрофилеассигнментстатус](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Состояние назначения профиля устройства автопилота Windows. Возможные значения: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |деплойментпрофилеассигнментдетаиледстатус|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Подробное состояние назначения профиля для устройства автопилота Windows. Возможные значения: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`.|
 |деплойментпрофилеассигнеддатетиме|DateTimeOffset|Время настройки профиля для устройства автопилота Windows.|
 |orderIdentifier|Строка|Идентификатор заказа устройства с автопилотом Windows — не является устаревшим|
-|грауптаг|Строка|Тег Group для устройства автопилота Windows.|
-|пурчасеордеридентифиер|Строка|Идентификатор заказа на покупку для устройства автопилота Windows.|
+|грауптаг|String|Тег Group для устройства автопилота Windows.|
+|пурчасеордеридентифиер|String|Идентификатор заказа на покупку для устройства автопилота Windows.|
 |serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
 |manufacturer|String|OEM-производитель устройства автопилота Windows.|
 |model|String|Имя модели для устройства автопилота Windows.|
 |енроллментстате|[енроллментстате](../resources/intune-shared-enrollmentstate.md)|Состояние регистрации в Intune для устройства автопилота Windows. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |ластконтактеддатетиме|DateTimeOffset|Дата и время последнего обращения в Intune к устройству автопилота Windows.|
-|аддрессаблеусернаме|Строка|Имя пользователя с адресом.|
+|аддрессаблеусернаме|String|Имя пользователя с адресом.|
 |userPrincipalName|String|Имя участника пользователя.|
 |resourceName|String|Имя ресурса.|
-|скунумбер|Строка|Номер SKU|
-|системфамили|Строка|Семейство системы|
-|Свойства azureactivedirectorydeviceid|Строка|ИДЕНТИФИКАТОР устройства AAD|
-|манажеддевицеид|Строка|Управляемый идентификатор устройства|
-|displayName|Строка|"Display Name" (Отображаемое имя);|
+|скунумбер|String|Номер SKU|
+|системфамили|String|Семейство системы|
+|Свойства azureactivedirectorydeviceid|String|ИДЕНТИФИКАТОР устройства AAD|
+|манажеддевицеид|String|Управляемый идентификатор устройства|
+|displayName|String|"Display Name" (Отображаемое имя);|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -101,7 +101,6 @@ ms.locfileid: "48728902"
   "displayName": "String"
 }
 ```
-
 
 
 

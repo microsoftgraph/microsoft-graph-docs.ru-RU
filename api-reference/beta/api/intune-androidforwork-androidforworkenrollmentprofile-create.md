@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f7b9090da43bf88d0b484dfcbcf7b93e1ba9a67e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ff6a33bd42d9edcaff5fd39c2757337e71b32a1b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701188"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255015"
 ---
 # <a name="create-androidforworkenrollmentprofile"></a>Create androidForWorkEnrollmentProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "48701188"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта androidForWorkEnrollmentProfile в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта androidForWorkEnrollmentProfile.
@@ -54,9 +54,9 @@ POST /deviceManagement/androidForWorkEnrollmentProfiles
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |accountId|String|GUID клиента, которому принадлежит профиль регистрации.|
-|id|Строка|Уникальный GUID профиля регистрации.|
-|displayName|Строка|Отображаемое имя для профиля регистрации.|
-|description|Строка|Описание профиля регистрации.|
+|id|String|Уникальный GUID профиля регистрации.|
+|displayName|String|Отображаемое имя для профиля регистрации.|
+|description|String|Описание профиля регистрации.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля регистрации.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля регистрации.|
 |tokenValue|String|Значение последнего созданного маркера для этого профиля регистрации.|
@@ -122,7 +122,6 @@ Content-Length: 668
   }
 }
 ```
-
 
 
 

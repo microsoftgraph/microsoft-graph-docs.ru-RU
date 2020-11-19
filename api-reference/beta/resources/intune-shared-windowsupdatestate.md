@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b1c8c980f8d56fcb78f9399b100e2a3798631a12
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: eb6e42242b3cd713fbe340753a960a97efad15d6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696064"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255597"
 ---
 # <a name="windowsupdatestate-resource-type"></a>Тип ресурса Виндовсупдатестате
 
@@ -34,14 +34,14 @@ ms.locfileid: "48696064"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Это идентификатор объекта.|
+|id|String|Это идентификатор объекта.|
 |deviceId|String|Идентификатор устройства.|
 |userId|String|Идентификатор пользователя.|
 |deviceDisplayName|String|Отображаемое имя устройства.|
 |userPrincipalName|String|Имя участника пользователя.|
 |status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Состояние Windows удпате. Возможные значения: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
-|куалитюпдатеверсион|Строка|Версия устройства для обновления качества.|
-|феатуреупдатеверсион|Строка|Текущая версия обновления компонентов устройства.|
+|куалитюпдатеверсион|String|Версия устройства для обновления качества.|
+|феатуреупдатеверсион|String|Текущая версия обновления компонентов устройства.|
 |ластскандатетиме|DateTimeOffset|Дата и время, когда агент обновления Windows успешно выполнил сканирование.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации устройства с Microsoft Intune.|
 
@@ -71,7 +71,6 @@ ms.locfileid: "48696064"
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

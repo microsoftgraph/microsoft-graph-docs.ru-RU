@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a71545503db977ed3ca98da9fb6d8be80d537218
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8a3bf7d71c6609ff1dc0aa5cb80dc9241d969cf3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702245"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255576"
 ---
 # <a name="windowsfeatureupdateprofileassignment-resource-type"></a>Тип ресурса Виндовсфеатуреупдатепрофилеассигнмент
 
@@ -34,7 +34,7 @@ ms.locfileid: "48702245"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор объекта.|
+|id|String|Идентификатор объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения, которой назначен профиль обновления компонента.|
 
 ## <a name="relationships"></a>Связи
@@ -59,7 +59,6 @@ ms.locfileid: "48702245"
   }
 }
 ```
-
 
 
 

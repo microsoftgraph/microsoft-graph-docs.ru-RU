@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9edcf1f735a90af581303b8b29844f61540ba8b6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e254b0a95366c2ee70b89377c8293b4eb76c2f2a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727124"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255646"
 ---
 # <a name="win32lobappnotification-enum-type"></a>тип перечисления win32LobAppNotification
 
@@ -28,7 +28,6 @@ ms.locfileid: "48727124"
 |showAll|нуль|Показать все уведомления.|
 |шовребут|1,1|Показывать уведомления о перезапуске только и отменять другие уведомления.|
 |хидеалл|2|Скрыть все уведомления.|
-
 
 
 

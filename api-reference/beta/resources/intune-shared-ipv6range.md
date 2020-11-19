@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c834af1c6b96f5fa2aa77af9e51ec03a564f59dd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 383d75ceafd1946d317cc3ee146f39a0433accd0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684444"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255835"
 ---
 # <a name="ipv6range-resource-type"></a>Тип ресурса iPv6Range
 
@@ -48,7 +48,6 @@ ms.locfileid: "48684444"
   "upperAddress": "String"
 }
 ```
-
 
 
 

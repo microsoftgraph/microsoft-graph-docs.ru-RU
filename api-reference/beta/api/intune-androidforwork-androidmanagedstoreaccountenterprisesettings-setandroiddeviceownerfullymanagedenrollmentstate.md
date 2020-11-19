@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 062a9f597218a5e5a974ca3488739f1d1a891a95
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: dca8bdc3a2c6a5a3baec94c079d2a67ed6bb25ab
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701006"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49254463"
 ---
 # <a name="setandroiddeviceownerfullymanagedenrollmentstate-action"></a>Действие setAndroidDeviceOwnerFullyManagedEnrollmentState
 
@@ -29,7 +29,7 @@ ms.locfileid: "48701006"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/setAndroidDe
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -80,7 +80,6 @@ Content-length: 23
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

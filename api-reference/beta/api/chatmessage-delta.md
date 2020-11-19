@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6321c440da24245d1f39c604cb52def894b47a31
-ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
+ms.openlocfilehash: 7ed834091507962a76e1e5384791d9ebcfb80666
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030125"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255485"
 ---
 # <a name="chatmessages-delta"></a>chatMessages: delta
 
@@ -66,7 +66,7 @@ GET /teams/{id}/channels/{id}/messages/delta
 
 | Параметр запроса      | Тип   |Описание|
 |:---------------|:--------|:----------|
-| `$deltatoken` | строка | Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `deltaLink` предыдущего вызова функции **delta** , указывая на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим маркером и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
+| `$deltatoken` | строка | Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `deltaLink` предыдущего вызова функции **delta**, указывая на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим маркером и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
 | `$skiptoken` | строка | Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `nextLink` при предыдущем вызове функции **delta** и указывает на то, что  остаются не отслеженные изменения. |
 
 ### <a name="optional-odata-query-parameters"></a>Необязательные параметры запросов OData
@@ -116,7 +116,7 @@ GET /teams/{id}/channels/{id}/messages/delta
   "blockType": "request",
   "name": "get_channel_messages_delta_1"
 }-->
-```http
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$top=2
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -217,7 +217,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_channel_messages_delta_2"
 }-->
-```http
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyMTUzMjU0NTkmcGFnZVNpemU9MjA%3d
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -318,7 +318,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_channel_messages_delta_3"
 }-->
-```http
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyODcyMzY2NzgmcGFnZVNpemU9MjA%3d
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -398,7 +398,7 @@ Content-type: application/json
   "blockType": "request",
   "name": "get_channel_messages_delta_4"
 }-->
-```http
+```msgraph-interactive
 GET /teams/{id}/channels/{id}/messages/delta?$deltatoken=c3RhcnRUaW1lPTE1NTEyODc1ODA0OTAmcGFnZVNpemU9MjA%3d
 ```
 # <a name="c"></a>[C#](#tab/csharp)

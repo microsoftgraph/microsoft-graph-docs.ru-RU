@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 83bc3ebbdea5f4cadde537b97f9353601c997a7f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cb51d29435e156a83166ace83a1327ab52acca90
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735115"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255849"
 ---
 # <a name="installintent-enum-type"></a>тип перечисления Инсталлинтент
 
@@ -29,7 +29,6 @@ ms.locfileid: "48735115"
 |Обязательный|1,1|Обязательная цель установки.|
 |установить|2|Удаление намерения установки.|
 |аваилаблевисаутенроллмент|4|Доступно без установки регистрации.|
-
 
 
 

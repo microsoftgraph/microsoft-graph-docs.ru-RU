@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 136a60c5920f56ae7e3b9c2e74aad47fd667fd24
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ba09ef6c22e97207978c53be3e663dc53857f3e2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728013"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255345"
 ---
 # <a name="devicemanagementautopilotpolicystatusdetail-resource-type"></a>Тип ресурса Девицеманажементаутопилотполицистатусдетаил
 
@@ -34,11 +34,11 @@ ms.locfileid: "48728013"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|UUID объекта.|
-|displayName|Строка|Понятное имя политики.|
+|id|String|UUID объекта.|
+|displayName|String|Понятное имя политики.|
 |полицитипе|[deviceManagementAutopilotPolicyType](../resources/intune-troubleshooting-devicemanagementautopilotpolicytype.md)|Тип политики. Возможные значения: `unknown`, `application`, `appModel`, `configurationPolicy`.|
 |комплианцестатус|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|Состояние соответствия политике. Возможные значения: `unknown`, `compliant`, `installed`, `notCompliant`, `notInstalled`, `error`.|
-|траккедоненроллментстатус|Логический|Указывает, была ли эта пролици зарегистрирована в рамках сеанса синхронизации автоматической загрузки для автоматической пилотной установки|
+|траккедоненроллментстатус|Boolean|Указывает, была ли эта пролици зарегистрирована в рамках сеанса синхронизации автоматической загрузки для автоматической пилотной установки|
 |lastReportedDateTime|DateTimeOffset|Метка времени для отчета о состоянии политики|
 
 ## <a name="relationships"></a>Связи
@@ -63,7 +63,6 @@ ms.locfileid: "48728013"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

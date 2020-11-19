@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 790eac6bd48590773b4b27f59aca92546802c407
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e28d47e9ab8752c733a32bb96f2685bfd90bd6d3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727999"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49255338"
 ---
 # <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>Тип ресурса Девицеманажементтраублешутинжеррордетаилс
 
@@ -27,8 +27,8 @@ ms.locfileid: "48727999"
 |:---|:---|:---|
 |контекст|String|Пока не задокументировано.|
 |Failure|String|Пока не задокументировано.|
-|фаилуредетаилс|Строка|Подробное описание того, что пошло не так.|
-|исправления|Строка|Подробное описание этой проблемы.|
+|фаилуредетаилс|String|Подробное описание того, что пошло не так.|
+|исправления|String|Подробное описание этой проблемы.|
 |resources|Коллекция [девицеманажементтраублешутинжеррорресаурце](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)|Ссылки на полезную документацию об этой ошибке.|
 
 ## <a name="relationships"></a>Связи
@@ -57,7 +57,6 @@ ms.locfileid: "48727999"
   ]
 }
 ```
-
 
 
 
