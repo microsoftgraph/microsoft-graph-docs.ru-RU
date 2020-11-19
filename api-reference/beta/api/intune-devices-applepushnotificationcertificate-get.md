@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d01c6fdc9d023cad126d4c3e45f8b6ef7db4f449
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b81f64f42016846b30ebd19931330598f59d9b86
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723254"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49264200"
 ---
 # <a name="get-applepushnotificationcertificate"></a>Получение объекта applePushNotificationCertificate
 
@@ -29,7 +29,7 @@ ms.locfileid: "48723254"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Девицеманажементсервицеконфиг. ReadWrite. ALL, DeviceManagementManagedDevices. Read. ALL|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|Девицеманажементсервицеконфиг. ReadWrite. ALL, DeviceManagementManagedDevices. Read. ALL|
+|Приложение|Девицеманажементсервицеконфиг. ReadWrite. ALL, DeviceManagementManagedDevices. Read. ALL|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,10 +49,10 @@ GET /deviceManagement/applePushNotificationCertificate
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -85,7 +85,6 @@ Content-Length: 633
   }
 }
 ```
-
 
 
 

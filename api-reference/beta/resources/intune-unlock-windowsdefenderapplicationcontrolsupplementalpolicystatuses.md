@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e5b56284a77fd390c265daab79e826f399464b9a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a8d1ecab8f108cbf885421a760671b13075ed87b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709756"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49265942"
 ---
 # <a name="windowsdefenderapplicationcontrolsupplementalpolicystatuses-enum-type"></a>тип перечисления Виндовсдефендераппликатионконтролсупплементалполицистатусес
 
@@ -30,7 +30,6 @@ ms.locfileid: "48709756"
 |токенеррор|2|Дополнительная политика Виндовсдефендераппликатионконтрол имеет структуру, но существует ошибка, связанная с авторизацией маркера.|
 |нотаусоризедбитокен|4|Маркер не авторизует эту дополнительную политику Виндовсдефендераппликатионконтрол.|
 |полицинотфаунд|4 |Дополнительная политика Виндовсдефендераппликатионконтрол не найдена.|
-
 
 
 

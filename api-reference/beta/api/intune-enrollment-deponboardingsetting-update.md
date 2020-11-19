@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd32ba5e867f60b36c0bf8ebe499ecc8d81c908f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 01f3a97e2a964d1a933c6de0dae26e11cbd01a73
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731206"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49263640"
 ---
 # <a name="update-deponboardingsetting"></a>Обновление depOnboardingSetting
 
@@ -29,7 +29,7 @@ ms.locfileid: "48731206"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,30 +46,30 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|UUID объекта.|
+|id|String|UUID объекта.|
 |appleIdentifier|String|Идентификатор Apple ID, используемый для получения текущего маркера.|
 |tokenExpirationDateTime|DateTimeOffset|По истечении срока действия маркера.|
 |lastModifiedDateTime|DateTimeOffset|При подключении службы.|
 |ластсукцессфулсинкдатетиме|DateTimeOffset|Когда служба последний синед с Intune|
 |ластсинктригжереддатетиме|DateTimeOffset|При последнем запросе синхронизации в Intune.|
-|Свойства sharetokenwithschooldatasyncservice|Логический|Указывает, включен ли общий доступ к маркеру DEP для службы School Data Sync.|
+|Свойства sharetokenwithschooldatasyncservice|Boolean|Указывает, включен ли общий доступ к маркеру DEP для службы School Data Sync.|
 |Lastsyncerrorcode к объекту|Int32|Код ошибки, полученный от Apple во время последней синхронизации DEP.|
 |токентипе|[depTokenType](../resources/intune-enrollment-deptokentype.md);|Получает или задает тип токена DEP. Возможные значения: `none`, `dep`, `appleSchoolManager`.|
-|токеннаме|Строка|Понятное имя для токена DEP|
+|токеннаме|String|Понятное имя для токена DEP|
 |синцеддевицекаунт|Int32|Получает число синхронизированных устройств|
-|dataSharingConsentGranted|Логический|Разрешение, предоставленное для предоставления общего доступа к данным с помощью службы Apple DEP|
+|dataSharingConsentGranted|Boolean|Разрешение, предоставленное для предоставления общего доступа к данным с помощью службы Apple DEP|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -125,7 +125,6 @@ Content-Length: 689
   ]
 }
 ```
-
 
 
 

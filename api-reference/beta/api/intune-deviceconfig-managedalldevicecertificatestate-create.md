@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d0adacd2a3059bc1bb56e171e2de9f617ef93afb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5a3ce5624e9b54d58cfab25d438b3ded71c023a1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693516"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49264704"
 ---
 # <a name="create-managedalldevicecertificatestate"></a>Создание Манажедаллдевицецертификатестате
 
@@ -29,7 +29,7 @@ ms.locfileid: "48693516"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,30 +46,30 @@ POST /deviceManagement/deviceConfigurationsAllManagedDeviceCertificateStates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Манажедаллдевицецертификатестате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Манажедаллдевицецертификатестате.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |цертификатеревокестатус|[цертификатеревокатионстатус](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзыв состояния. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
 |цертификатеревокестатусластчанжедатетиме|DateTimeOffset|Время последнего изменения состояния отзыва|
-|манажеддевицедисплайнаме|Строка|Отображаемое имя устройства|
+|манажеддевицедисплайнаме|String|Отображаемое имя устройства|
 |userPrincipalName|String|Имя субъекта-пользователя|
 |цертификатикспиратиондатетиме|DateTimeOffset|Дата окончания срока действия сертификата|
-|цертификатеиссуернаме|Строка|Издатель|
-|certificateThumbprint|Строка|Thumbprint|
-|цертификатесериалнумбер|Строка|Серийный номер|
-|цертификатесубжектнаме|Строка|Имя субъекта сертификата|
+|цертификатеиссуернаме|String|Издатель|
+|certificateThumbprint|String|Thumbprint|
+|цертификатесериалнумбер|String|Серийный номер|
+|цертификатесубжектнаме|String|Имя субъекта сертификата|
 |цертификатекэйусажес|Int32|Использование ключа|
-|цертификатикстендедкэйусажес|Строка|Расширенное использование ключа|
+|цертификатикстендедкэйусажес|String|Расширенное использование ключа|
 |цертификатеиссуанцедатетиме|DateTimeOffset|Дата выпуска|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [манажедаллдевицецертификатестате](../resources/intune-deviceconfig-managedalldevicecertificatestate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -122,7 +122,6 @@ Content-Length: 869
   "certificateIssuanceDateTime": "2016-12-31T23:59:41.5044473-08:00"
 }
 ```
-
 
 
 

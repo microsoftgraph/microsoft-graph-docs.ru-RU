@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9df20ebc3b049c84f71056e29d49bb48b9d29476
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e837dbd6887fb81f60aefd77813ca1abbddda0a3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733436"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49263927"
 ---
 # <a name="create-userexperienceanalyticsdevicestartupprocess"></a>Создание Усерекспериенцеаналитиксдевицестартуппроцесс
 
@@ -29,7 +29,7 @@ ms.locfileid: "48733436"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,23 +46,23 @@ POST /deviceManagement/userExperienceAnalyticsDeviceStartupProcesses
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Усерекспериенцеаналитиксдевицестартуппроцесс в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Усерекспериенцеаналитиксдевицестартуппроцесс.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор процесса запуска устройства аналитики взаимодействия с пользователем.|
-|манажеддевицеид|Строка|Идентификатор устройства службы аналитики взаимодействия с пользователем.|
-|процесснаме|Строка|Имя процесса запуска устройства службы аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор процесса запуска устройства аналитики взаимодействия с пользователем.|
+|манажеддевицеид|String|Идентификатор устройства службы аналитики взаимодействия с пользователем.|
+|процесснаме|String|Имя процесса запуска устройства службы аналитики взаимодействия с пользователем.|
 |productName|String|Имя продукта для процесса запуска устройства Analytics Device (взаимодействие с пользователем).|
 |publisher|String|Издатель процесса запуска устройства Analytics User Experience.|
 |стартупимпактинмс|Int32|Влияние процесса запуска пользователя на устройство Analytics в миллисекундах.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксдевицестартуппроцесс](../resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -101,7 +101,6 @@ Content-Length: 325
   "startupImpactInMs": 1
 }
 ```
-
 
 
 

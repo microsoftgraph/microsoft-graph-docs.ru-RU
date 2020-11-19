@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 147c7872981bf07663eb9b35424335750b7538bb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9bf5cce0881b777f5c68ee8079ac7d45e9e5c893
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733429"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49263940"
 ---
 # <a name="delete-userexperienceanalyticsdevicestartupprocess"></a>Удаление Усерекспериенцеаналитиксдевицестартуппроцесс
 
@@ -29,7 +29,7 @@ ms.locfileid: "48733429"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ DELETE /deviceManagement/userExperienceAnalyticsDeviceStartupProcesses/{userExpe
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalytics
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

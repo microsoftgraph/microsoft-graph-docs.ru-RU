@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 70622d32760f7fa67bc5977284e1253d15240c9a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5f5e854bb68351f46adbd26e322c221ba6a82eb6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726138"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49264207"
 ---
 # <a name="importoffice365deviceconfigurationpolicies-action"></a>действие importOffice365DeviceConfigurationPolicies
 
@@ -29,7 +29,7 @@ ms.locfileid: "48726138"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,10 +47,10 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/impor
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении это действие возвращает `200 OK` код отклика и коллекцию [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -85,7 +85,6 @@ Content-Length: 452
   ]
 }
 ```
-
 
 
 

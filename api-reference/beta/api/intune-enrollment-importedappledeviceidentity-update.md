@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d801126fe376e42129c093c7f747b1cf38fe4fc6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5f60d0282fb0568be2d95fcb1e60acddb9be89f5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736445"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49263451"
 ---
 # <a name="update-importedappledeviceidentity"></a>Обновление Импортедаппледевицеидентити
 
@@ -29,7 +29,7 @@ ms.locfileid: "48736445"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,29 +46,29 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/importedA
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [импортедаппледевицеидентити](../resources/intune-enrollment-importedappledeviceidentity.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [импортедаппледевицеидентити](../resources/intune-enrollment-importedappledeviceidentity.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |serialNumber|String|Серийный номер устройства|
-|рекуестеденроллментпрофилеид|Строка|Идентификатор профиля регистрации администратор планирует применить к устройству во время следующей регистрации|
+|рекуестеденроллментпрофилеид|String|Идентификатор профиля регистрации администратор планирует применить к устройству во время следующей регистрации|
 |рекуестеденроллментпрофилеассигнментдатетиме|DateTimeOffset|Для устройства назначен профиль регистрации времени.|
 |isSupervised|Boolean|Указывает, защищено ли устройство Apple. Дополнительные сведения: https://support.apple.com/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md);|Источник обнаружения устройств Apple. Возможные значения: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
-|isDeleted|Логический|Указывает, было ли устройство удалено из Apple Business Manager|
+|isDeleted|Boolean|Указывает, было ли устройство удалено из Apple Business Manager|
 |createdDateTime|DateTimeOffset|Дата и время создания устройства|
 |ластконтактеддатетиме|DateTimeOffset|Дата и время последнего обращения к устройству|
-|description|Строка|Описание устройства|
+|description|String|Описание устройства|
 |енроллментстате|[енроллментстате](../resources/intune-shared-enrollmentstate.md)|Состояние устройства в Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|платформа|[управляем](../resources/intune-enrollment-platform.md)|Платформа устройства. Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|платформа|[платформа](../resources/intune-enrollment-platform.md)|Платформа устройства. Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [импортедаппледевицеидентити](../resources/intune-enrollment-importedappledeviceidentity.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -118,7 +118,6 @@ Content-Length: 627
   "platform": "ios"
 }
 ```
-
 
 
 
