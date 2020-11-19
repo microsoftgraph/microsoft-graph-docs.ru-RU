@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d4cf9c680e929e06abce33b96fb89b232dc928ac
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f3111075326282ca4909a195f18a30faec60b946
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731045"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49207570"
 ---
 # <a name="windowsmanagementapphealthstate-resource-type"></a>Тип ресурса Виндовсманажементапфеалсстате
 
@@ -34,12 +34,12 @@ ms.locfileid: "48731045"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для состояния работоспособности приложения управления Windows. Это свойство доступно только для чтения.|
+|id|String|Уникальный идентификатор для состояния работоспособности приложения управления Windows. Это свойство доступно только для чтения.|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Состояние работоспособности приложения управления Windows. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
-|инсталледверсион|Строка|Установленная версия приложения управления Windows.|
+|инсталледверсион|String|Установленная версия приложения управления Windows.|
 |ластчеккиндатетиме|DateTimeOffset|Время последнего возврата приложения управления Windows.|
 |deviceName|String|Имя устройства, на котором установлено приложение "Управление Windows".|
-|девицеосверсион|Строка|Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".|
+|девицеосверсион|String|Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -63,7 +63,6 @@ ms.locfileid: "48731045"
   "deviceOSVersion": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4a85b96e8d623b25ecfba034f9377d60a12fe085
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 227208a80366f1b8de309047b49b0b0924d41755
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731052"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49207626"
 ---
 # <a name="windowsmanagementapp-resource-type"></a>Тип ресурса windowsManagementApp
 
@@ -31,8 +31,8 @@ ms.locfileid: "48731052"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для приложения управления Windows|
-|availableVersion|Строка|Доступная версия приложения управления Windows.|
+|id|String|Уникальный идентификатор для приложения управления Windows|
+|availableVersion|String|Доступная версия приложения управления Windows.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -54,7 +54,6 @@ ms.locfileid: "48731052"
   "availableVersion": "String"
 }
 ```
-
 
 
 
