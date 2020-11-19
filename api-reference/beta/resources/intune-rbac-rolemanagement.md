@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6ef912731b05fb8c4fa83aac77f7879cc9e3d7f7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d9021cf7c66e3f72f11931c0a97e870294de84e0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725185"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49287839"
 ---
 # <a name="rolemanagement-resource-type"></a>Тип ресурса Ролеманажемент
 
@@ -31,7 +31,7 @@ ms.locfileid: "48725185"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Н/Д|
+|id|String|Н/Д|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -52,7 +52,6 @@ ms.locfileid: "48725185"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

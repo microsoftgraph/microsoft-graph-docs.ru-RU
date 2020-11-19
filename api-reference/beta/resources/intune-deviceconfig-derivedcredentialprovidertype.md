@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0e77d0281954b10e001c9eac477ea7c4471b4485
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4b5605b482591b8815af651c0f46ca91d705d1b6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692536"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49288714"
 ---
 # <a name="derivedcredentialprovidertype-enum-type"></a>тип перечисления Дериведкредентиалпровидертипе
 
@@ -30,7 +30,6 @@ ms.locfileid: "48692536"
 |пуребред|2|Агентство по оборонным информационным системам пуребред.|
 |кстек|4|Кстек — Аусенткс.|
 |интерцеде|4 |Интерцеде.|
-
 
 
 

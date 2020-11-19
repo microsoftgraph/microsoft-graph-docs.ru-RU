@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 129520508a671c10fb6719ea072a167cd5fe17a7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: dc0c4da7196b5fb679f5e3addf0826ff0d8dd6fe
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692725"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49289134"
 ---
 # <a name="create-windowsdefenderapplicationcontrolsupplementalpolicy"></a>Создание Виндовсдефендераппликатионконтролсупплементалполици
 
@@ -46,18 +46,18 @@ POST /deviceAppManagement/wdacSupplementalPolicies
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Виндовсдефендераппликатионконтролсупплементалполици в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Виндовсдефендераппликатионконтролсупплементалполици.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ для дополнительной политики Виндовсдефендераппликатионконтрол.|
-|displayName|Строка|Отображаемое имя дополнительной политики Виндовсдефендераппликатионконтрол.|
-|description|Строка|Описание дополнительной политики Виндовсдефендераппликатионконтрол.|
+|id|String|Ключ для дополнительной политики Виндовсдефендераппликатионконтрол.|
+|displayName|String|Отображаемое имя дополнительной политики Виндовсдефендераппликатионконтрол.|
+|description|String|Описание дополнительной политики Виндовсдефендераппликатионконтрол.|
 |содержимое|Binary|Содержимое дополнительной политики Виндовсдефендераппликатионконтрол в формате массива байтов.|
-|контентфиленаме|Строка|Имя файла дополнительной политики Виндовсдефендераппликатионконтрол.|
+|контентфиленаме|String|Имя файла дополнительной политики Виндовсдефендераппликатионконтрол.|
 |version|String|Версия дополнительной политики Виндовсдефендераппликатионконтрол.|
 |креатиондатетиме|DateTimeOffset|Дата и время отправки дополнительной политики Виндовсдефендераппликатионконтрол.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения дополнительной политики Виндовсдефендераппликатионконтрол.|
@@ -65,7 +65,7 @@ POST /deviceAppManagement/wdacSupplementalPolicies
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -113,7 +113,6 @@ Content-Length: 517
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 79ef54ec21ed7b279e49977f03b9cde8806ae823
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 62eb11fc79a0ea3b386da9813c3daee3d0965903
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725150"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49287629"
 ---
 # <a name="saveduistategenerationoptions-enum-type"></a>тип перечисления Саведуистатеженератионоптионс
 
@@ -25,9 +25,8 @@ ms.locfileid: "48725150"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Пока не задокументировано.|
+|Нет|нуль|Пока не задокументировано.|
 |омитсилверлигхтполициреференцес|1,1|Пока не задокументировано.|
-
 
 
 

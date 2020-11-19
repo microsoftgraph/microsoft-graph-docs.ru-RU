@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 27e7b9e343d751f0417b7bd5dce3d526c93f131f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 44cc4482677fd353a2bbbcc275e4f927a1b3f80a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736130"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49288371"
 ---
 # <a name="embeddedsimdevicestatevalue-enum-type"></a>тип перечисления Ембеддедсимдевицестатевалуе
 
@@ -33,7 +33,6 @@ ms.locfileid: "48736130"
 |error|5 |Указывает на наличие ошибки в этом профиле.|
 |deleted|6 |Указывает, что профиль будет удален с устройства.|
 |ремоведбюсер|7 |Указывает, что профиль удаляется с устройства пользователем|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d382c7a7dab00d84a3f85803afa15f91c9b29736
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ca20cfd40f1e22a6b99aa33495d4bd7f33369067
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707866"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49288987"
 ---
 # <a name="androiddeviceownerkioskmodeiconsize-enum-type"></a>тип перечисления Андроиддевицеовнеркиоскмодеиконсизе
 
@@ -31,7 +31,6 @@ ms.locfileid: "48707866"
 |Писанию|4|Обычный размер значков.|
 |large|4 |Размер крупного значка.|
 |Самая|5 |Самый крупный размер значков.|
-
 
 
 

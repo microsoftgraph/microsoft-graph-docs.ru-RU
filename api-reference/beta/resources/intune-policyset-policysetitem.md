@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3d30c7711bc8c154a112a02ed929093c63bbbdbe
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 77438e4b0322dcb6feade0aab57c830869832e14
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735171"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49287930"
 ---
 # <a name="policysetitem-resource-type"></a>Тип ресурса Полицисетитем
 
@@ -31,12 +31,12 @@ ms.locfileid: "48735171"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ Мобилеаппполицисетитем.|
+|id|String|Ключ Мобилеаппполицисетитем.|
 |createdDateTime|DateTimeOffset|Время создания Полицисетитем.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения Полицисетитем.|
-|пайлоадид|Строка|Пайлоадид Полицисетитем.|
-|itemType|Строка|Полицисеттипе Полицисетитем.|
-|displayName|Строка|DisplayName объекта Полицисетитем.|
+|пайлоадид|String|Пайлоадид Полицисетитем.|
+|itemType|String|Полицисеттипе Полицисетитем.|
+|displayName|String|DisplayName объекта Полицисетитем.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Состояние Полицисетитем. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки (при возникновении ошибки). Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
 |гуидеддеплойменттагс|Коллекция строк|Теги в руководстве по развертыванию|
@@ -68,7 +68,6 @@ ms.locfileid: "48735171"
   ]
 }
 ```
-
 
 
 

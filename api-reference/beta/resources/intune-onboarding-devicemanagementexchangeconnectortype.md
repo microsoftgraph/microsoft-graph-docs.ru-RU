@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 10fc00b5d3135535c557cd179d32029a6aef2f6b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8ee6b98f668035f16f65ce366159d7d455ea6ae3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736109"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49288189"
 ---
 # <a name="devicemanagementexchangeconnectortype-enum-type"></a>тип перечисления Девицеманажементексчанжеконнектортипе
 
@@ -29,7 +29,6 @@ ms.locfileid: "48736109"
 |хост|1,1|Подключается к среде Exchange с несколькими клиентами Office 365|
 |сервицетосервице|2|Служба Intune подключается напрямую к среде Exchange с несколькими клиентами Office 365|
 |уполномочен|4|Подключается к выделенной среде Exchange O365.|
-
 
 
 

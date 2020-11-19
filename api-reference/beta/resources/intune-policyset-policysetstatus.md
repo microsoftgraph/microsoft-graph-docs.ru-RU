@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 32ea9586ffee2ef112c58a1f88bdbdaefd654a04
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ffadd40f791971fa0225a893959e4224c51070f5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735164"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49287909"
 ---
 # <a name="policysetstatus-enum-type"></a>тип перечисления Полицисетстатус
 
@@ -31,7 +31,6 @@ ms.locfileid: "48735164"
 |success|4|Все элементы с развернутыми политиками. Не означает, что развертывание завершено успешно. |
 |error|4 |Обработка подполитики завершена с ошибками.|
 |нотассигнед|5 |Policy/Полицисетитем не назначено ни одной группе.|
-
 
 
 

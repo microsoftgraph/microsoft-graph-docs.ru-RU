@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d397c3660852d23e0fa92cd1036f2a30cc38d293
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c83a50f5aa193814d08617701515ce65515374db
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733149"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49287650"
 ---
 # <a name="rgbcolor-resource-type"></a>Тип ресурса rgbColor
 
@@ -47,7 +47,6 @@ ms.locfileid: "48733149"
   "b": 1024
 }
 ```
-
 
 
 

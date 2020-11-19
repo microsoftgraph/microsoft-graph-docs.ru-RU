@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff18fcc1ee8575d760cf748f0c75f147d31b9d92
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8c37a8c651a69e9c69e08ca6d4992203c9479808
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697212"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49287811"
 ---
 # <a name="rolescopetag-resource-type"></a>Тип ресурса Ролескопетаг
 
@@ -37,9 +37,9 @@ ms.locfileid: "48697212"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
-|displayName|Строка|Отображаемое или понятное имя тега области применения роли.|
-|description|Строка|Описание тега области применения роли.|
+|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
+|displayName|String|Отображаемое или понятное имя тега области применения роли.|
+|description|String|Описание тега области применения роли.|
 |isBuiltIn|Boolean|Описание тега области применения роли.|
 
 ## <a name="relationships"></a>Связи
@@ -64,7 +64,6 @@ ms.locfileid: "48697212"
   "isBuiltIn": true
 }
 ```
-
 
 
 
