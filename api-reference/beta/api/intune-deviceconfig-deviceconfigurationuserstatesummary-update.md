@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aadb068c2511192cc341404a43dc60b957b0210b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 553447bfd38ead0577b0a88726894419a6ee1597
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731290"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49291402"
 ---
 # <a name="update-deviceconfigurationuserstatesummary"></a>Обновление Девицеконфигуратионусерстатесуммари
 
@@ -46,14 +46,14 @@ PATCH /deviceManagement/deviceConfigurationUserStateSummaries
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицеконфигуратионусерстатесуммари](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеконфигуратионусерстатесуммари](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |unknownUserCount|Int32|Количество неизвестных пользователей|
 |notApplicableUserCount|Int32|Количество неприменимых пользователей|
 |compliantUserCount|Int32|Число соответствующих пользователей|
@@ -64,7 +64,7 @@ PATCH /deviceManagement/deviceConfigurationUserStateSummaries
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеконфигуратионусерстатесуммари](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -107,7 +107,6 @@ Content-Length: 324
   "conflictUserCount": 1
 }
 ```
-
 
 
 

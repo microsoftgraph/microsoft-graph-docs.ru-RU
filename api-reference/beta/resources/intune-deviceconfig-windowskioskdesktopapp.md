@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 82773d7bedc5bb4221327217195e98e12621dfde
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b5c5f3ab5bc7e87a57c80c74698e4fb8f0656063
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729541"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293459"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>Тип ресурса windowsKioskDesktopApp
 
@@ -31,10 +31,10 @@ ms.locfileid: "48729541"
 |стартлайауттилесизе|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Размер плитки приложения для начального макета, унаследованного от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md). Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.|
 |name|String|Представляет понятное имя приложения, наследуемого от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |Тип|[виндовскиоскапптипе](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения, наследуемого из [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md). Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
-|Автозапуск|Логический|Разрешить автоматический запуск приложения в режиме киоска с несколькими приложениями, унаследованном от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|Автозапуск|Boolean|Разрешить автоматический запуск приложения в режиме киоска с несколькими приложениями, унаследованном от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |path|String|Определение пути к классическому приложению|
-|десктопаппликатионид|Строка|Определение Десктопаппликатионид приложения|
-|десктопаппликатионлинкпас|Строка|Определение Десктопаппликатионлинкпас приложения|
+|десктопаппликатионид|String|Определение Десктопаппликатионид приложения|
+|десктопаппликатионлинкпас|String|Определение Десктопаппликатионлинкпас приложения|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -58,7 +58,6 @@ ms.locfileid: "48729541"
   "desktopApplicationLinkPath": "String"
 }
 ```
-
 
 
 

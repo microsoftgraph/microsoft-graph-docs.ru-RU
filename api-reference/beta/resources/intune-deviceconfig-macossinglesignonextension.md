@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 83e5b9135ddf39fbfa582b52520b63ea50fcbc32
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5d83ff3e2eab60f1e4b44004c4d60e96865a1b18
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701377"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49294138"
 ---
 # <a name="macossinglesignonextension-resource-type"></a>Тип ресурса Макоссинглесигнонекстенсион
 
@@ -44,7 +44,6 @@ ms.locfileid: "48701377"
   "@odata.type": "#microsoft.graph.macOSSingleSignOnExtension"
 }
 ```
-
 
 
 

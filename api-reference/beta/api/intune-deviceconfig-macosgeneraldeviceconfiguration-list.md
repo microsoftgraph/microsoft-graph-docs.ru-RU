@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ebd85fdeced834672604403ace85ba2ae2ebafd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7aa1963b22486ff4daee3f0c7a6afadf3aa194f1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724812"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49290863"
 ---
 # <a name="list-macosgeneraldeviceconfigurations"></a>Перечисление объектов macOSGeneralDeviceConfiguration
 
@@ -47,10 +47,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5413
+Content-Length: 5369
 
 {
   "value": [
@@ -153,7 +153,6 @@ Content-Length: 5413
       "passwordBlockProximityRequests": true,
       "passwordBlockAirDropSharing": true,
       "softwareUpdatesEnforcedDelayInDays": 2,
-      "softwareUpdatesForceDelayed": true,
       "updateDelayPolicy": "delayOSUpdateVisibility",
       "contentCachingBlocked": true,
       "iCloudBlockPhotoLibrary": true,
@@ -207,7 +206,6 @@ Content-Length: 5413
   ]
 }
 ```
-
 
 
 

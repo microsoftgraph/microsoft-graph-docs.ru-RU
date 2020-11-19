@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 46a7cf012954189a3c14bdcdb6364ed9557d7f84
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ac1b4a458325671252655986cb3089940be10bd4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727472"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49294132"
 ---
 # <a name="macossoftwareupdateaccountsummary-resource-type"></a>Тип ресурса Макоссофтвареупдатеаккаунтсуммари
 
@@ -26,16 +26,16 @@ ms.locfileid: "48727472"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Макоссофтвареупдатеаккаунтсуммариес](../api/intune-deviceconfig-macossoftwareupdateaccountsummary-list.md)|Коллекция [макоссофтвареупдатеаккаунтсуммари](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md)|Список свойств и связей объектов [макоссофтвареупдатеаккаунтсуммари](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) .|
-|[Получение Макоссофтвареупдатеаккаунтсуммари](../api/intune-deviceconfig-macossoftwareupdateaccountsummary-get.md)|[макоссофтвареупдатеаккаунтсуммари](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md)|Чтение свойств и связей объекта [макоссофтвареупдатеаккаунтсуммари](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) .|
-|[Создание Макоссофтвареупдатеаккаунтсуммари](../api/intune-deviceconfig-macossoftwareupdateaccountsummary-create.md)|[макоссофтвареупдатеаккаунтсуммари](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md)|Создание нового объекта [макоссофтвареупдатеаккаунтсуммари](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) .|
+|[Получение Макоссофтвареупдатеаккаунтсуммари](../api/intune-deviceconfig-macossoftwareupdateaccountsummary-get.md)|[macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md)|Чтение свойств и связей объекта [макоссофтвареупдатеаккаунтсуммари](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) .|
+|[Создание Макоссофтвареупдатеаккаунтсуммари](../api/intune-deviceconfig-macossoftwareupdateaccountsummary-create.md)|[macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md)|Создание нового объекта [макоссофтвареупдатеаккаунтсуммари](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) .|
 |[Удаление Макоссофтвареупдатеаккаунтсуммари](../api/intune-deviceconfig-macossoftwareupdateaccountsummary-delete.md)|Нет|Удаляет объект [макоссофтвареупдатеаккаунтсуммари](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md).|
-|[Обновление Макоссофтвареупдатеаккаунтсуммари](../api/intune-deviceconfig-macossoftwareupdateaccountsummary-update.md)|[макоссофтвареупдатеаккаунтсуммари](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md)|Обновление свойств объекта [макоссофтвареупдатеаккаунтсуммари](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) .|
+|[Обновление Макоссофтвареупдатеаккаунтсуммари](../api/intune-deviceconfig-macossoftwareupdateaccountsummary-update.md)|[macOSSoftwareUpdateAccountSummary](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md)|Обновление свойств объекта [макоссофтвареупдатеаккаунтсуммари](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|displayName|Строка|Имя отчета|
+|id|String|Ключ объекта.|
+|displayName|String|Имя отчета|
 |deviceId|String|ИДЕНТИФИКАТОР устройства.|
 |userId|String|Идентификатор пользователя.|
 |deviceName|String|Имя устройства.|
@@ -75,7 +75,6 @@ ms.locfileid: "48727472"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

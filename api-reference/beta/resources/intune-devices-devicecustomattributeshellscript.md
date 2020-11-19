@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 55fd39f65d53f51641f2753b9bd8dc95a6ac774e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 71c7630daa03c695284bf225e56c69c2d6172b0b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728253"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293186"
 ---
 # <a name="devicecustomattributeshellscript-resource-type"></a>Тип ресурса Девицекустоматтрибутешеллскрипт
 
@@ -26,20 +26,20 @@ ms.locfileid: "48728253"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Девицекустоматтрибутешеллскриптс](../api/intune-devices-devicecustomattributeshellscript-list.md)|Коллекция [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md)|Список свойств и связей объектов [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md) .|
-|[Получение Девицекустоматтрибутешеллскрипт](../api/intune-devices-devicecustomattributeshellscript-get.md)|[девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md)|Чтение свойств и связей объекта [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md) .|
-|[Создание Девицекустоматтрибутешеллскрипт](../api/intune-devices-devicecustomattributeshellscript-create.md)|[девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md)|Создание нового объекта [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md) .|
+|[Получение Девицекустоматтрибутешеллскрипт](../api/intune-devices-devicecustomattributeshellscript-get.md)|[deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md)|Чтение свойств и связей объекта [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md) .|
+|[Создание Девицекустоматтрибутешеллскрипт](../api/intune-devices-devicecustomattributeshellscript-create.md)|[deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md)|Создание нового объекта [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md) .|
 |[Удаление Девицекустоматтрибутешеллскрипт](../api/intune-devices-devicecustomattributeshellscript-delete.md)|Нет|Удаляет объект [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md).|
-|[Обновление Девицекустоматтрибутешеллскрипт](../api/intune-devices-devicecustomattributeshellscript-update.md)|[девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md)|Обновление свойств объекта [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md) .|
+|[Обновление Девицекустоматтрибутешеллскрипт](../api/intune-devices-devicecustomattributeshellscript-update.md)|[deviceCustomAttributeShellScript](../resources/intune-devices-devicecustomattributeshellscript.md)|Обновление свойств объекта [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md) .|
 |[Действие assign](../api/intune-devices-devicecustomattributeshellscript-assign.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для объекта настраиваемого атрибута.|
-|кустоматтрибутенаме|Строка|Имя настраиваемого атрибута.|
-|кустоматтрибутетипе|[девицекустоматтрибутевалуетипе](../resources/intune-devices-devicecustomattributevaluetype.md)|Ожидаемый тип значения настраиваемого атрибута. Возможные значения: `integer`, `string`, `dateTime`.|
-|displayName|Строка|Имя скрипта управления устройствами.|
-|description|Строка|Необязательное описание скрипта управления устройствами.|
+|id|String|Уникальный идентификатор для объекта настраиваемого атрибута.|
+|кустоматтрибутенаме|String|Имя настраиваемого атрибута.|
+|кустоматтрибутетипе|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|Ожидаемый тип значения настраиваемого атрибута. Возможные значения: `integer`, `string`, `dateTime`.|
+|displayName|String|Имя скрипта управления устройствами.|
+|description|String|Необязательное описание скрипта управления устройствами.|
 |скриптконтент|Binary|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами. Это свойство доступно только для чтения.|
@@ -82,7 +82,6 @@ ms.locfileid: "48728253"
   ]
 }
 ```
-
 
 
 

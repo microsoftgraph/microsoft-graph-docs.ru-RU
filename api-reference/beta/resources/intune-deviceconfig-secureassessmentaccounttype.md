@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ff6c3bf31b1fbe390bb53d4166c961dd2bcef3e4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: da9695d549b9abcdec4cb5fc4c32fd699fd1ddb4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709938"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293859"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>тип перечисления Секуреассессментаккаунттипе
 
@@ -29,7 +29,6 @@ ms.locfileid: "48709938"
 |домаинаккаунт|1,1|Указывает учетную запись домена в формате домен \ пользователь или user@domain.com.|
 |локалаккаунт|2|Указывает локальную учетную запись в формате имени пользователя.|
 |локалгуестаккаунт|4|Указывает локальную гостевую учетную запись в формате имени теста.|
-
 
 
 

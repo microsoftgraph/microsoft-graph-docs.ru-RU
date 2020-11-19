@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a0edacb25b80c3e9590d8a9c626528fe92c3295f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8f0abd7b17af9baa1bab502c3ab74a81770eb1d4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735556"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49290093"
 ---
 # <a name="delete-devicemanagementcollectionsettinginstance"></a>Удаление Девицеманажементколлектионсеттингинстанце
 
@@ -49,7 +49,7 @@ DELETE /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -68,7 +68,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

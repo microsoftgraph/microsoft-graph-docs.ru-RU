@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5f1712a59ef6659ce6ac5e16f6111998fcf3455e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: dc4130aadc8d516709c79561cafa8fc1cc7736a0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731101"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49294034"
 ---
 # <a name="macossoftwareupdateconfiguration-resource-type"></a>Тип ресурса Макоссофтвареупдатеконфигуратион
 
@@ -29,30 +29,30 @@ ms.locfileid: "48731101"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Макоссофтвареупдатеконфигуратионс](../api/intune-deviceconfig-macossoftwareupdateconfiguration-list.md)|Коллекция [макоссофтвареупдатеконфигуратион](../resources/intune-deviceconfig-macossoftwareupdateconfiguration.md)|Список свойств и связей объектов [макоссофтвареупдатеконфигуратион](../resources/intune-deviceconfig-macossoftwareupdateconfiguration.md) .|
-|[Получение Макоссофтвареупдатеконфигуратион](../api/intune-deviceconfig-macossoftwareupdateconfiguration-get.md)|[макоссофтвареупдатеконфигуратион](../resources/intune-deviceconfig-macossoftwareupdateconfiguration.md)|Чтение свойств и связей объекта [макоссофтвареупдатеконфигуратион](../resources/intune-deviceconfig-macossoftwareupdateconfiguration.md) .|
-|[Создание Макоссофтвареупдатеконфигуратион](../api/intune-deviceconfig-macossoftwareupdateconfiguration-create.md)|[макоссофтвареупдатеконфигуратион](../resources/intune-deviceconfig-macossoftwareupdateconfiguration.md)|Создание нового объекта [макоссофтвареупдатеконфигуратион](../resources/intune-deviceconfig-macossoftwareupdateconfiguration.md) .|
+|[Получение Макоссофтвареупдатеконфигуратион](../api/intune-deviceconfig-macossoftwareupdateconfiguration-get.md)|[macOSSoftwareUpdateConfiguration](../resources/intune-deviceconfig-macossoftwareupdateconfiguration.md)|Чтение свойств и связей объекта [макоссофтвареупдатеконфигуратион](../resources/intune-deviceconfig-macossoftwareupdateconfiguration.md) .|
+|[Создание Макоссофтвареупдатеконфигуратион](../api/intune-deviceconfig-macossoftwareupdateconfiguration-create.md)|[macOSSoftwareUpdateConfiguration](../resources/intune-deviceconfig-macossoftwareupdateconfiguration.md)|Создание нового объекта [макоссофтвареупдатеконфигуратион](../resources/intune-deviceconfig-macossoftwareupdateconfiguration.md) .|
 |[Удаление Макоссофтвареупдатеконфигуратион](../api/intune-deviceconfig-macossoftwareupdateconfiguration-delete.md)|Нет|Удаляет объект [макоссофтвареупдатеконфигуратион](../resources/intune-deviceconfig-macossoftwareupdateconfiguration.md).|
-|[Обновление Макоссофтвареупдатеконфигуратион](../api/intune-deviceconfig-macossoftwareupdateconfiguration-update.md)|[макоссофтвареупдатеконфигуратион](../resources/intune-deviceconfig-macossoftwareupdateconfiguration.md)|Обновление свойств объекта [макоссофтвареупдатеконфигуратион](../resources/intune-deviceconfig-macossoftwareupdateconfiguration.md) .|
+|[Обновление Макоссофтвареупдатеконфигуратион](../api/intune-deviceconfig-macossoftwareupdateconfiguration-update.md)|[macOSSoftwareUpdateConfiguration](../resources/intune-deviceconfig-macossoftwareupdateconfiguration.md)|Обновление свойств объекта [макоссофтвареупдатеконфигуратион](../resources/intune-deviceconfig-macossoftwareupdateconfiguration.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsEdition|[deviceManagementApplicabilityRuleOsEdition](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md)|Применимость выпусков ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleOsVersion|[deviceManagementApplicabilityRuleOsVersion](../resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md)|Правило применимости версии ОС для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |deviceManagementApplicabilityRuleDeviceMode|[deviceManagementApplicabilityRuleDeviceMode](../resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md)|Правило применимости режима устройства для этой политики. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md).|
-|критикалупдатебехавиор|[макоссофтвареупдатебехавиор](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Обновление поведения критических обновлений. Возможные значения: `notConfigured`, `default`.|
-|конфигдатаупдатебехавиор|[макоссофтвареупдатебехавиор](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Обновление поведения обновлений файлов данных конфигурации. Возможные значения: `notConfigured`, `default`.|
-|фирмвареупдатебехавиор|[макоссофтвареупдатебехавиор](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Обновление поведения обновлений микропрограммного обеспечения. Возможные значения: `notConfigured`, `default`.|
-|аллосерупдатебехавиор|[макоссофтвареупдатебехавиор](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Обновление поведения для всех остальных обновлений. Возможные значения: `notConfigured`, `default`.|
-|упдатесчедулетипе|[макоссофтвареупдатесчедулетипе](../resources/intune-deviceconfig-macossoftwareupdatescheduletype.md)|Обновление типа расписания. Возможные значения: `alwaysUpdate`, `updateDuringTimeWindows`, `updateOutsideOfTimeWindows`.|
+|критикалупдатебехавиор|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Обновление поведения критических обновлений. Возможные значения: `notConfigured`, `default`.|
+|конфигдатаупдатебехавиор|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Обновление поведения обновлений файлов данных конфигурации. Возможные значения: `notConfigured`, `default`.|
+|фирмвареупдатебехавиор|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Обновление поведения обновлений микропрограммного обеспечения. Возможные значения: `notConfigured`, `default`.|
+|аллосерупдатебехавиор|[macOSSoftwareUpdateBehavior](../resources/intune-deviceconfig-macossoftwareupdatebehavior.md)|Обновление поведения для всех остальных обновлений. Возможные значения: `notConfigured`, `default`.|
+|упдатесчедулетипе|[macOSSoftwareUpdateScheduleType](../resources/intune-deviceconfig-macossoftwareupdatescheduletype.md)|Обновление типа расписания. Возможные значения: `alwaysUpdate`, `updateDuringTimeWindows`, `updateOutsideOfTimeWindows`.|
 |кустомупдатетимевиндовс|Коллекция [кустомупдатетимевиндов](../resources/intune-deviceconfig-customupdatetimewindow.md)|Настраиваемое время Windows, когда обновления будут разрешены или заблокированы. Эта коллекция может содержать не более 20 элементов.|
 |упдатетимевиндовуткоффсетинминутес|Int32|Минуты, указывающие смещение UTC для каждого периода обновления|
 
@@ -126,7 +126,6 @@ ms.locfileid: "48731101"
   "updateTimeWindowUtcOffsetInMinutes": 1024
 }
 ```
-
 
 
 

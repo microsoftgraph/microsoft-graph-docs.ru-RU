@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 68ad6ec2002b400483b25b7f23d4fdf3e586fe65
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 45b063d195bd5c8fe0487521d26b38997e7c36b1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728211"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293019"
 ---
 # <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>тип перечисления Девицегуардвиртуализатионбаседсекуритистате
 
@@ -25,14 +25,13 @@ ms.locfileid: "48728211"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|запускается|нуль|Работает|
+|запускается|нуль|Выполняется|
 |ребутрекуиред|1,1|Обязательный корень|
 |require64BitArchitecture|2|необходима разрядная архитектура 64|
 |нотлиценсед|4|Не лицензировано|
 |notConfigured|4 |Не настроено|
 |доеснотмисардваререкуирементс|5 |Система не соответствует требованиям к оборудованию|
 |остальные|42|Остальные. Дополнительные сведения см. в журналах событий в Microsoft Windows Девицегуард.|
-
 
 
 

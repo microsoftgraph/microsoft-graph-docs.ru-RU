@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 740d9b886b359eb3741034331d7b23f75b28b0c1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1885128afdbac2c8603ac5ec400c66bde6be9471
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736188"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49293553"
 ---
 # <a name="windowskioskazureadgroup-resource-type"></a>Тип ресурса Виндовскиосказуреадграуп
 
@@ -28,7 +28,7 @@ ms.locfileid: "48736188"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя группы AzureAD, которая будет заблокирована для этой конфигурации киоска|
+|displayName|String|Отображаемое имя группы AzureAD, которая будет заблокирована для этой конфигурации киоска|
 |groupId|String|Идентификатор группы AzureAD, которая будет заблокирована для этой конфигурации киоска|
 
 ## <a name="relationships"></a>Связи
@@ -48,7 +48,6 @@ ms.locfileid: "48736188"
   "groupId": "String"
 }
 ```
-
 
 
 
