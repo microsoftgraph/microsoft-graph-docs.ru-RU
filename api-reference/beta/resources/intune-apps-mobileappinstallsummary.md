@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: dbe40a14569a4a073da333d9df684069d0c457ac
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: dbab510c7f19defa3fd3a26c41bd86ed5866f5ff
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48721544"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49231912"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>Тип ресурса Мобилеаппинсталлсуммари
 
@@ -31,7 +31,7 @@ ms.locfileid: "48721544"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |installedDeviceCount|Int32|Количество устройств, на которых успешно установлено это приложение.|
 |failedDeviceCount|Int32|Количество устройств, которые не удалось установить это приложение.|
 |notApplicableDeviceCount|Int32|Количество устройств, неприменимых к этому приложению.|
@@ -70,7 +70,6 @@ ms.locfileid: "48721544"
   "pendingInstallUserCount": 1024
 }
 ```
-
 
 
 

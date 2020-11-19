@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7ef992f8c2308e0b7a3c303d5a811c2807a5bb7a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8480b7e97e5e9feab8fdbfda4bb09ab40967b43d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696407"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49231824"
 ---
 # <a name="win32lobappfilesystemoperationtype-enum-type"></a>тип перечисления win32LobAppFileSystemOperationType
 
@@ -32,7 +32,6 @@ ms.locfileid: "48696407"
 |version|4 |Тип значения Version.|
 |сизеинмб|5 |Тип определения размера.|
 |доеснотексист|6 |Указанный файл или папка не существует.|
-
 
 
 

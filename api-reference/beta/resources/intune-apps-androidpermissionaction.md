@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3c6e585a5a889a3af3b09f84f8a41c1fce2280c1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 76090d450332b0c5656ee122a7338180fa692811
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727556"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49231922"
 ---
 # <a name="androidpermissionaction-resource-type"></a>Тип ресурса Андроидпермиссионактион
 
@@ -25,7 +25,7 @@ ms.locfileid: "48727556"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|права|Строка|Строка разрешений Android, определенная в официальной документации по Android.  Пример: "android.permission.READ_CONTACTS".|
+|права|String|Строка разрешений Android, определенная в официальной документации по Android.  Пример: "android.permission.READ_CONTACTS".|
 |action|[андроидпермиссионактионтипе](../resources/intune-apps-androidpermissionactiontype.md)|Тип действия разрешений Android. Возможные значения: `prompt`, `autoGrant`, `autoDeny`.|
 
 ## <a name="relationships"></a>Связи
@@ -45,7 +45,6 @@ ms.locfileid: "48727556"
   "action": "String"
 }
 ```
-
 
 
 

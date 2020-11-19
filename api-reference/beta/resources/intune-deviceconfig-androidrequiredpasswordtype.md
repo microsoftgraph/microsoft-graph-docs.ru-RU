@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: f78829f47a8f1d029ed78b2fb0d63192af69a3e6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5842974b164361f834041e741554045428a7b95a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725605"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49231656"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>тип перечисления Андроидрекуиредпассвордтипе
 
@@ -33,7 +33,6 @@ ms.locfileid: "48725605"
 |числовых|5 |Необходим числовой пароль.|
 |нумериккомплекс|6 |Необходим числовой сложный пароль.|
 |любой|7 |Необходим пароль или шаблон, а любой из них приемлем.|
-
 
 
 

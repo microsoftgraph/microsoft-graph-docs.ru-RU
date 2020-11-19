@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 942b9eda37ffa2f8ba8525352949b47562bb6dbe
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cbdafd4d46ba81d53138080a8c5b0c41e73015e9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48721504"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49231913"
 ---
 # <a name="mobileappinstallstatus-resource-type"></a>Тип ресурса mobileAppInstallStatus
 
@@ -34,7 +34,7 @@ ms.locfileid: "48721504"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |deviceName|String|Имя устройства|
 |deviceId|String|ИДЕНТИФИКАТОР устройства|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации|
@@ -46,7 +46,7 @@ ms.locfileid: "48721504"
 |osDescription|String|Описание ОС|
 |userName|String|Имя пользователя устройства|
 |userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
-|дисплайверсион|Строка|Доступная для человека версия приложения|
+|дисплайверсион|String|Доступная для человека версия приложения|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -79,7 +79,6 @@ ms.locfileid: "48721504"
   "displayVersion": "String"
 }
 ```
-
 
 
 

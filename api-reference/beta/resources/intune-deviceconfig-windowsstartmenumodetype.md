@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 640a424cd19b5bc48c5851eb15825a5b950007ab
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f515a36893fb3f89d4a8db396be3a392efcf8750
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697856"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49231303"
 ---
 # <a name="windowsstartmenumodetype-enum-type"></a>тип перечисления Виндовсстартменумодетипе
 
@@ -28,7 +28,6 @@ ms.locfileid: "48697856"
 |UserDefined типа|нуль|Определено пользователем. Значение по умолчанию.|
 |Перейти|1,1|Полноэкранный режим.|
 |неполноэкранный режим|2|Не полный экран.|
-
 
 
 

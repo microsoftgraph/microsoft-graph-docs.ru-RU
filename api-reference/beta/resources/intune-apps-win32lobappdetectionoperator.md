@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5700e5475d52915055046257eeec32d147c0d444
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: eb5138f9050523c9549d58b511a83ebdb4f721b5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707936"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49231817"
 ---
 # <a name="win32lobappdetectionoperator-enum-type"></a>тип перечисления win32LobAppDetectionOperator
 
@@ -32,7 +32,6 @@ ms.locfileid: "48707936"
 |греатерсанорекуал|5 |Оператор "больше или равно".|
 |лесссан|8 |Оператор "меньше чем".|
 |лесссанорекуал|9 |Оператор "меньше или равно".|
-
 
 
 

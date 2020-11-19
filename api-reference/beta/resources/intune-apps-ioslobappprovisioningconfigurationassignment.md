@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 92498748ef40f09ef6f8f045eb7634c2d44de53c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c2c5e407241b01fd0ebe8b6b464af073461fc5b8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723122"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49231929"
 ---
 # <a name="ioslobappprovisioningconfigurationassignment-resource-type"></a>Тип ресурса Иослобапппровисионингконфигуратионассигнмент
 
@@ -34,7 +34,7 @@ ms.locfileid: "48723122"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевое назначение группы, определенное администратором.|
 
 ## <a name="relationships"></a>Связи
@@ -59,7 +59,6 @@ ms.locfileid: "48723122"
   }
 }
 ```
-
 
 
 
