@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fb3ea6abdceae5f3af2300810d7d822b2c2c5e39
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e4fce57585c0dee4f73719870da7d07a2d710cd5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697429"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267196"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>Тип ресурса Граупполициконфигуратион
 
@@ -37,10 +37,10 @@ ms.locfileid: "48697429"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|displayName|Строка|Предоставленное пользователем имя объекта ресурса.|
-|description|Строка|Предоставленное пользователем описание объекта ресурса.|
+|displayName|String|Предоставленное пользователем имя объекта ресурса.|
+|description|String|Предоставленное пользователем описание объекта ресурса.|
 |roleScopeTagIds|Коллекция строк|Список тегов области для конфигурации.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 ## <a name="relationships"></a>Связи
@@ -70,7 +70,6 @@ ms.locfileid: "48697429"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bd71ee742ba7d7b5a98c5f3bbf90496bb52392be
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 472670b58115d9887ae44a2fb191f1338d058fb4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696267"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49269366"
 ---
 # <a name="defenderthreataction-enum-type"></a>тип перечисления Дефендерсреатактион
 
@@ -32,7 +32,6 @@ ms.locfileid: "48696267"
 |разрешить|4 |Разрешить обнаруженную угрозу.|
 |UserDefined типа|5 |Разрешить пользователю определять действие, выполняемое с обнаруженной угрозой.|
 |блок|6 |Блокировка обнаруженной угрозы.|
-
 
 
 

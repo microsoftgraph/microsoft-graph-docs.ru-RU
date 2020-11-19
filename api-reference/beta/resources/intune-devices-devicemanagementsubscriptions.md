@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 30e8980a3469955361ac3c593f6bef4c875d4069
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 00bf2ed12e74ff95f34feafb91baee56ba643e8f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697688"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267560"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>тип перечисления Девицеманажементсубскриптионс
 
@@ -25,13 +25,12 @@ ms.locfileid: "48697688"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Нет|
+|Нет|нуль|Нет|
 |корпоративного|1,1|Подписка на Microsoft Intune|
 |Office365|2|Подписка на Office365|
 |интунепремиум|4 |Подписка на Microsoft Intune Premium|
 |intune_EDU|8 |Microsoft Intune для образования подписки|
 |intune_SMB|16 |Подписка на Microsoft Intune для малого бизнеса|
-
 
 
 

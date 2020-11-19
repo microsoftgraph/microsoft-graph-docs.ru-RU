@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a4dde22a1f2a59827639059269f566235bbf5fcb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 99fa1a86a87c14c9b119a0fbef6289984705263c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702672"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49269828"
 ---
 # <a name="androidmanagedstoreappconfigurationschema-resource-type"></a>Тип ресурса Андроидманажедстореаппконфигуратионсчема
 
@@ -34,7 +34,7 @@ ms.locfileid: "48702672"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта, которому соответствует имя пакета Android для схемы приложений.|
+|id|String|Ключ объекта, которому соответствует имя пакета Android для схемы приложений.|
 |exampleJson|Binary|Массив байтов в кодировке UTF8, содержащий образец соответствующей схеме строки JSON, который иллюстрирует настройку приложения.|
 |schemaItems|Коллекция [андроидманажедстореаппконфигуратионсчемаитем](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Коллекция элементов, каждый из которых представляет именованный параметр конфигурации в схеме. Он содержит только конфигурацию корневого уровня.|
 |нестедсчемаитемс|Коллекция [андроидманажедстореаппконфигуратионсчемаитем](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)|Коллекция элементов, каждый из которых представляет именованный параметр конфигурации в схеме. Он содержит плоский список всех конфигураций.|
@@ -105,7 +105,6 @@ ms.locfileid: "48702672"
   ]
 }
 ```
-
 
 
 

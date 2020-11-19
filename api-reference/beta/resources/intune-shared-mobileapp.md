@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e0a59eaa61d10fa44d0af3e13f18ae90f83a3d0b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 767974865f108e49e58541afaf4d276f35495008
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736018"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49266145"
 ---
 # <a name="mobileapp-resource-type"></a>Тип ресурса mobileApp
 
@@ -39,9 +39,9 @@ ms.locfileid: "48736018"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|displayName|Строка|Администратор предоставил или импортировал название приложения.|
-|description|Строка|Описание приложения.|
+|id|String|Ключ объекта.|
+|displayName|String|Администратор предоставил или импортировал название приложения.|
+|description|String|Описание приложения.|
 |publisher|String|Издатель приложения.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, отображается в сведениях о приложении и используется для отправки значка.|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения.|
@@ -106,7 +106,6 @@ ms.locfileid: "48736018"
   "dependentAppCount": 1024
 }
 ```
-
 
 
 

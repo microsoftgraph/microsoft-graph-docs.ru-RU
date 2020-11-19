@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 15e0c8f1dc14dae41b917e85867020fb4d57571f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d22db1f0960aac0f3cf94d81fcfdd08bb4c45642
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690716"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49269527"
 ---
 # <a name="androidkeyguardfeature-enum-type"></a>тип перечисления Андроидкэйгуардфеатуре
 
@@ -33,7 +33,6 @@ ms.locfileid: "48690716"
 |распознавания|5 |Использование датчиков отпечатков пальцев в защищенных экранах кэйгуард.|
 |ремотеинпут|6 |Ввод текста уведомления при использовании экранов безопасного кэйгуард.|
 |аллфеатурес|7 |Все компоненты кэйгуард, когда на экранах безопасности кэйгуард.|
-
 
 
 

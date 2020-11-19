@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7e49894144aaab272797824b5a315bcd41401095
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0fdf91765d6387a735439ad4bcf66f568f3944ab
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729322"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267602"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>Тип ресурса Девицеманажементскриптусерстате
 
@@ -34,7 +34,7 @@ ms.locfileid: "48729322"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта состояния пользователя скрипта управления устройствами. Это свойство доступно только для чтения.|
+|id|String|Ключ объекта состояния пользователя скрипта управления устройствами. Это свойство доступно только для чтения.|
 |сукцессдевицекаунт|Int32|Число устройств для указанного пользователя.|
 |errorDeviceCount|Int32|Количество устройств с ошибками для определенного пользователя.|
 |userPrincipalName|String|Имя участника, указанного пользователем.|
@@ -61,7 +61,6 @@ ms.locfileid: "48729322"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

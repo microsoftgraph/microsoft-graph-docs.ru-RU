@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c0f9a3f05982daa036b1a2f38a09cb34011a3fb9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f8cdc38003e1c16c91b1ff734e74e1c7bd6fee18
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730469"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49269177"
 ---
 # <a name="keyintegervaluepair-resource-type"></a>Тип ресурса Кэйинтежервалуепаир
 
@@ -28,7 +28,7 @@ ms.locfileid: "48730469"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|key|Строка|Строковый ключ для типа "ключ — значение". Наследуется от [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)|
+|key|String|Строковый ключ для типа "ключ — значение". Наследуется от [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)|
 |value|Int32|Целочисленное значение для параметра "ключ — значение".|
 
 ## <a name="relationships"></a>Связи
@@ -48,7 +48,6 @@ ms.locfileid: "48730469"
   "value": 1024
 }
 ```
-
 
 
 

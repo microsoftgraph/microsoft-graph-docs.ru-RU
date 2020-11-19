@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8f968cef493ffa0cefc9ce447761b674e452a547
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f04745c70a61f71a6d0ba90dc680adaaba35fee4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730476"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49268056"
 ---
 # <a name="devicemanagementsettingintegerconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингинтежерконстраинт
 
@@ -48,7 +48,6 @@ ms.locfileid: "48730476"
   "maximumValue": 1024
 }
 ```
-
 
 
 

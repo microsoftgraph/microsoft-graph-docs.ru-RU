@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 60bfa322af19a71dc02213a64aa5d9f067f5c3c7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7ebb70d14a608d76acf5bccb3ab4248ca38346e5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702665"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49269807"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>Тип ресурса Андроидманажедстореаппконфигуратионсчемаитем
 
@@ -28,8 +28,8 @@ ms.locfileid: "48702665"
 |index|Int32|Уникальный индекс, который приложение использует для поддержки вложенных элементов схемы|
 |парентиндекс|Int32|Индекс элемента родительской схемы для отслеживания вложенных элементов схемы|
 |schemaItemKey|String|Уникальный ключ, используемый приложением для определения элемента.|
-|displayName|Строка|Понятное человеку имя.|
-|description|Строка|Описание компонентов приложения, которыми управляет элемент.|
+|displayName|String|Понятное человеку имя.|
+|description|String|Описание компонентов приложения, которыми управляет элемент.|
 |defaultBoolValue|Boolean|Значение по умолчанию для элементов логического типа, если указано разработчиком приложения.|
 |defaultIntValue|Int32|Значение по умолчанию для элементов целочисленного типа, если указано разработчиком приложения.|
 |defaultStringValue|String|Значение по умолчанию для элементов строкового типа, если указано разработчиком приложения.|
@@ -71,7 +71,6 @@ ms.locfileid: "48702665"
   ]
 }
 ```
-
 
 
 

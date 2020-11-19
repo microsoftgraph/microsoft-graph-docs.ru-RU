@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3c5dbf083a56ae2a26bd739ff4c7310585bd7206
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e01414e06dac0b6a9432883cabce87565bbfd8a8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684570"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49266979"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>тип перечисления Манажедаппдатасторажелокатион
 
@@ -28,7 +28,6 @@ ms.locfileid: "48684570"
 |онедривефорбусинесс|1,1|OneDrive для бизнеса;|
 |sharePoint|2|SharePoint|
 |localStorage|6 |Локальное хранилище на устройстве|
-
 
 
 

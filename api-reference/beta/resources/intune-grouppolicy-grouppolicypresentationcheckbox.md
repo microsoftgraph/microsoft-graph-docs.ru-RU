@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e24eb26d5bdf1e87cf3147fdd2d81ad2d4b36f6e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8ef98e435eaf3d9a81579ca93614aebaf2867cfc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684745"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267105"
 ---
 # <a name="grouppolicypresentationcheckbox-resource-type"></a>Тип ресурса Граупполиципресентатиончеккбокс
 
@@ -37,10 +37,10 @@ ms.locfileid: "48684745"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|label|Строка|Локализованная текстовая подпись для любой сущности презентации. По умолчанию это значение пусто. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|id|Строка|Ключ объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|label|String|Локализованная текстовая подпись для любой сущности презентации. По умолчанию это значение пусто. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|id|String|Ключ объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|дефаултчеккед|Логический|Значение по умолчанию для этого флажка. Значение по умолчанию  false.|
+|дефаултчеккед|Boolean|Значение по умолчанию для этого флажка. Значение по умолчанию  false.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -64,7 +64,6 @@ ms.locfileid: "48684745"
   "defaultChecked": true
 }
 ```
-
 
 
 

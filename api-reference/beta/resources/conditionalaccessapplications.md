@@ -5,12 +5,12 @@ localization_priority: Normal
 author: videor
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d5a25b287d4f82aaaf9a7773893f96a02a7cf124
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ba904fec35830bef6cc5a74daa1c4938bd99d250
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48085194"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49269912"
 ---
 # <a name="conditionalaccessapplications-resource-type"></a>Тип ресурса Кондитионалакцессаппликатионс
 
@@ -24,9 +24,9 @@ ms.locfileid: "48085194"
 
 | Свойство | Тип | Описание |
 |:-------- |:---- |:----------- |
-| инклудеаппликатионс | Коллекция String | Список идентификаторов приложений, к которым применяется политика, если явно не исключено (в Ексклудеаппликатионс). Также можно задать значение `All` . |
-| ексклудеаппликатионс | Коллекция String | Список идентификаторов приложений, явно исключенных из политики. |
-| инклудеусерактионс | Коллекция String | Включаемые действия пользователя (например, `urn:user:registersecurityinfo` ); |
+| инклудеаппликатионс | Коллекция строк | Список идентификаторов приложений, к которым применяется политика, если явно не исключено (в Ексклудеаппликатионс). Также можно задать значение `All` . |
+| ексклудеаппликатионс | Коллекция строк | Список идентификаторов приложений, явно исключенных из политики. |
+| инклудеусерактионс | Коллекция строк | Включаемые действия пользователя. Поддерживаемые значения: `urn:user:registersecurityinfo` и `urn:user:registerdevice` |
 
 ## <a name="relationships"></a>Связи
 

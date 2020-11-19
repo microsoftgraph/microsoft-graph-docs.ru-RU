@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1f55bd6aafffc7602632155e4fa3c387c888aae9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7305c42098782d9e69e734037fb08d3238c7b4a9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735815"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49268750"
 ---
 # <a name="macoscontentcachingpeerpolicy-enum-type"></a>тип перечисления Макосконтенткачингпирполици
 
@@ -29,7 +29,6 @@ ms.locfileid: "48735815"
 |пирсинлокалнетворк|1,1|Кэш контента будет одноранговать только с кэшами в непосредственной локальной сети.|
 |пирсвиссамепублиЦипаддресс|2|Кэш контента будет иметь одноранговый узел с кэшами, которые используют один общий IP-адрес.|
 |пирсинкустомлокалнетворкс|4|Кэши контента будут использовать Контенткачингпирфилтерранжес и Контенткачингпирлистенранжес для определения кэшей, с которыми осуществляется одноранговая связь.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 53ae5d7686bd8f9820c227441b34d898d4a9db4e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 716c840a2fa4254c4f0a4cac9ea32117dc5f279c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692466"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49268470"
 ---
 # <a name="mediacontentratingireland-resource-type"></a>Тип ресурса mediaContentRatingIreland
 
@@ -45,7 +45,6 @@ ms.locfileid: "48692466"
   "tvRating": "String"
 }
 ```
-
 
 
 

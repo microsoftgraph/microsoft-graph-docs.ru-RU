@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ac5e864cdc35b7c39f64d10a369768406ae36546
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9dafe326466e18d8510e7494b37e91f5d0e2cff5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705675"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49269016"
 ---
 # <a name="localsecurityoptionsadministratorelevationpromptbehaviortype-enum-type"></a>тип перечисления Локалсекуритйоптионсадминистраторелеватионпромптбехавиортипе
 
@@ -32,7 +32,6 @@ ms.locfileid: "48705675"
 |промптфоркредентиалс|4 |Запрос учетных данных|
 |промптфорконсент|5 |Запрос согласия|
 |промптфорконсентфорнонвиндовсбинариес|6 |Запрос согласия для двоичных файлов, отличных от Windows|
-
 
 
 

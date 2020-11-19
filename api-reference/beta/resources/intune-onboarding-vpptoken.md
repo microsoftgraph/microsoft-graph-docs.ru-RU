@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 348d51682e13a871abe5f3b87e88017b042d661f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 549da8696f6291057adb075e8371ad9d1c0a0443
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703638"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49266419"
 ---
 # <a name="vpptoken-resource-type"></a>Тип ресурса vppToken
 
@@ -38,7 +38,7 @@ ms.locfileid: "48703638"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Создается автоматически при создании appleVolumePurchaseProgramToken. Это ключ объекта.|
+|id|String|Создается автоматически при создании appleVolumePurchaseProgramToken. Это ключ объекта.|
 |organizationName|Строка|Организация, связанная с токеном Apple Volume Purchase Program.|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|Тип программы оптовых покупок, с которой связан заданный токен Apple Volume Purchase Program. Возможные значения: `business`, `education`. Возможные значения: `business`, `education`.|
 |appleId|Строка|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
@@ -51,10 +51,10 @@ ms.locfileid: "48703638"
 |lastSyncStatus|[впптокенсинкстатус](../resources/intune-onboarding-vpptokensyncstatus.md)|Текущее состояние последней синхронизации приложения, инициированной с помощью токена Apple Volume Purchase Program. Возможные значения: `none`, `inProgress`, `completed`, `failed`. Возможные значения: `none`, `inProgress`, `completed`, `failed`.|
 |automaticallyUpdateApps|Логическое|Автоматически обновятся все приложения, не только для токена VPP.|
 |countryOrRegion|Строка|Автоматически обновятся все приложения, не только для токена VPP.|
-|dataSharingConsentGranted|Логический|Разрешение, предоставленное для предоставления общего доступа к данным с помощью программы Apple Volume Purchase Program.|
-|displayName|Строка|Понятное имя маркера, указанного администратором.|
-|локатионнаме|Строка|Расположение маркера возвращено от Apple VPP.|
-|клаимтокенманажементфромекстерналмдм|Логический|Согласие администратора, чтобы разрешить управление маркерами из внешних MDM.|
+|dataSharingConsentGranted|Boolean|Разрешение, предоставленное для предоставления общего доступа к данным с помощью программы Apple Volume Purchase Program.|
+|displayName|String|Понятное имя маркера, указанного администратором.|
+|локатионнаме|String|Расположение маркера возвращено от Apple VPP.|
+|клаимтокенманажементфромекстерналмдм|Boolean|Согласие администратора, чтобы разрешить управление маркерами из внешних MDM.|
 |roleScopeTagIds|Коллекция строк|Идентификаторы тегов области ролей, назначенных этой сущности.|
 
 ## <a name="relationships"></a>Связи
@@ -101,7 +101,6 @@ ms.locfileid: "48703638"
   ]
 }
 ```
-
 
 
 

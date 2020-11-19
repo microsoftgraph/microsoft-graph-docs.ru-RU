@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7daab906ab376aea8b7540b88c6922a37ec23bd2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 29c5fee1a6873e331a9adc927f1a92cf60a8c9e8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684647"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267077"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>тип перечисления Манажедаппклипбоардшаринглевел
 
@@ -29,7 +29,6 @@ ms.locfileid: "48684647"
 |манажедаппсвиспастеин|1,1|Разрешен общий доступ для всех управляемых приложений с включенной вставкой|
 |managedApps|2|Общий доступ разрешен для всех управляемых приложений|
 |заблокированных|4|Совместное использование приложений отключено|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 42ed25ebc0f15082058bb2b3575483201ac2d2b0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bfd569086784964a7685ab6b5f174cefd906c2f7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736172"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267763"
 ---
 # <a name="detectedapp-resource-type"></a>Тип ресурса detectedApp
 
@@ -34,8 +34,8 @@ ms.locfileid: "48736172"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для обнаруженного приложения. Он создается Intune автоматически при создании приложения. Только для чтения.|
-|displayName|Строка|Имя обнаруженного приложения. Только для чтения|
+|id|String|Уникальный идентификатор для обнаруженного приложения. Он создается Intune автоматически при создании приложения. Только для чтения.|
+|displayName|String|Имя обнаруженного приложения. Только для чтения|
 |version|String|Версия обнаруженного приложения. Только для чтения|
 |sizeInByte|Int64|Размер обнаруженного приложения в байтах. Только для чтения|
 |deviceCount|Int32|Количество устройств, на которых было успешно установлено это приложение.|
@@ -63,7 +63,6 @@ ms.locfileid: "48736172"
   "deviceCount": 1024
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 32bc01e2924856d406df94690f5501d376a39aab
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 732e266bcc111c0e07a110a6abc7171798d7d885
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730429"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267937"
 ---
 # <a name="devicemanagementsettingrequiredconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингрекуиредконстраинт
 
@@ -28,7 +28,7 @@ ms.locfileid: "48730429"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|нотконфигуредвалуе|Строка|Список значений, которые не настроены для параметра|
+|нотконфигуредвалуе|String|Список значений, которые не настроены для параметра|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -46,7 +46,6 @@ ms.locfileid: "48730429"
   "notConfiguredValue": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b71f045ac937af455da428b98242f9d074b14840
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7fd08d1ce3dd40e3c60c8cbc42985f4014e1f332
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732539"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49269030"
 ---
 # <a name="lanmanagerauthenticationlevel-enum-type"></a>тип перечисления Ланманажераусентикатионлевел
 
@@ -31,7 +31,6 @@ ms.locfileid: "48732539"
 |lmAndNtlmV2|4|Отправлять только LM & только ответы NTLMv2.|
 |lmNtlmV2AndNotLm|4 |Отправлять только LM & NTLMv2 ответы. Отклонять LM|
 |lmNtlmV2AndNotLmOrNtm|5 |Отправлять только LM & NTLMv2 ответы. Отклонять LM & NTLM|
-
 
 
 

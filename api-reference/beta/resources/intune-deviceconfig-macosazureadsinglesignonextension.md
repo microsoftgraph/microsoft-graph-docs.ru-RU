@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1bc80bb752230fd1699091c380538e62d4ca09c1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e3fe2763607eb0f73fa3a443cf37e0d791101bc9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736249"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49268932"
 ---
 # <a name="macosazureadsinglesignonextension-resource-type"></a>Тип ресурса Макосазуреадсинглесигнонекстенсион
 
@@ -28,7 +28,7 @@ ms.locfileid: "48736249"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|енаблешареддевицемоде|Логический|Включает или отключает режим общего устройства.|
+|енаблешареддевицемоде|Boolean|Включает или отключает режим общего устройства.|
 |бундлеидакцессконтроллист|Коллекция строк|Необязательный список дополнительных идентификаторов пакетов, которые могут использовать расширение AAD для единого входа.|
 |построения|Коллекция [кэйтипедвалуепаир](../resources/intune-deviceconfig-keytypedvaluepair.md)|Получает или задает список типизированных пар "ключ — значение", используемых для настройки профилей типа учетных данных. Эта коллекция может содержать не более 500 элементов.|
 
@@ -58,7 +58,6 @@ ms.locfileid: "48736249"
   ]
 }
 ```
-
 
 
 

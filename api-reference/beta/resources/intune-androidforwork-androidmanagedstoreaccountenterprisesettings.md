@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4ec96b4330f4b96b7b091162e9dfdcb33f4de611
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 61f96fcb77aad55c33aeb22dadc2d2168910cf35
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702686"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49269878"
 ---
 # <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>Тип ресурса ресурса androidmanagedstoreaccountenterprisesettings
 
@@ -32,13 +32,13 @@ ms.locfileid: "48702686"
 |[completeSignup action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-completesignup.md)|Нет|Н/Д|
 |[Действие syncApps](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-syncapps.md)|Нет|Н/Д|
 |[Действие unbind](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-unbind.md)|Нет|Н/Д|
-|[Действие createGooglePlayWebToken](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|Строка|Создает веб-токен, используемый в встраиваемом компоненте.|
+|[Действие createGooglePlayWebToken](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|String|Создает веб-токен, используемый в встраиваемом компоненте.|
 |[Действие setAndroidDeviceOwnerFullyManagedEnrollmentState](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setandroiddeviceownerfullymanagedenrollmentstate.md)|Нет|Задает для ресурса androidmanagedstoreaccountenterprisesettings Андроиддевицеовнерфуллиманажеденроллментенаблед заданное значение.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор корпоративных параметров учетной записи магазина Android|
+|id|String|Идентификатор корпоративных параметров учетной записи магазина Android|
 |bindStatus|[андроидманажедстореаккаунтбиндстатус](../resources/intune-androidforwork-androidmanagedstoreaccountbindstatus.md)|Состояние связывания клиента с помощью API Google EMM. Возможные значения: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
 |lastAppSyncDateTime|DateTimeOffset|Время завершения последней синхронизации приложения|
 |lastAppSyncStatus|[андроидманажедстореаккаунтаппсинкстатус](../resources/intune-androidforwork-androidmanagedstoreaccountappsyncstatus.md)|Последний результат синхронизации приложений. Возможные значения: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
@@ -47,9 +47,9 @@ ms.locfileid: "48702686"
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения корпоративных параметров для Android|
 |enrollmentTarget|[андроидманажедстореаккаунтенроллменттаржет](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Указывает, какие пользователи могут регистрировать устройства в управлении устройствами Android Enterprise. Возможные значения: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|Коллекция строк|Указывает, какие группы AAD могут регистрировать устройства для управления с помощью Android for Work, если для параметра enrollmentTarget задано значение Targeted.|
-|девицеовнерманажементенаблед|Логический|Указывает, передается ли эта учетная запись управлению владельцами устройств Android с помощью Клауддпк.|
+|девицеовнерманажементенаблед|Boolean|Указывает, передается ли эта учетная запись управлению владельцами устройств Android с помощью Клауддпк.|
 |компаникодес|Коллекция [андроиденроллменткомпаникоде](../resources/intune-androidforwork-androidenrollmentcompanycode.md)|Коды компаний для ресурса androidmanagedstoreaccountenterprisesettings|
-|андроиддевицеовнерфуллиманажеденроллментенаблед|Логический|Коды компаний для ресурса androidmanagedstoreaccountenterprisesettings|
+|андроиддевицеовнерфуллиманажеденроллментенаблед|Boolean|Коды компаний для ресурса androidmanagedstoreaccountenterprisesettings|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -92,7 +92,6 @@ ms.locfileid: "48702686"
   "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8e47705cc445c01b547bd0dce3a6b6363736b96e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7f1eab8a7483c2c029f00edd6c481d0028da3ad9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734163"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267693"
 ---
 # <a name="devicecompliancescript-resource-type"></a>Тип ресурса Девицекомплианцескрипт
 
@@ -35,17 +35,17 @@ Intune предоставит клиенту возможность выполн
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для сценария соответствия требованиям устройства|
+|id|String|Уникальный идентификатор для сценария соответствия требованиям устройства|
 |publisher|String|Имя издателя сценариев соответствия требованиям устройства|
 |version|String|Версия сценария соответствия требованиям устройства|
-|displayName|Строка|Имя сценария соответствия требованиям устройства|
-|description|Строка|Описание сценария соответствия требованиям устройства|
+|displayName|String|Имя сценария соответствия требованиям устройства|
+|description|String|Описание сценария соответствия требованиям устройства|
 |детектионскриптконтент|Binary|Весь контент скрипта обнаружения PowerShell|
 |createdDateTime|DateTimeOffset|Метка времени создания сценария соответствия устройства требованиям. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Метка времени изменения сценария соответствия требованиям устройства. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Логический|Указывает, нужно ли проверять подпись скрипта|
-|runAs32Bit|Логический|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
+|Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта|
+|runAs32Bit|Boolean|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для сценария соответствия требованиям устройств|
 
 ## <a name="relationships"></a>Связи
@@ -82,7 +82,6 @@ Intune предоставит клиенту возможность выполн
   ]
 }
 ```
-
 
 
 

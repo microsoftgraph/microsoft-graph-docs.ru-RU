@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 67e911cb5e1b31e3be2cc20378ebe77ff305204a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 062f8a428155a7246e9ac6a372d95aa7ebe42717
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725486"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267371"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>Тип ресурса Манажеддевицеклеанупсеттингс
 
@@ -25,7 +25,7 @@ ms.locfileid: "48725486"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|девицеинактивитибефореретирементиндайс|Строка|Количество дней, когда устройство не связывалось с Intune.|
+|девицеинактивитибефореретирементиндайс|String|Количество дней, когда устройство не связывалось с Intune.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -43,7 +43,6 @@ ms.locfileid: "48725486"
   "deviceInactivityBeforeRetirementInDays": "String"
 }
 ```
-
 
 
 

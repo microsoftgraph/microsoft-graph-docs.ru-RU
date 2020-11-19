@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 77305c9744b713c2eee8145b67c6fa6e0ec1fa09
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5fd3c392bc752db695611d9a55c1fe5cd634ec64
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730982"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49266559"
 ---
 # <a name="deviceenrollmentplatformrestrictionsconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -37,9 +37,9 @@ ms.locfileid: "48730982"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для учетной записи, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|displayName|Строка|Отображаемое имя конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|description|Строка|Описание конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|id|String|Уникальный идентификатор для учетной записи, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|displayName|String|Отображаемое имя конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|description|String|Описание конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |priority|Int32|Priority используется, когда пользователь существует в нескольких группах, которым назначена Настройка регистрации. Пользователи подчиняются только конфигурации с наименьшим значением приоритета. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|Созданная Дата и время в формате UTC для настройки регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
@@ -51,6 +51,7 @@ ms.locfileid: "48730982"
 |windowsMobileRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения для Windows Mobile на основе платформы, версии операционной системы платформы и владельца устройств|
 |androidRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения для Android на основе платформы, версии операционной системы платформы и владельца устройств|
 |андроидфорворкрестриктион|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения для Android для работы на основе платформы, версии операционной системы платформы и владельца устройств|
+|аоспрестриктион|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения АОСП на основе платформы, версии операционной системы платформы и владельца устройств|
 |макрестриктион|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения для MAC-адресов на основе платформы, версии операционной системы платформы и владельца устройств|
 |macOSRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения для MAC-адресов на основе платформы, версии операционной системы платформы и владельца устройств|
 
@@ -88,6 +89,9 @@ ms.locfileid: "48730982"
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   },
   "windowsRestriction": {
@@ -97,6 +101,9 @@ ms.locfileid: "48730982"
     "osMinimumVersion": "String",
     "osMaximumVersion": "String",
     "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
       "String"
     ]
   },
@@ -108,6 +115,9 @@ ms.locfileid: "48730982"
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   },
   "windowsMobileRestriction": {
@@ -117,6 +127,9 @@ ms.locfileid: "48730982"
     "osMinimumVersion": "String",
     "osMaximumVersion": "String",
     "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
       "String"
     ]
   },
@@ -128,6 +141,9 @@ ms.locfileid: "48730982"
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   },
   "androidForWorkRestriction": {
@@ -137,6 +153,22 @@ ms.locfileid: "48730982"
     "osMinimumVersion": "String",
     "osMaximumVersion": "String",
     "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
+      "String"
+    ]
+  },
+  "aospRestriction": {
+    "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+    "platformBlocked": true,
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": "String",
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
       "String"
     ]
   },
@@ -148,6 +180,9 @@ ms.locfileid: "48730982"
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   },
   "macOSRestriction": {
@@ -158,11 +193,13 @@ ms.locfileid: "48730982"
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   }
 }
 ```
-
 
 
 

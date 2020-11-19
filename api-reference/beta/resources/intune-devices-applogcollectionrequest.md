@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 32a77c6922e3b03f3cdca4b7fe0778781a7f8eff
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9c3c3c1f07a6fa0cd5d9ea4ad764e67753f840e9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725542"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267889"
 ---
 # <a name="applogcollectionrequest-resource-type"></a>Тип ресурса appLogCollectionRequest
 
@@ -35,9 +35,9 @@ ms.locfileid: "48725542"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор. Это userId_DeviceId_AppId идентификатор.|
+|id|String|Уникальный идентификатор. Это userId_DeviceId_AppId идентификатор.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Запись состояния отправки. Возможные значения: `pending`, `completed`, `failed`.|
-|Ошибк|Строка|Сообщение об ошибке, если оно возникло во время процесса отправки|
+|Ошибк|String|Сообщение об ошибке, если оно возникло во время процесса отправки|
 |кустомлогфолдерс|Коллекция строк|Список папок журналов. |
 |completedDateTime|DateTimeOffset|Время, когда запрос на отправку журнала достигает состояния терминала|
 
@@ -64,7 +64,6 @@ ms.locfileid: "48725542"
   "completedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

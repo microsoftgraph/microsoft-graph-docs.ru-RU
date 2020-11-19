@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 408e94fa12e0776d4d36fb85319ea16d4bf514e7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 07d284f778dd2cb5bfc9942a649aecbc63ac1b19
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726453"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49269023"
 ---
 # <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a>тип перечисления Локалсекуритйоптионсминимумсессионсекурити
 
@@ -25,11 +25,10 @@ ms.locfileid: "48726453"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Отправка ответов LM & NTLM|
+|Нет|нуль|Отправка ответов LM & NTLM|
 |requireNtmlV2SessionSecurity|1,1|Отправлять LM & NTLM — использовать сеансовую безопасность NTLMv2 при согласовании|
 |require128BitEncryption|2|Отправлять только LM & NTLM ответы|
 |ntlmV2And128BitEncryption|4|Отправлять только LM & только ответы NTLMv2.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 75654a8dff6d758edfbf08eadd44802ccb2141f1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f262c53d62d791e456edcd234249448e0c90580c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684563"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49266916"
 ---
 # <a name="managedappdevicethreatlevel-enum-type"></a>тип перечисления Манажедаппдевицесреатлевел
 
@@ -30,7 +30,6 @@ ms.locfileid: "48684563"
 |потребление|2|Устройство должно иметь низкую угрозу.|
 |medium|4|Устройство должно иметь не более средней угрозы.|
 |высокоуровневых|4 |Устройство должно иметь не более высоких угроз|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 09843bbce769594e2729421121b7a936dcd19c4a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: dadfd90dcd06c3628088c15d39cd8ba1d5655392
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724504"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49267266"
 ---
 # <a name="revokeapplevpplicensesactionresult-resource-type"></a>Тип ресурса Ревокеапплевпплиценсесактионресулт
 
@@ -56,7 +56,6 @@ ms.locfileid: "48724504"
   "failedLicensesCount": 1024
 }
 ```
-
 
 
 

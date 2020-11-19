@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 18219987f89fb6570465dd2b25def58498f091ef
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d5191b5ddf84e437fe53aa5d3b44bfc4ffed6abc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727465"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49268498"
 ---
 # <a name="macossoftwareupdatebehavior-enum-type"></a>тип перечисления Макоссофтвареупдатебехавиор
 
@@ -26,8 +26,7 @@ ms.locfileid: "48727465"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|умолчани|1,1|Загрузка и/или установка обновления программного обеспечения в зависимости от текущего состояния устройства.|
-
+|Значение  по умолчанию|1,1|Загрузка и/или установка обновления программного обеспечения в зависимости от текущего состояния устройства.|
 
 
 
