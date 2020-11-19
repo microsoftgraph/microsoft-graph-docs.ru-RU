@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 69db1a4d65803c0405bc52548bb111619744a5a1
-ms.sourcegitcommit: 3cd8584827fef6751d40979aa5f950f3c46ff27d
+ms.openlocfilehash: 96557bf3f957f9dc57f3315d274bbcc952cd841e
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755710"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352418"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -77,7 +77,7 @@ GET /me/calendars/{id}/events
 В настоящее время календари ICS поддерживаются частично:
 
 * Вы можете добавить календарь ICS в почтовый ящик пользователя через интерфейс пользователя, но не через API Microsoft Graph.
-* [Перечисление календарей пользователя](/graph/api/user-list-calendars) позволяет получить свойства **name** , **color** и **id** всех [календарей](/graph/api/resources/calendar) в группе календарей пользователя по умолчанию или указанной группе календарей, в том числе календарей ICS. URL-адрес ICS невозможно хранить и открывать в ресурсе calendar.
+* [Перечисление календарей пользователя](/graph/api/user-list-calendars) позволяет получить свойства **name**, **color** и **id** всех [календарей](/graph/api/resources/calendar) в группе календарей пользователя по умолчанию или указанной группе календарей, в том числе календарей ICS. URL-адрес ICS невозможно хранить и открывать в ресурсе calendar.
 * Вы также можете [отобразить события](/graph/api/calendar-list-events) календаря ICS.
 
 ### <a name="attaching-large-files-to-events"></a>Прикрепление больших файлов к событиям
@@ -87,17 +87,17 @@ GET /me/calendars/{id}/events
 
 В настоящее время свойство **onlineMeetingUrl** ресурса [event](/graph/api/resources/event) для собрания Skype означает URL-адрес для собрания по сети. Однако для ресурса event собрания в Microsoft Teams задано значение NULL.
 
-В бета-версии предлагается обходное решение, позволяющее использовать свойство **onlineMeetingProvider** ресурса [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) с целью убедиться, что поставщиком является Microsoft Teams. С помощью свойства **onlineMeeting** ресурса **event** вы можете получить доступ к объекту **joinUrl** .
+В бета-версии предлагается обходное решение, позволяющее использовать свойство **onlineMeetingProvider** ресурса [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) с целью убедиться, что поставщиком является Microsoft Teams. С помощью свойства **onlineMeeting** ресурса **event** вы можете получить доступ к объекту **joinUrl**.
 
 ## <a name="change-notifications"></a>Уведомления об изменениях
 
 ### <a name="additional-notifications-for-users"></a>Дополнительные уведомления для пользователей
 
-[Подписки](/graph/api/resources/subscription) на изменения для **пользователя** с **changeType** , для которого установлено значение **обновлено** , также будут получать уведомления о **changeType** : **обновлено** при создании пользователя и обратимом удалении пользователя.
+[Подписки](/graph/api/resources/subscription) на изменения для **пользователя** с **changeType**, для которого установлено значение **обновлено**, также будут получать уведомления о **changeType**: **обновлено** при создании пользователя и обратимом удалении пользователя.
 
 ### <a name="additional-notifications-for-groups"></a>Дополнительные уведомления для групп
 
-[Подписки](/graph/api/resources/subscription) на изменения для **группы** с **changeType** , для которого установлено значение **обновлено** , также будут получать уведомления о **changeType** : **обновлено** при создании группы и обратимом удалении группы.
+[Подписки](/graph/api/resources/subscription) на изменения для **группы** с **changeType**, для которого установлено значение **обновлено**, также будут получать уведомления о **changeType**: **обновлено** при создании группы и обратимом удалении группы.
 
 ## <a name="cloud-communications"></a>Облачные коммуникации 
 
@@ -143,7 +143,7 @@ GET /me/calendars/{id}/events
 
 В версии `/v1.0` запрос `GET /me/contactFolders` не включает папку контактов пользователя по умолчанию.
 
-Эта ошибка будет исправлена. Чтобы получить идентификатор папки контактов по умолчанию, вы можете использовать следующий запрос на [отображение контактов](/graph/api/user-list-contacts) и свойство **parentFolderId** :
+Эта ошибка будет исправлена. Чтобы получить идентификатор папки контактов по умолчанию, вы можете использовать следующий запрос на [отображение контактов](/graph/api/user-list-contacts) и свойство **parentFolderId**:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
@@ -166,7 +166,7 @@ GET /me/contactfolders/{id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
 
-* Доступ к контакту в дочерней папке папки **contactFolder** .  В приведенном ниже примере показан один уровень вложения, но для хранения контакта допускается несколько.
+* Доступ к контакту в дочерней папке папки **contactFolder**.  В приведенном ниже примере показан один уровень вложения, но для хранения контакта допускается несколько.
 
 ```http
 GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
@@ -193,20 +193,24 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### <a name="creating-a-resource-and-open-extension-at-the-same-time"></a>Одновременное создание ресурса и открытого расширения
 
-Невозможно указать открытое расширение при создании экземпляра **administrativeUnit** , **device** , **group** , **organization** или **user** . Сначала необходимо создать экземпляр, а затем указать данные открытого расширения в последующем запросе ``POST`` к этому экземпляру.
+Невозможно указать открытое расширение при создании экземпляра **administrativeUnit**, **device**, **group**, **organization** или **user**. Сначала необходимо создать экземпляр, а затем указать данные открытого расширения в последующем запросе ``POST`` к этому экземпляру.
 
 ### <a name="creating-a-resource-instance-and-adding-schema-extension-data-at-the-same-time"></a>Создание экземпляра ресурса с одновременным добавлением данных расширения схемы
 
-Вы не можете указать расширение схемы в той же операции, которая создает экземпляр **contact** , **event** , **message** или **post** .
+Вы не можете указать расширение схемы в той же операции, которая создает экземпляр **contact**, **event**, **message** или **post**.
 Сперва нужно создать экземпляр ресурса, а затем выполнить операцию `PATCH` для этого экземпляра, чтобы добавить расширение схемы и пользовательские данные.
 
 ### <a name="limit-of-100-schema-extension-property-values-allowed-per-resource-instance"></a>Для каждого экземпляра ресурса разрешено не более 100 значений свойства расширения схемы
 
-В настоящее время для каждого экземпляра таких ресурсов каталога, как **device** , **group** и **user** , можно установить не более 100 значений свойства расширения схемы.
+В настоящее время для каждого экземпляра таких ресурсов каталога, как **device**, **group** и **user**, можно установить не более 100 значений свойства расширения схемы.
+
+### <a name="updating-a-schemaextension-definition-using-microsoft-graph-explorer"></a>Обновление определения schemaExtension с помощью проводника Microsoft Graph
+
+При использовании `PATCH` для обновления schemaExtension с помощью проводника Graph необходимо указать свойство **owner** и задать для него текущее значение `appid` (которое должно быть `appId` имеющегося приложения). Это также относится к любому клиентскому приложению, у которого `appId` отличается от **owner**.
 
 ### <a name="filtering-on-schema-extension-properties-not-supported-on-all-entity-types"></a>Фильтрация по свойствам расширения схемы поддерживается не для всех типов объектов
 
-Фильтрация по свойствам расширения схемы (с помощью выражения `$filter`) не поддерживается для типов объектов Outlook **contact** , **event** , **message** или **post** .
+Фильтрация по свойствам расширения схемы (с помощью выражения `$filter`) не поддерживается для типов объектов Outlook **contact**, **event**, **message** или **post**.
 
 ## <a name="files-onedrive"></a>Файлы (OneDrive)
 
@@ -216,7 +220,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### <a name="permissions-for-groups-and-microsoft-teams"></a>Разрешения для групп и Microsoft Teams
 
-Microsoft Graph предоставляет два разрешения ( [*Group.Read.All*](permissions-reference.md#group-permissions) и [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)) для доступа к API для групп и Microsoft Teams.
+Microsoft Graph предоставляет два разрешения ([*Group.Read.All*](permissions-reference.md#group-permissions) и [*Group.ReadWrite.All*](permissions-reference.md#group-permissions)) для доступа к API для групп и Microsoft Teams.
 Эти разрешения должен предоставить администратор.
 В будущем мы планируем добавить новые разрешения для групп и команд, которые смогут предоставлять пользователи.
 
@@ -316,7 +320,7 @@ Microsoft Graph предоставляет два разрешения ( [*Group
 
 ### <a name="the-comment-parameter-for-creating-a-draft"></a>Параметр comment для создания черновика
 
-Параметр **comment** для создания ответа или черновика ( [createReply](/graph/api/message-createreply), [createReplyAll](/graph/api/message-createreplyall), [createForward](/graph/api/message-createforward)) не включается в текст полученного черновика сообщения.
+Параметр **comment** для создания ответа или черновика ([createReply](/graph/api/message-createreply), [createReplyAll](/graph/api/message-createreplyall), [createForward](/graph/api/message-createforward)) не включается в текст полученного черновика сообщения.
 
 ### <a name="get-messages-returns-chats-in-microsoft-teams"></a>При использовании запроса GET для сообщений возвращаются также чаты в Microsoft Teams
 
@@ -335,7 +339,7 @@ Microsoft Graph предоставляет два разрешения ( [*Group
 
 Некоторые команды, созданные в прошлом, но не использовавшиеся в последнее время пользователем Microsoft Teams, не указываются при использовании метода [перечисления всех команд](teams-list-all-teams.md).
 Новые команды будут перечислены.
-У некоторых старых команд нет свойства **resourceProvisioningOptions** , содержащего значение "Team", которое присваивается недавно созданным командам и командам, посещаемым в Microsoft Teams.
+У некоторых старых команд нет свойства **resourceProvisioningOptions**, содержащего значение "Team", которое присваивается недавно созданным командам и командам, посещаемым в Microsoft Teams.
 В будущем свойство **resourceProvisioningOptions** будет присваиваться существующим командам, не открывавшимся в Microsoft Teams.
 
 ## <a name="users"></a>Пользователи

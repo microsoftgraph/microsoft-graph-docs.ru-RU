@@ -1,16 +1,16 @@
 ---
 title: Получение руководителя
-description: Получение руководителя пользователя. Возвращает пользователя или контакт, назначенный в качестве руководителя пользователя.
+description: Получение руководителя пользователя. Возвращает пользователя или контакт, назначенный руководителем пользователя.
 localization_priority: Priority
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: d9df52fa26407cd5b08a3b8cb69ac156bc996925
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: 3409b342ec510c52264e9f73e5b612ecadf8ff1e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086783"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49265922"
 ---
 # <a name="list-manager"></a>Получение руководителя
 
@@ -42,20 +42,20 @@ GET /users/{id | userPrincipalName}/manager
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me?$expand=manager
-GET /users?$expand=manager($levels=max)
-GET /users/{id | userPrincipalName}/?$expand=manager($levels=max)
+GET /users?$expand=manager($levels=n)
+GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.  
 
-Если ваш запрос включает параметр `$expand=manager($levels=max)` для получения цепочки руководителей, вы также должны указать следующее:
+Если ваш запрос включает параметр `$expand=manager($levels=n)` для получения цепочки руководителей, вы также должны указать следующее:
 
 - Параметр строки запроса `$count=true`
 - Заголовок запроса `ConsistencyLevel=eventual`
 
->**Примечание.** `max` — единственное разрешенное значение для `$levels`.
+>**Примечание.** Значение `n` `$levels` может быть `max` (для возврата всех руководителей) или числа от 1 до 1000.  
 > Если параметр `$level` не указан, возвращается только непосредственный руководитель.  
 > Вы можете указать `$select` в параметре `$expand`, чтобы выбрать свойства отдельных руководителей: `$expand=manager($levels=max;$select=id,displayName)`
 
