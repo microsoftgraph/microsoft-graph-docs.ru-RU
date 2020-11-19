@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fe3f817ca82f18f8d0d5c3bf1cb44b034c301a87
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8c3c5f909d0960b9d83c5a5a38e12fe19f26b9af
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736025"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49258957"
 ---
 # <a name="mimecontent-resource-type"></a>Тип ресурса mimeContent
 
@@ -25,7 +25,7 @@ ms.locfileid: "48736025"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|type|Строка|Указывает MIME-тип содержимого.|
+|type|String|Указывает MIME-тип содержимого.|
 |value|Binary|Массив байтов содержимого.|
 
 ## <a name="relationships"></a>Связи
@@ -45,7 +45,6 @@ ms.locfileid: "48736025"
   "value": "binary"
 }
 ```
-
 
 
 

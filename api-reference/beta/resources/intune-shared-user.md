@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 51cbe2bbda5d45da1656e5b4c1ffcec846c9d890
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 949e7b3f9eb7bbf997ab66b5d3147e26deb82411
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727185"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49258873"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -48,7 +48,7 @@ ms.locfileid: "48727185"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор пользователя.|
+|id|String|Уникальный идентификатор пользователя.|
 |**Адаптация**|
 |deviceEnrollmentLimit|Int32|Максимальное количество устройств, которые разрешено зарегистрировать пользователю. Допустимые значения: 5 или 1000.|
 
@@ -80,7 +80,6 @@ ms.locfileid: "48727185"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

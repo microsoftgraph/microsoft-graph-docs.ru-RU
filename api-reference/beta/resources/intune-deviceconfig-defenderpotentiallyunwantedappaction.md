@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2919edb11cc29f8a78d3bde32808f285eef25b4c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: aad2c9e37dfe3a3069caad25c7917a864c65a194
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696358"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256514"
 ---
 # <a name="defenderpotentiallyunwantedappaction-enum-type"></a>тип перечисления Дефендерпотентиаллюнвантедаппактион
 
@@ -28,7 +28,6 @@ ms.locfileid: "48696358"
 |девицедефаулт|нуль|Защита от Пуа отключена. Защитник не будет защищаться от потенциально нежелательных приложений.|
 |блок|1,1|Включена защита Пуа. Обнаруженные элементы блокируются. Они будут отображаться в журнале вместе с другими угрозами.|
 |включить|2|Режим аудита. Защитник обнаружит потенциально нежелательные приложения, но не выполнит никаких действий. Чтобы просмотреть сведения о защитнике приложений, необходимо выполнить поиск событий, созданных защитником, в средстве просмотра событий.|
-
 
 
 

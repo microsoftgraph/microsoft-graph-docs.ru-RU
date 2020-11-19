@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5e89c96d08fa1c265647692b3edb831fd308b7f7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: aa7ab836addd205d0b39c14fa0dcb42dd71bb81a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730681"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256962"
 ---
 # <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>тип перечисления Андроидворкпрофилерекуиредпассвордтипе
 
@@ -33,7 +33,6 @@ ms.locfileid: "48730681"
 |атлеасталфабетик|5 |По крайней мере необходимо указать по крайней мере буквенный пароль.|
 |атлеасталфанумерик|6 |Необходимо указать по крайней мере буквенно-цифровые пароли.|
 |алфанумериквиссимболс|7 |По крайней мере буквенно-цифровые символы и пароль не требуются.|
-
 
 
 

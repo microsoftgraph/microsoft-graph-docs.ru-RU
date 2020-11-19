@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: df7137bfa4405e32887b1aa738d3b816ac3edf4a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: dc5b5e69fa0b7bdeb8f4db515ccd163fefc1b34a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728941"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256360"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>Тип ресурса Outofboxexperiencesettings.
 
@@ -25,12 +25,12 @@ ms.locfileid: "48728941"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|хидепривацисеттингс|Логический|Отображение или скрытие параметров конфиденциальности для пользователя|
-|хидиула|Логический|Отображение или скрытие лицензионного соглашения для пользователя|
+|хидепривацисеттингс|Boolean|Отображение или скрытие параметров конфиденциальности для пользователя|
+|хидиула|Boolean|Отображение или скрытие лицензионного соглашения для пользователя|
 |userType|[виндовсусертипе](../resources/intune-enrollment-windowsusertype.md)|Тип пользователя. Возможные значения: `administrator`, `standard`.|
 |deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md).|Тип проверки подлинности присоединения AAD. Возможные значения: `singleUser`, `shared`.|
-|скипкэйбоардселектионпаже|Логический|Если задано, пропускать страницу "Выбор клавиатуры", если задан язык и регион|
-|хидискапелинк|Логический|Если задано значение true, пользователь не сможет начать с другой учетной записи, при входе в компанию|
+|скипкэйбоардселектионпаже|Boolean|Если задано, пропускать страницу "Выбор клавиатуры", если задан язык и регион|
+|хидискапелинк|Boolean|Если задано значение true, пользователь не сможет начать с другой учетной записи, при входе в компанию|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -53,7 +53,6 @@ ms.locfileid: "48728941"
   "hideEscapeLink": true
 }
 ```
-
 
 
 

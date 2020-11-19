@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bbf01761a93fa8dacf7d2760a2e014abe4a48588
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 23db3acb1fde40f8f43e9049a5dc82c120cdbdb1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697632"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256414"
 ---
 # <a name="userexperienceanalyticsregressionsummary-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксрегрессионсуммари
 
@@ -32,7 +32,7 @@ ms.locfileid: "48697632"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сводки по регрессии аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор сводки по регрессии аналитики взаимодействия с пользователем.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -55,7 +55,6 @@ ms.locfileid: "48697632"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

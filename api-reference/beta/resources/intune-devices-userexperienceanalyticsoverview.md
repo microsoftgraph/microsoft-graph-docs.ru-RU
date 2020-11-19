@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c4ccc17511e6d1c7fbe07d9438787149efebba71
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4b64aa5f0a55024425a3feab4105d7f2ccaf8f39
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727395"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256406"
 ---
 # <a name="userexperienceanalyticsoverview-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксовервиев
 
@@ -31,7 +31,7 @@ ms.locfileid: "48727395"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для обзора аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор для обзора аналитики взаимодействия с пользователем.|
 |овераллскоре|Int32|Общий показатель аналитики взаимодействия с пользователем.|
 |девицебутперформанцеовераллскоре|Int32|Общая оценка производительности при загрузке устройства Analytics.|
 |бестпрактицесовераллскоре|Int32|Общая оценка рекомендаций по анализу пользовательских интерфейсов.|
@@ -77,7 +77,6 @@ ms.locfileid: "48727395"
   "bestPracticesHealthState": "String"
 }
 ```
-
 
 
 

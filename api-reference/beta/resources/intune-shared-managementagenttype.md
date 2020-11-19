@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e769cd3f270a8ca1d00b6272a90154b925cc771d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 282915b085107d5367a0b7f8bd8f4f3ea84b7c23
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681959"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49258943"
 ---
 # <a name="managementagenttype-enum-type"></a>тип перечисления Манажементаженттипе
 
@@ -32,13 +32,12 @@ ms.locfileid: "48681959"
 |еасинтунеклиент|5 |Устройство — это EAS и двойное управление клиентом Intune.|
 |конфигуратионманажерклиент|8 |Управление устройством осуществляется с помощью Configuration Manager.|
 |конфигуратионманажерклиентмдм|10 |Управление устройством осуществляется с помощью Configuration Manager и MDM.|
-|конфигуратионманажерклиентмдмеас|-11:00|Управление устройством осуществляется с помощью Configuration Manager, MDM и EAS.|
+|конфигуратионманажерклиентмдмеас|11 |Управление устройством осуществляется с помощью Configuration Manager, MDM и EAS.|
 |unknown|16 |Неизвестный тип агента управления.|
 |жамф|32|Атрибуты устройства извлекаются из Жамф.|
 |гуглеклауддевицеполициконтроллер|64|Управление устройством осуществляется с помощью Клауддпк Google.|
 |microsoft365ManagedMdm|258|Это устройство управляется Microsoft 365 с помощью Intune.|
 |виндовсманажементклаудапи|512|Это устройство управляется Cloud API управления Windows.|
-
 
 
 

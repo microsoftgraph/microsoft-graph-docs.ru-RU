@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9a15fc5529e7830e11cbd8d93fd1bf90716bb817
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1e64852c08da6853e091beef214e1fd427ecceba
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696344"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49256389"
 ---
 # <a name="defenderprotectiontype-enum-type"></a>тип перечисления Дефендерпротектионтипе
 
@@ -28,7 +28,8 @@ ms.locfileid: "48696344"
 |UserDefined типа|нуль|Значение по умолчанию для устройства, без намерения.|
 |подключить|1,1|Функциональная возможность блока.|
 |аудитмоде|2|Разрешите функциональные возможности, но Создайте журналы.|
-
+|пользователя|6 |Предупреждающее сообщение о том, что пользователь может обходить блок из правила уменьшения уязвимой зоны.|
+|notConfigured|99|Не настроен.|
 
 
 
