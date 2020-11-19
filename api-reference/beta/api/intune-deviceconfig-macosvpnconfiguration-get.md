@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8c5e29a891c5428002408cda8367d6c18ec87fe4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ffaa4509d1ac3f21a1be223db6525f22b166b2d2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709581"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49278781"
 ---
 # <a name="get-macosvpnconfiguration"></a>Получение Макосвпнконфигуратион
 
@@ -51,10 +51,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [макосвпнконфигуратион](../resources/intune-deviceconfig-macosvpnconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -171,7 +171,6 @@ Content-Length: 3140
   }
 }
 ```
-
 
 
 

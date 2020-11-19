@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4af19841ad4257d535444c3b4d85ce069139b270
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 19a078a1b5359d55ad2982842c15fd0e4b63f6c6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693579"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49278865"
 ---
 # <a name="list-macoscustomconfigurations"></a>Перечисление объектов macOSCustomConfiguration
 
@@ -47,10 +47,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -110,7 +110,6 @@ Content-Length: 1491
   ]
 }
 ```
-
 
 
 

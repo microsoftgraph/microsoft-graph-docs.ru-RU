@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ad0701e5d68ed0df525a2eb584caa028e2d9255a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c61c03271e199660bc16290776f2adcb7787a09f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701734"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49277535"
 ---
 # <a name="update-managedapppolicydeploymentsummary"></a>Обновление объекта managedAppPolicyDeploymentSummary
 
@@ -49,18 +49,18 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Пока не задокументировано.|
+|displayName|String|Пока не задокументировано.|
 |configurationDeployedUserCount|Int32|Пока не задокументировано.|
 |lastRefreshTime|DateTimeOffset|Пока не задокументировано.|
 |configurationDeploymentSummaryPerApp|Коллекция [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md)|Пока не задокументировано.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |version|String|Версия объекта.|
 
 
@@ -122,7 +122,6 @@ Content-Length: 637
   "version": "Version value"
 }
 ```
-
 
 
 

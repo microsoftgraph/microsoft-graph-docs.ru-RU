@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e4ea47b9b554458dd684eb4ddeb33024389af6e9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 370b056c82ca5352c33173ada2a19a7316252eb5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701797"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49277682"
 ---
 # <a name="delete-managedappoperation"></a>Delete managedAppOperation
 
@@ -46,7 +46,7 @@ DELETE /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/o
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/managedAppRegistrati
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

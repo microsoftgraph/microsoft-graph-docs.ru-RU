@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 79b027b0acbf92ca3327f4e5046b8d542ad0c027
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b52769dfaf1315ec546337507dedd59e6559fee8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708251"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49278144"
 ---
 # <a name="create-devicemanagementintentdevicesettingstatesummary"></a>Создание Девицеманажементинтентдевицесеттингстатесуммари
 
@@ -46,14 +46,14 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSumm
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицеманажементинтентдевицесеттингстатесуммари в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементинтентдевицесеттингстатесуммари.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор|
+|id|String|Идентификатор|
 |settingName|String|Имя параметра|
 |комплианткаунт|Int32|Количество устройств, соответствующих требованиям.|
 |conflictCount|Int32|Количество конфликтующих устройств|
@@ -64,7 +64,7 @@ POST /deviceManagement/intents/{deviceManagementIntentId}/deviceSettingStateSumm
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементинтентдевицесеттингстатесуммари](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -107,7 +107,6 @@ Content-Length: 329
   "remediatedCount": 15
 }
 ```
-
 
 
 

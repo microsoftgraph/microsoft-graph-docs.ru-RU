@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e207cdf05eea4c7917e07ab60df6581290fca8db
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 82dfd428c82c5eaea236c23ac285d46b6211c3fa
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729063"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49277262"
 ---
 # <a name="delete-windowsinformationprotectionapplockerfile"></a>Удаление объекта windowsInformationProtectionAppLockerFile
 
@@ -49,7 +49,7 @@ DELETE /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -68,7 +68,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationPr
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

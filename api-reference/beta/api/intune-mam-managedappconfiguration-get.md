@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0c02e275b753d1cad3185b5658538cdbb75dc161
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cc3aa90abde0fca482f8f068ec5e39e948e030c0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701832"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49277745"
 ---
 # <a name="get-managedappconfiguration"></a>Get managedAppConfiguration
 
@@ -51,10 +51,10 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -94,7 +94,6 @@ Content-Length: 618
   }
 }
 ```
-
 
 
 

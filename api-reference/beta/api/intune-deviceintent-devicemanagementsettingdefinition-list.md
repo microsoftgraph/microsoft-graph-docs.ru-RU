@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7d7c307d7a33e6808e7f59df62bbb7f9a2a2b719
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8c3ca451ab54064a957c8e074a7904d39a186d17
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727817"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49278032"
 ---
 # <a name="list-devicemanagementsettingdefinitions"></a>Список Девицеманажементсеттингдефинитионс
 
@@ -49,10 +49,10 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories/{deviceM
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -112,7 +112,6 @@ Content-Length: 1236
   ]
 }
 ```
-
 
 
 

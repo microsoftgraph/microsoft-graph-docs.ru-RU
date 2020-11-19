@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 85388f3ca6e100743ae1173776bf441365f8450f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ad394efee24e9719e6862342c9955dd535a18cf8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726607"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49277388"
 ---
 # <a name="list-targetedmanagedappprotections"></a>Перечисление объектов targetedManagedAppProtection
 
@@ -48,10 +48,10 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/inte
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -133,7 +133,6 @@ Content-Length: 2723
   ]
 }
 ```
-
 
 
 

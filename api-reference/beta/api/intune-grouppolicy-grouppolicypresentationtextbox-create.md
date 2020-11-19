@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a18f963693a2c41eb148ff39e54850c3a6b77372
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1603a3f384671e56b73cd86c5c0076c11dca2d72
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726691"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49277948"
 ---
 # <a name="create-grouppolicypresentationtextbox"></a>Создание Граупполиципресентатионтекстбокс
 
@@ -46,23 +46,23 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Граупполиципресентатионтекстбокс в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Граупполиципресентатионтекстбокс.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|label|Строка|Локализованная текстовая подпись для любой сущности презентации. По умолчанию это значение пусто. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|id|Строка|Ключ объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|label|String|Локализованная текстовая подпись для любой сущности презентации. По умолчанию это значение пусто. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|id|String|Ключ объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|Значение|Строка|Локализованная строка по умолчанию, отображаемая в текстовом поле. По умолчанию это значение пусто.|
-|Обязательный|Логический|Требование ввести значение в текстовое поле. Значение по умолчанию − ложь.|
+|Значение|String|Локализованная строка по умолчанию, отображаемая в текстовом поле. По умолчанию это значение пусто.|
+|Обязательный|Boolean|Требование ввести значение в текстовое поле. Значение по умолчанию − ложь.|
 |maxLength|Int64|Целое число без знака, задающее максимальное количество текстовых символов. Значение по умолчанию — 1023.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполиципресентатионтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationtextbox.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -100,7 +100,6 @@ Content-Length: 294
   "maxLength": 9
 }
 ```
-
 
 
 

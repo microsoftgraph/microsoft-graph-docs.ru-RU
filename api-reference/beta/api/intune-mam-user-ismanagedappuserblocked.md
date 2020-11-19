@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0e7249cdc1572524b386c0c4719776dce34666c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8711b1157ade9dba9e1fa9191e76d5ecd404698e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708083"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49277381"
 ---
 # <a name="ismanagedappuserblocked-function"></a>Функция Исманажедаппусерблоккед
 
@@ -46,10 +46,10 @@ GET /users/{usersId}/isManagedAppUserBlocked
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения эта функция возвращает код отклика `200 OK` и объект Boolean в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -71,7 +71,6 @@ Content-Length: 21
   "value": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f1289fa0167b89297514ab1428db9c356847c96
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 56c3646d39e90f74fa74ea47ca982417693a7691
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709294"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49277486"
 ---
 # <a name="update-managedmobileapp"></a>Обновление объекта managedMobileApp
 
@@ -49,7 +49,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [managedMobileApp](../resources/intune-mam-managedmobileapp.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [managedMobileApp](../resources/intune-mam-managedmobileapp.md).
@@ -57,7 +57,7 @@ PATCH /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppC
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Идентификатор приложения с типом его операционной системы.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |version|String|Версия объекта.|
 
 
@@ -101,7 +101,6 @@ Content-Length: 275
   "version": "Version value"
 }
 ```
-
 
 
 

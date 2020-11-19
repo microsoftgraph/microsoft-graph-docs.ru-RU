@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3ad04d1f79e89a1b0d557d9317357f96fb2353d7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: de6f0889db58d0bb55ddd4deb0fa1e69e02c071d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736361"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49277444"
 ---
 # <a name="assign-action"></a>Действие назначения
 
@@ -48,7 +48,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -94,7 +94,6 @@ Content-length: 514
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

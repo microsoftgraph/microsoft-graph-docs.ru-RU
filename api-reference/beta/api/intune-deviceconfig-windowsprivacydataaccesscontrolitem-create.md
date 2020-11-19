@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cb0a984f6a46a64835d13ebc8fc5964c3b47bd88
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8b7fada71e1cb42fbbc930d9f9ddfbdd9133c378
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693362"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49278627"
 ---
 # <a name="create-windowsprivacydataaccesscontrolitem"></a>Создание Виндовспривацидатаакцессконтролитем
 
@@ -46,22 +46,22 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Виндовспривацидатаакцессконтролитем в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Виндовспривацидатаакцессконтролитем.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ Виндовспривацидатаакцессконтролитем.|
+|id|String|Ключ Виндовспривацидатаакцессконтролитем.|
 |accessLevel|[виндовспривацидатаакцесслевел](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|Указывает уровень доступа для категории данных о конфиденциальности, в которую будет передано указанное приложение. Возможные значения: `notConfigured`, `forceAllow`, `forceDeny`, `userInControl`.|
 |Категория "|[виндовспривацидатакатегори](../resources/intune-deviceconfig-windowsprivacydatacategory.md)|Указывает категорию данных о конфиденциальности, к которой будет применяться конкретное управление доступом. Возможные значения:,,,,,,,,,,,,, `notConfigured` `accountInfo` `appsRunInBackground` `calendar` `callHistory` `camera` `contacts` `diagnosticsInfo` `email` `location` `messaging` `microphone` `motion` `notifications` , `phone` , `radios` `tasks` `syncWithDevices` `trustedDevices` ,, и.|
-|апппаккажефамилинаме|Строка|Имя семейства пакетов для приложения Windows. Если этот параметр установлен, уровень доступа применяется к указанному приложению.|
+|апппаккажефамилинаме|String|Имя семейства пакетов для приложения Windows. Если этот параметр установлен, уровень доступа применяется к указанному приложению.|
 |appDisplayName|String|Имя семейства пакетов для приложения Windows. Если этот параметр установлен, уровень доступа применяется к указанному приложению.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовспривацидатаакцессконтролитем](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -98,7 +98,6 @@ Content-Length: 299
   "appDisplayName": "App Display Name value"
 }
 ```
-
 
 
 
