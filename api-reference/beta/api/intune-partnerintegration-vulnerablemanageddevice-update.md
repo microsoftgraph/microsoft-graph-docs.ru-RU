@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a93ef4060f11b8478055efebda2a116d0c87645d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1f6ae6504e96d2412198b2e9423be2a90a0b5ce8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692893"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49270351"
 ---
 # <a name="update-vulnerablemanageddevice"></a>Обновление Вулнераблеманажеддевице
 
@@ -29,7 +29,7 @@ ms.locfileid: "48692893"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,21 +46,21 @@ PATCH ** Entity URI for microsoft.management.services.api.vulnerableManagedDevic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ сущности и идентификатор устройства AAD.|
-|манажеддевицеид|Строка|Идентификатор управляемого устройства Intune.|
-|displayName|Строка|Имя устройства.|
+|id|String|Ключ сущности и идентификатор устройства AAD.|
+|манажеддевицеид|String|Идентификатор управляемого устройства Intune.|
+|displayName|String|Имя устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата последней синхронизации.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -95,7 +95,6 @@ Content-Length: 263
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
-
 
 
 

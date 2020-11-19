@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 250b1d3939cb06947b60ea45de71d0843830effc
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ad2151be841133b7fbbbd6bc858e9ecdf3e611d6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727119"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49271683"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>тип перечисления Впптокенактионфаилуререасон
 
@@ -25,12 +25,11 @@ ms.locfileid: "48727119"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Нет.|
+|Нет|нуль|Нет.|
 |апплефаилуре|1,1|В службе Apple возникла ошибка.|
 |интерналеррор|2|Произошла внутренняя ошибка.|
 |експиредвпптокен|4|Произошла ошибка из-за истечения срока действия маркера Apple Volume Purchase Program.|
 |експиредапплепушнотификатионцертификате|4 |Произошла ошибка из-за истечения срока действия сертификата push-уведомлений Apple Volume Purchase Program.|
-
 
 
 

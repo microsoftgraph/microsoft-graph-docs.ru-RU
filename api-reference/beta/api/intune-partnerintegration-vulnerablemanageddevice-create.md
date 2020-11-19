@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b5cb5d836ff6eb98df7915cd05a308f7b1626b3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5d9bab17be811156f9aa0efcae52f024388f260d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709203"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49270416"
 ---
 # <a name="create-vulnerablemanageddevice"></a>Создание Вулнераблеманажеддевице
 
@@ -29,7 +29,7 @@ ms.locfileid: "48709203"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,21 +46,21 @@ POST ** Collection URI for microsoft.management.services.api.vulnerableManagedDe
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Вулнераблеманажеддевице в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Вулнераблеманажеддевице.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ сущности и идентификатор устройства AAD.|
-|манажеддевицеид|Строка|Идентификатор управляемого устройства Intune.|
-|displayName|Строка|Имя устройства.|
+|id|String|Ключ сущности и идентификатор устройства AAD.|
+|манажеддевицеид|String|Идентификатор управляемого устройства Intune.|
+|displayName|String|Имя устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата последней синхронизации.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [вулнераблеманажеддевице](../resources/intune-partnerintegration-vulnerablemanageddevice.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -95,7 +95,6 @@ Content-Length: 263
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00"
 }
 ```
-
 
 
 
