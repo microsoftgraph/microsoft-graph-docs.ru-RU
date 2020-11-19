@@ -5,37 +5,37 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7b5c8f5832c2e85bd9dea82400269729b48eab38
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0b465a3d3b34c0e32e9bf5bfbe1c402aad673b9d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725963"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49223901"
 ---
-# <a name="create-devicemanagementscript"></a><span data-ttu-id="3177f-103">Создание deviceManagementScript</span><span class="sxs-lookup"><span data-stu-id="3177f-103">Create deviceManagementScript</span></span>
+# <a name="create-devicemanagementscript"></a><span data-ttu-id="4e263-103">Создание deviceManagementScript</span><span class="sxs-lookup"><span data-stu-id="4e263-103">Create deviceManagementScript</span></span>
 
-<span data-ttu-id="3177f-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="3177f-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="4e263-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="4e263-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="3177f-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3177f-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="4e263-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4e263-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="3177f-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="3177f-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4e263-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="4e263-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="3177f-107">Создание нового объекта [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) .</span><span class="sxs-lookup"><span data-stu-id="3177f-107">Create a new [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) object.</span></span>
+<span data-ttu-id="4e263-107">Создание нового объекта [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) .</span><span class="sxs-lookup"><span data-stu-id="4e263-107">Create a new [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="3177f-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="3177f-108">Prerequisites</span></span>
-<span data-ttu-id="3177f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3177f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="4e263-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="4e263-108">Prerequisites</span></span>
+<span data-ttu-id="4e263-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4e263-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3177f-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3177f-111">Permission type</span></span>|<span data-ttu-id="3177f-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="3177f-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="4e263-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4e263-111">Permission type</span></span>|<span data-ttu-id="4e263-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="4e263-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="3177f-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3177f-113">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="3177f-114">&nbsp; &nbsp; **Управление устройствами**</span><span class="sxs-lookup"><span data-stu-id="3177f-114">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="3177f-115">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3177f-115">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-| <span data-ttu-id="3177f-116">&nbsp;&nbsp; **Набор политик**</span><span class="sxs-lookup"><span data-stu-id="3177f-116">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="3177f-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3177f-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="3177f-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3177f-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3177f-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3177f-119">Not supported.</span></span>|
-|<span data-ttu-id="3177f-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3177f-120">Application</span></span>||
-| <span data-ttu-id="3177f-121">&nbsp; &nbsp; **Управление устройствами**</span><span class="sxs-lookup"><span data-stu-id="3177f-121">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="3177f-122">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3177f-122">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-| <span data-ttu-id="3177f-123">&nbsp;&nbsp; **Набор политик**</span><span class="sxs-lookup"><span data-stu-id="3177f-123">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="3177f-124">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3177f-124">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="4e263-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4e263-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="4e263-114">&nbsp;&nbsp; **Управление устройствами**</span><span class="sxs-lookup"><span data-stu-id="4e263-114">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="4e263-115">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4e263-115">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+| <span data-ttu-id="4e263-116">&nbsp;&nbsp; **Набор политик**</span><span class="sxs-lookup"><span data-stu-id="4e263-116">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="4e263-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4e263-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="4e263-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4e263-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4e263-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4e263-119">Not supported.</span></span>|
+|<span data-ttu-id="4e263-120">Приложение</span><span class="sxs-lookup"><span data-stu-id="4e263-120">Application</span></span>||
+| <span data-ttu-id="4e263-121">&nbsp;&nbsp; **Управление устройствами**</span><span class="sxs-lookup"><span data-stu-id="4e263-121">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="4e263-122">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4e263-122">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+| <span data-ttu-id="4e263-123">&nbsp;&nbsp; **Набор политик**</span><span class="sxs-lookup"><span data-stu-id="4e263-123">&nbsp; &nbsp; **Policy Set**</span></span> | <span data-ttu-id="4e263-124">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4e263-124">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="3177f-125">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3177f-125">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4e263-125">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4e263-125">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -44,40 +44,40 @@ ms.locfileid: "48725963"
 POST /deviceManagement/deviceManagementScripts
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3177f-126">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="3177f-126">Request headers</span></span>
-|<span data-ttu-id="3177f-127">Заголовок</span><span class="sxs-lookup"><span data-stu-id="3177f-127">Header</span></span>|<span data-ttu-id="3177f-128">Значение</span><span class="sxs-lookup"><span data-stu-id="3177f-128">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4e263-126">Заголовки запроса</span><span class="sxs-lookup"><span data-stu-id="4e263-126">Request headers</span></span>
+|<span data-ttu-id="4e263-127">Заголовок</span><span class="sxs-lookup"><span data-stu-id="4e263-127">Header</span></span>|<span data-ttu-id="4e263-128">Значение</span><span class="sxs-lookup"><span data-stu-id="4e263-128">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="3177f-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3177f-129">Authorization</span></span>|<span data-ttu-id="3177f-130">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3177f-130">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="3177f-131">Accept</span><span class="sxs-lookup"><span data-stu-id="3177f-131">Accept</span></span>|<span data-ttu-id="3177f-132">application/json</span><span class="sxs-lookup"><span data-stu-id="3177f-132">application/json</span></span>|
+|<span data-ttu-id="4e263-129">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4e263-129">Authorization</span></span>|<span data-ttu-id="4e263-130">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4e263-130">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="4e263-131">Accept</span><span class="sxs-lookup"><span data-stu-id="4e263-131">Accept</span></span>|<span data-ttu-id="4e263-132">application/json</span><span class="sxs-lookup"><span data-stu-id="4e263-132">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3177f-133">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="3177f-133">Request body</span></span>
-<span data-ttu-id="3177f-134">В тексте запроса добавьте представление объекта deviceManagementScript в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3177f-134">In the request body, supply a JSON representation for the deviceManagementScript object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4e263-133">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4e263-133">Request body</span></span>
+<span data-ttu-id="4e263-134">В тексте запроса добавьте представление объекта deviceManagementScript в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4e263-134">In the request body, supply a JSON representation for the deviceManagementScript object.</span></span>
 
-<span data-ttu-id="3177f-135">В следующей таблице приведены свойства, необходимые при создании deviceManagementScript.</span><span class="sxs-lookup"><span data-stu-id="3177f-135">The following table shows the properties that are required when you create the deviceManagementScript.</span></span>
+<span data-ttu-id="4e263-135">В следующей таблице приведены свойства, необходимые при создании deviceManagementScript.</span><span class="sxs-lookup"><span data-stu-id="4e263-135">The following table shows the properties that are required when you create the deviceManagementScript.</span></span>
 
-|<span data-ttu-id="3177f-136">Свойство</span><span class="sxs-lookup"><span data-stu-id="3177f-136">Property</span></span>|<span data-ttu-id="3177f-137">Тип</span><span class="sxs-lookup"><span data-stu-id="3177f-137">Type</span></span>|<span data-ttu-id="3177f-138">Описание</span><span class="sxs-lookup"><span data-stu-id="3177f-138">Description</span></span>|
+|<span data-ttu-id="4e263-136">Свойство</span><span class="sxs-lookup"><span data-stu-id="4e263-136">Property</span></span>|<span data-ttu-id="4e263-137">Тип</span><span class="sxs-lookup"><span data-stu-id="4e263-137">Type</span></span>|<span data-ttu-id="4e263-138">Описание</span><span class="sxs-lookup"><span data-stu-id="4e263-138">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="3177f-139">id</span><span class="sxs-lookup"><span data-stu-id="3177f-139">id</span></span>|<span data-ttu-id="3177f-140">Строка</span><span class="sxs-lookup"><span data-stu-id="3177f-140">String</span></span>|<span data-ttu-id="3177f-141">Уникальный идентификатор для сценария управления устройствами.</span><span class="sxs-lookup"><span data-stu-id="3177f-141">Unique Identifier for the device management script.</span></span>|
-|<span data-ttu-id="3177f-142">displayName</span><span class="sxs-lookup"><span data-stu-id="3177f-142">displayName</span></span>|<span data-ttu-id="3177f-143">Строка</span><span class="sxs-lookup"><span data-stu-id="3177f-143">String</span></span>|<span data-ttu-id="3177f-144">Имя скрипта управления устройствами.</span><span class="sxs-lookup"><span data-stu-id="3177f-144">Name of the device management script.</span></span>|
-|<span data-ttu-id="3177f-145">description</span><span class="sxs-lookup"><span data-stu-id="3177f-145">description</span></span>|<span data-ttu-id="3177f-146">Строка</span><span class="sxs-lookup"><span data-stu-id="3177f-146">String</span></span>|<span data-ttu-id="3177f-147">Необязательное описание скрипта управления устройствами.</span><span class="sxs-lookup"><span data-stu-id="3177f-147">Optional description for the device management script.</span></span>|
-|<span data-ttu-id="3177f-148">скриптконтент</span><span class="sxs-lookup"><span data-stu-id="3177f-148">scriptContent</span></span>|<span data-ttu-id="3177f-149">Binary</span><span class="sxs-lookup"><span data-stu-id="3177f-149">Binary</span></span>|<span data-ttu-id="3177f-150">Содержимое скрипта.</span><span class="sxs-lookup"><span data-stu-id="3177f-150">The script content.</span></span>|
-|<span data-ttu-id="3177f-151">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="3177f-151">createdDateTime</span></span>|<span data-ttu-id="3177f-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3177f-152">DateTimeOffset</span></span>|<span data-ttu-id="3177f-153">Дата и время создания сценария управления устройствами.</span><span class="sxs-lookup"><span data-stu-id="3177f-153">The date and time the device management script was created.</span></span> <span data-ttu-id="3177f-154">Это свойство доступно только для чтения.</span><span class="sxs-lookup"><span data-stu-id="3177f-154">This property is read-only.</span></span>|
-|<span data-ttu-id="3177f-155">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="3177f-155">lastModifiedDateTime</span></span>|<span data-ttu-id="3177f-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3177f-156">DateTimeOffset</span></span>|<span data-ttu-id="3177f-157">Дата и время последнего изменения скрипта управления устройствами.</span><span class="sxs-lookup"><span data-stu-id="3177f-157">The date and time the device management script was last modified.</span></span> <span data-ttu-id="3177f-158">Это свойство доступно только для чтения.</span><span class="sxs-lookup"><span data-stu-id="3177f-158">This property is read-only.</span></span>|
-|<span data-ttu-id="3177f-159">runAsAccount</span><span class="sxs-lookup"><span data-stu-id="3177f-159">runAsAccount</span></span>|[<span data-ttu-id="3177f-160">runAsAccountType</span><span class="sxs-lookup"><span data-stu-id="3177f-160">runAsAccountType</span></span>](../resources/intune-shared-runasaccounttype.md)|<span data-ttu-id="3177f-161">Указывает тип контекста выполнения.</span><span class="sxs-lookup"><span data-stu-id="3177f-161">Indicates the type of execution context.</span></span> <span data-ttu-id="3177f-162">Возможные значения: `system`, `user`.</span><span class="sxs-lookup"><span data-stu-id="3177f-162">Possible values are: `system`, `user`.</span></span>|
-|<span data-ttu-id="3177f-163">Свойства enforcesignaturecheck</span><span class="sxs-lookup"><span data-stu-id="3177f-163">enforceSignatureCheck</span></span>|<span data-ttu-id="3177f-164">Логический</span><span class="sxs-lookup"><span data-stu-id="3177f-164">Boolean</span></span>|<span data-ttu-id="3177f-165">Указывает, нужно ли проверять подпись скрипта.</span><span class="sxs-lookup"><span data-stu-id="3177f-165">Indicate whether the script signature needs be checked.</span></span>|
-|<span data-ttu-id="3177f-166">fileName</span><span class="sxs-lookup"><span data-stu-id="3177f-166">fileName</span></span>|<span data-ttu-id="3177f-167">String</span><span class="sxs-lookup"><span data-stu-id="3177f-167">String</span></span>|<span data-ttu-id="3177f-168">Имя файла сценария.</span><span class="sxs-lookup"><span data-stu-id="3177f-168">Script file name.</span></span>|
-|<span data-ttu-id="3177f-169">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="3177f-169">roleScopeTagIds</span></span>|<span data-ttu-id="3177f-170">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="3177f-170">String collection</span></span>|<span data-ttu-id="3177f-171">Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.</span><span class="sxs-lookup"><span data-stu-id="3177f-171">List of Scope Tag IDs for this PowerShellScript instance.</span></span>|
-|<span data-ttu-id="3177f-172">runAs32Bit</span><span class="sxs-lookup"><span data-stu-id="3177f-172">runAs32Bit</span></span>|<span data-ttu-id="3177f-173">Логический</span><span class="sxs-lookup"><span data-stu-id="3177f-173">Boolean</span></span>|<span data-ttu-id="3177f-174">Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 бит</span><span class="sxs-lookup"><span data-stu-id="3177f-174">A value indicating whether the PowerShell script should run as 32-bit</span></span>|
+|<span data-ttu-id="4e263-139">id</span><span class="sxs-lookup"><span data-stu-id="4e263-139">id</span></span>|<span data-ttu-id="4e263-140">String</span><span class="sxs-lookup"><span data-stu-id="4e263-140">String</span></span>|<span data-ttu-id="4e263-141">Уникальный идентификатор для сценария управления устройствами.</span><span class="sxs-lookup"><span data-stu-id="4e263-141">Unique Identifier for the device management script.</span></span>|
+|<span data-ttu-id="4e263-142">displayName</span><span class="sxs-lookup"><span data-stu-id="4e263-142">displayName</span></span>|<span data-ttu-id="4e263-143">String</span><span class="sxs-lookup"><span data-stu-id="4e263-143">String</span></span>|<span data-ttu-id="4e263-144">Имя скрипта управления устройствами.</span><span class="sxs-lookup"><span data-stu-id="4e263-144">Name of the device management script.</span></span>|
+|<span data-ttu-id="4e263-145">description</span><span class="sxs-lookup"><span data-stu-id="4e263-145">description</span></span>|<span data-ttu-id="4e263-146">String</span><span class="sxs-lookup"><span data-stu-id="4e263-146">String</span></span>|<span data-ttu-id="4e263-147">Необязательное описание скрипта управления устройствами.</span><span class="sxs-lookup"><span data-stu-id="4e263-147">Optional description for the device management script.</span></span>|
+|<span data-ttu-id="4e263-148">скриптконтент</span><span class="sxs-lookup"><span data-stu-id="4e263-148">scriptContent</span></span>|<span data-ttu-id="4e263-149">Binary</span><span class="sxs-lookup"><span data-stu-id="4e263-149">Binary</span></span>|<span data-ttu-id="4e263-150">Содержимое скрипта.</span><span class="sxs-lookup"><span data-stu-id="4e263-150">The script content.</span></span>|
+|<span data-ttu-id="4e263-151">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="4e263-151">createdDateTime</span></span>|<span data-ttu-id="4e263-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4e263-152">DateTimeOffset</span></span>|<span data-ttu-id="4e263-153">Дата и время создания сценария управления устройствами.</span><span class="sxs-lookup"><span data-stu-id="4e263-153">The date and time the device management script was created.</span></span> <span data-ttu-id="4e263-154">Это свойство доступно только для чтения.</span><span class="sxs-lookup"><span data-stu-id="4e263-154">This property is read-only.</span></span>|
+|<span data-ttu-id="4e263-155">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="4e263-155">lastModifiedDateTime</span></span>|<span data-ttu-id="4e263-156">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4e263-156">DateTimeOffset</span></span>|<span data-ttu-id="4e263-157">Дата и время последнего изменения скрипта управления устройствами.</span><span class="sxs-lookup"><span data-stu-id="4e263-157">The date and time the device management script was last modified.</span></span> <span data-ttu-id="4e263-158">Это свойство доступно только для чтения.</span><span class="sxs-lookup"><span data-stu-id="4e263-158">This property is read-only.</span></span>|
+|<span data-ttu-id="4e263-159">runAsAccount</span><span class="sxs-lookup"><span data-stu-id="4e263-159">runAsAccount</span></span>|[<span data-ttu-id="4e263-160">runAsAccountType</span><span class="sxs-lookup"><span data-stu-id="4e263-160">runAsAccountType</span></span>](../resources/intune-shared-runasaccounttype.md)|<span data-ttu-id="4e263-161">Указывает тип контекста выполнения.</span><span class="sxs-lookup"><span data-stu-id="4e263-161">Indicates the type of execution context.</span></span> <span data-ttu-id="4e263-162">Возможные значения: `system`, `user`.</span><span class="sxs-lookup"><span data-stu-id="4e263-162">Possible values are: `system`, `user`.</span></span>|
+|<span data-ttu-id="4e263-163">Свойства enforcesignaturecheck</span><span class="sxs-lookup"><span data-stu-id="4e263-163">enforceSignatureCheck</span></span>|<span data-ttu-id="4e263-164">Boolean</span><span class="sxs-lookup"><span data-stu-id="4e263-164">Boolean</span></span>|<span data-ttu-id="4e263-165">Указывает, нужно ли проверять подпись скрипта.</span><span class="sxs-lookup"><span data-stu-id="4e263-165">Indicate whether the script signature needs be checked.</span></span>|
+|<span data-ttu-id="4e263-166">fileName</span><span class="sxs-lookup"><span data-stu-id="4e263-166">fileName</span></span>|<span data-ttu-id="4e263-167">String</span><span class="sxs-lookup"><span data-stu-id="4e263-167">String</span></span>|<span data-ttu-id="4e263-168">Имя файла сценария.</span><span class="sxs-lookup"><span data-stu-id="4e263-168">Script file name.</span></span>|
+|<span data-ttu-id="4e263-169">roleScopeTagIds</span><span class="sxs-lookup"><span data-stu-id="4e263-169">roleScopeTagIds</span></span>|<span data-ttu-id="4e263-170">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="4e263-170">String collection</span></span>|<span data-ttu-id="4e263-171">Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.</span><span class="sxs-lookup"><span data-stu-id="4e263-171">List of Scope Tag IDs for this PowerShellScript instance.</span></span>|
+|<span data-ttu-id="4e263-172">runAs32Bit</span><span class="sxs-lookup"><span data-stu-id="4e263-172">runAs32Bit</span></span>|<span data-ttu-id="4e263-173">Boolean</span><span class="sxs-lookup"><span data-stu-id="4e263-173">Boolean</span></span>|<span data-ttu-id="4e263-174">Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 бит</span><span class="sxs-lookup"><span data-stu-id="4e263-174">A value indicating whether the PowerShell script should run as 32-bit</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="3177f-175">Ответ</span><span class="sxs-lookup"><span data-stu-id="3177f-175">Response</span></span>
-<span data-ttu-id="3177f-176">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="3177f-176">If successful, this method returns a `201 Created` response code and a [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="4e263-175">Отклик</span><span class="sxs-lookup"><span data-stu-id="4e263-175">Response</span></span>
+<span data-ttu-id="4e263-176">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="4e263-176">If successful, this method returns a `201 Created` response code and a [deviceManagementScript](../resources/intune-shared-devicemanagementscript.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3177f-177">Пример</span><span class="sxs-lookup"><span data-stu-id="3177f-177">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4e263-177">Пример</span><span class="sxs-lookup"><span data-stu-id="4e263-177">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="3177f-178">Запрос</span><span class="sxs-lookup"><span data-stu-id="3177f-178">Request</span></span>
-<span data-ttu-id="3177f-179">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3177f-179">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="4e263-178">Запрос</span><span class="sxs-lookup"><span data-stu-id="4e263-178">Request</span></span>
+<span data-ttu-id="4e263-179">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4e263-179">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts
 Content-type: application/json
@@ -98,8 +98,8 @@ Content-length: 443
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="3177f-180">Отклик</span><span class="sxs-lookup"><span data-stu-id="3177f-180">Response</span></span>
-<span data-ttu-id="3177f-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3177f-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="4e263-180">Отклик</span><span class="sxs-lookup"><span data-stu-id="4e263-180">Response</span></span>
+<span data-ttu-id="4e263-p105">Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="4e263-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -110,9 +110,6 @@ Content-Length: 615
   "id": "59ea4525-4525-59ea-2545-ea592545ea59",
   "displayName": "Display Name value",
   "description": "Description value",
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.runSchedule"
-  },
   "scriptContent": "c2NyaXB0Q29udGVudA==",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
@@ -125,7 +122,6 @@ Content-Length: 615
   "runAs32Bit": true
 }
 ```
-
 
 
 
