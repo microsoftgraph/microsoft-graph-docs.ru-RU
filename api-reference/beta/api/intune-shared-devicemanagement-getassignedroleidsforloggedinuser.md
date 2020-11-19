@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2000082fc45ac040a66db8e5df16262694d07949
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d3b0a8e4755ba6361bcb8d92dae4fe6c2e66eb65
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732046"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49210363"
 ---
 # <a name="getassignedroleidsforloggedinuser-function"></a>Функция Жетассигнедролеидсфорлогжединусер
 
@@ -29,7 +29,7 @@ ms.locfileid: "48732046"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,10 +46,10 @@ GET /deviceManagement/getAssignedRoleIdsForLoggedInUser
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха эта функция возвращает `200 OK` код отклика и объект **девицеандаппманажементассигнедролеид** в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -78,7 +78,6 @@ Content-Length: 263
   }
 }
 ```
-
 
 
 

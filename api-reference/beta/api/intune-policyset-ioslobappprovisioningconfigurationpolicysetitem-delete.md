@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6ec8bd49337a4c112a37fadf1e0d4d21865fe7b8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c877142dbc8724544fa34854da8c6197195aec99
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695343"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49211279"
 ---
 # <a name="delete-ioslobappprovisioningconfigurationpolicysetitem"></a>Удаление Иослобапппровисионингконфигуратионполицисетитем
 
@@ -29,7 +29,7 @@ ms.locfileid: "48695343"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ DELETE /deviceAppManagement/policySets/{policySetId}/items/{policySetItemId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/policySets/{policySe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

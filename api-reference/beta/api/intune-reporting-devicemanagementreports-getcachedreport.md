@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aa97f0f0fed2b2641bfcd0d198a9ed41bc48b899
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 920a8171b9d1739d68367179798c00406d62812d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698199"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49210454"
 ---
 # <a name="getcachedreport-action"></a>действие Жеткачедрепорт
 
@@ -29,7 +29,7 @@ ms.locfileid: "48698199"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration. ReadWrite. ALL, DeviceManagementConfiguration. Read. ALL, DeviceManagementApps. ReadWrite. ALL, DeviceManagementApps. Read. ALL, DeviceManagementManagedDevices. ReadWrite. ALL, DeviceManagementManagedDevices. Read. ALL|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration. ReadWrite. ALL, DeviceManagementConfiguration. Read. ALL, DeviceManagementApps. ReadWrite. ALL, DeviceManagementApps. Read. ALL, DeviceManagementManagedDevices. ReadWrite. ALL, DeviceManagementManagedDevices. Read. ALL|
+|Приложение|DeviceManagementConfiguration. ReadWrite. ALL, DeviceManagementConfiguration. Read. ALL, DeviceManagementApps. ReadWrite. ALL, DeviceManagementApps. Read. ALL, DeviceManagementManagedDevices. ReadWrite. ALL, DeviceManagementManagedDevices. Read. ALL|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,14 +46,14 @@ POST /deviceManagement/reports/getCachedReport
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Пока не задокументировано.|
+|id|String|Пока не задокументировано.|
 |select|Коллекция строк|Н/Д|
 |search|String|Пока не задокументировано.|
 |Оператора|Коллекция строк|Н/Д|
@@ -104,7 +104,6 @@ Content-Length: 79
   "value": "Z2V0Q2FjaGVkUmVwb3J0IEludHVuZSBEb2MgU2FtcGxlIDc5MjIxODQ3OA=="
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 33d3b6614957426c48d2f8b9ee9b4ac8b5941ed1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9188446a5c270b7dc25e21b9880ecec479dfa90f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696085"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49209334"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>Тип ресурса Секуритибаселинедевицестате
 
@@ -34,8 +34,8 @@ ms.locfileid: "48696085"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта|
-|манажеддевицеид|Строка|Идентификатор устройства Intune|
+|id|String|Уникальный идентификатор объекта|
+|манажеддевицеид|String|Идентификатор устройства Intune|
 |deviceDisplayName|String|Отображаемое имя устройства|
 |userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия нормативным требованиям безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
@@ -63,7 +63,6 @@ ms.locfileid: "48696085"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

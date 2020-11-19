@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0df422c23d6009ece295bc65a4aac2e97adbe4df
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 37cc6c378c2d92db743ef67e821a1945bd23501f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734296"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49210720"
 ---
 # <a name="update-resourceoperation"></a>Обновление объекта resourceOperation
 
@@ -29,7 +29,7 @@ ms.locfileid: "48734296"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementRBAC.ReadWrite.All|
+|Приложение|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,19 +46,19 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [resourceOperation](../resources/intune-rbac-resourceoperation.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [resourceOperation](../resources/intune-rbac-resourceoperation.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
-|resource|Строка|Категория ресурса, к которой относится данная операция.|
+|id|String|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
+|resource|String|Категория ресурса, к которой относится данная операция.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально краткое (максимум несколько слов).|
-|description|Строка|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|
-|енабледфорскопевалидатион|Логический|Определяет, является ли разрешение проверенным для областей, определенных для назначения ролей.|
+|description|String|Описание операции с ресурсом. Используется в тексте, который отображается над операцией при наведении указателя мыши на портале Azure.|
+|енабледфорскопевалидатион|Boolean|Определяет, является ли разрешение проверенным для областей, определенных для назначения ролей.|
 
 
 
@@ -101,7 +101,6 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
-
 
 
 

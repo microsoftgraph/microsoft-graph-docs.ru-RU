@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d41c42a4bc3f330b1c8814d7ca792037158b6c00
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 754cf072d2cfc802338a1dbab4c55d24609cb928
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727712"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49211798"
 ---
 # <a name="create-devicemanagementexchangeconnector"></a>Создание объекта deviceManagementExchangeConnector
 
@@ -29,7 +29,7 @@ ms.locfileid: "48727712"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,14 +46,14 @@ POST /deviceManagement/exchangeConnectors
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта deviceManagementExchangeConnector в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта deviceManagementExchangeConnector.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Н/Д|
+|id|String|Н/Д|
 |lastSyncDateTime|DateTimeOffset|Время последней синхронизации соединителя Exchange|
 |status|[девицеманажементексчанжеконнекторстатус](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Состояние соединителя Exchange. Возможные значения: `none`, `connectionPending`, `connected`, `disconnected`.|
 |primarySmtpAddress|String|Электронный адрес, используемый для настройки соединителя Exchange между службами.|
@@ -113,7 +113,6 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
-
 
 
 

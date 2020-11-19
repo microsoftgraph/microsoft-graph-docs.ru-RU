@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 46031be0db458c845d862db75fc7b88405dd050f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d6576d894aa6921ceb1327617d32f187c09b63a7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708020"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49211553"
 ---
 # <a name="get-vpptoken"></a>Получить vppToken
 
@@ -29,7 +29,7 @@ ms.locfileid: "48708020"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,10 +49,10 @@ GET /deviceAppManagement/vppTokens/{vppTokenId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения данный метод возвращает`200 OK` код отклика и объект [vppToken](../resources/intune-onboarding-vpptoken.md) в форме для обратной связи.
 
 ## <a name="example"></a>Пример
@@ -104,7 +104,6 @@ Content-Length: 1192
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 02ece544ac7b4b78beb8e49bb67e33035a0d0bf9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6bf6b5031c53da45af63517e52f03d344f71a4c3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706326"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49210132"
 ---
 # <a name="update-devicemanagement"></a>Обновление объекта deviceManagement
 
@@ -36,7 +36,7 @@ ms.locfileid: "48706326"
 | &nbsp; &nbsp; **Условия компании** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Цель устройства** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **Электронная SIM-карта** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Ограждение** | DeviceManagementConfiguration.ReadWrite.All |
@@ -52,13 +52,13 @@ ms.locfileid: "48706326"
 | &nbsp;&nbsp; **Траублехутинг** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp; &nbsp; **Windows Information Protection** | DeviceManagementApps.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
-| Для приложений ||
+| Приложение ||
 | &nbsp;&nbsp; **Android для работы** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp; &nbsp; **Аудит** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Условия компании** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Цель устройства** | DeviceManagementConfiguration.ReadWrite.All|
-| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **Электронная SIM-карта** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Ограждение** | DeviceManagementConfiguration.ReadWrite.All |
@@ -90,7 +90,7 @@ PATCH /deviceManagement
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса добавьте представление объекта [deviceManagement](../resources/intune-shared-devicemanagement.md) в формате JSON.
 
@@ -98,10 +98,10 @@ PATCH /deviceManagement
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор устройства.|
+|id|String|Уникальный идентификатор устройства.|
 |**Конфигурация устройств**|
 |интунеаккаунтид|GUID|Идентификатор учетной записи Intune для данного клиента|
-|легаципкмананжементенаблед|Логический|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
+|легаципкмананжементенаблед|Boolean|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
 |максимумдептокенс|Int32|Максимальное число маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
@@ -155,9 +155,9 @@ Content-length: 751
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример отклика. 
 
 Примечание. Представленный здесь объект отклика может быть усечен для краткости. Возвращаемые свойства различаются в зависимости от рабочего процесса и контекста.
 
@@ -191,7 +191,6 @@ Content-Length: 855
   "accountMoveCompletionDateTime": "2017-01-01T00:01:17.9006709-08:00"
 }
 ```
-
 
 
 

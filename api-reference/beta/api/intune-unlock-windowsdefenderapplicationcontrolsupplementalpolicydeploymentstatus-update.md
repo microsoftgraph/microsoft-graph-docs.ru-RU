@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c99bbcfdb697ca3ec006d7ce8cffdf858b8ac9e9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 16d8addb2a23d3a4eb75b7178a1e67b7f0889c42
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729856"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49209852"
 ---
 # <a name="update-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus"></a>Обновление Виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус
 
@@ -29,7 +29,7 @@ ms.locfileid: "48729856"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,14 +46,14 @@ PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationC
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |deviceName|String|Имя устройства.|
 |deviceId|String|ИДЕНТИФИКАТОР устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации.|
@@ -62,11 +62,11 @@ PATCH /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplicationC
 |деплойментстатус|[windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|Состояние развертывания политики. Возможные значения: `unknown`, `success`, `tokenError`, `notAuthorizedByToken`, `policyNotFound`.|
 |userName|String|Имя пользователя этого устройства.|
 |userPrincipalName|String|Имя участника пользователя.|
-|полициверсион|Строка|Доступная для человека версия дополнительной политики Виндовсдефендераппликатионконтрол.|
+|полициверсион|String|Доступная для человека версия дополнительной политики Виндовсдефендераппликатионконтрол.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовсдефендераппликатионконтролсупплементалполицидеплойментстатус](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicydeploymentstatus.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -113,7 +113,6 @@ Content-Length: 535
   "policyVersion": "Policy Version value"
 }
 ```
-
 
 
 

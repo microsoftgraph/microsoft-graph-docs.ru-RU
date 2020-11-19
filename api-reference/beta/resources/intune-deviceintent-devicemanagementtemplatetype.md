@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ebaa80f901e8da092fee9f398c2a57356253f0cb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 29cda57dbbc1652dc4cc004e973871f283476571
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734198"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49209439"
 ---
 # <a name="devicemanagementtemplatetype-enum-type"></a>тип перечисления Девицеманажементтемплатетипе
 
@@ -36,7 +36,7 @@ ms.locfileid: "48734198"
 |девицекомплианце|8 |Шаблон соответствия требованиям устройств|
 |deviceConfigurationForOffice365|9 |Настройка устройств для параметров Microsoft Office 365|
 |клаудпк|10 |Шаблон базового уровня безопасности для Cloud PC|
-
+|фиреваллшаредсеттингс|11 |Шаблоны общих объектов брандмауэра для параметров ссылки|
 
 
 

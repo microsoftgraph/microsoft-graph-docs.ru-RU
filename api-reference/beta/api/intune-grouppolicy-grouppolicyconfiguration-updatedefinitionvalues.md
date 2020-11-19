@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ee5b84d880006323ae50c4d78e6c3b762bf8b764
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 751a07c4fbedd0165be91870568bc8a6ae142e30
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724194"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49212225"
 ---
 # <a name="updatedefinitionvalues-action"></a>действие Упдатедефинитионвалуес
 
@@ -29,7 +29,7 @@ ms.locfileid: "48724194"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/up
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -104,7 +104,6 @@ Content-length: 759
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a2ee720f2fa5fa456431ec9f9329c72868503959
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f162da0276f9759fa04f40cbd99a57ac6816b5bc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690632"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49209243"
 ---
 # <a name="securitybaselinestatesummary-resource-type"></a>Тип ресурса Секуритибаселинестатесуммари
 
@@ -31,7 +31,7 @@ ms.locfileid: "48690632"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта.|
+|id|String|Уникальный идентификатор объекта.|
 |секурекаунт|Int32|Количество защищенных устройств|
 |нотсекурекаунт|Int32|Количество незащищенных устройств|
 |unknownCount|Int32|Количество неизвестных устройств.|
@@ -62,7 +62,6 @@ ms.locfileid: "48690632"
   "notApplicableCount": 1024
 }
 ```
-
 
 
 

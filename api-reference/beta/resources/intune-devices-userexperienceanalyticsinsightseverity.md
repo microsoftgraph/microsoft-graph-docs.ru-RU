@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1598d4fc6a2234b38c552fe8d3481ec414a0dbd2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a14bb3dd8af7504051b80985cf2af5e6cad3e23b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684787"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49208242"
 ---
 # <a name="userexperienceanalyticsinsightseverity-enum-type"></a>тип перечисления Усерекспериенцеаналитиксинсигхтсеверити
 
@@ -25,11 +25,10 @@ ms.locfileid: "48684787"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Пока не задокументировано.|
+|Нет|нуль|Пока не задокументировано.|
 |справоч|1,1|Пока не задокументировано.|
 |warning|2|Пока не задокументировано.|
 |error|4|Пока не задокументировано.|
-
 
 
 

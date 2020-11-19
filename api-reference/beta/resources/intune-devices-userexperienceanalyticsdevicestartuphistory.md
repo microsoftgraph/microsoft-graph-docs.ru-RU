@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5d356fa5c480cc59f7d032b9c415583af384a0f3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e6fe811b366d45a707867be25e324d473ce3d485
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725402"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49208396"
 ---
 # <a name="userexperienceanalyticsdevicestartuphistory-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксдевицестартуфистори
 
@@ -34,7 +34,7 @@ ms.locfileid: "48725402"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор журнала запуска устройства Analytics User Experience.|
+|id|String|Уникальный идентификатор журнала запуска устройства Analytics User Experience.|
 |deviceId|String|Идентификатор устройства службы аналитики взаимодействия с пользователем.|
 |startTime|DateTimeOffset|Время начала загрузки устройства Analytics User Experience.|
 |коребуттимеинмс|Int32|Время загрузки ядра устройства аналитики для пользователя (в миллисекундах).|
@@ -45,12 +45,12 @@ ms.locfileid: "48725402"
 |корелогинтимеинмс|Int32|Время входа в ядро устройства аналитики взаимодействия с пользователем (в миллисекундах).|
 |респонсиведесктоптимеинмс|Int32|Время, в течение которого выполняется анализ пользовательского интерфейса на рабочем столе в миллисекундах.|
 |тоталлогинтимеинмс|Int32|Общее время входа в систему для устройства аналитики взаимодействия с пользователем (в миллисекундах).|
-|исфирстлогин|Логический|Первое имя входа устройства Analytics User Experience.|
-|исфеатуреупдате|Логический|Загрузочная запись устройства аналитики взаимодействия с пользователем — это обновление компонентов.|
+|исфирстлогин|Boolean|Первое имя входа устройства Analytics User Experience.|
+|исфеатуреупдате|Boolean|Загрузочная запись устройства аналитики взаимодействия с пользователем — это обновление компонентов.|
 |operatingSystemVersion|String|Версия операционной системы для записи загрузки устройства службы аналитики взаимодействия с пользователем.|
 |рестарткатегори|[userExperienceAnalyticsOperatingSystemRestartCategory](../resources/intune-devices-userexperienceanalyticsoperatingsystemrestartcategory.md)|Категория перезагрузки ОС. Возможные значения: `unknown`, `restartWithUpdate`, `restartWithoutUpdate`, `blueScreen`, `shutdownWithUpdate`, `shutdownWithoutUpdate`, `longPowerButtonPress`, `bootError`.|
-|рестартстопкоде|Строка|Код остановки перезапуска ОС. Здесь показан код проверки ошибки, который можно использовать для поиска причины синего экрана.|
-|рестартфаултбуккет|Строка|Сегмент сбоя при перезапуске ОС. Блок сбоя используется для поиска дополнительных сведений о сбое системы.|
+|рестартстопкоде|String|Код остановки перезапуска ОС. Здесь показан код проверки ошибки, который можно использовать для поиска причины синего экрана.|
+|рестартфаултбуккет|String|Сегмент сбоя при перезапуске ОС. Блок сбоя используется для поиска дополнительных сведений о сбое системы.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -85,7 +85,6 @@ ms.locfileid: "48725402"
   "restartFaultBucket": "String"
 }
 ```
-
 
 
 

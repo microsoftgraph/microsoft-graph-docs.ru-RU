@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2a1bf5044c48c1ca74ffcca883029f48f7c73acb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7b6663c86676982149e42945a8db82c4a6a84aa0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692831"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49210142"
 ---
 # <a name="sendcustomnotificationtocompanyportal-action"></a>Действие sendCustomNotificationToCompanyPortal
 
@@ -27,10 +27,10 @@ ms.locfileid: "48692831"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
-| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение||
+| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
   "blockType": "ignored"
@@ -46,7 +46,7 @@ POST /deviceManagement/sendCustomNotificationToCompanyPortal
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -85,7 +85,6 @@ Content-length: 164
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

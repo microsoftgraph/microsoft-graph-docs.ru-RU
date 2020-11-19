@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 49506e22aac12bc9f2ae03c7e1307a736d631227
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5a72c646c805677e1bda7d01a53021d16212de69
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691633"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49210818"
 ---
 # <a name="delete-deviceandappmanagementroledefinition"></a>Удаление объекта deviceAndAppManagementRoleDefinition
 
@@ -29,7 +29,7 @@ ms.locfileid: "48691633"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementRBAC.ReadWrite.All|
+|Приложение|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,7 +47,7 @@ DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{rol
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -66,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDe
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

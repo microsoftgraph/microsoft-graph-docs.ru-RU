@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 5ea5c07e838906ee592909ea22c6eb65787c3c8a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 85179868781317f84c4872b087662773d22d35f4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729301"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49208942"
 ---
 # <a name="lostmodestate-enum-type"></a>тип перечисления Лостмодестате
 
@@ -27,7 +27,6 @@ ms.locfileid: "48729301"
 |:---|:---|:---|
 |отключено|нуль|Отключенный режим отключен.|
 |включено|1,1|Включен режим "потеряно".|
-
 
 
 

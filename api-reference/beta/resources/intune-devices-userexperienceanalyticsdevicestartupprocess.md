@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8132a83bdd4f51677ea8f73f41d6e08d8f3f9c9e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f92967d6cf7fe4d4be381bd2066d477b906eed1f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725395"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49208347"
 ---
 # <a name="userexperienceanalyticsdevicestartupprocess-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксдевицестартуппроцесс
 
@@ -34,9 +34,9 @@ ms.locfileid: "48725395"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор процесса запуска устройства аналитики взаимодействия с пользователем.|
-|манажеддевицеид|Строка|Идентификатор устройства службы аналитики взаимодействия с пользователем.|
-|процесснаме|Строка|Имя процесса запуска устройства службы аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор процесса запуска устройства аналитики взаимодействия с пользователем.|
+|манажеддевицеид|String|Идентификатор устройства службы аналитики взаимодействия с пользователем.|
+|процесснаме|String|Имя процесса запуска устройства службы аналитики взаимодействия с пользователем.|
 |productName|String|Имя продукта для процесса запуска устройства Analytics Device (взаимодействие с пользователем).|
 |publisher|String|Издатель процесса запуска устройства Analytics User Experience.|
 |стартупимпактинмс|Int32|Влияние процесса запуска пользователя на устройство Analytics в миллисекундах.|
@@ -63,7 +63,6 @@ ms.locfileid: "48725395"
   "startupImpactInMs": 1024
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d31cf9f3eb387e67769fc89c6e03ca256daddb53
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 51bcc381b1a2f804649a6185e7e89d071d84d57c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732039"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49210356"
 ---
 # <a name="geteffectivepermissions-function"></a>Функция getEffectivePermissions
 
@@ -29,7 +29,7 @@ ms.locfileid: "48732039"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -47,7 +47,7 @@ GET /deviceManagement/getEffectivePermissions
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -96,7 +96,6 @@ Content-Length: 471
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 82933cc016b4f2eb82167a6d872f65c21b5d126d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5114209335becfb571e9bfc75c8748bbb911cce5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706305"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49210111"
 ---
 # <a name="get-devicemanagementderivedcredentialsettings"></a>Получение Девицеманажементдериведкредентиалсеттингс
 
@@ -31,7 +31,7 @@ ms.locfileid: "48706305"
 |&nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |&nbsp;&nbsp; **Политика доступа к ресурсам** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 |&nbsp; &nbsp; **Конфигурация устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |&nbsp;&nbsp; **Политика доступа к ресурсам** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
@@ -58,10 +58,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [девицеманажементдериведкредентиалсеттингс](../resources/intune-shared-devicemanagementderivedcredentialsettings.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -85,7 +85,6 @@ Content-Length: 155
     "id": "bc650741-0741-bc65-4107-65bc410765bc"
   }
 }
-
 
 
 

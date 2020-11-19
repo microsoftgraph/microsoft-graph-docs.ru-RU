@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 949951e263aeb12af29f26f99a35a89d1194005d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 925ed80b6d978488361409226c5a4263af8d97bf
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725388"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49208305"
 ---
 # <a name="userexperienceanalyticsdevicestartupprocessperformance-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксдевицестартуппроцессперформанце
 
@@ -34,8 +34,8 @@ ms.locfileid: "48725388"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор производительности процесса запуска устройства Analytics User Experience.|
-|процесснаме|Строка|Имя процесса запуска устройства службы аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор производительности процесса запуска устройства Analytics User Experience.|
+|процесснаме|String|Имя процесса запуска устройства службы аналитики взаимодействия с пользователем.|
 |productName|String|Имя продукта для процесса запуска устройства Analytics Device (взаимодействие с пользователем).|
 |publisher|String|Издатель процесса запуска устройства Analytics User Experience.|
 |deviceCount|Int64|Сводка по процессу запуска при запуске устройства с пользовательским интерфейсом.|
@@ -65,7 +65,6 @@ ms.locfileid: "48725388"
   "totalImpactInMs": 1024
 }
 ```
-
 
 
 

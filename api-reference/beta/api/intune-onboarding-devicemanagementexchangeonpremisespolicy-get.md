@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dfb762b1e386b2cc837663c21e48ecfe43409c64
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a0cf015c365635b96f2067bdc2c7ad4dd1081f8b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727670"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49211679"
 ---
 # <a name="get-devicemanagementexchangeonpremisespolicy"></a>Получение Девицеманажементексчанжеонпремисесполици
 
@@ -29,7 +29,7 @@ ms.locfileid: "48727670"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -50,10 +50,10 @@ GET /deviceManagement/exchangeOnPremisesPolicies/{deviceManagementExchangeOnPrem
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [девицеманажементексчанжеонпремисесполици](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -98,7 +98,6 @@ Content-Length: 777
   }
 }
 ```
-
 
 
 

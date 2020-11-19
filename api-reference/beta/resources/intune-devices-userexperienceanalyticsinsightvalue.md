@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 70d5b7221c68aba2b2c6c620584a30d749654e66
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 15ce064f3de1d8204e2238900d66cbd0ac900589
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736151"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49208235"
 ---
 # <a name="userexperienceanalyticsinsightvalue-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксинсигхтвалуе
 
@@ -41,7 +41,6 @@ ms.locfileid: "48736151"
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsInsightValue"
 }
 ```
-
 
 
 

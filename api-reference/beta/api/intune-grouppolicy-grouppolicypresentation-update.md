@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3d3a17cd24dda424f8c38450b4024329b7d589c8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 38b80f055369354e4e73c74a44220940999142f9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724159"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49212141"
 ---
 # <a name="update-grouppolicypresentation"></a>Обновление Граупполиципресентатион
 
@@ -29,7 +29,7 @@ ms.locfileid: "48724159"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,20 +47,20 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|label|Строка|Локализованная текстовая подпись для любой сущности презентации. По умолчанию это значение пусто.|
-|id|Строка|Ключ объекта.|
+|label|String|Локализованная текстовая подпись для любой сущности презентации. По умолчанию это значение пусто.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -92,7 +92,6 @@ Content-Length: 205
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

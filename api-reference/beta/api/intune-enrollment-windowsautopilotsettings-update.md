@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 96013b928e04797633f331e2967b13b4a9717d0c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 53560e607bd3cdfe9cc56268d68fa09d9f95ac44
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729105"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49212351"
 ---
 # <a name="update-windowsautopilotsettings"></a>Обновление windowsAutopilotSettings
 
@@ -29,7 +29,7 @@ ms.locfileid: "48729105"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,14 +46,14 @@ PATCH /deviceManagement/windowsAutopilotSettings
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта|
+|id|String|GUID объекта|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации данных в службе DDS.|
 |ластмануалсинктригжердатетиме|DateTimeOffset|Дата и время последней синхронизации данных в службе DDS.|
 |syncStatus|[виндовсаутопилотсинкстатус](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Указывает состояние синхронизации со службой синхронизации данных устройств (DDS). Возможные значения: `unknown`, `inProgress`, `completed`, `failed`.|
@@ -95,7 +95,6 @@ Content-Length: 279
   "syncStatus": "inProgress"
 }
 ```
-
 
 
 

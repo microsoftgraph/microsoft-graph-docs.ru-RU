@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e8857c6a392437335c7324c139fa0b2c9880b12a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3394523c13cc5e2ffa8530ef0474bf2bcffd5089
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733978"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49208504"
 ---
 # <a name="userexperienceanalyticsapphealthdeviceperformancedetails-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксапфеалсдевицеперформанцедетаилс
 
@@ -34,9 +34,9 @@ ms.locfileid: "48733978"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта производительности устройства аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор объекта производительности устройства аналитики взаимодействия с пользователем.|
 |eventDateTime|DateTimeOffset|Время возникновения события.|
-|eventType|Строка|Тип события.|
+|eventType|String|Тип события.|
 |appDisplayName|String|Понятное имя приложения, для которого произошло событие.|
 |deviceId|String|Идентификатор устройства.|
 |deviceDisplayName|String|Имя устройства.|
@@ -63,7 +63,6 @@ ms.locfileid: "48733978"
   "deviceDisplayName": "String"
 }
 ```
-
 
 
 

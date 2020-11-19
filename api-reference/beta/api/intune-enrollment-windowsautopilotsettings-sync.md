@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cdbafe555e7d319c68f65282c4c32b8d7766876f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1276f18bf368f9d6dcabdd90d4a11ad35097259a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723190"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49212365"
 ---
 # <a name="sync-action"></a>Действие синхронизации
 
@@ -29,7 +29,7 @@ ms.locfileid: "48723190"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,10 +46,10 @@ POST /deviceManagement/windowsAutopilotSettings/sync
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotSettings/
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

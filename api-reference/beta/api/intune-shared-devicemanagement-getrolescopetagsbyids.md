@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b08e3af8741e66201076387ec37a6f018c84663a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8a69999e5e84467c53320ee66bbba9f123732855
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735353"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49210295"
 ---
 # <a name="getrolescopetagsbyids-function"></a>Функция Жетролескопетагсбидс
 
@@ -29,7 +29,7 @@ ms.locfileid: "48735353"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp; &nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -47,7 +47,7 @@ GET /deviceManagement/getRoleScopeTagsByIds
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -87,7 +87,6 @@ Content-Length: 231
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 70b6ab750fb6e952a1454fed17f405a678280f9e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: caf7064d33adfc64f07bd9181b875b408bdfd22f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731493"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49210678"
 ---
 # <a name="create-roleassignment"></a>Создание объекта roleAssignment
 
@@ -29,7 +29,7 @@ ms.locfileid: "48731493"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementRBAC.ReadWrite.All|
+|Приложение|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,16 +46,16 @@ POST /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта roleAssignment в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта roleAssignment.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
-|displayName|Строка|Отображаемое или понятное имя назначения роли.|
-|description|Строка|Описание назначения роли.|
+|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
+|displayName|String|Отображаемое или понятное имя назначения роли.|
+|description|String|Описание назначения роли.|
 |скопемемберс|Коллекция String|Список идентификаторов групп безопасности с элементами области применения ролей.  Эти идентификаторы берутся из Azure Active Directory.|
 |scopeType|[roleAssignmentScopeType](../resources/intune-rbac-roleassignmentscopetype.md);|Задает тип области для назначения роли. Тип по умолчанию "Ресаурцескопе" позволяет назначать Ресаурцескопес. Для "Аллдевицес", "Алллиценседусерс" и "Аллдевицесандлиценседусерс" свойство Ресаурцескопес должно оставаться пустым. Возможные значения: `resourceScope`, `allDevices`, `allLicensedUsers`, `allDevicesAndLicensedUsers`.|
 |resourceScopes|Коллекция String|Список идентификаторов групп безопасности с элементами области применения ролей.  Эти идентификаторы берутся из Azure Active Directory.|
@@ -109,7 +109,6 @@ Content-Length: 326
   ]
 }
 ```
-
 
 
 
