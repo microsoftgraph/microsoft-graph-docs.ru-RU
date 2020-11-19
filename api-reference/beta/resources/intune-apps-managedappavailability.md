@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 50fb33f344242769dc88a840c0c9674886a5d332
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8fe19dc4b46813cca545b3bf38603b381164e247
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702623"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49281567"
 ---
 # <a name="managedappavailability-enum-type"></a>тип перечисления Манажедаппаваилабилити
 
@@ -27,7 +27,6 @@ ms.locfileid: "48702623"
 |:---|:---|:---|
 |глобального|нуль|Глобальное доступное приложение ко всем клиентам.|
 |линеофбусинесс|1,1|Частные бизнес-приложения, частные для Организации.|
-
 
 
 

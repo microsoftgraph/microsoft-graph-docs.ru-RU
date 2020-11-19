@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2f9d9100fc7bad05a6fd8d48a90a07cd268d0977
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 87f4b34447ee8cba65153fcff903239061aef17b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731094"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49279873"
 ---
 # <a name="macossoftwareupdatedelaypolicy-enum-type"></a>тип перечисления Макоссофтвареупдатеделайполици
 
@@ -25,10 +25,9 @@ ms.locfileid: "48731094"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Задержки обновлений программного обеспечения не будут применены.|
+|Нет|нуль|Задержки обновлений программного обеспечения не будут применены.|
 |делайосупдатевисибилити|1,1|Замедления обновлений программного обеспечения операционной системы.|
 |делайаппупдатевисибилити|2|Принудительная задержка обновлений программного обеспечения для приложений.|
-
 
 
 

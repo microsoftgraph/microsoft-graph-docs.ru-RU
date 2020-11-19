@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 95c8d13d977ba4acb3f876149e0d86d3184fe404
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e872a7188ea231fe7328d37cfd73c2400a301a51
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728344"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49279607"
 ---
 # <a name="vpnondemandruleconnectionaction-enum-type"></a>тип перечисления Впнондемандрулеконнектионактион
 
@@ -29,7 +29,6 @@ ms.locfileid: "48728344"
 |евалуатеконнектион|1,1|Оценка подключения.|
 |пропуск|2|Пропуск.|
 |disconnect|4|Соединять.|
-
 
 
 

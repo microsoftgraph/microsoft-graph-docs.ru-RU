@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8dc0aada94c3ab13cf488bb6cca6ba0f7057c1da
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cd22cc58d3d949c1e560d62e672e27fb31ae913e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735255"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49279782"
 ---
 # <a name="macossystemextensiontypemapping-resource-type"></a>Тип ресурса Макоссистемекстенсионтипемаппинг
 
@@ -25,7 +25,7 @@ ms.locfileid: "48735255"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|теамидентифиер|Строка|Получает или задает идентификатор группы, используемый для подписи расширения системы.|
+|теамидентифиер|String|Получает или задает идентификатор группы, используемый для подписи расширения системы.|
 |алловедтипес|[macOSSystemExtensionType](../resources/intune-deviceconfig-macossystemextensiontype.md)|Получает или задает разрешенные типы расширений системы macOS. Возможные значения: `driverExtensionsAllowed`, `networkExtensionsAllowed`, `endpointSecurityExtensionsAllowed`.|
 
 ## <a name="relationships"></a>Связи
@@ -45,7 +45,6 @@ ms.locfileid: "48735255"
   "allowedTypes": "String"
 }
 ```
-
 
 
 

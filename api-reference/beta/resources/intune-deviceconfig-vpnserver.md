@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c2fda07e416c43246a035b556e6ee23f36ff56a1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8281aaaec193b5a78e913af52ce51d8f327ce8cf
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728316"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49279481"
 ---
 # <a name="vpnserver-resource-type"></a>Тип ресурса Vpnserver.
 
@@ -25,9 +25,9 @@ ms.locfileid: "48728316"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|description|Строка|Описание.|
+|description|String|Описание.|
 |address|String|Адрес (IP-адрес, полное доменное имя или URL-адрес)|
-|исдефаултсервер|Логический|Сервер по умолчанию.|
+|исдефаултсервер|Boolean|Сервер по умолчанию.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -47,7 +47,6 @@ ms.locfileid: "48728316"
   "isDefaultServer": true
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e14ed05ff14cdd7e2a56f4d147270c55d995bfd5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b8fcb8c623bff70b96bffebc240fff361667a28c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702658"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49281994"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>тип перечисления Андроидманажедстореаппконфигуратионсчемаитемдататипе
 
@@ -25,15 +25,14 @@ ms.locfileid: "48702658"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|логический|нуль|Пока не задокументировано.|
+|bool|нуль|Пока не задокументировано.|
 |integer|1,1|Пока не задокументировано.|
-|string|2|Пока не задокументировано.|
+|строка|2|Пока не задокументировано.|
 |повторяюще|4|Пока не задокументировано.|
 |MultiSelect|4 |Пока не задокументировано.|
 |bundle|5 |Пока не задокументировано.|
 |бундлеаррай|6 |Пока не задокументировано.|
 |hidden|7 |Пока не задокументировано.|
-
 
 
 

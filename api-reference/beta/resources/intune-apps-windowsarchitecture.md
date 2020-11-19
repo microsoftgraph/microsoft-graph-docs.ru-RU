@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e89446ea4b9baeeadf757884bd2cd444e29ae817
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 868f778e443c2bca2ca1c4c48191c7f0274c9834
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685515"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49284479"
 ---
 # <a name="windowsarchitecture-enum-type"></a>тип перечисления Виндовсарчитектуре
 
@@ -25,13 +25,12 @@ ms.locfileid: "48685515"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Флаги не заданы.|
+|Нет|нуль|Флаги не заданы.|
 |платформы|1,1|Поддерживается ли тип архитектуры x86 Windows.|
 |x|2|Поддерживается ли тип архитектуры Windows x64.|
 |руки|4 |Поддерживается ли тип архитектуры Windows ARM.|
 |определенно|8 |Поддерживается ли тип архитектуры нейтральной архитектуры Windows.|
 |arm64|16 |Поддерживается ли тип архитектуры Windows Arm64.|
-
 
 
 

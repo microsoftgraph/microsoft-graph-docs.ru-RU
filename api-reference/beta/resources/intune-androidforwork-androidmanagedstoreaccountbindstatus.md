@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 10fb373e23e726a66bff3ef497353f904532ac82
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ed91d6e93b52fcf9e32fba550704f21f3060c812
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736277"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49282050"
 ---
 # <a name="androidmanagedstoreaccountbindstatus-enum-type"></a>тип перечисления Андроидманажедстореаккаунтбиндстатус
 
@@ -29,7 +29,6 @@ ms.locfileid: "48736277"
 |свободного|1,1|Пока не задокументировано.|
 |баундандвалидатед|2|Пока не задокументировано.|
 |Отмена привязки|4|Пока не задокументировано.|
-
 
 
 

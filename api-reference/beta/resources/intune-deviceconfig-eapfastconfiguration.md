@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 15232635cfcbe5064c5efe7beeb05e58c5e321ee
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1dbb99ef309f1fe3bb85030ba681552da3548f06
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701552"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49280636"
 ---
 # <a name="eapfastconfiguration-enum-type"></a>тип перечисления Еапфастконфигуратион
 
@@ -29,7 +29,6 @@ ms.locfileid: "48701552"
 |усепротектедакцесскредентиал|1,1|Использование учетных данных безопасного доступа (PAC).|
 |усепротектедакцесскредентиаландпровисион|2|Использование учетных данных безопасного доступа (PAC) и подготовка ключа PAC.|
 |усепротектедакцесскредентиаландпровисионанонимаусли|4|Использование учетных данных безопасного доступа (PAC), подготовка ключа PAC и анонимное выполнение.|
-
 
 
 

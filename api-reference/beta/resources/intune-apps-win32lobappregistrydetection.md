@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1b0098d1caec7dd47b729489077d2638b4dbb63f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: fbd4b3407cca845766ae813608697699691651a8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706235"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49280846"
 ---
 # <a name="win32lobappregistrydetection-resource-type"></a>Тип ресурса win32LobAppRegistryDetection
 
@@ -28,12 +28,12 @@ ms.locfileid: "48706235"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|check32BitOn64System|Логический|Значение, указывающее, является ли этот путь реестра для проверки 32-разрядного приложения в 64-разрядной системе|
-|Ключевой|Строка|Путь к разделу реестра для определения бизнес-приложения Win32 (LoB)|
-|valueName|Строка|Имя значения реестра|
+|check32BitOn64System|Boolean|Значение, указывающее, является ли этот путь реестра для проверки 32-разрядного приложения в 64-разрядной системе|
+|Ключевой|String|Путь к разделу реестра для определения бизнес-приложения Win32 (LoB)|
+|valueName|String|Имя значения реестра|
 |детектионтипе|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|Тип обнаружения данных в реестре. Возможные значения: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор для обнаружения данных в реестре. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|детектионвалуе|Строка|Значение обнаружения в реестре|
+|детектионвалуе|String|Значение обнаружения в реестре|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -56,7 +56,6 @@ ms.locfileid: "48706235"
   "detectionValue": "String"
 }
 ```
-
 
 
 

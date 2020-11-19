@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9d3ce8ab638f365793eb7bb6116dc8b6277b9318
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1ca6c5cf968897d701870bc695dcce909c74f1fc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705763"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49280139"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>Тип ресурса iosNotificationSettings
 
@@ -34,6 +34,7 @@ ms.locfileid: "48705763"
 |alertType|[иоснотификатионалерттипе](../resources/intune-deviceconfig-iosnotificationalerttype.md)|Определяет тип оповещения для уведомлений, связанных с этим приложением. Возможные значения: `deviceDefault`, `banner`, `modal`, `none`.|
 |badgesEnabled|Boolean|Указывает, разрешены ли эмблемы для этого приложения.|
 |soundsEnabled|Boolean|Указывает, разрешены ли звуковые сигналы для этого приложения.|
+|превиеввисибилити|[иоснотификатионпревиеввисибилити](../resources/intune-deviceconfig-iosnotificationpreviewvisibility.md)|Переопределяет политику просмотра уведомлений, установленную пользователем на устройстве с iOS. Возможные значения: `notConfigured`, `alwaysShow`, `hideWhenLocked`, `neverShow`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -56,10 +57,10 @@ ms.locfileid: "48705763"
   "showOnLockScreen": true,
   "alertType": "String",
   "badgesEnabled": true,
-  "soundsEnabled": true
+  "soundsEnabled": true,
+  "previewVisibility": "String"
 }
 ```
-
 
 
 

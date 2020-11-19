@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 799448f79975cfa2a4879528770f85c3e862c365
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4d4515030d5fdf1abf36969c71ec3cbc771e9a1d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707803"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49283401"
 ---
 # <a name="devicethreatprotectionlevel-enum-type"></a>тип перечисления Девицесреатпротектионлевел
 
@@ -31,7 +31,6 @@ ms.locfileid: "48707803"
 |medium|4|Требования к уровню защиты от угроз устройств: Medium. Medium — это серьезность угрозы, которая создает умеренный риск для данных устройства или устройства.|
 |высокоуровневых|4 |Требование к уровню защиты от угроз для устройства: высокое. High — это серьезность угрозы, которая создает серьезный риск для данных устройства или устройства.|
 |Принимать|10 |Требование к уровню защиты от угроз для устройства: не задано. Не задано указывает на то, что устройство не должно соответствовать уровню защиты от угроз.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: ee951d26deeca8a46fca25be9d8c70ca9419f1ff
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ec24a90178cf8a5144b923f082e5a7da6a7a7f71
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695028"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49280651"
 ---
 # <a name="changeuefisettingspermission-enum-type"></a>тип перечисления Чанжеуефисеттингспермиссион
 
@@ -26,8 +26,7 @@ ms.locfileid: "48695028"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |нотконфигуредонли|нуль|Значение по умолчанию для устройства, без намерения.|
-|none|1,1|Запретить изменение разрешения для параметра UEFI|
-
+|Нет|1,1|Запретить изменение разрешения для параметра UEFI|
 
 
 

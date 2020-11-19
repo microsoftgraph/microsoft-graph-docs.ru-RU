@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ef34a65b95aaf773240dceced3152df8336c8b96
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: dd6aed2dcb1f6a593109f3d7c3f6ab012caf3937
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734275"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49279894"
 ---
 # <a name="macosfirewallapplication-resource-type"></a>Тип ресурса Макосфиреваллаппликатион
 
@@ -26,7 +26,7 @@ ms.locfileid: "48734275"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |bundleId|String|Свойства bundleid приложения.|
-|алловсинкомингконнектионс|Логический|Разрешены ли входящие подключения.|
+|алловсинкомингконнектионс|Boolean|Разрешены ли входящие подключения.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -45,7 +45,6 @@ ms.locfileid: "48734275"
   "allowsIncomingConnections": true
 }
 ```
-
 
 
 

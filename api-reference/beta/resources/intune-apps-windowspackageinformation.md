@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b9a7871a101062e9d835c68f37299d83a8bfb5e8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 409d9aedf0ef42114269b1d1d23e9fd5d08e8faa
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726558"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49284276"
 ---
 # <a name="windowspackageinformation-resource-type"></a>Тип ресурса windowsPackageInformation
 
@@ -26,9 +26,9 @@ ms.locfileid: "48726558"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, в которой можно запустить это приложение. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|displayName|Строка|Отображаемое имя.|
+|displayName|String|Отображаемое имя.|
 |identityName|String|Имя удостоверения.|
-|идентитипублишер|Строка|Издатель удостоверений.|
+|идентитипублишер|String|Издатель удостоверений.|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity.|
 |identityVersion|String|Версия идентификатора.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы.|
@@ -66,7 +66,6 @@ ms.locfileid: "48726558"
   }
 }
 ```
-
 
 
 

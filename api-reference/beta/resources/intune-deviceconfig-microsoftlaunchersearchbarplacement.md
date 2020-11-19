@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0c8b412007923cb24b2ff3976659bf051b8b7518
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bcd91648a61b4275840744cdfaeb107d106483a3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701342"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49283184"
 ---
 # <a name="microsoftlaunchersearchbarplacement-enum-type"></a>тип перечисления Микрософтлаунчерсеарчбарплацемент
 
@@ -29,7 +29,6 @@ ms.locfileid: "48701342"
 |top|1,1|Указывает, что панель поиска будет отображаться в верхней части устройства.|
 |bottom|2|Указывает, что панель поиска будет отображаться в нижней части устройства.|
 |скрытых|4|Указывает, что панель поиска будет скрыта на устройстве.|
-
 
 
 

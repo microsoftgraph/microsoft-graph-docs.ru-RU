@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4ce16d0c064fb182352fa0a0061fb2296fd44d7a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9632b0199fc3bdc659f4c94fe71311ad2e896ce8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706186"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49284563"
 ---
 # <a name="win32lobapprestartbehavior-enum-type"></a>тип перечисления win32LobAppRestartBehavior
 
@@ -29,7 +29,6 @@ ms.locfileid: "48706186"
 |разрешить|1,1|Intune не будет предпринимать никаких определенных действий по кодам перезагрузки, полученным в результате установки приложения. Intune не будет пытаться отключить перезапуск для приложений MSI.|
 |подавлять|2|Intune попытается отключить перезапуск для приложений MSI.|
 |включить|4|Intune вынуждает устройство перезапускать сразу после завершения установки приложения.|
-
 
 
 

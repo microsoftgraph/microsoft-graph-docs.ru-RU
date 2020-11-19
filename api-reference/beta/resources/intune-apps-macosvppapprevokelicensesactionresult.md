@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 97daa2d7c156664f359bc454067981b71c5e4d5b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f8cb6aff326461a69a427f59f2df5718e1d44891
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707208"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49281707"
 ---
 # <a name="macosvppapprevokelicensesactionresult-resource-type"></a>Тип ресурса Макосвппаппревокелиценсесактионресулт
 
@@ -26,7 +26,7 @@ ms.locfileid: "48707208"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |userId|String|UserId, связанный с действием.|
-|манажеддевицеид|Строка|DeviceId, связанный с действием.|
+|манажеддевицеид|String|DeviceId, связанный с действием.|
 |тоталлиценсескаунт|Int32|Количество лицензий, для которых была предпринята попытка отзыва.|
 |фаиледлиценсескаунт|Int32|Количество лицензий, для которых произошел сбой при отзыве.|
 |актионфаилуререасон|[впптокенактионфаилуререасон](../resources/intune-shared-vpptokenactionfailurereason.md)|Причина сбоя действия "отзыв лицензий". Возможные значения: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`.|
@@ -59,7 +59,6 @@ ms.locfileid: "48707208"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

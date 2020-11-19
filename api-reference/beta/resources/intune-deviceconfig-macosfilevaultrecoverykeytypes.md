@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 75d6de635ecddf44ce7eaa5f0c731af59125a7d0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 931e04d687590312a015ecc4e6f2e40f0e4dca10
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724574"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49279950"
 ---
 # <a name="macosfilevaultrecoverykeytypes-enum-type"></a>тип перечисления Макосфилеваултрековерикэйтипес
 
@@ -28,7 +28,6 @@ ms.locfileid: "48724574"
 |notConfigured|нуль|Значение по умолчанию для устройства, без намерения.|
 |институтионалрековерикэй|1,1|Ключ восстановления для сотрудников в учреждений — это "главный" ключ восстановления, который можно использовать для разблокировки устройств, пароли которых были утрачены.|
 |персоналрековерикэй|2|Персональный ключ восстановления — это уникальный код, который можно использовать для разблокировки устройства пользователя даже в том случае, если пароль для устройства утерян.|
-
 
 
 

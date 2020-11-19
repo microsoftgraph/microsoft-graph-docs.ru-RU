@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: dbe45cc5e931b20b93f788f321859b0844587ef7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 21fee1e773bec4e4e651f222a9f949b557638631
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723022"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49283177"
 ---
 # <a name="networksinglesignontype-enum-type"></a>тип перечисления Нетворксинглесигнонтипе
 
@@ -28,7 +28,6 @@ Wi-Fi параметров типа единого входа в сеть.
 |отключено|нуль|Отключено|
 |Предварительный вход|1,1|Предварительный вход|
 |Вход в систему|2|После входа|
-
 
 
 

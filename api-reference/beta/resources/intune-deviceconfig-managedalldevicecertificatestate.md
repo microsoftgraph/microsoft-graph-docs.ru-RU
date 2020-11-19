@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7fd7544e01ff0351d8883dd8201b9c3a901e2d7d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 33c77e4d6a72ae4335d7d9e921aed0b5d13911b8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48710043"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49279691"
 ---
 # <a name="managedalldevicecertificatestate-resource-type"></a>Тип ресурса Манажедаллдевицецертификатестате
 
@@ -34,18 +34,18 @@ ms.locfileid: "48710043"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |цертификатеревокестатус|[цертификатеревокатионстатус](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Отзыв состояния. Возможные значения: `none`, `pending`, `issued`, `failed`, `revoked`.|
 |цертификатеревокестатусластчанжедатетиме|DateTimeOffset|Время последнего изменения состояния отзыва|
-|манажеддевицедисплайнаме|Строка|Отображаемое имя устройства|
+|манажеддевицедисплайнаме|String|Отображаемое имя устройства|
 |userPrincipalName|String|Имя субъекта-пользователя|
 |цертификатикспиратиондатетиме|DateTimeOffset|Дата окончания срока действия сертификата|
-|цертификатеиссуернаме|Строка|Издатель|
-|certificateThumbprint|Строка|Thumbprint|
-|цертификатесериалнумбер|Строка|Серийный номер|
-|цертификатесубжектнаме|Строка|Имя субъекта сертификата|
+|цертификатеиссуернаме|String|Издатель|
+|certificateThumbprint|String|Thumbprint|
+|цертификатесериалнумбер|String|Серийный номер|
+|цертификатесубжектнаме|String|Имя субъекта сертификата|
 |цертификатекэйусажес|Int32|Использование ключа|
-|цертификатикстендедкэйусажес|Строка|Расширенное использование ключа|
+|цертификатикстендедкэйусажес|String|Расширенное использование ключа|
 |цертификатеиссуанцедатетиме|DateTimeOffset|Дата выпуска|
 
 ## <a name="relationships"></a>Связи
@@ -77,7 +77,6 @@ ms.locfileid: "48710043"
   "certificateIssuanceDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d50cc84d84fd4e49672e0460846ad2991db5f761
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: dbfd3a3ed0166771b8c7dd77043b212fb36f4be8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698479"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49285158"
 ---
 # <a name="create-pfxusercertificate"></a>Создание Пфксусерцертификате
 
@@ -46,7 +46,7 @@ POST /pfxUserCertificates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Пфксусерцертификате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Пфксусерцертификате.
@@ -135,7 +135,6 @@ Content-Length: 789
   "eTag": "ETag value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b1452d4b9e1ff5181fb3052388e98b96fef766cb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 54b1865a26e14aa8a680e2c306ea30431db5b047
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702560"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49280216"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>тип перечисления Иоснотификатионалерттипе
 
@@ -28,8 +28,7 @@ ms.locfileid: "48702560"
 |девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
 |заголовок|1,1|Заголовок.|
 |модаль|2|Модаль.|
-|none|4|Нет.|
-
+|Нет|4|Нет.|
 
 
 

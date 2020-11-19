@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: eecf535d4002da15edbcb687bcb3f43692d28376
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2a408fb7d8471ab8215d357d5736234d50c8a9a0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728993"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49283387"
 ---
 # <a name="devicetypes-enum-type"></a>тип перечисления Девицетипес
 
@@ -36,7 +36,7 @@ ms.locfileid: "48728993"
 |iPhone|8 |iPhone.|
 |iPad|9 |iPad.|
 |iPod|10 |Иподтауч.|
-|ОС|-11:00|ОС.|
+|ОС|11 |ОС.|
 |исокконсумер|12 |Исокконсумер.|
 |формате|13 |Формате.|
 |макмдм|14 |Клиент Mac OS X, использующий встроенный агент MDM.|
@@ -47,7 +47,6 @@ ms.locfileid: "48728993"
 |BlackBerry|100|BlackBerry.|
 |Положите|101|Положите.|
 |unknown|255|Указывает, что тип устройства неизвестен.|
-
 
 
 

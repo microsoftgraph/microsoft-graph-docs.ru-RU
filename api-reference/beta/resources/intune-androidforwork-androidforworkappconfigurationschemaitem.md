@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 387a55005ea5652d07bea5a2e23b78848b8181a6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 20791638e0a1e1e7c4c60c0f28d80afdebcfaab7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736326"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49282141"
 ---
 # <a name="androidforworkappconfigurationschemaitem-resource-type"></a>Тип ресурса androidForWorkAppConfigurationSchemaItem
 
@@ -26,8 +26,8 @@ ms.locfileid: "48736326"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |schemaItemKey|String|Уникальный ключ, используемый приложением для определения элемента.|
-|displayName|Строка|Понятное человеку имя.|
-|description|Строка|Описание компонентов приложения, которыми управляет элемент.|
+|displayName|String|Понятное человеку имя.|
+|description|String|Описание компонентов приложения, которыми управляет элемент.|
 |defaultBoolValue|Boolean|Значение по умолчанию для элементов логического типа, если указано разработчиком приложения.|
 |defaultIntValue|Int32|Значение по умолчанию для элементов целочисленного типа, если указано разработчиком приложения.|
 |defaultStringValue|String|Значение по умолчанию для элементов строкового типа, если указано разработчиком приложения.|
@@ -67,7 +67,6 @@ ms.locfileid: "48736326"
   ]
 }
 ```
-
 
 
 

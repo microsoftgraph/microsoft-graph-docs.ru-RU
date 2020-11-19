@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 619eabdefce53d8a0aaef654dce5c755c5c16914
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7d4c93871adf17dbe698ac030c2189b08d978bae
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705780"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49280419"
 ---
 # <a name="ioshomescreenitem-resource-type"></a>Тип ресурса iosHomeScreenItem
 
@@ -25,7 +25,7 @@ ms.locfileid: "48705780"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя приложения|
+|displayName|String|Имя приложения|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -43,7 +43,6 @@ ms.locfileid: "48705780"
   "displayName": "String"
 }
 ```
-
 
 
 

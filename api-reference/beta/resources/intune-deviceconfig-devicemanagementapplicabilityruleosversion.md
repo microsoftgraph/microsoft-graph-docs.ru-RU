@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: cdd0e5c7a700932af5c5ffa4dd568c252dcf9848
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 99476ad2b42caf10d64f26ccd5725655ae8cac34
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724581"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49283471"
 ---
 # <a name="devicemanagementapplicabilityruleosversion-resource-type"></a>Тип ресурса Девицеманажементаппликабилитирулеосверсион
 
@@ -25,8 +25,8 @@ ms.locfileid: "48724581"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|миносверсион|Строка|Минимальная версия ОС для правила применимости.|
-|максосверсион|Строка|Максимальная версия ОС для правила применимости.|
+|миносверсион|String|Минимальная версия ОС для правила применимости.|
+|максосверсион|String|Максимальная версия ОС для правила применимости.|
 |name|String|Имя объекта.|
 |ruleType|[deviceManagementApplicabilityRuleType](../resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md)|Тип правила применимости. Возможные значения: `include`, `exclude`.|
 
@@ -49,7 +49,6 @@ ms.locfileid: "48724581"
   "ruleType": "String"
 }
 ```
-
 
 
 

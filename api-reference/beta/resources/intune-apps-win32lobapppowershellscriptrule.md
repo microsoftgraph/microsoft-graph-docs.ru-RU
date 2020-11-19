@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c392d43f6e9836118f1d32320c5e63498226fed9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9f5d0ef733939afe0e18bbfe09db009c7631fa5f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48712066"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49284584"
 ---
 # <a name="win32lobapppowershellscriptrule-resource-type"></a>Тип ресурса win32LobAppPowerShellScriptRule
 
@@ -29,14 +29,14 @@ ms.locfileid: "48712066"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|Тип правила, указывающий назначение правила. Наследуется от [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Возможные значения: `detection`, `requirement`.|
-|displayName|Строка|Отображаемое имя правила. Не указывайте это значение, если правило используется для обнаружения.|
-|Свойства enforcesignaturecheck|Логический|Значение, указывающее, применяется ли проверка подписи.|
-|runAs32Bit|Логический|Значение, указывающее, должен ли скрипт выполняться как 32 бит.|
+|displayName|String|Отображаемое имя правила. Не указывайте это значение, если правило используется для обнаружения.|
+|Свойства enforcesignaturecheck|Boolean|Значение, указывающее, применяется ли проверка подписи.|
+|runAs32Bit|Boolean|Значение, указывающее, должен ли скрипт выполняться как 32 бит.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Контекст выполнения скрипта. Не указывайте это значение, если правило используется для обнаружения. Правила определения скрипта будут выполняться в том же контексте, что и связанный контекст установки приложения. Возможные значения: `system`, `user`.|
-|скриптконтент|Строка|Содержимое скрипта в кодировке Base64.|
+|скриптконтент|String|Содержимое скрипта в кодировке Base64.|
 |оператионтипе|[win32LobAppPowerShellScriptRuleOperationType](../resources/intune-apps-win32lobapppowershellscriptruleoperationtype.md)|Тип операции сравнения выходных данных скрипта. Используйте NotConfigured (значение по умолчанию), если правило используется для обнаружения. Возможные значения: `notConfigured`, `string`, `dateTime`, `integer`, `float`, `version`, `boolean`.|
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|Оператор вывода скрипта. Используйте NotConfigured (значение по умолчанию), если правило используется для обнаружения. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|компарисонвалуе|Строка|Значение для сравнения вывода скрипта. Не указывайте значение, если правило используется для обнаружения.|
+|компарисонвалуе|String|Значение для сравнения вывода скрипта. Не указывайте значение, если правило используется для обнаружения.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -62,7 +62,6 @@ ms.locfileid: "48712066"
   "comparisonValue": "String"
 }
 ```
-
 
 
 

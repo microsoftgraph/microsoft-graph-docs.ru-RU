@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4ed392bd1e1f1b56c626e6a2470f56fec0d9ca80
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b1eeaf3e42003f46ede657fd836dea88725a73c3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706109"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49284556"
 ---
 # <a name="win32lobappruletype-enum-type"></a>тип перечисления win32LobAppRuleType
 
@@ -27,7 +27,6 @@ ms.locfileid: "48706109"
 |:---|:---|:---|
 |проверку|нуль|Правило обнаружения.|
 |обязательно|1,1|Правило требования.|
-
 
 
 

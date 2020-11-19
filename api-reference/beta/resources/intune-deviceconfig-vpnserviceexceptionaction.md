@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 079342d93ea96add59885079b4c6448145dbbe37
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 069b7dc910a7c4ce9e281235aefc52b498519351
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736228"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49279439"
 ---
 # <a name="vpnserviceexceptionaction-enum-type"></a>тип перечисления Впнсервицеексцептионактион
 
@@ -28,7 +28,6 @@ ms.locfileid: "48736228"
 |форцетраффиквиавпн|нуль|Весь трафик, поступающий от этой службы, будет проходить через VPN-подключение.|
 |алловтраффикаутсиде|1,1|Разрешить службу вне сети VPN|
 |дроптраффик|2|Удаление всего трафика из службы|
-
 
 
 

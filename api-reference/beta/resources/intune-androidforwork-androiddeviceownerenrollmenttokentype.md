@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 4d0ae6e7082cca522aa28586e0d354733b10a3fc
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 57110ee4e84adeb6131c63870824a64ed7486e23
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736347"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49282267"
 ---
 # <a name="androiddeviceownerenrollmenttokentype-enum-type"></a>тип перечисления Андроиддевицеовнеренроллменттокентипе
 
@@ -25,9 +25,8 @@ ms.locfileid: "48736347"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|умолчани|нуль|Тип токена по умолчанию.|
+|Значение  по умолчанию|нуль|Тип токена по умолчанию.|
 |корпоратеовнеддедикатеддевицевисазуреадшаредмоде|1,1|Тип маркера для регистрации выделенных устройств в Azure AD. Он применяется только к режиму регистрации Корпоратеовнеддедикатеддевице.|
-
 
 
 
