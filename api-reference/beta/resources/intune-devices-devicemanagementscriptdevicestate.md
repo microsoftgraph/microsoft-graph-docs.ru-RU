@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0c71cde4259a0b86441cb502dd3e3957985ca3fd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cf6fc1ea35ece8b510cbadde869b605389b04587
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685403"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49230963"
 ---
 # <a name="devicemanagementscriptdevicestate-resource-type"></a>Тип ресурса Девицеманажементскриптдевицестате
 
@@ -34,9 +34,9 @@ ms.locfileid: "48685403"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта состояния устройства сценария управления устройствами. Это свойство доступно только для чтения.|
+|id|String|Ключ объекта состояния устройства сценария управления устройствами. Это свойство доступно только для чтения.|
 |рунстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние последнего запуска скрипта управления устройствами. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
-|ресултмессаже|Строка|Сведения о выходных данных выполнения.|
+|ресултмессаже|String|Сведения о выходных данных выполнения.|
 |ластстатеупдатедатетиме|DateTimeOffset|Последнее время выполнения скрипта управления устройствами.|
 |errorCode|Int32|Код ошибки, соответствующий ошибочному выполнению сценария управления устройствами.|
 |errorDescription|String|Описание ошибки, соответствующее ошибочному выполнению сценария управления устройствами.|
@@ -65,7 +65,6 @@ ms.locfileid: "48685403"
   "errorDescription": "String"
 }
 ```
-
 
 
 

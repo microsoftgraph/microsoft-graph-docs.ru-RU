@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0ce5fc93bfd48d4beaccac1552573c228f1e6f09
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: fb41df389eea60d3bebc07e6ce62da3c4a3924b3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725444"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49230886"
 ---
 # <a name="managementstate-enum-type"></a>тип перечисления Манажементстате
 
@@ -36,8 +36,7 @@ ms.locfileid: "48725444"
 |випеиссуед|8 |Для устройства была выдана команда очистки.|
 |випеканцелед|9 |Команда стирания для этого устройства отменена|
 |ретиреканцелед|10 |Команда снятия с учета для этого устройства отменена|
-|были|-11:00|Устройство обнаружено, но не зарегистрировано полностью.|
-
+|были|11 |Устройство обнаружено, но не зарегистрировано полностью.|
 
 
 

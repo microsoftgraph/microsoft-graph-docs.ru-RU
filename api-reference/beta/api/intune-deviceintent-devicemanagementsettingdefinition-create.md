@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d97dcaa2518d8f2121315ef9ebfff22610460543
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 571d56690a6651161a8d1f38c955951f448017c6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698745"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49229614"
 ---
 # <a name="create-devicemanagementsettingdefinition"></a>Создание Девицеманажементсеттингдефинитион
 
@@ -29,7 +29,7 @@ ms.locfileid: "48698745"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,29 +49,29 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/categories/{device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицеманажементсеттингдефинитион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементсеттингдефинитион.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор определения параметра|
+|id|String|Идентификатор определения параметра|
 |Типом|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|Тип данных значения. Возможные значения: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
-|displayName|Строка|Отображаемое имя параметра|
-|истоплевел|Логический|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
-|description|Строка|Описание параметра|
-|плацехолдертекст|Строка|Замещающий текст в качестве примера допустимых входных данных|
-|документатионурл|Строка|URL-адрес для установки документации|
-|хеадертитле|Строка|Заголовок параметра "заголовок" представляет категорию или раздел параметров или параметров|
-|хеадерсубтитле|Строка|Подзаголовок заголовка параметра для дополнительных сведений о категории или разделе|
+|displayName|String|Отображаемое имя параметра|
+|истоплевел|Boolean|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр.|
+|description|String|Описание параметра|
+|плацехолдертекст|String|Замещающий текст в качестве примера допустимых входных данных|
+|документатионурл|String|URL-адрес для установки документации|
+|хеадертитле|String|Заголовок параметра "заголовок" представляет категорию или раздел параметров или параметров|
+|хеадерсубтитле|String|Подзаголовок заголовка параметра для дополнительных сведений о категории или разделе|
 |keywords|Коллекция строк|Ключевые слова, связанные с параметром|
 |провероч|Коллекция [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)|Коллекция ограничений для значения параметра|
 |зависящ|Коллекция [девицеманажементсеттингдепенденци](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Коллекция зависимостей для других параметров|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -166,7 +166,6 @@ Content-Length: 1063
   ]
 }
 ```
-
 
 
 

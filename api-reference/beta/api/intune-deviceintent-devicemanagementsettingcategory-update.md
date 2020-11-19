@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 84e645cdd3625db9d5a172061cd5d1d6b1d7fa9f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9b3889af273c6a0c80a7437994c660bcbb9b0ce1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691738"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49229627"
 ---
 # <a name="update-devicemanagementsettingcategory"></a>Обновление Девицеманажементсеттингкатегори
 
@@ -29,7 +29,7 @@ ms.locfileid: "48691738"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,20 +46,20 @@ PATCH /deviceManagement/categories/{deviceManagementSettingCategoryId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор категории|
-|displayName|Строка|Имя категории|
-|хасрекуиредсеттинг|Логический|Категория содержит параметры, необходимые для верхнего уровня|
+|id|String|Идентификатор категории|
+|displayName|String|Имя категории|
+|хасрекуиредсеттинг|Boolean|Категория содержит параметры, необходимые для верхнего уровня|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -92,7 +92,6 @@ Content-Length: 193
   "hasRequiredSetting": true
 }
 ```
-
 
 
 

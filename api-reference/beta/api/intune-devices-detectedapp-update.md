@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b27298c5c82f7cfe8a40fee2c7e0f7ceaf80a545
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: dea65cd1bb6bbbeb6c6af7c770b356863c11ad94
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734135"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49229193"
 ---
 # <a name="update-detectedapp"></a>Обновление объекта detectedApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "48734135"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,15 +47,15 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [detectedApp](../resources/intune-devices-detectedapp.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [detectedApp](../resources/intune-devices-detectedapp.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для обнаруженного приложения. Он создается Intune автоматически при создании приложения. Только для чтения.|
-|displayName|Строка|Имя обнаруженного приложения. Только для чтения|
+|id|String|Уникальный идентификатор для обнаруженного приложения. Он создается Intune автоматически при создании приложения. Только для чтения.|
+|displayName|String|Имя обнаруженного приложения. Только для чтения|
 |version|String|Версия обнаруженного приложения. Только для чтения|
 |sizeInByte|Int64|Размер обнаруженного приложения в байтах. Только для чтения|
 |deviceCount|Int32|Количество устройств, на которых успешно установлено это приложение.|
@@ -99,7 +99,6 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
-
 
 
 

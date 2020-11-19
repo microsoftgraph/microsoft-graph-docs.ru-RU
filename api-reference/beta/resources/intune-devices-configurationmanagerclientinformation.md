@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8b99db60922a93353cd1cc2cb6b85ff6b1241efe
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 769f6a5172b7a84e9e75a2d7a8f701e195135823
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690240"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49231026"
 ---
 # <a name="configurationmanagerclientinformation-resource-type"></a>Тип ресурса Конфигуратионманажерклиентинформатион
 
@@ -25,8 +25,8 @@ ms.locfileid: "48690240"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|клиентидентифиер|Строка|Идентификатор клиента Configuration Manager из SCCM|
-|Блокировка|Логический|Состояние блокировки клиента Configuration Manager из SCCM|
+|клиентидентифиер|String|Идентификатор клиента Configuration Manager из SCCM|
+|Блокировка|Boolean|Состояние блокировки клиента Configuration Manager из SCCM|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -45,7 +45,6 @@ ms.locfileid: "48690240"
   "isBlocked": true
 }
 ```
-
 
 
 

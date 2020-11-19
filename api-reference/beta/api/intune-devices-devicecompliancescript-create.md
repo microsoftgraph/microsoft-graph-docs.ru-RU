@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9d73441f0925e183185babac04869541c11316c2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 972623447f6ff60efa050204cdbdc2a8c314269a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732939"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49229200"
 ---
 # <a name="create-devicecompliancescript"></a>Создание Девицекомплианцескрипт
 
@@ -29,7 +29,7 @@ ms.locfileid: "48732939"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,29 +46,29 @@ POST /deviceManagement/deviceComplianceScripts
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицекомплианцескрипт в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицекомплианцескрипт.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для сценария соответствия требованиям устройства|
+|id|String|Уникальный идентификатор для сценария соответствия требованиям устройства|
 |publisher|String|Имя издателя сценариев соответствия требованиям устройства|
 |version|String|Версия сценария соответствия требованиям устройства|
-|displayName|Строка|Имя сценария соответствия требованиям устройства|
-|description|Строка|Описание сценария соответствия требованиям устройства|
+|displayName|String|Имя сценария соответствия требованиям устройства|
+|description|String|Описание сценария соответствия требованиям устройства|
 |детектионскриптконтент|Binary|Весь контент скрипта обнаружения PowerShell|
 |createdDateTime|DateTimeOffset|Метка времени создания сценария соответствия устройства требованиям. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Метка времени изменения сценария соответствия требованиям устройства. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Логический|Указывает, нужно ли проверять подпись скрипта|
-|runAs32Bit|Логический|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
+|Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта|
+|runAs32Bit|Boolean|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для сценария соответствия требованиям устройств|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицекомплианцескрипт](../resources/intune-devices-devicecompliancescript.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -121,7 +121,6 @@ Content-Length: 592
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6f0d1fb60610425356f543d884e311d041a441cb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b102c96cd33063597d140d4a4948eceb555f9770
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725423"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49230872"
 ---
 # <a name="remoteaction-enum-type"></a>тип перечисления Ремотеактион
 
@@ -36,7 +36,7 @@ ms.locfileid: "48725423"
 |rebootNow|8 |Пользователь инициирует действие для перезагрузки устройства Windows.|
 |recoverPasscode|9 |Пользователь инициирует действие сброса ПИН-кода для службы Passport for work для работы на устройстве с Windows Phone.|
 |cleanWindowsDevice|10 |Пользователь инициирует действие для очистки устройства Windows.|
-|logoutSharedAppleDeviceActiveUser|-11:00|Пользователь инициирует действие для выхода текущего пользователя на общем устройстве Apple.|
+|logoutSharedAppleDeviceActiveUser|11 |Пользователь инициирует действие для выхода текущего пользователя на общем устройстве Apple.|
 |quickScan|12 |Пользователь инициирует действие для запуска быстрой проверки на устройстве.|
 |fullScan|13 |Пользователь инициирует действие для полного сканирования на устройстве.|
 |windowsDefenderUpdateSignatures|14 |Пользователь инициирует действие для обновления сигнатур вредоносных программ на устройстве.|
@@ -48,7 +48,6 @@ ms.locfileid: "48725423"
 |ротатефилеваулткэй|двадцать|Пользователь инициирует действие по повороту Филеваулткэй на Mac.|
 |жетфилеваулткэй|21|Пользователь инициирует действие для получения Филеваулткэй в Mac.|
 |сетдевиценаме|22|Пользователь инициирует действие для задания имени устройства на устройстве.|
-
 
 
 

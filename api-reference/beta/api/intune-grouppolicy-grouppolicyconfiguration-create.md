@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: faa91b75d086c8c6371b43e59e80700a3db74386
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: be1978efb5b318e85484bb1e6fe5b1a5f4f82118
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685627"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49227983"
 ---
 # <a name="create-grouppolicyconfiguration"></a>Создание Граупполициконфигуратион
 
@@ -29,7 +29,7 @@ ms.locfileid: "48685627"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ POST /deviceManagement/groupPolicyConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Граупполициконфигуратион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Граупполициконфигуратион.
@@ -54,15 +54,15 @@ POST /deviceManagement/groupPolicyConfigurations
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|displayName|Строка|Предоставленное пользователем имя объекта ресурса.|
-|description|Строка|Предоставленное пользователем описание объекта ресурса.|
+|displayName|String|Предоставленное пользователем имя объекта ресурса.|
+|description|String|Предоставленное пользователем описание объекта ресурса.|
 |roleScopeTagIds|Коллекция строк|Список тегов области для конфигурации.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -103,7 +103,6 @@ Content-Length: 379
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

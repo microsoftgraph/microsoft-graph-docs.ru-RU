@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 81e63e8c293f344f573e0f5a2fdbf6212c0b8bea
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7862605715e8ad1f6ef1ddf12413a9fb53111180
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728197"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49230991"
 ---
 # <a name="devicehealthscriptassignment-resource-type"></a>Тип ресурса Девицехеалсскриптассигнмент
 
@@ -34,9 +34,10 @@ ms.locfileid: "48728197"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта назначения сценария работоспособности устройства. Это свойство доступно только для чтения.|
+|id|String|Ключ объекта назначения сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Группа Azure Active Directory, на которую мы нацелены на скрипт|
-|рунремедиатионскрипт|Логический|Определите, нужно ли выполнять сценарий обнаружения или сценарий обнаружения и устранения неполадок.|
+|рунремедиатионскрипт|Boolean|Определите, нужно ли выполнять сценарий обнаружения или сценарий обнаружения и устранения неполадок.|
+|runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|Расписание запуска сценария для целевой группы|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -58,10 +59,15 @@ ms.locfileid: "48728197"
     "deviceAndAppManagementAssignmentFilterId": "String",
     "deviceAndAppManagementAssignmentFilterType": "String"
   },
-  "runRemediationScript": true
+  "runRemediationScript": true,
+  "runSchedule": {
+    "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
+    "interval": 1024,
+    "useUtc": true,
+    "time": "String (time of day)"
+  }
 }
 ```
-
 
 
 

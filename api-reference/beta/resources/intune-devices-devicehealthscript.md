@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0392140755fb8e57bee27fef113b10bc6ae94b28
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 35d8d5766aa242e7d3857ceb1b7888e18d791895
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728204"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49230998"
 ---
 # <a name="devicehealthscript-resource-type"></a>Тип ресурса Девицехеалсскрипт
 
@@ -31,8 +31,8 @@ Intune предоставит клиенту возможность выполн
 |[Удаление Девицехеалсскрипт](../api/intune-devices-devicehealthscript-delete.md)|Нет|Удаляет объект [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md).|
 |[Обновление Девицехеалсскрипт](../api/intune-devices-devicehealthscript-update.md)|[deviceHealthScript](../resources/intune-devices-devicehealthscript.md)|Обновление свойств объекта [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) .|
 |[Действие assign](../api/intune-devices-devicehealthscript-assign.md)|Нет|Н/Д|
-|[действие Упдатеглобалскрипт](../api/intune-devices-devicehealthscript-updateglobalscript.md)|Строка|Обновление сценария работоспособности собственного устройства|
-|[действие Жетглобалскрипсигхеставаилаблеверсион](../api/intune-devices-devicehealthscript-getglobalscripthighestavailableversion.md)|Строка|Обновление сценария работоспособности собственного устройства|
+|[действие Упдатеглобалскрипт](../api/intune-devices-devicehealthscript-updateglobalscript.md)|String|Обновление сценария работоспособности собственного устройства|
+|[действие Жетглобалскрипсигхеставаилаблеверсион](../api/intune-devices-devicehealthscript-getglobalscripthighestavailableversion.md)|String|Обновление сценария работоспособности собственного устройства|
 |[действие Енаблеглобалскриптс](../api/intune-devices-devicehealthscript-enableglobalscripts.md)|Нет|Н/Д|
 |[Функция Ареглобалскриптсаваилабле](../api/intune-devices-devicehealthscript-areglobalscriptsavailable.md)|[globalDeviceHealthScriptState](../resources/intune-devices-globaldevicehealthscriptstate.md)|Пока не задокументировано.|
 |[Функция Жетремедиатионсуммари](../api/intune-devices-devicehealthscript-getremediationsummary.md)|[deviceHealthScriptRemediationSummary](../resources/intune-devices-devicehealthscriptremediationsummary.md)|Пока не задокументировано.|
@@ -41,21 +41,21 @@ Intune предоставит клиенту возможность выполн
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сценария работоспособности устройства|
+|id|String|Уникальный идентификатор сценария работоспособности устройства|
 |publisher|String|Имя издателя сценария работоспособности устройства|
 |version|String|Версия сценария работоспособности устройства|
-|displayName|Строка|Имя сценария работоспособности устройства|
-|description|Строка|Описание сценария работоспособности устройства|
+|displayName|String|Имя сценария работоспособности устройства|
+|description|String|Описание сценария работоспособности устройства|
 |детектионскриптконтент|Binary|Весь контент скрипта обнаружения PowerShell|
 |ремедиатионскриптконтент|Binary|Все содержимое скрипта PowerShell об исправлении|
 |createdDateTime|DateTimeOffset|Метка времени создания сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Метка времени изменения сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Логический|Указывает, нужно ли проверять подпись скрипта|
-|runAs32Bit|Логический|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
+|Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта|
+|runAs32Bit|Boolean|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для сценария работоспособности устройства|
-|исглобалскрипт|Логический|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
-|хигхеставаилаблеверсион|Строка|Самая высокая доступная версия для собственного сценария Майкрософт|
+|исглобалскрипт|Boolean|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
+|хигхеставаилаблеверсион|String|Самая высокая доступная версия для собственного сценария Майкрософт|
 |детектионскриптпараметерс|Коллекция [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов Детектионскриптпараметерс в ComplexType.|
 |ремедиатионскриптпараметерс|Коллекция [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов Ремедиатионскриптпараметерс в ComplexType.|
 
@@ -116,7 +116,6 @@ Intune предоставит клиенту возможность выполн
   ]
 }
 ```
-
 
 
 

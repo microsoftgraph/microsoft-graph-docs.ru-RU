@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c44cada3024c3d1ec5818fc21d0301951cd581ab
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0156d4b84d4e4b2f5b0e144414c79a7ec0bbe884
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724201"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49227919"
 ---
 # <a name="update-grouppolicyconfiguration"></a>Обновление Граупполициконфигуратион
 
@@ -29,7 +29,7 @@ ms.locfileid: "48724201"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md).
@@ -54,15 +54,15 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|displayName|Строка|Предоставленное пользователем имя объекта ресурса.|
-|description|Строка|Предоставленное пользователем описание объекта ресурса.|
+|displayName|String|Предоставленное пользователем имя объекта ресурса.|
+|description|String|Предоставленное пользователем описание объекта ресурса.|
 |roleScopeTagIds|Коллекция строк|Список тегов области для конфигурации.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -103,7 +103,6 @@ Content-Length: 379
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

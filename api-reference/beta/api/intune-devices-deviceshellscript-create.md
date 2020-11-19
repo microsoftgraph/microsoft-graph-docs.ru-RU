@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: de9897b24fdea84f659e5c743dc669dd7b823d20
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: de06b3bb33def4f9278dcc247169d167dcbc2edd
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735514"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49228640"
 ---
 # <a name="create-deviceshellscript"></a>Создание Девицешеллскрипт
 
@@ -29,7 +29,7 @@ ms.locfileid: "48735514"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ POST /deviceManagement/deviceShellScripts
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицешеллскрипт в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицешеллскрипт.
@@ -55,10 +55,10 @@ POST /deviceManagement/deviceShellScripts
 |:---|:---|:---|
 |ексекутионфрекуенци|Длительность|Интервал для запуска скрипта. Если не определен, сценарий будет выполняться один раз|
 |ретрикаунт|Int32|Количество повторных попыток выполнения скрипта в случае сбоя|
-|блоккексекутионнотификатионс|Логический|Не уведомляет пользователя о выполнении сценария|
-|id|Строка|Уникальный идентификатор для сценария управления устройствами.|
-|displayName|Строка|Имя скрипта управления устройствами.|
-|description|Строка|Необязательное описание скрипта управления устройствами.|
+|блоккексекутионнотификатионс|Boolean|Не уведомляет пользователя о выполнении сценария|
+|id|String|Уникальный идентификатор для сценария управления устройствами.|
+|displayName|String|Имя скрипта управления устройствами.|
+|description|String|Необязательное описание скрипта управления устройствами.|
 |скриптконтент|Binary|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами. Это свойство доступно только для чтения.|
@@ -68,7 +68,7 @@ POST /deviceManagement/deviceShellScripts
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицешеллскрипт](../resources/intune-devices-deviceshellscript.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -121,7 +121,6 @@ Content-Length: 581
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c2bce7d7de77f5fabcb1f56747114ab58cf8ed55
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0ff9ae6493fb61bc29180d62ffcb36760c128c31
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48689568"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49228808"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>Обновление Девицеманажементскриптрунсуммари
 
@@ -29,7 +29,7 @@ ms.locfileid: "48689568"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -48,14 +48,14 @@ PATCH /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttribute
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицеманажементскриптрунсуммари](../resources/intune-devices-devicemanagementscriptrunsummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементскриптрунсуммари](../resources/intune-devices-devicemanagementscriptrunsummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Key объекта сводки запуска сценария управления устройствами. Это свойство доступно только для чтения.|
+|id|String|Key объекта сводки запуска сценария управления устройствами. Это свойство доступно только для чтения.|
 |сукцессдевицекаунт|Int32|Число устройств для успешной попытки.|
 |errorDeviceCount|Int32|Количество устройств с ошибками.|
 |сукцессусеркаунт|Int32|Число пользователей Success.|
@@ -63,7 +63,7 @@ PATCH /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttribute
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементскриптрунсуммари](../resources/intune-devices-devicemanagementscriptrunsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -100,7 +100,6 @@ Content-Length: 228
   "errorUserCount": 14
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b02c9704ba118c19290f557913d6fd44f4ac0b04
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ef0ed2763d7b1721bb87e883fa981f04956f07ec
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734499"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49229746"
 ---
 # <a name="update-devicemanagementintent"></a>Обновление Девицеманажементинтент
 
@@ -29,7 +29,7 @@ ms.locfileid: "48734499"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,24 +46,24 @@ PATCH /deviceManagement/intents/{deviceManagementIntentId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор намерения|
-|displayName|Строка|Имя пользователя для данного отображаемого имени|
-|description|Строка|Описание, заданное пользователем|
+|id|String|Идентификатор намерения|
+|displayName|String|Имя пользователя для данного отображаемого имени|
+|description|String|Описание, заданное пользователем|
 |isAssigned|Boolean|Указывает, назначена ли пользователю задача|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения намерения|
-|templateId|Строка|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
+|templateId|String|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -107,7 +107,6 @@ Content-Length: 379
   ]
 }
 ```
-
 
 
 

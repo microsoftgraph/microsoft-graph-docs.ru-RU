@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e433f05f64b5290c5697e80bcf0cfbbb87d92075
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e98f70a5c65435feda1bf8bd88ba294905b07526
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694566"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49228388"
 ---
 # <a name="update-userexperienceanalyticsapphealthapplicationperformance"></a>Обновление Усерекспериенцеаналитиксапфеалсаппликатионперформанце
 
@@ -29,7 +29,7 @@ ms.locfileid: "48694566"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,29 +46,29 @@ PATCH /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformance/{
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [усерекспериенцеаналитиксапфеалсаппликатионперформанце](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитиксапфеалсаппликатионперформанце](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта производительности приложения аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор объекта производительности приложения аналитики взаимодействия с пользователем.|
 |апфангкаунт|Int32|Число зависаний для приложения. Допустимые значения: от 2147483648 до 2147483647|
 |апфеалсскоре|Двойное с плавающей точкой|Оценка работоспособности приложения. Допустимые значения — 1 79769313486232e308 E + 308 — 1 79769313486232e308 E + 308|
-|апфеалсстатус|Строка|Общее состояние работоспособности приложения.|
+|апфеалсстатус|String|Общее состояние работоспособности приложения.|
 |аллоргшеалсскоре|Двойное с плавающей точкой|Медианный показатель работоспособности приложения во всех организациях. Допустимые значения — 1 79769313486232e308 E + 308 — 1 79769313486232e308 E + 308|
 |активедевицекаунт|Int32|Количество устройств, в которых приложение было активно. Допустимые значения: от 2147483648 до 2147483647|
 |appName|String|Имя приложения.|
 |appDisplayName|String|Понятное имя приложения.|
-|апппублишер|Строка|Издатель приложения.|
+|апппублишер|String|Издатель приложения.|
 |аппусажедуратион|Int32|Общее время использования приложения в минутах. Допустимые значения: от 2147483648 до 2147483647|
 |аппкрашкаунт|Int32|Число сбоев для приложения. Допустимые значения: от 2147483648 до 2147483647|
 |меантиметофаилуреинминутес|Int32|Среднее время до сбоя приложения в минутах. Допустимые значения: от 2147483648 до 2147483647|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерекспериенцеаналитиксапфеалсаппликатионперформанце](../resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -119,7 +119,6 @@ Content-Length: 522
   "meanTimeToFailureInMinutes": 10
 }
 ```
-
 
 
 

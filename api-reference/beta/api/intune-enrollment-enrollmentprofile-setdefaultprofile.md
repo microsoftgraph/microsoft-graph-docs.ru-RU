@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ffa11cad91363202995bfe96bbfca45917d8f12f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8e87c50734b19210d01e4841e8c63f8fb2a76877
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702000"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49228276"
 ---
 # <a name="setdefaultprofile-action"></a>Действие setDefaultProfile
 
@@ -29,7 +29,7 @@ ms.locfileid: "48702000"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,10 +46,10 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{de
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
