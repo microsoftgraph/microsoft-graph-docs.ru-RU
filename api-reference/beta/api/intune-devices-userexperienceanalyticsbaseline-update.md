@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: bca91732723db2330b5bc352642130b8de03b930
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ce15b628d65d931d3dae4e952c3c83e5eb5dfa3b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730073"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310246"
 ---
 # <a name="update-userexperienceanalyticsbaseline"></a>Обновление Усерекспериенцеаналитиксбаселине
 
@@ -46,22 +46,22 @@ PATCH /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [усерекспериенцеаналитиксбаселине](../resources/intune-devices-userexperienceanalyticsbaseline.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитиксбаселине](../resources/intune-devices-userexperienceanalyticsbaseline.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор базового идентификатора аналитики взаимодействия с пользователем.|
-|displayName|Строка|Имя базового объекта аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор базового идентификатора аналитики взаимодействия с пользователем.|
+|displayName|String|Имя базового объекта аналитики взаимодействия с пользователем.|
 |овераллскоре|Int32|Общий показатель базового уровня для аналитики взаимодействия с пользователем.|
 |isBuiltIn|Boolean|Указывает, является ли текущий базовый планом коммерческого медианы или настраиваемым базовым планом.|
 |createdDateTime|DateTimeOffset|Дата создания настраиваемого базового плана.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерекспериенцеаналитиксбаселине](../resources/intune-devices-userexperienceanalyticsbaseline.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -97,7 +97,6 @@ Content-Length: 266
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00"
 }
 ```
-
 
 
 
