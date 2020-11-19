@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 887baa65e6b00130035d1c462c67754fa8fb466a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cb438cde5bd5549380cbae7881b45351c7ca1b87
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697359"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49259748"
 ---
 # <a name="grouppolicydefinitionvalue-resource-type"></a>Тип ресурса Граупполицидефинитионвалуе
 
@@ -37,7 +37,7 @@ ms.locfileid: "48697359"
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |enabled|Boolean|Включает или отключает соответствующее определение групповой политики.|
 |конфигуратионтипе|[граупполициконфигуратионтипе](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|Указывает, как должно настраиваться значение. Это может быть либо политика, либо предпочтение. Возможные значения: `policy`, `preference`.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 ## <a name="relationships"></a>Связи
@@ -64,7 +64,6 @@ ms.locfileid: "48697359"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

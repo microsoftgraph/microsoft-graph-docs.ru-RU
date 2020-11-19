@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 907984f166a014026a83d6565ab82df3698bda2d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 978dce2497086fe4d13ed18d4aa966f5775ed405
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692655"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49261421"
 ---
 # <a name="update-windowsinformationprotectionapplearningsummary"></a>Обновление объекта windowsInformationProtectionAppLearningSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "48692655"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,14 +46,14 @@ PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{window
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса укажите представление объекта [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта WindowsInformationProtectionAppLearningSummary.|
+|id|String|Уникальный идентификатор объекта WindowsInformationProtectionAppLearningSummary.|
 |applicationName|String|Имя приложения|
 |applicationType|[аппликатионтипе](../resources/intune-wip-applicationtype.md)|Тип приложения. Возможные значения: `universal`, `desktop`.|
 |deviceCount|Int32|Количество устройств|
@@ -95,7 +95,6 @@ Content-Length: 240
   "deviceCount": 11
 }
 ```
-
 
 
 

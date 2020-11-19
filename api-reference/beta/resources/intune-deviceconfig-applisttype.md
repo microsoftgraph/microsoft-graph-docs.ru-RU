@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 79bf27c55b1bb237cac8c537473e8ffd98edca7a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7cd3e1f8cffa747ca23e00ba0d9264cb1089dee2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708825"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49260819"
 ---
 # <a name="applisttype-enum-type"></a>тип перечисления Апплисттипе
 
@@ -25,10 +25,9 @@ ms.locfileid: "48708825"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Значение по умолчанию без намерения.|
+|Нет|нуль|Значение по умолчанию без намерения.|
 |аппсинлисткомплиант|1,1|Список представляет приложения, которые будут считаться совместимыми (только приложения в списке соответствуют требованиям).|
 |аппснотинлисткомплиант|2|Список представляет приложения, которые будут считаться несовместимыми (все приложения являются совместимыми, кроме приложений в списке).|
-
 
 
 

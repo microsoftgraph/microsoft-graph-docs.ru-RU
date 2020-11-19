@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a417d655970147f7d6352c6d0c9624888a5da583
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 62c4b0684f7e72b2dbba6ed840e7b5d8785d0dc9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48719745"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49261113"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>Тип ресурса Мобилеаппрелатионшипстате
 
@@ -26,8 +26,8 @@ ms.locfileid: "48719745"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |саурцеидс|Коллекция строк|Коллекция идентификаторов исходного приложения для мобильных устройств.|
-|targetId|Строка|Идентификатор связанного конечного приложения.|
-|таржетдисплайнаме|Строка|Отображаемое имя связанного конечного приложения.|
+|targetId|String|Идентификатор связанного конечного приложения.|
+|таржетдисплайнаме|String|Отображаемое имя связанного конечного приложения.|
 |deviceId|String|Соответствующий идентификатор устройства.|
 |installState|[ресултантаппстате](../resources/intune-shared-resultantappstate.md)|Состояние установки приложения конечного приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |инсталлстатедетаил|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Сведения о состоянии установки приложения. Возможные значения:,,,,,,,,,,,,,,,,,, `noAdditionalDetails` `dependencyFailedToInstall` `dependencyWithRequirementsNotMet` `dependencyPendingReboot` `dependencyWithAutoInstallDisabled` `iosAppStoreUpdateFailedToInstall` `vppAppHasUpdateAvailable` `userRejectedUpdate` `seeInstallErrorCode` `autoInstallDisabled` `managedAppNoLongerPresent` `userRejectedInstall` `userIsNotLoggedIntoAppStore` , `seeUninstallErrorCode` , `pendingReboot` , `installingDependencies` `contentDownloaded` `powerShellScriptRequirementNotMet` `registryRequirementNotMet` `fileSystemRequirementNotMet` `platformNotApplicable` `minimumCpuSpeedNotMet` `minimumLogicalProcessorCountNotMet` `minimumPhysicalMemoryNotMet` `minimumOsVersionNotMet` `minimumDiskSpaceNotMet` `processorArchitectureNotApplicable` ,,,,,,,,,,,,,,,,,.|
@@ -59,7 +59,6 @@ ms.locfileid: "48719745"
   "targetLastSyncDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

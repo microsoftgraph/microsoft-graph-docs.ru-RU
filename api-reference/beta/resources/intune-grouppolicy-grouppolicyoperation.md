@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 514cf324ed9fb633be683b98792c721453379f22
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ff1f165c83d7d0763da320ffd33a3bd6c1dda3a1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684766"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49259720"
 ---
 # <a name="grouppolicyoperation-resource-type"></a>Тип ресурса Граупполициоператион
 
@@ -36,8 +36,8 @@ ms.locfileid: "48684766"
 |:---|:---|:---|
 |оператионтипе|[groupPolicyOperationType](../resources/intune-grouppolicy-grouppolicyoperationtype.md)|Тип операции с групповой политикой. Возможные значения: `none`, `upload`, `uploadNewVersion`, `addLanguageFiles`, `removeLanguageFiles`, `updateLanguageFiles`, `remove`.|
 |оператионстатус|[groupPolicyOperationStatus](../resources/intune-grouppolicy-grouppolicyoperationstatus.md)|Состояние операции групповой политики. Возможные значения: `unknown`, `inProgress`, `success`, `failed`.|
-|статусдетаилс|Строка|Сведения о состоянии операции групповой политики.|
-|id|Строка|Ключ объекта.|
+|статусдетаилс|String|Сведения о состоянии операции групповой политики.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 ## <a name="relationships"></a>Связи
@@ -61,7 +61,6 @@ ms.locfileid: "48684766"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

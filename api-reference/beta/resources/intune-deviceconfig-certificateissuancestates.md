@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 17e78451e79a16988f2fe1c2e1bc457470fcb5d1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3bd4e1a4ff567cb18a7e55a344e35c7000aee60d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695070"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49260532"
 ---
 # <a name="certificateissuancestates-enum-type"></a>тип перечисления Цертификатеиссуанцестатес
 
@@ -36,7 +36,7 @@ ms.locfileid: "48695070"
 |иссуепендинг|8 |Пока не задокументировано.|
 |опубликован|9 |Пока не задокументировано.|
 |респонсепроцессингфаилед|10 |Пока не задокументировано.|
-|респонсепендинг|-11:00|Пока не задокументировано.|
+|респонсепендинг|11 |Пока не задокументировано.|
 |енроллментсукцеедед|12 |Пока не задокументировано.|
 |енроллментнотнидед|13 |Пока не задокументировано.|
 |отозван|14 |Пока не задокументировано.|
@@ -48,7 +48,6 @@ ms.locfileid: "48695070"
 |deleted|двадцать|Пока не задокументировано.|
 |реневалрекуестед|21|Пока не задокументировано.|
 |нужный|22|Пока не задокументировано.|
-
 
 
 

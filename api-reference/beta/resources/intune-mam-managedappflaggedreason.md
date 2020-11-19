@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bfe1ee2fe8385150336bef52ba2e498832b60562
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 08d21f78466f7f716b5d9bffcd1832e5c1a23d89
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684542"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49259685"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>тип перечисления Манажедаппфлагжедреасон
 
@@ -25,11 +25,10 @@ ms.locfileid: "48684542"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Нет ошибок.|
+|Нет|нуль|Нет ошибок.|
 |рутеддевице|1,1|Регистрация приложения выполняется на корневом/незаблокированном устройстве.|
 |андроидбутлоадерунлоккед|2|Регистрация приложения выполняется на устройстве с Android, на котором разблокирован загрузчик.|
 |андроидфакторироммодифиед|4|Регистрация приложения выполняется на устройстве с Android, на котором было изменено фабричное ПЗУ.|
-
 
 
 

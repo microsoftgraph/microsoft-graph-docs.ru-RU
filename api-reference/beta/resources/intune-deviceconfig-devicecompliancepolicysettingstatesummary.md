@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2e39e9a2efc65425ca85dd378ca79cf0b632128c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b7a1e64dc711ae639283b9dbc4f8f3ec937092bd
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696190"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49260329"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>Тип ресурса deviceCompliancePolicySettingStateSummary
 
@@ -34,7 +34,7 @@ ms.locfileid: "48696190"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |setting|String|Имя класса параметров и свойства.|
 |settingName|String|Имя параметра.|
 |platformType|[полициплатформтипе](../resources/intune-shared-policyplatformtype.md)|Настройка платформы. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `windows10XProfile`, `all`.|
@@ -75,7 +75,6 @@ ms.locfileid: "48696190"
   "conflictDeviceCount": 1024
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c391483f2127ba89a98b0b02a8c2ebd5b1c83e07
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6e42d1b840bd41bd02efd8f59201775e6d4ce4e1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702777"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49261778"
 ---
 # <a name="create-windowsfeatureupdateprofile"></a>Создание Виндовсфеатуреупдатепрофиле
 
@@ -29,7 +29,7 @@ ms.locfileid: "48702777"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,24 +46,24 @@ POST /deviceManagement/windowsFeatureUpdateProfiles
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Виндовсфеатуреупдатепрофиле в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Виндовсфеатуреупдатепрофиле.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор объекта.|
-|displayName|Строка|Отображаемое имя профиля.|
-|description|Строка|Описание профиля, указанного пользователем.|
-|феатуреупдатеверсион|Строка|Версия обновления компонентов, которая будет развернута на устройствах, предназначенных для этого профиля. Версией может быть любая поддерживаемая версия, например 1709, 1803 или 1809 и т. д.|
+|id|String|Идентификатор объекта.|
+|displayName|String|Отображаемое имя профиля.|
+|description|String|Описание профиля, указанного пользователем.|
+|феатуреупдатеверсион|String|Версия обновления компонентов, которая будет развернута на устройствах, предназначенных для этого профиля. Версией может быть любая поддерживаемая версия, например 1709, 1803 или 1809 и т. д.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля.|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого элемента обновления компонента.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -106,7 +106,6 @@ Content-Length: 441
   ]
 }
 ```
-
 
 
 

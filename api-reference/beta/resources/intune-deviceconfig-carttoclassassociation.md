@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 987eb9ad94ca84b9af3c9b7991e0f18068b6fcb4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 16026ff5a89dc43aabb92dc64f0f95524f8fafef
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729821"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49260490"
 ---
 # <a name="carttoclassassociation-resource-type"></a>Тип ресурса КарттоклассассоЦиатион
 
@@ -34,12 +34,12 @@ ms.locfileid: "48729821"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |version|Int32|Версия КарттоклассассоЦиатион.|
-|displayName|Строка|Указанное администратором имя конфигурации устройства.|
-|description|Строка|Администратор предоставил описание КарттоклассассоЦиатион.|
+|displayName|String|Указанное администратором имя конфигурации устройства.|
+|description|String|Администратор предоставил описание КарттоклассассоЦиатион.|
 |девицекартидс|Коллекция строк|Идентификаторы корзин устройств, которые необходимо связать с классами.|
 |классрумидс|Коллекция строк|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
 
@@ -71,7 +71,6 @@ ms.locfileid: "48729821"
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d8a1940cfeccec4cc9121ddb8cb98e956998310e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8718c339323c2f6a2c5e5c0babc3e4dda1dab5c0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726348"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49259671"
 ---
 # <a name="windowsinformationprotectiondeviceregistration-resource-type"></a>Тип ресурса Виндовсинформатионпротектиондевицерегистратион
 
@@ -35,12 +35,12 @@ ms.locfileid: "48726348"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |userId|String|UserId, связанный с этой записью регистрации устройства.|
 |deviceRegistrationId|Строка|Идентификатор устройства для записи регистрации этого устройства.|
 |deviceName|String|Имя устройства.|
 |deviceType|String|Тип устройства, например Windows для портативного компьютера Windows и Windows Phone.|
-|девицемакаддресс|Строка|Mac-адрес устройства.|
+|девицемакаддресс|String|Mac-адрес устройства.|
 |ластчеккиндатетиме|DateTimeOffset|Время последнего возврата устройства.|
 
 ## <a name="relationships"></a>Связи
@@ -66,7 +66,6 @@ ms.locfileid: "48726348"
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

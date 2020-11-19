@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3d4d8f3de351164e73584fb6c11248ee7acd2528
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 05da10cbd567b41d115fbcef105d00ac1eb1549e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695371"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49262189"
 ---
 # <a name="update-sideloadingkey"></a>Обновление Сиделоадингкэй
 
@@ -29,7 +29,7 @@ ms.locfileid: "48695371"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,23 +46,23 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор ключа загрузки на стороне.|
+|id|String|Уникальный идентификатор ключа загрузки на стороне.|
 |value|String|Значение ключа загрузки на стороне, это значение 5x5, разделенное хифенс.|
-|displayName|Строка|Имя ключа загрузки на стороне, отображаемое для администраторов ИТ-специалистов.|
-|description|Строка|Описание ключа загрузки на стороне, которое отображается для администраторов ИТ-специалистов..|
+|displayName|String|Имя ключа загрузки на стороне, отображаемое для администраторов ИТ-специалистов.|
+|description|String|Описание ключа загрузки на стороне, которое отображается для администраторов ИТ-специалистов..|
 |тоталактиватион|Int32|Клавиша загрузки на боковой стороне общая активация отображается для администраторов ИТ-специалистов.|
-|lastUpdatedDateTime|Строка|Клавиша загрузки на боковой стороне Дата последнего обновления отображается для администраторов ИТ-специалистов.|
+|lastUpdatedDateTime|String|Клавиша загрузки на боковой стороне Дата последнего обновления отображается для администраторов ИТ-специалистов.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -101,7 +101,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8a628083fba2621abe95bd6a1dcf3c055658b9f1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0608e8de8064b4176c3bfd64e80583c7b5416e31
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725665"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49262205"
 ---
 # <a name="delete-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Удаление объекта deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "48725665"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ DELETE /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigu
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigu
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

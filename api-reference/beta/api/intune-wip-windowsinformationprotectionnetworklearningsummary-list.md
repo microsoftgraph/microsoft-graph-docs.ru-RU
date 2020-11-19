@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d3a777c4e56daf2dee4b17fc248ef4f2108b5b0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3ae3f7659432e50bc9cf212bf49b99e366061985
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692613"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49261372"
 ---
 # <a name="list-windowsinformationprotectionnetworklearningsummaries"></a>Список объектов windowsInformationProtectionNetworkLearningSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "48692613"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,10 +46,10 @@ GET /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -78,7 +78,6 @@ Content-Length: 235
   ]
 }
 ```
-
 
 
 

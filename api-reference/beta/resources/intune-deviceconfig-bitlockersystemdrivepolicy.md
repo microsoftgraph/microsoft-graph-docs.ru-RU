@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 16b03a021349e872451e22561305f7f79bf8b438
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 605236c0f1a1a1f5a4aea3554ff118aebaac15f7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729835"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49260525"
 ---
 # <a name="bitlockersystemdrivepolicy-resource-type"></a>Тип ресурса Bitlockersystemdrivepolicy.
 
@@ -26,17 +26,17 @@ ms.locfileid: "48729835"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |encryptionMethod|[битлоккеренкриптионмесод](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|Выберите метод шифрования для дисков операционной системы. Возможные значения: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.|
-|startupAuthenticationRequired|Логический|Требовать дополнительной проверки подлинности при запуске.|
-|startupAuthenticationBlockWithoutTpmChip|Логический|Указывает, следует ли разрешить BitLocker без совместимого доверенного платформенного модуля (требуется пароль или ключ запуска на USB флэш-накопителе).|
+|startupAuthenticationRequired|Boolean|Требовать дополнительной проверки подлинности при запуске.|
+|startupAuthenticationBlockWithoutTpmChip|Boolean|Указывает, следует ли разрешить BitLocker без совместимого доверенного платформенного модуля (требуется пароль или ключ запуска на USB флэш-накопителе).|
 |startupAuthenticationTpmUsage|[конфигуратионусаже](../resources/intune-deviceconfig-configurationusage.md)|Указывает, разрешена или не разрешена или необязательная Загрузка TPM. Возможные значения: `blocked`, `required`, `allowed`, `notConfigured`.|
 |startupAuthenticationTpmPinUsage|[конфигуратионусаже](../resources/intune-deviceconfig-configurationusage.md)|Указывает, разрешен ли ПИН-код для запуска TPM, обязательный или запрещенный. Возможные значения: `blocked`, `required`, `allowed`, `notConfigured`.|
 |startupAuthenticationTpmKeyUsage|[конфигуратионусаже](../resources/intune-deviceconfig-configurationusage.md)|Указывает, разрешен ли ключ запуска TPM, обязательный, обязательный или запрещенный. Возможные значения: `blocked`, `required`, `allowed`, `notConfigured`.|
 |startupAuthenticationTpmPinAndKeyUsage|[конфигуратионусаже](../resources/intune-deviceconfig-configurationusage.md)|Указывает, разрешены ли ключ и ключ ПИН-кода для запуска TPM, а какие — обязательные или запрещенные. Возможные значения: `blocked`, `required`, `allowed`, `notConfigured`.|
 |minimumPinLength|Int32|Указывает минимальную длину ПИН-кода для запуска. Допустимые значения — от 4 до 20.|
 |recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md);|Позволяет восстанавливать зашифрованные диски операционной системы BitLocker в отсутствие требуемых сведений о ключе запуска. Этот параметр политики применяется при включении BitLocker.|
-|prebootRecoveryEnableMessageAndUrl|Логический|Включение сообщения о восстановлении перед загрузкой и URL-адреса. Если Рекуирестартупаусентикатион имеет значение false, это значение не влияет.|
-|пребутрековеримессаже|Строка|Определяет настраиваемое сообщение о восстановлении.|
-|пребутрековерюрл|Строка|Определяет настраиваемый URL-адрес для восстановления.|
+|prebootRecoveryEnableMessageAndUrl|Boolean|Включение сообщения о восстановлении перед загрузкой и URL-адреса. Если Рекуирестартупаусентикатион имеет значение false, это значение не влияет.|
+|пребутрековеримессаже|String|Определяет настраиваемое сообщение о восстановлении.|
+|пребутрековерюрл|String|Определяет настраиваемый URL-адрес для восстановления.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -74,7 +74,6 @@ ms.locfileid: "48729835"
   "prebootRecoveryUrl": "String"
 }
 ```
-
 
 
 

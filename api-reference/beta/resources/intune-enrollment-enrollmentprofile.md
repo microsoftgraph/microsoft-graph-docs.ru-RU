@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 0c8837bdcc87abc3866441c4c81dee163dcf13bb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a4b7d2683baed89505280d8866132ce9e7846bbc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707754"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49259818"
 ---
 # <a name="enrollmentprofile-resource-type"></a>Тип ресурса объекта enrollmentprofile
 
@@ -31,19 +31,19 @@ ms.locfileid: "48707754"
 |[Удаление объекта enrollmentprofile](../api/intune-enrollment-enrollmentprofile-delete.md)|Нет|Удаляет объект [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md).|
 |[Обновление объекта enrollmentprofile](../api/intune-enrollment-enrollmentprofile-update.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md);|Обновление свойств объекта [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md) .|
 |[Действие setDefaultProfile](../api/intune-enrollment-enrollmentprofile-setdefaultprofile.md)|Нет|Н/Д|
-|[функция функция exportmobileconfig](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|Строка|Экспорт конфигурации мобильного устройства|
+|[функция функция exportmobileconfig](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|String|Экспорт конфигурации мобильного устройства|
 |[Действие updateDeviceProfileAssignment](../api/intune-enrollment-enrollmentprofile-updatedeviceprofileassignment.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта|
-|displayName|Строка|Имя профиля|
-|description|Строка|Описание профиля|
-|рекуиресусераусентикатион|Логический|Указывает, требуется ли для профиля проверка подлинности пользователя|
-|конфигуратионендпоинтурл|Строка|URL-адрес конечной точки конфигурации, используемый для регистрации|
-|enableAuthenticationViaCompanyPortal|Логический|Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала.|
-|рекуирекомпанипорталонсетупассистантенролледдевицес|Логический|Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке|
+|id|String|GUID объекта|
+|displayName|String|Имя профиля|
+|description|String|Описание профиля|
+|рекуиресусераусентикатион|Boolean|Указывает, требуется ли для профиля проверка подлинности пользователя|
+|конфигуратионендпоинтурл|String|URL-адрес конечной точки конфигурации, используемый для регистрации|
+|enableAuthenticationViaCompanyPortal|Boolean|Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала.|
+|рекуирекомпанипорталонсетупассистантенролледдевицес|Boolean|Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -68,7 +68,6 @@ ms.locfileid: "48707754"
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
-
 
 
 

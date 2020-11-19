@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7cc83c81d3841337a00e4ad1ef82c7076d0bdb81
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4f43988b8c74d1d39f0d18133ebc001f7dea3177
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725689"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49262212"
 ---
 # <a name="list-deviceenrollmentplatformrestrictionsconfigurations"></a>Перечисление объектов deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "48725689"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,10 +46,10 @@ GET /deviceManagement/deviceEnrollmentConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurat
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3766
+Content-Length: 4798
 
 {
   "value": [
@@ -89,6 +89,9 @@ Content-Length: 3766
         "osMaximumVersion": "Os Maximum Version value",
         "blockedManufacturers": [
           "Blocked Manufacturers value"
+        ],
+        "blockedSkus": [
+          "Blocked Skus value"
         ]
       },
       "windowsRestriction": {
@@ -99,6 +102,9 @@ Content-Length: 3766
         "osMaximumVersion": "Os Maximum Version value",
         "blockedManufacturers": [
           "Blocked Manufacturers value"
+        ],
+        "blockedSkus": [
+          "Blocked Skus value"
         ]
       },
       "windowsHomeSkuRestriction": {
@@ -109,6 +115,9 @@ Content-Length: 3766
         "osMaximumVersion": "Os Maximum Version value",
         "blockedManufacturers": [
           "Blocked Manufacturers value"
+        ],
+        "blockedSkus": [
+          "Blocked Skus value"
         ]
       },
       "windowsMobileRestriction": {
@@ -119,6 +128,9 @@ Content-Length: 3766
         "osMaximumVersion": "Os Maximum Version value",
         "blockedManufacturers": [
           "Blocked Manufacturers value"
+        ],
+        "blockedSkus": [
+          "Blocked Skus value"
         ]
       },
       "androidRestriction": {
@@ -129,6 +141,9 @@ Content-Length: 3766
         "osMaximumVersion": "Os Maximum Version value",
         "blockedManufacturers": [
           "Blocked Manufacturers value"
+        ],
+        "blockedSkus": [
+          "Blocked Skus value"
         ]
       },
       "androidForWorkRestriction": {
@@ -139,6 +154,22 @@ Content-Length: 3766
         "osMaximumVersion": "Os Maximum Version value",
         "blockedManufacturers": [
           "Blocked Manufacturers value"
+        ],
+        "blockedSkus": [
+          "Blocked Skus value"
+        ]
+      },
+      "aospRestriction": {
+        "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+        "platformBlocked": true,
+        "personalDeviceEnrollmentBlocked": true,
+        "osMinimumVersion": "Os Minimum Version value",
+        "osMaximumVersion": "Os Maximum Version value",
+        "blockedManufacturers": [
+          "Blocked Manufacturers value"
+        ],
+        "blockedSkus": [
+          "Blocked Skus value"
         ]
       },
       "macRestriction": {
@@ -149,6 +180,9 @@ Content-Length: 3766
         "osMaximumVersion": "Os Maximum Version value",
         "blockedManufacturers": [
           "Blocked Manufacturers value"
+        ],
+        "blockedSkus": [
+          "Blocked Skus value"
         ]
       },
       "macOSRestriction": {
@@ -159,13 +193,15 @@ Content-Length: 3766
         "osMaximumVersion": "Os Maximum Version value",
         "blockedManufacturers": [
           "Blocked Manufacturers value"
+        ],
+        "blockedSkus": [
+          "Blocked Skus value"
         ]
       }
     }
   ]
 }
 ```
-
 
 
 

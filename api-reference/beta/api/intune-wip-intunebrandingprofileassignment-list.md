@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6fc12d088f9152c75e71e73fcd9283f7b13a127f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 7e5cd663c22059515191677a5ac424452a5d76d3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48712136"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49261596"
 ---
 # <a name="list-intunebrandingprofileassignments"></a>Список Интунебрандингпрофилеассигнментс
 
@@ -29,7 +29,7 @@ ms.locfileid: "48712136"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,10 +46,10 @@ GET /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignmen
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [интунебрандингпрофилеассигнмент](../resources/intune-wip-intunebrandingprofileassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -81,7 +81,6 @@ Content-Length: 436
   ]
 }
 ```
-
 
 
 

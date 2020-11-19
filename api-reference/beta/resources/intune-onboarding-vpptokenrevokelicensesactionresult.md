@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 216bdffc1fae14633174301dbd183871048f0051
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 867d8c450ad199251a5a99b96b74eff01275845b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703617"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49259559"
 ---
 # <a name="vpptokenrevokelicensesactionresult-resource-type"></a>Тип ресурса Впптокенревокелиценсесактионресулт
 
@@ -58,7 +58,6 @@ ms.locfileid: "48703617"
   "actionFailureReason": "String"
 }
 ```
-
 
 
 

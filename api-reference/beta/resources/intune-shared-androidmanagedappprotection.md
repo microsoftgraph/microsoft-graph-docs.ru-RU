@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 017ee685b49abfec3003ae32876ff6996b02f934
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: fbacb01034e76a2b162340e086200dd4a1b9aea8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723794"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49259132"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>Тип ресурса androidManagedAppProtection
 
@@ -39,9 +39,9 @@ ms.locfileid: "48723794"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|displayName|Строка|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|description|Строка|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|displayName|String|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
@@ -72,8 +72,8 @@ ms.locfileid: "48723794"
 |minimumWarningOsVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение о невозможности получить доступ к данным компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumRequiredAppVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumWarningAppVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|минимумвипеосверсион|Строка|Версии, меньшие или равные указанной версии, будут очищать управляемое приложение и связанные данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|минимумвипеаппверсион|Строка|Версии, меньшие или равные указанной версии, будут очищать управляемое приложение и связанные данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|минимумвипеосверсион|String|Версии, меньшие или равные указанной версии, будут очищать управляемое приложение и связанные данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|минимумвипеаппверсион|String|Версии, меньшие или равные указанной версии, будут очищать управляемое приложение и связанные данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |аппактионифдевицекомплианцерекуиред|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемого приложения (блокировка или очистка), когда устройство находится в корневом режиме или с защитой от удаления, если для Девицекомплианцерекуиред задано значение true. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`, `warn`.|
 |аппактионифмаксимумпинретриесексцеедед|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемого приложения (блокировка или очистка) на основе максимального количества неудачных попыток ввода ПИН-кода. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`, `warn`.|
 |пинрекуирединстеадофбиометриктимеаут|Длительность|Время ожидания ПИН-кода приложения (в минутах), а не биометрического кода, унаследованного от [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -88,18 +88,18 @@ ms.locfileid: "48723794"
 |minimumRequiredPatchVersion|String|Определите самый старый уровень обновления для системы безопасности Android, необходимый для безопасного доступа к приложению.|
 |minimumWarningPatchVersion|String|Определите самый старый уровень обновления для системы безопасности Android, рекомендуемый для безопасного доступа к приложению.|
 |exemptedAppPackages|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Пакеты приложений из этого списка не будут исключены из политики и смогут получать данные из управляемых приложений.|
-|минимумвипепатчверсион|Строка|Уровень обновления для системы безопасности Android, меньший или равный указанному значению, приведет к очистке управляемого приложения и связанных данных компании.|
-|allowedAndroidDeviceManufacturers|Строка|Разделенный список производителей устройств с точкой с запятой, разрешенный для работы управляемого приложения в виде строки.|
+|минимумвипепатчверсион|String|Уровень обновления для системы безопасности Android, меньший или равный указанному значению, приведет к очистке управляемого приложения и связанных данных компании.|
+|allowedAndroidDeviceManufacturers|String|Разделенный список производителей устройств с точкой с запятой, разрешенный для работы управляемого приложения в виде строки.|
 |appActionIfAndroidDeviceManufacturerNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемого приложения (блокировка или очистка, если заданный изготовителем устройства не разрешено). Возможные значения: `block`, `wipe`, `warn`.|
 |рекуиредандроидсафетинетдевицеаттестатионтипе|[androidManagedAppSafetyNetDeviceAttestationType](../resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)|Определяет требование к аттестации устройств Android SafetyNet для работы управляемого приложения. Возможные значения: `none`, `basicIntegrity`, `basicIntegrityAndDeviceCertification`.|
 |аппактионифандроидсафетинетдевицеаттестатионфаилед|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемого приложения (предупреждение или блокируется, если заданное рекуирмент аттестации SafetyNet для Android завершается с ошибкой). Возможные значения: `block`, `wipe`, `warn`.|
 |рекуиредандроидсафетинетаппсверификатионтипе|[androidManagedAppSafetyNetAppsVerificationType](../resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md)|Определяет требования к проверке приложений Android SafetyNet для работы управляемого приложения. Возможные значения: `none`, `enabled`.|
 |аппактионифандроидсафетинетаппсверификатионфаилед|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемого приложения: либо warn, либо Block, если заданное приложение проверки приложений Android рекуирмент завершается с ошибкой. Возможные значения: `block`, `wipe`, `warn`.|
-|кустомбровсерпаккажеид|Строка|Уникальный идентификатор настраиваемого браузера для открытия Weblink на Android.|
-|кустомбровсердисплайнаме|Строка|Понятное имя предпочтительного настраиваемого браузера для открытия Weblink на Android.|
-|минимумрекуиредкомпанипорталверсион|Строка|Минимальная версия корпоративного портала, которая должна быть установлена на устройстве или в доступе к приложениям, будет заблокирована|
-|минимумварнингкомпанипорталверсион|Строка|Минимальная версия корпоративного портала, который должен быть установлен на устройстве, или пользователь будет получать предупреждение|
-|минимумвипекомпанипорталверсион|Строка|Будет стерта минимальная версия корпоративного портала, который должен быть установлен на устройстве или данные компании в приложении.|
+|кустомбровсерпаккажеид|String|Уникальный идентификатор настраиваемого браузера для открытия Weblink на Android.|
+|кустомбровсердисплайнаме|String|Понятное имя предпочтительного настраиваемого браузера для открытия Weblink на Android.|
+|минимумрекуиредкомпанипорталверсион|String|Минимальная версия корпоративного портала, которая должна быть установлена на устройстве или в доступе к приложениям, будет заблокирована|
+|минимумварнингкомпанипорталверсион|String|Минимальная версия корпоративного портала, который должен быть установлен на устройстве, или пользователь будет получать предупреждение|
+|минимумвипекомпанипорталверсион|String|Будет стерта минимальная версия корпоративного портала, который должен быть установлен на устройстве или данные компании в приложении.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -193,7 +193,6 @@ ms.locfileid: "48723794"
   "minimumWipeCompanyPortalVersion": "String"
 }
 ```
-
 
 
 

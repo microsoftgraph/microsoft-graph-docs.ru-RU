@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7cfd363dcd41d2653f431319d9e1f20618d60950
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cbee79228aefee8ab87d5e118f208d78e889eeba
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729042"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49262429"
 ---
 # <a name="create-devicemanagementdomainjoinconnector"></a>Создание Девицеманажементдомаинжоинконнектор
 
@@ -29,7 +29,7 @@ ms.locfileid: "48729042"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,22 +46,22 @@ POST /deviceManagement/domainJoinConnectors
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицеманажементдомаинжоинконнектор в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицеманажементдомаинжоинконнектор.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор, представляющий соединитель.|
-|displayName|Строка|Отображаемое имя соединителя.|
+|id|String|Уникальный идентификатор, представляющий соединитель.|
+|displayName|String|Отображаемое имя соединителя.|
 |lastConnectionDateTime|DateTimeOffset|Последний соединитель времени с обращением к Intune.|
 |state|[deviceManagementDomainJoinConnectorState](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|Состояние соединителя. Возможные значения: `active`, `error`, `inactive`.|
 |version|String|Версия соединителя.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементдомаинжоинконнектор](../resources/intune-odj-devicemanagementdomainjoinconnector.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -98,7 +98,6 @@ Content-Length: 284
   "version": "Version value"
 }
 ```
-
 
 
 

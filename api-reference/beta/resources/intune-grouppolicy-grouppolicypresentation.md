@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 74cdae84e30764e2bf148d7b0de1756e52962060
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9b9ddd53dea0ed2de46f87349f2ea86b3bae086d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735220"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49259664"
 ---
 # <a name="grouppolicypresentation-resource-type"></a>Тип ресурса Граупполиципресентатион
 
@@ -31,8 +31,8 @@ ms.locfileid: "48735220"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|label|Строка|Локализованная текстовая подпись для любой сущности презентации. По умолчанию это значение пусто.|
-|id|Строка|Ключ объекта.|
+|label|String|Локализованная текстовая подпись для любой сущности презентации. По умолчанию это значение пусто.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 ## <a name="relationships"></a>Связи
@@ -56,7 +56,6 @@ ms.locfileid: "48735220"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

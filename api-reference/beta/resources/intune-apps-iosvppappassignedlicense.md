@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 28567bbe4bf26baf768c112cf3706035c43608a3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 65bc79263b39613b8dde454ae9da5bbc149fb474
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723057"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49261204"
 ---
 # <a name="iosvppappassignedlicense-resource-type"></a>Тип ресурса Иосвппаппассигнедлиценсе
 
@@ -34,8 +34,8 @@ ms.locfileid: "48723057"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|усеремаиладдресс|Строка|Адрес электронной почты пользователя.|
+|id|String|Ключ объекта.|
+|усеремаиладдресс|String|Адрес электронной почты пользователя.|
 |userId|String|Идентификатор пользователя.|
 |userName|String|Имя пользователя.|
 |userPrincipalName|String|Имя участника-пользователя.|
@@ -61,7 +61,6 @@ ms.locfileid: "48723057"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

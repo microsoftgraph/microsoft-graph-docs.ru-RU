@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 193865dcacf8b1f4cf10227786a8c29e8caa4374
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4130107d7941d572d8441ad4b70a63d217279a16
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727726"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49262463"
 ---
 # <a name="update-notificationmessagetemplate"></a>Обновление объекта notificationMessageTemplate
 
@@ -29,7 +29,7 @@ ms.locfileid: "48727726"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,16 +46,16 @@ PATCH /deviceManagement/notificationMessageTemplates/{notificationMessageTemplat
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|Строка|Отображаемое имя для шаблона сообщения уведомления.|
+|displayName|String|Отображаемое имя для шаблона сообщения уведомления.|
 |defaultLocale|String|Языковой стандарт по умолчанию, который используется, если запрошенный языковой стандарт недоступен.|
 |brandingOptions|[нотификатионтемплатебрандингоптионс](../resources/intune-notification-notificationtemplatebrandingoptions.md)|Параметры фирменной символики шаблона сообщения. Фирменная символика определяется в консоли администрирования Intune. Возможные значения: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`, `includeCompanyPortalLink`.|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
@@ -104,7 +104,6 @@ Content-Length: 372
   ]
 }
 ```
-
 
 
 

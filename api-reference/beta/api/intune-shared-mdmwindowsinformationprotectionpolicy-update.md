@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4005d509847ae755bf457fea969dd0865ce92adc
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e72106c2dd236a15818ac8ff2a1c3eee1efe4296
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729898"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49261995"
 ---
 # <a name="update-mdmwindowsinformationprotectionpolicy"></a>Обновление объекта mdmWindowsInformationProtectionPolicy
 
@@ -31,7 +31,7 @@ ms.locfileid: "48729898"
 | &nbsp; &nbsp; **Управление мобильным приложением (MAM)** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp; &nbsp; **Управление мобильным приложением (MAM)** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All|
 
@@ -50,19 +50,19 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [mdmWindowsInformationProtectionPolicy](../resources/intune-shared-mdmwindowsinformationprotectionpolicy.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [mdmWindowsInformationProtectionPolicy](../resources/intune-shared-mdmwindowsinformationprotectionpolicy.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|description|Строка|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|displayName|String|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|id|Строка|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |version|String|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |enforcementLevel|[виндовсинформатионпротектионенфорцементлевел](../resources/intune-mam-windowsinformationprotectionenforcementlevel.md)|Уровень принудительного применения НЗП. Ознакомьтесь с определением перечисления для поддерживаемых значений, наследуемых от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md). Возможные значения: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
 |enterpriseDomain|String|Основной домен предприятия. Наследуется от объекта [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
@@ -368,7 +368,6 @@ Content-Length: 4139
   "isAssigned": true
 }
 ```
-
 
 
 

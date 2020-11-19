@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9897c5a1a93cb051882c3a56741a1bbbca93b8d7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 30dbd1bd1114983e3077674273cc211c44c002a3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729751"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49260336"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>Тип ресурса deviceComplianceScheduledActionForRule
 
@@ -34,7 +34,7 @@ ms.locfileid: "48729751"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |ruleName|String|Имя правила, к которому применяется это запланированное действие.|
 
 ## <a name="relationships"></a>Связи
@@ -57,7 +57,6 @@ ms.locfileid: "48729751"
   "ruleName": "String"
 }
 ```
-
 
 
 

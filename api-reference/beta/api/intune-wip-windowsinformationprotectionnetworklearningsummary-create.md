@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a5ccff40ce63efaba263d83f5eb7151457c2017b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 55b9561f36006b27aa3fb918a76bfb6735b5e470
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692641"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49261414"
 ---
 # <a name="create-windowsinformationprotectionnetworklearningsummary"></a>Создание объекта windowsInformationProtectionNetworkLearningSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "48692641"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,14 +46,14 @@ POST /deviceManagement/windowsInformationProtectionNetworkLearningSummaries
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта windowsInformationProtectionNetworkLearningSummary в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта windowsInformationProtectionNetworkLearningSummary.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
+|id|String|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
 |url|String|URL-адрес веб-сайта|
 |deviceCount|Int32|Количество устройств|
 
@@ -92,7 +92,6 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
-
 
 
 

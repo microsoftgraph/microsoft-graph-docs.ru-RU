@@ -5,12 +5,12 @@ author: SarahBar
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fe49a8561a4081fc6d573d6ca595ceeca9f8bbd0
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 07941fd2878495eaedcbb67ee667f82f6d7bbdfb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582165"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49230767"
 ---
 # <a name="directoryaudit-resource-type"></a>Тип ресурса directoryAudit
 

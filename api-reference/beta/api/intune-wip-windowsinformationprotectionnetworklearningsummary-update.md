@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6d72b0db5fd59268047dc843e9a9d3eb358048cc
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 021fe36d9ad6f5429e5aca33da7dd9116cd192eb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692599"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49261344"
 ---
 # <a name="update-windowsinformationprotectionnetworklearningsummary"></a>Обновление объекта windowsInformationProtectionNetworkLearningSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "48692599"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,14 +46,14 @@ PATCH /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{wi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
+|id|String|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
 |url|String|URL-адрес веб-сайта|
 |deviceCount|Int32|Количество устройств|
 
@@ -92,7 +92,6 @@ Content-Length: 186
   "deviceCount": 11
 }
 ```
-
 
 
 

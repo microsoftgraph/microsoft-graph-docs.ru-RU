@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: dee333459fbdb1a78b823df4bcb2908179e64a32
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4859bd16cd3004f624f7a377efe125aa087d70c9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709028"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49261659"
 ---
 # <a name="create-intunebrandingprofileassignment"></a>Создание Интунебрандингпрофилеассигнмент
 
@@ -29,7 +29,7 @@ ms.locfileid: "48709028"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,19 +46,19 @@ POST /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}/assignme
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Интунебрандингпрофилеассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Интунебрандингпрофилеассигнмент.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта.|
+|id|String|Уникальный идентификатор объекта.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения, которой назначен профиль фирменной символики.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [интунебрандингпрофилеассигнмент](../resources/intune-wip-intunebrandingprofileassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -97,7 +97,6 @@ Content-Length: 375
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: bd3b2a63fe933fcd20de4f76a0ba92e31fe75b38
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a1ea942a2418f763a6914329dabe26cd0ace1e8a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725591"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49260765"
 ---
 # <a name="automaticupdatemode-enum-type"></a>тип перечисления свойства automaticupdatemode
 
@@ -32,7 +32,6 @@ ms.locfileid: "48725591"
 |аутоинсталландребутатсчедуледтиме|4 |Автоматическая установка и перезагрузка в запланированное время.|
 |аутоинсталландребутвисаутендусерконтрол|5 |Автоматическая установка и перезапуск без управления конечными пользователями|
 |виндовсдефаулт|6 |Сбросьте значение параметра Windows по умолчанию.|
-
 
 
 
