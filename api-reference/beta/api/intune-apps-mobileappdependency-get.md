@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e8b41922778f90b5bec4b4defd575b1a7a6dca7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 602e654deb86fefe02c10a789133a8b3a1071f00
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709735"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49248604"
 ---
 # <a name="get-mobileappdependency"></a>Получение Мобилеаппдепенденци
 
@@ -29,7 +29,7 @@ ms.locfileid: "48709735"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Приложение|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,10 +49,10 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/relationships/{mobileAppRelati
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [мобилеаппдепенденци](../resources/intune-apps-mobileappdependency.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 320
+Content-Length: 431
 
 {
   "value": {
@@ -76,13 +76,14 @@ Content-Length: 320
     "id": "c7f6f9ab-f9ab-c7f6-abf9-f6c7abf9f6c7",
     "targetId": "Target Id value",
     "targetDisplayName": "Target Display Name value",
+    "targetDisplayVersion": "Target Display Version value",
+    "targetPublisher": "Target Publisher value",
     "targetType": "parent",
     "dependencyType": "autoInstall",
     "dependentAppCount": 1
   }
 }
 ```
-
 
 
 

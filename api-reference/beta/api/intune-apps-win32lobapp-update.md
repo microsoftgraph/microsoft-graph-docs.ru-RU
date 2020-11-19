@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e0ec59ffe1ef88ebb508d8ba4b614906948d892a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f7a07b2264d4c3d6cf6e180e210d4937a5422b46
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694769"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49247274"
 ---
 # <a name="update-win32lobapp"></a>Обновление win32LobApp
 
@@ -29,7 +29,7 @@ ms.locfileid: "48694769"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -48,16 +48,16 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [win32LobApp](../resources/intune-apps-win32lobapp.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [win32LobApp](../resources/intune-apps-win32lobapp.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -78,8 +78,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
-|инсталлкоммандлине|Строка|Командная строка для установки приложения|
-|унинсталлкоммандлине|Строка|Командная строка для удаления приложения|
+|инсталлкоммандлине|String|Командная строка для установки приложения|
+|унинсталлкоммандлине|String|Командная строка для удаления приложения|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, которая поддерживается этим приложением. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы.|
 |минимумфридискспацеинмб|Int32|Минимальное свободное место на диске, необходимое для установки этого приложения.|
@@ -92,12 +92,13 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |инсталлекспериенце|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|Установка приложения.|
 |ретурнкодес|Коллекция [win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)|Коды возврата для поведения после установки.|
 |мсиинформатион|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Сведения о MSI, если это приложение Win32 является приложением MSI.|
-|сетупфилепас|Строка|Относительный путь к файлу установки в зашифрованном пакете Win32LobApp.|
-|минимумсуппортедвиндовсрелеасе|Строка|Значение минимального поддерживаемого выпуска Windows.|
+|сетупфилепас|String|Относительный путь к файлу установки в зашифрованном пакете Win32LobApp.|
+|минимумсуппортедвиндовсрелеасе|String|Значение минимального поддерживаемого выпуска Windows.|
+|дисплайверсион|String|Версия, отображаемая в UX для этого приложения.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [win32LobApp](../resources/intune-apps-win32lobapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -107,7 +108,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 3313
+Content-length: 3359
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -213,7 +214,8 @@ Content-length: 3313
     "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value",
-  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
+  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
+  "displayVersion": "Display Version value"
 }
 ```
 
@@ -222,7 +224,7 @@ Content-length: 3313
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3485
+Content-Length: 3531
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -331,10 +333,10 @@ Content-Length: 3485
     "publisher": "Publisher value"
   },
   "setupFilePath": "Setup File Path value",
-  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value"
+  "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
+  "displayVersion": "Display Version value"
 }
 ```
-
 
 
 

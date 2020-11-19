@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4efc32b475500150a0ab3685c7ff153593e426ee
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: efe0816dc084dd0ff4f8c95e9a4b3aac8f5a6097
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723702"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49248317"
 ---
 # <a name="update-mobileappinstallsummary"></a>Обновление Мобилеаппинсталлсуммари
 
@@ -29,7 +29,7 @@ ms.locfileid: "48723702"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,14 +46,14 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [мобилеаппинсталлсуммари](../resources/intune-apps-mobileappinstallsummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [мобилеаппинсталлсуммари](../resources/intune-apps-mobileappinstallsummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |installedDeviceCount|Int32|Количество устройств, на которых успешно установлено это приложение.|
 |failedDeviceCount|Int32|Количество устройств, которые не удалось установить это приложение.|
 |notApplicableDeviceCount|Int32|Количество устройств, неприменимых к этому приложению.|
@@ -67,7 +67,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [мобилеаппинсталлсуммари](../resources/intune-apps-mobileappinstallsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -116,7 +116,6 @@ Content-Length: 423
   "pendingInstallUserCount": 7
 }
 ```
-
 
 
 

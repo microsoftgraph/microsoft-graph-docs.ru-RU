@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 73f169fd214a694f1b0bdd3da9b47602cf412523
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 46f69c7985d11bc45168566cb3c586b4770fa356
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724398"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49247995"
 ---
 # <a name="update-mobileappprovisioningconfiggroupassignment"></a>Обновление К mobileappprovisioningconfiggroupassignment.
 
@@ -29,7 +29,7 @@ ms.locfileid: "48724398"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,15 +46,15 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [к mobileappprovisioningconfiggroupassignment.](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [к mobileappprovisioningconfiggroupassignment.](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|таржетграупид|Строка|Идентификатор группы AAD, в которой нацелена конфигурация подготовки приложений.|
-|id|Строка|Ключ объекта.|
+|таржетграупид|String|Идентификатор группы AAD, в которой нацелена конфигурация подготовки приложений.|
+|id|String|Ключ объекта.|
 
 
 
@@ -89,7 +89,6 @@ Content-Length: 178
   "id": "fad873e3-73e3-fad8-e373-d8fae373d8fa"
 }
 ```
-
 
 
 
