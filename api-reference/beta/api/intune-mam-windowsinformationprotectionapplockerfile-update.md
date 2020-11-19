@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 562621f65f0777e66d2e10c3cb6f62258c93ac22
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: edc416c3ac39bb0eec665db7df56e3f0792b61c2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692935"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49277157"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>Обновление объекта windowsInformationProtectionAppLockerFile
 
@@ -49,17 +49,17 @@ PATCH /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsIn
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Понятное имя|
+|displayName|String|Понятное имя|
 |fileHash|String|Хэш SHA256 для файла|
 |file|Binary|Файл в виде массива байтов|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |version|String|Версия объекта.|
 
 
@@ -101,7 +101,6 @@ Content-Length: 260
   "version": "Version value"
 }
 ```
-
 
 
 

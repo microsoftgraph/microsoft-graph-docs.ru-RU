@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fd99d5c428105a6cabfefbd0f7c632fc94a3d5c2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 453af72350905a60dced7e7a58d365bf87df3b4c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692718"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49276730"
 ---
 # <a name="delete-windowsdefenderapplicationcontrolsupplementalpolicy"></a>Удаление Виндовсдефендераппликатионконтролсупплементалполици
 
@@ -47,7 +47,7 @@ DELETE /deviceAppManagement/wdacSupplementalPolicies/{windowsDefenderApplication
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -66,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/wdacSupplementalPoli
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

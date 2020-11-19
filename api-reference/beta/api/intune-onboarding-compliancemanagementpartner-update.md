@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e588f476bb56faff1793c979005bfe8574665ff1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 499879de13b4998292fe042ff7516ddab70c1528
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48721558"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49276982"
 ---
 # <a name="update-compliancemanagementpartner"></a>Обновление Комплианцеманажементпартнер
 
@@ -46,21 +46,21 @@ PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartne
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор объекта|
+|id|String|Идентификатор объекта|
 |lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пакета пульса после того, как администратор направил соответствие партнеру управления соответствием|
 |partnerState|[девицеманажементпартнертенантстате](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|displayName|Строка|Отображаемое имя партнера|
-|макосонбоардед|Логический|Партнер, подключенный к устройствам Mac.|
-|виндовсонбоардед|Логический|Партнер, направленный на устройства с Windows.|
-|андроидонбоардед|Логический|Партнер, направленный на устройства с Android.|
-|иосонбоардед|Логический|Партнер, подключенный к устройствам iOS.|
+|displayName|String|Отображаемое имя партнера|
+|макосонбоардед|Boolean|Партнер, подключенный к устройствам Mac.|
+|виндовсонбоардед|Boolean|Партнер, направленный на устройства с Windows.|
+|андроидонбоардед|Boolean|Партнер, направленный на устройства с Android.|
+|иосонбоардед|Boolean|Партнер, подключенный к устройствам iOS.|
 |макосенроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства Mac через партнера.|
 |виндовсенроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства Windows с помощью партнера.|
 |андроиденроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства с Android через партнера.|
@@ -68,7 +68,7 @@ PATCH /deviceManagement/complianceManagementPartners/{complianceManagementPartne
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -191,7 +191,6 @@ Content-Length: 1993
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 7b2a869c0198950083f07c4675b36331609cce0c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a00ae80a2fb9cd6b522cb099a8e636e0fd34f796
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706998"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49276401"
 ---
 # <a name="useremailsource-enum-type"></a>тип перечисления Усеремаилсаурце
 
@@ -27,7 +27,6 @@ ms.locfileid: "48706998"
 |:---|:---|:---|
 |userPrincipalName|нуль|Имя участника пользователя.|
 |primarySmtpAddress|1,1|Основной SMTP-адрес.|
-
 
 
 

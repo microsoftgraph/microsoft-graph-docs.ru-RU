@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b01cd21551bd5925d3cab58bf6aec7a2c3c1d134
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2aee8b02e3baf150cf760116c9c993ce37a353c6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693845"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49276604"
 ---
 # <a name="softwareupdatestatussummary-resource-type"></a>Тип ресурса softwareUpdateStatusSummary
 
@@ -31,8 +31,8 @@ ms.locfileid: "48693845"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|displayName|Строка|Имя политики.|
+|id|String|Ключ объекта.|
+|displayName|String|Имя политики.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
 |nonCompliantDeviceCount|Int32|Количество устройств, не соответствующих требованиям.|
 |remediatedDeviceCount|Int32|Количество исправленных устройств.|
@@ -80,7 +80,6 @@ ms.locfileid: "48693845"
   "notApplicableUserCount": 1024
 }
 ```
-
 
 
 

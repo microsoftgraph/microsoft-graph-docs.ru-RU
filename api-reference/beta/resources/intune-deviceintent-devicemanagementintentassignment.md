@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b3afa3dd6b50fdfa9ce2c4d34801e07896fcc6e3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0f02bd5a6d4c566115ac71c397b1084a09c114f5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728267"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49275848"
 ---
 # <a name="devicemanagementintentassignment-resource-type"></a>Тип ресурса Девицеманажементинтентассигнмент
 
@@ -34,7 +34,7 @@ ms.locfileid: "48728267"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор назначения|
+|id|String|Идентификатор назначения|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения|
 
 ## <a name="relationships"></a>Связи
@@ -59,7 +59,6 @@ ms.locfileid: "48728267"
   }
 }
 ```
-
 
 
 

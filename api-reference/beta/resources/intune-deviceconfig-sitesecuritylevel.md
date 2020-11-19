@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1a7f99278383948080427d63639aefdba38764d7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 447bbc737bd732244b2904c94b23a80bcf238ae7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693852"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49276639"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>тип перечисления Ситесекуритилевел
 
@@ -31,7 +31,6 @@ ms.locfileid: "48693852"
 |medium|4|Средний.|
 |медиумхигх|4 |Умеренно высокий.|
 |высокоуровневых|5 |Высокоуровневых.|
-
 
 
 

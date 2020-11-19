@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 269e50cdae9c51e9c7b7292da94bd299af5922f0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d154418b0b888c4ef084cb7039a493ac0441ec7b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728288"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49275890"
 ---
 # <a name="devicemanagementintent-resource-type"></a>Тип ресурса Девицеманажементинтент
 
@@ -39,12 +39,12 @@ ms.locfileid: "48728288"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор намерения|
-|displayName|Строка|Имя пользователя для данного отображаемого имени|
-|description|Строка|Описание, заданное пользователем|
+|id|String|Идентификатор намерения|
+|displayName|String|Имя пользователя для данного отображаемого имени|
+|description|String|Описание, заданное пользователем|
 |isAssigned|Boolean|Указывает, назначена ли пользователю задача|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения намерения|
-|templateId|Строка|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
+|templateId|String|Идентификатор шаблона, на основе которого была создана эта цель (при наличии)|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
 
 ## <a name="relationships"></a>Связи
@@ -81,7 +81,6 @@ ms.locfileid: "48728288"
   ]
 }
 ```
-
 
 
 

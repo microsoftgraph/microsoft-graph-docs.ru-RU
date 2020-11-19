@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f033e30400e3c198f325507030b2267425ce8f80
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0d03c25d542d598aab7df9763baa33956f9a6a01
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703799"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49276422"
 ---
 # <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>Тип ресурса Унсуппортеддевицеконфигуратиондетаил
 
@@ -26,7 +26,7 @@ ms.locfileid: "48703799"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |message|String|Сообщение с объяснением, почему объект не поддерживается.|
-|propertyName|Строка|Если сообщение связано с определенным свойством в исходной сущности, то имя этого свойства.|
+|propertyName|String|Если сообщение связано с определенным свойством в исходной сущности, то имя этого свойства.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -45,7 +45,6 @@ ms.locfileid: "48703799"
   "propertyName": "String"
 }
 ```
-
 
 
 

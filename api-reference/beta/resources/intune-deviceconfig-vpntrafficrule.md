@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ff432af56f41ab92abfff8b168dabdac15d6dee1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 79bb70575ad6351a443776637ff07ef139aaafb8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724546"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49276303"
 ---
 # <a name="vpntrafficrule-resource-type"></a>Тип ресурса Впнтраффикруле
 
@@ -34,7 +34,7 @@ ms.locfileid: "48724546"
 |appId|String|Идентификатор приложения, если это правило трафика вызывается приложением.|
 |Тип|[впнтраффикрулеапптипе](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|Тип приложения, если это правило трафика вызывается приложением. Возможные значения: `none`, `desktop`, `universal`.|
 |раутингполицитипе|[впнтраффикрулераутингполицитипе](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|Когда приложение запускается, указывает, следует ли включить раздельное туннелирование по этому маршруту. Возможные значения: `none`, `splitTunnel`, `forceTunnel`.|
-|страх|Строка|Утверждения, связанные с этим правилом трафика.|
+|страх|String|Утверждения, связанные с этим правилом трафика.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -85,7 +85,6 @@ ms.locfileid: "48724546"
   "claims": "String"
 }
 ```
-
 
 
 

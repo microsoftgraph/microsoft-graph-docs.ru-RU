@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 51f12f648c882c40d3cfdd3fa72e5626229af5cf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f176d103f9044d7ef2a7808e27c228966a932282
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726418"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49276380"
 ---
 # <a name="usernamesource-enum-type"></a>тип перечисления usernameSource
 
@@ -28,7 +28,6 @@ ms.locfileid: "48726418"
 |userPrincipalName|нуль|Имя участника пользователя.|
 |primarySmtpAddress|1,1|Основной SMTP-адрес.|
 |samAccountName|2|Имя учетной записи SAM пользователя.|
-
 
 
 

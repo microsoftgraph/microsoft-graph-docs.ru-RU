@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6feb6ddb2012e05feeb5ef9ffedf062f50a674ec
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9cdde6b87f573414860abab77d82c17216c09170
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695427"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49276898"
 ---
 # <a name="create-sideloadingkey"></a>Создание Сиделоадингкэй
 
@@ -46,23 +46,23 @@ POST /deviceAppManagement/sideLoadingKeys
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Сиделоадингкэй в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Сиделоадингкэй.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор ключа загрузки на стороне.|
+|id|String|Уникальный идентификатор ключа загрузки на стороне.|
 |value|String|Значение ключа загрузки на стороне, это значение 5x5, разделенное хифенс.|
-|displayName|Строка|Имя ключа загрузки на стороне, отображаемое для администраторов ИТ-специалистов.|
-|description|Строка|Описание ключа загрузки на стороне, которое отображается для администраторов ИТ-специалистов..|
+|displayName|String|Имя ключа загрузки на стороне, отображаемое для администраторов ИТ-специалистов.|
+|description|String|Описание ключа загрузки на стороне, которое отображается для администраторов ИТ-специалистов..|
 |тоталактиватион|Int32|Клавиша загрузки на боковой стороне общая активация отображается для администраторов ИТ-специалистов.|
-|lastUpdatedDateTime|Строка|Клавиша загрузки на боковой стороне Дата последнего обновления отображается для администраторов ИТ-специалистов.|
+|lastUpdatedDateTime|String|Клавиша загрузки на боковой стороне Дата последнего обновления отображается для администраторов ИТ-специалистов.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -101,7 +101,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
 
 
 
