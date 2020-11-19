@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15f89c72c4e5aae0f4a52a556b5ce2e80eda07bc
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d65f4019c1fe0a26fc0bcc2639b7bac32dde44b5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707978"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304646"
 ---
 # <a name="delete-rolescopetag"></a>Удаление Ролескопетаг
 
@@ -47,7 +47,7 @@ DELETE /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{rol
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -66,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/roleScopeTags/{roleScop
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

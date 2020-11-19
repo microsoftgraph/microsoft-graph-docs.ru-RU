@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d71498a701c72102ecde569892b992278453d5a2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8c4c1ce286d5d5fd79ab7cbf6df2476105ad5bcc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685564"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304905"
 ---
 # <a name="getassignedroledetails-function"></a>Функция Жетассигнедроледетаилс
 
@@ -46,10 +46,10 @@ GET /deviceManagement/getAssignedRoleDetails
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха эта функция возвращает `200 OK` код отклика и объект [девицеандаппманажементассигнедроледетаилс](../resources/intune-rbac-deviceandappmanagementassignedroledetails.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -79,7 +79,6 @@ Content-Length: 245
   }
 }
 ```
-
 
 
 

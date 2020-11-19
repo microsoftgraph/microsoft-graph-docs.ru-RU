@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 75b3ea3d0e308cc83728937222bbcb28453d5eef
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bf34de6c6305996470f08e025175dcf50b710d73
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735297"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49303400"
 ---
 # <a name="androiddeviceownerkioskmodescreenorientation-enum-type"></a>тип перечисления Андроиддевицеовнеркиоскмодескринориентатион
 
@@ -29,7 +29,6 @@ ms.locfileid: "48735297"
 |ориентацию|1,1|Книжная ориентация.|
 |вдоль|2|Альбомная ориентация.|
 |Автоповорот|4|Автоматический поворот между книжной и альбомной ориентацией.|
-
 
 
 

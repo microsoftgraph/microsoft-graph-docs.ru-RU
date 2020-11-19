@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 05d2d951d8eacb93d952e20f01af6e42b30eecc1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3e5f57bb4c1fce66b12084110579123d04adffc7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731080"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49302882"
 ---
 # <a name="macossoftwareupdatestate-enum-type"></a>тип перечисления Макоссофтвареупдатестате
 
@@ -40,7 +40,6 @@ ms.locfileid: "48731080"
 |инсталлинсуффиЦиентповер|2005|Недостаточно электроэнергии для установки обновления.|
 |инсталлфаилед|2006|Не удалось выполнить установку по неопределенной причине|
 |коммандфаилед|2007|Не удалось выполнить команду обновления расписания по неуказанной причине|
-
 
 
 

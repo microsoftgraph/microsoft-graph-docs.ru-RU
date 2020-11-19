@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f6e8bc97b8c5ef9d54b7d1a753b1bd4602b2eeb4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 65aed07bd20dd8920cb81ce225065f6811be18cc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726047"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49305248"
 ---
 # <a name="updatestatus-action"></a>действие updateStatus
 
@@ -46,7 +46,7 @@ POST /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}/u
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -54,7 +54,7 @@ POST /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}/u
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|Состояние|
-|ноте|Строка|Заметка|
+|ноте|String|Заметка|
 
 
 
@@ -82,7 +82,6 @@ Content-length: 52
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

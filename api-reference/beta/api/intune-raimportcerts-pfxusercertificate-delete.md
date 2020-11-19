@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: a300db4cb16cc0147ce65702da9bdc369dba22aa
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 730030bc722a94678e23cbe2af2c0bdedc6e4830
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732701"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304940"
 ---
 # <a name="delete-pfxusercertificate"></a>Удаление Пфксусерцертификате
 
@@ -46,7 +46,7 @@ DELETE /pfxUserCertificates/{pfxUserCertificatesId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/pfxUserCertificates/{pfxUserCertificates
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

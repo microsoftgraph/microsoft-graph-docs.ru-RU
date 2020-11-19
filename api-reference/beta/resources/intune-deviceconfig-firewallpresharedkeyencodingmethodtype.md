@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 24407bb787e471340de8111fb6662b5f67ff610a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 79fcb89a8165cbea6d2132eda256c742231fd129
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730639"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49303218"
 ---
 # <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>тип перечисления Фиреваллпрешаредкэйенкодингмесодтипе
 
@@ -26,9 +26,8 @@ ms.locfileid: "48730639"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |девицедефаулт|нуль|Значение не настроено Intune, не переопределять значение устройства по умолчанию, настроенное пользователем|
-|none|1,1|Общий ключ не кодируется. Вместо этого он хранится в расширенном формате символов|
+|Нет|1,1|Общий ключ не кодируется. Вместо этого он хранится в расширенном формате символов|
 |utF8|2|Кодирование общего ключа с помощью UTF – 8|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 80b5ea14a3127bdfb607c79b9435cb7ccd1b90c8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bc142c0cdb2e2d7a6a1a68531639a2a27f1783c5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706410"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49304968"
 ---
 # <a name="create-pfxrecryptionrequest"></a>Создание Пфксрекриптионрекуест
 
@@ -46,7 +46,7 @@ POST /pfxRecryptionRequests
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Пфксрекриптионрекуест в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Пфксрекриптионрекуест.
@@ -120,7 +120,6 @@ Content-Length: 574
   "eTag": "ETag value"
 }
 ```
-
 
 
 
