@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e03dbe489f7236358f90dcb305d6328d5017018b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b44bcb98e642920c5e9bf7804aa9b3790b6228c8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736144"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49226390"
 ---
 # <a name="userexperienceanalyticsmetric-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксметрик
 
@@ -34,9 +34,9 @@ ms.locfileid: "48736144"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор метрики аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор метрики аналитики взаимодействия с пользователем.|
 |значение|Двойное с плавающей точкой|Значение метрики аналитики взаимодействия с пользователем.|
-|устройств|Строка|Единица измерения показателя взаимодействия с пользователем.|
+|устройств|String|Единица измерения показателя взаимодействия с пользователем.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -57,7 +57,6 @@ ms.locfileid: "48736144"
   "unit": "String"
 }
 ```
-
 
 
 

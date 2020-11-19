@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a1a8383ff70bc8950816152965c5e91e31d2e571
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6ebc614c93e88d01503c0219200598148c7b84cc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697716"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49226491"
 ---
 # <a name="devicehealthscriptintegerparameter-resource-type"></a>Тип ресурса Девицехеалсскриптинтежерпараметер
 
@@ -29,9 +29,9 @@ ms.locfileid: "48697716"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |name|String|Имя параметра, унаследованного от [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|
-|description|Строка|Описание параметра, унаследованного от [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|
+|description|String|Описание параметра, унаследованного от [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|
 |isRequired|Boolean|Является ли параметр должен наследоваться от [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|
-|апплидефаултвалуевхеннотассигнед|Логический|Применяется ли значение DefaultValue при отсутствии назначенного наследования от [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|
+|апплидефаултвалуевхеннотассигнед|Boolean|Применяется ли значение DefaultValue при отсутствии назначенного наследования от [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|
 |Значение|Int32|Значение по умолчанию параметра Integer. Допустимые значения: от 2147483648 до 2147483647|
 
 ## <a name="relationships"></a>Связи
@@ -54,7 +54,6 @@ ms.locfileid: "48697716"
   "defaultValue": 1024
 }
 ```
-
 
 
 

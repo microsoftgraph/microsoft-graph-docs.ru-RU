@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 86c31ef00de87349ef9c6d0a8ad94d61b43d8771
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 396fc74e9ba44610810a4c260b33aebe334219c5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726593"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49227121"
 ---
 # <a name="update-deviceandappmanagementassignmentfilter"></a>Обновление Девицеандаппманажементассигнментфилтер
 
@@ -29,7 +29,7 @@ ms.locfileid: "48726593"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,25 +46,25 @@ PATCH /deviceManagement/assignmentFilters/{deviceAndAppManagementAssignmentFilte
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ фильтра назначений.|
+|id|String|Ключ фильтра назначений.|
 |createdDateTime|DateTimeOffset|Время создания фильтра назначений.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения фильтра назначений.|
-|displayName|Строка|DisplayName фильтра назначений.|
-|description|Строка|Описание фильтра назначений.|
+|displayName|String|DisplayName фильтра назначений.|
+|description|String|Описание фильтра назначений.|
 |платформа|[девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Тип платформы устройств, к которым будет применяться фильтр назначений. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`.|
-|правила|Строка|Определение правила для фильтра назначений.|
+|правила|String|Определение правила для фильтра назначений.|
 |roleScopeTags|Коллекция строк|RoleScopeTags фильтра назначений.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеандаппманажементассигнментфилтер](../resources/intune-policyset-deviceandappmanagementassignmentfilter.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -109,7 +109,6 @@ Content-Length: 446
   ]
 }
 ```
-
 
 
 

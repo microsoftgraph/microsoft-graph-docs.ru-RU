@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 3cd10bef08119c3ec123bad14a2274c5ec40fc3b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d624863a07309b3962122fb93a1ebbaea895a44b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48724412"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49226392"
 ---
 # <a name="userexperienceanalyticsinsight-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксинсигхт
 
@@ -25,8 +25,8 @@ ms.locfileid: "48724412"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|усерекспериенцеаналитиксметриЦид|Строка|Уникальный идентификатор аналитического интерфейса пользователя.|
-|инсигхтид|Строка|Уникальный идентификатор аналитического интерфейса пользователя.|
+|усерекспериенцеаналитиксметриЦид|String|Уникальный идентификатор аналитического интерфейса пользователя.|
+|инсигхтид|String|Уникальный идентификатор аналитического интерфейса пользователя.|
 |values|Коллекция [усерекспериенцеаналитиксинсигхтвалуе](../resources/intune-devices-userexperienceanalyticsinsightvalue.md)|Значение аналитического интерфейса пользователя.|
 |severity|[userExperienceAnalyticsInsightSeverity](../resources/intune-devices-userexperienceanalyticsinsightseverity.md)|Значение аналитического интерфейса пользователя. Возможные значения: `none`, `informational`, `warning`, `error`.|
 
@@ -54,7 +54,6 @@ ms.locfileid: "48724412"
   "severity": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 835fadf82310b048170b4d6a174d933bd7fdfdc9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5d807ef8c1eee14242c26959a475f30b53a20a72
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731745"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49225336"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Создать importedWindowsAutopilotDeviceIdentity
 
@@ -29,7 +29,7 @@ ms.locfileid: "48731745"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,22 +46,22 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentities
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта importedWindowsAutopilotDeviceIdentity в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта importedWindowsAutopilotDeviceIdentity.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта|
+|id|String|GUID объекта|
 |orderIdentifier|Строка|Номер заказа устройства Windows Autopilot. — Устаревшее|
-|грауптаг|Строка|Тег Group для устройства автопилота Windows.|
+|грауптаг|String|Тег Group для устройства автопилота Windows.|
 |serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
-|импортид|Строка|Идентификатор импорта для устройства автопилота Windows.|
+|импортид|String|Идентификатор импорта для устройства автопилота Windows.|
 |hardwareIdentifier|Двоичный|Аппаратный большой двоичный объект (BLOB) устройства Windows Autopilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Текущее состояние импортированного устройства.|
-|ассигнедусерпринЦипалнаме|Строка|Имя участника-пользователя для пользователя, которому будет назначено устройство|
+|ассигнедусерпринЦипалнаме|String|Имя участника-пользователя для пользователя, которому будет назначено устройство|
 
 
 
@@ -122,7 +122,6 @@ Content-Length: 728
   "assignedUserPrincipalName": "Assigned User Principal Name value"
 }
 ```
-
 
 
 
