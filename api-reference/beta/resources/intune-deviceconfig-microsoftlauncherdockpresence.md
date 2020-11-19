@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b68aff8f052041890554f1c99128daf3b97ec805
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 47b515c74a302972dd183f43d9a740e24683e3f1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707145"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49273405"
 ---
 # <a name="microsoftlauncherdockpresence-enum-type"></a>тип перечисления Микрософтлаунчердоккпресенце
 
@@ -29,7 +29,6 @@ ms.locfileid: "48707145"
 |отобразит|1,1|Указывает, что на устройстве отображается закрепление устройства.|
 |скрытых|2|Указывает, что Закрепляемое устройство будет скрыто на устройстве, но пользователь может получить доступ к закреплениям, перетащив обработчик в нижней части экрана.|
 |отключено|4|Указывает, что стыковочный модуль устройства будет отключен на устройстве.|
-
 
 
 

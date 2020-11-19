@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8f75545d2913a7145b39058e1eae35e3a332727e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 541cdf768cd717ea4a284fff660a56641dc359dc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48712934"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49274854"
 ---
 # <a name="create-compliancemanagementpartner"></a>Создание Комплианцеманажементпартнер
 
@@ -46,21 +46,21 @@ POST /deviceManagement/complianceManagementPartners
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Комплианцеманажементпартнер в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Комплианцеманажементпартнер.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор объекта|
+|id|String|Идентификатор объекта|
 |lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пакета пульса после того, как администратор направил соответствие партнеру управления соответствием|
 |partnerState|[девицеманажементпартнертенантстате](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера этого клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|displayName|Строка|Отображаемое имя партнера|
-|макосонбоардед|Логический|Партнер, подключенный к устройствам Mac.|
-|виндовсонбоардед|Логический|Партнер, направленный на устройства с Windows.|
-|андроидонбоардед|Логический|Партнер, направленный на устройства с Android.|
-|иосонбоардед|Логический|Партнер, подключенный к устройствам iOS.|
+|displayName|String|Отображаемое имя партнера|
+|макосонбоардед|Boolean|Партнер, подключенный к устройствам Mac.|
+|виндовсонбоардед|Boolean|Партнер, направленный на устройства с Windows.|
+|андроидонбоардед|Boolean|Партнер, направленный на устройства с Android.|
+|иосонбоардед|Boolean|Партнер, подключенный к устройствам iOS.|
 |макосенроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства Mac через партнера.|
 |виндовсенроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства Windows с помощью партнера.|
 |андроиденроллментассигнментс|Коллекция [комплианцеманажементпартнерассигнмент](../resources/intune-onboarding-compliancemanagementpartnerassignment.md)|Группы пользователей, которые регистрируют устройства с Android через партнера.|
@@ -68,7 +68,7 @@ POST /deviceManagement/complianceManagementPartners
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [комплианцеманажементпартнер](../resources/intune-onboarding-compliancemanagementpartner.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -191,7 +191,6 @@ Content-Length: 1993
   ]
 }
 ```
-
 
 
 

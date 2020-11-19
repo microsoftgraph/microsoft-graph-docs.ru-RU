@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: c9a2345810ac759af4a5f1a750bedfdb3faaa651
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: dcd34efb2b30560a0065415a683ca65d724cab17
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708797"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49275694"
 ---
 # <a name="devicemanagementintentsettingsecretconstraint-resource-type"></a>Тип ресурса Девицеманажементинтентсеттингсекретконстраинт
 
@@ -44,7 +44,6 @@ ms.locfileid: "48708797"
   "@odata.type": "#microsoft.graph.deviceManagementIntentSettingSecretConstraint"
 }
 ```
-
 
 
 

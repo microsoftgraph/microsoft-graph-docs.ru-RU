@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1bf6c971eb197f1b3e722eb84a55484a222e9373
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1dff62e0e8bab9c1baa50467e5a6b483bc4fb5ce
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706970"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49272537"
 ---
 # <a name="windowsupdateforbusinessupdateweeks-enum-type"></a>тип перечисления Виндовсупдатефорбусинессупдатевикс
 
@@ -31,7 +31,6 @@ ms.locfileid: "48706970"
 |сирдвик|4 |Установка обновления запланирована на третью неделю месяца|
 |фаурсвик|8 |Установка обновления запланирована на четвертую неделю месяца|
 |еверивик|15 |Запланирована установка обновлений на каждую неделю месяца|
-
 
 
 

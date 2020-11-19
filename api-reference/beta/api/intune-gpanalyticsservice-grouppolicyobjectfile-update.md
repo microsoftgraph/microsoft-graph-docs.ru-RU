@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6b266b110a0512539018815c0bf4f3cd33700fb3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f03314e42386f3ae0371c13a7bcae17a0e39681d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692998"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49275001"
 ---
 # <a name="update-grouppolicyobjectfile"></a>Обновление Граупполициобжектфиле
 
@@ -46,23 +46,23 @@ PATCH /deviceManagement/groupPolicyObjectFiles/{groupPolicyObjectFileId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [граупполициобжектфиле](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [граупполициобжектфиле](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Пока не задокументировано.|
+|id|String|Пока не задокументировано.|
 |граупполициобжектид|Guid|GUID объекта групповой политики из XML-содержимого объекта групповой политики|
-|аудистингуишеднаме|Строка|Различающееся имя подразделения.|
+|аудистингуишеднаме|String|Различающееся имя подразделения.|
 |createdDateTime|DateTimeOffset|Дата и время первой загрузки Граупполици.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения Граупполициобжектфиле.|
 |content|String|Содержимое файла объекта групповой политики.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [граупполициобжектфиле](../resources/intune-gpanalyticsservice-grouppolicyobjectfile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -99,7 +99,6 @@ Content-Length: 389
   "content": "Content value"
 }
 ```
-
 
 
 

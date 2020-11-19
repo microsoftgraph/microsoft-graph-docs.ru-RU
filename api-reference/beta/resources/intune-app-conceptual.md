@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 17db5f26634691eef6dba3d93f4e43acd3faac37
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 22ae1004a3f22d96ec6c7bd7f4da7d6d8763f55a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701629"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49274420"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -78,6 +78,7 @@ ms.locfileid: "48701629"
 - [Электронная книга VPP для iOS](intune-books-iosvppebook.md)
 - [Назначение электронной книги VPP для iOS](intune-books-iosvppebookassignment.md)
 - [Бизнес-приложение macOS](intune-apps-macoslobapp.md)
+- [Параметры назначения бизнес-приложений macOS](intune-apps-macoslobappassignmentsettings.md)
 - [Дочернее бизнес-приложение для macOS](intune-apps-macoslobchildapp.md)
 - [приложение мдатп macOS](intune-apps-macosmdatpapp.md)
 - [приложение Microsoft Edge macOS](intune-apps-macosmicrosoftedgeapp.md)

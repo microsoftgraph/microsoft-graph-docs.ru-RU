@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3f349e5ea619a8a1c2f793e6874d37cf80c21357
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 102c8181e008be2c9578b9d17a0de7890b4695b9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693768"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49272887"
 ---
 # <a name="windows10editiontype-enum-type"></a>тип перечисления windows10EditionType
 
@@ -36,7 +36,7 @@ ms.locfileid: "48693768"
 |windows10ProfessionalEducation|8 |Windows 10 профессиональная образование|
 |windows10ProfessionalEducationN|9 |Windows 10 профессиональная Едукатионн|
 |windows10ProfessionalWorkstation|10 |Windows 10 профессиональная для рабочих станций|
-|windows10ProfessionalWorkstationN|-11:00|Windows 10 профессиональная для рабочих станций N|
+|windows10ProfessionalWorkstationN|11 |Windows 10 профессиональная для рабочих станций N|
 |notConfigured|12 |NotConfigured|
 |windows10Home|13 |Windows 10 Домашняя|
 |windows10HomeChina|14 |Windows 10 домашняя (Китай)|
@@ -45,7 +45,6 @@ ms.locfileid: "48693768"
 |windows10Mobile|17 |Windows 10 Mobile|
 |windows10IoTCore|18 |Ядро IoT Windows 10|
 |windows10IoTCoreCommercial|19|Windows 10 IoT базовая коммерческая версия|
-
 
 
 

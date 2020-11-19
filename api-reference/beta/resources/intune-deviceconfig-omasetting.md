@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: bdc653c07ad7553e9358703037c15179d9366dad
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 59a0d38eca6e448457d208eb9981c9de51031489
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722994"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49273188"
 ---
 # <a name="omasetting-resource-type"></a>Тип ресурса omaSetting
 
@@ -25,9 +25,10 @@ ms.locfileid: "48722994"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя.|
-|description|Строка|Описание.|
+|displayName|String|Отображаемое имя.|
+|description|String|Описание.|
 |omaUri|String|OMA.|
+|isEncrypted|Boolean|Указывает, зашифровано ли поле "значение".|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -44,10 +45,10 @@ ms.locfileid: "48722994"
   "@odata.type": "#microsoft.graph.omaSetting",
   "displayName": "String",
   "description": "String",
-  "omaUri": "String"
+  "omaUri": "String",
+  "isEncrypted": true
 }
 ```
-
 
 
 

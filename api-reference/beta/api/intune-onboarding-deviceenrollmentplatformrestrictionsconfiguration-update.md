@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ba5b9fa4499bd3885c505342d911f9db5ef04486
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 49f0ac5ef242e1ad2f7332fab5d2bbe147313756
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725652"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49274839"
 ---
 # <a name="update-deviceenrollmentplatformrestrictionsconfiguration"></a>Обновление объекта deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -46,16 +46,16 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для учетной записи, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|displayName|Строка|Отображаемое имя конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
-|description|Строка|Описание конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|id|String|Уникальный идентификатор для учетной записи, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|displayName|String|Отображаемое имя конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
+|description|String|Описание конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |priority|Int32|Priority используется, когда пользователь существует в нескольких группах, которым назначена Настройка регистрации. Пользователи подчиняются только конфигурации с наименьшим значением приоритета. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |createdDateTime|DateTimeOffset|Созданная Дата и время в формате UTC для настройки регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения конфигурации регистрации устройств, унаследованной от [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
@@ -67,6 +67,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |windowsMobileRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения для Windows Mobile на основе платформы, версии операционной системы платформы и владельца устройств|
 |androidRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения для Android на основе платформы, версии операционной системы платформы и владельца устройств|
 |андроидфорворкрестриктион|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения для Android для работы на основе платформы, версии операционной системы платформы и владельца устройств|
+|аоспрестриктион|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения АОСП на основе платформы, версии операционной системы платформы и владельца устройств|
 |макрестриктион|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения для MAC-адресов на основе платформы, версии операционной системы платформы и владельца устройств|
 |macOSRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ограничения для MAC-адресов на основе платформы, версии операционной системы платформы и владельца устройств|
 
@@ -82,7 +83,7 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}
 Content-type: application/json
-Content-length: 3197
+Content-length: 4081
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration",
@@ -101,6 +102,9 @@ Content-length: 3197
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "windowsRestriction": {
@@ -111,6 +115,9 @@ Content-length: 3197
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "windowsHomeSkuRestriction": {
@@ -121,6 +128,9 @@ Content-length: 3197
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "windowsMobileRestriction": {
@@ -131,6 +141,9 @@ Content-length: 3197
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "androidRestriction": {
@@ -141,6 +154,9 @@ Content-length: 3197
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "androidForWorkRestriction": {
@@ -151,6 +167,22 @@ Content-length: 3197
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
+    ]
+  },
+  "aospRestriction": {
+    "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+    "platformBlocked": true,
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": "Os Minimum Version value",
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "macRestriction": {
@@ -161,6 +193,9 @@ Content-length: 3197
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "macOSRestriction": {
@@ -171,6 +206,9 @@ Content-length: 3197
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   }
 }
@@ -181,7 +219,7 @@ Content-length: 3197
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3369
+Content-Length: 4253
 
 {
   "@odata.type": "#microsoft.graph.deviceEnrollmentPlatformRestrictionsConfiguration",
@@ -203,6 +241,9 @@ Content-Length: 3369
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "windowsRestriction": {
@@ -213,6 +254,9 @@ Content-Length: 3369
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "windowsHomeSkuRestriction": {
@@ -223,6 +267,9 @@ Content-Length: 3369
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "windowsMobileRestriction": {
@@ -233,6 +280,9 @@ Content-Length: 3369
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "androidRestriction": {
@@ -243,6 +293,9 @@ Content-Length: 3369
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "androidForWorkRestriction": {
@@ -253,6 +306,22 @@ Content-Length: 3369
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
+    ]
+  },
+  "aospRestriction": {
+    "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+    "platformBlocked": true,
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": "Os Minimum Version value",
+    "osMaximumVersion": "Os Maximum Version value",
+    "blockedManufacturers": [
+      "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "macRestriction": {
@@ -263,6 +332,9 @@ Content-Length: 3369
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   },
   "macOSRestriction": {
@@ -273,11 +345,13 @@ Content-Length: 3369
     "osMaximumVersion": "Os Maximum Version value",
     "blockedManufacturers": [
       "Blocked Manufacturers value"
+    ],
+    "blockedSkus": [
+      "Blocked Skus value"
     ]
   }
 }
 ```
-
 
 
 

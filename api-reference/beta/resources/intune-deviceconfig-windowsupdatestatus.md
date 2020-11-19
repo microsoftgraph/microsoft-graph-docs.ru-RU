@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 0151a572011f9033ae7b622e5d3cf2bfd086ed39
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3a09aca9ce1ac4cd81e09b8db8da10ea563f1f03
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706935"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49272369"
 ---
 # <a name="windowsupdatestatus-enum-type"></a>тип перечисления Виндовсупдатестатус
 
@@ -29,7 +29,6 @@ ms.locfileid: "48706935"
 |пендингинсталлатион|1,1|Существуют обновления, ожидающие установки, которые включают Неутвержденные обновления. Нет обновлений, ожидающих перезагрузки, неудачных обновлений.|
 |пендингребут|2|Существуют обновления, требующие перезагрузки. Обновления не выполнены.|
 |сбоев|4|Не удалось установить обновления на устройстве.|
-
 
 
 

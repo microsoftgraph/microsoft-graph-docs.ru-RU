@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ac0cc132b4d1e07491bc2e4a510530c9b72e2699
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e45db436201b339f075f35d3865c8d0c84f1ea6d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707943"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49274035"
 ---
 # <a name="win32lobappfilesystemrule-resource-type"></a>Тип ресурса win32LobAppFileSystemRule
 
@@ -30,11 +30,11 @@ ms.locfileid: "48707943"
 |:---|:---|:---|
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|Тип правила, указывающий назначение правила. Наследуется от [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Возможные значения: `detection`, `requirement`.|
 |path|String|Путь к файлу или папке для поиска.|
-|филеорфолдернаме|Строка|Имя файла или папки для поиска.|
-|check32BitOn64System|Логический|Значение, указывающее, следует ли развертывать переменные среды в 32 – разрядном контексте в 64 – разрядных системах.|
+|филеорфолдернаме|String|Имя файла или папки для поиска.|
+|check32BitOn64System|Boolean|Значение, указывающее, следует ли развертывать переменные среды в 32 – разрядном контексте в 64 – разрядных системах.|
 |оператионтипе|[win32LobAppFileSystemOperationType](../resources/intune-apps-win32lobappfilesystemoperationtype.md)|Тип операции файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|Оператор для обнаружения файлов или папок. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|компарисонвалуе|Строка|Значение сравнения файлов или папок.|
+|компарисонвалуе|String|Значение сравнения файлов или папок.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -58,7 +58,6 @@ ms.locfileid: "48707943"
   "comparisonValue": "String"
 }
 ```
-
 
 
 

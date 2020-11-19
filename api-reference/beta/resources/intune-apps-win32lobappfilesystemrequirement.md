@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ab011739ed24a0f9880ccc72461f0c4eef5c0655
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 01f6ce63b5f9b4d2bb075c10eb151e6120c100c9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708979"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49274140"
 ---
 # <a name="win32lobappfilesystemrequirement-resource-type"></a>Тип ресурса win32LobAppFileSystemRequirement
 
@@ -29,10 +29,10 @@ ms.locfileid: "48708979"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор обнаружения наследуется от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md). Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|детектионвалуе|Строка|Значение обнаружения, унаследованное от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
+|детектионвалуе|String|Значение обнаружения, унаследованное от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
 |path|String|Путь к файлу или папке для определения бизнес-приложения Win32|
-|филеорфолдернаме|Строка|Имя файла или папки для определения бизнес-приложения Win32|
-|check32BitOn64System|Логический|Значение, указывающее, предназначен ли этот файл или папка для проверки 32-разрядного приложения в 64-разрядной системе|
+|филеорфолдернаме|String|Имя файла или папки для определения бизнес-приложения Win32|
+|check32BitOn64System|Boolean|Значение, указывающее, предназначен ли этот файл или папка для проверки 32-разрядного приложения в 64-разрядной системе|
 |детектионтипе|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|Тип обнаружения файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
 
 ## <a name="relationships"></a>Связи
@@ -56,7 +56,6 @@ ms.locfileid: "48708979"
   "detectionType": "String"
 }
 ```
-
 
 
 

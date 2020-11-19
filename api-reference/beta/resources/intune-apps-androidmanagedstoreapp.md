@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 069d8c26fe1d9ac4a62ff93fdbee81ee0a5b55de
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: cb95521868f309b44584f88bbcfdef43e8e29f61
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727584"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49274315"
 ---
 # <a name="androidmanagedstoreapp-resource-type"></a>Тип ресурса Андроидманажедстореапп
 
@@ -37,9 +37,9 @@ ms.locfileid: "48727584"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
-|description|Строка|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|id|String|Ключ объекта. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
+|description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-shared-mobileapp.md).|
@@ -62,10 +62,10 @@ ms.locfileid: "48727584"
 |usedLicenseCount|Int32|Количество используемых лицензий VPP.|
 |totalLicenseCount|Int32|Общее количество лицензий VPP.|
 |appStoreUrl|String|URL-адрес приложения для рабочего хранилища.|
-|Частный|Логический|Указывает, доступно ли приложение только для указанных пользователей предприятия.|
-|иссистемапп|Логический|Указывает, является ли приложение предустановленным системным приложением.|
+|Частный|Boolean|Указывает, доступно ли приложение только для указанных пользователей предприятия.|
+|иссистемапп|Boolean|Указывает, является ли приложение предустановленным системным приложением.|
 |апптраккс|Коллекция [андроидманажедстореапптракк](../resources/intune-apps-androidmanagedstoreapptrack.md)|Дорожки, которые видимы для этого предприятия.|
-|суппортсоемконфиг|Логический|Поддерживает ли это приложение политику Оемконфиг.|
+|суппортсоемконфиг|Boolean|Поддерживает ли это приложение политику Оемконфиг.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -131,7 +131,6 @@ ms.locfileid: "48727584"
   "supportsOemConfig": true
 }
 ```
-
 
 
 

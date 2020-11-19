@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b522644406e759e624c0aa151ea78b1b8a698836
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5d785d67cbac3c51ee5314ecc2bf84df79a64a77
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734016"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49273017"
 ---
 # <a name="windows10compliancepolicy-resource-type"></a>Тип ресурса windows10CompliancePolicy
 
@@ -38,11 +38,11 @@ ms.locfileid: "48734016"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
-|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md).|
 |passwordRequired|Boolean|Указывает на то, что для разблокировки устройства с Windows требуется пароль.|
 |passwordBlockSimple|Boolean|Указывает, требуется ли блокировать простой пароль.|
@@ -63,18 +63,18 @@ ms.locfileid: "48734016"
 |secureBootEnabled|Boolean|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности (безопасная загрузка включена).|
 |codeIntegrityEnabled|Boolean|Указывает на то, что служба подтверждения работоспособности устройства Windows должна сообщать о работоспособности.|
 |storageRequireEncryption|Boolean|Указывает, обязательно ли шифрование данных на устройствах с Windows.|
-|Свойства activefirewallrequired|Логический|Требуется активный брандмауэр на устройствах Windows.|
-|дефендеренаблед|Логический|Требуется антивредоносная программа защитника Windows на устройствах Windows.|
-|дефендерверсион|Строка|Требовать минимальную версию защиты от вредоносных программ Защитника Windows на устройствах Windows.|
-|сигнатуреаутофдате|Логический|Обязательное обновление подписи антивредоносной программы защитника Windows на устройствах Windows.|
-|ртпенаблед|Логический|Требование защиты от Real-Time защитника Windows на устройствах Windows.|
-|антивирусрекуиред|Логический|Требование наличия антивирусных решений, зарегистрированных в Windows Декурити Center для включения и отслеживания (например, Symantec, защитник Windows).|
-|антиспиваререкуиред|Логический|Обязательное решение для защиты от шпионских программ, зарегистрированное в Windows Декурити Center для включения и мониторинга (например, Symantec, защитник Windows).|
+|Свойства activefirewallrequired|Boolean|Требуется активный брандмауэр на устройствах Windows.|
+|дефендеренаблед|Boolean|Требуется антивредоносная программа защитника Windows на устройствах Windows.|
+|дефендерверсион|String|Требовать минимальную версию защиты от вредоносных программ Защитника Windows на устройствах Windows.|
+|сигнатуреаутофдате|Boolean|Обязательное обновление подписи антивредоносной программы защитника Windows на устройствах Windows.|
+|ртпенаблед|Boolean|Требование защиты от Real-Time защитника Windows на устройствах Windows.|
+|антивирусрекуиред|Boolean|Требование наличия антивирусных решений, зарегистрированных в Windows Декурити Center для включения и отслеживания (например, Symantec, защитник Windows).|
+|антиспиваререкуиред|Boolean|Обязательное решение для защиты от шпионских программ, зарегистрированное в Windows Декурити Center для включения и мониторинга (например, Symantec, защитник Windows).|
 |validOperatingSystemBuildRanges|Коллекция [оператингсистемверсионранже](../resources/intune-deviceconfig-operatingsystemversionrange.md)|Допустимые диапазоны сборки операционной системы на устройствах Windows. Эта коллекция может содержать не более 10 000 элементов.|
 |deviceThreatProtectionEnabled|Boolean|Указывает, что защита от угроз для устройств должна быть включена.|
 |deviceThreatProtectionRequiredSecurityLevel|[девицесреатпротектионлевел](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Потребовать минимального уровня риска для защиты от угроз для отчетов о несоответствии. Возможные значения: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
-|конфигуратионманажеркомплианцерекуиред|Логический|Необходимо учитывать состояние соответствия SCCM в отношении состояния соответствия Intune.|
-|тпмрекуиред|Логический|Требуется наличие доверенного платформенного модуля (TPM).|
+|конфигуратионманажеркомплианцерекуиред|Boolean|Необходимо учитывать состояние соответствия SCCM в отношении состояния соответствия Intune.|
+|тпмрекуиред|Boolean|Требуется наличие доверенного платформенного модуля (TPM).|
 |deviceCompliancePolicyScript|[deviceCompliancePolicyScript](../resources/intune-deviceconfig-devicecompliancepolicyscript.md)|Н/Д|
 
 ## <a name="relationships"></a>Связи
@@ -153,7 +153,6 @@ ms.locfileid: "48734016"
   }
 }
 ```
-
 
 
 

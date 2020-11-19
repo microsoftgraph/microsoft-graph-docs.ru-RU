@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 7bfc889acd17049e38a0e4efe03d83389e9983fd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d0477665b0de7390cfe9d2f4453401d5db7d4946
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729697"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49273706"
 ---
 # <a name="iosbookmark-resource-type"></a>Тип ресурса Иосбукмарк
 
@@ -26,8 +26,8 @@ ms.locfileid: "48729697"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |url|String|URL-адрес, разрешенный для доступа|
-|букмаркфолдер|Строка|Папка, в которую следует добавить закладку в Safari|
-|displayName|Строка|Отображаемое имя закладки|
+|букмаркфолдер|String|Папка, в которую следует добавить закладку в Safari|
+|displayName|String|Отображаемое имя закладки|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -47,7 +47,6 @@ ms.locfileid: "48729697"
   "displayName": "String"
 }
 ```
-
 
 
 

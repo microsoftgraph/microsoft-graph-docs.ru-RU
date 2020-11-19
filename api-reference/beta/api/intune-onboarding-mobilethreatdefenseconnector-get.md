@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 89f74f633bffb917584b1696f9135d5c2ac17f0d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 81391f8d2190567a494fc7137f53e26058c1693a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701699"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49274805"
 ---
 # <a name="get-mobilethreatdefenseconnector"></a>Получение объекта mobileThreatDefenseConnector
 
@@ -49,10 +49,10 @@ GET /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnecto
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -92,7 +92,6 @@ Content-Length: 828
   }
 }
 ```
-
 
 
 

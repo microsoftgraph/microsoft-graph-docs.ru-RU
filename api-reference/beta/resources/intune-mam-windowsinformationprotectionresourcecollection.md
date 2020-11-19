@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5500f2bec507ae1f941d06e9cb7c22c94b301ba7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bb647b44f477efc5b3b24778653d300d0b994b7b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691234"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49272250"
 ---
 # <a name="windowsinformationprotectionresourcecollection-resource-type"></a>Тип ресурса windowsInformationProtectionResourceCollection
 
@@ -25,7 +25,7 @@ ms.locfileid: "48691234"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя|
+|displayName|String|Отображаемое имя|
 |resources|Коллекция строк|Коллекция ресурсов|
 
 ## <a name="relationships"></a>Связи
@@ -47,7 +47,6 @@ ms.locfileid: "48691234"
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 517863d85f06a65346a5e40a6eef321566c8db77
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0cd50a6c1ab03cfe3a09859baadd8ec62c5ec667
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694062"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49273916"
 ---
 # <a name="win32lobapppowershellscriptdetectiontype-enum-type"></a>тип перечисления win32LobAppPowerShellScriptDetectionType
 
@@ -26,13 +26,12 @@ ms.locfileid: "48694062"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|string|1,1|Выходной тип данных String.|
+|строка|1,1|Выходной тип данных String.|
 |dateTime|2|Тип выходных данных — Дата и время.|
 |integer|4|Тип выходных данных — целое число.|
 |float|4 |Тип выходных данных — float.|
 |version|5 |Тип выходных данных — Version.|
-|boolean|6 |Тип выходных данных — Boolean.|
-
+|логический|6 |Тип выходных данных — Boolean.|
 
 
 
