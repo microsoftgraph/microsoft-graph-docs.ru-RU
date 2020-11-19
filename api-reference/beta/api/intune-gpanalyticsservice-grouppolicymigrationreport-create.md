@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ea45b86f2901ec00efecb4097e403f1788dab1a1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e6b63022cc67ad0f5d6e51bf3eec3f7dd2272839
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722552"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49263122"
 ---
 # <a name="create-grouppolicymigrationreport"></a>Создание Граупполицимигратионрепорт
 
@@ -29,7 +29,7 @@ ms.locfileid: "48722552"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,30 +46,30 @@ POST /deviceManagement/groupPolicyMigrationReports
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Граупполицимигратионрепорт в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Граупполицимигратионрепорт.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Пока не задокументировано.|
+|id|String|Пока не задокументировано.|
 |граупполициобжектид|Guid|GUID объекта групповой политики из XML-содержимого объекта групповой политики|
-|displayName|Строка|Имя объекта групповой политики из XML-содержимого объекта групповой политики|
-|аудистингуишеднаме|Строка|Различающееся имя подразделения.|
+|displayName|String|Имя объекта групповой политики из XML-содержимого объекта групповой политики|
+|аудистингуишеднаме|String|Различающееся имя подразделения.|
 |createdDateTime|DateTimeOffset|Дата и время создания Граупполицимигратионрепорт.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения Граупполицимигратионрепорт.|
 |граупполицикреатеддатетиме|DateTimeOffset|Дата и время создания Граупполицимигратионрепорт.|
 |граупполициластмодифиеддатетиме|DateTimeOffset|Дата и время последнего изменения Граупполицимигратионрепорт.|
 |мигратионреадинесс|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|Область действия Intune для связанного файлового объекта групповой политики. Возможные значения: `none`, `partial`, `complete`, `error`, `notApplicable`.|
-|таржетединактиведиректори|Логический|Свойство Targeted в Active Directory из XML-контента объекта групповой политики|
+|таржетединактиведиректори|Boolean|Свойство Targeted в Active Directory из XML-контента объекта групповой политики|
 |тоталсеттингскаунт|Int32|Общее количество параметров групповой политики из файла GPO.|
 |суппортедсеттингскаунт|Int32|Количество параметров групповой политики, поддерживаемых Intune.|
 |суппортедсеттингсперцент|Int32|Процент параметров групповой политики, поддерживаемых Intune.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполицимигратионрепорт](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -120,7 +120,6 @@ Content-Length: 716
   "supportedSettingsPercent": 8
 }
 ```
-
 
 
 
