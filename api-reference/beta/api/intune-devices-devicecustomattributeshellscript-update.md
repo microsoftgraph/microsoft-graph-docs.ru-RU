@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: aa48958a27c44f924f627ea5d133cc34b74804a1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e3a1680e8949ff85e156cb55bd0d68f3a79f8b62
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48704986"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49235184"
 ---
 # <a name="update-devicecustomattributeshellscript"></a>Обновление Девицекустоматтрибутешеллскрипт
 
@@ -29,7 +29,7 @@ ms.locfileid: "48704986"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,18 +46,18 @@ PATCH /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttribute
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для объекта настраиваемого атрибута.|
-|кустоматтрибутенаме|Строка|Имя настраиваемого атрибута.|
-|кустоматтрибутетипе|[девицекустоматтрибутевалуетипе](../resources/intune-devices-devicecustomattributevaluetype.md)|Ожидаемый тип значения настраиваемого атрибута. Возможные значения: `integer`, `string`, `dateTime`.|
-|displayName|Строка|Имя скрипта управления устройствами.|
-|description|Строка|Необязательное описание скрипта управления устройствами.|
+|id|String|Уникальный идентификатор для объекта настраиваемого атрибута.|
+|кустоматтрибутенаме|String|Имя настраиваемого атрибута.|
+|кустоматтрибутетипе|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|Ожидаемый тип значения настраиваемого атрибута. Возможные значения: `integer`, `string`, `dateTime`.|
+|displayName|String|Имя скрипта управления устройствами.|
+|description|String|Необязательное описание скрипта управления устройствами.|
 |скриптконтент|Binary|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами. Это свойство доступно только для чтения.|
@@ -67,7 +67,7 @@ PATCH /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttribute
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицекустоматтрибутешеллскрипт](../resources/intune-devices-devicecustomattributeshellscript.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -118,7 +118,6 @@ Content-Length: 585
   ]
 }
 ```
-
 
 
 

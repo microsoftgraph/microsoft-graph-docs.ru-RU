@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e6145aa7977aa7db3796b20360c0914f84dab5fb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2e552d1ee052572baddd484535b9395d1daca261
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685186"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49234148"
 ---
 # <a name="create-userexperienceanalyticsmetrichistory"></a>Создание Усерекспериенцеаналитиксметричистори
 
@@ -29,7 +29,7 @@ ms.locfileid: "48685186"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,19 +46,19 @@ POST /deviceManagement/userExperienceAnalyticsMetricHistory
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Усерекспериенцеаналитиксметричистори в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Усерекспериенцеаналитиксметричистори.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор истории метрики аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор истории метрики аналитики взаимодействия с пользователем.|
 |метрикдатетиме|DateTimeOffset|Дата и время метрики аналитики взаимодействия с пользователем.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксметричистори](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -89,7 +89,6 @@ Content-Length: 185
   "metricDateTime": "2017-01-01T00:00:28.4495993-08:00"
 }
 ```
-
 
 
 

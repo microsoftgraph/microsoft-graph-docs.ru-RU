@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ec414ff46da6c04d934eb689550e17f4922d49e5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 73192336e835ba9366e83fabdb6385772f906cf0
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726817"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49235191"
 ---
 # <a name="areglobalscriptsavailable-function"></a>Функция Ареглобалскриптсаваилабле
 
@@ -29,7 +29,7 @@ ms.locfileid: "48726817"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,10 +46,10 @@ GET /deviceManagement/deviceHealthScripts/areGlobalScriptsAvailable
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха эта функция возвращает `200 OK` код отклика и объект [глобалдевицехеалсскриптстате](../resources/intune-devices-globaldevicehealthscriptstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -71,7 +71,6 @@ Content-Length: 26
   "value": "pending"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1cbc113eeb240eb3ecc748d1051f648aaf891789
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5fc5febf7bad3073fe7c1ec2a68e25a5ef1e0b8b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707985"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49232747"
 ---
 # <a name="delete-resourceoperation"></a>Удаление resourceOperation
 
@@ -29,7 +29,7 @@ ms.locfileid: "48707985"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementRBAC.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementRBAC.ReadWrite.All|
+|Приложение|DeviceManagementRBAC.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ DELETE /deviceManagement/resourceOperations/{resourceOperationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/resourceOperations/{res
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

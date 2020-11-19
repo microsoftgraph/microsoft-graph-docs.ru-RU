@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 1fbdb73cf1db5769e7319002923cf7466c80f9e1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 18c5f6eee064d3d4b690bd759df6f210a6dbbc5f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731234"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49234246"
 ---
 # <a name="create-userexperienceanalyticsmetric"></a>Создание Усерекспериенцеаналитиксметрик
 
@@ -29,7 +29,7 @@ ms.locfileid: "48731234"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,20 +49,20 @@ POST /deviceManagement/userExperienceAnalyticsBaselines/{userExperienceAnalytics
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Усерекспериенцеаналитиксметрик в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Усерекспериенцеаналитиксметрик.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор метрики аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор метрики аналитики взаимодействия с пользователем.|
 |значение|Двойное с плавающей точкой|Значение метрики аналитики взаимодействия с пользователем.|
-|устройств|Строка|Единица измерения показателя взаимодействия с пользователем.|
+|устройств|String|Единица измерения показателя взаимодействия с пользователем.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксметрик](../resources/intune-devices-userexperienceanalyticsmetric.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -95,7 +95,6 @@ Content-Length: 177
   "unit": "Unit value"
 }
 ```
-
 
 
 

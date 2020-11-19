@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: fdbe0d1f088a2d4d207ebb2db92758d910fd5fe0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8c846a2dda0d39b0086398af51afe8ebd6a08bff
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685018"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49232734"
 ---
 # <a name="create-devicecategory"></a>Создание объекта deviceCategory
 
@@ -31,7 +31,7 @@ ms.locfileid: "48685018"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,7 +50,7 @@ POST /deviceManagement/deviceCategories
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса добавьте представление объекта deviceCategory в формате JSON.
 
@@ -58,10 +58,10 @@ POST /deviceManagement/deviceCategories
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор категории устройства. Только для чтения.|
+|id|String|Уникальный идентификатор категории устройства. Только для чтения.|
 |**оббоардинг**|
-|description|Строка|Необязательное описание категории устройств.|
-|displayName|Строка|Отображаемое имя категории устройств.|
+|description|String|Необязательное описание категории устройств.|
+|displayName|String|Отображаемое имя категории устройств.|
 
 ## <a name="response"></a>Отклик
 
@@ -101,7 +101,6 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
-
 
 
 

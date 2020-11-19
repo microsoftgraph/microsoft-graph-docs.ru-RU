@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b57240a8e883490b094bec7e16009f14c7970b58
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 55a8005a7e1ad223b099c0e07e120be819fe3465
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732925"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49235219"
 ---
 # <a name="create-devicehealthscript"></a>Создание Девицехеалсскрипт
 
@@ -29,7 +29,7 @@ ms.locfileid: "48732925"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,34 +46,34 @@ POST /deviceManagement/deviceHealthScripts
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицехеалсскрипт в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицехеалсскрипт.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сценария работоспособности устройства|
+|id|String|Уникальный идентификатор сценария работоспособности устройства|
 |publisher|String|Имя издателя сценария работоспособности устройства|
 |version|String|Версия сценария работоспособности устройства|
-|displayName|Строка|Имя сценария работоспособности устройства|
-|description|Строка|Описание сценария работоспособности устройства|
+|displayName|String|Имя сценария работоспособности устройства|
+|description|String|Описание сценария работоспособности устройства|
 |детектионскриптконтент|Binary|Весь контент скрипта обнаружения PowerShell|
 |ремедиатионскриптконтент|Binary|Все содержимое скрипта PowerShell об исправлении|
 |createdDateTime|DateTimeOffset|Метка времени создания сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Метка времени изменения сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Логический|Указывает, нужно ли проверять подпись скрипта|
-|runAs32Bit|Логический|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
+|Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта|
+|runAs32Bit|Boolean|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для сценария работоспособности устройства|
-|исглобалскрипт|Логический|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
-|хигхеставаилаблеверсион|Строка|Самая высокая доступная версия для собственного сценария Майкрософт|
+|исглобалскрипт|Boolean|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
+|хигхеставаилаблеверсион|String|Самая высокая доступная версия для собственного сценария Майкрософт|
 |детектионскриптпараметерс|Коллекция [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов Детектионскриптпараметерс в ComplexType.|
 |ремедиатионскриптпараметерс|Коллекция [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов Ремедиатионскриптпараметерс в ComplexType.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -172,7 +172,6 @@ Content-Length: 1393
   ]
 }
 ```
-
 
 
 

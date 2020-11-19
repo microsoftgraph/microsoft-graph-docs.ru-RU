@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 713dcd83950d69c87b97fd4d276c93708e984461
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 940e4bd8312c9bbec7aee2b77e9a3cde0878b5d4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692823"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49232468"
 ---
 # <a name="haspayloadlinks-action"></a>действие Хаспайлоадлинкс
 
@@ -30,7 +30,7 @@ ms.locfileid: "48692823"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,7 +48,7 @@ POST /deviceManagement/deviceManagementScripts/hasPayloadLinks
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -100,7 +100,6 @@ Content-Length: 249
   ]
 }
 ```
-
 
 
 

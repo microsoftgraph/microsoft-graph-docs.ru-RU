@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4a478b0f6a7d96d72a72df15c47541184bfdd1fa
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1afd493cae76dfc470964ef029027db63bb259f6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730961"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49233973"
 ---
 # <a name="update-userexperienceanalyticsmetrichistory"></a>Обновление Усерекспериенцеаналитиксметричистори
 
@@ -29,7 +29,7 @@ ms.locfileid: "48730961"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,19 +46,19 @@ PATCH /deviceManagement/userExperienceAnalyticsMetricHistory/{userExperienceAnal
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [усерекспериенцеаналитиксметричистори](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитиксметричистори](../resources/intune-devices-userexperienceanalyticsmetrichistory.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор истории метрики аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор истории метрики аналитики взаимодействия с пользователем.|
 |метрикдатетиме|DateTimeOffset|Дата и время метрики аналитики взаимодействия с пользователем.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерекспериенцеаналитиксметричистори](../resources/intune-devices-userexperienceanalyticsmetrichistory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -89,7 +89,6 @@ Content-Length: 185
   "metricDateTime": "2017-01-01T00:00:28.4495993-08:00"
 }
 ```
-
 
 
 

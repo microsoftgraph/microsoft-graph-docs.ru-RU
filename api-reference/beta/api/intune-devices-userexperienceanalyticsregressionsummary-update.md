@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 6e2511f54d2a975c494890edd5e12cecd21a22eb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b4d823c7bedb251659d13e0a2f4a0aae70626b01
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707348"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49233910"
 ---
 # <a name="update-userexperienceanalyticsregressionsummary"></a>Обновление Усерекспериенцеаналитиксрегрессионсуммари
 
@@ -29,7 +29,7 @@ ms.locfileid: "48707348"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,18 +46,18 @@ PATCH /deviceManagement/userExperienceAnalyticsRegressionSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [усерекспериенцеаналитиксрегрессионсуммари](../resources/intune-devices-userexperienceanalyticsregressionsummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитиксрегрессионсуммари](../resources/intune-devices-userexperienceanalyticsregressionsummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сводки по регрессии аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор сводки по регрессии аналитики взаимодействия с пользователем.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерекспериенцеаналитиксрегрессионсуммари](../resources/intune-devices-userexperienceanalyticsregressionsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -86,7 +86,6 @@ Content-Length: 131
   "id": "41683327-3327-4168-2733-684127336841"
 }
 ```
-
 
 
 

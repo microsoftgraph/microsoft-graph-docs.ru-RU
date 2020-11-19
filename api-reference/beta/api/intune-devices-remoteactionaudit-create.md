@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 84480ed72ecdd7c41863a53531ec5d9f778005ad
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e4195b2d244295d670df64dfaa851bc744509fdd
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48704044"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49234526"
 ---
 # <a name="create-remoteactionaudit"></a>Создание remoteActionAudit
 
@@ -29,7 +29,7 @@ ms.locfileid: "48704044"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,27 +46,27 @@ POST /deviceManagement/remoteActionAudits
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта remoteActionAudit в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании remoteActionAudit.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор отчета.|
+|id|String|Идентификатор отчета.|
 |deviceDisplayName|String|Имя устройства Intune.|
 |userName|String|\[рекомендуется \] вместо этого использовать свойства initiatedbyuserprincipalname.|
-|Свойства initiatedbyuserprincipalname|Строка|Пользователь, который инициировал действие с устройством, имеет формат UPN.|
+|Свойства initiatedbyuserprincipalname|String|Пользователь, который инициировал действие с устройством, имеет формат UPN.|
 |action|[ремотеактион](../resources/intune-devices-remoteaction.md)|Имя действия. Возможные значения:,,,,,,,,,,, `unknown` `factoryReset` `removeCompanyData` `resetPasscode` `remoteLock` `enableLostMode` `disableLostMode` `locateDevice` `rebootNow` `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser` `quickScan` , `fullScan` , `windowsDefenderUpdateSignatures` , `factoryResetKeepEnrollmentData` `updateDeviceAccount` `automaticRedeployment` `shutDown` `rotateBitLockerKeys` `rotateFileVaultKey` `getFileVaultKey` `setDeviceName` ,,,,,,,,,,,,,,.|
 |рекуестдатетиме|DateTimeOffset|Время, когда действие было выдано, заданное в формате UTC.|
-|deviceOwnerUserPrincipalName|Строка|Имя участника-пользователя для владельца устройства.|
-|deviceIMEI|Строка|IMEI устройства.|
+|deviceOwnerUserPrincipalName|String|Имя участника-пользователя для владельца устройства.|
+|deviceIMEI|String|IMEI устройства.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|манажеддевицеид|Строка|Цель действия.|
+|манажеддевицеид|String|Цель действия.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -113,7 +113,6 @@ Content-Length: 553
   "managedDeviceId": "Managed Device Id value"
 }
 ```
-
 
 
 

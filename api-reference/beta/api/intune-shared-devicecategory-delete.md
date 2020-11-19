@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 3fa99ef38b466cff77ba2b374b30b5b1abbba5e2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d71ba4df1dbf2f5616cba2aed2929cb936e64271
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685025"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49232769"
 ---
 # <a name="delete-devicecategory"></a>Удаление deviceCategory
 
@@ -29,7 +29,7 @@ ms.locfileid: "48685025"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -47,7 +47,7 @@ DELETE /deviceManagement/deviceCategories/{deviceCategoryId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -70,7 +70,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{devic
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

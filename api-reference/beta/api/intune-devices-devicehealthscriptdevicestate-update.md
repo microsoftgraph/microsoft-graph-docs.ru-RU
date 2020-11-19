@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5537e1bfa95780545df9e7c53f19c688477f0b78
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: daa79b87391aeec8265f8f6499e4addf8c3393cf
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736529"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49235135"
 ---
 # <a name="update-devicehealthscriptdevicestate"></a>Обновление Девицехеалсскриптдевицестате
 
@@ -29,7 +29,7 @@ ms.locfileid: "48736529"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,23 +46,23 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStat
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицехеалсскриптдевицестате](../resources/intune-devices-devicehealthscriptdevicestate.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицехеалсскриптдевицестате](../resources/intune-devices-devicehealthscriptdevicestate.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта состояния устройства сценария работоспособности. Это свойство доступно только для чтения.|
+|id|String|Ключ объекта состояния устройства сценария работоспособности. Это свойство доступно только для чтения.|
 |детектионстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние обнаружения с последнего выполнения сценария работоспособности устройства. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |ластстатеупдатедатетиме|DateTimeOffset|Последняя метка времени выполнения сценария работоспособности устройства|
 |експектедстатеупдатедатетиме|DateTimeOffset|Следующий штамп времени, когда ожидается выполнение сценария работоспособности устройства.|
 |lastSyncDateTime|DateTimeOffset|Время последнего синхронизации расширения управления Intune с Intune|
-|преремедиатиондетектионскриптаутпут|Строка|Выходные данные сценария обнаружения перед исправлением|
-|преремедиатиондетектионскриптеррор|Строка|Ошибка сценария обнаружения перед исправлением|
-|ремедиатионскриптеррор|Строка|Вывод ошибок сценария исправления|
-|постремедиатиондетектионскриптаутпут|Строка|Выходные данные сценария обнаружения после исправления|
-|постремедиатиондетектионскриптеррор|Строка|Ошибка сценария обнаружения после исправления|
+|преремедиатиондетектионскриптаутпут|String|Выходные данные сценария обнаружения перед исправлением|
+|преремедиатиондетектионскриптеррор|String|Ошибка сценария обнаружения перед исправлением|
+|ремедиатионскриптеррор|String|Вывод ошибок сценария исправления|
+|постремедиатиондетектионскриптаутпут|String|Выходные данные сценария обнаружения после исправления|
+|постремедиатиондетектионскриптеррор|String|Ошибка сценария обнаружения после исправления|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Состояние исправления с последнего выполнения скрипта работоспособности устройства. Возможные значения: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
 
 
@@ -116,7 +116,6 @@ Content-Length: 811
   "remediationState": "skipped"
 }
 ```
-
 
 
 

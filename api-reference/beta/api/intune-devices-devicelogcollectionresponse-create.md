@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9e39cf4af0af0ad183b262d524429bc52a2122cb
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f56a27bc54d883cca340a35e3413488c21314da1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693250"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49235058"
 ---
 # <a name="create-devicelogcollectionresponse"></a>Создание Девицелогколлектионреспонсе
 
@@ -29,7 +29,7 @@ ms.locfileid: "48693250"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,26 +46,26 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Девицелогколлектионреспонсе в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Девицелогколлектионреспонсе.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор в виде tenantId_deviceId_requestId|
+|id|String|Уникальный идентификатор в виде tenantId_deviceId_requestId|
 |status|String|Состояние запроса на сбор журналов|
 |манажеддевицеид|Guid|Идентификатор устройства|
 |errorCode|Int64|Код ошибки (при наличии). Допустимые значения — 9.22337203685478 E + 18 — 9.22337203685478 E + 18|
 |рекуестеддатетимеутк|DateTimeOffset|Дата и время запроса|
 |рецеиведдатетимеутк|DateTimeOffset|Дата и время получения запроса|
-|Свойства initiatedbyuserprincipalname|Строка|Имя участника-пользователя, который инициировал запрос.|
+|Свойства initiatedbyuserprincipalname|String|Имя участника-пользователя, который инициировал запрос.|
 |експиратиондатетимеутк|DateTimeOffset|Дата и время истечения срока действия журналов|
 |size|Двойное с плавающей точкой|Размер журналов. Допустимые значения — 1 79769313486232e308 E + 308 — 1 79769313486232e308 E + 308|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицелогколлектионреспонсе](../resources/intune-devices-devicelogcollectionresponse.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -110,7 +110,6 @@ Content-Length: 528
   "size": 1.3333333333333333
 }
 ```
-
 
 
 

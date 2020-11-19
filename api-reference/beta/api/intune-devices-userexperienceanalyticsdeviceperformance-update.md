@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 8b0e433c11a1d2b9409601764163d4126304d5c6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2b9101391c08609a8fdac976b528af05460a0448
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736508"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49234281"
 ---
 # <a name="update-userexperienceanalyticsdeviceperformance"></a>Обновление Усерекспериенцеаналитиксдевицеперформанце
 
@@ -29,7 +29,7 @@ ms.locfileid: "48736508"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,14 +46,14 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор устройства для загрузки устройства аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор устройства для загрузки устройства аналитики взаимодействия с пользователем.|
 |deviceName|String|Имя устройства службы аналитики взаимодействия с пользователем.|
 |model|String|Модель устройства аналитики взаимодействия с пользователем.|
 |manufacturer|String|Производитель устройства аналитики взаимодействия с пользователем.|
@@ -75,7 +75,7 @@ PATCH /deviceManagement/userExperienceAnalyticsDevicePerformance/{userExperience
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -140,7 +140,6 @@ Content-Length: 684
   "averageRestarts": 5.0
 }
 ```
-
 
 
 

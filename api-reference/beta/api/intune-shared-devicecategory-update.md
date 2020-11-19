@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0312497a4ea6589d89cc0e5dbd64fcb4de44f738
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9be951487979ecc9dd860a8626f87d1456934ecc
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729014"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49232706"
 ---
 # <a name="update-devicecategory"></a>Обновление объекта deviceCategory
 
@@ -29,11 +29,11 @@ ms.locfileid: "48729014"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
-| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение||
+| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
 | &nbsp; &nbsp; **Адаптация** | DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -65,7 +65,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса добавьте представление объекта [deviceCategory](../resources/intune-shared-devicecategory.md) в формате JSON.
 
@@ -73,10 +73,10 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор категории устройства. Только для чтения.|
+|id|String|Уникальный идентификатор категории устройства. Только для чтения.|
 |**Адаптация**|
-|description|Строка|Необязательное описание категории устройств.|
-|displayName|Строка|Отображаемое имя категории устройств.|
+|description|String|Необязательное описание категории устройств.|
+|displayName|String|Отображаемое имя категории устройств.|
 
 ## <a name="response"></a>Отклик
 
@@ -101,7 +101,7 @@ Content-length: 82
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. Свойства ответа будут зависеть от контекста.
 
@@ -117,7 +117,6 @@ Content-Length: 184
   "description": "Description value"
 }
 ```
-
 
 
 

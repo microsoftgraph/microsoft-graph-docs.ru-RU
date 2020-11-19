@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 83ab928a661ed00f3f0f78da3d2b457cd22ecaa2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6dcdb99b31608ce4712da2d1b8363aa09b5a5603
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702056"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49233959"
 ---
 # <a name="update-userexperienceanalyticsoverview"></a>Обновление Усерекспериенцеаналитиксовервиев
 
@@ -29,7 +29,7 @@ ms.locfileid: "48702056"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,14 +46,14 @@ PATCH /deviceManagement/userExperienceAnalyticsOverview
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [усерекспериенцеаналитиксовервиев](../resources/intune-devices-userexperienceanalyticsoverview.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [усерекспериенцеаналитиксовервиев](../resources/intune-devices-userexperienceanalyticsoverview.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для обзора аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор для обзора аналитики взаимодействия с пользователем.|
 |овераллскоре|Int32|Общий показатель аналитики взаимодействия с пользователем.|
 |девицебутперформанцеовераллскоре|Int32|Общая оценка производительности при загрузке устройства Analytics.|
 |бестпрактицесовераллскоре|Int32|Общая оценка рекомендаций по анализу пользовательских интерфейсов.|
@@ -133,7 +133,6 @@ Content-Length: 790
   "bestPracticesHealthState": "insufficientData"
 }
 ```
-
 
 
 
