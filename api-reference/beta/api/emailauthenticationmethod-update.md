@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: afff423fef59bb06af7659bd5de2b553b76ddca5
-ms.sourcegitcommit: d9457ac1b8c2e8ac4b9604dd9e116fd547d2bfbb
+ms.openlocfilehash: e1927a9ea081dee5bfe72aad7715a6434f219d79
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48796509"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352183"
 ---
 # <a name="update-emailauthenticationmethod"></a>Обновление Емаилаусентикатионмесод
 Пространство имен: microsoft.graph
@@ -25,13 +25,12 @@ ms.locfileid: "48796509"
 |Тип разрешения|Разрешения, действующие на себя (от большинства до минимальных привилегий)|Разрешения, действующие на других (по крайней мере для самых привилегированных)|
 |:---|:---|:--|
 |Делегированные (рабочая или учебная учетная запись)|Не поддерживается.|Усераусентикатионмесод. ReadWrite. ALL
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|Не поддерживается.
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|Не поддерживается.
 |Для приложений|Не поддерживается.|Не поддерживается.
 
 Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима одна из следующих [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный администратор
-* Глобальный читатель
 * Привилегированный администратор проверки подлинности
 * Администратор проверки подлинности
 

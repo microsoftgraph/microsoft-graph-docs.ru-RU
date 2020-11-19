@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 623346fa4ee70d95350dc1c27917f6059cf0b53c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3868abec69ca877d614c2e611aff8d469ada8a6f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706893"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307131"
 ---
 # <a name="devicemanagementcachedreportconfiguration-resource-type"></a>Тип ресурса Девицеманажементкачедрепортконфигуратион
 
@@ -34,12 +34,12 @@ ms.locfileid: "48706893"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для этой сущности|
-|репортнаме|Строка|Имя отчета|
-|filter|Строка|Фильтры, применяемые при создании отчета.|
+|id|String|Уникальный идентификатор для этой сущности|
+|репортнаме|String|Имя отчета|
+|filter|String|Фильтры, применяемые при создании отчета.|
 |select|Коллекция строк|Столбцы, выбранные из отчета|
 |orderBy|Коллекция строк|Упорядочение столбцов в отчете|
-|метаданных|Строка|Управляемые вызывающими метаданными метаданные, связанные с отчетом|
+|метаданных|String|Управляемые вызывающими метаданными метаданные, связанные с отчетом|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Состояние кэшированного отчета. Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |ластрефрешдатетиме|DateTimeOffset|Время последнего обновления кэшированного отчета|
 |expirationDateTime|DateTimeOffset|Время истечения срока действия кэшированного отчета|
@@ -73,7 +73,6 @@ ms.locfileid: "48706893"
   "expirationDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

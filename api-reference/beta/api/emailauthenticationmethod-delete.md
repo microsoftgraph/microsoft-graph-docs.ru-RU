@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b95f602c9b4180696b43753ba564f3604ce05846
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0602bdc0e619e87bc2d4f70d5ab668bc31066163
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955140"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352188"
 ---
 # <a name="delete-emailauthenticationmethod"></a>Удаление Емаилаусентикатионмесод
 Пространство имен: microsoft.graph
@@ -31,7 +31,6 @@ ms.locfileid: "48955140"
 Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный администратор
-* Глобальный читатель
 * Привилегированный администратор проверки подлинности
 * Администратор проверки подлинности
 

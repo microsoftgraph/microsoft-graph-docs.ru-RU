@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b81a3997902d2fae346d4ede7bfd701e8eae2ef3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 729f77d89c9ba8583fb6c875f2b224ab515e0086
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723247"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49306032"
 ---
 # <a name="update-applepushnotificationcertificate"></a>Обновление объекта applePushNotificationCertificate
 
@@ -46,21 +46,21 @@ PATCH /deviceManagement/applePushNotificationCertificate
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сертификата|
+|id|String|Уникальный идентификатор сертификата|
 |appleIdentifier|String|Идентификатор Apple Id учетной записи, используемой для создания MDM Push Certificate.|
 |topicIdentifier|String|Идентификатор темы.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата push-уведомлений Apple.|
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата push-уведомлений Apple.|
-|цертификатеуплоадстатус|Строка|Состояние отправки сертификата.|
-|цертификатеуплоадфаилуререасон|Строка|Причина сбоя отправки сертификата.|
-|цертификатесериалнумбер|Строка|Серийный номер сертификата. Это свойство доступно только для чтения.|
+|цертификатеуплоадстатус|String|Состояние отправки сертификата.|
+|цертификатеуплоадфаилуререасон|String|Причина сбоя отправки сертификата.|
+|цертификатесериалнумбер|String|Серийный номер сертификата. Это свойство доступно только для чтения.|
 |certificate|String|Пока не задокументировано.|
 
 
@@ -109,7 +109,6 @@ Content-Length: 594
   "certificate": "Certificate value"
 }
 ```
-
 
 
 

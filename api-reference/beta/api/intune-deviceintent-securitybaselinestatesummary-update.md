@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2cbad348157ddeac184ec6663d3558535418d2a1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5a6149219ca19ef2e168e918fa83257eb01cced4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729989"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49306053"
 ---
 # <a name="update-securitybaselinestatesummary"></a>Обновление Секуритибаселинестатесуммари
 
@@ -46,14 +46,14 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.s
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [секуритибаселинестатесуммари](../resources/intune-deviceintent-securitybaselinestatesummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [секуритибаселинестатесуммари](../resources/intune-deviceintent-securitybaselinestatesummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта.|
+|id|String|Уникальный идентификатор объекта.|
 |секурекаунт|Int32|Количество защищенных устройств|
 |нотсекурекаунт|Int32|Количество незащищенных устройств|
 |unknownCount|Int32|Количество неизвестных устройств.|
@@ -63,7 +63,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.s
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [секуритибаселинестатесуммари](../resources/intune-deviceintent-securitybaselinestatesummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -104,7 +104,6 @@ Content-Length: 262
   "notApplicableCount": 2
 }
 ```
-
 
 
 

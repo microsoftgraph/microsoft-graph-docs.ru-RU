@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 476d60bb81c9336125c1115b02eec3b13384909a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a139918ff836222abb6be70b5b7048d3d3a3beaf
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735402"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49308300"
 ---
 # <a name="unblockmanagedapps-action"></a>действие Унблоккманажедаппс
 
@@ -46,10 +46,10 @@ POST /users/{usersId}/unblockManagedApps
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/users/{usersId}/unblockManagedApps
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

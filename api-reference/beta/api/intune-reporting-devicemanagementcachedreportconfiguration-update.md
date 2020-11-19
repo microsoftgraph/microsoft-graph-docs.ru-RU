@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f77b3e134a60d5278ea29e1b32546c8a10895387
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: fdfa2512972323cb62672c6f639a95a77cc25e0e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698297"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307999"
 ---
 # <a name="update-devicemanagementcachedreportconfiguration"></a>Обновление Девицеманажементкачедрепортконфигуратион
 
@@ -46,26 +46,26 @@ PATCH /deviceManagement/reports/cachedReportConfigurations/{deviceManagementCach
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для этой сущности|
-|репортнаме|Строка|Имя отчета|
-|filter|Строка|Фильтры, применяемые при создании отчета.|
+|id|String|Уникальный идентификатор для этой сущности|
+|репортнаме|String|Имя отчета|
+|filter|String|Фильтры, применяемые при создании отчета.|
 |select|Коллекция строк|Столбцы, выбранные из отчета|
 |orderBy|Коллекция строк|Упорядочение столбцов в отчете|
-|метаданных|Строка|Управляемые вызывающими метаданными метаданные, связанные с отчетом|
+|метаданных|String|Управляемые вызывающими метаданными метаданные, связанные с отчетом|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Состояние кэшированного отчета. Возможные значения: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |ластрефрешдатетиме|DateTimeOffset|Время последнего обновления кэшированного отчета|
 |expirationDateTime|DateTimeOffset|Время истечения срока действия кэшированного отчета|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементкачедрепортконфигуратион](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -118,7 +118,6 @@ Content-Length: 467
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
-
 
 
 

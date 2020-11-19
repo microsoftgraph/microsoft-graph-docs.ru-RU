@@ -5,12 +5,12 @@ localization_priority: Normal
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: ed4d1c0cfc507931345d0932d9c9a52f2f7d1971
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8334ebdf8c001cde4784cc07e1d990ca307029cb
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970226"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352195"
 ---
 # <a name="get-profile"></a>Получение профиля
 
@@ -26,11 +26,11 @@ ms.locfileid: "48970226"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
-|:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                              |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
-| Для приложений                            | Не поддерживается.                              |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                      |
+|:---------------------------------------|:---------------------------------------------------------------------------------|
+| Делегированные (рабочая или учебная учетная запись)     | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
+| Делегированные (личная учетная запись Майкрософт) | User. Read, User. ReadWrite, User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL |
+| Application                            | User. ReadBasic. ALL, User. Read. ALL, User. ReadWrite. ALL                            |
 
 ## <a name="http-request"></a>HTTP-запрос
 

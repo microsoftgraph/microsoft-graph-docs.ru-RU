@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 02d4e3b2c1b028882aaa6f6b163e8f5d1fed37ea
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: da896ffeb0ba93a3f27fe7051384e7118cc9aeac
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726386"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307474"
 ---
 # <a name="windows10devicemodetype-enum-type"></a>тип перечисления windows10DeviceModeType
 
@@ -27,7 +27,6 @@ ms.locfileid: "48726386"
 |:---|:---|:---|
 |стандардконфигуратион|нуль|Стандартная конфигурация|
 |смодеконфигуратион|1,1|Конфигурация режима S|
-
 
 
 

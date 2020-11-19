@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: ce98be081cbebbe7de789dcd86bf6ce11ac2bdf8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b4d53fa1d7c5d24a16ed6afe6bee64fb9a2b8ce7
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698108"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307761"
 ---
 # <a name="delete-devicemanagementreportschedule"></a>Удаление Девицеманажементрепортсчедуле
 
@@ -46,7 +46,7 @@ DELETE /deviceManagement/reports/reportSchedules/{deviceManagementReportSchedule
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/reports/reportSchedules
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 984ca36ef108aa0f44699a701ce24846a0b20e7a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 0ec04fd784d6232974061e5adbca6a95da529156
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684514"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49306921"
 ---
 # <a name="deviceappmanagement-resource-type"></a>Тип ресурса deviceAppManagement
 
@@ -33,7 +33,7 @@ ms.locfileid: "48684514"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |**Адаптация**|
 |isEnabledForMicrosoftStoreForBusiness|Boolean|Указывает, включена ли для учетной запись синхронизация приложений из Microsoft Store для бизнеса.|
 |microsoftStoreForBusinessLanguage|String|Сведения о языковом стандарте, используемом для синхронизации приложений из Microsoft Store для бизнеса. Региональные параметры, относящиеся к стране или региону. Названия этих региональных параметров соответствуют стандарту RFC 4646 (для Windows Vista и более поздних версий). Используется формат <languagecode2>-<страна/код_региона2>, где <languagecode2> — это двухбуквенный код в нижнем регистре, полученный из стандарта ISO 639-1, а <страна/код_регион2> — код из двух прописных букв по стандарту ISO 3166. Например, en-US для английского (США) — это определенный региональный стандарт.|
@@ -83,7 +83,7 @@ ms.locfileid: "48684514"
 |вдаксупплементалполиЦиес|Коллекция [виндовсдефендераппликатионконтролсупплементалполици](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicy.md)|Коллекция дополнительных политик для управления приложением защитника Windows.|
 
 ## <a name="json-representation"></a>Представление JSON
-Ниже представлено описание ресурса в формате JSON.  Обратите внимание, что это пример; Ответы на запросы к реальным запросам будут содержать свойства, подходящие для контекста.
+Ниже представлено описание ресурса в формате JSON.  Обратите внимание, что это пример; Ответы на запросы к реальным запросам будут содержать свойства, подходящие для контекста.  
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -100,7 +100,6 @@ ms.locfileid: "48684514"
   "microsoftStoreForBusinessLastCompletedApplicationSyncTime": "String (timestamp)"
 }
 ```
-
 
 
 

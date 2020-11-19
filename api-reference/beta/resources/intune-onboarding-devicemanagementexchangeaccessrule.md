@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 1a9a7fe3474f53b7107fb7fe35c1a80f743cfb7b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8ecd6777327defe913818e984ca30d2bc6f47157
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697233"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307425"
 ---
 # <a name="devicemanagementexchangeaccessrule-resource-type"></a>Тип ресурса Девицеманажементексчанжеакцессруле
 
@@ -49,7 +49,6 @@ ms.locfileid: "48697233"
   "accessLevel": "String"
 }
 ```
-
 
 
 

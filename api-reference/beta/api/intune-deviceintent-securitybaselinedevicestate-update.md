@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5846405b0b14b4a36b470666d31dc86bc96ed091
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d783dff194d35bcfa09e1b0f1eef48273df065b2
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723310"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49306074"
 ---
 # <a name="update-securitybaselinedevicestate"></a>Обновление Секуритибаселинедевицестате
 
@@ -46,15 +46,15 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.s
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [секуритибаселинедевицестате](../resources/intune-deviceintent-securitybaselinedevicestate.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [секуритибаселинедевицестате](../resources/intune-deviceintent-securitybaselinedevicestate.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта|
-|манажеддевицеид|Строка|Идентификатор устройства Intune|
+|id|String|Уникальный идентификатор объекта|
+|манажеддевицеид|String|Идентификатор устройства Intune|
 |deviceDisplayName|String|Отображаемое имя устройства|
 |userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия нормативным требованиям безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
@@ -62,7 +62,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.s
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [секуритибаселинедевицестате](../resources/intune-deviceintent-securitybaselinedevicestate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -101,7 +101,6 @@ Content-Length: 359
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

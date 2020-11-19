@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 414deba06aa04acdd55aa6d8d42d0fa4a68915cd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8fbfb1ee3d545427bf5496e69b40f24f66565b78
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701860"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49308776"
 ---
 # <a name="get-defaultmanagedappprotection"></a>Get defaultManagedAppProtection
 
@@ -49,10 +49,10 @@ GET /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtecti
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/defaultManagedAppProtec
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5466
+Content-Length: 5543
 
 {
   "value": {
@@ -188,11 +188,12 @@ Content-Length: 5466
     "requiredAndroidSafetyNetEvaluationType": "hardwareBacked",
     "blockAfterCompanyPortalUpdateDeferralInDays": 11,
     "warnAfterCompanyPortalUpdateDeferralInDays": 10,
-    "wipeAfterCompanyPortalUpdateDeferralInDays": 10
+    "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
+    "deviceLockRequired": true,
+    "appActionIfDeviceLockNotSet": "wipe"
   }
 }
 ```
-
 
 
 

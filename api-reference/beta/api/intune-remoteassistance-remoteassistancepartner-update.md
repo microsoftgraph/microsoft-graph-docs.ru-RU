@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5d1c7ae72b0e59dbe04a4fe5b4e100e4ded03e53
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 258084c0515a075c8c40985e908d5b72457d07b1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698339"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49308056"
 ---
 # <a name="update-remoteassistancepartner"></a>Обновление объекта remoteAssistancePartner
 
@@ -46,15 +46,15 @@ PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор партнера.|
-|displayName|Строка|Отображаемое имя партнера.|
+|id|String|Уникальный идентификатор партнера.|
+|displayName|String|Отображаемое имя партнера.|
 |onboardingUrl|String|URL-адрес портала подключения партнера, где администратор может настроить свою службу удаленного помощника.|
 |onboardingStatus|[ремотеассистанцеонбоардингстатус](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|Понятное описание состояния текущего соединителя TeamViewer. Возможные значения: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Метка времени последнего запроса, отправленного в службу Intune партнером TEM.|
@@ -101,7 +101,6 @@ Content-Length: 390
   "onboardingRequestExpiryDateTime": "2017-01-01T00:02:07.7573274-08:00"
 }
 ```
-
 
 
 

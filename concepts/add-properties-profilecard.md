@@ -2,15 +2,15 @@
 title: Настройка карточки профиля с помощью API профиля в Microsoft Graph (предварительная версия)
 description: В этой статье описано, как настроить карточку профиля, сделав видимыми дополнительные атрибуты или добавив настраиваемые атрибуты.
 author: PollyNincevic
-localization_priority: Priority
+localization\_priority: Priority
 ms.prod: users
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 5df48bc8da848c6e5655467ad9ef39a8bb992026
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
-ms.translationtype: HT
+ms.openlocfilehash: 749851d32678617ab2c7b7b7d16d063686f815ce
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288786"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352349"
 ---
 # <a name="add-additional-properties-to-the-profile-card-using-the-profile-card-api-in-microsoft-graph-preview"></a>Добавление свойств в карточку профиля с помощью API карточки профиля в Microsoft Graph (предварительная версия)
 
@@ -18,47 +18,46 @@ ms.locfileid: "48288786"
 
 Используйте ресурс [profileCardProperty](/graph/api/resources/profilecardproperty?view=graph-rest-beta), чтобы отображать дополнительные свойства из Azure AD в карточках профилей для организации следующим образом:
 
-- Обеспечение видимости дополнительных атрибутов
-
-- Добавление настраиваемых атрибутов
+* Обеспечение видимости дополнительных атрибутов
+* Добавление настраиваемых атрибутов
 
 Дополнительные свойства отображаются в разделе **Контакт** карточки профиля в Microsoft 365.
 
 > [!NOTE]
->Операции в ресурсе **profileCardProperty**, использующем делегированные разрешения, требуют, чтобы у вошедшего пользователя была роль администратора клиента или глобального администратора.
+> Для выполнения операций над ресурсом **профилекардпроперти** , использующим делегированные разрешения, необходимо, чтобы вошедшего в систему пользователя была назначена роль "Администратор клиента" или "Глобальный администратор".
 
 ## <a name="make-additional-attributes-visible"></a>Обеспечение видимости дополнительных атрибутов
 
 Вы можете сделать видимыми в карточках профилей пользователей следующие атрибуты из Azure Active Directory (Azure AD). В этих атрибутах *регистр не учитывается*:
 
-- `UserPrincipalName`
-- `Fax`
-- `StreetAddress`
-- `PostalCode`
-- `StateOrProvince`
-- `Alias`
+* `UserPrincipalName`
+* `Fax`
+* `StreetAddress`
+* `PostalCode`
+* `StateOrProvince`
+* `Alias`
 
 В таблице ниже показано соответствие атрибутов Azure AD свойствам объекта [user](/graph/api/resources/user?view=graph-rest-beta) Microsoft Graph.
 
-|Атрибут Azure AD |Свойство объекта user|
-|:---------------|:----------|
-|UserPrincipalName|userPrincipalName |
-|Fax|faxNumber|
-|StreetAddress|streetAddress|
-|PostalCode|postalCode|
-|StateOrProvince|state
-|Alias|mailNickname
+| Атрибут Azure AD | Свойство объекта user |
+| ------------------ | -------------------- |
+| UserPrincipalName | userPrincipalName |
+| Fax | faxNumber |
+| StreetAddress | streetAddress |
+| PostalCode | postalCode |
+| StateOrProvince | state |
+| Alias | mailNickname |
 
-Вы можете добавить любой из этих атрибутов в карточку профиля, настроив [параметры организации](/graph/api/resources/organizationsettings?view=graph-rest-beta) и добавив его в качестве свойства *directoryPropertyName** ресурса **profileCardProperty** в Microsoft Graph. Когда вы делаете дополнительные атрибуты видимыми, вы должны использовать имена свойств в формате `en-us`. Вам не требуется добавлять локализованные значения. Дополнительные свойства будут автоматически отображаться с использованием языковых настроек, указанных пользователем в Microsoft 365.
+Вы можете добавить любой из этих атрибутов в карточку профиля, настроив [Параметры организации](/graph/api/resources/organizationsettings?view=graph-rest-beta) и добавив атрибут в качестве свойства **директорипропертинаме** объекта **профилекардпроперти** в Microsoft Graph. Когда вы делаете дополнительные атрибуты видимыми, вы должны использовать имена свойств в формате `en-us`. Вам не требуется добавлять локализованные значения. Дополнительные свойства будут автоматически отображаться с использованием языковых настроек, указанных пользователем в Microsoft 365.
 
 > [!IMPORTANT]
 > При добавлении атрибута в карточку профиля его отображение занимает до 24 часов.
 
 ## <a name="example"></a>Пример
 
-В следующем примере в карточке профиля отображается атрибут `Alias`:
+В приведенном ниже примере отображается `Alias` атрибут карточки профиля.
 
-```http
+``` http
 POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
 Content-Type: application/json
 
@@ -67,9 +66,9 @@ Content-Type: application/json
 }
 ```
 
-При успешном выполнении возвращается код отклика `201 OK` и объект **profileCardProperty** в тексте отклика. Значение атрибута `Alias` отображается в карточке профиля пользователя.  
+При успешном выполнении возвращается код отклика `201 OK` и объект **profileCardProperty** в тексте отклика. Значение `Alias` атрибута будет отображаться на карточке профиля пользователя.
 
-```http
+``` http
 HTTP/1.1 201 OK
 Content-type: application/json
 
@@ -89,8 +88,8 @@ Content-type: application/json
 
 В таблице ниже показано, как имена настраиваемых атрибутов расширений Azure AD соответствуют поддерживаемым значениям свойства **directoryPropertyName** ресурса [profileCardProperty](/graph/api/resources/profilecardproperty?view=graph-rest-beta). В именах настраиваемых атрибутов расширений Azure AD *регистр не учитывается*:
 
-|Настраиваемый атрибут расширения Azure AD | Значение, указываемое в качестве directoryPropertyName |
-|:--------------------|:-----------------|
+| Настраиваемый атрибут расширения Azure AD | Значение, указываемое в качестве directoryPropertyName |
+| ----------------------------------- | ----------------------------------------- |
 | extensionAttribute1 | customAttribute1 |
 | extensionAttribute2 | customAttribute2 |
 | extensionAttribute3 | customAttribute3 |
@@ -111,7 +110,7 @@ Content-type: application/json
 
 В следующем примере в карточку профиля добавляется первый настраиваемый атрибут расширения Azure AD, используемый для отображения имени **Cost center**. Для пользователей, выбравших в языковых настройках немецкий язык, отображаемым именем будет **Kostenstelle**.
 
-```http
+``` http
 POST https://graph.microsoft.com/beta/organization/{tenantid}/settings/profileCardProperties
 Content-Type: application/json
 
@@ -131,11 +130,11 @@ Content-Type: application/json
 }
 ```
 
-Если язык не поддерживается, имя свойства отображается с использованием значения по умолчанию.  
+Если язык не поддерживается, имя свойства отображается с использованием значения по умолчанию.
 
 При успешном выполнении возвращается код отклика `201 OK` и объект **profileCardProperty** в тексте отклика. В этом примере вы можете предположить, что в карточке профиля отображается **Kostenstelle** для всех пользователей, выбравших в языковых настройках немецкий язык. Для всех остальных пользователей в карточке профиля отображается **Cost center**.
 
-```http
+``` http
 HTTP/1.1 201 OK
 Content-type: application/json
 
@@ -157,12 +156,8 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-[Поиск идентификатора клиента Microsoft 365](/onedrive/find-your-office-365-tenant-id)
-
-[Тип ресурса onPremisesExtensionAttributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta)
-
-[Тип ресурса user](/graph/api/resources/user?view=graph-rest-beta)
-
-[Песочница Graph](https://developer.microsoft.com/graph/graph-explorer)
-
-[Получение ресурса profileCardProperty](/graph/api/profilecardproperty-get?view=graph-rest-beta)
+- [Поиск идентификатора клиента Microsoft 365](/onedrive/find-your-office-365-tenant-id)
+- [Тип ресурса onPremisesExtensionAttributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta)
+- [Тип ресурса user](/graph/api/resources/user?view=graph-rest-beta)
+- [Песочница Graph](https://developer.microsoft.com/graph/graph-explorer)
+- [Получение ресурса profileCardProperty](/graph/api/profilecardproperty-get?view=graph-rest-beta)

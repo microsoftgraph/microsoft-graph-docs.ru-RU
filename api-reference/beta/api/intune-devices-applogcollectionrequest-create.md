@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 14c0664b7644f54a7df688f1d1448dc972385ff7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 66a8f19f82186d066dc50eb6309e64c88516eda8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723240"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49306025"
 ---
 # <a name="create-applogcollectionrequest"></a>Создание appLogCollectionRequest
 
@@ -46,22 +46,22 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта appLogCollectionRequest в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании appLogCollectionRequest.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор. Это userId_DeviceId_AppId идентификатор.|
+|id|String|Уникальный идентификатор. Это userId_DeviceId_AppId идентификатор.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Запись состояния отправки. Возможные значения: `pending`, `completed`, `failed`.|
-|Ошибк|Строка|Сообщение об ошибке, если оно возникло во время процесса отправки|
+|Ошибк|String|Сообщение об ошибке, если оно возникло во время процесса отправки|
 |кустомлогфолдерс|Коллекция строк|Список папок журналов. |
 |completedDateTime|DateTimeOffset|Время, когда запрос на отправку журнала достигает состояния терминала|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -102,7 +102,6 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 187503ad87bb7dc8e71c201e7086ff3858d0247d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3c3089214c6100b945c504448ee07120d479b58a
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954481"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352181"
 ---
 # <a name="delete-fido2authenticationmethod"></a>Удаление fido2AuthenticationMethod
 Пространство имен: microsoft.graph
@@ -31,7 +31,6 @@ ms.locfileid: "48954481"
 Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима одна из следующих [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
 * Глобальный администратор
-* Глобальный читатель
 * Привилегированный администратор проверки подлинности
 * Администратор проверки подлинности
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 242b4906a52ffb9af540bd8fc44244c665dc2037
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: a98715d76933e0925d9b074a6d25788ee3b85ce6
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49081903"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352191"
 ---
 # <a name="list-orgcontacts"></a>Перечисление orgContacts
 
@@ -27,7 +27,7 @@ ms.locfileid: "49081903"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | OrgContact. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | OrgContact. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+|Application | OrgContact. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -35,13 +35,13 @@ ms.locfileid: "49081903"
 GET /contacts
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query_parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
+Этот метод поддерживает [параметры запроса OData](/graph/query_parameters) для настройки отклика, в том числе `$search`, `$count` и `$filter`. Вы можете использовать параметр `$search` в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров запроса `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`или применении `$filter` с параметром запроса `$orderby`. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search` или применении `$filter` с параметром запроса `$orderby`. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/contacts
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact",
+  "@odata.type": "microsoft.graph.orgContact",
   "isCollection": true
 } -->
 ```http
@@ -154,7 +154,7 @@ ConsistencyLevel: eventual
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact",
+  "@odata.type": "microsoft.graph.orgContact",
   "isCollection": true
 } -->
 ```http
@@ -187,7 +187,7 @@ ConsistencyLevel: eventual
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact",
+  "@odata.type": "microsoft.graph.orgContact",
   "isCollection": true
 } -->
 ```http
@@ -230,7 +230,7 @@ ConsistencyLevel: eventual
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact",
+  "@odata.type": "microsoft.graph.orgContact",
   "isCollection": true
 } -->
 ```http

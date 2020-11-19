@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2fde59572892565ff2701ba3736abc8cf422989f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1cc81629521097ec6faa1a687d2a0c51b4533b7d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709336"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49308503"
 ---
 # <a name="list-managedmobileapps"></a>Перечисление объектов managedMobileApp
 
@@ -49,10 +49,10 @@ GET /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedAppCon
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [managedMobileApp](../resources/intune-mam-managedmobileapp.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -84,7 +84,6 @@ Content-Length: 336
   ]
 }
 ```
-
 
 
 

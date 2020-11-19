@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f2a277d25a9adbf66a8d3b5e0e4e10c9101158c6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6b13d787ab2fdc3325838dfb48cf0e667cd2940b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698360"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49308223"
 ---
 # <a name="disconnect-action"></a>Действие disconnect
 
@@ -46,10 +46,10 @@ POST /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}/disc
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -65,7 +65,6 @@ POST https://graph.microsoft.com/beta/deviceManagement/remoteAssistancePartners/
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

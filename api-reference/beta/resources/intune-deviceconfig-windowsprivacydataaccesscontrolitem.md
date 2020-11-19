@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a040a24aaf4f51d5aec5b970cb2f9e4026732a7b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ba3eacb000635ba4ec47415fa091ff3b2fad9af6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684885"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307481"
 ---
 # <a name="windowsprivacydataaccesscontrolitem-resource-type"></a>Тип ресурса Виндовспривацидатаакцессконтролитем
 
@@ -34,10 +34,10 @@ ms.locfileid: "48684885"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ Виндовспривацидатаакцессконтролитем.|
+|id|String|Ключ Виндовспривацидатаакцессконтролитем.|
 |accessLevel|[виндовспривацидатаакцесслевел](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|Указывает уровень доступа для категории данных о конфиденциальности, в которую будет передано указанное приложение. Возможные значения: `notConfigured`, `forceAllow`, `forceDeny`, `userInControl`.|
 |Категория "|[виндовспривацидатакатегори](../resources/intune-deviceconfig-windowsprivacydatacategory.md)|Указывает категорию данных о конфиденциальности, к которой будет применяться конкретное управление доступом. Возможные значения:,,,,,,,,,,,,, `notConfigured` `accountInfo` `appsRunInBackground` `calendar` `callHistory` `camera` `contacts` `diagnosticsInfo` `email` `location` `messaging` `microphone` `motion` `notifications` , `phone` , `radios` `tasks` `syncWithDevices` `trustedDevices` ,, и.|
-|апппаккажефамилинаме|Строка|Имя семейства пакетов для приложения Windows. Если этот параметр установлен, уровень доступа применяется к указанному приложению.|
+|апппаккажефамилинаме|String|Имя семейства пакетов для приложения Windows. Если этот параметр установлен, уровень доступа применяется к указанному приложению.|
 |appDisplayName|String|Имя семейства пакетов для приложения Windows. Если этот параметр установлен, уровень доступа применяется к указанному приложению.|
 
 ## <a name="relationships"></a>Связи
@@ -61,7 +61,6 @@ ms.locfileid: "48684885"
   "appDisplayName": "String"
 }
 ```
-
 
 
 

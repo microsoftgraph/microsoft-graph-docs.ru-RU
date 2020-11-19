@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8602f6c55c1a7929f12cc68f046e230ab75aaaf5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 01b1296cfa8656af8f75549444fb39dd82ae64d3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702329"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307432"
 ---
 # <a name="enrollmentconfigurationassignment-resource-type"></a>Тип ресурса enrollmentConfigurationAssignment
 
@@ -34,10 +34,10 @@ ms.locfileid: "48702329"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ назначения конфигурации регистрации|
+|id|String|Ключ назначения конфигурации регистрации|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Представляет назначение управляемым устройствам в клиенте.|
 |source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Тип ресурса, используемого для развертывания, в группу, Direct или набор политик. Возможные значения: `direct`, `policySets`.|
-|Идентификатор|Строка|Идентификатор ресурса, используемого для развертывания в группе|
+|Идентификатор|String|Идентификатор ресурса, используемого для развертывания в группе|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -63,7 +63,6 @@ ms.locfileid: "48702329"
   "sourceId": "String"
 }
 ```
-
 
 
 

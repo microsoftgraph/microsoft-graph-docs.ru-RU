@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 6598b2bc7a6ee4c75c201ec86718f933696f7f1c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a4cb695d129f77409bfc83d902c10f2af511a86b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736102"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307439"
 ---
 # <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>тип перечисления Девицеманажементексчанжеконнекторсинктипе
 
@@ -27,7 +27,6 @@ ms.locfileid: "48736102"
 |:---|:---|:---|
 |Профиль выполнения FullSync|нуль|Обнаружение устройства в Exchange.|
 |Профиль выполнения deltasync|1,1|Обнаружение только устройства в Exchange, которое обновилось в окне "разностная синхронизация".|
-
 
 
 

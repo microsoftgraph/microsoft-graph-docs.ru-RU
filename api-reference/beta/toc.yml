@@ -1387,9 +1387,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Получение
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Сеанс
                 items:
-                  - name: Session
+                  - name: Сеанс
                     href: resources/callrecords-session.md
                   - name: List
                     href: api/callrecords-session-list.md
@@ -2176,6 +2176,8 @@ items:
                         href: api/intune-apps-macoslobapp-delete.md
                       - name: Обновление
                         href: api/intune-apps-macoslobapp-update.md
+                  - name: Параметры назначения бизнес-приложений macOS
+                    href: resources/intune-apps-macoslobappassignmentsettings.md
                   - name: Дочернее бизнес-приложение для macOS
                     href: resources/intune-apps-macoslobchildapp.md
                   - name: приложение мдатп macOS
@@ -3439,6 +3441,10 @@ items:
                         href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-update.md
+                  - name: Строка состояния настройки владельца устройства Android
+                    href: resources/intune-deviceconfig-androiddeviceownerkioskcustomizationstatusbar.md
+                  - name: Навигация по системе в средстве настройки владельца устройств Android
+                    href: resources/intune-deviceconfig-androiddeviceownerkioskcustomizationsystemnavigation.md
                   - name: Значок папки в режиме киоска владельца устройства Android
                     href: resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md
                   - name: Размер значков в полноэкранном режиме владельца устройства Android
@@ -4087,16 +4093,10 @@ items:
                         href: api/intune-deviceconfig-carttoclassassociation-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-carttoclassassociation-update.md
-                  - name: Целевое хранилище сертификатов
-                    href: resources/intune-deviceconfig-certificatedestinationstore.md
                   - name: Состояние выдачи сертификата
                     href: resources/intune-deviceconfig-certificateissuancestates.md
                   - name: Статус отзыва сертификатов
                     href: resources/intune-deviceconfig-certificaterevocationstatus.md
-                  - name: Хранилище сертификатов
-                    href: resources/intune-deviceconfig-certificatestore.md
-                  - name: Шкала срока действия сертификата
-                    href: resources/intune-deviceconfig-certificatevalidityperiodscale.md
                   - name: Разрешение на изменение параметров UEFI
                     href: resources/intune-deviceconfig-changeuefisettingspermission.md
                   - name: Код
@@ -4503,8 +4503,6 @@ items:
                     href: resources/intune-deviceconfig-encryptionreportpolicydetails.md
                   - name: Состояние шифрования
                     href: resources/intune-deviceconfig-encryptionstate.md
-                  - name: Расширенное использование ключа
-                    href: resources/intune-deviceconfig-extendedkeyusage.md
                   - name: Состояние хранилища файлов
                     href: resources/intune-deviceconfig-filevaultstate.md
                   - name: Тип метода проверки для списка отзыва сертификатов в брандмауэре
@@ -4885,8 +4883,6 @@ items:
                         href: api/intune-grouppolicy-grouppolicyuploadedpresentation-delete.md
                       - name: Обновление
                         href: api/intune-grouppolicy-grouppolicyuploadedpresentation-update.md
-                  - name: Хэш-алгоритмы
-                    href: resources/intune-deviceconfig-hashalgorithms.md
                   - name: Параметр доступа к рукописному вводу
                     href: resources/intune-deviceconfig-inkaccesssetting.md
                   - name: Первоначальная цель
@@ -5078,6 +5074,8 @@ items:
                     href: resources/intune-deviceconfig-iosnetworkusagerule.md
                   - name: Тип оповещений об уведомлениях iOS
                     href: resources/intune-deviceconfig-iosnotificationalerttype.md
+                  - name: видимость предварительного просмотра уведомлений iOS
+                    href: resources/intune-deviceconfig-iosnotificationpreviewvisibility.md
                   - name: Параметры уведомлений iOS
                     href: resources/intune-deviceconfig-iosnotificationsettings.md
                   - name: Профиль сертификатов PKCS для iOS
@@ -5212,16 +5210,10 @@ items:
                     href: resources/intune-deviceconfig-keyintegervaluepair.md
                   - name: Ключевое значение "ключевое значение"
                     href: resources/intune-deviceconfig-keyrealvaluepair.md
-                  - name: Размер ключа
-                    href: resources/intune-deviceconfig-keysize.md
-                  - name: Параметр поставщика хранилища ключей
-                    href: resources/intune-deviceconfig-keystorageprovideroption.md
                   - name: Ключевая строка значений ключа
                     href: resources/intune-deviceconfig-keystringvaluepair.md
                   - name: Комбинация типизированных типизированных значений
                     href: resources/intune-deviceconfig-keytypedvaluepair.md
-                  - name: Использование ключей
-                    href: resources/intune-deviceconfig-keyusages.md
                   - name: Значение ключа
                     href: resources/intune-deviceconfig-keyvalue.md
                   - name: Уровень проверки подлинности LAN Manager
@@ -5823,8 +5815,6 @@ items:
                     href: resources/intune-deviceconfig-specifiedcaptivenetworkplugins.md
                   - name: Параметры управления состоянием
                     href: resources/intune-deviceconfig-statemanagementsetting.md
-                  - name: Тип альтернативного имени субъекта
-                    href: resources/intune-deviceconfig-subjectalternativenametype.md
                   - name: Формат имени субъекта
                     href: resources/intune-deviceconfig-subjectnameformat.md
                   - name: Неподдерживаемая конфигурация устройства
@@ -5922,6 +5912,8 @@ items:
                     href: resources/intune-deviceconfig-welcomescreenmeetinginformation.md
                   - name: Метод проверки подлинности для Wi-Fi
                     href: resources/intune-deviceconfig-wifiauthenticationmethod.md
+                  - name: Тип проверки подлинности Wi-Fi
+                    href: resources/intune-deviceconfig-wifiauthenticationtype.md
                   - name: Параметры прокси-сервера для Wi-Fi
                     href: resources/intune-deviceconfig-wifiproxysetting.md
                   - name: Тип защиты Wi-Fi
@@ -7668,6 +7660,8 @@ items:
                     href: resources/intune-notification-notificationtemplatebrandingoptions.md
                   - name: Счетчик версии ОС
                     href: resources/intune-devices-osversioncount.md
+                  - name: Тип платформы
+                    href: resources/intune-esim-platformtype.md
                   - name: Состояние исправления
                     href: resources/intune-devices-remediationstate.md
                   - name: Удаленное действие
@@ -8016,6 +8010,8 @@ items:
                     href: resources/intune-troubleshooting-windowsautopilotdeploymentstate.md
                   - name: Тип регистрации для автоматического развертывания Windows
                     href: resources/intune-troubleshooting-windowsautopilotenrollmenttype.md
+                  - name: Состояние продукта защитника Windows
+                    href: resources/intune-devices-windowsdefenderproductstatus.md
                   - name: Результат действия "проверка Защитника Windows"
                     href: resources/intune-devices-windowsdefenderscanactionresult.md
                   - name: Учетная запись устройства с Windows
@@ -8448,6 +8444,19 @@ items:
                     href: resources/intune-onboarding-compliancemanagementpartnerassignment.md
                   - name: Данные об управлении устройствами и приложениями
                     href: resources/intune-onboarding-deviceandappmanagementdata.md
+                  - name: Конфигурация центра управления мобильными устройствами
+                    href: resources/intune-onboarding-devicecomanagementauthorityconfiguration.md
+                    items:
+                      - name: Список
+                        href: api/intune-onboarding-devicecomanagementauthorityconfiguration-list.md
+                      - name: Получение
+                        href: api/intune-onboarding-devicecomanagementauthorityconfiguration-get.md
+                      - name: Создание
+                        href: api/intune-onboarding-devicecomanagementauthorityconfiguration-create.md
+                      - name: Удалить
+                        href: api/intune-onboarding-devicecomanagementauthorityconfiguration-delete.md
+                      - name: Обновление
+                        href: api/intune-onboarding-devicecomanagementauthorityconfiguration-update.md
                   - name: Настройка ограничения регистрации устройств
                     href: resources/intune-onboarding-deviceenrollmentlimitconfiguration.md
                     items:
@@ -8803,6 +8812,12 @@ items:
                         href: api/intune-shared-androidmanagedappprotection-haspayloadlinks.md
                   - name: Параметры назначения приложений с управляемым хранилищем Android
                     href: resources/intune-shared-androidmanagedstoreappassignmentsettings.md
+                  - name: Целевое хранилище сертификатов
+                    href: resources/intune-shared-certificatedestinationstore.md
+                  - name: Хранилище сертификатов
+                    href: resources/intune-shared-certificatestore.md
+                  - name: Шкала срока действия сертификата
+                    href: resources/intune-shared-certificatevalidityperiodscale.md
                   - name: Действие портала компании
                     href: resources/intune-shared-companyportalaction.md
                   - name: Действие блокирования портала компании
@@ -8904,6 +8919,29 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
                       - name: Удалить
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
+                  - name: Отчеты службы управления устройствами
+                    href: resources/intune-shared-devicemanagementreports.md
+                    items:
+                      - name: Получение
+                        href: api/intune-reporting-devicemanagementreports-get.md
+                      - name: Обновление
+                        href: api/intune-reporting-devicemanagementreports-update.md
+                      - name: действие Жетдевиценонкомплианцерепорт
+                        href: api/intune-reporting-devicemanagementreports-getdevicenoncompliancereport.md
+                      - name: действие Жетполицинонкомплианцерепорт
+                        href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancereport.md
+                      - name: действие Жетполицинонкомплианцеметадата
+                        href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancemetadata.md
+                      - name: действие Жетполицинонкомплианцесуммарирепорт
+                        href: api/intune-reporting-devicemanagementreports-getpolicynoncompliancesummaryreport.md
+                      - name: действие Жетсеттингнонкомплианцерепорт
+                        href: api/intune-reporting-devicemanagementreports-getsettingnoncompliancereport.md
+                      - name: действие Жетрепортфилтерс
+                        href: api/intune-reporting-devicemanagementreports-getreportfilters.md
+                      - name: действие Жесисторикалрепорт
+                        href: api/intune-reporting-devicemanagementreports-gethistoricalreport.md
+                      - name: действие Жеткачедрепорт
+                        href: api/intune-reporting-devicemanagementreports-getcachedreport.md
                   - name: Сценарий управления устройствами
                     href: resources/intune-shared-devicemanagementscript.md
                     items:
@@ -8933,8 +8971,12 @@ items:
                     href: resources/intune-shared-enrollmentstate.md
                   - name: Объект назначения группы исключения
                     href: resources/intune-shared-exclusiongroupassignmenttarget.md
+                  - name: Расширенное использование ключа
+                    href: resources/intune-shared-extendedkeyusage.md
                   - name: Объект назначения группы
                     href: resources/intune-shared-groupassignmenttarget.md
+                  - name: Хэш-алгоритмы
+                    href: resources/intune-shared-hashalgorithms.md
                   - name: Намерение установки
                     href: resources/intune-shared-installintent.md
                   - name: Настройки назначения бизнес-приложения iOS
@@ -8981,6 +9023,12 @@ items:
                     href: resources/intune-shared-ipv4range.md
                   - name: Диапазон IPv6-адресов
                     href: resources/intune-shared-ipv6range.md
+                  - name: Размер ключа
+                    href: resources/intune-shared-keysize.md
+                  - name: Параметр поставщика хранилища ключей
+                    href: resources/intune-shared-keystorageprovideroption.md
+                  - name: Использование ключей
+                    href: resources/intune-shared-keyusages.md
                   - name: Пара "ключ-значение"
                     href: resources/intune-shared-keyvaluepair.md
                   - name: 'Настройки назначения приложения macOS, приобретенного по программе VPP'
@@ -9067,6 +9115,8 @@ items:
                     href: resources/intune-shared-saveduistategenerationoptions.md
                   - name: Настройка типа источника
                     href: resources/intune-shared-settingsourcetype.md
+                  - name: Тип альтернативного имени субъекта
+                    href: resources/intune-shared-subjectalternativenametype.md
                   - name: Целевая конфигурация управляемых приложений
                     href: resources/intune-shared-targetedmanagedappconfiguration.md
                     items:
@@ -9414,7 +9464,7 @@ items:
                 href: api/schemaextension-update.md
               - name: Удаление расширения схемы
                 href: api/schemaextension-delete.md
-      - name: Файлы
+      - name: Files
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
           - name: Обзор
@@ -9954,10 +10004,6 @@ items:
                     href: api/orgcontact-list.md
                   - name: Вывод контакта организации
                     href: api/orgcontact-get.md
-                  - name: Обновление контакта организации
-                    href: api/orgcontact-update.md
-                  - name: Удаление контакта организации
-                    href: api/orgcontact-delete.md
                   - name: Получение Дельта контакта для Организации
                     href: api/orgcontact-delta.md
                   - name: Группы

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7a0d1764b6efe20b5ec3ecca3fec624af1702110
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ab96688cae24ac60704ce08a7043f4321a4c6e71
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723201"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49309131"
 ---
 # <a name="list-managementconditionstatements"></a>Список Манажементкондитионстатементс
 
@@ -47,10 +47,10 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -89,7 +89,6 @@ Content-Length: 615
   ]
 }
 ```
-
 
 
 

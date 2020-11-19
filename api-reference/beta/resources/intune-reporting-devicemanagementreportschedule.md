@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: e5f55b056f3c20d164446c27d7c1a6d549d99ecf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 121940d6bad85ed63589ae62254e667d7fd81c0e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735150"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307096"
 ---
 # <a name="devicemanagementreportschedule-resource-type"></a>Тип ресурса Девицеманажементрепортсчедуле
 
@@ -34,16 +34,16 @@ ms.locfileid: "48735150"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для этой сущности|
-|репортсчедуленаме|Строка|Имя расписания|
+|id|String|Уникальный идентификатор для этой сущности|
+|репортсчедуленаме|String|Имя расписания|
 |subject|String|Тема запланированных отчетов, которые доставляются|
 |письма|Коллекция строк|Сообщения электронной почты, на которые доставляются запланированные отчеты|
 |recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Периодичность запланированной доставки отчета. Возможные значения: `none`, `daily`, `weekly`, `monthly`.|
 |startDateTime|DateTimeOffset|Время, когда начинается доставка запланированных отчетов|
 |endDateTime|DateTimeOffset|Время окончания доставки запланированных отчетов|
 |userId|String|Идентификатор пользователя, создавшего отчет|
-|репортнаме|Строка|Имя отчета|
-|filter|Строка|Фильтры, примененные к отчету|
+|репортнаме|String|Имя отчета|
+|filter|String|Фильтры, примененные к отчету|
 |select|Коллекция строк|Столбцы, выбранные из отчета|
 |orderBy|Коллекция строк|Упорядочение столбцов в отчете|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Формат запланированного отчета. Возможные значения: `csv`, `pdf`.|
@@ -83,7 +83,6 @@ ms.locfileid: "48735150"
   "format": "String"
 }
 ```
-
 
 
 
