@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 672911b61e84d1d94f3ab9721481c638224825f0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6b9d02814e37e3bbc3ec37818ccfa7071abb381f
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974310"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352441"
 ---
 # <a name="orgcontact-delta"></a>orgContact: Delta
 
@@ -29,7 +29,7 @@ ms.locfileid: "48974310"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | OrgContact. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
-|Для приложения | OrgContact. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+|Application | OrgContact. Read. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -51,7 +51,7 @@ GET /contacts/delta
 | Параметр запроса      | Тип   |Описание|
 |:---------------|:--------|:----------|
 | $deltatoken | string | [Токен состояния](/graph/delta-query-overview) возвращается в `deltaLink` URL-адресе предыдущего вызова функции **Delta** для той же коллекции контактов Организации, что указывает на завершение этого круга отслеживания изменений. Сохраните и примените весь `deltaLink` URL-адрес, включая этот маркер, в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
-| $skiptoken | string | [Маркер состояния](/graph/delta-query-overview) возвращается в `nextLink` URL-адресе предыдущего вызова функции **Delta** , указывая на то, что в коллекции контактов организации имеются дальнейшие изменения, которые необходимо отслеживать. |
+| $skiptoken | строка | [Маркер состояния](/graph/delta-query-overview) возвращается в `nextLink` URL-адресе предыдущего вызова функции **Delta** , указывая на то, что в коллекции контактов организации имеются дальнейшие изменения, которые необходимо отслеживать. |
 
 ### <a name="odata-query-parameters"></a>Параметры запросов OData
 
@@ -149,7 +149,7 @@ GET https://graph.microsoft.com/beta/contacts/delta
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact",
+  "@odata.type": "microsoft.graph.orgContact",
   "isCollection": true
 } -->
 
@@ -218,7 +218,7 @@ GET https://graph.microsoft.com/beta/contacts/delta?$select=displayName,jobTitle
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact",
+  "@odata.type": "microsoft.graph.orgContact",
   "isCollection": true
 } -->
 
@@ -282,7 +282,7 @@ Prefer: return=minimal
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact",
+  "@odata.type": "microsoft.graph.orgContact",
   "isCollection": true
 } -->
 

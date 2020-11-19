@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 189a1d9274f3a0a77392bb1ebca04911c7bf2c0a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c425af3a39a2a9f13a46792d8482d59804c8d37f
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47969446"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352158"
 ---
 # <a name="update-orgcontact"></a>Обновление orgcontact
 
@@ -38,22 +38,22 @@ PATCH /contacts/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |city|String||
-|country|String||
+|country|Строка||
 |department|String||
 |onPremisesSyncEnabled|Boolean||
-|displayName|String||
-|givenName;|String||
-|jobTitle;|String||
+|displayName|Строка||
+|givenName|String||
+|jobTitle|String||
 |onPremisesLastSyncDateTime|DateTimeOffset||
-|почта;|String||
+|mail|String||
 |mailNickname|String||
-|mobilePhone|String||
+|mobilePhone;|String||
 |officeLocation|String||
 |postalCode|String||
 |proxyAddresses|String||
@@ -64,7 +64,8 @@ PATCH /contacts/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [orgContact](../resources/orgcontact.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -104,28 +105,15 @@ Content-length: 222
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.orgcontact"
+  "@odata.type": "microsoft.graph.orgContact"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 222
-
-{
-  "businessPhones": [
-    "businessPhones-value"
-  ],
-  "city": "city-value",
-  "companyName": "companyName-value",
-  "country": "country-value",
-  "department": "department-value",
-  "displayName": "displayName-value"
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

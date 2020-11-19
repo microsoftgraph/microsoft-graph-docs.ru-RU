@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 56fe4f4a2141970f739c48b03fa50fde0f345a35
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6cb586bbebe13c6c02d0c1d3e48d9d7cb819ac5e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732855"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310757"
 ---
 # <a name="delete-devicehealthscriptassignment"></a>Удаление Девицехеалсскриптассигнмент
 
@@ -47,7 +47,7 @@ DELETE /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/assi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -66,7 +66,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{de
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

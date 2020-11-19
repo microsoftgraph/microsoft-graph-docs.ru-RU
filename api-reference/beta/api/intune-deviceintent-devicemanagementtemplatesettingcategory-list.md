@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7395ae2183301d5283162da520a5a7385a194e56
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b3b293eb80e24b03f3e44b214fb19f69c0c88505
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707358"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49311156"
 ---
 # <a name="list-devicemanagementtemplatesettingcategories"></a>Список Девицеманажементтемплатесеттингкатегориес
 
@@ -46,10 +46,10 @@ GET /deviceManagement/templates/{deviceManagementTemplateId}/categories
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицеманажементтемплатесеттингкатегори](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -78,7 +78,6 @@ Content-Length: 250
   ]
 }
 ```
-
 
 
 

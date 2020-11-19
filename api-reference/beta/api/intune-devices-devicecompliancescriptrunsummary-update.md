@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 05734a63702ee3fe284484c138211bcdafae29ed
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8b9f723b924028a73facdee32073508f1743511a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728741"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310869"
 ---
 # <a name="update-devicecompliancescriptrunsummary"></a>Обновление Девицекомплианцескриптрунсуммари
 
@@ -46,14 +46,14 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/runSu
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицекомплианцескриптрунсуммари](../resources/intune-devices-devicecompliancescriptrunsummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицекомплианцескриптрунсуммари](../resources/intune-devices-devicecompliancescriptrunsummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключевой объект сводки запуска сценария соответствия устройства. Это свойство доступно только для чтения.|
+|id|String|Ключевой объект сводки запуска сценария соответствия устройства. Это свойство доступно только для чтения.|
 |ноиссуедетектеддевицекаунт|Int32|Количество устройств, для которых сценарий обнаружения не обнаружил проблему, и устройство находится в работоспособном состоянии. Допустимые значения: от 2147483648 до 2147483647|
 |иссуедетектеддевицекаунт|Int32|Количество устройств, для которых сценарий обнаружения обнаружил неполадку. Допустимые значения: от 2147483648 до 2147483647|
 |детектионскриптеррордевицекаунт|Int32|Количество устройств, на которых возникла ошибка при выполнении сценария обнаружения и который не был выполнен. Допустимые значения: от 2147483648 до 2147483647|
@@ -62,7 +62,7 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/runSu
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицекомплианцескриптрунсуммари](../resources/intune-devices-devicecompliancescriptrunsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -101,7 +101,6 @@ Content-Length: 344
   "lastScriptRunDateTime": "2017-01-01T00:01:17.4310553-08:00"
 }
 ```
-
 
 
 

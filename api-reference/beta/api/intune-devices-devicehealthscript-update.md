@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7ee4966e9726df0faadddf830af74b02ec4100a4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6aac160d0f3184a3ec1ce9d84d1ba94c03a5bb56
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732876"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310806"
 ---
 # <a name="update-devicehealthscript"></a>Обновление Девицехеалсскрипт
 
@@ -46,34 +46,34 @@ PATCH /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сценария работоспособности устройства|
+|id|String|Уникальный идентификатор сценария работоспособности устройства|
 |publisher|String|Имя издателя сценария работоспособности устройства|
 |version|String|Версия сценария работоспособности устройства|
-|displayName|Строка|Имя сценария работоспособности устройства|
-|description|Строка|Описание сценария работоспособности устройства|
+|displayName|String|Имя сценария работоспособности устройства|
+|description|String|Описание сценария работоспособности устройства|
 |детектионскриптконтент|Binary|Весь контент скрипта обнаружения PowerShell|
 |ремедиатионскриптконтент|Binary|Все содержимое скрипта PowerShell об исправлении|
 |createdDateTime|DateTimeOffset|Метка времени создания сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Метка времени изменения сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Логический|Указывает, нужно ли проверять подпись скрипта|
-|runAs32Bit|Логический|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
+|Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта|
+|runAs32Bit|Boolean|Указывает, следует ли выполнять скрипты PowerShell как 32-разрядные|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для сценария работоспособности устройства|
-|исглобалскрипт|Логический|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
-|хигхеставаилаблеверсион|Строка|Самая высокая доступная версия для собственного сценария Майкрософт|
+|исглобалскрипт|Boolean|Определяет, является ли этот сценарий фирменным (Майкрософт). Специальные сценарии доступны только для чтения|
+|хигхеставаилаблеверсион|String|Самая высокая доступная версия для собственного сценария Майкрософт|
 |детектионскриптпараметерс|Коллекция [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов Детектионскриптпараметерс в ComplexType.|
 |ремедиатионскриптпараметерс|Коллекция [девицехеалсскриптпараметер](../resources/intune-devices-devicehealthscriptparameter.md)|Список объектов Ремедиатионскриптпараметерс в ComplexType.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицехеалсскрипт](../resources/intune-devices-devicehealthscript.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -172,7 +172,6 @@ Content-Length: 1393
   ]
 }
 ```
-
 
 
 

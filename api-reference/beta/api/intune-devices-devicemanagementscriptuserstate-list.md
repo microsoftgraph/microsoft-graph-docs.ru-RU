@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7d7d5462e1420db5bbf9a5935dbab1308a399572
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 989ba836f3e109673509b93c82a6b1f0c17589e8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708244"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310554"
 ---
 # <a name="list-devicemanagementscriptuserstates"></a>Список Девицеманажементскриптусерстатес
 
@@ -48,10 +48,10 @@ GET /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeSh
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [девицеманажементскриптусерстате](../resources/intune-devices-devicemanagementscriptuserstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -81,7 +81,6 @@ Content-Length: 282
   ]
 }
 ```
-
 
 
 

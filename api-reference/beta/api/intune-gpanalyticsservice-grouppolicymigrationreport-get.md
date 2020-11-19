@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 048aeb4158a28eb95642dbf136177a2e2d9691a9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 08c71d53d898df562d228c8264b8e55a8dba5cbe
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728678"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49309141"
 ---
 # <a name="get-grouppolicymigrationreport"></a>Получение Граупполицимигратионрепорт
 
@@ -49,10 +49,10 @@ GET /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [граупполицимигратионрепорт](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -89,7 +89,6 @@ Content-Length: 763
   }
 }
 ```
-
 
 
 

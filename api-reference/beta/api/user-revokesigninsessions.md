@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 5d6f9a4f8bc432b3c4f916e1411eff5242e743c7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a8d99e33d03d6800d51d814b8397547503a97cba
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48978837"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352431"
 ---
 # <a name="user-revokesigninsessions"></a>Пользователь: Ревокесигнинсессионс
 
@@ -31,9 +31,9 @@ ms.locfileid: "48978837"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL |
+|Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложения                            | Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Для приложений                            | User.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

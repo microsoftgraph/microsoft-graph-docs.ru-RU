@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f1bb3c273d99e97b890df8f9499c5a1dc445c3a6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 86dcf5f230faf1d5650b808996902b0c867f22aa
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701664"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49307691"
 ---
 # <a name="delete-devicemanagementautopilotevent"></a>Удаление Девицеманажементаутопилотевент
 
@@ -46,7 +46,7 @@ DELETE /deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{device
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

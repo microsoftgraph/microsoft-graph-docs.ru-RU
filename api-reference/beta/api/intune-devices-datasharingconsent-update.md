@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5c90f9188af9c704929692c4b2ae32911022b319
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b7a417a30b8c34da52d151ce64cc9f655fabdbdd
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698689"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310995"
 ---
 # <a name="update-datasharingconsent"></a>Обновление Даташарингконсент
 
@@ -46,24 +46,24 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [даташарингконсент](../resources/intune-devices-datasharingconsent.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [даташарингконсент](../resources/intune-devices-datasharingconsent.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор согласия общего доступа к данным|
-|сервицедисплайнаме|Строка|Отображаемое имя рабочего процесса службы|
-|термсурл|Строка|Термсурл для согласия общего доступа к данным|
-|granted|Логический|Состояние предоставления согласия на общий доступ к данным|
+|id|String|Идентификатор согласия общего доступа к данным|
+|сервицедисплайнаме|String|Отображаемое имя рабочего процесса службы|
+|термсурл|String|Термсурл для согласия общего доступа к данным|
+|granted|Boolean|Состояние предоставления согласия на общий доступ к данным|
 |грантдатетиме|DateTimeOffset|Для этой учетной записи предоставлено согласие по времени|
-|грантедбюпн|Строка|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
-|грантедбюсерид|Строка|UserId пользователя, который предоставил согласие для этой учетной записи|
+|грантедбюпн|String|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
+|грантедбюсерид|String|UserId пользователя, который предоставил согласие для этой учетной записи|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [даташарингконсент](../resources/intune-devices-datasharingconsent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -104,7 +104,6 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
-
 
 
 

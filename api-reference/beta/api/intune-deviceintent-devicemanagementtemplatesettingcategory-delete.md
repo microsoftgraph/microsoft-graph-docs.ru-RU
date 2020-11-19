@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: d89c64d5687a84dad8bae92ed39c819b143a8014
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9c9fd00e4a26af282df4f98abc82c179e5e91105
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48726110"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49311170"
 ---
 # <a name="delete-devicemanagementtemplatesettingcategory"></a>Удаление Девицеманажементтемплатесеттингкатегори
 
@@ -46,7 +46,7 @@ DELETE /deviceManagement/templates/{deviceManagementTemplateId}/categories/{devi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/templates/{deviceManage
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

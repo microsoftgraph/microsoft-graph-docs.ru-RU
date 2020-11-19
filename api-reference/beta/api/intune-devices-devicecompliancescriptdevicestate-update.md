@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 7326fcc510c2b65ca7776076a9062eccc8c0cc7b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c961a524f77f0a72c97c6f4b9967089ef5ea8806
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728776"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49310883"
 ---
 # <a name="update-devicecompliancescriptdevicestate"></a>Обновление Девицекомплианцескриптдевицестате
 
@@ -46,24 +46,24 @@ PATCH /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/devic
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [девицекомплианцескриптдевицестате](../resources/intune-devices-devicecompliancescriptdevicestate.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицекомплианцескриптдевицестате](../resources/intune-devices-devicecompliancescriptdevicestate.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта состояния "сценарий соответствия требованиям устройства". Это свойство доступно только для чтения.|
+|id|String|Ключ объекта состояния "сценарий соответствия требованиям устройства". Это свойство доступно только для чтения.|
 |детектионстате|[рунстате](../resources/intune-shared-runstate.md)|Состояние обнаружения с последнего выполнения скрипта соответствия устройств требованиям. Возможные значения: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |ластстатеупдатедатетиме|DateTimeOffset|Последняя метка времени выполнения сценария соответствия требованиям устройства|
 |експектедстатеупдатедатетиме|DateTimeOffset|Следующий штамп времени, когда ожидается выполнение сценария соответствия устройства|
 |lastSyncDateTime|DateTimeOffset|Время последнего синхронизации расширения управления Intune с Intune|
-|скриптаутпут|Строка|Выходные данные сценария обнаружения|
-|скриптеррор|Строка|Ошибка сценария обнаружения|
+|скриптаутпут|String|Выходные данные сценария обнаружения|
+|скриптеррор|String|Ошибка сценария обнаружения|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицекомплианцескриптдевицестате](../resources/intune-devices-devicecompliancescriptdevicestate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -104,7 +104,6 @@ Content-Length: 436
   "scriptError": "Script Error value"
 }
 ```
-
 
 
 

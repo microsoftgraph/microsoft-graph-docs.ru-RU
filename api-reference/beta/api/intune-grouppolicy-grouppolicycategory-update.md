@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 96f85928b0691e249a7674f9201366458d440969
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9e766f9742a04197ea5750ee727040754c034f3e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48685102"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49309119"
 ---
 # <a name="update-grouppolicycategory"></a>Обновление Граупполицикатегори
 
@@ -49,21 +49,21 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Идентификатор строки отображаемого имени категории|
-|Корень|Логический|Определяет, является ли категория корневой категорией|
-|id|Строка|Ключ объекта.|
+|displayName|String|Идентификатор строки отображаемого имени категории|
+|Корень|Boolean|Определяет, является ли категория корневой категорией|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -97,7 +97,6 @@ Content-Length: 233
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 
