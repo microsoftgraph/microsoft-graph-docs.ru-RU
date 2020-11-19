@@ -5,45 +5,45 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 039a3f49c877a9c54d11a88351fa6e5fd6c349d4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3d1eb3e3d94ba6b2bd56d50fdf8035c57da4be8b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702350"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49266783"
 ---
-# <a name="managedappstatusraw-resource-type"></a><span data-ttu-id="2264d-103">Тип ресурса managedAppStatusRaw</span><span class="sxs-lookup"><span data-stu-id="2264d-103">managedAppStatusRaw resource type</span></span>
+# <a name="managedappstatusraw-resource-type"></a><span data-ttu-id="a8642-103">Тип ресурса managedAppStatusRaw</span><span class="sxs-lookup"><span data-stu-id="a8642-103">managedAppStatusRaw resource type</span></span>
 
-<span data-ttu-id="2264d-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2264d-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="a8642-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a8642-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="2264d-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2264d-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="a8642-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a8642-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="2264d-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="2264d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a8642-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="a8642-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2264d-107">Представляет нетипизированный отчет о состоянии, касающийся конфигурации и защиты приложений организации.</span><span class="sxs-lookup"><span data-stu-id="2264d-107">Represents an un-typed status report about organizations app protection and configuration.</span></span>
+<span data-ttu-id="a8642-107">Представляет нетипизированный отчет о состоянии, касающийся конфигурации и защиты приложений организации.</span><span class="sxs-lookup"><span data-stu-id="a8642-107">Represents an un-typed status report about organizations app protection and configuration.</span></span>
 
 
-<span data-ttu-id="2264d-108">Наследуется от [managedAppStatus](../resources/intune-mam-managedappstatus.md).</span><span class="sxs-lookup"><span data-stu-id="2264d-108">Inherits from [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span></span>
+<span data-ttu-id="a8642-108">Наследуется от [managedAppStatus](../resources/intune-mam-managedappstatus.md).</span><span class="sxs-lookup"><span data-stu-id="a8642-108">Inherits from [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span></span>
 
-## <a name="methods"></a><span data-ttu-id="2264d-109">Методы</span><span class="sxs-lookup"><span data-stu-id="2264d-109">Methods</span></span>
-|<span data-ttu-id="2264d-110">Метод</span><span class="sxs-lookup"><span data-stu-id="2264d-110">Method</span></span>|<span data-ttu-id="2264d-111">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="2264d-111">Return Type</span></span>|<span data-ttu-id="2264d-112">Описание</span><span class="sxs-lookup"><span data-stu-id="2264d-112">Description</span></span>|
+## <a name="methods"></a><span data-ttu-id="a8642-109">Методы</span><span class="sxs-lookup"><span data-stu-id="a8642-109">Methods</span></span>
+|<span data-ttu-id="a8642-110">Метод</span><span class="sxs-lookup"><span data-stu-id="a8642-110">Method</span></span>|<span data-ttu-id="a8642-111">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="a8642-111">Return Type</span></span>|<span data-ttu-id="a8642-112">Описание</span><span class="sxs-lookup"><span data-stu-id="a8642-112">Description</span></span>|
 |:---|:---|:---|
-|[<span data-ttu-id="2264d-113">Перечисление managedAppStatusRaws</span><span class="sxs-lookup"><span data-stu-id="2264d-113">List managedAppStatusRaws</span></span>](../api/intune-mam-managedappstatusraw-list.md)|<span data-ttu-id="2264d-114">Коллекция [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md)</span><span class="sxs-lookup"><span data-stu-id="2264d-114">[managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) collection</span></span>|<span data-ttu-id="2264d-115">Перечисление свойств и связей объектов [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md).</span><span class="sxs-lookup"><span data-stu-id="2264d-115">List properties and relationships of the [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) objects.</span></span>|
-|[<span data-ttu-id="2264d-116">Получение managedAppStatusRaw</span><span class="sxs-lookup"><span data-stu-id="2264d-116">Get managedAppStatusRaw</span></span>](../api/intune-mam-managedappstatusraw-get.md)|[<span data-ttu-id="2264d-117">managedAppStatusRaw</span><span class="sxs-lookup"><span data-stu-id="2264d-117">managedAppStatusRaw</span></span>](../resources/intune-mam-managedappstatusraw.md)|<span data-ttu-id="2264d-118">Считывание свойств и связей объекта [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md).</span><span class="sxs-lookup"><span data-stu-id="2264d-118">Read properties and relationships of the [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) object.</span></span>|
+|[<span data-ttu-id="a8642-113">Перечисление managedAppStatusRaws</span><span class="sxs-lookup"><span data-stu-id="a8642-113">List managedAppStatusRaws</span></span>](../api/intune-mam-managedappstatusraw-list.md)|<span data-ttu-id="a8642-114">Коллекция [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md)</span><span class="sxs-lookup"><span data-stu-id="a8642-114">[managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) collection</span></span>|<span data-ttu-id="a8642-115">Перечисление свойств и связей объектов [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md).</span><span class="sxs-lookup"><span data-stu-id="a8642-115">List properties and relationships of the [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) objects.</span></span>|
+|[<span data-ttu-id="a8642-116">Получение managedAppStatusRaw</span><span class="sxs-lookup"><span data-stu-id="a8642-116">Get managedAppStatusRaw</span></span>](../api/intune-mam-managedappstatusraw-get.md)|[<span data-ttu-id="a8642-117">managedAppStatusRaw</span><span class="sxs-lookup"><span data-stu-id="a8642-117">managedAppStatusRaw</span></span>](../resources/intune-mam-managedappstatusraw.md)|<span data-ttu-id="a8642-118">Считывание свойств и связей объекта [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md).</span><span class="sxs-lookup"><span data-stu-id="a8642-118">Read properties and relationships of the [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md) object.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="2264d-119">Свойства</span><span class="sxs-lookup"><span data-stu-id="2264d-119">Properties</span></span>
-|<span data-ttu-id="2264d-120">Свойство</span><span class="sxs-lookup"><span data-stu-id="2264d-120">Property</span></span>|<span data-ttu-id="2264d-121">Тип</span><span class="sxs-lookup"><span data-stu-id="2264d-121">Type</span></span>|<span data-ttu-id="2264d-122">Описание</span><span class="sxs-lookup"><span data-stu-id="2264d-122">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a8642-119">Свойства</span><span class="sxs-lookup"><span data-stu-id="a8642-119">Properties</span></span>
+|<span data-ttu-id="a8642-120">Свойство</span><span class="sxs-lookup"><span data-stu-id="a8642-120">Property</span></span>|<span data-ttu-id="a8642-121">Тип</span><span class="sxs-lookup"><span data-stu-id="a8642-121">Type</span></span>|<span data-ttu-id="a8642-122">Описание</span><span class="sxs-lookup"><span data-stu-id="a8642-122">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2264d-123">displayName</span><span class="sxs-lookup"><span data-stu-id="2264d-123">displayName</span></span>|<span data-ttu-id="2264d-124">Строка</span><span class="sxs-lookup"><span data-stu-id="2264d-124">String</span></span>|<span data-ttu-id="2264d-125">Понятное имя отчета о состоянии.</span><span class="sxs-lookup"><span data-stu-id="2264d-125">Friendly name of the status report.</span></span> <span data-ttu-id="2264d-126">Наследуется от объекта [managedAppStatus](../resources/intune-mam-managedappstatus.md).</span><span class="sxs-lookup"><span data-stu-id="2264d-126">Inherited from [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span></span>|
-|<span data-ttu-id="2264d-127">id</span><span class="sxs-lookup"><span data-stu-id="2264d-127">id</span></span>|<span data-ttu-id="2264d-128">Строка</span><span class="sxs-lookup"><span data-stu-id="2264d-128">String</span></span>|<span data-ttu-id="2264d-129">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="2264d-129">Key of the entity.</span></span> <span data-ttu-id="2264d-130">Наследуется от объекта [managedAppStatus](../resources/intune-mam-managedappstatus.md).</span><span class="sxs-lookup"><span data-stu-id="2264d-130">Inherited from [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span></span>|
-|<span data-ttu-id="2264d-131">version</span><span class="sxs-lookup"><span data-stu-id="2264d-131">version</span></span>|<span data-ttu-id="2264d-132">String</span><span class="sxs-lookup"><span data-stu-id="2264d-132">String</span></span>|<span data-ttu-id="2264d-133">Версия объекта.</span><span class="sxs-lookup"><span data-stu-id="2264d-133">Version of the entity.</span></span> <span data-ttu-id="2264d-134">Наследуется от объекта [managedAppStatus](../resources/intune-mam-managedappstatus.md).</span><span class="sxs-lookup"><span data-stu-id="2264d-134">Inherited from [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span></span>|
-|<span data-ttu-id="2264d-135">content</span><span class="sxs-lookup"><span data-stu-id="2264d-135">content</span></span>|[<span data-ttu-id="2264d-136">Json</span><span class="sxs-lookup"><span data-stu-id="2264d-136">Json</span></span>](../resources/intune-mam-json.md)|<span data-ttu-id="2264d-137">Содержимое отчета о состоянии.</span><span class="sxs-lookup"><span data-stu-id="2264d-137">Status report content.</span></span>|
+|<span data-ttu-id="a8642-123">displayName</span><span class="sxs-lookup"><span data-stu-id="a8642-123">displayName</span></span>|<span data-ttu-id="a8642-124">String</span><span class="sxs-lookup"><span data-stu-id="a8642-124">String</span></span>|<span data-ttu-id="a8642-125">Понятное имя отчета о состоянии.</span><span class="sxs-lookup"><span data-stu-id="a8642-125">Friendly name of the status report.</span></span> <span data-ttu-id="a8642-126">Наследуется от объекта [managedAppStatus](../resources/intune-mam-managedappstatus.md).</span><span class="sxs-lookup"><span data-stu-id="a8642-126">Inherited from [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span></span>|
+|<span data-ttu-id="a8642-127">id</span><span class="sxs-lookup"><span data-stu-id="a8642-127">id</span></span>|<span data-ttu-id="a8642-128">String</span><span class="sxs-lookup"><span data-stu-id="a8642-128">String</span></span>|<span data-ttu-id="a8642-129">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="a8642-129">Key of the entity.</span></span> <span data-ttu-id="a8642-130">Наследуется от объекта [managedAppStatus](../resources/intune-mam-managedappstatus.md).</span><span class="sxs-lookup"><span data-stu-id="a8642-130">Inherited from [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span></span>|
+|<span data-ttu-id="a8642-131">version</span><span class="sxs-lookup"><span data-stu-id="a8642-131">version</span></span>|<span data-ttu-id="a8642-132">String</span><span class="sxs-lookup"><span data-stu-id="a8642-132">String</span></span>|<span data-ttu-id="a8642-133">Версия объекта.</span><span class="sxs-lookup"><span data-stu-id="a8642-133">Version of the entity.</span></span> <span data-ttu-id="a8642-134">Наследуется от объекта [managedAppStatus](../resources/intune-mam-managedappstatus.md).</span><span class="sxs-lookup"><span data-stu-id="a8642-134">Inherited from [managedAppStatus](../resources/intune-mam-managedappstatus.md)</span></span>|
+|<span data-ttu-id="a8642-135">content</span><span class="sxs-lookup"><span data-stu-id="a8642-135">content</span></span>|[<span data-ttu-id="a8642-136">Json</span><span class="sxs-lookup"><span data-stu-id="a8642-136">Json</span></span>](../resources/intune-mam-json.md)|<span data-ttu-id="a8642-137">Содержимое отчета о состоянии.</span><span class="sxs-lookup"><span data-stu-id="a8642-137">Status report content.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="2264d-138">Связи</span><span class="sxs-lookup"><span data-stu-id="2264d-138">Relationships</span></span>
-<span data-ttu-id="2264d-139">Нет</span><span class="sxs-lookup"><span data-stu-id="2264d-139">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="a8642-138">Связи</span><span class="sxs-lookup"><span data-stu-id="a8642-138">Relationships</span></span>
+<span data-ttu-id="a8642-139">Нет</span><span class="sxs-lookup"><span data-stu-id="a8642-139">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="2264d-140">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2264d-140">JSON Representation</span></span>
-<span data-ttu-id="2264d-141">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2264d-141">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a8642-140">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a8642-140">JSON Representation</span></span>
+<span data-ttu-id="a8642-141">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a8642-141">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -61,7 +61,6 @@ ms.locfileid: "48702350"
   }
 }
 ```
-
 
 
 
