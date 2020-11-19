@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0f4ba5a06ae6528d76bfc31539baa6d6d8d89b21
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6fc2c8e9ee838c18b92289f9fe5414592a98b950
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731885"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49242982"
 ---
 # <a name="list-androidcustomconfigurations"></a>Перечисление объектов androidCustomConfiguration
 
@@ -29,7 +29,7 @@ ms.locfileid: "48731885"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -47,10 +47,10 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [androidCustomConfiguration](../resources/intune-deviceconfig-androidcustomconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1606
+Content-Length: 1638
 
 {
   "value": [
@@ -108,14 +108,14 @@ Content-Length: 1606
           "@odata.type": "microsoft.graph.omaSetting",
           "displayName": "Display Name value",
           "description": "Description value",
-          "omaUri": "Oma Uri value"
+          "omaUri": "Oma Uri value",
+          "isEncrypted": true
         }
       ]
     }
   ]
 }
 ```
-
 
 
 

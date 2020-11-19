@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f5e3ed4fc6d1197cb873ca4d689d6c0c58442b84
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 53238bdb656967ccc3e230532270057d1cb5f07c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48714894"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49244285"
 ---
 # <a name="get-windowsofficeclientconfiguration"></a>Получение Виндовсоффицеклиентконфигуратион
 
@@ -29,7 +29,7 @@ ms.locfileid: "48714894"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration. ReadWrite. ALL DeviceManagementConfiguration. Read. ALL|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration. ReadWrite. ALL DeviceManagementConfiguration. Read. ALL|
+|Приложение|DeviceManagementConfiguration. ReadWrite. ALL DeviceManagementConfiguration. Read. ALL|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -49,10 +49,10 @@ GET /officeConfiguration/clientConfigurations/{key}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [виндовсоффицеклиентконфигуратион](../resources/intune-cirrus-windowsofficeclientconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -103,7 +103,6 @@ Content-Length: 1144
   }
 }
 ```
-
 
 
 

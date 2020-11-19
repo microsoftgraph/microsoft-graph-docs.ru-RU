@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e98d82c610f30217764d33dda52574d2d3adea6f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6c16bda97a7d341c8152d442e34c2b66641f3e04
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702196"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49243655"
 ---
 # <a name="create-termsandconditionsgroupassignment"></a>Создание Термсандкондитионсграупассигнмент
 
@@ -29,7 +29,7 @@ ms.locfileid: "48702196"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementServiceConfig.ReadWrite.All|
+|Приложение|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,19 +46,19 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignment
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Термсандкондитионсграупассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Термсандкондитионсграупассигнмент.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта.|
-|таржетграупид|Строка|Уникальный идентификатор группы, которой назначена политика T&C.|
+|id|String|Уникальный идентификатор объекта.|
+|таржетграупид|String|Уникальный идентификатор группы, которой назначена политика T&C.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [термсандкондитионсграупассигнмент](../resources/intune-companyterms-termsandconditionsgroupassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -89,7 +89,6 @@ Content-Length: 169
   "targetGroupId": "Target Group Id value"
 }
 ```
-
 
 
 

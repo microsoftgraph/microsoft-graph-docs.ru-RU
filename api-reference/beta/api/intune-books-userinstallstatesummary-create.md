@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: b0b571b40d3d9480de003b0eef56c573ce891420
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 9451fa9f9dac406d1c94036e0bde5d40d430a73a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730278"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49244683"
 ---
 # <a name="create-userinstallstatesummary"></a>Создание объекта userInstallStateSummary
 
@@ -29,7 +29,7 @@ ms.locfileid: "48730278"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementApps.ReadWrite.All|
+|Приложение|DeviceManagementApps.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,14 +46,14 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта userInstallStateSummary в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта userInstallStateSummary.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |userName|String|Имя пользователя.|
 |installedDeviceCount|Int32|Количество установленных устройств.|
 |failedDeviceCount|Int32|Количество устройств со сбоями.|
@@ -98,7 +98,6 @@ Content-Length: 238
   "notInstalledDeviceCount": 7
 }
 ```
-
 
 
 

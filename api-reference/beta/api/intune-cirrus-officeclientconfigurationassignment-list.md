@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 0dfa2834b63b9072e6eb39f00b36256dd2917eb6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 570281f3961f1f4449ae9050cd77b12863452fc3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48714936"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49244404"
 ---
 # <a name="list-officeclientconfigurationassignments"></a>Список Оффицеклиентконфигуратионассигнментс
 
@@ -29,7 +29,7 @@ ms.locfileid: "48714936"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|* * TODO: определение областей * *|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|* * TODO: определение областей * *|
+|Приложение|* * TODO: определение областей * *|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,10 +46,10 @@ GET /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/assi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [оффицеклиентконфигуратионассигнмент](../resources/intune-cirrus-officeclientconfigurationassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -79,7 +79,6 @@ Content-Length: 274
   ]
 }
 ```
-
 
 
 

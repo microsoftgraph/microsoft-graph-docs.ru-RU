@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 17d40695f53c98ba350eb9376fe5fb8be9c476f3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4e65a21e402c261d57dd33dcf880aa564d886f9c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48714999"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49244425"
 ---
 # <a name="delete-officeclientconfigurationassignment"></a>Удаление Оффицеклиентконфигуратионассигнмент
 
@@ -29,7 +29,7 @@ ms.locfileid: "48714999"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|* * TODO: определение областей * *|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|* * TODO: определение областей * *|
+|Приложение|* * TODO: определение областей * *|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ DELETE /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/a
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 15a280d246a7af5ad6ae3a7bffde171632ba13a3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: aa0ce371f61b13b5b987fc82fe5329305ec30e65
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48690156"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49244579"
 ---
 # <a name="assign-action"></a>Действие назначения
 
@@ -29,7 +29,7 @@ ms.locfileid: "48690156"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,7 +46,7 @@ POST /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/ass
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -57,7 +57,7 @@ POST /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/ass
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении это действие возвращает `200 OK` код отклика и коллекцию [оффицеклиентконфигуратионассигнмент](../resources/intune-cirrus-officeclientconfigurationassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -102,7 +102,6 @@ Content-Length: 274
   ]
 }
 ```
-
 
 
 

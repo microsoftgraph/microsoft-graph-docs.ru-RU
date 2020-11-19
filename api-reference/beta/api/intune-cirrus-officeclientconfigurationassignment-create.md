@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 94e034b62bfa9208a7693034bd118eaa4ed9b2b4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 777c26c1a41cf5106d9a3beff713e744190235da
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730257"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49244495"
 ---
 # <a name="create-officeclientconfigurationassignment"></a>Создание Оффицеклиентконфигуратионассигнмент
 
@@ -29,7 +29,7 @@ ms.locfileid: "48730257"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,19 +46,19 @@ POST /officeConfiguration/clientConfigurations/{key}/assignments
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Оффицеклиентконфигуратионассигнмент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Оффицеклиентконфигуратионассигнмент.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор объекта Оффицеконфигуратионассигнмент.|
+|id|String|Идентификатор объекта Оффицеконфигуратионассигнмент.|
 |target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Целевое назначение, заданное администратором.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 Created` код отклика и объект [оффицеклиентконфигуратионассигнмент](../resources/intune-cirrus-officeclientconfigurationassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -93,7 +93,6 @@ Content-Length: 221
   }
 }
 ```
-
 
 
 
