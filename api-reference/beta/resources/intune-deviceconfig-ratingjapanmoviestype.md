@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 2ed05b7e42ab90bce709019bd9c3431a66631880
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: daa03195912299e71a567c6f7d82aed001277842
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707089"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49222977"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>тип перечисления Ратингжапанмовиестипе
 
@@ -31,7 +31,6 @@ ms.locfileid: "48707089"
 |паренталгуиданце|4|Классификация стр – 12 запрашивает разрешения родителей для пользователей в течение 12|
 |agesAbove15|4 |R15 + Classification подходит для зрителей от 15 или более ранних версий|
 |agesAbove18|5 |R18 + Classification подходит для зрителей от 18 лет и старше|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4f93baffe86d2c17fa77769184c09b6529300ec1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4c6cc5e2f51265f062b6556438a177e4842e04e1
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48736060"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49222480"
 ---
 # <a name="haspayloadlinkresultitem-resource-type"></a>Тип ресурса Хаспайлоадлинкресултитем
 
@@ -25,9 +25,9 @@ ms.locfileid: "48736060"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|пайлоадид|Строка|Ключ полезных данных в формате GUID.|
-|хаслинк|Логический|Указывает, содержит ли полезная нагрузка какую бы то ни было ссылку.|
-|error|Строка|Сведения об исключении указывают на успешность проверки этого элемента. Пустая строка без ошибки.|
+|пайлоадид|String|Ключ полезных данных в формате GUID.|
+|хаслинк|Boolean|Указывает, содержит ли полезная нагрузка какую бы то ни было ссылку.|
+|error|String|Сведения об исключении указывают на успешность проверки этого элемента. Пустая строка без ошибки.|
 |sources|Коллекция [девицеандаппманажементассигнментсаурце](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Причина, по которой получена ссылка.|
 
 ## <a name="relationships"></a>Связи
@@ -51,7 +51,6 @@ ms.locfileid: "48736060"
   ]
 }
 ```
-
 
 
 

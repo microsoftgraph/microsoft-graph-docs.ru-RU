@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3421ed11beada57b75a52a3bd2bd7b5ccba325e3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3d509feed7de9740b71fe8aa5865ce894bdc6010
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707110"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49223033"
 ---
 # <a name="ratingirelandmoviestype-enum-type"></a>тип перечисления Ратингиреландмовиестипе
 
@@ -33,7 +33,6 @@ ms.locfileid: "48707110"
 |agesAbove15|5 |Классификация 15A подходит для зрителей от 15 или более ранних версий|
 |agesAbove16|6 |16-Классификация подходит для зрителей от 16 или более ранних версий|
 |взрослые|7 |18 классификация, подходящая только для взрослых|
-
 
 
 

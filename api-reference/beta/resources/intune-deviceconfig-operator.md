@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 31332a696f3ca8a5c8962439ceaafd766d76f53c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 99718c56c818bd0d3cc750f092a116337256a0fb
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722938"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49223117"
 ---
 # <a name="operator-enum-type"></a>тип перечисления оператора
 
@@ -25,7 +25,7 @@ ms.locfileid: "48722938"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Оператор None.|
+|Нет|нуль|Оператор None.|
 |и|1,1|Оператор and.|
 |или|2|Оператор OR.|
 |значения сумм|4|Оператору Equals.|
@@ -36,7 +36,7 @@ ms.locfileid: "48722938"
 |нотбетвин|8 |Оператор Нотбетвин.|
 |греатерекуалс|9 |Оператор Греатерекуалс.|
 |лессекуалс|10 |Оператор Лессекуалс.|
-|дайтимебетвин|-11:00|Оператор Дайтимебетвин.|
+|дайтимебетвин|11 |Оператор Дайтимебетвин.|
 |beginsWith|12 |Оператор BeginsWith.|
 |нотбегинсвис|13 |Оператор Нотбегинсвис.|
 |endsWith|14 |Оператор EndsWith.|
@@ -50,7 +50,6 @@ ms.locfileid: "48722938"
 |ордередсетекуалс|22|Оператор Ордередсетекуалс.|
 |субсетоф|23|Оператор Субсетоф.|
 |ексклудесалл|открыт|Оператор Ексклудесалл.|
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: b3f3064568a9fa60474a6de454252cceb113e0a6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d20782272bb5cd7b89d27c5070ff9cc1df178570
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691185"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49222781"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>тип перечисления Нотификатионтемплатебрандингоптионс
 
@@ -25,12 +25,11 @@ ms.locfileid: "48691185"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Нет фирменной символики.|
+|Нет|нуль|Нет фирменной символики.|
 |инклудекомпанилого|1,1|Включите логотип компании.|
 |инклудекомпанинаме|2|Включите название компании.|
 |инклудеконтактинформатион|4 |Включение контактной информации.|
 |инклудекомпанипорталлинк|8 |Включение ссылки на корпоративный портал.|
-
 
 
 

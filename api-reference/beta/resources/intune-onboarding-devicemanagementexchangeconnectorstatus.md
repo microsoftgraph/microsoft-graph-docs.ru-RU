@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 984a9687f49e55bd09d71affcfd22af0a2202a38
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8fae4cbfcd6cdf26b006dc1ec516124fa8b2cbd8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725367"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49222536"
 ---
 # <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>тип перечисления Девицеманажементексчанжеконнекторстатус
 
@@ -25,11 +25,10 @@ ms.locfileid: "48725367"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Соединитель не существует.|
+|Нет|нуль|Соединитель не существует.|
 |коннектионпендинг|1,1|Ожидание подключения к среде Exchange.|
 |присоединен|2|Подключение к среде Exchange|
 |подключения|4|Отключено от среды Exchange|
-
 
 
 

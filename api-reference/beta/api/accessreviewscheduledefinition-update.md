@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5eeed9d305c51ebd9a50e6714ba56fe4aea35d27
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 06b69bb9e6defcbadb4694d4042fa3bb690ee0f4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000979"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49221788"
 ---
 # <a name="update-accessreviewscheduledefinition"></a>Обновление Акцессревиевсчедуледефинитион
 
@@ -31,7 +31,7 @@ ms.locfileid: "49000979"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений                            | AccessReview.ReadWrite.All |
+|Приложение                            | AccessReview.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,15 +51,15 @@ PUT /identityGovernance/accessReviews/definitions/{review-id}
 
 | Свойство | Тип | Описание |
 |:-------------|:------------|:------------|
-| displayName | Строка | Имя серии проверки доступа. |
-| дескриптионфорадминс | Строка | Контекст проверки, предоставленной администраторам. |
-| дескриптионфорревиеверс | Строка | Контекст проверки, предоставленной для рецензентов. |
-| settings | [акцессревиевсчедулесеттингс](../resources/accessreviewschedulesettings.md) | Параметры ряда проверки доступа. Обратитесь к разделу [акцессревиевсчедулесеттингс](../resources/accessreviewscheduledefinition.md). |
+| displayName | String | Имя серии проверки доступа. |
+| дескриптионфорадминс | String | Контекст проверки, предоставленной администраторам. |
+| дескриптионфорревиеверс | String | Контекст проверки, предоставленной для рецензентов. |
+| параметры | [акцессревиевсчедулесеттингс](../resources/accessreviewschedulesettings.md) | Параметры ряда проверки доступа. Обратитесь к разделу [акцессревиевсчедулесеттингс](../resources/accessreviewscheduledefinition.md). |
 | обсужден | Коллекция [акцессревиевревиеверскопе](../resources/accessreviewreviewerscope.md)|  Определяет, кто является рецензентом. Если ничего не указано, проверка является самостоятельным обзором (пользователи, Просмотрели проверку собственного доступа). Свойство рецензентов можно обновлять только в том случае, если назначены отдельные пользователи в качестве проверяющих. Обратитесь к разделу [акцессревиевревиеверскопе](../resources/accessreviewscheduledefinition.md). | 
 
 Обратите внимание, что запрос PUT ожидает, что передается весь объект, в который включаются все доступные для записи свойства, а не только обновляемые свойства.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `204, Accepted` код отклика и без текста отклика.
 
 ## <a name="examples"></a>Примеры
@@ -70,6 +70,8 @@ PUT /identityGovernance/accessReviews/definitions/{review-id}
 В теле запроса добавьте представление новых свойств объекта [акцессревиевсчедуледефинитион](../resources/accessreviewscheduledefinition.md) в формате JSON.
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accessReviewScheduleDefinition"
@@ -113,6 +115,16 @@ PUT https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
   }
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accessreviewscheduledefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-accessreviewscheduledefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 

@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9bf7cfb768134ce51e3f06b291da6726fe11a297
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 1dc30208652af0989ab0b6bf0b35ebfdd50bc65d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000983"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49221857"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>Создание Акцессревиевсчедуледефинитион
 
@@ -28,7 +28,7 @@ ms.locfileid: "49000983"
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений                            | AccessReview.ReadWrite.All |
+|Приложение                            | AccessReview.ReadWrite.All |
 
 Вошедшего в систему пользователя также должен находиться в роли каталога, позволяющей им создавать проверку доступа.  Более подробную информацию можно узнать в статье требования к ролям и разрешениям для [рецензирования Access](../resources/accessreviewsv2-root.md).
 
@@ -50,16 +50,16 @@ POST /identityGovernance/accessReviews/definitions
 
 | Свойство | Тип | Описание |
 |:-------------|:------------|:------------|
-| displayName | Строка | Имя серии проверки доступа. Обязательный.|
-| дескриптионфорадминс | строка | Контекст проверки, предоставленной администраторам. Обязательный. |
-  дескриптионфорревиеверс | строка | Контекст проверки, предоставленной для рецензентов. Обязательный. |
+| displayName | String | Имя серии проверки доступа. Обязательный.|
+| дескриптионфорадминс | string | Контекст проверки, предоставленной администраторам. Обязательный. |
+  дескриптионфорревиеверс | string | Контекст проверки, предоставленной для рецензентов. Обязательный. |
 | scope | [акцессревиевскопе](../resources/accessreviewscope.md) | Определяет область пользователей, проверенных в группе. Обратитесь к разделу  [акцессревиевскопе](../resources/accessreviewscheduledefinition.md). Обязательный.| 
 | инстанцеенумератионскопе | [акцессревиевскопе](../resources/accessreviewscope.md) | В случае проверки всех групп это определяет область, в которой будут проверяться группы. Обратитесь к разделу [акцессревиевскопе](../resources/accessreviewscheduledefinition.md). | 
-| settings | [акцессревиевсчедулесеттингс](../resources/accessreviewschedulesettings.md)| Параметры ряда проверки доступа. Здесь определяется повторение. Обратитесь к разделу [акцессревиевсчедулесеттингс](../resources/accessreviewscheduledefinition.md). |
+| параметры | [акцессревиевсчедулесеттингс](../resources/accessreviewschedulesettings.md)| Параметры ряда проверки доступа. Здесь определяется повторение. Обратитесь к разделу [акцессревиевсчедулесеттингс](../resources/accessreviewscheduledefinition.md). |
 | обсужден | Коллекция [акцессревиевревиеверскопе](../resources/accessreviewreviewerscope.md) | Определяет, кто является рецензентом. Если ничего не указано, проверка является самостоятельным обзором (пользователи, Просмотрели проверку собственного доступа). Обратитесь к разделу [акцессревиевревиеверскопе](../resources/accessreviewscheduledefinition.md). |
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201, Created` код отклика и объект [акцессревиевсчедуледефинитион](../resources/accessreviewscheduledefinition.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
@@ -69,6 +69,8 @@ POST /identityGovernance/accessReviews/definitions
 ### <a name="request"></a>Запрос
 В тексте запроса добавьте представление объекта [акцессревиевсчедуледефинитион](../resources/accessreviewscheduledefinition.md) в формате JSON.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accessReviewScheduleDefinition"
@@ -114,6 +116,12 @@ Content-type: application/json
   }
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
