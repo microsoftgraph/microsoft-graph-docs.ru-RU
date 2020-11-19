@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 4c8f5c4bdb9fb58e73d5f6bca5bbe2d6930d7acd
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ccb9aa18879698e73d179a4c0458c66560acdf62
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731542"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49296260"
 ---
 # <a name="create-policyset"></a>Создание политики
 
@@ -46,18 +46,18 @@ POST /deviceAppManagement/policySets
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Policy в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании этого параметра.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ набора политик.|
+|id|String|Ключ набора политик.|
 |createdDateTime|DateTimeOffset|Время создания набора политик.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения набора политик.|
-|displayName|Строка|DisplayName набора политик.|
-|description|Строка|Описание набора политик.|
+|displayName|String|DisplayName набора политик.|
+|description|String|Описание набора политик.|
 |status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Состояние проверки или назначения набора политик. Возможные значения: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
 |errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Код ошибки (при возникновении ошибки). Возможные значения: `noError`, `unauthorized`, `notFound`, `deleted`.|
 |гуидеддеплойменттагс|Коллекция строк|Теги в руководстве по развертыванию|
@@ -65,7 +65,7 @@ POST /deviceAppManagement/policySets
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Policy](../resources/intune-policyset-policyset.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -116,7 +116,6 @@ Content-Length: 489
   ]
 }
 ```
-
 
 
 

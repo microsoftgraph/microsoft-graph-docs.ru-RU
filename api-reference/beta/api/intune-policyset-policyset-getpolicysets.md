@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5ac443cdaec1c5789d0b9e8d716f4f33b050ee0f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a7790ac7bc283cb60e7287aa48202b489bd8bb33
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731521"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49296169"
 ---
 # <a name="getpolicysets-action"></a>действие Жетполицисетс
 
@@ -46,7 +46,7 @@ POST /deviceAppManagement/policySets/getPolicySets
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -105,7 +105,6 @@ Content-Length: 578
   ]
 }
 ```
-
 
 
 

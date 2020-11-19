@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 22d37a87a8cdc33791907d305eca36d8ceb0fb8c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ec0fb206af2f604356490f56637e1ca73498af21
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701475"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49294293"
 ---
 # <a name="macoskernelextension-resource-type"></a>Тип ресурса Макоскернелекстенсион
 
@@ -25,7 +25,7 @@ ms.locfileid: "48701475"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|теамидентифиер|Строка|Идентификатор команды, использованный для подписи расширения ядра.|
+|теамидентифиер|String|Идентификатор команды, использованный для подписи расширения ядра.|
 |bundleId|String|Идентификатор пакета расширения ядра.|
 
 ## <a name="relationships"></a>Связи
@@ -45,7 +45,6 @@ ms.locfileid: "48701475"
   "bundleId": "String"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 84ae3483976b9a6aa5763ba9f2229b4af582c3d9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3c1c9e4ae9068f6dc9d754da93a30979367e7587
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728986"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49294503"
 ---
 # <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>тип перечисления Фиреваллцертификатеревокатионлистчеккмесодтипе
 
@@ -26,10 +26,9 @@ ms.locfileid: "48728986"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |девицедефаулт|нуль|Значение не настроено Intune, не переопределять значение устройства по умолчанию, настроенное пользователем|
-|none|1,1|Не проверять список отзыва сертификатов|
+|Нет|1,1|Не проверять список отзыва сертификатов|
 |произошл|2|Проверка списка отзыва сертификатов и предоставление сертификата только в том случае, если сертификат подтвержден подтверждением|
 |необходимость|4|Требовать успешную проверку списка отзыва сертификатов перед предоставлением сертификата|
-
 
 
 

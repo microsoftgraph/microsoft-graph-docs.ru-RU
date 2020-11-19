@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5d6713eb502405a19925c5033a21b9b82361edb5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: dfb158b30c8c2d75a58ddcbab190eaa37e9153bd
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692571"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49294720"
 ---
 # <a name="deliveryoptimizationmaxcachesizeabsolute-resource-type"></a>Тип ресурса Деливерйоптимизатионмакскачесизеабсолуте
 
@@ -47,7 +47,6 @@ ms.locfileid: "48692571"
   "maximumCacheSizeInGigabytes": 1024
 }
 ```
-
 
 
 

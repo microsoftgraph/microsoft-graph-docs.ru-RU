@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 96b7ef0ad1374b6da2671c191b427a988b8b2f2a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c21ce764c2176c453d5230a2fa9e4cbfafcf5e2c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708958"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49295140"
 ---
 # <a name="officeclientconfigurationassignment-resource-type"></a>Тип ресурса Оффицеклиентконфигуратионассигнмент
 
@@ -34,7 +34,7 @@ ms.locfileid: "48708958"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор объекта Оффицеконфигуратионассигнмент.|
+|id|String|Идентификатор объекта Оффицеконфигуратионассигнмент.|
 |target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Целевое назначение, заданное администратором.|
 
 ## <a name="relationships"></a>Связи
@@ -56,7 +56,6 @@ ms.locfileid: "48708958"
   }
 }
 ```
-
 
 
 

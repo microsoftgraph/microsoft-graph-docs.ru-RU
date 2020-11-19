@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 9f84f3a0ca0d4b79d73f62dc0607fd332e90e07c
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 874af3d0bf98cbfc5884a4f3387eb8d55323acaf
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705913"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49294580"
 ---
 # <a name="encryptionreportpolicydetails-resource-type"></a>Тип ресурса Енкриптионрепортполицидетаилс
 
@@ -25,8 +25,8 @@ ms.locfileid: "48705913"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|полициид|Строка|Идентификатор политики для отчета о шифровании|
-|policyName|Строка|Имя политики для отчета о шифровании|
+|полициид|String|Идентификатор политики для отчета о шифровании|
+|policyName|String|Имя политики для отчета о шифровании|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -45,7 +45,6 @@ ms.locfileid: "48705913"
   "policyName": "String"
 }
 ```
-
 
 
 

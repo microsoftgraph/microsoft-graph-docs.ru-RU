@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6bc6b00185db677901e5e6a888e8b6b8197dfe1b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ada71a184dd0d7f25c774920b6f7d6b3da9fa438
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727283"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49297723"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>Тип ресурса windowsInformationProtectionApp
 
@@ -25,8 +25,8 @@ ms.locfileid: "48727283"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя приложения.|
-|description|Строка|Описание приложения.|
+|displayName|String|Отображаемое имя приложения.|
+|description|String|Описание приложения.|
 |publisherName|String|Имя издателя|
 |productName|String|Название продукта.|
 |denied|Boolean|Если задано значение true, то приложению отказано в защите или исключении.|
@@ -51,7 +51,6 @@ ms.locfileid: "48727283"
   "denied": true
 }
 ```
-
 
 
 

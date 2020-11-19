@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f5ac730f4cc01ab102ab1f6ea9641cfe3e71689f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3ec143731400a5567f5a37db09308cb80535b54f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48709154"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49296295"
 ---
 # <a name="delete-vulnerablemanageddevice"></a>Удаление Вулнераблеманажеддевице
 
@@ -46,7 +46,7 @@ DELETE ** Entity URI for microsoft.management.services.api.vulnerableManagedDevi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -65,7 +65,6 @@ DELETE https://graph.microsoft.com/beta** Entity URI for microsoft.management.se
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 

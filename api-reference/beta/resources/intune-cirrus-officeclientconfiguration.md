@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 87351ed868a1f46ff769882fea4e12da25aed16e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 181e06de36176c5d2dbbdb8d1794ae64390ee71b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693999"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49295133"
 ---
 # <a name="officeclientconfiguration-resource-type"></a>Тип ресурса officeClientConfiguration
 
@@ -33,11 +33,11 @@ ms.locfileid: "48693999"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор политики конфигурации клиента Office.|
+|id|String|Идентификатор политики конфигурации клиента Office.|
 |усерпреференцепайлоад|Stream|Строка JSON параметров настройки в двоичном формате. Эти значения могут быть переопределены пользователем.|
 |полиципайлоад|Stream|Строка JSON параметров политики в двоичном формате эти значения не могут быть изменены пользователем.|
-|description|Строка|Пока не задокументировано.|
-|displayName|Строка|Администратор предоставил описание политики конфигурации клиента Office.|
+|description|String|Пока не задокументировано.|
+|displayName|String|Администратор предоставил описание политики конфигурации клиента Office.|
 |lastModifiedDateTime|DateTime|Метка даты и времени последнего изменения политики.|
 |priority|Int32|Значение Priority должно быть уникальным для каждой политики в клиенте и использоваться для разрешения конфликтов, низкие значения имеют высокий приоритет.|
 |усерчеккинсуммари|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Сводка по возврату пользователя для политики.|
@@ -88,7 +88,6 @@ ms.locfileid: "48693999"
   ]
 }
 ```
-
 
 
 

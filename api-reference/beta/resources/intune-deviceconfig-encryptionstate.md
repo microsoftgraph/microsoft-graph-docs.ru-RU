@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 410a6579f7db7d3c0ca59d689c585feafea3432d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d1ea3acd0d7e308026936e583c018ac7204ce6f6
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705906"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49294552"
 ---
 # <a name="encryptionstate-enum-type"></a>тип перечисления Енкриптионстате
 
@@ -27,7 +27,6 @@ ms.locfileid: "48705906"
 |:---|:---|:---|
 |нотенкриптед|нуль|Не зашифровано|
 |шифрования|1,1|Шифрования|
-
 
 
 

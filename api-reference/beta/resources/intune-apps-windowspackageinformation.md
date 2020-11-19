@@ -26,9 +26,9 @@ ms.locfileid: "49284276"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, в которой можно запустить это приложение. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|displayName|String|Отображаемое имя.|
+|displayName|Строка|Отображаемое имя.|
 |identityName|String|Имя удостоверения.|
-|идентитипублишер|String|Издатель удостоверений.|
+|идентитипублишер|Строка|Издатель удостоверений.|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity.|
 |identityVersion|String|Версия идентификатора.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы.|

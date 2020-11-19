@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d303932765976cc8828fef5b256a7f7cf8e26482
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2b399e84a0f714242f7213596dc1aea20a3eba9d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691486"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49295273"
 ---
 # <a name="managedebook-resource-type"></a>Тип ресурса managedEBook
 
@@ -32,9 +32,9 @@ ms.locfileid: "48691486"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|displayName|Строка|Имя электронной книги.|
-|description|Строка|Описание.|
+|id|String|Ключ объекта.|
+|displayName|String|Имя электронной книги.|
+|description|String|Описание.|
 |publisher|String|Издатель.|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги.|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Обложка книги.|
@@ -79,7 +79,6 @@ ms.locfileid: "48691486"
   "privacyInformationUrl": "String"
 }
 ```
-
 
 
 

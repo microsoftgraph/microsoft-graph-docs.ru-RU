@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f3565ff8e0e13c3a0964882c159e0fa156aa43c7
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2103e2df1b574c501a688c2e260700d018871eb4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48696218"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49294755"
 ---
 # <a name="deliveryoptimizationgroupidcustom-resource-type"></a>Тип ресурса Деливерйоптимизатионграупидкустом
 
@@ -28,7 +28,7 @@ ms.locfileid: "48696218"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|граупидкустом|Строка|Указывает произвольный идентификатор группы, к которому относится устройство.|
+|граупидкустом|String|Указывает произвольный идентификатор группы, к которому относится устройство.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -46,7 +46,6 @@ ms.locfileid: "48696218"
   "groupIdCustom": "String"
 }
 ```
-
 
 
 

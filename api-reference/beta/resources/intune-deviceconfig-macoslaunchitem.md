@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b1d5aa08940f4d49ecb0c78f6c81aa358c578a44
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f8834b43e6d4f09e95701b700c3fa11224347291
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701468"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49294307"
 ---
 # <a name="macoslaunchitem-resource-type"></a>Тип ресурса Макослаунчитем
 
@@ -26,7 +26,7 @@ ms.locfileid: "48701468"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |path|String|Путь к запускаемому элементу.|
-|скрытых|Логический|Указывает, следует ли скрыть элемент в списке "пользователи и группы".|
+|скрытых|Boolean|Указывает, следует ли скрыть элемент в списке "пользователи и группы".|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -45,7 +45,6 @@ ms.locfileid: "48701468"
   "hide": true
 }
 ```
-
 
 
 
