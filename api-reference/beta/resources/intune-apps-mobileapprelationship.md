@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 6c6143147e84112fe4c83c620cddca3cfe1547bf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 22af70876075aa12b5493cfa413c79bd2c71c7cf
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48719731"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49217195"
 ---
 # <a name="mobileapprelationship-resource-type"></a>Тип ресурса Мобилеаппрелатионшип
 
@@ -31,9 +31,11 @@ ms.locfileid: "48719731"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор сущности отношения.|
-|targetId|Строка|Идентификатор приложения целевого приложения для мобильных устройств.|
-|таржетдисплайнаме|Строка|Отображаемое имя целевого мобильного приложения.|
+|id|String|Идентификатор сущности отношения.|
+|targetId|String|Идентификатор приложения целевого приложения для мобильных устройств.|
+|таржетдисплайнаме|String|Отображаемое имя целевого мобильного приложения.|
+|таржетдисплайверсион|String|Версия отображения целевого мобильного приложения.|
+|таржетпублишер|String|Издатель целевого мобильного приложения.|
 |targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|Тип связи, указывающий, является ли целевой объект родительским или дочерним. Возможные значения: `child`, `parent`.|
 
 ## <a name="relationships"></a>Связи
@@ -53,10 +55,11 @@ ms.locfileid: "48719731"
   "id": "String (identifier)",
   "targetId": "String",
   "targetDisplayName": "String",
+  "targetDisplayVersion": "String",
+  "targetPublisher": "String",
   "targetType": "String"
 }
 ```
-
 
 
 

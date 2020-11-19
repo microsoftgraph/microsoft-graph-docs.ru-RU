@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: f8cb917403ecb942d385506b5a382f8f23fe3fc3
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c85d46dc38cf4ef208f0a059721486a0cc501659
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729877"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49217538"
 ---
 # <a name="getmobileappcount-function"></a>Функция getMobileAppCount
 
@@ -30,7 +30,7 @@ ms.locfileid: "48729877"
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,7 +48,7 @@ GET /deviceAppManagement/mobileApps/getMobileAppCount
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -80,7 +80,6 @@ Content-Length: 18
   "value": 1
 }
 ```
-
 
 
 

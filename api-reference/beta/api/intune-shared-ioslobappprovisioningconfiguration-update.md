@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 157c653ed36f87c6c6a8f2ee5a28da05eb784d44
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 8021e5a146db9ccc3e275b28228a060cf41b4dd9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48729905"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49217545"
 ---
 # <a name="update-ioslobappprovisioningconfiguration"></a>Обновление iosLobAppProvisioningConfiguration
 
@@ -31,7 +31,7 @@ ms.locfileid: "48729905"
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
+|Приложение||
 | &nbsp; &nbsp; **Приложения** | DeviceManagementApps.ReadWrite.All|
 | &nbsp;&nbsp; **Набор политик** | DeviceManagementApps.ReadWrite.All|
 
@@ -50,27 +50,27 @@ PATCH /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |expirationDateTime|DateTimeOffset|Дата и время необязательного окончания срока действия профиля.|
 |payloadFileName|String|Имя файла полезных данных (*. мобилепровисион | *.xml).|
 |payload|Binary|Полезные данные (массив байтов в кодировке UTF8).|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для данной сущности конфигурации подготовки бизнес-приложений iOS.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|description|Строка|Указанное администратором описание конфигурации устройства.|
+|description|String|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|Строка|Указанное администратором имя конфигурации устройства.|
+|displayName|String|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [iosLobAppProvisioningConfiguration](../resources/intune-shared-ioslobappprovisioningconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -119,7 +119,6 @@ Content-Length: 547
   "version": 7
 }
 ```
-
 
 
 

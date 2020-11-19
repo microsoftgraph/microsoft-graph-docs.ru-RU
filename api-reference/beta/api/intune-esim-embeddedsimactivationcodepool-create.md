@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: c216ece60b726e8e38b13574fcc1a8b114acfae9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: bb268bfc34e55829b7de593a58d5e2cdb4932a98
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48734079"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49218406"
 ---
 # <a name="create-embeddedsimactivationcodepool"></a>Создание Ембеддедсимактиватионкодепул
 
@@ -29,7 +29,7 @@ ms.locfileid: "48734079"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,15 +46,15 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Ембеддедсимактиватионкодепул в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Ембеддедсимактиватионкодепул.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для встроенного пула кода активации SIM-карты. Созданное системой значение, назначаемое при создании.|
-|displayName|Строка|Имя администратора внедренного пула кода активации SIM-карты.|
+|id|String|Уникальный идентификатор для встроенного пула кода активации SIM-карты. Созданное системой значение, назначаемое при создании.|
+|displayName|String|Имя администратора внедренного пула кода активации SIM-карты.|
 |createdDateTime|DateTimeOffset|Время создания внедренного пула кода активации SIM-карты. Созданная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения пула кода активации внедренной SIM-карты. Обновленная сторона службы.|
 |активатионкодес|Коллекция [ембеддедсимактиватионкоде](../resources/intune-esim-embeddedsimactivationcode.md)|Коды активации, принадлежащие этому пулу. Это свойство навигации используется для публикации кодов активации в Intune, но не может использоваться для считывания кодов активации из Intune.|
@@ -62,7 +62,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [ембеддедсимактиватионкодепул](../resources/intune-esim-embeddedsimactivationcodepool.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -113,7 +113,6 @@ Content-Length: 628
   "activationCodeCount": 3
 }
 ```
-
 
 
 

@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 6087a688102e9577fe24ae3d3eb4cd3c70768aee
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4ba6fffe8cead123148fb2fb6c57788faecda15e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727493"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49217069"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
@@ -44,6 +44,8 @@ ms.locfileid: "48727493"
 - [Автонастройка глобального прокси-сервера владельца устройств Android](intune-deviceconfig-androiddeviceownerglobalproxyautoconfig.md)
 - [Глобальный прокси-сервер владельца устройства Android Direct](intune-deviceconfig-androiddeviceownerglobalproxydirect.md)
 - [Профиль сертификата PFX, импортированный владельцем устройства Android](intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile.md)
+- [Строка состояния настройки владельца устройства Android](intune-deviceconfig-androiddeviceownerkioskcustomizationstatusbar.md)
+- [Навигация по системе в средстве настройки владельца устройств Android](intune-deviceconfig-androiddeviceownerkioskcustomizationsystemnavigation.md)
 - [Значок папки в режиме киоска владельца устройства Android](intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md)
 - [Размер значков в полноэкранном режиме владельца устройства Android](intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md)
 - [Ориентация экрана для режима киоска владельца устройства Android](intune-deviceconfig-androiddeviceownerkioskmodescreenorientation.md)
@@ -136,11 +138,8 @@ ms.locfileid: "48727493"
 - [Политика BitLocker в отношении системных дисков](intune-deviceconfig-bitlockersystemdrivepolicy.md)
 - [Параметр синхронизации браузера](intune-deviceconfig-browsersyncsetting.md)
 - [Сопоставление корзин с классами](intune-deviceconfig-carttoclassassociation.md)
-- [Целевое хранилище сертификатов](intune-deviceconfig-certificatedestinationstore.md)
 - [Состояние выдачи сертификата](intune-deviceconfig-certificateissuancestates.md)
 - [Статус отзыва сертификатов](intune-deviceconfig-certificaterevocationstatus.md)
-- [Хранилище сертификатов](intune-deviceconfig-certificatestore.md)
-- [Шкала срока действия сертификата](intune-deviceconfig-certificatevalidityperiodscale.md)
 - [Разрешение на изменение параметров UEFI](intune-deviceconfig-changeuefisettingspermission.md)
 - [Code](intune-deviceconfig-code.md)
 - [Использование конфигурации](intune-deviceconfig-configurationusage.md)
@@ -247,7 +246,6 @@ ms.locfileid: "48727493"
 - [Состояние готовности шифрования](intune-deviceconfig-encryptionreadinessstate.md)
 - [Сведения о политике отчетов шифрования](intune-deviceconfig-encryptionreportpolicydetails.md)
 - [Состояние шифрования](intune-deviceconfig-encryptionstate.md)
-- [Расширенное использование ключа](intune-deviceconfig-extendedkeyusage.md)
 - [Состояние хранилища файлов](intune-deviceconfig-filevaultstate.md)
 - [Тип метода проверки для списка отзыва сертификатов в брандмауэре](intune-deviceconfig-firewallcertificaterevocationlistcheckmethodtype.md)
 - [Тип метода для добавления пакетов брандмауэра в список](intune-deviceconfig-firewallpacketqueueingmethodtype.md)
@@ -289,7 +287,6 @@ ms.locfileid: "48727493"
 - [Групповая политика загрузила состояние файла определения](intune-grouppolicy-grouppolicyuploadeddefinitionfilestatus.md)
 - [Языковой файл, отправленный в групповой политике](intune-grouppolicy-grouppolicyuploadedlanguagefile.md)
 - [Групповая политика, отправленная в презентацию](intune-grouppolicy-grouppolicyuploadedpresentation.md)
-- [Хэш-алгоритмы](intune-deviceconfig-hashalgorithms.md)
 - [Параметр доступа к рукописному вводу](intune-deviceconfig-inkaccesssetting.md)
 - [Первоначальная цель](intune-deviceconfig-intendedpurpose.md)
 - [Параметр сообщения Internet Explorer](intune-deviceconfig-internetexplorermessagesetting.md)
@@ -320,6 +317,7 @@ ms.locfileid: "48727493"
 - [Тип приложения режима киоска iOS](intune-deviceconfig-ioskioskmodeapptype.md)
 - [Правило использование сети iOS](intune-deviceconfig-iosnetworkusagerule.md)
 - [Тип оповещений об уведомлениях iOS](intune-deviceconfig-iosnotificationalerttype.md)
+- [видимость предварительного просмотра уведомлений iOS](intune-deviceconfig-iosnotificationpreviewvisibility.md)
 - [Параметры уведомлений iOS](intune-deviceconfig-iosnotificationsettings.md)
 - [Профиль сертификатов PKCS для iOS](intune-deviceconfig-iospkcscertificateprofile.md)
 - [расширение единого входа для перенаправления iOS](intune-deviceconfig-iosredirectsinglesignonextension.md)
@@ -343,11 +341,8 @@ ms.locfileid: "48727493"
 - [Ключевая логическая переменная значения](intune-deviceconfig-keybooleanvaluepair.md)
 - [Ключевое целое значение](intune-deviceconfig-keyintegervaluepair.md)
 - [Ключевое значение "ключевое значение"](intune-deviceconfig-keyrealvaluepair.md)
-- [Размер ключа](intune-deviceconfig-keysize.md)
-- [Параметр поставщика хранилища ключей](intune-deviceconfig-keystorageprovideroption.md)
 - [Ключевая строка значений ключа](intune-deviceconfig-keystringvaluepair.md)
 - [Комбинация типизированных типизированных значений](intune-deviceconfig-keytypedvaluepair.md)
-- [Использование ключей](intune-deviceconfig-keyusages.md)
 - [Значение ключа](intune-deviceconfig-keyvalue.md)
 - [Уровень проверки подлинности LAN Manager](intune-deviceconfig-lanmanagerauthenticationlevel.md)
 - [Локальные параметры безопасности: режим отображения запроса для повышения прав администратора](intune-deviceconfig-localsecurityoptionsadministratorelevationpromptbehaviortype.md)
@@ -437,7 +432,7 @@ ms.locfileid: "48727493"
 - [Параметр OMA, строка, XML](intune-deviceconfig-omasettingstringxml.md)
 - [Локальная зашифрованная полезная нагрузка](intune-raimportcerts-onpremencryptedpayload.md)
 - [Диапазон версий операционной системы](intune-deviceconfig-operatingsystemversionrange.md)
-- [Operator](intune-deviceconfig-operator.md)
+- [Оператор](intune-deviceconfig-operator.md)
 - [Безопасная пересылка группы](intune-deviceconfig-perfectforwardsecrecygroup.md)
 - [Запрос на получение шифрования PFX](intune-raimportcerts-pfxrecryptionrequest.md)
 - [Сертификат пользователя PFX](intune-raimportcerts-pfxusercertificate.md)
@@ -484,7 +479,6 @@ ms.locfileid: "48727493"
 - [Общие сведения о состоянии обновления программного обеспечения](intune-deviceconfig-softwareupdatestatussummary.md)
 - [Указанные сетевые подключаемые модули для переопределения](intune-deviceconfig-specifiedcaptivenetworkplugins.md)
 - [Параметры управления состоянием](intune-deviceconfig-statemanagementsetting.md)
-- [Тип альтернативного имени субъекта](intune-deviceconfig-subjectalternativenametype.md)
 - [Формат имени субъекта](intune-deviceconfig-subjectnameformat.md)
 - [Неподдерживаемая конфигурация устройства](intune-deviceconfig-unsupporteddeviceconfiguration.md)
 - [Сведения о неподдерживаемой конфигурации устройства](intune-deviceconfig-unsupporteddeviceconfigurationdetail.md)
@@ -520,6 +514,7 @@ ms.locfileid: "48727493"
 - [Расписание на неделю](intune-deviceconfig-weeklyschedule.md)
 - [Сведения о собрании на экране приветствия](intune-deviceconfig-welcomescreenmeetinginformation.md)
 - [Метод проверки подлинности для Wi-Fi](intune-deviceconfig-wifiauthenticationmethod.md)
+- [Тип проверки подлинности Wi/Fi](intune-deviceconfig-wifiauthenticationtype.md)
 - [Параметры прокси-сервера для Wi-Fi](intune-deviceconfig-wifiproxysetting.md)
 - [Тип защиты Wi-Fi](intune-deviceconfig-wifisecuritytype.md)
 - [Тип приложения для Windows 10](intune-deviceconfig-windows10apptype.md)

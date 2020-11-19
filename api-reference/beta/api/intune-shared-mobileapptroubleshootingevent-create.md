@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 271e5b9b88608a89cf6ec0df9f4d7376757ba6c2
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3ba86467fc6b968fef5eadde48886b227772d352
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694286"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49217510"
 ---
 # <a name="create-mobileapptroubleshootingevent"></a>Создание Мобилеапптраублешутинжевент
 
@@ -28,11 +28,11 @@ ms.locfileid: "48694286"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-|&nbsp; &nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
+|&nbsp;&nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений||
-|&nbsp; &nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение||
+|&nbsp;&nbsp; **Управление устройствами**|DeviceManagementManagedDevices.ReadWrite.All|
 |&nbsp; &nbsp; **Устранение неполадок**|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -51,26 +51,26 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Мобилеапптраублешутинжевент в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Мобилеапптраублешутинжевент.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта|
+|id|String|GUID объекта|
 |**Устранение неполадок**|
 |аддитионалинформатион|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор пар строкового ключа и строкового значения, предоставляющий дополнительные сведения о событии устранения неполадок.|
 |applicationId|String|Идентификатор приложения Intune.|
 |correlationId|String|Идентификатор, используемый для трассировки сбоя в службе. |
 |eventDateTime|DateTimeOffset|Время возникновения события. |
-|eventName|Строка|Имя события, соответствующее событию устранения неполадок. Необязательный параметр.|
+|eventName|String|Имя события, соответствующее событию устранения неполадок. Необязательный атрибут.|
 |лист|Коллекция [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Элемент журнала устранения неполадок мобильных приложений Intune|
 |managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
 |траублешутинжеррордетаилс|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. |
 |userId|String|Идентификатор пользователя, который пытался зарегистрировать устройство.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [мобилеапптраублешутинжевент](../resources/intune-shared-mobileapptroubleshootingevent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -99,7 +99,6 @@ Content-Length: 120
   "id": "77943c10-3c10-7794-103c-9477103c9477"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 9d4b29f3e60efef15232eccc66bdd2df752a7919
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 35f7f36eb5945bba36fdd03a4ee2fe3b798c6e01
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731969"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216957"
 ---
 # <a name="advancedbitlockerstate-enum-type"></a>тип перечисления Адванцедбитлоккерстате
 
@@ -42,7 +42,6 @@ ms.locfileid: "48731969"
 |тпмнотаваилабле|8192|TPM недоступен для BitLocker. Это означает, что доверенный платформенный модуль отсутствует или для него задано переопределение реестра, а операционная система находится на диске с возможностью портативного или Рим-доступного|
 |тпмнотреади|16384|Доверенный платформенный модуль не готов для BitLocker|
 |нетворкеррор|32768|Сеть недоступна. Это необходимо для резервного копирования ключа восстановления. Этот отчет сообщается об устройствах, поддерживающих шифрование дисков|
-
 
 
 

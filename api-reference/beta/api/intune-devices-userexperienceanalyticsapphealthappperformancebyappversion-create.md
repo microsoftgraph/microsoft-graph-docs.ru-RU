@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 34eb6cf4fb14d604ac31aa0adb8993360e49de9b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2f1addf495e2a5320ad94dd9cd2a4457500b15f4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694559"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49219204"
 ---
 # <a name="create-userexperienceanalyticsapphealthappperformancebyappversion"></a>Создание Усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион
 
@@ -29,7 +29,7 @@ ms.locfileid: "48694559"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,25 +46,25 @@ POST /deviceManagement/userExperienceAnalyticsAppHealthApplicationPerformanceByA
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта производительности приложения аналитики взаимодействия с пользователем.|
-|аппверсион|Строка|Версия приложения.|
+|id|String|Уникальный идентификатор объекта производительности приложения аналитики взаимодействия с пользователем.|
+|аппверсион|String|Версия приложения.|
 |appName|String|Имя приложения.|
 |appDisplayName|String|Понятное имя приложения.|
-|апппублишер|Строка|Издатель приложения.|
+|апппублишер|String|Издатель приложения.|
 |аппусажедуратион|Int32|Общее время использования приложения в минутах. Допустимые значения: от 2147483648 до 2147483647|
 |аппкрашкаунт|Int32|Число сбоев для приложения. Допустимые значения: от 2147483648 до 2147483647|
 |меантиметофаилуреинминутес|Int32|Среднее время до сбоя приложения в минутах. Допустимые значения: от 2147483648 до 2147483647|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксапфеалсаппперформанцебяппверсион](../resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -107,7 +107,6 @@ Content-Length: 395
   "meanTimeToFailureInMinutes": 10
 }
 ```
-
 
 
 

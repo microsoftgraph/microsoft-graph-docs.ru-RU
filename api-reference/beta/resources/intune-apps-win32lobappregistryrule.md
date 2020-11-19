@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 74de895fccb70a96a5f6e80b15bd89453869096b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d39d8e2881d20d58348e9a2c25b2b808c40b9fe5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706214"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49217089"
 ---
 # <a name="win32lobappregistryrule-resource-type"></a>Тип ресурса win32LobAppRegistryRule
 
@@ -29,12 +29,12 @@ ms.locfileid: "48706214"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|Тип правила, указывающий назначение правила. Наследуется от [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Возможные значения: `detection`, `requirement`.|
-|check32BitOn64System|Логический|Значение, указывающее, следует ли выполнять поиск в 32 — разрядном реестре в 64 — разрядных системах.|
-|Ключевой|Строка|Полный путь к параметру реестра, содержащему значение для обнаружения.|
-|valueName|Строка|Имя значения реестра для обнаружения.|
+|check32BitOn64System|Boolean|Значение, указывающее, следует ли выполнять поиск в 32 — разрядном реестре в 64 — разрядных системах.|
+|Ключевой|String|Полный путь к параметру реестра, содержащему значение для обнаружения.|
+|valueName|String|Имя значения реестра для обнаружения.|
 |оператионтипе|[win32LobAppRegistryRuleOperationType](../resources/intune-apps-win32lobappregistryruleoperationtype.md)|Тип операции в реестре. Возможные значения: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
 |operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|Оператор для обнаружения в реестре. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|компарисонвалуе|Строка|Значение сравнения в реестре.|
+|компарисонвалуе|String|Значение сравнения в реестре.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -58,7 +58,6 @@ ms.locfileid: "48706214"
   "comparisonValue": "String"
 }
 ```
-
 
 
 

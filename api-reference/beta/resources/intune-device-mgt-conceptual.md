@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 6b63e8e9cc94558f7e34af6b69b71b36efc05d7d
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 4f78a58a5ef3d991c38121d5978897ea53cf5e4e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731962"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216999"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -200,6 +200,7 @@ ms.locfileid: "48731962"
 - [Шаблон сообщения уведомления](intune-notification-notificationmessagetemplate.md)
 - [Параметры фирменной символики для шаблона уведомления](intune-notification-notificationtemplatebrandingoptions.md)
 - [Счетчик версии ОС](intune-devices-osversioncount.md)
+- [Тип платформы](intune-esim-platformtype.md)
 - [Состояние исправления](intune-devices-remediationstate.md)
 - [Удаленное действие](intune-devices-remoteaction.md)
 - [Аудит удаленных действий](intune-devices-remoteactionaudit.md)
@@ -250,6 +251,7 @@ ms.locfileid: "48731962"
 - [Выражение условия переменного управления](intune-fencing-variablemanagementconditionexpression.md)
 - [Состояние развертывания Windows для автопилота](intune-troubleshooting-windowsautopilotdeploymentstate.md)
 - [Тип регистрации для автоматического развертывания Windows](intune-troubleshooting-windowsautopilotenrollmenttype.md)
+- [Состояние продукта защитника Windows](intune-devices-windowsdefenderproductstatus.md)
 - [Результат действия "Проверка с помощью Защитника Windows"](intune-devices-windowsdefenderscanactionresult.md)
 - [Учетная запись устройства с Windows](intune-devices-windowsdeviceaccount.md)
 - [Учетная запись AD для устройства с Windows](intune-devices-windowsdeviceadaccount.md)

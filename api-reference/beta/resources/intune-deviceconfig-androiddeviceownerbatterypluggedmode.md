@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: e3a5d13693b6b379df905e63bde574355f0754df
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 92f2234825a027d31631b2b1972a1cfeebc11b7b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691451"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49216726"
 ---
 # <a name="androiddeviceownerbatterypluggedmode-enum-type"></a>тип перечисления Андроиддевицеовнербаттериплугжедмоде
 
@@ -29,7 +29,6 @@ ms.locfileid: "48691451"
 |ac|1,1|Источник питания является подзарядом сети переменного тока.|
 |Порт|2|Источник электросети — USB-порт.|
 |инфракрас|4|Источник энергопотребления беспроводной сети.|
-
 
 
 

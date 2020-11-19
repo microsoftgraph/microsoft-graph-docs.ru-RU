@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 5831ca588dc9e6ecaeabe9b2548a8022fc658142
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6d8a5e865d4cc9cf5ad3509b3c67e74b4ccc0b3c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48732235"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49219071"
 ---
 # <a name="create-userexperienceanalyticsdeviceperformance"></a>Создание Усерекспериенцеаналитиксдевицеперформанце
 
@@ -29,7 +29,7 @@ ms.locfileid: "48732235"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,14 +46,14 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Усерекспериенцеаналитиксдевицеперформанце в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Усерекспериенцеаналитиксдевицеперформанце.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор устройства для загрузки устройства аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор устройства для загрузки устройства аналитики взаимодействия с пользователем.|
 |deviceName|String|Имя устройства службы аналитики взаимодействия с пользователем.|
 |model|String|Модель устройства аналитики взаимодействия с пользователем.|
 |manufacturer|String|Производитель устройства аналитики взаимодействия с пользователем.|
@@ -75,7 +75,7 @@ POST /deviceManagement/userExperienceAnalyticsDevicePerformance
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерекспериенцеаналитиксдевицеперформанце](../resources/intune-devices-userexperienceanalyticsdeviceperformance.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -140,7 +140,6 @@ Content-Length: 684
   "averageRestarts": 5.0
 }
 ```
-
 
 
 

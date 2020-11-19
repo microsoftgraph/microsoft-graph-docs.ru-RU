@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: e63b0cff6e35194a081edc376abad9462a1f1674
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a94fae032fd3bae053b7af170d5ac1c4f43b2a08
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705161"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49219938"
 ---
 # <a name="create-macossoftwareupdatestatesummary"></a>Создание Макоссофтвареупдатестатесуммари
 
@@ -29,7 +29,7 @@ ms.locfileid: "48705161"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,24 +46,24 @@ POST /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdateA
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Макоссофтвареупдатестатесуммари в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Макоссофтвареупдатестатесуммари.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|displayName|Строка|Понятное имя обновления программного обеспечения|
+|id|String|Ключ объекта.|
+|displayName|String|Понятное имя обновления программного обеспечения|
 |productKey|String|Ключ продукта обновления программного обеспечения.|
-|упдатекатегори|[макоссофтвареупдатекатегори](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|Категория обновлений программного обеспечения. Возможные значения: `critical`, `configurationDataFile`, `firmware`, `other`.|
-|упдатеверсион|Строка|Версия обновления программного обеспечения|
-|state|[макоссофтвареупдатестате](../resources/intune-deviceconfig-macossoftwareupdatestate.md)|Состояние обновления программного обеспечения. Возможные значения: `success` , `downloading` ,,,,, `downloaded` `installing` `idle` `available` `scheduled` ,,, `downloadFailed` `downloadInsufficientSpace` `downloadInsufficientPower` , `downloadInsufficientNetwork` , `installInsufficientSpace` , `installInsufficientPower` , `installFailed` , `commandFailed` .|
+|упдатекатегори|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|Категория обновлений программного обеспечения. Возможные значения: `critical`, `configurationDataFile`, `firmware`, `other`.|
+|упдатеверсион|String|Версия обновления программного обеспечения|
+|state|[macOSSoftwareUpdateState](../resources/intune-deviceconfig-macossoftwareupdatestate.md)|Состояние обновления программного обеспечения. Возможные значения: `success` , `downloading` ,,,,, `downloaded` `installing` `idle` `available` `scheduled` ,,, `downloadFailed` `downloadInsufficientSpace` `downloadInsufficientPower` , `downloadInsufficientNetwork` , `installInsufficientSpace` , `installInsufficientPower` , `installFailed` , `commandFailed` .|
 |lastUpdatedDateTime|DateTimeOffset|Дата и время последнего обновления отчета для этого устройства и ключа продукта.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [макоссофтвареупдатестатесуммари](../resources/intune-deviceconfig-macossoftwareupdatestatesummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -104,7 +104,6 @@ Content-Length: 380
   "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
 }
 ```
-
 
 
 

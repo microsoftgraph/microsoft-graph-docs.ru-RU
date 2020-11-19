@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cff4a2cde923b4297fc8c780961a3ab53b847c54
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: e230ea517ae79c99861ac7a78fc8e41dd2106d03
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48708125"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49218651"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>Обновление Виндовсманажементапфеалсстате
 
@@ -29,7 +29,7 @@ ms.locfileid: "48708125"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementManagedDevices.ReadWrite.All|
+|Приложение|DeviceManagementManagedDevices.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,23 +46,23 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для состояния работоспособности приложения управления Windows. Это свойство доступно только для чтения.|
+|id|String|Уникальный идентификатор для состояния работоспособности приложения управления Windows. Это свойство доступно только для чтения.|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Состояние работоспособности приложения управления Windows. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
-|инсталледверсион|Строка|Установленная версия приложения управления Windows.|
+|инсталледверсион|String|Установленная версия приложения управления Windows.|
 |ластчеккиндатетиме|DateTimeOffset|Время последнего возврата приложения управления Windows.|
 |deviceName|String|Имя устройства, на котором установлено приложение "Управление Windows".|
-|девицеосверсион|Строка|Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".|
+|девицеосверсион|String|Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -101,7 +101,6 @@ Content-Length: 349
   "deviceOSVersion": "Device OSVersion value"
 }
 ```
-
 
 
 
