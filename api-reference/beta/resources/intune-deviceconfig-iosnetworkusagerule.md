@@ -5,35 +5,35 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 40710c466ad2758c2e75d229d781dd595e7f145e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 67e5b5c1df4fa4f10301bbaa7177c5d3ab8ed70e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48705745"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49280279"
 ---
-# <a name="iosnetworkusagerule-resource-type"></a><span data-ttu-id="8cf26-103">Тип ресурса iosNetworkUsageRule</span><span class="sxs-lookup"><span data-stu-id="8cf26-103">iosNetworkUsageRule resource type</span></span>
+# <a name="iosnetworkusagerule-resource-type"></a><span data-ttu-id="f5840-103">Тип ресурса iosNetworkUsageRule</span><span class="sxs-lookup"><span data-stu-id="f5840-103">iosNetworkUsageRule resource type</span></span>
 
-<span data-ttu-id="8cf26-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8cf26-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f5840-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f5840-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="8cf26-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8cf26-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="f5840-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f5840-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="8cf26-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="8cf26-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f5840-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f5840-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="8cf26-107">Благодаря правилам использования сети предприятия могут определять, как управляемые приложения используют сети, например мобильные сети.</span><span class="sxs-lookup"><span data-stu-id="8cf26-107">Network Usage Rules allow enterprises to specify how managed apps use networks, such as cellular data networks.</span></span>
+<span data-ttu-id="f5840-107">Благодаря правилам использования сети предприятия могут определять, как управляемые приложения используют сети, например мобильные сети.</span><span class="sxs-lookup"><span data-stu-id="f5840-107">Network Usage Rules allow enterprises to specify how managed apps use networks, such as cellular data networks.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8cf26-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="8cf26-108">Properties</span></span>
-|<span data-ttu-id="8cf26-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="8cf26-109">Property</span></span>|<span data-ttu-id="8cf26-110">Тип</span><span class="sxs-lookup"><span data-stu-id="8cf26-110">Type</span></span>|<span data-ttu-id="8cf26-111">Описание</span><span class="sxs-lookup"><span data-stu-id="8cf26-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f5840-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="f5840-108">Properties</span></span>
+|<span data-ttu-id="f5840-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="f5840-109">Property</span></span>|<span data-ttu-id="f5840-110">Тип</span><span class="sxs-lookup"><span data-stu-id="f5840-110">Type</span></span>|<span data-ttu-id="f5840-111">Описание</span><span class="sxs-lookup"><span data-stu-id="f5840-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="8cf26-112">managedApps</span><span class="sxs-lookup"><span data-stu-id="8cf26-112">managedApps</span></span>|<span data-ttu-id="8cf26-113">Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)</span><span class="sxs-lookup"><span data-stu-id="8cf26-113">[appListItem](../resources/intune-deviceconfig-applistitem.md) collection</span></span>|<span data-ttu-id="8cf26-114">Сведения об управляемых приложениях, к которым применяется это правило.</span><span class="sxs-lookup"><span data-stu-id="8cf26-114">Information about the managed apps that this rule is going to apply to.</span></span> <span data-ttu-id="8cf26-115">Эта коллекция может содержать не более 500 элементов.</span><span class="sxs-lookup"><span data-stu-id="8cf26-115">This collection can contain a maximum of 500 elements.</span></span>|
-|<span data-ttu-id="8cf26-116">cellularDataBlockWhenRoaming</span><span class="sxs-lookup"><span data-stu-id="8cf26-116">cellularDataBlockWhenRoaming</span></span>|<span data-ttu-id="8cf26-117">Boolean</span><span class="sxs-lookup"><span data-stu-id="8cf26-117">Boolean</span></span>|<span data-ttu-id="8cf26-118">Если задано значение true, соответствующим управляемым приложениям запрещается использовать мобильные данные в роуминге.</span><span class="sxs-lookup"><span data-stu-id="8cf26-118">If set to true, corresponding managed apps will not be allowed to use cellular data when roaming.</span></span>|
-|<span data-ttu-id="8cf26-119">cellularDataBlocked</span><span class="sxs-lookup"><span data-stu-id="8cf26-119">cellularDataBlocked</span></span>|<span data-ttu-id="8cf26-120">Boolean</span><span class="sxs-lookup"><span data-stu-id="8cf26-120">Boolean</span></span>|<span data-ttu-id="8cf26-121">Если задано значение true, соответствующим управляемым приложениям запрещается использовать мобильные данные в любое время.</span><span class="sxs-lookup"><span data-stu-id="8cf26-121">If set to true, corresponding managed apps will not be allowed to use cellular data at any time.</span></span>|
+|<span data-ttu-id="f5840-112">managedApps</span><span class="sxs-lookup"><span data-stu-id="f5840-112">managedApps</span></span>|<span data-ttu-id="f5840-113">Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)</span><span class="sxs-lookup"><span data-stu-id="f5840-113">[appListItem](../resources/intune-deviceconfig-applistitem.md) collection</span></span>|<span data-ttu-id="f5840-114">Сведения об управляемых приложениях, к которым применяется это правило.</span><span class="sxs-lookup"><span data-stu-id="f5840-114">Information about the managed apps that this rule is going to apply to.</span></span> <span data-ttu-id="f5840-115">Эта коллекция может содержать не более 500 элементов.</span><span class="sxs-lookup"><span data-stu-id="f5840-115">This collection can contain a maximum of 500 elements.</span></span>|
+|<span data-ttu-id="f5840-116">cellularDataBlockWhenRoaming</span><span class="sxs-lookup"><span data-stu-id="f5840-116">cellularDataBlockWhenRoaming</span></span>|<span data-ttu-id="f5840-117">Boolean</span><span class="sxs-lookup"><span data-stu-id="f5840-117">Boolean</span></span>|<span data-ttu-id="f5840-118">Если задано значение true, соответствующим управляемым приложениям запрещается использовать мобильные данные в роуминге.</span><span class="sxs-lookup"><span data-stu-id="f5840-118">If set to true, corresponding managed apps will not be allowed to use cellular data when roaming.</span></span>|
+|<span data-ttu-id="f5840-119">cellularDataBlocked</span><span class="sxs-lookup"><span data-stu-id="f5840-119">cellularDataBlocked</span></span>|<span data-ttu-id="f5840-120">Boolean</span><span class="sxs-lookup"><span data-stu-id="f5840-120">Boolean</span></span>|<span data-ttu-id="f5840-121">Если задано значение true, соответствующим управляемым приложениям запрещается использовать мобильные данные в любое время.</span><span class="sxs-lookup"><span data-stu-id="f5840-121">If set to true, corresponding managed apps will not be allowed to use cellular data at any time.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="8cf26-122">Связи</span><span class="sxs-lookup"><span data-stu-id="8cf26-122">Relationships</span></span>
-<span data-ttu-id="8cf26-123">Нет</span><span class="sxs-lookup"><span data-stu-id="8cf26-123">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="f5840-122">Связи</span><span class="sxs-lookup"><span data-stu-id="f5840-122">Relationships</span></span>
+<span data-ttu-id="f5840-123">Нет</span><span class="sxs-lookup"><span data-stu-id="f5840-123">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="8cf26-124">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8cf26-124">JSON Representation</span></span>
-<span data-ttu-id="8cf26-125">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8cf26-125">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f5840-124">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f5840-124">JSON Representation</span></span>
+<span data-ttu-id="f5840-125">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f5840-125">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosNetworkUsageRule"
@@ -55,7 +55,6 @@ ms.locfileid: "48705745"
   "cellularDataBlocked": true
 }
 ```
-
 
 
 
