@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 77e88903267b97efcddf4685868f8faaafd0ce87
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1ad5347cdff40f804cf9a601d02f352a9cfbda41
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48703218"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49286271"
 ---
 # <a name="createinstance-action"></a>Действие createInstance
 
@@ -47,15 +47,15 @@ POST /deviceManagement/templates/{deviceManagementTemplateId}/migratableTo/{devi
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Н/Д|
-|description|Строка|Пока не задокументировано.|
+|displayName|String|Н/Д|
+|description|String|Пока не задокументировано.|
 |сеттингсделта|Коллекция [девицеманажементсеттингинстанце](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Пока не задокументировано.|
 |roleScopeTagIds|Коллекция строк|Н/Д|
 
@@ -113,7 +113,6 @@ Content-Length: 418
   }
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 9b1c07f8002bf5131e9ee95aa9053c97b4389ce1
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 84a9c976fe0cb1ed00f4340c2797ff5330ddba3e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48692949"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49286033"
 ---
 # <a name="list-grouppolicysettingmappings"></a>Список Граупполицисеттингмаппингс
 
@@ -46,10 +46,10 @@ GET /deviceManagement/groupPolicyMigrationReports/{groupPolicyMigrationReportId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [граупполицисеттингмаппинг](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -100,7 +100,6 @@ Content-Length: 1209
   ]
 }
 ```
-
 
 
 
