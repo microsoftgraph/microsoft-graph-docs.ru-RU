@@ -5,32 +5,32 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a2cffcef4dad3315159eb1081ff6ac70896ee6e9
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 135328d81b10adae4e9f22db72025554f3eb1bbe
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684472"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300579"
 ---
-# <a name="iprange-resource-type"></a><span data-ttu-id="461ec-103">Тип ресурса ipRange</span><span class="sxs-lookup"><span data-stu-id="461ec-103">ipRange resource type</span></span>
+# <a name="iprange-resource-type"></a><span data-ttu-id="38599-103">Тип ресурса ipRange</span><span class="sxs-lookup"><span data-stu-id="38599-103">ipRange resource type</span></span>
 
-<span data-ttu-id="461ec-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="461ec-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="38599-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="38599-104">Namespace: microsoft.graph</span></span>
 
-> <span data-ttu-id="461ec-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="461ec-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="38599-105">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="38599-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="461ec-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="461ec-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="38599-106">**Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="38599-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="461ec-107">Базовый класс диапазона IP-адресов для представления диапазонов IPv4- и IPv6-адресов</span><span class="sxs-lookup"><span data-stu-id="461ec-107">IP range base class for representing IPV4, IPV6 address ranges</span></span>
+<span data-ttu-id="38599-107">Базовый класс диапазона IP-адресов для представления диапазонов IPv4- и IPv6-адресов</span><span class="sxs-lookup"><span data-stu-id="38599-107">IP range base class for representing IPV4, IPV6 address ranges</span></span>
 
-## <a name="properties"></a><span data-ttu-id="461ec-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="461ec-108">Properties</span></span>
-|<span data-ttu-id="461ec-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="461ec-109">Property</span></span>|<span data-ttu-id="461ec-110">Тип</span><span class="sxs-lookup"><span data-stu-id="461ec-110">Type</span></span>|<span data-ttu-id="461ec-111">Описание</span><span class="sxs-lookup"><span data-stu-id="461ec-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="38599-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="38599-108">Properties</span></span>
+|<span data-ttu-id="38599-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="38599-109">Property</span></span>|<span data-ttu-id="38599-110">Тип</span><span class="sxs-lookup"><span data-stu-id="38599-110">Type</span></span>|<span data-ttu-id="38599-111">Описание</span><span class="sxs-lookup"><span data-stu-id="38599-111">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="461ec-112">Связи</span><span class="sxs-lookup"><span data-stu-id="461ec-112">Relationships</span></span>
-<span data-ttu-id="461ec-113">Нет</span><span class="sxs-lookup"><span data-stu-id="461ec-113">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="38599-112">Связи</span><span class="sxs-lookup"><span data-stu-id="38599-112">Relationships</span></span>
+<span data-ttu-id="38599-113">Нет</span><span class="sxs-lookup"><span data-stu-id="38599-113">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="461ec-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="461ec-114">JSON Representation</span></span>
-<span data-ttu-id="461ec-115">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="461ec-115">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="38599-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="38599-114">JSON Representation</span></span>
+<span data-ttu-id="38599-115">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="38599-115">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.ipRange"
@@ -41,7 +41,6 @@ ms.locfileid: "48684472"
   "@odata.type": "#microsoft.graph.ipRange"
 }
 ```
-
 
 
 
