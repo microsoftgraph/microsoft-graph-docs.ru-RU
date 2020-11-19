@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 10e3abc075272622cfdb605e8289ee5d2c3633ed
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f117769a5216a5522d91e254957605d938b9f89b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731829"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49236667"
 ---
 # <a name="create-macossoftwareupdatecategorysummary"></a>Создание Макоссофтвареупдатекатегорисуммари
 
@@ -29,7 +29,7 @@ ms.locfileid: "48731829"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,18 +46,18 @@ POST /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdateA
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Макоссофтвареупдатекатегорисуммари в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Макоссофтвареупдатекатегорисуммари.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|displayName|Строка|Имя отчета|
+|id|String|Ключ объекта.|
+|displayName|String|Имя отчета|
 |deviceId|String|ИДЕНТИФИКАТОР устройства.|
 |userId|String|Идентификатор пользователя.|
-|упдатекатегори|[макоссофтвареупдатекатегори](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|Тип обновления программного обеспечения. Возможные значения: `critical`, `configurationDataFile`, `firmware`, `other`.|
+|упдатекатегори|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|Тип обновления программного обеспечения. Возможные значения: `critical`, `configurationDataFile`, `firmware`, `other`.|
 |сукцессфулупдатекаунт|Int32|Количество успешных обновлений на устройстве|
 |фаиледупдатекаунт|Int32|Количество неудачных обновлений на устройстве|
 |тоталупдатекаунт|Int32|Общее количество обновлений на устройстве|
@@ -65,7 +65,7 @@ POST /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdateA
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [макоссофтвареупдатекатегорисуммари](../resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -110,7 +110,6 @@ Content-Length: 422
   "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 29ca1b5e3028abf3fd48e77501b7e02389963240
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 67d326adbdd60d62f32d4d2c032df0e1b6a9a14c
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48731836"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49236662"
 ---
 # <a name="update-macossoftwareupdateaccountsummary"></a>Обновление Макоссофтвареупдатеаккаунтсуммари
 
@@ -29,7 +29,7 @@ ms.locfileid: "48731836"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,15 +46,15 @@ PATCH /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdate
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [макоссофтвареупдатеаккаунтсуммари](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [макоссофтвареупдатеаккаунтсуммари](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
-|displayName|Строка|Имя отчета|
+|id|String|Ключ объекта.|
+|displayName|String|Имя отчета|
 |deviceId|String|ИДЕНТИФИКАТОР устройства.|
 |userId|String|Идентификатор пользователя.|
 |deviceName|String|Имя устройства.|
@@ -67,7 +67,7 @@ PATCH /deviceManagement/macOSSoftwareUpdateAccountSummaries/{macOSSoftwareUpdate
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [макоссофтвареупдатеаккаунтсуммари](../resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -116,7 +116,6 @@ Content-Length: 502
   "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
 }
 ```
-
 
 
 
