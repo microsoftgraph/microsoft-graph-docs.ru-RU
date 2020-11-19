@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: b39c04794d276fb1ea84fc92279d97f366b40166
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: c9d799aeb602f1b06c7429e8c69483a238a059ad
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48733156"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300880"
 ---
 # <a name="alllicensedusersassignmenttarget-resource-type"></a>Тип ресурса allLicensedUsersAssignmentTarget
 
@@ -28,7 +28,7 @@ ms.locfileid: "48733156"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|девицеандаппманажементассигнментфилтерид|Строка|Идентификатор фильтра для назначения назначения. Наследуется от [девицеандаппманажементассигнменттаржет](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|
+|девицеандаппманажементассигнментфилтерид|String|Идентификатор фильтра для назначения назначения. Наследуется от [девицеандаппманажементассигнменттаржет](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|
 |deviceAndAppManagementAssignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|Тип фильтра целевого назначения, например, Exclude или include. Наследуется от [девицеандаппманажементассигнменттаржет](../resources/intune-shared-deviceandappmanagementassignmenttarget.md). Возможные значения: `none`, `include`.|
 
 ## <a name="relationships"></a>Связи
@@ -48,7 +48,6 @@ ms.locfileid: "48733156"
   "deviceAndAppManagementAssignmentFilterType": "String"
 }
 ```
-
 
 
 

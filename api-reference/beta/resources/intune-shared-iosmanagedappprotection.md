@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 5a6e6f6bc78cfd46193eff85f8a5901085bfdf2f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b1c478525d9cb768fffdb346f9e7c0717f811f09
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48702259"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300607"
 ---
 # <a name="iosmanagedappprotection-resource-type"></a>Тип ресурса iosManagedAppProtection
 
@@ -39,9 +39,9 @@ ms.locfileid: "48702259"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|displayName|Строка|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|description|Строка|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|displayName|String|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
@@ -72,8 +72,8 @@ ms.locfileid: "48702259"
 |minimumWarningOsVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение о невозможности получить доступ к данным компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumRequiredAppVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumWarningAppVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|минимумвипеосверсион|Строка|Версии, меньшие или равные указанной версии, будут очищать управляемое приложение и связанные данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|минимумвипеаппверсион|Строка|Версии, меньшие или равные указанной версии, будут очищать управляемое приложение и связанные данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|минимумвипеосверсион|String|Версии, меньшие или равные указанной версии, будут очищать управляемое приложение и связанные данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|минимумвипеаппверсион|String|Версии, меньшие или равные указанной версии, будут очищать управляемое приложение и связанные данные компании. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |аппактионифдевицекомплианцерекуиред|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемого приложения (блокировка или очистка), когда устройство находится в корневом режиме или с защитой от удаления, если для Девицекомплианцерекуиред задано значение true. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`, `warn`.|
 |аппактионифмаксимумпинретриесексцеедед|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемого приложения (блокировка или очистка) на основе максимального количества неудачных попыток ввода ПИН-кода. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`, `warn`.|
 |пинрекуирединстеадофбиометриктимеаут|Длительность|Время ожидания ПИН-кода приложения (в минутах), а не биометрического кода, унаследованного от [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
@@ -87,12 +87,12 @@ ms.locfileid: "48702259"
 |faceIdBlocked|Boolean|Указывает, можно ли использовать FaceID вместо ПИН-кода, если для параметра PinRequired установлено значение True.|
 |exemptedAppProtocols|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Приложения из этого списка не будут исключены из политики и смогут получать данные из управляемых приложений.|
 |Свойства minimumwipesdkversion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании.|
-|allowedIosDeviceModels|Строка|Разделенный на точку с запятой список моделей устройств, допустимых в виде строки, для работы управляемого приложения.|
+|allowedIosDeviceModels|String|Разделенный на точку с запятой список моделей устройств, допустимых в виде строки, для работы управляемого приложения.|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемого приложения: блок или очистка, если указанная модель устройства не разрешена. Возможные значения: `block`, `wipe`, `warn`.|
-|filterOpenInToOnlyManagedApps|Логический|Определяет, поддерживается ли операция открытия в управляемом приложении для выбранных расположений филешаринг. Этот параметр применяется только в том случае, если для Алловедаутбаунддататрансфердестинатионс задано значение Манажедаппс, а для свойства свойства disableprotectionofmanagedoutboundopenindata задано значение false.|
-|Свойства disableprotectionofmanagedoutboundopenindata|Логический|Отключить защиту данных, передаваемых в другие приложения с помощью функции IOS Open in. Этот параметр может иметь значение true, только если для параметра Алловедаутбаунддататрансфердестинатионс задано значение Манажедаппс.|
-|protectInboundDataFromUnknownSources|Логический|Защита входящих данных из неизвестного источника. Этот параметр может иметь значение true, только если для параметра Алловединбаунддататрансферсаурцес задано значение Аллаппс.|
-|кустомбровсерпротокол|Строка|Настраиваемый протокол браузера для открытия Weblink на iOS.|
+|filterOpenInToOnlyManagedApps|Boolean|Определяет, поддерживается ли операция открытия в управляемом приложении для выбранных расположений филешаринг. Этот параметр применяется только в том случае, если для Алловедаутбаунддататрансфердестинатионс задано значение Манажедаппс, а для свойства свойства disableprotectionofmanagedoutboundopenindata задано значение false.|
+|Свойства disableprotectionofmanagedoutboundopenindata|Boolean|Отключить защиту данных, передаваемых в другие приложения с помощью функции IOS Open in. Этот параметр может иметь значение true, только если для параметра Алловедаутбаунддататрансфердестинатионс задано значение Манажедаппс.|
+|protectInboundDataFromUnknownSources|Boolean|Защита входящих данных из неизвестного источника. Этот параметр может иметь значение true, только если для параметра Алловединбаунддататрансферсаурцес задано значение Аллаппс.|
+|кустомбровсерпротокол|String|Настраиваемый протокол браузера для открытия Weblink на iOS.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -179,7 +179,6 @@ ms.locfileid: "48702259"
   "customBrowserProtocol": "String"
 }
 ```
-
 
 
 

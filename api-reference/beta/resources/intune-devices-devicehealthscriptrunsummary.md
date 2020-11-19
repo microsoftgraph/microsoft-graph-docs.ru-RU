@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d6e06ba1937d5a18b798dbca7702d37aa64bc71f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ef09482999fdff50ebbd1bd0e0df5320aad6f206
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48695000"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49299361"
 ---
 # <a name="devicehealthscriptrunsummary-resource-type"></a>Тип ресурса Девицехеалсскриптрунсуммари
 
@@ -31,7 +31,7 @@ ms.locfileid: "48695000"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключевой объект сводки запуска сценария работоспособности устройства. Это свойство доступно только для чтения.|
+|id|String|Ключевой объект сводки запуска сценария работоспособности устройства. Это свойство доступно только для чтения.|
 |ноиссуедетектеддевицекаунт|Int32|Количество устройств, для которых сценарий обнаружения не обнаружил проблему, и устройство находится в работоспособном состоянии.|
 |иссуедетектеддевицекаунт|Int32|Количество устройств, для которых обнаружена ошибка сценария обнаружения|
 |детектионскриптеррордевицекаунт|Int32|Количество устройств, на которых возникла ошибка при выполнении сценария обнаружения и который не был выполнен|
@@ -70,7 +70,6 @@ ms.locfileid: "48695000"
   "issueRemediatedCumulativeDeviceCount": 1024
 }
 ```
-
 
 
 

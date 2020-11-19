@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f16db693a751641c1b03692f0500cd5dc6d3bfc8
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2adea6cf8d9957e04c7248993ee6197dbd28850b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48710001"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49302826"
 ---
 # <a name="mediacontentratingaustralia-resource-type"></a>Тип ресурса mediaContentRatingAustralia
 
@@ -45,7 +45,6 @@ ms.locfileid: "48710001"
   "tvRating": "String"
 }
 ```
-
 
 
 

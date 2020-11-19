@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 4729b4eb32f07ca83596de184615ac6301815f1a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: b8cde943ccfd4befad2a14f607350a9989e1e42d
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693747"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49299312"
 ---
 # <a name="devicelogcollectionresponse-resource-type"></a>Тип ресурса Девицелогколлектионреспонсе
 
@@ -35,13 +35,13 @@ ms.locfileid: "48693747"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор в виде tenantId_deviceId_requestId|
+|id|String|Уникальный идентификатор в виде tenantId_deviceId_requestId|
 |status|String|Состояние запроса на сбор журналов|
 |манажеддевицеид|Guid|Идентификатор устройства|
 |errorCode|Int64|Код ошибки (при наличии). Допустимые значения — 9.22337203685478 E + 18 — 9.22337203685478 E + 18|
 |рекуестеддатетимеутк|DateTimeOffset|Дата и время запроса|
 |рецеиведдатетимеутк|DateTimeOffset|Дата и время получения запроса|
-|Свойства initiatedbyuserprincipalname|Строка|Имя участника-пользователя, который инициировал запрос.|
+|Свойства initiatedbyuserprincipalname|String|Имя участника-пользователя, который инициировал запрос.|
 |експиратиондатетимеутк|DateTimeOffset|Дата и время истечения срока действия журналов|
 |size|Двойное с плавающей точкой|Размер журналов. Допустимые значения — 1 79769313486232e308 E + 308 — 1 79769313486232e308 E + 308|
 
@@ -70,7 +70,6 @@ ms.locfileid: "48693747"
   "size": "4.2"
 }
 ```
-
 
 
 

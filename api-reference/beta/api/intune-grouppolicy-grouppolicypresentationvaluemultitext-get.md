@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: cf17ff4ee8cbea3e958513764c011fcdfbdc2887
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: a0a02b7c08a9a18510c65021c8af95188c1789be
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48698605"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300082"
 ---
 # <a name="get-grouppolicypresentationvaluemultitext"></a>Получение Граупполиципресентатионвалуемултитекст
 
@@ -49,10 +49,10 @@ GET /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/def
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [граупполиципресентатионвалуемултитекст](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -82,7 +82,6 @@ Content-Length: 325
   }
 }
 ```
-
 
 
 

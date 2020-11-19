@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 1b0e37364bd505dada24d0283477742f70183b83
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 12e84e617d74dc73c0234ab1cddfbe004ddc8a6a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722811"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49302595"
 ---
 # <a name="managedappphonenumberredirectlevel-enum-type"></a>тип перечисления Манажедаппфоненумберредиректлевел
 
@@ -29,7 +29,6 @@ ms.locfileid: "48722811"
 |managedApps|1,1|Общий доступ разрешен всем управляемым приложениям.|
 |customApp|2|Общий доступ разрешен для настраиваемого приложения.|
 |заблокированных|4|Совместное использование приложений заблокировано.|
-
 
 
 

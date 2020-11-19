@@ -1,18 +1,18 @@
 ---
-title: Удаление Виндовсвификонфигуратион
-description: Удаляет объект Виндовсвификонфигуратион.
+title: Удаление Девицеманажементконфигуратиончоицесеттингдефинитион
+description: Удаляет объект Девицеманажементконфигуратиончоицесеттингдефинитион.
 author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 2486c351c561fb69e878f310fc88df4b1a041328
+ms.openlocfilehash: e5ac2aebc0017c39130e84905c0882128b42a233
 ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 11/18/2020
-ms.locfileid: "49300313"
+ms.locfileid: "49337097"
 ---
-# <a name="delete-windowswificonfiguration"></a>Удаление Виндовсвификонфигуратион
+# <a name="delete-devicemanagementconfigurationchoicesettingdefinition"></a>Удаление Девицеманажементконфигуратиончоицесеттингдефинитион
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "49300313"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Удаляет объект [виндовсвификонфигуратион](../resources/intune-deviceconfig-windowswificonfiguration.md).
+Удаляет объект [девицеманажементконфигуратиончоицесеттингдефинитион](../resources/intune-deviceconfigv2-devicemanagementconfigurationchoicesettingdefinition.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,9 +37,8 @@ ms.locfileid: "49300313"
 }
 -->
 ``` http
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
-DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
+DELETE /deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
+DELETE /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions/{deviceManagementConfigurationSettingDefinitionId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запроса
@@ -59,7 +58,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
+DELETE https://graph.microsoft.com/beta/deviceManagement/configurationSettings/{deviceManagementConfigurationSettingDefinitionId}
 ```
 
 ### <a name="response"></a>Отклик

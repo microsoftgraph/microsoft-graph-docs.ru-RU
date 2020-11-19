@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a6fdb900b9f9ce5c89828e6e945623a766de2041
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 05105eec5b3b870ee608d0b47861d1eaddae8965
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697240"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49301279"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>Тип ресурса deviceEnrollmentPlatformRestriction
 
@@ -30,6 +30,7 @@ ms.locfileid: "48697240"
 |osMinimumVersion|String|Минимальная поддерживаемая версия ОС|
 |osMaximumVersion|String|Максимальная поддерживаемая версия ОС|
 |блоккедмануфактурерс|Коллекция строк|Коллекция заблокированных производителей.|
+|блоккедскус|Коллекция строк|Коллекция заблокированных SKU.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -50,10 +51,12 @@ ms.locfileid: "48697240"
   "osMaximumVersion": "String",
   "blockedManufacturers": [
     "String"
+  ],
+  "blockedSkus": [
+    "String"
   ]
 }
 ```
-
 
 
 

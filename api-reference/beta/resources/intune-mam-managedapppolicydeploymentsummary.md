@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 75a512f77ab40019ff220e867786e5c312650f5a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: f3c740f31a5c22dc1352b3d3eec5dfa9ab8c67bd
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730996"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49302518"
 ---
 # <a name="managedapppolicydeploymentsummary-resource-type"></a>Тип ресурса managedAppPolicyDeploymentSummary
 
@@ -31,11 +31,11 @@ ManagedAppEntity — это базовый тип для всех остальн
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Пока не задокументировано.|
+|displayName|String|Пока не задокументировано.|
 |configurationDeployedUserCount|Int32|Пока не задокументировано.|
 |lastRefreshTime|DateTimeOffset|Пока не задокументировано.|
 |configurationDeploymentSummaryPerApp|Коллекция [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md)|Пока не задокументировано.|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |version|String|Версия объекта.|
 
 ## <a name="relationships"></a>Связи
@@ -69,7 +69,6 @@ ManagedAppEntity — это базовый тип для всех остальн
   "version": "String"
 }
 ```
-
 
 
 

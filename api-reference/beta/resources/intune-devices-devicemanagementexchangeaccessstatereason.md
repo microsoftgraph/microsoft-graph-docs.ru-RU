@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: cca75743a7ab4e32f4ec3d4b065756f0bae19bd6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 695127717baa51f1888fd3b20d2bed4a42464e1b
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48727416"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49299200"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>тип перечисления Девицеманажементексчанжеакцессстатереасон
 
@@ -25,7 +25,7 @@ ms.locfileid: "48727416"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|Не обнаружена Причина состояния доступа в Exchange|
+|Нет|нуль|Не обнаружена Причина состояния доступа в Exchange|
 |unknown|1,1|Причина неизвестного состояния доступа|
 |ексчанжеглобалруле|2|Состояние доступа определяется глобальным правилом Exchange|
 |ексчанжеиндивидуалруле|4|Состояние доступа определяется индивидуальной правилом Exchange|
@@ -41,7 +41,6 @@ ms.locfileid: "48727416"
 |азуреадблоккдуетоакцессполици|14 |Состояние доступа, отозванное политикой доступа AAD|
 |компромиседпассворд|15 |Состояние доступа отозвано с помощью скомпрометированного пароля|
 |девиценоткновнвисманажедапп|16 |Состояние доступа, отозванное с помощью вызова управляемого приложения|
-
 
 
 

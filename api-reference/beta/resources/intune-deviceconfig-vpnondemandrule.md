@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8429cb0a7870cb1ee756f5e2c02b218d5c768862
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 648214bac549b13605211aa47d5e12201db02bab
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728351"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49299613"
 ---
 # <a name="vpnondemandrule-resource-type"></a>Тип ресурса Впнондемандруле
 
@@ -27,11 +27,11 @@ ms.locfileid: "48728351"
 |:---|:---|:---|
 |Идентификатор|Коллекция строк|Идентификаторы набора сетевых служб (SSID).|
 |днссеарчдомаинс|Коллекция строк|Домены поиска DNS.|
-|пробеурл|Строка|URL-адрес для зонда. Если этот URL-адрес успешно извлекается (возвращается код состояния HTTP 200) без перенаправления, это правило соответствует этому правилу.|
+|пробеурл|String|URL-адрес для зонда. Если этот URL-адрес успешно извлекается (возвращается код состояния HTTP 200) без перенаправления, это правило соответствует этому правилу.|
 |action|[впнондемандрулеконнектионактион](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Меры. Возможные значения: `connect`, `evaluateConnection`, `ignore`, `disconnect`.|
 |домаинактион|[впнондемандрулеконнектиондомаинактион](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Действие домена (применяется только при оценке подключения). Возможные значения: `connectIfNeeded`, `neverConnect`.|
 |домена|Коллекция строк|Домены (применяется только при оценке подключения).|
-|проберекуиредурл|Строка|Обязательный URL-адрес для зонда (применяется только при оценке действия Connection и при необходимости Домаинактион подключается).|
+|проберекуиредурл|String|Обязательный URL-адрес для зонда (применяется только при оценке действия Connection и при необходимости Домаинактион подключается).|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -61,7 +61,6 @@ ms.locfileid: "48728351"
   "probeRequiredUrl": "String"
 }
 ```
-
 
 
 

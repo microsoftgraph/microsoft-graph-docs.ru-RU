@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: d860844de50c58deace7f10821ca0b1a4591d00b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 30d223eb59d092b9411388b93226d48165a4e703
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722825"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49298766"
 ---
 # <a name="grouppolicymigrationreadiness-enum-type"></a>тип перечисления Граупполицимигратионреадинесс
 
@@ -25,12 +25,11 @@ ms.locfileid: "48722825"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|1,1|Нет покрытия Intune|
+|Нет|1,1|Нет покрытия Intune|
 |части|2|Частичное покрытие Intune|
 |complete|4|Выполнение действия в Intune|
 |error|4 |Ошибка при анализе покрытия|
 |нотаппликабле|5 |Нет параметров групповой политики в объекте групповой политики|
-
 
 
 

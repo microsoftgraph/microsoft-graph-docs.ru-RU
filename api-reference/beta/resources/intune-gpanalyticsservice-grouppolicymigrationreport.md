@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f6dc4a31819a0ffd47f395b58d98c704bd5a2e1b
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1b9a44157f05b62be6916a01347c6a2441ea83cf
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48735780"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49298773"
 ---
 # <a name="grouppolicymigrationreport-resource-type"></a>Тип ресурса Граупполицимигратионрепорт
 
@@ -35,16 +35,16 @@ ms.locfileid: "48735780"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Пока не задокументировано.|
+|id|String|Пока не задокументировано.|
 |граупполициобжектид|Guid|GUID объекта групповой политики из XML-содержимого объекта групповой политики|
-|displayName|Строка|Имя объекта групповой политики из XML-содержимого объекта групповой политики|
-|аудистингуишеднаме|Строка|Различающееся имя подразделения.|
+|displayName|String|Имя объекта групповой политики из XML-содержимого объекта групповой политики|
+|аудистингуишеднаме|String|Различающееся имя подразделения.|
 |createdDateTime|DateTimeOffset|Дата и время создания Граупполицимигратионрепорт.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения Граупполицимигратионрепорт.|
 |граупполицикреатеддатетиме|DateTimeOffset|Дата и время создания Граупполицимигратионрепорт.|
 |граупполициластмодифиеддатетиме|DateTimeOffset|Дата и время последнего изменения Граупполицимигратионрепорт.|
 |мигратионреадинесс|[groupPolicyMigrationReadiness](../resources/intune-gpanalyticsservice-grouppolicymigrationreadiness.md)|Область действия Intune для связанного файлового объекта групповой политики. Возможные значения: `none`, `partial`, `complete`, `error`, `notApplicable`.|
-|таржетединактиведиректори|Логический|Свойство Targeted в Active Directory из XML-контента объекта групповой политики|
+|таржетединактиведиректори|Boolean|Свойство Targeted в Active Directory из XML-контента объекта групповой политики|
 |тоталсеттингскаунт|Int32|Общее количество параметров групповой политики из файла GPO.|
 |суппортедсеттингскаунт|Int32|Количество параметров групповой политики, поддерживаемых Intune.|
 |суппортедсеттингсперцент|Int32|Процент параметров групповой политики, поддерживаемых Intune.|
@@ -81,7 +81,6 @@ ms.locfileid: "48735780"
   "supportedSettingsPercent": 1024
 }
 ```
-
 
 
 

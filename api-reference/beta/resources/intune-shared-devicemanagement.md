@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dougeby
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 62a4a4f1926b549a5f7bab8bfdf8fc214ac07d56
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 95a958bef0550047b7e08cf372cd05b8e9112bca
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730406"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300824"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -20,11 +20,11 @@ ms.locfileid: "48730406"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ресурс deviceManagement представляет контейнер, содержимое которого зависит от рабочего процесса, в том числе:
+Ресурс deviceManagement представляет контейнер, содержимое которого зависит от рабочего процесса, в том числе:  
 
 - Параметры Android for Work
 - События аудита
-- Корпоративные положения и условия
+- Корпоративные положения и условия 
 - Профили корпоративной регистрации
 - Параметры конфигурации устройств
 - Параметры намерения устройства
@@ -64,10 +64,10 @@ ms.locfileid: "48730406"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор, связанный с устройством.|
+|id|String|Уникальный идентификатор, связанный с устройством.|
 |**Конфигурация устройств**|
 |интунеаккаунтид|Guid|Идентификатор учетной записи Intune для данного клиента|
-|легаципкмананжементенаблед|Логический|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
+|легаципкмананжементенаблед|Boolean|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
 |максимумдептокенс|Int32|Максимальное число маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
@@ -99,6 +99,10 @@ ms.locfileid: "48730406"
 |auditEvents|Коллекция [auditEvent](../resources/intune-auditing-auditevent.md)|События аудита|
 |**Условия компании**|
 |termsAndConditions|Коллекция [termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Условия, связанные с управлением устройствами в компании.|
+|**Политики конфигурации**|
+|конфигуратионполиЦиес|Коллекция [девицеманажементконфигуратионполици](../resources/intune-deviceconfigv2-deviceManagementConfigurationPolicy.md)|Список всех политик конфигурации|
+|конфигуратионсеттингс|Коллекция [девицеманажементконфигуратионсеттингдефинитион](../resources/intune-deviceconfigv2-deviceManagementConfigurationSettingDefinition.md)|Список всех Конфигуратионсеттингс|
+|конфигуратионкатегориес|Коллекция [девицеманажементконфигуратионкатегори](../resources/intune-deviceconfigv2-deviceManagementConfigurationCategory.md)|Список всех категорий конфигурации|
 |**Корпоративная регистрация**|
 |enrollmentProfiles|Коллекция [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md)|Профили регистрации.|
 |importedAppleDeviceIdentities|Коллекция [импортедаппледевицеидентити](../resources/intune-enrollment-importedappledeviceidentity.md)|Импортированные удостоверения устройств Apple.|
@@ -156,6 +160,9 @@ ms.locfileid: "48730406"
 |манажементкондитионстатементс|Коллекция [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md)|Операторы условия управления, связанные с управлением устройствами компании.|
 |**Аналитика групповой политики**|
 |граупполицимигратионрепортс|Коллекция [граупполицимигратионрепорт](../resources/intune-gpanalyticsservice-grouppolicymigrationreport.md)|Список отчетов о миграции групповой политики.|
+|**микрософттуннел**|
+|микрософттуннелконфигуратионс|Коллекция [микрософттуннелконфигуратион](../resources/intune-mstunnel-microsoftTunnelConfiguration.md)|Коллекция параметров Микрософттуннелконфигуратион, связанных с учетной записью.|
+|микрософттуннелситес|Коллекция [микрософттуннелсите](../resources/intune-mstunnel-microsoftTunnelSite.md)|Коллекция параметров Микрософттуннелсите, связанных с учетной записью.|
 |**Уведомления**|
 |notificationMessageTemplates|Коллекция [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md)|Шаблоны сообщений уведомления.|
 |**Адаптация**|
@@ -185,7 +192,7 @@ ms.locfileid: "48730406"
 |roleDefinitions|Коллекция [roleDefinition](../resources/intune-rbac-roledefinition.md)|Определения ролей.|
 |roleScopeTags|Коллекция [ролескопетаг](../resources/intune-rbac-rolescopetag.md)|Теги области применения роли.|
 |**Создание отчетов**|
-|определяется|[deviceManagementReports](../resources/intune-reporting-devicemanagementreports.md)|Одноэлементные отчеты|
+|определяется|[deviceManagementReports](../resources/intune-shared-devicemanagementreports.md)|Одноэлементные отчеты|
 |**Обновление программного обеспечения**|
 |виндовсфеатуреупдатепрофилес|Коллекция [виндовсфеатуреупдатепрофиле](../resources/intune-softwareupdate-windowsfeatureupdateprofile.md)|Коллекция профилей обновления компонентов Windows|
 |**Управление расходами по телекоммуникационной связи (TEM)**|
@@ -213,7 +220,6 @@ ms.locfileid: "48730406"
   "subscriptionState": "String"
 }
 ```
-
 
 
 

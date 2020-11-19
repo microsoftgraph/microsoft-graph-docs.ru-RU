@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 29f6e8b413e008b09c9314f0bd1c505b3d39eab6
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 362bc9d449c3854fa98272758546a871333162a8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694986"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49299340"
 ---
 # <a name="devicehealthscripttimeschedule-resource-type"></a>Тип ресурса Девицехеалсскрипттимесчедуле
 
@@ -29,7 +29,7 @@ ms.locfileid: "48694986"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |interval|Int32|Значение x каждого x часа для ежечасного расписания, каждые x дней для ежедневного расписания, каждые x недель для еженедельного расписания, каждые x месяцев для ежемесячного расписания. Допустимые значения — от 1 до 23, наследуемые от [девицехеалсскриптрунсчедуле](../resources/intune-devices-devicehealthscriptrunschedule.md)|
-|усеутк|Логический|Укажите время в формате UTC или местное время клиента.|
+|усеутк|Boolean|Укажите время в формате UTC или местное время клиента.|
 |time|TimeOfDay|При планировании запуска сценария. Эта коллекция может содержать не более 20 элементов.|
 
 ## <a name="relationships"></a>Связи
@@ -50,7 +50,6 @@ ms.locfileid: "48694986"
   "time": "String (time of day)"
 }
 ```
-
 
 
 

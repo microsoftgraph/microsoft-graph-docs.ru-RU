@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: fe6a8916327c2921a077615d5c379b4dfcd4fa82
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 310bbfdbde5b19f1d9d207626261faa6cf90bee5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48697324"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49298262"
 ---
 # <a name="grouppolicyuploadedcategory-resource-type"></a>Тип ресурса Граупполициуплоадедкатегори
 
@@ -37,9 +37,9 @@ ms.locfileid: "48697324"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Идентификатор строки отображаемого имени категории, унаследованной от [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|
-|Корень|Логический|Определяет, является ли категория корневой категорией, унаследованной от [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|
-|id|Строка|Ключ объекта. Наследуется от [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|
+|displayName|String|Идентификатор строки отображаемого имени категории, унаследованной от [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|
+|Корень|Boolean|Определяет, является ли категория корневой категорией, унаследованной от [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|
+|id|String|Ключ объекта. Наследуется от [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [граупполицикатегори](../resources/intune-grouppolicy-grouppolicycategory.md)|
 
 ## <a name="relationships"></a>Связи
@@ -67,7 +67,6 @@ ms.locfileid: "48697324"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

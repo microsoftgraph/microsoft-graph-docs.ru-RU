@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 88345121b6dc34ce92e48e20939eef79f9516477
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1424f1246ca4706933bee8764af6311b7dace1a4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48694433"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300012"
 ---
 # <a name="get-androidmanagedappregistration"></a>Get androidManagedAppRegistration
 
@@ -49,10 +49,10 @@ GET /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -99,7 +99,6 @@ Content-Length: 1054
   }
 }
 ```
-
 
 
 

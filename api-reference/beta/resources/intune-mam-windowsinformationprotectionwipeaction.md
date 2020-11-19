@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8fc5965e84b7df08c3433bc88e78758801ce3323
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: d915bfe59bf677accfaf16df8765b6c7da882cf9
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48691220"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49302476"
 ---
 # <a name="windowsinformationprotectionwipeaction-resource-type"></a>Тип ресурса Виндовсинформатионпротектионвипеактион
 
@@ -34,12 +34,12 @@ ms.locfileid: "48691220"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |status|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия очистки. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|таржетедусерид|Строка|UserId, целевой для этого действия очистки.|
-|таржетеддевицерегистратионид|Строка|Девицерегистратионид, предназначенный для этого действия очистки.|
-|таржетеддевиценаме|Строка|Имя целевого устройства.|
-|таржетеддевицемакаддресс|Строка|Mac-адрес целевого устройства.|
+|таржетедусерид|String|UserId, целевой для этого действия очистки.|
+|таржетеддевицерегистратионид|String|Девицерегистратионид, предназначенный для этого действия очистки.|
+|таржетеддевиценаме|String|Имя целевого устройства.|
+|таржетеддевицемакаддресс|String|Mac-адрес целевого устройства.|
 |ластчеккиндатетиме|DateTimeOffset|Время последнего возврата устройства, которое было назначено для этого действия очистки.|
 
 ## <a name="relationships"></a>Связи
@@ -65,7 +65,6 @@ ms.locfileid: "48691220"
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

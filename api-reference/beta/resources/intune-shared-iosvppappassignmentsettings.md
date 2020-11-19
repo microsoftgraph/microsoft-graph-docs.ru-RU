@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: f815b0530a87dd937a7ff9e88c8ff928865378ef
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 5b3f9f3b055cf05460a417098603e8854d11e92f
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48684465"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300586"
 ---
 # <a name="iosvppappassignmentsettings-resource-type"></a>Тип ресурса iosVppAppAssignmentSettings
 
@@ -31,7 +31,7 @@ ms.locfileid: "48684465"
 |useDeviceLicensing|Boolean|Указывает, используется ли лицензирование устройств.|
 |vpnConfigurationId|String|ИД конфигурации VPN, применяемой к этому приложению.|
 |**Приложения**|
-|унинсталлондевицеремовал|Логический|Указывает, следует ли удалить приложение, когда устройство удалено из Intune.|
+|унинсталлондевицеремовал|Boolean|Указывает, следует ли удалить приложение, когда устройство удалено из Intune.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -51,7 +51,6 @@ ms.locfileid: "48684465"
   "uninstallOnDeviceRemoval": true
 }
 ```
-
 
 
 

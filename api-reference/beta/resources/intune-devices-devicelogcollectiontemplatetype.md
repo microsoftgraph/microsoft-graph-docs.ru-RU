@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: fec31318d136b4cd06ea54e7eca8f776dafa6385
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 22324edf2dacf5408d33303ca286b9c1b0f0e8f3
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48693726"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49299256"
 ---
 # <a name="devicelogcollectiontemplatetype-enum-type"></a>тип перечисления Девицелогколлектионтемплатетипе
 
@@ -26,7 +26,6 @@ Enum для типа шаблона, используемого для сбор�
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |готовы|нуль|Предварительно определенный шаблон для собираемых данных|
-
 
 
 

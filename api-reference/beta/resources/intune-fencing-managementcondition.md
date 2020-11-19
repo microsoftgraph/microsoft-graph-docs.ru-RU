@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: a9707268f648edc60ab7b37292b6e59f7721d983
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 52cb6a93270ecdbe74c16b6a96e1386f01c3b27e
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722874"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49299067"
 ---
 # <a name="managementcondition-resource-type"></a>Тип ресурса Манажементкондитион
 
@@ -32,10 +32,10 @@ ms.locfileid: "48722874"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для условия управления. Созданное системой значение, назначаемое при создании.|
-|uniqueName|Строка|Уникальное имя условия управления. Используется в выражениях условия управления.|
-|displayName|Строка|Имя условия управления, определенное администратором.|
-|description|Строка|Описание условия управления, заданное администратором.|
+|id|String|Уникальный идентификатор для условия управления. Созданное системой значение, назначаемое при создании.|
+|uniqueName|String|Уникальное имя условия управления. Используется в выражениях условия управления.|
+|displayName|String|Имя условия управления, определенное администратором.|
+|description|String|Описание условия управления, заданное администратором.|
 |createdDateTime|DateTimeOffset|Время создания условия управления. Созданная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условия управления. Обновленная сторона службы.|
 |eTag|String|Тег ETag условия управления. Обновленная сторона службы.|
@@ -69,7 +69,6 @@ ms.locfileid: "48722874"
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: 3d932e9c3639073c95348afb3dd3f5c4a2a323d4
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: ffa59a2d579f46d9ace79346f362da36f0e3a5d5
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48728386"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49299718"
 ---
 # <a name="vpndeadpeerdetectionrate-enum-type"></a>тип перечисления Впндеадпирдетектионрате
 
@@ -26,10 +26,9 @@ ms.locfileid: "48728386"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |medium|нуль|Средняя|
-|none|1,1|Нет|
-|потребление|2|Низкая|
-|высокоуровневых|4|Высокая|
-
+|Нет|1,1|Нет|
+|потребление|2|Низкие|
+|высокоуровневых|4|Фишинговое сообщение с|
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: d5b3b33049d01d14c5c0800910138ceef1245d29
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 3651a3324023b7a11515a95ef879190b25ed27c4
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730395"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300775"
 ---
 # <a name="devicemanagementderivedcredentialsettings-resource-type"></a>Тип ресурса Девицеманажементдериведкредентиалсеттингс
 
@@ -20,7 +20,7 @@ ms.locfileid: "48730395"
 
 > **Примечание.** API Microsoft Graph для Intune требует наличия [активной лицензии Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Ресурс Девицеманажементдериведкредентиалсеттингс представляет контейнер, содержимое которого зависит от рабочего процесса, в том числе:
+Ресурс Девицеманажементдериведкредентиалсеттингс представляет контейнер, содержимое которого зависит от рабочего процесса, в том числе:  
 
 - Параметры конфигурации устройств
 - Политика RA
@@ -39,7 +39,7 @@ ms.locfileid: "48730395"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для производных учетных данных|
+|id|String|Уникальный идентификатор для производных учетных данных|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -58,7 +58,6 @@ ms.locfileid: "48730395"
   "id": "String (identifier)"
 }
 ```
-
 
 
 

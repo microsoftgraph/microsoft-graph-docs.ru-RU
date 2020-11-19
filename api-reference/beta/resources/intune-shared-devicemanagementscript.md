@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 2c855b09674f7d4a62879022257d96a5442a764a
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 80de61d507be33b844a2a0e9520a9abbbc254aed
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48730374"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49300684"
 ---
 # <a name="devicemanagementscript-resource-type"></a>Тип ресурса deviceManagementScript
 
@@ -38,17 +38,17 @@ Intune предоставит клиенту возможность запуск
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для сценария управления устройствами.|
-|displayName|Строка|Имя скрипта управления устройствами.|
-|description|Строка|Необязательное описание скрипта управления устройствами.|
+|id|String|Уникальный идентификатор для сценария управления устройствами.|
+|displayName|String|Имя скрипта управления устройствами.|
+|description|String|Необязательное описание скрипта управления устройствами.|
 |скриптконтент|Binary|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами. Это свойство доступно только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами. Это свойство доступно только для чтения.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
-|Свойства enforcesignaturecheck|Логический|Указывает, нужно ли проверять подпись скрипта.|
+|Свойства enforcesignaturecheck|Boolean|Указывает, нужно ли проверять подпись скрипта.|
 |fileName|String|Имя файла сценария.|
 |roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
-|runAs32Bit|Логический|Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 бит|
+|runAs32Bit|Boolean|Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 бит|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
@@ -86,7 +86,6 @@ Intune предоставит клиенту возможность запуск
   "runAs32Bit": true
 }
 ```
-
 
 
 

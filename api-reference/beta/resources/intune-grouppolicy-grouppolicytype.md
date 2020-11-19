@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c32f21cf3bf5a5e84ff33b596329a0290a1d47f5
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1241cb3bad75b8daa1c4fe944a361d7cb710fd23
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48707712"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49298276"
 ---
 # <a name="grouppolicytype-enum-type"></a>тип перечисления Граупполицитипе
 
@@ -27,7 +27,6 @@ ms.locfileid: "48707712"
 |:---|:---|:---|
 |адмксбаккед|нуль|Административные шаблоны групповой политики, встроенные в поставщика службы настройки политик (CSP).|
 |адмксинжестед|1,1|Административные шаблоны групповой политики, установленные с помощью поставщика службы настройки политик (CSP).|
-
 
 
 

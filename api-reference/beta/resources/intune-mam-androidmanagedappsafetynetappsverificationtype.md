@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: a0438e09e226a540f67d5316094fe49676b9834f
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 11559855dba149908d5a16c27198e3a88be8be50
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48723886"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49298094"
 ---
 # <a name="androidmanagedappsafetynetappsverificationtype-enum-type"></a>тип перечисления Андроидманажедаппсафетинетаппсверификатионтипе
 
@@ -25,9 +25,8 @@ ms.locfileid: "48723886"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|нуль|нет набора требований|
+|Нет|нуль|нет набора требований|
 |включено|1,1|требовать, чтобы на устройстве Android была включена проверка приложений SafetyNet|
-
 
 
 

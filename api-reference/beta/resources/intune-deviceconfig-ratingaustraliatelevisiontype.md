@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: enumPageType
-ms.openlocfilehash: c1aa9f7419d3eb49f22381dcea23ca901b39168e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1feb34976569e951dcd4ca51ab4456c95c8a2942
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48701335"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49299844"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>тип перечисления Ратингаустралиателевисионтипе
 
@@ -34,7 +34,6 @@ ms.locfileid: "48701335"
 |обнаружен|6 |Для зрителей рекомендуется использовать классификацию M более 15|
 |agesAbove15|7 |MA15 + Classification не подходит для зрителей в течение 15|
 |agesAbove15AdultViolence|8 |AV15 + Classification не подходит для зрителей в масштабе 15, взрослого только для насилия|
-
 
 
 

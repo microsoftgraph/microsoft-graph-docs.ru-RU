@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: ac0006d7963eab2d91cc1968965f0387c60ad607
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: dc5f886a8ea7c01745539fe31761328e746995a8
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48710022"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49302833"
 ---
 # <a name="manageddeviceencryptionstate-resource-type"></a>Тип ресурса Манажеддевицеенкриптионстате
 
@@ -34,11 +34,11 @@ ms.locfileid: "48710022"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |userPrincipalName|String|Имя пользователя|
 |deviceType|[deviceTypes](../resources/intune-deviceconfig-devicetypes.md)|Платформа устройства. Возможные значения: `desktop` ,,,,,,,,,,,,,,,,,,,,,,,,,,, `windowsRT` `winMO6` `nokia` `windowsPhone` `mac` `winCE` `winEmbedded` `iPhone` `iPad` `iPod` `android` `iSocConsumer` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `blackberry` `palm` `unknown` .|
 |osVersion|String|Версия операционной системы устройства|
-|тпмспеЦификатионверсион|Строка|Версия TPM устройства|
+|тпмспеЦификатионверсион|String|Версия TPM устройства|
 |deviceName|String|Имя устройства|
 |encryptionReadinessState|[encryptionReadinessState](../resources/intune-deviceconfig-encryptionreadinessstate.md)|Состояние готовности к шифрованию. Возможные значения: `notReady`, `ready`.|
 |encryptionState|[encryptionState](../resources/intune-deviceconfig-encryptionstate.md)|Состояние шифрования устройства. Возможные значения: `notEncrypted`, `encrypted`.|
@@ -81,7 +81,6 @@ ms.locfileid: "48710022"
   ]
 }
 ```
-
 
 
 

@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: resourcePageType
-ms.openlocfilehash: 8706fd6c15033c4db5ac9fb6f923c53d382519a0
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 1702cb881ae85ce2d55ffbef0f8c96e93e88db3a
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48706921"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49302721"
 ---
 # <a name="userexperienceanalyticsscorehistory-resource-type"></a>Тип ресурса Усерекспериенцеаналитиксскорехистори
 
@@ -34,7 +34,7 @@ ms.locfileid: "48706921"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор процесса запуска устройства аналитики взаимодействия с пользователем.|
+|id|String|Уникальный идентификатор процесса запуска устройства аналитики взаимодействия с пользователем.|
 |стартупдатетиме|DateTimeOffset|Дата и время запуска устройства Analytics Device Experience.|
 |стартупскоре|Int32|Оценка запуска устройства Analytics для пользователя. Показатель будет находиться в диапазоне 0-100, 100 — идеальный показатель.|
 |коребутскоре|Int32|Оценка загрузки ядра устройств для службы аналитики взаимодействия с пользователем. Показатель будет находиться в диапазоне 0-100, 100 — идеальный показатель.|
@@ -65,7 +65,6 @@ ms.locfileid: "48706921"
   "restartScore": 1024
 }
 ```
-
 
 
 
