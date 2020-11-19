@@ -5,12 +5,12 @@ author: dougeby
 localization_priority: Normal
 ms.prod: intune
 doc_type: apiPageType
-ms.openlocfilehash: 365b2f7ac94c3b8c5583f6fa3106341b882d28cf
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 6adbb4dbdb9611b4624bbc87412b24704ee62437
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48722685"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49220968"
 ---
 # <a name="create-carttoclassassociation"></a>Создание КарттоклассассоЦиатион
 
@@ -29,7 +29,7 @@ ms.locfileid: "48722685"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений|DeviceManagementConfiguration.ReadWrite.All|
+|Приложение|DeviceManagementConfiguration.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- {
@@ -46,25 +46,25 @@ POST /deviceManagement/cartToClassAssociations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта КарттоклассассоЦиатион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании КарттоклассассоЦиатион.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |version|Int32|Версия КарттоклассассоЦиатион.|
-|displayName|Строка|Указанное администратором имя конфигурации устройства.|
-|description|Строка|Администратор предоставил описание КарттоклассассоЦиатион.|
+|displayName|String|Указанное администратором имя конфигурации устройства.|
+|description|String|Администратор предоставил описание КарттоклассассоЦиатион.|
 |девицекартидс|Коллекция строк|Идентификаторы корзин устройств, которые необходимо связать с классами.|
 |классрумидс|Коллекция строк|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -113,7 +113,6 @@ Content-Length: 443
   ]
 }
 ```
-
 
 
 
