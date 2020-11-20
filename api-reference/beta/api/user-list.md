@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: f084afca991937b13b96be19c82b6bdcd9da27fb
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: bd56e0b6849626bc31a5397ce47fae8a1279aed2
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49081959"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352398"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 
@@ -41,7 +41,7 @@ GET /users
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика, в том числе `$search`, `$count` і `$filter`. `$search` можно использовать в свойстве **displayName**. Когда элементы добавляются или обновляются для этого ресурса, они специально индексируются для использования с помощью параметров `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка. В настоящее время параметры `$count` и `$search` недоступны в клиентах Azure AD B2C.
+Этот метод поддерживает [параметры запроса OData](/graph/query-parameters) для настройки ответа, в том числе `$search`, `$count` і `$filter`. Вы можете использовать параметр `$search` в свойстве **displayName**. При добавлении или обновлении элементов для этого ресурса они индексируются для использования с параметрами запроса `$count` и `$search`. Между добавлением или обновлением элемента и его появлением в индексе может возникать небольшая задержка. В настоящее время параметры `$count` и `$search` недоступны в клиентах Azure AD B2C.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -126,7 +126,7 @@ Content-type: application/json
 Найдите учетную запись пользователя, используя имя для входа (также называемое локальной учетной записью).
 
 >[!NOTE]
->При фильтрации по свойству **identities** требуется указывать параметры **issuer** и **issuerAssignedId**.
+>При фильтрации по свойству **identities** требуется указывать параметры **issuer** и **issuerAssignedId**. Значение **issuerAssignedId** должно быть адресом электронной почты учетной записи пользователя, а не именем субъекта-пользователя (UPN). Если используется UPN, результатом будет пустой список.
 
 #### <a name="request"></a>Запрос
 
