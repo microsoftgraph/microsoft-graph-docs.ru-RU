@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 6341d962d8e67aed4a69f7246d4e6265e3abc015
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 27bdbd5a9865ea15135ba8bb5fe77546671b6ab7
+ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088796"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49352384"
 ---
 # <a name="user-revokesigninsessions"></a>Пользователь: Ревокесигнинсессионс
 
@@ -21,7 +21,7 @@ ms.locfileid: "48088796"
 >Если приложение пытается активировать маркер делегированного доступа для этого пользователя с помощью недействительного маркера обновления, приложение получит ошибку. В этом случае приложению потребуется получить новый маркер обновления, выполнив запрос к конечной точке авторизации, которая вынуждает пользователя выполнить вход.
 
 >[!NOTE]
->После вызова **ревокесигнинсессионс**может возникнуть небольшая задержка в несколько минут до отзыва маркеров.
+>После вызова **ревокесигнинсессионс** может возникнуть небольшая задержка в несколько минут до отзыва маркеров.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,9 +29,9 @@ ms.locfileid: "48088796"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | User. ReadWrite, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL |
+|Делегированные (рабочая или учебная учетная запись)     | User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложения                            | Directory.ReadWrite.All, Directory.AccessAsUser.All |
+|Для приложений                            | User. ReadWrite. ALL, Directory. ReadWrite. ALL,|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
