@@ -1387,9 +1387,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Получение
                     href: api/callrecords-callrecord-get.md
-              - name: Сеанс
+              - name: Session
                 items:
-                  - name: Сеанс
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: List
                     href: api/callrecords-session-list.md
@@ -9464,7 +9464,7 @@ items:
                 href: api/schemaextension-update.md
               - name: Удаление расширения схемы
                 href: api/schemaextension-delete.md
-      - name: Files
+      - name: Файлы
         displayName: 'OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint'
         items:
           - name: Обзор
@@ -11983,7 +11983,7 @@ items:
                 href: resources/searchresponse.md
               - name: Данные запроса
                 href: api/search-query.md
-          - name: Индекс
+          - name: Index
             items:
               - name: Обзор
                 href: resources/indexing-api-overview.md
@@ -12268,7 +12268,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -12461,6 +12461,16 @@ items:
                 href: api/channel-patch.md
               - name: Удаление канала
                 href: api/channel-delete.md
+              - name: Список участников канала
+                href: api/channel-list-members.md
+              - name: Получение члена канала
+                href: api/channel-get-members.md
+              - name: Добавление участника в канал
+                href: api/channel-add-members.md
+              - name: Обновление роли участника в канале
+                href: api/channel-update-members.md
+              - name: Удаление участника из канала
+                href: api/channel-delete-members.md
               - name: Выполнение переноса для канала
                 href: api/channel-completemigration.md
               - name: Получение папки с файлами
@@ -12583,6 +12593,14 @@ items:
                 href: api/user-delete-teamsappinstallation.md
               - name: Обновление установленного приложения для пользователя
                 href: api/user-upgrade-teamsappinstallation.md
+          - name: Веб-канал активности
+            items:
+              - name: Отправка уведомления пользователю в чате
+                href: api/chat-sendactivitynotification.md
+              - name: Отправка уведомления пользователю в команде
+                href: api/team-sendactivitynotification.md
+              - name: Отправка уведомления пользователю
+                href: api/userteamwork-sendactivitynotification.md
           - name: Tab
             href: resources/teamstab.md
             items:
