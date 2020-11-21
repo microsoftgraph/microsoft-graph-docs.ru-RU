@@ -376,6 +376,8 @@ items:
             href: teams-licenses.md
           - name: Отправка упреждающих сообщений с помощью бота
             href: teams-proactive-messaging.md
+          - name: Отправка уведомлений веб-канала активности
+            href: teams-send-activityfeednotifications.md
       - name: Задачи To-Do
         href: todo-concept-overview.md
         displayName: Microsoft To Do
