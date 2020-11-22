@@ -458,7 +458,7 @@ items:
                 href: api/user-upgrade-teamsappinstallation.md
               - name: Удаление приложения
                 href: api/user-delete-teamsappinstallation.md
-          - name: Задачи из списка дел
+          - name: Задачи To-Do
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -9224,6 +9224,65 @@ items:
                         href: api/intune-tem-telecomexpensemanagementpartner-delete.md
                       - name: Обновление
                         href: api/intune-tem-telecomexpensemanagementpartner-update.md
+          - name: Cloud PC (Предварительная версия)
+            items:
+              - name: Виртуальная конечная точка
+                href: resources/virtualendpoint.md
+                items:
+                  - name: Получение действующих разрешений
+                    href: api/virtualendpoint-geteffectivepermissions.md
+              - name: Cloud PC
+                href: resources/cloudpc.md
+                items:
+                  - name: Список
+                    href: api/virtualendpoint-list-cloudpcs.md
+                  - name: Получение
+                    href: api/cloudpc-get.md
+                  - name: Повторная подготовка
+                    href: api/cloudpc-reprovision.md
+              - name: Изображение облачного устройства для ПК
+                href: resources/cloudpcdeviceimage.md
+                items:
+                  - name: Список
+                    href: api/virtualendpoint-list-deviceimages.md
+                  - name: Получение
+                    href: api/cloudpcdeviceimage-get.md
+                  - name: Создание
+                    href: api/virtualendpoint-post-deviceimages.md
+                  - name: Удалить
+                    href: api/cloudpcdeviceimage-delete.md
+                  - name: Получение исходных изображений
+                    href: api/cloudpcdeviceimage-getsourceimages.md
+              - name: Локальное подключение к облачному компьютеру
+                href: resources/cloudpconpremisesconnection.md
+                items:
+                  - name: Список
+                    href: api/virtualendpoint-list-onpremisesconnections.md
+                  - name: Получение
+                    href: api/cloudpconpremisesconnection-get.md
+                  - name: Создание
+                    href: api/virtualendpoint-post-onpremisesconnections.md
+                  - name: Обновление
+                    href: api/cloudpconpremisesconnection-update.md
+                  - name: Delete
+                    href: api/cloudpconpremisesconnection-delete.md
+                  - name: Выполнение проверок работоспособности
+                    href: api/cloudpconpremisesconnection-runhealthcheck.md
+              - name: Политика подготовки облачных ПК
+                href: resources/cloudpcprovisioningpolicy.md
+                items:
+                  - name: Список
+                    href: api/virtualendpoint-list-provisioningpolicies.md
+                  - name: Получение
+                    href: api/cloudpcprovisioningpolicy-get.md
+                  - name: Создание
+                    href: api/virtualendpoint-post-provisioningpolicies.md
+                  - name: Обновление
+                    href: api/cloudpcprovisioningpolicy-update.md
+                  - name: Delete
+                    href: api/cloudpcprovisioningpolicy-delete.md
+                  - name: Назначение
+                    href: api/cloudpcprovisioningpolicy-assign.md
       - name: Образование
         items:
           - name: Общие сведения
@@ -11970,7 +12029,7 @@ items:
                     href: api/reportroot-getyammergroupsactivitygroupcounts.md
                   - name: Получение количества действий
                     href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Поиск (предварительный просмотр)
+      - name: Поиск
         displayname: Microsoft Search API
         items:
           - name: Запрос
@@ -11983,7 +12042,7 @@ items:
                 href: resources/searchresponse.md
               - name: Данные запроса
                 href: api/search-query.md
-          - name: Index
+          - name: Индекс (Предварительная версия)
             items:
               - name: Обзор
                 href: resources/indexing-api-overview.md
