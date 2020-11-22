@@ -185,7 +185,7 @@ items:
   - name: Справочник по версии 1.0
     expanded: true
     items:
-      - name: Обзор
+      - name: Общие сведения
         href: overview.md
       - name: Пользователи
         items:
@@ -405,7 +405,7 @@ items:
             items:
               - name: Список задач
                 href: api/planneruser-list-tasks.md
-          - name: Задачи из списка дел
+          - name: Задачи To-Do
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -4688,6 +4688,19 @@ items:
                 href: api/reportroot-getyammergroupsactivitygroupcounts.md
               - name: Получение количества действий
                 href: api/reportroot-getyammergroupsactivitycounts.md
+      - name: Поиск
+        displayname: Microsoft Search API
+        items:
+          - name: Запрос
+            items:
+              - name: Обзор
+                href: resources/search-api-overview.md
+              - name: Тип запроса поиска
+                href: resources/searchrequest.md
+              - name: Тип ответа поиска
+                href: resources/searchresponse.md
+              - name: Данные запроса
+                href: api/search-query.md
       - name: Безопасность
         displayname: 'Security API, Microsoft Intelligent Security Graph'
         items:
