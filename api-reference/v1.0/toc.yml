@@ -185,7 +185,7 @@ items:
   - name: Справочник по версии 1.0
     expanded: true
     items:
-      - name: Общие сведения
+      - name: Обзор
         href: overview.md
       - name: Пользователи
         items:
@@ -4806,7 +4806,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Создание плана
@@ -4902,10 +4902,14 @@ items:
                 href: api/group-delete.md
               - name: Список участников
                 href: api/team-list-members.md
-              - name: Добавление участников
+              - name: Получение участника
+                href: api/team-get-members.md
+              - name: Добавление члена
                 href: api/team-post-members.md
-              - name: Удаление участников
+              - name: Удаление члена
                 href: api/team-delete-members.md
+              - name: Обновление участника
+                href: api/team-update-members.md
               - name: Архивация объекта команды
                 href: api/team-archive.md
               - name: Распаковка объекта команды
@@ -4974,16 +4978,16 @@ items:
                 href: api/channel-patch.md
               - name: Удаление канала
                 href: api/channel-delete.md
-              - name: Список участников канала
+              - name: Список участников
                 href: api/channel-list-members.md
-              - name: Получение члена канала
+              - name: Получение участника
                 href: api/channel-get-members.md
-              - name: Добавление участника в канал
-                href: api/channel-add-members.md
-              - name: Обновление роли участника в канале
-                href: api/channel-update-members.md
-              - name: Удаление участника из канала
+              - name: Добавление члена
+                href: api/channel-post-members.md
+              - name: Удаление члена
                 href: api/channel-delete-members.md
+              - name: Роль элемента обновления
+                href: api/channel-update-members.md
               - name: Получение папки с файлами
                 href: api/channel-get-filesfolder.md
               - name: Перечисление сообщений в каналах
@@ -5000,12 +5004,6 @@ items:
                 href: api/channel-post-message.md
               - name: Ответ на сообщение
                 href: api/channel-post-messagereply.md
-              - name: Добавление участника в канал
-                href: api/conversationmember-add.md
-              - name: Удаление участника из канала
-                href: api/conversationmember-delete.md
-              - name: Обновление роли участника в канале
-                href: api/conversationmember-update.md
           - name: Сообщение чата
             href: resources/chatmessage.md
             items:
@@ -5023,32 +5021,6 @@ items:
                 href: api/channel-post-messagereply.md
               - name: Обновление сообщения
                 href: api/chatmessage-update.md
-          - name: Участник беседы
-            href: resources/conversationmember.md
-            items:
-              - name: Список участников
-                href: api/conversationmember-list.md
-              - name: Получение участника
-                href: api/conversationmember-get.md
-              - name: Добавление участника
-                href: api/conversationmember-add.md
-              - name: Обновление участника
-                href: api/conversationmember-update.md
-              - name: Удаление участника
-                href: api/conversationmember-delete.md
-          - name: Участник беседы пользователя Azure AD
-            href: resources/aaduserconversationmember.md
-            items:
-              - name: Список участников
-                href: api/conversationmember-list.md
-              - name: Получение участника
-                href: api/conversationmember-get.md
-              - name: Добавление участника
-                href: api/conversationmember-add.md
-              - name: Обновление участника
-                href: api/conversationmember-update.md
-              - name: Удаление участника
-                href: api/conversationmember-delete.md
           - name: Каталог приложений
             items:
               - name: Приложение в каталоге
