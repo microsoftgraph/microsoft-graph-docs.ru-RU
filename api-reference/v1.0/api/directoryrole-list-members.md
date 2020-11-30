@@ -1,84 +1,150 @@
 ---
-title: Список участников
-description: Получение списка пользователей, которым назначена роль каталога.  Роли каталогов можно назначать только пользователям.
+title: Список членов роли каталога
+description: Получение списка субъектов, назначенных для роли каталога.
 author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4041d4b94e873ab81c61986cb604664f2c268f0d
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 1c9d3c7079801a4322595b0bdae07580189ee48f
+ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460798"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49377091"
 ---
-# <a name="list-members"></a><span data-ttu-id="265fa-104">Список участников</span><span class="sxs-lookup"><span data-stu-id="265fa-104">List members</span></span>
+# <a name="list-members-of-a-directory-role"></a><span data-ttu-id="8f310-103">Список членов роли каталога</span><span class="sxs-lookup"><span data-stu-id="8f310-103">List members of a directory role</span></span>
 
-<span data-ttu-id="265fa-105">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="265fa-105">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="8f310-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="8f310-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="265fa-106">Получение списка пользователей, которым назначена роль каталога.</span><span class="sxs-lookup"><span data-stu-id="265fa-106">Retrieve a list of the users that are assigned to the directory role.</span></span>  <span data-ttu-id="265fa-107">Роли каталогов можно назначать только пользователям.</span><span class="sxs-lookup"><span data-stu-id="265fa-107">Only users can be assigned to a directory role.</span></span>
-## <a name="permissions"></a><span data-ttu-id="265fa-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="265fa-108">Permissions</span></span>
-<span data-ttu-id="265fa-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="265fa-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8f310-105">Получение списка субъектов, назначенных для роли каталога.</span><span class="sxs-lookup"><span data-stu-id="8f310-105">Retrieve the list of principals that are assigned to the directory role.</span></span> 
+
+> [!Note]
+> <span data-ttu-id="8f310-106">С этим API можно использовать как идентификатор объекта, так и идентификатор шаблона **directoryRole** .</span><span class="sxs-lookup"><span data-stu-id="8f310-106">You can use both the object ID and template ID of the **directoryRole** with this API.</span></span> <span data-ttu-id="8f310-107">Неизменяемый идентификатор шаблона встроенной роли, который можно просмотреть в описании роли на портале Azure.</span><span class="sxs-lookup"><span data-stu-id="8f310-107">The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.</span></span> <span data-ttu-id="8f310-108">Дополнительные сведения: [идентификаторы шаблонов ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).</span><span class="sxs-lookup"><span data-stu-id="8f310-108">For details, see [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).</span></span>
+
+## <a name="permissions"></a><span data-ttu-id="8f310-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8f310-109">Permissions</span></span>
+<span data-ttu-id="8f310-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8f310-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="265fa-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="265fa-111">Permission type</span></span>      | <span data-ttu-id="265fa-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="265fa-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8f310-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8f310-112">Permission type</span></span>      | <span data-ttu-id="8f310-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8f310-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="265fa-113">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="265fa-113">Delegated (work or school account)</span></span> | <span data-ttu-id="265fa-114">Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="265fa-114">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="265fa-115">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="265fa-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="265fa-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="265fa-116">Not supported.</span></span>    |
-|<span data-ttu-id="265fa-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="265fa-117">Application</span></span> | <span data-ttu-id="265fa-118">Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="265fa-118">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="8f310-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8f310-114">Delegated (work or school account)</span></span> | <span data-ttu-id="8f310-115">Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="8f310-115">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="8f310-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8f310-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8f310-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8f310-117">Not supported.</span></span>    |
+|<span data-ttu-id="8f310-118">Приложение</span><span class="sxs-lookup"><span data-stu-id="8f310-118">Application</span></span> | <span data-ttu-id="8f310-119">Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="8f310-119">RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All</span></span> |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-## <a name="http-request"></a><span data-ttu-id="265fa-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="265fa-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8f310-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8f310-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directoryRoles/{id}/members
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="265fa-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="265fa-120">Optional query parameters</span></span>
-<span data-ttu-id="265fa-121">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="265fa-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="265fa-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="265fa-122">Request headers</span></span>
-| <span data-ttu-id="265fa-123">Имя</span><span class="sxs-lookup"><span data-stu-id="265fa-123">Name</span></span>       | <span data-ttu-id="265fa-124">Тип</span><span class="sxs-lookup"><span data-stu-id="265fa-124">Type</span></span> | <span data-ttu-id="265fa-125">Описание</span><span class="sxs-lookup"><span data-stu-id="265fa-125">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="8f310-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="8f310-121">Optional query parameters</span></span>
+<span data-ttu-id="8f310-122">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="8f310-122">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="8f310-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8f310-123">Request headers</span></span>
+| <span data-ttu-id="8f310-124">Имя</span><span class="sxs-lookup"><span data-stu-id="8f310-124">Name</span></span>       | <span data-ttu-id="8f310-125">Тип</span><span class="sxs-lookup"><span data-stu-id="8f310-125">Type</span></span> | <span data-ttu-id="8f310-126">Описание</span><span class="sxs-lookup"><span data-stu-id="8f310-126">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="265fa-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="265fa-126">Authorization</span></span>  | <span data-ttu-id="265fa-127">string</span><span class="sxs-lookup"><span data-stu-id="265fa-127">string</span></span>  | <span data-ttu-id="265fa-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="265fa-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8f310-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="8f310-127">Authorization</span></span>  | <span data-ttu-id="8f310-128">string</span><span class="sxs-lookup"><span data-stu-id="8f310-128">string</span></span>  | <span data-ttu-id="8f310-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8f310-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="265fa-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="265fa-130">Request body</span></span>
-<span data-ttu-id="265fa-131">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="265fa-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8f310-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="8f310-131">Request body</span></span>
+<span data-ttu-id="8f310-132">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="8f310-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="265fa-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="265fa-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8f310-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="8f310-133">Response</span></span>
 
-<span data-ttu-id="265fa-133">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="265fa-133">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="265fa-134">Пример</span><span class="sxs-lookup"><span data-stu-id="265fa-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="265fa-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="265fa-135">Request</span></span>
+<span data-ttu-id="8f310-134">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="8f310-134">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="examples"></a><span data-ttu-id="8f310-135">Примеры</span><span class="sxs-lookup"><span data-stu-id="8f310-135">Examples</span></span>
+
+### <a name="example-1-get-the-members-of-a-directory-role-using-objectid"></a><span data-ttu-id="8f310-136">Пример 1: получение членов роли каталога с помощью objectId</span><span class="sxs-lookup"><span data-stu-id="8f310-136">Example 1: Get the members of a directory role using objectId</span></span>
+
+##### <a name="request"></a><span data-ttu-id="8f310-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="8f310-137">Request</span></span>
 
 
-# <a name="http"></a>[<span data-ttu-id="265fa-136">HTTP</span><span class="sxs-lookup"><span data-stu-id="265fa-136">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="8f310-138">HTTP</span><span class="sxs-lookup"><span data-stu-id="8f310-138">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_directoryrole_members"
+  "name": "get_directoryrole_members_objectid"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directoryRoles/{id}/members
+GET https://graph.microsoft.com/v1.0/directoryRoles/23f3b4b4-8a29-4420-8052-e4950273bbda/members
 ```
-# <a name="c"></a>[<span data-ttu-id="265fa-137">C#</span><span class="sxs-lookup"><span data-stu-id="265fa-137">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="8f310-139">C#</span><span class="sxs-lookup"><span data-stu-id="8f310-139">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryrole-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="265fa-138">JavaScript</span><span class="sxs-lookup"><span data-stu-id="265fa-138">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="8f310-140">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8f310-140">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryrole-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="265fa-139">Objective-C</span><span class="sxs-lookup"><span data-stu-id="265fa-139">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="8f310-141">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8f310-141">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-directoryrole-members-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="265fa-140">Java</span><span class="sxs-lookup"><span data-stu-id="265fa-140">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="8f310-142">Java</span><span class="sxs-lookup"><span data-stu-id="8f310-142">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-directoryrole-members-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### <a name="response"></a><span data-ttu-id="265fa-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="265fa-141">Response</span></span>
-<span data-ttu-id="265fa-p105">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="265fa-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="8f310-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="8f310-143">Response</span></span>
+> <span data-ttu-id="8f310-144">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="8f310-144">**Note:** The response object shown here might be shortened for readability.</span></span>
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "businessPhones":["000-000-0000"],
+      "displayName":"First Last",
+      "givenName":"First",
+      "jobTitle":null,
+      "mail":"first@example.com",
+      "officeLocation":null,
+      "preferredLanguage":"en-US",
+      "surname":"Last",
+      "userPrincipalName":"first@example.com"
+    }
+  ]
+}
+```
+### <a name="example-2-get-the-members-of-a-directory-role-using-templateid"></a><span data-ttu-id="8f310-145">Пример 2: получение членов роли каталога с помощью templateId</span><span class="sxs-lookup"><span data-stu-id="8f310-145">Example 2: Get the members of a directory role using templateId</span></span>
+
+##### <a name="request"></a><span data-ttu-id="8f310-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="8f310-146">Request</span></span>
+
+
+# <a name="http"></a>[<span data-ttu-id="8f310-147">HTTP</span><span class="sxs-lookup"><span data-stu-id="8f310-147">HTTP</span></span>](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_directoryrole_members_templateId"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=4a5d8f65-41da-4de4-8968-e035b65339cf/members
+```
+# <a name="c"></a>[<span data-ttu-id="8f310-148">C#</span><span class="sxs-lookup"><span data-stu-id="8f310-148">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryrole-members-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[<span data-ttu-id="8f310-149">JavaScript</span><span class="sxs-lookup"><span data-stu-id="8f310-149">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryrole-members-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="8f310-150">Objective-C</span><span class="sxs-lookup"><span data-stu-id="8f310-150">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-directoryrole-members-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="8f310-151">Java</span><span class="sxs-lookup"><span data-stu-id="8f310-151">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-directoryrole-members-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### <a name="response"></a><span data-ttu-id="8f310-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="8f310-152">Response</span></span>
+><span data-ttu-id="8f310-153">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="8f310-153">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
