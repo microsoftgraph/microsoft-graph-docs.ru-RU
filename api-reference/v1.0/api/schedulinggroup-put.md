@@ -5,12 +5,12 @@ author: akumar39
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0ff355af2355bd2fe7c3bbc5f1d106646cce03d0
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 982eb5abaad5fe5a63690e72bf36a5fd6635d978
+ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48903610"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49377112"
 ---
 # <a name="replace-schedulinggroup"></a>Замена объекта schedulingGroup
 
@@ -28,14 +28,14 @@ ms.locfileid: "48903610"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Запланируйте. ReadWrite. ALL, Group. ReadWrite. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Schedule.ReadWrite.All |
+|Приложение | Schedule.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
+PUT /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов

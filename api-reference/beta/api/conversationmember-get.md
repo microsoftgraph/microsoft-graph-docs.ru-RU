@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6f8d57cc1afbc79f3f88832bf3aa6fad270558ef
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3e8e8e37b2c94a5ee41bf1bb4dc30adf30974166
+ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956751"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376930"
 ---
 # <a name="get-conversationmember"></a>Получение объекта conversationMember
 
@@ -26,14 +26,14 @@ ms.locfileid: "48956751"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированные (рабочая или учебная учетная запись)| Для ресурса **user** или **chat** : Chat.ReadBasic, Chat.Read, Chat.ReadWrite<br/><br/>Для ресурса **channel** : ChannelMember.Read.All, ChannelMember.ReadWrite, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись)| Для ресурса **user** или **chat**: Chat.ReadBasic, Chat.Read, Chat.ReadWrite<br/><br/>Для ресурса **channel**: ChannelMember.Read.All, ChannelMember.ReadWrite, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| Для ресурса **user** или **chat** : не поддерживается.<br/><br/>Для ресурса **channel** : Member.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Приложение| Для ресурса **user** или **chat**: не поддерживается.<br/><br/>Для ресурса **channel**: Member.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
 > [!NOTE]
-> Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
+> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -98,12 +98,14 @@ GET https://graph.microsoft.com/beta/chats/{id}/members/{id}
 Ниже приведен пример отклика.
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
-<!-- {
-  "blockType": "response",
+<!-- 
+{
+ "blockType": "response",
   "truncated": true,
   "name": "get_conversation_member",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

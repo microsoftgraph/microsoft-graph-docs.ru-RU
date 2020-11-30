@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: sureshja
-ms.openlocfilehash: 5a0e3e1df5498451da06cf579caf9e1914bf63fe
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: adb18d3cba9f998e62b474c0e4f466d04e679b5c
+ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921874"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49377042"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -44,6 +44,10 @@ Represents an instance of an application in a directory. Inherits from [director
 |[Удаление пароля](../api/serviceprincipal-removepassword.md)|[passwordCredential](passwordcredential.md)|Удаление пароля из servicePrincipal.|
 |[Добавление ключа](../api/serviceprincipal-addkey.md)|[keyCredential](keycredential.md)|Добавление учетных данных ключа объекту servicePrincipal.|
 |[Удаление ключа](../api/serviceprincipal-removekey.md)|Нет|Удаление учетных данных ключа объекта servicePrincipal.|
+|**Классификация делегированных разрешений**| | |
+|[Список классификации делегированных разрешений](../api/serviceprincipal-list-delegatedpermissionclassifications.md) |Коллекция [delegatedPermissionClassification](delegatedpermissionclassification.md)| Получение классификаций для делегированных разрешений, предоставленных этим субъектом-службой.|
+|[Добавление классификации делегированных разрешений](../api/serviceprincipal-post-delegatedpermissionclassifications.md) |[delegatedPermissionClassification](delegatedpermissionclassification.md) | Добавление классификации для делегированных разрешений, предоставленных этим субъектом-службой. |
+|[Удаление классификации делегированных разрешений](../api/serviceprincipal-delete-delegatedpermissionclassifications.md) | Нет | Удаление классификации для делегированных разрешений, предоставленных этим субъектом-службой.|
 |**Предоставление делегированных разрешений**| | |
 |[Перечисление oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md) |Коллекция [oAuth2PermissionGrant](oauth2permissiongrant.md)| Получите предоставление делегированных разрешений, предоставляющих этому объекту-службе доступ к API от имени пользователя, вошедшего в систему.|
 |**Членство**.| | |
@@ -74,11 +78,11 @@ Represents an instance of an application in a directory. Inherits from [director
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип |Описание|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| Значение **true** , если учетная запись субъекта-службы включена. В противном случае используется значение **false**.|
-| addIns | Коллекция [addIn](addin.md) | Определяет пользовательское поведение, которое служба может использовать для вызова приложения в определенных контекстах. Например, приложения, которые способны визуализировать файловые потоки, [могут установить свойство addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online) для его функции "FileHandler". Это позволит таким службам, как Microsoft 365, вызывать приложение в контексте документов, над которыми работает пользователь.|
+|accountEnabled|Boolean| Значение **true**, если учетная запись субъекта-службы включена. В противном случае используется значение **false**.|
+| addIns | Коллекция [addIn](addin.md) | Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](/onedrive/developer/file-handlers/?view=odsp-graph-online&preserve-view=true) for its "FileHandler" functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.|
 |alternativeNames|Коллекция строк| Используется для получения субъектов-служб по подпискам, для идентификации групп ресурсов и полных идентификаторов ресурсов для [управляемых удостоверений](https://aka.ms/azuremanagedidentity).|
 |appDisplayName|String|Отображаемое имя, предоставляемое связанным приложением.|
-|appId|String|Уникальный идентификатор для связанного приложения (его свойство **appId** ).|
+|appId|String|Уникальный идентификатор для связанного приложения (его свойство **appId**).|
 |applicationTemplateId|Строка|Уникальный идентификатор шаблона applicationTemplate, из которого создан объект servicePrincipal. Только для чтения.|
 |appOwnerOrganizationId|Строка|Содержит идентификатор клиента, в котором зарегистрировано приложение. Применимо только для субъектов-служб на основе приложений.|
 |appRoleAssignmentRequired|Boolean|Указывает, нужно ли предоставлять назначение роли пользователям или другим субъектам-службам для этого субъекта-службы, прежде чем пользователи смогут выполнять вход, а приложения — получать маркеры. Значение по умолчанию — **false**. Значение null не допускается. |
@@ -97,7 +101,7 @@ Represents an instance of an application in a directory. Inherits from [director
 |preferredSingleSignOnMode|Строка|Указывает режим единого входа, настроенный для этого приложения. Azure AD использует предпочитаемый режим единого входа для запуска этого приложения из Microsoft 365 или из раздела "Мои приложения" Azure AD. Поддерживаются значения: password, saml, external, oidc.|
 |replyUrls|Коллекция String|URL-адреса, которым отправляются маркеры пользователей для входа с помощью связанного приложения, или URI перенаправления, которым отправляются коды авторизации OAuth 2.0 и маркеры доступа для связанного приложения. Значение null не допускается. |
 |samlSingleSignOnSettings|[samlSingleSignOnSettings](samlsinglesignonsettings.md)|Коллекция для параметров, связанных с единым входом SAML.|
-|ServicePrincipalNames|Коллекция объектов string|Содержит список объектов **identifiersUris** , скопированных из связанного объекта [application](application.md). К гибридным приложениям можно добавить дополнительные значения. С помощью этих значений можно идентифицировать разрешения, предоставленные этим приложением в Azure AD. Пример.<ul><li>Клиентские приложения могут указывать URI ресурса, основанный на значениях этого свойства, чтобы получать маркер доступа, который представляет собой URI, возвращенный в запросе "aud".</li></ul><br>Оператор "any" требуется для выражений фильтров, применяемых к многозначным свойствам. Значение null не допускается.|
+|ServicePrincipalNames|Коллекция объектов string|Содержит список объектов **identifiersUris**, скопированных из связанного объекта [application](application.md). К гибридным приложениям можно добавить дополнительные значения. С помощью этих значений можно идентифицировать разрешения, предоставленные этим приложением в Azure AD. Пример.<ul><li>Клиентские приложения могут указывать URI ресурса, основанный на значениях этого свойства, чтобы получать маркер доступа, который представляет собой URI, возвращенный в запросе "aud".</li></ul><br>Оператор "any" требуется для выражений фильтров, применяемых к многозначным свойствам. Значение null не допускается.|
 |servicePrincipalType|Строка|Указывает, что представляет субъект-служба: приложение или управляемое удостоверение. Это значение устанавливается внутри Azure AD. Если субъект-служба представляет [приложение](./application.md), указывается значение __Application__. Если субъект-служба представляет [управляемое удостоверение](/azure/active-directory/managed-identities-azure-resources/overview), указывается значение __ManagedIdentity__.|
 |tags|Коллекция объектов string| Настраиваемые строки, которые можно использовать для классификации и определения субъекта-службы. Значение null не допускается. |
 | tokenEncryptionKeyId |String|Задает значение открытого ключа keyId из коллекции keyCredentials. Если это свойство настроено, Azure AD выпускает маркеры для этого приложения в зашифрованном виде; шифрование производится с помощью ключа, указанного эти свойством. Код приложения, получающий зашифрованный маркер, должен использовать соответствующий закрытый ключ для расшифровки маркера, прежде чем его можно будет применить для пользователя, выполнившего вход.|

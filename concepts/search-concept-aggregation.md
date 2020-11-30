@@ -4,16 +4,16 @@ description: Вы можете использовать API службы пои�
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 84f859677b20ff0cd97afad373990abda44d5afd
-ms.sourcegitcommit: c20276369a8834a259f24038e7ee5c33de02660b
+ms.openlocfilehash: 1a8e8cf17995adceadb9f426d1824d85505e806e
+ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48373848"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49377945"
 ---
-# <a name="refine-search-results-using-aggregations"></a>Уточнение результатов поиска с помощью агрегатов
+# <a name="refine-search-results-using-aggregations-preview"></a>Уточнение результатов поиска с помощью агрегатов (Предварительная версия)
 
-Уточните результаты поиска и отобразите их распределение в индексе. 
+Уточните результаты поиска и отобразите их распределение в индексе.
 
 ## <a name="example-1-request-aggregations-by-string-fields"></a>Пример 1: запрос агрегатов по строковым полям
 
@@ -217,7 +217,7 @@ Content-type: application/json
 ### <a name="request"></a>Запрос
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 
 {
@@ -308,7 +308,7 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-Агрегаты поддерживаются только для элементов SharePoint или OneDrive. Они не поддерживаются для **сообщений**, **событий**и **екстерналитем**.
+Агрегаты поддерживаются только для элементов SharePoint или OneDrive. Они не поддерживаются для **сообщений**, **событий** и **екстерналитем**.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

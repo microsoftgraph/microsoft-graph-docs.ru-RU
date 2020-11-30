@@ -4,14 +4,14 @@ description: Результаты поиска сортируются с пом�
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: d7ee48bf1cd00f9e7114ba34ceb66c4c86086802
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 0e34a0e3fdd7c57c7febb51bb608949f6a1fda20
+ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193706"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49377924"
 ---
-# <a name="sort-search-results"></a>Сортировка результатов поиска
+# <a name="sort-search-results-preview"></a>Сортировка результатов поиска (Предварительная версия)
 
 Отсортируйте результаты поиска, указав свойство **сортпропертиес** в объекте [сеарчрекуест](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) , определяя свойство ресурса в **EntityType** , чтобы отсортировать соответствия по возрастанию или убыванию.
 
@@ -138,7 +138,7 @@ Content-type: application/json
 ### <a name="request"></a>Запрос
 
 ```HTTP
-POST /search/query
+POST https://graph.microsoft.com/beta/search/query
 Content-Type: application/json
 
 {
@@ -286,7 +286,7 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-- Сортировка не поддерживается для **сообщений**, **событий**и **екстерналитем**.
+- Сортировка не поддерживается для **сообщений**, **событий** и **екстерналитем**.
 - Не удается указать сортировку по релевантности в **сортпропертиес**.
 
 ## <a name="next-steps"></a>Дальнейшие действия

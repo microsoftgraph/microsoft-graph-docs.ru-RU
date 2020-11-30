@@ -5,18 +5,21 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ca7657b1bfc0843e217c2a8dd45d4ffb5688c3f1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 2c6c8dba462c4514907c4d167810abe1ccfe3cd7
+ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052434"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49377073"
 ---
 # <a name="remove-directory-role-member"></a>Удаление элемента роли каталога
 
 Пространство имен: microsoft.graph
 
-Удаление элемента из объекта directoryRole.
+Удаление члена из [directoryRole](../resources/directoryrole.md).
+
+> [!Note]
+> С этим API можно использовать как идентификатор объекта, так и идентификатор шаблона **directoryRole** . Неизменяемый идентификатор шаблона встроенной роли, который можно просмотреть в описании роли на портале Azure. Дополнительные сведения: [идентификаторы шаблонов ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +30,7 @@ ms.locfileid: "48052434"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Ролеманажемент. ReadWrite. Directory, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | RoleManagement.ReadWrite.Directory |
+|Приложение | RoleManagement.ReadWrite.Directory |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,7 +46,7 @@ DELETE /directoryRoles/{id}/members/{id}/$ref
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
@@ -51,7 +54,9 @@ DELETE /directoryRoles/{id}/members/{id}/$ref
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-remove-directory-role-member-using-role-objectid"></a>Пример 1: Удаление члена роли каталога с помощью ИД роли
 
 ##### <a name="request"></a>Запрос
 
@@ -60,11 +65,57 @@ DELETE /directoryRoles/{id}/members/{id}/$ref
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_directoryobject_from_directoryrole"
+  "name": "delete_directoryobject_from_directoryrole_objectId"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryRoles/{id}/members/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/directoryRoles/{role-objectId}/members/{user-id}/$ref
+```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-directoryobject-from-directoryrole-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-directoryobject-from-directoryrole-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-directoryobject-from-directoryrole-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-directoryobject-from-directoryrole-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика. 
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-remove-directory-role-member-using-role-templateid"></a>Пример 2: Удаление члена роли каталога с помощью templateId ролей
+
+##### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+# <a name="http"></a>[HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "delete_directoryobject_from_directoryrole_templateId"
+}-->
+
+```http
+DELETE https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId={role-templateId}/members/{user-id}/$ref
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directoryobject-from-directoryrole-csharp-snippets.md)]

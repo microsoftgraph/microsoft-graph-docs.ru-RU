@@ -5,26 +5,29 @@ author: abhijeetsinha
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f6dfd95c03517693a5f6dec351d7cfd87fa08677
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: bf2ab96d2718fbfaea87ed89d8b859bccc36b747
+ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48460847"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49377077"
 ---
 # <a name="get-directoryrole"></a>Получение directoryRole
 
 Пространство имен: microsoft.graph
 
-Получение свойств объекта directoryRole.
+Получение свойств объекта [directoryRole](../resources/directoryrole.md) . Для успешного ответа роль должна быть активирована в клиенте.
+
+> [!Note]
+> С этим API можно использовать как идентификатор объекта, так и идентификатор шаблона **directoryRole** . Неизменяемый идентификатор шаблона встроенной роли, который можно просмотреть в описании роли на портале Azure. Дополнительные сведения: [идентификаторы шаблонов ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированные (рабочая или учебная учетная запись) | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | Ролеманажемент. Read. Directory, Directory. Read. ALL, Ролеманажемент. ReadWrite. Directory, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -46,17 +49,19 @@ GET /directoryRoles/{id}
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryRole](../resources/directoryrole.md) в тексте отклика.
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-get-the-definition-of-a-directory-role-using-objectid"></a>Пример 1: получение определения роли каталога с помощью objectId
 ##### <a name="request"></a>Запрос
 
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_directoryrole"
+  "name": "get_directoryrole_objectId"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directoryRoles/{id}
+GET https://graph.microsoft.com/v1.0/directoryRoles/23f3b4b4-8a29-4420-8052-e4950273bbda
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryrole-csharp-snippets.md)]
@@ -77,7 +82,8 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/{id}
 ---
 
 ##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,10 +94,45 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "roleTemplateId": "roleTemplateId-value",
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryRoles/$entity",
+    "id": "23f3b4b4-8a29-4420-8052-e4950273bbda",
+    "deletedDateTime": null,
+    "description": "Can read sign-in and audit reports.",
+    "displayName": "Reports Reader",
+    "roleTemplateId": "4a5d8f65-41da-4de4-8968-e035b65339cf"
+}
+```
+
+### <a name="example-2-get-the-definition-of-a-directory-role-using-templateid"></a>Пример 2: получение определения роли каталога с помощью templateId
+##### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "get_directoryrole_templateId"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=4a5d8f65-41da-4de4-8968-e035b65339cf
+```
+
+##### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.directoryRole"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryRoles/$entity",
+    "id": "23f3b4b4-8a29-4420-8052-e4950273bbda",
+    "deletedDateTime": null,
+    "description": "Allows ability to read usage reports.",
+    "displayName": "Reports Reader",
+    "roleTemplateId": "4a5d8f65-41da-4de4-8968-e035b65339cf"
 }
 ```
 

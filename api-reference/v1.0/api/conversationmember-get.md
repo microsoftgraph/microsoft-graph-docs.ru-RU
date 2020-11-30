@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: abdaee226abb033a1275c964616315a79a754c6f
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: d010f19945b08a7bd127c19a0938473b73ff0fae
+ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848607"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49377098"
 ---
 # <a name="get-conversationmember"></a>Получение объекта conversationMember
 
@@ -24,14 +24,14 @@ ms.locfileid: "48848607"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированные (рабочая или учебная учетная запись)| Для ресурса **user** или **chat** : Chat.ReadBasic, Chat.Read, Chat.ReadWrite<br/><br/>Для ресурса **channel** : ChannelMember.Read.All, ChannelMember.ReadWrite |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| Для ресурса **user** или **chat** : не поддерживается.<br/><br/>Для ресурса **channel** : TeamMember.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись)| Для ресурса **user** или **chat**: Chat.ReadBasic, Chat.Read, Chat.ReadWrite<br/><br/>Для ресурса **channel**: ChannelMember.Read.All, ChannelMember.ReadWrite |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение| Для ресурса **user** или **chat**: не поддерживается.<br/><br/>Для ресурса **channel**: TeamMember.Read.Group*, ChannelMember.Read.All, ChannelMember.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов](https://aka.ms/teams-rsc).
 
 > [!NOTE]
-> Перед вызовом этого API с разрешениями приложения необходимо запросить доступ. Дополнительные сведения см. в статье [Защищенные APIs в Microsoft Teams](/graph/teams-protected-apis).
+> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -79,12 +79,14 @@ GET https://graph.microsoft.com/V1.0/chats/{id}/members/{id}
 Ниже приведен пример отклика.
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
-<!-- {
+<!--
+{
   "blockType": "response",
   "truncated": true,
   "name": "get_conversation_member",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
