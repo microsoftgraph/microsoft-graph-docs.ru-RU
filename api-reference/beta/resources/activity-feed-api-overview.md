@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: project-rome
 doc_type: conceptualPageType
 author: ailae
-ms.openlocfilehash: faa99ee65de2b14e455cec646d1b8c6e60cd83f4
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 4ed2b55c06710b17be984e2c9be71ba8496d5991
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405668"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523366"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Использование REST API веб-канала активности
 
@@ -33,7 +33,7 @@ Each activity represents a unique...
 
 Так как каждое приложение различается, каждый разработчик приложений может ознакомиться с наилучшим способом сопоставления действий в приложении с действиями пользователя. Например, в играх могут создаваться действия для каждой кампании, приложения для создания документов могут создавать действия для каждого уникального документа, а бизнес-приложения могут создавать действия для каждого рабочего процесса.
 
-При определении активититес в приложении следуйте приведенным ниже рекомендациям.
+При определении действий в приложении следуйте приведенным ниже рекомендациям.
 
 **Выполните указанные ниже действия.** Запишите одно действие для группы связанных действий пользователя.
 Если приложение используется для последовательности связанных контента, то, возможно, имеет смысл записать одно действие для всего сеанса задействования.
@@ -74,7 +74,7 @@ Each activity represents a unique...
 
 - Просмотрите [ресурс действия](/graph/api/resources/projectrome-activity) и определите действия приложения, чтобы помочь пользователям возобновить важные задачи.
 - В этом разделе приведены примеры использования [адаптивных карточек](https://adaptivecards.io/samples/) для создания новых **действий.**
-- Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
+- Опробуйте API в [песочнице Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 **Ищете дополнительные идеи?**
 

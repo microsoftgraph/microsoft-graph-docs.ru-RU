@@ -2,15 +2,15 @@
 title: Тип ресурса Сигнинактивити
 description: Предоставляет дату последнего входа для определенного пользователя.
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 295b9c797da1c941dd09e5cd17b85bcc6d4a663d
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: e8300e787fe516a9712359f99ebf215f4813a0b9
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404373"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49521231"
 ---
 # <a name="signinactivity-resource-type"></a>Тип ресурса Сигнинактивити
 

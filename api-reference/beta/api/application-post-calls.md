@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 6cabaab5c12f8bb9a2b1088b91a936136536fec0
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6d433987b1d0cd30e3eee0eb8a247d29ed37d950
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48962029"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49521406"
 ---
 # <a name="create-call"></a>Создание звонка
 
@@ -30,7 +30,7 @@ ms.locfileid: "48962029"
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                                                                           |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                                                           |
-| Для приложений                            | Calls. Жоинграупкаллсасгуест. ALL, Calls. Жоинграупкаллс. ALL, Calls.Iniтиате. Все, Calls.IniТиатеграупкаллс. ALL |
+| Приложение                            | Calls. Жоинграупкаллсасгуест. ALL, Calls. Жоинграупкаллс. ALL, Calls.Iniтиате. Все, Calls.IniТиатеграупкаллс. ALL |
 
 > **Примечание:** Для вызова с использованием мультимедиа, размещаемого в приложении, вам потребуется разрешение Calls. Акцессмедиа. ALL в дополнение к одному из перечисленных разрешений.
 
@@ -269,7 +269,7 @@ Content-Type: application/json
 
 ### <a name="example-2-create-peer-to-peer-voip-call-with-application-hosted-media"></a>Пример 2: создание однорангового звонка VoIP с размещенными в приложении носителями
 
-> **Примечание** : в этом примере требуется Calls.Iniтиате. ALL и Calls. Акцессмедиа. ALL.
+> **Примечание**: в этом примере требуется Calls.Iniтиате. ALL и Calls. Акцессмедиа. ALL.
 
 ##### <a name="request"></a>Запрос
 В следующем примере показан запрос, который выполняет одноранговый звонок между Bot и указанным пользователем. В этом примере мультимедиа размещается локально приложением. Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены фактическими значениями, чтобы пример работал.
@@ -1121,6 +1121,312 @@ Content-Type: application/json
 }
 ```
 > **Примечание:** Приложение не будет получать список участников собрания, пока его допустить в "зале ожидания"
+
+### <a name="example-9-create-peer-to-peer-pstn-call-with-service-hosted-media"></a>Пример 9: создание однорангового звонка PSTN с размещенными в службе носителями
+
+> **Примечание:** Для этого вызова требуется Calls.Iniтиате. Все разрешения.
+
+Для этого вызова требуется экземпляр приложения с назначенным номером PSTN.
+
+#### <a name="step-1-create-application-instance"></a>Шаг 1: создание экземпляра приложения
+Чтобы создать экземпляр приложения, администратору клиента необходимо вызвать следующие командлеты в удаленной оболочке PowerShell клиента. Дополнительные сведения см. в статье [New/ксонлинеаппликатионинстанце](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) и [Sync — ксонлинеаппликатионинстанце](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
+```
+PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
+PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
+```
+#### <a name="step-2-assign-microsoft-365-licenses"></a>Шаг 2: Назначение лицензий Microsoft 365
+1. Используйте учетные данные администратора клиента для входа https://admin.microsoft.com/ и перейдите на вкладку **пользователи и > активные пользователи** .
+2. Выберите экземпляр приложения, назначьте **план microsoft 365 для внутренних и международных звонков** , а также **Microsoft 365 телефонную систему — лицензии виртуальных пользователей** и нажмите кнопку **сохранить изменения**. Если клиенту не хватает этих лицензий, перейдите на вкладку **Услуги по выставлению счетов-> покупок** для приобретения.
+#### <a name="step-3-acquire-pstn-number"></a>Шаг 3: получение номера PSTN
+1. Используйте учетные данные администратора клиента, чтобы войти в систему https://admin.teams.microsoft.com/ и щелкнуть вкладку **портал прежней версии** на левой панели.
+2. На новой странице перейдите на вкладку **номера телефонов > голосовых вызовов** .
+3. Нажмите кнопку **+** , выберите пункт **новые номера служб** и перейдите на страницу **Добавление новых номеров служб** .
+4. Выберите **страна/регион**, область, **регион**, **город**, входное **количество** и щелкните **Добавить** для поиска. Щелкните **получить номера**. Вновь приобретенный номер будет отображаться на вкладке **номера телефонов** .
+#### <a name="step-4-assign-pstn-number-to-application-instance"></a>Шаг 4: назначение номера PSTN для экземпляра приложения
+Администратор клиента должен вызвать следующие командлеты в удаленной оболочке PowerShell клиента для назначения номера PSTN экземпляру приложения. Дополнительные сведения см. в статье [Set/ксонлиневоицеаппликатионинстанце](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) и [Sync — ксонлинеаппликатионинстанце](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true).
+```
+PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
+PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
+```
+> **Примечание:** Если клиент имеет австралийские номера PSTN, назначенные любому экземпляру приложения, этот вызов может не работать. Если клиент создан недавно, для него ммигхт требуется несколько дней, чтобы эта функция была доступна.
+
+#### <a name="request"></a>Запрос
+В приведенном ниже примере показан запрос на выполнение однорангового звонка между Bot и PSTN. В этом примере носитель размещается службой. Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены фактическими значениями, чтобы пример работал.
+
+<!-- {
+  "blockType": "request",
+  "name": "create-call-service-hosted-media",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "applicationInstance": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+      },
+    },
+    "countryCode": null,
+    "endpointType": null,
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
+  }
+}
+```
+
+#### <a name="response"></a>Отклик
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.call"
+} -->
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "applicationInstance": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+      },
+    },
+    "countryCode": null,
+    "endpointType": null,
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      },
+      "endpointType": null,
+      "region": null,
+      "replacesCallId": null,
+      "languageId": null
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "preFetchMedia": [
+     {
+       "uri": "https://cdn.contoso.com/beep.wav",
+       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+     },
+     {
+       "uri": "https://cdn.contoso.com/cool.wav",
+       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+     }
+    ],
+  },
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
+  "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "subject": null,
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "chatInfo": null,
+  "meetingInfo": null,
+  "transcription": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
+
+### <a name="example-10-create-peer-to-peer-pstn-call-with-application-hosted-media"></a>Пример 10: создание однорангового КОММУТИРУЕМого звонка с размещенными в приложении носителями
+
+> **Примечание**. для этого примера требуется Calls.Iniтиате. ALL и Calls. Акцессмедиа. ALL.
+
+Для этого вызова требуется экземпляр приложения с назначенным номером PSTN, как описано в примере 9.
+
+> **Примечание:** Если клиент имеет австралийские номера PSTN, назначенные любому экземпляру приложения, этот вызов может не работать. Если клиент создан заново, для этой функции может потребоваться несколько дней.
+
+#### <a name="request"></a>Запрос
+В приведенном ниже примере показан запрос на одноранговый звонок между Bot и номером PSTN. В этом примере мультимедиа размещается локально приложением. Значения маркера авторизации, URL-адреса обратного вызова, идентификатора приложения, имени приложения, идентификатора пользователя, имени пользователя и идентификатора клиента должны быть заменены фактическими значениями, чтобы пример работал.
+
+<!-- {
+  "blockType": "request",
+  "name": "create-call-service-hosted-media",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```http
+POST https://graph.microsoft.com/beta/communications/calls
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "applicationInstance": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+      },
+    },
+    "countryCode": null,
+    "endpointType": null,
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>"
+  }
+}
+```
+
+#### <a name="response"></a>Отклик
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.call"
+} -->
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "applicationInstance": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+      },
+    },
+    "countryCode": null,
+    "endpointType": null,
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      },
+      "endpointType": null,
+      "region": null,
+      "replacesCallId": null,
+      "languageId": null
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>",
+  },
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
+  "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#app/calls/$entity",
+  "subject": null,
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "chatInfo": null,
+  "meetingInfo": null,
+  "transcription": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

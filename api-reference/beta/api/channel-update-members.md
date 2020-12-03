@@ -5,12 +5,12 @@ author: laujan
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f38ffabd2f10f3226f1af03027e02f8e27b198ec
-ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
+ms.openlocfilehash: 6f983fd17eca37dbd5008569817787308ec25540
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49387551"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49522036"
 ---
 # <a name="update-member-in-channel"></a>Обновление элемента в канале
 
@@ -26,7 +26,7 @@ ms.locfileid: "49387551"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
-|Делегированные (рабочая или учебная учетная запись)|Чаннелмембер. ReadWrite. ALL. |
+|Делегированное (рабочая или учебная учетная запись)|Чаннелмембер. ReadWrite. ALL. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
 |Приложение|Чаннелмембер. ReadWrite. ALL. |
 
@@ -61,6 +61,8 @@ PATCH /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 
 Ниже приведен запрос на применение `owner` роли к существующему участнику канала.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_member"
@@ -75,6 +77,24 @@ content-length: 26
   "roles": ["owner"]
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-member-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-member-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-member-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-member-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

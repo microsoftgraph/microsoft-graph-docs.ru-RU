@@ -4,12 +4,12 @@ description: Вы можете использовать API Microsoft Search API
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: e9917b8153946161168e90f78399f29b6a7f3df3
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: 0ee9950ff136b3f97e063da252ec22d166f05b74
+ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288828"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49521364"
 ---
 # <a name="use-the-microsoft-search-api-to-search-outlook-messages"></a>Использование API службы поиска Microsoft для поиска сообщений Outlook
 
@@ -32,7 +32,7 @@ ms.locfileid: "48288828"
 ### <a name="request"></a>Запрос
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
@@ -60,7 +60,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -122,7 +122,7 @@ Content-type: application/json
 ### <a name="request"></a>Запрос
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
@@ -148,7 +148,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -205,9 +205,9 @@ Content-type: application/json
 ## <a name="known-limitations"></a>Известные ограничения
 
 - Доступ к почтовому ящику вошедшего пользователя можно получить только из собственного почтового ящика. Поиск делегированных почтовых ящиков не поддерживается.
-- Для сообщений свойство **Total** объекта [сеарчхитсконтаинер](/graph/api/resources/searchhitscontainer?view=graph-rest-beta&preserve-view=true) содержит количество результатов на странице, а не общее число результатов поиска.
+- Для сообщений свойство **Total** объекта [сеарчхитсконтаинер](/graph/api/resources/searchhitscontainer) содержит количество результатов на странице, а не общее число результатов поиска.
 - Сортировка результатов не поддерживается для событий. Предложение Sort в запросе возвратит код ошибки ошибочного запроса в ответе.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Использование API службы поиска Microsoft](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Использование API службы поиска Microsoft](/graph/api/resources/search-api-overview)

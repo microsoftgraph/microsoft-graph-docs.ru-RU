@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ed7177f4a91fae4fb5e87f496489cdc0c9569607
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: 6db256a71c17e4c940669aaf96f61f70285c8f3e
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377612"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523415"
 ---
 # <a name="team-sendactivitynotification"></a>команда: Сендактивитинотификатион
 Пространство имен: microsoft.graph
@@ -23,7 +23,7 @@ ms.locfileid: "49377612"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|TeamsActivity.Send|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|TeamsActivity.Send|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -76,6 +76,8 @@ POST /teams/{teamId}/sendActivityNotification
 В этом примере показано, как можно отправить уведомление веб-канала активности для команды. В этом примере владелец команды уведомляется о незавершенных запросах на утверждение в финансах.
 
 #### <a name="request"></a>Запрос
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification"
@@ -106,6 +108,12 @@ Content-Type: application/json
     ] 
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 <!-- {

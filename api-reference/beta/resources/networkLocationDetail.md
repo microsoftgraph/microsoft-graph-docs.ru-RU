@@ -2,15 +2,15 @@
 title: Тип ресурса Нетворклокатиондетаил
 description: Предоставляет имя и тип сети, из которой пользователь выполнил вход.
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 210201613a2f93c99472b42c5ea3ef231a10125d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7c43341ab5799da83a084e035c680a1926b3d8e8
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026609"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523016"
 ---
 # <a name="networklocationdetail-resource-type"></a>Тип ресурса Нетворклокатиондетаил
 
@@ -24,7 +24,7 @@ ms.locfileid: "48026609"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|нетворкнамес|Коллекция String|Предоставляет имя сети, используемой при входе.|
+|нетворкнамес|Коллекция объектов string|Предоставляет имя сети, используемой при входе.|
 |нетворктипе|нетворктипе| Предоставляет тип сети, используемой при входе. Возможные значения: `intranet`, `extranet`, `namedNetwork`, `trusted`, `unknownFutureValue`.|
 
 ## <a name="json-representation"></a>Представление JSON

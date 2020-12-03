@@ -2,15 +2,15 @@
 title: Тип ресурса Кредентиалусажесуммари
 description: Представляет текущее состояние того, сколько пользователей в вашей организации используют возможности самостоятельного сброса пароля.
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 311f89b67549e6bc373029aef82c88ca0e592f3d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9807e333fd13443462d2d3237150820afd254baa
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050096"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523156"
 ---
 # <a name="credentialusagesummary-resource-type"></a>Тип ресурса Кредентиалусажесуммари
 
@@ -33,7 +33,7 @@ ms.locfileid: "48050096"
 | аусмесод | string | Представляет способ проверки подлинности, используемый пользователем. Возможные значения: `email` ,,,, `mobileSMS` `mobileCall` `officePhone` `securityQuestion` (только для самостоятельного сброса пароля), `appNotification` `appCode` и  `alternateMobileCall` (поддерживается только для регистрации). |
 | фаилуреактивитикаунт | Int64 | Предоставляет количество неудачных сбросов или регистрационных данных. |
 | состав | string | Определяет компонент для отчета. Возможные значения: `registration` и `reset` . |
-| id | Строка | Уникальный идентификатор действия. Только для чтения. |
+| id | String | Уникальный идентификатор действия. Только для чтения. |
 | сукцессфулактивитикаунт | Int64 | Предоставляет количество успешных регистраций или сбросов. |
 
 ## <a name="relationships"></a>Связи

@@ -5,12 +5,12 @@ author: ArvindHarinder1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: eaa569faa7705baf95ef5843ad0ae1e66a0bf1ff
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ca91021ccb9fbc4cf8ec6c61b4edea979bb7c833
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026112"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523205"
 ---
 # <a name="synchronizationjobapplicationparameters-resource-type"></a>Тип ресурса Синчронизатионжобаппликатионпараметерс
 
@@ -21,10 +21,10 @@ ms.locfileid: "48026112"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|ruleId|String|Идентификатор Синчронизатионруле, который требуется применить; необязательно для Синчронизатионжоб с одним Синчронизатионруле.|
+|ruleId|String|Идентификатор Синчронизатионруле, который требуется применить.|
 |вопросов|Коллекция [синчронизатионжобсубжект](../resources/synchronization-synchronizationjobsubject.md)|Идентификаторы одного или нескольких объектов, к которым применяется Синчронизатионжоб.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON

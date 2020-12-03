@@ -4,12 +4,12 @@ description: Вы можете выполнять поиск в собствен
 author: knightsu
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 802f6fdbb45d93ed46cd0b8033816abf5df07288
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: bedad2dcf94df6024bcba7f0760dbe5c1cf97c18
+ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48192597"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49521910"
 ---
 # <a name="use-the-microsoft-search-api-to-search-calendar-events"></a>Использование API службы поиска Microsoft для поиска событий календаря
 
@@ -24,7 +24,7 @@ ms.locfileid: "48192597"
 В этом примере выполняется поиск ключевого слова "contoso" в календаре пользователя и возвращается до 25 результатов.
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST https://graph.microsoft.com/v1.0/search/query
 Content-Type: application/json
 
 {
@@ -50,7 +50,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
   {
    "@odata.type": "#microsoft.graph.searchResponse",
@@ -97,9 +97,9 @@ Content-type: application/json
 ## <a name="known-limitations"></a>Известные ограничения
 
 - Доступ к почтовому ящику вошедшего пользователя можно получить только из собственного почтового ящика. Поиск делегированных почтовых ящиков не поддерживается.
-- Для событий свойство **Total** объекта [сеарчхитсконтаинер](/graph/api/resources/searchhitscontainer?view=graph-rest-beta&preserve-view=true) содержит количество результатов на странице, а не общее количество результатов поиска.
+- Для событий свойство **Total** объекта [сеарчхитсконтаинер](/graph/api/resources/searchhitscontainer) содержит количество результатов на странице, а не общее количество результатов поиска.
 - Сортировка результатов не поддерживается для событий. Предложение Sort в запросе возвратит код ошибки ошибочного запроса в ответе.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview)

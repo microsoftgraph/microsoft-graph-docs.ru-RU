@@ -2,15 +2,15 @@
 title: 'Reportroot.: Жеткредентиалусеррегистратионкаунт'
 description: Сообщите о текущем состоянии того, сколько пользователей в вашей организации зарегистрировано для самостоятельного сброса паролей и возможностей многофакторной проверки подлинности (MFA).
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: reports
 doc_type: apiPageType
-ms.openlocfilehash: 6f1d6bd3eaa95998ff969437048d20931023a31a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8fd2b2d950055eb778242664b95e0eaafe95dbc9
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966815"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523058"
 ---
 # <a name="reportroot-getcredentialuserregistrationcount"></a>Reportroot.: Жеткредентиалусеррегистратионкаунт
 
@@ -42,7 +42,7 @@ GET /reports/getCredentialUserRegistrationCount
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/reports/getCredentialUserRegistrationCount
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 > **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Все свойства возвращаются при фактическом вызове.
 

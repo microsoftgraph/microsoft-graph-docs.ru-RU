@@ -2,15 +2,15 @@
 title: Тип ресурса Кредентиалусеррегистратионкаунт
 description: Представляет текущее состояние количества пользователей в вашей организации, зарегистрированных для самостоятельного сброса паролей и возможности многофакторной проверки подлинности.
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: c5fb3588c7d06f726c71c81279c0994fd0de4019
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 59c7849a5145064eafbce63804b5d3415fb92b97
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050089"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523135"
 ---
 # <a name="credentialuserregistrationcount-resource-type"></a>Тип ресурса Кредентиалусеррегистратионкаунт
 
@@ -30,7 +30,7 @@ ms.locfileid: "48050089"
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| id | Строка | Уникальный идентификатор действия. Только для чтения. |
+| id | String | Уникальный идентификатор действия. Только для чтения. |
 | тоталусеркаунт | Int64 | Предоставляет общее число пользователей в клиенте. |
 | усеррегистратионкаунтс | Коллекция [усеррегистратионкаунт](userregistrationcount.md) | Коллекция счетчиков регистрации и сведений о состоянии для пользователей в клиенте. |
 

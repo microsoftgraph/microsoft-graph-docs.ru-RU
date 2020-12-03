@@ -2,15 +2,15 @@
 title: Список Релингпартидетаиледсуммари
 description: Получение списка объектов Релингпартидетаиледсуммари.
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 29c1f707ad206353e9f09dcbdbece37549311540
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7dcba9c98467461a8dae3b4d39d752c6d369c4d5
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975112"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523303"
 ---
 # <a name="list-relyingpartydetailedsummary"></a>Список Релингпартидетаиледсуммари
 
@@ -26,9 +26,9 @@ ms.locfileid: "48975112"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Report. Read. ALL |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложения                            | Report. Read. ALL |
+| Делегированное (рабочая или учебная учетная запись)     | Report. Read. ALL |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | Report. Read. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
