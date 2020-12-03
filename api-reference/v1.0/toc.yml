@@ -40,7 +40,7 @@ items:
             href: /graph/webhooks?context=graph/api/1.0
           - name: Учебник
             href: /learn/modules/msgraph-changenotifications-trackchanges
-          - name: Пропущенные уведомления об изменениях
+          - name: Пропущенные уведомления об изменении
             href: /graph/webhooks-lifecycle
           - name: Уведомления с данными ресурсов
             href: /graph/webhooks-with-resource-data?context=graph/api/1.0
@@ -209,7 +209,7 @@ items:
           - name: Назначение ролей приложений
             href: resources/approleassignment.md
             items:
-              - name: List
+              - name: Список
                 href: api/user-list-approleassignments.md
               - name: Добавить
                 href: api/user-post-approleassignments.md
@@ -252,7 +252,7 @@ items:
                 href: api/user-list-contactfolders.md
           - name: Предоставление делегированных разрешений
             items:
-              - name: List
+              - name: Список
                 href: api/user-list-oauth2permissiongrants.md
           - name: Объекты каталога
             href: resources/directoryobject.md
@@ -405,7 +405,23 @@ items:
             items:
               - name: Список задач
                 href: api/planneruser-list-tasks.md
-          - name: Задачи To-Do
+          - name: Командная работа
+            items:
+              - name: Установленное приложение
+                href: resources/teamsappinstallation.md
+              - name: Добавление приложения для пользователя
+                href: api/userteamwork-add-installedapps.md
+              - name: Список приложений для пользователя
+                href: api/userteamwork-list-installedapps.md
+              - name: Получает установленное приложение для пользователя
+                href: api/userteamwork-get-installedapps.md
+              - name: Обновление установленного приложения для пользователя
+                href: api/userteamwork-upgrade-installedapps.md
+              - name: Удаление приложения для пользователя
+                href: api/userteamwork-delete-installedapps.md
+              - name: Получение разговора между пользователем и приложением
+                href: api/userscopeteamsappinstallation-get-chat.md
+          - name: Задачи из списка дел
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -415,7 +431,7 @@ items:
                 href: api/todo-post-lists.md
               - name: Перечисление задач
                 href: api/todotasklist-list-tasks.md
-              - name: Перечисление списков задач
+              - name: Список списков задач
                 href: api/todo-list-lists.md
       - name: Группы
         items:
@@ -526,7 +542,7 @@ items:
           - name: Назначение ролей приложений
             href: resources/approleassignment.md
             items:
-              - name: List
+              - name: Список
                 href: api/group-list-approleassignments.md
               - name: Добавить
                 href: api/group-post-approleassignments.md
@@ -712,7 +728,7 @@ items:
                     href: api/application-addkey.md
                   - name: Удаление ключа
                     href: api/application-removekey.md
-              - name: Расширения
+              - name: Extensions
                 items:
                   - name: Список
                     href: api/application-list-extensionproperty.md
@@ -720,9 +736,9 @@ items:
                     href: api/application-post-extensionproperty.md
                   - name: Удалить
                     href: api/application-delete-extensionproperty.md
-              - name: Владельцы
+              - name: Owners
                 items:
-                  - name: List
+                  - name: Список
                     href: api/application-list-owners.md
                   - name: Добавить
                     href: api/application-post-owners.md
@@ -735,7 +751,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -744,7 +760,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -770,7 +786,7 @@ items:
               - name: Назначение ролей приложений
                 href: resources/approleassignment.md
                 items:
-                  - name: List
+                  - name: Список
                     href: api/serviceprincipal-list-approleassignments.md
                   - name: Добавить
                     href: api/serviceprincipal-post-approleassignments.md
@@ -794,9 +810,9 @@ items:
                     href: api/serviceprincipal-removekey.md
               - name: Предоставление делегированных разрешений
                 items:
-                  - name: List
+                  - name: Список
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
-              - name: Классификация делегированных разрешений
+              - name: Классификации делегированных разрешений
                 href: resources/delegatedpermissionclassification.md
                 items:
                   - name: Список
@@ -819,9 +835,9 @@ items:
                     href: api/serviceprincipal-getmembergroups.md
                   - name: Вывод объектов членства
                     href: api/serviceprincipal-getmemberobjects.md
-              - name: Владельцы
+              - name: Owners
                 items:
-                  - name: List
+                  - name: Список
                     href: api/serviceprincipal-list-owners.md
                   - name: Добавить
                     href: api/serviceprincipal-post-owners.md
@@ -834,7 +850,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: List
+                      - name: Список
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -843,7 +859,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: List
+                      - name: Список
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -880,7 +896,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -889,7 +905,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: List
+                      - name: Список
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1179,9 +1195,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Получение записи вызова
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Сеанс
                 items:
-                  - name: Session
+                  - name: Сеанс
                     href: resources/callrecords-session.md
                   - name: Перечисление сеансов
                     href: api/callrecords-session-list.md
@@ -3584,7 +3600,7 @@ items:
                 href: api/educationuser-get.md
               - name: Удаление пользователя
                 href: api/educationuser-delete.md
-      - name: Расширения
+      - name: Extensions
         items:
           - name: Открытые расширения
             href: resources/opentypeextension.md
@@ -4806,7 +4822,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Создание плана
@@ -5000,10 +5016,12 @@ items:
                 href: api/channel-list-messagereplies.md
               - name: Получение ответа на сообщение
                 href: api/channel-get-messagereply.md
-              - name: Отправка сообщения
-                href: api/channel-post-message.md
               - name: Ответ на сообщение
                 href: api/channel-post-messagereply.md
+              - name: Обновление сообщения
+                href: api/chatmessage-update.md
+              - name: Отправка сообщения
+                href: api/channel-post-message.md
           - name: Сообщение чата
             href: resources/chatmessage.md
             items:
@@ -5021,6 +5039,37 @@ items:
                 href: api/channel-post-messagereply.md
               - name: Обновление сообщения
                 href: api/chatmessage-update.md
+          - name: Чат
+            href: resources/chat.md
+            items:
+              - name: Получение разговора между пользователем и приложением
+                href: api/userscopeteamsappinstallation-get-chat.md
+          - name: Участник беседы
+            href: resources/conversationmember.md
+            items:
+              - name: Список участников
+                href: api/conversationmember-list.md
+              - name: Получение участника
+                href: api/conversationmember-get.md
+              - name: Добавление участника
+                href: api/conversationmember-add.md
+              - name: Обновление участника
+                href: api/conversationmember-update.md
+              - name: Удаление участника
+                href: api/conversationmember-delete.md
+          - name: Участник беседы пользователя Azure AD
+            href: resources/aaduserconversationmember.md
+            items:
+              - name: Список участников
+                href: api/conversationmember-list.md
+              - name: Получение участника
+                href: api/conversationmember-get.md
+              - name: Добавление участника
+                href: api/conversationmember-add.md
+              - name: Обновление участника
+                href: api/conversationmember-update.md
+              - name: Удаление участника
+                href: api/conversationmember-delete.md
           - name: Каталог приложений
             items:
               - name: Приложение в каталоге
@@ -5039,12 +5088,26 @@ items:
                 href: resources/teamsappinstallation.md
               - name: Список приложений в команде
                 href: api/teamsappinstallation-list.md
+              - name: 'Получение приложения, установленного в команде'
+                href: api/team-get-installedapps.md
               - name: Добавление приложения в команду
                 href: api/teamsappinstallation-add.md
               - name: Удаление приложения из группы
                 href: api/teamsappinstallation-delete.md
               - name: Обновление установленного приложения для команды
                 href: api/teamsappinstallation-upgrade.md
+              - name: Список приложений для пользователя
+                href: api/userteamwork-list-installedapps.md
+              - name: Получает установленное приложение для пользователя
+                href: api/userteamwork-get-installedapps.md
+              - name: Добавление приложения для пользователя
+                href: api/userteamwork-add-installedapps.md
+              - name: Удаление приложения для пользователя
+                href: api/userteamwork-delete-installedapps.md
+              - name: Обновление установленного приложения для пользователя
+                href: api/userteamwork-upgrade-installedapps.md
+              - name: Получение разговора между пользователем и приложением
+                href: api/userscopeteamsappinstallation-get-chat.md
           - name: Tab
             href: resources/teamstab.md
             items:
@@ -5125,7 +5188,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Получение
                     href: api/offershiftrequest-get.md
-                  - name: List
+                  - name: Список
                     href: api/offershiftrequest-list.md
                   - name: '"Утвердить"'
                     href: api/offershiftrequest-approve.md
@@ -5254,7 +5317,7 @@ items:
           - name: Список задач
             href: resources/todotasklist.md
             items:
-              - name: Перечисление списков задач
+              - name: Список списков задач
                 href: api/todo-list-lists.md
               - name: Создание списка задач
                 href: api/todo-post-lists.md
