@@ -4,12 +4,12 @@ description: Вы можете использовать API службы пои�
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 1a8e8cf17995adceadb9f426d1824d85505e806e
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: 6eb537fa8063281073fbdb12edfb4ec09b88bb93
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377945"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563431"
 ---
 # <a name="refine-search-results-using-aggregations-preview"></a>Уточнение результатов поиска с помощью агрегатов (Предварительная версия)
 
@@ -308,7 +308,7 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-Агрегаты поддерживаются только для элементов SharePoint или OneDrive. Они не поддерживаются для **сообщений**, **событий** и **екстерналитем**.
+Агрегаты поддерживаются только для элементов SharePoint или OneDrive. Они не поддерживаются для **сообщений** или **событий**.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 

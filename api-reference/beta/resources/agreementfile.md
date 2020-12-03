@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
-ms.openlocfilehash: 50663ca58323782a14b7e8c5681908aa5a108bdf
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e3e5ad1d2006332b5a8388d37176a8d10dcf895c
+ms.sourcegitcommit: d09d720b56ed6f1fad556e2a3730c2e850db355f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067491"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49555648"
 ---
 # <a name="agreementfile-resource-type"></a>Тип ресурса Агриментфиле
 
@@ -38,7 +38,8 @@ ms.locfileid: "48067491"
 |id|String|Только для чтения.|
 |isDefault|Boolean|Указывает, является ли этот файл соглашением по умолчанию, если ни одна из культур не соответствует параметрам клиента. Если ни один из файлов не помечен как используемый по умолчанию, первый из них будет считаться используемым по умолчанию. Только для чтения.|
 |language|String|Язык и региональные параметры файла соглашения в формате languagecode2-Country/regioncode2. languagecode2 это код из двух букв в нижнем регистре, производный от стандарта ISO 639-1. страна или regioncode2 является производной от стандарта ISO 3166 и обычно состоит из двух прописных букв или тега языка BCP-47 (например, EN-US). Только для чтения.|
-
+|исмажорверсион|Логический|Указывает, является ли файл соглашения основным обновлением версии. Основные обновления версий делают недействительными принятие соглашений на соответствующем языке. |
+|createdDateTime|DateTimeOffset|Дата и время создания файла. Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z".|
 
 <!--
 ## Relationships

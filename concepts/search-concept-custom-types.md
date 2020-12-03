@@ -4,14 +4,14 @@ description: С помощью API Microsoft Search можно импортир�
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 671f8feb37203d9fea652a203dfe4d094e5a8024
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: ba08eeb2aeaf4aa13e6b5bc686143e9b4293c0d8
+ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921748"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49523765"
 ---
-# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors"></a>Использование API службы поиска Microsoft для поиска настраиваемых типов, импортированных с помощью Microsoft Graph Connectors
+# <a name="use-the-microsoft-search-api-to-search-custom-types-imported-using-microsoft-graph-connectors-preview"></a>Использование API службы поиска Microsoft для поиска настраиваемых типов, импортированных с помощью Microsoft Graph Connectors (Предварительная версия) 
 
 Используйте API Microsoft Search API для поиска контента, полученных и индексируемых через [соединители Microsoft Graph](/microsoftsearch/connectors-overview). Содержимое импортируется либо через [встроенные соединители](/microsoftsearch/connectors-gallery) , предоставляемые корпорацией Майкрософт, либо через пользовательские соединители, реализованные с помощью [API приема Microsoft Graph Connectors](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true).
 

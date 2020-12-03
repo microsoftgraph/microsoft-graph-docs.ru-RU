@@ -3,20 +3,24 @@ title: 'Клаудпкпровисионингполици: назначение
 description: Назначьте политику подготовки облачных ПК для группы.
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 3e83fa363eeec142c194865da0bb0bef191aae50
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: cb6efee682b07d19c6638803aa24e1f489310282
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378479"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563438"
 ---
 # <a name="cloudpcprovisioningpolicy-assign"></a>Клаудпкпровисионингполици: назначение
 
 Пространство имен: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Назначьте [клаудпкпровисионингполици](../resources/cloudpcprovisioningpolicy.md) группам пользователей.
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +28,8 @@ ms.locfileid: "49378479"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|Клаудпк. ReadWrite. ALL|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -54,7 +58,7 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assign
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Идентификатор назначения политики подготовки. Если целевой объект — группа пользователей, идентификатор отображается как {Полициид} _ {groupId}. |
+|id|String|Идентификатор назначения политики подготовки. Если целевой объект — группа пользователей, идентификатор отображается как {Полициид} _ {groupId}. |
 |target|[клаудпкманажементассигнменттаржет](../resources/cloudpcmanagementassignmenttarget.md)|Цель назначения для политики подготовки. В настоящее время поддерживается только группа пользователей.|
 
 ## <a name="response"></a>Отклик
@@ -65,6 +69,8 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assign
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "assign_cloudpcprovisioningpolicy",
@@ -89,6 +95,16 @@ Content-Type: application/json
   ]
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/assign-cloudpcprovisioningpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/assign-cloudpcprovisioningpolicy-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

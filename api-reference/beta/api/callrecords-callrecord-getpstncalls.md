@@ -5,12 +5,12 @@ author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 598c3c4fe8abd1b1dcc77cea1d2f513b439771a3
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: cb15b70a023fcdf9731b67704329e7dc0d212cc8
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601106"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563187"
 ---
 # <a name="callrecord-getpstncalls"></a>Каллрекорд: Жетпстнкаллс
 
@@ -27,7 +27,7 @@ ms.locfileid: "48601106"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,6 +50,9 @@ GET /communications/callRecords/getPstnCalls
 |:---|:---|:---|
 |фромдатетиме|DateTimeOffset|Начало диапазона времени для запроса. UTC, включительно.<br/>Диапазон времени основан на времени начала вызова.|
 |тодатетиме|DateTimeOffset|Конец диапазона времени для запроса. UTC, включительно.|
+
+> [!IMPORTANT]
+> \* Значения **фромдатетиме** и **тодатетиме** не могут превышать диапазон дат 90 дней.
 
 ## <a name="request-headers"></a>Заголовки запросов
 

@@ -4,12 +4,12 @@ description: Вы можете использовать API службы пои�
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 9c411413639a3749a7e2464507be5867baaa08e5
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 604fb0cac6a79f78cadf31df057dceb2524e3cbb
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48634440"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523695"
 ---
 # <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>Использование API службы поиска Microsoft для поиска содержимого в OneDrive и SharePoint
 
@@ -17,7 +17,7 @@ ms.locfileid: "48634440"
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-API поиска позволяет ограничить типы контента, извлекаемого в OneDrive или SharePoint, путем указания свойства **EntityTypes** в [сеарчрекуест](/graph/api/resources/searchRequest?view=graph-rest-beta&preserve-view=true). В следующей части этой статьи показаны некоторые примеры:
+API поиска позволяет ограничить типы контента, извлекаемого в OneDrive или SharePoint, путем указания свойства **EntityTypes** в [сеарчрекуест](/graph/api/resources/searchRequest). В следующей части этой статьи показаны некоторые примеры:
 
 - [Пример 1: Поиск файлов](#example-1-search-files)
 - [Пример 2: Поиск элементов списка](#example-2-search-list-items)
@@ -32,7 +32,7 @@ API поиска позволяет ограничить типы контент
 ### <a name="request"></a>Запрос
 
 ```HTTP
-POST https://graph.microsoft.com/beta/search/query
+POST /search/query
 Content-Type: application/json
 
 {
@@ -49,14 +49,14 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 ```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -90,7 +90,7 @@ Content-type: application/json
                 "parentReference": {
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0",
                   "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b"
-                }
+                },
                 "fileSystemInfo": {
                   "createdDateTime": "2019-06-10T06:37:43Z",
                   "lastModifiedDateTime": "2019-06-10T06:37:43Z"
@@ -127,14 +127,14 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 ```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -154,7 +154,7 @@ Content-type: application/json
                 "createdDateTime": "2019-06-10T06:37:43Z",
                 "lastModifiedDateTime": "2019-06-10T06:37:43Z",
                 "name": "web_part_test_long Notebook",
-                "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/Lists/Issue tracker list/DispForm.aspx?ID=1"
+                "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/Lists/Issue tracker list/DispForm.aspx?ID=1",
                 "createdBy": {
                  "user": {
                    "displayName": "Michaelvincent Santos;Provisioning User"
@@ -166,6 +166,9 @@ Content-type: application/json
                   }
                 },
                 "parentReference": {
+                  "sharepointIds":{
+                    "listId":"da61a2b0-4120-4a3f-812b-0fc0d79bf16b"  
+                  },
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
                 }
               }
@@ -200,14 +203,14 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 ```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -241,7 +244,7 @@ Content-type: application/json
 
 ## <a name="example-4-search-all-content-in-onedrive-and-sharepoint"></a>Пример 4: Поиск по всему контенту в OneDrive и SharePoint
 
-В этом примере запрашивается весь контент на сайтах OneDrive и SharePoint, к которым вошедшего в систему пользователя предоставлен доступ для чтения. Свойство **ресурса** в ответе возвращает совпадения, которые представляют собой файлы и папки в виде объектов **driveItem** , совпадений, которые являются контейнерами **(списками SharePoint), и**всеми остальными совпадениями как **ListItem**.
+В этом примере запрашивается весь контент на сайтах OneDrive и SharePoint, к которым вошедшего в систему пользователя предоставлен доступ для чтения. Свойство **ресурса** в ответе возвращает совпадения, которые представляют собой файлы и папки в виде объектов **driveItem** , совпадений, которые являются контейнерами **(списками SharePoint), и** всеми остальными совпадениями как **ListItem**.
 
 ### <a name="request"></a>Запрос
 
@@ -263,14 +266,14 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 ```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -304,8 +307,8 @@ Content-type: application/json
                 },
                 "parentReference": {
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0",
-                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b”
-                }
+                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b"
+                },
                 "fileSystemInfo": {
                   "createdDateTime": "2019-06-10T06:37:43Z",
                   "lastModifiedDateTime": "2019-06-10T06:37:43Z"
@@ -325,7 +328,7 @@ Content-type: application/json
                 "lastModifiedDateTime": "2020-07-08T18:17:59+00:00",
                 "name": "Shared Documents",
                 "parentReference": {
-                "siteId": "microsoft.sharepoint-df.com,220fd155-0ea2-477c-a816-5c08fdc45f5d,fad16ab6-0736-4fbc-a053-087296b47c99"
+                  "siteId": "microsoft.sharepoint-df.com,220fd155-0ea2-477c-a816-5c08fdc45f5d,fad16ab6-0736-4fbc-a053-087296b47c99"
                 },
                 "webUrl": "https://microsoft.sharepoint-df.com/teams/spoppe/collab/TaskBoard/Contoso/Shared Documents/Forms/AllItems.aspx"
               }
@@ -340,7 +343,7 @@ Content-type: application/json
 
 ## <a name="example-5-use-filters-in-search-queries"></a>Пример 5: использование фильтров в поисковых запросах
 
-KQL можно использовать в условиях поиска запросов для OneDrive и SharePoint. Например,
+KQL можно использовать в условиях поиска запросов для OneDrive и SharePoint. Пример:
 
 - `"query": "contoso filetype:docx OR filetype:doc"` ограничивает область запроса документами Word.
 - `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` ограничивает область запроса определенной папкой на сайте.
@@ -351,7 +354,7 @@ KQL можно использовать в условиях поиска зап�
 
 ## <a name="example-6-specify-select-properties"></a>Пример 6: Указание свойств Select
 
-Вы можете указать поля, которые вы хотите вернуть в ответе, как часть вложенного свойства **Fields** объекта [сеарчхит](/graph/api/resources/searchhit?view=graph-rest-beta&preserve-view=true) в отклике. Это позволяет либо обрезать ответ по сети, либо запрашивать определенные свойства, не входящие в состав встроенной схемы.
+Вы можете указать поля, которые вы хотите вернуть в ответе, как часть вложенного свойства **Fields** объекта [сеарчхит](/graph/api/resources/searchhit) в отклике. Это позволяет либо обрезать ответ по сети, либо запрашивать определенные свойства, не входящие в состав встроенной схемы.
 
 Обратите внимание, что выбор свойства доступен только для элемента **ListItem** , так как это единственная сущность SharePoint в Microsoft Graph, поддерживающая настраиваемые свойства.
 
@@ -381,14 +384,14 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 ```HTTP
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#search",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#search",
   "value": [
     {
       "searchTerms": [
@@ -408,6 +411,9 @@ Content-type: application/json
                 "createdDateTime": "2019-06-10T06:37:43Z",
                 "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/contoso-designs.docx",
                 "parentReference": {
+                  "sharepointIds":{
+                    "listId":"da61a2b0-4120-4a3f-812b-0fc0d79bf16b"  
+                  },
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
                 },
                 "fields": {
@@ -426,8 +432,8 @@ Content-type: application/json
 
 ## <a name="known-limitations"></a>Известные ограничения
 
-При поиске **диска**необходимо включить в **строку queryString** термин, содержащийся в имени библиотеки документов. Запросы `*` не поддерживаются и не возвращают все доступные диски.
+При поиске **диска** необходимо включить в **строку queryString** термин, содержащийся в имени библиотеки документов. Запросы `*` не поддерживаются и не возвращают все доступные диски.
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true)
+- [Использование API Поиска (Майкрософт) для запроса данных](/graph/api/resources/search-api-overview)

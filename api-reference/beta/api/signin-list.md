@@ -3,14 +3,14 @@ title: Перечисление входов
 doc_type: apiPageType
 description: Получение списка входов пользователей в клиенте Azure Active Directory.
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 85634c9e27bfa0626c3fc42390df856a1194c466
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3a26d753241c88443a0aeceabd0f6c800f59c6d7
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48969078"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524262"
 ---
 # <a name="list-signins"></a>Перечисление входов
 
@@ -26,9 +26,9 @@ ms.locfileid: "48969078"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись) | Аудитлог. Read. ALL, Directory. Read. ALL |
+| Делегированное (рабочая или учебная учетная запись) | Аудитлог. Read. ALL, Directory. Read. ALL |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-| Для приложения | Аудитлог. Read. ALL, Directory. Read. ALL | 
+| Приложение | Аудитлог. Read. ALL, Directory. Read. ALL | 
 
 Кроме того, приложения должны быть должным образом зарегистрированы в Azure Active Directory.
 
@@ -93,7 +93,7 @@ GET auditLogs/signIns
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {token} |
+| Authorization | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -139,7 +139,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 <!-- {
   "blockType": "response",

@@ -3,14 +3,14 @@ title: Тип ресурса Мфадетаил
 description: 'Указывает сведения о MFA для определенного входа. Он включает способ проверки подлинности, используемый для входа в систему, а также сведения о проверке подлинности (например, Phone, SMS или голосовой почте). '
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-author: khotz
-ms.openlocfilehash: f901081a5cb662c082e441f60a8db7ac7b4cee42
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: microsoft-identity-platform
+author: besiler
+ms.openlocfilehash: 97e075d6f12c102d366f63fd231d83c1144d16f3
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48021373"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524549"
 ---
 # <a name="mfadetail-resource-type"></a>Тип ресурса Мфадетаил
 

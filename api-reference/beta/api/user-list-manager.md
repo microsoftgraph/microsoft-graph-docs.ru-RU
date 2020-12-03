@@ -5,12 +5,12 @@ localization_priority: Normal
 author: krbain
 ms.prod: users
 doc_type: apiPageType
-ms.openlocfilehash: 32784009419596579551430deee3d8953fc1a139
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: 1f04dc23b777906a3ee36bbcefea035e1e8d2422
+ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086772"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49524446"
 ---
 # <a name="list-manager"></a>Получение руководителя
 
@@ -44,20 +44,20 @@ GET /users/{id | userPrincipalName}/manager
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me?$expand=manager
-GET /users?$expand=manager($levels=max)
-GET /users/{id | userPrincipalName}/?$expand=manager($levels=max)
+GET /users?$expand=manager($levels=n)
+GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.  
 
-Если запрос содержит `$expand=manager($levels=max)` параметр для получения цепочки руководителя, необходимо также указать следующее:
+Если запрос содержит `$expand=manager($levels=n)` параметр для получения цепочки руководителя, необходимо также указать следующее:
 
 - `$count=true` параметр строки запроса
 - `ConsistencyLevel=eventual` заголовок запроса
 
->**Примечание:** `max` — Единственное допустимое значение для параметра `$levels` .
+>**Note:** `n` значение `$levels` может быть `max` (для возврата всех руководителей) или число от 1 до 1000.  
 > Если `$level` параметр не указан, возвращается только диспетчер immediate.  
 > Вы можете указать `$select` внутри `$expand` , чтобы выбрать свойства отдельного руководителя: `$expand=manager($levels=max;$select=id,displayName)`
 
@@ -92,6 +92,24 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=max)
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-manager-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
@@ -133,7 +151,7 @@ ConsistencyLevel: eventual
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Транзитивные руководители отображаются в иерархическом порядке.
+Ниже приведен пример ответа. Транзитивные руководители отображаются в иерархическом порядке.
 
 >**Примечание**. Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

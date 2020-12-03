@@ -2,15 +2,15 @@
 title: Тип ресурса Усеркредентиалусажедетаилс
 description: Представляет использование функции самостоятельного сброса пароля для данного клиента.
 localization_priority: Normal
-author: khotz
+author: besiler
 ms.prod: reports
 doc_type: resourcePageType
-ms.openlocfilehash: 3e00dfe9efccfa9e79d685b80d18524c0991e42e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 6ac0e1b8b73b019636e460772975da7a4f0505a1
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48057906"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524241"
 ---
 # <a name="usercredentialusagedetails-resource-type"></a>Тип ресурса Усеркредентиалусажедетаилс
 
@@ -35,7 +35,7 @@ ms.locfileid: "48057906"
 | failureReason | String | Предоставляет причину ошибки для соответствующего сброса или рабочего процесса регистрации. |
 | состав | string | Возможные значения: `registration` и `reset` . |
 | id | String | Только для чтения. Уникальный идентификатор действия. Только для чтения.|
-| Выполнение | Boolean | Указывает на успешное или неудачное завершение рабочего процесса. |
+| Выполнение | Логический | Указывает на успешное или неудачное завершение рабочего процесса. |
 | userDisplayName | String | Имя пользователя, выполняющего сброс или регистрацию рабочего процесса. |
 | userPrincipalName | String | Имя участника-пользователя, выполняющего сброс или регистрацию. |
 

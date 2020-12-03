@@ -3,14 +3,14 @@ title: Обзор API отчетов об удостоверениях и дос
 description: Обращайтесь к отчетам об удостоверениях и доступе, чтобы получить сведения о том, как пользователи в вашей организации используют приложения в клиенте Azure Active Directory.
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-author: khotz
+author: besiler
 doc_type: conceptualPageType
-ms.openlocfilehash: 731eed0f0610c19fde4289b067e03ca2a4533898
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0414b0d8bd94ae5fe44f5913dea33c366377ec2d
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026378"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523744"
 ---
 # <a name="identity-and-access-reports-api-overview"></a>Обзор API отчетов об удостоверениях и доступе
 

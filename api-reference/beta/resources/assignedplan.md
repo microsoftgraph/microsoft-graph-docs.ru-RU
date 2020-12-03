@@ -3,14 +3,14 @@ title: Тип ресурса assignedPlan
 description: Свойство **assignedPlans** объектов user и organization представляет собой коллекцию объектов **assignedPlan**.
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
+ms.prod: microsoft-identity-platform
 author: krbain
-ms.openlocfilehash: 1088d5b3c0e46a46df393b17ccea849aa2662044
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: fe546f2dd25ca7f65e1ce8299bfad9b9ce5be56d
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48089828"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563424"
 ---
 # <a name="assignedplan-resource-type"></a>Тип ресурса assignedPlan
 
@@ -22,14 +22,26 @@ ms.locfileid: "48089828"
 
 
 ## <a name="properties"></a>Свойства
+
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |ассигнеддатетиме|DateTimeOffset|Дата и время назначения плана. Пример: 2013-01-02T19:32:30Z. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 (время всегда в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|капабилитистатус|String|Пример: "Enabled".|
+|капабилитистатус|[капабилитистатус](#capabilitystatus-values)|Условие назначения возможности. Возможные значения:,,, `Enabled` `Warning` `Suspended` `Deleted` , `LockedOut` .|
 |service|String|Имя службы, например "Exchange".|
 |сервицепланид|Guid|Идентификатор GUID, определяющий план обслуживания.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+
+### <a name="capabilitystatus-values"></a>значения Капабилитистатус
+
+| Member | Описание  |
+|:---------------|:--------|
+| Включено | Доступен для обычного использования. |
+| Предупреждение | Доступен для нормального использования, но находится в периоде отсрочки. |
+| Suspended | Недоступно, но все данные, связанные с возможностью, должны быть сохранены. |
+| Deleted | Все данные, связанные с возможностью, недоступны и могут быть удалены. |
+| Блокировка | Недоступно для всех администраторов и пользователей, но все данные, связанные с этой возможностью, должны быть сохранены. |
+
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
