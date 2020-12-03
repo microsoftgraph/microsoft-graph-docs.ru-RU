@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 25aa593c9e5fd0e1bd86d7265c4ebaaf22395d02
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 50e2405f6fd0c093e6dc5f3ebaa48eea969d2990
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48459867"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563921"
 ---
 # <a name="call-answer"></a>вызов: ответ
 
@@ -18,9 +18,9 @@ ms.locfileid: "48459867"
 
 Разрешить интерфейсу Bot ответить на входящий [вызов](../resources/call.md). Запрос входящего вызова может быть приглашенным из участника группы или однорангового вызова. При получении приглашения на вызов группы в уведомлении будут содержаться параметры [чатинфо](../resources/chatinfo.md) и [митингинфо](../resources/meetinginfo.md) .
 
-Ожидается, что Bot отвечает, [отклоняется](./call-reject.md)или [перенаправляется](./call-redirect.md) вызов до истечения времени ожидания вызова. Текущее значение времени ожидания — 15 секунд.
+Ожидается, что Bot отвечает, [отклоняется](./call-reject.md)или [перенаправляется](./call-redirect.md) вызов до истечения времени ожидания вызова. Текущее значение времени ожидания составляет 15 секунд для обычных сценариев и 5 секунд для сценариев записи на основе политик.
 
-## <a name="permissions"></a>Разрешения
+## <a name="permissions"></a>Permissions
 Для ответа на одноранговый звонок не требуется никаких разрешений. Для присоединения к группе необходимо одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий)                 |

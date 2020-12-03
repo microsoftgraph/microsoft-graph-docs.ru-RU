@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ''
 author: SarahBar
-ms.openlocfilehash: 339041f4fa332efdf949ed5d3c4cad1ad6fdcf2c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5e0b1e3bbca66bd43aa55e0f58739572cdb84c2f
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067116"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563620"
 ---
 # <a name="signinstatus-resource-type"></a>Тип ресурса Сигнинстатус
 
@@ -22,10 +22,10 @@ ms.locfileid: "48067116"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |additionalDetails|String|Предоставляет дополнительные сведения об активности входа|
-|errorCode|Int32|Предоставляет код ошибки 5 6digit, который создается при сбое входа. Ознакомьтесь со [списком кодов и сообщений об ошибках](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
+|errorCode|Int32|Предоставляет код ошибки 5-6, который создается при сбое входа. Ознакомьтесь со [списком кодов и сообщений об ошибках](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
 |failureReason|String|Содержит сообщение об ошибке или причину сбоя для соответствующего действия при входе. Ознакомьтесь со [списком кодов и сообщений об ошибках](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

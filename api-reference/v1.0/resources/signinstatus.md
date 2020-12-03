@@ -5,12 +5,12 @@ localization_priority: Normal
 author: dhanyahk
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: c534ae4c6d881add405e0cd29d39197ce5e79f1e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3633968869c0cf61e16afa4ba056a530c86b3c93
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48086419"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563655"
 ---
 # <a name="signinstatus-resource-type"></a>Тип ресурса Сигнинстатус
 
@@ -22,8 +22,8 @@ ms.locfileid: "48086419"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|additionalDetails|Строка|Предоставляет дополнительные сведения об активности входа|
-|errorCode|Int32|Предоставляет код ошибки 5 6digit, который создается при сбое входа. Ознакомьтесь со [списком кодов и сообщений об ошибках](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
+|additionalDetails|String|Предоставляет дополнительные сведения об активности входа|
+|errorCode|Int32|Предоставляет код ошибки 5-6, который создается при сбое входа. Ознакомьтесь со [списком кодов и сообщений об ошибках](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
 |failureReason|String|Содержит сообщение об ошибке или причину сбоя для соответствующего действия при входе. Ознакомьтесь со [списком кодов и сообщений об ошибках](/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
 
 ## <a name="json-representation"></a>Представление JSON

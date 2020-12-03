@@ -3,20 +3,24 @@ title: Тип ресурса Клаудпк
 description: Облачные управляемые виртуальные рабочие столы.
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 95758299f87ac463bac6fdc30f7d70fb59eb6c92
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: d1109ceb81f741cefa9b26662bc1c8c5de8a8329
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378608"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563840"
 ---
 # <a name="cloudpc-resource-type"></a>Тип ресурса Клаудпк
 
 Пространство имен: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Представляет виртуальный рабочий стол, управляемый облаком.
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="methods"></a>Методы
 
@@ -30,13 +34,13 @@ ms.locfileid: "49378608"
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для облачного компьютера. Только для чтения.|
-|displayName|Строка|Отображаемое имя Cloud PC.|
-|имажедисплайнаме|Строка|Имя образа операционной системы, который находится на облачном компьютере.|
-|манажеддевицеид|Строка|ИДЕНТИФИКАТОР устройства Intune облачного компьютера.|
+|id|String|Уникальный идентификатор для облачного компьютера. Только для чтения.|
+|displayName|String|Отображаемое имя Cloud PC.|
+|имажедисплайнаме|String|Имя образа операционной системы, который находится на облачном компьютере.|
+|манажеддевицеид|String|ИДЕНТИФИКАТОР устройства Intune облачного компьютера.|
 |managedDeviceName|String|Имя устройства в Intune на облачном компьютере.|
-|провисионингполициид|Строка|Идентификатор политики подготовки для облачного компьютера.|
-|сервицепланид|Строка|ИДЕНТИФИКАТОР плана обслуживания Cloud PC.|
+|провисионингполициид|String|Идентификатор политики подготовки для облачного компьютера.|
+|сервицепланид|String|ИДЕНТИФИКАТОР плана обслуживания Cloud PC.|
 |сервицепланнаме|String|Имя плана обслуживания для облачного компьютера.|
 |status|клаудпкстатус|Состояние облачного компьютера. Возможные значения: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `upgradeFailed`, `provisionFailed`, `deprovisionFailed`, `reprovisionFailed`.|
 |статусдетаилс|[клаудпкстатусдетаилс](../resources/cloudpcstatusdetails.md)|Сведения о состоянии облачного компьютера.|

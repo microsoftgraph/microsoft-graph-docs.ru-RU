@@ -1,31 +1,37 @@
 ---
 title: Тип ресурса Теамсаппинсталлатион
-description: 'TeamsApp, установленный в команде. '
+description: Представляет teamsApp, установленный в команде или персональную область пользователя.
 author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: a10872d45a53c60af75179acfd2e1ece793b7c4a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0d15f65273504b3b7577c875fec69c5a212a8c76
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48036928"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563753"
 ---
 # <a name="teamsappinstallation-resource-type"></a>Тип ресурса Теамсаппинсталлатион
 
 Пространство имен: microsoft.graph
 
-[TeamsApp](teamsapp.md) , установленный в [команде](team.md). Все боты, которые входят в состав приложения, станут частью любой команды, в которую добавляется приложение.
+Представляет [teamsApp](teamsapp.md) , установленный в [команде](team.md) или персональную область [пользователя](user.md). Все боты, которые входят в состав приложения, станут частью любой рабочей группы или пользователя, к которому добавляется приложение.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список приложений](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) | Список приложений, установленных в команде.|
-|[Добавление приложения](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | Добавляет (устанавливает) приложение в команду.|
-|[Удаление приложения](../api/teamsappinstallation-delete.md) | Нет | Удаляет приложение из команды.|
-|[Обновление приложения](../api/teamsappinstallation-upgrade.md) | Нет | Обновление до последней версии приложения.|
+|[Список приложений, установленных в Team](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) collection | Список приложений, установленных в команде.|
+|[Получение приложения, установленного в команде](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Список приложений, установленных в команде.|
+|[Добавление приложения в команду](../api/teamsappinstallation-add.md) | Нет | Добавляет (устанавливает) приложение в команду.|
+|[Удаление приложения из группы](../api/teamsappinstallation-delete.md) | Нет | Удаляет приложение из команды.|
+|[Обновление приложения, установленного в команде](../api/teamsappinstallation-upgrade.md) | Нет | Обновление до последней версии приложения, установленного в команде.|
+|[Перечисление приложений, установленных для пользователя](../api/userteamwork-list-installedapps.md)| Коллекция [усерскопетеамсаппинсталлатион](userscopeteamsappinstallation.md) | Список приложений, установленных в личной области пользователя. |
+|[Получает установленное приложение для пользователя](../api/userteamwork-get-installedapps.md)| [усерскопетеамсаппинсталлатион](userscopeteamsappinstallation.md) | Перечисление указанного приложения, установленного в личной области пользователя. |
+|[Добавление приложения для пользователя](../api/userteamwork-add-installedapps.md) | Нет | Добавляет (устанавливает) приложение в личную область пользователя. |
+|[Удаление приложения для пользователя](../api/userteamwork-delete-installedapps.md) | Нет | Удаляет приложение из персональной области пользователя. |
+|[Обновление приложения, установленного для пользователя](../api/userteamwork-upgrade-installedapps.md) | Нет | Обновление до последней версии приложения, установленного в личной области пользователя.|
 
 ## <a name="properties"></a>Свойства
 
@@ -39,6 +45,7 @@ ms.locfileid: "48036928"
 |:---------------|:--------|:----------|
 |teamsApp|[teamsApp](teamsapp.md)| Установленное приложение. |
 |teamsAppDefinition|[teamsAppDefinition](teamsappdefinition.md)| Сведения о данной версии приложения. |
+
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -59,6 +66,7 @@ ms.locfileid: "48036928"
 - [teamsApp](teamsapp.md)
 - [teamsAppDefinition](teamsappdefinition.md)
 - [teamsTab](../resources/teamstab.md)
+- [усерскопетеамсаппинсталлатион](../resources/userscopeteamsappinstallation.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -68,5 +76,6 @@ ms.locfileid: "48036928"
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
+  "suppressions": []
 }-->
 

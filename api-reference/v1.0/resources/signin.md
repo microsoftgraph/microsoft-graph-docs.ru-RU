@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса signIn
 description: Сведения о действиях входа пользователей и приложений для клиента (каталога).
-author: khotz
+author: besiler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 86136a1180df6f07d0919589570cda3c5e20b36b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b86ae228a888ce32ca79053f46ff4e7a04505bcc
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47970637"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563662"
 ---
 # <a name="signin-resource-type"></a>Тип ресурса signIn
 
@@ -44,11 +44,11 @@ ms.locfileid: "47970637"
 |resourceId|String|Идентификатор ресурса, в который пользователь выполнил вход.|
 |riskDetail|riskDetail|Предоставляет "причину" определенного состояния пользователя с риском, входа или события риска. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Значение `none` означает, что действия для пользователя или входа пока не выполнялись. <br>**Примечание:** Для получения сведений о данном свойстве требуется лицензия Azure AD Premium P2. Другие лицензии возвращают значение `hidden` .|
 |riskEventTypes|Коллекция Рискевенттипе|Типы событий риска, связанные с входом. Допустимые значения: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic` и `unknownFutureValue`.|
-|riskEventTypes_v2|Коллекция String|Список типов событий риска, связанных с входом. Возможные значения: `unlikelyTravel` ,,,,, `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` , `leakedCredentials` , `investigationsThreatIntelligence` ,  `generic` или `unknownFutureValue` .|
+|riskEventTypes_v2|Коллекция объектов string|Список типов событий риска, связанных с входом. Возможные значения: `unlikelyTravel` ,,,,, `anonymizedIPAddress` `maliciousIPAddress` `unfamiliarFeatures` `malwareInfectedIPAddress` `suspiciousIPAddress` , `leakedCredentials` , `investigationsThreatIntelligence` ,  `generic` или `unknownFutureValue` .|
 |riskLevelAggregated|riskLevel|Сводный уровень риска. Допустимые значения: `none`, `low`, `medium`, `high`, `hidden` и `unknownFutureValue`. Значение `hidden` означает, что пользователь или вход не разрешены в службе защиты идентификации Azure AD. **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Для всех остальных пользователей возвращается значение `hidden`.|
 |riskLevelDuringSignIn|riskLevel|Уровень риска во время входа. Допустимые значения: `none`, `low`, `medium`, `high`, `hidden` и `unknownFutureValue`. Значение `hidden` означает, что пользователь или вход не разрешены в службе защиты идентификации Azure AD. **Примечание.** Сведения для этого свойства доступны только для пользователей Azure AD Premium P2. Для всех остальных пользователей возвращается значение `hidden`.|
 |riskState|riskState|Сообщает о состоянии опасного пользователя, входа в систему или события риска. Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
-|status|[signInStatus](signinstatus.md)|Состояние входа. Возможные значения: `Success` и `Failure`.|
+|status|[signInStatus](signinstatus.md)|Состояние входа. Содержит код ошибки и описание ошибки (в случае сбоя входа).|
 |userDisplayName|String|Отображаемое имя пользователя, который инициировал вход.|
 |userId|String|Идентификатор пользователя, который инициировал вход.|
 |userPrincipalName|String|Имя участника пользователя, который инициировал вход в систему.|

@@ -2,15 +2,15 @@
 title: Тип ресурса signIn
 doc_type: resourcePageType
 description: Предоставляет сведения о входе пользователей или входе в приложения в вашем каталоге.
-author: khotz
+author: besiler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: efdb9162846c0c5ab8fd25e75b3d820059fe970b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 97a3c3807c4abe25594ad918b8717efad4ce7770
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48067218"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563683"
 ---
 # <a name="signin-resource-type"></a>Тип ресурса signIn
 
@@ -60,7 +60,7 @@ ms.locfileid: "48067218"
 |riskState|riskState|Состояние риска рискованного пользователя, входа в систему или события риска. Возможные значения: `none` , `confirmedSafe` , `remediated` , `dismissed` , `atRisk` , `confirmedCompromised` , или `unknownFutureValue` .|
 |сервицепринЦипалид|String|Идентификатор приложения, используемый для входа в систему. Это поле заполняется при входе с использованием приложения.|
 |servicePrincipalName|String|Имя приложения, используемое для входа в систему. Это поле заполняется при входе с использованием приложения.|
-|status|[signInStatus](signinstatus.md)|Состояние входа. Возможные значения: `Success` или `Failure` .|
+|status|[signInStatus](signinstatus.md)|Состояние входа. Содержит код ошибки и описание ошибки (в случае сбоя входа).|
 |tokenIssuerName|String|Имя поставщика удостоверений. Например, `sts.microsoft.com`.|
 |tokenIssuerType|String|Тип поставщика удостоверений. Возможные значения: `AzureAD` , `ADFederationServices` , или `UnknownFutureValue` .|
 |userAgent|String|Сведения о агенте пользователя, связанные с входом.|

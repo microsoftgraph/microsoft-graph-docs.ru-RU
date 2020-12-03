@@ -3,20 +3,24 @@ title: Тип ресурса Клаудпконпремисесконнекти�
 description: Сведения о состоянии локального подключения к облачному компьютеру.
 author: AshleyYangSZ
 localization_priority: Normal
-ms.prod: ''
+ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 19dedd3344d5ed049a5b6ff5361ed7a8e4937146
-ms.sourcegitcommit: 3644a6cee51ab2bd19fa94e698d064073323d1dd
+ms.openlocfilehash: db40df3bcd89ac21eb50870e82fe6a34ced86828
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49378461"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563774"
 ---
 # <a name="cloudpconpremisesconnectionstatusdetails-resource-type"></a>Тип ресурса Клаудпконпремисесконнектионстатусдетаилс
 
 Пространство имен: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Сведения о состоянии [клаудпконпремисесконнектион](../resources/cloudpconpremisesconnection.md).
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## <a name="properties"></a>Свойства
 
