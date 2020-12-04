@@ -5,12 +5,12 @@ localization_priority: Priority
 author: rsamai
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: 0e70f712b7965e97df7255cda3dcf94c69f73691
-ms.sourcegitcommit: b70ee16cdf24daaec923acc477b86dbf76f2422b
+ms.openlocfilehash: 2157b61ba1585d72e24a6a62f1b0344530524be9
+ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48193775"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572144"
 ---
 # <a name="register-schema-for-the-microsoft-graph-connection"></a>Схема регистрации для связей Microsoft Graph
 
@@ -148,8 +148,7 @@ ms.locfileid: "48193775"
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Добавление элементов в связь](/graph/concepts/search-index-manage-items.md)
+- [Добавление элементов в связь](/graph/search-index-manage-items)
 - [Обзор справочника API соединителей Microsoft Graph](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
-- [Настройка страницы результатов поиска Microsoft](/MicrosoftSearch/configure-connector#next-steps-customize-the-search-results-page)
 - [Поиск объектов настраиваемого типа (externalItem)](search-concept-custom-types.md)
 - Скачайте [образец соединителя поиска](https://github.com/microsoftgraph/msgraph-search-connector-sample) с сайта GitHub.

@@ -5,12 +5,12 @@ author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: cb15b70a023fcdf9731b67704329e7dc0d212cc8
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: f5582322e274ced22db02e777364835611a2bdb0
+ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563187"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572130"
 ---
 # <a name="callrecord-getpstncalls"></a>Каллрекорд: Жетпстнкаллс
 
@@ -52,7 +52,7 @@ GET /communications/callRecords/getPstnCalls
 |тодатетиме|DateTimeOffset|Конец диапазона времени для запроса. UTC, включительно.|
 
 > [!IMPORTANT]
-> \* Значения **фромдатетиме** и **тодатетиме** не могут превышать диапазон дат 90 дней.
+> Значения **фромдатетиме** и **тодатетиме** не могут превышать диапазон дат 90 дней.
 
 ## <a name="request-headers"></a>Заголовки запросов
 

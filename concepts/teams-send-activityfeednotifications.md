@@ -4,12 +4,12 @@ description: Отправлять уведомления о каналах ак�
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 33a44ef158a1336e198e7382e144efed11ff35e7
-ms.sourcegitcommit: 6201b3a5646f640f25a68ab033eca9eb60ccd05e
+ms.openlocfilehash: 698a5ed338906f8eed2d2611c8aba3b4f0b6f624
+ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377455"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572123"
 ---
 # <a name="send-activity-feed-notifications-to-users-in-microsoft-teams"></a>Отправка уведомлений о каналах активности пользователям в Microsoft Teams
 
@@ -158,7 +158,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2--notify-a-user-about-a-task-created-in-a-team"></a>Пример 2: уведомление пользователя о задаче, созданной в команде
+### <a name="example-2-notify-a-user-about-a-task-created-in-a-team"></a>Пример 2: уведомление пользователя о задаче, созданной в команде
 
 В этом примере показано, как можно отправить уведомление веб-канала активности для команды. В этом примере владелец команды уведомляется о новой созданной задаче, требующей внимания.
 
