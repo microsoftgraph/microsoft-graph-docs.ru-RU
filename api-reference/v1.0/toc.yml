@@ -728,7 +728,7 @@ items:
                     href: api/application-addkey.md
                   - name: Удаление ключа
                     href: api/application-removekey.md
-              - name: Extensions
+              - name: Расширения
                 items:
                   - name: Список
                     href: api/application-list-extensionproperty.md
@@ -1212,6 +1212,13 @@ items:
                 href: api/onlinemeeting-delete.md
               - name: Создание или получение
                 href: api/onlinemeeting-createorget.md
+          - name: Присутствие
+            href: resources/presence.md
+            items:
+              - name: Получение сведений о присутствии
+                href: api/presence-get.md
+              - name: Получение сведений о присутствии для нескольких пользователей
+                href: api/cloudcommunications-getpresencesbyuserid.md
       - name: Взаимодействие с разными устройствами
         displayName: Project Rome
         items:
@@ -3600,7 +3607,7 @@ items:
                 href: api/educationuser-get.md
               - name: Удаление пользователя
                 href: api/educationuser-delete.md
-      - name: Extensions
+      - name: Расширения
         items:
           - name: Открытые расширения
             href: resources/opentypeextension.md
@@ -4050,6 +4057,13 @@ items:
                         href: api/activitybasedtimeoutpolicy-update.md
                       - name: Delete
                         href: api/activitybasedtimeoutpolicy-delete.md
+                  - name: Политика авторизации
+                    href: resources/authorizationpolicy.md
+                    items:
+                      - name: Получение
+                        href: api/authorizationpolicy-get.md
+                      - name: Обновление
+                        href: api/authorizationpolicy-update.md
                   - name: Политика обнаружения домашней области
                     href: resources/homerealmdiscoverypolicy.md
                     items:
@@ -5190,7 +5204,7 @@ items:
                     href: api/offershiftrequest-get.md
                   - name: Список
                     href: api/offershiftrequest-list.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/offershiftrequest-approve.md
                   - name: Отклоня
                     href: api/offershiftrequest-decline.md
@@ -5216,7 +5230,7 @@ items:
                     href: api/openshiftchangerequest-post.md
                   - name: Получение
                     href: api/openshiftchangerequest-get.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/openshiftchangerequest-approve.md
                   - name: Отклоня
                     href: api/openshiftchangerequest-decline.md
@@ -5236,7 +5250,7 @@ items:
                     href: api/swapshiftschangerequest-post.md
                   - name: Получение
                     href: api/swapshiftschangerequest-get.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/swapshiftschangerequest-approve.md
                   - name: Отклоня
                     href: api/swapshiftschangerequest-decline.md
@@ -5273,7 +5287,7 @@ items:
                     href: api/timeoffrequest-get.md
                   - name: Удаление
                     href: api/timeoffrequest-delete.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/timeoffrequest-approve.md
                   - name: Отклоня
                     href: api/timeoffrequest-decline.md
