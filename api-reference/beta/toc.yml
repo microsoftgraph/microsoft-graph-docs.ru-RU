@@ -769,7 +769,7 @@ items:
                     href: api/application-addkey.md
                   - name: Удаление ключа
                     href: api/application-removekey.md
-              - name: Extensions
+              - name: Расширения
                 items:
                   - name: Список расширений
                     href: api/application-list-extensionproperty.md
@@ -1629,7 +1629,7 @@ items:
                     href: api/printjob-get.md
                   - name: Start
                     href: api/printjob-start.md
-                  - name: '"Отмена"'
+                  - name: Отменить
                     href: api/printjob-cancel.md
               - name: Операция печати
                 href: resources/printoperation.md
@@ -9499,7 +9499,7 @@ items:
             items:
               - name: Получение ошибок синхронизации
                 href: api/educationsynchronizationerrors-get.md
-      - name: Extensions
+      - name: Расширения
         items:
           - name: Открытые расширения
             href: resources/opentypeextension.md
@@ -10639,6 +10639,10 @@ items:
                         href: api/b2cidentityuserflow-post-identityproviders.md
                       - name: Удаление поставщика удостоверений
                         href: api/b2cidentityuserflow-delete-identityproviders.md
+                      - name: Назначение атрибутов пользователя списка
+                        href: api/b2cidentityuserflow-list-userattributeassignments.md
+                      - name: Создание назначения атрибута пользователя
+                        href: api/b2cidentityuserflow-post-userattributeassignments.md
                   - name: Самостоятельная регистрация пользовательских потоков
                     items:
                       - name: B2X пользовательская схема
@@ -10657,6 +10661,10 @@ items:
                         href: api/b2xidentityuserflow-post-identityproviders.md
                       - name: Удаление поставщика удостоверений
                         href: api/b2xidentityuserflow-delete-identityproviders.md
+                      - name: Назначение атрибутов пользователя списка
+                        href: api/b2xidentityuserflow-list-userattributeassignments.md
+                      - name: Создание назначения атрибута пользователя
+                        href: api/b2xidentityuserflow-post-userattributeassignments.md
                   - name: Атрибуты пользовательского процесса
                     items:
                       - name: Атрибут Flow Flow
@@ -10671,6 +10679,16 @@ items:
                         href: api/identityuserflowattribute-update.md
                       - name: Delete
                         href: api/identityuserflowattribute-delete.md
+                  - name: Назначение атрибута пользовательского процесса
+                    items:
+                      - name: Назначение атрибута пользовательского процесса
+                        href: resources/identityuserflowattributeassignment.md
+                      - name: Получение атрибута пользовательского процесса
+                        href: api/identityuserflowattributeassignment-get.md
+                      - name: Обновление назначения атрибута пользовательского процесса
+                        href: api/identityuserflowattributeassignment-update.md
+                      - name: Удаление назначения атрибута пользовательского процесса
+                        href: api/identityuserflowattributeassignment-delete.md
           - name: Управление
             items:
               - name: Обзоры Access (группы)
@@ -12726,7 +12744,7 @@ items:
                     href: api/offershiftrequest-get.md
                   - name: Список
                     href: api/offershiftrequest-list.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/offershiftrequest-approve.md
                   - name: Отклоня
                     href: api/offershiftrequest-decline.md
@@ -12752,7 +12770,7 @@ items:
                     href: api/openshiftchangerequest-post.md
                   - name: Получение
                     href: api/openshiftchangerequest-get.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/openshiftchangerequest-approve.md
                   - name: Отклоня
                     href: api/openshiftchangerequest-decline.md
@@ -12772,7 +12790,7 @@ items:
                     href: api/swapshiftschangerequest-post.md
                   - name: Получение
                     href: api/swapshiftschangerequest-get.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/swapshiftschangerequest-approve.md
                   - name: Отклоня
                     href: api/swapshiftschangerequest-decline.md
@@ -12809,7 +12827,7 @@ items:
                     href: api/timeoffrequest-get.md
                   - name: Удаление
                     href: api/timeoffrequest-delete.md
-                  - name: '"Утвердить"'
+                  - name: Утвердить
                     href: api/timeoffrequest-approve.md
                   - name: Отклоня
                     href: api/timeoffrequest-decline.md
