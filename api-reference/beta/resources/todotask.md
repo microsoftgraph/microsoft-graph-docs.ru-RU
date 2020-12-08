@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 58859f2781ecec713e547340606411302232ec06
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ffcd3da43b7ae165045b545c656035e47d291419
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48003495"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597202"
 ---
 # <a name="todotask-resource-type"></a>Тип ресурса Тодотаск
 
@@ -24,7 +24,9 @@ ms.locfileid: "48003495"
 
 Этот ресурс поддерживает следующие компоненты:
 * Добавление данных в качестве настраиваемых свойств в [открытые расширения](/graph/extensibility-overview).
+* подписку на [уведомления об изменениях](/graph/webhooks);
 * Использование [запроса изменений](/graph/delta-query-overview) для отслеживания добавочных дополнений, удалений и обновлений.
+
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|

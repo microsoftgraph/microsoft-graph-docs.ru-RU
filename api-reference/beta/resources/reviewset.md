@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: resourcePageType
-ms.openlocfilehash: f1bf04c8357fbd57876b460848c549b3edd6f1f7
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 411de013df02bcd71e851a694664ae010edaf4ab
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400746"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597272"
 ---
 # <a name="reviewset-resource-type"></a>Тип ресурса Review
+
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,18 +24,20 @@ ms.locfileid: "48400746"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список](../api/reviewset-list.md) | Коллекция [reviewing](reviewset.md) | Получение коллекции наборов проверки. |
-| [получение](../api/reviewset-get.md); | [reviewSet](reviewset.md) | Считывание свойств и связей объекта **reviewing** . |
-| [создание](../api/reviewset-post.md); | [reviewSet](reviewset.md) | Создайте новый набор рецензирования. |
+| [Список рецензентов](../api/reviewset-list.md) | Коллекция [reviewing](reviewset.md) | Получение коллекции наборов проверки. |
+| [Получение представления](../api/reviewset-get.md) | [reviewSet](reviewset.md) | Считывание свойств и связей объекта **reviewing** . |
+| [Создание представления](../api/reviewset-post.md) | [reviewSet](reviewset.md) | Создайте новый набор рецензирования. |
+| [Перечисление запросов](../api/reviewsetquery-list.md)|Коллекция [ревиевсеткуери](../resources/reviewsetquery.md)|Получение ресурсов Ревиевсеткуери из свойства навигации Queries.|
+| [Создание запросов](../api/reviewsetquery-post.md)|[reviewSetQuery](../resources/reviewsetquery.md)|Создание нового объекта Ревиевсеткуери.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|createdBy| [identitySet](/graph/api/resources/identityset) | Пользователь, создавший набор проверки. Только для чтения. |
-|createdDateTime|DateTimeOffset| Дата и время создания набора проверки. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
-|displayName|String| Имя набора проверки. Имя уникально с максимальным ограничением в 64 символов. |
-|id|String| Уникальный идентификатор набора проверки. Только для чтения. |
+|createdBy        | [identitySet](/graph/api/resources/identityset) | Пользователь, создавший набор проверки. Только для чтения. |
+|createdDateTime  |DateTimeOffset| Дата и время создания набора проверки. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
+|displayName      |String| Имя набора проверки. Имя уникально с максимальным ограничением в 64 символов. |
+|id               |String| Уникальный идентификатор набора проверки. Только для чтения. |
 
 ## <a name="relationships"></a>Связи
 
@@ -57,10 +61,13 @@ ms.locfileid: "48400746"
 
 ```json
 {
-  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "createdDateTime": "String (timestamp)",
+  "@odata.type": "#microsoft.graph.reviewSet",
+  "createdBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "id": "String (identifier)",
   "displayName": "String",
-  "id": "String (identifier)"
+  "createdDateTime": "String (timestamp)"
 }
 ```
 

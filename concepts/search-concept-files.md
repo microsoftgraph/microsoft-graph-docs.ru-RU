@@ -4,12 +4,12 @@ description: Вы можете использовать API службы пои�
 author: nmoreau
 localization_priority: Normal
 ms.prod: search
-ms.openlocfilehash: 604fb0cac6a79f78cadf31df057dceb2524e3cbb
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 37021df3124b1ff24cb0edde9a8253cf0c980fda
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523695"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597300"
 ---
 # <a name="use-the-microsoft-search-api-to-search-content-in-onedrive-and-sharepoint"></a>Использование API службы поиска Microsoft для поиска содержимого в OneDrive и SharePoint
 
@@ -17,15 +17,7 @@ ms.locfileid: "49523695"
 
 [!INCLUDE [search-schema-updated](../includes/search-schema-updated.md)]
 
-API поиска позволяет ограничить типы контента, извлекаемого в OneDrive или SharePoint, путем указания свойства **EntityTypes** в [сеарчрекуест](/graph/api/resources/searchRequest). В следующей части этой статьи показаны некоторые примеры:
-
-- [Пример 1: Поиск файлов](#example-1-search-files)
-- [Пример 2: Поиск элементов списка](#example-2-search-list-items)
-- [Пример 3: Поиск на сайтах](#example-3-search-sites)
-- [Пример 4: Поиск по всему контенту в OneDrive и SharePoint](#example-4-search-all-content-in-onedrive-and-sharepoint)
-- [Пример 5: использование фильтров в поисковых запросах](#example-5-use-filters-in-search-queries)
-- [Пример 6: Указание свойств Select](#example-6-specify-select-properties)
-
+API поиска позволяет ограничить типы контента, извлекаемого в OneDrive или SharePoint, путем указания свойства **EntityTypes** в [сеарчрекуест](/graph/api/resources/searchRequest). В этой статье описываются некоторые примеры.
 
 ## <a name="example-1-search-files"></a>Пример 1: Поиск файлов
 
@@ -89,7 +81,12 @@ Content-type: application/json
                 },
                 "parentReference": {
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0",
-                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b"
+                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b",
+                  "sharepointIds": {
+                      "listId": "c61d1892-ca82-4f53-b16f-6bb8a379e2b2",
+                      "listItemId": "1027",
+                      "listItemUniqueId": "E320AFEB-AD73-46A2-83D7-985FAA4B206D"
+                  }
                 },
                 "fileSystemInfo": {
                   "createdDateTime": "2019-06-10T06:37:43Z",
@@ -155,6 +152,10 @@ Content-type: application/json
                 "lastModifiedDateTime": "2019-06-10T06:37:43Z",
                 "name": "web_part_test_long Notebook",
                 "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/Lists/Issue tracker list/DispForm.aspx?ID=1",
+                "sharepointIds": {
+                    "listId": "33498de0-d695-4d23-ac26-e1bf95a3206e",
+                    "listItemId": "13"
+                },
                 "createdBy": {
                  "user": {
                    "displayName": "Michaelvincent Santos;Provisioning User"
@@ -307,7 +308,12 @@ Content-type: application/json
                 },
                 "parentReference": {
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0",
-                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b"
+                  "driveId": "da61a2b0-4120-4a3f-812b-0fc0d79bf16b",
+                  "sharepointIds": {
+                      "listId": "c61d1892-ca82-4f53-b16f-6bb8a379e2b2",
+                      "listItemId": "1027",
+                      "listItemUniqueId": "E320AFEB-AD73-46A2-83D7-985FAA4B206D"
+                  }
                 },
                 "fileSystemInfo": {
                   "createdDateTime": "2019-06-10T06:37:43Z",
@@ -343,7 +349,7 @@ Content-type: application/json
 
 ## <a name="example-5-use-filters-in-search-queries"></a>Пример 5: использование фильтров в поисковых запросах
 
-KQL можно использовать в условиях поиска запросов для OneDrive и SharePoint. Пример:
+KQL можно использовать в условиях поиска запросов для OneDrive и SharePoint. Примеры:
 
 - `"query": "contoso filetype:docx OR filetype:doc"` ограничивает область запроса документами Word.
 - `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` ограничивает область запроса определенной папкой на сайте.
@@ -410,10 +416,11 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.listItem",
                 "createdDateTime": "2019-06-10T06:37:43Z",
                 "webUrl": "https://contoso.sharepoint.com/sites/contoso-team/contoso-designs.docx",
+                "sharepointIds": {
+                    "listId": "33498de0-d695-4d23-ac26-e1bf95a3206e",
+                    "listItemId": "13"
+                },
                 "parentReference": {
-                  "sharepointIds":{
-                    "listId":"da61a2b0-4120-4a3f-812b-0fc0d79bf16b"  
-                  },
                   "siteId": "m365x231305.sharepoint.com,5724d91f-650c-4810-83cc-61a8818917d6,c3ba25dc-2c9f-48cb-83be-74cdf68ea5a0"
                 },
                 "fields": {

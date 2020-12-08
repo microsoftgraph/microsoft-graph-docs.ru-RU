@@ -5,14 +5,16 @@ localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: resourcePageType
-ms.openlocfilehash: 8fac6cfa8de0533c936c9d8d03a6173f06d0886f
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 12d2901ff6a61213affd14d681c0ec7b6a74470c
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48404793"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597405"
 ---
 # <a name="ediscoverycase-resource-type"></a>Тип ресурса Едисковерикасе
+
+Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,26 +24,32 @@ ms.locfileid: "48404793"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список](../api/ediscoverycase-list.md) | Коллекция [едисковерикасе](ediscoverycase.md) | Получение списка дел eDiscovery.|
-| [получение](../api/ediscoverycase-get.md); | [ediscoveryCase](ediscoverycase.md) | Считывание свойств дел eDiscovery. |
-| [создание](../api/ediscoverycase-post.md); | [ediscoveryCase](ediscoverycase.md) | Создание нового **едисковерикасе** путем публикации в коллекции вариантов. |
-| [обновление](../api/ediscoverycase-update.md). | [ediscoveryCase](ediscoverycase.md) | Обновление случая обнаружения электронных данных. |
-| [удаление](../api/ediscoverycase-delete.md); | Нет | Удаление случая обнаружения электронных данных. |
+| [Список Едисковерикасес](../api/ediscoverycase-list.md)          | Коллекция [едисковерикасе](ediscoverycase.md)   | Получение списка дел eDiscovery.|
+| [Получение Едисковерикасе](../api/ediscoverycase-get.md)            | [ediscoveryCase](ediscoverycase.md)               | Считывание свойств дел eDiscovery. |
+| [Создание Едисковерикасе](../api/ediscoverycase-post.md)        | [ediscoveryCase](ediscoverycase.md)               | Создание нового **едисковерикасе** путем публикации в коллекции вариантов. |
+| [Обновление Едисковерикасе](../api/ediscoverycase-update.md)      | [ediscoveryCase](ediscoverycase.md)               | Обновление случая обнаружения электронных данных. |
+| [Удаление Едисковерикасе](../api/ediscoverycase-delete.md)      | Нет                                              | Удаление случая обнаружения электронных данных. |
+| [Закрыть Едисковерикасе](../api/ediscoverycase-close.md)        | Нет                                              | Закройте дело обнаружения электронных данных. |
+| [Повторное открытие Едисковерикасе](../api/ediscoverycase-reopen.md)      | Нет                                              | Повторное открытие закрытого случая обнаружения электронных данных.|
+| [Список custodians](../api/custodian-get.md)   | Коллекция [хранитель](../resources/custodian.md) |Получение ресурсов хранитель из свойства навигации custodians.|
+| [Создание custodians](../api/ediscoverycase-post-custodians.md)  | [Хранитель](../resources/custodian.md)           |Создание нового объекта хранитель.|
+| [Список Ревиевсетс](../api/reviewset-list.md)   | Коллекция [reviewing](../resources/reviewset.md) | Получение ресурсов перепредставления из свойства навигации Ревиевсетс.|
+| [Создание Ревиевсетс](../api/reviewset-post.md)  | [reviewSet](../resources/reviewset.md)           | Создайте новый объект Review.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |клоседби|[identitySet](/graph/api/resources/identityset)|Пользователь, который закрыл обращение.|
-|closedDateTime|DateTimeOffset|Дата и время закрытия обращения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|closedDateTime|DateTimeOffset|Дата и время закрытия обращения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |createdBy|[identitySet](/graph/api/resources/identityset)|Пользователь, создавший обращение.|
-|createdDateTime|DateTimeOffset|Дата и время создания объекта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|Дата и время создания объекта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |description|String|Описание варианта.|
 |displayName|String|Имя дела.|
 |externalId|String|Номер внешнего обращения для ссылки на клиента.|
 |id|String| Идентификатор для случая обнаружения электронных данных. Только для чтения. |
 |lastModifiedBy|[identitySet](/graph/api/resources/identityset)|Последний пользователь, изменившего объект.|
-|lastModifiedDateTime|DateTimeOffset| Дата и время последнего изменения обращения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|lastModifiedDateTime|DateTimeOffset| Дата и время последнего изменения обращения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |status|String| Состояние обращения. Возможные значения: `unknown` , `active` , `pendingDelete` , `closing` , `closed` и `closedWithError` . Дополнительные сведения см. в приведенной ниже таблице.|
 
 ### <a name="casestatus-values"></a>значения Касестатус
@@ -59,7 +67,8 @@ ms.locfileid: "48404793"
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|Обзор наборов|Коллекция [reviewing](reviewset.md)| Коллекция наборов проверки в случае. Только для чтения. Допускается значение null. |
+|custodians|Коллекция [хранитель](../resources/custodian.md)| Сотрудники Организации, которые могут обладать данными, относящимися к обращению. |
+|ревиевсетс|Коллекция [reviewing](reviewset.md)| Коллекция наборов проверки в случае. Только для чтения. Допускается значение null. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -76,17 +85,21 @@ ms.locfileid: "48404793"
 
 ```json
 {
-  "closedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "closedDateTime": "String (timestamp)",
-  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "createdDateTime": "String (timestamp)",
+  "@odata.type": "#microsoft.graph.ediscoveryCase",
   "description": "String",
-  "displayName": "String",
+  "lastModifiedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "lastModifiedDateTime": "String (timestamp)",
+  "status": "String",
+  "closedBy": {
+    "@odata.type": "microsoft.graph.identitySet"
+  },
+  "closedDateTime": "String (timestamp)",
   "externalId": "String",
   "id": "String (identifier)",
-  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "lastModifiedDateTime": "String (timestamp)",
-  "status": "string"
+  "displayName": "String",
+  "createdDateTime": "String (timestamp)"
 }
 ```
 

@@ -5,14 +5,14 @@ localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4fecc2cb7d637c00f0f3f1b63d0080514639ed07
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ca8559d3ecf7ba4110a7e2871f8e6acf545d2906
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026364"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49581154"
 ---
-# <a name="requestomanager-complex-type"></a>сложный тип Рекуестоманажер
+# <a name="requestormanager-complex-type"></a>сложный тип Рекуесторманажер
 
 Пространство имен: microsoft.graph
 
@@ -26,7 +26,9 @@ ms.locfileid: "48026364"
 
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| Создание резервной копии | Boolean | Для руководителя на этапе утверждения указывает, является ли руководитель резервным утверждающим. |
+| Создание резервной копии | Логический | Для руководителя на этапе утверждения указывает, является ли руководитель резервным утверждающим. |
+|манажерлевел | Int32 | Иерархический уровень руководителя по отношению к запрашивающему. Например, непосредственный менеджер запрашивающего Манажерлевел должен иметь значение 1, в то время как руководитель запрашивающего менеджера будет иметь Манажерлевел 2. Значение по умолчанию для Манажерлевел — 1. Возможные значения этого свойства находятся в диапазоне от 1 до 2. |
+
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -43,7 +45,8 @@ ms.locfileid: "48026364"
 
 ```json
 {
-  "isBackup": false
+  "isBackup": false,
+  "managerLevel": 1
 }
 ```
 

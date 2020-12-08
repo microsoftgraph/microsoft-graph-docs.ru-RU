@@ -1,0 +1,82 @@
+---
+title: Удаление Ситесаурце
+description: Удаление объекта Ситесаурце.
+author: mahage-msft
+localization_priority: Normal
+ms.prod: compliance
+doc_type: apiPageType
+ms.openlocfilehash: 26e8795582777e6a1e01d60ea25b902330af30aa
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597735"
+---
+# <a name="delete-sitesource"></a>Удаление Ситесаурце
+
+Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Удаление объекта [ситесаурце](../resources/sitesource.md) .
+
+## <a name="permissions"></a>Разрешения
+
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|:---|:---|
+|Делегированные (рабочая или учебная учетная запись)|User.Read|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений|Не поддерживается.|
+
+## <a name="http-request"></a>HTTP-запрос
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
+``` http
+DELETE /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/siteSources/{siteSourceId}
+```
+
+## <a name="request-headers"></a>Заголовки запросов
+
+|Имя|Описание|
+|:---|:---|
+|Авторизация|Bearer {токен}. Обязательный.|
+
+## <a name="request-body"></a>Текст запроса
+
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Отклик
+
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+
+## <a name="examples"></a>Примеры
+
+### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "delete_sitesource"
+}
+-->
+
+``` http
+DELETE https://graph.microsoft.com/beta/compliance/ediscovery/cases/4c8f8f70-7785-4bd4-b296-c98376a2c5e1/custodians/2192ca408ea2410eba3bec8ae873be6b/siteSources/38304445-3741-3333-4233-344238454333
+```
+
+### <a name="response"></a>Отклик
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
+```

@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e6316f7c3aad0fc90e258d145b57942395265ce7
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 88d08c8e6e0222c339c99db9cab9243f9c48c1f3
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563452"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597268"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса Chat
 
@@ -31,6 +31,7 @@ ms.locfileid: "49563452"
 |[Список сообщений в чате](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в индивидуальном или групповом чате. | 
 |[Получение сообщения в чате](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. | 
 |[Получение разговора между пользователем и приложением](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Получение одного сеанса разговора между пользователем и приложением |
+|[Получение всех сообщений чата](../api/chats-getallmessages.md)| Коллекция [чата](chat.md)| Получение сообщений от всех чатов, в которых пользователь является участником, в том числе беседы в одном месте, групповых чатов и сеансов собраний. |
 
 >**Примечание:** При использовании разрешений приложений необходимо знать, как вы будете получать идентификатор чата. Так как перечисление бесед с разрешениями приложений не поддерживается, не все сценарии возможны. Можно получить идентификаторы чата с делегированными разрешениями и из [уведомлений об изменениях для/ЧАТС/жеталлмессажес](../api/subscription-post-subscriptions.md) с разрешениями приложений.
 

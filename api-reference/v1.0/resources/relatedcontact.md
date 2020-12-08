@@ -5,14 +5,14 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: adea95729dd4e6558885223245a7225811f14677
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f1dd62a2727ec2cbd6a4044b84105d739bbf9c93
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48002949"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597384"
 ---
-# <a name="realtedcontact-resource-type"></a>Тип ресурса Реалтедконтакт
+# <a name="relatedcontact-resource-type"></a>Тип ресурса Релатедконтакт
 
 Пространство имен: microsoft.graph
 
@@ -27,7 +27,7 @@ ms.locfileid: "48002949"
 | emailAddress  | String                | Основной адрес электронной почты контакта.                                                                                                     |
 | mobilePhone   | String                | Номер мобильного телефона контакта.                                                                                                       |
 | Отношение  | `contactRelationship` | Отношение к пользователю. Возможные значения:,,,,,, `parent` `relative` `aide` `doctor` `guardian` `child` `other` , `unknownFutureValue` . |
-| акцессконсент | Boolean               | Указывает, было ли пользователь отправлен для доступа к данным учащихся.                                                                     |
+| акцессконсент | Логический               | Указывает, было ли пользователь отправлен для доступа к данным учащихся.                                                                     |
 
 ## <a name="json-representation"></a>Представление JSON
 

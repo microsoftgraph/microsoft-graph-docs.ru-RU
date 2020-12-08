@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 65c9508ee1a83ca807b53504869e4d10d5d27f8d
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1b0a73a42948871eeae4cd4b31bc993209b7eeaa
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953541"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49581126"
 ---
 # <a name="create-b2cidentityuserflow"></a>Создание b2cIdentityUserFlow
 
@@ -26,9 +26,9 @@ ms.locfileid: "48953541"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|IdentityUserFlow.ReadWrite.All|
+|Делегированное (рабочая или учебная учетная запись)|Идентитюсерфлов. ReadWrite. ALL|
+|Делегированное (личная учетная запись Майкрософт)| Не поддерживается.|
+|Приложение|Идентитюсерфлов. ReadWrite. ALL|
 
 Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
 
@@ -57,9 +57,9 @@ POST /identity/b2cUserFlows
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
 |id|String|Обязательный. Имя пользовательского потока. Имя будет предваряться `B2C_1` после создания.|
-|userFlowType|String|Обязательный. Тип создаваемого пользовательского процесса. Поддерживаемые значения для **userFlowType** :<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
-|userFlowTypeVersion|С плавающей запятой|Обязательный. Версия пользовательского потока.|
-|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательное свойство. Поставщики удостоверений, которые необходимо включить в пользовательский блок.|
+|userFlowType|String|Обязательный. Тип создаваемого пользовательского процесса. Поддерживаемые значения для **userFlowType**:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
+|усерфловтипеверсион|С плавающей запятой|Обязательно. Версия пользовательского потока.|
+|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательный параметр. Поставщики удостоверений, которые необходимо включить в пользовательский блок.|
 
 ## <a name="response"></a>Отклик
 
@@ -113,7 +113,7 @@ Content-length: 154
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -188,7 +188,7 @@ Content-length: 154
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
