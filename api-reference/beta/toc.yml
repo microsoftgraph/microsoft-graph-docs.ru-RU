@@ -1451,6 +1451,21 @@ items:
                     href: api/ediscoverycase-update.md
                   - name: Delete
                     href: api/ediscoverycase-delete.md
+              - name: Custodian
+                href: resources/custodian.md
+                items:
+                  - name: Список
+                    href: api/ediscoverycase-list-custodians.md
+                  - name: Создание
+                    href: api/ediscoverycase-post-custodians.md
+                  - name: Получение
+                    href: api/custodian-get.md
+                  - name: Обновление
+                    href: api/custodian-update.md
+                  - name: Активация
+                    href: api/custodian-activate.md
+                  - name: Выпуск
+                    href: api/custodian-release.md
               - name: набор проверки обнаружения электронных данных
                 href: resources/reviewset.md
                 items:
@@ -1473,6 +1488,39 @@ items:
                     href: api/reviewsetquery-update.md
                   - name: Delete
                     href: api/reviewsetquery-delete.md
+              - name: Источник сайта
+                href: resources/sitesource.md
+                items:
+                  - name: Список
+                    href: api/custodian-list-sitesources.md
+                  - name: Создание
+                    href: api/custodian-post-sitesources.md
+                  - name: Получение
+                    href: api/sitesource-get.md
+                  - name: Удаление
+                    href: api/sitesource-delete.md
+              - name: Источник единой группы
+                href: resources/unifiedgroupsource.md
+                items:
+                  - name: Список
+                    href: api/custodian-list-unifiedgroupsources.md
+                  - name: Создание
+                    href: api/custodian-post-unifiedgroupsources.md
+                  - name: Получение
+                    href: api/unifiedgroupsource-get.md
+                  - name: Удаление
+                    href: api/unifiedgroupsource-delete.md
+              - name: Источник пользователя
+                href: resources/usersource.md
+                items:
+                  - name: Список
+                    href: api/custodian-list-usersources.md
+                  - name: Создание
+                    href: api/custodian-post-usersources.md
+                  - name: Получение
+                    href: api/usersource-get.md
+                  - name: Удаление
+                    href: api/usersource-delete.md
       - name: Взаимодействие с разными устройствами
         displayName: Project Rome
         items:
@@ -12572,6 +12620,8 @@ items:
                 href: api/channel-post-message.md
               - name: Ответ на сообщение
                 href: api/channel-post-messagereply.md
+              - name: Получение сообщений по всем каналам
+                href: api/channels-getallmessages.md
           - name: Чат
             href: resources/chat.md
             items:
@@ -12610,6 +12660,8 @@ items:
                 href: api/channel-post-messagereply.md
               - name: Обновление сообщения
                 href: api/chatmessage-update.md
+              - name: Получение всех сообщений чата
+                href: api/chats-getallmessages.md
               - name: Список размещенного контента
                 href: api/chatmessage-list-chatmessagehostedcontents.md
               - name: Получение размещенного контента
