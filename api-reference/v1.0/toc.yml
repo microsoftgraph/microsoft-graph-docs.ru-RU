@@ -410,13 +410,13 @@ items:
               - name: Установленное приложение
                 href: resources/teamsappinstallation.md
               - name: Добавление приложения для пользователя
-                href: api/userteamwork-add-installedapps.md
+                href: api/userteamwork-post-installedapps.md
               - name: Список приложений для пользователя
                 href: api/userteamwork-list-installedapps.md
               - name: Получает установленное приложение для пользователя
                 href: api/userteamwork-get-installedapps.md
               - name: Обновление установленного приложения для пользователя
-                href: api/userteamwork-upgrade-installedapps.md
+                href: api/userteamwork-teamsappinstallation-upgrade.md
               - name: Удаление приложения для пользователя
                 href: api/userteamwork-delete-installedapps.md
               - name: Получение разговора между пользователем и приложением
@@ -5091,7 +5091,7 @@ items:
               - name: Публикация приложения в каталоге
                 href: api/teamsapp-publish.md
               - name: Список приложений в каталоге
-                href: api/teamsapp-list.md
+                href: api/appcatalogs-list-teamsapps.md
               - name: Обновление приложения в каталоге
                 href: api/teamsapp-update.md
               - name: Удаление приложения из каталога
@@ -5101,40 +5101,40 @@ items:
               - name: Установленное приложение
                 href: resources/teamsappinstallation.md
               - name: Список приложений в команде
-                href: api/teamsappinstallation-list.md
+                href: api/team-list-installedapps.md
               - name: 'Получение приложения, установленного в команде'
                 href: api/team-get-installedapps.md
               - name: Добавление приложения в команду
-                href: api/teamsappinstallation-add.md
+                href: api/team-post-installedapps.md
               - name: Удаление приложения из группы
-                href: api/teamsappinstallation-delete.md
+                href: api/team-delete-installedapps.md
               - name: Обновление установленного приложения для команды
-                href: api/teamsappinstallation-upgrade.md
+                href: api/team-teamsappinstallation-upgrade.md
               - name: Список приложений для пользователя
                 href: api/userteamwork-list-installedapps.md
               - name: Получает установленное приложение для пользователя
                 href: api/userteamwork-get-installedapps.md
               - name: Добавление приложения для пользователя
-                href: api/userteamwork-add-installedapps.md
+                href: api/userteamwork-post-installedapps.md
               - name: Удаление приложения для пользователя
                 href: api/userteamwork-delete-installedapps.md
               - name: Обновление установленного приложения для пользователя
-                href: api/userteamwork-upgrade-installedapps.md
+                href: api/userteamwork-teamsappinstallation-upgrade.md
               - name: Получение разговора между пользователем и приложением
                 href: api/userscopeteamsappinstallation-get-chat.md
           - name: Tab
             href: resources/teamstab.md
             items:
-              - name: Список вкладок
-                href: api/teamstab-list.md
-              - name: Получение вкладки
-                href: api/teamstab-get.md
-              - name: Обновление вкладки
-                href: api/teamstab-update.md
-              - name: Удаление вкладки
-                href: api/teamstab-delete.md
-              - name: Добавление вкладки
-                href: api/teamstab-add.md
+              - name: Вкладки списка в канале
+                href: api/channel-list-tabs.md
+              - name: Получение вкладки в канале
+                href: api/channel-get-tabs.md
+              - name: Добавление вкладки в каннел
+                href: api/channel-post-tabs.md
+              - name: Вкладка "обновление" в канале
+                href: api/channel-patch-tabs.md
+              - name: Удаление вкладки из канала
+                href: api/channel-delete-tabs.md
           - name: Календарь
             href: resources/event.md
             items:
