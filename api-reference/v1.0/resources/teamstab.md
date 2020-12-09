@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5209670c004da2b58d41444c0bfa31f12891b8d2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 9d81c9f21d04690bcaa7360fb83595a13c7be156
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48074848"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49607030"
 ---
 # <a name="teamstab-resource-type"></a>Тип ресурса teamsTab
 
@@ -24,11 +24,11 @@ TeamsTab — это [вкладка](../resources/teamstab.md) , которая 
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Перечисление вкладок](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Перечисление вкладок, закрепленных в канале.|
-|[Получение вкладки](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Чтение вкладок, закрепленных в канале.|
-|[Добавление вкладки](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Добавление (закрепление) вкладки в канал.|
-|[Удаление вкладки](../api/teamstab-delete.md) | Нет | Удаление (открепление) вкладки из канала.|
-|[Обновление вкладки](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Обновление свойств вкладки.|
+|[Перечисление вкладок](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | Перечисление вкладок, закрепленных в канале.|
+|[Получение вкладки](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Чтение вкладок, закрепленных в канале.|
+|[Добавление вкладки](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | Добавление (закрепление) вкладки в канал.|
+|[Обновление вкладки](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | Обновление свойств вкладки.|
+|[Удаление вкладки](../api/channel-delete-tabs.md) | Нет | Удаление (открепление) вкладки из канала.|
 
 
 ## <a name="properties"></a>Свойства

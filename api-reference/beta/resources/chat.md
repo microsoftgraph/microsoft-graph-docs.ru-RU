@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 88d08c8e6e0222c339c99db9cab9243f9c48c1f3
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: f1745f987577d94f14f81d79a9f8afb89c1ab793
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597268"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606939"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса Chat
 
@@ -32,6 +32,16 @@ ms.locfileid: "49597268"
 |[Получение сообщения в чате](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. | 
 |[Получение разговора между пользователем и приложением](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Получение одного сеанса разговора между пользователем и приложением |
 |[Получение всех сообщений чата](../api/chats-getallmessages.md)| Коллекция [чата](chat.md)| Получение сообщений от всех чатов, в которых пользователь является участником, в том числе беседы в одном месте, групповых чатов и сеансов собраний. |
+|[Перечисление приложений в чате](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) collection | Список приложений, установленных в чате.|
+|[Получение приложения в чате](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Получение определенного приложения, установленного в чате.|
+|[Добавление приложения в чат](../api/chat-post-installedapps.md) | | Добавляет (устанавливает) приложение в чат.|
+|[Обновление приложения в чате](../api/chat-teamsappinstallation-upgrade.md) | Нет | Обновление до последней версии приложения, установленного в чате.|
+|[Удаление приложения из чата](../api/chat-delete-installedapps.md) | Нет | Удаление (удаление) приложения из чата.|
+|[Список вкладок в чате](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | Список вкладок, закрепленных в чате.|
+|[Получение вкладки в чате](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Получение определенной вкладки, закрепленной в чате.|
+|[Добавление вкладки в чат](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Добавление вкладки в чат (ПИН-код).|
+|[Вкладка "обновление" в чате](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Обновляет свойства вкладки в чате.|
+|[Удаление вкладки из чата](../api/chat-delete-tabs.md) | Нет | Удаление (открепление) вкладки из чата.|
 
 >**Примечание:** При использовании разрешений приложений необходимо знать, как вы будете получать идентификатор чата. Так как перечисление бесед с разрешениями приложений не поддерживается, не все сценарии возможны. Можно получить идентификаторы чата с делегированными разрешениями и из [уведомлений об изменениях для/ЧАТС/жеталлмессажес](../api/subscription-post-subscriptions.md) с разрешениями приложений.
 

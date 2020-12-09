@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: de66f6454cfe8025cdd0789415dfa04b8dcfab40
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 82a5c9e78e27a929919744494f82758bec9448bc
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975252"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49523606"
 ---
 # <a name="create-team"></a>Создание команды
 
@@ -26,8 +26,8 @@ ms.locfileid: "48975252"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
-| Делегированное (рабочая или учебная учетная запись)     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                              |
+| Делегированные (рабочая или учебная учетная запись)     | Team.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                              |
 | Для приложений                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -140,7 +140,7 @@ Content-Type: application/json
          "roles":[
             "owner"
          ],
-         "userId":"0040b377-61d8-43db-94f5-81374122dc7e"
+         "user@odata.bind":"https://graph.microsoft.com/beta/users('0040b377-61d8-43db-94f5-81374122dc7e')"
       }
    ]
 }
@@ -311,7 +311,7 @@ Content-Length: 0
 Обратите внимание на некоторые моменты, связанные с этим вызовом:
 
 * Чтобы создать команду, в группе, из которой она создается, должен быть хотя бы один владелец.
-* Созданная команда всегда наследует отображаемое имя, параметры видимости, специализацию и членов группы. Поэтому, когда выполняется этот вызов с использованием свойства **group@odata.bind** , включение свойств команды **displayName** , **visibility** , **specialization** или **members@odata.bind** возвращает ошибку.
+* Созданная команда всегда наследует отображаемое имя, параметры видимости, специализацию и членов группы. Поэтому, когда выполняется этот вызов с использованием свойства **group@odata.bind**, включение свойств команды **displayName**, **visibility**, **specialization** или **members@odata.bind** возвращает ошибку.
 * Если группа создана менее 15 минут назад, вызов метода "Создание команды" может завершиться ошибкой с кодом 404 из-за задержек репликации. Рекомендуется повторить вызов метода "Создание команды" три раза с 10-секундной задержкой между вызовами.
 
 #### <a name="request"></a>Запрос

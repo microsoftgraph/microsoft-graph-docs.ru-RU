@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 0d15f65273504b3b7577c875fec69c5a212a8c76
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 1c872d41ebc09978d9dc54ac01d82cb33258541d
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563753"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49607037"
 ---
 # <a name="teamsappinstallation-resource-type"></a>Тип ресурса Теамсаппинсталлатион
 
@@ -18,26 +18,30 @@ ms.locfileid: "49563753"
 
 Представляет [teamsApp](teamsapp.md) , установленный в [команде](team.md) или персональную область [пользователя](user.md). Все боты, которые входят в состав приложения, станут частью любой рабочей группы или пользователя, к которому добавляется приложение.
 
+> [!NOTE]
+> `id`Ресурс **теамсаппинсталлатион** имеет не то же значение, что и `id` связанный ресурс **teamsApp** .
+
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список приложений, установленных в Team](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsappinstallation.md) collection | Список приложений, установленных в команде.|
-|[Получение приложения, установленного в команде](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Список приложений, установленных в команде.|
-|[Добавление приложения в команду](../api/teamsappinstallation-add.md) | Нет | Добавляет (устанавливает) приложение в команду.|
-|[Удаление приложения из группы](../api/teamsappinstallation-delete.md) | Нет | Удаляет приложение из команды.|
-|[Обновление приложения, установленного в команде](../api/teamsappinstallation-upgrade.md) | Нет | Обновление до последней версии приложения, установленного в команде.|
-|[Перечисление приложений, установленных для пользователя](../api/userteamwork-list-installedapps.md)| Коллекция [усерскопетеамсаппинсталлатион](userscopeteamsappinstallation.md) | Список приложений, установленных в личной области пользователя. |
-|[Получает установленное приложение для пользователя](../api/userteamwork-get-installedapps.md)| [усерскопетеамсаппинсталлатион](userscopeteamsappinstallation.md) | Перечисление указанного приложения, установленного в личной области пользователя. |
-|[Добавление приложения для пользователя](../api/userteamwork-add-installedapps.md) | Нет | Добавляет (устанавливает) приложение в личную область пользователя. |
-|[Удаление приложения для пользователя](../api/userteamwork-delete-installedapps.md) | Нет | Удаляет приложение из персональной области пользователя. |
-|[Обновление приложения, установленного для пользователя](../api/userteamwork-upgrade-installedapps.md) | Нет | Обновление до последней версии приложения, установленного в личной области пользователя.|
+|[Список приложений, установленных в Team](../api/team-list-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) collection | Список приложений, установленных в команде.|
+|[Получение приложения, установленного в команде](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Получение указанного приложения, установленного в команде.|
+|[Добавление приложения в команду](../api/team-post-installedapps.md) |Нет | Добавление приложения в группу (установка).|
+|[Удаление приложения из группы](../api/team-delete-installedapps.md) | Нет | Удаление приложения из команды (удаление).|
+|[Обновление приложения, установленного в команде](../api/team-teamsappinstallation-upgrade.md) | Нет | Обновите приложение, установленное в команде, до последней версии.|
+|[Перечисление приложений, установленных для пользователя](../api/userteamwork-list-installedapps.md) | Коллекция [усерскопетеамсаппинсталлатион](userscopeteamsappinstallation.md) | Список приложений, установленных в личной области пользователя.|
+|[Получение приложения, установленного для пользователя](../api/userteamwork-get-installedapps.md)| [усерскопетеамсаппинсталлатион](userscopeteamsappinstallation.md) | Получение указанного приложения, установленного в личной области пользователя. |
+|[Добавление приложения для пользователя](../api/userteamwork-post-installedapps.md) | | Добавление (установка) приложения в личной области пользователя.|
+|[Удаление приложения для пользователя](../api/userteamwork-delete-installedapps.md) | Нет | Удалить (удалить) приложение в личной области пользователя.|
+|[Обновление приложения, установленного для пользователя](../api/userteamwork-teamsappinstallation-upgrade.md) | Нет | Обновление приложения, установленного в личной области пользователя, до последней версии.|
+
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | Уникальный идентификатор (а не идентификаторы Teams). |
+| id                  | string   | Уникальный идентификатор (не идентификатор приложения Teams). |
 
 ## <a name="relationships"></a>Связи
 

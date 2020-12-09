@@ -5,12 +5,12 @@ author: kenwith
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f9efbebb2f0756534fdac6085f1c77428e66e0b9
-ms.sourcegitcommit: 5b0b254cc6d8224b3126331eeff6bd0d903e9060
+ms.openlocfilehash: 2596edb4e88638e18b67a0a95137743ea38b290c
+ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48945117"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49563942"
 ---
 # <a name="automate-saml-based-sso-app-configuration-with-microsoft-graph-api"></a>Автоматизация настройки единого входа на основе SAML для приложений с помощью API Microsoft Graph
 
@@ -213,19 +213,19 @@ Content-type: application/json
 
 Из отклика на предыдущий вызов извлеките и сохраните идентификаторы объекта для приложения и субъекта-службы.
 
-```
-"application": {
-        "objectId": "cbc071a6-0fa5-4859-8g55-e983ef63df63"
-}
-"servicePrincipal": {
-        "objectId": "f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
+```json
+"application":{
+  "objectId":"cbc071a6-0fa5-4859-8g55-e983ef63df63"
+},
+"servicePrincipal":{
+  "objectId":"f47a6776-bca7-4f2e-bc6c-eec59d058e3e"
 }
 ```
 ### <a name="set-single-sign-on-mode"></a>Настройка режима единого входа
 
 В этом примере вы настроите режим единого входа `saml` для [типа ресурса servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0). Также вы можете настроить другие свойства единого входа SAML: `notificationEmailAddresses`, `loginUrl` и `samlSingleSignOnSettings.relayState`.
 
-Прежде чем этот запрос заработает, необходимо предоставить согласие на вкладке **Изменить разрешения** в песочнице Graph. Кроме того, используйте идентификатор **servicePrincipal** , полученный ранее.
+Прежде чем этот запрос заработает, необходимо предоставить согласие на вкладке **Изменить разрешения** в песочнице Graph. Кроме того, используйте идентификатор **servicePrincipal**, полученный ранее.
 
 #### <a name="request"></a>Запрос
 
@@ -274,7 +274,7 @@ HTTP/1.1 204
 
 Настройте идентификатор и URL-адреса ответа для AWS в объекте приложения.
 
-Используйте идентификатор **application** , полученный ранее.
+Используйте идентификатор **application**, полученный ранее.
 
 #### <a name="request"></a>Запрос
 

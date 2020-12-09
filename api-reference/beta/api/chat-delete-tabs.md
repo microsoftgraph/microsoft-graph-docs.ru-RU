@@ -1,87 +1,89 @@
 ---
-title: Удаление приложения для пользователя
-description: Удаление приложения из личной области указанного пользователя.
-author: clearab
-doc_type: apiPageType
+title: Удаление вкладки из чата
+description: 'Удаление (открепление) вкладки из указанного чата. '
+author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c27b1fde186141d7eadc606a3fbd19dd16fae92c
+doc_type: apiPageType
+ms.openlocfilehash: c83e8c9d1c501b27c46a6df3958008fb4447c06b
 ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607198"
+ms.locfileid: "49607620"
 ---
-# <a name="uninstall-app-for-user"></a>Удаление приложения для пользователя
+# <a name="delete-tab-from-chat"></a>Удаление вкладки из чата
 
 Пространство имен: microsoft.graph
 
-Удаление [приложения](../resources/teamsappinstallation.md) из личной области указанного [пользователя](../resources/user.md).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Удаление (открепление) вкладки из указанного [чата](../resources/chat.md). 
 
 ## <a name="permissions"></a>Разрешения
-
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Теамсаппинсталлатион. Реадвритеселффорусер, Теамсаппинсталлатион. Реадвритефорусер |
+|Делегированное (рабочая или учебная учетная запись) | TeamsTab. Реадвритефорчат, TeamsTab. ReadWrite. ALL |
 |Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Теамсаппинсталлатион. Реадвритеселффорусер. ALL, Теамсаппинсталлатион. Реадвритефорусер. ALL |
+|Приложение | TeamsTab. Реадвритефорчат, TeamsTab. ReadWrite. ALL |
+
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/{user-id}/teamwork/installedApps/{app-installation-id}
+DELETE /chats/{chat-id}/tabs/{tab-id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
-
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-
 ### <a name="request"></a>Запрос
-
 Ниже приведен пример запроса.
-
 <!-- {
   "blockType": "request",
-  "name": "user_delete_teamsApp"
+  "name": "delete_tab_in_chat"
 }-->
-
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps/NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk
+DELETE https://graph.microsoft.com/beta/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/tabs/d731fca0-0f14-4537-971a-0ef9101ff13d
 ```
-
 ### <a name="response"></a>Отклик
-
-Ниже приведен пример ответа.
+Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
-} -->
+}
+-->
 
 ```http
 HTTP/1.1 204 No Content
 ```
+## <a name="see-also"></a>См. также
+
+- [Удаление вкладки из канала](channel-delete-tabs.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
-  "description": "User delete teamsAppInstallations,
+  "description": "Delete tab from chat",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
+
+

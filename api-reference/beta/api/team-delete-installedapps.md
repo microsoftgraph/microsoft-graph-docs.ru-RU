@@ -1,22 +1,24 @@
 ---
-title: Удаление приложения для пользователя
-description: Удаление приложения из личной области указанного пользователя.
+title: Удаление приложения из группы
+description: Удаляет приложение из указанной команды.
 author: clearab
-doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c27b1fde186141d7eadc606a3fbd19dd16fae92c
+doc_type: apiPageType
+ms.openlocfilehash: 08b307422f93fa43c7d99db7fd9264c6596564c2
 ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607198"
+ms.locfileid: "49607745"
 ---
-# <a name="uninstall-app-for-user"></a>Удаление приложения для пользователя
+# <a name="remove-app-from-team"></a>Удаление приложения из группы
 
 Пространство имен: microsoft.graph
 
-Удаление [приложения](../resources/teamsappinstallation.md) из личной области указанного [пользователя](../resources/user.md).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Удаляет [приложение](../resources/teamsappinstallation.md) из указанной [команды](../resources/team.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,14 +26,14 @@ ms.locfileid: "49607198"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Теамсаппинсталлатион. Реадвритеселффорусер, Теамсаппинсталлатион. Реадвритефорусер |
+|Делегированное (рабочая или учебная учетная запись) | Теамсаппинсталлатион. Реадвритефортеам, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 |Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Теамсаппинсталлатион. Реадвритеселффорусер. ALL, Теамсаппинсталлатион. Реадвритефорусер. ALL |
+|Приложение | Теамсаппинсталлатион. Реадвритефортеам. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/{user-id}/teamwork/installedApps/{app-installation-id}
+DELETE /teams/{team-id}/installedApps/{app-installation-id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -46,7 +48,7 @@ DELETE /users/{user-id}/teamwork/installedApps/{app-installation-id}
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
 
@@ -56,11 +58,10 @@ DELETE /users/{user-id}/teamwork/installedApps/{app-installation-id}
 
 <!-- {
   "blockType": "request",
-  "name": "user_delete_teamsApp"
+  "name": "uninstall_teamsapp_in_team"
 }-->
-
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps/NWI2NDk4MzQtNzQxMi00Y2NlLTllNjktMTc2ZTk1YTM5NGY1IyNhNmI2MzM2NS0zMWE0LTRmNDMtOTJlYy03MTBiNzE1NTdhZjk
+DELETE https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps/NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwMDAwMTAxNi1kZTA1LTQ5MmUtOTEwNi00ODI4ZmM4YTg2ODc=
 ```
 
 ### <a name="response"></a>Отклик
@@ -69,19 +70,24 @@ DELETE https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394
 
 <!-- {
   "blockType": "response",
+  "name": "uninstall_teamsapp_in_team",
   "truncated": true
 } -->
-
 ```http
 HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
-  "description": "User delete teamsAppInstallations,
+  "description": "Remove app from team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
+
+

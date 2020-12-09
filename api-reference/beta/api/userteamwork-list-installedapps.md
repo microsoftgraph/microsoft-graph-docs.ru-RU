@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 41367caeeca0b323a774d21c63d4431bf21e1201
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 4a1efdf9feefca9c1ddda65db78e7f141a686ad3
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49564216"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49607205"
 ---
 # <a name="list-apps-installed-for-user"></a>Перечисление приложений, установленных для пользователя
 
@@ -20,27 +20,30 @@ ms.locfileid: "49564216"
 
 Получение списка [приложений](../resources/teamsappinstallation.md) , установленных в личной области указанного [пользователя](../resources/user.md).
 
+> [!NOTE]
+> `id`Ресурс **теамсаппинсталлатион** имеет не то же значение, что и `id` связанный ресурс **teamsApp** .
+
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Теамсаппинсталлатион. Реадфорусер, Теамсаппинсталлатион. Реадвритефорусер |
+|Делегированное (рабочая или учебная учетная запись) | Теамсаппинсталлатион. Реадфорусер, Теамсаппинсталлатион. Реадвритеселффорусер, Теамсаппинсталлатион. ReadWriteForUser |
 |Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Теамсаппинсталлатион. Реадфорусер. ALL, Теамсаппинсталлатион. Реадвритефорусер. ALL |
+|Приложение | Теамсаппинсталлатион. Реадфорусер. ALL, Теамсаппинсталлатион. Реадвритеселффорусер. ALL, Теамсаппинсталлатион. ReadWriteForUser. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{id}/teamwork/installedApps
+GET /users/{user-id}/teamwork/installedApps
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) $filter, $select и $expand для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$filter`, `$select` и `$expand` для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -121,7 +124,7 @@ Content-type: application/json
 
 Ниже приведен пример запроса.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "user_list_teamsApps_details"
 }-->
 ```http
@@ -177,6 +180,67 @@ Content-type: application/json
   ]
 }
 ```
+### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a>Пример 3: получение ресурса установки приложения на основе идентификатора манифеста связанного приложения
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса. В этом примере идентификатор манифеста приложения Teams — "cf1ba4c7-f94e-4d80-ba90-5594b641a8ee".
+<!-- {
+  "blockType": "request",
+  "name": "user_list_teamsApps_details_filter"
+}-->
+```http
+GET https://graph.microsoft.com/beta/users/97a5a533-833d-494b-b543-c0afe026cb96/teamwork/installedApps?$expand=teamsApp,teamsAppDefinition&$filter=teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+<!-- {
+  "blockType": "response",
+  "name": "user_list_teamsApps_details_filter",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.count": 1,
+    "value": [
+        {
+            "id": "NjkwM2ZhOTMtNjA1Yi00M2VmLTkyMGUtNzdjNDcyOWY4MjU4IyMwMjQwYTM2OC0yNWUwLTQ1NjktOGViZS0xMzYwMWNiNTVhMTg=",
+            "teamsApp": {
+                "id": "0240a368-25e0-4569-8ebe-13601cb55a18",
+                "externalId": "cf1ba4c7-f94e-4d80-ba90-5594b641a8ee",
+                "displayName": "YPA",
+                "distributionMethod": "sideloaded"
+            },
+            "teamsAppDefinition": {
+                "id": "MDI0MGEzNjgtMjVlMC00NTY5LThlYmUtMTM2MDFjYjU1YTE4IyM2LjAuMA==",
+                "teamsAppId": "0240a368-25e0-4569-8ebe-13601cb55a18",
+                "azureADAppId": "9fc97ea2-c417-4c76-a2db-197612067b28",
+                "displayName": "YPA",
+                "version": "6.0.0",
+                "requiredResourceSpecificApplicationPermissions": [
+                ],
+                "publishingState": "published",
+                "shortdescription": "A conversational smart assistant from MSX that surfaces real-time insights.",
+                "description": "For MSX Users: A conversational role-based smart assistant that will enable Enterprise sellers (AE, ATS, SSP, TSP) to be more productive by surfacing real-time insights, recommendations, actions and notifications, and by automating repetitive tasks.",
+                "lastModifiedDateTime": null,
+                "createdBy": null
+            }
+        }
+    ]
+}
+```
+## <a name="see-also"></a>См. также
+- [Список приложений в каталоге](appcatalogs-list-teamsapps.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

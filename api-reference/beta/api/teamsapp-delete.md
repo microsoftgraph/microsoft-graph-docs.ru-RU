@@ -5,12 +5,12 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: f346115feaabf7a732cf849d50aac4375c7ba9ca
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bbc8d0962a1b03d9b113fd81f8bb3ae49655dcb1
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968084"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49606813"
 ---
 # <a name="delete-teamsapp"></a>Удаление teamsApp
 
@@ -32,8 +32,8 @@ ms.locfileid: "48968084"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|
-| Делегированные (рабочая или учебная учетная запись) | CamlQuery. оправить, CamlQuery. ReadWrite. ALL, Directory. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
+| Делегированное (рабочая или учебная учетная запись) | CamlQuery. оправить, CamlQuery. ReadWrite. ALL, Directory. ReadWrite. ALL |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.|
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -62,7 +62,7 @@ DELETE appCatalogs/teamsApps/{appId}/appDefinitions/{appDefinitionId}
 
 Не указывайте текст запроса для этого метода.
 
->**Примечание:** Используйте идентификатор, возвращенный при вызове [списка опубликованных приложений](./teamsapp-list.md) , для ссылки на приложение, которое вы хотите удалить. Не используйте идентификатор из манифеста пакета приложения ZIP.
+>**Примечание:** Используйте идентификатор, возвращенный при вызове [списка опубликованных приложений](./appcatalogs-list-teamsapps.md) , для ссылки на приложение, которое вы хотите удалить. Не используйте идентификатор из манифеста пакета приложения ZIP.
 
 ## <a name="response"></a>Отклик
 

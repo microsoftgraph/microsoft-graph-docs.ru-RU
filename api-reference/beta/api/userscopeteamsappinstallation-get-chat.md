@@ -5,12 +5,12 @@ author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f4d7d9e6534b13746824a2d7a0e4b19d826acb41
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: cc0be0eb80b35c17b2f0ea6ba38b4dbf1673ac37
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597286"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49607212"
 ---
 # <a name="get-chat-between-user-and-teamsapp"></a>Получение разговора между пользователем и teamsApp
 
@@ -20,12 +20,22 @@ ms.locfileid: "49597286"
 
 Получение [чата](../resources/chat.md) для указанного [пользователя](../resources/user.md) и [приложения Teams](../resources/teamsapp.md).
 
+## <a name="permissions"></a>Разрешения
+
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированное (рабочая или учебная учетная запись) | Теамсаппинсталлатион. Реадфорусер, Теамсаппинсталлатион. Реадвритеселффорусер, Теамсаппинсталлатион. ReadWriteForUser |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Теамсаппинсталлатион. Реадфорусер. ALL, Теамсаппинсталлатион. Реадвритеселффорусер. ALL, Теамсаппинсталлатион. ReadWriteForUser. ALL |
+
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{id}/teamwork/installedApps/{id}/chat
+GET /users/{user-id}/teamwork/installedApps/{app-installation-id}/chat
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -58,8 +68,8 @@ GET /users/{id}/teamwork/installedApps/{id}/chat
   "blockType": "request",
   "name": "user_chat_teamsApps"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps/{id}/chat
+```http
+GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/teamwork/installedApps/ZjMyYjgzYmItNGZjOC00ZGI3LWI3ZjUtNzZjZGJiYjhhYTFjIyMyMmY3M2JiZS1mNjdhLTRkZWEtYmQ1NC01NGNhYzcxOGNiMmI=/chat
 ```
 
 #### <a name="response"></a>Отклик

@@ -5,12 +5,12 @@ author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 393a0663136ec167645a93cfcedd776758ed88d2
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 5b971da2eb9c6191001a8315d0ee495a63140752
+ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49564219"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49607184"
 ---
 # <a name="get-installed-app-for-user"></a>Получить установленное приложение для пользователя
 
@@ -26,16 +26,16 @@ ms.locfileid: "49564219"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Теамсаппинсталлатион. Реадфорусер, Теамсаппинсталлатион. Read, Теамсаппинсталлатион. Реадвритеселффорусер, TeamsAppInstallation. ReadWriteForUser, TeamsAppInstallation. ReadWrite |
+|Делегированное (рабочая или учебная учетная запись) | Теамсаппинсталлатион. Реадфорусер, Теамсаппинсталлатион. Реадвритеселффорусер, Теамсаппинсталлатион. ReadWriteForUser |
 |Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Теамсаппинсталлатион. Реадфорусер. ALL, Теамсаппинсталлатион. Read. ALL, Теамсаппинсталлатион. Реадвритеселффорусер. ALL, TeamsAppInstallation. ReadWriteForUser. ALL, TeamsAppInstallation. ReadWrite. ALL |
+|Приложение | Теамсаппинсталлатион. Реадфорусер. ALL, Теамсаппинсталлатион. Реадвритеселффорусер. ALL, Теамсаппинсталлатион. ReadWriteForUser. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{id}/teamwork/installedApps/{id}
+GET /users/{user-id}/teamwork/installedApps/{app-installation-id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
