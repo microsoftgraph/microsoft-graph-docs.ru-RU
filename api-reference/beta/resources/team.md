@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3c5dac6b678d397f05653486b0806d6b7a016d53
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: b565fb0933fe7ec76a81e89d3bca2688ca90545f
+ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932605"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49387530"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -31,10 +31,11 @@ ms.locfileid: "48932605"
 |[Получение команды](../api/team-get.md) | [team](team.md) | Получение свойств и связей указанной команды.|
 |[Обновление команды](../api/team-update.md) | [team](team.md) |Обновление свойств указанной команды. |
 |[Удаление команды](../api/group-delete.md) | Нет |Удаление команды и ее связанной группы. |
-|[Перечисление участников](../api/team-list-members.md)|Коллекция [conversationMember](../resources/conversationmember.md)|Получение списка conversationMembers из свойства навигации members.|
-|[Добавление участников](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Добавление нового участника.|
-|[Удаление участников](../api/team-delete-members.md)|Нет|Удаление объекта [conversationMember](../resources/conversationmember.md).|
-|[Изменение роли участника](../api/conversationmember-update.md)|[conversationMember](../resources/conversationmember.md)|Перевод пользователя из категории участников в категорию владельцев или наоборот, из категории владельцев в категорию обычных участников.|
+|[Перечисление участников](../api/team-list-members.md)|Коллекция [conversationMember](../resources/conversationmember.md)|Получение списка участников группы.|
+|[Получение участника](../api/team-get-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение участника группы.|
+|[Добавление участника](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Добавление нового участника в группу.|
+|[Удаление участника](../api/team-delete-members.md)|Нет|Удаление существующего участника из группы.|
+|[Обновление роли участника](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Перевод пользователя из категории участников в категорию владельцев или наоборот, из категории владельцев в категорию обычных участников.|
 |[Архивация команды](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Перевод команды в состояние только для чтения. |
 |[Распаковка команды](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Восстановление команды в состояние чтения и записи. |
 |[Клонирование команды](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Копирование команды и ее связанной группы. |
@@ -69,7 +70,7 @@ ms.locfileid: "48932605"
 
 | Имя свойства| Тип   | Описание
 |:-----------------------|:-------|:-------------------------|
-|@microsoft.graph.teamCreationMode|string|Указывает, что команда находится в состоянии миграции и в настоящее время используется для миграции. Принимает одно значение: `migration`.|
+|@microsoft.graph.teamCreationMode|Строка|Указывает, что команда находится в состоянии миграции и в настоящее время используется для миграции. Принимает одно значение: `migration`.|
 
 Пример запроса POST см. в разделе [Запрос (создание команды в состоянии миграции)](https://docs.microsoft.com/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 

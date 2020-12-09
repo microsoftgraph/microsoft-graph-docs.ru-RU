@@ -5,12 +5,12 @@ author: yyuank
 localization_priority: Priority
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 308293442b000d372b5aebc0b175ebef566d90c9
-ms.sourcegitcommit: 60ced1be6ed8dd2d23263090a1cfbc16689bb043
+ms.openlocfilehash: 74769f7fe05f02274c29868e134b64b878b41a81
+ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48782979"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49368182"
 ---
 # <a name="create-group"></a>Создание группы
 
@@ -78,7 +78,7 @@ POST /groups
 | Тип группы | Назначенное участие | Динамическое членство |
 |:--------------|:------------------------|:---------------|
 | Microsoft 365 (как единая группа)| `["Unified"]` | `["Unified","DynamicMembership"]`
-| Динамический | `[]` ( _null_ ) | `["DynamicMembership"]`|
+| Динамический | `[]` (_null_) | `["DynamicMembership"]`|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [group](../resources/group.md) в теле отклика. Отклик включает в себя только свойства по умолчанию для группы.
@@ -134,7 +134,7 @@ Content-length: 244
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. В результате реального вызова возвращаются все свойства по умолчанию.
 <!-- {
@@ -179,7 +179,7 @@ Content-type: application/json
 
 ### <a name="example-2-create-a-group-with-owners-and-members"></a>Пример 2. Создание группы с владельцами и участниками
 
-В следующем примере создается группа Microsoft 365 с указанным владельцем и участниками. Обратите внимание на то, что в рамках создания группы можно добавить не более 20 отношений, например владельцев и участников. Позже вы можете добавить дополнительных участников с помощью API [добавления участников](group-post-members.md) или пакетной обработки JSON.
+В следующем примере создается группа безопасности с указанным владельцем и участниками. Обратите внимание на то, что в рамках создания группы можно добавить не более 20 отношений, например владельцев и участников. Позже вы можете добавить дополнительных участников с помощью API [добавления участников](group-post-members.md) или пакетной обработки JSON.
 
 #### <a name="request"></a>Запрос
 
@@ -195,11 +195,10 @@ Content-Type: application/json
   "description": "Group with designated owner and members",
   "displayName": "Operations group",
   "groupTypes": [
-    "Unified"
   ],
-  "mailEnabled": true,
+  "mailEnabled": false,
   "mailNickname": "operations2019",
-  "securityEnabled": false,
+  "securityEnabled": true,
   "owners@odata.bind": [
     "https://graph.microsoft.com/v1.0/users/26be1845-4119-4801-a799-aea79d09f1a2"
   ],

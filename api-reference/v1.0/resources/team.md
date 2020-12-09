@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 0772457d91b2f6ad1bca1330841ba247dad62dba
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 7eb01d5043ec6857a6b99b5a0eb3f91687d74bdf
+ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582032"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49387732"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -34,10 +34,11 @@ ms.locfileid: "48582032"
 |[Получение команды](../api/team-get.md) | [team](team.md) | Получение свойств и связей указанной команды.|
 |[Обновление команды](../api/team-update.md) | [team](team.md) |Обновление свойств указанной команды. |
 |[Удаление команды](../api/group-delete.md) | Нет |Удаление команды и ее связанной группы. |
-|[Перечисление участников](../api/team-list-members.md)|Коллекция [conversationMember](../resources/conversationmember.md)|Получение списка conversationMembers из свойства навигации members.|
-|[Добавление участников](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Добавление нового участника.|
-|[Удаление участников](../api/team-delete-members.md)|Нет|Удаление объекта [conversationMember](../resources/conversationmember.md).|
-|[Изменение роли участника](/graph/api/conversationmember-update?view=graph-rest-beta&tabs=http&preserve-view=true)|[conversationMember](../resources/conversationmember.md)|Перевод пользователя из категории участников в категорию владельцев или наоборот, из категории владельцев в категорию обычных участников.|
+|[Перечисление участников](../api/team-list-members.md)|Коллекция [conversationMember](../resources/conversationmember.md)|Получение списка участников группы.|
+|[Получение участника](../api/team-get-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение участника группы.|
+|[Добавление участника](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Добавление нового участника в группу.|
+|[Удаление участника](../api/team-delete-members.md)|Нет|Удаление существующего участника из группы.|
+|[Обновление роли участника](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Перевод пользователя из категории участников в категорию владельцев или наоборот, из категории владельцев в категорию обычных участников.|
 |[Архивация команды](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Перевод команды в состояние только для чтения. |
 |[Распаковка команды](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Восстановление команды в состояние чтения и записи. |
 |[Клонирование команды](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Копирование команды и ее связанной группы. |

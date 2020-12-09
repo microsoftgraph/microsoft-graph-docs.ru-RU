@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: apiPageType
-ms.openlocfilehash: 71d47a6ee529fb6cfc374d9f21fbfb335e47324c
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: e980d2280a9fd09bdaa55d2a1cad416ed2ef0d7c
+ms.sourcegitcommit: 6714f71e0d229f1ab56150a9976b5106b4c8b785
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082043"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49368161"
 ---
 # <a name="list-groups"></a>Список групп
 
@@ -20,7 +20,7 @@ ms.locfileid: "49082043"
 
 Список всех групп в организации, в том числе групп Microsoft 365. 
 
-Эта операция по умолчанию возвращает для каждой группы только подмножество наиболее часто используемых свойств. Эти свойства _по умолчанию_ указаны в разделе [Свойства](../resources/group.md#properties). Чтобы получить свойства, которые _не_ возвращаются по умолчанию, выполните [операцию GET](group-get.md) для группы и укажите их в параметре `$select` запроса OData. Свойство **hasMembersWithLicenseErrors** является исключением и не возвращается в запросе `$select`.
+Эта операция по умолчанию возвращает для каждой группы только подмножество наиболее часто используемых свойств. Эти свойства _по умолчанию_ указаны в разделе [Свойства](../resources/group.md#properties). Чтобы получить свойства, которые _не_ возвращаются по умолчанию, выполните [операцию GET](group-get.md) и укажите их в параметре `$select` запроса OData. Свойство **hasMembersWithLicenseErrors** является исключением и не возвращается в запросе `$select`.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,9 +28,9 @@ ms.locfileid: "49082043"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------- |:------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (рабочая или учебная учетная запись) | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+| Для приложений | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ GET /groups
 GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
 
-С помощью параметра `$orderby` запроса OData можно сортировать группы в организации по значениям **displayName**, как показано в примере ниже.
+С помощью параметра `$orderby` запросов OData можно сортировать группы в организации по значениям **displayName**, как показано в приведенном ниже примере.
 <!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/beta/groups?$orderby=displayName
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 | Имя | Описание |
 |:---- |:----------- |
 | Авторизация  | Bearer {токен}. Обязательный. |
-| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search` или применении `$filter` с параметром запроса `$orderby`. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
+| ConsistencyLevel | необязательный. Этот заголовок и `$count` требуются при использовании `$search`или применении `$filter` с параметром запроса `$orderby`. В нем используется индекс, который может не соответствовать последним изменениям объекта. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -107,8 +107,8 @@ GET https://graph.microsoft.com/beta/groups
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове возвращаются все свойства, используемые по умолчанию, для каждой группы.
+Ниже приведен пример ответа.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. В результате реального вызова возвращаются все свойства по умолчанию для каждой группы.
 
 <!-- {
   "blockType": "response",

@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3818f5a1759c08aad254347420089f93119fa32a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 043f480e4d7dc09f962668b27be473a2ffc14108
+ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956737"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49387558"
 ---
 # <a name="list-conversationmembers"></a>Список объектов conversationMember
 
@@ -18,7 +18,12 @@ ms.locfileid: "48956737"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перечисление всех [участников беседы](../resources/conversationmember.md) в [чате](../resources/chat.md) или [канале](../resources/channel.md).
+Перечисление всех [участников беседы](../resources/conversationmember.md) в [чате](../resources/chatmessage.md), [канале](../resources/channel.md) или [команде](../resources/team.md).
+
+> [!NOTE]
+> Идентификаторы участия, возвращаемые сервером, должны рассматриваться как непрозрачные строки. Клиент не должен пытаться анализировать или делать какие-либо предположения об этих идентификаторах ресурсов.
+>
+> В дальнейшем результаты членства могут сопоставляться с пользователями различных клиентов, как указано в отклике. Клиент не должен предполагать, что все участники относятся только к текущему клиенту.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -60,7 +65,7 @@ GET /users/{id}/chats/{id}/members
 
 ## <a name="example"></a>Пример
 
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -91,7 +96,7 @@ GET https://graph.microsoft.com/beta/me/chats/{id}/members
 ---
 
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

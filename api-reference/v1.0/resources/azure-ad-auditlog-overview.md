@@ -2,15 +2,15 @@
 title: Обзор API отчетов об активности
 description: Используйте API отчетов об активности в Microsoft Graph для получения доступа к отчетам Azure Active Directory, чтобы отслеживать действия пользователей в клиенте.
 localization_priority: Priority
-author: khotz
+author: besiler
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: ada166c457a5c6eb29aa7ff5dffe45491816c553
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 31ea854ab9ef69fdbb0698ea11fd3831bdb3f07c
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581927"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597251"
 ---
 # <a name="activity-reports-api-overview"></a>Обзор API отчетов об активности
 
@@ -18,12 +18,14 @@ ms.locfileid: "48581927"
 
 Azure Active Directory (Azure AD) отслеживает действия пользователей и создает отчеты, помогающие понять, как пользователи переходят к службам Azure AD и используют их. Чтобы анализировать данные в этих отчетах и создавать настраиваемые решения в соответствии с конкретными требованиями организации, используйте API Microsoft Graph в Azure AD.
 
-## <a name="what-are-azure-ad-activity-logs"></a>Что такое журналы действий Azure AD?
+Доступность этих отчетов об активности определяется политиками хранения данных Azure AD. Подробнее см. в статье [Политики хранение данных](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
-Azure AD предоставляет три типа отчетов об активности:
+## <a name="what-are-azure-ad-activity-logs"></a>Что такое журналы аудита Azure AD?
 
-- журналы аудита;
-- журналы входа.
+Azure AD предоставляет следующие типы отчетов об активности:
+
+- Аудиты каталога
+- Входы
 
 ### <a name="directory-audits"></a>Аудиты каталога
 

@@ -1,25 +1,28 @@
 ---
-title: Список участников
+title: Список участников группы
 description: Получение conversationMembers группы.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: ed6c122008da3a4058dd88688217537b5f93ac01
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 4685e277f386d6ecaa51565778529ac812ba1c65
+ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974610"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49387593"
 ---
-# <a name="list-members"></a>Список участников
+# <a name="list-members-of-team"></a>Список участников группы
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение [conversationMember](../resources/conversationmember.md) [группы](../resources/team.md).
+Получение набора данных [conversationMember](../resources/conversationmember.md) [группы](../resources/team.md).
 
->Примечание. в настоящее время данный API не поддерживает разбивку на страницы, поэтому если в одном запросе помещено слишком много участников, вы не сможете получить доступ ко всем участникам.
+> [!NOTE]
+> Идентификаторы членства, возвращаемые сервером, должны рассматриваться как непрозрачные строки. Клиент не должен пытаться анализировать или делать какие-либо предположения об этих идентификаторах ресурсов.
+>
+> В дальнейшем результаты членства могут сопоставляться с пользователями различных клиентов, как указано в отклике. Клиент не должен предполагать, что все участники относятся только к текущему клиенту.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +31,7 @@ ms.locfileid: "48974610"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)| TeamMember.Read.All, TeamMember.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений| TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All |
+|Приложение| TeamMember.Read.Group*, TeamMember.Read.All, TeamMember.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
@@ -39,8 +42,7 @@ ms.locfileid: "48974610"
 }
 -->
 ``` http
-GET /teams/{teamsId}/members
-GET /teams/{teamsId}/channels/{channelId}/members
+GET /teams/{team-id}/members
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -69,7 +71,7 @@ GET /teams/{teamsId}/channels/{channelId}/members
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/teams/{teamsId}/members
+GET https://graph.microsoft.com/beta/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conversationmember-csharp-snippets.md)]
@@ -130,4 +132,6 @@ Content-Type: application/json
 }
 ```
 
+## <a name="see-also"></a>См. также
 
+- [Список участников в канале](channel-list-members.md)
