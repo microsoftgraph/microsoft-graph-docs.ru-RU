@@ -5,12 +5,12 @@ author: ananmishr
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
-ms.openlocfilehash: ef67a53cb38f0a146069005c45297972298f4b85
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: e6e6c4ba8d262ac01846b6ed06938b2c5c89350b
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582333"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49581140"
 ---
 # <a name="working-with-the-communications-api-in-microsoft-graph"></a>Работа с API коммуникаций в Microsoft Graph
 
@@ -28,6 +28,7 @@ API коммуникаций можно использовать для созд
 | Звонки                 | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All, Calls.AccessMedia.All |
 | Собрания                 | OnlineMeetings.ReadWrite.All, OnlineMeetings.Read.All |
 | Записи звонков             | CallRecords.Read.All |
+| Присутствие             | Presence.Read, Presence.Read.All |
 
 ## <a name="common-use-cases"></a>Основные варианты использования
 
@@ -40,6 +41,7 @@ API коммуникаций можно использовать для созд
 | Элементы управления звонком (участник) | [Участник](/graph/api/resources/participant?view=graph-rest-v1.0)   ||
 |Собрания|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0)| [Методы для собраний](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#methods)|
 | Получение записей звонков | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0) | [Подписки веб-перехватчиков](/graph/api/resources/webhooks?view=graph-rest-1.0) |
+|Присутствие|[presence](/graph/api/resources/presence?view=graph-rest-v1.0)||
 
 ## <a name="common-properties"></a>Общие свойства
 
@@ -49,8 +51,9 @@ API коммуникаций можно использовать для созд
 | participant                         | [свойства объекта participant](/graph/api/resources/participant?view=graph-rest-v1.0#properties) |
 | onlineMeeting                            | [свойства объекта onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#properties)                     |
 | callRecord | [Свойства callRecord](/graph/api/resources/callrecords-callrecord#properties) |
+|presence|[presence](/graph/api/resources/presence?view=graph-rest-v1.0)|
 
-## <a name="whats-new"></a>Что нового
+## <a name="whats-new"></a>Новые возможности
 Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
 
 ## <a name="see-also"></a>См. также
