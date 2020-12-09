@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: microsoft-identity-platform
 author: besiler
-ms.openlocfilehash: 5e49061d4212b2b81482d57b0a7048d52c242572
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 2c3bd3533a871fabe338b960c0af14ff8ad1fa5d
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523639"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597418"
 ---
 # <a name="activity-reports-api-overview"></a>Обзор API отчетов об активности
 
@@ -19,6 +19,8 @@ ms.locfileid: "49523639"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Azure Active Directory (Azure AD) отслеживает действия пользователей и создает отчеты, помогающие понять, как пользователи переходят к службам Azure AD и используют их. Чтобы анализировать данные в этих отчетах и создавать настраиваемые решения в соответствии с конкретными требованиями организации, используйте API Microsoft Graph в Azure AD.
+
+Доступность этих отчетов об активности определяется политиками хранения данных Azure AD. Подробнее см. в статье [Политики хранение данных](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
 ## <a name="what-are-activity-reports"></a>Что такое отчеты об активности?
 

@@ -1,21 +1,21 @@
 ---
-title: Удаление участников из группы
+title: Удаление участника из группы
 description: Удаление conversationMember из группы.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 45a89703062ca77dfc0189aa12cc361bc0b6e025
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: 975b8f9c3f4ed75b90dd62be9d417a8941f9d510
+ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48849174"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49524649"
 ---
-# <a name="remove-members-from-team"></a>Удаление участников из группы
+# <a name="remove-member-from-team"></a>Удаление участника из группы
 Пространство имен: microsoft.graph
 
-Удаление нового [conversationMember](../resources/conversationmember.md) из [группы](../resources/team.md).
+Удаление [conversationMember](../resources/conversationmember.md) из [группы](../resources/team.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,6 @@ ms.locfileid: "48849174"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение| TeamMember.ReadWrite.All |
 
-> **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -36,7 +35,6 @@ ms.locfileid: "48849174"
 -->
 ``` http
 DELETE /teams/{team-id}/members/{membership-id}
-DELETE /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -62,7 +60,7 @@ DELETE /teams/{team-id}/channels/{channel-id}/members/{membership-id}
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/teams/{teamsId}/members/{membership-id}
+DELETE https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=
 ```
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-members-from-team-csharp-snippets.md)]
@@ -92,3 +90,7 @@ DELETE https://graph.microsoft.com/v1.0/teams/{teamsId}/members/{membership-id}
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+## <a name="see-also"></a>См. также
+
+- [Удаление участника из канала](channel-delete-members.md)

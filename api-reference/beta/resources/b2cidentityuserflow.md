@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: jkdouglas
-ms.openlocfilehash: a7f246ed903fa651deaf5278a54f8f4bac520f5c
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: 61c3a206ee07eb7e8474e501f9064a20c6cc3840
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921776"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49581091"
 ---
 # <a name="b2cidentityuserflow-resource-type"></a>Тип ресурса b2cIdentityUserFlow
 
@@ -39,13 +39,15 @@ ms.locfileid: "48921776"
 |[Перечисление поставщиков удостоверений](../api/b2cidentityuserflow-list-identityproviders.md)|Коллекция объектов [identityProvider](../resources/identityProvider.md)|Получение всех поставщиков удостоверений в пользовательском потоке B2C.|
 |[Добавление поставщика удостоверений](../api/b2cidentityuserflow-post-identityproviders.md)|Нет|Добавление поставщика удостоверений в пользовательский поток B2C.|
 |[Удаление поставщика удостоверений](../api/b2cidentityuserflow-delete-identityproviders.md)|Нет|Удаление поставщика удостоверений из пользовательского потока B2C.|
+|[Назначения атрибутов пользователя в списке](../api/b2cidentityuserflow-list-userattributeassignments.md)|Коллекция [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Извлечение всех назначений атрибутов пользователя в потоке пользователей B2C.|
+|[Создание назначения атрибута пользователя](../api/b2cidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Создание назначения атрибута пользователя в потоке пользователей B2C.|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
 |id|Строка|Имя пользовательского потока. Это обязательное значение, не изменяемое после создания. После создания перед именем будет добавлен префикс со значением `B2C_1_`.|
-|userFlowType|Строка|[Тип пользовательского потока](/azure/active-directory-b2c/user-flow-versions). Поддерживаемые значения для **userFlowType** :<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwnerPasswordCredentialSignIn`</li>|
+|userFlowType|Строка|[Тип пользовательского потока](/azure/active-directory-b2c/user-flow-versions). Поддерживаемые значения для **userFlowType**:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|Одинарное|Версия пользовательского потока.|
 
 ## <a name="relationships"></a>Связи
@@ -53,6 +55,7 @@ ms.locfileid: "48921776"
 | Связь       | Тип  |Описание|
 |:---------------|:--------|:----------|
 |identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Поставщики удостоверений, включенные в пользовательский поток.|
+|userAttributeAssignments|Коллекция [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Назначения атрибутов пользователя, включенные в поток пользователей.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -70,6 +73,7 @@ ms.locfileid: "48921776"
     "id": "String (identifier)",
     "userFlowType": "String",
     "userFlowTypeVersion": "Single",
-    "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}]
+    "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
+    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}]
 }
 ```

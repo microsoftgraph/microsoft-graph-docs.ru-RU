@@ -5,47 +5,48 @@ author: davidmu1
 ms.prod: non-product-specific
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 9fa210486c924fc3e29e9d3f2ddfee5422a937f9
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: a87e70dc7ef99613a40f7579f58e8cb94df346ec
+ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932593"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49597454"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
 API Microsoft Graph использует механизм веб-перехватчиков для доставки уведомлений об изменениях для клиентов. Клиент — это веб-служба, которая настраивает свой URL-адрес для получения уведомлений об изменениях. С помощью этих уведомлений клиентские приложения обновляют свое состояние в случае изменений.
 
-After Microsoft Graph accepts the subscription request, it pushes change notifications to the URL specified in the subscription. The app then takes action according to its business logic. For example, it fetches more data, updates its cache and views, and so on.
+Приняв запрос на подписку, Microsoft Graph отправляет уведомления об изменениях на URL-адрес, указанный в подписке. Затем приложение действует в соответствии с бизнес-логикой. Например, оно получает дополнительные данные, обновляет кэш и представления, а также выполняет другие действия.
 
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/rC1bunenaq4]
  
 > [!div class="nextstepaction"]
-> [Руководство. Использование уведомлений об изменениях и функции отслеживания изменений в Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges)
+> [Руководство: Использование уведомлений об изменениях и функции отслеживания изменений в Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges)
 
-By default, change notifications do not contain resource data, other than the `id`. If the app requires resource data, it can make calls to Microsoft Graph APIs to get the full resource. This article uses the **user** resource as an example for working with change notifications.
+По умолчанию уведомления об изменениях не включают данные ресурсов, кроме `id`. Если приложению требуются данные ресурса, оно может вызвать API Microsoft Graph, чтобы получить ресурс полностью. В этой статье описывается работа с уведомлениями об изменениях на примере ресурса **user**.
 
-An app can also subscribe to change notifications that include resource data, to avoid having to make additional API calls to access the data. Such apps will need to implement extra code to handle the requirements of such notifications, specifically: responding to subscription lifecycle notifications, validating the authenticity of notifications, and decrypting the resource data. For details about how to work with these notifications, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
+Приложение также может подписаться на уведомления об изменениях, включающие данные ресурсов, чтобы избежать необходимости дополнительного вызова API для доступа к данным. В этом случае приложению необходимо реализовать дополнительный код для обработки требований таких уведомлений, в частности, ответа на уведомления о жизненном цикле подписки, проверки подлинности уведомлений и расшифровки данных ресурсов. Дополнительные сведения о работе с такими уведомлениями см. в статье [Настройка уведомлений об изменениях, включающих данные ресурсов](webhooks-with-resource-data.md).
 
 ## <a name="supported-resources"></a>Поддерживаемые ресурсы
 
 С помощью API Microsoft Graph приложение может подписаться на изменения для следующих ресурсов:
 
-- [Сообщение][] Outlook
-- [Событие][] Outlook
-- Личный [контакт][] Outlook
-- [list][]
-- [user][]
-- [group][]
-- Групповой [чат][] Microsoft 365 
+- Облачная печать [printTaskDefinition][]
 - Контент внутри иерархии _любой папки_ [driveItem][] на персональном хранилище OneDrive пользователя
 - Контент внутри иерархии _корневой папки_ [driveItem][] на персональном хранилище OneDrive для бизнеса
+- [group][]
+- Групповой [чат][] Microsoft 365 
+- [Событие][] Outlook
+- [Сообщение][] Outlook
+- Личный [контакт][] Outlook
 - [Оповещение][] безопасности
+- [Список][] SharePoint
 - [callRecord][] в Teams
 - [chatMessage][] Teams
 - Teams [presence][] (предварительная версия)
-- [printTaskDefinition][] печати
+- [todoTask][] (предварительная версия)
+- [пользователь][]
 
 Вы можете создать подписку на определенную папку Outlook, например, папку Входящие: `me/mailFolders('inbox')/messages`
 
@@ -59,6 +60,8 @@ An app can also subscribe to change notifications that include resource data, to
 либо на корневую папку диска SharePoint/OneDrive для бизнеса: `/drive/root`
 
 либо на новое оповещение [API безопасности](security-concept-overview.md): `/security/alerts?$filter=status eq 'newAlert'`, `/security/alerts?$filter=vendorInformation/provider eq 'ASC'`
+
+либо на задачи в списке дел пользователя: `/me/todo/lists/{todoTaskListId}/tasks`
 
 ### <a name="azure-ad-resource-limitations"></a>Ограничения ресурсов Azure AD
 
@@ -82,7 +85,7 @@ An app can also subscribe to change notifications that include resource data, to
 
 ### <a name="outlook-resource-limitations"></a>Ограничения ресурсов Outlook
 
-Если вы используете *имя участника-пользователя* на пути к ресурсу при оформлении подписки на ресурсы Outlook, например **сообщения** , **события** или **контакты** , запрос на подписку может быть не выполнен, если это имя содержит апостроф.  Используйте ИД GUID пользователей вместо имен участников-пользователей, чтобы избежать этой проблемы. Например, вместо пути к ресурсу:
+Если вы используете *имя участника-пользователя* на пути к ресурсу при оформлении подписки на ресурсы Outlook, например **сообщения**, **события** или **контакты**, запрос на подписку может быть не выполнен, если это имя содержит апостроф.  Используйте ИД GUID пользователей вместо имен участников-пользователей, чтобы избежать этой проблемы. Например, вместо пути к ресурсу:
 
 `/users/sh.o'neal@contoso.com/messages`
 
@@ -94,7 +97,7 @@ An app can also subscribe to change notifications that include resource data, to
 
 Каждый ресурс Teams имеет различные квоты подписки.
 
-- Для подписок на **callRecords** :
+- Для подписок на **callRecords**:
   - На организацию: всего 100 подписок
 
 - Для подписок на **chatMessages** (каналы или чаты):
@@ -150,7 +153,7 @@ Content-Type: application/json
 
 В случае успешного выполнения Microsoft Graph возвращает код `201 Created` и объект [подписки](/graph/api/resources/subscription?view=graph-rest-1.0) в теле отклика.
 
-> **Примечание.** Любой параметр строки запроса, включенный в свойство **notificationUrl** , будет включен в HTTP-запрос POST при доставке уведомлений.
+> **Примечание.** Любой параметр строки запроса, включенный в свойство **notificationUrl**, будет включен в HTTP-запрос POST при доставке уведомлений.
 
 #### <a name="notification-endpoint-validation"></a>Проверка конечной точки уведомлений
 
@@ -283,21 +286,22 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 | Ресурс | Средняя задержка | Максимальная задержка |
 |:-----|:-----|:-----|
+|[alert][] | Менее 3 минут | 5 минут |
 |[callRecord][] | Менее 15 минут | 60 минут |
 |[chatMessage][] | Менее 10 секунд | 1 минута |
 |[contact][] | Неизвестно | Неизвестно |
+|[conversation][] | Неизвестно | Неизвестно |
 |[driveItem][] | Менее 1 минуты | 5 минут |
 |[event][] | Неизвестно | Неизвестно |
 |[group][] | Менее 2 минут | 15 минут |
-|[conversation][] | Неизвестно | Неизвестно |
 |[list][] | Менее 1 минуты | 5 минут |
 |[message][] | Неизвестно | Неизвестно |
-|[alert][] | Менее 3 минут | 5 минут |
 |[presence][] (предварительная версия) | Менее 10 секунд | 1 минута |
 |[printTaskDefinition][] | Менее 1 минуты | 5 минут |
+|[todoTask][] | Менее 2 минут | 15 минут |
 |[user][] | Менее 2 минут | 15 минут |
 
->**Примечание.** Задержка, предусматриваемая для ресурса **alert** , применяется только после создания самого оповещения. Она не включает в себя время, необходимое правилу для создания оповещения на основе данных.
+>**Примечание.** Задержка, предусматриваемая для ресурса **alert**, применяется только после создания самого оповещения. Она не включает в себя время, необходимое правилу для создания оповещения на основе данных.
 
 ## <a name="see-also"></a>См. также
 
@@ -307,7 +311,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 - Тип ресурса [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta)
 - Тип ресурса [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta)
 - [Руководство по уведомлениям об изменениях и отслеживанию изменений](/learn/modules/msgraph-changenotifications-trackchanges)
-- [Уведомления жизненного цикла](/graph/concepts/webhooks-lifecycle.md)
+- [Уведомления жизненного цикла](/graph/webhooks-lifecycle)
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
@@ -322,3 +326,4 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
+[todoTask]: /graph/api/resources/todotask
