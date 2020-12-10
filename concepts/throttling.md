@@ -4,12 +4,12 @@ description: Регулирование позволяет ограничить 
 author: davidmu1
 localization_priority: Priority
 ms.custom: graphiamtop20
-ms.openlocfilehash: 56cd4925f7678e22b94eb97d4420b4a18c682ef7
-ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
+ms.openlocfilehash: 88bbdf56f1ef59fe1e805437b34d46f7e8927613
+ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030244"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580986"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Руководство по регулированию Microsoft Graph
 
@@ -174,7 +174,7 @@ Microsoft Graph позволяет получать доступ к данным
 | -------------- | ------------ |
 | [Звонки](/graph/api/resources/call) | 10 000 звонков в месяц и 100 параллельных вызовов   |
 | [Сведения о собрании](/graph/api/resources/meetinginfo)   | 2000 собраний на пользователя каждый месяц |
-| [Присутствие](/graph/api/resources/presence) (предварительная версия)   | 50 запросов в секунду |
+| [Присутствие](/graph/api/resources/presence) (предварительная версия)   | 1500 запросов в течение 30 секунд, на каждое приложение каждого клиента |
 
 ### <a name="onenote-service-limits"></a>Ограничения службы OneNote
 
@@ -186,7 +186,7 @@ Microsoft Graph позволяет получать доступ к данным
 Указанные выше ограничения действуют для следующих ресурсов:  
 onenote, notebook, sectionGroup, onenoteSection, onenotePage, onenoteResource, onenoteOperation
 
-Дополнительные сведения о рекомендациях см. в статье [Регулирование в API OneNote и как его избежать](https://developer.microsoft.com/ru-RU/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).  
+Дополнительные сведения о рекомендациях см. в статье [Регулирование в API OneNote и как его избежать](https://developer.microsoft.com/en-us/office/blogs/onenote-api-throttling-and-how-to-avoid-it/).  
 
 > **Примечание.** Перечисленные выше ресурсы не возвращают заголовок `Retry-After` в откликах `429 Too Many Requests`.
 
@@ -500,3 +500,16 @@ planner, plannerAssignedToTaskBoardTaskFormat, plannerBucket, plannerBucketTaskB
 [!INCLUDE [Subscription services throttling documentation](../includes/throttling-subscription-services.md)]
 
 <!-- { "blockType": "throttlinggenend" } -->
+
+### <a name="assignment-service-limits"></a>Ограничения службы заданий
+
+Указанные ограничения применяются к запросам в API бета-версии службы назначения.
+
+| Тип запроса                 | Ограничение на приложение по клиенту     | Ограничение на клиента для всех приложений |
+|---------------------------|------------------------------|----------------------------|
+| Любой         | 5000 запросов в течение 10 секунд   | 15 000 запросов за 10 секунд |
+| GET me/задание  | 50 запросов за 10 секунд | 150 запросов за 10 секунд |  
+
+Предыдущие ограничения действуют для следующих ресурсов: [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta)
+[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta)
+[educationResource](/graph/api/resources/educationresource?view=graph-rest-beta)
