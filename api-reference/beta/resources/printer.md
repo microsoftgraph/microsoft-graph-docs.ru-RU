@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: resourcePageType
-ms.openlocfilehash: 37c552a1239ee1d374c22be77ba81004cfc92e1f
-ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
+ms.openlocfilehash: 5833dc1f37620a419153100ebf9ce6d7f141fa5d
+ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993964"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49617012"
 ---
 # <a name="printer-resource-type"></a>Тип ресурса Printer
 
@@ -26,8 +26,8 @@ ms.locfileid: "48993964"
 |:-------------|:------------|:------------|
 | [Создание](../api/printer-create.md) | [printerCreateOperation](printerCreateOperation.md) | Создание (регистрация) нового принтера с универсальной печатью. |
 | [получение](../api/printer-get.md); | [Printer](printer.md) | Чтение свойств и связей объекта Printer. |
-| [обновление](../api/printer-update.md). | [Printer](printer.md) | Обновление объекта Printer. |
-| [удаление](../api/printer-delete.md); | Нет | Отмените регистрацию физического принтера в универсальной службе печати. |
+| [Обновление](../api/printer-update.md) | [Printer](printer.md) | Обновление объекта Printer. |
+| [Удаление](../api/printer-delete.md) | Нет | Отмените регистрацию физического принтера в универсальной службе печати. |
 | [ресторефакторидефаултс](../api/printer-restorefactorydefaults.md) | Нет | Восстановите параметры принтера по умолчанию на значения, заданные производителем. |
 | [Список заданий](../api/printer-list-jobs.md) | Коллекция [printJob](printjob.md) | Получение списка заданий печати, помещенных в очередь для обработки принтером. |
 | [Создание задания](../api/printer-post-jobs.md) | [printJob](printjob.md) | Создание нового задания печати для принтера. Чтобы начать печать задания, используйте [Start](../api/printjob-start.md). |
@@ -46,8 +46,9 @@ ms.locfileid: "48993964"
 |регистереддатетиме|DateTimeOffset|Значение DateTimeOffset при регистрации принтера. Только для чтения.|
 |status|[принтерстатус](printerstatus.md)|Состояние обработки принтера, включая ошибки.|
 |IsShared|Boolean|Значение true, если принтер является общим; в противном случае — false. Только для чтения.|
-|isAcceptingJobs|Логический|Принимает ли принтер новые задания печати.|
-|расположение|[принтерлокатион](printerlocation.md)|Физическое и/или организационное расположение принтера.|
+|хасфисикалдевице|Boolean|Значение true, если у принтера есть физическое устройство для печати. Только для чтения.|
+|isAcceptingJobs|Boolean|Принимает ли принтер новые задания печати.|
+|location|[принтерлокатион](printerlocation.md)|Физическое и/или организационное расположение принтера.|
 |defaults|[принтердефаултс](printerdefaults.md)|Параметры печати по умолчанию для принтера.|
 |capabilities|[принтеркапабилитиес](printercapabilities.md)|Возможности принтера, связанного с этим общим принтером.|
 
@@ -82,6 +83,7 @@ ms.locfileid: "48993964"
   "isShared": true,
   "registeredDateTime": "String (timestamp)",
   "isAcceptingJobs": true,
+  "hasPhysicalDevice": true,
   "location": {"@odata.type": "microsoft.graph.printerLocation"},
   "status": {"@odata.type": "microsoft.graph.printerStatus"},
   "defaults": {"@odata.type": "microsoft.graph.printerDefaults"},

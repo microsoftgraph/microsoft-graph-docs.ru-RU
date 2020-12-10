@@ -40,13 +40,13 @@ items:
             href: /graph/webhooks?context=graph/api/beta
           - name: Учебник
             href: /learn/modules/msgraph-changenotifications-trackchanges
-          - name: Пропущенные уведомления об изменении
+          - name: Пропущенные уведомления об изменениях
             href: /graph/webhooks-lifecycle
           - name: Уведомления с данными ресурсов
             href: /graph/webhooks-with-resource-data?context=graph/api/beta
           - name: Получение уведомлений разными способами (предварительная версия)
             href: /graph/change-notifications-delivery?context=graph/api/beta
-          - name: Получение уведомлений об изменениях для бесед и сообщений в каналах
+          - name: Получение уведомлений об изменениях для сообщений чатов или каналов
             href: /graph/teams-changenotifications-chatmessage?context=graph/api/beta
       - name: Отслеживание изменений
         displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users, Planner, Azure AD'
@@ -354,7 +354,7 @@ items:
                 href: api/mailfolder-list-messagerules.md
               - name: Отправка почты
                 href: api/user-sendmail.md
-          - name: Примечания
+          - name: Заметки
             items:
               - name: Microsoft
                 href: resources/onenote.md
@@ -462,7 +462,7 @@ items:
                 href: api/userteamwork-delete-installedapps.md
               - name: Получение разговора между пользователем и приложением
                 href: api/userscopeteamsappinstallation-get-chat.md
-          - name: Задачи из списка дел
+          - name: Задачи To-Do
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -777,7 +777,7 @@ items:
                     href: api/application-post-extensionproperty.md
                   - name: Удаление расширения
                     href: api/application-delete-extensionproperty.md
-              - name: Owners
+              - name: Владельцы
                 items:
                   - name: Список владельцев
                     href: api/application-list-owners.md
@@ -792,7 +792,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Список
+                      - name: Перечисление
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -801,7 +801,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Список
+                      - name: Перечисление
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -820,7 +820,7 @@ items:
               - name: Локальный агент
                 href: resources/onpremisesagent.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/onpremisesagent-list.md
                   - name: Получение
                     href: api/onpremisesagent-get.md
@@ -831,7 +831,7 @@ items:
               - name: Локальная группа агентов
                 href: resources/onpremisesagentgroup.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/onpremisesagentgroup-list.md
                   - name: Получение
                     href: api/onpremisesagentgroup-get.md
@@ -839,7 +839,7 @@ items:
                     href: api/onpremisesagentgroup-post.md
                   - name: Обновление
                     href: api/onpremisesagentgroup-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/onpremisesagentgroup-delete.md
               - name: Профиль локальной публикации
                 href: resources/onpremisespublishingprofile.md
@@ -851,7 +851,7 @@ items:
               - name: Опубликованный ресурс
                 href: resources/publishedresource.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/publishedresource-list.md
                   - name: Получение
                     href: api/publishedresource-get.md
@@ -859,7 +859,7 @@ items:
                     href: api/publishedresource-post.md
                   - name: Обновление
                     href: api/publishedresource-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/publishedresource-delete.md
                   - name: Назначить группе агентов
                     href: api/publishedresource-post-agentgroups.md
@@ -868,7 +868,7 @@ items:
               - name: Connector
                 href: resources/connector.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/connector-list.md
                   - name: Получение
                     href: api/connector-get.md
@@ -879,7 +879,7 @@ items:
               - name: Группа соединителей
                 href: resources/connectorgroup.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/connectorgroup-list.md
                   - name: Создание
                     href: api/connectorgroup-post.md
@@ -887,7 +887,7 @@ items:
                     href: api/connectorgroup-get.md
                   - name: Обновление
                     href: api/connectorgroup-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/connectorgroup-delete.md
                   - name: Список приложений
                     href: api/connectorgroup-list-applications.md
@@ -948,7 +948,7 @@ items:
               - name: Классификации делегированных разрешений
                 href: resources/delegatedpermissionclassification.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/serviceprincipal-list-delegatedpermissionclassifications.md
                   - name: Создание
                     href: api/serviceprincipal-post-delegatedpermissionclassifications.md
@@ -968,7 +968,7 @@ items:
                     href: api/serviceprincipal-getmembergroups.md
                   - name: getMemberObjects
                     href: api/serviceprincipal-getmemberobjects.md
-              - name: Owners
+              - name: Владельцы
                 items:
                   - name: Список владельцев
                     href: api/serviceprincipal-list-owners.md
@@ -983,7 +983,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-claimsmappingpolicies.md
-                      - name: Список
+                      - name: Перечисление
                         href: api/serviceprincipal-list-claimsmappingpolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-claimsmappingpolicies.md
@@ -992,7 +992,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
-                      - name: Список
+                      - name: Перечисление
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Удалить
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
@@ -1001,7 +1001,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenissuancepolicies.md
-                      - name: Список
+                      - name: Перечисление
                         href: api/application-list-tokenissuancepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenissuancepolicies.md
@@ -1010,7 +1010,7 @@ items:
                     items:
                       - name: Назначение
                         href: api/application-post-tokenlifetimepolicies.md
-                      - name: Список
+                      - name: Перечисление
                         href: api/application-list-tokenlifetimepolicies.md
                       - name: Удалить
                         href: api/application-delete-tokenlifetimepolicies.md
@@ -1036,7 +1036,7 @@ items:
               - name: Определение каталога
                 href: resources/synchronization-directorydefinition.md
                 items:
-                  - name: Поиск
+                  - name: Обнаружение
                     href: api/directorydefinition-discover.md
               - name: Задание
                 href: resources/synchronization-synchronizationjob.md
@@ -1227,7 +1227,7 @@ items:
                 href: api/calendarpermission-get.md
               - name: Обновление
                 href: api/calendarpermission-update.md
-              - name: Delete
+              - name: Удаление
                 href: api/calendarpermission-delete.md
           - name: Представление календаря
             href: api/calendar-list-calendarview.md
@@ -1294,7 +1294,7 @@ items:
           - name: Подписка
             href: resources/subscription.md
             items:
-              - name: Список
+              - name: Перечисление
                 href: api/subscription-list.md
               - name: Создание
                 href: api/subscription-post-subscriptions.md
@@ -1302,7 +1302,7 @@ items:
                 href: api/subscription-get.md
               - name: Обновление
                 href: api/subscription-update.md
-              - name: Delete
+              - name: Удаление
                 href: api/subscription-delete.md
           - name: Коллекция уведомлений об изменениях
             href: resources/changenotificationcollection.md
@@ -1344,7 +1344,7 @@ items:
               - name: Участник
                 href: resources/participant.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/call-list-participants.md
                   - name: Получение
                     href: api/participant-get.md
@@ -1377,7 +1377,7 @@ items:
                     href: api/audioroutinggroup-get.md
                   - name: Обновление
                     href: api/audioroutinggroup-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/audioroutinggroup-delete.md
               - name: Запись данных качества устройства видеотелеконференцией
                 href: api/call-logteleconferencedevicequality.md
@@ -1395,7 +1395,7 @@ items:
                 items:
                   - name: Сеанс
                     href: resources/callrecords-session.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/callrecords-session-list.md
               - name: Звонки PSTN
                 items:
@@ -1420,16 +1420,16 @@ items:
                 href: api/onlinemeeting-createorget.md
               - name: Обновление
                 href: api/onlinemeeting-update.md
-              - name: Delete
+              - name: Удаление
                 href: api/onlinemeeting-delete.md
-          - name: Присутствие (предварительная версия)
+          - name: Присутствие (Предварительная версия)
             href: resources/presence.md
             items:
               - name: Получение сведений о присутствии
                 href: api/presence-get.md
               - name: Получение сведений о присутствии для нескольких пользователей
                 href: api/cloudcommunications-getpresencesbyuserid.md
-      - name: Соответствие требованиям (Предварительная версия)
+      - name: Соответствие требованиям (предварительная версия)
         displayName: 'Compliance API, Microsoft Graph Compliance API'
         items:
           - name: Обзор
@@ -1441,7 +1441,7 @@ items:
               - name: Дело обнаружения электронных данных
                 href: resources/ediscoverycase.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/ediscoverycase-list.md
                   - name: Создание
                     href: api/ediscoverycase-post.md
@@ -1449,12 +1449,12 @@ items:
                     href: api/ediscoverycase-get.md
                   - name: Обновление
                     href: api/ediscoverycase-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/ediscoverycase-delete.md
               - name: Custodian
                 href: resources/custodian.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/ediscoverycase-list-custodians.md
                   - name: Создание
                     href: api/ediscoverycase-post-custodians.md
@@ -1469,7 +1469,7 @@ items:
               - name: набор проверки обнаружения электронных данных
                 href: resources/reviewset.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/reviewset-list.md
                   - name: Создание
                     href: api/reviewset-post.md
@@ -1478,7 +1478,7 @@ items:
               - name: Просмотр запроса Set
                 href: resources/reviewsetquery.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/reviewsetquery-list.md
                   - name: Создание
                     href: api/reviewsetquery-post.md
@@ -1486,12 +1486,12 @@ items:
                     href: api/reviewsetquery-get.md
                   - name: Обновление
                     href: api/reviewsetquery-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/reviewsetquery-delete.md
               - name: Источник сайта
                 href: resources/sitesource.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/custodian-list-sitesources.md
                   - name: Создание
                     href: api/custodian-post-sitesources.md
@@ -1502,7 +1502,7 @@ items:
               - name: Источник единой группы
                 href: resources/unifiedgroupsource.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/custodian-list-unifiedgroupsources.md
                   - name: Создание
                     href: api/custodian-post-unifiedgroupsources.md
@@ -1513,7 +1513,7 @@ items:
               - name: Источник пользователя
                 href: resources/usersource.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/custodian-list-usersources.md
                   - name: Создание
                     href: api/custodian-post-usersources.md
@@ -1651,13 +1651,13 @@ items:
               - name: Соединитель печати
                 href: resources/printconnector.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/print-list-connectors.md
                   - name: Получение
                     href: api/printconnector-get.md
                   - name: Обновление
                     href: api/printconnector-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/printconnector-delete.md
               - name: Печать документа
                 href: resources/printdocument.md
@@ -1687,7 +1687,7 @@ items:
               - name: Принтер
                 href: resources/printer.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/print-list-printers.md
                   - name: Создание
                     href: api/printer-create.md
@@ -1695,7 +1695,7 @@ items:
                     href: api/printer-get.md
                   - name: Обновление
                     href: api/printer-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/printer-delete.md
                   - name: Получение триггера задачи
                     href: api/printtasktrigger-get.md
@@ -1716,7 +1716,7 @@ items:
               - name: Общий принтер
                 href: resources/printershare.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/print-list-shares.md
                   - name: Создание
                     href: api/print-post-shares.md
@@ -1724,7 +1724,7 @@ items:
                     href: api/printershare-get.md
                   - name: Обновление
                     href: api/printershare-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/printershare-delete.md
                   - name: Список разрешенных пользователей
                     href: api/printershare-list-allowedusers.md
@@ -1741,7 +1741,7 @@ items:
               - name: Определение задачи печати
                 href: resources/printtaskdefinition.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/print-list-taskdefinitions.md
                   - name: Создание
                     href: api/print-post-taskdefinitions.md
@@ -1782,7 +1782,7 @@ items:
               - name: Служба печати
                 href: resources/printservice.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/print-list-services.md
                   - name: Получение
                     href: api/printservice-get.md
@@ -1999,7 +1999,7 @@ items:
                   - name: Веб-приложение с управляемым хранилищем Android
                     href: resources/intune-apps-androidmanagedstorewebapp.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-apps-androidmanagedstorewebapp-list.md
                       - name: Получение
                         href: api/intune-apps-androidmanagedstorewebapp-get.md
@@ -2235,7 +2235,7 @@ items:
                   - name: приложение мдатп macOS
                     href: resources/intune-apps-macosmdatpapp.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-apps-macosmdatpapp-list.md
                       - name: Получение
                         href: api/intune-apps-macosmdatpapp-get.md
@@ -2248,7 +2248,7 @@ items:
                   - name: приложение Microsoft Edge macOS
                     href: resources/intune-apps-macosmicrosoftedgeapp.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-apps-macosmicrosoftedgeapp-list.md
                       - name: Получение
                         href: api/intune-apps-macosmicrosoftedgeapp-get.md
@@ -2559,7 +2559,7 @@ items:
                   - name: Зависимость мобильных приложений
                     href: resources/intune-apps-mobileappdependency.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-apps-mobileappdependency-list.md
                       - name: Получение
                         href: api/intune-apps-mobileappdependency-get.md
@@ -2609,7 +2609,7 @@ items:
                   - name: Связь приложений для мобильных устройств
                     href: resources/intune-apps-mobileapprelationship.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-apps-mobileapprelationship-list.md
                       - name: Получение
                         href: api/intune-apps-mobileapprelationship-get.md
@@ -2620,7 +2620,7 @@ items:
                   - name: Замена мобильных приложений
                     href: resources/intune-apps-mobileappsupersedence.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-apps-mobileappsupersedence-list.md
                       - name: Получение
                         href: api/intune-apps-mobileappsupersedence-get.md
@@ -2841,7 +2841,7 @@ items:
                   - name: Приложение Windows Edge
                     href: resources/intune-apps-windowsmicrosoftedgeapp.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-apps-windowsmicrosoftedgeapp-list.md
                       - name: Получение
                         href: api/intune-apps-windowsmicrosoftedgeapp-get.md
@@ -2869,7 +2869,7 @@ items:
                   - name: Конфигурация клиента Windows Office
                     href: resources/intune-cirrus-windowsofficeclientconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-cirrus-windowsofficeclientconfiguration-list.md
                       - name: Получение
                         href: api/intune-cirrus-windowsofficeclientconfiguration-get.md
@@ -2882,7 +2882,7 @@ items:
                   - name: Конфигурация безопасности клиента Windows Office
                     href: resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-list.md
                       - name: Получение
                         href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-get.md
@@ -3059,7 +3059,7 @@ items:
                   - name: Назначение профилей регистрации Apple
                     href: resources/intune-enrollment-appleenrollmentprofileassignment.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-enrollment-appleenrollmentprofileassignment-list.md
                       - name: Получение
                         href: api/intune-enrollment-appleenrollmentprofileassignment-get.md
@@ -3074,7 +3074,7 @@ items:
                   - name: 'Профиль регистрации, инициированный пользователем Apple'
                     href: resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-enrollment-appleuserinitiatedenrollmentprofile-list.md
                       - name: Получение
                         href: api/intune-enrollment-appleuserinitiatedenrollmentprofile-get.md
@@ -3414,14 +3414,14 @@ items:
                   - name: База профиля сертификата владельца устройства Android
                     href: resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-androiddeviceownercertificateprofilebase-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androiddeviceownercertificateprofilebase-get.md
                   - name: Политика соответствия требованиям владельца устройства Android
                     href: resources/intune-deviceconfig-androiddeviceownercompliancepolicy.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-get.md
@@ -3436,7 +3436,7 @@ items:
                   - name: Конфигурация проверки подлинности производных учетных данных владельца устройств Android
                     href: resources/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androiddeviceownerderivedcredentialauthenticationconfiguration-get.md
@@ -3451,7 +3451,7 @@ items:
                   - name: Конфигурация Wi-Fi "владелец устройства Android корпоративный"
                     href: resources/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androiddeviceownerenterprisewificonfiguration-get.md
@@ -3483,7 +3483,7 @@ items:
                   - name: 'Профиль сертификата PFX, импортированный владельцем устройства Android'
                     href: resources/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androiddeviceownerimportedpfxcertificateprofile-get.md
@@ -3506,7 +3506,7 @@ items:
                   - name: Профиль сертификата PKCS для владельца устройства Android
                     href: resources/intune-deviceconfig-androiddeviceownerpkcscertificateprofile.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androiddeviceownerpkcscertificateprofile-get.md
@@ -3523,7 +3523,7 @@ items:
                   - name: Профиль сертификата SCEP владельца устройства Android
                     href: resources/intune-deviceconfig-androiddeviceownerscepcertificateprofile.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androiddeviceownerscepcertificateprofile-get.md
@@ -3538,7 +3538,7 @@ items:
                   - name: Доверенный корневой сертификат владельца устройства Android
                     href: resources/intune-deviceconfig-androiddeviceownertrustedrootcertificate.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androiddeviceownertrustedrootcertificate-get.md
@@ -3553,7 +3553,7 @@ items:
                   - name: Конфигурация VPN владельца устройства Android
                     href: resources/intune-deviceconfig-androiddeviceownervpnconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-androiddeviceownervpnconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-androiddeviceownervpnconfiguration-get.md
@@ -4087,7 +4087,7 @@ items:
                   - name: База конфигурации для ускоренного возврата Apple
                     href: resources/intune-deviceconfig-appleexpeditedcheckinconfigurationbase.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-appleexpeditedcheckinconfigurationbase-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-appleexpeditedcheckinconfigurationbase-get.md
@@ -4636,7 +4636,7 @@ items:
                   - name: Операция групповой политики
                     href: resources/intune-grouppolicy-grouppolicyoperation.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-grouppolicy-grouppolicyoperation-list.md
                       - name: Получение
                         href: api/intune-grouppolicy-grouppolicyoperation-get.md
@@ -4872,7 +4872,7 @@ items:
                   - name: 'Категория, отправленная групповой политикой'
                     href: resources/intune-grouppolicy-grouppolicyuploadedcategory.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-grouppolicy-grouppolicyuploadedcategory-list.md
                       - name: Получение
                         href: api/intune-grouppolicy-grouppolicyuploadedcategory-get.md
@@ -4885,7 +4885,7 @@ items:
                   - name: Определение загруженной групповой политики
                     href: resources/intune-grouppolicy-grouppolicyuploadeddefinition.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-grouppolicy-grouppolicyuploadeddefinition-list.md
                       - name: Получение
                         href: api/intune-grouppolicy-grouppolicyuploadeddefinition-get.md
@@ -4898,7 +4898,7 @@ items:
                   - name: Файл определения загруженной групповой политики
                     href: resources/intune-grouppolicy-grouppolicyuploadeddefinitionfile.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-list.md
                       - name: Получение
                         href: api/intune-grouppolicy-grouppolicyuploadeddefinitionfile-get.md
@@ -4925,7 +4925,7 @@ items:
                   - name: 'Групповая политика, отправленная в презентацию'
                     href: resources/intune-grouppolicy-grouppolicyuploadedpresentation.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-grouppolicy-grouppolicyuploadedpresentation-list.md
                       - name: Получение
                         href: api/intune-grouppolicy-grouppolicyuploadedpresentation-get.md
@@ -4992,7 +4992,7 @@ items:
                   - name: Конфигурация проверки подлинности производных учетных данных iOS
                     href: resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration-get.md
@@ -5072,7 +5072,7 @@ items:
                   - name: Конфигурация ускоренной записи iOS
                     href: resources/intune-deviceconfig-iosexpeditedcheckinconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-iosexpeditedcheckinconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-iosexpeditedcheckinconfiguration-get.md
@@ -5244,7 +5244,7 @@ items:
                   - name: Конфигурация VPN EV2 Иосик
                     href: resources/intune-deviceconfig-iosikev2vpnconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-iosikev2vpnconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-iosikev2vpnconfiguration-get.md
@@ -5323,7 +5323,7 @@ items:
                   - name: Конфигурация настраиваемого приложения macOS
                     href: resources/intune-deviceconfig-macoscustomappconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-macoscustomappconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-macoscustomappconfiguration-get.md
@@ -5388,7 +5388,7 @@ items:
                   - name: Конфигурация расширений macOS
                     href: resources/intune-deviceconfig-macosextensionsconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-macosextensionsconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-macosextensionsconfiguration-get.md
@@ -5439,7 +5439,7 @@ items:
                   - name: Профиль сертификата macOS PKCS
                     href: resources/intune-deviceconfig-macospkcscertificateprofile.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-macospkcscertificateprofile-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-macospkcscertificateprofile-get.md
@@ -5473,7 +5473,7 @@ items:
                   - name: Сводка по учетной записи обновления программного обеспечения macOS
                     href: resources/intune-deviceconfig-macossoftwareupdateaccountsummary.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-macossoftwareupdateaccountsummary-get.md
@@ -5490,7 +5490,7 @@ items:
                   - name: Сводка по категории обновлений программного обеспечения macOS
                     href: resources/intune-deviceconfig-macossoftwareupdatecategorysummary.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-macossoftwareupdatecategorysummary-get.md
@@ -5503,7 +5503,7 @@ items:
                   - name: Конфигурация обновления программного обеспечения macOS
                     href: resources/intune-deviceconfig-macossoftwareupdateconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-macossoftwareupdateconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-macossoftwareupdateconfiguration-get.md
@@ -5522,7 +5522,7 @@ items:
                   - name: Сводка по состоянию обновления программного обеспечения macOS
                     href: resources/intune-deviceconfig-macossoftwareupdatestatesummary.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-macossoftwareupdatestatesummary-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-macossoftwareupdatestatesummary-get.md
@@ -5580,7 +5580,7 @@ items:
                   - name: Конфигурация проводной сети macOS
                     href: resources/intune-deviceconfig-macoswirednetworkconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-macoswirednetworkconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-macoswirednetworkconfiguration-get.md
@@ -5593,7 +5593,7 @@ items:
                   - name: Состояние всех управляемых сертификатов устройств
                     href: resources/intune-deviceconfig-managedalldevicecertificatestate.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-managedalldevicecertificatestate-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-managedalldevicecertificatestate-get.md
@@ -5701,7 +5701,7 @@ items:
                   - name: Локальная зашифрованная полезная нагрузка
                     href: resources/intune-raimportcerts-onpremencryptedpayload.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-raimportcerts-onpremencryptedpayload-list.md
                       - name: Получение
                         href: api/intune-raimportcerts-onpremencryptedpayload-get.md
@@ -5720,7 +5720,7 @@ items:
                   - name: Запрос на получение шифрования PFX
                     href: resources/intune-raimportcerts-pfxrecryptionrequest.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-raimportcerts-pfxrecryptionrequest-list.md
                       - name: Получение
                         href: api/intune-raimportcerts-pfxrecryptionrequest-get.md
@@ -5733,7 +5733,7 @@ items:
                   - name: Сертификат пользователя PFX
                     href: resources/intune-raimportcerts-pfxusercertificate.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-raimportcerts-pfxusercertificate-list.md
                       - name: Получение
                         href: api/intune-raimportcerts-pfxusercertificate-get.md
@@ -5916,7 +5916,7 @@ items:
                   - name: Конфигурация VPN
                     href: resources/intune-deviceconfig-vpnconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-vpnconfiguration-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-vpnconfiguration-get.md
@@ -6014,7 +6014,7 @@ items:
                   - name: Интерфейс конфигурации встроенного по устройства Windows 10
                     href: resources/intune-deviceconfig-windows10devicefirmwareconfigurationinterface.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceconfig-windows10devicefirmwareconfigurationinterface-list.md
                       - name: Получение
                         href: api/intune-deviceconfig-windows10devicefirmwareconfigurationinterface-get.md
@@ -6708,7 +6708,7 @@ items:
                   - name: 'Устройство, подлежащий управлению'
                     href: resources/intune-devices-comanagementeligibledevice.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-comanagementeligibledevice-list.md
                       - name: Получение
                         href: api/intune-devices-comanagementeligibledevice-get.md
@@ -6777,7 +6777,7 @@ items:
                   - name: Сценарий соответствия устройства требованиям
                     href: resources/intune-devices-devicecompliancescript.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-devicecompliancescript-list.md
                       - name: Получение
                         href: api/intune-devices-devicecompliancescript-get.md
@@ -6792,7 +6792,7 @@ items:
                   - name: Состояние устройства со сценариями соответствия требованиям устройства
                     href: resources/intune-devices-devicecompliancescriptdevicestate.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-devicecompliancescriptdevicestate-list.md
                       - name: Получение
                         href: api/intune-devices-devicecompliancescriptdevicestate-get.md
@@ -6812,7 +6812,7 @@ items:
                   - name: Сценарий оболочки настраиваемого атрибута устройства
                     href: resources/intune-devices-devicecustomattributeshellscript.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-devicecustomattributeshellscript-list.md
                       - name: Получение
                         href: api/intune-devices-devicecustomattributeshellscript-get.md
@@ -6843,7 +6843,7 @@ items:
                   - name: Сценарий работоспособности устройства
                     href: resources/intune-devices-devicehealthscript.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-devicehealthscript-list.md
                       - name: Получение
                         href: api/intune-devices-devicehealthscript-get.md
@@ -6864,7 +6864,7 @@ items:
                   - name: Назначение сценария работоспособности устройства
                     href: resources/intune-devices-devicehealthscriptassignment.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-devicehealthscriptassignment-list.md
                       - name: Получение
                         href: api/intune-devices-devicehealthscriptassignment-get.md
@@ -6881,7 +6881,7 @@ items:
                   - name: Состояние устройства сценария работоспособности устройства
                     href: resources/intune-devices-devicehealthscriptdevicestate.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-devicehealthscriptdevicestate-list.md
                       - name: Получение
                         href: api/intune-devices-devicehealthscriptdevicestate-get.md
@@ -6923,7 +6923,7 @@ items:
                   - name: Отклик коллекции журнала устройств
                     href: resources/intune-devices-devicelogcollectionresponse.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-devicelogcollectionresponse-list.md
                       - name: Получение
                         href: api/intune-devices-devicelogcollectionresponse-get.md
@@ -6966,7 +6966,7 @@ items:
                   - name: Событие автопилота управления устройствами
                     href: resources/intune-troubleshooting-devicemanagementautopilotevent.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-troubleshooting-devicemanagementautopilotevent-list.md
                       - name: Получение
                         href: api/intune-troubleshooting-devicemanagementautopilotevent-get.md
@@ -6981,7 +6981,7 @@ items:
                   - name: Сведения о состоянии политики автопилотного управления устройствами
                     href: resources/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail-list.md
                       - name: Получение
                         href: api/intune-troubleshooting-devicemanagementautopilotpolicystatusdetail-get.md
@@ -7388,7 +7388,7 @@ items:
                   - name: Сценарий оболочки устройства
                     href: resources/intune-devices-deviceshellscript.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-deviceshellscript-list.md
                       - name: Получение
                         href: api/intune-devices-deviceshellscript-get.md
@@ -7501,7 +7501,7 @@ items:
                   - name: Состояние вредоносных программ для устройства с Windows
                     href: resources/intune-devices-malwarestateforwindowsdevice.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-malwarestateforwindowsdevice-list.md
                       - name: Получение
                         href: api/intune-devices-malwarestateforwindowsdevice-get.md
@@ -7763,7 +7763,7 @@ items:
                   - name: Сводка по состоянию категории базовых показателей безопасности
                     href: resources/intune-deviceintent-securitybaselinecategorystatesummary.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-deviceintent-securitybaselinecategorystatesummary-list.md
                       - name: Получение
                         href: api/intune-deviceintent-securitybaselinecategorystatesummary-get.md
@@ -7825,7 +7825,7 @@ items:
                   - name: Производительность приложения аналитики приложения аналитики взаимодействия с пользователем по версии приложения
                     href: resources/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-list.md
                       - name: Получение
                         href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-get.md
@@ -7838,7 +7838,7 @@ items:
                   - name: Производительность приложения аналитики приложения аналитики взаимодействия с пользователем по версии o s
                     href: resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-list.md
                       - name: Получение
                         href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion-get.md
@@ -7851,7 +7851,7 @@ items:
                   - name: Производительность приложения аналитики приложения аналитики взаимодействия с пользователем
                     href: resources/intune-devices-userexperienceanalyticsapphealthapplicationperformance.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-list.md
                       - name: Получение
                         href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-get.md
@@ -7864,7 +7864,7 @@ items:
                   - name: Производительность модели устройства аналитики работоспособности приложения аналитики взаимодействия с пользователем
                     href: resources/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-list.md
                       - name: Получение
                         href: api/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance-get.md
@@ -7877,7 +7877,7 @@ items:
                   - name: Производительность устройства аналитики приложения аналитики взаимодействия с пользователем
                     href: resources/intune-devices-userexperienceanalyticsapphealthdeviceperformance.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-list.md
                       - name: Получение
                         href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-get.md
@@ -7890,7 +7890,7 @@ items:
                   - name: Сведения о производительности устройства службы аналитики взаимодействия с пользователем
                     href: resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-list.md
                       - name: Получение
                         href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails-get.md
@@ -7903,7 +7903,7 @@ items:
                   - name: Производительность приложения аналитики взаимодействия с пользователем с версией o s
                     href: resources/intune-devices-userexperienceanalyticsapphealthosversionperformance.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-list.md
                       - name: Получение
                         href: api/intune-devices-userexperienceanalyticsapphealthosversionperformance-get.md
@@ -7916,7 +7916,7 @@ items:
                   - name: Базовый шаблон аналитики взаимодействия с пользователем
                     href: resources/intune-devices-userexperienceanalyticsbaseline.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-userexperienceanalyticsbaseline-list.md
                       - name: Получение
                         href: api/intune-devices-userexperienceanalyticsbaseline-get.md
@@ -7936,7 +7936,7 @@ items:
                   - name: Производительность устройства аналитики взаимодействия с пользователем
                     href: resources/intune-devices-userexperienceanalyticsdeviceperformance.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-userexperienceanalyticsdeviceperformance-list.md
                       - name: Получение
                         href: api/intune-devices-userexperienceanalyticsdeviceperformance-get.md
@@ -7951,7 +7951,7 @@ items:
                   - name: Журнал запуска устройства Analytics User Experience
                     href: resources/intune-devices-userexperienceanalyticsdevicestartuphistory.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-userexperienceanalyticsdevicestartuphistory-list.md
                       - name: Получение
                         href: api/intune-devices-userexperienceanalyticsdevicestartuphistory-get.md
@@ -7964,7 +7964,7 @@ items:
                   - name: Процесс запуска устройства службы аналитики взаимодействия с пользователем
                     href: resources/intune-devices-userexperienceanalyticsdevicestartupprocess.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-userexperienceanalyticsdevicestartupprocess-list.md
                       - name: Получение
                         href: api/intune-devices-userexperienceanalyticsdevicestartupprocess-get.md
@@ -7977,7 +7977,7 @@ items:
                   - name: Производительность процесса запуска устройства Analytics User Experience
                     href: resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-list.md
                       - name: Получение
                         href: api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-get.md
@@ -7998,7 +7998,7 @@ items:
                   - name: Метрика аналитики взаимодействия с пользователем
                     href: resources/intune-devices-userexperienceanalyticsmetric.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-userexperienceanalyticsmetric-list.md
                       - name: Получение
                         href: api/intune-devices-userexperienceanalyticsmetric-get.md
@@ -8011,7 +8011,7 @@ items:
                   - name: Журнал метрики для аналитики взаимодействия с пользователем
                     href: resources/intune-devices-userexperienceanalyticsmetrichistory.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-userexperienceanalyticsmetrichistory-list.md
                       - name: Получение
                         href: api/intune-devices-userexperienceanalyticsmetrichistory-get.md
@@ -8042,7 +8042,7 @@ items:
                   - name: Журнал оценки для службы пользовательского интерфейса
                     href: resources/intune-devices-userexperienceanalyticsscorehistory.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-devices-userexperienceanalyticsscorehistory-list.md
                       - name: Получение
                         href: api/intune-devices-userexperienceanalyticsscorehistory-get.md
@@ -8482,7 +8482,7 @@ items:
                   - name: Партнер по управлению соответствием
                     href: resources/intune-onboarding-compliancemanagementpartner.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-onboarding-compliancemanagementpartner-list.md
                       - name: Получение
                         href: api/intune-onboarding-compliancemanagementpartner-get.md
@@ -8499,7 +8499,7 @@ items:
                   - name: Конфигурация центра управления мобильными устройствами
                     href: resources/intune-onboarding-devicecomanagementauthorityconfiguration.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-onboarding-devicecomanagementauthorityconfiguration-list.md
                       - name: Получение
                         href: api/intune-onboarding-devicecomanagementauthorityconfiguration-get.md
@@ -8828,7 +8828,7 @@ items:
                   - name: Автоматическое назначение тега области применения роли
                     href: resources/intune-rbac-rolescopetagautoassignment.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-rbac-rolescopetagautoassignment-list.md
                       - name: Получение
                         href: api/intune-rbac-rolescopetagautoassignment-get.md
@@ -8967,7 +8967,7 @@ items:
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-get.md
                       - name: Обновление
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-update.md
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-list.md
                       - name: Удалить
                         href: api/intune-shared-devicemanagementderivedcredentialsettings-delete.md
@@ -9250,7 +9250,7 @@ items:
                   - name: Состояние центра обновления Windows
                     href: resources/intune-shared-windowsupdatestate.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/intune-shared-windowsupdatestate-list.md
                       - name: Получение
                         href: api/intune-shared-windowsupdatestate-get.md
@@ -9286,7 +9286,7 @@ items:
               - name: Cloud PC
                 href: resources/cloudpc.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/virtualendpoint-list-cloudpcs.md
                   - name: Получение
                     href: api/cloudpc-get.md
@@ -9295,7 +9295,7 @@ items:
               - name: Изображение облачного устройства для ПК
                 href: resources/cloudpcdeviceimage.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/virtualendpoint-list-deviceimages.md
                   - name: Получение
                     href: api/cloudpcdeviceimage-get.md
@@ -9308,7 +9308,7 @@ items:
               - name: Локальное подключение к облачному компьютеру
                 href: resources/cloudpconpremisesconnection.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/virtualendpoint-list-onpremisesconnections.md
                   - name: Получение
                     href: api/cloudpconpremisesconnection-get.md
@@ -9316,14 +9316,14 @@ items:
                     href: api/virtualendpoint-post-onpremisesconnections.md
                   - name: Обновление
                     href: api/cloudpconpremisesconnection-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/cloudpconpremisesconnection-delete.md
                   - name: Выполнение проверок работоспособности
                     href: api/cloudpconpremisesconnection-runhealthcheck.md
               - name: Политика подготовки облачных ПК
                 href: resources/cloudpcprovisioningpolicy.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/virtualendpoint-list-provisioningpolicies.md
                   - name: Получение
                     href: api/cloudpcprovisioningpolicy-get.md
@@ -9331,7 +9331,7 @@ items:
                     href: api/virtualendpoint-post-provisioningpolicies.md
                   - name: Обновление
                     href: api/cloudpcprovisioningpolicy-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/cloudpcprovisioningpolicy-delete.md
                   - name: Назначение
                     href: api/cloudpcprovisioningpolicy-assign.md
@@ -9916,7 +9916,7 @@ items:
               - name: Административная единица
                 href: resources/administrativeunit.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/administrativeunit-list.md
                   - name: Создание
                     href: api/administrativeunit-post-administrativeunits.md
@@ -9924,7 +9924,7 @@ items:
                     href: api/administrativeunit-get.md
                   - name: Обновление
                     href: api/administrativeunit-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/administrativeunit-delete.md
                   - name: Получение дельты
                     href: api/administrativeunit-delta.md
@@ -9948,7 +9948,7 @@ items:
                 items:
                   - name: Ключ восстановления BitLocker
                     href: resources/bitlockerrecoverykey.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/bitlocker-list-recoverykeys.md
                   - name: Получение
                     href: api/bitlockerrecoverykey-get.md
@@ -10082,7 +10082,7 @@ items:
               - name: Политика развертывания компонентов
                 href: resources/featurerolloutpolicy.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/directory-list-featurerolloutpolicies.md
                   - name: Получение
                     href: api/featurerolloutpolicy-get.md
@@ -10090,7 +10090,7 @@ items:
                     href: api/directory-post-featurerolloutpolicies.md
                   - name: Обновление
                     href: api/featurerolloutpolicy-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/featurerolloutpolicy-delete.md
                   - name: Создание appliesTo
                     href: api/featurerolloutpolicy-post-appliesto.md
@@ -10174,7 +10174,7 @@ items:
                   - name: Несколько назначений ролей
                     href: resources/unifiedroleassignmentmultiple.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/unifiedroleassignmentmultiple-list.md
                       - name: Создание
                         href: api/unifiedroleassignmentmultiple-post.md
@@ -10182,7 +10182,7 @@ items:
                         href: api/unifiedroleassignmentmultiple-get.md
                       - name: Обновление
                         href: api/unifiedroleassignmentmultiple-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/unifiedroleassignmentmultiple-delete.md
           - name: Удостоверение и вход
             items:
@@ -10201,7 +10201,7 @@ items:
                   - name: Ключи контроля доступа FIDO2
                     href: resources/fido2authenticationmethod.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/fido2authenticationmethod-list.md
                       - name: Получение
                         href: api/fido2authenticationmethod-get.md
@@ -10210,7 +10210,7 @@ items:
                   - name: Sign-In телефона без пароля для средства проверки подлинности (Майкрософт)
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-list.md
                       - name: Получение
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
@@ -10219,13 +10219,13 @@ items:
                   - name: Phone
                     href: resources/phoneauthenticationmethod.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/authentication-list-phonemethods.md
                       - name: Получение
                         href: api/phoneauthenticationmethod-get.md
                       - name: Обновление
                         href: api/phoneauthenticationmethod-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/phoneauthenticationmethod-delete.md
                       - name: Добавление
                         href: api/authentication-post-phonemethods.md
@@ -10236,20 +10236,20 @@ items:
                   - name: Электронный адрес
                     href: resources/emailauthenticationmethod.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/emailauthenticationmethod-list.md
                       - name: Получение
                         href: api/emailauthenticationmethod-get.md
                       - name: Обновление
                         href: api/emailauthenticationmethod-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/emailauthenticationmethod-delete.md
                       - name: Добавление
                         href: api/emailauthenticationmethod-post.md
-                  - name: Password
+                  - name: Пароль
                     href: resources/passwordauthenticationmethod.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/authentication-list-passwordmethods.md
                       - name: Получение
                         href: api/passwordauthenticationmethod-get.md
@@ -10268,7 +10268,7 @@ items:
                         href: api/fido2authenticationmethodconfiguration-get.md
                       - name: Обновление
                         href: api/fido2authenticationmethodconfiguration-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/fido2authenticationmethodconfiguration-delete.md
                   - name: Политика входа без пароля для проверки подлинности (Майкрософт) для телефона
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md
@@ -10277,8 +10277,17 @@ items:
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-get.md
                       - name: Обновление
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
+                  - name: Политика электронной почты
+                    href: resources/emailauthenticationmethodconfiguration.md
+                    items:
+                      - name: Получение
+                        href: api/emailauthenticationmethodconfiguration-get.md
+                      - name: Обновление
+                        href: api/emailauthenticationmethodconfiguration-update.md
+                      - name: Удаление
+                        href: api/emailauthenticationmethodconfiguration-delete.md
               - name: Политика методов проверки подлинности B2C
                 href: resources/b2cauthenticationmethodspolicy.md
                 items:
@@ -10289,7 +10298,7 @@ items:
               - name: Настройка проверки подлинности на основе сертификатов
                 href: resources/certificatebasedauthconfiguration.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/certificatebasedauthconfiguration-list.md
                   - name: Получение
                     href: api/certificatebasedauthconfiguration-get.md
@@ -10303,7 +10312,7 @@ items:
                     items:
                       - name: Политика условного доступа
                         href: resources/conditionalaccesspolicy.md
-                      - name: Список
+                      - name: Перечисление
                         href: api/conditionalaccessroot-list-policies.md
                       - name: Создание
                         href: api/conditionalaccessroot-post-policies.md
@@ -10311,7 +10320,7 @@ items:
                         href: api/conditionalaccesspolicy-get.md
                       - name: Обновление
                         href: api/conditionalaccesspolicy-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/conditionalaccesspolicy-delete.md
                   - name: Именованные расположения
                     items:
@@ -10319,7 +10328,7 @@ items:
                         items:
                           - name: Именованное расположение
                             href: resources/namedlocation.md
-                          - name: Список
+                          - name: Перечисление
                             href: api/conditionalaccessroot-list-namedlocations.md
                           - name: Получение
                             href: api/namedlocation-get.md
@@ -10329,7 +10338,7 @@ items:
                         items:
                           - name: Название страны
                             href: resources/countrynamedlocation.md
-                          - name: Список
+                          - name: Перечисление
                             href: api/conditionalaccessroot-list-namedlocations.md
                           - name: Создание
                             href: api/conditionalaccessroot-post-namedlocations.md
@@ -10337,13 +10346,13 @@ items:
                             href: api/countrynamedlocation-get.md
                           - name: Обновление
                             href: api/countrynamedlocation-update.md
-                          - name: Delete
+                          - name: Удаление
                             href: api/countrynamedlocation-delete.md
                       - name: IP-адрес с именем
                         items:
                           - name: IP-адрес с именем
                             href: resources/ipnamedlocation.md
-                          - name: Список
+                          - name: Перечисление
                             href: api/conditionalaccessroot-list-namedlocations.md
                           - name: Создание
                             href: api/conditionalaccessroot-post-namedlocations.md
@@ -10351,7 +10360,7 @@ items:
                             href: api/ipnamedlocation-get.md
                           - name: Обновление
                             href: api/ipnamedlocation-update.md
-                          - name: Delete
+                          - name: Удаление
                             href: api/ipnamedlocation-delete.md
               - name: Операции с политикой данных
                 href: resources/datapolicyoperation.md
@@ -10443,7 +10452,7 @@ items:
                     href: resources/identityprovider.md
                   - name: Тип поставщика удостоверений OpenID Connect
                     href: resources/openidconnectprovider.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/identityprovider-list.md
                   - name: Создание
                     href: api/identityprovider-post-identityproviders.md
@@ -10451,7 +10460,7 @@ items:
                     href: api/identityprovider-get.md
                   - name: Обновление
                     href: api/identityprovider-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/identityprovider-delete.md
                   - name: Перечисление доступных типов поставщиков
                     href: api/identityprovider-list-availableprovidertypes.md
@@ -10469,7 +10478,7 @@ items:
                     href: api/organizationalbrandingproperties-get.md
                   - name: Обновление
                     href: api/organizationalbrandingproperties-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/organizationalbrandingproperties-delete.md
                   - name: Создание локализованных
                     href: api/organizationalbrandingpropertieslocalization-create.md
@@ -10508,7 +10517,7 @@ items:
                         href: api/activitybasedtimeoutpolicy-get.md
                       - name: Обновление
                         href: api/activitybasedtimeoutpolicy-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/activitybasedtimeoutpolicy-delete.md
                   - name: Политика авторизации
                     href: resources/authorizationpolicy.md
@@ -10528,7 +10537,7 @@ items:
                         href: api/claimsmappingpolicy-get.md
                       - name: Обновление
                         href: api/claimsmappingpolicy-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/claimsmappingpolicy-delete.md
                       - name: Список субъектов-служб и приложений
                         href: api/claimsmappingpolicy-list-appliesto.md
@@ -10543,7 +10552,7 @@ items:
                         href: api/homerealmdiscoverypolicy-get.md
                       - name: Обновление
                         href: api/homerealmdiscoverypolicy-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/homerealmdiscoverypolicy-delete.md
                       - name: Список субъектов-служб и приложений
                         href: api/homerealmdiscoverypolicy-list-appliesto.md
@@ -10558,7 +10567,7 @@ items:
                         href: api/permissiongrantpolicy-get.md
                       - name: Обновление
                         href: api/permissiongrantpolicy-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/permissiongrantpolicy-delete.md
                       - name: Наборы условий предоставления разрешений
                         href: resources/permissiongrantconditionset.md
@@ -10586,7 +10595,7 @@ items:
                         href: api/tokenissuancepolicy-get.md
                       - name: Обновление
                         href: api/tokenissuancepolicy-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/tokenissuancepolicy-delete.md
                       - name: Список субъектов-служб и приложений
                         href: api/tokenissuancepolicy-list-appliesto.md
@@ -10601,7 +10610,7 @@ items:
                         href: api/tokenlifetimepolicy-get.md
                       - name: Обновление
                         href: api/tokenlifetimepolicy-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/tokenlifetimepolicy-delete.md
                       - name: Список субъектов-служб и приложений
                         href: api/tokenlifetimepolicy-list-appliesto.md
@@ -10622,7 +10631,7 @@ items:
               - name: Набор ключей инфраструктуры доверия
                 href: resources/trustframeworkkeyset.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/trustframework-list-keysets.md
                   - name: Создание
                     href: api/trustframework-post-keysets.md
@@ -10630,7 +10639,7 @@ items:
                     href: api/trustframeworkkeyset-get.md
                   - name: Обновление
                     href: api/trustframeworkkeyset-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/trustframeworkkeyset-delete.md
                   - name: Создание ключа
                     href: api/trustframeworkkeyset-generatekey.md
@@ -10645,7 +10654,7 @@ items:
               - name: Политика инфраструктуры доверия
                 href: resources/trustframeworkpolicy.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/trustframework-list-trustframeworkpolicies.md
                   - name: Создание
                     href: api/trustframework-post-trustframeworkpolicy.md
@@ -10653,7 +10662,7 @@ items:
                     href: api/trustframeworkpolicy-get.md
                   - name: Обновление
                     href: api/trustframework-put-trustframeworkpolicy.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/trustframeworkpolicy-delete.md
               - name: Потоки пользователей
                 items:
@@ -10661,7 +10670,7 @@ items:
                     items:
                       - name: Пользовательская схема
                         href: resources/identityuserflow.md
-                      - name: Список
+                      - name: Перечисление
                         href: api/identityuserflow-list.md
                       - name: Создание
                         href: api/identityuserflow-post-userflows.md
@@ -10673,7 +10682,7 @@ items:
                     items:
                       - name: B2C пользовательская схема
                         href: resources/b2cidentityuserflow.md
-                      - name: Список
+                      - name: Перечисление
                         href: api/identitycontainer-list-b2cuserflows.md
                       - name: Создание
                         href: api/identitycontainer-post-b2cuserflows.md
@@ -10687,7 +10696,7 @@ items:
                         href: api/b2cidentityuserflow-post-identityproviders.md
                       - name: Удаление поставщика удостоверений
                         href: api/b2cidentityuserflow-delete-identityproviders.md
-                      - name: Назначение атрибутов пользователя списка
+                      - name: Назначения атрибутов пользователя в списке
                         href: api/b2cidentityuserflow-list-userattributeassignments.md
                       - name: Создание назначения атрибута пользователя
                         href: api/b2cidentityuserflow-post-userattributeassignments.md
@@ -10695,7 +10704,7 @@ items:
                     items:
                       - name: B2X пользовательская схема
                         href: resources/b2xidentityuserflow.md
-                      - name: Список
+                      - name: Перечисление
                         href: api/identitycontainer-list-b2xuserflows.md
                       - name: Создание
                         href: api/identitycontainer-post-b2xuserflows.md
@@ -10709,7 +10718,7 @@ items:
                         href: api/b2xidentityuserflow-post-identityproviders.md
                       - name: Удаление поставщика удостоверений
                         href: api/b2xidentityuserflow-delete-identityproviders.md
-                      - name: Назначение атрибутов пользователя списка
+                      - name: Назначения атрибутов пользователя в списке
                         href: api/b2xidentityuserflow-list-userattributeassignments.md
                       - name: Создание назначения атрибута пользователя
                         href: api/b2xidentityuserflow-post-userattributeassignments.md
@@ -10717,7 +10726,7 @@ items:
                     items:
                       - name: Атрибут Flow Flow
                         href: resources/identityuserflowattribute.md
-                      - name: Список
+                      - name: Перечисление
                         href: api/identityuserflowattribute-list.md
                       - name: Создание
                         href: api/identityuserflowattribute-post.md
@@ -10725,7 +10734,7 @@ items:
                         href: api/identityuserflowattribute-get.md
                       - name: Обновление
                         href: api/identityuserflowattribute-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/identityuserflowattribute-delete.md
                   - name: Назначение атрибута пользовательского процесса
                     items:
@@ -10745,7 +10754,7 @@ items:
                   - name: Определение расписания проверки доступа
                     href: resources/accessreviewscheduledefinition.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/accessreviewscheduledefinition-list.md
                       - name: Получение
                         href: api/accessreviewscheduledefinition-get.md
@@ -10758,7 +10767,7 @@ items:
                   - name: Экземпляр проверки доступа
                     href: resources/accessreviewinstance.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/accessreviewinstance-list.md
                       - name: Получение
                         href: api/accessreviewinstance-get.md
@@ -10775,7 +10784,7 @@ items:
                   - name: Элемент принятия решения для проверки доступа к экземпляру
                     href: resources/accessreviewinstancedecisionitem.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/accessreviewinstancedecisionitem-list.md
                       - name: Список ожидающих утверждения
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
@@ -10851,7 +10860,7 @@ items:
                   - name: Пакет Access
                     href: resources/accesspackage.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/accesspackage-list.md
                       - name: Создание
                         href: api/accesspackage-post.md
@@ -10859,17 +10868,17 @@ items:
                         href: api/accesspackage-get.md
                       - name: Обновление
                         href: api/accesspackage-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/accesspackage-delete.md
                   - name: Назначение пакетов Access
                     href: resources/accesspackageassignment.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/accesspackageassignment-list.md
                   - name: Политика назначения пакетов Access
                     href: resources/accesspackageassignmentpolicy.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/accesspackageassignmentpolicy-list.md
                       - name: Создание
                         href: api/accesspackageassignmentpolicy-post.md
@@ -10877,12 +10886,12 @@ items:
                         href: api/accesspackageassignmentpolicy-get.md
                       - name: Обновление
                         href: api/accesspackageassignmentpolicy-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/accesspackageassignmentpolicy-delete.md
                   - name: Запрос на назначение пакета Access
                     href: resources/accesspackageassignmentrequest.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/accesspackageassignmentrequest-list.md
                       - name: Создание
                         href: api/accesspackageassignmentrequest-post.md
@@ -10891,14 +10900,14 @@ items:
                   - name: Роль ресурса назначения пакетов Access
                     href: resources/accesspackageassignmentresourcerole.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/accesspackageassignmentresourcerole-list.md
                       - name: Получение
                         href: api/accesspackageassignmentresourcerole-get.md
                   - name: Доступ к каталогу пакетов
                     href: resources/accesspackagecatalog.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/accesspackagecatalog-list.md
                       - name: Создание
                         href: api/accesspackagecatalog-post.md
@@ -10906,7 +10915,7 @@ items:
                         href: api/accesspackagecatalog-get.md
                       - name: Обновление
                         href: api/accesspackagecatalog-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/accesspackagecatalog-delete.md
                       - name: Список ресурсов
                         href: api/accesspackagecatalog-list-accesspackageresources.md
@@ -10915,21 +10924,21 @@ items:
                   - name: Запрос на доступ к ресурсу пакета
                     href: resources/accesspackageresourcerequest.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/accesspackageresourcerequest-list.md
                       - name: Создание
                         href: api/accesspackageresourcerequest-post.md
                   - name: Область применения роли ресурса пакета Access
                     href: resources/accesspackageresourcerolescope.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/accesspackage-list-accesspackageresourcerolescopes.md
                       - name: Создание
                         href: api/accesspackage-post-accesspackageresourcerolescopes.md
                   - name: Подключенная Организация
                     href: resources/connectedorganization.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/connectedorganization-list.md
                       - name: Создание
                         href: api/connectedorganization-post.md
@@ -10937,7 +10946,7 @@ items:
                         href: api/connectedorganization-get.md
                       - name: Обновление
                         href: api/connectedorganization-update.md
-                      - name: Delete
+                      - name: Удаление
                         href: api/connectedorganization-delete.md
                       - name: Список внешних спонсоров
                         href: api/connectedorganization-list-externalsponsors.md
@@ -11266,7 +11275,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
                   - name: Получение многозначного свойства
                     href: api/multivaluelegacyextendedproperty-get.md
-      - name: Примечания
+      - name: Заметки
         displayName: OneNote
         items:
           - name: Обзор
@@ -11390,7 +11399,7 @@ items:
                 items:
                   - name: Сведения об учетной записи пользователя
                     href: resources/useraccountinformation.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-accounts.md
                   - name: Создание
                     href: api/profile-post-accounts.md
@@ -11398,13 +11407,13 @@ items:
                     href: api/useraccountinformation-get.md
                   - name: Обновление
                     href: api/useraccountinformation-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/useraccountinformation-delete.md
               - name: Addresses
                 items:
                   - name: Адрес элемента
                     href: resources/itemaddress.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-addresses.md
                   - name: Создание
                     href: api/profile-post-addresses.md
@@ -11412,13 +11421,13 @@ items:
                     href: api/itemaddress-get.md
                   - name: Обновление
                     href: api/itemaddress-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/itemaddress-delete.md
               - name: Годовщины
                 items:
                   - name: Годовщина сотрудника
                     href: resources/personanniversary.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-anniversaries.md
                   - name: Создание
                     href: api/profile-post-anniversaries.md
@@ -11426,13 +11435,13 @@ items:
                     href: api/personanniversary-get.md
                   - name: Обновление
                     href: api/personanniversary-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/personanniversary-delete.md
               - name: Награды
                 items:
                   - name: Награда для людей
                     href: resources/personaward.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-awards.md
                   - name: Создание
                     href: api/profile-post-awards.md
@@ -11440,13 +11449,13 @@ items:
                     href: api/personaward-get.md
                   - name: Обновление
                     href: api/personaward-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/personaward-delete.md
               - name: Сертификаты
                 items:
                   - name: Сертификация пользователей
                     href: resources/personcertification.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-certifications.md
                   - name: Создание
                     href: api/profile-post-certifications.md
@@ -11454,13 +11463,13 @@ items:
                     href: api/personcertification-get.md
                   - name: Обновление
                     href: api/personcertification-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/personcertification-delete.md
               - name: Образовательные действия
                 items:
                   - name: Образовательные действия
                     href: resources/educationalactivity.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-educationalactivities.md
                   - name: Создание
                     href: api/profile-post-educationalactivities.md
@@ -11468,13 +11477,13 @@ items:
                     href: api/educationalactivity-get.md
                   - name: Обновление
                     href: api/educationalactivity-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/educationalactivity-delete.md
               - name: Адрес электронной почты
                 items:
                   - name: Электронная почта элемента
                     href: resources/itememail.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-emails.md
                   - name: Создание
                     href: api/profile-post-emails.md
@@ -11482,13 +11491,13 @@ items:
                     href: api/itememail-get.md
                   - name: Обновление
                     href: api/itememail-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/itememail-delete.md
               - name: Увлечения
                 items:
                   - name: Процентное соответственное лицо
                     href: resources/personinterest.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-interests.md
                   - name: Создание
                     href: api/profile-post-interests.md
@@ -11496,13 +11505,13 @@ items:
                     href: api/personinterest-get.md
                   - name: Обновление
                     href: api/personinterest-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/personinterest-delete.md
               - name: Языки
                 items:
                   - name: Знание языка
                     href: resources/languageproficiency.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-languages.md
                   - name: Создание
                     href: api/profile-post-languages.md
@@ -11510,13 +11519,13 @@ items:
                     href: api/languageproficiency-get.md
                   - name: Обновление
                     href: api/languageproficiency-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/languageproficiency-delete.md
               - name: Имена
                 items:
                   - name: Имя
                     href: resources/personname.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-names.md
                   - name: Создание
                     href: api/profile-post-names.md
@@ -11524,13 +11533,13 @@ items:
                     href: api/personname-get.md
                   - name: Обновление
                     href: api/personname-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/personname-delete.md
-              - name: Примечания
+              - name: Заметки
                 items:
                   - name: Примечание пользователя
                     href: resources/personannotation.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-notes.md
                   - name: Создание
                     href: api/profile-post-notes.md
@@ -11538,13 +11547,13 @@ items:
                     href: api/personannotation-get.md
                   - name: Обновление
                     href: api/personannotation-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/personannotation-delete.md
               - name: Патентами
                 items:
                   - name: Патентный товар
                     href: resources/itempatent.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-patents.md
                   - name: Создание
                     href: api/profile-post-patents.md
@@ -11552,13 +11561,13 @@ items:
                     href: api/itempatent-get.md
                   - name: Обновление
                     href: api/itempatent-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/itempatent-delete.md
               - name: Мобильных
                 items:
                   - name: Телефон элемента
                     href: resources/itemphone.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-phones.md
                   - name: Создание
                     href: api/profile-post-phones.md
@@ -11566,13 +11575,13 @@ items:
                     href: api/itemphone-get.md
                   - name: Обновление
                     href: api/itemphone-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/itemphone-delete.md
               - name: Positions
                 items:
                   - name: Положение работы
                     href: resources/workposition.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-positions.md
                   - name: Создание
                     href: api/profile-post-positions.md
@@ -11580,13 +11589,13 @@ items:
                     href: api/workposition-get.md
                   - name: Обновление
                     href: api/workposition-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/workposition-delete.md
               - name: Projects
                 items:
                   - name: Участие в проектах
                     href: resources/projectparticipation.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-projects.md
                   - name: Создание
                     href: api/profile-post-projects.md
@@ -11594,13 +11603,13 @@ items:
                     href: api/projectparticipation-get.md
                   - name: Обновление
                     href: api/projectparticipation-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/projectparticipation-delete.md
               - name: Публикаци
                 items:
                   - name: Публикация элемента
                     href: resources/itempublication.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-publications.md
                   - name: Создание
                     href: api/profile-post-publications.md
@@ -11608,13 +11617,13 @@ items:
                     href: api/itempublication-get.md
                   - name: Обновление
                     href: api/itempublication-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/itempublication-delete.md
               - name: Несут
                 items:
                   - name: Ответственность сотрудника
                     href: resources/personresponsibility.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-responsibilities.md
                   - name: Создание
                     href: api/profile-post-responsibilities.md
@@ -11622,13 +11631,13 @@ items:
                     href: api/personresponsibility-get.md
                   - name: Обновление
                     href: api/personresponsibility-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/personresponsibility-delete.md
               - name: Skill
                 items:
                   - name: Знание навыков
                     href: resources/skillproficiency.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-skills.md
                   - name: Создание
                     href: api/profile-post-skills.md
@@ -11636,13 +11645,13 @@ items:
                     href: api/skillproficiency-get.md
                   - name: Обновление
                     href: api/skillproficiency-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/skillproficiency-delete.md
               - name: Учетные записи веб-сайта
                 items:
                   - name: Учетная запись веб-сайта
                     href: resources/webaccount.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-webaccounts.md
                   - name: Создание
                     href: api/profile-post-webaccounts.md
@@ -11650,13 +11659,13 @@ items:
                     href: api/webaccount-get.md
                   - name: Обновление
                     href: api/webaccount-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/webaccount-delete.md
               - name: Веб-сайты
                 items:
                   - name: Веб-сайт пользователя
                     href: resources/personwebsite.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/profile-list-websites.md
                   - name: Создание
                     href: api/profile-post-websites.md
@@ -11664,13 +11673,13 @@ items:
                     href: api/personwebsite-get.md
                   - name: Обновление
                     href: api/personwebsite-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/personwebsite-delete.md
           - name: Настройка карточки профиля (предварительная версия)
             items:
               - name: Свойство карточки профиля
                 href: resources/profilecardproperty.md
-              - name: Список
+              - name: Перечисление
                 href: api/organizationsettings-list-profilecardproperties.md
               - name: Создание
                 href: api/organizationsettings-post-profilecardproperties.md
@@ -11678,7 +11687,7 @@ items:
                 href: api/profilecardproperty-get.md
               - name: Обновление
                 href: api/profilecardproperty-update.md
-              - name: Delete
+              - name: Удаление
                 href: api/profilecardproperty-delete.md
           - name: Аналитика
             href: resources/iteminsights.md
@@ -11852,7 +11861,7 @@ items:
                   - name: Подробная сводка по проверяющей стороне
                     href: resources/relyingpartydetailedsummary.md
                     items:
-                      - name: Список
+                      - name: Перечисление
                         href: api/relyingpartydetailedsummary-list.md
               - name: Вход в приложение
                 items:
@@ -12112,7 +12121,7 @@ items:
                 href: resources/searchresponse.md
               - name: Данные запроса
                 href: api/search-query.md
-          - name: Индекс (Предварительная версия)
+          - name: Индекс (предварительная версия)
             items:
               - name: Обзор
                 href: resources/indexing-api-overview.md
@@ -12154,7 +12163,7 @@ items:
                     href: api/externalitem-get.md
                   - name: Обновление
                     href: api/externalitem-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/externalitem-delete.md
               - name: Внешняя группа
                 items:
@@ -12232,7 +12241,7 @@ items:
                     href: resources/fileAssessmentRequest.md
                   - name: Запрос оценки URL-адреса
                     href: resources/urlassessmentrequest.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/informationprotection-list-threatassessmentrequests.md
                   - name: Создание
                     href: api/informationprotection-post-threatassessmentrequests.md
@@ -12360,7 +12369,7 @@ items:
               - name: Set
                 href: resources/termstore-set.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/termstore-group-list-sets.md
                   - name: Список дочерних элементов
                     href: api/termstore-term-list-children.md
@@ -12370,7 +12379,7 @@ items:
                     href: api/termstore-set-get.md
                   - name: Обновление
                     href: api/termstore-set-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/termstore-set-delete.md
               - name: Term
                 href: resources/termstore-term.md
@@ -12383,12 +12392,12 @@ items:
                     href: api/termstore-term-get.md
                   - name: Обновление
                     href: api/termstore-term-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/termstore-term-delete.md
               - name: Relation
                 href: resources/termstore-relation.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/termStore-term-list-relations.md
                   - name: Создание
                     href: api/termStore-relation-post.md
@@ -12775,7 +12784,7 @@ items:
               - name: Shift
                 href: resources/shift.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/schedule-list-shifts.md
                   - name: Создание
                     href: api/schedule-post-shifts.md
@@ -12797,7 +12806,7 @@ items:
               - name: Группа планирования
                 href: resources/schedulinggroup.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/schedule-list-schedulinggroups.md
                   - name: Создание
                     href: api/schedule-post-schedulinggroups.md
@@ -12814,7 +12823,7 @@ items:
                     href: api/offershiftrequest-post.md
                   - name: Получение
                     href: api/offershiftrequest-get.md
-                  - name: Список
+                  - name: Перечисление
                     href: api/offershiftrequest-list.md
                   - name: Утвердить
                     href: api/offershiftrequest-approve.md
@@ -12823,7 +12832,7 @@ items:
               - name: Открыть смену
                 href: resources/openshift.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/openshift-list.md
                   - name: Создание
                     href: api/openshift-post.md
@@ -12831,12 +12840,12 @@ items:
                     href: api/openshift-get.md
                   - name: Обновление
                     href: api/openshift-update.md
-                  - name: Delete
+                  - name: Удаление
                     href: api/openshift-delete.md
               - name: Открыть запрос на изменение сочетания клавиш
                 href: resources/openshiftchangerequest.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/openshiftchangerequest-list.md
                   - name: Создание
                     href: api/openshiftchangerequest-post.md
@@ -12856,7 +12865,7 @@ items:
               - name: Переключить запрос на изменение смены
                 href: resources/swapshiftschangerequest.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/swapshiftschangerequest-list.md
                   - name: Создание
                     href: api/swapshiftschangerequest-post.md
@@ -12869,7 +12878,7 @@ items:
               - name: Отгул
                 href: resources/timeoff.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/schedule-list-timesoff.md
                   - name: Создание
                     href: api/schedule-post-timesoff.md
@@ -12882,7 +12891,7 @@ items:
               - name: Причина отгула
                 href: resources/timeoffreason.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/schedule-list-timeoffreasons.md
                   - name: Создание
                     href: api/schedule-post-timeoffreasons.md
@@ -12906,7 +12915,7 @@ items:
               - name: Интеграция сотрудников
                 href: resources/workforceintegration.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/workforceintegration-list.md
                   - name: Создание
                     href: api/workforceintegration-post.md
@@ -12981,7 +12990,7 @@ items:
           - name: Связанный ресурс
             href: resources/linkedresource.md
             items:
-              - name: Список
+              - name: Перечисление
                 href: api/todotask-list-linkedresources.md
               - name: Создание
                 href: api/todotask-post-linkedresources.md
@@ -12989,7 +12998,7 @@ items:
                 href: api/linkedresource-get.md
               - name: Обновление
                 href: api/linkedresource-update.md
-              - name: Delete
+              - name: Удаление
                 href: api/linkedresource-delete.md
           - name: Задачи Outlook (не рекомендуется)
             items:
@@ -13125,7 +13134,7 @@ items:
           - name: Комментарии к книге
             href: resources/workbookcomment.md
             items:
-              - name: Список
+              - name: Перечисление
                 href: api/workbook-list-comments.md
               - name: Получение
                 href: api/workbookcomment-get.md

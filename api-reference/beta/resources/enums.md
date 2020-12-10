@@ -5,16 +5,25 @@ doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: ef7e62be359faf7284d786ed1b0cbb300fd47b83
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 3e5f23e7fdfd4a2fcb3927502535b5ed0a117a59
+ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581147"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49617068"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
 Пространство имен: microsoft.graph
+
+### <a name="externalemailotpstate-values"></a>значения Екстерналемаилотпстате
+
+|Member|
+|:---|
+|умолчани|
+|включено|
+|отключено|
+|unknownFutureValue|
 
 ### <a name="volumetype-values"></a>значения Волуметипе
 
@@ -536,7 +545,7 @@ ms.locfileid: "49581147"
 | forward
 | нореспонсенецессари
 | read
-| них
+| reply
 | реплитоалл
 | Смотрите
 
@@ -664,7 +673,7 @@ ms.locfileid: "49581147"
 ### <a name="onenotesourceservice-values"></a>значения Оненотесаурцесервице
 | Member
 |:---------------------
-| Unknown
+| Неизвестно
 | OneDrive
 | онедривефорбусинесс
 | онпремонедривефорбусинесс
