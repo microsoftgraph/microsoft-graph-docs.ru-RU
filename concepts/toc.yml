@@ -58,6 +58,8 @@ items:
             href: /graph/tutorials/javascript
           - name: Node.js
             href: /graph/tutorials/node
+          - name: Надстройка Office
+            href: /graph/tutorials/office-addin
           - name: PHP
             href: /graph/tutorials/php
           - name: Power Automate
@@ -72,6 +74,8 @@ items:
             href: /graph/tutorials/ruby
           - name: SharePoint Framework
             href: /graph/tutorials/spfx
+          - name: Teams
+            href: /graph/tutorials/teams
           - name: UWP
             href: /graph/tutorials/uwp
           - name: Xamarin
@@ -211,6 +215,10 @@ items:
             href: azuread-identity-access-management-concept-overview.md
           - name: Методы проверки подлинности
             href: authenticationmethods-get-started.md
+          - name: Удостоверение и вход
+            items:
+              - name: Определение и устранение риска
+                href: tutorial-riskdetection-api.md
           - name: Управление
             items:
               - name: Создание пакета доступа
@@ -555,18 +563,36 @@ items:
             items:
               - name: Обзор
                 href: toolkit/get-started/overview.md
-              - name: Создание приложения Azure Active Directory
+              - name: Набор средств для React
+                href: toolkit/get-started/mgt-react.md
+          - name: Создание первого приложения
+            items:
+              - name: Регистрация приложения Azure Active Directory
                 href: toolkit/get-started/add-aad-app-registration.md
               - name: Создание веб-приложения (JavaScript)
                 href: toolkit/get-started/build-a-web-app.md
+              - name: Создание веб-приложения (React)
+                href: toolkit/get-started/use-toolkit-with-react.md
+              - name: Создание веб-приложения (Angular)
+                href: toolkit/get-started/use-toolkit-with-angular.md
               - name: Создание веб-части SharePoint
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
               - name: Создание вкладки Microsoft Teams
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
-              - name: Использование набора средств с помощью React
-                href: toolkit/get-started/use-toolkit-with-react.md
-              - name: Использование набора средств с помощью Angular
-                href: toolkit/get-started/use-toolkit-with-angular.md
+          - name: Поставщики
+            items:
+              - name: Использование поставщиков
+                href: toolkit/providers/providers.md
+              - name: Поставщик MSAL
+                href: toolkit/providers/msal.md
+              - name: Поставщик SharePoint
+                href: toolkit/providers/sharepoint.md
+              - name: Поставщик Microsoft Teams
+                href: toolkit/providers/teams.md
+              - name: Поставщик прокси
+                href: toolkit/providers/proxy.md
+              - name: Настраиваемый поставщик
+                href: toolkit/providers/custom.md
           - name: Компоненты
             items:
               - name: Вход
@@ -587,24 +613,20 @@ items:
                 href: toolkit/components/agenda.md
               - name: Задачи
                 href: toolkit/components/tasks.md
-          - name: Поставщики
+              - name: To Do
+                href: toolkit/components/todo.md
+          - name: Настройка компонентов
             items:
-              - name: Использование поставщиков
-                href: toolkit/providers.md
-              - name: Поставщик MSAL
-                href: toolkit/providers/msal.md
-              - name: Поставщик SharePoint
-                href: toolkit/providers/sharepoint.md
-              - name: Поставщик Microsoft Teams
-                href: toolkit/providers/teams.md
-              - name: Поставщик прокси
-                href: toolkit/providers/proxy.md
-              - name: Настраиваемый поставщик
-                href: toolkit/providers/custom.md
-          - name: Компоненты стиля
-            href: toolkit/style.md
-          - name: Компоненты создания шаблонов
-            href: toolkit/templates.md
+              - name: Компоненты стиля
+                href: toolkit/customize-components/style.md
+              - name: Компоненты создания шаблонов
+                href: toolkit/customize-components/templates.md
+              - name: Кэширование вызовов Microsoft Graph в компонентах
+                href: toolkit/customize-components/cache.md
+              - name: Компоненты локализации
+                href: toolkit/customize-components/localization.md
+              - name: Поддержка направления текста справа налево
+                href: toolkit/customize-components/right-to-left.md
       - name: Ресурсы
         expanded: true
         items:
