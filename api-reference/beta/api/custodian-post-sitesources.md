@@ -1,36 +1,36 @@
 ---
-title: Создание Ситесаурце
-description: Создание нового объекта Ситесаурце.
+title: Создание siteSource
+description: Создание объекта siteSource.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 93cb37a6ff94a52830675f876084fc85a6365a40
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 0196fac3cf9b44915aa8f979072b2daadf6213f9
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597755"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659089"
 ---
-# <a name="create-sitesource"></a><span data-ttu-id="53023-103">Создание Ситесаурце</span><span class="sxs-lookup"><span data-stu-id="53023-103">Create siteSource</span></span>
+# <a name="create-sitesource"></a><span data-ttu-id="f7f7e-103">Создание siteSource</span><span class="sxs-lookup"><span data-stu-id="f7f7e-103">Create siteSource</span></span>
 
-<span data-ttu-id="53023-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="53023-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="f7f7e-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f7f7e-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="53023-105">Создание нового объекта [ситесаурце](../resources/sitesource.md) .</span><span class="sxs-lookup"><span data-stu-id="53023-105">Create a new [siteSource](../resources/sitesource.md) object.</span></span>
+<span data-ttu-id="f7f7e-105">Создание объекта [siteSource.](../resources/sitesource.md)</span><span class="sxs-lookup"><span data-stu-id="f7f7e-105">Create a new [siteSource](../resources/sitesource.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="53023-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="53023-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f7f7e-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f7f7e-106">Permissions</span></span>
 
-<span data-ttu-id="53023-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="53023-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f7f7e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f7f7e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="53023-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="53023-109">Permission type</span></span>|<span data-ttu-id="53023-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="53023-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="f7f7e-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f7f7e-109">Permission type</span></span>|<span data-ttu-id="f7f7e-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="f7f7e-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="53023-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="53023-111">Delegated (work or school account)</span></span>|<span data-ttu-id="53023-112">User.Read</span><span class="sxs-lookup"><span data-stu-id="53023-112">User.Read</span></span>|
-|<span data-ttu-id="53023-113">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="53023-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="53023-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="53023-114">Not supported.</span></span>|
-|<span data-ttu-id="53023-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="53023-115">Application</span></span>|<span data-ttu-id="53023-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="53023-116">Not supported.</span></span>|
+|<span data-ttu-id="f7f7e-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f7f7e-111">Delegated (work or school account)</span></span>|<span data-ttu-id="f7f7e-112">User.Read</span><span class="sxs-lookup"><span data-stu-id="f7f7e-112">User.Read</span></span>|
+|<span data-ttu-id="f7f7e-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f7f7e-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f7f7e-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f7f7e-114">Not supported.</span></span>|
+|<span data-ttu-id="f7f7e-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f7f7e-115">Application</span></span>|<span data-ttu-id="f7f7e-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f7f7e-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="53023-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="53023-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f7f7e-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f7f7e-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -41,31 +41,33 @@ ms.locfileid: "49597755"
 POST /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/siteSources
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="53023-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="53023-118">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f7f7e-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f7f7e-118">Request headers</span></span>
 
-|<span data-ttu-id="53023-119">Имя</span><span class="sxs-lookup"><span data-stu-id="53023-119">Name</span></span>|<span data-ttu-id="53023-120">Описание</span><span class="sxs-lookup"><span data-stu-id="53023-120">Description</span></span>|
+|<span data-ttu-id="f7f7e-119">Имя</span><span class="sxs-lookup"><span data-stu-id="f7f7e-119">Name</span></span>|<span data-ttu-id="f7f7e-120">Описание</span><span class="sxs-lookup"><span data-stu-id="f7f7e-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="53023-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="53023-121">Authorization</span></span>|<span data-ttu-id="53023-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="53023-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="53023-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="53023-124">Content-Type</span></span>|<span data-ttu-id="53023-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="53023-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="f7f7e-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f7f7e-121">Authorization</span></span>|<span data-ttu-id="f7f7e-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f7f7e-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="f7f7e-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f7f7e-124">Content-Type</span></span>|<span data-ttu-id="f7f7e-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f7f7e-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="53023-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="53023-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f7f7e-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f7f7e-127">Request body</span></span>
 
-<span data-ttu-id="53023-128">В тексте запроса добавьте представление объекта [ситесаурце](../resources/sitesource.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="53023-128">In the request body, supply a JSON representation of the [siteSource](../resources/sitesource.md) object.</span></span>
+<span data-ttu-id="f7f7e-128">В теле запроса укажу представление объекта [siteSource](../resources/sitesource.md) в JSON.</span><span class="sxs-lookup"><span data-stu-id="f7f7e-128">In the request body, supply a JSON representation of the [siteSource](../resources/sitesource.md) object.</span></span>
 
-<span data-ttu-id="53023-129">В следующей таблице приведены свойства, необходимые при создании [ситесаурце](../resources/sitesource.md).</span><span class="sxs-lookup"><span data-stu-id="53023-129">The following table shows the properties that are required when you create the [siteSource](../resources/sitesource.md).</span></span>
+<span data-ttu-id="f7f7e-129">В следующей таблице показаны свойства, необходимые при создании [siteSource.](../resources/sitesource.md)</span><span class="sxs-lookup"><span data-stu-id="f7f7e-129">The following table shows the properties that are required when you create the [siteSource](../resources/sitesource.md).</span></span>
 
-|<span data-ttu-id="53023-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="53023-130">Property</span></span>|<span data-ttu-id="53023-131">Тип</span><span class="sxs-lookup"><span data-stu-id="53023-131">Type</span></span>|<span data-ttu-id="53023-132">Описание</span><span class="sxs-lookup"><span data-stu-id="53023-132">Description</span></span>|
+|<span data-ttu-id="f7f7e-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="f7f7e-130">Property</span></span>|<span data-ttu-id="f7f7e-131">Тип</span><span class="sxs-lookup"><span data-stu-id="f7f7e-131">Type</span></span>|<span data-ttu-id="f7f7e-132">Описание</span><span class="sxs-lookup"><span data-stu-id="f7f7e-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="53023-133">site@odata. Bind</span><span class="sxs-lookup"><span data-stu-id="53023-133">site@odata.bind</span></span>|<span data-ttu-id="53023-134">String</span><span class="sxs-lookup"><span data-stu-id="53023-134">String</span></span>|<span data-ttu-id="53023-135">Идентификатор сайта, который можно получить из ресурса [сайта](../resources/site.md) с помощью метода [получения ресурса сайта по пути](../api/site-getbypath.md) .</span><span class="sxs-lookup"><span data-stu-id="53023-135">ID of the site, which you can get from the [site](../resources/site.md) resource by using the [Get a site resource by path](../api/site-getbypath.md) method.</span></span> <span data-ttu-id="53023-136">Использование: {hostname}:/{релативе-Пас}.</span><span class="sxs-lookup"><span data-stu-id="53023-136">The usage is {hostname}:/{relative-path}.</span></span> <span data-ttu-id="53023-137">Для URL-адреса сайта `https://contoso.sharepoint.com/sites/HumanResources` запрос Microsoft Graph будет иметь значение `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources` .</span><span class="sxs-lookup"><span data-stu-id="53023-137">For the site URL `https://contoso.sharepoint.com/sites/HumanResources`, the Microsoft Graph request would be `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources`.</span></span> <span data-ttu-id="53023-138">Идентификатор является первым идентификатором GUID, указанным в поле ID.</span><span class="sxs-lookup"><span data-stu-id="53023-138">The ID is the first GUID listed in the ID field.</span></span>|
+|<span data-ttu-id="f7f7e-133">site@odata.bind</span><span class="sxs-lookup"><span data-stu-id="f7f7e-133">site@odata.bind</span></span>|<span data-ttu-id="f7f7e-134">String</span><span class="sxs-lookup"><span data-stu-id="f7f7e-134">String</span></span>|<span data-ttu-id="f7f7e-135">ИД сайта, который можно получить [](../resources/site.md) из ресурса сайта с помощью метода "Получить ресурс [сайта по пути".](../api/site-getbypath.md)</span><span class="sxs-lookup"><span data-stu-id="f7f7e-135">ID of the site, which you can get from the [site](../resources/site.md) resource by using the [Get a site resource by path](../api/site-getbypath.md) method.</span></span> <span data-ttu-id="f7f7e-136">Для использования задается {hostname}:/{relative-path}.</span><span class="sxs-lookup"><span data-stu-id="f7f7e-136">The usage is {hostname}:/{relative-path}.</span></span> <span data-ttu-id="f7f7e-137">Для URL-адреса сайта запрос Microsoft Graph будет . `https://contoso.sharepoint.com/sites/HumanResources` `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources`</span><span class="sxs-lookup"><span data-stu-id="f7f7e-137">For the site URL `https://contoso.sharepoint.com/sites/HumanResources`, the Microsoft Graph request would be `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources`.</span></span> <span data-ttu-id="f7f7e-138">ИД — это первый GUID, указанный в поле "ИД".</span><span class="sxs-lookup"><span data-stu-id="f7f7e-138">The ID is the first GUID listed in the ID field.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="53023-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="53023-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f7f7e-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="f7f7e-139">Response</span></span>
 
-<span data-ttu-id="53023-140">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [ситесаурце](../resources/sitesource.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="53023-140">If successful, this method returns a `201 Created` response code and a [siteSource](../resources/sitesource.md) object in the response body.</span></span>
+<span data-ttu-id="f7f7e-140">В случае успеха этот метод возвращает код отклика и объект `201 Created` [siteSource](../resources/sitesource.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="f7f7e-140">If successful, this method returns a `201 Created` response code and a [siteSource](../resources/sitesource.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="53023-141">Примеры</span><span class="sxs-lookup"><span data-stu-id="53023-141">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f7f7e-141">Примеры</span><span class="sxs-lookup"><span data-stu-id="f7f7e-141">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="53023-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="53023-142">Request</span></span>
+### <a name="request"></a><span data-ttu-id="f7f7e-142">Запрос</span><span class="sxs-lookup"><span data-stu-id="f7f7e-142">Request</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="f7f7e-143">HTTP</span><span class="sxs-lookup"><span data-stu-id="f7f7e-143">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_sitesource_from_"
@@ -81,10 +83,28 @@ Content-length: 179
     "site@odata.bind": "https://graph.microsoft.com/v1.0/sites/{siteId}"
 }
 ```
+# <a name="c"></a>[<span data-ttu-id="f7f7e-144">C#</span><span class="sxs-lookup"><span data-stu-id="f7f7e-144">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-sitesource-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-### <a name="response"></a><span data-ttu-id="53023-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="53023-143">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="f7f7e-145">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f7f7e-145">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-sitesource-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="53023-144">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="53023-144">**Note:** The response object shown here might be shortened for readability.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="f7f7e-146">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f7f7e-146">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-sitesource-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="f7f7e-147">Java</span><span class="sxs-lookup"><span data-stu-id="f7f7e-147">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-sitesource-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### <a name="response"></a><span data-ttu-id="f7f7e-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="f7f7e-148">Response</span></span>
+
+<span data-ttu-id="f7f7e-149">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="f7f7e-149">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

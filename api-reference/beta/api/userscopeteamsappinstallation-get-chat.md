@@ -1,36 +1,36 @@
 ---
-title: Получение разговора между пользователем и teamsApp
-description: Получение одного сеанса разговора между указанным пользователем и приложением Teams.
+title: Получить чат между пользователем и teamsApp
+description: Извлечение чата по одному между указанным пользователем и приложением Teams.
 author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cc0be0eb80b35c17b2f0ea6ba38b4dbf1673ac37
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: b5bf69e7d5f45ade2ce612e1eb4ccd97d0816a8a
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607212"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657256"
 ---
-# <a name="get-chat-between-user-and-teamsapp"></a><span data-ttu-id="9113b-103">Получение разговора между пользователем и teamsApp</span><span class="sxs-lookup"><span data-stu-id="9113b-103">Get chat between user and teamsApp</span></span>
+# <a name="get-chat-between-user-and-teamsapp"></a><span data-ttu-id="1b392-103">Получить чат между пользователем и teamsApp</span><span class="sxs-lookup"><span data-stu-id="1b392-103">Get chat between user and teamsApp</span></span>
 
-<span data-ttu-id="9113b-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="9113b-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="1b392-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="1b392-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9113b-105">Получение [чата](../resources/chat.md) для указанного [пользователя](../resources/user.md) и [приложения Teams](../resources/teamsapp.md).</span><span class="sxs-lookup"><span data-stu-id="9113b-105">Retrieve the [chat](../resources/chat.md) of the specified [user](../resources/user.md) and [Teams app](../resources/teamsapp.md).</span></span>
+<span data-ttu-id="1b392-105">[Извлечение чата](../resources/chat.md) указанного пользователя [и](../resources/user.md) [приложения Teams.](../resources/teamsapp.md)</span><span class="sxs-lookup"><span data-stu-id="1b392-105">Retrieve the [chat](../resources/chat.md) of the specified [user](../resources/user.md) and [Teams app](../resources/teamsapp.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9113b-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9113b-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1b392-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1b392-106">Permissions</span></span>
 
-<span data-ttu-id="9113b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9113b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1b392-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1b392-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9113b-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9113b-109">Permission type</span></span>      | <span data-ttu-id="9113b-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9113b-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1b392-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1b392-109">Permission type</span></span>      | <span data-ttu-id="1b392-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1b392-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9113b-111">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9113b-111">Delegated (work or school account)</span></span> | <span data-ttu-id="9113b-112">Теамсаппинсталлатион. Реадфорусер, Теамсаппинсталлатион. Реадвритеселффорусер, Теамсаппинсталлатион. ReadWriteForUser</span><span class="sxs-lookup"><span data-stu-id="9113b-112">TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser</span></span> |
-|<span data-ttu-id="9113b-113">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9113b-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9113b-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9113b-114">Not supported.</span></span>    |
-|<span data-ttu-id="9113b-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="9113b-115">Application</span></span> | <span data-ttu-id="9113b-116">Теамсаппинсталлатион. Реадфорусер. ALL, Теамсаппинсталлатион. Реадвритеселффорусер. ALL, Теамсаппинсталлатион. ReadWriteForUser. ALL</span><span class="sxs-lookup"><span data-stu-id="9113b-116">TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All</span></span> |
+|<span data-ttu-id="1b392-111">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1b392-111">Delegated (work or school account)</span></span> | <span data-ttu-id="1b392-112">TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser</span><span class="sxs-lookup"><span data-stu-id="1b392-112">TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser</span></span> |
+|<span data-ttu-id="1b392-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1b392-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1b392-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1b392-114">Not supported.</span></span>    |
+|<span data-ttu-id="1b392-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="1b392-115">Application</span></span> | <span data-ttu-id="1b392-116">TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All</span><span class="sxs-lookup"><span data-stu-id="1b392-116">TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9113b-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9113b-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1b392-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1b392-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,32 +38,34 @@ ms.locfileid: "49607212"
 GET /users/{user-id}/teamwork/installedApps/{app-installation-id}/chat
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="9113b-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="9113b-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="1b392-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="1b392-118">Optional query parameters</span></span>
 
-<span data-ttu-id="9113b-119">Этот метод поддерживает `$select` [параметр запроса OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="9113b-119">This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="1b392-119">Этот метод поддерживает параметр `$select` [запроса OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="1b392-119">This method supports the `$select` [OData query parameter](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="9113b-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9113b-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="1b392-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1b392-120">Request headers</span></span>
 
-| <span data-ttu-id="9113b-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="9113b-121">Header</span></span>       | <span data-ttu-id="9113b-122">Значение</span><span class="sxs-lookup"><span data-stu-id="9113b-122">Value</span></span> |
+| <span data-ttu-id="1b392-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="1b392-121">Header</span></span>       | <span data-ttu-id="1b392-122">Значение</span><span class="sxs-lookup"><span data-stu-id="1b392-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="9113b-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9113b-123">Authorization</span></span>  | <span data-ttu-id="9113b-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9113b-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="1b392-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1b392-123">Authorization</span></span>  | <span data-ttu-id="1b392-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1b392-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="9113b-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9113b-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="1b392-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1b392-126">Request body</span></span>
 
-<span data-ttu-id="9113b-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="9113b-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="1b392-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1b392-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9113b-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="9113b-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1b392-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="1b392-128">Response</span></span>
 
-<span data-ttu-id="9113b-129">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и экземпляр объекта [Chat](../resources/chat.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="9113b-129">If successful, this method returns a `200 OK` response code and an instance of [chat](../resources/chat.md) object in the response body.</span></span>
+<span data-ttu-id="1b392-129">В случае успеха этот метод возвращает код отклика и экземпляр объекта `200 OK` [чата](../resources/chat.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1b392-129">If successful, this method returns a `200 OK` response code and an instance of [chat](../resources/chat.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="9113b-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="9113b-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="1b392-130">Примеры</span><span class="sxs-lookup"><span data-stu-id="1b392-130">Examples</span></span>
 
-### <a name="example-1-list-one-on-one-chats-between-the-specified-user-and-the-teams-app"></a><span data-ttu-id="9113b-131">Пример 1: список бесед одного пользователя между указанным пользователем и приложением Teams</span><span class="sxs-lookup"><span data-stu-id="9113b-131">Example 1: List one-on-one chats between the specified user and the Teams app</span></span>
+### <a name="example-1-list-one-on-one-chats-between-the-specified-user-and-the-teams-app"></a><span data-ttu-id="1b392-131">Пример 1. Список чаты по одному между указанным пользователем и приложением Teams</span><span class="sxs-lookup"><span data-stu-id="1b392-131">Example 1: List one-on-one chats between the specified user and the Teams app</span></span>
 
-#### <a name="request"></a><span data-ttu-id="9113b-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="9113b-132">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="1b392-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="1b392-132">Request</span></span>
 
-<span data-ttu-id="9113b-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9113b-133">The following is an example of the request.</span></span>
+<span data-ttu-id="1b392-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1b392-133">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="1b392-134">HTTP</span><span class="sxs-lookup"><span data-stu-id="1b392-134">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_chat_teamsApps"
@@ -71,11 +73,29 @@ GET /users/{user-id}/teamwork/installedApps/{app-installation-id}/chat
 ```http
 GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/teamwork/installedApps/ZjMyYjgzYmItNGZjOC00ZGI3LWI3ZjUtNzZjZGJiYjhhYTFjIyMyMmY3M2JiZS1mNjdhLTRkZWEtYmQ1NC01NGNhYzcxOGNiMmI=/chat
 ```
+# <a name="c"></a>[<span data-ttu-id="1b392-135">C#</span><span class="sxs-lookup"><span data-stu-id="1b392-135">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-chat-teamsapps-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="9113b-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="9113b-134">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="1b392-136">JavaScript</span><span class="sxs-lookup"><span data-stu-id="1b392-136">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-chat-teamsapps-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="9113b-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="9113b-135">The following is an example of the response.</span></span>
-><span data-ttu-id="9113b-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9113b-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="1b392-137">Objective-C</span><span class="sxs-lookup"><span data-stu-id="1b392-137">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-chat-teamsapps-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="1b392-138">Java</span><span class="sxs-lookup"><span data-stu-id="1b392-138">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-chat-teamsapps-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="1b392-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="1b392-139">Response</span></span>
+
+<span data-ttu-id="1b392-140">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="1b392-140">The following is an example of the response.</span></span>
+><span data-ttu-id="1b392-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1b392-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "user_chat_teamsApps",

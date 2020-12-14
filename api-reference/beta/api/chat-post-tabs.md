@@ -1,59 +1,61 @@
 ---
 title: Добавление вкладки в чат
-description: 'Добавляет (закрепляет) вкладку в указанный чат. '
+description: 'Добавляет (закрепление) вкладки в указанный чат. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6182daa44d0e5ac8deb86a1fb8fe61c5f1376b2f
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 38e6443ac0825c729083fcf1fe8e6f2f3e4ffa13
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607595"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658564"
 ---
-# <a name="add-tab-to-chat"></a><span data-ttu-id="f6905-103">Добавление вкладки в чат</span><span class="sxs-lookup"><span data-stu-id="f6905-103">Add tab to chat</span></span>
+# <a name="add-tab-to-chat"></a><span data-ttu-id="c8fe1-103">Добавление вкладки в чат</span><span class="sxs-lookup"><span data-stu-id="c8fe1-103">Add tab to chat</span></span>
 
-<span data-ttu-id="f6905-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="f6905-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="c8fe1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="c8fe1-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f6905-105">Добавить (закрепить) [вкладку](../resources/teamstab.md) к указанному [сеансу разговора](../resources/chat.md).</span><span class="sxs-lookup"><span data-stu-id="f6905-105">Add (pin) a [tab](../resources/teamstab.md) to the specified [chat](../resources/chat.md).</span></span> <span data-ttu-id="f6905-106">Соответствующее приложение должно быть уже [установлено в чате](../api/chat-list-installedapps.md).</span><span class="sxs-lookup"><span data-stu-id="f6905-106">The corresponding app must already be [installed in the chat](../api/chat-list-installedapps.md).</span></span>
+<span data-ttu-id="c8fe1-105">Добавьте (закрепить) [вкладку](../resources/teamstab.md) в указанный [чат.](../resources/chat.md)</span><span class="sxs-lookup"><span data-stu-id="c8fe1-105">Add (pin) a [tab](../resources/teamstab.md) to the specified [chat](../resources/chat.md).</span></span> <span data-ttu-id="c8fe1-106">Соответствующее приложение уже должно быть [установлено в чате.](../api/chat-list-installedapps.md)</span><span class="sxs-lookup"><span data-stu-id="c8fe1-106">The corresponding app must already be [installed in the chat](../api/chat-list-installedapps.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f6905-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f6905-107">Permissions</span></span>
-<span data-ttu-id="f6905-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f6905-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+> <span data-ttu-id="c8fe1-107">**Примечание.** Если чат связан с экземпляром [onlineMeeting,](../resources/onlinemeeting.md) вкладка будет добавлена к собранию.</span><span class="sxs-lookup"><span data-stu-id="c8fe1-107">**Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tab will get added to the meeting.</span></span>
 
-|<span data-ttu-id="f6905-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f6905-110">Permission type</span></span>      | <span data-ttu-id="f6905-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f6905-111">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="c8fe1-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c8fe1-108">Permissions</span></span>
+<span data-ttu-id="c8fe1-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c8fe1-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="c8fe1-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c8fe1-111">Permission type</span></span>      | <span data-ttu-id="c8fe1-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c8fe1-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f6905-112">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f6905-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f6905-113">TeamsTab. Create, TeamsTab. Реадвритефорчат, TeamsTab. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="f6905-113">TeamsTab.Create, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All</span></span> |
-|<span data-ttu-id="f6905-114">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f6905-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f6905-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f6905-115">Not supported.</span></span>    |
-| <span data-ttu-id="f6905-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="f6905-116">Application</span></span>                            | <span data-ttu-id="f6905-117">TeamsTab. Create, TeamsTab. Реадвритефорчат. ALL, TeamsTab. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="f6905-117">TeamsTab.Create, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.All</span></span> |
+|<span data-ttu-id="c8fe1-113">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c8fe1-113">Delegated (work or school account)</span></span> | <span data-ttu-id="c8fe1-114">TeamsTab.Create, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c8fe1-114">TeamsTab.Create, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All</span></span> |
+|<span data-ttu-id="c8fe1-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c8fe1-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c8fe1-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c8fe1-116">Not supported.</span></span>    |
+| <span data-ttu-id="c8fe1-117">Приложение</span><span class="sxs-lookup"><span data-stu-id="c8fe1-117">Application</span></span>                            | <span data-ttu-id="c8fe1-118">TeamsTab.Create, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c8fe1-118">TeamsTab.Create, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.All</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="f6905-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f6905-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c8fe1-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c8fe1-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /chats/{chat-id}/tabs
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f6905-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f6905-119">Request headers</span></span>
-| <span data-ttu-id="f6905-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="f6905-120">Header</span></span>       | <span data-ttu-id="f6905-121">Значение</span><span class="sxs-lookup"><span data-stu-id="f6905-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="c8fe1-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c8fe1-120">Request headers</span></span>
+| <span data-ttu-id="c8fe1-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="c8fe1-121">Header</span></span>       | <span data-ttu-id="c8fe1-122">Значение</span><span class="sxs-lookup"><span data-stu-id="c8fe1-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="f6905-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f6905-122">Authorization</span></span>  | <span data-ttu-id="f6905-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f6905-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c8fe1-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c8fe1-123">Authorization</span></span>  | <span data-ttu-id="c8fe1-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c8fe1-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="f6905-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f6905-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c8fe1-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c8fe1-126">Request body</span></span>
 
-<span data-ttu-id="f6905-126">В тексте запроса включает представление объекта [teamsTab](../resources/teamstab.md)в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f6905-126">In the request body include a JSON representation of a [teamsTab](../resources/teamstab.md).</span></span>
+<span data-ttu-id="c8fe1-127">В теле запроса содержится представление [teamsTab](../resources/teamstab.md)в JSON.</span><span class="sxs-lookup"><span data-stu-id="c8fe1-127">In the request body include a JSON representation of a [teamsTab](../resources/teamstab.md).</span></span>
 
-## <a name="response"></a><span data-ttu-id="f6905-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="f6905-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c8fe1-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="c8fe1-128">Response</span></span>
 
-<span data-ttu-id="f6905-128">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и экземпляр ресурса [teamsTab](../resources/teamstab.md) в теле.</span><span class="sxs-lookup"><span data-stu-id="f6905-128">If successful, this method returns a `201 Created` response code and an instance of the [teamsTab](../resources/teamstab.md) resource in the body.</span></span>
+<span data-ttu-id="c8fe1-129">В случае успеха этот метод возвращает код отклика и экземпляр ресурса `201 Created` [teamsTab](../resources/teamstab.md) в тексте.</span><span class="sxs-lookup"><span data-stu-id="c8fe1-129">If successful, this method returns a `201 Created` response code and an instance of the [teamsTab](../resources/teamstab.md) resource in the body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f6905-129">Пример</span><span class="sxs-lookup"><span data-stu-id="f6905-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c8fe1-130">Пример</span><span class="sxs-lookup"><span data-stu-id="c8fe1-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="f6905-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="f6905-130">Request</span></span>
+### <a name="request"></a><span data-ttu-id="c8fe1-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="c8fe1-131">Request</span></span>
 
-<span data-ttu-id="f6905-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f6905-131">The following is an example of the request.</span></span>
+<span data-ttu-id="c8fe1-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c8fe1-132">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "add_tab_to_chat"
@@ -76,11 +78,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="f6905-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="f6905-132">Response</span></span>
+### <a name="response"></a><span data-ttu-id="c8fe1-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="c8fe1-133">Response</span></span>
 
-<span data-ttu-id="f6905-133">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="f6905-133">The following is an example of the response.</span></span> 
+<span data-ttu-id="c8fe1-134">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="c8fe1-134">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="f6905-134">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="f6905-134">**Note:** The response object shown here might be shortened for readability.</span></span>
+><span data-ttu-id="c8fe1-135">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="c8fe1-135">**Note:** The response object shown here might be shortened for readability.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -106,11 +108,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="f6905-135">См. также</span><span class="sxs-lookup"><span data-stu-id="f6905-135">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c8fe1-136">См. также</span><span class="sxs-lookup"><span data-stu-id="c8fe1-136">See also</span></span>
 
-- [<span data-ttu-id="f6905-136">Настройка встроенных типов вкладок</span><span class="sxs-lookup"><span data-stu-id="f6905-136">Configuring the built-in tab types</span></span>](/graph/teams-configuring-builtin-tabs)
-- [<span data-ttu-id="f6905-137">Добавление вкладки в канал</span><span class="sxs-lookup"><span data-stu-id="f6905-137">Add tab to channel</span></span>](channel-post-tabs.md)
-- [<span data-ttu-id="f6905-138">Добавление приложения в чат</span><span class="sxs-lookup"><span data-stu-id="f6905-138">Add app to chat</span></span>](chat-post-installedapps.md)
+- [<span data-ttu-id="c8fe1-137">Настройка встроенных типов вкладок</span><span class="sxs-lookup"><span data-stu-id="c8fe1-137">Configuring the built-in tab types</span></span>](/graph/teams-configuring-builtin-tabs)
+- [<span data-ttu-id="c8fe1-138">Добавление вкладки в канал</span><span class="sxs-lookup"><span data-stu-id="c8fe1-138">Add tab to channel</span></span>](channel-post-tabs.md)
+- [<span data-ttu-id="c8fe1-139">Добавление приложения в чат</span><span class="sxs-lookup"><span data-stu-id="c8fe1-139">Add app to chat</span></span>](chat-post-installedapps.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

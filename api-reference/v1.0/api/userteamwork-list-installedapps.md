@@ -5,33 +5,33 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7e8fb8a65ec71665477f734930ed0a40f6e74f3f
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: e63e3c70dcdc7e010d0376941f1e7c59dbc7f91c
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49606981"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657910"
 ---
-# <a name="list-apps-installed-for-user"></a><span data-ttu-id="49d77-103">Перечисление приложений, установленных для пользователя</span><span class="sxs-lookup"><span data-stu-id="49d77-103">List apps installed for user</span></span>
+# <a name="list-apps-installed-for-user"></a><span data-ttu-id="74799-103">Перечисление приложений, установленных для пользователя</span><span class="sxs-lookup"><span data-stu-id="74799-103">List apps installed for user</span></span>
 
-<span data-ttu-id="49d77-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="49d77-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="74799-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="74799-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="49d77-105">Получение списка [приложений](../resources/teamsappinstallation.md) , установленных в личной области указанного [пользователя](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="49d77-105">Retrieve the list of [apps](../resources/teamsappinstallation.md) installed in the personal scope of the specified [user](../resources/user.md).</span></span>
+<span data-ttu-id="74799-105">Получить список [приложений, установленных](../resources/teamsappinstallation.md) в личной области указанного [пользователя.](../resources/user.md)</span><span class="sxs-lookup"><span data-stu-id="74799-105">Retrieve the list of [apps](../resources/teamsappinstallation.md) installed in the personal scope of the specified [user](../resources/user.md).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="49d77-106">`id`Ресурс **теамсаппинсталлатион** имеет не то же значение, что и `id` связанный ресурс **teamsApp** .</span><span class="sxs-lookup"><span data-stu-id="49d77-106">The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.</span></span>
+> <span data-ttu-id="74799-106">`id`Ресурс **teamsAppInstallation** имеет не то же значение, что и `id` связанный ресурс **teamsApp**.</span><span class="sxs-lookup"><span data-stu-id="74799-106">The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="49d77-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="49d77-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="74799-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="74799-107">Permissions</span></span>
 
-<span data-ttu-id="49d77-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="49d77-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="74799-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="74799-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="49d77-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="49d77-110">Permission type</span></span>      | <span data-ttu-id="49d77-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="49d77-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="74799-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="74799-110">Permission type</span></span>      | <span data-ttu-id="74799-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="74799-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="49d77-112">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="49d77-112">Delegated (work or school account)</span></span> | <span data-ttu-id="49d77-113">Теамсаппинсталлатион. Реадфорусер, Теамсаппинсталлатион. Реадвритеселффорусер, Теамсаппинсталлатион. ReadWriteForUser</span><span class="sxs-lookup"><span data-stu-id="49d77-113">TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser</span></span> |
-|<span data-ttu-id="49d77-114">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="49d77-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="49d77-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="49d77-115">Not supported.</span></span>    |
-|<span data-ttu-id="49d77-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="49d77-116">Application</span></span> | <span data-ttu-id="49d77-117">Теамсаппинсталлатион. Реадфорусер. ALL, Теамсаппинсталлатион. Реадвритеселффорусер. ALL, Теамсаппинсталлатион. ReadWriteForUser. ALL</span><span class="sxs-lookup"><span data-stu-id="49d77-117">TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All</span></span> |
+|<span data-ttu-id="74799-112">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="74799-112">Delegated (work or school account)</span></span> | <span data-ttu-id="74799-113">TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser</span><span class="sxs-lookup"><span data-stu-id="74799-113">TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser</span></span> |
+|<span data-ttu-id="74799-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="74799-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="74799-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="74799-115">Not supported.</span></span>    |
+|<span data-ttu-id="74799-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="74799-116">Application</span></span> | <span data-ttu-id="74799-117">TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All</span><span class="sxs-lookup"><span data-stu-id="74799-117">TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="49d77-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="49d77-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="74799-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="74799-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,32 +39,34 @@ ms.locfileid: "49606981"
 GET /users/{user-id}/teamwork/installedApps
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="49d77-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="49d77-119">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="74799-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="74799-119">Optional query parameters</span></span>
 
-<span data-ttu-id="49d77-120">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$filter`, `$select` и `$expand` для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="49d77-120">This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="74799-120">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$filter`, `$select` и `$expand` для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="74799-120">This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="49d77-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="49d77-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="74799-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="74799-121">Request headers</span></span>
 
-| <span data-ttu-id="49d77-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="49d77-122">Header</span></span>       | <span data-ttu-id="49d77-123">Значение</span><span class="sxs-lookup"><span data-stu-id="49d77-123">Value</span></span> |
+| <span data-ttu-id="74799-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="74799-122">Header</span></span>       | <span data-ttu-id="74799-123">Значение</span><span class="sxs-lookup"><span data-stu-id="74799-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="49d77-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="49d77-124">Authorization</span></span>  | <span data-ttu-id="49d77-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="49d77-p102">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="74799-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="74799-124">Authorization</span></span>  | <span data-ttu-id="74799-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="74799-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="49d77-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="49d77-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="74799-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="74799-127">Request body</span></span>
 
-<span data-ttu-id="49d77-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="49d77-128">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="74799-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="74799-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="49d77-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="49d77-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="74799-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="74799-129">Response</span></span>
 
-<span data-ttu-id="49d77-130">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [теамсаппинсталлатион](../resources/teamsappinstallation.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="49d77-130">If successful, this method returns a `200 OK` response code and a collection of [teamsAppInstallation](../resources/teamsappinstallation.md) objects in the response body.</span></span>
+<span data-ttu-id="74799-130">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [teamsAppInstallation](../resources/teamsappinstallation.md) в тексте сообщения.</span><span class="sxs-lookup"><span data-stu-id="74799-130">If successful, this method returns a `200 OK` response code and a collection of [teamsAppInstallation](../resources/teamsappinstallation.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="49d77-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="49d77-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="74799-131">Примеры</span><span class="sxs-lookup"><span data-stu-id="74799-131">Examples</span></span>
 
-### <a name="example-1-list-apps-installed-for-the-specified-user"></a><span data-ttu-id="49d77-132">Пример 1: список приложений, установленных для указанного пользователя</span><span class="sxs-lookup"><span data-stu-id="49d77-132">Example 1: List apps installed for the specified user</span></span>
+### <a name="example-1-list-apps-installed-for-the-specified-user"></a><span data-ttu-id="74799-132">Пример 1. Список приложений, установленных для указанного пользователя</span><span class="sxs-lookup"><span data-stu-id="74799-132">Example 1: List apps installed for the specified user</span></span>
 
-#### <a name="request"></a><span data-ttu-id="49d77-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="49d77-133">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="74799-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="74799-133">Request</span></span>
 
-<span data-ttu-id="49d77-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="49d77-134">The following is an example of the request.</span></span>
+<span data-ttu-id="74799-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="74799-134">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="74799-135">HTTP</span><span class="sxs-lookup"><span data-stu-id="74799-135">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_list_teamsApps"
@@ -72,11 +74,29 @@ GET /users/{user-id}/teamwork/installedApps
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps
 ```
+# <a name="c"></a>[<span data-ttu-id="74799-136">C#</span><span class="sxs-lookup"><span data-stu-id="74799-136">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="49d77-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="49d77-135">Response</span></span>
+# <a name="javascript"></a>[<span data-ttu-id="74799-137">JavaScript</span><span class="sxs-lookup"><span data-stu-id="74799-137">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-list-teamsapps-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-<span data-ttu-id="49d77-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="49d77-136">The following is an example of the response.</span></span>
-><span data-ttu-id="49d77-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="49d77-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+# <a name="objective-c"></a>[<span data-ttu-id="74799-138">Objective-C</span><span class="sxs-lookup"><span data-stu-id="74799-138">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/user-list-teamsapps-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="74799-139">Java</span><span class="sxs-lookup"><span data-stu-id="74799-139">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="74799-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="74799-140">Response</span></span>
+
+<span data-ttu-id="74799-141">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="74799-141">The following is an example of the response.</span></span>
+><span data-ttu-id="74799-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="74799-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "user_list_teamsApps",
@@ -98,11 +118,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-the-names-and-other-details-of-apps-installed-for-the-user"></a><span data-ttu-id="49d77-139">Пример 2: получение имен и других сведений о приложениях, установленных для пользователя</span><span class="sxs-lookup"><span data-stu-id="49d77-139">Example 2: Get the names and other details of apps installed for the user</span></span>
+### <a name="example-2-get-the-names-and-other-details-of-apps-installed-for-the-user"></a><span data-ttu-id="74799-144">Пример 2. Просмотр имен и других сведений о приложениях, установленных для пользователя</span><span class="sxs-lookup"><span data-stu-id="74799-144">Example 2: Get the names and other details of apps installed for the user</span></span>
 
-#### <a name="request"></a><span data-ttu-id="49d77-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="49d77-140">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="74799-145">Запрос</span><span class="sxs-lookup"><span data-stu-id="74799-145">Request</span></span>
 
-<span data-ttu-id="49d77-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="49d77-141">The following is an example of the request.</span></span>
+<span data-ttu-id="74799-146">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="74799-146">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "user_list_teamsApps_details"
@@ -112,11 +132,11 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps?$expand=teamsAppDefinition
 ```
 
-#### <a name="response"></a><span data-ttu-id="49d77-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="49d77-142">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="74799-147">Отклик</span><span class="sxs-lookup"><span data-stu-id="74799-147">Response</span></span>
 
-<span data-ttu-id="49d77-143">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="49d77-143">The following is an example of the response.</span></span>
+<span data-ttu-id="74799-148">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="74799-148">The following is an example of the response.</span></span>
 
-><span data-ttu-id="49d77-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="49d77-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="74799-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="74799-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "user_list_teamsApps_details",
@@ -162,11 +182,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a><span data-ttu-id="49d77-146">Пример 3: получение ресурса установки приложения на основе идентификатора манифеста связанного приложения</span><span class="sxs-lookup"><span data-stu-id="49d77-146">Example 3: Get the app installation resource based on the manifest ID of the associated app</span></span>
+### <a name="example-3-get-the-app-installation-resource-based-on-the-manifest-id-of-the-associated-app"></a><span data-ttu-id="74799-151">Пример 3. Получите ресурс установки приложения на основе ИД манифеста связанного приложения</span><span class="sxs-lookup"><span data-stu-id="74799-151">Example 3: Get the app installation resource based on the manifest ID of the associated app</span></span>
 
-#### <a name="request"></a><span data-ttu-id="49d77-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="49d77-147">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="74799-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="74799-152">Request</span></span>
 
-<span data-ttu-id="49d77-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="49d77-148">The following is an example of the request.</span></span> <span data-ttu-id="49d77-149">В этом примере идентификатор манифеста приложения Teams — "cf1ba4c7-f94e-4d80-ba90-5594b641a8ee".</span><span class="sxs-lookup"><span data-stu-id="49d77-149">In the example, the manifest ID of the Teams app is 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.</span></span>
+<span data-ttu-id="74799-153">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="74799-153">The following is an example of the request.</span></span> <span data-ttu-id="74799-154">В этом примере идентификатор манифеста приложения Teams — 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.</span><span class="sxs-lookup"><span data-stu-id="74799-154">In the example, the manifest ID of the Teams app is 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.</span></span>
 <!-- {
   "blockType": "request",
   "name": "user_list_teamsApps_details_filter"
@@ -175,11 +195,11 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/users/97a5a533-833d-494b-b543-c0afe026cb96/teamwork/installedApps?$expand=teamsApp,teamsAppDefinition&$filter=teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'
 ```
 
-#### <a name="response"></a><span data-ttu-id="49d77-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="49d77-150">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="74799-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="74799-155">Response</span></span>
 
-<span data-ttu-id="49d77-151">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="49d77-151">The following is an example of the response.</span></span>
+<span data-ttu-id="74799-156">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="74799-156">The following is an example of the response.</span></span>
 
-><span data-ttu-id="49d77-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="49d77-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="74799-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="74799-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "user_list_teamsApps_details_filter",
@@ -221,8 +241,8 @@ Content-type: application/json
     ]
 }
 ```
-## <a name="see-also"></a><span data-ttu-id="49d77-154">См. также</span><span class="sxs-lookup"><span data-stu-id="49d77-154">See also</span></span>
-- [<span data-ttu-id="49d77-155">Список приложений в каталоге</span><span class="sxs-lookup"><span data-stu-id="49d77-155">List apps in catalog</span></span>](appcatalogs-list-teamsapps.md)
+## <a name="see-also"></a><span data-ttu-id="74799-159">См. также</span><span class="sxs-lookup"><span data-stu-id="74799-159">See also</span></span>
+- [<span data-ttu-id="74799-160">Список приложений в каталоге</span><span class="sxs-lookup"><span data-stu-id="74799-160">List apps in catalog</span></span>](appcatalogs-list-teamsapps.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
