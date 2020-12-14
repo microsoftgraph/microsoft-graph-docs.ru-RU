@@ -1,35 +1,35 @@
 ---
-title: Список Алловедграупс для Принтершаре
-description: Получение списка групп, которым предоставлен доступ на отправку заданий печати на связанный общий принтер.
+title: Список allowedGroups для printerShare
+description: Получить список групп, которые получили доступ для отправки заданий печати в связанную обойму принтера.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a0a24bf7037ec80f25dd40c9f914ec9b1498d04f
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 59c31835aa16c33ae0b30c8833e0205c575688e4
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979748"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49664079"
 ---
-# <a name="list-allowedgroups-for-printershare"></a>Список Алловедграупс для Принтершаре
+# <a name="list-allowedgroups-for-printershare"></a>Список allowedGroups для printerShare
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка групп, которым предоставлен доступ к отправку заданий печати связанному [принтершаре](../resources/printershare.md).
+Получить список групп, которые получили доступ для отправки заданий печати на связанный [printerShare](../resources/printershare.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать в дополнение к разрешениям, приведенным в следующей таблице. Пользователь, вошедшего в систему, должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Чтобы использовать службу универсальной печати, у пользователя или клиента приложения должна быть активная подписка универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице. Пользователь, выписав его, должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Принтершаре. Read. ALL, Принтершаре. ReadWrite. ALL |
+|Делегированное (рабочая или учебная учетная запись)| PrinterShare.Read.All, PrinterShare.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -45,7 +45,7 @@ GET /print/shares/{id}/allowedGroups
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [принтидентити](../resources/printidentity.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию `200 OK` объектов [группы](../resources/group.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.printIdentity",
+  "@odata.type": "microsoft.graph.group",
   "isCollection": true
 } -->
 ```http
@@ -92,7 +92,7 @@ Content-type: application/json
 Content-length: 233
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.printIdentity)",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.group)",
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",

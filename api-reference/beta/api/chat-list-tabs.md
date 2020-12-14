@@ -1,16 +1,16 @@
 ---
 title: Список вкладок в чате
-description: 'Получение списка вкладок в указанном сеансе чата. '
+description: 'Получить список вкладок в указанном чате. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 238b76702e9d294a569bf89b17bdefda35c039c8
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 0e966f73aa790b57f138bc04830fab09681a5e00
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607584"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658308"
 ---
 # <a name="list-tabs-in-chat"></a>Список вкладок в чате
 
@@ -18,16 +18,18 @@ ms.locfileid: "49607584"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [вкладок](../resources/teamstab.md) в указанном [сеансе чата](../resources/chat.md). 
+Получить список вкладок [в](../resources/teamstab.md) указанном [чате.](../resources/chat.md)
+
+> **Примечание.** Если чат связан с экземпляром [onlineMeeting,](../resources/onlinemeeting.md) фактически, вкладки, закрепленные на собрании, будут перечислены. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | TeamsTab. Реадвритефорчат, TeamsTab. Read. ALL, TeamsTab. ReadWrite. ALL |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsTab. Реадвритефорчат. ALL, TeamsTab. Read. ALL, TeamsTab. ReadWrite. ALL |
+|Делегированное (рабочая или учебная учетная запись) | TeamsTab.ReadWriteForChat, TeamsTab.Read.All, TeamsTab.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | TeamsTab.ReadWriteForChat.All, TeamsTab.Read.All, TeamsTab.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,11 +50,11 @@ GET /chats/{chat-id}/tabs
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [вкладок](../resources/teamstab.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [вкладок](../resources/teamstab.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-all-the-tabs-in-the-chat-along-with-associated-teams-app"></a>Пример 1: список всех вкладок чата вместе со связанным приложением Teams
+### <a name="example-1-list-all-the-tabs-in-the-chat-along-with-associated-teams-app"></a>Пример 1. Список всех вкладок в чате вместе со связанным приложением Teams
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -145,7 +147,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-the-tabs-belonging-to-a-specific-app-in-a-chat"></a>Пример 2: список всех вкладок, принадлежащих конкретному приложению в чате
+### <a name="example-2-list-all-the-tabs-belonging-to-a-specific-app-in-a-chat"></a>Пример 2. Список всех вкладок, принадлежащих определенному приложению в чате
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -205,7 +207,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-- [Вкладки списка в канале](channel-list-tabs.md)
+- [Список вкладок на канале](channel-list-tabs.md)
 - 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,16 +1,16 @@
 ---
 title: Добавление вкладки в чат
-description: 'Добавляет (закрепляет) вкладку в указанный чат. '
+description: 'Добавляет (закрепление) вкладки в указанный чат. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6182daa44d0e5ac8deb86a1fb8fe61c5f1376b2f
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 38e6443ac0825c729083fcf1fe8e6f2f3e4ffa13
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607595"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658564"
 ---
 # <a name="add-tab-to-chat"></a>Добавление вкладки в чат
 
@@ -18,16 +18,18 @@ ms.locfileid: "49607595"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавить (закрепить) [вкладку](../resources/teamstab.md) к указанному [сеансу разговора](../resources/chat.md). Соответствующее приложение должно быть уже [установлено в чате](../api/chat-list-installedapps.md).
+Добавьте (закрепить) [вкладку](../resources/teamstab.md) в указанный [чат.](../resources/chat.md) Соответствующее приложение уже должно быть [установлено в чате.](../api/chat-list-installedapps.md)
+
+> **Примечание.** Если чат связан с экземпляром [onlineMeeting,](../resources/onlinemeeting.md) вкладка будет добавлена к собранию.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | TeamsTab. Create, TeamsTab. Реадвритефорчат, TeamsTab. ReadWrite. ALL |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-| Приложение                            | TeamsTab. Create, TeamsTab. Реадвритефорчат. ALL, TeamsTab. ReadWrite. ALL |
+|Делегированное (рабочая или учебная учетная запись) | TeamsTab.Create, TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+| Приложение                            | TeamsTab.Create, TeamsTab.ReadWriteForChat.All, TeamsTab.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,11 +45,11 @@ POST /chats/{chat-id}/tabs
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса включает представление объекта [teamsTab](../resources/teamstab.md)в формате JSON.
+В теле запроса содержится представление [teamsTab](../resources/teamstab.md)в JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и экземпляр ресурса [teamsTab](../resources/teamstab.md) в теле.
+В случае успеха этот метод возвращает код отклика и экземпляр ресурса `201 Created` [teamsTab](../resources/teamstab.md) в тексте.
 
 ## <a name="example"></a>Пример
 

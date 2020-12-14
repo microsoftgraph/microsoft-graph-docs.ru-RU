@@ -1,22 +1,22 @@
 ---
-title: Использование набора средств Microsoft Graph с угловой страницей
-description: Приступите к работе с набором инструментов Microsoft Graph в приложении в угловом приложении.
+title: Использование microsoft Graph набор средств Angular
+description: Начало работы с microsoft Graph набор средств в приложении Angular.
 localization_priority: Normal
 author: elisenyang
-ms.openlocfilehash: be84107314a9696486b377f09dc399d6e15c44cf
-ms.sourcegitcommit: 3fbc2249b307e8d3a9de18f22ef6911094ca272c
+ms.openlocfilehash: a1c0ebc252545491dc57d8910eb283db6d227ccd
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48288506"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49664046"
 ---
-# <a name="use-the-microsoft-graph-toolkit-with-angular"></a>Использование набора средств Microsoft Graph с угловой страницей
+# <a name="use-the-microsoft-graph-toolkit-with-angular"></a>Использование microsoft Graph набор средств Angular
 
-Компоненты набора инструментов Microsoft Graph отлично работают с веб-платформами, такими как радиальные, в дополнение к Ванилла JavaScript и HTML. В этом разделе описывается, как использовать набор средств Microsoft Graph с помощью раздела "Радиальный". Пошаговое руководство, в котором описывается создание нового приложения и использование набора инструментов Microsoft Graph, представлено в разделе [Использование набора средств Microsoft Graph с](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-14-using-microsoft-graph-toolkit-with-angular/)помощью пункта "Радиальный".
+Компоненты набор средств Microsoft Graph отлично работают с веб-платформами, например Angular, в дополнение к javaScript и HTML. В этом разделе описывается, как использовать microsoft Graph набор средств Angular. Пошаговые пошаговые описания создания нового приложения Angular и использования microsoft Graph набор средств см. в статье [Набор средств Microsoft Graph с Angular.](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-14-using-microsoft-graph-toolkit-with-angular/)
 
-## <a name="add-the-microsoft-graph-toolkit"></a>Добавление набора средств Microsoft Graph
+## <a name="add-the-microsoft-graph-toolkit"></a>Добавление учетной записи Microsoft Graph набор средств
 
-Для начала необходимо включить настраиваемые элементы в угловом приложении, добавив элемент `CUSTOM_ELEMENT_SCHEMA` `@NgModule() decorator` in `app.module.ts` . В приведенном ниже примере показано, как это сделать.
+Сначала необходимо включить настраиваемые элементы в приложении Angular, добавив в `CUSTOM_ELEMENT_SCHEMA` `@NgModule() decorator` него элемент `app.module.ts` . В следующем примере показано, как это сделать:
 ```ts
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -32,15 +32,15 @@ import { AppComponent } from './app.component';
 })
 export class AppModule {}
 ```
-Затем добавьте в свой проект набор инструментов Microsoft Graph, установив пакет NPM с:
+Затем добавьте в проект набор средств Microsoft Graph, установив пакет npm с помощью:
 ```bash
 npm install @microsoft/mgt
 ```
 ## <a name="initialize-a-provider"></a>Инициализация поставщика
 
-Поставщики набора средств Microsoft Graph обеспечивают проверку подлинности и доступ к Microsoft Graph для компонентов. Чтобы узнать больше, ознакомьтесь со статьей [Использование поставщиков](../providers.md). Используемый поставщик зависит от контекста, в котором будет использоваться решение.
+Поставщики набор средств Microsoft Graph обеспечивают проверку подлинности и доступ к Microsoft Graph для компонентов. Дополнительные см. [в этой теме.](../providers/providers.md) Используемый поставщик зависит от контекста, в котором будет использоваться ваше решение.
 
-В приведенном ниже примере показано, как добавить [поставщик MSAL](../providers/msal.md), но вы можете использовать ту же модель со всеми поставщиками. Импортируйте поставщик и присвойте ему значение Initialize при инициализации приложения. Замените `<YOUR-CLIENT-ID>` идентификатором клиента для вашего приложения.
+В следующем примере показано, как добавить [поставщика MSAL,](../providers/msal.md)но вы можете использовать ту же модель с любым из поставщиков. Импорт поставщика и его инициализация при инициализации приложения. Замените `<YOUR-CLIENT-ID>` его на ИД клиента для вашего приложения.
 
 ```ts
 import { Component, OnInit } from '@angular/core';
@@ -61,21 +61,21 @@ export class AppComponent implements OnInit {
     }
 }
 ```
-### <a name="create-an-appclient-id"></a>Создание идентификатора приложения или клиента
-Чтобы получить идентификатор клиента, необходимо [зарегистрировать приложение](../../auth-register-app-v2.md) в Azure AD. 
->**Note**: MSAL поддерживает только неявный поток для OAuth. Не забудьте включить неявный поток в приложении на портале Azure (по умолчанию он не включен). В разделе **Проверка подлинности**найдите раздел **неявный предоставление** и установите флажки для **маркеров доступа** и **маркеров ID**.
+### <a name="create-an-appclient-id"></a>Создание приложения или ИД клиента
+Чтобы получить ИД клиента, необходимо зарегистрировать приложение [в](../../auth-register-app-v2.md) Azure AD. 
+>**Примечание.** MSAL поддерживает только неявный поток для OAuth. Обязательно включите неявный поток в приложении на портале Azure (по умолчанию он не включен). В **разделе "Проверка подлинности"** найдите раздел неявного предоставления и выберите для маркеров **доступа** и **маркеров ID** свои почтовые ящики. 
 
 ## <a name="add-components"></a>Добавление компонентов
 
-Теперь вы можете использовать любые компоненты набора инструментов Microsoft Graph, как и в случае шаблонов HTML. Например, чтобы добавить [компонент Person](../components/person.md), добавьте в шаблон следующий код:
+Теперь вы можете использовать любой из компонентов microsoft Graph набор средств, как обычно в htmL-шаблонах. Например, чтобы добавить компонент [Person,](../components/person.md)добавьте в шаблон следующее:
 
 ```html
 <mgt-person person-query="me" view="twolines"></mgt-person>
 ```
 
-## <a name="customizing-components-with-angular"></a>Настройка компонентов с помощью угловой
+## <a name="customizing-components-with-angular"></a>Настройка компонентов с помощью Angular
 
-Все компоненты набора инструментов Microsoft Graph поддерживают [Настраиваемые шаблоны](../templates.md), которые позволяют изменять содержимое компонента. По умолчанию для настройки компонентов используются двойные фигурные скобки, указывающие на данные свойства для каждого возвращенного элемента, как показано ниже:
+Все набор средств Microsoft Graph [поддерживают](../customize-components/templates.md)настраиваемые шаблоны, которые позволяют изменять содержимое компонента. Синтаксис по умолчанию для настройки компонентов — использование двойных скобок для ссылки на данные свойств для каждого из возвращенных элементов, как показано ниже.
 
 ```html
 <!-- Double braces are used for data binding in Angular. This will throw an error. -->
@@ -86,11 +86,11 @@ export class AppComponent implements OnInit {
 </mgt-agenda>
 ```
 
-Однако в угловых скобках для привязки данных используются двойные скобки, а при попытке использовать синтаксис двойной скобки будет выдаваться сообщение об ошибке.
+Однако в Angular для привязки данных используются двойные скобки, и компилятор Angular при попытке использовать синтаксис двойных скобок выдает ошибку.
 
-Эти ошибки можно избежать, изменив символы по умолчанию, используемые в наборе инструментов, на другие, кроме двойных фигурных скобок, с помощью параметра `TemplateHelper` . Это лучше всего сделать в компоненте приложения верхнего уровня, чтобы он применялся глобально.
+Вы можете избежать этих ошибок, изменив используемые по умолчанию символы набор средств на что-то, кроме двойных скобок, с помощью `TemplateHelper` . Лучше всего это сделать в компоненте приложения верхнего уровня, чтобы оно применялось глобально.
 
-Импортируйте `TemplateHelper` метод и используйте его `.setBindingSyntax()` для установки пользовательского синтаксиса привязки.
+Импортировать `TemplateHelper` и использовать метод для настройки `.setBindingSyntax()` пользовательского синтаксиса привязки.
 
 ```ts
 import { Component, OnInit } from '@angular/core';
@@ -110,7 +110,7 @@ export class AppComponent implements OnInit {
     }
 }
 ```
-Теперь можно использовать пользовательский синтаксис привязки для определения пользовательских шаблонов.
+Теперь можно использовать пользовательский синтаксис привязки для определения настраиваемой шаблонов.
 
 ```html
 <mgt-agenda>
@@ -121,7 +121,7 @@ export class AppComponent implements OnInit {
 ```
 
 ## <a name="next-steps"></a>Дальнейшие действия
-- Ознакомьтесь с пошаговыми руководствами по [созданию углового приложения](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-14-using-microsoft-graph-toolkit-with-angular/).
-- Опробуйте компоненты в [интерактивная среда](https://mgt.dev).
-- Задайте вопрос о [переполнении стека](https://aka.ms/mgt-question).
-- Сообщать об ошибках или оставлять запрос на функцию в [GitHub](https://aka.ms/mgt).
+- Ознакомьтесь с пошагами в этом пошаговом руководстве по [построению приложения Angular.](https://developer.microsoft.com/graph/blogs/a-lap-around-microsoft-graph-toolkit-day-14-using-microsoft-graph-toolkit-with-angular/)
+- Попробуйте компоненты в игровой [области.](https://mgt.dev)
+- Задайте вопрос на [сайте Stack Overflow.](https://aka.ms/mgt-question)
+- Сообщать об ошибках или оставлять запросы на функции на [GitHub.](https://aka.ms/mgt)

@@ -1,16 +1,16 @@
 ---
 title: Удаление вкладки из чата
-description: 'Удаление (открепление) вкладки из указанного чата. '
+description: 'Удалите (открепите) вкладку из указанного чата. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c83e8c9d1c501b27c46a6df3958008fb4447c06b
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: fe844b0a109f11886a0f2f2481823a18fb9b9c80
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607620"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658578"
 ---
 # <a name="delete-tab-from-chat"></a>Удаление вкладки из чата
 
@@ -18,16 +18,18 @@ ms.locfileid: "49607620"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление (открепление) вкладки из указанного [чата](../resources/chat.md). 
+Удалите (открепите) вкладку из указанного [чата.](../resources/chat.md) 
+
+> **Примечание.** Если чат связан с экземпляром [onlineMeeting,](../resources/onlinemeeting.md) вкладка будет удалена из собрания.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | TeamsTab. Реадвритефорчат, TeamsTab. ReadWrite. ALL |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsTab. Реадвритефорчат, TeamsTab. ReadWrite. ALL |
+|Делегированное (рабочая или учебная учетная запись) | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос

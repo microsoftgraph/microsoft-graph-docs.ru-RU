@@ -1,24 +1,24 @@
 ---
-title: 'Хранитель: Activated'
-description: Повторно активируйте хранитель в случае.
+title: 'custodian: activate'
+description: Повторно активировать хранителя в деле.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 40ac381da15065a4363471ba9c82c19080b84884
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 675e62b24b126b2ad37263f3c9a1d57e42bd37e7
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597766"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659365"
 ---
-# <a name="custodian-activate"></a>Хранитель: Activated
+# <a name="custodian-activate"></a>custodian: activate
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Активируйте хранитель, выпущенный из случая, чтобы сделать их частью этого случая. Дополнительные сведения: [Управление custodians в расширенном случае обнаружения электронных](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian)данных.
+Активируйте хранителя, который был освобожден из дела, чтобы снова сделать его частью дела. Дополнительные сведения см. в [деле "Управление хранителями" в деле Advanced eDiscovery.](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +27,7 @@ ms.locfileid: "49597766"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|User.Read|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -60,6 +60,8 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/ac
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "custodian_activate"
@@ -69,6 +71,24 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/ac
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea2410eba3bec8ae873be6b/custodians/45454331323337443946343043464239/activate
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/custodian-activate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/custodian-activate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/custodian-activate-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/custodian-activate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

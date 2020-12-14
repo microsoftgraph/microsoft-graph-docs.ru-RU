@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса teamsTab
-description: 'TeamsTab — это вкладка, которая закреплена (присоединена) к каналу в группе. '
+description: 'TeamsTab — это вкладка, закрепленная (прикрепленная) к каналу в команде. '
 localization_priority: Normal
-author: nkramer
+author: AkJo
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9d81c9f21d04690bcaa7360fb83595a13c7be156
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 8314604d6ed15eeb154ff46c8e3b90f4be4f5cde
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607030"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658550"
 ---
 # <a name="teamstab-resource-type"></a>Тип ресурса teamsTab
 
@@ -18,15 +18,15 @@ ms.locfileid: "49607030"
 
 
 
-TeamsTab — это [вкладка](../resources/teamstab.md) , которая закреплена (присоединена) к [каналу](channel.md) в [группе](team.md). 
+TeamsTab — [это](../resources/teamstab.md) вкладка, закрепленная (прикрепленная) к [каналу](channel.md) в [команде.](team.md) 
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Перечисление вкладок](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | Перечисление вкладок, закрепленных в канале.|
-|[Получение вкладки](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Чтение вкладок, закрепленных в канале.|
-|[Добавление вкладки](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | Добавление (закрепление) вкладки в канал.|
+|[Перечисление вкладок](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | Перечисление вкладок, закрепленных на канале.|
+|[Получение вкладки](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Чтение вкладки, закрепленной в канале.|
+|[Добавление вкладки](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | Добавление (закрепление) вкладки на канал.|
 |[Обновление вкладки](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | Обновление свойств вкладки.|
 |[Удаление вкладки](../api/channel-delete-tabs.md) | Нет | Удаление (открепление) вкладки из канала.|
 
@@ -35,16 +35,16 @@ TeamsTab — это [вкладка](../resources/teamstab.md) , которая 
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|  id              |   string                  |  Идентификатор, который уникальным образом определяет определенный экземпляр вкладки канала. только чтение.     |
+|  id              |   string                  |  Идентификатор, однозначно определяя определенный экземпляр вкладки канала. Только для чтения.     |
 |  displayName            |   string                  |  Имя вкладки.     |
 |  webUrl          |   string                  |  URL-адрес глубокой ссылки для экземпляра вкладки. Только для чтения.     |
-|  configuration        |   [теамстабконфигуратион](teamstabconfiguration.md) |  Контейнер для настраиваемых параметров, применяемых к вкладке. Вкладка считается настроенной только после задания этого свойства.     |
+|  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Контейнер для настраиваемой настройки, примененной к вкладке. Вкладка считается настроенной только после настройки этого свойства.     |
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип   | Описание |
 |:---------------|:--------|:----------|
-|teamsApp|[teamsApp](teamsapp.md) | Приложение, связанное с вкладкой. Его нельзя изменить после создания вкладки. |
+|teamsApp|[teamsApp](teamsapp.md) | Приложение, связанное со вкладками. Его нельзя изменить после создания вкладки. |
 
 ## <a name="json-representation"></a>Представление JSON
 

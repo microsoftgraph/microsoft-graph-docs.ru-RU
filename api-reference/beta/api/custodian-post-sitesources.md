@@ -1,24 +1,24 @@
 ---
-title: Создание Ситесаурце
-description: Создание нового объекта Ситесаурце.
+title: Создание siteSource
+description: Создание объекта siteSource.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 93cb37a6ff94a52830675f876084fc85a6365a40
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 0196fac3cf9b44915aa8f979072b2daadf6213f9
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597755"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659089"
 ---
-# <a name="create-sitesource"></a>Создание Ситесаурце
+# <a name="create-sitesource"></a>Создание siteSource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [ситесаурце](../resources/sitesource.md) .
+Создание объекта [siteSource.](../resources/sitesource.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +27,7 @@ ms.locfileid: "49597755"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|User.Read|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,22 +50,24 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/si
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [ситесаурце](../resources/sitesource.md) в формате JSON.
+В теле запроса укажу представление объекта [siteSource](../resources/sitesource.md) в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании [ситесаурце](../resources/sitesource.md).
+В следующей таблице показаны свойства, необходимые при создании [siteSource.](../resources/sitesource.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|site@odata. Bind|String|Идентификатор сайта, который можно получить из ресурса [сайта](../resources/site.md) с помощью метода [получения ресурса сайта по пути](../api/site-getbypath.md) . Использование: {hostname}:/{релативе-Пас}. Для URL-адреса сайта `https://contoso.sharepoint.com/sites/HumanResources` запрос Microsoft Graph будет иметь значение `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources` . Идентификатор является первым идентификатором GUID, указанным в поле ID.|
+|site@odata.bind|String|ИД сайта, который можно получить [](../resources/site.md) из ресурса сайта с помощью метода "Получить ресурс [сайта по пути".](../api/site-getbypath.md) Для использования задается {hostname}:/{relative-path}. Для URL-адреса сайта запрос Microsoft Graph будет . `https://contoso.sharepoint.com/sites/HumanResources` `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources` ИД — это первый GUID, указанный в поле "ИД".|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [ситесаурце](../resources/sitesource.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [siteSource](../resources/sitesource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_sitesource_from_"
@@ -81,6 +83,24 @@ Content-length: 179
     "site@odata.bind": "https://graph.microsoft.com/v1.0/sites/{siteId}"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-sitesource-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-sitesource-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-sitesource-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-sitesource-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

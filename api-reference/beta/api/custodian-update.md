@@ -1,24 +1,24 @@
 ---
-title: Обновление хранитель
-description: Обновление свойств объекта хранитель.
+title: Обновление хранителя
+description: Обновление свойств объекта custodian.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: c9c58671dd2be9d97e9317cc0b268245402b44e5
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 605438ac3ba9883ca159fe97015701282f39e347
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597734"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658922"
 ---
-# <a name="update-custodian"></a>Обновление хранитель
+# <a name="update-custodian"></a>Обновление хранителя
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [хранитель](../resources/custodian.md) .
+Обновление свойств объекта [custodian.](../resources/custodian.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +27,7 @@ ms.locfileid: "49597734"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|User.Read|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,22 +50,24 @@ PATCH /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [хранитель](../resources/custodian.md) в формате JSON.
+В теле запроса укажу представление объекта [хранителя](../resources/custodian.md) в JSON.
 
-В следующей таблице приведены свойства объекта [хранитель](../resources/custodian.md) , которые можно изменить.
+В следующей таблице перечислены свойства объекта [хранителя,](../resources/custodian.md) которые можно изменить.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|апплихолдтосаурцес|Логический|Определяет, были ли источники хранитель сохранены во время создания. Дополнительные сведения см. [в разделе помещение custodians на удержании](/microsoft-365/compliance/add-custodians-to-case#step-4-place-custodians-on-hold).|
+|applyHoldToSources|Логический|Определяет, были ли источники хранителя помещены на удержание во время создания. Подробные сведения см. в [под удержании для хранителей.](/microsoft-365/compliance/add-custodians-to-case#step-4-place-custodians-on-hold)|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [хранитель](../resources/custodian.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный `200 OK` [объект хранителя](../resources/custodian.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_custodian"
@@ -81,6 +83,24 @@ Content-length: 254
   "applyHoldToSources": "false",
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-custodian-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-custodian-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-custodian-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-custodian-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

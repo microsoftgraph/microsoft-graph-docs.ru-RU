@@ -1,28 +1,28 @@
 ---
 title: Поставщик MSAL
-description: Поставщик MSAL использует MSAL.js для входа пользователей и получения маркеров для использования с Microsoft Graph.
+description: Поставщик MSAL использует MSAL.js для регистрации пользователей и получения маркеров для использования с Microsoft Graph
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: 0edb6fba29c5ee0dcb37199db055761088408be6
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: d3b3d82ae3c60080beaaff7f39a1324022d3ab2a
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086615"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659176"
 ---
 # <a name="msal-provider"></a>Поставщик MSAL
 
-Поставщик MSAL использует [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) для входа пользователей и получения маркеров для использования с Microsoft Graph.
+Поставщик MSAL использует [MSAL.js](https://github.com/AzureAD/microsoft-authentication-library-for-js) для регистрации пользователей и получения маркеров для использования с Microsoft Graph.
 
-Чтобы узнать больше, ознакомьтесь со статьей [поставщики](../providers.md).
+Дополнительные узнать см. [в поставщиках.](./providers.md)
 
 ## <a name="get-started"></a>Начало работы
 
-Вы можете инициализировать поставщик MSAL в HTML или JavaScript.
+Вы можете инициализировать поставщика MSAL в HTML или JavaScript.
 
 ### <a name="initialize-in-your-html-page"></a>Инициализация на HTML-странице
 
-Инициализация поставщика MSAL в HTML является самым простым способом создания нового поставщика. Используйте `mgt-msal-provider` компонент, чтобы задать **идентификатор клиента** и другие свойства. При этом будет создан новый `UserAgentApplication` экземпляр, который будет использоваться для всех проверок подлинности и получения маркеров.
+Инициализация поставщика MSAL в HTML является простейшим способом создания нового поставщика. Используйте `mgt-msal-provider` компонент, чтобы установить **ид клиента и** другие свойства. При этом будет создаваться новый экземпляр, который будет использоваться для проверки подлинности `UserAgentApplication` и получения маркеров.
 
 ```html
 <mgt-msal-provider client-id="<YOUR_CLIENT_ID>"
@@ -34,16 +34,16 @@ ms.locfileid: "49086615"
 
 | Атрибут    | Описание                                                                                                                                                                                                                                                           |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Client — ID    | Идентификатор строкового клиента (см. Создание идентификатора приложения или клиента). Обязательный.                                                                                                                                                                                                           |
-| Тип входа   | Перечисление между `redirect` `popup` значением и значением по умолчанию — `redirect` . Необязательный атрибут.                                                                                                                                                                                   |
-| scopes       | Строки, разделенные запятыми, для областей, которые пользователь должен согласиться на вход в систему. Необязательный атрибут.                                                                                                                                                                                     |
-| авторитет    | Строка Authority — значение по умолчанию — общий центр. Для приложений с одним клиентом используйте идентификатор клиента или имя клиента. Например, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` или `https://login.microsoftonline.com/[your-tenant-id]` . Необязательный атрибут. |
-| Redirect — URI | Строка URI перенаправления — по умолчанию используется текущий URI окна. Необязательный атрибут.                                                                                                                                                                                            |
-| зависит от   | Строка выбора элемента с другим компонентом поставщика более высокого приоритета. Необязательный атрибут.                                                                                                                                                                                      |
+| client-id    | Строка ИД клиента (см. статью "Создание приложения или клиента"). Обязательный.                                                                                                                                                                                                           |
+| тип входа   | Enumeration between `redirect` and - default value is `popup` `redirect` . Необязательно.                                                                                                                                                                                   |
+| scopes       | Разделенные запятой строки для областей, на которые пользователь должен согласиться при входе. Необязательно.                                                                                                                                                                                     |
+| authority    | Строка "Полномочия" — по умолчанию является общим органом. Для приложений с одним клиентом используйте свой ИД клиента или имя клиента. Например, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` или `https://login.microsoftonline.com/[your-tenant-id]` . Необязательно. |
+| redirect-uri | Строка URI перенаправления — по умолчанию используется URI текущего окна. Необязательно.                                                                                                                                                                                            |
+| зависит от   | Строка селектора элементов другого компонента поставщика с более высоким приоритетом. Необязательно.                                                                                                                                                                                      |
 
 ### <a name="initialize-in-javascript"></a>Инициализация в JavaScript
 
-Вы можете предоставить дополнительные параметры, инициализируя поставщик в JavaScript.
+Вы можете предоставить дополнительные параметры, инициализируя поставщика в JavaScript.
 
 ```ts
 import {Providers, MsalProvider} from '@microsoft/mgt'
@@ -52,7 +52,11 @@ import {UserAgentApplication} from "msal";
 Providers.globalProvider = new MsalProvider(config: MsalConfig);
 ```
 
-где Мсалконфиг:
+Параметр конструктора можно настроить двумя способами, как описано `MsalProvider` в следующих разделах.
+
+#### <a name="provide-a-clientid-to-create-a-new-useragentapplication"></a>Предоставление a `clientId` для создания нового `UserAgentApplication`
+
+Этот вариант имеет смысл, если набор средств Graph отвечает за всю проверку подлинности в вашем приложении.
 
 ```ts
 interface MsalConfig {
@@ -66,10 +70,23 @@ interface MsalConfig {
 }
 ```
 
-Необходимо указать `clientId` (чтобы создать новый `UserAgentApplication` ).
+#### <a name="pass-an-existing-useragentapplication-in-the-useragentapplication-property"></a>Передав `UserAgentApplication` существующий объект в `userAgentApplication` свойстве.
 
-Дополнительные сведения о MSAL.js и дополнительных параметрах, которые можно использовать при инициализации библиотеки MSAL, приведены в [документации по MSAL](/azure/active-directory/develop/msal-js-initializing-client-applications).
+Используйте это, когда ваше приложение использует функции MSAL помимо возможностей, которые пользуется другими функциями `MsalProvider` Microsoft Graph набор средств. Это особенно целесообразно, если в структуре автоматически делается и предоставляется a для вас, например при использовании `UserAgentApplication` [msal-angular.](https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-angular)
 
-## <a name="creating-an-appclient-id"></a>Создание идентификатора приложения или клиента
+При использовании этого параметра необходимо понимать возможности для столкновений. По своей природе существует риск того, что состояние сеанса может измениться, например, с помощью входов или согласия пользователя на `MsalProvider` дополнительные области. Убедитесь, что ваше приложение и другие структуры корректно реагируют на эти изменения в состоянии, или рассмотрите возможность использования [настраиваемого поставщика.](/graph/toolkit/providers/custom)
 
-Сведения о том, как зарегистрировать приложение и получить идентификатор клиента, можно найти в статье [Создание приложения Azure Active Directory](../get-started/add-aad-app-registration.md).
+```ts
+interface MsalConfig {
+  userAgentApplication: UserAgentApplication;
+  scopes?: string[];
+  loginType?: LoginType; // LoginType.Popup or LoginType.Redirect (redirect is default)
+  loginHint?: string;
+}
+```
+
+Дополнительные MSAL.js и дополнительные параметры, которые можно использовать при инициализации библиотеки MSAL, см. в [документации MSAL.](/azure/active-directory/develop/msal-js-initializing-client-applications)
+
+## <a name="creating-an-appclient-id"></a>Создание приложения или ИД клиента
+
+Дополнительные сведения о том, как зарегистрировать приложение и получить ИД клиента, см. в примере создания приложения [Azure Active Directory.](../get-started/add-aad-app-registration.md)

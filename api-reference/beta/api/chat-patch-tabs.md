@@ -1,24 +1,26 @@
 ---
-title: Вкладка "обновление" в чате
+title: Вкладка "Обновление" в чате
 description: Обновление свойств указанной вкладки в чате.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e7b8a1bb20b9e80dc8e86768ae5edf3216090287
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 82f5e022fc1c3066f54aed7e58be2e4cefae1b64
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607583"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658301"
 ---
-# <a name="update-tab-in-chat"></a>Вкладка "обновление" в чате
+# <a name="update-tab-in-chat"></a>Вкладка "Обновление" в чате
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств указанной [вкладки](../resources/teamstab.md) в [чате](../resources/chat.md). Это можно использовать для настройки контента вкладки.
+Обновление свойств указанной вкладки [в](../resources/teamstab.md) [чате.](../resources/chat.md) Это можно использовать для настройки содержимого вкладки.
+
+> **Примечание.** Если чат связан с экземпляром [onlineMeeting,](../resources/onlinemeeting.md) фактически вкладка, закрепленная на собрании, будет обновлена.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,9 +28,9 @@ ms.locfileid: "49607583"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | TeamsTab. Реадвритефорчат, TeamsTab. ReadWrite. ALL |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | TeamsTab. Реадвритефорчат, TeamsTab. ReadWrite. ALL |
+|Делегированное (рабочая или учебная учетная запись) | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | TeamsTab.ReadWriteForChat, TeamsTab.ReadWrite.All |
 
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -43,14 +45,14 @@ PATCH /chats/{chat-id}/tabs/{tab-id}
 | Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Tab](../resources/teamstab.md) в формате JSON.
+В теле запроса укажу представление объекта [tab](../resources/teamstab.md) в JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный ресурс **teamsTab** в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный ресурс `200 OK` **teamsTab** в тексте отклика.
 
 ## <a name="examples"></a>Примеры
-### <a name="example-1-update-the-name-of-a-tab-in-a-chat"></a>Пример 1: обновление имени вкладки в чате
+### <a name="example-1-update-the-name-of-a-tab-in-a-chat"></a>Пример 1. Обновление имени вкладки в чате
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -98,7 +100,7 @@ Content-type: application/json
 ## <a name="see-also"></a>См. также
 
 - [Настройка встроенных типов вкладок](/graph/teams-configuring-builtin-tabs)
-- [Вкладка "обновление" в канале](channel-patch-tabs.md)
+- [Вкладка "обновление" на канале](channel-patch-tabs.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

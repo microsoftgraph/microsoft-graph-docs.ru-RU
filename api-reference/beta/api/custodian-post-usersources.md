@@ -1,24 +1,24 @@
 ---
-title: Создание Усерсаурце
-description: Создание нового объекта Усерсаурце.
+title: Создание userSource
+description: Создание объекта userSource.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 9ff054926611c990f8db0a2f868ac3449708436f
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: a6aec9f8dbe7781679564c6be85cabb3ced81410
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597739"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659022"
 ---
-# <a name="create-usersource"></a>Создание Усерсаурце
+# <a name="create-usersource"></a>Создание userSource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [усерсаурце](../resources/usersource.md) .
+Создание объекта [userSource.](../resources/usersource.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +27,7 @@ ms.locfileid: "49597739"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|User.Read|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,23 +50,25 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/us
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [усерсаурце](../resources/usersource.md) в формате JSON.
+В теле запроса укажу представление объекта [userSource](../resources/usersource.md) в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании [усерсаурце](../resources/usersource.md).
+В следующей таблице показаны свойства, необходимые при создании [объекта userSource.](../resources/usersource.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |email|String|SMTP-адрес пользователя.|
-|инклудедсаурцес|sourceType|Указывает, какие источники включены в эту группу. Возможные значения: `mailbox`, `site`.|
+|includedSources|sourceType|Указывает источники, включенные в эту группу. Возможные значения: `mailbox`, `site`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [усерсаурце](../resources/usersource.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [userSource](../resources/usersource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_usersource_from_"
@@ -83,6 +85,24 @@ Content-length: 233
     "includedSources":"mailbox, site"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-usersource-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-usersource-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-usersource-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-usersource-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

@@ -1,33 +1,33 @@
 ---
-title: Получение сведений о присутствии
-description: Получение сведений о присутствии пользователя.
+title: Получить присутствие
+description: Получите сведения о присутствии пользователя.
 author: elvinyang-msft
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: a82c03e9b63d83f8aab8b3556e75b17d926ff3e6
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 591c388418ddb60fad1d78a04de79cb65a884630
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581249"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49663970"
 ---
-# <a name="get-presence"></a>Получение сведений о присутствии
+# <a name="get-presence"></a>Получить присутствие
 
 Пространство имен: microsoft.graph
 
-Получение сведений о [присутствии](../resources/presence.md) пользователя.
+Получите сведения о [присутствии](../resources/presence.md) пользователя.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 Для вызова этих API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий)                  |
 | :-------------- | :----------------------------------------------------------- |
 | Делегированное (рабочая или учебная учетная запись)     | Presence.Read, Presence.Read.All      |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                        |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                        |
 | Приложение                            | Не поддерживается.                        |
 
-> **Примечание:** Максимальная частота запросов для этого API составляет 1500 запросов API в течение 30-секундного периода на приложение для каждого клиента.
+> **Примечание.** Максимальная скорость запросов для этого API составляет 1500 запросов API в течение 30 секунд для каждого приложения на клиента.
 
 ## <a name="http-requests"></a>HTTP-запросы
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +37,7 @@ GET /users/{id}/presence
 GET /communications/presences
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заглавные запросы
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
@@ -48,17 +48,19 @@ GET /communications/presences
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [присутствия](../resources/presence.md) в теле отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [присутствия](../resources/presence.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-your-own-presence-information"></a>Пример 1: получение собственных сведений о присутствии
+### <a name="example-1-get-your-own-presence-information"></a>Пример 1. Получите сведения о присутствии
 
-В приведенном ниже примере показано, как получить сведения о присутствии. Для выполнения этой операции требуется разрешение на присутствие. чтение.
+В следующем примере показано, как получить собственные сведения о присутствии. Для этой операции требуется разрешение Presence.Read.
 
 #### <a name="request"></a>Запрос
 
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-your-presence"
@@ -67,6 +69,24 @@ GET /communications/presences
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/presence
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-your-presence-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-your-presence-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-your-presence-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-your-presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -91,12 +111,14 @@ Content-Length: 1574
 }
 ```
 
-### <a name="example-2-get-the-presence-information-of-another-user"></a>Пример 2: получение сведений о присутствии другого пользователя
+### <a name="example-2-get-the-presence-information-of-another-user"></a>Пример 2. Просмотр сведений о присутствии другого пользователя
 
-В приведенном ниже примере показано, как получить сведения о присутствии для другого пользователя. Для выполнения этой операции требуется разрешение на присутствие. Read. ALL.
+В следующем примере показано, как получить сведения о присутствии для другого пользователя. Для этой операции требуется разрешение Presence.Read.All.
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get-user-presence"
@@ -104,6 +126,24 @@ Content-Length: 1574
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/66825e03-7ef5-42da-9069-724602c31f6b/presence
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-presence-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-presence-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-user-presence-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ---
 
@@ -129,9 +169,9 @@ Content-Length: 1574
 }
 ```
 
-### <a name="example-3-get-the-presence-information-of-another-user"></a>Пример 3: получение сведений о присутствии другого пользователя
+### <a name="example-3-get-the-presence-information-of-another-user"></a>Пример 3. Просмотр сведений о присутствии другого пользователя
 
-В приведенном ниже примере показано, как получить сведения о присутствии для другого пользователя. Для выполнения этой операции требуется разрешение на присутствие. Read. ALL.
+В следующем примере показано, как получить сведения о присутствии для другого пользователя. Для этой операции требуется разрешение Presence.Read.All.
 
 #### <a name="request"></a>Запрос
 

@@ -1,22 +1,22 @@
 ---
-title: 'Едисковерикасе: Close'
-description: Закройте дело обнаружения электронных данных.
+title: 'ediscoveryCase: close'
+description: Закроем дело eDiscovery.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 627c8c1547e8df03c6736f00a5cb571d1c8c93bb
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 90b899cf526dbb54687d8b4a8825536f232ac631
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597787"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657090"
 ---
-# <a name="ediscoverycase-close"></a>Едисковерикасе: Close
+# <a name="ediscoverycase-close"></a>ediscoveryCase: close
 
 Пространство имен: microsoft.graph
 
-Закройте дело обнаружения электронных данных. Подробнее о том, [как закрыть обращение](/microsoft-365/compliance/close-or-delete-case#close-a-case).
+Закроем дело eDiscovery. Подробные сведения [см. в сведениях о закрытии дела.](/microsoft-365/compliance/close-or-delete-case#close-a-case)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,7 +25,7 @@ ms.locfileid: "49597787"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|User.Read|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -57,6 +57,8 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/close
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "ediscoverycase_close"
@@ -66,6 +68,24 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/close
 ``` http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-4bd9-b41d-abf35edc7583/close
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/ediscoverycase-close-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/ediscoverycase-close-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/ediscoverycase-close-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/ediscoverycase-close-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 
