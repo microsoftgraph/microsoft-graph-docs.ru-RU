@@ -1,24 +1,24 @@
 ---
-title: Получение educationAssignment
-description: " преподаватели могут видеть все назначения в классе."
+title: Get educationAssignment
+description: " преподаватели могут видеть все задания в классе."
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: d31a7980c401fae746d0ebfc92742fe9f4cde702
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 17cc7921c451fae534cd2bbe278ed89ce5e523af
+ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403645"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675865"
 ---
-# <a name="get-educationassignment"></a>Получение educationAssignment
+# <a name="get-educationassignment"></a>Get educationAssignment
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей назначения. Студенты могут видеть только назначения, назначенные им; преподаватели могут видеть все назначения в классе.
+Получите свойства и связи назначения. Учащиеся могут видеть только назначения, которые им назначены; преподаватели могут видеть все задания в классе.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "48403645"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | EduAssignments. ReadBasic, EduAssignments. Реадвритебасик, EduAssignments. Read, EduAssignments. ReadWrite |
+|Делегированное (рабочая или учебная учетная запись) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается.  | 
 
@@ -47,7 +47,7 @@ GET /education/classes/{id}/assignments/{id}
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [educationAssignment](../resources/educationassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и объект `200 OK` [educationAssignment](../resources/educationassignment.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -75,6 +75,7 @@ Content-length: 279
 
 {
   "id": "19002",
+  "addedStudentAction": "none",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "String (timestamp)",
@@ -106,6 +107,7 @@ Content-length: 279
     }
   },
   "lastModifiedDateTime": "2014-01-01T00:00:00Z",
+  "notificationChannelUrl": null,
   "status": "assigned"
 }
 ```
