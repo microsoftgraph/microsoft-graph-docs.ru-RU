@@ -1,16 +1,16 @@
 ---
 title: Список участников группы
 description: Получение conversationMembers группы.
-author: nkramer
+author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 842010263da003a1317fe2a90d1511d1d6465b62
-ms.sourcegitcommit: 2d665f916371aa9515e4c542aa67094abff2fa1a
+ms.openlocfilehash: ab1726e33c960d5f2874be1cee7810bad111d8dc
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49387775"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657929"
 ---
 # <a name="list-members-of-team"></a>Список участников группы
 Пространство имен: microsoft.graph
@@ -44,7 +44,7 @@ GET /teams/{team-id}/members
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$filter` и `$select` для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -60,42 +60,26 @@ GET /teams/{team-id}/members
 
 ## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-get-list-of-members-in-team"></a>Пример 1. Получение списка участников команды
 
-# <a name="http"></a>[HTTP](#tab/http)
+#### <a name="request"></a>Запрос
+
 <!-- {
   "blockType": "request",
-  "name": "get_conversationmember"
+  "name": "get_members_in_team"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-conversationmember-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-conversationmember-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-conversationmember-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-conversationmember-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-### <a name="response"></a>Отклик
-**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "name": "get_conversationmember",
-  "@odata.type": "collection(microsoft.graph.aadUserConversationMember)"
+  "name": "get_members_in_team",
+  "@odata.type": "collection(microsoft.graph.conversationMember)"
 }
 -->
 ``` http
@@ -104,7 +88,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members",
-    "@odata.count": 2,
+    "@odata.count": 3,
     "value": [
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -123,6 +107,113 @@ Content-Type: application/json
             "displayName": "MOD Administrator",
             "userId": "598efcd4-e549-402a-9602-0b50201faebe",
             "email": "admin@M365x987948.OnMicrosoft.com"
+        },
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyM3NTJmNTBiNy0yNTZmLTQ1MzktYjc3NS1jNGQxMmYyZTQ3MjI=",
+            "roles": [],
+            "displayName": "Harry Johnson",
+            "userId": "752f50b7-256f-4539-b775-c4d12f2e4722",
+            "email": "harry@M365x987948.OnMicrosoft.com"
+        }
+    ]
+}
+```
+
+### <a name="example-2-find-members-of-a-team-by-their-azure-ad-user-object-id"></a>Пример 2. Поиск участников команды по ИД объекта пользователя Azure AD
+
+В следующем примере показан запрос на поиск ресурсов участия на основе `id` [пользователя Azure AD](../resources/user.md), связанного с [aadUserConversationMember](../resources/aaduserconversationmember.md).
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "get_members_in_team_filter_by_userid"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members?$filter=(microsoft.graph.aadUserConversationMember/userId eq '73761f06-2ac9-469c-9f10-279a8cc267f9')
+
+```
+
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_members_in_team_filter_by_userid",
+  "@odata.type": "collection(microsoft.graph.conversationMember)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members",
+    "@odata.count": 1,
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=",
+            "roles": [],
+            "displayName": "Adele Vance",
+            "userId": "73761f06-2ac9-469c-9f10-279a8cc267f9",
+            "email": "AdeleV@M365x987948.OnMicrosoft.com"
+        }
+    ]
+}
+```
+
+### <a name="example-3-find-members-of-a-team-by-their-names-or-email"></a>Пример 3. Поиск участников команды по именам или адресам электронной почты
+
+В следующем примере показан запрос на поиск ресурсов участия на основе `displayName` или `email` ресурса [aadUserConversationMember](../resources/aaduserconversationmember.md).
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "get_members_in_team_filter_by_username_or_email"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/teams/ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062/members?$filter=(microsoft.graph.aadUserConversationMember/displayName eq 'Harry Johnson' or microsoft.graph.aadUserConversationMember/email eq 'admin@M365x987948.OnMicrosoft.com')
+```
+
+#### <a name="response"></a>Отклик
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "get_members_in_team_filter_by_username_or_email",
+  "@odata.type": "collection(microsoft.graph.conversationMember)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062')/members",
+    "@odata.count": 2,
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM1OThlZmNkNC1lNTQ5LTQwMmEtOTYwMi0wYjUwMjAxZmFlYmU=",
+            "roles": [
+                "owner"
+            ],
+            "displayName": "MOD Administrator",
+            "userId": "598efcd4-e549-402a-9602-0b50201faebe",
+            "email": "admin@M365x987948.OnMicrosoft.com"
+        },
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyM3NTJmNTBiNy0yNTZmLTQ1MzktYjc3NS1jNGQxMmYyZTQ3MjI=",
+            "roles": [],
+            "displayName": "Harry Johnson",
+            "userId": "752f50b7-256f-4539-b775-c4d12f2e4722",
+            "email": "harry@M365x987948.OnMicrosoft.com"
         }
     ]
 }

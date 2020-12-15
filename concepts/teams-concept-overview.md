@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: a1b71403b510dbad1212211b19bcb376bf15e7b2
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 0a1aee054ffbe216476e0f7a0b0d912190168a8b
+ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000541"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675977"
 ---
 # <a name="microsoft-teams-api-overview"></a>Обзор API Microsoft Teams
 
@@ -41,7 +41,7 @@ ms.locfileid: "49000541"
 Разрешите пользователям создавать новые [команды](/graph/api/resources/team?view=graph-rest-1.0) и [каналы](/graph/api/resources/channel?view=graph-rest-1.0). 
 [Установите ](/graph/api/teamsappinstallation-add?view=graph-rest-1.0) ваше [приложение Teams](/microsoftteams/platform/#pivot=home&panel=home-all) в новых командах. 
 [Закрепите приложение на вкладке](/graph/api/teamstab-add?view=graph-rest-1.0) в новом канале. 
-[Отправляйте сообщения](/graph/api/channel-post-messages?view=graph-rest-beta) в канал со ссылкой, возвращающей на ваш веб-сайт.
+[Отправляйте сообщения](/graph/api/channel-post-message?view=graph-rest-beta) в канал со ссылкой, возвращающей на ваш веб-сайт.
 
 ### <a name="create-and-manage-multiple-teams-and-channels"></a>Создание нескольких команд и каналов и управление ими
 
@@ -83,7 +83,7 @@ API Microsoft Teams могут расширять возможности при�
 
 Microsoft Teams поддерживает подписку на изменения (создание, обновление и удаление) в сообщениях [каналов](/graph/api/resources/channel?preserve-view=true) и [чатов](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true), чтобы разрешить приложениям получать обновления почти мгновенно. Сведения о том, как подписаться на изменения, см. в статье [Получение уведомлений об изменениях для сообщений в каналах и чатах](teams-changenotifications-chatmessage).
 
-## <a name="api-reference"></a>Справочник по API
+## <a name="api-reference"></a>Справочные материалы по API
 
 Ищете справочные материалы по API для этой службы?
 
