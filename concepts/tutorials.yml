@@ -1,19 +1,19 @@
 ### YamlMime:Landing
 title: Руководства по Microsoft Graph
-summary: Учебники по Microsoft Graph представляют собой пошаговые обучающие упражнения по созданию базового приложения, которое получает доступ к данным с помощью Microsoft Graph.
+summary: Учебники по Microsoft Graph — это пошаговая обучающая программа, которая поможет вам создать базовое приложение, которое будет получать доступ к данным через Microsoft Graph.
 metadata:
   title: Руководства по Microsoft Graph
-  description: Учебники по Microsoft Graph представляют собой пошаговые обучающие упражнения по созданию базового приложения, которое получает доступ к данным с помощью Microsoft Graph.
+  description: Учебники по Microsoft Graph — это пошаговая обучающая программа, которая поможет вам создать базовое приложение, которое будет получать доступ к данным через Microsoft Graph.
   ms.topic: landing-page
   author: jasonjoh
   ms.author: jasonjoh
   ms.date: 04/02/2020
-  ms.openlocfilehash: 5172928bf143ccce17e46f4ed2e3e2ff0ece5d00
-  ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+  ms.openlocfilehash: c064f803856c8d290e8c88a6399de6a806349aad
+  ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
   ms.translationtype: MT
   ms.contentlocale: ru-RU
-  ms.lasthandoff: 10/21/2020
-  ms.locfileid: "48634671"
+  ms.lasthandoff: 12/15/2020
+  ms.locfileid: "49675851"
 landingContent:
 - title: Создание первого серверного приложения
   linkLists:
@@ -31,7 +31,7 @@ landingContent:
       url: /graph/tutorials/python
     - text: Ruby
       url: /graph/tutorials/ruby
-- title: Создание первого собственного приложения
+- title: Создание первого нативного приложения
   linkLists:
   - linkListType: get-started
     links:
@@ -51,13 +51,13 @@ landingContent:
       url: /graph/tutorials/uwp
     - text: Xamarin
       url: /graph/tutorials/xamarin
-- title: Создание первого приложения с одной страницей
+- title: Создание первого однострого приложения
   linkLists:
   - linkListType: get-started
     links:
     - text: Angular
       url: /graph/tutorials/angular
-    - text: Сборка блазор
+    - text: Blazor WebAssembly
       url: /graph/tutorials/blazor
     - text: JavaScript
       url: /graph/tutorials/javascript
@@ -71,10 +71,14 @@ landingContent:
       url: /graph/tutorials/azure-functions
     - text: Bot Framework
       url: /graph/tutorials/bot-framework
+    - text: Надстройка Office
+      url: /graph/tutorials/office-addin
     - text: Power Automate
       url: /graph/tutorials/power-automate
     - text: SharePoint Framework
       url: /graph/tutorials/spfx
+    - text: Teams
+      url: /graph/tutorials/teams
 - title: Сценарии
   linkLists:
   - linkListType: tutorial
