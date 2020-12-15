@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 542cb33551b96eeecb3609a8db2a9451f1d9c8b1
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 1b92206d280d1a834ec543388d72b2a3431ece0a
+ms.sourcegitcommit: 7902607a1e5a030d46e907d08e16644a47a47006
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607002"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49664158"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -160,14 +160,14 @@ ms.locfileid: "49607002"
 |:---------------|:--------|:------------|
 | aboutMe | String | Свободное текстовое поле, где пользователь может рассказать о себе. <br><br>Возвращается только с помощью оператора `$select`. |
 | accountEnabled | Логический | Если учетная запись обеспечена — `true`, в противном случае — `false`. Это свойство обязательно указывать при создании пользователя. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает параметр $filter. |
-| ageGroup | String | Устанавливает возрастную группу пользователя. Допустимые значения: `null`, `minor`, `notAdult` и `adult`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). <br><br>Возвращается только с помощью оператора `$select`. |
+| ageGroup | [ageGroup](#agegroup-values) | Устанавливает возрастную группу пользователя. Допустимые значения: `null`, `minor`, `notAdult` и `adult`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). <br><br>Возвращается только с помощью оператора `$select`. |
 | assignedLicenses | Коллекция [assignedLicense](assignedlicense.md) | Лицензии, назначенные пользователю. <br><br>Возвращается только с помощью оператора `$select`. Значение null не допускается. |
 | assignedPlans | Коллекция [assignedPlan](assignedplan.md) | Планы, назначенные пользователю. <br><br>Возвращается только с помощью оператора `$select`. Только для чтения. Значение null не допускается. |
 | birthday | DateTimeOffset | День рождения пользователя. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. <br><br>Возвращается только с помощью оператора `$select`. |
 | businessPhones | Коллекция строк | Номера телефонов пользователя. Для этого свойства можно указать только один номер. <br><br>Возвращается по умолчанию. "Только для чтения" для пользователей, которые синхронизируются с локальным каталогом. |
 | city | String | Город, в котором находится пользователь. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter`. |
 | companyName | String | Название организации, с которой связан пользователь. Это свойство может быть полезно для описания компании внешнего пользователя. Длина имени организации не должна превышать 64 символов.<br><br>Возвращается только с помощью оператора `$select`. |
-| consentProvidedForMinor | String| Устанавливает, получено ли согласие для несовершеннолетних. Допустимые значения: `null`, `granted`, `denied` и `notRequired`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). <br><br>Возвращается только с помощью оператора `$select`. |
+| consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | Устанавливает, получено ли согласие для несовершеннолетних. Допустимые значения: `null`, `granted`, `denied` и `notRequired`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). <br><br>Возвращается только с помощью оператора `$select`. |
 | country | String | Страна или регион, в котором находится пользователь, например "США" или "Соединенное Королевство". <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter`. |
 | createdDateTime | DateTimeOffset | Дата и время создания пользователя. Значение не может изменяться и заполняется автоматически при создании сущности. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Свойство допускает значение null. Значение null означает, что для пользователя невозможно точно определить время создания. <br><br>Возвращается только с помощью оператора `$select`. Только для чтения. Поддерживает `$filter`. |
 | creationType | String | Указывает, была ли учетная запись пользователя создана как обычная учебная или рабочая учетная запись (`null`), внешняя учетная запись (`Invitation`), локальная учетная запись для клиента Azure Active Directory B2C (`LocalAccount`) или с помощью самостоятельной регистрации с использованием проверки электронной почты (`EmailVerified`). <br><br>Возвращается только с помощью оператора `$select`. Только для чтения. |
@@ -191,7 +191,7 @@ ms.locfileid: "49607002"
 | isResourceAccount | Логическое | Не используйте — зарезервировано для использования в будущем. |
 | jobTitle; | String | Должность пользователя. <br><br>Возвращается по умолчанию. Поддерживает `$filter`.|
 | lastPasswordChangeDateTime | DateTimeOffset | Время последнего изменения своего пароля пользователем Azure AD. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. <br><br>Возвращается только с помощью оператора `$select`. |
-| legalAgeGroupClassification | String | Используется корпоративными приложениями для определения юридической возрастной группы пользователя. Это свойство предназначено только для чтения. Вычисляется на основе свойств **ageGroup** и **consentProvidedForMinor**. Допустимые значения: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` и `adult`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). <br><br>Возвращается только на `$select`. |
+| legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | Используется корпоративными приложениями для определения юридической возрастной группы пользователя. Это свойство предназначено только для чтения. Вычисляется на основе свойств **ageGroup** и **consentProvidedForMinor**. Допустимые значения: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` и `adult`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions). <br><br>Возвращается только на `$select`. |
 | licenseAssignmentStates | Коллекция [licenseAssignmentState](licenseassignmentstate.md) | Состояние назначений лицензий для пользователя. <br><br>Возвращается только с помощью оператора `$select`. Только для чтения. |
 | mail | String | SMTP-адрес пользователя, например "gregory@contoso.onmicrosoft.com". <br><br>Возвращается по умолчанию. Поддерживает `$filter`. |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | Параметры основного почтового ящика вошедшего пользователя. Вы можете [получить](../api/user-get-mailboxsettings.md) или [обновить](../api/user-update-mailboxsettings.md) параметры языкового стандарта, часового пояса, отправки автоматических ответов на входящие сообщения. <br><br>Возвращается только с помощью оператора `$select`. |

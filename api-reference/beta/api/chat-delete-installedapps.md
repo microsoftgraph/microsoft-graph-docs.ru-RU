@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: a463fd0c57f707c766367b2bd6e7abc326d35aa2
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 954567f3d899f432922edb2c1c618814282043c4
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607626"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658585"
 ---
 # <a name="uninstall-app-in-a-chat"></a>Удаление приложения в чате
 
@@ -19,6 +19,8 @@ ms.locfileid: "49607626"
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаление [приложения](../resources/teamsapp.md), установленного в [чате](../resources/chat.md).
+
+> **Примечание**. Если чат связан с экземпляром [onlineMeeting](../resources/onlinemeeting.md), объект **teamsApp** будет удален из собрания.
 
 ## <a name="permissions"></a>Разрешения
 
