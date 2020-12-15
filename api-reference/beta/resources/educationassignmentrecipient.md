@@ -1,27 +1,27 @@
 ---
-title: Тип ресурса ЕдукатионассигнментреЦипиент
-description: Используется в свойстве **назначений. ассигнто** . Этот суперкласс является абстрактным, и вы не можете
+title: Тип ресурса educationAssignmentRecipient
+description: Используется в **свойстве assignments.assignTo.** Этот суперкласс абстрактный, и вы не можете
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 doc_type: resourcePageType
-ms.openlocfilehash: 4708d1d4350ec6f25c5bd4df4d68489163f8167c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ec3a971a3fcf42baf8b0a537e5dc6dae77ca55dc
+ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095578"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675987"
 ---
-# <a name="educationassignmentrecipient-resource-type"></a>Тип ресурса ЕдукатионассигнментреЦипиент
+# <a name="educationassignmentrecipient-resource-type"></a>Тип ресурса educationAssignmentRecipient
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется в свойстве **назначений. ассигнто** . Этот суперкласс является абстрактным, и вы не можете задать это значение для свойства в назначениях. Этот суперкласс представляет, Кому назначено назначение при публикации назначения.
+Используется в **свойстве assignments.assignTo.** Этот суперкласс абстрактный, и вы не можете установить для свойства в назначениях это значение. Этот суперкласс представляет, кому должно быть назначено назначение при публикации назначения.
 
 
-Ресурс [едукатионассигнментклассреЦипиент](educationassignmentclassrecipient.md) является подклассом этого суперкласса.
+Ресурсы [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) и [educationAssignmentIndividualRecipient](educationassignmentindividualrecipient.md) являются подклассами этого суперкласса.
 
 ## <a name="properties"></a>Свойства
 Нет

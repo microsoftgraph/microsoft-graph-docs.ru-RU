@@ -1,16 +1,16 @@
 ---
 title: Создание educationAssignment
-description: 'Создает новое назначение. Только преподаватели в классе могут создавать назначения. Назначения начинаются в состоянии черновика, что означает, что студенты не увидят назначение, пока не будет вызвана публикация.  '
+description: 'Создает новое назначение. Только преподаватели в классе могут создавать задания. Задания начинаются в состоянии черновика, что означает, что учащиеся не будут видеть назначение, пока не будет вызвана публикация.  '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: f00a31619e13bcae54565bab6fbfae9d0fdb937a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d89717c56b78d7db19236f532dba005220d01b91
+ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48007625"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675949"
 ---
 # <a name="create-educationassignment"></a>Создание educationAssignment
 
@@ -18,14 +18,14 @@ ms.locfileid: "48007625"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создает новое назначение. Только преподаватели в классе могут создавать назначения. Назначения начинаются в состоянии черновика, что означает, что студенты не увидят назначение, пока не будет вызвана публикация.  
+Создает новое назначение. Только преподаватели в классе могут создавать задания. Задания начинаются в состоянии черновика, что означает, что учащиеся не будут видеть назначение, пока не будет вызвана публикация.  
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments. Реадвритебасик, EduAssignments. ReadWrite  |
+|Делегированное (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
@@ -41,12 +41,12 @@ POST /education/classes/{id}/assignments
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса добавьте представление объекта [educationAssignment](../resources/educationassignment.md) в формате JSON.
+## <a name="request-body"></a>Текст запроса
+В теле запроса укажу представление объекта [educationAssignment](../resources/educationassignment.md) в JSON.
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [educationAssignment](../resources/educationassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и объект `201 Created` [educationAssignment](../resources/educationassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -78,7 +78,7 @@ Content-length: 279
       "allowStudentsToAddResourcesToSubmission": true
 }
 ```
-В тексте запроса добавьте представление объекта [educationAssignment](../resources/educationassignment.md) в формате JSON.
+В теле запроса укажу представление объекта [educationAssignment](../resources/educationassignment.md) в JSON.
 
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
@@ -96,6 +96,7 @@ Content-type: application/json
 Content-length: 279
 
 {
+  "addedStudentAction": "none",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "2014-02-01T00:00:00Z",
@@ -131,6 +132,7 @@ Content-length: 279
       }
   },
   "lastModifiedDateTime": "2014-02-01T00:00:00Z",
+  "notificationChannelUrl": null,
   "status": "published"
 }
 ```

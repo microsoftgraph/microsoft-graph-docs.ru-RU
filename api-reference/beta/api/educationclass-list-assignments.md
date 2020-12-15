@@ -1,16 +1,16 @@
 ---
 title: Перечисление заданий
-description: Получение списка объектов назначений. Преподавателю разрешено просматривать все объекты назначений для этого класса. Студенты могут видеть только назначения, назначенные им.
+description: Получить список объектов назначения. Преподавателю разрешено видеть все объекты заданий для класса. Учащиеся могут видеть только назначения, которые им назначены.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 723210c6743901f07fe132bd337b49d90c5036df
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 2667f2248e712cc6f84f6f2214de7006c3b8d3c7
+ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48403540"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49675991"
 ---
 # <a name="list-assignments"></a>Перечисление заданий
 
@@ -18,7 +18,7 @@ ms.locfileid: "48403540"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов назначений. Преподавателю разрешено просматривать все объекты назначений для этого класса. Студенты могут видеть только назначения, назначенные им.
+Получить список объектов назначения. Преподавателю разрешено видеть все объекты заданий для класса. Учащиеся могут видеть только назначения, которые им назначены.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "48403540"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                            |
 | :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | EduAssignments. ReadBasic, EduAssignments. Реадвритебасик, EduAssignments. Read, EduAssignments. ReadWrite |
+| Делегированное (рабочая или учебная учетная запись)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                         |
 | Для приложений                            | Не поддерживается.                                                                                         |
 
@@ -52,7 +52,7 @@ GET /education/classes/{id}/assignments
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [educationAssignment](../resources/educationassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и коллекцию объектов `200 OK` [educationAssignment](../resources/educationassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -91,6 +91,7 @@ Content-length: 344
   "value": [
     {
       "id": "19002",
+      "addedStudentAction": "String",
       "allowLateSubmissions": true,
       "allowStudentsToAddResourcesToSubmission": true,
       "assignDateTime": "2014-02-01T00:00:00Z",
@@ -126,6 +127,7 @@ Content-length: 344
           }
       },
       "lastModifiedDateTime": "2014-02-01T00:00:00Z",
+      "notificationChannelUrl": "String",
       "status": "published"
     }
   ]
