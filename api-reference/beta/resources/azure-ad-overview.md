@@ -70,6 +70,6 @@ Microsoft Graph предоставляет доступ к ресурсам [Azu
 Ресурсы и API каталога открывают новые способы взаимодействия с пользователями и контроля их работы с помощью Microsoft Graph. Чтобы узнать больше:
 
 - Изучите подробнее методы и свойства ресурсов, наиболее полезных для вашего сценария.
-- Опробуйте API в [песочнице Explorer](https://developer.microsoft.com/graph/graph-explorer).
+- Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 
 Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
