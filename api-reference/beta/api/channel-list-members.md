@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: e13f79b71cda60b3b2ebcf61a037bac5895089ef
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 35609562fa86a32f02149f8814017cee47a1c99f
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522149"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49690195"
 ---
 # <a name="list-members-of-channel"></a>Список участников канала
 
@@ -18,10 +18,10 @@ ms.locfileid: "49522149"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [conversationMembers](../resources/conversationmember.md) из [канала](../resources/channel.md).
+Получение списка объектов [conversationMember](../resources/conversationmember.md) из [канала](../resources/channel.md).
 
 > [!NOTE]
-> Идентификатор членства, возвращенный сервером, должен рассматриваться как непрозрачные строки. Клиент не должен пытаться анализировать или вносить предположения об этих идентификаторах ресурсов.
+> Идентификатор членства, возвращенный сервером, должен рассматриваться как непрозрачные строки. Клиент не должен пытаться анализировать или делать какие-либо предположения об этих идентификаторах ресурсов.
 >
 > В дальнейшем результаты членства могут сопоставляться с пользователями различных клиентов, как указано в отклике. Клиент не должен предполагать, что все участники относятся только к текущему клиенту.
 
@@ -118,9 +118,9 @@ Content-length: 201
         "@odata.type": "#microsoft.graph.aadUserConversationMember",
         "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJkMTQ=",
         "roles": [],
-        "displayName": "Joe Self",
+        "displayName": "Jane Doe",
         "userId": "eef9cb36-06de-469b-87cd-70f4cbe32d14",
-        "email": "jself@teamsip.onmicrosoft.com"
+        "email": "jdoe@teamsip.onmicrosoft.com"
     },
     {
         "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -128,9 +128,9 @@ Content-length: 201
         "roles": [
             "owner"
         ],
-        "displayName": "Anagha Kothurwar",
+        "displayName": "Ace John",
         "userId": "b3246f44-c091-4627-96c6-25b18fa2c910",
-        "email": "ankothur@teamsip.onmicrosoft.com"
+        "email": "ajohn@teamsip.onmicrosoft.com"
     }
 ]
 }

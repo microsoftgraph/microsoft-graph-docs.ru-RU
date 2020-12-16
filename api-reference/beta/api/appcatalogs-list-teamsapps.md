@@ -1,16 +1,16 @@
 ---
 title: Список teamsApp
-description: 'Перечисление приложений из каталога приложений Microsoft Teams. '
+description: 'Список приложений из каталога приложений Microsoft Teams. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3c9a01ce67893cdf335f38c7351a4174a251b495
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: b31030c2810e8f2641ea7a437c84612d22180345
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607650"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49689390"
 ---
 # <a name="list-teamsapp"></a>Список teamsApp
 
@@ -18,11 +18,11 @@ ms.locfileid: "49607650"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перечисление [приложений](../resources/teamsapp.md) из каталога приложений Microsoft Teams.
-Сюда входят приложения из магазина Microsoft Teams, а также приложения из каталога приложений организации (Каталог приложений клиента). Чтобы получить доступ к приложениям только из каталога приложений вашей организации, укажите в `organization` качестве **distributionMethod** в запросе.
+Список [приложений](../resources/teamsapp.md) из каталога приложений Microsoft Teams.
+К ним относятся приложения из Магазина Microsoft Teams, а также приложения из каталога приложений вашей организации (каталог приложений клиента). Чтобы получить приложения только из каталога приложений организации, укажите `organization` в качестве **distributionMethod** в запросе.
 
 > [!NOTE]
-> `id`Ресурс **teamsApp** создается сервером и не совпадает с `id` указанным в манифесте приложения Teams. `id`Поставщик, предоставленный разработчиком в составе манифеста приложения Teams, отмечается как элемент `externalId` в ресурсе **teamsApp** .
+> Ресурс teamsApp создается сервером и не является тем же, что указан в `id`  `id` манифесте приложения Teams. Предоставленный разработчиком в составе манифеста приложения Teams помеяется как ресурс `id` `externalId` **teamsApp.**
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +30,7 @@ ms.locfileid: "49607650"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:------------------------------------|
-| Делегированное (рабочая или учебная учетная запись)     | CamlQuery. Read. ALL, CamlQuery. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL |
+| Делегированное (рабочая или учебная учетная запись)     | AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
 | Для приложений                            | Не поддерживается. |
 
@@ -46,9 +46,9 @@ GET /appCatalogs/teamsApps
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$filter`, `$select` и `$expand` для настройки отклика.
 
-Использование `$expand=AppDefinitions` возвращает дополнительные сведения о состоянии приложения, такие как **публишингстате**, которое отражает состояние проверки отправки приложения и возвращает сведения о том, утверждено ли приложение, отклонено или находится в процессе рассмотрения. 
+Using `$expand=AppDefinitions` will return more information about the state of the app, such as the **publishingState**, which reflects the app submission review status and returns whether an app has been approved, rejected, or remains under review. 
 
-> **Примечание:** Можно выполнить фильтрацию по любому полю объекта [teamsApp](../resources/teamsapp.md) для сокращения списка результатов. Вы можете использовать любую из следующих операций фильтрации: EQUAL, Not Equals, and, OR и not.
+> **Примечание.** Можно отфильтровать по любому из полей объекта [teamsApp,](../resources/teamsapp.md) чтобы сократить список результатов. Можно использовать любую из следующих операций фильтрации: "Равно", "не равно" и "или" или "нет".
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -62,16 +62,18 @@ GET /appCatalogs/teamsApps
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и список объектов [teamsApp](../resources/teamsapp.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и список объектов `200 OK` [teamsApp](../resources/teamsapp.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-all-applications-specific-to-the-tenant"></a>Пример 1: список всех приложений, относящихся к клиенту
+### <a name="example-1-list-all-applications-specific-to-the-tenant"></a>Пример 1. Список всех приложений, характерных для клиента
 
-В приведенном ниже примере выводится список всех приложений, относящихся к вашему клиенту.
+В следующем примере перечислены все приложения, специфичные для вашего клиента.
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapps_filter_distributionMethod"
@@ -80,6 +82,24 @@ GET /appCatalogs/teamsApps
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapps-filter-distributionmethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapps-filter-distributionmethod-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapps-filter-distributionmethod-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapps-filter-distributionmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 
@@ -111,12 +131,14 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-list-applications-with-a-given-id"></a>Пример 2: список приложений с заданным ИДЕНТИФИКАТОРом
+### <a name="example-2-list-applications-with-a-given-id"></a>Пример 2. Список приложений с заданным ИД
 
-В следующем примере перечисляются приложения с указанным ИДЕНТИФИКАТОРом.
+В следующем примере перечислены приложения с заданным ИД.
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp_filter_id"
@@ -125,6 +147,24 @@ Content-Type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-filter-id-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-filter-id-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-filter-id-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-filter-id-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
@@ -152,12 +192,14 @@ Content-Type: application/json
   ]
 }
 ```
-### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>Пример 3: Find Application на основе идентификатора манифеста приложения Teams.
+### <a name="example-3-find-application-based-on-the-teams-app-manifest-id"></a>Пример 3. Поиск приложения на основе ИД манифеста приложения Teams.
 
-В следующем примере перечисляются приложения, которые совпадают с идентификатором "ID", указанным в манифесте приложения Teams. В этом примере идентификатор манифеста приложения Teams — "cf1ba4c7-f94e-4d80-ba90-5594b641a8ee".
+В следующем примере перечислены приложения, которые соответствуют "id", указанному в манифесте приложения Teams. В этом примере идентификатор манифеста приложения Teams — 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp_filter_externalid"
@@ -166,6 +208,24 @@ Content-Type: application/json
 ```msgraph-interactive
 GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-filter-externalid-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-filter-externalid-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-filter-externalid-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-filter-externalid-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 
@@ -194,12 +254,14 @@ Content-Type: application/json
   }
 ```
 
-### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>Пример 4: перечисление приложений с заданным ИДЕНТИФИКАТОРом и возврат состояния проверки отправки
+### <a name="example-4-list-applications-with-a-given-id-and-return-the-submission-review-state"></a>Пример 4. Список приложений с заданным ИД и возврат состояния проверки отправки
 
-В приведенном ниже примере перечисляются приложения с заданным ИДЕНТИФИКАТОРом, а затем **аппдефинитионс** возвращается значение **публишингстате**, которое отражает состояние проверки отправки приложения. `Submitted` означает, что проверка находится в состоянии ожидания, `published` означает, что приложение было утверждено администратором и `rejected` означает, что оно было отклонено администратором.
+В следующем примере перечисляются приложения с заданным ИД и **расширяются appDefinitions** для возврата **publishingState,** что отражает состояние проверки отправки приложения. `Submitted` означает, что проверка находится в состоянии ожидания, означает, что приложение утверждено администратором, и означает, что приложение было `published` `rejected` отклонено администратором.
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp_expand_appdefinitions"
@@ -208,6 +270,24 @@ Content-Type: application/json
 ```msgraph-interactive
 GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id eq '876df28f-2e78-423b-94a5-44181bd0e225'&$expand=appDefinitions
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-expand-appdefinitions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-expand-appdefinitions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-expand-appdefinitions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-expand-appdefinitions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Отклик

@@ -5,12 +5,12 @@ author: AkJo
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b5bf69e7d5f45ade2ce612e1eb4ccd97d0816a8a
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 975722356177a537da9d7ca53e5232747866a9b8
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657256"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49690307"
 ---
 # <a name="get-chat-between-user-and-teamsapp"></a>Получить чат между пользователем и teamsApp
 
@@ -18,7 +18,7 @@ ms.locfileid: "49657256"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[Извлечение чата](../resources/chat.md) указанного пользователя [и](../resources/user.md) [приложения Teams.](../resources/teamsapp.md)
+[Извлечение чата](../resources/chat.md) указанного [пользователя и](../resources/user.md) [приложения Teams.](../resources/teamsapp.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "49657256"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
+|Делегированные (рабочая или учебная учетная запись) | TeamsAppInstallation.ReadForUser, TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
@@ -70,7 +70,7 @@ GET /users/{user-id}/teamwork/installedApps/{app-installation-id}/chat
   "blockType": "request",
   "name": "user_chat_teamsApps"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/teamwork/installedApps/ZjMyYjgzYmItNGZjOC00ZGI3LWI3ZjUtNzZjZGJiYjhhYTFjIyMyMmY3M2JiZS1mNjdhLTRkZWEtYmQ1NC01NGNhYzcxOGNiMmI=/chat
 ```
 # <a name="c"></a>[C#](#tab/csharp)

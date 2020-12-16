@@ -1,35 +1,35 @@
 ---
-title: 'printJob: Abort'
-description: Прервать задание печати.
+title: 'printJob: abort'
+description: Отменить задание печати.
 author: nilakhan
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 7a17344dbac7282b12db4b8ebb011f922ceaa01d
-ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
+ms.openlocfilehash: 8fe447b11a8198af41bf9e69e98a7ea64231dec8
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49617163"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49691112"
 ---
-# <a name="printjob-abort"></a>printJob: Abort
+# <a name="printjob-abort"></a>printJob: abort
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Прервать задание печати. Только приложения, использующие разрешения приложения, могут прервать задание печати.
+Отменить задание печати. Только приложения, использующие разрешения приложений, могут отменить задание печати.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям клиент приложения должен иметь активную универсальную подписку на печать и иметь разрешение на получение доступа к [принтеру](printer-get.md) .
+Помимо перечисленных ниже разрешений, клиент приложения должен иметь активную подписку универсальной печати и разрешение, которое предоставляет доступ [к принтеру.](printer-get.md)
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Не поддерживается |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| PrintJob. Реадвритебасик. ALL, PrintJob. ReadWrite. ALL |
+|Приложение| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -42,11 +42,11 @@ POST /print/printers/{id}/jobs/{id}/abort
 | Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса можно дополнительно указать причину прерывания задания.
+При желании в теле запроса можно упросить причину, по которой задание прерывается.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|reason|String|Причина аварийного завершения задания.|
+|reason|String|Причина, по которой задание прерывается.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
@@ -56,6 +56,8 @@ POST /print/printers/{id}/jobs/{id}/abort
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob-abort"
@@ -63,6 +65,24 @@ POST /print/printers/{id}/jobs/{id}/abort
 ```http
 POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/abort
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/printjob-abort-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/printjob-abort-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/printjob-abort-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/printjob-abort-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 

@@ -1,22 +1,22 @@
 ---
-title: 'Идентитюсерфловаттрибутеассигнмент: упорядочение'
-description: Получение порядка Идентитюсерфловаттрибутеассигнментс, собранных в пользовательском движении.
+title: 'identityUserFlowAttributeAssignment: getOrder'
+description: Получите порядок identityUserFlowAttributeAssignments, собираемого в пользовательском потоке.
 author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 653a1e83ee96418dc70129790f62ea764e6326f9
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 19172e8928716cb3f7ad49e67bc2f75de122de46
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581427"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49689266"
 ---
-# <a name="identityuserflowattributeassignment-getorder"></a>Идентитюсерфловаттрибутеассигнмент: упорядочение
+# <a name="identityuserflowattributeassignment-getorder"></a>identityUserFlowAttributeAssignment: getOrder
 
 Пространство имен: microsoft.graph
 
-Получение порядка Идентитюсерфловаттрибутеассигнментс, собранных в пользовательском движении.
+Получите порядок identityUserFlowAttributeAssignments, собираемого в пользовательском потоке.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "49581427"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|Идентитюсерфлов. Read. ALL, Идентитюсерфлов. ReadWrite. ALL|
+|Делегированное (рабочая или учебная учетная запись)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Идентитюсерфлов. Read. ALL, Идентитюсерфлов. ReadWrite. ALL|
+|Приложение|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,12 +52,14 @@ GET /identity/b2xUserFlows/{b2xIdentityUserFlowId}/userAttributeAssignments/getO
 
 ## <a name="response"></a>Отклик
 
-В случае успеха эта функция возвращает `200 OK` код отклика и объект [ассигнментордер](../resources/assignmentorder.md) в тексте отклика.
+В случае успешного выполнения эта функция возвращает код `200 OK` отклика и [assignmentOrder](../resources/assignmentorder.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "identityuserflowattributeassignment_getorder"
@@ -67,6 +69,24 @@ GET /identity/b2xUserFlows/{b2xIdentityUserFlowId}/userAttributeAssignments/getO
 ``` http
 GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttributeAssignments/getOrder
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/identityuserflowattributeassignment-getorder-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/identityuserflowattributeassignment-getorder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/identityuserflowattributeassignment-getorder-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/identityuserflowattributeassignment-getorder-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

@@ -1,22 +1,22 @@
 ---
-title: Создание Усераттрибутеассигнментс
-description: Создание нового объекта Идентитюсерфловаттрибутеассигнмент.
+title: Создание userAttributeAssignments
+description: Создание объекта identityUserFlowAttributeAssignment.
 author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 8c838dfee57e264d7cca61ac5e10ec98a46f7330
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: fe35d2a475af0d9fee1c1da653fe22d69938e4c1
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581351"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49689552"
 ---
-# <a name="create-userattributeassignments"></a>Создание Усераттрибутеассигнментс
+# <a name="create-userattributeassignments"></a>Создание userAttributeAssignments
 
 Пространство имен: microsoft.graph
 
-Создание нового объекта Идентитюсерфловаттрибутеассигнмент в [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md).
+Создание объекта identityUserFlowAttributeAssignment в [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "49581351"
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированное (рабочая или учебная учетная запись)|Идентитюсерфлов. ReadWrite. ALL|
+|Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Приложение|Идентитюсерфлов. ReadWrite. ALL|
+|Приложение|IdentityUserFlow.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,27 +48,29 @@ POST /identity/b2cUserFlows/{id}/userAttributeAssignments
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [идентитюсерфловаттрибутеассигнмент](../resources/identityuserflowattributeassignment.md) в формате JSON.
+В теле запроса укажу представление объекта [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании [идентитюсерфловаттрибутеассигнмент](../resources/identityuserflowattributeassignment.md).
+В следующей таблице показаны свойства, необходимые при создании [объекта identityUserFlowAttributeAssignment.](../resources/identityuserflowattributeassignment.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя Идентитюсерфловаттрибуте в пользовательском движении.|
-|Переключатель|Логический|Определяет, является ли Идентитюсерфловаттрибуте необязательным. `true` означает, что пользователю не нужно указывать значение. `false` означает, что пользователь не может выполнить вход, не указывая значение.|
-|рекуиресверификатион|Логический|Определяет, требуется ли для Идентитюсерфловаттрибуте проверка. Используется только для проверки номера телефона пользователя или адреса электронной почты.|
-|усераттрибутевалуес|Коллекция [усераттрибутевалуеситем](../resources/userattributevaluesitem.md)|Параметры ввода для атрибута Flow User. Применяется только в том случае, если для Усеринпуттипе задано значение `radioSingleSelect` , `dropdownSingleSelect` или `checkboxMultiSelect` .|
-|усеринпуттипе|идентитюсерфловаттрибутеинпуттипе|Тип входных данных для атрибута Flow User. Возможные значения: `textBox`, `dateTimeDropdown`, `radioSingleSelect`, `dropdownSingleSelect`, `emailBox`, `checkboxMultiSelect`.|
-|усераттрибуте|[идентитюсерфловаттрибуте](../resources/identityuserflowattribute.md)|Идентификатор атрибута пользовательского процесса, включаемый в назначение пользовательского процесса.
+|displayName|String|Отображаемого имени identityUserFlowAttribute в пользовательском потоке.|
+|isOptional|Boolean|Определяет, является ли identityUserFlowAttribute необязательным. `true` означает, что пользователю не нужно предоставлять значение. `false` означает, что пользователь не может завершить регистрацию без предоставления значения.|
+|requiresVerification|Boolean|Определяет, требуется ли проверка identityUserFlowAttribute. Он используется только для проверки номера телефона или адреса электронной почты пользователя.|
+|userAttributeValues|[Коллекция userAttributeValuesItem](../resources/userattributevaluesitem.md)|Параметры ввода для атрибута пользовательского потока. Применимо только в том случае, если userInputType имеет , `radioSingleSelect` `dropdownSingleSelect` или `checkboxMultiSelect` .|
+|userInputType|identityUserFlowAttributeInputType|Тип ввода атрибута пользовательского потока. Возможные значения: `textBox`, `dateTimeDropdown`, `radioSingleSelect`, `dropdownSingleSelect`, `emailBox`, `checkboxMultiSelect`.|
+|userAttribute|[identityUserFlowAttribute](../resources/identityuserflowattribute.md)|Идентификатор атрибута пользовательского потока, который необходимо включить в назначение пользовательского потока.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [идентитюсерфловаттрибутеассигнмент](../resources/identityuserflowattributeassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и объект `201 Created` [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_identityuserflowattributeassignment_from_"
@@ -90,6 +92,24 @@ Content-Type: application/json
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-identityuserflowattributeassignment-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-identityuserflowattributeassignment-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-identityuserflowattributeassignment-from--objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-identityuserflowattributeassignment-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

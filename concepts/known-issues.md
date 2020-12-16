@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 96557bf3f957f9dc57f3315d274bbcc952cd841e
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: c55f4b14d111c2910b8f0271b6f43e128c5511c8
+ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352418"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49660102"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -332,15 +332,8 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 Чтобы получить список команд, см. [список всех команд](teams-list-all-teams.md) и [список ваших команд](/graph/api/user-list-joinedteams).
 
-### <a name="post-teams-is-only-available-in-beta"></a>POST / команды доступны только в бета-версии
-Чтобы создать команды в v1.0, см. [создание команды](/graph/api/team-put-teams).
-
-### <a name="missing-teams-in-list-all-teams"></a>Отсутствующие команды в списке всех команд
-
-Некоторые команды, созданные в прошлом, но не использовавшиеся в последнее время пользователем Microsoft Teams, не указываются при использовании метода [перечисления всех команд](teams-list-all-teams.md).
-Новые команды будут перечислены.
-У некоторых старых команд нет свойства **resourceProvisioningOptions**, содержащего значение "Team", которое присваивается недавно созданным командам и командам, посещаемым в Microsoft Teams.
-В будущем свойство **resourceProvisioningOptions** будет присваиваться существующим командам, не открывавшимся в Microsoft Teams.
+### <a name="unable-to-filter-team-members-by-roles"></a>Не удается отфильтровать участников команды по ролям
+Запрос фильтра на получение участников команды на основе их ролей `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')` может не работать. Сервер может вернуть `BAD REQUEST`.
 
 ## <a name="users"></a>Пользователи
 

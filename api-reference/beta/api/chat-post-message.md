@@ -5,12 +5,12 @@ localization_priority: Normal
 author: RamjotSingh
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 0e11602181e50c2d6a190e45622c6bc7d4cd323f
-ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
+ms.openlocfilehash: 7f0e18946903c2926b8c26241b7dbdd7fdbf5851
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993950"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49689761"
 ---
 # <a name="send-chatmessage-in-a-chat"></a>Отправка chatMessage в чате
 
@@ -18,11 +18,11 @@ ms.locfileid: "48993950"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [chatMessage](../resources/chatmessage.md) в указанном [сеансе чата](../resources/chat.md). Этот API не может создать новый чат; чтобы получить идентификатор существующего чата, необходимо использовать метод Chat [List](chat-list.md) Chats, прежде чем создавать сообщение чата.
+Создайте новый [chatMessage](../resources/chatmessage.md) в указанном [чате.](../resources/chat.md) Этот API не может создать новый чат; Перед созданием сообщения [чата](chat-list.md) необходимо использовать метод чаты списка для получения ИД существующего чата.
 
-> **Note** : мы не рекомендуем использовать этот API для переноса данных. Пропускная способность, необходимая для обычной миграции, отсутствует.
+> **Примечание.** Мы не рекомендуем использовать этот API для переноса данных. Пропускная способность, необходимая для обычной миграции, не существует.
 
-> **Note** : нарушение [условий использования](/legal/microsoft-apis/terms-of-use) Microsoft Teams в качестве файла журнала. Отправлять только сообщения, которые пользователи смогут читать.
+> **Примечание.** Это нарушение условий использования Microsoft Teams в качестве файла журнала. [](/legal/microsoft-apis/terms-of-use) Отправлять только сообщения, которые люди будут читать.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +30,7 @@ ms.locfileid: "48993950"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | ChatMessage. Send, Chat. ReadWrite |
+| Делегированные (рабочая или учебная учетная запись)     | ChatMessage.Send, Chat.ReadWrite |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -51,15 +51,15 @@ POST /users/{id}/chats/{id}/messages
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [chatMessage](../resources/chatmessage.md) в формате JSON.
+В теле запроса укажу представление объекта [chatMessage](../resources/chatmessage.md) в JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [chatMessage](../resources/chatmessage.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и новый объект `201 Created` [chatMessage](../resources/chatmessage.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-Более полный список примеров приведен [в статье Создание chatMessage в канале или чате](chatmessage-post.md).
+Более полный список примеров см. в примере [создания chatMessage в канале или чате.](chatmessage-post.md)
 
 ### <a name="request"></a>Запрос
 
@@ -72,7 +72,7 @@ POST /users/{id}/chats/{id}/messages
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+POST https://graph.microsoft.com/beta/chats/{id}/messages
 Content-type: application/json
 
 {

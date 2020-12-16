@@ -1,37 +1,37 @@
 ---
-title: 'printJob: redirect'
-description: Перенаправление задания печати на другой принтер.
+title: 'printJob: перенаправление'
+description: Перенаправить задание печати на другой принтер.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: a3c09827b349b2402aeb8f1a37be64643b87d1d5
-ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
+ms.openlocfilehash: 2b99f9e2e6d0def97c1f2a23837f79e61b8e3341
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49617075"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49689367"
 ---
-# <a name="printjob-redirect"></a>printJob: redirect
+# <a name="printjob-redirect"></a>printJob: перенаправление
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перенаправление [задания печати](../resources/printjob.md) на другой [принтер](../resources/printer.md).
+[Перенаправить задание печати](../resources/printjob.md) на другой [принтер.](../resources/printer.md)
 
-Сведения о том, как использовать этот API для добавления поддержки печати по запросу к универсальной печати, [можно узнать в статье расширение универсальной печати для поддержки печати по запросу](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+Дополнительные сведения о том, как использовать этот API для добавления поддержки печати потягивки в универсальную печать, см. в подразделе "Расширение универсальной печати для поддержки печати [с помощью оттягивать".](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать, разрешение, предоставляющее доступ к [принтеру](printer-get.md) , а также одно из разрешений, перечисленных в следующей таблице.
+Чтобы использовать службу универсальной печати, у пользователя или клиента приложения должна быть [](printer-get.md) активная подписка универсальной печати, разрешение на получение доступа к принтеру и одно из разрешений, перечисленных в следующей таблице.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложений| PrintJob.Manage.All |
+|Приложение| PrintJob.Manage.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,21 +44,23 @@ POST /print/printers/{id}/jobs/{id}/redirect
 | Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите идентификатор принтера, на который необходимо перенаправить задание печати.
+В теле запроса укавите ИД принтера, на который должно быть перенаправлено задание печати.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|дестинатионпринтерид|String|ИДЕНТИФИКАТОР принтера, на который необходимо перенаправить задание печати.|
-|configuration|Microsoft. Graph. Принтжобконфигуратион|Обновлена конфигурация задания печати.|
+|destinationPrinterId|Строка|ИД принтера, на который должно быть перенаправлено задание печати.|
+|configuration|microsoft.graph.printJobConfiguration|Обновлена конфигурация задания печати.|
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [printJob](../resources/printjob.md) , помещенные в очередь для конечного принтера.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [printJob,](../resources/printjob.md) в очереди для принтера назначения.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob-redirect"
@@ -70,6 +72,24 @@ POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45
   "destinationPrinterId": "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea"
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/printjob-redirect-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/printjob-redirect-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/printjob-redirect-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/printjob-redirect-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 

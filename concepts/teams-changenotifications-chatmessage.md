@@ -5,12 +5,12 @@ author: RamjotSingh
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 1d9767a913b5fe5878cb1cc8e72ec9900fcec4ac
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 12d8bfd49ebc71b6cb82cccd9525a3706cd570fd
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000719"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49690615"
 ---
 # <a name="get-change-notifications-for-messages-in-teams-channels-and-chats-using-microsoft-graph"></a>Получение уведомлений об изменениях сообщений в каналах и чатах Teams с помощью Microsoft Graph
 
@@ -32,7 +32,7 @@ ms.locfileid: "49000719"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | ChannelMessage.Read.All |
+|Приложение | ChannelMessage.Read.All |
 
 #### <a name="example"></a>Пример
 
@@ -92,9 +92,11 @@ Content-Type: application/json
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | ChannelMessage.Read.All |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | ChannelMessage.Read.All |
+|Делегированные (рабочая или учебная учетная запись) | ChannelMessage.Read.All |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | ChannelMessage.Read.All, ChannelMessage.Read.Group* |
+
+>**Примечание.** ChannelMessage.Read.Group поддерживается как часть [контента, связанного с конкретными ресурсами](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ### <a name="example-1-subscribe-to-all-messages-and-replies-in-a-channel"></a>Пример 1. Подписка на все сообщения (и ответы) в канале
 
@@ -150,11 +152,31 @@ Content-Type: application/json
 }
 ```
 
+### <a name="example-4-subscribe-to-messages-and-replies-in-a-channel-that-mention-a-specific-user"></a>Пример 4. Подписка на сообщения (и ответы) в канале с упоминанием определенного пользователя
+
+Чтобы получать уведомления только о сообщениях, в которых упоминался определенный пользователь, укажите ИД пользователя (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` в этом примере) в запросе.
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/teams/{id}/channels/{id}/messages?$filter=mentions/any(u: u/mentioned/user/id eq '9a6eb4d1-826b-48b1-9627-b50836c8fee9')",
+  "includeResourceData": false,
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
 ## <a name="subscribe-to-messages-in-a-chat"></a>Подписка на сообщения в чате
 
 Чтобы отслеживать сообщения в чате, вы можете создать подписку на уведомления об изменениях на уровне чата. Для этого подпишитесь на `/chats{id}/messages`. Этот ресурс поддерживает [включение данных ресурса](webhooks-with-resource-data.md) в уведомление *в режиме только для приложения*.
 
 Подписки на уровне чата также поддерживают поиск на основе ключевых слов с помощью параметра запроса `$search`.
+
+> **Примечание.** Подписка на сообщения в чате находится в состоянии предварительной версии.
 
 ### <a name="permissions"></a>Разрешения
 
@@ -211,6 +233,24 @@ Content-Type: application/json
   "changeType": "created,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "resource": "/chats/{id}/messages",
+  "includeResourceData": false,
+  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
+### <a name="example-4-subscribe-to-message-in-a-chat-in-which-a-specific-user-is-mentioned"></a>Пример 4. Подписка на сообщения в чате, в которых упоминается определенный пользователь
+
+Чтобы получать уведомления только о сообщениях, в которых упоминался определенный пользователь, укажите ИД пользователя (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` в этом примере) в запросе.
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created,updated",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "/chats/{id}/messages?$filter=mentions/any(u: u/mentioned/user/id eq '9a6eb4d1-826b-48b1-9627-b50836c8fee9')",
   "includeResourceData": false,
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "{secretClientState}"
