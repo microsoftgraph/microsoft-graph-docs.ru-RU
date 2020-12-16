@@ -1,18 +1,25 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 8d33f7ecc5ece06f3e7419385b7a0897f12c6cd8
+ms.openlocfilehash: 030ab885b4c201cd967d7b098457b25e627c7b6e
 ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689490"
+ms.locfileid: "49689180"
 ---
 ```csharp
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var chat = await graphClient.Users["f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c"].Teamwork.InstalledApps["ZjMyYjgzYmItNGZjOC00ZGI3LWI3ZjUtNzZjZGJiYjhhYTFjIyMyMmY3M2JiZS1mNjdhLTRkZWEtYmQ1NC01NGNhYzcxOGNiMmI="].Chat
+var ids = new List<String>()
+{
+    "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
+    "66825e03-7ef5-42da-9069-724602c31f6b"
+};
+
+await graphClient.Communications
+    .GetPresencesByUserId(ids)
     .Request()
-    .GetAsync();
+    .PostAsync();
 
 ```
