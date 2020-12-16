@@ -44,6 +44,8 @@ items:
             href: /graph/webhooks-lifecycle
           - name: Уведомления с данными ресурсов
             href: /graph/webhooks-with-resource-data?context=graph/api/1.0
+          - name: Получение уведомлений об изменениях для сообщений чатов или каналов
+            href: /graph/teams-changenotifications-chatmessage?context=graph/api/1.0
       - name: Отслеживание изменений
         displayname: 'Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users'
         items:
@@ -283,7 +285,7 @@ items:
                 href: api/user-list-registereddevices.md
               - name: Повторное назначение лицензии
                 href: api/user-reprocesslicenseassignment.md
-              - name: Отозовет сеанс регистрации
+              - name: Отоиметь сеанс регистрации
                 href: api/user-revokesigninsessions.md
           - name: Диск
             href: resources/drive.md
@@ -933,7 +935,7 @@ items:
                 href: api/event-accept.md
               - name: Предварительное принятие
                 href: api/event-tentativelyaccept.md
-              - name: Событие отклонения
+              - name: Событие Decline
                 href: api/event-decline.md
               - name: Отмена напоминания
                 href: api/event-dismissreminder.md
@@ -5078,7 +5080,7 @@ items:
                 items:
                   - name: Список приложений в команде
                     href: api/team-list-installedapps.md
-                  - name: Как установить приложение в команде
+                  - name: 'Получение приложения, установленного в команде'
                     href: api/team-get-installedapps.md
                   - name: Добавление приложения в команду
                     href: api/team-post-installedapps.md

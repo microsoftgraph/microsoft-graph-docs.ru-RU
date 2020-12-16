@@ -1,78 +1,98 @@
 ---
-title: Вкладки списка в канале
-description: 'Получение списка вкладок в указанном канале в команде. '
+title: Список вкладок на канале
+description: 'Получить список вкладок в указанном канале в команде. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2d07c9e3c59e13b376efa7eb11fa4aeae8f5cfcd
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: fd73ca28d036cdbae7a08ee1c0c24734349b78f4
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607638"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49690175"
 ---
-# <a name="list-tabs-in-channel"></a><span data-ttu-id="57ef5-103">Вкладки списка в канале</span><span class="sxs-lookup"><span data-stu-id="57ef5-103">List tabs in channel</span></span>
+# <a name="list-tabs-in-channel"></a><span data-ttu-id="857f4-103">Список вкладок на канале</span><span class="sxs-lookup"><span data-stu-id="857f4-103">List tabs in channel</span></span>
 
-<span data-ttu-id="57ef5-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="57ef5-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="857f4-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="857f4-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="57ef5-105">Получение списка [вкладок](../resources/teamstab.md) в указанном [канале](../resources/channel.md) в [команде](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="57ef5-105">Retrieve the list of [tabs](../resources/teamstab.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md).</span></span> 
+<span data-ttu-id="857f4-105">Получить список [вкладок в](../resources/teamstab.md) указанном [канале](../resources/channel.md) в [команде.](../resources/team.md)</span><span class="sxs-lookup"><span data-stu-id="857f4-105">Retrieve the list of [tabs](../resources/teamstab.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md).</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="57ef5-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="57ef5-106">Permissions</span></span>
-<span data-ttu-id="57ef5-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="57ef5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="857f4-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="857f4-106">Permissions</span></span>
+<span data-ttu-id="857f4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="857f4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="57ef5-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="57ef5-109">Permission type</span></span>      | <span data-ttu-id="57ef5-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="57ef5-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="857f4-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="857f4-109">Permission type</span></span>      | <span data-ttu-id="857f4-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="857f4-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="57ef5-111">Делегированное (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="57ef5-111">Delegated (work or school account)</span></span> | <span data-ttu-id="57ef5-112">TeamsTab. Read. ALL, TeamsTab. Реадвритефортеам, TeamsTab. ReadWrite. ALL, Group. Read. ALL, Group. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="57ef5-112">TeamsTab.Read.All, TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
-|<span data-ttu-id="57ef5-113">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="57ef5-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="57ef5-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="57ef5-114">Not supported.</span></span>    |
-|<span data-ttu-id="57ef5-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="57ef5-115">Application</span></span> | <span data-ttu-id="57ef5-116">TeamsTab. Read. Group *, TeamsTab. ReadWrite. Group*, TeamsTab. Read. ALL, TeamsTab. Реадвритефортеам. ALL, TeamsTab. ReadWrite. ALL, Group. Read. ALL, Group. ReadWrite. ALL, Directory. Read. ALL, Directory. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="57ef5-116">TeamsTab.Read.Group *, TeamsTab.ReadWrite.Group*, TeamsTab.Read.All, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="857f4-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="857f4-111">Delegated (work or school account)</span></span> | <span data-ttu-id="857f4-112">TeamsTab.Read.All, TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="857f4-112">TeamsTab.Read.All, TeamsTab.ReadWriteForTeam, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="857f4-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="857f4-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="857f4-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="857f4-114">Not supported.</span></span>    |
+|<span data-ttu-id="857f4-115">Приложение</span><span class="sxs-lookup"><span data-stu-id="857f4-115">Application</span></span> | <span data-ttu-id="857f4-116">TeamsTab.Read.Group,*TeamsTab.ReadWrite.Group,* TeamsTab.Read.All, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="857f4-116">TeamsTab.Read.Group *, TeamsTab.ReadWrite.Group*, TeamsTab.Read.All, TeamsTab.ReadWriteForTeam.All, TeamsTab.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="57ef5-117">**Примечание**. Разрешения, помеченные звездочкой (\*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="57ef5-117">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
+> <span data-ttu-id="857f4-117">**Примечание**. Разрешения, помеченные звездочкой (\*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).</span><span class="sxs-lookup"><span data-stu-id="857f4-117">**Note**: Permissions marked with \* use [resource-specific consent]( https://aka.ms/teams-rsc).</span></span>
 
-> <span data-ttu-id="57ef5-118">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="57ef5-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="57ef5-119">Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.</span><span class="sxs-lookup"><span data-stu-id="57ef5-119">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="857f4-118">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="857f4-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="857f4-119">Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.</span><span class="sxs-lookup"><span data-stu-id="857f4-119">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="57ef5-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="57ef5-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="857f4-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="857f4-120">HTTP request</span></span>
 
 ```http
 GET /teams/{team-id}/channels/{channel-id}/tabs
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="57ef5-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="57ef5-121">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="857f4-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="857f4-121">Optional query parameters</span></span>
 
-<span data-ttu-id="57ef5-122">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) $filter, $select и $expand для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="57ef5-122">This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+<span data-ttu-id="857f4-122">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) $filter, $select и $expand для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="857f4-122">This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="57ef5-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="57ef5-123">Request headers</span></span>
-| <span data-ttu-id="57ef5-124">Заголовок</span><span class="sxs-lookup"><span data-stu-id="57ef5-124">Header</span></span>       | <span data-ttu-id="57ef5-125">Значение</span><span class="sxs-lookup"><span data-stu-id="57ef5-125">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="857f4-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="857f4-123">Request headers</span></span>
+| <span data-ttu-id="857f4-124">Заголовок</span><span class="sxs-lookup"><span data-stu-id="857f4-124">Header</span></span>       | <span data-ttu-id="857f4-125">Значение</span><span class="sxs-lookup"><span data-stu-id="857f4-125">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="57ef5-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="57ef5-126">Authorization</span></span>  | <span data-ttu-id="57ef5-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="57ef5-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="857f4-126">Авторизация</span><span class="sxs-lookup"><span data-stu-id="857f4-126">Authorization</span></span>  | <span data-ttu-id="857f4-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="857f4-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="57ef5-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="57ef5-129">Request body</span></span>
-<span data-ttu-id="57ef5-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="57ef5-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="857f4-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="857f4-129">Request body</span></span>
+<span data-ttu-id="857f4-130">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="857f4-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="57ef5-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="57ef5-131">Response</span></span>
-<span data-ttu-id="57ef5-132">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [вкладок](../resources/teamstab.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="57ef5-132">If successful, this method returns a `200 OK` response code and collection of [tabs](../resources/teamstab.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="857f4-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="857f4-131">Response</span></span>
+<span data-ttu-id="857f4-132">В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [вкладок](../resources/teamstab.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="857f4-132">If successful, this method returns a `200 OK` response code and collection of [tabs](../resources/teamstab.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="57ef5-133">Примеры</span><span class="sxs-lookup"><span data-stu-id="57ef5-133">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="857f4-133">Примеры</span><span class="sxs-lookup"><span data-stu-id="857f4-133">Examples</span></span>
 
-### <a name="example-1-list-all-the-tabs-in-the-channel-along-with-associated-teams-app"></a><span data-ttu-id="57ef5-134">Пример 1: список всех вкладок в канале вместе со связанным приложением Teams</span><span class="sxs-lookup"><span data-stu-id="57ef5-134">Example 1: List all the tabs in the channel along with associated Teams app</span></span>
-#### <a name="request"></a><span data-ttu-id="57ef5-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="57ef5-135">Request</span></span>
-<span data-ttu-id="57ef5-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="57ef5-136">The following is an example of the request.</span></span>
+### <a name="example-1-list-all-the-tabs-in-the-channel-along-with-associated-teams-app"></a><span data-ttu-id="857f4-134">Пример 1. Список всех вкладок в канале вместе со связанным приложением Teams</span><span class="sxs-lookup"><span data-stu-id="857f4-134">Example 1: List all the tabs in the channel along with associated Teams app</span></span>
+#### <a name="request"></a><span data-ttu-id="857f4-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="857f4-135">Request</span></span>
+<span data-ttu-id="857f4-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="857f4-136">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="857f4-137">HTTP</span><span class="sxs-lookup"><span data-stu-id="857f4-137">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_tabs_in_channel"
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/tabs?$expand=teamsApp
 ```
+# <a name="c"></a>[<span data-ttu-id="857f4-138">C#</span><span class="sxs-lookup"><span data-stu-id="857f4-138">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-tabs-in-channel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="57ef5-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="57ef5-137">Response</span></span>
-<span data-ttu-id="57ef5-138">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="57ef5-138">The following is an example of the response.</span></span>
-><span data-ttu-id="57ef5-139">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="57ef5-139">**Note:** The response object shown here might be shortened for readability.</span></span> 
+# <a name="javascript"></a>[<span data-ttu-id="857f4-139">JavaScript</span><span class="sxs-lookup"><span data-stu-id="857f4-139">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-tabs-in-channel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="857f4-140">Objective-C</span><span class="sxs-lookup"><span data-stu-id="857f4-140">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-tabs-in-channel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="857f4-141">Java</span><span class="sxs-lookup"><span data-stu-id="857f4-141">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-tabs-in-channel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="857f4-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="857f4-142">Response</span></span>
+<span data-ttu-id="857f4-143">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="857f4-143">The following is an example of the response.</span></span>
+><span data-ttu-id="857f4-144">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="857f4-144">**Note:** The response object shown here might be shortened for readability.</span></span> 
 
 <!-- {
   "blockType": "response",
@@ -120,23 +140,43 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-all-the-tabs-belonging-to-a-specific-app-in-a-channel"></a><span data-ttu-id="57ef5-140">Пример 2: список всех вкладок, принадлежащих конкретному приложению в канале</span><span class="sxs-lookup"><span data-stu-id="57ef5-140">Example 2: List all the tabs belonging to a specific app in a channel</span></span>
-#### <a name="request"></a><span data-ttu-id="57ef5-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="57ef5-141">Request</span></span>
-<span data-ttu-id="57ef5-142">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="57ef5-142">The following is an example of the request.</span></span>
+### <a name="example-2-list-all-the-tabs-belonging-to-a-specific-app-in-a-channel"></a><span data-ttu-id="857f4-145">Пример 2. Список всех вкладок, принадлежащих определенному приложению в канале</span><span class="sxs-lookup"><span data-stu-id="857f4-145">Example 2: List all the tabs belonging to a specific app in a channel</span></span>
+#### <a name="request"></a><span data-ttu-id="857f4-146">Запрос</span><span class="sxs-lookup"><span data-stu-id="857f4-146">Request</span></span>
+<span data-ttu-id="857f4-147">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="857f4-147">The following is an example of the request.</span></span>
 
+
+# <a name="http"></a>[<span data-ttu-id="857f4-148">HTTP</span><span class="sxs-lookup"><span data-stu-id="857f4-148">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_tabs_in_channel_app_filter"
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/channels/19:33b76eea88574bd1969dca37e2b7a819@thread.skype/tabs?$expand=teamsApp&$filter=teamsApp/id eq 'com.microsoft.teamspace.tab.planner'
 ```
+# <a name="c"></a>[<span data-ttu-id="857f4-149">C#</span><span class="sxs-lookup"><span data-stu-id="857f4-149">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-tabs-in-channel-app-filter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-#### <a name="response"></a><span data-ttu-id="57ef5-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="57ef5-143">Response</span></span>
-<span data-ttu-id="57ef5-144">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="57ef5-144">The following is an example of the response.</span></span>
-><span data-ttu-id="57ef5-145">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="57ef5-145">**Note:** The response object shown here might be shortened for readability.</span></span> 
+# <a name="javascript"></a>[<span data-ttu-id="857f4-150">JavaScript</span><span class="sxs-lookup"><span data-stu-id="857f4-150">JavaScript</span></span>](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-tabs-in-channel-app-filter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="857f4-151">Objective-C</span><span class="sxs-lookup"><span data-stu-id="857f4-151">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-tabs-in-channel-app-filter-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="857f4-152">Java</span><span class="sxs-lookup"><span data-stu-id="857f4-152">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-tabs-in-channel-app-filter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### <a name="response"></a><span data-ttu-id="857f4-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="857f4-153">Response</span></span>
+<span data-ttu-id="857f4-154">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="857f4-154">The following is an example of the response.</span></span>
+><span data-ttu-id="857f4-155">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="857f4-155">**Note:** The response object shown here might be shortened for readability.</span></span> 
 
 <!-- {
   "blockType": "response",
