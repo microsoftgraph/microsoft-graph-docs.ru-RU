@@ -128,7 +128,7 @@ API OneNote пытается найти и отобразить следующу
 
 <img alt="An example recipe extraction" src="images/recipe-extraction.png" width="200">
 
-API оптимизирован для работы с рецептами со многих популярных сайтов, например *Allrecipes.com* , *FoodNetwork.com* и *SeriousEats.com*.
+API оптимизирован для работы с рецептами со многих популярных сайтов, например *Allrecipes.com*, *FoodNetwork.com* и *SeriousEats.com*.
 
 ### <a name="common-scenarios-for-recipe-extractions"></a>Стандартные сценарии извлечения рецептов
 
