@@ -1,24 +1,24 @@
 ---
-title: Канал исправлений
+title: 'Ветвь обновлений '
 description: Обновление свойств указанного канала.
 author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 2397cde51de94c7147ed55e88bc4d716c454d0cc
-ms.sourcegitcommit: d1e72c8d36aad78732133f9ecefaf66c433b8530
+ms.openlocfilehash: c6af7347bd1ac2f164fe1d73e24ea9fc48cd6f8d
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48848062"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705921"
 ---
-# <a name="patch-channel"></a>Канал исправлений
+# <a name="update-channel"></a>Ветвь обновлений 
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств указанного [канала](../resources/channel.md).
+Обновление свойств указанного [канала.](../resources/channel.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,9 +26,9 @@ ms.locfileid: "48848062"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Чаннелсеттингс. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Чаннелсеттингс. ReadWrite. Group *, Чаннелсеттингс. ReadWrite. ALL, Group. ReadWrite. ALL, Directory. ReadWrite. ALL |
+|Приложение | ChannelSettings.ReadWrite.Group*, ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
 
@@ -43,13 +43,13 @@ PATCH /teams/{id}/channels/{id}
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
 
 Предоставьте в тексте запроса описание объекта [channel](../resources/channel.md) в формате JSON.
 
-> Note: невозможно обновить `membershipType` значение существующего канала.
+> **Примечание.** Невозможно обновить значение `membershipType` существующего канала.
 
 ## <a name="response"></a>Отклик
 
@@ -57,7 +57,9 @@ PATCH /teams/{id}/channels/{id}
 
 ## <a name="example"></a>Пример
 
-### <a name="request"></a>Запрос
+### <a name="example-1-update-channel"></a>Пример 1. Канал обновления
+
+#### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
@@ -75,9 +77,51 @@ PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 ---
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### <a name="example-2-update-channel-with-moderation-settings"></a>Пример 2. Обновление канала с помощью параметров модерирования
+
+#### <a name="request"></a>Запрос
+
+В следующем примере показан запрос на обновление канала с помощью параметров модерации. Эту операцию может выполнить только владелец команды.
+
+<!-- {
+  "blockType": "request",
+  "name": "patch_channel_with_moderationSettings"
+}-->
+
+```http
+PATCH https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}
+Content-type: application/json
+
+{
+    "displayName": "UpdateChannelModeration",
+    "description": "Update channel moderation.",
+    "moderationSettings": {
+        "userNewMessageRestriction": "moderators",
+        "replyRestriction": "everyone",
+        "allowNewMessageFromBots": true,
+        "allowNewMessageFromConnectors": true
+    }
+}
+```
+
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика. 
+
 <!-- {
   "blockType": "response",
   "truncated": true,

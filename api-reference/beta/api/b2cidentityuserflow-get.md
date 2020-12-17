@@ -1,24 +1,24 @@
 ---
-title: Получение b2cIdentityUserFlow
-description: Получение свойств и связей объекта b2cIdentityUserFlow.
+title: Get b2cIdentityUserFlow
+description: Извлечение свойств и связей объекта b2cIdentityUserFlow.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4ef6d1b45e1f577a6538998eab74a569ff51125e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 45fc991d02a5b588f924154a8e9c4e639546f485
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961225"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705718"
 ---
-# <a name="get-b2cidentityuserflow"></a>Получение b2cIdentityUserFlow
+# <a name="get-b2cidentityuserflow"></a>Get b2cIdentityUserFlow
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [b2cUserFlow](../resources/b2cidentityuserflow.md) .
+Извлечение свойств и связей объекта [b2cUserFlow.](../resources/b2cidentityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,14 +26,14 @@ ms.locfileid: "48961225"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Идентитюсерфлов. Read. ALL, Идентитюсерфлов. ReadWrite. ALL|
+|Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложения|Идентитюсерфлов. Read. ALL, Идентитюсерфлов. ReadWrite. ALL|
+|Приложение|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
-Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
+Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор внешнего пользовательского процесса идентификации
+* Администратор потока пользователей внешнего удостоверения
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ GET /identity/b2cUserFlows/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Можно использовать `$expand` для расширения определенных свойств пользовательского пользовательского процесса, которые по умолчанию не развернуты.
+Можно использовать `$expand` для расширения определенных свойств пользовательского потока, которые не расширены по умолчанию.
 
 Дополнительные сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
@@ -61,7 +61,7 @@ GET /identity/b2cUserFlows/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и представление объекта [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) в тексте отклика в формате JSON.
+В случае успеха этот метод возвращает код отклика и представление `200 OK` объекта [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) в тексте отклика в JSON.
 
 ## <a name="example"></a>Пример
 
@@ -116,7 +116,9 @@ Content-type: application/json
 {
     "id": "B2C_1_CustomerSignUp",
     "userFlowType": "signUpOrSignIn",
-    "userFlowTypeVersion": 1
+    "userFlowTypeVersion": 1,
+    "isLanguageCustomizationEnabled": false,
+    "defaultLanguageTag": null
 }
 ```
 

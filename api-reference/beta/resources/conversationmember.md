@@ -5,12 +5,12 @@ localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 2a8e4c94681065d9686e9f17888d3abf35885a65
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 7f6b24b65a6ae25f8a05bf067659c04d49c06d24
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658044"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706068"
 ---
 # <a name="conversationmember-resource-type"></a>Тип ресурса conversationMember
 
@@ -25,20 +25,20 @@ ms.locfileid: "49658044"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список участников чата](../api/conversationmember-list.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка всех пользователей в чате.|
-|[Получить участника чата](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | Получение одного пользователя в чате.|
 |[Список участников группы](../api/team-list-members.md)|Коллекция [conversationMember](../resources/conversationmember.md)|Получение списка участников группы.|
-|[Получить участника группы](../api/team-get-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение участника группы.|
+|[Получить участника команды](../api/team-get-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение участника группы.|
 |[Добавление участника группы](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Добавление нового участника в группу.|
-|[Массовое добавление участников команды](../api/conversationmembers-add.md)|[Коллекция actionResultPart](../resources/actionresultpart.md)|Добавьте в команду несколько участников в одном запросе.|
+|[Массовое добавление участников команды](../api/conversationmembers-add.md)|Коллекция [actionResultPart](../resources/actionresultpart.md)|Добавление нескольких участников в команду одним запросом.|
 |[Обновление роли участника группы](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Перевод пользователя из категории участников в категорию владельцев или наоборот, из категории владельцев в категорию обычных участников.|
 |[Удаление участника группы](../api/team-delete-members.md)|Нет|Удаление существующего участника из группы.|
+|[Перечисление участников канала](../api/channel-list-members.md) | Коллекция [conversationMember](conversationmember.md) | Получите список всех участников в канале.|
 |[Получение участника канала](../api/channel-get-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение участника канала.|
 |[Создание участника канала](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Добавление участника в канал. Поддерживается только для `channel` с типом членства `private`.|
 |[Обновление роли участника канала](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Обновление свойства участника канала. Поддерживается только для канала с типом членства `private`.|
 |[Удаление участника канала](../api/channel-delete-members.md) | Нет | Удаление участника канала. Поддерживается, только если параметру `channelType` присвоено значение `private`.|
-
-
+|[Список участников чата](../api/chat-list-members.md) | Коллекция [conversationMember](conversationmember.md) | Получите список всех участников в чате.|
+|[Получить участника чата](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Получить участника в чате.|
+|[Добавление участника чата](../api/chat-post-members.md) | Заголовок Location | Добавление участника в чат.| 
 
 ## <a name="properties"></a>Свойства
 
@@ -47,6 +47,7 @@ ms.locfileid: "49658044"
 |id|String| Только для чтения. Уникальный идентификатор пользователя.|
 |displayName| string | Отображаемое имя пользователя. |
 |roles| Коллекция строк | Роли этого пользователя. |
+|visibleHistoryStartDateTime| DateTimeOffset | Timestamp, обозначающий, как далеко назад история беседы совместно с участником беседы. Это свойство можно установить только для участников чата. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -54,19 +55,21 @@ ms.locfileid: "49658044"
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.conversationMember",
-  "baseType": "",
-  "keyProperty": "id"
-}-->
-
-```json
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+}
+-->
+``` json
 {
-  "displayName": "String",
+  "@odata.type": "#microsoft.graph.conversationMember",
   "id": "String (identifier)",
-  "roles": ["String"]
+  "roles": [
+    "String"
+  ],
+  "displayName": "String",
+  "visibleHistoryStartDateTime": "String (timestamp)"
 }
 ```
 

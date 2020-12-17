@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 4f2ef0fb65fea23451da13b355ac1aa194554f5a
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 1efcb09962fc8b5342e6d83294347b9b84653058
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49690902"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706138"
 ---
 # <a name="list-members-of-team"></a>Список участников группы
 Пространство имен: microsoft.graph
@@ -286,7 +286,7 @@ Content-Type: application/json
 В следующем примере показан запрос на поиск всех участников, которым назначена роль *владельца*.
 
 > [!NOTE]
-> С этой функцией связаны некоторые известные проблемы. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues.md#unable-to-filter-team-members-by-roles).
+> С этой функцией связаны некоторые известные проблемы. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#unable-to-filter-team-members-by-roles).
 
 #### <a name="request"></a>Запрос
 

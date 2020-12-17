@@ -1,24 +1,24 @@
 ---
-title: Создание Акцессревиевсчедуледефинитион
-description: Создание нового объекта Акцессревиевсчедуледефинитион.
+title: Создание accessReviewScheduleDefinition
+description: Создание объекта accessReviewScheduleDefinition.
 localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1dc30208652af0989ab0b6bf0b35ebfdd50bc65d
-ms.sourcegitcommit: eb536655ffd8d49ae258664f35c50a8263238400
+ms.openlocfilehash: 5b9308111bdad2482b71339333822d7878d3187f
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49221857"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705711"
 ---
-# <a name="create-accessreviewscheduledefinition"></a>Создание Акцессревиевсчедуледефинитион
+# <a name="create-accessreviewscheduledefinition"></a>Создание accessReviewScheduleDefinition
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [акцессревиевсчедуледефинитион](../resources/accessreviewscheduledefinition.md) .
+Создание объекта [accessReviewScheduleDefinition.](../resources/accessreviewscheduledefinition.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -30,7 +30,7 @@ ms.locfileid: "49221857"
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение                            | AccessReview.ReadWrite.All |
 
-Вошедшего в систему пользователя также должен находиться в роли каталога, позволяющей им создавать проверку доступа.  Более подробную информацию можно узнать в статье требования к ролям и разрешениям для [рецензирования Access](../resources/accessreviewsv2-root.md).
+Во входе пользователя также должна быть роль каталога, которая позволяет создать проверку доступа.  Дополнительные сведения см. в требованиях к роли и разрешениям для [проверки доступа.](../resources/accessreviewsv2-root.md)
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,30 +44,30 @@ POST /identityGovernance/accessReviews/definitions
 | Content-Type | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [акцессревиев](../resources/accessreview.md) в формате JSON.
+В теле запроса укажу представление объекта [accessReview](../resources/accessreview.md) в JSON.
 
-В следующей таблице приведены свойства, принятые для создания Акцессревиев.
+В следующей таблице показаны свойства, принятые для создания accessReview.
 
 | Свойство | Тип | Описание |
 |:-------------|:------------|:------------|
-| displayName | String | Имя серии проверки доступа. Обязательный.|
-| дескриптионфорадминс | string | Контекст проверки, предоставленной администраторам. Обязательный. |
-  дескриптионфорревиеверс | string | Контекст проверки, предоставленной для рецензентов. Обязательный. |
-| scope | [акцессревиевскопе](../resources/accessreviewscope.md) | Определяет область пользователей, проверенных в группе. Обратитесь к разделу  [акцессревиевскопе](../resources/accessreviewscheduledefinition.md). Обязательный.| 
-| инстанцеенумератионскопе | [акцессревиевскопе](../resources/accessreviewscope.md) | В случае проверки всех групп это определяет область, в которой будут проверяться группы. Обратитесь к разделу [акцессревиевскопе](../resources/accessreviewscheduledefinition.md). | 
-| параметры | [акцессревиевсчедулесеттингс](../resources/accessreviewschedulesettings.md)| Параметры ряда проверки доступа. Здесь определяется повторение. Обратитесь к разделу [акцессревиевсчедулесеттингс](../resources/accessreviewscheduledefinition.md). |
-| обсужден | Коллекция [акцессревиевревиеверскопе](../resources/accessreviewreviewerscope.md) | Определяет, кто является рецензентом. Если ничего не указано, проверка является самостоятельным обзором (пользователи, Просмотрели проверку собственного доступа). Обратитесь к разделу [акцессревиевревиеверскопе](../resources/accessreviewscheduledefinition.md). |
+| displayName | String | Название серии отзывов о доступе. Обязательный.|
+| descriptionForAdmins | string | Контекст проверки, предоставленной администраторам. Обязательный. |
+  descriptionForReviewers | string | Контекст отзыва, предоставленного рецензентам. Обязательный. |
+| scope | [accessReviewScope](../resources/accessreviewscope.md) | Определяет область пользователей, проверяемую в группе. См. [accessReviewScope.](../resources/accessreviewscheduledefinition.md) Обязательный.| 
+| instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | В случае проверки всех групп это определяет область проверки групп. См. [accessReviewScope.](../resources/accessreviewscheduledefinition.md) | 
+| settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии отзывов о доступе. Здесь определяется повторение. См. [accessReviewScheduleSettings.](../resources/accessreviewscheduledefinition.md) |
+| рецензенты | [Коллекция accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) | Определяет, кто такие рецензенты. Если ни один из них не указан, отзыв будет самообнаправлением (пользователи просмотрели свой собственный доступ). См. [accessReviewReviewerScope.](../resources/accessreviewscheduledefinition.md) |
 
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201, Created` код отклика и объект [акцессревиевсчедуледефинитион](../resources/accessreviewscheduledefinition.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201, Created` [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
-Это пример создания серии проверки доступа с определенным пользователем, чей идентификатор объекта пользователя — 7eae4444-D425-48b2-adf2-3c777f6256f3, в качестве проверяющего. В ходе проверки просматриваются все члены определенной группы, чей объект Group ID имеет значение b7a059cb-038a-4802-8fc9-b9d1ed0c4444. Он повторяется еженедельно.
+Это пример создания серии отзывов о доступе с определенным пользователем, ид объекта пользователя — 7eae4444-d425-48b2-adf2-3c777f6256f3 в качестве рецензента. Проверка проверяет всех членов определенной группы, у которых есть ид объекта группы b7a059cb-038a-4802-8fc9-b9d1ed0c4444. Она повторяется еженедельно.
 
 ### <a name="request"></a>Запрос
-В тексте запроса добавьте представление объекта [акцессревиевсчедуледефинитион](../resources/accessreviewscheduledefinition.md) в формате JSON.
+В теле запроса предопределение представления объекта [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) в JSON.
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -76,7 +76,7 @@ POST /identityGovernance/accessReviews/definitions
   "name": "create_accessReviewScheduleDefinition"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/accessReviews
+POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
 Content-type: application/json
 
 {

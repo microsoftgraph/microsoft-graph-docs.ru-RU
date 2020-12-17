@@ -1,48 +1,48 @@
 ---
-title: Тип ресурса Усерсаурце
-description: Контейнер для почтового ящика хранитель и сайта OneDrive для бизнеса.
+title: Тип ресурса userSource
+description: Контейнер для почтового ящика хранителя и сайта OneDrive для бизнеса.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: resourcePageType
-ms.openlocfilehash: 2ce5448947bded580cc4896ba549d7cc6fab95f9
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 10184e053a0c62aaba6599f7d6f9bb6a33de8828
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597742"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706042"
 ---
-# <a name="usersource-resource-type"></a>Тип ресурса Усерсаурце
+# <a name="usersource-resource-type"></a>Тип ресурса userSource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Контейнер для почтового ящика [хранитель](custodian.md) и сайта OneDrive для бизнеса.
+Контейнер для почтового [ящика хранителя](custodian.md) и сайта OneDrive для бизнеса.
 
 ## <a name="methods"></a>Методы
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список Усерсаурцес](../api/custodian-list-usersources.md)|Коллекция [усерсаурце](../resources/usersource.md)|Получение списка объектов **усерсаурце** и их свойств.|
-|[Создание Усерсаурце](../api/custodian-post-usersources.md)|[усерсаурце](../resources/usersource.md)|Создание нового объекта **усерсаурце** .|
-|[Получение Усерсаурце](../api/usersource-get.md)|[усерсаурце](../resources/usersource.md)|Чтение свойств и связей объекта **усерсаурце** .|
-|[Удаление Усерсаурце](../api/usersource-delete.md)|Нет|Удаление объекта **усерсаурце** .|
+|[Список userSources](../api/custodian-list-usersources.md)|[Коллекция userSource](../resources/usersource.md)|Получите список объектов **userSource** и их свойств.|
+|[Создание userSource](../api/custodian-post-usersources.md)|[userSource](../resources/usersource.md)|Создание объекта **userSource.**|
+|[Get userSource](../api/usersource-get.md)|[userSource](../resources/usersource.md)|Чтение свойств и связей объекта **userSource.**|
+|[Удаление userSource](../api/usersource-delete.md)|Нет|Удаление объекта **userSource.**|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|createdBy|[identitySet](../resources/identityset.md)|Пользователь, создавший **усерсаурце**.|
-|createdDateTime|DateTimeOffset|Дата и время создания ерсаурце **усерсаурце** для США|
-|displayName|String|Отображаемое имя, связанное с почтовым ящиком и сайтом.|
+|createdBy|[identitySet](../resources/identityset.md)|Пользователь, создавший **userSource.**|
+|createdDateTime|DateTimeOffset|Дата и время создания **userSource**|
+|displayName|String|Отображаемая фамилия, связанная с почтовым ящиком и сайтом.|
 |email|String|Адрес электронной почты почтового ящика пользователя.|
-|id|String|Идентификатор **усерсаурце**. Это значение не является ИДЕНТИФИКАТОРом фактической группы|
-|инклудедсаурцес|sourceType|Указывает, какие источники включены в эту группу. Возможные значения: `mailbox`, `site`.|
+|id|String|ИД **userSource.** Это не ИД фактической группы|
+|includedSources|sourceType|Указывает источники, включенные в эту группу. Возможные значения: `mailbox`, `site`.|
 
 ### <a name="sourcetype-values"></a>значения sourceType
 
-Типы источника, связанные с пользователем. Включает почтовый ящик и сайт по умолчанию.
+Типы источников, связанных с пользователем. Включает почтовый ящик и сайт по умолчанию.
 
 |Member|Описание|
 |:----|-----------|

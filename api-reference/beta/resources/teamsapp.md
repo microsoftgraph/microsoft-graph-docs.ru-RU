@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 5a944c9aa1f679b053fa7ceda645885b584a1dce
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: eb7c75f144f2056e610e45f86b44a19d9211f306
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49606792"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706124"
 ---
 # <a name="teamsapp-resource-type"></a>Тип ресурса teamsApp
 
@@ -26,17 +26,18 @@ ms.locfileid: "49606792"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список опубликованных приложений](../api/appcatalogs-list-teamsapps.md) | Коллекция [teamsApp](teamsapp.md) | Список опубликованных приложений из каталога приложений Microsoft Teams.|
-|[Публикация приложения](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Публикация приложения в каталоге приложений организации.|
-|[Обновление опубликованного приложения](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Обновление опубликованного приложения в каталоге приложений организации.|
-|[Удаление опубликованного приложения](../api/teamsapp-delete.md) | Нет | Удаление опубликованного приложения из каталога приложений организации.|
+|[Список приложений в каталоге](../api/appcatalogs-list-teamsapps.md) | Коллекция [teamsApp](teamsapp.md) | Список всех приложений в каталоге приложений Microsoft Teams.|
+|[Отправка приложения в каталог](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Отправка приложения в каталог приложений организации.|
+|[Обновление приложения в каталоге](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Обновление приложения в каталоге приложений организации.|
+|[Удаление приложения из каталога](../api/teamsapp-delete.md) | Нет | Удаление приложения из каталога приложений организации.|
+|[Получить бота, связанного с приложением в каталоге](../api/teamworkbot-get.md) | [teamworkbot](teamworkbot.md) | Получите бота, связанного с приложением Teams.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | Сгенерированный идентификатор приложения из каталога приложений (отличающийся от предоставленного разработчиком идентификатора в [ZIP-пакете приложения Microsoft Teams](/microsoftteams/platform/concepts/apps/apps-package). |
-| externalId          | строка   | Идентификатор каталога, предоставленный разработчиком приложения в [ZIP-пакете приложения Microsoft Teams](/microsoftteams/platform/concepts/apps/apps-package). |
+| id                  | строка   | Сгенерированный идентификатор приложения из каталога приложений (отличающийся от предоставленного разработчиком идентификатора в [ZIP-пакете приложения Microsoft Teams](/microsoftteams/platform/concepts/apps/apps-package). |
+| externalId          | string   | Идентификатор каталога, предоставленный разработчиком приложения в [ZIP-пакете приложения Microsoft Teams](/microsoftteams/platform/concepts/apps/apps-package). |
 | displayName                | string   | Название приложения каталога, предоставленное разработчиком приложения в [ZIP-пакете приложения Microsoft Teams](/microsoftteams/platform/concepts/apps/apps-package). |
 | distributionMethod  | teamsAppDistributionMethod     | Метод распространения приложения. Только для чтения.|
 

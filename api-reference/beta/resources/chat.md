@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: dcfa853f8ba246443f0f5073a4a62fd84f92adc6
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 9f378eeb9191993e348c20d523b36160bd854717
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659410"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706059"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса chat
 
@@ -20,16 +20,18 @@ ms.locfileid: "49659410"
 
 Чат — это коллекция [chatMessages](chatmessage.md) между одним или более участниками. Участниками могут быть пользователи или приложения.
 
-> **Примечание.** Если чат связан с экземпляром [onlineMeeting,](../resources/onlinemeeting.md) некоторые из перечисленных методов транзитивно влияют на собрание.
+> **Примечание.** Если чат связан с экземпляром [onlineMeeting,](../resources/onlinemeeting.md) некоторые из указанных методов будут транзитивно влиять на собрание.
 
 ## <a name="methods"></a>Методы
 
 |  Метод       |  Возвращаемый тип  | Описание| 
 |:---------------|:--------|:----------|
 |[Список чатов](../api/chat-list.md) | [коллекция chat](chat.md) | Получите список чатов, в которые входит пользователь.| 
+|[Создание чата](../api/chat-post.md) | [chat](chat.md) | Создайте новый чат.| 
 |[Получение чата](../api/chat-get.md) | [chat](chat.md) | Чтение свойств и связей чата.| 
-|[Список участников чата](../api/conversationmember-list.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка всех пользователей в чате.| 
-|[Получить участника чата](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | Получение одного пользователя в чате.| 
+|[Список участников чата](../api/chat-list-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка всех пользователей в чате.| 
+|[Добавление участника чата](../api/chat-post-members.md) | Заголовок Location | Добавление пользователя в чат.| 
+|[Получить участника чата](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Получение одного пользователя в чате.| 
 |[Список сообщений в чате](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в индивидуальном или групповом чате. | 
 |[Получение сообщения в чате](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. | 
 |[Общение в чате между пользователем и приложением](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Как получить один-на-один чат между пользователем и приложением |
@@ -54,14 +56,24 @@ ms.locfileid: "49659410"
 | id| String| Уникальный идентификатор чата. Только для чтения.|
 | topic| String|  (Необязательно) Тема или тема чата. Доступно только для групповых чатов.|
 | createdDateTime| dateTimeOffset|  Дата и время создания чата. Только для чтения.|
-| lastUpdatedDateTime| dateTimeOffset|  Дата и время переименования чата или изменения членства. lastUpdatedDateTime не обновляется при отправлении сообщения в чат. Только для чтения.|
+| lastUpdatedDateTime| dateTimeOffset|  Дата и время переименования чата или последнего изменения списка участников. Только для чтения.|
+| chatType| [chatType](../resources/chat.md#chattype-values) | Указывает тип чата. Возможные значения: `group` и `oneOnOne` `meeting` .|
+
+### <a name="chattype-values"></a>значения chatType 
+
+| Элемент             | Значение | Описание               |
+| :----------------- | :---- | :------------------------ |
+|oneOnOne            | 0     | Указывает, что чат является чатом 1:1. Размер составов для этого типа чата фиксирован; нельзя удалить или добавить члены;|
+|group               | 1     | Указывает, что чат является групповым чатом. Для этого типа чата можно обновить размер группы (не менее двух человек). Члены можно удалить или добавить позже.|
+|meeting             | 2     | Указывает, что чат связан с собранием по сети. Этот тип чата создается только при создании собрания по сети.|
+|unknownFutureValue  | 3     | Значение Sentinel, чтобы указать будущие значения. |
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
 | installedApps | [teamsAppInstallation](teamsappinstallation.md) collection | Коллекция всех приложений в чате. Допускается значение null. |
-| members | Коллекция [conversationMember](conversationmember.md) | Коллекция всех людей в чате. Допускается значение null. |
+| members | Коллекция [conversationMember](conversationmember.md) | Коллекция всех участников чата. Допускается значение null. |
 | messages | Коллекция [chatMessage](chatmessage.md) | Коллекция всех сообщений в чате. Допускается значение null. |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -79,7 +91,8 @@ ms.locfileid: "49659410"
   "id": "string (identifier)",
   "topic": "string",
   "createdDateTime": "dateTimeOffset",
-  "lastUpdatedDateTime": "dateTimeOffset"
+  "lastUpdatedDateTime": "dateTimeOffset",
+  "chatType": "String"
 }
 ```
 

@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса Клаудпк
-description: Облачные управляемые виртуальные рабочие столы.
+title: Тип ресурса cloudPC
+description: Виртуальные рабочие столы, управляемые облаком.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: d1109ceb81f741cefa9b26662bc1c8c5de8a8329
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 481bcae691632685cafab00a4b7e44addb1ad0cd
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563840"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706089"
 ---
-# <a name="cloudpc-resource-type"></a>Тип ресурса Клаудпк
+# <a name="cloudpc-resource-type"></a>Тип ресурса cloudPC
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет виртуальный рабочий стол, управляемый облаком.
+Представляет управляемый облаком виртуальный рабочий стол.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -26,26 +26,26 @@ ms.locfileid: "49563840"
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Список Клаудпкс](../api/virtualendpoint-list-cloudpcs.md)|Коллекция [клаудпк](../resources/cloudpc.md)|Список свойств и связей объектов [клаудпк](../resources/cloudpc.md) .|
-|[Получение Клаудпк](../api/cloudpc-get.md)|[клаудпк](../resources/cloudpc.md)|Чтение свойств и связей объекта [клаудпк](../resources/cloudpc.md) .|
-|[Повторная подготовка](../api/cloudpc-reprovision.md)|Нет|Повторное наполнение объекта [клаудпк](../resources/cloudpc.md) .|
+|[Список cloudPCs](../api/virtualendpoint-list-cloudpcs.md)|[Коллекция cloudPC](../resources/cloudpc.md)|Список свойств и связей объектов [cloudPC.](../resources/cloudpc.md)|
+|[Get cloudPC](../api/cloudpc-get.md)|[cloudPC](../resources/cloudpc.md)|Чтение свойств и связей объекта [cloudPC.](../resources/cloudpc.md)|
+|[Reprovision](../api/cloudpc-reprovision.md)|Нет|Повторное создание объекта [cloudPC.](../resources/cloudpc.md)|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для облачного компьютера. Только для чтения.|
-|displayName|String|Отображаемое имя Cloud PC.|
-|имажедисплайнаме|String|Имя образа операционной системы, который находится на облачном компьютере.|
-|манажеддевицеид|String|ИДЕНТИФИКАТОР устройства Intune облачного компьютера.|
-|managedDeviceName|String|Имя устройства в Intune на облачном компьютере.|
-|провисионингполициид|String|Идентификатор политики подготовки для облачного компьютера.|
-|сервицепланид|String|ИДЕНТИФИКАТОР плана обслуживания Cloud PC.|
-|сервицепланнаме|String|Имя плана обслуживания для облачного компьютера.|
-|status|клаудпкстатус|Состояние облачного компьютера. Возможные значения: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `upgradeFailed`, `provisionFailed`, `deprovisionFailed`, `reprovisionFailed`.|
-|статусдетаилс|[клаудпкстатусдетаилс](../resources/cloudpcstatusdetails.md)|Сведения о состоянии облачного компьютера.|
-|userPrincipalName|String|Имя участника-пользователя (UPN) пользователя, назначенное облачному компьютеру.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения в облачном ПК. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z".|
+|id|String|Уникальный идентификатор для облачного ПК. Только для чтения.|
+|displayName|String|Отображаемая версия облачного компьютера.|
+|imageDisplayName|String|Имя образа ОС на облачном компьютере.|
+|managedDeviceId|String|ИД устройства Intune на облачном компьютере.|
+|managedDeviceName|String|Имя устройства Intune облачного ПК.|
+|provisioningPolicyId|String|ИД политики предоставления на облачном компьютере.|
+|servicePlanId|String|ИД плана обслуживания облачного КОМПЬЮТЕРА.|
+|servicePlanName|String|Имя плана обслуживания облачного ПК.|
+|status|cloudPcStatus|Состояние облачного ПК. Возможные значения: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`.|
+|statusDetails|[cloudPcStatusDetails](../resources/cloudpcstatusdetails.md)|Сведения о состоянии облачного ПК.|
+|userPrincipalName|String|Имя основного пользователя (UPN) пользователя, назначенного облачному компьютеру.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения облачного ПК. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z".|
 
 ## <a name="relationships"></a>Связи
 
