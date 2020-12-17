@@ -1,5 +1,5 @@
 ---
-title: Перечисление событий
+title: Список событий
 description: 'Получение списка объектов event из стандартного календаря пользователя или '
 localization_priority: Priority
 author: harini84
@@ -77,7 +77,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events
 | Prefer: outlook.timezone | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательное свойство. |
 | Prefer: outlook.body-content-type | string | Формат возвращаемого свойства **body**. Возможные значения: "text" или "html". Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан. Если заголовок не указан, свойство **body** возвращается в формате HTML. Необязательное свойство. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

@@ -14,7 +14,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 11/16/2020
 ms.locfileid: "49082288"
 ---
-# <a name="drive-resource-type"></a>Тип ресурса drive
+# <a name="drive-resource-type"></a>Тип ресурса Drive
 
 Пространство имен: microsoft.graph
 
