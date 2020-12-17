@@ -1,24 +1,24 @@
 ---
-title: Создание b2cIdentityUserFlow
-description: Создание нового объекта b2cIdentityUserFlow.
+title: Создание объекта b2cIdentityUserFlow
+description: Создание объекта b2cIdentityUserFlow.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1b0a73a42948871eeae4cd4b31bc993209b7eeaa
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: 98d603632e724817cec2d4c97e06389608cc3f10
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49581126"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705872"
 ---
-# <a name="create-b2cidentityuserflow"></a>Создание b2cIdentityUserFlow
+# <a name="create-b2cidentityuserflow"></a>Создание объекта b2cIdentityUserFlow
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) .
+Создание объекта [b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,14 +26,14 @@ ms.locfileid: "49581126"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись)|Идентитюсерфлов. ReadWrite. ALL|
-|Делегированное (личная учетная запись Майкрософт)| Не поддерживается.|
-|Приложение|Идентитюсерфлов. ReadWrite. ALL|
+|Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
+|Приложение|IdentityUserFlow.ReadWrite.All|
 
-Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
+Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор внешнего пользовательского процесса идентификации
+* Администратор потока пользователей внешнего удостоверения
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,27 +52,28 @@ POST /identity/b2cUserFlows
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса предоставьте представление объекта [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md)в формате JSON.
+В теле запроса предостерегать представление [объекта b2cIdentityUserFlow](../resources/b2cidentityuserflow.md)в JSON.
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|id|String|Обязательный. Имя пользовательского потока. Имя будет предваряться `B2C_1` после создания.|
-|userFlowType|String|Обязательный. Тип создаваемого пользовательского процесса. Поддерживаемые значения для **userFlowType**:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
-|усерфловтипеверсион|С плавающей запятой|Обязательно. Версия пользовательского потока.|
-|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательный параметр. Поставщики удостоверений, которые необходимо включить в пользовательский блок.|
+|id|String|Обязательный. Имя пользовательского потока. Имя будет предварительно замещено после `B2C_1` создания.|
+|userFlowType|String|Обязательный. Тип создаемого пользовательского потока. Поддерживаемые значения для **userFlowType**:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
+|userFlowTypeVersion|С плавающей запятой|Обязательный. Версия пользовательского потока.|
+|isLanguageCustomizationEnabled|Boolean|Необязательный атрибут. Определяет, включена ли настройка языка в пользовательском потоке B2C Azure AD. Настройка языка не включена по умолчанию для потоков пользователей Azure AD B2C.|
+|defaultLanguageTag|String|Необязательный параметр.  Указывает язык по умолчанию для b2cIdentityUserFlow, который используется, когда в запросе не указан `ui_locale` тег. Это поле соответствует [стандарту RFC 5646.](https://tools.ietf.org/html/rfc5646)|
+|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательный атрибут. Поставщики удостоверений, которые необходимо включить в поток пользователей.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и заголовок Location с URI для объекта [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) , созданного для этого запроса, с `B2C_1` префиксом, добавленным к имени. В случае неудачи возвращается ошибка `4xx` с подробностями.
+В случае успеха этот метод возвращает код отклика и заголовщик Location с `201 Created` URI [объекту b2cIdentityUserFlow,](../resources/b2cidentityuserflow.md) созданному для этого запроса, с префиксом, добавленным к `B2C_1` имени. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-a-user-flow-with-the-default-values"></a>Пример 1: создание пользовательского процесса со значениями по умолчанию
+### <a name="example-1-create-a-user-flow-with-the-default-values"></a>Пример 1. Создание пользовательского потока со значениями по умолчанию
 
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -92,6 +93,7 @@ Content-length: 154
     "userFlowTypeVersion": 3
 }
 ```
+
 # <a name="c"></a>[C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-b2cuserflow-from-b2cuserflows-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -110,10 +112,9 @@ Content-length: 154
 
 ---
 
-
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -131,16 +132,17 @@ Content-type: application/json
 {
     "id": "B2C_1_Customer",
     "userFlowType": "signUpOrSignIn",
-    "userFlowTypeVersion": 3
+    "userFlowTypeVersion": 3,
+    "isLanguageCustomizationEnabled": false,
+    "defaultLanguageTag": "en"
 }
 ```
 
-### <a name="example-2-create-a-user-flow-with-the-default-values-and-an-identity-provider"></a>Пример 2: создание пользовательского процесса со значениями по умолчанию и поставщиком удостоверений
+### <a name="example-2-create-a-user-flow-with-the-default-values-and-an-identity-provider"></a>Пример 2. Создание пользовательского потока со значениями по умолчанию и поставщиком удостоверений
 
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
-
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -188,7 +190,7 @@ Content-length: 154
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -206,7 +208,9 @@ Content-type: application/json
 {
     "id": "B2C_1_Customer",
     "userFlowType": "signUpOrSignIn",
-    "userFlowTypeVersion": 3
+    "userFlowTypeVersion": 3,
+    "isLanguageCustomizationEnabled": false,
+    "defaultLanguageTag": "en"
 }
 ```
 
@@ -221,5 +225,3 @@ Content-type: application/json
     "Error: create_b2cUserFlow_from_b2cUserFlows_identityProvider/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '3'"
   ]
 }-->
-
-

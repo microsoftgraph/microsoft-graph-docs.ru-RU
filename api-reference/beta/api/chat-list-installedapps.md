@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 265feb9ed6fac643e2a39cc6be9454db3165830a
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 8d88ccaba481f0abe5f957ca65f8ee9c3c738879
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689870"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705928"
 ---
 # <a name="list-apps-in-chat"></a>Список приложений в каталоге
 
@@ -129,37 +129,20 @@ Content-type: application/json
 
 ### <a name="example-2-get-the-names-and-other-details-of-apps-installed-in-the-specified-chat"></a>Пример 2: Получение имен и других сведений о приложениях, установленных в указанном чате
 
+В следующем примере, если с экземпляром установленного приложения связан [бот](../resources/teamworkbot.md), сведения о нем также возвращаются.
+
 #### <a name="request"></a>Запрос
 
 
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_installed_apps_in_chat_expand"
 }
 -->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20%40thread.v2/installedApps
+```http
+GET https://graph.microsoft.com/beta/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20%40thread.v2/installedApps?$expand=teamsAppDefinition($expand=bot)
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-installed-apps-in-chat-expand-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-installed-apps-in-chat-expand-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-installed-apps-in-chat-expand-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-installed-apps-in-chat-expand-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Отклик
 
@@ -190,7 +173,10 @@ Content-type: application/json
                 "shortdescription": "Be more productive with Microsoft Flow",
                 "description": "Automate time-consuming and repetitive tasks by integrating your favorite apps and services with Microsoft Power Automate.",
                 "lastModifiedDateTime": null,
-                "createdBy": null
+                "createdBy": null,
+                "bot": {
+                    "id":"9a58a3ec-6b68-4818-ac11-844f1c326784"
+                }
             }
         },
         {
@@ -264,7 +250,7 @@ GET https://graph.microsoft.com/beta/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {

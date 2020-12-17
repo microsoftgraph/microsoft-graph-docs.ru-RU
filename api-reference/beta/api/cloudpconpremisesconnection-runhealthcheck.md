@@ -1,26 +1,26 @@
 ---
-title: CloudPcOnPremisesConnection-RunHealthChecks
-description: Выполнение проверок работоспособности для локального подключения к облачному компьютеру.
+title: 'CloudPcOnPremisesConnection: runHealthChecks'
+description: Запустите проверки состояния на локальном подключении к облачному компьютеру.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 949d9d01d7706f878b19702f811b4838f4e6bfe8
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: b207be1da6585adcabb76c8f51f048db1e159d77
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563298"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705846"
 ---
-# <a name="cloudpconpremisesconnection-runhealthchecks"></a>Клаудпконпремисесконнектион: Рунхеалсчеккс
+# <a name="cloudpconpremisesconnection-runhealthchecks"></a>CloudPcOnPremisesConnection: runHealthChecks
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Выполните проверки работоспособности для объекта [клаудпконпремисесконнектион](../resources/cloudpconpremisesconnection.md) .
+Запустите проверки состояния объекта [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
 
-При этом будет активирована новая проверка работоспособности для объекта [клаудпконпремисесконнектион](../resources/cloudpconpremisesconnection.md) и свойства Хеалсчеккстатус и [хеалсчеккстатусдетаилс](../resources/cloudpconpremisesconnectionstatusdetails.md) будут изменены при завершении проверки.
+Это инициирует новую проверку состояния для этого объекта [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) и изменит свойства healthCheckStatus и [healthCheckStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md) после завершения проверки.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -30,8 +30,8 @@ ms.locfileid: "49563298"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Клаудпк. ReadWrite. ALL|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос

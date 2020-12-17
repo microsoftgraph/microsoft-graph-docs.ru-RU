@@ -1,16 +1,16 @@
 ---
 title: Список b2cIdentityUserFlows
-description: Получение списка объектов b2cIdentityUserFlow.
+description: Получить список объектов b2cIdentityUserFlow.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c2e0d6fbf4e6cb48cf311b7426f09c854320f4cc
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 454422c09649b97ffbab96c313201ebef0cad23e
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953603"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705851"
 ---
 # <a name="list-b2cidentityuserflows"></a>Список b2cIdentityUserFlows
 
@@ -18,7 +18,7 @@ ms.locfileid: "48953603"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) .
+Получить список объектов [b2cIdentityUserFlow.](../resources/b2cidentityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,14 +26,14 @@ ms.locfileid: "48953603"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Идентитюсерфлов. Read. ALL, Идентитюсерфлов. ReadWrite. ALL|
+|Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|Идентитюсерфлов. Read. ALL, Идентитюсерфлов. ReadWrite. ALL|
+|Приложение|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
-Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
+Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор внешнего пользовательского процесса идентификации
+* Администратор потока пользователей внешнего удостоверения
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,7 +45,7 @@ GET /identity/b2cUserFlows
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Можно использовать `$expand` для расширения определенных свойств пользовательского пользовательского процесса, которые по умолчанию не развернуты.
+Можно использовать `$expand` для расширения определенных свойств пользовательского потока, которые не расширены по умолчанию.
 
 Дополнительные сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
@@ -61,11 +61,11 @@ GET /identity/b2cUserFlows
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md)  в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md)  в теле отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-all-b2cidentityuserflow-objects"></a>Пример 1: список всех объектов b2cIdentityUserFlow
+### <a name="example-1-list-all-b2cidentityuserflow-objects"></a>Пример 1. Список всех объектов b2cIdentityUserFlow
 
 #### <a name="request"></a>Запрос
 
@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows
 
 ---
 
-
 #### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
@@ -124,18 +123,22 @@ Content-type: application/json
       {
           "id": "B2C_1_CustomerSignUp",
           "userFlowType": "signUp",
-          "userFlowTypeVersion": 1
+          "userFlowTypeVersion": 1,
+          "isLanguageCustomizationEnabled": false,
+          "defaultLanguageTag": null
       },
       {
           "id": "B2C_1_CustomerSignIn",
           "userFlowType": "signIn",
-          "userFlowTypeVersion": 1
+          "userFlowTypeVersion": 1,
+          "isLanguageCustomizationEnabled": true,
+          "defaultLanguageTag": "en"
       },
     ]
 }
 ```
 
-### <a name="example-2-list-all-b2cidentityuserflow-objects-and-expand-identityproviders"></a>Пример 2: список всех объектов b2cIdentityUserFlow и разверните узел Идентитипровидерс
+### <a name="example-2-list-all-b2cidentityuserflow-objects-and-expand-identityproviders"></a>Пример 2. Список всех объектов b2cIdentityUserFlow и расширение identityProviders
 
 #### <a name="request"></a>Запрос
 
@@ -195,6 +198,8 @@ Content-type: application/json
           "id": "B2C_1_CustomerSignUp",
           "userFlowType": "signUp",
           "userFlowTypeVersion": 1,
+          "isLanguageCustomizationEnabled": false,
+          "defaultLanguageTag": null,
           "identityProviders": [
               {
                 "id": "Facebook-OAuth",
@@ -209,6 +214,8 @@ Content-type: application/json
           "id": "B2C_1_CustomerSignIn",
           "userFlowType": "signIn",
           "userFlowTypeVersion": 1,
+          "isLanguageCustomizationEnabled": true,
+          "defaultLanguageTag": "en",
           "identityProviders": [
               {
                 "id": "Facebook-OAuth",

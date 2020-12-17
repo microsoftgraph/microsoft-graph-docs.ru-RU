@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: c55f4b14d111c2910b8f0271b6f43e128c5511c8
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 87654da1f8e995d7f8c893ad2c0ff54f7e35b0a0
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49660102"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706012"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -334,6 +334,9 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 
 ### <a name="unable-to-filter-team-members-by-roles"></a>Не удается отфильтровать участников команды по ролям
 Запрос фильтра на получение участников команды на основе их ролей `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')` может не работать. Сервер может вернуть `BAD REQUEST`.
+
+### <a name="missing-tenantid-for-chat-members"></a>Отсутствие tenantId для участников чатов
+В некоторых случаях свойство `tenantId` для отдельных участников беседы может быть не заполнено в запросах `GET /chats/chat-id/members` или `GET /chats/chat-id/members/membership-id`.
 
 ## <a name="users"></a>Пользователи
 
