@@ -5,12 +5,12 @@ author: laujan
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 66a15a25f839092ff5d07f70aac735fa04fb362c
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: a25fe74057a7f224a947ef37956b58986a4601bf
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659501"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706065"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 
@@ -61,6 +61,7 @@ ms.locfileid: "49659501"
 |webUrl|String|Гиперссылка, ведущая к каналу в Microsoft Teams. Это URL-адрес, получаемый при щелчке правой кнопкой мыши по каналу в Microsoft Teams и выборе пункта "Получить ссылку на канал". Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. Только для чтения.|
 |membershipType|[channelMembershipType](../resources/enums.md#channelmembershiptype-values)|Тип канала. Можно настроить во время создания и нельзя изменить. Значение по умолчанию: standard.|
 |createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания канала.|
+|moderationSettings|[channelModerationSettings](../resources/channelmoderationsettings.md)|Настройки модерации канала, чтобы контролировать, кто может создавать новые сообщения и отвечать на сообщения в этом канале.|
 
 ### <a name="instance-attributes"></a>Атрибуты экземпляра
 
@@ -106,7 +107,9 @@ ms.locfileid: "49659501"
   "email": "string",
   "webUrl": "string",
   "membershipType": "channelMembershipType",
-  "createdDateTime": "string (timestamp)"
+  "createdDateTime": "string (timestamp)",
+  "moderationSettings": "channelModerationSettings"
+    
 }
 ```
 

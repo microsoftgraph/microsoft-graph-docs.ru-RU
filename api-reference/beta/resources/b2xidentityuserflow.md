@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: jkdouglas
-ms.openlocfilehash: e1051d60681e42012fd9df3fd8655a9e4cc745cd
-ms.sourcegitcommit: e68fdfb1124d16265deb8df268d4185d9deacac6
+ms.openlocfilehash: f20e02c5f75e4133beb40315bcc4b6fc3b0712c1
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580965"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705825"
 ---
 # <a name="b2xidentityuserflow-resource-type"></a>Тип ресурса b2xIdentityUserFlow
 
@@ -35,13 +35,14 @@ ms.locfileid: "49580965"
 |[Удаление поставщика удостоверений](../api/b2xidentityuserflow-delete-identityproviders.md)|Нет|Удаление поставщика удостоверений из пользовательского потока B2X.|
 |[Назначения атрибутов пользователя в списке](../api/b2xidentityuserflow-list-userattributeassignments.md)|Коллекция [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Извлечение всех назначений атрибутов пользователя в потоке пользователей B2X.|
 |[Создание назначения атрибута пользователя](../api/b2xidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Создание назначения атрибута пользователя в потоке пользователей B2X.|
+|[Перечисление языков](../api/b2xidentityuserflow-list-languages.md)|Коллекция [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Получение всех языков в пользовательском потоке B2X.|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
 |id|Строка|Имя пользовательского потока. Это обязательное значение, не изменяемое после создания. После создания перед именем будет добавлен префикс со значением `B2X_1_`.|
-|userFlowType|Строка|Тип пользовательского потока. Для пользовательских потоков самостоятельной регистрации значением может быть только `signUpOrSignIn`, которое нельзя изменить после создания.|
+|userFlowType|userFlowType|Тип пользовательского потока. Для пользовательских потоков самостоятельной регистрации значением может быть только `signUpOrSignIn`, которое нельзя изменить после создания.|
 |userFlowTypeVersion|Одинарное|Версия пользовательского потока. Для пользовательских потоков B2X всегда используется версия `1`.|
 
 ## <a name="relationships"></a>Связи
@@ -50,6 +51,7 @@ ms.locfileid: "49580965"
 |:---------------|:--------|:----------|
 |identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Поставщики удостоверений, включенные в пользовательский поток.|
 |userAttributeAssignments|Коллекция [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Назначения атрибутов пользователя, включенные в поток пользователей.|
+|languages|Коллекция [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Языки, поддерживаемые при настройке в пользовательском потоке. Настройка языка по умолчанию включена в пользовательском потоке B2X. Вы не можете создавать пользовательские языки в пользователских потоках B2X.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -68,6 +70,7 @@ ms.locfileid: "49580965"
     "userFlowType": "String",
     "userFlowTypeVersion": "Single",
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
-    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}]
+    "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
+    "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}]
 }
 ```

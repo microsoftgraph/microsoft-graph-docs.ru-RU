@@ -1,22 +1,22 @@
 ---
-title: Создание Ревиевсеткуери
-description: Используйте этот API для создания нового Ревиевсеткуери.
+title: Создание reviewSetQuery
+description: Используйте этот API для создания нового reviewSetQuery.
 localization_priority: Normal
 author: mahage-msft
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: efc55da7f12d280acfe5d966bd75318399ef2295
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2635c446c6e0332df780c71be61232bb364ad683
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48970647"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714104"
 ---
-# <a name="create-reviewsetquery"></a>Создание Ревиевсеткуери
+# <a name="create-reviewsetquery"></a>Создание reviewSetQuery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [ревиевсеткуери](../resources/reviewsetquery.md) .
+Создание объекта [reviewSetQuery.](../resources/reviewsetquery.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,8 +24,8 @@ ms.locfileid: "48970647"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | User.Read |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (рабочая или учебная учетная запись)     | User.Read |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,15 +44,15 @@ POST /compliance/ediscovery/cases/{id}/reviewSets/{id}/queries
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [ревиевсеткуери](../resources/reviewsetquery.md) в формате JSON. В следующей таблице перечислены обязательные свойства.
+В теле запроса укажу представление объекта [reviewSetQuery](../resources/reviewsetquery.md) в JSON. В следующей таблице перечислены необходимые свойства.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| displayName  | string      | Имя запроса на проверку набора |
+| displayName  | string      | Имя запроса набора для проверки |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [ревиевсеткуери](../resources/reviewsetquery.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и новый объект `201 Created` [reviewSetQuery](../resources/reviewsetquery.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -71,8 +71,8 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2eef613a-ca2d-
 Content-type: application/json
 
 {
-     "displayName" : "My Query 1",
-     "query": "(subject:\"Quarterly Financials\")"
+   "displayName":"My Query 1",
+   "query":"(subject:\"Quarterly Financials\")"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

@@ -6,12 +6,12 @@ title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 32ddc9de6b4eb9422d79f347367aec9816d84c64
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: 7810850e8968a8985cc611930088c5dbec817484
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582319"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714316"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
@@ -19,7 +19,9 @@ ms.locfileid: "48582319"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс **driveItem** представляет файл, папку или другой элемент, хранящийся на диске. Все объекты файловой системы в OneDrive и SharePoint возвращаются в виде ресурсов **driveItem**.
+Ресурс **driveItem** представляет файл, папку или другой элемент, хранящийся на диске.
+
+Все объекты файловой системы в OneDrive и SharePoint возвращаются в виде ресурсов **driveItem**. Элементы в библиотеках документов SharePoint могут быть представлены как [ресурсы listItem][] или **driveItem.**
 
 Обратиться к ресурсу **driveItem** можно двумя основными способами:
 
@@ -126,7 +128,7 @@ ms.locfileid: "48582319"
 | name                 | String             | Имя элемента (имя и расширение файла). Чтение и запись.
 | package              | [package][]        | В случае наличия указывает, что этот элемент — пакет, а не папка или файл. Пакеты обрабатываются как файлы в одном контексте, и как папки — в другом. Только для чтения.
 | parentReference      | [itemReference][]  | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.
-| pendingOperations    | [pendingOperations][] | Если указано, показывает, что одна или несколько операций, которые могут повлиять на состояние driveItem, ожидают завершения. Только для чтения.
+| pendingOperations    | [pendingOperations][] | Означает, что одна или несколько операций, которые могут повлиять на состояние driveItem, ожидают завершения. Только для чтения.
 | photo;                | [photo][]          | Метаданные фотографии, если в роли элемента выступает фотография. Только для чтения.
 | publication          | [publicationFacet][] | Предоставляет сведения о состоянии элемента (опубликован или получен для изменения) в расположениях, поддерживающих такие действия. Это свойство не возвращается по умолчанию. Только для чтения. |
 | remoteItem           | [remoteItem][]     | Данные удаленного элемента, если элемент используется совместно на диске, но не на том, к которому получен доступ в данный момент. Только для чтения.
@@ -195,8 +197,8 @@ URL-адрес будет доступен в течение короткого 
 | [Копирование элемента](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
 | [Поиск элементов](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
 | [Перечисление изменений на диске](../api/driveitem-delta.md)     | `GET /drive/root/delta`
-| [Подписаться на элемент](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
-| [Отписаться от элемента](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
+| [Элемент "Следовать"](../api/driveitem-follow.md)                | `POST /drives/{drive-id}/items/{item-id}/follow`
+| [Элемент unfollow](../api/driveitem-unfollow.md)            | `POST /drives/{drive-id}/items/{item-id}/unfollow`
 | [Перечисление эскизов](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
 | [Создание ссылки совместного доступа](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
 | [Добавление разрешений](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
@@ -206,7 +208,7 @@ URL-адрес будет доступен в течение короткого 
 | [Предварительный просмотр элемента][item-preview]                             | `POST /drive/items/{item-id}/preview`
 | [Регистрация](../api/driveitem-checkin.md)                  | `POST /drives/{driveId}/items/{itemId}/checkin`
 | [Выписка](../api/driveitem-checkout.md)                | `POST /drives/{driveId}/items/{itemId}/checkout`
-| [Отзыв разрешений](../api/permission-revokegrants.md)   | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`
+| [Отозовет предоставление](../api/permission-revokegrants.md)   | `PATCH /drive/items/{item-id}/permissions/{perm-id}/revokeGrants`
 
 [item-preview]: ../api/driveitem-preview.md
 [Получение аналитики]: ../api/itemanalytics-get.md

@@ -6,12 +6,12 @@ title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: e457840ee55206b47b035ae53127c5bf3e5130c6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 226213d1361c78f592f92ddfe9b6f52c4f3defd0
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48055262"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714318"
 ---
 # <a name="listitem-resource"></a>Ресурс ListItem
 
@@ -19,7 +19,10 @@ ms.locfileid: "48055262"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Этот ресурс представляет элемент объекта **[list][]** в SharePoint.
+Представляет элемент объекта [list][] в SharePoint.
+
+Все элементы в библиотеке документов SharePoint могут быть представлены как **ресурс listItem** или [driveItem.][]
+
 Значения столбцов в списке доступны через словарь `fieldValueSet`.
 
 ## <a name="tasks-on-a-listitem"></a>Задачи для ресурса listItem
@@ -31,8 +34,8 @@ ms.locfileid: "48055262"
 |:-------------------------------|:------------------------
 | [Получение][]                        | GET /items/{item-id}
 | [Получение значений столбцов][Получение]       | GET /items/{item-id}?expand=fields
-| [Получение аналитики][]              | ПОЛУЧЕНИЕ/итемс/{итем-ИД}/Аналитикс
-| [Получение действий по интервалу][] | ПОЛУЧЕНИЕ/Итемс/{итем-ИД}/жетактивитиесбинтервал
+| [Получение аналитики][]              | GET /items/{item-id}/analytics
+| [Получение действий по интервалу][] | GET /items/{item-id}/getActivitiesByInterval
 | [Создание][]                     | POST /items
 | [Удаление][]                     | DELETE /items/{item-id}
 | [Обновление][]                     | PATCH /items/{item-id}

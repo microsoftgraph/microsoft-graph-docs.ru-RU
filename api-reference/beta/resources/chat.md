@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 9f378eeb9191993e348c20d523b36160bd854717
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 2a5fefdff40c60951c07d26df2962fbba1249a16
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706059"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714321"
 ---
 # <a name="chat-resource-type"></a>Тип ресурса chat
 
@@ -29,9 +29,10 @@ ms.locfileid: "49706059"
 |[Список чатов](../api/chat-list.md) | [коллекция chat](chat.md) | Получите список чатов, в которые входит пользователь.| 
 |[Создание чата](../api/chat-post.md) | [chat](chat.md) | Создайте новый чат.| 
 |[Получение чата](../api/chat-get.md) | [chat](chat.md) | Чтение свойств и связей чата.| 
-|[Список участников чата](../api/chat-list-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка всех пользователей в чате.| 
-|[Добавление участника чата](../api/chat-post-members.md) | Заголовок Location | Добавление пользователя в чат.| 
-|[Получить участника чата](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Получение одного пользователя в чате.| 
+|[Перечисление участников чата](../api/chat-list-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка всех пользователей в чате.| 
+|[Добавление участника в чат](../api/chat-post-members.md) | Заголовок размещения | Добавление пользователя в чат.| 
+|[Получение участника чата](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Получение одного пользователя в чате.| 
+|[Удаление участника чата](../api/chat-delete-members.md)|Нет|Удаление пользователя из чата.|
 |[Список сообщений в чате](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в индивидуальном или групповом чате. | 
 |[Получение сообщения в чате](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Получение одного сообщения в чате. | 
 |[Общение в чате между пользователем и приложением](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Как получить один-на-один чат между пользователем и приложением |
@@ -53,7 +54,7 @@ ms.locfileid: "49706059"
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-| id| String| Уникальный идентификатор чата. Только для чтения.|
+| id| Строка| Уникальный идентификатор чата. Только для чтения.|
 | topic| String|  (Необязательно) Тема или тема чата. Доступно только для групповых чатов.|
 | createdDateTime| dateTimeOffset|  Дата и время создания чата. Только для чтения.|
 | lastUpdatedDateTime| dateTimeOffset|  Дата и время переименования чата или последнего изменения списка участников. Только для чтения.|
