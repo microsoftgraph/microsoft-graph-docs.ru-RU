@@ -5,12 +5,12 @@ localization_priority: Priority
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 3828871d1e5edaae067b7c9635908f061282ca1f
-ms.sourcegitcommit: ab578b062c534db57844490f35e802df8a8f4dfa
+ms.openlocfilehash: 7f19c5a2b711ab6c39069364c641066f1d9c6dbf
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753376"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49705970"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>Тип ресурса aadUserConversationMember
 
@@ -24,21 +24,32 @@ ms.locfileid: "48753376"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Перечисление участников](../api/conversationmember-list.md) | Коллекция [conversationmember](conversationmember.md) | Получение списка всех пользователей в чате или канале.|
-|[Получение участника](../api/conversationmember-get.md) | [conversationmember](conversationmember.md) | Получение одного пользователя в чате или канале.|
-|[Добавление участника](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Добавление участника в канал.|
-|[Обновление участника](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Обновление участника в канале.|
-|[Удаление участника](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Удаление участника из канала.|
+|[Список участников группы](../api/team-list-members.md)|Коллекция [conversationMember](../resources/conversationmember.md)|Получение списка участников группы.|
+|[Получение участника группы](../api/team-get-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение участника группы.|
+|[Добавление участника в команду](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Добавление нового участника в группу.|
+|[Массовое добавление участников в группу](../api/conversationmembers-add.md)|Коллекция [actionResultPart](../resources/actionresultpart.md)|Добавление нескольких участников в команду одним запросом.|
+|[Обновление роли участника команды](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Перевод пользователя из категории участников в категорию владельцев или наоборот, из категории владельцев в категорию обычных участников.|
+|[Удаление участника группы](../api/team-delete-members.md)|Нет|Удаление существующего участника из группы.|
+|[Перечисление участников канала](../api/channel-list-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка всех участников канала.|
+|[Получение участника канала](../api/channel-get-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение участника канала.|
+|[Создание участника канала](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Добавление участника в канал. Поддерживается только для `channel` с типом членства `private`.|
+|[Обновление роли участника канала](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Обновление свойства участника канала. Поддерживается только для канала с типом членства `private`.|
+|[Удаление участника канала](../api/channel-delete-members.md) | Нет | Удаление участника канала. Поддерживается, только если параметру `channelType` присвоено значение `private`.|
+|[Перечисление участников чата](../api/chat-list-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка всех участников чата.|
+|[Получение участника чата](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Получение участника чата.|
+|[Добавление участника в чат](../api/chat-post-members.md) | Заголовок размещения | Добавление участника в чат.| 
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|id|String| Только для чтения. Уникальный идентификатор пользователя.|
-|displayName| string | Отображаемое имя пользователя. |
-|roles| Коллекция строк | Роли этого пользователя. |
-|userId| строка | GUID пользователя. |
-|email| строка  | Электронный адрес пользователя. |
+|id| String | Только для чтения. Уникальный идентификатор пользователя.|
+|displayName| String | Отображаемое имя пользователя. |
+|roles| Набор строк | Роли этого пользователя. |
+|userId| String | GUID пользователя. |
+|email| String  | Электронный адрес пользователя. |
+|tenantId| string  | ИД клиента, которому принадлежит пользователь Azure AD. |
+|visibleHistoryStartDateTime| DateTimeOffset  | Метка времени, обозначающая, насколько глубоко участник беседы может видеть историю беседы. Это свойство можно задать только для участников чата.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -46,17 +57,24 @@ ms.locfileid: "48753376"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.aadUserConversationMember"
-}-->
-
-```json
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.aadUserConversationMember",
+  "baseType": "microsoft.graph.conversationMember",
+  "openType": false
+}
+-->
+``` json
 {
-  "id": "string (identifier)",
-  "displayName" : "string",
-  "roles" : ["string"],
-  "userId" : "string",
-  "email" : "string"
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",
+  "id": "String (identifier)",
+  "roles": [
+    "String"
+  ],
+  "displayName": "String",
+  "visibleHistoryStartDateTime": "String (timestamp)",
+  "userId": "String",
+  "email": "String",
+  "tenantId": "String"
 }
 ```
 
@@ -72,5 +90,3 @@ ms.locfileid: "48753376"
   "suppressions": []
 }
 -->
-
-
