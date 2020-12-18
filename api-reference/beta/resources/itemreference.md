@@ -5,19 +5,19 @@ ms.date: 09/10/2017
 title: ItemReference
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ''
-ms.openlocfilehash: a02a33bed5875e6e97f41e534274adb0355333fe
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.prod: sharepoint
+ms.openlocfilehash: 52cf21a4bb6d387da2c50a7ad28ab49c1b9e70ea
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48039337"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714335"
 ---
 # <a name="itemreference-resource-type"></a>Тип ресурса ItemReference
 
 Пространство имен: microsoft.graph
 
-Ресурс **ItemReference** предоставляет сведения, необходимые для обращения к ресурсу [DriveItem](driveitem.md) через API.
+Ресурс **ItemReference предоставляет** сведения, необходимые для обращения [к ресурсу driveItem](driveitem.md) через API.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -37,7 +37,8 @@ ms.locfileid: "48039337"
   "name": "string",
   "path": "string",
   "shareId": "string",
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" }
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+  "siteId": "string"
 }
 ```
 
@@ -47,15 +48,17 @@ ms.locfileid: "48039337"
 |:--------------|:------------------|:-----------------------------------------
 | driveId       | String            | Уникальный идентификатор экземпляра диска, содержащего элемент. Только для чтения.
 | driveType     | Строка            | Служит для идентификации типа для объекта drive. Сведения о возможных значениях см. в статье, посвященной ресурсу [drive][].
-| id            | String            | Уникальный идентификатор элемента на диске. Только для чтения.
+| id            | Строка            | Уникальный идентификатор элемента на диске. Только для чтения.
 | name          | String            | Имя элемента, на который направлена ссылка. Только для чтения.
 | path          | String            | Путь, по которому можно перейти к элементу. Только для чтения.
-| shareId       | String            | Уникальный идентификатор общего ресурса, доступ к которому можно получить с помощью API [Shares][].
+| shareId       | Строка            | Уникальный идентификатор общего ресурса, доступ к которому можно получить с помощью API [Shares][].
 | sharepointIds | [sharepointIds][] | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
+| siteId        | Строка            | Для OneDrive для бизнеса и SharePoint это свойство представляет собой ИД сайта, который содержит родительную библиотеку документов ресурса driveItem. Это значение такое же, как свойство id этого [ресурса][] сайта. Это [непрозрачной строки, которая состоит из трех идентификаторов](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true#id-property) сайта. <br>В OneDrive это свойство не заполняется.
 
 [drive]: ../resources/drive.md
 [sharepointIds]: ../resources/sharepointids.md
 [Shares]: ../api/shares-get.md
+[site]: ../resources/site.md
 
 ## <a name="remarks"></a>Замечания
 

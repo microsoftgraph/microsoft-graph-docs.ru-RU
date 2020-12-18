@@ -1,24 +1,24 @@
 ---
-title: 'Виртуалендпоинт: getEffectivePermissions'
-description: '**GetEffectivePermissions — это функция, которая ретривес действующие разрешения пользователя, прошедшего проверку подлинности, что позволяет скрыть или отключить контент, к которому у текущего пользователя нет доступа.**'
+title: 'virtualEndpoint: getEffectivePermissions'
+description: '**GetEffectivePermissions — это функция, которая получает эффективные разрешения текущего пользователя, который проходит проверку подлинности, что помогает пользовательскому интерфейсу скрывать или отключать содержимое, к которому у текущего пользователя нет доступа.**'
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: df6d0ffbdffdf01c30f5dda2220cc96392b0f6ed
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: e87deb3bafbcd1ac28a1d95209f62017d7593e6c
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563914"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714349"
 ---
-# <a name="virtualendpoint-geteffectivepermissions"></a>Виртуалендпоинт: getEffectivePermissions
+# <a name="virtualendpoint-geteffectivepermissions"></a>virtualEndpoint: getEffectivePermissions
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Просмотр действующих разрешений текущего пользователя, прошедшего проверку подлинности. GetEffectivePermissions — это функция, которая ретривес действующие разрешения пользователя, прошедшего проверку подлинности, что позволяет скрыть или отключить контент, к которому у текущего пользователя нет доступа.
+Просмотр эффективных разрешений для пользователя, который в настоящее время проходит проверку подлинности. GetEffectivePermissions — это функция, которая получает эффективные разрешения текущего пользователя, который проходит проверку подлинности, что помогает пользовательскому интерфейсу скрывать или отключать содержимое, к которому у текущего пользователя нет доступа.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -28,7 +28,7 @@ ms.locfileid: "49563914"
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Клаудпк. ReadWrite. ALL, Клаудпк. Read. ALL|
+|Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All, CloudPC.Read.All|
 |Делегированное (личная учетная запись Майкрософт) | Не поддерживается.|
 |Для приложений| Не поддерживается.|
 
@@ -55,7 +55,7 @@ GET /deviceManagement/virtualEndpoint/getEffectivePermissions
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении эта функция возвращает код отклика `200 OK` и коллекцию String в теле отклика. Если у пользователя есть полные разрешения, ответ — `["*"]` .
+При успешном выполнении эта функция возвращает код отклика `200 OK` и коллекцию String в теле отклика. Если у пользователя есть полные разрешения, ответ будет `["*"]` .
 
 ## <a name="examples"></a>Примеры
 
@@ -101,13 +101,13 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/getEffecti
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
-
 Content-Type: application/json
+
 {
-  "value": [
-    "Microsoft.CloudPC/CloudPCs/Read"
-  ]
+   "value":[
+      "Microsoft.CloudPC/CloudPCs/Read"
+   ]
 }
 ```
