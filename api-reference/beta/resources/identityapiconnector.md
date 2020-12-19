@@ -1,0 +1,72 @@
+---
+title: Тип ресурса identityApiConnector
+description: Представляет соединители API в клиенте Azure Active Directory.
+author: nickgmicrosoft
+localization_priority: Normal
+ms.prod: microsoft-identity-platform
+doc_type: resourcePageType
+ms.openlocfilehash: 6098b146b5117332df36b76adcbce95698d6041d
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720460"
+---
+# <a name="identityapiconnector-resource-type"></a><span data-ttu-id="a7387-103">Тип ресурса identityApiConnector</span><span class="sxs-lookup"><span data-stu-id="a7387-103">identityApiConnector resource type</span></span>
+
+<span data-ttu-id="a7387-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="a7387-104">Namespace: microsoft.graph</span></span>
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+<span data-ttu-id="a7387-105">Представляет соединители API в клиентах Azure Active Directory (Azure AD) и Azure AD B2C.</span><span class="sxs-lookup"><span data-stu-id="a7387-105">Represents API connectors in an Azure Active Directory (Azure AD) and Azure AD B2C tenants.</span></span>
+
+<span data-ttu-id="a7387-106">Соединитель API, используемый при самостоятельной регистрации внешних удостоверений Azure AD и потоках регистрации пользователей Azure AD B2C, позволяет вызывать API во время выполнения пользовательского потока.</span><span class="sxs-lookup"><span data-stu-id="a7387-106">An API connector used in your Azure AD External Identities self-service sign-up and Azure AD B2C sign-up user flows allows you to call an API during the execution of the user flow.</span></span> <span data-ttu-id="a7387-107">Соединителение API предоставляет сведения, необходимые для вызова API, включая URL-адрес конечной точки и проверку подлинности.</span><span class="sxs-lookup"><span data-stu-id="a7387-107">An API connector provides the information needed to call an API including an endpoint URL and authentication.</span></span> <span data-ttu-id="a7387-108">Соединители API можно использовать на определенном этапе пользовательского потока, чтобы повлиять на выполнение пользовательского потока.</span><span class="sxs-lookup"><span data-stu-id="a7387-108">An API connector can be used at a specific step in a user flow to affect the execution of the user flow.</span></span> <span data-ttu-id="a7387-109">Например, ответ API может блокировать регистрацию пользователя, показывать ошибку проверки ввода или переописывать собранные пользователем атрибуты.</span><span class="sxs-lookup"><span data-stu-id="a7387-109">For example, the API response can block a user from signing up, show an input validation error, or overwrite user collected attributes.</span></span>
+
+<span data-ttu-id="a7387-110">Используйте API [b2xIdentityUserFlow](b2xidentityuserflow.md) для использования соединителю API из пользовательского потока самостоятельной регистрации внешних удостоверений.</span><span class="sxs-lookup"><span data-stu-id="a7387-110">Use the [b2xIdentityUserFlow](b2xidentityuserflow.md) API to use an API connector from an External Identities self-service sign-up user flow.</span></span>
+
+## <a name="methods"></a><span data-ttu-id="a7387-111">Методы</span><span class="sxs-lookup"><span data-stu-id="a7387-111">Methods</span></span>
+
+|<span data-ttu-id="a7387-112">Метод</span><span class="sxs-lookup"><span data-stu-id="a7387-112">Method</span></span>|<span data-ttu-id="a7387-113">Тип возвращаемых данных</span><span class="sxs-lookup"><span data-stu-id="a7387-113">Return type</span></span>|<span data-ttu-id="a7387-114">Описание</span><span class="sxs-lookup"><span data-stu-id="a7387-114">Description</span></span>|
+|:---|:---|:---|
+|[<span data-ttu-id="a7387-115">Список</span><span class="sxs-lookup"><span data-stu-id="a7387-115">List</span></span>](../api/identityapiconnector-list.md)|<span data-ttu-id="a7387-116">[Коллекция identityApiConnector](identityapiconnector.md)</span><span class="sxs-lookup"><span data-stu-id="a7387-116">[identityApiConnector](identityapiconnector.md) collection</span></span>| <span data-ttu-id="a7387-117">Получить список соединителов API</span><span class="sxs-lookup"><span data-stu-id="a7387-117">Get a list of API connectors</span></span>|
+|<span data-ttu-id="a7387-118">[создание](../api/identityapiconnector-create.md);</span><span class="sxs-lookup"><span data-stu-id="a7387-118">[Create](../api/identityapiconnector-create.md)</span></span>|[<span data-ttu-id="a7387-119">identityApiConnector</span><span class="sxs-lookup"><span data-stu-id="a7387-119">identityApiConnector</span></span>](identityapiconnector.md)|<span data-ttu-id="a7387-120">Создайте соединители API.</span><span class="sxs-lookup"><span data-stu-id="a7387-120">Create a new API connector.</span></span> |
+|<span data-ttu-id="a7387-121">[получение](../api/identityapiconnector-get.md);</span><span class="sxs-lookup"><span data-stu-id="a7387-121">[Get](../api/identityapiconnector-get.md)</span></span>|[<span data-ttu-id="a7387-122">identityApiConnector</span><span class="sxs-lookup"><span data-stu-id="a7387-122">identityApiConnector</span></span>](identityapiconnector.md)|<span data-ttu-id="a7387-123">Чтение свойств объекта [identityApiConnector.](../resources/identityapiconnector.md)</span><span class="sxs-lookup"><span data-stu-id="a7387-123">Read the properties of an [identityApiConnector](../resources/identityapiconnector.md) object.</span></span>|
+|<span data-ttu-id="a7387-124">[обновление](../api/identityapiconnector-update.md).</span><span class="sxs-lookup"><span data-stu-id="a7387-124">[Update](../api/identityapiconnector-update.md)</span></span>|[<span data-ttu-id="a7387-125">identityApiConnector</span><span class="sxs-lookup"><span data-stu-id="a7387-125">identityApiConnector</span></span>](identityapiconnector.md)|<span data-ttu-id="a7387-126">Обновление свойств соединители API.</span><span class="sxs-lookup"><span data-stu-id="a7387-126">Update the properties of an API connector.</span></span>|
+|<span data-ttu-id="a7387-127">[удаление](../api/identityapiconnector-delete.md);</span><span class="sxs-lookup"><span data-stu-id="a7387-127">[Delete](../api/identityapiconnector-delete.md)</span></span>|<span data-ttu-id="a7387-128">Нет</span><span class="sxs-lookup"><span data-stu-id="a7387-128">None</span></span>|<span data-ttu-id="a7387-129">Удаление соединители API.</span><span class="sxs-lookup"><span data-stu-id="a7387-129">Delete an API connector.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="a7387-130">Свойства</span><span class="sxs-lookup"><span data-stu-id="a7387-130">Properties</span></span>
+
+|<span data-ttu-id="a7387-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="a7387-131">Property</span></span>|<span data-ttu-id="a7387-132">Тип</span><span class="sxs-lookup"><span data-stu-id="a7387-132">Type</span></span>|<span data-ttu-id="a7387-133">Описание</span><span class="sxs-lookup"><span data-stu-id="a7387-133">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="a7387-134">id</span><span class="sxs-lookup"><span data-stu-id="a7387-134">id</span></span>|<span data-ttu-id="a7387-135">String</span><span class="sxs-lookup"><span data-stu-id="a7387-135">String</span></span>|<span data-ttu-id="a7387-136">Случайным образом созданный ИД соединителю API.</span><span class="sxs-lookup"><span data-stu-id="a7387-136">The randomly generated ID of the API connector.</span></span> |
+|<span data-ttu-id="a7387-137">displayName</span><span class="sxs-lookup"><span data-stu-id="a7387-137">displayName</span></span>|<span data-ttu-id="a7387-138">String</span><span class="sxs-lookup"><span data-stu-id="a7387-138">String</span></span>| <span data-ttu-id="a7387-139">Имя соединители API.</span><span class="sxs-lookup"><span data-stu-id="a7387-139">The name of the API connector.</span></span> |
+|<span data-ttu-id="a7387-140">targetUrl</span><span class="sxs-lookup"><span data-stu-id="a7387-140">targetUrl</span></span>|<span data-ttu-id="a7387-141">String</span><span class="sxs-lookup"><span data-stu-id="a7387-141">String</span></span>| <span data-ttu-id="a7387-142">URL-адрес конечной точки API для вызова.</span><span class="sxs-lookup"><span data-stu-id="a7387-142">The URL of the API endpoint to call.</span></span> |
+|<span data-ttu-id="a7387-143">authenticationConfiguration</span><span class="sxs-lookup"><span data-stu-id="a7387-143">authenticationConfiguration</span></span>|[<span data-ttu-id="a7387-144">apiAuthenticationConfigurationBase</span><span class="sxs-lookup"><span data-stu-id="a7387-144">apiAuthenticationConfigurationBase</span></span>](../resources/apiauthenticationconfigurationbase.md)|<span data-ttu-id="a7387-145">Объект, который описывает сведения о конфигурации проверки подлинности для вызова API.</span><span class="sxs-lookup"><span data-stu-id="a7387-145">The object which describes the authentication configuration details for calling the API.</span></span> <span data-ttu-id="a7387-146">В [настоящее время поддерживается](basicauthentication.md) только базовая проверка подлинности.</span><span class="sxs-lookup"><span data-stu-id="a7387-146">Only [Basic authentication](basicauthentication.md) is supported at this time.</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="a7387-147">Отношения</span><span class="sxs-lookup"><span data-stu-id="a7387-147">Relationships</span></span>
+
+<span data-ttu-id="a7387-148">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="a7387-148">None.</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="a7387-149">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="a7387-149">JSON representation</span></span>
+
+<span data-ttu-id="a7387-150">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a7387-150">The following is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.identityApiConnector",
+  "baseType": "",
+  "openType": false
+}
+-->
+
+``` json
+{
+  "@odata.type": "#microsoft.graph.identityApiConnector",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "targetUrl": "String",
+  "authenticationConfiguration": {
+    "@odata.type": "microsoft.graph.apiAuthenticationConfigurationBase"
+  }
+}
+```
