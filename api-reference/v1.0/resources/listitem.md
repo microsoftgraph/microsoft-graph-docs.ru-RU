@@ -1,23 +1,25 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: Ресурс listItem
 description: Представляет элемент объекта list в SharePoint.
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 276a8f61cc12cb2860bab0025d430f039b96b89a
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7e9e7b00ee87127b7844d2d7208d63c8e4fb6af5
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48025216"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714118"
 ---
 # <a name="listitem-resource"></a>Ресурс listItem
 
 Пространство имен: microsoft.graph
 
-Представляет элемент объекта **[list][]** в SharePoint.
+Представляет элемент объекта [list][] в SharePoint.
+
+Все элементы в библиотеке документов SharePoint могут быть представлены как ресурс **listItem** или [driveItem][].
+
 Значения столбцов в списке доступны через словарь `fieldValueSet`.
 
 ## <a name="methods"></a>Методы
