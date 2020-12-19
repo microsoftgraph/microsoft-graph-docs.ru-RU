@@ -1,23 +1,24 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: Тип ресурса driveItem
 description: Элемент — это основная модель данных в API OneDrive. Любое содержимое является элементом.
 localization_priority: Priority
 ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: 22b3d62ea83aa9e1b91f6be1f181bbe575341138
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: a4c05dece6a73977137240d63368d30fe94712d9
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581990"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714328"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
 Пространство имен: microsoft.graph
 
-Ресурс **driveItem** представляет файл, папку или другой элемент, хранящийся на диске. Все объекты файловой системы в OneDrive и SharePoint возвращаются в виде ресурсов **driveItem**.
+Ресурс **driveItem** представляет файл, папку или другой элемент, хранящийся на диске.
+
+Все объекты файловой системы в OneDrive и SharePoint возвращаются в виде ресурсов **driveItem**. Элементы в библиотеках документов SharePoint могут быть представлены как ресурсы [listItem][] или **driveItem**.
 
 Обратиться к ресурсу **driveItem** можно двумя основными способами:
 
@@ -244,7 +245,7 @@ URL-адрес будет доступен в течение короткого 
 [video]: video.md
 [workbook]: workbook.md
 [user]: /graph/api/resources/users
-[publicationFacet]: publicationfacet.md
+[publicationFacet]: publicationfacet.md.
 
 [DriveItemVersion]: driveitemversion.md
 [permission]: permission.md
