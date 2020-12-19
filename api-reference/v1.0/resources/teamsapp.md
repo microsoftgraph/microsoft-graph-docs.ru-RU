@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 88b2c5d87fd5b084495e970320770c49a6f91f07
-ms.sourcegitcommit: 59e79cf2693cbb550da3e61eb4f68d9e0f57faf6
+ms.openlocfilehash: 55fd373fd59f79abdfca8b3e066ca496daf8770b
+ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49607044"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49706005"
 ---
 # <a name="teamsapp-resource-type"></a>Тип ресурса teamsApp
 
@@ -24,10 +24,10 @@ ms.locfileid: "49607044"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список опубликованных приложений](../api/appcatalogs-list-teamsapps.md) | Коллекция [teamsApp](teamsapp.md) | Список опубликованных приложений из каталога приложений Microsoft Teams.|
-|[Публикация приложения](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Публикация приложения в каталоге приложений организации.|
-|[Обновление опубликованного приложения](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Обновление опубликованного приложения в каталоге приложений организации.|
-|[Удаление опубликованного приложения](../api/teamsapp-delete.md) | Нет | Удаление опубликованного приложения из каталога приложений организации.|
+|[Список приложений в каталоге](../api/appcatalogs-list-teamsapps.md) | Коллекция [teamsApp](teamsapp.md) | Перечисление всех приложений в каталоге приложений Microsoft Teams.|
+|[Отправка приложения в каталог](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Отправка приложения в каталог приложений организации.|
+|[Обновление приложения в каталоге](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Обновление приложения в каталоге приложений организации.|
+|[Удаление приложения из каталога](../api/teamsapp-delete.md) | Нет | Удаление приложения из каталога приложений организации.|
 
 ## <a name="properties"></a>Свойства
 
