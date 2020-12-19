@@ -1,24 +1,24 @@
 ---
-title: Создание b2xIdentityUserFlow
-description: Создание нового объекта b2xIdentityUserFlow.
+title: Создание объекта b2xIdentityUserFlow
+description: Создание объекта b2xIdentityUserFlow.
 localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c178fef7450121574e15fb34245a8843fc120e97
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 47e679cd9684ead072bdd25cc807fbdc42b36e48
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48953515"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719967"
 ---
-# <a name="create-b2xidentityuserflow"></a>Создание b2xIdentityUserFlow
+# <a name="create-b2xidentityuserflow"></a>Создание объекта b2xIdentityUserFlow
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) .
+Создание объекта [b2xIdentityUserFlow.](../resources/b2xidentityuserflow.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,13 +27,13 @@ ms.locfileid: "48953515"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
-|Для приложений|IdentityUserFlow.ReadWrite.All|
+|Делегированное (личная учетная запись Майкрософт)| Не поддерживается.|
+|Приложение|IdentityUserFlow.ReadWrite.All|
 
-Рабочая или учебная учетная запись должна принадлежать одной из следующих ролей:
+Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
 
 * Глобальный администратор
-* Администратор внешнего пользовательского процесса идентификации
+* Администратор потока пользователей внешнего удостоверения
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,22 +52,23 @@ POST /identity/b2xUserFlow
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса предоставьте представление объекта [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)в формате JSON.
+В теле запроса предостерегать представление [объекта b2xIdentityUserFlow](../resources/b2xidentityuserflow.md)в JSON.
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|id|String|Обязательный. Имя пользовательского потока. Имя будет предваряться `B2X_1` после создания.|
-|userFlowType|String|Обязательный. Тип создаваемого пользовательского процесса. Это значение всегда будет равно `signUpOrSignIn` .|
-|userFlowTypeVersion|С плавающей запятой|Обязательный. Версия пользовательского потока. Это значение всегда равно 1.|
-|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательное свойство. Поставщики удостоверений, которые необходимо включить в пользовательский блок.|
+|id|String|Обязательный. Имя пользовательского потока. Имя будет предварительно замещено после `B2X_1` создания.|
+|userFlowType|String|Обязательный. Тип создаемого пользовательского потока. Это значение всегда будет `signUpOrSignIn` .|
+|userFlowTypeVersion|С плавающей запятой|Обязательный. Версия пользовательского потока. Это значение всегда будет 1.|
+|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательное свойство. Поставщики удостоверений, которые необходимо включить в поток пользователей.|
+|apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Необязательное свойство. Конфигурация для включения соединители API для использования в рамках пользовательского потока.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и заголовок Location с URI для объекта [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) , созданного для этого запроса, с `B2X_1` префиксом, добавленным к имени. В случае неудачи возвращается ошибка `4xx` с подробностями.
+В случае успеха этот метод возвращает код отклика и заголовщик Location с `201 Created` URI [объекту b2xIdentityUserFlow,](../resources/b2xidentityuserflow.md) созданному для этого запроса, с префиксом, добавленным к `B2X_1` имени. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-a-user-flow-with-the-default-values"></a>Пример 1: создание пользовательского процесса со значениями по умолчанию
+### <a name="example-1-create-a-user-flow-with-the-default-values"></a>Пример 1. Создание пользовательского потока со значениями по умолчанию
 
 #### <a name="request"></a>Запрос
 
@@ -113,7 +114,7 @@ Content-length: 154
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -135,7 +136,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-create-a-user-flow-with-the-default-values-and-an-identity-provider"></a>Пример 2: создание пользовательского процесса со значениями по умолчанию и поставщиком удостоверений
+### <a name="example-2-create-a-user-flow-with-the-default-values-and-an-identity-provider"></a>Пример 2. Создание пользовательского потока со значениями по умолчанию и поставщиком удостоверений
 
 #### <a name="request"></a>Запрос
 
@@ -188,7 +189,7 @@ Content-length: 154
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -210,6 +211,66 @@ Content-type: application/json
 }
 ```
 
+### <a name="example-3-create-a-user-flow-with-the-default-values-and-configuration-for-api-connectors"></a>Пример 3. Создание пользовательского потока со значениями по умолчанию и конфигурацией для соединителов API
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_b2xuserflow_from_b2xuserflows_apiconnectors"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/identity/b2xUserFlows
+Content-type: application/json
+Content-length: 154
+
+{
+    "id": "UserFlowWithAPIConnector",
+    "userFlowType": "signUpOrSignIn",
+    "userFlowTypeVersion": 1,
+    "apiConnectorConfiguration":{
+        "postFederationSignup":{
+            "@odata.id": "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"
+        },
+        "postAttributeCollection":{
+            "@odata.id": "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"
+        }
+    }
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+**Примечание.** Свойство всегда возвращает значение `apiConnectorConfiguration` {} '. Чтобы увидеть полное значение свойств навигации, [используйте](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md) этот API.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.b2xIdentityUserFlow"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Partner
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2xUserFlows/$entity",
+    "id": "B2X_1_UserFlowWithAPIConnector",
+    "userFlowType": "signUpOrSignIn",
+    "userFlowTypeVersion": 1,
+    "apiConnectorConfiguration": {}
+}
+```
+
 <!-- {
   "type": "#page.annotation",
   "description": "Create b2xUserFlow",
@@ -218,8 +279,7 @@ Content-type: application/json
   "tocPath": "",
   "suppressions": [
     "Error: create_b2xUserFlow_from_b2xUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
-    "Error: create_b2xUserFlow_from_b2xUserFlows_identityProviders/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
+    "Error: create_b2xUserFlow_from_b2xUserFlows_identityProviders/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
+    "Error: create_b2xUserFlow_from_b2xuserflows_apiconnectors/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->
-
-

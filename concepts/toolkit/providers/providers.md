@@ -3,12 +3,12 @@ title: Поставщики набор средств Microsoft Graph
 description: Поставщики набор средств Microsoft Graph обеспечивают проверку подлинности и доступ к Microsoft Graph для всех компонентов.
 localization_priority: Normal
 author: nmetulev
-ms.openlocfilehash: a4cd1b58bb29e42ecb0283709e71a3ce3a7e86d7
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: e130e6d56123f847d9c92e16de0e0449c208c7b6
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658261"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720023"
 ---
 # <a name="microsoft-graph-toolkit-providers"></a>Поставщики набор средств Microsoft Graph
 
@@ -55,7 +55,7 @@ Providers.globalProvider = new MsalProvider({
 
 ## <a name="permission-scopes"></a>Области разрешений
 
-Мы рекомендуем добавить все области разрешений, необходимые приложению, к атрибуту или свойству при инициализации поставщика (это не относится к поставщику `scopes` [SharePoint).](../providers/sharepoint.md) Это необязательный вариант, но позволит улучшить пользовательский интерфейс, выведя пользователю единый экран согласия со сводным списком разрешений, запрашиваемого всеми компонентами приложения, вместо того чтобы представлять отдельные экраны для каждого компонента. В следующих примерах покажите, как это сделать с помощью MsalProvider.
+Мы рекомендуем добавить все области разрешений, необходимые приложению, к атрибуту или свойству при инициализации поставщика (это не относится к поставщику `scopes` [SharePoint).](../providers/sharepoint.md) Это необязательный вариант, но позволит улучшить пользовательский интерфейс, выведя пользователю единый экран согласия с агрегированной списком разрешений, запрашиваемой всеми компонентами приложения, вместо того чтобы представлять отдельные экраны для каждого компонента. В следующих примерах покажите, как это сделать с помощью MsalProvider.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
@@ -64,7 +64,7 @@ Providers.globalProvider = new MsalProvider({
                    ></mgt-msal-provider>
 ```
 
-Если вы инициализируете поставщика в коде, в свойстве предозначим области разрешений в `scopes` массиве.
+Если инициализация поставщика инициализируются в коде, в свойстве необходимо предоставить области разрешений в `scopes` массиве.
 
 ```js
 import {Providers, MsalProvider } from "@microsoft/mgt";
@@ -129,7 +129,7 @@ import { Providers, ProviderState } from "@microsoft/mgt";
 //assuming a provider has already been initialized
 
 if (Providers.globalProvider.state === ProviderState.SignedIn) {
-  const token = Provider.globalProvider.getAccessToken({scopes: 'User.Read']})
+  const token = Providers.globalProvider.getAccessToken({scopes: ['User.Read']})
 }
 ```
 

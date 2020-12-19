@@ -1,21 +1,21 @@
 ---
-title: 'directoryObject: Жетаваилабликстенсионпропертиес'
+title: 'directoryObject: getAvailableExtensionProperties'
 description: Получение полного или отфильтрованного списка свойств расширения каталога, которые зарегистрированы в каталоге.
 author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a15c830465a4328a178fec497e4ad115b0b0459f
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7c37114cc7db3224eca3722e00d6334523df6226
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48052469"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720030"
 ---
-# <a name="directoryobject-getavailableextensionproperties"></a>directoryObject: Жетаваилабликстенсионпропертиес
+# <a name="directoryobject-getavailableextensionproperties"></a>directoryObject: getAvailableExtensionProperties
 Пространство имен: microsoft.graph
 
-Возвращает все или отфильтрованный список свойств расширения каталога, зарегистрированных в каталоге. Следующие объекты поддерживают свойства расширения: **User**, **Group**, **Organization**, **Device**, **Application**и **servicePrincipal**.
+Возвращает все или отфильтрованный список свойств расширения каталога, зарегистрированных в каталоге. Следующие сущности поддерживают свойства расширения: **user,** **group,** **organization,** **device,** **application** и **servicePrincipal.**
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -23,7 +23,7 @@ ms.locfileid: "48052469"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)| Directory.Read.All |
-|Делегированные (личная учетная запись Майкрософт)| Не поддерживается. |
+|Делегированное (личная учетная запись Майкрософт)| Не поддерживается. |
 |Для приложений| Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,16 +45,16 @@ POST /directoryObjects/getAvailableExtensionProperties
 ## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
-В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
+В следующей таблице указаны параметры, которые можно использовать с этим действием.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|иссинцедфромонпремисес|Boolean|`true` чтобы указать, что необходимо вернуть только свойства расширения, синхронизированные из локального каталога; `false` чтобы указать, что необходимо вернуть только свойства расширения, которые не синхронизируются из локального каталога. Если параметр не задан, возвращаются все свойства расширения (синхронизированные и несинхронизированные).|
+|isSyncedFromOnPremises|Boolean|`true` чтобы указать, что должны возвращаться только свойства расширения, синхронизированные из локального каталога; чтобы указать, что должны быть возвращены только свойства расширения, которые не синхронизируются из `false` локального каталога. Если этот параметр опущен, возвращаются все свойства расширения (как синхронизированные, так и не синхронизированные).|
 
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении это действие возвращает `200 OK` код отклика и коллекцию [екстенсионпроперти](../resources/extensionproperty.md) в тексте отклика.
+В случае успеха это действие возвращает код отклика и коллекцию `200 OK` [extensionProperty](../resources/extensionproperty.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -68,7 +68,6 @@ POST /directoryObjects/getAvailableExtensionProperties
 -->
 ``` http
 POST https://graph.microsoft.com/v1.0/directoryObjects/getAvailableExtensionProperties
-
 Content-Type: application/json
 Content-length: 43
 

@@ -1,28 +1,28 @@
 ---
-title: 'Call: Transfer'
-description: Передача активного однорангового звонка.
+title: 'call: transfer'
+description: Переводить активный одноранговой звонок.
 author: ananmishr
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: 3c4fc0e6b104e1888199f8323b787333b57b75d8
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7c23ea17f1bc68b88490d8a54a68e50fe0604a78
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47987290"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719778"
 ---
-# <a name="call-transfer"></a>Call: Transfer
+# <a name="call-transfer"></a>call: transfer
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Передача активного однорангового звонка.
+Переводить активный одноранговой звонок.
 
-> **Примечание:** Поддерживается только в том случае, если целевой объект для передачи и передачи представляет пользователей Microsoft Teams, относящихся к одному и тому же клиенту. Передача на номер PSTN не поддерживается. Чтобы узнать больше о переводу, переводу и целевом объекте для передачи, ознакомьтесь со статьей [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2).
+> **Примечание.** Это поддерживается, только если и переносимый, и целевой объект переноса являются пользователями Microsoft Teams, принадлежащими одному и тем же арендатору. Передача на номер STN поддерживается только для экземпляра приложения. Дополнительные информацию о переносимом, переносимом и целевом объекте см. в [RFC 5589.](https://tools.ietf.org/html/rfc5589#section-2)
 
-Консультативногоная передача означает, что получатель может уведомить человека, которому он хочет передать вызов (передается), перед переносом. Это в противоположность передаче вызова напрямую.
+Перенабор при консультации означает, что перед перенабором перед перенабором он может сообщить о перенаборе. Это не касается прямой передачи вызова.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,7 +31,7 @@ ms.locfileid: "47987290"
 | :-------------- | :-------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                |
-| Для приложений     | Calls.Initiate.All                                  |
+| Приложение     | Calls.Initiate.All                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -52,18 +52,18 @@ POST /communications/calls/{id}/transfer
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|трансфертаржет|[инвитатионпартиЦипантинфо](../resources/invitationparticipantinfo.md)|Участник, который является целевым объектом передачи.|
-|Контекст|String|Уникальная строка контекста клиента. Максимальный лимит — 256 символов.|
+|transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Участник, который является целевым объектом передачи.|
+|clientContext|String|Уникальная строка контекста клиента. Максимальное ограничение — 256 chars.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `202 Accepted`.
 
 ## <a name="examples"></a>Примеры
-В этих примерах показан входящий вызов для различных типов уведомлений о передаче.
+В этих примерах показывается поток входящих вызовов в различных типах уведомлений о передаче.
 
-### <a name="example-1-call-transfer"></a>Пример 1: Передача звонка
+### <a name="example-1-call-transfer"></a>Пример 1. Передача вызовов
 
-##### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 Ниже показан пример запроса.
 
 
@@ -88,8 +88,7 @@ Content-Length: 430
       }
     },
     "languageId": "languageId-value",
-    "region": "region-value",
-    "replacesCallId": "replacesCallId-value"
+    "region": "region-value"
   },
   "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
 }
@@ -109,7 +108,7 @@ Content-Length: 430
 ---
 
 
-##### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -122,7 +121,7 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a>Передача уведомлений
+#### <a name="notification---transferring"></a>Уведомление — передача
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -150,9 +149,9 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a>Уведомление — передача принята
+#### <a name="notification---transfer-accepted"></a>Уведомление — передача принимается
 
-> **Примечание:** Передача принята может быть выполнена после или до неактивного звука состояния носителя.
+> **Примечание.** Передача, принятая, может происходить после или до нее неактивный звук состояния мультимедиа.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -180,7 +179,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-completed"></a>Уведомление о передаче завершено
+#### <a name="notification---transfer-completed"></a>Уведомление — передача завершена
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -214,9 +213,9 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-failed"></a>Уведомление о сбое передачи
+#### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание:** При сбое передачи вызова в качестве состояния вызова будет использоваться `established` .
+> **Примечание.** При сбойе перенаправки вызова состояние вызова будет `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -243,17 +242,16 @@ Content-Type: application/json
           "code": 500,
           "subCode": 7000,
           "message": "<message>"
-        },
-        "replacesContext": "<replacesContext>"
+        }
       }
     }
   ]
 }
 ```
 
-### <a name="example-2-consultative-transfer"></a>Пример 2: Консультативного Transfer
+### <a name="example-2-consultative-transfer"></a>Пример 2. Передача консультаций
 
-##### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 Ниже показан пример запроса.
 
 <!-- {
@@ -286,7 +284,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -299,7 +297,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a>Передача уведомлений
+#### <a name="notification---transferring"></a>Уведомление — передача
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -327,9 +325,9 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a>Уведомление — передача принята
+#### <a name="notification---transfer-accepted"></a>Уведомление — передача принимается
 
-> **Примечание:** Передача принята может быть выполнена после или до неактивного звука состояния носителя.
+> **Примечание.** Передача, принимаемая, может происходить после или до нее неактивный звук состояния мультимедиа.
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -357,7 +355,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-completed"></a>Уведомление о передаче завершено
+#### <a name="notification---transfer-completed"></a>Уведомление — передача завершена
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -386,9 +384,9 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-failed"></a>Уведомление о сбое передачи
+#### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
 
-> **Примечание:** При сбое передачи вызова в качестве состояния вызова будет использоваться `established` .
+> **Примечание.** При сбойе перенаправки вызова состояние вызова будет `established` .
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -417,6 +415,374 @@ Content-Type: application/json
           "message": "<message>"
         },
         "replacesContext": "<replacesContext>"
+      }
+    }
+  ]
+}
+```
+
+### <a name="example-3-call-transfer-to-pstn-number"></a>Пример 3. Передача вызовов на номер STN
+
+Для этого вызова требуется экземпляр приложения с назначенным номером STN.
+
+#### <a name="step-1-create-application-instance"></a>Шаг 1. Создание экземпляра приложения
+Используя учетные данные администратора клиента, вызовите следующие cmdlets в удаленной powerShell клиента, чтобы создать экземпляр приложения. Дополнительные сведения см. в командах [New-CsOnlineApplicationInstance](/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps&preserve-view=true) и [Sync-CsOnlineApplicationInstance.](/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)
+```
+PS C:\> New-CsOnlineApplicationInstance -UserPrincipalName <UPN> -DisplayName <DisplayName> -ApplicationId <AppId>
+PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
+```
+#### <a name="step-2-assign-microsoft-365-licenses"></a>Шаг 2. Назначение лицензий Microsoft 365
+1. Используйте учетные данные администратора клиента для входа и перейдите на вкладку https://admin.microsoft.com/ **"Пользователи > активные пользователи".**
+2. Выберите экземпляр приложения, назначьте план внутренних и международных звонков **Microsoft 365** и телефонную систему **Microsoft 365 —** лицензии виртуальных пользователей и нажмите кнопку **"Сохранить изменения".** Если необходимые лицензии недоступны в клиенте, их можно получить на вкладке "Выставление счета **-> Приобретение служб".**
+#### <a name="step-3-acquire-pstn-number"></a>Шаг 3. Получение номера STN
+1. Используйте учетные данные администратора клиента для входа и перейдите на вкладку "Устаревший https://admin.teams.microsoft.com/ **портал"** на левой панели.
+2. На новой странице перейдите на вкладку **голосовых > номеров** телефонов.
+3. Нажмите **+** кнопку, выберите **"Новые номера служб"** и перейдите на страницу **"Добавление новых номеров служб".**
+4. Выберите **"Страна/регион",** **"Область",** **"Город",**"Количество **входных** данных" и нажмите **кнопку "Добавить"** для поиска. Щелкните **"Получить номера".** Недавно полученный номер будет показываться на **вкладке "Номера** телефонов".
+#### <a name="step-4-assign-pstn-number-to-application-instance"></a>Шаг 4. Назначение номера STN экземпляру приложения
+С помощью учетных данных администратора клиента вызовите следующие cmdlets в удаленной powerShell клиента, чтобы назначить номер STN экземпляру приложения. Дополнительные сведения см. в командах [Set-CsOnlineVoiceApplicationInstance](https://docs.microsoft.com/powershell/module/skype/set-csonlinevoiceapplicationinstance?view=skype-ps&preserve-view=true) и [Sync-CsOnlineApplicationInstance.](https://docs.microsoft.com/powershell/module/skype/sync-csonlineapplicationinstance?view=skype-ps&preserve-view=true)
+```
+PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
+PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
+```
+> **Примечание.** Если клиент имеет номера STN в Австралии, присвоенные экземплярам приложений, этот вызов может привести к сбойу. Если клиент создан только что, может потребоваться несколько дней, чтобы эта функция была доступна.
+
+#### <a name="request"></a>Запрос
+Ниже показан пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "call-transfer"
+}-->
+```http
+POST https://graph.microsoft.com/beta/communications/calls/{id}/transfer
+Content-Type: application/json
+Content-Length: 430
+
+{
+  "transferTarget": {
+    "endpointType": "default",
+    "identity": {
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+    },
+    "languageId": "languageId-value",
+    "region": "region-value"
+  },
+  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+}
+```
+
+#### <a name="response"></a>Отклик
+
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
+}-->
+```http
+HTTP/1.1 202 Accepted
+```
+
+#### <a name="notification---transferring"></a>Уведомление — передача
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "transferring"
+      }
+    }
+  ]
+}
+```
+
+#### <a name="notification---transfer-accepted"></a>Уведомление — передача принимается
+
+> **Примечание.** Передача, принятая, может происходить после или до нее неактивный звук состояния мультимедиа.
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "transferAccepted"
+      }
+    }
+  ]
+}
+```
+
+#### <a name="notification---transfer-completed"></a>Уведомление — передача завершена
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "terminated",
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": 0,
+          "subcode": 7015,
+          "message": "GracefulTransferCompleted"
+        }
+      }
+    }
+  ]
+}
+```
+### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
+
+> **Примечание.** При сбойе перенаправки вызова состояние вызова будет `established` .
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "established",
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": 500,
+          "subCode": 7000,
+          "message": "<message>"
+        }
+      }
+    }
+  ]
+}
+```
+
+### <a name="example-4-consultative-transfer-to-pstn-number"></a>Пример 4. Консультационная передача на номер STN
+
+Для этого вызова требуется экземпляр приложения с назначенным номером STN, как описано в примере 3.
+
+> **Примечание.** Этот вызов может привести к сбойу, если клиент имеет номера STN в Австралии, присвоенные экземплярам приложений. Если клиент создан только что, может потребоваться несколько дней, чтобы эта функция была доступна.
+
+
+#### <a name="request"></a>Запрос
+Ниже показан пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "@odata.type": "call-transfer"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b/transfer
+Content-Type: application/json
+
+{
+  "transferTarget": {
+    "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+    "endpointType": "default",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+    },
+    "languageId": "en-us",
+    "region": "amer",
+    "replacesCallId": "e5d39592-99bd-4db8-bca8-30fb894ec51d"
+  },
+  "clientContext": "9e90d1c1-f61e-43e7-9f75-d420159aae08"
+}
+```
+
+#### <a name="response"></a>Отклик
+
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.None"
+}-->
+```http
+HTTP/1.1 202 Accepted
+```
+
+#### <a name="notification---transferring"></a>Уведомление — передача
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "transferring"
+      }
+    }
+  ]
+}
+```
+
+#### <a name="notification---transfer-accepted"></a>Уведомление — передача принимается
+
+> **Примечание.** Передача, принятая, может происходить после или до нее неактивный звук состояния мультимедиа.
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "transferAccepted"
+      }
+    }
+  ]
+}
+```
+
+#### <a name="notification---transfer-completed"></a>Уведомление — передача завершена
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "terminated",
+        "terminationReason": "AppTransferred"
+      }
+    }
+  ]
+}
+```
+
+#### <a name="notification---transfer-failed"></a>Уведомление — сбой передачи
+
+> **Примечание.** При сбойе перенаправки вызова состояние вызова будет `established` .
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resourceUrl": "/communications/calls/341a0500-d4bf-4224-8b19-1581168d328b",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "established",
+        "resultInfo": {
+          "@odata.type": "#microsoft.graph.resultInfo",
+          "code": 500,
+          "subCode": 7700,
+          "message": "<message>"
+        }
       }
     }
   ]

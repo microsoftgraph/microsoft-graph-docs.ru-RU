@@ -1,25 +1,25 @@
 ---
-title: 'разрешение: Ревокегрантс'
+title: 'permission: revokeGrants'
 description: Обновление разрешений на общий доступ к элементу
 author: learafa
 localization_priority: Normal
 ms.prod: sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: bca087a6fc5e22701ef5471d213dcf0b84037f02
-ms.sourcegitcommit: 21481acf54471ff17ab8043b3a96fcb1d2f863d7
+ms.openlocfilehash: 1ad96e29df543fd9efa0f6423298eb5612c6b271
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48635474"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720016"
 ---
-# <a name="permission-revokegrants"></a>разрешение: Ревокегрантс
+# <a name="permission-revokegrants"></a>permission: revokeGrants
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отмените доступ к элементу [ListItem][] или [driveItem][] , предоставленному через ссылку для общего доступа, удалив указанного [получателя][] из ссылки.
+Отозовите доступ к [listItem][] или [driveItem,][] предоставленный по ссылке для общего доступа, удалив указанного получателя [из][] ссылки.
 
->**Примечание:** Эта функция доступна только для ссылок для общего доступа, ограниченных пользователями.
+>**Примечание.** Эта функция доступна только для обмена ссылками, доступными пользователям.
 
 [listItem]: ../resources/listitem.md
 [driveItem]: ../resources/driveitem.md
@@ -58,15 +58,15 @@ POST /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 ## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
-В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
+В следующей таблице указаны параметры, которые можно использовать с этим действием.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|получателей|Коллекция [driveRecipient](../resources/driverecipient.md)|Коллекция получателей, которые будут отзывать доступ к ссылке для общего доступа.|
+|grantees|[Коллекция driveRecipient](../resources/driverecipient.md)|Коллекция получателей, которым будет отозван доступ к ссылке для общего доступа.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-При успешном выполнении это действие возвращает `200 OK` код отклика и [разрешение](../resources/permission.md) в теле отклика.
+В случае успеха это действие возвращает код отклика и `200 OK` [разрешение в](../resources/permission.md) тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -80,7 +80,6 @@ POST /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
 -->
 ``` http
 POST /me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants
-
 Content-Type: application/json
 Content-length: 95
 
@@ -102,7 +101,7 @@ Content-length: 95
 
 ### <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает ресурс [Permission](../resources/permission.md) в тексте отклика, представляющий обновленное состояние ссылки для общего доступа.
+В случае успеха этот метод возвращает ресурс [Permission](../resources/permission.md) в теле ответа, который представляет обновленное состояние ссылки для общего доступа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

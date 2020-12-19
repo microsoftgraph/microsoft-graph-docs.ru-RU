@@ -5,29 +5,34 @@ localization_priority: Normal
 author: laujan
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 970e64ff358654aafee5b47a229a8425fdc69c9e
-ms.sourcegitcommit: 3b9eb50b790d952c7f350433ef7531d5e6d4b963
+ms.openlocfilehash: 2d2e44349f7896dfed0d0dff455e9afd0ac65772
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48725836"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714279"
 ---
 # <a name="conversationmember-resource-type"></a>Тип ресурса conversationMember
 
 Пространство имен: microsoft.graph
 
-Представляет пользователя в [команде](team.md).
-См. также [аадусерконверсатионмембер](aaduserconversationmember.md).
+Представляет пользователя в команде, [канале](channel.md)или [чате.](chat.md) [](team.md)
+См. [также aadUserConversationMember.](aaduserconversationmember.md)
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Перечисление участников](../api/conversationmember-list.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка всех пользователей в чате или канале.|
-|[Получение участника](../api/conversationmember-get.md) | [conversationMember](conversationmember.md) | Получение одного пользователя в чате или канале.|
-|[Добавление участника](../api/conversationmember-add.md) | [conversationMember](conversationmember.md)| Добавление участника в канал.|
-|[Обновление участника](../api/conversationmember-update.md) | [conversationMember](conversationmember.md)| Обновление участника в канале.|
-|[Удаление участника](../api/conversationmember-delete.md) | [conversationMember](conversationmember.md)| Удаление участника из канала.|
+|[Список участников группы](../api/team-list-members.md)|Коллекция [conversationMember](../resources/conversationmember.md)|Получение списка участников группы.|
+|[Добавление участника в команду](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Добавление нового участника в группу.|
+|[Получение участника группы](../api/team-get-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение участника группы.|
+|[Обновление роли участника команды](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Перевод пользователя из категории участников в категорию владельцев или наоборот, из категории владельцев в категорию обычных участников.|
+|[Удаление участника группы](../api/team-delete-members.md)|Нет|Удаление существующего участника из группы.|
+|[Перечисление участников канала](../api/channel-list-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка всех участников канала.|
+|[Добавление участника канала](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Добавление участника в канал. Поддерживается только для `channel` с типом членства `private`.|
+|[Получение участника канала](../api/channel-get-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение участника канала.|
+|[Обновление роли участника канала](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Обновление свойства участника канала. Поддерживается только для канала с типом членства `private`.|
+|[Удаление участника канала](../api/channel-delete-members.md) | Нет | Удаление участника канала. Поддерживается, только если параметру `channelType` присвоено значение `private`.|
 
 ## <a name="properties"></a>Свойства
 

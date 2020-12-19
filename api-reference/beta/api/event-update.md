@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 921fac4feb353f1a5832e986aeac05b93ffe91d4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5532a950a44b2524501d387c249c88e5d4f4efd4
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954740"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719673"
 ---
 # <a name="update-event"></a>Обновление события
 
@@ -65,18 +65,19 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 | body|ItemBody|Текст сообщения, связанного с событием.|
 | categories|Коллекция String|Категории, связанные с событием.|
 | end|DateTimeTimeZone|Дата, время и часовой пояс завершения события. |
+|hideAttendees|Boolean|Если за установлено, каждый участник видит себя только в запросе на собрание `true` и в списке **отслеживания** собраний. Значение по умолчанию: false.|
 | importance|String|Важность события. Возможные значения: `low`, `normal`, `high`.|
 | isAllDay|Boolean|Задайте значение true, если событие длится весь день. Если значение равно true, то независимо от того, один или несколько дней длится событие, время его начала и окончания должно быть установлено на полночь в одном и том же часовом поясе.|
 |isOnlineMeeting|Boolean| `True`, если это событие содержит информацию о собраниях по сети; в противном случае — `false`. Значение по умолчанию: false. Необязательно.|
 | isReminderOn|Boolean|Задайте значение true, если установлено напоминание пользователю о событии.|
-| location|Location|Место проведения события.|
-|locations|Коллекция [Location](../resources/location.md)|Места проведения события или участия в нем. Свойства **location** и **locations** всегда совпадают друг с другом. Если вы обновите свойство **location** , предыдущие места в коллекции **locations** будут удалены и заменены новым значением **location**. |
+| location|Расположение|Место проведения события.|
+|locations|Коллекция [Location](../resources/location.md)|Места проведения события или участия в нем. Свойства **location** и **locations** всегда совпадают друг с другом. Если вы обновите свойство **location**, предыдущие места в коллекции **locations** будут удалены и заменены новым значением **location**. |
 |onlineMeetingProvider|onlineMeetingProviderType| Представляет поставщика службы собраний по сети. Возможные значения: `teamsForBusiness`, `skypeForBusiness` и `skypeForConsumer`. Необязательно. |
 | recurrence|PatternedRecurrence|Расписание повторения события.|
 | reminderMinutesBeforeStart|Int32|Позволяет указать, за сколько минут до начала события появляется напоминание.|
 | responseRequested|Boolean|Задайте значение true, если отправитель желает получить сообщение о согласии участвовать в событии или отклонении соответствующего приглашения.|
 | sensitivity|String| Возможные значения: `normal`, `personal`, `private`, `confidential`.|
-| showAs|String|Отображаемое состояние. Возможные значения: `free` ,, `tentative` , `busy` , `oof` `workingElsewhere` , `unknown` .|
+| showAs|String|Отображаемое состояние. Возможные значения: `free` , , , , `tentative` `busy` `oof` `workingElsewhere` `unknown` .|
 | начать|DateTimeTimeZone|Дата, время и часовой пояс начала события. |
 | subject|String|Текст в строке темы сообщения о событии.|
 
@@ -119,6 +120,7 @@ Content-length: 285
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
   "isReminderOn": true,
+  "hideAttendees": false,
   "categories": ["Red category"]
 }
 ```
@@ -138,7 +140,9 @@ Content-length: 285
 
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
+Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -162,6 +166,7 @@ Content-length: 285
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
   "isReminderOn": true,
+  "hideAttendees": false,
   "onlineMeeting": {
         "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzIyNzhlMGEtM2YyZC00ZmY0LTlhNzUtZmZjNWFmZGNlNzE2%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22bc55b173-cff6-457d-b7a1-64bda7d7581a%22%7d",
         "conferenceId": "177513992",

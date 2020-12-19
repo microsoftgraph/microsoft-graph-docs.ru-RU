@@ -1,24 +1,24 @@
 ---
-title: Обновление Феатурероллаутполици
-description: Обновление свойств объекта феатурероллаутполици.
+title: Обновление featureRolloutPolicy
+description: Обновление свойств объекта featurerolloutpolicy.
 localization_priority: Normal
 author: keylimesoda
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 465c9f57faba02f38b10569ae3ba46c4022defd7
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 676983e4fbffcbe9edf3feae83c8344c52cf4596
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48006694"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719946"
 ---
-# <a name="update-featurerolloutpolicy"></a>Обновление феатурероллаутполици
+# <a name="update-featurerolloutpolicy"></a>Обновление featurerolloutpolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [феатурероллаутполици](../resources/featurerolloutpolicy.md) .
+Обновление свойств объекта [featureRolloutPolicy.](../resources/featurerolloutpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +27,7 @@ ms.locfileid: "48006694"
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Policy.ReadWrite.FeatureRollout |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -51,13 +51,13 @@ PATCH /directory/featureRolloutPolicies/{id}
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
 |description|String|Описание этой политики.|
-|displayName|String|Отображаемое имя для этой политики.|
-|исапплиедтурганизатион|Логическое|Указывает, следует ли применять эту политику развертывания функций ко всей Организации.|
-|isEnabled|Boolean|Указывает, включен ли выпуск компонентов.|
+|displayName|String|Отображаемого имени для этой политики.|
+|isAppliedToOrganization|Boolean|Указывает, следует ли применять эту политику для всей организации.|
+|isEnabled|Boolean|Указывает, включен ли выкат функции.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [феатурероллаутполици](../resources/featurerolloutpolicy.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [featureRolloutPolicy](../resources/featurerolloutpolicy.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -71,7 +71,6 @@ PATCH /directory/featureRolloutPolicies/{id}
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/directory/featureRolloutPolicies/d7ab4886-d7f0-441b-a5e6-e62d7328d18a
-
 Content-type: application/json
 
 {

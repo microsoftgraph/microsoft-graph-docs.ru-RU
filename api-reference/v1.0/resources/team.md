@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: e1326c63290b36a884d8d61ad5f9b820ab957aca
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: c6f1eb9254b0af1ce0ec8b11fbaf775482197104
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659738"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714272"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -35,8 +35,8 @@ ms.locfileid: "49659738"
 |[Обновление команды](../api/team-update.md) | [team](team.md) |Обновление свойств указанной команды. |
 |[Удаление команды](../api/group-delete.md) | Нет |Удаление команды и ее связанной группы. |
 |[Перечисление участников](../api/team-list-members.md)|Коллекция [conversationMember](../resources/conversationmember.md)|Получение списка участников группы.|
-|[Получение участника](../api/team-get-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение участника группы.|
 |[Добавление участника](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Добавление нового участника в группу.|
+|[Получение участника](../api/team-get-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение участника группы.|
 |[Удаление участника](../api/team-delete-members.md)|Нет|Удаление существующего участника из группы.|
 |[Обновление роли участника](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Перевод пользователя из категории участников в категорию владельцев или наоборот, из категории владельцев в категорию обычных участников.|
 |[Архивация команды](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Перевод команды в состояние только для чтения. |
@@ -44,8 +44,8 @@ ms.locfileid: "49659738"
 |[Клонирование команды](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Копирование команды и ее связанной группы. |
 |[Перечисление ваших команд](../api/user-list-joinedteams.md) | Коллекция [team](team.md) | Перечисление команд, в которых вы являетесь участником. |
 |[Перечисление приложений, установленных в команде](../api/team-list-installedapps.md) | Коллекция [teamsAppInstallation](teamsappinstallation.md) | Перечисление приложений, установленных в команде.|
-|[Получение приложения, установленного в команде](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Получение указанного приложения, установленного в команде.|
 |[Добавление приложения в команду](../api/team-post-installedapps.md) |Нет | Добавление (установка) приложения в команду.|
+|[Получение приложения, установленного в команде](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Получение указанного приложения, установленного в команде.|
 |[Обновление приложения, установленного в команде](../api/team-teamsappinstallation-upgrade.md) | Нет | Обновление приложения, установленного в команде, до последней версии.|
 |[Удаление приложения из команды](../api/team-delete-installedapps.md) | Нет | Удаление приложения из команды.|
 

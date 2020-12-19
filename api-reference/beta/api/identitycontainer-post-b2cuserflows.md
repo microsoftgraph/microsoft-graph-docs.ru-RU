@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 98d603632e724817cec2d4c97e06389608cc3f10
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: a1582d0d149c6039e05d964b83a465c693b226d8
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705872"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719799"
 ---
 # <a name="create-b2cidentityuserflow"></a>Создание объекта b2cIdentityUserFlow
 
@@ -27,7 +27,7 @@ ms.locfileid: "49705872"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
-|Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
+|Делегированное (личная учетная запись Майкрософт)| Не поддерживается.|
 |Приложение|IdentityUserFlow.ReadWrite.All|
 
 Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
@@ -59,13 +59,13 @@ POST /identity/b2cUserFlows
 |id|String|Обязательный. Имя пользовательского потока. Имя будет предварительно замещено после `B2C_1` создания.|
 |userFlowType|String|Обязательный. Тип создаемого пользовательского потока. Поддерживаемые значения для **userFlowType**:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
 |userFlowTypeVersion|С плавающей запятой|Обязательный. Версия пользовательского потока.|
-|isLanguageCustomizationEnabled|Boolean|Необязательный атрибут. Определяет, включена ли настройка языка в пользовательском потоке B2C Azure AD. Настройка языка не включена по умолчанию для потоков пользователей Azure AD B2C.|
-|defaultLanguageTag|String|Необязательный параметр.  Указывает язык по умолчанию для b2cIdentityUserFlow, который используется, когда в запросе не указан `ui_locale` тег. Это поле соответствует [стандарту RFC 5646.](https://tools.ietf.org/html/rfc5646)|
-|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательный атрибут. Поставщики удостоверений, которые необходимо включить в поток пользователей.|
+|isLanguageCustomizationEnabled|Логический|Необязательное свойство. Определяет, включена ли настройка языка в пользовательском потоке B2C Azure AD. Настройка языка не включена по умолчанию для потоков пользователей Azure AD B2C.|
+|defaultLanguageTag|String|Необязательный параметр.  Указывает язык по умолчанию для b2cIdentityUserFlow, который используется, когда в запросе не указан `ui_locale` тег. Это поле соответствует спецификации [RFC 5646](https://tools.ietf.org/html/rfc5646).|
+|identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательное свойство. Поставщики удостоверений, которые необходимо включить в поток пользователей.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и заголовщик Location с `201 Created` URI [объекту b2cIdentityUserFlow,](../resources/b2cidentityuserflow.md) созданному для этого запроса, с префиксом, добавленным к `B2C_1` имени. В случае неудачи возвращается ошибка `4xx` с подробностями.
+В случае успеха этот метод возвращает код ответа и заголовщик Location с `201 Created` URI [объекту b2cIdentityUserFlow,](../resources/b2cidentityuserflow.md) созданному для этого запроса, с префиксом, добавленным к `B2C_1` имени. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="examples"></a>Примеры
 
@@ -114,7 +114,7 @@ Content-length: 154
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -190,7 +190,7 @@ Content-length: 154
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -223,5 +223,78 @@ Content-type: application/json
   "suppressions": [
     "Error: create_b2cUserFlow_from_b2cUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '3'",
     "Error: create_b2cUserFlow_from_b2cUserFlows_identityProvider/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '3'"
+  ]
+}-->
+
+### <a name="example-3-create-a-user-flow-with-the-default-values-and-configuration-for-api-connectors"></a>Пример 3. Создание пользовательского потока со значениями по умолчанию и конфигурацией для соединителов API
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_b2cuserflow_from_b2cuserflows_apiconnectors"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/identity/b2cUserFlows
+Content-type: application/json
+Content-length: 154
+
+{
+    "id": "UserFlowWithAPIConnector",
+    "userFlowType": "signUpOrSignIn",
+    "userFlowTypeVersion": 1,
+    "apiConnectorConfiguration":{
+        "postFederationSignup":{
+            "@odata.id": "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"
+        },
+        "postAttributeCollection":{
+            "@odata.id": "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"
+        }
+    }
+}
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа.
+
+**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+
+**Примечание.** Свойство всегда возвращает значение `apiConnectorConfiguration` {} '. Чтобы увидеть полное значение свойств навигации, [используйте](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md) этот API.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.b2cIdentityUserFlow"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Partner
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/b2cUserFlows/$entity",
+    "id": "B2C_1_UserFlowWithAPIConnector",
+    "userFlowType": "signUpOrSignIn",
+    "userFlowTypeVersion": 1,
+    "apiConnectorConfiguration": {}
+}
+```
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "Create b2cUserFlow",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: create_b2cUserFlow_from_b2cUserFlows/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
+    "Error: create_b2cUserFlow_from_b2cUserFlows_identityProviders/userFlowTypeVersion:\r\n    Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'",
+    "Error: create_b2cUserFlow_from_b2cuserflows_apiconnectors/userFlowTypeVersion:\r\n      Expected type Single but actual was Int64. Property: userFlowTypeVersion, actual value: '1'"
   ]
 }-->

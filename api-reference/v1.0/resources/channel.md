@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7576145f53813e3467e5b1899c604855ca1223eb
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: e941379cbe9253ed79eb193f4cbc49284213b0a3
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49656990"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714265"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 
@@ -32,15 +32,14 @@ ms.locfileid: "49656990"
 |[Создание сообщения канала](../api/channel-post-message.md) | [chatMessage](../resources/chatmessage.md) | Отправка сообщения в канал. |
 |[Создание ответа на сообщение канала](../api/channel-post-messagereply.md) | [chatMessage](../resources/chatmessage.md) | Ответ на сообщение в канале.|
 |[Получение папки с файлами](../api/channel-get-filesfolder.md)| [driveItem](driveitem.md) | Получение сведений о папке SharePoint, в которой хранятся файлы канала. |
-|[Перечисление вкладок](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | Перечисление вкладок, закрепленных в канале.|
 |[Перечисление участников канала](../api/channel-list-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка участников канала.|
+|[Добавление участника канала](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Добавление участника в канал. Поддерживается только для `channel` с типом членства `private`.|
 |[Получение участника канала](../api/channel-get-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение участника канала.|
-|[Создание участника канала](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Добавление участника в канал. Поддерживается только для `channel` с типом членства `private`.|
 |[Обновление роли участника канала](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Обновление свойства участника канала. Поддерживается только для канала с типом членства `private`.|
 |[Удаление участника канала](../api/channel-delete-members.md) | Нет | Удаление участника канала. Поддерживается, только если параметру `channelType` присвоено значение `private`.|
 |[Список вкладок на канале](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | Перечисление вкладок, закрепленных на канале.|
-|[Получение вкладки на канале](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Получение определенной вкладки, закрепленной на канале.|
 |[Добавление вкладки в канал](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | Добавление (закрепление) вкладки на канал.|
+|[Получение вкладки на канале](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Получение определенной вкладки, закрепленной на канале.|
 |[Вкладка "обновление" на канале](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | Обновляет свойства вкладки на канале.|
 |[Удаление вкладки из канала](../api/channel-delete-tabs.md) | Нет | Удаление (открепление) вкладки из канала.|
 

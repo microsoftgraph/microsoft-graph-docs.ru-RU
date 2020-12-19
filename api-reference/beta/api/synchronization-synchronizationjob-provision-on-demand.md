@@ -1,22 +1,22 @@
 ---
-title: 'Синчронизатионжоб: Провисионондеманд'
-description: Выберите пользователя и подготовьте учетную запись по требованию.
+title: 'synchronizationJob: provisionOnDemand'
+description: Выберите пользователя и подберем учетную запись по запросу.
 author: ArvindHarinder1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5c51bdec3230d41de3f26105f0022153e5f8fb05
-ms.sourcegitcommit: bbb617f16b40947769b262e6e85f0dea8a18ed3f
+ms.openlocfilehash: 46df233b8d5f5069bf3b04ccdd118815f245ea8b
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49000681"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719983"
 ---
-# <a name="synchronizationjob-provisionondemand"></a>Синчронизатионжоб: Провисионондеманд
+# <a name="synchronizationjob-provisionondemand"></a>synchronizationJob: provisionOnDemand
 
 Пространство имен: microsoft.graph
 
-Выберите пользователя и подготовьте учетную запись по требованию.
+Выберите пользователя и подберем учетную запись по запросу.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,7 +24,7 @@ ms.locfileid: "49000681"
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     |Directory.ReadWrite.All  |
-|Делегированные (личная учетная запись Майкрософт) |Не поддерживается. |
+|Делегированное (личная учетная запись Майкрософт) |Не поддерживается. |
 |Для приложений                            |Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -46,17 +46,17 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizat
 ## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
-В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
+В следующей таблице указаны параметры, которые можно использовать с этим действием.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|parameters|Коллекция [синчронизатионжобаппликатионпараметерс](../resources/synchronization-synchronizationjobapplicationparameters.md)|Представляет объекты, которые будут подготовлены к работе, и выполняемые правила синхронизации. Ресурс в основном используется для подготовки по требованию. |
+|parameters|[Коллекция synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md)|Представляет объекты, которые будут быть выполнены с выполнением правил синхронизации. Ресурс в основном используется для предоставления по требованию. |
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект стрингкэйстрингвалуепаир.
+В случае успеха этот метод возвращает код `200 OK` отклика и строкуKeyStringValuePair.
 
 ## <a name="examples"></a>Примеры
 
@@ -70,7 +70,6 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizat
 -->
 ``` http
 POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizationJobId}/provisionOnDemand
-
 Content-Type: application/json
 Content-length: 122
 

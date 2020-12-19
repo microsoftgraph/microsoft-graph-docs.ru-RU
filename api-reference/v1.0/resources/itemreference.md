@@ -1,18 +1,17 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: ItemReference
 localization_priority: Normal
 description: Ресурс ItemReference предоставляет сведения, необходимые для обращения к ресурсу DriveItem через API.
-ms.prod: ''
+ms.prod: sharepoint
 doc_type: resourcePageType
-ms.openlocfilehash: a13fb5a3606b72c96a15317a9a7b1d5844184f4c
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: dd24f0d1fc0a5f5db576f5eea89b8205ff55b2b7
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009228"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714258"
 ---
 # <a name="itemreference-resource-type"></a>Тип ресурса ItemReference
 
@@ -38,7 +37,8 @@ ms.locfileid: "48009228"
   "name": "string",
   "path": "string",
   "shareId": "string",
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" }
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+  "siteId": "string"
 }
 ```
 
@@ -53,10 +53,12 @@ ms.locfileid: "48009228"
 | path          | String            | Путь, по которому можно перейти к элементу. Только для чтения.
 | shareId       | String            | Уникальный идентификатор общего ресурса, доступ к которому можно получить с помощью API [Shares][].
 | sharepointIds | [sharepointIds][] | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
+| siteId        | String            | Для OneDrive для бизнеса и SharePoint это свойство представляет собой ИД сайта, который содержит родительную библиотеку документов ресурса driveItem. Это значение такое же, как свойство id этого [ресурса][] сайта. Это [непрозрачной строки, которая состоит из трех идентификаторов](/graph/api/resources/site#id-property) сайта. <br>В OneDrive это свойство не заполняется.
 
 [drive]: ../resources/drive.md
 [sharepointIds]: ../resources/sharepointids.md
 [Shares]: ../api/shares-get.md
+[site]: ../resources/site.md
 
 ## <a name="remarks"></a>Замечания
 

@@ -1,101 +1,101 @@
 ---
-title: Работа с API управления обслуживанием Azure AD
-description: Управление доступом к ресурсам, в том числе группам, приложениям и сайтам с помощью управления правами Azure AD
+title: Работа с API управления правами Azure AD
+description: Управление доступом к ресурсам, включая группы, приложения и сайты, с помощью управления правами Azure AD
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: f4bb07186ede8949256fba40ad107affaf2889cc
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 90b8dd8e7f157c1ac50142110e37d07eed9b1dcf
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48400755"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719664"
 ---
-# <a name="working-with-the-azure-ad-entitlement-management-api"></a>Работа с API управления обслуживанием Azure AD
+# <a name="working-with-the-azure-ad-entitlement-management-api"></a>Работа с API управления правами Azure AD
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Управление обслуживанием Azure Active Directory (Azure AD) помогает управлять доступом к группам, приложениям и сайтам SharePoint Online для внутренних пользователей, а также пользователей, не входящих в вашу организацию.
+Управление правами Azure Active Directory (Azure AD) позволяет управлять доступом к группам, приложениям и сайтам SharePoint Online для внутренних пользователей, а также пользователей за пределами организации.
 
-Создавайте пакеты Access с ролями, которые пользователи должны иметь в этих ресурсах, и определяя политики, которые могут запрашивать пакет Access и как долго они могут назначать доступ к пакету Access, можно управлять жизненным циклом доступа как для внутренних, так и для внешних пользователей.
+Создав пакеты доступа с ролями, которые должны быть доступны пользователям в этих ресурсах, и определив политики для пользователей, которые могут запрашивать пакет доступа и как долго у них может быть назначение пакета доступа, можно управлять жизненным циклом доступа как для внутренних, так и для внешних пользователей.
 
-Существуют следующие типы ресурсов управления обслуживанием.
+К типам ресурсов управления правами относятся:
 
-- [акцесспаккаже](accesspackage.md): Определяет коллекции ролей ресурсов и политики того, как один или несколько пользователей могут получить доступ к этим ресурсам.
-- [акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md): определяет политику, с помощью которой субъекты могут запрашивать или назначать пакет доступа с помощью назначения пакета Access.
-- [акцесспаккажеассигнментрекуест](accesspackageassignmentrequest.md): создан пользователем, который хочет получить назначение пакета Access.
-- [акцесспаккажеассигнмент](accesspackageassignment.md): назначение пакета доступа определенной теме в течение определенного периода времени.
-- [акцесспаккажеассигнментресаурцероле](accesspackageassignmentresourcerole.md): Указывает роль, связанную с определенным ресурсом, которой назначена тема с помощью назначения пакета Access.
-- [акцесспаккажекаталог](accesspackagecatalog.md): контейнер для пакетов доступа.
-- [акцесспаккажересаурцерекуест](accesspackageresourcerequest.md): запрос на Добавление ресурса в каталог пакетов Access.
-- [коннектедорганизатион](connectedorganization.md): подключенная организация для внешних пользователей, которые могут запрашивать доступ.
-- [ентитлементманажементсеттингс](entitlementmanagementsettings.md): параметры на уровне клиента для управления обслуживанием Azure AD.
+- [accessPackage](accesspackage.md): определяет коллекции ролей ресурсов и политики того, как один или несколько пользователей могут получить доступ к этим ресурсам.
+- [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md): указывает политику, с помощью которой субъекты могут запрашивать или получать пакет доступа через назначение пакета доступа.
+- [accessPackageAssignmentRequest](accesspackageassignmentrequest.md): создается пользователем, который хочет получить назначение пакета доступа.
+- [accessPackageAssignment](accesspackageassignment.md): назначение пакета доступа определенной теме на определенный период времени.
+- [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md): указывает определенную роль ресурса, которой была назначена тема с помощью назначения пакета доступа.
+- [accessPackageCatalog](accesspackagecatalog.md): контейнер для пакетов доступа.
+- [accessPackageResourceRequest](accesspackageresourcerequest.md): запрос на добавление ресурса в каталог пакетов доступа.
+- [connectedOrganization](connectedorganization.md): подключенная организация для внешних пользователей, которые могут запрашивать доступ.
+- [entitlementManagementSettings](entitlementmanagementsettings.md): параметры на клиенте для управления правами Azure AD.
 
-Руководство, в котором показано, как использовать управление обслуживанием для создания пакета ресурсов, которые внутренние пользователи могут использовать для самостоятельного запроса, в разделе [Создание пакета Access с помощью API Microsoft Graph](/graph/tutorial-access-package-api).
+Руководство по использованию управления правами для создания пакета ресурсов, которые внутренние пользователи могут самостоятельно запрашивать, см. в руководстве по созданию пакета доступа с помощью [API Microsoft Graph.](/graph/tutorial-access-package-api)
 
-Обратите внимание, что функция управления обслуживанием, включая API, включена в Azure AD Premium P2. Клиент, на котором используется управление обслуживанием, должен иметь допустимую приобретенную или пробную подписку на Azure AD Premium P2 или EMS.
+Обратите внимание, что функция управления правами, включая API, включена в Azure AD Premium P2. У клиента, в котором используется управление правами, должна быть действительная приобретенная или пробная подписка на Azure AD Premium P2 или EMS E5.
 
 ## <a name="methods"></a>Методы
 
-В следующей таблице перечислены методы, которые можно использовать для взаимодействия с ресурсами, связанными с управлением ресурсами.
+В следующей таблице перечислены методы, которые можно использовать для взаимодействия с ресурсами, связанными с управлением правами.
 
 | Метод           | Тип возвращаемых данных    |Описание|
 |:---------------|:--------|:----------|
-| [получение](../api/entitlementmanagementsettings-get.md); | [ентитлементманажементсеттингс](entitlementmanagementsettings.md) | Чтение свойств объекта **ентитлементманажементсеттингс** . |
-| [обновление](../api/entitlementmanagementsettings-update.md). | [ентитлементманажементсеттингс](entitlementmanagementsettings.md) | Обновление свойств объекта **ентитлементманажементсеттингс** . |
-| [Список Акцесспаккажес](../api/accesspackage-list.md) | Коллекция [акцесспаккаже](accesspackage.md) | Получение списка объектов **акцесспаккаже** . |
-| [Создание Акцесспаккаже](../api/accesspackage-post.md) | [акцесспаккаже](accesspackage.md) | Создание нового объекта **акцесспаккаже** . |
-| [Получение Акцесспаккаже](../api/accesspackage-get.md) | [акцесспаккаже](accesspackage.md) | Чтение свойств и связей объекта **акцесспаккаже** . |
-| [Обновление Акцесспаккаже](../api/accesspackage-update.md)|Нет | Обновление свойств объекта **акцесспаккаже** . |
-| [Удаление Акцесспаккаже](../api/accesspackage-delete.md) | | Удаление **акцесспаккаже**. |
-| [Список Акцесспаккажересаурцеролескопес](../api/accesspackage-list-accesspackageresourcerolescopes.md) | Коллекция [акцесспаккажересаурцеролескопе](accesspackageresourcerolescope.md) | Получение списка объектов **акцесспаккажересаурцеролескопе** для пакета Access. |
-| [Создание Акцесспаккажересаурцеролескопе](../api/accesspackage-post-accesspackageresourcerolescopes.md) | | Создайте новый объект **акцесспаккажересаурцеролескопе** для пакета Access. |
-| [Список АкцесспаккажеассигнментполиЦиес](../api/accesspackageassignmentpolicy-list.md) | Коллекция [акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md) | Получение списка объектов **акцесспаккажеассигнментполици** . |
-| [Создание Акцесспаккажеассигнментполици](../api/accesspackageassignmentpolicy-post.md) | [акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md)| Создание нового объекта **акцесспаккажеассигнментполици** . |
-| [Получение Акцесспаккажеассигнментполици](../api/accesspackageassignmentpolicy-get.md) | [акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md) | Чтение свойств и связей объекта **акцесспаккажеассигнментполици** . |
-| [Обновление Акцесспаккажеассигнментполици](../api/accesspackageassignmentpolicy-update.md)|[акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md) | Обновление свойств объекта **акцесспаккажеассигнментполици** . |
-| [Удаление Акцесспаккажеассигнментполици](../api/accesspackageassignmentpolicy-delete.md) | | Удаление **акцесспаккажеассигнментполици**. |
-| [Список Акцесспаккажеассигнментрекуестс](../api/accesspackageassignmentrequest-list.md) | Коллекция [акцесспаккажеассигнментрекуест](accesspackageassignmentrequest.md) | Получение списка объектов **акцесспаккажеассигнментрекуест** . |
-| [Создание Акцесспаккажеассигнментрекуест](../api/accesspackageassignmentrequest-post.md) | [акцесспаккажеассигнментрекуест](accesspackageassignmentrequest.md) | Создание нового **акцесспаккажеассигнментрекуест**. |
-| [Получение Акцесспаккажеассигнментрекуест](../api/accesspackageassignmentrequest-get.md) | [акцесспаккажеассигнментрекуест](accesspackageassignmentrequest.md) | Чтение свойств и связей объекта **акцесспаккажеассигнментрекуест** . |
-| [Список Акцесспаккажеассигнментс](../api/accesspackageassignment-list.md) | Коллекция [акцесспаккажеассигнмент](accesspackageassignment.md) | Получение списка объектов **акцесспаккажеассигнмент** . |
-| [Список Акцесспаккажеассигнментресаурцеролес](../api/accesspackageassignmentresourcerole-list.md) | Коллекция [акцесспаккажеассигнментресаурцероле](accesspackageassignmentresourcerole.md) | Получение списка объектов **акцесспаккажеассигнментресаурцероле** . |
-| [Получение Акцесспаккажеассигнментресаурцероле](../api/accesspackageassignmentresourcerole-get.md) | [акцесспаккажеассигнментресаурцероле](accesspackageassignmentresourcerole.md)  | Получение объекта **акцесспаккажеассигнментресаурцероле** . |
-| [Список Акцесспаккажекаталогс](../api/accesspackagecatalog-list.md) | Коллекция [акцесспаккажекаталог](accesspackagecatalog.md) | Получение списка объектов **акцесспаккажекаталогс** . |
-| [Создание Акцесспаккажекаталог](../api/accesspackagecatalog-post.md) | [акцесспаккажекаталог](accesspackagecatalog.md) | Создание нового объекта **акцесспаккажекаталог** . |
-| [Получение Акцесспаккажекаталог](../api/accesspackagecatalog-get.md) | [акцесспаккажекаталог](accesspackagecatalog.md) | Чтение свойств и связей объекта **акцесспаккажекаталог** . |
-| [Обновление Акцесспаккажекаталог](../api/accesspackagecatalog-update.md)|Нет | Обновление свойств объекта **акцесспаккажекаталог** . |
-| [Удаление Акцесспаккажекаталог](../api/accesspackagecatalog-delete.md) | | Удаление **акцесспаккажекаталог**. |
-| [Список ресурсов Акцесспаккажекаталог](../api/accesspackagecatalog-list-accesspackageresources.md) | Коллекция [акцесспаккажересаурце](accesspackageresource.md) | Получение списка объектов **акцесспаккажересаурце** . |
-| [Список ролей ресурсов Акцесспаккажекаталог](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | Коллекция [акцесспаккажересаурцероле](accesspackageresourcerole.md) | Получение списка объектов **акцесспаккажересаурцероле** . |
-| [Список Акцесспаккажересаурцерекуестс](../api/accesspackageresourcerequest-list.md) | Коллекция [акцесспаккажересаурцерекуест](accesspackageresourcerequest.md) | Чтение свойств и связей объектов **акцесспаккажересаурцерекуест** . |
-| [Создание Акцесспаккажересаурцерекуест](../api/accesspackageresourcerequest-post.md) | [акцесспаккажекаталог](accesspackageresourcerequest.md) | Создание нового объекта **акцесспаккажересаурцерекуест** . |
-| [Список Коннектедорганизатионс](../api/connectedorganization-list.md) | Коллекция [коннектедорганизатион](connectedorganization.md) | Получение списка объектов **коннектедорганизатион** . |
-| [Создание Коннектедорганизатион](../api/connectedorganization-post.md) | [коннектедорганизатион](connectedorganization.md) | Создание нового объекта **коннектедорганизатион** . |
-| [Получение Коннектедорганизатион](../api/connectedorganization-get.md) | [коннектедорганизатион](connectedorganization.md) | Чтение свойств и связей объекта **коннектедорганизатион** . |
-| [Обновление Коннектедорганизатион](../api/connectedorganization-update.md) |Нет | Обновление **коннектедорганизатион**. |
-| [Удаление Коннектедорганизатион](../api/connectedorganization-delete.md) |Нет | Удаление объекта **коннектедорганизатион**. |
-|[Список Интерналспонсорс](../api/connectedorganization-list-internalsponsors.md) | Коллекция [directoryObject](directoryobject.md) | Получение списка внутренних спонсоров **коннектедорганизатион** . |
-|[Список Екстерналспонсорс](../api/connectedorganization-list-externalsponsors.md) | Коллекция [directoryObject](directoryobject.md) | Получение списка внешних спонсоров **коннектедорганизатион** . |
-|[Добавление Интерналспонсорс](../api/connectedorganization-post-internalsponsors.md) | Нет | Добавление пользователя или группы в внутренние спонсоры **коннектедорганизатион** . |
-|[Добавление Екстерналспонсорс](../api/connectedorganization-post-externalsponsors.md) | Нет | Добавление пользователя или группы во внешние спонсоры **коннектедорганизатион** . |
-|[Удаление Интерналспонсорс](../api/connectedorganization-delete-internalsponsors.md) | Нет | Удаление пользователя или группы из внутренних спонсоров **коннектедорганизатион** . |
-|[Удаление Екстерналспонсорс](../api/connectedorganization-delete-externalsponsors.md) | Нет | Удаление пользователя или группы из внешних спонсоров **коннектедорганизатион** . |
+| [получение](../api/entitlementmanagementsettings-get.md); | [entitlementManagementSettings](entitlementmanagementsettings.md) | Чтение свойств объекта **entitlementManagementSettings.** |
+| [обновление](../api/entitlementmanagementsettings-update.md). | [entitlementManagementSettings](entitlementmanagementsettings.md) | Обновление свойств объекта **entitlementManagementSettings.** |
+| [Список accessPackages](../api/accesspackage-list.md) | [Коллекция accessPackage](accesspackage.md) | Получить список объектов **accessPackage.** |
+| [Создание accessPackage](../api/accesspackage-post.md) | [accessPackage](accesspackage.md) | Создание объекта **accessPackage.** |
+| [Get accessPackage](../api/accesspackage-get.md) | [accessPackage](accesspackage.md) | Чтение свойств и связей объекта **accessPackage.** |
+| [Обновление accessPackage](../api/accesspackage-update.md)|Нет | Обновление свойств объекта **accesspackage.** |
+| [Удаление accessPackage](../api/accesspackage-delete.md) | | Удаление **accessPackage**. |
+| [Список accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) | [Коллекция accessPackageResourceRoleScope](accesspackageresourcerolescope.md) | Получить список объектов **accessPackageResourceRoleScope** для пакета доступа. |
+| [Создание accessPackageResourceRoleScope](../api/accesspackage-post-accesspackageresourcerolescopes.md) | | Создайте новый **объект accessPackageResourceRoleScope** для пакета доступа. |
+| [Список accessPackageAssignmentPolicies](../api/accesspackageassignmentpolicy-list.md) | [Коллекция accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Получить список объектов **accessPackageAssignmentPolicy.** |
+| [Создание accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-post.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md)| Создание объекта **accessPackageAssignmentPolicy.** |
+| [Get accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Чтение свойств и связей объекта **accessPackageAssignmentPolicy.** |
+| [Обновление accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md)|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Обновление свойств объекта **accessPackageAssignmentPolicy.** |
+| [Удаление accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-delete.md) | | Удаление **accessPackageAssignmentPolicy.** |
+| [Список accessPackageAssignmentRequests](../api/accesspackageassignmentrequest-list.md) | [Коллекция accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Получить список объектов **accessPackageAssignmentRequest.** |
+| [Создание accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-post.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Создайте **новый accessPackageAssignmentRequest.** |
+| [Get accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md) | [accessPackageAssignmentRequest](accesspackageassignmentrequest.md) | Чтение свойств и связей объекта **accessPackageAssignmentRequest.** |
+| [Список accessPackageAssignments](../api/accesspackageassignment-list.md) | [Коллекция accessPackageAssignment](accesspackageassignment.md) | Получить список объектов **accessPackageAssignment.** |
+| [Список accessPackageAssignmentResourceRoles](../api/accesspackageassignmentresourcerole-list.md) | [Коллекция accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md) | Получить список объектов **accessPackageAssignmentResourceRole.** |
+| [Get accessPackageAssignmentResourceRole](../api/accesspackageassignmentresourcerole-get.md) | [accessPackageAssignmentResourceRole](accesspackageassignmentresourcerole.md)  | **Извлечение объекта accessPackageAssignmentResourceRole.** |
+| [Список accessPackageCatalogs](../api/accesspackagecatalog-list.md) | [Коллекция accessPackageCatalog](accesspackagecatalog.md) | Получить список объектов **accessPackageCatalogs.** |
+| [Создание accessPackageCatalog](../api/accesspackagecatalog-post.md) | [accessPackageCatalog](accesspackagecatalog.md) | Создание объекта **accessPackageCatalog.** |
+| [Get accessPackageCatalog](../api/accesspackagecatalog-get.md) | [accessPackageCatalog](accesspackagecatalog.md) | Чтение свойств и связей объекта **accessPackageCatalog.** |
+| [Обновление accessPackageCatalog](../api/accesspackagecatalog-update.md)|Нет | Обновление свойств объекта **accessPackageCatalog.** |
+| [Удаление accessPackageCatalog](../api/accesspackagecatalog-delete.md) | | Удаление **accessPackageCatalog**. |
+| [Список ресурсов accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresources.md) | [Коллекция accessPackageResource](accesspackageresource.md) | Получить список объектов **accessPackageResource.** |
+| [Список ролей ресурсов accessPackageCatalog](../api/accesspackagecatalog-list-accesspackageresourceroles.md) | [Коллекция accessPackageResourceRole](accesspackageresourcerole.md) | Получить список объектов **accessPackageResourceRole.** |
+| [Список accessPackageResourceRequests](../api/accesspackageresourcerequest-list.md) | [Коллекция accessPackageResourceRequest](accesspackageresourcerequest.md) | Чтение свойств и связей объектов **accessPackageResourceRequest.** |
+| [Создание accessPackageResourceRequest](../api/accesspackageresourcerequest-post.md) | [accessPackageCatalog](accesspackageresourcerequest.md) | Создание объекта **accessPackageResourceRequest.** |
+| [Список connectedOrganizations](../api/connectedorganization-list.md) | [Коллекция connectedOrganization](connectedorganization.md) | Получить список объектов **connectedOrganization.** |
+| [Создание connectedOrganization](../api/connectedorganization-post.md) | [connectedOrganization](connectedorganization.md) | Создание объекта **connectedOrganization.** |
+| [Get connectedOrganization](../api/connectedorganization-get.md) | [connectedOrganization](connectedorganization.md) | Чтение свойств и связей объекта **connectedOrganization.** |
+| [Обновление connectedOrganization](../api/connectedorganization-update.md) |Нет | Обновление **connectedOrganization.** |
+| [Удаление connectedOrganization](../api/connectedorganization-delete.md) |Нет | Удаление **connectedOrganization**. |
+|[Список internalSponsors](../api/connectedorganization-list-internalsponsors.md) | Коллекция [directoryObject](directoryobject.md) | Получить список внутренних спонсоров **connectedOrganization.** |
+|[Список externalSponsors](../api/connectedorganization-list-externalsponsors.md) | Коллекция [directoryObject](directoryobject.md) | Получить список внешних спонсоров **connectedOrganization.** |
+|[Добавление internalSponsors](../api/connectedorganization-post-internalsponsors.md) | Нет | Добавьте пользователя или группу во внутренних спонсоров **connectedOrganization.** |
+|[Добавление externalSponsors](../api/connectedorganization-post-externalsponsors.md) | Нет | Добавьте пользователя или группу во внешних спонсоров **connectedOrganization.** |
+|[Удаление internalSponsors](../api/connectedorganization-delete-internalsponsors.md) | Нет | Удаление пользователя или группы из внутренних спонсоров **connectedOrganization.** |
+|[Удаление externalSponsors](../api/connectedorganization-delete-externalsponsors.md) | Нет | Удаление пользователя или группы из внешних спонсоров **connectedOrganization.** |
 
 ## <a name="types"></a>Типы
 
-- [рекуесторсеттингс](requestorsettings.md), [аппровалсеттингс](approvalsettings.md) и [ассигнментревиевсеттингс](assignmentreviewsettings.md) — используется в [акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md) , чтобы указать, кто может запрашивать, кто утверждает и кто просматривает запросы на назначение пакетов для этой политики.
-- [аппровалстаже](approvalstage.md) — используется в [аппровалсеттингс](approvalsettings.md) для указания основного, резервного и технического утверждающих лиц.
-- [пользовательские](userset.md) подтипы [SingleUser.](singleuser.md), [граупмемберс](groupmembers.md), [коннектедорганизатионмемберс](connectedorganizationmembers.md), [рекуесторманажер](requestormanager.md), [интерналспонсорс](internalsponsors.md)и екстерналспонсорс используются в [externalSponsors](externalsponsors.md) [requestorSettings](requestorsettings.md), [approvalStage](approvalstage.md) и [assignmentReviewSettings](assignmentreviewsettings.md).
-- [акцесспаккажесубжект](accesspackagesubject.md) — используется в [акцесспаккажеассигнмент](accesspackageassignment.md) в качестве пользователя темы с назначенным пакетом Access.
-- [идентитисаурце](identitysource.md) — используется в [коннектедорганизатион](connectedorganization.md), один из [азуреактиведиректоритенант](azureactivedirectorytenant.md), [домаинидентитисаурце](domainidentitysource.md) или [externalDomainFederation](externaldomainfederation.md).
+- [requestorSettings](requestorsettings.md), [approvalSettings](approvalsettings.md), [вопросы](accesspackagequestion.md) и [assignmentReviewSettings](assignmentreviewsettings.md) — используется в [accessPackageAssignmentPolicy,](accesspackageassignmentpolicy.md) чтобы указать, кто может запрашивать, кто утверждает и кто просматривает запросы на назначение пакета доступа для этой политики.
+- [approvalStage](approvalstage.md) — используется в [approvalSettings](approvalsettings.md) для указания основных, резервных копий и утверждений эскалации.
+- [userSet](userset.md) subtypes [singleUser](singleuser.md), [groupMembers](groupmembers.md), [connectedOrganizationMembers](connectedorganizationmembers.md), [requestorManager,](requestormanager.md) [internalSponsors,](internalsponsors.md)and [externalSponsors](externalsponsors.md) - Used in [requestorSettings](requestorsettings.md), [approvalStage](approvalstage.md) and [assignmentReviewSettings](assignmentreviewsettings.md).
+- [accessPackageSubject](accesspackagesubject.md) — используется в [accessPackageAssignment](accesspackageassignment.md) в качестве пользователя субъекта с назначением пакета доступа.
+- [identitySource](identitysource.md) — используется в [connectedOrganization](connectedorganization.md), один из [azureActiveDirectoryTenant](azureactivedirectorytenant.md), [domainIdentitySource](domainidentitysource.md) или [externalDomainFederation](externaldomainfederation.md).
 
-## <a name="see-also"></a>Дополнительные ресурсы
+## <a name="see-also"></a>См. также
 
- - [Что такое управление обслуживанием Azure AD?](/azure/active-directory/governance/entitlement-management-overview)
+ - [Что такое управление правами Azure AD?](/azure/active-directory/governance/entitlement-management-overview)
 
 
 

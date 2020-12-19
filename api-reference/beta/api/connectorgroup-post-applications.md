@@ -1,24 +1,24 @@
 ---
-title: Назначение Коннекторграуп приложению
-description: Используйте этот API, чтобы назначить Коннекторграуп приложению.
+title: Назначение соединителиГрупп приложению
+description: Использование этого API для назначения соединителиГрупп приложению
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1d937f6a52d80896714519bc43b0dc2595f9d902
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: ac902f4a1287a8d27fcf9ad571172207ca7b8e50
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47996424"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719957"
 ---
-# <a name="assign-a-connectorgroup-to-an-application"></a>Назначение Коннекторграуп приложению
+# <a name="assign-a-connectorgroup-to-an-application"></a>Назначение соединителиГрупп приложению
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Назначьте [коннекторграуп](../resources/connectorgroup.md) [приложению](../resources/application.md).
+[Назначьте соединителиГрупп](../resources/connectorgroup.md) [приложению.](../resources/application.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "47996424"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается.  |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -38,11 +38,11 @@ PUT /applications/{id}/connectorGroup/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носителя. Обязательный параметр.|
+| Авторизация  | Bearer. Обязательный параметр.|
 | Content-Type | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [коннекторграуп](../resources/connectorgroup.md) в формате JSON.
+В теле запроса укажете представление объекта [connectorGroup](../resources/connectorgroup.md) в JSON.
 
 ## <a name="response"></a>Отклик
 
@@ -59,7 +59,6 @@ PUT /applications/{id}/connectorGroup/$ref
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/applications/{id}/connectorGroup/$ref
-
 Content-type: application/json
 Content-length: 30
 

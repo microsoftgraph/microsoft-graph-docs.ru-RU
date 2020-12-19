@@ -1,63 +1,64 @@
 ---
-title: Тип ресурса Акцесспаккажеассигнментполици
-description: Политика назначения пакетов Access определяет политику, с помощью которой субъекты могут запрашивать или назначать пакет доступа с помощью назначения пакета Access.
+title: Тип ресурса accessPackageAssignmentPolicy
+description: Политика назначения пакета доступа определяет политику, с помощью которой субъекты могут запрашивать или получать доступ к пакету доступа через назначение пакета доступа.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: ccf3e1bb94bb1f6186e39cdaa91fa2dbe3a4344d
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c963030980e96c5baabe8bcfe9103d4dc5167979
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48031739"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719764"
 ---
-# <a name="accesspackageassignmentpolicy-resource-type"></a>Тип ресурса Акцесспаккажеассигнментполици
+# <a name="accesspackageassignmentpolicy-resource-type"></a>Тип ресурса accessPackageAssignmentPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В разделе [Управление обслуживанием в Azure AD](entitlementmanagement-root.md)политика назначения пакетов Access определяет политику, с помощью которой субъекты могут запрашивать или назначать пакет доступа с помощью назначения пакета Access. Пакет Access может иметь не более одного или нескольких политик. При получении запроса от субъекта субъект сравнивается с каждой политикой, чтобы найти политику (если она есть) с Рекуесторсеттингс, включающей в себя эту тему. После этого политика определяет, требуется ли для запроса утверждение, продолжительность назначения пакета Access, а также должно ли назначение регулярно проверяться.
+В управлении правами [Azure AD](entitlementmanagement-root.md)политика назначения пакета доступа определяет политику, с помощью которой субъекты могут запрашивать или получать пакет доступа через назначение пакета доступа. Пакет доступа может иметь ноль или несколько политик. При получении запроса от субъекта тема соедется с каждой политикой, чтобы найти политику (если таково) с requestorSettings, которые включают эту тему. Затем политика определяет, требуется ли утверждение запроса, продолжительность назначения пакета доступа и требуется ли регулярно проверять назначение.
 
-Чтобы назначить пользователя пакету доступа, [Создайте акцесспаккажеассигнментрекуест](../api/accesspackageassignmentrequest-post.md) , который ссылается на политику назначения пакетов доступа и пакетов доступа.
+Чтобы назначить пользователя пакету доступа, создайте [accessPackageAssignmentRequest,](../api/accesspackageassignmentrequest-post.md) который ссылается на пакет доступа и политику назначения пакета доступа.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Список АкцесспаккажеассигнментполиЦиес](../api/accesspackageassignmentpolicy-list.md) | Коллекция [акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md) | Получение списка объектов Акцесспаккажеассигнментполици. |
-| [Создание Акцесспаккажеассигнментполици](../api/accesspackageassignmentpolicy-post.md) | [акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md) | Создание нового объекта Акцесспаккажеассигнментполици. |
-| [Получение Акцесспаккажеассигнментполици](../api/accesspackageassignmentpolicy-get.md) | [акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md) | Чтение свойств и связей объекта Акцесспаккажеассигнментполици. |
-| [Обновление Акцесспаккажеассигнментполици](../api/accesspackageassignmentpolicy-update.md)|[акцесспаккажеассигнментполици](accesspackageassignmentpolicy.md) | Обновление свойств объекта Акцесспаккажеассигнментполици. |
-| [Удаление Акцесспаккажеассигнментполици](../api/accesspackageassignmentpolicy-delete.md) | | Удаление Акцесспаккажеассигнментполици. |
+| [Список accessPackageAssignmentPolicies](../api/accesspackageassignmentpolicy-list.md) | [Коллекция accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Получить список объектов accessPackageAssignmentPolicy. |
+| [Создание accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-post.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Создание объекта accessPackageAssignmentPolicy. |
+| [Get accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) | [accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Чтение свойств и связей объекта accessPackageAssignmentPolicy. |
+| [Обновление accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md)|[accessPackageAssignmentPolicy](accesspackageassignmentpolicy.md) | Обновление свойств объекта accessPackageAssignmentPolicy. |
+| [Удаление accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-delete.md) | | Удаление accessPackageAssignmentPolicy. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|акцесспаккажеид|String|Идентификатор пакета Access.|
-|акцессревиевсеттингс|[ассигнментревиевсеттингс](assignmentreviewsettings.md)|Кто должен проверить и как часто назначений для пакета доступа из этой политики. Это свойство имеет значение null, если проверка не требуются.|
-|canExtend|Boolean|Указывает, может ли пользователь продлить продолжительность назначения пакета доступа после утверждения.|
+|accessPackageId|String|ИД пакета доступа.|
+|accessReviewSettings|[assignmentReviewSettings](assignmentreviewsettings.md)|Кто должен и как часто проверяются назначения пакета доступа из этой политики. Это свойство имеет null, если проверки не требуются.|
+|canExtend|Boolean|Указывает, может ли пользователь продлить срок назначения пакета доступа после утверждения.|
 |createdBy|String|Только для чтения.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |description|String|Описание политики.|
-|displayName|String|Отображаемое имя политики.|
-|дуратиониндайс|Int32|Количество дней, в течение которых назначения из этой политики последний раз до истечения срока действия.|
-|expirationDateTime|DateTimeOffset|Срок действия для назначений, созданных в этой политике. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|displayName|String|Отображаемого имени политики.|
+|durationInDays|Int32|Количество дней, в течение которых назначения из этой политики продлятся до истечения срока их действия.|
+|expirationDateTime|DateTimeOffset|Дата окончания срока действия для назначений, созданных в этой политике. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |id|String| Только для чтения.|
-|модифиедби|String|Только для чтения.|
+|modifiedBy|String|Только для чтения.|
 |modifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|рекуестаппровалсеттингс|[аппровалсеттингс](approvalsettings.md)|Кто должен утверждать запросы на пакет Access в этой политике.|
-|рекуесторсеттингс|[рекуесторсеттингс](requestorsettings.md)|Кто может запрашивать этот пакет Access из этой политики.|
+|requestApprovalSettings|[approvalSettings](approvalsettings.md)|Кто должен утверждать запросы на пакет доступа в этой политике.|
+|requestorSettings|[requestorSettings](requestorsettings.md)|Кто может запросить этот пакет доступа из этой политики.|
+|вопросы|[Коллекция accessPackageQuestion](accesspackagequestion.md)|Вопросы, которые представляют запросителем.|
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
-|акцесспаккаже|[акцесспаккаже](accesspackage.md)| Пакет Access с этой политикой. Только для чтения. Допускается значение null.|
+|accessPackage|[accessPackage](accesspackage.md)| Пакет доступа с этой политикой. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -75,26 +76,42 @@ ms.locfileid: "48031739"
 
 ```json
 {
-    "id": "b2eba9a1-b357-42ee-83a8-336522ed6cbf",
-    "accessPackageId": "1b153a13-76da-4d07-9afa-c6c2b1f2e824",
-    "displayName": "All Users",
-    "description": "All users can request for access to the directory.",
+    "id": "string",
+    "accessPackageId": "string",
+    "displayName": "string",
+    "description": "string",
     "isDenyPolicy": false,
     "canExtend": false,
     "durationInDays": 365,
-    "requestorSettings" : {
-      "scopeType": "AllExistingDirectorySubjects",
-      "acceptRequests": true,
-      "allowedRequestors": []
+    "requestorSettings": {
+        "scopeType": "string",
+        "acceptRequests": true,
+        "allowedRequestors": [{
+            "@odata.type": "#microsoft.graph.userSet"
+        }]
     },
-    "requestApprovalSettings" : {
-      "isApprovalRequired": false,
-      "isApprovalRequiredForExtension": false,
-      "isRequestorJustificationRequired": false,
-      "approvalMode": "NoApproval",
-      "approvalStages": []
+    "requestApprovalSettings": {
+        "isApprovalRequired": false,
+        "isApprovalRequiredForExtension": false,
+        "isRequestorJustificationRequired": false,
+        "approvalMode": "string",
+        "approvalStages": [{
+            "approvalStageTimeOutInDays": 14,
+            "isApproverJustificationRequired": true,
+            "isEscalationEnabled": true,
+            "escalationTimeInMinutes": 11520,
+            "primaryApprovers": [{
+                "@odata.type": "#microsoft.graph.userSet"
+            }],
+            "escalationApprovers": [{
+                "@odata.type": "#microsoft.graph.userSet"
+            }]
+        }]
     },
-    "accessReviewSettings" : null
+    "accessReviewSettings": null,
+    "questions": [{
+        "@odata.type": "#microsoft.graph.question"
+    }]
 }
 ```
 
@@ -107,5 +124,4 @@ ms.locfileid: "48031739"
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

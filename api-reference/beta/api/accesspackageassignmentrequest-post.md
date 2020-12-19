@@ -1,24 +1,24 @@
 ---
-title: Создание Акцесспаккажеассигнментрекуест
-description: Создание нового Акцесспаккажеассигнментрекуест.
+title: Создание accessPackageAssignmentRequest
+description: Создайте новый accessPackageAssignmentRequest.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 248ec79692b25a640c41edbff43fa5d407d735bb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 75388c02cf63113c28475b77b194a67c76d588b8
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48952059"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719551"
 ---
-# <a name="create-accesspackageassignmentrequest"></a>Создание Акцесспаккажеассигнментрекуест
+# <a name="create-accesspackageassignmentrequest"></a>Создание accessPackageAssignmentRequest
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении обслуживанием Azure AD](../resources/entitlementmanagement-root.md)создайте новый объект [акцесспаккажеассигнментрекуест](../resources/accesspackageassignmentrequest.md) .  Эта операция используется для назначения пользователя в пакет Access или для удаления назначения пакета Access.
+В [средстве управления правами Azure AD](../resources/entitlementmanagement-root.md)создайте новый [объект accessPackageAssignmentRequest.](../resources/accesspackageassignmentrequest.md)  Эта операция используется для назначения пользователя пакету доступа или удаления назначения пакета доступа.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +27,7 @@ ms.locfileid: "48952059"
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -42,30 +42,30 @@ POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Носитель \{токен\}. Обязательно. |
+| Авторизация | Носитель \{токен\}. Обязательно. |
 | Content-Type  | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [акцесспаккажеассигнментрекуест](../resources/accesspackageassignmentrequest.md) в формате JSON.
+В теле запроса укажу представление объекта [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) в JSON.
 
-Чтобы администратор запрашивал создание назначения для пользователя, свойство **requestType** имеет значение `AdminAdd` , а свойство **акцесспаккажеассигнмент** содержит `targetId` назначенного пользователя, свойство **ассигнментполициид** , идентифицирующее [акцесспаккажеассигнментполици](../resources/accesspackageassignmentpolicy.md), и свойство **акцесспаккажеид** , определяющее [accessPackage](../resources/accesspackage.md).
+Чтобы администратор запрашивал создание назначения для пользователя, свойство **requestType** имеет значение , а свойство `AdminAdd` **accessPackageAssignment** содержит назначенного пользователя, свойство `targetId` **assignmentPolicyId,** определяющие [accessPackageAssignmentPolicy,](../resources/accesspackageassignmentpolicy.md)и свойство **accessPackageId,** определяющие [accessPackage.](../resources/accesspackage.md)
 
-Чтобы администратор запрашивал удаление назначения, свойство **requestType** имеет значение `AdminRemove` , а свойство **акцесспаккажеассигнмент** содержит свойство **ID** , идентифицирующее удаляемое [акцесспаккажеассигнмент](../resources/accesspackageassignment.md) .
+Чтобы администратор запрашивал удаление назначения, свойство **requestType** имеет значение , а свойство `AdminRemove` **accessPackageAssignment** содержит свойство **id,** определяющие удаляемую [accessPackageAssignment.](../resources/accesspackageassignment.md)
 
-Чтобы пользователь, не являющийся администратором, запрашивался для самостоятельного создания назначения, используется значение свойства **requestType** `UserAdd` , а свойство **акцесспаккажеассигнмент** содержит `targetId` идентификатор самих пользователей, свойство **ассигнментполициид** , идентифицирующее [акцесспаккажеассигнментполици](../resources/accesspackageassignmentpolicy.md), и свойство **акцесспаккажеид** , определяющее [accessPackage](../resources/accesspackage.md).  Пользователь, выполняющий запрос, должен уже существовать в каталоге.
+Чтобы пользователь, не управляющего, запросил создание назначения для себя, свойство **requestType** имеет значение , а свойство `UserAdd` **accessPackageAssignment содержит свойство accessPackageAssignment** с ИД самих пользователей, свойство `targetId` **assignmentPolicyId,** определяющие [accessPackageAssignmentPolicy,](../resources/accesspackageassignmentpolicy.md)и свойство **accessPackageId,** определяющие [accessPackage](../resources/accesspackage.md).  Пользователь, который делает запрос, должен уже существовать в каталоге.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа серии 200 и новый объект [акцесспаккажеассигнментрекуест](../resources/accesspackageassignmentrequest.md) в тексте отклика.  
+В случае успешного выполнения этот метод возвращает код отклика из 200 рядов и новый объект [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) в тексте отклика.  
 
-Если это `AdminAdd` запрос, затем [акцесспаккажеассигнмент](../resources/accesspackageassignment.md) и, при необходимости, также создаются [акцесспаккажесубжект](../resources/accesspackagesubject.md) . Вы можете указать их, используя параметры запроса при [выводе акцесспаккажеассигнментс](accesspackageassignment-list.md).
+Если это запрос, то затем также создается `AdminAdd` [accessPackageAssignment](../resources/accesspackageassignment.md) и, при необходимости, [accessPackageSubject.](../resources/accesspackagesubject.md) Их можно найти с помощью параметров запроса при [перечислении объектов accessPackageAssignment.](accesspackageassignment-list.md)
 
 ## <a name="examples"></a>Примеры
+### <a name="example-1-admin-requests-a-direct-assignment-for-a-user"></a>Пример 1. Администратор запрашивает прямое назначение для пользователя
+#### <a name="request"></a>Запрос
 
-### <a name="request"></a>Запрос
-
-Ниже приведен пример запроса для прямого назначения, в котором администратор запрашивает создание назначения для пользователя. Так как [акцесспаккажесубжект](../resources/accesspackagesubject.md) может еще не существовать, значение **TARGETID** — это идентификатор объекта, которому назначен пользователь, значение **акцесспаккажеид** — это необходимый пакет доступа для этого пользователя, а значение **ассигнментполициид** — это прямая политика назначения в этом пакете доступа.
+Ниже приводится пример запроса на прямое назначение, в котором администратор запрашивает создание назначения для пользователя. Так как [accessPackageSubject](../resources/accesspackagesubject.md) может еще не существовать, **значение targetID** — это ИД объекта назначенного пользователя, значение **accessPackageId** — это нужный пакет доступа для этого пользователя, а **значение assignmentPolicyId** — это политика прямого назначения в этом пакете доступа.
  
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -106,7 +106,7 @@ Content-type: application/json
 ---
 
 
-### <a name="response"></a>Отклик
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -129,6 +129,132 @@ Content-type: application/json
   "requestState": "Submitted",
   "requestStatus": "Accepted",
   "isValidationOnly": false
+}
+```
+
+### <a name="example-2-user-requests-a-package-and-answers-questions-for-approval"></a>Пример 2. Пользователь запрашивает пакет и отвечает на вопросы на утверждение
+#### <a name="request"></a>Запрос
+
+Ниже приводится пример запроса, в котором запрашиватель предоставил ответ утвержденному, чтобы помочь ему принять решение.
+ 
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+Content-type: application/json
+
+{
+    "requestType": "UserAdd",
+    "accessPackageAssignment": {
+        "targetId": "46184453-e63b-4f20-86c2-c557ed5d5df9",
+        "assignmentPolicyId": "2264bf65-76ba-417b-a27d-54d291f0cbc8",
+        "accessPackageId": "a914b616-e04e-476b-aa37-91038f0b165b"
+    },
+    "answers": [{
+        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+        "value": "Arizona",
+        "answeredQuestion": {
+            "id" : "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF"
+        }
+    }, {
+        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+        "value": "Need access to marketing campaign material",
+        "answeredQuestion": {
+            "id" : "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA"
+        }
+    }]
+}
+```
+
+
+---
+
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "id": "7e382d02-4454-436b-b700-59c7dd77f466",
+    "requestType": "UserAdd",
+    "requestState": "Submitted",
+    "requestStatus": "Accepted",
+    "isValidationOnly": false,
+    "answers": [{
+        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+        "value": "Arizona",
+        "answeredQuestion": {
+            "id" : "A714EC6F-4EE0-4614-BD81-37E0C5ECBBFF",
+            "isRequired": false,
+            "text": {
+                "defaultText": "what state are you from?",
+                "localizedTexts": [{
+                    "text": "¿De qué estado eres?",
+                    "languageCode": "es"
+                }]
+            },
+            "@odata.type": "#microsoft.graph.accessPackageMultipleChoiceQuestion",
+            "choices": [{
+                "actualValue": "AZ",
+                "displayValue": {
+                    "localizedTexts": [{
+                        "text": "Arizona",
+                        "languageCode": "es"
+                    }]
+                }
+            }, {
+                "actualValue": "CA",
+                "displayValue": {
+                    "localizedTexts": [{
+                        "text": "California",
+                        "languageCode": "es"
+                    }]
+                }
+            }, {
+                "actualValue": "OH",
+                "displayValue": {
+                    "localizedTexts": [{
+                        "text": "Ohio",
+                        "languageCode": "es"
+                    }]
+                }
+            }],
+            "allowsMultipleSelection": false
+        }
+    }, {
+        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+        "value": "Need access to marketing campaign material",
+        "answeredQuestion": {
+            "id" : "AA615EE9-D9D8-4C03-BE91-BEE37106DEDA",
+            "isRequired": false,
+            "text": {
+                "defaultText": "Who is your manager?",
+                "localizedTexts": [{
+                    "text": "por qué necesita acceso a este paquete",
+                    "languageCode": "es"
+                }]
+            },
+            "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+            "isSingleLineQuestion": false
+        }
+    }]
 }
 ```
 

@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: cae282a1402f7c69a68904f4ed5b74c983a156ac
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 0c760cdb6f4963c90edd479a0f84b5fd6d37eda5
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48960085"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719736"
 ---
 # <a name="create-event"></a>Создание события
 
@@ -157,6 +157,7 @@ Content-type: application/json
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
+    "hideAttendees": false,
     "subject": "Let's go for lunch",
     "bodyPreview": "Does next month work for you?",
     "importance": "normal",
@@ -231,7 +232,7 @@ Content-type: application/json
 ### <a name="example-2-create-and-enable-an-event-as-an-online-meeting"></a>Пример 2. Создание и включение события в качестве собрания по сети
 
 #### <a name="request"></a>Запрос
-В следующем примере показано создание события в указанном календаре пользователя, выполнившего вход, и включение его в качестве собрания по сети.
+В следующем примере создается событие в указанном календаре пользователя, выписав его в качестве собрания по сети.
 
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 
@@ -321,6 +322,7 @@ Content-type: application/json
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
+    "hideAttendees": false,
     "subject": "Let's go for lunch",
     "bodyPreview": "Does next month work for you?",
     "importance": "normal",

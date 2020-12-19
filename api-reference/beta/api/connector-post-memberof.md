@@ -1,16 +1,16 @@
 ---
-title: Добавление соединителя в Коннекторграуп
-description: Используйте этот API, чтобы добавить соединитель для нового Коннекторграуп.
+title: Добавление соединителю в connectorGroup
+description: Этот API используется для добавления соединителю в новый connectorGroup.
 localization_priority: Normal
 author: japere
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 00f2ada7d46831b6b0bfbae0db4174e3ca2e9c90
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: d7a6c29674495b960ad9f412b8962e1a66de6244
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48009081"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719960"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Добавление соединителя для connectorGroup
 
@@ -18,14 +18,14 @@ ms.locfileid: "48009081"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление [соединителя](../resources/connector.md)  в [коннекторграуп](../resources/connectorgroup.md).
+Добавление [соединителю](../resources/connector.md) в [connectorGroup.](../resources/connectorgroup.md)
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается.  |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -37,14 +37,14 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$re
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носителя. Обязательно|
+| Авторизация  | Bearer. Обязательна|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [коннекторграуп](../resources/connectorgroup.md) в формате JSON.
+В теле запроса укажете представление объекта [connectorGroup](../resources/connectorgroup.md) в JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [коннекторграуп](../resources/connectorgroup.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [connectorGroup](../resources/connectorgroup.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -57,7 +57,6 @@ POST /onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$re
 }-->
 ```http
 POST https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$ref
-
 Content-type: application/json
 Content-length: 99
 
@@ -71,7 +70,7 @@ Content-length: 99
 
 ---
 
-В тексте запроса добавьте представление объекта [коннекторграуп](../resources/connectorgroup.md) в формате JSON.
+В теле запроса укажете представление объекта [connectorGroup](../resources/connectorgroup.md) в JSON.
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
