@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph.
 author: MSGraphDocsVTeam
 localization_priority: Priority
-ms.openlocfilehash: 87654da1f8e995d7f8c893ad2c0ff54f7e35b0a0
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: b62417559c5fb70b973055a732a56ee66aadc41f
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706012"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714132"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -331,6 +331,9 @@ Microsoft Graph предоставляет два разрешения ([*Group.
 ### <a name="get-teams-is-not-supported"></a>GET / команды не поддерживается
 
 Чтобы получить список команд, см. [список всех команд](teams-list-all-teams.md) и [список ваших команд](/graph/api/user-list-joinedteams).
+
+### <a name="unable-to-remove-members-from-chat"></a>Не удается удалить участников из чата
+В некоторых ситуациях вызов `DELETE /chats/chat-id/members/membership-id` завершится ошибкой с кодом `404`, даже если участник чата существует. Это связано с проблемами вычисления `membership-id`.
 
 ### <a name="unable-to-filter-team-members-by-roles"></a>Не удается отфильтровать участников команды по ролям
 Запрос фильтра на получение участников команды на основе их ролей `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')` может не работать. Сервер может вернуть `BAD REQUEST`.
