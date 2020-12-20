@@ -889,7 +889,7 @@ items:
                             href: api/permissiongrantpolicy-delete-includes.md
                           - name: Список исключается
                             href: api/permissiongrantpolicy-list-excludes.md
-                          - name: Создание исключено
+                          - name: Create in excludes
                             href: api/permissiongrantpolicy-post-excludes.md
                           - name: Удаление из исключений
                             href: api/permissiongrantpolicy-delete-excludes.md
@@ -931,6 +931,10 @@ items:
                 href: api/event-delete.md
               - name: Получение дельты
                 href: api/event-delta.md
+              - name: Пересылка события
+                href: api/event-forward.md
+              - name: Отмена события
+                href: api/event-cancel.md
               - name: Событие Accept
                 href: api/event-accept.md
               - name: Предварительное принятие
