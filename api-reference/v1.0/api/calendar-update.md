@@ -5,18 +5,18 @@ localization_priority: Normal
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 0c6c17da08557d9026f70c1e9bde987e4c9415a6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: b04ae92134cf46298f215cd1d14f6f5164bdedd2
+ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48070354"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720699"
 ---
 # <a name="update-calendar"></a>Обновление календаря
 
 Пространство имен: microsoft.graph
 
-Обновление свойств объекта [calendar](../resources/calendar.md). В качестве календаря может использоваться календарь [пользователя](../resources/user.md)или стандартный календарь [группы](../resources/group.md)Microsoft 365.
+Обновление свойств объекта [calendar](../resources/calendar.md). Это может быть календарь для [пользователя](../resources/user.md) или стандартный календарь для [группы](../resources/group.md) Microsoft 365.
 ## <a name="permissions"></a>Разрешения
 В зависимости от типа календаря, к которому относится событие, а также от требуемого типа разрешений (делегированные или разрешения приложений), для вызова этого API необходимо одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -59,6 +59,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |color|String|Задает цветовую тему, отличающую этот календарь от других календарей в пользовательском интерфейсе. Значения свойств: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
+|isDefaultCalendar|Boolean|Значение true, если это используемый по умолчанию календарь пользователя. В противном случае используется значение false.|
 |name|String|Имя календаря.|
 
 ## <a name="response"></a>Отклик
@@ -66,7 +67,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 В случае успеха этот метод возвратит код отклика `200 OK` и обновленный объект [calendar](../resources/calendar.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
-В следующем примере обновляется имя календаря пользователя, вошедшего в систему по умолчанию.
+В следующем примере обновляется имя календаря по умолчанию пользователя, во которого был выписана учетная информация.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -116,9 +117,11 @@ Content-type: application/json
     "id":"AAMkADJmMVAAA=",
     "name":"Social events",
     "color":"auto",
+    "isDefaultCalendar":false,
     "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
     "canShare":true,
     "canViewPrivateItems":true,
+    "hexColor": "",
     "canEdit":true,
     "allowedOnlineMeetingProviders": [
                 "teamsForBusiness"

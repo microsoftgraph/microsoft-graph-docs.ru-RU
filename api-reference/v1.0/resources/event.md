@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c12727b5ab37ec9bf6793b634108e5a9dd9e0c71
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 63f169c3f531b0ca4a1271b992dc91c3fe22d197
+ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720002"
+ms.locfileid: "49720653"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -37,15 +37,17 @@ ms.locfileid: "49720002"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список событий](../api/user-list-events.md)|Коллекция [event](event.md) |Получение списка объектов [event](../resources/event.md) в почтовом ящике пользователя. В этом списке указаны единичные собрания и главные собрания в соответствующих сериях.|
+|[Перечисление событий](../api/user-list-events.md)|Коллекция [event](event.md) |Получение списка объектов [event](../resources/event.md) в почтовом ящике пользователя. В этом списке указаны единичные собрания и главные собрания в соответствующих сериях.|
 |[Создание события](../api/user-post-events.md) |[event](event.md)| Создание события путем записи в коллекцию экземпляров.|
 |[Получение события](../api/event-get.md) | [event](event.md) |Считывание свойств и отношений объекта event.|
 |[Обновление](../api/event-update.md) | [event](event.md) |Обновление объекта event. |
 |[Удаление](../api/event-delete.md) | Нет |Удаление объекта event. |
+|[delta](../api/event-delta.md)|Коллекция объектов [event](event.md)|Получение списка событий, которые были добавлены в **calendarView** (диапазон событий) основного календаря пользователя, обновлены в нем или удалены из него.|
+|[forward](../api/event-forward.md)| Нет |Позволяет организатору или участнику собрания пересылать приглашение на собрание новому получателю.|
+|[cancel](../api/event-cancel.md) | Нет | Отправка сообщения об отмене от организатора всем участникам и отмена указанного собрания. |
 |[accept](../api/event-accept.md)|Нет|Принятие указанного события в календаре пользователя.|
 |[tentativelyAccept](../api/event-tentativelyaccept.md)|Нет|Принятие под вопросом указанного события в календаре пользователя.|
 |[decline](../api/event-decline.md)|Нет|Отклонение приглашения на указанное событие в календаре пользователя.|
-|[delta](../api/event-delta.md)|Коллекция объектов [event](event.md)|Получение списка событий, которые были добавлены в **calendarView** (диапазон событий) основного календаря пользователя, обновлены в нем или удалены из него.|
 |[dismissReminder](../api/event-dismissreminder.md)|Нет|Отключение напоминания для указанного события в календаре пользователя.|
 |[snoozeReminder](../api/event-snoozereminder.md)|Нет|Откладывание напоминания для указанного события в календаре пользователя на другое время.|
 |[Перечисление экземпляров](../api/event-list-instances.md) |Коллекция [event](event.md)| Получение экземпляров (повторов) события для заданного диапазона времени. Если событие относится к типу `SeriesMaster`, возвращаются экземпляры и исключения события для указанного диапазона времени.|
@@ -79,6 +81,7 @@ ms.locfileid: "49720002"
 |importance|importance|Важность события. Допустимые значения: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Задайте значение true, если событие длится весь день.|
 |isCancelled|Boolean|Задайте значение true, если событие отменено.|
+|isDraft|Логический|Присвоено значение true, если пользователь обновил собрание в Outlook, но не отправил обновления участникам. Присвоено значение false, если все изменения отправлены или событие является встречей без участников.|
 |isOnlineMeeting|Boolean| `True`, если это событие содержит информацию о собраниях по сети; в противном случае — `false`. Значение по умолчанию: false. Необязательный.|
 |isOrganizer|Boolean|Присвоено значение true, если владелец календаря (указанный свойством **owner** объекта [calendar](calendar.md)) является организатором события (определятся свойством **organizer** объекта **event**). Это также применимо, если делегат организовал событие от имени владельца.|
 |isReminderOn|Boolean|Задайте значение true, если установлено напоминание пользователю о событии.|
@@ -207,6 +210,7 @@ ms.locfileid: "49720002"
   "importance": "String",
   "isAllDay": true,
   "isCancelled": true,
+  "isDraft": false,
   "isOnlineMeeting": true,
   "isOrganizer": true,
   "isReminderOn": true,

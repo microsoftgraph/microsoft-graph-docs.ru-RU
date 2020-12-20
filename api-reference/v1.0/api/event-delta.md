@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: b1b7cf1c502b54c258f7e657881b53749548758a
-ms.sourcegitcommit: 22d99624036ceaeb1b612538d5196faaa743881f
+ms.openlocfilehash: a55dfbfdc3266cb246814d58bb7110cab21cebe0
+ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48932432"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720555"
 ---
 # <a name="event-delta"></a>event: delta
 
@@ -99,7 +99,7 @@ Prefer: odata.maxpagesize=2
 
 
 ##### <a name="response"></a>Отклик
-В случае успешного выполнения запроса отклик будет включать маркер состояния — _skipToken_ или _deltaToken_. Первый указан в заголовке отклика _@odata.nextLink_ , второй — в заголовке отклика _@odata.deltaLink_. Первый указывает на необходимость продолжать цикл, второй — на наличие всех изменений для определенного цикла.
+В случае успешного выполнения запроса отклик будет включать маркер состояния — _skipToken_ или _deltaToken_. Первый указан в заголовке отклика _@odata.nextLink_, второй — в заголовке отклика _@odata.deltaLink_. Первый указывает на необходимость продолжать цикл, второй — на наличие всех изменений для определенного цикла.
 
 Ниже показан отклик с маркером состояния _skipToken_ в заголовке отклика _@odata.nextLink_.
 
@@ -128,6 +128,7 @@ Content-length: 359
       "transactionId": null,
       "iCalUId": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,
+      "isDraft": false,
       "isReminderOn": true
     }
   ]
