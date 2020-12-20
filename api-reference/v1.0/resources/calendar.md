@@ -5,12 +5,12 @@ localization_priority: Priority
 author: harini84
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 63d00ecaba24469b9704fe6e6cc14e4792fef614
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 5bac4adf71511a8823a77d8591e4700916308f3d
+ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48077662"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49720548"
 ---
 # <a name="calendar-resource-type"></a>Тип ресурса calendar
 
@@ -53,7 +53,9 @@ ms.locfileid: "48077662"
 |changeKey|String|Указывает версию объекта calendar. При каждом изменении календаря также меняется значение changeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта. Только для чтения.|
 |color|calendarColor|Задает цветовую тему, отличающую этот календарь от других календарей в пользовательском интерфейсе. Значения свойств: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
 |defaultOnlineMeetingProvider|onlineMeetingProviderType|Стандартный поставщик для собраний по сети, отправленных из этого календаря. Возможные значения: `unknown`, `skypeForBusiness`, `skypeForConsumer`, `teamsForBusiness`.|
+|hexColor |String |Цвет календаря, представленный кодом из трех шестнадцатеричных значений в диапазоне от 00 до FF, которые обозначают красный, зеленый и синий компоненты цвета в цветовом пространстве RGB. Если пользователь не задал цвет календаря явным образом, это свойство будет пустым. Только для чтения.|
 |id|String|Уникальный идентификатор календаря. Только для чтения.|
+|isDefaultCalendar|Логический|Значение True, если это стандартный календарь, где новые события создаются по умолчанию. В противном случае используется значение False.|
 |isRemovable|Логический| Указывает, можно ли удалить этот календарь из почтового ящика пользователя.|
 |isTallyingResponses|Логический|Указывает, поддерживает ли этот пользовательский календарь отслеживание ответов на приглашения на собрания. Только приглашения на собрания, отправленные из основных календарей пользователей, поддерживают отслеживание ответов на приглашения на собрания.|
 |name|String|Имя календаря.|
@@ -64,7 +66,7 @@ ms.locfileid: "48077662"
 |:---------------|:--------|:----------|
 |calendarPermissions|Коллекция [calendarPermission](calendarpermission.md)| Разрешения пользователей, которым предоставлен доступ к календарю.|
 |calendarView|Коллекция [Event](event.md)|Представление календаря для календаря. Свойство навигации. Только для чтения.|
-|события|Коллекция [Event](event.md)|События в календаре. Свойство навигации. Только для чтения.|
+|events|Коллекция [Event](event.md)|События в календаре. Свойство навигации. Только для чтения.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для календаря. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для календаря. Только для чтения. Допускается значение null.|
 
@@ -117,7 +119,9 @@ ms.locfileid: "48077662"
   "changeKey": "string",
   "color": "String",
   "defaultOnlineMeetingProvider": "string",
+  "hexColor": "String",
   "id": "string (identifier)",
+  "isDefaultCalendar": "boolean",
   "isRemovable": "boolean",
   "isTallyingResponses": "boolean",
   "name": "string",
