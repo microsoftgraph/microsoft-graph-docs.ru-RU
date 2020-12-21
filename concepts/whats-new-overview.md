@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 69cc7d0ba5232770bb3b014690991ffefff6df02
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 3c7b076f08a9377c7b68b16d0a8b4c4cbb7c6afb
+ms.sourcegitcommit: 35b37318d18b4a613b4702be1aa25b71525800c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597174"
+ms.lasthandoff: 12/20/2020
+ms.locfileid: "49721102"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -19,17 +19,54 @@ ms.locfileid: "49597174"
 
 ## <a name="december-2020-new-and-generally-available"></a>Декабрь 2020 г.: новые и общедоступные возможности
 
-### <a name="cloud-communications"></a>Облачная коммуникация
-Общая доступность ресурса [присутствие](/graph/api/resources/presence), позволяющего получить информацию о присутствии одного или нескольких пользователей.
+### <a name="calendar"></a>Календарь
+- Организаторы собраний могут использовать свойство **hideAttendees** ресурса [event](/graph/api/resources/event), чтобы управлять возможностью участников видеть друг друга в списке собрания **Отслеживание**.
+- Общая доступность свойства **isDraft** и метода [cancel](/graph/api/event-cancel), которые доступны для организаторов, а также доступность метода [forward](/graph/api/event-forward) для организаторов и участников, чтобы лучше управлять ресурсами [event](/graph/api/resources/event) в календаре.
+- Общая доступность свойств **hexColor** и **isDefault** ресурса [calendar](/graph/api/resources/calendar), чтобы улучшить управление календарями.
+
+### <a name="cloud-communications"></a>Облачные коммуникации
+Общая доступность ресурса [presence](/graph/api/resources/presence), позволяющего получать сведения о присутствии одного или нескольких пользователей, например их доступность и действия.
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
+Воспользуйтесь новым [учебником](tutorial-riskdetection-api.md), чтобы узнать, как использовать [API защиты удостоверения](/graph/api/resources/identityprotectionroot) для идентификации риска и настройки рабочего процесса для подтверждения компрометации или включения исправления.
 
 ### <a name="teamwork"></a>Командная работа
 - Общая доступность [API для управления установкой приложения Teams](/graph/api/resources/teamsappinstallation), в том числе управления установкой приложений, а также добавления, удаления или обновления приложения в команде или в личной области пользователя.
 - [Получение чата между пользователем и приложением Teams](/graph/api/userscopeteamsappinstallation-get-chat).
 
+### <a name="use-the-toolkit"></a>Использование набора средств
+Общая доступность набора средств Microsoft Graph Toolkit 2.0. Этот выпуск включает новый [компонент для задач Microsoft Graph To-Do](/graph/toolkit/components/todo), отличающийся от [компонента задач Планировщика](/graph/toolkit/components/tasks), и улучшенный [компонент карточки контакта](/graph/toolkit/components/person-card). Дополнительные сведения см. в соответствующей [записи блога](https://developer.microsoft.com/ru-RU/graph/blogs/announcing-the-general-availability-of-microsoft-graph-toolkit-2-0/).
+
 ## <a name="december-2020-new-in-preview-only"></a>Декабрь 2020 г.: новые возможности только в предварительной версии
 
+### <a name="compliance--ediscovery"></a>Соответствие требованиям | Обнаружение электронных данных
+Продолжением реализации конвейера [API соответствия требованиям Microsoft 365](/graph/api/resources/ediscoveryapioverview?view=graph-rest-beta&preserve-view=true) является ресурс [custodian](/graph/api/resources/custodian?view=graph-rest-beta&preserve-view=true) и связанные с ним операции и методы для [выпуска](/graph/api/custodian-release?view=graph-rest-beta&preserve-view=true) или [активации](/graph/api/custodian-activate?view=graph-rest-beta&preserve-view=true) хранителя. Используйте ресурс **custodian** для доступа к данным хранителя ([userSource](/graph/api/resources/userSource?view=graph-rest-beta&preserve-view=true)) в почтовом ящике Exchange Online, OneDrive для бизнеса, сайтах SharePoint ([siteSource](/graph/api/resources/siteSource?view=graph-rest-beta&preserve-view=true)) и группах Microsoft 365 ([unifiedGroupSource](/graph/api/resources/unifiedGroupSource?view=graph-rest-beta&preserve-view=true)).
+
+### <a name="devices-and-apps--cloud-pc"></a>Устройства и приложения | Облачный ПК
+Определение состояния сбоя виртуального рабочего стола с облачным управлением в целом как `failed` в свойстве **status** ресурса [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true).
+
+### <a name="devices-and-apps--cloud-printing"></a>Устройства и приложения | Облачная печать
+- [Обновление](/graph/api/printjob-update-configuration?view=graph-rest-beta&preserve-view=true) [конфигурации](/graph/api/resources/printjobconfiguration?view=graph-rest-beta&preserve-view=true) [задания печати](/graph/api/resources/printjob?view=graph-rest-beta&preserve-view=true).
+- Сведения о переименовании нескольких свойств и изменении типа связей см. в разделе [Декабрь 2020 г.](changelog.md#december-2020) [журнала изменений API](changelog.md).
+
+### <a name="education"></a>Образование
+- Если учащиеся добавляются после публикации задания, преподаватели могут управлять действием задания, используя свойство **addedStudentAction** ресурса [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true).
+- Преподаватели могут размещать уведомление о публикации задания с помощью свойства **notificationChannelUrl** ресурса **educationAssignment**.
+
 ### <a name="identity-and-access"></a>Удостоверение и доступ
-Получение или настройка метаданных версии и создания для [соглашения](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) [об условиях использования](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true), [файла соглашения](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true)и отношения [agreementfilelocalization](/graph/api/resources/agreementfilelocalization?view=graph-rest-beta&preserve-view=true) в Azure AD
+Получение или настройка метаданных версии и создания для [соглашения](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true) [об условиях использования](/graph/api/resources/agreement?view=graph-rest-beta&preserve-view=true), [файла соглашения](/graph/api/resources/agreementfile?view=graph-rest-beta&preserve-view=true) и отношения [agreementfilelocalization](/graph/api/resources/agreementfilelocalization?view=graph-rest-beta&preserve-view=true) в Azure AD.
+
+### <a name="identity-and-access--governance"></a>Удостоверение и доступ | Управление
+В рамках [управления правами](/graph/api/resources/entitlementmanagement-root?view=graph-rest-beta&preserve-view=true) Azure Active Directory, когда пользователи хотят получить доступ к группам или приложениям либо сайты SharePoint Online запрашивают назначение для [пакета доступа](/graph/api/resources/accesspackage?view=graph-rest-beta&preserve-view=true), они теперь могут отвечать на [вопросы](/graph/api/resources/accesspackagequestion?view=graph-rest-beta&preserve-view=true), представленные [локализованном содержимом](/graph/api/resources/accesspackagelocalizedcontent?view=graph-rest-beta&preserve-view=true) [запросa на назначение пакета доступа](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true).
+
+### <a name="identity-and-access--identity-and-sign-in"></a>Удостоверение и доступ | Удостоверение и вход в систему
+- Администраторы могут связывать пользовательские потоки с приложениями, общий доступ к которым предоставлен внешним пользователям, и включить [самостоятельную регистрацию](/azure/active-directory/external-identities/self-service-sign-up-overview) в этих приложениях. Они могут настраивать пользовательские потоки самостоятельной регистрации и создавать персонализированные интерфейсы регистрации. В частности, они могут создать [прослушивателя для события начала регистрации, чтобы вызывать настраиваемый пользовательский поток](/graph/api/resources/invokeuserflowlistener?view=graph-rest-beta&preserve-view=true). После связи приложения с пользовательским потоком пользователи, переходящие в это приложение, смогут запускать поток регистрации, предоставляющий гостевую учетную запись.
+- В [пользовательском потоке Azure Active Directory](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) или [пользовательском потоке клиента Azure Active Directory B2C](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) вы можете управлять стандартными языковыми параметрами и [настраивать языки и строки, отображаемые для пользователей в пользовательском потоке](/graph/api/resources/userflowlanguageconfiguration?view=graph-rest-beta&preserve-view=true).
+- Использование [соединителя API](/graph/api/resources/identityapiconnector?view=graph-rest-beta&preserve-view=true) в пользовательских потоках для самостоятельной регистрации Azure AD и регистрации Azure AD B2C, чтобы вызывать API на определенном шаге для воздействия на выполнение пользовательского потока.
+- Определение [политики методов проверки подлинности OTP электронной почты](/graph/api/resources/emailauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) для клиента.
+
+### <a name="to-do-tasks"></a>Задачи To-Do
+Подписывайтесь на [уведомления об изменениях](webhooks.md) [задачи To Do](/graph/api/resources/todoTask?view=graph-rest-beta&preserve-view=true).
 
 ## <a name="november-2020-new-and-generally-available"></a>Ноябрь 2020 г.: новые и общедоступные возможности
 
