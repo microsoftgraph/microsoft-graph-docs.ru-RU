@@ -5,12 +5,12 @@ localization_priority: Priority
 author: clearab
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 7f19c5a2b711ab6c39069364c641066f1d9c6dbf
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 4cd7b6ac208c719663eb04adf91a98ae6fa7da39
+ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705970"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49714342"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>Тип ресурса aadUserConversationMember
 
@@ -18,26 +18,27 @@ ms.locfileid: "49705970"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет пользователя Azure Active Directory в [чате](chat.md) или [канале](channel.md). Этот тип наследуется от [conversationMember](conversationmember.md).
+Представляет пользователя Azure Active Directory в [команде](team.md), [канале](channel.md) или [чате](chat.md). Этот тип наследуется от [conversationMember](conversationmember.md).
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список участников команды](../api/team-list-members.md)|Коллекция [conversationMember](../resources/conversationmember.md)|Получение списка участников команды.|
-|[Получение участника команды](../api/team-get-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение участника команды.|
-|[Добавление участника в команду](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Добавление нового участника в команду.|
-|[Массовое добавление участников в команду](../api/conversationmembers-add.md)|Коллекция [actionResultPart](../resources/actionresultpart.md)|Добавление нескольких участников в команду одним запросом.|
+|[Список участников группы](../api/team-list-members.md)|Коллекция [conversationMember](../resources/conversationmember.md)|Получение списка участников группы.|
+|[Добавление участника в команду](../api/team-post-members.md)|[conversationMember](../resources/conversationmember.md)|Добавление нового участника в группу.|
+|[Массовое добавление участников в группу](../api/conversationmembers-add.md)|Коллекция [actionResultPart](../resources/actionresultpart.md)|Добавление нескольких участников в команду одним запросом.|
+|[Получение участника группы](../api/team-get-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение участника группы.|
 |[Обновление роли участника команды](../api/team-update-members.md)|[conversationMember](../resources/conversationmember.md)|Перевод пользователя из категории участников в категорию владельцев или наоборот, из категории владельцев в категорию обычных участников.|
-|[Удаление участника команды](../api/team-delete-members.md)|Нет|Удаление существующего участника из группы.|
+|[Удаление участника группы](../api/team-delete-members.md)|Нет|Удаление существующего участника из группы.|
 |[Перечисление участников канала](../api/channel-list-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка всех участников канала.|
+|[Добавление участника канала](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Добавление участника в канал. Поддерживается только для `channel` с типом членства `private`.|
 |[Получение участника канала](../api/channel-get-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение участника канала.|
-|[Создание участника канала](../api/channel-post-members.md) | [conversationMember](conversationmember.md) | Добавление участника в канал. Поддерживается только для `channel` с типом членства `private`.|
 |[Обновление роли участника канала](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Обновление свойства участника канала. Поддерживается только для канала с типом членства `private`.|
 |[Удаление участника канала](../api/channel-delete-members.md) | Нет | Удаление участника канала. Поддерживается, только если параметру `channelType` присвоено значение `private`.|
 |[Перечисление участников чата](../api/chat-list-members.md) | Коллекция [conversationMember](conversationmember.md) | Получение списка всех участников чата.|
-|[Получение участника чата](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Получение участника чата.|
 |[Добавление участника в чат](../api/chat-post-members.md) | Заголовок размещения | Добавление участника в чат.| 
+|[Получение участника чата](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Получение участника чата.|
+|[Удаление участника чата](../api/chat-delete-members.md) | Нет | Удаление участника из чата.| 
 
 ## <a name="properties"></a>Свойства
 

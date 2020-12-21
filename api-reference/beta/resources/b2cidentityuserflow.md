@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: resourcePageType
 ms.prod: microsoft-identity-platform
 author: jkdouglas
-ms.openlocfilehash: ca3886194fc8fc8ad7382d40cafbaeeed62c3bc1
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 3783f28dc3b5883b2f58f0c866e2dac852391fa5
+ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706033"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719988"
 ---
 # <a name="b2cidentityuserflow-resource-type"></a>Тип ресурса b2cIdentityUserFlow
 
@@ -44,6 +44,8 @@ ms.locfileid: "49706033"
 |[Создание назначения атрибута пользователя](../api/b2cidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Создание назначения атрибута пользователя в потоке пользователей B2C.|
 |[Перечисление языков](../api/b2cidentityuserflow-list-languages.md)|Коллекция [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Получение всех языков в пользовательском потоке B2C.|
 |[Создание языка](../api/b2cidentityuserflow-put-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Создание нестандартного языка в пользовательском потоке B2C.|
+|[Получение конфигурации соединителей API для пользовательского потока](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| Получение конфигурации для соединителей API, применяемых в пользовательском потоке. Параметр запроса $expand не поддерживается для этого метода.|
+|[Настройка соединителя API в пользовательском потоке](../api/b2cidentityuserflow-put-apiConnectorConfiguration.md)|Нет| Настройка соединителя API для определенных шагов в пользовательском потоке путем обновления свойства [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md).|
 
 ## <a name="properties"></a>Свойства
 
@@ -54,14 +56,15 @@ ms.locfileid: "49706033"
 |userFlowTypeVersion|Одинарное|Версия пользовательского потока.|
 |isLanguageCustomizationEnabled|Логический|Свойство, определяющее, включена ли языковая настройка в пользовательском потоке B2C. Настройка языка по умолчанию не включена для пользовательского потока B2C.|
 |defaultLanguageTag|Строка|Указывает b2cIdentityUserFlow как язык по умолчанию, который используется, если в запросе не указан тег `ui_locale`. Это поле соответствует спецификации [RFC 5646](https://tools.ietf.org/html/rfc5646).|
+|apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Настройка для включения соединителя API с целью использования в составе пользовательского потока. Вы можете получить значение этого объекта только с помощью метода [Получение userFlowApiConnectorConfiguration](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь       | Тип  |Описание|
 |:---------------|:--------|:----------|
 |identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Поставщики удостоверений, включенные в пользовательский поток.|
 |userAttributeAssignments|Коллекция [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Назначения атрибутов пользователя, включенные в поток пользователей.|
-|языки|Коллекция [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Языки, поддерживаемые при настройке в пользовательском потоке. Настройка языка по умолчанию не включена в пользовательском потоке B2C.|
+|languages|Коллекция [userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Языки, поддерживаемые при настройке в пользовательском потоке. Настройка языка по умолчанию не включена в пользовательском потоке B2C.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -83,6 +86,9 @@ ms.locfileid: "49706033"
     "defaultLanguageTag": "String",
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
     "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
-    "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}]
+    "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}],
+    "apiConnectorConfiguration": {
+      "@odata.type": "microsoft.graph.userFlowApiConnectorConfiguration"
+    }
 }
 ```
