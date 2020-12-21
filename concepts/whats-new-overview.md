@@ -3,12 +3,12 @@ title: Новые возможности Microsoft Graph
 description: Текущие новые возможности в Microsoft Graph
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 3c7b076f08a9377c7b68b16d0a8b4c4cbb7c6afb
-ms.sourcegitcommit: 35b37318d18b4a613b4702be1aa25b71525800c3
+ms.openlocfilehash: 6eb661e4a7a84ea9dc1757db75d23e8169066988
+ms.sourcegitcommit: 4da3cf28f252c974fb00894d21b6e04eccbeffbe
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/20/2020
-ms.locfileid: "49721102"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "49722497"
 ---
 # <a name="whats-new-in-microsoft-graph"></a>Новые возможности Microsoft Graph
 
@@ -64,6 +64,22 @@ ms.locfileid: "49721102"
 - В [пользовательском потоке Azure Active Directory](/graph/api/resources/b2xidentityuserflow?view=graph-rest-beta&preserve-view=true) или [пользовательском потоке клиента Azure Active Directory B2C](/graph/api/resources/b2cidentityuserflow?view=graph-rest-beta&preserve-view=true) вы можете управлять стандартными языковыми параметрами и [настраивать языки и строки, отображаемые для пользователей в пользовательском потоке](/graph/api/resources/userflowlanguageconfiguration?view=graph-rest-beta&preserve-view=true).
 - Использование [соединителя API](/graph/api/resources/identityapiconnector?view=graph-rest-beta&preserve-view=true) в пользовательских потоках для самостоятельной регистрации Azure AD и регистрации Azure AD B2C, чтобы вызывать API на определенном шаге для воздействия на выполнение пользовательского потока.
 - Определение [политики методов проверки подлинности OTP электронной почты](/graph/api/resources/emailauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) для клиента.
+
+### <a name="teamwork"></a>Командная работа
+- Новые возможности для ресурса [member](/graph/api/resources/conversationmember?view=graph-rest-beta&preserve-view=true) в контексте [команды](/graph/api/resources/team?view=graph-rest-beta&preserve-view=true), [канала](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) или [чата](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true):
+  - Выделение участника, который является [пользователем Azure AD](/graph/api/resources/aaduserconversationmember?view=graph-rest-beta&preserve-view=true), с указанием ИД пользователя, адреса электронной почты и ИД клиента Azure AD. 
+  - [Добавление нескольких пользователей в качестве участников команды](/graph/api/conversationmembers-add?view=graph-rest-beta&preserve-view=true).
+- Для ресурса [chat](/graph/api/resources/chat?view=graph-rest-beta&preserve-view=true):
+  - [Получение всех сообщений в чатах, в которых принимал участие определенный пользователь](/graph/api/chats-getallmessages?view=graph-rest-beta&preserve-view=true), включая приватные чаты, групповые чаты и чаты собраний.
+  - Использование всех возможностей для перечисления, получения, добавления, удаления и обновления [приложения](/graph/api/resources/teamsappinstallation?view=graph-rest-beta&preserve-view=true) или [вкладки](/graph/api/resources/teamstab?view=graph-rest-beta&preserve-view=true) в чате.
+  - Использование свойства **chatType**, чтобы отличать приватный чат от группового чата или от чата, связанного с собранием по сети.
+  - [Создание](/graph/api/chat-post?view=graph-rest-beta&preserve-view=true) или [обновление](/graph/api/chat-patch?view=graph-rest-beta&preserve-view=true) чата.
+  - Для участника в контексте чата используйте свойство **visibleHistoryStartDateTime**, чтобы настроить или получить метку времени, указывающую, с какого момента в прошлом участнику предоставлен журнал беседы.
+  - [Создание](/graph/api/chat-post-members?view=graph-rest-beta&preserve-view=true) или [удаление](/graph/api/chat-delete-members?view=graph-rest-beta&preserve-view=true) участника из указанного чата. 
+- Для ресурса [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true):
+  - [Получение всех сообщений из всех каналов в команде](/graph/api/channels-getallmessages?view=graph-rest-beta&preserve-view=true).
+  - Владельцы команд могут включить [модерацию для канала](/graph/api/resources/channelmoderationsettings?view=graph-rest-beta&preserve-view=true), чтобы контролировать, кто может создавать новые сообщения или отвечать на сообщения в канале, используя свойство **moderationSettings** канала.
+- В рамках [определения приложения Teams](/graph/api/resources/teamsappdefinition?view=graph-rest-beta&preserve-view=true) используйте связь **bot**, чтобы подключаться к [боту командной работы](/graph/api/resources/teamworkbot?view=graph-rest-beta&preserve-view=true).
 
 ### <a name="to-do-tasks"></a>Задачи To-Do
 Подписывайтесь на [уведомления об изменениях](webhooks.md) [задачи To Do](/graph/api/resources/todoTask?view=graph-rest-beta&preserve-view=true).

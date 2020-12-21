@@ -603,17 +603,17 @@ items:
                 href: toolkit/components/person.md
               - name: Люди
                 href: toolkit/components/people.md
-              - name: Карточка пользователя
+              - name: Карточка контакта
                 href: toolkit/components/person-card.md
-              - name: Средство выбора людей
+              - name: Выбор людей
                 href: toolkit/components/people-picker.md
               - name: Средство выбора каналов Teams
                 href: toolkit/components/teams-channel-picker.md
-              - name: Повестка
+              - name: Повестка дня
                 href: toolkit/components/agenda.md
-              - name: Задачи
+              - name: Задачи Планировщика
                 href: toolkit/components/tasks.md
-              - name: To Do
+              - name: Задачи To-Do
                 href: toolkit/components/todo.md
           - name: Настройка компонентов
             items:
