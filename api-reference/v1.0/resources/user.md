@@ -5,12 +5,12 @@ author: krbain
 localization_priority: Priority
 ms.prod: users
 doc_type: resourcePageType
-ms.openlocfilehash: 3563c0dd8367ed8c952bb4c505e847ffc0cbd1ca
-ms.sourcegitcommit: 7902607a1e5a030d46e907d08e16644a47a47006
+ms.openlocfilehash: c3b112fd53dc3d3dd34dc0de52e212bcadfc113e
+ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49664102"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49690287"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -235,7 +235,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 |:---------------|:--------|:----------|
 |null|Значение по умолчанию. Пользователю не присвоено свойство **ageGroup**.|
 |minor|Пользователь считается несовершеннолетним.|
-|notAdult|Пользователь находится в стране с нормативными положениями (США, Соединенное Королевство, Европейский союз или Южная Корея), и возраст пользователя превышает верхнюю границу детского возраста (зависит от страны), но меньше нижней границы взрослого возраста (устанавливается в зависимости от страны или региона). По существу, в странах с регулированием подростки относятся к категории `notAdult`.|
+|notAdult|Пользователь находится в стране с нормативными положениями (например, США, Соединенное Королевство, Европейский союз или Южная Корея), и возраст пользователя превышает верхнюю границу детского возраста (зависит от страны), но меньше нижней границы взрослого возраста (устанавливается в зависимости от страны или региона). По существу, в странах с регулированием подростки относятся к категории `notAdult`.|
 |adult|Пользователь должен считаться взрослым.|
 
 #### <a name="consentprovidedforminor-values"></a>значения consentProvidedForMinor
