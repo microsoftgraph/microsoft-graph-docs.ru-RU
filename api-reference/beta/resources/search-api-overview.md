@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: 491acb75e8574312de5c1d25889883a15ac76159
-ms.sourcegitcommit: 5345c2f3265ede107fa0faaff7a3f1c2afee3810
+ms.openlocfilehash: ccc622b391cd8fc0fcd08a289392026f3458f5cd
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49377938"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754322"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Использование API Поиска (Майкрософт) для запросов данных
 
@@ -164,6 +164,8 @@ API поиска возвращает отклики с ошибками, опи
 
 - API поиска не поддерживает агрегаты для **message**, **event**, **site** или **drive**.
 
+- Пользовательские настройки поиска SharePoint, например пользовательская схема поиска или источники поиска, могут влиять на работу API Поиска (Майкрософт).
+
 ## <a name="schema-change-deprecation-warning"></a>Предупреждение об устаревании изменений схемы
 
 **В бета-версии** свойства, используемые в поисковом запросе и отклике, были переименованы или удалены. В большинстве случаев первоначальные свойства устаревают и заменяются текущими свойствами, как указано в следующей таблице.
@@ -182,7 +184,7 @@ API поиска возвращает отклики с ошибками, опи
 | [searchHit](./searchhit.md)        | Переименованное свойство | **_source** | **resource** |
 | [searchHit](./searchhit.md)        | Переименованное свойство | **_summary**  | **summary**  |
 
-## <a name="search-samples"></a>Примеры поиска
+## <a name="see-also"></a>См. также
 
 - Подробнее о некоторых основных вариантах использования:
   - [Поиск сообщений Outlook](/graph/search-concept-messages)
@@ -193,8 +195,4 @@ API поиска возвращает отклики с ошибками, опи
   - [Уточнение результатов поиска](/graph/search-concept-aggregation)
 
 - Узнайте больше об API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
-
-
-## <a name="whats-new"></a>Новые возможности
-
-Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
+- Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.

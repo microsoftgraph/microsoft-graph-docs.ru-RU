@@ -285,7 +285,7 @@ items:
                 href: api/user-list-registereddevices.md
               - name: Повторное назначение лицензии
                 href: api/user-reprocesslicenseassignment.md
-              - name: Отоиметь сеанс регистрации
+              - name: Отозовет сеанс регистрации
                 href: api/user-revokesigninsessions.md
           - name: Диск
             href: resources/drive.md
@@ -939,7 +939,7 @@ items:
                 href: api/event-accept.md
               - name: Предварительное принятие
                 href: api/event-tentativelyaccept.md
-              - name: Событие Decline
+              - name: Событие отклонения
                 href: api/event-decline.md
               - name: Отмена напоминания
                 href: api/event-dismissreminder.md
@@ -1069,7 +1069,7 @@ items:
                 href: api/calendarpermission-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -1201,9 +1201,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Получить запись вызова
                     href: api/callrecords-callrecord-get.md
-              - name: Сеанс
+              - name: Session
                 items:
-                  - name: Сеанс
+                  - name: Session
                     href: resources/callrecords-session.md
                   - name: Перечисление сеансов
                     href: api/callrecords-session-list.md
@@ -4204,7 +4204,7 @@ items:
                 href: api/attachment-delete.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -4475,7 +4475,7 @@ items:
                 href: api/contact-delta.md
           - name: Категории
             items:
-              - name: Category
+              - name: Категория
                 href: resources/outlookcategory.md
               - name: Перечисление категорий
                 href: api/outlookuser-list-mastercategories.md
@@ -4842,7 +4842,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: Планирование
+          - name: План
             href: resources/plannerplan.md
             items:
               - name: Создание плана
@@ -5014,9 +5014,9 @@ items:
                 href: api/channel-patch.md
               - name: Удаление канала
                 href: api/channel-delete.md
-              - name: Список участников
+              - name: Список членов
                 href: api/channel-list-members.md
-              - name: Создание члена
+              - name: Добавление члена
                 href: api/channel-post-members.md
               - name: Получение участника
                 href: api/channel-get-members.md
@@ -5113,7 +5113,7 @@ items:
                 items:
                   - name: Список вкладок на канале
                     href: api/channel-list-tabs.md
-                  - name: Добавление вкладки в cannel
+                  - name: Добавление вкладки в канал
                     href: api/channel-post-tabs.md
                   - name: Получение вкладки на канале
                     href: api/channel-get-tabs.md
@@ -5190,7 +5190,7 @@ items:
                     href: api/offershiftrequest-get.md
                   - name: Перечисление
                     href: api/offershiftrequest-list.md
-                  - name: Утвердить
+                  - name: '"Утвердить"'
                     href: api/offershiftrequest-approve.md
                   - name: Отклонение
                     href: api/offershiftrequest-decline.md
@@ -5216,7 +5216,7 @@ items:
                     href: api/openshiftchangerequest-post.md
                   - name: Получение
                     href: api/openshiftchangerequest-get.md
-                  - name: Утвердить
+                  - name: '"Утвердить"'
                     href: api/openshiftchangerequest-approve.md
                   - name: Отклонение
                     href: api/openshiftchangerequest-decline.md
@@ -5236,7 +5236,7 @@ items:
                     href: api/swapshiftschangerequest-post.md
                   - name: Получение
                     href: api/swapshiftschangerequest-get.md
-                  - name: Утвердить
+                  - name: '"Утвердить"'
                     href: api/swapshiftschangerequest-approve.md
                   - name: Отклонение
                     href: api/swapshiftschangerequest-decline.md
@@ -5273,7 +5273,7 @@ items:
                     href: api/timeoffrequest-get.md
                   - name: Удаление
                     href: api/timeoffrequest-delete.md
-                  - name: Утвердить
+                  - name: '"Утвердить"'
                     href: api/timeoffrequest-approve.md
                   - name: Отклонение
                     href: api/timeoffrequest-decline.md
@@ -5333,7 +5333,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
-          - name: Задача
+          - name: Task
             href: resources/todotask.md
             items:
               - name: Перечисление задач
