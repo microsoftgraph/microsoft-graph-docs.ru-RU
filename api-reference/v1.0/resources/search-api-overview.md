@@ -5,12 +5,12 @@ localization_priority: Priority
 author: nmoreau
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: b616119d1b5c1dcc8bb56b65711468cceafd7d88
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 797e6024c934fd0caddd08f447b779fde2430a6b
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523009"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753168"
 ---
 # <a name="use-the-microsoft-search-api-to-query-data"></a>Использование API Поиска (Майкрософт) для запросов данных
 
@@ -125,7 +125,9 @@ API поиска возвращает отклики с ошибками, опи
 
 - API поиска не поддерживает агрегаты для **message**, **event**, **site** или **drive**.
 
-## <a name="search-samples"></a>Примеры поиска
+- Пользовательские настройки поиска SharePoint, например пользовательская схема поиска или источники поиска, могут влиять на работу API Поиска (Майкрософт).
+
+## <a name="see-also"></a>См. также
 
 - Подробнее о некоторых основных вариантах использования:
   - [Поиск сообщений Outlook](/graph/search-concept-messages)
@@ -133,8 +135,4 @@ API поиска возвращает отклики с ошибками, опи
   - [Поиск содержимого в OneDrive и SharePoint](/graph/search-concept-files)
 
 - Узнайте больше об API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
-
-
-## <a name="whats-new"></a>Новые возможности
-
-Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
+- Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.

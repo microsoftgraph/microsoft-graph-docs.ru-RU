@@ -5,12 +5,12 @@ author: harini84
 localization_priority: Priority
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: c102ee70ccb025017d96aa10061d3bceb0b2e983
-ms.sourcegitcommit: 0cde389d4d6dbec1568dab14490f0fd6297d5aa4
+ms.openlocfilehash: f48ee4d5b2b9def559b48a47471cf0555d1278d6
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720716"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754273"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
@@ -106,7 +106,6 @@ ms.locfileid: "49720716"
   "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }],
   "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]
 }
-
 ```
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

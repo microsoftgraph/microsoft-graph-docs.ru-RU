@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: a89dfe246eef55c53d18171bd022d04640e0dee3
-ms.sourcegitcommit: 577bfd3bb8a2e2679ef1c5942a4a496c2aa3a277
+ms.openlocfilehash: e4079d83d3d92588d27184fc8ef58274095bcee6
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48582025"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754182"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -91,8 +91,8 @@ ms.locfileid: "48582025"
 | [Добавление rejectedSender](../api/group-post-rejectedsenders.md)  | [directoryObject](directoryobject.md) | Добавление User или Group в коллекцию rejectedSenders. |
 | [Удаление rejectedSender](../api/group-delete-rejectedsenders.md) | [directoryObject](directoryobject.md) | Удаление нового объекта User или Group из коллекции объектов rejectedSender. |
 | [Создание параметра](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) | Создание параметра объекта на базе groupSettingTemplate. POST-запрос должен предоставлять объекты settingValue для всех параметров, определенных в шаблоне. В случае этой операции могут использоваться только шаблоны специально для групп. |
-| [Получение параметра](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Считывание свойств определенного объекта параметра. |
-| [Перечисление параметров](../api/groupsetting-list.md) | Коллекция объектов [groupSetting](groupsetting.md) | Перечисление свойств всех объектов параметра. |
+| [Получение параметра](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Считывание свойств определенного объекта setting. |
+| [Перечисление параметров](../api/groupsetting-list.md) | Коллекция объектов [groupSetting](groupsetting.md) | Перечисление свойств всех объектов setting. |
 | [Обновление параметра](../api/groupsetting-update.md) | Нет | Обновление объекта параметра. |
 | [Удаление параметра](../api/groupsetting-delete.md) | Нет | Удаление объекта параметра. |
 | [Получение шаблона параметров](../api/groupsettingtemplate-get.md) | Нет | Чтение свойств шаблона параметров. |
@@ -174,7 +174,7 @@ ms.locfileid: "48582025"
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Пользователь или приложение, создавшие группу. ПРИМЕЧАНИЕ. Это значение не задается, если пользователь является администратором. Только для чтения.|
 |drive|[drive](drive.md)|Используемый по умолчанию диск группы. Только для чтения.|
 |drives|Коллекция [drive](drive.md)|Диск группы. Только для чтения.|
-|Мероприятия|Коллекция [event](event.md)|События в календаре группы.|
+|events|Коллекция [event](event.md)|События в календаре группы.|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для группы. Только для чтения. Допускается значение null.|
 |groupLifecyclePolicies|Коллекция [groupLifecyclePolicy](grouplifecyclepolicy.md)|Коллекция политик жизненного цикла для этой группы. Только для чтения. Допускается значение null.|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Группы, в которых состоит эта группа. Методы HTTP: GET (поддерживается для всех групп). Только для чтения. Допускается значение null.|

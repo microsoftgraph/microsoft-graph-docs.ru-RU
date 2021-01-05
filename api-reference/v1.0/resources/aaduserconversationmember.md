@@ -5,12 +5,12 @@ localization_priority: Priority
 author: laujan
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: c7e989adcafd4752dea6d2fca82ecfa7638bf1ec
-ms.sourcegitcommit: 0d4377b0153bc339ab7b3b1a6ee4d52848b622d4
+ms.openlocfilehash: cf678e090f4af26aca1222ba464771111b0b6a60
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49714125"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754301"
 ---
 # <a name="aaduserconversationmember-resource-type"></a>Тип ресурса aadUserConversationMember
 
