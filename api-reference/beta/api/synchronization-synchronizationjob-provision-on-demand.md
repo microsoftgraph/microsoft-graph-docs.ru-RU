@@ -5,29 +5,29 @@ author: ArvindHarinder1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 46df233b8d5f5069bf3b04ccdd118815f245ea8b
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: ca9a670bfb70e35a76915514d925f7cb3fb0fb06
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719983"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753435"
 ---
-# <a name="synchronizationjob-provisionondemand"></a><span data-ttu-id="e73f1-103">synchronizationJob: provisionOnDemand</span><span class="sxs-lookup"><span data-stu-id="e73f1-103">synchronizationJob: provisionOnDemand</span></span>
+# <a name="synchronizationjob-provisionondemand"></a><span data-ttu-id="29338-103">synchronizationJob: provisionOnDemand</span><span class="sxs-lookup"><span data-stu-id="29338-103">synchronizationJob: provisionOnDemand</span></span>
 
-<span data-ttu-id="e73f1-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="e73f1-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="29338-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="29338-104">Namespace: microsoft.graph</span></span>
 
-<span data-ttu-id="e73f1-105">Выберите пользователя и подберем учетную запись по запросу.</span><span class="sxs-lookup"><span data-stu-id="e73f1-105">Select a user and provision the account on-demand.</span></span>
+<span data-ttu-id="29338-105">Выберите пользователя и подберем учетную запись по запросу.</span><span class="sxs-lookup"><span data-stu-id="29338-105">Select a user and provision the account on-demand.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e73f1-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e73f1-106">Permissions</span></span>
-<span data-ttu-id="e73f1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e73f1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="29338-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="29338-106">Permissions</span></span>
+<span data-ttu-id="29338-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="29338-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e73f1-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e73f1-109">Permission type</span></span>                        | <span data-ttu-id="e73f1-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e73f1-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="29338-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="29338-109">Permission type</span></span>                        | <span data-ttu-id="29338-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="29338-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e73f1-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e73f1-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="e73f1-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e73f1-112">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="e73f1-113">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e73f1-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="e73f1-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e73f1-114">Not supported.</span></span> |
-|<span data-ttu-id="e73f1-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e73f1-115">Application</span></span>                            |<span data-ttu-id="e73f1-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e73f1-116">Not supported.</span></span> |
+|<span data-ttu-id="29338-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="29338-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="29338-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="29338-112">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="29338-113">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="29338-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="29338-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="29338-114">Not supported.</span></span> |
+|<span data-ttu-id="29338-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="29338-115">Application</span></span>                            |<span data-ttu-id="29338-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="29338-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e73f1-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e73f1-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="29338-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="29338-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -37,32 +37,32 @@ ms.locfileid: "49719983"
 POST /servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizationJobId}/provisionOnDemand
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e73f1-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e73f1-118">Request headers</span></span>
-|<span data-ttu-id="e73f1-119">Имя</span><span class="sxs-lookup"><span data-stu-id="e73f1-119">Name</span></span>|<span data-ttu-id="e73f1-120">Описание</span><span class="sxs-lookup"><span data-stu-id="e73f1-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="29338-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="29338-118">Request headers</span></span>
+|<span data-ttu-id="29338-119">Имя</span><span class="sxs-lookup"><span data-stu-id="29338-119">Name</span></span>|<span data-ttu-id="29338-120">Описание</span><span class="sxs-lookup"><span data-stu-id="29338-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="e73f1-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e73f1-121">Authorization</span></span>|<span data-ttu-id="e73f1-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e73f1-p102">Bearer {token}. Required.</span></span>|
-|<span data-ttu-id="e73f1-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e73f1-124">Content-Type</span></span>|<span data-ttu-id="e73f1-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e73f1-p103">application/json. Required.</span></span>|
+|<span data-ttu-id="29338-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="29338-121">Authorization</span></span>|<span data-ttu-id="29338-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="29338-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="29338-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="29338-124">Content-Type</span></span>|<span data-ttu-id="29338-p103">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="29338-p103">application/json. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e73f1-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e73f1-127">Request body</span></span>
-<span data-ttu-id="e73f1-128">В тело запроса добавьте параметры в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e73f1-128">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="29338-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="29338-127">Request body</span></span>
+<span data-ttu-id="29338-128">В тело запроса добавьте параметры в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="29338-128">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="e73f1-129">В следующей таблице указаны параметры, которые можно использовать с этим действием.</span><span class="sxs-lookup"><span data-stu-id="e73f1-129">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="29338-129">В следующей таблице указаны параметры, которые можно использовать с этим действием.</span><span class="sxs-lookup"><span data-stu-id="29338-129">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="e73f1-130">Параметр</span><span class="sxs-lookup"><span data-stu-id="e73f1-130">Parameter</span></span>|<span data-ttu-id="e73f1-131">Тип</span><span class="sxs-lookup"><span data-stu-id="e73f1-131">Type</span></span>|<span data-ttu-id="e73f1-132">Описание</span><span class="sxs-lookup"><span data-stu-id="e73f1-132">Description</span></span>|
+|<span data-ttu-id="29338-130">Параметр</span><span class="sxs-lookup"><span data-stu-id="29338-130">Parameter</span></span>|<span data-ttu-id="29338-131">Тип</span><span class="sxs-lookup"><span data-stu-id="29338-131">Type</span></span>|<span data-ttu-id="29338-132">Описание</span><span class="sxs-lookup"><span data-stu-id="29338-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e73f1-133">parameters</span><span class="sxs-lookup"><span data-stu-id="e73f1-133">parameters</span></span>|<span data-ttu-id="e73f1-134">[Коллекция synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md)</span><span class="sxs-lookup"><span data-stu-id="e73f1-134">[synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md) collection</span></span>|<span data-ttu-id="e73f1-135">Представляет объекты, которые будут быть выполнены с выполнением правил синхронизации.</span><span class="sxs-lookup"><span data-stu-id="e73f1-135">Represents the objects that will be provisioned and the synchronization rules executed.</span></span> <span data-ttu-id="e73f1-136">Ресурс в основном используется для предоставления по требованию.</span><span class="sxs-lookup"><span data-stu-id="e73f1-136">The resource is primarily used for on-demand provisioning.</span></span> |
+|<span data-ttu-id="29338-133">parameters</span><span class="sxs-lookup"><span data-stu-id="29338-133">parameters</span></span>|<span data-ttu-id="29338-134">[Коллекция synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md)</span><span class="sxs-lookup"><span data-stu-id="29338-134">[synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md) collection</span></span>|<span data-ttu-id="29338-135">Представляет объекты, которые будут быть выполнены с выполнением правил синхронизации.</span><span class="sxs-lookup"><span data-stu-id="29338-135">Represents the objects that will be provisioned and the synchronization rules executed.</span></span> <span data-ttu-id="29338-136">Ресурс в основном используется для предоставления по требованию.</span><span class="sxs-lookup"><span data-stu-id="29338-136">The resource is primarily used for on-demand provisioning.</span></span> |
 
 
 
-## <a name="response"></a><span data-ttu-id="e73f1-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="e73f1-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="29338-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="29338-137">Response</span></span>
 
-<span data-ttu-id="e73f1-138">В случае успеха этот метод возвращает код `200 OK` отклика и строкуKeyStringValuePair.</span><span class="sxs-lookup"><span data-stu-id="e73f1-138">If successful, this method returns a `200 OK` response code and a stringKeyStringValuePair.</span></span>
+<span data-ttu-id="29338-138">В случае успеха этот метод возвращает код `200 OK` отклика и строкуKeyStringValuePair.</span><span class="sxs-lookup"><span data-stu-id="29338-138">If successful, this method returns a `200 OK` response code and a stringKeyStringValuePair.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="e73f1-139">Примеры</span><span class="sxs-lookup"><span data-stu-id="e73f1-139">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="29338-139">Примеры</span><span class="sxs-lookup"><span data-stu-id="29338-139">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="e73f1-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="e73f1-140">Request</span></span>
+### <a name="request"></a><span data-ttu-id="29338-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="29338-140">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="e73f1-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="e73f1-141">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="29338-141">HTTP</span><span class="sxs-lookup"><span data-stu-id="29338-141">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_provisionondemand"
@@ -83,16 +83,28 @@ Content-length: 122
     }]
   }
 ```
-# <a name="javascript"></a>[<span data-ttu-id="e73f1-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="e73f1-142">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="29338-142">JavaScript</span><span class="sxs-lookup"><span data-stu-id="29338-142">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-provisionondemand-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[<span data-ttu-id="29338-143">C#</span><span class="sxs-lookup"><span data-stu-id="29338-143">C#</span></span>](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-provisionondemand-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[<span data-ttu-id="29338-144">Objective-C</span><span class="sxs-lookup"><span data-stu-id="29338-144">Objective-C</span></span>](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-provisionondemand-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[<span data-ttu-id="29338-145">Java</span><span class="sxs-lookup"><span data-stu-id="29338-145">Java</span></span>](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-provisionondemand-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
 
-### <a name="response"></a><span data-ttu-id="e73f1-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="e73f1-143">Response</span></span>
-<span data-ttu-id="e73f1-144">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="e73f1-144">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="29338-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="29338-146">Response</span></span>
+<span data-ttu-id="29338-147">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="29338-147">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
