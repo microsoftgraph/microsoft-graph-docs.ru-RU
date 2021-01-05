@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: 136f1f99ad6212d5200295d26079919307b122e2
-ms.sourcegitcommit: fa08172601324fc01b090f8135fba4600bd1a9f8
+ms.openlocfilehash: afb3a634a3b18be1c19e774b25b0e8db74a68a09
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "38303037"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49756127"
 ---
 ```javascript
 
@@ -19,13 +19,11 @@ const inviteParticipantsOperation = {
   participants: [
     {
       @odata.type: "#microsoft.graph.invitationParticipantInfo",
-      replacesCallId: "a7ebfb2d-871e-419c-87af-27290b22e8db",
       identity: {
         @odata.type: "#microsoft.graph.identitySet",
-        user: {
+        phone: {
           @odata.type: "#microsoft.graph.identity",
-          id: "278405a3-f568-4b3e-b684-009193463064",
-          identityProvider: "AAD"
+          id: "+12345678901"
         }
       }
     }
