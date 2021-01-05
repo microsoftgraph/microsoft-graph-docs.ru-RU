@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: dd253fdfea0b21189bcaf8f32dbd553314e53610
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 762d26f8f339037a6a6031f44efe3cf219a03998
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956408"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752978"
 ---
 # <a name="get-device"></a>Вывод устройства
 
@@ -20,7 +20,7 @@ ms.locfileid: "48956408"
 
 Получение свойств и связей объекта устройства.
 
-Так как ресурс **Device** поддерживает [расширения](/graph/extensibility-overview), с помощью операции можно также `GET` получить настраиваемые свойства и данные расширения в экземпляре **устройства** .
+Так как **ресурс устройства** поддерживает [расширения,](/graph/extensibility-overview)вы также можете использовать эту операцию для получения пользовательских свойств и данных расширения `GET` в **экземпляре** устройства.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,7 +30,7 @@ ms.locfileid: "48956408"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+|Приложение | Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -51,8 +51,8 @@ GET /devices/{id}
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [device](../resources/device.md) в тексте отклика.
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+### <a name="request"></a>Запрос
+Ниже показан пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {
@@ -81,10 +81,12 @@ GET https://graph.microsoft.com/beta/devices/{id}
 ---
 
 
-> Примечание. Параметр id в запросе — это свойство id объекта device, а не свойство deviceId.
+> **Примечание.** Запрос `id` является свойством **id** устройства, а не **свойством deviceId.**
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+### <a name="response"></a>Отклик
+В следующем примере показан отклик для устройства без **hostNames.** 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,9 +102,34 @@ Content-length: 322
   "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
   "deviceId": "deviceId-value",
   "deviceMetadata": "deviceMetadata-value",
-  "deviceVersion": 99
+  "deviceVersion": 99,
+  "hostNames": []
 }
 ```
+
+В следующем примере показан отклик для устройства с **hostNames.** 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 322
+
+{
+  "accountEnabled": true,
+  "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
+  "deviceId": "deviceId-value",
+  "deviceMetadata": "deviceMetadata-value",
+  "deviceVersion": 99,
+  "hostnames":["hostname1.contoso.onmicrosoft.com", "hostname1"]
+}
+```
+
 
 ## <a name="see-also"></a>См. также
 

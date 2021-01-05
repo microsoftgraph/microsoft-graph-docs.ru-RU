@@ -5,12 +5,12 @@ author: tomsato-ms
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: 23d61d24367bc5c69d4613ac30deed9244a5ac08
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 85063072fb1a9c8d7ec4e5a12805b2fe65a50ddd
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706391"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753095"
 ---
 # <a name="update-printjob-configuration"></a>Обновление конфигурации printJob
 
@@ -44,7 +44,7 @@ PATCH /print/printers/{id}/jobs/{id}/configuration
 | Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажийте значения соответствующих полей [printJobConfiguration.](../resources/printjobconfiguration.md) Существующие свойства, не включенные в тело запроса, сохраняют свои прежние значения.
+В теле запроса укажийте значения соответствующих полей [printJobConfiguration.](../resources/printjobconfiguration.md) Существующие свойства, не включенные в тело запроса, сохраняют свои предыдущие значения.
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
@@ -54,6 +54,8 @@ PATCH /print/printers/{id}/jobs/{id}/configuration
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob-update-configuration"
@@ -93,6 +95,16 @@ POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45
   "fitPdfToPage": false
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/printjob-update-configuration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/printjob-update-configuration-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 

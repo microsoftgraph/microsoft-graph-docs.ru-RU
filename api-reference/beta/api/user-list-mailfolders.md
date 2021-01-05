@@ -1,16 +1,16 @@
 ---
 title: Список объектов mailFolder
-description: Получение всех почтовых папок в почтовом ящике вошедшего пользователя.
+description: Получите все почтовые папки в почтовом ящике пользователя, выписав его.
 localization_priority: Normal
 doc_type: apiPageType
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: 93c61bb6fe117d86719fa8be639d7ebcbbae44be
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7c8a73244b23b5fae115a844173d2ce3c7cb190f
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982197"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753958"
 ---
 # <a name="list-mailfolders"></a>Список объектов mailFolder
 
@@ -18,7 +18,9 @@ ms.locfileid: "48982197"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение всех почтовых папок в почтовом ящике вошедшего пользователя, в том числе любых [папках поиска почты](../resources/mailsearchfolder.md).
+Получите все почтовые папки в почтовом ящике указанного пользователя, включая все папки [поиска почты.](../resources/mailsearchfolder.md)
+
+По умолчанию эта операция не возвращает скрытые папки. Используйте параметр _запроса includeHiddenFolders,_ чтобы включить их в ответ.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,21 +29,33 @@ ms.locfileid: "48982197"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
 |Делегированные (личная учетная запись Майкрософт) | Mail.ReadBasic, Mail.Read, Mail.ReadWrite    |
-|Для приложения | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
+|Приложение | Mail.ReadBasic.All, Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
+
+Чтобы получить все почтовые папки в почтовом ящике указанного пользователя, за исключением скрытых папок:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders
 GET /users/{id | userPrincipalName}/mailFolders
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+
+Чтобы включить _скрытые_ почтовые папки в ответ:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailFolders/?includeHiddenFolders=true
+GET /users/{id | userPrincipalName}/mailFolders/?includeHiddenFolders=true
+```
+
+## <a name="query-parameters"></a>Параметры запроса
+Чтобы получить список всех объектов mailFolders, включая скрытые (их свойство **isHidden** имеет true), в URL-адресе запроса укажите параметр запроса как , как показано в разделе `includeHiddenFolders` `true` [HTTP-запроса.](#http-request)
+
+Этот метод также поддерживает [параметры запроса OData](/graph/query-parameters) для настройки отклика.
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
-| Content-Type   | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -49,8 +63,13 @@ GET /users/{id | userPrincipalName}/mailFolders
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [mailFolder](../resources/mailfolder.md) в тексте отклика.
-## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-list-mail-folders-in-the-signed-in-users-mailbox"></a>Пример 1. Список папок почты в почтовом ящике пользователя, выписав его
+
+В этом примере в **ответ включается объект mailSearchFolder.** Папка поиска почты — это папка под папкой "Входящие" с отображаемым именем "Еженедельные дайджесты".
+
+#### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -79,8 +98,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders
 
 ---
 
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа, который включает в себя **маилсеарчфолдер** , который является дочерней папкой в папке "Входящие". Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
+
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,7 +122,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "archive"
+            "wellKnownName": "archive",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBFQAAAA==",
@@ -110,7 +132,8 @@ Content-type: application/json
             "childFolderCount": 1,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "conversationhistory"
+            "wellKnownName": "conversationhistory",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCgAAAA==",
@@ -119,7 +142,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "deleteditems"
+            "wellKnownName": "deleteditems",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBDwAAAA==",
@@ -128,7 +152,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "drafts"
+            "wellKnownName": "drafts",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBDAAAAA==",
@@ -137,7 +162,8 @@ Content-type: application/json
             "childFolderCount": 1,
             "unreadItemCount": 70,
             "totalItemCount": 71,
-            "wellKnownName": "inbox"
+            "wellKnownName": "inbox",
+            "isHidden": false
         },
         {
             "@odata.type": "#microsoft.graph.mailSearchFolder",
@@ -148,6 +174,7 @@ Content-type: application/json
             "unreadItemCount": 4,
             "totalItemCount": 5,
             "wellKnownName": null,
+            "isHidden": false,
             "isSupported": true,
             "filterQuery": "contains(subject, 'weekly digest')"
         },
@@ -158,7 +185,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "junkemail"
+            "wellKnownName": "junkemail",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCwAAAA==",
@@ -167,7 +195,8 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "outbox"
+            "wellKnownName": "outbox",
+            "isHidden": false
         },
         {
             "id": "AQMkADYAAAIBCQAAAA==",
@@ -176,7 +205,65 @@ Content-type: application/json
             "childFolderCount": 0,
             "unreadItemCount": 0,
             "totalItemCount": 0,
-            "wellKnownName": "sentitems"
+            "wellKnownName": "sentitems",
+            "isHidden": false
+        }
+    ]
+}
+```
+
+
+### <a name="example-2-include-hidden-folders-in-the-signed-in-users-mailbox"></a>Пример 2. Включив скрытые папки в почтовый ящик во включенного пользователя
+
+В следующем примере параметр запроса используется для получения списка почтовых папок, `includeHiddenFolders` включая скрытые почтовые папки. Ответ включает папку "Clutters", для нее **задав для isHidden** задав true.
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "request",
+  "name": "get_hiddenmailfolders"
+}-->
+```http
+GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
+```
+
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
+
+>**Примечание.** Показанный здесь объект ответа сокращен для учитаемости и не включает все папки по умолчанию в почтовом ящике пользователя.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailFolder",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 232
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('68ca8ec0-11f8-456b-a785-70d9936650d5')/mailFolders",
+    "value": [
+        {
+            "id": "AAMkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWAAA=",
+            "displayName": "Clutters",
+            "parentFolderId": "AAMkADg3NTY5MDg4LWMzYmQtEIAAA=",
+            "childFolderCount": 0,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": null,
+            "isHidden": true
+        },
+        {
+            "id": "AAMkADg3NTY5MDg4LWMzYmQtNDQzNi05OTgwLWAAA=",
+            "displayName": "Conversation History",
+            "parentFolderId": "AAMkADg3NTY5MDg4LWMzYmQtEIAAA=",
+            "childFolderCount": 1,
+            "unreadItemCount": 0,
+            "totalItemCount": 0,
+            "wellKnownName": "conversationhistory",
+            "isHidden": false
         }
     ]
 }

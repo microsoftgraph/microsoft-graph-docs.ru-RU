@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: ad921da28860c7871f8ca53c1a21ca9e465d8c4c
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: 5734c4f14048934834cfb390aeee1d732c20b416
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49689196"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752759"
 ---
 ```javascript
 
@@ -15,10 +15,7 @@ const options = {
 
 const client = Client.init(options);
 
-const setOrder = Content-Type: application/json
-Content-length: 90
-
-{
+const setOrder = {
   newAssignmentOrder: {
     order: [
         "City",

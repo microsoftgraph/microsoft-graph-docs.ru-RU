@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c6af7347bd1ac2f164fe1d73e24ea9fc48cd6f8d
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: a23916c9941afd17064e75add3e7c5ca5480fa54
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705921"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753471"
 ---
 # <a name="update-channel"></a>Ветвь обновлений 
 
@@ -27,7 +27,7 @@ ms.locfileid: "49705921"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Приложение | ChannelSettings.ReadWrite.Group*, ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Примечание**. Разрешения, помеченные звездочкой (*), используют [согласие для конкретных ресурсов]( https://aka.ms/teams-rsc).
@@ -90,11 +90,11 @@ PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-update-channel-with-moderation-settings"></a>Пример 2. Обновление канала с помощью параметров модерирования
+### <a name="example-2-update-channel-with-moderation-settings"></a>Пример 2. Обновление канала с помощью параметров модерации
 
 #### <a name="request"></a>Запрос
 
-В следующем примере показан запрос на обновление канала с помощью параметров модерации. Эту операцию может выполнить только владелец команды.
+В следующем примере показан [](../resources/channelmoderationsettings.md) запрос на обновление параметров модерации канала. Эту операцию может выполнить только владелец команды.
 
 <!-- {
   "blockType": "request",

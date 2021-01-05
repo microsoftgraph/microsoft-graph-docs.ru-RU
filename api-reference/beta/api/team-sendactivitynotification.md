@@ -1,21 +1,21 @@
 ---
-title: 'команда: Сендактивитинотификатион'
-description: Отправка уведомления о канале активности в области действия команды.
+title: 'team: sendActivityNotification'
+description: Отправка уведомления веб-канала активности в области команды.
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 6db256a71c17e4c940669aaf96f61f70285c8f3e
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: f4ad396d25ee20bd4adc5bf579925bbd4e8de1fd
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523415"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49754063"
 ---
-# <a name="team-sendactivitynotification"></a>команда: Сендактивитинотификатион
+# <a name="team-sendactivitynotification"></a>team: sendActivityNotification
 Пространство имен: microsoft.graph
 
-Отправка уведомления о канале активности в области действия команды. Дополнительные сведения об отправке уведомлений и требованиях для этого можно найти в разделе [Отправка уведомлений о действиях в группах](/graph/teams-send-activityfeednotifications).
+Отправка уведомления веб-канала активности в области команды. Дополнительные сведения об отправке уведомлений и требованиях для этого см. в отправке уведомлений [о действиях Teams.](/graph/teams-send-activityfeednotifications)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,25 +45,25 @@ POST /teams/{teamId}/sendActivityNotification
 ## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
-В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
+В следующей таблице указаны параметры, которые можно использовать с этим действием.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|topic|[теамворкактивититопик](../resources/teamworkactivitytopic.md)|Тема уведомления. Указывает ресурс, о котором идет речь.|
-|activityType|String|Тип действия. Он должен быть объявлен в [манифесте приложения Teams](/microsoftteams/platform/overview).|
-|чаинид|Int64|Необязательный параметр. Используется для переопределения предыдущего уведомления. Используйте одно и то же `chainId` в последующих запросах для переопределения предыдущего уведомления.|
+|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Тема уведомления. Указывает ресурс, о который идет речь.|
+|activityType|String|Тип действия. Это должно быть объявлено в манифесте [приложения Teams.](/microsoftteams/platform/overview)|
+|chainId|Int64|Необязательный элемент. Используется для переопределения предыдущего уведомления. Используйте то же самое `chainId` в последующих запросах для переопределения предыдущего уведомления.|
 |previewText|[itemBody](../resources/itembody.md)|Предварительный просмотр текста уведомления. Microsoft Teams будет показывать только первые 150 символов.|
-|темплатепараметерс|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения для переменных шаблона, определенных в записи веб-канала активности, соответствующей `activityType` [манифесту приложения Teams](/microsoftteams/platform/overview).|
-|получатель;|[теамворкнотификатионреЦипиент](../resources/teamworknotificationrecipient.md)|Получатель уведомления. Поддерживаются только пользователи Azure AD. См. также [аадусернотификатионреЦипиент](../resources/aadusernotificationrecipient.md). |
+|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения переменных шаблона, определенных в записи веб-канала активности, соответствующей `activityType` [манифесту приложения Teams.](/microsoftteams/platform/overview)|
+|получатель;|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Получатель уведомления. Поддерживаются только пользователи Azure AD. См. [также aadUserNotificationRecipient.](../resources/aadusernotificationrecipient.md) |
 
-Следующие ресурсы поддерживаются при задании `source` значения свойства **Topic** `entityUrl` следующим образом:
+Следующие ресурсы поддерживаются при установке для свойства `source` **темы** значения `entityUrl` :
 
 - [team](../resources/team.md)
 - [channel](../resources/channel.md)
-- [чатмесаже](../resources/chatmessage.md)
+- [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
 
-> **Примечание:** URL-адрес сущности должен быть таким же или дочерним ресурсом команды в URL-адресе. Кроме того, в команде должно быть установлено [приложение](/microsoftteams/platform/overview) Teams.
+> **Примечание.** URL-адрес сущности должен быть тем же или иным ресурсом команды в URL-адресе. Кроме того, приложение [Teams](/microsoftteams/platform/overview) должно быть установлено в команде.
 
 ## <a name="response"></a>Ответ
 
@@ -71,9 +71,9 @@ POST /teams/{teamId}/sendActivityNotification
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-notify-a-user-about-pending-finance-approval-requests"></a>Пример 1: уведомить пользователя о предопределенном запросе на утверждение в финансах
+### <a name="example-1-notify-a-user-about-pending-finance-approval-requests"></a>Пример 1. Уведомление пользователя об ожидающих запросах на финансовое утверждение
 
-В этом примере показано, как можно отправить уведомление веб-канала активности для команды. В этом примере владелец команды уведомляется о незавершенных запросах на утверждение в финансах.
+В этом примере показано, как можно отправить уведомление веб-канала активности для команды. В этом примере владельцу команды сообщается об ожидающих запросах на финансовое утверждение.
 
 #### <a name="request"></a>Запрос
 
@@ -112,6 +112,18 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/team-sendactivitynotification-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -125,9 +137,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-notify-a-user-about-a-channel-tab"></a>Пример 2: уведомление пользователя о вкладке канала
+### <a name="example-2-notify-a-user-about-a-channel-tab"></a>Пример 2. Уведомление пользователя о вкладке канала
 
-Как и в предыдущем примере, в этом примере используется `entityUrl` для `topic` . Однако в этом примере показано, как создать ссылку на [вкладку](../resources/teamstab.md) в [канале](../resources/channel.md). На вкладке размещается страница, на которой пользователь находится в состоянии бронирования гостиницы. При выборе уведомления пользователь будет переходить на вкладку, где они могут проверить резервирование.
+Как и в предыдущем примере, в этом примере `entityUrl` используется для `topic` . Однако в этом примере ссылки на [вкладку](../resources/teamstab.md) в [канале.](../resources/channel.md) На вкладке размещена страница с состоянием резервирования в гостинице. При выборе уведомления пользователь перенаберется на вкладку, где он сможет проверить свое резервирование.
 
 #### <a name="request"></a>Запрос
 <!-- {
@@ -175,9 +187,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-notify-a-user-about-an-event-using-custom-topic"></a>Пример 3: уведомление пользователя о событии с помощью настраиваемого раздела
+### <a name="example-3-notify-a-user-about-an-event-using-custom-topic"></a>Пример 3. Уведомление пользователя о событии с помощью настраиваемой темы
 
-Как показано в предыдущих примерах, вы можете ссылаться на различные аспекты команды. Тем не менее, если вы хотите создать ссылку на аспект, не являющийся частью команды или не представленный в Microsoft Graph, или вы хотите изменить имя, вы можете задать `topic` для `text` него значение и передать его настраиваемое значение. `webUrl` является обязательным, если задано значение `topic` source `text` .
+Как видно из предыдущих примеров, вы можете ссылаться на различные аспекты команды. Однако если вы хотите связать аспект, который не является частью команды или не представлен Microsoft Graph, или вы хотите настроить имя, вы можете настроить источник и передать для него настраиваемые `topic` `text` значения. `webUrl` требуется при установке `topic` для источника параметра `text` ..
 
 #### <a name="request"></a>Запрос
 <!-- {

@@ -5,12 +5,12 @@ author: spunukol
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 2d0fe2403e04751a734da726d6f4c2cb6890813a
-ms.sourcegitcommit: eafb1629e52450dab0da6a1fb6d1ddfa878777c6
+ms.openlocfilehash: eeb80864abfd8e198093d839930bc37065c5fd4d
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/16/2020
-ms.locfileid: "49082019"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752782"
 ---
 # <a name="list-devices"></a>Список устройств
 
@@ -29,7 +29,7 @@ ms.locfileid: "49082019"
 |:--------------- |:------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений | Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+| Приложение | Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -59,7 +59,7 @@ GET /devices
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-a-list-of-devices"></a>Пример 1: получение списка устройств
+### <a name="example-1-get-a-list-of-devices"></a>Пример 1. Получить список устройств
 
 #### <a name="request"></a>Запрос
 
@@ -121,7 +121,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-only-a-count-of-devices"></a>Пример 2: получение только количества устройств
+### <a name="example-2-get-only-a-count-of-devices"></a>Пример 2. Получите только количество устройств
 
 #### <a name="request"></a>Запрос
 
@@ -153,7 +153,7 @@ Content-type: text/plain
 
 294
 
-### <a name="example-3-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 3: используйте $filter и $top, чтобы получить одно устройство с отображаемым именем, начинающимся с "a", включая количество возвращаемых объектов.
+### <a name="example-3-use-filter-and-top-to-get-one-device-with-a-display-name-that-starts-with-a-including-a-count-of-returned-objects"></a>Пример 3. Используйте $filter и $top, чтобы получить одно устройство с отображаемой именем, которое начинается с "a", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 
@@ -194,13 +194,24 @@ Content-type: application/json
       "displayName":"a_device_1",
       "Manufacturer":"Google",
       "Model":"Pixel 3a",
-      "operatingSystemVersion":"10.0"
+      "operatingSystemVersion":"10.0",
+      "hostNames":[]
+    },
+    {
+      "accountEnabled":true,
+      "deviceId":"00000000-0000-0000-0000-000000000001",
+      "deviceVersion":1,
+      "displayName":"a_device_1",
+      "Manufacturer":"Microsoft",
+      "Model":"Surface",
+      "operatingSystemVersion":"windows10EnterpriseN",
+      "hostNames":["device_1.contoso.onmicrosoft.com", "device_1"]
     }
   ]
 }
 ```
 
-### <a name="example-4-use-search-to-get-devices-with-display-names-that-contain-the-letters-android-including-a-count-of-returned-objects"></a>Пример 4: использование $search для получения устройств с отображаемыми именами, которые содержат буквы "Android", включая число возвращаемых объектов
+### <a name="example-4-use-search-to-get-devices-with-display-names-that-contain-the-letters-android-including-a-count-of-returned-objects"></a>Пример 4. Использование $search для получения устройств с отображаемой и отображаемой именами, которые содержат буквы "Android", включая количество возвращенных объектов
 
 #### <a name="request"></a>Запрос
 
@@ -241,7 +252,8 @@ Content-type: application/json
       "displayName":"contoso_Android",
       "Manufacturer":"Google",
       "Model":"Pixel 3a",
-      "operatingSystemVersion":"10.0"
+      "operatingSystemVersion":"10.0",
+      "hostNames":[]
     }
   ]
 }

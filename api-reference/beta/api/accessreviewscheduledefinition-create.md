@@ -5,12 +5,12 @@ localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5b9308111bdad2482b71339333822d7878d3187f
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 041ac8c7c7b0a3e597ebcf68be00d65eaabec41b
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705711"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753593"
 ---
 # <a name="create-accessreviewscheduledefinition"></a>Создание accessReviewScheduleDefinition
 
@@ -27,7 +27,7 @@ ms.locfileid: "49705711"
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)     | AccessReview.ReadWrite.All  |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение                            | AccessReview.ReadWrite.All |
 
 Во входе пользователя также должна быть роль каталога, которая позволяет создать проверку доступа.  Дополнительные сведения см. в требованиях к роли и разрешениям для [проверки доступа.](../resources/accessreviewsv2-root.md)
@@ -56,7 +56,7 @@ POST /identityGovernance/accessReviews/definitions
 | scope | [accessReviewScope](../resources/accessreviewscope.md) | Определяет область пользователей, проверяемую в группе. См. [accessReviewScope.](../resources/accessreviewscheduledefinition.md) Обязательный.| 
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | В случае проверки всех групп это определяет область проверки групп. См. [accessReviewScope.](../resources/accessreviewscheduledefinition.md) | 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| Параметры для серии отзывов о доступе. Здесь определяется повторение. См. [accessReviewScheduleSettings.](../resources/accessreviewscheduledefinition.md) |
-| рецензенты | [Коллекция accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) | Определяет, кто такие рецензенты. Если ни один из них не указан, отзыв будет самообнаправлением (пользователи просмотрели свой собственный доступ). См. [accessReviewReviewerScope.](../resources/accessreviewscheduledefinition.md) |
+| рецензенты | [Коллекция accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) | Определяет, кто такие рецензенты. Если ни один из них не указан, отзыв будет самообссвешенным (пользователи просмотрели свой собственный доступ). См. [accessReviewReviewerScope.](../resources/accessreviewscheduledefinition.md) |
 
 
 ## <a name="response"></a>Отклик
@@ -118,6 +118,18 @@ Content-type: application/json
 ```
 # <a name="javascript"></a>[JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewscheduledefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewscheduledefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accessreviewscheduledefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewscheduledefinition-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

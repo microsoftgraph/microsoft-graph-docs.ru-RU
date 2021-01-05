@@ -2,15 +2,15 @@
 title: Тип ресурса mailFolder
 description: Почтовая папка в почтовом ящике пользователя, например "Входящие" или "Черновики". Почтовые папки могут содержать сообщения, другие элементы Outlook и дочерние почтовые папки.
 localization_priority: Normal
-author: svpsiva
+author: abheek-das
 ms.prod: outlook
 doc_type: resourcePageType
-ms.openlocfilehash: 2279d5da5bf663b776ec9deee5241103079d4bb1
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 7f05f70ae9faa6bab0ec0e7d122e4b1c443a8f5c
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48079816"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753913"
 ---
 # <a name="mailfolder-resource-type"></a>Тип ресурса mailFolder
 
@@ -80,10 +80,11 @@ GET /me/mailFolders/drafts
 |childFolderCount|Int32|Количество непосредственных дочерних элементов mailFolder в текущем элементе mailFolder.|
 |displayName|Строка|Отображаемое имя элемента mailFolder.|
 |id|Строка|Уникальный идентификатор элемента mailFolder.|
+|isHidden|Boolean|Указывает, скрыт ли объект mailFolder. Это свойство можно установить только при создании папки. Дополнительные сведения можно найти в [скрытых почтовых папках.](#hidden-mail-folders)|
 |parentFolderId|Строка|Уникальный идентификатор родительского элемента mailFolder для элемента mailFolder.|
 |totalItemCount|Int32|Количество элементов в элементе mailFolder.|
 |unreadItemCount|Int32|Количество элементов, помеченных как непрочитанные, в элементе mailFolder.|
-|wellKnownName|String|Хорошо известное имя папки для папки. Ниже перечислены возможные значения. Это свойство задается только для папок по умолчанию, создаваемых в Outlook. Для других папок это свойство имеет **значение NULL**.|
+|wellKnownName|String|Известное имя папки. Возможные значения перечислены выше. Это свойство устанавливается только для папок по умолчанию, созданных Outlook. Для других папок это свойство имеет **null.**|
 
 **Эффективный доступ к сведениям о количестве элементов**
 
@@ -96,7 +97,14 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 
 Папки почты в Outlook могут содержать элементы нескольких типов, например, папка "Входящие" может содержать элементы приглашений на собрания, не связанные с почтовыми элементами. Свойства `TotalItemCount` и `UnreadItemCount` включают элементы из папки почты вне зависимости от их типов.
 
-## <a name="relationships"></a>Отношения
+### <a name="hidden-mail-folders"></a>Скрытые почтовые папки
+Значение свойства по `isHidden` умолчанию: `false` . Настроить **isHidden можно** только один раз [при создании mailFolder.](../api/user-post-mailfolders.md) Обновление свойства с помощью операции PATCH невозможно. Чтобы изменить **свойство isHidden** папки, удалите существующую папку и создайте новую с нужным значением.
+
+Скрытые почтовые папки поддерживают все операции, поддерживаемые обычной почтовой папкой.
+
+По умолчанию при [перечислении объектов mailFolders](../api/user-list-mailfolders.md) возвращаются только не скрытые почтовые папки. Чтобы включить скрытые почтовые папки в ответ, используйте параметр `includeHiddenFolders=true` запроса. Затем используйте **свойство isHidden,** чтобы определить, скрыта ли папка почты. 
+
+## <a name="relationships"></a>Связи
 
 | Связь | Тип | Описание |
 |:-------------|:-----|:------------|
@@ -132,6 +140,7 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
   "totalItemCount": 1024,
   "unreadItemCount": 1024,
   "wellKnownName": "string",
+  "isHidden": false,
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
   "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
@@ -142,7 +151,7 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 
 ## <a name="see-also"></a>См. также
 
-- [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview)
+- [Отслеживание изменений данных Microsoft Graph с помощью запроса изменений](/graph/delta-query-overview)
 - [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

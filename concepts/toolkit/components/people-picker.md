@@ -3,12 +3,12 @@ title: People-Picker компонента
 description: Веб-компонент mgt-people-picker можно использовать для поиска указанного количества людей и отображения списка результатов через Microsoft Graph.
 localization_priority: Normal
 author: vogtn
-ms.openlocfilehash: be72a31bd9e831f6584e2a7dfac9dea50892762a
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 9c23abbb3d525a3110cca31b21f2ee24d3c9f26d
+ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659272"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49753776"
 ---
 # <a name="people-picker-component-in-the-microsoft-graph-toolkit"></a>People-Picker компонента в microsoft Graph набор средств
 
@@ -30,16 +30,14 @@ ms.locfileid: "49659272"
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | show-max | showMax   | Значение числа, чтобы указать максимальное количество людей для показа. Значение по умолчанию — 6.                                                                                             |
 | group-id    | groupId     | Строка, которая принадлежит определенной группе Microsoft Graph для дальнейшей фильтрации результатов поиска.                                                                            |
-| type     | type      | Тип сущностями, которые необходимо найти. Доступные варианты: `person` , `group` , `any` . Значение по умолчанию: `person`. Этот атрибут не влияет, если `group-id` заданной является свойство.         
+| type     | type      | Тип сущностями, которые необходимо найти. Доступные варианты: `person` , `group` , `any` . Значение по умолчанию: `person`. Этот атрибут не действует, если `group-id` заданной является свойство.         
 | transitive-search     | transitiveSearch      | Boolean value to perform a transitive search returning a flat list of all nested members - by default transitive search is not used.|
-| group-type     | groupType      | Тип группы для поиска. Доступные варианты: `unified` , , , `security` `mailenabledsecurity` `distribution` `any` . Значение по умолчанию: `any`. Этот атрибут не действует, если `type` для свойства за установлено его `person` свойство.                                                                           |
+| group-type     | groupType      | Тип группы для поиска. Доступные параметры: `unified` , `security` , , `mailenabledsecurity` `distribution` `any` . Значение по умолчанию: `any`. Этот атрибут не действует, если `type` для свойства установлено свойство `person` .                                                                           |
 |  selected-people  | selectedPeople     | Массив выбранных людей. Установите это значение, чтобы выбрать людей программным путем.|
 | people   | people    | Массив людей, найденных и отрисовки в результатах поиска |
-| placeholder   | placeholder    | Строка, представляющая замещая текст ввода. Значение по умолчанию: "Начать вводить имя".
-| selection-mode   | selectionMode   | Строка, которая позволяет указать, поддерживает ли компонент несколько выбранных людей или только одного. Значение по `multiple` умолчанию— `single` это другой вариант.
+| placeholder   | placeholder    | Текст по умолчанию, который объясняет, как использовать компонент. Значение по умолчанию: `Start typing a name`.
 | default-selected-user-ids | defaultSelectedUserIds | Если предоставляется строка разделенных запятой пользовательских ИД Microsoft Graph, компонент отрисовка соответствующих пользователей, выбранных после инициализации.
-| selection-mode | selectionMode | Используется для того, чтобы указать, следует ли выбирать нескольких пользователей или только одного пользователя. Доступные варианты: `single` , `multiple` . Значение по умолчанию: `multiple`.
-| placeholder | placeholder | Текст по умолчанию, который объясняет, как использовать компонент. Значение по умолчанию: `Start typing a name`.
+| selection-mode | selectionMode | Используется для того, чтобы указать, следует ли выбирать несколько элементов (пользователей или групп) или только один элемент. Доступные варианты: `single` , `multiple` . Значение по умолчанию: `multiple`.
 
 Ниже приводится `show-max` пример.
 
@@ -49,7 +47,7 @@ ms.locfileid: "49659272"
 
 ## <a name="selected-people"></a>Выбранные люди
 
-В разделе выбранных людей компонента отрисовка каждого пользователя, выбранного разработчиком или пользователем. 
+В разделе "Выбранные люди" компонента отрисовка каждого пользователя, выбранного разработчиком или пользователем. 
 
 ![mgt-people-picker](./images/selected-people.png)
 
@@ -73,7 +71,7 @@ ms.locfileid: "49659272"
 
 ## <a name="events"></a>События
 
-Из компонента и происходят следующие события.
+Следующие события и происходят из компонента.
 
 | Событие | Описание |
 | --- | --- |
@@ -110,7 +108,7 @@ mgt-people-picker {
 
 ## <a name="templates"></a>Шаблоны
 
- `mgt-people-picker` поддерживает несколько [шаблонов,](../customize-components/templates.md) которые можно использовать для замены определенных частей компонента. Чтобы указать шаблон, включив элемент в компонент, закажите одно из `<template>` `data-type` следующих значений.
+ `mgt-people-picker` поддерживает несколько [шаблонов,](../customize-components/templates.md) которые можно использовать для замены определенных частей компонента. Чтобы указать шаблон, включив элемент в `<template>` компонент, закажите одно из `data-type` следующих значений.
 
 | Тип данных | Контекст данных | Описание |
 | --- | --- | --- |
