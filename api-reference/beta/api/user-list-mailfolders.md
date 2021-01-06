@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: abheek-das
 ms.prod: outlook
-ms.openlocfilehash: 7c8a73244b23b5fae115a844173d2ce3c7cb190f
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: c2cf43dc9d01ba2de2a3426cce84aaf3f92bbbb3
+ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753958"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49768218"
 ---
 # <a name="list-mailfolders"></a>Список объектов mailFolder
 
@@ -20,7 +20,7 @@ ms.locfileid: "49753958"
 
 Получите все почтовые папки в почтовом ящике указанного пользователя, включая все папки [поиска почты.](../resources/mailsearchfolder.md)
 
-По умолчанию эта операция не возвращает скрытые папки. Используйте параметр _запроса includeHiddenFolders,_ чтобы включить их в ответ.
+По умолчанию эта операция не возвращает скрытые папки. Используйте параметр запроса _includeHiddenFolders,_ чтобы включить их в ответ.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -50,7 +50,7 @@ GET /users/{id | userPrincipalName}/mailFolders/?includeHiddenFolders=true
 ## <a name="query-parameters"></a>Параметры запроса
 Чтобы получить список всех объектов mailFolders, включая скрытые (их свойство **isHidden** имеет true), в URL-адресе запроса укажите параметр запроса как , как показано в разделе `includeHiddenFolders` `true` [HTTP-запроса.](#http-request)
 
-Этот метод также поддерживает [параметры запроса OData](/graph/query-parameters) для настройки отклика.
+Этот метод также поддерживает [параметры запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -219,13 +219,33 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_hiddenmailfolders"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/?includeHiddenFolders=true
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-hiddenmailfolders-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-hiddenmailfolders-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-hiddenmailfolders-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-hiddenmailfolders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика.

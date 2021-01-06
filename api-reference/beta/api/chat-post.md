@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 8c4a6e66000ce2edcc4ec577a091ccde42b95495
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 1ba2425adf2f5aa1190eddb80a25a4e804b4e53e
+ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753300"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49768233"
 ---
 # <a name="create-chat"></a>Создание чата
 Пространство имен: microsoft.graph
@@ -25,7 +25,7 @@ ms.locfileid: "49753300"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Chat.Create, Chat.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -51,7 +51,7 @@ POST /chats
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|topic|(Необязательно) Строка|Название чата. Заголовок чата может быть предоставлен только в том случае, если чат имеет тип group.|
+|topic|(Необязательно) Строка|Название чата. Заголовок чата может быть предоставлен только в том случае, если чат имеет `group` тип.|
 |chatType|[chatType](../resources/chat.md#chattype-values)| Указывает тип чата. Возможные значения: `group` и `oneOnOne` . |
 |members|Коллекция [conversationMember](../resources/conversationmember.md)|Список участников беседы, которых следует добавить. В этом списке должен быть указан каждый пользователь, включая пользователя, инициавшего запрос на создание, который будет участвовать в чате.|
 

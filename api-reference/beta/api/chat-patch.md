@@ -5,12 +5,12 @@ author: bhartono
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b0b7fcccb3de2716aa30fdeb577ed3dc31ca99e6
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 5c5f2e1cd5a40dc4348eb1d12d39d4291524cc49
+ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753935"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49768226"
 ---
 # <a name="update-chat"></a>Обновление чата
 Пространство имен: microsoft.graph
@@ -25,7 +25,7 @@ ms.locfileid: "49753935"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Chat.ReadWrite|
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -73,7 +73,7 @@ PATCH https://graph.microsoft.com/beta/chats/19:1c5b01696d2e4a179c292bc9cf04e63b
 Content-Type: application/json
 
 {
-    "topic": "Group chat title update",
+    "topic": "Group chat title update"
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)

@@ -1,48 +1,48 @@
 ---
-title: сложный тип Рекуесторсеттингс
-description: Используется для `requestorSettings` Свойства политики назначения пакетов Access. Предоставляет дополнительные параметры для выбора пользователей, которые могут создавать запросы.
+title: Сложный тип requestorSettings
+description: Используется для `requestorSettings` свойства политики назначения пакета доступа. Предоставляет дополнительные параметры для выбора, кто может создать запрос.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: aee297f36538ca45183e0c3185f35c8f340d8631
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f7fe77178a9d330e3cc6f34818e7f1367e7ad484
+ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026315"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49768178"
 ---
-# <a name="requestorsettings-resource-type"></a>Тип ресурса Рекуесторсеттингс
+# <a name="requestorsettings-resource-type"></a>Тип ресурса requestorSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется для свойства **рекуесторсеттингс** [политики назначения пакетов Access](accesspackageassignmentpolicy.md). Предоставляет дополнительные параметры для выбора пользователей, которые могут создать запрос для пакета доступа в этой политике.
+Используется для **свойства requestorSettings** политики [назначения пакета доступа.](accesspackageassignmentpolicy.md) Предоставляет дополнительные параметры, чтобы выбрать, кто может создать запрос на пакет доступа для этой политики.
 
-| Кто может запрашивать | scopeType | Коллекция Алловедрекуесторс|
+| Кто может запросить | scopeType | Коллекция allowedRequestors|
 |:----------------|:----------|:------------------|
 |Никто|`NoSubjects`|пустой массив|
-|Отдельный пользователь в каталоге|`SpecificDirectorySubjects`|[SingleUser.](singleuser.md)|
-|Пользователи в каталоге, которые являются участниками группы|`SpecificDirectorySubjects`|[граупмемберс](groupmembers.md)|
+|Конкретный пользователь в каталоге|`SpecificDirectorySubjects`|[singleUser](singleuser.md)|
+|Пользователи в каталоге, которые являются участниками группы|`SpecificDirectorySubjects`|[groupMembers](groupmembers.md)|
 |Пользователи в каталоге со `userType` значением `member`|`AllExistingDirectoryMemberUsers`|пустой массив|
 |Пользователи в каталоге|`AllExistingDirectorySubjects`|пустой массив|
-|Пользователи в определенных подключенных организациях|`SpecificConnectedOrganizationSubjects`|[коннектедорганизатионмемберс](connectedorganizationmembers.md)|
-|Пользователи из любых подключенных организаций, у которых в свойстве State для связанной организации задано значение `configured` .|`AllConfiguredConnectedOrganizationSubjects`|пустой массив|
+|Пользователи в определенных подключенных организациях|`SpecificConnectedOrganizationSubjects`|[connectedOrganizationMembers](connectedorganizationmembers.md)|
+|Пользователи из всех подключенных организаций, для свойства состояния подключенной организации установлено состояние `configured` .|`AllConfiguredConnectedOrganizationSubjects`|пустой массив|
 |Любой пользователь|`AllExternalSubjects`|пустой массив|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| scopeType |String |Кто может запрашивать. Один из `NoSubjects` ,,,,, `SpecificDirectorySubjects` `SpecificConnectedOrganizationSubjects` `AllExistingConnectedOrganizationSubjects` `AllExistingDirectoryMemberUsers` `AllExistingDirectorySubjects` или `AllExternalSubjects` .  |
-| акцептрекуестс | Boolean | Указывает, принимаются ли новые запросы для этой политики. |
-| алловедрекуесторс | Коллекция [User](userset.md) Collection| Пользователи, которым разрешено запрашивать эту политику, которая может быть [SingleUser.](singleuser.md), [граупмемберс](groupmembers.md)и [коннектедорганизатионмемберс](connectedorganizationmembers.md). |
+| scopeType |String |Кто может запросить. Один из `NoSubjects` , , , , , , или `SpecificDirectorySubjects` `SpecificConnectedOrganizationSubjects` `AllConfiguredConnectedOrganizationSubjects` `AllExistingConnectedOrganizationSubjects` `AllExistingDirectoryMemberUsers` `AllExistingDirectorySubjects` `AllExternalSubjects` .  |
+| acceptRequests | Логический | Указывает, принимаются ли новые запросы для этой политики. |
+| allowedRequestors | [Коллекция userSet](userset.md)| Пользователи, которым разрешено запрашивать эту политику, которые могут быть [singleUser,](singleuser.md) [groupMembers](groupmembers.md)и [connectedOrganizationMembers.](connectedorganizationmembers.md) |
 
 ## <a name="json-representation"></a>Представление JSON
 
 
-Ниже приведено представление объекта **рекуесторсеттингс** в формате JSON, которое позволяет членам группы запрашивать.
+Ниже приводится представление свойства **requestorSettings** политики в JSON, которое позволяет участникам группы запрашивать запросы.
 
 <!-- {
   "blockType": "resource",
