@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса Ассигнментревиевсеттингс
-description: Тип Ассигнментревиевсеттингс, используемый для свойства Акцессревиевсеттингс политики назначения пакетов Access, предоставляет дополнительные параметры для выбора пользователей, которые должны проверить назначения пакетов доступа из этой политики и как часто они должны быть проверены.
+title: Тип ресурса assignmentReviewSettings
+description: Тип assignmentReviewSettings, используемый для свойства accessReviewSettings политики назначения пакета доступа, предоставляет дополнительные параметры, чтобы выбрать, кто должен просмотреть назначения пакетов доступа из этой политики и как часто их необходимо просмотреть.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 4a6e92f2c31a5972528fefdea68a4fa8a61677da
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 0bbc595395fbe7995b8ce7dfb7fa8e575faf58e8
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48040184"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777696"
 ---
-# <a name="assignmentreviewsettings-resource-type"></a>Тип ресурса Ассигнментревиевсеттингс
+# <a name="assignmentreviewsettings-resource-type"></a>Тип ресурса assignmentReviewSettings
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется для свойства **акцессревиевсеттингс** [политики назначения пакетов Access](accesspackageassignmentpolicy.md). Предоставляет дополнительные параметры для выбора пользователей, которые должны просматривать назначения пакетов доступа из этой политики и как часто они должны проверяться.  
+Используется для свойства **accessReviewSettings** политики [назначения пакета доступа.](accesspackageassignmentpolicy.md) Предоставляет дополнительные параметры, чтобы выбрать, кто должен просмотреть назначения пакетов доступа из этой политики и как часто их необходимо просмотреть.  
 
 ## <a name="properties"></a>Свойства
 
@@ -26,25 +26,24 @@ ms.locfileid: "48040184"
 
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| isEnabled| Boolean | Если этот параметр имеет значение true, для назначений из этой политики требуются обзоры доступа. |
-| recurrenceType | String | Интервал повторения, например `monthly` или `quarterly` . |
-| ревиевертипе | String | Кто должен иметь запрос на выполнение проверки, либо `Self` `Reviewers` . |
-| startDateTime | DateTimeOffset | Когда должна начаться Первая проверка. |
-| дуратиониндайс | Int32 | Количество дней, в течение которого допускается ввод данных от рецензентов.|
-| обсужден | Коллекция [User](userset.md) Collection | Если задано значение Ревиевертипе `Reviewers` , эта коллекция указывает пользователей, которые будут рецензентами, по идентификатору или членам группы, используя коллекцию [SingleUser.](singleuser.md) и [граупмемберс](groupmembers.md). |
+| isEnabled| Boolean | Если имеется true, для назначений из этой политики требуются проверки доступа. |
+| recurrenceType | String | Интервал повторения, например или `monthly` `quarterly` . |
+| reviewerType | String | Кто должен быть предложено сделать отзыв, либо `Self` `Reviewers` . |
+| startDateTime | DateTimeOffset | Когда должен начаться первый обзор. |
+| durationInDays | Int32 | Количество дней, в течение которые можно разрешить ввод данных от проверяющих.|
+| рецензенты | [Коллекция userSet](userset.md) | Если задан тип reviewerType, эта коллекция указывает пользователей, которые будут рецензентами по ИД или в качестве членов группы, используя коллекцию `Reviewers` [singleUser](singleuser.md) и [groupMembers.](groupmembers.md) |
 
 ## <a name="json-representation"></a>Представление JSON
 
 
-Ниже представлено описание свойства "Просмотр параметров проверки доступа" для политики в формате JSON.
+Ниже приводится представление свойства параметров проверки доступа политики в JSON.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.assignmentReviewSettings",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.assignmentReviewSettings"
 }-->
 
 ```json

@@ -1,18 +1,18 @@
 ---
-title: Отправка больших файлов с помощью пакетов SDK Microsoft Graph
-description: Предоставляет рекомендации по отправке больших файлов с помощью пакетов SDK Microsoft Graph.
+title: Отправка больших файлов с помощью SDKs Microsoft Graph
+description: Руководство по отправке больших файлов с помощью SDKs Microsoft Graph.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 44465dcc22dcd84c78ee8aa7abfc1f6dc9e36c8a
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: 323ee872db1962119a2b34f99ad032b18b5c31f0
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44743998"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777584"
 ---
-# <a name="upload-large-files-using-the-microsoft-graph-sdks"></a>Отправка больших файлов с помощью пакетов SDK Microsoft Graph
+# <a name="upload-large-files-using-the-microsoft-graph-sdks"></a>Отправка больших файлов с помощью SDKs Microsoft Graph
 
-Несколько сущностей в Microsoft Graph поддерживают [возобновляемую отправку файлов](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0) , чтобы упростить отправку больших файлов. Вместо того чтобы отправлять весь файл в отдельном запросе, файл разбивается на небольшие фрагменты, а запрос используется для отправки одного фрагмента. Чтобы упростить этот процесс, в пакет SDK Microsoft Graph внедрена задача по передаче больших файлов, которая управляет отправкой фрагментов.
+Ряд сущностям в [](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) Microsoft Graph поддерживает повторное отправку файлов, чтобы упростить отправку больших файлов. Вместо того чтобы пытаться отправить весь файл в одном запросе, файл разрезается на более мелкие части, и для отправки одного фрагмента используется запрос. Чтобы упростить этот процесс, в SDKs Microsoft Graph реализована большая задача отправки файлов, которая управляет отправкой фрагментов.
 
 ## <a name="c"></a>[C#](#tab/csharp)
 
@@ -44,8 +44,8 @@ using (var fileStream = System.IO.File.OpenRead(filePath))
         new LargeFileUploadTask<DriveItem>(uploadSession, fileStream, maxSliceSize);
 
     // Create a callback that is invoked after each slice is uploaded
-    IProgress<long> progress = new Progress<long>(progress => {
-        Console.WriteLine($"Uploaded {progress} bytes of {fileStream.Length} bytes");
+    IProgress<long> progress = new Progress<long>(prog => {
+        Console.WriteLine($"Uploaded {prog} bytes of {fileStream.Length} bytes");
     });
 
     try
@@ -156,9 +156,9 @@ chunkedUploadProvider.upload(callback, customConfig);
 
 ---
 
-## <a name="resuming-a-file-upload"></a>Возобновление отправки файла
+## <a name="resuming-a-file-upload"></a>Resuming a file upload
 
-Пакеты SDK Microsoft Graph поддерживают [возобновление выполняемых отправок](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0#resuming-an-in-progress-upload). Если во время отправки приложение обнаруживает прерывание подключения или состояние 5. x. x HTTP, можно возобновить отправку.
+SDKs Microsoft Graph поддерживают повторное [отправку.](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload) Если во время отправки приложение сталкивается с прерываниями подключения или состоянием HTTP 5.x.x, вы можете возобновить отправку.
 
 <!-- markdownlint-disable MD024 -->
 ### <a name="c"></a>[C#](#tab/csharp)
@@ -176,7 +176,7 @@ const resumedFile: DriveItem = await uploadTask.resume();
 ### <a name="java"></a>[Java](#tab/java)
 
 > [!NOTE]
-> В настоящее время пакет SDK Java не поддерживает восстановление выполняемой загрузки.
+> В настоящее время Java SDK не поддерживает повторное скачивание.
 
 ---
 <!-- markdownlint-enable MD024 -->

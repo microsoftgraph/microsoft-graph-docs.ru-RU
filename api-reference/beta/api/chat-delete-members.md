@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Priority
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 912f6c5e5bae06c40793a52b450029dd2ba30d3a
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 2a7ce5f520598e5c24b8d195ab92d3f1a08efd89
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753536"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777605"
 ---
 # <a name="remove-member-from-chat"></a>Удаление участника из чата
 Пространство имен: microsoft.graph
@@ -55,7 +55,7 @@ DELETE /chats/{chat-id}/members/{membership-id}
 ### <a name="request"></a>Запрос
 
 > [!NOTE]
-> С этой функцией связаны некоторые известные проблемы. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues.md#unable-to-remove-members-from-chat).
+> С этой функцией связаны некоторые известные проблемы. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#unable-to-remove-members-from-chat).
 
 
 # <a name="http"></a>[HTTP](#tab/http)

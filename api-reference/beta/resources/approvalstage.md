@@ -1,49 +1,48 @@
 ---
-title: сложный тип Аппровалстаже
-description: Используется для свойства Аппровалстажес параметров утверждения в свойстве Рекуестаппровалсеттингс политики назначения пакетов Access. Указывает основных, резервных и эскалациых утверждающих каждого этапа.
+title: Сложный тип approvalStage
+description: Используется для свойства approvalStages параметров утверждения в свойстве requestApprovalSettings политики назначения пакета доступа. Указывает основных, откатных и утвердителей эскалации каждого этапа.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: df7e9ce4491ea7a887b79f79d354c9099ea9f5d2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 158fae1675c26876daeb05b1571d7fd91855df72
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050149"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777703"
 ---
-# <a name="approvalstage-complex-type"></a>сложный тип Аппровалстаже
+# <a name="approvalstage-complex-type"></a>Сложный тип approvalStage
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется для свойства **аппровалстажес** параметров утверждения в свойстве **рекуестаппровалсеттингс** [политики назначения пакетов Access](accesspackageassignmentpolicy.md). Указывает основных, резервных и эскалациых утверждающих каждого этапа.
+Используется для **свойства approvalStages** параметров утверждения в свойстве **requestApprovalSettings** [политики назначения пакета доступа.](accesspackageassignmentpolicy.md) Указывает основных, откатных и утвердителей эскалации каждого этапа.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                     | Тип                      | Описание |
 | :--------------------------- | :------------------------ | :---------- |
-| аппровалстажетимеаутиндайс |Int32 | Количество дней, в течение которых запрос может находиться в состоянии ожидания ответа, прежде чем он будет автоматически отклонен. |
-| исаппровержустификатионрекуиред |Boolean | Указывает, является ли утверждающий обязательным для предоставления обоснования для утверждения запроса. |
-| исескалатионенаблед |Boolean | Если задано значение true, на этом этапе утверждения настраивается один или несколько утверждающих. |
-| ескалатионтимеинминутес |Int32 | Если требуется эскалация, время, в течение которого запрос может отреагировать от основного утверждающего лица. |
-| примаряппроверс | Коллекция [User](userset.md) Collection| Пользователи, которые будут запрашивать разрешение на утверждение запросов. Коллекция объектов [SingleUser.](singleuser.md), [граупмемберс](groupmembers.md), [рекуесторманажер](requestormanager.md), [интерналспонсорс](internalsponsors.md) и [екстерналспонсорс](externalsponsors.md). |
-| ескалатионаппроверс | Коллекция [User](userset.md) Collection| Если распространение включено и основные утверждающие не отвечают на время эскалации, Ескалатионаппроверс — это пользователи, которым будет предложено утвердить запросы. Это может быть коллекция [SingleUser.](singleuser.md), [граупмемберс](groupmembers.md), [рекуесторманажер](requestormanager.md), [интерналспонсорс](internalsponsors.md) и [екстерналспонсорс](externalsponsors.md).|
+| approvalStageTimeOutInDays |Int32 | Количество дней, в течение которые запрос может быть ожидающих ответа, прежде чем он будет автоматически отклонен. |
+| isApproverJustificationRequired |Boolean | Указывает, должен ли утвержденный предоставить обоснование для утверждения запроса. |
+| isEscalationEnabled |Boolean | Если установлено true, на этом этапе утверждения настраивается один или несколько утвержденных эскалаций. |
+| escalationTimeInMinutes |Int32 | Если требуется эскалация, время ожидания ответа от основного утвержденного запроса. |
+| primaryApprovers | [Коллекция userSet](userset.md)| Пользователи, которым будет предложено утвердить запросы. Коллекция [singleUser,](singleuser.md) [groupMembers,](groupmembers.md) [requestorManager,](requestormanager.md) [internalSponsors](internalsponsors.md) и [externalSponsors.](externalsponsors.md) |
+| escalationApprovers | [Коллекция userSet](userset.md)| Если эскалация включена, а основные утвержденные не отвечают до эскалации, пользователи, которым будет предложено утвердить запросы, будут запрашивать. Это может быть коллекция [singleUser,](singleuser.md) [groupMembers,](groupmembers.md) [requestorManager,](requestormanager.md) [internalSponsors](internalsponsors.md) и [externalSponsors.](externalsponsors.md)|
 
 
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено представление объекта стадии утверждения запроса в формате JSON.
+Ниже приводится представление этапа утверждения запроса в JSON.
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.approvalStage",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.approvalStage"
 }-->
 
 ```json

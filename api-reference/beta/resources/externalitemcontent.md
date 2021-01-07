@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса Екстерналитемконтент
-description: Содержимое элемента, индексируемого с помощью подключения Microsoft Search.
+title: Тип ресурса externalItemContent
+description: Содержимое элемента, индексироваться через подключение Поиска (Майкрософт).
 localization_priority: Normal
 author: snlraju-msft
 ms.prod: search
 doc_type: resourcePageType
-ms.openlocfilehash: a9121648f35dd09d8fb87d4738bb2bf6e9b3960b
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 66e3fccc8c072d06d2328301100d6bf3a0d50806
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47998812"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777633"
 ---
-# <a name="externalitemcontent-resource-type"></a>Тип ресурса Екстерналитемконтент
+# <a name="externalitemcontent-resource-type"></a>Тип ресурса externalItemContent
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержимое объекта [екстерналитем](externalitem.md) , индексируемого с помощью [подключения](externalconnection.md)Microsoft Search.
+Содержимое [externalItem, индексироваться](externalitem.md) через подключение Поиска (Майкрософт). [](externalconnection.md)
 
 [!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
@@ -26,8 +26,8 @@ ms.locfileid: "47998812"
 
 | Свойство | Тип   | Описание                                                                                 |
 |:---------|:-------|:--------------------------------------------------------------------------------------------|
-| значение    | String | Содержимое для Екстерналитем. Обязательное.                                                 |
-| type     | String | Тип контента в свойстве Value. Возможные значения: `text` и `html`. Обязательно. |
+| значение    | String | Содержимое для externalItem. Обязательное.                                                 |
+| type     | String | Тип контента в свойстве value. Возможные значения: `text` и `html`. Обязательный. |
 
 ## <a name="relationships"></a>Связи
 
@@ -42,8 +42,7 @@ ms.locfileid: "47998812"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.externalItemContent",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.externalItemContent"
 }-->
 
 ```json

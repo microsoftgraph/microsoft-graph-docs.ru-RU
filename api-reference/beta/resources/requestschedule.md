@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса Рекуестсчедуле
-description: Расписание запроса можно включить в запрос на назначение пакета Access и оно присутствует в назначении пакета Access.
+title: Тип ресурса requestSchedule
+description: Расписание запроса может быть включено в запрос на назначение пакета доступа и присутствует в назначении пакета доступа.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: 9aa3215bacff95cfa03cc2ec050c8f2d2e4f7219
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: e16359e554bba495378ec48ab52937c198a0ed5d
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48026308"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777630"
 ---
-# <a name="requestschedule-resource-type"></a>Тип ресурса Рекуестсчедуле
+# <a name="requestschedule-resource-type"></a>Тип ресурса requestSchedule
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В [управлении обслуживанием в Azure AD](entitlementmanagement-root.md)запрос на назначение пакета Access создается пользователем, желающим получить назначение пакета Access. Этот запрос может включать расписание, когда пользователь хочет назначить назначение.  Назначение пакета Access, полученное в результате такого запроса, также имеет расписание.
+В [управлении правами Azure AD](entitlementmanagement-root.md)запрос на назначение пакета доступа создается пользователем, который хочет получить назначение пакета доступа. Этот запрос может включать расписание для того, когда пользователь хочет получить назначение.  Назначение пакета доступа, которое является результатом такого запроса, также имеет расписание.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|startDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|срока действия|[експиратионпаттерн](expirationpattern.md)|По истечении срока действия доступа.|
-|recurrence|[patternedRecurrence](patternedrecurrence.md)|Для повторяющегося доступа. Не используется в данный момент.|
+|startDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|expiration|[expirationPattern](expirationpattern.md)|По истечении срока действия доступа.|
+|recurrence|[patternedRecurrence](patternedrecurrence.md)|Для повторяющегося доступа. В настоящее время не используется.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -37,8 +37,7 @@ ms.locfileid: "48026308"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.requestSchedule",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.requestSchedule"
 }-->
 
 ```json

@@ -5,12 +5,12 @@ author: bhartono
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: eae4e307204fde0e897535ee414fba42cf1ce788
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 5aa6eb6461891ad5b2727de7a8d7636d730c3807
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753267"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777640"
 ---
 # <a name="add-member-to-a-chat"></a>Добавление участника в чат
 
@@ -18,7 +18,7 @@ ms.locfileid: "49753267"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление [conversationMember](../resources/conversationmember.md) в [чат.](../resources/chat.md)
+Добавление [conversationMember в](../resources/conversationmember.md) [чат.](../resources/chat.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -27,7 +27,7 @@ ms.locfileid: "49753267"
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
 |Делегированные (рабочая или учебная учетная запись)| ChatMember.ReadWrite |
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений| Не поддерживается. |
 
 <!-- { "blockType": "ignored"} -->

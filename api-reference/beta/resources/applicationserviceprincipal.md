@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса АппликатионсервицепринЦипал
+title: Тип ресурса applicationServicePrincipal
 description: Сочетание приложения и servicePrincipal.
 localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: b45da6cd8533d9522d42428f6e222a669f17e681
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 77d1d9beeab406896bda53e88e9043be0a99e8fe
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48050271"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777723"
 ---
-# <a name="applicationserviceprincipal-resource-type"></a>Тип ресурса АппликатионсервицепринЦипал
+# <a name="applicationserviceprincipal-resource-type"></a>Тип ресурса applicationServicePrincipal
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-При добавлении экземпляра приложения из коллекции приложений Azure AD объекты [Application](../resources/application.md) и [servicePrincipal](../resources/serviceprincipal.md) создаются в каталоге. **АппликатионсервицепринЦипал** представляет сцепление объекта **Application** и **servicePrincipal** .
+При добавлении экземпляра приложения из коллекции приложений Azure AD в каталоге создаются объекты [application](../resources/application.md) и [servicePrincipal.](../resources/serviceprincipal.md) **ApplicationServicePrincipal** представляет собой совмещение объекта **application** и **servicePrincipal.**
 
 ## <a name="methods"></a>Методы
 
@@ -45,7 +45,6 @@ ms.locfileid: "48050271"
 
   ],
   "@odata.type": "microsoft.graph.applicationServicePrincipal",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

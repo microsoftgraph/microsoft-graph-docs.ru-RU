@@ -5,12 +5,12 @@ localization_priority: Normal
 ms.prod: microsoft-identity-platform
 author: raprakasMSFT
 doc_type: resourcePageType
-ms.openlocfilehash: c293aecf7377afc995d6415bc091101f3a0e6945
-ms.sourcegitcommit: df0778a4dbd1e7a2fde1846bdfbfd9440fc91672
+ms.openlocfilehash: 5acacae700bfddcfe68431e03b2a5b03e00fed8a
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49768176"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777716"
 ---
 # <a name="termsexpiration-resource-type"></a>Тип ресурса termsExpiration
 
@@ -37,7 +37,6 @@ ms.locfileid: "49768176"
 
   ],
   "@odata.type": "microsoft.graph.termsExpiration",
-  "baseType": ""
 }-->
 
 ```json
