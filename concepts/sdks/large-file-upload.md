@@ -1,20 +1,20 @@
 ---
-title: Отправка больших файлов с помощью пакетов SDK Microsoft Graph
-description: Предоставляет рекомендации по отправке больших файлов с помощью пакетов SDK Microsoft Graph.
+title: Отправка больших файлов с помощью SDKs Microsoft Graph
+description: Руководство по отправке больших файлов с помощью SDKs Microsoft Graph.
 localization_priority: Normal
 author: DarrelMiller
-ms.openlocfilehash: 44465dcc22dcd84c78ee8aa7abfc1f6dc9e36c8a
-ms.sourcegitcommit: 3c8a92d89ac60a48cb63449976b1c3c2c6302281
+ms.openlocfilehash: 323ee872db1962119a2b34f99ad032b18b5c31f0
+ms.sourcegitcommit: 7732d20bd99a125118f7cea146c3f2416879f949
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44743998"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777584"
 ---
-# <a name="upload-large-files-using-the-microsoft-graph-sdks"></a><span data-ttu-id="1cd36-103">Отправка больших файлов с помощью пакетов SDK Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="1cd36-103">Upload large files using the Microsoft Graph SDKs</span></span>
+# <a name="upload-large-files-using-the-microsoft-graph-sdks"></a><span data-ttu-id="f4ea8-103">Отправка больших файлов с помощью SDKs Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="f4ea8-103">Upload large files using the Microsoft Graph SDKs</span></span>
 
-<span data-ttu-id="1cd36-104">Несколько сущностей в Microsoft Graph поддерживают [возобновляемую отправку файлов](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0) , чтобы упростить отправку больших файлов.</span><span class="sxs-lookup"><span data-stu-id="1cd36-104">A number of entities in Microsoft Graph support [resumable file uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0) to make it easier to upload large files.</span></span> <span data-ttu-id="1cd36-105">Вместо того чтобы отправлять весь файл в отдельном запросе, файл разбивается на небольшие фрагменты, а запрос используется для отправки одного фрагмента.</span><span class="sxs-lookup"><span data-stu-id="1cd36-105">Instead of trying to upload the entire file in a single request, the file is sliced into smaller pieces and a request is used to upload a single slice.</span></span> <span data-ttu-id="1cd36-106">Чтобы упростить этот процесс, в пакет SDK Microsoft Graph внедрена задача по передаче больших файлов, которая управляет отправкой фрагментов.</span><span class="sxs-lookup"><span data-stu-id="1cd36-106">In order to simplify this process, the Microsoft Graph SDKs implement a large file upload task that manages the uploading of the slices.</span></span>
+<span data-ttu-id="f4ea8-104">Ряд сущностям в [](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) Microsoft Graph поддерживает повторное отправку файлов, чтобы упростить отправку больших файлов.</span><span class="sxs-lookup"><span data-stu-id="f4ea8-104">A number of entities in Microsoft Graph support [resumable file uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true) to make it easier to upload large files.</span></span> <span data-ttu-id="f4ea8-105">Вместо того чтобы пытаться отправить весь файл в одном запросе, файл разрезается на более мелкие части, и для отправки одного фрагмента используется запрос.</span><span class="sxs-lookup"><span data-stu-id="f4ea8-105">Instead of trying to upload the entire file in a single request, the file is sliced into smaller pieces and a request is used to upload a single slice.</span></span> <span data-ttu-id="f4ea8-106">Чтобы упростить этот процесс, в SDKs Microsoft Graph реализована большая задача отправки файлов, которая управляет отправкой фрагментов.</span><span class="sxs-lookup"><span data-stu-id="f4ea8-106">In order to simplify this process, the Microsoft Graph SDKs implement a large file upload task that manages the uploading of the slices.</span></span>
 
-## <a name="c"></a>[<span data-ttu-id="1cd36-107">C#</span><span class="sxs-lookup"><span data-stu-id="1cd36-107">C#</span></span>](#tab/csharp)
+## <a name="c"></a>[<span data-ttu-id="f4ea8-107">C#</span><span class="sxs-lookup"><span data-stu-id="f4ea8-107">C#</span></span>](#tab/csharp)
 
 ```csharp
 using (var fileStream = System.IO.File.OpenRead(filePath))
@@ -44,8 +44,8 @@ using (var fileStream = System.IO.File.OpenRead(filePath))
         new LargeFileUploadTask<DriveItem>(uploadSession, fileStream, maxSliceSize);
 
     // Create a callback that is invoked after each slice is uploaded
-    IProgress<long> progress = new Progress<long>(progress => {
-        Console.WriteLine($"Uploaded {progress} bytes of {fileStream.Length} bytes");
+    IProgress<long> progress = new Progress<long>(prog => {
+        Console.WriteLine($"Uploaded {prog} bytes of {fileStream.Length} bytes");
     });
 
     try
@@ -71,7 +71,7 @@ using (var fileStream = System.IO.File.OpenRead(filePath))
 }
 ```
 
-## <a name="typescript"></a>[<span data-ttu-id="1cd36-108">TypeScript</span><span class="sxs-lookup"><span data-stu-id="1cd36-108">TypeScript</span></span>](#tab/typescript)
+## <a name="typescript"></a>[<span data-ttu-id="f4ea8-108">TypeScript</span><span class="sxs-lookup"><span data-stu-id="f4ea8-108">TypeScript</span></span>](#tab/typescript)
 
 ```typescript
 const options: any = {
@@ -97,7 +97,7 @@ const options: any = {
 }
 ```
 
-## <a name="java"></a>[<span data-ttu-id="1cd36-109">Java</span><span class="sxs-lookup"><span data-stu-id="1cd36-109">Java</span></span>](#tab/java)
+## <a name="java"></a>[<span data-ttu-id="f4ea8-109">Java</span><span class="sxs-lookup"><span data-stu-id="f4ea8-109">Java</span></span>](#tab/java)
 
 ```java
 // Get an input stream for the file
@@ -156,27 +156,27 @@ chunkedUploadProvider.upload(callback, customConfig);
 
 ---
 
-## <a name="resuming-a-file-upload"></a><span data-ttu-id="1cd36-110">Возобновление отправки файла</span><span class="sxs-lookup"><span data-stu-id="1cd36-110">Resuming a file upload</span></span>
+## <a name="resuming-a-file-upload"></a><span data-ttu-id="f4ea8-110">Resuming a file upload</span><span class="sxs-lookup"><span data-stu-id="f4ea8-110">Resuming a file upload</span></span>
 
-<span data-ttu-id="1cd36-111">Пакеты SDK Microsoft Graph поддерживают [возобновление выполняемых отправок](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0#resuming-an-in-progress-upload).</span><span class="sxs-lookup"><span data-stu-id="1cd36-111">The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0#resuming-an-in-progress-upload).</span></span> <span data-ttu-id="1cd36-112">Если во время отправки приложение обнаруживает прерывание подключения или состояние 5. x. x HTTP, можно возобновить отправку.</span><span class="sxs-lookup"><span data-stu-id="1cd36-112">If your application encounters a connection interruption or a 5.x.x HTTP status during upload, you can resume the upload.</span></span>
+<span data-ttu-id="f4ea8-111">SDKs Microsoft Graph поддерживают повторное [отправку.](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload)</span><span class="sxs-lookup"><span data-stu-id="f4ea8-111">The Microsoft Graph SDKs support [resuming in-progress uploads](/graph/api/driveitem-createuploadsession?view=graph-rest-1.0&preserve-view=true#resuming-an-in-progress-upload).</span></span> <span data-ttu-id="f4ea8-112">Если во время отправки приложение сталкивается с прерываниями подключения или состоянием HTTP 5.x.x, вы можете возобновить отправку.</span><span class="sxs-lookup"><span data-stu-id="f4ea8-112">If your application encounters a connection interruption or a 5.x.x HTTP status during upload, you can resume the upload.</span></span>
 
 <!-- markdownlint-disable MD024 -->
-### <a name="c"></a>[<span data-ttu-id="1cd36-113">C#</span><span class="sxs-lookup"><span data-stu-id="1cd36-113">C#</span></span>](#tab/csharp)
+### <a name="c"></a>[<span data-ttu-id="f4ea8-113">C#</span><span class="sxs-lookup"><span data-stu-id="f4ea8-113">C#</span></span>](#tab/csharp)
 
 ```csharp
 fileUploadTask.ResumeAsync(progress);
 ```
 
-### <a name="typescript"></a>[<span data-ttu-id="1cd36-114">TypeScript</span><span class="sxs-lookup"><span data-stu-id="1cd36-114">TypeScript</span></span>](#tab/typescript)
+### <a name="typescript"></a>[<span data-ttu-id="f4ea8-114">TypeScript</span><span class="sxs-lookup"><span data-stu-id="f4ea8-114">TypeScript</span></span>](#tab/typescript)
 
 ```typescript
 const resumedFile: DriveItem = await uploadTask.resume();
 ```
 
-### <a name="java"></a>[<span data-ttu-id="1cd36-115">Java</span><span class="sxs-lookup"><span data-stu-id="1cd36-115">Java</span></span>](#tab/java)
+### <a name="java"></a>[<span data-ttu-id="f4ea8-115">Java</span><span class="sxs-lookup"><span data-stu-id="f4ea8-115">Java</span></span>](#tab/java)
 
 > [!NOTE]
-> <span data-ttu-id="1cd36-116">В настоящее время пакет SDK Java не поддерживает восстановление выполняемой загрузки.</span><span class="sxs-lookup"><span data-stu-id="1cd36-116">The Java SDK does not currently support resuming in-progress downloads.</span></span>
+> <span data-ttu-id="f4ea8-116">В настоящее время Java SDK не поддерживает повторное скачивание.</span><span class="sxs-lookup"><span data-stu-id="f4ea8-116">The Java SDK does not currently support resuming in-progress downloads.</span></span>
 
 ---
 <!-- markdownlint-enable MD024 -->
