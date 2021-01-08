@@ -902,7 +902,7 @@ items:
             items:
               - name: Перечисление субъектов-служб
                 href: api/serviceprincipal-list.md
-              - name: Создание директора-службы
+              - name: Создание основного службы
                 href: api/serviceprincipal-post-serviceprincipals.md
               - name: Получение субъекта-службы
                 href: api/serviceprincipal-get.md
@@ -945,7 +945,7 @@ items:
                 items:
                   - name: Список делегных разрешений
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
-              - name: Делегированная классификация разрешений
+              - name: Классификация делегированных разрешений
                 href: resources/delegatedpermissionclassification.md
                 items:
                   - name: Перечисление
@@ -1681,6 +1681,10 @@ items:
                     href: api/printjob-update-configuration.md
                   - name: Отмена
                     href: api/printjob-cancel.md
+                  - name: Прервать
+                    href: api/printjob-abort.md
+                  - name: Redirect
+                    href: api/printjob-redirect.md
               - name: Операция печати
                 href: resources/printoperation.md
                 items:
@@ -2775,7 +2779,7 @@ items:
                     href: resources/intune-apps-win32lobappfilesystemdetectiontype.md
                   - name: Тип операции с файловой системой приложения Win32
                     href: resources/intune-apps-win32lobappfilesystemoperationtype.md
-                  - name: Требование к файловой системе приложения для LOB Win32
+                  - name: Требования к файловой системе для приложения win32
                     href: resources/intune-apps-win32lobappfilesystemrequirement.md
                   - name: Правило файловой системы для приложения Win32
                     href: resources/intune-apps-win32lobappfilesystemrule.md
@@ -2787,7 +2791,7 @@ items:
                     href: resources/intune-apps-win32lobappmsipackagetype.md
                   - name: Определение скрипта power shell бизнес-приложения Win32
                     href: resources/intune-apps-win32lobapppowershellscriptdetection.md
-                  - name: Тип обнаружения скрипта power shell для приложения Win32
+                  - name: Тип определения скрипта power shell для приложения win32
                     href: resources/intune-apps-win32lobapppowershellscriptdetectiontype.md
                   - name: Требование сценария power shell для приложения Win32
                     href: resources/intune-apps-win32lobapppowershellscriptrequirement.md
@@ -3071,7 +3075,7 @@ items:
                         href: api/intune-enrollment-appleenrollmentprofileassignment-delete.md
                       - name: Обновление
                         href: api/intune-enrollment-appleenrollmentprofileassignment-update.md
-                  - name: Тип регистрации типа владельца Apple
+                  - name: Тип регистрации владельца Apple
                     href: resources/intune-enrollment-appleownertypeenrollmenttype.md
                   - name: 'Профиль регистрации, инициированный пользователем Apple'
                     href: resources/intune-enrollment-appleuserinitiatedenrollmentprofile.md
@@ -4151,7 +4155,7 @@ items:
                     href: resources/intune-deviceconfig-certificateissuancestates.md
                   - name: Статус отзыва сертификатов
                     href: resources/intune-deviceconfig-certificaterevocationstatus.md
-                  - name: Изменение разрешения параметров uefi
+                  - name: Изменение разрешения uefi settings
                     href: resources/intune-deviceconfig-changeuefisettingspermission.md
                   - name: Код
                     href: resources/intune-deviceconfig-code.md
@@ -5290,7 +5294,7 @@ items:
                     href: resources/intune-deviceconfig-macosappleeventreceiver.md
                   - name: 'Элемент доменов, связанных с macOS'
                     href: resources/intune-deviceconfig-macosassociateddomainsitem.md
-                  - name: Расширение единого знака "единый вход" в MacOS Azure
+                  - name: Расширение единого входов в MacOS Azure ad
                     href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
                   - name: База профилей сертификатов для macOS
                     href: resources/intune-deviceconfig-macoscertificateprofilebase.md
@@ -6791,7 +6795,7 @@ items:
                         href: api/intune-devices-devicecompliancescript-update.md
                       - name: Действие назначения
                         href: api/intune-devices-devicecompliancescript-assign.md
-                  - name: Состояние устройства для обеспечения соответствия требованиям
+                  - name: Состояние устройства для сценариев соответствия требованиям
                     href: resources/intune-devices-devicecompliancescriptdevicestate.md
                     items:
                       - name: Перечисление
@@ -6899,7 +6903,7 @@ items:
                     href: resources/intune-devices-devicehealthscriptintegerparameter.md
                   - name: Параметр скрипта для состояния устройства
                     href: resources/intune-devices-devicehealthscriptparameter.md
-                  - name: История исправлений скрипта для состояния устройства
+                  - name: История исправлений скриптов для устранения проблем с состоянием устройства
                     href: resources/intune-devices-devicehealthscriptremediationhistory.md
                   - name: Данные истории исправлений скриптов для устранения проблем с устройствами
                     href: resources/intune-devices-devicehealthscriptremediationhistorydata.md
@@ -7468,7 +7472,7 @@ items:
                     href: resources/intune-devices-hardwareinformation.md
                   - name: Состояние работоспособности
                     href: resources/intune-devices-healthstate.md
-                  - name: Значение Insight double
+                  - name: Значение insight double
                     href: resources/intune-devices-insightvaluedouble.md
                   - name: Insight value int
                     href: resources/intune-devices-insightvalueint.md
@@ -8498,7 +8502,7 @@ items:
                     href: resources/intune-onboarding-compliancemanagementpartnerassignment.md
                   - name: Данные об управлении устройствами и приложениями
                     href: resources/intune-onboarding-deviceandappmanagementdata.md
-                  - name: Конфигурация управления совместной управлением устройствами
+                  - name: Конфигурация полномочий для совместной управления устройствами
                     href: resources/intune-onboarding-devicecomanagementauthorityconfiguration.md
                     items:
                       - name: Перечисление
@@ -10604,7 +10608,7 @@ items:
                             href: api/permissiongrantpolicy-delete-includes.md
                           - name: Список исключается
                             href: api/permissiongrantpolicy-list-excludes.md
-                          - name: Создание исключено
+                          - name: Create in excludes
                             href: api/permissiongrantpolicy-post-excludes.md
                           - name: Удаление из исключений
                             href: api/permissiongrantpolicy-delete-excludes.md
@@ -12956,7 +12960,7 @@ items:
                     href: api/shiftpreferences-get.md
                   - name: Обновление
                     href: api/shiftpreferences-put.md
-              - name: Запрос на изменение смены подкачки
+              - name: Запрос на изменение смен смены
                 href: resources/swapshiftschangerequest.md
                 items:
                   - name: Перечисление
