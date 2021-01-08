@@ -3,14 +3,14 @@ title: 'printJob: abort'
 description: Отменить задание печати.
 author: nilakhan
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 8fe447b11a8198af41bf9e69e98a7ea64231dec8
-ms.sourcegitcommit: 75428fc7535662f34e965c6b69fef3a53fdaf1cb
+ms.openlocfilehash: c92786af585eed2ba2b405fb9c6042c96b415a7b
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49691112"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784860"
 ---
 # <a name="printjob-abort"></a>printJob: abort
 
@@ -23,7 +23,7 @@ ms.locfileid: "49691112"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Помимо перечисленных ниже разрешений, клиент приложения должен иметь активную подписку универсальной печати и разрешение, которое предоставляет доступ [к принтеру.](printer-get.md)
+Помимо следующих разрешений, клиент приложения должен иметь активную подписку универсальной печати и разрешение printer.Read.All или Printer.ReadWrite.All приложения.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|

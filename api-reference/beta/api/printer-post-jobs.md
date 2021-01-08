@@ -1,35 +1,35 @@
 ---
-title: Создание метода printJob для принтера
-description: Создание нового метода printJob для принтера.
+title: Создание printJob для принтера
+description: Создайте новый printJob для принтера.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 026905fb3d0dc2b0be71bcb5175c6741b63a9fba
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: da2a664a6748f73b7dd5df78b7f5e75850860794
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979857"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784864"
 ---
-# <a name="create-printjob-for-a-printer"></a>Создание метода printJob для принтера
+# <a name="create-printjob-for-a-printer"></a>Создание printJob для принтера
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [метода printJob](../resources/printJob.md) для [принтера](../resources/printer.md). 
+Создайте новый [printJob](../resources/printJob.md) для [принтера.](../resources/printer.md) 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-В дополнение к следующим разрешениям пользователь или клиент приложения должен иметь активную универсальную подписку на печать и иметь разрешение на получение доступа к [принтеру](printer-get.md) . Пользователь, вошедшего в систему, должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Помимо следующих разрешений, у пользователя или клиента приложения должна быть активная подписка на универсальную печать и разрешение, которое предоставляет [доступ к принтеру.](printer-get.md) Пользователь, выписав его, должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| PrintJob. Реадвритебасик, PrintJob. ReadWrite, PrintJob. Реадвритебасик. ALL, PrintJob. ReadWrite. ALL |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения| Не поддерживается. |
+|Делегированные (рабочая или учебная учетная запись)| PrintJob.Create, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,12 +44,12 @@ POST print/printers/{id}/jobs
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [printJob](../resources/printjob.md) в формате JSON. Объект printJob должен содержать только **конфигурацию**. Все свойства **конфигурации** допускают значение null. Все остальные поля, в том числе задания и идентификаторы документов, задаются автоматически при создании ресурса.
+В теле запроса укажийте представление объекта [printJob](../resources/printjob.md) в JSON. Объект printJob должен содержать только **конфигурацию.** Все свойства **конфигурации имеют** null. Все остальные поля, включая задания и ИД документов, задаются автоматически во время создания ресурса.
 
-Теперь для универсальной печати поддерживается только один **printDocument** для каждого объекта **printJob** .
+Сейчас универсальная печать поддерживает только один **объект printDocument для** **каждого объекта printJob.**
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [printJob](../resources/printjob.md) и связанный с [printDocument](../resources/printDocument.md) в теле отклика. 
+В случае успешного выполнения этот метод возвращает код ответа, объект `201 Created` [printJob](../resources/printjob.md) и связанный объект [printDocument](../resources/printDocument.md) в тексте отклика. 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

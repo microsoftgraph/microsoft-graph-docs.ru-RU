@@ -1,16 +1,16 @@
 ---
 title: Получение принтера
-description: Получение свойств и связей объекта Printer.
+description: Извлечение свойств и связей объекта принтера.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 62ee41b7280121cdecf4aab1acf0b909357418f3
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3c262989648bab2fa439fd11a69004a33c1ae30c
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972445"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784858"
 ---
 # <a name="get-printer"></a>Получение принтера
 
@@ -18,18 +18,18 @@ ms.locfileid: "48972445"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [Printer](../resources/printer.md) .
+Извлечение свойств и связей объекта [принтера.](../resources/printer.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать в дополнение к разрешениям, приведенным в следующей таблице. Пользователь, вошедшего в систему, должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Чтобы использовать службу универсальной печати, у пользователя или клиента приложения должна быть активная подписка универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице. Пользователь, выписав его, должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| Printer. Read. ALL, Printer. ReadWrite. ALL, Printer. FullControl. ALL. |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения| Не поддерживается. |
+|Делегированные (рабочая или учебная учетная запись)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
+|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Приложение| Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,8 +39,12 @@ GET /print/shares/{id}/printer
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запроса OData, в том числе $select, $expand для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
+например, 
+```http
+GET /print/printers/{id}?$select=id,displayName,capabilities
+```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
@@ -49,9 +53,11 @@ GET /print/shares/{id}/printer
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Printer](../resources/printer.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `200 OK` [объект](../resources/printer.md) принтера в тексте отклика.
+По умолчанию отклик не будет содержать [printerCapabilities.](../resources/printerCapabilities.md) Чтобы получить **printerCapabilities,** используйте параметр `$select` запроса. 
+
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -80,7 +86,7 @@ GET https://graph.microsoft.com/beta/print/printers/{id}
 
 ---
 
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -144,6 +150,72 @@ Content-length: 1313
 }
 ```
 
+Ниже приводится пример ответа при использовании $select=id,displayName,capabilities
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printer"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 1313
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers/$entity",
+  "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
+  "displayName": "PrinterName",
+  "capabilities": {
+    "isColorPrintingSupported": true,
+    "supportsFitPdfToPage": false,
+    "contentTypes": [
+      "application/pdf",
+      "image/pwg-raster",
+      "application/PCLm"
+    ],
+    "isPageRangeSupported": false,
+    "qualities": [
+      "medium"
+    ],
+    "dpis": [
+      600
+    ],
+    "duplexModes": [
+      "oneSided",
+      "flipOnLongEdge",
+      "flipOnShortEdge"
+    ],
+    "finishings": [
+      "none"
+    ],
+    "mediaTypes": [
+      "stationery"
+    ],
+    "mediaSizes": [
+      "North America Letter"
+    ],
+    "outputBins": [
+      "tray-1"
+    ],
+    "colorModes": [
+      "grayscale",
+      "color"
+    ],
+    "inputBins": [
+      "tray-1"
+    ],
+    "collation": true,
+    "scalings": [
+      "fill"
+    ],
+    "copiesPerJob": {
+      "start": 1,
+      "end": 38
+    }
+  }
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

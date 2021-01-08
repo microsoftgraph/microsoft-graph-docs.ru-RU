@@ -3,14 +3,14 @@ title: Обновление конфигурации printJob
 description: Обновление конфигурации задания печати
 author: tomsato-ms
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 85063072fb1a9c8d7ec4e5a12805b2fe65a50ddd
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 1fa5ddff45a7dc80d36587577acf972443c956a9
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753095"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784782"
 ---
 # <a name="update-printjob-configuration"></a>Обновление конфигурации printJob
 
@@ -20,18 +20,18 @@ ms.locfileid: "49753095"
 
 Обновление свойства [конфигурации](../resources/printjobconfiguration.md) задания [печати.](../resources/printjob.md)
 
-Для обновления конфигурации задания печати необходимо, чтобы задание печати было в состоянии "удерживания" путем регистрации триггера задачи для принтера. Подробные сведения о регистрации триггера задачи см. в подзадаче "Расширение универсальной печати [для поддержки печати с потягивом".](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
+Обновление конфигурации задания печати будет успешным, только если для связанного задания печати есть состояние [printTask,](../resources/printTask.md) запущенный триггером, запрашивающий `processing` приложение. Подробные сведения о регистрации триггера задачи см. в подзадаче "Расширение универсальной печати [для поддержки печати с потягивом".](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Чтобы использовать службу универсальной печати, у пользователя или клиента приложения должна быть [](printer-get.md) активная подписка универсальной печати, разрешение на получение доступа к принтеру и одно из разрешений, перечисленных в следующей таблице.
+Чтобы использовать службу универсальной печати, у пользователя или клиента приложения должна быть активная подписка "Универсальная печать" (Printer.Read.All или Printer.ReadWrite.All) и одно из разрешений, перечисленных в следующей таблице.
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| Не поддерживается. |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Приложение| PrintJob.Manage.All |
+|Приложение| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -44,7 +44,7 @@ PATCH /print/printers/{id}/jobs/{id}/configuration
 | Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажийте значения соответствующих полей [printJobConfiguration.](../resources/printjobconfiguration.md) Существующие свойства, не включенные в тело запроса, сохраняют свои предыдущие значения.
+В теле запроса укажийте значения соответствующих полей [printJobConfiguration.](../resources/printjobconfiguration.md) Существующие свойства, не включенные в тело запроса, сохраняют свои прежние значения.
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
@@ -54,14 +54,12 @@ PATCH /print/printers/{id}/jobs/{id}/configuration
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "printjob-update-configuration"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45be126bfbb/jobs/44353/configuration
+PATCH https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45be126bfbb/jobs/44353/configuration
 
 {
   "feedOrientation": "longEdgeFirst",
@@ -95,13 +93,6 @@ POST https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d45
   "fitPdfToPage": false
 }
 ```
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/printjob-update-configuration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/printjob-update-configuration-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
