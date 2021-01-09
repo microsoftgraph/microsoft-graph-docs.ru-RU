@@ -293,7 +293,7 @@ items:
                 href: api/user-list-scopedrolememberof.md
               - name: Повторное назначение лицензии
                 href: api/user-reprocesslicenseassignment.md
-              - name: Отоиметь сеанс регистрации
+              - name: Отозовет сеанс регистрации
                 href: api/user-revokesigninsessions.md
           - name: Диск
             href: resources/drive.md
@@ -3417,7 +3417,7 @@ items:
                     href: resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md
                   - name: Режим подключения аккумулятора для владельца устройства с Android
                     href: resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md
-                  - name: База профилей сертификатов владельца устройства с Android
+                  - name: База профилей сертификатов владельца устройства Android
                     href: resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md
                     items:
                       - name: Перечисление
@@ -4099,7 +4099,7 @@ items:
                         href: api/intune-deviceconfig-appleexpeditedcheckinconfigurationbase-get.md
                   - name: Формат имени субъекта Apple
                     href: resources/intune-deviceconfig-applesubjectnameformat.md
-                  - name: Vpn Apple постоянно в конфигурации
+                  - name: Apple VPN всегда в конфигурации
                     href: resources/intune-deviceconfig-applevpnalwaysonconfiguration.md
                   - name: Конфигурация VPN для Apple
                     href: resources/intune-deviceconfig-applevpnconfiguration.md
@@ -4487,7 +4487,7 @@ items:
                     href: resources/intune-deviceconfig-devicetypes.md
                   - name: Режим отправки диагностических данных
                     href: resources/intune-deviceconfig-diagnosticdatasubmissionmode.md
-                  - name: Группа Диффи Диффама
+                  - name: Группа Диффи Диффама (Diffieie)
                     href: resources/intune-deviceconfig-diffiehellmangroup.md
                   - name: Тип политики перечисления устройства защиты DMA
                     href: resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md
@@ -4995,7 +4995,7 @@ items:
                         href: api/intune-deviceconfig-ioscustomconfiguration-delete.md
                       - name: Обновление
                         href: api/intune-deviceconfig-ioscustomconfiguration-update.md
-                  - name: 'Конфигурация проверки подлинности учетных данных, производная от iOS'
+                  - name: Конфигурация проверки подлинности на основе учетных данных на основе iOS
                     href: resources/intune-deviceconfig-iosderivedcredentialauthenticationconfiguration.md
                     items:
                       - name: Перечисление
@@ -10826,7 +10826,7 @@ items:
                         href: api/identityapiconnector-delete.md
           - name: Управление
             items:
-              - name: Проверки доступа (группы)
+              - name: Проверки доступа для групп
                 href: resources/accessreviewsv2-root.md
                 items:
                   - name: Определение расписания проверки доступа
@@ -10868,7 +10868,7 @@ items:
                         href: api/accessreviewinstancedecisionitem-listpendingapproval.md
                       - name: Update
                         href: api/accessreviewinstancedecisionitem-update.md
-              - name: Проверки доступа (все ресурсы)
+              - name: Проверки доступа
                 href: resources/accessreviews-root.md
                 items:
                   - name: Проверка доступа
@@ -11936,7 +11936,7 @@ items:
                 href: resources/report-identity-access.md
               - name: Активность приложений AD FS
                 items:
-                  - name: Подробная сводка по этой теме
+                  - name: Подробная сводка по считывамая информация о подавящей стороне
                     href: resources/relyingpartydetailedsummary.md
                     items:
                       - name: Перечисление
@@ -11946,7 +11946,7 @@ items:
                   - name: Сводка по входу
                     href: resources/applicationsigninsummary.md
                     items:
-                      - name: Сводка по входу
+                      - name: Вывод сводки по входу
                         href: api/applicationsigninsummary-get.md
                   - name: Сведения о входе
                     href: resources/applicationsignindetailedsummary.md
@@ -12057,7 +12057,7 @@ items:
                     href: api/reportroot-getm365appusercounts.md
                   - name: Получить количество пользователей платформы
                     href: api/reportroot-getm365appplatformusercounts.md
-              - name: Действия с группами Microsoft 365
+              - name: Действия в группах Microsoft 365
                 href: resources/office-365-groups-activity-reports.md
                 items:
                   - name: Получение сведений о группе
@@ -12317,7 +12317,7 @@ items:
                     href: resources/emailfileassessmentrequest.md
                   - name: Запрос на оценку файла
                     href: resources/fileAssessmentRequest.md
-                  - name: Запрос на оценку URL-адресов
+                  - name: Запрос на оценку URL-адреса
                     href: resources/urlassessmentrequest.md
                   - name: Перечисление
                     href: api/informationprotection-list-threatassessmentrequests.md
@@ -12960,7 +12960,7 @@ items:
                     href: api/shiftpreferences-get.md
                   - name: Обновление
                     href: api/shiftpreferences-put.md
-              - name: Запрос на изменение смен смены
+              - name: Запрос на изменение смены подкачки
                 href: resources/swapshiftschangerequest.md
                 items:
                   - name: Перечисление
