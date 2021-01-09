@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: conceptualPageType
 ms.prod: microsoft-identity-platform
 author: dkershaw10
-ms.openlocfilehash: 8e6f9af9ba00e4cccea94e04fff0aed866ea7d2e
-ms.sourcegitcommit: 40b0e58312819b69567f35ab894ee0d2989837ab
+ms.openlocfilehash: 9f243cdc50291a8ab49a5129b1b459fc40a74255
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030228"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790701"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Работа с ресурсами Azure Active Directory в Microsoft Graph
 
@@ -60,10 +60,10 @@ Microsoft Graph предоставляет доступ к ресурсам [Azu
 | Получайте информацию о службах, на которые подписана компания. | [subscribedSku](../resources/subscribedsku.md) | Недоступно |
 | Приглашайте внешних пользователей в организацию. | [invitation](../resources/invitation.md) | [Что такое служба совместной работы Azure AD B2B?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b)|
 | Управляйте фирменной символикой для интерфейса входа организации. | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [Добавление фирменной символики на страницу входа в Azure Active Directory вашей организации](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)|
+| **Проверки доступа** | | |
+| Проверяйте правильность участия в группах и права доступа к приложению с помощью проверок доступа. | [API проверки доступа](../resources/accessreviews-root.md) |[Проверки доступа Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
 
-| **Проверки доступа** | | | | Проверка правильности участия в группах и прав доступа к приложению с помощью проверок доступа | [API проверок доступа](../resources/accessreviews-root.md) |[Проверки доступа Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
-
-## <a name="whats-new"></a>Новые возможности
+## <a name="whats-new"></a>Что нового
 Узнайте о [новых функциях и обновлениях](/graph/whats-new-overview) для этого набора API.
 
 ## <a name="next-steps"></a>Дальнейшие действия
