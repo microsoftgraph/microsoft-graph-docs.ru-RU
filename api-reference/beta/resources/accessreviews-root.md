@@ -1,40 +1,40 @@
 ---
-title: Обзоры Access Azure AD (все ресурсы)
-description: Вы можете использовать обзоры Azure AD, чтобы настроить однократные или повторяющиеся проверки доступа для подтверждения прав доступа пользователя. Эта документация служит для поддержки устаревших API.
+title: Проверки доступа Azure AD (все ресурсы)
+description: Вы можете использовать проверки доступа Azure AD, чтобы настроить однововременные или повторяющиеся проверки доступа для проверки прав доступа пользователя. Эта документация предназначена для устаревших API.
 localization_priority: Normal
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: a7c40faf46713e9f88c48d6c26df73ccb975bb86
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: 113e24c801c804024d37700148ca1eb12c128a06
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086587"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790750"
 ---
-# <a name="azure-ad-access-reviews-all-resources"></a>Обзоры Access Azure AD (все ресурсы)
+# <a name="azure-ad-access-reviews-for-resources-excluding-groups"></a>Проверки доступа Azure AD (для ресурсов, кроме групп)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->Для доступа к API проверки доступа, которые применяются к членству в группах, ознакомьтесь с [Разрецензированием Access (участие](accessreviewsv2-root.md)в группах). Эти API проверки доступа применяются ко всем другим типам ресурсов.
+>API проверки доступа в этом разделе применяются ко всем поддерживаемых типам ресурсов, _кроме групп._ API проверки доступа, которые применяются к членству в группах, см. в отзывах [Access для групп.](accessreviewsv2-root.md) 
 
-Вы можете использовать [обзоры Azure AD](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) , чтобы настроить однократные или повторяющиеся проверки доступа для подтверждения прав доступа пользователя.
+Вы можете использовать проверки [доступа Azure AD,](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) чтобы настроить однововременные или повторяющиеся проверки доступа для проверки прав доступа пользователя.
 
-Типичные сценарии клиентов для проверки членства в группах и доступа к приложениям:
+Типичные сценарии проверки доступа клиентов на членство в группах и доступ к приложениям:
 
-- Пользователи могут просматривать и сертифицировать гостевой доступ, используя обзоры доступа к приложениям и группам. Проверяющие могут использовать аналитику, которая позволяет эффективно определять, должен ли гостям доступ.
+- Клиенты могут просмотреть и сертифицировать доступ гостевых пользователей с помощью проверок доступа к приложениям и членствам в группах. Рецензенты могут использовать предоставленные сведения, чтобы эффективно решить, должны ли гости иметь постоянный доступ.
 
-- Пользователи могут просматривать и сертифицировать доступ сотрудников к приложениям и членству в группах с помощью рецензирования Access.
+- Клиенты могут просмотреть и сертифицировать доступ сотрудников к приложениям и членствам в группах с помощью проверок доступа.
 
-- Пользователи могут собирать элементы управления проверкой доступа в программы, которые соответствуют требованиям организации для отслеживания проверок на соответствие требованиям и приложениям, учитывающим риск.
+- Клиенты могут собирать средства контроля доступа в программы, релевантные для вашей организации, для отслеживания проверок соответствия требованиям или приложений, чувствительных к рискам.
 
-Кроме того, у пользователей есть возможность просматривать и сертифицировать назначения ролей для пользователей, которым назначены роли Azure AD, такие как глобальный администратор или роли подписки Azure.  Эта возможность включена в [Azure AD с правами привилегированного управления идентификацией](privilegedidentitymanagement-root.md).
+Клиенты также могут просмотреть и сертифицировать назначения ролей административных пользователей, которым назначены роли Azure AD, такие как роли глобального администратора или подписки Azure.  Эта возможность включена в [Azure AD Privileged Identity Management.](privilegedidentitymanagement-root.md)
 
-Обратите внимание, что функция рецензирования доступа, включая API, включена в Azure AD Premium P2.  Клиент, на котором создается проверка доступа, должен иметь допустимую приобретенную или пробную подписку на Azure AD Premium P2 или EMS.
-Прежде чем приступать к созданию обзора, программы или элемента управления программы, администратор должен заранее подготовиться к работе, чтобы подготовить ресурсы [програмконтролтипе](programcontroltype.md) и [бусинессфловтемплате](businessflowtemplate.md) . Организация может выполнять проверку доступа Azure AD или, в случае рецензирования роли Azure AD или ролей подписки Azure, системы PIM Azure AD.
+Обратите внимание, что функция проверки доступа, включая API, включена в Azure AD Premium P2.  У клиента, на котором создается проверка доступа, должна быть действительная приобретенная или пробная подписка на Azure AD Premium P2 или EMS E5.
+Перед созданием проверки доступа, управления программой или программой администратор должен предварительно вошел в группу, чтобы подготовить ресурсы [programControlType](programcontroltype.md) и [businessFlowTemplate.](businessflowtemplate.md) Организация может присоединения к проверки доступа Azure AD или, в случае проверки доступа ролей Azure AD или ролей подписки Azure, Azure AD PIM.
 
 
 ## <a name="methods"></a>Методы
@@ -43,51 +43,51 @@ ms.locfileid: "49086587"
 
 | Метод           | Тип возвращаемых данных    |Описание|
 |:---------------|:--------|:----------|
-|[Получение Акцессревиев](../api/accessreview-get.md) |   [акцессревиев](accessreview.md) |   Получение проверки доступа с определенным ИДЕНТИФИКАТОРом. |
-|[Создание Акцессревиев](../api/accessreview-create.md) | [акцессревиев](accessreview.md) |   Создание нового Акцессревиев. |
-|[Удаление Акцессревиев](../api/accessreview-delete.md) | Нет.   | Удаление Акцессревиев. |
-|[Обновление Акцессревиев](../api/accessreview-update.md) | [акцессревиев](accessreview.md) | Обновление Акцессревиев. |
-|[Список Акцессревиевс](../api/accessreview-list.md) |    Коллекция [акцессревиев](accessreview.md) |    Список Акцессревиевс для Бусинессфловтемплате. |
-|[Список рецензентов Акцессревиев](../api/accessreview-listreviewers.md) |      Коллекция [userIdentity](useridentity.md)| Получение рецензентов объекта Акцессревиев. |
-|[Добавление рецензента Акцессревиев](../api/accessreview-addreviewer.md) |      Нет.   |   Добавьте проверяющего в объект Акцессревиев. |
-|[Удаление рецензента Акцессревиев](../api/accessreview-removereviewer.md) | Нет.  |   Удаление проверяющего из Акцессревиев. |
-|[Список решений Акцессревиев](../api/accessreview-listdecisions.md) |      Коллекция [акцессревиевдеЦисион](accessreviewdecision.md)| Получение решений для Акцессревиев.|
-|[Список моих решений Акцессревиев](../api/accessreview-listmydecisions.md) |     Коллекция [акцессревиевдеЦисион](accessreviewdecision.md)| В качестве проверяющего получите мое решение Акцессревиев.|
-|[Отправка напоминания о Акцессревиев](../api/accessreview-sendreminder.md) |        Нет.   |   Отправьте напоминание рецензентам Акцессревиев. |
-|[Остановить Акцессревиев](../api/accessreview-stop.md) |     Нет.   |   Остановка Акцессревиев. |
-|[Сброс решений Акцессревиев](../api/accessreview-reset.md) |     Нет.   |   Сброс решений во время выполнения Акцессревиев.|
-|[Применение решений Акцессревиев](../api/accessreview-apply.md) |     Нет.   |   Применение решений из завершенной Акцессревиев.|
-|[Список Бусинессфловтемплатес](../api/businessflowtemplate-list.md) | Коллекция [бусинессфловтемплате](businessflowtemplate.md)| Получите шаблоны бизнес-процесса, подходящие для доступа к рецензированию.|
-|[Создание программы](../api/program-create.md) |   [Программа](program.md)   |   Создайте новую программу.|
+|[Get accessReview](../api/accessreview-get.md) |   [accessReview](accessreview.md) |   Получите отзыв о доступе с определенным ИД. |
+|[Создание accessReview](../api/accessreview-create.md) | [accessReview](accessreview.md) |   Создайте новый accessReview. |
+|[Удаление accessReview](../api/accessreview-delete.md) | Нет.   | Удаление accessReview. |
+|[Обновление accessReview](../api/accessreview-update.md) | [accessReview](accessreview.md) | Обновление accessReview. |
+|[Список accessReviews](../api/accessreview-list.md) |    [Коллекция accessReview](accessreview.md) |    Список accessReviews для businessFlowTemplate. |
+|[Список рецензентов accessReview](../api/accessreview-listreviewers.md) |      [Коллекция userIdentity](useridentity.md)| Получите проверяющих accessReview. |
+|[Добавление рецензента accessReview](../api/accessreview-addreviewer.md) |      Нет.   |   Добавление рецензента в accessReview. |
+|[Удаление рецензента accessReview](../api/accessreview-removereviewer.md) | Нет.  |   Удаление рецензента из accessReview. |
+|[Список решений accessReview](../api/accessreview-listdecisions.md) |      [Коллекция accessReviewDecision](accessreviewdecision.md)| Получите решения accessReview.|
+|[Список решений accessReview](../api/accessreview-listmydecisions.md) |     [Коллекция accessReviewDecision](accessreviewdecision.md)| Как рецензент получите мои решения по accessReview.|
+|[Отправка напоминания accessReview](../api/accessreview-sendreminder.md) |        Нет.   |   Отправьте напоминание рецензентам accessReview. |
+|[Остановка accessReview](../api/accessreview-stop.md) |     Нет.   |   Остановите accessReview. |
+|[Сброс решений accessReview](../api/accessreview-reset.md) |     Нет.   |   Сброс решений в ходе выполнения accessReview.|
+|[Применение решений accessReview](../api/accessreview-apply.md) |     Нет.   |   Применение решений из завершенного accessReview.|
+|[Список businessFlowTemplates](../api/businessflowtemplate-list.md) | [Коллекция businessFlowTemplate](businessflowtemplate.md)| Получите шаблоны бизнес-потока, подходящие для получения доступа к отзывам.|
+|[Создание программы](../api/program-create.md) |   [program](program.md)   |   Создайте новую программу.|
 |[Удаление программы](../api/program-delete.md) |   Нет.   |   Удаление программы.|
-|[Список программ](../api/program-list.md) |  Коллекция [Program](program.md)|   Получение коллекции всех программ.|
-|[Список Програмконтролс программы](../api/program-listcontrols.md) |      Коллекция [програмконтрол](programcontrol.md)| Получение коллекции элементов управления программы.|
-|[Программа обновления](../api/program-update.md) |   [Программа](program.md)|  Обновление программы.|
-|[Создание Програмконтрол](../api/programcontrol-create.md) |     [програмконтрол](programcontrol.md) |   Добавление Програмконтрол в программу.|
-|[Удаление Програмконтрол](../api/programcontrol-delete.md) |     Нет.   |   Удаление Програмконтрол из программы.|
-|[Список Програмконтролс](../api/programcontrol-list.md) | Коллекция [програмконтрол](programcontrol.md)| Перечисление элементов управления для всех программ в клиенте.|
-|[Список Програмконтролтипес](../api/programcontroltype-list.md) | Коллекция [програмконтролтипе](programcontroltype.md)| Список типов элементов управления программы. |
+|[Список программ](../api/program-list.md) |  [коллекция program](program.md)|   Получите коллекцию всех программ.|
+|[Список programControls программы](../api/program-listcontrols.md) |      [Коллекция programControl](programcontrol.md)| Получите коллекцию элементов управления программы.|
+|[Обновление программы](../api/program-update.md) |   [program](program.md)|  Обновление программы.|
+|[Создание programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   Добавьте programControl в программу.|
+|[Удаление programControl](../api/programcontrol-delete.md) |     Нет.   |   Удалите programControl из программы.|
+|[Список programControls](../api/programcontrol-list.md) | [Коллекция programControl](programcontrol.md)| Список элементов управления во всех программах в клиенте.|
+|[Список programControlTypes](../api/programcontroltype-list.md) | [Коллекция programControlType](programcontroltype.md)| Список типов управления программой. |
 
-## <a name="role-and-application-permission-authorization-checks"></a>Проверки авторизации разрешений для ролей и приложений
+## <a name="role-and-application-permission-authorization-checks"></a>Проверки авторизации разрешений ролей и приложений
 
-Чтобы вызывающий пользователь управлялся проверками доступа, программами и элементами управления, необходимы следующие роли каталогов.
+Следующие роли каталога необходимы вызываемой пользователю для управления проверками доступа, программами и средствами управления.
 
-| Целевой ресурс | Операция | Разрешения приложений | Требуемая роль каталога вызывающего пользователя |
+| Целевой ресурс | Операция | Разрешения приложений | Требуемая роль каталога вызываемого пользователя |
 |:----------------|:------------------|:------------|:--------------------------------------------|
-|[акцессревиев](accessreview.md) роли Azure AD | Чтение | Акцессревиев. Read. ALL или Акцессревиев. ReadWrite. ALL | Глобальный администратор, глобальный читатель, администратор безопасности, средство чтения безопасности или привилегированный администратор ролей |
-|[акцессревиев](accessreview.md) роли Azure AD | Создание, обновление или удаление | AccessReview.ReadWrite.All | Администратор глобального администратора или привилегированной роли |
-|[акцессревиев](accessreview.md) группы или приложения | Чтение | Акцессревиев. Read. ALL, Акцессревиев. ReadWrite. Membership или Акцессревиев. ReadWrite. ALL | Глобальный администратор, глобальный читатель, администратор безопасности, средство чтения безопасности или администратор пользователей |
-|[акцессревиев](accessreview.md) группы или приложения | Создание, обновление или удаление | Акцессревиев. ReadWrite. Membership или Акцессревиев. ReadWrite. ALL | Глобальный администратор или администратор пользователей |
-| [программы](program.md) и [програмконтрол](programcontrol.md)| Чтение | Програмконтрол. Read. ALL или Програмконтрол. ReadWrite. ALL |  Глобальный администратор, глобальный читатель, администратор безопасности, средство чтения безопасности или администратор пользователей |
-| [программы](program.md) и [програмконтрол](programcontrol.md) | Создание, обновление или удаление | ProgramControl.ReadWrite.All | Глобальный администратор или администратор пользователей |
+|[accessReview](accessreview.md) роли Azure AD | Чтение | AccessReview.Read.All или AccessReview.ReadWrite.All | Глобальный администратор, глобальный читатель, администратор безопасности, читатель безопасности или администратор привилегированных ролей |
+|[accessReview](accessreview.md) роли Azure AD | Создание, обновление или удаление | AccessReview.ReadWrite.All | Глобальный администратор или администратор привилегированных ролей |
+|[accessReview](accessreview.md) группы или приложения | Чтение | AccessReview.Read.All, AccessReview.ReadWrite.Membership или AccessReview.ReadWrite.All | Глобальный администратор, глобальный читатель, администратор безопасности, читатель безопасности или администратор пользователя |
+|[accessReview](accessreview.md) группы или приложения | Создание, обновление или удаление | AccessReview.ReadWrite.Membership или AccessReview.ReadWrite.All | Глобальный администратор или администратор пользователей |
+| [program](program.md) и [programControl](programcontrol.md)| Чтение | ProgramControl.Read.All или ProgramControl.ReadWrite.All |  Глобальный администратор, глобальный читатель, администратор безопасности, читатель безопасности или администратор пользователя |
+| [program](program.md) и [programControl](programcontrol.md) | Создание, обновление или удаление | ProgramControl.ReadWrite.All | Глобальный администратор или администратор пользователей |
 
-Кроме того, пользователь, который является назначенным рецензентом проверки доступа, может управлять своими решениями без необходимости их использования в роли каталога.
+Кроме того, пользователь, который является назначенным рецензентом проверки доступа, может управлять своими решениями без необходимости быть в роли каталога.
 
 ## <a name="see-also"></a>См. также
 
 - [Как администратор может управлять доступом пользователей с помощью проверок доступа Azure AD](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
-- [Как администратор может управлять гостевым доступом с помощью проверок Azure AD](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
-- [Как администратор может управлять программами и элементами управления для рецензирования Access Azure AD](/azure/active-directory/active-directory-azure-ad-controls-manage-programs-controls)
+- [Как администратор может управлять гостевим доступом с помощью проверок доступа Azure AD](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
+- [Как администратор может управлять программами и средствами управления для проверки доступа Azure AD](/azure/active-directory/active-directory-azure-ad-controls-manage-programs-controls)
 
 
 <!--

@@ -5,12 +5,12 @@ author: braedenp-msft
 localization_priority: Priority
 ms.prod: universal-print
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 64a2732d798546b6fd853fe3abf8811ec206abab
-ms.sourcegitcommit: a9720ab80625a4692f7d2450164717853535d0b0
+ms.openlocfilehash: 73742cf7d00379599ccdb940b4ef10ec99db59d6
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993945"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790736"
 ---
 # <a name="universal-print-cloud-printing-api-overview"></a>Обзор API облачной среды универсальной печати
 
@@ -50,12 +50,12 @@ ms.locfileid: "48993945"
   * [Список monthlyPrintUsageSummariesByPrinter](/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter?view=graph-rest-beta)
 
 * **Настройка разрешений для пользователей** через изменения в членстве пользователей и групп касательно принтеров:
-  * [Список allowedUsers](/graph/api/printer-list-allowedusers?view=graph-rest-beta)
-  * [Добавление allowedUser](/graph/api/printer-post-allowedusers?view=graph-rest-beta)
-  * [Удаление allowedUser](/graph/api/printer-delete-alloweduser?view=graph-rest-beta)
-  * [Список allowedGroups](/graph/api/printer-list-allowedgroups?view=graph-rest-beta)
-  * [Добавление allowedGroup](/graph/api/printer-post-allowedgroups?view=graph-rest-beta)
-  * [Удаление allowedGroup](/graph/api/printer-delete-allowedgroup?view=graph-rest-beta)
+  * [Список allowedUsers](/graph/api/printershare-list-allowedusers?view=graph-rest-beta)
+  * [Добавление allowedUser](/graph/api/printershare-post-allowedusers?view=graph-rest-beta)
+  * [Удаление allowedUser](/graph/api/printershare-delete-alloweduser?view=graph-rest-beta)
+  * [Список allowedGroups](/graph/api/printershare-list-allowedgroups?view=graph-rest-beta)
+  * [Добавление allowedGroup](/graph/api/printershare-post-allowedgroups?view=graph-rest-beta)
+  * [Удаление allowedGroup](/graph/api/printershare-delete-allowedgroup?view=graph-rest-beta)
 
 ### <a name="seamlessly-replace-or-update-printer-hardware"></a>Комфорт при замене и обновлении оборудования для печати
 

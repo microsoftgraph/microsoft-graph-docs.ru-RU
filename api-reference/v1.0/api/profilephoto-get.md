@@ -5,12 +5,12 @@ localization_priority: Priority
 author: kevinbellinger
 ms.prod: ''
 doc_type: apiPageType
-ms.openlocfilehash: a82f04b4be1a6b7d02b751b9c63acf3439e45d7a
-ms.sourcegitcommit: 70e09ebbf67f49a0c64ab7a275e751f8a68b8696
+ms.openlocfilehash: c3bd5a0d69ab392fc55ac1f44bfbe3dc6d74ad08
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48771771"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790617"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
@@ -32,9 +32,9 @@ ms.locfileid: "48771771"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Для ресурса **user** :<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />Для ресурса **group** :<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact** :<br />Contacts.Read, Contacts.ReadWrite |
+|Делегированные (рабочая или учебная учетная запись) | Для ресурса **user**:<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Разрешения приложений                        | Для ресурса **user** :<br/>User.Read.All, User.ReadWrite.All<br /><br />Для ресурса **group** :<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact** :<br />Contacts.Read, Contacts.ReadWrite |
+|Для приложения                        | Для ресурса **user**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
 
 > **Примечание.** В настоящее время существует [известная проблема](/graph/known-issues#groups) с доступом к фотографиям группы с помощью разрешений для приложений.
 
@@ -42,6 +42,7 @@ ms.locfileid: "48771771"
 
 ### <a name="get-the-photo"></a>Получение фотографии
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/photo/$value
 GET /users/{id | userPrincipalName}/photo/$value
@@ -51,8 +52,10 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
+
 ### <a name="get-the-metadata-of-the-photo"></a>Получение метаданных фотографии
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/photo
 GET /me/photos
@@ -66,6 +69,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 
 ### <a name="get-the-metadata-for-a-specific-photo-size"></a>Получение метаданных фотографии определенного размера
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/photos/{size}
 GET /users/{id | userPrincipalName}/photos/{size}
@@ -82,6 +86,7 @@ GET /groups/{id}/photos/{size}
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
@@ -101,6 +106,7 @@ GET /groups/{id}/photos/{size}
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/photo/$value
 ```
@@ -113,6 +119,7 @@ GET https://graph.microsoft.com/v1.0/me/photo/$value
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
 Content-Type: image/jpg
@@ -126,6 +133,7 @@ Content-Type: image/jpg
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/photo
 ```
@@ -138,6 +146,7 @@ GET https://graph.microsoft.com/v1.0/me/photo
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -160,6 +169,7 @@ Content-type: application/json
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -174,23 +184,28 @@ Content-type: application/json
     "height": 1
 }
 ```
+
 ## <a name="using-the-binary-data-of-the-requested-photo"></a>Использование двоичных данных запрошенной фотографии
 
 Когда вы используете конечную точку `/photo/$value` для получения двоичных данных для фотографии профиля, потребуется преобразовать эти данные в строку Base64, чтобы добавить их как вложение электронной почты. Ниже приведен пример кода JavaScript, показывающий, как создать массив, который можно передать как значение параметра `Attachments` для [сообщения Outlook](user-post-messages.md).
 
-      const attachments = [{
-        '@odata.type': '#microsoft.graph.fileAttachment',
-        ContentBytes: file.toString('base64'),
-        Name: 'mypic.jpg'
-      }];
+```java
+const attachments = [{
+  '@odata.type': '#microsoft.graph.fileAttachment',
+  ContentBytes: file.toString('base64'),
+  Name: 'mypic.jpg'
+}];
+```
 
 Ознакомиться с реализацией этого примера можно в статье [Пример подключения к Microsoft Graph для Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample).
 
 Если требуется, чтобы изображение отображалось на веб-странице, создайте объект в памяти на его основе и сделайте этот объект источником элемента изображения. Ниже приведен пример кода JavaScript для этой операции.
 
-    const url = window.URL || window.webkitURL;
-    const blobUrl = url.createObjectURL(image.data);
-    document.getElementById(imageElement).setAttribute("src", blobUrl);
+```javascript
+const url = window.URL || window.webkitURL;
+const blobUrl = url.createObjectURL(image.data);
+document.getElementById(imageElement).setAttribute("src", blobUrl);
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

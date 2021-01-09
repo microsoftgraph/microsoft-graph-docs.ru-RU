@@ -1,18 +1,18 @@
 ---
-title: Тип ресурса Воркбуксортфиелд
+title: Тип ресурса workbookSortField
 description: Представляет условие в операции сортировки.
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: excel
 author: ruoyingl
-ms.openlocfilehash: 5f296d7d2d748213c24f1d49f6363f86d2b1af84
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: a245591755542a0a9bcfefb3f220511bd1521118
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48046106"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790673"
 ---
-# <a name="workbooksortfield-resource-type"></a>Тип ресурса Воркбуксортфиелд
+# <a name="workbooksortfield-resource-type"></a>Тип ресурса workbookSortField
 
 Пространство имен: microsoft.graph
 
@@ -26,13 +26,9 @@ ms.locfileid: "48046106"
 |ascending|boolean|Указывает, выполняется ли сортировка по возрастанию.|
 |color|string|Представляет целевой цвет условия при сортировке по шрифту или цвету ячеек.|
 |dataOption|string|Представляет дополнительные параметры сортировки для этого поля. Возможные значения: `Normal`, `TextAsNumber`.|
+|значок|[workbookIcon](workbookicon.md)|Представляет значок, определенный условием, при сортировке по значку ячейки.|
 |key|int|Представляет столбец (или строку в зависимости от ориентации сортировки), для которого задано условие. Представляется в виде расстояния от первого столбца (или строки).|
 |sortOn|string|Представляет тип сортировки этого условия. Возможные значения: `Value`, `CellColor`, `FontColor`, `Icon`.|
-
-## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
-|:---------------|:--------|:----------|
-|icon|[воркбукикон](workbookicon.md)|Представляет значок, определенный условием, при сортировке по значку ячейки.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -43,8 +39,6 @@ ms.locfileid: "48046106"
   "optionalProperties": [
 
   ],
-  "keyProperty": "id",
-  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.workbookSortField"
 }-->
 

@@ -1,35 +1,34 @@
 ---
 title: Проверки доступа Azure AD — членство в группах
-description: Вы можете использовать проверки доступа Azure AD, чтобы настроить однововременные или повторяющиеся проверки доступа для проверки прав доступа пользователя. В этой документации используется 2-я версия API.
+description: Вы можете использовать проверки доступа Azure AD, чтобы настроить однововременные или повторяющиеся проверки доступа для проверки прав доступа пользователя. Эта документация обслуживает 2-ю версию API.
 localization_priority: Normal
 author: isabelleatmsft
 ms.prod: microsoft-identity-platform
 doc_type: conceptualPageType
-ms.openlocfilehash: 5c5cbe43c75e5f0ac0ea552c380b294c7725907e
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: fd476139edafda2daaac38008cbcaa241ee29d45
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705956"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790603"
 ---
-# <a name="azure-ad-access-reviews-group-memberships"></a>Проверки доступа Azure AD (членство в группах)
+# <a name="azure-ad-access-reviews-for-groups"></a>Проверки доступа Azure AD для групп
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 >[!NOTE]
->Эта документация относится к проверке доступа к членству в группах. Обзоры доступа для всех других поддерживаемых типов ресурсов см. в отзывах [Access (все ресурсы).](accessreviews-root.md)
->
->В настоящее время этот API поддерживает только проверки доступа членства в группах.
+>API проверки доступа в этом разделе применяются только к членству в группах. Обзоры доступа для всех других поддерживаемых типов ресурсов см. в [отзывах Access.](accessreviews-root.md)
 
-Вы можете использовать проверки [доступа Azure AD,](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) чтобы настроить однововременные или повторяющиеся проверки доступа для проверки прав доступа пользователей.
+
+Вы можете использовать проверки [доступа Azure AD,](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) чтобы настроить однововременные или повторяющиеся проверки доступа для проверки прав доступа пользователя.
 
 Типичные сценарии проверки доступа клиентов на членство в группах и доступ к приложениям:
 
 - Клиенты могут просмотреть и сертифицировать доступ гостевых пользователей с помощью проверок доступа к приложениям и членствам в группах. Рецензенты могут использовать предоставленные сведения, чтобы эффективно решить, должны ли гости иметь постоянный доступ.
 
-- Клиенты могут просмотреть и сертифицировать доступ сотрудников к приложениям и членству в группах с помощью проверок доступа.
+- Клиенты могут просмотреть и сертифицировать доступ сотрудников к приложениям и членствам в группах с помощью проверок доступа.
 
 - Клиенты могут собирать средства контроля доступа в программы, релевантные для вашей организации, для отслеживания проверок соответствия требованиям или приложений, чувствительных к рискам.
 
@@ -49,16 +48,16 @@ ms.locfileid: "49705956"
 |[Создание accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-create.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Создание объекта `accessReviewScheduleDefinition`. |
 |[Удаление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | Нет. | Удаление с `accessReviewScheduleDefinition` указанным ИД. |
 |[Обновление accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | Нет. | Обновление свойств объекта с `accessReviewScheduleDefinition` указанным ИД. |
-|[Список accessReviewInstance](../api/accessreviewinstance-list.md) | [Коллекция accessReviewInstance](accessreviewinstance.md) | Перечисляет `accessReviewInstance` каждый из них для определенного `accessReviewScheduleDefinition` . Не включает связанные `accessReviewInstanceDecisionItem` s в листинги. |
+|[Список accessReviewInstance](../api/accessreviewinstance-list.md) | [Коллекция accessReviewInstance](accessreviewinstance.md) | Перечисляет `accessReviewInstance` каждый из них для определенного `accessReviewScheduleDefinition` . Не включает связанные `accessReviewInstanceDecisionItem` s в списки. |
 |[Get accessReviewInstance](../api/accessreviewinstance-get.md) | [accessReviewInstance](accessreviewinstance.md) | Возвращает для `accessReviewInstance` `accessReviewScheduleDefinition` . Не включает связанные `accessReviewInstanceDecisionItem` s в объект. |
-|[Список ожидающих утверждения accessReviewInstances](../api/accessreviewinstance-pendingaccessreviewinstances.md) | [коллекция accessReviewInstance;](accessreviewinstance.md) | Получите `accessReviewInstance` все, что назначено вызываемму пользователю. |
+|[Список ожидающих утверждения accessReviewInstances](../api/accessreviewinstance-pendingaccessreviewinstances.md) | [коллекция accessReviewInstance;](accessreviewinstance.md) | Получить `accessReviewInstance` все, что назначено вызываемму пользователю. |
 |[Отправка напоминания accessReviewInstance](../api/accessreviewinstance-sendreminder.md) | Нет. | Отправьте напоминание рецензентам. `accessReviewInstance` |
 |[Остановка accessReviewInstance](../api/accessreviewinstance-stop.md) | Нет. | Вручную остановите `accessReviewInstance` . |
-|[Принятие рекомендаций](../api/accessreviewinstance-acceptrecommendations.md) | Нет. | Позволяет вызываемой пользователю принять рекомендации по принятию решений для каждого notReviewed, в которых он является рецензентом для `accessReviewInstanceDecisionItem` определенного `accessReviewInstance` . |
+|[Принятие рекомендаций](../api/accessreviewinstance-acceptrecommendations.md) | Нет. | Позволяет вызываемой пользователю принять рекомендации по принятию решений для каждого notReviewed, в которых он является рецензентом для `accessReviewInstanceDecisionItem` определенного `accessReviewInstance` пользователя. |
 |[Применение решений](../api/accessreviewinstance-applydecisions.md) | Нет. | Вручную применить решение по `accessReviewInstance` . |
 |[Список accessReviewInstanceDecisionItems](../api/accessreviewinstancedecisionitem-list.md) | [Коллекция accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) | Перечисляет `accessReviewInstanceDecisionItem` каждый из них для определенного `accessReviewInstance` . |
 |[Список accessReviewInstanceDecisionItems, ожидающих утверждения](../api/accessreviewinstancedecisionitem-listpendingapproval.md) | [коллекция accessReviewInstanceDecisionItem;](accessreviewinstancedecisionitem.md) | Получите `accessReviewInstanceDecisionItems` все, что назначено вызываемму пользователю, для конкретного `accessReviewInstance` пользователя. |
-|[Обновление accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-update.md) | Нет. | Если вызывающий пользователь назначен рецензенту, вызывающий пользователь может записать решение, внося `accessReviewInstanceDecisionItems` исправления в объект решения. |
+|[Обновление accessReviewInstanceDecisionItem](../api/accessreviewinstancedecisionitem-update.md) | Нет. | Если вызывающий пользователь назначен рецензенту, вызывающий пользователь может записать решение, внося исправления `accessReviewInstanceDecisionItems` в объект решения. |
 
 ## <a name="role-and-application-permission-authorization-checks"></a>Проверки авторизации разрешений ролей и приложений
 

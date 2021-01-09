@@ -5,15 +5,18 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 33a6312474994ff65397f6d09b416d15560bb08c
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 05cb2e8e4d6a41028a9f35b82561b4f5b5d80251
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706491"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790601"
 ---
 # <a name="get-teamworkbot"></a>Get teamworkBot
+
 Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получите бота, связанного с определенным [определением](../resources/teamsappdefinition.md) [TeamsApp.](../resources/teamsapp.md)
 
@@ -37,7 +40,7 @@ GET /appCatalogs/teamsApps/{app-id}/appDefinitions/{app-definition-id}/bot
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$select` [параметры запросов OData](/graph/query-parameter) для настройки отклика.
+Этот метод поддерживает параметры `$select` [запроса OData](/graph/query-parameter) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|

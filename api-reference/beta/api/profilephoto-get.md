@@ -5,12 +5,12 @@ localization_priority: Priority
 doc_type: apiPageType
 ms.prod: ''
 author: kevinbellinger
-ms.openlocfilehash: 5e97f76d64b5a63b0659acd5399e5b8b97300c62
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8d8202fdba2dc645dc42d69fb77413b58a35e60d
+ms.sourcegitcommit: de175a11806f9e9ba3c916384e897aee1cc7f75c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48088050"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790666"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
@@ -46,6 +46,7 @@ ms.locfileid: "48088050"
 
 ### <a name="get-the-photo"></a>Получение фотографии
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/photo/$value
 GET /users/{id | userPrincipalName}/photo/$value
@@ -55,8 +56,10 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
+
 ### <a name="get-the-metadata-of-the-photo"></a>Получение метаданных фотографии
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/photo
 GET /users/{id | userPrincipalName}/photo
@@ -69,6 +72,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 
 ### <a name="get-the-metadata-for-a-specific-photo-size"></a>Получение метаданных фотографии определенного размера
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/photos/{size}
 GET /users/{id | userPrincipalName}/photos/{size}
@@ -107,6 +111,7 @@ GET /groups/{id}/photos/{size}
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/photo/$value
 Content-Type: image/jpg
@@ -121,6 +126,7 @@ Content-Type: image/jpg
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/photos/48x48/$value
 Content-Type: image/jpg
@@ -136,6 +142,7 @@ Content-Type: image/jpg
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/photo
 ```
@@ -148,6 +155,7 @@ GET https://graph.microsoft.com/beta/me/photo
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -170,6 +178,7 @@ Content-type: application/json
 <!-- {
   "blockType": "ignored"
 }-->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -184,23 +193,28 @@ Content-type: application/json
     "height": 1
 }
 ```
+
 ## <a name="using-the-binary-data-of-the-requested-photo"></a>Использование двоичных данных запрошенной фотографии
 
 Когда вы используете конечную точку `/photo/$value` для получения двоичных данных для фотографии профиля, потребуется преобразовать эти данные в строку Base64, чтобы добавить их как вложение электронной почты. В следующем примере кода JavaScript показано, как создать массив, который можно передать как значение параметра `Attachments` для [сообщения Outlook](user-post-messages.md).
 
-      const attachments = [{
-        '@odata.type': '#microsoft.graph.fileAttachment',
-        ContentBytes: file.toString('base64'),
-        Name: 'mypic.jpg'
-      }];
+```javascript
+const attachments = [{
+  '@odata.type': '#microsoft.graph.fileAttachment',
+  ContentBytes: file.toString('base64'),
+  Name: 'mypic.jpg'
+}];
+```
 
 Ознакомиться с реализацией этого примера можно в статье [Пример подключения к Microsoft Graph для Node.js](https://github.com/microsoftgraph/nodejs-connect-rest-sample).
 
 Если требуется, чтобы изображение отображалось на веб-странице, создайте объект в памяти на его основе и сделайте этот объект источником элемента изображения. Ниже приведен пример кода JavaScript для этой операции.
 
-    const url = window.URL || window.webkitURL;
-    const blobUrl = url.createObjectURL(image.data);
-    document.getElementById(imageElement).setAttribute("src", blobUrl);
+```javascript
+const url = window.URL || window.webkitURL;
+const blobUrl = url.createObjectURL(image.data);
+document.getElementById(imageElement).setAttribute("src", blobUrl);
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
