@@ -5,12 +5,12 @@ localization_priority: Priority
 author: yyuank
 ms.prod: groups
 doc_type: resourcePageType
-ms.openlocfilehash: 73f01c22ce87c76289060cc23319ec952d414b10
-ms.sourcegitcommit: 366178d3fc37439791061082da80a63fba2c27df
+ms.openlocfilehash: d7c2691809728c7f7a5fee8ebf154b0c35624c10
+ms.sourcegitcommit: a0a5690ad9c109149e0b8c8baba164648ff5c226
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48921601"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784801"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -138,6 +138,7 @@ ms.locfileid: "48921601"
 |mailNickname|String|Почтовый псевдоним для группы (уникальный в организации). Это свойство должно быть указано при создании группы. Такие символы нельзя использовать в mailNickName: `@()\[]";:.<>,SPACE`. <br><br>Возвращается по умолчанию. Поддерживает параметр $filter.|
 |membershipRule|String|Правило, определяющее участников этой группы, если группа является динамической (groupTypes содержит `DynamicMembership`). Дополнительные сведения о синтаксисе правила участия см. в [здесь](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). <br><br>Возвращается по умолчанию. |
 |membershipRuleProcessingState|String|Указывает, включена или приостановлена динамическая обработка участия. Возможные значения: On или Paused. <br><br>Возвращается по умолчанию. |
+|membershipRuleProcessingStatus|[membershipRuleProcessingStatus](membershipruleprocessingstatus.md) |Описывает состояние обработки для динамических групп на основе правил. Значение свойства равно `null` для динамических групп не на основе правил или в случае, если обработка динамических групп приостановлена. <br><br>Возвращается только с помощью оператора `$select`. Поддерживает `$filter`. Только для чтения. |
 |onPremisesDomainName|String|Содержит локальный параметр **domain FQDN**, также называемый **dnsDomainName**, синхронизированный из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect.<br><br>Возвращается по умолчанию. Только для чтения. |
 |onPremisesLastSyncDateTime|DateTimeOffset|Указывает время последней синхронизации группы с локальным каталогом. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 (время всегда в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. <br><br>Возвращается по умолчанию. Только для чтения. Поддерживает параметр $filter.|
 |onPremisesNetBiosName|String|Содержит локальный параметр **netBios name**, синхронизированный из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect.<br><br>Возвращается по умолчанию. Только для чтения. |
@@ -302,6 +303,7 @@ ms.locfileid: "48921601"
   "hasMembersWithLicenseErrors": true,
   "membershipRule": "string",
   "membershipRuleProcessingState": "string",
+  "membershipRuleProcessingStatus":{"@odata.type": "microsoft.graph.membershipRuleProcessingStatus"},
   "preferredLanguage": "string",
   "theme": "string"
 }
@@ -326,5 +328,4 @@ ms.locfileid: "48921601"
   "suppressions": []
 }
 -->
-
 
