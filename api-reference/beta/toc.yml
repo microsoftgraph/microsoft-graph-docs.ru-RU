@@ -486,7 +486,7 @@ items:
         items:
           - name: Обзор
             href: resources/groups-overview.md
-          - name: Группа
+          - name: Group
             href: resources/group.md
             items:
               - name: Список групп
@@ -1022,7 +1022,7 @@ items:
                     href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
                   - name: Обновление учетных данных единого входа для паролей
                     href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
-                  - name: Удаление учетных данных единого входа с паролем
+                  - name: Удаление учетных данных единого входа для пароля
                     href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
           - name: Синхронизация
             href: resources/synchronization-overview.md
@@ -1055,7 +1055,7 @@ items:
                     href: api/synchronization-synchronizationjob-restart.md
                   - name: Удаление задания
                     href: api/synchronization-synchronizationjob-delete.md
-                  - name: Подготовка по требованию
+                  - name: Подготовка по запросу
                     href: api/synchronization-synchronizationjob-provision-on-demand.md
                   - name: Проверка учетных данных
                     href: api/synchronization-synchronizationjob-validatecredentials.md
@@ -1106,7 +1106,7 @@ items:
                 href: api/event-accept.md
               - name: Предварительное принятие
                 href: api/event-tentativelyaccept.md
-              - name: Событие Decline
+              - name: Событие отклонения
                 href: api/event-decline.md
               - name: Отмена напоминания
                 href: api/event-dismissreminder.md
@@ -2809,7 +2809,7 @@ items:
                     href: resources/intune-apps-win32lobappregistrydetectiontype.md
                   - name: Требование реестра для LOB-приложения Win32
                     href: resources/intune-apps-win32lobappregistryrequirement.md
-                  - name: Правило реестра для приложения win32
+                  - name: Правило реестра для LOB-приложений Win32
                     href: resources/intune-apps-win32lobappregistryrule.md
                   - name: Тип операции правила реестра для приложения win32
                     href: resources/intune-apps-win32lobappregistryruleoperationtype.md
@@ -3417,7 +3417,7 @@ items:
                     href: resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md
                   - name: Режим подключения аккумулятора для владельца устройства с Android
                     href: resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md
-                  - name: База профилей сертификатов владельца устройства Android
+                  - name: База профилей сертификатов владельца устройства с Android
                     href: resources/intune-deviceconfig-androiddeviceownercertificateprofilebase.md
                     items:
                       - name: Перечисление
@@ -4099,7 +4099,7 @@ items:
                         href: api/intune-deviceconfig-appleexpeditedcheckinconfigurationbase-get.md
                   - name: Формат имени субъекта Apple
                     href: resources/intune-deviceconfig-applesubjectnameformat.md
-                  - name: Apple VPN всегда в конфигурации
+                  - name: Vpn Apple постоянно в конфигурации
                     href: resources/intune-deviceconfig-applevpnalwaysonconfiguration.md
                   - name: Конфигурация VPN для Apple
                     href: resources/intune-deviceconfig-applevpnconfiguration.md
@@ -4155,7 +4155,7 @@ items:
                     href: resources/intune-deviceconfig-certificateissuancestates.md
                   - name: Статус отзыва сертификатов
                     href: resources/intune-deviceconfig-certificaterevocationstatus.md
-                  - name: Изменение разрешения uefi settings
+                  - name: Изменение разрешения параметров uefi
                     href: resources/intune-deviceconfig-changeuefisettingspermission.md
                   - name: Код
                     href: resources/intune-deviceconfig-code.md
@@ -4467,9 +4467,9 @@ items:
                     href: resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md
                   - name: Режим устройства с правилом применимости для управления устройствами
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruledevicemode.md
-                  - name: Выпуск ос правила управления устройствами
+                  - name: Os edition правила управления устройствами
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruleosedition.md
-                  - name: Версия ос правила управления устройствами
+                  - name: Версия ос правила применимости для управления устройствами
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruleosversion.md
                   - name: Тип правила применимости управления устройствами
                     href: resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md
@@ -4487,7 +4487,7 @@ items:
                     href: resources/intune-deviceconfig-devicetypes.md
                   - name: Режим отправки диагностических данных
                     href: resources/intune-deviceconfig-diagnosticdatasubmissionmode.md
-                  - name: Группа Диффи Диффама (Diffieie)
+                  - name: Группа Диффи Диффама
                     href: resources/intune-deviceconfig-diffiehellmangroup.md
                   - name: Тип политики перечисления устройства защиты DMA
                     href: resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md
@@ -6795,7 +6795,7 @@ items:
                         href: api/intune-devices-devicecompliancescript-update.md
                       - name: Действие назначения
                         href: api/intune-devices-devicecompliancescript-assign.md
-                  - name: Состояние устройства для сценариев соответствия требованиям
+                  - name: Состояние устройства для обеспечения соответствия требованиям
                     href: resources/intune-devices-devicecompliancescriptdevicestate.md
                     items:
                       - name: Перечисление
@@ -6911,7 +6911,7 @@ items:
                     href: resources/intune-devices-devicehealthscriptremediationsummary.md
                   - name: 'Сценарий состояния устройства, запускаемой один раз по расписанию'
                     href: resources/intune-devices-devicehealthscriptrunonceschedule.md
-                  - name: Расписание запуска скрипта для работы с состоянием устройства
+                  - name: Расписание запуска скрипта для состояния устройства
                     href: resources/intune-devices-devicehealthscriptrunschedule.md
                   - name: Сводка по запуску скрипта для состояния устройства
                     href: resources/intune-devices-devicehealthscriptrunsummary.md
@@ -6922,7 +6922,7 @@ items:
                         href: api/intune-devices-devicehealthscriptrunsummary-update.md
                   - name: Строка параметра скрипта для состояния устройства
                     href: resources/intune-devices-devicehealthscriptstringparameter.md
-                  - name: Расписание сценария для работы с состоянием устройства
+                  - name: Расписание скрипта для работы с состоянием устройства
                     href: resources/intune-devices-devicehealthscripttimeschedule.md
                   - name: Запрос коллекции журналов устройств
                     href: resources/intune-devices-devicelogcollectionrequest.md
@@ -7254,7 +7254,7 @@ items:
                         href: api/intune-devices-devicemanagementscriptuserstate-update.md
                   - name: Ограничение абстрактной реализации параметра управления устройствами
                     href: resources/intune-deviceintent-devicemanagementsettingabstractimplementationconstraint.md
-                  - name: Ограничение приложения для управления устройствами
+                  - name: Ограничение приложения для параметров управления устройствами
                     href: resources/intune-deviceintent-devicemanagementsettingappconstraint.md
                   - name: Логическое ограничение параметра управления устройствами
                     href: resources/intune-deviceintent-devicemanagementsettingbooleanconstraint.md
@@ -7867,7 +7867,7 @@ items:
                         href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-delete.md
                       - name: Обновление
                         href: api/intune-devices-userexperienceanalyticsapphealthapplicationperformance-update.md
-                  - name: Производительность модели устройства для анализа пользовательского интерфейса
+                  - name: Производительность модели устройства анализа пользовательского интерфейса приложения
                     href: resources/intune-devices-userexperienceanalyticsapphealthdevicemodelperformance.md
                     items:
                       - name: Перечисление
@@ -7893,7 +7893,7 @@ items:
                         href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-delete.md
                       - name: Обновление
                         href: api/intune-devices-userexperienceanalyticsapphealthdeviceperformance-update.md
-                  - name: Сведения о производительности устройства анализа пользовательского интерфейса
+                  - name: Сведения о производительности устройства для анализа пользовательского интерфейса
                     href: resources/intune-devices-userexperienceanalyticsapphealthdeviceperformancedetails.md
                     items:
                       - name: Перечисление
@@ -10235,7 +10235,16 @@ items:
                         href: api/fido2authenticationmethod-get.md
                       - name: Удаление
                         href: api/fido2authenticationmethod-delete.md
-                  - name: Microsoft Authenticator Phone без пароля Sign-In
+                  - name: Microsoft Authenticator
+                    href: resources/microsoftauthenticatorauthenticationmethod.md
+                    items:
+                      - name: Перечисление
+                        href: api/microsoftauthenticatorauthenticationmethod-list.md
+                      - name: Получение
+                        href: api/microsoftauthenticatorauthenticationmethod-get.md
+                      - name: Удаление
+                        href: api/microsoftauthenticatorauthenticationmethod-delete.md
+                  - name: Microsoft Authenticator Phone Sign-In (неподготовлен)
                     href: resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md
                     items:
                       - name: Перечисление
@@ -10244,6 +10253,15 @@ items:
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-get.md
                       - name: Удаление
                         href: api/passwordlessmicrosoftauthenticatorauthenticationmethod-delete.md
+                  - name: Windows Hello для бизнеса
+                    href: resources/windowshelloforbusinessauthenticationmethod.md
+                    items:
+                      - name: Перечисление
+                        href: api/windowshelloforbusinessauthenticationmethod-list.md
+                      - name: Получение
+                        href: api/windowshelloforbusinessauthenticationmethod-get.md
+                      - name: Удаление
+                        href: api/windowshelloforbusinessauthenticationmethod-delete.md
                   - name: Phone
                     href: resources/phoneauthenticationmethod.md
                     items:
@@ -10420,7 +10438,7 @@ items:
               - name: Защита идентификации
                 href: resources/identityprotection-root.md
                 items:
-                  - name: События риска для удостоверений (неподготовленные)
+                  - name: События риска идентификации (неподготовленные)
                     items:
                       - name: Событие риска для удостоверений
                         href: resources/identityriskevent.md
@@ -10512,7 +10530,7 @@ items:
                     href: api/organizationalbrandingpropertieslocalization-create.md
                   - name: Локализации
                     href: api/organizationalbrandingpropertieslocalization-get.md
-                  - name: Обновление локализовано
+                  - name: Локализованное обновление
                     href: api/organizationalbrandingpropertieslocalization-update.md
                   - name: Удаление локализованного
                     href: api/organizationalbrandingpropertieslocalization-delete.md
@@ -10966,7 +10984,7 @@ items:
                         href: api/accesspackageassignmentpolicy-update.md
                       - name: Delete
                         href: api/accesspackageassignmentpolicy-delete.md
-                  - name: Запрос на назначение пакета доступа
+                  - name: Запрос на назначение пакета access
                     href: resources/accesspackageassignmentrequest.md
                     items:
                       - name: Перечисление
@@ -11006,7 +11024,7 @@ items:
                         href: api/accesspackageresourcerequest-list.md
                       - name: Создание
                         href: api/accesspackageresourcerequest-post.md
-                  - name: Область роли ресурса пакета Access
+                  - name: Область роли ресурса пакета access
                     href: resources/accesspackageresourcerolescope.md
                     items:
                       - name: Перечисление
@@ -12433,7 +12451,7 @@ items:
                     href: api/termstore-store-get.md
                   - name: Обновление
                     href: api/termstore-store-update.md
-              - name: Группа
+              - name: Group
                 href: resources/termstore-group.md
                 items:
                   - name: Создание
@@ -12484,7 +12502,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -12960,7 +12978,7 @@ items:
                     href: api/shiftpreferences-get.md
                   - name: Обновление
                     href: api/shiftpreferences-put.md
-              - name: Запрос на изменение смены подкачки
+              - name: Запрос на изменение смен смены
                 href: resources/swapshiftschangerequest.md
                 items:
                   - name: Перечисление
@@ -12999,7 +13017,7 @@ items:
                     href: api/timeoffreason-put.md
                   - name: Удаление
                     href: api/timeoffreason-delete.md
-              - name: Запрос на неохрошое время
+              - name: Запрос на отключение времени
                 href: resources/timeoffrequest.md
                 items:
                   - name: Получение
