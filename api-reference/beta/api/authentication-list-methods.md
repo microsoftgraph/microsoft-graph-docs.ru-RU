@@ -1,16 +1,16 @@
 ---
 title: Методы List
-description: Получение списка объектов метода проверки подлинности.
+description: Получить список объектов метода проверки подлинности.
 localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0e97c7b92a2f202d2e8af7a36a488aeb6507e5c6
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ac205663b183e91b0925a3c246e9dd5a78c9aeba
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961530"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796558"
 ---
 # <a name="list-methods"></a>Методы List
 
@@ -18,23 +18,33 @@ ms.locfileid: "48961530"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [метода проверки подлинности](../resources/authenticationmethod.md) . В настоящее время возвращаются объекты метода [проверки подлинности по телефону](../resources/phoneauthenticationmethod.md) и [метода проверки подлинности пароля](../resources/passwordauthenticationmethod.md) .
+Получить список объектов [метода проверки подлинности.](../resources/authenticationmethod.md) В [настоящее время возвращаются только объекты](../resources/phoneauthenticationmethod.md) [метода](../resources/passwordauthenticationmethod.md) проверки подлинности по телефону и пароля.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения, действующие на себя (по крайней мере для самых привилегированных) | Разрешения, действующие на других (по крайней мере для самых привилегированных)|
-|:---------------------------------------|:-------------------------|:-----------------|
-| Делегированные (рабочая или учебная учетная запись)     | Усераусентикатионмесод. Read, Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite, Усераусентикатионмесод. ReadWrite. ALL | Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
-| Для приложений                            | Не поддерживается. | Не поддерживается. |
+### <a name="permissions-acting-on-self"></a>Разрешения, действующие на себя
 
-Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:---------------------------------------|:-------------------------|
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | Не поддерживается. |
+
+### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие с другими пользователями
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:---------------------------------------|:-------------------------|:-----------------|
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+
+Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
 * Глобальный читатель
 * Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности (видит только скрытые номера телефонов)
+* Администратор проверки подлинности (видит только маскирование номеров телефонов)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +57,7 @@ GET /users/{id | userPrincipalName}/authentication/methods
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает дополнительные параметры запроса для настройки отклика.
+Этот метод не поддерживает необязательные параметры запроса для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -61,7 +71,7 @@ GET /users/{id | userPrincipalName}/authentication/methods
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [authenticationMethod](../resources/authenticationmethod.md) в теле отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [authenticationMethod](../resources/authenticationmethod.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

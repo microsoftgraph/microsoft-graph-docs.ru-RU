@@ -1,42 +1,52 @@
 ---
-title: Получение Пассвордлессмикрософтаусентикатораусентикатионмесод
-description: Чтение свойств и связей объекта Пассвордлессмикрософтаусентикатораусентикатионмесод.
+title: Get passwordlessMicrosoftAuthenticatorAuthenticationMethod
+description: Чтение свойств и связей объекта Без пароляMicrosoftAuthenticatorAuthenticationMethod.
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3462fca79b04fa19f0a0d7302760f9a5267ea339
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3c488ef34c5278ff3628986a08357c543bf8d4ce
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48968639"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796521"
 ---
-# <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethod"></a>Получение Пассвордлессмикрософтаусентикатораусентикатионмесод
+# <a name="get-passwordlessmicrosoftauthenticatorauthenticationmethod-deprecated"></a>Get passwordlessMicrosoftAuthenticatorAuthenticationMethod (deprecated)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение одного объекта [метода входа без пароля для проверки подлинности пользователя (Майкрософт)](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) .
+Извлечение одного объекта метода для пользователя [Microsoft Authenticator Без](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) пароля.
 
-> [!NOTE]
-> Существенные изменения схемы запланированы для API, которые управляют приложением для проверки подлинности (Майкрософт), а API в Мирософт Graph бета-версии. Так как шаблоны звонков будут изменены, мы не рекомендуем задействовать производственную зависимость от этих API.
+> [!CAUTION]
+> API метода microsoft Authenticator Без пароля для телефона является неподготовленным и перестает возвращать результаты 31 декабря 2020 г. Используйте новый метод [проверки подлинности Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethod.md)
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения, действующие на себя (от большинства до минимальных привилегий)|Разрешения, действующие на других (по крайней мере для самых привилегированных)|
-|:---|:---|:--|
-|Делегированные (рабочая или учебная учетная запись)|Усераусентикатионмесод. Read, Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite, Усераусентикатионмесод. ReadWrite. ALL|Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite. ALL
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|Не поддерживается.
-|Для приложений|Не поддерживается.|Не поддерживается.
+### <a name="permissions-acting-on-self"></a>Разрешения, действующие на себя
 
-Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима одна из следующих [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:---------------------------------------|:-------------------------|
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | Не поддерживается. |
 
+### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие с другими пользователями
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:---------------------------------------|:-------------------------|:-----------------|
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+
+Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
 * Глобальный читатель
 * Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности
+* Администратор проверки подлинности (видит только маскирование номеров телефонов)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -59,7 +69,7 @@ GET /users/{id | userPrincipalName}/authentication/passwordlessMicrosoftAuthenti
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [пассвордлессмикрософтаусентикатораусентикатионмесод](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и запрашиваемого объекта `200 OK` [passwordlessMicrosoftAuthenticatorAuthenticationMethod](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -95,7 +105,7 @@ GET https://graph.microsoft.com/beta/me/authentication/passwordlessMicrosoftAuth
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

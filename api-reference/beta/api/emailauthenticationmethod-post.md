@@ -1,34 +1,34 @@
 ---
-title: Создание Емаилаусентикатионмесод
-description: Создание нового объекта Емаилаусентикатионмесод.
+title: Создание emailAuthenticationMethod
+description: Создание объекта emailAuthenticationMethod.
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 52aabdcd45791e1ba1d2dcfc1d9faa63b7dda37a
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 832869fcc3e60f3b9497984b79851d6388a84fc1
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522484"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796347"
 ---
-# <a name="create-emailauthenticationmethod"></a>Создание Емаилаусентикатионмесод
+# <a name="create-emailauthenticationmethod"></a>Создание emailAuthenticationMethod
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Задайте объект [емаилаусентикатионмесод](../resources/emailauthenticationmethod.md) пользователя. Проверка подлинности электронной почты — это метод самостоятельного сброса пароля. Пользователь может иметь только один метод проверки подлинности электронной почты.
+Настройка объекта [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) пользователя. Проверка подлинности электронной почты — это метод самостоятельного сброса пароля. У пользователя может быть только один метод проверки подлинности электронной почты.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения, действующие на себя (от большинства до минимальных привилегий)|Разрешения, действующие на других (по крайней мере для самых привилегированных)|
+|Тип разрешения|Разрешения, действующие на себя (от большинства до наименее привилегированных)|Разрешения, действующие над другими (от наименее привилегированных)|
 |:---|:---|:--|
-|Делегированные (рабочая или учебная учетная запись)|Не поддерживается.|Усераусентикатионмесод. ReadWrite. ALL
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|Не поддерживается.
-|Для приложений|Не поддерживается.|Не поддерживается.
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
+| Приложение                            | Не применимо. | UserAuthenticationMethod.ReadWrite.All |
 
-Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима одна из следующих [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна из следующих [ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 * Привилегированный администратор проверки подлинности
@@ -51,19 +51,19 @@ POST /users/{id | userPrincipalName}/authentication/emailMethods
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [емаилаусентикатионмесод](../resources/emailauthenticationmethod.md) в формате JSON с нужным адресом электронной почты.
+В теле запроса укажите представление объекта [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) в JSON с нужным адресом электронной почты.
 
-В следующей таблице приведены свойства, необходимые при создании [емаилаусентикатионмесод](../resources/emailauthenticationmethod.md).
+В следующей таблице показаны свойства, необходимые при создании [объекта emailAuthenticationMethod.](../resources/emailauthenticationmethod.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|emailAddress|String|Адрес электронной почты|
+|emailAddress|String|адрес электронной почты;|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [емаилаусентикатионмесод](../resources/emailauthenticationmethod.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и новый объект `201 Created` [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

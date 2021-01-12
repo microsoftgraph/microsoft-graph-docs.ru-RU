@@ -1,34 +1,34 @@
 ---
-title: Удаление Емаилаусентикатионмесод
-description: Удаляет объект Емаилаусентикатионмесод.
+title: Удаление emailAuthenticationMethod
+description: Удаляет объект emailAuthenticationMethod.
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0602bdc0e619e87bc2d4f70d5ab668bc31066163
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: 25a05ff6b4ad6639c7be87a88135fc2cebd8c2cb
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352188"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796390"
 ---
-# <a name="delete-emailauthenticationmethod"></a>Удаление Емаилаусентикатионмесод
+# <a name="delete-emailauthenticationmethod"></a>Удаление emailAuthenticationMethod
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет объект [метода проверки подлинности электронной почты](../resources/emailauthenticationmethod.md) пользователя.
+Удаляет объект метода проверки [подлинности электронной почты](../resources/emailauthenticationmethod.md) пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения, действующие на себя (от большинства до минимальных привилегий)|Разрешения, действующие на других (по крайней мере для самых привилегированных)|
+|Тип разрешения|Разрешения, действующие на себя (от большинства до наименее привилегированных)|Разрешения, действующие над другими (от наименее привилегированных)|
 |:---|:---|:--|
-|Делегированные (рабочая или учебная учетная запись)|Не поддерживается.|Усераусентикатионмесод. ReadWrite. ALL
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|Не поддерживается.
-|Для приложений|Не поддерживается.|Не поддерживается.
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
+| Приложение                            | Не применимо. | UserAuthenticationMethod.ReadWrite.All |
 
-Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 * Привилегированный администратор проверки подлинности

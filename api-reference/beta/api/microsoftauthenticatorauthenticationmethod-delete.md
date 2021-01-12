@@ -1,26 +1,21 @@
 ---
-title: 'phoneAuthenticationMethod: disableSmsSignIn'
-description: Отключение sms-входов для мобильного телефона
-localization_priority: Normal
+title: Удаление microsoftAuthenticatorAuthenticationMethod
+description: Удаляет объект microsoftAuthenticatorAuthenticationMethod.
 author: mmcla
+localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5e4440c5fac4a774b264b068a6e1e17d3d7c7d83
+ms.openlocfilehash: adf34da25baa01812e1d5cf82112c03716c5cf32
 ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796635"
+ms.locfileid: "49796801"
 ---
-# <a name="phoneauthenticationmethod-disablesmssignin"></a>phoneAuthenticationMethod: disableSmsSignIn
-
+# <a name="delete-microsoftauthenticatorauthenticationmethod"></a>Удаление microsoftAuthenticatorAuthenticationMethod
 Пространство имен: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Отключать вход с помощью SMS для существующего `mobile` номера телефона. 
-
->**Примечание.** Номер больше не будет доступен для sms-входов, что может препятствовать входу пользователя.
+Удаляет объект [microsoftAuthenticatorAuthenticationMethod.](../resources/microsoftauthenticatorauthenticationmethod.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -49,82 +44,48 @@ ms.locfileid: "49796635"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-<!-- { "blockType": "ignored" } -->
-
-```http
-POST /me/authentication/phoneMethods/{id}/disableSmsSignIn
-POST /users/{id | userPrincipalName}/authentication/phoneMethods/{id}/disableSmsSignIn
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+DELETE /me/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
+DELETE /user/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
-
-| Имя          | Описание   |
-|:--------------|:--------------|
-| Авторизация | Bearer {токен}. Обязательный. |
+|Имя|Описание|
+|:---|:---|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `200 OK`. Метод не возвращает данные в теле отклика.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="examples"></a>Примеры
 
-В приведенном ниже примере показано, как вызывать этот API.
-
 ### <a name="request"></a>Запрос
-
-Ниже приведен пример запроса.
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "phoneauthenticationmethod_disablesmssignin"
-}-->
-
-```http
-POST https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-750b-4051-897c-87b9720928f7/disableSmsSignIn
+  "name": "delete_microsoftauthenticatorauthenticationmethod"
+}
+-->
+``` http
+DELETE https://graph.microsoft.com/beta/user/kim@contoso.com/authentication/microsoftAuthenticatorMethods/_jpuR-TGZtk6aQCLF3BQjA2
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/phoneauthenticationmethod-disablesmssignin-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/phoneauthenticationmethod-disablesmssignin-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/phoneauthenticationmethod-disablesmssignin-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/phoneauthenticationmethod-disablesmssignin-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ### <a name="response"></a>Отклик
-
-Ниже приведен пример ответа.
+**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
-} -->
-
-```http
-HTTP/1.1 200 OK
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "phoneAuthenticationMethod: disableSmsSignIn",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

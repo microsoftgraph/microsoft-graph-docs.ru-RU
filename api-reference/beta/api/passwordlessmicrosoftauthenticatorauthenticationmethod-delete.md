@@ -1,39 +1,48 @@
 ---
-title: Удаление Пассвордлессмикрософтаусентикатораусентикатионмесод
-description: Удаляет объект Пассвордлессмикрософтаусентикатораусентикатионмесод.
+title: Удаление без пароляMicrosoftAuthenticatorAuthenticationMethod
+description: Удаляет объект Без пароляMicrosoftAuthenticatorAuthenticationMethod.
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 42d7ffe92488a7166356b0e43688a17f2935b503
-ms.sourcegitcommit: ea3b1a8b781a347015d9542826c5c0c24d50d35d
+ms.openlocfilehash: 6e894cd8332969e708c8a7d8d1a53ca7c17be2dc
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49352391"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796565"
 ---
-# <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethod"></a>Удаление Пассвордлессмикрософтаусентикатораусентикатионмесод
+# <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethod-deprecated"></a>Удаление без пароляMicrosoftAuthenticatorAuthenticationMethod (неподготовлено)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет объект метода входа без пароля пользователя для средства [проверки подлинности Майкрософт](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) .
+Удаляет объект метода для пользователя [Microsoft Authenticator Без](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) пароля для телефона для входов в учетную запись.
 
-> [!NOTE]
-> Существенные изменения схемы запланированы для API, которые управляют приложением для проверки подлинности (Майкрософт), а API в Мирософт Graph бета-версии. Так как шаблоны звонков будут изменены, мы не рекомендуем задействовать производственную зависимость от этих API.
-
+> [!CAUTION]
+> API метода microsoft Authenticator Без пароля для телефона является неподготовленным и перестает возвращать результаты 31 декабря 2020 г. Используйте новый метод [проверки подлинности Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethod.md)
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения, действующие на себя (от большинства до минимальных привилегий)|Разрешения, действующие на других (по крайней мере для самых привилегированных)|
-|:---|:---|:--|
-|Делегированные (рабочая или учебная учетная запись)|Не поддерживается.|Усераусентикатионмесод. ReadWrite. ALL
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|Не поддерживается.
-|Для приложений|Не поддерживается.|Не поддерживается.
+### <a name="permissions-acting-on-self"></a>Разрешения, действующие на себя
 
-Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима одна из следующих [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:---------------------------------------|:-------------------------|
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | Не поддерживается. |
 
+### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие с другими пользователями
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:---------------------------------------|:-------------------------|:-----------------|
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | UserAuthenticationMethod.ReadWrite.All |
+
+Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
 * Привилегированный администратор проверки подлинности
 * Администратор проверки подлинности

@@ -1,34 +1,34 @@
 ---
-title: Список Емаилаусентикатионмесодс
-description: Получение списка объектов Емаилаусентикатионмесод и их свойств.
+title: Список emailAuthenticationMethods
+description: Получите список объектов emailAuthenticationMethod и их свойств.
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 397c3f685ce63cc603b7e72e42811d6ac7575848
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 53d6e3ff9c1fa98196a838d185551c28754f0516
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48955111"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796468"
 ---
-# <a name="list-emailauthenticationmethods"></a>Список Емаилаусентикатионмесодс
+# <a name="list-emailauthenticationmethods"></a>Список emailAuthenticationMethods
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [метода проверки подлинности электронной почты](../resources/emailauthenticationmethod.md) пользователя и их свойств. Этот вызов будет возвращать только один объект, так как для пользователей можно задать только один метод электронной почты.
+Получить список объектов метода [](../resources/emailauthenticationmethod.md) проверки подлинности электронной почты пользователя и их свойств. Этот вызов возвращает только один объект, так как для пользователей можно настроить только один метод электронной почты.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения, действующие на себя (от большинства до минимальных привилегий)|Разрешения, действующие на других (по крайней мере для самых привилегированных)|
+|Тип разрешения|Разрешения, действующие на себя (от большинства до наименее привилегированных)|Разрешения, действующие над другими (от наименее привилегированных)|
 |:---|:---|:--|
-|Делегированные (рабочая или учебная учетная запись)|Усераусентикатионмесод. Read, Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite, Усераусентикатионмесод. ReadWrite. ALL|Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite. ALL
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|Не поддерживается.
-|Для приложений|Не поддерживается.|Не поддерживается.
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
+| Приложение                            | Не применимо. | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима одна из следующих [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна из следующих [ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 * Глобальный читатель
@@ -47,19 +47,19 @@ GET /users/{id | userPrincipalName}/authentication/emailMethods
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод не поддерживает дополнительные параметры запроса для настройки отклика.
+Этот метод не поддерживает необязательные параметры запроса для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Authorization|Bearer {token}|
+|Авторизация|Bearer {token}|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [емаилаусентикатионмесод](../resources/emailauthenticationmethod.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/me/authentication/emailMethods
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

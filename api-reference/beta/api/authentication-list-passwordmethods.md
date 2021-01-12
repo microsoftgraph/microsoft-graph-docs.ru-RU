@@ -1,40 +1,50 @@
 ---
-title: Список Пассвордмесодс
-description: Получение списка объектов пассвордаусентикатионмесод.
+title: Список passwordMethods
+description: Получить список объектов passwordauthenticationmethod.
 localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5ecda48bf165814be2a407b736aeb629b75b74a2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9db73d5f5f01a315a5347fbe0627df991937513f
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961531"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796544"
 ---
-# <a name="list-passwordmethods"></a>Список Пассвордмесодс
+# <a name="list-passwordmethods"></a>Список passwordMethods
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [метода проверки подлинности паролей](../resources/passwordauthenticationmethod.md) . При этом будет возвращен ровно один объект, так как пользователь может иметь только один пароль.
+Получить список объектов метода [проверки подлинности](../resources/passwordauthenticationmethod.md) паролем. При этом возвращается ровно один объект, так как пользователь может иметь только один пароль.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения, действующие на себя (по крайней мере для самых привилегированных) | Разрешения, действующие на других (по крайней мере для самых привилегированных)|
-|:---------------------------------------|:-------------------------|:-----------------|
-| Делегированные (рабочая или учебная учетная запись)     | Усераусентикатионмесод. Read, Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite, Усераусентикатионмесод. ReadWrite. ALL | Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite. ALL |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
-| Для приложений                            | Не поддерживается. | Не поддерживается. |
+### <a name="permissions-acting-on-self"></a>Разрешения, действующие на себя
 
-Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:---------------------------------------|:-------------------------|
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Для приложений                            | Не поддерживается. |
+
+### <a name="permissions-acting-on-other-users"></a>Разрешения, действующие с другими пользователями
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:---------------------------------------|:-------------------------|:-----------------|
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+| Приложение                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+
+Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 * Глобальный администратор
 * Глобальный читатель
 * Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности
+* Администратор проверки подлинности (видит только маскирование номеров телефонов)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,13 +57,13 @@ GET /users/{id | userPrincipalName}/authentication/passwordMethods
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает дополнительные параметры запроса для настройки отклика.
+Этот метод не поддерживает необязательные параметры запроса для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -61,7 +71,7 @@ GET /users/{id | userPrincipalName}/authentication/passwordMethods
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [пассвордаусентикатионмесод](../resources/passwordauthenticationmethod.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [passwordAuthenticationMethod](../resources/passwordauthenticationmethod.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

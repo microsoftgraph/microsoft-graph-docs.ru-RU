@@ -1,24 +1,21 @@
 ---
-title: Get passwordAuthenticationMethod
-description: Извлечение свойств и связей объекта passwordauthenticationmethod.
-localization_priority: Normal
+title: Список windowsHelloForBusinessAuthenticationMethods
+description: Получите список объектов windowsHelloForBusinessAuthenticationMethod и их свойств.
 author: mmcla
+localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cf24e7b30a2cd38830a4291bf4a698b728a7b0cf
+ms.openlocfilehash: 50a567fe10a11688c6c82d0471de35bfe833b0f4
 ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796656"
+ms.locfileid: "49796817"
 ---
-# <a name="get-passwordauthenticationmethod"></a>Get passwordAuthenticationMethod
-
+# <a name="list-windowshelloforbusinessauthenticationmethods"></a>Список windowsHelloForBusinessAuthenticationMethods
 Пространство имен: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Извлечение свойств и связей объекта [метода проверки подлинности паролем.](../resources/passwordauthenticationmethod.md) 
+Получите список объектов [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) и их свойств.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -48,94 +45,73 @@ ms.locfileid: "49796656"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-<!-- { "blockType": "ignored" } -->
-
-```http
-GET /me/authentication/passwordMethods/{id}
-GET /users/{id | userPrincipalName}/authentication/passwordMethods/{id}
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /me/authentication/windowsHelloForBusinessMethods
+GET /user/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает необязательные параметры запроса для настройки ответа.
+Не поддерживается.
 
 ## <a name="request-headers"></a>Заголовки запросов
-
-| Имя      |Описание|
-|:----------|:----------|
-| Авторизация | Bearer {token} |
+|Имя|Описание|
+|:---|:---|
+|Авторизация|Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и запрашиваемого объекта `200 OK` [passwordAuthenticationMethod](../resources/passwordauthenticationmethod.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
-
-Ниже приведен пример запроса.
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_passwordauthenticationmethod"
-}-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/authentication/passwordMethods/{id}
+  "name": "list_windowshelloforbusinessauthenticationmethod"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/user/annie@contoso.com/authentication/windowsHelloForBusinessMethods
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-passwordauthenticationmethod-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-passwordauthenticationmethod-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-passwordauthenticationmethod-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-passwordauthenticationmethod-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ### <a name="response"></a>Отклик
-
-Ниже приведен пример отклика.
-
-> **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
-
+**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.passwordAuthenticationMethod"
-} -->
-
-```http
+  "@odata.type": "Collection(microsoft.graph.windowsHelloForBusinessAuthenticationMethod)"
+}
+-->
+``` http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
-  "id": "28c10230-6103-485e-b985-444c60001490",
-  "password": null,
-  "creationDateTime": null
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.windowsHelloForBusinessAuthenticationMethod",
+      "id": "b5e01f81-1f81-b5e0-811f-e0b5811fe0b5",
+      "displayName": "Jordan's Surface Book",
+      "createdDateTime": "2020-11-27T23:12:49Z",
+      "keyStrength": "normal"
+    },
+    {
+      "@odata.type": "#microsoft.graph.windowsHelloForBusinessAuthenticationMethod",
+      "id": "e6dab818-e68d-433e-89d5-547357870cb2",
+      "displayName": "New Surface Duo",
+      "createdDateTime": "2020-12-25T02:20:13Z",
+      "keyStrength": "normal"
+    }
+  ]
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get passwordAuthenticationMethod",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

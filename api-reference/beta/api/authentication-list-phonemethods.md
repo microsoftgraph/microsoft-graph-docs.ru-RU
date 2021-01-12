@@ -1,41 +1,41 @@
 ---
-title: Список Фонемесодс
-description: Получение списка объектов метода проверки подлинности телефона.
+title: Список phoneMethods
+description: Получить список объектов метода проверки подлинности телефона.
 localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b8cb8adb91d2d213f54d2854c85cd77b998d04ea
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5331de660e5b81a2908693e9377872ce64e3f678
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961467"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796480"
 ---
-# <a name="list-phonemethods"></a>Список Фонемесодс
+# <a name="list-phonemethods"></a>Список phoneMethods
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [метода проверки подлинности телефона](../resources/phoneauthenticationmethod.md) . При этом будет возвращено до трех объектов, так как пользователь может использовать до трех телефонов для проверки подлинности.
+Получить список объектов метода [проверки подлинности](../resources/phoneauthenticationmethod.md) телефона. Это возвратит до трех объектов, так как у пользователя может быть до трех телефонов, которые можно использовать для проверки подлинности.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения, действующие на себя (по крайней мере для самых привилегированных) | Разрешения, действующие на других (по крайней мере для самых привилегированных)|
+| Тип разрешения                        | Разрешения, действующие на себя (от наименее привилегированных) | Разрешения, действующие над другими (от наименее привилегированных)|
 |:---------------------------------------|:-------------------------|:-----------------|
-| Делегированные (рабочая или учебная учетная запись)     | Усераусентикатионмесод. Read, Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite, Усераусентикатионмесод. ReadWrite. ALL | Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
-| Для приложений                            | Не поддерживается. | Не поддерживается. |
+| Приложение                            | Не применимо. | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима [одна из следующих ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна [из следующих ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 * Глобальный читатель
 * Привилегированный администратор проверки подлинности
-* Администратор проверки подлинности (видит только скрытые номера телефонов)
+* Администратор проверки подлинности (видит только маскирование номеров телефонов)
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,13 +48,13 @@ GET /users/{id | userPrincipalName}/authentication/phoneMethods
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод не поддерживает дополнительные параметры запроса для настройки отклика.
+Этот метод не поддерживает необязательные параметры запроса для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {token} |
+| Авторизация | Bearer {token} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -62,7 +62,7 @@ GET /users/{id | userPrincipalName}/authentication/phoneMethods
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [фонеаусентикатионмесод](../resources/phoneauthenticationmethod.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

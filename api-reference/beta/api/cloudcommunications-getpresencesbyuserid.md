@@ -1,24 +1,24 @@
 ---
-title: 'Клаудкоммуникатионс: Жетпресенцесбюсерид'
-description: Получение сведений о присутствии для нескольких пользователей.
+title: 'cloudCommunications: getPresencesByUserId'
+description: Получите сведения о присутствии для нескольких пользователей.
 author: ananmishr
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 7d670db030a1110bb0aa9844820f53814d9b1a82
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a3c6b0fe4d223ef458aad7d9b271cfdee37e590c
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957995"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796534"
 ---
-# <a name="cloudcommunications-getpresencesbyuserid"></a>Клаудкоммуникатионс: Жетпресенцесбюсерид
+# <a name="cloudcommunications-getpresencesbyuserid"></a>cloudCommunications: getPresencesByUserId
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение сведений о [присутствии](../resources/presence.md) для нескольких пользователей.
+Получите сведения [о](../resources/presence.md) присутствии для нескольких пользователей.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этих API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -27,7 +27,7 @@ ms.locfileid: "48957995"
 | :-------------- | :----------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Presence.Read.All                         |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                         |
-| Для приложений                            | Не поддерживается.                                  |
+| Приложение                            | Не поддерживается.                                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +35,7 @@ ms.locfileid: "48957995"
 POST /communications/getPresencesByUserId
 ```
 
-## <a name="request-headers"></a>Заголовки запросов
+## <a name="request-headers"></a>Заглавные запросы
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
@@ -44,15 +44,15 @@ POST /communications/getPresencesByUserId
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите объект JSON со следующим параметром.
+В теле запроса укажу объект JSON со следующим параметром.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|ids|Коллекция String|Идентификаторы объектов пользователя.|
+|ids|Коллекция String|ИД объектов пользователя.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [присутствия](../resources/presence.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [присутствия](../resources/presence.md) в тексте отклика.
 
 
 ## <a name="examples"></a>Примеры
@@ -72,7 +72,7 @@ POST https://graph.microsoft.com/beta/communications/getPresencesByUserId
 Content-Type: application/json
 
 {
-    "ids": ["fa8bf3dc-eca7-46b7-bad1-db199b62afc3", "66825e03-7ef5-42da-9069-724602c31f6b"]
+  "ids": ["fa8bf3dc-eca7-46b7-bad1-db199b62afc3", "66825e03-7ef5-42da-9069-724602c31f6b"]
 }
 ```
 # <a name="c"></a>[C#](#tab/csharp)
@@ -94,9 +94,9 @@ Content-Type: application/json
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приводится пример отклика.
+Ниже показан пример отклика.
 
-> **Примечание:** Объекты ответа могут быть сокращены для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Объекты ответа могут быть сокращены для учитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -112,17 +112,25 @@ Content-Length: 1574
 ```
 ```json
 {
-    "value": [{
-            "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
-            "availability": "Busy",
-            "activity": "InAMeeting"
-        },
-        {
-            "id": "66825e03-7ef5-42da-9069-724602c31f6b",
-            "availability": "Away",
-            "activity": "Away"
-        }
-    ]
+  "value": [{
+      "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
+      "availability": "Busy",
+      "activity": "InAMeeting",
+      "outOfOfficeSettings": {
+        "message": null,
+        "isOutOfOffice": false
+      }
+    },
+    {
+      "id": "66825e03-7ef5-42da-9069-724602c31f6b",
+      "availability": "Away",
+      "activity": "Away",
+      "outOfOfficeSettings": {
+        "message": null,
+        "isOutOfOffice": true
+      }
+    }
+  ]
 }
 ```
 

@@ -5,12 +5,12 @@ author: ananmishr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: cloud-communications
-ms.openlocfilehash: 937ed5e56ab20da0f66e5c2cb3ae46fa35a57694
-ms.sourcegitcommit: 86d427ac670ebc3fdcf8e06541218bb74d39279d
+ms.openlocfilehash: ddbe555df37d232940bb8eadb081be459d0f8562
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49675956"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796579"
 ---
 # <a name="presence-resource-type"></a>Тип ресурса presence
 
@@ -35,8 +35,9 @@ ms.locfileid: "49675956"
 | Связь        | Тип                                                 | Описание                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
 |id    |  string     |  ИД объекта пользователя   |
-|availability    |  string collection   |   Базовые сведения о присутствии для пользователя. Возможные значения: `Available` , , , , `AvailableIdle`  `Away` `BeRightBack` `Busy` `BusyIdle` `DoNotDisturb` `Offline` , `PresenceUnknown`  |
-|activity    |  string collection      |    Дополнительная информация о доступности пользователя. Возможные значения: `Available` , , , , , , `Away` , `BeRightBack` , `Busy` , `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` .       |
+|availability    |  Коллекция строк   |   Базовые сведения о присутствии для пользователя. Возможные значения: `Available` `AvailableIdle` , , `Away` `BeRightBack` , `Busy` `BusyIdle` `DoNotDisturb` `Offline``PresenceUnknown`  |
+|действие    |  Коллекция строк      |    Дополнительная информация о доступности пользователя. Возможные значения: `Available` `Away` , `BeRightBack` `Busy` `DoNotDisturb` `InACall` `InAConferenceCall` `Inactive` `InAMeeting` `Offline` `OffWork` `OutOfOffice` `PresenceUnknown` `Presenting` `UrgentInterruptionsOnly` .       |
+|outOfOfficeSettings | [outOfOfficeSettings](outOfOfficeSettings.md) | Параметры "Нет на месте" для пользователя. |
 
 >**Примечание.** Дополнительные данные о различных состояниях присутствия см. в [записях о присутствии пользователей в Teams.](/microsoftteams/presence-admins) 
 
@@ -58,6 +59,7 @@ ms.locfileid: "49675956"
 {
    "id":"string",
    "availability":"string",
-   "activity":"string"
+   "activity":"string",
+   "outOfOfficeSettings":{"@odata.type": "#microsoft.graph.outOfOfficeSettings"}
 }
 ```

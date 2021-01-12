@@ -1,34 +1,34 @@
 ---
-title: Получение fido2AuthenticationMethod
+title: Get fido2AuthenticationMethod
 description: Чтение свойств и связей объекта fido2AuthenticationMethod.
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5b05ea4e8d358925fe70df1764ee95497a1f971a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 5717f90916680308d40b63c28e0387a98541a2d1
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965546"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796537"
 ---
-# <a name="get-fido2authenticationmethod"></a>Получение fido2AuthenticationMethod
+# <a name="get-fido2authenticationmethod"></a>Get fido2AuthenticationMethod
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение объекта [метода проверки подлинности для одного FIDO2ного ключа безопасности](../resources/fido2authenticationmethod.md) пользователя.
+Получить один объект метода проверки подлинности ключа безопасности [FIDO2](../resources/fido2authenticationmethod.md) пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения, действующие на себя (от большинства до минимальных привилегий)|Разрешения, действующие на других (по крайней мере для самых привилегированных)|
+|Тип разрешения|Разрешения, действующие на себя (от большинства до наименее привилегированных)|Разрешения, действующие над другими (от наименее привилегированных)|
 |:---|:---|:--|
-|Делегированные (рабочая или учебная учетная запись)|Усераусентикатионмесод. Read, Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite, Усераусентикатионмесод. ReadWrite. ALL|Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite. ALL
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|Не поддерживается.
-|Для приложений|Не поддерживается.|Не поддерживается.
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
+| Приложение                            | Не применимо. | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима одна из следующих [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна из следующих [ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 * Глобальный читатель
@@ -56,7 +56,7 @@ GET /users/{id | userPrincipalName}/authentication/fido2AuthenticationMethod/{id
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и запрашиваемого объекта `200 OK` [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/me/authentication/fido2AuthenticationMethod
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

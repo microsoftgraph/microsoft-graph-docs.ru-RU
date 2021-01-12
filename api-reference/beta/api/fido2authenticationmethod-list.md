@@ -1,34 +1,34 @@
 ---
 title: Список fido2AuthenticationMethod
-description: Получение списка объектов fido2AuthenticationMethod и их свойств.
+description: Получить список объектов fido2AuthenticationMethod и их свойств.
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 74344f8c7a70608f9dca67a3081d476b7eaf0e56
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d7fe1e06dc9cd2e1c97354ae16b6d1582fbe4834
+ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954466"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796523"
 ---
 # <a name="list-fido2authenticationmethod"></a>Список fido2AuthenticationMethod
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [метода проверки подлинности FIDO2 для ключа безопасности](../resources/fido2authenticationmethod.md) пользователя и их свойств.
+Получить список объектов user's [FIDO2 Security Key Authentication Method и](../resources/fido2authenticationmethod.md) их свойств.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения, действующие на себя (от большинства до минимальных привилегий)|Разрешения, действующие на других (по крайней мере для самых привилегированных)|
+|Тип разрешения|Разрешения, действующие на себя (от большинства до наименее привилегированных)|Разрешения, действующие над другими (от наименее привилегированных)|
 |:---|:---|:--|
-|Делегированные (рабочая или учебная учетная запись)|Усераусентикатионмесод. Read, Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite, Усераусентикатионмесод. ReadWrite. ALL|Усераусентикатионмесод. Read. ALL, Усераусентикатионмесод. ReadWrite. ALL
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|Не поддерживается.
-|Для приложений|Не поддерживается.|Не поддерживается.
+| Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
+| Приложение                            | Не применимо. | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
-Для делегированных сценариев, в которых администратор работает с другим пользователем, администратору необходима одна из следующих [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегирования сценариев, в которых администратор действует над другим пользователем, администратору требуется одна из следующих [ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 * Глобальный читатель
@@ -47,19 +47,19 @@ GET /users/{id | userPrincipalName}/authentication/fido2Methods
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод не поддерживает дополнительные параметры запроса для настройки отклика.
+Этот метод не поддерживает необязательные параметры запроса для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Authorization|Bearer {token}|
+|Авторизация|Bearer {token}|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/me/authentication/fido2Methods
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
