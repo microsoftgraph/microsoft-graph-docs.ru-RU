@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e06927b3058f78396d9df6d54e7336ff6ba1b521
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 5fd0c263d81c0fa03c31743465453194618d99c2
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720424"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844350"
 ---
 # <a name="update-identityapiconnector"></a>Обновление identityApiConnector
 
@@ -27,7 +27,7 @@ ms.locfileid: "49720424"
 | Тип разрешения                        | Разрешения (в порядке убывания привилегий) |
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | APIConnectors.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.  |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
 | Приложение                            | APIConnectors.ReadWrite.All |
 
 Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
@@ -74,6 +74,8 @@ PATCH /identity/apiConnectors/{identityApiConnectorId}
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_identityapiconnector"
@@ -94,6 +96,24 @@ Content-Type: application/json
   }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-identityapiconnector-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-identityapiconnector-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-identityapiconnector-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-identityapiconnector-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

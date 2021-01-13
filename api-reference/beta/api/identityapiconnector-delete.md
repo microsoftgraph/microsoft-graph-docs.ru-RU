@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: da37c47620c82ee254b2e26ef97a72ecad4b8e3e
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: b125549aea03ac69322918833e4536e6b10e32cf
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720406"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844559"
 ---
 # <a name="delete-identityapiconnector"></a>Удаление identityApiConnector
 
@@ -27,7 +27,7 @@ ms.locfileid: "49720406"
 | Тип разрешения                        | Разрешения (в порядке убывания привилегий) |
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | APIConnectors.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.  |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
 | Приложение                            | APIConnectors.ReadWrite.All |
 
 Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
@@ -63,6 +63,8 @@ DELETE /identity/apiConnectors/{identityApiConnectorId}
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_identityapiconnector"
@@ -72,6 +74,24 @@ DELETE /identity/apiConnectors/{identityApiConnectorId}
 ``` http
 DELETE https://graph.microsoft.com/beta/identity/apiConnectors/{id}
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityapiconnector-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-identityapiconnector-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-identityapiconnector-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-identityapiconnector-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

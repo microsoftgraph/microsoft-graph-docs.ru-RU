@@ -5,12 +5,12 @@ localization_priority: Normal
 doc_type: apiPageType
 author: jkdouglas
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 47e679cd9684ead072bdd25cc807fbdc42b36e48
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: f64b29b242f92caf59a9318caff89f9b401a120e
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719967"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844400"
 ---
 # <a name="create-b2xidentityuserflow"></a>Создание объекта b2xIdentityUserFlow
 
@@ -27,7 +27,7 @@ ms.locfileid: "49719967"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)| Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Приложение|IdentityUserFlow.ReadWrite.All|
 
 Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
@@ -60,7 +60,7 @@ POST /identity/b2xUserFlow
 |userFlowType|String|Обязательный. Тип создаемого пользовательского потока. Это значение всегда будет `signUpOrSignIn` .|
 |userFlowTypeVersion|С плавающей запятой|Обязательный. Версия пользовательского потока. Это значение всегда будет 1.|
 |identityProviders|Коллекция объектов [identityProvider](../resources/identityprovider.md)|Необязательное свойство. Поставщики удостоверений, которые необходимо включить в поток пользователей.|
-|apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Необязательное свойство. Конфигурация для включения соединители API для использования в рамках пользовательского потока.|
+|apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Необязательное свойство. Настройка для включения соединителя API с целью использования в составе пользовательского потока.|
 
 ## <a name="response"></a>Отклик
 
@@ -217,6 +217,8 @@ Content-type: application/json
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_b2xuserflow_from_b2xuserflows_apiconnectors"
@@ -242,6 +244,24 @@ Content-length: 154
     }
 }
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-b2xuserflow-from-b2xuserflows-apiconnectors-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-b2xuserflow-from-b2xuserflows-apiconnectors-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-b2xuserflow-from-b2xuserflows-apiconnectors-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-b2xuserflow-from-b2xuserflows-apiconnectors-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### <a name="response"></a>Отклик
 

@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса Клаудпконпремисесконнектионхеалсчекк
-description: Результат проверки работоспособности локального подключения к облачному компьютеру.
+title: Тип ресурса cloudPcOnPremisesConnectionHealthCheck
+description: Результат проверки состояния локального подключения на облачном компьютере.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: resourcePageType
-ms.openlocfilehash: 16dea9278c9471996e4a5beaf20d5f9ec5c2d5c5
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: e79f73bbe1a493e581a35db5fec396d752ff08d1
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563852"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844608"
 ---
-# <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>Тип ресурса Клаудпконпремисесконнектионхеалсчекк
+# <a name="cloudpconpremisesconnectionhealthcheck-resource-type"></a>Тип ресурса cloudPcOnPremisesConnectionHealthCheck
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Результат проверки работоспособности локального подключения к облачному компьютеру.
+Результат проверки состояния локального подключения на облачном компьютере.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -26,19 +26,19 @@ ms.locfileid: "49563852"
 
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Рунхеалсчеккс из Клаудпконпремисесконнектион](../api/cloudpconpremisesconnection-runhealthcheck.md)|Нет|Выполнение проверок работоспособности [клаудпконпремисесконнектион](../resources/cloudpconpremisesconnection.md).|
+|[RunHealthChecks cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|Нет|Запустите проверки состояния [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)|
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя для данного элемента проверки работоспособности.|
-|status|клаудпконпремисесконнектионстатус|Состояние элемента "Проверка работоспособности". Только для чтения. Возможные значения: `Pending`, `Running`, `Passed`, `Failed`, `UnknownFutureValue`.|
-|startDateTime|DateTimeOffset|Время начала элемента проверки работоспособности. Только для чтения.|
-|endDateTime|DateTimeOffset|Время окончания элемента проверки работоспособности. Только для чтения.|
-|errorType|клаудпконпремисесконнектионхеалсчеккеррортипе|Тип ошибки, возникшей во время этой проверки работоспособности. Возможные значения: `DnsCheckFqdnNotFound`, `DnsCheckUnknownError`, `AdJoinCheckFqdnNotFound`, `AdJoinCheckIncorrectCredentials`, `AdJoinCheckOrganizationalUnitNotFound`, `AdJoinCheckOrganizationalUnitIncorrectFormat`, `AdJoinCheckUnknownError`, `EndpointConnectivityCheckUrlNotWhitelisted`, `EndpointConnectivityCheckUnknownError`, `AadConnectivityCheckUnknownError`.|
-|рекоммендедактион|String|Рекомендуемое действие для исправления соответствующей ошибки.|
-|additionalDetails|String|Дополнительные сведения о проверке работоспособности или рекомендуемом действии.|
+|displayName|String|Отображаемая имя для этого элемента проверки состояния.|
+|status|cloudPcOnPremisesConnectionStatus|Состояние элемента проверки состояния. Только для чтения. Возможные значения: `Pending`, `Running`, `Passed`, `Failed`, `UnknownFutureValue`.|
+|startDateTime|DateTimeOffset|Время начала проверки состояния. Только для чтения.|
+|endDateTime|DateTimeOffset|Время окончания элемента проверки состояния. Только для чтения.|
+|errorType|cloudPcOnPremisesConnectionHealthCheckErrorType|Тип ошибки, которая произошла во время этой проверки. Возможные значения: `DnsCheckFqdnNotFound` , `DnsCheckUnknownError` `AdJoinCheckFqdnNotFound` `AdJoinCheckIncorrectCredentials` `AdJoinCheckOrganizationalUnitNotFound` `AdJoinCheckOrganizationalUnitIncorrectFormat` `AdJoinCheckUnknownError` `EndpointConnectivityCheckUrlNotWhitelisted` `EndpointConnectivityCheckUnknownError` `AadConnectivityCheckUnknownError` `ResourceAvailabilityCheckNoSubnetIP` `resourceAvailabilityCheckSubscriptionDisabled` `resourceAvailabilityCheckUnknownError` `permissionCheckNoSubscriptionReaderRole` `permissionCheckNoResourceGroupOwnerRole` `permissionCheckNoVNetContributorRole` `permissionCheckUnknownError` `internalServerUnknownError` .|
+|recommendedAction|String|Рекомендуемое действие для устранения соответствующей ошибки.|
+|additionalDetails|String|Дополнительные сведения о проверке состояния или рекомендуемом действии.|
 
 ## <a name="relationships"></a>Связи
 

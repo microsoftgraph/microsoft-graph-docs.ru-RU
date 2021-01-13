@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c3c82353f96138c17ed8c98a126f46d657ef353d
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: 0aa3aeea81bf0d559fd97fe45598c662c9cdb4ae
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49753649"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844162"
 ---
 # <a name="list-teamsapp"></a>Список teamsApp
 
@@ -31,7 +31,7 @@ ms.locfileid: "49753649"
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,7 +48,7 @@ GET /appCatalogs/teamsApps
 
 Using `$expand=AppDefinitions` will return more information about the state of the app, such as the **publishingState**, which reflects the app submission review status and returns whether an app has been approved, rejected, or remains under review. 
 
-> **Примечание.** Можно отфильтровать любые поля объекта [teamsApp,](../resources/teamsapp.md) чтобы сократить список результатов. Можно использовать любую из следующих операций фильтрации: "Равно", "не равно" и "или" или "нет".
+> **Примечание.** Можно отфильтровать любые поля объекта [teamsApp,](../resources/teamsapp.md) чтобы сократить список результатов. Можно использовать любую из следующих операций фильтра: "Равно", "не равно" и "или" или "нет".
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -68,7 +68,7 @@ Using `$expand=AppDefinitions` will return more information about the state of t
 
 ### <a name="example-1-list-all-applications-specific-to-the-tenant"></a>Пример 1. Список всех приложений, характерных для клиента
 
-В следующем примере перечислены все приложения, которые являются специфическими для вашего клиента.
+В следующем примере перечислены все приложения, специфичные для вашего клиента.
 
 #### <a name="request"></a>Запрос
 
@@ -334,14 +334,34 @@ Content-Type: application/json
 
 #### <a name="request"></a>Запрос
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp_with_bots"
 }-->
 
-```http
+```msgraph-interactive
 GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitions($expand=bot)&$filter=appDefinitions/any(a:a/bot ne null)
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-with-bots-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-with-bots-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-with-bots-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-with-bots-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### <a name="response"></a>Отклик

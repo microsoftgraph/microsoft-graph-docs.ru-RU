@@ -5,16 +5,18 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: 383c646fdb30d082daa73e37fd227238db195b6b
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 8c21e7ab3b88c2659bf055e39b931cbc6e9d2f39
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706498"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844678"
 ---
 # <a name="teamworkbot-resource-type"></a>Тип ресурса teamworkBot
 
 Пространство имен: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет бота в экосистеме Microsoft Teams.
 

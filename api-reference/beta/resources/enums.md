@@ -1,16 +1,16 @@
 ---
 title: Значения enum
-description: Значения измеримого индекса Microsoft Graph
+description: Значения для индексирования Microsoft Graph
 doc_type: enumPageType
 localization_priority: Normal
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: e5372bbd1b548282c61a82c4b80f26fd77668fc3
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 0e582e87f60905b046a7ee2f523c298b1791fd86
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796691"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844868"
 ---
 # <a name="enum-values"></a>Значения enum
 
@@ -41,7 +41,7 @@ ms.locfileid: "49796691"
 |отключено|
 |unknownFutureValue|
 
-### <a name="replyrestriction-values"></a>значения replyRestriction
+### <a name="replyrestriction-values"></a>Значения replyRestriction
 
 | Member
 |:--------------
@@ -712,7 +712,7 @@ ms.locfileid: "49796691"
 | OnPremOneDriveForBusiness
 
 
-### <a name="responsetype-values"></a>Значения responseType
+### <a name="responsetype-values"></a>значения responseType
 
 | Member
 |:-------------------------
@@ -734,7 +734,7 @@ ms.locfileid: "49796691"
 | unrestricted
 
 
-### <a name="websitetype-values"></a>значения websiteType
+### <a name="websitetype-values"></a>Значения websiteType
 
 | Member
 |:-------------------------
@@ -824,7 +824,7 @@ ms.locfileid: "49796691"
 | Элемент    | Значение | Описание                   |
 | :-------- | :---- | :---------------------------- |
 | unknown   | 0     | Неизвестно.                      |
-| untrusted | 10     | Уровень целостности не является недоверным. |
+| неверная | 10     | Уровень целостности не является недоверным. |
 | low       | 20    | Уровень целостности низкий.       |
 | medium    | 30    | Уровень целостности средний.    |
 | high      | 40    | Уровень целостности высокий.      |
@@ -895,7 +895,7 @@ Enum for severity of alerts.
 | unknown    | 0     | Неизвестное состояние.       |
 | newAlert   | 10     | Оповещение является новым.         |
 | inProgress | 20    | Оповещение находится в процессе выполнения. |
-| resolved   | 30    | Оповещение разрешено.    |
+| resolved   | 30    | Оповещение устранено.    |
 
 ### <a name="emailrole-values"></a>Значения emailRole
 
@@ -915,7 +915,7 @@ Enum for severity of alerts.
 | :---------------- | :---- | :--------------------------- |
 | unknown           | –1    | Неизвестно.                     |
 | interactive       | 0     | В этом режиме можно в интерактивном режиме.        |
-| remoteInteractive | 1      | В этом режиме можно использовать удаленный интерактивный режим. |
+| remoteInteractive | 1      | В режиме удаленного интерактивного logon. |
 | сеть           | 2      | Во время logon это сеть.            |
 | batch             | 3      | В этом пакетном пакете.              |
 | служба           | 4      | Logon is service.            |
@@ -1199,7 +1199,7 @@ Enum for severity of alerts.
 | :----- | :---- | :------------------------------------------------------------------------------- |
 | rest   | 0     | Неавтные данные; Например, файл в папке.                                 |
 | движение | 1      | Данные в движении. Файл, перехваченный сетевым устройством в пути.         |
-| use    | 2      | Данные используются. Файл открыт в клиентских приложениях, таких как Microsoft Office. |
+| use    | 2      | Данные используются. Файл открывается в клиентских приложениях, таких как Microsoft Office. |
 
 ### <a name="assignmentmethod-values"></a>Значения assignmentMethod
 
@@ -1207,7 +1207,7 @@ Enum for severity of alerts.
 | :--------- | :---- | :------------------------------------------------------------------------------------------------------------------------------- |
 | standard   | 0     | Метка была установлена с помощью условия службы или политики.                                                                              |
 | privileged | 1      | Метка была явно установлена пользователем.                                                                                          |
-| Авто       | 2      | Разрешает переопределять любую существующую метку. Обоснование, необходимое для понижения. Приводит к `standard` методу назначения в метаданных. |
+| Авто       | 2      | Разрешает переопределять любую существующую метку. Обоснование, необходимое для понижения. Метод `standard` назначения в метаданных. |
 
 ### <a name="actionsource-values"></a>значения actionSource
 
@@ -1217,7 +1217,7 @@ Enum for severity of alerts.
 | Автоматически     | 1      | Метка была выбрана в результате условий политики.       |
 | Рекомендуемый   | 2      | Выбрано применение рекомендуемой метки.                    |
 | policyDefault | 3      | Пользователь не применял действие и метку по умолчанию политики. |
-| mandatory     | 4      | Пользователь выбрал метку после принудительного выбора.         |
+| mandatory     | 4      | Пользователь выбрал метку после принудительных выборов.         |
 
 ### <a name="contentalignment-values"></a>значения contentAlignment
 
@@ -1225,7 +1225,7 @@ Enum for severity of alerts.
 | :----- | :---- | :---------------------------------- |
 | left   | 0     | Выравнивание пометки содержимого слева.  |
 | Правильно  | 1      | Выравнивание пометки содержимого справа. |
-| center | 2      | Маркировка содержимого по центру.             |
+| center | 2      | Пометка содержимого по центру.             |
 
 ### <a name="watermarklayout-values"></a>значения watermarkLayout
 
@@ -1318,7 +1318,7 @@ Enum for severity of alerts.
 | block   | 1      | Угрозу следует заблокировать.     |
 | unblock | 2      | Угрозу не следует блокировать. |
 
-### <a name="threatcategory-values"></a>Значения threatCategory
+### <a name="threatcategory-values"></a>значения threatCategory
 
 | Элемент             | Значение | Описание        |
 |:-------------------|:------|:-------------------|
@@ -1363,11 +1363,11 @@ Enum for severity of alerts.
 | domainBlockList       | 6      | Список заблокированных доменов отправитель.           |
 | notInAddressBook      | 7      | Исключить отправитель не в адресной книге. |
 | firstTimeSender       | 8      | Заблокировано из-за первого отправитель.   |
-| autoPurgeToInbox      | 9      | Сообщение с перемещением TimeTravel в почтовый ящик.   |
+| autoPurgeToInbox      | 9      | TimeTravel перемещает сообщение в "Входящие".   |
 | autoPurgeToJunk       | 10     | TimeTravel перемещает сообщение в нежелательное.    |
 | autoPurgeToDeleted    | 11     | Сообщение с перемещением TimeTravel в удаленное. |
 | исходящие              | 12     | Исходящие сообщения.                      |
-| notJunk               | 13     | Разрешить из-за того, что не является нежелательным.              |
+| notJunk               | 13     | Разрешить из-за того, что он не является нежелательным.              |
 | junk                  | 14     | Заблокировано из-за нежелательной почты.                |
 | unknownFutureValue    | 15     | Член sentinel.                  |
 
@@ -1442,7 +1442,7 @@ Enum for severity of alerts.
 | waitingOnOthers
 | deferred
 
-### <a name="connectedorganizationstate-values"></a>Значения connectedOrganizationState
+### <a name="connectedorganizationstate-values"></a>значения connectedOrganizationState
 
 | Элемент                | Значение | Описание                                                                                                                                                                                                        |
 |:----------------------| :-----|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1548,13 +1548,18 @@ Enum for severity of alerts.
 |adJoinCheckIncorrectCredentials|
 |adJoinCheckOrganizationalUnitNotFound|
 |adJoinCheckOrganizationalUnitIncorrectFormat|
-|adJoinCheckUnknownError |
+|adJoinCheckUnknownError|
 |endpointConnectivityCheckUrlNotWhitelisted|
 |endpointConnectivityCheckUnknownError|
-|aadConnectivityCheckUnknownError |
-|resourceAvailabilityCheckNoSubnetIP |
-|resourceAvailabilityCheckUnknownError |
-|internalServerUnknownError |
+|aadConnectivityCheckUnknownError|
+|resourceAvailabilityCheckNoSubnetIP|
+|resourceAvailabilityCheckSubscriptionDisabled|
+|resourceAvailabilityCheckUnknownError|
+|permissionCheckNoSubscriptionReaderRole|
+|permissionCheckNoResourceGroupOwnerRole|
+|permissionCheckNoVNetContributorRole|
+|permissionCheckUnknownError|
+|internalServerUnknownError|
 
 ### <a name="cloudpconpremisesconnectionstatus-values"></a>Значения cloudPcOnPremisesConnectionStatus
 

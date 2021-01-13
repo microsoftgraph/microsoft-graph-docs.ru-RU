@@ -1,26 +1,26 @@
 ---
-title: Локализация компонентов набор средств Microsoft Graph
-description: Используйте LocalizationHelper для локализации компонентов набор средств Microsoft Graph.
+title: Локализация компонентов Microsoft Graph Toolkit
+description: Используйте LocalizationHelper для локализации компонентов Microsoft Graph Toolkit.
 localization_priority: Normal
 author: vogtn
 ms.openlocfilehash: 3ac9f3fe5dedeb4e1793a589778242486f3b0070
 ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/11/2020
 ms.locfileid: "49660095"
 ---
-# <a name="localizing-the-microsoft-graph-toolkit-components"></a>Локализация компонентов набор средств Microsoft Graph
+# <a name="localizing-the-microsoft-graph-toolkit-components"></a>Локализация компонентов Microsoft Graph Toolkit
 
-Локализация является важным аспектом разработки приложений для поддержки пользователей с различными языковыми требованиями на глобальном уровне.
+Локализация — это важный аспект разработки приложений для поддержки пользователей с разными языковыми требованиями по всему миру.
 
-Вы можете локализовать компоненты набор средств Microsoft Graph, чтобы пользовательский интерфейс отображал целевой язык.
+Чтобы пользовательский интерфейс отражал целевой язык, вы можете локализовать компоненты Microsoft Graph Toolkit.
 
-## <a name="use-localizationhelper-to-add-localized-strings"></a>Добавление локализованных строк с помощью LocalizationHelper
+## <a name="use-localizationhelper-to-add-localized-strings"></a>Использование LocalizationHelper для добавления локализованных строк
 
-Все строки в наборе средств не локализованы, но вы можете предоставить собственные локализованные строки и управлять различными языками с помощью того же процесса, который вы используете для локализации приложения. Для упрощения локализации набор средств предоставляет `LocalizationHelper` статический класс.
+В наборе средств Toolkit отсутствует локализация всех строк, но вы можете указывать собственные локализованные строки и управлять различными языками с помощью того же процесса, который применяется для локализации приложения. Чтобы облегчить локализацию, набор средств Toolkit предоставляет статический класс `LocalizationHelper`.
 
-В следующем примере показано, как локализовать несколько компонентов.
+В примере ниже показано, как локализовать несколько компонентов.
 
 ```ts
 import { LocalizationHelper } from "@microsoft/mgt";
@@ -67,9 +67,9 @@ LocalizationHelper.strings = {
 };
 ```
 
-При присвоении свойства все компоненты автоматически получают новые строки и повторно отрисовку, что позволяет динамически `strings` изменять строки. 
+При назначении свойства `strings` все компоненты автоматически получат новые строки и для них будет выполнен повторный рендеринг, что позволяет динамически изменять строки. 
 
-Строки можно установить на глобальном уровне или для каждого компонента (с помощью `_components:` свойства).
+Строки можно задать на глобальном уровне или на уровне компонента (с помощью свойства `_components:`).
 
 ## <a name="strings"></a>Строки
 
@@ -92,7 +92,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="teams-channel-picker"></a>Teams-Channel-Picker
+### <a name="teams-channel-picker"></a>Средство выбора каналов Teams
 
 ```ts
 {
@@ -113,7 +113,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="tasks-base"></a>Tasks-Base
+### <a name="tasks-base"></a>Основные задачи
 
 ```ts
 {
@@ -124,7 +124,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="todo"></a>Todo
+### <a name="todo"></a>To Do
 
 ```ts
 {
@@ -145,7 +145,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="person-card-contact"></a>Person-Card-Contact
+### <a name="person-card-contact"></a>Контактные данные карточки контакта
 
 ```ts
 {
@@ -153,7 +153,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="person-card-organization"></a>Person-Card-Organization
+### <a name="person-card-organization"></a>Организация карточки контакта
 
 ```ts
 {
@@ -165,7 +165,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="person-card-messages"></a>Person-Card-Messages
+### <a name="person-card-messages"></a>Сообщения карточки контакта
 
 ```ts
 {
@@ -173,7 +173,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="person-card-files"></a>Person-Card-Files
+### <a name="person-card-files"></a>Файлы карточки контакта
 
 ```ts
 {
@@ -182,7 +182,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="person-card-profile"></a>Person-Card-Profile
+### <a name="person-card-profile"></a>Профиль карточки контакта
 
 ```ts
 {

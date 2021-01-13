@@ -1,30 +1,30 @@
 ---
-title: Компонент "Выбор каналов Microsoft Teams" в microsoft Graph набор средств
-description: Вы можете использовать mgt-teams-channel-picker для поиска каналов и команд, связанных с пользователем из Microsoft Graph.
+title: Компонент выбора каналов Microsoft Teams в Microsoft Graph Toolkit
+description: Вы можете использовать компонент mgt-teams-channel-picker, чтобы в Microsoft Graph искать каналы и команды, связанные с пользователем.
 localization_priority: Normal
 author: vogtn
 ms.openlocfilehash: c0b6e818f0c9c30314b5342fcfb6ef44978ec830
 ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/11/2020
 ms.locfileid: "49660010"
 ---
-# <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент "Выбор каналов Microsoft Teams" в microsoft Graph набор средств
+# <a name="microsoft-teams-channel-picker-component-in-the-microsoft-graph-toolkit"></a>Компонент выбора каналов Microsoft Teams в Microsoft Graph Toolkit
 
-Компонент можно использовать для поиска каналов `mgt-teams-channel-picker` Microsoft Teams, связанных с пользователем. Компонент может искать все команды, к которых присоединился пользователь, и каждый канал в этих командах. 
+Вы также можете использовать компонент `mgt-teams-channel-picker` для разрешения поиска каналов Microsoft Teams, связанных с пользователем. Этот компонент может выполнять поиск всех команд, к которым присоединился пользователь, и каждого канала в этих командах. 
 
 ## <a name="example"></a>Пример
 
-В следующем примере показан `mgt-teams-channel-picker` компонент. Начните поиск канала или команды для отображения результатов.
+В примере ниже показан компонент `mgt-teams-channel-picker`. Начните поиск канала или команды, чтобы увидеть отображение результатов.
 
 <iframe src="https://mgt.dev/iframe.html?id=components-mgt-teams-channel-picker--teams-channel-picker&source=docs" height="450"></iframe>
 
-[Откройте этот пример в mgt.dev](https://mgt.dev/?path=/story/components-mgt-teams-channel-picker--teams-channel-picker&source=docs)
+[Открыть этот пример в mgt.dev](https://mgt.dev/?path=/story/components-mgt-teams-channel-picker--teams-channel-picker&source=docs)
 
 ## <a name="getting-the-selected-channel"></a>Получение выбранного канала
 
-Используйте это свойство для получения выбранного в данный момент `selectedItem` канала и родительской команды. Это значение будет иметь значение NULL, если канал не выбран. `selectedItem` содержит два свойства: `channel` ([MicrosoftGraph.Channel](/graph/api/resources/channel)) и `team` ([MicrosoftGraph.Team](/graph/api/resources/team)).
+Используйте свойство `selectedItem`, чтобы получить канал и родительскую команду, выбранные в настоящее время. Это значение будет равно null, если канал не выбран. `selectedItem` содержит два свойства: `channel` ([MicrosoftGraph.Channel](/graph/api/resources/channel)) и `team` ([MicrosoftGraph.Team](/graph/api/resources/team)).
 
 ```javascript
 const channelPicker = document.querySelector('mgt-teams-channel-picker');
@@ -34,9 +34,9 @@ console.log(channelPicker.selectedItem.team);
 
 ## <a name="selecting-a-channel"></a>Выбор канала
 
-Используйте этот `selectChannelById(channelId: string)` метод для выбора канала программным способом.
+Используйте метод `selectChannelById(channelId: string)` для программного выбора канала.
 
-> **Примечание.** Выбор каналов Teams поддерживает только выбор одного канала.
+> **Примечание.** Средство выбора канала Teams поддерживает выбор только одного канала.
 
 ```javascript
 const channelPicker = document.querySelector('mgt-teams-channel-picker');
@@ -44,7 +44,7 @@ const channelId = 'some-channel-id';
 channelPicker.selectChannelById(channelId);
 ```
 
-> **Примечание.** Предоставленный канал (и последующий ИД) должен принадлежать команде, к ней присоединился пользователь, подлинность пользователя. 
+> **Примечание.** Указанный канал (и соответствующий идентификатор) должен относиться к команде, к которой присоединился прошедший проверку пользователь. 
 
 
 ## <a name="css-custom-properties"></a>Настраиваемые свойства CSS
@@ -79,19 +79,19 @@ mgt-teams-channel-picker {
 ## <a name="events"></a>События
 | Событие | Сведения | Описание |
 | --- | --- | --- |
-| selectionChanged | Сведения содержат текущий выбранный элемент `{channel : ` [MicrosoftGraph.Channel](/graph/api/resources/channel) `, team: ` [MicrosoftGraph.Team](/graph/api/resources/team)`}` | Создается, когда пользователь вносит изменения в выбор канала. |
+| selectionChanged | Сведения содержат выбранный в настоящее время элемент `{channel : `[MicrosoftGraph.Channel](/graph/api/resources/channel)`, team: `[MicrosoftGraph.Team](/graph/api/resources/team)`}` | Возникает, когда пользователь изменяет выбор канала. |
 
 ## <a name="templates"></a>Шаблоны
 
- `mgt-teams-channel-picker` поддерживает несколько [шаблонов,](../customize-components/templates.md) которые можно использовать для замены определенных частей компонента. Чтобы указать шаблон, включив элемент в `<template>` компонент, закажите одно из `data-type` следующих значений.
+ `mgt-teams-channel-picker` поддерживает несколько [шаблонов](../customize-components/templates.md), позволяющих заменить определенные части компонента. Чтобы указать шаблон, добавьте элемент `<template>` в компонент и присвойте параметру `data-type` одно из следующих значений.
 
 | Тип данных | Контекст данных | Описание |
 | --- | --- | --- |
-| loading | null: нет данных | Шаблон, используемый для отображения состояния picker во время запроса к Microsoft Graph. |
-| error | null: нет данных| Шаблон, используемый, если поиск пользователей не возвращает пользователей. |
+| загрузка | null: нет данных | Шаблон, используемый для отображения состояния средства выбора при выполнении запроса к Microsoft Graph. |
+| ошибка | null: нет данных| Шаблон, используемый в том случае, если поиск не возвращает пользователей. |
 
 
-В следующем примере показано, как использовать `error` шаблон.
+В следующем примере показано, как использовать шаблон `error`.
 
 ```html
 <mgt-teams-channel-picker>
@@ -103,7 +103,7 @@ mgt-teams-channel-picker {
 
 ## <a name="microsoft-graph-permissions"></a>Разрешения Microsoft Graph
 
-Этот компонент использует следующие API Microsoft Graph и разрешения.
+Этот компонент использует следующие API и разрешения Microsoft Graph.
 
 | API                                                                                                              | Разрешение  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
@@ -112,19 +112,19 @@ mgt-teams-channel-picker {
 
 ## <a name="authentication"></a>Проверка подлинности
 
-Этот контроль использует глобального поставщика проверки подлинности, описанного в [документации по проверке подлинности.](../providers/providers.md)
+В элементе управления используется глобальный поставщик проверки подлинности, описанный в [документации по проверке подлинности](../providers/providers.md).
 
-## <a name="extend-for-more-control"></a>Расширение для большего контроля
+## <a name="extend-for-more-control"></a>Расширение для дополнительного управления
 
-Для более сложных сценариев или по-настоящему настраиваемого пользовательского пользовательского управления этот компонент предоставляет несколько методов для переопределения `protected render*` в расширениях компонентов:
+В более сложных сценариях или настраиваемых пользовательских интерфейсах этот компонент предоставляет несколько методов `protected render*` для переопределения в расширениях компонента.
 
 | Метод | Описание |
 | - | - |
-| renderSelected | Отрисовка выбранной команды и канала в поле ввода. |
-| renderInput | Отрисовка ввода. |
-| renderDropdown | Отрисовка выпадаемой области. |
-| renderDropdownList | Рекурсивно отрисовка элементов в выпадаемом меню. |
-| renderItem | Отрисовка команды или канала в выпадаемом списке. |
-| renderHighlightedText | Отрисовка текста канала с выделением входного запроса. |
-| renderLoading | Отрисовка состояния выпадания загрузки. |
-| renderError | Отрисовка состояния ошибки в dropdown. |
+| renderSelected | Отображает выбранную команду и канал в поле ввода. |
+| renderInput | Отображает поле ввода. |
+| renderDropdown | Отображает раскрывающийся список. |
+| renderDropdownList | Рекурсивно отображает элементы в раскрывающемся списке. |
+| renderItem | Отображает команду или канал в раскрывающемся списке. |
+| renderHighlightedText | Отображает текст канала, выделяя входной запрос. |
+| renderLoading | Отображает состояние загрузки раскрывающегося списка. |
+| renderError | Отображает состояние ошибки раскрывающегося списка. |

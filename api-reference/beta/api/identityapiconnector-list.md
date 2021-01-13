@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4ca946e80b590926aa8f15b7b790d5bd098838cf
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: dd656bad651511b897c687bbca8cead22a4accc3
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720401"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844299"
 ---
 # <a name="list-identityapiconnectors"></a>Список identityApiConnectors
 
@@ -27,7 +27,7 @@ ms.locfileid: "49720401"
 | Тип разрешения                        | Разрешения (в порядке убывания привилегий) |
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | APIConnectors.ReadWrite.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.  |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
 | Приложение                            | APIConnectors.ReadWrite.All |
 
 Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
@@ -58,7 +58,7 @@ GET /identity/apiConnectors/
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [identityApiConnector](../resources/identityapiconnector.md) в теле отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [identityApiConnector](../resources/identityapiconnector.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -66,6 +66,8 @@ GET /identity/apiConnectors/
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_identityApiConnectors"
@@ -75,6 +77,24 @@ GET /identity/apiConnectors/
 ``` http
 GET https://graph.microsoft.com/beta/identity/apiConnectors
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-identityapiconnectors-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-identityapiconnectors-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-identityapiconnectors-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-identityapiconnectors-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 

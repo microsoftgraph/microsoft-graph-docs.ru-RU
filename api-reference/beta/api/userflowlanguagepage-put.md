@@ -5,18 +5,18 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4e73897facf0407bed489a93c057c0c7f78436d5
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 4e6d1488851e4d76fc1771296ef0661f81da1b33
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706415"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844799"
 ---
 # <a name="update-userflowlanguagepage"></a>Обновление userFlowLanguagePage
 
 Пространство имен: microsoft.graph
 
-Обновление значений в объекте userFlowLanguagePage. Можно обновлять только значения в overridesPage, которое используется для настройки значений, которые показываются пользователю во время пользовательского пути, определенного пользовательским потоком.
+Обновление значений в объекте userFlowLanguagePage. Вы можете обновлять только значения в overridesPage, которое используется для настройки значений, которые показываются пользователю во время пользовательского пути, определенного потоком пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -68,6 +68,8 @@ PUT /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/{id}/$value
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_overridespages"
@@ -90,10 +92,16 @@ Content-Type: application/json
     ]
 }
 ```
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-overridespages-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

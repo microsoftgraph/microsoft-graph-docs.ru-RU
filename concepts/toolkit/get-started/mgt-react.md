@@ -1,24 +1,24 @@
 ---
-title: Компоненты React набор средств Microsoft Graph
-description: Компоненты React набор средств Microsoft Graph ( ) позволяют разработчикам React использовать microsoft `mgt-react` Graph набор средств в своих приложениях React.
+title: Компоненты Microsoft Graph Toolkit в React
+description: Компоненты Microsoft Graph Toolkit в React (`mgt-react`) позволяют разработчикам React использовать Microsoft Graph Toolkit в приложениях React.
 localization_priority: Normal
 author: nmetulev
 ms.openlocfilehash: 6781a894e451e2c4751f151beddcacf4e0cdb608
 ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/11/2020
 ms.locfileid: "49658258"
 ---
-# <a name="microsoft-graph-toolkit-react-components"></a>Компоненты React набор средств Microsoft Graph
+# <a name="microsoft-graph-toolkit-react-components"></a>Компоненты Microsoft Graph Toolkit в React
 
-Компоненты React набор средств Microsoft Graph ( ) позволяют разработчикам React использовать microsoft `mgt-react` Graph набор средств в своих приложениях React. Библиотека обтекает все компоненты Microsoft Graph набор средств и экспортирует их как компоненты React.
+Компоненты Microsoft Graph Toolkit в React (`mgt-react`) позволяют разработчикам React использовать Microsoft Graph Toolkit в приложениях React. Библиотека упаковывает все компоненты Microsoft Graph Toolkit и экспортирует их как компоненты React.
 
 ## <a name="what-components-can-i-use"></a>Какие компоненты можно использовать?
 
-Библиотека автоматически выдержана из веб-набор средств Microsoft Graph, а все компоненты доступны как компоненты React.
+Библиотека создается автоматически из веб-компонентов Microsoft Graph Toolkit, и все ее компоненты доступны как компоненты React.
 
-Имена компонентов React содержатся в PascalCase и не содержат `Mgt` префикса. Например, компонент `mgt-person` доступен как , а компонент доступен как `Person` `mgt-people-picker` `PeoplePicker` .
+Имена компонентов React приводятся в PascalCase и не включают префикс `Mgt`. Например, компонент `mgt-person` доступен как `Person`, а `mgt-people-picker` — как `PeoplePicker`.
 
 ## <a name="installation"></a>Установка 
 
@@ -36,21 +36,21 @@ yarn add @microsoft/mgt-react
 
 ## <a name="usage"></a>Применение
 
-Все компоненты доступны через пакет npm и именуются с помощью PascalCase. Чтобы использовать компонент, сначала импортировать его вверху.
+Все компоненты доступны через пакет NPM и названы с использованием PascalCase. Чтобы использовать компонент, сначала импортируйте его вверх.
 
 ```tsx
 import { Person } from '@microsoft/mgt-react';
 ```
 
-Теперь вы можете использовать `Person` любой элемент JSX в качестве обычного компонента React.
+Теперь вы можете использовать `Person` где угодно в JSX как регулярный компонент React.
 
 ```tsx
 <Person personQuery="me" />
 ```
 
-Все свойства и события со картой точно так же, как они определены в документации по компонентам.
+Все свойства и события точно соответствуют своему определению в документации по компонентам.
 
-Например, можно установить для свойства `personDetails` объект:
+Например, вы можете настроить свойство `personDetails` для объекта:
 
 ```jsx
 const App = (props) => {
@@ -62,7 +62,7 @@ const App = (props) => {
 };
 ```
 
-Или зарегистрируйте обработок событий:
+Вы также можете зарегистрировать обработчик событий:
 
 ```jsx
 import { PeoplePicker, People } from '@microsoft/mgt-react';
@@ -84,9 +84,9 @@ const App = (props) => {
 
 ## <a name="templates"></a>Шаблоны
 
-Большинство компонентов набор средств Microsoft Graph [](../customize-components/templates.md) поддерживают шаблоны и позволяют использовать `mgt-react` React для записи шаблонов.
+Большинство компонентов Microsoft Graph Toolkit [поддерживают шаблоны](../customize-components/templates.md), а `mgt-react` позволяет использовать React для создания шаблонов.
 
-Например, чтобы создать шаблон, который будет использоваться для отображения событий в компоненте, сначала определите компонент, который будет использоваться для `mgt-agenda` отображения события:
+Например, чтобы создать шаблон для представления событий в компоненте `mgt-agenda`, сначала определите компонент, который следует использовать для представления события:
 
 ```tsx
 import { MgtTemplateProps } from '@microsoft/mgt-react';
@@ -97,7 +97,7 @@ const MyEvent = (props: MgtTemplateProps) => {
 };
 ```
 
-Затем используйте его в качестве потомка компонента-оболочки и установите для шаблона реквизит `event` .
+Затем используйте его как дочерний элемент упакованного компонента и задайте для свойства template значение `event`.
 
 ```tsx
 import { Agenda } from '@microsoft/mgt-react';
@@ -109,9 +109,9 @@ const App = (props) => {
 }
 ```
 
-Этот `template` реквизит позволяет указать шаблон, который необходимо переписать. В этом случае компонент повторяется для каждого события, а объект передается в составе `MyEvent` `event` `dataContext` реквизита.
+Свойство `template` позволяет указать, какой шаблон следует перезаписать. В этом случае компонент `MyEvent` будет повторяться для каждого события, а объект `event` будет передаваться в составе свойства `dataContext`.
 
 ## <a name="see-also"></a>См. также
 
-* [Начало работы с microsoft Graph набор средств React](./use-toolkit-with-react.md)
-* [Узнайте о поставщиках проверки подлинности](../providers/providers.md)
+* [Начало работы с Microsoft Graph Toolkit в React](./use-toolkit-with-react.md)
+* [Сведения о поставщиках проверки подлинности](../providers/providers.md)

@@ -5,12 +5,12 @@ author: clearab
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 3e2b115c9a59b7933255ac6411c911e1d055de55
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: f7de268d3472bcef60ad77064c1c725d79174e32
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706131"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844461"
 ---
 # <a name="list-apps-in-team"></a>Список приложений в команде
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {
   "blockType": "response",
@@ -129,7 +129,7 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-В следующем примере, если с экземпляром [](../resources/teamworkbot.md) установленного приложения связан бот, также возвращаются сведения о боте.
+В следующем примере, если с экземпляром установленного приложения связан [бот](../resources/teamworkbot.md), сведения о нем также возвращаются.
 
 
 <!-- {
@@ -137,13 +137,13 @@ Content-type: application/json
   "name": "list_installed_teams_apps_expand"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps?$expand=teamsAppDefinition($expand=bot)
 ```
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {
@@ -253,7 +253,7 @@ GET https://graph.microsoft.com/beta/teams/acda442c-78d2-491b-8204-4ef5019c0193/
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. 
 <!-- {

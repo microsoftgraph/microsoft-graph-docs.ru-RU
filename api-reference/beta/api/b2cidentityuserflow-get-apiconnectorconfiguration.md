@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: bc94aa3a1a4120a0200f8bd9c46612c667530b12
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: b065c20f7b6e4c9f70abd42dd09347f75d1b8dae
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720297"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49843977"
 ---
 # <a name="get-userflowapiconnectorconfiguration"></a>Get userFlowApiConnectorConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "49720297"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)|IdentityUserFlow.ReadWrite.All|
-|Делегированное (личная учетная запись Майкрософт)| Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Приложение|IdentityUserFlow.ReadWrite.All|
 
 Учетная запись для работы или учебного заведения должна принадлежать одной из следующих ролей:
@@ -62,7 +62,7 @@ GET identity/b2cUserFlows/{id}/apiConnectorConfiguration
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает `200 OK` код отклика и объект [apiConnectorConfiguration.](../resources/userflowapiconnectorconfiguration.md)
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [apiConnectorConfiguration.](../resources/userflowapiconnectorconfiguration.md)
 
 ## <a name="examples"></a>Примеры
 
@@ -70,6 +70,8 @@ GET identity/b2cUserFlows/{id}/apiConnectorConfiguration
 
 Ниже приведен пример запроса.
 
+
+# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_b2cuserflows-apiconnectorconfiguration"
@@ -79,6 +81,24 @@ GET identity/b2cUserFlows/{id}/apiConnectorConfiguration
 ``` http
 GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_testuserflow/apiConnectorConfiguration?$expand=postFederationSignup,postAttributeCollection
 ```
+# <a name="c"></a>[C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-b2cuserflows-apiconnectorconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="javascript"></a>[JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-b2cuserflows-apiconnectorconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="objective-c"></a>[Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-b2cuserflows-apiconnectorconfiguration-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# <a name="java"></a>[Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-b2cuserflows-apiconnectorconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### <a name="response"></a>Отклик
 
