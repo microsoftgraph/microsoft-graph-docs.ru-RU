@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: b5d6b0f12f66d1ffc78ec9207b63cf68772167a8
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 54b104649dc0caa53412b07f321a009d45a3ef6c
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49661803"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49845973"
 ---
 ```csharp
 
@@ -13,7 +13,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var mailFolder = new MailFolder
 {
-    DisplayName = "Clutter"
+    DisplayName = "Clutter",
+    IsHidden = true
 };
 
 await graphClient.Me.MailFolders

@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 45526c3da75cf148daae85d0b21c0f931f726af6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 3573caaa6c57ada2ca961d8aa94cb5a5ad81811a
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48095053"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844881"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Использование REST API почты Outlook
 
@@ -57,13 +57,13 @@ GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 | Получение настроек языка и часовых поясов для пользователя | [localeInfo](localeinfo.md), <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser-supportedlanguages.md), <br> [supportedTimeZones](../api/outlookuser-supportedtimezones.md) |
 | Получение или обновление автоматического ответа, языкового стандарта, часового пояса или рабочего времени пользователя | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Получение настроек почтового ящика пользователя](../api/user-get-mailboxsettings.md), <br> [Обновление параметров почтового ящика пользователя](../api/user-update-mailboxsettings.md) |
 | Получение подсказок об особом состоянии других пользователей, например об отсутствии на месте | [user](../resources/user.md), <br> [mailTips](../resources/mailtips.md) | [Получение подсказок](../api/user-getmailtips.md) |
-| Оповещение пользователя при его упоминании в других сообщениях (предварительная версия) | [mention (предварительная версия)](../resources/mention.md) | [Получение сведений об @упоминаниях в сообщении](../api/message-get.md#example-2) |
+| Оповещение пользователя при его упоминании в других сообщениях (предварительная версия) | [mention (предварительная версия)](../resources/mention.md) | [Получение сведений об @упоминаниях в сообщении](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message) |
 | Отмена подписки пользователя на список рассылки электронной почты (предварительная версия) | [message (предварительная версия)](../resources/message.md) | [Отмена подписки](../api/message-unsubscribe.md) |
 | **Управление почтой и папками** | | |
 | Упорядочивание сообщений в иерархии папок почты | [mailFolder](../resources/mailfolder.md)  | [Методы ресурса mailFolder](../resources/mailfolder.md#methods) |
 | Классификация сообщений | [outlookCategory](../resources/outlookcategory.md) | [Методы ресурса outlookCategory](../resources/outlookcategory.md#methods) |
 | Автоматизация действий, например пересылка определенных входящих сообщений, с помощью правил папки "Входящие" | [messageRule](../resources/messagerule.md) | [Методы ресурса messageRule](../resources/messagerule.md#methods) |
-| Получение заголовков сообщений Интернета для сообщения | [message](../resources/message.md) | [Получение свойства **internetMessageHeaders** сообщения](../api/message-get.md#example-4). |
+| Получение заголовков сообщений Интернета для сообщения | [message](../resources/message.md) | [Получение свойства **internetMessageHeaders** сообщения](../api/message-get.md#example-4-get-internet-message-headers). |
 | Поиск и фильтрация сообщений | [message](../resources/message.md) | [Параметры запроса](/graph/query-parameters)  |
 | Получение уведомлений об изменениях сообщений в папке | [subscription](../resources/subscription.md) | [Работа с веб-перехватчиками в Microsoft Graph](../resources/webhooks.md) |
 | Синхронизация сообщений или иерархии папок почты | [message](../resources/message.md) | [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages) |

@@ -5,12 +5,12 @@ author: clearab
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8169aaa7d2fb7e28318bb11375cade64e47956f7
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 81b60ee83f2be23ad2484af50ff1b71915158f4c
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49706152"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844888"
 ---
 # <a name="list-apps-installed-for-user"></a>Перечисление приложений, установленных для пользователя
 
@@ -125,13 +125,13 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-В следующем примере, если с экземпляром [](../resources/teamworkbot.md) установленного приложения связан бот, также возвращаются сведения о боте.
+В следующем примере, если с экземпляром установленного приложения связан [бот](../resources/teamworkbot.md), сведения о нем также возвращаются.
 
 <!-- {
   "blockType": "request",
   "name": "user_list_teamsApps_details"
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=teamsAppDefinition($expand=bot)
 ```
 

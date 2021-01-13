@@ -1,11 +1,11 @@
 ---
 description: Автоматически созданный файл. НЕ ИЗМЕНЯТЬ
-ms.openlocfilehash: cdd5646dcc58331899bfc7e9df509255bce33b4d
+ms.openlocfilehash: 1df894afe722239428504917bab589e273f84767
 ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 01/13/2021
-ms.locfileid: "49845994"
+ms.locfileid: "49844971"
 ---
 ```javascript
 
@@ -15,11 +15,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/accessReviews')
+let res = await client.api('/identity/b2cUserFlows/B2C_1_Customer/languages/es-ES')
     .version('beta')
-    .filter('businessFlowTemplateId eq '6e4f3d20-c5c3-407f-9695-8460952bcc68',')
-    .skip(0)
-    .top(100)
-    .get();
+    .delete();
 
 ```
