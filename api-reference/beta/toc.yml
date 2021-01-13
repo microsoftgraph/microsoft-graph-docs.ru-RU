@@ -2621,7 +2621,7 @@ items:
                         href: api/intune-apps-mobileapprelationship-get.md
                   - name: Состояние связи мобильных приложений
                     href: resources/intune-apps-mobileapprelationshipstate.md
-                  - name: Тип связи мобильных приложений
+                  - name: Тип связи мобильного приложения
                     href: resources/intune-apps-mobileapprelationshiptype.md
                   - name: Переоценка мобильного приложения
                     href: resources/intune-apps-mobileappsupersedence.md
@@ -4487,7 +4487,7 @@ items:
                     href: resources/intune-deviceconfig-devicetypes.md
                   - name: Режим отправки диагностических данных
                     href: resources/intune-deviceconfig-diagnosticdatasubmissionmode.md
-                  - name: Группа Диффи Диффама
+                  - name: Группа Диффи Диффама (Diffieie)
                     href: resources/intune-deviceconfig-diffiehellmangroup.md
                   - name: Тип политики перечисления устройства защиты DMA
                     href: resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md
@@ -6922,7 +6922,7 @@ items:
                         href: api/intune-devices-devicehealthscriptrunsummary-update.md
                   - name: Строка параметра скрипта для состояния устройства
                     href: resources/intune-devices-devicehealthscriptstringparameter.md
-                  - name: Расписание скрипта для работы с состоянием устройства
+                  - name: Расписание сценария для работы с состоянием устройства
                     href: resources/intune-devices-devicehealthscripttimeschedule.md
                   - name: Запрос коллекции журналов устройств
                     href: resources/intune-devices-devicelogcollectionrequest.md
@@ -7841,7 +7841,7 @@ items:
                         href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-delete.md
                       - name: Обновление
                         href: api/intune-devices-userexperienceanalyticsapphealthappperformancebyappversion-update.md
-                  - name: Производительность приложения аналитики пользовательского интерфейса по версии
+                  - name: Производительность приложения анализа пользовательского интерфейса по версии
                     href: resources/intune-devices-userexperienceanalyticsapphealthappperformancebyosversion.md
                     items:
                       - name: Перечисление
@@ -8014,7 +8014,7 @@ items:
                         href: api/intune-devices-userexperienceanalyticsmetric-delete.md
                       - name: Обновление
                         href: api/intune-devices-userexperienceanalyticsmetric-update.md
-                  - name: История показателей аналитики пользовательского интерфейса
+                  - name: История метрик аналитики пользовательского интерфейса
                     href: resources/intune-devices-userexperienceanalyticsmetrichistory.md
                     items:
                       - name: Перечисление
@@ -8502,7 +8502,7 @@ items:
                     href: resources/intune-onboarding-compliancemanagementpartnerassignment.md
                   - name: Данные об управлении устройствами и приложениями
                     href: resources/intune-onboarding-deviceandappmanagementdata.md
-                  - name: Конфигурация полномочий для совместной управления устройствами
+                  - name: Конфигурация управления совместной управлением устройствами
                     href: resources/intune-onboarding-devicecomanagementauthorityconfiguration.md
                     items:
                       - name: Перечисление
@@ -8868,7 +8868,7 @@ items:
                         href: api/intune-shared-androidmanagedappprotection-update.md
                       - name: Действие hasPayloadLinks
                         href: api/intune-shared-androidmanagedappprotection-haspayloadlinks.md
-                  - name: Параметры назначения приложений управляемого магазина Android
+                  - name: Параметры назначения приложения управляемого магазина Android
                     href: resources/intune-shared-androidmanagedstoreappassignmentsettings.md
                   - name: Целевое хранилище сертификатов
                     href: resources/intune-shared-certificatedestinationstore.md
@@ -8878,13 +8878,13 @@ items:
                     href: resources/intune-shared-certificatevalidityperiodscale.md
                   - name: Действие на портале компании
                     href: resources/intune-shared-companyportalaction.md
-                  - name: 'Действия, заблокированные на портале компании'
+                  - name: Блокировка действия на портале компании
                     href: resources/intune-shared-companyportalblockedaction.md
                   - name: Состояние соответствия
                     href: resources/intune-shared-compliancestatus.md
                   - name: Тип фильтра назначений для управления устройствами и приложениями
                     href: resources/intune-shared-deviceandappmanagementassignmentfiltertype.md
-                  - name: Источник назначения управления устройствами и приложениями
+                  - name: Источник назначения для управления устройствами и приложениями
                     href: resources/intune-shared-deviceandappmanagementassignmentsource.md
                   - name: Объект назначения для управления устройствами и приложениями
                     href: resources/intune-shared-deviceandappmanagementassignmenttarget.md
@@ -9326,6 +9326,8 @@ items:
                     href: api/cloudpconpremisesconnection-delete.md
                   - name: Запуск проверок состояния
                     href: api/cloudpconpremisesconnection-runhealthcheck.md
+                  - name: Обновление пароля домена Active Directory
+                    href: api/cloudpconpremisesconnection-updateaddomainpassword.md
               - name: Политика предоставления облачных компьютеров
                 href: resources/cloudpcprovisioningpolicy.md
                 items:
@@ -10438,7 +10440,7 @@ items:
               - name: Защита идентификации
                 href: resources/identityprotection-root.md
                 items:
-                  - name: События риска идентификации (неподготовленные)
+                  - name: События риска для удостоверений (неподготовленные)
                     items:
                       - name: Событие риска для удостоверений
                         href: resources/identityriskevent.md
@@ -10530,7 +10532,7 @@ items:
                     href: api/organizationalbrandingpropertieslocalization-create.md
                   - name: Локализации
                     href: api/organizationalbrandingpropertieslocalization-get.md
-                  - name: Локализованное обновление
+                  - name: Обновление локализовано
                     href: api/organizationalbrandingpropertieslocalization-update.md
                   - name: Удаление локализованного
                     href: api/organizationalbrandingpropertieslocalization-delete.md
@@ -11954,7 +11956,7 @@ items:
                 href: resources/report-identity-access.md
               - name: Активность приложений AD FS
                 items:
-                  - name: Подробная сводка по считывамая информация о подавящей стороне
+                  - name: Подробная сводка по этой теме
                     href: resources/relyingpartydetailedsummary.md
                     items:
                       - name: Перечисление
@@ -11964,7 +11966,7 @@ items:
                   - name: Сводка по входу
                     href: resources/applicationsigninsummary.md
                     items:
-                      - name: Вывод сводки по входу
+                      - name: Сводка по входу
                         href: api/applicationsigninsummary-get.md
                   - name: Сведения о входе
                     href: resources/applicationsignindetailedsummary.md
@@ -12075,7 +12077,7 @@ items:
                     href: api/reportroot-getm365appusercounts.md
                   - name: Получить количество пользователей платформы
                     href: api/reportroot-getm365appplatformusercounts.md
-              - name: Действия в группах Microsoft 365
+              - name: Действия с группами Microsoft 365
                 href: resources/office-365-groups-activity-reports.md
                 items:
                   - name: Получение сведений о группе
@@ -12335,7 +12337,7 @@ items:
                     href: resources/emailfileassessmentrequest.md
                   - name: Запрос на оценку файла
                     href: resources/fileAssessmentRequest.md
-                  - name: Запрос на оценку URL-адреса
+                  - name: Запрос на оценку URL-адресов
                     href: resources/urlassessmentrequest.md
                   - name: Перечисление
                     href: api/informationprotection-list-threatassessmentrequests.md

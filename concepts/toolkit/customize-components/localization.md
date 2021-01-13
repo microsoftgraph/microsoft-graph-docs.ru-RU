@@ -1,26 +1,26 @@
 ---
-title: Локализация компонентов набор средств Microsoft Graph
-description: Используйте LocalizationHelper для локализации компонентов набор средств Microsoft Graph.
+title: Локализация компонентов Microsoft Graph Toolkit
+description: Используйте LocalizationHelper для локализации компонентов Microsoft Graph Toolkit.
 localization_priority: Normal
 author: vogtn
 ms.openlocfilehash: 3ac9f3fe5dedeb4e1793a589778242486f3b0070
 ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/11/2020
 ms.locfileid: "49660095"
 ---
-# <a name="localizing-the-microsoft-graph-toolkit-components"></a><span data-ttu-id="a009a-103">Локализация компонентов набор средств Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="a009a-103">Localizing the Microsoft Graph Toolkit components</span></span>
+# <a name="localizing-the-microsoft-graph-toolkit-components"></a><span data-ttu-id="b0b79-103">Локализация компонентов Microsoft Graph Toolkit</span><span class="sxs-lookup"><span data-stu-id="b0b79-103">Localizing the Microsoft Graph Toolkit components</span></span>
 
-<span data-ttu-id="a009a-104">Локализация является важным аспектом разработки приложений для поддержки пользователей с различными языковыми требованиями на глобальном уровне.</span><span class="sxs-lookup"><span data-stu-id="a009a-104">Localization is a important aspect of application development to support users with various language requirements globally.</span></span>
+<span data-ttu-id="b0b79-104">Локализация — это важный аспект разработки приложений для поддержки пользователей с разными языковыми требованиями по всему миру.</span><span class="sxs-lookup"><span data-stu-id="b0b79-104">Localization is a important aspect of application development to support users with various language requirements globally.</span></span>
 
-<span data-ttu-id="a009a-105">Вы можете локализовать компоненты набор средств Microsoft Graph, чтобы пользовательский интерфейс отображал целевой язык.</span><span class="sxs-lookup"><span data-stu-id="a009a-105">You can localize the Microsoft Graph Toolkit components to ensure that the UI reflects the target language.</span></span>
+<span data-ttu-id="b0b79-105">Чтобы пользовательский интерфейс отражал целевой язык, вы можете локализовать компоненты Microsoft Graph Toolkit.</span><span class="sxs-lookup"><span data-stu-id="b0b79-105">You can localize the Microsoft Graph Toolkit components to ensure that the UI reflects the target language.</span></span>
 
-## <a name="use-localizationhelper-to-add-localized-strings"></a><span data-ttu-id="a009a-106">Добавление локализованных строк с помощью LocalizationHelper</span><span class="sxs-lookup"><span data-stu-id="a009a-106">Use LocalizationHelper to add localized strings</span></span>
+## <a name="use-localizationhelper-to-add-localized-strings"></a><span data-ttu-id="b0b79-106">Использование LocalizationHelper для добавления локализованных строк</span><span class="sxs-lookup"><span data-stu-id="b0b79-106">Use LocalizationHelper to add localized strings</span></span>
 
-<span data-ttu-id="a009a-107">Все строки в наборе средств не локализованы, но вы можете предоставить собственные локализованные строки и управлять различными языками с помощью того же процесса, который вы используете для локализации приложения.</span><span class="sxs-lookup"><span data-stu-id="a009a-107">All strings in the toolkit are not localized, but you can provide your own localized strings and manage different languages through the same process you use for localizing your app.</span></span> <span data-ttu-id="a009a-108">Для упрощения локализации набор средств предоставляет `LocalizationHelper` статический класс.</span><span class="sxs-lookup"><span data-stu-id="a009a-108">To facilitate localization, the toolkit exposes the `LocalizationHelper` static class.</span></span>
+<span data-ttu-id="b0b79-107">В наборе средств Toolkit отсутствует локализация всех строк, но вы можете указывать собственные локализованные строки и управлять различными языками с помощью того же процесса, который применяется для локализации приложения.</span><span class="sxs-lookup"><span data-stu-id="b0b79-107">All strings in the toolkit are not localized, but you can provide your own localized strings and manage different languages through the same process you use for localizing your app.</span></span> <span data-ttu-id="b0b79-108">Чтобы облегчить локализацию, набор средств Toolkit предоставляет статический класс `LocalizationHelper`.</span><span class="sxs-lookup"><span data-stu-id="b0b79-108">To facilitate localization, the toolkit exposes the `LocalizationHelper` static class.</span></span>
 
-<span data-ttu-id="a009a-109">В следующем примере показано, как локализовать несколько компонентов.</span><span class="sxs-lookup"><span data-stu-id="a009a-109">The following example shows how to localize several components.</span></span>
+<span data-ttu-id="b0b79-109">В примере ниже показано, как локализовать несколько компонентов.</span><span class="sxs-lookup"><span data-stu-id="b0b79-109">The following example shows how to localize several components.</span></span>
 
 ```ts
 import { LocalizationHelper } from "@microsoft/mgt";
@@ -67,13 +67,13 @@ LocalizationHelper.strings = {
 };
 ```
 
-<span data-ttu-id="a009a-110">При присвоении свойства все компоненты автоматически получают новые строки и повторно отрисовку, что позволяет динамически `strings` изменять строки.</span><span class="sxs-lookup"><span data-stu-id="a009a-110">When the `strings` property is assigned, all components will automatically pick up the new strings and re-render, allowing you to change strings dynamically.</span></span> 
+<span data-ttu-id="b0b79-110">При назначении свойства `strings` все компоненты автоматически получат новые строки и для них будет выполнен повторный рендеринг, что позволяет динамически изменять строки.</span><span class="sxs-lookup"><span data-stu-id="b0b79-110">When the `strings` property is assigned, all components will automatically pick up the new strings and re-render, allowing you to change strings dynamically.</span></span> 
 
-<span data-ttu-id="a009a-111">Строки можно установить на глобальном уровне или для каждого компонента (с помощью `_components:` свойства).</span><span class="sxs-lookup"><span data-stu-id="a009a-111">The strings can be set at a global level or per component (with the `_components:` property).</span></span>
+<span data-ttu-id="b0b79-111">Строки можно задать на глобальном уровне или на уровне компонента (с помощью свойства `_components:`).</span><span class="sxs-lookup"><span data-stu-id="b0b79-111">The strings can be set at a global level or per component (with the `_components:` property).</span></span>
 
-## <a name="strings"></a><span data-ttu-id="a009a-112">Строки</span><span class="sxs-lookup"><span data-stu-id="a009a-112">Strings</span></span>
+## <a name="strings"></a><span data-ttu-id="b0b79-112">Строки</span><span class="sxs-lookup"><span data-stu-id="b0b79-112">Strings</span></span>
 
-### <a name="login"></a><span data-ttu-id="a009a-113">Вход</span><span class="sxs-lookup"><span data-stu-id="a009a-113">Login</span></span>
+### <a name="login"></a><span data-ttu-id="b0b79-113">Вход</span><span class="sxs-lookup"><span data-stu-id="b0b79-113">Login</span></span>
 
 ```ts
 {
@@ -82,7 +82,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="people-picker"></a><span data-ttu-id="a009a-114">Выбор людей</span><span class="sxs-lookup"><span data-stu-id="a009a-114">People-Picker</span></span>
+### <a name="people-picker"></a><span data-ttu-id="b0b79-114">Выбор людей</span><span class="sxs-lookup"><span data-stu-id="b0b79-114">People-Picker</span></span>
 
 ```ts
 {
@@ -92,7 +92,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="teams-channel-picker"></a><span data-ttu-id="a009a-115">Teams-Channel-Picker</span><span class="sxs-lookup"><span data-stu-id="a009a-115">Teams-Channel-Picker</span></span>
+### <a name="teams-channel-picker"></a><span data-ttu-id="b0b79-115">Средство выбора каналов Teams</span><span class="sxs-lookup"><span data-stu-id="b0b79-115">Teams-Channel-Picker</span></span>
 
 ```ts
 {
@@ -102,7 +102,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="tasks"></a><span data-ttu-id="a009a-116">Задачи</span><span class="sxs-lookup"><span data-stu-id="a009a-116">Tasks</span></span>
+### <a name="tasks"></a><span data-ttu-id="b0b79-116">Задачи</span><span class="sxs-lookup"><span data-stu-id="b0b79-116">Tasks</span></span>
 
 ```ts
 {
@@ -113,7 +113,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="tasks-base"></a><span data-ttu-id="a009a-117">Tasks-Base</span><span class="sxs-lookup"><span data-stu-id="a009a-117">Tasks-Base</span></span>
+### <a name="tasks-base"></a><span data-ttu-id="b0b79-117">Основные задачи</span><span class="sxs-lookup"><span data-stu-id="b0b79-117">Tasks-Base</span></span>
 
 ```ts
 {
@@ -124,7 +124,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="todo"></a><span data-ttu-id="a009a-118">Todo</span><span class="sxs-lookup"><span data-stu-id="a009a-118">Todo</span></span>
+### <a name="todo"></a><span data-ttu-id="b0b79-118">To Do</span><span class="sxs-lookup"><span data-stu-id="b0b79-118">Todo</span></span>
 
 ```ts
 {
@@ -135,7 +135,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="person-card"></a><span data-ttu-id="a009a-119">Карточка контакта</span><span class="sxs-lookup"><span data-stu-id="a009a-119">Person-Card</span></span>
+### <a name="person-card"></a><span data-ttu-id="b0b79-119">Карточка контакта</span><span class="sxs-lookup"><span data-stu-id="b0b79-119">Person-Card</span></span>
 
 ```ts
 {
@@ -145,7 +145,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="person-card-contact"></a><span data-ttu-id="a009a-120">Person-Card-Contact</span><span class="sxs-lookup"><span data-stu-id="a009a-120">Person-Card-Contact</span></span>
+### <a name="person-card-contact"></a><span data-ttu-id="b0b79-120">Контактные данные карточки контакта</span><span class="sxs-lookup"><span data-stu-id="b0b79-120">Person-Card-Contact</span></span>
 
 ```ts
 {
@@ -153,7 +153,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="person-card-organization"></a><span data-ttu-id="a009a-121">Person-Card-Organization</span><span class="sxs-lookup"><span data-stu-id="a009a-121">Person-Card-Organization</span></span>
+### <a name="person-card-organization"></a><span data-ttu-id="b0b79-121">Организация карточки контакта</span><span class="sxs-lookup"><span data-stu-id="b0b79-121">Person-Card-Organization</span></span>
 
 ```ts
 {
@@ -165,7 +165,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="person-card-messages"></a><span data-ttu-id="a009a-122">Person-Card-Messages</span><span class="sxs-lookup"><span data-stu-id="a009a-122">Person-Card-Messages</span></span>
+### <a name="person-card-messages"></a><span data-ttu-id="b0b79-122">Сообщения карточки контакта</span><span class="sxs-lookup"><span data-stu-id="b0b79-122">Person-Card-Messages</span></span>
 
 ```ts
 {
@@ -173,7 +173,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="person-card-files"></a><span data-ttu-id="a009a-123">Person-Card-Files</span><span class="sxs-lookup"><span data-stu-id="a009a-123">Person-Card-Files</span></span>
+### <a name="person-card-files"></a><span data-ttu-id="b0b79-123">Файлы карточки контакта</span><span class="sxs-lookup"><span data-stu-id="b0b79-123">Person-Card-Files</span></span>
 
 ```ts
 {
@@ -182,7 +182,7 @@ LocalizationHelper.strings = {
 }
 ```
 
-### <a name="person-card-profile"></a><span data-ttu-id="a009a-124">Person-Card-Profile</span><span class="sxs-lookup"><span data-stu-id="a009a-124">Person-Card-Profile</span></span>
+### <a name="person-card-profile"></a><span data-ttu-id="b0b79-124">Профиль карточки контакта</span><span class="sxs-lookup"><span data-stu-id="b0b79-124">Person-Card-Profile</span></span>
 
 ```ts
 {
