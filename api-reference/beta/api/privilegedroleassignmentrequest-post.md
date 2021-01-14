@@ -1,31 +1,31 @@
 ---
-title: Создание Привилежедролеассигнментрекуест
-description: Создание объекта привилежедролеассигнментрекуест.
+title: Создание privilegedRoleAssignmentRequest
+description: Создание объекта privilegedroleassignmentrequest.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: f0405644cd2b7aebe71cef7f0594f8c5ec351e3e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 771edf9d102a890214156df43791be42a47b14dd
+ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48976215"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49866175"
 ---
-# <a name="create-privilegedroleassignmentrequest"></a>Создание Привилежедролеассигнментрекуест
+# <a name="create-privilegedroleassignmentrequest"></a>Создание privilegedRoleAssignmentRequest
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md) .
+Создание объекта [privilegedroleassignmentrequest.](../resources/privilegedroleassignmentrequest.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. AzureAD, Directory. AccessAsUser. ALL    |
+|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
@@ -41,39 +41,39 @@ POST /privilegedRoleAssignmentRequests
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md) в формате JSON. 
+В теле запроса укажу представление объекта [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) в JSON. 
 
 | Свойство     | Тип    |  Описание|
 |:---------------|:--------|:----------|
-|roleId|String|Идентификатор роли. Обязательное.|
-|type|String|Представляет тип операции для назначения роли. Возможные значения `AdminAdd` : администраторы добавляют пользователей к ролям; `UserAdd` : пользователи добавляют назначения ролей. Обязательный.|
-|ассигнментстате|String|Состояние назначения. Значение может быть `Eligible` для правого назначения `Active` , если оно напрямую назначено `Active` администраторами или активировано в соответствии с подходящими пользователями. Возможные значения: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Обязательный.|
-|reason|String|Необходимо указать причину для запроса на назначение роли для аудита и проверки.|
+|roleId|String|ИД роли. Обязательное.|
+|type|String|Представляет тип операции для назначения роли. Значением может `AdminAdd` быть: Администраторы добавляют пользователей к ролям; `UserAdd` : пользователи добавляют назначения ролей. Обязательный.|
+|assignmentState|String|Состояние назначения. Это значение может быть присвоено в случае, если оно напрямую назначено администраторами или активировано для соответствующих назначений `Eligible` `Active` `Active` пользователями. Возможные значения: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Обязательный.|
+|reason|String|Причина должна быть предоставлена для запроса на назначение роли для целей аудита и проверки.|
 |schedule|[governanceSchedule](../resources/governanceschedule.md)|Расписание запроса на назначение роли.|
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и объект `201 Created` [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в тексте отклика.
 
 ### <a name="error-codes"></a>Коды ошибок
-Этот API возвращает стандартные коды ошибок HTTP. Кроме того, он может возвращать коды ошибок, приведенные в следующей таблице.
+Этот API возвращает стандартные коды ошибок HTTP. Кроме того, он может возвращать коды ошибок, перечисленные в следующей таблице.
 
 |Код ошибки     | Сообщение об ошибке              | 
 |:--------------------| :---------------------|
-| 400 Бадрекуест | Свойство Ролеассигнментрекуест имеет значение NULL |
-| 400 Бадрекуест | Не удается десериализовать объект Ролеассигнментрекуест. |
-| 400 Бадрекуест | RoleId является обязательным. |
-| 400 Бадрекуест | Дата начала расписания должна быть указана и должна быть больше, чем сейчас. |
-| 400 Бадрекуест | Расписание для этого пользователя, роли и типа расписания уже существует. |
-| 400 Бадрекуест | Для этого пользователя, роли и типа утверждения уже существует ожидающее утверждение. |
-| 400 Бадрекуест | Не указана причина запрашивающей стороны. |
-| 400 Бадрекуест | Срок запрашивающего не должен быть меньше 500 символов. |
-| 400 Бадрекуест | Длительность возвышения должна быть между 0,5 и {from Setting}. |
-| 400 Бадрекуест | Между запланированной активацией и запросом существует перекрытие. |
-| 400 Бадрекуест | Роль уже активирована. |
-| 400 Бадрекуест | Женерицелеватеусерторолеассигнментс: Тикктинг сведения являются обязательными и не предоставляются в процессе активации. |
-| 400 Бадрекуест | Между запланированной активацией и запросом существует перекрытие. |
-| 403 авторизация | Для повышения требуется многофакторная проверка подлинности. |
-| 403 авторизация | От имени повышения прав не разрешено. |
+| 400 BadRequest | Свойство RoleAssignmentRequest было NULL |
+| 400 BadRequest | Не удается десериализировать объект roleAssignmentRequest. |
+| 400 BadRequest | Требуется RoleId. |
+| 400 BadRequest | Дата начала расписания должна быть указана и должна быть больше, чем сейчас. |
+| 400 BadRequest | Для этого пользователя, роли и типа расписания уже существует расписание. |
+| 400 BadRequest | Для этого пользователя, роли и типа утверждения уже существует ожидающих утверждения. |
+| 400 BadRequest | Отсутствует причина запросителя. |
+| 400 BadRequest | Причина запросителя не должна быть меньше 500 символов. |
+| 400 BadRequest | Длительность повышения прав должна быть от 0,5 до {from setting}. |
+| 400 BadRequest | Между запланированной активацией и запросом существует перекрытие. |
+| 400 BadRequest | Роль уже активирована. |
+| 400 BadRequest | GenericElevateUserToRoleAssignments: сведения о тактах являются обязательной и не дается в процессе активации. |
+| 400 BadRequest | Между запланированной активацией и запросом существует перекрытие. |
+| 403 UnAuthorized | Повышение прав требует многофакторной проверки подлинности. |
+| 403 UnAuthorized | От имени не допускается повышение прав. |
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -96,7 +96,6 @@ Content-type: application/json
     "schedule": {
         "startDateTime": "2018-02-08T02:35:17.903Z"
     },
-    "evaluateOnly": false,
     "type": "UserAdd",
     "assignmentState": "Active",
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
@@ -142,7 +141,6 @@ Content-length: 304
         "duration" : null
     },
     "id": "e13ef8a0-c1cb-4d03-aaae-9cd1c8ede2d1",
-    "evaluateOnly": false,
     "type": "UserAdd",
     "assignmentState": "Active",
     "requestedDateTime": "2018-02-08T02:35:42.9137335Z",

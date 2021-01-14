@@ -5,12 +5,12 @@ author: svpsiva
 localization_priority: Priority
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 37da524ac2143cf45dec391af159581ce66a23ed
-ms.sourcegitcommit: be796d6a7ae62f052c381d20207545f057b184d9
+ms.openlocfilehash: 07020370fe2998777f9df77555c0b23eb9176135
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48457718"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844083"
 ---
 # <a name="get-message"></a>Вывод сообщения
 
@@ -18,7 +18,7 @@ ms.locfileid: "48457718"
 
 Получение свойств и связей объекта [message](../resources/message.md).
 
-Вы можете использовать параметр `$value`, чтобы [получить MIME-содержимое сообщения](/graph/outlook-get-mime-message).
+Вы можете использовать параметр `$value`, чтобы [получить MIME-содержимое сообщения](/graph/outlook-get-mime-message). Также см. [пример](#example-4-get-mime-content) ниже.
 
 Существует два сценария, когда приложение может получить сообщение из папки почты другого пользователя:
 
@@ -67,7 +67,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Prefer: outlook.body-content-type | string | Формат возвращаемых свойств **body** и **uniqueBody**. Возможные значения: "text" или "html". Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан. Если заголовок не указан, свойства **body** и **uniqueBody** возвращаются в формате HTML. Необязательный параметр. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -78,7 +78,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value
 
 
 ## <a name="examples"></a>Примеры
-### <a name="example-1"></a>Пример 1
+### <a name="example-1-get-a-specific-message"></a>Пример 1. Получение определенного сообщения
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -185,7 +185,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2"></a>Пример 2
+### <a name="example-2-get-internet-message-headers"></a>Пример 2. Получение заголовков сообщений Интернета
 #### <a name="request"></a>Запрос
 В следующем примере используется параметр запроса `$select` для получения заголовков сообщений Интернета для сообщения. 
 
@@ -253,7 +253,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-3"></a>Пример 3
+### <a name="example-3-get-message-body-in-text-format"></a>Пример 3. Получение текста сообщения в текстовом формате
 #### <a name="request"></a>Запрос
 
 В третьем примере показано, как использовать заголовок `Prefer: outlook.body-content-type="text"`, чтобы получить свойства **body** и **uniqueBody** указанного сообщения в текстовом формате.
@@ -319,7 +319,7 @@ Preference-Applied: outlook.body-content-type="text"
 }
 ```
 
-### <a name="example-4"></a>Пример 4
+### <a name="example-4-get-mime-content"></a>Пример 4. Получение содержимого MIME
 #### <a name="request"></a>Запрос
 В четвертом примере показано, как получить MIME-содержимое сообщения в почтовом ящике пользователя, выполнившего вход.
 

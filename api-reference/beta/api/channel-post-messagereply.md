@@ -5,12 +5,12 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: c45aa4e0d3471d074dc0e15d89fad1a4311d5b40
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 3f284cacc4e41498a4cc011e98ed9f60898dcc20
+ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48959112"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49866148"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>Ответ на сообщение в канале
 
@@ -18,11 +18,11 @@ ms.locfileid: "48959112"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового ответа на [chatMessage](../resources/chatmessage.md) в указанном [канале](../resources/channel.md).
+Создайте новый ответ [на chatMessage](../resources/chatmessage.md) в указанном [канале.](../resources/channel.md)
 
-> **Note** : мы не рекомендуем использовать этот API для переноса данных. Пропускная способность, необходимая для обычной миграции, отсутствует.
+> **Примечание.** Мы не рекомендуем использовать этот API для переноса данных. Пропускная способность, необходимая для обычной миграции, не существует.
 
-> **Note** : нарушение [условий использования](/legal/microsoft-apis/terms-of-use) Microsoft Teams в качестве файла журнала. Отправлять только сообщения, которые пользователи смогут читать.
+> **Примечание.** Это нарушение условий использования Microsoft Teams в качестве файла журнала. [](/legal/microsoft-apis/terms-of-use) Отправлять только сообщения, которые люди будут читать.
 <!-- markdownlint-disable MD024 -->
 <!-- markdownlint-disable MD022 -->
 <!-- markdownlint-disable MD025 -->
@@ -33,7 +33,7 @@ ms.locfileid: "48959112"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Чаннелмессаже. Send, Group. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | ChannelMessage.Send, Group.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Teamwork.Migrate.All |
 
@@ -49,15 +49,15 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Message](../resources/chatmessage.md) в формате JSON. Только свойство Body является обязательным, другие свойства являются необязательными.
+В тексте запроса укажу представление объекта [сообщения](../resources/chatmessage.md) в JSON. Только свойство body является обязательным, другие свойства являются необязательными.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика с созданным [сообщением](../resources/chatmessage.md) .
+В случае успеха этот метод возвращает `201 Created` код ответа с созданным сообщением. [](../resources/chatmessage.md)
 
-## <a name="example-1-create-a-new-reply-to-a-chatmessage"></a>Пример 1: создание нового ответа на chatMessage
+## <a name="example-1-create-a-new-reply-to-a-chatmessage"></a>Пример 1. Создание ответа на chatMessage
 
-Более полный список примеров приведен [в статье Создание chatMessage в канале или чате](chatmessage-post.md).
+Более полный список примеров см. в примере [создания chatMessage в канале или чате.](chatmessage-post.md)
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -147,14 +147,19 @@ Content-length: 160
 }
 ```
 
-### <a name="example-2-import-messages"></a>Пример 2: Импорт сообщений
+### <a name="example-2-import-messages"></a>Пример 2. Импорт сообщений
 
-> **Примечание**. `Teamwork.Migrate.All` для этого сценария необходимо указать область разрешений.
+> **Примечание.** Для этого сценария `Teamwork.Migrate.All` требуется область разрешений.
 
 #### <a name="request"></a>Запрос
-<!-- { "blockType": "ignored" } -->
-В приведенном ниже примере показано, как импортировать фоновые сообщения с помощью `createDateTime` ключей и `from` в теле запроса.
 
+В следующем примере покажите, как импортировать сообщения времени назад с помощью ключей и ключей `createDateTime` `from` в тексте запроса.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
 ```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies
 
@@ -199,7 +204,6 @@ POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messag
   "truncated": true,
   "@odata.type": "microsoft.graph.chatMessage"
 } -->
-
 ```http
 HTTP/1.1 200 OK
 
