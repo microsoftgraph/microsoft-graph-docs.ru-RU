@@ -1,22 +1,22 @@
 ---
-title: 'Приложение: Ремовепассворд'
+title: 'application: removePassword'
 description: Удаление пароля из приложения
 localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 3b38007e3482e5cd35bf239deb8a6a823c99702e
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 8975218208dc2dc7c6e23b8763d9dd796273143e
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47968299"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844760"
 ---
-# <a name="application-removepassword"></a>Приложение: Ремовепассворд
+# <a name="application-removepassword"></a>application: removePassword
 
 Пространство имен: microsoft.graph
 
-Удаление пароля из [приложения](../resources/application.md).
+Удалите пароль из [приложения.](../resources/application.md)
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "47968299"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Application. ReadWrite. ALL, Directory. AccessAsUser. ALL |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись)     | Application.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All |
+| Приложение                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -47,7 +47,7 @@ POST /applications/{id}/removePassword
 
 | Свойство  | Тип | Описание|
 |:----------|:-----|:-----------|
-| Него значение KeyID     | GUID | Уникальный идентификатор пароля. Обязательный. |
+| keyId     | GUID | Уникальный идентификатор пароля. Обязательный. |
 
 ## <a name="response"></a>Отклик
 
@@ -55,7 +55,7 @@ POST /applications/{id}/removePassword
 
 ## <a name="examples"></a>Примеры
 
-В приведенном ниже примере показано, как вызывать этот API.
+Ниже показано, как вызвать этот API.
 
 ### <a name="request"></a>Запрос
 

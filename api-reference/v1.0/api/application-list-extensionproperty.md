@@ -1,22 +1,22 @@
 ---
-title: Список Екстенсионпропертиес
-description: Получение списка объектов екстенсионпроперти.
+title: List extensionProperties
+description: Получить список объектов extensionproperty.
 localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: c6b8445f0cbcc36046bb71572014756c992c3fe6
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 814c465dc0479dbe70dd23c7177a6b0bdbd0e0f2
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966505"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844685"
 ---
-# <a name="list-extensionproperties"></a>Список Екстенсионпропертиес
+# <a name="list-extensionproperties"></a>List extensionProperties
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов [екстенсионпроперти](../resources/extensionproperty.md) в приложении.
+Получение списка объектов [extensionProperty](../resources/extensionproperty.md) в приложении.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "47966505"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application. Read. ALL, Application. ReadWrite. ALL, Directory. Read. ALL |
+|Делегированное (рабочая или учебная учетная запись) | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
+|Делегированные (личная учетная запись Майкрософт) | Application.Read.All, Application.ReadWrite.All |
+|Приложение | Application.Read.All, Application.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,13 +46,13 @@ GET /applications/{id}/extensionProperties
 |:-----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [екстенсионпроперти](../resources/extensionproperty.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [extensionProperty](../resources/extensionproperty.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

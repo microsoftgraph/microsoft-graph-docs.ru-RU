@@ -1,22 +1,22 @@
 ---
-title: Удаление Екстенсионпроперти
-description: Удаление Екстенсионпроперти.
+title: Удаление extensionProperty
+description: Удаление extensionProperty.
 localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 0802969409d009e833500aa17ba3618442bef9ec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 08a4cbd6478edb4a24d9e26318c8becef3e0f92c
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47992820"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844636"
 ---
-# <a name="delete-extensionproperty"></a>Удаление Екстенсионпроперти
+# <a name="delete-extensionproperty"></a>Удаление extensionProperty
 
 Пространство имен: microsoft.graph
 
-Удаление [екстенсионпроперти](../resources/extensionproperty.md).
+Удаление [extensionProperty](../resources/extensionproperty.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "47992820"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Application. ReadWrite. ALL, Directory. AccessAsUser. ALL    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All |
+|Приложение | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ DELETE /applications/{id}/extensionProperties/{id}
 |:-----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 

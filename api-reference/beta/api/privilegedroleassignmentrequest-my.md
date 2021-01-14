@@ -1,32 +1,32 @@
 ---
-title: 'Привилежедролеассигнментрекуест: My'
-description: Получение запросов на назначение привилегированных ролей инициатора запроса.
+title: 'privilegedRoleAssignmentRequest: my'
+description: Получите запросы на назначение привилегированной роли запрашиваемой роли.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: shauliu
-ms.openlocfilehash: 6258782668d473290e68c47c1beab9bd4d885c31
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 32770cf5f08444a81336d7812f3b0eecf6fe79c5
+ms.sourcegitcommit: dbbf77c732ae8d982e59865432b9b6147002a30a
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48971529"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49866244"
 ---
-# <a name="privilegedroleassignmentrequest-my"></a>Привилежедролеассигнментрекуест: My
+# <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest: my
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение запросов на назначение привилегированных ролей инициатора запроса.
+Получите запросы на назначение привилегированной роли запрашиваемой роли.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. AzureAD, Directory. Read. ALL, Directory. AccessAsUser. ALL    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
+|Делегированное (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All, Directory.AccessAsUser.All    |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -46,7 +46,7 @@ POST /privilegedRoleAssignmentRequests/my
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект коллекции [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код отклика и объект `200 OK` [коллекции privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -104,7 +104,6 @@ Content-length: 304
         "id": "e13ef8a0-c1cb-4d03-aaae-9cd1c8ede2d1",
          "userId": "Self",
          "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
-        "evaluateOnly": false,
         "type": "UserAdd",
         "assignmentState": "Active",
         "requestedDateTime": "2018-02-08T02:35:42.9137335Z",
@@ -128,7 +127,6 @@ Content-length: 304
         "id": "03ea0c3d-90a0-42d4-b220-11c049c506fb",
         "userId": "Self",
         "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
-        "evaluateOnly": false,
         "type": "UserAdd",
         "assignmentState": "Active",
         "requestedDateTime": "2018-02-07T22:17:37.2215343Z",

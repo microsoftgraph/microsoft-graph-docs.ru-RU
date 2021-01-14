@@ -5,12 +5,12 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 doc_type: conceptualPageType
-ms.openlocfilehash: 5cfe3789fc760fa049c4a1c90c0e3498b1ee44f2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 769a7999d50c06468539e220dbaec34258666547
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48083087"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844643"
 ---
 # <a name="use-the-outlook-mail-rest-api"></a>Использование REST API почты Outlook
 
@@ -59,7 +59,7 @@ GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 | Упорядочивание сообщений в иерархии папок почты | [mailFolder](../resources/mailfolder.md)  | [Методы ресурса mailFolder](../resources/mailfolder.md#methods) |
 | Классификация сообщений | [outlookCategory](../resources/outlookcategory.md) | [Методы ресурса outlookCategory](../resources/outlookcategory.md#methods) |
 | Автоматизация действий, например пересылка определенных входящих сообщений, с помощью правил папки "Входящие" | [messageRule](../resources/messagerule.md) | [Методы ресурса messageRule](../resources/messagerule.md#methods) |
-| Получение заголовков сообщений Интернета для сообщения | [message](../resources/message.md) | [Получение свойства **internetMessageHeaders** сообщения](../api/message-get.md#example-2). |
+| Получение заголовков сообщений Интернета для сообщения | [message](../resources/message.md) | [Получение свойства **internetMessageHeaders** сообщения](../api/message-get.md#example-2-get-internet-message-headers). |
 | Поиск и фильтрация сообщений | [message](../resources/message.md) | [Параметры запроса](/graph/query-parameters)  |
 | Получение уведомлений об изменениях сообщений в папке | [subscription](../resources/subscription.md) | [Работа с веб-перехватчиками в Microsoft Graph](../resources/webhooks.md) |
 | Синхронизация сообщений или иерархии папок почты | [message](../resources/message.md) | [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages) |

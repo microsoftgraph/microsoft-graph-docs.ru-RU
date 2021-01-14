@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b5187400e0881c865051522adda0398f2bac15ec
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: f375f3ce509670159fcd7f5fd62bdc5f7f6c6bb0
+ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47966389"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49844818"
 ---
 # <a name="create-application"></a>Создание приложения
 
@@ -28,8 +28,8 @@ ms.locfileid: "47966389"
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application.ReadWrite.All, Application.ReadWrite.OwnedBy |
+|Делегированные (личная учетная запись Майкрософт) | Application.ReadWrite.All |
+|Приложение | Application.ReadWrite.All, Application.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
