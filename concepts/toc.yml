@@ -385,7 +385,7 @@ items:
           - name: Лицензии для подписки на сообщения чата
             href: teams-licenses.md
           - name: Отправка упреждающих сообщений с помощью бота
-            href: teams-proactive-messaging.md
+            href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
           - name: Отправка уведомлений веб-канала активности
             href: teams-send-activityfeednotifications.md
       - name: Задачи To-Do
