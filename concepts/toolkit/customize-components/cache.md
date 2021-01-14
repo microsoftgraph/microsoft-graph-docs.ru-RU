@@ -1,26 +1,26 @@
 ---
-title: Кэш набор средств Microsoft Graph
-description: Объяснить, как работает кэш и как настроить параметры, предоставляемые разработчикам
+title: Кэширование Microsoft Graph Toolkit
+description: В этой статье объясняется, как работает кэширование и как настроить параметры для разработчиков
 localization_priority: Normal
 author: adchau
 ms.openlocfilehash: f51b4f188fe8ec70f75a50e1d9de049459c97e14
 ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 12/11/2020
 ms.locfileid: "49658710"
 ---
-# <a name="microsoft-graph-toolkit-caching"></a>Кэш набор средств Microsoft Graph
+# <a name="microsoft-graph-toolkit-caching"></a>Кэширование Microsoft Graph Toolkit
 
-Microsoft Graph набор средств кэшировать выбранные вызовы API Microsoft Graph. В настоящее время вызовы конечных точек пользователей, пользователей, контактов и фотографий кэшются по умолчанию в трех хранилищах IndexedDB.
+Microsoft Graph Toolkit поддерживает кэширование выбранных вызовов API Microsoft Graph. В настоящее время вызовы конечных точек пользователей, человека, контакта и фотографии кэшируются по умолчанию в трех хранилищах IndexedDB.
 
-Кэш можно просмотреть на панели разработчика. На **вкладке "Приложение"** в **области** хранилища перейдите на вкладку **IndexedDB.**
+Вы можете просмотреть кэш на панели разработчика. С вкладки **Приложение** в области **Хранилище** перейдите на вкладку **IndexedDB**.
 
-![devtools indexedDB](../images/indexedDBpanel.png)
+![средства разработчика indexedDB](../images/indexedDBpanel.png)
 
 ## <a name="cache-configuration"></a>Конфигурация кэша
 
-Считывать и записывать параметры кэша можно с помощью объекта статического `CacheService.config` класса. Он отформатирован, как показано ниже.
+Вы можете читать и записывать параметры кэша с помощью объекта статического класса `CacheService.config`. Он форматируется, как показано.
 
 ```TypeScript
 let config = {
@@ -49,21 +49,21 @@ let config = {
 };
 ```
 
-Отдельные периоды недействительности кэша по умолчанию задействуются в объекте config и по умолчанию имеют общее значение `null` `defaultInvalidationPeriod` 3 600 000 мс (60 минут). Все переданные значения `config.x.invalidationPeriod` будут переопределяться. `defaultInvalidationPeriod`
+Для отдельных периодов недействительности кэша в объекте конфигурации по умолчанию задано значение `null`, а общее значение по умолчанию для `defaultInvalidationPeriod` составляет 3 600 000 мс (60 минут). Любое значение, переданное в `config.x.invalidationPeriod`, переопределяет `defaultInvalidationPeriod`.
 
-Единственное исключение — хранилище присутствия, значение по умолчанию — 30 000 мс или 5 минут.
+Единственным исключением является хранилище присутствия со значением по умолчанию 300 000 мс, или 5 минут.
 
 ### <a name="examples"></a>Примеры
 
-Чтобы отключить отдельный магазин, просто установите для свойств config этого магазина значение `isEnabled` false:
+Чтобы отключить хранилище, просто задайте для `isEnabled` в свойствах конфигурации хранилища значение false:
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';
 
 CacheService.config.users.isEnabled = false;
 ```
-Отключение кэша **не очищает** кэш.
+Отключение кэша **не** очищает кэш.
 
-Изменение периода оценки аналогично:
+Аналогичным образом можно изменить период недействительности:
 
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';
@@ -73,9 +73,9 @@ CacheService.config.users.invalidationPeriod = 1800000;
 
 ## <a name="clearing-the-cache"></a>Очистка кэша
 
-Кэш автоматически очищается при выходе пользователя. Его также можно очистить вручную.
+Кэш автоматически очищается, когда пользователь выходит. Его также можно очистить вручную.
 
-При очистке всех хранилищ в кэше метод класса очищает все хранилища, поддерживаемые `clearCaches()` `CacheService` службой CacheService.
+Чтобы очистить все хранилища в кэше, обслуживаемые CacheService, используется метод `clearCaches()` класса `CacheService`.
 
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';
@@ -85,14 +85,14 @@ CacheService.clearCaches();
 
 ## <a name="creating-your-own-cache-stores"></a>Создание собственных хранилищ кэша
 
-Если вы хотите создать и заполнить собственные хранилища кэша для настраиваемого компонента, можно использовать `CacheService` статический класс.
+Если вы хотите создать и заполнить собственные хранилища кэша для настраиваемых компонентов, можно использовать статический класс `CacheService`.
 
 ```JavaScript
 CacheService.getCache(schema: CacheSchema, storeName: String);
 ```
-> **Примечание.** Ссылка в вызове должна соответствовать одному из хранилищ, `storeName` `getCache()` указанных в `CacheSchema` объекте.
+> **Примечание.** Объект `storeName`, на который вы ссылаетесь в вызове `getCache()`, должен соответствовать одному из хранилищ, перечисленных в объекте `CacheSchema`.
 
-Объект `CacheSchema` — это словарь с парами "ключ-значение".
+Объект `CacheSchema` является словарем с парами "ключ-значение".
 
 ```TypeScript
 import { CacheSchema } from '@microsoft/mgt';
@@ -107,7 +107,7 @@ const cacheSchema: CacheSchema = {
 };
 ```
 
-В следующем примере показана реализация кэша.
+В примере ниже показана реализация кэша.
 
 ```TypeScript
 import { CacheItem, CacheSchema, CacheService, CacheStore } from '@microsoft/mgt';
