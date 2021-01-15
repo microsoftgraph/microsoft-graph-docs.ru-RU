@@ -5,34 +5,34 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1d838d2a10049fa014638af0eb4a49fcbf17e3f6
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 346db0f1085190252b2bb8e48dcfcb8adfc23f61
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720335"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872368"
 ---
-# <a name="list-onsignupstart-listeners"></a><span data-ttu-id="2f4ad-103">Список прослушивателей onSignUpStart</span><span class="sxs-lookup"><span data-stu-id="2f4ad-103">List onSignUpStart listeners</span></span>
+# <a name="list-onsignupstart-listeners"></a><span data-ttu-id="da2f2-103">Список прослушивателей onSignUpStart</span><span class="sxs-lookup"><span data-stu-id="da2f2-103">List onSignUpStart listeners</span></span>
 
-<span data-ttu-id="2f4ad-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="2f4ad-104">Namespace: microsoft.graph</span></span>
+<span data-ttu-id="da2f2-104">Пространство имен: microsoft.graph</span><span class="sxs-lookup"><span data-stu-id="da2f2-104">Namespace: microsoft.graph</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2f4ad-105">Получите коллекцию ресурсов authenticationListener, поддерживаемых событием onSignupStart.</span><span class="sxs-lookup"><span data-stu-id="2f4ad-105">Get the collection of authenticationListener resources supported by the onSignupStart event.</span></span> <span data-ttu-id="2f4ad-106">Событие onSignUpStart поддерживает тип [invokeUserFlowListener.](../resources/invokeuserflowlistener.md)</span><span class="sxs-lookup"><span data-stu-id="2f4ad-106">The onSignUpStart event supports the [invokeUserFlowListener](../resources/invokeuserflowlistener.md) type.</span></span>
+<span data-ttu-id="da2f2-105">Получите коллекцию ресурсов authenticationListener, поддерживаемых событием onSignupStart.</span><span class="sxs-lookup"><span data-stu-id="da2f2-105">Get the collection of authenticationListener resources supported by the onSignupStart event.</span></span> <span data-ttu-id="da2f2-106">Событие onSignUpStart поддерживает тип [invokeUserFlowListener.](../resources/invokeuserflowlistener.md)</span><span class="sxs-lookup"><span data-stu-id="da2f2-106">The onSignUpStart event supports the [invokeUserFlowListener](../resources/invokeuserflowlistener.md) type.</span></span>
 
-<span data-ttu-id="2f4ad-107">Когда [invokeUserFlowListener](../resources/invokeuserflowlistener.md) назначен событию onSignUpStart, приложение связано с пользовательским потоком, [](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) что позволяет самостоятельно зарегистрироваться в нем.</span><span class="sxs-lookup"><span data-stu-id="2f4ad-107">When an [invokeUserFlowListener](../resources/invokeuserflowlistener.md) is assigned to an onSignUpStart event, an application is associated with a user flow, therefore enabling a [self-service sign up](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) process on it.</span></span> <span data-ttu-id="2f4ad-108">После создания события проверки подлинности для создания пользовательского потока пользователи, которые перейдут к этому приложению, смогут инициировать процесс регистрации, который создает гостевую учетную запись.</span><span class="sxs-lookup"><span data-stu-id="2f4ad-108">Once the authentication event for invoking a user flow is created, users who go to that application will be able to initiate a sign-up flow that provisions a guest account.</span></span>
+<span data-ttu-id="da2f2-107">Когда [invokeUserFlowListener](../resources/invokeuserflowlistener.md) назначен событию onSignUpStart, приложение связано с пользовательским потоком, [](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) что позволяет самостоятельно зарегистрироваться в нем.</span><span class="sxs-lookup"><span data-stu-id="da2f2-107">When an [invokeUserFlowListener](../resources/invokeuserflowlistener.md) is assigned to an onSignUpStart event, an application is associated with a user flow, therefore enabling a [self-service sign up](https://docs.microsoft.com/azure/active-directory/external-identities/self-service-sign-up-overview) process on it.</span></span> <span data-ttu-id="da2f2-108">После создания события проверки подлинности для создания пользовательского потока пользователи, которые перейдут к этому приложению, смогут инициировать процесс регистрации, который создает гостевую учетную запись.</span><span class="sxs-lookup"><span data-stu-id="da2f2-108">Once the authentication event for invoking a user flow is created, users who go to that application will be able to initiate a sign-up flow that provisions a guest account.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2f4ad-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2f4ad-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="da2f2-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="da2f2-109">Permissions</span></span>
 
-<span data-ttu-id="2f4ad-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2f4ad-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="da2f2-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="da2f2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2f4ad-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2f4ad-112">Permission type</span></span>|<span data-ttu-id="2f4ad-113">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="2f4ad-113">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="da2f2-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="da2f2-112">Permission type</span></span>|<span data-ttu-id="da2f2-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="da2f2-113">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="2f4ad-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2f4ad-114">Delegated (work or school account)</span></span>|<span data-ttu-id="2f4ad-115">Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="2f4ad-115">Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All</span></span>|
-|<span data-ttu-id="2f4ad-116">Делегированное (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2f4ad-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2f4ad-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2f4ad-117">Not supported.</span></span>|
-|<span data-ttu-id="2f4ad-118">Приложение</span><span class="sxs-lookup"><span data-stu-id="2f4ad-118">Application</span></span>|<span data-ttu-id="2f4ad-119">Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All</span><span class="sxs-lookup"><span data-stu-id="2f4ad-119">Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All</span></span>|
+|<span data-ttu-id="da2f2-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="da2f2-114">Delegated (work or school account)</span></span>|<span data-ttu-id="da2f2-115">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="da2f2-115">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span>|
+|<span data-ttu-id="da2f2-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="da2f2-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="da2f2-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="da2f2-117">Not supported.</span></span>|
+|<span data-ttu-id="da2f2-118">Приложение</span><span class="sxs-lookup"><span data-stu-id="da2f2-118">Application</span></span>|<span data-ttu-id="da2f2-119">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span><span class="sxs-lookup"><span data-stu-id="da2f2-119">Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2f4ad-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2f4ad-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="da2f2-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="da2f2-120">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -43,31 +43,31 @@ ms.locfileid: "49720335"
 GET /identity/events/onSignupStart
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="2f4ad-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="2f4ad-121">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="da2f2-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="da2f2-121">Optional query parameters</span></span>
 
-<span data-ttu-id="2f4ad-122">Этот метод поддерживает параметр запроса OData для расширения сведений `$expand` об invokeUserFlowListener.</span><span class="sxs-lookup"><span data-stu-id="2f4ad-122">This method supports the `$expand` OData query parameter to expand the details of an invokeUserFlowListener.</span></span> <span data-ttu-id="2f4ad-123">Пример см. ниже.</span><span class="sxs-lookup"><span data-stu-id="2f4ad-123">See below for an example.</span></span> <span data-ttu-id="2f4ad-124">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="2f4ad-124">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
+<span data-ttu-id="da2f2-122">Этот метод поддерживает параметр запроса OData для расширения сведений `$expand` об invokeUserFlowListener.</span><span class="sxs-lookup"><span data-stu-id="da2f2-122">This method supports the `$expand` OData query parameter to expand the details of an invokeUserFlowListener.</span></span> <span data-ttu-id="da2f2-123">См. пример ниже.</span><span class="sxs-lookup"><span data-stu-id="da2f2-123">See below for an example.</span></span> <span data-ttu-id="da2f2-124">Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="da2f2-124">For general information, see [OData query parameters](/graph/query-parameters).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="2f4ad-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2f4ad-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="da2f2-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="da2f2-125">Request headers</span></span>
 
-|<span data-ttu-id="2f4ad-126">Имя</span><span class="sxs-lookup"><span data-stu-id="2f4ad-126">Name</span></span>|<span data-ttu-id="2f4ad-127">Описание</span><span class="sxs-lookup"><span data-stu-id="2f4ad-127">Description</span></span>|
+|<span data-ttu-id="da2f2-126">Имя</span><span class="sxs-lookup"><span data-stu-id="da2f2-126">Name</span></span>|<span data-ttu-id="da2f2-127">Описание</span><span class="sxs-lookup"><span data-stu-id="da2f2-127">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="2f4ad-128">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2f4ad-128">Authorization</span></span>|<span data-ttu-id="2f4ad-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2f4ad-p105">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="da2f2-128">Авторизация</span><span class="sxs-lookup"><span data-stu-id="da2f2-128">Authorization</span></span>|<span data-ttu-id="da2f2-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="da2f2-p105">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2f4ad-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2f4ad-131">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="da2f2-131">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="da2f2-131">Request body</span></span>
 
-<span data-ttu-id="2f4ad-132">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="2f4ad-132">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="da2f2-132">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="da2f2-132">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="2f4ad-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="2f4ad-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="da2f2-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="da2f2-133">Response</span></span>
 
-<span data-ttu-id="2f4ad-134">В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [authenticationListener](../resources/authenticationlistener.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2f4ad-134">If successful, this method returns a `200 OK` response code and a collection of [authenticationListener](../resources/authenticationlistener.md) objects in the response body.</span></span>
+<span data-ttu-id="da2f2-134">В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [authenticationListener](../resources/authenticationlistener.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="da2f2-134">If successful, this method returns a `200 OK` response code and a collection of [authenticationListener](../resources/authenticationlistener.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="2f4ad-135">Примеры</span><span class="sxs-lookup"><span data-stu-id="2f4ad-135">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="da2f2-135">Примеры</span><span class="sxs-lookup"><span data-stu-id="da2f2-135">Examples</span></span>
 
-### <a name="example-1-list-authenticationlisteners-for-the-onsignupstart-event"></a><span data-ttu-id="2f4ad-136">Пример 1. Список authenticationListeners для события onSignUpStart</span><span class="sxs-lookup"><span data-stu-id="2f4ad-136">Example 1: List authenticationListeners for the onSignUpStart event</span></span>
+### <a name="example-1-list-authenticationlisteners-for-the-onsignupstart-event"></a><span data-ttu-id="da2f2-136">Пример 1. Список authenticationListeners для события onSignUpStart</span><span class="sxs-lookup"><span data-stu-id="da2f2-136">Example 1: List authenticationListeners for the onSignUpStart event</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2f4ad-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="2f4ad-137">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="da2f2-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="da2f2-137">Request</span></span>
 
-<span data-ttu-id="2f4ad-138">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2f4ad-138">The following is an example of the request.</span></span>
+<span data-ttu-id="da2f2-138">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="da2f2-138">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -79,11 +79,11 @@ GET /identity/events/onSignupStart
 GET https://graph.microsoft.com/beta/identity/events/onSignupStart
 ```
 
-#### <a name="response"></a><span data-ttu-id="2f4ad-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="2f4ad-139">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="da2f2-139">Отклик</span><span class="sxs-lookup"><span data-stu-id="da2f2-139">Response</span></span>
 
-<span data-ttu-id="2f4ad-140">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="2f4ad-140">The following is an example of the response.</span></span>
+<span data-ttu-id="da2f2-140">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="da2f2-140">The following is an example of the response.</span></span>
 
-<span data-ttu-id="2f4ad-141">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="2f4ad-141">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="da2f2-141">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="da2f2-141">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -122,13 +122,13 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-expand-invokeuserflowlisteners-in-authenticationlisteners-for-the-onsignupstart-event"></a><span data-ttu-id="2f4ad-142">Пример 2. Развернуть invokeUserFlowListeners в authenticationListeners для события onSignUpStart</span><span class="sxs-lookup"><span data-stu-id="2f4ad-142">Example 2: Expand invokeUserFlowListeners in authenticationListeners for the onSignUpStart event</span></span>
+### <a name="example-2-expand-invokeuserflowlisteners-in-authenticationlisteners-for-the-onsignupstart-event"></a><span data-ttu-id="da2f2-142">Пример 2. Развернуть invokeUserFlowListeners в authenticationListeners для события onSignUpStart</span><span class="sxs-lookup"><span data-stu-id="da2f2-142">Example 2: Expand invokeUserFlowListeners in authenticationListeners for the onSignUpStart event</span></span>
 
-<span data-ttu-id="2f4ad-143">В следующем примере перечисляются прослушиватели, определенные для события onSignupStart, и для каждого прослушиватель, расширяется поток пользователя, который вызывается.</span><span class="sxs-lookup"><span data-stu-id="2f4ad-143">The following example lists the listeners defined for the onSignupStart event, and for each listener, expands the user flow that is invoked.</span></span>
+<span data-ttu-id="da2f2-143">В следующем примере перечисляются прослушиватели, определенные для события onSignupStart, и для каждого прослушиватель, расширяется поток пользователя, который вызывается.</span><span class="sxs-lookup"><span data-stu-id="da2f2-143">The following example lists the listeners defined for the onSignupStart event, and for each listener, expands the user flow that is invoked.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="2f4ad-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="2f4ad-144">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="da2f2-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="da2f2-144">Request</span></span>
 
-<span data-ttu-id="2f4ad-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2f4ad-145">The following is an example of the request.</span></span>
+<span data-ttu-id="da2f2-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="da2f2-145">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -140,11 +140,11 @@ Content-Type: application/json
 GET https://graph.microsoft.com/beta/identity/events/onSignupStart?$expand=microsoft.graph.invokeUserFlowListener/userFlow
 ```
 
-#### <a name="response"></a><span data-ttu-id="2f4ad-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="2f4ad-146">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="da2f2-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="da2f2-146">Response</span></span>
 
-<span data-ttu-id="2f4ad-147">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="2f4ad-147">The following is an example of the response.</span></span>
+<span data-ttu-id="da2f2-147">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="da2f2-147">The following is an example of the response.</span></span>
 
-<span data-ttu-id="2f4ad-148">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="2f4ad-148">**Note:** The response object shown here might be shortened for readability.</span></span>
+<span data-ttu-id="da2f2-148">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="da2f2-148">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

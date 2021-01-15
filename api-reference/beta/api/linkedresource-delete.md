@@ -1,32 +1,32 @@
 ---
-title: Удаление Линкедресаурце
-description: Удаляет объект Линкедресаурце.
+title: Удаление linkedResource
+description: Удаляет объект linkedResource.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 531f1a3edd411359f3435c4d16c86565b59f8d38
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ce531190949f5b5aeb89242fcb87ade09365e0f1
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972921"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873411"
 ---
-# <a name="delete-linkedresource"></a><span data-ttu-id="20360-103">Удаление Линкедресаурце</span><span class="sxs-lookup"><span data-stu-id="20360-103">Delete linkedResource</span></span>
-<span data-ttu-id="20360-104">Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]</span><span class="sxs-lookup"><span data-stu-id="20360-104">Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]</span></span>
+# <a name="delete-linkedresource"></a><span data-ttu-id="f69c0-103">Удаление linkedResource</span><span class="sxs-lookup"><span data-stu-id="f69c0-103">Delete linkedResource</span></span>
+<span data-ttu-id="f69c0-104">Пространство имен: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]</span><span class="sxs-lookup"><span data-stu-id="f69c0-104">Namespace: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]</span></span>
 
-<span data-ttu-id="20360-105">Удаляет объект [линкедресаурце](../resources/linkedresource.md) .</span><span class="sxs-lookup"><span data-stu-id="20360-105">Deletes a [linkedResource](../resources/linkedresource.md) object.</span></span>
+<span data-ttu-id="f69c0-105">Удаляет объект [linkedResource.](../resources/linkedresource.md)</span><span class="sxs-lookup"><span data-stu-id="f69c0-105">Deletes a [linkedResource](../resources/linkedresource.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="20360-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="20360-106">Permissions</span></span>
-<span data-ttu-id="20360-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="20360-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f69c0-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f69c0-106">Permissions</span></span>
+<span data-ttu-id="f69c0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f69c0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="20360-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="20360-109">Permission type</span></span>|<span data-ttu-id="20360-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="20360-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="f69c0-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f69c0-109">Permission type</span></span>|<span data-ttu-id="f69c0-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f69c0-110">Permissions (from least to most privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="20360-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="20360-111">Delegated (work or school account)</span></span>|<span data-ttu-id="20360-112">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="20360-112">Tasks.ReadWrite</span></span>|
-|<span data-ttu-id="20360-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="20360-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="20360-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="20360-114">Tasks.ReadWrite</span></span>|
-|<span data-ttu-id="20360-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="20360-115">Application</span></span>|<span data-ttu-id="20360-116">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="20360-116">Not supported</span></span>|
+|<span data-ttu-id="f69c0-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f69c0-111">Delegated (work or school account)</span></span>|<span data-ttu-id="f69c0-112">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f69c0-112">Tasks.ReadWrite</span></span>|
+|<span data-ttu-id="f69c0-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f69c0-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f69c0-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f69c0-114">Tasks.ReadWrite</span></span>|
+|<span data-ttu-id="f69c0-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f69c0-115">Application</span></span>|<span data-ttu-id="f69c0-116">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="f69c0-116">Not supported</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="20360-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="20360-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f69c0-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f69c0-117">HTTP request</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -37,23 +37,23 @@ DELETE /me/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources/{linkedRes
 DELETE /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources/{linkedResourcesId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="20360-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="20360-118">Request headers</span></span>
-|<span data-ttu-id="20360-119">Имя</span><span class="sxs-lookup"><span data-stu-id="20360-119">Name</span></span>|<span data-ttu-id="20360-120">Описание</span><span class="sxs-lookup"><span data-stu-id="20360-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f69c0-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f69c0-118">Request headers</span></span>
+|<span data-ttu-id="f69c0-119">Имя</span><span class="sxs-lookup"><span data-stu-id="f69c0-119">Name</span></span>|<span data-ttu-id="f69c0-120">Описание</span><span class="sxs-lookup"><span data-stu-id="f69c0-120">Description</span></span>|
 |:---|:---|
-|<span data-ttu-id="20360-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="20360-121">Authorization</span></span>|<span data-ttu-id="20360-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="20360-p102">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="f69c0-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f69c0-121">Authorization</span></span>|<span data-ttu-id="f69c0-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f69c0-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="20360-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="20360-124">Request body</span></span>
-<span data-ttu-id="20360-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="20360-125">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f69c0-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f69c0-124">Request body</span></span>
+<span data-ttu-id="f69c0-125">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f69c0-125">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="20360-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="20360-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f69c0-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="f69c0-126">Response</span></span>
 
-<span data-ttu-id="20360-127">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="20360-127">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="f69c0-127">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="f69c0-127">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="20360-128">Примеры</span><span class="sxs-lookup"><span data-stu-id="20360-128">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f69c0-128">Примеры</span><span class="sxs-lookup"><span data-stu-id="f69c0-128">Examples</span></span>
 
-### <a name="request"></a><span data-ttu-id="20360-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="20360-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="f69c0-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="f69c0-129">Request</span></span>
 
-# <a name="http"></a>[<span data-ttu-id="20360-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="20360-130">HTTP</span></span>](#tab/http)
+# <a name="http"></a>[<span data-ttu-id="f69c0-130">HTTP</span><span class="sxs-lookup"><span data-stu-id="f69c0-130">HTTP</span></span>](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["dfsdc-f9dfdfs-dcsda9", "e2dc-f9cce2-dce29", "f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9"],
@@ -63,19 +63,19 @@ DELETE /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/
 ``` http
 DELETE https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources/f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9
 ```
-# <a name="c"></a>[<span data-ttu-id="20360-131">C#</span><span class="sxs-lookup"><span data-stu-id="20360-131">C#</span></span>](#tab/csharp)
+# <a name="c"></a>[<span data-ttu-id="f69c0-131">C#</span><span class="sxs-lookup"><span data-stu-id="f69c0-131">C#</span></span>](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-linkedresource-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="javascript"></a>[<span data-ttu-id="20360-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="20360-132">JavaScript</span></span>](#tab/javascript)
+# <a name="javascript"></a>[<span data-ttu-id="f69c0-132">JavaScript</span><span class="sxs-lookup"><span data-stu-id="f69c0-132">JavaScript</span></span>](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/delete-linkedresource-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="objective-c"></a>[<span data-ttu-id="20360-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="20360-133">Objective-C</span></span>](#tab/objc)
+# <a name="objective-c"></a>[<span data-ttu-id="f69c0-133">Objective-C</span><span class="sxs-lookup"><span data-stu-id="f69c0-133">Objective-C</span></span>](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-linkedresource-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="java"></a>[<span data-ttu-id="20360-134">Java</span><span class="sxs-lookup"><span data-stu-id="20360-134">Java</span></span>](#tab/java)
+# <a name="java"></a>[<span data-ttu-id="f69c0-134">Java</span><span class="sxs-lookup"><span data-stu-id="f69c0-134">Java</span></span>](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-linkedresource-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -83,8 +83,8 @@ DELETE https://graph.microsoft.com/beta/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks
 
 
 
-### <a name="response"></a><span data-ttu-id="20360-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="20360-135">Response</span></span>
-<span data-ttu-id="20360-136">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="20360-136">**Note:** The response object shown here might be shortened for readability.</span></span>
+### <a name="response"></a><span data-ttu-id="f69c0-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="f69c0-135">Response</span></span>
+<span data-ttu-id="f69c0-136">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="f69c0-136">**Note:** The response object shown here might be shortened for readability.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
