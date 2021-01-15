@@ -1,46 +1,47 @@
 ---
-title: Тип ресурса Пассвордлессмикрософтаусентикатораусентикатионмесодконфигуратион
-description: Представляет политику методов проверки подлинности входа с помощью пароля Майкрософт для проверки подлинности.
+title: Тип ресурса passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration
+description: Представляет политику методов проверки подлинности на телефоне без пароля Microsoft Authenticator.
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ddf6a66abbf745a769a44cf323ebb245c31ecf60
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: e27424264293d87775937c7893546ec321728b4a
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418483"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872284"
 ---
-# <a name="passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-resource-type"></a>Тип ресурса Пассвордлессмикрософтаусентикатораусентикатионмесодконфигуратион
+# <a name="passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-resource-type-deprecated"></a>Тип ресурса passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration (неподдерживаем)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет политику методов проверки подлинности входа с помощью пароля Майкрософт для проверки подлинности. Методы проверки подлинности определяют параметры конфигурации, а также пользователей или группы, для которых разрешено использование метода проверки подлинности.
+Представляет политику методов проверки подлинности на телефоне без пароля Microsoft Authenticator. Политики методов проверки подлинности определяют параметры конфигурации и пользователей или группы, которые могут использовать этот метод проверки подлинности.
 
-> [!NOTE]
-> Существенные изменения схемы запланированы для API, которые управляют приложением для проверки подлинности (Майкрософт), а API в Мирософт Graph бета-версии. Так как шаблоны звонков будут изменены, мы не рекомендуем задействовать производственную зависимость от этих API.
+> [!CAUTION]
+> API политики проверки подлинности для телефона без пароля Microsoft Authenticator является неподготовленным и больше не возвращает результаты 31 декабря 2020 г. Используйте новую политику метода [проверки подлинности Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)
+
 
 ## <a name="methods"></a>Методы
 |Метод|Тип возвращаемых данных|Описание|
 |:---|:---|:---|
-|[Получение](../api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-get.md)|[пассвордлессмикрософтаусентикатораусентикатионмесодконфигуратион](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)|Чтение свойств и связей объекта Пассвордлессмикрософтаусентикатораусентикатионмесодконфигуратион.|
-|[Обновление](../api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md)|[пассвордлессмикрософтаусентикатораусентикатионмесодконфигуратион](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)|Обновление свойств объекта Пассвордлессмикрософтаусентикатораусентикатионмесодконфигуратион.|
-|[Удаление](../api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md)|Нет|Возвращает объект Пассвордлессмикрософтаусентикатораусентикатионмесодконфигуратион в конфигурацию по умолчанию.|
+|[Get](../api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-get.md) (неподготовлен)|[passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)|Чтение свойств и связей объекта без пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration.|
+|[Обновление](../api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md) (неподготовлено) |[passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md)|Обновление свойств объекта passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration.|
+|[Delete](../api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md) (deprecated)|Нет|Возвращает объект passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration в конфигурацию по умолчанию.|
 
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Идентификатор политики метода проверки подлинности.|
-|state|аусентикатионмесодстате|Возможные значения: `enabled`, `disabled`.|
+|state|authenticationMethodState|Возможные значения: `enabled`, `disabled`.|
 
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|инклудетаржетс|Коллекция [пассвордлессмикрософтаусентикатораусентикатионмесодтаржет](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodtarget.md)|Коллекция пользователей или групп, которым разрешено использовать метод проверки подлинности.|
+|includeTargets|[Коллекция passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodtarget.md)|Коллекция пользователей или групп, которым включен метод проверки подлинности.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

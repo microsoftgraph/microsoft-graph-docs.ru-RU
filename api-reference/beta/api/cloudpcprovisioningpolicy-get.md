@@ -1,24 +1,24 @@
 ---
-title: Получение Клаудпкпровисионингполици
-description: Чтение свойств и связей объекта Клаудпкпровисионингполици.
+title: Get cloudPcProvisioningPolicy
+description: Чтение свойств и связей объекта cloudPcProvisioningPolicy.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 3f1ea40d146381e2f810a67776ef41e8539ea115
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 99a94314e9c7314ee4b3e242ca5382b6acf19c58
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563382"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872725"
 ---
-# <a name="get-cloudpcprovisioningpolicy"></a>Получение Клаудпкпровисионингполици
+# <a name="get-cloudpcprovisioningpolicy"></a>Get cloudPcProvisioningPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение свойств и связей объекта [клаудпкпровисионингполици](../resources/cloudpcprovisioningpolicy.md) .
+Чтение свойств и связей объекта [cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -26,10 +26,10 @@ ms.locfileid: "49563382"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Клаудпк. ReadWrite. ALL, Клаудпк. Read. ALL|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -45,7 +45,7 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` и `$expand` параметры запросов OData для настройки отклика. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает и `$select` `$expand` параметры запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -59,11 +59,11 @@ GET /deviceManagement/virtualEndpoint/provisioningPolicies/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [клаудпкпровисионингполици](../resources/cloudpcprovisioningpolicy.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-properties-of-the-specified-provisioning-policy"></a>Пример 1: получение свойств указанной политики подготовки
+### <a name="example-1-get-the-properties-of-the-specified-provisioning-policy"></a>Пример 1. Получите свойства указанной политики предоставления
 
 #### <a name="request"></a>Запрос
 
@@ -125,7 +125,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-the-properties-of-the-specified-provisioning-policy-and-expand-on-the-assignments"></a>Пример 2: получение свойств указанной политики подготовки и развертывание в назначениях
+### <a name="example-2-get-the-properties-of-the-specified-provisioning-policy-and-expand-on-the-assignments"></a>Пример 2. Получить свойства указанной политики и развернуть назначения
 
 #### <a name="request"></a>Запрос
 

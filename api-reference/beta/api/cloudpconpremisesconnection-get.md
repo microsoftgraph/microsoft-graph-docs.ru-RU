@@ -1,34 +1,34 @@
 ---
-title: Получение Клаудпконпремисесконнектион
-description: Чтение свойств и связей объекта Клаудпконпремисесконнектион.
+title: Get cloudPcOnPremisesConnection
+description: Чтение свойств и связей объекта cloudPcOnPremisesConnection.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: e7e70e6ff0f5ea8badb314c1a5fa915d2f657a6b
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 8dd316be345e1df4c840e11f53e721aa4b7782e7
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563410"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872774"
 ---
-# <a name="get-cloudpconpremisesconnection"></a>Получение Клаудпконпремисесконнектион
+# <a name="get-cloudpconpremisesconnection"></a>Get cloudPcOnPremisesConnection
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение свойств и связей объекта [клаудпконпремисесконнектион](../resources/cloudpconpremisesconnection.md) .
+Чтение свойств и связей объекта [cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения| Разрешения (в порядке убывания привилегий) |
+|Тип разрешения| Разрешения (в порядке повышения привилегий) |
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Клаудпк. ReadWrite. ALL, Клаудпк. Read. ALL|
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
 |Для приложений| Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -44,7 +44,7 @@ GET /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает `$select` параметр запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр `$select` запроса OData для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -58,11 +58,11 @@ GET /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [клаудпконпремисесконнектион](../resources/cloudpconpremisesconnection.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-the-default-properties-of-an-on-premises-connection"></a>Пример 1: получение свойств по умолчанию локального подключения
+### <a name="example-1-get-the-default-properties-of-an-on-premises-connection"></a>Пример 1. Получите свойства локального подключения по умолчанию
 
 #### <a name="request"></a>Запрос
 
@@ -129,7 +129,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-get-the-selected-properties-of-an-on-premises-connection-including-healthcheckstatusdetails"></a>Пример 2: Получение выбранных свойств локального подключения, включая Хеалсчеккстатусдетаилс
+### <a name="example-2-get-the-selected-properties-of-an-on-premises-connection-including-healthcheckstatusdetails"></a>Пример 2. Получите выбранные свойства локального подключения, включая healthCheckStatusDetails
 
 #### <a name="request"></a>Запрос
 

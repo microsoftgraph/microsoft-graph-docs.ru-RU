@@ -1,34 +1,34 @@
 ---
-title: Получение fido2AuthenticationMethodConfiguration
+title: Get fido2AuthenticationMethodConfiguration
 description: Чтение свойств и связей объекта fido2AuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 4e7c133c25d7770257423c803f640e00f23dc449
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: 19e751bab6f076f7269ca895abc35f40a1160423
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086632"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872998"
 ---
-# <a name="get-fido2authenticationmethodconfiguration"></a>Получение fido2AuthenticationMethodConfiguration
+# <a name="get-fido2authenticationmethodconfiguration"></a>Get fido2AuthenticationMethodConfiguration
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) , который представляет [политику метода проверки подлинности](../resources/authenticationmethodspolicies-overview.md) FIDO2 с ключами безопасности для клиента Azure Active Directory (Azure AD).
+Извлечение свойств и связей объекта [fido2AuthenticationMethodConfiguration,](../resources/fido2authenticationmethodconfiguration.md) который представляет [](../resources/authenticationmethodspolicies-overview.md) политику метода проверки подлинности клавиш безопасности FIDO2 для клиента Azure Active Directory (Azure AD).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.AuthenticationMethod|
+|Делегированное (рабочая или учебная учетная запись)|Policy.ReadWrite.AuthenticationMethod|
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Для делегированных сценариев администратору требуется следующая [роль](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегирования сценариев администратору требуется следующая [роль:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 
@@ -53,7 +53,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/fid
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) в теле отклика.
 
 ## <a name="examples"></a>Примеры
 

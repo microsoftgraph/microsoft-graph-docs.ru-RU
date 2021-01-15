@@ -1,36 +1,36 @@
 ---
-title: Получение Емаилаусентикатионмесодконфигуратион
-description: Чтение свойств и связей объекта Емаилаусентикатионмесодконфигуратион.
+title: Get emailAuthenticationMethodConfiguration
+description: Чтение свойств и связей объекта emailAuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5fb2396563ed91f2844867e7ba3780f40644902a
-ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
+ms.openlocfilehash: 82f1653e5fdf091bd92638b4596bacd4b8194817
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49617146"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873327"
 ---
-# <a name="get-emailauthenticationmethodconfiguration"></a>Получение Емаилаусентикатионмесодконфигуратион
+# <a name="get-emailauthenticationmethodconfiguration"></a>Get emailAuthenticationMethodConfiguration
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Прочитайте свойства и связи объекта [емаилаусентикатионмесодконфигуратион](../resources/emailauthenticationmethodconfiguration.md) , представляющего [политику метода проверки подлинности методом проверки подлинности методом проверки подлинности](../resources/authenticationmethodspolicies-overview.md) методом OTP для клиента Azure Active Directory (Azure AD).
+Прочитайте свойства и связи объекта [emailAuthenticationMethodConfiguration,](../resources/emailauthenticationmethodconfiguration.md) который представляет политику метода проверки подлинности [OTP](../resources/authenticationmethodspolicies-overview.md) электронной почты для клиента Azure Active Directory (Azure AD).
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Policy. ReadWrite. AuthenticationMethod|
+|Делегированное (рабочая или учебная учетная запись)|Policy.ReadWrite.AuthenticationMethod|
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Для делегированных сценариев администратору требуется одна из следующих [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегирования сценариев администратору требуется одна из следующих [ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [емаилаусентикатионмесодконфигуратион](../resources/emailauthenticationmethodconfiguration.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

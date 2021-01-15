@@ -1,26 +1,26 @@
 ---
-title: 'Синхронизация: Аккуиреакцесстокен'
-description: Получение маркера доступа OAuth для авторизации службы подготовки Azure AD для подготовки пользователей в приложении
+title: 'synchronization: acquireAccessToken'
+description: Получение маркера доступа OAuth для авторизации службы подготовка Azure AD для предоставления пользователей в приложении
 author: ArvindHarinder1
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: e507fd975a71bfd6a9b8dd0809d0041a7e07493b
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: bef2b75abb8e985be6d9ef7742a8baeb86fd5e7f
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48975883"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873544"
 ---
-# <a name="acquireaccesstoken"></a>аккуиреакцесстокен
+# <a name="acquireaccesstoken"></a>acquireAccessToken
 Пространство имен: microsoft.graph
 
-Получите маркер доступа OAuth, чтобы авторизовать службу подготовки Azure AD для подготовки пользователей в приложении.
+Получение маркера доступа OAuth для авторизации службы подготовка Azure AD для предоставления пользователей в приложении.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Directory.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
@@ -43,14 +43,14 @@ POST /servicePrincipals/{servicePrincipalsId}/synchronization/acquireAccessToken
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
-В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
+В следующей таблице указаны параметры, которые можно использовать с этим действием.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|записей|Коллекция [синчронизатионсекреткэйстрингвалуепаир](../resources/synchronization-secretkeystringvaluepair.md)|Представляет одно секретное значение.|
+|credentials|[Коллекция synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)|Представляет одно значение секрета.|
 
 
 

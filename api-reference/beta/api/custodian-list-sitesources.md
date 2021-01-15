@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 7510efdde8cbf248643bfa0429d63e05f2bc8dea
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 46f7b5d82da5d3ac66820199dac02b2797394d21
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659374"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872592"
 ---
 # <a name="list-sitesources"></a>Список siteSources
 
@@ -24,7 +24,7 @@ ms.locfileid: "49659374"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|User.Read|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|

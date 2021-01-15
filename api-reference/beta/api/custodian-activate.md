@@ -1,16 +1,16 @@
 ---
 title: 'custodian: activate'
-description: Повторно активировать хранителя в деле.
+description: Повторно активировать хранителя в случае.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 675e62b24b126b2ad37263f3c9a1d57e42bd37e7
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 3058f0fc281a64f937f154dc712c58b568b20c60
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659365"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872648"
 ---
 # <a name="custodian-activate"></a>custodian: activate
 
@@ -18,13 +18,13 @@ ms.locfileid: "49659365"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Активируйте хранителя, который был освобожден из дела, чтобы снова сделать его частью дела. Дополнительные сведения см. в [деле "Управление хранителями" в деле Advanced eDiscovery.](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian)
+Активируйте хранителя, который был освобожден из дела, чтобы снова сделать его частью дела. Дополнительные сведения см. в [поддомене "Управление хранителями" в деле Advanced eDiscovery.](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian)
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|User.Read|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|

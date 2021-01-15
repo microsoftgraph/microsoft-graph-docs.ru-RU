@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: ca5e2198280aae067f6da92ae03eb755a3bfa4f8
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 3b3fc0633672785e6a1f8aacc350fd9a8d34d4d7
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658969"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872501"
 ---
 # <a name="custodian-release"></a>custodian: release
 
@@ -24,7 +24,7 @@ ms.locfileid: "49658969"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|User.Read|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|

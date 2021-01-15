@@ -5,12 +5,12 @@ author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: b5d0cfec80a04a572f3d010830423240c45a62c6
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 4f5b5e1ea73a9f3df1899f92f3675152e04822a3
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720329"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872312"
 ---
 # <a name="put-authenticationlistener"></a>Put authenticationListener
 
@@ -24,10 +24,10 @@ ms.locfileid: "49720329"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.ApplicationConfiguration|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|Policy.ReadWrite.ApplicationConfiguration|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,7 +48,7 @@ PUT /identity/events/onSignupStart/{id}
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В теле запроса укажу представление объекта [authenticationListener](../resources/authenticationlistener.md) в JSON.
 

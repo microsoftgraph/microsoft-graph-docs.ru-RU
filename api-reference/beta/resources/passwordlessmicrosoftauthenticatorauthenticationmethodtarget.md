@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса Пассвордлессмикрософтаусентикатораусентикатионмесодтаржет
-description: Коллекция пользователей или групп, для которых используется политика методов проверки подлинности при входе в систему без пароля.
+title: Тип ресурса passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget
+description: Коллекция пользователей или групп, которые могут использовать политику проверки подлинности на телефоне без пароля Microsoft Authenticator.
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a26a8fe76da954d3dc44a238665954539df0fa72
-ms.sourcegitcommit: cfadc605014265e02b913bc77382025b0d156285
+ms.openlocfilehash: ef62b251d6c943bd6290a07fa2b018bddca81ab5
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418482"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872270"
 ---
-# <a name="passwordlessmicrosoftauthenticatorauthenticationmethodtarget-resource-type"></a>Тип ресурса Пассвордлессмикрософтаусентикатораусентикатионмесодтаржет
+# <a name="passwordlessmicrosoftauthenticatorauthenticationmethodtarget-resource-type-deprecated"></a>Тип ресурса passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget (неподготовлен)
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Набор пользователей или групп, для которых используется политика проверки подлинности входа на телефон, не поддерживающий пароль для проверки подлинности (Майкрософт). /Ресаурцес/пассвордлессмикрософтаусентикатораусентикатионмесодконфигуратион.МД) в Azure AD.
+Коллекция пользователей или групп, которые могут использовать политику проверки подлинности на телефоне без пароля Microsoft Authenticator](.. /resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration.md) в Azure AD.
 
-> [!NOTE]
-> Существенные изменения схемы запланированы для API, которые управляют приложением для проверки подлинности (Майкрософт), а API в Мирософт Graph бета-версии. Так как шаблоны звонков будут изменены, мы не рекомендуем задействовать производственную зависимость от этих API.
+> [!CAUTION]
+> API политики проверки подлинности для телефона без пароля Microsoft Authenticator является неподготовленным и больше не возвращает результаты 31 декабря 2020 г. Используйте новую политику метода [проверки подлинности Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор объекта пользователя или группы Azure AD.|
-|исрегистратионрекуиред|Boolean|Определяет, применяется ли пользователь для регистрации метода проверки подлинности.|
-|шовнконтекст|аусентикатораппконтексттипе|Возможные значения: `location`, `app`.|
-|targetType|аусентикатионмесодтаржеттипе|Возможные значения: `user`, `group`.|
-|усефорсигнин|Boolean|Определяет, можно ли использовать метод проверки подлинности для входа в Azure AD.|
+|id|String|ИД объекта пользователя или группы Azure AD.|
+|isRegistrationRequired|Boolean|Определяет, должен ли пользователь принудительно регистрировать метод проверки подлинности.|
+|shownContext|authenticatorAppContextType|Возможные значения: `location`, `app`.|
+|targetType|authenticationMethodTargetType|Возможные значения: `user`, `group`.|
+|useForSignIn|Boolean|Определяет, можно ли использовать метод проверки подлинности для входов в Azure AD.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.

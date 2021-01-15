@@ -1,26 +1,26 @@
 ---
-title: Создание Тодотаск
-description: Создание нового объекта Task в заданном Тодотасклист.
+title: Создание todoTask
+description: Создание объекта задачи в указанном todoTaskList.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e42c65363f958aad92ea96a9cf913229fc4ead97
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 63e962083e6505bc3c7bd495ebea29bbad3efd27
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972508"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873250"
 ---
-# <a name="create-todotask"></a>Создание Тодотаск
-Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+# <a name="create-todotask"></a>Создание todoTask
+Пространство имен: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта Task в заданном [тодотасклист](../resources/todotasklist.md).
+Создание объекта задачи в указанном [todoTaskList.](../resources/todotasklist.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
@@ -43,10 +43,10 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [тодотаск](../resources/todotask.md) в формате JSON.
+## <a name="request-body"></a>Основной текст запроса
+В теле запроса укажу представление объекта [todoTask](../resources/todotask.md) в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании [тодотаск](../resources/todotask.md).
+В следующей таблице показаны свойства, необходимые при создании [объекта todoTask.](../resources/todotask.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -58,22 +58,22 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 |isReminderOn|Boolean|Присвоено значение true, если установлено напоминание пользователю о задаче.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Расписание повторения задачи.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата и время появления напоминания о задаче.|
-|status|таскстатус|Указывает состояние или ход выполнения задачи. Возможные значения: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
+|status|taskStatus|Указывает состояние или ход выполнения задачи. Возможные значения: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |title|String|Краткое описание задачи.|
-|createdDateTime|DateTimeOffset|Дата и время создания задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601. Например, полночь UTC 1 января 2020: ' 2020 – 01 – 01T00:00:00Z '.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601 (всегда используется формат UTC). Например, полночь UTC 1 января 2020: ' 2020 – 01 – 01T00:00:00Z '.|
-|бодиластмодифиеддатетиме|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601 (всегда используется формат UTC). Например, полночь UTC 1 января 2020: ' 2020 – 01 – 01T00:00:00Z '.|
+|createdDateTime|DateTimeOffset|Дата и время создания задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601. Например, полночь 1 января 2020 г. в UTC будет выглядеть так: "2020-01-01T00:00:00Z".|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601 (всегда используется формат UTC). Например, полночь 1 января 2020 г. в UTC будет выглядеть так: "2020-01-01T00:00:00Z".|
+|bodyLastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601 (всегда используется формат UTC). Например, полночь 1 января 2020 г. в UTC будет выглядеть так: "2020-01-01T00:00:00Z".|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [тодотаск](../resources/todotask.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [todoTask](../resources/todotask.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
-В следующем примере создается объект **тодотаск** в указанном списке задач и включается [линкедресаурце](../resources/linkedresource.md).
+В следующем примере создается **todoTask** в указанном списке задач и [включается linkedResource.](../resources/linkedresource.md)
 
 # <a name="http"></a>[HTTP](#tab/http)
 <!-- {

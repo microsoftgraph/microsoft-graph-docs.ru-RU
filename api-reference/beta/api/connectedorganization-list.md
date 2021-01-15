@@ -1,32 +1,32 @@
 ---
-title: Список Коннектедорганизатионс
-description: Получение списка объектов Коннектедорганизатион.
+title: Список connectedOrganizations
+description: Получить список объектов connectedOrganization.
 author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 9475026b2bf4ea5c2f2ec4c0b539850c52938ec5
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: d0e042d6ee17736e46dbe0476f9cc4491ab9c5f1
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957680"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872690"
 ---
-# <a name="list-connectedorganizations"></a>Список Коннектедорганизатионс
+# <a name="list-connectedorganizations"></a>Список connectedOrganizations
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [коннектедорганизатион](../resources/connectedorganization.md) .
+Получить список объектов [connectedOrganization.](../resources/connectedorganization.md)
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-| Делегированные (рабочая или учебная учетная запись)     | Ентитлементманажемент. Read. ALL, Ентитлементманажемент. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -41,7 +41,7 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Например, чтобы получить только подключенные Организации с определенным отображаемым именем, добавьте `$filter=displayName eq 'Name'` . Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Например, чтобы получить только подключенные организации с определенным отображаемой именем, добавьте `$filter=displayName eq 'Name'` . Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -53,7 +53,7 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [коннектедорганизатион](../resources/connectedorganization.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию `200 OK` [объектов connectedOrganization](../resources/connectedorganization.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

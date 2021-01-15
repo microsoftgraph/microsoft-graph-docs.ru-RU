@@ -1,34 +1,34 @@
 ---
-title: Удаление Екстерналграупмембер
-description: Удаление объекта Екстерналграупмембер.
+title: Удаление externalGroupMember
+description: Удаление объекта externalGroupMember.
 author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b6a6c79288d2eee9ff4ef2cbb0a9d200a6735050
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 24bfa2da5277192f4f14e828a7e6ea2d5b5d9ce1
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954624"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873173"
 ---
-# <a name="delete-externalgroupmember"></a>Удаление Екстерналграупмембер
+# <a name="delete-externalgroupmember"></a>Удаление externalGroupMember
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [екстерналграупмембер](../resources/externalgroupmember.md) .
+Удаление объекта [externalGroupMember.](../resources/externalgroupmember.md)
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения (в порядке убывания привилегий) |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
+| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | ExternalItem.ReadWrite.All                  |
+| Приложение                            | ExternalItem.ReadWrite.All                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 

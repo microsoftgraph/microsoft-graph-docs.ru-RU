@@ -1,33 +1,33 @@
 ---
-title: 'Каллрекорд: Жетпстнкаллс'
-description: Получение журнала звонков PSTN.
+title: 'callRecord: getPstnCalls'
+description: Получите журнал вызовов STN.
 author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: f5582322e274ced22db02e777364835611a2bdb0
-ms.sourcegitcommit: c419bb8901b7766af193196f80bc1d497643fcb2
+ms.openlocfilehash: 6aa3c85c25373ecee98894ce0704b35a6de25cdb
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572130"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872914"
 ---
-# <a name="callrecord-getpstncalls"></a>Каллрекорд: Жетпстнкаллс
+# <a name="callrecord-getpstncalls"></a>callRecord: getPstnCalls
 
 Пространство имен: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение журнала вызовов PSTN в виде коллекции записей [пстнкалллогров](../resources/callrecords-pstncalllogrow.md) .
+Получите журнал вызовов STN как коллекцию записей [pstnCallLogRow.](../resources/callrecords-pstncalllogrow.md)
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Приложение                            | CallRecords.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -48,11 +48,11 @@ GET /communications/callRecords/getPstnCalls
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|фромдатетиме|DateTimeOffset|Начало диапазона времени для запроса. UTC, включительно.<br/>Диапазон времени основан на времени начала вызова.|
-|тодатетиме|DateTimeOffset|Конец диапазона времени для запроса. UTC, включительно.|
+|fromDateTime|DateTimeOffset|Начало диапазона времени для запроса. UTC включительно.<br/>Диапазон времени зависит от времени начала вызова.|
+|toDateTime|DateTimeOffset|Конец диапазона времени для запроса. UTC включительно.|
 
 > [!IMPORTANT]
-> Значения **фромдатетиме** и **тодатетиме** не могут превышать диапазон дат 90 дней.
+> Значения **fromDateTime** и **toDateTime** не могут быть больше даты в диапазоне 90 дней.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -62,9 +62,9 @@ GET /communications/callRecords/getPstnCalls
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения эта функция возвращает `200 OK` код отклика и коллекцию записей [пстнкалллогров](../resources/callrecords-pstncalllogrow.md) в тексте отклика.
+В случае успеха эта функция возвращает код отклика и коллекцию записей `200 OK` [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) в тексте отклика.
   
-Если в диапазоне дат больше 1000 записей, в тексте также включается `@odata.NextLink` URL-адрес для запроса следующей страницы записей вызова. Последняя страница в диапазоне дат не имеет значения `@odata.NextLink` . Дополнительные сведения см в разделе [разбиение данных Microsoft Graph в приложении](/graph/paging).
+Если в диапазоне дат содержится более 1000 записей, тело также содержит URL-адрес для запроса следующей страницы `@odata.NextLink` записей вызовов. Последняя страница в диапазоне дат не имеет `@odata.NextLink` . Дополнительные сведения см. в [разгонах данных Microsoft Graph в приложении.](/graph/paging)
 
 ## <a name="examples"></a>Примеры
 
@@ -125,5 +125,5 @@ HTTP/1.1 200 OK
 
 ## <a name="see-also"></a>См. также
 
-* [Отчет об использовании Microsoft Teams PSTN](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
-* [Отчет о прямой маршрутизации в Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md)
+* [Отчет об использовании STN Microsoft Teams](/microsoftteams/teams-analytics-and-reports/pstn-usage-report)
+* [Отчет о прямой маршрутике в Microsoft Graph](callrecords-callrecord-getdirectroutingcalls.md)

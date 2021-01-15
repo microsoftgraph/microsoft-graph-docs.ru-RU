@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: adf34da25baa01812e1d5cf82112c03716c5cf32
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 960fb92d03fa0ecba923f93c3534d1572204ac69
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796801"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873138"
 ---
 # <a name="delete-microsoftauthenticatorauthenticationmethod"></a>Удаление microsoftAuthenticatorAuthenticationMethod
 Пространство имен: microsoft.graph
@@ -50,7 +50,7 @@ ms.locfileid: "49796801"
 -->
 ``` http
 DELETE /me/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
-DELETE /user/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
+DELETE /users/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -74,7 +74,7 @@ DELETE /user/{id | userPrincipalName}/authentication/microsoftAuthenticatorMetho
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/user/kim@contoso.com/authentication/microsoftAuthenticatorMethods/_jpuR-TGZtk6aQCLF3BQjA2
+DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/microsoftAuthenticatorMethods/_jpuR-TGZtk6aQCLF3BQjA2
 ```
 
 

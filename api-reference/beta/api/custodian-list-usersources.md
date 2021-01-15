@@ -1,33 +1,33 @@
 ---
-title: Список Усерсаурцес
-description: Получение списка объектов Усерсаурце и их свойств.
+title: Список userSources
+description: Получите список объектов userSource и их свойств.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 7a73394daea6b870bc1da0ec612ceff1691e3c67
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 9f1dba8034b6655a15b00118e161b7ddb454bc2b
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597763"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872571"
 ---
-# <a name="list-usersources"></a>Список Усерсаурцес
+# <a name="list-usersources"></a>Список userSources
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [усерсаурце](../resources/usersource.md) и их свойств.
+Получите список объектов [userSource](../resources/usersource.md) и их свойств.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|User.Read|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -57,7 +57,7 @@ GET /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/use
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [усерсаурце](../resources/usersource.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [userSource](../resources/usersource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

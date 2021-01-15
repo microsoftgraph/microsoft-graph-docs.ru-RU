@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 0196fac3cf9b44915aa8f979072b2daadf6213f9
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 8502084d1b4519c74042788e02fdf3636540535e
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659089"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872564"
 ---
 # <a name="create-sitesource"></a>Создание siteSource
 
@@ -24,7 +24,7 @@ ms.locfileid: "49659089"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|User.Read|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
@@ -48,7 +48,7 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/si
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В теле запроса укажу представление объекта [siteSource](../resources/sitesource.md) в JSON.
 
@@ -56,7 +56,7 @@ POST /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/si
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|site@odata.bind|String|ИД сайта, который можно получить [](../resources/site.md) из ресурса сайта с помощью метода "Получить ресурс [сайта по пути".](../api/site-getbypath.md) Для использования задается {hostname}:/{relative-path}. Для URL-адреса сайта запрос Microsoft Graph будет . `https://contoso.sharepoint.com/sites/HumanResources` `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources` ИД — это первый GUID, указанный в поле "ИД".|
+|site@odata.bind|String|ИД сайта, который можно получить [](../resources/site.md) из ресурса сайта с помощью метода ["Получить ресурс сайта по пути".](../api/site-getbypath.md) Для использования задается {hostname}:/{relative-path}. Для URL-адреса `https://contoso.sharepoint.com/sites/HumanResources` сайта запрос Microsoft Graph будет `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources` . ИД — это первый GUID, указанный в поле "ИД".|
 
 ## <a name="response"></a>Отклик
 

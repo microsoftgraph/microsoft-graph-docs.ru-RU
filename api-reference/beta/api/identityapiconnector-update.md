@@ -5,12 +5,12 @@ author: nickgmicrosoft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 5fd0c263d81c0fa03c31743465453194618d99c2
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: 9037a6bfcd53af0ee009f232909a964a8b0e6a86
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844350"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873670"
 ---
 # <a name="update-identityapiconnector"></a>Обновление identityApiConnector
 
@@ -24,7 +24,7 @@ ms.locfileid: "49844350"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения (в порядке убывания привилегий) |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 | :------------------------------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | APIConnectors.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.  |
@@ -52,7 +52,7 @@ PATCH /identity/apiConnectors/{identityApiConnectorId}
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В теле запроса укажу представление объекта [identityApiConnector](../resources/identityapiconnector.md) в JSON.
 
 В следующей таблице показаны свойства [identityApiConnector,](../resources/identityapiconnector.md) которые можно обновить.

@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 09afb8ed8e91787df7647fb366de55f96a481a83
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: 1e5145d3e067c92ce5faf8f9ddd6b7012bd19220
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657205"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872459"
 ---
 # <a name="delete-unifiedgroupsource"></a>Удаление unifiedGroupSource
 
@@ -24,7 +24,7 @@ ms.locfileid: "49657205"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|User.Read|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|

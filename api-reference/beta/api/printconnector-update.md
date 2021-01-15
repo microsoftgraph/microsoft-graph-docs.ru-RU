@@ -1,35 +1,35 @@
 ---
-title: Обновление Принтконнектор
-description: Обновление свойств объекта Принтконнектор.
+title: Обновление printConnector
+description: Обновление свойств объекта printConnector.
 author: braedenp-msft
 localization_priority: Normal
 ms.prod: universal-print
 doc_type: apiPageType
-ms.openlocfilehash: b417c881db2afa1ee4a7b0d350b33d4874f8d014
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 767f60c6db7b212cd33467bdad893fc8c8ac853b
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48966887"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873551"
 ---
-# <a name="update-printconnector"></a>Обновление Принтконнектор
+# <a name="update-printconnector"></a>Обновление printConnector
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта **принтконнектор** .
+Обновление свойств объекта **printConnector.**
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Чтобы использовать универсальную службу печати, пользователь или клиент приложения должен иметь активную универсальную подписку на печать в дополнение к разрешениям, приведенным в следующей таблице. Пользователь, вошедшего в систему, должен быть [администратором принтера](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+Чтобы использовать службу универсальной печати, у пользователя или клиента приложения должна быть активная подписка универсальной печати в дополнение к разрешениям, перечисленным в следующей таблице. Пользователь, выписав его, должен быть [администратором принтера.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator)
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)| User.Read |
+|Делегированные (рабочая или учебная учетная запись)| PrintConnector.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
-|Для приложения|Не поддерживается.|
+|Приложение|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -47,14 +47,14 @@ PATCH /print/connectors/{id}
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|name|String|Имя соединителя.|
-|fullyQualifiedDomainName|String|Имя узла для соединителя.|
-|operatingSystem|String|Версия операционной системы на соединителе компьютера.|
-|аппверсион|String|Версия соединителя.|
-|расположение|[принтерлокатион](../resources/printerlocation.md)|Физическое и/или организационное расположение соединителя.|
+|name|String|Имя соединители.|
+|fullyQualifiedDomainName|String|Имя хоста компьютера соединитела.|
+|operatingSystem|String|Версия операционной системы компьютера соединители.|
+|appVersion|String|Версия соединители.|
+|location|[printerLocation](../resources/printerlocation.md)|Физическое и/или организационное расположение соединители.|
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [принтконнектор](../resources/printConnector.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный `200 OK` [объект printConnector](../resources/printConnector.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

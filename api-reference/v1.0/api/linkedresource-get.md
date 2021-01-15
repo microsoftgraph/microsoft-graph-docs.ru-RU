@@ -1,29 +1,29 @@
 ---
-title: Получение Линкедресаурце
-description: Чтение свойств и связей объекта Линкедресаурце.
+title: Получить linkedResource
+description: Чтение свойств и связей объекта linkedResource.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 701288744f227c8d81927201e6eacad868ed8422
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 830a7aba64221e1eb6918c0c66deb636a391d0d0
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48903454"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873817"
 ---
-# <a name="get-linkedresource"></a>Получение Линкедресаурце
+# <a name="get-linkedresource"></a>Get linkedResource
 Пространство имен: microsoft.graph
 
-Чтение свойств и связей объекта [линкедресаурце](../resources/linkedresource.md) .
+Чтение свойств и связей объекта [linkedResource.](../resources/linkedresource.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -47,7 +47,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/lin
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [линкедресаурце](../resources/linkedresource.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [linkedResource](../resources/linkedresource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

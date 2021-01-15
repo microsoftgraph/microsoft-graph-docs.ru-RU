@@ -1,37 +1,37 @@
 ---
-title: Удаление Пассвордлессмикрософтаусентикатораусентикатионмесодконфигуратион
-description: Удаление объекта Пассвордлессмикрософтаусентикатораусентикатионмесодконфигуратион.
+title: Удаление без пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration
+description: Удаление объекта passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: eafbb6940a3d70e7191c18369e2764c137f0d674
-ms.sourcegitcommit: 186d738f04e5a558da423f2429165fb4fbe780aa
+ms.openlocfilehash: 7b7cb8cc0eca09dde9e4ecb56a570bf1faf92b05
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49086653"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873453"
 ---
-# <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration"></a>Удаление Пассвордлессмикрософтаусентикатораусентикатионмесодконфигуратион
+# <a name="delete-passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-deprecated"></a>Удаление без пароляMicrosoftAuthenticatorAuthenticationMethodConfiguration (неподдерживаемая)
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление изменений, внесенных в [политику метода проверки подлинности для входа на телефон средства проверки подлинности Майкрософт](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) , путем возврата политики к конфигурации по умолчанию.
+Удалите изменения, внесенные в политику метода проверки подлинности на телефоне [Microsoft Authenticator,](../resources/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) вернув политику к конфигурации по умолчанию.
 
-> [!NOTE]
-> Существенные изменения схемы запланированы для API, которые управляют приложением для проверки подлинности (Майкрософт), а API в Мирософт Graph бета-версии. Так как шаблоны звонков будут изменены, мы не рекомендуем задействовать производственную зависимость от этих API.
+> [!CAUTION]
+> API политики проверки подлинности для телефона без пароля Microsoft Authenticator является неподготовленным и больше не возвращает результаты 31 декабря 2020 г. Используйте новую политику метода [проверки подлинности Microsoft Authenticator.](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.AuthenticationMethod|
+|Делегированное (рабочая или учебная учетная запись)|Policy.ReadWrite.AuthenticationMethod|
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Для делегированных сценариев администратору требуется следующая [роль](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегирования сценариев администратору требуется следующая [роль:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 

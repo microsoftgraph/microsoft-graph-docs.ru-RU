@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ac205663b183e91b0925a3c246e9dd5a78c9aeba
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: bce0b22bd43772fe94b7a0f88c98229ecdca55f1
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796558"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872417"
 ---
 # <a name="list-methods"></a>Методы List
 
@@ -18,7 +18,7 @@ ms.locfileid: "49796558"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список объектов [метода проверки подлинности.](../resources/authenticationmethod.md) В [настоящее время возвращаются только объекты](../resources/phoneauthenticationmethod.md) [метода](../resources/passwordauthenticationmethod.md) проверки подлинности по телефону и пароля.
+Получить список объектов [метода проверки подлинности.](../resources/authenticationmethod.md)
 
 ## <a name="permissions"></a>Разрешения
 

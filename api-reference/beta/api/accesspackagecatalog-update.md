@@ -1,29 +1,29 @@
 ---
-title: Обновление Акцесспаккажекаталог
-description: Обновление свойств объекта Акцесспаккажекаталог.
+title: Обновление accessPackageCatalog
+description: Обновление свойств объекта accessPackageCatalog.
 author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: f8f57f1e33de6eba16615342ba909c5da49faecb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: c7bb4b1cadfd3991f19ff02b5ad596f5a8ff1491
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951787"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872165"
 ---
-# <a name="update-accesspackagecatalog"></a>Обновление Акцесспаккажекаталог
+# <a name="update-accesspackagecatalog"></a>Обновление accessPackageCatalog
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление существующего объекта [акцесспаккажекаталог](../resources/accesspackagecatalog.md) для изменения одного или нескольких его свойств, таких как отображаемое имя или описание.
+Обновите [существующий объект accessPackageCatalog,](../resources/accesspackagecatalog.md) чтобы изменить одно или несколько его свойств, например отображаемое имя или описание.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference.md).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
@@ -43,15 +43,15 @@ PATCH /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPac
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [акцесспаккажекаталог](../resources/accesspackagecatalog.md) в формате JSON.
+## <a name="request-body"></a>Основной текст запроса
+В теле запроса укажу представление объекта [accessPackageCatalog](../resources/accesspackagecatalog.md) в JSON.
 
-В следующей таблице приведены свойства, необходимые при обновлении [акцесспаккажекаталог](../resources/accesspackagecatalog.md).
+В следующей таблице показаны свойства, необходимые при обновлении [accessPackageCatalog.](../resources/accesspackagecatalog.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Имя каталога пакетов Access.|
-|description|String|Описание каталога пакетов Access.|
+|displayName|String|Имя каталога пакетов доступа.|
+|description|String|Описание каталога пакетов доступа.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.

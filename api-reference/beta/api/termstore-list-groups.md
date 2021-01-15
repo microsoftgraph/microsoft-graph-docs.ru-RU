@@ -1,32 +1,32 @@
 ---
 title: Список групп
-description: Получение групп из свойства навигации Groups.
+description: Получите группы из свойства навигации групп.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 2325deb8b7d30d44570ec1ad8d9057b0777e90bb
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 2ee12f8ebc6fe5a6c300af6cfa231ee506fa38f5
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48980098"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873292"
 ---
 # <a name="list-groups"></a>Список групп
-Пространство имен: Microsoft. Graph. банка
+Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [Group](../resources/termstore-group.md) [хранилища](../resources/termstore-store.md)
+Получить список объектов [группы](../resources/termstore-group.md) в [хранилище](../resources/termstore-store.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись) | Банк. чтение. ALL, банк. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | TermStore.Read.All, TermStore.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложения | Не поддерживается. |
+|Приложение | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -52,7 +52,7 @@ GET /termStore/groups
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Group](../resources/termstore-group.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию `200 OK` объектов [группы](../resources/termstore-group.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

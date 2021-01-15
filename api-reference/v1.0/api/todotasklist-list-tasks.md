@@ -1,29 +1,29 @@
 ---
-title: Список задач TODO
-description: Получение ресурсов Тодотаск из свойства навигации Tasks указанного Тодотасклист.
+title: Задачи списка дел
+description: Получите ресурсы todoTask из свойства навигации задач указанного todoTaskList.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: f89a1c97de8410be7d77cc7fb32e2a2e2d33a0c8
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: eaa56486c1198f58171202ecf4651d9364e42f75
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48903832"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873537"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 Пространство имен: microsoft.graph
 
-Получение ресурсов **тодотаск** из свойства навигации **tasks** указанного [тодотасклист](../resources/todotasklist.md).
+Получите ресурсы **todoTask** из свойства навигации **задач** указанного [todoTaskList.](../resources/todotasklist.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тодотаск](../resources/todotask.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [todoTask](../resources/todotask.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

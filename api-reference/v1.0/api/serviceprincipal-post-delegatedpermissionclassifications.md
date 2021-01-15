@@ -1,22 +1,22 @@
 ---
-title: Создание Делегатедпермиссионклассификатион
-description: Классифицировать разрешение, добавив Делегатедпермиссионклассификатион к субъекту-службе API.
+title: Создание delegatedPermissionClassification
+description: Классификация разрешения путем добавления делегированияPermissionClassification к основному классу-службе API.
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: microsoft-identity-platform
 author: psignoret
-ms.openlocfilehash: 9c0314455942a0a973f28e57340dae645d725e98
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: e5ef5c38bea499494adcffa6a5660cae7395b97e
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49523121"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873649"
 ---
-# <a name="create-delegatedpermissionclassification"></a>Создание Делегатедпермиссионклассификатион
+# <a name="create-delegatedpermissionclassification"></a>Создание delegatedPermissionClassification
 
 Пространство имен: microsoft.graph
 
-Классифицировать делегированное разрешение, добавив [делегатедпермиссионклассификатион](../resources/delegatedpermissionclassification.md) к [servicePrincipal](../resources/servicePrincipal.md) , представляющему API.
+Классификация делегированного разрешения путем добавления [делегированной](../resources/delegatedpermissionclassification.md) классификации в [servicePrincipal,](../resources/servicePrincipal.md) представляющий API.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -24,9 +24,9 @@ ms.locfileid: "49523121"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированное (рабочая или учебная учетная запись) | Пермиссионгрантполици. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | PermissionGrantPolicy.ReadWrite.All |
 |Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Приложение | Пермиссионгрантполици. ReadWrite. ALL |
+|Приложение | PermissionGrantPolicy.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,17 +44,17 @@ POST /servicePrincipals/{id}/delegatedPermissionClassifications
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [делегатедпермиссионклассификатион](../resources/delegatedpermissionclassification.md) в формате JSON.
+В теле запроса укажу представление объекта [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) в JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [делегатедпермиссионклассификатион](../resources/delegatedpermissionclassification.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [delegatedPermissionClassification](../resources/delegatedpermissionclassification.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
 ### <a name="request"></a>Запрос
 
-В следующем примере делегированное разрешение User. Read "классифицируется как" низкие ".
+В следующем примере делегированная разрешения "User.Read" классифицируется как "низкая".
 
 
 # <a name="http"></a>[HTTP](#tab/http)
@@ -104,7 +104,7 @@ Content-Type: application/json
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {

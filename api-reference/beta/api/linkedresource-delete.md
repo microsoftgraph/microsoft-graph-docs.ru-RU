@@ -1,26 +1,26 @@
 ---
-title: Удаление Линкедресаурце
-description: Удаляет объект Линкедресаурце.
+title: Удаление linkedResource
+description: Удаляет объект linkedResource.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 531f1a3edd411359f3435c4d16c86565b59f8d38
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ce531190949f5b5aeb89242fcb87ade09365e0f1
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972921"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873411"
 ---
-# <a name="delete-linkedresource"></a>Удаление Линкедресаурце
-Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+# <a name="delete-linkedresource"></a>Удаление linkedResource
+Пространство имен: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет объект [линкедресаурце](../resources/linkedresource.md) .
+Удаляет объект [linkedResource.](../resources/linkedresource.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|

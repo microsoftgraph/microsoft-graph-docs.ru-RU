@@ -1,28 +1,28 @@
 ---
-title: Удаление Клаудпконпремисесконнектион
-description: Удаление объекта Клаудпконпремисесконнектион.
+title: Удаление cloudPcOnPremisesConnection
+description: Удаление объекта cloudPcOnPremisesConnection.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 55e80278d76b36c7a0b17528878d4673a1626b5c
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 01f9b5a7e4091492be7aa8eae0f0d3f8354169e6
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563405"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872767"
 ---
-# <a name="delete-cloudpconpremisesconnection"></a>Удаление Клаудпконпремисесконнектион
+# <a name="delete-cloudpconpremisesconnection"></a>Удаление cloudPcOnPremisesConnection
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление определенного объекта [клаудпконпремисесконнектион](../resources/cloudpconpremisesconnection.md) .
+Удаление определенного [объекта cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
 
-При удалении подключения удаляются разрешения для службы из указанных ресурсов Azure.
+При удалении подключения разрешения для службы удаляются из указанных ресурсов Azure.
 
-Вы не можете удалить локальное подключение после того, как оно прошло проверку работоспособности, которое указывается `healthCheckStatus` свойством.
+Локальное подключение невозможно удалить после того, как оно пройдет проверку на состояние, что указывает `healthCheckStatus` свойство.
 
 Невозможно удалить подключение, если оно используется, как указано в `inUse` свойстве.
 
@@ -31,10 +31,10 @@ ms.locfileid: "49563405"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Клаудпк. ReadWrite. ALL|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос

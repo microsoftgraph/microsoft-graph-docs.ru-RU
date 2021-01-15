@@ -1,35 +1,35 @@
 ---
-title: Обновление Емаилаусентикатионмесодконфигуратион
-description: Обновление свойств объекта Емаилаусентикатионмесодконфигуратион.
+title: Обновление emailAuthenticationMethodConfiguration
+description: Обновление свойств объекта emailAuthenticationMethodConfiguration.
 author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6b7fdd3566904c3ee8ad56210be03a8274cc858b
-ms.sourcegitcommit: d9c167f6be71bdb4a023c5ace2733b9854c846d3
+ms.openlocfilehash: 390d88cb91e7b7646b5569e46bfc568211ad0b8a
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49617140"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873299"
 ---
-# <a name="update-emailauthenticationmethodconfiguration"></a>Обновление Емаилаусентикатионмесодконфигуратион
+# <a name="update-emailauthenticationmethodconfiguration"></a>Обновление emailAuthenticationMethodConfiguration
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [емаилаусентикатионмесодконфигуратион](../resources/emailauthenticationmethodconfiguration.md) , представляющего [политику метода проверки подлинности](../resources/authenticationmethodspolicies-overview.md) OTP для клиента Azure Active Directory (Azure AD).
+Обновление свойств объекта [emailAuthenticationMethodConfiguration,](../resources/emailauthenticationmethodconfiguration.md) который представляет политику метода проверки подлинности [OTP](../resources/authenticationmethodspolicies-overview.md) электронной почты для клиента Azure Active Directory (Azure AD).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Policy. ReadWrite. AuthenticationMethod|
+|Делегированное (рабочая или учебная учетная запись)|Policy.ReadWrite.AuthenticationMethod|
 |Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Для делегированных сценариев администратору требуется одна из следующих [ролей](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+Для делегирования сценариев администратору требуется одна из следующих [ролей:](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
 
 * Глобальный администратор
 
@@ -51,13 +51,13 @@ PATCH /policies/authenticationMethodsPolicy/email
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
-В тексте запроса добавьте представление объекта [емаилаусентикатионмесодконфигуратион](../resources/emailauthenticationmethodconfiguration.md) в формате JSON. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
+В теле запроса предоставляем представление объекта [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) в JSON. Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
-Список свойств, которые можно обновлять, приведен в разделе [емаилаусентикатионмесодконфигуратион](../resources/emailauthenticationmethodconfiguration.md).
+Список свойств, которые можно обновить, см. в электронной [почтеAuthenticationMethodConfiguration.](../resources/emailauthenticationmethodconfiguration.md)
 
->**Примечание:** `@odata.type` Свойство со значением `#microsoft.graph.emailAuthenticationMethodConfiguration` должно быть включено в текст сообщения.
+>**Примечание.** Свойство `@odata.type` со значением должно `#microsoft.graph.emailAuthenticationMethodConfiguration` быть включено в тело.
 
 ## <a name="response"></a>Отклик
 

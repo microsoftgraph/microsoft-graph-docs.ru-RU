@@ -1,30 +1,30 @@
 ---
-title: Получение Континуаусакцессевалуатионполици
-description: Чтение свойств объекта Континуаусакцессевалуатионполици.
+title: Get continuousAccessEvaluationPolicy
+description: Чтение свойств объекта continuousAccessEvaluationPolicy.
 author: jerrysai
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ba9d161e6c11863f20ab221e5e67ea6a5b7676c7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8dcafa080167facb1a692af8634fb6d1f4f345b5
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48956957"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872655"
 ---
-# <a name="get-continuousaccessevaluationpolicy"></a>Получение Континуаусакцессевалуатионполици
+# <a name="get-continuousaccessevaluationpolicy"></a>Get continuousAccessEvaluationPolicy
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение свойств и связей объекта [континуаусакцессевалуатионполици](../resources/continuousaccessevaluationpolicy.md) .
+Чтение свойств и связей объекта [continuousAccessEvaluationPolicy.](../resources/continuousaccessevaluationpolicy.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)     | Policy.Read.All |
+|Делегированное (рабочая или учебная учетная запись)     | Policy.Read.All |
 |Делегированное (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Policy.Read.All |
 
@@ -36,7 +36,7 @@ GET /identity/continuousAccessEvaluationPolicy
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметр запроса OData "$select" для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
+Этот метод поддерживает параметр запроса OData $select '$select' для настройки ответа. Общие сведения см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
@@ -48,7 +48,7 @@ GET /identity/continuousAccessEvaluationPolicy
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [континуаусакцессевалуатионполици](../resources/continuousaccessevaluationpolicy.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [continuousAccessEvaluationPolicy](../resources/continuousaccessevaluationpolicy.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

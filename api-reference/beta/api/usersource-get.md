@@ -1,33 +1,33 @@
 ---
-title: Получение Усерсаурце
-description: Чтение свойств и связей объекта Усерсаурце.
+title: Get userSource
+description: Чтение свойств и связей объекта userSource.
 author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 653c5d45286cfd860dff1397b5ecb65fe23bd992
-ms.sourcegitcommit: f729068e1fbb6b0f34a3d6144b59ec9aafcd8a62
+ms.openlocfilehash: 0707ca76db4fd63d3fba2cfc9dbb72ba2278817c
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49597790"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873019"
 ---
-# <a name="get-usersource"></a>Получение Усерсаурце
+# <a name="get-usersource"></a>Get userSource
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение свойств и связей объекта [усерсаурце](../resources/usersource.md) .
+Чтение свойств и связей объекта [userSource.](../resources/usersource.md)
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|User.Read|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -57,7 +57,7 @@ GET /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/use
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [усерсаурце](../resources/usersource.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [userSource](../resources/usersource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

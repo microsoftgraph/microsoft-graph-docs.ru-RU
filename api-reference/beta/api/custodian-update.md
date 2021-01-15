@@ -5,12 +5,12 @@ author: mahage-msft
 localization_priority: Normal
 ms.prod: compliance
 doc_type: apiPageType
-ms.openlocfilehash: 605438ac3ba9883ca159fe97015701282f39e347
-ms.sourcegitcommit: f9f95402b8a15152ede90dd736b03d532204fc2e
+ms.openlocfilehash: bae5be0c8712735f0a7c369f3ec79146a1608acf
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658922"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872494"
 ---
 # <a name="update-custodian"></a>Обновление хранителя
 
@@ -24,7 +24,7 @@ ms.locfileid: "49658922"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|User.Read|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
@@ -48,7 +48,7 @@ PATCH /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
 В теле запроса укажу представление объекта [хранителя](../resources/custodian.md) в JSON.
 
@@ -56,7 +56,7 @@ PATCH /compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|applyHoldToSources|Логический|Определяет, были ли источники хранителя помещены на удержание во время создания. Подробные сведения см. в [под удержании для хранителей.](/microsoft-365/compliance/add-custodians-to-case#step-4-place-custodians-on-hold)|
+|applyHoldToSources|Boolean|Определяет, были ли источники хранителя помещены на удержание во время создания. Подробные сведения см. в [под удержании для хранителей.](/microsoft-365/compliance/add-custodians-to-case#step-4-place-custodians-on-hold)|
 
 ## <a name="response"></a>Отклик
 

@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: a880cb5ac1b0594b46f4de3649fc5a07060eb8be
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: a09469147a5d4e5435f84bd28f8a52e23d7b0315
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796795"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873418"
 ---
 # <a name="list-microsoftauthenticatorauthenticationmethods"></a>Список microsoftAuthenticatorAuthenticationMethods
 Пространство имен: microsoft.graph
@@ -51,7 +51,7 @@ ms.locfileid: "49796795"
 -->
 ``` http
 GET /me/authentication/microsoftAuthenticatorMethods
-GET /user/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods
+GET /users/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -81,7 +81,7 @@ GET /user/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/anirban@contoso.com/authentication/microsoftAuthenticatorMethods
+GET https://graph.microsoft.com/beta/users/anirban@contoso.com/authentication/microsoftAuthenticatorMethods
 ```
 
 

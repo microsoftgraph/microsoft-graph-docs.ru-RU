@@ -1,30 +1,30 @@
 ---
-title: 'Каллрекорд: Жетдиректраутингкаллс'
-description: Получение журнала вызовов прямой маршрутизации.
+title: 'callRecord: getDirectRoutingCalls'
+description: Получите журнал прямых вызовов маршрутов.
 author: williamlooney
 localization_priority: Normal
 ms.prod: cloud-communications
 doc_type: apiPageType
-ms.openlocfilehash: a99b776eda23bd1ebaef63bc3f190cb66bd794a7
-ms.sourcegitcommit: af4b2fc18449c33979cf6d75bd680f40602ba708
+ms.openlocfilehash: 5dd389ddba5e3f081b850e2303833b47b832e7d7
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48601113"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872921"
 ---
-# <a name="callrecord-getdirectroutingcalls"></a>Каллрекорд: Жетдиректраутингкаллс
+# <a name="callrecord-getdirectroutingcalls"></a>callRecord: getDirectRoutingCalls
 
 Пространство имен: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение журнала вызовов прямой маршрутизации в виде коллекции записей [директраутинглогров](../resources/callrecords-directroutinglogrow.md) .
+Получите журнал прямых вызовов маршрутизирования в качестве коллекции [записей directRoutingLogRow.](../resources/callrecords-directroutinglogrow.md)
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
@@ -54,14 +54,14 @@ GET /communications/callRecords/getDirectRoutingCalls
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|фромдатетиме|DateTimeOffset|Начало диапазона времени для запроса. UTC, включительно.<br/>Диапазон времени основан на времени начала вызова.|
-|тодатетиме|DateTimeOffset|Конец диапазона времени для запроса. UTC, включительно.|
+|fromDateTime|DateTimeOffset|Начало диапазона времени для запроса. UTC включительно.<br/>Диапазон времени зависит от времени начала вызова.|
+|toDateTime|DateTimeOffset|Конец диапазона времени для запроса. UTC включительно.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-В случае успешного выполнения эта функция возвращает `200 OK` код отклика и коллекцию записей [директраутинглогров](../resources/callrecords-directroutinglogrow.md) в тексте отклика.
+В случае успеха эта функция возвращает код отклика и коллекцию записей `200 OK` [directRoutingLogRow](../resources/callrecords-directroutinglogrow.md) в тексте отклика.
   
-Если в диапазоне дат больше 1000 записей, в тексте также включается `@odata.NextLink` URL-адрес для запроса следующей страницы записей вызова. Последняя страница в диапазоне дат не имеет значения `@odata.NextLink` . Дополнительные сведения см в разделе [разбиение данных Microsoft Graph в приложении](/graph/paging).
+Если в диапазоне дат содержится более 1000 записей, тело также содержит URL-адрес для запроса следующей страницы `@odata.NextLink` записей вызовов. Последняя страница в диапазоне дат не имеет `@odata.NextLink` . Дополнительные сведения см. в [разгонах данных Microsoft Graph в приложении.](/graph/paging)
 
 ## <a name="examples"></a>Примеры
 
@@ -107,8 +107,8 @@ HTTP/1.1 200 OK
             "duration": 5,
             "callType": "ByotIn",
             "successfulCall": true,
-            "callerNumber": "+12345678***",
-            "calleeNumber": "+01234567***",
+            "callerNumber": "+12345678**_",
+            "calleeNumber": "+01234567_*_",
             "mediaPathLocation": "USWE",
             "signalingLocation": "EUNO",
             "finalSipCode": 0,
@@ -123,6 +123,6 @@ HTTP/1.1 200 OK
 
 ## <a name="see-also"></a>См. также
 
-* [Отчет об использовании маршрутизации Microsoft Teams Direct](/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) в центре администрирования Microsoft Teams
-* [Панель мониторинга работоспособности для прямой маршрутизации](/MicrosoftTeams/direct-routing-health-dashboard) в центре администрирования Microsoft Teams
-* [Отчет о звонках PSTN в Microsoft Graph](callrecords-callrecord-getpstncalls.md)
+_ [Отчет об использовании прямой маршрутки Microsoft Teams](/microsoftteams/teams-analytics-and-reports/pstn-usage-report#direct-routing) в Центре администрирования Microsoft Teams
+* [Панель мониторинга состояния для прямой маршрутки](/MicrosoftTeams/direct-routing-health-dashboard) в Центре администрирования Microsoft Teams
+* [Отчет о вызовах STN в Microsoft Graph](callrecords-callrecord-getpstncalls.md)

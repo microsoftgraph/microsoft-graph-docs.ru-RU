@@ -1,32 +1,32 @@
 ---
-title: Список Екстерналспонсорс
-description: Получение списка Екстерналспонсорс Коннектедорганизатион.
+title: Список externalSponsors
+description: Получить список внешнихSponsors connectedOrganization.
 author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 82fffe33aced00b142bee52777bf154a38fb52a2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 299a957386387b7faee6daeae8a064fe46fbd663
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957729"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872704"
 ---
-# <a name="list-externalsponsors"></a>Список Екстерналспонсорс
+# <a name="list-externalsponsors"></a>Список externalSponsors
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка внешних спонсоров [коннектедорганизатион](../resources/connectedorganization.md).  Внешние спонсоры — это набор пользователей, которые могут утверждать запросы от имени других пользователей из этой подключенной Организации.
+Получить список внешних спонсоров [connectedOrganization.](../resources/connectedorganization.md)  Внешние спонсоры — это набор пользователей, которые могут утверждать запросы от имени других пользователей из этой подключенной организации.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-| Делегированные (рабочая или учебная учетная запись)     | Ентитлементманажемент. Read. ALL, Ентитлементманажемент. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 

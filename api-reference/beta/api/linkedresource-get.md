@@ -1,26 +1,26 @@
 ---
-title: Получение Линкедресаурце
-description: Чтение свойств и связей объекта Линкедресаурце.
+title: Получить linkedResource
+description: Чтение свойств и связей объекта linkedResource.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: d0cf2061db32d99ef3e888f401e6415fbceae104
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: e13fc32575c2b5aeccd55491f0f66ee6be923812
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48982303"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872487"
 ---
-# <a name="get-linkedresource"></a>Получение Линкедресаурце
-Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+# <a name="get-linkedresource"></a>Получить linkedResource
+Пространство имен: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение свойств и связей объекта [линкедресаурце](../resources/linkedresource.md) .
+Чтение свойств и связей объекта [linkedResource.](../resources/linkedresource.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
@@ -47,7 +47,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/lin
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [линкедресаурце](../resources/linkedresource.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [linkedResource](../resources/linkedresource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

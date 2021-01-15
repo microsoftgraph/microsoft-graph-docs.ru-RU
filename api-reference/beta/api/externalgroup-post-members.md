@@ -1,34 +1,34 @@
 ---
-title: Создание Екстерналграупмембер
-description: Создание нового объекта Екстерналграупмембер.
+title: Создание externalGroupMember
+description: Создание объекта externalGroupMember.
 author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: b6c1d278fed4d32ac61afb7989c27d16e3fb275c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 7029a0016099dc8ecdbd3ce86983c98b62dc61b1
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48954634"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873180"
 ---
-# <a name="create-externalgroupmember"></a>Создание Екстерналграупмембер
+# <a name="create-externalgroupmember"></a>Создание externalGroupMember
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [екстерналграупмембер](../resources/externalgroupmember.md) .
+Создание объекта [externalGroupMember.](../resources/externalgroupmember.md)
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения (в порядке убывания привилегий) |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
+| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | ExternalItem.ReadWrite.All                  |
+| Приложение                            | ExternalItem.ReadWrite.All                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,25 +48,25 @@ POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 | Авторизация | Bearer {токен}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
-В тексте запроса добавьте представление объекта [екстерналграупмембер](../resources/externalgroupmember.md) в формате JSON.
+В теле запроса укажу представление объекта [externalGroupMember](../resources/externalgroupmember.md) в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании [екстерналграупмембер](../resources/externalgroupmember.md).
+В следующей таблице показаны свойства, необходимые при создании [объекта externalGroupMember.](../resources/externalgroupmember.md)
 
 | Свойство       | Тип                    | Описание                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | Уникальный `id` элемент. Это значение objectId в случае с пользователями или группами Azure Active Directory и Екстерналграупид в случае внешних групп.                                    |
-| type           | екстерналграупмембертипе | Тип элемента, добавляемого во внешнюю группу. Возможные значения: `user` или `group` , если идентитисаурце, `azureActiveDirectory` и только в том `group` случае, если идентитисаурце `external` . |
-| идентитисаурце | идентитисаурцетипе      | Источник удостоверения, к которому принадлежит член. Возможные значения: `azureActiveDirectory`, `external`.                                                                                         |
+| id             | String                  | Уникальный `id` член. Это будет objectId в случае пользователей или групп Azure Active Directory и externalGroupId в случае внешних групп.                                    |
+| type           | externalGroupMemberType | Тип участника, добавленного во внешнюю группу. Возможные значения: `user` или когда идентификатор `group` identitySource и только `azureActiveDirectory` `group` тогда, когда идентификатор identitySource имеет значение `external` . |
+| identitySource | identitySourceType      | Источник удостоверений, к которой принадлежит участник. Возможные значения: `azureActiveDirectory`, `external`.                                                                                         |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [екстерналграупмембер](../resources/externalgroupmember.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [externalGroupMember](../resources/externalgroupmember.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>Пример 1: Добавление пользователя Azure Active Directory в качестве участника
+### <a name="example-1-add-an-azure-active-directory-user-as-a-member"></a>Пример 1. Добавление пользователя Azure Active Directory в качестве участника
 
 ### <a name="request"></a>Запрос
 
@@ -131,7 +131,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>Пример 2: Добавление группы Azure Active Directory в качестве участника
+### <a name="example-2-add-an-azure-active-directory-group-as-a-member"></a>Пример 2. Добавление группы Azure Active Directory в качестве участника
 
 ### <a name="request"></a>Запрос
 
@@ -175,7 +175,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-3-add-another-external-group-as-a-member"></a>Пример 3: Добавление другой внешней группы в качестве члена
+### <a name="example-3-add-another-external-group-as-a-member"></a>Пример 3. Добавление другой внешней группы в качестве участника
 
 ### <a name="request"></a>Запрос
 

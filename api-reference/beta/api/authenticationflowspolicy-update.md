@@ -5,12 +5,12 @@ author: linkhp
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 57c9428d8a0d946282be96ad5d2631f51b808659
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 00853239a732f629db8df6988272f11ae024124e
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48961379"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872333"
 ---
 # <a name="update-authenticationflowspolicy"></a>Обновление authenticationFlowsPolicy
 
@@ -21,7 +21,7 @@ ms.locfileid: "48961379"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.AuthenticationFlows|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|

@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 832869fcc3e60f3b9497984b79851d6388a84fc1
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 451b49ddcabb72736a67cbcb08391fb0bd45cf27
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796347"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872172"
 ---
 # <a name="create-emailauthenticationmethod"></a>Создание emailAuthenticationMethod
 Пространство имен: microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "49796347"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения, действующие на себя (от большинства до наименее привилегированных)|Разрешения, действующие над другими (от наименее привилегированных)|
+|Тип разрешения|Разрешения, действующие на себя (от наименее привилегированных)|Разрешения, действующие над другими (от наименее привилегированных)|
 |:---|:---|:--|
 | Делегированные (рабочая или учебная учетная запись)     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. | Не поддерживается. |
@@ -50,7 +50,7 @@ POST /users/{id | userPrincipalName}/authentication/emailMethods
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В теле запроса укажите представление объекта [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) в JSON с нужным адресом электронной почты.
 
 В следующей таблице показаны свойства, необходимые при создании [объекта emailAuthenticationMethod.](../resources/emailauthenticationmethod.md)
@@ -104,7 +104,7 @@ Content-Type: application/json
 
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

@@ -1,24 +1,24 @@
 ---
-title: 'Клаудпкпровисионингполици: назначение'
-description: Назначьте политику подготовки облачных ПК для группы.
+title: 'cloudPcProvisioningPolicy: assign'
+description: Назначьте политику предоставления облачных компьютеров своей группе.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: cb6efee682b07d19c6638803aa24e1f489310282
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 4b6acff15539c2a1b42f66547289621a7e87d7b5
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563438"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872746"
 ---
-# <a name="cloudpcprovisioningpolicy-assign"></a>Клаудпкпровисионингполици: назначение
+# <a name="cloudpcprovisioningpolicy-assign"></a>cloudPcProvisioningPolicy: assign
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Назначьте [клаудпкпровисионингполици](../resources/cloudpcprovisioningpolicy.md) группам пользователей.
+[Назначьте cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) группам пользователей.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -26,10 +26,10 @@ ms.locfileid: "49563438"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Клаудпк. ReadWrite. ALL|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,16 +50,16 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/assign
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
-В тексте запроса добавьте представление объекта [клаудпкпровисионингполициассигнмент](../resources/cloudpcprovisioningpolicyassignment.md) в формате JSON.
+В теле запроса укажу представление объекта [cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании [клаудпкпровисионингполициассигнмент](../resources/cloudpcprovisioningpolicyassignment.md).
+В следующей таблице показаны свойства, необходимые при создании [объекта cloudPcProvisioningPolicyAssignment.](../resources/cloudpcprovisioningpolicyassignment.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор назначения политики подготовки. Если целевой объект — группа пользователей, идентификатор отображается как {Полициид} _ {groupId}. |
-|target|[клаудпкманажементассигнменттаржет](../resources/cloudpcmanagementassignmenttarget.md)|Цель назначения для политики подготовки. В настоящее время поддерживается только группа пользователей.|
+|id|String|ИД назначения политики предоставления. Если целью является группа пользователей, то ид отображается как {policyId}_{groupId}. |
+|target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|Целевой объект назначения для политики предоставления. В настоящее время поддерживается только группа пользователей.|
 
 ## <a name="response"></a>Отклик
 

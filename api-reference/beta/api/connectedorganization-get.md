@@ -1,32 +1,32 @@
 ---
-title: Получение Коннектедорганизатион
-description: Получение свойств и связей объекта коннектедорганизатион.
+title: Get connectedOrganization
+description: Извлечение свойств и связей объекта connectedorganization.
 author: markwahl-msft
 ms.prod: microsoft-identity-platform
 localization_priority: Normal
 doc_type: apiPageType
-ms.openlocfilehash: 23faff5d873ecd346c15dc658ddd3281c546a15c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 27b0765bf16f4fabf5057b35ad4d1b0992ba79de
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957744"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872711"
 ---
-# <a name="get-connectedorganization"></a>Получение Коннектедорганизатион
+# <a name="get-connectedorganization"></a>Get connectedOrganization
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [коннектедорганизатион](../resources/connectedorganization.md) .
+Извлечение свойств и связей объекта [connectedOrganization.](../resources/connectedorganization.md)
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-| Делегированные (рабочая или учебная учетная запись)     | Ентитлементманажемент. Read. ALL, Ентитлементманажемент. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Не поддерживается. |
 
@@ -56,7 +56,7 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [коннектедорганизатион](../resources/connectedorganization.md) в тексте отклика.
+В случае успеха этот метод возвращает код `200 OK` отклика и [объект connectedOrganization](../resources/connectedorganization.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

@@ -1,34 +1,34 @@
 ---
-title: Создание Екстерналграуп
-description: Создание нового объекта Екстерналграуп.
+title: Создание externalGroup
+description: Создание объекта externalGroup.
 author: snlraju-msft
 localization_priority: Normal
 ms.prod: search
 doc_type: apiPageType
-ms.openlocfilehash: d3ea82fb61c68e8a75a9b55d1f7d0583cc5639f7
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 6ca8968daf3abb98bba66a4146fc3b41c9d54441
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48965621"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873047"
 ---
-# <a name="create-externalgroup"></a>Создание Екстерналграуп
+# <a name="create-externalgroup"></a>Создание externalGroup
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [екстерналграуп](../resources/externalgroup.md) .
+Создание объекта [externalGroup.](../resources/externalgroup.md)
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Тип разрешения                        | Разрешения (в порядке убывания привилегий) |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
+| Делегированное (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложения                            | ExternalItem.ReadWrite.All                  |
+| Приложение                            | ExternalItem.ReadWrite.All                  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,21 +48,21 @@ POST /external/connections/{connectionId}/groups
 | Авторизация | Bearer {токен}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
-В тексте запроса добавьте представление объекта [екстерналграуп](../resources/externalgroup.md) в формате JSON.
+В теле запроса укажу представление объекта [externalGroup](../resources/externalgroup.md) в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании [екстерналграуп](../resources/externalgroup.md).
+В следующей таблице показаны свойства, необходимые при создании [объекта externalGroup.](../resources/externalgroup.md)
 
 | Свойство    | Тип   | Описание                                                                                                              |
 |:------------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-| id          | String | Уникальный идентификатор внешней группы в подключении. Он должен состоять из буквенно-цифровых символов и иметь длину до 128 символов. |
-| displayName | String | Понятное имя внешней группы. Необязательное.                                                                      |
+| id          | String | Уникальный ИД внешней группы в соединении. Она должна быть букво-цифрой и длиной до 128 символов. |
+| displayName | String | Имя внешней группы. Необязательное.                                                                      |
 | description | String | Описание внешней группы. Необязательный параметр.                                                                         |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [екстерналграуп](../resources/externalgroup.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `201 Created` [объект externalGroup](../resources/externalgroup.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

@@ -1,16 +1,16 @@
 ---
 title: Удаление authenticationListener
-description: Удаляет authenticationListener из события, поддерживаемый authenticationEventsPolicy.
+description: Удаляет authenticationListener из события, поддерживаемых authenticationEventsPolicy.
 author: jkdouglas
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: cb6c12bbba8d5b458ed2dbf6829a88d8e0885e2b
-ms.sourcegitcommit: 424735f8ab46de76b9d850e10c7d97ffd164f62a
+ms.openlocfilehash: 3db702f80e92ce475d0b3699236096d7d7b79392
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49720334"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872326"
 ---
 # <a name="remove-authenticationlistener"></a>Удаление authenticationListener
 
@@ -24,10 +24,10 @@ ms.locfileid: "49720334"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.ApplicationConfiguration|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|Policy.ReadWrite.ApplicationConfiguration|
 
 ## <a name="http-request"></a>HTTP-запрос

@@ -1,29 +1,29 @@
 ---
-title: Удаление Линкедресаурце
-description: Удаляет объект Линкедресаурце.
+title: Удаление linkedResource
+description: Удаляет объект linkedResource.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8c6ca34116903301200b7cf3d04de9f6c6069087
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 0dd863891d9071a45a3984609b6f71a02cec5e78
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48903497"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873166"
 ---
-# <a name="delete-linkedresource"></a>Удаление Линкедресаурце
+# <a name="delete-linkedresource"></a>Удаление linkedResource
 Пространство имен: microsoft.graph
 
-Удаляет объект [линкедресаурце](../resources/linkedresource.md) .
+Удаляет объект [linkedResource.](../resources/linkedresource.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос

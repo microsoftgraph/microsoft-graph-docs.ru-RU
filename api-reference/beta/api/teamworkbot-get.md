@@ -5,12 +5,12 @@ author: AkJo
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: b0c0eaecb59140450d365c0eee931156b8b99e16
-ms.sourcegitcommit: a9731e19589dcb5c0c6fe2e24b008c86573ef803
+ms.openlocfilehash: fd85a51901d8ed7c09b6b132a7604147e2df1d16
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49844725"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873159"
 ---
 # <a name="get-teamworkbot"></a>Get teamworkBot
 
@@ -23,9 +23,9 @@ ms.locfileid: "49844725"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)| AppCatalog.Submit, AppCatalog.Read.All, AppCatalog.ReadWrite.All |
+|Делегированные (рабочая или учебная учетная запись)| AppCatalog.Read.All, AppCatalog.ReadWrite.All, AppCatalog.Submit |
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается. |
 |Для приложений| Не поддерживается.|
 
@@ -40,7 +40,7 @@ GET /appCatalogs/teamsApps/{app-id}/appDefinitions/{app-definition-id}/bot
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает `$select` [параметры запросов OData](/graph/query-parameter) для настройки отклика.
+Этот метод поддерживает параметры `$select` [запроса OData](/graph/query-parameter) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|

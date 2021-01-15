@@ -1,28 +1,28 @@
 ---
-title: Набор обновлений
-description: Обновление свойств объекта Set.
+title: Обновление набора
+description: Обновление свойств объекта set.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 735d565e6929a2b66437b8621d4ab2629e1761ad
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fe2b221bc6e6852af5d8aadcf283e851e1c47872
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972382"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872060"
 ---
-# <a name="update-set"></a>Набор обновлений
-Пространство имен: Microsoft. Graph. банка
+# <a name="update-set"></a>Обновление набора
+Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [Set](../resources/termstore-set.md) .
+Обновление свойств объекта [set.](../resources/termstore-set.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись) |TermStore.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
@@ -46,22 +46,22 @@ PATCH /termStore/sets/{setId}
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Set](../resources/termstore-set.md) в формате JSON.
+## <a name="request-body"></a>Основной текст запроса
+В теле запроса укажу представление объекта [set](../resources/termstore-set.md) в JSON.
 
-В следующей таблице приведены свойства, которые можно изменить для [набора](../resources/termstore-set.md).
+В следующей таблице показаны свойства, которые можно изменить для [набора.](../resources/termstore-set.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|локализеднамес|Коллекция [Microsoft. Graph. банка Microsoft. Graph. локализеднаме](../resources/termstore-localizedname.md)|Имя набора|
+|localizedNames|[Коллекция microsoft.graph.termStore.localizedName](../resources/termstore-localizedname.md)|Имя набора|
 |description|String|Описание набора|
-|properties|Коллекция [Microsoft. Graph. ключзначение](../resources/keyvalue.md)|Свойства набора|
+|properties|[Коллекция microsoft.graph.keyValue](../resources/keyvalue.md)|свойства набора|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [Set](../resources/termstore-set.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` набора в тексте отклика. [](../resources/termstore-set.md)
 
 ## <a name="examples"></a>Примеры
 

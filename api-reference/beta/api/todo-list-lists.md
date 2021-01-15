@@ -1,26 +1,26 @@
 ---
 title: Перечисление списков
-description: Получение списка объектов Тодотасклист и их свойств.
+description: Получите список объектов todoTaskList и их свойств.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 72e998c69d5764f4b9b5ce0246c419fab53cc57c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 67e6bc042770381112f8c44f8e4e51111de8035f
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48979081"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873803"
 ---
 # <a name="list-lists"></a>Перечисление списков
 Пространство имен: microsoft.graph
 
-Получение списка объектов [тодотасклист](../resources/todotasklist.md) и их свойств.
+Получите список объектов [todoTaskList](../resources/todotasklist.md) и их свойств.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/todo/lists
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [тодотасклист](../resources/todotasklist.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [todoTaskList](../resources/todotasklist.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

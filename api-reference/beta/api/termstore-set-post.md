@@ -1,28 +1,28 @@
 ---
 title: Создание набора
-description: Создание нового объекта Set.
+description: Создание объекта set.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ecf1327333ddd9a38d3199c01a0c6b2436eb27a2
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: c81ab668593b3650dd55de6bd933eef719d8ae7d
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48064600"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873719"
 ---
 # <a name="create-set"></a>Создание набора
-Пространство имен: Microsoft. Graph. банка
+Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [Set](../resources/termstore-set.md) .
+Создание объекта [set.](../resources/termstore-set.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись) |TermStore.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
@@ -45,21 +45,21 @@ POST /termStore/sets
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Set](../resources/termstore-set.md) в формате JSON.
+## <a name="request-body"></a>Основной текст запроса
+В теле запроса укажу представление объекта [set](../resources/termstore-set.md) в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании [набора](../resources/termstore-set.md).
+В следующей таблице показаны свойства, необходимые при создании [набора.](../resources/termstore-set.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|локализеднамес|Коллекция [Microsoft. Graph. банка Microsoft. Graph. локализеднаме](../resources/termstore-localizedname.md)|Имя создаваемого набора|
-|парентграуп|[Microsoft. Graph. Банк.](../resources/termstore-group.md)|Банк терминов — группа, в которой необходимо создать набор|
+|localizedNames|[Коллекция microsoft.graph.termstore.localizedName](../resources/termstore-localizedname.md)|Имя создаемого набора|
+|parentGroup|[microsoft.graph.termstore.group](../resources/termstore-group.md)|termstore-group, в которой необходимо создать набор|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Set](../resources/termstore-set.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `201 Created` [объект set](../resources/termstore-set.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

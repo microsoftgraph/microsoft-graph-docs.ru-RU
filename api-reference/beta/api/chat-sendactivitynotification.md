@@ -1,29 +1,29 @@
 ---
-title: 'чат: Сендактивитинотификатион'
-description: Отправка уведомления о канале активности в области разговора.
+title: 'chat: sendActivityNotification'
+description: Отправка уведомления веб-канала активности в области чата.
 author: RamjotSingh
 localization_priority: Normal
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: 76598572ebca1421770de5a298f46fdedc30a0c9
-ms.sourcegitcommit: 9f88b7e41a4a4a4d5f52bd995ce07c6f702bd5d6
+ms.openlocfilehash: 7147ad0019b9c066f19f30b9829e80e1a75570ca
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49522001"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872861"
 ---
-# <a name="chat-sendactivitynotification"></a>чат: Сендактивитинотификатион
+# <a name="chat-sendactivitynotification"></a>chat: sendActivityNotification
 Пространство имен: microsoft.graph
 
-Отправка уведомления о канале активности в области разговора. Дополнительные сведения об отправке уведомлений и требованиях для этого можно найти в разделе [Отправка уведомлений о действиях в группах](/graph/teams-send-activityfeednotifications).
+Отправка уведомления веб-канала активности в области чата. Дополнительные сведения об отправке уведомлений и требованиях для этого см. в отправке уведомлений [о действиях Teams.](/graph/teams-send-activityfeednotifications)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|TeamsActivity.Send|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Приложение|TeamsActivity.Send|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -42,26 +42,26 @@ POST /chats/{chatId}/sendActivityNotification
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
-В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
+В следующей таблице указаны параметры, которые можно использовать с этим действием.
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|topic|[теамворкактивититопик](../resources/teamworkactivitytopic.md)|Тема уведомления. Указывает ресурс, о котором идет речь.|
-|activityType|String|Тип действия. Он должен быть объявлен в [манифесте приложения Teams](/microsoftteams/platform/overview).|
-|чаинид|Int64|Необязательный параметр. Используется для переопределения предыдущего уведомления. Используйте одно и то же `chainId` в последующих запросах для переопределения предыдущего уведомления.|
+|topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Тема уведомления. Указывает ресурс, о который идет речь.|
+|activityType|String|Тип действия. Это должно быть объявлено в манифесте [приложения Teams.](/microsoftteams/platform/overview)|
+|chainId|Int64|Необязательное. Используется для переопределения предыдущего уведомления. Используйте то же самое `chainId` в последующих запросах для переопределения предыдущего уведомления.|
 |previewText|[itemBody](../resources/itembody.md)|Предварительный просмотр текста уведомления. Microsoft Teams будет показывать только первые 150 символов.|
-|темплатепараметерс|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения для переменных шаблона, определенных в записи веб-канала активности, соответствующей `activityType` [манифесту приложения Teams](/microsoftteams/platform/overview).|
-|получатель;|[теамворкнотификатионреЦипиент](../resources/teamworknotificationrecipient.md)|Получатель уведомления. Поддерживаются только пользователи Azure AD. См. также [аадусернотификатионреЦипиент](../resources/aadusernotificationrecipient.md). |
+|templateParameters|Коллекция [keyValuePair](../resources/keyvaluepair.md)|Значения переменных шаблона, определенных в записи веб-канала активности, соответствующей `activityType` [манифесту приложения Teams.](/microsoftteams/platform/overview)|
+|получатель;|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Получатель уведомления. Поддерживаются только пользователи Azure AD. См. [также aadUserNotificationRecipient.](../resources/aadusernotificationrecipient.md) |
 
-Следующие ресурсы поддерживаются при задании `source` значения свойства **Topic** `entityURL` следующим образом:
+Следующие ресурсы поддерживаются при установке для свойства `source` **темы** значения `entityURL` :
 
 - [chat](../resources/chat.md)
 - [chatMessage](../resources/chatmessage.md)
 
-> **Примечание:** URL-адрес сущности должен быть таким же, как или дочерний ресурс чата в URL-адресе. Кроме того, [приложение Teams](/microsoftteams/platform/overview) должно быть установлено в чате.
+> **Примечание.** URL-адрес сущности должен быть таким же, как или его дитя в чате в URL-адресе. Кроме того, приложение [Teams должно](/microsoftteams/platform/overview) быть установлено в чате.
 
 ## <a name="response"></a>Ответ
 
@@ -69,9 +69,9 @@ POST /chats/{chatId}/sendActivityNotification
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-notify-a-user-about-a-task-created-in-a-chat"></a>Пример 1: уведомление пользователя о задаче, созданной в чате
+### <a name="example-1-notify-a-user-about-a-task-created-in-a-chat"></a>Пример 1. Уведомление пользователя о задаче, созданной в чате
 
-В этом примере показано, как можно отправить уведомление веб-канала активности для новой задачи, созданной в чате. Более подробную информацию можно узнать в статье [Отправка уведомлений о действиях в группах](/graph/teams-send-activityfeednotifications).
+В этом примере показано, как можно отправить уведомление веб-канала активности для новой задачи, созданной в чате. Дополнительные сведения [см. в отправке уведомлений об активности Teams.](/graph/teams-send-activityfeednotifications)
 
 #### <a name="request"></a>Запрос
 
@@ -135,9 +135,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-notify-a-user-about-a-approval-needed-in-a-chat-message"></a>Пример 2: уведомление пользователя о необходимости утверждения в сообщении чата
+### <a name="example-2-notify-a-user-about-a-approval-needed-in-a-chat-message"></a>Пример 2. Уведомление пользователя об утверждении, необходимом в сообщении чата
 
-Как и в предыдущем примере, в этом примере используется `entityUrl` для `topic` . Однако в этом случае он связывается с сообщением в чате. Сообщение может содержать карточку с кнопкой утверждения на ней.
+Как и в предыдущем примере, в этом примере `entityUrl` используется для `topic` . Однако в этом случае он ссылайтесь на сообщение в чате. Сообщение может содержит карточку с кнопкой утверждения.
 
 #### <a name="request"></a>Запрос
 <!-- {
@@ -181,9 +181,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-3-notify-a-user-about-an-event-in-relation-to-a-chat"></a>Пример 3: уведомление пользователя о событии относительно чата
+### <a name="example-3-notify-a-user-about-an-event-in-relation-to-a-chat"></a>Пример 3. Уведомление пользователя о событии по отношению к чату
 
-Как показано в предыдущих примерах, вы можете ссылаться на различные аспекты разговора. Тем не менее, если вы хотите создать ссылку на аспект, не входящий в чат или не представленный в Microsoft Graph, можно установить для него в качестве источника `topic` `text` значение и передать его настраиваемое значение. Кроме того, `webUrl` требуется, если для параметра Source задано значение `topic` `text` .
+Как показано в предыдущих примерах, вы можете ссылаться на различные аспекты чата. Однако если вы хотите связать аспект, который не является частью чата или не представлен Microsoft Graph, вы можете установить источник и передать для него пользовательское `topic` `text` значение. Кроме того, `webUrl` требуется при установке `topic` для источника параметра `text` ..
 
 #### <a name="request"></a>Запрос
 <!-- {

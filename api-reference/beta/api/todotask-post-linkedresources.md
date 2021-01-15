@@ -1,28 +1,28 @@
 ---
-title: Создание Линкедресаурце
-description: Создание нового объекта Линкедресаурце.
+title: Создание linkedResource
+description: Создание объекта linkedResource.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: e99f1d74a63baa2c83c2fc27e9e45a32ad52a46a
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 899f2b39c0a73a774c6c8df6da4aa80eb3f06fc7
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974349"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872928"
 ---
-# <a name="create-linkedresource"></a>Создание Линкедресаурце
-Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+# <a name="create-linkedresource"></a>Создание linkedResource
+Пространство имен: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте объект [линкедресаурце](../resources/linkedresource.md) для связи указанной [задачи](../resources/todotask.md) с элементом партнерского приложения. Например, вы можете связать задачу с элементом электронной почты в Outlook, спурред задачу, а также создать объект **линкедресаурце** для отслеживания его связи.
+Создайте [объект linkedResource,](../resources/linkedresource.md) чтобы [](../resources/todotask.md) связать указанную задачу с элементом в партнерского приложения. Например, можно связать задачу с элементом электронной почты в Outlook, который создал задачу, и создать объект **linkedResource** для отслеживания ее связи.
 
-Вы также можете создать объект **линкедресаурце** при [создании тодотаск](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples).
+Вы также можете создать объект **linkedResource** при [создании объекта todoTask.](/graph/api/todotasklist-post-tasks?view=graph-rest-beta&preserve-view=true&tabs=http#examples)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
@@ -45,24 +45,24 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [линкедресаурце](../resources/linkedresource.md) в формате JSON.
+## <a name="request-body"></a>Основной текст запроса
+В теле запроса укажу представление объекта [linkedResource](../resources/linkedresource.md) в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании [линкедресаурце](../resources/linkedresource.md).
+В следующей таблице показаны свойства, необходимые при создании [linkedResource.](../resources/linkedresource.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Созданный сервером идентификатор связанной сущности, унаследованной от [объекта](../resources/entity.md)|
-|webUrl|String|Прямой ссылки на связанный объект |
-|applicationName|String|Поле, указывающее имя приложения источника, отправляющего связанный объект |
-|displayName|String|Поле, указывающее название связанного объекта. |
-|externalId|String|Идентификатор объекта, связанного с этой задачей в сторонней или партнерской системе |
+|id|String|Server generated Id for the linked entity Inherited from [entity](../resources/entity.md)|
+|webUrl|String|Глубокая связь со связанным объектом |
+|applicationName|String|Поле, указывающее имя приложения источника, который отправляет связанную сущность |
+|displayName|String|Поле, указывающее заголовок связанной сущности. |
+|externalId|String|ИД объекта, связанного с этой задачей в стороншей или партнерской системе |
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [линкедресаурце](../resources/linkedresource.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [linkedResource](../resources/linkedresource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

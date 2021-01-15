@@ -5,12 +5,12 @@ author: sureshja
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 6de4d6e0b98045d84fcaa02d9da9c71f337f8cb2
-ms.sourcegitcommit: a1675c7b8dfc7d7c3c7923d06cda2b0127f9c3e6
+ms.openlocfilehash: ed4650a03955d4952a8c90845734ae07d53f13dc
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49754216"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873026"
 ---
 # <a name="directoryobject-getavailableextensionproperties"></a>directoryObject: getAvailableExtensionProperties
 Пространство имен: microsoft.graph
@@ -20,7 +20,7 @@ ms.locfileid: "49754216"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)| Directory.Read.All |
 |Делегированное (личная учетная запись Майкрософт)| Не поддерживается. |
@@ -49,7 +49,7 @@ POST /directoryObjects/getAvailableExtensionProperties
 
 |Параметр|Тип|Описание|
 |:---|:---|:---|
-|isSyncedFromOnPremises|Boolean|`true` чтобы указать, что должны возвращаться только свойства расширения, синхронизированные из локального каталога; чтобы указать, что должны быть возвращены только свойства расширения, которые не синхронизируются из `false` локального каталога. Если этот параметр опущен, возвращаются все свойства расширения (синхронизированные и не синхронизированные).|
+|isSyncedFromOnPremises|Boolean|`true` чтобы указать, что должны возвращаться только свойства расширения, синхронизированные из локального каталога; чтобы указать, что должны быть возвращены только свойства расширения, которые не синхронизируются из `false` локального каталога. Если этот параметр опущен, возвращаются все свойства расширения (как синхронизированные, так и не синхронизированные).|
 
 
 ## <a name="response"></a>Отклик

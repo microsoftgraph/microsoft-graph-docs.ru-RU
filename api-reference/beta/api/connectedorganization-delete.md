@@ -1,30 +1,30 @@
 ---
-title: Удаление Коннектедорганизатион
-description: Удаление Коннектедорганизатион.
+title: Удаление connectedOrganization
+description: Удаление connectedOrganization.
 author: markwahl-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 58b3ee5e9ff86c1c769689f95cf315b06c18d50c
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 8ce2aed28aaa4d1b97767e7ebb46e9b206d32d75
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48957757"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49872718"
 ---
-# <a name="delete-connectedorganization"></a>Удаление Коннектедорганизатион
+# <a name="delete-connectedorganization"></a>Удаление connectedOrganization
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта [коннектедорганизатион](../resources/connectedorganization.md) .
+Удаление объекта [connectedOrganization.](../resources/connectedorganization.md)
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 | Делегированные (рабочая или учебная учетная запись)     | EntitlementManagement.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
