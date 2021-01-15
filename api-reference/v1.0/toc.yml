@@ -181,7 +181,7 @@ items:
       - name: Известные проблемы
         href: /graph/known-issues?context=graph/api/1.0
       - name: Журнал изменений
-        href: /graph/changelog?context=graph/api/1.0
+        href: 'https://developer.microsoft.com/graph/changelog'
       - name: Ошибки
         href: /graph/errors?context=graph/api/1.0
   - name: Справочник по версии 1.0
@@ -285,7 +285,7 @@ items:
                 href: api/user-list-registereddevices.md
               - name: Повторное назначение лицензии
                 href: api/user-reprocesslicenseassignment.md
-              - name: Отозовет сеанс регистрации
+              - name: Отоиметь сеанс регистрации
                 href: api/user-revokesigninsessions.md
           - name: Диск
             href: resources/drive.md
@@ -423,7 +423,7 @@ items:
                 href: api/userteamwork-delete-installedapps.md
               - name: Общение в чате между пользователем и приложением
                 href: api/userscopeteamsappinstallation-get-chat.md
-          - name: Задачи из списка дел
+          - name: Задачи To-Do
             items:
               - name: Задача
                 href: resources/todotask.md
@@ -439,7 +439,7 @@ items:
         items:
           - name: Обзор
             href: resources/groups-overview.md
-          - name: Группа
+          - name: Group
             href: resources/group.md
             items:
               - name: Список групп
@@ -814,7 +814,7 @@ items:
                 items:
                   - name: Перечисление
                     href: api/serviceprincipal-list-oauth2permissiongrants.md
-              - name: Делегированная классификация разрешений
+              - name: Классификация делегированных разрешений
                 href: resources/delegatedpermissionclassification.md
                 items:
                   - name: Перечисление
@@ -1201,9 +1201,9 @@ items:
                     href: resources/callrecords-callrecord.md
                   - name: Получить запись вызова
                     href: api/callrecords-callrecord-get.md
-              - name: Session
+              - name: Сеанс
                 items:
-                  - name: Session
+                  - name: Сеанс
                     href: resources/callrecords-session.md
                   - name: Перечисление сеансов
                     href: api/callrecords-session-list.md
@@ -5333,7 +5333,7 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
-          - name: Task
+          - name: Задача
             href: resources/todotask.md
             items:
               - name: Перечисление задач
