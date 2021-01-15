@@ -5,12 +5,12 @@ author: mmcla
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 50a567fe10a11688c6c82d0471de35bfe833b0f4
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: d8039c58a6b52fa200977903669538063e3df9da
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796817"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874335"
 ---
 # <a name="list-windowshelloforbusinessauthenticationmethods"></a>Список windowsHelloForBusinessAuthenticationMethods
 Пространство имен: microsoft.graph
@@ -51,7 +51,7 @@ ms.locfileid: "49796817"
 -->
 ``` http
 GET /me/authentication/windowsHelloForBusinessMethods
-GET /user/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods
+GET /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -79,7 +79,7 @@ GET /user/{id | userPrincipalName}/authentication/windowsHelloForBusinessMethods
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/user/annie@contoso.com/authentication/windowsHelloForBusinessMethods
+GET https://graph.microsoft.com/beta/users/annie@contoso.com/authentication/windowsHelloForBusinessMethods
 ```
 
 

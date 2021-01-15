@@ -1,24 +1,24 @@
 ---
-title: Создание Клаудпконпремисесконнектион
-description: Создайте локальное подключение для подготовки облачных компьютеров.
+title: Создание cloudPcOnPremisesConnection
+description: Создайте локальное подключение для предоставления облачных компьютеров.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 0cbdbd6cb135e6adecf110ed6d18d03f9dfa5dd9
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: 1b70d772ab6d69640508afa8150779a0b840e29e
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563468"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873964"
 ---
-# <a name="create-cloudpconpremisesconnection"></a>Создание Клаудпконпремисесконнектион
+# <a name="create-cloudpconpremisesconnection"></a>Создание cloudPcOnPremisesConnection
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [клаудпконпремисесконнектион](../resources/cloudpconpremisesconnection.md) для подготовки облачных компьютеров.
+Создание объекта [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) для предоставления облачных компьютеров.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -26,10 +26,10 @@ ms.locfileid: "49563468"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Клаудпк. ReadWrite. ALL|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,26 +50,26 @@ POST /deviceManagement/virtualEndpoint/onPremisesConnections
 | Авторизация | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
-В тексте запроса добавьте представление объекта [клаудпконпремисесконнектион](../resources/cloudpconpremisesconnection.md) в формате JSON.
+В теле запроса предоставляем представление объекта [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании [клаудпконпремисесконнектион](../resources/cloudpconpremisesconnection.md).
+В следующей таблице показаны свойства, необходимые при создании [объекта cloudPcOnPremisesConnection.](../resources/cloudpconpremisesconnection.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя для локального подключения.|
-|subscriptionId|String|Идентификатор целевой подписки Azure, связанной с клиентом.|
-|аддомаиннаме|String|Полное доменное имя (FQDN) домена Active Directory, к которому нужно присоединиться.|
-|аддомаинусернаме|String|Имя пользователя учетной записи Active Directory (учетной записи пользователя или службы), имеющей разрешения на создание объектов компьютеров в Active Directory. Требуемый формат: contoso@microsoft.com.|
-|аддомаинпассворд|String|Пароль, связанный с Аддомаинусернаме.|
-|ресаурцеграупид|String|Идентификатор целевой группы ресурсов. Требуемый формат: "/Субскриптионс/{субскриптион-ИД}/ресаурцеграупс/{ресаурцеграупнаме}".|
-|виртуалнетворкид|String|Идентификатор целевой виртуальной сети. Требуемый формат: "/Субскриптионс/{субскриптион-ИД}/ресаурцеграупс/{ресаурцеграупнаме}/провидерс/Микрософт.Нетворк/виртуалнетворкс/{виртуалнетворкнаме}".|
-|субнетид|String|Идентификатор целевой подсети. Требуемый формат: "/Субскриптионс/{субскриптион-ИД}/ресаурцеграупс/{ресаурцеграупнаме}/провидерс/Микрософт.Нетворк/виртуалнетворкс/{виртуалнетворкид}/субнетс/{субнетнаме}".|
+|displayName|String|Отображаемого имени для локального подключения.|
+|subscriptionId|String|ИД целевой подписки Azure, связанной с клиентом.|
+|adDomainName|String|Полное доменное имя домена Active Directory, к нему нужно присоединиться.|
+|adDomainUsername|String|Имя пользователя учетной записи Active Directory (учетной записи пользователя или службы), которая имеет разрешения на создание объектов-компьютеров в Active Directory. Необходимый формат: contoso@microsoft.com.|
+|adDomainPassword|String|Пароль, связанный с adDomainUsername.|
+|resourceGroupId|String|ИД целевой группы ресурсов. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
+|virtualNetworkId|String|ИД целевой виртуальной сети. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
+|subnetId|String|ИД целевой подсети. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [клаудпконпремисесконнектион](../resources/cloudpconpremisesconnection.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -122,7 +122,7 @@ Content-length: 800
 
 ### <a name="response"></a>Отклик
 
-**Примечание:** Ниже приведен пример ответа. Объект Response, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+**Примечание.** Вот пример отклика. Показанный здесь объект ответа может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

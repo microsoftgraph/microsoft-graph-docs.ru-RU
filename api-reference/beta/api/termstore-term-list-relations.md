@@ -1,30 +1,30 @@
 ---
 title: Список отношений
-description: Получение связей из свойства навигации "отношения".
+description: Получите отношения из свойства навигации relations.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: ac82d8c83bb4494d8ccbc80602dac833baffc7f2
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: a3ccad6849eb9533ac043c22bbeff636230bc2cb
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972249"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874447"
 ---
 # <a name="list-relations"></a>Список отношений
-Пространство имен: Microsoft. Graph. банка
+Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение другого отношения [термина] или [набора] из свойства навигации отношений.
+Получите другое отношение термина [или] набора из [свойства] навигации relations.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись) |Банк. чтение. ALL, банк. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) |TermStore.Read.All, TermStore.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -53,7 +53,7 @@ GET /termStore/sets/{setId}/terms/{termId}/relations
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [relation](../resources/termstore-relation.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [relation](../resources/termstore-relation.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -112,7 +112,7 @@ Content-Type: application/json
 
 
 [set]: ../resources/termstore-set.md
-[банком]: ../resources/termstore-term.md
+[term]: ../resources/termstore-term.md
 [microsoft.graph.termStore.relation]: ../resources/termstore-relation.md
 
 

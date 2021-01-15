@@ -1,26 +1,26 @@
 ---
-title: Удаление Тодотаск
-description: Удаляет объект Тодотаск.
+title: Delete todoTask
+description: Удаляет объект todoTask.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 803e8d25e42f317b34e6b5b82521119933d49e75
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 9f0642a6a8c41f56d1fe8c8a5497d71393c1cad1
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48973619"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873915"
 ---
-# <a name="delete-todotask"></a>Удаление Тодотаск
-Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+# <a name="delete-todotask"></a>Delete todoTask
+Пространство имен: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет объект [тодотаск](../resources/todotask.md) .
+Удаляет объект [todoTask.](../resources/todotask.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|

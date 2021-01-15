@@ -1,28 +1,28 @@
 ---
 title: Создание группы
-description: Создание нового объекта Group.
+description: Создание объекта группы.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 314795b1edad398a093b3c1bbfc401c0ef450c23
-ms.sourcegitcommit: b7e82d0d64f640a09f5da76b38d8ed9f13684f95
+ms.openlocfilehash: bc7959ec7606a450e9ef920cd96b2550923b03f2
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48258452"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873908"
 ---
 # <a name="create-group"></a>Создание группы
-Пространство имен: Microsoft. Graph. банка
+Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [Group](../resources/termstore-group.md) .
+Создание объекта [группы.](../resources/termstore-group.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись) |TermStore.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
@@ -45,14 +45,14 @@ POST /termStore/groups
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Group](../resources/termstore-group.md) в формате JSON.
+## <a name="request-body"></a>Основной текст запроса
+В теле запроса укажу представление объекта группы в [JSON.](../resources/termstore-group.md)
 
-В следующей таблице приведены свойства, необходимые при создании [группы](../resources/termstore-group.md).
+В следующей таблице показаны свойства, необходимые при создании [группы.](../resources/termstore-group.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Имя создаваемой группы.|
+|displayName|String|Имя создаемой группы.|
 
 
 

@@ -1,30 +1,30 @@
 ---
 title: Список riskyUsers
-description: Получение списка объектов Рискюсер и их свойств.
+description: Получите список объектов riskyUser и их свойств.
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: ef4816819e82944e752fb47fdc63a88f7f8a29a9
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: 075f135afe075450197ff8b3ed1d8e1c5bbde36d
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051328"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874349"
 ---
 # <a name="list-riskyusers"></a>Список riskyUsers
 Пространство имен: microsoft.graph
 
-Получение списка объектов [рискюсер](../resources/riskyuser.md) и их свойств.
+Получите список объектов [riskyUser](../resources/riskyuser.md) и их свойств.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.Read.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | IdentityRiskyUser.Read.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,12 +44,12 @@ GET /identityProtection/riskyUsers
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [рискюсер](../resources/riskyuser.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию `200 OK` [объектов riskyUser](../resources/riskyuser.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

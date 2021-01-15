@@ -1,24 +1,24 @@
 ---
-title: Создание Клаудпкдевицеимаже
-description: Отправьте настраиваемый образ ОС, который вы можете подготовить к работе на облачных компьютерах.
+title: Создание cloudPcDeviceImage
+description: Загрузите пользовательский образ ОС, который можно позже настроить на облачных ПК.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 4cbfb96f6adf70a197b3d648d1bddb4cd405a1c9
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: aa0d7ba5a15acacf22cce43e4a4989dabb131118
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563473"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49873950"
 ---
-# <a name="create-cloudpcdeviceimage"></a>Создание Клаудпкдевицеимаже
+# <a name="create-cloudpcdeviceimage"></a>Создание cloudPcDeviceImage
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [клаудпкдевицеимаже](../resources/cloudpcdeviceimage.md) . Отправьте настраиваемый образ ОС, который вы можете подготовить к работе на облачных компьютерах.
+Создание объекта [cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md) Загрузите пользовательский образ ОС, который можно позже настроить на облачных ПК.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -26,10 +26,10 @@ ms.locfileid: "49563473"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Клаудпк. ReadWrite. ALL|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,23 +50,23 @@ POST /deviceManagement/virtualEndpoint/deviceImages
 | Авторизация | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
-В тексте запроса добавьте представление объекта [клаудпкдевицеимаже](../resources/cloudpcdeviceimage.md) в формате JSON.
+В теле запроса укажу представление объекта [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании [клаудпкдевицеимаже](../resources/cloudpcdeviceimage.md).
+В следующей таблице показаны свойства, необходимые при создании [объекта cloudPcDeviceImage.](../resources/cloudpcdeviceimage.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя изображения.|
-|саурцеимажересаурцеид|String|Идентификатор исходного ресурса изображения в Azure. Требуемый формат: "/Субскриптионс/{субскриптион-ИД}/ресаурцеграупс/{ресаурцеграупнаме}/провидерс/Микрософт.компуте/имажес/{имаженаме}".|
-|operatingSystem|String|Операционная система изображения. Пример: Windows 10 Корпоративная.|
-|осбуилднумбер|String|Версия сборки ОС образа. Пример: 1909.|
+|displayName|String|Отображаемая фамилия изображения.|
+|sourceImageResourceId|String|ИД ресурса исходных изображений в Azure. Требуемого формата: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
+|operatingSystem|String|Операционная система образа. Например: Windows 10 Корпоративная.|
+|osBuildNumber|String|Версия сборки ОС образа. Например: 1909.|
 |version|String|Версия изображения. Например: 0.0.1, 1.5.13.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [клаудпкдевицеимаже](../resources/cloudpcdeviceimage.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

@@ -1,30 +1,30 @@
 ---
 title: Список дочерних элементов
-description: Получение терминов из свойства навигации Children.
+description: Получите термины из свойства навигации children.
 author: mohitpcad
 ms.prod: Sharepoint
 localization_priority: Normal
 doc_type: apiPageType
-ms.openlocfilehash: f285feacf48be3ae9cc5e6a987e578aab7978e15
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: ddf7a7ba3419437b300d90ed33f3841e46bae5a0
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972263"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874454"
 ---
 # <a name="list-children"></a>Список дочерних элементов
-Пространство имен: Microsoft. Graph. банка
+Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение потомков первого уровня ресурса " [набор] " или " [термин] " с помощью свойства навигации Children.
+Получите детей первого уровня набора [или] ресурса [терминов] с помощью свойства навигации children.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись) | Банк. чтение. ALL, банк. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | TermStore.Read.All, TermStore.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -52,7 +52,7 @@ GET /termStore/sets/{setId}/terms/{termId}/children
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Term](../resources/termstore-term.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [терминов](../resources/termstore-term.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
@@ -116,7 +116,7 @@ Content-Type: application/json
 }
 ```
 
-[банком]: ../resources/termstore-term.md
+[term]: ../resources/termstore-term.md
 [set]: ../resources/termstore-set.md
 
 <!--

@@ -1,29 +1,29 @@
 ---
-title: Удаление Тодотасклист
-description: Удаляет объект Тодотасклист.
+title: Delete todoTaskList
+description: Удаляет объект todoTaskList.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 4f8029417e841d2bebdf6224946342a7d9ea8797
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 7881513af6f97f96f212854d9e994de19e234dc6
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904976"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874265"
 ---
-# <a name="delete-todotasklist"></a>Удаление Тодотасклист
+# <a name="delete-todotasklist"></a>Delete todoTaskList
 Пространство имен: microsoft.graph
 
-Удаляет объект [тодотасклист](../resources/todotasklist.md) .
+Удаляет объект [todoTaskList.](../resources/todotasklist.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.Read|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.Read|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.Read|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос

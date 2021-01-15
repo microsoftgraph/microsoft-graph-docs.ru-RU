@@ -1,28 +1,28 @@
 ---
-title: Обновление хранилища
-description: Обновление свойств объекта Store.
+title: Обновление магазина
+description: Обновление свойств объекта store.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e0a4201cda9a6579394eba0872ae93fa9a81bb8e
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 73d1fb22b92c134fc4ebb2b15fe4b9314dce2d5d
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972320"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874104"
 ---
-# <a name="update-store"></a>Обновление хранилища
-Пространство имен: Microsoft. Graph. банка
+# <a name="update-store"></a>Обновление магазина
+Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта [Store](../resources/termstore-store.md) .
+Обновление свойств объекта [store.](../resources/termstore-store.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись) |TermStore.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
@@ -44,21 +44,21 @@ PATCH /termStore
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Store](../resources/termstore-store.md) в формате JSON.
+## <a name="request-body"></a>Основной текст запроса
+В теле запроса укажу представление объекта [store](../resources/termstore-store.md) в JSON.
 
-В следующей таблице приведены свойства, которые можно изменить для [магазина](../resources/termstore-store.md).
+В следующей таблице показаны свойства, которые можно изменить для [магазина.](../resources/termstore-store.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|дефаултлангуажетаг|String|Язык по умолчанию для [Microsoft. Graph. банка данных Microsoft. Graph.](../resources/termstore-store.md)|
-|лангуажетагс|Коллекция строк|Доступные языки в [Microsoft. Graph. банке. Store](../resources/termstore-store.md)|
+|defaultLanguageTag|Строка|Язык по умолчанию [для microsoft.graph.termstore.store](../resources/termstore-store.md)|
+|languageTags|Коллекция String|Доступные языки [в microsoft.graph.termstore.store](../resources/termstore-store.md)|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [Store](../resources/termstore-store.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и обновленный объект `200 OK` [store](../resources/termstore-store.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

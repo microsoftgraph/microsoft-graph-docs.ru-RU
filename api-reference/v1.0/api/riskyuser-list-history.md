@@ -1,30 +1,30 @@
 ---
-title: Журнал списка
-description: Получение Рискюсерхисторитемс из свойства навигации по журналу.
+title: История списков
+description: Получите объект riskyUserHistoryItems из свойства навигации истории.
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 doc_type: apiPageType
-ms.openlocfilehash: 1fcbe019d1aa673d100cedf5904b529960cec9b0
-ms.sourcegitcommit: acdf972e2f25fef2c6855f6f28a63c0762228ffa
+ms.openlocfilehash: eddb74f1bc6aacc12f9a2a73df6df44b2684a5c6
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48051335"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874356"
 ---
-# <a name="list-history"></a>Журнал списка
+# <a name="list-history"></a>История списков
 Пространство имен: microsoft.graph
 
-Получение Рискюсерхисторитемс из свойства навигации по журналу.
+Получите объект riskyUserHistoryItems из свойства навигации истории.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись) | IdentityRiskyUser.Read.All    |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | IdentityRiskyUser.Read.All |
+|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | IdentityRiskyUser.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -45,12 +45,12 @@ GET /identityProtection/riskyUsers/{riskyUserId}/history/{riskyUserHistoryItemId
 |:---|:---|
 |Авторизация|Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [рискюсерхисторитем](../resources/riskyuserhistoryitem.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

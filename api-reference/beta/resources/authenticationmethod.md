@@ -5,12 +5,12 @@ localization_priority: Normal
 author: mmcla
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: d6afb785527b2d2448e54533ce02c0a72bf84353
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: d1c43525352411a4b27952be4e6592401d28c54b
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48402347"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874328"
 ---
 # <a name="authenticationmethod-resource-type"></a>Тип ресурса authenticationMethod
 
@@ -18,20 +18,20 @@ ms.locfileid: "48402347"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет метод проверки подлинности, зарегистрированный для пользователя. [Способ проверки подлинности](/azure/active-directory/authentication/concept-authentication-methods) используется пользователем для проверки подлинности или подтверждения удостоверения системы. В качестве примеров можно привести пароль, Телефон (с помощью SMS или голосового вызова), ключи безопасности FIDO2 и многое другое. В настоящее время применяются методы Password и Phone.
+Представляет метод проверки подлинности, зарегистрированный для пользователя. Метод [проверки подлинности](/azure/active-directory/authentication/concept-authentication-methods) используется пользователем для проверки подлинности или иной проверки подлинности в системе. Некоторые примеры включают пароль, телефон (можно использовать через SMS или голосовой вызов), ключи безопасности FIDO2 и другие.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Тип возвращаемых данных | Описание |
 |:-------------|:------------|:------------|
-| [Список Аусентикатионмесодс](../api/authentication-list-methods.md) | Коллекция [authenticationMethod](authenticationmethod.md) | Чтение свойств и связей всех объектов **authenticationMethod** пользователя. |
-| [Получение параметра authenticationMethod](../api/authenticationmethod-get.md) | [Параметр authenticationmethod](authenticationmethod.md) | Чтение свойств и связей объекта **authenticationMethod** . |
+| [Список authenticationMethods](../api/authentication-list-methods.md) | [Коллекция authenticationMethod](authenticationmethod.md) | Чтение свойств и связей всех объектов **authenticationMethod** пользователя. |
+| [Get authenticationMethod](../api/authenticationmethod-get.md) | [authenticationMethod](authenticationmethod.md) | Чтение свойств и связей объекта **authenticationMethod.** |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String| Идентификатор этого экземпляра метода проверки подлинности, зарегистрированный для этого пользователя. Только для чтения. |
+|id|String| Идентификатор этого экземпляра метода проверки подлинности, зарегистрированного для этого пользователя. Только для чтения. |
 
 ## <a name="relationships"></a>Связи
 

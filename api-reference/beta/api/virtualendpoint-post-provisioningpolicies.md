@@ -1,24 +1,24 @@
 ---
-title: Создание Клаудпкпровисионингполици
-description: Создайте новую политику подготовки облачных ПК.
+title: Создание cloudPcProvisioningPolicy
+description: Создайте новую политику предоставления облачных компьютеров.
 author: AshleyYangSZ
 localization_priority: Normal
 ms.prod: cloud-pc
 doc_type: apiPageType
-ms.openlocfilehash: 45410405c88d7bb8a3e8de544e40279af490386a
-ms.sourcegitcommit: 958b540f118ef3ce64d4d4e96b29264e2b56d703
+ms.openlocfilehash: a83b156808fd0c9634fc8c7fedf62a6c9b8a2996
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49563879"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874076"
 ---
-# <a name="create-cloudpcprovisioningpolicy"></a>Создание Клаудпкпровисионингполици
+# <a name="create-cloudpcprovisioningpolicy"></a>Создание cloudPcProvisioningPolicy
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [клаудпкпровисионингполици](../resources/cloudpcprovisioningpolicy.md) .
+Создание объекта [cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -26,10 +26,10 @@ ms.locfileid: "49563879"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|Клаудпк. ReadWrite. ALL|
-|Делегированное (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированные (рабочая или учебная учетная запись)|CloudPC.ReadWrite.All|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,24 +50,24 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies
 | Авторизация | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 
-В тексте запроса добавьте представление объекта [клаудпкпровисионингполици](../resources/cloudpcprovisioningpolicy.md) в формате JSON.
+В теле запроса укажу представление объекта [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) в JSON.
 
-В следующей таблице приведены свойства, необходимые при создании [клаудпкпровисионингполици](../resources/cloudpcprovisioningpolicy.md).
+В следующей таблице показаны свойства, необходимые при создании [cloudPcProvisioningPolicy.](../resources/cloudpcprovisioningpolicy.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя политики подготовки.|
-|description|String|Описание политики подготовки.|
-|онпремисесконнектионид|String|Идентификатор Клаудпконпремисесконнектион. Чтобы обеспечить сетевое подключение к облачным компьютерам и присоединение к домену, выберите подключение с виртуальной сетью, проверенной службой Cloud PC.|
-|имажеид|String|Идентификатор образа ОС, который вы хотите подготовить к работе на облачных компьютерах. Формат изображения для типа галереи: {publisher_offer_sku}.|
-|имажедисплайнаме|String|Отображаемое имя для образа ОС, который вы собираетесь заготовить.|
-|имажетипе|клаудпкпровисионингполициимажетипе|Тип образа ОС (настраиваемого или галереи), который необходимо подготовить к работе на облачных компьютерах. Возможные значения: `gallery`, `custom`.|
+|displayName|String|Отображаемого имени для политики предоставления.|
+|description|String|Описание политики предоставления.|
+|onPremisesConnectionId|String|ИД cloudPcOnPremisesConnection. Чтобы убедиться, что облачные компьютеры имеют сетевое подключение и присоединяются к домену, выберите подключение к виртуальной сети, проверяемой службой облачных КОМПЬЮТЕРов.|
+|imageId|String|ИД образа ОС, который вы хотите получить на облачных ПК. Формат изображения типа коллекции: {publisher_offer_sku}.|
+|imageDisplayName|String|Отображаемая имя для образа ОПЕРАЦИОННОй системы, который вы хотите демонстрировать.|
+|imageType|cloudPcProvisioningPolicyImageType|Тип образа ОС (настраиваемого или галереи), который необходимо настроить на облачных ПК. Возможные значения: `gallery`, `custom`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [клаудпкпровисионингполици](../resources/cloudpcprovisioningpolicy.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

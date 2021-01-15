@@ -1,30 +1,30 @@
 ---
-title: Получение термина
-description: Чтение свойств и связей объекта Term.
+title: Получить термин
+description: Чтение свойств и связей объекта термина.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 993b09b6ba9fbff261a92fa2263807f1ef4d77f4
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 1215ba651f2ff164bdfe414274252be13bf8ff62
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972272"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874090"
 ---
-# <a name="get-term"></a>Получение термина
-Пространство имен: Microsoft. Graph. банка
+# <a name="get-term"></a>Получить термин
+Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Чтение свойств и связей объекта [Term](../resources/termstore-term.md) .
+Чтение свойств и связей объекта [термина.](../resources/termstore-term.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись) | Банк. чтение. ALL, банк. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | TermStore.Read.All, TermStore.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -53,7 +53,7 @@ GET /termStore/sets/{setId}/terms/{termId}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Term](../resources/termstore-term.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `200 OK` объект [термина](../resources/termstore-term.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

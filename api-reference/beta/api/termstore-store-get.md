@@ -1,30 +1,30 @@
 ---
-title: Получение хранилища
-description: Считывание свойств и связей объекта Store.
+title: Получить магазин
+description: Чтение свойств и связей объекта store.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: 05175c566aa3c9ea516b9c5126754c0dce348571
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: fb94dd40644fc1c8ad3f1727fa41b9143f2b1e13
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972352"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874419"
 ---
-# <a name="get-store"></a>Получение хранилища
-Пространство имен: Microsoft. Graph. банка
+# <a name="get-store"></a>Получить магазин
+Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Считывание свойств и связей объекта [Store](../resources/termstore-store.md) .
+Чтение свойств и связей [объекта](../resources/termstore-store.md) store.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись) | Банк. чтение. ALL, банк. ReadWrite. ALL |
+|Делегированные (рабочая или учебная учетная запись) | TermStore.Read.All, TermStore.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -46,7 +46,7 @@ GET /termStore
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Store](../resources/termstore-store.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и `200 OK` объект [store](../resources/termstore-store.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

@@ -5,12 +5,12 @@ doc_type: resourcePageType
 localization_priority: Normal
 author: clearab
 ms.prod: microsoft-teams
-ms.openlocfilehash: b942cfe5c4a1ca08c201a2f51f9178d5db592413
-ms.sourcegitcommit: ee9e594ad64bef5bc839cf813c0854d083c00aef
+ms.openlocfilehash: 53c4a22d66ced56a038e89a504f918a184c33a02
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49705838"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874049"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -41,6 +41,7 @@ ms.locfileid: "49705838"
 |**1:1 и сообщения группового чата**| | |
 |[Get chatMessage in chat](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Получить одно сообщение чата в чате. |
 |[Список chatMessages в чате](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | Список сообщений чата в 1:1 или групповом чате. |
+|[Получить все сообщения чата для пользователя](../api/chats-getallmessages.md)| [коллекция chat](chat.md)| Получать сообщения из всех чатов, в которых состоит пользователь, включая чаты 1:1, групповые чаты и чаты собраний. |
 |[Создание подписки для новых сообщений чата](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Прослушивайте новые и измененные сообщения чата и реакции на них. |
 |[Создание chatMessage в чате](../api/chat-post-message.md) | [chatMessage](chatmessage.md)| Отправка сообщения чата в существующей беседе 1:1 или групповом чате.|
 |[Обновление chatMessage](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Обновление свойства **policyViolation** сообщения чата.|
@@ -54,12 +55,12 @@ ms.locfileid: "49705838"
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
 |id|String| Только для чтения. Уникальный идентификатор сообщения.|
-|replyToId| string | Только для чтения. ИД родительского сообщения чата или сообщения корневого чата потока. (Применяется только к сообщениям чата в каналах, а не к чатам.) |
+|replyToId| string | Только для чтения. ИД родительского сообщения чата или сообщения корневого чата потока. (Применяется только к чатам в каналах, а не к чатам.) |
 |from|[identitySet](identityset.md)| Только для чтения. Сведения об отправителю сообщения чата.|
 |etag| string | Только для чтения. Номер версии сообщения чата. |
 |messageType|string|Тип сообщения чата. Возможные значения: `message` .|
 |createdDateTime|dateTimeOffset|Только для чтения. Timestamp of when the chat message was created.|
-|lastModifiedDateTime|dateTimeOffset|Только для чтения. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed. |
+|lastModifiedDateTime|dateTimeOffset|Только для чтения. Временная точка при создании (начальном параметре) или изменении сообщения чата, в том числе при добавлении или удалении реакции. |
 |lastEditedDateTime|dateTimeOffset|Только для чтения. Timestamp when edits to the chat message were made. Вызывает флаг "Изменено" в пользовательском интерфейсе Teams. Если изменения не внося, значение `null` будет .|
 |deletedDateTime|dateTimeOffset|Только для чтения. Timestamp at which the chat message was deleted, or null if not deleted. |
 |subject|string| Тема сообщения чата в обычном текстовом тексте.|

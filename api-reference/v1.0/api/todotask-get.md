@@ -1,29 +1,29 @@
 ---
-title: Получение Тодотаск
-description: Чтение свойств и связей объекта Тодотаск.
+title: Get todoTask
+description: Чтение свойств и связей объекта todoTask.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: dd6bc4c2a2ed624e87388dd76b5dff6ef72729bb
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 1013e550adb40da135939c93daf8fac0a87f2066
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48904366"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874181"
 ---
-# <a name="get-todotask"></a>Получение Тодотаск
+# <a name="get-todotask"></a>Get todoTask
 Пространство имен: microsoft.graph
 
-Чтение свойств и связей объекта [тодотаск](../resources/todotask.md) .
+Чтение свойств и связей объекта [todoTask.](../resources/todotask.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [тодотаск](../resources/todotask.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [todoTask](../resources/todotask.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

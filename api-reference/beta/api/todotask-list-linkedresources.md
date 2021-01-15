@@ -1,26 +1,26 @@
 ---
-title: Список Линкедресаурцес
-description: Получение Линкедресаурцес из свойства навигации Линкедресаурцес.
+title: Список linkedResources
+description: Получите linkedResources из свойства навигации linkedResources.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 8dff0b6872a0094703c4f46f53cee8bc48fee180
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 36c923a469c3aa87eea330f707dd6f8a9a27403a
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48974382"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874363"
 ---
-# <a name="list-linkedresources"></a>Список Линкедресаурцес
-Пространство имен: Microsoft. Graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+# <a name="list-linkedresources"></a>Список linkedResources
+Пространство имен: microsoft.graph [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение сведений об одном или нескольких элементах партнерского приложения, на основе которого была создана указанная [задача](../resources/todotask.md) . Сведения представлены в объекте [линкедресаурце](../resources/linkedresource.md) для каждого элемента. Он включает внешний идентификатор элемента в партнерской приложении и, если это возможно, глубокая ссылка на этот элемент в приложении.
+Получение сведений об одном или более пунктах в партнерского приложения, на основе которых была создана [указанная](../resources/todotask.md) задача. Информация представлена в [объекте linkedResource](../resources/linkedresource.md) для каждого элемента. Он включает внешний ИД элемента в партнерского приложения и, если применимо, глубокую ссылку на этот элемент в приложении.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/lin
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [линкедресаурце](../resources/linkedresource.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и коллекцию объектов `200 OK` [linkedResource](../resources/linkedresource.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

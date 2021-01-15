@@ -1,28 +1,28 @@
 ---
 title: Создание термина
-description: Создание нового объекта Term.
+description: Создание объекта термина.
 author: mohitpcad
 localization_priority: Normal
 ms.prod: Sharepoint
 doc_type: apiPageType
-ms.openlocfilehash: e09f892019ee48aeed61f20234856b8d799cd3ae
-ms.sourcegitcommit: 342516a52b69fcda31442b130eb6bd7e2c8a0066
+ms.openlocfilehash: 06d1d0179723a068108672f402c2b13f1680cf43
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48972228"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874300"
 ---
 # <a name="create-term"></a>Создание термина
-Пространство имен: Microsoft. Graph. банка
+Пространство имен: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового объекта [Term](../resources/termstore-term.md) .
+Создание объекта [термина.](../resources/termstore-term.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись) | TermStore.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
@@ -46,20 +46,20 @@ POST /termStore/sets/{setId}/terms/{termId}/children
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
-В тексте запроса добавьте представление объекта [Term](../resources/termstore-term.md) в формате JSON.
+## <a name="request-body"></a>Основной текст запроса
+В теле запроса укажу представление объекта термина в [JSON.](../resources/termstore-term.md)
 
-В следующей таблице приведены свойства, необходимые при создании [термина](../resources/termstore-term.md).
+В следующей таблице показаны свойства, необходимые при создании [термина.](../resources/termstore-term.md)
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Метка|Коллекция [Microsoft. Graph. банка Microsoft. Graph. локализедлабел](../resources/termstore-localizedlabel.md)|Метка для создаваемого термина|
+|labels|[Коллекция microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md)|Метка созда создаемой термина|
 
 
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Term](../resources/termstore-term.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `201 Created` [термина](../resources/termstore-term.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

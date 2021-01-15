@@ -1,61 +1,61 @@
 ---
-title: Тип ресурса Унифиедролепермиссион
-description: Разрешение роли каталога — это коллекция разрешенных действий и условий для ресурсов.
+title: Тип ресурса unifiedRolePermission
+description: Разрешение роли каталога — это коллекция разрешенных действий и условий ресурсов.
 localization_priority: Normal
 author: sureshja
 ms.prod: microsoft-identity-platform
 doc_type: resourcePageType
-ms.openlocfilehash: fa327935c4e3b45c28a0f7ae01ababeffe37d61d
-ms.sourcegitcommit: 7ceec757fd82ef3fd80aa3089ef46d3807aa3aa2
+ms.openlocfilehash: 45c59567e8926e8ae7fc2429939b2491a8237782
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48405227"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874286"
 ---
-# <a name="unifiedrolepermission-resource-type"></a>Тип ресурса Унифиедролепермиссион
+# <a name="unifiedrolepermission-resource-type"></a>Тип ресурса unifiedRolePermission
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет коллекцию разрешенных действий с ресурсами и условий, которые должны выполняться для вступления в силу действия. Действия с ресурсами — это задачи, которые могут быть перфомед для ресурса. Например, ресурс Application поддерживает действия с ресурсами "создание", "обновление", "удаление" и "Сброс пароля".
+Представляет коллекцию разрешенных действий с ресурсами и условия, которые должны быть выполнены, чтобы действие было эффективным. Действия с ресурсами — это задачи, которые могут быть перенаучены для ресурса. Например, ресурс приложения поддерживает действия по созданию, обновлению, удалению и сбросу ресурсов паролей.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|allowedResourceActions|Коллекция строк| Набор задач, которые могут быть перфомед для ресурса. |
-|установлен|String| Необязательные ограничения, которые должны выполняться для эффективного разрешения. |
+|allowedResourceActions|Коллекция строк| Набор задач, которые можно выполнить с ресурсом. |
+|condition|String| Необязательные ограничения, которые должны быть выполнены, чтобы разрешение было эффективным. |
 
-### <a name="allowedresourceactions-property"></a>Свойство Алловедресаурцеактионс
+### <a name="allowedresourceactions-property"></a>Свойство allowedResourceActions
 
-Ниже приведена схема действий с ресурсами. 
+Ниже приводится схема действий с ресурсами. 
 
 ```
 <Namespace>/<Entity>/<PropertySet>/<Action>  
 ```
 Пример: `microsoft.directory/applications/credentials/update`.  
 
-- Namespace — службы, которые предоставляют задачу. Например, все задачи в Azure Active Directory используют пространство имен Microsoft. Directory.  
-- Объект Entity — логические функции или компоненты, предоставляемые службой в Microsoft Graph. Например, приложения, субъекты служб или группы.
-- Набор свойств — конкретные свойства или аспекты объекта, для которого предоставляется доступ. Например, `microsoft.directory/applications/authentication/read` предоставляет возможность чтения URL-адреса ответа, URL-адреса выхода и неявного свойства Flow для объекта **Application** в Azure AD. Ниже приведены зарезервированные имена для общих наборов свойств.  
-  - Аллпропертиес — задает все свойства объекта, включая привилегированные свойства. Примеры включают `microsoft.directory/applications/allProperties/read` и `microsoft.directory/applications/allProperties/update` .
-  - Basic — назначает общие свойства чтения, но исключает привилегированных. Например, `microsoft.directory/applications/basic/update` позволяет обновлять стандартные свойства, такие как отображаемое имя.
-  - Standard — назначает общие свойства обновления, но исключает привилегированных. Например, `microsoft.directory/applications/standard/read`.
-- Actions — операции, которые вы предоставляете. В большинстве случаев разрешения следует выражать в терминах CRUD или Аллтаскс. Сюда входят следующие действия:
-  - Create — возможность создания нового экземпляра объекта.
-  - Read — возможность считывания данного набора свойств (включая Аллпропертиес).
-  - Update — возможность обновления набора свойств (включая Аллпропертиес).
-  - Delete — возможность удаления данной сущности.
-  - Аллтаскс — представляет все операции CRUD (создание, чтение, обновление и удаление). 
+- Пространство имен — службы, которые предоставляет задачу. Например, все задачи в Azure Active Directory используют пространство имен microsoft.directory.  
+- Сущность — логические функции или компоненты, которые компоненты компоненты, компоненты, которые компоненты службы в Microsoft Graph. Например, приложения, основные службы или группы.
+- PropertySet — конкретные свойства или аспекты сущности, для которой предоставляется доступ. Например, предоставляет возможность чтения URL-адреса ответа, URL-адреса для входа и неявного свойства потока в объекте приложения `microsoft.directory/applications/authentication/read` в Azure  AD. Для общих наборов свойств зарезервированы следующие имена:  
+  - allProperties — назначает все свойства сущности, включая привилегированные свойства. Примеры: `microsoft.directory/applications/allProperties/read` и `microsoft.directory/applications/allProperties/update` .
+  - basic — назначает общие свойства чтения, но исключает привилегированные свойства. Например, включает возможность обновления стандартных свойств, таких как `microsoft.directory/applications/basic/update` отображаемая имя.
+  - standard — назначает общие свойства обновления, но исключает привилегированные свойства. Например, `microsoft.directory/applications/standard/read`.
+- Действия — предоставленные операции. В большинстве ситуаций разрешения должны быть выражены с точки зрения CRUD или allTasks. К действиям относятся:
+  - Create — возможность создания нового экземпляра сущности.
+  - Чтение — возможность чтения заданного набора свойств (включая allProperties).
+  - Update — возможность обновления заданного набора свойств (включая allProperties).
+  - Delete — возможность удаления заданного объекта.
+  - AllTasks — представляет все операции CRUD (создание, чтение, обновление и удаление). 
 
-### <a name="condition-property"></a>свойство Condition
-Условия определяют ограничения, которые должны выполняться. Например, требование, которое участник является владельцем целевого объекта. Ниже приведены поддерживаемые условия.
+### <a name="condition-property"></a>свойство condition
+Условия определяют ограничения, которые должны быть выполнены. Например, требование, что основной объект является "владельцем" целевого сайта. Поддерживаются следующие условия:
 
-- Само: "@Subject. objectId = = @Resource. objectId"
-- Owner: "@Subject. objectId Any_of @Resource. Owners"
+- Self: "@Subject.objectId == @Resource.objectId"
+- Владелец: "@Subject.objectId Any_of @Resource.owners"
 
-Ниже приведен пример разрешения роли с условием.
+Ниже приводится пример разрешения роли с условием.
 
 ```json
 "rolePermissions": [
@@ -91,8 +91,8 @@ ms.locfileid: "48405227"
 ```
 ## <a name="see-also"></a>См. также
 
-- [Разрешения роли администратора в Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) — сведения о разрешениях для встроенных ролей каталогов.
-- [Подтипы регистрации приложений и разрешения в Azure Active Directory](/azure/active-directory/users-groups-roles/roles-custom-available-permissions) — сведения о разрешениях, доступных для пользовательских ролей каталога. 
+- [Разрешения роли администратора в Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) — сведения о разрешениях для встроенных ролей каталога.
+- [Подтипы и](/azure/active-directory/users-groups-roles/roles-custom-available-permissions) разрешения регистрации приложений в Azure Active Directory — сведения о разрешениях, доступных для настраиваемой роли каталога. 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

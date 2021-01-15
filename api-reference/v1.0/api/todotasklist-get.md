@@ -1,29 +1,29 @@
 ---
-title: Получение Тодотасклист
-description: Чтение свойств и связей объекта Тодотасклист.
+title: Get todoTaskList
+description: Чтение свойств и связей объекта todoTaskList.
 author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 89760dc319ac621a4aa34ff13da178acb60dd0e1
-ms.sourcegitcommit: 82da4012294b046416c9ae93d2294d80dab217f6
+ms.openlocfilehash: 9b70fa36c3109b77796e212aa152358ac4cc6d20
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48905129"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874271"
 ---
-# <a name="get-todotasklist"></a>Получение Тодотасклист
+# <a name="get-todotasklist"></a>Get todoTaskList
 Пространство имен: microsoft.graph
 
-Чтение свойств и связей объекта [тодотасклист](../resources/todotasklist.md) .
+Чтение свойств и связей объекта [todoTaskList.](../resources/todotasklist.md)
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
-|Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
+|Делегированное (личная учетная запись Майкрософт)|Tasks.ReadWrite|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -50,7 +50,7 @@ GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [тодотасклист](../resources/todotasklist.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика и объект `200 OK` [todoTaskList](../resources/todotasklist.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

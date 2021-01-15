@@ -5,12 +5,12 @@ author: avijityadav
 localization_priority: Normal
 ms.prod: outlook
 doc_type: apiPageType
-ms.openlocfilehash: 6e09dd501de62009d4baf06f85381f275223e673
-ms.sourcegitcommit: 6d04db95bf233d6819d24b01fd7f8b6db57a524c
+ms.openlocfilehash: 92242d0973b3d47af0126f6fefb093d258f46d74
+ms.sourcegitcommit: eacd2a6e46c19dd3cd8519592b1668fabe14d85d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796705"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49874083"
 ---
 # <a name="create-todotasklist"></a>Создание todoTaskList
 Пространство имен: microsoft.graph
@@ -22,7 +22,7 @@ ms.locfileid: "49796705"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения|Разрешения (в порядке убывания привилегий)|
+|Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Tasks.ReadWrite|
 |Делегированные (личная учетная запись Майкрософт)|Tasks.ReadWrite|
@@ -45,7 +45,7 @@ POST /users/{id|userPrincipalName}/todo/lists
 |Авторизация|Bearer {токен}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Основной текст запроса
 В теле запроса укажу представление объекта [todoTaskList](../resources/todotasklist.md) в JSON.
 
 В следующей таблице показаны свойства, необходимые при создании [todoTaskList.](../resources/todotasklist.md)
