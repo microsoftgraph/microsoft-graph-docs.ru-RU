@@ -17,7 +17,7 @@ items:
           - name: Обзор новых возможностей
             href: whats-new-overview.md
           - name: Журнал изменений API
-            href: changelog.md
+            href: 'https://developer.microsoft.com/graph/changelog'
       - name: 'Пользователи, с которыми вы можете связаться'
         items:
           - name: Обзор
